@@ -17,12 +17,12 @@ import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 	<!-- Mobile: stacked cards -->
 	<div class="mt-8 grid gap-3 md:hidden" data-experience-mobile>
 		{experience.map((r) => (
-			<a class="card block p-4 hover:border-slate-700" href={withBase(`/experience/${r.slug}/`)}>
-				<div class="flex items-baseline justify-between gap-3">
+			<a class="card block w-full overflow-hidden p-4 hover:border-slate-700" href={withBase(`/experience/${r.slug}/`)}>
+				<div class="flex min-w-0 items-baseline justify-between gap-3">
 					<h2 class="min-w-0 truncate text-base font-semibold text-slate-50">{r.company}</h2>
-					<span class="shrink-0 text-xs text-slate-400">{r.period}</span>
+					<span class="shrink-0 whitespace-nowrap text-xs text-slate-400">{r.period}</span>
 				</div>
-				<p class="mt-1 text-sm text-slate-300">{r.title}</p>
+				<p class="mt-1 break-words text-sm text-slate-300">{r.title}</p>
 			</a>
 		))}
 	</div>
