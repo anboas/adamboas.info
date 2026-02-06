@@ -21,6 +21,7 @@ function ensureTools(pre) {
 
 	wrap.addEventListener('click', () => {
 		pre.classList.toggle('code-wrap');
+		if (typeof window.__track === 'function') window.__track('Code: Toggle Wrap');
 	});
 
 	copy.addEventListener('click', async () => {
@@ -30,6 +31,7 @@ function ensureTools(pre) {
 			await navigator.clipboard.writeText(txt);
 			copy.textContent = 'Copied';
 			setTimeout(() => (copy.textContent = 'Copy'), 900);
+			if (typeof window.__track === 'function') window.__track('Code: Copy');
 		} catch {
 			copy.textContent = 'Failed';
 			setTimeout(() => (copy.textContent = 'Copy'), 900);

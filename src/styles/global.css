@@ -19,6 +19,16 @@ body {
   background-size: 32px 32px;
 }
 
+/* Sticky browse bar (writing pages) */
+.sticky-browse {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.9);
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+}
+
 a {
   /* muted tan/stone accent instead of bright blue */
   @apply text-stone-200 hover:text-stone-50;

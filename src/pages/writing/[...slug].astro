@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -55,6 +56,34 @@ if (kind === 'paper') {
 ---
 
 <SiteLayout title={title} description={description}>
+	<StickyBrowseBar active="writing" />
+	{kind === 'writing' ? (
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': writingItem.data.type === 'memo' ? 'Article' : 'BlogPosting',
+				headline: writingItem.data.title,
+				datePublished: writingItem.data.date.toISOString(),
+				author: { '@type': 'Person', name: 'Adam Boas' },
+				keywords: writingItem.data.tags ?? [],
+				description: writingItem.data.summary ?? undefined,
+			})}
+		/>
+	) : null}
+	{kind === 'paper' ? (
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'Report',
+				headline: paper.data.title,
+				datePublished: paper.data.date ? paper.data.date.toISOString() : undefined,
+				author: { '@type': 'Person', name: 'Adam Boas' },
+				description: paper.data.description ?? undefined,
+			})}
+		/>
+	) : null}
 	{kind === 'paper' ? (
 		<article class="card p-8" data-paper-style="dossier">
 			<header class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
@@ -71,6 +100,7 @@ if (kind === 'paper') {
 							href={withBase(paper.data.pdfPath)}
 							target="_blank"
 							rel="noreferrer"
+							data-track="Writing: Download PDF"
 						>
 							Download PDF
 						</a>
