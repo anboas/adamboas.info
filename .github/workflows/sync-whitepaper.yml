@@ -1,0 +1,99 @@
+name: sync-whitepaper
+
+on:
+  workflow_dispatch:
+  schedule:
+    # keep it fresh without needing cross-repo auth plumbing
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-whitepaper
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install unzip
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unzip
+
+      - name: Fetch latest successful Whitepaper build run id
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          RUN_ID=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            /repos/anboas/Whitepaper/actions/workflows/build-papers.yml/runs?branch=main\&status=success\&per_page=1 \
+            --jq '.workflow_runs[0].id')
+
+          if [ -z "$RUN_ID" ] || [ "$RUN_ID" = "null" ]; then
+            echo "No successful runs found" >&2
+            exit 1
+          fi
+
+          echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
+          echo "Using Whitepaper run $RUN_ID"
+
+      - name: Download Whitepaper artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/wp
+          cd /tmp/wp
+          gh run download "$RUN_ID" -R anboas/Whitepaper
+          ls -la
+
+      - name: Sync PDFs + HTML into this repo
+        run: |
+          set -euo pipefail
+
+          mkdir -p public/papers
+          mkdir -p src/generated/papers
+
+          shopt -s nullglob
+
+          # Each downloaded artifact becomes a directory named after artifact name
+          for d in /tmp/wp/paper-*; do
+            [ -d "$d" ] || continue
+            slug=${d##*/paper-}
+            echo "Syncing $slug"
+
+            pdf=$(ls -1 "$d"/*.pdf 2>/dev/null | head -n 1 || true)
+            html=$(ls -1 "$d"/*.html 2>/dev/null | head -n 1 || true)
+
+            if [ -n "$pdf" ]; then
+              cp "$pdf" "public/papers/${slug}.pdf"
+            else
+              echo "WARN: no pdf for $slug" >&2
+            fi
+
+            if [ -n "$html" ]; then
+              cp "$html" "src/generated/papers/${slug}.html"
+            else
+              echo "WARN: no html for $slug" >&2
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add public/papers src/generated/papers
+          git commit -m "Sync Whitepaper outputs (PDF + HTML)"
+          git push

@@ -4,6 +4,7 @@ description: "A white paper on agentic autonomy, trust scopes, and strategic imp
 date: 2026-01-01
 status: published
 pdfPath: /papers/agentic-force-creation.pdf
+# HTML is synced from Whitepaper into src/generated/papers/<slug>.html
 tags:
   - autonomy
   - governance

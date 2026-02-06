@@ -2,6 +2,17 @@
 import { getCollection, render } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import { withBase } from '../../utils/withBase';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+async function tryReadGeneratedHtml(slug) {
+	try {
+		const p = path.join(process.cwd(), 'src', 'generated', 'papers', `${slug}.html`);
+		return await fs.readFile(p, 'utf-8');
+	} catch {
+		return null;
+	}
+}
 
 export async function getStaticPaths() {
 	const papers = await getCollection('papers');
@@ -12,6 +23,7 @@ export async function getStaticPaths() {
 }
 
 const { paper } = Astro.props;
+const generatedHtml = await tryReadGeneratedHtml(paper.id);
 const { Content } = await render(paper);
 ---
 
@@ -37,7 +49,11 @@ const { Content } = await render(paper);
 		</header>
 
 		<div class="prose prose-invert mt-8 max-w-none prose-a:text-stone-200 prose-a:no-underline hover:prose-a:text-stone-50">
-			<Content />
+			{generatedHtml ? (
+				<div set:html={generatedHtml} />
+			) : (
+				<Content />
+			)}
 		</div>
 
 		{paper.data.pdfPath && (
