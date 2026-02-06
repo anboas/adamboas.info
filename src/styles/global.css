@@ -73,7 +73,11 @@ article[data-paper-style="dossier"] .paper-content hr {
 }
 
 article[data-paper-style="dossier"] .paper-content blockquote {
-  @apply border border-slate-800 bg-slate-950/30 p-4;
+  @apply my-6 border-l-4 border-slate-600 bg-slate-950/40 px-5 py-4;
+}
+
+article[data-paper-style="dossier"] .paper-content blockquote p {
+  @apply m-0 text-slate-100;
 }
 
 article[data-paper-style="dossier"] .paper-content ul {
