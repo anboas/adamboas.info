@@ -51,6 +51,61 @@ def main() -> int:
     # Collapse hard line-wraps inside text (pandoc emits newlines that show up in headings).
     body = re.sub(r"([A-Za-z0-9,.;:\)])\n([A-Za-z0-9(])", r"\1 \2", body)
 
+    # Convert our generated pipe tables (sometimes escaped) into real HTML tables.
+    # Pattern lives inside a <p> and looks like: &lt;!– begin:generated-table –&gt; | a | b | ...
+    try:
+        import html as _html
+
+        def pipe_to_table(md: str) -> str:
+            # Remove markers and collapse whitespace.
+            md = re.sub(r"<\s*!\s*[^>]*?generated-table[^>]*?>", " ", md, flags=re.IGNORECASE)
+            md = re.sub(r"\s+", " ", md).strip()
+
+            # If it looks like the assistant/agent baseline table, parse tokens into rows.
+            if '|' in md and ('Primary unit of output' in md or 'Force Multiplication' in md):
+                toks = [t.strip() for t in md.split('|')]
+                toks = [t for t in toks if t and t not in {'—', '--', '---'}]
+
+                # Ensure a sane header.
+                header = ['Dimension', 'Force Multiplication (Assistants)', 'Force Creation (Agents)']
+
+                # If the first token isn't the first dimension label, drop leading junk.
+                while toks and toks[0].lower() in {'dimension', 'force multiplication (assistants)', 'force creation (agents)'}:
+                    toks = toks[1:]
+
+                # Build rows by grouping into triples.
+                rows = []
+                for i in range(0, len(toks), 3):
+                    chunk = toks[i:i+3]
+                    if len(chunk) < 3:
+                        break
+                    rows.append(chunk)
+
+                if rows:
+                    out = ['<div class="table-wrap"><table>']
+                    out.append('<thead><tr>' + ''.join(f'<th>{_html.escape(c)}</th>' for c in header) + '</tr></thead>')
+                    out.append('<tbody>')
+                    for r in rows:
+                        out.append('<tr>' + ''.join(f'<td>{_html.escape(c)}</td>' for c in r) + '</tr>')
+                    out.append('</tbody></table></div>')
+                    return ''.join(out)
+
+            return md
+
+        def table_repl(m: re.Match) -> str:
+            raw = m.group(1)
+            unesc = _html.unescape(raw)
+            return pipe_to_table(unesc)
+
+        body = re.sub(
+            r"<p>\s*(&lt;!\s*[^>]*begin:generated-table[^<]*&gt;[\s\S]*?end:generated-table[^<]*&gt;)\s*</p>",
+            table_repl,
+            body,
+            flags=re.IGNORECASE,
+        )
+    except Exception:
+        pass
+
     # Pandoc uses <h1> for every section. Our page already has an H1.
     # Downgrade pandoc H1 -> H2 for a sane hierarchy.
     body = re.sub(r"<\s*h1\b", "<h2", body, flags=re.IGNORECASE)
