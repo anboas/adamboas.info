@@ -13,7 +13,10 @@ export default defineConfig({
 
   // For GitHub Pages project deployments (served from /<repo>/)
   // In workflows we set ASTRO_BASE to '/adamboas.info'
-  base: process.env.ASTRO_BASE || '/',
+  base: (() => {
+    const b = process.env.ASTRO_BASE || '/';
+    return b.endsWith('/') ? b : `${b}/`;
+  })(),
 
   integrations: [mdx(), sitemap()],
 

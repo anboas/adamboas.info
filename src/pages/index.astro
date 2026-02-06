@@ -1,23 +1,58 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import { getCollection } from 'astro:content';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const roles = [
+	{ company: 'KBR', title: 'Solutions Architect', period: '2025–present' },
+	{ company: 'Booz Allen Hamilton', title: 'Solutions Architect', period: '2024–2025' },
+	{ company: 'KBR', title: 'Solutions Architect', period: '2022–2024' },
+	{ company: 'Booz Allen Hamilton', title: 'Solutions Architect', period: '2019–2022' },
+	{ company: 'KBRwyle', title: 'Cloud Architect / Site Reliability Engineer', period: '2018–2019' },
+	{ company: 'KBRwyle', title: 'Architecture Analyst / Software Engineer', period: '2018' },
+	{ company: 'KBR', title: 'Software Engineer', period: '2015–2018' },
+	{ company: 'Fast DAS', title: 'Jr. RF Engineer', period: '2015' },
+	{ company: 'Kerry Group', title: 'Programming Consultant', period: '2014' },
+	{ company: 'Central Florida Health Alliance', title: 'Programming Consultant', period: '2014' },
+];
+
+const certs = [
+	{ issuer: 'Amazon Web Services', name: 'AWS Certified Cloud Practitioner', year: '2019' },
+	{ issuer: 'Amazon Web Services', name: 'AWS Certified Solutions Architect - Associate', year: '2019' },
+	{ issuer: 'HP Enterprise (HPE)', name: 'HP ASE - FORTIFY V1', year: '2016' },
+	{ issuer: 'ScrumAlliance', name: 'CERTIFIED SCRUMMASTER', year: '2016' },
+];
+
+const papers = (await getCollection('papers'))
+	.filter((p) => p.data.status === 'published')
+	.sort((a, b) => (b.data.date?.valueOf?.() ?? 0) - (a.data.date?.valueOf?.() ?? 0));
 ---
 
 <SiteLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<a id="page-top" class="block" aria-hidden="true"></a>
+
 	<section class="card p-8">
 		<div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
 			<div class="max-w-2xl">
-				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">
+				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">Adam Boas</h1>
+				<p class="mt-2 text-slate-400">Solutions Architect</p>
+				<p class="mt-4 text-lg text-slate-300">
 					Autonomy, governance, and systems that actually ship.
-				</h1>
-				<p class="mt-3 text-lg text-slate-300">
-					I build and operationalize agentic autonomy with hard constraints: trust scopes, control planes,
-					policy-as-code, auditability, and cost-aware execution.
 				</p>
 			</div>
 			<div class="flex gap-3">
-				<a href={`${import.meta.env.BASE_URL}papers/`} class="rounded-xl bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400">View papers</a>
-				<a href={`${import.meta.env.BASE_URL}experience/`} class="rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">Experience</a>
+				<a
+					href="#papers"
+					class="rounded-none bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400"
+				>
+					Papers
+				</a>
+				<a
+					href="#experience"
+					class="rounded-none border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900"
+				>
+					Experience
+				</a>
 			</div>
 		</div>
 	</section>
@@ -33,22 +68,86 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			</ul>
 		</section>
 		<section class="card p-6">
-			<h2 class="section-title">Selected artifacts</h2>
-			<p class="mt-3 text-sm text-slate-300">
-				Whitepapers and working docs are published as standalone pages.
-			</p>
+			<h2 class="section-title">Artifacts</h2>
+			<p class="mt-3 text-sm text-slate-300">Whitepapers and working docs.</p>
 			<p class="mt-4">
-				<a href={`${import.meta.env.BASE_URL}papers/`} class="text-sm font-semibold">Browse papers →</a>
+				<a href="#papers" class="text-sm font-semibold">Browse papers →</a>
 			</p>
 		</section>
 		<section class="card p-6">
 			<h2 class="section-title">Contact</h2>
-			<p class="mt-3 text-sm text-slate-300">
-				Email is best. If you found this via a paper, reference the title in the subject line.
-			</p>
-			<p class="mt-4 text-sm">
-				<a href="mailto:adam@adamboas.info">adam@adamboas.info</a>
-			</p>
+			<p class="mt-3 text-sm text-slate-300">Email is best.</p>
+			<p class="mt-4 text-sm"><a href="mailto:adam@adamboas.info">adam@adamboas.info</a></p>
 		</section>
 	</div>
+
+	<section id="experience" class="mt-10">
+		<div class="card p-6">
+			<h2 class="text-xl font-semibold text-slate-50">Experience</h2>
+			<p class="mt-2 text-sm text-slate-300">Companies and roles.</p>
+
+			<div class="mt-6 overflow-hidden rounded-none border border-slate-800">
+				<table class="w-full border-collapse text-sm">
+					<thead class="bg-slate-950/60">
+						<tr>
+							<th class="px-4 py-3 text-left font-semibold text-slate-200">Company</th>
+							<th class="px-4 py-3 text-left font-semibold text-slate-200">Role</th>
+							<th class="px-4 py-3 text-right font-semibold text-slate-200">Period</th>
+						</tr>
+					</thead>
+					<tbody>
+						{roles.map((r) => (
+							<tr class="border-t border-slate-800">
+								<td class="px-4 py-3 text-slate-100">{r.company}</td>
+								<td class="px-4 py-3 text-slate-300">{r.title}</td>
+								<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section id="credentials" class="mt-10">
+		<div class="card p-6">
+			<h2 class="text-xl font-semibold text-slate-50">Credentials</h2>
+			<p class="mt-2 text-sm text-slate-300">Certifications.</p>
+
+			<ul class="mt-6 space-y-3 text-sm">
+				{certs.map((c) => (
+					<li class="flex flex-col gap-1 border-b border-slate-800 pb-3 md:flex-row md:items-baseline md:justify-between">
+						<span class="text-slate-50">{c.name}</span>
+						<span class="text-slate-400">{c.issuer}{c.year ? ` • ${c.year}` : ''}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<section id="papers" class="mt-10">
+		<div class="card p-6">
+			<h2 class="text-xl font-semibold text-slate-50">Papers</h2>
+			<p class="mt-2 text-sm text-slate-300">Long-form writing (HTML + optional PDF).</p>
+
+			<div class="mt-6 grid gap-4">
+				{papers.map((p) => (
+					<a class="card block p-5 hover:border-slate-700" href={`${import.meta.env.BASE_URL}papers/${p.id}/`}>
+						<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+							<h3 class="text-base font-semibold text-slate-50">{p.data.title}</h3>
+							{p.data.date && <span class="text-xs text-slate-400">{p.data.date.toISOString().slice(0, 10)}</span>}
+						</div>
+						{p.data.description && <p class="mt-2 text-sm text-slate-300">{p.data.description}</p>}
+					</a>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section id="blog" class="mt-10">
+		<div class="card p-6">
+			<h2 class="text-xl font-semibold text-slate-50">Blog</h2>
+			<p class="mt-2 text-sm text-slate-300">Coming soon.</p>
+		</div>
+	</section>
 </SiteLayout>

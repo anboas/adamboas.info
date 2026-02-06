@@ -15,7 +15,7 @@ export async function GET(context) {
 				title: p.data.title,
 				description: p.data.description ?? '',
 				pubDate: p.data.date ?? new Date(),
-				link: `${import.meta.env.BASE_URL}papers/${p.id}/`,
+				link: `${new URL(`papers/${p.id}/`, context.site).toString()}`, 
 			})),
 	});
 }
