@@ -211,9 +211,11 @@ def main() -> int:
         flags=re.IGNORECASE,
     )
 
-    # Clean up leading distribution/disclaimer boilerplate blocks.
+    # Remove leading title-block metadata (author/title/date/distribution/disclaimer).
+    # On the site, the page template already provides context.
     body = re.sub(
-        r"\A\s*(<p>\s*<span[^>]*>\s*(DISTRIBUTION|DISCLAIMER)[\s\S]*?</p>\s*){1,4}",
+        r"\A\s*(<div>\s*<hr\s*/?>\s*</div>\s*)?"
+        r"(<p>\s*(<strong>[^<]+</strong>|<span[^>]*>[^<]+</span>)[\s\S]*?</p>\s*){1,6}",
         "",
         body,
         flags=re.IGNORECASE,
