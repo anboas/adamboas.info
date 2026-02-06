@@ -86,7 +86,8 @@ jobs:
             fi
 
             if [ -n "$html" ]; then
-              cp "$html" "src/generated/papers/${slug}.html"
+              # Pandoc HTML is standalone with its own <style>. Extract body-only fragment.
+              python3 scripts/extract_pandoc_body.py "$html" "src/generated/papers/${slug}.html"
             else
               echo "WARN: no html for $slug" >&2
             fi
