@@ -100,7 +100,10 @@ jobs:
           set -euo pipefail
 
           rm -rf /tmp/wp-repo
-          gh repo clone anboas/Whitepaper /tmp/wp-repo -- --depth 1
+
+          # Avoid `gh repo clone` (GraphQL) since fine-grained PATs can fail with:
+          # "Resource not accessible by personal access token (repository.defaultBranchRef)".
+          git clone --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/anboas/Whitepaper.git" /tmp/wp-repo
 
           mkdir -p src/content/writing
 
