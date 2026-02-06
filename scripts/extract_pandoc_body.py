@@ -163,11 +163,19 @@ def main() -> int:
     body = re.sub(r"<\s*h1\b", "<h2", body, flags=re.IGNORECASE)
     body = re.sub(r"</\s*h1\s*>", "</h2>", body, flags=re.IGNORECASE)
 
-    # Fix spacing between Distribution and Disclaimer when pandoc collapses spans.
-    # Example bad output: "Public.<strong>Disclaimer:</strong> ..."
+    # Remove the Distribution/Disclaimer boilerplate line from the site rendering.
+    # (PDF keeps it; HTML doesn't need it.)
     body = re.sub(
-        r"Public\.\s*(<strong>\s*Disclaimer:\s*</strong>)",
-        r"Public.\n\1",
+        r"<p>\s*<span[^>]*>\s*<strong>\s*Distribution:\s*</strong>[\s\S]*?<strong>\s*Disclaimer:\s*</strong>[\s\S]*?</span>\s*</p>\s*",
+        "",
+        body,
+        flags=re.IGNORECASE,
+    )
+
+    # Also handle rare variants without the surrounding <span>.
+    body = re.sub(
+        r"<p>\s*<strong>\s*Distribution:\s*</strong>[\s\S]*?<strong>\s*Disclaimer:\s*</strong>[\s\S]*?</p>\s*",
+        "",
         body,
         flags=re.IGNORECASE,
     )
