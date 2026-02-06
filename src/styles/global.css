@@ -20,7 +20,8 @@ body {
 }
 
 a {
-  @apply text-cyan-300 hover:text-cyan-200;
+  /* muted tan/stone accent instead of bright blue */
+  @apply text-stone-200 hover:text-stone-50;
 }
 
 .container {
