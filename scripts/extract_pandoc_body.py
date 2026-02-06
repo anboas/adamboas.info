@@ -51,6 +51,14 @@ def main() -> int:
     # Collapse hard line-wraps inside text (pandoc emits newlines that show up in headings).
     body = re.sub(r"([A-Za-z0-9,.;:\)])\n([A-Za-z0-9(])", r"\1 \2", body)
 
+    # Pandoc uses <h1> for every section. Our page already has an H1.
+    # Downgrade pandoc H1 -> H2 for a sane hierarchy.
+    body = re.sub(r"<\s*h1\b", "<h2", body, flags=re.IGNORECASE)
+    body = re.sub(r"</\s*h1\s*>", "</h2>", body, flags=re.IGNORECASE)
+
+    # Drop empty paragraphs.
+    body = re.sub(r"<p>\s*</p>", "", body, flags=re.IGNORECASE)
+
     # Normalize excessive blank lines.
     body = re.sub(r"\n{3,}", "\n\n", body)
 

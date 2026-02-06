@@ -49,10 +49,33 @@ a {
 /* Paper pages should be readable; keep the site terminal vibe elsewhere. */
 .paper-content {
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.7;
 }
 
-.paper-content :is(h1,h2,h3) {
+.paper-content :is(h1,h2,h3,h4) {
   scroll-margin-top: 96px;
+}
+
+/* Make pandoc section headings feel like a paper, not a blog. */
+.paper-content h2 {
+  @apply mt-10 text-xl font-semibold text-slate-50;
+  letter-spacing: 0.01em;
+}
+
+.paper-content p {
+  @apply text-slate-200/90;
+}
+
+.paper-content hr {
+  @apply my-6 border-slate-800;
+}
+
+.paper-content blockquote {
+  @apply border-l-2 border-slate-700 pl-4 text-slate-200/90;
+}
+
+.paper-content a {
+  @apply text-stone-200 underline decoration-slate-600 underline-offset-4 hover:text-stone-50;
 }
 
 .paper-content pre {
