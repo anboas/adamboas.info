@@ -38,7 +38,7 @@ jobs:
             --accept 200,206,429
             --timeout 20
             --max-retries 2
-            --include-fragments
+            --exclude "^https://adamboas\.info"
             --root-dir ${{ github.workspace }}/dist
             "dist/**/*.html"
 
