@@ -13,6 +13,21 @@ npm run dev
 npm run build
 ```
 
-## Offline viewing (GitHub Actions artifact)
+## Offline viewing
+
+If you open `dist/index.html` directly via `file://`, your browser may block module scripts/assets.
+Use a local server instead:
+
+```bash
+npm run build
+cd dist
+python3 -m http.server 4173
+# open http://127.0.0.1:4173/
+```
+
+## GitHub Actions artifacts
 Every push/PR runs the `build-site` workflow and uploads a `site-dist` artifact.
-Download it and open `index.html` from the extracted folder.
+Download it, then serve it locally as above.
+
+## Dev hosting (GitHub Pages)
+A `deploy-dev-pages` workflow publishes the latest `main` build to GitHub Pages.

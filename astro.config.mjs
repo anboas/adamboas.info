@@ -10,6 +10,11 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   // Used for sitemap + RSS canonical URLs
   site: 'https://adamboas.info',
+
+  // For GitHub Pages project deployments (served from /<repo>/)
+  // In workflows we set ASTRO_BASE to '/adamboas.info'
+  base: process.env.ASTRO_BASE || '/',
+
   integrations: [mdx(), sitemap()],
 
   vite: {
