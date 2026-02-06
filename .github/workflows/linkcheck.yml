@@ -34,7 +34,7 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --exclude-mail
+            --exclude "^mailto:"
             --accept 200,206,429
             --timeout 20
             --max-retries 2
