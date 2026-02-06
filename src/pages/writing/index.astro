@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
+import writingIndexJs from '../../scripts/writing-index.js?raw';
 
 const writing = (await getCollection('writing'))
 	.filter((w) => w.data.status === 'published')
@@ -70,7 +71,7 @@ const items = [
 			<a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
 		</p>
 
-		<script type="module" src={withBase('/scripts/writing-index.js')}></script>
+		<script type="module" set:html={writingIndexJs}></script>
 
 		<div class="mt-8 grid gap-4">
 			{items.map((w) => (
