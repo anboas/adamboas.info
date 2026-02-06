@@ -124,16 +124,16 @@ const homepageWriting = [
 
 			<div class="mt-6 grid gap-4">
 				{homepageWriting.map((w) => (
-					<a class="card block p-5 hover:border-slate-700" href={`${import.meta.env.BASE_URL}writing/${w.slug}/`}>
+					<a class="card block overflow-hidden p-5 hover:border-slate-700" href={`${import.meta.env.BASE_URL}writing/${w.slug}/`}>
 						<div class="flex items-baseline justify-between gap-4">
 							<div class="min-w-0">
-								<div class="flex items-baseline gap-2">
+								<div class="flex min-w-0 items-baseline gap-2">
 									<span class="rounded-none border border-slate-700 bg-slate-950/40 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">
 										{w.type}
 									</span>
-									<h3 class="truncate text-base font-semibold text-slate-50">{w.title}</h3>
+									<h3 class="min-w-0 truncate text-base font-semibold text-slate-50">{w.title}</h3>
 								</div>
-								{w.description && <p class="mt-2 text-sm text-slate-300">{w.description}</p>}
+								{w.description && <p class="mt-2 break-words text-sm text-slate-300">{w.description}</p>}
 							</div>
 							{w.date && <span class="shrink-0 text-xs text-slate-400">{w.date.toISOString().slice(0, 10)}</span>}
 						</div>
