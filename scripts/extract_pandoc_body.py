@@ -61,10 +61,10 @@ def main() -> int:
 
     # Drop redundant subtitle lines that duplicate page header description.
     body = re.sub(
-        r"\A\s*<p>\s*A\s+white\s+paper\s+on\s+agentic\s+autonomy[^<]*</p>\s*",
+        r"\A\s*<p>\s*A\s+white\s+paper\s+on\s+agentic\s+autonomy[\s\S]*?</p>\s*",
         "",
         body,
-        flags=re.IGNORECASE | re.DOTALL,
+        flags=re.IGNORECASE,
     )
 
     # Clean up leading distribution/disclaimer boilerplate blocks.
