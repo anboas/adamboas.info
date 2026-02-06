@@ -140,12 +140,15 @@ article[data-paper-style="dossier"] .paper-content pre code {
 }
 .paper-content pre.codeblock code {
   display: block;
+  line-height: 1.35;
 }
 .paper-content pre.codeblock code .code-line {
   display: block;
   padding-left: 3.25rem;
   position: relative;
   white-space: pre;
+  line-height: 1.35;
+  margin: 0;
 }
 .paper-content pre.codeblock code .code-line::before {
   counter-increment: codeline;
