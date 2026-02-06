@@ -103,17 +103,19 @@ jobs:
 
           # Avoid `gh repo clone` (GraphQL) since fine-grained PATs can fail with:
           # "Resource not accessible by personal access token (repository.defaultBranchRef)".
-          git clone --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/anboas/Whitepaper.git" /tmp/wp-repo
-
-          mkdir -p src/content/writing
+          #
+          # NOTE: This requires the PAT to have repo **Contents: Read** access.
+          # If clone fails (403), we skip syncing notes/memos so paper sync can still succeed.
+          if ! git clone --depth 1 "https://x-access-token:${GH_TOKEN}@github.com/anboas/Whitepaper.git" /tmp/wp-repo; then
+            echo "WARN: Could not clone anboas/Whitepaper for notes/memos sync. Ensure WHITEPAPER_SYNC_TOKEN has Contents: Read." >&2
+            exit 0
+          fi
 
           # Start clean so deletions in Whitepaper propagate.
           rm -rf src/content/writing
-          mkdir -p src/content/writing
-
-          # Copy all notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
           mkdir -p src/content/writing/notes src/content/writing/memos
 
+          # Copy all notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
           shopt -s globstar nullglob
           for f in /tmp/wp-repo/writing/notes/**/*.md; do
             base=$(basename "$f")
