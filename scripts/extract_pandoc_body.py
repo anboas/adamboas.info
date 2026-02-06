@@ -48,6 +48,9 @@ def main() -> int:
     # Drop inline styles (pandoc uses these for colors) so site theme wins.
     body = re.sub(r"\sstyle=\"[^\"]*\"", "", body, flags=re.IGNORECASE)
 
+    # Collapse hard line-wraps inside text (pandoc emits newlines that show up in headings).
+    body = re.sub(r"([A-Za-z0-9,.;:\)])\n([A-Za-z0-9(])", r"\1 \2", body)
+
     # Normalize excessive blank lines.
     body = re.sub(r"\n{3,}", "\n\n", body)
 
