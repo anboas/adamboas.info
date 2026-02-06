@@ -93,6 +93,15 @@ function updateUrl() {
 	window.history.replaceState({}, '', url);
 }
 
+
+
+function applyTag(tag) {
+	const inp = document.querySelector('[data-writing-search]');
+	if (inp) inp.value = tag;
+	updateUrl();
+	applyFilter();
+}
+
 for (const sel of ['[data-writing-search]', '[data-writing-type]']) {
 	const el = document.querySelector(sel);
 	if (el) el.addEventListener('input', () => {
@@ -104,6 +113,17 @@ for (const sel of ['[data-writing-search]', '[data-writing-type]']) {
 		applyFilter();
 	});
 }
+
+
+
+// Clicking a tag pill applies it as the search query.
+const root = document.querySelector('[data-writing-index]');
+if (root) root.addEventListener('click', (e) => {
+	const btn = e.target?.closest?.('[data-writing-tag]');
+	if (!btn) return;
+	e.preventDefault();
+	applyTag(btn.getAttribute('data-writing-tag') || '');
+});
 
 const clearBtn = document.querySelector('[data-writing-clear]');
 if (clearBtn) clearBtn.addEventListener('click', () => clearFilters());
