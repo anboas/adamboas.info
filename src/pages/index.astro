@@ -1,0 +1,54 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<SiteLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<section class="card p-8">
+		<div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+			<div class="max-w-2xl">
+				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">
+					Autonomy, governance, and systems that actually ship.
+				</h1>
+				<p class="mt-3 text-lg text-slate-300">
+					I build and operationalize agentic autonomy with hard constraints: trust scopes, control planes,
+					policy-as-code, auditability, and cost-aware execution.
+				</p>
+			</div>
+			<div class="flex gap-3">
+				<a href="/papers" class="rounded-xl bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400">View papers</a>
+				<a href="/experience" class="rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">Experience</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="mt-10 grid gap-6 md:grid-cols-3">
+		<section class="card p-6">
+			<h2 class="section-title">Focus</h2>
+			<ul class="mt-3 space-y-2 text-sm text-slate-300">
+				<li>Agent governance and control planes</li>
+				<li>Policy-as-code and trust scopes</li>
+				<li>Operational reliability under adversarial pressure</li>
+				<li>Automation that is auditable and reversible</li>
+			</ul>
+		</section>
+		<section class="card p-6">
+			<h2 class="section-title">Selected artifacts</h2>
+			<p class="mt-3 text-sm text-slate-300">
+				Whitepapers and working docs are published as standalone pages.
+			</p>
+			<p class="mt-4">
+				<a href="/papers" class="text-sm font-semibold">Browse papers →</a>
+			</p>
+		</section>
+		<section class="card p-6">
+			<h2 class="section-title">Contact</h2>
+			<p class="mt-3 text-sm text-slate-300">
+				Email is best. If you found this via a paper, reference the title in the subject line.
+			</p>
+			<p class="mt-4 text-sm">
+				<a href="mailto:adam@adamboas.info">adam@adamboas.info</a>
+			</p>
+		</section>
+	</div>
+</SiteLayout>

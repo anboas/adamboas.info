@@ -1,0 +1,28 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+
+// TODO: replace with your real history (I can import from the old site + your resume)
+const companies = [
+	{ name: 'Company A', role: 'Solutions Architect', period: 'YYYY–YYYY', bullets: ['Cloud architecture', 'Automation + CI/CD', 'Reliability + monitoring'] },
+	{ name: 'Company B', role: 'Engineer', period: 'YYYY–YYYY', bullets: ['Systems engineering', 'Infra as code', 'Security'] },
+];
+---
+
+<SiteLayout title="Experience | Adam Boas" description="Companies and roles.">
+	<h1 class="text-2xl font-semibold text-slate-50">Experience</h1>
+	<p class="mt-2 text-slate-300">Companies I’ve worked at and what I shipped there.</p>
+
+	<div class="mt-8 space-y-6">
+		{companies.map((c) => (
+			<section class="card p-6">
+				<div class="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
+					<h2 class="text-lg font-semibold text-slate-50">{c.name}</h2>
+					<p class="text-sm text-slate-400">{c.role} • {c.period}</p>
+				</div>
+				<ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
+					{c.bullets.map((b) => <li>{b}</li>)}
+				</ul>
+			</section>
+		))}
+	</div>
+</SiteLayout>

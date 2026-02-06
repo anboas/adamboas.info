@@ -1,0 +1,16 @@
+---
+const today = new Date();
+---
+
+<footer class="border-t border-slate-800 bg-slate-950/60 backdrop-blur">
+	<div class="container py-8 text-sm text-slate-400">
+		<div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+			<p>© {today.getFullYear()} Adam Boas</p>
+			<p>
+				<a href="/rss.xml">RSS</a>
+				<span class="px-2 text-slate-700">|</span>
+				<a href="/papers">Papers</a>
+			</p>
+		</div>
+	</div>
+</footer>

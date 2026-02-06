@@ -1,0 +1,28 @@
+---
+import { SITE_TITLE } from '../consts';
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header class="border-b border-slate-800 bg-slate-950/60 backdrop-blur">
+	<nav class="container flex items-center justify-between py-4">
+		<div class="flex items-center gap-3">
+			<a href="/" class="text-base font-semibold tracking-tight text-slate-50 hover:text-slate-50">
+				{SITE_TITLE}
+			</a>
+			<span class="text-xs text-slate-400">autonomy • governance • systems</span>
+		</div>
+
+		<div class="hidden items-center gap-1 md:flex">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/experience">Experience</HeaderLink>
+			<HeaderLink href="/credentials">Credentials</HeaderLink>
+			<HeaderLink href="/papers">Papers</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+		</div>
+
+		<div class="flex items-center gap-3">
+			<a class="text-sm text-slate-300 hover:text-slate-100" href="https://github.com/anboas" target="_blank" rel="noreferrer">GitHub</a>
+			<a class="text-sm text-slate-300 hover:text-slate-100" href="mailto:adam@adamboas.info">Email</a>
+		</div>
+	</nav>
+</header>
