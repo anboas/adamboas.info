@@ -76,6 +76,25 @@ article[data-paper-style="dossier"] .paper-content blockquote {
   @apply my-6 border-l-4 border-slate-600 bg-slate-950/40 px-5 py-4;
 }
 
+/* Pull quotes / callouts from Whitepaper export */
+.paper-content .calloutquotebox {
+  @apply my-8 border border-slate-700 bg-slate-950/40 px-6 py-5;
+}
+.paper-content .calloutquotebox p {
+  @apply m-0 text-slate-50;
+  font-weight: 650;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+article[data-paper-style="dossier"] .paper-content .calloutquotebox {
+  @apply border-slate-600 bg-black/40;
+}
+article[data-paper-style="dossier"] .paper-content .calloutquotebox p {
+  @apply text-slate-100;
+  font-size: 1.05rem;
+}
+
 article[data-paper-style="dossier"] .paper-content blockquote p {
   @apply m-0 text-slate-100;
 }
@@ -113,6 +132,31 @@ article[data-paper-style="dossier"] .paper-content pre code {
   @apply text-sm text-slate-100;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   letter-spacing: 0.01em;
+}
+
+/* Code line numbers (HTML-only) */
+.paper-content pre.codeblock {
+  counter-reset: codeline;
+}
+.paper-content pre.codeblock code {
+  display: block;
+}
+.paper-content pre.codeblock code .code-line {
+  display: block;
+  padding-left: 3.25rem;
+  position: relative;
+  white-space: pre;
+}
+.paper-content pre.codeblock code .code-line::before {
+  counter-increment: codeline;
+  content: counter(codeline);
+  position: absolute;
+  left: 0;
+  width: 2.75rem;
+  text-align: right;
+  padding-right: 0.75rem;
+  color: rgba(148, 163, 184, 0.65);
+  user-select: none;
 }
 
 /* Inline code */

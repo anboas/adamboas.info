@@ -163,6 +163,35 @@ def main() -> int:
     body = re.sub(r"<\s*h1\b", "<h2", body, flags=re.IGNORECASE)
     body = re.sub(r"</\s*h1\s*>", "</h2>", body, flags=re.IGNORECASE)
 
+    # Fix spacing between Distribution and Disclaimer when pandoc collapses spans.
+    # Example bad output: "Public.<strong>Disclaimer:</strong> ..."
+    body = re.sub(
+        r"Public\.\s*(<strong>\s*Disclaimer:\s*</strong>)",
+        r"Public.\n\1",
+        body,
+        flags=re.IGNORECASE,
+    )
+
+    # Add line numbers to code blocks for readability (HTML only).
+    # We wrap each line in a span so CSS can counter-increment.
+    def _add_code_line_numbers(m: re.Match) -> str:
+        code = m.group(1)
+        # If already processed, leave it.
+        if 'class="code-line"' in code:
+            return m.group(0)
+        # Normalize line breaks.
+        lines = code.splitlines()
+        # Preserve trailing blank line if present.
+        wrapped = "\n".join(f'<span class="code-line">{ln}</span>' for ln in lines)
+        return f"<pre class=\"codeblock\"><code>{wrapped}</code></pre>"
+
+    body = re.sub(
+        r"<pre>\s*<code>([\s\S]*?)</code>\s*</pre>",
+        _add_code_line_numbers,
+        body,
+        flags=re.IGNORECASE,
+    )
+
     # Drop empty paragraphs.
     body = re.sub(r"<p>\s*</p>", "", body, flags=re.IGNORECASE)
 
