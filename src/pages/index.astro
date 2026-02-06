@@ -42,10 +42,10 @@ const papers = (await getCollection('papers'))
 			</div>
 			<div class="flex gap-3">
 				<a
-					href="#papers"
+					href="#writing"
 					class="rounded-none bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400"
 				>
-					Papers
+					Writing
 				</a>
 				<a
 					href="#experience"
@@ -71,7 +71,7 @@ const papers = (await getCollection('papers'))
 			<h2 class="section-title">Artifacts</h2>
 			<p class="mt-3 text-sm text-slate-300">Whitepapers and working docs.</p>
 			<p class="mt-4">
-				<a href="#papers" class="text-sm font-semibold">Browse papers →</a>
+				<a href="#writing" class="text-sm font-semibold">Browse writing →</a>
 			</p>
 		</section>
 		<section class="card p-6">
@@ -109,10 +109,10 @@ const papers = (await getCollection('papers'))
 		</div>
 	</section>
 
-	<section id="credentials" class="mt-10">
+	<section id="education" class="mt-10">
 		<div class="card p-6">
-			<h2 class="text-xl font-semibold text-slate-50">Credentials</h2>
-			<p class="mt-2 text-sm text-slate-300">Certifications.</p>
+			<h2 class="text-xl font-semibold text-slate-50">Education</h2>
+			<p class="mt-2 text-sm text-slate-300">Education and certifications.</p>
 
 			<ul class="mt-6 space-y-3 text-sm">
 				{certs.map((c) => (
@@ -125,10 +125,10 @@ const papers = (await getCollection('papers'))
 		</div>
 	</section>
 
-	<section id="papers" class="mt-10">
+	<section id="writing" class="mt-10">
 		<div class="card p-6">
-			<h2 class="text-xl font-semibold text-slate-50">Papers</h2>
-			<p class="mt-2 text-sm text-slate-300">Long-form writing (HTML + optional PDF).</p>
+			<h2 class="text-xl font-semibold text-slate-50">Writing</h2>
+			<p class="mt-2 text-sm text-slate-300">Papers + blog posts.</p>
 
 			<div class="mt-6 grid gap-4">
 				{papers.map((p) => (
@@ -144,10 +144,5 @@ const papers = (await getCollection('papers'))
 		</div>
 	</section>
 
-	<section id="blog" class="mt-10">
-		<div class="card p-6">
-			<h2 class="text-xl font-semibold text-slate-50">Blog</h2>
-			<p class="mt-2 text-sm text-slate-300">Coming soon.</p>
-		</div>
-	</section>
+	<!-- Blog section merged into Writing -->
 </SiteLayout>
