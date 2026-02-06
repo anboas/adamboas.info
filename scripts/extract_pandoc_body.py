@@ -103,6 +103,58 @@ def main() -> int:
             body,
             flags=re.IGNORECASE,
         )
+
+        # Convert pandoc's tabular fallback (div.tabular) into a real table.
+        def tabular_div_repl(m: re.Match) -> str:
+            raw = m.group(1)
+            # Replace <br/> with newlines, strip tags.
+            txt = re.sub(r"<br\s*/?>", "\n", raw, flags=re.IGNORECASE)
+            txt = re.sub(r"<[^>]+>", "", txt)
+            txt = _html.unescape(txt)
+            raw_lines = [ln.rstrip() for ln in txt.splitlines() if ln.strip()]
+            lines = []
+            i = 0
+            while i < len(raw_lines):
+                ln = raw_lines[i].strip()
+                # join soft-wrapped lines (pandoc sometimes splits after a '+')
+                while ln.endswith('+') and i + 1 < len(raw_lines):
+                    ln = (ln[:-1].rstrip() + ' + ' + raw_lines[i + 1].strip())
+                    i += 1
+                lines.append(ln)
+                i += 1
+            # drop leading colspec junk lines (often start with p0.26)
+            while lines and lines[0].lower().startswith('p') and 'dimension' not in lines[0].lower():
+                lines = lines[1:]
+            if not lines:
+                return m.group(0)
+
+            header = ['Dimension', 'Force Multiplication (Assistants)', 'Force Creation (Agents)']
+            rows = []
+            for ln in lines:
+                parts = [p.strip() for p in ln.split('&')]
+                if len(parts) < 3:
+                    continue
+                if 'dimension' in parts[0].lower() and 'force multiplication' in parts[1].lower():
+                    continue
+                rows.append(parts[:3])
+
+            if not rows:
+                return m.group(0)
+
+            out = ['<div class="table-wrap"><table>']
+            out.append('<thead><tr>' + ''.join(f'<th>{_html.escape(c)}</th>' for c in header) + '</tr></thead>')
+            out.append('<tbody>')
+            for r in rows:
+                out.append('<tr>' + ''.join(f'<td>{_html.escape(c)}</td>' for c in r) + '</tr>')
+            out.append('</tbody></table></div>')
+            return ''.join(out)
+
+        body = re.sub(
+            r"<div\s+class=\"tabular\"[^>]*>\s*<p>([\s\S]*?)</p>\s*</div>",
+            tabular_div_repl,
+            body,
+            flags=re.IGNORECASE,
+        )
     except Exception:
         pass
 
