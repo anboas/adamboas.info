@@ -52,11 +52,6 @@ a {
   line-height: 1.7;
 }
 
-/* Academic vibe (default): cleaner typesetting */
-article[data-paper-style="academic"] .paper-content {
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-}
-
 /* Dossier vibe: terminal-ish chrome, tighter rhythm */
 article[data-paper-style="dossier"] .paper-content {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

@@ -59,6 +59,22 @@ def main() -> int:
     # Drop empty paragraphs.
     body = re.sub(r"<p>\s*</p>", "", body, flags=re.IGNORECASE)
 
+    # Drop redundant subtitle lines that duplicate page header description.
+    body = re.sub(
+        r"\A\s*<p>\s*A\s+white\s+paper\s+on\s+agentic\s+autonomy[^<]*</p>\s*",
+        "",
+        body,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+
+    # Clean up leading distribution/disclaimer boilerplate blocks.
+    body = re.sub(
+        r"\A\s*(<p>\s*<span[^>]*>\s*(DISTRIBUTION|DISCLAIMER)[\s\S]*?</p>\s*){1,4}",
+        "",
+        body,
+        flags=re.IGNORECASE,
+    )
+
     # Normalize excessive blank lines.
     body = re.sub(r"\n{3,}", "\n\n", body)
 
