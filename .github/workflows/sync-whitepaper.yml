@@ -108,14 +108,24 @@ jobs:
           rm -rf src/content/writing
           mkdir -p src/content/writing
 
-          # Copy all notes + memos markdown (ignore README.md). Flat output is fine for now.
+          # Copy all notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
+          mkdir -p src/content/writing/notes src/content/writing/memos
+
           shopt -s globstar nullglob
-          for f in /tmp/wp-repo/writing/notes/**/*.md /tmp/wp-repo/writing/memos/**/*.md; do
+          for f in /tmp/wp-repo/writing/notes/**/*.md; do
             base=$(basename "$f")
             if [ "$base" = "README.md" ]; then
               continue
             fi
-            cp "$f" "src/content/writing/${base}"
+            cp "$f" "src/content/writing/notes/${base}"
+          done
+
+          for f in /tmp/wp-repo/writing/memos/**/*.md; do
+            base=$(basename "$f")
+            if [ "$base" = "README.md" ]; then
+              continue
+            fi
+            cp "$f" "src/content/writing/memos/${base}"
           done
 
       - name: Commit changes
