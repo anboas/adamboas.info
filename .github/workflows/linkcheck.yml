@@ -31,6 +31,7 @@ jobs:
       - name: Link check (internal)
         uses: lycheeverse/lychee-action@v2
         with:
+          lycheeVersion: v0.28.0
           args: >-
             --verbose
             --no-progress
