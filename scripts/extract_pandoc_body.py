@@ -211,11 +211,12 @@ def main() -> int:
         flags=re.IGNORECASE,
     )
 
-    # Remove leading title-block metadata (author/title/date/distribution/disclaimer).
+    # Remove leading title-block metadata (author/role/date/distribution/disclaimer).
+    # Pandoc title-block HTML varies a bit; strip the common blocks aggressively.
     # On the site, the page template already provides context.
     body = re.sub(
-        r"\A\s*(<div>\s*<hr\s*/?>\s*</div>\s*)?"
-        r"(<p>\s*(<strong>[^<]+</strong>|<span[^>]*>[^<]+</span>)[\s\S]*?</p>\s*){1,6}",
+        r"\A\s*(<div>\s*<hr\s*/?>\s*</div>\s*)?"  # optional leading rule
+        r"(?:(?:<p>[\s\S]*?(?:Adam\s+Boas|Agentic\s+Warfare\s+Architect|January\s+20\d\d|Distribution:|Disclaimer:)[\s\S]*?</p>\s*){1,8})",
         "",
         body,
         flags=re.IGNORECASE,
