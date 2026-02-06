@@ -1,5 +1,6 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { education } from '../../data/resume';
 
 export async function getStaticPaths() {
@@ -9,7 +10,12 @@ export async function getStaticPaths() {
 const { c } = Astro.props;
 ---
 
+---
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+---
+
 <SiteLayout title={`Education | ${c.name}`} description={`${c.issuer}${c.year ? ` (${c.year})` : ''}.`}>
+	<StickyBrowseBar active="education" />
 	<section class="card p-8">
 		<h1 class="text-2xl font-semibold text-slate-50">{c.name}</h1>
 		<p class="mt-2 text-slate-300">{c.issuer}{c.year ? ` • ${c.year}` : ''}</p>

@@ -1,7 +1,7 @@
 ---
 import { withBase } from '../utils/withBase';
 
-const { active = 'writing' } = Astro.props as { active?: 'writing' | 'experience' | 'education' };
+const { active = 'writing' } = Astro.props as { active?: 'home' | 'writing' | 'experience' | 'education' };
 
 function cls(key) {
 	return key === active
@@ -13,6 +13,7 @@ function cls(key) {
 <div class="sticky-browse">
 	<div class="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-6 sm:py-3">
 		<div class="-mx-1 flex flex-nowrap gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+			<a class={cls('home')} href={withBase('/')}>Home</a>
 			<a class={cls('writing')} href={withBase('/writing/')}>Writing</a>
 			<a class={cls('experience')} href={withBase('/experience/')}>Experience</a>
 			<a class={cls('education')} href={withBase('/education/')}>Education</a>

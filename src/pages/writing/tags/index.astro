@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../../components/StickyBrowseBar.astro';
 import { withBase } from '../../../utils/withBase';
 
 const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
@@ -20,6 +21,7 @@ const tags = [...counts.entries()]
 ---
 
 <SiteLayout title="Writing Tags | Adam Boas" description="Topics across notes, memos, and papers.">
+	<StickyBrowseBar active="writing" />
 	<h1 class="text-2xl font-semibold text-slate-50">Writing Tags</h1>
 	<p class="mt-2 text-slate-300">Topics across notes, memos, and papers.</p>
 

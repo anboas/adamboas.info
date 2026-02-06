@@ -23,7 +23,7 @@ const papers = (await getCollection('papers'))
 		<p class="mt-2 text-slate-300">Notes (short-form), memos (briefs), and papers (whitepapers).</p>
 
 		<div class="mt-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-			<div class="-mx-1 flex flex-nowrap gap-2 overflow-x-auto px-1 pb-1 text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+			<div class="-mx-1 hidden flex-nowrap gap-2 overflow-x-auto px-1 pb-1 text-sm [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex">
 				<a class="shrink-0 rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-slate-200 hover:bg-slate-900" href={withBase('/writing/')}>All</a>
 				<a class="shrink-0 rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-slate-200 hover:bg-slate-900" href={withBase('/writing/?type=note')}>Notes</a>
 				<a class="shrink-0 rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-slate-200 hover:bg-slate-900" href={withBase('/writing/?type=memo')}>Memos</a>
@@ -37,7 +37,10 @@ const papers = (await getCollection('papers'))
 					<option value="memo">Memos</option>
 					<option value="paper">Papers</option>
 				</select>
-				<input data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 md:w-72" placeholder="Search title/tags" />
+				<div class="flex gap-2">
+					<input data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 md:w-72" placeholder="Search title/tags" />
+					<button type="button" data-writing-clear class="shrink-0 rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
+				</div>
 			</div>
 		</div>
 
@@ -54,15 +57,15 @@ const papers = (await getCollection('papers'))
 				{notes.map((w) => {
 					const slug = w.id.split('/').pop();
 					return (
-						<a data-writing-card data-type="note" data-title={w.data.title} data-tags={(w.data.tags ?? []).join(' ')} class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
+						<a data-writing-card data-type="note" data-title={w.data.title} data-tags={(w.data.tags ?? []).join(' ')} class="card block overflow-hidden p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
 							<div class="flex items-baseline justify-between gap-4">
 								<div class="flex min-w-0 items-baseline gap-2">
-									<span class="rounded-full border border-slate-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">Note</span>
-									<h3 class="truncate text-base font-semibold text-slate-50">{w.data.title}</h3>
+									<span class="rounded-full border border-slate-700 bg-slate-900/60 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-200">Note</span>
+									<h3 class="min-w-0 truncate text-base font-semibold text-slate-50">{w.data.title}</h3>
 								</div>
 								<span class="shrink-0 text-xs text-slate-400">{w.data.date.toISOString().slice(0, 10)}</span>
 							</div>
-							{w.data.summary && <p class="mt-2 text-sm text-slate-300">{w.data.summary}</p>}
+							{w.data.summary && <p class="clamp-3 mt-2 text-sm text-slate-300">{w.data.summary}</p>}
 							{w.data.tags?.length ? (
 								<ul class="mt-3 flex flex-wrap gap-2">
 									{w.data.tags.map((t) => (
@@ -84,15 +87,15 @@ const papers = (await getCollection('papers'))
 				{memos.map((w) => {
 					const slug = w.id.split('/').pop();
 					return (
-						<a data-writing-card data-type="memo" data-title={w.data.title} data-tags={(w.data.tags ?? []).join(' ')} class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
+						<a data-writing-card data-type="memo" data-title={w.data.title} data-tags={(w.data.tags ?? []).join(' ')} class="card block overflow-hidden p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
 							<div class="flex items-baseline justify-between gap-4">
 								<div class="flex min-w-0 items-baseline gap-2">
-									<span class="rounded-full border border-slate-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">Memo</span>
-									<h3 class="truncate text-base font-semibold text-slate-50">{w.data.title}</h3>
+									<span class="rounded-full border border-slate-700 bg-slate-900/60 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-200">Memo</span>
+									<h3 class="min-w-0 truncate text-base font-semibold text-slate-50">{w.data.title}</h3>
 								</div>
 								<span class="shrink-0 text-xs text-slate-400">{w.data.date.toISOString().slice(0, 10)}</span>
 							</div>
-							{w.data.summary && <p class="mt-2 text-sm text-slate-300">{w.data.summary}</p>}
+							{w.data.summary && <p class="clamp-3 mt-2 text-sm text-slate-300">{w.data.summary}</p>}
 							{w.data.tags?.length ? (
 								<ul class="mt-3 flex flex-wrap gap-2">
 									{w.data.tags.map((t) => (
@@ -112,12 +115,12 @@ const papers = (await getCollection('papers'))
 		<p class="mt-2 text-slate-300">Whitepapers and working docs.</p>
 		<div class="mt-6 grid gap-6">
 			{papers.map((p) => (
-				<a data-writing-card data-type="paper" data-title={p.data.title} data-tags={(p.data.tags ?? []).join(' ')} class="card block p-6 hover:border-slate-700" href={withBase(`/writing/${p.id}/`)}>
-					<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-						<h3 class="text-lg font-semibold text-slate-50">{p.data.title}</h3>
+				<a data-writing-card data-type="paper" data-title={p.data.title} data-tags={(p.data.tags ?? []).join(' ')} class="card block overflow-hidden p-6 hover:border-slate-700" href={withBase(`/writing/${p.id}/`)}>
+					<div class="flex min-w-0 flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+						<h3 class="min-w-0 text-lg font-semibold text-slate-50">{p.data.title}</h3>
 						{p.data.date && <span class="text-sm text-slate-400">{p.data.date.toISOString().slice(0, 10)}</span>}
 					</div>
-					{p.data.description && <p class="mt-3 text-sm text-slate-300">{p.data.description}</p>}
+					{p.data.description && <p class="clamp-3 mt-3 text-sm text-slate-300">{p.data.description}</p>}
 					{p.data.tags?.length ? (
 						<ul class="mt-4 flex flex-wrap gap-2">
 							{p.data.tags.map((t) => (

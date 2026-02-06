@@ -128,12 +128,12 @@ const homepageWriting = [
 						<div class="flex items-baseline justify-between gap-4">
 							<div class="min-w-0">
 								<div class="flex min-w-0 items-baseline gap-2">
-									<span class="rounded-none border border-slate-700 bg-slate-950/40 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">
+									<span class="rounded-none border border-slate-700 bg-slate-900/60 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-200">
 										{w.type}
 									</span>
 									<h3 class="min-w-0 truncate text-base font-semibold text-slate-50">{w.title}</h3>
 								</div>
-								{w.description && <p class="mt-2 break-words text-sm text-slate-300">{w.description}</p>}
+								{w.description && <p class="clamp-3 mt-2 break-words text-sm text-slate-300">{w.description}</p>}
 							</div>
 							{w.date && <span class="shrink-0 text-xs text-slate-400">{w.date.toISOString().slice(0, 10)}</span>}
 						</div>
@@ -152,7 +152,19 @@ const homepageWriting = [
 				</a>
 			</div>
 
-			<div class="mt-6 overflow-hidden rounded-none border border-slate-800">
+			<div class="mt-6 grid gap-3 md:hidden">
+					{roles.map((r) => (
+						<div class="card p-4">
+							<div class="flex items-baseline justify-between gap-3">
+								<span class="min-w-0 truncate font-semibold text-slate-50">{r.company}</span>
+								<span class="shrink-0 text-xs text-slate-400">{r.period}</span>
+							</div>
+							<p class="mt-1 text-sm text-slate-300">{r.title}</p>
+						</div>
+					))}
+				</div>
+
+				<div class="mt-6 hidden overflow-hidden rounded-none border border-slate-800 md:block">
 				<table class="w-full border-collapse text-sm">
 					<thead class="bg-slate-950/60">
 						<tr>

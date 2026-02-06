@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../../components/StickyBrowseBar.astro';
 import { withBase } from '../../../utils/withBase';
 
 export async function getStaticPaths() {
@@ -43,6 +44,7 @@ const items = [
 ---
 
 <SiteLayout title={`Writing Tag: ${tag} | Adam Boas`} description={`Writing tagged ${tag}.`}>
+	<StickyBrowseBar active="writing" />
 	<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
 		<div>
 			<h1 class="text-2xl font-semibold text-slate-50">Tag: {tag}</h1>

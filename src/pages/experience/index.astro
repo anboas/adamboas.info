@@ -1,14 +1,34 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { experience } from '../../data/resume';
 import { withBase } from '../../utils/withBase';
 ---
 
+---
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+---
+
 <SiteLayout title="Experience | Adam Boas" description="Companies and roles.">
+	<StickyBrowseBar active="experience" />
 	<h1 class="text-2xl font-semibold text-slate-50">Experience</h1>
 	<p class="mt-2 text-slate-300">Companies and roles (concise, no descriptions).</p>
 
-	<div class="mt-8 overflow-hidden rounded-none border border-slate-800">
+	<!-- Mobile: stacked cards -->
+	<div class="mt-8 grid gap-3 md:hidden" data-experience-mobile>
+		{experience.map((r) => (
+			<a class="card block p-4 hover:border-slate-700" href={withBase(`/experience/${r.slug}/`)}>
+				<div class="flex items-baseline justify-between gap-3">
+					<h2 class="min-w-0 truncate text-base font-semibold text-slate-50">{r.company}</h2>
+					<span class="shrink-0 text-xs text-slate-400">{r.period}</span>
+				</div>
+				<p class="mt-1 text-sm text-slate-300">{r.title}</p>
+			</a>
+		))}
+	</div>
+
+	<!-- Desktop: table -->
+	<div class="mt-8 hidden overflow-hidden rounded-none border border-slate-800 md:block">
 		<table class="w-full border-collapse text-sm">
 			<thead class="bg-slate-950/60">
 				<tr>

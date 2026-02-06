@@ -12,6 +12,15 @@ function syncFromUrl() {
 	if (inp && q) inp.value = q;
 }
 
+function clearFilters() {
+	const sel = document.querySelector('[data-writing-type]');
+	const inp = document.querySelector('[data-writing-search]');
+	if (sel) sel.value = 'all';
+	if (inp) inp.value = '';
+	updateUrl();
+	applyFilter();
+}
+
 function applyFilter() {
 	const root = document.querySelector('[data-writing-index]');
 	if (!root) return;
@@ -55,6 +64,9 @@ for (const sel of ['[data-writing-search]', '[data-writing-type]']) {
 		applyFilter();
 	});
 }
+
+const clearBtn = document.querySelector('[data-writing-clear]');
+if (clearBtn) clearBtn.addEventListener('click', () => clearFilters());
 
 syncFromUrl();
 applyFilter();
