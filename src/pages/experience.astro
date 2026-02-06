@@ -1,28 +1,47 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 
-// TODO: replace with your real history (I can import from the old site + your resume)
-const companies = [
-	{ name: 'Company A', role: 'Solutions Architect', period: 'YYYY–YYYY', bullets: ['Cloud architecture', 'Automation + CI/CD', 'Reliability + monitoring'] },
-	{ name: 'Company B', role: 'Engineer', period: 'YYYY–YYYY', bullets: ['Systems engineering', 'Infra as code', 'Security'] },
+// Sourced from the legacy site (adamboas.info) + your note: left Booz Allen in 2025 and returned to KBR.
+// Keeping this intentionally minimal (no role descriptions).
+const roles = [
+	{ company: 'KBR', title: 'Solutions Architect', period: '2025–present' },
+	{ company: 'Booz Allen Hamilton', title: 'Solutions Architect', period: '—2025' },
+	{ company: 'KBR', title: 'Solutions Architect', period: '' },
+	{ company: 'KBRwyle', title: 'Cloud Architect / Site Reliability Engineer', period: '' },
+	{ company: 'KBRwyle', title: 'Architecture Analyst / Software Engineer', period: '' },
+	{ company: 'KBR', title: 'Software Engineer', period: '' },
+	{ company: 'Fast DAS', title: 'Jr. RF Engineer', period: '' },
+	{ company: 'Kerry Group', title: 'Programming Consultant', period: '' },
+	{ company: 'Central Florida Health Alliance', title: 'Programing Consultant', period: '' },
 ];
 ---
 
 <SiteLayout title="Experience | Adam Boas" description="Companies and roles.">
 	<h1 class="text-2xl font-semibold text-slate-50">Experience</h1>
-	<p class="mt-2 text-slate-300">Companies I’ve worked at and what I shipped there.</p>
+	<p class="mt-2 text-slate-300">Companies and roles (concise, no descriptions).</p>
 
-	<div class="mt-8 space-y-6">
-		{companies.map((c) => (
-			<section class="card p-6">
-				<div class="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
-					<h2 class="text-lg font-semibold text-slate-50">{c.name}</h2>
-					<p class="text-sm text-slate-400">{c.role} • {c.period}</p>
-				</div>
-				<ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-300">
-					{c.bullets.map((b) => <li>{b}</li>)}
-				</ul>
-			</section>
-		))}
+	<div class="mt-8 overflow-hidden rounded-2xl border border-slate-800">
+		<table class="w-full border-collapse text-sm">
+			<thead class="bg-slate-950/60">
+				<tr>
+					<th class="px-4 py-3 text-left font-semibold text-slate-200">Company</th>
+					<th class="px-4 py-3 text-left font-semibold text-slate-200">Role</th>
+					<th class="px-4 py-3 text-right font-semibold text-slate-200">Period</th>
+				</tr>
+			</thead>
+			<tbody>
+				{roles.map((r) => (
+					<tr class="border-t border-slate-800">
+						<td class="px-4 py-3 text-slate-100">{r.company}</td>
+						<td class="px-4 py-3 text-slate-300">{r.title}</td>
+						<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
+					</tr>
+				))}
+			</tbody>
+		</table>
 	</div>
+
+	<p class="mt-4 text-xs text-slate-500">
+		If you want exact date ranges for each role, send them and I’ll update this table.
+	</p>
 </SiteLayout>
