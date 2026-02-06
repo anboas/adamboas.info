@@ -39,7 +39,7 @@ jobs:
             --timeout 20
             --max-retries 2
             --include-fragments
-            --root-dir dist
+            --root-dir ${{ github.workspace }}/dist
             "dist/**/*.html"
 
       - name: Notify Telegram on failure (optional)
