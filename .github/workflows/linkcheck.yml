@@ -39,7 +39,7 @@ jobs:
             --timeout 20
             --max-retries 2
             --include-fragments
-            --base ./dist
+            --root-dir dist
             "dist/**/*.html"
 
       - name: Notify Telegram on failure (optional)
