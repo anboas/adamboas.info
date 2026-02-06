@@ -104,6 +104,34 @@ article[data-paper-style="dossier"] .paper-content tr:nth-child(even) td {
   @apply bg-slate-950/20;
 }
 
+/* Code blocks: make them feel like a terminal pane */
+article[data-paper-style="dossier"] .paper-content pre {
+  @apply my-6 overflow-x-auto rounded-none border border-slate-800 bg-black/40 p-4;
+}
+
+article[data-paper-style="dossier"] .paper-content pre code {
+  @apply text-sm text-slate-100;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: 0.01em;
+}
+
+/* Inline code */
+article[data-paper-style="dossier"] .paper-content :not(pre) > code {
+  @apply rounded-none border border-slate-800 bg-black/30 px-1.5 py-0.5 text-[0.85em] text-slate-100;
+}
+
+/* Slightly nicer scrollbars for code panes */
+article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar {
+  height: 10px;
+}
+article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track {
+  background: rgba(2, 6, 23, 0.35);
+}
+
 .paper-content :is(h1,h2,h3,h4) {
   scroll-margin-top: 96px;
 }
