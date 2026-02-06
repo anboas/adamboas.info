@@ -94,14 +94,17 @@ jobs:
       - name: Commit changes
         run: |
           set -euo pipefail
-          if git diff --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add public/papers src/generated/papers
+          # Include new (untracked) files too.
+          git add -A public/papers src/generated/papers
+
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
           git commit -m "Sync Whitepaper outputs (PDF + HTML)"
           git push
