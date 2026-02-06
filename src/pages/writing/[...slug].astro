@@ -1,5 +1,12 @@
 ---
 import { getCollection, render } from 'astro:content';
+
+type NavItem = { slug: string; title: string };
+function navLink(label: string, item: NavItem | null) {
+	if (!item) return null;
+	return { label, href: `/writing/${item.slug}/`, title: item.title };
+}
+
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
@@ -36,6 +43,40 @@ let PaperContent: any = null;
 
 let writingItem: any = null;
 let WritingContent: any = null;
+
+const publishedWriting = (await getCollection('writing'))
+	.filter((w) => w.data.status === 'published')
+	.map((w) => ({ slug: w.id.split('/').pop()!, id: w.id, title: w.data.title, tags: w.data.tags ?? [] }))
+	.sort((a, b) => a.slug.localeCompare(b.slug));
+
+const publishedPapers = (await getCollection('papers'))
+	.filter((p) => p.data.status === 'published')
+	.map((p) => ({ slug: p.id, id: p.id, title: p.data.title, tags: p.data.tags ?? [] }))
+	.sort((a, b) => a.slug.localeCompare(b.slug));
+
+const allNav = [...publishedWriting, ...publishedPapers];
+
+function findNav(slug: string) {
+	const i = allNav.findIndex((x) => x.slug === slug);
+	const prev = i > 0 ? allNav[i - 1] : null;
+	const next = i >= 0 && i + 1 < allNav.length ? allNav[i + 1] : null;
+	return { prev, next };
+}
+
+function relatedByTags(slug: string, tags: string[]) {
+	const tset = new Set(tags);
+	const scored = allNav
+		.filter((x) => x.slug !== slug)
+		.map((x) => ({
+			item: x,
+			score: (x.tags ?? []).reduce((n: number, t: string) => n + (tset.has(t) ? 1 : 0), 0),
+		}))
+		.filter((x) => x.score > 0)
+		.sort((a, b) => b.score - a.score)
+		.slice(0, 5)
+		.map((x) => x.item);
+	return scored;
+}
 
 if (kind === 'paper') {
 	const papers = await getCollection('papers');
@@ -111,13 +152,49 @@ if (kind === 'paper') {
 			<div class="paper-content prose prose-invert mt-8 max-w-none">
 				{paperGeneratedHtml ? <div set:html={paperGeneratedHtml} /> : <PaperContent />}
 			</div>
+
+			{(() => {
+				const { prev, next } = findNav(paper.id);
+				const related = relatedByTags(paper.id, paper.data.tags ?? []);
+				return (
+					<>
+						<div class="mt-10 flex flex-col gap-3 border-t border-slate-800 pt-6 md:flex-row md:justify-between">
+							{prev ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${prev.slug}/`)}>← {prev.title}</a> : <span />}
+							{next ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${next.slug}/`)}>{next.title} →</a> : <span />}
+						</div>
+
+						{related.length ? (
+							<div class="mt-8">
+								<h2 class="text-sm font-semibold text-slate-50">Related</h2>
+								<ul class="mt-3 space-y-2 text-sm text-slate-300">
+									{related.map((r) => (
+										<li>
+											<a class="hover:underline" href={withBase(`/writing/${r.slug}/`)}>{r.title}</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						) : null}
+					</>
+				);
+			})()}
 		</article>
 	) : (
 		<article class="card p-8">
 			<header>
-				<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
-					← Writing
-				</a>
+				<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+					<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
+						← Writing
+					</a>
+					<button
+						type="button"
+						class="rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-sm text-slate-200 hover:bg-slate-900"
+						data-copy-link
+						data-track="Writing: Copy Link"
+					>
+						Copy link
+					</button>
+				</div>
 				<div class="mt-4 flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
 					<h1 class="text-2xl font-semibold text-slate-50">{writingItem.data.title}</h1>
 					<span class="text-sm text-slate-400">{writingItem.data.date.toISOString().slice(0, 10)}</span>
@@ -138,6 +215,33 @@ if (kind === 'paper') {
 			<div class="paper-content prose prose-invert mt-8 max-w-none">
 				<WritingContent />
 			</div>
+
+			{(() => {
+				const slug = writingItem.id.split('/').pop();
+				const { prev, next } = findNav(slug);
+				const related = relatedByTags(slug, writingItem.data.tags ?? []);
+				return (
+					<>
+						<div class="mt-10 flex flex-col gap-3 border-t border-slate-800 pt-6 md:flex-row md:justify-between">
+							{prev ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${prev.slug}/`)}>← {prev.title}</a> : <span />}
+							{next ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${next.slug}/`)}>{next.title} →</a> : <span />}
+						</div>
+
+						{related.length ? (
+							<div class="mt-8">
+								<h2 class="text-sm font-semibold text-slate-50">Related</h2>
+								<ul class="mt-3 space-y-2 text-sm text-slate-300">
+									{related.map((r) => (
+										<li>
+											<a class="hover:underline" href={withBase(`/writing/${r.slug}/`)}>{r.title}</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						) : null}
+					</>
+				);
+			})()}
 		</article>
 	)}
 </SiteLayout>

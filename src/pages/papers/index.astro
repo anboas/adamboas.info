@@ -4,7 +4,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import { withBase } from '../../utils/withBase';
 ---
 
-<SiteLayout title="Writing | Adam Boas" description="Redirecting…">
+<SiteLayout title="Writing | Adam Boas" description="Redirecting…" canonicalHref="/writing/">
 	<meta http-equiv="refresh" content={`0; url=${withBase('/writing/')}`} />
 	<p class="text-slate-300">Redirecting to <a href={withBase('/writing/')}>/writing</a>…</p>
 </SiteLayout>

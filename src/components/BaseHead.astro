@@ -10,11 +10,12 @@ interface Props {
 	title: string;
 	description: string;
 	image?: ImageMetadata;
+	canonicalHref?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title, description, image = FallbackImage, canonicalHref } = Astro.props;
+const canonicalURL = canonicalHref ? new URL(canonicalHref, Astro.site) : new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = FallbackImage } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -67,3 +68,4 @@ const { title, description, image = FallbackImage } = Astro.props;
 
 <!-- Small UX helpers -->
 <script type="module" src={new URL('scripts/codeblock-tools.js', Astro.site)}></script>
+<script type="module" src={new URL('scripts/copy-link.js', Astro.site)}></script>

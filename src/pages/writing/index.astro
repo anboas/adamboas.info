@@ -43,6 +43,10 @@ const papers = (await getCollection('papers'))
 
 		<script type="module" src={new URL('scripts/writing-index.js', Astro.site)}></script>
 
+		<p class="mt-4 text-sm text-slate-400">
+			<a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
+		</p>
+
 	{notes.length ? (
 		<section class="mt-10" data-type-section="note">
 			<h2 class="text-xl font-semibold text-slate-50">Notes</h2>
