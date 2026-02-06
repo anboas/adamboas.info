@@ -81,6 +81,30 @@ article[data-paper-style="dossier"] .paper-content blockquote {
   @apply border border-slate-800 bg-slate-950/30 p-4;
 }
 
+article[data-paper-style="dossier"] .paper-content ul {
+  @apply my-4 list-disc pl-6;
+}
+
+article[data-paper-style="dossier"] .paper-content ol {
+  @apply my-4 list-decimal pl-6;
+}
+
+article[data-paper-style="dossier"] .paper-content li::marker {
+  color: rgba(226, 232, 240, 0.75);
+}
+
+article[data-paper-style="dossier"] .paper-content table {
+  @apply my-6 w-full border-collapse;
+}
+
+article[data-paper-style="dossier"] .paper-content th {
+  @apply bg-slate-950/40 text-slate-100;
+}
+
+article[data-paper-style="dossier"] .paper-content tr:nth-child(even) td {
+  @apply bg-slate-950/20;
+}
+
 .paper-content :is(h1,h2,h3,h4) {
   scroll-margin-top: 96px;
 }
