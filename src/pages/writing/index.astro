@@ -16,17 +16,39 @@ const papers = (await getCollection('papers'))
 ---
 
 <SiteLayout title="Writing | Adam Boas" description="Notes, memos, and papers.">
-	<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
-	<p class="mt-2 text-slate-300">Notes (short-form), memos (briefs), and papers (whitepapers).</p>
+	<div data-writing-index>
+		<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
+		<p class="mt-2 text-slate-300">Notes (short-form), memos (briefs), and papers (whitepapers).</p>
+
+		<div class="mt-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+			<div class="flex flex-wrap gap-2 text-sm">
+				<a class="rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-slate-200 hover:bg-slate-900" href={withBase('/writing/')}>All</a>
+				<a class="rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-slate-200 hover:bg-slate-900" href={withBase('/writing/?type=note')}>Notes</a>
+				<a class="rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-slate-200 hover:bg-slate-900" href={withBase('/writing/?type=memo')}>Memos</a>
+				<a class="rounded-none border border-slate-800 bg-slate-950/40 px-3 py-1 text-slate-200 hover:bg-slate-900" href={withBase('/writing/?type=paper')}>Papers</a>
+			</div>
+
+			<div class="flex flex-col gap-2 md:flex-row md:items-center">
+				<select data-writing-type class="rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200">
+					<option value="all">All</option>
+					<option value="note">Notes</option>
+					<option value="memo">Memos</option>
+					<option value="paper">Papers</option>
+				</select>
+				<input data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 md:w-72" placeholder="Search title/tags" />
+			</div>
+		</div>
+
+		<script type="module" src={new URL('scripts/writing-index.js', Astro.site)}></script>
 
 	{notes.length ? (
-		<section class="mt-10">
+		<section class="mt-10" data-type-section="note">
 			<h2 class="text-xl font-semibold text-slate-50">Notes</h2>
 			<div class="mt-6 grid gap-4">
 				{notes.map((w) => {
 					const slug = w.id.split('/').pop();
 					return (
-						<a class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
+						<a data-writing-card data-type="note" data-title={w.data.title} data-tags={(w.data.tags ?? []).join(' ')} class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
 							<div class="flex items-baseline justify-between gap-4">
 								<div class="flex min-w-0 items-baseline gap-2">
 									<span class="rounded-full border border-slate-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">Note</span>
@@ -50,13 +72,13 @@ const papers = (await getCollection('papers'))
 	) : null}
 
 	{memos.length ? (
-		<section class="mt-10">
+		<section class="mt-10" data-type-section="memo">
 			<h2 class="text-xl font-semibold text-slate-50">Memos</h2>
 			<div class="mt-6 grid gap-4">
 				{memos.map((w) => {
 					const slug = w.id.split('/').pop();
 					return (
-						<a class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
+						<a data-writing-card data-type="memo" data-title={w.data.title} data-tags={(w.data.tags ?? []).join(' ')} class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${slug}/`)}>
 							<div class="flex items-baseline justify-between gap-4">
 								<div class="flex min-w-0 items-baseline gap-2">
 									<span class="rounded-full border border-slate-800 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">Memo</span>
@@ -79,12 +101,12 @@ const papers = (await getCollection('papers'))
 		</section>
 	) : null}
 
-	<section class="mt-10">
+	<section class="mt-10" data-type-section="paper">
 		<h2 class="text-xl font-semibold text-slate-50">Papers</h2>
 		<p class="mt-2 text-slate-300">Whitepapers and working docs.</p>
 		<div class="mt-6 grid gap-6">
 			{papers.map((p) => (
-				<a class="card block p-6 hover:border-slate-700" href={withBase(`/writing/${p.id}/`)}>
+				<a data-writing-card data-type="paper" data-title={p.data.title} data-tags={(p.data.tags ?? []).join(' ')} class="card block p-6 hover:border-slate-700" href={withBase(`/writing/${p.id}/`)}>
 					<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
 						<h3 class="text-lg font-semibold text-slate-50">{p.data.title}</h3>
 						{p.data.date && <span class="text-sm text-slate-400">{p.data.date.toISOString().slice(0, 10)}</span>}

@@ -56,3 +56,6 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
+<!-- Small UX helpers -->
+<script type="module" src={new URL('scripts/codeblock-tools.js', Astro.site)}></script>
