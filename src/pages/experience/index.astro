@@ -5,10 +5,6 @@ import { experience } from '../../data/resume';
 import { withBase } from '../../utils/withBase';
 ---
 
----
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
----
-
 <SiteLayout title="Experience | Adam Boas" description="Companies and roles.">
 	<StickyBrowseBar active="experience" />
 	<h1 class="text-2xl font-semibold text-slate-50">Experience</h1>
@@ -28,7 +24,7 @@ import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 	</div>
 
 	<!-- Desktop: table -->
-	<div class="mt-8 hidden overflow-hidden rounded-none border border-slate-800 md:block">
+	<div class="mt-8 hidden overflow-hidden rounded-none border border-slate-800 bg-slate-950/40 md:block">
 		<table class="w-full border-collapse text-sm">
 			<thead class="bg-slate-950/60">
 				<tr>

@@ -10,10 +10,6 @@ export async function getStaticPaths() {
 const { c } = Astro.props;
 ---
 
----
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
----
-
 <SiteLayout title={`Education | ${c.name}`} description={`${c.issuer}${c.year ? ` (${c.year})` : ''}.`}>
 	<StickyBrowseBar active="education" />
 	<section class="card p-8">
