@@ -58,12 +58,6 @@ const { Content } = await render(paper);
 			)}
 		</div>
 
-		{paper.data.pdfPath && (
-			<div class="mt-10">
-				<div class="overflow-hidden rounded-none border border-slate-800">
-					<iframe class="h-[75vh] w-full" src={withBase(paper.data.pdfPath)} title="PDF"></iframe>
-				</div>
-			</div>
-		)}
+		{/* PDF embed removed (download link is sufficient) */}
 	</article>
 </SiteLayout>
