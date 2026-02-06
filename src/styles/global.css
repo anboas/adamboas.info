@@ -10,7 +10,13 @@ html, body {
 }
 
 body {
+  /* terminal-esque + "VB form" vibe */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   @apply bg-slate-950 text-slate-100 antialiased;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
 }
 
 a {
@@ -22,7 +28,9 @@ a {
 }
 
 .card {
-  @apply rounded-2xl border border-slate-800 bg-slate-900/40 backdrop-blur;
+  /* sharp corners, terminal panel */
+  @apply rounded-none border border-slate-800 bg-slate-900/40 backdrop-blur;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.8) inset;
 }
 
 .section-title {

@@ -16,8 +16,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				</p>
 			</div>
 			<div class="flex gap-3">
-				<a href="/papers" class="rounded-xl bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400">View papers</a>
-				<a href="/experience" class="rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">Experience</a>
+				<a href={`${import.meta.env.BASE_URL}papers/`} class="rounded-xl bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-400">View papers</a>
+				<a href={`${import.meta.env.BASE_URL}experience/`} class="rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">Experience</a>
 			</div>
 		</div>
 	</section>
@@ -38,7 +38,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				Whitepapers and working docs are published as standalone pages.
 			</p>
 			<p class="mt-4">
-				<a href="/papers" class="text-sm font-semibold">Browse papers →</a>
+				<a href={`${import.meta.env.BASE_URL}papers/`} class="text-sm font-semibold">Browse papers →</a>
 			</p>
 		</section>
 		<section class="card p-6">

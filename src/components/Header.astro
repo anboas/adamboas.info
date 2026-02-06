@@ -1,23 +1,24 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import { withBase } from '../utils/withBase';
 ---
 
 <header class="border-b border-slate-800 bg-slate-950/60 backdrop-blur">
 	<nav class="container flex items-center justify-between py-4">
 		<div class="flex items-center gap-3">
-			<a href="/" class="text-base font-semibold tracking-tight text-slate-50 hover:text-slate-50">
+			<a href={withBase('/')} class="text-base font-semibold tracking-tight text-slate-50 hover:text-slate-50">
 				{SITE_TITLE}
 			</a>
 			<span class="text-xs text-slate-400">autonomy • governance • systems</span>
 		</div>
 
 		<div class="hidden items-center gap-1 md:flex">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/experience">Experience</HeaderLink>
-			<HeaderLink href="/credentials">Credentials</HeaderLink>
-			<HeaderLink href="/papers">Papers</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href={withBase('/')}>Home</HeaderLink>
+			<HeaderLink href={withBase('/experience')}>Experience</HeaderLink>
+			<HeaderLink href={withBase('/credentials')}>Credentials</HeaderLink>
+			<HeaderLink href={withBase('/papers')}>Papers</HeaderLink>
+			<HeaderLink href={withBase('/blog')}>Blog</HeaderLink>
 		</div>
 
 		<div class="flex items-center gap-3">
