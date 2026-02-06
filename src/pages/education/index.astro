@@ -1,0 +1,23 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { education } from '../../data/resume';
+import { withBase } from '../../utils/withBase';
+---
+
+<SiteLayout title="Education | Adam Boas" description="Education and credentials.">
+	<h1 class="text-2xl font-semibold text-slate-50">Education</h1>
+	<p class="mt-2 text-slate-300">Education and credentials (concise).</p>
+
+	<section class="card mt-8 p-6">
+		<ul class="space-y-3 text-sm text-slate-300">
+			{education.map((c) => (
+				<li class="flex flex-col gap-1 border-b border-slate-800 pb-3 md:flex-row md:items-baseline md:justify-between">
+					<span class="text-slate-50">
+						<a class="hover:underline" href={withBase(`/education/${c.slug}/`)}>{c.name}</a>
+					</span>
+					<span class="text-slate-400">{c.issuer}{c.year ? ` • ${c.year}` : ''}</span>
+				</li>
+			))}
+		</ul>
+	</section>
+</SiteLayout>

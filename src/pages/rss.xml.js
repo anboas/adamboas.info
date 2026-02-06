@@ -15,7 +15,7 @@ export async function GET(context) {
 				title: p.data.title,
 				description: p.data.description ?? '',
 				pubDate: p.data.date ?? new Date(),
-				link: `${new URL(`papers/${p.id}/`, context.site).toString()}`, 
+				link: `${new URL(`writing/${p.id}/`, context.site).toString()}`, 
 			})),
 	});
 }

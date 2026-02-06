@@ -1,0 +1,18 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { experience } from '../../data/resume';
+
+export async function getStaticPaths() {
+	return experience.map((r) => ({ params: { slug: r.slug }, props: { r } }));
+}
+
+const { r } = Astro.props;
+---
+
+<SiteLayout title={`Experience | ${r.company}`} description={`${r.title} (${r.period}).`}>
+	<section class="card p-8">
+		<h1 class="text-2xl font-semibold text-slate-50">{r.company}</h1>
+		<p class="mt-2 text-slate-300">{r.title}</p>
+		<p class="mt-2 text-sm text-slate-400">{r.period}</p>
+	</section>
+</SiteLayout>
