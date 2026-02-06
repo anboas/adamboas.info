@@ -93,6 +93,31 @@ jobs:
             fi
           done
 
+      - name: Sync notes + memos from Whitepaper repo
+        env:
+          GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          rm -rf /tmp/wp-repo
+          gh repo clone anboas/Whitepaper /tmp/wp-repo -- --depth 1
+
+          mkdir -p src/content/writing
+
+          # Start clean so deletions in Whitepaper propagate.
+          rm -rf src/content/writing
+          mkdir -p src/content/writing
+
+          # Copy all notes + memos markdown (ignore README.md). Flat output is fine for now.
+          shopt -s globstar nullglob
+          for f in /tmp/wp-repo/writing/notes/**/*.md /tmp/wp-repo/writing/memos/**/*.md; do
+            base=$(basename "$f")
+            if [ "$base" = "README.md" ]; then
+              continue
+            fi
+            cp "$f" "src/content/writing/${base}"
+          done
+
       - name: Commit changes
         id: commit
         run: |
@@ -102,7 +127,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Include new (untracked) files too.
-          git add -A public/papers src/generated/papers
+          git add -A public/papers src/generated/papers src/content/writing
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit."

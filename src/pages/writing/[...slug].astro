@@ -5,7 +5,7 @@ import { withBase } from '../../utils/withBase';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-async function tryReadGeneratedHtml(slug) {
+async function tryReadGeneratedHtml(slug: string) {
 	try {
 		const p = path.join(process.cwd(), 'src', 'generated', 'papers', `${slug}.html`);
 		return await fs.readFile(p, 'utf-8');
@@ -15,43 +15,96 @@ async function tryReadGeneratedHtml(slug) {
 }
 
 export async function getStaticPaths() {
+	const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
 	const papers = await getCollection('papers');
-	return papers.map((paper) => ({
-		params: { slug: paper.id },
-		props: { paper },
-	}));
+
+	return [
+		...writing.map((w) => ({ params: { slug: w.id }, props: { kind: 'writing', id: w.id } })),
+		...papers.map((p) => ({ params: { slug: p.id }, props: { kind: 'paper', id: p.id } })),
+	];
 }
 
-const { paper } = Astro.props;
-const generatedHtml = await tryReadGeneratedHtml(paper.id);
-const { Content } = await render(paper);
+const { kind, id } = Astro.props as { kind: 'writing' | 'paper'; id: string };
+
+let title = 'Writing | Adam Boas';
+let description: string | undefined;
+
+let paper: any = null;
+let paperGeneratedHtml: string | null = null;
+let PaperContent: any = null;
+
+let writingItem: any = null;
+let WritingContent: any = null;
+
+if (kind === 'paper') {
+	const papers = await getCollection('papers');
+	paper = papers.find((p) => p.id === id);
+	if (!paper) throw new Error(`Paper not found: ${id}`);
+	paperGeneratedHtml = await tryReadGeneratedHtml(paper.id);
+	({ Content: PaperContent } = await render(paper));
+	title = `${paper.data.title} | Adam Boas`;
+	description = paper.data.description;
+} else {
+	const writingItems = await getCollection('writing');
+	writingItem = writingItems.find((w) => w.id === id);
+	if (!writingItem) throw new Error(`Writing item not found: ${id}`);
+	({ Content: WritingContent } = await render(writingItem));
+	title = `${writingItem.data.title} | Adam Boas`;
+	description = writingItem.data.summary;
+}
 ---
 
-<SiteLayout title={`${paper.data.title} | Adam Boas`} description={paper.data.description}>
-	<article class="card p-8" data-paper-style="dossier">
-		<header class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-			<div class="min-w-0">
-				<h1 class="text-2xl font-semibold text-slate-50">{paper.data.title}</h1>
-				{paper.data.description && <p class="mt-2 text-slate-300">{paper.data.description}</p>}
-				{paper.data.date && <p class="mt-2 text-sm text-slate-400">{paper.data.date.toISOString().slice(0, 10)}</p>}
-			</div>
+<SiteLayout title={title} description={description}>
+	{kind === 'paper' ? (
+		<article class="card p-8" data-paper-style="dossier">
+			<header class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+				<div class="min-w-0">
+					<h1 class="text-2xl font-semibold text-slate-50">{paper.data.title}</h1>
+					{paper.data.description && <p class="mt-2 text-slate-300">{paper.data.description}</p>}
+					{paper.data.date && <p class="mt-2 text-sm text-slate-400">{paper.data.date.toISOString().slice(0, 10)}</p>}
+				</div>
 
-			<div class="flex shrink-0 flex-wrap items-center gap-2">
-				{paper.data.pdfPath && (
-					<a
-						class="rounded-none border border-slate-700 bg-slate-950/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
-						href={withBase(paper.data.pdfPath)}
-						target="_blank"
-						rel="noreferrer"
-					>
-						Download PDF
-					</a>
-				)}
-			</div>
-		</header>
+				<div class="flex shrink-0 flex-wrap items-center gap-2">
+					{paper.data.pdfPath && (
+						<a
+							class="rounded-none border border-slate-700 bg-slate-950/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+							href={withBase(paper.data.pdfPath)}
+							target="_blank"
+							rel="noreferrer"
+						>
+							Download PDF
+						</a>
+					)}
+				</div>
+			</header>
 
-		<div class="paper-content prose prose-invert mt-8 max-w-none">
-			{generatedHtml ? <div set:html={generatedHtml} /> : <Content />}
-		</div>
-	</article>
+			<div class="paper-content prose prose-invert mt-8 max-w-none">
+				{paperGeneratedHtml ? <div set:html={paperGeneratedHtml} /> : <PaperContent />}
+			</div>
+		</article>
+	) : (
+		<article class="card p-8">
+			<header>
+				<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+					<h1 class="text-2xl font-semibold text-slate-50">{writingItem.data.title}</h1>
+					<span class="text-sm text-slate-400">{writingItem.data.date.toISOString().slice(0, 10)}</span>
+				</div>
+				<div class="mt-2 flex flex-wrap gap-2 text-xs text-slate-400">
+					<span class="rounded-full border border-slate-700 bg-slate-900/60 px-2 py-1 uppercase tracking-wide text-slate-200">
+						{writingItem.data.type}
+					</span>
+					{writingItem.data.tags?.length
+						? writingItem.data.tags.map((t: string) => (
+							<span class="rounded-full border border-slate-800 px-2 py-1">{t}</span>
+						))
+						: null}
+				</div>
+				{writingItem.data.summary && <p class="mt-4 text-slate-300">{writingItem.data.summary}</p>}
+			</header>
+
+			<div class="paper-content prose prose-invert mt-8 max-w-none">
+				<WritingContent />
+			</div>
+		</article>
+	)}
 </SiteLayout>

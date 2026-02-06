@@ -3,31 +3,76 @@ import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import { withBase } from '../../utils/withBase';
 
+const writing = (await getCollection('writing'))
+	.filter((w) => w.data.status === 'published')
+	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const notes = writing.filter((w) => w.data.type === 'note');
+const memos = writing.filter((w) => w.data.type === 'memo');
+
 const papers = (await getCollection('papers'))
 	.filter((p) => p.data.status === 'published')
 	.sort((a, b) => (b.data.date?.valueOf?.() ?? 0) - (a.data.date?.valueOf?.() ?? 0));
 ---
 
-<SiteLayout title="Writing | Adam Boas" description="Whitepapers and publications.">
+<SiteLayout title="Writing | Adam Boas" description="Notes, memos, and papers.">
 	<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
-	<p class="mt-2 text-slate-300">Whitepapers and working docs.</p>
+	<p class="mt-2 text-slate-300">Notes (short-form), memos (briefs), and papers (whitepapers).</p>
 
-	<div class="mt-8 grid gap-6">
-		{papers.map((p) => (
-			<a class="card block p-6 hover:border-slate-700" href={withBase(`/writing/${p.id}/`)}>
-				<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-					<h2 class="text-lg font-semibold text-slate-50">{p.data.title}</h2>
-					{p.data.date && <span class="text-sm text-slate-400">{p.data.date.toISOString().slice(0, 10)}</span>}
-				</div>
-				{p.data.description && <p class="mt-3 text-sm text-slate-300">{p.data.description}</p>}
-				{p.data.tags?.length ? (
-					<ul class="mt-4 flex flex-wrap gap-2">
-						{p.data.tags.map((t) => (
-							<li class="rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1 text-xs text-slate-200">{t}</li>
-						))}
-					</ul>
-				) : null}
-			</a>
-		))}
-	</div>
+	{notes.length ? (
+		<section class="mt-10">
+			<h2 class="text-xl font-semibold text-slate-50">Notes</h2>
+			<div class="mt-6 grid gap-4">
+				{notes.map((w) => (
+					<a class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${w.id}/`)}>
+						<div class="flex items-baseline justify-between gap-4">
+							<h3 class="truncate text-base font-semibold text-slate-50">{w.data.title}</h3>
+							<span class="shrink-0 text-xs text-slate-400">{w.data.date.toISOString().slice(0, 10)}</span>
+						</div>
+						{w.data.summary && <p class="mt-2 text-sm text-slate-300">{w.data.summary}</p>}
+					</a>
+				))}
+			</div>
+		</section>
+	) : null}
+
+	{memos.length ? (
+		<section class="mt-10">
+			<h2 class="text-xl font-semibold text-slate-50">Memos</h2>
+			<div class="mt-6 grid gap-4">
+				{memos.map((w) => (
+					<a class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${w.id}/`)}>
+						<div class="flex items-baseline justify-between gap-4">
+							<h3 class="truncate text-base font-semibold text-slate-50">{w.data.title}</h3>
+							<span class="shrink-0 text-xs text-slate-400">{w.data.date.toISOString().slice(0, 10)}</span>
+						</div>
+						{w.data.summary && <p class="mt-2 text-sm text-slate-300">{w.data.summary}</p>}
+					</a>
+				))}
+			</div>
+		</section>
+	) : null}
+
+	<section class="mt-10">
+		<h2 class="text-xl font-semibold text-slate-50">Papers</h2>
+		<p class="mt-2 text-slate-300">Whitepapers and working docs.</p>
+		<div class="mt-6 grid gap-6">
+			{papers.map((p) => (
+				<a class="card block p-6 hover:border-slate-700" href={withBase(`/writing/${p.id}/`)}>
+					<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+						<h3 class="text-lg font-semibold text-slate-50">{p.data.title}</h3>
+						{p.data.date && <span class="text-sm text-slate-400">{p.data.date.toISOString().slice(0, 10)}</span>}
+					</div>
+					{p.data.description && <p class="mt-3 text-sm text-slate-300">{p.data.description}</p>}
+					{p.data.tags?.length ? (
+						<ul class="mt-4 flex flex-wrap gap-2">
+							{p.data.tags.map((t) => (
+								<li class="rounded-full border border-slate-700 bg-slate-900/60 px-3 py-1 text-xs text-slate-200">{t}</li>
+							))}
+						</ul>
+					) : null}
+				</a>
+			))}
+		</div>
+	</section>
 </SiteLayout>
