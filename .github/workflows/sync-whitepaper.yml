@@ -26,12 +26,20 @@ jobs:
 
       - name: Fetch latest successful Whitepaper build run id
         env:
-          GH_TOKEN: ${{ github.token }}
+          # NOTE: Cross-repo API access requires a PAT if Whitepaper is private.
+          # Create a fine-grained PAT with access to anboas/Whitepaper (Actions: Read) and store it as WHITEPAPER_SYNC_TOKEN.
+          GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
         run: |
           set -euo pipefail
+
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "Missing required secret WHITEPAPER_SYNC_TOKEN (needed for cross-repo access)." >&2
+            exit 1
+          fi
+
           RUN_ID=$(gh api \
             -H "Accept: application/vnd.github+json" \
-            /repos/anboas/Whitepaper/actions/workflows/build-papers.yml/runs?branch=main\&status=success\&per_page=1 \
+            "/repos/anboas/Whitepaper/actions/workflows/build-papers.yml/runs?branch=main&status=success&per_page=1" \
             --jq '.workflow_runs[0].id')
 
           if [ -z "$RUN_ID" ] || [ "$RUN_ID" = "null" ]; then
@@ -44,7 +52,7 @@ jobs:
 
       - name: Download Whitepaper artifacts
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
         run: |
           set -euo pipefail
           mkdir -p /tmp/wp
