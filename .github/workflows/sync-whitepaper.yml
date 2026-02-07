@@ -77,7 +77,12 @@ jobs:
             echo "Syncing $slug"
 
             pdf=$(ls -1 "$d"/*.pdf 2>/dev/null | head -n 1 || true)
-            html=$(ls -1 "$d"/*.html 2>/dev/null | head -n 1 || true)
+            manifest=$(ls -1 "$d"/manifest.json 2>/dev/null | head -n 1 || true)
+            # Prefer pre-extracted fragment HTML if present.
+            html=$(ls -1 "$d"/paper.html 2>/dev/null | head -n 1 || true)
+            if [ -z "$html" ]; then
+              html=$(ls -1 "$d"/*.html 2>/dev/null | head -n 1 || true)
+            fi
 
             if [ -n "$pdf" ]; then
               cp "$pdf" "public/papers/${slug}.pdf"
@@ -86,10 +91,21 @@ jobs:
             fi
 
             if [ -n "$html" ]; then
-              # Pandoc HTML is standalone with its own <style>. Extract body-only fragment.
-              python3 scripts/extract_pandoc_body.py "$html" "src/generated/papers/${slug}.html"
+              if [ "$(basename "$html")" = "paper.html" ]; then
+                # New pipeline: Whitepaper already publishes a body-only fragment.
+                cp "$html" "src/generated/papers/${slug}.html"
+              else
+                # Back-compat: Extract body-only fragment.
+                python3 scripts/extract_pandoc_body.py "$html" "src/generated/papers/${slug}.html"
+              fi
             else
               echo "WARN: no html for $slug" >&2
+            fi
+
+            if [ -n "$manifest" ]; then
+              cp "$manifest" "src/generated/papers/${slug}.manifest.json"
+            else
+              echo "WARN: no manifest for $slug" >&2
             fi
           done
 

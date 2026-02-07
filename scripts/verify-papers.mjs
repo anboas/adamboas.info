@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import matter from 'gray-matter';
 
 const repoRoot = process.cwd();
@@ -19,6 +20,12 @@ function exists(p) {
 
 function readText(p) {
   return fs.readFileSync(p, 'utf8');
+}
+
+function sha256File(p) {
+  const h = crypto.createHash('sha256');
+  h.update(fs.readFileSync(p));
+  return h.digest('hex');
 }
 
 function die(msg) {
@@ -59,9 +66,37 @@ for (const file of mdFiles) {
   const expectedPdfName = path.basename(fm.pdfPath);
   const pdfPath = path.join(publicPdfDir, expectedPdfName);
   const htmlPath = path.join(generatedHtmlDir, `${slug}.html`);
+  const manifestPath = path.join(generatedHtmlDir, `${slug}.manifest.json`);
 
   if (!exists(pdfPath)) die(`${slug}: missing PDF at ${path.relative(repoRoot, pdfPath)} (from pdfPath ${fm.pdfPath})`);
   if (!exists(htmlPath)) die(`${slug}: missing generated HTML at ${path.relative(repoRoot, htmlPath)} (expected src/generated/papers/${slug}.html)`);
+
+  // If we have a sync manifest from Whitepaper, verify round-trip integrity.
+  if (exists(manifestPath)) {
+    let manifest;
+    try {
+      manifest = JSON.parse(readText(manifestPath));
+    } catch (e) {
+      die(`${slug}: could not parse manifest JSON at ${path.relative(repoRoot, manifestPath)}: ${e}`);
+    }
+
+    const expectedPdf = manifest?.artifacts?.pdf?.sha256;
+    const expectedHtml = manifest?.artifacts?.html?.sha256;
+
+    if (!expectedPdf || !expectedHtml) {
+      die(`${slug}: manifest missing expected sha256 fields (artifacts.pdf.sha256 / artifacts.html.sha256)`);
+    }
+
+    const actualPdf = sha256File(pdfPath);
+    const actualHtml = sha256File(htmlPath);
+
+    if (actualPdf !== expectedPdf) {
+      die(`${slug}: PDF sha256 mismatch (expected ${expectedPdf}, got ${actualPdf})`);
+    }
+    if (actualHtml !== expectedHtml) {
+      die(`${slug}: HTML sha256 mismatch (expected ${expectedHtml}, got ${actualHtml})`);
+    }
+  }
 
   const html = readText(htmlPath);
 
