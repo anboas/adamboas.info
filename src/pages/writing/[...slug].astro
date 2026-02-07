@@ -190,7 +190,7 @@ if (kind === 'paper') {
 				const related = relatedByTags(paper.id, paper.data.tags ?? []);
 				return (
 					<>
-						<div class="mt-10 flex flex-col gap-3 border-t border-slate-800 pt-6 md:flex-row md:justify-between">
+						<div class="mt-10 flex flex-col gap-3 pt-6 md:flex-row md:justify-between">
 							{prev ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${prev.slug}/`)}>← {prev.title}</a> : <span />}
 							{next ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${next.slug}/`)}>{next.title} →</a> : <span />}
 						</div>
@@ -254,7 +254,7 @@ if (kind === 'paper') {
 				const related = relatedByTags(slug, writingItem.data.tags ?? []);
 				return (
 					<>
-						<div class="mt-10 flex flex-col gap-3 border-t border-slate-800 pt-6 md:flex-row md:justify-between">
+						<div class="mt-10 flex flex-col gap-3 pt-6 md:flex-row md:justify-between">
 							{prev ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${prev.slug}/`)}>← {prev.title}</a> : <span />}
 							{next ? <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase(`/writing/${next.slug}/`)}>{next.title} →</a> : <span />}
 						</div>
