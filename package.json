@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint:content": "node scripts/lint-frontmatter.mjs",
+    "lint:papers": "node scripts/verify-papers.mjs",
     "test": "playwright test",
     "test:overflow": "SITE_BASE=https://anboas.github.io/adamboas.info playwright test tests/overflow.spec.ts",
     "test:a11y": "SITE_BASE=http://localhost:4321 playwright test tests/a11y.spec.ts",
