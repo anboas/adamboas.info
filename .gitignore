@@ -6,8 +6,12 @@ dist/
 # playwright
 /test-results/
 
+# lighthouse ci output
+/.lighthouseci/
+
 # accidental lighthouse/Chrome profile artifacts (can appear on WSL paths)
 \\wsl.localhost*
+./undefined:
 
 # dependencies
 node_modules/

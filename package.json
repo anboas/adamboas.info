@@ -9,7 +9,9 @@
     "astro": "astro",
     "lint:content": "node scripts/lint-frontmatter.mjs",
     "test": "playwright test",
-    "test:overflow": "SITE_BASE=https://anboas.github.io/adamboas.info playwright test tests/overflow.spec.ts"
+    "test:overflow": "SITE_BASE=https://anboas.github.io/adamboas.info playwright test tests/overflow.spec.ts",
+    "test:a11y": "SITE_BASE=http://localhost:4321 playwright test tests/a11y.spec.ts",
+    "lhci": "npm run build && lhci autorun"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -21,6 +23,8 @@
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
+    "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.58.2",
     "@tailwindcss/typography": "^0.5.19",
     "gray-matter": "^4.0.3"

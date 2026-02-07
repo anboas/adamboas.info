@@ -1,0 +1,71 @@
+name: a11y
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  schedule:
+    - cron: '23 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  axe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Lint content frontmatter
+        run: npm run lint:content
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Serve dist
+        run: npx playwright test --list >/dev/null
+
+      - name: Run axe a11y checks
+        env:
+          SITE_BASE: http://localhost:4321
+        run: |
+          npm run preview -- --host 127.0.0.1 --port 4321 &
+          PREVIEW_PID=$!
+          trap 'kill $PREVIEW_PID' EXIT
+          # Wait for server
+          for i in {1..30}; do
+            curl -sSf http://127.0.0.1:4321/ >/dev/null && break
+            sleep 1
+          done
+          npm run test:a11y
+
+      - name: Notify Telegram on failure (optional)
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
+            echo "Telegram secrets not set; skipping notify."
+            exit 0
+          fi
+          text="[ALERT] a11y (axe) failed: ${RUN_URL}"
+          curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TELEGRAM_CHAT_ID}" \
+            -d "text=${text}" \
+            -d "disable_web_page_preview=true" >/dev/null
