@@ -35,6 +35,17 @@ a {
   @apply text-stone-200 hover:text-stone-50;
 }
 
+/* Accessible focus rings */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 2px solid rgba(226, 232, 240, 0.85);
+  outline-offset: 2px;
+}
+
+:where(input, select, textarea, button):disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 /* Clamp helpers (avoid needing a Tailwind plugin) */
 .clamp-2 {
   display: -webkit-box;
