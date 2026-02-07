@@ -3,6 +3,12 @@ dist/
 # generated types
 .astro/
 
+# playwright
+/test-results/
+
+# accidental lighthouse/Chrome profile artifacts (can appear on WSL paths)
+\\wsl.localhost*
+
 # dependencies
 node_modules/
 
