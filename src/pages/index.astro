@@ -87,30 +87,50 @@ const homepageWriting = [
 
 	<div class="mt-10 grid gap-6 md:grid-cols-3">
 		<section class="card p-6">
-			<h2 class="section-title">Focus</h2>
+			<h2 class="section-title">Operating principles</h2>
 			<ul class="mt-3 space-y-2 text-sm text-slate-300">
-				<li><span class="text-slate-100">Control planes</span> that bound autonomy with policy, budgets, and audit</li>
-				<li><span class="text-slate-100">Trust scopes</span> that make delegation safe in contested environments</li>
-				<li><span class="text-slate-100">Adversarial reliability</span>: resilience under deception, drift, and failure</li>
-				<li><span class="text-slate-100">Execution at tempo</span>: systems that ship and keep shipping</li>
+				<li><span class="text-slate-100">Control planes</span> over point solutions</li>
+				<li><span class="text-slate-100">Autonomy with constraints</span>: policy, budgets, and auditability</li>
+				<li><span class="text-slate-100">Trust scopes</span> that keep delegation safe in contested environments</li>
+				<li><span class="text-slate-100">Resilience</span> under deception, drift, and failure</li>
 			</ul>
 		</section>
+
 		<section class="card p-6">
-			<h2 class="section-title">Artifacts</h2>
-			<p class="mt-3 text-sm text-slate-300">Notes, memos, and papers.</p>
-			<ul class="mt-4 space-y-2 text-sm text-slate-300">
-				<li><span class="text-slate-100">Notes</span> for sharp takes and field lessons</li>
-				<li><span class="text-slate-100">Memos</span> for actionable briefs</li>
-				<li><span class="text-slate-100">Papers</span> for full arguments + PDFs</li>
+			<h2 class="section-title">Selected work</h2>
+			<p class="mt-3 text-sm text-slate-300">Recent writing and long-form artifacts.</p>
+			<ul class="mt-4 space-y-3 text-sm">
+				{homepageWriting.slice(0, 3).map((w) => (
+					<li>
+						<a class="group block" href={`${import.meta.env.BASE_URL}writing/${w.slug}/`}>
+							<div class="flex items-baseline gap-2">
+								<span class="rounded-none border border-slate-700 bg-slate-900/60 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-200">
+									{w.type}
+								</span>
+								<span class="font-semibold text-slate-100 group-hover:text-slate-50">{w.title}</span>
+							</div>
+							{w.description && <p class="clamp-2 mt-1 text-slate-300">{w.description}</p>}
+						</a>
+					</li>
+				))}
 			</ul>
 			<p class="mt-4">
-				<a href={`${import.meta.env.BASE_URL}writing/`} class="text-sm font-semibold">Browse writing →</a>
+				<a href={`${import.meta.env.BASE_URL}writing/`} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Browse all writing →</a>
 			</p>
 		</section>
+
 		<section class="card p-6">
-			<h2 class="section-title">Contact</h2>
-			<p class="mt-3 text-sm text-slate-300">Email is best.</p>
-			<p class="mt-4 text-sm"><a data-track="Contact: Email Click" href="mailto:anboas@gmail.com">anboas@gmail.com</a></p>
+			<h2 class="section-title">Engagement</h2>
+			<p class="mt-3 text-sm text-slate-300">Architecture, reliability, and safe autonomy.</p>
+			<ul class="mt-4 space-y-2 text-sm text-slate-300">
+				<li><span class="text-slate-100">Systems architecture</span> (cloud, platforms, control planes)</li>
+				<li><span class="text-slate-100">Delivery at scale</span> (CI/CD, SLOs, observability, guardrails)</li>
+				<li><span class="text-slate-100">Agentic workflows</span> (evals, governance, audit trails)</li>
+			</ul>
+			<div class="mt-5 flex flex-wrap gap-3">
+				<a href="#experience" class="rounded-none border border-slate-700 bg-slate-900/40 px-3 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">See experience</a>
+				<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="rounded-none border border-slate-700 px-3 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900">Email</a>
+			</div>
 		</section>
 	</div>
 
