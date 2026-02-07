@@ -1,0 +1,17 @@
+{
+  "artifacts": {
+    "html": {
+      "path": "build/ai-writing-loop/paper.html",
+      "sha256": "57bc6859f383296d7f38b67183d3e8967c64995b2c86be42dbc85c3282a9cf8c"
+    },
+    "pdf": {
+      "path": "build/ai-writing-loop/paper.pdf",
+      "sha256": "19f49ecd2ec44868a0b2f2579354fc127f4f9c94345d8ba26446a38282c96818"
+    }
+  },
+  "paper": "ai-writing-loop",
+  "source": {
+    "repo": "anboas/Whitepaper",
+    "sha": "93758a57fb2d332fa715ee351c30f4399f9dcaa5"
+  }
+}
