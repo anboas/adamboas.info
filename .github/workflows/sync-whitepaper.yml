@@ -91,13 +91,9 @@ jobs:
             fi
 
             if [ -n "$html" ]; then
-              if [ "$(basename "$html")" = "paper.html" ]; then
-                # New pipeline: Whitepaper already publishes a body-only fragment.
-                cp "$html" "src/generated/papers/${slug}.html"
-              else
-                # Back-compat: Extract body-only fragment.
-                python3 scripts/extract_pandoc_body.py "$html" "src/generated/papers/${slug}.html"
-              fi
+              # Always run through our extractor/converter so we normalize styles,
+              # fix pandoc tabular fallbacks into real tables, and keep output stable.
+              python3 scripts/extract_pandoc_body.py "$html" "src/generated/papers/${slug}.html"
             else
               echo "WARN: no html for $slug" >&2
             fi
