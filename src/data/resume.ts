@@ -3,6 +3,7 @@ export type ExperienceItem = {
 	company: string;
 	title: string;
 	period: string;
+	summary: string;
 };
 
 export type EducationItem = {
@@ -14,16 +15,84 @@ export type EducationItem = {
 
 // Keep these in one place so the homepage section + dedicated pages stay in sync.
 export const experience: ExperienceItem[] = [
-	{ slug: 'kbr-solutions-architect-2025', company: 'KBR', title: 'Solutions Architect', period: '2025–present' },
-	{ slug: 'booz-allen-solutions-architect-2024', company: 'Booz Allen Hamilton', title: 'Solutions Architect', period: '2024–2025' },
-	{ slug: 'kbr-solutions-architect-2022', company: 'KBR', title: 'Solutions Architect', period: '2022–2024' },
-	{ slug: 'booz-allen-solutions-architect-2019', company: 'Booz Allen Hamilton', title: 'Solutions Architect', period: '2019–2022' },
-	{ slug: 'kbrwyle-cloud-architect-sre-2018', company: 'KBRwyle', title: 'Cloud Architect / Site Reliability Engineer', period: '2018–2019' },
-	{ slug: 'kbrwyle-architecture-analyst-software-engineer-2018', company: 'KBRwyle', title: 'Architecture Analyst / Software Engineer', period: '2018' },
-	{ slug: 'kbr-software-engineer-2015', company: 'KBR', title: 'Software Engineer', period: '2015–2018' },
-	{ slug: 'fast-das-jr-rf-engineer-2015', company: 'Fast DAS', title: 'Jr. RF Engineer', period: '2015' },
-	{ slug: 'kerry-group-programming-consultant-2014', company: 'Kerry Group', title: 'Programming Consultant', period: '2014' },
-	{ slug: 'central-florida-health-alliance-programming-consultant-2014', company: 'Central Florida Health Alliance', title: 'Programming Consultant', period: '2014' },
+	{
+		slug: 'kbr-solutions-architect-2025',
+		company: 'KBR',
+		title: 'Solutions Architect',
+		period: '2025–present',
+		summary:
+			"Driving defense software modernization and cloud/DevSecOps strategy, translating mission needs into governance, architectures, and delivery at tempo.",
+	},
+	{
+		slug: 'booz-allen-solutions-architect-2024',
+		company: 'Booz Allen Hamilton',
+		title: 'Solutions Architect',
+		period: '2024–2025',
+		summary:
+			"Primary author and strategist for DoD-wide modern software policy and implementation plans, including modernization of CODE.mil/CLOUD.mil and the Digital Arsenal catalog. Built repeatable, AI-assisted policy analysis and led cross-enterprise alignment across CIO, Services, and senior steering groups.",
+	},
+	{
+		slug: 'kbr-solutions-architect-2022',
+		company: 'KBR',
+		title: 'Solutions Architect',
+		period: '2022–2024',
+		summary:
+			"Led AWS cloud architecture and modernization for naval aviation lifecycle management (AvPLM), improving scalability, security posture, and team cloud competence. Drove security-first optimization with AWS/DNA Engineering and authored training and technical strategy to accelerate DevSecOps adoption.",
+	},
+	{
+		slug: 'booz-allen-solutions-architect-2019',
+		company: 'Booz Allen Hamilton',
+		title: 'Solutions Architect',
+		period: '2019–2022',
+		summary:
+			"Trusted advisor and solution architect for DoD/Navy cloud modernization and DevSecOps initiatives, supporting dozens of teams and applications with migration strategy, cost/security tradeoffs, and execution guidance. Led onboarding/outreach for software factory capabilities and authored modernization and training materials that bridged leadership intent to technical delivery.",
+	},
+	{
+		slug: 'kbrwyle-cloud-architect-sre-2018',
+		company: 'KBRwyle',
+		title: 'Cloud Architect / Site Reliability Engineer',
+		period: '2018–2019',
+		summary:
+			"Built and operated scalable, automated cloud environments with CI/CD, configuration management, monitoring, and recovery automation to increase reliability and deployment velocity. Instituted best practices and cost tracking to drive resilient, efficient cloud operations.",
+	},
+	{
+		slug: 'kbrwyle-architecture-analyst-software-engineer-2018',
+		company: 'KBRwyle',
+		title: 'Architecture Analyst / Software Engineer',
+		period: '2018',
+		summary:
+			"Diagnosed and remediated complex multi-host development environments (TFS, SQL, SharePoint, Fortify, custom apps) and stabilized infrastructure after a major environment transition. Managed a large ESXi/vCenter HA fleet and storage footprint, improving reliability and operational visibility.",
+	},
+	{
+		slug: 'kbr-software-engineer-2015',
+		company: 'KBR',
+		title: 'Software Engineer',
+		period: '2015–2018',
+		summary:
+			"Delivered software in Agile/SCRUM environments and strengthened internal application lifecycle management and security tooling across a diverse tech stack. Led Fortify SSC/SCA configuration, reduced technical debt, and shipped reusable shared libraries to accelerate delivery.",
+	},
+	{
+		slug: 'fast-das-jr-rf-engineer-2015',
+		company: 'Fast DAS',
+		title: 'Jr. RF Engineer',
+		period: '2015',
+		summary:
+			"Supported RF testing and deployment troubleshooting for in-building distributed antenna systems, improving signal performance and field reliability.",
+	},
+	{
+		slug: 'kerry-group-programming-consultant-2014',
+		company: 'Kerry Group',
+		title: 'Programming Consultant',
+		period: '2014',
+		summary: "Delivered remote, short-cycle software consulting to unblock delivery and improve operational outcomes.",
+	},
+	{
+		slug: 'central-florida-health-alliance-programming-consultant-2014',
+		company: 'Central Florida Health Alliance',
+		title: 'Programming Consultant',
+		period: '2014',
+		summary: "Provided remote software development consulting focused on practical fixes, speed, and stakeholder alignment.",
+	},
 ];
 
 export const education: EducationItem[] = [
