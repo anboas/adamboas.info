@@ -22,6 +22,28 @@ async function tryReadGeneratedHtml(slug: string) {
 	}
 }
 
+function formatBytes(n: number) {
+	if (!Number.isFinite(n) || n <= 0) return null;
+	const kb = n / 1024;
+	if (kb < 1024) return `${Math.round(kb)} KB`;
+	const mb = kb / 1024;
+	return `${mb.toFixed(1)} MB`;
+}
+
+async function pdfMeta(pdfPath: string) {
+	try {
+		const abs = path.join(process.cwd(), 'public', pdfPath.replace(/^\//, ''));
+		const st = await fs.stat(abs);
+		const buf = await fs.readFile(abs);
+		const text = buf.toString('latin1');
+		const pages = (text.match(/\/Type\s*\/Page\b/g) || []).length || null;
+		return { size: formatBytes(st.size), pages };
+	} catch {
+		return { size: null, pages: null };
+	}
+}
+
+
 export async function getStaticPaths() {
 	const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
 	const papers = await getCollection('papers');
@@ -39,6 +61,7 @@ let description: string | undefined;
 
 let paper: any = null;
 let paperGeneratedHtml: string | null = null;
+let pdfInfo: { size: string | null; pages: number | null } | null = null;
 let PaperContent: any = null;
 
 let writingItem: any = null;
@@ -86,6 +109,7 @@ if (kind === 'paper') {
 	({ Content: PaperContent } = await render(paper));
 	title = `${paper.data.title} | Adam Boas`;
 	description = paper.data.description;
+	if (paper.data.pdfPath) pdfInfo = await pdfMeta(paper.data.pdfPath);
 } else {
 	const writingItems = await getCollection('writing');
 	writingItem = writingItems.find((w) => w.id === id);
@@ -134,17 +158,24 @@ if (kind === 'paper') {
 					{paper.data.date && <p class="mt-2 text-sm text-slate-400">{paper.data.date.toISOString().slice(0, 10)}</p>}
 				</div>
 
-				<div class="flex shrink-0 flex-wrap items-center gap-2">
+				<div class="flex shrink-0 flex-col items-start gap-2">
 					{paper.data.pdfPath && (
-						<a
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
-							href={withBase(paper.data.pdfPath)}
-							target="_blank"
-							rel="noreferrer"
-							data-track="Writing: Download PDF"
-						>
-							Download PDF
-						</a>
+						<>
+							<a
+								class="rounded-none border border-slate-700 bg-slate-950/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+								href={withBase(paper.data.pdfPath)}
+								target="_blank"
+								rel="noreferrer"
+								data-track="Writing: Open PDF"
+							>
+								Open PDF
+							</a>
+							{pdfInfo && (
+								<p class="text-xs text-slate-400">
+									PDF{pdfInfo.pages ? ` • ${pdfInfo.pages} pages` : ''}{pdfInfo.size ? ` • ${pdfInfo.size}` : ''} • opens in new tab
+								</p>
+							)}
+						</>
 					)}
 				</div>
 			</header>
