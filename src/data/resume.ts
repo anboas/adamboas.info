@@ -34,9 +34,9 @@ export const education: EducationItem[] = [
 		year: '2023',
 	},
 	{ slug: 'aws-cloud-practitioner', issuer: 'Amazon Web Services', name: 'AWS Certified Cloud Practitioner', year: '2019' },
-	{ slug: 'aws-solutions-architect-associate', issuer: 'Amazon Web Services', name: 'AWS Certified Solutions Architect - Associate', year: '2019' },
-	{ slug: 'hpe-ase-fortify-v1', issuer: 'HP Enterprise (HPE)', name: 'HP ASE - FORTIFY V1', year: '2016' },
-	{ slug: 'scrumalliance-certified-scrummaster', issuer: 'ScrumAlliance', name: 'CERTIFIED SCRUMMASTER', year: '2016' },
-	{ slug: 'college-of-southern-maryland-as-computer-science', issuer: 'College of Southern Maryland', name: 'ASSOCIATE OF SCIENCE - COMPUTER SCIENCE' },
+	{ slug: 'aws-solutions-architect-associate', issuer: 'Amazon Web Services', name: 'AWS Certified Solutions Architect – Associate', year: '2019' },
+	{ slug: 'hpe-ase-fortify-v1', issuer: 'Hewlett Packard Enterprise (HPE)', name: 'HPE ASE – Fortify v1', year: '2016' },
+	{ slug: 'scrumalliance-certified-scrummaster', issuer: 'Scrum Alliance', name: 'Certified ScrumMaster (CSM)', year: '2016' },
+	{ slug: 'college-of-southern-maryland-as-computer-science', issuer: 'College of Southern Maryland', name: 'Associate of Science – Computer Science' },
 	{ slug: 'james-a-forest-ccna-networking-fundamentals', issuer: 'James A. Forest Career and Technology Center', name: 'CCNA Exploration: Networking Fundamentals 4.0' },
 ];
