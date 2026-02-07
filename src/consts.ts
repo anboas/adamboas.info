@@ -5,5 +5,5 @@ export const SITE_TITLE = 'Adam Boas';
 export const SITE_DESCRIPTION = 'Autonomy, governance, and system-level execution.';
 
 // Analytics (Plausible)
-export const ANALYTICS_DOMAIN = 'adamboas.info';
+// Domain is configured in Plausible; snippet is injected in BaseHead.
 export const ANALYTICS_ENABLED = true;

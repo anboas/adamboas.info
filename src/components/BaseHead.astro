@@ -4,7 +4,7 @@
 import '../styles/global.css';
 import type { ImageMetadata } from 'astro';
 import FallbackImage from '../assets/blog-placeholder-1.jpg';
-import { SITE_TITLE, ANALYTICS_DOMAIN, ANALYTICS_ENABLED } from '../consts';
+import { SITE_TITLE, ANALYTICS_ENABLED } from '../consts';
 
 interface Props {
 	title: string;
@@ -63,7 +63,13 @@ const canonicalURL = canonicalHref ? new URL(canonicalHref, Astro.site) : new UR
 <!-- Analytics -->
 {ANALYTICS_ENABLED ? (
 	<>
-		<script defer data-domain={ANALYTICS_DOMAIN} src="https://plausible.io/js/script.outbound-links.js"></script>
+		<!-- Privacy-friendly analytics by Plausible -->
+		<script async src="https://plausible.io/js/pa-toLIAZJrZKYjT-OBbvECd.js"></script>
+		<script>
+			window.plausible = window.plausible || function () { (plausible.q = plausible.q || []).push(arguments); };
+			window.plausible.init = window.plausible.init || function (i) { plausible.o = i || {}; };
+			window.plausible.init();
+		</script>
 		<script type="module" src={new URL('scripts/analytics-events.js', Astro.site)}></script>
 	</>
 ) : null}
