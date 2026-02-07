@@ -18,6 +18,11 @@ body {
     linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
   background-size: 32px 32px;
+
+  /* Sticky footer: footer sits at bottom on short pages, scroll pushes it down normally */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Sticky browse bar (writing pages) */
