@@ -66,6 +66,7 @@ for (const file of mdFiles) {
   const expectedPdfName = path.basename(fm.pdfPath);
   const pdfPath = path.join(publicPdfDir, expectedPdfName);
   const htmlPath = path.join(generatedHtmlDir, `${slug}.html`);
+  const rawHtmlPath = path.join(generatedHtmlDir, `${slug}.raw.html`);
   const manifestPath = path.join(generatedHtmlDir, `${slug}.manifest.json`);
 
   if (!exists(pdfPath)) die(`${slug}: missing PDF at ${path.relative(repoRoot, pdfPath)} (from pdfPath ${fm.pdfPath})`);
@@ -88,13 +89,23 @@ for (const file of mdFiles) {
     }
 
     const actualPdf = sha256File(pdfPath);
-    const actualHtml = sha256File(htmlPath);
 
     if (actualPdf !== expectedPdf) {
       die(`${slug}: PDF sha256 mismatch (expected ${expectedPdf}, got ${actualPdf})`);
     }
-    if (actualHtml !== expectedHtml) {
-      die(`${slug}: HTML sha256 mismatch (expected ${expectedHtml}, got ${actualHtml})`);
+
+    if (!exists(rawHtmlPath)) {
+      // We only verify HTML hashes against the upstream manifest if we have the exact raw
+      // HTML fragment saved from the sync job. The normalized site fragment is intentionally
+      // modified (table fixes, etc.), so it will not match.
+      console.warn(
+        `verify-papers: ${slug}: raw HTML missing (${path.relative(repoRoot, rawHtmlPath)}); skipping HTML hash verification (will be enforced after next sync).`
+      );
+    } else {
+      const actualHtml = sha256File(rawHtmlPath);
+      if (actualHtml !== expectedHtml) {
+        die(`${slug}: HTML sha256 mismatch (expected ${expectedHtml}, got ${actualHtml}) comparing manifest to ${slug}.raw.html`);
+      }
     }
   }
 

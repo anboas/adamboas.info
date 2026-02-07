@@ -91,9 +91,13 @@ jobs:
             fi
 
             if [ -n "$html" ]; then
-              # Always run through our extractor/converter so we normalize styles,
-              # fix pandoc tabular fallbacks into real tables, and keep output stable.
-              python3 scripts/extract_pandoc_body.py "$html" "src/generated/papers/${slug}.html"
+              # Save the raw fragment exactly as produced by Whitepaper so we can
+              # verify integrity against the upstream manifest, then normalize into
+              # the final site fragment.
+              cp "$html" "src/generated/papers/${slug}.raw.html"
+
+              # Normalize styles + tables for the site.
+              python3 scripts/extract_pandoc_body.py "src/generated/papers/${slug}.raw.html" "src/generated/papers/${slug}.html"
             else
               echo "WARN: no html for $slug" >&2
             fi
