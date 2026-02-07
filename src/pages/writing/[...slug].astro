@@ -162,19 +162,19 @@ if (kind === 'paper') {
 					{paper.data.pdfPath && (
 						<>
 							<a
-								class="rounded-none border border-slate-700 bg-slate-950/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+								class="group rounded-none border border-slate-700 bg-slate-950/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
 								href={withBase(paper.data.pdfPath)}
 								target="_blank"
 								rel="noreferrer"
 								data-track="Writing: Open PDF"
 							>
-								Open PDF
+								<span>PDF</span>
+								{pdfInfo && (
+									<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
+										{pdfInfo.pages ? `${pdfInfo.pages}p` : ''}{pdfInfo.pages && pdfInfo.size ? ' • ' : ''}{pdfInfo.size ? pdfInfo.size : ''}
+									</span>
+								)}
 							</a>
-							{pdfInfo && (
-								<p class="text-xs text-slate-400">
-									PDF{pdfInfo.pages ? ` • ${pdfInfo.pages} pages` : ''}{pdfInfo.size ? ` • ${pdfInfo.size}` : ''} • opens in new tab
-								</p>
-							)}
 						</>
 					)}
 				</div>
