@@ -172,7 +172,8 @@ article[data-paper-style="dossier"] .paper-content tr:nth-child(even) td {
 
 /* Code blocks: make them feel like a terminal pane */
 article[data-paper-style="dossier"] .paper-content pre {
-  @apply my-6 overflow-x-auto rounded-none border border-slate-800 bg-black/40 p-4;
+  /* tighter vertical rhythm for long technical blocks */
+  @apply my-4 overflow-x-auto rounded-none border border-slate-800 bg-black/40 p-3;
 }
 
 /* Code tools (copy / wrap) */
