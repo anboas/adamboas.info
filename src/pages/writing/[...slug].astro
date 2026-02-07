@@ -167,6 +167,7 @@ if (kind === 'paper') {
 								target="_blank"
 								rel="noreferrer"
 								data-track="Writing: Open PDF"
+								data-track-props={JSON.stringify({ slug: paper.id, kind: 'paper' })}
 							>
 								<span>PDF</span>
 								{pdfInfo && (

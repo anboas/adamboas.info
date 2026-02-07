@@ -15,7 +15,16 @@ document.addEventListener('click', (e) => {
 
 	const track = a.getAttribute('data-track');
 	if (track) {
-		fire(track);
+		const rawProps = a.getAttribute('data-track-props');
+		if (rawProps) {
+			try {
+				fire(track, JSON.parse(rawProps));
+			} catch {
+				fire(track);
+			}
+		} else {
+			fire(track);
+		}
 		return;
 	}
 
