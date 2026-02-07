@@ -21,7 +21,7 @@ export const experience: ExperienceItem[] = [
 		title: 'Solutions Architect',
 		period: '2025–present',
 		summary:
-			"Driving defense software modernization and cloud/DevSecOps strategy, translating mission needs into governance, architectures, and delivery at tempo.",
+			"Senior technical strategist driving technology direction and modernization, aligning cloud and software initiatives to mission outcomes. Leads cross-functional delivery, evaluates emerging capabilities, and translates complex technical tradeoffs into actionable plans for leadership.",
 	},
 	{
 		slug: 'booz-allen-solutions-architect-2024',
