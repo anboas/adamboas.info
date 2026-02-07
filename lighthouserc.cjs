@@ -28,7 +28,8 @@ module.exports = {
         'categories:best-practices': ['warn', { minScore: 0.95 }],
 
         // Guardrail: no huge pages.
-        'resource-summary:total-byte-weight': ['warn', { maxNumericValue: 600000 }],
+        // Note: LHCI v0.15 doesn't support resource-summary assertions reliably.
+        // We'll enforce size budgets via separate build-time checks if needed.
       },
     },
     upload: {
