@@ -1,0 +1,54 @@
+name: healthcheck
+
+on:
+  schedule:
+    - cron: '17 12 * * *' # daily
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch key pages
+        env:
+          BASE: https://anboas.github.io/adamboas.info
+        run: |
+          set -euo pipefail
+          urls=(
+            "$BASE/"
+            "$BASE/writing/"
+            "$BASE/writing/agentic-force-creation/"
+            "$BASE/experience/"
+            "$BASE/education/"
+            "$BASE/rss.xml"
+            "$BASE/sitemap-index.xml"
+          )
+          for u in "${urls[@]}"; do
+            echo "Checking $u"
+            code=$(curl -sS -o /tmp/body.html -w "%{http_code}" "$u")
+            if [ "$code" != "200" ]; then
+              echo "Non-200 for $u: $code"
+              exit 1
+            fi
+          done
+
+      - name: Notify Telegram on failure (optional)
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
+            echo "Telegram secrets not set; skipping notify."
+            exit 0
+          fi
+          text="[ALERT] site healthcheck failed: ${RUN_URL}"
+          curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TELEGRAM_CHAT_ID}" \
+            -d "text=${text}" \
+            -d "disable_web_page_preview=true" >/dev/null
