@@ -35,15 +35,22 @@ def main() -> int:
     body = re.sub(r"<meta\b[^>]*?>", "", body, flags=re.IGNORECASE)
     body = re.sub(r"<title\b[^>]*>.*?</title>", "", body, flags=re.IGNORECASE | re.DOTALL)
 
-    # Remove the first H1 (pandoc title) to avoid duplicate titles.
-    # Pandoc sometimes wraps it in <header id="title-block-header">.
+    # Remove the pandoc title block (when present) to avoid duplicate titles.
+    # NOTE: When we ingest Whitepaper-generated fragments, the first <h1> can be
+    # the real content (e.g., Executive Summary). Only strip a leading H1 if it
+    # is NOT the Executive Summary anchor.
     body = re.sub(
         r"\A\s*<header\b[^>]*id=\"title-block-header\"[^>]*>.*?</header>\s*",
         "",
         body,
         flags=re.IGNORECASE | re.DOTALL,
     )
-    body = re.sub(r"\A\s*<h1\b[^>]*>.*?</h1>\s*", "", body, flags=re.IGNORECASE | re.DOTALL)
+    body = re.sub(
+        r"\A\s*<h1\b(?![^>]*\bid=\"executive-summary\")[^>]*>.*?</h1>\s*",
+        "",
+        body,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
 
     # Drop inline styles (pandoc uses these for colors) so site theme wins.
     body = re.sub(r"\sstyle=\"[^\"]*\"", "", body, flags=re.IGNORECASE)
