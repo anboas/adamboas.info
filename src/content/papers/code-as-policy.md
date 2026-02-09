@@ -1,7 +1,7 @@
 ---
 title: "From PDFs to Pull Requests"
 description: "Code-as-Policy: transforming Department of Defense policy workflows with DevSecOps, version control, and continuous verification."
-date: 2026-02-01
+date: 2025-01-25
 status: published
 pdfPath: /papers/code-as-policy.pdf
 # HTML is synced from Whitepaper into src/generated/papers/<slug>.html
