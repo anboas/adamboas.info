@@ -207,6 +207,22 @@ def main() -> int:
         flags=re.IGNORECASE,
     )
 
+    # Convert Pandoc's thebibliography block into a numbered list (and drop the stray "99" width marker).
+    def _bib_repl(m: re.Match) -> str:
+        inner = m.group(1)
+        # Drop the width marker paragraph (usually "99").
+        inner = re.sub(r"\A\s*<p>\s*<span>\s*\d+\s*</span>\s*</p>\s*", "", inner, flags=re.IGNORECASE)
+        items = re.findall(r"<p>([\s\S]*?)</p>", inner, flags=re.IGNORECASE)
+        lis = "\n".join(f"<li>{it.strip()}</li>" for it in items if it.strip())
+        return f"<ol class=\"references\">\n{lis}\n</ol>"
+
+    body = re.sub(
+        r"<div\s+class=\"thebibliography\"[^>]*>([\s\S]*?)</div>",
+        _bib_repl,
+        body,
+        flags=re.IGNORECASE,
+    )
+
     # Drop empty paragraphs.
     body = re.sub(r"<p>\s*</p>", "", body, flags=re.IGNORECASE)
 
