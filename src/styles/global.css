@@ -205,6 +205,28 @@ article[data-paper-style="dossier"] .paper-content pre code {
   letter-spacing: 0.01em;
 }
 
+/* Pandoc-highlighted code blocks (code spans with classes like kw, fu, st, co) */
+.paper-content .sourceCode {
+  position: relative; /* so our tool buttons sit correctly */
+}
+.paper-content .sourceCode a[aria-hidden="true"] {
+  display: none; /* hide per-line anchor links pandoc injects */
+}
+
+/* Token colors (approx Nord-ish on dark) */
+.paper-content code span.kw { color: #81a1c1; font-weight: 600; } /* keyword */
+.paper-content code span.dt { color: #8fbcbb; } /* data type */
+.paper-content code span.dv,
+.paper-content code span.bn,
+.paper-content code span.fl { color: #b48ead; } /* numbers */
+.paper-content code span.ch,
+.paper-content code span.st { color: #a3be8c; } /* strings/chars */
+.paper-content code span.co { color: rgba(148,163,184,0.8); font-style: italic; } /* comment */
+.paper-content code span.fu { color: #88c0d0; } /* function */
+.paper-content code span.at { color: #d08770; } /* attribute */
+.paper-content code span.op { color: rgba(226,232,240,0.9); } /* operator */
+.paper-content code span.er { color: #bf616a; text-decoration: underline; } /* error */
+
 /* Code line numbers (HTML-only) */
 .paper-content pre.codeblock {
   counter-reset: codeline;
