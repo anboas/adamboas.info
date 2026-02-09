@@ -207,17 +207,29 @@ def main() -> int:
         flags=re.IGNORECASE,
     )
 
-    # Convert Pandoc's thebibliography block into a numbered list (and drop the stray "99" width marker).
-    def _bib_repl(m: re.Match) -> str:
-        inner = m.group(1)
+    # Convert Pandoc's bibliography-like blocks into a numbered list.
+    # - thebibliography (from LaTeX \begin{thebibliography}{99}) often contains a stray "99" width marker.
+    # - enumerate blocks are produced by some LaTeX conversions for References.
+    def _p_block_to_ol(inner: str) -> str:
+        inner = inner.strip()
         # Drop the width marker paragraph (usually "99").
         inner = re.sub(r"\A\s*<p>\s*<span>\s*\d+\s*</span>\s*</p>\s*", "", inner, flags=re.IGNORECASE)
         items = re.findall(r"<p>([\s\S]*?)</p>", inner, flags=re.IGNORECASE)
         lis = "\n".join(f"<li>{it.strip()}</li>" for it in items if it.strip())
         return f"<ol class=\"references\">\n{lis}\n</ol>"
 
+    def _bib_repl(m: re.Match) -> str:
+        return _p_block_to_ol(m.group(1))
+
     body = re.sub(
         r"<div\s+class=\"thebibliography\"[^>]*>([\s\S]*?)</div>",
+        _bib_repl,
+        body,
+        flags=re.IGNORECASE,
+    )
+
+    body = re.sub(
+        r"<div\s+class=\"enumerate\"[^>]*>([\s\S]*?)</div>",
         _bib_repl,
         body,
         flags=re.IGNORECASE,
