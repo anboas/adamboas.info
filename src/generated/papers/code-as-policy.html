@@ -1,11 +1,6 @@
 <h2 class="unnumbered" id="executive-summary">Executive Summary</h2>
 <p>As the Department of Defense (DoD) intensifies its digital transformation-and increasingly acknowledges that it must operate as a software company-policy remains mired in outdated document-centric workflows. This whitepaper argues for a bold shift from static files (e.g., Word-to-PDF) to a "Code-as-Policy" (CaP) model driven by version-controlled repositories. By treating policy as dynamically managed text-much like source code-the Department of Defense can leverage the transparency, collaboration, continuous integration, and auditability that define modern software development. Drawing on interdisciplinary research in organizational theory, software engineering, digital governance, and artificial intelligence, this paper illuminates how CaP can deliver unprecedented agility, accountability, and real-time adaptability across the Department of Defense enterprise. We also examine the logistical and cultural hurdles that must be navigated-from security considerations to entrenched habits-and outline concrete strategies for scaling this practice department-wide. Ultimately, we position Code-as-Policy not merely as a technical upgrade, but as a foundational enabler of the Department of Defense’s future readiness in an era defined by artificial intelligence, machine learning, cloud computing, cybersecurity, and the imperative for agility and swift adaptability. This strategic transformation not only addresses the complexities of today’s technological landscape but also lays the groundwork for the DoD to seamlessly transition into the next era of autonomous systems, quantum computing, and integrated cyber-physical operations.</p>
 <h2 id="introduction">Introduction</h2>
-<h2 id="problem-statement">Problem Statement</h2>
-<p>Policy workflows remain document-centric (Word-to-PDF), slow to change, hard to audit, and difficult to validate. In a software-defined Department, policy must evolve at the tempo of delivery while remaining reviewable, enforceable, and measurable.</p>
-<h2 id="context-and-constraints">Context and Constraints</h2>
-<p>This paper assumes a high-assurance environment (security, compliance, and audit requirements) and recognizes policy as an operational control surface. The approach must preserve authority, traceability, and review while accelerating change throughput.</p>
-<h2 id="analysis-and-key-insights">Analysis and Key Insights</h2>
 <h2 id="policy-management-in-the-digital-era">Policy Management in the Digital Era</h2>
 <p>Policy documents in the Department of Defense are foundational instruments that inform governance, operational processes, personnel management, and strategic objectives. Over the past several decades, the Department of Defense has published instructions and directives (e.g., Department of Defense Instructions, or DoDIs) predominantly in static formats, such as Microsoft Word or PDF files, stored in centralized repositories. While such formats have been adequate for a paper-centric era, they are increasingly insufficient in an environment that demands real-time collaboration, rapid iteration, meticulous audit trails, and seamless integration with diverse systems—including emerging artificial intelligence (AI) platforms.</p>
 <p>In parallel, commercial and public-sector organizations have adopted software-driven models for information management. Version control systems—particularly Git, but also alternatives like Perforce or Subversion—have revolutionized the way complex bodies of knowledge, including policy and documentation, are maintained and tracked. The broad concept of "Docs-as-Code" (where documentation is maintained as software in plain text and managed via version control) has demonstrated notable success in technology firms, open-source communities, and governmental agencies that require nimble processes and full traceability of changes <span class="citation"
@@ -366,7 +361,7 @@ Incorporate automated linting and formatting tools to enforce consistency and ad
 </figure>
 <p><em>Figure <a href="#fig:pipeline_workflow" data-reference-type="ref"
 data-reference="fig:pipeline_workflow">1</a></em> illustrates the end-to-end Azure DevOps pipeline configured to build, validate, and deploy the whitepaper. Each stage is interconnected, ensuring seamless transitions from code commits to final deployment, while integrating both automated and manual approval gates to maintain quality and compliance. Detailed technical configurations and scripts are provided in Appendix <a href="#app:scripts" data-reference-type="ref"
-data-reference="app:scripts">15</a>.</p>
+data-reference="app:scripts">12</a>.</p>
 <h2 id="repository-management">Repository Management</h2>
 <p>At the heart of our automated workflow is a dedicated Azure DevOps repository that houses all the source files necessary for the whitepaper’s development. The repository structure is organized to maintain clarity and efficiency:</p>
 <ul>
@@ -409,7 +404,7 @@ data-reference="app:scripts">15</a>.</p>
 <p>Azure DevOps pipelines are configured to automate the build and validation processes, ensuring that every commit is systematically processed and validated. The pipeline is divided into two primary stages: **Build** and **Validation**.</p>
 <h3 id="build-stage">Build Stage</h3>
 <p>The Build stage is responsible for compiling the LaTeX source files into a PDF document. It includes the following steps, outlined in Appendix <a href="#app:azure-build" data-reference-type="ref"
-data-reference="app:azure-build">15.1.1</a>:</p>
+data-reference="app:azure-build">12.1.1</a>:</p>
 <ol>
 <li><p><strong>Caching LaTeX Installation</strong>: Utilizes Azure DevOps’ caching mechanism to store the LaTeX installation, significantly reducing build times for subsequent runs.</p></li>
 <li><p><strong>Installing Minimal LaTeX</strong>: Installs only the necessary LaTeX packages required for building the whitepaper, optimizing storage and build times.</p></li>
@@ -825,7 +820,7 @@ methodologies-such as <em>Infrastructure-as-Code</em>,
 <h2 id="detailed-azure-devops-pipeline-configurations">Detailed Azure DevOps Pipeline Configurations</h2>
 <p>For readers interested in the granular technical details of the Azure DevOps pipeline configurations, the following YAML snippets provide comprehensive guidance. These configurations are integral to automating the build, validation, and deployment processes as outlined in Section
 <a href="#sec:implementation-framework" data-reference-type="ref"
-data-reference="sec:implementation-framework">9</a>.</p>
+data-reference="sec:implementation-framework">6</a>.</p>
 <h3 id="app:azure-build">azure-pipelines.yml</h3>
 <div class="sourceCode" id="cb11" data-language="yaml"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Azure DevOps Pipeline for building a PDF from LaTeX</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">trigger</span><span class="kw">:</span></span>

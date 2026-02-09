@@ -25,17 +25,6 @@ groundwork for the DoD to seamlessly transition into the next era of
 autonomous systems, quantum computing, and integrated cyber-physical
 operations.</p>
 <h1 id="introduction">Introduction</h1>
-<h1 id="problem-statement">Problem Statement</h1>
-<p>Policy workflows remain document-centric (Word-to-PDF), slow to
-change, hard to audit, and difficult to validate. In a software-defined
-Department, policy must evolve at the tempo of delivery while remaining
-reviewable, enforceable, and measurable.</p>
-<h1 id="context-and-constraints">Context and Constraints</h1>
-<p>This paper assumes a high-assurance environment (security,
-compliance, and audit requirements) and recognizes policy as an
-operational control surface. The approach must preserve authority,
-traceability, and review while accelerating change throughput.</p>
-<h1 id="analysis-and-key-insights">Analysis and Key Insights</h1>
 <h2 id="policy-management-in-the-digital-era">Policy Management in the
 Digital Era</h2>
 <p>Policy documents in the Department of Defense are foundational
@@ -990,7 +979,7 @@ transitions from code commits to final deployment, while integrating
 both automated and manual approval gates to maintain quality and
 compliance. Detailed technical configurations and scripts are provided
 in Appendix <a href="#app:scripts" data-reference-type="ref"
-data-reference="app:scripts">15</a>.</p>
+data-reference="app:scripts">12</a>.</p>
 <h2 id="repository-management">Repository Management</h2>
 <p>At the heart of our automated workflow is a dedicated Azure DevOps
 repository that houses all the source files necessary for the
@@ -1061,7 +1050,7 @@ stages: **Build** and **Validation**.</p>
 <p>The Build stage is responsible for compiling the LaTeX source files
 into a PDF document. It includes the following steps, outlined in
 Appendix <a href="#app:azure-build" data-reference-type="ref"
-data-reference="app:azure-build">15.1.1</a>:</p>
+data-reference="app:azure-build">12.1.1</a>:</p>
 <ol>
 <li><p><strong>Caching LaTeX Installation</strong>: Utilizes Azure
 DevOps’ caching mechanism to store the LaTeX installation, significantly
@@ -1799,7 +1788,7 @@ DevOps pipeline configurations, the following YAML snippets provide
 comprehensive guidance. These configurations are integral to automating
 the build, validation, and deployment processes as outlined in Section
 <a href="#sec:implementation-framework" data-reference-type="ref"
-data-reference="sec:implementation-framework">9</a>.</p>
+data-reference="sec:implementation-framework">6</a>.</p>
 <h3 id="app:azure-build">azure-pipelines.yml</h3>
 <div class="sourceCode" id="cb11" data-language="yaml"><pre
 class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Azure DevOps Pipeline for building a PDF from LaTeX</span></span>
