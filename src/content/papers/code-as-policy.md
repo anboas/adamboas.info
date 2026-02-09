@@ -13,12 +13,6 @@ tags:
   - delivery systems
 ---
 
-## Abstract
-
-Policy workflows remain document-centric (Word-to-PDF), slow to change, hard to audit, and difficult to validate.
-
-This paper argues for a shift to **Code-as-Policy**: policy treated as a version-controlled, reviewable, testable artifact with CI/CD-style guardrails.
-
 ## Read the full paper
 
 - Use the embedded PDF viewer below, or download the PDF.
