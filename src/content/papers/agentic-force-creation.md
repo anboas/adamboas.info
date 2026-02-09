@@ -1,5 +1,5 @@
 ---
-title: "The Unrecognized Shift: From AI Force Multiplication to Force Creation in the Department of War"
+title: "From AI Force Multiplication to Force Creation"
 description: "A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense."
 date: 2026-01-01
 status: published
