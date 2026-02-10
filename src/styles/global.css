@@ -100,6 +100,27 @@ a {
   line-height: 1.7;
 }
 
+/* Center images/figures in generated paper HTML */
+.paper-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.paper-content figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+.paper-content figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paper-content figcaption {
+  text-align: center;
+}
+
 /* Dossier vibe: terminal-ish chrome, tighter rhythm */
 article[data-paper-style="dossier"] .paper-content {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
