@@ -99,7 +99,7 @@ Centralize policy decisions; distribute enforcement</h3>
 </div>
 <h2 id="conceptual-view-ov1">Conceptual view (OV‑1)</h2>
 <figure id="fig:acp-ov1">
-<img src="papers/acp-ra/diagrams/acp_ov1_simplified.png" />
+<img src="/papers/acp-ra/diagrams/acp_ov1_simplified.png" />
 <figcaption>Agent Control Plane OV-1 (Simplified). The control plane governs identity, trust scopes, policy, gateways, evaluation, and evidence across the runtime plane. It aligns to enterprise identity and access management, DevSecOps, Zero Trust/CNAP, and security operations patterns.</figcaption>
 </figure>
 <p>The conceptual model is a control system with two planes:</p>
@@ -506,7 +506,7 @@ per-role + anomaly overlays). - ensemble drift (distribution shifts across actio
 <h2 id="control-loops-how-the-system-behaves">Control loops (how the system behaves)</h2>
 <h2 id="action-loop-intent-policy-mediated-action-evidence">Action loop: intent → policy → mediated action → evidence</h2>
 <figure id="fig:acp-action-loop">
-<img src="papers/acp-ra/diagrams/acp_action_flow.png" />
+<img src="/papers/acp-ra/diagrams/acp_action_flow.png" />
 <figcaption>Policy-Enforced Tool Invocation (Action Envelope). The tool and action gateway acts as an enforcement point. It consults a policy decision point with the trust scope and attribute-based access control, optionally invokes approvals, emits tamper-evident evidence, and integrates with observability and security operations workflows.</figcaption>
 </figure>
 <p>Narrative flow:</p>
@@ -521,7 +521,7 @@ per-role + anomaly overlays). - ensemble drift (distribution shifts across actio
 </ol>
 <h2 id="governance-loop-artifacts-tests-promotion-enforcement">Governance loop: artifacts <span class="math inline">→</span> tests and evals <span class="math inline">→</span> promotion <span class="math inline">→</span> enforcement</h2>
 <figure id="fig:acp-governance-lifecycle">
-<img src="papers/acp-ra/diagrams/acp_governance_lifecycle_compact.png" />
+<img src="/papers/acp-ra/diagrams/acp_governance_lifecycle_compact.png" />
 <figcaption>Governance-as-Code Lifecycle (Compact). Policy, manifests, and evaluation packs are versioned artifacts. The build pipeline and evaluation harnesses gate promotion of signed bundles to enforcement points, while evidence and cATO/continuous risk consume emitted telemetry and replayable logs.</figcaption>
 </figure>
 <p>A C P governance is GitOps-oriented:</p>

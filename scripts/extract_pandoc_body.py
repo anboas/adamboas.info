@@ -207,9 +207,18 @@ def main() -> int:
         flags=re.IGNORECASE,
     )
 
+    # Fix image src paths from Whitepaper repo-relative locations to site-public URLs.
+    # Whitepaper HTML often uses: src="papers/<paper>/diagrams/...".
+    # On the site, we publish those under: /papers/<paper>/diagrams/...
+    body = re.sub(
+        r'(<img\b[^>]*\bsrc=")papers/([^/]+)/diagrams/',
+        r'\1/papers/\2/diagrams/',
+        body,
+        flags=re.IGNORECASE,
+    )
+
     # Convert Pandoc's bibliography-like blocks into a numbered list.
     # - thebibliography (from LaTeX \begin{thebibliography}{99}) often contains a stray "99" width marker.
-    # - enumerate blocks are produced by some LaTeX conversions for References.
     def _p_block_to_ol(inner: str) -> str:
         inner = inner.strip()
         # Drop the width marker paragraph (usually "99").
