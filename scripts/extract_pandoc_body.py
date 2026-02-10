@@ -228,12 +228,11 @@ def main() -> int:
         flags=re.IGNORECASE,
     )
 
-    body = re.sub(
-        r"<div\s+class=\"enumerate\"[^>]*>([\s\S]*?)</div>",
-        _bib_repl,
-        body,
-        flags=re.IGNORECASE,
-    )
+    # NOTE: Do NOT rewrite generic pandoc <div class="enumerate"> blocks.
+    # Pandoc uses these widely for ordered lists throughout the document.
+    # Rewriting them here can drop most of the paper body.
+    # If we need special handling for references, prefer targeting the
+    # specific references container (e.g., div.thebibliography) only.
 
     # Drop empty paragraphs.
     body = re.sub(r"<p>\s*</p>", "", body, flags=re.IGNORECASE)
