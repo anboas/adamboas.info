@@ -22,6 +22,15 @@ async function tryReadGeneratedHtml(slug: string) {
 	}
 }
 
+function applyBaseToGeneratedPaperHtml(html: string) {
+	// Generated paper fragments may contain absolute-root URLs like /papers/...
+	// That breaks on GitHub Pages project deployments (served from /<repo>/).
+	const papersBase = withBase('/papers/');
+	return html
+		.replaceAll('src="/papers/', `src="${papersBase}`)
+		.replaceAll('href="/papers/', `href="${papersBase}`);
+}
+
 function formatBytes(n: number) {
 	if (!Number.isFinite(n) || n <= 0) return null;
 	const kb = n / 1024;
@@ -106,6 +115,7 @@ if (kind === 'paper') {
 	paper = papers.find((p) => p.id === id);
 	if (!paper) throw new Error(`Paper not found: ${id}`);
 	paperGeneratedHtml = await tryReadGeneratedHtml(paper.id);
+	if (paperGeneratedHtml) paperGeneratedHtml = applyBaseToGeneratedPaperHtml(paperGeneratedHtml);
 	({ Content: PaperContent } = await render(paper));
 	title = `${paper.data.title} | Adam Boas`;
 	description = paper.data.description;
