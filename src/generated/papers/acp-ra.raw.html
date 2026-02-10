@@ -334,6 +334,101 @@ overlap of allowed actions, data, and environments—never the sum.</p>
 <div class="center">
 <hr />
 </div>
+<h1 id="threat-model-and-trust-boundaries">Threat model and trust
+boundaries</h1>
+<p>ACP-RA assumes sophisticated adversaries and treats external inputs
+as untrusted until proven otherwise. The goal is not to make models
+“immune” to manipulation. The goal is to make manipulation
+<em>non-catastrophic</em> by enforcing explicit authority, mediated
+execution, and replayable evidence.</p>
+<h2 id="operating-assumptions-adversary-model">Operating assumptions
+(adversary model)</h2>
+<p>ACP-RA is designed for environments where an adversary can:</p>
+<ul>
+<li><p>inject instructions into untrusted text (web pages, documents,
+email, tickets, chat logs).</p></li>
+<li><p>poison retrieval (index contamination, search result
+manipulation, stale or malicious KB entries).</p></li>
+<li><p>exploit tool interfaces (parameter injection, unexpected tool
+behaviors, malicious or compromised plugins/connectors).</p></li>
+<li><p>exploit agent-to-agent communication (unauthenticated peers, weak
+schemas, fan-out cascades, replay).</p></li>
+<li><p>degrade the environment (denial of network/model services,
+delay/reorder delivery, partial partitions).</p></li>
+<li><p>target the control plane itself (policy bundle distribution,
+evidence storage, revocation channels, registries).</p></li>
+</ul>
+<h2 id="trust-boundaries-authority-sources-vs-data-sources">Trust
+boundaries: authority sources vs data sources</h2>
+<p>ACP-RA distinguishes <strong>authority</strong> (what may authorize
+an action) from <strong>data</strong> (what may inform a decision). This
+is the core trust boundary.</p>
+<h3 id="authority-sources-may-authorize-actions">Authority sources (may
+authorize actions)</h3>
+<p>The following sources are allowed to confer authority:</p>
+<ol>
+<li><p>Human intent (operator/commander direction) captured as an
+authenticated session input.</p></li>
+<li><p>A signed Trust Scope Manifest (TSM) referenced by immutable
+hash.</p></li>
+<li><p>A signed policy bundle referenced by immutable hash.</p></li>
+<li><p>Explicit approvals/waivers (human-on-the-loop) recorded as
+evidence.</p></li>
+</ol>
+<p>Everything else is data.</p>
+<h3 id="data-sources-untrusted-by-default">Data sources (untrusted by
+default)</h3>
+<p>The following sources are treated as untrusted inputs and must not be
+allowed to directly trigger tool execution:</p>
+<ul>
+<li><p>Retrieved web content, documents, PDFs, slides, wiki
+pages.</p></li>
+<li><p>Emails, tickets, chat transcripts, and attachments.</p></li>
+<li><p>Tool outputs (including logs, error messages, and API
+responses).</p></li>
+<li><p>Inter-agent messages until authenticated, authorized, and
+schema-validated.</p></li>
+<li><p>Model outputs (plans, explanations, code) until mediated through
+gateways.</p></li>
+</ul>
+<h2 id="control-invariants-must">Control invariants (MUST)</h2>
+<p>ACP-RA enforces the following invariants. If any invariant is
+violated, the system is not a control plane.</p>
+<ul>
+<li><p>No implicit authority: prompts and retrieved text do not grant
+permissions.</p></li>
+<li><p>No direct side effects: model runtimes do not execute privileged
+operations directly.</p></li>
+<li><p>Mediated execution: every side effect passes through the
+Tool/Action Gateway.</p></li>
+<li><p>Structured requests: side effects are expressed as typed action
+envelopes (schema-validated).</p></li>
+<li><p>Reproducible policy decisions: allow/deny decisions record inputs
++ policy hash + decision outputs.</p></li>
+<li><p>Replayable context: context used for decisions is captured as
+context bundles with provenance and integrity metadata.</p></li>
+<li><p>Authenticated messaging: inter-agent communication is typed,
+authenticated, authorized, and rate-limited at the IAG.</p></li>
+<li><p>Anti-replay: inter-agent message envelopes include TTL + sequence
++ nonce; receivers enforce anti-replay windows.</p></li>
+</ul>
+<h2 id="common-attack-paths-acp-ra-is-designed-to-stop">Common attack
+paths ACP-RA is designed to stop</h2>
+<ul>
+<li><p>Prompt injection: untrusted text attempts to override intent or
+induce a tool call.</p></li>
+<li><p>Retrieval poisoning: the agent retrieves malicious instructions
+or falsified facts.</p></li>
+<li><p>Parameter injection: attacker causes a legitimate tool call with
+malicious arguments.</p></li>
+<li><p>Output injection: a tool returns content crafted to steer the
+model into unsafe actions.</p></li>
+<li><p>Protocol exploits: inter-agent messaging becomes a covert command
+channel (schema gaps, replay, fan-out cascades).</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
 <h1 id="technical-positions-required-control-surfaces">Technical
 positions (required control surfaces)</h1>
 <p>ACP‑RA constrains solution architectures through required control
@@ -509,13 +604,106 @@ posture).</p></li>
 envelopes.</p></li>
 </ul>
 <h2 id="toolaction-gateway">Tool/Action gateway</h2>
-<p>This is the most important boundary: it mediates side effects. -
-allowlists/denylists by scope and tier. - approvals and quorum
-requirements for high consequence. - secrets brokerage (tools get
-secrets; models do not). - sandboxed execution environments. -
-idempotency keys and retry control to prevent amplification. - action
-envelopes emitted to evidence ledger. - tool provenance and attestation
-stamped into every action envelope.</p>
+<p>This is the most important boundary: it mediates side effects.</p>
+<ul>
+<li><p>allowlists/denylists by scope and tier</p></li>
+<li><p>approvals and quorum requirements for high consequence</p></li>
+<li><p>secrets brokerage (tools get secrets; models do not)</p></li>
+<li><p>sandboxed execution environments</p></li>
+<li><p>idempotency keys and retry control to prevent
+amplification</p></li>
+<li><p>action envelopes emitted to the evidence ledger</p></li>
+<li><p>tool provenance and attestation stamped into every action
+envelope</p></li>
+</ul>
+<h3 id="action-envelope-minimum-schema">Action envelope (minimum
+schema)</h3>
+<p>The Tool/Action Gateway MUST emit an <strong>action envelope</strong>
+for every attempted side effect.</p>
+<ul>
+<li><p>Pre-execution envelope (request): what the agent asked to do,
+under which scope/policy, with which context, and what the PDP
+decided.</p></li>
+<li><p>Post-execution envelope (result): what actually happened, what
+artifacts were produced, and what evidence pointers are available for
+replay.</p></li>
+</ul>
+<pre><code>envelopeVersion: 1
+envelopeId: &quot;ae-&lt;uuid&gt;&quot;
+createdAt: &quot;2026-02-10T15:04:05Z&quot;
+workUnitId: &quot;wu-opsplan-2026-02-10-0007&quot;
+
+actor:
+  agentId: &quot;npe:agent/logistics-55bd&quot;
+  persona: &quot;planning&quot;
+  runtimeAttestationRef: &quot;attest://runtime/sha256:...&quot;  # optional
+
+scope:
+  trustScopeRef: &quot;trustscope://ops-planning/T2@sha256:...&quot;
+  policyBundleRef: &quot;policy://bundle/2026-02@sha256:...&quot;
+
+request:
+  toolId: &quot;tool:github.pull_request.create&quot;
+  toolVersion: &quot;1.3.2&quot;
+  provenanceTier: &quot;B&quot;
+  actionType: &quot;write&quot;  # read|write|irreversible
+  argsSchema: &quot;github.pr.create.v1&quot;
+  args:
+    repo: &quot;anboas/Whitepaper&quot;
+    base: &quot;main&quot;
+    head: &quot;feature/acp&quot;
+  idempotencyKey: &quot;idemp:sha256:...&quot;
+
+context:
+  bundles:
+    - bundleId: &quot;cb-&lt;uuid&gt;&quot;
+      sha256: &quot;sha256:...&quot;
+      labels: [&quot;untrusted:web&quot;, &quot;source:kb&quot;]
+
+policyDecision:
+  decision: &quot;allow&quot;  # allow|deny
+  policyHash: &quot;sha256:...&quot;
+  reasonCode: &quot;ALLOWLIST_MATCH&quot;
+  approvalsRequired: []
+  budgets:
+    toolCalls: 1
+    tokensMax: 8000
+
+execution:
+  sandboxProfile: &quot;sandbox:t2&quot;
+  egressPolicy: &quot;egress:t2-restricted&quot;
+  secretsBrokerRef: &quot;secrets://broker/v1&quot;  # tools get secrets; models do not
+
+result:
+  status: &quot;executed&quot;  # denied|executed|failed
+  artifacts:
+    - kind: &quot;pull_request&quot;
+      ref: &quot;https://github.com/anboas/Whitepaper/pull/123&quot;
+  error: null
+
+integrity:
+  requestHash: &quot;sha256:...&quot;  # canonical hash of request fields
+  resultHash: &quot;sha256:...&quot;   # canonical hash of result fields
+  signatures:
+    gateway:
+      keyId: &quot;k-acp-gw-01&quot;
+      sig: &quot;base64:...&quot;</code></pre>
+<p>Minimum required properties (non-exhaustive):</p>
+<ul>
+<li><p>Identity binding: agentId + persona + (where available) runtime
+attestation.</p></li>
+<li><p>Authority binding: trustScopeRef + policyBundleRef +
+policyHash.</p></li>
+<li><p>Context binding: references to context bundle hashes (never
+free-text provenance).</p></li>
+<li><p>Idempotency: idempotencyKey for any operation that can be
+retried.</p></li>
+<li><p>Approval traceability: explicit approvalsRequired and
+approvalsGranted (with signatures) for high-consequence
+actions.</p></li>
+<li><p>Canonical integrity: requestHash/resultHash and a gateway
+signature over them.</p></li>
+</ul>
 <h3
 id="toolskill-supply-chain-governance-registry-provenance-tiers">Tool/skill
 supply chain governance (registry + provenance tiers)</h3>
@@ -589,15 +777,84 @@ the Model Context Protocol (MCP)—or successor protocols that provide
 similar semantics. The ACP does not bet on a single wire protocol; it
 standardizes the policy surface required no matter what carries the
 message.</p>
-<p><strong>Required policy surface (independent of protocol):</strong> -
-mutual authentication of sender/receiver identities and runtime
-provenance. - authorization of message types and peer relationships by
-trust scope + persona + environment. - schema validation (typed
-envelopes; no arbitrary prompt blobs as transport). - rate limits + TTLs
-+ fan-out caps to prevent cascades. - provenance: message hashes, policy
-hash, sender/receiver ids. - circuit breakers: cascade detection and
-automatic throttling/quarantine triggers. - evidence emission: ensemble
-graph metadata sufficient for replay and triage.</p>
+<p><strong>Required policy surface (independent of
+protocol):</strong></p>
+<ul>
+<li><p>mutual authentication of sender/receiver identities and runtime
+provenance</p></li>
+<li><p>authorization of message types and peer relationships by trust
+scope + persona + environment</p></li>
+<li><p>schema validation (typed envelopes; no arbitrary prompt blobs as
+transport)</p></li>
+<li><p>rate limits + TTLs + fan-out caps to prevent cascades</p></li>
+<li><p>provenance: message hashes, policy hash, sender/receiver
+ids</p></li>
+<li><p>circuit breakers: cascade detection and automatic
+throttling/quarantine triggers</p></li>
+<li><p>evidence emission: ensemble graph metadata sufficient for replay
+and triage</p></li>
+</ul>
+<h3 id="inter-agent-message-envelope-minimum-schema">Inter-agent message
+envelope (minimum schema)</h3>
+<p>The IAG MUST enforce typed <strong>message envelopes</strong>.</p>
+<pre><code>envelopeVersion: 1
+messageId: &quot;msg-&lt;uuid&gt;&quot;
+conversationId: &quot;conv-&lt;uuid&gt;&quot;           # stable thread identifier
+sequenceNumber: 42                       # monotonic per (sender, conversation)
+sentAt: &quot;2026-02-10T15:04:07Z&quot;
+expiresAt: &quot;2026-02-10T15:06:07Z&quot;       # TTL is mandatory
+
+sender:
+  agentId: &quot;npe:agent/orchestrator-77c9&quot;
+  persona: &quot;orchestrator&quot;
+  runtimeAttestationRef: &quot;attest://runtime/sha256:...&quot;  # optional
+
+recipients:
+  - agentId: &quot;npe:agent/logistics-55bd&quot;
+    persona: &quot;planning&quot;
+
+scope:
+  workUnitId: &quot;wu-opsplan-2026-02-10-0007&quot;
+  trustScopeRef: &quot;trustscope://ops-planning/T2@sha256:...&quot;
+  policyBundleRef: &quot;policy://bundle/2026-02@sha256:...&quot;
+
+message:
+  type: &quot;task.assign&quot;                   # typed allowlist
+  schema: &quot;a2a.task.assign.v1&quot;
+  fanOutClass: &quot;bounded&quot;                # bounded|broadcast (policy-controlled)
+  payloadRef: &quot;evidence://blob/sha256:...&quot;  # or inline payload
+
+integrity:
+  payloadHash: &quot;sha256:...&quot;
+  previousMsgHash: &quot;sha256:...&quot;         # optional chaining
+  nonce: &quot;b64:...&quot;                      # per-message uniqueness
+  signatures:
+    sender:
+      keyId: &quot;k-agent-orch-01&quot;
+      sig: &quot;base64:...&quot;</code></pre>
+<h3 id="replay-protection-and-sequencing">Replay protection and
+sequencing</h3>
+<p>Agents and gateways MUST treat inter-agent messaging as an
+adversarial channel unless protected.</p>
+<p>Minimum anti-replay requirements:</p>
+<ul>
+<li><p>Monotonic sequence numbers: sequenceNumber MUST be strictly
+increasing per (sender, conversationId).</p></li>
+<li><p>TTL enforcement: expiresAt MUST be enforced; expired messages are
+dropped.</p></li>
+<li><p>Nonce + anti-replay cache: receivers maintain a sliding
+anti-replay window keyed by (sender, conversationId, sequenceNumber,
+nonce).</p></li>
+<li><p>Signature coverage: the sender signature MUST cover recipients,
+sequenceNumber, TTL, payloadHash, workUnitId, trustScopeRef, and
+policyBundleRef.</p></li>
+<li><p>Out-of-order handling: out-of-order delivery is allowed only
+within a bounded window; outside the window, messages are rejected or
+quarantined.</p></li>
+<li><p>Degraded-mode behavior: if partitions prevent timely delivery,
+policy MUST specify whether to pause, fall back to cached scopes, or
+tighten authority rather than accept unauthenticated messages.</p></li>
+</ul>
 <h3 id="a2a-mcp-crosswalk-how-both-map-to-acp-boundaries">A2A to MCP
 crosswalk (how both map to ACP boundaries)</h3>
 <ul>
