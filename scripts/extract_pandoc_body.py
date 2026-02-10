@@ -208,11 +208,11 @@ def main() -> int:
     )
 
     # Fix image src paths from Whitepaper repo-relative locations to site-public URLs.
-    # Whitepaper HTML often uses: src="papers/<paper>/diagrams/...".
-    # On the site, we publish those under: /papers/<paper>/diagrams/...
+    # Whitepaper HTML often uses: src="papers/<paper>/diagrams/..." or src="papers/<paper>/assets/...".
+    # On the site, we publish those under: /papers/<paper>/...
     body = re.sub(
-        r'(<img\b[^>]*\bsrc=")papers/([^/]+)/diagrams/',
-        r'\1/papers/\2/diagrams/',
+        r'(<img\b[^>]*\bsrc=")papers/([^/]+)/(diagrams|assets)/',
+        r'\1/papers/\2/\3/',
         body,
         flags=re.IGNORECASE,
     )
