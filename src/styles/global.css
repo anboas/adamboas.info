@@ -97,7 +97,8 @@ a {
 
 /* Paper pages should be readable; keep the site terminal vibe elsewhere. */
 .paper-content {
-  font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  /* Body font for papers: keep it clean + familiar across platforms (no external webfont). */
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.75;
   font-size: 1.04rem;
 }
@@ -126,7 +127,7 @@ a {
 /* Dossier vibe: terminal-ish chrome, tighter rhythm */
 article[data-paper-style="dossier"] .paper-content {
   /* Dossier chrome, but readable body text */
-  font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.75;
   font-size: 1.05rem;
 }
