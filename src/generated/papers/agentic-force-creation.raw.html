@@ -136,26 +136,54 @@ Force Creation</h1>
 <p>To neutralize a common objection (<em>“this is already done with
 copilots”</em>), this section makes the ceiling explicit.</p>
 <div class="center">
-<div class="tabular">
-<p><span>p<span>0.26<br />
-textwidth</span> p<span>0.37</span> p<span>0.37</span></span>
-<strong>Dimension</strong> &amp; <strong>Force Multiplication
-(Assistants)</strong> &amp; <strong>Force Creation
-(Agents)</strong><br />
-Primary unit of output &amp; Human-hours amplified &amp; Agent-hours
-executed within trust scopes<br />
-Bottleneck &amp; Human attention / approvals &amp; Compute + authority +
-context freshness<br />
-Control surface &amp; Prompting / UI workflows &amp; Control plane:
-policy-as-code, tool mediation, audit, budgets<br />
-Failure shape &amp; Wrong answer / bad suggestion &amp; Wrong action at
-machine speed<br />
-Governance need &amp; Review + training &amp; Trust scopes + regression
-gates + kill switch + immutable logs<br />
-Tempo limit &amp; Approval latency dominates &amp; Execution density
-dominates (bounded by policy)<br />
-</p>
-</div>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Dimension</strong></th>
+<th style="text-align: left;"><strong>Force Multiplication
+(Assistants)</strong></th>
+<th style="text-align: left;"><strong>Force Creation
+(Agents)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Primary unit of output</td>
+<td style="text-align: left;">Human-hours amplified</td>
+<td style="text-align: left;">Agent-hours executed within trust
+scopes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bottleneck</td>
+<td style="text-align: left;">Human attention / approvals</td>
+<td style="text-align: left;">Compute + authority + context
+freshness</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Control surface</td>
+<td style="text-align: left;">Prompting / UI workflows</td>
+<td style="text-align: left;">Control plane: policy-as-code, tool
+mediation, audit, budgets</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Failure shape</td>
+<td style="text-align: left;">Wrong answer / bad suggestion</td>
+<td style="text-align: left;">Wrong action at machine speed</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Governance need</td>
+<td style="text-align: left;">Review + training</td>
+<td style="text-align: left;">Trust scopes + regression gates + kill
+switch + immutable logs</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tempo limit</td>
+<td style="text-align: left;">Approval latency dominates</td>
+<td style="text-align: left;">Execution density dominates (bounded by
+policy)</td>
+</tr>
+</tbody>
+</table>
 </div>
 <p>The implication is not that assistants are useless; it is that they
 do not remove the limiting factor when tempo and action density exceed
@@ -481,13 +509,15 @@ and emergent task completion.</p></li>
 </ul>
 <p>These dynamics are why the control plane must enforce tool mediation,
 provenance controls, and escalation-rate management.</p>
-<p><strong>Figure 1: Agentic Battlespace Stack</strong> (Placeholder for
-diagram)<br />
-Sensors/telemetry <span class="math inline">→</span> context engineering
-<span class="math inline">→</span> agent orchestration <span
-class="math inline">→</span> tool mediation <span
-class="math inline">→</span> effects. Annotated with trust scope gates
-(authority, consequence, environment, uncertainty).</p>
+<figure id="fig:agentic-battlespace-stack">
+<img
+src="papers/agentic-force-creation/diagrams/agentic_battlespace_stack.png" />
+<figcaption>Agentic Battlespace Stack. Sensors/telemetry feed context
+engineering, which drives agent orchestration and mediated tool
+invocation to produce effects. Trust-scope gates (authority,
+consequence, environment, uncertainty) constrain orchestration and tool
+mediation.</figcaption>
+</figure>
 <h1 id="a-bounded-vignette-contested-comms-high-tempo">A Bounded
 Vignette: Contested Comms, High Tempo</h1>
 <p>Scenario (contested comms, high tempo): Under intermittent

@@ -34,7 +34,47 @@ rather than an immediate revolution[7]. This reframes force creation as an engin
 <h2 id="baseline-contrast">Baseline Contrast: Force Multiplication vs. Force Creation</h2>
 <p>To neutralize a common objection (<em>“this is already done with copilots”</em>), this section makes the ceiling explicit.</p>
 <div class="center">
-<div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Force Multiplication (Assistants)</th><th>Force Creation (Agents)</th></tr></thead><tbody><tr><td>Primary unit of output</td><td>Human-hours amplified</td><td>Agent-hours executed within trust scopes</td></tr><tr><td>Bottleneck</td><td>Human attention / approvals</td><td>Compute + authority + context freshness</td></tr><tr><td>Control surface</td><td>Prompting / UI workflows</td><td>Control plane: policy-as-code, tool mediation, audit, budgets</td></tr><tr><td>Failure shape</td><td>Wrong answer / bad suggestion</td><td>Wrong action at machine speed</td></tr><tr><td>Governance need</td><td>Review + training</td><td>Trust scopes + regression gates + kill switch + immutable logs</td></tr><tr><td>Tempo limit</td><td>Approval latency dominates</td><td>Execution density dominates (bounded by policy)</td></tr></tbody></table></div>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Dimension</strong></th>
+<th><strong>Force Multiplication (Assistants)</strong></th>
+<th><strong>Force Creation (Agents)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary unit of output</td>
+<td>Human-hours amplified</td>
+<td>Agent-hours executed within trust scopes</td>
+</tr>
+<tr class="even">
+<td>Bottleneck</td>
+<td>Human attention / approvals</td>
+<td>Compute + authority + context freshness</td>
+</tr>
+<tr class="odd">
+<td>Control surface</td>
+<td>Prompting / UI workflows</td>
+<td>Control plane: policy-as-code, tool mediation, audit, budgets</td>
+</tr>
+<tr class="even">
+<td>Failure shape</td>
+<td>Wrong answer / bad suggestion</td>
+<td>Wrong action at machine speed</td>
+</tr>
+<tr class="odd">
+<td>Governance need</td>
+<td>Review + training</td>
+<td>Trust scopes + regression gates + kill switch + immutable logs</td>
+</tr>
+<tr class="even">
+<td>Tempo limit</td>
+<td>Approval latency dominates</td>
+<td>Execution density dominates (bounded by policy)</td>
+</tr>
+</tbody>
+</table>
 </div>
 <p>The implication is not that assistants are useless; it is that they do not remove the limiting factor when tempo and action density exceed human relevance windows.</p>
 <h2 id="trust-scope-framework-defining-and-operationalizing-trust-in-agentic-systems">Trust Scope Framework: Defining and Operationalizing Trust in Agentic Systems</h2>
@@ -210,9 +250,10 @@ must be treated as a first-class control-plane objective, with explicit budgets,
 <li><p><strong>Swarm vs Swarm Economics</strong>: Attrition and cost-imposition via cheap agent spam, evaluated by node loss tolerance and emergent task completion.</p></li>
 </ul>
 <p>These dynamics are why the control plane must enforce tool mediation, provenance controls, and escalation-rate management.</p>
-<p><strong>Figure 1: Agentic Battlespace Stack</strong> (Placeholder for diagram)<br />
-Sensors/telemetry <span class="math inline">→</span> context engineering
-<span class="math inline">→</span> agent orchestration <span class="math inline">→</span> tool mediation <span class="math inline">→</span> effects. Annotated with trust scope gates (authority, consequence, environment, uncertainty).</p>
+<figure id="fig:agentic-battlespace-stack">
+<img src="/papers/agentic-force-creation/diagrams/agentic_battlespace_stack.png" />
+<figcaption>Agentic Battlespace Stack. Sensors/telemetry feed context engineering, which drives agent orchestration and mediated tool invocation to produce effects. Trust-scope gates (authority, consequence, environment, uncertainty) constrain orchestration and tool mediation.</figcaption>
+</figure>
 <h2 id="a-bounded-vignette-contested-comms-high-tempo">A Bounded Vignette: Contested Comms, High Tempo</h2>
 <p>Scenario (contested comms, high tempo): Under intermittent connectivity, a battle-management agent family operates under Category C trust scope: it may fuse ISR and recommend COAs, but may only execute pre-approved non-kinetic actions (e.g., sensor re-tasking, deception routing) below a defined risk threshold. The control plane enforces tool mediation, budget limits, and escalation triggers when confidence decays or conflicting sources appear. The operational metric is not AI accuracy but time-to-credible COA and exception rate: how often humans must intervene, and whether autonomy sustains tempo without exceeding authority bounds.</p>
 <p>This shift is structurally driven by operational tempo, contestation, and scale asymmetry.</p>
