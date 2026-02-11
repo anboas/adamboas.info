@@ -622,18 +622,36 @@ outcome.</p></li>
 </ul>
 <h3 id="swarm-scale-evidence-hierarchical-aggregation-for-practical-replay">Swarm-scale evidence: hierarchical aggregation for practical replay</h3>
 <p>Swarm replay can be prohibitively expensive if every message and trace is retained at full fidelity. ACP uses hierarchical evidence aggregation:</p>
-<p><strong>Per-agent evidence (always-on):</strong> - action envelopes.
-- inter-agent message envelopes (metadata always; payload by tier/trigger). - context bundle hashes + provenance pointers (payload capture by tier/trigger). - policy decisions (inputs/outputs + policy hash). - drift/anomaly signals (summaries).</p>
-<p><strong>Ensemble evidence (always-on, lightweight):</strong> -
-coordination graph metadata (A2A edges by type and time). - arbitration outcomes (conflicts, quorums, deadlocks/timeouts). - budget burn-down time series (aggregate and per-role). - work-unit DAG summaries (dependencies, blocks, cancellations).</p>
-<p><strong>Selective enrichment (triggered):</strong> - full message bodies, full context payloads, and detailed planning traces captured on:</p>
+<dl>
+<dt><strong>Per-agent evidence (always-on)</strong></dt>
+<dd>
 <ul>
-<li><p>anomaly thresholds,.</p>
-<ul>
-<li><p>high-consequence actions,</p></li>
-<li><p>investigation holds.</p></li>
-</ul></li>
+<li><p>action envelopes.</p></li>
+<li><p>inter-agent message envelopes (metadata always; payload by tier/trigger).</p></li>
+<li><p>context bundle hashes and provenance pointers (payload capture by tier/trigger).</p></li>
+<li><p>policy decisions (inputs/outputs + policy hash).</p></li>
+<li><p>drift/anomaly signals (summaries).</p></li>
 </ul>
+</dd>
+<dt><strong>Ensemble evidence (always-on, lightweight)</strong></dt>
+<dd>
+<ul>
+<li><p>coordination graph metadata (A2A edges by type and time).</p></li>
+<li><p>arbitration outcomes (conflicts, quorums, deadlocks/timeouts).</p></li>
+<li><p>budget burn-down time series (aggregate and per-role).</p></li>
+<li><p>work-unit DAG summaries (dependencies, blocks, cancellations).</p></li>
+</ul>
+</dd>
+<dt><strong>Selective enrichment (triggered)</strong></dt>
+<dd>
+<p>Full message bodies, full context payloads, and detailed planning traces captured on:</p>
+<ul>
+<li><p>anomaly thresholds.</p></li>
+<li><p>high-consequence actions.</p></li>
+<li><p>investigation holds.</p></li>
+</ul>
+</dd>
+</dl>
 <p>This yields three replay tiers:</p>
 <ul>
 <li><p>Macro replay: graph, budgets, and key decisions for fast triage.</p></li>
@@ -651,10 +669,29 @@ coordination graph metadata (A2A edges by type and time). - arbitration outcomes
 </ul>
 <h3 id="swarm-observability-soccssp-views">Swarm observability: SOC/CSSP views</h3>
 <p>For ensembles, the primary failure mode is a coordination cascade. ACP provides swarm-specific views:</p>
-<p><strong>Dashboards</strong> - coordination graph (A2A edges by type over time; fan-out heatmap). - arbitration events (conflicts, quorums, leader changes, deadlocks/timeouts). - budget burn-down (aggregate +
-per-role + anomaly overlays). - ensemble drift (distribution shifts across actions/plans). - work-unit DAG health (dependency blocks, repeated stalls). - containment posture (quarantined members, degraded mode active, policy lockdown status).</p>
-<p><strong>Alertable signals</strong> - fan-out spikes and retry storms.
-- message-type violations (out-of-scope coordination attempts). - budget exhaustion anomalies (loops, adversarial stimulus). - tool-call distribution shifts at ensemble level. - quarantine and kill-switch activations with evidence references.</p>
+<dl>
+<dt><strong>Dashboards</strong></dt>
+<dd>
+<ul>
+<li><p>coordination graph (A2A edges by type over time; fan-out heatmap).</p></li>
+<li><p>arbitration events (conflicts, quorums, leader changes, deadlocks/timeouts).</p></li>
+<li><p>budget burn-down (aggregate + per-role + anomaly overlays).</p></li>
+<li><p>ensemble drift (distribution shifts across actions/plans).</p></li>
+<li><p>work-unit DAG health (dependency blocks, repeated stalls).</p></li>
+<li><p>containment posture (quarantined members, degraded mode active, policy lockdown status).</p></li>
+</ul>
+</dd>
+<dt><strong>Alertable signals</strong></dt>
+<dd>
+<ul>
+<li><p>fan-out spikes and retry storms.</p></li>
+<li><p>message-type violations (out-of-scope coordination attempts).</p></li>
+<li><p>budget exhaustion anomalies (loops, adversarial stimulus).</p></li>
+<li><p>tool-call distribution shifts at ensemble level.</p></li>
+<li><p>quarantine and kill-switch activations with evidence references.</p></li>
+</ul>
+</dd>
+</dl>
 <h2 id="containment-and-revocation">Containment and revocation</h2>
 <p>Containment operates at multiple levels:</p>
 <ul>
