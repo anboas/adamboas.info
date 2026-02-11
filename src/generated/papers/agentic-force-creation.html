@@ -32,7 +32,7 @@ rather than an immediate revolution[7]. This reframes force creation as an engin
 <p>However, this shift amplifies trust challenges: Specs must embed ethical and security constraints to prevent misalignment, as warned in
 “Agentic AI in Military Applications”[10]. Without robust context engineering, agents risk “context rot,” leading to unreliable outputs in contested environments. The DoW must integrate this paradigm to fully realize force creation, ensuring trust scopes evolve from supervised assistance to verifiable autonomy.</p>
 <h2 id="baseline-contrast">Baseline Contrast: Force Multiplication vs. Force Creation</h2>
-<p>To neutralize the common objection (<em>“we already do this with copilots”</em>), this section makes the ceiling explicit.</p>
+<p>To neutralize a common objection (<em>“this is already done with copilots”</em>), this section makes the ceiling explicit.</p>
 <div class="center">
 <div class="table-wrap"><table><thead><tr><th>Dimension</th><th>Force Multiplication (Assistants)</th><th>Force Creation (Agents)</th></tr></thead><tbody><tr><td>Primary unit of output</td><td>Human-hours amplified</td><td>Agent-hours executed within trust scopes</td></tr><tr><td>Bottleneck</td><td>Human attention / approvals</td><td>Compute + authority + context freshness</td></tr><tr><td>Control surface</td><td>Prompting / UI workflows</td><td>Control plane: policy-as-code, tool mediation, audit, budgets</td></tr><tr><td>Failure shape</td><td>Wrong answer / bad suggestion</td><td>Wrong action at machine speed</td></tr><tr><td>Governance need</td><td>Review + training</td><td>Trust scopes + regression gates + kill switch + immutable logs</td></tr><tr><td>Tempo limit</td><td>Approval latency dominates</td><td>Execution density dominates (bounded by policy)</td></tr></tbody></table></div>
 </div>
@@ -48,49 +48,66 @@ rather than an immediate revolution[7]. This reframes force creation as an engin
 <p>A required Trust Scope Manifest per agent family (e.g., enterprise, intel, cyber, battle management) includes approval gates and escalation triggers. Below is a drop-in YAML structure, expanded with DoW-specific examples for clarity:</p>
 <p><span><strong>Trust Scope Manifest (YAML)</strong></span></p>
 <pre class="codeblock"><code><span class="code-line">trust_scope_manifest:</span>
-<span class="code-line">  agent_name: &quot;enterprise-agents.v1&quot;</span>
+<span class="code-line">  agent_name: enterprise-agents.v1</span>
+<span class="code-line"></span>
+<span class="code-line">  # Representative mission threads for this agent family</span>
 <span class="code-line">  mission_threads:</span>
-<span class="code-line">    - &quot;contracting.intake&quot;  # Low-consequence administrative task</span>
-<span class="code-line">    - &quot;helpdesk.triage&quot;     # Moderate-consequence support workflow</span>
+<span class="code-line">    - contracting.intake      # Low-consequence administrative task</span>
+<span class="code-line">    - helpdesk.triage         # Moderate-consequence support workflow</span>
+<span class="code-line"></span>
 <span class="code-line">  environment:</span>
-<span class="code-line">    classification: &quot;UNCLAS|CUI|SECRET|TS&quot;  # Restrict to CUI for initial pilots</span>
-<span class="code-line">    connectivity: &quot;online|intermittent|offline&quot;  # Fallback to offline mode in denied envs</span>
+<span class="code-line">    # This manifest pins an initial pilot deployment to CUI.</span>
+<span class="code-line">    # Other deployments in this family may raise this, but should do so via a new manifest revision.</span>
+<span class="code-line">    classification: CUI</span>
+<span class="code-line"></span>
+<span class="code-line">    # Expected operating condition; gateways must enforce degraded-mode behavior.</span>
+<span class="code-line">    connectivity: intermittent</span>
+<span class="code-line">    offline_fallback: true</span>
+<span class="code-line"></span>
+<span class="code-line">  consequence_level: moderate</span>
+<span class="code-line"></span>
 <span class="code-line">  authority:</span>
 <span class="code-line">    allowed_actions:</span>
-<span class="code-line">      - &quot;draft&quot;             # Generate reports or code</span>
-<span class="code-line">      - &quot;recommend&quot;         # Suggest optimizations</span>
-<span class="code-line">      - &quot;execute_within_budget&quot;  # Auto-approve low-value transactions</span>
+<span class="code-line">      - draft</span>
+<span class="code-line">      - recommend</span>
+<span class="code-line">      - execute_within_budget</span>
 <span class="code-line">    prohibited_actions:</span>
-<span class="code-line">      - &quot;modify_firewall_rules&quot;  # No direct network changes</span>
-<span class="code-line">      - &quot;release_data_cross_domain&quot;  # Prevent data exfiltration</span>
-<span class="code-line">  consequence_level: &quot;low|moderate|high|life_safety&quot;  # Default: moderate for enterprise</span>
+<span class="code-line">      - modify_firewall_rules</span>
+<span class="code-line">      - release_data_cross_domain</span>
+<span class="code-line"></span>
 <span class="code-line">  human_authority:</span>
 <span class="code-line">    approvals_required_for:</span>
-<span class="code-line">      - action: &quot;execute_within_budget&quot;</span>
-<span class="code-line">        threshold: &quot;$10K&quot;   # Escalate if over budget</span>
-<span class="code-line">      - action: &quot;policy_change&quot;</span>
-<span class="code-line">        threshold: &quot;always&quot; # Always require review for doctrine shifts</span>
+<span class="code-line">      - action: execute_within_budget</span>
+<span class="code-line">        if_amount_gt_usd: 10000</span>
+<span class="code-line">      - action: policy_change</span>
+<span class="code-line">        always: true</span>
+<span class="code-line"></span>
 <span class="code-line">    escalation_triggers:</span>
-<span class="code-line">      - &quot;confidence_below:0.85&quot;  # Low confidence in output</span>
-<span class="code-line">      - &quot;conflicting_sources_detected:true&quot;  # Data inconsistencies</span>
-<span class="code-line">      - &quot;prompt_injection_suspected:true&quot;  # Security threats</span>
+<span class="code-line">      - type: confidence_below</span>
+<span class="code-line">        threshold: 0.85</span>
+<span class="code-line">      - type: conflicting_sources_detected</span>
+<span class="code-line">        value: true</span>
+<span class="code-line">      - type: prompt_injection_suspected</span>
+<span class="code-line">        value: true</span>
+<span class="code-line"></span>
 <span class="code-line">  verification:</span>
 <span class="code-line">    acceptance_thresholds:</span>
-<span class="code-line">      task_success_rate: 0.97     # Minimum for deployment</span>
-<span class="code-line">      critical_error_rate: 0.001  # Tolerable failure in simulations</span>
-<span class="code-line">      audit_log_coverage: 1.0     # Full traceability</span>
+<span class="code-line">      task_success_rate: 0.97</span>
+<span class="code-line">      critical_error_rate: 0.001</span>
+<span class="code-line">      audit_log_coverage: 1.0</span>
 <span class="code-line">    required_artifacts:</span>
-<span class="code-line">      - &quot;model_card&quot;              # Model details</span>
-<span class="code-line">      - &quot;system_card&quot;             # System integration</span>
-<span class="code-line">      - &quot;data_card&quot;               # Data provenance</span>
-<span class="code-line">      - &quot;eval_report&quot;             # Performance evals</span>
+<span class="code-line">      - model_card</span>
+<span class="code-line">      - system_card</span>
+<span class="code-line">      - data_card</span>
+<span class="code-line">      - eval_report</span>
+<span class="code-line"></span>
 <span class="code-line">  controls:</span>
 <span class="code-line">    runtime_monitors:</span>
-<span class="code-line">      - &quot;tool_use_anomaly_detection&quot;  # Flag unusual actions</span>
-<span class="code-line">      - &quot;policy_as_code_enforcement&quot;  # Enforce ROE</span>
-<span class="code-line">    kill_switch: true               # Immediate halt capability</span>
-<span class="code-line">    immutable_audit_logging: true   # Tamper-proof records</span></code></pre>
-<p>This expanded framework can be integrated into DoWs ATO processes, with initial pilots in Category A agents to build confidence. It directly addresses the strategys call for “model objectivity” by requiring verifiable artifacts, while enabling rapid deployment through predefined thresholds. For auditability, manifests should be version-controlled (e.g., via Azure DevOps, as in my prior white paper
+<span class="code-line">      - tool_use_anomaly_detection</span>
+<span class="code-line">      - policy_as_code_enforcement</span>
+<span class="code-line">    kill_switch: true</span>
+<span class="code-line">    immutable_audit_logging: true</span></code></pre>
+<p>This expanded framework can be integrated into DoWs ATO processes, with initial pilots in Category A agents to build confidence. It directly addresses the strategys call for “model objectivity” by requiring verifiable artifacts, while enabling rapid deployment through predefined thresholds. For auditability, manifests should be version-controlled (e.g., via Azure DevOps, as in the prior white paper
 “From PDFs to Pull Requests”), with changes triggering re-approval workflows. This not only operationalizes trust but also scales with force creation, ensuring agents remain aligned in evolving battlespaces.</p>
 <div class="calloutquotebox">
 <p><strong>Trust is bounded authority plus verification.</strong></p>

@@ -133,7 +133,7 @@ realize force creation, ensuring trust scopes evolve from supervised
 assistance to verifiable autonomy.</p>
 <h1 id="baseline-contrast">Baseline Contrast: Force Multiplication vs.
 Force Creation</h1>
-<p>To neutralize the common objection (<em>“we already do this with
+<p>To neutralize a common objection (<em>“this is already done with
 copilots”</em>), this section makes the ceiling explicit.</p>
 <div class="center">
 <div class="tabular">
@@ -202,54 +202,71 @@ examples for clarity:</p>
 <p><span style="color: BrandGray"><strong>Trust Scope Manifest
 (YAML)</strong></span></p>
 <pre><code>trust_scope_manifest:
-  agent_name: &quot;enterprise-agents.v1&quot;
+  agent_name: enterprise-agents.v1
+
+  # Representative mission threads for this agent family
   mission_threads:
-    - &quot;contracting.intake&quot;  # Low-consequence administrative task
-    - &quot;helpdesk.triage&quot;     # Moderate-consequence support workflow
+    - contracting.intake      # Low-consequence administrative task
+    - helpdesk.triage         # Moderate-consequence support workflow
+
   environment:
-    classification: &quot;UNCLAS|CUI|SECRET|TS&quot;  # Restrict to CUI for initial pilots
-    connectivity: &quot;online|intermittent|offline&quot;  # Fallback to offline mode in denied envs
+    # This manifest pins an initial pilot deployment to CUI.
+    # Other deployments in this family may raise this, but should do so via a new manifest revision.
+    classification: CUI
+
+    # Expected operating condition; gateways must enforce degraded-mode behavior.
+    connectivity: intermittent
+    offline_fallback: true
+
+  consequence_level: moderate
+
   authority:
     allowed_actions:
-      - &quot;draft&quot;             # Generate reports or code
-      - &quot;recommend&quot;         # Suggest optimizations
-      - &quot;execute_within_budget&quot;  # Auto-approve low-value transactions
+      - draft
+      - recommend
+      - execute_within_budget
     prohibited_actions:
-      - &quot;modify_firewall_rules&quot;  # No direct network changes
-      - &quot;release_data_cross_domain&quot;  # Prevent data exfiltration
-  consequence_level: &quot;low|moderate|high|life_safety&quot;  # Default: moderate for enterprise
+      - modify_firewall_rules
+      - release_data_cross_domain
+
   human_authority:
     approvals_required_for:
-      - action: &quot;execute_within_budget&quot;
-        threshold: &quot;$10K&quot;   # Escalate if over budget
-      - action: &quot;policy_change&quot;
-        threshold: &quot;always&quot; # Always require review for doctrine shifts
+      - action: execute_within_budget
+        if_amount_gt_usd: 10000
+      - action: policy_change
+        always: true
+
     escalation_triggers:
-      - &quot;confidence_below:0.85&quot;  # Low confidence in output
-      - &quot;conflicting_sources_detected:true&quot;  # Data inconsistencies
-      - &quot;prompt_injection_suspected:true&quot;  # Security threats
+      - type: confidence_below
+        threshold: 0.85
+      - type: conflicting_sources_detected
+        value: true
+      - type: prompt_injection_suspected
+        value: true
+
   verification:
     acceptance_thresholds:
-      task_success_rate: 0.97     # Minimum for deployment
-      critical_error_rate: 0.001  # Tolerable failure in simulations
-      audit_log_coverage: 1.0     # Full traceability
+      task_success_rate: 0.97
+      critical_error_rate: 0.001
+      audit_log_coverage: 1.0
     required_artifacts:
-      - &quot;model_card&quot;              # Model details
-      - &quot;system_card&quot;             # System integration
-      - &quot;data_card&quot;               # Data provenance
-      - &quot;eval_report&quot;             # Performance evals
+      - model_card
+      - system_card
+      - data_card
+      - eval_report
+
   controls:
     runtime_monitors:
-      - &quot;tool_use_anomaly_detection&quot;  # Flag unusual actions
-      - &quot;policy_as_code_enforcement&quot;  # Enforce ROE
-    kill_switch: true               # Immediate halt capability
-    immutable_audit_logging: true   # Tamper-proof records</code></pre>
+      - tool_use_anomaly_detection
+      - policy_as_code_enforcement
+    kill_switch: true
+    immutable_audit_logging: true</code></pre>
 <p>This expanded framework can be integrated into DoWs ATO processes,
 with initial pilots in Category A agents to build confidence. It
 directly addresses the strategys call for “model objectivity” by
 requiring verifiable artifacts, while enabling rapid deployment through
 predefined thresholds. For auditability, manifests should be
-version-controlled (e.g., via Azure DevOps, as in my prior white paper
+version-controlled (e.g., via Azure DevOps, as in the prior white paper
 “From PDFs to Pull Requests”), with changes triggering re-approval
 workflows. This not only operationalizes trust but also scales with
 force creation, ensuring agents remain aligned in evolving
