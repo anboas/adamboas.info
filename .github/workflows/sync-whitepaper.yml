@@ -68,13 +68,43 @@ jobs:
           mkdir -p public/papers
           mkdir -p src/generated/papers
 
+          # Publish toggle: only sync papers that are marked status: published in src/content/papers/*.md.
+          # This lets us build everything in Whitepaper CI, but only publish a curated set to the site.
+          allowed_slugs=()
           shopt -s nullglob
+          for f in src/content/papers/*.md; do
+            slug=$(basename "$f" .md)
+            status=$(awk 'BEGIN{s=0} /^---\s*$/{s++; next} s==1{print} s>1{exit}' "$f" | awk -F: '$1 ~ /^status\s*$/ {gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2; exit}')
+            if [ "$status" = "published" ]; then
+              allowed_slugs+=("$slug")
+            fi
+          done
+
+          is_allowed() {
+            local x="$1"
+            for s in "${allowed_slugs[@]}"; do
+              if [ "$s" = "$x" ]; then return 0; fi
+            done
+            return 1
+          }
+
+          echo "Allowed (published) paper slugs: ${allowed_slugs[*]:-<none>}"
+
+          # Start clean so unpublishing propagates.
+          rm -f public/papers/*.pdf
+          rm -f src/generated/papers/*.html src/generated/papers/*.raw.html src/generated/papers/*.manifest.json
 
           # Each downloaded artifact becomes a directory named after artifact name
           for d in /tmp/wp/paper-*; do
             [ -d "$d" ] || continue
             slug=${d##*/paper-}
-            echo "Syncing $slug"
+
+            if ! is_allowed "$slug"; then
+              echo "Skipping (not published): $slug"
+              continue
+            fi
+
+            echo "Syncing (published): $slug"
 
             pdf=$(ls -1 "$d"/*.pdf 2>/dev/null | head -n 1 || true)
             manifest=$(ls -1 "$d"/manifest.json 2>/dev/null | head -n 1 || true)
@@ -133,9 +163,30 @@ jobs:
           # Clear any existing diagrams so deletions in Whitepaper propagate.
           find public/papers -mindepth 2 -maxdepth 2 -type d -name diagrams -print0 2>/dev/null | xargs -0 -r rm -rf
 
+          # Publish toggle for diagrams: only publish diagrams for papers that are status: published on the site.
+          allowed_slugs=()
           shopt -s nullglob
+          for f in src/content/papers/*.md; do
+            slug=$(basename "$f" .md)
+            status=$(awk 'BEGIN{s=0} /^---\s*$/{s++; next} s==1{print} s>1{exit}' "$f" | awk -F: '$1 ~ /^status\s*$/ {gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2; exit}')
+            if [ "$status" = "published" ]; then
+              allowed_slugs+=("$slug")
+            fi
+          done
+
+          is_allowed() {
+            local x="$1"
+            for s in "${allowed_slugs[@]}"; do
+              if [ "$s" = "$x" ]; then return 0; fi
+            done
+            return 1
+          }
+
           for d in /tmp/wp-repo/papers/*; do
             slug=$(basename "$d")
+            if ! is_allowed "$slug"; then
+              continue
+            fi
             if [ -d "$d/diagrams" ]; then
               mkdir -p "public/papers/${slug}/diagrams"
               cp -f "$d/diagrams"/* "public/papers/${slug}/diagrams/" || true

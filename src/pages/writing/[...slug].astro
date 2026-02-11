@@ -55,7 +55,7 @@ async function pdfMeta(pdfPath: string) {
 
 export async function getStaticPaths() {
 	const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
-	const papers = await getCollection('papers');
+	const papers = (await getCollection('papers')).filter((p) => p.data.status === 'published');
 
 	return [
 		...writing.map((w) => ({ params: { slug: w.id.split('/').pop() }, props: { kind: 'writing', id: w.id } })),
