@@ -77,13 +77,9 @@ a {
 }
 
 .card {
-  /* sharp corners, terminal panel (opaque, with internal grid for readability) */
+  /* sharp corners, terminal panel (opaque for readability; no grid bleed-through) */
   @apply rounded-none border border-slate-800;
-  background-color: rgba(2, 6, 23, 0.92);
-  background-image:
-    linear-gradient(to right, rgba(148, 163, 184, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-color: rgba(2, 6, 23, 0.94);
   box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.85) inset;
 }
 
@@ -218,13 +214,9 @@ article[data-paper-style="dossier"] .paper-content tr:nth-child(even) td {
 
 /* Code blocks: make them feel like a terminal pane */
 article[data-paper-style="dossier"] .paper-content pre {
-  /* tighter vertical rhythm for long technical blocks (more opaque for readability) */
+  /* tighter vertical rhythm for long technical blocks (opaque; no grid) */
   @apply my-4 overflow-x-auto rounded-none border border-slate-800 p-3;
-  background-color: rgba(2, 6, 23, 0.90);
-  background-image:
-    linear-gradient(to right, rgba(148, 163, 184, 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-color: rgba(2, 6, 23, 0.92);
 }
 
 /* Code tools (copy / wrap) */
