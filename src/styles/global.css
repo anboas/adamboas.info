@@ -289,6 +289,10 @@ article[data-paper-style="dossier"] .paper-content pre code {
   line-height: 1.1;
   margin: 0;
 }
+/* Empty lines would otherwise have zero height, collapsing line numbers. */
+.paper-content pre.codeblock code .code-line:empty::after {
+  content: "\00a0";
+}
 .paper-content pre.codeblock code .code-line::before {
   counter-increment: codeline;
   content: counter(codeline);
