@@ -275,14 +275,18 @@ article[data-paper-style="dossier"] .paper-content pre code {
 }
 .paper-content pre.codeblock code {
   display: block;
-  line-height: 1.15;
+  /* Collapse inter-line whitespace nodes introduced by HTML formatting.
+     Each line is wrapped in .code-line (white-space: pre), so we can safely
+     collapse whitespace at the code container level to avoid double-spaced lines. */
+  white-space: normal;
+  line-height: 1.1;
 }
 .paper-content pre.codeblock code .code-line {
   display: block;
   padding-left: 3.25rem;
   position: relative;
   white-space: pre;
-  line-height: 1.15;
+  line-height: 1.1;
   margin: 0;
 }
 .paper-content pre.codeblock code .code-line::before {
