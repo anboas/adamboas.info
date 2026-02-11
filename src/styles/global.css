@@ -77,9 +77,14 @@ a {
 }
 
 .card {
-  /* sharp corners, terminal panel */
-  @apply rounded-none border border-slate-800 bg-slate-900/40 backdrop-blur;
-  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.8) inset;
+  /* sharp corners, terminal panel (opaque, with internal grid for readability) */
+  @apply rounded-none border border-slate-800;
+  background-color: rgba(2, 6, 23, 0.92);
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.85) inset;
 }
 
 .section-title {
@@ -96,8 +101,9 @@ a {
 
 /* Paper pages should be readable; keep the site terminal vibe elsewhere. */
 .paper-content {
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  line-height: 1.7;
+  font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  line-height: 1.75;
+  font-size: 1.04rem;
 }
 
 /* Center images/figures in generated paper HTML */
@@ -123,8 +129,18 @@ a {
 
 /* Dossier vibe: terminal-ish chrome, tighter rhythm */
 article[data-paper-style="dossier"] .paper-content {
+  /* Dossier chrome, but readable body text */
+  font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+
+article[data-paper-style="dossier"] .paper-content :is(code, pre, kbd, samp) {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  line-height: 1.6;
+}
+
+article[data-paper-style="dossier"] .paper-content h2 {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 article[data-paper-style="dossier"] .paper-content p {
@@ -202,8 +218,13 @@ article[data-paper-style="dossier"] .paper-content tr:nth-child(even) td {
 
 /* Code blocks: make them feel like a terminal pane */
 article[data-paper-style="dossier"] .paper-content pre {
-  /* tighter vertical rhythm for long technical blocks */
-  @apply my-4 overflow-x-auto rounded-none border border-slate-800 bg-black/40 p-3;
+  /* tighter vertical rhythm for long technical blocks (more opaque for readability) */
+  @apply my-4 overflow-x-auto rounded-none border border-slate-800 p-3;
+  background-color: rgba(2, 6, 23, 0.90);
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
 }
 
 /* Code tools (copy / wrap) */
@@ -310,6 +331,22 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
   @apply mt-10 text-xl font-semibold text-slate-50;
   letter-spacing: 0.01em;
 }
+
+.paper-content h3 {
+  @apply mt-8 text-lg font-semibold text-slate-50;
+  letter-spacing: 0.01em;
+}
+
+.paper-content h4 {
+  @apply mt-6 text-base font-semibold text-slate-100;
+}
+
+/* Make nested lists visibly nested (mobile especially) */
+.paper-content ul ul { list-style-type: circle; }
+.paper-content ul ul ul { list-style-type: square; }
+.paper-content ol ol { list-style-type: lower-alpha; }
+.paper-content ol ol ol { list-style-type: lower-roman; }
+.paper-content :is(ul,ol) :is(ul,ol) { margin-top: 0.4rem; }
 
 .paper-content p {
   @apply text-slate-200/90;
