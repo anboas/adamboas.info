@@ -187,6 +187,37 @@ def main() -> int:
         flags=re.IGNORECASE,
     )
 
+    # Convert Pandoc's LaTeX-derived code blocks (Shaded/Highlighting)
+    # into real <pre><code> blocks.
+    #
+    # Without this, Pandoc (latex->html) can emit:
+    #   <div class="snugshade"><div class="Highlighting"><p>...</p>...</div></div>
+    # which collapses whitespace and becomes unreadable.
+    try:
+        import html as _html
+
+        def _snugshade_highlighting_to_pre(m: re.Match) -> str:
+            inner = m.group(1)
+            # Convert paragraphs to lines.
+            inner = re.sub(r"</p>\s*<p>", "\n", inner, flags=re.IGNORECASE)
+            inner = re.sub(r"</?p[^>]*>", "", inner, flags=re.IGNORECASE)
+            inner = re.sub(r"<br\s*/?>", "\n", inner, flags=re.IGNORECASE)
+            # Keep span contents (e.g., <span>-</span>), drop the tags.
+            inner = re.sub(r"</?span[^>]*>", "", inner, flags=re.IGNORECASE)
+            # Strip any remaining tags.
+            inner = re.sub(r"<[^>]+>", "", inner)
+            text = _html.unescape(inner).strip()
+            return f"<pre><code>{_html.escape(text)}</code></pre>"
+
+        body = re.sub(
+            r"<div\s+class=\"snugshade\"[^>]*>\s*<div\s+class=\"Highlighting\"[^>]*>\s*([\s\S]*?)\s*</div>\s*</div>",
+            _snugshade_highlighting_to_pre,
+            body,
+            flags=re.IGNORECASE,
+        )
+    except Exception:
+        pass
+
     # Add line numbers to code blocks for readability (HTML only).
     # We wrap each line in a span so CSS can counter-increment.
     def _add_code_line_numbers(m: re.Match) -> str:
@@ -196,7 +227,6 @@ def main() -> int:
             return m.group(0)
         # Normalize line breaks.
         lines = code.splitlines()
-        # Preserve trailing blank line if present.
         wrapped = "\n".join(f'<span class="code-line">{ln}</span>' for ln in lines)
         return f"<pre class=\"codeblock\"><code>{wrapped}</code></pre>"
 

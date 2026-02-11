@@ -998,41 +998,33 @@ inter-agent gateway + arbitration + swarm budgets + swarm dashboards).</p></li>
 <hr />
 </div>
 <h2 id="appendix-example-ensemble-contract-illustrative">Appendix: Example ensemble contract (illustrative)</h2>
-<div class="snugshade">
-<div class="Highlighting">
-<p>apiVersion: acp.dod/v1 kind: Ensemble metadata: name: ops<span>-</span>planning<span>-</span>ensemble<span>-</span>alpha spec: consequenceTier: T2 orchestratorRef:
-"npe:agent/orchestrator<span>-</span>77c9" members:</p>
-<p><span>-</span> ref:
-"npe:agent/geo<span>-</span>analyst<span>-</span>112a" role: analysis
-<span>-</span> ref: "npe:agent/logistics<span>-</span>55bd" role: planning <span>-</span> ref:
-"npe:agent/policy<span>-</span>checker<span>-</span>9ef1" role: safety coordination: pattern: hierarchical arbitration: conflictPolicy: orchestrator<span>-</span>final quorumRules:</p>
-<p><span>-</span> actionType: irreversible quorum:
-"2<span>-</span>of<span>-</span>3" timeouts: taskTTLSeconds: 900 messageTTLSeconds: 120 budgets: aggregate: gpuSeconds: 7200 toolCallsPerHour: 300 egressMBPerHour: 50 perRole: analysis: toolCallsPerHour: 80 safety: toolCallsPerHour: 30 interAgentPolicy: requireSignedMessages: true allowedMessageTypes:</p>
-<p><span>-</span> task.assign <span>-</span> task.result <span>-</span>
-artifact.share rateLimits: maxMessagesPerMinutePerMember: 120 fanOutCaps: maxRecipientsPerMessage: 8 safety: quarantineOn:</p>
-<p><span>-</span> signal: drift.high <span>-</span> signal: iag.cascade degradedModesAllowed:</p>
-<p><span>-</span> intermittent <span>-</span>
-denied<span>-</span>model</p>
-</div>
-</div>
+<pre class="codeblock"><code><span class="code-line">apiVersion: acp.dod/v1 kind: Ensemble metadata: name: ops-planning-ensemble-alpha spec: consequenceTier: T2 orchestratorRef:</span>
+<span class="code-line">&quot;npe:agent/orchestrator-77c9&quot; members:</span>
+<span class="code-line">- ref:</span>
+<span class="code-line">&quot;npe:agent/geo-analyst-112a&quot; role: analysis</span>
+<span class="code-line">- ref: &quot;npe:agent/logistics-55bd&quot; role: planning - ref:</span>
+<span class="code-line">&quot;npe:agent/policy-checker-9ef1&quot; role: safety coordination: pattern: hierarchical arbitration: conflictPolicy: orchestrator-final quorumRules:</span>
+<span class="code-line">- actionType: irreversible quorum:</span>
+<span class="code-line">&quot;2-of-3&quot; timeouts: taskTTLSeconds: 900 messageTTLSeconds: 120 budgets: aggregate: gpuSeconds: 7200 toolCallsPerHour: 300 egressMBPerHour: 50 perRole: analysis: toolCallsPerHour: 80 safety: toolCallsPerHour: 30 interAgentPolicy: requireSignedMessages: true allowedMessageTypes:</span>
+<span class="code-line">- task.assign - task.result -</span>
+<span class="code-line">artifact.share rateLimits: maxMessagesPerMinutePerMember: 120 fanOutCaps: maxRecipientsPerMessage: 8 safety: quarantineOn:</span>
+<span class="code-line">- signal: drift.high - signal: iag.cascade degradedModesAllowed:</span>
+<span class="code-line">- intermittent -</span>
+<span class="code-line">denied-model</span></code></pre>
 <div class="center">
 <hr />
 </div>
 <h2 id="appendix-example-work-unit-template-illustrative">Appendix: Example work unit template (illustrative)</h2>
-<div class="snugshade">
-<div class="Highlighting">
-<p>apiVersion: acp.dod/v1 kind: WorkUnit metadata: name:
-"wu<span>-</span>opsplan<span>-</span>2026<span>-</span>02<span>-</span>10<span>-</span>0007"
-spec: trustScopeRef:
-"trustscope://ops<span>-</span>planning/T2@sha256:..." policyBundleRef:
-"policy://bundle/2026<span>-</span>02@sha256:..." budgets: gpuSeconds: 900 toolCalls: 50 egressMB: 10 wallClockSeconds: 1800 dependencies: requires:</p>
-<p><span>-</span>
-"wu<span>-</span>opsplan<span>-</span>2026<span>-</span>02<span>-</span>10<span>-</span>0002"
-checkpoints: frequencySeconds: 180 artifacts:</p>
-<p><span>-</span> type: "plan" <span>-</span> type: "diff"
-<span>-</span> type: "evidence<span>-</span>summary" escalation: onBlockedSeconds: 300 onNovelToolUse: true</p>
-</div>
-</div>
+<pre class="codeblock"><code><span class="code-line">apiVersion: acp.dod/v1 kind: WorkUnit metadata: name:</span>
+<span class="code-line">&quot;wu-opsplan-2026-02-10-0007&quot;</span>
+<span class="code-line">spec: trustScopeRef:</span>
+<span class="code-line">&quot;trustscope://ops-planning/T2@sha256:...&quot; policyBundleRef:</span>
+<span class="code-line">&quot;policy://bundle/2026-02@sha256:...&quot; budgets: gpuSeconds: 900 toolCalls: 50 egressMB: 10 wallClockSeconds: 1800 dependencies: requires:</span>
+<span class="code-line">-</span>
+<span class="code-line">&quot;wu-opsplan-2026-02-10-0002&quot;</span>
+<span class="code-line">checkpoints: frequencySeconds: 180 artifacts:</span>
+<span class="code-line">- type: &quot;plan&quot; - type: &quot;diff&quot;</span>
+<span class="code-line">- type: &quot;evidence-summary&quot; escalation: onBlockedSeconds: 300 onNovelToolUse: true</span></code></pre>
 <div class="center">
 <hr />
 </div>
