@@ -127,6 +127,21 @@ jobs:
             exit 0
           fi
 
+          # Sync paper diagrams (rendered outputs are committed in Whitepaper under papers/<slug>/diagrams).
+          # Publish them at: public/papers/<slug>/diagrams/* so generated HTML img src="/papers/<slug>/diagrams/..." resolves.
+          mkdir -p public/papers
+          # Clear any existing diagrams so deletions in Whitepaper propagate.
+          find public/papers -mindepth 2 -maxdepth 2 -type d -name diagrams -print0 2>/dev/null | xargs -0 -r rm -rf
+
+          shopt -s nullglob
+          for d in /tmp/wp-repo/papers/*; do
+            slug=$(basename "$d")
+            if [ -d "$d/diagrams" ]; then
+              mkdir -p "public/papers/${slug}/diagrams"
+              cp -f "$d/diagrams"/* "public/papers/${slug}/diagrams/" || true
+            fi
+          done
+
           # Start clean so deletions in Whitepaper propagate.
           rm -rf src/content/writing
           mkdir -p src/content/writing/notes src/content/writing/memos
