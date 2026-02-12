@@ -71,6 +71,10 @@ let description: string | undefined;
 let pageImage = '/og/default.png';
 let contactHref = 'mailto:anboas@gmail.com?subject=Discussing%20your%20writing';
 
+const absoluteUrl = (pathname: string) => new URL(withBase(pathname), Astro.site).toString();
+let currentSlugForSchema = '';
+let currentTitleForSchema = '';
+
 let paper: any = null;
 let paperGeneratedHtml: string | null = null;
 let pdfInfo: { size: string | null; pages: number | null } | null = null;
@@ -125,6 +129,8 @@ if (kind === 'paper') {
 	description = paper.data.description;
 	pageImage = `/og/writing/${paper.id}.png`;
 	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`Paper discussion: ${paper.data.title}`)}`;
+	currentSlugForSchema = paper.id;
+	currentTitleForSchema = paper.data.title;
 	if (paper.data.pdfPath) pdfInfo = await pdfMeta(paper.data.pdfPath);
 } else {
 	const writingItems = await getCollection('writing');
@@ -135,8 +141,14 @@ if (kind === 'paper') {
 	description = writingItem.data.summary;
 	pageImage = `/og/writing/${writingItem.id.split('/').pop()}.png`;
 	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`${writingItem.data.type.toUpperCase()} discussion: ${writingItem.data.title}`)}`;
+	currentSlugForSchema = writingItem.id.split('/').pop() ?? '';
+	currentTitleForSchema = writingItem.data.title;
 	if (writingItem.data.pdfPath) writingPdfInfo = await pdfMeta(writingItem.data.pdfPath);
 }
+
+const currentUrl = absoluteUrl(`/writing/${currentSlugForSchema}/`);
+const homeUrl = absoluteUrl('/');
+const writingUrl = absoluteUrl('/writing/');
 ---
 
 <SiteLayout title={title} description={description} image={pageImage}>
@@ -148,6 +160,8 @@ if (kind === 'paper') {
 				'@context': 'https://schema.org',
 				'@type': writingItem.data.type === 'memo' ? 'Article' : 'BlogPosting',
 				headline: writingItem.data.title,
+				url: currentUrl,
+				mainEntityOfPage: { '@type': 'WebPage', '@id': currentUrl },
 				datePublished: writingItem.data.date.toISOString(),
 				author: { '@type': 'Person', name: 'Adam Boas' },
 				keywords: writingItem.data.tags ?? [],
@@ -162,12 +176,26 @@ if (kind === 'paper') {
 				'@context': 'https://schema.org',
 				'@type': 'Report',
 				headline: paper.data.title,
+				url: currentUrl,
+				mainEntityOfPage: { '@type': 'WebPage', '@id': currentUrl },
 				datePublished: paper.data.date ? paper.data.date.toISOString() : undefined,
 				author: { '@type': 'Person', name: 'Adam Boas' },
 				description: paper.data.description ?? undefined,
 			})}
 		/>
 	) : null}
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{ '@type': 'ListItem', position: 1, name: 'Home', item: homeUrl },
+				{ '@type': 'ListItem', position: 2, name: 'Writing', item: writingUrl },
+				{ '@type': 'ListItem', position: 3, name: currentTitleForSchema, item: currentUrl },
+			],
+		})}
+	/>
 	{kind === 'paper' ? (
 		<>
 			<div class="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">

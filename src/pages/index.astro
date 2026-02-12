@@ -3,6 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import { getCollection } from 'astro:content';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { education, experience } from '../data/resume';
+import { withBase } from '../utils/withBase';
 
 const roles = experience;
 const certs = education;
@@ -43,6 +44,9 @@ const featuredFromOrder = featuredOrder
 	.filter(Boolean);
 const featuredFill = homepageWriting.filter((w) => !featuredOrder.includes(String(w.slug))).slice(0, Math.max(0, 3 - featuredFromOrder.length));
 const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
+
+const siteUrl = new URL(withBase('/'), Astro.site).toString();
+const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}'), Astro.site).toString();
 ---
 
 <SiteLayout title={SITE_TITLE} description={SITE_DESCRIPTION} image="/og/home.png">
@@ -56,6 +60,20 @@ const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
 			sameAs: ['https://github.com/anboas'],
 			jobTitle: 'Solutions Architect',
 			description: SITE_DESCRIPTION,
+		})}
+	/>
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'WebSite',
+			name: SITE_TITLE,
+			url: siteUrl,
+			potentialAction: {
+				'@type': 'SearchAction',
+				target: writingSearchTarget,
+				'query-input': 'required name=search_term_string',
+			},
 		})}
 	/>
 	<a id="page-top" class="block" aria-hidden="true"></a>
