@@ -415,6 +415,17 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
   color: rgba(var(--writing-accent-2-rgb), 0.90);
 }
 
+/* Restore list bullets/numbers inside writing content (Tailwind preflight removes them). */
+.paper-content ul {
+  @apply my-4 list-disc pl-6;
+}
+.paper-content ol {
+  @apply my-4 list-decimal pl-6;
+}
+.paper-content li::marker {
+  color: rgba(226, 232, 240, 0.78);
+}
+
 /* Make nested lists visibly nested (mobile especially) */
 .paper-content ul ul { list-style-type: circle; }
 .paper-content ul ul ul { list-style-type: square; }
