@@ -25,6 +25,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y unzip
 
+      - name: Fetch Plausible pageview counts (optional)
+        env:
+          PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
+          PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
+          PLAUSIBLE_DATE_RANGE: 30d
+        run: node scripts/fetch-plausible-pageviews.mjs
+
       - name: Fetch latest successful Whitepaper build run id
         env:
           # NOTE: Cross-repo API access requires a PAT if Whitepaper is private.
@@ -224,7 +231,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Include new (untracked) files too.
-          git add -A public/papers src/generated/papers src/content/writing
+          git add -A public/papers src/generated/papers src/content/writing src/generated/plausible-pageviews.json
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit."
