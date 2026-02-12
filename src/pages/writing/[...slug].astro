@@ -245,7 +245,7 @@ if (kind === 'paper') {
 			})()}
 		</article>
 	) : (
-		<article class="card p-8" data-writing-type={writingItem.data.type === 'memo' ? 'paper' : writingItem.data.type} data-paper-style={writingItem.data.type === 'memo' ? 'dossier' : undefined}>
+		<article class="card p-8" data-writing-type="paper" data-paper-style="dossier">
 			<header>
 				<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
 					<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
@@ -275,39 +275,16 @@ if (kind === 'paper') {
 						<a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
 					</div>
 				</div>
-				{writingItem.data.type === 'memo' ? (
-					<div class="mt-4 min-w-0">
-						<h1 class="text-2xl font-semibold text-slate-50">{writingItem.data.title}</h1>
-						{writingItem.data.summary && <p class="mt-2 text-slate-300">{writingItem.data.summary}</p>}
-						{writingItem.data.date && (
-							<div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-400">
-								<span>{writingItem.data.date.toISOString().slice(0, 10)}</span>
-								<PageViewsChip pathname={withBase(`/writing/${writingItem.id.split('/').pop()}/`)} />
-							</div>
-						)}
-					</div>
-				) : (
-					<>
-						<div class="mt-4 flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-							<h1 class="text-2xl font-semibold text-slate-50">{writingItem.data.title}</h1>
-							<div class="flex flex-wrap items-center gap-2 text-sm text-slate-400">
-								<span>{writingItem.data.date.toISOString().slice(0, 10)}</span>
-								<PageViewsChip pathname={withBase(`/writing/${writingItem.id.split('/').pop()}/`)} />
-							</div>
+				<div class="mt-4 min-w-0">
+					<h1 class="text-2xl font-semibold text-slate-50">{writingItem.data.title}</h1>
+					{writingItem.data.summary && <p class="mt-2 text-slate-300">{writingItem.data.summary}</p>}
+					{writingItem.data.date && (
+						<div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-400">
+							<span>{writingItem.data.date.toISOString().slice(0, 10)}</span>
+							<PageViewsChip pathname={withBase(`/writing/${writingItem.id.split('/').pop()}/`)} />
 						</div>
-						<div class="mt-2 flex flex-wrap gap-2 text-xs text-slate-400">
-							<span class="rounded-full border border-slate-700 bg-slate-900/60 px-2 py-1 uppercase tracking-wide text-slate-200">
-								{writingItem.data.type}
-							</span>
-							{writingItem.data.tags?.length
-								? writingItem.data.tags.map((t: string) => (
-									<span class="rounded-full border border-slate-800 px-2 py-1">{t}</span>
-								))
-								: null}
-						</div>
-						{writingItem.data.summary && <p class="mt-4 text-slate-300">{writingItem.data.summary}</p>}
-					</>
-				)}
+					)}
+				</div>
 			</header>
 
 			<div class="paper-content prose prose-invert mt-8 max-w-none">
