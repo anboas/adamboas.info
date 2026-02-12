@@ -468,6 +468,9 @@ a[data-writing-card].card::before {
   background: rgba(0, 196, 196, 0.55);
 }
 
+/* Make paper accent slightly bolder */
+a[data-writing-card][data-type="paper"]::before { width: 4px; }
+
 /* Default hover accent */
 a[data-writing-card].card:hover::before {
   opacity: 1;
@@ -479,17 +482,21 @@ a[data-writing-card][data-type="memo"]::before { background: rgba(59, 130, 246, 
 a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0.65); }
 
 /* Hover border/glow matches type color */
+[data-writing-index] a[data-writing-card].card {
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
 [data-writing-index] a[data-writing-card][data-type="paper"]:hover {
-  border-color: rgba(212, 165, 116, 0.28);
-  box-shadow: 0 0 0 1px rgba(212, 165, 116, 0.12) inset;
+  border-color: rgba(212, 165, 116, 0.42) !important;
+  box-shadow: 0 0 0 1px rgba(212, 165, 116, 0.18) inset;
 }
 [data-writing-index] a[data-writing-card][data-type="note"]:hover {
-  border-color: rgba(0, 196, 196, 0.24);
-  box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.10) inset;
+  border-color: rgba(0, 196, 196, 0.36) !important;
+  box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.14) inset;
 }
 [data-writing-index] a[data-writing-card][data-type="memo"]:hover {
-  border-color: rgba(59, 130, 246, 0.26);
-  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.10) inset;
+  border-color: rgba(59, 130, 246, 0.34) !important;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.14) inset;
 }
 
 /* Writing index inputs/selects: teal focus */
