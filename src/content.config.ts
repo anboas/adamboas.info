@@ -25,6 +25,7 @@ const writing = defineCollection({
 				summary: z.string().optional(),
 				status: z.enum(['draft', 'published']).default('published'),
 				type: z.enum(['note', 'memo']),
+				pdfPath: z.string().optional(), // e.g. /memos/example.pdf
 				tags: z.array(z.string()).default([]),
 			})
 			.superRefine((data, ctx) => {

@@ -204,6 +204,10 @@ jobs:
           rm -rf src/content/writing
           mkdir -p src/content/writing/notes src/content/writing/memos
 
+          # Memo PDFs are published under /memos/*.pdf and referenced by writing frontmatter pdfPath.
+          rm -rf public/memos
+          mkdir -p public/memos
+
           # Copy all notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
           shopt -s globstar nullglob
           for f in /tmp/wp-repo/writing/notes/**/*.md; do
@@ -222,6 +226,12 @@ jobs:
             cp "$f" "src/content/writing/memos/${base}"
           done
 
+          # Copy memo PDFs alongside memos (ignore README files).
+          for f in /tmp/wp-repo/writing/memos/**/*.pdf; do
+            base=$(basename "$f")
+            cp "$f" "public/memos/${base}"
+          done
+
       - name: Commit changes
         id: commit
         run: |
@@ -231,7 +241,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Include new (untracked) files too.
-          git add -A public/papers src/generated/papers src/content/writing src/generated/plausible-pageviews.json
+          git add -A public/papers public/memos src/generated/papers src/content/writing src/generated/plausible-pageviews.json
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit."

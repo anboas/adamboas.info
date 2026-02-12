@@ -273,6 +273,18 @@ if (kind === 'paper') {
 				{writingItem.data.summary && <p class="mt-4 text-slate-300">{writingItem.data.summary}</p>}
 			</header>
 			<div class="mt-4 flex flex-wrap items-center gap-2">
+				{writingItem.data.pdfPath ? (
+					<a
+						class="group rounded-none border border-slate-700 bg-slate-950/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+						href={withBase(writingItem.data.pdfPath)}
+						target="_blank"
+						rel="noreferrer"
+						data-track="Writing: Open PDF"
+						data-track-props={JSON.stringify({ slug: writingItem.id.split('/').pop(), kind: writingItem.data.type })}
+					>
+						PDF
+					</a>
+				) : null}
 				<a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-900/40 px-3 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
 				<a class="rounded-none border border-slate-700 px-3 py-1.5 text-xs font-semibold text-slate-100 hover:bg-slate-900" href={withBase('/writing/')}>Browse all writing</a>
 			</div>
