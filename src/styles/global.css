@@ -91,6 +91,15 @@ a {
 
 .section-title {
   @apply text-xl font-semibold tracking-tight text-slate-50;
+  border-left: 3px solid rgba(0, 166, 166, 0.55);
+  padding-left: 0.75rem;
+}
+
+/* StickyBrowse active tab accent */
+.sticky-tab-active {
+  border-color: rgba(0, 196, 196, 0.55) !important;
+  background: rgba(0, 166, 166, 0.10) !important;
+  box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.18) inset;
 }
 
 .muted {
@@ -400,7 +409,7 @@ button[data-writing-tag]:hover {
   color: rgba(226, 232, 240, 0.95);
 }
 
-/* Writing cards: add a subtle accent edge on hover */
+/* Writing cards: subtle accent edge + hover glow */
 a[data-writing-card].card {
   position: relative;
 }
@@ -411,12 +420,27 @@ a[data-writing-card].card::before {
   top: 0;
   right: 0;
   height: 2px;
-  background: rgba(0, 166, 166, 0.35);
-  opacity: 0;
-  transition: opacity 180ms ease;
+  background: rgba(0, 166, 166, 0.32);
+  opacity: 0.55;
+  transition: opacity 180ms ease, background 180ms ease;
 }
 a[data-writing-card].card:hover::before {
   opacity: 1;
+  background: rgba(0, 196, 196, 0.55);
+}
+[data-writing-index] a[data-writing-card].card:hover {
+  border-color: rgba(0, 196, 196, 0.20);
+  box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.10) inset;
+}
+
+/* Writing index inputs/selects: teal focus */
+[data-writing-index] :is(select, input, button):focus-visible {
+  outline: 2px solid rgba(0, 196, 196, 0.35);
+  outline-offset: 2px;
+}
+[data-writing-index] :is(select, input):focus {
+  border-color: rgba(0, 196, 196, 0.45);
+  box-shadow: 0 0 0 2px rgba(0, 166, 166, 0.14);
 }
 
 .paper-content table {
