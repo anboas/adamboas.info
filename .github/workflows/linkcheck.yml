@@ -47,6 +47,7 @@ jobs:
             --max-retries 2
             --index-files index.html
             --exclude "^https://adamboas\.info"
+            --exclude "^https://(www\.)?adamboas\.com"
             --exclude "^https://www\.linkedin\.com/posts/"
             --exclude "^https://www\.newyorker\.com/tech/annals-of-technology/why-a-i-didnt-transform-our-lives-in-2025"
             --exclude "^https://(dodcio\.defense\.gov|media\.defense\.gov|www\.esd\.whs\.mil)/"
