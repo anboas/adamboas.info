@@ -39,9 +39,9 @@ jobs:
       - name: Lint content frontmatter
         run: npm run lint:content
 
-      - name: Build (GitHub Pages base path)
+      - name: Build (custom domain root)
         env:
-          ASTRO_BASE: /adamboas.info
+          ASTRO_BASE: /
         run: npm run build
 
       - name: Upload Pages artifact

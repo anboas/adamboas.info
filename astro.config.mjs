@@ -9,7 +9,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   // Used for sitemap + RSS canonical URLs
-  site: 'https://adamboas.info',
+  site: 'https://adamboas.com',
 
   // For GitHub Pages project deployments (served from /<repo>/)
   // In workflows we set ASTRO_BASE to '/adamboas.info'
