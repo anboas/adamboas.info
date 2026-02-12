@@ -3,6 +3,12 @@
 /* Futuristic techie base (dark by default) */
 :root {
   color-scheme: dark;
+
+  /* Accent palette (inspired by Jeremy Benton tracker vibe)
+     Teal = interactive/brand, Gold = importance/signal. */
+  --accent-teal: #00a6a6;
+  --accent-teal-2: #00c4c4;
+  --accent-gold: #d4a574;
 }
 
 html, body {
@@ -42,7 +48,7 @@ a {
 
 /* Accessible focus rings */
 :where(a, button, input, select, textarea):focus-visible {
-  outline: 2px solid rgba(226, 232, 240, 0.85);
+  outline: 2px solid rgba(0, 196, 196, 0.75);
   outline-offset: 2px;
 }
 
@@ -148,6 +154,8 @@ article[data-paper-style="dossier"] .paper-content h2 {
   @apply mt-10 text-lg font-semibold text-slate-50;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  border-left: 3px solid rgba(0, 166, 166, 0.65);
+  padding-left: 0.75rem;
 }
 
 article[data-paper-style="dossier"] .paper-content hr {
@@ -327,19 +335,27 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
   scroll-margin-top: 96px;
 }
 
-/* Make pandoc section headings feel like a paper, not a blog. */
+/* Make pandoc section headings feel like a paper, not a blog.
+   Also make H2/H3/H4 clearly distinct. */
 .paper-content h2 {
-  @apply mt-10 text-xl font-semibold text-slate-50;
+  @apply mt-10 text-2xl font-semibold text-slate-50;
   letter-spacing: 0.01em;
+  border-left: 3px solid rgba(0, 166, 166, 0.9);
+  padding-left: 0.75rem;
 }
 
 .paper-content h3 {
-  @apply mt-8 text-lg font-semibold text-slate-50;
+  @apply mt-8 text-xl font-semibold text-slate-50;
   letter-spacing: 0.01em;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(0, 166, 166, 0.22);
 }
 
 .paper-content h4 {
-  @apply mt-6 text-base font-semibold text-slate-100;
+  @apply mt-6 text-base font-semibold;
+  color: rgba(226, 232, 240, 0.92);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 /* Make nested lists visibly nested (mobile especially) */
@@ -362,11 +378,45 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 }
 
 .paper-content a {
-  @apply text-stone-200 underline decoration-slate-600 underline-offset-4 hover:text-stone-50;
+  @apply underline decoration-slate-600 underline-offset-4;
+  color: rgba(226, 232, 240, 0.92);
+}
+.paper-content a:hover {
+  color: rgba(0, 196, 196, 0.95);
+  text-decoration-color: rgba(0, 196, 196, 0.45);
 }
 
 .paper-content pre {
   @apply rounded-none border border-slate-800 bg-slate-950/40;
+}
+
+/* Writing index tag pills */
+button[data-writing-tag] {
+  border-color: rgba(0, 166, 166, 0.18) !important;
+}
+button[data-writing-tag]:hover {
+  border-color: rgba(0, 196, 196, 0.55) !important;
+  background: rgba(0, 166, 166, 0.10);
+  color: rgba(226, 232, 240, 0.95);
+}
+
+/* Writing cards: add a subtle accent edge on hover */
+a[data-writing-card].card {
+  position: relative;
+}
+a[data-writing-card].card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(0, 166, 166, 0.35);
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+a[data-writing-card].card:hover::before {
+  opacity: 1;
 }
 
 .paper-content table {
