@@ -409,27 +409,55 @@ button[data-writing-tag]:hover {
   color: rgba(226, 232, 240, 0.95);
 }
 
-/* Writing cards: subtle accent edge + hover glow */
+/* Writing type pills (note/memo/paper) */
+.writing-type-pill {
+  border-width: 1px;
+}
+.writing-type-note {
+  border-color: rgba(59, 130, 246, 0.55) !important;
+  background: rgba(59, 130, 246, 0.12) !important;
+  color: rgba(219, 234, 254, 0.95) !important;
+}
+.writing-type-memo {
+  border-color: rgba(212, 165, 116, 0.55) !important;
+  background: rgba(212, 165, 116, 0.12) !important;
+  color: rgba(255, 237, 213, 0.95) !important;
+}
+.writing-type-paper {
+  border-color: rgba(0, 196, 196, 0.55) !important;
+  background: rgba(0, 166, 166, 0.12) !important;
+  color: rgba(204, 251, 241, 0.95) !important;
+}
+
+/* Writing cards: left accent bar on hover + type-coded */
 a[data-writing-card].card {
   position: relative;
 }
+
 a[data-writing-card].card::before {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  right: 0;
-  height: 2px;
-  background: rgba(0, 166, 166, 0.32);
-  opacity: 0.55;
-  transition: opacity 180ms ease, background 180ms ease;
-}
-a[data-writing-card].card:hover::before {
-  opacity: 1;
+  bottom: 0;
+  width: 3px;
+  opacity: 0;
+  transition: opacity 160ms ease;
   background: rgba(0, 196, 196, 0.55);
 }
+
+/* Default hover accent */
+a[data-writing-card].card:hover::before {
+  opacity: 1;
+}
+
+/* Type-coded accent colors */
+a[data-writing-card][data-type="paper"]::before { background: rgba(0, 196, 196, 0.65); }
+a[data-writing-card][data-type="memo"]::before { background: rgba(212, 165, 116, 0.72); }
+a[data-writing-card][data-type="note"]::before { background: rgba(59, 130, 246, 0.70); }
+
 [data-writing-index] a[data-writing-card].card:hover {
-  border-color: rgba(0, 196, 196, 0.20);
+  border-color: rgba(0, 196, 196, 0.22);
   box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.10) inset;
 }
 
