@@ -464,6 +464,8 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 /* Writing index tag pills */
 button[data-writing-tag] {
   border-color: rgba(0, 166, 166, 0.18) !important;
+  min-height: 30px;
+  line-height: 1.1;
 }
 button[data-writing-tag]:hover {
   border-color: rgba(0, 196, 196, 0.55) !important;
