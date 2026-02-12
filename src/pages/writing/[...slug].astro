@@ -123,7 +123,7 @@ if (kind === 'paper') {
 	({ Content: PaperContent } = await render(paper));
 	title = `${paper.data.title} | Adam Boas`;
 	description = paper.data.description;
-	pageImage = '/og/paper.png';
+	pageImage = `/og/writing/${paper.id}.png`;
 	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`Paper discussion: ${paper.data.title}`)}`;
 	if (paper.data.pdfPath) pdfInfo = await pdfMeta(paper.data.pdfPath);
 } else {
@@ -133,7 +133,7 @@ if (kind === 'paper') {
 	({ Content: WritingContent } = await render(writingItem));
 	title = `${writingItem.data.title} | Adam Boas`;
 	description = writingItem.data.summary;
-	pageImage = writingItem.data.type === 'memo' ? '/og/memo.png' : '/og/note.png';
+	pageImage = `/og/writing/${writingItem.id.split('/').pop()}.png`;
 	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`${writingItem.data.type.toUpperCase()} discussion: ${writingItem.data.title}`)}`;
 	if (writingItem.data.pdfPath) writingPdfInfo = await pdfMeta(writingItem.data.pdfPath);
 }
