@@ -113,7 +113,7 @@ const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
 		</div>
 	</section>
 
-	<div class="mt-10 grid gap-6 md:grid-cols-3">
+	<div class="mt-10 grid gap-6 md:grid-cols-2">
 		<section class="card p-6">
 			<h2 class="section-title">Operating principles</h2>
 			<ul class="mt-3 space-y-2 text-sm text-slate-300">
@@ -123,29 +123,6 @@ const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
 				<li><span class="text-slate-100">Security as code</span>: least privilege, reviewable changes, continuous verification</li>
 				<li><span class="text-slate-100">Autonomy with constraints</span>: trust scopes + audit trails in contested environments</li>
 			</ul>
-		</section>
-
-		<section class="card p-6">
-			<h2 class="section-title">Selected work</h2>
-			<p class="mt-3 text-sm text-slate-300">Recent writing and long-form artifacts.</p>
-			<ul class="mt-4 space-y-3 text-sm">
-				{homepageWriting.slice(0, 3).map((w) => (
-					<li>
-						<a class="group block" href={`${import.meta.env.BASE_URL}writing/${w.slug}/`}>
-							<div class="flex items-baseline gap-2">
-								<span class="rounded-none border border-slate-700 bg-slate-900/60 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-200">
-									{w.type}
-								</span>
-								<span class="font-semibold text-slate-100 group-hover:text-slate-50">{w.title}</span>
-							</div>
-							{w.description && <p class="clamp-2 mt-1 text-slate-300">{w.description}</p>}
-						</a>
-					</li>
-				))}
-			</ul>
-			<p class="mt-4">
-				<a href={`${import.meta.env.BASE_URL}writing/`} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Browse all writing →</a>
-			</p>
 		</section>
 
 		<section class="card p-6">
