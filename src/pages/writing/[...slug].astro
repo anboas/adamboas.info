@@ -29,7 +29,9 @@ function applyBaseToGeneratedPaperHtml(html: string) {
 	const papersBase = withBase('/papers/');
 	return html
 		.replaceAll('src="/papers/', `src="${papersBase}`)
-		.replaceAll('href="/papers/', `href="${papersBase}`);
+		.replaceAll('href="/papers/', `href="${papersBase}`)
+		// Ensure generated paper images have alt text (empty alt for decorative/non-captioned figures).
+		.replace(/<img(?![^>]*\balt=)([^>]*?)>/gi, '<img$1 alt="">');
 }
 
 function formatBytes(n: number) {
