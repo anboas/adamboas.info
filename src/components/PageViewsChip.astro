@@ -22,7 +22,7 @@ const dateRange = (plausible as any)?.meta?.dateRange || '30d';
 ---
 
 {pageviews !== null ? (
-	<span class="rounded-full border px-2 py-1 text-xs" style="border-color: rgba(0,166,166,0.25); background: rgba(0,166,166,0.08); color: rgba(226,232,240,0.9);">
+	<span class="pageviews-chip rounded-full border px-2 py-1 text-xs">
 		{pageviews.toLocaleString()} views ({dateRange})
 	</span>
 ) : null}

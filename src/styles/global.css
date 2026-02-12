@@ -124,6 +124,13 @@ a {
   box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.18) inset;
 }
 
+/* Page views chip inherits per-type writing accent when inside /writing pages */
+.pageviews-chip {
+  border-color: rgba(var(--writing-accent-rgb), 0.32);
+  background: rgba(var(--writing-accent-rgb), 0.10);
+  color: rgba(226, 232, 240, 0.90);
+}
+
 .muted {
   @apply text-slate-300/90;
 }
