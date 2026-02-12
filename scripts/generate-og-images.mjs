@@ -221,10 +221,10 @@ async function collectWritingCards() {
       titleLineGap: 58,
       maxTitleWidthPx: 960,
       maxTitleLines: 4,
-      subtitleSize: 26,
-      subtitleLineGap: 31,
-      subtitleMaxWidthPx: 980,
-      subtitleMaxLines: 2,
+      subtitleSize: 24,
+      subtitleLineGap: 29,
+      subtitleMaxWidthPx: 1000,
+      subtitleMaxLines: 3,
     });
   }
 
@@ -254,10 +254,10 @@ async function collectWritingCards() {
       titleLineGap: 58,
       maxTitleWidthPx: 960,
       maxTitleLines: 4,
-      subtitleSize: 26,
-      subtitleLineGap: 31,
-      subtitleMaxWidthPx: 980,
-      subtitleMaxLines: 2,
+      subtitleSize: 24,
+      subtitleLineGap: 29,
+      subtitleMaxWidthPx: 1000,
+      subtitleMaxLines: 3,
     });
   }
 
