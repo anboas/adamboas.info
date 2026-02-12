@@ -38,9 +38,43 @@ function clip(text = '', max = 120) {
   return `${s.slice(0, Math.max(0, max - 1)).trimEnd()}…`;
 }
 
-function splitTitleLines(text = '', maxChars = 30, maxLines = 2) {
+function estimateTextWidth(text = '', fontSize = 52) {
+  const narrow = new Set(['i', 'l', 'I', '1', '.', ',', ':', ';', '|', '!', '`', ' ']);
+  const wide = new Set(['W', 'M', '@', '#', '%', '&']);
+  let units = 0;
+
+  for (const ch of String(text)) {
+    if (narrow.has(ch)) {
+      units += 0.34;
+    } else if (wide.has(ch)) {
+      units += 0.95;
+    } else if (/[mw]/.test(ch)) {
+      units += 0.84;
+    } else if (/[A-Z]/.test(ch)) {
+      units += 0.74;
+    } else {
+      units += 0.62;
+    }
+  }
+
+  return units * fontSize;
+}
+
+function trimToWidth(text = '', maxWidthPx = 980, fontSize = 52) {
+  let out = String(text).trim();
+  if (!out) return out;
+
+  while (out.length > 1 && estimateTextWidth(`${out}…`, fontSize) > maxWidthPx) {
+    out = out.slice(0, -1).trimEnd();
+  }
+
+  if (!out.endsWith('…')) out += '…';
+  return out;
+}
+
+function wrapTextByWidth(text = '', { fontSize = 52, maxWidthPx = 980, maxLines = 4 } = {}) {
   const words = String(text).replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
-  if (!words.length) return ['Untitled'];
+  if (!words.length) return [''];
 
   const lines = [];
   let current = '';
@@ -48,18 +82,16 @@ function splitTitleLines(text = '', maxChars = 30, maxLines = 2) {
   for (const word of words) {
     const next = current ? `${current} ${word}` : word;
 
-    if (next.length <= maxChars) {
+    if (estimateTextWidth(next, fontSize) <= maxWidthPx) {
       current = next;
       continue;
     }
 
-    if (current) {
+    if (!current) {
+      lines.push(trimToWidth(word, maxWidthPx, fontSize));
+    } else {
       lines.push(current);
       current = word;
-    } else {
-      // Single very long token (rare): hard clip token itself
-      lines.push(clip(word, maxChars));
-      current = '';
     }
 
     if (lines.length >= maxLines - 1) break;
@@ -67,10 +99,9 @@ function splitTitleLines(text = '', maxChars = 30, maxLines = 2) {
 
   if (lines.length < maxLines && current) lines.push(current);
 
-  const consumedWords = lines.join(' ').split(' ').filter(Boolean).length;
-  if (consumedWords < words.length) {
-    lines[lines.length - 1] = clip(lines[lines.length - 1], Math.max(8, maxChars - 1));
-    if (!lines[lines.length - 1].endsWith('…')) lines[lines.length - 1] += '…';
+  const consumed = lines.join(' ').trim().split(' ').filter(Boolean).length;
+  if (consumed < words.length) {
+    lines[lines.length - 1] = trimToWidth(lines[lines.length - 1], maxWidthPx, fontSize);
   }
 
   return lines.slice(0, maxLines);
@@ -84,19 +115,31 @@ function svgTemplate({
   titleSize = 66,
   titleY = 294,
   titleLineGap = Math.round(66 * 1.12),
-  maxTitleChars = 30,
+  maxTitleWidthPx = 980,
   maxTitleLines = 2,
   subtitleSize = 32,
-  subtitleMax = 84,
+  subtitleLineGap = Math.round(32 * 1.2),
+  subtitleMaxWidthPx = 980,
+  subtitleMaxLines = 1,
 }) {
-  const titleLines = splitTitleLines(title, maxTitleChars, maxTitleLines);
+  const titleLines = wrapTextByWidth(title, { fontSize: titleSize, maxWidthPx: maxTitleWidthPx, maxLines: maxTitleLines });
   const titleSpans = titleLines
     .map((line, i) => `<tspan x="90" dy="${i === 0 ? 0 : titleLineGap}">${escapeXml(line)}</tspan>`)
     .join('');
 
-  const computedSubtitleY = titleY + (titleLines.length - 1) * titleLineGap + Math.round(titleSize * 1.45);
-  const subtitleY = Math.min(computedSubtitleY, 520);
-  const ruleY = Math.min(subtitleY + Math.round(subtitleSize * 1.8), 582);
+  const subtitleLines = wrapTextByWidth(subtitle, {
+    fontSize: subtitleSize,
+    maxWidthPx: subtitleMaxWidthPx,
+    maxLines: subtitleMaxLines,
+  });
+  const subtitleSpans = subtitleLines
+    .map((line, i) => `<tspan x="90" dy="${i === 0 ? 0 : subtitleLineGap}">${escapeXml(line)}</tspan>`)
+    .join('');
+
+  const subtitleStartY = titleY + (titleLines.length - 1) * titleLineGap + Math.round(titleSize * 1.4);
+  const subtitleY = Math.min(subtitleStartY, 528);
+  const subtitleBlockHeight = (subtitleLines.length - 1) * subtitleLineGap;
+  const ruleY = Math.min(subtitleY + subtitleBlockHeight + Math.round(subtitleSize * 1.9), 586);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeXml(title)}">
@@ -111,7 +154,7 @@ function svgTemplate({
   <rect x="48" y="48" width="1104" height="534" fill="none" stroke="rgba(148,163,184,0.18)" stroke-width="2"/>
   <text x="90" y="130" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">${escapeXml(kicker)}</text>
   <text x="90" y="${titleY}" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="${titleSize}" font-weight="800" fill="#f8fafc">${titleSpans}</text>
-  <text x="90" y="${subtitleY}" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="${subtitleSize}" font-weight="500" fill="#cbd5e1">${escapeXml(clip(subtitle, subtitleMax))}</text>
+  <text x="90" y="${subtitleY}" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="${subtitleSize}" font-weight="500" fill="#cbd5e1">${subtitleSpans}</text>
   <rect x="90" y="${ruleY}" width="460" height="2" fill="${accent}" opacity="0.85"/>
 </svg>`;
 }
@@ -176,10 +219,12 @@ async function collectWritingCards() {
       titleSize: 52,
       titleY: 252,
       titleLineGap: 58,
-      maxTitleChars: 22,
+      maxTitleWidthPx: 960,
       maxTitleLines: 4,
       subtitleSize: 26,
-      subtitleMax: 92,
+      subtitleLineGap: 31,
+      subtitleMaxWidthPx: 980,
+      subtitleMaxLines: 2,
     });
   }
 
@@ -207,10 +252,12 @@ async function collectWritingCards() {
       titleSize: 52,
       titleY: 252,
       titleLineGap: 58,
-      maxTitleChars: 22,
+      maxTitleWidthPx: 960,
       maxTitleLines: 4,
       subtitleSize: 26,
-      subtitleMax: 92,
+      subtitleLineGap: 31,
+      subtitleMaxWidthPx: 980,
+      subtitleMaxLines: 2,
     });
   }
 
