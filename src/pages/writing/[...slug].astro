@@ -68,6 +68,8 @@ const { kind, id } = Astro.props as { kind: 'writing' | 'paper'; id: string };
 
 let title = 'Writing | Adam Boas';
 let description: string | undefined;
+let pageImage = '/og/default.png';
+let contactHref = 'mailto:anboas@gmail.com?subject=Discussing%20your%20writing';
 
 let paper: any = null;
 let paperGeneratedHtml: string | null = null;
@@ -120,6 +122,8 @@ if (kind === 'paper') {
 	({ Content: PaperContent } = await render(paper));
 	title = `${paper.data.title} | Adam Boas`;
 	description = paper.data.description;
+	pageImage = '/og/paper.png';
+	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`Paper discussion: ${paper.data.title}`)}`;
 	if (paper.data.pdfPath) pdfInfo = await pdfMeta(paper.data.pdfPath);
 } else {
 	const writingItems = await getCollection('writing');
@@ -128,10 +132,12 @@ if (kind === 'paper') {
 	({ Content: WritingContent } = await render(writingItem));
 	title = `${writingItem.data.title} | Adam Boas`;
 	description = writingItem.data.summary;
+	pageImage = writingItem.data.type === 'memo' ? '/og/memo.png' : '/og/note.png';
+	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`${writingItem.data.type.toUpperCase()} discussion: ${writingItem.data.title}`)}`;
 }
 ---
 
-<SiteLayout title={title} description={description}>
+<SiteLayout title={title} description={description} image={pageImage}>
 	<StickyBrowseBar active="writing" />
 	{kind === 'writing' ? (
 		<script
@@ -196,6 +202,10 @@ if (kind === 'paper') {
 					)}
 				</div>
 			</header>
+			<div class="mt-4 flex flex-wrap items-center gap-2">
+				<a data-track="Contact: Paper CTA" class="rounded-none border border-slate-700 bg-slate-900/40 px-3 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss implementation</a>
+				<a class="rounded-none border border-slate-700 px-3 py-1.5 text-xs font-semibold text-slate-100 hover:bg-slate-900" href={withBase('/writing/')}>Browse all writing</a>
+			</div>
 
 			<div class="paper-content prose prose-invert mt-8 max-w-none">
 				{paperGeneratedHtml ? <div set:html={paperGeneratedHtml} /> : <PaperContent />}
@@ -262,6 +272,10 @@ if (kind === 'paper') {
 				</div>
 				{writingItem.data.summary && <p class="mt-4 text-slate-300">{writingItem.data.summary}</p>}
 			</header>
+			<div class="mt-4 flex flex-wrap items-center gap-2">
+				<a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-900/40 px-3 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
+				<a class="rounded-none border border-slate-700 px-3 py-1.5 text-xs font-semibold text-slate-100 hover:bg-slate-900" href={withBase('/writing/')}>Browse all writing</a>
+			</div>
 
 			<div class="paper-content prose prose-invert mt-8 max-w-none">
 				<WritingContent />

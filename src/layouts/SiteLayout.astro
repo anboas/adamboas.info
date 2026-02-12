@@ -10,17 +10,19 @@ type Props = {
 	title: string;
 	description?: string;
 	canonicalHref?: string;
+	image?: string;
 };
 
 const { title } = Astro.props;
 const description = Astro.props.description ?? SITE_DESCRIPTION;
 const canonicalHref = Astro.props.canonicalHref;
+const image = Astro.props.image;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} canonicalHref={canonicalHref} />
+		<BaseHead title={title} description={description} canonicalHref={canonicalHref} image={image} />
 	</head>
 	<body>
 		<Header />
