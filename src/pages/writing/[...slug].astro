@@ -76,6 +76,7 @@ let paperGeneratedHtml: string | null = null;
 let pdfInfo: { size: string | null; pages: number | null } | null = null;
 let PaperContent: any = null;
 
+let writingPdfInfo: { size: string | null; pages: number | null } | null = null;
 let writingItem: any = null;
 let WritingContent: any = null;
 
@@ -134,6 +135,7 @@ if (kind === 'paper') {
 	description = writingItem.data.summary;
 	pageImage = writingItem.data.type === 'memo' ? '/og/memo.png' : '/og/note.png';
 	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`${writingItem.data.type.toUpperCase()} discussion: ${writingItem.data.title}`)}`;
+	if (writingItem.data.pdfPath) writingPdfInfo = await pdfMeta(writingItem.data.pdfPath);
 }
 ---
 
@@ -245,7 +247,7 @@ if (kind === 'paper') {
 			})()}
 		</article>
 	) : (
-		<article class="card p-8" data-writing-type="paper" data-paper-style="dossier">
+		<article class="card p-8" data-writing-type={writingItem.data.type} data-paper-style="dossier">
 			<header>
 				<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
 					<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
@@ -261,7 +263,12 @@ if (kind === 'paper') {
 								data-track="Writing: Open PDF"
 								data-track-props={JSON.stringify({ slug: writingItem.id.split('/').pop(), kind: writingItem.data.type })}
 							>
-								PDF
+								<span>PDF</span>
+								{writingPdfInfo && (
+									<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
+										{writingPdfInfo.pages ? `${writingPdfInfo.pages}p` : ''}{writingPdfInfo.pages && writingPdfInfo.size ? ' • ' : ''}{writingPdfInfo.size ? writingPdfInfo.size : ''}
+									</span>
+								)}
 							</a>
 						) : null}
 						<button
