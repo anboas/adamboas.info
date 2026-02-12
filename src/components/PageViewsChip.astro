@@ -13,11 +13,23 @@ function normalizePath(p: string) {
 const key = normalizePath(pathname);
 const pv = (plausible as any)?.pageviewsByPath?.[key];
 
-// Also try without the GitHub Pages base path, if present.
-const alt = key.replace(/^\/adamboas\.info\b/, '') || '/';
-const pvAlt = (plausible as any)?.pageviewsByPath?.[alt];
+// Try path normalization in both directions during domain/base migrations.
+const altNoBase = key.replace(/^\/adamboas\.info\b/, '') || '/';
+const pvAltNoBase = (plausible as any)?.pageviewsByPath?.[altNoBase];
 
-const pageviews = typeof pv === 'number' ? pv : typeof pvAlt === 'number' ? pvAlt : null;
+const altWithBase = key.startsWith('/adamboas.info')
+	? key
+	: `/adamboas.info${key === '/' ? '' : key}`;
+const pvAltWithBase = (plausible as any)?.pageviewsByPath?.[altWithBase];
+
+const pageviews =
+	typeof pv === 'number'
+		? pv
+		: typeof pvAltNoBase === 'number'
+			? pvAltNoBase
+			: typeof pvAltWithBase === 'number'
+				? pvAltWithBase
+				: null;
 const dateRange = (plausible as any)?.meta?.dateRange || '30d';
 ---
 
