@@ -464,6 +464,50 @@ button[data-writing-tag]:hover {
 .writing-type-pill {
   border-width: 1px;
 }
+
+/* Hover/focus explanation for key pills */
+.writing-key-pill {
+  position: relative;
+  cursor: help;
+}
+.writing-key-pill::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%);
+  background: rgba(2, 6, 23, 0.96);
+  border: 1px solid rgba(71, 85, 105, 0.75);
+  color: rgba(226, 232, 240, 0.95);
+  font-size: 11px;
+  line-height: 1.25;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 6px 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease;
+  z-index: 20;
+}
+.writing-key-pill::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 2px);
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid rgba(71, 85, 105, 0.75);
+  opacity: 0;
+  transition: opacity 120ms ease;
+  pointer-events: none;
+  z-index: 20;
+}
+.writing-key-pill:is(:hover, :focus-visible)::after,
+.writing-key-pill:is(:hover, :focus-visible)::before {
+  opacity: 1;
+}
+
 .writing-type-note {
   border-color: rgba(0, 196, 196, 0.55) !important;
   background: rgba(0, 166, 166, 0.12) !important;
