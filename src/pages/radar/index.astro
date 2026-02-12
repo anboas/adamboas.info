@@ -2,319 +2,199 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
+import { radarEventsSeed } from '../../data/radar/events';
+import { scoreEvents, scoringLegend } from '../../data/radar/scoring';
 
-interface RadarEvent {
-	id: string;
-	title: string;
-	startDate: string | null;
-	endDate?: string | null;
-	city: string;
-	state?: string;
-	country: string;
-	lat: number;
-	lng: number;
-	branch: string;
-	type: 'Conference' | 'Workshop' | 'Summit' | 'Hackathon' | 'Exercise';
-	status: 'Upcoming' | 'Projected' | 'Needs Date' | 'Past';
-	signal: 'High' | 'Medium' | 'Low';
-	effort: 'Low' | 'Medium' | 'High';
-	url?: string;
-}
+const events = scoreEvents(radarEventsSeed);
+const legend = scoringLegend();
 
-const radarEvents: RadarEvent[] = [
-	{
-		id: 'radar-001',
-		title: 'DoD AI Mission Operations Summit',
-		startDate: '2026-03-19',
-		city: 'Washington',
-		state: 'DC',
-		country: 'USA',
-		lat: 38.9072,
-		lng: -77.0369,
-		branch: 'Joint',
-		type: 'Summit',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Low',
-	},
-	{
-		id: 'radar-002',
-		title: 'Army Digital Interoperability Forum',
-		startDate: '2026-04-07',
-		city: 'Huntsville',
-		state: 'AL',
-		country: 'USA',
-		lat: 34.7304,
-		lng: -86.5861,
-		branch: 'Army',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'Medium',
-		effort: 'Medium',
-	},
-	{
-		id: 'radar-003',
-		title: 'Autonomy Assurance Workshop',
-		startDate: '2026-05-12',
-		city: 'Arlington',
-		state: 'VA',
-		country: 'USA',
-		lat: 38.8816,
-		lng: -77.091,
-		branch: 'Joint',
-		type: 'Workshop',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Low',
-	},
-	{
-		id: 'radar-004',
-		title: 'USACE Infrastructure Autonomy Expo',
-		startDate: '2026-06-02',
-		city: 'Nashville',
-		state: 'TN',
-		country: 'USA',
-		lat: 36.1627,
-		lng: -86.7816,
-		branch: 'USACE',
-		type: 'Conference',
-		status: 'Projected',
-		signal: 'Medium',
-		effort: 'Medium',
-	},
-	{
-		id: 'radar-005',
-		title: 'A2A Integration Developer Day',
-		startDate: '2026-03-03',
-		city: 'Austin',
-		state: 'TX',
-		country: 'USA',
-		lat: 30.2672,
-		lng: -97.7431,
-		branch: 'Industry',
-		type: 'Hackathon',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Medium',
-	},
-	{
-		id: 'radar-006',
-		title: 'Operational Test and Evaluation AI Exchange',
-		startDate: '2026-08-11',
-		city: 'Dayton',
-		state: 'OH',
-		country: 'USA',
-		lat: 39.7589,
-		lng: -84.1916,
-		branch: 'Air Force',
-		type: 'Workshop',
-		status: 'Projected',
-		signal: 'Medium',
-		effort: 'High',
-	},
-	{
-		id: 'radar-007',
-		title: 'Decision-Cycle Compression Symposium',
-		startDate: null,
-		city: 'TBD',
-		country: 'USA',
-		lat: 39.5,
-		lng: -98.35,
-		branch: 'Joint',
-		type: 'Summit',
-		status: 'Needs Date',
-		signal: 'High',
-		effort: 'Low',
-	},
-	{
-		id: 'radar-008',
-		title: 'Navy Maritime Autonomy Exercise',
-		startDate: '2026-09-09',
-		city: 'Norfolk',
-		state: 'VA',
-		country: 'USA',
-		lat: 36.8508,
-		lng: -76.2859,
-		branch: 'Navy',
-		type: 'Exercise',
-		status: 'Projected',
-		signal: 'Low',
-		effort: 'High',
-	},
-	{
-		id: 'radar-009',
-		title: 'Defense Data Governance Forum',
-		startDate: '2026-02-26',
-		city: 'National Harbor',
-		state: 'MD',
-		country: 'USA',
-		lat: 38.7854,
-		lng: -77.0153,
-		branch: 'Joint',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'Medium',
-		effort: 'Low',
-	},
-	{
-		id: 'radar-010',
-		title: 'Model Security in Contested Ops Colloquium',
-		startDate: '2025-11-14',
-		city: 'San Diego',
-		state: 'CA',
-		country: 'USA',
-		lat: 32.7157,
-		lng: -117.1611,
-		branch: 'Navy',
-		type: 'Workshop',
-		status: 'Past',
-		signal: 'High',
-		effort: 'Medium',
-	},
-	{
-		id: 'radar-011',
-		title: 'Agency AI Procurement and Governance Day',
-		startDate: '2026-06-17',
-		city: 'Arlington',
-		state: 'VA',
-		country: 'USA',
-		lat: 38.8816,
-		lng: -77.091,
-		branch: 'Civilian',
-		type: 'Workshop',
-		status: 'Projected',
-		signal: 'Medium',
-		effort: 'Low',
-	},
-	{
-		id: 'radar-012',
-		title: 'Emerging Autonomy Doctrine Forum',
-		startDate: null,
-		city: 'Brussels',
-		country: 'Belgium',
-		lat: 50.8503,
-		lng: 4.3517,
-		branch: 'Allied',
-		type: 'Conference',
-		status: 'Needs Date',
-		signal: 'Medium',
-		effort: 'High',
-	},
-];
-
-function daysUntil(dateStr: string | null) {
-	if (!dateStr) return null;
-	const ms = new Date(dateStr).getTime() - Date.now();
-	return Math.round(ms / 86_400_000);
-}
-
-function computeScore(event: RadarEvent) {
-	let score = 0;
-	score += event.signal === 'High' ? 45 : event.signal === 'Medium' ? 28 : 12;
-	score += event.effort === 'Low' ? 18 : event.effort === 'Medium' ? 10 : 2;
-	score += event.status === 'Upcoming' ? 16 : event.status === 'Projected' ? 10 : event.status === 'Needs Date' ? 4 : 0;
-	score += event.branch === 'Joint' ? 10 : event.branch === 'Army' || event.branch === 'Air Force' || event.branch === 'Navy' ? 6 : 3;
-
-	const d = daysUntil(event.startDate);
-	if (d !== null && d >= 0) {
-		if (d <= 14) score += 16;
-		else if (d <= 45) score += 10;
-		else if (d <= 90) score += 5;
-	}
-
-	return Math.max(1, Math.min(100, score));
-}
-
-const enriched = radarEvents.map((e) => ({ ...e, score: computeScore(e) }));
-const branches = [...new Set(enriched.map((e) => e.branch))].sort();
-const types = [...new Set(enriched.map((e) => e.type))].sort();
+const branches = [...new Set(events.map((e) => e.branch))].sort();
+const types = [...new Set(events.map((e) => e.type))].sort();
 const statuses = ['Upcoming', 'Projected', 'Needs Date', 'Past'] as const;
 
-const upcomingCount = enriched.filter((e) => e.status === 'Upcoming').length;
-const highSignalCount = enriched.filter((e) => e.signal === 'High').length;
-const needsDateCount = enriched.filter((e) => e.status === 'Needs Date').length;
-const topScore = Math.max(...enriched.map((e) => e.score));
+const summaryStats = {
+	total: events.length,
+	upcoming: events.filter((e) => e.status === 'Upcoming').length,
+	highSignal: events.filter((e) => e.signal === 'High').length,
+	needsDate: events.filter((e) => e.status === 'Needs Date').length,
+	topScore: Math.max(...events.map((e) => e.score.total)),
+	themes: new Set(events.flatMap((e) => e.ontology.themes)).size,
+};
+
+function fmtDate(date: string | null) {
+	if (!date) return 'Date pending';
+	return new Date(date).toLocaleDateString(undefined, {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	});
+}
+
+function fmtDateRange(start: string | null, end: string | null | undefined) {
+	if (!start) return 'Date pending';
+	if (!end) return fmtDate(start);
+	return `${fmtDate(start)} - ${fmtDate(end)}`;
+}
+
+function locationLabel(event: (typeof events)[number]) {
+	return event.location.state ? `${event.location.city}, ${event.location.state}` : event.location.city;
+}
+
+function costLabel(event: (typeof events)[number]) {
+	const range = event.ontology.logistics.estimatedCostUsd;
+	if (!range) return 'Unknown';
+	if (range.max === 0) return '$0';
+	return `$${range.min.toLocaleString()} - $${range.max.toLocaleString()}`;
+}
 ---
 
-<SiteLayout title="Radar | Adam Boas" description="Opportunity radar prototype with map, scoring, filters, and brief generation." canonicalHref="https://www.adamboas.com/radar/">
+<SiteLayout
+	title="Radar | Adam Boas"
+	description="In-depth operations radar prototype with ontology-rich metadata, weighted scoring, and expandable intelligence cards."
+	canonicalHref="https://www.adamboas.com/radar/"
+>
 	<StickyBrowseBar active="radar" />
 
 	<section class="card p-6 sm:p-8">
-		<p class="text-xs uppercase tracking-wide text-slate-400">Prototype</p>
+		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V1.5</p>
 		<h1 class="mt-2 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">Operations Radar</h1>
-		<p class="mt-3 max-w-3xl text-sm text-slate-300 sm:text-base">
-			A decision-oriented radar page: map + list + scoring + saved views. This is built to prioritize what matters now, not just display an event list.
+		<p class="mt-3 max-w-4xl text-sm text-slate-300 sm:text-base">
+			Ontology-rich opportunity radar for events, partner touchpoints, and decision windows. Compact by default, deep metadata and provenance on expand.
 		</p>
 
-		<div class="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-			<div class="radar-stat">
-				<span class="radar-stat-label">Upcoming</span>
-				<strong class="radar-stat-value">{upcomingCount}</strong>
-			</div>
-			<div class="radar-stat">
-				<span class="radar-stat-label">High signal</span>
-				<strong class="radar-stat-value">{highSignalCount}</strong>
-			</div>
-			<div class="radar-stat">
-				<span class="radar-stat-label">Needs date</span>
-				<strong class="radar-stat-value">{needsDateCount}</strong>
-			</div>
-			<div class="radar-stat">
-				<span class="radar-stat-label">Top score</span>
-				<strong class="radar-stat-value">{topScore}</strong>
-			</div>
+		<div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6">
+			<div class="radar-stat"><span>Items</span><strong>{summaryStats.total}</strong></div>
+			<div class="radar-stat"><span>Upcoming</span><strong>{summaryStats.upcoming}</strong></div>
+			<div class="radar-stat"><span>High signal</span><strong>{summaryStats.highSignal}</strong></div>
+			<div class="radar-stat"><span>Needs date</span><strong>{summaryStats.needsDate}</strong></div>
+			<div class="radar-stat"><span>Ontology themes</span><strong>{summaryStats.themes}</strong></div>
+			<div class="radar-stat"><span>Top score</span><strong>{summaryStats.topScore}</strong></div>
 		</div>
 	</section>
 
-	<section class="mt-6 grid gap-6 xl:grid-cols-[320px,1fr]">
-		<aside class="card p-5">
-			<h2 class="section-title">Filters</h2>
-			<div class="mt-4 space-y-4 text-sm">
-				<label class="block">
-					<span class="mb-1 block text-slate-300">Search</span>
-					<input id="radar-q" class="radar-input" type="search" placeholder="autonomy, governance, branch..." />
-				</label>
-
-				<label class="block">
-					<span class="mb-1 block text-slate-300">Branch</span>
-					<select id="radar-branch" class="radar-input">
-						<option value="">All branches</option>
-						{branches.map((b) => <option value={b}>{b}</option>)}
-					</select>
-				</label>
-
-				<label class="block">
-					<span class="mb-1 block text-slate-300">Type</span>
-					<select id="radar-type" class="radar-input">
-						<option value="">All types</option>
-						{types.map((t) => <option value={t}>{t}</option>)}
-					</select>
-				</label>
-
-				<label class="block">
-					<span class="mb-1 block text-slate-300">Status</span>
-					<select id="radar-status" class="radar-input">
-						<option value="">All statuses</option>
-						{statuses.map((s) => <option value={s}>{s}</option>)}
-					</select>
-				</label>
-
-				<label class="block">
-					<span class="mb-1 block text-slate-300">Sort</span>
-					<select id="radar-sort" class="radar-input">
-						<option value="score">Highest score</option>
-						<option value="date">Soonest date</option>
-						<option value="signal">Signal first</option>
-					</select>
-				</label>
-
-				<div class="grid gap-2 sm:grid-cols-2 xl:grid-cols-1">
-					<button id="radar-save" class="radar-btn" type="button">Save view</button>
-					<button id="radar-load" class="radar-btn" type="button">Load saved view</button>
-					<button id="radar-share" class="radar-btn" type="button">Copy share link</button>
-					<button id="radar-reset" class="radar-btn" type="button">Reset filters</button>
+	<section class="mt-6 grid gap-6 xl:grid-cols-[340px,1fr]">
+		<aside class="space-y-6">
+			<section class="card p-5">
+				<h2 class="section-title">Filter + rank</h2>
+				<div class="mt-4 space-y-4 text-sm">
+					<label class="block">
+						<span class="mb-1 block text-slate-300">Search</span>
+						<input id="radar-q" class="radar-input" type="search" placeholder="theme, stakeholder, city..." />
+					</label>
+					<label class="block">
+						<span class="mb-1 block text-slate-300">Branch</span>
+						<select id="radar-branch" class="radar-input">
+							<option value="">All branches</option>
+							{branches.map((branch) => <option value={branch}>{branch}</option>)}
+						</select>
+					</label>
+					<label class="block">
+						<span class="mb-1 block text-slate-300">Type</span>
+						<select id="radar-type" class="radar-input">
+							<option value="">All types</option>
+							{types.map((type) => <option value={type}>{type}</option>)}
+						</select>
+					</label>
+					<label class="block">
+						<span class="mb-1 block text-slate-300">Status</span>
+						<select id="radar-status" class="radar-input">
+							<option value="">All statuses</option>
+							{statuses.map((status) => <option value={status}>{status}</option>)}
+						</select>
+					</label>
+					<label class="block">
+						<span class="mb-1 block text-slate-300">Sort</span>
+						<select id="radar-sort" class="radar-input">
+							<option value="score">Highest score</option>
+							<option value="date">Soonest date</option>
+							<option value="signal">Signal first</option>
+							<option value="meta">Metadata completeness</option>
+						</select>
+					</label>
+					<div class="grid gap-2 sm:grid-cols-2 xl:grid-cols-1">
+						<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
+						<button class="radar-btn" type="button" data-preset="high-confidence">Preset: high confidence</button>
+						<button class="radar-btn" type="button" data-preset="needs-dates">Preset: needs dates</button>
+					</div>
+					<div class="grid gap-2 sm:grid-cols-2 xl:grid-cols-1">
+						<button id="radar-save" class="radar-btn" type="button">Save view</button>
+						<button id="radar-load" class="radar-btn" type="button">Load saved view</button>
+						<button id="radar-share" class="radar-btn" type="button">Copy share link</button>
+						<button id="radar-reset" class="radar-btn" type="button">Reset</button>
+					</div>
 				</div>
-			</div>
+			</section>
+
+			<details class="card p-5">
+				<summary class="radar-summary">Scoring key (collapsed by default)</summary>
+				<div class="mt-4 space-y-4 text-sm text-slate-300">
+					<p class="text-xs text-slate-400">Score formula = signal + effort + status + branch fit + date proximity + source confidence + metadata completeness - travel burden</p>
+					<div class="grid gap-3">
+						<div class="radar-key-block">
+							<strong>Signal</strong>
+							<ul>
+								<li>High: +{legend.signalWeight.High}</li>
+								<li>Medium: +{legend.signalWeight.Medium}</li>
+								<li>Low: +{legend.signalWeight.Low}</li>
+							</ul>
+						</div>
+						<div class="radar-key-block">
+							<strong>Effort</strong>
+							<ul>
+								<li>Low: +{legend.effortWeight.Low}</li>
+								<li>Medium: +{legend.effortWeight.Medium}</li>
+								<li>High: +{legend.effortWeight.High}</li>
+							</ul>
+						</div>
+						<div class="radar-key-block">
+							<strong>Status</strong>
+							<ul>
+								<li>Upcoming: +{legend.statusWeight.Upcoming}</li>
+								<li>Projected: +{legend.statusWeight.Projected}</li>
+								<li>Needs date: +{legend.statusWeight['Needs Date']}</li>
+								<li>Past: +{legend.statusWeight.Past}</li>
+							</ul>
+						</div>
+						<div class="radar-key-block">
+							<strong>Date proximity</strong>
+							<ul>
+								<li>≤14 days: +{legend.dateProximity.in14}</li>
+								<li>≤30 days: +{legend.dateProximity.in30}</li>
+								<li>≤60 days: +{legend.dateProximity.in60}</li>
+								<li>≤120 days: +{legend.dateProximity.in120}</li>
+								<li>Past date: {legend.dateProximity.past}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</details>
+
+			<details class="card p-5">
+				<summary class="radar-summary">Automation discovery plan (planning only)</summary>
+				<div class="mt-4 space-y-3 text-sm text-slate-300">
+					<p class="text-xs uppercase tracking-[0.12em] text-slate-400">No automation implemented yet</p>
+					<p>Design target: nightly source ingestion, AI-assisted extraction, and confidence-scored dedupe into this ontology.</p>
+					<div class="radar-key-block">
+						<strong>Priority source families</strong>
+						<ul>
+							<li>Official event calendars (AUSA, AFCEA, Navy League, service pages)</li>
+							<li>Government event indexes and acquisition notices</li>
+							<li>Conference aggregators with military/federal vertical tags</li>
+							<li>Newsletter/community lists for early signals (low confidence lane)</li>
+						</ul>
+					</div>
+					<div class="radar-key-block">
+						<strong>Planned AI pipeline</strong>
+						<ol>
+							<li>Ingest + normalize source pages</li>
+							<li>Extract event entities (title/date/location/links/CFP)</li>
+							<li>Entity resolution + dedupe against existing graph</li>
+							<li>Assign provenance + confidence and mark verification needs</li>
+							<li>Human-review queue before publish to production radar</li>
+						</ol>
+					</div>
+				</div>
+			</details>
 		</aside>
 
 		<div class="space-y-6">
@@ -328,36 +208,140 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 
 			<section class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
-					<h2 class="section-title">Ranked opportunities</h2>
+					<h2 class="section-title">Opportunities</h2>
 					<button id="radar-brief" class="radar-btn" type="button">Build brief draft</button>
 				</div>
-				<ul id="radar-list" class="space-y-3"></ul>
+				<div id="radar-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-4 text-sm text-slate-300">
+					No events match the current filter state.
+				</div>
+				<div id="radar-list" class="space-y-3">
+					{events.map((event) => (
+						<article
+							id={event.id}
+							class="radar-card"
+							data-event-card
+							data-id={event.id}
+							data-score={event.score.total}
+							data-meta={event.score.metaCompleteness}
+							data-date={event.startDate ?? ''}
+							data-status={event.status}
+							data-type={event.type}
+							data-branch={event.branch}
+							data-signal={event.signal}
+							data-lat={event.location.lat}
+							data-lng={event.location.lng}
+							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence}`).join(' ')}`.toLowerCase()}
+						>
+							<div class="flex flex-wrap items-start justify-between gap-3">
+								<div class="min-w-0 flex-1">
+									<p class="text-[11px] uppercase tracking-[0.1em] text-slate-400">{event.branch} · {event.type} · {event.status}</p>
+									<h3 class="mt-1 text-base font-semibold text-slate-50">{event.title}</h3>
+									<p class="mt-1 text-sm text-slate-300">{event.description}</p>
+									<p class="mt-2 text-xs text-slate-400">{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}</p>
+								</div>
+								<div class="radar-score-chip">Score {event.score.total}</div>
+							</div>
+
+							<div class="mt-3 flex flex-wrap gap-2">
+								{event.ontology.themes.slice(0, 4).map((theme) => <span class="radar-pill">{theme}</span>)}
+							</div>
+
+							<details class="mt-3 radar-details">
+								<summary>Expand ontology + metadata</summary>
+								<div class="mt-3 grid gap-4 lg:grid-cols-2">
+									<div>
+										<p class="radar-section-label">Capability areas</p>
+										<ul class="radar-listing">{event.ontology.capabilityAreas.map((item) => <li>{item}</li>)}</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Mission threads</p>
+										<ul class="radar-listing">{event.ontology.missionThreads.map((item) => <li>{item}</li>)}</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Stakeholders</p>
+										<ul class="radar-listing">{event.ontology.stakeholders.map((item) => <li>{item}</li>)}</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Decision windows</p>
+										<ul class="radar-listing">
+											<li><strong>Discovery:</strong> {event.ontology.decisionWindows.discovery}</li>
+											<li><strong>Prep:</strong> {event.ontology.decisionWindows.prep}</li>
+											<li><strong>Execution:</strong> {event.ontology.decisionWindows.execution}</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="mt-4 grid gap-4 lg:grid-cols-2">
+									<div>
+										<p class="radar-section-label">Links</p>
+										<ul class="radar-listing">
+											{event.ontology.links.official ? <li><a href={event.ontology.links.official} target="_blank" rel="noreferrer">Official page</a></li> : null}
+											{event.ontology.links.registration ? <li><a href={event.ontology.links.registration} target="_blank" rel="noreferrer">Registration</a></li> : null}
+											{event.ontology.links.callForPapers ? <li><a href={event.ontology.links.callForPapers} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
+											{event.ontology.links.agenda ? <li><a href={event.ontology.links.agenda} target="_blank" rel="noreferrer">Agenda</a></li> : null}
+										</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Logistics</p>
+										<ul class="radar-listing">
+											<li><strong>Format:</strong> {event.ontology.logistics.format}</li>
+											<li><strong>Estimated cost:</strong> {costLabel(event)}</li>
+											<li><strong>Travel burden (DC):</strong> {event.ontology.logistics.travelBurdenFromDc}</li>
+											{event.location.venue ? <li><strong>Venue:</strong> {event.location.venue}</li> : null}
+										</ul>
+									</div>
+								</div>
+
+								<div class="mt-4">
+									<p class="radar-section-label">Score breakdown</p>
+									<ul class="radar-listing radar-score-list">
+										<li><span>Signal</span><strong>{event.score.signal}</strong></li>
+										<li><span>Effort</span><strong>{event.score.effort}</strong></li>
+										<li><span>Status</span><strong>{event.score.status}</strong></li>
+										<li><span>Branch fit</span><strong>{event.score.branchFit}</strong></li>
+										<li><span>Date proximity</span><strong>{event.score.dateProximity}</strong></li>
+										<li><span>Source confidence</span><strong>{event.score.sourceConfidence}</strong></li>
+										<li><span>Metadata completeness</span><strong>{event.score.metaCompleteness}</strong></li>
+										<li><span>Travel penalty</span><strong>{event.score.travelPenalty}</strong></li>
+										<li class="radar-total"><span>Total</span><strong>{event.score.total}</strong></li>
+									</ul>
+								</div>
+
+								<div class="mt-4">
+									<p class="radar-section-label">Provenance</p>
+									<ul class="radar-listing">
+										{event.ontology.provenance.map((source) => (
+											<li>
+												<a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>
+												<span class="text-slate-500"> · {source.type}, {source.confidence} confidence, verified {source.lastVerified}</span>
+											</li>
+										))}
+									</ul>
+									{event.ontology.notes ? <p class="mt-2 text-xs text-slate-400">{event.ontology.notes}</p> : null}
+								</div>
+							</details>
+						</article>
+					))}
+				</div>
 				<pre id="radar-brief-output" class="radar-brief-output hidden"></pre>
 			</section>
 		</div>
 	</section>
 
 	<section class="mt-6">
-		<a class="text-sm text-slate-300 hover:text-slate-100" href={withBase('/writing/')}>
-			← Back to writing
-		</a>
+		<a class="text-sm text-slate-300 hover:text-slate-100" href={withBase('/writing/')}>← Back to writing</a>
 	</section>
 </SiteLayout>
 
-<script is:inline define:vars={{ events: enriched }}>
-	const EVENT_DATA = events;
-	const KEY = 'adamboas.radar.view.v1';
+<script is:inline>
+	const KEY = 'adamboas.radar.view.v2';
 
-	const el = {
+	const controls = {
 		q: document.getElementById('radar-q'),
 		branch: document.getElementById('radar-branch'),
 		type: document.getElementById('radar-type'),
 		status: document.getElementById('radar-status'),
 		sort: document.getElementById('radar-sort'),
-		list: document.getElementById('radar-list'),
-		map: document.getElementById('radar-map'),
-		count: document.getElementById('radar-count'),
-		briefOut: document.getElementById('radar-brief-output'),
 		save: document.getElementById('radar-save'),
 		load: document.getElementById('radar-load'),
 		share: document.getElementById('radar-share'),
@@ -365,29 +349,39 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 		brief: document.getElementById('radar-brief'),
 	};
 
-	function parseDate(d) {
-		return d ? new Date(d).getTime() : null;
+	const list = document.getElementById('radar-list');
+	const count = document.getElementById('radar-count');
+	const empty = document.getElementById('radar-empty');
+	const map = document.getElementById('radar-map');
+	const briefOutput = document.getElementById('radar-brief-output');
+	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
+	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
+
+	function parseDate(value) {
+		if (!value) return null;
+		const ms = new Date(value).getTime();
+		return Number.isNaN(ms) ? null : ms;
 	}
 
 	function stateFromUI() {
 		return {
-			q: el.q.value.trim(),
-			branch: el.branch.value,
-			type: el.type.value,
-			status: el.status.value,
-			sort: el.sort.value,
+			q: controls.q.value.trim(),
+			branch: controls.branch.value,
+			type: controls.type.value,
+			status: controls.status.value,
+			sort: controls.sort.value,
 		};
 	}
 
 	function applyState(state) {
-		el.q.value = state.q || '';
-		el.branch.value = state.branch || '';
-		el.type.value = state.type || '';
-		el.status.value = state.status || '';
-		el.sort.value = state.sort || 'score';
+		controls.q.value = state.q || '';
+		controls.branch.value = state.branch || '';
+		controls.type.value = state.type || '';
+		controls.status.value = state.status || '';
+		controls.sort.value = state.sort || 'score';
 	}
 
-	function toQueryString(state) {
+	function toQuery(state) {
 		const params = new URLSearchParams();
 		Object.entries(state).forEach(([k, v]) => {
 			if (v) params.set(k, String(v));
@@ -395,7 +389,7 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 		return params.toString();
 	}
 
-	function loadFromUrl() {
+	function applyUrlState() {
 		const params = new URLSearchParams(window.location.search);
 		applyState({
 			q: params.get('q') || '',
@@ -406,118 +400,90 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 		});
 	}
 
-	function getFiltered() {
+	function scoreTone(score) {
+		if (score >= 80) return 'high';
+		if (score >= 60) return 'mid';
+		return 'low';
+	}
+
+	function mapProjection(lat, lng) {
+		const minLng = -130;
+		const maxLng = 20;
+		const minLat = 22;
+		const maxLat = 56;
+		const x = ((lng - minLng) / (maxLng - minLng)) * 100;
+		const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
+		return { x: Math.min(98, Math.max(2, x)), y: Math.min(95, Math.max(5, y)) };
+	}
+
+	function renderMap(visibleCards) {
+		map.innerHTML = '';
+		for (const card of visibleCards) {
+			const lat = Number(card.dataset.lat);
+			const lng = Number(card.dataset.lng);
+			if (Number.isNaN(lat) || Number.isNaN(lng)) continue;
+			const score = Number(card.dataset.score || '0');
+			const p = mapProjection(lat, lng);
+			const marker = document.createElement('button');
+			marker.type = 'button';
+			marker.className = `radar-marker radar-marker-${scoreTone(score)}`;
+			marker.style.left = `${p.x}%`;
+			marker.style.top = `${p.y}%`;
+			const heading = card.querySelector('h3')?.textContent || 'Event';
+			marker.title = `${heading} | Score ${score}`;
+			marker.setAttribute('aria-label', `${heading}, score ${score}`);
+			marker.addEventListener('click', () => card.scrollIntoView({ behavior: 'smooth', block: 'center' }));
+			map.appendChild(marker);
+		}
+	}
+
+	function getVisibleCards() {
 		const state = stateFromUI();
 		const q = state.q.toLowerCase();
-		const filtered = EVENT_DATA.filter((event) => {
-			if (state.branch && event.branch !== state.branch) return false;
-			if (state.type && event.type !== state.type) return false;
-			if (state.status && event.status !== state.status) return false;
+		const visible = cards.filter((card) => {
+			if (state.branch && card.dataset.branch !== state.branch) return false;
+			if (state.type && card.dataset.type !== state.type) return false;
+			if (state.status && card.dataset.status !== state.status) return false;
 			if (!q) return true;
-			const hay = `${event.title} ${event.branch} ${event.type} ${event.city} ${event.state || ''} ${event.status}`.toLowerCase();
-			return hay.includes(q);
+			return (card.dataset.search || '').includes(q);
 		});
 
 		if (state.sort === 'date') {
-			filtered.sort((a, b) => {
-				const da = parseDate(a.startDate);
-				const db = parseDate(b.startDate);
-				if (da === null && db === null) return b.score - a.score;
+			visible.sort((a, b) => {
+				const da = parseDate(a.dataset.date || '');
+				const db = parseDate(b.dataset.date || '');
+				if (da === null && db === null) return Number(b.dataset.score) - Number(a.dataset.score);
 				if (da === null) return 1;
 				if (db === null) return -1;
 				return da - db;
 			});
 		} else if (state.sort === 'signal') {
-			const s = { High: 3, Medium: 2, Low: 1 };
-			filtered.sort((a, b) => (s[b.signal] - s[a.signal]) || (b.score - a.score));
+			const rank = { High: 3, Medium: 2, Low: 1 };
+			visible.sort((a, b) => (rank[b.dataset.signal] - rank[a.dataset.signal]) || (Number(b.dataset.score) - Number(a.dataset.score)));
+		} else if (state.sort === 'meta') {
+			visible.sort((a, b) => Number(b.dataset.meta) - Number(a.dataset.meta) || Number(b.dataset.score) - Number(a.dataset.score));
 		} else {
-			filtered.sort((a, b) => b.score - a.score || (parseDate(a.startDate) ?? 9e15) - (parseDate(b.startDate) ?? 9e15));
+			visible.sort((a, b) => Number(b.dataset.score) - Number(a.dataset.score));
 		}
 
-		const qs = toQueryString(state);
-		const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
-		history.replaceState(null, '', url);
-		return filtered;
-	}
-
-	function fmtDate(event) {
-		if (!event.startDate) return 'Date pending';
-		const d = new Date(event.startDate);
-		return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
-	}
-
-	function locationLabel(event) {
-		return event.state ? `${event.city}, ${event.state}` : event.city;
-	}
-
-	function mapProjection(lat, lng) {
-		const minLng = -125;
-		const maxLng = 10;
-		const minLat = 24;
-		const maxLat = 55;
-		const x = ((lng - minLng) / (maxLng - minLng)) * 100;
-		const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
-		return { x: Math.min(98, Math.max(2, x)), y: Math.min(96, Math.max(4, y)) };
-	}
-
-	function scoreTone(score) {
-		if (score >= 85) return 'high';
-		if (score >= 65) return 'mid';
-		return 'low';
-	}
-
-	function renderMap(items) {
-		el.map.innerHTML = '';
-		for (const event of items) {
-			const p = mapProjection(event.lat, event.lng);
-			const marker = document.createElement('button');
-			marker.type = 'button';
-			marker.className = `radar-marker radar-marker-${scoreTone(event.score)}`;
-			marker.style.left = `${p.x}%`;
-			marker.style.top = `${p.y}%`;
-			marker.setAttribute('aria-label', `${event.title}, ${locationLabel(event)}`);
-			marker.title = `${event.title}\n${locationLabel(event)}\nScore ${event.score}`;
-			marker.addEventListener('click', () => {
-				const row = document.querySelector(`[data-event-row="${event.id}"]`);
-				if (row) row.scrollIntoView({ behavior: 'smooth', block: 'center' });
-			});
-			el.map.appendChild(marker);
-		}
-	}
-
-	function renderList(items) {
-		el.list.innerHTML = '';
-		if (!items.length) {
-			const li = document.createElement('li');
-			li.className = 'rounded-none border border-slate-800 bg-slate-950/50 p-4 text-sm text-slate-300';
-			li.textContent = 'No opportunities match current filters.';
-			el.list.appendChild(li);
-			return;
-		}
-
-		for (const event of items) {
-			const li = document.createElement('li');
-			li.className = 'rounded-none border border-slate-800 bg-slate-950/50 p-4';
-			li.dataset.eventRow = event.id;
-			li.innerHTML = `
-				<div class="flex flex-wrap items-start justify-between gap-3">
-					<div class="min-w-0">
-						<p class="text-xs uppercase tracking-wide text-slate-400">${event.branch} · ${event.type} · ${event.status}</p>
-						<h3 class="mt-1 text-sm font-semibold text-slate-50 sm:text-base">${event.title}</h3>
-						<p class="mt-1 text-xs text-slate-300">${locationLabel(event)} · ${fmtDate(event)}</p>
-					</div>
-					<div class="rounded-none border border-slate-700 px-3 py-1 text-sm font-semibold text-slate-100">Score ${event.score}</div>
-				</div>
-			`;
-			el.list.appendChild(li);
-		}
+		return { visible, state };
 	}
 
 	function render() {
-		const items = getFiltered();
-		renderMap(items);
-		renderList(items);
-		el.count.textContent = `${items.length} item${items.length === 1 ? '' : 's'} shown`;
+		const { visible, state } = getVisibleCards();
+		for (const card of cards) card.classList.add('hidden');
+		for (const card of visible) {
+			card.classList.remove('hidden');
+			list.appendChild(card);
+		}
+
+		empty.classList.toggle('hidden', visible.length > 0);
+		count.textContent = `${visible.length} of ${cards.length} items shown`;
+		renderMap(visible);
+
+		const query = toQuery(state);
+		const href = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+		history.replaceState(null, '', href);
 	}
 
 	function saveView() {
@@ -532,54 +498,57 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 			applyState(state);
 			render();
 		} catch {
-			/* ignore bad saved state */
+			/* ignore */
 		}
 	}
 
 	async function copyShare() {
 		await navigator.clipboard.writeText(window.location.href);
-		el.share.textContent = 'Copied';
-		setTimeout(() => (el.share.textContent = 'Copy share link'), 1200);
+		controls.share.textContent = 'Copied';
+		setTimeout(() => (controls.share.textContent = 'Copy share link'), 1200);
 	}
 
 	async function buildBrief() {
-		const top = getFiltered().slice(0, 5);
-		if (!top.length) {
-			el.briefOut.classList.remove('hidden');
-			el.briefOut.textContent = 'No items selected.';
-			return;
-		}
-		const lines = [
-			'# Radar Brief Draft',
-			'',
-			`Generated: ${new Date().toLocaleString()}`,
-			'',
-			'## Top Opportunities',
-			'',
-			...top.map((event, i) => `${i + 1}. ${event.title} (${event.branch}, score ${event.score}) - ${fmtDate(event)} - ${locationLabel(event)}`),
-			'',
-			'## Why these',
-			'- Highest weighted score under current filter state',
-			'- Prioritized for near-term dates and lower execution effort',
-		];
-		const body = lines.join('\n');
-		el.briefOut.classList.remove('hidden');
-		el.briefOut.textContent = body;
-		await navigator.clipboard.writeText(body);
+		const { visible } = getVisibleCards();
+		const top = visible.slice(0, 6).map((card, i) => {
+			const title = card.querySelector('h3')?.textContent?.trim() || 'Untitled';
+			const meta = card.querySelector('p:last-of-type')?.textContent?.trim() || '';
+			const score = card.dataset.score;
+			return `${i + 1}. ${title} (score ${score}) - ${meta}`;
+		});
+
+		const text = ['# Radar Brief Draft', '', `Generated: ${new Date().toLocaleString()}`, '', '## Prioritized opportunities', '', ...top, '', '## Notes', '- Auto-generated from current filter state', '- Review provenance confidence before external use'].join('\n');
+		briefOutput.classList.remove('hidden');
+		briefOutput.textContent = text;
+		await navigator.clipboard.writeText(text);
 	}
 
-	const watched = [el.q, el.branch, el.type, el.status, el.sort];
-	watched.forEach((node) => node.addEventListener('input', render));
-	el.save.addEventListener('click', saveView);
-	el.load.addEventListener('click', loadView);
-	el.share.addEventListener('click', copyShare);
-	el.reset.addEventListener('click', () => {
+	function applyPreset(name) {
+		if (name === 'near-term') {
+			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'date' });
+		} else if (name === 'high-confidence') {
+			applyState({ q: 'confidence high', branch: '', type: '', status: '', sort: 'score' });
+		} else if (name === 'needs-dates') {
+			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'meta' });
+		}
+		render();
+	}
+
+	[controls.q, controls.branch, controls.type, controls.status, controls.sort].forEach((node) => node.addEventListener('input', render));
+	controls.save.addEventListener('click', saveView);
+	controls.load.addEventListener('click', loadView);
+	controls.share.addEventListener('click', copyShare);
+	controls.reset.addEventListener('click', () => {
 		applyState({ q: '', branch: '', type: '', status: '', sort: 'score' });
 		render();
 	});
-	el.brief.addEventListener('click', buildBrief);
+	controls.brief.addEventListener('click', buildBrief);
 
-	loadFromUrl();
+	for (const btn of presetButtons) {
+		btn.addEventListener('click', () => applyPreset(btn.dataset.preset));
+	}
+
+	applyUrlState();
 	render();
 </script>
 
@@ -589,19 +558,21 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 		background: rgba(2, 6, 23, 0.55);
 		padding: 0.85rem 1rem;
 	}
-	.radar-stat-label {
+	.radar-stat span {
 		display: block;
-		font-size: 0.7rem;
+		font-size: 0.67rem;
 		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		color: rgba(148, 163, 184, 0.9);
+		letter-spacing: 0.1em;
+		color: rgba(148, 163, 184, 0.95);
 	}
-	.radar-stat-value {
+	.radar-stat strong {
 		display: block;
-		margin-top: 0.2rem;
-		font-size: 1.4rem;
+		margin-top: 0.25rem;
+		font-size: 1.35rem;
 		line-height: 1.1;
+		color: rgba(241, 245, 249, 0.97);
 	}
+
 	.radar-input {
 		width: 100%;
 		border: 1px solid rgba(51, 65, 85, 0.95);
@@ -615,33 +586,62 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 		background: rgba(2, 6, 23, 0.7);
 		color: rgb(226, 232, 240);
 		padding: 0.5rem 0.625rem;
-		font-size: 0.825rem;
+		font-size: 0.8rem;
 		text-align: left;
 	}
 	.radar-btn:hover {
-		background: rgba(15, 23, 42, 0.9);
+		background: rgba(15, 23, 42, 0.95);
 	}
+
+	.radar-summary {
+		cursor: pointer;
+		font-size: 0.82rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(226, 232, 240, 0.95);
+	}
+
+	.radar-key-block {
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		background: rgba(2, 6, 23, 0.5);
+		padding: 0.6rem 0.75rem;
+	}
+	.radar-key-block strong {
+		display: block;
+		font-size: 0.78rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.radar-key-block ul,
+	.radar-key-block ol {
+		margin-top: 0.4rem;
+		padding-left: 1rem;
+		line-height: 1.5;
+	}
+
 	.radar-map {
 		position: relative;
 		height: 360px;
 		border: 1px solid rgba(30, 41, 59, 0.95);
 		background:
-			radial-gradient(circle at 20% 45%, rgba(0, 166, 166, 0.12), transparent 28%),
-			radial-gradient(circle at 72% 28%, rgba(212, 165, 116, 0.12), transparent 26%),
-			repeating-linear-gradient(0deg, rgba(100, 116, 139, 0.12), rgba(100, 116, 139, 0.12) 1px, transparent 1px, transparent 28px),
-			repeating-linear-gradient(90deg, rgba(100, 116, 139, 0.12), rgba(100, 116, 139, 0.12) 1px, transparent 1px, transparent 28px),
+			radial-gradient(circle at 22% 45%, rgba(0, 166, 166, 0.13), transparent 30%),
+			radial-gradient(circle at 73% 27%, rgba(212, 165, 116, 0.14), transparent 28%),
+			repeating-linear-gradient(0deg, rgba(100, 116, 139, 0.11), rgba(100, 116, 139, 0.11) 1px, transparent 1px, transparent 28px),
+			repeating-linear-gradient(90deg, rgba(100, 116, 139, 0.11), rgba(100, 116, 139, 0.11) 1px, transparent 1px, transparent 28px),
 			rgba(2, 6, 23, 0.85);
 		overflow: hidden;
 	}
 	.radar-map::before {
-		content: 'North America + Europe theater';
+		content: 'North America + Europe theater view';
 		position: absolute;
 		right: 0.75rem;
-		top: 0.5rem;
-		font-size: 0.7rem;
+		top: 0.55rem;
+		font-size: 0.67rem;
 		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		color: rgba(148, 163, 184, 0.8);
+		letter-spacing: 0.08em;
+		color: rgba(148, 163, 184, 0.85);
 	}
 	.radar-marker {
 		position: absolute;
@@ -657,21 +657,81 @@ const topScore = Math.max(...enriched.map((e) => e.score));
 		background: rgba(212, 165, 116, 1);
 	}
 	.radar-marker-mid {
-		background: rgba(0, 196, 196, 0.95);
+		background: rgba(0, 196, 196, 0.97);
 	}
 	.radar-marker-low {
-		background: rgba(148, 163, 184, 0.9);
+		background: rgba(148, 163, 184, 0.95);
 	}
 	.radar-marker:hover {
-		transform: translate(-50%, -50%) scale(1.16);
+		transform: translate(-50%, -50%) scale(1.15);
 	}
+
+	.radar-card {
+		border: 1px solid rgba(30, 41, 59, 0.95);
+		background: rgba(2, 6, 23, 0.5);
+		padding: 1rem;
+	}
+	.radar-score-chip {
+		border: 1px solid rgba(71, 85, 105, 0.95);
+		background: rgba(2, 6, 23, 0.9);
+		padding: 0.35rem 0.65rem;
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: rgba(241, 245, 249, 0.95);
+	}
+	.radar-pill {
+		border: 1px solid rgba(0, 166, 166, 0.22);
+		background: rgba(0, 166, 166, 0.11);
+		padding: 0.22rem 0.46rem;
+		font-size: 0.68rem;
+		color: rgba(226, 232, 240, 0.93);
+	}
+
+	.radar-details summary {
+		cursor: pointer;
+		font-size: 0.78rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(203, 213, 225, 0.95);
+	}
+	.radar-section-label {
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.radar-listing {
+		margin-top: 0.35rem;
+		padding-left: 1rem;
+		font-size: 0.83rem;
+		line-height: 1.45;
+		color: rgba(203, 213, 225, 0.96);
+	}
+	.radar-score-list {
+		list-style: none;
+		padding-left: 0;
+		display: grid;
+		gap: 0.25rem;
+	}
+	.radar-score-list li {
+		display: flex;
+		justify-content: space-between;
+		border: 1px solid rgba(51, 65, 85, 0.6);
+		padding: 0.25rem 0.45rem;
+	}
+	.radar-score-list .radar-total {
+		border-color: rgba(0, 166, 166, 0.45);
+		background: rgba(0, 166, 166, 0.1);
+	}
+
 	.radar-brief-output {
-		margin-top: 0.75rem;
+		margin-top: 0.8rem;
 		border: 1px solid rgba(51, 65, 85, 0.95);
 		background: rgba(2, 6, 23, 0.7);
-		padding: 0.75rem;
+		padding: 0.8rem;
 		font-size: 0.75rem;
-		line-height: 1.45;
+		line-height: 1.5;
 		white-space: pre-wrap;
 	}
 </style>
