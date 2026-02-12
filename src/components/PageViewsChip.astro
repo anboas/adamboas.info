@@ -31,10 +31,11 @@ const pageviews =
 				? pvAltWithBase
 				: null;
 const dateRange = (plausible as any)?.meta?.dateRange || '30d';
+const hasPlausibleSnapshot = !!(plausible as any)?.meta;
 ---
 
-{pageviews !== null ? (
+{hasPlausibleSnapshot ? (
 	<span class="pageviews-chip rounded-full border px-2 py-1 text-xs">
-		{pageviews.toLocaleString()} views ({dateRange})
+		{(pageviews ?? 0).toLocaleString()} views ({dateRange})
 	</span>
 ) : null}
