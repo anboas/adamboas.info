@@ -9,12 +9,15 @@ export async function GET(context) {
 
 	const writingItems = writing
 		.filter((w) => w.data.status === 'published')
-		.map((w) => ({
-			title: w.data.title,
-			description: w.data.summary ?? '',
-			pubDate: w.data.date,
-			link: `${new URL(`writing/${w.id}/`, context.site).toString()}`,
-		}));
+		.map((w) => {
+			const slug = w.id.split('/').pop();
+			return {
+				title: w.data.title,
+				description: w.data.summary ?? '',
+				pubDate: w.data.date,
+				link: `${new URL(`writing/${slug}/`, context.site).toString()}`,
+			};
+		});
 
 	const paperItems = papers
 		.filter((p) => p.data.status === 'published')

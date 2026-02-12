@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const BASE = process.env.SITE_BASE ?? 'https://anboas.github.io/adamboas.info';
+const BASE = process.env.SITE_BASE ?? 'https://www.adamboas.com';
 
 const paths = [
   '/',

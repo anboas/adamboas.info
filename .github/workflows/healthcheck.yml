@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Fetch key pages
         env:
-          BASE: https://anboas.github.io/adamboas.info
+          BASE: https://www.adamboas.com
         run: |
           set -euo pipefail
           urls=(
