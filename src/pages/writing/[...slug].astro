@@ -169,41 +169,42 @@ if (kind === 'paper') {
 		/>
 	) : null}
 	{kind === 'paper' ? (
+		<>
+			<div class="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+				<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
+					← Writing
+				</a>
+				<div class="flex flex-wrap items-center gap-2">
+					{paper.data.pdfPath && (
+						<a
+							class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+							href={withBase(paper.data.pdfPath)}
+							target="_blank"
+							rel="noreferrer"
+							data-track="Writing: Open PDF"
+							data-track-props={JSON.stringify({ slug: paper.id, kind: 'paper' })}
+						>
+							<span>PDF</span>
+							{pdfInfo && (
+								<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
+									{pdfInfo.pages ? `${pdfInfo.pages}p` : ''}{pdfInfo.pages && pdfInfo.size ? ' • ' : ''}{pdfInfo.size ? pdfInfo.size : ''}
+								</span>
+							)}
+						</a>
+					)}
+					<button
+						type="button"
+						class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+						data-copy-link
+						data-track="Writing: Copy Link"
+					>
+						Copy link
+					</button>
+					<a data-track="Contact: Paper CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
+				</div>
+			</div>
 		<article class="card p-8" data-paper-style="dossier" data-writing-type="paper">
 			<header>
-				<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-					<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
-						← Writing
-					</a>
-					<div class="flex flex-wrap items-center gap-2">
-						{paper.data.pdfPath && (
-							<a
-								class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
-								href={withBase(paper.data.pdfPath)}
-								target="_blank"
-								rel="noreferrer"
-								data-track="Writing: Open PDF"
-								data-track-props={JSON.stringify({ slug: paper.id, kind: 'paper' })}
-							>
-								<span>PDF</span>
-								{pdfInfo && (
-									<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
-										{pdfInfo.pages ? `${pdfInfo.pages}p` : ''}{pdfInfo.pages && pdfInfo.size ? ' • ' : ''}{pdfInfo.size ? pdfInfo.size : ''}
-									</span>
-								)}
-							</a>
-						)}
-						<button
-							type="button"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
-							data-copy-link
-							data-track="Writing: Copy Link"
-						>
-							Copy link
-						</button>
-						<a data-track="Contact: Paper CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
-					</div>
-				</div>
 				<div class="mt-4 min-w-0">
 					<h1 class="text-2xl font-semibold text-slate-50">{paper.data.title}</h1>
 					{paper.data.description && <p class="mt-2 text-slate-300">{paper.data.description}</p>}
@@ -246,42 +247,44 @@ if (kind === 'paper') {
 				);
 			})()}
 		</article>
+		</>
 	) : (
+		<>
+			<div class="mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+				<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
+					← Writing
+				</a>
+				<div class="flex flex-wrap items-center gap-2">
+					{writingItem.data.pdfPath ? (
+						<a
+							class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+							href={withBase(writingItem.data.pdfPath)}
+							target="_blank"
+							rel="noreferrer"
+							data-track="Writing: Open PDF"
+							data-track-props={JSON.stringify({ slug: writingItem.id.split('/').pop(), kind: writingItem.data.type })}
+						>
+							<span>PDF</span>
+							{writingPdfInfo && (
+								<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
+									{writingPdfInfo.pages ? `${writingPdfInfo.pages}p` : ''}{writingPdfInfo.pages && writingPdfInfo.size ? ' • ' : ''}{writingPdfInfo.size ? writingPdfInfo.size : ''}
+								</span>
+							)}
+						</a>
+					) : null}
+					<button
+						type="button"
+						class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+						data-copy-link
+						data-track="Writing: Copy Link"
+					>
+						Copy link
+					</button>
+					<a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
+				</div>
+			</div>
 		<article class="card p-8" data-writing-type={writingItem.data.type} data-paper-style="dossier">
 			<header>
-				<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-					<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
-						← Writing
-					</a>
-					<div class="flex flex-wrap items-center gap-2">
-						{writingItem.data.pdfPath ? (
-							<a
-								class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
-								href={withBase(writingItem.data.pdfPath)}
-								target="_blank"
-								rel="noreferrer"
-								data-track="Writing: Open PDF"
-								data-track-props={JSON.stringify({ slug: writingItem.id.split('/').pop(), kind: writingItem.data.type })}
-							>
-								<span>PDF</span>
-								{writingPdfInfo && (
-									<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
-										{writingPdfInfo.pages ? `${writingPdfInfo.pages}p` : ''}{writingPdfInfo.pages && writingPdfInfo.size ? ' • ' : ''}{writingPdfInfo.size ? writingPdfInfo.size : ''}
-									</span>
-								)}
-							</a>
-						) : null}
-						<button
-							type="button"
-							class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
-							data-copy-link
-							data-track="Writing: Copy Link"
-						>
-							Copy link
-						</button>
-						<a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
-					</div>
-				</div>
 				<div class="mt-4 min-w-0">
 					<h1 class="text-2xl font-semibold text-slate-50">{writingItem.data.title}</h1>
 					{writingItem.data.summary && <p class="mt-2 text-slate-300">{writingItem.data.summary}</p>}
@@ -325,5 +328,6 @@ if (kind === 'paper') {
 				);
 			})()}
 		</article>
+		</>
 	)}
 </SiteLayout>
