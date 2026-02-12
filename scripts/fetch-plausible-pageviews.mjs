@@ -27,8 +27,8 @@ async function writeEmpty({ siteId, dateRange, note }) {
 }
 
 async function main() {
-	const apiKey = process.env.PLAUSIBLE_API_KEY;
-	const siteId = process.env.PLAUSIBLE_SITE_ID;
+	const apiKey = (process.env.PLAUSIBLE_API_KEY || '').trim();
+	const siteId = (process.env.PLAUSIBLE_SITE_ID || '').trim();
 	const dateRange = process.env.PLAUSIBLE_DATE_RANGE || '30d';
 
 	if (!apiKey || !siteId) {
