@@ -70,8 +70,12 @@ async function main() {
 
 		const pageviewsByPath = {};
 		for (const r of rows) {
-			const rawPath = r?.dimensions?.['event:page'] ?? r?.dimensions?.event?.page ?? r?.dimensions?.page ?? null;
-			const pv = r?.metrics?.pageviews ?? r?.metrics?.['pageviews'] ?? null;
+			// Plausible v2 returns arrays aligned with the requested dimensions/metrics.
+			// Example: { metrics: [23], dimensions: ["/writing/acp-ra/"] }
+			const rawPath = Array.isArray(r?.dimensions)
+				? r.dimensions[0]
+				: r?.dimensions?.['event:page'] ?? r?.dimensions?.event?.page ?? r?.dimensions?.page ?? null;
+			const pv = Array.isArray(r?.metrics) ? r.metrics[0] : r?.metrics?.pageviews ?? r?.metrics?.['pageviews'] ?? null;
 			const key = normalizePath(rawPath);
 			if (!key) continue;
 			if (typeof pv !== 'number') continue;
