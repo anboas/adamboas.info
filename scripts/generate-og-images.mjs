@@ -45,23 +45,30 @@ function splitTitleLines(text = '', maxChars = 30, maxLines = 2) {
   const lines = [];
   let current = '';
 
-  for (const w of words) {
-    const next = current ? `${current} ${w}` : w;
+  for (const word of words) {
+    const next = current ? `${current} ${word}` : word;
+
     if (next.length <= maxChars) {
       current = next;
       continue;
     }
 
-    if (current) lines.push(current);
-    current = w;
+    if (current) {
+      lines.push(current);
+      current = word;
+    } else {
+      // Single very long token (rare): hard clip token itself
+      lines.push(clip(word, maxChars));
+      current = '';
+    }
 
     if (lines.length >= maxLines - 1) break;
   }
 
   if (lines.length < maxLines && current) lines.push(current);
 
-  const consumed = lines.join(' ').split(' ').length;
-  if (consumed < words.length) {
+  const consumedWords = lines.join(' ').split(' ').filter(Boolean).length;
+  if (consumedWords < words.length) {
     lines[lines.length - 1] = clip(lines[lines.length - 1], Math.max(8, maxChars - 1));
     if (!lines[lines.length - 1].endsWith('…')) lines[lines.length - 1] += '…';
   }
@@ -69,13 +76,27 @@ function splitTitleLines(text = '', maxChars = 30, maxLines = 2) {
   return lines.slice(0, maxLines);
 }
 
-function svgTemplate({ accent, title, subtitle, kicker = 'adamboas.com' }) {
-  const titleLines = splitTitleLines(title, 30, 2);
+function svgTemplate({
+  accent,
+  title,
+  subtitle,
+  kicker = 'adamboas.com',
+  titleSize = 66,
+  titleY = 294,
+  titleLineGap = Math.round(66 * 1.12),
+  maxTitleChars = 30,
+  maxTitleLines = 2,
+  subtitleSize = 32,
+  subtitleMax = 84,
+}) {
+  const titleLines = splitTitleLines(title, maxTitleChars, maxTitleLines);
   const titleSpans = titleLines
-    .map((line, i) => `<tspan x="90" dy="${i === 0 ? 0 : 74}">${escapeXml(line)}</tspan>`)
+    .map((line, i) => `<tspan x="90" dy="${i === 0 ? 0 : titleLineGap}">${escapeXml(line)}</tspan>`)
     .join('');
 
-  const subtitleY = titleLines.length > 1 ? 456 : 384;
+  const computedSubtitleY = titleY + (titleLines.length - 1) * titleLineGap + Math.round(titleSize * 1.45);
+  const subtitleY = Math.min(computedSubtitleY, 520);
+  const ruleY = Math.min(subtitleY + Math.round(subtitleSize * 1.3), 575);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeXml(title)}">
@@ -89,9 +110,9 @@ function svgTemplate({ accent, title, subtitle, kicker = 'adamboas.com' }) {
   <rect x="0" y="0" width="14" height="630" fill="${accent}"/>
   <rect x="48" y="48" width="1104" height="534" fill="none" stroke="rgba(148,163,184,0.18)" stroke-width="2"/>
   <text x="90" y="130" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">${escapeXml(kicker)}</text>
-  <text x="90" y="294" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="66" font-weight="800" fill="#f8fafc">${titleSpans}</text>
-  <text x="90" y="${subtitleY}" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="500" fill="#cbd5e1">${escapeXml(clip(subtitle, 84))}</text>
-  <rect x="90" y="${subtitleY + 42}" width="460" height="2" fill="${accent}" opacity="0.85"/>
+  <text x="90" y="${titleY}" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="${titleSize}" font-weight="800" fill="#f8fafc">${titleSpans}</text>
+  <text x="90" y="${subtitleY}" font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="${subtitleSize}" font-weight="500" fill="#cbd5e1">${escapeXml(clip(subtitle, subtitleMax))}</text>
+  <rect x="90" y="${ruleY}" width="460" height="2" fill="${accent}" opacity="0.85"/>
 </svg>`;
 }
 
@@ -152,6 +173,13 @@ async function collectWritingCards() {
       title,
       subtitle,
       kicker: `adamboas.com · ${type.toUpperCase()}${date ? ` · ${date}` : ''}`,
+      titleSize: 56,
+      titleY: 258,
+      titleLineGap: 62,
+      maxTitleChars: 24,
+      maxTitleLines: 3,
+      subtitleSize: 28,
+      subtitleMax: 68,
     });
   }
 
@@ -176,6 +204,13 @@ async function collectWritingCards() {
       title,
       subtitle,
       kicker: `adamboas.com · PAPER${date ? ` · ${date}` : ''}`,
+      titleSize: 56,
+      titleY: 258,
+      titleLineGap: 62,
+      maxTitleChars: 24,
+      maxTitleLines: 3,
+      subtitleSize: 28,
+      subtitleMax: 68,
     });
   }
 
