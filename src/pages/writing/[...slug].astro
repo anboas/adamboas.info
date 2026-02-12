@@ -9,6 +9,7 @@ function navLink(label: string, item: NavItem | null) {
 
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import PageViewsChip from '../../components/PageViewsChip.astro';
 import { withBase } from '../../utils/withBase';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -165,7 +166,12 @@ if (kind === 'paper') {
 				<div class="min-w-0">
 					<h1 class="text-2xl font-semibold text-slate-50">{paper.data.title}</h1>
 					{paper.data.description && <p class="mt-2 text-slate-300">{paper.data.description}</p>}
-					{paper.data.date && <p class="mt-2 text-sm text-slate-400">{paper.data.date.toISOString().slice(0, 10)}</p>}
+					{paper.data.date && (
+						<div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-400">
+							<span>{paper.data.date.toISOString().slice(0, 10)}</span>
+							<PageViewsChip pathname={withBase(`/writing/${paper.id}/`)} />
+						</div>
+					)}
 				</div>
 
 				<div class="flex shrink-0 flex-col items-start gap-2">
@@ -239,7 +245,10 @@ if (kind === 'paper') {
 				</div>
 				<div class="mt-4 flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
 					<h1 class="text-2xl font-semibold text-slate-50">{writingItem.data.title}</h1>
-					<span class="text-sm text-slate-400">{writingItem.data.date.toISOString().slice(0, 10)}</span>
+					<div class="flex flex-wrap items-center gap-2 text-sm text-slate-400">
+						<span>{writingItem.data.date.toISOString().slice(0, 10)}</span>
+						<PageViewsChip pathname={withBase(`/writing/${writingItem.id.split('/').pop()}/`)} />
+					</div>
 				</div>
 				<div class="mt-2 flex flex-wrap gap-2 text-xs text-slate-400">
 					<span class="rounded-full border border-slate-700 bg-slate-900/60 px-2 py-1 uppercase tracking-wide text-slate-200">

@@ -29,6 +29,13 @@ jobs:
       - name: Install deps
         run: npm ci
 
+      - name: Fetch Plausible pageview counts (optional)
+        env:
+          PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
+          PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
+          PLAUSIBLE_DATE_RANGE: 30d
+        run: node scripts/fetch-plausible-pageviews.mjs
+
       - name: Lint content frontmatter
         run: npm run lint:content
 

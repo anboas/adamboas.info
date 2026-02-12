@@ -1,0 +1,28 @@
+---
+import plausible from '../generated/plausible-pageviews.json';
+
+const { pathname } = Astro.props as { pathname: string };
+
+function normalizePath(p: string) {
+	let s = (p || '').trim();
+	if (!s.startsWith('/')) s = '/' + s;
+	if (s.length > 1 && s.endsWith('/')) s = s.slice(0, -1);
+	return s;
+}
+
+const key = normalizePath(pathname);
+const pv = (plausible as any)?.pageviewsByPath?.[key];
+
+// Also try without the GitHub Pages base path, if present.
+const alt = key.replace(/^\/adamboas\.info\b/, '') || '/';
+const pvAlt = (plausible as any)?.pageviewsByPath?.[alt];
+
+const pageviews = typeof pv === 'number' ? pv : typeof pvAlt === 'number' ? pvAlt : null;
+const dateRange = (plausible as any)?.meta?.dateRange || '30d';
+---
+
+{pageviews !== null ? (
+	<span class="rounded-full border border-slate-800 bg-slate-950/40 px-2 py-1 text-xs text-slate-300">
+		{pageviews.toLocaleString()} views ({dateRange})
+	</span>
+) : null}
