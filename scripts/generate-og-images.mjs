@@ -96,7 +96,7 @@ function svgTemplate({
 
   const computedSubtitleY = titleY + (titleLines.length - 1) * titleLineGap + Math.round(titleSize * 1.45);
   const subtitleY = Math.min(computedSubtitleY, 520);
-  const ruleY = Math.min(subtitleY + Math.round(subtitleSize * 1.3), 575);
+  const ruleY = Math.min(subtitleY + Math.round(subtitleSize * 1.8), 582);
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${escapeXml(title)}">
@@ -173,13 +173,13 @@ async function collectWritingCards() {
       title,
       subtitle,
       kicker: `adamboas.com · ${type.toUpperCase()}${date ? ` · ${date}` : ''}`,
-      titleSize: 56,
-      titleY: 258,
-      titleLineGap: 62,
-      maxTitleChars: 24,
-      maxTitleLines: 3,
-      subtitleSize: 28,
-      subtitleMax: 68,
+      titleSize: 52,
+      titleY: 252,
+      titleLineGap: 58,
+      maxTitleChars: 22,
+      maxTitleLines: 4,
+      subtitleSize: 26,
+      subtitleMax: 92,
     });
   }
 
@@ -204,13 +204,13 @@ async function collectWritingCards() {
       title,
       subtitle,
       kicker: `adamboas.com · PAPER${date ? ` · ${date}` : ''}`,
-      titleSize: 56,
-      titleY: 258,
-      titleLineGap: 62,
-      maxTitleChars: 24,
-      maxTitleLines: 3,
-      subtitleSize: 28,
-      subtitleMax: 68,
+      titleSize: 52,
+      titleY: 252,
+      titleLineGap: 58,
+      maxTitleChars: 22,
+      maxTitleLines: 4,
+      subtitleSize: 26,
+      subtitleMax: 92,
     });
   }
 
