@@ -161,7 +161,7 @@ if (kind === 'paper') {
 		/>
 	) : null}
 	{kind === 'paper' ? (
-		<article class="card p-8" data-paper-style="dossier">
+		<article class="card p-8" data-paper-style="dossier" data-writing-type="paper">
 			<header class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
 				<div class="min-w-0">
 					<h1 class="text-2xl font-semibold text-slate-50">{paper.data.title}</h1>
@@ -228,7 +228,7 @@ if (kind === 'paper') {
 			})()}
 		</article>
 	) : (
-		<article class="card p-8">
+		<article class="card p-8" data-writing-type={writingItem.data.type}>
 			<header>
 				<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
 					<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
