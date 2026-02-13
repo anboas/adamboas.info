@@ -262,8 +262,8 @@ function mapProjection(lat: number, lng: number) {
 					<p class="text-xs text-slate-500">Click a marker to jump to card</p>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
-					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} role="img" aria-label="North America and Europe theater map">
-						<rect x="0" y="0" width={MAP_W} height={MAP_H} fill="rgba(2,6,23,0.22)"></rect>
+					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} preserveAspectRatio="none" role="img" aria-label="North America and Europe theater map">
+						<rect x="0" y="0" width={MAP_W} height={MAP_H} fill="rgb(2,6,23)"></rect>
 						<g class="radar-map-land">
 							<path d="M70 110 L120 85 L210 88 L250 128 L285 170 L276 218 L240 252 L194 260 L160 286 L112 292 L74 270 L52 226 L50 176 Z"></path>
 							<path d="M314 235 L360 218 L386 234 L382 270 L340 286 L308 266 Z"></path>
@@ -835,7 +835,7 @@ function mapProjection(lat: number, lng: number) {
 <style>
 	.radar-stat {
 		border: 1px solid rgba(30, 41, 59, 0.95);
-		background: rgba(2, 6, 23, 0.55);
+		background: rgb(2, 6, 23);
 		padding: 0.85rem 1rem;
 	}
 	.radar-stat span {
@@ -856,14 +856,14 @@ function mapProjection(lat: number, lng: number) {
 	.radar-input {
 		width: 100%;
 		border: 1px solid rgba(51, 65, 85, 0.95);
-		background: rgba(2, 6, 23, 0.7);
+		background: rgb(2, 6, 23);
 		color: rgb(226, 232, 240);
 		padding: 0.5rem 0.625rem;
 		border-radius: 0;
 	}
 	.radar-btn {
 		border: 1px solid rgba(51, 65, 85, 0.95);
-		background: rgba(2, 6, 23, 0.7);
+		background: rgb(2, 6, 23);
 		color: rgb(226, 232, 240);
 		padding: 0.5rem 0.625rem;
 		font-size: 0.8rem;
@@ -884,7 +884,7 @@ function mapProjection(lat: number, lng: number) {
 
 	.radar-key-block {
 		border: 1px solid rgba(51, 65, 85, 0.9);
-		background: rgba(2, 6, 23, 0.5);
+		background: rgb(2, 6, 23);
 		padding: 0.6rem 0.75rem;
 	}
 	.radar-key-block strong {
@@ -905,7 +905,7 @@ function mapProjection(lat: number, lng: number) {
 		position: relative;
 		height: 360px;
 		border: 1px solid rgba(30, 41, 59, 0.95);
-		background: rgba(2, 6, 23, 0.9);
+		background: rgb(2, 6, 23);
 		overflow: hidden;
 	}
 	.radar-map-svg {
@@ -948,12 +948,12 @@ function mapProjection(lat: number, lng: number) {
 
 	.radar-card {
 		border: 1px solid rgba(30, 41, 59, 0.95);
-		background: rgba(2, 6, 23, 0.5);
+		background: rgb(2, 6, 23);
 		padding: 1rem;
 	}
 	.radar-score-chip {
 		border: 1px solid rgba(71, 85, 105, 0.95);
-		background: rgba(2, 6, 23, 0.9);
+		background: rgb(2, 6, 23);
 		padding: 0.35rem 0.65rem;
 		font-size: 0.8rem;
 		font-weight: 700;
@@ -1008,7 +1008,7 @@ function mapProjection(lat: number, lng: number) {
 	.radar-brief-output {
 		margin-top: 0.8rem;
 		border: 1px solid rgba(51, 65, 85, 0.95);
-		background: rgba(2, 6, 23, 0.7);
+		background: rgb(2, 6, 23);
 		padding: 0.8rem;
 		font-size: 0.75rem;
 		line-height: 1.5;
@@ -1057,7 +1057,7 @@ function mapProjection(lat: number, lng: number) {
 		align-items: center;
 		gap: 0.45rem;
 		border: 1px solid rgba(51, 65, 85, 0.95);
-		background: rgba(2, 6, 23, 0.54);
+		background: rgb(2, 6, 23);
 		padding: 0.42rem 0.55rem;
 		font-size: 0.78rem;
 		color: rgba(226, 232, 240, 0.93);
@@ -1083,7 +1083,7 @@ function mapProjection(lat: number, lng: number) {
 
 	.radar-pin-btn {
 		border: 1px solid rgba(71, 85, 105, 0.95);
-		background: rgba(2, 6, 23, 0.85);
+		background: rgb(2, 6, 23);
 		padding: 0.32rem 0.52rem;
 		font-size: 0.72rem;
 		color: rgba(226, 232, 240, 0.93);
@@ -1100,7 +1100,7 @@ function mapProjection(lat: number, lng: number) {
 	.radar-pinned {
 		margin-top: 0.8rem;
 		border: 1px solid rgba(71, 85, 105, 0.7);
-		background: rgba(15, 23, 42, 0.55);
+		background: rgb(2, 6, 23);
 		padding: 0.65rem;
 	}
 	.radar-pinned-item {
@@ -1108,6 +1108,7 @@ function mapProjection(lat: number, lng: number) {
 		flex-direction: column;
 		gap: 0.12rem;
 		border: 1px solid rgba(51, 65, 85, 0.7);
+		background: rgb(2, 6, 23);
 		padding: 0.45rem 0.55rem;
 		font-size: 0.78rem;
 		color: rgba(226, 232, 240, 0.95);
