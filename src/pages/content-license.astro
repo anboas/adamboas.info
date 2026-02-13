@@ -1,26 +1,9 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../utils/withBase';
 ---
 
-<SiteLayout
-	title="Content License | Adam Boas"
-	description="Licensing terms for writing and non-code content."
-	canonicalHref="https://www.adamboas.com/content-license/"
->
-	<section class="mt-2 max-w-3xl space-y-4">
-		<h1 class="section-title">Content License</h1>
-		<div class="card p-5 space-y-3 text-sm text-slate-300">
-			<p>
-				Writing and non-code content in this repository are licensed under
-				<strong class="text-slate-100">CC BY-NC-ND 4.0</strong>, unless a file says otherwise.
-			</p>
-			<p>
-				Read the full content terms in the repository:
-				<a href="https://github.com/anboas/adamboas.info/blob/main/CONTENT_LICENSE.md" target="_blank" rel="noreferrer">CONTENT_LICENSE.md</a>.
-			</p>
-			<p>
-				Source owners retain rights to their original third-party materials.
-			</p>
-		</div>
-	</section>
+<SiteLayout title="License | Adam Boas" description="Redirecting…">
+	<meta http-equiv="refresh" content={`0; url=${withBase('/license/#content')}`} />
+	<p class="text-slate-300">Redirecting to <a href={withBase('/license/#content')}>/license/#content</a>…</p>
 </SiteLayout>
