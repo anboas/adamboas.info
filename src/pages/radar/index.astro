@@ -3,21 +3,48 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
-import { scoreEvents } from '../../data/radar/scoring';
 
-const events = scoreEvents(radarEventsSeed);
+const events = radarEventsSeed;
 
 const branches = [...new Set(events.map((e) => e.branch))].sort();
 const types = [...new Set(events.map((e) => e.type))].sort();
 const statuses = ['Upcoming', 'Projected', 'Needs Date', 'Past'] as const;
 
+function daysUntilValue(date: string | null) {
+	if (!date) return null;
+	const target = new Date(date);
+	if (Number.isNaN(target.getTime())) return null;
+	const now = new Date();
+	const targetDay = Date.UTC(target.getFullYear(), target.getMonth(), target.getDate());
+	const nowDay = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+	return Math.round((targetDay - nowDay) / 86_400_000);
+}
+
+function daysUntilBadge(date: string | null) {
+	const days = daysUntilValue(date);
+	if (days === null) return 'Date TBD';
+	if (days === 0) return 'Today';
+	if (days > 0) return `In ${days}d`;
+	return `${Math.abs(days)}d ago`;
+}
+
+function daysUntilDetail(date: string | null) {
+	const days = daysUntilValue(date);
+	if (days === null) return 'Date pending';
+	if (days === 0) return 'Starts today';
+	if (days > 0) return `${days} day(s)`;
+	return `Started ${Math.abs(days)} day(s) ago`;
+}
+
+const nextUpcomingDays = events
+	.map((e) => daysUntilValue(e.startDate))
+	.filter((days): days is number => days !== null && days >= 0);
+
 const summaryStats = {
 	total: events.length,
 	upcoming: events.filter((e) => e.status === 'Upcoming').length,
-	highSignal: events.filter((e) => e.signal === 'High').length,
 	needsDate: events.filter((e) => e.status === 'Needs Date').length,
-	topScore: Math.max(...events.map((e) => e.score.total)),
-	themes: new Set(events.flatMap((e) => e.ontology.themes)).size,
+	nextInDays: nextUpcomingDays.length ? Math.min(...nextUpcomingDays) : null,
 };
 
 function fmtDate(date: string | null) {
@@ -57,7 +84,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 
 <SiteLayout
 	title="Radar | Adam Boas"
-	description="In-depth operations radar prototype with ontology-rich metadata, weighted scoring, and expandable intelligence cards."
+	description="In-depth operations radar prototype with ontology-rich metadata, date-first prioritization, and expandable intelligence cards."
 	canonicalHref="https://www.adamboas.com/radar/"
 >
 	<StickyBrowseBar active="radar" />
@@ -75,7 +102,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			<div class="mt-3 flex flex-wrap gap-2">
 				<span class="radar-mini-stat">{summaryStats.total} items</span>
 				<span class="radar-mini-stat">{summaryStats.upcoming} upcoming</span>
-				<span class="radar-mini-stat">{summaryStats.highSignal} high signal</span>
+				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
 				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 			</div>
 			<details id="radar-filter-panel" class="radar-filter-wrap">
@@ -101,21 +128,16 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 						<summary class="radar-summary">Advanced filters + actions</summary>
 						<div class="mt-3 grid gap-2 sm:grid-cols-2">
 							<select id="radar-sort" class="radar-input sm:col-span-2">
-								<option value="score">Highest score</option>
-								<option value="date">Soonest date</option>
+								<option value="soonest">Soonest first</option>
+								<option value="latest">Latest first</option>
 								<option value="signal">Signal first</option>
-								<option value="meta">Metadata completeness</option>
+								<option value="branch">Branch</option>
 							</select>
-							<label class="block sm:col-span-2">
-								<span class="mb-1 block text-slate-300">Minimum score: <strong id="radar-min-score-label">0</strong></span>
-								<input id="radar-min-score" class="w-full accent-cyan-500" type="range" min="0" max="100" step="1" value="0" />
-							</label>
-							<label class="radar-check"><input id="radar-high-only" type="checkbox" /><span>High signal only</span></label>
 							<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
-							<label class="radar-check sm:col-span-2"><input id="radar-verified-only" type="checkbox" /><span>Verified sources only</span></label>
+							<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified sources only</span></label>
 							<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
 								<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
-								<button class="radar-btn" type="button" data-preset="high-confidence">Preset: high confidence</button>
+								<button class="radar-btn" type="button" data-preset="high-confidence">Preset: verified sources</button>
 								<button class="radar-btn" type="button" data-preset="needs-dates">Preset: needs dates</button>
 							</div>
 							<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
@@ -173,8 +195,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 							class="radar-card"
 							data-event-card
 							data-id={event.id}
-							data-score={event.score.total}
-							data-meta={event.score.metaCompleteness}
+							data-days={daysUntilValue(event.startDate) ?? ''}
 							data-date={event.startDate ?? ''}
 							data-status={event.status}
 							data-type={event.type}
@@ -194,7 +215,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 									<p class="mt-2 text-xs text-slate-400 radar-meta">{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}</p>
 								</div>
 								<div class="flex items-center gap-2">
-									<div class="radar-score-chip">Score {event.score.total}</div>
+									<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
 									<button class="radar-pin-btn" type="button" data-pin-btn data-id={event.id}>Pin</button>
 									<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 								</div>
@@ -251,17 +272,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 								</div>
 
 								<div class="mt-4">
-									<p class="radar-section-label">Score breakdown</p>
-									<ul class="radar-listing radar-score-list">
-										<li><span>Signal</span><strong>{event.score.signal}</strong></li>
-										<li><span>Effort</span><strong>{event.score.effort}</strong></li>
-										<li><span>Status</span><strong>{event.score.status}</strong></li>
-										<li><span>Branch fit</span><strong>{event.score.branchFit}</strong></li>
-										<li><span>Date proximity</span><strong>{event.score.dateProximity}</strong></li>
-										<li><span>Source confidence</span><strong>{event.score.sourceConfidence}</strong></li>
-										<li><span>Metadata completeness</span><strong>{event.score.metaCompleteness}</strong></li>
-										<li><span>Travel penalty</span><strong>{event.score.travelPenalty}</strong></li>
-										<li class="radar-total"><span>Total</span><strong>{event.score.total}</strong></li>
+									<p class="radar-section-label">Timing</p>
+									<ul class="radar-listing">
+										<li><strong>Days until start:</strong> {daysUntilDetail(event.startDate)}</li>
+										<li><strong>Event window:</strong> {fmtDateRange(event.startDate, event.endDate)}</li>
 									</ul>
 								</div>
 
@@ -309,9 +323,6 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		type: document.getElementById('radar-type'),
 		status: document.getElementById('radar-status'),
 		sort: document.getElementById('radar-sort'),
-		minScore: document.getElementById('radar-min-score'),
-		minScoreLabel: document.getElementById('radar-min-score-label'),
-		highOnly: document.getElementById('radar-high-only'),
 		upcomingOnly: document.getElementById('radar-upcoming-only'),
 		verifiedOnly: document.getElementById('radar-verified-only'),
 		toggleMap: document.getElementById('radar-toggle-map'),
@@ -369,10 +380,33 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		localStorage.setItem(PIN_KEY, JSON.stringify(Array.from(pinned)));
 	}
 
-	function scoreTone(score) {
-		if (score >= 80) return 'high';
-		if (score >= 60) return 'mid';
+	function parseDays(value) {
+		if (value === '' || value == null) return null;
+		const days = Number(value);
+		return Number.isFinite(days) ? days : null;
+	}
+
+	function daysTone(days) {
+		if (days == null) return 'low';
+		if (days < 0) return 'low';
+		if (days <= 14) return 'high';
+		if (days <= 45) return 'mid';
 		return 'low';
+	}
+
+	function daysMarker(days) {
+		if (days == null) return '?';
+		if (days < 0) return 'P';
+		if (days === 0) return '0';
+		if (days > 99) return '99+';
+		return String(days);
+	}
+
+	function daysText(days) {
+		if (days == null) return 'Date pending';
+		if (days === 0) return 'Starts today';
+		if (days > 0) return `Starts in ${days} day(s)`;
+		return `Started ${Math.abs(days)} day(s) ago`;
 	}
 
 	function escapeHtml(str) {
@@ -409,8 +443,8 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	}
 
 	for (const card of cards) {
-		const score = Number(card.dataset.score || '0');
-		card.classList.add(`radar-tone-${scoreTone(score)}`);
+		const days = parseDays(card.dataset.days);
+		card.classList.add(`radar-tone-${daysTone(days)}`);
 	}
 
 	const US_BOUNDS = [[24.2, -125.2], [49.6, -66.0]];
@@ -483,10 +517,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		}, { passive: false });
 	}
 
-	function pinIcon(score, tone, id) {
+	function pinIcon(daysLabel, tone, id) {
 		return window.L.divIcon({
 			className: 'radar-leaflet-pin-wrap',
-			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(score)}</span></div>`,
+			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(daysLabel)}</span></div>`,
 			iconSize: [30, 30],
 			iconAnchor: [15, 15],
 		});
@@ -499,7 +533,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		const branch = card.dataset.branch || 'Unknown';
 		const type = card.dataset.type || 'Unknown';
 		const meta = card.querySelector('.radar-meta')?.textContent || '';
-		const score = card.dataset.score || '0';
+		const days = parseDays(card.dataset.days);
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		return `
 			<div class="radar-map-popup">
@@ -507,7 +541,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> ${escapeHtml(branch)} · ${escapeHtml(type)}</div>
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
-					<span class="radar-map-popup-score">Score ${escapeHtml(score)}</span>
+					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
 					<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button>
 				</div>
 			</div>
@@ -589,8 +623,6 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			type: controls.type.value,
 			status: controls.status.value,
 			sort: controls.sort.value,
-			min: Number(controls.minScore.value || 0),
-			high: controls.highOnly.checked,
 			upcoming: controls.upcomingOnly.checked,
 			verified: controls.verifiedOnly.checked,
 		};
@@ -601,10 +633,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		controls.branch.value = state.branch || '';
 		controls.type.value = state.type || '';
 		controls.status.value = state.status || '';
-		controls.sort.value = state.sort || 'score';
-		controls.minScore.value = String(state.min || 0);
-		controls.minScoreLabel.textContent = String(state.min || 0);
-		controls.highOnly.checked = Boolean(state.high);
+		controls.sort.value = state.sort || 'soonest';
 		controls.upcomingOnly.checked = Boolean(state.upcoming);
 		controls.verifiedOnly.checked = Boolean(state.verified);
 	}
@@ -615,9 +644,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		if (state.branch) params.set('branch', state.branch);
 		if (state.type) params.set('type', state.type);
 		if (state.status) params.set('status', state.status);
-		if (state.sort && state.sort !== 'score') params.set('sort', state.sort);
-		if (state.min > 0) params.set('min', String(state.min));
-		if (state.high) params.set('high', '1');
+		if (state.sort && state.sort !== 'soonest') params.set('sort', state.sort);
 		if (state.upcoming) params.set('upcoming', '1');
 		if (state.verified) params.set('verified', '1');
 		return params.toString();
@@ -630,12 +657,19 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			branch: params.get('branch') || '',
 			type: params.get('type') || '',
 			status: params.get('status') || '',
-			sort: params.get('sort') || 'score',
-			min: Number(params.get('min') || 0),
-			high: params.get('high') === '1',
+			sort: params.get('sort') || 'soonest',
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
 		});
+	}
+
+	function sortBySoonest(a, b) {
+		const da = parseDate(a.dataset.date || '');
+		const db = parseDate(b.dataset.date || '');
+		if (da === null && db === null) return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+		if (da === null) return 1;
+		if (db === null) return -1;
+		return da - db;
 	}
 
 	function getVisibleCards() {
@@ -645,30 +679,21 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			if (state.branch && card.dataset.branch !== state.branch) return false;
 			if (state.type && card.dataset.type !== state.type) return false;
 			if (state.status && card.dataset.status !== state.status) return false;
-			if (state.high && card.dataset.signal !== 'High') return false;
 			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
 			if (state.verified && card.dataset.confidence !== 'high') return false;
-			if (Number(card.dataset.score || '0') < state.min) return false;
 			if (!q) return true;
 			return (card.dataset.search || '').includes(q);
 		});
 
-		if (state.sort === 'date') {
-			visible.sort((a, b) => {
-				const da = parseDate(a.dataset.date || '');
-				const db = parseDate(b.dataset.date || '');
-				if (da === null && db === null) return Number(b.dataset.score) - Number(a.dataset.score);
-				if (da === null) return 1;
-				if (db === null) return -1;
-				return da - db;
-			});
+		if (state.sort === 'latest') {
+			visible.sort((a, b) => sortBySoonest(b, a));
 		} else if (state.sort === 'signal') {
 			const rank = { High: 3, Medium: 2, Low: 1 };
-			visible.sort((a, b) => (rank[b.dataset.signal] - rank[a.dataset.signal]) || (Number(b.dataset.score) - Number(a.dataset.score)));
-		} else if (state.sort === 'meta') {
-			visible.sort((a, b) => Number(b.dataset.meta) - Number(a.dataset.meta) || Number(b.dataset.score) - Number(a.dataset.score));
+			visible.sort((a, b) => (rank[b.dataset.signal] - rank[a.dataset.signal]) || sortBySoonest(a, b));
+		} else if (state.sort === 'branch') {
+			visible.sort((a, b) => (a.dataset.branch || '').localeCompare(b.dataset.branch || '') || sortBySoonest(a, b));
 		} else {
-			visible.sort((a, b) => Number(b.dataset.score) - Number(a.dataset.score));
+			visible.sort(sortBySoonest);
 		}
 
 		return { visible, state };
@@ -680,8 +705,6 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		if (state.branch) chips.push(`Branch: ${state.branch}`);
 		if (state.type) chips.push(`Type: ${state.type}`);
 		if (state.status) chips.push(`Status: ${state.status}`);
-		if (state.min > 0) chips.push(`Min score: ${state.min}`);
-		if (state.high) chips.push('High signal');
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('Verified only');
 		if (!chips.length) chips.push('No active filters');
@@ -692,7 +715,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		const entries = Array.from(pinned)
 			.map((id) => cards.find((c) => c.dataset.id === id))
 			.filter(Boolean)
-			.sort((a, b) => Number(b.dataset.score) - Number(a.dataset.score));
+			.sort(sortBySoonest);
 
 		for (const btn of pinButtons) {
 			const id = btn.dataset.id;
@@ -711,9 +734,9 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		pinnedList.innerHTML = entries
 			.map((card) => {
 				const title = card.dataset.title || card.querySelector('h3')?.textContent || 'Untitled';
-				const score = card.dataset.score;
 				const meta = card.querySelector('.radar-meta')?.textContent || '';
-				return `<li class="radar-pinned-item"><span>${title}</span><span class="text-slate-400">${meta} · score ${score}</span></li>`;
+				const days = parseDays(card.dataset.days);
+				return `<li class="radar-pinned-item"><span>${title}</span><span class="text-slate-400">${meta} · ${escapeHtml(daysText(days))}</span></li>`;
 			})
 			.join('');
 	}
@@ -737,9 +760,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			const lat = Number(card.dataset.lat || '');
 			const lng = Number(card.dataset.lng || '');
 			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
-			const tone = scoreTone(Number(card.dataset.score || 0));
+			const days = parseDays(card.dataset.days);
+			const tone = daysTone(days);
 			const eventId = card.dataset.id || '';
-			const marker = window.L.marker([lat, lng], { icon: pinIcon(card.dataset.score || '0', tone, eventId) });
+			const marker = window.L.marker([lat, lng], { icon: pinIcon(daysMarker(days), tone, eventId) });
 			marker.bindPopup(markerPopup(card), { maxWidth: 360 });
 			clusterLayer.addLayer(marker);
 			markerIndex.set(eventId, marker);
@@ -768,7 +792,6 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		mapSection.classList.toggle('hidden', !mapVisible);
 		controls.toggleMap.textContent = mapVisible ? 'Hide map' : 'Show map';
 		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
-		controls.minScoreLabel.textContent = String(state.min);
 
 		empty.classList.toggle('hidden', visible.length > 0);
 		count.textContent = `${visible.length} of ${cards.length} items shown · ${pinned.size} pinned`;
@@ -808,14 +831,15 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		const entries = Array.from(pinned)
 			.map((id) => cards.find((c) => c.dataset.id === id))
 			.filter(Boolean)
-			.sort((a, b) => Number(b.dataset.score) - Number(a.dataset.score));
+			.sort(sortBySoonest);
 
 		if (!entries.length) return;
 		const lines = ['# Radar Compare Brief', '', `Generated: ${new Date().toLocaleString()}`, ''];
 		entries.forEach((card, i) => {
 			const title = card.dataset.title || card.querySelector('h3')?.textContent || 'Untitled';
 			const meta = card.querySelector('.radar-meta')?.textContent || '';
-			lines.push(`${i + 1}. ${title} (score ${card.dataset.score}) - ${meta}`);
+			const days = parseDays(card.dataset.days);
+			lines.push(`${i + 1}. ${title} (${daysText(days)}) - ${meta}`);
 		});
 		const text = lines.join('\n');
 		await navigator.clipboard.writeText(text);
@@ -825,11 +849,11 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 
 	function applyPreset(name) {
 		if (name === 'near-term') {
-			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'date', min: 55, high: false, upcoming: true, verified: false });
+			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'soonest', upcoming: true, verified: false });
 		} else if (name === 'high-confidence') {
-			applyState({ q: '', branch: '', type: '', status: '', sort: 'score', min: 60, high: false, upcoming: false, verified: true });
+			applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: true });
 		} else if (name === 'needs-dates') {
-			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'meta', min: 0, high: false, upcoming: false, verified: false });
+			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'soonest', upcoming: false, verified: false });
 		}
 		render();
 	}
@@ -842,13 +866,13 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		renderPinned();
 	}
 
-	[controls.q, controls.branch, controls.type, controls.status, controls.sort, controls.minScore].forEach((node) => node.addEventListener('input', render));
-	[controls.highOnly, controls.upcomingOnly, controls.verifiedOnly].forEach((node) => node.addEventListener('change', render));
+	[controls.q, controls.branch, controls.type, controls.status, controls.sort].forEach((node) => node.addEventListener('input', render));
+	[controls.upcomingOnly, controls.verifiedOnly].forEach((node) => node.addEventListener('change', render));
 	controls.save.addEventListener('click', saveView);
 	controls.load.addEventListener('click', loadView);
 	controls.share.addEventListener('click', copyShare);
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', sort: 'score', min: 0, high: false, upcoming: false, verified: false });
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false });
 		render();
 	});
 	controls.compare.addEventListener('click', copyCompareBrief);
@@ -1083,7 +1107,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		justify-content: space-between;
 		gap: 0.5rem;
 	}
-	:global(.radar-map-popup-score) {
+	:global(.radar-map-popup-days) {
 		font-size: 0.68rem;
 		padding: 0.14rem 0.38rem;
 		border: 1px solid rgba(71, 85, 105, 0.9);
@@ -1143,7 +1167,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		background: rgb(2, 6, 23);
 		padding: 1rem;
 	}
-	.radar-score-chip {
+	.radar-days-chip {
 		border: 1px solid rgba(71, 85, 105, 0.95);
 		background: rgb(2, 6, 23);
 		padding: 0.35rem 0.65rem;
@@ -1180,23 +1204,6 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		line-height: 1.45;
 		color: rgba(203, 213, 225, 0.96);
 	}
-	.radar-score-list {
-		list-style: none;
-		padding-left: 0;
-		display: grid;
-		gap: 0.25rem;
-	}
-	.radar-score-list li {
-		display: flex;
-		justify-content: space-between;
-		border: 1px solid rgba(51, 65, 85, 0.6);
-		padding: 0.25rem 0.45rem;
-	}
-	.radar-score-list .radar-total {
-		border-color: rgba(0, 166, 166, 0.45);
-		background: rgba(0, 166, 166, 0.1);
-	}
-
 
 	.radar-main-col {
 		display: flex;
