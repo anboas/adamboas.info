@@ -53,7 +53,7 @@ const items = [
 
 			<div class="grid grid-cols-1 gap-2 md:flex md:items-center">
 				<label class="sr-only" for="writing-type">Writing type</label>
-				<select id="writing-type" data-writing-type class="w-full rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 md:w-auto">
+				<select id="writing-type" data-writing-type class="w-full rounded-none border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-200 md:w-auto">
 					<option value="all">All</option>
 					<option value="note">Notes</option>
 					<option value="memo">Memos</option>
@@ -61,8 +61,8 @@ const items = [
 				</select>
 				<div class="flex flex-wrap items-center gap-2">
 					<label class="sr-only" for="writing-search">Search writing</label>
-					<input id="writing-search" data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 md:w-72" placeholder="Search title/tags" />
-					<button type="button" data-writing-clear class="shrink-0 rounded-none border border-slate-800 bg-slate-950/40 px-3 py-2 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
+					<input id="writing-search" data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-200 md:w-72" placeholder="Search title/tags" />
+					<button type="button" data-writing-clear class="shrink-0 rounded-none border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
 					<a class="shrink-0 text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
 				</div>
 			</div>

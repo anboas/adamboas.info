@@ -36,7 +36,7 @@ function renderChips() {
 	const mk = (label, onClick) => {
 		const b = document.createElement('button');
 		b.type = 'button';
-		b.className = 'rounded-full border border-slate-800 bg-slate-950/40 px-2 py-1 text-xs text-slate-200 hover:bg-slate-900';
+		b.className = 'rounded-full border border-slate-800 bg-slate-950 px-2 py-1 text-xs text-slate-200 hover:bg-slate-900';
 		b.textContent = label + ' ×';
 		b.addEventListener('click', onClick);
 		chips.appendChild(b);

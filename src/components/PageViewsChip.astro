@@ -31,11 +31,13 @@ const pageviews =
 				? pvAltWithBase
 				: null;
 const dateRange = (plausible as any)?.meta?.dateRange || '30d';
+const note = String((plausible as any)?.meta?.note || '');
+const unavailable = /(api error|api errors|missing|unexpected|no successful)/i.test(note);
 const hasPlausibleSnapshot = !!(plausible as any)?.meta;
 ---
 
 {hasPlausibleSnapshot ? (
 	<span class="pageviews-chip rounded-full border px-2 py-1 text-xs">
-		{(pageviews ?? 0).toLocaleString()} views ({dateRange})
+		{unavailable ? `views unavailable (${dateRange})` : `${(pageviews ?? 0).toLocaleString()} views (${dateRange})`}
 	</span>
 ) : null}
