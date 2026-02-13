@@ -2,14 +2,10 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
-import { geoAlbersUsa, geoPath } from 'd3-geo';
-import { feature } from 'topojson-client';
-import usAtlas from 'us-atlas/states-10m.json';
 import { radarEventsSeed } from '../../data/radar/events';
-import { scoreEvents, scoringLegend } from '../../data/radar/scoring';
+import { scoreEvents } from '../../data/radar/scoring';
 
 const events = scoreEvents(radarEventsSeed);
-const legend = scoringLegend();
 
 const branches = [...new Set(events.map((e) => e.branch))].sort();
 const types = [...new Set(events.map((e) => e.type))].sort();
@@ -57,70 +53,6 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	return 'low';
 }
 
-function scoreTone(score: number) {
-	if (score >= 80) return 'high';
-	if (score >= 60) return 'mid';
-	return 'low';
-}
-
-const MAP_W = 1000;
-const MAP_H = 540;
-const OUTSIDE_RAIL_X = MAP_W - 22;
-
-const usAtlasAny = usAtlas as any;
-const nationFeature = feature(usAtlasAny, usAtlasAny.objects.nation) as any;
-const statesFeature = feature(usAtlasAny, usAtlasAny.objects.states) as any;
-const projection = geoAlbersUsa()
-	.translate([MAP_W / 2, MAP_H / 2 + 8])
-	.scale(1180);
-const pathBuilder = geoPath(projection);
-
-const nationPath = pathBuilder(nationFeature) ?? '';
-const statePaths = (statesFeature.features ?? [])
-	.map((f: any) => ({ id: String(f.id), d: pathBuilder(f) }))
-	.filter((s: any) => typeof s.d === 'string' && s.d.length > 0);
-
-const latValues = events.map((e) => e.location.lat);
-const LAT_MIN = Math.min(...latValues) - 2;
-const LAT_MAX = Math.max(...latValues) + 2;
-
-function clamp(n: number, min: number, max: number) {
-	return Math.min(max, Math.max(min, n));
-}
-
-function mapProjection(lat: number, lng: number) {
-	const projected = projection([lng, lat]);
-	if (!projected) {
-		const yNorm = (LAT_MAX - clamp(lat, LAT_MIN, LAT_MAX)) / (LAT_MAX - LAT_MIN);
-		return { x: OUTSIDE_RAIL_X, y: clamp(18 + yNorm * (MAP_H - 36), 16, MAP_H - 16), outside: true };
-	}
-	return {
-		x: clamp(projected[0], 16, MAP_W - 48),
-		y: clamp(projected[1], 16, MAP_H - 16),
-		outside: false,
-	};
-}
-
-const mapPoints = events.map((event) => mapProjection(event.location.lat, event.location.lng));
-const placedInside: Array<{ x: number; y: number }> = [];
-const placedOutside: Array<{ x: number; y: number }> = [];
-for (const point of mapPoints) {
-	let x = point.x;
-	let y = point.y;
-	let step = 0;
-	const pool = point.outside ? placedOutside : placedInside;
-	const minDist = point.outside ? 13 : 16;
-	while (pool.some((p) => Math.hypot(p.x - x, p.y - y) < minDist) && step < 36) {
-		const angle = (step * 137.5 * Math.PI) / 180;
-		const radius = 6 + Math.floor(step / 4) * (point.outside ? 2.5 : 3.5);
-		x = clamp(point.x + Math.cos(angle) * radius, point.outside ? MAP_W - 34 : 16, point.outside ? MAP_W - 10 : MAP_W - 48);
-		y = clamp(point.y + Math.sin(angle) * radius, 16, MAP_H - 16);
-		step += 1;
-	}
-	point.x = x;
-	point.y = y;
-	pool.push({ x, y });
-}
 ---
 
 <SiteLayout
@@ -131,7 +63,7 @@ for (const point of mapPoints) {
 	<StickyBrowseBar active="radar" />
 
 	<section class="card p-6 sm:p-8">
-		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V3.1</p>
+		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V4.0</p>
 		<h1 class="mt-2 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">Operations Radar</h1>
 		<p class="mt-3 max-w-4xl text-sm text-slate-300 sm:text-base">
 			Ontology-rich opportunity radar for events, partner touchpoints, and decision windows. Compact by default, deep metadata and provenance on expand.
@@ -147,12 +79,12 @@ for (const point of mapPoints) {
 		</div>
 	</section>
 
-	<section class="mt-6 grid gap-6 xl:grid-cols-[340px,1fr]">
+	<section class="mt-6 grid gap-6 xl:grid-cols-[300px,1fr]">
 		<aside class="space-y-6">
-			<details id="radar-filter-panel" class="card p-5" open>
+			<details id="radar-filter-panel" class="card p-5">
 				<summary class="radar-summary radar-summary-primary">Filters + ranking</summary>
-				<div class="mt-4 space-y-4 text-sm">
-					<label class="block">
+				<div class="mt-4 grid gap-3 text-sm sm:grid-cols-2">
+					<label class="block sm:col-span-2">
 						<span class="mb-1 block text-slate-300">Search</span>
 						<input id="radar-q" class="radar-input" type="search" placeholder="theme, stakeholder, city..." />
 					</label>
@@ -186,11 +118,11 @@ for (const point of mapPoints) {
 							<option value="meta">Metadata completeness</option>
 						</select>
 					</label>
-					<label class="block">
+					<label class="block sm:col-span-2">
 						<span class="mb-1 block text-slate-300">Minimum score: <strong id="radar-min-score-label">0</strong></span>
 						<input id="radar-min-score" class="w-full accent-cyan-500" type="range" min="0" max="100" step="1" value="0" />
 					</label>
-					<div class="grid gap-2 sm:grid-cols-2">
+					<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
 						<label class="radar-check">
 							<input id="radar-high-only" type="checkbox" />
 							<span>High signal only</span>
@@ -204,12 +136,12 @@ for (const point of mapPoints) {
 							<span>Verified sources only (high confidence)</span>
 						</label>
 					</div>
-					<div class="grid gap-2 sm:grid-cols-2 xl:grid-cols-1">
+					<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
 						<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
 						<button class="radar-btn" type="button" data-preset="high-confidence">Preset: high confidence</button>
 						<button class="radar-btn" type="button" data-preset="needs-dates">Preset: needs dates</button>
 					</div>
-					<div class="grid gap-2 sm:grid-cols-2 xl:grid-cols-1">
+					<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
 						<button id="radar-save" class="radar-btn" type="button">Save view</button>
 						<button id="radar-load" class="radar-btn" type="button">Load saved view</button>
 						<button id="radar-share" class="radar-btn" type="button">Copy share link</button>
@@ -218,76 +150,6 @@ for (const point of mapPoints) {
 				</div>
 			</details>
 
-			<details class="card p-5">
-				<summary class="radar-summary">Scoring key (collapsed by default)</summary>
-				<div class="mt-4 space-y-4 text-sm text-slate-300">
-					<p class="text-xs text-slate-400">Score formula = signal + effort + status + branch fit + date proximity + source confidence + metadata completeness - travel burden</p>
-					<div class="grid gap-3">
-						<div class="radar-key-block">
-							<strong>Signal</strong>
-							<ul>
-								<li>High: +{legend.signalWeight.High}</li>
-								<li>Medium: +{legend.signalWeight.Medium}</li>
-								<li>Low: +{legend.signalWeight.Low}</li>
-							</ul>
-						</div>
-						<div class="radar-key-block">
-							<strong>Effort</strong>
-							<ul>
-								<li>Low: +{legend.effortWeight.Low}</li>
-								<li>Medium: +{legend.effortWeight.Medium}</li>
-								<li>High: +{legend.effortWeight.High}</li>
-							</ul>
-						</div>
-						<div class="radar-key-block">
-							<strong>Status</strong>
-							<ul>
-								<li>Upcoming: +{legend.statusWeight.Upcoming}</li>
-								<li>Projected: +{legend.statusWeight.Projected}</li>
-								<li>Needs date: +{legend.statusWeight['Needs Date']}</li>
-								<li>Past: +{legend.statusWeight.Past}</li>
-							</ul>
-						</div>
-						<div class="radar-key-block">
-							<strong>Date proximity</strong>
-							<ul>
-								<li>≤14 days: +{legend.dateProximity.in14}</li>
-								<li>≤30 days: +{legend.dateProximity.in30}</li>
-								<li>≤60 days: +{legend.dateProximity.in60}</li>
-								<li>≤120 days: +{legend.dateProximity.in120}</li>
-								<li>Past date: {legend.dateProximity.past}</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</details>
-
-			<details class="card p-5">
-				<summary class="radar-summary">Automation discovery plan (planning only)</summary>
-				<div class="mt-4 space-y-3 text-sm text-slate-300">
-					<p class="text-xs uppercase tracking-[0.12em] text-slate-400">No automation implemented yet</p>
-					<p>Design target: nightly source ingestion, AI-assisted extraction, and confidence-scored dedupe into this ontology.</p>
-					<div class="radar-key-block">
-						<strong>Priority source families</strong>
-						<ul>
-							<li>Official event calendars (AUSA, AFCEA, Navy League, service pages)</li>
-							<li>Government event indexes and acquisition notices</li>
-							<li>Conference aggregators with military/federal vertical tags</li>
-							<li>Newsletter/community lists for early signals (low confidence lane)</li>
-						</ul>
-					</div>
-					<div class="radar-key-block">
-						<strong>Planned AI pipeline</strong>
-						<ol>
-							<li>Ingest + normalize source pages</li>
-							<li>Extract event entities (title/date/location/links/CFP)</li>
-							<li>Entity resolution + dedupe against existing graph</li>
-							<li>Assign provenance + confidence and mark verification needs</li>
-							<li>Human-review queue before publish to production radar</li>
-						</ol>
-					</div>
-				</div>
-			</details>
 		</aside>
 
 		<div class="radar-main-col">
@@ -308,52 +170,20 @@ for (const point of mapPoints) {
 			<section id="radar-map-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Map view</h2>
-					<p class="text-xs text-slate-500">True US geometry projection</p>
+					<p id="radar-map-sub" class="text-xs text-slate-500">Clustered map · click marker for details · Ctrl/Cmd+scroll to zoom</p>
+				</div>
+				<div class="radar-map-tools">
+					<button id="radar-map-fit" class="radar-btn radar-btn-tight" type="button">Fit results</button>
+					<button id="radar-map-reset" class="radar-btn radar-btn-tight" type="button">Reset US</button>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
-					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label="United States projection with event markers">
-						<rect x="0" y="0" width={MAP_W} height={MAP_H} fill="rgb(2,6,23)"></rect>
-						<g class="radar-map-land">
-							{statePaths.map((state) => <path d={state.d} class="radar-map-state"></path>)}
-							{nationPath ? <path d={nationPath} class="radar-map-nation"></path> : null}
-							<rect x={MAP_W - 36} y="12" width="24" height={MAP_H - 24} rx="3" class="radar-map-outside-rail"></rect>
-						</g>
-						<g class="radar-map-points">
-							{events.map((event, idx) => {
-								const p = mapPoints[idx];
-								const tone = scoreTone(event.score.total);
-								return (
-									<g
-										class={`radar-map-marker radar-map-marker-${tone} ${p.outside ? 'radar-map-marker-outside' : ''}`}
-										data-map-marker
-										data-id={event.id}
-										data-title={event.title}
-										data-score={event.score.total}
-										data-status={event.status}
-										data-branch={event.branch}
-										data-type={event.type}
-										data-location={locationLabel(event)}
-										data-dates={fmtDateRange(event.startDate, event.endDate)}
-										tabindex="0"
-										role="button"
-										aria-label={`${event.title}, score ${event.score.total}${p.outside ? ', outside US theater' : ''}`}
-										transform={`translate(${p.x}, ${p.y})`}
-									>
-										<circle class="radar-map-marker-halo" cx="0" cy="0" r="10"></circle>
-										<circle class="radar-map-marker-core" cx="0" cy="0" r="5"></circle>
-									</g>
-								);
-							})}
-						</g>
-					</svg>
-					<div id="radar-map-callout" class="radar-map-callout hidden" aria-hidden="true"></div>
+					<div id="radar-leaflet-map" class="radar-leaflet-map"></div>
 				</div>
 			</section>
 
 			<section id="radar-list-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Opportunities</h2>
-					<button id="radar-brief" class="radar-btn" type="button">Build brief draft</button>
 				</div>
 				<div id="radar-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-4 text-sm text-slate-300">
 					No events match the current filter state.
@@ -481,7 +311,6 @@ for (const point of mapPoints) {
 					<ul id="radar-pinned-list" class="mt-2 space-y-2"></ul>
 				</div>
 
-				<pre id="radar-brief-output" class="radar-brief-output hidden"></pre>
 			</section>
 		</div>
 	</section>
@@ -513,7 +342,6 @@ for (const point of mapPoints) {
 		load: document.getElementById('radar-load'),
 		share: document.getElementById('radar-share'),
 		reset: document.getElementById('radar-reset'),
-		brief: document.getElementById('radar-brief'),
 		compare: document.getElementById('radar-compare'),
 	};
 
@@ -521,16 +349,17 @@ for (const point of mapPoints) {
 	const count = document.getElementById('radar-count');
 	const empty = document.getElementById('radar-empty');
 	const map = document.getElementById('radar-map');
-	const mapCallout = document.getElementById('radar-map-callout');
+	const mapSub = document.getElementById('radar-map-sub');
+	const mapCanvas = document.getElementById('radar-leaflet-map');
+	const mapFitBtn = document.getElementById('radar-map-fit');
+	const mapResetBtn = document.getElementById('radar-map-reset');
 	const mapSection = document.getElementById('radar-map-section');
 	const filterPanel = document.getElementById('radar-filter-panel');
 	const filterChips = document.getElementById('radar-filter-chips');
-	const briefOutput = document.getElementById('radar-brief-output');
 	const pinnedPanel = document.getElementById('radar-pinned');
 	const pinnedList = document.getElementById('radar-pinned-list');
 
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
-	const mapMarkers = Array.from(map.querySelectorAll('[data-map-marker]'));
 	const pinButtons = Array.from(document.querySelectorAll('[data-pin-btn]'));
 	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
 
@@ -566,45 +395,37 @@ for (const point of mapPoints) {
 		return 'low';
 	}
 
-	function hideMapCallout() {
-		if (!mapCallout) return;
-		mapCallout.classList.add('hidden');
-		mapCallout.setAttribute('aria-hidden', 'true');
+	function escapeHtml(str) {
+		return String(str ?? '')
+			.replaceAll('&', '&amp;')
+			.replaceAll('<', '&lt;')
+			.replaceAll('>', '&gt;')
+			.replaceAll('"', '&quot;')
+			.replaceAll("'", '&#39;');
 	}
 
-	function showMapCallout(marker) {
-		if (!mapCallout || !map) return;
-		const title = marker.dataset.title || 'Untitled';
-		const score = marker.dataset.score || '0';
-		const status = marker.dataset.status || 'Unknown';
-		const branch = marker.dataset.branch || 'Unknown';
-		const type = marker.dataset.type || 'Unknown';
-		const location = marker.dataset.location || 'Unknown';
-		const dates = marker.dataset.dates || 'Date pending';
-		const tone = scoreTone(Number(score));
+	function slowScrollTo(element, duration = 900) {
+		if (!element) return;
+		const startY = window.scrollY;
+		const targetY = element.getBoundingClientRect().top + window.scrollY - Math.max(120, window.innerHeight * 0.24);
+		const delta = targetY - startY;
+		const start = performance.now();
+		const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+		function frame(now) {
+			const t = Math.min(1, (now - start) / duration);
+			window.scrollTo(0, startY + delta * ease(t));
+			if (t < 1) requestAnimationFrame(frame);
+		}
+		requestAnimationFrame(frame);
+	}
 
-		mapCallout.className = `radar-map-callout radar-map-callout-${tone}`;
-		mapCallout.innerHTML = `
-			<div class="radar-map-callout-title">${title}</div>
-			<div class="radar-map-callout-meta">${branch} · ${type} · ${status}</div>
-			<div class="radar-map-callout-meta">${location} · ${dates}</div>
-			<div class="radar-map-callout-score">Score ${score}</div>
-		`;
-
-		const mapRect = map.getBoundingClientRect();
-		const markerRect = marker.getBoundingClientRect();
-		const calloutRect = mapCallout.getBoundingClientRect();
-		let left = markerRect.left - mapRect.left + 16;
-		let top = markerRect.top - mapRect.top - calloutRect.height - 10;
-		if (left + calloutRect.width > mapRect.width - 8) left = mapRect.width - calloutRect.width - 8;
-		if (left < 8) left = 8;
-		if (top < 8) top = markerRect.bottom - mapRect.top + 10;
-		if (top + calloutRect.height > mapRect.height - 8) top = mapRect.height - calloutRect.height - 8;
-
-		mapCallout.style.left = `${left}px`;
-		mapCallout.style.top = `${top}px`;
-		mapCallout.classList.remove('hidden');
-		mapCallout.setAttribute('aria-hidden', 'false');
+	function focusCard(id) {
+		const card = cards.find((c) => c.dataset.id === id);
+		if (!card) return;
+		for (const c of cards) c.classList.remove('radar-card-focus');
+		card.classList.add('radar-card-focus');
+		slowScrollTo(card, 980);
+		setTimeout(() => card.classList.remove('radar-card-focus'), 2000);
 	}
 
 	for (const card of cards) {
@@ -612,26 +433,145 @@ for (const point of mapPoints) {
 		card.classList.add(`radar-tone-${scoreTone(score)}`);
 	}
 
-	for (const marker of mapMarkers) {
-		const go = () => {
-			const card = cards.find((c) => c.dataset.id === marker.dataset.id);
-			if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-		};
-		marker.addEventListener('click', go);
-		marker.addEventListener('mouseenter', () => showMapCallout(marker));
-		marker.addEventListener('mouseleave', hideMapCallout);
-		marker.addEventListener('focus', () => showMapCallout(marker));
-		marker.addEventListener('blur', hideMapCallout);
-		marker.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				go();
+	const US_BOUNDS = [[24.2, -125.2], [49.6, -66.0]];
+	let mapLib = null;
+	let clusterLayer = null;
+	let leafletReady = false;
+	let leafletFailed = false;
+	let mapRenderedOnce = false;
+
+	function loadScript(src) {
+		return new Promise((resolve, reject) => {
+			const existing = document.querySelector(`script[data-radar-src="${src}"]`);
+			if (existing) {
+				if (existing.dataset.loaded === '1') return resolve();
+				existing.addEventListener('load', () => resolve(), { once: true });
+				existing.addEventListener('error', () => reject(new Error(`failed ${src}`)), { once: true });
+				return;
 			}
-			if (e.key === 'Escape') hideMapCallout();
+			const script = document.createElement('script');
+			script.src = src;
+			script.async = true;
+			script.dataset.radarSrc = src;
+			script.onload = () => {
+				script.dataset.loaded = '1';
+				resolve();
+			};
+			script.onerror = () => reject(new Error(`failed ${src}`));
+			document.head.appendChild(script);
 		});
 	}
 
-	map?.addEventListener('mouseleave', hideMapCallout);
+	function loadCss(href) {
+		if (document.querySelector(`link[data-radar-href="${href}"]`)) return;
+		const link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.href = href;
+		link.dataset.radarHref = href;
+		document.head.appendChild(link);
+	}
+
+	async function ensureLeaflet() {
+		if (leafletReady && window.L?.markerClusterGroup) return true;
+		try {
+			loadCss('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+			loadCss('https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css');
+			loadCss('https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css');
+			await loadScript('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js');
+			await loadScript('https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js');
+			leafletReady = Boolean(window.L?.markerClusterGroup);
+			return leafletReady;
+		} catch {
+			leafletFailed = true;
+			if (mapSub) mapSub.textContent = 'Map failed to load.';
+			return false;
+		}
+	}
+
+	function enableModifierWheelZoom(map) {
+		const container = map.getContainer();
+		if (!container) return;
+		let lastZoomTs = 0;
+		container.addEventListener('wheel', (e) => {
+			if (!(e.ctrlKey || e.metaKey)) return;
+			e.preventDefault();
+			const now = Date.now();
+			if (now - lastZoomTs < 90) return;
+			lastZoomTs = now;
+			map.setZoom(map.getZoom() + (e.deltaY < 0 ? 1 : -1), { animate: false });
+		}, { passive: false });
+	}
+
+	function pinIcon(score, tone) {
+		return window.L.divIcon({
+			className: 'radar-leaflet-pin-wrap',
+			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}"><span>${escapeHtml(score)}</span></div>`,
+			iconSize: [30, 30],
+			iconAnchor: [15, 15],
+		});
+	}
+
+	function markerPopup(card) {
+		const id = card.dataset.id;
+		const title = card.dataset.title || 'Untitled';
+		const status = card.dataset.status || 'Unknown';
+		const branch = card.dataset.branch || 'Unknown';
+		const type = card.dataset.type || 'Unknown';
+		const meta = card.querySelector('.radar-meta')?.textContent || '';
+		const score = card.dataset.score || '0';
+		return `
+			<div class="radar-map-popup">
+				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
+				<div class="radar-map-popup-meta">${escapeHtml(branch)} · ${escapeHtml(type)} · ${escapeHtml(status)}</div>
+				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
+				<div class="radar-map-popup-actions">
+					<span class="radar-map-popup-score">Score ${escapeHtml(score)}</span>
+					<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Highlight event</button>
+				</div>
+			</div>
+		`;
+	}
+
+	async function initLeafletMap() {
+		if (mapLib || leafletFailed || !mapCanvas) return;
+		const ok = await ensureLeaflet();
+		if (!ok) return;
+
+		mapLib = window.L.map(mapCanvas, {
+			zoomControl: true,
+			scrollWheelZoom: false,
+			worldCopyJump: true,
+		});
+		window.L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+			subdomains: 'abcd',
+			maxZoom: 18,
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+		}).addTo(mapLib);
+
+		clusterLayer = window.L.markerClusterGroup({
+			showCoverageOnHover: false,
+			spiderfyOnMaxZoom: true,
+			maxClusterRadius: 52,
+		});
+		mapLib.addLayer(clusterLayer);
+		enableModifierWheelZoom(mapLib);
+		mapLib.fitBounds(US_BOUNDS);
+		mapLib.on('contextmenu', () => mapLib.fitBounds(US_BOUNDS));
+		mapLib.on('popupopen', (e) => {
+			const el = e.popup?.getElement();
+			const btn = el?.querySelector?.('.radar-map-jump');
+			if (btn) btn.addEventListener('click', () => focusCard(btn.dataset.eventId));
+		});
+		mapFitBtn?.addEventListener('click', () => fitMapToResults());
+		mapResetBtn?.addEventListener('click', () => mapLib.fitBounds(US_BOUNDS));
+	}
+
+	function fitMapToResults() {
+		if (!mapLib || !clusterLayer) return;
+		const bounds = clusterLayer.getBounds();
+		if (bounds && bounds.isValid()) mapLib.fitBounds(bounds.pad(0.2));
+		else mapLib.fitBounds(US_BOUNDS);
+	}
 
 	function stateFromUI() {
 		return {
@@ -771,13 +711,37 @@ for (const point of mapPoints) {
 
 	function renderMap(visibleCards) {
 		const cardsForMap = visibleCards.length ? visibleCards : cards;
-		const visibleIds = new Set(cardsForMap.map((card) => card.dataset.id));
-		for (const marker of mapMarkers) {
-			const show = mapVisible && visibleIds.has(marker.dataset.id);
-			marker.classList.toggle('hidden', !show);
-			marker.setAttribute('aria-hidden', show ? 'false' : 'true');
+		if (!mapVisible) {
+			if (mapSub) mapSub.textContent = 'Map hidden';
+			return;
 		}
-		if (!mapVisible) hideMapCallout();
+		if (!mapLib) {
+			initLeafletMap().then(() => renderMap(cardsForMap));
+			return;
+		}
+		if (!clusterLayer) return;
+
+		clusterLayer.clearLayers();
+		let mapped = 0;
+		for (const card of cardsForMap) {
+			const lat = Number(card.dataset.lat || '');
+			const lng = Number(card.dataset.lng || '');
+			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
+			const tone = scoreTone(Number(card.dataset.score || 0));
+			const marker = window.L.marker([lat, lng], { icon: pinIcon(card.dataset.score || '0', tone) });
+			marker.bindPopup(markerPopup(card), { maxWidth: 360 });
+			clusterLayer.addLayer(marker);
+			mapped += 1;
+		}
+
+		if (!mapRenderedOnce) {
+			fitMapToResults();
+			mapRenderedOnce = true;
+		}
+
+		if (mapSub) {
+			mapSub.textContent = `Mapped ${mapped} event(s) · clusters enabled · drag to pan · Ctrl/Cmd+scroll to zoom · right-click to reset`;
+		}
 	}
 
 	function render() {
@@ -827,20 +791,6 @@ for (const point of mapPoints) {
 		setTimeout(() => (controls.share.textContent = 'Copy share link'), 1200);
 	}
 
-	async function buildBrief() {
-		const { visible } = getVisibleCards();
-		const top = visible.slice(0, 6).map((card, i) => {
-			const title = card.querySelector('h3')?.textContent?.trim() || 'Untitled';
-			const meta = card.querySelector('.radar-meta')?.textContent?.trim() || '';
-			const score = card.dataset.score;
-			return `${i + 1}. ${title} (score ${score}) - ${meta}`;
-		});
-
-		const text = ['# Radar Brief Draft', '', `Generated: ${new Date().toLocaleString()}`, '', '## Prioritized opportunities', '', ...top, '', '## Notes', '- Auto-generated from current filter state', '- Review provenance confidence before external use'].join('\n');
-		briefOutput.classList.remove('hidden');
-		briefOutput.textContent = text;
-		await navigator.clipboard.writeText(text);
-	}
 
 	async function copyCompareBrief() {
 		const entries = Array.from(pinned)
@@ -856,9 +806,9 @@ for (const point of mapPoints) {
 			lines.push(`${i + 1}. ${title} (score ${card.dataset.score}) - ${meta}`);
 		});
 		const text = lines.join('\n');
-		briefOutput.classList.remove('hidden');
-		briefOutput.textContent = text;
 		await navigator.clipboard.writeText(text);
+		controls.compare.textContent = 'Copied';
+		setTimeout(() => (controls.compare.textContent = 'Copy compare brief'), 1200);
 	}
 
 	function applyPreset(name) {
@@ -889,7 +839,6 @@ for (const point of mapPoints) {
 		applyState({ q: '', branch: '', type: '', status: '', sort: 'score', min: 0, high: false, upcoming: false, verified: false });
 		render();
 	});
-	controls.brief.addEventListener('click', buildBrief);
 	controls.compare.addEventListener('click', copyCompareBrief);
 	controls.toggleMap.addEventListener('click', () => {
 		mapVisible = !mapVisible;
@@ -1006,102 +955,110 @@ for (const point of mapPoints) {
 
 	.radar-map {
 		position: relative;
-		height: 360px;
+		height: 420px;
 		border: 1px solid rgba(51, 65, 85, 0.95);
 		background: rgb(2, 6, 23);
 		overflow: hidden;
 		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) inset;
 	}
-	.radar-map-svg {
-		display: block;
-		width: 100%;
+	.radar-map-tools {
+		display: flex;
+		gap: 0.45rem;
+		margin-bottom: 0.6rem;
+	}
+	.radar-leaflet-map {
 		height: 100%;
+		width: 100%;
+		background: rgb(2, 6, 23);
 	}
-	.radar-map-state {
-		fill: rgba(31, 41, 64, 0.88);
-		stroke: rgba(100, 116, 139, 0.34);
-		stroke-width: 0.75;
+	.radar-map .leaflet-container {
+		background: rgb(2, 6, 23);
+		font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 	}
-	.radar-map-nation {
-		fill: none;
-		stroke: rgba(148, 163, 184, 0.58);
-		stroke-width: 1.15;
+	.radar-map .leaflet-control-zoom a {
+		background: rgba(15, 23, 42, 0.92);
+		color: rgba(248, 250, 252, 0.95);
+		border: 1px solid rgba(71, 85, 105, 0.95);
 	}
-	.radar-map-outside-rail {
-		fill: rgba(15, 23, 42, 0.9);
-		stroke: rgba(100, 116, 139, 0.8);
-		stroke-width: 1;
+	.radar-map .leaflet-control-zoom a:hover {
+		background: rgba(30, 41, 59, 0.95);
 	}
-	.radar-map-marker {
-		cursor: pointer;
+	.radar-map .leaflet-popup-content-wrapper,
+	.radar-map .leaflet-popup-tip {
+		background: rgba(15, 23, 42, 0.98);
+		border: 1px solid rgba(71, 85, 105, 0.95);
+		color: rgba(226, 232, 240, 0.96);
 	}
-	.radar-map-marker .radar-map-marker-halo {
-		fill: rgba(2, 6, 23, 0.72);
-		stroke: rgba(2, 6, 23, 0.95);
-		stroke-width: 1.2;
-		transition: stroke 140ms ease, stroke-width 140ms ease;
-	}
-	.radar-map-marker .radar-map-marker-core {
-		stroke: rgba(2, 6, 23, 0.98);
-		stroke-width: 1.4;
-		transition: stroke-width 140ms ease, filter 140ms ease;
-	}
-	.radar-map-marker-high .radar-map-marker-core { fill: rgb(212, 165, 116); }
-	.radar-map-marker-mid .radar-map-marker-core { fill: rgb(0, 196, 196); }
-	.radar-map-marker-low .radar-map-marker-core { fill: rgb(148, 163, 184); }
-	.radar-map-marker-high .radar-map-marker-halo { stroke: rgba(212, 165, 116, 0.45); }
-	.radar-map-marker-mid .radar-map-marker-halo { stroke: rgba(0, 196, 196, 0.45); }
-	.radar-map-marker-low .radar-map-marker-halo { stroke: rgba(148, 163, 184, 0.5); }
-	.radar-map-marker-outside .radar-map-marker-halo {
-		stroke-dasharray: 2 2;
-	}
-	.radar-map-marker:hover .radar-map-marker-core,
-	.radar-map-marker:focus .radar-map-marker-core,
-	.radar-map-marker:focus-visible .radar-map-marker-core {
-		stroke-width: 2;
-		filter: brightness(1.1);
-	}
-	.radar-map-marker:hover .radar-map-marker-halo,
-	.radar-map-marker:focus .radar-map-marker-halo,
-	.radar-map-marker:focus-visible .radar-map-marker-halo {
-		stroke-width: 2;
-	}
-
-	.radar-map-callout {
-		position: absolute;
-		z-index: 20;
-		max-width: 320px;
-		padding: 0.55rem 0.65rem;
-		border: 1px solid rgba(100, 116, 139, 0.8);
-		background: rgba(15, 23, 42, 0.96);
-		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
-		pointer-events: none;
-	}
-	.radar-map-callout-title {
-		font-size: 0.84rem;
+	.radar-map .leaflet-popup-content { margin: 0.55rem 0.62rem; }
+	.radar-map-popup-title {
+		font-size: 0.82rem;
 		font-weight: 700;
-		line-height: 1.3;
+		line-height: 1.25;
 		color: rgba(248, 250, 252, 0.98);
 	}
-	.radar-map-callout-meta {
+	.radar-map-popup-meta {
 		margin-top: 0.15rem;
 		font-size: 0.7rem;
 		line-height: 1.3;
 		color: rgba(148, 163, 184, 0.95);
 	}
-	.radar-map-callout-score {
-		margin-top: 0.35rem;
-		display: inline-block;
-		border: 1px solid rgba(100, 116, 139, 0.9);
-		padding: 0.12rem 0.38rem;
+	.radar-map-popup-actions {
+		margin-top: 0.45rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+	}
+	.radar-map-popup-score {
+		font-size: 0.68rem;
+		padding: 0.14rem 0.38rem;
+		border: 1px solid rgba(71, 85, 105, 0.9);
+		background: rgba(2, 6, 23, 0.9);
+		color: rgba(241, 245, 249, 0.96);
+	}
+	.radar-map-jump {
+		border: 1px solid rgba(0, 196, 196, 0.55);
+		background: rgba(0, 166, 166, 0.12);
+		color: rgba(226, 232, 240, 0.97);
 		font-size: 0.68rem;
 		font-weight: 700;
-		color: rgba(241, 245, 249, 0.95);
-		background: rgba(2, 6, 23, 0.85);
+		padding: 0.15rem 0.42rem;
+		cursor: pointer;
 	}
-	.radar-map-callout-high { border-color: rgba(212, 165, 116, 0.82); }
-	.radar-map-callout-mid { border-color: rgba(0, 196, 196, 0.78); }
-	.radar-map-callout-low { border-color: rgba(148, 163, 184, 0.8); }
+	.radar-map-jump:hover { background: rgba(0, 166, 166, 0.22); }
+
+	.radar-leaflet-pin-wrap { background: transparent; border: 0; }
+	.radar-leaflet-pin {
+		width: 30px;
+		height: 30px;
+		border-radius: 999px;
+		display: grid;
+		place-items: center;
+		font-size: 10px;
+		font-weight: 700;
+		color: rgba(248, 250, 252, 0.98);
+		background: rgba(2, 6, 23, 0.82);
+		border: 2px solid rgba(100, 116, 139, 0.82);
+		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(0, 0, 0, 0.34);
+	}
+	.radar-leaflet-pin-high { border-color: rgba(212, 165, 116, 0.96); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(212, 165, 116, 0.24); }
+	.radar-leaflet-pin-mid { border-color: rgba(0, 196, 196, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(0, 196, 196, 0.25); }
+	.radar-leaflet-pin-low { border-color: rgba(148, 163, 184, 0.96); }
+
+	.radar-map .marker-cluster-small,
+	.radar-map .marker-cluster-medium,
+	.radar-map .marker-cluster-large {
+		background: rgba(0, 166, 166, 0.14);
+	}
+	.radar-map .marker-cluster-small div,
+	.radar-map .marker-cluster-medium div,
+	.radar-map .marker-cluster-large div {
+		background: rgba(0, 166, 166, 0.34);
+		border: 1px solid rgba(0, 196, 196, 0.45);
+		color: rgba(248, 250, 252, 0.96);
+		font-size: 11px;
+		font-weight: 700;
+	}
 
 	.radar-card {
 		border: 1px solid rgba(30, 41, 59, 0.95);
@@ -1162,15 +1119,6 @@ for (const point of mapPoints) {
 		background: rgba(0, 166, 166, 0.1);
 	}
 
-	.radar-brief-output {
-		margin-top: 0.8rem;
-		border: 1px solid rgba(51, 65, 85, 0.95);
-		background: rgb(2, 6, 23);
-		padding: 0.8rem;
-		font-size: 0.75rem;
-		line-height: 1.5;
-		white-space: pre-wrap;
-	}
 
 	.radar-main-col {
 		display: flex;
@@ -1227,6 +1175,10 @@ for (const point of mapPoints) {
 	.radar-card:hover {
 		background: rgba(15, 23, 42, 0.56);
 		transform: translateY(-1px);
+	}
+	.radar-card-focus {
+		border-color: rgba(0, 196, 196, 0.72) !important;
+		box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.3) inset, 0 0 18px rgba(0, 196, 196, 0.18);
 	}
 	.radar-tone-high {
 		border-left-color: rgba(212, 165, 116, 0.95);
