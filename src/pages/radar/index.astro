@@ -87,8 +87,8 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 ---
 
 <SiteLayout
-	title="Radar | Adam Boas"
-	description="In-depth operations radar prototype with ontology-rich metadata, date-first prioritization, and expandable intelligence cards."
+	title="Opportunity Radar | Adam Boas"
+	description="In-depth opportunity radar with ontology-rich metadata, date-first prioritization, and expandable intelligence cards."
 	canonicalHref="https://www.adamboas.com/radar/"
 >
 	<StickyBrowseBar active="radar" />
@@ -97,14 +97,14 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	<section class="mt-6 space-y-6">
 		<section class="card p-4 radar-control-shell">
 			<div class="flex flex-wrap items-start justify-between gap-3">
-				<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Operations Radar</h1>
+				<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Opportunity Radar</h1>
 				<div class="flex flex-wrap gap-2">
 					<button id="radar-toggle-map" class="radar-btn radar-btn-tight" type="button">Hide map</button>
 					<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
 				</div>
 			</div>
 			<div class="mt-3 flex flex-wrap gap-2">
-				<span class="radar-mini-stat">{summaryStats.total} items</span>
+				<span class="radar-mini-stat">{summaryStats.total} opportunities</span>
 				<span class="radar-mini-stat">{summaryStats.upcoming} upcoming</span>
 				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
 				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
@@ -154,7 +154,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
 					<div id="radar-leaflet-map" class="radar-leaflet-map"></div>
 				</div>
-				<p id="radar-map-sub" class="radar-map-sub">Mapped events · clusters enabled · Ctrl/Cmd+scroll to zoom</p>
+				<p id="radar-map-sub" class="radar-map-sub">Mapped opportunities · clusters enabled · Ctrl/Cmd+scroll to zoom</p>
 			</section>
 
 			<section id="radar-list-section" class="card p-5">
@@ -168,7 +168,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 					</select>
 				</div>
 				<div id="radar-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-4 text-sm text-slate-300">
-					No events match the current filter state.
+					No opportunities match the current filter state.
 				</div>
 				<div id="radar-list" class="space-y-3 radar-list">
 					{events.map((event) => (
@@ -260,7 +260,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 									<p class="radar-section-label">Timing</p>
 									<ul class="radar-listing">
 										<li><strong>Days until start:</strong> {daysUntilDetail(event.startDate)}</li>
-										<li><strong>Event window:</strong> {fmtDateRange(event.startDate, event.endDate)}</li>
+										<li><strong>Opportunity window:</strong> {fmtDateRange(event.startDate, event.endDate)}</li>
 									</ul>
 								</div>
 
@@ -490,7 +490,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		const days = parseDays(card.dataset.days);
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		const typeClass = `radar-type-${typeTone(type)}`;
-		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event site</a>` : '';
+		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Opportunity site</a>` : '';
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
@@ -498,7 +498,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
 					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
-					<div class="radar-map-popup-cta">${linkHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button></div>
+					<div class="radar-map-popup-cta">${linkHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open opportunity</button></div>
 				</div>
 			</div>
 		`;
@@ -709,7 +709,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		}
 
 		if (mapSub) {
-			mapSub.textContent = `Mapped ${mapped} event(s) · clusters enabled · drag to pan · Ctrl/Cmd+scroll to zoom · right-click to reset`;
+			mapSub.textContent = `Mapped ${mapped} ${mapped === 1 ? 'opportunity' : 'opportunities'} · clusters enabled · drag to pan · Ctrl/Cmd+scroll to zoom · right-click to reset`;
 		}
 	}
 
@@ -727,7 +727,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
 
 		empty.classList.toggle('hidden', visible.length > 0);
-		count.textContent = `${visible.length} of ${cards.length} items shown`;
+		count.textContent = `${visible.length} of ${cards.length} opportunities shown`;
 		renderFilterChips(state);
 		renderMap(visible);
 
