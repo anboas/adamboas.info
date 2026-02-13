@@ -693,8 +693,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			return `${i + 1}. ${title} (score ${score}) - ${meta}`;
 		});
 
-		const text = ['# Radar Brief Draft', '', `Generated: ${new Date().toLocaleString()}`, '', '## Prioritized opportunities', '', ...top, '', '## Notes', '- Auto-generated from current filter state', '- Review provenance confidence before external use'].join('
-');
+		const text = ['# Radar Brief Draft', '', `Generated: ${new Date().toLocaleString()}`, '', '## Prioritized opportunities', '', ...top, '', '## Notes', '- Auto-generated from current filter state', '- Review provenance confidence before external use'].join('\n');
 		briefOutput.classList.remove('hidden');
 		briefOutput.textContent = text;
 		await navigator.clipboard.writeText(text);
@@ -713,8 +712,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			const meta = card.querySelector('.radar-meta')?.textContent || '';
 			lines.push(`${i + 1}. ${title} (score ${card.dataset.score}) - ${meta}`);
 		});
-		const text = lines.join('
-');
+		const text = lines.join('\n');
 		briefOutput.classList.remove('hidden');
 		briefOutput.textContent = text;
 		await navigator.clipboard.writeText(text);
