@@ -328,6 +328,12 @@ for (const point of mapPoints) {
 										data-map-marker
 										data-id={event.id}
 										data-title={event.title}
+										data-score={event.score.total}
+										data-status={event.status}
+										data-branch={event.branch}
+										data-type={event.type}
+										data-location={locationLabel(event)}
+										data-dates={fmtDateRange(event.startDate, event.endDate)}
 										tabindex="0"
 										role="button"
 										aria-label={`${event.title}, score ${event.score.total}${p.outside ? ', outside US theater' : ''}`}
@@ -340,6 +346,7 @@ for (const point of mapPoints) {
 							})}
 						</g>
 					</svg>
+					<div id="radar-map-callout" class="radar-map-callout hidden" aria-hidden="true"></div>
 				</div>
 			</section>
 
@@ -514,6 +521,7 @@ for (const point of mapPoints) {
 	const count = document.getElementById('radar-count');
 	const empty = document.getElementById('radar-empty');
 	const map = document.getElementById('radar-map');
+	const mapCallout = document.getElementById('radar-map-callout');
 	const mapSection = document.getElementById('radar-map-section');
 	const filterPanel = document.getElementById('radar-filter-panel');
 	const filterChips = document.getElementById('radar-filter-chips');
@@ -558,6 +566,47 @@ for (const point of mapPoints) {
 		return 'low';
 	}
 
+	function hideMapCallout() {
+		if (!mapCallout) return;
+		mapCallout.classList.add('hidden');
+		mapCallout.setAttribute('aria-hidden', 'true');
+	}
+
+	function showMapCallout(marker) {
+		if (!mapCallout || !map) return;
+		const title = marker.dataset.title || 'Untitled';
+		const score = marker.dataset.score || '0';
+		const status = marker.dataset.status || 'Unknown';
+		const branch = marker.dataset.branch || 'Unknown';
+		const type = marker.dataset.type || 'Unknown';
+		const location = marker.dataset.location || 'Unknown';
+		const dates = marker.dataset.dates || 'Date pending';
+		const tone = scoreTone(Number(score));
+
+		mapCallout.className = `radar-map-callout radar-map-callout-${tone}`;
+		mapCallout.innerHTML = `
+			<div class="radar-map-callout-title">${title}</div>
+			<div class="radar-map-callout-meta">${branch} · ${type} · ${status}</div>
+			<div class="radar-map-callout-meta">${location} · ${dates}</div>
+			<div class="radar-map-callout-score">Score ${score}</div>
+		`;
+
+		const mapRect = map.getBoundingClientRect();
+		const markerRect = marker.getBoundingClientRect();
+		const calloutRect = mapCallout.getBoundingClientRect();
+		let left = markerRect.left - mapRect.left + 16;
+		let top = markerRect.top - mapRect.top - calloutRect.height - 10;
+		if (left + calloutRect.width > mapRect.width - 8) left = mapRect.width - calloutRect.width - 8;
+		if (left < 8) left = 8;
+		if (top < 8) top = markerRect.bottom - mapRect.top + 10;
+		if (top + calloutRect.height > mapRect.height - 8) top = mapRect.height - calloutRect.height - 8;
+
+		mapCallout.style.left = `${left}px`;
+		mapCallout.style.top = `${top}px`;
+		mapCallout.classList.remove('hidden');
+		mapCallout.setAttribute('aria-hidden', 'false');
+	}
+
 	for (const card of cards) {
 		const score = Number(card.dataset.score || '0');
 		card.classList.add(`radar-tone-${scoreTone(score)}`);
@@ -569,13 +618,20 @@ for (const point of mapPoints) {
 			if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
 		};
 		marker.addEventListener('click', go);
+		marker.addEventListener('mouseenter', () => showMapCallout(marker));
+		marker.addEventListener('mouseleave', hideMapCallout);
+		marker.addEventListener('focus', () => showMapCallout(marker));
+		marker.addEventListener('blur', hideMapCallout);
 		marker.addEventListener('keydown', (e) => {
 			if (e.key === 'Enter' || e.key === ' ') {
 				e.preventDefault();
 				go();
 			}
+			if (e.key === 'Escape') hideMapCallout();
 		});
 	}
+
+	map?.addEventListener('mouseleave', hideMapCallout);
 
 	function stateFromUI() {
 		return {
@@ -721,6 +777,7 @@ for (const point of mapPoints) {
 			marker.classList.toggle('hidden', !show);
 			marker.setAttribute('aria-hidden', show ? 'false' : 'true');
 		}
+		if (!mapVisible) hideMapCallout();
 	}
 
 	function render() {
@@ -1009,6 +1066,42 @@ for (const point of mapPoints) {
 	.radar-map-marker:focus-visible .radar-map-marker-halo {
 		stroke-width: 2;
 	}
+
+	.radar-map-callout {
+		position: absolute;
+		z-index: 20;
+		max-width: 320px;
+		padding: 0.55rem 0.65rem;
+		border: 1px solid rgba(100, 116, 139, 0.8);
+		background: rgba(15, 23, 42, 0.96);
+		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+		pointer-events: none;
+	}
+	.radar-map-callout-title {
+		font-size: 0.84rem;
+		font-weight: 700;
+		line-height: 1.3;
+		color: rgba(248, 250, 252, 0.98);
+	}
+	.radar-map-callout-meta {
+		margin-top: 0.15rem;
+		font-size: 0.7rem;
+		line-height: 1.3;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.radar-map-callout-score {
+		margin-top: 0.35rem;
+		display: inline-block;
+		border: 1px solid rgba(100, 116, 139, 0.9);
+		padding: 0.12rem 0.38rem;
+		font-size: 0.68rem;
+		font-weight: 700;
+		color: rgba(241, 245, 249, 0.95);
+		background: rgba(2, 6, 23, 0.85);
+	}
+	.radar-map-callout-high { border-color: rgba(212, 165, 116, 0.82); }
+	.radar-map-callout-mid { border-color: rgba(0, 196, 196, 0.78); }
+	.radar-map-callout-low { border-color: rgba(148, 163, 184, 0.8); }
 
 	.radar-card {
 		border: 1px solid rgba(30, 41, 59, 0.95);
