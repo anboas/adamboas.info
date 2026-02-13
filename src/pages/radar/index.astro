@@ -46,6 +46,13 @@ function costLabel(event: (typeof events)[number]) {
 	if (range.max === 0) return '$0';
 	return `$${range.min.toLocaleString()} - $${range.max.toLocaleString()}`;
 }
+
+function sourceConfidenceBand(event: (typeof events)[number]) {
+	const confidence = event.ontology.provenance.map((p) => p.confidence);
+	if (confidence.includes('High')) return 'high';
+	if (confidence.includes('Medium')) return 'medium';
+	return 'low';
+}
 ---
 
 <SiteLayout
@@ -56,7 +63,7 @@ function costLabel(event: (typeof events)[number]) {
 	<StickyBrowseBar active="radar" />
 
 	<section class="card p-6 sm:p-8">
-		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V1.5</p>
+		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V1.6</p>
 		<h1 class="mt-2 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">Operations Radar</h1>
 		<p class="mt-3 max-w-4xl text-sm text-slate-300 sm:text-base">
 			Ontology-rich opportunity radar for events, partner touchpoints, and decision windows. Compact by default, deep metadata and provenance on expand.
@@ -111,6 +118,24 @@ function costLabel(event: (typeof events)[number]) {
 							<option value="meta">Metadata completeness</option>
 						</select>
 					</label>
+					<label class="block">
+						<span class="mb-1 block text-slate-300">Minimum score: <strong id="radar-min-score-label">0</strong></span>
+						<input id="radar-min-score" class="w-full accent-cyan-500" type="range" min="0" max="100" step="1" value="0" />
+					</label>
+					<div class="grid gap-2 sm:grid-cols-2">
+						<label class="radar-check">
+							<input id="radar-high-only" type="checkbox" />
+							<span>High signal only</span>
+						</label>
+						<label class="radar-check">
+							<input id="radar-upcoming-only" type="checkbox" />
+							<span>Upcoming only</span>
+						</label>
+						<label class="radar-check sm:col-span-2">
+							<input id="radar-verified-only" type="checkbox" />
+							<span>Verified sources only (high confidence)</span>
+						</label>
+					</div>
 					<div class="grid gap-2 sm:grid-cols-2 xl:grid-cols-1">
 						<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
 						<button class="radar-btn" type="button" data-preset="high-confidence">Preset: high confidence</button>
@@ -198,10 +223,24 @@ function costLabel(event: (typeof events)[number]) {
 		</aside>
 
 		<div class="space-y-6">
-			<section class="card p-5">
+			<section class="card p-4 radar-toolbar">
+				<div class="flex flex-wrap items-center justify-between gap-3">
+					<div class="space-y-2">
+						<p id="radar-count" class="text-xs text-slate-400"></p>
+						<div id="radar-filter-chips" class="radar-filter-chips"></div>
+					</div>
+					<div class="flex flex-wrap gap-2">
+						<button id="radar-toggle-map" class="radar-btn radar-btn-tight" type="button">Hide map</button>
+						<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
+						<button id="radar-clear-pins" class="radar-btn radar-btn-tight" type="button">Clear pinned</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="radar-map-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Map view</h2>
-					<p id="radar-count" class="text-xs text-slate-400"></p>
+					<p class="text-xs text-slate-500">Click a marker to jump to card</p>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map"></div>
 			</section>
@@ -214,7 +253,7 @@ function costLabel(event: (typeof events)[number]) {
 				<div id="radar-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-4 text-sm text-slate-300">
 					No events match the current filter state.
 				</div>
-				<div id="radar-list" class="space-y-3">
+				<div id="radar-list" class="space-y-3 radar-list">
 					{events.map((event) => (
 						<article
 							id={event.id}
@@ -228,6 +267,8 @@ function costLabel(event: (typeof events)[number]) {
 							data-type={event.type}
 							data-branch={event.branch}
 							data-signal={event.signal}
+							data-confidence={sourceConfidenceBand(event)}
+							data-title={event.title}
 							data-lat={event.location.lat}
 							data-lng={event.location.lng}
 							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence}`).join(' ')}`.toLowerCase()}
@@ -236,13 +277,16 @@ function costLabel(event: (typeof events)[number]) {
 								<div class="min-w-0 flex-1">
 									<p class="text-[11px] uppercase tracking-[0.1em] text-slate-400">{event.branch} · {event.type} · {event.status}</p>
 									<h3 class="mt-1 text-base font-semibold text-slate-50">{event.title}</h3>
-									<p class="mt-1 text-sm text-slate-300">{event.description}</p>
-									<p class="mt-2 text-xs text-slate-400">{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}</p>
+									<p class="mt-1 text-sm text-slate-300 radar-desc">{event.description}</p>
+									<p class="mt-2 text-xs text-slate-400 radar-meta">{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}</p>
 								</div>
-								<div class="radar-score-chip">Score {event.score.total}</div>
+								<div class="flex items-center gap-2">
+									<div class="radar-score-chip">Score {event.score.total}</div>
+									<button class="radar-pin-btn" type="button" data-pin-btn data-id={event.id}>Pin</button>
+								</div>
 							</div>
 
-							<div class="mt-3 flex flex-wrap gap-2">
+							<div class="mt-3 flex flex-wrap gap-2 radar-theme-row">
 								{event.ontology.themes.slice(0, 4).map((theme) => <span class="radar-pill">{theme}</span>)}
 							</div>
 
@@ -323,6 +367,15 @@ function costLabel(event: (typeof events)[number]) {
 						</article>
 					))}
 				</div>
+
+				<div id="radar-pinned" class="radar-pinned hidden">
+					<div class="flex flex-wrap items-center justify-between gap-2">
+						<h3 class="text-sm font-semibold text-slate-100">Pinned shortlist</h3>
+						<button id="radar-compare" class="radar-btn radar-btn-tight" type="button">Copy compare brief</button>
+					</div>
+					<ul id="radar-pinned-list" class="mt-2 space-y-2"></ul>
+				</div>
+
 				<pre id="radar-brief-output" class="radar-brief-output hidden"></pre>
 			</section>
 		</div>
@@ -334,7 +387,8 @@ function costLabel(event: (typeof events)[number]) {
 </SiteLayout>
 
 <script is:inline>
-	const KEY = 'adamboas.radar.view.v2';
+	const KEY = 'adamboas.radar.view.v3';
+	const PIN_KEY = 'adamboas.radar.pins.v1';
 
 	const controls = {
 		q: document.getElementById('radar-q'),
@@ -342,25 +396,69 @@ function costLabel(event: (typeof events)[number]) {
 		type: document.getElementById('radar-type'),
 		status: document.getElementById('radar-status'),
 		sort: document.getElementById('radar-sort'),
+		minScore: document.getElementById('radar-min-score'),
+		minScoreLabel: document.getElementById('radar-min-score-label'),
+		highOnly: document.getElementById('radar-high-only'),
+		upcomingOnly: document.getElementById('radar-upcoming-only'),
+		verifiedOnly: document.getElementById('radar-verified-only'),
+		toggleMap: document.getElementById('radar-toggle-map'),
+		toggleCompact: document.getElementById('radar-toggle-compact'),
+		clearPins: document.getElementById('radar-clear-pins'),
 		save: document.getElementById('radar-save'),
 		load: document.getElementById('radar-load'),
 		share: document.getElementById('radar-share'),
 		reset: document.getElementById('radar-reset'),
 		brief: document.getElementById('radar-brief'),
+		compare: document.getElementById('radar-compare'),
 	};
 
 	const list = document.getElementById('radar-list');
 	const count = document.getElementById('radar-count');
 	const empty = document.getElementById('radar-empty');
 	const map = document.getElementById('radar-map');
+	const mapSection = document.getElementById('radar-map-section');
+	const filterChips = document.getElementById('radar-filter-chips');
 	const briefOutput = document.getElementById('radar-brief-output');
+	const pinnedPanel = document.getElementById('radar-pinned');
+	const pinnedList = document.getElementById('radar-pinned-list');
+
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
+	const pinButtons = Array.from(document.querySelectorAll('[data-pin-btn]'));
 	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
+
+	let compactMode = false;
+	let mapVisible = true;
+	let pinned = loadPins();
 
 	function parseDate(value) {
 		if (!value) return null;
 		const ms = new Date(value).getTime();
 		return Number.isNaN(ms) ? null : ms;
+	}
+
+	function loadPins() {
+		try {
+			const raw = localStorage.getItem(PIN_KEY);
+			const ids = raw ? JSON.parse(raw) : [];
+			return new Set(Array.isArray(ids) ? ids : []);
+		} catch {
+			return new Set();
+		}
+	}
+
+	function savePins() {
+		localStorage.setItem(PIN_KEY, JSON.stringify(Array.from(pinned)));
+	}
+
+	function scoreTone(score) {
+		if (score >= 80) return 'high';
+		if (score >= 60) return 'mid';
+		return 'low';
+	}
+
+	for (const card of cards) {
+		const score = Number(card.dataset.score || '0');
+		card.classList.add(`radar-tone-${scoreTone(score)}`);
 	}
 
 	function stateFromUI() {
@@ -370,6 +468,10 @@ function costLabel(event: (typeof events)[number]) {
 			type: controls.type.value,
 			status: controls.status.value,
 			sort: controls.sort.value,
+			min: Number(controls.minScore.value || 0),
+			high: controls.highOnly.checked,
+			upcoming: controls.upcomingOnly.checked,
+			verified: controls.verifiedOnly.checked,
 		};
 	}
 
@@ -379,13 +481,24 @@ function costLabel(event: (typeof events)[number]) {
 		controls.type.value = state.type || '';
 		controls.status.value = state.status || '';
 		controls.sort.value = state.sort || 'score';
+		controls.minScore.value = String(state.min || 0);
+		controls.minScoreLabel.textContent = String(state.min || 0);
+		controls.highOnly.checked = Boolean(state.high);
+		controls.upcomingOnly.checked = Boolean(state.upcoming);
+		controls.verifiedOnly.checked = Boolean(state.verified);
 	}
 
 	function toQuery(state) {
 		const params = new URLSearchParams();
-		Object.entries(state).forEach(([k, v]) => {
-			if (v) params.set(k, String(v));
-		});
+		if (state.q) params.set('q', state.q);
+		if (state.branch) params.set('branch', state.branch);
+		if (state.type) params.set('type', state.type);
+		if (state.status) params.set('status', state.status);
+		if (state.sort && state.sort !== 'score') params.set('sort', state.sort);
+		if (state.min > 0) params.set('min', String(state.min));
+		if (state.high) params.set('high', '1');
+		if (state.upcoming) params.set('upcoming', '1');
+		if (state.verified) params.set('verified', '1');
 		return params.toString();
 	}
 
@@ -397,13 +510,11 @@ function costLabel(event: (typeof events)[number]) {
 			type: params.get('type') || '',
 			status: params.get('status') || '',
 			sort: params.get('sort') || 'score',
+			min: Number(params.get('min') || 0),
+			high: params.get('high') === '1',
+			upcoming: params.get('upcoming') === '1',
+			verified: params.get('verified') === '1',
 		});
-	}
-
-	function scoreTone(score) {
-		if (score >= 80) return 'high';
-		if (score >= 60) return 'mid';
-		return 'low';
 	}
 
 	function mapProjection(lat, lng) {
@@ -417,6 +528,10 @@ function costLabel(event: (typeof events)[number]) {
 	}
 
 	function renderMap(visibleCards) {
+		if (!mapVisible) {
+			map.innerHTML = '';
+			return;
+		}
 		map.innerHTML = '';
 		for (const card of visibleCards) {
 			const lat = Number(card.dataset.lat);
@@ -444,6 +559,10 @@ function costLabel(event: (typeof events)[number]) {
 			if (state.branch && card.dataset.branch !== state.branch) return false;
 			if (state.type && card.dataset.type !== state.type) return false;
 			if (state.status && card.dataset.status !== state.status) return false;
+			if (state.high && card.dataset.signal !== 'High') return false;
+			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
+			if (state.verified && card.dataset.confidence !== 'high') return false;
+			if (Number(card.dataset.score || '0') < state.min) return false;
 			if (!q) return true;
 			return (card.dataset.search || '').includes(q);
 		});
@@ -469,6 +588,50 @@ function costLabel(event: (typeof events)[number]) {
 		return { visible, state };
 	}
 
+	function renderFilterChips(state) {
+		const chips = [];
+		if (state.q) chips.push(`Search: ${state.q}`);
+		if (state.branch) chips.push(`Branch: ${state.branch}`);
+		if (state.type) chips.push(`Type: ${state.type}`);
+		if (state.status) chips.push(`Status: ${state.status}`);
+		if (state.min > 0) chips.push(`Min score: ${state.min}`);
+		if (state.high) chips.push('High signal');
+		if (state.upcoming) chips.push('Upcoming only');
+		if (state.verified) chips.push('Verified only');
+		if (!chips.length) chips.push('No active filters');
+		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
+	}
+
+	function renderPinned() {
+		const entries = Array.from(pinned)
+			.map((id) => cards.find((c) => c.dataset.id === id))
+			.filter(Boolean)
+			.sort((a, b) => Number(b.dataset.score) - Number(a.dataset.score));
+
+		for (const btn of pinButtons) {
+			const id = btn.dataset.id;
+			const isPinned = pinned.has(id);
+			btn.classList.toggle('is-pinned', isPinned);
+			btn.textContent = isPinned ? 'Pinned' : 'Pin';
+		}
+
+		if (!entries.length) {
+			pinnedPanel.classList.add('hidden');
+			pinnedList.innerHTML = '';
+			return;
+		}
+
+		pinnedPanel.classList.remove('hidden');
+		pinnedList.innerHTML = entries
+			.map((card) => {
+				const title = card.dataset.title || card.querySelector('h3')?.textContent || 'Untitled';
+				const score = card.dataset.score;
+				const meta = card.querySelector('.radar-meta')?.textContent || '';
+				return `<li class="radar-pinned-item"><span>${title}</span><span class="text-slate-400">${meta} · score ${score}</span></li>`;
+			})
+			.join('');
+	}
+
 	function render() {
 		const { visible, state } = getVisibleCards();
 		for (const card of cards) card.classList.add('hidden');
@@ -477,9 +640,17 @@ function costLabel(event: (typeof events)[number]) {
 			list.appendChild(card);
 		}
 
+		list.classList.toggle('is-compact', compactMode);
+		mapSection.classList.toggle('hidden', !mapVisible);
+		controls.toggleMap.textContent = mapVisible ? 'Hide map' : 'Show map';
+		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
+		controls.minScoreLabel.textContent = String(state.min);
+
 		empty.classList.toggle('hidden', visible.length > 0);
-		count.textContent = `${visible.length} of ${cards.length} items shown`;
+		count.textContent = `${visible.length} of ${cards.length} items shown · ${pinned.size} pinned`;
+		renderFilterChips(state);
 		renderMap(visible);
+		renderPinned();
 
 		const query = toQuery(state);
 		const href = query ? `${window.location.pathname}?${query}` : window.location.pathname;
@@ -512,12 +683,33 @@ function costLabel(event: (typeof events)[number]) {
 		const { visible } = getVisibleCards();
 		const top = visible.slice(0, 6).map((card, i) => {
 			const title = card.querySelector('h3')?.textContent?.trim() || 'Untitled';
-			const meta = card.querySelector('p:last-of-type')?.textContent?.trim() || '';
+			const meta = card.querySelector('.radar-meta')?.textContent?.trim() || '';
 			const score = card.dataset.score;
 			return `${i + 1}. ${title} (score ${score}) - ${meta}`;
 		});
 
-		const text = ['# Radar Brief Draft', '', `Generated: ${new Date().toLocaleString()}`, '', '## Prioritized opportunities', '', ...top, '', '## Notes', '- Auto-generated from current filter state', '- Review provenance confidence before external use'].join('\n');
+		const text = ['# Radar Brief Draft', '', `Generated: ${new Date().toLocaleString()}`, '', '## Prioritized opportunities', '', ...top, '', '## Notes', '- Auto-generated from current filter state', '- Review provenance confidence before external use'].join('
+');
+		briefOutput.classList.remove('hidden');
+		briefOutput.textContent = text;
+		await navigator.clipboard.writeText(text);
+	}
+
+	async function copyCompareBrief() {
+		const entries = Array.from(pinned)
+			.map((id) => cards.find((c) => c.dataset.id === id))
+			.filter(Boolean)
+			.sort((a, b) => Number(b.dataset.score) - Number(a.dataset.score));
+
+		if (!entries.length) return;
+		const lines = ['# Radar Compare Brief', '', `Generated: ${new Date().toLocaleString()}`, ''];
+		entries.forEach((card, i) => {
+			const title = card.dataset.title || card.querySelector('h3')?.textContent || 'Untitled';
+			const meta = card.querySelector('.radar-meta')?.textContent || '';
+			lines.push(`${i + 1}. ${title} (score ${card.dataset.score}) - ${meta}`);
+		});
+		const text = lines.join('
+');
 		briefOutput.classList.remove('hidden');
 		briefOutput.textContent = text;
 		await navigator.clipboard.writeText(text);
@@ -525,28 +717,73 @@ function costLabel(event: (typeof events)[number]) {
 
 	function applyPreset(name) {
 		if (name === 'near-term') {
-			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'date' });
+			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'date', min: 55, high: false, upcoming: true, verified: false });
 		} else if (name === 'high-confidence') {
-			applyState({ q: 'confidence high', branch: '', type: '', status: '', sort: 'score' });
+			applyState({ q: '', branch: '', type: '', status: '', sort: 'score', min: 60, high: false, upcoming: false, verified: true });
 		} else if (name === 'needs-dates') {
-			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'meta' });
+			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'meta', min: 0, high: false, upcoming: false, verified: false });
 		}
 		render();
 	}
 
-	[controls.q, controls.branch, controls.type, controls.status, controls.sort].forEach((node) => node.addEventListener('input', render));
+	function togglePin(id) {
+		if (!id) return;
+		if (pinned.has(id)) pinned.delete(id);
+		else pinned.add(id);
+		savePins();
+		renderPinned();
+	}
+
+	[controls.q, controls.branch, controls.type, controls.status, controls.sort, controls.minScore].forEach((node) => node.addEventListener('input', render));
+	[controls.highOnly, controls.upcomingOnly, controls.verifiedOnly].forEach((node) => node.addEventListener('change', render));
 	controls.save.addEventListener('click', saveView);
 	controls.load.addEventListener('click', loadView);
 	controls.share.addEventListener('click', copyShare);
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', sort: 'score' });
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'score', min: 0, high: false, upcoming: false, verified: false });
 		render();
 	});
 	controls.brief.addEventListener('click', buildBrief);
+	controls.compare.addEventListener('click', copyCompareBrief);
+	controls.toggleMap.addEventListener('click', () => {
+		mapVisible = !mapVisible;
+		render();
+	});
+	controls.toggleCompact.addEventListener('click', () => {
+		compactMode = !compactMode;
+		render();
+	});
+	controls.clearPins.addEventListener('click', () => {
+		pinned = new Set();
+		savePins();
+		renderPinned();
+		render();
+	});
 
 	for (const btn of presetButtons) {
 		btn.addEventListener('click', () => applyPreset(btn.dataset.preset));
 	}
+
+	for (const btn of pinButtons) {
+		btn.addEventListener('click', () => togglePin(btn.dataset.id));
+	}
+
+	document.addEventListener('keydown', (event) => {
+		if (event.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
+		if (event.key === '/') {
+			event.preventDefault();
+			controls.q.focus();
+			controls.q.select();
+		}
+		if (event.key.toLowerCase() === 'm') {
+			mapVisible = !mapVisible;
+			render();
+		}
+		if (event.key.toLowerCase() === 'c') {
+			compactMode = !compactMode;
+			render();
+		}
+	});
 
 	applyUrlState();
 	render();
@@ -733,5 +970,108 @@ function costLabel(event: (typeof events)[number]) {
 		font-size: 0.75rem;
 		line-height: 1.5;
 		white-space: pre-wrap;
+	}
+
+	.radar-toolbar {
+		position: sticky;
+		top: 0.6rem;
+		z-index: 10;
+	}
+	.radar-filter-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+	}
+	.radar-chip {
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(15, 23, 42, 0.78);
+		padding: 0.2rem 0.5rem;
+		font-size: 0.68rem;
+		color: rgba(203, 213, 225, 0.95);
+	}
+
+	.radar-btn-tight {
+		padding: 0.38rem 0.55rem;
+		font-size: 0.73rem;
+	}
+
+	.radar-check {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgba(2, 6, 23, 0.54);
+		padding: 0.42rem 0.55rem;
+		font-size: 0.78rem;
+		color: rgba(226, 232, 240, 0.93);
+	}
+
+	.radar-card {
+		border-left-width: 3px;
+		transition: border-color 150ms ease, background 150ms ease, transform 140ms ease;
+	}
+	.radar-card:hover {
+		background: rgba(15, 23, 42, 0.56);
+		transform: translateY(-1px);
+	}
+	.radar-tone-high {
+		border-left-color: rgba(212, 165, 116, 0.95);
+	}
+	.radar-tone-mid {
+		border-left-color: rgba(0, 196, 196, 0.85);
+	}
+	.radar-tone-low {
+		border-left-color: rgba(148, 163, 184, 0.7);
+	}
+
+	.radar-pin-btn {
+		border: 1px solid rgba(71, 85, 105, 0.95);
+		background: rgba(2, 6, 23, 0.85);
+		padding: 0.32rem 0.52rem;
+		font-size: 0.72rem;
+		color: rgba(226, 232, 240, 0.93);
+	}
+	.radar-pin-btn:hover {
+		background: rgba(30, 41, 59, 0.88);
+	}
+	.radar-pin-btn.is-pinned {
+		border-color: rgba(212, 165, 116, 0.7);
+		background: rgba(212, 165, 116, 0.18);
+		color: rgba(254, 243, 199, 0.96);
+	}
+
+	.radar-pinned {
+		margin-top: 0.8rem;
+		border: 1px solid rgba(71, 85, 105, 0.7);
+		background: rgba(15, 23, 42, 0.55);
+		padding: 0.65rem;
+	}
+	.radar-pinned-item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.12rem;
+		border: 1px solid rgba(51, 65, 85, 0.7);
+		padding: 0.45rem 0.55rem;
+		font-size: 0.78rem;
+		color: rgba(226, 232, 240, 0.95);
+	}
+
+	.radar-list.is-compact .radar-desc,
+	.radar-list.is-compact .radar-theme-row,
+	.radar-list.is-compact .radar-details {
+		display: none;
+	}
+	.radar-list.is-compact .radar-card {
+		padding-top: 0.72rem;
+		padding-bottom: 0.72rem;
+	}
+	.radar-list.is-compact .radar-meta {
+		margin-top: 0.35rem;
+	}
+
+	@media (max-width: 1279px) {
+		.radar-toolbar {
+			position: static;
+		}
 	}
 </style>
