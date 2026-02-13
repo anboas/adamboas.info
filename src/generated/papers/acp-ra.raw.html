@@ -192,12 +192,17 @@ word, different meaning” failures.</p></li>
 <h2 id="conceptual-view-ov1">Conceptual view (OV‑1)</h2>
 <figure id="fig:acp-ov1">
 <img src="papers/acp-ra/diagrams/acp_ov1_simplified.png" />
-<figcaption>Agent Control Plane OV-1 (Simplified). The control plane
-governs identity, trust scopes, policy, gateways, evaluation, and
-evidence across the runtime plane. It aligns to enterprise identity and
-access management, DevSecOps, Zero Trust/CNAP, and security operations
-patterns.</figcaption>
+<figcaption>Agent Control Plane OV-1 (Color-Coded). Key: gray = already
+existing enterprise baseline, teal = ACP-RA control-plane components,
+green = runtime execution layer integrated by ACP-RA.</figcaption>
 </figure>
+<p><strong>What already exists:</strong> Enterprise ICAM, Zero
+Trust/CNAP controls, DevSecOps platform, SOC/CSSP operations, and
+mission-specific runtime/tool infrastructure.</p>
+<p><strong>What ACP-RA specifically constitutes:</strong> Agent registry
+and persona issuance, trust-scope service, policy engine (PDP +
+policy-as-code), model/data/tool gateways, evaluation harness with
+safety gates, and evidence/observability primitives.</p>
 <p>The conceptual model is a control system with two planes:</p>
 <ul>
 <li><p><strong>Runtime plane:</strong> agent runtimes executing plans
