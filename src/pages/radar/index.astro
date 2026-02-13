@@ -113,10 +113,10 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
 				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 			</div>
-			<details id="radar-filter-panel" class="radar-filter-wrap">
-				<summary class="radar-summary radar-summary-primary">Filters</summary>
-				<div class="mt-3 grid gap-2 text-sm sm:grid-cols-2">
-					<label class="block sm:col-span-2">
+			<div class="mt-3 border-t border-slate-800 pt-3 radar-filter-wrap">
+				<p class="radar-summary radar-summary-primary">Filters</p>
+				<div class="mt-2 grid gap-2 text-sm md:grid-cols-4">
+					<label class="block md:col-span-2">
 						<input id="radar-q" class="radar-input" type="search" placeholder="Search theme, stakeholder, city..." />
 					</label>
 					<select id="radar-branch" class="radar-input">
@@ -127,38 +127,16 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 						<option value="">All types</option>
 						{types.map((type) => <option value={type}>{type}</option>)}
 					</select>
-					<select id="radar-status" class="radar-input sm:col-span-2">
+					<select id="radar-status" class="radar-input">
 						<option value="">All statuses</option>
 						{statuses.map((status) => <option value={status}>{status}</option>)}
 					</select>
-
-					<details id="radar-filter-advanced" class="sm:col-span-2">
-						<summary class="radar-summary">Advanced filters + actions</summary>
-						<div class="mt-3 grid gap-2 sm:grid-cols-2">
-							<select id="radar-sort" class="radar-input sm:col-span-2">
-								<option value="soonest">Soonest first</option>
-								<option value="latest">Latest first</option>
-								<option value="signal">Signal first</option>
-								<option value="branch">Branch</option>
-							</select>
-							<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
-							<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified sources only</span></label>
-							<label class="radar-check sm:col-span-2"><input id="radar-show-past" type="checkbox" /><span>Show past events</span></label>
-							<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
-								<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
-								<button class="radar-btn" type="button" data-preset="high-confidence">Preset: verified sources</button>
-								<button class="radar-btn" type="button" data-preset="needs-dates">Preset: needs dates</button>
-							</div>
-							<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
-								<button id="radar-save" class="radar-btn" type="button">Save view</button>
-								<button id="radar-load" class="radar-btn" type="button">Load saved view</button>
-								<button id="radar-share" class="radar-btn" type="button">Copy share link</button>
-								<button id="radar-reset" class="radar-btn" type="button">Reset</button>
-							</div>
-						</div>
-					</details>
+					<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
+					<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified only</span></label>
+					<label class="radar-check"><input id="radar-show-past" type="checkbox" /><span>Show past</span></label>
+					<button id="radar-reset" class="radar-btn" type="button">Reset</button>
 				</div>
-			</details>
+			</div>
 
 			<div class="mt-3 border-t border-slate-800 pt-3">
 				<div class="flex flex-wrap items-end justify-between gap-3">
@@ -186,6 +164,12 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			<section id="radar-list-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Opportunities</h2>
+					<select id="radar-sort" class="radar-input radar-input-sort">
+						<option value="soonest">Soonest first</option>
+						<option value="latest">Latest first</option>
+						<option value="signal">Signal first</option>
+						<option value="branch">Branch</option>
+					</select>
 				</div>
 				<div id="radar-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-4 text-sm text-slate-300">
 					No events match the current filter state.
@@ -220,7 +204,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 								<div class="flex items-center gap-2">
 									<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
 									{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Link</a> : null}
-													<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
+									<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 								</div>
 							</div>
 
@@ -309,8 +293,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 </SiteLayout>
 
 <script is:inline>
-	const KEY = 'adamboas.radar.view.v4';
-
 	const controls = {
 		q: document.getElementById('radar-q'),
 		branch: document.getElementById('radar-branch'),
@@ -322,9 +304,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		showPast: document.getElementById('radar-show-past'),
 		toggleMap: document.getElementById('radar-toggle-map'),
 		toggleCompact: document.getElementById('radar-toggle-compact'),
-		save: document.getElementById('radar-save'),
-		load: document.getElementById('radar-load'),
-		share: document.getElementById('radar-share'),
 		reset: document.getElementById('radar-reset'),
 	};
 
@@ -337,16 +316,13 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	const mapFitBtn = document.getElementById('radar-map-fit');
 	const mapResetBtn = document.getElementById('radar-map-reset');
 	const mapSection = document.getElementById('radar-map-section');
-	const filterPanel = document.getElementById('radar-filter-panel');
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
-	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
 
 	let compactMode = true;
 	let mapVisible = true;
 
-	if (window.matchMedia('(max-width: 767px)').matches && filterPanel) filterPanel.open = false;
 
 	function parseDate(value) {
 		if (!value) return null;
@@ -762,46 +738,11 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		history.replaceState(null, '', href);
 	}
 
-	function saveView() {
-		localStorage.setItem(KEY, JSON.stringify(stateFromUI()));
-	}
 
-	function loadView() {
-		const raw = localStorage.getItem(KEY);
-		if (!raw) return;
-		try {
-			const state = JSON.parse(raw);
-			applyState(state);
-			render();
-		} catch {
-			/* ignore */
-		}
-	}
-
-	async function copyShare() {
-		await navigator.clipboard.writeText(window.location.href);
-		controls.share.textContent = 'Copied';
-		setTimeout(() => (controls.share.textContent = 'Copy share link'), 1200);
-	}
-
-
-	function applyPreset(name) {
-		if (name === 'near-term') {
-			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'soonest', upcoming: true, verified: false, showPast: false });
-		} else if (name === 'high-confidence') {
-			applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: true, showPast: false });
-		} else if (name === 'needs-dates') {
-			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'soonest', upcoming: false, verified: false, showPast: false });
-		}
-		render();
-	}
 
 
 	[controls.q, controls.branch, controls.type, controls.status, controls.sort].forEach((node) => node.addEventListener('input', render));
 	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast].forEach((node) => node.addEventListener('change', render));
-	controls.save.addEventListener('click', saveView);
-	controls.load.addEventListener('click', loadView);
-	controls.share.addEventListener('click', copyShare);
 	controls.reset.addEventListener('click', () => {
 		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false });
 		render();
@@ -814,10 +755,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		compactMode = !compactMode;
 		render();
 	});
-
-	for (const btn of presetButtons) {
-		btn.addEventListener('click', () => applyPreset(btn.dataset.preset));
-	}
 
 
 	for (const btn of mapFocusButtons) {
