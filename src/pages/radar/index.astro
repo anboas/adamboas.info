@@ -62,20 +62,19 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 >
 	<StickyBrowseBar active="radar" />
 
-	<section class="card p-6 sm:p-8">
-		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V4.0</p>
-		<h1 class="mt-2 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">Operations Radar</h1>
-		<p class="mt-3 max-w-4xl text-sm text-slate-300 sm:text-base">
-			Ontology-rich opportunity radar for events, partner touchpoints, and decision windows. Compact by default, deep metadata and provenance on expand.
-		</p>
-
-		<div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6">
-			<div class="radar-stat"><span>Items</span><strong>{summaryStats.total}</strong></div>
-			<div class="radar-stat"><span>Upcoming</span><strong>{summaryStats.upcoming}</strong></div>
-			<div class="radar-stat"><span>High signal</span><strong>{summaryStats.highSignal}</strong></div>
-			<div class="radar-stat"><span>Needs date</span><strong>{summaryStats.needsDate}</strong></div>
-			<div class="radar-stat"><span>Ontology themes</span><strong>{summaryStats.themes}</strong></div>
-			<div class="radar-stat"><span>Top score</span><strong>{summaryStats.topScore}</strong></div>
+	<section class="card p-5 sm:p-6">
+		<div class="flex flex-wrap items-end justify-between gap-3">
+			<div>
+				<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V4.1</p>
+				<h1 class="mt-1 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Operations Radar</h1>
+			</div>
+			<p class="text-xs text-slate-400">Clustered map + compact cards + fast filter workflow</p>
+		</div>
+		<div class="mt-4 flex flex-wrap gap-2">
+			<span class="radar-mini-stat">{summaryStats.total} items</span>
+			<span class="radar-mini-stat">{summaryStats.upcoming} upcoming</span>
+			<span class="radar-mini-stat">{summaryStats.highSignal} high signal</span>
+			<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 		</div>
 	</section>
 
@@ -363,7 +362,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	const pinButtons = Array.from(document.querySelectorAll('[data-pin-btn]'));
 	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
 
-	let compactMode = false;
+	let compactMode = true;
 	let mapVisible = true;
 	let pinned = loadPins();
 
@@ -502,10 +501,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		}, { passive: false });
 	}
 
-	function pinIcon(score, tone) {
+	function pinIcon(score, tone, id) {
 		return window.L.divIcon({
 			className: 'radar-leaflet-pin-wrap',
-			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}"><span>${escapeHtml(score)}</span></div>`,
+			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(score)}</span></div>`,
 			iconSize: [30, 30],
 			iconAnchor: [15, 15],
 		});
@@ -558,9 +557,15 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		mapLib.fitBounds(US_BOUNDS);
 		mapLib.on('contextmenu', () => mapLib.fitBounds(US_BOUNDS));
 		mapLib.on('popupopen', (e) => {
+			document.querySelectorAll('.radar-leaflet-pin.is-active').forEach((n) => n.classList.remove('is-active'));
+			const sourceIcon = e.popup?._source?._icon?.querySelector?.('.radar-leaflet-pin');
+			if (sourceIcon) sourceIcon.classList.add('is-active');
 			const el = e.popup?.getElement();
 			const btn = el?.querySelector?.('.radar-map-jump');
 			if (btn) btn.addEventListener('click', () => focusCard(btn.dataset.eventId));
+		});
+		mapLib.on('popupclose', () => {
+			document.querySelectorAll('.radar-leaflet-pin.is-active').forEach((n) => n.classList.remove('is-active'));
 		});
 		mapFitBtn?.addEventListener('click', () => fitMapToResults());
 		mapResetBtn?.addEventListener('click', () => mapLib.fitBounds(US_BOUNDS));
@@ -728,7 +733,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			const lng = Number(card.dataset.lng || '');
 			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
 			const tone = scoreTone(Number(card.dataset.score || 0));
-			const marker = window.L.marker([lat, lng], { icon: pinIcon(card.dataset.score || '0', tone) });
+			const marker = window.L.marker([lat, lng], { icon: pinIcon(card.dataset.score || '0', tone, card.dataset.id || '') });
 			marker.bindPopup(markerPopup(card), { maxWidth: 360 });
 			clusterLayer.addLayer(marker);
 			mapped += 1;
@@ -905,6 +910,16 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		color: rgba(241, 245, 249, 0.97);
 	}
 
+	.radar-mini-stat {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(2, 6, 23, 0.92);
+		padding: 0.22rem 0.5rem;
+		font-size: 0.72rem;
+		color: rgba(226, 232, 240, 0.92);
+	}
+
 	.radar-input {
 		width: 100%;
 		border: 1px solid rgba(51, 65, 85, 0.95);
@@ -1044,6 +1059,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	.radar-leaflet-pin-high { border-color: rgba(212, 165, 116, 0.96); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(212, 165, 116, 0.24); }
 	.radar-leaflet-pin-mid { border-color: rgba(0, 196, 196, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(0, 196, 196, 0.25); }
 	.radar-leaflet-pin-low { border-color: rgba(148, 163, 184, 0.96); }
+	.radar-leaflet-pin.is-active {
+		transform: scale(1.14);
+		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.75), 0 0 0 2px rgba(0, 196, 196, 0.55), 0 0 16px rgba(0, 196, 196, 0.3);
+	}
 
 	.radar-map .marker-cluster-small,
 	.radar-map .marker-cluster-medium,
