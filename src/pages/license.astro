@@ -1,0 +1,28 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../utils/withBase';
+---
+
+<SiteLayout
+	title="Code License | Adam Boas"
+	description="Code licensing terms for this repository."
+	canonicalHref="https://www.adamboas.com/license/"
+>
+	<section class="mt-2 max-w-3xl space-y-4">
+		<h1 class="section-title">Code License</h1>
+		<div class="card p-5 space-y-3 text-sm text-slate-300">
+			<p>
+				Software code in this repository is licensed under
+				<strong class="text-slate-100">GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)</strong>.
+			</p>
+			<p>
+				Read the full license text in the repository:
+				<a href="https://github.com/anboas/adamboas.info/blob/main/LICENSE" target="_blank" rel="noreferrer">LICENSE</a>.
+			</p>
+			<p>
+				Non-code writing and editorial content are covered separately under
+				<a href={withBase('/content-license/')}>Content License</a>.
+			</p>
+		</div>
+	</section>
+</SiteLayout>
