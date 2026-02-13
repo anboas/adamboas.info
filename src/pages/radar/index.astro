@@ -2,6 +2,9 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
+import { geoAlbersUsa, geoPath } from 'd3-geo';
+import { feature } from 'topojson-client';
+import usAtlas from 'us-atlas/states-10m.json';
 import { radarEventsSeed } from '../../data/radar/events';
 import { scoreEvents, scoringLegend } from '../../data/radar/scoring';
 
@@ -60,51 +63,63 @@ function scoreTone(score: number) {
 	return 'low';
 }
 
-const usFocusEvents = events.filter((e) => e.location.lng <= -60 && e.location.lng >= -130 && e.location.lat >= 22 && e.location.lat <= 52);
-const US_MIN_LNG = Math.min(...usFocusEvents.map((e) => e.location.lng)) - 4;
-const US_MAX_LNG = Math.max(...usFocusEvents.map((e) => e.location.lng)) + 4;
-const US_MIN_LAT = Math.min(...usFocusEvents.map((e) => e.location.lat)) - 2;
-const US_MAX_LAT = Math.max(...usFocusEvents.map((e) => e.location.lat)) + 2;
+const MAP_W = 1000;
+const MAP_H = 540;
+const OUTSIDE_RAIL_X = MAP_W - 22;
+
+const usAtlasAny = usAtlas as any;
+const nationFeature = feature(usAtlasAny, usAtlasAny.objects.nation) as any;
+const statesFeature = feature(usAtlasAny, usAtlasAny.objects.states) as any;
+const projection = geoAlbersUsa()
+	.translate([MAP_W / 2, MAP_H / 2 + 8])
+	.scale(1180);
+const pathBuilder = geoPath(projection);
+
+const nationPath = pathBuilder(nationFeature) ?? '';
+const statePaths = (statesFeature.features ?? [])
+	.map((f: any) => ({ id: String(f.id), d: pathBuilder(f) }))
+	.filter((s: any) => typeof s.d === 'string' && s.d.length > 0);
+
+const latValues = events.map((e) => e.location.lat);
+const LAT_MIN = Math.min(...latValues) - 2;
+const LAT_MAX = Math.max(...latValues) + 2;
 
 function clamp(n: number, min: number, max: number) {
 	return Math.min(max, Math.max(min, n));
 }
 
 function mapProjection(lat: number, lng: number) {
-	const inUsTheater = lng <= -60 && lng >= -130 && lat >= 20 && lat <= 55;
-	if (!inUsTheater) {
-		const yNorm = (US_MAX_LAT - clamp(lat, US_MIN_LAT, US_MAX_LAT)) / (US_MAX_LAT - US_MIN_LAT);
-		return { xPct: 95, yPct: 8 + yNorm * 84, outside: true };
+	const projected = projection([lng, lat]);
+	if (!projected) {
+		const yNorm = (LAT_MAX - clamp(lat, LAT_MIN, LAT_MAX)) / (LAT_MAX - LAT_MIN);
+		return { x: OUTSIDE_RAIL_X, y: clamp(18 + yNorm * (MAP_H - 36), 16, MAP_H - 16), outside: true };
 	}
-
-	const xNorm = (lng - US_MIN_LNG) / (US_MAX_LNG - US_MIN_LNG);
-	const yNorm = (US_MAX_LAT - lat) / (US_MAX_LAT - US_MIN_LAT);
 	return {
-		xPct: 4 + xNorm * 82,
-		yPct: 8 + yNorm * 84,
+		x: clamp(projected[0], 16, MAP_W - 48),
+		y: clamp(projected[1], 16, MAP_H - 16),
 		outside: false,
 	};
 }
 
 const mapPoints = events.map((event) => mapProjection(event.location.lat, event.location.lng));
-const placedInside: Array<{ xPct: number; yPct: number }> = [];
-const placedOutside: Array<{ xPct: number; yPct: number }> = [];
+const placedInside: Array<{ x: number; y: number }> = [];
+const placedOutside: Array<{ x: number; y: number }> = [];
 for (const point of mapPoints) {
-	let xPct = point.xPct;
-	let yPct = point.yPct;
+	let x = point.x;
+	let y = point.y;
 	let step = 0;
 	const pool = point.outside ? placedOutside : placedInside;
-	const minDist = point.outside ? 2 : 2.35;
-	while (pool.some((p) => Math.hypot(p.xPct - xPct, p.yPct - yPct) < minDist) && step < 36) {
+	const minDist = point.outside ? 13 : 16;
+	while (pool.some((p) => Math.hypot(p.x - x, p.y - y) < minDist) && step < 36) {
 		const angle = (step * 137.5 * Math.PI) / 180;
-		const radius = point.outside ? 0.75 + Math.floor(step / 5) * 0.65 : 0.7 + Math.floor(step / 4) * 0.75;
-		xPct = clamp(point.xPct + Math.cos(angle) * radius, point.outside ? 92.6 : 4, point.outside ? 97.4 : 86);
-		yPct = clamp(point.yPct + Math.sin(angle) * radius, 8, 92);
+		const radius = 6 + Math.floor(step / 4) * (point.outside ? 2.5 : 3.5);
+		x = clamp(point.x + Math.cos(angle) * radius, point.outside ? MAP_W - 34 : 16, point.outside ? MAP_W - 10 : MAP_W - 48);
+		y = clamp(point.y + Math.sin(angle) * radius, 16, MAP_H - 16);
 		step += 1;
 	}
-	point.xPct = xPct;
-	point.yPct = yPct;
-	pool.push({ xPct, yPct });
+	point.x = x;
+	point.y = y;
+	pool.push({ x, y });
 }
 ---
 
@@ -116,7 +131,7 @@ for (const point of mapPoints) {
 	<StickyBrowseBar active="radar" />
 
 	<section class="card p-6 sm:p-8">
-		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V3.0</p>
+		<p class="text-xs uppercase tracking-[0.14em] text-slate-400">Prototype · Radar V3.1</p>
 		<h1 class="mt-2 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">Operations Radar</h1>
 		<p class="mt-3 max-w-4xl text-sm text-slate-300 sm:text-base">
 			Ontology-rich opportunity radar for events, partner touchpoints, and decision windows. Compact by default, deep metadata and provenance on expand.
@@ -293,36 +308,39 @@ for (const point of mapPoints) {
 			<section id="radar-map-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Map view</h2>
-					<p class="text-xs text-slate-500">Click a marker to jump to card · right rail = outside US theater</p>
+					<p class="text-xs text-slate-500">True US geometry projection · right rail = outside US theater</p>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
-					<div class="radar-map-stage" role="img" aria-label="US theater map with outside-theater rail">
-						<div class="radar-map-mainzone" aria-hidden="true">
-							<div class="radar-map-label radar-map-label-west">West</div>
-							<div class="radar-map-label radar-map-label-central">Central</div>
-							<div class="radar-map-label radar-map-label-east">East</div>
-						</div>
-						<div class="radar-map-outside-zone" aria-hidden="true">
-							<div class="radar-map-outside-label">Outside</div>
-						</div>
-						{events.map((event, idx) => {
-							const p = mapPoints[idx];
-							const tone = scoreTone(event.score.total);
-							return (
-								<button
-									type="button"
-									class={`radar-map-marker radar-map-marker-${tone} ${p.outside ? 'radar-map-marker-outside' : ''}`}
-									data-map-marker
-									data-id={event.id}
-									data-title={event.title}
-									aria-label={`${event.title}, score ${event.score.total}${p.outside ? ', outside US theater' : ''}`}
-									style={`left:${p.xPct}%; top:${p.yPct}%;`}
-								>
-									<span class="sr-only">{event.title}</span>
-								</button>
-							);
-						})}
-					</div>
+					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label="United States projection with event markers">
+						<rect x="0" y="0" width={MAP_W} height={MAP_H} fill="rgb(2,6,23)"></rect>
+						<g class="radar-map-land">
+							{statePaths.map((state) => <path d={state.d} class="radar-map-state"></path>)}
+							{nationPath ? <path d={nationPath} class="radar-map-nation"></path> : null}
+							<rect x={MAP_W - 36} y="12" width="24" height={MAP_H - 24} rx="3" class="radar-map-outside-rail"></rect>
+						</g>
+						<g class="radar-map-points">
+							{events.map((event, idx) => {
+								const p = mapPoints[idx];
+								const tone = scoreTone(event.score.total);
+								return (
+									<g
+										class={`radar-map-marker radar-map-marker-${tone} ${p.outside ? 'radar-map-marker-outside' : ''}`}
+										data-map-marker
+										data-id={event.id}
+										data-title={event.title}
+										tabindex="0"
+										role="button"
+										aria-label={`${event.title}, score ${event.score.total}${p.outside ? ', outside US theater' : ''}`}
+										transform={`translate(${p.x}, ${p.y})`}
+									>
+										<title>{event.title} · Score {event.score.total}{p.outside ? ' · Outside US theater' : ''}</title>
+										<circle class="radar-map-marker-halo" cx="0" cy="0" r="10"></circle>
+										<circle class="radar-map-marker-core" cx="0" cy="0" r="5"></circle>
+									</g>
+								);
+							})}
+						</g>
+					</svg>
 				</div>
 			</section>
 
@@ -937,72 +955,51 @@ for (const point of mapPoints) {
 		background: rgb(2, 6, 23);
 		overflow: hidden;
 	}
-	.radar-map-stage {
-		position: relative;
-		height: 100%;
+	.radar-map-svg {
+		display: block;
 		width: 100%;
+		height: 100%;
 	}
-	.radar-map-mainzone {
-		position: absolute;
-		left: 2%;
-		top: 5%;
-		width: 86%;
-		height: 90%;
-		border: 1px solid rgba(51, 65, 85, 0.72);
-		background: rgba(15, 23, 42, 0.35);
+	.radar-map-state {
+		fill: rgba(30, 41, 59, 0.78);
+		stroke: rgba(100, 116, 139, 0.45);
+		stroke-width: 0.7;
 	}
-	.radar-map-label {
-		position: absolute;
-		top: 0.35rem;
-		font-size: 0.62rem;
-		letter-spacing: 0.08em;
-		text-transform: uppercase;
-		color: rgba(148, 163, 184, 0.75);
+	.radar-map-nation {
+		fill: none;
+		stroke: rgba(148, 163, 184, 0.75);
+		stroke-width: 1.2;
 	}
-	.radar-map-label-west { left: 2%; }
-	.radar-map-label-central { left: 44%; transform: translateX(-50%); }
-	.radar-map-label-east { right: 2%; }
-	.radar-map-outside-zone {
-		position: absolute;
-		right: 1.5%;
-		top: 8%;
-		width: 5%;
-		height: 84%;
-		border: 1px solid rgba(51, 65, 85, 0.72);
-		background: rgba(15, 23, 42, 0.5);
-	}
-	.radar-map-outside-label {
-		position: absolute;
-		top: 0.35rem;
-		left: 50%;
-		transform: translateX(-50%);
-		font-size: 0.58rem;
-		letter-spacing: 0.08em;
-		text-transform: uppercase;
-		color: rgba(148, 163, 184, 0.75);
+	.radar-map-outside-rail {
+		fill: rgba(15, 23, 42, 0.85);
+		stroke: rgba(100, 116, 139, 0.7);
+		stroke-width: 1;
 	}
 	.radar-map-marker {
-		position: absolute;
-		width: 12px;
-		height: 12px;
-		margin: 0;
-		padding: 0;
-		border-radius: 999px;
-		border: 2px solid rgba(2, 6, 23, 0.95);
-		background: rgba(148, 163, 184, 0.95);
-		box-shadow: 0 0 0 3px rgba(2, 6, 23, 0.65);
-		transform: translate(-50%, -50%);
 		cursor: pointer;
 	}
-	.radar-map-marker-high { background: rgba(212, 165, 116, 1); }
-	.radar-map-marker-mid { background: rgba(0, 196, 196, 0.97); }
-	.radar-map-marker-low { background: rgba(148, 163, 184, 0.95); }
-	.radar-map-marker-outside {
-		box-shadow: 0 0 0 3px rgba(2, 6, 23, 0.65), 0 0 0 1px rgba(212, 165, 116, 0.75);
+	.radar-map-marker .radar-map-marker-halo {
+		fill: rgba(2, 6, 23, 0.72);
+		stroke: rgba(2, 6, 23, 0.95);
+		stroke-width: 1;
 	}
-	.radar-map-marker:hover,
-	.radar-map-marker:focus-visible {
-		transform: translate(-50%, -50%) scale(1.2);
+	.radar-map-marker .radar-map-marker-core {
+		stroke: rgba(2, 6, 23, 0.98);
+		stroke-width: 1.2;
+		transition: transform 140ms ease;
+	}
+	.radar-map-marker-high .radar-map-marker-core { fill: rgba(212, 165, 116, 1); }
+	.radar-map-marker-mid .radar-map-marker-core { fill: rgba(0, 196, 196, 0.97); }
+	.radar-map-marker-low .radar-map-marker-core { fill: rgba(148, 163, 184, 0.95); }
+	.radar-map-marker-outside .radar-map-marker-halo {
+		stroke: rgba(212, 165, 116, 0.7);
+		stroke-dasharray: 2 2;
+	}
+	.radar-map-marker:hover .radar-map-marker-core,
+	.radar-map-marker:focus .radar-map-marker-core,
+	.radar-map-marker:focus-visible .radar-map-marker-core {
+		transform: scale(1.24);
+		transform-origin: center;
 	}
 
 	.radar-card {
@@ -1202,10 +1199,7 @@ for (const point of mapPoints) {
 		.radar-map {
 			height: 240px;
 		}
-		.radar-map-label,
-		.radar-map-outside-label {
-			display: none;
-		}
+		/* mobile keeps full map geometry labels implicit */
 		.radar-stat strong {
 			font-size: 1.12rem;
 		}
