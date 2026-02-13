@@ -1,0 +1,220 @@
+{
+  "generatedAt": "2026-02-13T13:15:16.600914+00:00",
+  "scoring": {
+    "authorityWeight": 0.65,
+    "freshnessWeight": 0.35,
+    "authorityScale": "1-5",
+    "freshnessScale": "1-5"
+  },
+  "sources": [
+    {
+      "name": "AFCEA Events",
+      "url": "https://www.afcea.org/events",
+      "host": "www.afcea.org",
+      "status": 200,
+      "authorityScore": 4.0,
+      "freshnessScore": 5.0,
+      "priorityScore": 4.35,
+      "tier": "P1-Primary",
+      "notes": "Mentions 2026/2027 (20 hits). Strong event/calendar language. Contains multiple dated references."
+    },
+    {
+      "name": "AUSA Meetings & Events",
+      "url": "https://www.ausa.org/meet",
+      "host": "www.ausa.org",
+      "status": 200,
+      "authorityScore": 4.0,
+      "freshnessScore": 5.0,
+      "priorityScore": 4.35,
+      "tier": "P1-Primary",
+      "notes": "Mentions 2026/2027 (16 hits). Strong event/calendar language. Contains multiple dated references."
+    },
+    {
+      "name": "Navy League Meetings & Events",
+      "url": "https://www.navyleague.org/meetings-and-events/",
+      "host": "www.navyleague.org",
+      "status": 200,
+      "authorityScore": 4.0,
+      "freshnessScore": 5.0,
+      "priorityScore": 4.35,
+      "tier": "P1-Primary",
+      "notes": "Mentions 2026/2027 (4 hits). Strong event/calendar language. Contains multiple dated references."
+    },
+    {
+      "name": "AFA Events",
+      "url": "https://www.afa.org/events/",
+      "host": "www.afa.org",
+      "status": 200,
+      "authorityScore": 4.0,
+      "freshnessScore": 5.0,
+      "priorityScore": 4.35,
+      "tier": "P1-Primary",
+      "notes": "Mentions 2026/2027 (9 hits). Strong event/calendar language. Contains multiple dated references."
+    },
+    {
+      "name": "SAME Events",
+      "url": "https://www.same.org/events/",
+      "host": "www.same.org",
+      "status": 200,
+      "authorityScore": 4.0,
+      "freshnessScore": 5.0,
+      "priorityScore": 4.35,
+      "tier": "P1-Primary",
+      "notes": "Mentions 2026/2027 (8 hits). Strong event/calendar language. Contains multiple dated references."
+    },
+    {
+      "name": "CTO Innovation Industry Outreach Calendar",
+      "url": "https://www.ctoinnovation.mil/events/",
+      "host": "www.ctoinnovation.mil",
+      "status": 200,
+      "authorityScore": 5.0,
+      "freshnessScore": 3.0,
+      "priorityScore": 4.3,
+      "tier": "P1-Primary",
+      "notes": "Strong event/calendar language. Applied association-events baseline freshness (content under-extracted)."
+    },
+    {
+      "name": "NDIA Events",
+      "url": "https://www.ndia.org/events",
+      "host": "www.ndia.org",
+      "status": 200,
+      "authorityScore": 4.0,
+      "freshnessScore": 3.0,
+      "priorityScore": 3.65,
+      "tier": "P2-Secondary",
+      "notes": "Applied association-events baseline freshness (content under-extracted)."
+    },
+    {
+      "name": "DoD OSBP Events Calendar",
+      "url": "https://business.defense.gov/Engage/Events-Calendar/",
+      "host": "business.defense.gov",
+      "status": 403,
+      "authorityScore": 5.0,
+      "freshnessScore": 1.0,
+      "priorityScore": 3.6,
+      "tier": "P2-Secondary",
+      "notes": "Access denied from automation. Blocked/non-200 response; freshness unknown."
+    },
+    {
+      "name": "USACE Events for Contractors",
+      "url": "https://www.usace.army.mil/Business-With-Us/Small-Business/Find-Upcoming-Conferences-Outreach-Events-Training/",
+      "host": "www.usace.army.mil",
+      "status": 403,
+      "authorityScore": 5.0,
+      "freshnessScore": 1.0,
+      "priorityScore": 3.6,
+      "tier": "P2-Secondary",
+      "notes": "Access denied from automation. Blocked/non-200 response; freshness unknown."
+    },
+    {
+      "name": "DoD Event Calendars",
+      "url": "https://dod.defense.gov/Today-in-DoD/Event-Calendars/",
+      "host": "dod.defense.gov",
+      "status": 403,
+      "authorityScore": 5.0,
+      "freshnessScore": 1.0,
+      "priorityScore": 3.6,
+      "tier": "P2-Secondary",
+      "notes": "Access denied from automation. Blocked/non-200 response; freshness unknown."
+    },
+    {
+      "name": "DLA Events",
+      "url": "https://www.dla.mil/Working-With-DLA/Events/",
+      "host": "www.dla.mil",
+      "status": 403,
+      "authorityScore": 5.0,
+      "freshnessScore": 1.0,
+      "priorityScore": 3.6,
+      "tier": "P2-Secondary",
+      "notes": "Access denied from automation. Blocked/non-200 response; freshness unknown."
+    },
+    {
+      "name": "JBenton Government Guide Tracker",
+      "url": "https://jbenton1.github.io/government-guide/conference-tracker/",
+      "host": "jbenton1.github.io",
+      "status": 200,
+      "authorityScore": 3.0,
+      "freshnessScore": 4.0,
+      "priorityScore": 3.35,
+      "tier": "P3-Tertiary",
+      "notes": "Mentions 2026/2027 (5 hits). Some event/calendar language."
+    },
+    {
+      "name": "GovEvents Calendar",
+      "url": "https://www.govevents.com/calendar.php?s=1",
+      "host": "www.govevents.com",
+      "status": 200,
+      "authorityScore": 3.0,
+      "freshnessScore": 3.7,
+      "priorityScore": 3.25,
+      "tier": "P3-Tertiary",
+      "notes": "Mentions 2026/2027 (1 hits). Some event/calendar language."
+    },
+    {
+      "name": "ASD Events Defense & Security",
+      "url": "https://www.asdevents.com/defense-security",
+      "host": "www.asdevents.com",
+      "status": 200,
+      "authorityScore": 2.0,
+      "freshnessScore": 5.0,
+      "priorityScore": 3.05,
+      "tier": "P3-Tertiary",
+      "notes": "Mentions 2026/2027 (47 hits). Strong event/calendar language. Contains multiple dated references."
+    },
+    {
+      "name": "Potomac Officers Club Defense",
+      "url": "https://www.potomacofficersclub.com/govcon-event-category/defense/",
+      "host": "www.potomacofficersclub.com",
+      "status": 200,
+      "authorityScore": 2.0,
+      "freshnessScore": 5.0,
+      "priorityScore": 3.05,
+      "tier": "P3-Tertiary",
+      "notes": "Mentions 2026/2027 (1 hits). Strong event/calendar language. Contains multiple dated references."
+    },
+    {
+      "name": "DefGovTech",
+      "url": "https://defgovtech.com/",
+      "host": "defgovtech.com",
+      "status": 200,
+      "authorityScore": 2.0,
+      "freshnessScore": 4.5,
+      "priorityScore": 2.88,
+      "tier": "P3-Tertiary",
+      "notes": "Mentions 2026/2027 (6 hits). Strong event/calendar language."
+    },
+    {
+      "name": "Military Expos",
+      "url": "https://www.militaryexpos.com/",
+      "host": "www.militaryexpos.com",
+      "status": 200,
+      "authorityScore": 2.0,
+      "freshnessScore": 4.2,
+      "priorityScore": 2.77,
+      "tier": "P3-Tertiary",
+      "notes": "Mentions 2026/2027 (89 hits). Strong event/calendar language."
+    },
+    {
+      "name": "GovEvents DoD Organizer Listings",
+      "url": "https://web.govevents.com/listings.php?organizer=DEPARTMENT+OF+DEFENSE+(DoD)&upcoming=1&past=1",
+      "host": "web.govevents.com",
+      "status": 403,
+      "authorityScore": 3.0,
+      "freshnessScore": 1.0,
+      "priorityScore": 2.3,
+      "tier": "P3-Tertiary",
+      "notes": "Blocked/non-200 response; freshness unknown."
+    },
+    {
+      "name": "Defense Advancement Events",
+      "url": "https://www.defenseadvancement.com/events/",
+      "host": "www.defenseadvancement.com",
+      "status": 403,
+      "authorityScore": 2.0,
+      "freshnessScore": 1.0,
+      "priorityScore": 1.65,
+      "tier": "P3-Tertiary",
+      "notes": "Blocked/non-200 response; freshness unknown."
+    }
+  ]
+}

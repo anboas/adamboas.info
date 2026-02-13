@@ -1,0 +1,1312 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import { withBase } from '../../utils/withBase';
+import { radarEventsSeed } from '../../data/radar/events';
+
+const events = radarEventsSeed;
+
+const branches = [...new Set(events.map((e) => e.branch))].sort();
+const types = [...new Set(events.map((e) => e.type))].sort();
+const statuses = ['Upcoming', 'Projected', 'Needs Date', 'Past'] as const;
+
+function daysUntilValue(date: string | null) {
+	if (!date) return null;
+	const target = new Date(date);
+	if (Number.isNaN(target.getTime())) return null;
+	const now = new Date();
+	const targetDay = Date.UTC(target.getFullYear(), target.getMonth(), target.getDate());
+	const nowDay = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+	return Math.round((targetDay - nowDay) / 86_400_000);
+}
+
+function daysUntilBadge(date: string | null) {
+	const days = daysUntilValue(date);
+	if (days === null) return 'Date TBD';
+	if (days === 0) return 'Today';
+	if (days > 0) return `In ${days}d`;
+	return `${Math.abs(days)}d ago`;
+}
+
+function daysUntilDetail(date: string | null) {
+	const days = daysUntilValue(date);
+	if (days === null) return 'Date pending';
+	if (days === 0) return 'Starts today';
+	if (days > 0) return `${days} day(s)`;
+	return `Started ${Math.abs(days)} day(s) ago`;
+}
+
+const nextUpcomingDays = events
+	.map((e) => daysUntilValue(e.startDate))
+	.filter((days): days is number => days !== null && days >= 0);
+
+const summaryStats = {
+	total: events.length,
+	upcoming: events.filter((e) => e.status === 'Upcoming').length,
+	needsDate: events.filter((e) => e.status === 'Needs Date').length,
+	nextInDays: nextUpcomingDays.length ? Math.min(...nextUpcomingDays) : null,
+};
+
+function fmtDate(date: string | null) {
+	if (!date) return 'Date pending';
+	return new Date(date).toLocaleDateString(undefined, {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+	});
+}
+
+function fmtDateRange(start: string | null, end: string | null | undefined) {
+	if (!start) return 'Date pending';
+	if (!end) return fmtDate(start);
+	return `${fmtDate(start)} - ${fmtDate(end)}`;
+}
+
+function locationLabel(event: (typeof events)[number]) {
+	return event.location.state ? `${event.location.city}, ${event.location.state}` : event.location.city;
+}
+
+function costLabel(event: (typeof events)[number]) {
+	const range = event.ontology.logistics.estimatedCostUsd;
+	if (!range) return 'Unknown';
+	if (range.max === 0) return '$0';
+	return `$${range.min.toLocaleString()} - $${range.max.toLocaleString()}`;
+}
+
+function sourceConfidenceBand(event: (typeof events)[number]) {
+	const confidence = event.ontology.provenance.map((p) => p.confidence);
+	if (confidence.includes('High')) return 'high';
+	if (confidence.includes('Medium')) return 'medium';
+	return 'low';
+}
+
+function eventPrimaryLink(event: (typeof events)[number]) {
+	return event.ontology.links.official ?? null;
+}
+
+---
+
+<SiteLayout
+	title="Opportunity Radar | Adam Boas"
+	description="In-depth opportunity radar with ontology-rich metadata, date-first prioritization, and expandable intelligence cards."
+	canonicalHref="https://www.adamboas.com/radar/"
+>
+	<StickyBrowseBar active="radar" />
+
+
+	<section class="mt-2 space-y-6">
+		<section class="card p-4 radar-control-shell">
+			<div class="flex flex-wrap items-start justify-between gap-3">
+				<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Opportunity Radar</h1>
+				<div class="flex flex-wrap gap-2">
+					<button id="radar-toggle-map" class="radar-btn radar-btn-tight" type="button">Hide map</button>
+					<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
+				</div>
+			</div>
+			<div class="mt-3 flex flex-wrap gap-2">
+				<span class="radar-mini-stat">{summaryStats.total} opportunities</span>
+				<span class="radar-mini-stat">{summaryStats.upcoming} upcoming</span>
+				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
+				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
+			</div>
+			<div class="mt-3 border-t border-slate-800 pt-3 radar-filter-wrap">
+				<details id="radar-filter-panel" class="radar-filter-panel">
+					<summary class="radar-summary radar-summary-primary">Filters</summary>
+					<div class="mt-2 grid gap-2 text-sm md:grid-cols-4">
+						<label class="block md:col-span-2">
+							<input id="radar-q" class="radar-input" type="search" placeholder="Search theme, stakeholder, city..." />
+						</label>
+						<select id="radar-branch" class="radar-input">
+							<option value="">All branches</option>
+							{branches.map((branch) => <option value={branch}>{branch}</option>)}
+						</select>
+						<select id="radar-type" class="radar-input">
+							<option value="">All types</option>
+							{types.map((type) => <option value={type}>{type}</option>)}
+						</select>
+						<select id="radar-status" class="radar-input">
+							<option value="">All statuses</option>
+							{statuses.map((status) => <option value={status}>{status}</option>)}
+						</select>
+						<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
+						<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified only</span></label>
+						<label class="radar-check"><input id="radar-show-past" type="checkbox" /><span>Show past</span></label>
+						<button id="radar-reset" class="radar-btn" type="button">Reset</button>
+					</div>
+				</details>
+			</div>
+
+			<div class="mt-3 border-t border-slate-800 pt-3">
+				<div class="flex flex-wrap items-end justify-between gap-3">
+					<div id="radar-filter-chips" class="radar-filter-chips"></div>
+					<p id="radar-count" class="radar-count text-xs text-slate-400"></p>
+				</div>
+			</div>
+		</section>
+
+		<div class="radar-main-col">
+			<section id="radar-map-section" class="card p-5">
+				<div class="mb-3 flex items-center justify-between gap-2">
+					<h2 class="section-title">Map View</h2>
+					<div class="radar-map-tools">
+						<button id="radar-map-fit" class="radar-btn radar-btn-tight" type="button">Fit Results</button>
+						<button id="radar-map-reset" class="radar-btn radar-btn-tight" type="button">Reset</button>
+					</div>
+				</div>
+				<div id="radar-map" class="radar-map" aria-label="Radar map">
+					<div id="radar-leaflet-map" class="radar-leaflet-map"></div>
+				</div>
+				<p id="radar-map-sub" class="radar-map-sub">Mapped opportunities · clusters enabled · Ctrl/Cmd+scroll to zoom</p>
+			</section>
+
+			<section id="radar-list-section" class="card p-5">
+				<div class="mb-3 flex items-center justify-between gap-2">
+					<h2 class="section-title">Opportunities</h2>
+					<select id="radar-sort" class="radar-input radar-input-sort">
+						<option value="soonest">Soonest first</option>
+						<option value="latest">Latest first</option>
+						<option value="signal">Signal first</option>
+						<option value="branch">Branch</option>
+					</select>
+				</div>
+				<div id="radar-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-4 text-sm text-slate-300">
+					No opportunities match the current filter state.
+				</div>
+				<div id="radar-list" class="space-y-3 radar-list">
+					{events.map((event) => (
+						<article
+							id={event.id}
+							class="radar-card"
+							data-event-card
+							data-id={event.id}
+							data-days={daysUntilValue(event.startDate) ?? ''}
+							data-date={event.startDate ?? ''}
+							data-status={event.status}
+							data-type={event.type}
+							data-branch={event.branch}
+							data-signal={event.signal}
+							data-confidence={sourceConfidenceBand(event)}
+							data-title={event.title}
+							data-link={eventPrimaryLink(event) ?? ''}
+							data-lat={event.location.lat}
+							data-lng={event.location.lng}
+							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence}`).join(' ')}`.toLowerCase()}
+						>
+							<div class="flex flex-wrap items-start justify-between gap-3">
+								<div class="min-w-0 flex-1">
+									<h3 class="mt-1 text-base font-semibold text-slate-50">{event.title}</h3>
+									<p class="mt-1 text-sm text-slate-300 radar-desc">{event.description}</p>
+									<p class="mt-2 text-xs text-slate-400 radar-meta">{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}</p>
+								</div>
+								<div class="flex flex-col items-end gap-1.5">
+									<div class="flex items-center gap-2">
+										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
+										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Link</a> : null}
+										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
+									</div>
+									<p class="radar-card-kicker">{event.branch} · {event.type} · {event.status}</p>
+								</div>
+							</div>
+
+							<div class="mt-3 flex flex-wrap gap-2 radar-theme-row">
+								{event.ontology.themes.slice(0, 4).map((theme) => <span class="radar-pill">{theme}</span>)}
+							</div>
+
+							<details class="mt-3 radar-details">
+								<summary>Expand ontology + metadata</summary>
+								<div class="mt-3 grid gap-4 lg:grid-cols-2">
+									<div>
+										<p class="radar-section-label">Capability areas</p>
+										<ul class="radar-listing">{event.ontology.capabilityAreas.map((item) => <li>{item}</li>)}</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Mission threads</p>
+										<ul class="radar-listing">{event.ontology.missionThreads.map((item) => <li>{item}</li>)}</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Stakeholders</p>
+										<ul class="radar-listing">{event.ontology.stakeholders.map((item) => <li>{item}</li>)}</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Decision windows</p>
+										<ul class="radar-listing">
+											<li><strong>Discovery:</strong> {event.ontology.decisionWindows.discovery}</li>
+											<li><strong>Prep:</strong> {event.ontology.decisionWindows.prep}</li>
+											<li><strong>Execution:</strong> {event.ontology.decisionWindows.execution}</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="mt-4 grid gap-4 lg:grid-cols-2">
+									<div>
+										<p class="radar-section-label">Links</p>
+										<ul class="radar-listing">
+											{event.ontology.links.official ? <li><a href={event.ontology.links.official} target="_blank" rel="noreferrer">Official page</a></li> : null}
+											{event.ontology.links.registration ? <li><a href={event.ontology.links.registration} target="_blank" rel="noreferrer">Registration</a></li> : null}
+											{event.ontology.links.callForPapers ? <li><a href={event.ontology.links.callForPapers} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
+											{event.ontology.links.agenda ? <li><a href={event.ontology.links.agenda} target="_blank" rel="noreferrer">Agenda</a></li> : null}
+										</ul>
+									</div>
+									<div>
+										<p class="radar-section-label">Logistics</p>
+										<ul class="radar-listing">
+											<li><strong>Format:</strong> {event.ontology.logistics.format}</li>
+											<li><strong>Estimated cost:</strong> {costLabel(event)}</li>
+											<li><strong>Travel burden (DC):</strong> {event.ontology.logistics.travelBurdenFromDc}</li>
+											{event.location.venue ? <li><strong>Venue:</strong> {event.location.venue}</li> : null}
+										</ul>
+									</div>
+								</div>
+
+								<div class="mt-4">
+									<p class="radar-section-label">Timing</p>
+									<ul class="radar-listing">
+										<li><strong>Days until start:</strong> {daysUntilDetail(event.startDate)}</li>
+										<li><strong>Opportunity window:</strong> {fmtDateRange(event.startDate, event.endDate)}</li>
+									</ul>
+								</div>
+
+								<div class="mt-4">
+									<p class="radar-section-label">Provenance</p>
+									<ul class="radar-listing">
+										{event.ontology.provenance.map((source) => (
+											<li>
+												<a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>
+												<span class="text-slate-500"> · {source.type}, {source.confidence} confidence, verified {source.lastVerified}</span>
+											</li>
+										))}
+									</ul>
+									{event.ontology.notes ? <p class="mt-2 text-xs text-slate-400">{event.ontology.notes}</p> : null}
+								</div>
+							</details>
+						</article>
+					))}
+				</div>
+
+			</section>
+		</div>
+		<p class="radar-legal-note">
+			Radar entries are compiled from public sources for research and planning. Source owners retain rights to their original content.
+			Always verify key dates, terms, and eligibility on the official source before acting.
+		</p>
+	</section>
+
+	<section class="mt-6">
+		<a class="text-sm text-slate-300 hover:text-slate-100" href={withBase('/writing/')}>← Back to writing</a>
+	</section>
+</SiteLayout>
+
+<script is:inline>
+	const controls = {
+		filterPanel: document.getElementById('radar-filter-panel'),
+		q: document.getElementById('radar-q'),
+		branch: document.getElementById('radar-branch'),
+		type: document.getElementById('radar-type'),
+		status: document.getElementById('radar-status'),
+		sort: document.getElementById('radar-sort'),
+		upcomingOnly: document.getElementById('radar-upcoming-only'),
+		verifiedOnly: document.getElementById('radar-verified-only'),
+		showPast: document.getElementById('radar-show-past'),
+		toggleMap: document.getElementById('radar-toggle-map'),
+		toggleCompact: document.getElementById('radar-toggle-compact'),
+		reset: document.getElementById('radar-reset'),
+	};
+
+	const list = document.getElementById('radar-list');
+	const count = document.getElementById('radar-count');
+	const empty = document.getElementById('radar-empty');
+	const map = document.getElementById('radar-map');
+	const mapSub = document.getElementById('radar-map-sub');
+	const mapCanvas = document.getElementById('radar-leaflet-map');
+	const mapFitBtn = document.getElementById('radar-map-fit');
+	const mapResetBtn = document.getElementById('radar-map-reset');
+	const mapSection = document.getElementById('radar-map-section');
+	const filterChips = document.getElementById('radar-filter-chips');
+	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
+	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
+
+	let compactMode = true;
+	let mapVisible = true;
+
+
+	function parseDate(value) {
+		if (!value) return null;
+		const ms = new Date(value).getTime();
+		return Number.isNaN(ms) ? null : ms;
+	}
+
+
+	function parseDays(value) {
+		if (value === '' || value == null) return null;
+		const days = Number(value);
+		return Number.isFinite(days) ? days : null;
+	}
+
+	function typeKey(type) {
+		return String(type || '')
+			.toLowerCase()
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/^-+|-+$/g, '');
+	}
+
+	function typeTone(type) {
+		const key = typeKey(type);
+		if (['conference', 'workshop', 'summit', 'hackathon', 'exercise'].includes(key)) return key;
+		return 'conference';
+	}
+
+	function daysMarker(days) {
+		if (days == null) return '?';
+		if (days < 0) return 'P';
+		if (days === 0) return '0';
+		if (days > 99) return '99+';
+		return String(days);
+	}
+
+	function daysText(days) {
+		if (days == null) return 'Date pending';
+		if (days === 0) return 'Starts today';
+		if (days > 0) return `Starts in ${days} day(s)`;
+		return `Started ${Math.abs(days)} day(s) ago`;
+	}
+
+	function escapeHtml(str) {
+		return String(str ?? '')
+			.replaceAll('&', '&amp;')
+			.replaceAll('<', '&lt;')
+			.replaceAll('>', '&gt;')
+			.replaceAll('"', '&quot;')
+			.replaceAll("'", '&#39;');
+	}
+
+	function slowScrollTo(element, duration = 900) {
+		if (!element) return;
+		const startY = window.scrollY;
+		const targetY = element.getBoundingClientRect().top + window.scrollY - Math.max(120, window.innerHeight * 0.24);
+		const delta = targetY - startY;
+		const start = performance.now();
+		const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+		function frame(now) {
+			const t = Math.min(1, (now - start) / duration);
+			window.scrollTo(0, startY + delta * ease(t));
+			if (t < 1) requestAnimationFrame(frame);
+		}
+		requestAnimationFrame(frame);
+	}
+
+	function focusCard(id) {
+		const card = cards.find((c) => c.dataset.id === id);
+		if (!card) return;
+		for (const c of cards) c.classList.remove('radar-card-focus');
+		card.classList.add('radar-card-focus');
+		slowScrollTo(card, 980);
+		setTimeout(() => card.classList.remove('radar-card-focus'), 2000);
+	}
+
+	for (const card of cards) {
+		card.classList.add(`radar-type-${typeTone(card.dataset.type)}`);
+	}
+
+	const US_BOUNDS = [[24.2, -125.2], [49.6, -66.0]];
+	let mapLib = null;
+	let clusterLayer = null;
+	let leafletReady = false;
+	let leafletFailed = false;
+	let mapRenderedOnce = false;
+	let markerIndex = new Map();
+
+	function loadScript(src) {
+		return new Promise((resolve, reject) => {
+			const existing = document.querySelector(`script[data-radar-src="${src}"]`);
+			if (existing) {
+				if (existing.dataset.loaded === '1') return resolve();
+				existing.addEventListener('load', () => resolve(), { once: true });
+				existing.addEventListener('error', () => reject(new Error(`failed ${src}`)), { once: true });
+				return;
+			}
+			const script = document.createElement('script');
+			script.src = src;
+			script.async = true;
+			script.dataset.radarSrc = src;
+			script.onload = () => {
+				script.dataset.loaded = '1';
+				resolve();
+			};
+			script.onerror = () => reject(new Error(`failed ${src}`));
+			document.head.appendChild(script);
+		});
+	}
+
+	function loadCss(href) {
+		if (document.querySelector(`link[data-radar-href="${href}"]`)) return;
+		const link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.href = href;
+		link.dataset.radarHref = href;
+		document.head.appendChild(link);
+	}
+
+	async function ensureLeaflet() {
+		if (leafletReady && window.L?.markerClusterGroup) return true;
+		try {
+			loadCss('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+			loadCss('https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css');
+			loadCss('https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css');
+			await loadScript('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js');
+			await loadScript('https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js');
+			leafletReady = Boolean(window.L?.markerClusterGroup);
+			return leafletReady;
+		} catch {
+			leafletFailed = true;
+			if (mapSub) mapSub.textContent = 'Map failed to load.';
+			return false;
+		}
+	}
+
+	function enableModifierWheelZoom(map) {
+		const container = map.getContainer();
+		if (!container) return;
+		let lastZoomTs = 0;
+		container.addEventListener('wheel', (e) => {
+			if (!(e.ctrlKey || e.metaKey)) return;
+			e.preventDefault();
+			const now = Date.now();
+			if (now - lastZoomTs < 90) return;
+			lastZoomTs = now;
+			map.setZoom(map.getZoom() + (e.deltaY < 0 ? 1 : -1), { animate: false });
+		}, { passive: false });
+	}
+
+	function pinIcon(daysLabel, tone, id) {
+		return window.L.divIcon({
+			className: 'radar-leaflet-pin-wrap',
+			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(daysLabel)}</span></div>`,
+			iconSize: [30, 30],
+			iconAnchor: [15, 15],
+		});
+	}
+
+	function markerPopup(card) {
+		const id = card.dataset.id;
+		const title = card.dataset.title || 'Untitled';
+		const status = card.dataset.status || 'Unknown';
+		const branch = card.dataset.branch || 'Unknown';
+		const type = card.dataset.type || 'Unknown';
+		const meta = card.querySelector('.radar-meta')?.textContent || '';
+		const link = card.dataset.link || '';
+		const days = parseDays(card.dataset.days);
+		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
+		const typeClass = `radar-type-${typeTone(type)}`;
+		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Opportunity site</a>` : '';
+		return `
+			<div class="radar-map-popup">
+				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
+				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> <span class="radar-map-popup-badge ${typeClass}">${escapeHtml(type)}</span> ${escapeHtml(branch)}</div>
+				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
+				<div class="radar-map-popup-actions">
+					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
+					<div class="radar-map-popup-cta">${linkHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open opportunity</button></div>
+				</div>
+			</div>
+		`;
+	}
+
+	async function initLeafletMap() {
+		if (mapLib || leafletFailed || !mapCanvas) return;
+		const ok = await ensureLeaflet();
+		if (!ok) return;
+
+		mapLib = window.L.map(mapCanvas, {
+			zoomControl: true,
+			scrollWheelZoom: false,
+			worldCopyJump: true,
+		});
+		window.L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+			subdomains: 'abcd',
+			maxZoom: 18,
+			attribution: '&copy; OpenStreetMap &copy; CARTO',
+		}).addTo(mapLib);
+
+		clusterLayer = window.L.markerClusterGroup({
+			showCoverageOnHover: false,
+			spiderfyOnMaxZoom: true,
+			maxClusterRadius: 52,
+		});
+		mapLib.addLayer(clusterLayer);
+		enableModifierWheelZoom(mapLib);
+		mapLib.fitBounds(US_BOUNDS);
+		mapLib.on('contextmenu', () => mapLib.fitBounds(US_BOUNDS));
+		mapLib.on('popupopen', (e) => {
+			document.querySelectorAll('.radar-leaflet-pin.is-active').forEach((n) => n.classList.remove('is-active'));
+			const sourceIcon = e.popup?._source?._icon?.querySelector?.('.radar-leaflet-pin');
+			if (sourceIcon) sourceIcon.classList.add('is-active');
+			const el = e.popup?.getElement();
+			const btn = el?.querySelector?.('.radar-map-jump');
+			if (btn) btn.addEventListener('click', () => focusMapEvent(btn.dataset.eventId, { openPopup: false }));
+		});
+		mapLib.on('popupclose', () => {
+			document.querySelectorAll('.radar-leaflet-pin.is-active').forEach((n) => n.classList.remove('is-active'));
+		});
+		mapFitBtn?.addEventListener('click', () => fitMapToResults());
+		mapResetBtn?.addEventListener('click', () => mapLib.fitBounds(US_BOUNDS));
+	}
+
+	function fitMapToResults() {
+		if (!mapLib || !clusterLayer) return;
+		const bounds = clusterLayer.getBounds();
+		if (bounds && bounds.isValid()) mapLib.fitBounds(bounds.pad(0.2));
+		else mapLib.fitBounds(US_BOUNDS);
+	}
+
+	function focusMapEvent(id, options = { openPopup: true }) {
+		if (!id) return;
+		const card = cards.find((c) => c.dataset.id === id);
+		if (!card) return;
+		focusCard(id);
+		if (!mapVisible) {
+			mapVisible = true;
+			render();
+		}
+		if (!mapLib || !clusterLayer) {
+			initLeafletMap().then(() => focusMapEvent(id, options));
+			return;
+		}
+		const marker = markerIndex.get(id);
+		if (!marker) return;
+		clusterLayer.zoomToShowLayer(marker, () => {
+			if (options.openPopup) marker.openPopup();
+			mapLib.panTo(marker.getLatLng(), { animate: true, duration: 0.4 });
+		});
+	}
+
+	function stateFromUI() {
+		return {
+			q: controls.q.value.trim(),
+			branch: controls.branch.value,
+			type: controls.type.value,
+			status: controls.status.value,
+			sort: controls.sort.value,
+			upcoming: controls.upcomingOnly.checked,
+			verified: controls.verifiedOnly.checked,
+			showPast: controls.showPast.checked,
+		};
+	}
+
+	function applyState(state) {
+		controls.q.value = state.q || '';
+		controls.branch.value = state.branch || '';
+		controls.type.value = state.type || '';
+		controls.status.value = state.status || '';
+		controls.sort.value = state.sort || 'soonest';
+		controls.upcomingOnly.checked = Boolean(state.upcoming);
+		controls.verifiedOnly.checked = Boolean(state.verified);
+		controls.showPast.checked = Boolean(state.showPast);
+	}
+
+	function toQuery(state) {
+		const params = new URLSearchParams();
+		if (state.q) params.set('q', state.q);
+		if (state.branch) params.set('branch', state.branch);
+		if (state.type) params.set('type', state.type);
+		if (state.status) params.set('status', state.status);
+		if (state.sort && state.sort !== 'soonest') params.set('sort', state.sort);
+		if (state.upcoming) params.set('upcoming', '1');
+		if (state.verified) params.set('verified', '1');
+		if (state.showPast) params.set('past', '1');
+		return params.toString();
+	}
+
+	function hasActiveFilters(state) {
+		return Boolean(
+			state.q ||
+			state.branch ||
+			state.type ||
+			state.status ||
+			state.upcoming ||
+			state.verified ||
+			state.showPast ||
+			(state.sort && state.sort !== 'soonest')
+		);
+	}
+
+	function applyUrlState() {
+		const params = new URLSearchParams(window.location.search);
+		const state = {
+			q: params.get('q') || '',
+			branch: params.get('branch') || '',
+			type: params.get('type') || '',
+			status: params.get('status') || '',
+			sort: params.get('sort') || 'soonest',
+			upcoming: params.get('upcoming') === '1',
+			verified: params.get('verified') === '1',
+			showPast: params.get('past') === '1',
+		};
+		applyState(state);
+		if (controls.filterPanel) controls.filterPanel.open = hasActiveFilters(state);
+	}
+
+	function sortBySoonest(a, b) {
+		const da = parseDate(a.dataset.date || '');
+		const db = parseDate(b.dataset.date || '');
+		if (da === null && db === null) return (a.dataset.title || '').localeCompare(b.dataset.title || '');
+		if (da === null) return 1;
+		if (db === null) return -1;
+		return da - db;
+	}
+
+	function getVisibleCards() {
+		const state = stateFromUI();
+		const q = state.q.toLowerCase();
+		const visible = cards.filter((card) => {
+			if (state.branch && card.dataset.branch !== state.branch) return false;
+			if (state.type && card.dataset.type !== state.type) return false;
+			if (state.status && card.dataset.status !== state.status) return false;
+			if (!state.showPast && card.dataset.status === 'Past' && state.status !== 'Past') return false;
+			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
+			if (state.verified && card.dataset.confidence !== 'high') return false;
+			if (!q) return true;
+			return (card.dataset.search || '').includes(q);
+		});
+
+		if (state.sort === 'latest') {
+			visible.sort((a, b) => sortBySoonest(b, a));
+		} else if (state.sort === 'signal') {
+			const rank = { High: 3, Medium: 2, Low: 1 };
+			visible.sort((a, b) => (rank[b.dataset.signal] - rank[a.dataset.signal]) || sortBySoonest(a, b));
+		} else if (state.sort === 'branch') {
+			visible.sort((a, b) => (a.dataset.branch || '').localeCompare(b.dataset.branch || '') || sortBySoonest(a, b));
+		} else {
+			visible.sort(sortBySoonest);
+		}
+
+		return { visible, state };
+	}
+
+	function renderFilterChips(state) {
+		const chips = [];
+		if (state.q) chips.push(`Search: ${state.q}`);
+		if (state.branch) chips.push(`Branch: ${state.branch}`);
+		if (state.type) chips.push(`Type: ${state.type}`);
+		if (state.status) chips.push(`Status: ${state.status}`);
+		if (state.upcoming) chips.push('Upcoming only');
+		if (state.verified) chips.push('Verified only');
+		if (state.showPast) chips.push('Including past');
+		if (!chips.length) chips.push('No active filters');
+		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
+	}
+
+
+	function renderMap(visibleCards) {
+		const cardsForMap = visibleCards.length ? visibleCards : cards;
+		if (!mapVisible) {
+			if (mapSub) mapSub.textContent = 'Map hidden';
+			return;
+		}
+		if (!mapLib) {
+			initLeafletMap().then(() => renderMap(cardsForMap));
+			return;
+		}
+		if (!clusterLayer) return;
+
+		clusterLayer.clearLayers();
+		markerIndex = new Map();
+		let mapped = 0;
+		for (const card of cardsForMap) {
+			const lat = Number(card.dataset.lat || '');
+			const lng = Number(card.dataset.lng || '');
+			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
+			const days = parseDays(card.dataset.days);
+			const tone = typeTone(card.dataset.type);
+			const eventId = card.dataset.id || '';
+			const marker = window.L.marker([lat, lng], { icon: pinIcon(daysMarker(days), tone, eventId) });
+			marker.bindPopup(markerPopup(card), { maxWidth: 380 });
+			clusterLayer.addLayer(marker);
+			markerIndex.set(eventId, marker);
+			mapped += 1;
+		}
+
+		if (!mapRenderedOnce) {
+			fitMapToResults();
+			mapRenderedOnce = true;
+		}
+
+		if (mapSub) {
+			mapSub.textContent = `Mapped ${mapped} ${mapped === 1 ? 'opportunity' : 'opportunities'} · clusters enabled · drag to pan · Ctrl/Cmd+scroll to zoom · right-click to reset`;
+		}
+	}
+
+	function render() {
+		const { visible, state } = getVisibleCards();
+		for (const card of cards) card.classList.add('hidden');
+		for (const card of visible) {
+			card.classList.remove('hidden');
+			list.appendChild(card);
+		}
+
+		list.classList.toggle('is-compact', compactMode);
+		mapSection.classList.toggle('hidden', !mapVisible);
+		controls.toggleMap.textContent = mapVisible ? 'Hide map' : 'Show map';
+		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
+
+		empty.classList.toggle('hidden', visible.length > 0);
+		count.textContent = `${visible.length} of ${cards.length} opportunities shown`;
+		renderFilterChips(state);
+		renderMap(visible);
+
+		const query = toQuery(state);
+		const href = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+		history.replaceState(null, '', href);
+	}
+
+
+
+
+	[controls.q, controls.branch, controls.type, controls.status, controls.sort].forEach((node) => node.addEventListener('input', render));
+	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast].forEach((node) => node.addEventListener('change', render));
+	controls.reset.addEventListener('click', () => {
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false });
+		render();
+	});
+	controls.toggleMap.addEventListener('click', () => {
+		mapVisible = !mapVisible;
+		render();
+	});
+	controls.toggleCompact.addEventListener('click', () => {
+		compactMode = !compactMode;
+		render();
+	});
+
+
+	for (const btn of mapFocusButtons) {
+		btn.addEventListener('click', () => focusMapEvent(btn.dataset.id, { openPopup: true }));
+	}
+
+	document.addEventListener('keydown', (event) => {
+		if (event.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
+		if (event.key === '/') {
+			event.preventDefault();
+			if (controls.filterPanel && !controls.filterPanel.open) controls.filterPanel.open = true;
+			controls.q.focus();
+			controls.q.select();
+		}
+		if (event.key.toLowerCase() === 'm') {
+			mapVisible = !mapVisible;
+			render();
+		}
+		if (event.key.toLowerCase() === 'c') {
+			compactMode = !compactMode;
+			render();
+		}
+	});
+
+	applyUrlState();
+	render();
+</script>
+
+<style>
+	.radar-control-shell,
+	#radar-map-section,
+	#radar-list-section {
+		border-color: rgba(93, 121, 166, 0.55) !important;
+	}
+	.radar-control-shell {
+		background: rgb(2, 6, 23);
+	}
+	#radar-map-section .section-title,
+	#radar-list-section .section-title,
+	.radar-summary-primary {
+		color: rgba(191, 219, 254, 0.96);
+	}
+
+	.radar-stat {
+		border: 1px solid rgba(30, 41, 59, 0.95);
+		background: rgb(2, 6, 23);
+		padding: 0.85rem 1rem;
+	}
+	.radar-stat span {
+		display: block;
+		font-size: 0.67rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.radar-stat strong {
+		display: block;
+		margin-top: 0.25rem;
+		font-size: 1.35rem;
+		line-height: 1.1;
+		color: rgba(241, 245, 249, 0.97);
+	}
+
+	.radar-mini-stat {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(2, 6, 23, 0.92);
+		padding: 0.22rem 0.5rem;
+		font-size: 0.72rem;
+		color: rgba(226, 232, 240, 0.92);
+	}
+
+	.radar-input {
+		width: 100%;
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgb(2, 6, 23);
+		color: rgb(226, 232, 240);
+		padding: 0.5rem 0.625rem;
+		border-radius: 0;
+	}
+	.radar-btn {
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgb(2, 6, 23);
+		color: rgb(226, 232, 240);
+		padding: 0.5rem 0.625rem;
+		font-size: 0.8rem;
+		text-align: left;
+	}
+	.radar-btn:hover {
+		background: rgba(15, 23, 42, 0.95);
+	}
+
+	.radar-summary {
+		cursor: pointer;
+		font-size: 0.82rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.radar-filter-panel {
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgb(2, 6, 23);
+		padding: 0.5rem 0.6rem;
+	}
+	#radar-filter-panel > summary {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		list-style: none;
+		padding: 0;
+	}
+	#radar-filter-panel > summary::-webkit-details-marker {
+		display: none;
+	}
+	#radar-filter-panel > summary::after {
+		content: 'Expand';
+		font-size: 0.68rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	#radar-filter-panel[open] > summary::after {
+		content: 'Collapse';
+	}
+
+	.radar-key-block {
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		background: rgb(2, 6, 23);
+		padding: 0.6rem 0.75rem;
+	}
+	.radar-key-block strong {
+		display: block;
+		font-size: 0.78rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.radar-key-block ul,
+	.radar-key-block ol {
+		margin-top: 0.4rem;
+		padding-left: 1rem;
+		line-height: 1.5;
+	}
+
+	.radar-map {
+		position: relative;
+		height: 420px;
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgb(2, 6, 23);
+		overflow: hidden;
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) inset;
+	}
+	.radar-map-tools {
+		display: flex;
+		gap: 0.45rem;
+		justify-content: flex-end;
+	}
+	.radar-map-sub {
+		margin-top: 0.55rem;
+		font-size: 0.72rem;
+		color: rgba(148, 163, 184, 0.95);
+		text-align: right;
+	}
+	.radar-leaflet-map {
+		height: 100%;
+		width: 100%;
+		background: rgb(2, 6, 23);
+	}
+	:global(.radar-map .leaflet-container) {
+		background: rgb(2, 6, 23);
+		font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+	}
+	:global(.radar-map .leaflet-control-zoom a) {
+		background: rgba(15, 23, 42, 0.92);
+		color: rgba(248, 250, 252, 0.95);
+		border: 1px solid rgba(71, 85, 105, 0.95);
+	}
+	:global(.radar-map .leaflet-control-zoom a:hover) {
+		background: rgba(30, 41, 59, 0.95);
+	}
+	:global(.radar-map .leaflet-popup-content-wrapper),
+	:global(.radar-map .leaflet-popup-tip) {
+		background: rgba(15, 23, 42, 0.98);
+		border: 1px solid rgba(71, 85, 105, 0.95);
+		color: rgba(226, 232, 240, 0.96);
+	}
+	:global(.radar-map .leaflet-popup-content-wrapper) {
+		padding-right: 0.35rem;
+		border-radius: 8px;
+	}
+	:global(.radar-map .leaflet-popup-close-button) {
+		top: 0.28rem !important;
+		right: 0.34rem !important;
+		width: 1rem !important;
+		height: 1rem !important;
+		padding: 0 !important;
+		line-height: 0.95rem !important;
+		font-size: 0.95rem !important;
+		font-weight: 600 !important;
+		color: rgba(148, 163, 184, 0.95) !important;
+		background: rgba(2, 6, 23, 0.9) !important;
+		border: 1px solid rgba(71, 85, 105, 0.75) !important;
+		border-radius: 999px !important;
+		text-align: center;
+		text-decoration: none !important;
+	}
+	:global(.radar-map .leaflet-popup-close-button:hover) {
+		color: rgba(248, 250, 252, 0.98) !important;
+		border-color: rgba(0, 196, 196, 0.55) !important;
+	}
+	:global(.radar-map .leaflet-popup-content) { margin: 0.62rem 0.74rem 0.66rem 0.62rem; }
+	:global(.radar-map-popup-title) {
+		padding-right: 1.15rem;
+		font-size: 0.82rem;
+		font-weight: 700;
+		line-height: 1.25;
+		color: rgba(248, 250, 252, 0.98);
+	}
+	:global(.radar-map-popup-meta) {
+		margin-top: 0.15rem;
+		font-size: 0.7rem;
+		line-height: 1.3;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	:global(.radar-map-popup-badge) {
+		display: inline-block;
+		margin-right: 0.35rem;
+		padding: 0.06rem 0.32rem;
+		font-size: 0.62rem;
+		font-weight: 700;
+		border: 1px solid rgba(71, 85, 105, 0.9);
+		color: rgba(241, 245, 249, 0.95);
+		background: rgba(2, 6, 23, 0.88);
+	}
+	:global(.radar-status-upcoming) { border-color: rgba(34, 197, 94, 0.65); }
+	:global(.radar-status-projected) { border-color: rgba(59, 130, 246, 0.65); }
+	:global(.radar-status-needs-date) { border-color: rgba(245, 158, 11, 0.65); }
+	:global(.radar-status-past) { border-color: rgba(239, 68, 68, 0.55); }
+	:global(.radar-map-popup-badge.radar-type-conference) { border-color: rgba(96, 165, 250, 0.7); color: rgba(191, 219, 254, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-workshop) { border-color: rgba(45, 212, 191, 0.7); color: rgba(153, 246, 228, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-summit) { border-color: rgba(167, 139, 250, 0.72); color: rgba(221, 214, 254, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-hackathon) { border-color: rgba(251, 191, 36, 0.74); color: rgba(254, 243, 199, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-exercise) { border-color: rgba(248, 113, 113, 0.72); color: rgba(254, 202, 202, 0.96); }
+	:global(.radar-map-popup-actions) {
+		margin-top: 0.45rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+	}
+	:global(.radar-map-popup-days) {
+		font-size: 0.68rem;
+		padding: 0.14rem 0.38rem;
+		border: 1px solid rgba(71, 85, 105, 0.9);
+		background: rgba(2, 6, 23, 0.9);
+		color: rgba(241, 245, 249, 0.96);
+	}
+	:global(.radar-map-popup-cta) {
+		display: flex;
+		align-items: center;
+		gap: 0.32rem;
+	}
+	:global(.radar-map-jump),
+	:global(.radar-map-link) {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(0, 196, 196, 0.55);
+		background: rgba(0, 166, 166, 0.12);
+		color: rgba(226, 232, 240, 0.97);
+		font-size: 0.68rem;
+		font-weight: 700;
+		padding: 0.15rem 0.42rem;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	:global(.radar-map-jump:hover),
+	:global(.radar-map-link:hover) { background: rgba(0, 166, 166, 0.22); }
+
+	:global(.radar-leaflet-pin-wrap) { background: transparent; border: 0; }
+	:global(.radar-leaflet-pin) {
+		width: 30px;
+		height: 30px;
+		border-radius: 999px;
+		display: grid;
+		place-items: center;
+		font-size: 10px;
+		font-weight: 700;
+		color: rgba(248, 250, 252, 0.98);
+		background: rgba(2, 6, 23, 0.82);
+		border: 2px solid rgba(100, 116, 139, 0.82);
+		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(0, 0, 0, 0.34);
+	}
+	:global(.radar-leaflet-pin-conference) { border-color: rgba(96, 165, 250, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(96, 165, 250, 0.25); }
+	:global(.radar-leaflet-pin-workshop) { border-color: rgba(45, 212, 191, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(45, 212, 191, 0.24); }
+	:global(.radar-leaflet-pin-summit) { border-color: rgba(167, 139, 250, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(167, 139, 250, 0.25); }
+	:global(.radar-leaflet-pin-hackathon) { border-color: rgba(251, 191, 36, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(251, 191, 36, 0.25); }
+	:global(.radar-leaflet-pin-exercise) { border-color: rgba(248, 113, 113, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(248, 113, 113, 0.24); }
+	:global(.radar-leaflet-pin.is-active) {
+		transform: scale(1.14);
+		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.75), 0 0 0 2px rgba(0, 196, 196, 0.55), 0 0 16px rgba(0, 196, 196, 0.3);
+	}
+
+	:global(.radar-map .marker-cluster-small),
+	:global(.radar-map .marker-cluster-medium),
+	:global(.radar-map .marker-cluster-large) {
+		background: rgba(0, 166, 166, 0.14);
+	}
+	:global(.radar-map .marker-cluster-small div),
+	:global(.radar-map .marker-cluster-medium div),
+	:global(.radar-map .marker-cluster-large div) {
+		background: rgba(0, 166, 166, 0.34);
+		border: 1px solid rgba(0, 196, 196, 0.45);
+		color: rgba(248, 250, 252, 0.96);
+		font-size: 11px;
+		font-weight: 700;
+	}
+
+	.radar-card {
+		border: 1px solid rgba(30, 41, 59, 0.95);
+		background: rgb(2, 6, 23);
+		padding: 1rem;
+	}
+	.radar-days-chip {
+		border: 1px solid rgba(71, 85, 105, 0.95);
+		background: rgb(2, 6, 23);
+		padding: 0.35rem 0.65rem;
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: rgba(241, 245, 249, 0.95);
+	}
+	.radar-pill {
+		border: 1px solid rgba(0, 166, 166, 0.22);
+		background: rgba(0, 166, 166, 0.11);
+		padding: 0.22rem 0.46rem;
+		font-size: 0.68rem;
+		color: rgba(226, 232, 240, 0.93);
+	}
+
+	.radar-details summary {
+		cursor: pointer;
+		font-size: 0.78rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(203, 213, 225, 0.95);
+	}
+	.radar-section-label {
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.radar-listing {
+		margin-top: 0.35rem;
+		padding-left: 1rem;
+		font-size: 0.83rem;
+		line-height: 1.45;
+		color: rgba(203, 213, 225, 0.96);
+	}
+	.radar-card-kicker {
+		font-size: 0.64rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(148, 163, 184, 0.92);
+		text-align: right;
+	}
+
+	.radar-main-col {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.radar-summary-primary {
+		font-size: 0.9rem;
+		letter-spacing: 0.09em;
+	}
+	#radar-filter-panel[open] > .radar-summary-primary {
+		margin-bottom: 0.7rem;
+	}
+
+	.radar-toolbar {
+		position: sticky;
+		top: 0.6rem;
+		z-index: 10;
+	}
+	.radar-filter-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+	}
+	.radar-count {
+		margin-left: auto;
+		text-align: right;
+		white-space: nowrap;
+	}
+	.radar-legal-note {
+		margin-top: -0.2rem;
+		font-size: 0.72rem;
+		line-height: 1.45;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.radar-chip {
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(15, 23, 42, 0.78);
+		padding: 0.2rem 0.5rem;
+		font-size: 0.68rem;
+		color: rgba(203, 213, 225, 0.95);
+	}
+
+	.radar-btn-tight {
+		padding: 0.38rem 0.55rem;
+		font-size: 0.73rem;
+	}
+
+	.radar-check {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgb(2, 6, 23);
+		padding: 0.42rem 0.55rem;
+		font-size: 0.78rem;
+		color: rgba(226, 232, 240, 0.93);
+	}
+
+	.radar-card {
+		border-left-width: 3px;
+		transition: border-color 150ms ease, background 150ms ease, transform 140ms ease;
+	}
+	.radar-card:hover {
+		background: rgba(15, 23, 42, 0.56);
+		transform: translateY(-1px);
+	}
+	.radar-card-focus {
+		border-color: rgba(0, 196, 196, 0.72) !important;
+		box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.3) inset, 0 0 18px rgba(0, 196, 196, 0.18);
+	}
+	.radar-type-conference {
+		border-left-color: rgba(96, 165, 250, 0.92);
+	}
+	.radar-type-workshop {
+		border-left-color: rgba(45, 212, 191, 0.9);
+	}
+	.radar-type-summit {
+		border-left-color: rgba(167, 139, 250, 0.92);
+	}
+	.radar-type-hackathon {
+		border-left-color: rgba(251, 191, 36, 0.93);
+	}
+	.radar-type-exercise {
+		border-left-color: rgba(248, 113, 113, 0.9);
+	}
+
+	.radar-pin-btn {
+		border: 1px solid rgba(71, 85, 105, 0.95);
+		background: rgb(2, 6, 23);
+		padding: 0.32rem 0.52rem;
+		font-size: 0.72rem;
+		color: rgba(226, 232, 240, 0.93);
+	}
+	.radar-pin-btn:hover {
+		background: rgba(30, 41, 59, 0.88);
+	}
+	.radar-link-btn {
+		border-color: rgba(56, 189, 248, 0.62);
+		background: rgba(56, 189, 248, 0.12);
+	}
+	.radar-link-btn:hover {
+		background: rgba(56, 189, 248, 0.2);
+	}
+
+	.radar-list.is-compact .radar-desc,
+	.radar-list.is-compact .radar-theme-row,
+	.radar-list.is-compact .radar-details {
+		display: none;
+	}
+	.radar-list.is-compact .radar-card {
+		padding-top: 0.72rem;
+		padding-bottom: 0.72rem;
+	}
+	.radar-list.is-compact .radar-meta {
+		margin-top: 0.35rem;
+	}
+
+	@media (max-width: 1279px) {
+		.radar-toolbar {
+			position: static;
+		}
+	}
+
+	@media (max-width: 767px) {
+		#radar-list-section {
+			order: 1;
+		}
+		#radar-map-section {
+			order: 2;
+		}
+		.radar-map {
+			height: 240px;
+		}
+		/* mobile keeps full map geometry labels implicit */
+		.radar-stat strong {
+			font-size: 1.12rem;
+		}
+		.radar-input,
+		.radar-btn,
+		.radar-pin-btn {
+			min-height: 38px;
+		}
+		.radar-btn-tight {
+			font-size: 0.7rem;
+			padding: 0.34rem 0.5rem;
+		}
+		.radar-filter-chips {
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			padding-bottom: 0.15rem;
+		}
+		.radar-chip {
+			white-space: nowrap;
+		}
+		.radar-details summary,
+		.radar-summary {
+			min-height: 34px;
+			display: flex;
+			align-items: center;
+		}
+		.radar-card {
+			padding: 0.86rem;
+		}
+	}
+</style>

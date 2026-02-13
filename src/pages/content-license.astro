@@ -1,0 +1,9 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../utils/withBase';
+---
+
+<SiteLayout title="License | Adam Boas" description="Redirecting…">
+	<meta http-equiv="refresh" content={`0; url=${withBase('/license/#content')}`} />
+	<p class="text-slate-300">Redirecting to <a href={withBase('/license/#content')}>/license/#content</a>…</p>
+</SiteLayout>
