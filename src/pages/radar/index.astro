@@ -110,28 +110,30 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 			</div>
 			<div class="mt-3 border-t border-slate-800 pt-3 radar-filter-wrap">
-				<p class="radar-summary radar-summary-primary">Filters</p>
-				<div class="mt-2 grid gap-2 text-sm md:grid-cols-4">
-					<label class="block md:col-span-2">
-						<input id="radar-q" class="radar-input" type="search" placeholder="Search theme, stakeholder, city..." />
-					</label>
-					<select id="radar-branch" class="radar-input">
-						<option value="">All branches</option>
-						{branches.map((branch) => <option value={branch}>{branch}</option>)}
-					</select>
-					<select id="radar-type" class="radar-input">
-						<option value="">All types</option>
-						{types.map((type) => <option value={type}>{type}</option>)}
-					</select>
-					<select id="radar-status" class="radar-input">
-						<option value="">All statuses</option>
-						{statuses.map((status) => <option value={status}>{status}</option>)}
-					</select>
-					<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
-					<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified only</span></label>
-					<label class="radar-check"><input id="radar-show-past" type="checkbox" /><span>Show past</span></label>
-					<button id="radar-reset" class="radar-btn" type="button">Reset</button>
-				</div>
+				<details id="radar-filter-panel" class="radar-filter-panel">
+					<summary class="radar-summary radar-summary-primary">Filters</summary>
+					<div class="mt-2 grid gap-2 text-sm md:grid-cols-4">
+						<label class="block md:col-span-2">
+							<input id="radar-q" class="radar-input" type="search" placeholder="Search theme, stakeholder, city..." />
+						</label>
+						<select id="radar-branch" class="radar-input">
+							<option value="">All branches</option>
+							{branches.map((branch) => <option value={branch}>{branch}</option>)}
+						</select>
+						<select id="radar-type" class="radar-input">
+							<option value="">All types</option>
+							{types.map((type) => <option value={type}>{type}</option>)}
+						</select>
+						<select id="radar-status" class="radar-input">
+							<option value="">All statuses</option>
+							{statuses.map((status) => <option value={status}>{status}</option>)}
+						</select>
+						<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
+						<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified only</span></label>
+						<label class="radar-check"><input id="radar-show-past" type="checkbox" /><span>Show past</span></label>
+						<button id="radar-reset" class="radar-btn" type="button">Reset</button>
+					</div>
+				</details>
 			</div>
 
 			<div class="mt-3 border-t border-slate-800 pt-3">
@@ -292,6 +294,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 
 <script is:inline>
 	const controls = {
+		filterPanel: document.getElementById('radar-filter-panel'),
 		q: document.getElementById('radar-q'),
 		branch: document.getElementById('radar-branch'),
 		type: document.getElementById('radar-type'),
@@ -609,9 +612,22 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		return params.toString();
 	}
 
+	function hasActiveFilters(state) {
+		return Boolean(
+			state.q ||
+			state.branch ||
+			state.type ||
+			state.status ||
+			state.upcoming ||
+			state.verified ||
+			state.showPast ||
+			(state.sort && state.sort !== 'soonest')
+		);
+	}
+
 	function applyUrlState() {
 		const params = new URLSearchParams(window.location.search);
-		applyState({
+		const state = {
 			q: params.get('q') || '',
 			branch: params.get('branch') || '',
 			type: params.get('type') || '',
@@ -620,7 +636,9 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
 			showPast: params.get('past') === '1',
-		});
+		};
+		applyState(state);
+		if (controls.filterPanel) controls.filterPanel.open = hasActiveFilters(state);
 	}
 
 	function sortBySoonest(a, b) {
@@ -763,6 +781,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		if (event.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
 		if (event.key === '/') {
 			event.preventDefault();
+			if (controls.filterPanel && !controls.filterPanel.open) controls.filterPanel.open = true;
 			controls.q.focus();
 			controls.q.select();
 		}
@@ -853,14 +872,30 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		letter-spacing: 0.08em;
 		color: rgba(226, 232, 240, 0.95);
 	}
-	#radar-filter-advanced > summary {
-		margin-top: 0.1rem;
-		padding: 0.25rem 0;
-		font-size: 0.72rem;
+	.radar-filter-panel {
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgb(2, 6, 23);
+		padding: 0.5rem 0.6rem;
+	}
+	#radar-filter-panel > summary {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		list-style: none;
+		padding: 0;
+	}
+	#radar-filter-panel > summary::-webkit-details-marker {
+		display: none;
+	}
+	#radar-filter-panel > summary::after {
+		content: 'Expand';
+		font-size: 0.68rem;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
 		color: rgba(148, 163, 184, 0.95);
-		cursor: pointer;
+	}
+	#radar-filter-panel[open] > summary::after {
+		content: 'Collapse';
 	}
 
 	.radar-key-block {
