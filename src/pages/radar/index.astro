@@ -419,7 +419,9 @@ function mapProjection(lat: number, lng: number) {
 	</section>
 </SiteLayout>
 
-<script is:inline>
+<script type="module">
+	import L from 'leaflet';
+	import 'leaflet/dist/leaflet.css';
 	const KEY = 'adamboas.radar.view.v3';
 	const PIN_KEY = 'adamboas.radar.pins.v1';
 
@@ -568,30 +570,7 @@ function mapProjection(lat: number, lng: number) {
 	}
 
 	function loadLeaflet() {
-		if (window.L) return Promise.resolve(window.L);
-		return new Promise((resolve, reject) => {
-			if (!document.querySelector('link[data-radar-leaflet]')) {
-				const link = document.createElement('link');
-				link.rel = 'stylesheet';
-				link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-				link.setAttribute('data-radar-leaflet', '1');
-				document.head.appendChild(link);
-			}
-			const existing = document.querySelector('script[data-radar-leaflet]');
-			if (existing && window.L) return resolve(window.L);
-			if (existing) {
-				existing.addEventListener('load', () => resolve(window.L));
-				existing.addEventListener('error', reject);
-				return;
-			}
-			const script = document.createElement('script');
-			script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-			script.defer = true;
-			script.setAttribute('data-radar-leaflet', '1');
-			script.onload = () => resolve(window.L);
-			script.onerror = reject;
-			document.head.appendChild(script);
-		});
+		return Promise.resolve(L);
 	}
 
 	async function ensureLeafletMap() {
@@ -638,7 +617,7 @@ function mapProjection(lat: number, lng: number) {
 			const tone = scoreTone(score);
 			const color = tone === 'high' ? '#d4a574' : tone === 'mid' ? '#00c4c4' : '#94a3b8';
 			const title = card.dataset.title || card.querySelector('h3')?.textContent || 'Event';
-			const marker = window.L.circleMarker([lat, lng], {
+			const marker = L.circleMarker([lat, lng], {
 				radius: 5,
 				color,
 				weight: 1,
