@@ -3,164 +3,186 @@ import type { RadarEvent } from './types';
 export const radarEventsSeed: RadarEvent[] = [
 	{
 		id: 'radar-ausa-2026',
-		title: 'AUSA Global Force Symposium',
-		description:
-			'Army modernization conference focused on force design, acquisition priorities, and operational integration with industry partners.',
-		startDate: '2026-03-25',
-		endDate: '2026-03-27',
+		title: 'AUSA Global Force Symposium & Exposition',
+		description: 'Army modernization conference focused on force design, acquisition priorities, and operational integration with industry partners.',
+		startDate: '2026-03-24',
+		endDate: '2026-03-26',
 		branch: 'Army',
 		type: 'Conference',
 		status: 'Projected',
 		signal: 'High',
 		effort: 'Medium',
-		location: {
+		location: 
+		{
 			city: 'Huntsville',
 			state: 'AL',
 			country: 'USA',
 			lat: 34.7304,
 			lng: -86.5861,
-			venue: 'Von Braun Center',
+			venue: 'Von Braun Center'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Force Design', 'Acquisition', 'Autonomy Integration'],
 			capabilityAreas: ['Command and Control', 'DevSecOps', 'Systems Integration'],
 			missionThreads: ['Land maneuver', 'Contested logistics'],
 			stakeholders: ['PEO offices', 'Army Futures Command', 'Prime contractors'],
 			keywords: ['army modernization', 'c2', 'joint interoperability'],
 			relatedPrograms: ['DAD exploration', 'ACP-RA', 'A2A interoperability'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-120 days',
 				prep: 'T-90 to T-14 days',
-				execution: 'Conference week + 14-day follow-up',
+				execution: 'Conference week + 14-day follow-up'
 			},
 			provenance: [
-				{
-					name: 'AUSA events',
-					url: 'https://www.ausa.org/meetings-events',
-					type: 'official',
-					lastVerified: '2026-02-12',
-					confidence: 'Medium',
-				},
-			],
-			links: {
+			{
+				name: 'AUSA events',
+				url: 'https://www.ausa.org/meetings-events',
+				type: 'official',
+				lastVerified: '2026-02-12',
+				confidence: 'Medium'
+			}],
+			links: 
+			{
 				official: 'https://www.ausa.org/meetings-events',
-				registration: 'https://www.ausa.org/meetings-events',
+				registration: 'https://www.ausa.org/meetings-events'
 			},
-			logistics: {
+			logistics: 
+			{
 				format: 'In-person',
-				estimatedCostUsd: { min: 850, max: 2200 },
-				travelBurdenFromDc: 'Medium',
+				estimatedCostUsd: 
+				{
+					min: 850,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'Strong venue for Army stakeholder mapping and policy alignment conversations.',
-		},
+			notes: 'Strong venue for Army stakeholder mapping and policy alignment conversations.'
+		}
 	},
 	{
 		id: 'radar-sofweek-2026',
 		title: 'SOF Week',
-		description:
-			'Special operations ecosystem event with acquisition, tactical experimentation, and mission partner participation.',
-		startDate: '2026-05-04',
-		endDate: '2026-05-08',
+		description: 'Special operations ecosystem event with acquisition, tactical experimentation, and mission partner participation.',
+		startDate: '2026-05-18',
+		endDate: '2026-05-21',
 		branch: 'Joint',
 		type: 'Summit',
 		status: 'Projected',
 		signal: 'High',
 		effort: 'High',
-		location: {
+		location: 
+		{
 			city: 'Tampa',
 			state: 'FL',
 			country: 'USA',
 			lat: 27.9506,
 			lng: -82.4572,
-			venue: 'Tampa Convention Center',
+			venue: 'Tampa Convention Center'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Operational experimentation', 'Joint mission integration', 'Partner ecosystems'],
 			capabilityAreas: ['Autonomous systems', 'Edge C2', 'Mission command'],
 			missionThreads: ['Special operations support', 'Rapid mission rehearsal'],
 			stakeholders: ['USSOCOM', 'Coalition partners', 'Industry integrators'],
 			keywords: ['sof', 'joint', 'expeditionary'],
 			relatedPrograms: ['Agentic force creation', 'DAD pilot opportunities'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-90 days',
 				prep: 'T-75 to T-10 days',
-				execution: 'Event week + 30-day integration tasks',
+				execution: 'Event week + 30-day integration tasks'
 			},
 			provenance: [
-				{
-					name: 'SOF Week',
-					url: 'https://www.sofweek.org/',
-					type: 'official',
-					lastVerified: '2026-02-12',
-					confidence: 'High',
-				},
-			],
-			links: {
+			{
+				name: 'SOF Week',
+				url: 'https://www.sofweek.org/',
+				type: 'official',
+				lastVerified: '2026-02-12',
+				confidence: 'High'
+			}],
+			links: 
+			{
 				official: 'https://www.sofweek.org/',
-				registration: 'https://www.sofweek.org/',
+				registration: 'https://www.sofweek.org/'
 			},
-			logistics: {
+			logistics: 
+			{
 				format: 'In-person',
-				estimatedCostUsd: { min: 1400, max: 3100 },
-				travelBurdenFromDc: 'High',
+				estimatedCostUsd: 
+				{
+					min: 1400,
+					max: 3100
+				},
+				travelBurdenFromDc: 'High'
 			},
-			notes: 'High value if tied to specific mission threads before attendance.',
-		},
+			notes: 'Date aligned to current 2026 listing; high value when tied to mission-thread targets before attendance.'
+		}
 	},
 	{
 		id: 'radar-sea-air-space-2026',
 		title: 'Sea-Air-Space Exposition',
-		description:
-			'Navy-focused exposition where maritime digital modernization and autonomy vendors are concentrated.',
-		startDate: '2026-04-12',
-		endDate: '2026-04-15',
+		description: 'Navy-focused exposition where maritime digital modernization and autonomy vendors are concentrated.',
+		startDate: '2026-04-19',
+		endDate: '2026-04-22',
 		branch: 'Navy',
 		type: 'Conference',
 		status: 'Projected',
 		signal: 'Medium',
 		effort: 'Medium',
-		location: {
+		location: 
+		{
 			city: 'National Harbor',
 			state: 'MD',
 			country: 'USA',
 			lat: 38.7854,
 			lng: -77.0153,
-			venue: 'Gaylord National Resort',
+			venue: 'Gaylord National Resort'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Maritime modernization', 'Fleet autonomy', 'Supply-chain resilience'],
 			capabilityAreas: ['Mission systems', 'Data fusion', 'Secure integration'],
 			missionThreads: ['Maritime C2', 'Fleet readiness'],
 			stakeholders: ['Navy program offices', 'Integrators', 'Allied navies'],
 			keywords: ['sea-air-space', 'navy', 'maritime'],
 			relatedPrograms: ['ACP-RA', 'Code-as-policy'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-100 days',
 				prep: 'T-60 to T-7 days',
-				execution: 'Event week + immediate partner triage',
+				execution: 'Event week + immediate partner triage'
 			},
 			provenance: [
-				{
-					name: 'Navy League events',
-					url: 'https://seaairspace.org/',
-					type: 'official',
-					lastVerified: '2026-02-12',
-					confidence: 'High',
-				},
-			],
-			links: { official: 'https://seaairspace.org/' },
-			logistics: {
-				format: 'In-person',
-				estimatedCostUsd: { min: 300, max: 1300 },
-				travelBurdenFromDc: 'Low',
+			{
+				name: 'Navy League events',
+				url: 'https://seaairspace.org/',
+				type: 'official',
+				lastVerified: '2026-02-12',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://seaairspace.org/'
 			},
-		},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 300,
+					max: 1300
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
 	},
 	{
 		id: 'radar-technet-cyber-2026',
 		title: 'AFCEA TechNet Cyber',
-		description:
-			'Cyber operations and digital modernization event spanning civilian and military operators.',
+		description: 'Cyber operations and digital modernization event spanning civilian and military operators.',
 		startDate: '2026-06-16',
 		endDate: '2026-06-18',
 		branch: 'Joint',
@@ -168,96 +190,111 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Projected',
 		signal: 'High',
 		effort: 'Low',
-		location: {
+		location: 
+		{
 			city: 'Baltimore',
 			state: 'MD',
 			country: 'USA',
 			lat: 39.2904,
 			lng: -76.6122,
-			venue: 'Baltimore Convention Center',
+			venue: 'Baltimore Convention Center'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Zero trust', 'Operational cyber', 'Joint interoperability'],
 			capabilityAreas: ['Identity', 'Policy automation', 'Secure A2A'],
 			missionThreads: ['Cyber defense acceleration', 'Cross-domain operations'],
 			stakeholders: ['DISA', 'Service cyber commands', 'Industry'],
 			keywords: ['technet', 'zero trust', 'mission assurance'],
 			relatedPrograms: ['Trust scopes', 'Tool security research'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-120 days',
 				prep: 'T-45 to T-7 days',
-				execution: '3-day conference + 2-week follow-up',
+				execution: '3-day conference + 2-week follow-up'
 			},
 			provenance: [
-				{
-					name: 'AFCEA events',
-					url: 'https://www.afcea.org/events',
-					type: 'official',
-					lastVerified: '2026-02-12',
-					confidence: 'High',
-				},
-			],
-			links: {
+			{
+				name: 'AFCEA events',
+				url: 'https://www.afcea.org/events',
+				type: 'official',
+				lastVerified: '2026-02-12',
+				confidence: 'High'
+			}],
+			links: 
+			{
 				official: 'https://www.afcea.org/events',
-				registration: 'https://www.afcea.org/events',
+				registration: 'https://www.afcea.org/events'
 			},
-			logistics: {
+			logistics: 
+			{
 				format: 'In-person',
-				estimatedCostUsd: { min: 250, max: 1200 },
-				travelBurdenFromDc: 'Low',
-			},
-		},
+				estimatedCostUsd: 
+				{
+					min: 250,
+					max: 1200
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
 	},
 	{
 		id: 'radar-dii-feb-2026',
 		title: 'Defense Innovation Integration Forum',
-		description:
-			'Seeded event prototype to represent smaller integration venues where specific implementation partnerships can be formed quickly.',
+		description: 'Seeded event prototype to represent smaller integration venues where specific implementation partnerships can be formed quickly.',
 		startDate: '2026-02-28',
 		branch: 'Joint',
 		type: 'Workshop',
 		status: 'Upcoming',
 		signal: 'High',
 		effort: 'Low',
-		location: {
+		location: 
+		{
 			city: 'Arlington',
 			state: 'VA',
 			country: 'USA',
 			lat: 38.8816,
 			lng: -77.091,
-			venue: 'Ballston corridor (seed)',
+			venue: 'Ballston corridor (seed)'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Execution velocity', 'Capability transition', 'Policy-to-deployment'],
 			capabilityAreas: ['Rapid prototyping', 'Program governance'],
 			missionThreads: ['Decision-cycle compression'],
 			stakeholders: ['Program managers', 'Tech leads', 'Acquisition teams'],
 			keywords: ['integration', 'pilot', 'transition'],
 			relatedPrograms: ['DAD stand-up', 'ACP-RA operationalization'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-30 days',
 				prep: 'T-20 to T-3 days',
-				execution: 'Day-of capture + 7-day follow-up',
+				execution: 'Day-of capture + 7-day follow-up'
 			},
 			provenance: [
-				{
-					name: 'Manual seed record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Low',
-				},
-			],
-			links: {
-				official: 'https://www.adamboas.com/radar/',
+			{
+				name: 'Manual seed record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Low'
+			}],
+			links: 
+			{
+				official: 'https://www.adamboas.com/radar/'
 			},
-			logistics: {
+			logistics: 
+			{
 				format: 'Hybrid',
-				estimatedCostUsd: { min: 100, max: 700 },
-				travelBurdenFromDc: 'Low',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 700
+				},
+				travelBurdenFromDc: 'Low'
 			},
-			notes: 'Placeholder archetype for the ontology and scoring flow.',
-		},
+			notes: 'Placeholder archetype for the ontology and scoring flow.'
+		}
 	},
 	{
 		id: 'radar-space-symposium-2026',
@@ -270,93 +307,110 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Projected',
 		signal: 'Medium',
 		effort: 'High',
-		location: {
+		location: 
+		{
 			city: 'Colorado Springs',
 			state: 'CO',
 			country: 'USA',
 			lat: 38.8339,
 			lng: -104.8214,
-			venue: 'Broadmoor',
+			venue: 'Broadmoor'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Space operations', 'All-domain command', 'Commercial partnerships'],
 			capabilityAreas: ['Resilient C2', 'Orbital data pipelines'],
 			missionThreads: ['Cross-domain integration'],
 			stakeholders: ['USSF', 'USAF', 'Commercial space firms'],
 			keywords: ['space', 'resilience', 'commercial integration'],
 			relatedPrograms: ['Agentic force creation'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-120 days',
 				prep: 'T-90 to T-14 days',
-				execution: 'Event week + 30-day partner follow-up',
+				execution: 'Event week + 30-day partner follow-up'
 			},
 			provenance: [
-				{
-					name: 'Space Symposium',
-					url: 'https://www.spacesymposium.org/',
-					type: 'official',
-					lastVerified: '2026-02-12',
-					confidence: 'High',
-				},
-			],
-			links: { official: 'https://www.spacesymposium.org/' },
-			logistics: {
-				format: 'In-person',
-				estimatedCostUsd: { min: 1600, max: 3600 },
-				travelBurdenFromDc: 'High',
+			{
+				name: 'Space Symposium',
+				url: 'https://www.spacesymposium.org/',
+				type: 'official',
+				lastVerified: '2026-02-12',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.spacesymposium.org/'
 			},
-		},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1600,
+					max: 3600
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
 	},
 	{
 		id: 'radar-federal-ai-summit-2026',
 		title: 'Federal AI Summit',
-		description:
-			'Cross-agency AI operations and governance event with practical implementation tracks.',
+		description: 'Cross-agency AI operations and governance event with practical implementation tracks.',
 		startDate: '2026-03-10',
 		branch: 'Civilian',
 		type: 'Summit',
 		status: 'Upcoming',
 		signal: 'High',
 		effort: 'Low',
-		location: {
+		location: 
+		{
 			city: 'Washington',
 			state: 'DC',
 			country: 'USA',
 			lat: 38.9072,
 			lng: -77.0369,
-			venue: 'Downtown DC (seed)',
+			venue: 'Downtown DC (seed)'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Policy implementation', 'Responsible AI', 'Program execution'],
 			capabilityAreas: ['Governance controls', 'Model evaluation', 'Workflow automation'],
 			missionThreads: ['Policy-to-practice acceleration'],
 			stakeholders: ['Agency CIO shops', 'Program executives', 'Vendors'],
 			keywords: ['federal ai', 'governance', 'implementation'],
 			relatedPrograms: ['Code-as-policy', 'ACP-RA'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-45 days',
 				prep: 'T-30 to T-5 days',
-				execution: 'Day-of + 14-day debrief',
+				execution: 'Day-of + 14-day debrief'
 			},
 			provenance: [
-				{
-					name: 'Manual seed record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Low',
-				},
-			],
-			links: {
+			{
+				name: 'Manual seed record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Low'
+			}],
+			links: 
+			{
 				official: 'https://www.adamboas.com/radar/',
-				agenda: 'https://www.adamboas.com/radar/',
+				agenda: 'https://www.adamboas.com/radar/'
 			},
-			logistics: {
+			logistics: 
+			{
 				format: 'Hybrid',
-				estimatedCostUsd: { min: 0, max: 450 },
-				travelBurdenFromDc: 'Low',
-			},
-		},
+				estimatedCostUsd: 
+				{
+					min: 0,
+					max: 450
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
 	},
 	{
 		id: 'radar-nato-emerging-tech-2026',
@@ -368,41 +422,51 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Needs Date',
 		signal: 'Medium',
 		effort: 'High',
-		location: {
+		location: 
+		{
 			city: 'Brussels',
 			country: 'Belgium',
 			lat: 50.8503,
 			lng: 4.3517,
-			venue: 'TBD',
+			venue: 'TBD'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Allied interoperability', 'Policy alignment', 'Coalition operations'],
 			capabilityAreas: ['Federated governance', 'Data-sharing controls'],
 			missionThreads: ['Coalition mission assurance'],
 			stakeholders: ['NATO working groups', 'National MOD teams'],
 			keywords: ['nato', 'interoperability', 'allied'],
 			relatedPrograms: ['Trust scopes', 'Department of War coordination concepts'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Monitor continuously',
 				prep: 'Post-date-confirmation only',
-				execution: 'Dependent on schedule release',
+				execution: 'Dependent on schedule release'
 			},
 			provenance: [
-				{
-					name: 'Manual seed record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Low',
-				},
-			],
-			links: { official: 'https://www.nato.int/' },
-			logistics: {
-				format: 'In-person',
-				estimatedCostUsd: { min: 2400, max: 5200 },
-				travelBurdenFromDc: 'High',
+			{
+				name: 'Manual seed record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Low'
+			}],
+			links: 
+			{
+				official: 'https://www.nato.int/'
 			},
-		},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 2400,
+					max: 5200
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
 	},
 	{
 		id: 'radar-govai-2026',
@@ -414,42 +478,52 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Projected',
 		signal: 'Medium',
 		effort: 'Medium',
-		location: {
+		location: 
+		{
 			city: 'Washington',
 			state: 'DC',
 			country: 'USA',
 			lat: 38.9072,
 			lng: -77.0369,
-			venue: 'TBD',
+			venue: 'TBD'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Public sector AI delivery', 'Governance', 'Procurement'],
 			capabilityAreas: ['Program management', 'Evaluation', 'Interagency learning'],
 			missionThreads: ['Government modernization'],
 			stakeholders: ['Federal CIO Council', 'State innovation offices'],
 			keywords: ['govai', 'public sector ai', 'procurement'],
 			relatedPrograms: ['Code-as-policy'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-180 days',
 				prep: 'T-75 to T-10 days',
-				execution: 'Event + 21-day partner routing',
+				execution: 'Event + 21-day partner routing'
 			},
 			provenance: [
-				{
-					name: 'GovAI Summit',
-					url: 'https://www.govaisummit.com/',
-					type: 'official',
-					lastVerified: '2026-02-12',
-					confidence: 'Medium',
-				},
-			],
-			links: { official: 'https://www.govaisummit.com/' },
-			logistics: {
-				format: 'In-person',
-				estimatedCostUsd: { min: 200, max: 1100 },
-				travelBurdenFromDc: 'Low',
+			{
+				name: 'GovAI Summit',
+				url: 'https://www.govaisummit.com/',
+				type: 'official',
+				lastVerified: '2026-02-12',
+				confidence: 'Medium'
+			}],
+			links: 
+			{
+				official: 'https://www.govaisummit.com/'
 			},
-		},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 200,
+					max: 1100
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
 	},
 	{
 		id: 'radar-usace-infra-2026',
@@ -461,42 +535,52 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Projected',
 		signal: 'Medium',
 		effort: 'Medium',
-		location: {
+		location: 
+		{
 			city: 'Nashville',
 			state: 'TN',
 			country: 'USA',
 			lat: 36.1627,
 			lng: -86.7816,
-			venue: 'USACE-hosted venue (seed)',
+			venue: 'USACE-hosted venue (seed)'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Infrastructure modernization', 'Delivery systems', 'Program execution'],
 			capabilityAreas: ['Portfolio governance', 'Engineering data'],
 			missionThreads: ['Civil works modernization'],
 			stakeholders: ['USACE district teams', 'Contractors', 'State partners'],
 			keywords: ['usace', 'infrastructure', 'delivery systems'],
 			relatedPrograms: ['DAD mission-support threads'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-150 days',
 				prep: 'T-45 to T-7 days',
-				execution: 'Event + 30-day implementation mapping',
+				execution: 'Event + 30-day implementation mapping'
 			},
 			provenance: [
-				{
-					name: 'Manual seed record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Low',
-				},
-			],
-			links: { official: 'https://www.usace.army.mil/' },
-			logistics: {
-				format: 'In-person',
-				estimatedCostUsd: { min: 700, max: 2000 },
-				travelBurdenFromDc: 'Medium',
+			{
+				name: 'Manual seed record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Low'
+			}],
+			links: 
+			{
+				official: 'https://www.usace.army.mil/'
 			},
-		},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 700,
+					max: 2000
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
 	},
 	{
 		id: 'radar-disa-c4-2026',
@@ -508,42 +592,52 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Projected',
 		signal: 'High',
 		effort: 'Medium',
-		location: {
+		location: 
+		{
 			city: 'Fort Meade',
 			state: 'MD',
 			country: 'USA',
 			lat: 39.109,
 			lng: -76.744,
-			venue: 'TBD',
+			venue: 'TBD'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Secure interoperability', 'Mission networking', 'Identity-driven control'],
 			capabilityAreas: ['ICAM', 'Policy enforcement', 'Cross-domain data'],
 			missionThreads: ['Joint C2 modernization'],
 			stakeholders: ['DISA', 'Service C4 shops', 'Mission owners'],
 			keywords: ['disa', 'c4', 'joint c2'],
 			relatedPrograms: ['ACP-RA', 'trust scopes'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-120',
 				prep: 'T-60 to T-7',
-				execution: 'Workshop + 10-day action review',
+				execution: 'Workshop + 10-day action review'
 			},
 			provenance: [
-				{
-					name: 'Manual seed record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Low',
-				},
-			],
-			links: { official: 'https://www.disa.mil/' },
-			logistics: {
-				format: 'In-person',
-				estimatedCostUsd: { min: 100, max: 850 },
-				travelBurdenFromDc: 'Low',
+			{
+				name: 'Manual seed record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Low'
+			}],
+			links: 
+			{
+				official: 'https://www.disa.mil/'
 			},
-		},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 850
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
 	},
 	{
 		id: 'radar-modelsec-2025',
@@ -555,42 +649,52 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Past',
 		signal: 'High',
 		effort: 'Medium',
-		location: {
+		location: 
+		{
 			city: 'San Diego',
 			state: 'CA',
 			country: 'USA',
 			lat: 32.7157,
 			lng: -117.1611,
-			venue: 'TBD',
+			venue: 'TBD'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Model security', 'Resilience', 'Counter-adversarial operations'],
 			capabilityAreas: ['Evaluation', 'Guardrails', 'Data governance'],
 			missionThreads: ['Contested-environment assurance'],
 			stakeholders: ['Operational evaluators', 'Security researchers'],
 			keywords: ['model security', 'contested ops'],
 			relatedPrograms: ['Agent tool security research note'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Historical reference',
 				prep: 'N/A',
-				execution: 'Reference only',
+				execution: 'Reference only'
 			},
 			provenance: [
-				{
-					name: 'Manual historical record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Medium',
-				},
-			],
-			links: { official: 'https://www.adamboas.com/radar/' },
-			logistics: {
-				format: 'In-person',
-				estimatedCostUsd: { min: 900, max: 2400 },
-				travelBurdenFromDc: 'High',
+			{
+				name: 'Manual historical record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Medium'
+			}],
+			links: 
+			{
+				official: 'https://www.adamboas.com/radar/'
 			},
-		},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 900,
+					max: 2400
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
 	},
 	{
 		id: 'radar-a2a-devday-2026',
@@ -602,45 +706,53 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Upcoming',
 		signal: 'High',
 		effort: 'Medium',
-		location: {
+		location: 
+		{
 			city: 'Austin',
 			state: 'TX',
 			country: 'USA',
 			lat: 30.2672,
 			lng: -97.7431,
-			venue: 'TBD',
+			venue: 'TBD'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Protocol implementation', 'Integration acceleration', 'Agent reliability'],
 			capabilityAreas: ['A2A', 'MCP', 'Agent orchestration'],
 			missionThreads: ['Tool chain hardening'],
 			stakeholders: ['Developers', 'Platform teams', 'Tool vendors'],
 			keywords: ['a2a', 'mcp', 'integration'],
 			relatedPrograms: ['Tool supply-chain research'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Now to T-21 days',
 				prep: 'T-14 to T-2 days',
-				execution: 'Event day + 3-day synthesis',
+				execution: 'Event day + 3-day synthesis'
 			},
 			provenance: [
-				{
-					name: 'Manual seed record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Low',
-				},
-			],
-			links: {
+			{
+				name: 'Manual seed record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Low'
+			}],
+			links: 
+			{
 				official: 'https://www.adamboas.com/radar/',
-				registration: 'https://www.adamboas.com/radar/',
+				registration: 'https://www.adamboas.com/radar/'
 			},
-			logistics: {
+			logistics: 
+			{
 				format: 'Hybrid',
-				estimatedCostUsd: { min: 0, max: 650 },
-				travelBurdenFromDc: 'Medium',
-			},
-		},
+				estimatedCostUsd: 
+				{
+					min: 0,
+					max: 650
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
 	},
 	{
 		id: 'radar-autonomy-governance-forum',
@@ -652,41 +764,51 @@ export const radarEventsSeed: RadarEvent[] = [
 		status: 'Needs Date',
 		signal: 'High',
 		effort: 'Low',
-		location: {
+		location: 
+		{
 			city: 'TBD',
 			country: 'USA',
 			lat: 39.5,
 			lng: -98.35,
-			venue: 'TBD',
+			venue: 'TBD'
 		},
-		ontology: {
+		ontology: 
+		{
 			themes: ['Governance fractures', 'Authority design', 'Control-plane coherence'],
 			capabilityAreas: ['Policy operations', 'Decision rights', 'Institution design'],
 			missionThreads: ['Department of War transition planning'],
 			stakeholders: ['Policy directors', 'Joint mission owners'],
 			keywords: ['governance', 'control plane', 'authority'],
 			relatedPrograms: ['DAD memo', 'Annex A framework'],
-			decisionWindows: {
+			decisionWindows: 
+			{
 				discovery: 'Continuous tracking',
 				prep: 'After date confirmation',
-				execution: 'TBD',
+				execution: 'TBD'
 			},
 			provenance: [
-				{
-					name: 'Manual seed record',
-					url: 'https://www.adamboas.com/radar/',
-					type: 'manual',
-					lastVerified: '2026-02-12',
-					confidence: 'Low',
-				},
-			],
-			links: { official: 'https://www.adamboas.com/radar/' },
-			logistics: {
-				format: 'Virtual',
-				estimatedCostUsd: { min: 0, max: 0 },
-				travelBurdenFromDc: 'Low',
+			{
+				name: 'Manual seed record',
+				url: 'https://www.adamboas.com/radar/',
+				type: 'manual',
+				lastVerified: '2026-02-12',
+				confidence: 'Low'
+			}],
+			links: 
+			{
+				official: 'https://www.adamboas.com/radar/'
 			},
-		},
+			logistics: 
+			{
+				format: 'Virtual',
+				estimatedCostUsd: 
+				{
+					min: 0,
+					max: 0
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
 	},
 	{
 		id: 'radar-aaaa-best-drone-warfighter-competition',
@@ -740,61 +862,6 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'Medium'
 			}
-		}
-	},
-	{
-		id: 'radar-afa-warfare-symposium-2026',
-		title: 'AFA Warfare Symposium 2026',
-		description: 'USAF & USSF senior leaders, force design, NGAD, CCA, space systems',
-		startDate: '2026-02-23',
-		endDate: '2026-02-25',
-		branch: 'Air Force / Space Force',
-		type: 'Summit',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Medium',
-		location: 
-		{
-			city: 'Aurora',
-			state: 'CO',
-			country: 'USA',
-			lat: 39.7405111,
-			lng: -104.830994
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['warfare', 'symposium', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
-				{
-					min: 600,
-					max: 2200
-				},
-				travelBurdenFromDc: 'Medium'
-			},
-			notes: 'Major event - 4,000+ attendees'
 		}
 	},
 	{
@@ -1291,61 +1358,6 @@ export const radarEventsSeed: RadarEvent[] = [
 		}
 	},
 	{
-		id: 'radar-ausa-global-force-2026',
-		title: 'AUSA Global Force 2026',
-		description: 'Army modernization: R&D, acquisition, contracting, sustainment, OIB',
-		startDate: '2026-03-24',
-		endDate: '2026-03-26',
-		branch: 'Army',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Medium',
-		location: 
-		{
-			city: 'Huntsville',
-			state: 'AL',
-			country: 'USA',
-			lat: 34.729847,
-			lng: -86.5859011
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['ausa', 'global', 'force', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
-				{
-					min: 600,
-					max: 2200
-				},
-				travelBurdenFromDc: 'Medium'
-			},
-			notes: 'Premier Army event - must attend'
-		}
-	},
-	{
 		id: 'radar-qsecdef-world-symposium',
 		title: 'QSECDEF World Symposium',
 		description: 'Inaugural quantum security for defense, quantum-secure communications',
@@ -1559,61 +1571,6 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'Medium'
 			}
-		}
-	},
-	{
-		id: 'radar-space-symposium-2026-2',
-		title: 'Space Symposium 2026',
-		description: 'Space industry, military space programs, USSF priorities',
-		startDate: '2026-04-13',
-		endDate: '2026-04-16',
-		branch: 'Air Force / Space Force',
-		type: 'Summit',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Medium',
-		location: 
-		{
-			city: 'Colorado Springs',
-			state: 'CO',
-			country: 'USA',
-			lat: 38.8339578,
-			lng: -104.825348
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['space', 'symposium', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
-				{
-					min: 600,
-					max: 2200
-				},
-				travelBurdenFromDc: 'Medium'
-			},
-			notes: '41st Space Symposium. The Broadmoor & Cheyenne Mountain Resort. 12,000+ attendees from 60+ countries.'
 		}
 	},
 	{
@@ -1831,61 +1788,6 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'High'
 			}
-		}
-	},
-	{
-		id: 'radar-sea-air-space-2026-2',
-		title: 'Sea-Air-Space 2026',
-		description: 'Navy League global maritime exposition. CNO priorities, shipbuilding, undersea warfare',
-		startDate: '2026-04-19',
-		endDate: '2026-04-22',
-		branch: 'Navy',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Low',
-		location: 
-		{
-			city: 'National Harbor',
-			state: 'MD',
-			country: 'USA',
-			lat: 38.783342,
-			lng: -77.0148285
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Navy stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['space', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
-				{
-					min: 150,
-					max: 900
-				},
-				travelBurdenFromDc: 'Low'
-			},
-			notes: 'Navy League\'s Global Maritime Exposition. Gaylord National Resort, National Harbor. 15,000+ attendees, 400+ exhibitors. STEM Expo Apr 19.'
 		}
 	},
 	{
@@ -2430,61 +2332,6 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'High'
 			}
-		}
-	},
-	{
-		id: 'radar-sof-week-2026',
-		title: 'SOF Week 2026',
-		description: '15,000-20,000 attendees, 600+ exhibitors. New: The Outpost at Peter O. Knight Airport',
-		startDate: '2026-05-18',
-		endDate: '2026-05-21',
-		branch: 'Joint',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Medium',
-		location: 
-		{
-			city: 'Tampa',
-			state: 'FL',
-			country: 'USA',
-			lat: 27.9449854,
-			lng: -82.4583107
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['week', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
-				{
-					min: 600,
-					max: 2200
-				},
-				travelBurdenFromDc: 'Medium'
-			},
-			notes: 'Largest SOF event'
 		}
 	},
 	{
@@ -3459,61 +3306,6 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'Medium'
 			}
-		}
-	},
-	{
-		id: 'radar-afa-air-space-cyber-conference-2026',
-		title: 'AFA Air, Space & Cyber Conference 2026',
-		description: '~300 exhibitors. SECAF keynote, USAF/USSF leadership',
-		startDate: '2026-09-14',
-		endDate: '2026-09-16',
-		branch: 'Air Force / Space Force',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Low',
-		location: 
-		{
-			city: 'National Harbor',
-			state: 'MD',
-			country: 'USA',
-			lat: 38.783342,
-			lng: -77.0148285
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['space', 'cyber', 'conference', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
-				{
-					min: 150,
-					max: 900
-				},
-				travelBurdenFromDc: 'Low'
-			},
-			notes: 'AFA\'s premier fall conference'
 		}
 	},
 	{
@@ -5768,63 +5560,6 @@ export const radarEventsSeed: RadarEvent[] = [
 		}
 	},
 	{
-		id: 'radar-2026-global-force-symposium-exposition',
-		title: '2026 Global Force Symposium & Exposition',
-		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
-		startDate: '2026-03-24',
-		endDate: '2026-03-26',
-		branch: 'Army',
-		type: 'Summit',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Medium',
-		location: 
-		{
-			city: 'Exposition Huntsville',
-			state: 'AL',
-			country: 'USA',
-			lat: 39.5,
-			lng: -98.35
-		},
-		ontology: 
-		{
-			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
-			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
-			missionThreads: ['Partnership development', 'Program sensing'],
-			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['2026', 'global', 'force', 'symposium', 'exposition'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event window + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'AUSA',
-				url: 'https://www.ausa.org/meet',
-				type: 'official',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: 
-			{
-				official: 'https://www.ausa.org/events/2026-global-force-symposium-exposition'
-			},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
-				{
-					min: 500,
-					max: 2200
-				},
-				travelBurdenFromDc: 'Medium'
-			}
-		}
-	},
-	{
 		id: 'radar-san-antonio-post-apwa-march-meeting',
 		title: 'San Antonio Post-APWA March Meeting',
 		description: 'SAME sourced event for defense ecosystem tracking and engagement planning.',
@@ -6215,62 +5950,6 @@ export const radarEventsSeed: RadarEvent[] = [
 					max: 900
 				},
 				travelBurdenFromDc: 'Low'
-			}
-		}
-	},
-	{
-		id: 'radar-2026-air-space-cyber-conference-2',
-		title: '2026 Air, Space & Cyber Conference',
-		description: 'CTO Innovation sourced event for defense ecosystem tracking and engagement planning.',
-		startDate: '2026-09-14',
-		endDate: '2026-09-16',
-		branch: 'Joint',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Medium',
-		location: 
-		{
-			city: 'Virtual',
-			country: 'USA',
-			lat: 39.5,
-			lng: -98.35
-		},
-		ontology: 
-		{
-			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
-			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
-			missionThreads: ['Partnership development', 'Program sensing'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['2026', 'space', 'cyber', 'conference'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
-			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event window + 14-day follow-up'
-			},
-			provenance: [
-			{
-				name: 'CTO Innovation',
-				url: 'https://www.ctoinnovation.mil/events/',
-				type: 'official',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: 
-			{
-				official: 'https://www.afa.org/events/2026-air-space-cyber-conference/'
-			},
-			logistics: 
-			{
-				format: 'Virtual',
-				estimatedCostUsd: 
-				{
-					min: 500,
-					max: 2200
-				},
-				travelBurdenFromDc: 'Medium'
 			}
 		}
 	},
