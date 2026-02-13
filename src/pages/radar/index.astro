@@ -308,7 +308,7 @@ for (const point of mapPoints) {
 			<section id="radar-map-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Map view</h2>
-					<p class="text-xs text-slate-500">True US geometry projection · right rail = outside US theater</p>
+					<p class="text-xs text-slate-500">True US geometry projection</p>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
 					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label="United States projection with event markers">
@@ -333,7 +333,6 @@ for (const point of mapPoints) {
 										aria-label={`${event.title}, score ${event.score.total}${p.outside ? ', outside US theater' : ''}`}
 										transform={`translate(${p.x}, ${p.y})`}
 									>
-										<title>{event.title} · Score {event.score.total}{p.outside ? ' · Outside US theater' : ''}</title>
 										<circle class="radar-map-marker-halo" cx="0" cy="0" r="10"></circle>
 										<circle class="radar-map-marker-core" cx="0" cy="0" r="5"></circle>
 									</g>
@@ -951,9 +950,10 @@ for (const point of mapPoints) {
 	.radar-map {
 		position: relative;
 		height: 360px;
-		border: 1px solid rgba(30, 41, 59, 0.95);
+		border: 1px solid rgba(51, 65, 85, 0.95);
 		background: rgb(2, 6, 23);
 		overflow: hidden;
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) inset;
 	}
 	.radar-map-svg {
 		display: block;
@@ -961,18 +961,18 @@ for (const point of mapPoints) {
 		height: 100%;
 	}
 	.radar-map-state {
-		fill: rgba(30, 41, 59, 0.78);
-		stroke: rgba(100, 116, 139, 0.45);
-		stroke-width: 0.7;
+		fill: rgba(31, 41, 64, 0.88);
+		stroke: rgba(100, 116, 139, 0.34);
+		stroke-width: 0.75;
 	}
 	.radar-map-nation {
 		fill: none;
-		stroke: rgba(148, 163, 184, 0.75);
-		stroke-width: 1.2;
+		stroke: rgba(148, 163, 184, 0.58);
+		stroke-width: 1.15;
 	}
 	.radar-map-outside-rail {
-		fill: rgba(15, 23, 42, 0.85);
-		stroke: rgba(100, 116, 139, 0.7);
+		fill: rgba(15, 23, 42, 0.9);
+		stroke: rgba(100, 116, 139, 0.8);
 		stroke-width: 1;
 	}
 	.radar-map-marker {
@@ -981,25 +981,33 @@ for (const point of mapPoints) {
 	.radar-map-marker .radar-map-marker-halo {
 		fill: rgba(2, 6, 23, 0.72);
 		stroke: rgba(2, 6, 23, 0.95);
-		stroke-width: 1;
+		stroke-width: 1.2;
+		transition: stroke 140ms ease, stroke-width 140ms ease;
 	}
 	.radar-map-marker .radar-map-marker-core {
 		stroke: rgba(2, 6, 23, 0.98);
-		stroke-width: 1.2;
-		transition: transform 140ms ease;
+		stroke-width: 1.4;
+		transition: stroke-width 140ms ease, filter 140ms ease;
 	}
-	.radar-map-marker-high .radar-map-marker-core { fill: rgba(212, 165, 116, 1); }
-	.radar-map-marker-mid .radar-map-marker-core { fill: rgba(0, 196, 196, 0.97); }
-	.radar-map-marker-low .radar-map-marker-core { fill: rgba(148, 163, 184, 0.95); }
+	.radar-map-marker-high .radar-map-marker-core { fill: rgb(212, 165, 116); }
+	.radar-map-marker-mid .radar-map-marker-core { fill: rgb(0, 196, 196); }
+	.radar-map-marker-low .radar-map-marker-core { fill: rgb(148, 163, 184); }
+	.radar-map-marker-high .radar-map-marker-halo { stroke: rgba(212, 165, 116, 0.45); }
+	.radar-map-marker-mid .radar-map-marker-halo { stroke: rgba(0, 196, 196, 0.45); }
+	.radar-map-marker-low .radar-map-marker-halo { stroke: rgba(148, 163, 184, 0.5); }
 	.radar-map-marker-outside .radar-map-marker-halo {
-		stroke: rgba(212, 165, 116, 0.7);
 		stroke-dasharray: 2 2;
 	}
 	.radar-map-marker:hover .radar-map-marker-core,
 	.radar-map-marker:focus .radar-map-marker-core,
 	.radar-map-marker:focus-visible .radar-map-marker-core {
-		transform: scale(1.24);
-		transform-origin: center;
+		stroke-width: 2;
+		filter: brightness(1.1);
+	}
+	.radar-map-marker:hover .radar-map-marker-halo,
+	.radar-map-marker:focus .radar-map-marker-halo,
+	.radar-map-marker:focus-visible .radar-map-marker-halo {
+		stroke-width: 2;
 	}
 
 	.radar-card {
