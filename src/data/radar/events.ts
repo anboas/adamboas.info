@@ -5432,4 +5432,959 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: '⚠️ Dates need verifying. Was May 13-16, 2025 in Orlando.'
 		}
 	},
+	{
+		id: 'radar-2026-warfare-symposium',
+		title: '2026 Warfare Symposium',
+		description: 'AFA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-02-23',
+		endDate: '2026-02-25',
+		branch: 'Air Force / Space Force',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Aurora',
+			state: 'CO',
+			country: 'USA',
+			lat: 39.7405111,
+			lng: -104.830994
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2026', 'warfare', 'symposium'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AFA',
+				url: 'https://www.afa.org/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.afa.org/events/2026-afa-warfare-symposium/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-ausa-noon-report-warrant-officers-and-technical-expertise-transforming',
+		title: 'AUSA Noon Report - Warrant Officers and Technical Expertise: Transforming the Future Army',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-02-24',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ausa', 'noon', 'report', 'warrant', 'officers'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/noon-report/warrant-officers-and-technical-expertise'
+			},
+			logistics: 
+			{
+				format: 'Virtual',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-san-antonio-post-february-meeting',
+		title: 'San Antonio Post February Meeting',
+		description: 'SAME sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-02-26',
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Posts',
+			state: 'SA',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['antonio', 'post', 'february', 'meeting'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'SAME',
+				url: 'https://www.same.org/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.same.org/events/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-ausa-noon-report-ai-at-the-core-advancing-army-cyber-priorities',
+		title: 'AUSA Noon Report: AI at the Core: Advancing Army Cyber Priorities',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-03-12',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ausa', 'noon', 'report', 'core', 'advancing'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/noon-report/ai-at-the-core'
+			},
+			logistics: 
+			{
+				format: 'Virtual',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-coffee-series-featuring-honorable-brent-ingraham',
+		title: 'Coffee Series featuring Honorable Brent Ingraham',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-03-12',
+		branch: 'Army',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Coffee Series featuring Honorable Brent Ingraham Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['coffee', 'series', 'featuring', 'honorable', 'brent'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/coffee-series/ingraham'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-coffee-series-featuring-honorable-daniel-driscoll',
+		title: 'Coffee Series Featuring Honorable Daniel Driscoll',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-03-17',
+		branch: 'Army',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Coffee Series Featuring Honorable Daniel Driscoll Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['coffee', 'series', 'featuring', 'honorable', 'daniel'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/coffee-series/driscoll'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-2026-global-force-symposium-exposition',
+		title: '2026 Global Force Symposium & Exposition',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-03-24',
+		endDate: '2026-03-26',
+		branch: 'Army',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Exposition Huntsville',
+			state: 'AL',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2026', 'global', 'force', 'symposium', 'exposition'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/2026-global-force-symposium-exposition'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-san-antonio-post-apwa-march-meeting',
+		title: 'San Antonio Post-APWA March Meeting',
+		description: 'SAME sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-03-24',
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Posts',
+			state: 'SA',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['antonio', 'post', 'apwa', 'march', 'meeting'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'SAME',
+				url: 'https://www.same.org/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.same.org/events/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-operation-deploy-your-dress-pop-up',
+		title: 'Operation Deploy Your Dress Pop-up',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-04-25',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['operation', 'deploy', 'your', 'dress'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/ausa-odyd-popup'
+			},
+			logistics: 
+			{
+				format: 'Virtual',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-san-antonio-post-small-business-event',
+		title: 'San Antonio Post Small Business Event',
+		description: 'SAME sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-05-06',
+		branch: 'USACE',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Posts',
+			state: 'SA',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['antonio', 'post', 'small', 'business', 'event'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'SAME',
+				url: 'https://www.same.org/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.same.org/events/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-2026-lanpac-symposium-exposition',
+		title: '2026 LANPAC Symposium & Exposition',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-05-12',
+		endDate: '2026-05-14',
+		branch: 'Army',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'High',
+		location: 
+		{
+			city: 'Exposition Honolulu',
+			state: 'HI',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2026', 'lanpac', 'symposium', 'exposition'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/2026-lanpac-symposium-exposition'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
+	{
+		id: 'radar-usa-security-and-defense-pavilion-at-eurosatory-2026',
+		title: 'USA Security and Defense Pavilion at Eurosatory 2026',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-06-15',
+		endDate: '2026-06-19',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'Paris',
+			country: 'France',
+			lat: 48.8534951,
+			lng: 2.3483915
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['security', 'defense', 'pavilion', 'eurosatory', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/usa-security-and-defense-pavilion-eurosatory-2026'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
+	{
+		id: 'radar-2026-national-convention',
+		title: '2026 National Convention',
+		description: 'AFA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-09-12',
+		endDate: '2026-09-13',
+		branch: 'Air Force / Space Force',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2026', 'national', 'convention'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AFA',
+				url: 'https://www.afa.org/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.afa.org/events/2026-national-convention/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-2026-air-space-cyber-conference',
+		title: '2026 Air, Space & Cyber Conference',
+		description: 'AFA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-09-14',
+		endDate: '2026-09-16',
+		branch: 'Air Force / Space Force',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: 
+		{
+			city: 'National Harbor',
+			state: 'MD',
+			country: 'USA',
+			lat: 38.783342,
+			lng: -77.0148285
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2026', 'space', 'cyber', 'conference'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AFA',
+				url: 'https://www.afa.org/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.afa.org/events/2026-air-space-cyber-conference/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-2026-air-space-cyber-conference-2',
+		title: '2026 Air, Space & Cyber Conference',
+		description: 'CTO Innovation sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-09-14',
+		endDate: '2026-09-16',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2026', 'space', 'cyber', 'conference'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'CTO Innovation',
+				url: 'https://www.ctoinnovation.mil/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.afa.org/events/2026-air-space-cyber-conference/'
+			},
+			logistics: 
+			{
+				format: 'Virtual',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-navy-birthday-ball',
+		title: 'Navy Birthday Ball',
+		description: 'Navy League sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-10-10',
+		branch: 'Navy',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Navy stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['navy', 'birthday', 'ball'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Navy League',
+				url: 'https://www.navyleague.org/meetings-and-events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.navyleague.org/meetings-and-events/us-navy-birthday-ball/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-2027-warfare-symposium',
+		title: '2027 Warfare Symposium',
+		description: 'AFA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2027-03-01',
+		endDate: '2027-03-03',
+		branch: 'Air Force / Space Force',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Aurora',
+			state: 'CO',
+			country: 'USA',
+			lat: 39.7405111,
+			lng: -104.830994
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2027', 'warfare', 'symposium'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AFA',
+				url: 'https://www.afa.org/events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.afa.org/events/2027-warfare-symposium/'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
 ];
