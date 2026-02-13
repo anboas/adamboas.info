@@ -259,6 +259,7 @@ function mapProjection(lat: number, lng: number) {
 					<p class="text-xs text-slate-500">Click a marker to jump to card</p>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
+					<div id="radar-map-canvas" class="radar-map-canvas" aria-hidden="true"></div>
 					{events.map((event) => {
 						const p = mapProjection(event.location.lat, event.location.lng);
 						const tone = scoreTone(event.score.total);
@@ -448,6 +449,7 @@ function mapProjection(lat: number, lng: number) {
 	const count = document.getElementById('radar-count');
 	const empty = document.getElementById('radar-empty');
 	const map = document.getElementById('radar-map');
+	const mapCanvas = document.getElementById('radar-map-canvas');
 	const mapSection = document.getElementById('radar-map-section');
 	const filterPanel = document.getElementById('radar-filter-panel');
 	const filterChips = document.getElementById('radar-filter-chips');
@@ -463,6 +465,9 @@ function mapProjection(lat: number, lng: number) {
 	let compactMode = false;
 	let mapVisible = true;
 	let pinned = loadPins();
+	let leafletMap = null;
+	let leafletLayer = null;
+	let leafletReady = false;
 
 	if (window.matchMedia('(max-width: 767px)').matches && filterPanel) {
 		filterPanel.open = false;
@@ -562,12 +567,87 @@ function mapProjection(lat: number, lng: number) {
 		});
 	}
 
+	function loadLeaflet() {
+		if (window.L) return Promise.resolve(window.L);
+		return new Promise((resolve, reject) => {
+			if (!document.querySelector('link[data-radar-leaflet]')) {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+				link.setAttribute('data-radar-leaflet', '1');
+				document.head.appendChild(link);
+			}
+			const existing = document.querySelector('script[data-radar-leaflet]');
+			if (existing && window.L) return resolve(window.L);
+			if (existing) {
+				existing.addEventListener('load', () => resolve(window.L));
+				existing.addEventListener('error', reject);
+				return;
+			}
+			const script = document.createElement('script');
+			script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+			script.defer = true;
+			script.setAttribute('data-radar-leaflet', '1');
+			script.onload = () => resolve(window.L);
+			script.onerror = reject;
+			document.head.appendChild(script);
+		});
+	}
+
+	async function ensureLeafletMap() {
+		if (!mapVisible || !mapCanvas || leafletReady) return;
+		try {
+			const L = await loadLeaflet();
+			leafletMap = L.map(mapCanvas, {
+				zoomControl: false,
+				attributionControl: false,
+				scrollWheelZoom: false,
+				doubleClickZoom: false,
+				dragging: true,
+				tap: true,
+			});
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 8,
+				minZoom: 2,
+			}).addTo(leafletMap);
+			leafletLayer = L.layerGroup().addTo(leafletMap);
+			leafletMap.setView([39, -83], 3);
+			leafletReady = true;
+			map.classList.add('radar-has-live-map');
+			setTimeout(() => leafletMap.invalidateSize(), 60);
+		} catch (err) {
+			console.warn('Leaflet load failed, keeping fallback marker map.', err);
+		}
+	}
+
 	function renderMap(visibleCards) {
 		const visibleIds = new Set(visibleCards.map((card) => card.dataset.id));
 		for (const marker of mapMarkers) {
 			const id = marker.dataset.id;
 			const show = mapVisible && (visibleCards.length === 0 || visibleIds.has(id));
 			marker.classList.toggle('hidden', !show);
+		}
+
+		if (!leafletReady || !leafletLayer) return;
+		leafletLayer.clearLayers();
+		for (const card of visibleCards) {
+			const lat = Number(card.dataset.lat);
+			const lng = Number(card.dataset.lng);
+			if (Number.isNaN(lat) || Number.isNaN(lng)) continue;
+			const score = Number(card.dataset.score || '0');
+			const tone = scoreTone(score);
+			const color = tone === 'high' ? '#d4a574' : tone === 'mid' ? '#00c4c4' : '#94a3b8';
+			const title = card.dataset.title || card.querySelector('h3')?.textContent || 'Event';
+			const marker = window.L.circleMarker([lat, lng], {
+				radius: 5,
+				color,
+				weight: 1,
+				fillColor: color,
+				fillOpacity: 0.9,
+			});
+			marker.bindTooltip(`${title} · ${score}`, { direction: 'top' });
+			marker.on('click', () => card.scrollIntoView({ behavior: 'smooth', block: 'center' }));
+			leafletLayer.addLayer(marker);
 		}
 	}
 
@@ -661,6 +741,7 @@ function mapProjection(lat: number, lng: number) {
 
 		list.classList.toggle('is-compact', compactMode);
 		mapSection.classList.toggle('hidden', !mapVisible);
+		mapCanvas?.classList.toggle('hidden', !mapVisible);
 		controls.toggleMap.textContent = mapVisible ? 'Hide map' : 'Show map';
 		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
 		controls.minScoreLabel.textContent = String(state.min);
@@ -669,6 +750,7 @@ function mapProjection(lat: number, lng: number) {
 		count.textContent = `${visible.length} of ${cards.length} items shown · ${pinned.size} pinned`;
 		renderFilterChips(state);
 		renderMap(visible);
+		ensureLeafletMap().then(() => renderMap(visible));
 		renderPinned();
 
 		const query = toQuery(state);
@@ -887,6 +969,14 @@ function mapProjection(lat: number, lng: number) {
 			rgba(2, 6, 23, 0.85);
 		overflow: hidden;
 	}
+	.radar-map-canvas {
+		position: absolute;
+		inset: 0;
+		z-index: 1;
+	}
+	.radar-has-live-map .radar-map-canvas {
+		opacity: 0.82;
+	}
 	.radar-map::before {
 		content: 'North America + Europe theater view';
 		position: absolute;
@@ -896,9 +986,12 @@ function mapProjection(lat: number, lng: number) {
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
 		color: rgba(148, 163, 184, 0.85);
+		z-index: 5;
+		pointer-events: none;
 	}
 	.radar-marker {
 		position: absolute;
+		z-index: 3;
 		width: 12px;
 		height: 12px;
 		transform: translate(-50%, -50%);
