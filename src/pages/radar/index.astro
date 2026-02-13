@@ -80,6 +80,14 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	return 'low';
 }
 
+function eventPrimaryLink(event: (typeof events)[number]) {
+	return event.ontology.links.official
+		?? event.ontology.links.registration
+		?? event.ontology.links.agenda
+		?? event.ontology.links.callForPapers
+		?? null;
+}
+
 ---
 
 <SiteLayout
@@ -198,6 +206,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 							data-signal={event.signal}
 							data-confidence={sourceConfidenceBand(event)}
 							data-title={event.title}
+							data-link={eventPrimaryLink(event) ?? ''}
 							data-lat={event.location.lat}
 							data-lng={event.location.lng}
 							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence}`).join(' ')}`.toLowerCase()}
@@ -211,6 +220,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 								</div>
 								<div class="flex items-center gap-2">
 									<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
+									{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Link</a> : null}
 									<button class="radar-pin-btn" type="button" data-pin-btn data-id={event.id}>Pin</button>
 									<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 								</div>
@@ -382,12 +392,17 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		return Number.isFinite(days) ? days : null;
 	}
 
-	function daysTone(days) {
-		if (days == null) return 'low';
-		if (days < 0) return 'low';
-		if (days <= 14) return 'high';
-		if (days <= 45) return 'mid';
-		return 'low';
+	function typeKey(type) {
+		return String(type || '')
+			.toLowerCase()
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/^-+|-+$/g, '');
+	}
+
+	function typeTone(type) {
+		const key = typeKey(type);
+		if (['conference', 'workshop', 'summit', 'hackathon', 'exercise'].includes(key)) return key;
+		return 'conference';
 	}
 
 	function daysMarker(days) {
@@ -439,8 +454,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	}
 
 	for (const card of cards) {
-		const days = parseDays(card.dataset.days);
-		card.classList.add(`radar-tone-${daysTone(days)}`);
+		card.classList.add(`radar-type-${typeTone(card.dataset.type)}`);
 	}
 
 	const US_BOUNDS = [[24.2, -125.2], [49.6, -66.0]];
@@ -529,16 +543,19 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		const branch = card.dataset.branch || 'Unknown';
 		const type = card.dataset.type || 'Unknown';
 		const meta = card.querySelector('.radar-meta')?.textContent || '';
+		const link = card.dataset.link || '';
 		const days = parseDays(card.dataset.days);
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
+		const typeClass = `radar-type-${typeTone(type)}`;
+		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event site</a>` : '';
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
-				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> ${escapeHtml(branch)} · ${escapeHtml(type)}</div>
+				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> <span class="radar-map-popup-badge ${typeClass}">${escapeHtml(type)}</span> ${escapeHtml(branch)}</div>
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
 					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
-					<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button>
+					<div class="radar-map-popup-cta">${linkHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button></div>
 				</div>
 			</div>
 		`;
@@ -763,10 +780,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			const lng = Number(card.dataset.lng || '');
 			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
 			const days = parseDays(card.dataset.days);
-			const tone = daysTone(days);
+			const tone = typeTone(card.dataset.type);
 			const eventId = card.dataset.id || '';
 			const marker = window.L.marker([lat, lng], { icon: pinIcon(daysMarker(days), tone, eventId) });
-			marker.bindPopup(markerPopup(card), { maxWidth: 360 });
+			marker.bindPopup(markerPopup(card), { maxWidth: 380 });
 			clusterLayer.addLayer(marker);
 			markerIndex.set(eventId, marker);
 			mapped += 1;
@@ -927,6 +944,20 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 </script>
 
 <style>
+	.radar-control-shell,
+	#radar-map-section,
+	#radar-list-section {
+		border-color: rgba(93, 121, 166, 0.55) !important;
+	}
+	.radar-control-shell {
+		background: linear-gradient(180deg, rgba(19, 33, 58, 0.72) 0%, rgba(2, 6, 23, 0.98) 58%);
+	}
+	#radar-map-section .section-title,
+	#radar-list-section .section-title,
+	.radar-summary-primary {
+		color: rgba(191, 219, 254, 0.96);
+	}
+
 	.radar-stat {
 		border: 1px solid rgba(30, 41, 59, 0.95);
 		background: rgb(2, 6, 23);
@@ -1102,6 +1133,11 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	:global(.radar-status-projected) { border-color: rgba(59, 130, 246, 0.65); }
 	:global(.radar-status-needs-date) { border-color: rgba(245, 158, 11, 0.65); }
 	:global(.radar-status-past) { border-color: rgba(239, 68, 68, 0.55); }
+	:global(.radar-map-popup-badge.radar-type-conference) { border-color: rgba(96, 165, 250, 0.7); color: rgba(191, 219, 254, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-workshop) { border-color: rgba(45, 212, 191, 0.7); color: rgba(153, 246, 228, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-summit) { border-color: rgba(167, 139, 250, 0.72); color: rgba(221, 214, 254, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-hackathon) { border-color: rgba(251, 191, 36, 0.74); color: rgba(254, 243, 199, 0.96); }
+	:global(.radar-map-popup-badge.radar-type-exercise) { border-color: rgba(248, 113, 113, 0.72); color: rgba(254, 202, 202, 0.96); }
 	:global(.radar-map-popup-actions) {
 		margin-top: 0.45rem;
 		display: flex;
@@ -1116,16 +1152,26 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		background: rgba(2, 6, 23, 0.9);
 		color: rgba(241, 245, 249, 0.96);
 	}
-	:global(.radar-map-jump) {
+	:global(.radar-map-popup-cta) {
+		display: flex;
+		align-items: center;
+		gap: 0.32rem;
+	}
+	:global(.radar-map-jump),
+	:global(.radar-map-link) {
+		display: inline-flex;
+		align-items: center;
 		border: 1px solid rgba(0, 196, 196, 0.55);
 		background: rgba(0, 166, 166, 0.12);
 		color: rgba(226, 232, 240, 0.97);
 		font-size: 0.68rem;
 		font-weight: 700;
 		padding: 0.15rem 0.42rem;
+		text-decoration: none;
 		cursor: pointer;
 	}
-	:global(.radar-map-jump:hover) { background: rgba(0, 166, 166, 0.22); }
+	:global(.radar-map-jump:hover),
+	:global(.radar-map-link:hover) { background: rgba(0, 166, 166, 0.22); }
 
 	:global(.radar-leaflet-pin-wrap) { background: transparent; border: 0; }
 	:global(.radar-leaflet-pin) {
@@ -1141,9 +1187,11 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		border: 2px solid rgba(100, 116, 139, 0.82);
 		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(0, 0, 0, 0.34);
 	}
-	:global(.radar-leaflet-pin-high) { border-color: rgba(212, 165, 116, 0.96); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(212, 165, 116, 0.24); }
-	:global(.radar-leaflet-pin-mid) { border-color: rgba(0, 196, 196, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(0, 196, 196, 0.25); }
-	:global(.radar-leaflet-pin-low) { border-color: rgba(148, 163, 184, 0.96); }
+	:global(.radar-leaflet-pin-conference) { border-color: rgba(96, 165, 250, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(96, 165, 250, 0.25); }
+	:global(.radar-leaflet-pin-workshop) { border-color: rgba(45, 212, 191, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(45, 212, 191, 0.24); }
+	:global(.radar-leaflet-pin-summit) { border-color: rgba(167, 139, 250, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(167, 139, 250, 0.25); }
+	:global(.radar-leaflet-pin-hackathon) { border-color: rgba(251, 191, 36, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(251, 191, 36, 0.25); }
+	:global(.radar-leaflet-pin-exercise) { border-color: rgba(248, 113, 113, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(248, 113, 113, 0.24); }
 	:global(.radar-leaflet-pin.is-active) {
 		transform: scale(1.14);
 		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.75), 0 0 0 2px rgba(0, 196, 196, 0.55), 0 0 16px rgba(0, 196, 196, 0.3);
@@ -1272,14 +1320,20 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		border-color: rgba(0, 196, 196, 0.72) !important;
 		box-shadow: 0 0 0 1px rgba(0, 196, 196, 0.3) inset, 0 0 18px rgba(0, 196, 196, 0.18);
 	}
-	.radar-tone-high {
-		border-left-color: rgba(212, 165, 116, 0.95);
+	.radar-type-conference {
+		border-left-color: rgba(96, 165, 250, 0.92);
 	}
-	.radar-tone-mid {
-		border-left-color: rgba(0, 196, 196, 0.85);
+	.radar-type-workshop {
+		border-left-color: rgba(45, 212, 191, 0.9);
 	}
-	.radar-tone-low {
-		border-left-color: rgba(148, 163, 184, 0.7);
+	.radar-type-summit {
+		border-left-color: rgba(167, 139, 250, 0.92);
+	}
+	.radar-type-hackathon {
+		border-left-color: rgba(251, 191, 36, 0.93);
+	}
+	.radar-type-exercise {
+		border-left-color: rgba(248, 113, 113, 0.9);
 	}
 
 	.radar-pin-btn {
@@ -1291,6 +1345,13 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	}
 	.radar-pin-btn:hover {
 		background: rgba(30, 41, 59, 0.88);
+	}
+	.radar-link-btn {
+		border-color: rgba(56, 189, 248, 0.62);
+		background: rgba(56, 189, 248, 0.12);
+	}
+	.radar-link-btn:hover {
+		background: rgba(56, 189, 248, 0.2);
 	}
 	.radar-pin-btn.is-pinned {
 		border-color: rgba(212, 165, 116, 0.7);
