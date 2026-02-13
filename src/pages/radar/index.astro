@@ -53,6 +53,22 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	if (confidence.includes('Medium')) return 'medium';
 	return 'low';
 }
+
+function scoreTone(score: number) {
+	if (score >= 80) return 'high';
+	if (score >= 60) return 'mid';
+	return 'low';
+}
+
+function mapProjection(lat: number, lng: number) {
+	const minLng = -130;
+	const maxLng = 20;
+	const minLat = 22;
+	const maxLat = 56;
+	const x = ((lng - minLng) / (maxLng - minLng)) * 100;
+	const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
+	return { x: Math.min(98, Math.max(2, x)), y: Math.min(95, Math.max(5, y)) };
+}
 ---
 
 <SiteLayout
@@ -242,7 +258,22 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 					<h2 class="section-title">Map view</h2>
 					<p class="text-xs text-slate-500">Click a marker to jump to card</p>
 				</div>
-				<div id="radar-map" class="radar-map" aria-label="Radar map"></div>
+				<div id="radar-map" class="radar-map" aria-label="Radar map">
+					{events.map((event) => {
+						const p = mapProjection(event.location.lat, event.location.lng);
+						const tone = scoreTone(event.score.total);
+						return (
+							<button
+								type="button"
+								class={`radar-marker radar-marker-${tone}`}
+								style={`left:${p.x}%;top:${p.y}%`}
+								title={`${event.title} | Score ${event.score.total}`}
+								aria-label={`${event.title}, score ${event.score.total}`}
+							></button>
+						);
+					})}
+					<noscript><p class="p-2 text-xs text-slate-400">JavaScript is disabled. Showing unfiltered markers.</p></noscript>
+				</div>
 			</section>
 
 			<section id="radar-list-section" class="card p-5">
