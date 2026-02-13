@@ -600,16 +600,17 @@ function mapProjection(lat: number, lng: number) {
 	}
 
 	function renderMap(visibleCards) {
-		const visibleIds = new Set(visibleCards.map((card) => card.dataset.id));
+		const cardsForMap = visibleCards.length ? visibleCards : cards;
+		const visibleIds = new Set(cardsForMap.map((card) => card.dataset.id));
 		for (const marker of mapMarkers) {
 			const id = marker.dataset.id;
-			const show = mapVisible && (visibleCards.length === 0 || visibleIds.has(id));
+			const show = mapVisible && visibleIds.has(id);
 			marker.classList.toggle('hidden', !show);
 		}
 
 		if (!leafletReady || !leafletLayer) return;
 		leafletLayer.clearLayers();
-		for (const card of visibleCards) {
+		for (const card of cardsForMap) {
 			const lat = Number(card.dataset.lat);
 			const lng = Number(card.dataset.lng);
 			if (Number.isNaN(lat) || Number.isNaN(lng)) continue;
