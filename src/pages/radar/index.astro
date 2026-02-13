@@ -60,14 +60,17 @@ function scoreTone(score: number) {
 	return 'low';
 }
 
+const MAP_W = 1000;
+const MAP_H = 540;
+
 function mapProjection(lat: number, lng: number) {
 	const minLng = -130;
 	const maxLng = 20;
 	const minLat = 22;
 	const maxLat = 56;
-	const x = ((lng - minLng) / (maxLng - minLng)) * 100;
-	const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
-	return { x: Math.min(98, Math.max(2, x)), y: Math.min(95, Math.max(5, y)) };
+	const x = ((lng - minLng) / (maxLng - minLng)) * MAP_W;
+	const y = ((maxLat - lat) / (maxLat - minLat)) * MAP_H;
+	return { x: Math.min(MAP_W - 14, Math.max(14, x)), y: Math.min(MAP_H - 14, Math.max(14, y)) };
 }
 ---
 
@@ -259,22 +262,45 @@ function mapProjection(lat: number, lng: number) {
 					<p class="text-xs text-slate-500">Click a marker to jump to card</p>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
-					<div id="radar-map-canvas" class="radar-map-canvas" aria-hidden="true"></div>
-					{events.map((event) => {
-						const p = mapProjection(event.location.lat, event.location.lng);
-						const tone = scoreTone(event.score.total);
-						return (
-							<button
-								type="button"
-								class={`radar-marker radar-marker-${tone}`}
-								data-id={event.id}
-								style={`left:${p.x}%;top:${p.y}%`}
-								title={`${event.title} | Score ${event.score.total}`}
-								aria-label={`${event.title}, score ${event.score.total}`}
-							></button>
-						);
-					})}
-					<noscript><p class="p-2 text-xs text-slate-400">JavaScript is disabled. Showing unfiltered markers.</p></noscript>
+					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} role="img" aria-label="North America and Europe theater map">
+						<rect x="0" y="0" width={MAP_W} height={MAP_H} fill="rgba(2,6,23,0.22)"></rect>
+						<g class="radar-map-land">
+							<path d="M70 110 L120 85 L210 88 L250 128 L285 170 L276 218 L240 252 L194 260 L160 286 L112 292 L74 270 L52 226 L50 176 Z"></path>
+							<path d="M314 235 L360 218 L386 234 L382 270 L340 286 L308 266 Z"></path>
+							<path d="M620 144 L660 130 L708 138 L760 156 L772 188 L736 206 L690 204 L648 188 Z"></path>
+							<path d="M688 214 L726 220 L748 250 L734 282 L708 292 L680 270 L672 238 Z"></path>
+						</g>
+						<g class="radar-map-grid">
+							{Array.from({ length: 10 }).map((_, i) => (
+								<line x1={i * 100} y1="0" x2={i * 100} y2={MAP_H}></line>
+							))}
+							{Array.from({ length: 6 }).map((_, i) => (
+								<line x1="0" y1={i * 108} x2={MAP_W} y2={i * 108}></line>
+							))}
+						</g>
+						<g class="radar-map-points">
+							{events.map((event) => {
+								const p = mapProjection(event.location.lat, event.location.lng);
+								const tone = scoreTone(event.score.total);
+								return (
+									<g
+										class={`radar-map-marker radar-map-marker-${tone}`}
+										data-map-marker
+										data-id={event.id}
+										data-title={event.title}
+										tabindex="0"
+										role="button"
+										aria-label={`${event.title}, score ${event.score.total}`}
+										transform={`translate(${p.x}, ${p.y})`}
+									>
+										<title>{event.title} · Score {event.score.total}</title>
+										<circle class="radar-map-marker-halo" cx="0" cy="0" r="11"></circle>
+										<circle class="radar-map-marker-core" cx="0" cy="0" r="6"></circle>
+									</g>
+								);
+							})}
+						</g>
+					</svg>
 				</div>
 			</section>
 
@@ -419,10 +445,8 @@ function mapProjection(lat: number, lng: number) {
 	</section>
 </SiteLayout>
 
-<script>
-	import L from 'leaflet';
-	import 'leaflet/dist/leaflet.css';
-	const KEY = 'adamboas.radar.view.v3';
+<script is:inline>
+	const KEY = 'adamboas.radar.view.v4';
 	const PIN_KEY = 'adamboas.radar.pins.v1';
 
 	const controls = {
@@ -451,7 +475,6 @@ function mapProjection(lat: number, lng: number) {
 	const count = document.getElementById('radar-count');
 	const empty = document.getElementById('radar-empty');
 	const map = document.getElementById('radar-map');
-	const mapCanvas = document.getElementById('radar-map-canvas');
 	const mapSection = document.getElementById('radar-map-section');
 	const filterPanel = document.getElementById('radar-filter-panel');
 	const filterChips = document.getElementById('radar-filter-chips');
@@ -460,20 +483,15 @@ function mapProjection(lat: number, lng: number) {
 	const pinnedList = document.getElementById('radar-pinned-list');
 
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
-	const mapMarkers = Array.from(map.querySelectorAll('.radar-marker'));
+	const mapMarkers = Array.from(map.querySelectorAll('[data-map-marker]'));
 	const pinButtons = Array.from(document.querySelectorAll('[data-pin-btn]'));
 	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
 
 	let compactMode = false;
 	let mapVisible = true;
 	let pinned = loadPins();
-	let leafletMap = null;
-	let leafletLayer = null;
-	let leafletReady = false;
 
-	if (window.matchMedia('(max-width: 767px)').matches && filterPanel) {
-		filterPanel.open = false;
-	}
+	if (window.matchMedia('(max-width: 767px)').matches && filterPanel) filterPanel.open = false;
 
 	function parseDate(value) {
 		if (!value) return null;
@@ -507,9 +525,16 @@ function mapProjection(lat: number, lng: number) {
 	}
 
 	for (const marker of mapMarkers) {
-		marker.addEventListener('click', () => {
+		const go = () => {
 			const card = cards.find((c) => c.dataset.id === marker.dataset.id);
 			if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		};
+		marker.addEventListener('click', go);
+		marker.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				go();
+			}
 		});
 	}
 
@@ -567,68 +592,6 @@ function mapProjection(lat: number, lng: number) {
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
 		});
-	}
-
-	function loadLeaflet() {
-		return Promise.resolve(L);
-	}
-
-	async function ensureLeafletMap() {
-		if (!mapVisible || !mapCanvas || leafletReady) return;
-		try {
-			const L = await loadLeaflet();
-			leafletMap = L.map(mapCanvas, {
-				zoomControl: false,
-				attributionControl: false,
-				scrollWheelZoom: false,
-				doubleClickZoom: false,
-				dragging: true,
-				tap: true,
-			});
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				maxZoom: 8,
-				minZoom: 2,
-			}).addTo(leafletMap);
-			leafletLayer = L.layerGroup().addTo(leafletMap);
-			leafletMap.setView([39, -83], 3);
-			leafletReady = true;
-			map.classList.add('radar-has-live-map');
-			setTimeout(() => leafletMap.invalidateSize(), 60);
-		} catch (err) {
-			console.warn('Leaflet load failed, keeping fallback marker map.', err);
-		}
-	}
-
-	function renderMap(visibleCards) {
-		const cardsForMap = visibleCards.length ? visibleCards : cards;
-		const visibleIds = new Set(cardsForMap.map((card) => card.dataset.id));
-		for (const marker of mapMarkers) {
-			const id = marker.dataset.id;
-			const show = mapVisible && visibleIds.has(id);
-			marker.classList.toggle('hidden', !show);
-		}
-
-		if (!leafletReady || !leafletLayer) return;
-		leafletLayer.clearLayers();
-		for (const card of cardsForMap) {
-			const lat = Number(card.dataset.lat);
-			const lng = Number(card.dataset.lng);
-			if (Number.isNaN(lat) || Number.isNaN(lng)) continue;
-			const score = Number(card.dataset.score || '0');
-			const tone = scoreTone(score);
-			const color = tone === 'high' ? '#d4a574' : tone === 'mid' ? '#00c4c4' : '#94a3b8';
-			const title = card.dataset.title || card.querySelector('h3')?.textContent || 'Event';
-			const marker = L.circleMarker([lat, lng], {
-				radius: 5,
-				color,
-				weight: 1,
-				fillColor: color,
-				fillOpacity: 0.9,
-			});
-			marker.bindTooltip(`${title} · ${score}`, { direction: 'top' });
-			marker.on('click', () => card.scrollIntoView({ behavior: 'smooth', block: 'center' }));
-			leafletLayer.addLayer(marker);
-		}
 	}
 
 	function getVisibleCards() {
@@ -711,6 +674,16 @@ function mapProjection(lat: number, lng: number) {
 			.join('');
 	}
 
+	function renderMap(visibleCards) {
+		const cardsForMap = visibleCards.length ? visibleCards : cards;
+		const visibleIds = new Set(cardsForMap.map((card) => card.dataset.id));
+		for (const marker of mapMarkers) {
+			const show = mapVisible && visibleIds.has(marker.dataset.id);
+			marker.classList.toggle('hidden', !show);
+			marker.setAttribute('aria-hidden', show ? 'false' : 'true');
+		}
+	}
+
 	function render() {
 		const { visible, state } = getVisibleCards();
 		for (const card of cards) card.classList.add('hidden');
@@ -721,7 +694,6 @@ function mapProjection(lat: number, lng: number) {
 
 		list.classList.toggle('is-compact', compactMode);
 		mapSection.classList.toggle('hidden', !mapVisible);
-		mapCanvas?.classList.toggle('hidden', !mapVisible);
 		controls.toggleMap.textContent = mapVisible ? 'Hide map' : 'Show map';
 		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
 		controls.minScoreLabel.textContent = String(state.min);
@@ -730,7 +702,6 @@ function mapProjection(lat: number, lng: number) {
 		count.textContent = `${visible.length} of ${cards.length} items shown · ${pinned.size} pinned`;
 		renderFilterChips(state);
 		renderMap(visible);
-		ensureLeafletMap().then(() => renderMap(visible));
 		renderPinned();
 
 		const query = toQuery(state);
@@ -941,56 +912,48 @@ function mapProjection(lat: number, lng: number) {
 		position: relative;
 		height: 360px;
 		border: 1px solid rgba(30, 41, 59, 0.95);
-		background:
-			radial-gradient(circle at 22% 45%, rgba(0, 166, 166, 0.13), transparent 30%),
-			radial-gradient(circle at 73% 27%, rgba(212, 165, 116, 0.14), transparent 28%),
-			repeating-linear-gradient(0deg, rgba(100, 116, 139, 0.11), rgba(100, 116, 139, 0.11) 1px, transparent 1px, transparent 28px),
-			repeating-linear-gradient(90deg, rgba(100, 116, 139, 0.11), rgba(100, 116, 139, 0.11) 1px, transparent 1px, transparent 28px),
-			rgba(2, 6, 23, 0.85);
+		background: rgba(2, 6, 23, 0.9);
 		overflow: hidden;
 	}
-	.radar-map-canvas {
-		position: absolute;
-		inset: 0;
-		z-index: 1;
+	.radar-map-svg {
+		width: 100%;
+		height: 100%;
+		display: block;
 	}
-	.radar-has-live-map .radar-map-canvas {
-		opacity: 0.82;
+	.radar-map-grid line {
+		stroke: rgba(100, 116, 139, 0.16);
+		stroke-width: 1;
 	}
-	.radar-map::before {
-		content: 'North America + Europe theater view';
-		position: absolute;
-		right: 0.75rem;
-		top: 0.55rem;
-		font-size: 0.67rem;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: rgba(148, 163, 184, 0.85);
-		z-index: 5;
-		pointer-events: none;
+	.radar-map-land path {
+		fill: rgba(30, 41, 59, 0.72);
+		stroke: rgba(148, 163, 184, 0.22);
+		stroke-width: 2;
 	}
-	.radar-marker {
-		position: absolute;
-		z-index: 3;
-		width: 12px;
-		height: 12px;
-		transform: translate(-50%, -50%);
-		border: 1px solid rgba(2, 6, 23, 0.95);
-		border-radius: 999px;
+	.radar-map-marker {
 		cursor: pointer;
-		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.85);
 	}
-	.radar-marker-high {
-		background: rgba(212, 165, 116, 1);
+	.radar-map-marker .radar-map-marker-halo {
+		fill: rgba(2, 6, 23, 0.55);
+		stroke: rgba(2, 6, 23, 0.8);
+		stroke-width: 1;
 	}
-	.radar-marker-mid {
-		background: rgba(0, 196, 196, 0.97);
+	.radar-map-marker .radar-map-marker-core {
+		stroke: rgba(2, 6, 23, 0.95);
+		stroke-width: 1.5;
 	}
-	.radar-marker-low {
-		background: rgba(148, 163, 184, 0.95);
+	.radar-map-marker-high .radar-map-marker-core {
+		fill: rgba(212, 165, 116, 1);
 	}
-	.radar-marker:hover {
-		transform: translate(-50%, -50%) scale(1.15);
+	.radar-map-marker-mid .radar-map-marker-core {
+		fill: rgba(0, 196, 196, 0.97);
+	}
+	.radar-map-marker-low .radar-map-marker-core {
+		fill: rgba(148, 163, 184, 0.95);
+	}
+	.radar-map-marker:hover .radar-map-marker-core,
+	.radar-map-marker:focus .radar-map-marker-core {
+		transform: scale(1.2);
+		transform-origin: center;
 	}
 
 	.radar-card {
