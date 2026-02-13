@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import re
+import html
 from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
@@ -99,6 +100,19 @@ def parse_dates(text: str):
     if re.search(r'every\s+week|every\s+\d+\s+weeks', t, re.I):
         return None, None
 
+    # ISO date or range
+    iso = re.search(r'(20\d{2}-\d{2}-\d{2})(?:\s+to\s+(20\d{2}-\d{2}-\d{2}))?', t)
+    if iso:
+        return iso.group(1), iso.group(2)
+
+    # Month day-day, year (e.g., February 18-19, 2026)
+    md = re.search(r'([A-Za-z]+)\s+(\d{1,2})-(\d{1,2}),\s*(20\d{2})', t)
+    if md:
+        mm = MONTHS.get(md.group(1).lower())
+        if mm:
+            d1, d2, y = int(md.group(2)), int(md.group(3)), int(md.group(4))
+            return f'{y:04d}-{mm:02d}-{d1:02d}', f'{y:04d}-{mm:02d}-{d2:02d}'
+
     s, e = parse_mmddyyyy_range(t)
     if s:
         return s, e
@@ -119,6 +133,27 @@ def city_state_from_text(text: str) -> str:
     m = re.search(r'([A-Za-z][A-Za-z .\'-]+,\s*[A-Z]{2})', t)
     if m:
         return m.group(1).strip()
+
+    # full-state fallback (e.g., "Arlington, Virginia")
+    state_map = {
+        'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR', 'california': 'CA',
+        'colorado': 'CO', 'connecticut': 'CT', 'delaware': 'DE', 'florida': 'FL', 'georgia': 'GA',
+        'hawaii': 'HI', 'idaho': 'ID', 'illinois': 'IL', 'indiana': 'IN', 'iowa': 'IA', 'kansas': 'KS',
+        'kentucky': 'KY', 'louisiana': 'LA', 'maine': 'ME', 'maryland': 'MD', 'massachusetts': 'MA',
+        'michigan': 'MI', 'minnesota': 'MN', 'mississippi': 'MS', 'missouri': 'MO', 'montana': 'MT',
+        'nebraska': 'NE', 'nevada': 'NV', 'new hampshire': 'NH', 'new jersey': 'NJ', 'new mexico': 'NM',
+        'new york': 'NY', 'north carolina': 'NC', 'north dakota': 'ND', 'ohio': 'OH', 'oklahoma': 'OK',
+        'oregon': 'OR', 'pennsylvania': 'PA', 'rhode island': 'RI', 'south carolina': 'SC', 'south dakota': 'SD',
+        'tennessee': 'TN', 'texas': 'TX', 'utah': 'UT', 'vermont': 'VT', 'virginia': 'VA', 'washington': 'WA',
+        'west virginia': 'WV', 'wisconsin': 'WI', 'wyoming': 'WY',
+    }
+    m2 = re.search(r'([A-Za-z][A-Za-z .\'-]+),\s*([A-Za-z ]+)', t)
+    if m2:
+        city = m2.group(1).strip()
+        st_name = m2.group(2).strip().lower()
+        if st_name in state_map:
+            return f"{city}, {state_map[st_name]}"
+
     if 'washington dc' in t.lower() or 'washington, dc' in t.lower():
         return 'Washington, DC'
     if 'national harbor' in t.lower():
@@ -172,6 +207,13 @@ def resolve_location(loc_text: str, locations: dict):
             if k.startswith(f'{city}, {st}'):
                 return {'city': city, 'state': st, 'country': 'USA', 'lat': float(v.get('lat', 39.5)), 'lng': float(v.get('lng', -98.35))}
         return {'city': city, 'state': st, 'country': 'USA', 'lat': 39.5, 'lng': -98.35}
+
+    # non-US city/country fallback
+    m3 = re.match(r'([A-Za-z .\'-]+),\s*([A-Za-z .\'-]+)$', key)
+    if m3:
+        city, country = m3.group(1).strip(), m3.group(2).strip()
+        if country.lower() not in {'usa', 'united states', 'us'}:
+            return {'city': city, 'state': None, 'country': country, 'lat': 39.5, 'lng': -98.35}
 
     return {'city': key, 'state': None, 'country': 'USA', 'lat': 39.5, 'lng': -98.35}
 
@@ -389,6 +431,139 @@ def scrape_same() -> list[RawEvent]:
     return out
 
 
+def scrape_asd_events() -> list[RawEvent]:
+    url = 'https://www.asdevents.com/defense-security'
+    soup = get(url)
+    out = []
+    for block in soup.select('div.overview-event'):
+        a = block.select_one('a[href*="event.asp?id="]')
+        if not a:
+            continue
+        title_el = block.select_one('span.item-title')
+        title = ' '.join((title_el.get_text(' ', strip=True).split())) if title_el else ' '.join(a.get_text(' ', strip=True).split())
+        if not title:
+            continue
+        t_low = title.lower()
+        if any(k in t_low for k in ['boot camp', 'seminar', 'export compliance']):
+            continue
+        if not any(k in t_low for k in ['conference', 'summit', 'symposium', 'expo', 'forum', 'industry', 'technology', 'fires']):
+            continue
+
+        other_el = block.select_one('span.item-other')
+        other = ' '.join(other_el.get_text(' ', strip=True).split()) if other_el else ''
+        # e.g., February 18-19, 2026 - Huntsville, AL, United States
+        date_text = ''
+        m = re.search(r'([A-Za-z]+\s+\d{1,2}(?:-\d{1,2})?,\s*20\d{2})', other)
+        if m:
+            date_text = m.group(1)
+        loc = ''
+        lm = re.search(r'-\s*([^\-]+)$', other)
+        if lm:
+            loc = lm.group(1).replace('United States', '').strip().strip(',')
+        loc = city_state_from_text(loc or other) or loc or 'Virtual'
+
+        out.append(RawEvent('ASD Events', url, title, source_url_for_event(url, a.get('href', '')), date_text, loc, 'Joint', 'Conference'))
+    return out
+
+
+def scrape_military_expos() -> list[RawEvent]:
+    url = 'https://www.militaryexpos.com/'
+    r = requests.get(url, timeout=30, headers=HEADERS)
+    r.raise_for_status()
+    text = r.text
+
+    m = re.search(r"data-events='(\[.*?\])'\s+data-events-image", text, re.S)
+    if not m:
+        return []
+
+    payload = json.loads(html.unescape(m.group(1)))
+    out = []
+    for ev in payload:
+        title = ' '.join(str(ev.get('title', '')).split())
+        if not title:
+            continue
+        start = str(ev.get('date_start') or '')
+        if not start.startswith('2026') and not start.startswith('2027'):
+            continue
+
+        t_low = title.lower()
+        if not any(k in t_low for k in ['expo', 'conference', 'summit', 'symposium', 'forum', 'industry day', 'tech']):
+            continue
+
+        loc = ' '.join(str(ev.get('location') or '').split())
+        if not loc:
+            st = ''
+            countries = (ev.get('locations') or {}).get('countries') or {}
+            states = (ev.get('locations') or {}).get('states') or {}
+            if states:
+                st = list(states.values())[0]
+            country = list(countries.values())[0] if countries else ''
+            loc = ', '.join([x for x in [st, country] if x]) or 'Virtual'
+
+        categories = ev.get('categories') or {}
+        cat_text = ' '.join(str(v) for v in categories.values())
+        branch = 'Joint'
+        if 'air force' in t_low:
+            branch = 'Air Force / Space Force'
+        elif 'army' in t_low:
+            branch = 'Army'
+        elif 'navy' in t_low:
+            branch = 'Navy'
+
+        end = str(ev.get('date_end') or '')
+        date_text = start if not end or end == start else f'{start} to {end}'
+        event_url = str(ev.get('registration_url') or url)
+        out.append(RawEvent('Military Expos', url, title, event_url, date_text, loc, branch, 'Conference', notes=cat_text[:240]))
+    return out
+
+
+def scrape_potomac_events() -> list[RawEvent]:
+    url = 'https://www.potomacofficersclub.com/govcon-events/'
+    soup = get(url)
+    out = []
+    for card in soup.select('div[data-start]'):
+        h2 = card.find('h2')
+        if not h2:
+            continue
+        title = ' '.join(h2.get_text(' ', strip=True).split())
+        if not title:
+            continue
+
+        t_low = title.lower()
+        if not any(k in t_low for k in ['defense', 'army', 'navy', 'air', 'space', 'cyber', 'intel', 'govcon', 'homeland']):
+            continue
+
+        start = (card.get('data-start') or '').strip()
+        if start and start != 'TBD' and not (start.startswith('2026') or start.startswith('2027')):
+            continue
+
+        date_text = start if start and start != 'TBD' else ''
+        text = ' '.join(card.get_text(' ', strip=True).split())
+        lm = re.search(r'Location:\s*([^W]+?)\s+When:', text)
+        loc_raw = lm.group(1).strip() if lm else ''
+        if not loc_raw:
+            if 'reston' in text.lower():
+                loc_raw = 'Reston, VA'
+            elif 'mclean' in text.lower():
+                loc_raw = 'McLean, VA'
+            else:
+                loc_raw = 'Virtual'
+        loc = city_state_from_text(loc_raw) or loc_raw
+
+        a = card.find('a', href=True)
+        event_url = source_url_for_event(url, a['href']) if a else url
+        branch = 'Joint'
+        if 'army' in t_low:
+            branch = 'Army'
+        elif 'navy' in t_low:
+            branch = 'Navy'
+        elif 'air and space' in t_low or 'space' in t_low:
+            branch = 'Air Force / Space Force'
+
+        out.append(RawEvent('Potomac Officers Club', url, title, event_url, date_text, loc, branch, 'Summit'))
+    return out
+
+
 def to_ts(obj, depth=0):
     pad = '\t' * depth
     if obj is None:
@@ -495,6 +670,9 @@ def main():
     raw.extend(scrape_navy_league())
     raw.extend(scrape_cto())
     raw.extend(scrape_same())
+    raw.extend(scrape_asd_events())
+    raw.extend(scrape_military_expos())
+    raw.extend(scrape_potomac_events())
 
     # dedupe by source+title and build
     seen = set()
@@ -541,7 +719,7 @@ def main():
     for ev in built:
         lines.append(f"- {ev['title']} | {ev['status']} | {ev['startDate'] or 'TBD'}{(' to ' + ev['endDate']) if ev['endDate'] else ''} | {ev['location']['city']}{(', ' + ev['location']['state']) if ev['location'].get('state') else ''}")
     lines.append('')
-    lines.append('Sources: AUSA, AFCEA, AFA, Navy League, CTO Innovation, SAME')
+    lines.append('Sources: AUSA, AFCEA, AFA, Navy League, CTO Innovation, SAME, ASD Events, Military Expos, Potomac Officers Club')
     OUT_MD.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
     print(json.dumps({'raw': len(raw), 'imported': len(built), 'json': str(OUT_JSON), 'md': str(OUT_MD)}, indent=2))
