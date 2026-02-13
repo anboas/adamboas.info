@@ -81,8 +81,8 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 
 	<section class="mt-6 grid gap-6 xl:grid-cols-[340px,1fr]">
 		<aside class="space-y-6">
-			<section class="card p-5">
-				<h2 class="section-title">Filter + rank</h2>
+			<details id="radar-filter-panel" class="card p-5" open>
+				<summary class="radar-summary radar-summary-primary">Filters + ranking</summary>
 				<div class="mt-4 space-y-4 text-sm">
 					<label class="block">
 						<span class="mb-1 block text-slate-300">Search</span>
@@ -148,7 +148,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 						<button id="radar-reset" class="radar-btn" type="button">Reset</button>
 					</div>
 				</div>
-			</section>
+			</details>
 
 			<details class="card p-5">
 				<summary class="radar-summary">Scoring key (collapsed by default)</summary>
@@ -222,7 +222,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			</details>
 		</aside>
 
-		<div class="space-y-6">
+		<div class="radar-main-col">
 			<section class="card p-4 radar-toolbar">
 				<div class="flex flex-wrap items-center justify-between gap-3">
 					<div class="space-y-2">
@@ -245,7 +245,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 				<div id="radar-map" class="radar-map" aria-label="Radar map"></div>
 			</section>
 
-			<section class="card p-5">
+			<section id="radar-list-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Opportunities</h2>
 					<button id="radar-brief" class="radar-btn" type="button">Build brief draft</button>
@@ -417,6 +417,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	const empty = document.getElementById('radar-empty');
 	const map = document.getElementById('radar-map');
 	const mapSection = document.getElementById('radar-map-section');
+	const filterPanel = document.getElementById('radar-filter-panel');
 	const filterChips = document.getElementById('radar-filter-chips');
 	const briefOutput = document.getElementById('radar-brief-output');
 	const pinnedPanel = document.getElementById('radar-pinned');
@@ -429,6 +430,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	let compactMode = false;
 	let mapVisible = true;
 	let pinned = loadPins();
+
+	if (window.matchMedia('(max-width: 767px)').matches && filterPanel) {
+		filterPanel.open = false;
+	}
 
 	function parseDate(value) {
 		if (!value) return null;
@@ -972,6 +977,20 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		white-space: pre-wrap;
 	}
 
+	.radar-main-col {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.radar-summary-primary {
+		font-size: 0.9rem;
+		letter-spacing: 0.09em;
+	}
+	#radar-filter-panel[open] > .radar-summary-primary {
+		margin-bottom: 0.7rem;
+	}
+
 	.radar-toolbar {
 		position: sticky;
 		top: 0.6rem;
@@ -1072,6 +1091,50 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	@media (max-width: 1279px) {
 		.radar-toolbar {
 			position: static;
+		}
+	}
+
+	@media (max-width: 767px) {
+		#radar-list-section {
+			order: 1;
+		}
+		#radar-map-section {
+			order: 2;
+		}
+		.radar-map {
+			height: 240px;
+		}
+		.radar-map::before {
+			content: 'theater view';
+		}
+		.radar-stat strong {
+			font-size: 1.12rem;
+		}
+		.radar-input,
+		.radar-btn,
+		.radar-pin-btn {
+			min-height: 38px;
+		}
+		.radar-btn-tight {
+			font-size: 0.7rem;
+			padding: 0.34rem 0.5rem;
+		}
+		.radar-filter-chips {
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			padding-bottom: 0.15rem;
+		}
+		.radar-chip {
+			white-space: nowrap;
+		}
+		.radar-details summary,
+		.radar-summary {
+			min-height: 34px;
+			display: flex;
+			align-items: center;
+		}
+		.radar-card {
+			padding: 0.86rem;
 		}
 	}
 </style>
