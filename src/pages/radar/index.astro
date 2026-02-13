@@ -136,6 +136,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 							</select>
 							<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
 							<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified sources only</span></label>
+							<label class="radar-check sm:col-span-2"><input id="radar-show-past" type="checkbox" /><span>Show past events</span></label>
 							<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
 								<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
 								<button class="radar-btn" type="button" data-preset="high-confidence">Preset: verified sources</button>
@@ -319,6 +320,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		sort: document.getElementById('radar-sort'),
 		upcomingOnly: document.getElementById('radar-upcoming-only'),
 		verifiedOnly: document.getElementById('radar-verified-only'),
+		showPast: document.getElementById('radar-show-past'),
 		toggleMap: document.getElementById('radar-toggle-map'),
 		toggleCompact: document.getElementById('radar-toggle-compact'),
 		clearPins: document.getElementById('radar-clear-pins'),
@@ -619,6 +621,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			sort: controls.sort.value,
 			upcoming: controls.upcomingOnly.checked,
 			verified: controls.verifiedOnly.checked,
+			showPast: controls.showPast.checked,
 		};
 	}
 
@@ -630,6 +633,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		controls.sort.value = state.sort || 'soonest';
 		controls.upcomingOnly.checked = Boolean(state.upcoming);
 		controls.verifiedOnly.checked = Boolean(state.verified);
+		controls.showPast.checked = Boolean(state.showPast);
 	}
 
 	function toQuery(state) {
@@ -641,6 +645,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		if (state.sort && state.sort !== 'soonest') params.set('sort', state.sort);
 		if (state.upcoming) params.set('upcoming', '1');
 		if (state.verified) params.set('verified', '1');
+		if (state.showPast) params.set('past', '1');
 		return params.toString();
 	}
 
@@ -654,6 +659,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			sort: params.get('sort') || 'soonest',
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
+			showPast: params.get('past') === '1',
 		});
 	}
 
@@ -673,6 +679,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			if (state.branch && card.dataset.branch !== state.branch) return false;
 			if (state.type && card.dataset.type !== state.type) return false;
 			if (state.status && card.dataset.status !== state.status) return false;
+			if (!state.showPast && card.dataset.status === 'Past' && state.status !== 'Past') return false;
 			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
 			if (state.verified && card.dataset.confidence !== 'high') return false;
 			if (!q) return true;
@@ -701,6 +708,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		if (state.status) chips.push(`Status: ${state.status}`);
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('Verified only');
+		if (state.showPast) chips.push('Including past');
 		if (!chips.length) chips.push('No active filters');
 		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
 	}
@@ -843,11 +851,11 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 
 	function applyPreset(name) {
 		if (name === 'near-term') {
-			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'soonest', upcoming: true, verified: false });
+			applyState({ q: '', branch: '', type: '', status: 'Upcoming', sort: 'soonest', upcoming: true, verified: false, showPast: false });
 		} else if (name === 'high-confidence') {
-			applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: true });
+			applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: true, showPast: false });
 		} else if (name === 'needs-dates') {
-			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'soonest', upcoming: false, verified: false });
+			applyState({ q: '', branch: '', type: '', status: 'Needs Date', sort: 'soonest', upcoming: false, verified: false, showPast: false });
 		}
 		render();
 	}
@@ -861,12 +869,12 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	}
 
 	[controls.q, controls.branch, controls.type, controls.status, controls.sort].forEach((node) => node.addEventListener('input', render));
-	[controls.upcomingOnly, controls.verifiedOnly].forEach((node) => node.addEventListener('change', render));
+	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast].forEach((node) => node.addEventListener('change', render));
 	controls.save.addEventListener('click', saveView);
 	controls.load.addEventListener('click', loadView);
 	controls.share.addEventListener('click', copyShare);
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false });
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false });
 		render();
 	});
 	controls.compare.addEventListener('click', copyCompareBrief);
