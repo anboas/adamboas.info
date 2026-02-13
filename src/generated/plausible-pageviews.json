@@ -1,9 +1,36 @@
 {
   "meta": {
-    "generatedAt": "2026-02-13T21:52:19.227Z",
-    "siteId": "anboas.github.io/adamboas.info",
+    "generatedAt": "2026-02-13T22:53:14.922Z",
+    "siteId": "adamboas.com",
     "dateRange": "30d",
-    "note": "api error 500"
+    "note": "ok (21 paths)",
+    "triedSiteIds": [
+      "anboas.github.io/adamboas.info",
+      "www.adamboas.com",
+      "adamboas.com"
+    ]
   },
-  "pageviewsByPath": {}
+  "pageviewsByPath": {
+    "/": 42,
+    "/radar": 39,
+    "/writing": 36,
+    "/adamboas.info/writing/acp-ra": 36,
+    "/adamboas.info/writing": 27,
+    "/writing/acp-ra": 14,
+    "/writing/2026-02-12-stand-up-dad-joint-control-plane-authority": 14,
+    "/adamboas.info": 9,
+    "/experience": 9,
+    "/adamboas.info/writing/2026-02-09-agent-tool-security-research": 9,
+    "/adamboas.info/writing/agentic-force-creation": 9,
+    "/education": 5,
+    "/adamboas.info/writing/code-as-policy": 3,
+    "/writing/agentic-force-creation": 3,
+    "/writing/2026-02-09-agent-tool-security-research": 2,
+    "/does-not-exist": 1,
+    "/adamboas.info/papers": 1,
+    "/writing/code-as-policy": 1,
+    "/papers/from-pdfs-to-pull-requests.pdf": 1,
+    "/adamboas.info/education": 1,
+    "/\\nhttps://github.com/anboas/adamboas.info/actions/runs/21974305369": 1
+  }
 }
