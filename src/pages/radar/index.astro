@@ -63,14 +63,47 @@ function scoreTone(score: number) {
 const MAP_W = 1000;
 const MAP_H = 540;
 
+const usFocusEvents = events.filter((e) => e.location.lng <= -60 && e.location.lng >= -130 && e.location.lat >= 22 && e.location.lat <= 52);
+const US_MIN_LNG = Math.min(...usFocusEvents.map((e) => e.location.lng)) - 4;
+const US_MAX_LNG = Math.max(...usFocusEvents.map((e) => e.location.lng)) + 4;
+const US_MIN_LAT = Math.min(...usFocusEvents.map((e) => e.location.lat)) - 2;
+const US_MAX_LAT = Math.max(...usFocusEvents.map((e) => e.location.lat)) + 2;
+
+function clamp(n: number, min: number, max: number) {
+	return Math.min(max, Math.max(min, n));
+}
+
 function mapProjection(lat: number, lng: number) {
-	const minLng = -130;
-	const maxLng = 20;
-	const minLat = 22;
-	const maxLat = 56;
-	const x = ((lng - minLng) / (maxLng - minLng)) * MAP_W;
-	const y = ((maxLat - lat) / (maxLat - minLat)) * MAP_H;
-	return { x: Math.min(MAP_W - 14, Math.max(14, x)), y: Math.min(MAP_H - 14, Math.max(14, y)) };
+	const inUsTheater = lng <= -60 && lng >= -130 && lat >= 20 && lat <= 55;
+	if (!inUsTheater) {
+		const y = ((US_MAX_LAT - clamp(lat, US_MIN_LAT, US_MAX_LAT)) / (US_MAX_LAT - US_MIN_LAT)) * MAP_H;
+		return { x: MAP_W - 18, y: clamp(y, 14, MAP_H - 14), outside: true };
+	}
+
+	const x = ((lng - US_MIN_LNG) / (US_MAX_LNG - US_MIN_LNG)) * MAP_W;
+	const y = ((US_MAX_LAT - lat) / (US_MAX_LAT - US_MIN_LAT)) * MAP_H;
+	return { x: clamp(x, 14, MAP_W - 14), y: clamp(y, 14, MAP_H - 14), outside: false };
+}
+
+const mapPoints = events.map((event) => mapProjection(event.location.lat, event.location.lng));
+const placedPoints: Array<{ x: number; y: number }> = [];
+for (const point of mapPoints) {
+	let x = point.x;
+	let y = point.y;
+	let step = 0;
+	while (
+		placedPoints.some((p) => Math.hypot(p.x - x, p.y - y) < 18) &&
+		step < 24
+	) {
+		const angle = (step * 137.5 * Math.PI) / 180;
+		const radius = 6 + Math.floor(step / 4) * 5;
+		x = clamp(point.x + Math.cos(angle) * radius, 14, MAP_W - 14);
+		y = clamp(point.y + Math.sin(angle) * radius, 14, MAP_H - 14);
+		step += 1;
+	}
+	point.x = x;
+	point.y = y;
+	placedPoints.push({ x, y });
 }
 ---
 
@@ -259,34 +292,32 @@ function mapProjection(lat: number, lng: number) {
 			<section id="radar-map-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
 					<h2 class="section-title">Map view</h2>
-					<p class="text-xs text-slate-500">Click a marker to jump to card</p>
+					<p class="text-xs text-slate-500">Click a marker to jump to card · right rail = outside US theater</p>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
-					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} preserveAspectRatio="none" role="img" aria-label="North America and Europe theater map">
+					<svg class="radar-map-svg" viewBox={`0 0 ${MAP_W} ${MAP_H}`} preserveAspectRatio="none" role="img" aria-label="US-focused theater map with out-of-theater marker rail">
 						<rect x="0" y="0" width={MAP_W} height={MAP_H} fill="rgb(2,6,23)"></rect>
 						<g class="radar-map-land">
-							<path d="M70 110 L120 85 L210 88 L250 128 L285 170 L276 218 L240 252 L194 260 L160 286 L112 292 L74 270 L52 226 L50 176 Z"></path>
-							<path d="M314 235 L360 218 L386 234 L382 270 L340 286 L308 266 Z"></path>
-							<path d="M620 144 L660 130 L708 138 L760 156 L772 188 L736 206 L690 204 L648 188 Z"></path>
-							<path d="M688 214 L726 220 L748 250 L734 282 L708 292 L680 270 L672 238 Z"></path>
+							<path d="M82 222 L128 176 L196 148 L288 132 L380 142 L458 160 L540 156 L626 170 L712 196 L784 214 L848 236 L902 266 L924 302 L912 334 L874 352 L814 366 L740 370 L664 382 L588 386 L518 374 L438 366 L360 360 L286 346 L220 326 L158 296 L112 266 L90 242 Z"></path>
+							<path d="M132 118 L178 102 L236 108 L256 136 L228 158 L176 154 L138 138 Z"></path>
+							<rect x="956" y="36" width="26" height="468" rx="3" class="radar-map-outside-rail"></rect>
 						</g>
-						
 						<g class="radar-map-points">
-							{events.map((event) => {
-								const p = mapProjection(event.location.lat, event.location.lng);
+							{events.map((event, idx) => {
+								const p = mapPoints[idx];
 								const tone = scoreTone(event.score.total);
 								return (
 									<g
-										class={`radar-map-marker radar-map-marker-${tone}`}
+										class={`radar-map-marker radar-map-marker-${tone} ${p.outside ? 'radar-map-marker-outside' : ''}`}
 										data-map-marker
 										data-id={event.id}
 										data-title={event.title}
 										tabindex="0"
 										role="button"
-										aria-label={`${event.title}, score ${event.score.total}`}
+										aria-label={`${event.title}, score ${event.score.total}${p.outside ? ', outside US theater' : ''}`}
 										transform={`translate(${p.x}, ${p.y})`}
 									>
-										<title>{event.title} · Score {event.score.total}</title>
+										<title>{event.title} · Score {event.score.total}{p.outside ? ' · Outside US theater' : ''}</title>
 										<circle class="radar-map-marker-halo" cx="0" cy="0" r="11"></circle>
 										<circle class="radar-map-marker-core" cx="0" cy="0" r="6"></circle>
 									</g>
@@ -919,6 +950,11 @@ function mapProjection(lat: number, lng: number) {
 		stroke: rgba(148, 163, 184, 0.22);
 		stroke-width: 2;
 	}
+	.radar-map-outside-rail {
+		fill: rgba(30, 41, 59, 0.35);
+		stroke: rgba(148, 163, 184, 0.26);
+		stroke-width: 1;
+	}
 	.radar-map-marker {
 		cursor: pointer;
 	}
@@ -939,6 +975,10 @@ function mapProjection(lat: number, lng: number) {
 	}
 	.radar-map-marker-low .radar-map-marker-core {
 		fill: rgba(148, 163, 184, 0.95);
+	}
+	.radar-map-marker-outside .radar-map-marker-halo {
+		stroke: rgba(212, 165, 116, 0.65);
+		stroke-dasharray: 2 2;
 	}
 	.radar-map-marker:hover .radar-map-marker-core,
 	.radar-map-marker:focus .radar-map-marker-core {
