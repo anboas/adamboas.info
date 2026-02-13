@@ -145,16 +145,16 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		<div class="radar-main-col">
 			<section id="radar-map-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
-					<h2 class="section-title">Map view</h2>
-					<p id="radar-map-sub" class="text-xs text-slate-500">Clustered map · click marker for details · Ctrl/Cmd+scroll to zoom</p>
-				</div>
-				<div class="radar-map-tools">
-					<button id="radar-map-fit" class="radar-btn radar-btn-tight" type="button">Fit results</button>
-					<button id="radar-map-reset" class="radar-btn radar-btn-tight" type="button">Reset US</button>
+					<h2 class="section-title">Map View</h2>
+					<div class="radar-map-tools">
+						<button id="radar-map-fit" class="radar-btn radar-btn-tight" type="button">Fit Results</button>
+						<button id="radar-map-reset" class="radar-btn radar-btn-tight" type="button">Reset</button>
+					</div>
 				</div>
 				<div id="radar-map" class="radar-map" aria-label="Radar map">
 					<div id="radar-leaflet-map" class="radar-leaflet-map"></div>
 				</div>
+				<p id="radar-map-sub" class="radar-map-sub">Mapped events · clusters enabled · Ctrl/Cmd+scroll to zoom</p>
 			</section>
 
 			<section id="radar-list-section" class="card p-5">
@@ -891,7 +891,13 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	.radar-map-tools {
 		display: flex;
 		gap: 0.45rem;
-		margin-bottom: 0.6rem;
+		justify-content: flex-end;
+	}
+	.radar-map-sub {
+		margin-top: 0.55rem;
+		font-size: 0.72rem;
+		color: rgba(148, 163, 184, 0.95);
+		text-align: right;
 	}
 	.radar-leaflet-map {
 		height: 100%;
