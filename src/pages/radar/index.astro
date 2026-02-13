@@ -1027,8 +1027,33 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		border: 1px solid rgba(71, 85, 105, 0.95);
 		color: rgba(226, 232, 240, 0.96);
 	}
-	:global(.radar-map .leaflet-popup-content) { margin: 0.55rem 0.62rem; }
+	:global(.radar-map .leaflet-popup-content-wrapper) {
+		padding-right: 0.35rem;
+		border-radius: 8px;
+	}
+	:global(.radar-map .leaflet-popup-close-button) {
+		top: 0.28rem !important;
+		right: 0.34rem !important;
+		width: 1rem !important;
+		height: 1rem !important;
+		padding: 0 !important;
+		line-height: 0.95rem !important;
+		font-size: 0.95rem !important;
+		font-weight: 600 !important;
+		color: rgba(148, 163, 184, 0.95) !important;
+		background: rgba(2, 6, 23, 0.9) !important;
+		border: 1px solid rgba(71, 85, 105, 0.75) !important;
+		border-radius: 999px !important;
+		text-align: center;
+		text-decoration: none !important;
+	}
+	:global(.radar-map .leaflet-popup-close-button:hover) {
+		color: rgba(248, 250, 252, 0.98) !important;
+		border-color: rgba(0, 196, 196, 0.55) !important;
+	}
+	:global(.radar-map .leaflet-popup-content) { margin: 0.62rem 0.74rem 0.66rem 0.62rem; }
 	:global(.radar-map-popup-title) {
+		padding-right: 1.15rem;
 		font-size: 0.82rem;
 		font-weight: 700;
 		line-height: 1.25;
