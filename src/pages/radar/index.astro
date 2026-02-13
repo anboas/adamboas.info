@@ -266,6 +266,7 @@ function mapProjection(lat: number, lng: number) {
 							<button
 								type="button"
 								class={`radar-marker radar-marker-${tone}`}
+								data-id={event.id}
 								style={`left:${p.x}%;top:${p.y}%`}
 								title={`${event.title} | Score ${event.score.total}`}
 								aria-label={`${event.title}, score ${event.score.total}`}
@@ -455,6 +456,7 @@ function mapProjection(lat: number, lng: number) {
 	const pinnedList = document.getElementById('radar-pinned-list');
 
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
+	const mapMarkers = Array.from(map.querySelectorAll('.radar-marker'));
 	const pinButtons = Array.from(document.querySelectorAll('[data-pin-btn]'));
 	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
 
@@ -495,6 +497,13 @@ function mapProjection(lat: number, lng: number) {
 	for (const card of cards) {
 		const score = Number(card.dataset.score || '0');
 		card.classList.add(`radar-tone-${scoreTone(score)}`);
+	}
+
+	for (const marker of mapMarkers) {
+		marker.addEventListener('click', () => {
+			const card = cards.find((c) => c.dataset.id === marker.dataset.id);
+			if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		});
 	}
 
 	function stateFromUI() {
@@ -553,38 +562,12 @@ function mapProjection(lat: number, lng: number) {
 		});
 	}
 
-	function mapProjection(lat, lng) {
-		const minLng = -130;
-		const maxLng = 20;
-		const minLat = 22;
-		const maxLat = 56;
-		const x = ((lng - minLng) / (maxLng - minLng)) * 100;
-		const y = ((maxLat - lat) / (maxLat - minLat)) * 100;
-		return { x: Math.min(98, Math.max(2, x)), y: Math.min(95, Math.max(5, y)) };
-	}
-
 	function renderMap(visibleCards) {
-		if (!mapVisible) {
-			map.innerHTML = '';
-			return;
-		}
-		map.innerHTML = '';
-		for (const card of visibleCards) {
-			const lat = Number(card.dataset.lat);
-			const lng = Number(card.dataset.lng);
-			if (Number.isNaN(lat) || Number.isNaN(lng)) continue;
-			const score = Number(card.dataset.score || '0');
-			const p = mapProjection(lat, lng);
-			const marker = document.createElement('button');
-			marker.type = 'button';
-			marker.className = `radar-marker radar-marker-${scoreTone(score)}`;
-			marker.style.left = `${p.x}%`;
-			marker.style.top = `${p.y}%`;
-			const heading = card.querySelector('h3')?.textContent || 'Event';
-			marker.title = `${heading} | Score ${score}`;
-			marker.setAttribute('aria-label', `${heading}, score ${score}`);
-			marker.addEventListener('click', () => card.scrollIntoView({ behavior: 'smooth', block: 'center' }));
-			map.appendChild(marker);
+		const visibleIds = new Set(visibleCards.map((card) => card.dataset.id));
+		for (const marker of mapMarkers) {
+			const id = marker.dataset.id;
+			const show = mapVisible && (visibleCards.length === 0 || visibleIds.has(id));
+			marker.classList.toggle('hidden', !show);
 		}
 	}
 
