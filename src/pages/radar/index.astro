@@ -80,72 +80,54 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 
 	<section class="mt-6 grid gap-6 xl:grid-cols-[300px,1fr]">
 		<aside class="space-y-6">
-			<details id="radar-filter-panel" class="card p-5">
-				<summary class="radar-summary radar-summary-primary">Filters + ranking</summary>
-				<div class="mt-4 grid gap-3 text-sm sm:grid-cols-2">
+			<details id="radar-filter-panel" class="card p-4">
+				<summary class="radar-summary radar-summary-primary">Filters</summary>
+				<div class="mt-3 grid gap-2 text-sm sm:grid-cols-2">
 					<label class="block sm:col-span-2">
-						<span class="mb-1 block text-slate-300">Search</span>
-						<input id="radar-q" class="radar-input" type="search" placeholder="theme, stakeholder, city..." />
+						<input id="radar-q" class="radar-input" type="search" placeholder="Search theme, stakeholder, city..." />
 					</label>
-					<label class="block">
-						<span class="mb-1 block text-slate-300">Branch</span>
-						<select id="radar-branch" class="radar-input">
-							<option value="">All branches</option>
-							{branches.map((branch) => <option value={branch}>{branch}</option>)}
-						</select>
-					</label>
-					<label class="block">
-						<span class="mb-1 block text-slate-300">Type</span>
-						<select id="radar-type" class="radar-input">
-							<option value="">All types</option>
-							{types.map((type) => <option value={type}>{type}</option>)}
-						</select>
-					</label>
-					<label class="block">
-						<span class="mb-1 block text-slate-300">Status</span>
-						<select id="radar-status" class="radar-input">
-							<option value="">All statuses</option>
-							{statuses.map((status) => <option value={status}>{status}</option>)}
-						</select>
-					</label>
-					<label class="block">
-						<span class="mb-1 block text-slate-300">Sort</span>
-						<select id="radar-sort" class="radar-input">
-							<option value="score">Highest score</option>
-							<option value="date">Soonest date</option>
-							<option value="signal">Signal first</option>
-							<option value="meta">Metadata completeness</option>
-						</select>
-					</label>
-					<label class="block sm:col-span-2">
-						<span class="mb-1 block text-slate-300">Minimum score: <strong id="radar-min-score-label">0</strong></span>
-						<input id="radar-min-score" class="w-full accent-cyan-500" type="range" min="0" max="100" step="1" value="0" />
-					</label>
-					<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
-						<label class="radar-check">
-							<input id="radar-high-only" type="checkbox" />
-							<span>High signal only</span>
-						</label>
-						<label class="radar-check">
-							<input id="radar-upcoming-only" type="checkbox" />
-							<span>Upcoming only</span>
-						</label>
-						<label class="radar-check sm:col-span-2">
-							<input id="radar-verified-only" type="checkbox" />
-							<span>Verified sources only (high confidence)</span>
-						</label>
-					</div>
-					<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
-						<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
-						<button class="radar-btn" type="button" data-preset="high-confidence">Preset: high confidence</button>
-						<button class="radar-btn" type="button" data-preset="needs-dates">Preset: needs dates</button>
-					</div>
-					<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
-						<button id="radar-save" class="radar-btn" type="button">Save view</button>
-						<button id="radar-load" class="radar-btn" type="button">Load saved view</button>
-						<button id="radar-share" class="radar-btn" type="button">Copy share link</button>
-						<button id="radar-reset" class="radar-btn" type="button">Reset</button>
-					</div>
+					<select id="radar-branch" class="radar-input">
+						<option value="">All branches</option>
+						{branches.map((branch) => <option value={branch}>{branch}</option>)}
+					</select>
+					<select id="radar-type" class="radar-input">
+						<option value="">All types</option>
+						{types.map((type) => <option value={type}>{type}</option>)}
+					</select>
+					<select id="radar-status" class="radar-input sm:col-span-2">
+						<option value="">All statuses</option>
+						{statuses.map((status) => <option value={status}>{status}</option>)}
+					</select>
+
+					<details id="radar-filter-advanced" class="sm:col-span-2">
+						<summary class="radar-summary">Advanced filters + actions</summary>
+						<div class="mt-3 grid gap-2 sm:grid-cols-2">
+							<select id="radar-sort" class="radar-input sm:col-span-2">
+								<option value="score">Highest score</option>
+								<option value="date">Soonest date</option>
+								<option value="signal">Signal first</option>
+								<option value="meta">Metadata completeness</option>
+							</select>
+							<label class="block sm:col-span-2">
+								<span class="mb-1 block text-slate-300">Minimum score: <strong id="radar-min-score-label">0</strong></span>
+								<input id="radar-min-score" class="w-full accent-cyan-500" type="range" min="0" max="100" step="1" value="0" />
+							</label>
+							<label class="radar-check"><input id="radar-high-only" type="checkbox" /><span>High signal only</span></label>
+							<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
+							<label class="radar-check sm:col-span-2"><input id="radar-verified-only" type="checkbox" /><span>Verified sources only</span></label>
+							<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
+								<button class="radar-btn" type="button" data-preset="near-term">Preset: near-term</button>
+								<button class="radar-btn" type="button" data-preset="high-confidence">Preset: high confidence</button>
+								<button class="radar-btn" type="button" data-preset="needs-dates">Preset: needs dates</button>
+							</div>
+							<div class="grid gap-2 sm:grid-cols-2 sm:col-span-2">
+								<button id="radar-save" class="radar-btn" type="button">Save view</button>
+								<button id="radar-load" class="radar-btn" type="button">Load saved view</button>
+								<button id="radar-share" class="radar-btn" type="button">Copy share link</button>
+								<button id="radar-reset" class="radar-btn" type="button">Reset</button>
+							</div>
+						</div>
+					</details>
 				</div>
 			</details>
 
@@ -217,6 +199,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 								<div class="flex items-center gap-2">
 									<div class="radar-score-chip">Score {event.score.total}</div>
 									<button class="radar-pin-btn" type="button" data-pin-btn data-id={event.id}>Pin</button>
+									<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 								</div>
 							</div>
 
@@ -360,6 +343,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const pinButtons = Array.from(document.querySelectorAll('[data-pin-btn]'));
+	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
 	const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
 
 	let compactMode = true;
@@ -438,6 +422,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	let leafletReady = false;
 	let leafletFailed = false;
 	let mapRenderedOnce = false;
+	let markerIndex = new Map();
 
 	function loadScript(src) {
 		return new Promise((resolve, reject) => {
@@ -518,14 +503,15 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		const type = card.dataset.type || 'Unknown';
 		const meta = card.querySelector('.radar-meta')?.textContent || '';
 		const score = card.dataset.score || '0';
+		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
-				<div class="radar-map-popup-meta">${escapeHtml(branch)} · ${escapeHtml(type)} · ${escapeHtml(status)}</div>
+				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> ${escapeHtml(branch)} · ${escapeHtml(type)}</div>
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
 					<span class="radar-map-popup-score">Score ${escapeHtml(score)}</span>
-					<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Highlight event</button>
+					<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button>
 				</div>
 			</div>
 		`;
@@ -562,7 +548,7 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 			if (sourceIcon) sourceIcon.classList.add('is-active');
 			const el = e.popup?.getElement();
 			const btn = el?.querySelector?.('.radar-map-jump');
-			if (btn) btn.addEventListener('click', () => focusCard(btn.dataset.eventId));
+			if (btn) btn.addEventListener('click', () => focusMapEvent(btn.dataset.eventId, { openPopup: false }));
 		});
 		mapLib.on('popupclose', () => {
 			document.querySelectorAll('.radar-leaflet-pin.is-active').forEach((n) => n.classList.remove('is-active'));
@@ -576,6 +562,27 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		const bounds = clusterLayer.getBounds();
 		if (bounds && bounds.isValid()) mapLib.fitBounds(bounds.pad(0.2));
 		else mapLib.fitBounds(US_BOUNDS);
+	}
+
+	function focusMapEvent(id, options = { openPopup: true }) {
+		if (!id) return;
+		const card = cards.find((c) => c.dataset.id === id);
+		if (!card) return;
+		focusCard(id);
+		if (!mapVisible) {
+			mapVisible = true;
+			render();
+		}
+		if (!mapLib || !clusterLayer) {
+			initLeafletMap().then(() => focusMapEvent(id, options));
+			return;
+		}
+		const marker = markerIndex.get(id);
+		if (!marker) return;
+		clusterLayer.zoomToShowLayer(marker, () => {
+			if (options.openPopup) marker.openPopup();
+			mapLib.panTo(marker.getLatLng(), { animate: true, duration: 0.4 });
+		});
 	}
 
 	function stateFromUI() {
@@ -727,15 +734,18 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		if (!clusterLayer) return;
 
 		clusterLayer.clearLayers();
+		markerIndex = new Map();
 		let mapped = 0;
 		for (const card of cardsForMap) {
 			const lat = Number(card.dataset.lat || '');
 			const lng = Number(card.dataset.lng || '');
 			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
 			const tone = scoreTone(Number(card.dataset.score || 0));
-			const marker = window.L.marker([lat, lng], { icon: pinIcon(card.dataset.score || '0', tone, card.dataset.id || '') });
+			const eventId = card.dataset.id || '';
+			const marker = window.L.marker([lat, lng], { icon: pinIcon(card.dataset.score || '0', tone, eventId) });
 			marker.bindPopup(markerPopup(card), { maxWidth: 360 });
 			clusterLayer.addLayer(marker);
+			markerIndex.set(eventId, marker);
 			mapped += 1;
 		}
 
@@ -868,6 +878,10 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		btn.addEventListener('click', () => togglePin(btn.dataset.id));
 	}
 
+	for (const btn of mapFocusButtons) {
+		btn.addEventListener('click', () => focusMapEvent(btn.dataset.id, { openPopup: true }));
+	}
+
 	document.addEventListener('keydown', (event) => {
 		if (event.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
 		if (event.key === '/') {
@@ -948,6 +962,15 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		letter-spacing: 0.08em;
 		color: rgba(226, 232, 240, 0.95);
 	}
+	#radar-filter-advanced > summary {
+		margin-top: 0.1rem;
+		padding: 0.25rem 0;
+		font-size: 0.72rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(148, 163, 184, 0.95);
+		cursor: pointer;
+	}
 
 	.radar-key-block {
 		border: 1px solid rgba(51, 65, 85, 0.9);
@@ -1017,6 +1040,20 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 		line-height: 1.3;
 		color: rgba(148, 163, 184, 0.95);
 	}
+	.radar-map-popup-badge {
+		display: inline-block;
+		margin-right: 0.35rem;
+		padding: 0.06rem 0.32rem;
+		font-size: 0.62rem;
+		font-weight: 700;
+		border: 1px solid rgba(71, 85, 105, 0.9);
+		color: rgba(241, 245, 249, 0.95);
+		background: rgba(2, 6, 23, 0.88);
+	}
+	.radar-status-upcoming { border-color: rgba(34, 197, 94, 0.65); }
+	.radar-status-projected { border-color: rgba(59, 130, 246, 0.65); }
+	.radar-status-needs-date { border-color: rgba(245, 158, 11, 0.65); }
+	.radar-status-past { border-color: rgba(239, 68, 68, 0.55); }
 	.radar-map-popup-actions {
 		margin-top: 0.45rem;
 		display: flex;
