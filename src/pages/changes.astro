@@ -21,12 +21,42 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.1',
+		date: '2026-02-17',
+		title: 'Bulk NDIA 2026 calendar ingest from live browser session',
+		summary: 'Pulled the full currently listed NDIA/NTSA 2026 calendar set from a live browser-visible NDIA events page and added missing records with official event URLs.',
+		impact: 'Coverage expanded immediately with broad NDIA/NTSA 2026 event visibility despite direct-fetch anti-bot blocking on NDIA endpoints.',
+		current: true,
+		tags: ['events', 'ingest', 'ndia', 'ntsa', 'browser-relay'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added 27 missing NDIA/NTSA 2026 events from the live NDIA events calendar into `src/data/radar/events.ts`.',
+					'Attached official event links for each newly ingested calendar record (event-page canonical URLs).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Normalized new records to Radar schema with consistent provenance notes indicating browser-relay ingest path.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Expanded near-term conference pipeline coverage while NDIA anti-bot protection continues to block direct crawler fetches.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.0',
 		date: '2026-02-17',
 		title: 'Public feed registry + daily crawl automation',
 		summary: 'Added a public source registry and one-off URL list for PR-based contributions, plus a scheduled GitHub Action that crawls feed health daily and opens report PRs.',
 		impact: 'Contributors now have a clear PR target for event sources, and feed reliability monitoring is automated with a daily crawl report.',
-		current: true,
 		tags: ['events', 'sources', 'automation', 'github-actions'],
 		groups: [
 			{

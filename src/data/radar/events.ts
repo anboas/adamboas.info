@@ -9240,4 +9240,2091 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Direct NDIA fetch is bot-protected; date/location inferred from indexed NDIA event snippets and should be rechecked at registration open.'
 		}
 	},
+	{
+		id: 'radar-40th-annual-national-logistics-forum',
+		title: '40th Annual National Logistics Forum',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-02-17',
+		endDate: '2026-02-19',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Tampa',
+			state: 'FL',
+			country: 'USA',
+			lat: 27.950575,
+			lng: -82.457178,
+			venue: 'Hilton Tampa Downtown'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'40th',
+				'annual',
+				'national',
+				'logistics',
+				'forum'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/2/17/6370-log-forum'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-ai-enabled-market-intelligence-for-acquisition-success-transforming-ho',
+		title: 'AI-Enabled Market Intelligence for Acquisition Success: Transforming How the Pentagon Conducts Market Research in partnership with MITRE',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-02-18',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: {
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'ai',
+				'enabled',
+				'market',
+				'intelligence',
+				'for',
+				'acquisition',
+				'success',
+				'transforming'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/2/18/ai-for-market-research-webinar'
+			},
+			logistics: {
+				format: 'Virtual',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-tactical-wheeled-vehicles-conference',
+		title: '2026 Tactical Wheeled Vehicles Conference',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-02-23',
+		endDate: '2026-02-25',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: {
+			city: 'Pittsburgh',
+			state: 'PA',
+			country: 'USA',
+			lat: 40.440624,
+			lng: -79.995888,
+			venue: 'Wyndham Grand Pittsburgh Downtown'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'tactical',
+				'wheeled',
+				'vehicles',
+				'conference'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/2/23/twv-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-digital-transformation-for-acquisition-dxa-the-art-of-the-possible-par',
+		title: 'Digital Transformation for Acquisition (DxA) - The Art of the Possible Part three of the Digital Transformation for Acquisition (DxA) Series',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-02-25',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: {
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'digital',
+				'transformation',
+				'for',
+				'acquisition',
+				'dxa',
+				'the',
+				'art',
+				'of'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/2/25/digital-transformation-for-acquisition-the-art-of-the-possible'
+			},
+			logistics: {
+				format: 'Virtual',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-robotics-division-meeting',
+		title: 'Robotics Division Meeting',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-05',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.881621,
+			lng: -77.09098,
+			venue: 'NDIA Headquarters'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'robotics',
+				'division',
+				'meeting'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/5/robotics-division-meeting'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-pacific-operational-science-technology-post-conference',
+		title: '2026 Pacific Operational Science & Technology (POST) Conference',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-09',
+		endDate: '2026-03-12',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'High',
+		location: {
+			city: 'Honolulu',
+			state: 'HI',
+			country: 'USA',
+			lat: 21.306944,
+			lng: -157.858333,
+			venue: 'Hilton Hawaiian Village Waikiki Beach Resort'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'pacific',
+				'operational',
+				'science',
+				'technology',
+				'post',
+				'conference'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/9/post-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-human-systems-conference',
+		title: '2026 Human Systems Conference',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-17',
+		endDate: '2026-03-18',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: {
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.881621,
+			lng: -77.09098,
+			venue: 'George Mason University, Arlington Campus'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'human',
+				'systems',
+				'conference'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/17/human-systems-conference'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-munitions-executive-summit',
+		title: '2026 Munitions Executive Summit',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-17',
+		endDate: '2026-03-18',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: {
+			city: 'Parsippany',
+			state: 'NJ',
+			country: 'USA',
+			lat: 40.857875,
+			lng: -74.425986,
+			venue: 'Hilton Parsippany'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'munitions',
+				'executive',
+				'summit'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/17/munitions-executive-summit'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-digital-transformation-for-acquisition-dxa-moving-faster-than-bullet-t',
+		title: 'Digital Transformation for Acquisition (DxA) – Moving Faster than Bullet Time Part four of the Digital Transformation for Acquisition (DxA) Series',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-18',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: {
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'digital',
+				'transformation',
+				'for',
+				'acquisition',
+				'dxa',
+				'moving',
+				'faster',
+				'than'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/18/digital-transformation-for-acquisition-moving-faster-than-bullet-time'
+			},
+			logistics: {
+				format: 'Virtual',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-tech-101-defense-radar-a-monthly-eti-tech-webinar-series',
+		title: 'Tech 101: Defense Radar A Monthly ETI Tech Webinar Series',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-19',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: {
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'tech',
+				'101',
+				'defense',
+				'radar',
+				'a',
+				'monthly',
+				'eti',
+				'tech'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/19/tech-101-defense-radar'
+			},
+			logistics: {
+				format: 'Virtual',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-undersea-warfare-spring-conference',
+		title: '2026 Undersea Warfare Spring Conference',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-23',
+		endDate: '2026-03-25',
+		branch: 'Navy',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'High',
+		location: {
+			city: 'San Diego',
+			state: 'CA',
+			country: 'USA',
+			lat: 32.715736,
+			lng: -117.161087,
+			venue: 'Admiral Kidd Conference Center | Naval Base Point Loma'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Navy stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'undersea',
+				'warfare',
+				'spring',
+				'conference'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/23/6260-usw-spring'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-spring-2026-integrated-program-management-forum',
+		title: 'Spring 2026 Integrated Program Management Forum',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-24',
+		endDate: '2026-03-26',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Herndon',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.969555,
+			lng: -77.386098,
+			venue: 'Hyatt Regency Dulles'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'spring',
+				'2026',
+				'integrated',
+				'program',
+				'management',
+				'forum'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/24/spring-2026-ipmd-forum'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-mobilizing-capital-for-defense-tactics-and-recommendations-an-eti-rese',
+		title: 'Mobilizing Capital for Defense: Tactics and Recommendations An ETI Research Rollout Event',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-03-26',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: {
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'mobilizing',
+				'capital',
+				'for',
+				'defense',
+				'tactics',
+				'and',
+				'recommendations',
+				'an'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/3/26/mobilizing-capital-for-defense'
+			},
+			logistics: {
+				format: 'Virtual',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-itec-2026',
+		title: 'ITEC 2026',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-04-14',
+		endDate: '2026-04-16',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'London',
+			country: 'United Kingdom',
+			lat: 51.507351,
+			lng: -0.127758,
+			venue: 'ExCeL London'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'itec',
+				'2026'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ntsa.org/events/2026/4/14/itec-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-space-breakfast',
+		title: 'Space Breakfast',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-04-14',
+		branch: 'Air Force / Space Force',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: {
+			city: 'Colorado Springs',
+			state: 'CO',
+			country: 'USA',
+			lat: 38.833881,
+			lng: -104.821365,
+			venue: 'DoubleTree by Hilton'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Air Force / Space Force stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'space',
+				'breakfast'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/4/14/space-breakfast'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-april-2026-procurement-division-meeting',
+		title: 'April 2026 Procurement Division Meeting',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-04-14',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.881621,
+			lng: -77.09098,
+			venue: 'UVA Darden Sands Family Grounds'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'april',
+				'2026',
+				'procurement',
+				'division',
+				'meeting'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/4/14/april-2026-procurement-divison-meeting'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-mastering-the-art-of-business-development-workshop',
+		title: 'Mastering the Art of Business Development® Workshop',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-04-15',
+		endDate: '2026-04-16',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.881621,
+			lng: -77.09098,
+			venue: 'NDIA Headquarters'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'mastering',
+				'the',
+				'art',
+				'of',
+				'business',
+				'development',
+				'workshop'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/4/15/mbdi-april'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-missile-defense-conference-and-ronald-reagan-missile-defense-awar',
+		title: '2026 Missile Defense Conference and Ronald Reagan Missile Defense Award Ceremony',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-04-21',
+		endDate: '2026-04-22',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: {
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427,
+			venue: 'Ronald Reagan Building and International Trade Center'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'missile',
+				'defense',
+				'conference',
+				'and',
+				'ronald',
+				'reagan',
+				'missile'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/4/21/6md3-missile-defense-conference'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-simulation-training-community-forum-2026',
+		title: 'Simulation & Training Community Forum 2026',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-04-22',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Dayton',
+			state: 'OH',
+			country: 'USA',
+			lat: 39.758948,
+			lng: -84.191607,
+			venue: 'Dayton Convention Center'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'simulation',
+				'training',
+				'community',
+				'forum',
+				'2026'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ntsa.org/events/2026/4/22/stcf-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-9th-annual-ndia-new-england-cyber-event',
+		title: '9th Annual NDIA New England Cyber Event',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-04-29',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Foxborough',
+			state: 'MA',
+			country: 'USA',
+			lat: 42.065376,
+			lng: -71.24783,
+			venue: 'Gillette Stadium'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'9th',
+				'annual',
+				'ndia',
+				'new',
+				'england',
+				'cyber',
+				'event'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/4/29/ndia-new-england-chapter-cyber-event'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-department-of-the-air-force-modeling-simulation-analytics-summit-',
+		title: '2026 Department of the Air Force Modeling, Simulation & Analytics Summit Converging Horizons',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-05-05',
+		endDate: '2026-05-08',
+		branch: 'Air Force / Space Force',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'High',
+		location: {
+			city: 'Colorado Springs',
+			state: 'CO',
+			country: 'USA',
+			lat: 38.833881,
+			lng: -104.821365,
+			venue: 'Hotel Polaris'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Air Force / Space Force stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'department',
+				'of',
+				'the',
+				'air',
+				'force',
+				'modeling',
+				'simulation'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ntsa.org/events/2026/5/5/dafmsas-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-michigan-defense-expo-advanced-planning-briefing-for-industry',
+		title: 'Michigan Defense Expo & Advanced Planning Briefing for Industry',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-05-12',
+		endDate: '2026-05-14',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Detroit',
+			state: 'MI',
+			country: 'USA',
+			lat: 42.33155,
+			lng: -83.04664,
+			venue: 'Huntington Palace'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'michigan',
+				'defense',
+				'expo',
+				'advanced',
+				'planning',
+				'briefing',
+				'for',
+				'industry'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/5/12/ndia-michigan-mdex'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-2026-joint-ndia-aia-spring-industrial-security-conference',
+		title: '2026 Joint NDIA/AIA Spring Industrial Security Conference',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-05-18',
+		endDate: '2026-05-20',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Orlando',
+			state: 'FL',
+			country: 'USA',
+			lat: 28.538336,
+			lng: -81.379234,
+			venue: 'Rosen Centre Orlando'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'2026',
+				'joint',
+				'ndia',
+				'aia',
+				'spring',
+				'industrial',
+				'security',
+				'conference'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/5/18/isc-spring-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-dla-supply-chain-alliance-symposium-exhibition',
+		title: 'DLA Supply Chain Alliance Symposium & Exhibition',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-06-02',
+		endDate: '2026-06-03',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Columbus',
+			state: 'OH',
+			country: 'USA',
+			lat: 39.961176,
+			lng: -82.998794,
+			venue: 'Greater Columbus Convention Center'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'dla',
+				'supply',
+				'chain',
+				'alliance',
+				'symposium',
+				'exhibition'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ndia.org/events/2026/6/2/6780-dla'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-training-simulation-industry-symposium-tsis-2026',
+		title: 'Training & Simulation Industry Symposium (TSIS) 2026',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-06-17',
+		endDate: '2026-06-18',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Orlando',
+			state: 'FL',
+			country: 'USA',
+			lat: 28.538336,
+			lng: -81.379234,
+			venue: 'Rosen Centre Hotel'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'training',
+				'simulation',
+				'industry',
+				'symposium',
+				'tsis',
+				'2026'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ntsa.org/events/2026/6/17/tsis-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-capitol-hill-modeling-simulation-expo-2026',
+		title: 'Capitol Hill Modeling & Simulation Expo 2026',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-07-09',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427,
+			venue: 'Rayburn House Office Building – Foyer'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'capitol',
+				'hill',
+				'modeling',
+				'simulation',
+				'expo',
+				'2026'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ntsa.org/events/2026/7/9/capitol-hill-expo-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
+	{
+		id: 'radar-i-itsec-2026-beyond-the-battlefield-training-readiness-and-lethality-f',
+		title: 'I/ITSEC 2026 Beyond the Battlefield: Training Readiness and Lethality for All-Domain Dominance!',
+		description: 'NDIA/NTSA calendar event surfaced from live NDIA events feed.',
+		startDate: '2026-11-30',
+		endDate: '2026-12-03',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: {
+			city: 'Orlando',
+			state: 'FL',
+			country: 'USA',
+			lat: 28.538336,
+			lng: -81.379234,
+			venue: 'Orange County Convention Center – South Concourse'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Opportunity timing',
+				'Ecosystem engagement'
+			],
+			capabilityAreas: [
+				'Acquisition',
+				'Mission systems',
+				'Digital modernization'
+			],
+			missionThreads: [
+				'Partnership development',
+				'Program sensing'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'i',
+				'itsec',
+				'2026',
+				'beyond',
+				'the',
+				'battlefield',
+				'training',
+				'readiness'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'NDIA Events (live browser)',
+					url: 'https://www.ndia.org/events',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://www.ntsa.org/events/2026/11/30/iitsec-2026'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Ingested from live NDIA events calendar via browser relay due anti-bot blocks in direct fetch.'
+		}
+	},
 ];
