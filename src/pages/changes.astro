@@ -21,12 +21,31 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.0.3',
+		date: '2026-02-17',
+		title: 'Events OG card subtitle fit tuned for more visible text',
+		summary: 'Adjusted OG text layout so the Events page subtitle can occupy more space before truncation.',
+		impact: 'Shared `/events/` links now show a fuller subtitle instead of clipping early with ellipsis.',
+		current: true,
+		tags: ['events', 'seo', 'social', 'ux'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Updated Events OG card subtitle rendering to use a slightly smaller subtitle font and up to two lines.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.2',
 		date: '2026-02-17',
 		title: 'Events page OG image generated and wired',
 		summary: 'Added a dedicated social preview image for the Events tracker and connected page metadata to use it.',
 		impact: 'Sharing `/events/` now renders a page-specific OG card instead of the global default image.',
-		current: true,
 		tags: ['events', 'seo', 'social'],
 		groups: [
 			{
