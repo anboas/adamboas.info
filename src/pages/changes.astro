@@ -21,12 +21,46 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v1.5.4',
+		date: '2026-02-17',
+		title: 'Events industry-intelligence lens + acquisition signal pipeline',
+		summary: 'Added engagement-signal filtering (industry day, pre-solicitation, sources sought, vendor outreach, special notice) and introduced a SAM.gov opportunities importer baseline.',
+		impact: 'You can now isolate actionable procurement engagement signals faster and prepare a cleaner ingestion path for deadline-aware tracking.',
+		current: true,
+		tags: ['events', 'filters', 'acquisition', 'data'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Preset event views for all events, government opportunity signals, and key engagement kinds.',
+					'New engagement filter with URL-persisted state and filter-chip visibility.',
+					'Acquisition-signal metadata block in event details (notice type, agency, solicitation number, response/registration dates when present).',
+					'New SAM opportunities importer script (`events:sam-import`) for p/r/s notice ingestion candidates.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Events now infer engagement kinds from structured metadata plus deterministic title/description heuristics.',
+					'Map popups now surface opportunity badges when engagement signals are detected.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Priority-source notes now include SAM.gov API as a first-class source for acquisition notice coverage.',
+					'Importer pipeline hardening includes stronger duplicate prevention by canonical title-year keys and source precedence.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v1.5.3',
 		date: '2026-02-17',
 		title: 'Code block wrap control reliability fix',
 		summary: 'Fixed Wrap/Unwrap behavior for numbered code blocks on writing pages and improved visible state feedback.',
 		impact: 'Long code samples now reliably wrap on demand, especially on mobile and narrower windows.',
-		current: true,
 		tags: ['writing', 'ux', 'accessibility'],
 		groups: [
 			{
