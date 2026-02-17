@@ -21,12 +21,31 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.1.4',
+		date: '2026-02-17',
+		title: 'Events OG card expanded with full descriptive subtitle',
+		summary: 'Updated the /events social preview image copy to use the available space with fuller explanatory text.',
+		impact: 'Link previews now communicate page purpose more clearly before click-through.',
+		current: true,
+		tags: ['events', 'og-image', 'copy', 'social'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Expanded the Events OG subtitle to a fuller description and increased line capacity for clearer preview context.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.1.3',
 		date: '2026-02-17',
 		title: 'Events hero subtitle removed per directive',
 		summary: 'Removed the extra hero subtitle line from /events for cleaner launch framing.',
 		impact: 'The events page top section is now tighter and less verbose while preserving functionality.',
-		current: true,
 		tags: ['events', 'copy', 'launch-readiness'],
 		groups: [
 			{

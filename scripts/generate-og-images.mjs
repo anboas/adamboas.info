@@ -22,12 +22,12 @@ const cards = [
     file: 'events.png',
     accent: '#00a6a6',
     title: 'DoW Events + BD Intelligence',
-    subtitle: 'Conference-first event tracking with layered opportunity intelligence and public-sector context',
+    subtitle: 'Built to track upcoming DoW events with trusted links, source transparency, public government contacts, and practical acquisition context in one place.',
     kicker: 'adamboas.com',
-    subtitleSize: 28,
-    subtitleLineGap: 34,
-    subtitleMaxWidthPx: 1000,
-    subtitleMaxLines: 2,
+    subtitleSize: 24,
+    subtitleLineGap: 30,
+    subtitleMaxWidthPx: 1020,
+    subtitleMaxLines: 4,
   },
   { file: 'paper.png', accent: '#d4a574', title: 'Paper', subtitle: 'Long-form technical architecture and reference work', kicker: 'adamboas.com' },
   { file: 'note.png', accent: '#00a6a6', title: 'Note', subtitle: 'Short-form insights, experiments, and synthesis', kicker: 'adamboas.com' },
@@ -234,7 +234,7 @@ async function collectWritingCards() {
       maxTitleLines: 4,
       subtitleSize: 24,
       subtitleLineGap: 29,
-      subtitleMaxWidthPx: 1000,
+      subtitleMaxWidthPx: 1020,
       subtitleMaxLines: 3,
     });
   }
@@ -267,7 +267,7 @@ async function collectWritingCards() {
       maxTitleLines: 4,
       subtitleSize: 24,
       subtitleLineGap: 29,
-      subtitleMaxWidthPx: 1000,
+      subtitleMaxWidthPx: 1020,
       subtitleMaxLines: 3,
     });
   }
