@@ -6,6 +6,7 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 
 | Tier | Priority | Authority | Freshness | Source | URL | Status |
 |---|---:|---:|---:|---|---|---:|
+| P1-Primary | 4.70 | 5.0 | 4.2 | SAM.gov Get Opportunities Public API (ptype p/r/s) | https://open.gsa.gov/api/get-opportunities-public-api/ | 200 |
 | P1-Primary | 4.35 | 4.0 | 5.0 | AFCEA Events | https://www.afcea.org/events | 200 |
 | P1-Primary | 4.35 | 4.0 | 5.0 | AUSA Meetings & Events | https://www.ausa.org/meet | 200 |
 | P1-Primary | 4.35 | 4.0 | 5.0 | Navy League Meetings & Events | https://www.navyleague.org/meetings-and-events/ | 200 |
@@ -28,6 +29,7 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 
 ## Notes
 
+- **SAM.gov Get Opportunities Public API (ptype p/r/s)**: Structured federal notice feed for pre-solicitation, sources sought, and special notice types. Best API source for acquisition engagement signals (industry day/vendor outreach can be inferred from title/description).
 - **AFCEA Events**: Mentions 2026/2027 (20 hits). Strong event/calendar language. Contains multiple dated references.
 - **AUSA Meetings & Events**: Mentions 2026/2027 (16 hits). Strong event/calendar language. Contains multiple dated references.
 - **Navy League Meetings & Events**: Mentions 2026/2027 (4 hits). Strong event/calendar language. Contains multiple dated references.

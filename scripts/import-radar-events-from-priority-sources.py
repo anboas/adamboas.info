@@ -165,11 +165,62 @@ def city_state_from_text(text: str) -> str:
     return ''
 
 
+def canonical_title_key(title: str) -> str:
+    s = nrm(title)
+    s = re.sub(r'\b20\d{2}\b', ' ', s)
+    return re.sub(r'\s+', ' ', s).strip()
+
+
+def year_from_text(*parts: Optional[str]) -> Optional[str]:
+    blob = ' '.join(p for p in parts if p)
+    m = re.search(r'\b(20\d{2})\b', blob)
+    return m.group(1) if m else None
+
+
+def dedupe_key(title: str, start_date: Optional[str], date_text: str = '') -> tuple[str, str]:
+    year = start_date[:4] if start_date else year_from_text(date_text, title) or 'undated'
+    return canonical_title_key(title), year
+
+
+def extract_top_level_event_blocks(events_text: str) -> list[str]:
+    start = events_text.find('[')
+    end = events_text.rfind('];')
+    if start == -1 or end == -1 or end <= start:
+        return []
+
+    body = events_text[start + 1:end]
+    blocks = []
+    depth = 0
+    begin = None
+    for i, ch in enumerate(body):
+        if ch == '{':
+            if depth == 0:
+                begin = i
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0 and begin is not None:
+                blocks.append(body[begin:i + 1])
+                begin = None
+    return blocks
+
+
 def load_existing():
     text = EVENTS_TS.read_text(encoding='utf-8')
     titles = {nrm(m.group(1).replace("\\'", "'")) for m in re.finditer(r"title:\s*'((?:\\'|[^'])*)'", text)}
     ids = {m.group(1) for m in re.finditer(r"id:\s*'([^']+)'", text)}
-    return text, titles, ids
+
+    keys = set()
+    for block in extract_top_level_event_blocks(text):
+        tm = re.search(r"title:\s*'((?:\\'|[^'])*)'", block)
+        if not tm:
+            continue
+        title = tm.group(1).replace("\\'", "'")
+        sm = re.search(r"startDate:\s*'([^']+)'", block)
+        start = sm.group(1) if sm else None
+        keys.add(dedupe_key(title, start, title))
+
+    return text, titles, ids, keys
 
 
 def load_locations():
@@ -263,6 +314,23 @@ def infer_status(start_date: Optional[str]):
         return 'Past' if d < date.today() else 'Upcoming'
     except Exception:
         return 'Needs Date'
+
+
+SOURCE_PRIORITY = {
+    'AUSA': 100,
+    'AFCEA': 100,
+    'AFA': 100,
+    'Navy League': 100,
+    'CTO Innovation': 95,
+    'SAME': 95,
+    'Potomac Officers Club': 70,
+    'ASD Events': 60,
+    'Military Expos': 55,
+}
+
+
+def source_priority(source: str) -> int:
+    return SOURCE_PRIORITY.get(source, 50)
 
 
 def source_url_for_event(base: str, href: str):
@@ -660,43 +728,76 @@ def build_event(raw: RawEvent, locations: dict):
 
 
 def main():
-    existing_text, existing_titles, existing_ids = load_existing()
+    existing_text, existing_titles, existing_ids, existing_keys = load_existing()
     locations = load_locations()
 
-    raw = []
-    raw.extend(scrape_ausa())
-    raw.extend(scrape_afcea())
-    raw.extend(scrape_afa())
-    raw.extend(scrape_navy_league())
-    raw.extend(scrape_cto())
-    raw.extend(scrape_same())
-    raw.extend(scrape_asd_events())
-    raw.extend(scrape_military_expos())
-    raw.extend(scrape_potomac_events())
+    scrapers = [
+        ('AUSA', scrape_ausa),
+        ('AFCEA', scrape_afcea),
+        ('AFA', scrape_afa),
+        ('Navy League', scrape_navy_league),
+        ('CTO Innovation', scrape_cto),
+        ('SAME', scrape_same),
+        ('ASD Events', scrape_asd_events),
+        ('Military Expos', scrape_military_expos),
+        ('Potomac Officers Club', scrape_potomac_events),
+    ]
 
-    # dedupe by source+title and build
-    seen = set()
-    built = []
+    raw: list[RawEvent] = []
+    scrape_errors = []
+    for source_name, fn in scrapers:
+        try:
+            raw.extend(fn())
+        except Exception as e:
+            scrape_errors.append({'source': source_name, 'error': str(e)})
+
+    # remove exact source/title/date duplicates first
+    seen_source_title = set()
+    raw_unique = []
     for r in raw:
-        key = (r.source, nrm(r.title))
-        if key in seen:
+        key = (r.source, nrm(r.title), nrm(r.date_text))
+        if key in seen_source_title:
             continue
-        seen.add(key)
+        seen_source_title.add(key)
+        raw_unique.append(r)
+
+    # canonical same-title-year dedupe with source precedence
+    selected_by_key = {}
+    skipped_existing = 0
+    for r in raw_unique:
         ev = build_event(r, locations)
         if not ev:
             continue
-        if nrm(ev['title']) in existing_titles:
+
+        key = dedupe_key(ev['title'], ev.get('startDate'), r.date_text)
+        if nrm(ev['title']) in existing_titles or key in existing_keys:
+            skipped_existing += 1
             continue
+
+        rank = (
+            source_priority(r.source),
+            1 if ev.get('ontology', {}).get('provenance', [{}])[0].get('type') == 'official' else 0,
+            1 if ev.get('startDate') else 0,
+        )
+
+        prev = selected_by_key.get(key)
+        if prev and rank <= prev['rank']:
+            continue
+        selected_by_key[key] = {'event': ev, 'rank': rank}
+
+    built = [v['event'] for v in selected_by_key.values()]
+    built.sort(key=lambda e: (e['startDate'] is None, e['startDate'] or '9999-12-31', e['title']))
+
+    taken_ids = set(existing_ids)
+    for ev in built:
         base = f"radar-{slugify(ev['title'])}"
         cid = base
         i = 2
-        while cid in existing_ids or any(x['id'] == cid for x in built):
+        while cid in taken_ids:
             cid = f'{base}-{i}'
             i += 1
         ev['id'] = cid
-        built.append(ev)
-
-    built.sort(key=lambda e: (e['startDate'] is None, e['startDate'] or '9999-12-31', e['title']))
+        taken_ids.add(cid)
 
     tail = '\n];\n'
     if not existing_text.endswith(tail):
@@ -712,17 +813,33 @@ def main():
         '# Radar Candidates from New Priority Lists (2026-02-13)',
         '',
         f'Total imported candidates: {len(built)}',
+        f'Skipped existing (same title/year): {skipped_existing}',
+        f'Scraper errors tolerated: {len(scrape_errors)}',
         '',
         '## Added events',
         '',
     ]
     for ev in built:
         lines.append(f"- {ev['title']} | {ev['status']} | {ev['startDate'] or 'TBD'}{(' to ' + ev['endDate']) if ev['endDate'] else ''} | {ev['location']['city']}{(', ' + ev['location']['state']) if ev['location'].get('state') else ''}")
+
+    if scrape_errors:
+        lines.extend(['', '## Scraper errors', ''])
+        for err in scrape_errors:
+            lines.append(f"- {err['source']}: {err['error']}")
+
     lines.append('')
     lines.append('Sources: AUSA, AFCEA, AFA, Navy League, CTO Innovation, SAME, ASD Events, Military Expos, Potomac Officers Club')
     OUT_MD.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
-    print(json.dumps({'raw': len(raw), 'imported': len(built), 'json': str(OUT_JSON), 'md': str(OUT_MD)}, indent=2))
+    print(json.dumps({
+        'raw': len(raw),
+        'rawUnique': len(raw_unique),
+        'skippedExisting': skipped_existing,
+        'imported': len(built),
+        'scrapeErrors': scrape_errors,
+        'json': str(OUT_JSON),
+        'md': str(OUT_MD)
+    }, indent=2))
 
 
 if __name__ == '__main__':

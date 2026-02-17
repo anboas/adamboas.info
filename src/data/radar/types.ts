@@ -28,6 +28,8 @@ export interface RadarLocation {
 	venue?: string;
 }
 
+export type RadarEngagementKind = 'Industry Day' | 'Pre-solicitation' | 'Sources Sought' | 'Vendor Outreach' | 'Special Notice';
+
 export interface RadarOntology {
 	themes: string[];
 	capabilityAreas: string[];
@@ -46,6 +48,14 @@ export interface RadarOntology {
 		format: RadarFormat;
 		estimatedCostUsd?: { min: number; max: number };
 		travelBurdenFromDc: 'Low' | 'Medium' | 'High';
+	};
+	acquisition?: {
+		engagementKinds?: RadarEngagementKind[];
+		noticeType?: string;
+		agency?: string;
+		solicitationNumber?: string;
+		responseDueDate?: string;
+		registrationDeadline?: string;
 	};
 	notes?: string;
 }
