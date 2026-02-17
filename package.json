@@ -21,7 +21,8 @@
     "test": "playwright test",
     "test:overflow": "SITE_BASE=https://www.adamboas.com playwright test tests/overflow.spec.ts",
     "test:a11y": "SITE_BASE=http://localhost:4321 playwright test tests/a11y.spec.ts",
-    "lhci": "npm run build && lhci autorun"
+    "lhci": "npm run build && lhci autorun",
+    "events:feed-crawl": "python3 scripts/crawl-radar-feed-registry.py"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",

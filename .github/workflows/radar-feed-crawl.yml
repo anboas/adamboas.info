@@ -1,0 +1,54 @@
+name: radar-feed-crawl
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily at 09:20 ET / 14:20 UTC (adjusts with DST as UTC)
+    - cron: "20 14 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run feed registry crawl
+        run: python3 scripts/crawl-radar-feed-registry.py
+
+      - name: Upload crawl artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-feed-crawl-report
+          path: |
+            src/data/radar/feed-crawl-report-latest.json
+            src/data/radar/feed-crawl-report-latest.md
+
+      - name: Create/update pull request for crawl report
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/radar-feed-crawl-report
+          delete-branch: true
+          commit-message: "chore(events): refresh radar feed crawl report"
+          title: "chore(events): refresh radar feed crawl report"
+          body: |
+            Automated daily refresh of `feed-crawl-report-latest` from `feed-registry.json`.
+
+            - Regenerated crawl status JSON/Markdown
+            - Helps identify blocked/failed feeds and stale endpoints
+          labels: |
+            events
+            automation
+            data-quality
+          add-paths: |
+            src/data/radar/feed-crawl-report-latest.json
+            src/data/radar/feed-crawl-report-latest.md

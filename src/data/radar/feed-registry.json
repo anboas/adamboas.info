@@ -1,0 +1,163 @@
+{
+  "version": "2026-02-17",
+  "description": "Public feed registry for DoW Events ingestion. PRs welcome for new sources and one-off event URLs.",
+  "feeds": [
+    {
+      "id": "sam-opportunities-api",
+      "name": "SAM.gov Opportunities API",
+      "category": "official_api",
+      "url": "https://api.sam.gov/opportunities/v2/search",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-sam-opportunities.py",
+      "notes": "Primary structured feed for opportunities/notice signals."
+    },
+    {
+      "id": "navsea-warfare-centers",
+      "name": "NAVSEA / NSWC source set",
+      "category": "official_pages",
+      "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-navy-nswc-pages.py",
+      "notes": "High-value Navy source; often partially blocked in automation."
+    },
+    {
+      "id": "ausa-events",
+      "name": "AUSA Meetings & Events",
+      "category": "official_calendar",
+      "url": "https://www.ausa.org/meet",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "afcea-events",
+      "name": "AFCEA Events",
+      "category": "official_calendar",
+      "url": "https://www.afcea.org/events",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "afa-events",
+      "name": "AFA Events",
+      "category": "official_calendar",
+      "url": "https://www.afa.org/events/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "navy-league-events",
+      "name": "Navy League Meetings & Events",
+      "category": "official_calendar",
+      "url": "https://www.navyleague.org/meetings-and-events/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "cto-innovation-events",
+      "name": "CTO Innovation Industry Outreach Calendar",
+      "category": "official_calendar",
+      "url": "https://www.ctoinnovation.mil/events/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "same-events",
+      "name": "SAME Events",
+      "category": "official_calendar",
+      "url": "https://www.same.org/events/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "asd-events-defense",
+      "name": "ASD Events (Defense & Security)",
+      "category": "aggregator",
+      "url": "https://www.asdevents.com/defense-security",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "military-expos",
+      "name": "Military Expos",
+      "category": "aggregator",
+      "url": "https://www.militaryexpos.com/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "marine-military-expos",
+      "name": "Marine Military Expos",
+      "category": "aggregator",
+      "url": "https://marinemilitaryexpos.com/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "potomac-officers-club",
+      "name": "Potomac Officers Club GovCon Events",
+      "category": "aggregator",
+      "url": "https://www.potomacofficersclub.com/govcon-events/",
+      "crawlEnabled": true,
+      "ingester": "scripts/import-radar-events-from-priority-sources.py"
+    },
+    {
+      "id": "govcio-events",
+      "name": "GovCIO Events",
+      "category": "aggregator",
+      "url": "https://govciomedia.com/events/",
+      "crawlEnabled": true,
+      "ingester": "manual + targeted ingest",
+      "notes": "Good AI/agentic signal source with dedicated event pages."
+    },
+    {
+      "id": "ndia-events",
+      "name": "NDIA Events",
+      "category": "constrained_official",
+      "url": "https://www.ndia.org/events",
+      "crawlEnabled": true,
+      "ingester": "manual + targeted ingest",
+      "notes": "Incapsula/challenge protection in automation context."
+    },
+    {
+      "id": "ndia-specialops26",
+      "name": "NDIA SpecialOps26",
+      "category": "one_off_event",
+      "url": "https://www.ndia.org/SpecialOps26",
+      "crawlEnabled": true,
+      "ingester": "manual + targeted ingest"
+    },
+    {
+      "id": "ndia-special-ops-symposium-2026",
+      "name": "36th Annual NDIA Special Operations Symposium",
+      "category": "one_off_event",
+      "url": "https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium",
+      "crawlEnabled": true,
+      "ingester": "manual + targeted ingest"
+    },
+    {
+      "id": "govcio-federal-ai-forum-2026",
+      "name": "Federal AI Forum 2026",
+      "category": "one_off_event",
+      "url": "https://govciomedia.com/federal-ai-forum/",
+      "crawlEnabled": true,
+      "ingester": "manual + targeted ingest"
+    },
+    {
+      "id": "govcio-ai-summit-2026",
+      "name": "AI Summit 2026",
+      "category": "one_off_event",
+      "url": "https://govciomedia.com/ai-summit-2026/",
+      "crawlEnabled": true,
+      "ingester": "manual + targeted ingest"
+    },
+    {
+      "id": "govevents-calendar",
+      "name": "GovEvents Calendar",
+      "category": "aggregator_discovery",
+      "url": "https://www.govevents.com/calendar.php?s=1",
+      "crawlEnabled": true,
+      "ingester": "discovery only",
+      "notes": "Discovery source; verify against organizer before publish."
+    }
+  ]
+}

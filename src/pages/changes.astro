@@ -21,12 +21,39 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.0',
+		date: '2026-02-17',
+		title: 'Public feed registry + daily crawl automation',
+		summary: 'Added a public source registry and one-off URL list for PR-based contributions, plus a scheduled GitHub Action that crawls feed health daily and opens report PRs.',
+		impact: 'Contributors now have a clear PR target for event sources, and feed reliability monitoring is automated with a daily crawl report.',
+		current: true,
+		tags: ['events', 'sources', 'automation', 'github-actions'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added public registry file `src/data/radar/feed-registry.json` and public page `/events/sources/` for feed transparency + PR contribution.',
+					'Added crawler `scripts/crawl-radar-feed-registry.py` with outputs `feed-crawl-report-latest.json|md`.',
+					'Added scheduled workflow `.github/workflows/radar-feed-crawl.yml` to run daily and open/update a PR with crawl report changes.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Linked source-feeds and registry PR target directly from `/events/` header.',
+					'Added npm script `events:feed-crawl` for local/manual feed health runs.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.2.0',
 		date: '2026-02-17',
 		title: 'Marine Military Expos source integration + feed inventory',
 		summary: 'Integrated Marine Military Expos into priority-source ingestion and published a durable inventory of active event feeds and aggregator pull targets.',
 		impact: 'Event sourcing is now clearer and broader, with explicit feed operations guidance for ongoing monitoring and ingestion.',
-		current: true,
 		tags: ['events', 'sources', 'ingest', 'operations'],
 		groups: [
 			{
