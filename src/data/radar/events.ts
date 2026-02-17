@@ -281,7 +281,6 @@ export const radarEventsSeed: RadarEvent[] = [
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -397,8 +396,6 @@ export const radarEventsSeed: RadarEvent[] = [
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/events/',
-				agenda: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -682,7 +679,6 @@ export const radarEventsSeed: RadarEvent[] = [
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -739,8 +735,6 @@ export const radarEventsSeed: RadarEvent[] = [
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/events/',
-				registration: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -796,7 +790,6 @@ export const radarEventsSeed: RadarEvent[] = [
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{

@@ -77,11 +77,42 @@ function isSamOfficialNotice(event: (typeof events)[number]) {
 	});
 }
 
+function normalizedHttpUrl(url: string | null | undefined) {
+	if (!url) return null;
+	try {
+		const parsed = new URL(url.trim());
+		if (!['http:', 'https:'].includes(parsed.protocol)) return null;
+		return parsed;
+	} catch {
+		return null;
+	}
+}
+
+function isCircularEventsLink(url: string | null | undefined) {
+	const parsed = normalizedHttpUrl(url);
+	if (!parsed) return false;
+	const host = parsed.hostname.toLowerCase();
+	const path = parsed.pathname.replace(/\/+$/, '') || '/';
+	return ['adamboas.com', 'www.adamboas.com'].includes(host) && path === '/events';
+}
+
+function isUsableEventLink(url: string | null | undefined) {
+	const parsed = normalizedHttpUrl(url);
+	if (!parsed) return false;
+	if (isCircularEventsLink(parsed.toString())) return false;
+	return true;
+}
+
+function sanitizedLink(url: string | null | undefined) {
+	if (!isUsableEventLink(url)) return null;
+	return normalizedHttpUrl(url)!.toString();
+}
+
 function samOpportunityLink(event: (typeof events)[number]) {
-	const official = event.ontology.links.official;
+	const official = sanitizedLink(event.ontology.links.official);
 	if (official && /sam\.gov/i.test(official)) return official;
-	const fromProvenance = event.ontology.provenance.find((source) => /sam\.gov/i.test(source.url));
-	return fromProvenance?.url ?? null;
+	const fromProvenance = event.ontology.provenance.map((source) => sanitizedLink(source.url)).find((url) => url && /sam\.gov/i.test(url));
+	return fromProvenance ?? null;
 }
 
 function samOpportunityLinks(event: (typeof events)[number]) {
@@ -90,8 +121,8 @@ function samOpportunityLinks(event: (typeof events)[number]) {
 		event.ontology.links.registration,
 		...event.ontology.provenance.map((source) => source.url),
 	]
-		.filter((url): url is string => Boolean(url && /sam\.gov/i.test(url)))
-		.map((url) => url.trim());
+		.map((url) => sanitizedLink(url))
+		.filter((url): url is string => Boolean(url && /sam\.gov/i.test(url)));
 	return [...new Set(links)];
 }
 
@@ -213,7 +244,21 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 }
 
 function eventPrimaryLink(event: (typeof events)[number]) {
-	return event.ontology.links.official ?? null;
+	return sanitizedLink(event.ontology.links.official);
+}
+
+function eventAuxiliaryLinks(event: (typeof events)[number]) {
+	const primary = eventPrimaryLink(event);
+	const registration = sanitizedLink(event.ontology.links.registration);
+	const callForPapers = sanitizedLink(event.ontology.links.callForPapers);
+	const agenda = sanitizedLink(event.ontology.links.agenda);
+	const hotelBlock = sanitizedLink(event.ontology.links.hotelBlock);
+	return {
+		registration: registration && registration !== primary ? registration : null,
+		callForPapers: callForPapers && callForPapers !== primary ? callForPapers : null,
+		agenda: agenda && agenda !== primary ? agenda : null,
+		hotelBlock: hotelBlock && hotelBlock !== primary ? hotelBlock : null,
+	};
 }
 
 ---
@@ -378,11 +423,12 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 									<div>
 										<p class="radar-section-label">Links</p>
 										<ul class="radar-listing">
-											{event.ontology.links.official ? <li><a href={event.ontology.links.official} target="_blank" rel="noreferrer">Official page</a></li> : null}
-											{(samOpportunityLink(event) && samOpportunityLink(event) !== event.ontology.links.official) ? <li><a href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM opportunity</a></li> : null}
-											{event.ontology.links.registration ? <li><a href={event.ontology.links.registration} target="_blank" rel="noreferrer">Registration</a></li> : null}
-											{event.ontology.links.callForPapers ? <li><a href={event.ontology.links.callForPapers} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
-											{event.ontology.links.agenda ? <li><a href={event.ontology.links.agenda} target="_blank" rel="noreferrer">Agenda</a></li> : null}
+											{eventPrimaryLink(event) ? <li><a href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Official page</a></li> : null}
+											{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <li><a href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM opportunity</a></li> : null}
+											{eventAuxiliaryLinks(event).registration ? <li><a href={eventAuxiliaryLinks(event).registration!} target="_blank" rel="noreferrer">Registration</a></li> : null}
+											{eventAuxiliaryLinks(event).callForPapers ? <li><a href={eventAuxiliaryLinks(event).callForPapers!} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
+											{eventAuxiliaryLinks(event).agenda ? <li><a href={eventAuxiliaryLinks(event).agenda!} target="_blank" rel="noreferrer">Agenda</a></li> : null}
+											{eventAuxiliaryLinks(event).hotelBlock ? <li><a href={eventAuxiliaryLinks(event).hotelBlock!} target="_blank" rel="noreferrer">Hotel block</a></li> : null}
 										</ul>
 									</div>
 									<div>

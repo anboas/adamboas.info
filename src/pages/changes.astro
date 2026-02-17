@@ -21,12 +21,37 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.0.5',
+		date: '2026-02-17',
+		title: 'Events link integrity pass + circular-link suppression',
+		summary: 'Hardened event link rendering so circular/self-referential links are excluded and only usable external links surface in card actions and metadata.',
+		impact: 'The `Link` button now appears only when an event has a valid external official URL, preventing loops back to the tracker itself.',
+		current: true,
+		tags: ['events', 'ux', 'data-quality'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Suppressed circular links that pointed back to `/events/` from both top card actions and detail link sections.',
+					'Normalized/validated event links before rendering to avoid showing invalid link actions.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Cleaned placeholder self-links from seeded event records so only real external event links remain eligible for display.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.4',
 		date: '2026-02-17',
 		title: 'Events informational overlay generalized for public intelligence use',
 		summary: 'Replaced user-specific BD tracking fields with generic informational overlays oriented to opportunity discovery and public-source context.',
 		impact: 'Expanded event details now prioritize SAM links, government organizations, government POCs, and relevant insights instead of personal engagement status tracking.',
-		current: true,
 		tags: ['events', 'acquisition', 'ux', 'intelligence'],
 		groups: [
 			{
