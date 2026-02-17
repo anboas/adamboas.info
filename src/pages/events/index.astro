@@ -74,6 +74,19 @@ function isGovOpportunitySignal(event: (typeof events)[number]) {
 	return inferEngagementKinds(event).length > 0;
 }
 
+function isSamOfficialNotice(event: (typeof events)[number]) {
+	return event.ontology.provenance.some((source) => {
+		const blob = `${source.name} ${source.url}`.toLowerCase();
+		return blob.includes('sam.gov') || blob.includes('get opportunities public api');
+	});
+}
+
+function sourceLayer(event: (typeof events)[number]) {
+	if (isSamOfficialNotice(event)) return 'sam';
+	if (isGovOpportunitySignal(event)) return 'opportunity';
+	return 'conference';
+}
+
 function noticeTypeLabel(event: (typeof events)[number]) {
 	const explicit = event.ontology.acquisition?.noticeType?.trim();
 	if (explicit) return explicit;
@@ -88,6 +101,7 @@ function noticeTypeLabel(event: (typeof events)[number]) {
 
 const industryDayCount = events.filter((event) => inferEngagementKinds(event).includes('Industry Day')).length;
 const opportunitySignalCount = events.filter((event) => isGovOpportunitySignal(event)).length;
+const samNoticeCount = events.filter((event) => isSamOfficialNotice(event)).length;
 
 const summaryStats = {
 	total: events.length,
@@ -95,6 +109,7 @@ const summaryStats = {
 	needsDate: events.filter((e) => e.status === 'Needs Date').length,
 	industryDays: industryDayCount,
 	opportunitySignals: opportunitySignalCount,
+	samNotices: samNoticeCount,
 	nextInDays: nextUpcomingDays.length ? Math.min(...nextUpcomingDays) : null,
 };
 
@@ -160,12 +175,15 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 				<span class="radar-mini-stat">{summaryStats.upcoming} upcoming</span>
 				<span class="radar-mini-stat">{summaryStats.industryDays} industry days</span>
 				<span class="radar-mini-stat">{summaryStats.opportunitySignals} gov opportunity signals</span>
+				<span class="radar-mini-stat">{summaryStats.samNotices} SAM official notices</span>
 				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
 				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 			</div>
 			<div class="mt-3 radar-preset-row">
 				<button type="button" class="radar-preset-btn" data-radar-preset="all">All events</button>
+				<button type="button" class="radar-preset-btn" data-radar-source-preset="conference">Conferences only</button>
 				<button type="button" class="radar-preset-btn" data-radar-preset="opportunity">Gov opportunity signals</button>
+				<button type="button" class="radar-preset-btn" data-radar-source-preset="sam">SAM notices</button>
 				<button type="button" class="radar-preset-btn" data-radar-preset="Industry Day">Industry days</button>
 				<button type="button" class="radar-preset-btn" data-radar-preset="Pre-solicitation">Pre-solicitation</button>
 				<button type="button" class="radar-preset-btn" data-radar-preset="Sources Sought">Sources sought</button>
@@ -176,24 +194,30 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 					<summary class="radar-summary radar-summary-primary">Filters</summary>
 					<div class="mt-2 grid gap-2 text-sm md:grid-cols-4">
 						<label class="block md:col-span-2">
-							<input id="radar-q" data-global-search class="radar-input" type="search" placeholder="Search theme, stakeholder, city..." />
+							<input id="radar-q" aria-label="Search events" data-global-search class="radar-input" type="search" placeholder="Search theme, stakeholder, city..." />
 						</label>
-						<select id="radar-branch" class="radar-input">
+						<select id="radar-branch" class="radar-input" aria-label="Filter by branch">
 							<option value="">All branches</option>
 							{branches.map((branch) => <option value={branch}>{branch}</option>)}
 						</select>
-						<select id="radar-type" class="radar-input">
+						<select id="radar-type" class="radar-input" aria-label="Filter by event type">
 							<option value="">All types</option>
 							{types.map((type) => <option value={type}>{type}</option>)}
 						</select>
-						<select id="radar-status" class="radar-input">
+						<select id="radar-status" class="radar-input" aria-label="Filter by status">
 							<option value="">All statuses</option>
 							{statuses.map((status) => <option value={status}>{status}</option>)}
 						</select>
-						<select id="radar-engagement" class="radar-input">
+						<select id="radar-engagement" class="radar-input" aria-label="Filter by engagement signal">
 							<option value="">All engagement signals</option>
 							<option value="__opportunity__">Gov opportunity signals</option>
 							{engagementKinds.map((kind) => <option value={kind}>{kind}</option>)}
+						</select>
+						<select id="radar-source" class="radar-input" aria-label="Filter by source layer">
+							<option value="">All source layers</option>
+							<option value="conference">Conferences/workshops/hackathons</option>
+							<option value="opportunity">Government opportunity signals</option>
+							<option value="sam">SAM.gov official notices</option>
 						</select>
 						<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
 						<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified only</span></label>
@@ -258,8 +282,9 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 							data-lat={event.location.lat}
 							data-lng={event.location.lng}
 							data-opportunity={isGovOpportunitySignal(event) ? '1' : '0'}
+							data-source={sourceLayer(event)}
 							data-engagement={inferEngagementKinds(event).join('|')}
-							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence}`).join(' ')} ${inferEngagementKinds(event).join(' ')} ${noticeTypeLabel(event) ?? ''}`.toLowerCase()}
+							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence} ${p.name}`).join(' ')} ${inferEngagementKinds(event).join(' ')} ${noticeTypeLabel(event) ?? ''} ${sourceLayer(event)}`.toLowerCase()}
 						>
 							<div class="flex flex-wrap items-start justify-between gap-3">
 								<div class="min-w-0 flex-1">
@@ -276,6 +301,8 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 									</div>
 									<p class="radar-card-kicker">{event.branch} · {event.type} · {event.status}</p>
+									{sourceLayer(event) === 'sam' ? <p class="radar-source-tag radar-source-tag-sam">SAM.gov notice</p> : null}
+									{sourceLayer(event) === 'opportunity' ? <p class="radar-source-tag radar-source-tag-opportunity">Gov opportunity signal</p> : null}
 								</div>
 							</div>
 
@@ -396,6 +423,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		type: document.getElementById('radar-type'),
 		status: document.getElementById('radar-status'),
 		engagement: document.getElementById('radar-engagement'),
+		source: document.getElementById('radar-source'),
 		sort: document.getElementById('radar-sort'),
 		upcomingOnly: document.getElementById('radar-upcoming-only'),
 		verifiedOnly: document.getElementById('radar-verified-only'),
@@ -417,7 +445,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
-	const presetButtons = Array.from(document.querySelectorAll('[data-radar-preset]'));
+	const presetButtons = Array.from(document.querySelectorAll('[data-radar-preset], [data-radar-source-preset]'));
 
 	let compactMode = true;
 	let mapVisible = true;
@@ -499,6 +527,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 
 	for (const card of cards) {
 		card.classList.add(`radar-type-${typeTone(card.dataset.type)}`);
+		card.classList.add(`radar-source-${card.dataset.source || 'conference'}`);
 	}
 
 	const US_BOUNDS = [[24.2, -125.2], [49.6, -66.0]];
@@ -571,10 +600,10 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		}, { passive: false });
 	}
 
-	function pinIcon(daysLabel, tone, id) {
+	function pinIcon(daysLabel, tone, id, source) {
 		return window.L.divIcon({
 			className: 'radar-leaflet-pin-wrap',
-			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(daysLabel)}</span></div>`,
+			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone} radar-leaflet-pin-source-${escapeHtml(source || 'conference')}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(daysLabel)}</span></div>`,
 			iconSize: [30, 30],
 			iconAnchor: [15, 15],
 		});
@@ -590,8 +619,15 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		const link = card.dataset.link || '';
 		const days = parseDays(card.dataset.days);
 		const engagement = (card.dataset.engagement || '').split('|').filter(Boolean);
+		const sourceLayer = card.dataset.source || 'conference';
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		const typeClass = `radar-type-${typeTone(type)}`;
+		const sourceClass = sourceLayer === 'sam'
+			? 'radar-source-sam'
+			: sourceLayer === 'opportunity'
+				? 'radar-source-opportunity'
+				: 'radar-source-conference';
+		const sourceLabel = sourceLayer === 'sam' ? 'SAM.gov' : sourceLayer === 'opportunity' ? 'Gov signal' : 'Conference';
 		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event site</a>` : '';
 		const engagementHtml = engagement.length
 			? `<div class="radar-map-popup-meta">${engagement.map((kind) => `<span class="radar-map-popup-badge radar-map-popup-badge-opportunity">${escapeHtml(kind)}</span>`).join(' ')}</div>`
@@ -599,7 +635,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
-				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> <span class="radar-map-popup-badge ${typeClass}">${escapeHtml(type)}</span> ${escapeHtml(branch)}</div>
+				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> <span class="radar-map-popup-badge ${typeClass}">${escapeHtml(type)}</span> <span class="radar-map-popup-badge ${sourceClass}">${escapeHtml(sourceLabel)}</span> ${escapeHtml(branch)}</div>
 				${engagementHtml}
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
@@ -685,6 +721,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			type: controls.type.value,
 			status: controls.status.value,
 			engagement: controls.engagement.value,
+			source: controls.source.value,
 			sort: controls.sort.value,
 			upcoming: controls.upcomingOnly.checked,
 			verified: controls.verifiedOnly.checked,
@@ -698,6 +735,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		controls.type.value = state.type || '';
 		controls.status.value = state.status || '';
 		controls.engagement.value = state.engagement || '';
+		controls.source.value = state.source || '';
 		controls.sort.value = state.sort || 'soonest';
 		controls.upcomingOnly.checked = Boolean(state.upcoming);
 		controls.verifiedOnly.checked = Boolean(state.verified);
@@ -711,6 +749,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		if (state.type) params.set('type', state.type);
 		if (state.status) params.set('status', state.status);
 		if (state.engagement) params.set('engagement', state.engagement);
+		if (state.source) params.set('source', state.source);
 		if (state.sort && state.sort !== 'soonest') params.set('sort', state.sort);
 		if (state.upcoming) params.set('upcoming', '1');
 		if (state.verified) params.set('verified', '1');
@@ -725,6 +764,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			state.type ||
 			state.status ||
 			state.engagement ||
+			state.source ||
 			state.upcoming ||
 			state.verified ||
 			state.showPast ||
@@ -740,6 +780,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			type: params.get('type') || '',
 			status: params.get('status') || '',
 			engagement: params.get('engagement') || '',
+			source: params.get('source') || '',
 			sort: params.get('sort') || 'soonest',
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
@@ -773,6 +814,11 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 					if (!engagementKinds.includes(state.engagement)) return false;
 				}
 			}
+			if (state.source) {
+				if (state.source === 'conference' && card.dataset.source !== 'conference') return false;
+				if (state.source === 'opportunity' && card.dataset.source === 'conference') return false;
+				if (state.source === 'sam' && card.dataset.source !== 'sam') return false;
+			}
 			if (!state.showPast && card.dataset.status === 'Past' && state.status !== 'Past') return false;
 			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
 			if (state.verified && card.dataset.confidence !== 'high') return false;
@@ -801,6 +847,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		if (state.type) chips.push(`Type: ${state.type}`);
 		if (state.status) chips.push(`Status: ${state.status}`);
 		if (state.engagement) chips.push(`Engagement: ${state.engagement === '__opportunity__' ? 'Gov opportunity signals' : state.engagement}`);
+		if (state.source) chips.push(`Layer: ${state.source === 'sam' ? 'SAM official notices' : state.source === 'opportunity' ? 'Gov opportunity signals' : 'Conferences/workshops/hackathons'}`);
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('Verified only');
 		if (state.showPast) chips.push('Including past');
@@ -811,12 +858,14 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	function updatePresetButtons(state) {
 		for (const button of presetButtons) {
 			const preset = button.dataset.radarPreset;
+			const sourcePreset = button.dataset.radarSourcePreset;
 			let active = false;
 			if (preset === 'all') {
-				active = !state.engagement && !state.q && !state.branch && !state.type && !state.status && !state.upcoming && !state.verified;
+				active = !state.engagement && !state.source && !state.q && !state.branch && !state.type && !state.status && !state.upcoming && !state.verified;
 			}
 			if (preset === 'opportunity') active = state.engagement === '__opportunity__';
 			if (preset && !['all', 'opportunity'].includes(preset)) active = state.engagement === preset;
+			if (sourcePreset) active = state.source === sourcePreset;
 			button.classList.toggle('is-active', active);
 		}
 	}
@@ -843,8 +892,9 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
 			const days = parseDays(card.dataset.days);
 			const tone = typeTone(card.dataset.type);
+			const source = card.dataset.source || 'conference';
 			const eventId = card.dataset.id || '';
-			const marker = window.L.marker([lat, lng], { icon: pinIcon(daysMarker(days), tone, eventId) });
+			const marker = window.L.marker([lat, lng], { icon: pinIcon(daysMarker(days), tone, eventId, source) });
 			marker.bindPopup(markerPopup(card), { maxWidth: 380 });
 			clusterLayer.addLayer(marker);
 			markerIndex.set(eventId, marker);
@@ -888,26 +938,29 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 
 
 
-	[controls.q, controls.branch, controls.type, controls.status, controls.engagement, controls.sort]
+	[controls.q, controls.branch, controls.type, controls.status, controls.engagement, controls.source, controls.sort]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('input', render));
 	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('change', render));
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', engagement: '', sort: 'soonest', upcoming: false, verified: false, showPast: false });
+		applyState({ q: '', branch: '', type: '', status: '', engagement: '', source: '', sort: 'soonest', upcoming: false, verified: false, showPast: false });
 		render();
 	});
 	for (const button of presetButtons) {
 		button.addEventListener('click', () => {
 			const preset = button.dataset.radarPreset;
-			if (!preset) return;
+			const sourcePreset = button.dataset.radarSourcePreset;
+			if (!preset && !sourcePreset) return;
 			if (preset === 'all') {
-				applyState({ ...stateFromUI(), engagement: '' });
+				applyState({ ...stateFromUI(), engagement: '', source: '' });
 			} else if (preset === 'opportunity') {
 				applyState({ ...stateFromUI(), engagement: '__opportunity__' });
-			} else {
+			} else if (preset) {
 				applyState({ ...stateFromUI(), engagement: preset });
+			} else if (sourcePreset) {
+				applyState({ ...stateFromUI(), source: sourcePreset });
 			}
 			if (controls.filterPanel && !controls.filterPanel.open) controls.filterPanel.open = true;
 			render();
@@ -946,6 +999,11 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		if (event.key.toLowerCase() === 'i') {
 			const nextEngagement = controls.engagement.value === '__opportunity__' ? '' : '__opportunity__';
 			applyState({ ...stateFromUI(), engagement: nextEngagement });
+			render();
+		}
+		if (event.key.toLowerCase() === 'o') {
+			const nextSource = controls.source.value === 'opportunity' ? '' : 'opportunity';
+			applyState({ ...stateFromUI(), source: nextSource });
 			render();
 		}
 	});
@@ -1196,6 +1254,18 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		border-color: rgba(34, 197, 94, 0.65);
 		color: rgba(220, 252, 231, 0.96);
 	}
+	:global(.radar-map-popup-badge.radar-source-sam) {
+		border-color: rgba(250, 204, 21, 0.7);
+		color: rgba(254, 243, 199, 0.98);
+	}
+	:global(.radar-map-popup-badge.radar-source-opportunity) {
+		border-color: rgba(34, 197, 94, 0.7);
+		color: rgba(220, 252, 231, 0.98);
+	}
+	:global(.radar-map-popup-badge.radar-source-conference) {
+		border-color: rgba(96, 165, 250, 0.68);
+		color: rgba(219, 234, 254, 0.98);
+	}
 	:global(.radar-map-popup-actions) {
 		margin-top: 0.45rem;
 		display: flex;
@@ -1250,6 +1320,15 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	:global(.radar-leaflet-pin-summit) { border-color: rgba(167, 139, 250, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(167, 139, 250, 0.25); }
 	:global(.radar-leaflet-pin-hackathon) { border-color: rgba(251, 191, 36, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(251, 191, 36, 0.25); }
 	:global(.radar-leaflet-pin-exercise) { border-color: rgba(248, 113, 113, 0.95); box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.7), 0 0 14px rgba(248, 113, 113, 0.24); }
+	:global(.radar-leaflet-pin.radar-leaflet-pin-source-sam) {
+		border-color: rgba(250, 204, 21, 0.96);
+		background: rgba(71, 85, 105, 0.9);
+		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.74), 0 0 16px rgba(250, 204, 21, 0.35);
+	}
+	:global(.radar-leaflet-pin.radar-leaflet-pin-source-opportunity) {
+		border-color: rgba(34, 197, 94, 0.96);
+		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.74), 0 0 16px rgba(34, 197, 94, 0.28);
+	}
 	:global(.radar-leaflet-pin.is-active) {
 		transform: scale(1.14);
 		box-shadow: 0 0 0 2px rgba(2, 6, 23, 0.75), 0 0 0 2px rgba(0, 196, 196, 0.55), 0 0 16px rgba(0, 196, 196, 0.3);
@@ -1335,6 +1414,26 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		letter-spacing: 0.08em;
 		color: rgba(148, 163, 184, 0.92);
 		text-align: right;
+	}
+	.radar-source-tag {
+		margin-top: 0.22rem;
+		font-size: 0.6rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		padding: 0.12rem 0.35rem;
+		border: 1px solid rgba(71, 85, 105, 0.92);
+		background: rgba(15, 23, 42, 0.7);
+		color: rgba(226, 232, 240, 0.93);
+	}
+	.radar-source-tag-sam {
+		border-color: rgba(250, 204, 21, 0.72);
+		background: rgba(250, 204, 21, 0.14);
+		color: rgba(254, 243, 199, 0.96);
+	}
+	.radar-source-tag-opportunity {
+		border-color: rgba(34, 197, 94, 0.65);
+		background: rgba(34, 197, 94, 0.14);
+		color: rgba(220, 252, 231, 0.96);
 	}
 
 	.radar-main-col {
@@ -1422,6 +1521,13 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	}
 	.radar-type-exercise {
 		border-left-color: rgba(248, 113, 113, 0.9);
+	}
+	.radar-source-opportunity {
+		box-shadow: inset 0 0 0 1px rgba(34, 197, 94, 0.16);
+	}
+	.radar-source-sam {
+		border-left-color: rgba(250, 204, 21, 0.92) !important;
+		box-shadow: inset 0 0 0 1px rgba(250, 204, 21, 0.2);
 	}
 
 	.radar-pin-btn {

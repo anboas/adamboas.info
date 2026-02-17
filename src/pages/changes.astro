@@ -21,12 +21,45 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v1.5.6',
+		date: '2026-02-17',
+		title: 'Events overlay lens + SAM-vs-conference visual coding',
+		summary: 'Added explicit source-layer filtering and visual differentiation so SAM official notices can be overlaid against conference/workshop/hackathon events without ambiguity.',
+		impact: 'You can now compare opportunity notices and conference ecosystem activity in one view while still quickly isolating each channel when needed.',
+		current: true,
+		tags: ['events', 'filters', 'ux', 'acquisition'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'New source-layer filter (`All`, `Conferences/workshops/hackathons`, `Government opportunity signals`, `SAM official notices`).',
+					'Preset shortcuts for conference-only and SAM-only slices in the compact control shell.',
+					'SAM/opportunity source tags on event cards and source badges inside map popups.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Map pin rendering now applies source-layer color coding in addition to event-type tone.',
+					'Filter/query state now persists `source=` in URL so overlays are shareable and reproducible.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Event summary stats now include SAM official notice count for quick channel health checks.',
+					'Accessibility labels added to filter controls to keep axe-critical checks clean as controls expand.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v1.5.5',
 		date: '2026-02-17',
 		title: 'Navy / NSWC sourcing expansion + solicitation-heavy SAM profiles',
 		summary: 'Expanded Events ingestion with Navy-targeted SAM profiles and an official NAVSEA/NSWC page crawler for industry-day signal discovery.',
 		impact: 'Higher coverage of Navy and naval-warfare-center opportunity signals with cleaner prioritization for solicitation-relevant action.',
-		current: true,
 		tags: ['events', 'acquisition', 'navy', 'data'],
 		groups: [
 			{
