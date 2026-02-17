@@ -512,6 +512,7 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
     overflow-y: auto;
     z-index: 22;
     scrollbar-width: none;
+    scrollbar-gutter: stable both-edges;
   }
 
   /* Show scrollbar only on intent (hover/focus), otherwise hidden. */
