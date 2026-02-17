@@ -6,6 +6,8 @@ const paths = [
   '/',
   '/writing/',
   '/writing/agentic-force-creation/',
+  '/events/',
+  '/changes/',
   '/experience/',
   '/education/',
 ];

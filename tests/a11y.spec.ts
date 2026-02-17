@@ -7,6 +7,8 @@ const pages = [
   '/',
   '/writing/',
   '/writing/agentic-force-creation/',
+  '/events/',
+  '/changes/',
   '/experience/',
   '/education/',
 ];

@@ -1,6 +1,6 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../components/StickyBrowseBar.astro';
+// sticky browse intentionally omitted on /changes (Changes link is footer-only)
 import changeNotesJs from '../scripts/change-notes.js?raw';
 
 type ChangeGroup = {
@@ -195,7 +195,7 @@ function releaseSearchText(release: Release) {
 	description="Public, versioned website capability updates for adamboas.com."
 	canonicalHref="https://www.adamboas.com/changes/"
 >
-	<StickyBrowseBar active="changes" />
+	<!-- StickyBrowseBar omitted on this page by preference: Changes link should live in footer only. -->
 
 	<section data-change-notes class="space-y-4">
 		<header class="card p-5">
