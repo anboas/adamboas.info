@@ -505,7 +505,8 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
     right: 0.75rem;
     left: auto;
     top: calc(5.2rem + env(safe-area-inset-top));
-    width: 10.8rem;
+    width: auto;
+    min-width: 10.8rem;
     max-height: calc(100vh - 6rem);
     overflow-x: hidden;
     overflow-y: auto;

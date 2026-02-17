@@ -502,11 +502,14 @@ const writingUrl = absoluteUrl('/writing/');
 				if (!article) return;
 				const articleRect = article.getBoundingClientRect();
 				const gap = 18;
+				const rightInset = 12;
+				const minWidth = 172;
 				const desiredLeft = articleRect.right + gap;
-				const maxLeft = window.innerWidth - toc.offsetWidth - 8;
-				const left = Math.min(desiredLeft, maxLeft);
+				const maxLeft = window.innerWidth - rightInset - minWidth;
+				const left = Math.max(8, Math.min(desiredLeft, maxLeft));
 				toc.style.left = `${Math.round(left)}px`;
-				toc.style.right = 'auto';
+				toc.style.right = `${rightInset}px`;
+				toc.style.width = 'auto';
 			};
 
 			positionTocRail();
