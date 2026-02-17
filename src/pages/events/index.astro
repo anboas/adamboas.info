@@ -5,9 +5,25 @@ import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import type { RadarEngagementKind } from '../../data/radar/types';
 
+const DISALLOWED_SOURCE_HOSTS = new Set(['jbenton1.github.io']);
+
+function urlHost(url: string | null | undefined) {
+	if (!url) return null;
+	try {
+		return new URL(url.trim()).hostname.toLowerCase();
+	} catch {
+		return null;
+	}
+}
+
 function isTrackerSelfLink(url: string | null | undefined) {
 	if (!url) return false;
 	return /^https?:\/\/(www\.)?adamboas\.com\/events\/?$/i.test(url.trim());
+}
+
+function isDisallowedSourceUrl(url: string | null | undefined) {
+	const host = urlHost(url);
+	return Boolean(host && DISALLOWED_SOURCE_HOSTS.has(host));
 }
 
 function isFutureEventDate(date: string | null | undefined) {
@@ -21,7 +37,7 @@ function isFutureEventDate(date: string | null | undefined) {
 }
 
 function isUsableExternalUrl(url: string | null | undefined) {
-	if (!url || isTrackerSelfLink(url)) return false;
+	if (!url || isTrackerSelfLink(url) || isDisallowedSourceUrl(url)) return false;
 	try {
 		const parsed = new URL(url.trim());
 		return parsed.protocol === 'http:' || parsed.protocol === 'https:';
@@ -40,6 +56,7 @@ const events = radarEventsSeed.filter((event) => {
 		event.ontology.links.hotelBlock,
 		...event.ontology.provenance.map((source) => source.url),
 	];
+	if (candidateLinks.some((url) => isDisallowedSourceUrl(url))) return false;
 	return candidateLinks.some((url) => isUsableExternalUrl(url));
 });
 
@@ -136,6 +153,7 @@ function isUsableEventLink(url: string | null | undefined) {
 	const parsed = normalizedHttpUrl(url);
 	if (!parsed) return false;
 	if (isCircularEventsLink(parsed.toString())) return false;
+	if (DISALLOWED_SOURCE_HOSTS.has(parsed.hostname.toLowerCase())) return false;
 	return true;
 }
 

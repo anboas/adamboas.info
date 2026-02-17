@@ -21,12 +21,37 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.0.9',
+		date: '2026-02-17',
+		title: 'Event legitimacy gate tightened (domain trust + audit artifact)',
+		summary: 'Added explicit source-domain trust gating and produced a one-by-one legitimacy audit artifact for all event records.',
+		impact: 'Events tied to known low-trust aggregator domain `jbenton1.github.io/government-guide/conference-tracker/` are excluded from active display until independently verified.',
+		current: true,
+		tags: ['events', 'data-quality', 'verification'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Blocked disallowed source domain links from eligibility (`jbenton1.github.io`) in active event filtering and link rendering.',
+					'Required future date + usable external link + trusted source domain for inclusion in active event feed.',
+				],
+			},
+			{
+				kind: 'Added',
+				items: [
+					'Generated row-by-row audit report: `src/data/radar/event-legitimacy-audit-2026-02-17.md` (kept vs dropped with reasons).',
+				],
+			},
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.8',
 		date: '2026-02-17',
 		title: 'Homepage mobile overflow fix for featured cards',
 		summary: 'Fixed a mobile rendering bug where featured reading titles could overflow card bounds and appear clipped/bleeding outside the container.',
 		impact: 'Homepage cards now wrap safely on small screens and preserve readable layout without horizontal clipping artifacts.',
-		current: true,
 		tags: ['ux', 'mobile', 'homepage', 'bugfix'],
 		groups: [
 			{

@@ -1,0 +1,174 @@
+# Event Legitimacy Audit — 2026-02-17
+
+- Total events evaluated: 159
+- Kept (meets legitimacy gate): 70
+- Dropped: 89
+- Rules: future date required, no disallowed source domains, at least one usable external URL.
+
+## Drop reason counts
+- no_usable_external_url: 86
+- not_future_or_missing_date: 33
+- disallowed_source_domain: 81
+
+## Kept events
+- radar-ausa-2026 | 2026-03-24 | AUSA Global Force Symposium & Exposition | https://www.ausa.org/meetings-events
+- radar-sofweek-2026 | 2026-05-18 | SOF Week | https://www.sofweek.org/
+- radar-sea-air-space-2026 | 2026-04-19 | Sea-Air-Space Exposition | https://seaairspace.org/
+- radar-technet-cyber-2026 | 2026-06-16 | AFCEA TechNet Cyber | https://www.afcea.org/events
+- radar-space-symposium-2026 | 2026-04-13 | Space Symposium | https://www.spacesymposium.org/
+- radar-govai-2026 | 2026-09-18 | GovAI Summit | https://www.govaisummit.com/
+- radar-usace-infra-2026 | 2026-07-22 | USACE Digital Delivery & Infrastructure Forum | https://www.usace.army.mil/
+- radar-disa-c4-2026 | 2026-08-05 | DISA C4 Integration Workshop | https://www.disa.mil/
+- radar-2026-warfare-symposium | 2026-02-23 | 2026 Warfare Symposium | https://www.afa.org/events/2026-afa-warfare-symposium/
+- radar-ausa-noon-report-warrant-officers-and-technical-expertise-transforming | 2026-02-24 | AUSA Noon Report - Warrant Officers and Technical Expertise: Transforming the Future Army | https://www.ausa.org/events/noon-report/warrant-officers-and-technical-expertise
+- radar-san-antonio-post-february-meeting | 2026-02-26 | San Antonio Post February Meeting | https://www.same.org/events/
+- radar-ausa-noon-report-ai-at-the-core-advancing-army-cyber-priorities | 2026-03-12 | AUSA Noon Report: AI at the Core: Advancing Army Cyber Priorities | https://www.ausa.org/events/noon-report/ai-at-the-core
+- radar-coffee-series-featuring-honorable-brent-ingraham | 2026-03-12 | Coffee Series featuring Honorable Brent Ingraham | https://www.ausa.org/events/coffee-series/ingraham
+- radar-coffee-series-featuring-honorable-daniel-driscoll | 2026-03-17 | Coffee Series Featuring Honorable Daniel Driscoll | https://www.ausa.org/events/coffee-series/driscoll
+- radar-san-antonio-post-apwa-march-meeting | 2026-03-24 | San Antonio Post-APWA March Meeting | https://www.same.org/events/
+- radar-operation-deploy-your-dress-pop-up | 2026-04-25 | Operation Deploy Your Dress Pop-up | https://www.ausa.org/events/ausa-odyd-popup
+- radar-san-antonio-post-small-business-event | 2026-05-06 | San Antonio Post Small Business Event | https://www.same.org/events/
+- radar-2026-lanpac-symposium-exposition | 2026-05-12 | 2026 LANPAC Symposium & Exposition | https://www.ausa.org/events/2026-lanpac-symposium-exposition
+- radar-usa-security-and-defense-pavilion-at-eurosatory-2026 | 2026-06-15 | USA Security and Defense Pavilion at Eurosatory 2026 | https://www.ausa.org/events/usa-security-and-defense-pavilion-eurosatory-2026
+- radar-2026-national-convention | 2026-09-12 | 2026 National Convention | https://www.afa.org/events/2026-national-convention/
+- radar-2026-air-space-cyber-conference | 2026-09-14 | 2026 Air, Space & Cyber Conference | https://www.afa.org/events/2026-air-space-cyber-conference/
+- radar-navy-birthday-ball | 2026-10-10 | Navy Birthday Ball | https://www.navyleague.org/meetings-and-events/us-navy-birthday-ball/
+- radar-2027-warfare-symposium | 2027-03-01 | 2027 Warfare Symposium | https://www.afa.org/events/2027-warfare-symposium/
+- radar-usag-wiesbaden-clay-kaserne-industry-day-tech-expo | 2026-02-19 | USAG Wiesbaden/Clay Kaserne Industry Day & Tech Expo | https://www.militaryexpos.com/claykaserne/
+- radar-usag-bavaria-grafenwoehr-tech-expo | 2026-02-23 | USAG Bavaria/Grafenwoehr Tech Expo | https://www.militaryexpos.com/usagbavaria/
+- radar-future-indirect-fires-conference-2026 | 2026-02-24 | Future Indirect Fires Conference 2026 | https://www.asdevents.com/event.asp?id=25813
+- radar-international-military-helicopter-conference-2026 | 2026-02-24 | International Military Helicopter Conference 2026 | https://www.asdevents.com/event.asp?id=25711
+- radar-joint-military-training-simulation-conference-2026 | 2026-02-24 | Joint Military Training & Simulation Conference 2026 | https://www.asdevents.com/event.asp?id=25812
+- radar-kelley-barracks-tech-expo | 2026-02-24 | Kelley Barracks Tech Expo | https://www.militaryexpos.com/kelleybarracks/
+- radar-military-simulation-training-summit-2026 | 2026-02-24 | Military Simulation Training Summit 2026 | https://www.asdevents.com/event.asp?id=25635
+- radar-eucom-innovation-expo | 2026-02-25 | EUCOM Innovation Expo | https://www.militaryexpos.com/patchbarracks/
+- radar-2026-govcon-executive-leadership-summit | 2026-02-26 | 2026 GovCon Executive Leadership Summit | https://www.potomacofficersclub.com/events/2026-govcon-executive-leadership-summit/
+- radar-loitering-munition-systems-summit-2026 | 2026-03-03 | Loitering Munition Systems Summit 2026 | https://www.asdevents.com/event.asp?id=25702
+- radar-joint-space-operations-summit-2026 | 2026-03-04 | Joint Space Operations Summit 2026 | https://www.asdevents.com/event.asp?id=25726
+- radar-future-soldier-technology-2026-conference | 2026-03-09 | Future Soldier Technology 2026 Conference | https://www.asdevents.com/event.asp?id=25724
+- radar-joint-cbrn-symposium | 2026-03-10 | Joint CBRN Symposium | https://www.asdevents.com/event.asp?id=25852
+- radar-fort-bragg-tactical-tech-day | 2026-03-11 | Fort Bragg Tactical & Tech Day | https://www.militaryexpos.com/fortbragg/
+- radar-homeland-security-week-summit-2026 | 2026-03-17 | Homeland Security Week Summit 2026 | https://www.asdevents.com/event.asp?id=25837
+- radar-hurlburt-field-innovation-day-tech-expo | 2026-03-17 | Hurlburt Field Innovation Day & Tech Expo | https://www.militaryexpos.com/hurlburt/
+- radar-operational-medicine-symposium-technology-showcase | 2026-03-17 | Operational Medicine Symposium & Technology Showcase | https://www.asdevents.com/event.asp?id=25613
+- radar-2026-artificial-intelligence-summit | 2026-03-18 | 2026 Artificial Intelligence Summit | https://www.potomacofficersclub.com/events/2026-artificial-intelligence-summit/
+- radar-eglin-afb-tech-expo | 2026-03-18 | Eglin AFB Tech Expo | https://www.ncsi.com/event-registration/
+- radar-insider-risk-summit-west-2026 | 2026-03-18 | Insider Risk Summit West 2026 | https://www.asdevents.com/event.asp?id=25841
+- radar-national-congress-on-counter-uas-technology-2026 | 2026-03-18 | National Congress on Counter-UAS Technology 2026 | https://www.asdevents.com/event.asp?id=25819
+- radar-deployed-medical-and-healthcare-delivery-conference-2026 | 2026-03-24 | Deployed Medical and Healthcare Delivery Conference 2026 | https://www.asdevents.com/event.asp?id=25712
+- radar-tech-summit-at-fort-huachuca | 2026-03-24 | Tech Summit at Fort Huachuca | https://www.militaryexpos.com/techsummit/
+- radar-futureg-for-defense-warfare-summit-2026 | 2026-03-25 | FutureG for Defense & Warfare Summit 2026 | https://www.asdevents.com/event.asp?id=25870
+- radar-border-security-intelligence-summit-2026 | 2026-04-01 | Border Security & Intelligence Summit 2026 | https://www.asdevents.com/event.asp?id=25897
+- radar-military-flight-training-conference-2026 | 2026-04-02 | Military Flight Training Conference 2026 | https://www.asdevents.com/event.asp?id=25821
+- radar-assured-pnt-summit-2026 | 2026-04-07 | Assured PNT Summit 2026 | https://www.asdevents.com/event.asp?id=25871
+- radar-dow-mission-partner-environment-mpe-summit-26-1 | 2026-04-14 | DoW Mission Partner Environment (MPE) Summit 26-1 | https://www.ncsi.com/event/mpe/
+- radar-wright-patterson-afb-tech-expo | 2026-04-14 | Wright-Patterson AFB Tech Expo | https://www.militaryexpos.com/wpafb/
+- radar-law-enforcement-homeland-security-forum-technology-expo | 2026-05-05 | Law Enforcement-Homeland Security Forum & Technology Expo | https://www.ncsi.com/event/lehs/
+- radar-holistic-health-and-fitness-h2f-symposium | 2026-05-12 | Holistic Health and Fitness (H2F) Symposium | https://www.militaryexpos.com/h2f/
+- radar-2026-cyber-summit | 2026-05-21 | 2026 Cyber Summit | https://www.potomacofficersclub.com/events/2026-cyber-summit/
+- radar-jbsa-fort-sam-houston-tech-expo | 2026-06-16 | JBSA-Fort Sam Houston Tech Expo | https://www.ncsi.com/event-registration/
+- radar-2026-army-summit | 2026-06-18 | 2026 Army Summit | https://www.potomacofficersclub.com/events/2026-army-summit/
+- radar-spangdahlem-ab-tech-expo | 2026-07-13 | Spangdahlem AB Tech Expo | https://www.ncsi.com/event-registration/
+- radar-usag-wiesbaden-clay-kaserne-technology-industry-day | 2026-07-16 | USAG Wiesbaden/Clay Kaserne Technology Industry Day | https://www.ncsi.com/event-registration/
+- radar-joint-industry-forum-at-kelley-barracks | 2026-07-21 | Joint Industry Forum at Kelley Barracks | https://www.ncsi.com/event-registration/
+- radar-joint-industry-forum-at-patch-barracks | 2026-07-22 | Joint Industry Forum at Patch Barracks | https://www.ncsi.com/event-registration/
+- radar-photogrammetry-3d-visualization-and-lidar-community-of-practice-confer | 2026-07-27 | Photogrammetry, 3D Visualization, and Lidar Community of Practice Conference | https://www.ncsi.com/event-registration/
+- radar-2026-air-and-space-summit | 2026-07-30 | 2026 Air and Space Summit | https://www.potomacofficersclub.com/events/2026-air-and-space-summit/
+- radar-vandenberg-sfb-tech-expo | 2026-08-19 | Vandenberg SFB Tech Expo | https://www.ncsi.com/event-registration/
+- radar-2026-navy-summit | 2026-08-27 | 2026 Navy Summit | https://www.potomacofficersclub.com/events/2026-navy-summit/
+- radar-2026-intel-summit | 2026-09-24 | 2026 Intel Summit | https://www.potomacofficersclub.com/events/2026-intel-summit/
+- radar-fort-bragg-tactical-medicine-tech-expo | 2026-09-30 | Fort Bragg Tactical Medicine & Tech Expo | https://www.ncsi.com/event-registration/
+- radar-davis-monthan-afb-tech-expo | 2026-11-04 | Davis-Monthan AFB Tech Expo | https://www.ncsi.com/event-registration/
+- radar-luke-afb-tech-expo | 2026-11-05 | Luke AFB Tech Expo | https://www.ncsi.com/event-registration/
+- radar-deloitte-ignite-2026 | 2026-03-17 | Deloitte IGNITE '26 | https://www.deloitteconference.com/profile/web/index.cfm?PKwebID=0x644025abcd&varPage=home
+
+## Dropped events
+- radar-dii-feb-2026 | 2026-02-28 | Defense Innovation Integration Forum | reasons: no_usable_external_url
+- radar-federal-ai-summit-2026 | 2026-03-10 | Federal AI Summit | reasons: no_usable_external_url
+- radar-nato-emerging-tech-2026 | null | NATO Emerging Tech Working Forum | reasons: not_future_or_missing_date
+- radar-modelsec-2025 | 2025-11-14 | Model Security in Contested Ops Colloquium | reasons: not_future_or_missing_date, no_usable_external_url
+- radar-a2a-devday-2026 | 2026-03-03 | A2A Integration Developer Day | reasons: no_usable_external_url
+- radar-autonomy-governance-forum | null | Autonomy Governance Fracture Forum | reasons: not_future_or_missing_date, no_usable_external_url
+- radar-aaaa-best-drone-warfighter-competition | 2026-02-17 | AAAA Best Drone Warfighter Competition | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-detroit-district-usace-business-open-house | 2026-02-23 | Detroit District USACE Business Open House | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-mid-atlantic-small-business-outreach-industry-day | 2026-02-23 | SAME Mid-Atlantic Small Business Outreach + Industry Day | reasons: disallowed_source_domain, no_usable_external_url
+- radar-usace-albuquerque-district-business-opportunities-open-house | 2026-02-25 | USACE Albuquerque District Business Opportunities Open House | reasons: disallowed_source_domain, no_usable_external_url
+- radar-deps-hel-symposium | 2026-03-01 | DEPS HEL Symposium | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-san-juan-industry-day | 2026-03-02 | SAME San Juan Industry Day | reasons: disallowed_source_domain, no_usable_external_url
+- radar-cyberbay-summit | 2026-03-11 | CyberBay Summit | reasons: disallowed_source_domain, no_usable_external_url
+- radar-afcea-nova-naval-it-day-2026 | 2026-03-12 | AFCEA NOVA Naval IT Day 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-charleston-post-industry-day-2026 | 2026-03-18 | SAME Charleston Post Industry Day 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-satshow-satellite-2026 | 2026-03-23 | SATShow / SATELLITE 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-qsecdef-world-symposium | 2026-03-24 | QSECDEF World Symposium | reasons: disallowed_source_domain, no_usable_external_url
+- radar-robins-requirements-symposium | 2026-03-26 | Robins Requirements Symposium | reasons: disallowed_source_domain, no_usable_external_url
+- radar-defense-manufacturing-conference-2026 | 2026-03-30 | Defense Manufacturing Conference 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-chicago-district-usace-industry-outreach-open-house | 2026-04-01 | Chicago District USACE Industry Outreach Open House | reasons: disallowed_source_domain, no_usable_external_url
+- radar-army-aviation-mission-solutions-summit-2026-quad-a | 2026-04-14 | Army Aviation Mission Solutions Summit 2026 (Quad-A) | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-fort-worth-post-industry-day-2026 | 2026-04-14 | SAME Fort Worth Post Industry Day 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-southeast-region-fedcon-usace-summit | 2026-04-14 | Southeast Region FEDCON USACE Summit | reasons: disallowed_source_domain, no_usable_external_url
+- radar-sacramento-district-usace-industry-day | 2026-04-16 | Sacramento District USACE Industry Day | reasons: disallowed_source_domain, no_usable_external_url
+- radar-afcea-nova-innovation-it-day-2026 | 2026-04-27 | AFCEA NOVA Innovation IT Day 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-modern-day-marine-2026 | 2026-04-28 | Modern Day Marine 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-dod-small-business-training-week | 2026-05-01 | DoD Small Business Training Week | reasons: disallowed_source_domain, no_usable_external_url
+- radar-usace-national-dredging-meeting | 2026-05-01 | USACE National Dredging Meeting | reasons: disallowed_source_domain, no_usable_external_url
+- radar-huntington-district-usace-industry-outreach-open-house | 2026-05-07 | Huntington District USACE Industry Outreach Open House | reasons: disallowed_source_domain, no_usable_external_url
+- radar-auvsi-xponential-2026 | 2026-05-11 | AUVSI XPONENTIAL 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-ausa-lanpac-2026 | 2026-05-12 | AUSA LANPAC 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-afcea-nova-space-force-it-day-2026 | 2026-05-12 | AFCEA NOVA Space Force IT Day 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-new-orleans-district-usace-industry-day-2026 | 2026-05-14 | New Orleans District USACE Industry Day 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-deps-de-test-evaluation-conference | 2026-05-18 | DEPS DE Test & Evaluation Conference | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-jetc-2026 | 2026-05-19 | SAME JETC 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-cyber-industry-day-at-fort-eisenhower | 2026-05-19 | Cyber Industry Day at Fort Eisenhower | reasons: disallowed_source_domain, no_usable_external_url
+- radar-mscoe-protection-maneuver-support-industry-expo | 2026-05-19 | MSCoE Protection & Maneuver Support Industry Expo | reasons: disallowed_source_domain, no_usable_external_url
+- radar-us-women-s-chamber-small-business-federal-summit | 2026-06-01 | US Women's Chamber Small Business Federal Summit | reasons: disallowed_source_domain, no_usable_external_url
+- radar-dredging-summit-and-expo-2026-weda | 2026-06-01 | Dredging Summit and Expo 2026 (WEDA) | reasons: disallowed_source_domain, no_usable_external_url
+- radar-ndia-future-force-capabilities-conference | 2026-06-08 | NDIA Future Force Capabilities Conference | reasons: disallowed_source_domain, no_usable_external_url
+- radar-eurosatory-2026 | 2026-06-15 | Eurosatory 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-tsis-training-simulation-industry-symposium | 2026-06-17 | TSIS (Training & Simulation Industry Symposium) | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-savannah-usace-annual-program-review | 2026-06-24 | SAME Savannah USACE Annual Program Review | reasons: disallowed_source_domain, no_usable_external_url
+- radar-national-hubzone-conference | 2026-07-01 | National HUBZone Conference | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-dc-nova-small-business-conference | 2026-07-07 | SAME DC & NoVA Small Business Conference | reasons: disallowed_source_domain, no_usable_external_url
+- radar-dafitc-2026 | 2026-08-01 | DAFITC 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-power-up-energy-expo | 2026-08-01 | Power Up Energy Expo | reasons: disallowed_source_domain, no_usable_external_url
+- radar-tinker-and-the-primes-2026 | 2026-08-04 | Tinker and the Primes 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-gvsets-2026-18th-annual | 2026-08-11 | GVSETS 2026 (18th Annual) | reasons: disallowed_source_domain, no_usable_external_url
+- radar-space-missile-defense-symposium-2026 | 2026-08-11 | Space & Missile Defense Symposium 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-gvsets-2026 | 2026-08-11 | GVSETS 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-afcea-technet-augusta-2026 | 2026-08-17 | AFCEA TechNet Augusta 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-defense-techconnect-innovation-summit-2026 | 2026-09-22 | Defense TechConnect Innovation Summit 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-mosa-industry-government-summit-2026 | 2026-09-22 | MOSA Industry & Government Summit 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-ausa-annual-meeting-2026 | 2026-10-12 | AUSA Annual Meeting 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-imagine-nation-elc-2026 | 2026-10-25 | Imagine Nation ELC 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-deps-annual-directed-energy-symposium | 2026-11-01 | DEPS Annual Directed Energy Symposium | reasons: disallowed_source_domain, no_usable_external_url
+- radar-same-sbc-2026-small-business-conference | 2026-11-04 | SAME SBC 2026 (Small Business Conference) | reasons: disallowed_source_domain, no_usable_external_url
+- radar-i-itsec-2026 | 2026-11-30 | I/ITSEC 2026 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-spacecom-space-congress-2027 | 2027-01-11 | SpaceCom / Space Congress 2027 | reasons: disallowed_source_domain, no_usable_external_url
+- radar-aa-s-conference-2026 | null | AA&S Conference 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-advanced-manufacturing-for-defense-summit-2026 | null | Advanced Manufacturing for Defense Summit 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-afa-warfare-symposium-2027 | null | AFA Warfare Symposium 2027 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-aflcmc-life-cycle-industry-days-lcid-2026 | null | AFLCMC Life Cycle Industry Days (LCID) 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-afrl-classified-industry-day-2026 | null | AFRL Classified Industry Day 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-agc-fedcon-2026 | null | AGC FedCon 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-aiaa-aviation-2026 | null | AIAA Aviation 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-armored-vehicles-2026 | null | Armored Vehicles 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-ausa-annual-meeting-2027 | null | AUSA Annual Meeting 2027 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-ausa-global-force-2027 | null | AUSA Global Force 2027 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-autonomy-in-defense-2026 | null | Autonomy in Defense 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-ccad-depot-forum-2026 | null | CCAD Depot Forum 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-ctma-partners-meeting-2026-ncms | null | CTMA Partners Meeting 2026 (NCMS) | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-dayton-digital-transformation-2026 | null | Dayton Digital Transformation 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-dodiis-worldwide-conference-2026 | null | DoDIIS Worldwide Conference 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-future-indirect-fires-conference-2027 | null | Future Indirect Fires Conference 2027 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-hypersonic-technology-systems-conference | null | Hypersonic Technology & Systems Conference | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-letterkenny-modernization-industry-day-2026 | null | Letterkenny Modernization Industry Day 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-milsatcom-2026 | null | MILSATCOM 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-peo-aviation-uas-industry-days-2026 | null | PEO Aviation UAS Industry Days 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-pine-bluff-arsenal-industry-day-2026 | null | Pine Bluff Arsenal Industry Day 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-realize-live-2026-siemens | null | Realize LIVE 2026 (Siemens) | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-saspo-robins-afb-industry-day-2026 | null | SASPO Robins AFB Industry Day 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-se-defense-procurement-conference-2026 | null | SE Defense Procurement Conference 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-sea-air-space-2027 | null | Sea-Air-Space 2027 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-tri-regional-jets-2026-same-jacksonville | null | Tri-Regional JETS 2026 (SAME Jacksonville) | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-vets-conference-2026 | null | VETS Conference 2026 | reasons: not_future_or_missing_date, disallowed_source_domain, no_usable_external_url
+- radar-joint-fires-summit-2026 | 2026-02-18 | Joint Fires Summit 2026 | reasons: not_future_or_missing_date
+- radar-ramstein-ab-tech-expo | 2026-02-18 | Ramstein AB Tech Expo | reasons: not_future_or_missing_date
