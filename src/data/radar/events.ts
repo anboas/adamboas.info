@@ -274,14 +274,14 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Low'
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/radar/'
+				official: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -390,15 +390,15 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Low'
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/radar/',
-				agenda: 'https://www.adamboas.com/radar/'
+				official: 'https://www.adamboas.com/events/',
+				agenda: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -447,7 +447,7 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Low'
@@ -561,7 +561,7 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Low'
@@ -618,7 +618,7 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Low'
@@ -675,14 +675,14 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual historical record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Medium'
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/radar/'
+				official: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -732,15 +732,15 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Low'
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/radar/',
-				registration: 'https://www.adamboas.com/radar/'
+				official: 'https://www.adamboas.com/events/',
+				registration: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
@@ -789,14 +789,14 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/radar/',
+				url: 'https://www.adamboas.com/events/',
 				type: 'manual',
 				lastVerified: '2026-02-12',
 				confidence: 'Low'
 			}],
 			links: 
 			{
-				official: 'https://www.adamboas.com/radar/'
+				official: 'https://www.adamboas.com/events/'
 			},
 			logistics: 
 			{
