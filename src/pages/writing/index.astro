@@ -52,7 +52,7 @@ const items = [
 
 				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
 					<label class="sr-only" for="writing-search">Search writing</label>
-					<input id="writing-search" data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
+					<input id="writing-search" data-writing-search data-global-search class="w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
 					<button type="button" data-writing-clear class="shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
 					<a class="shrink-0 inline-flex h-8 items-center text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
 				</div>

@@ -850,3 +850,163 @@ a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0
 .paper-content td {
   @apply border border-slate-800 px-3 py-2;
 }
+
+/* Change Notes 2.0 */
+.changes-filter-bar {
+  position: sticky;
+  top: calc(58px + env(safe-area-inset-top));
+  z-index: 24;
+  background: rgb(2, 6, 23);
+}
+
+@media (min-width: 768px) {
+  .changes-filter-bar {
+    top: 0.75rem;
+  }
+}
+
+.change-tag-pill {
+  border-color: rgba(51, 65, 85, 0.85);
+  background: rgba(2, 6, 23, 0.82);
+  transition: border-color 140ms ease, background 140ms ease, color 140ms ease, opacity 140ms ease;
+}
+
+.change-tag-pill[aria-pressed="true"] {
+  border-color: rgba(20, 184, 166, 0.58);
+  background: rgba(20, 184, 166, 0.16);
+  color: rgba(240, 253, 250, 0.96);
+}
+
+.change-tag-pill[aria-pressed="false"] {
+  opacity: 0.72;
+}
+
+.change-tag-pill:hover {
+  border-color: rgba(45, 212, 191, 0.62);
+  opacity: 1;
+}
+
+.change-active-chip {
+  border: 1px solid rgba(71, 85, 105, 0.9);
+  background: rgba(2, 6, 23, 0.92);
+  color: rgba(226, 232, 240, 0.94);
+  font-size: 11px;
+  padding: 0.2rem 0.45rem;
+}
+
+.change-group-heading {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(148, 163, 184, 0.94);
+}
+
+.change-group[data-kind="added"] .change-group-heading {
+  color: rgba(110, 231, 183, 0.94);
+}
+
+.change-group[data-kind="changed"] .change-group-heading {
+  color: rgba(125, 211, 252, 0.94);
+}
+
+.change-group[data-kind="improved"] .change-group-heading {
+  color: rgba(196, 181, 253, 0.94);
+}
+
+.change-group[data-kind="fixed"] .change-group-heading {
+  color: rgba(251, 191, 36, 0.94);
+}
+
+/* Global keyboard shortcuts */
+.shortcuts-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+}
+
+.shortcuts-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.74);
+  border: 0;
+}
+
+.shortcuts-panel {
+  position: relative;
+  margin: min(10vh, 4rem) auto 0;
+  width: min(92vw, 44rem);
+}
+
+.shortcut-group-heading {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(148, 163, 184, 0.95);
+  font-weight: 700;
+}
+
+.shortcut-close-btn {
+  border: 1px solid rgba(51, 65, 85, 0.95);
+  background: rgba(2, 6, 23, 0.88);
+  color: rgba(226, 232, 240, 0.95);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.2rem 0.5rem;
+}
+
+.shortcut-nav-btn {
+  border: 1px solid rgba(51, 65, 85, 0.95);
+  background: rgba(2, 6, 23, 0.82);
+  color: rgba(226, 232, 240, 0.95);
+  padding: 0.25rem 0.6rem;
+}
+
+.shortcut-nav-btn:hover {
+  border-color: rgba(45, 212, 191, 0.6);
+  background: rgba(20, 184, 166, 0.12);
+}
+
+.shortcut-fab {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  z-index: 55;
+  border: 1px solid rgba(45, 212, 191, 0.5);
+  background: rgb(2, 6, 23);
+  color: rgba(226, 232, 240, 0.95);
+  width: 2.05rem;
+  height: 2.05rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.shortcut-fab:hover {
+  border-color: rgba(45, 212, 191, 0.75);
+  background: rgba(20, 184, 166, 0.16);
+}
+
+.shortcut-leader-pill {
+  position: fixed;
+  right: 0.8rem;
+  bottom: 3.25rem;
+  z-index: 56;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity 140ms ease, transform 140ms ease;
+  border: 1px solid rgba(71, 85, 105, 0.9);
+  background: rgba(2, 6, 23, 0.96);
+  color: rgba(226, 232, 240, 0.95);
+  padding: 0.4rem 0.55rem;
+  font-size: 0.72rem;
+}
+
+.shortcut-leader-pill.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.shortcuts-open {
+  overflow: hidden;
+}

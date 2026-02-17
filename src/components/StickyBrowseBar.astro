@@ -1,7 +1,7 @@
 ---
 import { withBase } from '../utils/withBase';
 
-const { active = 'writing' } = Astro.props as { active?: 'home' | 'writing' | 'events' | 'experience' | 'education' };
+const { active = 'writing' } = Astro.props as { active?: 'home' | 'writing' | 'events' | 'changes' | 'experience' | 'education' };
 
 function cls(key) {
 	return key === active
@@ -16,6 +16,7 @@ function cls(key) {
 			<a class={cls('home')} href={withBase('/')}>Home</a>
 			<a class={cls('writing')} href={withBase('/writing/')}>Writing</a>
 			<a class={cls('events')} href={withBase('/events/')}>Events</a>
+			<a class={cls('changes')} href={withBase('/changes/')}>Changes</a>
 			<a class={cls('experience')} href={withBase('/experience/')}>Experience</a>
 			<a class={cls('education')} href={withBase('/education/')}>Education</a>
 		</div>
