@@ -65,6 +65,36 @@ NSWC_ORG_FILTERS = [
     "NAVSEA",
 ]
 
+ARMY_ORG_FILTERS = [
+    "Department of the Army",
+    "Army Contracting Command",
+    "U.S. Army Corps of Engineers",
+    "Army Futures Command",
+    "Army Rapid Capabilities and Critical Technologies Office",
+]
+
+AIR_ORG_FILTERS = [
+    "Department of the Air Force",
+    "Air Force Life Cycle Management Center",
+    "Air Force Materiel Command",
+    "Air Force Research Laboratory",
+    "Space Systems Command",
+]
+
+MARINE_ORG_FILTERS = [
+    "United States Marine Corps",
+    "Marine Corps Systems Command",
+    "Marine Corps Installations Command",
+]
+
+JOINT_ORG_FILTERS = [
+    "Department of Defense",
+    "Defense Information Systems Agency",
+    "Defense Logistics Agency",
+    "Missile Defense Agency",
+    "U.S. Special Operations Command",
+]
+
 ENGAGEMENT_ORDER = ["Industry Day", "Pre-solicitation", "Sources Sought", "Vendor Outreach", "Special Notice"]
 
 
@@ -102,7 +132,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit", type=int, default=200)
     parser.add_argument("--max-pages", type=int, default=10)
     parser.add_argument("--ptypes", default="p,r,s,o,k", help="Comma-separated procurement types")
-    parser.add_argument("--profile", choices=["all", "navy", "nswc"], default="all")
+    parser.add_argument(
+        "--profile",
+        choices=["all", "navy", "nswc", "army", "air", "marine", "joint"],
+        default="all",
+    )
     parser.add_argument("--organization", action="append", default=[], help="Additional organizationName filters")
     parser.add_argument("--state", default=None, help="Optional place-of-performance state filter")
     parser.add_argument("--include-nonrelevant", action="store_true", help="Keep low-relevance rows")
@@ -353,10 +387,19 @@ def to_markdown(candidates: list[Candidate], posted_from: str, posted_to: str, p
 
 def select_org_filters(args: argparse.Namespace) -> list[str | None]:
     extra = [o for o in args.organization if o]
-    if args.profile == "navy":
-        return list(dict.fromkeys(NAVY_ORG_FILTERS + extra))
-    if args.profile == "nswc":
-        return list(dict.fromkeys(NSWC_ORG_FILTERS + extra))
+
+    profile_map: dict[str, list[str]] = {
+        "navy": NAVY_ORG_FILTERS,
+        "nswc": NSWC_ORG_FILTERS,
+        "army": ARMY_ORG_FILTERS,
+        "air": AIR_ORG_FILTERS,
+        "marine": MARINE_ORG_FILTERS,
+        "joint": JOINT_ORG_FILTERS,
+    }
+
+    if args.profile in profile_map:
+        return list(dict.fromkeys(profile_map[args.profile] + extra))
+
     if extra:
         return extra
     return [None]
