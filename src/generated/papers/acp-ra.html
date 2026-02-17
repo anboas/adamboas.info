@@ -313,24 +313,36 @@ block and excluding <code>evidence.envelopeHash</code> (to avoid self-reference)
 </div>
 <h2 id="consequence-tiers-and-required-controls">Consequence tiers and required controls</h2>
 <p>Trust scopes and ensembles reference consequence tiers explicitly. Consequence is the most effective way to translate “mission impact” into enforceable controls.</p>
-<div class="longtable">
-<p>@ &gt;</p>
-<p>p<span>(- 4) * </span> &gt;</p>
-<p>p<span>(- 4) * </span> &gt;</p>
-<p>p<span>(- 4) * </span>@</p>
-<p>Tier</p>
-<p>&amp;</p>
-<p>Representative activities (non-exhaustive)</p>
-<p>&amp;</p>
-<p>Minimum required controls</p>
-<p><br />
-<strong>T0 — Low</strong> &amp; drafting, summarization, analysis with read-only context &amp; NPE identity; data/tag controls; basic evidence logging; deny-by-default tool use<br />
-<strong>T1 — Moderate</strong> &amp; PR creation, ticket automation, config recommendations (no direct apply) &amp; tool mediation; budgets (tokens/tool calls/egress); baseline eval pack; drift monitoring<br />
-<strong>T2 — High</strong> &amp; executing changes in production, account/permission changes, external comms; GUI-based operations in controlled environments &amp; human-on-the-loop approvals; dual-control for sensitive actions; enhanced evidence; rollback rehearsal<br />
-<strong>T3 — Life/Safety / Mission-Critical</strong> &amp; actions affecting safety, critical infrastructure, or kinetic-adjacent effects
-&amp; strict deny-by-default; quorum approvals; constrained degraded modes; full-fidelity evidence on trigger; mandatory after-action review<br />
-</p>
-</div>
+<table>
+<tbody>
+<tr class="odd">
+<td>Tier</td>
+<td>Representative activities (non-exhaustive)</td>
+<td>Minimum required controls</td>
+</tr>
+<tr class="even">
+<td><strong>T0 — Low</strong></td>
+<td>drafting, summarization, analysis with read-only context</td>
+<td>NPE identity; data/tag controls; basic evidence logging; deny-by-default tool use</td>
+</tr>
+<tr class="odd">
+<td><strong>T1 — Moderate</strong></td>
+<td>PR creation, ticket automation, config recommendations (no direct apply)</td>
+<td>tool mediation; budgets (tokens/tool calls/egress); baseline eval pack; drift monitoring</td>
+</tr>
+<tr class="even">
+<td><strong>T2 — High</strong></td>
+<td>executing changes in production, account/permission changes, external comms; GUI-based operations in controlled environments</td>
+<td>human-on-the-loop approvals; dual-control for sensitive actions; enhanced evidence; rollback rehearsal</td>
+</tr>
+<tr class="odd">
+<td><strong>T3 — Life/Safety /
+Mission-Critical</strong></td>
+<td>actions affecting safety, critical infrastructure, or kinetic-adjacent effects</td>
+<td>strict deny-by-default; quorum approvals; constrained degraded modes; full-fidelity evidence on trigger; mandatory after-action review</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Composition rule:</strong> when scopes combine (agent→agent, agent→ensemble, cross-enclave), authority composes by
 <strong>intersection</strong>, not union. The effective authority is the overlap of allowed actions, data, and environments—never the sum.</p>
 <div class="center">
@@ -574,26 +586,40 @@ evaluated + constrained)</p></li>
 <code>policyBundleRef</code> hashes before accepting tasks or messages. Unknown or unverified policy artifacts result in refusal, quarantine, or escalation per policy.</p>
 <h3 id="a2a-mcp-crosswalk-how-both-map-to-acp-boundaries">A2A &lt;-&gt; MCP crosswalk (how both map to ACP boundaries)</h3>
 <p>A2A and MCP address different interoperability surfaces. The ACP governs both by applying the same policy primitives—identity, trust scope, budgets, and evidence—at the appropriate gateway.</p>
-<div class="longtable">
-<p>@ &gt;</p>
-<p>p<span>(- 6) * </span> &gt;</p>
-<p>p<span>(- 6) * </span> &gt;</p>
-<p>p<span>(- 6) * </span> &gt;</p>
-<p>p<span>(- 6) * </span>@</p>
-<p>Interop surface</p>
-<p>&amp;</p>
-<p>Typical protocol family</p>
-<p>&amp;</p>
-<p>ACP enforcement boundary</p>
-<p>&amp;</p>
-<p>Governance focus</p>
-<p><br />
-Agent &lt;-&gt; Agent (delegation, coordination, swarm messaging) &amp; A2A or equivalent &amp; Inter-Agent Gateway (IAG) &amp; peer allowlists, message-type schemas, fan-out limits, cascade breakers, message provenance, ensemble graph evidence<br />
-Agent &lt;-&gt; Tool/Data connectors (capabilities, resources, data access) &amp; MCP or equivalent &amp; Tool/Action Gateway + Context/Data Gateway &amp; tool allowlists, connector provenance tiers, consent/permissions, sampling controls, connector attestation, context provenance<br />
-Tool/Connector requests model sampling &amp; MCP sampling flows or equivalents &amp; Model Gateway (with policy hooks) &amp; model selection control, budget enforcement, evidence capture, deny-by-default for server-initiated sampling when prohibited<br />
-Agent output becomes executable action &amp; N/A &amp; Tool/Action Gateway &amp; approvals/quorums, sandboxing, secrets brokerage, action envelopes, rollback/replay<br />
-</p>
-</div>
+<table>
+<tbody>
+<tr class="odd">
+<td>Interop surface</td>
+<td>Typical protocol family</td>
+<td>ACP enforcement boundary</td>
+<td>Governance focus</td>
+</tr>
+<tr class="even">
+<td>Agent &lt;-&gt; Agent (delegation, coordination, swarm messaging)</td>
+<td>A2A or equivalent</td>
+<td>Inter-Agent Gateway (IAG)</td>
+<td>peer allowlists, message-type schemas, fan-out limits, cascade breakers, message provenance, ensemble graph evidence</td>
+</tr>
+<tr class="odd">
+<td>Agent &lt;-&gt; Tool/Data connectors (capabilities, resources, data access)</td>
+<td>MCP or equivalent</td>
+<td>Tool/Action Gateway + Context/Data Gateway</td>
+<td>tool allowlists, connector provenance tiers, consent/permissions, sampling controls, connector attestation, context provenance</td>
+</tr>
+<tr class="even">
+<td>Tool/Connector requests model sampling</td>
+<td>MCP sampling flows or equivalents</td>
+<td>Model Gateway (with policy hooks)</td>
+<td>model selection control, budget enforcement, evidence capture, deny-by-default for server-initiated sampling when prohibited</td>
+</tr>
+<tr class="odd">
+<td>Agent output becomes executable action</td>
+<td>N/A</td>
+<td>Tool/Action Gateway</td>
+<td>approvals/quorums, sandboxing, secrets brokerage, action envelopes, rollback/replay</td>
+</tr>
+</tbody>
+</table>
 <p>The design goal is not to predict which protocol dominates. The goal is to ensure that whichever protocols are used, they terminate at governed boundaries with consistent controls.</p>
 <h3 id="standards-touchpoints-non-normative">Standards touchpoints (non-normative)</h3>
 <p>ACP is compatible with multiple standards-based identity and authorization approaches. Implementations MAY select one or more of the following patterns:</p>
