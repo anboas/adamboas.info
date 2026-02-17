@@ -213,11 +213,11 @@ const writingUrl = absoluteUrl('/writing/');
 	/>
 	{kind === 'paper' ? (
 		<>
-			<div class="writing-actions-bar mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-				<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
+			<div class="writing-actions-bar mb-2 flex items-center gap-2 overflow-x-auto whitespace-nowrap md:mb-3 md:flex-row md:items-center md:justify-between md:overflow-visible md:whitespace-normal">
+				<a class="shrink-0 text-xs text-slate-400 hover:text-slate-200 md:text-sm" href={withBase('/writing/')}>
 					← Writing
 				</a>
-				<div class="flex flex-wrap items-center gap-2">
+				<div class="flex flex-nowrap items-center gap-2 md:flex-wrap">
 					{paper.data.pdfPath && (
 						<a
 							class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
@@ -229,7 +229,7 @@ const writingUrl = absoluteUrl('/writing/');
 						>
 							<span>PDF</span>
 							{pdfInfo && (
-								<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
+								<span class="ml-2 hidden text-xs font-normal text-slate-300 group-hover:text-slate-200 sm:inline">
 									{pdfInfo.pages ? `${pdfInfo.pages}p` : ''}{pdfInfo.pages && pdfInfo.size ? ' • ' : ''}{pdfInfo.size ? pdfInfo.size : ''}
 								</span>
 							)}
@@ -303,11 +303,11 @@ const writingUrl = absoluteUrl('/writing/');
 		</>
 	) : (
 		<>
-			<div class="writing-actions-bar mb-3 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-				<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/writing/')}>
+			<div class="writing-actions-bar mb-2 flex items-center gap-2 overflow-x-auto whitespace-nowrap md:mb-3 md:flex-row md:items-center md:justify-between md:overflow-visible md:whitespace-normal">
+				<a class="shrink-0 text-xs text-slate-400 hover:text-slate-200 md:text-sm" href={withBase('/writing/')}>
 					← Writing
 				</a>
-				<div class="flex flex-wrap items-center gap-2">
+				<div class="flex flex-nowrap items-center gap-2 md:flex-wrap">
 					{writingItem.data.pdfPath ? (
 						<a
 							class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
@@ -319,7 +319,7 @@ const writingUrl = absoluteUrl('/writing/');
 						>
 							<span>PDF</span>
 							{writingPdfInfo && (
-								<span class="ml-2 text-xs font-normal text-slate-300 group-hover:text-slate-200">
+								<span class="ml-2 hidden text-xs font-normal text-slate-300 group-hover:text-slate-200 sm:inline">
 									{writingPdfInfo.pages ? `${writingPdfInfo.pages}p` : ''}{writingPdfInfo.pages && writingPdfInfo.size ? ' • ' : ''}{writingPdfInfo.size ? writingPdfInfo.size : ''}
 								</span>
 							)}

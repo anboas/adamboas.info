@@ -478,17 +478,17 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 
 /* Writing detail layout upgrades */
 .writing-actions-bar {
-  position: sticky;
-  top: calc(58px + env(safe-area-inset-top));
+  position: relative;
   z-index: 25;
-  padding: 0.5rem;
+  padding: 0.35rem 0.45rem;
   border: 1px solid rgba(51, 65, 85, 0.7);
   background: rgba(2, 6, 23, 0.92);
-  backdrop-filter: blur(4px);
+  backdrop-filter: none;
 }
 
 @media (min-width: 768px) {
   .writing-actions-bar {
+    position: sticky;
     top: 0.5rem;
     padding: 0.5rem 0.25rem;
   }
