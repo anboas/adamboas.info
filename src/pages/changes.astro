@@ -21,12 +21,63 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v1.5.2',
+		date: '2026-02-17',
+		title: 'Events cost visibility in compact + detailed views',
+		summary: 'Registration cost now appears in event cards and metadata views only when cost data is actually tracked.',
+		impact: 'Improves decision-readiness while keeping cards clean when cost data is absent.',
+		current: true,
+		tags: ['events', 'ux', 'data'],
+		groups: [
+			{
+				kind: 'Added',
+				items: ['Compact card metadata now includes `Reg: <amount>` when registration cost exists.'],
+			},
+			{
+				kind: 'Changed',
+				items: ['Detailed logistics now conditionally renders estimated cost only when tracked.'],
+			},
+			{
+				kind: 'Improved',
+				items: ['Cost rendering now avoids separators/placeholders when cost is missing.'],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
+		version: 'v1.5.1',
+		date: '2026-02-17',
+		title: 'Cohesion pass + accessibility hardening',
+		summary: 'Aligned nav behavior and closed a critical Events accessibility gap found in regression checks.',
+		impact: 'More consistent navigation behavior and stronger accessibility confidence on core pages.',
+		tags: ['navigation', 'ux', 'accessibility', 'events'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Extended overflow and axe critical checks to include `/events/` and `/changes/`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: ['Kept Changes discoverability footer-only across desktop and mobile surfaces.'],
+			},
+			{
+				kind: 'Improved',
+				items: ['Tightened Events view consistency during compact/detailed mode passes.'],
+			},
+			{
+				kind: 'Fixed',
+				items: ['Resolved critical axe issue: `#radar-sort` now has an accessible name (`aria-label`).'],
+			},
+		],
+	},
+	{
 		version: 'v1.5.0',
 		date: '2026-02-16',
 		title: 'Change Notes 2.0 + global keyboard shortcuts',
 		summary: 'Upgraded release notes into a filterable capability log and added site-wide keyboard navigation.',
 		impact: 'Faster wayfinding and faster release comprehension with less click friction.',
-		current: true,
 		tags: ['changes', 'navigation', 'ux', 'productivity'],
 		groups: [
 			{
