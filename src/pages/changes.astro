@@ -1,0 +1,165 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../components/StickyBrowseBar.astro';
+
+type Release = {
+	version: string;
+	date: string;
+	title: string;
+	summary: string;
+	groups: { heading: string; items: string[] }[];
+	current?: boolean;
+};
+
+const releases: Release[] = [
+	{
+		version: 'v1.3.0',
+		date: '2026-02-16',
+		title: 'DoW Event Tracker + reading polish',
+		summary: 'Renamed and repositioned Radar into an Events-first tracker while finalizing writing-page reading ergonomics.',
+		current: true,
+		groups: [
+			{
+				heading: 'Events tracker',
+				items: [
+					'Reworked /radar/ into /events/ as a DoW Event Tracker (no legacy route kept).',
+					'Updated site navigation labels from Radar to Events.',
+					'Kept date-first event filtering, map/list workflow, and ontology detail drill-downs under the new framing.',
+				],
+			},
+			{
+				heading: 'Reading layout',
+				items: [
+					'Implemented a right-rail table of contents for long-form writing that tracks active section while scrolling.',
+					'Ensured TOC behavior stays out of the reading column and fixed edge clipping/scrollbar handling on ultra-wide layouts.',
+					'Restored full reading-pane width while preserving side-rail navigation.',
+				],
+			},
+			{
+				heading: 'Writing index controls',
+				items: [
+					'Condensed top controls into a single compact shell.',
+					'Replaced type dropdown with clickable Paper/Note/Memo toggle pills.',
+					'Removed redundant type-summary chip row to keep controls scan-fast.',
+				],
+			},
+		],
+	},
+	{
+		version: 'v1.2.0',
+		date: '2026-02-16',
+		title: 'ACP-RA publication hardening',
+		summary: 'Stabilized canonical ACP-RA build and publication flow from source to live site.',
+		groups: [
+			{
+				heading: 'Canonical paper pipeline',
+				items: [
+					'Restored ACP-RA to canonical TeX-on-main build path and resolved branch drift.',
+					'Added shared preamble compatibility updates needed for deterministic table rendering.',
+					'Fixed compile blockers and shipped successful canonical artifacts through CI.',
+				],
+			},
+			{
+				heading: 'Issue-driven refinement',
+				items: [
+					'Captured and closed ACP-RA issue sets (#91-#108 and #110-#113) with implemented text/spec updates.',
+					'Published refreshed ACP-RA outputs to the live writing page and verified content parity.',
+				],
+			},
+		],
+	},
+	{
+		version: 'v1.1.0',
+		date: '2026-02-13',
+		title: 'Radar scale + governance simplification',
+		summary: 'Scaled event ingestion and simplified user-facing controls around date urgency.',
+		groups: [
+			{
+				heading: 'Event intelligence coverage',
+				items: [
+					'Expanded event inventory with source-priority ingestion and dedupe passes.',
+					'Standardized event terminology and reduced noisy control patterns.',
+				],
+			},
+			{
+				heading: 'UX simplification',
+				items: [
+					'Removed pin/preset complexity and centered prioritization on clear date-driven urgency.',
+					'Set past events hidden by default with explicit reveal controls.',
+				],
+			},
+		],
+	},
+	{
+		version: 'v1.0.0',
+		date: '2026-02-12',
+		title: 'Publishing baseline',
+		summary: 'Established the modern writing/publishing baseline for papers, notes, and memos.',
+		groups: [
+			{
+				heading: 'Core publishing system',
+				items: [
+					'Unified writing detail UX with consistent controls and SEO-ready OG assets.',
+					'Locked deterministic Whitepaper -> site sync/deploy workflow for repeatable releases.',
+				],
+			},
+			{
+				heading: 'Compliance and reliability',
+				items: [
+					'Added dual legal coverage for code and writing/content with dedicated license pages.',
+					'Hardened CI checks and site deploy reliability for continuous publication.',
+				],
+			},
+		],
+	},
+];
+
+const current = releases.find((r) => r.current) ?? releases[0];
+---
+
+<SiteLayout
+	title="Change Notes | Adam Boas"
+	description="Public release notes and grouped change history for adamboas.com."
+	canonicalHref="https://www.adamboas.com/changes/"
+>
+	<StickyBrowseBar active="writing" />
+	<section class="space-y-5">
+		<header class="card p-5">
+			<h1 class="text-2xl font-semibold text-slate-50 sm:text-3xl">Change Notes</h1>
+			<p class="mt-2 text-sm text-slate-300">
+				Public release tracker for major site updates. This log groups related work into versioned releases.
+			</p>
+			<div class="mt-3 flex flex-wrap items-center gap-2 text-xs">
+				<span class="rounded-none border border-emerald-700/70 bg-emerald-900/20 px-2 py-1 text-emerald-200">Current: {current.version}</span>
+				<span class="rounded-none border border-slate-700 px-2 py-1 text-slate-300">Released {current.date}</span>
+				<span class="rounded-none border border-slate-700 px-2 py-1 text-slate-300">{current.title}</span>
+			</div>
+		</header>
+
+		<div class="space-y-4">
+			{releases.map((release) => (
+				<article class="card p-5" id={release.version.toLowerCase()}>
+					<div class="flex flex-wrap items-center gap-2 text-xs">
+						<span class={`rounded-none border px-2 py-1 ${release.current ? 'border-emerald-700/70 bg-emerald-900/20 text-emerald-200' : 'border-slate-700 text-slate-300'}`}>
+							{release.version}
+						</span>
+						<span class="text-slate-400">{release.date}</span>
+					</div>
+					<h2 class="mt-2 text-xl font-semibold text-slate-50">{release.title}</h2>
+					<p class="mt-1 text-sm text-slate-300">{release.summary}</p>
+
+					<div class="mt-4 grid gap-4 md:grid-cols-2">
+						{release.groups.map((group) => (
+							<section>
+								<h3 class="text-xs font-semibold uppercase tracking-wide text-slate-400">{group.heading}</h3>
+								<ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-slate-200">
+									{group.items.map((item) => <li>{item}</li>)}
+								</ul>
+							</section>
+						))}
+					</div>
+				</article>
+			))}
+		</div>
+	</section>
+</SiteLayout>
