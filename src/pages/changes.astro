@@ -21,32 +21,33 @@ type Release = {
 
 const releases: Release[] = [
 	{
-		version: 'v1.5.7',
+		version: 'v2.0.0',
 		date: '2026-02-17',
-		title: 'Events ops-mode toggles for overlay workflows',
-		summary: 'Added fast mode toggles that instantly switch Events into opportunity-ops or conference-ops scanning configurations.',
-		impact: 'You can jump between contracting-action mode and partner-engagement mode without manually resetting multiple filters.',
+		title: 'Navy / NSWC priority overlay with SAM-linked operations mode',
+		summary: 'Major Events workflow update: introduced Navy-surface-warfare-center focused ops mode, explicit Navy focus filtering, and direct SAM opportunity linking in card/map/detail surfaces.',
+		impact: 'This shifts Events from a generic mixed feed into an actionable contracting workbench with dedicated Navy/NSWC prioritization and traceable SAM access paths.',
 		current: true,
-		tags: ['events', 'filters', 'ux', 'operations'],
+		tags: ['events', 'acquisition', 'navy', 'operations'],
 		groups: [
 			{
 				kind: 'Added',
 				items: [
-					'Opportunity ops mode preset (`source=opportunity`, engagement signals on, upcoming only, soonest sort).',
-					'Conference ops mode preset (`source=conference`, scan-oriented soonest sort, no past noise).',
-					'Preset active-state tracking for mode buttons and mode chips in the active-filter strip.',
+					'Navy / warfare-center signal detection with dedicated filter (`Navy / NSWC focus`) and one-click preset.',
+					'New Navy / NSWC ops mode preset (`source=opportunity`, gov engagement on, navy focus on, upcoming only, soonest sort).',
+					'Direct SAM links on event cards and in map popups/details when SAM provenance is available.',
 				],
 			},
 			{
 				kind: 'Changed',
 				items: [
-					'Preset event handler now supports mode-level state bundles in addition to single filter toggles.',
+					'Ops mode model now supports three lanes: opportunity ops, conference ops, and navy/nswc ops.',
+					'Summary metrics now surface Navy/warfare-center signal counts alongside SAM notice totals.',
 				],
 			},
 			{
 				kind: 'Improved',
 				items: [
-					'Overlay controls remain compact while enabling multi-filter transitions with one click.',
+					'Overlay controls preserve compact scan speed while adding branch-specific mission focus.',
 				],
 			},
 			{ kind: 'Fixed', items: [] },
