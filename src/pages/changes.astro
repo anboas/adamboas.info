@@ -21,12 +21,43 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v1.5.7',
+		date: '2026-02-17',
+		title: 'Events ops-mode toggles for overlay workflows',
+		summary: 'Added fast mode toggles that instantly switch Events into opportunity-ops or conference-ops scanning configurations.',
+		impact: 'You can jump between contracting-action mode and partner-engagement mode without manually resetting multiple filters.',
+		current: true,
+		tags: ['events', 'filters', 'ux', 'operations'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Opportunity ops mode preset (`source=opportunity`, engagement signals on, upcoming only, soonest sort).',
+					'Conference ops mode preset (`source=conference`, scan-oriented soonest sort, no past noise).',
+					'Preset active-state tracking for mode buttons and mode chips in the active-filter strip.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Preset event handler now supports mode-level state bundles in addition to single filter toggles.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Overlay controls remain compact while enabling multi-filter transitions with one click.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v1.5.6',
 		date: '2026-02-17',
 		title: 'Events overlay lens + SAM-vs-conference visual coding',
 		summary: 'Added explicit source-layer filtering and visual differentiation so SAM official notices can be overlaid against conference/workshop/hackathon events without ambiguity.',
 		impact: 'You can now compare opportunity notices and conference ecosystem activity in one view while still quickly isolating each channel when needed.',
-		current: true,
 		tags: ['events', 'filters', 'ux', 'acquisition'],
 		groups: [
 			{

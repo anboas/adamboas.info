@@ -180,6 +180,8 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 			</div>
 			<div class="mt-3 radar-preset-row">
+				<button type="button" class="radar-preset-btn" data-radar-mode-preset="opportunity-ops">Opportunity ops mode</button>
+				<button type="button" class="radar-preset-btn" data-radar-mode-preset="conference-ops">Conference ops mode</button>
 				<button type="button" class="radar-preset-btn" data-radar-preset="all">All events</button>
 				<button type="button" class="radar-preset-btn" data-radar-source-preset="conference">Conferences only</button>
 				<button type="button" class="radar-preset-btn" data-radar-preset="opportunity">Gov opportunity signals</button>
@@ -445,7 +447,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
-	const presetButtons = Array.from(document.querySelectorAll('[data-radar-preset], [data-radar-source-preset]'));
+	const presetButtons = Array.from(document.querySelectorAll('[data-radar-preset], [data-radar-source-preset], [data-radar-mode-preset]'));
 
 	let compactMode = true;
 	let mapVisible = true;
@@ -851,21 +853,56 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('Verified only');
 		if (state.showPast) chips.push('Including past');
+		if (isOpportunityOpsMode(state)) chips.push('Mode: Opportunity ops');
+		if (isConferenceOpsMode(state)) chips.push('Mode: Conference ops');
 		if (!chips.length) chips.push('No active filters');
 		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
+	}
+
+	function isOpportunityOpsMode(state) {
+		return (
+			state.source === 'opportunity' &&
+			state.engagement === '__opportunity__' &&
+			state.sort === 'soonest' &&
+			state.upcoming &&
+			!state.verified &&
+			!state.showPast &&
+			!state.q &&
+			!state.branch &&
+			!state.type &&
+			!state.status
+		);
+	}
+
+	function isConferenceOpsMode(state) {
+		return (
+			state.source === 'conference' &&
+			!state.engagement &&
+			state.sort === 'soonest' &&
+			!state.upcoming &&
+			!state.verified &&
+			!state.showPast &&
+			!state.q &&
+			!state.branch &&
+			!state.type &&
+			!state.status
+		);
 	}
 
 	function updatePresetButtons(state) {
 		for (const button of presetButtons) {
 			const preset = button.dataset.radarPreset;
 			const sourcePreset = button.dataset.radarSourcePreset;
+			const modePreset = button.dataset.radarModePreset;
 			let active = false;
 			if (preset === 'all') {
-				active = !state.engagement && !state.source && !state.q && !state.branch && !state.type && !state.status && !state.upcoming && !state.verified;
+				active = !state.engagement && !state.source && !state.q && !state.branch && !state.type && !state.status && !state.upcoming && !state.verified && !state.showPast;
 			}
 			if (preset === 'opportunity') active = state.engagement === '__opportunity__';
 			if (preset && !['all', 'opportunity'].includes(preset)) active = state.engagement === preset;
 			if (sourcePreset) active = state.source === sourcePreset;
+			if (modePreset === 'opportunity-ops') active = isOpportunityOpsMode(state);
+			if (modePreset === 'conference-ops') active = isConferenceOpsMode(state);
 			button.classList.toggle('is-active', active);
 		}
 	}
@@ -952,8 +989,36 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		button.addEventListener('click', () => {
 			const preset = button.dataset.radarPreset;
 			const sourcePreset = button.dataset.radarSourcePreset;
-			if (!preset && !sourcePreset) return;
-			if (preset === 'all') {
+			const modePreset = button.dataset.radarModePreset;
+			if (!preset && !sourcePreset && !modePreset) return;
+
+			if (modePreset === 'opportunity-ops') {
+				applyState({
+					q: '',
+					branch: '',
+					type: '',
+					status: '',
+					engagement: '__opportunity__',
+					source: 'opportunity',
+					sort: 'soonest',
+					upcoming: true,
+					verified: false,
+					showPast: false,
+				});
+			} else if (modePreset === 'conference-ops') {
+				applyState({
+					q: '',
+					branch: '',
+					type: '',
+					status: '',
+					engagement: '',
+					source: 'conference',
+					sort: 'soonest',
+					upcoming: false,
+					verified: false,
+					showPast: false,
+				});
+			} else if (preset === 'all') {
 				applyState({ ...stateFromUI(), engagement: '', source: '' });
 			} else if (preset === 'opportunity') {
 				applyState({ ...stateFromUI(), engagement: '__opportunity__' });
