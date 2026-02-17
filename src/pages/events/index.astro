@@ -1019,6 +1019,16 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
 	}
 
+	function isFallbackCoordinate(lat, lng) {
+		return Math.abs(lat - 39.5) < 1e-6 && Math.abs(lng + 98.35) < 1e-6;
+	}
+
+	function isMappableCoordinate(lat, lng) {
+		if (!Number.isFinite(lat) || !Number.isFinite(lng)) return false;
+		if (lat < -90 || lat > 90 || lng < -180 || lng > 180) return false;
+		if (isFallbackCoordinate(lat, lng)) return false;
+		return true;
+	}
 
 	function renderMap(visibleCards) {
 		const cardsForMap = visibleCards.length ? visibleCards : cards;
@@ -1038,7 +1048,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		for (const card of cardsForMap) {
 			const lat = Number(card.dataset.lat || '');
 			const lng = Number(card.dataset.lng || '');
-			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
+			if (!isMappableCoordinate(lat, lng)) continue;
 			const days = parseDays(card.dataset.days);
 			const tone = typeTone(card.dataset.type);
 			const eventId = card.dataset.id || '';

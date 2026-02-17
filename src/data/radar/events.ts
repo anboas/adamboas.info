@@ -6197,8 +6197,8 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Ramstein-Miesenbach',
 			country: 'Germany',
-			lat: 39.5,
-			lng: -98.35
+			lat: 49.4447,
+			lng: 7.5562
 		},
 		ontology: 
 		{
@@ -6254,8 +6254,8 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Wiesbaden',
 			country: 'Germany',
-			lat: 39.5,
-			lng: -98.35
+			lat: 50.0782,
+			lng: 8.2398
 		},
 		ontology: 
 		{
@@ -6310,8 +6310,8 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Grafenwoehr',
 			country: 'Germany',
-			lat: 39.5,
-			lng: -98.35
+			lat: 49.723,
+			lng: 11.906
 		},
 		ontology: 
 		{
@@ -6534,8 +6534,8 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Stuttgart',
 			country: 'Germany',
-			lat: 39.5,
-			lng: -98.35
+			lat: 48.7758,
+			lng: 9.1829
 		},
 		ontology: 
 		{
@@ -6647,8 +6647,8 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Stuttgart',
 			country: 'Germany',
-			lat: 39.5,
-			lng: -98.35
+			lat: 48.7758,
+			lng: 9.1829
 		},
 		ontology: 
 		{
@@ -8176,8 +8176,8 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Spangdahlem',
 			country: 'Germany',
-			lat: 39.5,
-			lng: -98.35
+			lat: 49.9858,
+			lng: 6.6918
 		},
 		ontology: 
 		{
@@ -8286,10 +8286,10 @@ export const radarEventsSeed: RadarEvent[] = [
 		effort: 'Medium',
 		location: 
 		{
-			city: 'Stuttgart Germany',
-			country: 'USA',
-			lat: 39.5,
-			lng: -98.35
+			city: 'Stuttgart',
+			country: 'Germany',
+			lat: 48.7758,
+			lng: 9.1829
 		},
 		ontology: 
 		{
@@ -8344,8 +8344,8 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Stuttgart',
 			country: 'Germany',
-			lat: 39.5,
-			lng: -98.35
+			lat: 48.7758,
+			lng: 9.1829
 		},
 		ontology: 
 		{
