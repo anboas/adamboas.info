@@ -21,36 +21,34 @@ type Release = {
 
 const releases: Release[] = [
 	{
-		version: 'v2.0.0',
+		version: 'v2.0.1',
 		date: '2026-02-17',
-		title: 'Navy / NSWC priority overlay with SAM-linked operations mode',
-		summary: 'Major Events workflow update: introduced Navy-surface-warfare-center focused ops mode, explicit Navy focus filtering, and direct SAM opportunity linking in card/map/detail surfaces.',
-		impact: 'This shifts Events from a generic mixed feed into an actionable contracting workbench with dedicated Navy/NSWC prioritization and traceable SAM access paths.',
+		title: 'Conference-first tracker cleanup with deeper BD/evidence overlays',
+		summary: 'Re-centered Events on conference tracking while keeping SAM/opportunity intelligence in detailed metadata through engagement and evidence overlays.',
+		impact: 'The interface is cleaner for fast event scanning, and BD/opportunity depth is preserved where it matters: inside detailed event analysis.',
 		current: true,
-		tags: ['events', 'acquisition', 'navy', 'operations'],
+		tags: ['events', 'acquisition', 'operations', 'ux'],
 		groups: [
 			{
 				kind: 'Added',
 				items: [
-					'Navy / warfare-center signal detection with dedicated filter (`Navy / NSWC focus`) and one-click preset.',
-					'New Navy / NSWC ops mode preset (`source=opportunity`, gov engagement on, navy focus on, upcoming only, soonest sort).',
-					'Direct SAM links on event cards and in map popups/details when SAM provenance is available.',
 					'New BD engagement + contacts metadata block (status, owner, next action, touch date, contact list) in expanded event details.',
 					'New evidence-health view per source (`Fresh/Watch/Stale`) with timestamp-aware provenance badges.',
+					'Direct SAM links in map popups and metadata links section when SAM provenance is available.',
 				],
 			},
 			{
 				kind: 'Changed',
 				items: [
-					'Ops mode model now supports three lanes: opportunity ops, conference ops, and navy/nswc ops.',
-					'Summary metrics now surface Navy/warfare-center signal counts alongside SAM notice totals.',
+					'Re-centered Events to conference-first controls (removed explicit opportunity/navy top-level filter clutter).',
+					'Opportunity and Navy/NSWC signals now show as contextual overlays in detailed event metadata instead of dominating top controls.',
 				],
 			},
 			{
 				kind: 'Improved',
 				items: [
-					'Overlay controls were de-cluttered by collapsing quick actions to primary ops modes plus clear.',
 					'Removed duplicate notice labeling when it repeats an existing engagement signal tag.',
+					'Compact summary strip now prioritizes scan-critical conference metrics (total, upcoming, industry-day, next window, needs-date).',
 				],
 			},
 			{ kind: 'Fixed', items: [] },

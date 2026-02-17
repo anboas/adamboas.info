@@ -121,18 +121,12 @@ function noticeTypeLabel(event: (typeof events)[number]) {
 }
 
 const industryDayCount = events.filter((event) => inferEngagementKinds(event).includes('Industry Day')).length;
-const opportunitySignalCount = events.filter((event) => isGovOpportunitySignal(event)).length;
-const samNoticeCount = events.filter((event) => isSamOfficialNotice(event)).length;
-const navySurfaceCount = events.filter((event) => isNavySurfaceSignal(event)).length;
 
 const summaryStats = {
 	total: events.length,
 	upcoming: events.filter((e) => e.status === 'Upcoming').length,
 	needsDate: events.filter((e) => e.status === 'Needs Date').length,
 	industryDays: industryDayCount,
-	opportunitySignals: opportunitySignalCount,
-	samNotices: samNoticeCount,
-	navySurfaceSignals: navySurfaceCount,
 	nextInDays: nextUpcomingDays.length ? Math.min(...nextUpcomingDays) : null,
 };
 
@@ -244,15 +238,9 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			<div class="mt-3 flex flex-wrap gap-2">
 				<span class="radar-mini-stat">{summaryStats.total} events</span>
 				<span class="radar-mini-stat">{summaryStats.upcoming} upcoming</span>
-				<span class="radar-mini-stat">{summaryStats.navySurfaceSignals} navy / warfare center signals</span>
-				<span class="radar-mini-stat">{summaryStats.samNotices} SAM official notices</span>
+				<span class="radar-mini-stat">{summaryStats.industryDays} industry days</span>
 				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
-			</div>
-			<div class="mt-3 radar-preset-row">
-				<button type="button" class="radar-preset-btn" data-radar-mode-preset="opportunity-ops">Opportunity ops</button>
-				<button type="button" class="radar-preset-btn" data-radar-mode-preset="navy-ops">Navy / NSWC ops</button>
-				<button type="button" class="radar-preset-btn" data-radar-mode-preset="conference-ops">Conference ops</button>
-				<button type="button" class="radar-preset-btn" data-radar-preset="all">Clear</button>
+				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 			</div>
 			<div class="mt-3 border-t border-slate-800 pt-3 radar-filter-wrap">
 				<details id="radar-filter-panel" class="radar-filter-panel">
@@ -273,18 +261,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 							<option value="">All statuses</option>
 							{statuses.map((status) => <option value={status}>{status}</option>)}
 						</select>
-						<select id="radar-engagement" class="radar-input" aria-label="Filter by engagement signal">
-							<option value="">All engagement signals</option>
-							<option value="__opportunity__">Gov opportunity signals</option>
-							{engagementKinds.map((kind) => <option value={kind}>{kind}</option>)}
-						</select>
-						<select id="radar-source" class="radar-input" aria-label="Filter by source layer">
-							<option value="">All source layers</option>
-							<option value="conference">Conferences/workshops/hackathons</option>
-							<option value="opportunity">Government opportunity signals</option>
-							<option value="sam">SAM.gov official notices</option>
-						</select>
-						<label class="radar-check"><input id="radar-navy-focus" type="checkbox" /><span>Navy / NSWC focus</span></label>
 						<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
 						<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>Verified only</span></label>
 						<label class="radar-check"><input id="radar-show-past" type="checkbox" /><span>Show past</span></label>
@@ -348,11 +324,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 							data-sam-link={samOpportunityLink(event) ?? ''}
 							data-lat={event.location.lat}
 							data-lng={event.location.lng}
-							data-opportunity={isGovOpportunitySignal(event) ? '1' : '0'}
-							data-source={sourceLayer(event)}
-							data-navy-focus={isNavySurfaceSignal(event) ? '1' : '0'}
-							data-engagement={inferEngagementKinds(event).join('|')}
-							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence} ${p.name}`).join(' ')} ${inferEngagementKinds(event).join(' ')} ${noticeTypeLabel(event) ?? ''} ${sourceLayer(event)}`.toLowerCase()}
+							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence} ${p.name}`).join(' ')} ${inferEngagementKinds(event).join(' ')} ${noticeTypeLabel(event) ?? ''}`.toLowerCase()}
 						>
 							<div class="flex flex-wrap items-start justify-between gap-3">
 								<div class="min-w-0 flex-1">
@@ -366,26 +338,15 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 									<div class="flex items-center gap-2">
 										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
 										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Link</a> : null}
-										{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <a class="radar-pin-btn radar-link-btn radar-link-btn-sam" href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM</a> : null}
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 									</div>
 									<p class="radar-card-kicker">{event.branch} · {event.type} · {event.status}</p>
-									{sourceLayer(event) === 'sam' ? <p class="radar-source-tag radar-source-tag-sam">SAM.gov notice</p> : null}
-									{sourceLayer(event) === 'opportunity' ? <p class="radar-source-tag radar-source-tag-opportunity">Gov opportunity signal</p> : null}
-									{isNavySurfaceSignal(event) ? <p class="radar-source-tag radar-source-tag-navy">Navy / warfare center</p> : null}
 								</div>
 							</div>
 
 							<div class="mt-3 flex flex-wrap gap-2 radar-theme-row">
 								{event.ontology.themes.slice(0, 4).map((theme) => <span class="radar-pill">{theme}</span>)}
 							</div>
-
-							{(inferEngagementKinds(event).length || displayNoticeLabel(event)) ? (
-								<div class="mt-2 flex flex-wrap items-center gap-2 radar-opportunity-row">
-									{inferEngagementKinds(event).map((kind) => <span class="radar-opportunity-pill">{kind}</span>)}
-									{displayNoticeLabel(event) ? <span class="radar-opportunity-note">Notice: {displayNoticeLabel(event)}</span> : null}
-								</div>
-							) : null}
 
 							<details class="mt-3 radar-details">
 								<summary>Expand ontology + metadata</summary>
@@ -434,16 +395,19 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 									</div>
 								</div>
 
-								{(inferEngagementKinds(event).length || noticeTypeLabel(event) || event.ontology.acquisition?.agency || event.ontology.acquisition?.solicitationNumber || event.ontology.acquisition?.responseDueDate || event.ontology.acquisition?.registrationDeadline) ? (
+								{(inferEngagementKinds(event).length || noticeTypeLabel(event) || isSamOfficialNotice(event) || isNavySurfaceSignal(event) || event.ontology.acquisition?.agency || event.ontology.acquisition?.solicitationNumber || event.ontology.acquisition?.responseDueDate || event.ontology.acquisition?.registrationDeadline) ? (
 									<div class="mt-4">
-										<p class="radar-section-label">Acquisition signals</p>
+										<p class="radar-section-label">Acquisition overlays</p>
 										<ul class="radar-listing">
 											{noticeTypeLabel(event) ? <li><strong>Notice type:</strong> {noticeTypeLabel(event)}</li> : null}
 											{inferEngagementKinds(event).length ? <li><strong>Engagement:</strong> {inferEngagementKinds(event).join(', ')}</li> : null}
+											{isSamOfficialNotice(event) ? <li><strong>Source layer:</strong> SAM official notice</li> : null}
+											{isNavySurfaceSignal(event) ? <li><strong>Focus signal:</strong> Navy / warfare center related</li> : null}
 											{event.ontology.acquisition?.agency ? <li><strong>Agency:</strong> {event.ontology.acquisition?.agency}</li> : null}
 											{event.ontology.acquisition?.solicitationNumber ? <li><strong>Solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
 											{event.ontology.acquisition?.registrationDeadline ? <li><strong>Registration deadline:</strong> {event.ontology.acquisition?.registrationDeadline}</li> : null}
 											{event.ontology.acquisition?.responseDueDate ? <li><strong>Response due:</strong> {event.ontology.acquisition?.responseDueDate}</li> : null}
+											{samOpportunityLink(event) ? <li><strong>SAM link:</strong> <a href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">Open notice</a></li> : null}
 										</ul>
 									</div>
 								) : null}
@@ -527,9 +491,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		branch: document.getElementById('radar-branch'),
 		type: document.getElementById('radar-type'),
 		status: document.getElementById('radar-status'),
-		engagement: document.getElementById('radar-engagement'),
-		source: document.getElementById('radar-source'),
-		navyFocus: document.getElementById('radar-navy-focus'),
 		sort: document.getElementById('radar-sort'),
 		upcomingOnly: document.getElementById('radar-upcoming-only'),
 		verifiedOnly: document.getElementById('radar-verified-only'),
@@ -551,7 +512,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
-	const presetButtons = Array.from(document.querySelectorAll('[data-radar-preset], [data-radar-source-preset], [data-radar-focus-preset], [data-radar-mode-preset]'));
 
 	let compactMode = true;
 	let mapVisible = true;
@@ -633,7 +593,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 
 	for (const card of cards) {
 		card.classList.add(`radar-type-${typeTone(card.dataset.type)}`);
-		card.classList.add(`radar-source-${card.dataset.source || 'conference'}`);
 	}
 
 	const US_BOUNDS = [[24.2, -125.2], [49.6, -66.0]];
@@ -706,10 +665,10 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		}, { passive: false });
 	}
 
-	function pinIcon(daysLabel, tone, id, source) {
+	function pinIcon(daysLabel, tone, id) {
 		return window.L.divIcon({
 			className: 'radar-leaflet-pin-wrap',
-			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone} radar-leaflet-pin-source-${escapeHtml(source || 'conference')}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(daysLabel)}</span></div>`,
+			html: `<div class="radar-leaflet-pin radar-leaflet-pin-${tone}" data-event-id="${escapeHtml(id)}"><span>${escapeHtml(daysLabel)}</span></div>`,
 			iconSize: [30, 30],
 			iconAnchor: [15, 15],
 		});
@@ -725,29 +684,14 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		const link = card.dataset.link || '';
 		const samLink = card.dataset.samLink || '';
 		const days = parseDays(card.dataset.days);
-		const engagement = (card.dataset.engagement || '').split('|').filter(Boolean);
-		const sourceLayer = card.dataset.source || 'conference';
-		const navyFocus = card.dataset.navyFocus === '1';
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		const typeClass = `radar-type-${typeTone(type)}`;
-		const sourceClass = sourceLayer === 'sam'
-			? 'radar-source-sam'
-			: sourceLayer === 'opportunity'
-				? 'radar-source-opportunity'
-				: 'radar-source-conference';
-		const sourceLabel = sourceLayer === 'sam' ? 'SAM.gov' : sourceLayer === 'opportunity' ? 'Gov signal' : 'Conference';
 		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event site</a>` : '';
 		const samLinkHtml = samLink && samLink !== link ? `<a class="radar-map-link radar-map-link-sam" href="${escapeHtml(samLink)}" target="_blank" rel="noreferrer">SAM</a>` : '';
-		const engagementHtml = engagement.length
-			? `<div class="radar-map-popup-meta">${engagement.map((kind) => `<span class="radar-map-popup-badge radar-map-popup-badge-opportunity">${escapeHtml(kind)}</span>`).join(' ')}</div>`
-			: '';
-		const navyHtml = navyFocus ? '<div class="radar-map-popup-meta"><span class="radar-map-popup-badge radar-source-navy">Navy / warfare center</span></div>' : '';
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
-				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> <span class="radar-map-popup-badge ${typeClass}">${escapeHtml(type)}</span> <span class="radar-map-popup-badge ${sourceClass}">${escapeHtml(sourceLabel)}</span> ${escapeHtml(branch)}</div>
-				${engagementHtml}
-				${navyHtml}
+				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> <span class="radar-map-popup-badge ${typeClass}">${escapeHtml(type)}</span> ${escapeHtml(branch)}</div>
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
 					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
@@ -831,9 +775,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			branch: controls.branch.value,
 			type: controls.type.value,
 			status: controls.status.value,
-			engagement: controls.engagement.value,
-			source: controls.source.value,
-			navyFocus: controls.navyFocus.checked,
 			sort: controls.sort.value,
 			upcoming: controls.upcomingOnly.checked,
 			verified: controls.verifiedOnly.checked,
@@ -846,9 +787,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		controls.branch.value = state.branch || '';
 		controls.type.value = state.type || '';
 		controls.status.value = state.status || '';
-		controls.engagement.value = state.engagement || '';
-		controls.source.value = state.source || '';
-		controls.navyFocus.checked = Boolean(state.navyFocus);
 		controls.sort.value = state.sort || 'soonest';
 		controls.upcomingOnly.checked = Boolean(state.upcoming);
 		controls.verifiedOnly.checked = Boolean(state.verified);
@@ -861,9 +799,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		if (state.branch) params.set('branch', state.branch);
 		if (state.type) params.set('type', state.type);
 		if (state.status) params.set('status', state.status);
-		if (state.engagement) params.set('engagement', state.engagement);
-		if (state.source) params.set('source', state.source);
-		if (state.navyFocus) params.set('navy', '1');
 		if (state.sort && state.sort !== 'soonest') params.set('sort', state.sort);
 		if (state.upcoming) params.set('upcoming', '1');
 		if (state.verified) params.set('verified', '1');
@@ -877,9 +812,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			state.branch ||
 			state.type ||
 			state.status ||
-			state.engagement ||
-			state.source ||
-			state.navyFocus ||
 			state.upcoming ||
 			state.verified ||
 			state.showPast ||
@@ -894,9 +826,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			branch: params.get('branch') || '',
 			type: params.get('type') || '',
 			status: params.get('status') || '',
-			engagement: params.get('engagement') || '',
-			source: params.get('source') || '',
-			navyFocus: params.get('navy') === '1',
 			sort: params.get('sort') || 'soonest',
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
@@ -922,20 +851,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			if (state.branch && card.dataset.branch !== state.branch) return false;
 			if (state.type && card.dataset.type !== state.type) return false;
 			if (state.status && card.dataset.status !== state.status) return false;
-			if (state.engagement) {
-				if (state.engagement === '__opportunity__') {
-					if (card.dataset.opportunity !== '1') return false;
-				} else {
-					const engagementKinds = (card.dataset.engagement || '').split('|').filter(Boolean);
-					if (!engagementKinds.includes(state.engagement)) return false;
-				}
-			}
-			if (state.source) {
-				if (state.source === 'conference' && card.dataset.source !== 'conference') return false;
-				if (state.source === 'opportunity' && card.dataset.source === 'conference') return false;
-				if (state.source === 'sam' && card.dataset.source !== 'sam') return false;
-			}
-			if (state.navyFocus && card.dataset.navyFocus !== '1') return false;
 			if (!state.showPast && card.dataset.status === 'Past' && state.status !== 'Past') return false;
 			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
 			if (state.verified && card.dataset.confidence !== 'high') return false;
@@ -963,86 +878,11 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		if (state.branch) chips.push(`Branch: ${state.branch}`);
 		if (state.type) chips.push(`Type: ${state.type}`);
 		if (state.status) chips.push(`Status: ${state.status}`);
-		if (state.engagement) chips.push(`Engagement: ${state.engagement === '__opportunity__' ? 'Gov opportunity signals' : state.engagement}`);
-		if (state.source) chips.push(`Layer: ${state.source === 'sam' ? 'SAM official notices' : state.source === 'opportunity' ? 'Gov opportunity signals' : 'Conferences/workshops/hackathons'}`);
-		if (state.navyFocus) chips.push('Focus: Navy / warfare centers');
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('Verified only');
 		if (state.showPast) chips.push('Including past');
-		if (isOpportunityOpsMode(state)) chips.push('Mode: Opportunity ops');
-		if (isConferenceOpsMode(state)) chips.push('Mode: Conference ops');
-		if (isNavyOpsMode(state)) chips.push('Mode: Navy / NSWC ops');
 		if (!chips.length) chips.push('No active filters');
 		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
-	}
-
-	function isOpportunityOpsMode(state) {
-		return (
-			state.source === 'opportunity' &&
-			state.engagement === '__opportunity__' &&
-			state.sort === 'soonest' &&
-			state.upcoming &&
-			!state.navyFocus &&
-			!state.verified &&
-			!state.showPast &&
-			!state.q &&
-			!state.branch &&
-			!state.type &&
-			!state.status
-		);
-	}
-
-	function isConferenceOpsMode(state) {
-		return (
-			state.source === 'conference' &&
-			!state.engagement &&
-			state.sort === 'soonest' &&
-			!state.navyFocus &&
-			!state.upcoming &&
-			!state.verified &&
-			!state.showPast &&
-			!state.q &&
-			!state.branch &&
-			!state.type &&
-			!state.status
-		);
-	}
-
-	function isNavyOpsMode(state) {
-		return (
-			state.source === 'opportunity' &&
-			state.engagement === '__opportunity__' &&
-			state.navyFocus &&
-			state.sort === 'soonest' &&
-			state.upcoming &&
-			!state.verified &&
-			!state.showPast &&
-			!state.q &&
-			!state.branch &&
-			!state.type &&
-			!state.status
-		);
-	}
-
-	function updatePresetButtons(state) {
-		for (const button of presetButtons) {
-			const preset = button.dataset.radarPreset;
-			const sourcePreset = button.dataset.radarSourcePreset;
-			const focusPreset = button.dataset.radarFocusPreset;
-			const modePreset = button.dataset.radarModePreset;
-			let active = false;
-			if (preset === 'all') {
-				active = !state.engagement && !state.source && !state.navyFocus && !state.q && !state.branch && !state.type && !state.status && !state.upcoming && !state.verified && !state.showPast;
-			}
-			if (preset === 'opportunity') active = state.engagement === '__opportunity__';
-			if (preset && !['all', 'opportunity'].includes(preset)) active = state.engagement === preset;
-			if (sourcePreset) active = state.source === sourcePreset;
-			if (focusPreset === 'navy-surface') active = state.navyFocus;
-			if (modePreset === 'opportunity-ops') active = isOpportunityOpsMode(state);
-			if (modePreset === 'conference-ops') active = isConferenceOpsMode(state);
-			if (modePreset === 'navy-ops') active = isNavyOpsMode(state);
-			button.classList.toggle('is-active', active);
-		}
 	}
 
 
@@ -1067,9 +907,8 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 			if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
 			const days = parseDays(card.dataset.days);
 			const tone = typeTone(card.dataset.type);
-			const source = card.dataset.source || 'conference';
 			const eventId = card.dataset.id || '';
-			const marker = window.L.marker([lat, lng], { icon: pinIcon(daysMarker(days), tone, eventId, source) });
+			const marker = window.L.marker([lat, lng], { icon: pinIcon(daysMarker(days), tone, eventId) });
 			marker.bindPopup(markerPopup(card), { maxWidth: 380 });
 			clusterLayer.addLayer(marker);
 			markerIndex.set(eventId, marker);
@@ -1102,7 +941,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		empty.classList.toggle('hidden', visible.length > 0);
 		count.textContent = `${visible.length} of ${cards.length} events shown`;
 		renderFilterChips(state);
-		updatePresetButtons(state);
 		renderMap(visible);
 
 		const query = toQuery(state);
@@ -1113,81 +951,16 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 
 
 
-	[controls.q, controls.branch, controls.type, controls.status, controls.engagement, controls.source, controls.sort]
+	[controls.q, controls.branch, controls.type, controls.status, controls.sort]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('input', render));
-	[controls.navyFocus, controls.upcomingOnly, controls.verifiedOnly, controls.showPast]
+	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('change', render));
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', engagement: '', source: '', navyFocus: false, sort: 'soonest', upcoming: false, verified: false, showPast: false });
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false });
 		render();
 	});
-	for (const button of presetButtons) {
-		button.addEventListener('click', () => {
-			const preset = button.dataset.radarPreset;
-			const sourcePreset = button.dataset.radarSourcePreset;
-			const focusPreset = button.dataset.radarFocusPreset;
-			const modePreset = button.dataset.radarModePreset;
-			if (!preset && !sourcePreset && !focusPreset && !modePreset) return;
-
-			if (modePreset === 'opportunity-ops') {
-				applyState({
-					q: '',
-					branch: '',
-					type: '',
-					status: '',
-					engagement: '__opportunity__',
-					source: 'opportunity',
-					navyFocus: false,
-					sort: 'soonest',
-					upcoming: true,
-					verified: false,
-					showPast: false,
-				});
-			} else if (modePreset === 'conference-ops') {
-				applyState({
-					q: '',
-					branch: '',
-					type: '',
-					status: '',
-					engagement: '',
-					source: 'conference',
-					navyFocus: false,
-					sort: 'soonest',
-					upcoming: false,
-					verified: false,
-					showPast: false,
-				});
-			} else if (modePreset === 'navy-ops') {
-				applyState({
-					q: '',
-					branch: '',
-					type: '',
-					status: '',
-					engagement: '__opportunity__',
-					source: 'opportunity',
-					navyFocus: true,
-					sort: 'soonest',
-					upcoming: true,
-					verified: false,
-					showPast: false,
-				});
-			} else if (preset === 'all') {
-				applyState({ ...stateFromUI(), engagement: '', source: '', navyFocus: false });
-			} else if (preset === 'opportunity') {
-				applyState({ ...stateFromUI(), engagement: '__opportunity__' });
-			} else if (preset) {
-				applyState({ ...stateFromUI(), engagement: preset });
-			} else if (sourcePreset) {
-				applyState({ ...stateFromUI(), source: sourcePreset });
-			} else if (focusPreset === 'navy-surface') {
-				applyState({ ...stateFromUI(), navyFocus: true });
-			}
-			if (controls.filterPanel && !controls.filterPanel.open) controls.filterPanel.open = true;
-			render();
-		});
-	}
 	controls.toggleMap.addEventListener('click', () => {
 		mapVisible = !mapVisible;
 		render();
@@ -1216,20 +989,6 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		}
 		if (event.key.toLowerCase() === 'c') {
 			compactMode = !compactMode;
-			render();
-		}
-		if (event.key.toLowerCase() === 'i') {
-			const nextEngagement = controls.engagement.value === '__opportunity__' ? '' : '__opportunity__';
-			applyState({ ...stateFromUI(), engagement: nextEngagement });
-			render();
-		}
-		if (event.key.toLowerCase() === 'o') {
-			const nextSource = controls.source.value === 'opportunity' ? '' : 'opportunity';
-			applyState({ ...stateFromUI(), source: nextSource });
-			render();
-		}
-		if (event.key.toLowerCase() === 'n') {
-			applyState({ ...stateFromUI(), navyFocus: !controls.navyFocus.checked });
 			render();
 		}
 	});
