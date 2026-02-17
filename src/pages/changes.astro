@@ -21,12 +21,31 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.3',
+		date: '2026-02-17',
+		title: 'ACP-RA web duplicate Executive Summary suppression',
+		summary: 'Fixed duplicate Executive Summary rendering on the ACP-RA writing page by suppressing a leading unnumbered duplicate block when an in-body Executive Summary section is already present.',
+		impact: 'ACP-RA now displays a single Executive Summary section in web view, matching expected reading flow.',
+		current: true,
+		tags: ['writing', 'papers', 'acp-ra', 'rendering', 'fix'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Added generated-paper HTML normalization to remove duplicate leading Executive Summary block when duplicate `id="executive-summary"` sections are present.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.2',
 		date: '2026-02-17',
 		title: 'NDIA/NTSA event-detail enrichment from live browser data',
 		summary: 'Enriched the full NDIA/NTSA 2026 event set with card-level metadata from the live NDIA browser page, including registration/agenda links, type/location parsing, and cleaned deduplication.',
 		impact: 'Tracker records now carry substantially more actionable detail for NDIA/NTSA events while preserving official-link legitimacy gating.',
-		current: true,
 		tags: ['events', 'ndia', 'ntsa', 'metadata', 'browser-relay'],
 		groups: [
 			{

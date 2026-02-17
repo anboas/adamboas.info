@@ -27,11 +27,24 @@ function applyBaseToGeneratedPaperHtml(html: string) {
 	// Generated paper fragments may contain absolute-root URLs like /papers/...
 	// That breaks on GitHub Pages project deployments (served from /<repo>/).
 	const papersBase = withBase('/papers/');
-	return html
+	let normalized = html
 		.replaceAll('src="/papers/', `src="${papersBase}`)
 		.replaceAll('href="/papers/', `href="${papersBase}`)
 		// Ensure generated paper images have alt text (empty alt for decorative/non-captioned figures).
 		.replace(/<img(?![^>]*\balt=)([^>]*?)>/gi, '<img$1 alt="">');
+
+	// Some ingested paper fragments include a leading unnumbered executive-summary block
+	// and then a second in-body Executive Summary section.
+	// Keep the in-body section and drop the leading duplicate block.
+	const execSummaryMatches = normalized.match(/id="executive-summary"/gi) ?? [];
+	if (execSummaryMatches.length > 1) {
+		normalized = normalized.replace(
+			/^\s*<h2\s+class="unnumbered"\s+id="executive-summary"[\s\S]*?(?=<h2\b)/i,
+			'',
+		);
+	}
+
+	return normalized;
 }
 
 function formatBytes(n: number) {
