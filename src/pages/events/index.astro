@@ -182,14 +182,22 @@ function samOpportunityLinks(event: (typeof events)[number]) {
 
 function inferredGovernmentOrganizations(event: (typeof events)[number]) {
 	const govHint = /(department|agency|office|command|program\s+office|peo|navy|army|air\s*force|marine|joint|dod|federal|gov|u\.s\.)/i;
+	const genericNoise = new Set([
+		'joint stakeholders',
+		'program offices',
+		'industry partners',
+		'vendors',
+		'program executives',
+		'agency cio shops',
+	]);
 	const items = [
 		event.ontology.acquisition?.agency,
-		...event.ontology.stakeholders,
 		...event.ontology.provenance.map((source) => source.name),
 	]
 		.filter((item): item is string => Boolean(item && item.trim()))
 		.map((item) => item.trim())
-		.filter((item) => govHint.test(item));
+		.filter((item) => govHint.test(item))
+		.filter((item) => !genericNoise.has(item.toLowerCase()));
 	return [...new Set(items)];
 }
 
@@ -268,13 +276,12 @@ function evidenceHealth(event: (typeof events)[number]) {
 function informationalInsights(event: (typeof events)[number]) {
 	const insights: string[] = [];
 	const engagement = inferEngagementKinds(event);
-	if (engagement.length) insights.push(`Signal types detected: ${engagement.join(', ')}.`);
+	if (engagement.length) insights.push(`Detected opportunity signals: ${engagement.join(', ')}.`);
 	if (noticeTypeLabel(event)) insights.push(`Notice posture: ${noticeTypeLabel(event)}.`);
-	if (event.ontology.acquisition?.responseDueDate) insights.push(`Response due: ${fmtDate(event.ontology.acquisition.responseDueDate)}.`);
+	if (event.ontology.acquisition?.solicitationNumber) insights.push(`Solicitation reference present: ${event.ontology.acquisition.solicitationNumber}.`);
 	if (event.ontology.acquisition?.registrationDeadline) insights.push(`Registration deadline: ${fmtDate(event.ontology.acquisition.registrationDeadline)}.`);
-	if (samOpportunityLinks(event).length) insights.push(`SAM-linked opportunity source available (${samOpportunityLinks(event).length}).`);
-	if (event.ontology.logistics.travelBurdenFromDc === 'Low') insights.push('Low travel burden from DC for in-person coordination.');
-	if (!insights.length && event.ontology.notes) insights.push(event.ontology.notes);
+	if (event.ontology.acquisition?.responseDueDate) insights.push(`Response due: ${fmtDate(event.ontology.acquisition.responseDueDate)}.`);
+	if (samOpportunityLinks(event).length) insights.push(`SAM-linked records available (${samOpportunityLinks(event).length}).`);
 	return insights;
 }
 
@@ -468,29 +475,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 							</div>
 
 							<details class="mt-3 radar-details">
-								<summary>Expand ontology + metadata</summary>
-								<div class="mt-3 grid gap-4 lg:grid-cols-2">
-									<div>
-										<p class="radar-section-label">Capability areas</p>
-										<ul class="radar-listing">{event.ontology.capabilityAreas.map((item) => <li>{item}</li>)}</ul>
-									</div>
-									<div>
-										<p class="radar-section-label">Mission threads</p>
-										<ul class="radar-listing">{event.ontology.missionThreads.map((item) => <li>{item}</li>)}</ul>
-									</div>
-									<div>
-										<p class="radar-section-label">Stakeholders</p>
-										<ul class="radar-listing">{event.ontology.stakeholders.map((item) => <li>{item}</li>)}</ul>
-									</div>
-									<div>
-										<p class="radar-section-label">Decision windows</p>
-										<ul class="radar-listing">
-											<li><strong>Discovery:</strong> {event.ontology.decisionWindows.discovery}</li>
-											<li><strong>Prep:</strong> {event.ontology.decisionWindows.prep}</li>
-											<li><strong>Execution:</strong> {event.ontology.decisionWindows.execution}</li>
-										</ul>
-									</div>
-								</div>
+								<summary>Expand event intelligence</summary>
 
 								<div class="mt-4 grid gap-4 lg:grid-cols-2">
 									<div>
@@ -578,13 +563,13 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 											)}
 										</div>
 										<div>
-											<p class="radar-section-label">BD insights</p>
+											<p class="radar-section-label">Actionable insights</p>
 											{informationalInsights(event).length ? (
 												<ul class="radar-listing">
 													{informationalInsights(event).map((insight) => <li>{insight}</li>)}
 												</ul>
 											) : (
-												<p class="mt-2 text-xs text-slate-500">No additional insights extracted yet.</p>
+												<p class="mt-2 text-xs text-slate-500">No sourced actionable insights yet.</p>
 											)}
 										</div>
 									</div>

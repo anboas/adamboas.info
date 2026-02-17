@@ -21,12 +21,37 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.1.0',
+		date: '2026-02-17',
+		title: 'Event intelligence metadata aligned to capability-first direction',
+		summary: 'Removed low-signal ontology fields from the expanded event panel and tightened insight generation to sourced, actionable intelligence only.',
+		impact: 'Expanded metadata now reads like a practical DoW BD intelligence surface instead of an internal modeling dump.',
+		current: true,
+		tags: ['events', 'bd-intelligence', 'ux', 'information-design'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Renamed expansion header to `Expand event intelligence` and removed generic ontology blocks (capability areas, mission threads, stakeholders, decision windows).',
+					'Reframed `BD insights` as `Actionable insights` and limited outputs to sourced signal/deadline/SAM intelligence.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Government organization inference now suppresses generic placeholder labels and prefers concrete agency/source entities.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.9',
 		date: '2026-02-17',
 		title: 'Event legitimacy gate tightened (domain trust + audit artifact)',
 		summary: 'Added explicit source-domain trust gating and produced a one-by-one legitimacy audit artifact for all event records.',
 		impact: 'Events tied to known low-trust aggregator domain `jbenton1.github.io/government-guide/conference-tracker/` are excluded from active display until independently verified.',
-		current: true,
 		tags: ['events', 'data-quality', 'verification'],
 		groups: [
 			{
