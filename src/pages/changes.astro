@@ -21,12 +21,43 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v1.5.5',
+		date: '2026-02-17',
+		title: 'Navy / NSWC sourcing expansion + solicitation-heavy SAM profiles',
+		summary: 'Expanded Events ingestion with Navy-targeted SAM profiles and an official NAVSEA/NSWC page crawler for industry-day signal discovery.',
+		impact: 'Higher coverage of Navy and naval-warfare-center opportunity signals with cleaner prioritization for solicitation-relevant action.',
+		current: true,
+		tags: ['events', 'acquisition', 'navy', 'data'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Navy and NSWC-specific SAM import modes (`events:navy-sam-import`, `events:nswc-sam-import`) with organization-focused filtering.',
+					'Official NAVSEA/NSWC page crawler (`events:navy-pages-import`) to surface industry-day and outreach candidates from warfare-center pages.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'SAM importer now supports additional notice types (`o`, `k`) for deeper solicitation relevance alongside p/r/s signal notices.',
+					'Importer scoring now includes deterministic relevance reasons and Navy-linked confidence tagging.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Priority-source guidance now explicitly ranks NAVSEA/NSWC official pages + expanded SAM profile strategy.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v1.5.4',
 		date: '2026-02-17',
 		title: 'Events industry-intelligence lens + acquisition signal pipeline',
 		summary: 'Added engagement-signal filtering (industry day, pre-solicitation, sources sought, vendor outreach, special notice) and introduced a SAM.gov opportunities importer baseline.',
 		impact: 'You can now isolate actionable procurement engagement signals faster and prepare a cleaner ingestion path for deadline-aware tracking.',
-		current: true,
 		tags: ['events', 'filters', 'acquisition', 'data'],
 		groups: [
 			{

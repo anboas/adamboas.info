@@ -7,6 +7,7 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 | Tier | Priority | Authority | Freshness | Source | URL | Status |
 |---|---:|---:|---:|---|---|---:|
 | P1-Primary | 4.70 | 5.0 | 4.2 | SAM.gov Get Opportunities Public API (ptype p/r/s) | https://open.gsa.gov/api/get-opportunities-public-api/ | 200 |
+| P1-Primary | 4.55 | 4.8 | 4.2 | NAVSEA/NSWC official industry pages (crawl set) | https://www.navsea.navy.mil/Home/Warfare-Centers/ | 200 | 
 | P1-Primary | 4.35 | 4.0 | 5.0 | AFCEA Events | https://www.afcea.org/events | 200 |
 | P1-Primary | 4.35 | 4.0 | 5.0 | AUSA Meetings & Events | https://www.ausa.org/meet | 200 |
 | P1-Primary | 4.35 | 4.0 | 5.0 | Navy League Meetings & Events | https://www.navyleague.org/meetings-and-events/ | 200 |
@@ -29,7 +30,8 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 
 ## Notes
 
-- **SAM.gov Get Opportunities Public API (ptype p/r/s)**: Structured federal notice feed for pre-solicitation, sources sought, and special notice types. Best API source for acquisition engagement signals (industry day/vendor outreach can be inferred from title/description).
+- **SAM.gov Get Opportunities Public API (ptype p/r/s/o/k)**: Structured federal notice feed for pre-solicitation, sources sought, special notices, and solicitation/combined notices. Best API source for acquisition engagement signals and solicitation relevance.
+- **NAVSEA/NSWC official pages**: Highest-authority source for Navy warfare-center industry-day context (often evergreen). Combine with SAM for date-validity and active-response windows.
 - **AFCEA Events**: Mentions 2026/2027 (20 hits). Strong event/calendar language. Contains multiple dated references.
 - **AUSA Meetings & Events**: Mentions 2026/2027 (16 hits). Strong event/calendar language. Contains multiple dated references.
 - **Navy League Meetings & Events**: Mentions 2026/2027 (4 hits). Strong event/calendar language. Contains multiple dated references.
