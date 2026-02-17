@@ -497,8 +497,25 @@ const writingUrl = absoluteUrl('/writing/');
 
 			toc.removeAttribute('hidden');
 
-			let ticking = false;
-			const updateActive = () => {
+			let activeHeading = null;
+			let activeLink = null;
+
+			const setActive = (heading) => {
+				if (!heading) return;
+				if (activeHeading === heading) return;
+				activeHeading = heading;
+				for (const { heading: h, link } of links) {
+					if (h === heading) {
+						link.setAttribute('data-active', 'true');
+						activeLink = link;
+					} else {
+						link.removeAttribute('data-active');
+					}
+				}
+				activeLink?.scrollIntoView({ block: 'nearest' });
+			};
+
+			const findCurrentByPosition = () => {
 				const actionBar = document.querySelector('.writing-actions-bar');
 				const actionOffset = actionBar ? actionBar.getBoundingClientRect().height : 0;
 				const threshold = Math.max(90, actionOffset + 28);
@@ -507,22 +524,30 @@ const writingUrl = absoluteUrl('/writing/');
 					if (heading.getBoundingClientRect().top <= threshold) current = heading;
 					else break;
 				}
-				for (const { heading, link } of links) {
-					if (heading === current) link.setAttribute('data-active', 'true');
-					else link.removeAttribute('data-active');
-				}
+				return current;
 			};
 
+			let ticking = false;
 			const onScroll = () => {
 				if (ticking) return;
 				ticking = true;
 				window.requestAnimationFrame(() => {
-					updateActive();
+					setActive(findCurrentByPosition());
 					ticking = false;
 				});
 			};
 
-			updateActive();
+			if ('IntersectionObserver' in window) {
+				const observer = new IntersectionObserver((entries) => {
+					const visible = entries
+						.filter((e) => e.isIntersecting)
+						.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+					if (visible.length) setActive(visible[0].target);
+				}, { root: null, rootMargin: '-18% 0px -70% 0px', threshold: [0, 0.2, 0.6] });
+				for (const { heading } of links) observer.observe(heading);
+			}
+
+			setActive(findCurrentByPosition());
 			window.addEventListener('scroll', onScroll, { passive: true });
 			window.addEventListener('resize', onScroll, { passive: true });
 		})();
