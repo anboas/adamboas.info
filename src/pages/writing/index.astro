@@ -42,33 +42,32 @@ const items = [
 	<StickyBrowseBar active="writing" />
 	<div data-writing-index>
 		<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
-		<div class="mt-4 flex flex-wrap items-center gap-2 text-xs text-slate-300">
-			<span class="text-slate-400">Key:</span>
-			<span class="writing-key-pill writing-type-pill writing-type-paper rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Long-form architecture + reference work" title="Long-form architecture + reference work" tabindex="0">paper</span>
-			<span class="writing-key-pill writing-type-pill writing-type-note rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Short synthesis and research snapshots" title="Short synthesis and research snapshots" tabindex="0">note</span>
-			<span class="writing-key-pill writing-type-pill writing-type-memo rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Focused briefs and decision-ready analysis" title="Focused briefs and decision-ready analysis" tabindex="0">memo</span>
-		</div>
+		<div class="writing-index-controls card mt-4 p-3">
+			<div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+				<div class="flex flex-wrap items-center gap-2 text-[11px] text-slate-300">
+					<span class="text-slate-400">Key:</span>
+					<span class="writing-key-pill writing-type-pill writing-type-paper rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Long-form architecture + reference work" title="Long-form architecture + reference work" tabindex="0">paper</span>
+					<span class="writing-key-pill writing-type-pill writing-type-note rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Short synthesis and research snapshots" title="Short synthesis and research snapshots" tabindex="0">note</span>
+					<span class="writing-key-pill writing-type-pill writing-type-memo rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Focused briefs and decision-ready analysis" title="Focused briefs and decision-ready analysis" tabindex="0">memo</span>
+				</div>
 
-		<div class="mt-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-
-			<div class="grid grid-cols-1 gap-2 md:flex md:items-center">
-				<label class="sr-only" for="writing-type">Writing type</label>
-				<select id="writing-type" data-writing-type class="w-full rounded-none border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-200 md:w-auto">
-					<option value="all">All</option>
-					<option value="note">Notes</option>
-					<option value="memo">Memos</option>
-					<option value="paper">Papers</option>
-				</select>
-				<div class="flex flex-wrap items-center gap-2">
+				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
+					<label class="sr-only" for="writing-type">Writing type</label>
+					<select id="writing-type" data-writing-type class="w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 sm:w-auto">
+						<option value="all">All</option>
+						<option value="note">Notes</option>
+						<option value="memo">Memos</option>
+						<option value="paper">Papers</option>
+					</select>
 					<label class="sr-only" for="writing-search">Search writing</label>
-					<input id="writing-search" data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-200 md:w-72" placeholder="Search title/tags" />
-					<button type="button" data-writing-clear class="shrink-0 rounded-none border border-slate-800 bg-slate-950 px-3 py-2 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
+					<input id="writing-search" data-writing-search class="w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
+					<button type="button" data-writing-clear class="shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
 					<a class="shrink-0 text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
 				</div>
 			</div>
-		</div>
 
-		<div class="mt-3 flex flex-wrap gap-2 text-xs" data-writing-chips></div>
+			<div class="mt-2 flex flex-wrap gap-2 text-xs" data-writing-chips></div>
+		</div>
 		<script type="module" set:html={writingIndexJs}></script>
 
 		<div class="mt-8 grid gap-4">

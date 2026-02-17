@@ -806,6 +806,14 @@ a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0
   box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.14) inset;
 }
 
+/* Writing index controls (condensed shell) */
+[data-writing-index] .writing-index-controls {
+  border-color: rgba(30, 41, 59, 0.92);
+}
+[data-writing-index] .writing-index-controls :is(select, input, button, a) {
+  min-height: 2rem;
+}
+
 /* Writing index inputs/selects: teal focus */
 [data-writing-index] :is(select, input, button):focus-visible {
   outline: 2px solid rgba(0, 196, 196, 0.35);
