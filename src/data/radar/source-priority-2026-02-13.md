@@ -25,6 +25,7 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 | P3-Tertiary | 3.05 | 2.0 | 5.0 | Potomac Officers Club Defense | https://www.potomacofficersclub.com/govcon-event-category/defense/ | 200 |
 | P3-Tertiary | 2.88 | 2.0 | 4.5 | DefGovTech | https://defgovtech.com/ | 200 |
 | P3-Tertiary | 2.77 | 2.0 | 4.2 | Military Expos | https://www.militaryexpos.com/ | 200 |
+| P3-Tertiary | 2.80 | 2.2 | 4.0 | Marine Military Expos (Modern Day Marine) | https://marinemilitaryexpos.com/ | 200 |
 | P3-Tertiary | 2.30 | 3.0 | 1.0 | GovEvents DoD Organizer Listings | https://web.govevents.com/listings.php?organizer=DEPARTMENT+OF+DEFENSE+(DoD)&upcoming=1&past=1 | 403 |
 | P3-Tertiary | 1.65 | 2.0 | 1.0 | Defense Advancement Events | https://www.defenseadvancement.com/events/ | 403 |
 
@@ -38,7 +39,7 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 - **AFA Events**: Mentions 2026/2027 (9 hits). Strong event/calendar language. Contains multiple dated references.
 - **SAME Events**: Mentions 2026/2027 (8 hits). Strong event/calendar language. Contains multiple dated references.
 - **CTO Innovation Industry Outreach Calendar**: Strong event/calendar language. Applied association-events baseline freshness (content under-extracted).
-- **NDIA Events**: Applied association-events baseline freshness (content under-extracted).
+- **NDIA Events**: Bot-protected in automation context (Incapsula/challenge pages); use indexed URL discovery + manual verification fallback.
 - **DoD OSBP Events Calendar**: Access denied from automation. Blocked/non-200 response; freshness unknown.
 - **USACE Events for Contractors**: Access denied from automation. Blocked/non-200 response; freshness unknown.
 - **DoD Event Calendars**: Access denied from automation. Blocked/non-200 response; freshness unknown.
@@ -49,5 +50,6 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 - **Potomac Officers Club Defense**: Mentions 2026/2027 (1 hits). Strong event/calendar language. Contains multiple dated references.
 - **DefGovTech**: Mentions 2026/2027 (6 hits). Strong event/calendar language.
 - **Military Expos**: Mentions 2026/2027 (89 hits). Strong event/calendar language.
+- **Marine Military Expos (Modern Day Marine)**: Strong Marine Corps-specific expo signal (dates/registration on homepage and subpages); useful niche supplement to broader defense calendars.
 - **GovEvents DoD Organizer Listings**: Blocked/non-200 response; freshness unknown.
 - **Defense Advancement Events**: Blocked/non-200 response; freshness unknown.

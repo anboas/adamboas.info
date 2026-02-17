@@ -326,6 +326,7 @@ SOURCE_PRIORITY = {
     'Potomac Officers Club': 70,
     'ASD Events': 60,
     'Military Expos': 55,
+    'Marine Military Expos': 58,
 }
 
 
@@ -585,6 +586,48 @@ def scrape_military_expos() -> list[RawEvent]:
     return out
 
 
+def scrape_marine_military_expos() -> list[RawEvent]:
+    url = 'https://marinemilitaryexpos.com/'
+    r = requests.get(url, timeout=30, headers=HEADERS)
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, 'html.parser')
+
+    title_text = ' '.join((soup.title.get_text(' ', strip=True) if soup.title else '').split())
+    if not title_text:
+        return []
+
+    # Example: "Modern Day Marine - April 28 - April 30, 2026 Washington D.C."
+    if 'modern day marine' not in title_text.lower():
+        return []
+
+    start_date = end_date = None
+    m = re.search(r'([A-Za-z]+\s+\d{1,2})\s*-\s*([A-Za-z]+\s+\d{1,2},\s*20\d{2})', title_text)
+    if m:
+        start_date = parse_month_day_year(f"{m.group(1)}, {m.group(2).split(',')[-1].strip()}")
+        end_date = parse_month_day_year(m.group(2))
+
+    date_text = ''
+    if start_date and end_date and start_date != end_date:
+        date_text = f'{start_date} to {end_date}'
+    elif start_date:
+        date_text = start_date
+
+    # Default location from title; normalize to city/state
+    loc = 'Washington, DC' if re.search(r'washington\s*d\.?c\.?', title_text, re.I) else 'Washington, DC'
+
+    event_url = url
+    for a in soup.select('a[href]'):
+        txt = ' '.join(a.get_text(' ', strip=True).lower().split())
+        href = a.get('href', '')
+        if any(k in txt for k in ['attendee information', 'registration', 'attendee']) and href:
+            event_url = source_url_for_event(url, href)
+            break
+
+    notes = 'Marine Military Expos primary show page (Modern Day Marine).'
+    return [RawEvent('Marine Military Expos', url, 'Modern Day Marine 2026', event_url, date_text, loc, 'Marine Corps', 'Conference', notes=notes)]
+
+
+
 def scrape_potomac_events() -> list[RawEvent]:
     url = 'https://www.potomacofficersclub.com/govcon-events/'
     soup = get(url)
@@ -740,6 +783,7 @@ def main():
         ('SAME', scrape_same),
         ('ASD Events', scrape_asd_events),
         ('Military Expos', scrape_military_expos),
+        ('Marine Military Expos', scrape_marine_military_expos),
         ('Potomac Officers Club', scrape_potomac_events),
     ]
 
@@ -828,7 +872,7 @@ def main():
             lines.append(f"- {err['source']}: {err['error']}")
 
     lines.append('')
-    lines.append('Sources: AUSA, AFCEA, AFA, Navy League, CTO Innovation, SAME, ASD Events, Military Expos, Potomac Officers Club')
+    lines.append('Sources: AUSA, AFCEA, AFA, Navy League, CTO Innovation, SAME, ASD Events, Military Expos, Marine Military Expos, Potomac Officers Club')
     OUT_MD.write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
     print(json.dumps({

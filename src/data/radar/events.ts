@@ -1934,13 +1934,16 @@ export const radarEventsSeed: RadarEvent[] = [
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'Marine Military Expos',
+				url: 'https://marinemilitaryexpos.com/',
+				type: 'official',
+				lastVerified: '2026-02-17',
 				confidence: 'High'
 			}],
-			links: {},
+			links: {
+				official: 'https://marinemilitaryexpos.com/',
+				registration: 'https://marinemilitaryexpos.com/attendee-information-registration/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
