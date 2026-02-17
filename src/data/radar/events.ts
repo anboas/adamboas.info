@@ -9176,4 +9176,65 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Agenda references AI implementation and agentic systems in defense mission IT context.'
 		}
 	},
+
+	{
+		id: 'radar-ndia-special-operations-symposium-2026',
+		title: '36th Annual NDIA Special Operations Symposium',
+		description: 'NDIA special operations forum connecting government, industry, and mission partners on SOF modernization and innovation.',
+		startDate: '2026-02-17',
+		endDate: '2026-02-18',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location:
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427,
+			venue: 'The Westin DC Downtown'
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'Special operations modernization', 'Industry-government collaboration'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['SOF mission support', 'Program sensing'],
+			stakeholders: ['USSOCOM stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ndia', 'special operations', 'symposium', 'innovation', 'sof'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-30 days',
+				prep: 'T-21 to T-3 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'NDIA',
+				url: 'https://www.ndia.org/SpecialOps26',
+				type: 'official',
+				lastVerified: '2026-02-17',
+				confidence: 'Medium'
+			}],
+			links:
+			{
+				official: 'https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium',
+				registration: 'https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium/registration'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				estimatedCostUsd:
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Direct NDIA fetch is bot-protected; date/location inferred from indexed NDIA event snippets and should be rechecked at registration open.'
+		}
+	},
 ];
