@@ -21,12 +21,31 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.1.5',
+		date: '2026-02-17',
+		title: 'Events OG title simplified',
+		summary: 'Updated the Events OG card title text to the shorter label requested.',
+		impact: 'Social previews now present a cleaner, minimal title: `DoW Events`.',
+		current: true,
+		tags: ['events', 'og-image', 'copy'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					"Changed the /events OG card title from `DoW Events + BD Intelligence` to `DoW Events`.",
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.1.4',
 		date: '2026-02-17',
 		title: 'Events OG card expanded with full descriptive subtitle',
 		summary: 'Updated the /events social preview image copy to use the available space with fuller explanatory text.',
 		impact: 'Link previews now communicate page purpose more clearly before click-through.',
-		current: true,
 		tags: ['events', 'og-image', 'copy', 'social'],
 		groups: [
 			{

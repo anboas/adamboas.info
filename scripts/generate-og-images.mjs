@@ -21,7 +21,7 @@ const cards = [
   {
     file: 'events.png',
     accent: '#00a6a6',
-    title: 'DoW Events + BD Intelligence',
+    title: 'DoW Events',
     subtitle: 'Built to track upcoming DoW events with trusted links, source transparency, public government contacts, and practical acquisition context in one place.',
     kicker: 'adamboas.com',
     subtitleSize: 24,
