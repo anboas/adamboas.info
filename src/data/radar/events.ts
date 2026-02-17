@@ -8777,4 +8777,55 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Air Force Southwest West'
 		}
 	},
+	{
+		id: 'radar-deloitte-ignite-2026',
+		title: "Deloitte IGNITE '26",
+		description: 'Interdisciplinary mission engineering, digital engineering, systems engineering, and test & evaluation forum focused on acquisition acceleration and capability-gap analysis.',
+		startDate: '2026-03-17',
+		endDate: '2026-03-20',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8967,
+			lng: -77.0708,
+			venue: 'Deloitte - Rosslyn',
+		},
+		ontology: {
+			themes: ['Mission Engineering', 'Digital Engineering', 'Systems Engineering', 'Test & Evaluation'],
+			capabilityAreas: ['Acquisition', 'Performance analysis', 'Capability development'],
+			missionThreads: ['Acquisition acceleration', 'Interdisciplinary integration'],
+			stakeholders: ['Deloitte mission engineering teams', 'Government acquisition stakeholders', 'Industry participants'],
+			keywords: ['ignite', 'mission engineering', 'digital engineering', 'test and evaluation'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: {
+				discovery: 'Now to T-45 days',
+				prep: 'T-30 to T-3 days',
+				execution: 'Event week + 14-day follow-up',
+			},
+			provenance: [
+				{
+					name: 'Deloitte Conference (IGNITE 26)',
+					url: 'https://www.deloitteconference.com/profile/web/index.cfm?PKwebID=0x644025abcd&varPage=home',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High',
+				},
+			],
+			links: {
+				official: 'https://www.deloitteconference.com/profile/web/index.cfm?PKwebID=0x644025abcd&varPage=home',
+				registration: 'https://www.deloitteconference.com/profile/web/index.cfm?PKwebID=0x644025abcd&varPage=home',
+			},
+			logistics: {
+				format: 'In-person',
+				travelBurdenFromDc: 'Low',
+			},
+			notes: 'Check-in 08:00 ET, sessions start 09:00 ET on Mar 17; event closes 17:00 ET on Mar 20.',
+		},
+	},
 ];
