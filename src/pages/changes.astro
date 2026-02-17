@@ -21,12 +21,31 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.1.3',
+		date: '2026-02-17',
+		title: 'Events hero subtitle removed per directive',
+		summary: 'Removed the extra hero subtitle line from /events for cleaner launch framing.',
+		impact: 'The events page top section is now tighter and less verbose while preserving functionality.',
+		current: true,
+		tags: ['events', 'copy', 'launch-readiness'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `Conference-first tracking with sourced opportunity context, SAM visibility, and evidence-backed links.` from the /events hero area.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.1.2',
 		date: '2026-02-17',
 		title: 'Trusted-source ingest pass for future verifiable events',
 		summary: 'Ran a trusted-source ingest sweep and merged new future events with verifiable external links while suppressing duplicates.',
 		impact: 'The active events feed gains fresh validated opportunities without reintroducing low-trust or duplicate entries.',
-		current: true,
 		tags: ['events', 'ingest', 'verification', 'data-quality'],
 		groups: [
 			{
