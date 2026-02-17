@@ -178,7 +178,8 @@ Centralize policy decisions; distribute enforcement</h3>
 <li><p><strong>dependencies</strong> (work-unit DAG and blocking conditions)</p></li>
 <li><p><strong>checkpoint policy</strong> (what is persisted, when, and how to resume)</p></li>
 <li><p><strong>sandbox provenance</strong> (execution environment identifiers / attestations where available)</p></li>
-<li><p><strong>evidence root</strong> (the stable anchor used to query all actions/messages/artifacts for this work unit)</p></li>
+<li><p><strong>evidence root</strong> (represented as
+<code>evidenceRootHash</code>; the stable anchor used to query all actions/messages/artifacts for this work unit, anchored in the Evidence Ledger)</p></li>
 </ul>
 <p>Work units are how the Department supervises autonomy at scale: humans do not “watch every tool call,” they supervise work units, review diffs, and intervene on escalation triggers.</p>
 <h2 id="policy-bundle">Policy bundle</h2>
@@ -206,7 +207,7 @@ Centralize policy decisions; distribute enforcement</h3>
 <li><p>rollback and deprecation signals (upgrade windows, kill-switch semantics)</p></li>
 </ul>
 <h2 id="evidence-export-profile-eep">Evidence export profile (EEP)</h2>
-<p>A signed, versioned configuration that defines how canonical ACP evidence is transformed into derived event records for external consumers (for example SIEM pipelines or analytics systems). EEPs do not change what ACP records; they standardize how evidence is represented for downstream systems.</p>
+<p>A signed, versioned configuration that defines how canonical ACP evidence is transformed into derived event records for external consumers (for example SIEM pipelines or analytics systems). EEPs do not change what ACP records; they standardize how evidence is represented for downstream systems. If an implementation exports derived evidence, it MUST do so via an EEP; otherwise EEPs are not required.</p>
 <p>An EEP MUST define:</p>
 <ul>
 <li><p>target schema and profile identifier (when applicable)</p></li>
@@ -226,8 +227,9 @@ Centralize policy decisions; distribute enforcement</h3>
 <li><p>freshness/rot signals</p></li>
 <li><p>a stable hash identifier (so later evidence can reference it)</p></li>
 </ul>
-<h2 id="action-envelope-minimum-schema">Action envelope (minimum schema)</h2>
-<p>A signed record of an attempted tool/action. Minimum schema example:</p>
+<h2 id="action-envelope-minimum-schema">Action envelope (minimum required fields + extension blocks)</h2>
+<p>A signed record of an attempted tool/action. Example (minimum required fields + optional extension blocks):</p>
+<p>The “Minimum required properties” list defines what is mandatory; any other blocks shown in the example are optional extensions unless required by policy/trust scope.</p>
 <pre class="codeblock"><code><span class="code-line">actionEnvelope: envelopeVersion: &quot;v1&quot; actionId:</span>
 <span class="code-line">&quot;act-...&quot; workUnitId: &quot;wu-...&quot; actor: principalRef: &quot;principal://npe/service/...&quot; persona:</span>
 <span class="code-line">&quot;ops-planner&quot; delegation: ownerPrincipal:</span>
@@ -235,17 +237,17 @@ Centralize policy decisions; distribute enforcement</h3>
 <span class="code-line">&quot;principal://npe/service/...&quot; onBehalfOfPrincipal:</span>
 <span class="code-line">&quot;principal://icam/subject/...&quot; # optional; required for delegated-user semantics sessionRef: &quot;session://sha256:...&quot;</span>
 <span class="code-line"># binds onBehalfOfPrincipal to an authenticated session delegationHash:</span>
-<span class="code-line">&quot;sha256:...&quot; # canonical hash of delegation fields intent: declaredPurpose: &quot;Create a pull request to remediate CVE-2026-XXXX in repository X&quot;</span>
+<span class="code-line">&quot;sha256:...&quot; # canonical hash of delegation fields excluding delegationHash intent: declaredPurpose: &quot;Create a pull request to remediate CVE-2026-XXXX in repository X&quot;</span>
 <span class="code-line">expectedEffects: - &quot;modify:repo://X/path/to/file&quot;</span>
 <span class="code-line">- &quot;create:repo://X/pull-request&quot;</span>
-<span class="code-line">consequenceTier: &quot;t2&quot; intentHash: &quot;sha256:...&quot; # canonical hash of intent fields scope: trustScopeRef: &quot;trustscope://...@sha256:...&quot;</span>
-<span class="code-line">policyBundleRef: &quot;policy://...@sha256:...&quot; context: bundleRefs:</span>
-<span class="code-line">- &quot;context://...@sha256:...&quot; lineage: model: modelId:</span>
-<span class="code-line">&quot;model:...&quot; modelVersion: &quot;sha256:...&quot; mapRef: &quot;map://sha256:...&quot; tool: toolId: &quot;tool:github.pull_request.create&quot; toolVersion: &quot;1.3.2&quot; outputs:</span>
-<span class="code-line">- artifactHash: &quot;sha256:...&quot; artifactRef:</span>
-<span class="code-line">&quot;evidence://artifact/sha256:...&quot; labels: [&quot;artifact:pr&quot;, &quot;tier:t1&quot;]</span>
-<span class="code-line">evidence: envelopeHash: &quot;sha256:...&quot; evidenceRootHash: &quot;sha256:...&quot;</span>
-<span class="code-line">traceId: &quot;trace://...&quot; transport: # optional; only for tool-invocation actions protocol: &quot;&lt;string&gt;&quot; # e.g.,</span>
+<span class="code-line">consequenceTier: &quot;t2&quot; intentHash: &quot;sha256:...&quot; # canonical hash of intent fields excluding intentHash scope: trustScopeRef:</span>
+<span class="code-line">&quot;trustscope://...@sha256:...&quot; policyBundleRef: &quot;policy://...@sha256:...&quot;</span>
+<span class="code-line">context: bundleRefs: - &quot;context://...@sha256:...&quot; lineage: model: modelId: &quot;model:...&quot; modelVersion: &quot;sha256:...&quot; mapRef:</span>
+<span class="code-line">&quot;map://sha256:...&quot; tool: toolId: &quot;tool:github.pull_request.create&quot;</span>
+<span class="code-line">toolVersion: &quot;1.3.2&quot; outputs: - artifactHash: &quot;sha256:...&quot;</span>
+<span class="code-line">artifactRef: &quot;evidence://artifact/sha256:...&quot; labels: [&quot;artifact:pr&quot;,</span>
+<span class="code-line">&quot;tier:t1&quot;] evidence: envelopeHash: &quot;sha256:...&quot; evidenceRootHash:</span>
+<span class="code-line">&quot;sha256:...&quot; traceId: &quot;trace://...&quot; transport: # optional; only for tool-invocation actions protocol: &quot;&lt;string&gt;&quot; # e.g.,</span>
 <span class="code-line">&quot;mcp&quot;, &quot;grpc&quot;, &quot;https&quot; serverId: &quot;tool-server://...&quot;</span>
 <span class="code-line">clientId: &quot;agent-client://...&quot; connectionMode:</span>
 <span class="code-line">&quot;&lt;string&gt;&quot; # e.g., &quot;stdio&quot;, &quot;http&quot;, &quot;sse&quot; decision: verdict:</span>
@@ -273,6 +275,11 @@ MUST be tied to an authenticated <code>sessionRef</code> when present.</p></li>
 <li><p><code>envelopeHash</code> and <code>evidenceRootHash</code> MUST be computed by the gateway/evidence-ledger writer (not supplied by the agent).</p></li>
 <li><p><code>traceId</code> MUST be generated by the platform/gateway and propagated consistently across exports and observability.</p></li>
 </ul>
+<p>Canonicalization and hash computation rules: Hashes MUST be computed over a deterministic canonical serialization of the input object (e.g., RFC 8785 JSON Canonicalization Scheme). <code>delegationHash</code> MUST be computed over the <code>delegation</code> object excluding the
+<code>delegationHash</code> field itself. <code>intentHash</code> MUST be computed over the <code>intent</code> object excluding the
+<code>intentHash</code> field itself. <code>envelopeHash</code> MUST be computed over the entire envelope excluding the <code>signature</code>
+block and excluding <code>evidence.envelopeHash</code> (to avoid self-reference). <code>evidenceRootHash</code> MUST refer to the work unit’s evidence-root anchor maintained by the Evidence Ledger (keyed by
+<code>workUnitId</code>), not a per-envelope Merkle root.</p>
 <h2 id="inter-agent-message-envelope-minimum-schema">Inter-agent message envelope (minimum schema)</h2>
 <p>A signed record of a message between agents (or ensembles). Minimum schema example:</p>
 <pre class="codeblock"><code><span class="code-line">messageEnvelope: envelopeVersion: &quot;v1&quot; messageId:</span>
@@ -1098,7 +1105,7 @@ inter-agent gateway + arbitration + swarm budgets + swarm dashboards)</p></li>
 <li><p><code>tool-catalog.yaml</code></p></li>
 <li><p><code>tool-registry/*.yaml</code> (tool manifests, provenance tier, signatures, SBOM pointers)</p></li>
 <li><p><code>inter-agent-policy.yaml</code></p></li>
-<li><p><code>mcp-connectors/*.yaml</code> (MCP servers/resources/prompts allowlists, if used)</p></li>
+<li><p><code>connectors/*.yaml</code> (MCP or equivalent tool transports: servers/resources/prompts allowlists, if used)</p></li>
 <li><p><code>model-routing.yaml</code></p></li>
 <li><p><code>model-assurance/*.yaml</code> (Model Assurance Profiles; hosting + data handling + eval references)</p></li>
 <li><p><code>sandbox-profiles/*.yaml</code> (executor and tool sandbox profiles by tier and enclave)</p></li>
@@ -1110,7 +1117,7 @@ inter-agent gateway + arbitration + swarm budgets + swarm dashboards)</p></li>
 <li><p><code>eval-packs/*.yaml</code></p></li>
 <li><p><code>tool-evals/*.yaml</code></p></li>
 <li><p><code>evidence-schema/*.json</code></p></li>
-<li><p><code>evidence-export-profiles/*.yaml</code> (Evidence Export Profiles; minimization, linkage requirements, and governed sinks)</p></li>
+<li><p><code>evidence-export-profiles/*.yaml</code> (REQUIRED if exporting derived evidence: minimization, linkage requirements, and governed sinks)</p></li>
 <li><p><code>dashboards/*.json</code> (SIEM/SOAR/SOC views)</p></li>
 <li><p><code>dashboard-queries/*.yaml</code> (optional: saved lineage/governance queries derived from evidence)</p></li>
 <li><p><code>runbooks/*.md</code> (containment, rollback, degraded-mode transitions)</p></li>
