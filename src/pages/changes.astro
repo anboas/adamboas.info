@@ -21,12 +21,32 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.0.8',
+		date: '2026-02-17',
+		title: 'Homepage mobile overflow fix for featured cards',
+		summary: 'Fixed a mobile rendering bug where featured reading titles could overflow card bounds and appear clipped/bleeding outside the container.',
+		impact: 'Homepage cards now wrap safely on small screens and preserve readable layout without horizontal clipping artifacts.',
+		current: true,
+		tags: ['ux', 'mobile', 'homepage', 'bugfix'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Hardened featured reading card layout with min-width constraints, overflow clipping, and wrapped title rendering.',
+					'Updated mobile top quick-link row to allow wrapping under tight viewport/text-size conditions.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.7',
 		date: '2026-02-17',
 		title: 'Future-only event feed + one-by-one link hardening pass',
 		summary: 'Restricted the active tracker feed to future-dated events with usable external references and promoted real source links when official links are missing.',
 		impact: 'The board now suppresses stale/non-future records and improves link integrity by preferring valid external event references over placeholders.',
-		current: true,
 		tags: ['events', 'bd-intelligence', 'data-quality', 'ux'],
 		groups: [
 			{
