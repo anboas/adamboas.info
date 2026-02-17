@@ -1,27 +1,82 @@
+const ALL_TYPES = ['paper', 'note', 'memo'];
+
 function norm(s) {
 	return (s ?? '').toString().trim().toLowerCase();
 }
 
+function getTypeToggles() {
+	return [...document.querySelectorAll('[data-writing-type-toggle]')];
+}
+
+function getSelectedTypes() {
+	return getTypeToggles()
+		.filter((btn) => btn.getAttribute('aria-pressed') !== 'false')
+		.map((btn) => btn.getAttribute('data-writing-type-toggle'))
+		.filter(Boolean);
+}
+
+function setSelectedTypes(types) {
+	const wanted = new Set((types ?? []).map(norm));
+	for (const btn of getTypeToggles()) {
+		const type = norm(btn.getAttribute('data-writing-type-toggle'));
+		btn.setAttribute('aria-pressed', wanted.has(type) ? 'true' : 'false');
+	}
+}
+
+function parseTypesFromUrl(url) {
+	const typesParam = url.searchParams.get('types');
+	if (typesParam) {
+		const parsed = typesParam
+			.split(',')
+			.map((x) => norm(x))
+			.filter((x) => ALL_TYPES.includes(x));
+		if (parsed.length) return [...new Set(parsed)];
+	}
+
+	// Backward compatibility with legacy single-value `type` param.
+	const legacyType = norm(url.searchParams.get('type'));
+	if (legacyType && legacyType !== 'all' && ALL_TYPES.includes(legacyType)) {
+		return [legacyType];
+	}
+
+	return [...ALL_TYPES];
+}
+
 function syncFromUrl() {
 	const url = new URL(window.location.href);
-	const t = url.searchParams.get('type');
 	const q = url.searchParams.get('q');
-	const sel = document.querySelector('[data-writing-type]');
 	const inp = document.querySelector('[data-writing-search]');
-	if (sel && t) sel.value = t;
 	if (inp && q) inp.value = q;
+	setSelectedTypes(parseTypesFromUrl(url));
+}
+
+function updateUrl() {
+	const url = new URL(window.location.href);
+	const q = norm(document.querySelector('[data-writing-search]')?.value);
+	const selected = getSelectedTypes();
+
+	if (selected.length === ALL_TYPES.length) {
+		url.searchParams.delete('types');
+	} else {
+		url.searchParams.set('types', selected.join(','));
+	}
+
+	// Remove legacy param if present.
+	url.searchParams.delete('type');
+
+	if (q) url.searchParams.set('q', q);
+	else url.searchParams.delete('q');
+
+	window.history.replaceState({}, '', url);
 }
 
 function clearFilters() {
-	const sel = document.querySelector('[data-writing-type]');
 	const inp = document.querySelector('[data-writing-search]');
-	if (sel) sel.value = 'all';
 	if (inp) inp.value = '';
+	setSelectedTypes(ALL_TYPES);
 	updateUrl();
 	applyFilter();
 }
-
-
 
 function renderChips() {
 	const root = document.querySelector('[data-writing-index]');
@@ -30,7 +85,7 @@ function renderChips() {
 	if (!chips) return;
 
 	const q = norm(document.querySelector('[data-writing-search]')?.value);
-	const type = document.querySelector('[data-writing-type]')?.value || 'all';
+	const selected = getSelectedTypes();
 
 	chips.innerHTML = '';
 	const mk = (label, onClick) => {
@@ -42,18 +97,28 @@ function renderChips() {
 		chips.appendChild(b);
 	};
 
-	if (type !== 'all') mk(`Type: ${type}`, () => {
-		const sel = document.querySelector('[data-writing-type]');
-		if (sel) sel.value = 'all';
-		updateUrl();
-		applyFilter();
-	});
-	if (q) mk(`Query: ${q}`, () => {
-		const inp = document.querySelector('[data-writing-search]');
-		if (inp) inp.value = '';
-		updateUrl();
-		applyFilter();
-	});
+	if (selected.length === 0) {
+		mk('Types: none', () => {
+			setSelectedTypes(ALL_TYPES);
+			updateUrl();
+			applyFilter();
+		});
+	} else if (selected.length < ALL_TYPES.length) {
+		mk(`Types: ${selected.join(', ')}`, () => {
+			setSelectedTypes(ALL_TYPES);
+			updateUrl();
+			applyFilter();
+		});
+	}
+
+	if (q) {
+		mk(`Query: ${q}`, () => {
+			const inp = document.querySelector('[data-writing-search]');
+			if (inp) inp.value = '';
+			updateUrl();
+			applyFilter();
+		});
+	}
 }
 
 function applyFilter() {
@@ -61,7 +126,7 @@ function applyFilter() {
 	if (!root) return;
 
 	const q = norm(document.querySelector('[data-writing-search]')?.value);
-	const type = document.querySelector('[data-writing-type]')?.value || 'all';
+	const selected = new Set(getSelectedTypes());
 
 	const empty = root.querySelector('[data-writing-empty]');
 	let shown = 0;
@@ -69,10 +134,11 @@ function applyFilter() {
 	for (const el of cards) {
 		const t = norm(el.getAttribute('data-title'));
 		const tags = norm(el.getAttribute('data-tags'));
-		const elType = el.getAttribute('data-type') || '';
+		const elType = norm(el.getAttribute('data-type'));
 
 		let ok = true;
-		if (type !== 'all' && elType !== type) ok = false;
+		if (selected.size === 0) ok = false;
+		else if (!selected.has(elType)) ok = false;
 		if (q && !(t.includes(q) || tags.includes(q))) ok = false;
 
 		el.classList.toggle('hidden', !ok);
@@ -82,19 +148,6 @@ function applyFilter() {
 	renderChips();
 }
 
-function updateUrl() {
-	const url = new URL(window.location.href);
-	const q = norm(document.querySelector('[data-writing-search]')?.value);
-	const type = document.querySelector('[data-writing-type]')?.value || 'all';
-	if (type && type !== 'all') url.searchParams.set('type', type);
-	else url.searchParams.delete('type');
-	if (q) url.searchParams.set('q', q);
-	else url.searchParams.delete('q');
-	window.history.replaceState({}, '', url);
-}
-
-
-
 function applyTag(tag) {
 	const inp = document.querySelector('[data-writing-search]');
 	if (inp) inp.value = tag;
@@ -102,28 +155,37 @@ function applyTag(tag) {
 	applyFilter();
 }
 
-for (const sel of ['[data-writing-search]', '[data-writing-type]']) {
-	const el = document.querySelector(sel);
-	if (el) el.addEventListener('input', () => {
+const searchInput = document.querySelector('[data-writing-search]');
+if (searchInput) {
+	searchInput.addEventListener('input', () => {
 		updateUrl();
 		applyFilter();
 	});
-	if (el) el.addEventListener('change', () => {
+	searchInput.addEventListener('change', () => {
 		updateUrl();
 		applyFilter();
 	});
 }
 
-
+for (const btn of getTypeToggles()) {
+	btn.addEventListener('click', () => {
+		const currentlyOn = btn.getAttribute('aria-pressed') !== 'false';
+		btn.setAttribute('aria-pressed', currentlyOn ? 'false' : 'true');
+		updateUrl();
+		applyFilter();
+	});
+}
 
 // Clicking a tag pill applies it as the search query.
 const root = document.querySelector('[data-writing-index]');
-if (root) root.addEventListener('click', (e) => {
-	const btn = e.target?.closest?.('[data-writing-tag]');
-	if (!btn) return;
-	e.preventDefault();
-	applyTag(btn.getAttribute('data-writing-tag') || '');
-});
+if (root) {
+	root.addEventListener('click', (e) => {
+		const btn = e.target?.closest?.('[data-writing-tag]');
+		if (!btn) return;
+		e.preventDefault();
+		applyTag(btn.getAttribute('data-writing-tag') || '');
+	});
+}
 
 const clearBtn = document.querySelector('[data-writing-clear]');
 if (clearBtn) clearBtn.addEventListener('click', () => clearFilters());

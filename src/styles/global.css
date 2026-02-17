@@ -704,6 +704,23 @@ button[data-writing-tag]:hover {
   position: relative;
   cursor: help;
 }
+
+.writing-type-toggle {
+  cursor: pointer;
+  transition: opacity 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+
+.writing-type-toggle[aria-pressed="true"] {
+  opacity: 1;
+  box-shadow: 0 0 0 1px rgba(226, 232, 240, 0.08) inset;
+}
+
+.writing-type-toggle[aria-pressed="false"] {
+  opacity: 0.55;
+  border-color: rgba(51, 65, 85, 0.72) !important;
+  background: rgba(15, 23, 42, 0.45) !important;
+  color: rgba(148, 163, 184, 0.9) !important;
+}
 .writing-key-pill::after {
   content: attr(data-tooltip);
   position: absolute;
