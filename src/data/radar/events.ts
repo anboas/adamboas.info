@@ -355,58 +355,119 @@ export const radarEventsSeed: RadarEvent[] = [
 	},
 	{
 		id: 'radar-federal-ai-summit-2026',
-		title: 'Federal AI Summit',
-		description: 'Cross-agency AI operations and governance event with practical implementation tracks.',
-		startDate: '2026-03-10',
-		branch: 'Civilian',
-		type: 'Summit',
+		title: 'AI Summit 2026',
+		description: 'GovCIO Media summit on scaling AI responsibly across federal missions with trust and security focus.',
+		startDate: '2026-11-06',
+		branch: 'Joint',
+		type: 'Conference',
 		status: 'Upcoming',
-		signal: 'High',
+		signal: 'Medium',
 		effort: 'Low',
 		location: 
 		{
-			city: 'Washington',
-			state: 'DC',
+			city: 'Tysons',
+			state: 'VA',
 			country: 'USA',
-			lat: 38.9072,
-			lng: -77.0369,
-			venue: 'Downtown DC (seed)'
+			lat: 38.9243,
+			lng: -77.2342,
+			venue: 'Hyatt Regency Tysons Corner Center'
 		},
 		ontology: 
 		{
-			themes: ['Policy implementation', 'Responsible AI', 'Program execution'],
-			capabilityAreas: ['Governance controls', 'Model evaluation', 'Workflow automation'],
-			missionThreads: ['Policy-to-practice acceleration'],
-			stakeholders: ['Agency CIO shops', 'Program executives', 'Vendors'],
-			keywords: ['federal ai', 'governance', 'implementation'],
-			relatedPrograms: ['Code-as-policy', 'ACP-RA'],
+			themes: ['Defense conference monitoring', 'Applied AI adoption', 'Federal mission modernization'],
+			capabilityAreas: ['AI/ML', 'Data modernization', 'Cybersecurity'],
+			missionThreads: ['Program sensing', 'Technology adoption'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ai summit', 'govcio', 'federal ai', 'responsible ai', 'mission modernization'],
+			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-45 days',
-				prep: 'T-30 to T-5 days',
-				execution: 'Day-of + 14-day debrief'
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Manual seed record',
-				url: 'https://www.adamboas.com/events/',
-				type: 'manual',
-				lastVerified: '2026-02-12',
-				confidence: 'Low'
+				name: 'GovCIO Media & Research',
+				url: 'https://govciomedia.com/ai-summit-2026/',
+				type: 'official',
+				lastVerified: '2026-02-17',
+				confidence: 'High'
 			}],
 			links: 
 			{
+				official: 'https://govciomedia.com/ai-summit-2026/',
+				registration: 'https://govciomedia.com/ai-summit-2026/'
 			},
 			logistics: 
 			{
-				format: 'Hybrid',
+				format: 'In-person',
 				estimatedCostUsd: 
 				{
 					min: 0,
-					max: 450
+					max: 600
 				},
 				travelBurdenFromDc: 'Low'
 			}
+		}
+	},
+
+	{
+		id: 'radar-federal-ai-forum-2026',
+		title: 'Federal AI Forum 2026',
+		description: 'GovCIO Media forum focused on agentic AI implementation patterns for federal missions.',
+		startDate: '2026-08-13',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location:
+		{
+			city: 'Reston',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.9586,
+			lng: -77.3570
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'Applied AI adoption', 'Agentic AI operations'],
+			capabilityAreas: ['AI/ML', 'Data modernization', 'Cybersecurity'],
+			missionThreads: ['Program sensing', 'Technology adoption'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['federal ai forum', 'govcio', 'agentic ai', 'autonomous agents', 'copilots'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'GovCIO Media & Research',
+				url: 'https://govciomedia.com/federal-ai-forum/',
+				type: 'official',
+				lastVerified: '2026-02-17',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://govciomedia.com/federal-ai-forum/',
+				registration: 'https://govciomedia.com/federal-ai-forum/'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				estimatedCostUsd:
+				{
+					min: 0,
+					max: 400
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Date verified from organizer page; location inferred from indexed listing and should be rechecked against final organizer update.'
 		}
 	},
 	{

@@ -21,12 +21,36 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.1.7',
+		date: '2026-02-17',
+		title: 'GovCIO events expansion for AI/agentic signal',
+		summary: 'Expanded GovCIO coverage by adding Federal AI Forum and converting a seed AI Summit record into a verified official event entry.',
+		impact: 'The events feed now captures more agentic/federal AI signal from a trusted source while reducing low-confidence seed artifacts.',
+		current: true,
+		tags: ['events', 'ingest', 'ai', 'agentic', 'verification'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `Federal AI Forum 2026` from GovCIO official event page with agentic AI relevance.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced low-confidence seeded `Federal AI Summit` details with verified `AI Summit 2026` GovCIO event metadata and official links.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.1.6',
 		date: '2026-02-17',
 		title: 'Targeted AI/autonomy event ingest + trust-link remediation',
 		summary: 'Added AI/agentic/autonomy-relevant future events and upgraded key existing records from disallowed-source provenance to official links.',
 		impact: 'The active /events feed now includes stronger AI/autonomy signal with better link trust and fewer records blocked by legitimacy gating.',
-		current: true,
 		tags: ['events', 'ingest', 'ai', 'autonomy', 'verification'],
 		groups: [
 			{
