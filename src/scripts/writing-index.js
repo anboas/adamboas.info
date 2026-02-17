@@ -85,8 +85,6 @@ function renderChips() {
 	if (!chips) return;
 
 	const q = norm(document.querySelector('[data-writing-search]')?.value);
-	const selected = getSelectedTypes();
-
 	chips.innerHTML = '';
 	const mk = (label, onClick) => {
 		const b = document.createElement('button');
@@ -96,20 +94,6 @@ function renderChips() {
 		b.addEventListener('click', onClick);
 		chips.appendChild(b);
 	};
-
-	if (selected.length === 0) {
-		mk('Types: none', () => {
-			setSelectedTypes(ALL_TYPES);
-			updateUrl();
-			applyFilter();
-		});
-	} else if (selected.length < ALL_TYPES.length) {
-		mk(`Types: ${selected.join(', ')}`, () => {
-			setSelectedTypes(ALL_TYPES);
-			updateUrl();
-			applyFilter();
-		});
-	}
 
 	if (q) {
 		mk(`Query: ${q}`, () => {
