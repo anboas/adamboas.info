@@ -495,14 +495,46 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 }
 
 @media (min-width: 1536px) {
+  .writing-detail-shell {
+    /* Reserve a side rail so TOC is off to the right, not stacked over content. */
+    padding-right: 12.6rem;
+  }
+
   .writing-toc {
     position: fixed;
-    left: calc(50% + 36ch + 1.4rem);
+    left: calc(50% + 36ch + 1.65rem);
     top: calc(5.2rem + env(safe-area-inset-top));
-    width: 10.75rem;
+    width: 10.8rem;
     max-height: calc(100vh - 6rem);
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     z-index: 22;
+    scrollbar-width: none;
+  }
+
+  /* Show scrollbar only on intent (hover/focus), otherwise hidden. */
+  .writing-toc:hover,
+  .writing-toc:focus-within {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, 0.8) rgba(2, 6, 23, 0.25);
+  }
+
+  .writing-toc::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .writing-toc:hover::-webkit-scrollbar,
+  .writing-toc:focus-within::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .writing-toc::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.78);
+    border-radius: 999px;
+  }
+
+  .writing-toc::-webkit-scrollbar-track {
+    background: rgba(2, 6, 23, 0.24);
   }
 }
 

@@ -512,7 +512,15 @@ const writingUrl = absoluteUrl('/writing/');
 						link.removeAttribute('data-active');
 					}
 				}
-				activeLink?.scrollIntoView({ block: 'nearest' });
+
+				if (activeLink && toc) {
+					const targetTop = activeLink.offsetTop - toc.clientHeight * 0.34;
+					const maxTop = Math.max(0, toc.scrollHeight - toc.clientHeight);
+					const clampedTop = Math.max(0, Math.min(maxTop, targetTop));
+					if (Math.abs(toc.scrollTop - clampedTop) > 8) {
+						toc.scrollTo({ top: clampedTop, behavior: 'auto' });
+					}
+				}
 			};
 
 			const findCurrentByPosition = () => {
