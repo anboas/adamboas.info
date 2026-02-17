@@ -502,7 +502,7 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 
   .writing-toc {
     position: fixed;
-    right: max(0.75rem, calc((100vw - 80rem) / 2 + 0.75rem));
+    right: 0.75rem;
     left: auto;
     top: calc(5.2rem + env(safe-area-inset-top));
     width: 10.8rem;

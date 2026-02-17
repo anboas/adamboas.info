@@ -497,6 +497,20 @@ const writingUrl = absoluteUrl('/writing/');
 
 			toc.removeAttribute('hidden');
 
+			const positionTocRail = () => {
+				const article = content.closest('.writing-detail-shell')?.querySelector('article.card');
+				if (!article) return;
+				const articleRect = article.getBoundingClientRect();
+				const gap = 18;
+				const desiredLeft = articleRect.right + gap;
+				const maxLeft = window.innerWidth - toc.offsetWidth - 8;
+				const left = Math.min(desiredLeft, maxLeft);
+				toc.style.left = `${Math.round(left)}px`;
+				toc.style.right = 'auto';
+			};
+
+			positionTocRail();
+
 			let activeHeading = null;
 			let activeLink = null;
 
@@ -557,7 +571,10 @@ const writingUrl = absoluteUrl('/writing/');
 
 			setActive(findCurrentByPosition());
 			window.addEventListener('scroll', onScroll, { passive: true });
-			window.addEventListener('resize', onScroll, { passive: true });
+			window.addEventListener('resize', () => {
+				positionTocRail();
+				onScroll();
+			}, { passive: true });
 		})();
 	</script>
 </SiteLayout>
