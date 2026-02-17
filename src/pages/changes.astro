@@ -21,12 +21,37 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.2',
+		date: '2026-02-17',
+		title: 'NDIA/NTSA event-detail enrichment from live browser data',
+		summary: 'Enriched the full NDIA/NTSA 2026 event set with card-level metadata from the live NDIA browser page, including registration/agenda links, type/location parsing, and cleaned deduplication.',
+		impact: 'Tracker records now carry substantially more actionable detail for NDIA/NTSA events while preserving official-link legitimacy gating.',
+		current: true,
+		tags: ['events', 'ndia', 'ntsa', 'metadata', 'browser-relay'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Updated NDIA/NTSA 2026 entries with live card metadata: date ranges, type/venue/location normalization, and richer event descriptions.',
+					'Added available registration and agenda links into ontology links for newly integrated event records.',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Removed duplicate I/ITSEC representation and retained a single canonical tracker record tied to the official NTSA event URL.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.1',
 		date: '2026-02-17',
 		title: 'Bulk NDIA 2026 calendar ingest from live browser session',
 		summary: 'Pulled the full currently listed NDIA/NTSA 2026 calendar set from a live browser-visible NDIA events page and added missing records with official event URLs.',
 		impact: 'Coverage expanded immediately with broad NDIA/NTSA 2026 event visibility despite direct-fetch anti-bot blocking on NDIA endpoints.',
-		current: true,
 		tags: ['events', 'ingest', 'ndia', 'ntsa', 'browser-relay'],
 		groups: [
 			{
