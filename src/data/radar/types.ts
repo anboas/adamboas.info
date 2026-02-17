@@ -9,6 +9,10 @@ export interface RadarSource {
 	type: 'official' | 'aggregator' | 'community' | 'manual';
 	lastVerified: string;
 	confidence: 'High' | 'Medium' | 'Low';
+	evidenceId?: string;
+	evidenceHash?: string;
+	snapshotDate?: string;
+	checkedBy?: string;
 }
 
 export interface RadarLinks {
@@ -29,6 +33,26 @@ export interface RadarLocation {
 }
 
 export type RadarEngagementKind = 'Industry Day' | 'Pre-solicitation' | 'Sources Sought' | 'Vendor Outreach' | 'Special Notice';
+export type RadarEngagementStatus = 'Not engaged' | 'Registered' | 'Met' | 'Follow-up sent' | 'Qualified' | 'No-go' | 'Monitor';
+
+export interface RadarContact {
+	name: string;
+	role?: string;
+	organization?: string;
+	email?: string;
+	phone?: string;
+	link?: string;
+}
+
+export interface RadarEngagementTracking {
+	status: RadarEngagementStatus;
+	owner?: string;
+	nextAction?: string;
+	nextActionDate?: string;
+	lastTouchDate?: string;
+	notes?: string;
+	contacts?: RadarContact[];
+}
 
 export interface RadarOntology {
 	themes: string[];
@@ -57,6 +81,7 @@ export interface RadarOntology {
 		responseDueDate?: string;
 		registrationDeadline?: string;
 	};
+	engagement?: RadarEngagementTracking;
 	notes?: string;
 }
 

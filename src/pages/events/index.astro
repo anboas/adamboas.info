@@ -3,7 +3,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
-import type { RadarEngagementKind } from '../../data/radar/types';
+import type { RadarEngagementKind, RadarEngagementStatus } from '../../data/radar/types';
 
 const events = radarEventsSeed;
 
@@ -151,6 +151,54 @@ function fmtDateRange(start: string | null, end: string | null | undefined) {
 	return `${fmtDate(start)} - ${fmtDate(end)}`;
 }
 
+function parseIsoDate(value: string | null | undefined) {
+	if (!value) return null;
+	const d = new Date(value);
+	return Number.isNaN(d.getTime()) ? null : d;
+}
+
+function daysSince(value: string | null | undefined) {
+	const d = parseIsoDate(value);
+	if (!d) return null;
+	const now = new Date();
+	const dayMs = 86_400_000;
+	return Math.floor((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())) / dayMs);
+}
+
+function provenanceFreshness(value: string | null | undefined) {
+	const age = daysSince(value);
+	if (age === null) return { label: 'Unknown', tone: 'unknown' as const };
+	if (age <= 14) return { label: `Fresh (${age}d)`, tone: 'fresh' as const };
+	if (age <= 30) return { label: `Watch (${age}d)`, tone: 'watch' as const };
+	return { label: `Stale (${age}d)`, tone: 'stale' as const };
+}
+
+function evidenceHealth(event: (typeof events)[number]) {
+	const tones = event.ontology.provenance.map((source) => provenanceFreshness(source.lastVerified).tone);
+	if (!tones.length) return 'Unknown';
+	if (tones.includes('stale')) return 'Needs refresh';
+	if (tones.includes('watch')) return 'Monitor';
+	return 'Fresh';
+}
+
+function engagementStatus(event: (typeof events)[number]): RadarEngagementStatus {
+	if (event.ontology.engagement?.status) return event.ontology.engagement.status;
+	if (isGovOpportunitySignal(event)) return 'Not engaged';
+	return 'Monitor';
+}
+
+function engagementNextAction(event: (typeof events)[number]) {
+	return event.ontology.engagement?.nextAction ?? (isGovOpportunitySignal(event) ? 'Review notice + decide pursue/no-go' : null);
+}
+
+function displayNoticeLabel(event: (typeof events)[number]) {
+	const label = noticeTypeLabel(event);
+	if (!label) return null;
+	const kinds = inferEngagementKinds(event).map((k) => k.toLowerCase());
+	if (kinds.includes(label.toLowerCase())) return null;
+	return label;
+}
+
 function locationLabel(event: (typeof events)[number]) {
 	return event.location.state ? `${event.location.city}, ${event.location.state}` : event.location.city;
 }
@@ -197,25 +245,14 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 				<span class="radar-mini-stat">{summaryStats.total} events</span>
 				<span class="radar-mini-stat">{summaryStats.upcoming} upcoming</span>
 				<span class="radar-mini-stat">{summaryStats.navySurfaceSignals} navy / warfare center signals</span>
-				<span class="radar-mini-stat">{summaryStats.industryDays} industry days</span>
-				<span class="radar-mini-stat">{summaryStats.opportunitySignals} gov opportunity signals</span>
 				<span class="radar-mini-stat">{summaryStats.samNotices} SAM official notices</span>
 				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
-				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
 			</div>
 			<div class="mt-3 radar-preset-row">
-				<button type="button" class="radar-preset-btn" data-radar-mode-preset="opportunity-ops">Opportunity ops mode</button>
-				<button type="button" class="radar-preset-btn" data-radar-mode-preset="conference-ops">Conference ops mode</button>
-				<button type="button" class="radar-preset-btn" data-radar-mode-preset="navy-ops">Navy / NSWC ops mode</button>
-				<button type="button" class="radar-preset-btn" data-radar-preset="all">All events</button>
-				<button type="button" class="radar-preset-btn" data-radar-focus-preset="navy-surface">Navy + warfare centers</button>
-				<button type="button" class="radar-preset-btn" data-radar-source-preset="conference">Conferences only</button>
-				<button type="button" class="radar-preset-btn" data-radar-preset="opportunity">Gov opportunity signals</button>
-				<button type="button" class="radar-preset-btn" data-radar-source-preset="sam">SAM notices</button>
-				<button type="button" class="radar-preset-btn" data-radar-preset="Industry Day">Industry days</button>
-				<button type="button" class="radar-preset-btn" data-radar-preset="Pre-solicitation">Pre-solicitation</button>
-				<button type="button" class="radar-preset-btn" data-radar-preset="Sources Sought">Sources sought</button>
-				<button type="button" class="radar-preset-btn" data-radar-preset="Vendor Outreach">Vendor outreach</button>
+				<button type="button" class="radar-preset-btn" data-radar-mode-preset="opportunity-ops">Opportunity ops</button>
+				<button type="button" class="radar-preset-btn" data-radar-mode-preset="navy-ops">Navy / NSWC ops</button>
+				<button type="button" class="radar-preset-btn" data-radar-mode-preset="conference-ops">Conference ops</button>
+				<button type="button" class="radar-preset-btn" data-radar-preset="all">Clear</button>
 			</div>
 			<div class="mt-3 border-t border-slate-800 pt-3 radar-filter-wrap">
 				<details id="radar-filter-panel" class="radar-filter-panel">
@@ -343,10 +380,10 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 								{event.ontology.themes.slice(0, 4).map((theme) => <span class="radar-pill">{theme}</span>)}
 							</div>
 
-							{(inferEngagementKinds(event).length || noticeTypeLabel(event)) ? (
+							{(inferEngagementKinds(event).length || displayNoticeLabel(event)) ? (
 								<div class="mt-2 flex flex-wrap items-center gap-2 radar-opportunity-row">
 									{inferEngagementKinds(event).map((kind) => <span class="radar-opportunity-pill">{kind}</span>)}
-									{noticeTypeLabel(event) ? <span class="radar-opportunity-note">Notice: {noticeTypeLabel(event)}</span> : null}
+									{displayNoticeLabel(event) ? <span class="radar-opportunity-note">Notice: {displayNoticeLabel(event)}</span> : null}
 								</div>
 							) : null}
 
@@ -411,6 +448,37 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 									</div>
 								) : null}
 
+								<div class="mt-4 grid gap-4 lg:grid-cols-2">
+									<div>
+										<p class="radar-section-label">BD engagement</p>
+										<ul class="radar-listing">
+											<li><strong>Status:</strong> {engagementStatus(event)}</li>
+											{event.ontology.engagement?.owner ? <li><strong>Owner:</strong> {event.ontology.engagement?.owner}</li> : null}
+											{engagementNextAction(event) ? <li><strong>Next action:</strong> {engagementNextAction(event)}</li> : null}
+											{event.ontology.engagement?.nextActionDate ? <li><strong>Next action date:</strong> {fmtDate(event.ontology.engagement?.nextActionDate)}</li> : null}
+											{event.ontology.engagement?.lastTouchDate ? <li><strong>Last touch:</strong> {fmtDate(event.ontology.engagement?.lastTouchDate)}</li> : null}
+										</ul>
+										{event.ontology.engagement?.notes ? <p class="mt-2 text-xs text-slate-400">{event.ontology.engagement?.notes}</p> : null}
+									</div>
+									<div>
+										<p class="radar-section-label">Contacts</p>
+										{event.ontology.engagement?.contacts?.length ? (
+											<ul class="radar-listing">
+												{event.ontology.engagement.contacts.map((contact) => (
+													<li>
+														{contact.name}
+														{contact.role ? <span class="text-slate-500"> · {contact.role}</span> : null}
+														{contact.organization ? <span class="text-slate-500"> · {contact.organization}</span> : null}
+														{contact.email ? <span class="text-slate-500"> · {contact.email}</span> : null}
+													</li>
+												))}
+											</ul>
+										) : (
+											<p class="mt-2 text-xs text-slate-500">No contact log yet.</p>
+										)}
+									</div>
+								</div>
+
 								<div class="mt-4">
 									<p class="radar-section-label">Timing</p>
 									<ul class="radar-listing">
@@ -420,15 +488,18 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 								</div>
 
 								<div class="mt-4">
-									<p class="radar-section-label">Provenance</p>
+									<p class="radar-section-label">Evidence & provenance</p>
 									<ul class="radar-listing">
 										{event.ontology.provenance.map((source) => (
 											<li>
 												<a href={source.url} target="_blank" rel="noreferrer">{source.name}</a>
 												<span class="text-slate-500"> · {source.type}, {source.confidence} confidence, verified {source.lastVerified}</span>
+												<span class={`radar-evidence-pill radar-evidence-pill-${provenanceFreshness(source.lastVerified).tone}`}>{provenanceFreshness(source.lastVerified).label}</span>
+												{source.evidenceId ? <span class="text-slate-500"> · evidence {source.evidenceId}</span> : null}
 											</li>
 										))}
 									</ul>
+									<p class="mt-2 text-xs text-slate-400">Evidence health: {evidenceHealth(event)}</p>
 									{event.ontology.notes ? <p class="mt-2 text-xs text-slate-400">{event.ontology.notes}</p> : null}
 								</div>
 							</details>
@@ -656,6 +727,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		const days = parseDays(card.dataset.days);
 		const engagement = (card.dataset.engagement || '').split('|').filter(Boolean);
 		const sourceLayer = card.dataset.source || 'conference';
+		const navyFocus = card.dataset.navyFocus === '1';
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		const typeClass = `radar-type-${typeTone(type)}`;
 		const sourceClass = sourceLayer === 'sam'
@@ -669,11 +741,13 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		const engagementHtml = engagement.length
 			? `<div class="radar-map-popup-meta">${engagement.map((kind) => `<span class="radar-map-popup-badge radar-map-popup-badge-opportunity">${escapeHtml(kind)}</span>`).join(' ')}</div>`
 			: '';
+		const navyHtml = navyFocus ? '<div class="radar-map-popup-meta"><span class="radar-map-popup-badge radar-source-navy">Navy / warfare center</span></div>' : '';
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
 				<div class="radar-map-popup-meta"><span class="radar-map-popup-badge ${statusClass}">${escapeHtml(status)}</span> <span class="radar-map-popup-badge ${typeClass}">${escapeHtml(type)}</span> <span class="radar-map-popup-badge ${sourceClass}">${escapeHtml(sourceLabel)}</span> ${escapeHtml(branch)}</div>
 				${engagementHtml}
+				${navyHtml}
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
 					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
@@ -1418,6 +1492,10 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		border-color: rgba(96, 165, 250, 0.68);
 		color: rgba(219, 234, 254, 0.98);
 	}
+	:global(.radar-map-popup-badge.radar-source-navy) {
+		border-color: rgba(59, 130, 246, 0.72);
+		color: rgba(219, 234, 254, 0.98);
+	}
 	:global(.radar-map-popup-actions) {
 		margin-top: 0.45rem;
 		display: flex;
@@ -1565,6 +1643,32 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 		font-size: 0.83rem;
 		line-height: 1.45;
 		color: rgba(203, 213, 225, 0.96);
+	}
+	.radar-evidence-pill {
+		display: inline-flex;
+		align-items: center;
+		margin-left: 0.35rem;
+		padding: 0.08rem 0.32rem;
+		font-size: 0.62rem;
+		border: 1px solid rgba(71, 85, 105, 0.8);
+		background: rgba(15, 23, 42, 0.78);
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.radar-evidence-pill-fresh {
+		border-color: rgba(34, 197, 94, 0.62);
+		color: rgba(220, 252, 231, 0.95);
+	}
+	.radar-evidence-pill-watch {
+		border-color: rgba(245, 158, 11, 0.62);
+		color: rgba(254, 243, 199, 0.95);
+	}
+	.radar-evidence-pill-stale {
+		border-color: rgba(248, 113, 113, 0.62);
+		color: rgba(254, 202, 202, 0.95);
+	}
+	.radar-evidence-pill-unknown {
+		border-color: rgba(148, 163, 184, 0.55);
+		color: rgba(226, 232, 240, 0.88);
 	}
 	.radar-card-kicker {
 		font-size: 0.64rem;
