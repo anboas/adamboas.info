@@ -496,13 +496,14 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 
 @media (min-width: 1536px) {
   .writing-detail-shell {
-    /* Reserve a side rail so TOC is off to the right, not stacked over content. */
-    padding-right: 12.6rem;
+    /* Keep reading column untouched on ultra-wide screens; TOC sits in outer right rail. */
+    padding-right: 0;
   }
 
   .writing-toc {
     position: fixed;
-    left: calc(50% + 36ch + 1.65rem);
+    right: max(0.75rem, calc((100vw - 80rem) / 2 + 0.75rem));
+    left: auto;
     top: calc(5.2rem + env(safe-area-inset-top));
     width: 10.8rem;
     max-height: calc(100vh - 6rem);
