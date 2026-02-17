@@ -21,12 +21,35 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v1.5.3',
+		date: '2026-02-17',
+		title: 'Code block wrap control reliability fix',
+		summary: 'Fixed Wrap/Unwrap behavior for numbered code blocks on writing pages and improved visible state feedback.',
+		impact: 'Long code samples now reliably wrap on demand, especially on mobile and narrower windows.',
+		current: true,
+		tags: ['writing', 'ux', 'accessibility'],
+		groups: [
+			{
+				kind: 'Added',
+				items: ['Wrap control now toggles visible state text (`Wrap`/`Unwrap`) with pressed-state semantics.'],
+			},
+			{
+				kind: 'Changed',
+				items: ['Numbered code-line wrapping now correctly overrides base `white-space: pre` rules when wrap mode is enabled.'],
+			},
+			{
+				kind: 'Improved',
+				items: ['Applied safer word breaking/overflow handling for long tokens in wrapped code lines.'],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v1.5.2',
 		date: '2026-02-17',
 		title: 'Events cost visibility in compact + detailed views',
 		summary: 'Registration cost now appears in event cards and metadata views only when cost data is actually tracked.',
 		impact: 'Improves decision-readiness while keeping cards clean when cost data is absent.',
-		current: true,
 		tags: ['events', 'ux', 'data'],
 		groups: [
 			{

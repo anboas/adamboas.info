@@ -298,6 +298,7 @@ article[data-paper-style="dossier"] .paper-content pre {
 .paper-content pre.code-wrap code {
   white-space: pre-wrap;
   word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 article[data-paper-style="dossier"] .paper-content pre code {
@@ -347,6 +348,13 @@ article[data-paper-style="dossier"] .paper-content pre code {
   white-space: pre;
   line-height: 1.1;
   margin: 0;
+}
+
+/* Wrap mode override for numbered code lines (must come after base .code-line rule). */
+.paper-content pre.codeblock.code-wrap code .code-line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 /* Empty lines would otherwise have zero height, collapsing line numbers. */
 .paper-content pre.codeblock code .code-line:empty::after {

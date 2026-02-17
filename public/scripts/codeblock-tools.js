@@ -19,9 +19,17 @@ function ensureTools(pre) {
 	pre.style.position = 'relative';
 	pre.prepend(bar);
 
+	const syncWrapState = (isWrapped) => {
+		wrap.setAttribute('aria-pressed', isWrapped ? 'true' : 'false');
+		wrap.textContent = isWrapped ? 'Unwrap' : 'Wrap';
+	};
+
+	syncWrapState(pre.classList.contains('code-wrap'));
+
 	wrap.addEventListener('click', () => {
-		pre.classList.toggle('code-wrap');
-		if (typeof window.__track === 'function') window.__track('Code: Toggle Wrap');
+		const isWrapped = pre.classList.toggle('code-wrap');
+		syncWrapState(isWrapped);
+		if (typeof window.__track === 'function') window.__track('Code: Toggle Wrap', { wrapped: isWrapped });
 	});
 
 	copy.addEventListener('click', async () => {
