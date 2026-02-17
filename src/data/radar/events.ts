@@ -8821,4 +8821,116 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Check-in 08:00 ET, sessions start 09:00 ET on Mar 17; event closes 17:00 ET on Mar 20.',
 		},
 	},
+	{
+		id: 'radar-special-topic-breakfasts',
+		title: 'Special Topic Breakfasts',
+		description: 'Navy League sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-02-25',
+		branch: 'Navy',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Navy stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['special', 'topic', 'breakfasts'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Navy League',
+				url: 'https://www.navyleague.org/meetings-and-events/',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.navyleague.org/meetings-and-events/special-topic-breakfasts/'
+			},
+			logistics: 
+			{
+				format: 'Virtual',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-unmanned-autonomous-systems-summit-2026',
+		title: 'Unmanned & Autonomous Systems Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-04-08',
+		endDate: '2026-04-09',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['unmanned', 'autonomous', 'systems', 'summit', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25915'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
 ];
