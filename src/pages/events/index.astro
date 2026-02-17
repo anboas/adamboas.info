@@ -10,11 +10,37 @@ function isTrackerSelfLink(url: string | null | undefined) {
 	return /^https?:\/\/(www\.)?adamboas\.com\/events\/?$/i.test(url.trim());
 }
 
+function isFutureEventDate(date: string | null | undefined) {
+	if (!date) return false;
+	const parsed = new Date(date);
+	if (Number.isNaN(parsed.getTime())) return false;
+	const targetDay = Date.UTC(parsed.getFullYear(), parsed.getMonth(), parsed.getDate());
+	const now = new Date();
+	const todayDay = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+	return targetDay > todayDay;
+}
+
+function isUsableExternalUrl(url: string | null | undefined) {
+	if (!url || isTrackerSelfLink(url)) return false;
+	try {
+		const parsed = new URL(url.trim());
+		return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+	} catch {
+		return false;
+	}
+}
+
 const events = radarEventsSeed.filter((event) => {
-	const manualOnly = event.ontology.provenance.length > 0 && event.ontology.provenance.every((source) => source.type === 'manual');
-	const hasExternalOfficialLink = Boolean(event.ontology.links.official && !isTrackerSelfLink(event.ontology.links.official));
-	if (manualOnly && !hasExternalOfficialLink) return false;
-	return true;
+	if (!isFutureEventDate(event.startDate)) return false;
+	const candidateLinks = [
+		event.ontology.links.official,
+		event.ontology.links.registration,
+		event.ontology.links.callForPapers,
+		event.ontology.links.agenda,
+		event.ontology.links.hotelBlock,
+		...event.ontology.provenance.map((source) => source.url),
+	];
+	return candidateLinks.some((url) => isUsableExternalUrl(url));
 });
 
 const branches = [...new Set(events.map((e) => e.branch))].sort();
@@ -253,8 +279,22 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	return 'low';
 }
 
+function eventCandidateLinks(event: (typeof events)[number]) {
+	const links = [
+		event.ontology.links.official,
+		event.ontology.links.registration,
+		event.ontology.links.callForPapers,
+		event.ontology.links.agenda,
+		event.ontology.links.hotelBlock,
+		...event.ontology.provenance.map((source) => source.url),
+	]
+		.map((url) => sanitizedLink(url))
+		.filter((url): url is string => Boolean(url));
+	return [...new Set(links)];
+}
+
 function eventPrimaryLink(event: (typeof events)[number]) {
-	return sanitizedLink(event.ontology.links.official);
+	return eventCandidateLinks(event)[0] ?? null;
 }
 
 function eventAuxiliaryLinks(event: (typeof events)[number]) {
@@ -263,11 +303,16 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 	const callForPapers = sanitizedLink(event.ontology.links.callForPapers);
 	const agenda = sanitizedLink(event.ontology.links.agenda);
 	const hotelBlock = sanitizedLink(event.ontology.links.hotelBlock);
+	const sourceReferences = event.ontology.provenance
+		.map((source) => sanitizedLink(source.url))
+		.filter((url): url is string => Boolean(url && url !== primary && ![registration, callForPapers, agenda, hotelBlock].includes(url)))
+		.slice(0, 3);
 	return {
 		registration: registration && registration !== primary ? registration : null,
 		callForPapers: callForPapers && callForPapers !== primary ? callForPapers : null,
 		agenda: agenda && agenda !== primary ? agenda : null,
 		hotelBlock: hotelBlock && hotelBlock !== primary ? hotelBlock : null,
+		sourceReferences,
 	};
 }
 
@@ -439,6 +484,17 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 											{eventAuxiliaryLinks(event).callForPapers ? <li><a href={eventAuxiliaryLinks(event).callForPapers!} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
 											{eventAuxiliaryLinks(event).agenda ? <li><a href={eventAuxiliaryLinks(event).agenda!} target="_blank" rel="noreferrer">Agenda</a></li> : null}
 											{eventAuxiliaryLinks(event).hotelBlock ? <li><a href={eventAuxiliaryLinks(event).hotelBlock!} target="_blank" rel="noreferrer">Hotel block</a></li> : null}
+											{eventAuxiliaryLinks(event).sourceReferences.length ? (
+												<li>
+													<strong>Source refs:</strong>{' '}
+													{eventAuxiliaryLinks(event).sourceReferences.map((url, idx) => (
+														<span>
+															<a href={url} target="_blank" rel="noreferrer">Ref {idx + 1}</a>
+															{idx < eventAuxiliaryLinks(event).sourceReferences.length - 1 ? <span>{' · '}</span> : null}
+														</span>
+													))}
+												</li>
+											) : null}
 										</ul>
 									</div>
 									<div>

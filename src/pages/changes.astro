@@ -21,12 +21,38 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.0.7',
+		date: '2026-02-17',
+		title: 'Future-only event feed + one-by-one link hardening pass',
+		summary: 'Restricted the active tracker feed to future-dated events with usable external references and promoted real source links when official links are missing.',
+		impact: 'The board now suppresses stale/non-future records and improves link integrity by preferring valid external event references over placeholders.',
+		current: true,
+		tags: ['events', 'bd-intelligence', 'data-quality', 'ux'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Removed non-future entries from active display (only future-dated events remain in tracker output).',
+					'Required at least one usable external URL (official or provenance) for events to appear.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Primary event `Link` now falls back to validated provenance URLs when a direct official URL is absent.',
+					'Expanded detail links with source references (`Ref 1..n`) to support one-by-one verification workflows.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.6',
 		date: '2026-02-17',
 		title: 'Events tracker reframed as generic DoW + BD intelligence capability',
 		summary: 'Renamed the Events surface to a generic DoW events + BD intelligence capability and filtered out manual seed-only records without real external sources.',
 		impact: 'Tracker language is now capability-oriented, and trust is improved by excluding synthetic/unverifiable seed records from the active feed.',
-		current: true,
 		tags: ['events', 'bd-intelligence', 'ux', 'data-quality'],
 		groups: [
 			{
