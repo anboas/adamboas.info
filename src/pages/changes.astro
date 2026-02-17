@@ -21,12 +21,36 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.5',
+		date: '2026-02-17',
+		title: 'Cloud/software/AI event expansion + footer nav trim',
+		summary: 'Added additional cloud/software/AI-focused federal event records from official GovCIO event pages and trimmed footer links to utility-only navigation.',
+		impact: 'The events tracker now includes more AI/cloud/software signal while the footer is cleaner and avoids duplicating primary header navigation.',
+		current: true,
+		tags: ['events', 'ai', 'cloud', 'software', 'footer'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added six official GovCIO 2026 events to the radar dataset: Defense IT Summit, CyberScape Summit, Federal IT Efficiency Summit, Federal Tech Leaders Summit, Federal Cloud & Data Forum, and Health IT Summit.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Trimmed footer navigation to utility links only (RSS, Changes, License, GitHub, LinkedIn, Email), removing duplicate primary-section links already present in header navigation.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.4',
 		date: '2026-02-17',
 		title: 'LinkedIn profile link added to site navigation/footer surfaces',
 		summary: 'Added Adam’s LinkedIn profile link to the site footer and homepage Person structured data (`sameAs`).',
 		impact: 'Visitors and search engines now have an explicit LinkedIn profile reference directly from site UI and metadata.',
-		current: true,
 		tags: ['site', 'profile', 'linkedin', 'seo', 'footer'],
 		groups: [
 			{

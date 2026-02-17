@@ -11001,4 +11001,466 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Card summary: The Interservice/Industry Training, Simulation and Education Conference (I/ITSEC) is the world\'s largest modeling, simulation, and training conference. Held near the beginning of December in Orlando, Florida, USA, I/ITSEC co'
 		}
 	},
+	{
+		id: 'radar-defense-it-summit-2026',
+		title: 'Defense IT Summit 2026',
+		description: 'GovCIO summit focused on defense IT modernization, AI adoption, cybersecurity, acquisition speed, and software delivery for mission readiness.',
+		startDate: '2026-02-26',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: {
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8816,
+			lng: -77.091,
+			venue: 'Ritz Carlton Pentagon City'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'AI-enabled mission delivery',
+				'Software modernization'
+			],
+			capabilityAreas: [
+				'AI/ML',
+				'Cybersecurity',
+				'DevSecOps'
+			],
+			missionThreads: [
+				'Technology transition',
+				'Mission IT modernization'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'defense it',
+				'ai',
+				'acquisition',
+				'devsecops',
+				'cybersecurity'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'GovCIO Media & Research',
+					url: 'https://govciomedia.com/defense-it-summit-2026/',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://govciomedia.com/defense-it-summit-2026/',
+				registration: 'https://govciomedia.com/defense-it-summit-2026/'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 0,
+					max: 500
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Event date/time from official page: February 26, 2026, 8:00am-2:15pm ET.'
+		}
+	},
+	{
+		id: 'radar-cyberscape-summit-2026',
+		title: 'CyberScape Summit 2026',
+		description: 'Federal cybersecurity summit covering AI-enabled cyber defense, identity/zero trust, cloud security, and supply-chain resilience.',
+		startDate: '2026-04-16',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: {
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8816,
+			lng: -77.091,
+			venue: 'Renaissance Arlington Capital View'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Cyber resilience',
+				'AI-enabled security'
+			],
+			capabilityAreas: [
+				'Cybersecurity',
+				'Zero Trust',
+				'Cloud security'
+			],
+			missionThreads: [
+				'Critical infrastructure defense',
+				'Supply-chain risk reduction'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'cyberscape',
+				'zero trust',
+				'identity',
+				'cloud security',
+				'ai'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'GovCIO Media & Research',
+					url: 'https://govciomedia.com/cyberscape-summit-2026/',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://govciomedia.com/cyberscape-summit-2026/',
+				registration: 'https://govciomedia.com/cyberscape-summit-2026/'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 0,
+					max: 500
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Event date/time from official page: April 16, 2026, 8:00am-3:30pm ET.'
+		}
+	},
+	{
+		id: 'radar-federal-it-efficiency-summit-2026',
+		title: 'Federal IT Efficiency Summit 2026',
+		description: 'Federal summit on IT optimization, cloud efficiency, AI-driven productivity, and software procurement models for mission delivery.',
+		startDate: '2026-05-20',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Reston',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.9586,
+			lng: -77.357,
+			venue: 'Carahsoft Conference & Collaboration Center'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'IT modernization',
+				'AI productivity'
+			],
+			capabilityAreas: [
+				'Cloud',
+				'Data modernization',
+				'Software acquisition'
+			],
+			missionThreads: [
+				'Cost reduction',
+				'Workflow automation'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'federal it efficiency',
+				'cloud',
+				'ai',
+				'software',
+				'modernization'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'GovCIO Media & Research',
+					url: 'https://govciomedia.com/federal-it-efficiency-summit-2026/',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://govciomedia.com/federal-it-efficiency-summit-2026/',
+				registration: 'https://govciomedia.com/federal-it-efficiency-summit-2026/'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 0,
+					max: 400
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Event date/time from official page: May 20, 2026, 8:00am-3:00pm ET.'
+		}
+	},
+	{
+		id: 'radar-federal-tech-leaders-summit-2026',
+		title: 'Federal Tech Leaders Summit 2026',
+		description: 'Leadership summit on AI integration, cloud modernization, cybersecurity, and federal software/data strategy execution.',
+		startDate: '2026-06-12',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.895,
+			lng: -77.0365,
+			venue: 'Hilton Washington DC Capitol Hill'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Technology leadership',
+				'Cloud and AI operations'
+			],
+			capabilityAreas: [
+				'AI/ML',
+				'Cybersecurity',
+				'Cloud'
+			],
+			missionThreads: [
+				'Digital service delivery',
+				'Mission IT modernization'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'tech leaders',
+				'ai',
+				'cloud',
+				'it modernization',
+				'federal cio'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'GovCIO Media & Research',
+					url: 'https://govciomedia.com/federal-tech-leaders-summit/',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://govciomedia.com/federal-tech-leaders-summit/',
+				registration: 'https://govciomedia.com/federal-tech-leaders-summit/'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 0,
+					max: 400
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Event date/time from official page: June 12, 2026, 8:00am-12:30pm ET.'
+		}
+	},
+	{
+		id: 'radar-federal-cloud-data-forum-2026',
+		title: 'Federal Cloud & Data Forum 2026',
+		description: 'Forum focused on cloud, edge, and hybrid data architectures enabling AI-driven decision advantage across federal missions.',
+		startDate: '2026-10-08',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: {
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.895,
+			lng: -77.0365,
+			venue: 'Hilton Washington DC Capitol Hill'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Cloud transformation',
+				'Data architecture for AI'
+			],
+			capabilityAreas: [
+				'Cloud',
+				'Data engineering',
+				'Edge computing'
+			],
+			missionThreads: [
+				'Decision support modernization',
+				'Scalable AI enablement'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'cloud',
+				'data',
+				'hybrid',
+				'edge',
+				'ai'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'GovCIO Media & Research',
+					url: 'https://govciomedia.com/federal-cloud-data-forum/',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://govciomedia.com/federal-cloud-data-forum/',
+				registration: 'https://govciomedia.com/federal-cloud-data-forum/'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 0,
+					max: 400
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Event date/time from official page: October 8, 2026, 8:00am-12:00pm ET.'
+		}
+	},
+	{
+		id: 'radar-health-it-summit-2026',
+		title: 'Health IT Summit 2026',
+		description: 'Federal health technology summit covering EHR modernization, interoperability, and AI-enabled care/data workflows.',
+		startDate: '2026-09-02',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: {
+			city: 'Bethesda',
+			state: 'MD',
+			country: 'USA',
+			lat: 38.9847,
+			lng: -77.0947,
+			venue: 'Bethesda Marriott'
+		},
+		ontology: {
+			themes: [
+				'Defense conference monitoring',
+				'Health IT modernization',
+				'AI-enabled operations'
+			],
+			capabilityAreas: [
+				'Interoperability',
+				'Data exchange',
+				'AI/ML'
+			],
+			missionThreads: [
+				'Clinical mission support',
+				'Digital transformation'
+			],
+			stakeholders: [
+				'Joint stakeholders',
+				'Program offices',
+				'Industry partners'
+			],
+			keywords: [
+				'health it',
+				'ehr',
+				'interoperability',
+				'ai',
+				'data exchange'
+			],
+			relatedPrograms: [
+				'Radar expansion'
+			],
+			decisionWindows: {
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+				{
+					name: 'GovCIO Media & Research',
+					url: 'https://govciomedia.com/health-it-summit-2026/',
+					type: 'official',
+					lastVerified: '2026-02-17',
+					confidence: 'High'
+				}
+			],
+			links: {
+				official: 'https://govciomedia.com/health-it-summit-2026/',
+				registration: 'https://govciomedia.com/health-it-summit-2026/'
+			},
+			logistics: {
+				format: 'In-person',
+				estimatedCostUsd: {
+					min: 0,
+					max: 400
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Event date/time from official page: September 2, 2026, 8:00am-3:00pm ET.'
+		}
+	},
 ];
