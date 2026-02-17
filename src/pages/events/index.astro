@@ -68,8 +68,9 @@ function locationLabel(event: (typeof events)[number]) {
 
 function costLabel(event: (typeof events)[number]) {
 	const range = event.ontology.logistics.estimatedCostUsd;
-	if (!range) return 'Unknown';
-	if (range.max === 0) return '$0';
+	if (!range) return null;
+	if (range.max === 0 && range.min === 0) return '$0';
+	if (range.min === range.max) return `$${range.min.toLocaleString()}`;
 	return `$${range.min.toLocaleString()} - $${range.max.toLocaleString()}`;
 }
 
@@ -196,7 +197,9 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 								<div class="min-w-0 flex-1">
 									<h3 class="mt-1 text-base font-semibold text-slate-50">{event.title}</h3>
 									<p class="mt-1 text-sm text-slate-300 radar-desc">{event.description}</p>
-									<p class="mt-2 text-xs text-slate-400 radar-meta">{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}</p>
+									<p class="mt-2 text-xs text-slate-400 radar-meta">
+										{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}{costLabel(event) ? ` · Reg: ${costLabel(event)}` : ''}
+									</p>
 								</div>
 								<div class="flex flex-col items-end gap-1.5">
 									<div class="flex items-center gap-2">
@@ -251,7 +254,7 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 										<p class="radar-section-label">Logistics</p>
 										<ul class="radar-listing">
 											<li><strong>Format:</strong> {event.ontology.logistics.format}</li>
-											<li><strong>Estimated cost:</strong> {costLabel(event)}</li>
+											{costLabel(event) ? <li><strong>Estimated cost:</strong> {costLabel(event)}</li> : null}
 											<li><strong>Travel burden (DC):</strong> {event.ontology.logistics.travelBurdenFromDc}</li>
 											{event.location.venue ? <li><strong>Venue:</strong> {event.location.venue}</li> : null}
 										</ul>
