@@ -21,12 +21,33 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.0.4',
+		date: '2026-02-17',
+		title: 'Events informational overlay generalized for public intelligence use',
+		summary: 'Replaced user-specific BD tracking fields with generic informational overlays oriented to opportunity discovery and public-source context.',
+		impact: 'Expanded event details now prioritize SAM links, government organizations, government POCs, and relevant insights instead of personal engagement status tracking.',
+		current: true,
+		tags: ['events', 'acquisition', 'ux', 'intelligence'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced `BD engagement` panel with a generic `Informational overlay` panel for opportunity context.',
+					'Converted contact section into `Government POCs` and added `Government organizations` + `Relevant insights` blocks.',
+					'Expanded SAM handling to surface SAM links as explicit opportunity references in detailed metadata.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.3',
 		date: '2026-02-17',
 		title: 'Events OG card subtitle fit tuned for more visible text',
 		summary: 'Adjusted OG text layout so the Events page subtitle can occupy more space before truncation.',
 		impact: 'Shared `/events/` links now show a fuller subtitle instead of clipping early with ellipsis.',
-		current: true,
 		tags: ['events', 'seo', 'social', 'ux'],
 		groups: [
 			{

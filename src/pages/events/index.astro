@@ -3,7 +3,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
-import type { RadarEngagementKind, RadarEngagementStatus } from '../../data/radar/types';
+import type { RadarEngagementKind } from '../../data/radar/types';
 
 const events = radarEventsSeed;
 
@@ -70,21 +70,11 @@ function inferEngagementKinds(event: (typeof events)[number]) {
 	return engagementKinds.filter((kind) => kinds.has(kind));
 }
 
-function isGovOpportunitySignal(event: (typeof events)[number]) {
-	return inferEngagementKinds(event).length > 0;
-}
-
 function isSamOfficialNotice(event: (typeof events)[number]) {
 	return event.ontology.provenance.some((source) => {
 		const blob = `${source.name} ${source.url}`.toLowerCase();
 		return blob.includes('sam.gov') || blob.includes('get opportunities public api');
 	});
-}
-
-function sourceLayer(event: (typeof events)[number]) {
-	if (isSamOfficialNotice(event)) return 'sam';
-	if (isGovOpportunitySignal(event)) return 'opportunity';
-	return 'conference';
 }
 
 function samOpportunityLink(event: (typeof events)[number]) {
@@ -94,18 +84,33 @@ function samOpportunityLink(event: (typeof events)[number]) {
 	return fromProvenance?.url ?? null;
 }
 
-function isNavySurfaceSignal(event: (typeof events)[number]) {
-	const blob = [
-		event.title,
-		event.description,
-		event.branch,
-		event.ontology.notes || '',
-		event.ontology.stakeholders.join(' '),
-		event.ontology.provenance.map((source) => `${source.name} ${source.url}`).join(' '),
+function samOpportunityLinks(event: (typeof events)[number]) {
+	const links = [
+		event.ontology.links.official,
+		event.ontology.links.registration,
+		...event.ontology.provenance.map((source) => source.url),
 	]
-		.join(' ')
-		.toLowerCase();
-	return /(navy|naval|navsea|nswc|nuwc|surface\s*warfare|undersea\s*warfare|sea\s*systems)/i.test(blob);
+		.filter((url): url is string => Boolean(url && /sam\.gov/i.test(url)))
+		.map((url) => url.trim());
+	return [...new Set(links)];
+}
+
+function inferredGovernmentOrganizations(event: (typeof events)[number]) {
+	const govHint = /(department|agency|office|command|program\s+office|peo|navy|army|air\s*force|marine|joint|dod|federal|gov|u\.s\.)/i;
+	const items = [
+		event.ontology.acquisition?.agency,
+		...event.ontology.stakeholders,
+		...event.ontology.provenance.map((source) => source.name),
+	]
+		.filter((item): item is string => Boolean(item && item.trim()))
+		.map((item) => item.trim())
+		.filter((item) => govHint.test(item));
+	return [...new Set(items)];
+}
+
+function governmentPocs(event: (typeof events)[number]) {
+	const govHint = /(department|agency|office|command|program\s+office|peo|navy|army|air\s*force|marine|joint|dod|federal|gov|u\.s\.)/i;
+	return (event.ontology.engagement?.contacts ?? []).filter((contact) => govHint.test(`${contact.organization ?? ''} ${contact.role ?? ''}`));
 }
 
 function noticeTypeLabel(event: (typeof events)[number]) {
@@ -175,22 +180,17 @@ function evidenceHealth(event: (typeof events)[number]) {
 	return 'Fresh';
 }
 
-function engagementStatus(event: (typeof events)[number]): RadarEngagementStatus {
-	if (event.ontology.engagement?.status) return event.ontology.engagement.status;
-	if (isGovOpportunitySignal(event)) return 'Not engaged';
-	return 'Monitor';
-}
-
-function engagementNextAction(event: (typeof events)[number]) {
-	return event.ontology.engagement?.nextAction ?? (isGovOpportunitySignal(event) ? 'Review notice + decide pursue/no-go' : null);
-}
-
-function displayNoticeLabel(event: (typeof events)[number]) {
-	const label = noticeTypeLabel(event);
-	if (!label) return null;
-	const kinds = inferEngagementKinds(event).map((k) => k.toLowerCase());
-	if (kinds.includes(label.toLowerCase())) return null;
-	return label;
+function informationalInsights(event: (typeof events)[number]) {
+	const insights: string[] = [];
+	const engagement = inferEngagementKinds(event);
+	if (engagement.length) insights.push(`Signal types detected: ${engagement.join(', ')}.`);
+	if (noticeTypeLabel(event)) insights.push(`Notice posture: ${noticeTypeLabel(event)}.`);
+	if (event.ontology.acquisition?.responseDueDate) insights.push(`Response due: ${fmtDate(event.ontology.acquisition.responseDueDate)}.`);
+	if (event.ontology.acquisition?.registrationDeadline) insights.push(`Registration deadline: ${fmtDate(event.ontology.acquisition.registrationDeadline)}.`);
+	if (samOpportunityLinks(event).length) insights.push(`SAM-linked opportunity source available (${samOpportunityLinks(event).length}).`);
+	if (event.ontology.logistics.travelBurdenFromDc === 'Low') insights.push('Low travel burden from DC for in-person coordination.');
+	if (!insights.length && event.ontology.notes) insights.push(event.ontology.notes);
+	return insights;
 }
 
 function locationLabel(event: (typeof events)[number]) {
@@ -396,53 +396,69 @@ function eventPrimaryLink(event: (typeof events)[number]) {
 									</div>
 								</div>
 
-								{(inferEngagementKinds(event).length || noticeTypeLabel(event) || isSamOfficialNotice(event) || isNavySurfaceSignal(event) || event.ontology.acquisition?.agency || event.ontology.acquisition?.solicitationNumber || event.ontology.acquisition?.responseDueDate || event.ontology.acquisition?.registrationDeadline) ? (
-									<div class="mt-4">
-										<p class="radar-section-label">Acquisition overlays</p>
-										<ul class="radar-listing">
-											{noticeTypeLabel(event) ? <li><strong>Notice type:</strong> {noticeTypeLabel(event)}</li> : null}
-											{inferEngagementKinds(event).length ? <li><strong>Engagement:</strong> {inferEngagementKinds(event).join(', ')}</li> : null}
-											{isSamOfficialNotice(event) ? <li><strong>Source layer:</strong> SAM official notice</li> : null}
-											{isNavySurfaceSignal(event) ? <li><strong>Focus signal:</strong> Navy / warfare center related</li> : null}
-											{event.ontology.acquisition?.agency ? <li><strong>Agency:</strong> {event.ontology.acquisition?.agency}</li> : null}
-											{event.ontology.acquisition?.solicitationNumber ? <li><strong>Solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
-											{event.ontology.acquisition?.registrationDeadline ? <li><strong>Registration deadline:</strong> {event.ontology.acquisition?.registrationDeadline}</li> : null}
-											{event.ontology.acquisition?.responseDueDate ? <li><strong>Response due:</strong> {event.ontology.acquisition?.responseDueDate}</li> : null}
-											{samOpportunityLink(event) ? <li><strong>SAM link:</strong> <a href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">Open notice</a></li> : null}
-										</ul>
+								{(inferEngagementKinds(event).length || noticeTypeLabel(event) || isSamOfficialNotice(event) || event.ontology.acquisition?.agency || event.ontology.acquisition?.solicitationNumber || event.ontology.acquisition?.responseDueDate || event.ontology.acquisition?.registrationDeadline || inferredGovernmentOrganizations(event).length || governmentPocs(event).length || informationalInsights(event).length) ? (
+									<div class="mt-4 grid gap-4 lg:grid-cols-2">
+										<div>
+											<p class="radar-section-label">Informational overlay</p>
+											<ul class="radar-listing">
+												{noticeTypeLabel(event) ? <li><strong>Notice type:</strong> {noticeTypeLabel(event)}</li> : null}
+												{inferEngagementKinds(event).length ? <li><strong>Opportunity signals:</strong> {inferEngagementKinds(event).join(', ')}</li> : null}
+												{event.ontology.acquisition?.agency ? <li><strong>Agency:</strong> {event.ontology.acquisition?.agency}</li> : null}
+												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
+												{event.ontology.acquisition?.registrationDeadline ? <li><strong>Registration deadline:</strong> {fmtDate(event.ontology.acquisition?.registrationDeadline)}</li> : null}
+												{event.ontology.acquisition?.responseDueDate ? <li><strong>Response due:</strong> {fmtDate(event.ontology.acquisition?.responseDueDate)}</li> : null}
+												{samOpportunityLinks(event).length ? (
+													<li>
+														<strong>SAM opportunities:</strong>{' '}
+														{samOpportunityLinks(event).map((url, idx) => (
+															<span>
+																<a href={url} target="_blank" rel="noreferrer">{samOpportunityLinks(event).length > 1 ? `Link ${idx + 1}` : 'Open notice'}</a>
+																{idx < samOpportunityLinks(event).length - 1 ? <span>{' · '}</span> : null}
+															</span>
+														))}
+													</li>
+												) : null}
+											</ul>
+										</div>
+										<div>
+											<p class="radar-section-label">Government organizations</p>
+											{inferredGovernmentOrganizations(event).length ? (
+												<ul class="radar-listing">
+													{inferredGovernmentOrganizations(event).map((org) => <li>{org}</li>)}
+												</ul>
+											) : (
+												<p class="mt-2 text-xs text-slate-500">No government organizations inferred yet.</p>
+											)}
+										</div>
+										<div>
+											<p class="radar-section-label">Government POCs</p>
+											{governmentPocs(event).length ? (
+												<ul class="radar-listing">
+													{governmentPocs(event).map((contact) => (
+														<li>
+															{contact.name}
+															{contact.role ? <span class="text-slate-500"> · {contact.role}</span> : null}
+															{contact.organization ? <span class="text-slate-500"> · {contact.organization}</span> : null}
+															{contact.email ? <span class="text-slate-500"> · {contact.email}</span> : null}
+														</li>
+													))}
+												</ul>
+											) : (
+												<p class="mt-2 text-xs text-slate-500">No government POCs captured yet.</p>
+											)}
+										</div>
+										<div>
+											<p class="radar-section-label">Relevant insights</p>
+											{informationalInsights(event).length ? (
+												<ul class="radar-listing">
+													{informationalInsights(event).map((insight) => <li>{insight}</li>)}
+												</ul>
+											) : (
+												<p class="mt-2 text-xs text-slate-500">No additional insights extracted yet.</p>
+											)}
+										</div>
 									</div>
 								) : null}
-
-								<div class="mt-4 grid gap-4 lg:grid-cols-2">
-									<div>
-										<p class="radar-section-label">BD engagement</p>
-										<ul class="radar-listing">
-											<li><strong>Status:</strong> {engagementStatus(event)}</li>
-											{event.ontology.engagement?.owner ? <li><strong>Owner:</strong> {event.ontology.engagement?.owner}</li> : null}
-											{engagementNextAction(event) ? <li><strong>Next action:</strong> {engagementNextAction(event)}</li> : null}
-											{event.ontology.engagement?.nextActionDate ? <li><strong>Next action date:</strong> {fmtDate(event.ontology.engagement?.nextActionDate)}</li> : null}
-											{event.ontology.engagement?.lastTouchDate ? <li><strong>Last touch:</strong> {fmtDate(event.ontology.engagement?.lastTouchDate)}</li> : null}
-										</ul>
-										{event.ontology.engagement?.notes ? <p class="mt-2 text-xs text-slate-400">{event.ontology.engagement?.notes}</p> : null}
-									</div>
-									<div>
-										<p class="radar-section-label">Contacts</p>
-										{event.ontology.engagement?.contacts?.length ? (
-											<ul class="radar-listing">
-												{event.ontology.engagement.contacts.map((contact) => (
-													<li>
-														{contact.name}
-														{contact.role ? <span class="text-slate-500"> · {contact.role}</span> : null}
-														{contact.organization ? <span class="text-slate-500"> · {contact.organization}</span> : null}
-														{contact.email ? <span class="text-slate-500"> · {contact.email}</span> : null}
-													</li>
-												))}
-											</ul>
-										) : (
-											<p class="mt-2 text-xs text-slate-500">No contact log yet.</p>
-										)}
-									</div>
-								</div>
 
 								<div class="mt-4">
 									<p class="radar-section-label">Timing</p>
