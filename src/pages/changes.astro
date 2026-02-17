@@ -21,12 +21,33 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.1.1',
+		date: '2026-02-17',
+		title: 'Events UX/verbiage tightening pass for launch clarity',
+		summary: 'Refined /events copy and labels for clearer public comprehension while preserving capability-first intelligence depth.',
+		impact: 'The page now reads cleaner and more actionable on first scan, especially for external launch audiences.',
+		current: true,
+		tags: ['events', 'ux', 'copy', 'launch-readiness'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Updated page headline/description and top explanatory line for concise capability framing.',
+					'Renamed key labels for clarity (`Geographic view`, `Upcoming events`, `Verified links`, `Public government contacts`, `Schedule`).',
+					'Adjusted filter/search wording (`High-confidence only`, improved search placeholder semantics).',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.1.0',
 		date: '2026-02-17',
 		title: 'Event intelligence metadata aligned to capability-first direction',
 		summary: 'Removed low-signal ontology fields from the expanded event panel and tightened insight generation to sourced, actionable intelligence only.',
 		impact: 'Expanded metadata now reads like a practical DoW BD intelligence surface instead of an internal modeling dump.',
-		current: true,
 		tags: ['events', 'bd-intelligence', 'ux', 'information-design'],
 		groups: [
 			{
