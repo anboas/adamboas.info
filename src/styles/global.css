@@ -584,18 +584,8 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
   background: rgba(var(--writing-accent-rgb), 0.10);
 }
 
-/* Keep prose readable by default; let diagrams/tables/code go wider */
-.paper-content {
-  --reading-measure: 72ch;
-}
-
-.paper-content > :not(figure):not(.table-wrap):not(.sourceCode):not(.Shaded):not(pre):not(.Highlighting) {
-  max-width: var(--reading-measure);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.paper-content > :where(figure, .table-wrap, .sourceCode, .Shaded, pre, .Highlighting) {
+/* Keep paper content fluid so the reading pane uses full card width. */
+.paper-content > * {
   max-width: 100%;
 }
 
