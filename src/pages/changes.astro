@@ -21,12 +21,36 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.1.6',
+		date: '2026-02-17',
+		title: 'Targeted AI/autonomy event ingest + trust-link remediation',
+		summary: 'Added AI/agentic/autonomy-relevant future events and upgraded key existing records from disallowed-source provenance to official links.',
+		impact: 'The active /events feed now includes stronger AI/autonomy signal with better link trust and fewer records blocked by legitimacy gating.',
+		current: true,
+		tags: ['events', 'ingest', 'ai', 'autonomy', 'verification'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `AI for Defense Transformation 2026` (IDGA), `AI+ Expo for National Competitiveness 2026` (SCSP), and `Defense IT Summit 2026` (GovCIO) with verifiable event links.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated existing `AUVSI XPONENTIAL 2026` and `Autonomy in Defense 2026` entries to trusted official provenance/links so they pass active-feed trust gating.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.1.5',
 		date: '2026-02-17',
 		title: 'Events OG title simplified',
 		summary: 'Updated the Events OG card title text to the shorter label requested.',
 		impact: 'Social previews now present a cleaner, minimal title: `DoW Events`.',
-		current: true,
 		tags: ['events', 'og-image', 'copy'],
 		groups: [
 			{

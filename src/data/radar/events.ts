@@ -2089,13 +2089,16 @@ export const radarEventsSeed: RadarEvent[] = [
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'AUVSI',
+				url: 'https://www.auvsi.org/events/calendar-of-events/',
+				type: 'official',
+				lastVerified: '2026-02-17',
 				confidence: 'High'
 			}],
-			links: {},
+			links: {
+				official: 'https://xponential.org/',
+				agenda: 'https://xponential.org/sag.cfm'
+			},
 			logistics: 
 			{
 				format: 'In-person',
@@ -4288,20 +4291,20 @@ export const radarEventsSeed: RadarEvent[] = [
 		id: 'radar-autonomy-in-defense-2026',
 		title: 'Autonomy in Defense 2026',
 		description: 'Inaugural summit: human-machine teaming, ethical AI, JADC2',
-		startDate: null,
-		endDate: null,
+		startDate: '2026-03-18',
+		endDate: '2026-03-19',
 		branch: 'Joint',
 		type: 'Conference',
-		status: 'Needs Date',
+		status: 'Upcoming',
 		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
-			city: 'TBD',
+			city: 'Washington',
+			state: 'DC',
 			country: 'USA',
-			lat: 39.5,
-			lng: -98.35,
-			venue: 'TBD'
+			lat: 38.8950368,
+			lng: -77.0365427
 		},
 		ontology: 
 		{
@@ -4313,19 +4316,22 @@ export const radarEventsSeed: RadarEvent[] = [
 			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
-				discovery: 'Monitor for date release',
-				prep: 'After date confirmation',
-				execution: 'TBD'
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'Low'
+				name: 'Corinium Intelligence',
+				url: 'https://defense-autonomy.coriniumintelligence.com',
+				type: 'official',
+				lastVerified: '2026-02-17',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: {
+				official: 'https://defense-autonomy.coriniumintelligence.com',
+				agenda: 'https://defense-autonomy.coriniumintelligence.com/agenda'
+			},
 			logistics: 
 			{
 				format: 'In-person',
@@ -4336,7 +4342,7 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'Corinium Intelligence. Watch for announcement.'
+			notes: 'Date and location inferred from organizer metadata; recheck if organizer updates timing.'
 		}
 	},
 	{
@@ -8931,6 +8937,182 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'Low'
 			}
+		}
+	},
+
+	{
+		id: 'radar-ai-for-defense-transformation-2026',
+		title: 'AI for Defense Transformation 2026',
+		description: 'IDGA summit focused on operationalizing AI for military decision advantage and mission outcomes.',
+		startDate: '2026-08-18',
+		endDate: '2026-08-19',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location:
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'Applied AI adoption', 'Opportunity timing'],
+			capabilityAreas: ['AI/ML', 'Acquisition', 'Digital modernization'],
+			missionThreads: ['AI integration', 'Warfighter decision support'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ai', 'defense', 'transformation', 'idga', 'agentic', 'maven', 'linchpin'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'IDGA',
+				url: 'https://www.idga.org/events-ai-defense-transformation',
+				type: 'official',
+				lastVerified: '2026-02-17',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://www.idga.org/events-ai-defense-transformation',
+				registration: 'https://www.idga.org/events-ai-defense-transformation'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				estimatedCostUsd:
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Program includes DoW AI initiatives (Advana, Project Maven, Project Linchpin, Replicator themes).'
+		}
+	},
+	{
+		id: 'radar-ai-expo-national-competitiveness-2026',
+		title: 'AI+ Expo for National Competitiveness 2026',
+		description: 'SCSP-organized national AI competitiveness event with government, industry, and academia participation.',
+		startDate: '2026-05-07',
+		endDate: '2026-05-09',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location:
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'National competitiveness', 'AI ecosystem sensing'],
+			capabilityAreas: ['AI/ML', 'Policy', 'Digital modernization'],
+			missionThreads: ['Public-private coordination', 'Technology transition'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ai expo', 'scsp', 'national competitiveness', 'agentic ai', 'emerging tech'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'SCSP AI+ Expo',
+				url: 'https://expo.scsp.ai/',
+				type: 'official',
+				lastVerified: '2026-02-17',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://expo.scsp.ai/',
+				registration: 'https://expo.scsp.ai/'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				estimatedCostUsd:
+				{
+					min: 0,
+					max: 600
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-defense-it-summit-2026',
+		title: 'Defense IT Summit 2026',
+		description: 'GovCIO Media event covering defense AI, cyber, acquisition, and mission IT modernization.',
+		startDate: '2026-02-26',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location:
+		{
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8903961,
+			lng: -77.0841585
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'Mission IT modernization', 'Applied AI adoption'],
+			capabilityAreas: ['AI/ML', 'Cybersecurity', 'Acquisition'],
+			missionThreads: ['Program sensing', 'Technology adoption'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['defense it summit', 'govcio', 'agentic systems', 'zero trust', 'warfighting ai'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-30 days',
+				prep: 'T-21 to T-3 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'GovCIO Media & Research',
+				url: 'https://govciomedia.com/defense-it-summit-2026/',
+				type: 'official',
+				lastVerified: '2026-02-17',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://govciomedia.com/defense-it-summit-2026/',
+				registration: 'https://govciomedia.com/defense-it-summit-2026/'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				estimatedCostUsd:
+				{
+					min: 0,
+					max: 400
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Agenda references AI implementation and agentic systems in defense mission IT context.'
 		}
 	},
 ];
