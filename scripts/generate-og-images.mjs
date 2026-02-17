@@ -21,8 +21,8 @@ const cards = [
   {
     file: 'events.png',
     accent: '#00a6a6',
-    title: 'DoW Event Tracker',
-    subtitle: 'Conference-first operational tracking with deep acquisition overlays',
+    title: 'DoW Events + BD Intelligence',
+    subtitle: 'Conference-first event tracking with layered opportunity intelligence and public-sector context',
     kicker: 'adamboas.com',
     subtitleSize: 28,
     subtitleLineGap: 34,

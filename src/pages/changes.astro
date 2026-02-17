@@ -21,12 +21,37 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.0.6',
+		date: '2026-02-17',
+		title: 'Events tracker reframed as generic DoW + BD intelligence capability',
+		summary: 'Renamed the Events surface to a generic DoW events + BD intelligence capability and filtered out manual seed-only records without real external sources.',
+		impact: 'Tracker language is now capability-oriented, and trust is improved by excluding synthetic/unverifiable seed records from the active feed.',
+		current: true,
+		tags: ['events', 'bd-intelligence', 'ux', 'data-quality'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Renamed page and key detail blocks toward a generic capability model (`DoW Events + BD Intelligence Tracker`, `Opportunity intelligence`, `BD insights`).',
+					'Kept conference-first UX while preserving layered opportunity intelligence (SAM links, government organizations, POCs, insights).',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Filtered out manual seed-only records that lacked real external official links, reducing non-verifiable event noise.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.0.5',
 		date: '2026-02-17',
 		title: 'Events link integrity pass + circular-link suppression',
 		summary: 'Hardened event link rendering so circular/self-referential links are excluded and only usable external links surface in card actions and metadata.',
 		impact: 'The `Link` button now appears only when an event has a valid external official URL, preventing loops back to the tracker itself.',
-		current: true,
 		tags: ['events', 'ux', 'data-quality'],
 		groups: [
 			{
