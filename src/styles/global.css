@@ -595,32 +595,37 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 22;
-    scrollbar-width: none;
-    scrollbar-gutter: stable both-edges;
+    /* Keep scrollbar gutter stable to prevent text shift on hover/focus. */
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    scrollbar-gutter: stable;
   }
 
-  /* Show scrollbar only on intent (hover/focus), otherwise hidden. */
   .writing-toc:hover,
   .writing-toc:focus-within {
-    scrollbar-width: thin;
     scrollbar-color: rgba(148, 163, 184, 0.8) rgba(2, 6, 23, 0.25);
   }
 
   .writing-toc::-webkit-scrollbar {
-    width: 0;
-  }
-
-  .writing-toc:hover::-webkit-scrollbar,
-  .writing-toc:focus-within::-webkit-scrollbar {
     width: 8px;
   }
 
   .writing-toc::-webkit-scrollbar-thumb {
-    background: rgba(148, 163, 184, 0.78);
+    background: transparent;
     border-radius: 999px;
   }
 
   .writing-toc::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .writing-toc:hover::-webkit-scrollbar-thumb,
+  .writing-toc:focus-within::-webkit-scrollbar-thumb {
+    background: rgba(148, 163, 184, 0.78);
+  }
+
+  .writing-toc:hover::-webkit-scrollbar-track,
+  .writing-toc:focus-within::-webkit-scrollbar-track {
     background: rgba(2, 6, 23, 0.24);
   }
 }

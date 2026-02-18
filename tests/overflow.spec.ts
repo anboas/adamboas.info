@@ -64,4 +64,36 @@ test.describe('writing TOC rail regression', () => {
       ).toBe(0);
     });
   }
+
+  test('TOC hover scrollbar does not shift text layout', async ({ page }) => {
+    await page.setViewportSize({ width: 1900, height: 980 });
+    await page.goto(`${BASE}/writing/agentic-force-creation/`, { waitUntil: 'networkidle' });
+
+    const before = await page.evaluate(() => {
+      const toc = document.querySelector('[data-writing-toc]');
+      const firstLink = toc?.querySelector('a');
+      if (!toc || !firstLink) return null;
+
+      const r = firstLink.getBoundingClientRect();
+      return { left: r.left, width: r.width };
+    });
+
+    expect(before, 'TOC or TOC links missing').not.toBeNull();
+
+    await page.hover('[data-writing-toc]');
+    await page.waitForTimeout(120);
+
+    const after = await page.evaluate(() => {
+      const toc = document.querySelector('[data-writing-toc]');
+      const firstLink = toc?.querySelector('a');
+      if (!toc || !firstLink) return null;
+
+      const r = firstLink.getBoundingClientRect();
+      return { left: r.left, width: r.width };
+    });
+
+    expect(after, 'TOC or TOC links missing after hover').not.toBeNull();
+    expect(Math.abs(after!.left - before!.left)).toBeLessThanOrEqual(0.5);
+    expect(Math.abs(after!.width - before!.width)).toBeLessThanOrEqual(0.5);
+  });
 });
