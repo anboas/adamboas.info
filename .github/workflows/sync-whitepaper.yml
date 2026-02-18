@@ -208,11 +208,50 @@ jobs:
           rm -rf public/memos
           mkdir -p public/memos
 
-          # Copy all notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
+          # Copy published notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
+          # status frontmatter defaults to published when omitted.
           shopt -s globstar nullglob
+
+          frontmatter_value() {
+            local file="$1"
+            local key="$2"
+            awk 'BEGIN{s=0} /^---[[:space:]]*$/{s++; next} s==1{print} s>1{exit}' "$file" \
+              | awk -F: -v k="$key" '$1 ~ ("^"k"[[:space:]]*$") {sub(/^[^:]*:[[:space:]]*/, "", $0); gsub(/^[ \t]+|[ \t]+$/, "", $0); print $0; exit}'
+          }
+
+          frontmatter_status() {
+            local file="$1"
+            local s
+            s=$(frontmatter_value "$file" status || true)
+            if [ -z "$s" ]; then
+              echo "published"
+            else
+              echo "$s"
+            fi
+          }
+
+          in_list() {
+            local needle="$1"
+            shift
+            for item in "$@"; do
+              if [ "$item" = "$needle" ]; then
+                return 0
+              fi
+            done
+            return 1
+          }
+
+          published_memo_pdf_basenames=()
+          published_memo_stems=()
+
           for f in /tmp/wp-repo/writing/notes/**/*.md; do
             base=$(basename "$f")
             if [ "$base" = "README.md" ]; then
+              continue
+            fi
+            status=$(frontmatter_status "$f")
+            if [ "$status" != "published" ]; then
+              echo "Skipping note (status=$status): $base"
               continue
             fi
             cp "$f" "src/content/writing/notes/${base}"
@@ -223,13 +262,31 @@ jobs:
             if [ "$base" = "README.md" ]; then
               continue
             fi
+            status=$(frontmatter_status "$f")
+            if [ "$status" != "published" ]; then
+              echo "Skipping memo (status=$status): $base"
+              continue
+            fi
             cp "$f" "src/content/writing/memos/${base}"
+
+            stem="${base%.md}"
+            published_memo_stems+=("$stem")
+
+            pdf_path=$(frontmatter_value "$f" pdfPath || true)
+            if [ -n "$pdf_path" ]; then
+              published_memo_pdf_basenames+=("$(basename "$pdf_path")")
+            fi
           done
 
-          # Copy memo PDFs alongside memos (ignore README files).
+          # Copy memo PDFs only for published memos.
           for f in /tmp/wp-repo/writing/memos/**/*.pdf; do
             base=$(basename "$f")
-            cp "$f" "public/memos/${base}"
+            stem="${base%.pdf}"
+            if in_list "$base" "${published_memo_pdf_basenames[@]}" || in_list "$stem" "${published_memo_stems[@]}"; then
+              cp "$f" "public/memos/${base}"
+            else
+              echo "Skipping memo PDF (not published): $base"
+            fi
           done
 
       - name: Commit changes
