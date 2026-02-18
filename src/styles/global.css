@@ -10,6 +10,12 @@
   --accent-teal-2: #00c4c4;
   --accent-gold: #d4a574;
 
+  /* Shared surface tokens */
+  --surface-0: rgb(2, 6, 23);
+  --surface-1: rgba(2, 6, 23, 0.96);
+  --surface-border: rgba(51, 65, 85, 0.82);
+  --surface-border-strong: rgba(71, 85, 105, 0.88);
+
   /* Default writing accent (fallback) */
   --writing-accent-rgb: 0, 166, 166;
   --writing-accent-2-rgb: 0, 196, 196;
@@ -43,9 +49,9 @@ body {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   @apply bg-slate-950 text-slate-100 antialiased;
   background-image:
-    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
-  background-size: 32px 32px;
+    linear-gradient(to right, rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.045) 1px, transparent 1px);
+  background-size: 36px 36px;
 
   /* Sticky footer: footer sits at bottom on short pages, scroll pushes it down normally */
   min-height: 100vh;
@@ -58,9 +64,30 @@ body {
   position: sticky;
   top: 0;
   z-index: 30;
-  border-bottom: 1px solid rgba(30, 41, 59, 0.9);
-  background: rgb(2, 6, 23);
+  border-bottom: 1px solid var(--surface-border);
+  background: var(--surface-1);
   backdrop-filter: none;
+}
+
+.site-header,
+.site-footer {
+  background: var(--surface-1);
+  border-color: var(--surface-border) !important;
+}
+
+.site-brand {
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 12px rgba(148, 163, 184, 0.08);
+}
+
+.footer-link {
+  border: 1px solid rgba(51, 65, 85, 0.72);
+  background: rgba(15, 23, 42, 0.42);
+  transition: border-color 140ms ease, background 140ms ease, color 140ms ease;
+}
+.footer-link:hover {
+  border-color: rgba(100, 116, 139, 0.9);
+  background: rgba(30, 41, 59, 0.62);
 }
 
 a {
@@ -77,6 +104,10 @@ a {
 :where(input, select, textarea, button):disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+:where(button, input, select, textarea) {
+  transition: border-color 140ms ease, background-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
 }
 
 /* Clamp helpers (avoid needing a Tailwind plugin) */
@@ -97,6 +128,21 @@ a {
   /* Backdrop blur can feel janky on older iPhones */
   .sticky-browse { backdrop-filter: none; }
   header, footer { backdrop-filter: none !important; }
+  body {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .section-title {
+    font-size: 1.08rem;
+    padding-left: 0.58rem;
+    border-left-width: 2px;
+  }
+  .footer-link {
+    font-size: 0.78rem;
+    padding: 0.2rem 0.45rem;
+  }
 }
 
 .container {
@@ -107,8 +153,16 @@ a {
 .card {
   /* sharp corners, terminal panel (opaque for readability; no grid bleed-through) */
   @apply rounded-none border border-slate-800;
-  background-color: rgb(2, 6, 23);
-  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.85) inset;
+  border-color: var(--surface-border);
+  background-color: var(--surface-0);
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.72) inset, 0 8px 24px rgba(2, 6, 23, 0.22);
+  transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+
+a.card:hover,
+button.card:hover {
+  border-color: var(--surface-border-strong);
+  box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.11) inset, 0 12px 28px rgba(2, 6, 23, 0.28);
 }
 
 /* Force opaque top-layer surfaces so body grid never bleeds through cards/controls */
@@ -120,8 +174,8 @@ a {
 
 .section-title {
   @apply text-xl font-semibold tracking-tight text-slate-50;
-  border-left: 3px solid rgba(0, 166, 166, 0.55);
-  padding-left: 0.75rem;
+  border-left: 3px solid rgba(0, 166, 166, 0.48);
+  padding-left: 0.72rem;
 }
 
 /* StickyBrowse active tab accent */

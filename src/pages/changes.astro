@@ -21,12 +21,38 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.9',
+		date: '2026-02-17',
+		title: 'Global visual polish across all pages',
+		summary: 'Applied a site-wide beautification pass: calmer background grid, softened surface borders, cleaner card depth, tighter mobile heading rhythm, and refined header/footer link chrome.',
+		impact: 'Pages now feel cleaner and more consistent end-to-end with better scanability and less visual noise, especially on mobile.',
+		current: true,
+		tags: ['ux', 'visual', 'mobile', 'global'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Updated global surface tokens and card styling (`.card`) for cleaner border hierarchy and subtler elevation.',
+					'Refined header navigation pills and footer utility links for a more consistent visual system.',
+					'Reduced body grid intensity and tuned mobile spacing for section titles and footer controls.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Added global control transitions for smoother hover/focus feedback across form and button elements.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.8',
 		date: '2026-02-17',
 		title: 'Events mobile readability cleanup',
 		summary: 'Refined `/events` card layout and typography on phones to prevent right-rail controls from crushing title/metadata width and to improve scan speed.',
 		impact: 'Event cards now read cleanly on mobile with less wrapping noise, tighter action controls, and clearer metadata grouping.',
-		current: true,
 		tags: ['events', 'mobile', 'ux', 'readability'],
 		groups: [
 			{
