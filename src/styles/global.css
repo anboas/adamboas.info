@@ -574,8 +574,13 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 
 @media (min-width: 1536px) {
   .writing-detail-shell {
-    /* Keep reading column untouched on ultra-wide screens; TOC sits in outer right rail. */
+    /* Reserve a right rail so sticky action controls and article card never clip under TOC. */
+    margin-right: clamp(11rem, 14vw, 15rem);
     padding-right: 0;
+  }
+
+  .writing-actions-bar {
+    margin-right: clamp(11rem, 14vw, 15rem);
   }
 
   .writing-toc {
@@ -585,6 +590,7 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
     top: calc(5.2rem + env(safe-area-inset-top));
     width: auto;
     min-width: 10.8rem;
+    max-width: clamp(10.8rem, 16vw, 15rem);
     max-height: calc(100vh - 6rem);
     overflow-x: hidden;
     overflow-y: auto;
