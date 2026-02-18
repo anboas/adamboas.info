@@ -79,6 +79,4 @@ const imageURL = new URL(imagePath, canonicalURL);
 	</>
 ) : null}
 
-<!-- Small UX helpers -->
-<script type="module" src={withBase('/scripts/codeblock-tools.js')}></script>
-<script type="module" src={withBase('/scripts/copy-link.js')}></script>
+<!-- Page-specific UX helpers are loaded where needed (e.g., writing detail pages). -->

@@ -3,7 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-import globalShortcutsJs from '../scripts/global-shortcuts.js?raw';
+import globalShortcutsScriptUrl from '../scripts/global-shortcuts.js?url';
 
 import { SITE_DESCRIPTION } from '../consts';
 
@@ -77,6 +77,6 @@ const image = Astro.props.image;
 		</div>
 		<button id="global-shortcuts-fab" class="shortcut-fab" type="button" aria-label="Open keyboard shortcuts (?)" aria-controls="global-shortcuts-overlay" aria-haspopup="dialog">?</button>
 
-		<script type="module" set:html={globalShortcutsJs}></script>
+		<script type="module" src={globalShortcutsScriptUrl}></script>
 	</body>
 </html>

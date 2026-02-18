@@ -21,12 +21,39 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.7',
+		date: '2026-02-17',
+		title: 'UX sweep: quick topic filters, trust badges, newness cues, and lighter script loading',
+		summary: 'Implemented a broad UX pass across Events/Writing/Changes: quick AI-cloud-software-cyber filters, inline confidence/freshness badges, new-since-last-visit cues, mobile control compaction, and page-specific helper-script loading.',
+		impact: 'Faster scanning, higher trust clarity, improved mobile reading space, and lower non-essential script overhead on non-writing pages.',
+		current: true,
+		tags: ['ux', 'events', 'mobile', 'performance', 'changes'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added quick topic filter chips on Events (`AI`, `Cloud`, `Software`, `Cyber`) with URL-persisted state.',
+					'Added inline trust signals to event cards: confidence band + evidence freshness + `New` badge for unseen events.',
+					'Added `New` badge support on Change Notes releases based on last-seen version in browser local storage.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Further compacted mobile top chrome: tighter header spacing, compact sticky browse shell, and icon-labeled compact writing action pills.',
+					'Moved non-critical helper scripts (`copy-link`, `codeblock-tools`) to writing pages only and switched global shortcuts script from inline payload to external module URL loading.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.6',
 		date: '2026-02-17',
 		title: 'Mobile writing header density reduction',
 		summary: 'Reduced vertical space used by mobile writing pages by compressing sticky browse controls and converting the writing action bar to a compact single-row scroller.',
 		impact: 'On phones, the top navigation/action region now occupies materially less height, preserving more visible reading area above the fold.',
-		current: true,
 		tags: ['mobile', 'writing', 'ux', 'density'],
 		groups: [
 			{
@@ -1064,6 +1091,7 @@ function releaseSearchText(release: Release) {
 				<article
 					class="card p-5"
 					data-release-card
+					data-version={release.version}
 					data-tags={release.tags.join(',')}
 					data-search={releaseSearchText(release)}
 					id={release.version.toLowerCase()}
@@ -1073,6 +1101,7 @@ function releaseSearchText(release: Release) {
 							{release.version}
 						</span>
 						<span class="text-slate-400">{release.date}</span>
+						<span class="change-new-pill hidden" data-release-new>New</span>
 						{release.tags.map((tag) => <span class="release-tag rounded-full border border-slate-700 px-2 py-0.5 text-[10px] lowercase text-slate-300">{tag}</span>)}
 					</div>
 					<h2 class="mt-2 text-xl font-semibold text-slate-50">{release.title}</h2>

@@ -304,6 +304,42 @@ function sourceConfidenceBand(event: (typeof events)[number]) {
 	return 'low';
 }
 
+function sourceConfidenceLabel(event: (typeof events)[number]) {
+	const band = sourceConfidenceBand(event);
+	if (band === 'high') return 'High';
+	if (band === 'medium') return 'Medium';
+	return 'Low';
+}
+
+function eventFreshnessBadge(event: (typeof events)[number]) {
+	const all = event.ontology.provenance.map((source) => provenanceFreshness(source.lastVerified));
+	if (!all.length) return { label: 'Unknown', tone: 'unknown' as const };
+	if (all.some((entry) => entry.tone === 'stale')) return { label: 'Stale', tone: 'stale' as const };
+	if (all.some((entry) => entry.tone === 'watch')) return { label: 'Watch', tone: 'watch' as const };
+	if (all.some((entry) => entry.tone === 'fresh')) return { label: 'Fresh', tone: 'fresh' as const };
+	return { label: 'Unknown', tone: 'unknown' as const };
+}
+
+function quickTopicTags(event: (typeof events)[number]) {
+	const blob = [
+		event.title,
+		event.description,
+		event.branch,
+		event.type,
+		event.ontology.themes.join(' '),
+		event.ontology.capabilityAreas.join(' '),
+		event.ontology.keywords.join(' '),
+		event.ontology.notes ?? '',
+	].join(' ').toLowerCase();
+
+	const tags = new Set<string>();
+	if (/\bai\b|artificial intelligence|ml\b|machine learning|agentic|autonomy|autonomous/.test(blob)) tags.add('ai');
+	if (/\bcloud\b|multi-cloud|hybrid|edge\b|kubernetes|container/.test(blob)) tags.add('cloud');
+	if (/software|devsecops|devops|application|platform engineering|software factory|code|pipeline/.test(blob)) tags.add('software');
+	if (/\bcyber\b|zero trust|identity|cmmc|supply chain security|security/.test(blob)) tags.add('cyber');
+	return [...tags];
+}
+
 function eventCandidateLinks(event: (typeof events)[number]) {
 	const links = [
 		event.ontology.links.official,
@@ -374,6 +410,13 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 				<span class="radar-mini-stat">{summaryStats.industryDays} industry days</span>
 				<span class="radar-mini-stat">{summaryStats.nextInDays === null ? 'next date TBD' : `next in ${summaryStats.nextInDays}d`}</span>
 				<span class="radar-mini-stat">{summaryStats.needsDate} needs date</span>
+			</div>
+			<div class="mt-2 flex flex-wrap items-center gap-2" id="radar-quick-topics" aria-label="Quick topic filters">
+				<span class="radar-quick-label">Quick:</span>
+				<button class="radar-topic-btn" type="button" data-topic="ai" aria-pressed="false">AI</button>
+				<button class="radar-topic-btn" type="button" data-topic="cloud" aria-pressed="false">Cloud</button>
+				<button class="radar-topic-btn" type="button" data-topic="software" aria-pressed="false">Software</button>
+				<button class="radar-topic-btn" type="button" data-topic="cyber" aria-pressed="false">Cyber</button>
 			</div>
 			<div class="mt-3 border-t border-slate-800 pt-3 radar-filter-wrap">
 				<details id="radar-filter-panel" class="radar-filter-panel">
@@ -452,6 +495,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 							data-branch={event.branch}
 							data-signal={event.signal}
 							data-confidence={sourceConfidenceBand(event)}
+							data-topics={quickTopicTags(event).join(',')}
 							data-title={event.title}
 							data-link={eventPrimaryLink(event) ?? ''}
 							data-sam-link={samOpportunityLink(event) ?? ''}
@@ -472,6 +516,11 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
 										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Link</a> : null}
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
+									</div>
+									<div class="radar-badge-row">
+										<span class={`radar-confidence-pill radar-confidence-pill-${sourceConfidenceBand(event)}`} title="Source confidence">{sourceConfidenceLabel(event)}</span>
+										<span class={`radar-evidence-pill radar-evidence-pill-${eventFreshnessBadge(event).tone}`} title="Evidence freshness">{eventFreshnessBadge(event).label}</span>
+										<span class="radar-new-pill hidden" data-new-badge>New</span>
 									</div>
 									<p class="radar-card-kicker">{event.branch} · {event.type} · {event.status}</p>
 								</div>
@@ -637,6 +686,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		toggleMap: document.getElementById('radar-toggle-map'),
 		toggleCompact: document.getElementById('radar-toggle-compact'),
 		reset: document.getElementById('radar-reset'),
+		topicButtons: Array.from(document.querySelectorAll('[data-topic]')),
 	};
 
 	const list = document.getElementById('radar-list');
@@ -651,6 +701,9 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
+	const seenEventsStorageKey = 'adamboas.events.seen.v1';
+	let seenEventIds = new Set();
+	let hasSeenBaseline = false;
 
 	let compactMode = true;
 	let mapVisible = true;
@@ -667,6 +720,43 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		if (value === '' || value == null) return null;
 		const days = Number(value);
 		return Number.isFinite(days) ? days : null;
+	}
+
+	function parseTopics(value) {
+		return String(value || '')
+			.split(',')
+			.map((v) => v.trim().toLowerCase())
+			.filter(Boolean);
+	}
+
+	function topicStateToValue(topics) {
+		return [...topics].sort().join(',');
+	}
+
+	function readSeenEventIds() {
+		try {
+			const raw = localStorage.getItem(seenEventsStorageKey);
+			if (!raw) {
+				hasSeenBaseline = false;
+				seenEventIds = new Set(cards.map((card) => card.dataset.id).filter(Boolean));
+				localStorage.setItem(seenEventsStorageKey, JSON.stringify([...seenEventIds]));
+				return;
+			}
+			const parsed = JSON.parse(raw);
+			if (Array.isArray(parsed)) {
+				hasSeenBaseline = true;
+				seenEventIds = new Set(parsed.map((v) => String(v)));
+				return;
+			}
+		} catch {}
+		seenEventIds = new Set();
+		hasSeenBaseline = false;
+	}
+
+	function persistSeenEventIds(ids) {
+		try {
+			localStorage.setItem(seenEventsStorageKey, JSON.stringify([...ids]));
+		} catch {}
 	}
 
 	function typeKey(type) {
@@ -909,6 +999,12 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 	}
 
 	function stateFromUI() {
+		const topics = new Set(
+			controls.topicButtons
+				.filter((btn) => btn.getAttribute('aria-pressed') === 'true')
+				.map((btn) => String(btn.dataset.topic || '').toLowerCase())
+				.filter(Boolean),
+		);
 		return {
 			q: controls.q.value.trim(),
 			branch: controls.branch.value,
@@ -918,6 +1014,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 			upcoming: controls.upcomingOnly.checked,
 			verified: controls.verifiedOnly.checked,
 			showPast: controls.showPast.checked,
+			topics,
 		};
 	}
 
@@ -930,6 +1027,11 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		controls.upcomingOnly.checked = Boolean(state.upcoming);
 		controls.verifiedOnly.checked = Boolean(state.verified);
 		controls.showPast.checked = Boolean(state.showPast);
+		const activeTopics = state.topics instanceof Set ? state.topics : new Set(parseTopics(state.topics));
+		for (const button of controls.topicButtons) {
+			const topic = String(button.dataset.topic || '').toLowerCase();
+			button.setAttribute('aria-pressed', activeTopics.has(topic) ? 'true' : 'false');
+		}
 	}
 
 	function toQuery(state) {
@@ -942,6 +1044,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		if (state.upcoming) params.set('upcoming', '1');
 		if (state.verified) params.set('verified', '1');
 		if (state.showPast) params.set('past', '1');
+		if (state.topics?.size) params.set('topics', topicStateToValue(state.topics));
 		return params.toString();
 	}
 
@@ -954,6 +1057,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 			state.upcoming ||
 			state.verified ||
 			state.showPast ||
+			(state.topics && state.topics.size) ||
 			(state.sort && state.sort !== 'soonest')
 		);
 	}
@@ -969,6 +1073,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
 			showPast: params.get('past') === '1',
+			topics: new Set(parseTopics(params.get('topics') || '')),
 		};
 		applyState(state);
 		if (controls.filterPanel) controls.filterPanel.open = hasActiveFilters(state);
@@ -993,6 +1098,10 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 			if (!state.showPast && card.dataset.status === 'Past' && state.status !== 'Past') return false;
 			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
 			if (state.verified && card.dataset.confidence !== 'high') return false;
+			if (state.topics?.size) {
+				const cardTopics = parseTopics(card.dataset.topics || '');
+				if (!cardTopics.some((topic) => state.topics.has(topic))) return false;
+			}
 			if (!q) return true;
 			return (card.dataset.search || '').includes(q);
 		});
@@ -1017,6 +1126,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		if (state.branch) chips.push(`Branch: ${state.branch}`);
 		if (state.type) chips.push(`Type: ${state.type}`);
 		if (state.status) chips.push(`Status: ${state.status}`);
+		if (state.topics?.size) chips.push(`Topics: ${[...state.topics].join(', ')}`);
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('High-confidence only');
 		if (state.showPast) chips.push('Including past');
@@ -1074,6 +1184,22 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		}
 	}
 
+	function renderNewBadges(visibleCards) {
+		const seenNow = new Set(seenEventIds);
+		for (const card of cards) {
+			const badge = card.querySelector('[data-new-badge]');
+			if (!badge) continue;
+			const id = card.dataset.id;
+			if (!id) continue;
+			const isVisible = visibleCards.includes(card);
+			const isNew = hasSeenBaseline && isVisible && !seenEventIds.has(id);
+			badge.classList.toggle('hidden', !isNew);
+			if (isVisible) seenNow.add(id);
+		}
+		seenEventIds = seenNow;
+		persistSeenEventIds(seenEventIds);
+	}
+
 	function render() {
 		const { visible, state } = getVisibleCards();
 		for (const card of cards) card.classList.add('hidden');
@@ -1090,6 +1216,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		empty.classList.toggle('hidden', visible.length > 0);
 		count.textContent = `${visible.length} of ${cards.length} events shown`;
 		renderFilterChips(state);
+		renderNewBadges(visible);
 		renderMap(visible);
 
 		const query = toQuery(state);
@@ -1106,8 +1233,15 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('change', render));
+	for (const button of controls.topicButtons) {
+		button.addEventListener('click', () => {
+			const nowPressed = button.getAttribute('aria-pressed') === 'true';
+			button.setAttribute('aria-pressed', nowPressed ? 'false' : 'true');
+			render();
+		});
+	}
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false });
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false, topics: new Set() });
 		render();
 	});
 	controls.toggleMap.addEventListener('click', () => {
@@ -1142,6 +1276,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		}
 	});
 
+	readSeenEventIds();
 	applyUrlState();
 	render();
 </script>
@@ -1189,6 +1324,27 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		padding: 0.22rem 0.5rem;
 		font-size: 0.72rem;
 		color: rgba(226, 232, 240, 0.92);
+	}
+	.radar-quick-label {
+		font-size: 0.66rem;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.radar-topic-btn {
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgba(2, 6, 23, 0.88);
+		padding: 0.2rem 0.5rem;
+		font-size: 0.69rem;
+		color: rgba(226, 232, 240, 0.94);
+	}
+	.radar-topic-btn[aria-pressed="true"] {
+		border-color: rgba(45, 212, 191, 0.72);
+		background: rgba(20, 184, 166, 0.18);
+		color: rgba(240, 253, 250, 0.97);
+	}
+	.radar-topic-btn:hover {
+		border-color: rgba(45, 212, 191, 0.55);
 	}
 	.radar-preset-row {
 		display: flex;
@@ -1577,6 +1733,43 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 	.radar-evidence-pill-unknown {
 		border-color: rgba(148, 163, 184, 0.55);
 		color: rgba(226, 232, 240, 0.88);
+	}
+	.radar-badge-row {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 0.35rem;
+		flex-wrap: wrap;
+	}
+	.radar-confidence-pill {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.08rem 0.35rem;
+		font-size: 0.62rem;
+		border: 1px solid rgba(71, 85, 105, 0.8);
+		background: rgba(15, 23, 42, 0.78);
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.radar-confidence-pill-high {
+		border-color: rgba(34, 197, 94, 0.62);
+		color: rgba(220, 252, 231, 0.95);
+	}
+	.radar-confidence-pill-medium {
+		border-color: rgba(245, 158, 11, 0.62);
+		color: rgba(254, 243, 199, 0.95);
+	}
+	.radar-confidence-pill-low {
+		border-color: rgba(248, 113, 113, 0.62);
+		color: rgba(254, 202, 202, 0.95);
+	}
+	.radar-new-pill {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.08rem 0.35rem;
+		font-size: 0.62rem;
+		border: 1px solid rgba(56, 189, 248, 0.72);
+		background: rgba(56, 189, 248, 0.16);
+		color: rgba(224, 242, 254, 0.98);
 	}
 	.radar-card-kicker {
 		font-size: 0.64rem;

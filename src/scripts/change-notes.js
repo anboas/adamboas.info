@@ -18,6 +18,51 @@ if (root) {
 		q: '',
 	};
 
+	const seenReleaseKey = 'adamboas.changes.lastSeenVersion.v1';
+	let priorSeenVersion = null;
+
+	function parseVersion(value) {
+		const m = String(value || '').toLowerCase().match(/v?(\d+)\.(\d+)\.(\d+)/);
+		if (!m) return null;
+		return [Number(m[1]), Number(m[2]), Number(m[3])];
+	}
+
+	function compareVersions(a, b) {
+		const av = parseVersion(a);
+		const bv = parseVersion(b);
+		if (!av || !bv) return 0;
+		for (let i = 0; i < 3; i += 1) {
+			if (av[i] > bv[i]) return 1;
+			if (av[i] < bv[i]) return -1;
+		}
+		return 0;
+	}
+
+	function readSeenRelease() {
+		try {
+			const raw = localStorage.getItem(seenReleaseKey);
+			if (raw) priorSeenVersion = raw;
+		} catch {}
+	}
+
+	function persistSeenRelease() {
+		const newest = cards[0]?.getAttribute('data-version');
+		if (!newest) return;
+		try {
+			localStorage.setItem(seenReleaseKey, newest);
+		} catch {}
+	}
+
+	function renderNewReleaseBadges() {
+		for (const card of cards) {
+			const badge = card.querySelector('[data-release-new]');
+			if (!badge) continue;
+			const version = card.getAttribute('data-version');
+			const isNew = Boolean(priorSeenVersion && version && compareVersions(version, priorSeenVersion) > 0);
+			badge.classList.toggle('hidden', !isNew);
+		}
+	}
+
 	function readStateFromUrl() {
 		const url = new URL(window.location.href);
 		const q = norm(url.searchParams.get('q'));
@@ -76,6 +121,7 @@ if (root) {
 	}
 
 	function render() {
+		renderNewReleaseBadges();
 		for (const button of tagButtons) {
 			const tag = norm(button.getAttribute('data-change-tag'));
 			button.setAttribute('aria-pressed', state.tags.has(tag) ? 'true' : 'false');
@@ -122,6 +168,8 @@ if (root) {
 		render();
 	});
 
+	readSeenRelease();
 	readStateFromUrl();
 	render();
+	persistSeenRelease();
 }

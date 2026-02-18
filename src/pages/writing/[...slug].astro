@@ -220,14 +220,14 @@ const writingUrl = absoluteUrl('/writing/');
 				<div class="flex flex-nowrap items-center gap-2 md:flex-wrap">
 					{paper.data.pdfPath && (
 						<a
-							class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+							class="group rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
 							href={withBase(paper.data.pdfPath)}
 							target="_blank"
 							rel="noreferrer"
 							data-track="Writing: Open PDF"
 							data-track-props={JSON.stringify({ slug: paper.id, kind: 'paper' })}
 						>
-							<span>PDF</span>
+							<span>📄 PDF</span>
 							{pdfInfo && (
 								<span class="ml-2 hidden text-xs font-normal text-slate-300 group-hover:text-slate-200 sm:inline">
 									{pdfInfo.pages ? `${pdfInfo.pages}p` : ''}{pdfInfo.pages && pdfInfo.size ? ' • ' : ''}{pdfInfo.size ? pdfInfo.size : ''}
@@ -237,13 +237,13 @@ const writingUrl = absoluteUrl('/writing/');
 					)}
 					<button
 						type="button"
-						class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+						class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
 						data-copy-link
 						data-track="Writing: Copy Link"
 					>
-						Copy link
+						🔗 Copy
 					</button>
-					<a data-track="Contact: Paper CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
+					<a data-track="Contact: Paper CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href={contactHref}>💬 Discuss</a>
 				</div>
 			</div>
 			<div class="writing-detail-shell">
@@ -310,14 +310,14 @@ const writingUrl = absoluteUrl('/writing/');
 				<div class="flex flex-nowrap items-center gap-2 md:flex-wrap">
 					{writingItem.data.pdfPath ? (
 						<a
-							class="group rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+							class="group rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
 							href={withBase(writingItem.data.pdfPath)}
 							target="_blank"
 							rel="noreferrer"
 							data-track="Writing: Open PDF"
 							data-track-props={JSON.stringify({ slug: writingItem.id.split('/').pop(), kind: writingItem.data.type })}
 						>
-							<span>PDF</span>
+							<span>📄 PDF</span>
 							{writingPdfInfo && (
 								<span class="ml-2 hidden text-xs font-normal text-slate-300 group-hover:text-slate-200 sm:inline">
 									{writingPdfInfo.pages ? `${writingPdfInfo.pages}p` : ''}{writingPdfInfo.pages && writingPdfInfo.size ? ' • ' : ''}{writingPdfInfo.size ? writingPdfInfo.size : ''}
@@ -327,13 +327,13 @@ const writingUrl = absoluteUrl('/writing/');
 					) : null}
 					<button
 						type="button"
-						class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900"
+						class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm"
 						data-copy-link
 						data-track="Writing: Copy Link"
 					>
-						Copy link
+						🔗 Copy
 					</button>
-					<a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-3 py-1.5 text-sm font-semibold text-stone-100 hover:bg-slate-900" href={contactHref}>Discuss this brief</a>
+					<a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href={contactHref}>💬 Discuss</a>
 				</div>
 			</div>
 			<div class="writing-detail-shell">
@@ -593,4 +593,6 @@ const writingUrl = absoluteUrl('/writing/');
 			}, { passive: true });
 		})();
 	</script>
+	<script type="module" src={withBase('/scripts/codeblock-tools.js')}></script>
+	<script type="module" src={withBase('/scripts/copy-link.js')}></script>
 </SiteLayout>
