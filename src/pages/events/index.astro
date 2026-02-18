@@ -505,10 +505,13 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 						>
 							<div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
 								<div class="min-w-0 flex-1">
-									<h3 class="mt-1 text-base font-semibold text-slate-50">{event.title}</h3>
+									<h3 class="mt-1 text-base font-semibold leading-snug text-slate-50">{event.title}</h3>
 									<p class="mt-1 text-sm text-slate-300 radar-desc">{event.description}</p>
 									<p class="mt-2 text-xs text-slate-400 radar-meta">
-										{locationLabel(event)} · {fmtDateRange(event.startDate, event.endDate)}{costLabel(event) ? ` · Reg: ${costLabel(event)}` : ''}
+										<span class="radar-meta-item">{locationLabel(event)}</span>
+										<span class="radar-meta-sep" aria-hidden="true">·</span>
+										<span class="radar-meta-item">{fmtDateRange(event.startDate, event.endDate)}</span>
+										{costLabel(event) ? <><span class="radar-meta-sep" aria-hidden="true">·</span><span class="radar-meta-item">Reg: {costLabel(event)}</span></> : null}
 									</p>
 								</div>
 								<div class="flex w-full flex-col items-start gap-1.5 sm:w-auto sm:items-end">
@@ -1662,6 +1665,16 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		font-weight: 700;
 		color: rgba(241, 245, 249, 0.95);
 	}
+	.radar-meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.15rem 0.38rem;
+		line-height: 1.35;
+	}
+	.radar-meta-sep {
+		opacity: 0.5;
+	}
 	.radar-pill {
 		border: 1px solid rgba(0, 166, 166, 0.22);
 		background: rgba(0, 166, 166, 0.11);
@@ -1958,9 +1971,17 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 			font-size: 1.12rem;
 		}
 		.radar-input,
-		.radar-btn,
-		.radar-pin-btn {
+		.radar-btn {
 			min-height: 38px;
+		}
+		.radar-pin-btn {
+			min-height: 32px;
+			padding: 0.24rem 0.46rem;
+			font-size: 0.66rem;
+		}
+		.radar-days-chip {
+			padding: 0.24rem 0.5rem;
+			font-size: 0.68rem;
 		}
 		.radar-btn-tight {
 			font-size: 0.7rem;
@@ -1985,6 +2006,20 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		}
 		.radar-badge-row {
 			justify-content: flex-start;
+			gap: 0.25rem;
+		}
+		.radar-confidence-pill,
+		.radar-evidence-pill,
+		.radar-new-pill {
+			font-size: 0.56rem;
+			padding: 0.07rem 0.28rem;
+		}
+		.radar-card-kicker {
+			font-size: 0.56rem;
+			letter-spacing: 0.06em;
+		}
+		.radar-meta-sep {
+			display: none;
 		}
 	}
 </style>

@@ -21,12 +21,33 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.8',
+		date: '2026-02-17',
+		title: 'Events mobile readability cleanup',
+		summary: 'Refined `/events` card layout and typography on phones to prevent right-rail controls from crushing title/metadata width and to improve scan speed.',
+		impact: 'Event cards now read cleanly on mobile with less wrapping noise, tighter action controls, and clearer metadata grouping.',
+		current: true,
+		tags: ['events', 'mobile', 'ux', 'readability'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Card action rail now stacks below content on small screens instead of competing for horizontal title space.',
+					'Converted card metadata line into wrapped meta items with separators that collapse cleanly on mobile.',
+					'Compacted mobile button/chip sizing (`In Nd`, `Link`, `Map`, confidence/freshness/new badges) to reduce visual crowding.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.7',
 		date: '2026-02-17',
 		title: 'UX sweep: quick topic filters, trust badges, newness cues, and lighter script loading',
 		summary: 'Implemented a broad UX pass across Events/Writing/Changes: quick AI-cloud-software-cyber filters, inline confidence/freshness badges, new-since-last-visit cues, mobile control compaction, and page-specific helper-script loading.',
 		impact: 'Faster scanning, higher trust clarity, improved mobile reading space, and lower non-essential script overhead on non-writing pages.',
-		current: true,
 		tags: ['ux', 'events', 'mobile', 'performance', 'changes'],
 		groups: [
 			{
