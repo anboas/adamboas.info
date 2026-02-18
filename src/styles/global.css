@@ -150,6 +150,22 @@ a {
   @apply mx-auto max-w-6xl px-4;
 }
 
+.site-main {
+  max-width: 80rem;
+}
+
+@media (min-width: 1900px) {
+  .container {
+    max-width: min(94vw, 112rem);
+  }
+
+  .site-main {
+    max-width: min(96vw, 116rem);
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+  }
+}
+
 .card {
   /* sharp corners, terminal panel (opaque for readability; no grid bleed-through) */
   @apply rounded-none border border-slate-800;
