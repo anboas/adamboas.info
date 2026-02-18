@@ -915,15 +915,27 @@ a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0
 
 /* Change Notes 2.0 */
 .changes-filter-bar {
-  position: sticky;
-  top: calc(58px + env(safe-area-inset-top));
+  position: static;
   z-index: 24;
   background: rgb(2, 6, 23);
 }
 
 @media (min-width: 768px) {
   .changes-filter-bar {
+    position: sticky;
     top: 0.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .changes-filter-bar {
+    padding: 0.65rem;
+  }
+
+  .changes-tag-grid {
+    max-height: 7.25rem;
+    overflow-y: auto;
+    padding-right: 0.15rem;
   }
 }
 
