@@ -11755,4 +11755,85 @@ export const radarEventsSeed: RadarEvent[] = [
 
 
 
+
+	{
+		id: 'radar-t2com',
+		title: 'T2COM',
+		description: 'AUSA event focused on U.S. Army Transformation and Training Command (T2COM) mission, structure, and industry collaboration.',
+		startDate: '2026-03-04',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location:
+		{
+			city: 'Belcamp',
+			state: 'MD',
+			country: 'USA',
+			lat: 39.4663403,
+			lng: -76.2377005,
+			venue: "Water's Edge Event Center"
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['t2com', 'industry partners', 'army modernization'],
+			relatedPrograms: ['Transformation and Training Command (T2COM)'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA Event Page',
+				url: 'https://www.ausa.org/events/t2com',
+				type: 'official',
+				lastVerified: '2026-02-19',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://www.ausa.org/events/t2com'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'Low'
+			},
+			acquisition:
+			{
+				engagementKinds: ['Vendor Outreach'],
+				noticeType: 'Industry partner outreach event',
+				agency: 'U.S. Army Transformation and Training Command (T2COM)'
+			},
+			engagement:
+			{
+				status: 'Not engaged',
+				contacts: [
+					{
+						name: 'CSM Troy Welch',
+						role: 'Event Information',
+						organization: 'Association of the United States Army (AUSA)',
+						email: 'twelch@ausa.org',
+						phone: '703-907-2682'
+					},
+					{
+						name: 'Suzanne McCollum',
+						role: 'Registration Information',
+						organization: 'Association of the United States Army (AUSA)',
+						email: 'smccollum@ausa.org',
+						phone: '703-907-2416'
+					}
+				],
+				notes: 'No public solicitation number, response due date, or registration deadline was published on the source page as of 2026-02-19.'
+			},
+			notes: 'Event location and contacts verified from AUSA event page; coordinates geocoded from the published street address.'
+		}
+	},
 ];
