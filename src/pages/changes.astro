@@ -26,12 +26,40 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.32',
+		date: '2026-02-20',
+		title: 'Changes UX sweep: sticky mini filters, accessibility polish, and idle prefetch',
+		summary: 'Upgraded the Change Notes flow with a sticky compact filter row, stronger focus visibility, reduced-motion safeguards, and smoother list transitions.',
+		impact: 'Filtering/scanning long release history now stays fast during scroll, keyboard focus is easier to track, and transitions/navigation feel quicker without extra visual noise.',
+		current: true,
+		tags: ['changes', 'ux', 'accessibility', 'performance', 'navigation'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added a sticky mini filter row on scroll with compact search, topic-group toggles, and one-click reset.',
+					'Added skeleton loading states for filter and pagination transitions to improve perceived responsiveness.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved keyboard focus consistency with stronger visible rings across interactive controls.',
+					'Added reduced-motion handling so transitions/animations respect user motion preferences.',
+					'Tightened low-emphasis contrast on chips/meta text for better readability.',
+					'Added idle-time route/page prefetching for likely next navigation targets.',
+				],
+			},
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.31',
 		date: '2026-02-19',
 		title: 'Header title-case consistency pass',
 		summary: 'Standardized key UI section headers to Title Case across Events and supporting pages.',
 		impact: 'Interface labels read cleaner and more consistent, including “Geographic View” and related section titles.',
-		current: true,
 		tags: ['ux', 'events', 'copy', 'consistency'],
 		groups: [
 			{
@@ -1655,7 +1683,7 @@ function releaseSearchText(release: Release) {
 			</div>
 		</header>
 
-		<section class="card changes-filter-bar p-3">
+		<section class="card changes-filter-bar p-3" data-change-filter-bar>
 			<div class="flex flex-wrap items-center gap-2">
 				<input
 					id="changes-search"
@@ -1691,13 +1719,51 @@ function releaseSearchText(release: Release) {
 					))}
 				</div>
 			</details>
-			<div class="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
+			<div class="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-300">
 				<div data-change-active class="flex flex-wrap gap-2"></div>
 				<p data-change-count></p>
 			</div>
 		</section>
 
-		<div class="space-y-4" data-change-list>
+		<section class="card changes-mini-filter-bar hidden" data-change-mini-bar aria-hidden="true">
+			<div class="changes-mini-inner">
+				<input
+					data-change-search
+					type="search"
+					placeholder="Search changes..."
+					aria-label="Search change notes"
+					class="min-w-0 flex-1 rounded-none border border-slate-800 bg-slate-950 px-2 py-1 text-xs text-slate-200"
+				/>
+				<div class="flex flex-wrap items-center gap-1" role="group" aria-label="Quick topic filters">
+					{topicCounts
+						.filter((group) => group.count > 0)
+						.map((group) => (
+							<button
+								type="button"
+								data-change-group={group.key}
+								aria-pressed="false"
+								class="change-group-pill rounded-none border px-2 py-0.5 text-[11px] tracking-wide text-slate-200"
+							>
+								{group.label}
+							</button>
+						))}
+				</div>
+				<button
+					type="button"
+					data-change-clear
+					class="rounded-none border border-slate-700 bg-slate-950 px-2 py-1 text-[11px] text-slate-200 hover:bg-slate-900"
+				>
+					Reset
+				</button>
+			</div>
+		</section>
+
+		<div class="changes-list-shell space-y-4" data-change-list-shell>
+			<div class="changes-list-skeleton" data-change-skeleton aria-hidden="true">
+				<div class="changes-skeleton-card"></div>
+				<div class="changes-skeleton-card"></div>
+			</div>
+			<div class="space-y-4" data-change-list>
 			{releaseTopics.map(({ release, groups }) => (
 				<article
 					class="card p-5"
@@ -1712,7 +1778,7 @@ function releaseSearchText(release: Release) {
 						<span class={`rounded-none border px-2 py-1 ${release.current ? 'border-emerald-700/70 bg-emerald-900/20 text-emerald-200' : 'border-slate-700 text-slate-300'}`}>
 							{release.version}
 						</span>
-						<span class="text-slate-400">{release.date}</span>
+						<span class="text-slate-300">{release.date}</span>
 						<span class="change-new-pill hidden" data-release-new>New</span>
 						{release.tags.map((tag) => <span class="release-tag rounded-full border border-slate-700 px-2 py-0.5 text-[10px] lowercase text-slate-300">{tag}</span>)}
 					</div>
@@ -1737,7 +1803,7 @@ function releaseSearchText(release: Release) {
 		</div>
 
 		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-change-pagination>
-			<p class="text-xs text-slate-400" data-change-pagination-status></p>
+			<p class="text-xs text-slate-300" data-change-pagination-status></p>
 			<div class="flex items-center gap-2">
 				<button type="button" data-change-page-first class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">First</button>
 				<button type="button" data-change-page-prev class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Prev</button>
@@ -1747,9 +1813,11 @@ function releaseSearchText(release: Release) {
 			</div>
 		</div>
 
-		<p class="card hidden p-4 text-sm text-slate-300" data-change-empty>
-			No releases match your current filters.
+		<p class="card hidden p-4 text-sm text-slate-200" data-change-empty>
+			No releases match these filters. Try clearing search/tags/groups.
+			<button type="button" data-change-clear class="ml-2 rounded-none border border-slate-700 bg-slate-950 px-2 py-1 text-xs text-slate-200 hover:bg-slate-900">Clear filters</button>
 		</p>
+		</div>
 	</section>
 
 	<script type="module" set:html={changeNotesJs}></script>

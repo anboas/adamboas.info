@@ -82,6 +82,28 @@
 		window.location.assign(withBase(path));
 	}
 
+	function prefetchLikelyRoutes() {
+		const currentPath = window.location.pathname;
+		const candidates = Object.values(NAV)
+			.map((path) => withBase(path))
+			.filter((href, idx, arr) => arr.indexOf(href) === idx)
+			.filter((href) => {
+				try {
+					const url = new URL(href, window.location.origin);
+					return !currentPath.startsWith(url.pathname);
+				} catch {
+					return true;
+				}
+			});
+
+		for (const href of candidates) {
+			const link = document.createElement('link');
+			link.rel = 'prefetch';
+			link.href = href;
+			document.head.appendChild(link);
+		}
+	}
+
 	for (const btn of closeButtons) btn.addEventListener('click', closeOverlay);
 	for (const btn of jumpButtons) {
 		btn.addEventListener('click', () => {
@@ -91,6 +113,12 @@
 		});
 	}
 	fab?.addEventListener('click', openOverlay);
+
+	if ('requestIdleCallback' in window) {
+		window.requestIdleCallback(() => prefetchLikelyRoutes(), { timeout: 1600 });
+	} else {
+		window.setTimeout(() => prefetchLikelyRoutes(), 350);
+	}
 
 	document.addEventListener('keydown', (event) => {
 		if (event.defaultPrevented) return;

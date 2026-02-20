@@ -1,4 +1,5 @@
 const PAGE_SIZE = 10;
+const SKELETON_MIN_MS = 120;
 
 function norm(value) {
 	return (value ?? '').toString().trim().toLowerCase();
@@ -23,14 +24,23 @@ function fuzzyMatch(haystack, query) {
 	return tokens.every((token) => haystack.includes(token) || fuzzySubsequence(haystack, token));
 }
 
+function onIdle(cb, timeout = 1200) {
+	if ('requestIdleCallback' in window) {
+		window.requestIdleCallback(cb, { timeout });
+		return;
+	}
+	window.setTimeout(cb, 250);
+}
+
 const root = document.querySelector('[data-change-notes]');
 if (root) {
+	const listShell = root.querySelector('[data-change-list-shell]');
 	const list = root.querySelector('[data-change-list]');
 	const cards = [...root.querySelectorAll('[data-release-card]')];
 	const tagButtons = [...root.querySelectorAll('[data-change-tag]')];
 	const groupButtons = [...root.querySelectorAll('[data-change-group]')];
-	const searchInput = root.querySelector('[data-change-search]');
-	const clearBtn = root.querySelector('[data-change-clear]');
+	const searchInputs = [...root.querySelectorAll('[data-change-search]')];
+	const clearButtons = [...root.querySelectorAll('[data-change-clear]')];
 	const empty = root.querySelector('[data-change-empty]');
 	const active = root.querySelector('[data-change-active]');
 	const count = root.querySelector('[data-change-count]');
@@ -41,9 +51,13 @@ if (root) {
 	const pageLast = root.querySelector('[data-change-page-last]');
 	const pageLabel = root.querySelector('[data-change-page-label]');
 	const pageStatus = root.querySelector('[data-change-pagination-status]');
+	const filterBar = root.querySelector('[data-change-filter-bar]');
+	const miniBar = root.querySelector('[data-change-mini-bar]');
 
 	const availableTags = new Set(tagButtons.map((b) => norm(b.getAttribute('data-change-tag'))));
 	const availableGroups = new Set(groupButtons.map((b) => norm(b.getAttribute('data-change-group'))));
+	const prefetchedUrls = new Set();
+
 	const state = {
 		tags: new Set(),
 		groups: new Set(),
@@ -51,8 +65,10 @@ if (root) {
 		page: 1,
 	};
 
-	const seenReleaseKey = 'adamboas.changes.lastSeenVersion.v1';
+	let renderToken = 0;
 	let priorSeenVersion = null;
+
+	const seenReleaseKey = 'adamboas.changes.lastSeenVersion.v1';
 
 	function parseVersion(value) {
 		const m = String(value || '').toLowerCase().match(/v?(\d+)\.(\d+)\.(\d+)/);
@@ -96,6 +112,13 @@ if (root) {
 		}
 	}
 
+	function syncSearchInputs(value, source = null) {
+		for (const input of searchInputs) {
+			if (source && input === source) continue;
+			if (input.value !== value) input.value = value;
+		}
+	}
+
 	function readStateFromUrl() {
 		const url = new URL(window.location.href);
 		const q = norm(url.searchParams.get('q'));
@@ -113,10 +136,10 @@ if (root) {
 		state.tags = new Set(tags);
 		state.groups = new Set(groups);
 		state.page = Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
-		if (searchInput) searchInput.value = q;
+		syncSearchInputs(q);
 	}
 
-	function writeStateToUrl() {
+	function currentStateUrl() {
 		const url = new URL(window.location.href);
 		if (state.q) url.searchParams.set('q', state.q);
 		else url.searchParams.delete('q');
@@ -136,7 +159,27 @@ if (root) {
 		if (state.page > 1) url.searchParams.set('page', String(state.page));
 		else url.searchParams.delete('page');
 
-		window.history.replaceState({}, '', url);
+		return url;
+	}
+
+	function writeStateToUrl() {
+		window.history.replaceState({}, '', currentStateUrl());
+	}
+
+	function prefetchUrl(url) {
+		if (!url || prefetchedUrls.has(url)) return;
+		prefetchedUrls.add(url);
+		const link = document.createElement('link');
+		link.rel = 'prefetch';
+		link.href = url;
+		document.head.appendChild(link);
+	}
+
+	function prefetchNextPage(totalPages) {
+		if (totalPages <= state.page) return;
+		const url = currentStateUrl();
+		url.searchParams.set('page', String(state.page + 1));
+		onIdle(() => prefetchUrl(url.toString()));
 	}
 
 	function renderActiveFilters() {
@@ -156,8 +199,8 @@ if (root) {
 			addChip(`query:${state.q}`, () => {
 				state.q = '';
 				state.page = 1;
-				if (searchInput) searchInput.value = '';
-				render();
+				syncSearchInputs('');
+				requestRender({ preservePage: true, withSkeleton: true });
 			});
 		}
 
@@ -165,7 +208,7 @@ if (root) {
 			addChip(`tag:${tag}`, () => {
 				state.tags.delete(tag);
 				state.page = 1;
-				render();
+				requestRender({ preservePage: true, withSkeleton: true });
 			});
 		}
 
@@ -173,7 +216,7 @@ if (root) {
 			addChip(`group:${group}`, () => {
 				state.groups.delete(group);
 				state.page = 1;
-				render();
+				requestRender({ preservePage: true, withSkeleton: true });
 			});
 		}
 	}
@@ -194,7 +237,12 @@ if (root) {
 		pageStatus.textContent = `${pageStartIdx + 1}-${pageEndIdx} of ${totalMatches}`;
 	}
 
-	function render({ preservePage = true } = {}) {
+	function setRendering(activeRender) {
+		if (!listShell) return;
+		listShell.classList.toggle('is-rendering', activeRender);
+	}
+
+	function renderCore({ preservePage = true } = {}) {
 		renderNewReleaseBadges();
 		for (const button of tagButtons) {
 			const tag = norm(button.getAttribute('data-change-tag'));
@@ -235,6 +283,71 @@ if (root) {
 		renderPagination(matches.length, pageStartIdx, pageEndIdx, totalPages);
 		renderActiveFilters();
 		writeStateToUrl();
+		prefetchNextPage(totalPages);
+	}
+
+	function requestRender({ preservePage = true, withSkeleton = false } = {}) {
+		const token = ++renderToken;
+		if (withSkeleton) setRendering(true);
+		const run = () => {
+			if (token !== renderToken) return;
+			renderCore({ preservePage });
+			if (withSkeleton) {
+				window.setTimeout(() => {
+					if (token !== renderToken) return;
+					setRendering(false);
+				}, SKELETON_MIN_MS);
+				return;
+			}
+			setRendering(false);
+		};
+
+		if (withSkeleton) {
+			window.requestAnimationFrame(run);
+			return;
+		}
+		run();
+	}
+
+	function resetAllFilters() {
+		state.q = '';
+		state.tags = new Set();
+		state.groups = new Set();
+		state.page = 1;
+		syncSearchInputs('');
+		requestRender({ preservePage: true, withSkeleton: true });
+	}
+
+	function updateMiniBarVisibility(show) {
+		if (!miniBar) return;
+		miniBar.classList.toggle('hidden', !show);
+		miniBar.setAttribute('aria-hidden', show ? 'false' : 'true');
+	}
+
+	function initMiniBarObserver() {
+		if (!miniBar || !filterBar) return;
+
+		const evaluate = () => {
+			const rect = filterBar.getBoundingClientRect();
+			const show = rect.bottom < 8;
+			updateMiniBarVisibility(show);
+		};
+
+		if ('IntersectionObserver' in window) {
+			const observer = new IntersectionObserver(
+				(entries) => {
+					const entry = entries[0];
+					const show = !entry.isIntersecting && entry.boundingClientRect.bottom < 8;
+					updateMiniBarVisibility(show);
+				},
+				{ threshold: [0.08, 0.2, 0.5] },
+			);
+			observer.observe(filterBar);
+			return;
+		}
+
+		window.addEventListener('scroll', evaluate, { passive: true });
+		evaluate();
 	}
 
 	for (const button of tagButtons) {
@@ -244,7 +357,7 @@ if (root) {
 			if (state.tags.has(tag)) state.tags.delete(tag);
 			else state.tags.add(tag);
 			state.page = 1;
-			render({ preservePage: true });
+			requestRender({ preservePage: true, withSkeleton: true });
 		});
 	}
 
@@ -255,49 +368,48 @@ if (root) {
 			if (state.groups.has(group)) state.groups.delete(group);
 			else state.groups.add(group);
 			state.page = 1;
-			render({ preservePage: true });
+			requestRender({ preservePage: true, withSkeleton: true });
 		});
 	}
 
-	searchInput?.addEventListener('input', () => {
-		state.q = norm(searchInput.value);
-		state.page = 1;
-		render({ preservePage: true });
-	});
+	for (const input of searchInputs) {
+		input.addEventListener('input', () => {
+			state.q = norm(input.value);
+			state.page = 1;
+			syncSearchInputs(input.value, input);
+			requestRender({ preservePage: true, withSkeleton: true });
+		});
+	}
 
-	clearBtn?.addEventListener('click', () => {
-		state.q = '';
-		state.tags = new Set();
-		state.groups = new Set();
-		state.page = 1;
-		if (searchInput) searchInput.value = '';
-		render({ preservePage: true });
-	});
+	for (const button of clearButtons) {
+		button.addEventListener('click', resetAllFilters);
+	}
 
 	pageFirst?.addEventListener('click', () => {
 		if (state.page <= 1) return;
 		state.page = 1;
-		render({ preservePage: true });
+		requestRender({ preservePage: true, withSkeleton: true });
 	});
 
 	pagePrev?.addEventListener('click', () => {
 		if (state.page <= 1) return;
 		state.page -= 1;
-		render({ preservePage: true });
+		requestRender({ preservePage: true, withSkeleton: true });
 	});
 
 	pageNext?.addEventListener('click', () => {
 		state.page += 1;
-		render({ preservePage: true });
+		requestRender({ preservePage: true, withSkeleton: true });
 	});
 
 	pageLast?.addEventListener('click', () => {
 		state.page = Number.MAX_SAFE_INTEGER;
-		render({ preservePage: true });
+		requestRender({ preservePage: true, withSkeleton: true });
 	});
 
 	readSeenRelease();
 	readStateFromUrl();
-	render({ preservePage: true });
+	initMiniBarObserver();
+	requestRender({ preservePage: true, withSkeleton: false });
 	persistSeenRelease();
 }
