@@ -26,12 +26,32 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.35',
+		date: '2026-02-20',
+		title: 'CI reliability: move unstable AUSA links to warn-tier checks',
+		summary: 'Updated linkcheck policy classification so `ausa.org` links are checked in warn-tier mode instead of strict blocking mode.',
+		impact: 'Intermittent upstream AUSA connection resets no longer break blocking CI gates, while warn artifacts still retain visibility for remediation and verification.',
+		current: true,
+		tags: ['ci', 'linkcheck', 'events', 'reliability'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Classified `ausa.org` URLs into warn-tier policy handling during linkcheck preparation.',
+					'Removed transient AUSA transport failures from strict blocking gates while preserving non-blocking diagnostics.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.34',
 		date: '2026-02-20',
 		title: 'CI reliability: move Google Calendar template links out of strict blocking checks',
 		summary: 'Updated linkcheck policy classification so generated Google Calendar template URLs run in non-blocking warn-tier checks instead of strict blocking checks.',
 		impact: 'Deploy and build workflows stay green more consistently while still preserving visibility into Calendar-link health through warn artifacts.',
-		current: true,
 		tags: ['ci', 'linkcheck', 'events', 'calendar', 'reliability'],
 		groups: [
 			{

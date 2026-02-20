@@ -14,6 +14,7 @@ const POLICY = {
     'weforum.org',
     'usace.army.mil',
     'calendar.google.com',
+    'ausa.org',
   ],
   ignoreDomains: [
     'adamboas.info',
