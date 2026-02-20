@@ -8,6 +8,7 @@ type Feed = {
 	name: string;
 	category: string;
 	url: string;
+	displayUrl?: string;
 	crawlEnabled: boolean;
 	ingester?: string;
 	notes?: string;
@@ -46,24 +47,30 @@ const generatedAt = crawlReport.generatedAt ?? null;
 		<div class="card p-5 text-sm text-slate-300">
 			<h2 class="section-title">Official feeds</h2>
 			<ul class="mt-3 space-y-2">
-				{officialFeeds.map((f) => (
-					<li>
-						<a href={f.url} target="_blank" rel="noreferrer">{f.name}</a>
-						<span class="text-slate-500"> · {f.category} · {f.ingester ?? 'manual'}{f.notes ? ` · ${f.notes}` : ''}</span>
-					</li>
-				))}
+				{officialFeeds.map((f) => {
+					const href = f.displayUrl ?? f.url;
+					return (
+						<li>
+							<a href={href} target="_blank" rel="noreferrer">{f.name}</a>
+							<span class="text-slate-500"> · {f.category} · {f.ingester ?? 'manual'}{f.notes ? ` · ${f.notes}` : ''}{f.displayUrl ? ' · crawl endpoint kept internal' : ''}</span>
+						</li>
+					);
+				})}
 			</ul>
 		</div>
 
 		<div class="card p-5 text-sm text-slate-300">
 			<h2 class="section-title">Aggregator feeds</h2>
 			<ul class="mt-3 space-y-2">
-				{aggregators.map((f) => (
-					<li>
-						<a href={f.url} target="_blank" rel="noreferrer">{f.name}</a>
-						<span class="text-slate-500"> · {f.category} · {f.ingester ?? 'manual'}{f.notes ? ` · ${f.notes}` : ''}</span>
-					</li>
-				))}
+				{aggregators.map((f) => {
+					const href = f.displayUrl ?? f.url;
+					return (
+						<li>
+							<a href={href} target="_blank" rel="noreferrer">{f.name}</a>
+							<span class="text-slate-500"> · {f.category} · {f.ingester ?? 'manual'}{f.notes ? ` · ${f.notes}` : ''}{f.displayUrl ? ' · crawl endpoint kept internal' : ''}</span>
+						</li>
+					);
+				})}
 			</ul>
 		</div>
 
@@ -71,12 +78,15 @@ const generatedAt = crawlReport.generatedAt ?? null;
 			<h2 class="section-title">One-off event URLs (PR-target list)</h2>
 			<p class="mt-2 text-slate-400">These are specific event URLs we track directly and can expand via pull requests.</p>
 			<ul class="mt-3 space-y-2">
-				{oneOff.map((f) => (
-					<li>
-						<a href={f.url} target="_blank" rel="noreferrer">{f.name}</a>
-						<span class="text-slate-500"> · {f.id}</span>
-					</li>
-				))}
+				{oneOff.map((f) => {
+					const href = f.displayUrl ?? f.url;
+					return (
+						<li>
+							<a href={href} target="_blank" rel="noreferrer">{f.name}</a>
+							<span class="text-slate-500"> · {f.id}</span>
+						</li>
+					);
+				})}
 			</ul>
 		</div>
 	</section>

@@ -26,12 +26,44 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.28',
+		date: '2026-02-19',
+		title: 'Pre-deploy quality gates + linkcheck reliability repair',
+		summary: 'Expanded CI/deploy quality gates with smoke/overflow/a11y regression coverage and tightened linkcheck signal quality.',
+		impact: 'Deployments are now blocked behind practical route-level and accessibility checks, while stale/noisy linkcheck findings are reduced and better surfaced as artifacts.',
+		current: true,
+		tags: ['ci', 'deploy', 'testing', 'linkcheck', 'changes', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added core-route smoke Playwright suite (`tests/smoke.spec.ts`) and integrated it with overflow + a11y in CI/deploy gates.',
+					'Added topic-level linkcheck/test artifact uploads for easier triage from GitHub Actions runs.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Build and deploy workflows now run practical regression gates before deployment artifacts are published.',
+					'Events source page now supports `displayUrl` so public references can remain stable while crawler endpoints stay internal.',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Updated known stale links (AUSA events URL and WEF Amodei citation canonical path) to reduce recurring linkcheck noise.',
+					'Updated SAM API public reference links to stable Open.GSA documentation in user-facing content.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.27',
 		date: '2026-02-19',
 		title: 'Change Notes scale pass: topic groups + fuzzy search',
 		summary: 'Added high-level topic grouping and fuzzy search matching to keep Change Notes usable as release count grows.',
 		impact: 'You can now filter by broad groups first and use tolerant search matching, reducing scanning load across long release histories.',
-		current: true,
 		tags: ['changes', 'ux', 'search', 'grouping', 'release-tracker'],
 		groups: [
 			{

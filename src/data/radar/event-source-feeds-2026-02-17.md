@@ -6,7 +6,7 @@ Updated: 2026-02-17
 
 | Source | Feed type | URL | Ingest path | Notes |
 |---|---|---|---|---|
-| SAM.gov Get Opportunities API | API (JSON) | https://api.sam.gov/opportunities/v2/search | `scripts/import-radar-events-from-sam-opportunities.py` | Supports profiles: all/navy/nswc/army/air/marine/joint |
+| SAM.gov Get Opportunities API | API (JSON) | https://open.gsa.gov/api/get-opportunities-public-api/ | `scripts/import-radar-events-from-sam-opportunities.py` | Supports profiles: all/navy/nswc/army/air/marine/joint |
 | NAVSEA / NSWC source set | HTML pages | https://www.navsea.navy.mil/Home/Warfare-Centers/ | `scripts/import-radar-events-from-navy-nswc-pages.py` | Often partially blocked (403), but still primary Navy source |
 | AUSA events | HTML calendar | https://www.ausa.org/meet | `scripts/import-radar-events-from-priority-sources.py` | Official |
 | AFCEA events | HTML calendar | https://www.afcea.org/events | `scripts/import-radar-events-from-priority-sources.py` | Official |

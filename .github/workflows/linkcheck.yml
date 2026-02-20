@@ -3,6 +3,7 @@ name: linkcheck
 on:
   push:
     branches: [ main ]
+  pull_request:
   schedule:
     - cron: '33 6 * * *'
   workflow_dispatch:
@@ -56,6 +57,13 @@ jobs:
       - name: Stale-link remediation suggestions
         if: always()
         run: npm run linkcheck:suggest
+
+      - name: Upload linkcheck artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: linkcheck-artifacts
+          path: tmp/linkcheck
 
       - name: Notify Telegram on failure (optional)
         if: failure()

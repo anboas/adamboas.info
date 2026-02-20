@@ -38,15 +38,15 @@ export const radarEventsSeed: RadarEvent[] = [
 			provenance: [
 			{
 				name: 'AUSA events',
-				url: 'https://www.ausa.org/meetings-events',
+				url: 'https://www.ausa.org/events/',
 				type: 'official',
 				lastVerified: '2026-02-12',
 				confidence: 'Medium'
 			}],
 			links: 
 			{
-				official: 'https://www.ausa.org/meetings-events',
-				registration: 'https://www.ausa.org/meetings-events'
+				official: 'https://www.ausa.org/events/',
+				registration: 'https://www.ausa.org/events/'
 			},
 			logistics: 
 			{

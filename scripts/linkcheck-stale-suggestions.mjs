@@ -6,8 +6,8 @@ const OUT_DIR = path.resolve(process.cwd(), 'tmp', 'linkcheck');
 
 const STALE_MAP = {
   'https://www.ausa.org/meetings-events': 'https://www.ausa.org/events/',
-  'https://api.sam.gov/opportunities/v2/search': 'https://sam.gov/api/prod/opportunities/v2/api-details',
-  'https://weforum.org/agenda/2025/01/amodei-ai-agents': 'https://www.weforum.org/agenda/2025/01/amodei-ai-agents',
+  'https://api.sam.gov/opportunities/v2/search': 'https://open.gsa.gov/api/get-opportunities-public-api/',
+  'https://weforum.org/agenda/2025/01/amodei-ai-agents': 'https://www.weforum.org/videos/davos-day-3-am25/',
 };
 
 async function walkHtmlFiles(dir, out = []) {
