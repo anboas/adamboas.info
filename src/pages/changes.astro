@@ -19,14 +19,44 @@ type Release = {
 	current?: boolean;
 };
 
+type TopicGroup = {
+	key: 'writing' | 'events' | 'ux' | 'platform' | 'other';
+	label: string;
+};
+
 const releases: Release[] = [
+	{
+		version: 'v2.3.27',
+		date: '2026-02-19',
+		title: 'Change Notes scale pass: topic groups + fuzzy search',
+		summary: 'Added high-level topic grouping and fuzzy search matching to keep Change Notes usable as release count grows.',
+		impact: 'You can now filter by broad groups first and use tolerant search matching, reducing scanning load across long release histories.',
+		current: true,
+		tags: ['changes', 'ux', 'search', 'grouping', 'release-tracker'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added topic-group filters (Writing, Events, UX, Platform, Other) with release counts to quickly narrow scope.',
+					'Moved detailed tag pills under a collapsible “Fine-grained tags” section to reduce filter-bar clutter.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Enhanced Change Notes search with fuzzy token matching (subsequence support) for typo-tolerant lookups.',
+				],
+			},
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
 	{
 		version: 'v2.3.26',
 		date: '2026-02-19',
 		title: 'Read-progress split restored by viewport',
 		summary: 'Restored original desktop in-bar read-progress behavior while keeping the sticky mobile progress row.',
 		impact: 'Desktop now shows only the action-row read chip (no right-rail duplicate), while mobile keeps the persistent sticky read indicator.',
-		current: true,
 		tags: ['writing', 'mobile', 'desktop', 'ux'],
 		groups: [
 			{
@@ -1459,7 +1489,37 @@ const releases: Release[] = [
 ];
 
 const current = releases.find((r) => r.current) ?? releases[0];
+
+const topicGroups: TopicGroup[] = [
+	{ key: 'writing', label: 'Writing' },
+	{ key: 'events', label: 'Events' },
+	{ key: 'ux', label: 'UX' },
+	{ key: 'platform', label: 'Platform' },
+	{ key: 'other', label: 'Other' },
+];
+
+function topicGroupForTag(rawTag: string): TopicGroup['key'] {
+	const tag = rawTag.toLowerCase();
+	if (/(writing|paper|memo|note|pdf|latex|toc)/.test(tag)) return 'writing';
+	if (/(event|radar|conference|sam|source|legitimacy|acquisition)/.test(tag)) return 'events';
+	if (/(ux|mobile|desktop|readability|spacing|overflow|visual|pagination|footer|toc)/.test(tag)) return 'ux';
+	if (/(build|ci|deploy|workflow|linkcheck|a11y|test|release|metadata|automation|pipeline|infra)/.test(tag)) return 'platform';
+	return 'other';
+}
+
+const releaseTopics = releases.map((release) => {
+	const groups = [...new Set(release.tags.map((tag) => topicGroupForTag(tag)))];
+	return {
+		release,
+		groups,
+	};
+});
+
 const allTags = [...new Set(releases.flatMap((r) => r.tags))].sort();
+const topicCounts = topicGroups.map((group) => ({
+	...group,
+	count: releaseTopics.filter((item) => item.groups.includes(group.key)).length,
+}));
 
 function releaseSearchText(release: Release) {
 	return [
@@ -1510,18 +1570,35 @@ function releaseSearchText(release: Release) {
 					data-change-search
 					data-global-search
 					type="search"
-					placeholder="Search releases, capabilities, outcomes..."
+					placeholder="Search releases, capabilities, outcomes (fuzzy supported)..."
 					class="min-w-0 flex-1 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 sm:min-w-[16rem]"
 				/>
 				<button type="button" data-change-clear class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 sm:text-sm">Clear</button>
 			</div>
-			<div class="changes-tag-grid mt-2 flex flex-wrap gap-2" role="group" aria-label="Filter change notes by capability tags">
-				{allTags.map((tag) => (
-					<button type="button" data-change-tag={tag} aria-pressed="false" class="change-tag-pill rounded-full border px-2.5 py-1 text-xs lowercase tracking-wide text-slate-200">
-						{tag}
-					</button>
-				))}
+			<div class="mt-2 flex flex-wrap gap-2" role="group" aria-label="Filter change notes by topic groups">
+				{topicCounts
+					.filter((group) => group.count > 0)
+					.map((group) => (
+						<button
+							type="button"
+							data-change-group={group.key}
+							aria-pressed="false"
+							class="change-group-pill rounded-none border px-2.5 py-1 text-xs tracking-wide text-slate-200"
+						>
+							{group.label} <span class="text-slate-400">({group.count})</span>
+						</button>
+					))}
 			</div>
+			<details class="mt-2">
+				<summary class="cursor-pointer text-xs text-slate-300">Fine-grained tags ({allTags.length})</summary>
+				<div class="changes-tag-grid mt-2 flex flex-wrap gap-2" role="group" aria-label="Filter change notes by capability tags">
+					{allTags.map((tag) => (
+						<button type="button" data-change-tag={tag} aria-pressed="false" class="change-tag-pill rounded-full border px-2.5 py-1 text-xs lowercase tracking-wide text-slate-200">
+							{tag}
+						</button>
+					))}
+				</div>
+			</details>
 			<div class="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400">
 				<div data-change-active class="flex flex-wrap gap-2"></div>
 				<p data-change-count></p>
@@ -1529,12 +1606,13 @@ function releaseSearchText(release: Release) {
 		</section>
 
 		<div class="space-y-4" data-change-list>
-			{releases.map((release) => (
+			{releaseTopics.map(({ release, groups }) => (
 				<article
 					class="card p-5"
 					data-release-card
 					data-version={release.version}
 					data-tags={release.tags.join(',')}
+					data-groups={groups.join(',')}
 					data-search={releaseSearchText(release)}
 					id={release.version.toLowerCase()}
 				>

@@ -994,23 +994,27 @@ a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0
   }
 }
 
-.change-tag-pill {
+.change-tag-pill,
+.change-group-pill {
   border-color: rgba(51, 65, 85, 0.85);
   background: rgba(2, 6, 23, 0.82);
   transition: border-color 140ms ease, background 140ms ease, color 140ms ease, opacity 140ms ease;
 }
 
-.change-tag-pill[aria-pressed="true"] {
+.change-tag-pill[aria-pressed="true"],
+.change-group-pill[aria-pressed="true"] {
   border-color: rgba(20, 184, 166, 0.58);
   background: rgba(20, 184, 166, 0.16);
   color: rgba(240, 253, 250, 0.96);
 }
 
-.change-tag-pill[aria-pressed="false"] {
+.change-tag-pill[aria-pressed="false"],
+.change-group-pill[aria-pressed="false"] {
   opacity: 0.72;
 }
 
-.change-tag-pill:hover {
+.change-tag-pill:hover,
+.change-group-pill:hover {
   border-color: rgba(45, 212, 191, 0.62);
   opacity: 1;
 }

@@ -4,11 +4,31 @@ function norm(value) {
 	return (value ?? '').toString().trim().toLowerCase();
 }
 
+function fuzzySubsequence(haystack, needle) {
+	if (!needle) return true;
+	let i = 0;
+	for (const ch of haystack) {
+		if (ch === needle[i]) i += 1;
+		if (i >= needle.length) return true;
+	}
+	return false;
+}
+
+function fuzzyMatch(haystack, query) {
+	const q = norm(query);
+	if (!q) return true;
+	if (haystack.includes(q)) return true;
+	const tokens = q.split(/\s+/).filter(Boolean);
+	if (!tokens.length) return true;
+	return tokens.every((token) => haystack.includes(token) || fuzzySubsequence(haystack, token));
+}
+
 const root = document.querySelector('[data-change-notes]');
 if (root) {
 	const list = root.querySelector('[data-change-list]');
 	const cards = [...root.querySelectorAll('[data-release-card]')];
 	const tagButtons = [...root.querySelectorAll('[data-change-tag]')];
+	const groupButtons = [...root.querySelectorAll('[data-change-group]')];
 	const searchInput = root.querySelector('[data-change-search]');
 	const clearBtn = root.querySelector('[data-change-clear]');
 	const empty = root.querySelector('[data-change-empty]');
@@ -23,8 +43,10 @@ if (root) {
 	const pageStatus = root.querySelector('[data-change-pagination-status]');
 
 	const availableTags = new Set(tagButtons.map((b) => norm(b.getAttribute('data-change-tag'))));
+	const availableGroups = new Set(groupButtons.map((b) => norm(b.getAttribute('data-change-group'))));
 	const state = {
 		tags: new Set(),
+		groups: new Set(),
 		q: '',
 		page: 1,
 	};
@@ -81,10 +103,15 @@ if (root) {
 			.split(',')
 			.map((tag) => norm(tag))
 			.filter((tag) => availableTags.has(tag));
+		const groups = (url.searchParams.get('groups') || '')
+			.split(',')
+			.map((group) => norm(group))
+			.filter((group) => availableGroups.has(group));
 		const page = Number(url.searchParams.get('page') || '1');
 
 		state.q = q;
 		state.tags = new Set(tags);
+		state.groups = new Set(groups);
 		state.page = Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
 		if (searchInput) searchInput.value = q;
 	}
@@ -98,6 +125,12 @@ if (root) {
 			url.searchParams.set('tags', [...state.tags].sort().join(','));
 		} else {
 			url.searchParams.delete('tags');
+		}
+
+		if (state.groups.size) {
+			url.searchParams.set('groups', [...state.groups].sort().join(','));
+		} else {
+			url.searchParams.delete('groups');
 		}
 
 		if (state.page > 1) url.searchParams.set('page', String(state.page));
@@ -129,8 +162,16 @@ if (root) {
 		}
 
 		for (const tag of state.tags) {
-			addChip(tag, () => {
+			addChip(`tag:${tag}`, () => {
 				state.tags.delete(tag);
+				state.page = 1;
+				render();
+			});
+		}
+
+		for (const group of state.groups) {
+			addChip(`group:${group}`, () => {
+				state.groups.delete(group);
 				state.page = 1;
 				render();
 			});
@@ -159,13 +200,19 @@ if (root) {
 			const tag = norm(button.getAttribute('data-change-tag'));
 			button.setAttribute('aria-pressed', state.tags.has(tag) ? 'true' : 'false');
 		}
+		for (const button of groupButtons) {
+			const group = norm(button.getAttribute('data-change-group'));
+			button.setAttribute('aria-pressed', state.groups.has(group) ? 'true' : 'false');
+		}
 
 		const matches = cards.filter((card) => {
 			const cardTags = norm(card.getAttribute('data-tags')).split(',').filter(Boolean);
+			const cardGroups = norm(card.getAttribute('data-groups')).split(',').filter(Boolean);
 			const cardSearch = norm(card.getAttribute('data-search'));
 			const tagMatch = state.tags.size === 0 || cardTags.some((tag) => state.tags.has(tag));
-			const searchMatch = !state.q || cardSearch.includes(state.q);
-			return tagMatch && searchMatch;
+			const groupMatch = state.groups.size === 0 || cardGroups.some((group) => state.groups.has(group));
+			const searchMatch = fuzzyMatch(cardSearch, state.q);
+			return tagMatch && groupMatch && searchMatch;
 		});
 
 		if (!preservePage) state.page = 1;
@@ -201,6 +248,17 @@ if (root) {
 		});
 	}
 
+	for (const button of groupButtons) {
+		button.addEventListener('click', () => {
+			const group = norm(button.getAttribute('data-change-group'));
+			if (!group) return;
+			if (state.groups.has(group)) state.groups.delete(group);
+			else state.groups.add(group);
+			state.page = 1;
+			render({ preservePage: true });
+		});
+	}
+
 	searchInput?.addEventListener('input', () => {
 		state.q = norm(searchInput.value);
 		state.page = 1;
@@ -210,6 +268,7 @@ if (root) {
 	clearBtn?.addEventListener('click', () => {
 		state.q = '';
 		state.tags = new Set();
+		state.groups = new Set();
 		state.page = 1;
 		if (searchInput) searchInput.value = '';
 		render({ preservePage: true });
