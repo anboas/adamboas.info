@@ -21,12 +21,47 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.15',
+		date: '2026-02-19',
+		title: 'Linkcheck reliability lane + events intelligence CTA pass',
+		summary: 'Introduced tiered external link checking, added stale-link suggestion output, and expanded events quick actions with Calendar plus stronger confidence/acquisition context.',
+		impact: 'CI linkcheck now fails less on known unstable domains while still enforcing strict-quality links, and event cards/map/details provide faster actionability and evidence context.',
+		current: true,
+		tags: ['ci', 'linkcheck', 'events', 'calendar', 'reliability'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added linkcheck policy preprocessing (`strict`/`warn`/`ignore`) and new scripts for warn-tier checks plus stale-link replacement suggestions.',
+					'Added event-level Google Calendar deep links on cards, map popups, and expanded event links.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Linkcheck workflow now blocks only strict-tier domains while running unstable domains in non-blocking warn mode with machine-readable output artifacts.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Added confidence-notes and acquisition-reference summaries in event details to improve source provenance clarity during triage.',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Addressed stale known links via actionable suggestion reporting (AUSA events URL, SAM API docs endpoint, and WEF canonical URL mapping).',
+				],
+			},
+		],
+	},
+	{
 		version: 'v2.3.14',
 		date: '2026-02-18',
 		title: 'TOC hover scrollbar no-shift fix',
 		summary: 'Eliminated TOC text jitter caused by scrollbar mode-switching on hover/focus.',
 		impact: 'Hovering the right-side TOC now reveals scroll affordance without shifting words or reflowing line breaks.',
-		current: true,
 		tags: ['writing', 'toc', 'ux', 'regression-fix', 'ultrawide'],
 		groups: [
 			{

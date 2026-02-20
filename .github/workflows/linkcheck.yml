@@ -34,25 +34,28 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Link check (internal)
+      - name: Prepare linkcheck policy sets (strict/warn/ignore)
+        run: npm run linkcheck:prepare
+
+      - name: Link check (strict domains, blocking)
         uses: lycheeverse/lychee-action@v2
         with:
           lycheeVersion: v0.22.0
           args: >-
             --verbose
             --no-progress
-            --exclude "^mailto:"
             --accept 200,206,401,403,429
             --timeout 20
             --max-retries 2
-            --index-files index.html
-            --exclude "^https://adamboas\.info"
-            --exclude "^https://(www\.)?adamboas\.com"
-            --exclude "^https://www\.linkedin\.com/posts/"
-            --exclude "^https://www\.newyorker\.com/tech/annals-of-technology/why-a-i-didnt-transform-our-lives-in-2025"
-            --exclude "^https://(dodcio\.defense\.gov|media\.defense\.gov|www\.esd\.whs\.mil)/"
-            --root-dir ${{ github.workspace }}/dist
-            "dist/**/*.html"
+            "tmp/linkcheck/strict-links.txt"
+
+      - name: Link check (warn-only domains, non-blocking)
+        if: always()
+        run: npm run linkcheck:warn
+
+      - name: Stale-link remediation suggestions
+        if: always()
+        run: npm run linkcheck:suggest
 
       - name: Notify Telegram on failure (optional)
         if: failure()

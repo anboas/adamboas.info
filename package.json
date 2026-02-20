@@ -22,7 +22,10 @@
     "test:overflow": "SITE_BASE=https://www.adamboas.com playwright test tests/overflow.spec.ts",
     "test:a11y": "SITE_BASE=http://localhost:4321 playwright test tests/a11y.spec.ts",
     "lhci": "npm run build && lhci autorun",
-    "events:feed-crawl": "python3 scripts/crawl-radar-feed-registry.py"
+    "events:feed-crawl": "python3 scripts/crawl-radar-feed-registry.py",
+    "linkcheck:prepare": "node scripts/linkcheck-prepare.mjs",
+    "linkcheck:warn": "node scripts/linkcheck-warn.mjs",
+    "linkcheck:suggest": "node scripts/linkcheck-stale-suggestions.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",

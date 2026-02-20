@@ -377,6 +377,51 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 	};
 }
 
+function addDaysIso(dateIso: string, days: number) {
+	const d = new Date(`${dateIso}T00:00:00Z`);
+	d.setUTCDate(d.getUTCDate() + days);
+	return d.toISOString().slice(0, 10);
+}
+
+function gcalDate(dateIso: string) {
+	return dateIso.replaceAll('-', '');
+}
+
+function eventCalendarLink(event: (typeof events)[number]) {
+	if (!event.startDate) return null;
+	const start = event.startDate;
+	const endExclusive = addDaysIso(event.endDate ?? event.startDate, 1);
+	const detailsParts = [
+		event.description,
+		eventPrimaryLink(event) ? `Official: ${eventPrimaryLink(event)}` : null,
+		samOpportunityLink(event) ? `SAM: ${samOpportunityLink(event)}` : null,
+		`Source confidence: ${sourceConfidenceLabel(event)}`,
+	].filter(Boolean);
+	const params = new URLSearchParams({
+		action: 'TEMPLATE',
+		text: event.title,
+		dates: `${gcalDate(start)}/${gcalDate(endExclusive)}`,
+		details: detailsParts.join('\n'),
+		location: locationLabel(event),
+	});
+	return `https://calendar.google.com/calendar/render?${params.toString()}`;
+}
+
+function confidenceNotes(event: (typeof events)[number]) {
+	const confidence = sourceConfidenceLabel(event);
+	const freshest = eventFreshnessBadge(event);
+	const evidence = evidenceHealth(event);
+	return `${confidence} source confidence. ${freshest.label}. ${evidence}`;
+}
+
+function acquisitionReferences(event: (typeof events)[number]) {
+	const refs: string[] = [];
+	if (event.ontology.acquisition?.solicitationNumber) refs.push(`Solicitation ${event.ontology.acquisition.solicitationNumber}`);
+	if (noticeTypeLabel(event)) refs.push(`${noticeTypeLabel(event)} notice`);
+	if (samOpportunityLinks(event).length) refs.push(`${samOpportunityLinks(event).length} SAM linked record(s)`);
+	return refs;
+}
+
 ---
 
 <SiteLayout
@@ -499,6 +544,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 							data-title={event.title}
 							data-link={eventPrimaryLink(event) ?? ''}
 							data-sam-link={samOpportunityLink(event) ?? ''}
+							data-calendar-link={eventCalendarLink(event) ?? ''}
 							data-lat={event.location.lat}
 							data-lng={event.location.lng}
 							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence} ${p.name}`).join(' ')} ${inferEngagementKinds(event).join(' ')} ${noticeTypeLabel(event) ?? ''}`.toLowerCase()}
@@ -518,6 +564,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 									<div class="flex w-full flex-wrap items-center gap-2 sm:w-auto sm:justify-end">
 										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
 										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Link</a> : null}
+										{eventCalendarLink(event) ? <a class="radar-pin-btn radar-calendar-btn" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Calendar</a> : null}
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 									</div>
 									<div class="radar-badge-row">
@@ -543,6 +590,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 											{eventPrimaryLink(event) ? <li><a href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Official page</a></li> : null}
 											{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <li><a href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM opportunity</a></li> : null}
 											{eventAuxiliaryLinks(event).registration ? <li><a href={eventAuxiliaryLinks(event).registration!} target="_blank" rel="noreferrer">Registration</a></li> : null}
+											{eventCalendarLink(event) ? <li><a href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Add to Google Calendar</a></li> : null}
 											{eventAuxiliaryLinks(event).callForPapers ? <li><a href={eventAuxiliaryLinks(event).callForPapers!} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
 											{eventAuxiliaryLinks(event).agenda ? <li><a href={eventAuxiliaryLinks(event).agenda!} target="_blank" rel="noreferrer">Agenda</a></li> : null}
 											{eventAuxiliaryLinks(event).hotelBlock ? <li><a href={eventAuxiliaryLinks(event).hotelBlock!} target="_blank" rel="noreferrer">Hotel block</a></li> : null}
@@ -579,7 +627,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 												{inferEngagementKinds(event).length ? <li><strong>Opportunity signals:</strong> {inferEngagementKinds(event).join(', ')}</li> : null}
 												{event.ontology.acquisition?.agency ? <li><strong>Agency:</strong> {event.ontology.acquisition?.agency}</li> : null}
 												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
-												{event.ontology.acquisition?.registrationDeadline ? <li><strong>Registration deadline:</strong> {fmtDate(event.ontology.acquisition?.registrationDeadline)}</li> : null}
+												{event.ontology.acquisition?.registrationDeadline ? <li><strong>Registration closes:</strong> {fmtDate(event.ontology.acquisition?.registrationDeadline)}</li> : null}
 												{event.ontology.acquisition?.responseDueDate ? <li><strong>Response due:</strong> {fmtDate(event.ontology.acquisition?.responseDueDate)}</li> : null}
 												{samOpportunityLinks(event).length ? (
 													<li>
@@ -592,6 +640,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 														))}
 													</li>
 												) : null}
+												{acquisitionReferences(event).length ? <li><strong>Acquisition references:</strong> {acquisitionReferences(event).join(' · ')}</li> : null}
 											</ul>
 										</div>
 										<div>
@@ -655,6 +704,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 										))}
 									</ul>
 									<p class="mt-2 text-xs text-slate-400">Evidence health: {evidenceHealth(event)}</p>
+									<p class="mt-1 text-xs text-slate-400">Confidence notes: {confidenceNotes(event)}</p>
 									{event.ontology.notes ? <p class="mt-2 text-xs text-slate-400">{event.ontology.notes}</p> : null}
 								</div>
 							</details>
@@ -915,11 +965,13 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		const meta = card.querySelector('.radar-meta')?.textContent || '';
 		const link = card.dataset.link || '';
 		const samLink = card.dataset.samLink || '';
+		const calendarLink = card.dataset.calendarLink || '';
 		const days = parseDays(card.dataset.days);
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		const typeClass = `radar-type-${typeTone(type)}`;
 		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event site</a>` : '';
 		const samLinkHtml = samLink && samLink !== link ? `<a class="radar-map-link radar-map-link-sam" href="${escapeHtml(samLink)}" target="_blank" rel="noreferrer">SAM</a>` : '';
+		const calendarLinkHtml = calendarLink ? `<a class="radar-map-link radar-map-link-calendar" href="${escapeHtml(calendarLink)}" target="_blank" rel="noreferrer">Calendar</a>` : '';
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
@@ -927,7 +979,7 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
 					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
-					<div class="radar-map-popup-cta">${linkHtml}${samLinkHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button></div>
+					<div class="radar-map-popup-cta">${linkHtml}${samLinkHtml}${calendarLinkHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button></div>
 				</div>
 			</div>
 		`;
@@ -1603,6 +1655,12 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 		color: rgba(254, 243, 199, 0.96);
 	}
 	:global(.radar-map-link-sam:hover) { background: rgba(250, 204, 21, 0.24); }
+	:global(.radar-map-link-calendar) {
+		border-color: rgba(52, 211, 153, 0.62);
+		background: rgba(52, 211, 153, 0.16);
+		color: rgba(209, 250, 229, 0.96);
+	}
+	:global(.radar-map-link-calendar:hover) { background: rgba(52, 211, 153, 0.24); }
 
 	:global(.radar-leaflet-pin-wrap) { background: transparent; border: 0; }
 	:global(.radar-leaflet-pin) {
@@ -1927,6 +1985,14 @@ function eventAuxiliaryLinks(event: (typeof events)[number]) {
 	}
 	.radar-link-btn:hover {
 		background: rgba(56, 189, 248, 0.2);
+	}
+	.radar-calendar-btn {
+		border-color: rgba(52, 211, 153, 0.62);
+		background: rgba(52, 211, 153, 0.14);
+		color: rgba(209, 250, 229, 0.96);
+	}
+	.radar-calendar-btn:hover {
+		background: rgba(52, 211, 153, 0.22);
 	}
 	.radar-link-btn-sam {
 		border-color: rgba(250, 204, 21, 0.68);
