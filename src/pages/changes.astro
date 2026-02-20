@@ -21,12 +21,37 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.19',
+		date: '2026-02-19',
+		title: 'Writing index spacing and alignment refinement',
+		summary: 'Tightened control-to-card spacing, removed empty filter-chip gap, and normalized type-pill centering for cleaner visual rhythm on the Writing index.',
+		impact: 'Controls and cards now feel more evenly spaced with better vertical alignment and less dead space in the filter shell.',
+		current: true,
+		tags: ['writing', 'ux', 'spacing', 'visual-cohesion'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Retuned writing-index control shell spacing (padding and row gaps) and reduced control-to-card stack gap.',
+					'Adjusted type toggle pill sizing for more consistent centering and hit-area alignment with other controls.',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Removed empty-state whitespace under writing filters by hiding the chip row when no active chips are present.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.18',
 		date: '2026-02-19',
 		title: 'Writing action-row cohesion pass',
 		summary: 'Aligned spacing and sizing of action-row controls by styling the read-progress chip with the same button tokens used by PDF, Copy, and Discuss.',
 		impact: 'Writing action controls now read as one cohesive control set with consistent spacing, typography, and hit area.',
-		current: true,
 		tags: ['writing', 'ux', 'visual-cohesion'],
 		groups: [
 			{

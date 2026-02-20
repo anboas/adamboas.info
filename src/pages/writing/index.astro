@@ -42,27 +42,27 @@ const items = [
 	<StickyBrowseBar active="writing" />
 	<div data-writing-index>
 		<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
-		<div class="writing-index-controls card mt-4 p-3">
-			<div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-				<div class="flex flex-wrap items-center gap-2 text-[11px] text-slate-300" role="group" aria-label="Filter writing by type">
-					<button type="button" data-writing-type-toggle="paper" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-paper rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Long-form architecture + reference work" title="Long-form architecture + reference work">paper</button>
-					<button type="button" data-writing-type-toggle="note" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-note rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Short synthesis and research snapshots" title="Short synthesis and research snapshots">note</button>
-					<button type="button" data-writing-type-toggle="memo" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-memo rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide" data-tooltip="Focused briefs and decision-ready analysis" title="Focused briefs and decision-ready analysis">memo</button>
+		<div class="writing-index-controls card mt-3 p-2.5 md:mt-4 md:p-3">
+			<div class="flex flex-wrap items-center gap-2 md:gap-3">
+				<div class="flex flex-wrap items-center gap-2 text-xs text-slate-300" role="group" aria-label="Filter writing by type">
+					<button type="button" data-writing-type-toggle="paper" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-paper rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Long-form architecture + reference work" title="Long-form architecture + reference work">paper</button>
+					<button type="button" data-writing-type-toggle="note" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-note rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Short synthesis and research snapshots" title="Short synthesis and research snapshots">note</button>
+					<button type="button" data-writing-type-toggle="memo" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-memo rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Focused briefs and decision-ready analysis" title="Focused briefs and decision-ready analysis">memo</button>
 				</div>
 
 				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
 					<label class="sr-only" for="writing-search">Search writing</label>
-					<input id="writing-search" data-writing-search data-global-search class="w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
-					<button type="button" data-writing-clear class="shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
+					<input id="writing-search" data-writing-search data-global-search class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
+					<button type="button" data-writing-clear class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
 					<a class="shrink-0 inline-flex h-8 items-center text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
 				</div>
 			</div>
 
-			<div class="mt-2 flex flex-wrap gap-2 text-xs" data-writing-chips></div>
+			<div class="flex flex-wrap gap-2 text-xs" data-writing-chips></div>
 		</div>
 		<script type="module" set:html={writingIndexJs}></script>
 
-		<div class="mt-8 grid gap-4">
+		<div class="mt-6 grid gap-4 md:mt-7">
 			{items.map((w) => (
 				<a
 					data-writing-card

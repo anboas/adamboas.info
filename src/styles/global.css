@@ -564,28 +564,7 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
   }
 }
 
-.writing-progress-chip {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 4.6rem;
-  border: 1px solid rgba(71, 85, 105, 0.95);
-  background: rgb(2, 6, 23);
-  color: rgba(226, 232, 240, 0.9);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  padding: 0.32rem 0.52rem;
-  white-space: nowrap;
-}
-
-@media (max-width: 767px) {
-  .writing-progress-chip {
-    font-size: 0.66rem;
-    min-width: 4.2rem;
-    padding: 0.24rem 0.46rem;
-  }
-}
+/* obsolete writing-progress-chip block removed (styles now use shared button tokens inline) */
 
 .writing-detail-shell {
   display: block;
@@ -819,6 +798,10 @@ button[data-writing-tag]:hover {
 }
 
 .writing-type-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
   cursor: pointer;
   transition: opacity 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
 }
@@ -942,6 +925,12 @@ a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0
 }
 [data-writing-index] .writing-index-controls :is(select, input, button, a) {
   min-height: 2rem;
+}
+[data-writing-index] [data-writing-chips]:empty {
+  display: none;
+}
+[data-writing-index] [data-writing-chips]:not(:empty) {
+  margin-top: 0.55rem;
 }
 
 /* Writing index inputs/selects: teal focus */
