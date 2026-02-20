@@ -21,12 +21,31 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.18',
+		date: '2026-02-19',
+		title: 'Writing action-row cohesion pass',
+		summary: 'Aligned spacing and sizing of action-row controls by styling the read-progress chip with the same button tokens used by PDF, Copy, and Discuss.',
+		impact: 'Writing action controls now read as one cohesive control set with consistent spacing, typography, and hit area.',
+		current: true,
+		tags: ['writing', 'ux', 'visual-cohesion'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Restyled the read-progress indicator to match existing action-button dimensions and visual treatment.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.17',
 		date: '2026-02-19',
 		title: 'Writing progress indicator switched to persistent percent chip',
 		summary: 'Replaced the top progress line with a persistent read-percentage chip beside PDF/Copy/Discuss for clearer visibility.',
 		impact: 'Reading progress is now always visible in the action row as text (for example, `42% read`) instead of a subtle line at the top.',
-		current: true,
 		tags: ['writing', 'ux', 'readability'],
 		groups: [
 			{
