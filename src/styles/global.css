@@ -192,6 +192,26 @@ button.card:hover {
   box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.11) inset, 0 12px 28px rgba(2, 6, 23, 0.28);
 }
 
+/* Shared control shell rhythm for Events/Writing/Changes */
+.control-shell {
+  border-color: rgba(51, 65, 85, 0.9);
+  background: rgb(2, 6, 23);
+}
+
+.control-shell-row {
+  gap: 0.55rem;
+}
+
+@media (max-width: 767px) {
+  .control-shell {
+    padding: 0.68rem;
+  }
+
+  .control-shell-row {
+    gap: 0.45rem;
+  }
+}
+
 /* Force opaque top-layer surfaces so body grid never bleeds through cards/controls */
 [class*="bg-slate-950/40"],
 [class*="bg-slate-950/50"],

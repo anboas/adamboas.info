@@ -26,12 +26,37 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.33',
+		date: '2026-02-20',
+		title: 'Events quick-scan windows + unified control-shell alignment',
+		summary: 'Added timeline quick filters (Next 30d/90d/180d), introduced compact confidence-plus-source badges on event cards, and aligned control-shell rhythm across Events/Writing/Changes.',
+		impact: 'Event triage is now faster by narrowing to near-term windows in one tap, trust context is easier to parse at a glance, and top control surfaces feel more consistent across core list pages.',
+		current: true,
+		tags: ['events', 'writing', 'changes', 'ux', 'filters', 'consistency'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added quick timeline chips on `/events/`: `Next 30d`, `Next 90d`, `Next 180d`, with URL-persisted state.',
+					'Added compact event-card badges combining source confidence and source type (`High · Official`, etc.).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Aligned control-shell styling hooks across `/events/`, `/writing/`, and `/changes/` for tighter spacing rhythm and mobile wrap consistency.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.32',
 		date: '2026-02-20',
 		title: 'Changes UX sweep: sticky mini filters, accessibility polish, and idle prefetch',
 		summary: 'Upgraded the Change Notes flow with a sticky compact filter row, stronger focus visibility, reduced-motion safeguards, and smoother list transitions.',
 		impact: 'Filtering/scanning long release history now stays fast during scroll, keyboard focus is easier to track, and transitions/navigation feel quicker without extra visual noise.',
-		current: true,
 		tags: ['changes', 'ux', 'accessibility', 'performance', 'navigation'],
 		groups: [
 			{
@@ -1683,8 +1708,8 @@ function releaseSearchText(release: Release) {
 			</div>
 		</header>
 
-		<section class="card changes-filter-bar p-3" data-change-filter-bar>
-			<div class="flex flex-wrap items-center gap-2">
+		<section class="card control-shell changes-filter-bar p-3" data-change-filter-bar>
+			<div class="control-shell-row flex flex-wrap items-center gap-2">
 				<input
 					id="changes-search"
 					data-change-search
@@ -1725,7 +1750,7 @@ function releaseSearchText(release: Release) {
 			</div>
 		</section>
 
-		<section class="card changes-mini-filter-bar hidden" data-change-mini-bar aria-hidden="true">
+		<section class="card control-shell changes-mini-filter-bar hidden" data-change-mini-bar aria-hidden="true">
 			<div class="changes-mini-inner">
 				<input
 					data-change-search
