@@ -15,8 +15,10 @@ if (root) {
 	const active = root.querySelector('[data-change-active]');
 	const count = root.querySelector('[data-change-count]');
 	const pagination = root.querySelector('[data-change-pagination]');
+	const pageFirst = root.querySelector('[data-change-page-first]');
 	const pagePrev = root.querySelector('[data-change-page-prev]');
 	const pageNext = root.querySelector('[data-change-page-next]');
+	const pageLast = root.querySelector('[data-change-page-last]');
 	const pageLabel = root.querySelector('[data-change-page-label]');
 	const pageStatus = root.querySelector('[data-change-pagination-status]');
 
@@ -141,8 +143,12 @@ if (root) {
 		pagination.classList.toggle('hidden', !show);
 		if (!show) return;
 
-		pagePrev.disabled = state.page <= 1;
-		pageNext.disabled = state.page >= totalPages;
+		const atFirst = state.page <= 1;
+		const atLast = state.page >= totalPages;
+		if (pageFirst) pageFirst.disabled = atFirst;
+		pagePrev.disabled = atFirst;
+		pageNext.disabled = atLast;
+		if (pageLast) pageLast.disabled = atLast;
 		pageLabel.textContent = `Page ${state.page} of ${totalPages}`;
 		pageStatus.textContent = `${pageStartIdx + 1}-${pageEndIdx} of ${totalMatches}`;
 	}
@@ -209,6 +215,12 @@ if (root) {
 		render({ preservePage: true });
 	});
 
+	pageFirst?.addEventListener('click', () => {
+		if (state.page <= 1) return;
+		state.page = 1;
+		render({ preservePage: true });
+	});
+
 	pagePrev?.addEventListener('click', () => {
 		if (state.page <= 1) return;
 		state.page -= 1;
@@ -217,6 +229,11 @@ if (root) {
 
 	pageNext?.addEventListener('click', () => {
 		state.page += 1;
+		render({ preservePage: true });
+	});
+
+	pageLast?.addEventListener('click', () => {
+		state.page = Number.MAX_SAFE_INTEGER;
 		render({ preservePage: true });
 	});
 

@@ -714,9 +714,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 				<div id="radar-pagination" class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap">
 					<p id="radar-pagination-status" class="text-xs text-slate-400"></p>
 					<div class="flex items-center gap-2">
+						<button id="radar-page-first" class="radar-btn radar-btn-tight" type="button">First</button>
 						<button id="radar-page-prev" class="radar-btn radar-btn-tight" type="button">Prev</button>
 						<span id="radar-page-label" class="text-xs text-slate-300">Page 1 of 1</span>
 						<button id="radar-page-next" class="radar-btn radar-btn-tight" type="button">Next</button>
+						<button id="radar-page-last" class="radar-btn radar-btn-tight" type="button">Last</button>
 					</div>
 				</div>
 
@@ -763,8 +765,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
 	const pagination = document.getElementById('radar-pagination');
+	const pageFirst = document.getElementById('radar-page-first');
 	const pagePrev = document.getElementById('radar-page-prev');
 	const pageNext = document.getElementById('radar-page-next');
+	const pageLast = document.getElementById('radar-page-last');
 	const pageLabel = document.getElementById('radar-page-label');
 	const pageStatus = document.getElementById('radar-pagination-status');
 	const seenEventsStorageKey = 'adamboas.events.seen.v1';
@@ -775,6 +779,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	let compactMode = true;
 	let mapVisible = true;
 	let currentPage = 1;
+	let currentTotalPages = 1;
 
 
 	function parseDate(value) {
@@ -1275,11 +1280,16 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 	function renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages) {
 		if (!pagination || !pagePrev || !pageNext || !pageLabel || !pageStatus) return;
+		currentTotalPages = totalPages;
 		const show = totalMatches > PAGE_SIZE;
 		pagination.classList.toggle('hidden', !show);
 		if (!show) return;
-		pagePrev.disabled = currentPage <= 1;
-		pageNext.disabled = currentPage >= totalPages;
+		const atFirst = currentPage <= 1;
+		const atLast = currentPage >= totalPages;
+		if (pageFirst) pageFirst.disabled = atFirst;
+		pagePrev.disabled = atFirst;
+		pageNext.disabled = atLast;
+		if (pageLast) pageLast.disabled = atLast;
 		pageLabel.textContent = `Page ${currentPage} of ${totalPages}`;
 		pageStatus.textContent = `${pageStartIdx + 1}-${pageEndIdx} of ${totalMatches}`;
 	}
@@ -1350,13 +1360,24 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		compactMode = !compactMode;
 		render();
 	});
+	pageFirst?.addEventListener('click', () => {
+		if (currentPage <= 1) return;
+		currentPage = 1;
+		render();
+	});
 	pagePrev?.addEventListener('click', () => {
 		if (currentPage <= 1) return;
 		currentPage -= 1;
 		render();
 	});
 	pageNext?.addEventListener('click', () => {
+		if (currentPage >= currentTotalPages) return;
 		currentPage += 1;
+		render();
+	});
+	pageLast?.addEventListener('click', () => {
+		if (currentPage >= currentTotalPages) return;
+		currentPage = currentTotalPages;
 		render();
 	});
 

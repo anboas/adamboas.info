@@ -21,12 +21,36 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.23',
+		date: '2026-02-19',
+		title: 'Pagination controls expanded with First/Last',
+		summary: 'Extended paginated list controls to include First and Last actions across Writing, Change Notes, and Events.',
+		impact: 'Navigation across long result sets is now faster with one-click jumps to beginning/end while preserving existing clean control styling.',
+		current: true,
+		tags: ['pagination', 'writing', 'changes', 'events', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added First/Last buttons to paginated list controls on Writing index, Change Notes, and Events list views.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Pagination button disabled states now cover edge jumps (First/Prev disabled on page 1, Next/Last disabled on final page).',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.22',
 		date: '2026-02-19',
 		title: 'List pagination across writing, changes, and events',
 		summary: 'Added clean paginated list controls (10 items per page) with filter-aware behavior and automatic control hiding when pagination is unnecessary.',
 		impact: 'Long lists are now easier to scan, while pages with 10 or fewer results stay visually clean with no extra controls.',
-		current: true,
 		tags: ['pagination', 'writing', 'changes', 'events', 'ux'],
 		groups: [
 			{
@@ -1477,9 +1501,11 @@ function releaseSearchText(release: Release) {
 		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-change-pagination>
 			<p class="text-xs text-slate-400" data-change-pagination-status></p>
 			<div class="flex items-center gap-2">
+				<button type="button" data-change-page-first class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">First</button>
 				<button type="button" data-change-page-prev class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Prev</button>
 				<span class="text-xs text-slate-300" data-change-page-label>Page 1 of 1</span>
 				<button type="button" data-change-page-next class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Next</button>
+				<button type="button" data-change-page-last class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Last</button>
 			</div>
 		</div>
 

@@ -56,12 +56,15 @@ if (!root) {
 	const cards = [...root.querySelectorAll('[data-writing-card]')];
 	const empty = root.querySelector('[data-writing-empty]');
 	const pagination = root.querySelector('[data-writing-pagination]');
+	const pageFirst = root.querySelector('[data-writing-page-first]');
 	const pagePrev = root.querySelector('[data-writing-page-prev]');
 	const pageNext = root.querySelector('[data-writing-page-next]');
+	const pageLast = root.querySelector('[data-writing-page-last]');
 	const pageLabel = root.querySelector('[data-writing-page-label]');
 	const pageStatus = root.querySelector('[data-writing-pagination-status]');
 
 	let currentPage = 1;
+	let currentTotalPages = 1;
 
 	function syncFromUrl() {
 		const url = new URL(window.location.href);
@@ -129,12 +132,17 @@ if (!root) {
 
 	function renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages) {
 		if (!pagination || !pagePrev || !pageNext || !pageLabel || !pageStatus) return;
+		currentTotalPages = totalPages;
 		const show = totalMatches > PAGE_SIZE;
 		pagination.classList.toggle('hidden', !show);
 		if (!show) return;
 
-		pagePrev.disabled = currentPage <= 1;
-		pageNext.disabled = currentPage >= totalPages;
+		const atFirst = currentPage <= 1;
+		const atLast = currentPage >= totalPages;
+		if (pageFirst) pageFirst.disabled = atFirst;
+		pagePrev.disabled = atFirst;
+		pageNext.disabled = atLast;
+		if (pageLast) pageLast.disabled = atLast;
 		pageLabel.textContent = `Page ${currentPage} of ${totalPages}`;
 		pageStatus.textContent = `${pageStartIdx + 1}-${pageEndIdx} of ${totalMatches}`;
 	}
@@ -204,6 +212,12 @@ if (!root) {
 	const clearBtn = document.querySelector('[data-writing-clear]');
 	if (clearBtn) clearBtn.addEventListener('click', () => clearFilters());
 
+	pageFirst?.addEventListener('click', () => {
+		if (currentPage <= 1) return;
+		currentPage = 1;
+		applyFilter({ preservePage: true });
+	});
+
 	pagePrev?.addEventListener('click', () => {
 		if (currentPage <= 1) return;
 		currentPage -= 1;
@@ -211,7 +225,14 @@ if (!root) {
 	});
 
 	pageNext?.addEventListener('click', () => {
+		if (currentPage >= currentTotalPages) return;
 		currentPage += 1;
+		applyFilter({ preservePage: true });
+	});
+
+	pageLast?.addEventListener('click', () => {
+		if (currentPage >= currentTotalPages) return;
+		currentPage = currentTotalPages;
 		applyFilter({ preservePage: true });
 	});
 
