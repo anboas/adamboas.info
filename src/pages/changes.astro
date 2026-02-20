@@ -26,12 +26,32 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.30',
+		date: '2026-02-19',
+		title: 'Build-failure hotfix: paper-manifest integrity + linkcheck suppression',
+		summary: 'Restored generated paper HTML to match manifest hashes and moved a known legacy WEF citation URL out of blocking/warn checks.',
+		impact: 'CI paper verification is green again, and linkcheck avoids failing on a known unstable legacy citation while still surfacing actionable stale-link suggestions.',
+		current: true,
+		tags: ['ci', 'linkcheck', 'papers', 'build-fix'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Restored `agentic-force-creation` generated HTML/raw artifacts to match `manifest.sha256` expectations used by `lint:papers`.',
+					'Added targeted ignore rule for legacy WEF citation URL in linkcheck policy classification to prevent recurring noise during CI runs.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.29',
 		date: '2026-02-19',
 		title: 'Events list header responsiveness polish',
 		summary: 'Updated the events-list heading/sort control layout so “Upcoming Events” stays one line on larger viewports and stacks cleanly on smaller screens.',
 		impact: 'Desktop keeps a compact one-line title + sort control row, while mobile/small screens place the dropdown on the next line for cleaner readability.',
-		current: true,
 		tags: ['events', 'ux', 'responsive', 'layout'],
 		groups: [
 			{
