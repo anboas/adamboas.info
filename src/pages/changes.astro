@@ -26,12 +26,32 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.29',
+		date: '2026-02-19',
+		title: 'Events list header responsiveness polish',
+		summary: 'Updated the events-list heading/sort control layout so “Upcoming Events” stays one line on larger viewports and stacks cleanly on smaller screens.',
+		impact: 'Desktop keeps a compact one-line title + sort control row, while mobile/small screens place the dropdown on the next line for cleaner readability.',
+		current: true,
+		tags: ['events', 'ux', 'responsive', 'layout'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Renamed heading to “Upcoming Events” and applied nowrap behavior for larger viewports.',
+					'Adjusted list-header flex layout to stack on smaller screens and keep one-row alignment on larger screens.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.28',
 		date: '2026-02-19',
 		title: 'Pre-deploy quality gates + linkcheck reliability repair',
 		summary: 'Expanded CI/deploy quality gates with smoke/overflow/a11y regression coverage and tightened linkcheck signal quality.',
 		impact: 'Deployments are now blocked behind practical route-level and accessibility checks, while stale/noisy linkcheck findings are reduced and better surfaced as artifacts.',
-		current: true,
 		tags: ['ci', 'deploy', 'testing', 'linkcheck', 'changes', 'ux'],
 		groups: [
 			{

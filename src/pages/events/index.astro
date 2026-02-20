@@ -514,9 +514,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			</section>
 
 			<section id="radar-list-section" class="card p-5">
-				<div class="mb-3 flex items-center justify-between gap-2">
-					<h2 class="section-title">Upcoming events</h2>
-					<select id="radar-sort" class="radar-input radar-input-sort" aria-label="Sort events">
+				<div class="mb-3 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
+					<h2 class="section-title radar-list-title">Upcoming Events</h2>
+					<select id="radar-sort" class="radar-input radar-input-sort w-full sm:w-auto sm:min-w-[11.5rem]" aria-label="Sort events">
 						<option value="soonest">Soonest first</option>
 						<option value="latest">Latest first</option>
 						<option value="signal">Signal first</option>
@@ -1421,6 +1421,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	#radar-list-section .section-title,
 	.radar-summary-primary {
 		color: rgba(191, 219, 254, 0.96);
+	}
+	.radar-list-title {
+		white-space: nowrap;
 	}
 
 	.radar-stat {
