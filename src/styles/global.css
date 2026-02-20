@@ -565,7 +565,14 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
   }
 }
 
-/* obsolete writing-progress-chip block removed (styles now use shared button tokens inline) */
+.writing-mobile-progress {
+  position: sticky;
+  top: calc(2.55rem + env(safe-area-inset-top));
+  z-index: 24;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
 
 .writing-detail-shell {
   display: block;
