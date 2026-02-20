@@ -403,12 +403,19 @@ const writingUrl = absoluteUrl('/writing/');
 
 			const progressBar = document.querySelector('[data-writing-progress]');
 			if (progressBar) {
+				const getScrollTop = () => Math.max(
+					window.scrollY || 0,
+					document.documentElement?.scrollTop || 0,
+					document.body?.scrollTop || 0,
+				);
+
 				const updateReadingProgress = () => {
+					const scrollTop = getScrollTop();
 					const contentRect = content.getBoundingClientRect();
-					const contentTop = window.scrollY + contentRect.top;
+					const contentTop = scrollTop + contentRect.top;
 					const contentHeight = content.scrollHeight;
 					const viewportHeight = Math.max(1, window.innerHeight || 1);
-					const numerator = window.scrollY - contentTop + viewportHeight * 0.2;
+					const numerator = scrollTop - contentTop + viewportHeight * 0.2;
 					const denominator = Math.max(1, contentHeight - viewportHeight * 0.45);
 					const ratio = Math.max(0, Math.min(1, numerator / denominator));
 					progressBar.style.transform = `scaleX(${ratio})`;
@@ -426,6 +433,7 @@ const writingUrl = absoluteUrl('/writing/');
 
 				updateReadingProgress();
 				window.addEventListener('scroll', onProgressScroll, { passive: true });
+				document.addEventListener('scroll', onProgressScroll, { passive: true, capture: true });
 				window.addEventListener('resize', onProgressScroll, { passive: true });
 			}
 

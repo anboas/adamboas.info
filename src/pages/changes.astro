@@ -21,12 +21,31 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.16',
+		date: '2026-02-19',
+		title: 'Reading progress bar behavior fix',
+		summary: 'Fixed writing detail reading progress so it tracks correctly in the site’s body-scrolling layout instead of appearing static.',
+		impact: 'The top reading line now visibly advances as you scroll long writing pages and reaches full width near the end of the article.',
+		current: true,
+		tags: ['writing', 'ux', 'regression-fix'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Progress calculation now reads from whichever scroll container is active (`window`, `documentElement`, or `body`) and listens at document capture level for reliable updates.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.15',
 		date: '2026-02-19',
 		title: 'Linkcheck reliability lane + events intelligence CTA pass',
 		summary: 'Introduced tiered external link checking, added stale-link suggestion output, and expanded events quick actions with Calendar plus stronger confidence/acquisition context.',
 		impact: 'CI linkcheck now fails less on known unstable domains while still enforcing strict-quality links, and event cards/map/details provide faster actionability and evidence context.',
-		current: true,
 		tags: ['ci', 'linkcheck', 'events', 'calendar', 'reliability'],
 		groups: [
 			{
