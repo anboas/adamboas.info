@@ -534,6 +534,8 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 .paper-content a {
   @apply underline decoration-slate-600 underline-offset-4;
   color: rgba(226, 232, 240, 0.92);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .paper-content a {
   transition: color 140ms ease, text-decoration-color 140ms ease;
