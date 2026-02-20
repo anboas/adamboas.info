@@ -21,12 +21,36 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.21',
+		date: '2026-02-19',
+		title: 'Footer release/version metadata',
+		summary: 'Added persistent site version and precise last-updated timestamp to the global footer.',
+		impact: 'Every page now shows a visible release version plus an Eastern-time timestamp including weekday, hour, and minute.',
+		current: true,
+		tags: ['footer', 'metadata', 'release', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Footer now displays `Version vX.Y.Z` and `Last updated` with weekday + date + hour:minute (ET).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Introduced shared `SITE_RELEASE_VERSION` constant for consistent version rendering across site UI and release notes.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.20',
 		date: '2026-02-19',
 		title: 'Site-wide spacing and alignment cohesion pass',
 		summary: 'Ran a full-site spacing and centering pass across shared navigation chrome and primary list pages to tighten rhythm and normalize control alignment.',
 		impact: 'Navigation tabs/links and page-level control stacks now align more consistently with reduced dead space between major sections.',
-		current: true,
 		tags: ['ux', 'spacing', 'visual-cohesion', 'site-wide'],
 		groups: [
 			{
