@@ -14,8 +14,8 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 	class:list={[
 		className,
 		isActive
-			? 'rounded-none border border-slate-700 bg-slate-900/90 px-2.5 py-1.5 text-sm font-medium text-slate-50'
-			: 'rounded-none border border-transparent px-2.5 py-1.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50',
+			? 'inline-flex h-8 items-center rounded-none border border-slate-700 bg-slate-900/90 px-2.5 text-sm font-medium text-slate-50'
+			: 'inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50',
 	]}
 	{...props}
 >

@@ -3,16 +3,16 @@ const today = new Date();
 ---
 
 <footer class="site-footer border-t border-slate-800 bg-slate-950">
-	<div class="container py-8 text-sm text-slate-400">
+	<div class="container py-7 text-sm text-slate-400 md:py-8">
 		<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
 			<p>© {today.getFullYear()} Adam Boas</p>
-			<ul class="flex flex-wrap gap-x-2 gap-y-2">
-				<li><a class="footer-link inline-block px-2 py-1" href={`${import.meta.env.BASE_URL}rss.xml`}>RSS</a></li>
-				<li><a class="footer-link inline-block px-2 py-1" href={`${import.meta.env.BASE_URL}changes/`}>Changes</a></li>
-				<li><a class="footer-link inline-block px-2 py-1" href={`${import.meta.env.BASE_URL}license/`}>License</a></li>
-				<li><a class="footer-link inline-block px-2 py-1" href="https://github.com/anboas" target="_blank" rel="noreferrer">GitHub</a></li>
-				<li><a class="footer-link inline-block px-2 py-1" href="https://www.linkedin.com/in/adamnboas/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-				<li><a class="footer-link inline-block px-2 py-1" href="mailto:anboas@gmail.com">Email</a></li>
+			<ul class="flex flex-wrap items-center gap-x-2 gap-y-2">
+				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}rss.xml`}>RSS</a></li>
+				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}changes/`}>Changes</a></li>
+				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}license/`}>License</a></li>
+				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href="https://github.com/anboas" target="_blank" rel="noreferrer">GitHub</a></li>
+				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href="https://www.linkedin.com/in/adamnboas/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href="mailto:anboas@gmail.com">Email</a></li>
 			</ul>
 		</div>
 	</div>
