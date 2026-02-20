@@ -13,6 +13,7 @@ const POLICY = {
     'same.org',
     'weforum.org',
     'usace.army.mil',
+    'calendar.google.com',
   ],
   ignoreDomains: [
     'adamboas.info',
