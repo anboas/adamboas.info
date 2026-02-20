@@ -568,12 +568,18 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
 }
 
 .writing-mobile-progress {
-  position: sticky;
-  top: calc(2.55rem + env(safe-area-inset-top));
-  z-index: 24;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0.5rem;
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .writing-mobile-progress {
+    position: sticky;
+    top: calc(2.55rem + env(safe-area-inset-top));
+    z-index: 24;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .writing-detail-shell {

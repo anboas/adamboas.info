@@ -21,12 +21,36 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.26',
+		date: '2026-02-19',
+		title: 'Read-progress split restored by viewport',
+		summary: 'Restored original desktop in-bar read-progress behavior while keeping the sticky mobile progress row.',
+		impact: 'Desktop now shows only the action-row read chip (no right-rail duplicate), while mobile keeps the persistent sticky read indicator.',
+		current: true,
+		tags: ['writing', 'mobile', 'desktop', 'ux'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Constrained `.writing-mobile-progress` to mobile breakpoints only so it no longer appears on desktop layouts.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Preserved desktop read progress as the original action-bar button-style chip, with sticky mobile row reserved for small screens.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.25',
 		date: '2026-02-19',
 		title: 'URL overflow hardening on writing detail pages',
 		summary: 'Hardened writing content link wrapping so long URLs no longer force horizontal overflow on mobile.',
 		impact: 'Long source URLs now wrap safely within the content column, preserving clean mobile reading width on pages like ACP-RA.',
-		current: true,
 		tags: ['writing', 'mobile', 'ux', 'overflow'],
 		groups: [
 			{
