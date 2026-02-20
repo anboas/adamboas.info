@@ -711,6 +711,14 @@ function acquisitionReferences(event: (typeof events)[number]) {
 						</article>
 					))}
 				</div>
+				<div id="radar-pagination" class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap">
+					<p id="radar-pagination-status" class="text-xs text-slate-400"></p>
+					<div class="flex items-center gap-2">
+						<button id="radar-page-prev" class="radar-btn radar-btn-tight" type="button">Prev</button>
+						<span id="radar-page-label" class="text-xs text-slate-300">Page 1 of 1</span>
+						<button id="radar-page-next" class="radar-btn radar-btn-tight" type="button">Next</button>
+					</div>
+				</div>
 
 			</section>
 		</div>
@@ -754,12 +762,19 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
+	const pagination = document.getElementById('radar-pagination');
+	const pagePrev = document.getElementById('radar-page-prev');
+	const pageNext = document.getElementById('radar-page-next');
+	const pageLabel = document.getElementById('radar-page-label');
+	const pageStatus = document.getElementById('radar-pagination-status');
 	const seenEventsStorageKey = 'adamboas.events.seen.v1';
+	const PAGE_SIZE = 10;
 	let seenEventIds = new Set();
 	let hasSeenBaseline = false;
 
 	let compactMode = true;
 	let mapVisible = true;
+	let currentPage = 1;
 
 
 	function parseDate(value) {
@@ -1100,6 +1115,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (state.verified) params.set('verified', '1');
 		if (state.showPast) params.set('past', '1');
 		if (state.topics?.size) params.set('topics', topicStateToValue(state.topics));
+		if (currentPage > 1) params.set('page', String(currentPage));
 		return params.toString();
 	}
 
@@ -1130,6 +1146,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			showPast: params.get('past') === '1',
 			topics: new Set(parseTopics(params.get('topics') || '')),
 		};
+		const page = Number(params.get('page') || '1');
+		currentPage = Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
 		applyState(state);
 		if (controls.filterPanel) controls.filterPanel.open = hasActiveFilters(state);
 	}
@@ -1255,10 +1273,28 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		persistSeenEventIds(seenEventIds);
 	}
 
+	function renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages) {
+		if (!pagination || !pagePrev || !pageNext || !pageLabel || !pageStatus) return;
+		const show = totalMatches > PAGE_SIZE;
+		pagination.classList.toggle('hidden', !show);
+		if (!show) return;
+		pagePrev.disabled = currentPage <= 1;
+		pageNext.disabled = currentPage >= totalPages;
+		pageLabel.textContent = `Page ${currentPage} of ${totalPages}`;
+		pageStatus.textContent = `${pageStartIdx + 1}-${pageEndIdx} of ${totalMatches}`;
+	}
+
 	function render() {
 		const { visible, state } = getVisibleCards();
+		const totalMatches = visible.length;
+		const totalPages = Math.max(1, Math.ceil(totalMatches / PAGE_SIZE));
+		if (currentPage > totalPages) currentPage = totalPages;
+		const pageStartIdx = (currentPage - 1) * PAGE_SIZE;
+		const pageCards = visible.slice(pageStartIdx, pageStartIdx + PAGE_SIZE);
+		const pageEndIdx = pageStartIdx + pageCards.length;
+
 		for (const card of cards) card.classList.add('hidden');
-		for (const card of visible) {
+		for (const card of pageCards) {
 			card.classList.remove('hidden');
 			list.appendChild(card);
 		}
@@ -1268,10 +1304,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		controls.toggleMap.textContent = mapVisible ? 'Hide map' : 'Show map';
 		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
 
-		empty.classList.toggle('hidden', visible.length > 0);
-		count.textContent = `${visible.length} of ${cards.length} events shown`;
+		empty.classList.toggle('hidden', totalMatches > 0);
+		count.textContent = `${totalMatches} of ${cards.length} events shown`;
 		renderFilterChips(state);
-		renderNewBadges(visible);
+		renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages);
+		renderNewBadges(pageCards);
 		renderMap(visible);
 
 		const query = toQuery(state);
@@ -1282,21 +1319,27 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 
 
+	const renderFromFilterChange = () => {
+		currentPage = 1;
+		render();
+	};
+
 	[controls.q, controls.branch, controls.type, controls.status, controls.sort]
 		.filter(Boolean)
-		.forEach((node) => node.addEventListener('input', render));
+		.forEach((node) => node.addEventListener('input', renderFromFilterChange));
 	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast]
 		.filter(Boolean)
-		.forEach((node) => node.addEventListener('change', render));
+		.forEach((node) => node.addEventListener('change', renderFromFilterChange));
 	for (const button of controls.topicButtons) {
 		button.addEventListener('click', () => {
 			const nowPressed = button.getAttribute('aria-pressed') === 'true';
 			button.setAttribute('aria-pressed', nowPressed ? 'false' : 'true');
-			render();
+			renderFromFilterChange();
 		});
 	}
 	controls.reset.addEventListener('click', () => {
 		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false, topics: new Set() });
+		currentPage = 1;
 		render();
 	});
 	controls.toggleMap.addEventListener('click', () => {
@@ -1307,7 +1350,15 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		compactMode = !compactMode;
 		render();
 	});
-
+	pagePrev?.addEventListener('click', () => {
+		if (currentPage <= 1) return;
+		currentPage -= 1;
+		render();
+	});
+	pageNext?.addEventListener('click', () => {
+		currentPage += 1;
+		render();
+	});
 
 	for (const btn of mapFocusButtons) {
 		btn.addEventListener('click', () => focusMapEvent(btn.dataset.id, { openPopup: true }));
@@ -1441,6 +1492,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 	.radar-btn:hover {
 		background: rgba(15, 23, 42, 0.95);
+	}
+	.radar-btn:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
 	}
 
 	.radar-summary {

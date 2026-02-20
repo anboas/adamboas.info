@@ -62,7 +62,7 @@ const items = [
 		</div>
 		<script type="module" set:html={writingIndexJs}></script>
 
-		<div class="mt-6 grid gap-4 md:mt-7">
+		<div class="mt-6 grid gap-4 md:mt-7" data-writing-list>
 			{items.map((w) => (
 				<a
 					data-writing-card
@@ -85,14 +85,14 @@ const items = [
 								<ul class="mt-3 flex flex-wrap gap-2">
 									{w.tags.map((t) => (
 										<li>
-															<button
-																type="button"
-																data-writing-tag={t}
-																class="rounded-full border border-slate-800 px-3 py-1 text-xs text-slate-300 hover:bg-slate-900"
-															>
-																{t}
-															</button>
-														</li>
+											<button
+												type="button"
+												data-writing-tag={t}
+												class="rounded-full border border-slate-800 px-3 py-1 text-xs text-slate-300 hover:bg-slate-900"
+											>
+												{t}
+											</button>
+										</li>
 									))}
 								</ul>
 							) : null}
@@ -101,6 +101,15 @@ const items = [
 					</div>
 				</a>
 			))}
+		</div>
+
+		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-writing-pagination>
+			<p class="text-xs text-slate-400" data-writing-pagination-status></p>
+			<div class="flex items-center gap-2">
+				<button type="button" data-writing-page-prev class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Prev</button>
+				<span class="text-xs text-slate-300" data-writing-page-label>Page 1 of 1</span>
+				<button type="button" data-writing-page-next class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Next</button>
+			</div>
 		</div>
 
 		<p class="mt-6 hidden text-sm text-slate-400" data-writing-empty>

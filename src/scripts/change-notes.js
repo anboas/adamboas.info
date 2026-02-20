@@ -1,9 +1,12 @@
+const PAGE_SIZE = 10;
+
 function norm(value) {
 	return (value ?? '').toString().trim().toLowerCase();
 }
 
 const root = document.querySelector('[data-change-notes]');
 if (root) {
+	const list = root.querySelector('[data-change-list]');
 	const cards = [...root.querySelectorAll('[data-release-card]')];
 	const tagButtons = [...root.querySelectorAll('[data-change-tag]')];
 	const searchInput = root.querySelector('[data-change-search]');
@@ -11,11 +14,17 @@ if (root) {
 	const empty = root.querySelector('[data-change-empty]');
 	const active = root.querySelector('[data-change-active]');
 	const count = root.querySelector('[data-change-count]');
+	const pagination = root.querySelector('[data-change-pagination]');
+	const pagePrev = root.querySelector('[data-change-page-prev]');
+	const pageNext = root.querySelector('[data-change-page-next]');
+	const pageLabel = root.querySelector('[data-change-page-label]');
+	const pageStatus = root.querySelector('[data-change-pagination-status]');
 
 	const availableTags = new Set(tagButtons.map((b) => norm(b.getAttribute('data-change-tag'))));
 	const state = {
 		tags: new Set(),
 		q: '',
+		page: 1,
 	};
 
 	const seenReleaseKey = 'adamboas.changes.lastSeenVersion.v1';
@@ -70,9 +79,11 @@ if (root) {
 			.split(',')
 			.map((tag) => norm(tag))
 			.filter((tag) => availableTags.has(tag));
+		const page = Number(url.searchParams.get('page') || '1');
 
 		state.q = q;
 		state.tags = new Set(tags);
+		state.page = Number.isFinite(page) && page > 0 ? Math.floor(page) : 1;
 		if (searchInput) searchInput.value = q;
 	}
 
@@ -86,6 +97,10 @@ if (root) {
 		} else {
 			url.searchParams.delete('tags');
 		}
+
+		if (state.page > 1) url.searchParams.set('page', String(state.page));
+		else url.searchParams.delete('page');
+
 		window.history.replaceState({}, '', url);
 	}
 
@@ -105,8 +120,8 @@ if (root) {
 		if (state.q) {
 			addChip(`query:${state.q}`, () => {
 				state.q = '';
+				state.page = 1;
 				if (searchInput) searchInput.value = '';
-				writeStateToUrl();
 				render();
 			});
 		}
@@ -114,33 +129,59 @@ if (root) {
 		for (const tag of state.tags) {
 			addChip(tag, () => {
 				state.tags.delete(tag);
-				writeStateToUrl();
+				state.page = 1;
 				render();
 			});
 		}
 	}
 
-	function render() {
+	function renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages) {
+		if (!pagination || !pagePrev || !pageNext || !pageLabel || !pageStatus) return;
+		const show = totalMatches > PAGE_SIZE;
+		pagination.classList.toggle('hidden', !show);
+		if (!show) return;
+
+		pagePrev.disabled = state.page <= 1;
+		pageNext.disabled = state.page >= totalPages;
+		pageLabel.textContent = `Page ${state.page} of ${totalPages}`;
+		pageStatus.textContent = `${pageStartIdx + 1}-${pageEndIdx} of ${totalMatches}`;
+	}
+
+	function render({ preservePage = true } = {}) {
 		renderNewReleaseBadges();
 		for (const button of tagButtons) {
 			const tag = norm(button.getAttribute('data-change-tag'));
 			button.setAttribute('aria-pressed', state.tags.has(tag) ? 'true' : 'false');
 		}
 
-		let shown = 0;
-		for (const card of cards) {
+		const matches = cards.filter((card) => {
 			const cardTags = norm(card.getAttribute('data-tags')).split(',').filter(Boolean);
 			const cardSearch = norm(card.getAttribute('data-search'));
 			const tagMatch = state.tags.size === 0 || cardTags.some((tag) => state.tags.has(tag));
 			const searchMatch = !state.q || cardSearch.includes(state.q);
-			const visible = tagMatch && searchMatch;
-			card.classList.toggle('hidden', !visible);
-			if (visible) shown += 1;
+			return tagMatch && searchMatch;
+		});
+
+		if (!preservePage) state.page = 1;
+		const totalPages = Math.max(1, Math.ceil(matches.length / PAGE_SIZE));
+		if (state.page > totalPages) state.page = totalPages;
+		const pageStartIdx = (state.page - 1) * PAGE_SIZE;
+		const pageCards = matches.slice(pageStartIdx, pageStartIdx + PAGE_SIZE);
+		const pageEndIdx = pageStartIdx + pageCards.length;
+
+		for (const card of cards) card.classList.add('hidden');
+		for (const card of pageCards) {
+			card.classList.remove('hidden');
+			if (list) list.appendChild(card);
 		}
 
-		if (count) count.textContent = `${shown} of ${cards.length} releases shown`;
-		if (empty) empty.classList.toggle('hidden', shown !== 0);
+		if (count) {
+			count.textContent = `${matches.length} of ${cards.length} releases shown`;
+		}
+		if (empty) empty.classList.toggle('hidden', matches.length !== 0);
+		renderPagination(matches.length, pageStartIdx, pageEndIdx, totalPages);
 		renderActiveFilters();
+		writeStateToUrl();
 	}
 
 	for (const button of tagButtons) {
@@ -149,27 +190,38 @@ if (root) {
 			if (!tag) return;
 			if (state.tags.has(tag)) state.tags.delete(tag);
 			else state.tags.add(tag);
-			writeStateToUrl();
-			render();
+			state.page = 1;
+			render({ preservePage: true });
 		});
 	}
 
 	searchInput?.addEventListener('input', () => {
 		state.q = norm(searchInput.value);
-		writeStateToUrl();
-		render();
+		state.page = 1;
+		render({ preservePage: true });
 	});
 
 	clearBtn?.addEventListener('click', () => {
 		state.q = '';
 		state.tags = new Set();
+		state.page = 1;
 		if (searchInput) searchInput.value = '';
-		writeStateToUrl();
-		render();
+		render({ preservePage: true });
+	});
+
+	pagePrev?.addEventListener('click', () => {
+		if (state.page <= 1) return;
+		state.page -= 1;
+		render({ preservePage: true });
+	});
+
+	pageNext?.addEventListener('click', () => {
+		state.page += 1;
+		render({ preservePage: true });
 	});
 
 	readSeenRelease();
 	readStateFromUrl();
-	render();
+	render({ preservePage: true });
 	persistSeenRelease();
 }

@@ -21,12 +21,37 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.22',
+		date: '2026-02-19',
+		title: 'List pagination across writing, changes, and events',
+		summary: 'Added clean paginated list controls (10 items per page) with filter-aware behavior and automatic control hiding when pagination is unnecessary.',
+		impact: 'Long lists are now easier to scan, while pages with 10 or fewer results stay visually clean with no extra controls.',
+		current: true,
+		tags: ['pagination', 'writing', 'changes', 'events', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added styled Prev/Next pagination controls and page status indicators on Writing index, Change Notes, and Events list views.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Pagination is filter-aware and defaults to 10 items per page; controls are hidden automatically when results are 10 or fewer.',
+					'Pagination state now persists in query params (`?page=`) for direct links and back/forward navigation consistency.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.21',
 		date: '2026-02-19',
 		title: 'Footer release/version metadata',
 		summary: 'Added persistent site version and precise last-updated timestamp to the global footer.',
 		impact: 'Every page now shows a visible release version plus an Eastern-time timestamp including weekday, hour, and minute.',
-		current: true,
 		tags: ['footer', 'metadata', 'release', 'ux'],
 		groups: [
 			{
@@ -1411,7 +1436,7 @@ function releaseSearchText(release: Release) {
 			</div>
 		</section>
 
-		<div class="space-y-4">
+		<div class="space-y-4" data-change-list>
 			{releases.map((release) => (
 				<article
 					class="card p-5"
@@ -1447,6 +1472,15 @@ function releaseSearchText(release: Release) {
 					</div>
 				</article>
 			))}
+		</div>
+
+		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-change-pagination>
+			<p class="text-xs text-slate-400" data-change-pagination-status></p>
+			<div class="flex items-center gap-2">
+				<button type="button" data-change-page-prev class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Prev</button>
+				<span class="text-xs text-slate-300" data-change-page-label>Page 1 of 1</span>
+				<button type="button" data-change-page-next class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Next</button>
+			</div>
 		</div>
 
 		<p class="card hidden p-4 text-sm text-slate-300" data-change-empty>
