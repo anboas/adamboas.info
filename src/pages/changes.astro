@@ -21,12 +21,32 @@ type Release = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.24',
+		date: '2026-02-19',
+		title: 'Mobile-visible read progress chip',
+		summary: 'Adjusted writing detail progress display so read percentage remains visible on mobile without horizontal scrolling.',
+		impact: 'On phones, a dedicated read-progress chip now appears beside the back link while desktop keeps the inline action-row version.',
+		current: true,
+		tags: ['writing', 'mobile', 'ux', 'readability'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Added a mobile-only progress chip in the writing action bar and kept desktop progress chip in the action controls group.',
+					'Updated progress updater to sync all progress-label instances on the page.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.23',
 		date: '2026-02-19',
 		title: 'Pagination controls expanded with First/Last',
 		summary: 'Extended paginated list controls to include First and Last actions across Writing, Change Notes, and Events.',
 		impact: 'Navigation across long result sets is now faster with one-click jumps to beginning/end while preserving existing clean control styling.',
-		current: true,
 		tags: ['pagination', 'writing', 'changes', 'events', 'ux'],
 		groups: [
 			{
