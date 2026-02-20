@@ -45,7 +45,7 @@ const generatedAt = crawlReport.generatedAt ?? null;
 		</div>
 
 		<div class="card p-5 text-sm text-slate-300">
-			<h2 class="section-title">Official feeds</h2>
+			<h2 class="section-title">Official Feeds</h2>
 			<ul class="mt-3 space-y-2">
 				{officialFeeds.map((f) => {
 					const href = f.displayUrl ?? f.url;
@@ -60,7 +60,7 @@ const generatedAt = crawlReport.generatedAt ?? null;
 		</div>
 
 		<div class="card p-5 text-sm text-slate-300">
-			<h2 class="section-title">Aggregator feeds</h2>
+			<h2 class="section-title">Aggregator Feeds</h2>
 			<ul class="mt-3 space-y-2">
 				{aggregators.map((f) => {
 					const href = f.displayUrl ?? f.url;
@@ -75,7 +75,7 @@ const generatedAt = crawlReport.generatedAt ?? null;
 		</div>
 
 		<div class="card p-5 text-sm text-slate-300">
-			<h2 class="section-title">One-off event URLs (PR-target list)</h2>
+			<h2 class="section-title">One-Off Event URLs (PR-Target List)</h2>
 			<p class="mt-2 text-slate-400">These are specific event URLs we track directly and can expand via pull requests.</p>
 			<ul class="mt-3 space-y-2">
 				{oneOff.map((f) => {

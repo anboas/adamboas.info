@@ -26,12 +26,32 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.31',
+		date: '2026-02-19',
+		title: 'Header title-case consistency pass',
+		summary: 'Standardized key UI section headers to Title Case across Events and supporting pages.',
+		impact: 'Interface labels read cleaner and more consistent, including “Geographic View” and related section titles.',
+		current: true,
+		tags: ['ux', 'events', 'copy', 'consistency'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Updated “Geographic view” to “Geographic View” on `/events/`.',
+					'Applied Title Case to related section headings on `/events/sources/` and `/404/` for consistency.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.30',
 		date: '2026-02-19',
 		title: 'Build-failure hotfix: paper-manifest integrity + linkcheck suppression',
 		summary: 'Restored generated paper HTML to match manifest hashes and moved a known legacy WEF citation URL out of blocking/warn checks.',
 		impact: 'CI paper verification is green again, and linkcheck avoids failing on a known unstable legacy citation while still surfacing actionable stale-link suggestions.',
-		current: true,
 		tags: ['ci', 'linkcheck', 'papers', 'build-fix'],
 		groups: [
 			{
