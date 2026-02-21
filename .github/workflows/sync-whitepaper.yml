@@ -245,7 +245,7 @@ jobs:
             local file="$1"
             local key="$2"
             awk 'BEGIN{s=0} /^---[[:space:]]*$/{s++; next} s==1{print} s>1{exit}' "$file" \
-              | awk -F: -v k="$key" '$1 ~ ("^"k"[[:space:]]*$") {sub(/^[^:]*:[[:space:]]*/, "", $0); gsub(/^[ \t]+|[ \t]+$/, "", $0); print $0; exit}'
+              | awk -F: -v k="$key" '$1 ~ ("^"k"[[:space:]]*$") {sub(/^[^:]*:[[:space:]]*/, "", $0); gsub(/^[ \t]+|[ \t]+$/, "", $0); gsub(/^"|"$/, "", $0); gsub(/^\047|\047$/, "", $0); print $0; exit}'
           }
 
           frontmatter_status() {
