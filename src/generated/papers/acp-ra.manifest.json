@@ -6,12 +6,13 @@
     },
     "pdf": {
       "path": "build/acp-ra/paper.pdf",
-      "sha256": "2d8c35d0fe4d85be7e1f0eb3f741e481acb88da0df83d718b626b5b62a20b9d8"
+      "sha256": "ca51b634368e7de3ea9786ae6492ea4861bfdb9ec28fa5cb8a5743f07a507e52"
     }
   },
-  "paper": "acp-ra",
+  "kind": "paper",
+  "slug": "acp-ra",
   "source": {
     "repo": "anboas/Whitepaper",
-    "sha": "e50b2bfea9b6fd71d983be455a321aaa309d22e7"
+    "sha": "0c2c6f914091edb659bc4cc302d67ee3c7c66ec4"
   }
 }
