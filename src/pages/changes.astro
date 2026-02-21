@@ -26,12 +26,44 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.3.36',
+		date: '2026-02-21',
+		title: 'Memo pipeline upgraded to LaTeX-first artifact workflow',
+		summary: 'Moved memos to a deterministic LaTeX source pipeline with CI-built PDF/HTML/manifest artifacts and site-side verification gates, aligned with paper pipeline quality controls.',
+		impact: 'Memo rendering now follows the same reproducible build discipline as papers, reducing format drift and making sync validation deterministic across Whitepaper and site repos.',
+		current: true,
+		tags: ['writing', 'memos', 'pipeline', 'ci', 'reliability', 'platform'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added Whitepaper memo artifact pipeline (`build-memos.yml`) with PDF/HTML/manifest outputs and metadata validation from `MEMO.yml`.',
+					'Added shared memo LaTeX preamble (`tex/memo_preamble.tex`) and memo source directories under `memos/<slug>/tex/memo.tex`.',
+					'Added site-side memo artifact verification (`scripts/verify-memos.mjs`) and CI gates (`npm run lint:memos`) in build/deploy workflows.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `sync-whitepaper` workflow to ingest memo artifacts from Whitepaper `build-memos` runs instead of relying on ad-hoc local PDF generation.',
+					'Updated writing detail rendering to prefer generated memo HTML fragments (`src/generated/memos/*`) for published memos.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Introduced memo metadata mirror sync checks so `writing/memos/*.md` frontmatter stays aligned with `memos/*/MEMO.yml`.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+	{
 		version: 'v2.3.35',
 		date: '2026-02-20',
 		title: 'CI reliability: move unstable AUSA links to warn-tier checks',
 		summary: 'Updated linkcheck policy classification so `ausa.org` links are checked in warn-tier mode instead of strict blocking mode.',
 		impact: 'Intermittent upstream AUSA connection resets no longer break blocking CI gates, while warn artifacts still retain visibility for remediation and verification.',
-		current: true,
 		tags: ['ci', 'linkcheck', 'events', 'reliability'],
 		groups: [
 			{

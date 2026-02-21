@@ -14,9 +14,9 @@ import { withBase } from '../../utils/withBase';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-async function tryReadGeneratedHtml(slug: string) {
+async function tryReadGeneratedHtml(kind: 'papers' | 'memos', slug: string) {
 	try {
-		const p = path.join(process.cwd(), 'src', 'generated', 'papers', `${slug}.html`);
+		const p = path.join(process.cwd(), 'src', 'generated', kind, `${slug}.html`);
 		return await fs.readFile(p, 'utf-8');
 	} catch {
 		return null;
@@ -44,6 +44,16 @@ function applyBaseToGeneratedPaperHtml(html: string) {
 		);
 	}
 
+	return normalized;
+}
+
+function applyBaseToGeneratedMemoHtml(html: string) {
+	const memosBase = withBase('/memos/');
+	let normalized = html
+		.replaceAll('href="/memos/', `href="${memosBase}`)
+		.replaceAll('src="/memos/', `src="${memosBase}`)
+		// Defensive cleanup for standalone-pandoc leftovers in legacy artifacts.
+		.replace(/^\s*<h1[^>]*class="title"[^>]*>[\s\S]*?<\/h1>\s*<\/header>\s*/i, '');
 	return normalized;
 }
 
@@ -98,6 +108,7 @@ let PaperContent: any = null;
 let writingPdfInfo: { size: string | null; pages: number | null } | null = null;
 let writingItem: any = null;
 let WritingContent: any = null;
+let memoGeneratedHtml: string | null = null;
 
 const publishedWriting = (await getCollection('writing'))
 	.filter((w) => w.data.status === 'published')
@@ -137,7 +148,7 @@ if (kind === 'paper') {
 	const papers = await getCollection('papers');
 	paper = papers.find((p) => p.id === id);
 	if (!paper) throw new Error(`Paper not found: ${id}`);
-	paperGeneratedHtml = await tryReadGeneratedHtml(paper.id);
+	paperGeneratedHtml = await tryReadGeneratedHtml('papers', paper.id);
 	if (paperGeneratedHtml) paperGeneratedHtml = applyBaseToGeneratedPaperHtml(paperGeneratedHtml);
 	({ Content: PaperContent } = await render(paper));
 	title = `${paper.data.title} | Adam Boas`;
@@ -158,6 +169,10 @@ if (kind === 'paper') {
 	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`${writingItem.data.type.toUpperCase()} discussion: ${writingItem.data.title}`)}`;
 	currentSlugForSchema = writingItem.id.split('/').pop() ?? '';
 	currentTitleForSchema = writingItem.data.title;
+	if (writingItem.data.type === 'memo') {
+		memoGeneratedHtml = await tryReadGeneratedHtml('memos', currentSlugForSchema);
+		if (memoGeneratedHtml) memoGeneratedHtml = applyBaseToGeneratedMemoHtml(memoGeneratedHtml);
+	}
 	if (writingItem.data.pdfPath) writingPdfInfo = await pdfMeta(writingItem.data.pdfPath);
 }
 
@@ -360,7 +375,7 @@ const writingUrl = absoluteUrl('/writing/');
 			</header>
 
 			<div class="paper-content prose prose-invert mt-8 max-w-none">
-				<WritingContent />
+				{memoGeneratedHtml ? <div set:html={memoGeneratedHtml} /> : <WritingContent />}
 			</div>
 
 			{(() => {

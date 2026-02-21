@@ -45,6 +45,9 @@ jobs:
       - name: Verify paper artifacts (PDF + generated HTML)
         run: npm run lint:papers
 
+      - name: Verify memo artifacts (PDF + generated HTML)
+        run: npm run lint:memos
+
       - name: Build (custom domain root)
         env:
           ASTRO_BASE: /

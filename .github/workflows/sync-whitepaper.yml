@@ -58,7 +58,26 @@ jobs:
           echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
           echo "Using Whitepaper run $RUN_ID"
 
-      - name: Download Whitepaper artifacts
+      - name: Fetch latest successful Whitepaper memo run id
+        env:
+          GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          MEMO_RUN_ID=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/anboas/Whitepaper/actions/workflows/build-memos.yml/runs?branch=main&status=success&per_page=1" \
+            --jq '.workflow_runs[0].id')
+
+          if [ -z "$MEMO_RUN_ID" ] || [ "$MEMO_RUN_ID" = "null" ]; then
+            echo "No successful memo runs found" >&2
+            exit 1
+          fi
+
+          echo "MEMO_RUN_ID=$MEMO_RUN_ID" >> $GITHUB_ENV
+          echo "Using Whitepaper memo run $MEMO_RUN_ID"
+
+      - name: Download Whitepaper paper artifacts
         env:
           GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
         run: |
@@ -66,6 +85,16 @@ jobs:
           mkdir -p /tmp/wp
           cd /tmp/wp
           gh run download "$RUN_ID" -R anboas/Whitepaper
+          ls -la
+
+      - name: Download Whitepaper memo artifacts
+        env:
+          GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/wm
+          cd /tmp/wm
+          gh run download "$MEMO_RUN_ID" -R anboas/Whitepaper
           ls -la
 
       - name: Sync PDFs + HTML into this repo
@@ -204,9 +233,9 @@ jobs:
           rm -rf src/content/writing
           mkdir -p src/content/writing/notes src/content/writing/memos
 
-          # Memo PDFs are published under /memos/*.pdf and referenced by writing frontmatter pdfPath.
-          rm -rf public/memos
-          mkdir -p public/memos
+          # Memo artifacts are synced from Whitepaper build-memos outputs.
+          rm -rf public/memos src/generated/memos
+          mkdir -p public/memos src/generated/memos
 
           # Copy published notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
           # status frontmatter defaults to published when omitted.
@@ -241,7 +270,6 @@ jobs:
             return 1
           }
 
-          published_memo_pdf_basenames=()
           published_memo_stems=()
 
           for f in /tmp/wp-repo/writing/notes/**/*.md; do
@@ -268,26 +296,49 @@ jobs:
               continue
             fi
             cp "$f" "src/content/writing/memos/${base}"
+            published_memo_stems+=("${base%.md}")
+          done
 
-            stem="${base%.md}"
-            published_memo_stems+=("$stem")
+          missing_memo_artifacts=0
 
-            pdf_path=$(frontmatter_value "$f" pdfPath || true)
-            if [ -n "$pdf_path" ]; then
-              published_memo_pdf_basenames+=("$(basename "$pdf_path")")
+          # Copy generated memo artifacts (PDF + HTML + manifest) for published memos only.
+          for d in /tmp/wm/memo-*; do
+            [ -d "$d" ] || continue
+            slug=${d##*/memo-}
+
+            if ! in_list "$slug" "${published_memo_stems[@]}"; then
+              echo "Skipping memo artifacts (not published): $slug"
+              continue
+            fi
+
+            pdf="$d/memo.pdf"
+            html="$d/memo.html"
+            manifest="$d/manifest.json"
+
+            if [ ! -f "$pdf" ] || [ ! -f "$html" ] || [ ! -f "$manifest" ]; then
+              echo "ERROR: missing memo artifacts for published memo: $slug" >&2
+              missing_memo_artifacts=1
+              continue
+            fi
+
+            cp "$pdf" "public/memos/${slug}.pdf"
+            cp "$html" "src/generated/memos/${slug}.raw.html"
+            cp "$html" "src/generated/memos/${slug}.html"
+            cp "$manifest" "src/generated/memos/${slug}.manifest.json"
+          done
+
+          # Ensure every published memo has artifact outputs.
+          for slug in "${published_memo_stems[@]}"; do
+            if [ ! -f "public/memos/${slug}.pdf" ] || [ ! -f "src/generated/memos/${slug}.html" ] || [ ! -f "src/generated/memos/${slug}.manifest.json" ]; then
+              echo "ERROR: published memo missing synced artifacts: $slug" >&2
+              missing_memo_artifacts=1
             fi
           done
 
-          # Copy memo PDFs only for published memos.
-          for f in /tmp/wp-repo/writing/memos/**/*.pdf; do
-            base=$(basename "$f")
-            stem="${base%.pdf}"
-            if in_list "$base" "${published_memo_pdf_basenames[@]}" || in_list "$stem" "${published_memo_stems[@]}"; then
-              cp "$f" "public/memos/${base}"
-            else
-              echo "Skipping memo PDF (not published): $base"
-            fi
-          done
+          if [ "$missing_memo_artifacts" -ne 0 ]; then
+            echo "Memo artifact sync failed" >&2
+            exit 1
+          fi
 
       - name: Commit changes
         id: commit
@@ -298,7 +349,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Include new (untracked) files too.
-          git add -A public/papers public/memos src/generated/papers src/content/writing src/generated/plausible-pageviews.json
+          git add -A public/papers public/memos src/generated/papers src/generated/memos src/content/writing src/generated/plausible-pageviews.json
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit."

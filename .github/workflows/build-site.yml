@@ -30,6 +30,9 @@ jobs:
       - name: Verify paper artifacts (PDF + generated HTML)
         run: npm run lint:papers
 
+      - name: Verify memo artifacts (PDF + generated HTML)
+        run: npm run lint:memos
+
       - name: Build
         run: npm run build
 
