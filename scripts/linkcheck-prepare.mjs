@@ -34,6 +34,7 @@ const POLICY = {
     /^https:\/\/www\.linkedin\.com\/posts\//i,
     /^https:\/\/(www\.)?newyorker\.com\/tech\/annals-of-technology\/why-a-i-didnt-transform-our-lives-in-2025/i,
     /^https:\/\/(www\.)?weforum\.org\/agenda\/2025\/01\/amodei-ai-agents\/?$/i,
+    /^https:\/\/openai\.com\/blog\/reflections\/?$/i,
   ],
 };
 
