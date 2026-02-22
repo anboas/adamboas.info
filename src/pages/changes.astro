@@ -28,12 +28,33 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.40',
+		date: '2026-02-22',
+		title: 'Footer link order rationalized',
+		summary: 'Reordered footer utility links to put internal site navigation first, legal next, and external/contact links last.',
+		impact: 'Footer scanning is now more intuitive and consistent: sitemap and site utilities appear before outbound links.',
+		current: true,
+		tags: ['footer', 'navigation', 'ux', 'layout'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Reordered footer links to: Sitemap, RSS, Changes, License, Email, GitHub, LinkedIn.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+
+	{
 		version: 'v2.3.39',
 		date: '2026-02-22',
 		title: 'Sitemap core/utility two-column restore',
 		summary: 'Restored the sitemap top box to the preferred two-column structure with Core on the left and Utility on the right.',
 		impact: 'Sitemap keeps the improved overall layout while matching the previously preferred Core/Utility scan pattern.',
-		current: true,
 		tags: ['sitemap', 'layout', 'ux', 'navigation'],
 		groups: [
 			{
