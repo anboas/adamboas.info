@@ -28,12 +28,33 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.39',
+		date: '2026-02-22',
+		title: 'Sitemap core/utility two-column restore',
+		summary: 'Restored the sitemap top box to the preferred two-column structure with Core on the left and Utility on the right.',
+		impact: 'Sitemap keeps the improved overall layout while matching the previously preferred Core/Utility scan pattern.',
+		current: true,
+		tags: ['sitemap', 'layout', 'ux', 'navigation'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Restored two-column sitemap structure inside the top box (`Core` + `Utility`).',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+
+	{
 		version: 'v2.3.38',
 		date: '2026-02-22',
 		title: 'Sitemap layout alignment + PDF-link consolidation',
 		summary: 'Aligned the sitemap to the site’s standard single-column layout, removed the separate published-PDF page, and folded PDF links directly into the Published Writing list.',
 		impact: 'Sitemap now matches the established visual system and avoids overflow, while published writing pages expose direct PDF access in one consolidated list.',
-		current: true,
 		tags: ['sitemap', 'writing', 'pdf', 'layout', 'ux'],
 		groups: [
 			{
