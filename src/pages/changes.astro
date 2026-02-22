@@ -26,13 +26,45 @@ type TopicGroup = {
 
 const releases: Release[] = [
 
+
+	{
+		version: 'v2.3.38',
+		date: '2026-02-22',
+		title: 'Sitemap layout alignment + PDF-link consolidation',
+		summary: 'Aligned the sitemap to the site’s standard single-column layout, removed the separate published-PDF page, and folded PDF links directly into the Published Writing list.',
+		impact: 'Sitemap now matches the established visual system and avoids overflow, while published writing pages expose direct PDF access in one consolidated list.',
+		current: true,
+		tags: ['sitemap', 'writing', 'pdf', 'layout', 'ux'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Reworked `/sitemap/` to a single-column structure with standard card/control-shell spacing and heading treatment.',
+					'Renamed section heading to `Published Writing` and moved PDF access into each writing entry.',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Fixed long-title overflow in sitemap writing entries via safer wrapping behavior.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Removed the standalone `/pdfs/` route to consolidate published writing navigation in one place.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.37',
 		date: '2026-02-22',
 		title: 'Human sitemap + published PDF index',
 		summary: 'Added a human-readable sitemap page, linked it from the footer, and added a dedicated published-PDF index page discoverable from the sitemap.',
 		impact: 'Visitors can now find a single navigable site map and quickly access a clean list of all published PDFs in one place.',
-		current: true,
 		tags: ['navigation', 'sitemap', 'writing', 'pdf', 'ux', 'platform'],
 		groups: [
 			{
