@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../utils/withBase';
+
+const writing = (await getCollection('writing'))
+	.filter((w) => w.data.status === 'published')
+	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+	.map((w) => ({
+		title: w.data.title,
+		type: w.data.type,
+		date: w.data.date,
+		href: `/writing/${w.id.split('/').pop()}/`,
+	}));
+
+const papers = (await getCollection('papers'))
+	.filter((p) => p.data.status === 'published')
+	.sort((a, b) => (b.data.date?.valueOf?.() ?? 0) - (a.data.date?.valueOf?.() ?? 0))
+	.map((p) => ({
+		title: p.data.title,
+		type: 'paper',
+		date: p.data.date ?? null,
+		href: `/writing/${p.id}/`,
+	}));
+
+const writingItems = [...papers, ...writing].sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
+---
+
+<SiteLayout
+	title="Sitemap | Adam Boas"
+	description="Human-readable sitemap for adamboas.com pages and published writing."
+	canonicalHref="https://www.adamboas.com/sitemap/"
+>
+	<section class="mt-2 max-w-5xl space-y-4">
+		<div class="card p-5 sm:p-6">
+			<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Sitemap</h1>
+			<p class="mt-2 text-sm text-slate-300">Human-readable map of key pages. XML sitemap is also available.</p>
+
+			<div class="mt-5 grid gap-4 md:grid-cols-2">
+				<div class="border border-slate-800 bg-slate-950/40 p-4">
+					<h2 class="text-sm font-semibold uppercase tracking-wide text-slate-200">Core</h2>
+					<ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+						<li><a class="hover:text-slate-100" href={withBase('/')}>Home</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/writing/')}>Writing</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/events/')}>Events</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/events/sources/')}>Event Sources</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/changes/')}>Changes</a></li>
+					</ul>
+				</div>
+				<div class="border border-slate-800 bg-slate-950/40 p-4">
+					<h2 class="text-sm font-semibold uppercase tracking-wide text-slate-200">Utility</h2>
+					<ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+						<li><a class="hover:text-slate-100" href={withBase('/pdfs/')}>Published PDFs</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/rss.xml')}>RSS</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/sitemap-index.xml')}>XML sitemap</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/license/')}>License</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="card p-5 sm:p-6">
+			<div class="flex flex-wrap items-end justify-between gap-3">
+				<h2 class="text-lg font-semibold text-slate-100">Published writing pages</h2>
+				<p class="text-xs text-slate-400">{writingItems.length} items</p>
+			</div>
+			<ul class="mt-4 grid gap-2 sm:grid-cols-2">
+				{writingItems.map((item) => (
+					<li class="border border-slate-800 bg-slate-950/40 px-3 py-2">
+						<a class="block min-w-0 text-sm text-slate-200 hover:text-slate-50" href={withBase(item.href)}>
+							<span class="truncate font-medium">{item.title}</span>
+							<span class="mt-1 block text-xs uppercase tracking-wide text-slate-400">
+								{item.type}
+								{item.date ? ` · ${item.date.toISOString().slice(0, 10)}` : ''}
+							</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+</SiteLayout>

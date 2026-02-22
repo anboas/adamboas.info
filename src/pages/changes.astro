@@ -25,13 +25,39 @@ type TopicGroup = {
 };
 
 const releases: Release[] = [
+
+	{
+		version: 'v2.3.37',
+		date: '2026-02-22',
+		title: 'Human sitemap + published PDF index',
+		summary: 'Added a human-readable sitemap page, linked it from the footer, and added a dedicated published-PDF index page discoverable from the sitemap.',
+		impact: 'Visitors can now find a single navigable site map and quickly access a clean list of all published PDFs in one place.',
+		current: true,
+		tags: ['navigation', 'sitemap', 'writing', 'pdf', 'ux', 'platform'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `/sitemap/` as a human-readable site map with core pages, utility links, and published writing entries.',
+					'Added `/pdfs/` page listing all published PDFs with direct PDF links plus corresponding page links.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated global footer utility links to include `Sitemap`.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
 	{
 		version: 'v2.3.36',
 		date: '2026-02-21',
 		title: 'Memo pipeline upgraded to LaTeX-first artifact workflow',
 		summary: 'Moved memos to a deterministic LaTeX source pipeline with CI-built PDF/HTML/manifest artifacts and site-side verification gates, aligned with paper pipeline quality controls.',
 		impact: 'Memo rendering now follows the same reproducible build discipline as papers, reducing format drift and making sync validation deterministic across Whitepaper and site repos.',
-		current: true,
 		tags: ['writing', 'memos', 'pipeline', 'ci', 'reliability', 'platform'],
 		groups: [
 			{
