@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { withBase } from '../utils/withBase';
+import { getPdfMeta, type PdfMeta } from '../utils/pdfMeta';
 
 type WritingItem = {
 	title: string;
@@ -9,27 +10,48 @@ type WritingItem = {
 	date: Date | null;
 	pageHref: string;
 	pdfHref: string | null;
+	pdfMetaText: string | null;
 };
 
-const writing = (await getCollection('writing'))
-	.filter((w) => w.data.status === 'published')
-	.map((w) => ({
-		title: w.data.title,
-		type: w.data.type,
-		date: w.data.date ?? null,
-		pageHref: `/writing/${w.id.split('/').pop()}/`,
-		pdfHref: w.data.pdfPath ?? null,
-	} satisfies WritingItem));
+function formatPdfMeta(meta: PdfMeta | null) {
+	if (!meta) return null;
+	const bits: string[] = [];
+	if (meta.pages) bits.push(`${meta.pages}p`);
+	if (meta.size) bits.push(meta.size);
+	return bits.length ? bits.join(' • ') : null;
+}
 
-const papers = (await getCollection('papers'))
-	.filter((p) => p.data.status === 'published')
-	.map((p) => ({
-		title: p.data.title,
-		type: 'paper' as const,
-		date: p.data.date ?? null,
-		pageHref: `/writing/${p.id}/`,
-		pdfHref: p.data.pdfPath ?? null,
-	} satisfies WritingItem));
+const writing = await Promise.all(
+	(await getCollection('writing'))
+		.filter((w) => w.data.status === 'published')
+		.map(async (w) => {
+			const meta = w.data.pdfPath ? await getPdfMeta(w.data.pdfPath) : null;
+			return {
+				title: w.data.title,
+				type: w.data.type,
+				date: w.data.date ?? null,
+				pageHref: `/writing/${w.id.split('/').pop()}/`,
+				pdfHref: w.data.pdfPath ?? null,
+				pdfMetaText: formatPdfMeta(meta),
+			} satisfies WritingItem;
+		}),
+);
+
+const papers = await Promise.all(
+	(await getCollection('papers'))
+		.filter((p) => p.data.status === 'published')
+		.map(async (p) => {
+			const meta = p.data.pdfPath ? await getPdfMeta(p.data.pdfPath) : null;
+			return {
+				title: p.data.title,
+				type: 'paper' as const,
+				date: p.data.date ?? null,
+				pageHref: `/writing/${p.id}/`,
+				pdfHref: p.data.pdfPath ?? null,
+				pdfMetaText: formatPdfMeta(meta),
+			} satisfies WritingItem;
+		}),
+);
 
 const publishedWriting = [...papers, ...writing].sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 ---
@@ -86,6 +108,7 @@ const publishedWriting = [...papers, ...writing].sort((a, b) => (b.date?.valueOf
 							<div class="flex shrink-0 flex-wrap items-center gap-3 text-sm">
 								<a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase(item.pageHref)}>Page →</a>
 								{item.pdfHref && <a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase(item.pdfHref)}>PDF ↗</a>}
+								{item.pdfHref && item.pdfMetaText && <span class="pdf-meta text-xs text-slate-400">{item.pdfMetaText}</span>}
 							</div>
 						</div>
 					</li>
@@ -108,5 +131,9 @@ const publishedWriting = [...papers, ...writing].sort((a, b) => (b.date?.valueOf
 	.sitemap-item-title {
 		overflow-wrap: anywhere;
 		word-break: break-word;
+	}
+
+	.pdf-meta {
+		white-space: nowrap;
 	}
 </style>

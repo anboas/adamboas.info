@@ -13,6 +13,7 @@ import PageViewsChip from '../../components/PageViewsChip.astro';
 import { withBase } from '../../utils/withBase';
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { getPdfMeta } from '../../utils/pdfMeta';
 
 async function tryReadGeneratedHtml(kind: 'papers' | 'memos', slug: string) {
 	try {
@@ -55,27 +56,6 @@ function applyBaseToGeneratedMemoHtml(html: string) {
 		// Defensive cleanup for standalone-pandoc leftovers in legacy artifacts.
 		.replace(/^\s*<h1[^>]*class="title"[^>]*>[\s\S]*?<\/h1>\s*<\/header>\s*/i, '');
 	return normalized;
-}
-
-function formatBytes(n: number) {
-	if (!Number.isFinite(n) || n <= 0) return null;
-	const kb = n / 1024;
-	if (kb < 1024) return `${Math.round(kb)} KB`;
-	const mb = kb / 1024;
-	return `${mb.toFixed(1)} MB`;
-}
-
-async function pdfMeta(pdfPath: string) {
-	try {
-		const abs = path.join(process.cwd(), 'public', pdfPath.replace(/^\//, ''));
-		const st = await fs.stat(abs);
-		const buf = await fs.readFile(abs);
-		const text = buf.toString('latin1');
-		const pages = (text.match(/\/Type\s*\/Page\b/g) || []).length || null;
-		return { size: formatBytes(st.size), pages };
-	} catch {
-		return { size: null, pages: null };
-	}
 }
 
 
@@ -157,7 +137,7 @@ if (kind === 'paper') {
 	contactHref = `mailto:anboas@gmail.com?subject=${encodeURIComponent(`Paper discussion: ${paper.data.title}`)}`;
 	currentSlugForSchema = paper.id;
 	currentTitleForSchema = paper.data.title;
-	if (paper.data.pdfPath) pdfInfo = await pdfMeta(paper.data.pdfPath);
+	if (paper.data.pdfPath) pdfInfo = await getPdfMeta(paper.data.pdfPath);
 } else {
 	const writingItems = await getCollection('writing');
 	writingItem = writingItems.find((w) => w.id === id);
@@ -173,7 +153,7 @@ if (kind === 'paper') {
 		memoGeneratedHtml = await tryReadGeneratedHtml('memos', currentSlugForSchema);
 		if (memoGeneratedHtml) memoGeneratedHtml = applyBaseToGeneratedMemoHtml(memoGeneratedHtml);
 	}
-	if (writingItem.data.pdfPath) writingPdfInfo = await pdfMeta(writingItem.data.pdfPath);
+	if (writingItem.data.pdfPath) writingPdfInfo = await getPdfMeta(writingItem.data.pdfPath);
 }
 
 const currentUrl = absoluteUrl(`/writing/${currentSlugForSchema}/`);
