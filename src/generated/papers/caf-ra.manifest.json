@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "html": {
+      "path": "build/caf-ra/paper.html",
+      "sha256": "fd1d54c0ff1d1774a9781d0701480f8800b27342d23e52069da417060b60e578"
+    },
+    "pdf": {
+      "path": "build/caf-ra/paper.pdf",
+      "sha256": "98e8e822f23b68c583f2e04690c3c0eff88e4e2aaad72107128d5ef9ccbe4066"
+    }
+  },
+  "kind": "paper",
+  "slug": "caf-ra",
+  "source": {
+    "repo": "anboas/Whitepaper",
+    "sha": "82ba8edefccc8fd26c999a60c3affbac527bf01e"
+  }
+}
