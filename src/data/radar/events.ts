@@ -11836,4 +11836,79 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Event location and contacts verified from AUSA event page; coordinates geocoded from the published street address.'
 		}
 	},
+,
+	{
+		id: 'radar-cyber-workforce-summit-2-0',
+		title: 'Cyber Workforce Summit 2.0: Forging Cyber Warriors',
+		description: 'DoW CIO-hosted cyber workforce summit with AFCEA and National Defense University, including the inaugural Cyber Workforce Competition.',
+		startDate: '2026-03-24',
+		endDate: '2026-03-26',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location:
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8674,
+			lng: -77.0163,
+			venue: 'National Defense University, Fort Lesley J. McNair'
+		},
+		ontology:
+		{
+			themes: ['Cyber workforce readiness', 'Operational cyber training', 'Cross-sector coordination'],
+			capabilityAreas: ['Cyber operations', 'Workforce development', 'Policy implementation'],
+			missionThreads: ['Cyber readiness', 'Talent pipeline acceleration'],
+			stakeholders: ['DoW CIO', 'USCYBERCOM', 'DISA', 'Service CIOs', 'Academic and industry partners'],
+			keywords: ['cyber workforce summit', 'cws 2.0', 'fort mcnair', 'doW 8140', 'cyber workforce competition'],
+			relatedPrograms: ['Cyber Academic Engagement', 'Cyber Service Academy', 'DoW 8140 Qualification Program'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-30 days',
+				prep: 'T-21 to T-3 days',
+				execution: 'Summit week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AFCEA Cyber Workforce Summit',
+				url: 'https://www.afcea.org/events/cyber-workforce-summit',
+				type: 'official',
+				lastVerified: '2026-02-23',
+				confidence: 'High'
+			},
+			{
+				name: 'DoW CIO news release',
+				url: 'https://dowcio.war.gov/In-the-News/Article/4409772/cyber-workforce-summit-unites-military-government-and-industry-leaders-to-advan/',
+				type: 'official',
+				lastVerified: '2026-02-23',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://www.afcea.org/events/cyber-workforce-summit',
+				registration: 'https://member.afcea.org/s/eventdetails?id=a0lPW0000078tBNYAY'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				estimatedCostUsd:
+				{
+					min: 50,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			engagement:
+			{
+				status: 'Not engaged',
+				nextAction: 'Register and capture agenda/prioritized sessions',
+				nextActionDate: '2026-03-01'
+			},
+			notes: 'Metadata validated from AFCEA event page and DoW CIO release; registration shortlink in social post resolves to AFCEA member event URL.'
+		}
+	}
+
 ];
