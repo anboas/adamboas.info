@@ -27,12 +27,34 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.45',
+		date: '2026-02-24',
+		title: 'Events control shell compacted with aggressive default collapse',
+		summary: 'Reduced the vertical footprint of the DoW Events Intelligence header by collapsing overview chips and quick filters into a closed panel by default.',
+		impact: 'The page now lands on search/results faster with significantly less top-of-page height while keeping all controls one click away.',
+		current: true,
+		tags: ['events', 'ux', 'layout', 'controls', 'density'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Collapsed summary chips and quick topic/window controls under a default-closed `Overview + quick filters` panel.',
+					'Reduced control shell spacing/padding and tightened title/toolbar density to cut initial vertical space.',
+					'Kept search and advanced filters immediately available while reducing non-critical content above the fold.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.44',
 		date: '2026-02-24',
 		title: 'Events recency state: New is view-based, Fresh is add-window based',
 		summary: 'Switched event recency badges to persistent local state so `New` only appears for events you have not seen yet, while `Fresh` tracks newly discovered events for a short window.',
 		impact: 'New badges now clear permanently after first view, and Fresh appears only for events first discovered in your browser within the last 14 days.',
-		current: true,
 		tags: ['events', 'ux', 'badges', 'localstorage', 'recency'],
 		groups: [
 			{
