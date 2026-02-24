@@ -27,12 +27,34 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.46',
+		date: '2026-02-24',
+		title: 'Events map pinning: above/below list with saved preference',
+		summary: 'Replaced the map hide toggle with a map placement pin control that moves the map above or below the event list and persists preference in localStorage.',
+		impact: 'Users can keep map and list both visible while choosing preferred scan order; default remains map below list and preference persists per browser.',
+		current: true,
+		tags: ['events', 'ux', 'map', 'localstorage', 'layout'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced `Hide map` with a `Pin map above/below list` toggle button in the control shell.',
+					'Added persistent map placement preference (`adamboas.events.mapPin.v1`) with default `below`.',
+					'Updated render logic to reposition the map section above or below the list without hiding either section.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.45',
 		date: '2026-02-24',
 		title: 'Events control shell compacted with aggressive default collapse',
 		summary: 'Reduced the vertical footprint of the DoW Events Intelligence header by collapsing overview chips and quick filters into a closed panel by default.',
 		impact: 'The page now lands on search/results faster with significantly less top-of-page height while keeping all controls one click away.',
-		current: true,
 		tags: ['events', 'ux', 'layout', 'controls', 'density'],
 		groups: [
 			{

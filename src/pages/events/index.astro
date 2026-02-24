@@ -514,7 +514,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 					</p>
 				</div>
 				<div class="flex flex-wrap gap-1.5">
-					<button id="radar-toggle-map" class="radar-btn radar-btn-tight" type="button">Hide map</button>
+					<button id="radar-toggle-map" class="radar-btn radar-btn-tight" type="button">Pin map above list</button>
 					<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
 				</div>
 			</div>
@@ -856,6 +856,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const mapFitBtn = document.getElementById('radar-map-fit');
 	const mapResetBtn = document.getElementById('radar-map-reset');
 	const mapSection = document.getElementById('radar-map-section');
+	const listSection = document.getElementById('radar-list-section');
+	const mainCol = document.querySelector('.radar-main-col');
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
@@ -868,12 +870,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const pageStatus = document.getElementById('radar-pagination-status');
 	const eventStateStorageKey = 'adamboas.events.state.v2';
 	const legacySeenEventsStorageKey = 'adamboas.events.seen.v1';
+	const mapPinStorageKey = 'adamboas.events.mapPin.v1';
 	const PAGE_SIZE = 10;
 	const FRESH_WINDOW_DAYS = 14;
 	let eventState = { version: 2, events: {} };
 
 	let compactMode = true;
-	let mapVisible = true;
+	let mapPin = 'below';
 	let currentPage = 1;
 	let currentTotalPages = 1;
 
@@ -920,6 +923,29 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 	function topicStateToValue(topics) {
 		return [...topics].sort().join(',');
+	}
+
+	function readMapPinPreference() {
+		try {
+			const raw = localStorage.getItem(mapPinStorageKey);
+			if (raw === 'above' || raw === 'below') return raw;
+		} catch {}
+		return 'below';
+	}
+
+	function persistMapPinPreference() {
+		try {
+			localStorage.setItem(mapPinStorageKey, mapPin);
+		} catch {}
+	}
+
+	function applyMapPin() {
+		if (!mainCol || !mapSection || !listSection) return;
+		if (mapPin === 'above') mainCol.insertBefore(mapSection, listSection);
+		else mainCol.appendChild(mapSection);
+		if (controls.toggleMap) {
+			controls.toggleMap.textContent = mapPin === 'above' ? 'Pin map below list' : 'Pin map above list';
+		}
 	}
 
 	function nowIso() {
@@ -1249,10 +1275,6 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		const card = cards.find((c) => c.dataset.id === id);
 		if (!card) return;
 		focusCard(id);
-		if (!mapVisible) {
-			mapVisible = true;
-			render();
-		}
 		if (!mapLib || !clusterLayer) {
 			initLeafletMap().then(() => focusMapEvent(id, options));
 			return;
@@ -1427,10 +1449,6 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 	function renderMap(visibleCards) {
 		const cardsForMap = visibleCards.length ? visibleCards : cards;
-		if (!mapVisible) {
-			if (mapSub) mapSub.textContent = 'Map hidden';
-			return;
-		}
 		if (!mapLib) {
 			initLeafletMap().then(() => renderMap(cardsForMap));
 			return;
@@ -1541,8 +1559,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 
 		list.classList.toggle('is-compact', compactMode);
-		mapSection.classList.toggle('hidden', !mapVisible);
-		controls.toggleMap.textContent = mapVisible ? 'Hide map' : 'Show map';
+		applyMapPin();
 		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
 
 		empty.classList.toggle('hidden', totalMatches > 0);
@@ -1596,7 +1613,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		render();
 	});
 	controls.toggleMap.addEventListener('click', () => {
-		mapVisible = !mapVisible;
+		mapPin = mapPin === 'above' ? 'below' : 'above';
+		persistMapPinPreference();
 		render();
 	});
 	controls.toggleCompact.addEventListener('click', () => {
@@ -1637,7 +1655,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			controls.q.select();
 		}
 		if (event.key.toLowerCase() === 'm') {
-			mapVisible = !mapVisible;
+			mapPin = mapPin === 'above' ? 'below' : 'above';
+			persistMapPinPreference();
 			render();
 		}
 		if (event.key.toLowerCase() === 'c') {
@@ -1647,6 +1666,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	});
 
 	readEventState();
+	mapPin = readMapPinPreference();
 	applyUrlState();
 	render();
 </script>
