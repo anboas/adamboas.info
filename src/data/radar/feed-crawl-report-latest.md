@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-02-23T23:49:45.039925+00:00
+Generated: 2026-02-24T14:40:20.779770+00:00
 
 - Total: 19
 - OK: 11
@@ -17,8 +17,8 @@ Generated: 2026-02-23T23:49:45.039925+00:00
 | Navy League Meetings & Events | official_calendar | 200 | no | 6 | 35 | https://www.navyleague.org/meetings-and-events/ |  |
 | CTO Innovation Industry Outreach Calendar | official_calendar | 200 | no | 0 | 29 | https://www.ctoinnovation.mil/events/ |  |
 | SAME Events | official_calendar | 200 | no | 9 | 14 | https://www.same.org/events/ |  |
-| ASD Events (Defense & Security) | aggregator | 200 | yes | 83 | 184 | https://www.asdevents.com/defense-security |  |
-| Military Expos | aggregator | 200 | no | 178 | 92 | https://www.militaryexpos.com/ |  |
+| ASD Events (Defense & Security) | aggregator | 200 | yes | 80 | 179 | https://www.asdevents.com/defense-security |  |
+| Military Expos | aggregator | 200 | no | 175 | 91 | https://www.militaryexpos.com/ |  |
 | Marine Military Expos | aggregator | 200 | yes | 18 | 13 | https://marinemilitaryexpos.com/ |  |
 | Potomac Officers Club GovCon Events | aggregator | 200 | yes | 119 | 238 | https://www.potomacofficersclub.com/govcon-events/ |  |
 | GovCIO Events | aggregator | 200 | no | 26 | 67 | https://govciomedia.com/events/ |  |

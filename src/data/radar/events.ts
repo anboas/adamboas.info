@@ -11909,6 +11909,144 @@ export const radarEventsSeed: RadarEvent[] = [
 			},
 			notes: 'Metadata validated from AFCEA event page and DoW CIO release; registration shortlink in social post resolves to AFCEA member event URL.'
 		}
-	}
+	},
 
+	{
+		id: 'radar-military-robotics-autonomous-systems-2026-conference',
+		title: 'Military Robotics & Autonomous Systems 2026 Conference',
+		description: 'Conference focused on military uncrewed systems development, integration, and procurement.',
+		startDate: '2026-04-13',
+		endDate: '2026-04-15',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location:
+		{
+			city: 'London',
+			country: 'United Kingdom',
+			lat: 51.5074,
+			lng: -0.1278
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['military', 'robotics', 'autonomous', 'systems', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events Defense & Security listing',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-24',
+				confidence: 'High'
+			},
+			{
+				name: 'ASD Events event page',
+				url: 'https://www.asdevents.com/event.asp?id=25815',
+				type: 'aggregator',
+				lastVerified: '2026-02-24',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25815',
+				registration: 'https://www.asdevents.com/event_register.asp?id=25815'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'High'
+			},
+			acquisition:
+			{
+				registrationDeadline: '2026-04-13'
+			},
+			engagement:
+			{
+				status: 'Not engaged',
+				notes: 'No public government POC name, solicitation number, response due date, or sponsoring agency field was published on the source page as of 2026-02-24.'
+			},
+			notes: 'Date, city, and registration URL verified from ASD event page metadata; venue remains undisclosed until approved registration.'
+		}
+	},
+	{
+		id: 'radar-counter-uas-technology-europe-conference-2026',
+		title: 'Counter UAS Technology Europe Conference 2026',
+		description: 'Conference on European counter-UAS detection, targeting, and defeat operations and technology.',
+		startDate: '2026-04-20',
+		endDate: '2026-04-22',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location:
+		{
+			city: 'London',
+			country: 'United Kingdom',
+			lat: 51.5074,
+			lng: -0.1278
+		},
+		ontology:
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['counter', 'technology', 'europe', 'conference', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows:
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events Defense & Security listing',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-24',
+				confidence: 'High'
+			},
+			{
+				name: 'ASD Events event page',
+				url: 'https://www.asdevents.com/event.asp?id=25774',
+				type: 'aggregator',
+				lastVerified: '2026-02-24',
+				confidence: 'High'
+			}],
+			links:
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25774',
+				registration: 'https://www.asdevents.com/event_register.asp?id=25774'
+			},
+			logistics:
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'High'
+			},
+			acquisition:
+			{
+				registrationDeadline: '2026-04-20'
+			},
+			engagement:
+			{
+				status: 'Not engaged',
+				notes: 'No public government POC name, solicitation number, response due date, or sponsoring agency field was published on the source page as of 2026-02-24.'
+			},
+			notes: 'Date, city, and registration URL verified from ASD event page metadata; venue remains undisclosed until approved registration.'
+		}
+	},
 ];
