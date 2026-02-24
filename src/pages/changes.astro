@@ -27,12 +27,38 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.50',
+		date: '2026-02-24',
+		title: 'Events calendar reverted to uniform event colors with attendance-only highlighting',
+		summary: 'Removed topic-based color tones from calendar bars while keeping topic icons, and retained color emphasis only for attended events.',
+		impact: 'The calendar now reads cleaner with one default event color; your attended events remain visually distinct, and topic context still shows via icons.',
+		current: true,
+		tags: ['events', 'ux', 'calendar', 'attending', 'visuals'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Removed topic-tone bar classes so all non-attending calendar events render in the same baseline color.',
+					'Kept topic icon labeling (AI/Software/Cloud/Cyber) in event bars and legend for lightweight semantic cues.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Increased visual focus on attendance state by keeping color-coding exclusive to attended events.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.49',
 		date: '2026-02-24',
 		title: 'Events calendar day-height stabilization, topic coding, and SOF Week attendance tag',
 		summary: 'Stabilized day-cell height for clearer month scanning, added lightweight topic icon/color coding for primary themes, and marked SOF Week as attending.',
 		impact: 'Calendar stays readable in dense months, AI/software/cloud/cyber priorities are easier to spot at a glance, and personal attendance now appears directly in calendar bars.',
-		current: true,
 		tags: ['events', 'ux', 'calendar', 'topics', 'attending'],
 		groups: [
 			{

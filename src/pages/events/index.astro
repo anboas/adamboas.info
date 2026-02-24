@@ -1168,7 +1168,6 @@ function acquisitionReferences(event: (typeof events)[number]) {
 				if (!segment.startsInWeek) el.classList.add('is-continued-left');
 				if (!segment.endsInWeek) el.classList.add('is-continued-right');
 				if (segment.item.attending) el.classList.add('is-attending');
-				if (segment.item.topic) el.classList.add(`is-topic-${segment.item.topic}`);
 				el.style.gridColumn = `${segment.startCol} / ${segment.endCol + 1}`;
 				el.style.gridRow = `${segment.lane + 1}`;
 				const topicBadge = segment.item.topic ? `${topicCalendarLabel(segment.item.topic)} ` : '';
@@ -2198,22 +2197,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		color: rgba(243, 232, 255, 0.98);
 		font-weight: 700;
 	}
-	:global(.radar-cal-bar.is-topic-ai) {
-		border-color: rgba(99, 102, 241, 0.72);
-		background: rgba(99, 102, 241, 0.2);
-	}
-	:global(.radar-cal-bar.is-topic-software) {
-		border-color: rgba(16, 185, 129, 0.72);
-		background: rgba(16, 185, 129, 0.2);
-	}
-	:global(.radar-cal-bar.is-topic-cloud) {
-		border-color: rgba(14, 165, 233, 0.72);
-		background: rgba(14, 165, 233, 0.2);
-	}
-	:global(.radar-cal-bar.is-topic-cyber) {
-		border-color: rgba(245, 158, 11, 0.72);
-		background: rgba(245, 158, 11, 0.2);
-	}
+	/* topic-specific bar colors removed; only attending bars are color-coded */
 	:global(.radar-cal-bar.is-continued-left) {
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
