@@ -1106,6 +1106,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		return new Intl.DateTimeFormat(undefined, { month: 'long', year: 'numeric' }).format(date);
 	}
 
+	function fmtCalendarDateRange(start, end) {
+		const fmt = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+		if (!start) return 'Date pending';
+		if (!end || sameLocalDay(start, end)) return fmt.format(start);
+		return `${fmt.format(start)} to ${fmt.format(end)}`;
+	}
+
 	function renderCalendar(sourceCards) {
 		if (!calendarGrid) return;
 		const items = calendarItemsFromCards(sourceCards);
@@ -1175,8 +1182,18 @@ function acquisitionReferences(event: (typeof events)[number]) {
 				el.style.gridColumn = `${segment.startCol} / ${segment.endCol + 1}`;
 				el.style.gridRow = `${segment.lane + 1}`;
 				const topicBadge = segment.item.topic ? `${topicCalendarLabel(segment.item.topic)} ` : '';
-				el.textContent = `${segment.item.attending ? '★ ' : ''}${topicBadge}${segment.item.title}`;
-				el.title = `${segment.item.title} · ${segment.item.branch} · ${segment.item.type} · ${segment.item.status}${segment.item.topic ? ` · ${segment.item.topic.toUpperCase()}` : ''}`;
+				const labelText = `${segment.item.attending ? '★ ' : ''}${topicBadge}${segment.item.title}`;
+				const detailDate = fmtCalendarDateRange(segment.item.start, segment.item.end);
+				const detailMeta = `${segment.item.branch} · ${segment.item.type} · ${segment.item.status}`;
+				const label = document.createElement('span');
+				label.className = 'radar-cal-bar-label';
+				label.textContent = labelText;
+				const tooltip = document.createElement('span');
+				tooltip.className = 'radar-cal-tooltip';
+				tooltip.innerHTML = `<span class="radar-cal-tooltip-title">${escapeHtml(segment.item.title)}</span><span class="radar-cal-tooltip-meta">${escapeHtml(detailDate)}</span><span class="radar-cal-tooltip-meta">${escapeHtml(detailMeta)}</span>`;
+				el.setAttribute('aria-label', `${segment.item.title}. ${detailDate}. ${detailMeta}`);
+				el.appendChild(label);
+				el.appendChild(tooltip);
 				if (segment.item.link) {
 					el.href = segment.item.link;
 					el.target = '_blank';
@@ -2204,10 +2221,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 	:global(.radar-cal-bar) {
 		display: inline-flex;
+		position: relative;
 		align-items: center;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
+		overflow: visible;
 		border: 1px solid rgba(56, 189, 248, 0.6);
 		background: rgba(56, 189, 248, 0.18);
 		color: rgba(224, 242, 254, 0.98);
@@ -2215,6 +2231,59 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		text-decoration: none;
 		padding: 0.12rem 0.3rem;
 		min-height: 1.15rem;
+	}
+	:global(.radar-cal-bar-label) {
+		display: block;
+		max-width: 100%;
+		min-width: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	:global(.radar-cal-tooltip) {
+		display: none;
+		position: absolute;
+		left: -1px;
+		top: calc(100% + 0.26rem);
+		z-index: 40;
+		pointer-events: none;
+		min-width: 13rem;
+		max-width: min(26rem, 82vw);
+		padding: 0.38rem 0.48rem;
+		border: 1px solid rgba(100, 116, 139, 0.92);
+		background: rgba(2, 6, 23, 0.98);
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.42);
+		white-space: normal;
+		line-height: 1.24;
+	}
+	:global(.radar-cal-tooltip::before) {
+		content: '';
+		position: absolute;
+		left: 0.45rem;
+		top: -0.32rem;
+		width: 0.56rem;
+		height: 0.56rem;
+		border-left: 1px solid rgba(100, 116, 139, 0.92);
+		border-top: 1px solid rgba(100, 116, 139, 0.92);
+		background: rgba(2, 6, 23, 0.98);
+		transform: rotate(45deg);
+	}
+	:global(.radar-cal-tooltip-title) {
+		display: block;
+		font-size: 0.68rem;
+		font-weight: 700;
+		color: rgba(241, 245, 249, 0.98);
+	}
+	:global(.radar-cal-tooltip-meta) {
+		display: block;
+		margin-top: 0.18rem;
+		font-size: 0.6rem;
+		color: rgba(148, 163, 184, 0.98);
+	}
+	:global(.radar-cal-bar:hover .radar-cal-tooltip),
+	:global(.radar-cal-bar:focus-visible .radar-cal-tooltip),
+	:global(.radar-cal-bar:focus-within .radar-cal-tooltip) {
+		display: block;
 	}
 	:global(.radar-cal-bar.is-attending) {
 		border-color: rgba(168, 85, 247, 0.68);
@@ -2857,6 +2926,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		:global(.radar-cal-bar) {
 			font-size: 0.54rem;
 			padding: 0.08rem 0.22rem;
+		}
+		:global(.radar-cal-tooltip) {
+			display: none !important;
 		}
 		.radar-filter-chips {
 			flex-wrap: nowrap;
