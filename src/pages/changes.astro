@@ -27,12 +27,43 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.49',
+		date: '2026-02-24',
+		title: 'Events calendar day-height stabilization, topic coding, and SOF Week attendance tag',
+		summary: 'Stabilized day-cell height for clearer month scanning, added lightweight topic icon/color coding for primary themes, and marked SOF Week as attending.',
+		impact: 'Calendar stays readable in dense months, AI/software/cloud/cyber priorities are easier to spot at a glance, and personal attendance now appears directly in calendar bars.',
+		current: true,
+		tags: ['events', 'ux', 'calendar', 'topics', 'attending'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added topic legend cues for primary event themes (AI, Software, Cloud, Cyber).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Calendar bars now derive and display a primary topic icon with matching tone classes for minor at-a-glance coding.',
+					'Marked `radar-sofweek-2026` as attended via `attendingEventIds` so SOF Week is visibly flagged.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Raised calendar day-cell minimum height to keep month rows visually stable and easier to scan.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.48',
 		date: '2026-02-24',
 		title: 'Events calendar rendering fixed to preserve traditional month-grid layout',
 		summary: 'Fixed calendar styling scope so dynamically rendered week/day grid rows and spanning bars keep their intended month layout instead of collapsing into stacked text.',
 		impact: 'Calendar now renders as a recognizable traditional month view with clear weekday columns, day cells, and readable multi-day bars.',
-		current: true,
 		tags: ['events', 'ux', 'calendar', 'css', 'bugfix'],
 		groups: [
 			{ kind: 'Added', items: [] },
