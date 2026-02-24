@@ -677,6 +677,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 											</span>
 										) : null}
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
+										<button class="radar-pin-btn" type="button" data-calendar-focus data-id={event.id}>In Calendar</button>
 									</div>
 									<div class="radar-badge-row">
 										<span class={`radar-source-confidence-pill radar-source-confidence-pill-${sourceTypeTone(event)}`} title="Source confidence and source type">{sourceConfidenceLabel(event)} · {sourceTypeLabel(event)}</span>
@@ -899,12 +900,14 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const mapSection = document.getElementById('radar-map-section');
 	const listSection = document.getElementById('radar-list-section');
 	const mainCol = document.querySelector('.radar-main-col');
+	const calendarSection = document.getElementById('radar-calendar-section');
 	const calendarGrid = document.getElementById('radar-calendar-grid');
 	const calendarLabel = document.getElementById('radar-cal-label');
 	const calendarEmpty = document.getElementById('radar-cal-empty');
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
+	const calendarFocusButtons = Array.from(document.querySelectorAll('[data-calendar-focus]'));
 	const pagination = document.getElementById('radar-pagination');
 	const pageFirst = document.getElementById('radar-page-first');
 	const pagePrev = document.getElementById('radar-page-prev');
@@ -1165,6 +1168,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			for (const segment of segments) {
 				const el = segment.item.link ? document.createElement('a') : document.createElement('span');
 				el.className = 'radar-cal-bar';
+				if (segment.item.id) el.dataset.eventId = segment.item.id;
 				if (!segment.startsInWeek) el.classList.add('is-continued-left');
 				if (!segment.endsInWeek) el.classList.add('is-continued-right');
 				if (segment.item.attending) el.classList.add('is-attending');
@@ -1340,6 +1344,24 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		card.classList.add('radar-card-focus');
 		slowScrollTo(card, 980);
 		setTimeout(() => card.classList.remove('radar-card-focus'), 2000);
+	}
+
+	function focusCalendarEvent(id) {
+		if (!id) return;
+		const card = cards.find((c) => c.dataset.id === id);
+		if (!card) return;
+		const start = parseYmdLocal(card.dataset.date || '');
+		if (start) calendarMonth = new Date(start.getFullYear(), start.getMonth(), 1);
+		render();
+		if (calendarSection) slowScrollTo(calendarSection, 900);
+		requestAnimationFrame(() => {
+			const bars = Array.from(document.querySelectorAll('.radar-cal-bar[data-event-id]'));
+			for (const bar of bars) bar.classList.remove('is-focus');
+			const match = bars.find((bar) => bar.dataset.eventId === id);
+			if (!match) return;
+			match.classList.add('is-focus');
+			setTimeout(() => match.classList.remove('is-focus'), 2400);
+		});
 	}
 
 	for (const card of cards) {
@@ -1896,6 +1918,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	for (const btn of mapFocusButtons) {
 		btn.addEventListener('click', () => focusMapEvent(btn.dataset.id, { openPopup: true }));
 	}
+	for (const btn of calendarFocusButtons) {
+		btn.addEventListener('click', () => focusCalendarEvent(btn.dataset.id));
+	}
 
 	document.addEventListener('keydown', (event) => {
 		if (event.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
@@ -2196,6 +2221,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		background: rgba(168, 85, 247, 0.2);
 		color: rgba(243, 232, 255, 0.98);
 		font-weight: 700;
+	}
+	:global(.radar-cal-bar.is-focus) {
+		outline: 1px solid rgba(251, 191, 36, 0.92);
+		box-shadow: 0 0 0 1px rgba(251, 191, 36, 0.32) inset;
 	}
 	/* topic-specific bar colors removed; only attending bars are color-coded */
 	:global(.radar-cal-bar.is-continued-left) {
