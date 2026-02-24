@@ -27,12 +27,37 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.57',
+		date: '2026-02-24',
+		title: 'Tracked event legend now shows topic-coded icon key inline',
+		summary: 'Updated calendar legend to show `Tracked Event [ AI | Software | Cloud | Cyber ]` with icons in a single consolidated key.',
+		impact: 'Legend now reads exactly as an at-a-glance topic key and better matches the icon-forward calendar action style.',
+		current: true,
+		tags: ['events', 'ux', 'calendar', 'legend', 'topics'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced separate topic legend chips with one consolidated tracked-event key: `Tracked Event [ 🤖 AI | 🧩 Software | ☁️ Cloud | 🛡️ Cyber ]`.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Kept hover explanation + accessibility labels on tracked legend key while aligning label style to icon-first calendar actions.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.56',
 		date: '2026-02-24',
 		title: 'Tracked event legend key now includes hover guidance',
 		summary: 'Added a hover explanation on the `Tracked event` calendar legend chip, mirroring the attending-key interaction style.',
 		impact: 'Users can quickly understand that tracked events are monitored feed items and not necessarily attended unless explicitly marked.',
-		current: true,
 		tags: ['events', 'ux', 'calendar', 'legend', 'clarity'],
 		groups: [
 			{
