@@ -637,7 +637,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 									</div>
 									<div class="radar-badge-row">
 										<span class={`radar-source-confidence-pill radar-source-confidence-pill-${sourceTypeTone(event)}`} title="Source confidence and source type">{sourceConfidenceLabel(event)} · {sourceTypeLabel(event)}</span>
-										<span class={`radar-evidence-pill radar-evidence-pill-${eventFreshnessBadge(event).tone}`} title="Evidence freshness">{eventFreshnessBadge(event).label}</span>
+										<span class="radar-evidence-pill radar-evidence-pill-fresh hidden" data-fresh-badge title="Added recently to your feed">Fresh</span>
 										<span class="radar-new-pill hidden" data-new-badge>New</span>
 									</div>
 									<p class="radar-card-kicker text-left sm:text-right">{event.branch} · {event.type} · {event.status}</p>
@@ -861,10 +861,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const pageLast = document.getElementById('radar-page-last');
 	const pageLabel = document.getElementById('radar-page-label');
 	const pageStatus = document.getElementById('radar-pagination-status');
-	const seenEventsStorageKey = 'adamboas.events.seen.v1';
+	const eventStateStorageKey = 'adamboas.events.state.v2';
+	const legacySeenEventsStorageKey = 'adamboas.events.seen.v1';
 	const PAGE_SIZE = 10;
-	let seenEventIds = new Set();
-	let hasSeenBaseline = false;
+	const FRESH_WINDOW_DAYS = 14;
+	let eventState = { version: 2, events: {} };
 
 	let compactMode = true;
 	let mapVisible = true;
@@ -916,30 +917,100 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		return [...topics].sort().join(',');
 	}
 
-	function readSeenEventIds() {
-		try {
-			const raw = localStorage.getItem(seenEventsStorageKey);
-			if (!raw) {
-				hasSeenBaseline = false;
-				seenEventIds = new Set(cards.map((card) => card.dataset.id).filter(Boolean));
-				localStorage.setItem(seenEventsStorageKey, JSON.stringify([...seenEventIds]));
-				return;
-			}
-			const parsed = JSON.parse(raw);
-			if (Array.isArray(parsed)) {
-				hasSeenBaseline = true;
-				seenEventIds = new Set(parsed.map((v) => String(v)));
-				return;
-			}
-		} catch {}
-		seenEventIds = new Set();
-		hasSeenBaseline = false;
+	function nowIso() {
+		return new Date().toISOString();
 	}
 
-	function persistSeenEventIds(ids) {
+	function parseIsoMs(value) {
+		if (!value || typeof value !== 'string') return null;
+		const ms = new Date(value).getTime();
+		return Number.isNaN(ms) ? null : ms;
+	}
+
+	function parseLegacySeenIds() {
 		try {
-			localStorage.setItem(seenEventsStorageKey, JSON.stringify([...ids]));
+			const raw = localStorage.getItem(legacySeenEventsStorageKey);
+			if (!raw) return new Set();
+			const parsed = JSON.parse(raw);
+			if (!Array.isArray(parsed)) return new Set();
+			return new Set(parsed.map((v) => String(v)).filter(Boolean));
+		} catch {
+			return new Set();
+		}
+	}
+
+	function normalizeEventEntry(entry) {
+		return {
+			firstDetectedAt: typeof entry?.firstDetectedAt === 'string' ? entry.firstDetectedAt : null,
+			firstSeenAt: typeof entry?.firstSeenAt === 'string' ? entry.firstSeenAt : null,
+			lastSeenAt: typeof entry?.lastSeenAt === 'string' ? entry.lastSeenAt : null,
+		};
+	}
+
+	function persistEventState() {
+		try {
+			localStorage.setItem(eventStateStorageKey, JSON.stringify(eventState));
 		} catch {}
+	}
+
+	function readEventState() {
+		const ids = cards.map((card) => card.dataset.id).filter(Boolean);
+		let stored = null;
+		try {
+			const raw = localStorage.getItem(eventStateStorageKey);
+			if (raw) stored = JSON.parse(raw);
+		} catch {}
+
+		if (!stored || typeof stored !== 'object' || typeof stored.events !== 'object' || !stored.events) {
+			const seenFromLegacy = parseLegacySeenIds();
+			const hasLegacy = seenFromLegacy.size > 0;
+			const stamp = nowIso();
+			const seededEvents = {};
+			for (const id of ids) {
+				const seen = hasLegacy ? seenFromLegacy.has(id) : true;
+				seededEvents[id] = {
+					firstDetectedAt: null,
+					firstSeenAt: seen ? stamp : null,
+					lastSeenAt: seen ? stamp : null,
+				};
+			}
+			eventState = { version: 2, initializedAt: stamp, events: seededEvents };
+			persistEventState();
+			return;
+		}
+
+		const normalizedEvents = {};
+		for (const [id, value] of Object.entries(stored.events || {})) {
+			if (!id) continue;
+			normalizedEvents[String(id)] = normalizeEventEntry(value);
+		}
+		let changed = false;
+		const discoveredAt = nowIso();
+		for (const id of ids) {
+			if (!normalizedEvents[id]) {
+				normalizedEvents[id] = {
+					firstDetectedAt: discoveredAt,
+					firstSeenAt: null,
+					lastSeenAt: null,
+				};
+				changed = true;
+			}
+		}
+		eventState = {
+			version: 2,
+			initializedAt: typeof stored.initializedAt === 'string' ? stored.initializedAt : discoveredAt,
+			events: normalizedEvents,
+		};
+		if (changed) persistEventState();
+	}
+
+	function freshAgeLabel(entry) {
+		const detectedMs = parseIsoMs(entry?.firstDetectedAt);
+		if (detectedMs === null) return null;
+		const ageDays = Math.floor((Date.now() - detectedMs) / 86_400_000);
+		if (ageDays < 0 || ageDays > FRESH_WINDOW_DAYS) return null;
+		if (ageDays === 0) return 'Fresh';
+		return `Fresh (${ageDays}d)`;
 	}
 
 	function typeKey(type) {
@@ -1388,20 +1459,49 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 	}
 
-	function renderNewBadges(visibleCards) {
-		const seenNow = new Set(seenEventIds);
+	function renderRecencyBadges(visibleCards) {
+		let changed = false;
+		const seenAt = nowIso();
 		for (const card of cards) {
-			const badge = card.querySelector('[data-new-badge]');
-			if (!badge) continue;
 			const id = card.dataset.id;
 			if (!id) continue;
 			const isVisible = visibleCards.includes(card);
-			const isNew = hasSeenBaseline && isVisible && !seenEventIds.has(id);
-			badge.classList.toggle('hidden', !isNew);
-			if (isVisible) seenNow.add(id);
+			if (!eventState.events[id]) {
+				eventState.events[id] = {
+					firstDetectedAt: nowIso(),
+					firstSeenAt: null,
+					lastSeenAt: null,
+				};
+				changed = true;
+			}
+			const entry = eventState.events[id];
+
+			const freshBadge = card.querySelector('[data-fresh-badge]');
+			if (freshBadge) {
+				const label = freshAgeLabel(entry);
+				const showFresh = Boolean(label);
+				freshBadge.classList.toggle('hidden', !showFresh);
+				if (showFresh && freshBadge.textContent !== label) freshBadge.textContent = label;
+			}
+
+			const newBadge = card.querySelector('[data-new-badge]');
+			if (newBadge) {
+				const isNew = isVisible && !entry.firstSeenAt;
+				newBadge.classList.toggle('hidden', !isNew);
+			}
+
+			if (isVisible) {
+				if (!entry.firstSeenAt) {
+					entry.firstSeenAt = seenAt;
+					changed = true;
+				}
+				if (entry.lastSeenAt !== seenAt) {
+					entry.lastSeenAt = seenAt;
+					changed = true;
+				}
+			}
 		}
-		seenEventIds = seenNow;
-		persistSeenEventIds(seenEventIds);
+		if (changed) persistEventState();
 	}
 
 	function renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages) {
@@ -1444,7 +1544,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		count.textContent = `${totalMatches} of ${cards.length} events shown`;
 		renderFilterChips(state);
 		renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages);
-		renderNewBadges(pageCards);
+		renderRecencyBadges(pageCards);
 		renderMap(visible);
 
 		const query = toQuery(state);
@@ -1541,7 +1641,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 	});
 
-	readSeenEventIds();
+	readEventState();
 	applyUrlState();
 	render();
 </script>

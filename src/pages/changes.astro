@@ -27,12 +27,34 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.44',
+		date: '2026-02-24',
+		title: 'Events recency state: New is view-based, Fresh is add-window based',
+		summary: 'Switched event recency badges to persistent local state so `New` only appears for events you have not seen yet, while `Fresh` tracks newly discovered events for a short window.',
+		impact: 'New badges now clear permanently after first view, and Fresh appears only for events first discovered in your browser within the last 14 days.',
+		current: true,
+		tags: ['events', 'ux', 'badges', 'localstorage', 'recency'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced simple seen-id storage with a persistent per-event localStorage state object (`firstDetectedAt`, `firstSeenAt`, `lastSeenAt`).',
+					'Updated `New` badge logic to display only for currently visible events that have never been seen before on this browser.',
+					'Updated `Fresh` badge logic to show only when an event is newly discovered and within a 14-day freshness window.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.43',
 		date: '2026-02-24',
 		title: 'Events action labels clarified + calendar controls grouped',
 		summary: 'Renamed event CTA labels for clarity and grouped Google/Outlook calendar actions into a single intuitive control in cards and map popups.',
 		impact: 'Event actions are now clearer at a glance (`Event Link`) and calendar options feel like one coherent action instead of separate unrelated buttons.',
-		current: true,
 		tags: ['events', 'ux', 'labels', 'calendar', 'outlook', 'google'],
 		groups: [
 			{
