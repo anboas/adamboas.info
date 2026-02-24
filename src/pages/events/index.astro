@@ -1511,9 +1511,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		const typeClass = `radar-type-${typeTone(type)}`;
 		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event Link</a>` : '';
 		const samLinkHtml = samLink && samLink !== link ? `<a class="radar-map-link radar-map-link-sam" href="${escapeHtml(samLink)}" target="_blank" rel="noreferrer">SAM</a>` : '';
-		const iosLinkHtml = iosLink ? `<a class="radar-map-link radar-map-link-ios" href="${escapeHtml(iosLink)}" target="_blank" rel="noreferrer">🍎 iOS (.ics)</a>` : '';
-		const calendarLinkHtml = calendarLink ? `<a class="radar-map-link radar-map-link-calendar" href="${escapeHtml(calendarLink)}" target="_blank" rel="noreferrer">🗓️ Google</a>` : '';
-		const outlookLinkHtml = outlookLink ? `<a class="radar-map-link radar-map-link-outlook" href="${escapeHtml(outlookLink)}" download="${escapeHtml(outlookFile)}">📘 Outlook (.ics)</a>` : '';
+		const iosLinkHtml = iosLink ? `<a class="radar-map-link radar-map-link-ios" href="${escapeHtml(iosLink)}" target="_blank" rel="noreferrer" aria-label="iOS calendar (.ics)" title="iOS calendar (.ics)">🍎</a>` : '';
+		const calendarLinkHtml = calendarLink ? `<a class="radar-map-link radar-map-link-calendar" href="${escapeHtml(calendarLink)}" target="_blank" rel="noreferrer" aria-label="Google Calendar" title="Google Calendar">🗓️</a>` : '';
+		const outlookLinkHtml = outlookLink ? `<a class="radar-map-link radar-map-link-outlook" href="${escapeHtml(outlookLink)}" download="${escapeHtml(outlookFile)}" aria-label="Outlook calendar (.ics)" title="Outlook calendar (.ics)">📘</a>` : '';
 		const calendarGroupHtml = (iosLinkHtml || calendarLinkHtml || outlookLinkHtml)
 			? `<span class="radar-map-cal-group"><span class="radar-map-cal-label">Calendar:</span>${iosLinkHtml}${calendarLinkHtml}${outlookLinkHtml}</span>`
 			: '';
