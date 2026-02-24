@@ -27,12 +27,34 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.43',
+		date: '2026-02-24',
+		title: 'Events action labels clarified + calendar controls grouped',
+		summary: 'Renamed event CTA labels for clarity and grouped Google/Outlook calendar actions into a single intuitive control in cards and map popups.',
+		impact: 'Event actions are now clearer at a glance (`Event Link`) and calendar options feel like one coherent action instead of separate unrelated buttons.',
+		current: true,
+		tags: ['events', 'ux', 'labels', 'calendar', 'outlook', 'google'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Renamed card and map link CTA text from generic `Link` to `Event Link`.',
+					'Grouped Google + Outlook calendar actions under one segmented `Calendar` control in event cards.',
+					'Grouped calendar actions in map popups and consolidated detail-view calendar links into a single `Add to calendar` row.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.42',
 		date: '2026-02-24',
 		title: 'Events page flow streamlined: search + list first, map moved below',
 		summary: 'Reordered the DoW Events page so users land on full-text search and the event list immediately, with advanced filters collapsed and the map positioned after the list.',
 		impact: 'You can now open `/events/` and immediately scan/search the list without scrolling past the map; advanced controls remain available under More filters.',
-		current: true,
 		tags: ['events', 'ux', 'search', 'filters', 'map'],
 		groups: [
 			{

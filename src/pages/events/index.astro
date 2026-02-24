@@ -625,9 +625,14 @@ function acquisitionReferences(event: (typeof events)[number]) {
 								<div class="flex w-full flex-col items-start gap-1.5 sm:w-auto sm:items-end">
 									<div class="flex w-full flex-wrap items-center gap-2 sm:w-auto sm:justify-end">
 										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
-										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Link</a> : null}
-										{eventCalendarLink(event) ? <a class="radar-pin-btn radar-calendar-btn" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Google</a> : null}
-										{eventOutlookIcsLink(event) ? <a class="radar-pin-btn radar-outlook-btn" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>Outlook</a> : null}
+										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Event Link</a> : null}
+										{(eventCalendarLink(event) || eventOutlookIcsLink(event)) ? (
+											<span class="radar-calendar-group" aria-label="Calendar options">
+												<span class="radar-calendar-group-label">Calendar</span>
+												{eventCalendarLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-google" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Google</a> : null}
+												{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>Outlook</a> : null}
+											</span>
+										) : null}
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
 									</div>
 									<div class="radar-badge-row">
@@ -653,8 +658,14 @@ function acquisitionReferences(event: (typeof events)[number]) {
 											{eventPrimaryLink(event) ? <li><a href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Official page</a></li> : null}
 											{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <li><a href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM opportunity</a></li> : null}
 											{eventAuxiliaryLinks(event).registration ? <li><a href={eventAuxiliaryLinks(event).registration!} target="_blank" rel="noreferrer">Registration</a></li> : null}
-											{eventCalendarLink(event) ? <li><a href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Add to Google Calendar</a></li> : null}
-											{eventOutlookIcsLink(event) ? <li><a href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>Download Outlook (.ics)</a></li> : null}
+											{(eventCalendarLink(event) || eventOutlookIcsLink(event)) ? (
+												<li>
+													<strong>Add to calendar:</strong>{' '}
+													{eventCalendarLink(event) ? <a href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Google</a> : null}
+													{(eventCalendarLink(event) && eventOutlookIcsLink(event)) ? <span>{' · '}</span> : null}
+													{eventOutlookIcsLink(event) ? <a href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>Outlook (.ics)</a> : null}
+												</li>
+											) : null}
 											{eventAuxiliaryLinks(event).callForPapers ? <li><a href={eventAuxiliaryLinks(event).callForPapers!} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
 											{eventAuxiliaryLinks(event).agenda ? <li><a href={eventAuxiliaryLinks(event).agenda!} target="_blank" rel="noreferrer">Agenda</a></li> : null}
 											{eventAuxiliaryLinks(event).hotelBlock ? <li><a href={eventAuxiliaryLinks(event).hotelBlock!} target="_blank" rel="noreferrer">Hotel block</a></li> : null}
@@ -1090,10 +1101,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		const days = parseDays(card.dataset.days);
 		const statusClass = `radar-status-${String(status).toLowerCase().replaceAll(' ', '-')}`;
 		const typeClass = `radar-type-${typeTone(type)}`;
-		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event site</a>` : '';
+		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event Link</a>` : '';
 		const samLinkHtml = samLink && samLink !== link ? `<a class="radar-map-link radar-map-link-sam" href="${escapeHtml(samLink)}" target="_blank" rel="noreferrer">SAM</a>` : '';
 		const calendarLinkHtml = calendarLink ? `<a class="radar-map-link radar-map-link-calendar" href="${escapeHtml(calendarLink)}" target="_blank" rel="noreferrer">Google</a>` : '';
 		const outlookLinkHtml = outlookLink ? `<a class="radar-map-link radar-map-link-outlook" href="${escapeHtml(outlookLink)}" download="${escapeHtml(outlookFile)}">Outlook</a>` : '';
+		const calendarGroupHtml = (calendarLinkHtml || outlookLinkHtml)
+			? `<span class="radar-map-cal-group"><span class="radar-map-cal-label">Cal</span>${calendarLinkHtml}${outlookLinkHtml}</span>`
+			: '';
 		return `
 			<div class="radar-map-popup">
 				<div class="radar-map-popup-title">${escapeHtml(title)}</div>
@@ -1101,7 +1115,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 				<div class="radar-map-popup-meta">${escapeHtml(meta)}</div>
 				<div class="radar-map-popup-actions">
 					<span class="radar-map-popup-days">${escapeHtml(daysText(days))}</span>
-					<div class="radar-map-popup-cta">${linkHtml}${samLinkHtml}${calendarLinkHtml}${outlookLinkHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button></div>
+					<div class="radar-map-popup-cta">${linkHtml}${samLinkHtml}${calendarGroupHtml}<button class="radar-map-jump" type="button" data-event-id="${escapeHtml(id)}">Open event</button></div>
 				</div>
 			</div>
 		`;
@@ -1870,6 +1884,23 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		color: rgba(219, 234, 254, 0.98);
 	}
 	:global(.radar-map-link-outlook:hover) { background: rgba(96, 165, 250, 0.24); }
+	:global(.radar-map-cal-group) {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(71, 85, 105, 0.86);
+		background: rgba(2, 6, 23, 0.9);
+	}
+	:global(.radar-map-cal-label) {
+		font-size: 0.62rem;
+		font-weight: 700;
+		color: rgba(148, 163, 184, 0.95);
+		padding: 0 0.28rem;
+	}
+	:global(.radar-map-cal-group .radar-map-link) {
+		border-width: 0;
+		border-left: 1px solid rgba(71, 85, 105, 0.8);
+		padding: 0.15rem 0.38rem;
+	}
 
 	:global(.radar-leaflet-pin-wrap) { background: transparent; border: 0; }
 	:global(.radar-leaflet-pin) {
@@ -2199,21 +2230,40 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	.radar-link-btn:hover {
 		background: rgba(56, 189, 248, 0.2);
 	}
-	.radar-calendar-btn {
-		border-color: rgba(52, 211, 153, 0.62);
+	.radar-calendar-group {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(71, 85, 105, 0.95);
+		background: rgb(2, 6, 23);
+		overflow: hidden;
+	}
+	.radar-calendar-group-label {
+		padding: 0.28rem 0.42rem;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+		color: rgba(148, 163, 184, 0.96);
+	}
+	.radar-calendar-chip {
+		padding: 0.28rem 0.44rem;
+		font-size: 0.7rem;
+		font-weight: 700;
+		text-decoration: none;
+		border-left: 1px solid rgba(71, 85, 105, 0.85);
+	}
+	.radar-calendar-chip-google {
 		background: rgba(52, 211, 153, 0.14);
 		color: rgba(209, 250, 229, 0.96);
 	}
-	.radar-calendar-btn:hover {
-		background: rgba(52, 211, 153, 0.22);
+	.radar-calendar-chip-google:hover {
+		background: rgba(52, 211, 153, 0.24);
 	}
-	.radar-outlook-btn {
-		border-color: rgba(96, 165, 250, 0.62);
+	.radar-calendar-chip-outlook {
 		background: rgba(96, 165, 250, 0.14);
 		color: rgba(219, 234, 254, 0.98);
 	}
-	.radar-outlook-btn:hover {
-		background: rgba(96, 165, 250, 0.22);
+	.radar-calendar-chip-outlook:hover {
+		background: rgba(96, 165, 250, 0.24);
 	}
 	.radar-link-btn-sam {
 		border-color: rgba(250, 204, 21, 0.68);
