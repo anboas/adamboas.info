@@ -27,12 +27,42 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.54',
+		date: '2026-02-24',
+		title: 'Attending legend key now includes a connect note on hover',
+		summary: 'Added a hover message on the calendar `Attending` legend chip to explicitly signal you will be there and welcome connection.',
+		impact: 'The attending marker now carries clear social intent for anyone scanning the calendar legend.',
+		current: true,
+		tags: ['events', 'ux', 'calendar', 'legend', 'attending'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added hover copy on the `Attending` legend key: “I’ll be there and would love to connect.”',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Introduced a styled legend-tooltip pattern (`data-tooltip`) to keep hover behavior visually consistent with calendar detail surfaces.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Added title/ARIA text fallback for accessibility and non-custom-tooltip contexts.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.53',
 		date: '2026-02-24',
 		title: 'Events status facet now auto-hides when all events share the same status',
 		summary: 'When all visible feed entries are effectively Upcoming, the status designation/facet is suppressed to reduce noise.',
 		impact: 'You no longer see a pointless all-Upcoming status filter or repetitive status labels when they add no decision value.',
-		current: true,
 		tags: ['events', 'ux', 'filters', 'signal', 'calendar'],
 		groups: [
 			{

@@ -603,7 +603,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 				<p id="radar-cal-label" class="radar-cal-label">Month</p>
 				<div class="radar-cal-legend">
 					<span class="radar-cal-legend-chip">Tracked event</span>
-					<span class="radar-cal-legend-chip radar-cal-legend-chip-attending">Attending</span>
+					<span class="radar-cal-legend-chip radar-cal-legend-chip-attending" data-tooltip="I’ll be there and would love to connect." title="I’ll be there and would love to connect." aria-label="Attending. I’ll be there and would love to connect.">Attending</span>
 					<span class="radar-cal-legend-chip">🤖 AI</span>
 					<span class="radar-cal-legend-chip">🧩 Software</span>
 					<span class="radar-cal-legend-chip">☁️ Cloud</span>
@@ -2176,12 +2176,51 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 	:global(.radar-cal-legend-chip) {
 		display: inline-flex;
+		position: relative;
 		align-items: center;
 		border: 1px solid rgba(56, 189, 248, 0.6);
 		background: rgba(56, 189, 248, 0.14);
 		padding: 0.14rem 0.42rem;
 		font-size: 0.64rem;
 		color: rgba(224, 242, 254, 0.96);
+	}
+	:global(.radar-cal-legend-chip[data-tooltip]::after) {
+		content: attr(data-tooltip);
+		display: none;
+		position: absolute;
+		top: calc(100% + 0.26rem);
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 40;
+		min-width: 12rem;
+		max-width: min(24rem, 82vw);
+		padding: 0.38rem 0.48rem;
+		border: 1px solid rgba(100, 116, 139, 0.92);
+		background: rgba(2, 6, 23, 0.98);
+		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.42);
+		font-size: 0.62rem;
+		line-height: 1.25;
+		color: rgba(241, 245, 249, 0.98);
+		white-space: normal;
+		text-align: center;
+	}
+	:global(.radar-cal-legend-chip[data-tooltip]::before) {
+		content: '';
+		display: none;
+		position: absolute;
+		left: 50%;
+		top: calc(100% - 0.06rem);
+		width: 0.52rem;
+		height: 0.52rem;
+		transform: translateX(-50%) rotate(45deg);
+		border-left: 1px solid rgba(100, 116, 139, 0.92);
+		border-top: 1px solid rgba(100, 116, 139, 0.92);
+		background: rgba(2, 6, 23, 0.98);
+		z-index: 41;
+	}
+	:global(.radar-cal-legend-chip[data-tooltip]:hover::after),
+	:global(.radar-cal-legend-chip[data-tooltip]:hover::before) {
+		display: block;
 	}
 	:global(.radar-cal-legend-chip-attending) {
 		border-color: rgba(168, 85, 247, 0.65);
@@ -2954,6 +2993,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			padding: 0.08rem 0.22rem;
 		}
 		:global(.radar-cal-tooltip) {
+			display: none !important;
+		}
+		:global(.radar-cal-legend-chip[data-tooltip]::after),
+		:global(.radar-cal-legend-chip[data-tooltip]::before) {
 			display: none !important;
 		}
 		.radar-filter-chips {
