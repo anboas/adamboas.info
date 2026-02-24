@@ -568,10 +568,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 							<option value="">All types</option>
 							{types.map((type) => <option value={type}>{type}</option>)}
 						</select>
-						<select id="radar-status" class="radar-input" aria-label="Filter by status">
-							<option value="">All statuses</option>
-							{statuses.map((status) => <option value={status}>{status}</option>)}
-						</select>
+						<div id="radar-status-wrap">
+							<select id="radar-status" class="radar-input" aria-label="Filter by status">
+								<option value="">All statuses</option>
+								{statuses.map((status) => <option value={status}>{status}</option>)}
+							</select>
+						</div>
 						<button id="radar-reset" class="radar-btn" type="button">Reset</button>
 						<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
 						<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>High-confidence only</span></label>
@@ -904,6 +906,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const calendarGrid = document.getElementById('radar-calendar-grid');
 	const calendarLabel = document.getElementById('radar-cal-label');
 	const calendarEmpty = document.getElementById('radar-cal-empty');
+	const statusWrap = document.getElementById('radar-status-wrap');
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
@@ -927,6 +930,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	let calendarMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
 	let currentPage = 1;
 	let currentTotalPages = 1;
+	let statusFacetEnabled = true;
 
 
 	function parseDate(value) {
@@ -1184,7 +1188,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 				const topicBadge = segment.item.topic ? `${topicCalendarLabel(segment.item.topic)} ` : '';
 				const labelText = `${segment.item.attending ? '★ ' : ''}${topicBadge}${segment.item.title}`;
 				const detailDate = fmtCalendarDateRange(segment.item.start, segment.item.end);
-				const detailMeta = `${segment.item.branch} · ${segment.item.type} · ${segment.item.status}`;
+				const detailMeta = statusFacetEnabled
+					? `${segment.item.branch} · ${segment.item.type} · ${segment.item.status}`
+					: `${segment.item.branch} · ${segment.item.type}`;
 				const label = document.createElement('span');
 				label.className = 'radar-cal-bar-label';
 				label.textContent = labelText;
@@ -1379,6 +1385,25 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			match.classList.add('is-focus');
 			setTimeout(() => match.classList.remove('is-focus'), 2400);
 		});
+	}
+
+	function applyStatusFacetMode() {
+		const uniqueStatuses = new Set(cards.map((c) => String(c.dataset.status || '').trim()).filter(Boolean));
+		statusFacetEnabled = uniqueStatuses.size > 1;
+		if (!statusFacetEnabled && controls.status) controls.status.value = '';
+		if (statusWrap) statusWrap.classList.toggle('hidden', !statusFacetEnabled);
+		if (!statusFacetEnabled && controls.filterPanel) {
+			const state = stateFromUI();
+			controls.filterPanel.open = hasActiveFilters(state);
+		}
+		for (const card of cards) {
+			const kicker = card.querySelector('.radar-card-kicker');
+			if (!kicker) continue;
+			const branch = card.dataset.branch || 'Unknown';
+			const type = card.dataset.type || 'Unknown';
+			const status = card.dataset.status || 'Unknown';
+			kicker.textContent = statusFacetEnabled ? `${branch} · ${type} · ${status}` : `${branch} · ${type}`;
+		}
 	}
 
 	for (const card of cards) {
@@ -1961,6 +1986,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	readEventState();
 	mapPin = readMapPinPreference();
 	applyUrlState();
+	applyStatusFacetMode();
 	render();
 </script>
 
