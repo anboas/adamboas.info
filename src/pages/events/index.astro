@@ -2058,24 +2058,24 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		line-height: 1.5;
 	}
 
-	.radar-cal-toolbar {
+	:global(.radar-cal-toolbar) {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.4rem;
 	}
-	.radar-cal-label {
+	:global(.radar-cal-label) {
 		font-size: 0.8rem;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
 		color: rgba(191, 219, 254, 0.96);
 	}
-	.radar-cal-legend {
+	:global(.radar-cal-legend) {
 		display: inline-flex;
 		align-items: center;
 		flex-wrap: wrap;
 		gap: 0.4rem;
 	}
-	.radar-cal-legend-chip {
+	:global(.radar-cal-legend-chip) {
 		display: inline-flex;
 		align-items: center;
 		border: 1px solid rgba(56, 189, 248, 0.6);
@@ -2084,39 +2084,39 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		font-size: 0.64rem;
 		color: rgba(224, 242, 254, 0.96);
 	}
-	.radar-cal-legend-chip-attending {
+	:global(.radar-cal-legend-chip-attending) {
 		border-color: rgba(168, 85, 247, 0.65);
 		background: rgba(168, 85, 247, 0.18);
 		color: rgba(243, 232, 255, 0.97);
 	}
-	.radar-calendar-grid {
+	:global(.radar-calendar-grid) {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
 	}
-	.radar-cal-weekdays,
-	.radar-cal-days,
-	.radar-cal-bars {
+	:global(.radar-cal-weekdays),
+	:global(.radar-cal-days),
+	:global(.radar-cal-bars) {
 		display: grid;
 		grid-template-columns: repeat(7, minmax(0, 1fr));
 		gap: 0.28rem;
 	}
-	.radar-cal-weekdays {
+	:global(.radar-cal-weekdays) {
 		gap: 0.3rem;
 	}
-	.radar-cal-weekday {
+	:global(.radar-cal-weekday) {
 		font-size: 0.62rem;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
 		color: rgba(148, 163, 184, 0.95);
 		padding: 0.05rem 0.1rem;
 	}
-	.radar-cal-week {
+	:global(.radar-cal-week) {
 		border: 1px solid rgba(51, 65, 85, 0.9);
 		background: rgba(2, 6, 23, 0.86);
 		padding: 0.35rem;
 	}
-	.radar-cal-day {
+	:global(.radar-cal-day) {
 		min-height: 1.55rem;
 		border: 1px solid rgba(30, 41, 59, 0.9);
 		background: rgba(2, 6, 23, 0.92);
@@ -2125,28 +2125,28 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		align-items: center;
 		justify-content: space-between;
 	}
-	.radar-cal-day.is-outside-month {
+	:global(.radar-cal-day.is-outside-month) {
 		opacity: 0.45;
 	}
-	.radar-cal-day.is-today {
+	:global(.radar-cal-day.is-today) {
 		border-color: rgba(45, 212, 191, 0.72);
 		box-shadow: 0 0 0 1px rgba(45, 212, 191, 0.25) inset;
 	}
-	.radar-cal-day-num {
+	:global(.radar-cal-day-num) {
 		font-size: 0.71rem;
 		color: rgba(241, 245, 249, 0.95);
 	}
-	.radar-cal-day-count {
+	:global(.radar-cal-day-count) {
 		font-size: 0.58rem;
 		color: rgba(148, 163, 184, 0.96);
 		border: 1px solid rgba(71, 85, 105, 0.8);
 		padding: 0 0.24rem;
 	}
-	.radar-cal-bars {
+	:global(.radar-cal-bars) {
 		margin-top: 0.3rem;
 		min-height: 0.1rem;
 	}
-	.radar-cal-bar {
+	:global(.radar-cal-bar) {
 		display: inline-flex;
 		align-items: center;
 		overflow: hidden;
@@ -2160,17 +2160,17 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		padding: 0.12rem 0.3rem;
 		min-height: 1.15rem;
 	}
-	.radar-cal-bar.is-attending {
+	:global(.radar-cal-bar.is-attending) {
 		border-color: rgba(168, 85, 247, 0.68);
 		background: rgba(168, 85, 247, 0.2);
 		color: rgba(243, 232, 255, 0.98);
 		font-weight: 700;
 	}
-	.radar-cal-bar.is-continued-left {
+	:global(.radar-cal-bar.is-continued-left) {
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 	}
-	.radar-cal-bar.is-continued-right {
+	:global(.radar-cal-bar.is-continued-right) {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 	}
@@ -2780,20 +2780,20 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			font-size: 0.7rem;
 			padding: 0.34rem 0.5rem;
 		}
-		.radar-cal-week {
+		:global(.radar-cal-week) {
 			padding: 0.28rem;
 		}
-		.radar-cal-day {
+		:global(.radar-cal-day) {
 			min-height: 1.28rem;
 			padding: 0.1rem 0.16rem;
 		}
-		.radar-cal-day-num {
+		:global(.radar-cal-day-num) {
 			font-size: 0.62rem;
 		}
-		.radar-cal-day-count {
+		:global(.radar-cal-day-count) {
 			font-size: 0.52rem;
 		}
-		.radar-cal-bar {
+		:global(.radar-cal-bar) {
 			font-size: 0.54rem;
 			padding: 0.08rem 0.22rem;
 		}
