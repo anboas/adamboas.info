@@ -27,12 +27,34 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.42',
+		date: '2026-02-24',
+		title: 'Events page flow streamlined: search + list first, map moved below',
+		summary: 'Reordered the DoW Events page so users land on full-text search and the event list immediately, with advanced filters collapsed and the map positioned after the list.',
+		impact: 'You can now open `/events/` and immediately scan/search the list without scrolling past the map; advanced controls remain available under More filters.',
+		current: true,
+		tags: ['events', 'ux', 'search', 'filters', 'map'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Moved the list section above the map section so search and results are adjacent at page entry.',
+					'Promoted full-text search to always-visible in the control shell.',
+					'Collapsed advanced controls under `More filters` to reduce top-of-page clutter.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.41',
 		date: '2026-02-24',
 		title: 'Events calendar export expanded to Outlook (.ics)',
 		summary: 'Added Outlook-compatible ICS downloads for each event alongside existing Google Calendar links across cards, event details, and map popups.',
 		impact: 'DoW events can now be added from the page into both Google Calendar and Outlook workflows without manual re-entry.',
-		current: true,
 		tags: ['events', 'calendar', 'outlook', 'ics', 'ux'],
 		groups: [
 			{
