@@ -27,12 +27,40 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.47',
+		date: '2026-02-24',
+		title: 'Events month calendar added with spanning bars and attending highlights',
+		summary: 'Added a themed month-by-month calendar view with full month day grids and event bars that span across every day of each event duration.',
+		impact: 'You can now scan event timing as a true calendar, navigate month to month, and visually distinguish attended events for future reusable personal calendars.',
+		current: true,
+		tags: ['events', 'ux', 'calendar', 'planning', 'attending'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added a new `Calendar View` section with Prev/Next/This month controls and themed week/day rendering.',
+					'Added event bars that stretch across every day of an event (including multi-day spans across week boundaries).',
+					'Added attended-event highlighting via code-managed `attendingEventIds` for distinct calendar enumeration and future reuse.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Calendar data now derives from filtered event results, so the month view stays in sync with active list filters.',
+					'Added event card data attributes (`data-end-date`, `data-attending`) to support reusable calendar rendering pipelines.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.46',
 		date: '2026-02-24',
 		title: 'Events map pinning: above/below list with saved preference',
 		summary: 'Replaced the map hide toggle with a map placement pin control that moves the map above or below the event list and persists preference in localStorage.',
 		impact: 'Users can keep map and list both visible while choosing preferred scan order; default remains map below list and preference persists per browser.',
-		current: true,
 		tags: ['events', 'ux', 'map', 'localstorage', 'layout'],
 		groups: [
 			{

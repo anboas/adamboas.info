@@ -60,6 +60,15 @@ const events = radarEventsSeed.filter((event) => {
 	return candidateLinks.some((url) => isUsableExternalUrl(url));
 });
 
+const attendingEventIds = new Set<string>([
+	// Add event ids here to mark attendance in the calendar.
+	// Example: 'radar-defense-it-summit-2026',
+]);
+
+function isAttendingEvent(event: (typeof events)[number]) {
+	return attendingEventIds.has(event.id);
+}
+
 const branches = [...new Set(events.map((e) => e.branch))].sort();
 const types = [...new Set(events.map((e) => e.type))].sort();
 const statuses = ['Upcoming', 'Projected', 'Needs Date', 'Past'] as const;
@@ -578,6 +587,28 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			</div>
 		</section>
 
+		<section id="radar-calendar-section" class="card p-5">
+			<div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+				<h2 class="section-title">Calendar View</h2>
+				<div class="radar-cal-toolbar">
+					<button id="radar-cal-prev" class="radar-btn radar-btn-tight" type="button" aria-label="Previous month">Prev month</button>
+					<button id="radar-cal-today" class="radar-btn radar-btn-tight" type="button">This month</button>
+					<button id="radar-cal-next" class="radar-btn radar-btn-tight" type="button" aria-label="Next month">Next month</button>
+				</div>
+			</div>
+			<div class="mb-2 flex flex-wrap items-center justify-between gap-2">
+				<p id="radar-cal-label" class="radar-cal-label">Month</p>
+				<div class="radar-cal-legend">
+					<span class="radar-cal-legend-chip">Tracked event</span>
+					<span class="radar-cal-legend-chip radar-cal-legend-chip-attending">Attending</span>
+				</div>
+			</div>
+			<div id="radar-cal-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-3 text-xs text-slate-300">
+				No dated events match your current filters for this month.
+			</div>
+			<div id="radar-calendar-grid" class="radar-calendar-grid" aria-label="Events calendar"></div>
+		</section>
+
 		<div class="radar-main-col">
 			<section id="radar-list-section" class="card p-5">
 				<div class="mb-3 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -601,9 +632,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 							data-id={event.id}
 							data-days={daysUntilValue(event.startDate) ?? ''}
 							data-date={event.startDate ?? ''}
+							data-end-date={event.endDate ?? event.startDate ?? ''}
 							data-status={event.status}
 							data-type={event.type}
 							data-branch={event.branch}
+							data-attending={isAttendingEvent(event) ? '1' : '0'}
 							data-signal={event.signal}
 							data-confidence={sourceConfidenceBand(event)}
 							data-topics={quickTopicTags(event).join(',')}
@@ -842,6 +875,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		showPast: document.getElementById('radar-show-past'),
 		toggleMap: document.getElementById('radar-toggle-map'),
 		toggleCompact: document.getElementById('radar-toggle-compact'),
+		calendarPrev: document.getElementById('radar-cal-prev'),
+		calendarNext: document.getElementById('radar-cal-next'),
+		calendarToday: document.getElementById('radar-cal-today'),
 		reset: document.getElementById('radar-reset'),
 		topicButtons: Array.from(document.querySelectorAll('[data-topic]')),
 		windowButtons: Array.from(document.querySelectorAll('[data-window-days]')),
@@ -858,6 +894,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const mapSection = document.getElementById('radar-map-section');
 	const listSection = document.getElementById('radar-list-section');
 	const mainCol = document.querySelector('.radar-main-col');
+	const calendarGrid = document.getElementById('radar-calendar-grid');
+	const calendarLabel = document.getElementById('radar-cal-label');
+	const calendarEmpty = document.getElementById('radar-cal-empty');
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
@@ -877,6 +916,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 	let compactMode = true;
 	let mapPin = 'below';
+	let calendarMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
 	let currentPage = 1;
 	let currentTotalPages = 1;
 
@@ -945,6 +985,172 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		else mainCol.appendChild(mapSection);
 		if (controls.toggleMap) {
 			controls.toggleMap.textContent = mapPin === 'above' ? 'Pin map below list' : 'Pin map above list';
+		}
+	}
+
+	function parseYmdLocal(value) {
+		if (!value) return null;
+		const text = String(value).trim();
+		const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(text);
+		if (m) return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+		const d = new Date(text);
+		if (Number.isNaN(d.getTime())) return null;
+		return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+	}
+
+	function addDaysLocal(date, days) {
+		return new Date(date.getFullYear(), date.getMonth(), date.getDate() + days);
+	}
+
+	function dayDiffLocal(a, b) {
+		const dayMs = 86_400_000;
+		const aUtc = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+		const bUtc = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+		return Math.round((bUtc - aUtc) / dayMs);
+	}
+
+	function monthStartLocal(date) {
+		return new Date(date.getFullYear(), date.getMonth(), 1);
+	}
+
+	function sameLocalDay(a, b) {
+		return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+	}
+
+	function calendarItemsFromCards(sourceCards) {
+		const items = [];
+		for (const card of sourceCards) {
+			const start = parseYmdLocal(card.dataset.date || '');
+			if (!start) continue;
+			const endRaw = parseYmdLocal(card.dataset.endDate || card.dataset.date || '');
+			const end = endRaw && endRaw >= start ? endRaw : start;
+			items.push({
+				id: card.dataset.id || '',
+				title: card.dataset.title || 'Untitled event',
+				start,
+				end,
+				attending: card.dataset.attending === '1',
+				link: card.dataset.link || '',
+				branch: card.dataset.branch || '',
+				type: card.dataset.type || '',
+				status: card.dataset.status || '',
+			});
+		}
+		items.sort((a, b) => a.start - b.start || dayDiffLocal(b.start, b.end) - dayDiffLocal(a.start, a.end) || a.title.localeCompare(b.title));
+		return items;
+	}
+
+	function segmentWeekItems(items, weekStart, weekEnd) {
+		const segments = [];
+		for (const item of items) {
+			if (item.end < weekStart || item.start > weekEnd) continue;
+			const start = item.start < weekStart ? weekStart : item.start;
+			const end = item.end > weekEnd ? weekEnd : item.end;
+			segments.push({
+				item,
+				startCol: dayDiffLocal(weekStart, start) + 1,
+				endCol: dayDiffLocal(weekStart, end) + 1,
+				startsInWeek: item.start >= weekStart,
+				endsInWeek: item.end <= weekEnd,
+			});
+		}
+		segments.sort((a, b) => a.startCol - b.startCol || b.endCol - a.endCol || a.item.title.localeCompare(b.item.title));
+		const laneEnds = [];
+		for (const segment of segments) {
+			let lane = laneEnds.findIndex((endCol) => segment.startCol > endCol);
+			if (lane === -1) {
+				lane = laneEnds.length;
+				laneEnds.push(segment.endCol);
+			} else {
+				laneEnds[lane] = segment.endCol;
+			}
+			segment.lane = lane;
+		}
+		return { segments, lanes: laneEnds.length };
+	}
+
+	function fmtCalendarMonth(date) {
+		return new Intl.DateTimeFormat(undefined, { month: 'long', year: 'numeric' }).format(date);
+	}
+
+	function renderCalendar(sourceCards) {
+		if (!calendarGrid) return;
+		const items = calendarItemsFromCards(sourceCards);
+		const monthStart = monthStartLocal(calendarMonth);
+		const monthEnd = new Date(monthStart.getFullYear(), monthStart.getMonth() + 1, 0);
+		const gridStart = addDaysLocal(monthStart, -monthStart.getDay());
+		const days = Array.from({ length: 42 }, (_, idx) => addDaysLocal(gridStart, idx));
+		const hasInMonth = items.some((item) => item.end >= monthStart && item.start <= monthEnd);
+
+		if (calendarLabel) calendarLabel.textContent = fmtCalendarMonth(monthStart);
+		if (calendarEmpty) calendarEmpty.classList.toggle('hidden', hasInMonth);
+		calendarGrid.innerHTML = '';
+
+		const weekdayRow = document.createElement('div');
+		weekdayRow.className = 'radar-cal-weekdays';
+		for (const label of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']) {
+			const cell = document.createElement('div');
+			cell.className = 'radar-cal-weekday';
+			cell.textContent = label;
+			weekdayRow.appendChild(cell);
+		}
+		calendarGrid.appendChild(weekdayRow);
+
+		for (let week = 0; week < 6; week += 1) {
+			const weekStart = days[week * 7];
+			const weekEnd = days[week * 7 + 6];
+			const weekWrap = document.createElement('div');
+			weekWrap.className = 'radar-cal-week';
+
+			const dayRow = document.createElement('div');
+			dayRow.className = 'radar-cal-days';
+			for (let i = 0; i < 7; i += 1) {
+				const day = days[week * 7 + i];
+				const dayCell = document.createElement('div');
+				dayCell.className = 'radar-cal-day';
+				if (day.getMonth() !== monthStart.getMonth()) dayCell.classList.add('is-outside-month');
+				if (sameLocalDay(day, new Date())) dayCell.classList.add('is-today');
+
+				const dayNum = document.createElement('span');
+				dayNum.className = 'radar-cal-day-num';
+				dayNum.textContent = String(day.getDate());
+				dayCell.appendChild(dayNum);
+
+				const dayMatches = items.filter((item) => item.start <= day && item.end >= day).length;
+				if (dayMatches) {
+					const dayCount = document.createElement('span');
+					dayCount.className = 'radar-cal-day-count';
+					dayCount.textContent = String(dayMatches);
+					dayCell.appendChild(dayCount);
+				}
+
+				dayRow.appendChild(dayCell);
+			}
+			weekWrap.appendChild(dayRow);
+
+			const { segments, lanes } = segmentWeekItems(items, weekStart, weekEnd);
+			const bars = document.createElement('div');
+			bars.className = 'radar-cal-bars';
+			if (lanes > 0) bars.style.gridTemplateRows = `repeat(${lanes}, minmax(1.15rem, auto))`;
+			for (const segment of segments) {
+				const el = segment.item.link ? document.createElement('a') : document.createElement('span');
+				el.className = 'radar-cal-bar';
+				if (!segment.startsInWeek) el.classList.add('is-continued-left');
+				if (!segment.endsInWeek) el.classList.add('is-continued-right');
+				if (segment.item.attending) el.classList.add('is-attending');
+				el.style.gridColumn = `${segment.startCol} / ${segment.endCol + 1}`;
+				el.style.gridRow = `${segment.lane + 1}`;
+				el.textContent = `${segment.item.attending ? '★ ' : ''}${segment.item.title}`;
+				el.title = `${segment.item.title} · ${segment.item.branch} · ${segment.item.type} · ${segment.item.status}`;
+				if (segment.item.link) {
+					el.href = segment.item.link;
+					el.target = '_blank';
+					el.rel = 'noreferrer';
+				}
+				bars.appendChild(el);
+			}
+			weekWrap.appendChild(bars);
+			calendarGrid.appendChild(weekWrap);
 		}
 	}
 
@@ -1567,6 +1773,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		renderFilterChips(state);
 		renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages);
 		renderRecencyBadges(pageCards);
+		renderCalendar(visible);
 		renderMap(visible);
 
 		const query = toQuery(state);
@@ -1619,6 +1826,19 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	});
 	controls.toggleCompact.addEventListener('click', () => {
 		compactMode = !compactMode;
+		render();
+	});
+	controls.calendarPrev?.addEventListener('click', () => {
+		calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() - 1, 1);
+		render();
+	});
+	controls.calendarNext?.addEventListener('click', () => {
+		calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() + 1, 1);
+		render();
+	});
+	controls.calendarToday?.addEventListener('click', () => {
+		const now = new Date();
+		calendarMonth = new Date(now.getFullYear(), now.getMonth(), 1);
 		render();
 	});
 	pageFirst?.addEventListener('click', () => {
@@ -1836,6 +2056,123 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		margin-top: 0.4rem;
 		padding-left: 1rem;
 		line-height: 1.5;
+	}
+
+	.radar-cal-toolbar {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+	}
+	.radar-cal-label {
+		font-size: 0.8rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(191, 219, 254, 0.96);
+	}
+	.radar-cal-legend {
+		display: inline-flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+	}
+	.radar-cal-legend-chip {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(56, 189, 248, 0.6);
+		background: rgba(56, 189, 248, 0.14);
+		padding: 0.14rem 0.42rem;
+		font-size: 0.64rem;
+		color: rgba(224, 242, 254, 0.96);
+	}
+	.radar-cal-legend-chip-attending {
+		border-color: rgba(168, 85, 247, 0.65);
+		background: rgba(168, 85, 247, 0.18);
+		color: rgba(243, 232, 255, 0.97);
+	}
+	.radar-calendar-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.radar-cal-weekdays,
+	.radar-cal-days,
+	.radar-cal-bars {
+		display: grid;
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+		gap: 0.28rem;
+	}
+	.radar-cal-weekdays {
+		gap: 0.3rem;
+	}
+	.radar-cal-weekday {
+		font-size: 0.62rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(148, 163, 184, 0.95);
+		padding: 0.05rem 0.1rem;
+	}
+	.radar-cal-week {
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		background: rgba(2, 6, 23, 0.86);
+		padding: 0.35rem;
+	}
+	.radar-cal-day {
+		min-height: 1.55rem;
+		border: 1px solid rgba(30, 41, 59, 0.9);
+		background: rgba(2, 6, 23, 0.92);
+		padding: 0.15rem 0.22rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.radar-cal-day.is-outside-month {
+		opacity: 0.45;
+	}
+	.radar-cal-day.is-today {
+		border-color: rgba(45, 212, 191, 0.72);
+		box-shadow: 0 0 0 1px rgba(45, 212, 191, 0.25) inset;
+	}
+	.radar-cal-day-num {
+		font-size: 0.71rem;
+		color: rgba(241, 245, 249, 0.95);
+	}
+	.radar-cal-day-count {
+		font-size: 0.58rem;
+		color: rgba(148, 163, 184, 0.96);
+		border: 1px solid rgba(71, 85, 105, 0.8);
+		padding: 0 0.24rem;
+	}
+	.radar-cal-bars {
+		margin-top: 0.3rem;
+		min-height: 0.1rem;
+	}
+	.radar-cal-bar {
+		display: inline-flex;
+		align-items: center;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		border: 1px solid rgba(56, 189, 248, 0.6);
+		background: rgba(56, 189, 248, 0.18);
+		color: rgba(224, 242, 254, 0.98);
+		font-size: 0.62rem;
+		text-decoration: none;
+		padding: 0.12rem 0.3rem;
+		min-height: 1.15rem;
+	}
+	.radar-cal-bar.is-attending {
+		border-color: rgba(168, 85, 247, 0.68);
+		background: rgba(168, 85, 247, 0.2);
+		color: rgba(243, 232, 255, 0.98);
+		font-weight: 700;
+	}
+	.radar-cal-bar.is-continued-left {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.radar-cal-bar.is-continued-right {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
 	}
 
 	.radar-map {
@@ -2419,12 +2756,6 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 
 	@media (max-width: 767px) {
-		#radar-list-section {
-			order: 1;
-		}
-		#radar-map-section {
-			order: 2;
-		}
 		.radar-map {
 			height: 240px;
 		}
@@ -2448,6 +2779,23 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		.radar-btn-tight {
 			font-size: 0.7rem;
 			padding: 0.34rem 0.5rem;
+		}
+		.radar-cal-week {
+			padding: 0.28rem;
+		}
+		.radar-cal-day {
+			min-height: 1.28rem;
+			padding: 0.1rem 0.16rem;
+		}
+		.radar-cal-day-num {
+			font-size: 0.62rem;
+		}
+		.radar-cal-day-count {
+			font-size: 0.52rem;
+		}
+		.radar-cal-bar {
+			font-size: 0.54rem;
+			padding: 0.08rem 0.22rem;
 		}
 		.radar-filter-chips {
 			flex-wrap: nowrap;
