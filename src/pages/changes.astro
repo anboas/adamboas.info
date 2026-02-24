@@ -27,12 +27,39 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.55',
+		date: '2026-02-24',
+		title: 'Events calendar actions now include iOS, Google, and Outlook with clearer labels',
+		summary: 'Updated event calendar action labels to `Calendar: iOS / Google / Outlook` with icon-marked options and explicit `.ics` cues for iOS/Outlook.',
+		impact: 'Calendar actions are now easier to understand at a glance and better aligned to device-specific intent (especially iOS + Outlook `.ics`).',
+		current: true,
+		tags: ['events', 'ux', 'calendar', 'integration', 'labels'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added iOS calendar action (`🍎 iOS (.ics)`) alongside Google and Outlook in event cards and details.',
+					'Added iOS calendar action in map popup calendar group for parity across list/map surfaces.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated calendar group label to `Calendar:` and standardized icon-led labels (`🍎`, `🗓️`, `📘`).',
+					'Clarified Outlook and iOS actions with explicit `.ics` label suffixes.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.54',
 		date: '2026-02-24',
 		title: 'Attending legend key now includes a connect note on hover',
 		summary: 'Added a hover message on the calendar `Attending` legend chip to explicitly signal you will be there and welcome connection.',
 		impact: 'The attending marker now carries clear social intent for anyone scanning the calendar legend.',
-		current: true,
 		tags: ['events', 'ux', 'calendar', 'legend', 'attending'],
 		groups: [
 			{

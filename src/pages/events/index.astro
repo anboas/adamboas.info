@@ -462,6 +462,10 @@ function eventOutlookIcsLink(event: (typeof events)[number]) {
 	return `data:text/calendar;charset=utf-8,${encodeURIComponent(ics)}`;
 }
 
+function eventIosIcsLink(event: (typeof events)[number]) {
+	return eventOutlookIcsLink(event);
+}
+
 function eventIcsFilename(event: (typeof events)[number]) {
 	return `${event.id}.ics`;
 }
@@ -651,6 +655,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 							data-link={eventPrimaryLink(event) ?? ''}
 							data-sam-link={samOpportunityLink(event) ?? ''}
 							data-calendar-link={eventCalendarLink(event) ?? ''}
+							data-ios-link={eventIosIcsLink(event) ?? ''}
 							data-outlook-link={eventOutlookIcsLink(event) ?? ''}
 							data-lat={event.location.lat}
 							data-lng={event.location.lng}
@@ -671,11 +676,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 									<div class="flex w-full flex-wrap items-center gap-2 sm:w-auto sm:justify-end">
 										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
 										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Event Link</a> : null}
-										{(eventCalendarLink(event) || eventOutlookIcsLink(event)) ? (
+										{(eventCalendarLink(event) || eventIosIcsLink(event) || eventOutlookIcsLink(event)) ? (
 											<span class="radar-calendar-group" aria-label="Calendar options">
-												<span class="radar-calendar-group-label">Calendar</span>
-												{eventCalendarLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-google" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Google</a> : null}
-												{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>Outlook</a> : null}
+												<span class="radar-calendar-group-label">Calendar:</span>
+												{eventIosIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-ios" href={eventIosIcsLink(event)!} target="_blank" rel="noreferrer">🍎 iOS (.ics)</a> : null}
+												{eventCalendarLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-google" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">🗓️ Google</a> : null}
+												{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>📘 Outlook (.ics)</a> : null}
 											</span>
 										) : null}
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
@@ -704,12 +710,14 @@ function acquisitionReferences(event: (typeof events)[number]) {
 											{eventPrimaryLink(event) ? <li><a href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Official page</a></li> : null}
 											{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <li><a href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM opportunity</a></li> : null}
 											{eventAuxiliaryLinks(event).registration ? <li><a href={eventAuxiliaryLinks(event).registration!} target="_blank" rel="noreferrer">Registration</a></li> : null}
-											{(eventCalendarLink(event) || eventOutlookIcsLink(event)) ? (
+											{(eventCalendarLink(event) || eventIosIcsLink(event) || eventOutlookIcsLink(event)) ? (
 												<li>
-													<strong>Add to calendar:</strong>{' '}
-													{eventCalendarLink(event) ? <a href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">Google</a> : null}
-													{(eventCalendarLink(event) && eventOutlookIcsLink(event)) ? <span>{' · '}</span> : null}
-													{eventOutlookIcsLink(event) ? <a href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>Outlook (.ics)</a> : null}
+													<strong>Calendar:</strong>{' '}
+													{eventIosIcsLink(event) ? <a href={eventIosIcsLink(event)!} target="_blank" rel="noreferrer">🍎 iOS (.ics)</a> : null}
+													{(eventIosIcsLink(event) && eventCalendarLink(event)) ? <span>{' / '}</span> : null}
+													{eventCalendarLink(event) ? <a href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">🗓️ Google</a> : null}
+													{((eventIosIcsLink(event) || eventCalendarLink(event)) && eventOutlookIcsLink(event)) ? <span>{' / '}</span> : null}
+													{eventOutlookIcsLink(event) ? <a href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>📘 Outlook (.ics)</a> : null}
 												</li>
 											) : null}
 											{eventAuxiliaryLinks(event).callForPapers ? <li><a href={eventAuxiliaryLinks(event).callForPapers!} target="_blank" rel="noreferrer">Call for papers</a></li> : null}
@@ -1499,6 +1507,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		const link = card.dataset.link || '';
 		const samLink = card.dataset.samLink || '';
 		const calendarLink = card.dataset.calendarLink || '';
+		const iosLink = card.dataset.iosLink || '';
 		const outlookLink = card.dataset.outlookLink || '';
 		const outlookFile = `${String(id || 'event').replace(/[^a-z0-9_-]/gi, '-')}.ics`;
 		const days = parseDays(card.dataset.days);
@@ -1506,10 +1515,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		const typeClass = `radar-type-${typeTone(type)}`;
 		const linkHtml = link ? `<a class="radar-map-link" href="${escapeHtml(link)}" target="_blank" rel="noreferrer">Event Link</a>` : '';
 		const samLinkHtml = samLink && samLink !== link ? `<a class="radar-map-link radar-map-link-sam" href="${escapeHtml(samLink)}" target="_blank" rel="noreferrer">SAM</a>` : '';
-		const calendarLinkHtml = calendarLink ? `<a class="radar-map-link radar-map-link-calendar" href="${escapeHtml(calendarLink)}" target="_blank" rel="noreferrer">Google</a>` : '';
-		const outlookLinkHtml = outlookLink ? `<a class="radar-map-link radar-map-link-outlook" href="${escapeHtml(outlookLink)}" download="${escapeHtml(outlookFile)}">Outlook</a>` : '';
-		const calendarGroupHtml = (calendarLinkHtml || outlookLinkHtml)
-			? `<span class="radar-map-cal-group"><span class="radar-map-cal-label">Cal</span>${calendarLinkHtml}${outlookLinkHtml}</span>`
+		const iosLinkHtml = iosLink ? `<a class="radar-map-link radar-map-link-ios" href="${escapeHtml(iosLink)}" target="_blank" rel="noreferrer">🍎 iOS (.ics)</a>` : '';
+		const calendarLinkHtml = calendarLink ? `<a class="radar-map-link radar-map-link-calendar" href="${escapeHtml(calendarLink)}" target="_blank" rel="noreferrer">🗓️ Google</a>` : '';
+		const outlookLinkHtml = outlookLink ? `<a class="radar-map-link radar-map-link-outlook" href="${escapeHtml(outlookLink)}" download="${escapeHtml(outlookFile)}">📘 Outlook (.ics)</a>` : '';
+		const calendarGroupHtml = (iosLinkHtml || calendarLinkHtml || outlookLinkHtml)
+			? `<span class="radar-map-cal-group"><span class="radar-map-cal-label">Calendar:</span>${iosLinkHtml}${calendarLinkHtml}${outlookLinkHtml}</span>`
 			: '';
 		return `
 			<div class="radar-map-popup">
@@ -2529,6 +2539,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		color: rgba(254, 243, 199, 0.96);
 	}
 	:global(.radar-map-link-sam:hover) { background: rgba(250, 204, 21, 0.24); }
+	:global(.radar-map-link-ios) {
+		border-color: rgba(251, 191, 36, 0.62);
+		background: rgba(251, 191, 36, 0.16);
+		color: rgba(254, 243, 199, 0.96);
+	}
+	:global(.radar-map-link-ios:hover) { background: rgba(251, 191, 36, 0.24); }
 	:global(.radar-map-link-calendar) {
 		border-color: rgba(52, 211, 153, 0.62);
 		background: rgba(52, 211, 153, 0.16);
@@ -2907,6 +2923,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		font-weight: 700;
 		text-decoration: none;
 		border-left: 1px solid rgba(71, 85, 105, 0.85);
+	}
+	.radar-calendar-chip-ios {
+		background: rgba(251, 191, 36, 0.14);
+		color: rgba(254, 243, 199, 0.98);
+	}
+	.radar-calendar-chip-ios:hover {
+		background: rgba(251, 191, 36, 0.24);
 	}
 	.radar-calendar-chip-google {
 		background: rgba(52, 211, 153, 0.14);
