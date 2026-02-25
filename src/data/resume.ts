@@ -102,6 +102,7 @@ export const education: EducationItem[] = [
 		name: 'Bachelor of Science — Cybersecurity Management and Policy',
 		year: '2023',
 	},
+	{ slug: 'comptia-security-plus-sy0-601', issuer: 'CompTIA', name: 'Security+ (SY0-601)', year: '2023' },
 	{ slug: 'aws-cloud-practitioner', issuer: 'Amazon Web Services', name: 'AWS Certified Cloud Practitioner', year: '2019' },
 	{ slug: 'aws-solutions-architect-associate', issuer: 'Amazon Web Services', name: 'AWS Certified Solutions Architect – Associate', year: '2019' },
 	{ slug: 'hpe-ase-fortify-v1', issuer: 'Hewlett Packard Enterprise (HPE)', name: 'HPE ASE – Fortify v1', year: '2016' },
