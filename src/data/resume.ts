@@ -19,39 +19,39 @@ export const experience: ExperienceItem[] = [
 		slug: 'kbr-solutions-architect-2025',
 		company: 'KBR',
 		title: 'Solutions Architect',
-		period: '2025–present',
+		period: '2025 - present',
 		summary:
-			"Senior technical strategist driving technology direction and modernization, aligning cloud and software initiatives to mission outcomes. Leads cross-functional delivery, evaluates emerging capabilities, and translates complex technical tradeoffs into actionable plans for leadership.",
+			"Lead enterprise technology strategy and AI adoption pathways aligned to mission objectives, advising senior leadership on how emerging capabilities transition from experimentation to operational integration. Conduct strategic assessments of legacy environments and architect modernization roadmaps suitable for autonomy-enabled mission ecosystems.",
 	},
 	{
 		slug: 'booz-allen-solutions-architect-2024',
 		company: 'Booz Allen Hamilton',
 		title: 'Solutions Architect',
-		period: '2024–2025',
+		period: '2024 - 2025',
 		summary:
-			"Primary author and strategist for DoD-wide modern software policy and implementation plans, including modernization of CODE.mil/CLOUD.mil and the Digital Arsenal catalog. Built repeatable, AI-assisted policy analysis and led cross-enterprise alignment across CIO, Services, and senior steering groups.",
+			"Primary author of Department of Defense Instruction on \"Modern Software Development\" (yet to be published), shaping how AI capabilities are governed, secured, and operationalized across the DoD. Led cross-Service alignment among CIOs, DevSecOps Platforms, and Software Factories to translate modernization strategy into executable enterprise architectures.",
 	},
 	{
 		slug: 'kbr-solutions-architect-2022',
 		company: 'KBR',
 		title: 'Solutions Architect',
-		period: '2022–2024',
+		period: '2022 - 2024',
 		summary:
-			"Led AWS cloud architecture and modernization for naval aviation lifecycle management (AvPLM), improving scalability, security posture, and team cloud competence. Drove security-first optimization with AWS/DNA Engineering and authored training and technical strategy to accelerate DevSecOps adoption.",
+			"Led IL5 cloud architecture and modernization of aviation mission systems, aligning DevSecOps practices and secure cloud integration to support scalable, cyber-resilient operations. Positioned legacy logistics platforms for transition into modern, cloud-native environments capable of supporting future AI-enabled workflows and decision-support capabilities.",
 	},
 	{
 		slug: 'booz-allen-solutions-architect-2019',
 		company: 'Booz Allen Hamilton',
 		title: 'Solutions Architect',
-		period: '2019–2022',
+		period: '2019 - 2022',
 		summary:
-			"Trusted advisor and solution architect for DoD/Navy cloud modernization and DevSecOps initiatives, supporting dozens of teams and applications with migration strategy, cost/security tradeoffs, and execution guidance. Led onboarding/outreach for software factory capabilities and authored modernization and training materials that bridged leadership intent to technical delivery.",
+			"Trusted advisor to senior Information Warfare leadership on DevSecOps, secure cloud architecture, and rapid Compile-to-Combat initiatives within IL5/IL6 environments. Drove mission system modernization strategies that balanced operational speed, accreditation rigor, and scalable delivery pipelines suitable for high-consequence environments.",
 	},
 	{
 		slug: 'kbrwyle-cloud-architect-sre-2018',
 		company: 'KBRwyle',
 		title: 'Cloud Architect / Site Reliability Engineer',
-		period: '2018–2019',
+		period: '2018 - 2019',
 		summary:
 			"Built and operated scalable, automated cloud environments with CI/CD, configuration management, monitoring, and recovery automation to increase reliability and deployment velocity. Instituted best practices and cost tracking to drive resilient, efficient cloud operations.",
 	},
@@ -67,7 +67,7 @@ export const experience: ExperienceItem[] = [
 		slug: 'kbr-software-engineer-2015',
 		company: 'KBR',
 		title: 'Software Engineer',
-		period: '2015–2018',
+		period: '2015 - 2018',
 		summary:
 			"Delivered software in Agile/SCRUM environments and strengthened internal application lifecycle management and security tooling across a diverse tech stack. Led Fortify SSC/SCA configuration, reduced technical debt, and shipped reusable shared libraries to accelerate delivery.",
 	},
