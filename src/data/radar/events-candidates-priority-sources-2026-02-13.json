@@ -1,19 +1,19 @@
 [
   {
-    "id": "radar-military-robotics-autonomous-systems-2026-conference",
-    "title": "Military Robotics & Autonomous Systems 2026 Conference",
-    "description": "ASD Events sourced event for defense ecosystem tracking and engagement planning.",
-    "startDate": "2026-04-13",
-    "endDate": "2026-04-15",
+    "id": "radar-2026-homeland-security-summit",
+    "title": "2026 Homeland Security Summit",
+    "description": "Potomac Officers Club sourced event for defense ecosystem tracking and engagement planning.",
+    "startDate": "2026-11-12",
+    "endDate": null,
     "branch": "Joint",
-    "type": "Conference",
+    "type": "Summit",
     "status": "Upcoming",
     "signal": "Medium",
-    "effort": "High",
+    "effort": "Medium",
     "location": {
-      "city": "London",
+      "city": "Virtual",
       "state": null,
-      "country": "United Kingdom",
+      "country": "USA",
       "lat": 39.5,
       "lng": -98.35
     },
@@ -38,11 +38,10 @@
         "Industry partners"
       ],
       "keywords": [
-        "military",
-        "robotics",
-        "autonomous",
-        "systems",
-        "2026"
+        "2026",
+        "homeland",
+        "security",
+        "summit"
       ],
       "relatedPrograms": [
         "Radar expansion"
@@ -54,99 +53,23 @@
       },
       "provenance": [
         {
-          "name": "ASD Events",
-          "url": "https://www.asdevents.com/defense-security",
+          "name": "Potomac Officers Club",
+          "url": "https://www.potomacofficersclub.com/govcon-events/",
           "type": "aggregator",
           "lastVerified": "2026-02-13",
           "confidence": "High"
         }
       ],
       "links": {
-        "official": "https://www.asdevents.com/event.asp?id=25815"
+        "official": "https://www.potomacofficersclub.com/events/2026-homeland-security-summit/"
       },
       "logistics": {
-        "format": "In-person",
+        "format": "Virtual",
         "estimatedCostUsd": {
-          "min": 1200,
-          "max": 4500
+          "min": 500,
+          "max": 2200
         },
-        "travelBurdenFromDc": "High"
-      },
-      "notes": null
-    }
-  },
-  {
-    "id": "radar-counter-uas-technology-europe-conference-2026",
-    "title": "Counter UAS Technology Europe Conference 2026",
-    "description": "ASD Events sourced event for defense ecosystem tracking and engagement planning.",
-    "startDate": "2026-04-20",
-    "endDate": "2026-04-22",
-    "branch": "Joint",
-    "type": "Conference",
-    "status": "Upcoming",
-    "signal": "Medium",
-    "effort": "High",
-    "location": {
-      "city": "London",
-      "state": null,
-      "country": "United Kingdom",
-      "lat": 39.5,
-      "lng": -98.35
-    },
-    "ontology": {
-      "themes": [
-        "Defense conference monitoring",
-        "Opportunity timing",
-        "Ecosystem engagement"
-      ],
-      "capabilityAreas": [
-        "Acquisition",
-        "Mission systems",
-        "Digital modernization"
-      ],
-      "missionThreads": [
-        "Partnership development",
-        "Program sensing"
-      ],
-      "stakeholders": [
-        "Joint stakeholders",
-        "Program offices",
-        "Industry partners"
-      ],
-      "keywords": [
-        "counter",
-        "technology",
-        "europe",
-        "conference",
-        "2026"
-      ],
-      "relatedPrograms": [
-        "Radar expansion"
-      ],
-      "decisionWindows": {
-        "discovery": "Now to T-90 days",
-        "prep": "T-60 to T-14 days",
-        "execution": "Event window + 14-day follow-up"
-      },
-      "provenance": [
-        {
-          "name": "ASD Events",
-          "url": "https://www.asdevents.com/defense-security",
-          "type": "aggregator",
-          "lastVerified": "2026-02-13",
-          "confidence": "High"
-        }
-      ],
-      "links": {
-        "official": "https://www.asdevents.com/event.asp?id=25774"
-      },
-      "logistics": {
-        "format": "In-person",
-        "estimatedCostUsd": {
-          "min": 1200,
-          "max": 4500
-        },
-        "travelBurdenFromDc": "High"
+        "travelBurdenFromDc": "Medium"
       },
       "notes": null
     }
