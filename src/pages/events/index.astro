@@ -1014,11 +1014,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	function writeClientStore(key, value) {
 		try {
 			localStorage.setItem(key, value);
-			return true;
+			if (localStorage.getItem(key) === value) return true;
 		} catch {}
 		try {
 			sessionStorage.setItem(key, value);
-			return true;
+			if (sessionStorage.getItem(key) === value) return true;
 		} catch {}
 		return writeToWindowNameStorage(key, value);
 	}
