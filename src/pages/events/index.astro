@@ -516,10 +516,15 @@ function confidenceNotes(event: (typeof events)[number]) {
 	return `${confidence} source confidence. ${freshest.label}. ${evidence}`;
 }
 
+function solicitationCount(event: (typeof events)[number]) {
+	return Math.max(0, event.ontology.acquisition?.samIntelligence?.totalMatched ?? 0);
+}
+
 function acquisitionReferences(event: (typeof events)[number]) {
 	const refs: string[] = [];
 	if (event.ontology.acquisition?.solicitationNumber) refs.push(`Solicitation ${event.ontology.acquisition.solicitationNumber}`);
 	if (noticeTypeLabel(event)) refs.push(`${noticeTypeLabel(event)} notice`);
+	if (solicitationCount(event)) refs.push(`${solicitationCount(event)} matched solicitation(s)`);
 	if (samOpportunityLinks(event).length) refs.push(`${samOpportunityLinks(event).length} SAM linked record(s)`);
 	return refs;
 }
@@ -644,6 +649,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 						<option value="soonest">Soonest first</option>
 						<option value="latest">Latest first</option>
 						<option value="signal">Signal first</option>
+						<option value="solicitations">Most solicitations</option>
 						<option value="branch">Branch</option>
 					</select>
 				</div>
@@ -670,6 +676,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 							data-title={event.title}
 							data-link={eventPrimaryLink(event) ?? ''}
 							data-sam-link={samOpportunityLink(event) ?? ''}
+							data-solicitations={solicitationCount(event)}
 							data-calendar-link={eventCalendarLink(event) ?? ''}
 							data-ios-link={eventIosIcsLink(event) ?? ''}
 							data-outlook-link={eventOutlookIcsLink(event) ?? ''}
@@ -704,6 +711,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 										<button class="radar-pin-btn" type="button" data-calendar-focus data-id={event.id}>In Calendar</button>
 									</div>
 									<div class="radar-badge-row">
+										{solicitationCount(event) > 0 ? <span class="radar-solicitations-pill" title="Matched SAM solicitations">{solicitationCount(event)} solicitations</span> : null}
 										<span class={`radar-source-confidence-pill radar-source-confidence-pill-${sourceTypeTone(event)}`} title="Source confidence and source type">{sourceConfidenceLabel(event)} · {sourceTypeLabel(event)}</span>
 										<span class="radar-evidence-pill radar-evidence-pill-fresh hidden" data-fresh-badge title="Added recently to your feed">Fresh</span>
 										<span class="radar-new-pill hidden" data-new-badge>New</span>
@@ -1848,6 +1856,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		} else if (state.sort === 'signal') {
 			const rank = { High: 3, Medium: 2, Low: 1 };
 			visible.sort((a, b) => (rank[b.dataset.signal] - rank[a.dataset.signal]) || sortBySoonest(a, b));
+		} else if (state.sort === 'solicitations') {
+			visible.sort((a, b) => {
+				const aCount = Number(a.dataset.solicitations || '0');
+				const bCount = Number(b.dataset.solicitations || '0');
+				return (bCount - aCount) || sortBySoonest(a, b);
+			});
 		} else if (state.sort === 'branch') {
 			visible.sort((a, b) => (a.dataset.branch || '').localeCompare(b.dataset.branch || '') || sortBySoonest(a, b));
 		} else {
@@ -2893,6 +2907,16 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		border-color: rgba(148, 163, 184, 0.55);
 		color: rgba(226, 232, 240, 0.88);
 	}
+	.radar-solicitations-pill {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.05rem 0.28rem;
+		font-size: 0.56rem;
+		line-height: 1;
+		border: 1px solid rgba(129, 140, 248, 0.72);
+		background: rgba(79, 70, 229, 0.16);
+		color: rgba(224, 231, 255, 0.98);
+	}
 	.radar-new-pill {
 		display: inline-flex;
 		align-items: center;
@@ -3235,7 +3259,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 		.radar-source-confidence-pill,
 		.radar-evidence-pill,
-		.radar-new-pill {
+		.radar-new-pill,
+		.radar-solicitations-pill {
 			font-size: 0.52rem;
 			padding: 0.05rem 0.24rem;
 		}
