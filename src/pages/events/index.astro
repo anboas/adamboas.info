@@ -209,6 +209,46 @@ function samPostedWindow(event: (typeof events)[number]) {
 	return sam.postedFrom ?? sam.postedTo ?? null;
 }
 
+type SamNotice = NonNullable<NonNullable<NonNullable<(typeof events)[number]['ontology']['acquisition']>['samIntelligence']>['topNotices']>[number];
+
+function normalizeMatchText(value: string) {
+	return value.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function stakeholderTokens(stakeholder: string) {
+	const normalized = normalizeMatchText(stakeholder);
+	const tokens = new Set(normalized.split(' ').filter((token) => token.length >= 3));
+	if (normalized.includes('ussocom') || normalized.includes('special operations command')) {
+		tokens.add('ussocom');
+		tokens.add('socom');
+		tokens.add('special operations command');
+	}
+	if (normalized.includes('marsoc')) {
+		tokens.add('marsoc');
+		tokens.add('marine forces special operations command');
+	}
+	if (normalized.includes('navy')) {
+		tokens.add('navy');
+		tokens.add('naval');
+	}
+	if (normalized.includes('air force')) {
+		tokens.add('air force');
+		tokens.add('afsoc');
+	}
+	return [...tokens].filter((token) => token.length >= 3);
+}
+
+function noticeOverlapStakeholders(event: (typeof events)[number], notice: SamNotice) {
+	const noticeBlob = normalizeMatchText(`${notice.title} ${notice.agencyPath ?? ''} ${notice.solicitationNumber ?? ''}`);
+	return event.ontology.stakeholders.filter((stakeholder) => stakeholderTokens(stakeholder).some((token) => noticeBlob.includes(token)));
+}
+
+function overlapCoverage(event: (typeof events)[number]) {
+	const notices = samTopNotices(event);
+	const withOverlap = notices.filter((notice) => noticeOverlapStakeholders(event, notice).length > 0).length;
+	return { withOverlap, total: notices.length };
+}
+
 function inferredGovernmentOrganizations(event: (typeof events)[number]) {
 	const govHint = /(department|agency|office|command|program\s+office|peo|navy|army|air\s*force|marine|joint|dod|federal|gov|u\.s\.)/i;
 	const genericNoise = new Set([
@@ -774,39 +814,14 @@ function acquisitionReferences(event: (typeof events)[number]) {
 								{hasSamIntelligence(event) ? (
 									<div class="mt-4 grid gap-4 lg:grid-cols-2">
 										<div>
-											<p class="radar-section-label">Opportunity intelligence (SAM)</p>
+											<p class="radar-section-label">Comparative pane: event stakeholders</p>
 											<ul class="radar-listing">
-												{event.ontology.acquisition?.samIntelligence?.collectedAt ? <li><strong>Last SAM run:</strong> {fmtDate(event.ontology.acquisition.samIntelligence.collectedAt)}</li> : null}
-												{samPostedWindow(event) ? <li><strong>Posted window:</strong> {samPostedWindow(event)}</li> : null}
-												{typeof event.ontology.acquisition?.samIntelligence?.totalMatched === 'number' ? <li><strong>SAM matches:</strong> {event.ontology.acquisition.samIntelligence.totalMatched}</li> : null}
-												{noticeTypeLabel(event) ? <li><strong>Notice type:</strong> {noticeTypeLabel(event)}</li> : null}
-												{inferEngagementKinds(event).length ? <li><strong>Opportunity signals:</strong> {inferEngagementKinds(event).join(', ')}</li> : null}
-												{event.ontology.acquisition?.agency ? <li><strong>Agency:</strong> {event.ontology.acquisition?.agency}</li> : null}
-												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Reference solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
-												{event.ontology.acquisition?.responseDueDate ? <li><strong>Nearest response due:</strong> {fmtDate(event.ontology.acquisition?.responseDueDate)}</li> : null}
-												{acquisitionReferences(event).length ? <li><strong>Acquisition references:</strong> {acquisitionReferences(event).join(' · ')}</li> : null}
+												{event.ontology.stakeholders.length ? <li><strong>Involved parties:</strong> {event.ontology.stakeholders.join(' · ')}</li> : null}
+												{event.ontology.missionThreads.length ? <li><strong>Mission threads:</strong> {event.ontology.missionThreads.join(' · ')}</li> : null}
+												{event.ontology.capabilityAreas.length ? <li><strong>Capability areas:</strong> {event.ontology.capabilityAreas.join(' · ')}</li> : null}
+												{inferredGovernmentOrganizations(event).length ? <li><strong>Government orgs inferred:</strong> {inferredGovernmentOrganizations(event).join(' · ')}</li> : null}
 											</ul>
-										</div>
-										<div>
-											<p class="radar-section-label">Top SAM notices</p>
-											{samTopNotices(event).length ? (
-												<ul class="radar-listing">
-													{samTopNotices(event).map((notice) => (
-														<li>
-															{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}
-															<span class="text-slate-500"> · {notice.noticeType}</span>
-															{notice.postedDate ? <span class="text-slate-500"> · posted {notice.postedDate}</span> : null}
-															{notice.responseDueDate ? <span class="text-slate-500"> · due {fmtDate(notice.responseDueDate)}</span> : null}
-															{notice.solicitationNumber ? <span class="text-slate-500"> · {notice.solicitationNumber}</span> : null}
-														</li>
-													))}
-												</ul>
-											) : (
-												<p class="mt-2 text-xs text-slate-500">No SAM notices captured in this run.</p>
-											)}
-										</div>
-										<div>
-											<p class="radar-section-label">Public government contacts</p>
+											<p class="radar-section-label mt-3">Government contacts</p>
 											{governmentPocs(event).length ? (
 												<ul class="radar-listing">
 													{governmentPocs(event).map((contact) => (
@@ -823,13 +838,33 @@ function acquisitionReferences(event: (typeof events)[number]) {
 											)}
 										</div>
 										<div>
-											<p class="radar-section-label">Intelligence notes</p>
-											{informationalInsights(event).length ? (
+											<p class="radar-section-label">Comparative pane: solicitation overlap</p>
+											<ul class="radar-listing">
+												{event.ontology.acquisition?.samIntelligence?.collectedAt ? <li><strong>Last SAM run:</strong> {fmtDate(event.ontology.acquisition.samIntelligence.collectedAt)}</li> : null}
+												{samPostedWindow(event) ? <li><strong>Posted window:</strong> {samPostedWindow(event)}</li> : null}
+												{typeof event.ontology.acquisition?.samIntelligence?.totalMatched === 'number' ? <li><strong>Total matched solicitations:</strong> {event.ontology.acquisition.samIntelligence.totalMatched}</li> : null}
+												<li><strong>Captured in this pane:</strong> {samTopNotices(event).length}</li>
+												<li><strong>Stakeholder overlap coverage:</strong> {overlapCoverage(event).withOverlap}/{overlapCoverage(event).total} captured notices</li>
+												{event.ontology.acquisition?.agency ? <li><strong>Agency focus:</strong> {event.ontology.acquisition?.agency}</li> : null}
+												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Reference solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
+												{event.ontology.acquisition?.responseDueDate ? <li><strong>Nearest response due:</strong> {fmtDate(event.ontology.acquisition?.responseDueDate)}</li> : null}
+											</ul>
+											<p class="radar-section-label mt-3">Captured solicitation list</p>
+											{samTopNotices(event).length ? (
 												<ul class="radar-listing">
-													{informationalInsights(event).map((insight) => <li>{insight}</li>)}
+													{samTopNotices(event).map((notice) => (
+														<li>
+															{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}
+															<span class="text-slate-500"> · {notice.noticeType}</span>
+															{notice.postedDate ? <span class="text-slate-500"> · posted {notice.postedDate}</span> : null}
+															{notice.responseDueDate ? <span class="text-slate-500"> · due {fmtDate(notice.responseDueDate)}</span> : null}
+															{notice.solicitationNumber ? <span class="text-slate-500"> · {notice.solicitationNumber}</span> : null}
+															{noticeOverlapStakeholders(event, notice).length ? <span class="text-slate-400"> · overlap: {noticeOverlapStakeholders(event, notice).join(', ')}</span> : <span class="text-slate-500"> · overlap: none</span>}
+														</li>
+													))}
 												</ul>
 											) : (
-												<p class="mt-2 text-xs text-slate-500">No sourced intelligence notes yet.</p>
+												<p class="mt-2 text-xs text-slate-500">No SAM notices captured in this run yet.</p>
 											)}
 										</div>
 									</div>
