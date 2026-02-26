@@ -323,7 +323,7 @@ const solicitationTagRules: SolicitationTagRule[] = [
 	{
 		key: 'cyber',
 		label: 'Cybersecurity',
-		pattern: /\bcyber\b|zero trust|information assurance|rmf|security operations|security operations center|vulnerability|iam|issm|acas/i,
+		pattern: /\bcyber\b|zero trust|information assurance|rmf|security operations|security operations center|vulnerability|\biam\b|issm|acas/i,
 		classificationPrefixes: ['D316', 'D310'],
 	},
 	{
@@ -1097,7 +1097,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												<label class="text-[11px] text-slate-400">Filter
 													<select class="radar-input radar-input-sort radar-inline-select" data-sam-filter data-event-id={event.id}>
 														<option value="all">All</option>
-														<option value="my-focus">My focus (Software/Cloud/AI/Cyber/Data/Logistics/Maintenance)</option>
+														<option value="my-focus">My focus (Software/Cloud/AI/Cyber/Data)</option>
 														<option value="software">Software</option>
 														<option value="cloud">Cloud</option>
 														<option value="ai">AI/ML</option>
@@ -2500,7 +2500,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (!filterMode || filterMode === 'all') return true;
 		const tags = (row.dataset.tags || '').split(',').map((value) => value.trim()).filter(Boolean);
 		if (filterMode === 'my-focus') {
-			return ['software', 'cloud', 'ai', 'cyber', 'data', 'logistics', 'maintenance'].some((tag) => tags.includes(tag));
+			return ['software', 'cloud', 'ai', 'cyber', 'data'].some((tag) => tags.includes(tag));
 		}
 		return tags.includes(filterMode);
 	}
