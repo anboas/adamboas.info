@@ -4,6 +4,7 @@
 Outputs:
 - Full SAM solicitation pull (configured window + profile queries)
 - Public participant-organization signals from SOF Week sitemap pages
+- Local cache of pulled payloads to minimize repeat external API calls
 
 Usage:
   SAM_API_KEY=xxxx python3 scripts/fetch-sofweek-intelligence.py
@@ -12,6 +13,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -29,6 +31,8 @@ SITEMAP_URL = "https://sofweek.org/page-sitemap1.xml"
 
 ROOT = Path("/home/anboas/clawd/adamboas-site")
 OUT_JSON = ROOT / "src/data/radar/intel/sofweek-intel.json"
+DEFAULT_CACHE_DIR = ROOT / ".cache/sofweek-intel"
+DEFAULT_CACHE_TTL_HOURS = 24
 
 POSTED_FROM = "01/01/2026"
 POSTED_TO = "02/26/2026"
@@ -90,7 +94,55 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--posted-to", default=POSTED_TO)
     parser.add_argument("--ptypes", default=PTYPE)
     parser.add_argument("--out", default=str(OUT_JSON))
+    parser.add_argument("--cache-dir", default=str(DEFAULT_CACHE_DIR))
+    parser.add_argument("--cache-ttl-hours", type=float, default=DEFAULT_CACHE_TTL_HOURS)
+    parser.add_argument("--no-cache", action="store_true", help="Disable on-disk cache reads/writes")
+    parser.add_argument("--force-refresh", action="store_true", help="Bypass cache reads and fetch from origin")
     return parser.parse_args()
+
+
+def stable_hash(payload: dict[str, Any]) -> str:
+    data = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(data.encode("utf-8")).hexdigest()
+
+
+def is_cache_fresh(path: Path, ttl_seconds: float) -> bool:
+    if not path.exists():
+        return False
+    if ttl_seconds <= 0:
+        return False
+    age_seconds = time.time() - path.stat().st_mtime
+    return age_seconds <= ttl_seconds
+
+
+def read_cached_json(path: Path, ttl_seconds: float) -> dict[str, Any] | None:
+    if not is_cache_fresh(path, ttl_seconds):
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def write_cached_json(path: Path, payload: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, separators=(",", ":")), encoding="utf-8")
+
+
+def read_cached_text(path: Path, ttl_seconds: float | None = None) -> str | None:
+    if not path.exists():
+        return None
+    if ttl_seconds is not None and not is_cache_fresh(path, ttl_seconds):
+        return None
+    try:
+        return path.read_text(encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def write_cached_text(path: Path, payload: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(payload, encoding="utf-8")
 
 
 def norm_text(value: str | None) -> str:
@@ -171,10 +223,23 @@ def sam_get_with_retry(session: requests.Session, params: dict[str, Any], retrie
     raise RuntimeError("SAM request failed with unknown error")
 
 
-def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+def fetch_sam(
+    api_key: str,
+    posted_from: str,
+    posted_to: str,
+    ptypes: str,
+    cache_dir: Path,
+    cache_ttl_seconds: float,
+    use_cache: bool,
+    force_refresh: bool,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
     session = requests.Session()
     all_rows: dict[str, dict[str, Any]] = {}
     stats: list[dict[str, Any]] = []
+    sam_cache_dir = cache_dir / "sam-pages"
+
+    total_cache_hits = 0
+    total_api_calls = 0
 
     for query in QUERIES:
         offset = 0
@@ -182,6 +247,8 @@ def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tu
         total = None
         fetched = 0
         query_error: str | None = None
+        query_cache_hits = 0
+        query_api_calls = 0
 
         while True:
             params = {
@@ -193,13 +260,30 @@ def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tu
                 "offset": offset,
             }
             params.update(query)
-            try:
-                response = sam_get_with_retry(session, params)
-            except Exception as exc:  # noqa: BLE001
-                query_error = str(exc)
-                break
 
-            payload = response.json()
+            params_for_cache = {k: v for k, v in params.items() if k != "api_key"}
+            cache_key = stable_hash({"endpoint": "sam-opportunities-v2-search", **params_for_cache})
+            cache_file = sam_cache_dir / f"{cache_key}.json"
+
+            payload: dict[str, Any] | None = None
+            if use_cache and not force_refresh:
+                payload = read_cached_json(cache_file, cache_ttl_seconds)
+                if payload is not None:
+                    total_cache_hits += 1
+                    query_cache_hits += 1
+
+            if payload is None:
+                try:
+                    response = sam_get_with_retry(session, params)
+                    payload = response.json()
+                    total_api_calls += 1
+                    query_api_calls += 1
+                    if use_cache:
+                        write_cached_json(cache_file, payload)
+                except Exception as exc:  # noqa: BLE001
+                    query_error = str(exc)
+                    break
+
             rows = payload.get("opportunitiesData") or []
             if total is None:
                 total = payload.get("totalRecords")
@@ -224,7 +308,13 @@ def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tu
             if total is not None and offset >= int(total):
                 break
 
-        stat: dict[str, Any] = {"query": query, "totalRecords": total, "fetched": fetched}
+        stat: dict[str, Any] = {
+            "query": query,
+            "totalRecords": total,
+            "fetched": fetched,
+            "cacheHits": query_cache_hits,
+            "apiCalls": query_api_calls,
+        }
         if query_error:
             stat["error"] = query_error
         stats.append(stat)
@@ -252,7 +342,12 @@ def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tu
         )
 
     notices.sort(key=lambda item: (item.get("score") or 0, item.get("postedDate") or ""), reverse=True)
-    return notices, stats
+    cache_meta = {
+        "cacheHits": total_cache_hits,
+        "apiCalls": total_api_calls,
+        "cacheDir": str(sam_cache_dir),
+    }
+    return notices, stats, cache_meta
 
 
 def slug_to_org(filename: str) -> str | None:
@@ -270,24 +365,7 @@ def slug_to_org(filename: str) -> str | None:
     return " ".join(word.upper() if word in acronym_words else word.title() for word in name.split())
 
 
-def parse_sitemap_participants() -> dict[str, list[str]]:
-    xml = None
-    last_error: Exception | None = None
-    for attempt in range(3):
-        try:
-            response = requests.get(SITEMAP_URL, timeout=(10, 30))
-            response.raise_for_status()
-            xml = response.text
-            break
-        except Exception as exc:  # noqa: BLE001
-            last_error = exc
-            if attempt < 2:
-                time.sleep(1.4 * (attempt + 1))
-
-    if xml is None:
-        print(f"WARN: participant sitemap fetch failed: {last_error}")
-        return {"sponsors": [], "mediaPartners": [], "communityCorridor": []}
-
+def parse_sitemap_xml(xml: str) -> dict[str, list[str]]:
     namespaces = {
         "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
         "img": "http://www.google.com/schemas/sitemap-image/1.1",
@@ -329,6 +407,70 @@ def parse_sitemap_participants() -> dict[str, list[str]]:
     return buckets
 
 
+def parse_sitemap_participants(
+    cache_dir: Path,
+    cache_ttl_seconds: float,
+    use_cache: bool,
+    force_refresh: bool,
+) -> tuple[dict[str, list[str]], dict[str, Any]]:
+    cache_file = cache_dir / "sitemap/page-sitemap1.xml"
+
+    if use_cache and not force_refresh:
+        cached_xml = read_cached_text(cache_file, cache_ttl_seconds)
+        if cached_xml:
+            return parse_sitemap_xml(cached_xml), {
+                "cacheHit": True,
+                "apiFetched": False,
+                "staleCacheFallback": False,
+                "cacheFile": str(cache_file),
+            }
+
+    xml = None
+    last_error: Exception | None = None
+    for attempt in range(3):
+        try:
+            response = requests.get(SITEMAP_URL, timeout=(10, 30))
+            response.raise_for_status()
+            xml = response.text
+            if use_cache:
+                write_cached_text(cache_file, xml)
+            break
+        except Exception as exc:  # noqa: BLE001
+            last_error = exc
+            if attempt < 2:
+                time.sleep(1.4 * (attempt + 1))
+
+    if xml is not None:
+        return parse_sitemap_xml(xml), {
+            "cacheHit": False,
+            "apiFetched": True,
+            "staleCacheFallback": False,
+            "cacheFile": str(cache_file),
+        }
+
+    # Fail-soft fallback to stale cache if present.
+    if use_cache:
+        stale_xml = read_cached_text(cache_file, ttl_seconds=None)
+        if stale_xml:
+            print(f"WARN: participant sitemap fetch failed, using stale cache: {last_error}")
+            return parse_sitemap_xml(stale_xml), {
+                "cacheHit": False,
+                "apiFetched": False,
+                "staleCacheFallback": True,
+                "cacheFile": str(cache_file),
+                "error": str(last_error),
+            }
+
+    print(f"WARN: participant sitemap fetch failed: {last_error}")
+    return {"sponsors": [], "mediaPartners": [], "communityCorridor": []}, {
+        "cacheHit": False,
+        "apiFetched": False,
+        "staleCacheFallback": False,
+        "cacheFile": str(cache_file),
+        "error": str(last_error),
+    }
+
+
 def main() -> None:
     args = parse_args()
 
@@ -336,8 +478,26 @@ def main() -> None:
     if not sam_key:
         raise SystemExit("SAM_API_KEY env var is required")
 
-    notices, query_stats = fetch_sam(sam_key, args.posted_from, args.posted_to, args.ptypes)
-    participants = parse_sitemap_participants()
+    cache_dir = Path(args.cache_dir)
+    cache_ttl_seconds = max(0.0, float(args.cache_ttl_hours) * 3600)
+    use_cache = not args.no_cache
+
+    notices, query_stats, sam_cache_meta = fetch_sam(
+        sam_key,
+        args.posted_from,
+        args.posted_to,
+        args.ptypes,
+        cache_dir=cache_dir,
+        cache_ttl_seconds=cache_ttl_seconds,
+        use_cache=use_cache,
+        force_refresh=args.force_refresh,
+    )
+    participants, sitemap_cache_meta = parse_sitemap_participants(
+        cache_dir=cache_dir,
+        cache_ttl_seconds=cache_ttl_seconds,
+        use_cache=use_cache,
+        force_refresh=args.force_refresh,
+    )
 
     type_counts = Counter([notice.get("noticeType") or "Unknown" for notice in notices])
     overlap_counts = Counter()
@@ -377,6 +537,15 @@ def main() -> None:
             "withoutStakeholderOverlap": sum(1 for notice in notices if not notice.get("overlapStakeholders")),
             "stakeholderCounts": dict(overlap_counts),
         },
+        "fetchMeta": {
+            "cache": {
+                "enabled": use_cache,
+                "ttlHours": args.cache_ttl_hours,
+                "forceRefresh": bool(args.force_refresh),
+                "sam": sam_cache_meta,
+                "sitemap": sitemap_cache_meta,
+            },
+        },
     }
 
     out = Path(args.out)
@@ -386,6 +555,18 @@ def main() -> None:
     print(f"WROTE {out}")
     print(f"Notices: {len(notices)}")
     print(f"Participants organizations: {payload['participants']['organizationCount']}")
+    print(
+        f"SAM calls: {sam_cache_meta['apiCalls']} API, {sam_cache_meta['cacheHits']} cache hits "
+        f"(cache={'on' if use_cache else 'off'}, ttl={args.cache_ttl_hours}h)"
+    )
+    if sitemap_cache_meta.get("cacheHit"):
+        print("Sitemap source: fresh cache")
+    elif sitemap_cache_meta.get("apiFetched"):
+        print("Sitemap source: live fetch")
+    elif sitemap_cache_meta.get("staleCacheFallback"):
+        print("Sitemap source: stale cache fallback")
+    else:
+        print("Sitemap source: unavailable")
 
 
 if __name__ == "__main__":
