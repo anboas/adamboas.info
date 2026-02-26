@@ -4,11 +4,9 @@
 Outputs:
 - Full SAM solicitation pull (configured window + profile queries)
 - Public participant-organization signals from SOF Week sitemap pages
-- Optional OpenAI enrichment (priority/relevance/theme/insight per notice)
 
 Usage:
   SAM_API_KEY=xxxx python3 scripts/fetch-sofweek-intelligence.py
-  SAM_API_KEY=xxxx OPENAI_API_KEY=xxxx python3 scripts/fetch-sofweek-intelligence.py
 """
 
 from __future__ import annotations
@@ -28,7 +26,6 @@ import requests
 
 API_URL = "https://api.sam.gov/opportunities/v2/search"
 SITEMAP_URL = "https://sofweek.org/page-sitemap1.xml"
-OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions"
 
 ROOT = Path("/home/anboas/clawd/adamboas-site")
 OUT_JSON = ROOT / "src/data/radar/intel/sofweek-intel.json"
@@ -93,10 +90,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--posted-to", default=POSTED_TO)
     parser.add_argument("--ptypes", default=PTYPE)
     parser.add_argument("--out", default=str(OUT_JSON))
-    parser.add_argument("--openai-model", default="gpt-4o-mini")
-    parser.add_argument("--openai-max-notices", type=int, default=120)
-    parser.add_argument("--openai-timeout", type=int, default=90)
-    parser.add_argument("--no-openai", action="store_true")
     return parser.parse_args()
 
 
@@ -123,9 +116,9 @@ def stakeholder_tokens(stakeholder: str) -> list[str]:
 def overlap_stakeholders(title: str, agency_path: str | None, solicitation_number: str | None) -> list[str]:
     blob = norm_text(" ".join([title or "", agency_path or "", solicitation_number or ""]))
     matched: list[str] = []
-    for s in STAKEHOLDERS:
-        if any(tok in blob for tok in stakeholder_tokens(s)):
-            matched.append(s)
+    for stakeholder in STAKEHOLDERS:
+        if any(tok in blob for tok in stakeholder_tokens(stakeholder)):
+            matched.append(stakeholder)
     return matched
 
 
@@ -137,15 +130,15 @@ def score_notice(row: dict[str, Any]) -> tuple[int, list[str], list[str]]:
     reasons: list[str] = []
 
     tokens = ["ussocom", "socom", "special operations", "marsoc", "special warfare", "afsoc", "sof"]
-    for tok in tokens:
-        if tok in blob:
+    for token in tokens:
+        if token in blob:
             score += 3
-            reasons.append(f"token:{tok}")
+            reasons.append(f"token:{token}")
 
-    typ = row.get("type") or ""
-    if typ in {"Sources Sought", "Presolicitation", "Special Notice", "Solicitation", "Combined Synopsis/Solicitation"}:
+    notice_type = row.get("type") or ""
+    if notice_type in {"Sources Sought", "Presolicitation", "Special Notice", "Solicitation", "Combined Synopsis/Solicitation"}:
         score += 2
-        reasons.append(f"type:{typ}")
+        reasons.append(f"type:{notice_type}")
 
     if row.get("responseDeadLine"):
         score += 1
@@ -166,9 +159,9 @@ def sam_get_with_retry(session: requests.Session, params: dict[str, Any], retrie
     last_exc: Exception | None = None
     for attempt in range(retries):
         try:
-            resp = session.get(API_URL, params=params, timeout=(10, 50))
-            resp.raise_for_status()
-            return resp
+            response = session.get(API_URL, params=params, timeout=(10, 50))
+            response.raise_for_status()
+            return response
         except Exception as exc:  # noqa: BLE001
             last_exc = exc
             if attempt < retries - 1:
@@ -201,12 +194,12 @@ def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tu
             }
             params.update(query)
             try:
-                r = sam_get_with_retry(session, params)
+                response = sam_get_with_retry(session, params)
             except Exception as exc:  # noqa: BLE001
                 query_error = str(exc)
                 break
 
-            payload = r.json()
+            payload = response.json()
             rows = payload.get("opportunitiesData") or []
             if total is None:
                 total = payload.get("totalRecords")
@@ -219,9 +212,9 @@ def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tu
                 if prior is None:
                     all_rows[key] = row
                 else:
-                    d1 = prior.get("postedDate") or ""
-                    d2 = row.get("postedDate") or ""
-                    if d2 > d1:
+                    prior_posted = prior.get("postedDate") or ""
+                    new_posted = row.get("postedDate") or ""
+                    if new_posted > prior_posted:
                         all_rows[key] = row
 
             fetched += len(rows)
@@ -250,29 +243,31 @@ def fetch_sam(api_key: str, posted_from: str, posted_to: str, ptypes: str) -> tu
                 "agencyPath": row.get("fullParentPathName") or None,
                 "naicsCode": row.get("naicsCode") or None,
                 "classificationCode": row.get("classificationCode") or None,
-                "uiLink": row.get("uiLink") or (f"https://sam.gov/workspace/contract/opp/{row.get('noticeId')}/view" if row.get("noticeId") else None),
+                "uiLink": row.get("uiLink")
+                or (f"https://sam.gov/workspace/contract/opp/{row.get('noticeId')}/view" if row.get("noticeId") else None),
                 "score": score,
                 "scoreReasons": reasons,
                 "overlapStakeholders": overlaps,
             }
         )
 
-    notices.sort(key=lambda n: (n.get("score") or 0, n.get("postedDate") or ""), reverse=True)
+    notices.sort(key=lambda item: (item.get("score") or 0, item.get("postedDate") or ""), reverse=True)
     return notices, stats
 
 
 def slug_to_org(filename: str) -> str | None:
     base = filename.rsplit("/", 1)[-1]
     base = re.sub(r"\.[a-zA-Z0-9]+$", "", base)
-    parts = [p for p in re.split(r"[-_\s]+", base.lower()) if p and p not in STOPWORDS]
-    parts = [p for p in parts if not p.isdigit() and len(p) > 1]
+    parts = [part for part in re.split(r"[-_\s]+", base.lower()) if part and part not in STOPWORDS]
+    parts = [part for part in parts if not part.isdigit() and len(part) > 1]
     if not parts:
         return None
     name = " ".join(parts)
     name = re.sub(r"\s+", " ", name).strip()
     if len(name) < 3:
         return None
-    return " ".join(w.upper() if w in {"ai", "llm", "gsof", "kbr", "lmi", "snc", "wwt", "caci", "bae"} else w.title() for w in name.split())
+    acronym_words = {"ai", "llm", "gsof", "kbr", "lmi", "snc", "wwt", "caci", "bae"}
+    return " ".join(word.upper() if word in acronym_words else word.title() for word in name.split())
 
 
 def parse_sitemap_participants() -> dict[str, list[str]]:
@@ -280,20 +275,23 @@ def parse_sitemap_participants() -> dict[str, list[str]]:
     last_error: Exception | None = None
     for attempt in range(3):
         try:
-            r = requests.get(SITEMAP_URL, timeout=(10, 30))
-            r.raise_for_status()
-            xml = r.text
+            response = requests.get(SITEMAP_URL, timeout=(10, 30))
+            response.raise_for_status()
+            xml = response.text
             break
         except Exception as exc:  # noqa: BLE001
             last_error = exc
             if attempt < 2:
                 time.sleep(1.4 * (attempt + 1))
+
     if xml is None:
-        # fail soft so SAM intelligence still lands
         print(f"WARN: participant sitemap fetch failed: {last_error}")
         return {"sponsors": [], "mediaPartners": [], "communityCorridor": []}
 
-    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9", "img": "http://www.google.com/schemas/sitemap-image/1.1"}
+    namespaces = {
+        "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
+        "img": "http://www.google.com/schemas/sitemap-image/1.1",
+    }
     root = ET.fromstring(xml)
 
     buckets = {
@@ -302,8 +300,8 @@ def parse_sitemap_participants() -> dict[str, list[str]]:
         "communityCorridor": [],
     }
 
-    for url_node in root.findall("sm:url", ns):
-        loc_node = url_node.find("sm:loc", ns)
+    for url_node in root.findall("sm:url", namespaces):
+        loc_node = url_node.find("sm:loc", namespaces)
         if loc_node is None or not loc_node.text:
             continue
         loc = loc_node.text.strip().lower()
@@ -317,206 +315,35 @@ def parse_sitemap_participants() -> dict[str, list[str]]:
         else:
             continue
 
-        for img_node in url_node.findall("img:image", ns):
-            img_loc = img_node.find("img:loc", ns)
+        for img_node in url_node.findall("img:image", namespaces):
+            img_loc = img_node.find("img:loc", namespaces)
             if img_loc is None or not img_loc.text:
                 continue
-            org = slug_to_org(img_loc.text)
-            if org:
-                buckets[bucket].append(org)
+            organization = slug_to_org(img_loc.text)
+            if organization:
+                buckets[bucket].append(organization)
 
     for key, values in buckets.items():
-        buckets[key] = sorted({v for v in values if v})
+        buckets[key] = sorted({value for value in values if value})
 
     return buckets
-
-
-def load_openai_key() -> str | None:
-    env = (os.environ.get("OPENAI_API_KEY") or "").strip()
-    if env:
-        return env
-    key_file = Path("/home/anboas/.secrets/openai_api_key")
-    if key_file.exists():
-        txt = key_file.read_text(encoding="utf-8").strip()
-        if txt:
-            return txt
-    return None
-
-
-def enrich_with_openai(notices: list[dict[str, Any]], participants: dict[str, list[str]], model: str, timeout_seconds: int, max_notices: int, openai_key: str) -> dict[str, Any]:
-    if not notices:
-        return {"enabled": False, "reason": "no_notices"}
-
-    subset = notices[: max(1, min(max_notices, len(notices)))]
-
-    compact = []
-    for n in subset:
-        compact.append(
-            {
-                "noticeId": n.get("noticeId"),
-                "title": n.get("title"),
-                "noticeType": n.get("noticeType"),
-                "agencyPath": n.get("agencyPath"),
-                "solicitationNumber": n.get("solicitationNumber"),
-                "naicsCode": n.get("naicsCode"),
-                "classificationCode": n.get("classificationCode"),
-                "responseDueDate": n.get("responseDueDate"),
-                "heuristicScore": n.get("score"),
-                "overlapStakeholders": n.get("overlapStakeholders") or [],
-            }
-        )
-
-    participant_orgs = sorted(
-        set(
-            (participants.get("sponsors") or [])
-            + (participants.get("mediaPartners") or [])
-            + (participants.get("communityCorridor") or [])
-        )
-    )
-
-    system = (
-        "You are an analyst enriching SOF Week solicitation intelligence. "
-        "Return strict JSON only. No markdown. "
-        "For each notice, produce relevance for SOF Week attendance and engagement context."
-    )
-    user = {
-        "event": {
-            "name": "SOF Week",
-            "stakeholders": STAKEHOLDERS,
-            "participantOrganizationsSample": participant_orgs[:120],
-        },
-        "instructions": {
-            "outputShape": {
-                "notices": [
-                    {
-                        "noticeId": "string",
-                        "aiRelevanceScore": "integer 0-100",
-                        "aiPriority": "low|medium|high",
-                        "aiCategory": "short label",
-                        "aiInsight": "<= 180 chars",
-                        "aiQuestions": ["up to 3 short due-diligence questions"],
-                        "aiOverlapEntities": ["entity names likely overlapping event stakeholders/participants"],
-                    }
-                ]
-            },
-            "guidance": [
-                "Favor mission-aligned and stakeholder-overlapping notices.",
-                "Higher score for opportunities with clear alignment, active deadlines, and relevant acquisition lanes.",
-                "Do not hallucinate IDs; echo only provided noticeId values.",
-            ],
-        },
-        "notices": compact,
-    }
-
-    payload = {
-        "model": model,
-        "temperature": 0.1,
-        "response_format": {"type": "json_object"},
-        "messages": [
-            {"role": "system", "content": system},
-            {"role": "user", "content": json.dumps(user)},
-        ],
-    }
-
-    last_error: Exception | None = None
-    resp = None
-    for attempt in range(3):
-        try:
-            resp = requests.post(
-                OPENAI_CHAT_URL,
-                headers={"Authorization": f"Bearer {openai_key}", "Content-Type": "application/json"},
-                json=payload,
-                timeout=(15, timeout_seconds),
-            )
-            if resp.status_code == 429 and attempt < 2:
-                time.sleep(2.2 * (attempt + 1))
-                continue
-            resp.raise_for_status()
-            break
-        except Exception as exc:  # noqa: BLE001
-            last_error = exc
-            if attempt < 2:
-                time.sleep(2.2 * (attempt + 1))
-            else:
-                raise
-
-    if resp is None:
-        if last_error:
-            raise last_error
-        raise RuntimeError("OpenAI enrichment failed before response")
-
-    body = resp.json()
-    content = body["choices"][0]["message"]["content"]
-    parsed = json.loads(content)
-    rows = parsed.get("notices") or []
-
-    by_id: dict[str, dict[str, Any]] = {}
-    for row in rows:
-        nid = (row.get("noticeId") or "").strip()
-        if not nid:
-            continue
-        by_id[nid] = row
-
-    enriched = 0
-    for n in notices:
-        nid = n.get("noticeId") or ""
-        if nid in by_id:
-            ai = by_id[nid]
-            n["aiRelevanceScore"] = int(max(0, min(100, int(ai.get("aiRelevanceScore", 0)))))
-            n["aiPriority"] = str(ai.get("aiPriority") or "").lower() or None
-            n["aiCategory"] = ai.get("aiCategory")
-            n["aiInsight"] = ai.get("aiInsight")
-            n["aiQuestions"] = ai.get("aiQuestions") if isinstance(ai.get("aiQuestions"), list) else []
-            n["aiOverlapEntities"] = ai.get("aiOverlapEntities") if isinstance(ai.get("aiOverlapEntities"), list) else []
-            n["weightedScore"] = round(float(n.get("score") or 0) + (float(n["aiRelevanceScore"]) / 12.5), 2)
-            enriched += 1
-        else:
-            n["weightedScore"] = float(n.get("score") or 0)
-
-    notices.sort(key=lambda n: (n.get("weightedScore") or 0, n.get("score") or 0, n.get("postedDate") or ""), reverse=True)
-
-    pri = Counter([n.get("aiPriority") or "unrated" for n in notices])
-    cats = Counter([n.get("aiCategory") or "unlabeled" for n in notices if n.get("aiCategory")])
-
-    return {
-        "enabled": True,
-        "model": model,
-        "enrichedNotices": enriched,
-        "priorityCounts": dict(pri),
-        "topCategories": dict(cats.most_common(12)),
-    }
 
 
 def main() -> None:
     args = parse_args()
 
-    sam_key = os.environ.get("SAM_API_KEY", "").strip()
+    sam_key = (os.environ.get("SAM_API_KEY") or "").strip()
     if not sam_key:
         raise SystemExit("SAM_API_KEY env var is required")
 
     notices, query_stats = fetch_sam(sam_key, args.posted_from, args.posted_to, args.ptypes)
     participants = parse_sitemap_participants()
 
-    openai_meta: dict[str, Any] = {"enabled": False, "reason": "disabled_or_missing_key"}
-    openai_key = None if args.no_openai else load_openai_key()
-    if openai_key:
-        try:
-            openai_meta = enrich_with_openai(
-                notices=notices,
-                participants=participants,
-                model=args.openai_model,
-                timeout_seconds=args.openai_timeout,
-                max_notices=args.openai_max_notices,
-                openai_key=openai_key,
-            )
-        except Exception as exc:
-            openai_meta = {"enabled": False, "reason": "error", "error": str(exc)}
-
-    type_counts = Counter([n.get("noticeType") or "Unknown" for n in notices])
+    type_counts = Counter([notice.get("noticeType") or "Unknown" for notice in notices])
     overlap_counts = Counter()
-    for n in notices:
-        for s in n.get("overlapStakeholders") or []:
-            overlap_counts[s] += 1
+    for notice in notices:
+        for stakeholder in notice.get("overlapStakeholders") or []:
+            overlap_counts[stakeholder] += 1
 
     payload = {
         "eventId": "radar-sofweek-2026",
@@ -546,11 +373,10 @@ def main() -> None:
             ),
         },
         "overlapSummary": {
-            "withStakeholderOverlap": sum(1 for n in notices if n.get("overlapStakeholders")),
-            "withoutStakeholderOverlap": sum(1 for n in notices if not n.get("overlapStakeholders")),
+            "withStakeholderOverlap": sum(1 for notice in notices if notice.get("overlapStakeholders")),
+            "withoutStakeholderOverlap": sum(1 for notice in notices if not notice.get("overlapStakeholders")),
             "stakeholderCounts": dict(overlap_counts),
         },
-        "openaiEnrichment": openai_meta,
     }
 
     out = Path(args.out)
@@ -560,10 +386,6 @@ def main() -> None:
     print(f"WROTE {out}")
     print(f"Notices: {len(notices)}")
     print(f"Participants organizations: {payload['participants']['organizationCount']}")
-    if openai_meta.get("enabled"):
-        print(f"OpenAI enriched notices: {openai_meta.get('enrichedNotices')} (model={openai_meta.get('model')})")
-    else:
-        print(f"OpenAI enrichment skipped: {openai_meta.get('reason')}")
 
 
 if __name__ == "__main__":
