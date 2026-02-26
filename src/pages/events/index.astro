@@ -285,20 +285,109 @@ function maxCount(rows: Array<[string, number]>) {
 	return rows.length ? Math.max(...rows.map((row) => row[1])) : 0;
 }
 
-const solicitationTagRules: Array<{ key: string; label: string; pattern: RegExp }> = [
-	{ key: 'software', label: 'Software', pattern: /\bsoftware\b|\bapplication(s)?\b|\bapi\b|\bdeveloper\b|\bdevsecops\b|\bplatform engineering\b/i },
-	{ key: 'cloud', label: 'Cloud', pattern: /\bcloud\b|\baws\b|\bazure\b|\bgcp\b|\bkubernetes\b|\bcontainer(s)?\b|\bsaas\b|\biaas\b|\bpaas\b/i },
-	{ key: 'ai', label: 'AI/ML', pattern: /artificial intelligence|machine learning|\bml\b|\bllm\b|generative ai|computer vision|autonom/i },
-	{ key: 'logistics', label: 'Logistics', pattern: /\blogistics?\b|supply chain|transport|distribution|warehouse|inventory|materiel/i },
-	{ key: 'maintenance', label: 'Maintenance', pattern: /maintenance|sustainment|repair|overhaul|depot|lifecycle support|field service/i },
-	{ key: 'cyber', label: 'Cybersecurity', pattern: /\bcyber\b|zero trust|information assurance|rmf|security operations|vulnerability|iam/i },
-	{ key: 'data', label: 'Data/Analytics', pattern: /\bdata\b|analytics|database|data lake|etl|business intelligence/i },
+type SolicitationTagRule = {
+	key: string;
+	label: string;
+	pattern?: RegExp;
+	naicsPrefixes?: string[];
+	classificationPrefixes?: string[];
+};
+
+const solicitationTagRules: SolicitationTagRule[] = [
+	{
+		key: 'software',
+		label: 'Software',
+		pattern: /\bsoftware\b|\bapplication(s)?\b|\bapi\b|\bdeveloper\b|\bdevsecops\b|\bplatform engineering\b|\btool(s)?\b|\bplatform\b|\bsystem(s)?\b|\banalytical\b|\banalytics\b/i,
+		naicsPrefixes: ['541511', '541512', '541513', '541519', '511210'],
+		classificationPrefixes: ['D', 'DA', 'DB', 'DC', 'DD', 'DE', 'DF', 'DG', 'DK', 'DL', 'DM'],
+	},
+	{
+		key: 'cloud',
+		label: 'Cloud',
+		pattern: /\bcloud\b|\baws\b|\bazure\b|\bgcp\b|\bkubernetes\b|\bcontainer(s)?\b|\bsaas\b|\biaas\b|\bpaas\b|hosting/i,
+		naicsPrefixes: ['518210'],
+		classificationPrefixes: ['D301', 'D302', 'D303', 'D304', 'D305', 'D306', 'D307', 'D308', 'D309'],
+	},
+	{
+		key: 'ai',
+		label: 'AI/ML',
+		pattern: /artificial intelligence|machine learning|\bml\b|\bllm\b|generative ai|computer vision|autonom|nlp|model training/i,
+		naicsPrefixes: ['541714', '541715'],
+	},
+	{
+		key: 'data',
+		label: 'Data/Analytics',
+		pattern: /\bdata\b|analytics|analytical|database|data lake|etl|business intelligence|dashboard|rdap/i,
+		classificationPrefixes: ['D31', 'D32'],
+	},
+	{
+		key: 'cyber',
+		label: 'Cybersecurity',
+		pattern: /\bcyber\b|zero trust|information assurance|rmf|security operations|security operations center|vulnerability|iam|issm|acas/i,
+		classificationPrefixes: ['D316', 'D310'],
+	},
+	{
+		key: 'logistics',
+		label: 'Logistics',
+		pattern: /\blogistics?\b|supply chain|transport|distribution|warehouse|inventory|materiel|shipping|freight/i,
+		naicsPrefixes: ['48', '49', '493'],
+		classificationPrefixes: ['V', 'S2', 'R6'],
+	},
+	{
+		key: 'maintenance',
+		label: 'Maintenance',
+		pattern: /maintenance|sustainment|repair|overhaul|depot|lifecycle support|field service|spare parts?/i,
+		naicsPrefixes: ['811'],
+		classificationPrefixes: ['J', 'K'],
+	},
+	{
+		key: 'training',
+		label: 'Training',
+		pattern: /training|course(s)? of instruction|instruction|exercise support|workshop|certification/i,
+		naicsPrefixes: ['611'],
+	},
+	{
+		key: 'engineering',
+		label: 'Engineering/SETA',
+		pattern: /systems engineering|technical assistance|\bseta\b|architecture|integration|r&d|research and development/i,
+		naicsPrefixes: ['541330', '541690', '541715'],
+		classificationPrefixes: ['R4', 'R7'],
+	},
+	{
+		key: 'hardware',
+		label: 'Hardware/Systems',
+		pattern: /hardware|equipment|device|sensor|payload|vehicle|avionics|radio|craft/i,
+		naicsPrefixes: ['332', '333', '334', '335', '336'],
+	},
+	{
+		key: 'services',
+		label: 'Professional Services',
+		pattern: /support services|consulting|program management|advisory|acquisition support|operations support/i,
+		naicsPrefixes: ['541611', '541612', '541618', '561'],
+		classificationPrefixes: ['R'],
+	},
 ];
+
+function normalizedCode(value: string | null | undefined) {
+	return (value ?? '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+}
+
+function codeMatchesPrefix(code: string, prefixes?: string[]) {
+	if (!code || !prefixes?.length) return false;
+	return prefixes.some((prefix) => code.startsWith(prefix));
+}
 
 function noticeFocusTags(notice: SamNotice) {
 	const blob = `${notice.title ?? ''} ${notice.noticeType ?? ''} ${notice.agencyPath ?? ''} ${notice.solicitationNumber ?? ''} ${notice.naicsCode ?? ''} ${notice.classificationCode ?? ''}`;
+	const naics = normalizedCode(String(notice.naicsCode ?? ''));
+	const classification = normalizedCode(String(notice.classificationCode ?? ''));
 	const tags = solicitationTagRules
-		.filter((rule) => rule.pattern.test(blob))
+		.filter((rule) => {
+			const byText = rule.pattern ? rule.pattern.test(blob) : false;
+			const byNaics = codeMatchesPrefix(naics, rule.naicsPrefixes);
+			const byClassification = codeMatchesPrefix(classification, rule.classificationPrefixes);
+			return byText || byNaics || byClassification;
+		})
 		.map((rule) => ({ key: rule.key, label: rule.label }));
 	if (!tags.length) return [{ key: 'general', label: 'General' }];
 	return tags;
@@ -992,14 +1081,19 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												<label class="text-[11px] text-slate-400">Filter
 													<select class="radar-input radar-input-sort radar-inline-select" data-sam-filter data-event-id={event.id}>
 														<option value="all">All</option>
-														<option value="my-focus">My focus (Software/Cloud/AI/Cyber/Data)</option>
+														<option value="my-focus">My focus (Software/Cloud/AI/Cyber/Data/Logistics/Maintenance)</option>
 														<option value="software">Software</option>
 														<option value="cloud">Cloud</option>
 														<option value="ai">AI/ML</option>
+														<option value="data">Data/Analytics</option>
+														<option value="cyber">Cybersecurity</option>
 														<option value="logistics">Logistics</option>
 														<option value="maintenance">Maintenance</option>
-														<option value="cyber">Cybersecurity</option>
-														<option value="data">Data/Analytics</option>
+														<option value="training">Training</option>
+														<option value="engineering">Engineering/SETA</option>
+														<option value="hardware">Hardware/Systems</option>
+														<option value="services">Professional Services</option>
+														<option value="general">General</option>
 													</select>
 												</label>
 											</div>
@@ -2378,7 +2472,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (!filterMode || filterMode === 'all') return true;
 		const tags = (row.dataset.tags || '').split(',').map((value) => value.trim()).filter(Boolean);
 		if (filterMode === 'my-focus') {
-			return ['software', 'cloud', 'ai', 'cyber', 'data'].some((tag) => tags.includes(tag));
+			return ['software', 'cloud', 'ai', 'cyber', 'data', 'logistics', 'maintenance'].some((tag) => tags.includes(tag));
 		}
 		return tags.includes(filterMode);
 	}
