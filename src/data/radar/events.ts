@@ -1502,62 +1502,216 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Official SAME listing confirms March 3-5 window at El Conquistador in Fajardo with explicit sessions on Puerto Rico + USVI opportunity flow, including Meet the USACE SAA PMs and small-business/teaming panels.'
 		}
 	},
-{		id: 'radar-cyberbay-summit',
-		title: 'CyberBay Summit',
-		description: 'Cybersecurity/national security convergence, SOCOM & CENTCOM leadership',
+{
+		id: 'radar-cyberbay-summit',
+		title: 'CyberBay Summit 2026',
+		description: 'Tampa Bay cybersecurity and emerging-technology summit convening government, defense, academia, and industry leadership around digital defense, resilience, and workforce development.',
 		startDate: '2026-03-11',
 		endDate: '2026-03-13',
 		branch: 'Joint',
 		type: 'Summit',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
 			city: 'Tampa',
 			state: 'FL',
 			country: 'USA',
-			lat: 27.9449854,
-			lng: -82.4583107
+			lat: 27.9427,
+			lng: -82.4450,
+			venue: 'JW Marriott Tampa Water Street'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['cyberbay', 'summit'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Cyber resilience', 'Digital defense modernization', 'Critical infrastructure protection'],
+			capabilityAreas: ['Cybersecurity operations', 'Threat intelligence', 'AI + security'],
+			missionThreads: ['Government-industry cyber integration', 'Workforce development', 'Regional cyber ecosystem scaling'],
+			stakeholders: ['Cyber Florida at USF', 'Bellini Capital', 'USF Bellini College', 'SOCOM/CENTCOM ecosystem', 'Federal and defense cyber leaders'],
+			keywords: ['cyberbay', 'cybersecurity', 'digital defense', 'critical infrastructure', 'tampa'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'CyberBay Summit official page',
+				url: 'https://cyberbay.org/summit/',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: 'CyberBay home page',
+				url: 'https://cyberbay.org/',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: 'Cyber Florida release: CyberBay Summit 2026',
+				url: 'https://cyberflorida.org/cyberbay-summit-2026-advancing-the-future-of-digital-defense/',
+				type: 'official',
+				lastVerified: '2026-02-26',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://cyberbay.org/summit/',
+				registration: 'https://cyberbay.eventsair.com/2026/register',
+				agenda: 'https://cyberbay.org/agenda/',
+				hotelBlock: 'https://cyberbay.org/summit/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 50,
+					max: 250
 				},
 				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'Emerging event'
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Sources Sought', 'Pre-solicitation', 'Special Notice'],
+				noticeType: 'Mixed (cyber operations, information warfare, and enterprise security support)',
+				agency: 'DoD / DHS / Navy NIWC / DCSA / USACE',
+				solicitationNumber: 'W912DR25RA001',
+				responseDueDate: '2026-03-13T11:00:00-05:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '01/01/2026',
+					postedTo: '02/26/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 10,
+					topNotices: [
+					{
+						noticeId: '720380d23d474906a0b8e407024f2778',
+						title: 'Cybersecurity Operations Facility',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-03-13T11:00:00-05:00',
+						solicitationNumber: 'W912DR25RA001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTH ATLANTIC.ENDIST BALTIMORE.W2SD ENDIST BALTIMORE',
+						naicsCode: '236220',
+						classificationCode: 'Y1JZ',
+						uiLink: 'https://sam.gov/workspace/contract/opp/720380d23d474906a0b8e407024f2778/view'
+					},
+					{
+						noticeId: 'c78535582d04496db2d2fe313825177b',
+						title: 'Area of Interest (AOI): Cyber Resource and Engineering Workforce (CREW) under CSO N0003925S0001',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-03-05T14:00:00-08:00',
+						solicitationNumber: 'N0003926RH001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR HQ.NAVAL INFORMATION WARFARE SYSTEMS',
+						naicsCode: '541330',
+						classificationCode: 'DD01',
+						uiLink: 'https://sam.gov/workspace/contract/opp/c78535582d04496db2d2fe313825177b/view'
+					},
+					{
+						noticeId: 'd3d58c82c96749b4a54d8dea78c9a39c',
+						title: 'Communications, Network, Engineering, Cybersecurity, and Information Technology Services (CNECTS), aka "Connects"',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-25',
+						responseDueDate: '2026-12-23T14:00:00-07:00',
+						solicitationNumber: 'FA251827RCNECTS',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPACE COMMAND.FA2518 USSF SPOC/SAIO',
+						naicsCode: '517810',
+						classificationCode: 'DG01',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d3d58c82c96749b4a54d8dea78c9a39c/view'
+					},
+					{
+						noticeId: 'f96c78589dc9482eb9d280b2927b6557',
+						title: 'DCSA Enterprise Cybersecurity Support Services',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-24',
+						responseDueDate: '2026-02-23T17:00:00-05:00',
+						solicitationNumber: 'DCSA_CYBERSSN_25',
+						agencyPath: 'DEPT OF DEFENSE.DEFENSE COUNTERINTELLIGENCE AND SECURITY AGENCY (DCSA).DEFENSE CI AND SECURITY AGENCY',
+						naicsCode: '541513',
+						classificationCode: 'DJ01',
+						uiLink: 'https://sam.gov/workspace/contract/opp/f96c78589dc9482eb9d280b2927b6557/view'
+					},
+					{
+						noticeId: '54ae731156f845c694ea3020723b3b11',
+						title: 'Trusted Operations, Maintenance, Cybersecurity, Assurance, and Technology',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-03-02T14:00:00-05:00',
+						solicitationNumber: '70T3026_TOMCAT_DraftSOO_Questions',
+						agencyPath: 'HOMELAND SECURITY, DEPARTMENT OF.TRANSPORTATION SECURITY ADMINISTRATION.ENTERPRISE INFORMATION TECHNOLOGY',
+						uiLink: 'https://sam.gov/workspace/contract/opp/54ae731156f845c694ea3020723b3b11/view'
+					},
+					{
+						noticeId: 'fa25d68331a44e02ab72b1209478731d',
+						title: 'Cybersecurity Support Services for Offutt AFB Defense Red Switch Network (DRSN)',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-02-10',
+						responseDueDate: '2026-02-17T13:00:00-06:00',
+						solicitationNumber: 'FA460026Q0012',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4600  55 CONS  PKP',
+						naicsCode: '541513',
+						classificationCode: 'DA01',
+						uiLink: 'https://sam.gov/workspace/contract/opp/fa25d68331a44e02ab72b1209478731d/view'
+					},
+					{
+						noticeId: 'a7028292a80246798854cf5643e81a2a',
+						title: 'N61331-26-R-3101 LCAC C4N and Cybersecurity Systems Program Support',
+						noticeType: 'Solicitation',
+						postedDate: '2026-01-30',
+						responseDueDate: '2026-01-30T16:00:00-06:00',
+						solicitationNumber: 'N6133126R3101',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER',
+						naicsCode: '541330',
+						classificationCode: 'R425',
+						uiLink: 'https://sam.gov/workspace/contract/opp/a7028292a80246798854cf5643e81a2a/view'
+					},
+					{
+						noticeId: '304521f76b524448b0692bdf6dea2d06',
+						title: 'Trusted Operations, Maintenance, Cybersecurity, Assurance, and Technology (TOMCAT)',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-01-23',
+						responseDueDate: '2025-12-16T17:00:00-05:00',
+						solicitationNumber: '70T03026_VRR_TOMCAT',
+						agencyPath: 'HOMELAND SECURITY, DEPARTMENT OF.TRANSPORTATION SECURITY ADMINISTRATION.ENTERPRISE INFORMATION TECHNOLOGY',
+						classificationCode: '7E20',
+						uiLink: 'https://sam.gov/workspace/contract/opp/304521f76b524448b0692bdf6dea2d06/view'
+					},
+					{
+						noticeId: '862ac328162a48dab1794fd47ee16488',
+						title: 'Foreign Military Sales – Cybersecurity Professionals Training Capability Assessment',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-01-15',
+						responseDueDate: '2026-02-27T13:00:00-06:00',
+						solicitationNumber: 'FA3002-26-RFI-FMS',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3002  338 ESS CC',
+						naicsCode: '611430',
+						uiLink: 'https://sam.gov/workspace/contract/opp/862ac328162a48dab1794fd47ee16488/view'
+					},
+					{
+						noticeId: 'efebe4124f904c65ae05dca3067f1c5f',
+						title: 'Project Manager Electronic Warfare & Cyber (PM EW&C) Electromagnetic Spectrum Operations Characteristics of Need (EMSO CON) and Future Multiple Award (MA) Indefinite Delivery Indefinite Quantity (IDIQ) Vehicle',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-24',
+						responseDueDate: '2026-03-13T17:00:00-04:00',
+						solicitationNumber: 'W56KGY-R-26-0224',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG',
+						naicsCode: '334220',
+						uiLink: 'https://sam.gov/workspace/contract/opp/efebe4124f904c65ae05dca3067f1c5f/view'
+					}
+					]
+				}
+			},
+			notes: 'Official CyberBay sources confirm March 11-13, 2026 at JW Marriott Tampa Water Street with workshops beginning March 11 and broad public/private/defense participation; official pricing published for industry/public service/student tiers.'
 		}
 	},
-{
-		id: 'radar-afcea-nova-naval-it-day-2026',
+{		id: 'radar-afcea-nova-naval-it-day-2026',
 		title: 'AFCEA NOVA Naval IT Day 2026',
 		description: 'Naval IT modernization, cybersecurity',
 		startDate: '2026-03-12',
