@@ -676,9 +676,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 										{(eventCalendarLink(event) || eventIosIcsLink(event) || eventOutlookIcsLink(event)) ? (
 											<span class="radar-calendar-group" aria-label="Calendar options">
 												<span class="radar-calendar-group-label">Calendar:</span>
-												{eventIosIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-ios" href={eventIosIcsLink(event)!} target="_blank" rel="noreferrer">🍎 iOS (.ics)</a> : null}
-												{eventCalendarLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-google" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer">🗓️ Google</a> : null}
-												{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)}>📘 Outlook (.ics)</a> : null}
+												{eventIosIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-ios" href={eventIosIcsLink(event)!} target="_blank" rel="noreferrer" aria-label="iOS calendar (.ics)" title="iOS calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">🍎</span><span class="radar-calendar-chip-label">iOS (.ics)</span></a> : null}
+												{eventCalendarLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-google" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer" aria-label="Google Calendar" title="Google Calendar"><span class="radar-calendar-chip-icon" aria-hidden="true">🗓️</span><span class="radar-calendar-chip-label">Google</span></a> : null}
+												{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)} aria-label="Outlook calendar (.ics)" title="Outlook calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">📘</span><span class="radar-calendar-chip-label">Outlook (.ics)</span></a> : null}
 											</span>
 										) : null}
 										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
@@ -3037,11 +3037,17 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		color: rgba(148, 163, 184, 0.96);
 	}
 	.radar-calendar-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.24rem;
 		padding: 0.28rem 0.44rem;
 		font-size: 0.7rem;
 		font-weight: 700;
 		text-decoration: none;
 		border-left: 1px solid rgba(71, 85, 105, 0.85);
+	}
+	.radar-calendar-chip-icon {
+		line-height: 1;
 	}
 	.radar-calendar-chip-ios {
 		background: rgba(251, 191, 36, 0.14);
@@ -3089,6 +3095,17 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	@media (max-width: 1279px) {
 		.radar-toolbar {
 			position: static;
+		}
+	}
+
+	@media (max-width: 1080px) {
+		.radar-calendar-group-label,
+		.radar-calendar-chip-label {
+			display: none;
+		}
+		.radar-calendar-chip {
+			padding: 0.26rem 0.4rem;
+			gap: 0;
 		}
 	}
 
