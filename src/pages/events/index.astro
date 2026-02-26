@@ -967,6 +967,62 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 
 
+	const windowNameStoragePrefix = '__adamboas.events.store.v1__';
+
+	function readFromWindowNameStorage(key) {
+		try {
+			if (!window.name || !window.name.startsWith(windowNameStoragePrefix)) return null;
+			const raw = window.name.slice(windowNameStoragePrefix.length);
+			if (!raw) return null;
+			const parsed = JSON.parse(raw);
+			if (!parsed || typeof parsed !== 'object') return null;
+			const value = parsed[key];
+			return typeof value === 'string' ? value : null;
+		} catch {
+			return null;
+		}
+	}
+
+	function writeToWindowNameStorage(key, value) {
+		try {
+			let parsed = {};
+			if (window.name && window.name.startsWith(windowNameStoragePrefix)) {
+				const raw = window.name.slice(windowNameStoragePrefix.length);
+				parsed = raw ? (JSON.parse(raw) || {}) : {};
+			}
+			if (!parsed || typeof parsed !== 'object') parsed = {};
+			parsed[key] = String(value);
+			window.name = `${windowNameStoragePrefix}${JSON.stringify(parsed)}`;
+			return true;
+		} catch {
+			return false;
+		}
+	}
+
+	function readClientStore(key) {
+		try {
+			const value = localStorage.getItem(key);
+			if (typeof value === 'string') return value;
+		} catch {}
+		try {
+			const value = sessionStorage.getItem(key);
+			if (typeof value === 'string') return value;
+		} catch {}
+		return readFromWindowNameStorage(key);
+	}
+
+	function writeClientStore(key, value) {
+		try {
+			localStorage.setItem(key, value);
+			return true;
+		} catch {}
+		try {
+			sessionStorage.setItem(key, value);
+			return true;
+		} catch {}
+		return writeToWindowNameStorage(key, value);
+	}
+
 	function parseDays(value) {
 		if (value === '' || value == null) return null;
 		const days = Number(value);
@@ -1251,7 +1307,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 	function parseLegacySeenIds() {
 		try {
-			const raw = localStorage.getItem(legacySeenEventsStorageKey);
+			const raw = readClientStore(legacySeenEventsStorageKey);
 			if (!raw) return new Set();
 			const parsed = JSON.parse(raw);
 			if (!Array.isArray(parsed)) return new Set();
@@ -1271,9 +1327,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 
 	function persistEventState() {
-		try {
-			localStorage.setItem(eventStateStorageKey, JSON.stringify(eventState));
-		} catch {}
+		writeClientStore(eventStateStorageKey, JSON.stringify(eventState));
 	}
 
 	function readEventState() {
@@ -1285,7 +1339,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			.filter((entry) => entry.id);
 		let stored = null;
 		try {
-			const raw = localStorage.getItem(eventStateStorageKey);
+			const raw = readClientStore(eventStateStorageKey);
 			if (raw) stored = JSON.parse(raw);
 		} catch {}
 
