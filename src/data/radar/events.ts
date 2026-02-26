@@ -1915,15 +1915,16 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'AFCEA NOVA calendar confirms Naval IT Day on March 12, 2026 with registration open. Swoogo registration flow provides fee tiers (industry, member/non-member, and no-cost government/military). Secondary event briefs align on venue (Westfields Marriott Washington Dulles) and theme: "Enabling the Naval Force: Data, Digital, and Decision Advantage."'
 		}
 	},
-{		id: 'radar-same-charleston-post-industry-day-2026',
-		title: 'SAME Charleston Post Industry Day 2026',
-		description: 'USACE Charleston District. Day 1: Golf tournament + sunset boat cruise. Day 2: Full industry day with speakers, networking, happy hour.',
+{
+		id: 'radar-same-charleston-post-industry-day-2026',
+		title: 'SAME Charleston Post 2026 Industry Day + Golf Tournament',
+		description: 'Two-day SAME Charleston event combining a golf tournament, harbor reception, and a full Industry Day centered on USACE/NAVFAC/USCG/Joint Base Charleston project and contracting dialogue.',
 		startDate: '2026-03-18',
 		endDate: '2026-03-19',
 		branch: 'USACE',
 		type: 'Workshop',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -1931,46 +1932,152 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'SC',
 			country: 'USA',
 			lat: 32.7884363,
-			lng: -79.9399309
+			lng: -79.9399309,
+			venue: 'Charleston Marriott'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['same', 'charleston', 'post', 'industry'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['USACE and partner acquisition visibility', 'A/E/C teaming and networking', 'Regional infrastructure pipeline awareness'],
+			capabilityAreas: ['Federal construction', 'Contracting strategy', 'Program and project delivery'],
+			missionThreads: ['District-level opportunity mapping', 'Small-business alignment', 'Post-event capture planning'],
+			stakeholders: ['USACE Charleston', 'USACE Savannah', 'USACE Wilmington', 'NAVFAC Southeast', 'U.S. Coast Guard', 'Joint Base Charleston'],
+			keywords: ['same', 'charleston', 'industry day', 'usace', 'navfac', 'coast guard', 'joint base charleston'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'SAME event page (official)',
+				url: 'https://www.same.org/event/same-charleston-post-2026-industry-day-golf-tournament-2/',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: 'SAME Charleston events page',
+				url: 'https://www.same.org/charleston/events/',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: '2026 Industry Day agenda PDF',
+				url: 'https://www.same.org/wp-content/uploads/2026/02/2026-Industry-Day-AGENDA-_02092026.pdf',
+				type: 'official',
+				lastVerified: '2026-02-26',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.same.org/event/same-charleston-post-2026-industry-day-golf-tournament-2/',
+				registration: 'https://www.zeffy.com/en-US/ticketing/same-charleston-post-2026-industry-day-golf-tournament',
+				agenda: 'https://www.same.org/wp-content/uploads/2026/02/2026-Industry-Day-AGENDA-_02092026.pdf'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 1200
 				},
 				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'Charleston Marriott, 170 Lockwood Blvd. Boat cruise included with ticket.'
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Special Notice', 'Sources Sought', 'Pre-solicitation'],
+				noticeType: 'USACE-centric outreach with supporting regional infrastructure and base-support solicitations',
+				agency: 'USACE Charleston and regional USACE districts, with related Joint Base Charleston activity',
+				responseDueDate: '2026-03-19T09:00:00-04:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '01/01/2026',
+					postedTo: '02/26/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 12,
+					typeCounts:
+					{
+						'Special Notice': 10,
+						Solicitation: 2
+					},
+					topNotices: [
+					{
+						noticeId: '35cfc764e5194217ab1842c04d3bf0ca',
+						title: 'USACE Charleston District - SAME Charleston Post Industry Day',
+						noticeType: 'Special Notice',
+						postedDate: '2026-01-28',
+						responseDueDate: '2026-03-19T09:00:00-04:00',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTH ATLANTIC.ENDIST CHARLESTON.W074 ENDIST CHARLESTON',
+						uiLink: 'https://sam.gov/workspace/contract/opp/35cfc764e5194217ab1842c04d3bf0ca/view'
+					},
+					{
+						noticeId: '30f377a70b804d1ca2781d50f4ea05a9',
+						title: 'Virtual Industry Day Notice for construction projects for Fort Gillem, in Forest Park GA',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-17',
+						responseDueDate: '2026-02-28T23:45:00-05:00',
+						solicitationNumber: 'W912HNA037493',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTH ATLANTIC.ENDIST SAVANNAH.W074 ENDIST SAVANNAH',
+						naicsCode: '236220',
+						classificationCode: 'Y1DB',
+						uiLink: 'https://sam.gov/workspace/contract/opp/30f377a70b804d1ca2781d50f4ea05a9/view'
+					},
+					{
+						noticeId: 'fb029585ed37402d95675df1084cc58c',
+						title: '2026 Joint Base Charleston Air Show Sound Equipment',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-26',
+						responseDueDate: '2026-03-06T14:00:00-05:00',
+						solicitationNumber: 'FA441826Q0014',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4418  628 CONS PK',
+						naicsCode: '532490',
+						classificationCode: 'W099',
+						uiLink: 'https://sam.gov/workspace/contract/opp/fb029585ed37402d95675df1084cc58c/view'
+					},
+					{
+						noticeId: '275f02a29a044f36b7cf7481e9fc2c29',
+						title: 'Joint Base Charleston 2026 Air Show - Tables, Chairs, & Tents',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-24',
+						responseDueDate: '2026-03-05T16:00:00-05:00',
+						solicitationNumber: 'FA441826Q0010',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4418  628 CONS PK',
+						naicsCode: '532289',
+						classificationCode: 'W099',
+						uiLink: 'https://sam.gov/workspace/contract/opp/275f02a29a044f36b7cf7481e9fc2c29/view'
+					},
+					{
+						noticeId: '48dec4e05dd347ff97d2b0eada5b95e0',
+						title: 'USACE New Orleans Industry Day 2026',
+						noticeType: 'Special Notice',
+						postedDate: '2026-01-14',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION MISSISSIPPI VALLEY.ENDIST NEW ORLEANS.W07V ENDIST NEW ORLEANS',
+						uiLink: 'https://sam.gov/workspace/contract/opp/48dec4e05dd347ff97d2b0eada5b95e0/view'
+					},
+					{
+						noticeId: '7206c6169d9c469dac621139764df65a',
+						title: 'Virtual Industry Day: ERCIP Lake City Army Ammunition Plant Microgrid and Combined Heat and Power',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-26',
+						responseDueDate: '2026-03-05T10:00:00-05:00',
+						solicitationNumber: 'W912QR26RA041',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION GREAT LAKES AND OHIO.ENDIST LOUISVILLE.W072 ENDIST LOUISVILLE',
+						naicsCode: '237130',
+						classificationCode: 'Y1NZ',
+						uiLink: 'https://sam.gov/workspace/contract/opp/7206c6169d9c469dac621139764df65a/view'
+					}
+					]
+				}
+			},
+			notes: 'Official SAME pages confirm a March 18-19, 2026 two-day format at Charleston Marriott with golf, harbor reception, and Industry Day sessions. Published agenda lists USACE Charleston/Savannah/Wilmington, NAVFAC Southeast, US Coast Guard, and Joint Base Charleston speakers with registration and hotel block links live.'
 		}
 	},
-{
-		id: 'radar-satshow-satellite-2026',
+{		id: 'radar-satshow-satellite-2026',
 		title: 'SATShow / SATELLITE 2026',
 		description: 'Satellite communications, space technology, GovMilSpace',
 		startDate: '2026-03-23',
