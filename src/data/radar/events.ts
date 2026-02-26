@@ -1711,15 +1711,16 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Official CyberBay sources confirm March 11-13, 2026 at JW Marriott Tampa Water Street with workshops beginning March 11 and broad public/private/defense participation; official pricing published for industry/public service/student tiers.'
 		}
 	},
-{		id: 'radar-afcea-nova-naval-it-day-2026',
+{
+		id: 'radar-afcea-nova-naval-it-day-2026',
 		title: 'AFCEA NOVA Naval IT Day 2026',
-		description: 'Naval IT modernization, cybersecurity',
+		description: 'AFCEA NOVA industry day focused on Navy and Marine Corps digital modernization priorities, including data, cyber resilience, and decision advantage.',
 		startDate: '2026-03-12',
-		endDate: null,
+		endDate: '2026-03-12',
 		branch: 'Navy',
 		type: 'Conference',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Low',
 		location: 
 		{
@@ -1727,46 +1728,194 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'VA',
 			country: 'USA',
 			lat: 38.885219,
-			lng: -77.4486772
+			lng: -77.4486772,
+			venue: 'Westfields Marriott Washington Dulles'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Navy stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['afcea', 'nova', 'naval', '2026'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Naval digital modernization', 'Cyber resilience', 'Data-driven decision advantage'],
+			capabilityAreas: ['Information technology', 'Cybersecurity', 'Data and analytics'],
+			missionThreads: ['Navy and USMC modernization alignment', 'Acquisition signal tracking', 'Industry teaming'],
+			stakeholders: ['Department of the Navy', 'U.S. Marine Corps', 'NAVAIR', 'NAVSEA', 'NIWC Atlantic', 'NIWC Pacific'],
+			keywords: ['afcea nova', 'naval it day', 'navy', 'marine corps', 'data', 'digital', 'decision advantage'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-7 days',
+				prep: 'T-7 to T-1 days',
+				execution: 'Event day + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'AFCEA NOVA calendar',
+				url: 'https://nova.afceachapters.org/calendar',
+				type: 'official',
+				lastVerified: '2026-02-26',
 				confidence: 'High'
+			},
+			{
+				name: 'AFCEA NOVA Naval IT Day registration page',
+				url: 'https://afceanova.swoogo.com/NavalITDay2025',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: 'GovEvents listing for Naval IT Day 2026',
+				url: 'https://www.govevents.com/details/96237/afcea-nova-naval-it-day-2026',
+				type: 'community',
+				lastVerified: '2026-02-26',
+				confidence: 'Medium'
+			},
+			{
+				name: 'DLT sponsor event brief',
+				url: 'https://www.dlt.com/events/afcea-nova-naval-it-day-2026',
+				type: 'community',
+				lastVerified: '2026-02-26',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://afceanova.swoogo.com/NavalITDay2025',
+				registration: 'https://afceanova.swoogo.com/NavalITDay2025/register'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 150,
-					max: 900
+					min: 0,
+					max: 595
 				},
 				travelBurdenFromDc: 'Low'
 			},
-			notes: 'Westfields Marriott Washington Dulles. New date (rescheduled).'
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Sources Sought', 'Pre-solicitation', 'Special Notice'],
+				noticeType: 'Mixed Navy/USMC IT, cyber, and digital modernization notices',
+				agency: 'Department of the Navy (NIWC, NAVSEA, NAVAIR, USMC, ONR)',
+				solicitationNumber: 'N6600126SC002',
+				responseDueDate: '2026-03-23T23:59:00-04:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '01/01/2026',
+					postedTo: '02/26/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 54,
+					typeCounts: 
+					{
+						Presolicitation: 10,
+						'Special Notice': 6,
+						'Sources Sought': 9,
+						'Combined Synopsis/Solicitation': 5,
+						Solicitation: 24
+					},
+					topNotices: [
+					{
+						noticeId: '9b41ad1bb80c4c0185f42811866b291b',
+						title: 'NIWC Pacific Commercial Solutions Opening (CSO)',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-25',
+						solicitationNumber: 'N6600126SC002',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR PACIFIC.NIWC PACIFIC',
+						uiLink: 'https://sam.gov/workspace/contract/opp/9b41ad1bb80c4c0185f42811866b291b/view'
+					},
+					{
+						noticeId: 'd72aae6312de4c4da25c73c56018baed',
+						title: 'NIWC Atlantic Rapid Capabilities Office Commercial Solutions Opening',
+						noticeType: 'Special Notice',
+						postedDate: '2026-01-20',
+						solicitationNumber: 'N6523626S0001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR LANT.NIWC ATLANTIC',
+						naicsCode: '541715',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d72aae6312de4c4da25c73c56018baed/view'
+					},
+					{
+						noticeId: '7e2c7a9a5d434249954f7f011eb8ce0d',
+						title: 'Unmanned Common Controller (UCC) for the United States Marine Corps',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-20',
+						responseDueDate: '2026-03-23T23:59:00-04:00',
+						solicitationNumber: '243-26-012',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND',
+						naicsCode: '334220',
+						classificationCode: '1550',
+						uiLink: 'https://sam.gov/workspace/contract/opp/7e2c7a9a5d434249954f7f011eb8ce0d/view'
+					},
+					{
+						noticeId: '5b33422231bf40bebecdc97427922400',
+						title: 'Marine Corps e-Learning Ecosystem (MCeLE) Support Services',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-02-27T15:00:00-05:00',
+						solicitationNumber: 'M67854-26-I-4802',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER',
+						uiLink: 'https://sam.gov/workspace/contract/opp/5b33422231bf40bebecdc97427922400/view'
+					},
+					{
+						noticeId: 'a36fd62b1f89443d8ac9276c923cc39a',
+						title: 'Marine Corps Tactical Instrumentation System Support Extension',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-02-13',
+						responseDueDate: '2026-02-28T12:00:00-05:00',
+						solicitationNumber: 'M6785421C8051P00029',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER',
+						classificationCode: 'J069',
+						uiLink: 'https://sam.gov/workspace/contract/opp/a36fd62b1f89443d8ac9276c923cc39a/view'
+					},
+					{
+						noticeId: '54a1dbbc6f4847829bcd6081d5ab7bc1',
+						title: 'Marine Corps Tactical Instrumentation System',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-02-13',
+						responseDueDate: '2026-02-28T23:59:00-05:00',
+						solicitationNumber: 'M67854R8010',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER',
+						classificationCode: 'J069',
+						uiLink: 'https://sam.gov/workspace/contract/opp/54a1dbbc6f4847829bcd6081d5ab7bc1/view'
+					},
+					{
+						noticeId: '80cc33505e1141f2844ef1b61276906b',
+						title: 'NAVSEALOGCEN Virtual Industry Day',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-02',
+						responseDueDate: '2026-03-05T14:00:00-08:00',
+						solicitationNumber: 'N65726-ID-2026',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL UNDERSEA WARFARE CENTER',
+						uiLink: 'https://sam.gov/workspace/contract/opp/80cc33505e1141f2844ef1b61276906b/view'
+					},
+					{
+						noticeId: '87d50461402e43ffb3ead43e62bd12e2',
+						title: 'FY25 Long Range Broad Agency Announcement (BAA) for Navy and Marine Corps Science and Technology',
+						noticeType: 'Solicitation',
+						postedDate: '2026-01-14',
+						responseDueDate: '2026-09-30T00:00:00-04:00',
+						solicitationNumber: 'N0001425SB001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH',
+						naicsCode: '541715',
+						classificationCode: 'AC12',
+						uiLink: 'https://sam.gov/workspace/contract/opp/87d50461402e43ffb3ead43e62bd12e2/view'
+					},
+					{
+						noticeId: 'da28831e42904c3a80810b8dbb0b8bce',
+						title: 'Pre-Solicitation Notice and Draft RFP for U.S. Navy (USN) Tactical Combat Training System Increment II (TCTS II) and United States Air Force (USAF) equivalent P6 combat Training System (P6CTS)',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-26',
+						responseDueDate: '2026-03-12T17:00:00-04:00',
+						solicitationNumber: 'n6134026r1008',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC TSD.NAWC TRAINING SYSTEMS DIV',
+						naicsCode: '336413',
+						classificationCode: '6910',
+						uiLink: 'https://sam.gov/workspace/contract/opp/da28831e42904c3a80810b8dbb0b8bce/view'
+					}
+					]
+				}
+			},
+			notes: 'AFCEA NOVA calendar confirms Naval IT Day on March 12, 2026 with registration open. Swoogo registration flow provides fee tiers (industry, member/non-member, and no-cost government/military). Secondary event briefs align on venue (Westfields Marriott Washington Dulles) and theme: "Enabling the Naval Force: Data, Digital, and Decision Advantage."'
 		}
 	},
-{
-		id: 'radar-same-charleston-post-industry-day-2026',
+{		id: 'radar-same-charleston-post-industry-day-2026',
 		title: 'SAME Charleston Post Industry Day 2026',
 		description: 'USACE Charleston District. Day 1: Golf tournament + sunset boat cruise. Day 2: Full industry day with speakers, networking, happy hour.',
 		startDate: '2026-03-18',
