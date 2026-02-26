@@ -80,6 +80,25 @@ export interface RadarOntology {
 		solicitationNumber?: string;
 		responseDueDate?: string;
 		registrationDeadline?: string;
+		samIntelligence?: {
+			collectedAt?: string;
+			postedFrom?: string;
+			postedTo?: string;
+			noticeTypes?: string[];
+			totalMatched?: number;
+			topNotices?: Array<{
+				noticeId: string;
+				title: string;
+				noticeType: string;
+				postedDate?: string;
+				responseDueDate?: string;
+				solicitationNumber?: string;
+				agencyPath?: string;
+				naicsCode?: string;
+				classificationCode?: string;
+				uiLink?: string;
+			}>;
+		};
 	};
 	engagement?: RadarEngagementTracking;
 	notes?: string;

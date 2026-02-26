@@ -133,7 +133,14 @@ function inferEngagementKinds(event: (typeof events)[number]) {
 	return engagementKinds.filter((kind) => kinds.has(kind));
 }
 
+function hasSamIntelligence(event: (typeof events)[number]) {
+	const sam = event.ontology.acquisition?.samIntelligence;
+	if (!sam) return false;
+	return Boolean((sam.topNotices?.length ?? 0) > 0 || (sam.totalMatched ?? 0) > 0);
+}
+
 function isSamOfficialNotice(event: (typeof events)[number]) {
+	if (hasSamIntelligence(event)) return true;
 	return event.ontology.provenance.some((source) => {
 		const blob = `${source.name} ${source.url}`.toLowerCase();
 		return blob.includes('sam.gov') || blob.includes('get opportunities public api');
@@ -184,10 +191,22 @@ function samOpportunityLinks(event: (typeof events)[number]) {
 		event.ontology.links.official,
 		event.ontology.links.registration,
 		...event.ontology.provenance.map((source) => source.url),
+		...(event.ontology.acquisition?.samIntelligence?.topNotices ?? []).map((notice) => notice.uiLink),
 	]
 		.map((url) => sanitizedLink(url))
 		.filter((url): url is string => Boolean(url && /sam\.gov/i.test(url)));
 	return [...new Set(links)];
+}
+
+function samTopNotices(event: (typeof events)[number]) {
+	return event.ontology.acquisition?.samIntelligence?.topNotices ?? [];
+}
+
+function samPostedWindow(event: (typeof events)[number]) {
+	const sam = event.ontology.acquisition?.samIntelligence;
+	if (!sam?.postedFrom && !sam?.postedTo) return null;
+	if (sam.postedFrom && sam.postedTo) return `${sam.postedFrom} to ${sam.postedTo}`;
+	return sam.postedFrom ?? sam.postedTo ?? null;
 }
 
 function inferredGovernmentOrganizations(event: (typeof events)[number]) {
@@ -744,39 +763,38 @@ function acquisitionReferences(event: (typeof events)[number]) {
 									</div>
 								</div>
 
-								{(inferEngagementKinds(event).length || noticeTypeLabel(event) || isSamOfficialNotice(event) || event.ontology.acquisition?.agency || event.ontology.acquisition?.solicitationNumber || event.ontology.acquisition?.responseDueDate || event.ontology.acquisition?.registrationDeadline || inferredGovernmentOrganizations(event).length || governmentPocs(event).length || informationalInsights(event).length) ? (
+								{hasSamIntelligence(event) ? (
 									<div class="mt-4 grid gap-4 lg:grid-cols-2">
 										<div>
-											<p class="radar-section-label">Opportunity intelligence</p>
+											<p class="radar-section-label">Opportunity intelligence (SAM)</p>
 											<ul class="radar-listing">
+												{event.ontology.acquisition?.samIntelligence?.collectedAt ? <li><strong>Last SAM run:</strong> {fmtDate(event.ontology.acquisition.samIntelligence.collectedAt)}</li> : null}
+												{samPostedWindow(event) ? <li><strong>Posted window:</strong> {samPostedWindow(event)}</li> : null}
+												{typeof event.ontology.acquisition?.samIntelligence?.totalMatched === 'number' ? <li><strong>SAM matches:</strong> {event.ontology.acquisition.samIntelligence.totalMatched}</li> : null}
 												{noticeTypeLabel(event) ? <li><strong>Notice type:</strong> {noticeTypeLabel(event)}</li> : null}
 												{inferEngagementKinds(event).length ? <li><strong>Opportunity signals:</strong> {inferEngagementKinds(event).join(', ')}</li> : null}
 												{event.ontology.acquisition?.agency ? <li><strong>Agency:</strong> {event.ontology.acquisition?.agency}</li> : null}
-												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
-												{event.ontology.acquisition?.registrationDeadline ? <li><strong>Registration closes:</strong> {fmtDate(event.ontology.acquisition?.registrationDeadline)}</li> : null}
-												{event.ontology.acquisition?.responseDueDate ? <li><strong>Response due:</strong> {fmtDate(event.ontology.acquisition?.responseDueDate)}</li> : null}
-												{samOpportunityLinks(event).length ? (
-													<li>
-														<strong>SAM opportunities:</strong>{' '}
-														{samOpportunityLinks(event).map((url, idx) => (
-															<span>
-																<a href={url} target="_blank" rel="noreferrer">{samOpportunityLinks(event).length > 1 ? `Link ${idx + 1}` : 'Open notice'}</a>
-																{idx < samOpportunityLinks(event).length - 1 ? <span>{' · '}</span> : null}
-															</span>
-														))}
-													</li>
-												) : null}
+												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Reference solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
+												{event.ontology.acquisition?.responseDueDate ? <li><strong>Nearest response due:</strong> {fmtDate(event.ontology.acquisition?.responseDueDate)}</li> : null}
 												{acquisitionReferences(event).length ? <li><strong>Acquisition references:</strong> {acquisitionReferences(event).join(' · ')}</li> : null}
 											</ul>
 										</div>
 										<div>
-											<p class="radar-section-label">Government organizations</p>
-											{inferredGovernmentOrganizations(event).length ? (
+											<p class="radar-section-label">Top SAM notices</p>
+											{samTopNotices(event).length ? (
 												<ul class="radar-listing">
-													{inferredGovernmentOrganizations(event).map((org) => <li>{org}</li>)}
+													{samTopNotices(event).map((notice) => (
+														<li>
+															{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}
+															<span class="text-slate-500"> · {notice.noticeType}</span>
+															{notice.postedDate ? <span class="text-slate-500"> · posted {notice.postedDate}</span> : null}
+															{notice.responseDueDate ? <span class="text-slate-500"> · due {fmtDate(notice.responseDueDate)}</span> : null}
+															{notice.solicitationNumber ? <span class="text-slate-500"> · {notice.solicitationNumber}</span> : null}
+														</li>
+													))}
 												</ul>
 											) : (
-												<p class="mt-2 text-xs text-slate-500">No government organizations inferred yet.</p>
+												<p class="mt-2 text-xs text-slate-500">No SAM notices captured in this run.</p>
 											)}
 										</div>
 										<div>
@@ -797,13 +815,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 											)}
 										</div>
 										<div>
-											<p class="radar-section-label">Actionable insights</p>
+											<p class="radar-section-label">Intelligence notes</p>
 											{informationalInsights(event).length ? (
 												<ul class="radar-listing">
 													{informationalInsights(event).map((insight) => <li>{insight}</li>)}
 												</ul>
 											) : (
-												<p class="mt-2 text-xs text-slate-500">No sourced actionable insights yet.</p>
+												<p class="mt-2 text-xs text-slate-500">No sourced intelligence notes yet.</p>
 											)}
 										</div>
 									</div>

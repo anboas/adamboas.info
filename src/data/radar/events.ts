@@ -118,7 +118,65 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'High'
 			},
-			notes: 'Date aligned to current 2026 listing; high value when tied to mission-thread targets before attendance.'
+			acquisition:
+			{
+				engagementKinds: ['Sources Sought', 'Pre-solicitation', 'Special Notice'],
+				noticeType: 'Mixed (SOF notices)',
+				agency: 'USSOCOM / MARSOC / Naval Special Warfare',
+				solicitationNumber: 'H9225726QE007',
+				responseDueDate: '2026-03-27',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '2026-01-15',
+					postedTo: '2026-02-26',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 49,
+					topNotices: [
+					{
+						noticeId: 'b57eb3bbc1ba48fcb528ecff95240f91',
+						title: 'USSOCOM SOF AT&L INNOVATIVE TECHNOLOGY AND AGILE ACQUISITION, Commercial Solutions Opening (CSO)',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-24',
+						agencyPath: 'DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).HQ USSOCOM',
+						uiLink: 'https://sam.gov/workspace/contract/opp/b57eb3bbc1ba48fcb528ecff95240f91/view'
+					},
+					{
+						noticeId: '1d5f0611f7ed430ab9a3e3b17ba98f0d',
+						title: 'USSOCOM Small Cruise Missile (SCM)',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-12',
+						agencyPath: 'DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).HQ USSOCOM',
+						uiLink: 'https://sam.gov/workspace/contract/opp/1d5f0611f7ed430ab9a3e3b17ba98f0d/view'
+					},
+					{
+						noticeId: 'ec6c6a446037465ba6bc4e7ed9ea0720',
+						title: 'MARSOC Initial Equipment Multiple Award BPA',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-02-25',
+						responseDueDate: '2026-03-27T12:00:00-04:00',
+						solicitationNumber: 'H9225726QE007',
+						agencyPath: 'DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).MARSOC H92257',
+						naicsCode: '334111',
+						classificationCode: '7E21',
+						uiLink: 'https://sam.gov/workspace/contract/opp/ec6c6a446037465ba6bc4e7ed9ea0720/view'
+					},
+					{
+						noticeId: '3ae1e431b0a747588762b770f7b6481c',
+						title: 'RFI Combat Development Systems Engineering and Technical Assistance (SETA) Support',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-12',
+						responseDueDate: '2026-02-23T12:00:00-05:00',
+						solicitationNumber: 'H9225726BG001',
+						agencyPath: 'DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).MARSOC H92257',
+						naicsCode: '541690',
+						classificationCode: 'R408',
+						uiLink: 'https://sam.gov/workspace/contract/opp/3ae1e431b0a747588762b770f7b6481c/view'
+					}
+					]
+				}
+			},
+			notes: 'Date aligned to current 2026 listing; high value when tied to mission-thread targets before attendance. SAM intelligence run attached 2026-02-26.'
 		}
 	},
 {
@@ -176,6 +234,64 @@ export const radarEventsSeed: RadarEvent[] = [
 					max: 1300
 				},
 				travelBurdenFromDc: 'Low'
+			},
+			acquisition:
+			{
+				engagementKinds: ['Pre-solicitation', 'Sources Sought', 'Special Notice'],
+				noticeType: 'Mixed (Navy/NAVAIR notices)',
+				agency: 'Department of the Navy / NAVAIR',
+				solicitationNumber: 'N00019-26-RFPREQ-APM290-0571',
+				responseDueDate: '2026-03-12',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '2026-01-15',
+					postedTo: '2026-02-26',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 50,
+					topNotices: [
+					{
+						noticeId: '78ebb01c9dca4e79b0279b4f37c62f07',
+						title: 'Airborne Radar supporting Multi-mission Maritime Aircraft',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-03-06T23:59:00-05:00',
+						solicitationNumber: 'N00019-26-RFPREQ-APM290-0571',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/78ebb01c9dca4e79b0279b4f37c62f07/view'
+					},
+					{
+						noticeId: 'd7e950c6825641f396e1e635b193b9c7',
+						title: 'Airborne Radar Solutions Supporting Multi-mission Maritime Aircraft',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-05',
+						responseDueDate: '2026-02-11T23:59:00-05:00',
+						solicitationNumber: 'N00019-26-RFPREQ-APM290-0571',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d7e950c6825641f396e1e635b193b9c7/view'
+					},
+					{
+						noticeId: 'd6fcfdb0f5b94267a59656c50a6cfef0',
+						title: 'Active Expendable Decoy (AED) Procurement and Support',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-25',
+						responseDueDate: '2026-03-11T09:00:00-04:00',
+						solicitationNumber: 'N00019-25-RFPREQ-TPM272-0096_01',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d6fcfdb0f5b94267a59656c50a6cfef0/view'
+					},
+					{
+						noticeId: '1aafcd50f4c440d0a0350d8547092d3f',
+						title: 'V-22 AE1107C Engine Mission Planning and Power Assurance Update',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-02-25',
+						responseDueDate: '2026-03-12T00:00:00-04:00',
+						solicitationNumber: 'N00019-26-RFPREQ-APM260-0358',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/1aafcd50f4c440d0a0350d8547092d3f/view'
+					}
+					]
+				}
 			}
 		}
 	},
@@ -7086,7 +7202,65 @@ export const radarEventsSeed: RadarEvent[] = [
 				},
 				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'Air Force Southeast'
+			acquisition:
+			{
+				engagementKinds: ['Pre-solicitation', 'Sources Sought', 'Special Notice'],
+				noticeType: 'Mixed (AFSOC/SOCOM notices)',
+				agency: 'AFSOC / USSOCOM / SOCCENT',
+				solicitationNumber: 'FA441726R0005',
+				responseDueDate: '2026-04-30',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '2026-01-15',
+					postedTo: '2026-02-26',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 15,
+					topNotices: [
+					{
+						noticeId: 'f0d21164aad341c8a6354512a2d4adf0',
+						title: 'Hurlburt Field Integrated Base Defense Security System (IBDSS) IDIQ',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-20',
+						responseDueDate: '2026-02-27T14:00:00-06:00',
+						solicitationNumber: 'FA441726R0005',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPECIAL OPERATIONS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/f0d21164aad341c8a6354512a2d4adf0/view'
+					},
+					{
+						noticeId: '4c3d61f4a9564ea096bf4375509c6899',
+						title: 'AFSOC Innovation, Logistical, and Material Support OTA',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-10',
+						responseDueDate: '2026-02-17T14:00:00-06:00',
+						solicitationNumber: 'AFSOC-OTA-26-001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPECIAL OPERATIONS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/4c3d61f4a9564ea096bf4375509c6899/view'
+					},
+					{
+						noticeId: '25dabf3434514fa6bd5a30dbb057a5ad',
+						title: 'J7 OCSIC Support',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-24',
+						responseDueDate: '2026-03-06T12:00:00+03:00',
+						solicitationNumber: 'H9227726R0001',
+						agencyPath: 'DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).SOCCENT',
+						uiLink: 'https://sam.gov/workspace/contract/opp/25dabf3434514fa6bd5a30dbb057a5ad/view'
+					},
+					{
+						noticeId: 'aa0039a497594af9bf71c3aef6c227e1',
+						title: 'Demo Reef Dining Facility, Bldg 90326',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-02-25',
+						responseDueDate: '2026-04-30T14:00:00-05:00',
+						solicitationNumber: 'FA441726B0001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPECIAL OPERATIONS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/aa0039a497594af9bf71c3aef6c227e1/view'
+					}
+					]
+				}
+			},
+			notes: 'Air Force Southeast. SAM intelligence run attached 2026-02-26.'
 		}
 	},
 {
