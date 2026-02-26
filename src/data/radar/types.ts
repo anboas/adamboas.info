@@ -86,6 +86,19 @@ export interface RadarOntology {
 			postedTo?: string;
 			noticeTypes?: string[];
 			totalMatched?: number;
+			typeCounts?: Record<string, number>;
+			participants?: {
+				sources?: string[];
+				sponsors?: string[];
+				mediaPartners?: string[];
+				communityCorridor?: string[];
+				organizationCount?: number;
+			};
+			overlapSummary?: {
+				withStakeholderOverlap?: number;
+				withoutStakeholderOverlap?: number;
+				stakeholderCounts?: Record<string, number>;
+			};
 			topNotices?: Array<{
 				noticeId: string;
 				title: string;
@@ -97,6 +110,9 @@ export interface RadarOntology {
 				naicsCode?: string;
 				classificationCode?: string;
 				uiLink?: string;
+				score?: number;
+				scoreReasons?: string[];
+				overlapStakeholders?: string[];
 			}>;
 		};
 	};

@@ -3,6 +3,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
+import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
 import type { RadarEngagementKind } from '../../data/radar/types';
 
 const DISALLOWED_SOURCE_HOSTS = new Set(['jbenton1.github.io']);
@@ -70,6 +71,14 @@ function isAttendingEvent(event: (typeof events)[number]) {
 	return attendingEventIds.has(event.id);
 }
 
+const samIntelOverrides: Record<string, any> = {
+	'radar-sofweek-2026': sofweekIntel,
+};
+
+function samIntel(event: (typeof events)[number]) {
+	return samIntelOverrides[event.id] ?? event.ontology.acquisition?.samIntelligence ?? null;
+}
+
 const branches = [...new Set(events.map((e) => e.branch))].sort();
 const types = [...new Set(events.map((e) => e.type))].sort();
 const statuses = ['Upcoming', 'Projected', 'Needs Date', 'Past'] as const;
@@ -134,7 +143,7 @@ function inferEngagementKinds(event: (typeof events)[number]) {
 }
 
 function hasSamIntelligence(event: (typeof events)[number]) {
-	const sam = event.ontology.acquisition?.samIntelligence;
+	const sam = samIntel(event);
 	if (!sam) return false;
 	return Boolean((sam.topNotices?.length ?? 0) > 0 || (sam.totalMatched ?? 0) > 0);
 }
@@ -191,7 +200,7 @@ function samOpportunityLinks(event: (typeof events)[number]) {
 		event.ontology.links.official,
 		event.ontology.links.registration,
 		...event.ontology.provenance.map((source) => source.url),
-		...(event.ontology.acquisition?.samIntelligence?.topNotices ?? []).map((notice) => notice.uiLink),
+		...(samIntel(event)?.topNotices ?? []).map((notice) => notice.uiLink),
 	]
 		.map((url) => sanitizedLink(url))
 		.filter((url): url is string => Boolean(url && /sam\.gov/i.test(url)));
@@ -199,11 +208,11 @@ function samOpportunityLinks(event: (typeof events)[number]) {
 }
 
 function samTopNotices(event: (typeof events)[number]) {
-	return event.ontology.acquisition?.samIntelligence?.topNotices ?? [];
+	return samIntel(event)?.topNotices ?? [];
 }
 
 function samPostedWindow(event: (typeof events)[number]) {
-	const sam = event.ontology.acquisition?.samIntelligence;
+	const sam = samIntel(event);
 	if (!sam?.postedFrom && !sam?.postedTo) return null;
 	if (sam.postedFrom && sam.postedTo) return `${sam.postedFrom} to ${sam.postedTo}`;
 	return sam.postedFrom ?? sam.postedTo ?? null;
@@ -247,6 +256,51 @@ function overlapCoverage(event: (typeof events)[number]) {
 	const notices = samTopNotices(event);
 	const withOverlap = notices.filter((notice) => noticeOverlapStakeholders(event, notice).length > 0).length;
 	return { withOverlap, total: notices.length };
+}
+
+function samTypeCounts(event: (typeof events)[number]) {
+	const fromBundle = samIntel(event)?.typeCounts;
+	if (fromBundle && Object.keys(fromBundle).length) return Object.entries(fromBundle).sort((a, b) => b[1] - a[1]);
+	const counts = new Map<string, number>();
+	for (const notice of samTopNotices(event)) {
+		const key = notice.noticeType || 'Unknown';
+		counts.set(key, (counts.get(key) ?? 0) + 1);
+	}
+	return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+function samOverlapCounts(event: (typeof events)[number]) {
+	const fromBundle = samIntel(event)?.overlapSummary?.stakeholderCounts;
+	if (fromBundle && Object.keys(fromBundle).length) return Object.entries(fromBundle).sort((a, b) => b[1] - a[1]);
+	const counts = new Map<string, number>();
+	for (const notice of samTopNotices(event)) {
+		for (const stakeholder of noticeOverlapStakeholders(event, notice)) {
+			counts.set(stakeholder, (counts.get(stakeholder) ?? 0) + 1);
+		}
+	}
+	return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+function maxCount(rows: Array<[string, number]>) {
+	return rows.length ? Math.max(...rows.map((row) => row[1])) : 0;
+}
+
+function participantOrganizations(event: (typeof events)[number]) {
+	const sam = samIntel(event);
+	const participants = sam?.participants;
+	if (!participants) return [] as string[];
+	const merged = [
+		...(participants.sponsors ?? []),
+		...(participants.mediaPartners ?? []),
+		...(participants.communityCorridor ?? []),
+	].filter((value): value is string => Boolean(value && value.trim()));
+	return [...new Set(merged)].sort((a, b) => a.localeCompare(b));
+}
+
+function inferredAttendeeOrganizations(event: (typeof events)[number]) {
+	const participants = participantOrganizations(event);
+	if (participants.length) return participants;
+	return [] as string[];
 }
 
 function inferredGovernmentOrganizations(event: (typeof events)[number]) {
@@ -557,7 +611,7 @@ function confidenceNotes(event: (typeof events)[number]) {
 }
 
 function solicitationCount(event: (typeof events)[number]) {
-	return Math.max(0, event.ontology.acquisition?.samIntelligence?.totalMatched ?? 0);
+	return Math.max(0, samIntel(event)?.totalMatched ?? 0);
 }
 
 function acquisitionReferences(event: (typeof events)[number]) {
@@ -840,9 +894,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 										<div>
 											<p class="radar-section-label">Comparative pane: solicitation overlap</p>
 											<ul class="radar-listing">
-												{event.ontology.acquisition?.samIntelligence?.collectedAt ? <li><strong>Last SAM run:</strong> {fmtDate(event.ontology.acquisition.samIntelligence.collectedAt)}</li> : null}
+												{samIntel(event)?.collectedAt ? <li><strong>Last SAM run:</strong> {fmtDate(samIntel(event)?.collectedAt ?? null)}</li> : null}
 												{samPostedWindow(event) ? <li><strong>Posted window:</strong> {samPostedWindow(event)}</li> : null}
-												{typeof event.ontology.acquisition?.samIntelligence?.totalMatched === 'number' ? <li><strong>Total matched solicitations:</strong> {event.ontology.acquisition.samIntelligence.totalMatched}</li> : null}
+												{typeof samIntel(event)?.totalMatched === 'number' ? <li><strong>Total matched solicitations:</strong> {samIntel(event)?.totalMatched}</li> : null}
 												<li><strong>Captured in this pane:</strong> {samTopNotices(event).length}</li>
 												<li><strong>Stakeholder overlap coverage:</strong> {overlapCoverage(event).withOverlap}/{overlapCoverage(event).total} captured notices</li>
 												{event.ontology.acquisition?.agency ? <li><strong>Agency focus:</strong> {event.ontology.acquisition?.agency}</li> : null}
@@ -867,6 +921,108 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												<p class="mt-2 text-xs text-slate-500">No SAM notices captured in this run yet.</p>
 											)}
 										</div>
+									</div>
+
+									<div class="mt-4 grid gap-4 xl:grid-cols-3">
+										<div>
+											<p class="radar-section-label">Public participant organizations (event crawl)</p>
+											{inferredAttendeeOrganizations(event).length ? (
+												<div class="radar-intel-scroll">
+													<ul class="radar-listing">
+														{inferredAttendeeOrganizations(event).map((org) => <li>{org}</li>)}
+													</ul>
+												</div>
+											) : (
+												<p class="mt-2 text-xs text-slate-500">No attendee organization crawl data attached for this event yet.</p>
+											)}
+										</div>
+										<div>
+											<p class="radar-section-label">Solicitation type distribution</p>
+											{samTypeCounts(event).length ? (
+												<div class="space-y-1.5">
+													{samTypeCounts(event).map(([label, count]) => (
+														<div class="radar-intel-bar-row">
+															<div class="radar-intel-bar-meta">
+																<span>{label}</span>
+																<span>{count}</span>
+															</div>
+															<div class="radar-intel-bar-track"><span class="radar-intel-bar-fill" style={`width:${maxCount(samTypeCounts(event)) ? Math.max(6, Math.round((count / maxCount(samTypeCounts(event))) * 100)) : 0}%`}></span></div>
+														</div>
+													))}
+												</div>
+											) : (
+												<p class="mt-2 text-xs text-slate-500">No solicitation type breakdown yet.</p>
+											)}
+										</div>
+										<div>
+											<p class="radar-section-label">Stakeholder overlap graph</p>
+											{samOverlapCounts(event).length ? (
+												<div class="space-y-1.5">
+													{samOverlapCounts(event).map(([label, count]) => (
+														<div class="radar-intel-bar-row">
+															<div class="radar-intel-bar-meta">
+																<span>{label}</span>
+																<span>{count}</span>
+															</div>
+															<div class="radar-intel-bar-track"><span class="radar-intel-bar-fill radar-intel-bar-fill-overlap" style={`width:${maxCount(samOverlapCounts(event)) ? Math.max(6, Math.round((count / maxCount(samOverlapCounts(event))) * 100)) : 0}%`}></span></div>
+														</div>
+													))}
+												</div>
+											) : (
+												<p class="mt-2 text-xs text-slate-500">No overlap signals detected in captured solicitations.</p>
+											)}
+										</div>
+									</div>
+
+									<div class="mt-4">
+										<div class="flex flex-wrap items-center justify-between gap-2">
+											<p class="radar-section-label">Exhaustive solicitation table</p>
+											<div class="flex items-center gap-2">
+												<span class="text-[11px] text-slate-400">Showing {samTopNotices(event).length} of {solicitationCount(event)} matched</span>
+												<label class="text-[11px] text-slate-400">View
+													<select class="radar-input radar-input-sort radar-inline-select" data-sam-sort data-event-id={event.id}>
+														<option value="score">Ranked (weight)</option>
+														<option value="due">Nearest due date</option>
+														<option value="posted">Newest posted</option>
+														<option value="title">Title (A-Z)</option>
+													</select>
+												</label>
+											</div>
+										</div>
+										{samTopNotices(event).length ? (
+											<div class="radar-intel-scroll radar-intel-table-wrap">
+												<table class="radar-intel-table" data-sam-table data-event-id={event.id}>
+													<thead>
+														<tr>
+															<th>Weight</th>
+															<th>Type</th>
+															<th>Posted</th>
+															<th>Due</th>
+															<th>Solicitation</th>
+															<th>Agency</th>
+															<th>Overlap</th>
+															<th>Notice</th>
+														</tr>
+													</thead>
+													<tbody>
+														{samTopNotices(event).map((notice) => (
+															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()}>
+																<td>{notice.score ?? 0}</td>
+																<td>{notice.noticeType}</td>
+																<td>{notice.postedDate ?? '—'}</td>
+																<td>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>
+																<td>{notice.solicitationNumber ?? '—'}</td>
+																<td>{notice.agencyPath ?? '—'}</td>
+																<td>{noticeOverlapStakeholders(event, notice).length ? noticeOverlapStakeholders(event, notice).join(', ') : '—'}</td>
+																<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.noticeId}</a> : <span>{notice.noticeId}</span>}</td>
+															</tr>
+														))}
+													</tbody>
+												</table>
+											</div>
+										) : (
+											<p class="mt-2 text-xs text-slate-500">No SAM solicitations captured yet.</p>
+										)}
 									</div>
 								) : null}
 
@@ -2174,11 +2330,51 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 	});
 
+	function toEpoch(value) {
+		if (!value) return Number.POSITIVE_INFINITY;
+		const parsed = Date.parse(value);
+		return Number.isFinite(parsed) ? parsed : Number.POSITIVE_INFINITY;
+	}
+
+	function sortSamTable(table, mode) {
+		const tbody = table.querySelector('tbody');
+		if (!tbody) return;
+		const rows = Array.from(tbody.querySelectorAll('tr'));
+		rows.sort((a, b) => {
+			if (mode === 'due') {
+				return toEpoch(a.dataset.due || '') - toEpoch(b.dataset.due || '') || Number(b.dataset.score || '0') - Number(a.dataset.score || '0');
+			}
+			if (mode === 'posted') {
+				return toEpoch(b.dataset.posted || '') - toEpoch(a.dataset.posted || '') || Number(b.dataset.score || '0') - Number(a.dataset.score || '0');
+			}
+			if (mode === 'title') {
+				return (a.dataset.title || '').localeCompare(b.dataset.title || '') || Number(b.dataset.score || '0') - Number(a.dataset.score || '0');
+			}
+			return Number(b.dataset.score || '0') - Number(a.dataset.score || '0') || toEpoch(b.dataset.posted || '') - toEpoch(a.dataset.posted || '');
+		});
+		for (const row of rows) tbody.appendChild(row);
+	}
+
+	function initSamTableSorters() {
+		const selects = Array.from(document.querySelectorAll('[data-sam-sort]'));
+		for (const select of selects) {
+			if (select.dataset.bound === '1') continue;
+			const eventId = select.dataset.eventId || '';
+			const table = document.querySelector(`[data-sam-table][data-event-id="${eventId}"]`);
+			if (!table) continue;
+			const apply = () => sortSamTable(table, select.value || 'score');
+			select.addEventListener('change', apply);
+			select.dataset.bound = '1';
+			apply();
+		}
+	}
+
 	readEventState();
 	mapPin = readMapPinPreference();
 	applyUrlState();
 	applyStatusFacetMode();
 	render();
+	initSamTableSorters();
 </script>
 
 <style>
@@ -2881,6 +3077,68 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		font-size: 0.83rem;
 		line-height: 1.45;
 		color: rgba(203, 213, 225, 0.96);
+	}
+	.radar-intel-scroll {
+		max-height: 16rem;
+		overflow: auto;
+		padding-right: 0.2rem;
+	}
+	.radar-intel-table-wrap {
+		max-height: 22rem;
+		border: 1px solid rgba(51, 65, 85, 0.65);
+		background: rgba(2, 6, 23, 0.45);
+	}
+	.radar-intel-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.72rem;
+	}
+	.radar-intel-table th,
+	.radar-intel-table td {
+		padding: 0.28rem 0.35rem;
+		border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+		vertical-align: top;
+		text-align: left;
+	}
+	.radar-intel-table th {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background: rgba(15, 23, 42, 0.95);
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.radar-intel-table td {
+		color: rgba(203, 213, 225, 0.95);
+	}
+	.radar-inline-select {
+		min-width: 11rem;
+		height: 1.85rem;
+		padding: 0.15rem 0.5rem;
+		font-size: 0.74rem;
+	}
+	.radar-intel-bar-row {
+		display: grid;
+		gap: 0.22rem;
+	}
+	.radar-intel-bar-meta {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 0.7rem;
+		color: rgba(203, 213, 225, 0.9);
+	}
+	.radar-intel-bar-track {
+		height: 0.35rem;
+		border: 1px solid rgba(71, 85, 105, 0.7);
+		background: rgba(15, 23, 42, 0.7);
+	}
+	.radar-intel-bar-fill {
+		display: block;
+		height: 100%;
+		background: rgba(59, 130, 246, 0.72);
+	}
+	.radar-intel-bar-fill-overlap {
+		background: rgba(34, 197, 94, 0.72);
 	}
 	.radar-evidence-pill {
 		display: inline-flex;
