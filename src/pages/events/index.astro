@@ -285,6 +285,25 @@ function maxCount(rows: Array<[string, number]>) {
 	return rows.length ? Math.max(...rows.map((row) => row[1])) : 0;
 }
 
+const solicitationTagRules: Array<{ key: string; label: string; pattern: RegExp }> = [
+	{ key: 'software', label: 'Software', pattern: /\bsoftware\b|\bapplication(s)?\b|\bapi\b|\bdeveloper\b|\bdevsecops\b|\bplatform engineering\b/i },
+	{ key: 'cloud', label: 'Cloud', pattern: /\bcloud\b|\baws\b|\bazure\b|\bgcp\b|\bkubernetes\b|\bcontainer(s)?\b|\bsaas\b|\biaas\b|\bpaas\b/i },
+	{ key: 'ai', label: 'AI/ML', pattern: /artificial intelligence|machine learning|\bml\b|\bllm\b|generative ai|computer vision|autonom/i },
+	{ key: 'logistics', label: 'Logistics', pattern: /\blogistics?\b|supply chain|transport|distribution|warehouse|inventory|materiel/i },
+	{ key: 'maintenance', label: 'Maintenance', pattern: /maintenance|sustainment|repair|overhaul|depot|lifecycle support|field service/i },
+	{ key: 'cyber', label: 'Cybersecurity', pattern: /\bcyber\b|zero trust|information assurance|rmf|security operations|vulnerability|iam/i },
+	{ key: 'data', label: 'Data/Analytics', pattern: /\bdata\b|analytics|database|data lake|etl|business intelligence/i },
+];
+
+function noticeFocusTags(notice: SamNotice) {
+	const blob = `${notice.title ?? ''} ${notice.noticeType ?? ''} ${notice.agencyPath ?? ''} ${notice.solicitationNumber ?? ''} ${notice.naicsCode ?? ''} ${notice.classificationCode ?? ''}`;
+	const tags = solicitationTagRules
+		.filter((rule) => rule.pattern.test(blob))
+		.map((rule) => ({ key: rule.key, label: rule.label }));
+	if (!tags.length) return [{ key: 'general', label: 'General' }];
+	return tags;
+}
+
 function participantOrganizations(event: (typeof events)[number]) {
 	const sam = samIntel(event);
 	const participants = sam?.participants;
@@ -961,13 +980,26 @@ function acquisitionReferences(event: (typeof events)[number]) {
 										<div class="flex flex-wrap items-center justify-between gap-2">
 											<p class="radar-section-label">Solicitation table</p>
 											<div class="flex items-center gap-2">
-												<span class="text-[11px] text-slate-400">Showing {samTopNotices(event).length} of {solicitationCount(event)} matched</span>
+												<span class="text-[11px] text-slate-400" data-sam-showing data-event-id={event.id}>Showing {samTopNotices(event).length} of {solicitationCount(event)} matched</span>
 												<label class="text-[11px] text-slate-400">View
 													<select class="radar-input radar-input-sort radar-inline-select" data-sam-sort data-event-id={event.id}>
 														<option value="score">Ranked (weight)</option>
 														<option value="due">Nearest due date</option>
 														<option value="posted">Newest posted</option>
 														<option value="title">Title (A-Z)</option>
+													</select>
+												</label>
+												<label class="text-[11px] text-slate-400">Filter
+													<select class="radar-input radar-input-sort radar-inline-select" data-sam-filter data-event-id={event.id}>
+														<option value="all">All</option>
+														<option value="my-focus">My focus (Software/Cloud/AI/Cyber/Data)</option>
+														<option value="software">Software</option>
+														<option value="cloud">Cloud</option>
+														<option value="ai">AI/ML</option>
+														<option value="logistics">Logistics</option>
+														<option value="maintenance">Maintenance</option>
+														<option value="cyber">Cybersecurity</option>
+														<option value="data">Data/Analytics</option>
 													</select>
 												</label>
 											</div>
@@ -985,12 +1017,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 															<th>Solicitation #</th>
 															<th>Agency</th>
 															<th>Overlap</th>
+															<th>Tags</th>
 															<th>Notice</th>
 														</tr>
 													</thead>
 													<tbody>
 														{samTopNotices(event).map((notice) => (
-															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()}>
+															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()} data-tags={noticeFocusTags(notice).map((tag) => tag.key).join(',')}>
 																<td>{notice.score ?? 0}</td>
 																<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
 															<td>{notice.noticeType}</td>
@@ -999,6 +1032,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 																<td>{notice.solicitationNumber ?? '—'}</td>
 																<td>{notice.agencyPath ?? '—'}</td>
 																<td>{noticeOverlapStakeholders(event, notice).length ? noticeOverlapStakeholders(event, notice).join(', ') : '—'}</td>
+																<td><div class="radar-intel-tags">{noticeFocusTags(notice).map((tag) => <span class="radar-pill radar-sam-tag" title={tag.key}>{tag.label}</span>)}</div></td>
 																<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.noticeId}</a> : <span>{notice.noticeId}</span>}</td>
 															</tr>
 														))}
@@ -2340,17 +2374,50 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		for (const row of rows) tbody.appendChild(row);
 	}
 
-	function initSamTableSorters() {
-		const selects = Array.from(document.querySelectorAll('[data-sam-sort]'));
-		for (const select of selects) {
-			if (select.dataset.bound === '1') continue;
-			const eventId = select.dataset.eventId || '';
-			const table = document.querySelector(`[data-sam-table][data-event-id="${eventId}"]`);
-			if (!table) continue;
-			const apply = () => sortSamTable(table, select.value || 'score');
-			select.addEventListener('change', apply);
-			select.dataset.bound = '1';
-			apply();
+	function samRowMatchesFilter(row, filterMode) {
+		if (!filterMode || filterMode === 'all') return true;
+		const tags = (row.dataset.tags || '').split(',').map((value) => value.trim()).filter(Boolean);
+		if (filterMode === 'my-focus') {
+			return ['software', 'cloud', 'ai', 'cyber', 'data'].some((tag) => tags.includes(tag));
+		}
+		return tags.includes(filterMode);
+	}
+
+	function applySamTableState(eventId) {
+		const table = document.querySelector(`[data-sam-table][data-event-id="${eventId}"]`);
+		if (!table) return;
+		const sortSelect = document.querySelector(`[data-sam-sort][data-event-id="${eventId}"]`);
+		const filterSelect = document.querySelector(`[data-sam-filter][data-event-id="${eventId}"]`);
+		const showingNode = document.querySelector(`[data-sam-showing][data-event-id="${eventId}"]`);
+		const sortMode = sortSelect?.value || 'score';
+		const filterMode = filterSelect?.value || 'all';
+		sortSamTable(table, sortMode);
+		const rows = Array.from(table.querySelectorAll('tbody tr'));
+		let visibleCount = 0;
+		for (const row of rows) {
+			const show = samRowMatchesFilter(row, filterMode);
+			row.hidden = !show;
+			if (show) visibleCount += 1;
+		}
+		if (showingNode) showingNode.textContent = `Showing ${visibleCount} of ${rows.length} matched`;
+	}
+
+	function initSamTableControls() {
+		const tables = Array.from(document.querySelectorAll('[data-sam-table][data-event-id]'));
+		for (const table of tables) {
+			const eventId = table.dataset.eventId || '';
+			if (!eventId) continue;
+			const sortSelect = document.querySelector(`[data-sam-sort][data-event-id="${eventId}"]`);
+			const filterSelect = document.querySelector(`[data-sam-filter][data-event-id="${eventId}"]`);
+			if (sortSelect && sortSelect.dataset.bound !== '1') {
+				sortSelect.addEventListener('change', () => applySamTableState(eventId));
+				sortSelect.dataset.bound = '1';
+			}
+			if (filterSelect && filterSelect.dataset.bound !== '1') {
+				filterSelect.addEventListener('change', () => applySamTableState(eventId));
+				filterSelect.dataset.bound = '1';
+			}
+			applySamTableState(eventId);
 		}
 	}
 
@@ -2359,7 +2426,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	applyUrlState();
 	applyStatusFacetMode();
 	render();
-	initSamTableSorters();
+	initSamTableControls();
 </script>
 
 <style>
@@ -3100,6 +3167,16 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		height: 1.85rem;
 		padding: 0.15rem 0.5rem;
 		font-size: 0.74rem;
+	}
+	.radar-intel-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.22rem;
+	}
+	.radar-sam-tag {
+		padding: 0.08rem 0.32rem;
+		font-size: 0.6rem;
+		line-height: 1.2;
 	}
 	.radar-intel-bar-row {
 		display: grid;
