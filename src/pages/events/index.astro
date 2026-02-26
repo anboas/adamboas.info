@@ -437,6 +437,10 @@ function governmentPocs(event: (typeof events)[number]) {
 	return (event.ontology.engagement?.contacts ?? []).filter((contact) => govHint.test(`${contact.organization ?? ''} ${contact.role ?? ''}`));
 }
 
+function governmentContactCount(event: (typeof events)[number]) {
+	return governmentPocs(event).length;
+}
+
 function noticeTypeLabel(event: (typeof events)[number]) {
 	const explicit = event.ontology.acquisition?.noticeType?.trim();
 	if (explicit) return explicit;
@@ -852,6 +856,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 						<option value="latest">Latest first</option>
 						<option value="signal">Signal first</option>
 						<option value="solicitations">Most solicitations</option>
+						<option value="gov-contacts">Most government contacts</option>
 						<option value="branch">Branch</option>
 					</select>
 				</div>
@@ -879,6 +884,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 							data-link={eventPrimaryLink(event) ?? ''}
 							data-sam-link={samOpportunityLink(event) ?? ''}
 							data-solicitations={solicitationCount(event)}
+							data-gov-contacts={governmentContactCount(event)}
 							data-calendar-link={eventCalendarLink(event) ?? ''}
 							data-ios-link={eventIosIcsLink(event) ?? ''}
 							data-outlook-link={eventOutlookIcsLink(event) ?? ''}
@@ -2164,6 +2170,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			visible.sort((a, b) => {
 				const aCount = Number(a.dataset.solicitations || '0');
 				const bCount = Number(b.dataset.solicitations || '0');
+				return (bCount - aCount) || sortBySoonest(a, b);
+			});
+		} else if (state.sort === 'gov-contacts') {
+			visible.sort((a, b) => {
+				const aCount = Number(a.dataset.govContacts || '0');
+				const bCount = Number(b.dataset.govContacts || '0');
 				return (bCount - aCount) || sortBySoonest(a, b);
 			});
 		} else if (state.sort === 'branch') {
