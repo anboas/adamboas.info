@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-02-25T14:40:15.373955+00:00
+Generated: 2026-02-26T14:41:05.174949+00:00
 
 - Total: 19
 - OK: 11
@@ -12,13 +12,13 @@ Generated: 2026-02-25T14:40:15.373955+00:00
 | SAM.gov Opportunities API | official_api | 404 | no | 0 | 0 | https://api.sam.gov/opportunities/v2/search | HTTP 404 |
 | NAVSEA / NSWC source set | official_pages | 403 | no | 0 | 0 | https://www.navsea.navy.mil/Home/Warfare-Centers/ | HTTP 403 |
 | AUSA Meetings & Events | official_calendar | 200 | no | 50 | 91 | https://www.ausa.org/meet |  |
-| AFCEA Events | official_calendar | 200 | no | 22 | 261 | https://www.afcea.org/events |  |
-| AFA Events | official_calendar | 200 | no | 16 | 26 | https://www.afa.org/events/ |  |
+| AFCEA Events | official_calendar | 200 | no | 20 | 260 | https://www.afcea.org/events |  |
+| AFA Events | official_calendar | 200 | no | 24 | 32 | https://www.afa.org/events/ |  |
 | Navy League Meetings & Events | official_calendar | 200 | no | 6 | 35 | https://www.navyleague.org/meetings-and-events/ |  |
 | CTO Innovation Industry Outreach Calendar | official_calendar | 200 | no | 0 | 29 | https://www.ctoinnovation.mil/events/ |  |
 | SAME Events | official_calendar | 200 | no | 9 | 14 | https://www.same.org/events/ |  |
 | ASD Events (Defense & Security) | aggregator | 200 | yes | 80 | 179 | https://www.asdevents.com/defense-security |  |
-| Military Expos | aggregator | 200 | no | 184 | 93 | https://www.militaryexpos.com/ |  |
+| Military Expos | aggregator | 200 | no | 171 | 92 | https://www.militaryexpos.com/ |  |
 | Marine Military Expos | aggregator | 200 | yes | 18 | 13 | https://marinemilitaryexpos.com/ |  |
 | Potomac Officers Club GovCon Events | aggregator | 200 | yes | 120 | 237 | https://www.potomacofficersclub.com/govcon-events/ |  |
 | GovCIO Events | aggregator | 200 | no | 26 | 73 | https://govciomedia.com/events/ |  |

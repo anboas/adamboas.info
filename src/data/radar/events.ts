@@ -12049,4 +12049,57 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Date, city, and registration URL verified from ASD event page metadata; venue remains undisclosed until approved registration.'
 		}
 	},
+	{
+		id: 'radar-2026-homeland-security-summit',
+		title: '2026 Homeland Security Summit',
+		description: 'Potomac Officers Club homeland security summit with published date, agenda window, and registration link.',
+		startDate: '2026-11-12',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'TBD',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Homeland security'],
+			capabilityAreas: ['Acquisition'],
+			missionThreads: ['Industry engagement'],
+			stakeholders: ['Government and industry participants'],
+			keywords: ['homeland security', 'summit', 'potomac officers club', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Not published by source',
+				prep: 'Not published by source',
+				execution: '2026-11-12 (agenda window published)'
+			},
+			provenance: [
+			{
+				name: 'Potomac Officers Club',
+				url: 'https://www.potomacofficersclub.com/govcon-events/',
+				type: 'aggregator',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.potomacofficersclub.com/events/2026-homeland-security-summit/',
+				registration: 'https://potomacofficersclub.com/register/?event=701PM00000lj5tMYAQ'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'Medium'
+			},
+			acquisition: {},
+			notes: 'Source page publishes date/time and registration URL; venue is listed as "Will be announced soon." No public government contact, notice type, agency owner, solicitation number, response deadline, or registration deadline was published as of 2026-02-26.'
+		}
+	},
 ];
