@@ -581,6 +581,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 						<button id="radar-reset" class="radar-btn" type="button">Reset</button>
 						<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
 						<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>High-confidence only</span></label>
+						<label class="radar-check"><input id="radar-new-only" type="checkbox" /><span>New only</span></label>
 						<label class="radar-check"><input id="radar-show-past" type="checkbox" /><span>Show past</span></label>
 					</div>
 				</details>
@@ -884,6 +885,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		sort: document.getElementById('radar-sort'),
 		upcomingOnly: document.getElementById('radar-upcoming-only'),
 		verifiedOnly: document.getElementById('radar-verified-only'),
+		newOnly: document.getElementById('radar-new-only'),
 		showPast: document.getElementById('radar-show-past'),
 		toggleMap: document.getElementById('radar-toggle-map'),
 		toggleCompact: document.getElementById('radar-toggle-compact'),
@@ -922,12 +924,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const pageLast = document.getElementById('radar-page-last');
 	const pageLabel = document.getElementById('radar-page-label');
 	const pageStatus = document.getElementById('radar-pagination-status');
-	const eventStateStorageKey = 'adamboas.events.state.v2';
+	const eventStateStorageKey = 'adamboas.events.state.v3';
 	const legacySeenEventsStorageKey = 'adamboas.events.seen.v1';
 	const mapPinStorageKey = 'adamboas.events.mapPin.v1';
 	const PAGE_SIZE = 10;
 	const FRESH_WINDOW_DAYS = 14;
-	let eventState = { version: 2, events: {} };
+	let eventState = { version: 3, events: {} };
 
 	let compactMode = true;
 	let mapPin = 'below';
@@ -941,6 +943,27 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (!value) return null;
 		const ms = new Date(value).getTime();
 		return Number.isNaN(ms) ? null : ms;
+	}
+
+	function normalizeFingerprintPart(value) {
+		return String(value || '')
+			.trim()
+			.toLowerCase()
+			.replace(/\s+/g, ' ');
+	}
+
+	function eventFingerprintFromCard(card) {
+		if (!card) return null;
+		const parts = [
+			card.dataset.title,
+			card.dataset.date,
+			card.dataset.endDate,
+			card.dataset.branch,
+			card.dataset.type,
+			card.dataset.link,
+		];
+		const fingerprint = parts.map((part) => normalizeFingerprintPart(part)).join('|');
+		return fingerprint.replace(/\|+/g, '|').trim() || null;
 	}
 
 
@@ -1238,11 +1261,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 	}
 
-	function normalizeEventEntry(entry) {
+	function normalizeEventEntry(entry, fallbackFingerprint = null) {
 		return {
 			firstDetectedAt: typeof entry?.firstDetectedAt === 'string' ? entry.firstDetectedAt : null,
 			firstSeenAt: typeof entry?.firstSeenAt === 'string' ? entry.firstSeenAt : null,
 			lastSeenAt: typeof entry?.lastSeenAt === 'string' ? entry.lastSeenAt : null,
+			fingerprint: typeof entry?.fingerprint === 'string' && entry.fingerprint ? entry.fingerprint : fallbackFingerprint,
 		};
 	}
 
@@ -1253,7 +1277,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 
 	function readEventState() {
-		const ids = cards.map((card) => card.dataset.id).filter(Boolean);
+		const cardEntries = cards
+			.map((card) => ({
+				id: card.dataset.id || '',
+				fingerprint: eventFingerprintFromCard(card),
+			}))
+			.filter((entry) => entry.id);
 		let stored = null;
 		try {
 			const raw = localStorage.getItem(eventStateStorageKey);
@@ -1265,42 +1294,60 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			const hasLegacy = seenFromLegacy.size > 0;
 			const stamp = nowIso();
 			const seededEvents = {};
-			for (const id of ids) {
+			for (const { id, fingerprint } of cardEntries) {
 				const seen = hasLegacy ? seenFromLegacy.has(id) : true;
 				seededEvents[id] = {
 					firstDetectedAt: null,
 					firstSeenAt: seen ? stamp : null,
 					lastSeenAt: seen ? stamp : null,
+					fingerprint,
 				};
 			}
-			eventState = { version: 2, initializedAt: stamp, events: seededEvents };
+			eventState = { version: 3, initializedAt: stamp, events: seededEvents };
 			persistEventState();
 			return;
 		}
 
 		const normalizedEvents = {};
+		const seenByFingerprint = new Map();
 		for (const [id, value] of Object.entries(stored.events || {})) {
 			if (!id) continue;
-			normalizedEvents[String(id)] = normalizeEventEntry(value);
+			const normalized = normalizeEventEntry(value);
+			normalizedEvents[String(id)] = normalized;
+			if (normalized.fingerprint && normalized.firstSeenAt) {
+				seenByFingerprint.set(normalized.fingerprint, {
+					firstSeenAt: normalized.firstSeenAt,
+					lastSeenAt: normalized.lastSeenAt,
+				});
+			}
 		}
+
 		let changed = false;
 		const discoveredAt = nowIso();
-		for (const id of ids) {
+		for (const { id, fingerprint } of cardEntries) {
 			if (!normalizedEvents[id]) {
+				const priorSeen = fingerprint ? seenByFingerprint.get(fingerprint) : null;
 				normalizedEvents[id] = {
 					firstDetectedAt: discoveredAt,
-					firstSeenAt: null,
-					lastSeenAt: null,
+					firstSeenAt: priorSeen?.firstSeenAt ?? null,
+					lastSeenAt: priorSeen?.lastSeenAt ?? null,
+					fingerprint,
 				};
+				changed = true;
+				continue;
+			}
+			if (normalizedEvents[id].fingerprint !== fingerprint) {
+				normalizedEvents[id].fingerprint = fingerprint;
 				changed = true;
 			}
 		}
+
 		eventState = {
-			version: 2,
+			version: 3,
 			initializedAt: typeof stored.initializedAt === 'string' ? stored.initializedAt : discoveredAt,
 			events: normalizedEvents,
 		};
-		if (changed) persistEventState();
+		if (changed || stored.version !== 3) persistEventState();
 	}
 
 	function freshAgeLabel(entry) {
@@ -1609,6 +1656,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			sort: controls.sort.value,
 			upcoming: controls.upcomingOnly.checked,
 			verified: controls.verifiedOnly.checked,
+			newOnly: controls.newOnly.checked,
 			showPast: controls.showPast.checked,
 			topics,
 			windowDays: activeWindowDays(),
@@ -1623,6 +1671,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		controls.sort.value = state.sort || 'soonest';
 		controls.upcomingOnly.checked = Boolean(state.upcoming);
 		controls.verifiedOnly.checked = Boolean(state.verified);
+		controls.newOnly.checked = Boolean(state.newOnly);
 		controls.showPast.checked = Boolean(state.showPast);
 		const activeTopics = state.topics instanceof Set ? state.topics : new Set(parseTopics(state.topics));
 		for (const button of controls.topicButtons) {
@@ -1641,6 +1690,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (state.sort && state.sort !== 'soonest') params.set('sort', state.sort);
 		if (state.upcoming) params.set('upcoming', '1');
 		if (state.verified) params.set('verified', '1');
+		if (state.newOnly) params.set('new', '1');
 		if (state.showPast) params.set('past', '1');
 		if (state.topics?.size) params.set('topics', topicStateToValue(state.topics));
 		if (state.windowDays) params.set('window', String(state.windowDays));
@@ -1656,6 +1706,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			state.status ||
 			state.upcoming ||
 			state.verified ||
+			state.newOnly ||
 			state.showPast ||
 			(state.topics && state.topics.size) ||
 			state.windowDays ||
@@ -1673,6 +1724,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			sort: params.get('sort') || 'soonest',
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
+			newOnly: params.get('new') === '1',
 			showPast: params.get('past') === '1',
 			topics: new Set(parseTopics(params.get('topics') || '')),
 			windowDays: parseWindowDays(params.get('window')),
@@ -1702,6 +1754,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			if (!state.showPast && card.dataset.status === 'Past' && state.status !== 'Past') return false;
 			if (state.upcoming && card.dataset.status !== 'Upcoming') return false;
 			if (state.verified && card.dataset.confidence !== 'high') return false;
+			if (state.newOnly) {
+				const id = card.dataset.id || '';
+				const entry = eventState.events[id];
+				if (!entry || entry.firstSeenAt) return false;
+			}
 			if (state.topics?.size) {
 				const cardTopics = parseTopics(card.dataset.topics || '');
 				if (!cardTopics.some((topic) => state.topics.has(topic))) return false;
@@ -1738,6 +1795,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (state.windowDays) chips.push(`Window: Next ${state.windowDays}d`);
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('High-confidence only');
+		if (state.newOnly) chips.push('New only');
 		if (state.showPast) chips.push('Including past');
 		if (!chips.length) chips.push('No active filters');
 		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
@@ -1801,10 +1859,16 @@ function acquisitionReferences(event: (typeof events)[number]) {
 					firstDetectedAt: nowIso(),
 					firstSeenAt: null,
 					lastSeenAt: null,
+					fingerprint: eventFingerprintFromCard(card),
 				};
 				changed = true;
 			}
 			const entry = eventState.events[id];
+			const fingerprint = eventFingerprintFromCard(card);
+			if (entry.fingerprint !== fingerprint) {
+				entry.fingerprint = fingerprint;
+				changed = true;
+			}
 
 			const freshBadge = card.querySelector('[data-fresh-badge]');
 			if (freshBadge) {
@@ -1873,7 +1937,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		count.textContent = `${totalMatches} of ${cards.length} events shown`;
 		renderFilterChips(state);
 		renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages);
-		renderRecencyBadges(pageCards);
+		renderRecencyBadges(visible);
 		renderCalendar(visible);
 		renderMap(visible);
 
@@ -1893,7 +1957,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	[controls.q, controls.branch, controls.type, controls.status, controls.sort]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('input', renderFromFilterChange));
-	[controls.upcomingOnly, controls.verifiedOnly, controls.showPast]
+	[controls.upcomingOnly, controls.verifiedOnly, controls.newOnly, controls.showPast]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('change', renderFromFilterChange));
 	for (const button of controls.topicButtons) {
@@ -1916,7 +1980,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		});
 	}
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, showPast: false, topics: new Set(), windowDays: null });
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, newOnly: false, showPast: false, topics: new Set(), windowDays: null });
 		currentPage = 1;
 		render();
 	});
