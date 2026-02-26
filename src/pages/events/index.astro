@@ -840,19 +840,22 @@ function acquisitionReferences(event: (typeof events)[number]) {
 					<button id="radar-cal-prev" class="radar-btn radar-btn-tight" type="button" aria-label="Previous month">Prev month</button>
 					<button id="radar-cal-today" class="radar-btn radar-btn-tight" type="button">This month</button>
 					<button id="radar-cal-next" class="radar-btn radar-btn-tight" type="button" aria-label="Next month">Next month</button>
+					<button id="radar-cal-toggle" class="radar-btn radar-btn-tight radar-cal-toggle" type="button" aria-expanded="true" aria-controls="radar-cal-body"><span class="radar-cal-toggle-chevron" aria-hidden="true">▾</span><span data-cal-toggle-label>Collapse</span></button>
 				</div>
 			</div>
-			<div class="mb-2 flex flex-wrap items-center justify-between gap-2">
-				<p id="radar-cal-label" class="radar-cal-label">Month</p>
-				<div class="radar-cal-legend">
-					<span class="radar-cal-legend-chip" data-tooltip="Tracked event from monitored sources. Not marked as attending unless starred." title="Tracked event from monitored sources. Not marked as attending unless starred." aria-label="Tracked event. AI, Software, Cloud, Cyber topic icons are shown in each event bar.">Tracked Event [ 🤖 AI | 🧩 Software | ☁️ Cloud | 🛡️ Cyber ]</span>
-					<span class="radar-cal-legend-chip radar-cal-legend-chip-attending" data-tooltip="I’ll be there and would love to connect." title="I’ll be there and would love to connect." aria-label="Attending. I’ll be there and would love to connect.">Attending</span>
+			<div id="radar-cal-body" class="radar-cal-body">
+				<div class="mb-2 flex flex-wrap items-center justify-between gap-2">
+					<p id="radar-cal-label" class="radar-cal-label">Month</p>
+					<div class="radar-cal-legend">
+						<span class="radar-cal-legend-chip" data-tooltip="Tracked event from monitored sources. Not marked as attending unless starred." title="Tracked event from monitored sources. Not marked as attending unless starred." aria-label="Tracked event. AI, Software, Cloud, Cyber topic icons are shown in each event bar.">Tracked Event [ 🤖 AI | 🧩 Software | ☁️ Cloud | 🛡️ Cyber ]</span>
+						<span class="radar-cal-legend-chip radar-cal-legend-chip-attending" data-tooltip="I’ll be there and would love to connect." title="I’ll be there and would love to connect." aria-label="Attending. I’ll be there and would love to connect.">Attending</span>
+					</div>
 				</div>
+				<div id="radar-cal-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-3 text-xs text-slate-300">
+					No dated events match your current filters for this month.
+				</div>
+				<div id="radar-calendar-grid" class="radar-calendar-grid" aria-label="Events calendar"></div>
 			</div>
-			<div id="radar-cal-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-3 text-xs text-slate-300">
-				No dated events match your current filters for this month.
-			</div>
-			<div id="radar-calendar-grid" class="radar-calendar-grid" aria-label="Events calendar"></div>
 		</section>
 
 		<div class="radar-main-col">
@@ -1238,6 +1241,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		calendarPrev: document.getElementById('radar-cal-prev'),
 		calendarNext: document.getElementById('radar-cal-next'),
 		calendarToday: document.getElementById('radar-cal-today'),
+		calendarToggle: document.getElementById('radar-cal-toggle'),
 		reset: document.getElementById('radar-reset'),
 		topicButtons: Array.from(document.querySelectorAll('[data-topic]')),
 		windowButtons: Array.from(document.querySelectorAll('[data-window-days]')),
@@ -1258,6 +1262,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const calendarGrid = document.getElementById('radar-calendar-grid');
 	const calendarLabel = document.getElementById('radar-cal-label');
 	const calendarEmpty = document.getElementById('radar-cal-empty');
+	const calendarBody = document.getElementById('radar-cal-body');
 	const statusWrap = document.getElementById('radar-status-wrap');
 	const filterChips = document.getElementById('radar-filter-chips');
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
@@ -1273,11 +1278,14 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const eventStateStorageKey = 'adamboas.events.state.v3';
 	const legacySeenEventsStorageKey = 'adamboas.events.seen.v1';
 	const mapPinStorageKey = 'adamboas.events.mapPin.v1';
+	const compactModeStorageKey = 'adamboas.events.compactMode.v1';
+	const calendarCollapsedStorageKey = 'adamboas.events.calendarCollapsed.v1';
 	const PAGE_SIZE = 10;
 	const FRESH_WINDOW_DAYS = 14;
 	let eventState = { version: 3, events: {} };
 
 	let compactMode = true;
+	let calendarCollapsed = false;
 	let mapPin = 'below';
 	let calendarMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
 	let currentPage = 1;
@@ -1367,6 +1375,58 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			if (sessionStorage.getItem(key) === value) return true;
 		} catch {}
 		return writeToWindowNameStorage(key, value);
+	}
+
+	function readBooleanLocalStorage(key, fallback = false) {
+		try {
+			const raw = localStorage.getItem(key);
+			if (raw === '1' || raw === 'true') return true;
+			if (raw === '0' || raw === 'false') return false;
+		} catch {}
+		const fallbackRaw = readClientStore(key);
+		if (fallbackRaw === '1' || fallbackRaw === 'true') return true;
+		if (fallbackRaw === '0' || fallbackRaw === 'false') return false;
+		return fallback;
+	}
+
+	function persistBooleanLocalStorage(key, value) {
+		const encoded = value ? '1' : '0';
+		try {
+			localStorage.setItem(key, encoded);
+		} catch {
+			writeClientStore(key, encoded);
+		}
+	}
+
+	function readCompactModePreference() {
+		return readBooleanLocalStorage(compactModeStorageKey, true);
+	}
+
+	function persistCompactModePreference() {
+		persistBooleanLocalStorage(compactModeStorageKey, compactMode);
+	}
+
+	function readCalendarCollapsedPreference() {
+		return readBooleanLocalStorage(calendarCollapsedStorageKey, false);
+	}
+
+	function persistCalendarCollapsedPreference() {
+		persistBooleanLocalStorage(calendarCollapsedStorageKey, calendarCollapsed);
+	}
+
+	function applyCalendarCollapsedState() {
+		if (calendarSection) {
+			calendarSection.classList.toggle('is-collapsed', calendarCollapsed);
+		}
+		if (calendarBody) {
+			calendarBody.classList.toggle('is-collapsed', calendarCollapsed);
+		}
+		if (controls.calendarToggle) {
+			controls.calendarToggle.setAttribute('aria-expanded', calendarCollapsed ? 'false' : 'true');
+			controls.calendarToggle.classList.toggle('is-collapsed', calendarCollapsed);
+			const label = controls.calendarToggle.querySelector('[data-cal-toggle-label]');
+			if (label) label.textContent = calendarCollapsed ? 'Expand' : 'Collapse';
+		}
 	}
 
 	function parseDays(value) {
@@ -1824,6 +1884,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (!id) return;
 		const card = cards.find((c) => c.dataset.id === id);
 		if (!card) return;
+		if (calendarCollapsed) {
+			calendarCollapsed = false;
+			persistCalendarCollapsedPreference();
+		}
 		const start = parseYmdLocal(card.dataset.date || '');
 		if (start) calendarMonth = new Date(start.getFullYear(), start.getMonth(), 1);
 		render();
@@ -2348,6 +2412,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 
 		list.classList.toggle('is-compact', compactMode);
+		applyCalendarCollapsedState();
 		applyMapPin();
 		controls.toggleCompact.textContent = compactMode ? 'Detailed mode' : 'Compact mode';
 
@@ -2409,7 +2474,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	});
 	controls.toggleCompact.addEventListener('click', () => {
 		compactMode = !compactMode;
+		persistCompactModePreference();
 		render();
+	});
+	controls.calendarToggle?.addEventListener('click', () => {
+		calendarCollapsed = !calendarCollapsed;
+		persistCalendarCollapsedPreference();
+		applyCalendarCollapsedState();
 	});
 	controls.calendarPrev?.addEventListener('click', () => {
 		calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() - 1, 1);
@@ -2467,6 +2538,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 		if (event.key.toLowerCase() === 'c') {
 			compactMode = !compactMode;
+			persistCompactModePreference();
 			render();
 		}
 	});
@@ -2545,6 +2617,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 	readEventState();
 	mapPin = readMapPinPreference();
+	compactMode = readCompactModePreference();
+	calendarCollapsed = readCalendarCollapsedPreference();
 	applyUrlState();
 	applyStatusFacetMode();
 	render();
@@ -2722,6 +2796,32 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.4rem;
+	}
+	:global(.radar-cal-toggle) {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.34rem;
+	}
+	:global(.radar-cal-toggle-chevron) {
+		display: inline-block;
+		font-size: 0.86rem;
+		line-height: 1;
+		transition: transform 160ms ease;
+	}
+	:global(.radar-cal-toggle.is-collapsed .radar-cal-toggle-chevron) {
+		transform: rotate(-90deg);
+	}
+	:global(.radar-cal-body) {
+		max-height: 2200px;
+		opacity: 1;
+		overflow: hidden;
+		transition: max-height 220ms ease, opacity 180ms ease;
+	}
+	:global(.radar-cal-body.is-collapsed) {
+		max-height: 0;
+		opacity: 0;
+		pointer-events: none;
+		margin-top: 0;
 	}
 	:global(.radar-cal-label) {
 		font-size: 0.8rem;
