@@ -1559,5 +1559,9 @@
       "SOCCENT": 1,
       "AFSOC": 21
     }
+  },
+  "openaiEnrichment": {
+    "enabled": false,
+    "reason": "disabled_or_missing_key"
   }
 }
