@@ -903,23 +903,6 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Reference solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
 												{event.ontology.acquisition?.responseDueDate ? <li><strong>Nearest response due:</strong> {fmtDate(event.ontology.acquisition?.responseDueDate)}</li> : null}
 											</ul>
-											<p class="radar-section-label mt-3">Captured solicitation list</p>
-											{samTopNotices(event).length ? (
-												<ul class="radar-listing">
-													{samTopNotices(event).map((notice) => (
-														<li>
-															{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}
-															<span class="text-slate-500"> · {notice.noticeType}</span>
-															{notice.postedDate ? <span class="text-slate-500"> · posted {notice.postedDate}</span> : null}
-															{notice.responseDueDate ? <span class="text-slate-500"> · due {fmtDate(notice.responseDueDate)}</span> : null}
-															{notice.solicitationNumber ? <span class="text-slate-500"> · {notice.solicitationNumber}</span> : null}
-															{noticeOverlapStakeholders(event, notice).length ? <span class="text-slate-400"> · overlap: {noticeOverlapStakeholders(event, notice).join(', ')}</span> : <span class="text-slate-500"> · overlap: none</span>}
-														</li>
-													))}
-												</ul>
-											) : (
-												<p class="mt-2 text-xs text-slate-500">No SAM notices captured in this run yet.</p>
-											)}
 										</div>
 									</div>
 
@@ -976,7 +959,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 									<div class="mt-4">
 										<div class="flex flex-wrap items-center justify-between gap-2">
-											<p class="radar-section-label">Exhaustive solicitation table</p>
+											<p class="radar-section-label">Solicitation table</p>
 											<div class="flex items-center gap-2">
 												<span class="text-[11px] text-slate-400">Showing {samTopNotices(event).length} of {solicitationCount(event)} matched</span>
 												<label class="text-[11px] text-slate-400">View
@@ -995,10 +978,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 													<thead>
 														<tr>
 															<th>Weight</th>
+															<th>Solicitation name</th>
 															<th>Type</th>
 															<th>Posted</th>
 															<th>Due</th>
-															<th>Solicitation</th>
+															<th>Solicitation #</th>
 															<th>Agency</th>
 															<th>Overlap</th>
 															<th>Notice</th>
@@ -1008,7 +992,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 														{samTopNotices(event).map((notice) => (
 															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()}>
 																<td>{notice.score ?? 0}</td>
-																<td>{notice.noticeType}</td>
+																<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
+															<td>{notice.noticeType}</td>
 																<td>{notice.postedDate ?? '—'}</td>
 																<td>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>
 																<td>{notice.solicitationNumber ?? '—'}</td>
