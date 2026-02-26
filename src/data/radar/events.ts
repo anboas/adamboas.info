@@ -1200,56 +1200,144 @@ export const radarEventsSeed: RadarEvent[] = [
 	},
 {
 		id: 'radar-deps-hel-symposium',
-		title: 'DEPS HEL Symposium',
-		description: 'Directed energy, high energy lasers',
-		startDate: '2026-03-01',
-		endDate: '2026-04-30',
+		title: 'DEPS Annual Directed Energy Science & Technology Symposium',
+		description: 'Directed energy science and technology symposium spanning HEL/HPM, beam control, optics, and transition pathways with government, industry, and academia participants.',
+		startDate: '2026-03-30',
+		endDate: '2026-04-02',
 		branch: 'Joint',
 		type: 'Summit',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'High',
 		location: 
 		{
 			city: 'Tucson',
 			state: 'AZ',
 			country: 'USA',
-			lat: 32.2228765,
-			lng: -110.974847
+			lat: 32.3904,
+			lng: -110.9552,
+			venue: 'El Conquistador Tucson, 10000 N Oracle Rd'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['deps', 'symposium'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Directed energy transition', 'HEL/HPM capability maturation', 'Defense R&D to production'],
+			capabilityAreas: ['High-energy lasers', 'High-power microwave systems', 'Beam control and optics'],
+			missionThreads: ['Prototype-to-production transition', 'Joint DE workforce and experimentation'],
+			stakeholders: ['DEPS', 'JDETO', 'AFRL', 'Navy NAVSEA/NIWC', 'Army RCCTO', 'DoW/DoE labs'],
+			keywords: ['directed energy', 'HEL', 'HPM', 'beam control', 'optics', 'DEPS'],
+			relatedPrograms: ['Radar expansion', 'ACP-RA', 'A2A interoperability'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-30 days',
+				prep: 'T-21 to T-3 days',
+				execution: 'Symposium week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'DEPS Annual DE S&T Symposium overview',
+				url: 'https://www.deps.org/DEPSpages/DEsymp26.html',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: 'DEPS attendee information',
+				url: 'https://www.deps.org/DEPSpages/DEsympAttendee.html',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: 'DEPS events calendar',
+				url: 'https://www.deps.org/DEPSpages/events.html',
+				type: 'official',
+				lastVerified: '2026-02-26',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.deps.org/DEPSpages/DEsymp26.html',
+				registration: 'https://www.deps.org/DEPSpages/DEsympAttendee.html#Fees',
+				agenda: 'https://www.deps.org/DEPSpages/php/eventAgenda.php?eid=196',
+				callForPapers: 'https://www.deps.org/DEPSpages/DEsymp26Presenter.html',
+				hotelBlock: 'https://www.hilton.com/en/hotels/tushthh-el-conquistador-tucson/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 1200,
-					max: 4200
+					min: 850,
+					max: 1650
 				},
 				travelBurdenFromDc: 'High'
-			}
+			},
+			acquisition:
+			{
+				engagementKinds: ['Sources Sought', 'Pre-solicitation', 'Solicitation', 'Special Notice'],
+				noticeType: 'Mixed (directed energy / photonics)',
+				agency: 'AFRL / Army RCCTO / Navy NAVSEA/NIWC',
+				solicitationNumber: 'DRFP-W50RAJ26A001',
+				responseDueDate: '2026-03-05T16:00:00-05:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '01/01/2026',
+					postedTo: '02/26/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 4,
+					topNotices: [
+					{
+						noticeId: '202389e075d94e3e9a412388991d6a1b',
+						title: 'MIL-PRF-XX750, Nickel Aluminum Bronze, Wire Arc, Directed Energy Deposition, Additively Manufactured',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-05',
+						responseDueDate: '2026-03-05T16:00:00-05:00',
+						solicitationNumber: 'N0002426SN-27',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ',
+						naicsCode: '336611',
+						classificationCode: '9999',
+						uiLink: 'https://sam.gov/workspace/contract/opp/202389e075d94e3e9a412388991d6a1b/view'
+					},
+					{
+						noticeId: '479ebb3222614cfcb087ae09f943b7a7',
+						title: 'DRAFT RFP for Enduring-High Energy Laser Production Effort',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-02-05',
+						responseDueDate: '2026-02-16T10:00:00-05:00',
+						solicitationNumber: 'DRFP-W50RAJ26A001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY ACQUISITION SUPPORT CENTER.RAPID CAPABILITIES CRITICAL TECH OFC.W6J1 RCCTO REDSTONE',
+						classificationCode: '1095',
+						uiLink: 'https://sam.gov/workspace/contract/opp/479ebb3222614cfcb087ae09f943b7a7/view'
+					},
+					{
+						noticeId: '041ac5aad4624bfebef17cd86f181858',
+						title: 'N66001-26-Q-6061 - Notice of Intent to Sole Source to PicoQuant Photonics North America Inc.',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-05',
+						responseDueDate: '2026-02-12T12:00:00-07:00',
+						solicitationNumber: '1301315605',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR PACIFIC.NIWC PACIFIC',
+						naicsCode: '334516',
+						classificationCode: '6650',
+						uiLink: 'https://sam.gov/workspace/contract/opp/041ac5aad4624bfebef17cd86f181858/view'
+					},
+					{
+						noticeId: '70471cea48264a2da813ca38bacbcb08',
+						title: 'Directed Energy Technology Experimentation Research (DETER) Advanced Research Announcement (ARA) Open Announcement',
+						noticeType: 'Solicitation',
+						postedDate: '2026-01-13',
+						responseDueDate: '2027-08-10T17:00:00-06:00',
+						solicitationNumber: 'FA9451-21-S-0001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA9451  AFRL RDK',
+						naicsCode: '541715',
+						classificationCode: 'AC33',
+						uiLink: 'https://sam.gov/workspace/contract/opp/70471cea48264a2da813ca38bacbcb08/view'
+					}
+					]
+				}
+			},
+			notes: 'Official DEPS pages confirm the Tucson dates and venue. Some sessions are security-gated and event is currently closed to foreign participation per published attendee guidance. Room block deadline listed as 7 March 2026.'
 		}
 	},
 {
