@@ -1342,60 +1342,167 @@ export const radarEventsSeed: RadarEvent[] = [
 	},
 {
 		id: 'radar-same-san-juan-industry-day',
-		title: 'SAME San Juan Industry Day',
-		description: 'SAME San Juan Post. All SAD districts attend. Caribbean, construction, A/E services.',
-		startDate: '2026-03-02',
-		endDate: '2026-03-06',
+		title: 'SAME San Juan Field Chapter Industry Day March 2026',
+		description: 'Multi-day USACE and federal-agency oriented industry event for Puerto Rico, USVI, and wider Caribbean opportunities across construction, A/E/C, and small business engagement.',
+		startDate: '2026-03-03',
+		endDate: '2026-03-05',
 		branch: 'USACE',
 		type: 'Workshop',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
-			city: 'San Juan',
+			city: 'Fajardo',
 			state: 'PR',
 			country: 'USA',
-			lat: 18.465299,
-			lng: -66.116666
+			lat: 18.3676,
+			lng: -65.6284,
+			venue: 'El Conquistador Resort, 1000 Avenida El Conquistador'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['same', 'juan', 'industry'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['USACE Caribbean opportunity shaping', 'A/E/C capture preparation', 'Small-business teaming'],
+			capabilityAreas: ['Surveying and mapping', 'Construction and facilities modernization', 'Program management and compliance'],
+			missionThreads: ['Puerto Rico/USVI infrastructure delivery', 'USACE district engagement', 'Mentor-protege and JV formation'],
+			stakeholders: ['USACE Caribbean District', 'USACE South Atlantic Division', 'Federal agencies in PR/USVI', 'A/E/C industry leaders'],
+			keywords: ['same san juan', 'industry day', 'usace', 'caribbean district', 'puerto rico', 'us virgin islands'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'SAME event listing (official)',
+				url: 'https://www.same.org/event/san-juan-chapter-industry-day-march-2026/',
+				type: 'official',
+				lastVerified: '2026-02-26',
+				confidence: 'High'
+			},
+			{
+				name: 'SAME events programs index',
+				url: 'https://www.same.org/events-programs/',
+				type: 'official',
+				lastVerified: '2026-02-26',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.same.org/event/san-juan-chapter-industry-day-march-2026/',
+				registration: 'https://whova.com/web/iUpy-MaaymHLUxGBEciY9cLACNnG89G5%40CEGsfw3Zx8%3D/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 700,
+					max: 2400
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Sources Sought', 'Pre-solicitation', 'Special Notice'],
+				noticeType: 'Mixed (USACE Caribbean and adjacent federal opportunities)',
+				agency: 'USACE Caribbean District / USACE SAD / GSA / FEMA / FAA',
+				solicitationNumber: 'W51DQV-26-R-1AWR',
+				responseDueDate: '2026-03-09T12:00:00-04:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-26',
+					postedFrom: '01/01/2026',
+					postedTo: '02/26/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 107,
+					topNotices: [
+					{
+						noticeId: 'c9a0371cd6604d6590d390477e9a1038',
+						title: 'OUTREACH EVENT ANNOUNCEMENT: ARCHITECT AND ENGINEERING (A-E) SERVICES FOR SURVEYING AND MAPPING TO SUPPORT THE CARIBBEAN DISTRICT AND USACE',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-13',
+						responseDueDate: '2026-02-26T16:00:00-05:00',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTH ATLANTIC.ENDIST CARIBBEAN.W2SR ENDIST CARIBBEAN(PROVIS)',
+						naicsCode: '541370',
+						uiLink: 'https://sam.gov/workspace/contract/opp/c9a0371cd6604d6590d390477e9a1038/view'
+					},
+					{
+						noticeId: 'bf2cfbe4e7f34066a921127c9a53922d',
+						title: 'INDEFINITE DELIVERY CONTRACT FOR ARCHITECT AND ENGINEERING (A-E) SERVICES FOR TOPOGRAPHIC AND HYDROGRAPHIC SURVEYING AND MAPPING SERVICES TO SUPPORT THE CARIBBEAN DISTRICT AND USACE',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-01-07',
+						responseDueDate: '2026-01-15T17:00:00-04:00',
+						solicitationNumber: 'W51DQV-26-R-1AWR',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTH ATLANTIC.ENDIST CARIBBEAN.W2SR ENDIST CARIBBEAN(PROVIS)',
+						naicsCode: '541370',
+						classificationCode: 'C219',
+						uiLink: 'https://sam.gov/workspace/contract/opp/bf2cfbe4e7f34066a921127c9a53922d/view'
+					},
+					{
+						noticeId: '2ae7a63ed50d48a096e6a533bd058367',
+						title: 'Rio Del La Plata Flood Control Project, Supplemental Contract 1, Dorado and Toa Baja, Puerto Rico.',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-01-29',
+						responseDueDate: '2026-02-28T16:00:00-04:00',
+						solicitationNumber: 'W51DQV26RA002',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTH ATLANTIC.ENDIST CARIBBEAN.W2SR ENDIST CARIBBEAN(PROVIS)',
+						naicsCode: '237990',
+						classificationCode: 'Y1KB',
+						uiLink: 'https://sam.gov/workspace/contract/opp/2ae7a63ed50d48a096e6a533bd058367/view'
+					},
+					{
+						noticeId: 'f945c321f4954f29ac3dfaad012fee5b',
+						title: 'Market Survey for Janitorial Services for Consolidated Janitorial Services at various locations throughout the Miami District to include the state of Florida, Puerto Rico, and US Virgin Islands (USVI)',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-23',
+						responseDueDate: '2026-03-09T12:00:00-04:00',
+						solicitationNumber: 'ES-26-00008',
+						agencyPath: 'TRANSPORTATION, DEPARTMENT OF.FEDERAL AVIATION ADMINISTRATION.697DCK REGIONAL ACQUISITIONS SVCS',
+						naicsCode: '561720',
+						classificationCode: 'S201',
+						uiLink: 'https://sam.gov/workspace/contract/opp/f945c321f4954f29ac3dfaad012fee5b/view'
+					},
+					{
+						noticeId: 'faf8341b421d448e93c4d8bf1c859e07',
+						title: 'Industry Day for Construction Projects at Federico Degetau Federal Building and Clemente Ruiz Nazario U.S. Courthouse Complex, San Juan, Puerto Rico',
+						noticeType: 'Special Notice',
+						postedDate: '2026-01-27',
+						responseDueDate: '2026-01-14T15:00:00-05:00',
+						agencyPath: 'GENERAL SERVICES ADMINISTRATION.PUBLIC BUILDINGS SERVICE.PBS PROJECT DELIVERY CAPITAL CONSTRUCTION - BRANCH NORTHEAST',
+						naicsCode: '236220',
+						classificationCode: 'Y1AA',
+						uiLink: 'https://sam.gov/workspace/contract/opp/faf8341b421d448e93c4d8bf1c859e07/view'
+					},
+					{
+						noticeId: '8e1f401c9a9347bdadfb747af6397b2b',
+						title: 'Disaster Overseas Transportation (DOTS) US Virgin Islands & Puerto Rico (VIPR)',
+						noticeType: 'Presolicitation',
+						postedDate: '2026-02-18',
+						solicitationNumber: 'DOTSVIPR00000001',
+						agencyPath: 'HOMELAND SECURITY, DEPARTMENT OF.FEDERAL EMERGENCY MANAGEMENT AGENCY.INCIDENT SUPPORT SECTION(ISS70)',
+						naicsCode: '483111',
+						classificationCode: 'V115',
+						uiLink: 'https://sam.gov/workspace/contract/opp/8e1f401c9a9347bdadfb747af6397b2b/view'
+					},
+					{
+						noticeId: 'd5edf0497c534200811c8f106cba5ccc',
+						title: 'GSA OSDBU OFFICE HOURS: YOUR BUSINESS! YOUR OPPORTUNITIES! - Regions 1,2 & 3: CT, ME, MA, NH, RI, VT, NY, NJ, Puerto Rico, US Virgin Islands, DE, PA, WV, parts of MD & VA',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-11',
+						responseDueDate: '2026-03-03T14:00:00-05:00',
+						agencyPath: 'GENERAL SERVICES ADMINISTRATION',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d5edf0497c534200811c8f106cba5ccc/view'
+					}
+					]
+				}
+			},
+			notes: 'Official SAME listing confirms March 3-5 window at El Conquistador in Fajardo with explicit sessions on Puerto Rico + USVI opportunity flow, including Meet the USACE SAA PMs and small-business/teaming panels.'
 		}
 	},
-{
-		id: 'radar-cyberbay-summit',
+{		id: 'radar-cyberbay-summit',
 		title: 'CyberBay Summit',
 		description: 'Cybersecurity/national security convergence, SOCOM & CENTCOM leadership',
 		startDate: '2026-03-11',
