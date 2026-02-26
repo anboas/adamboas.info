@@ -658,7 +658,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 							data-lng={event.location.lng}
 							data-search={`${event.title} ${event.description} ${event.branch} ${event.type} ${event.status} ${event.location.city} ${event.location.state ?? ''} ${event.ontology.themes.join(' ')} ${event.ontology.stakeholders.join(' ')} ${event.ontology.keywords.join(' ')} ${event.ontology.provenance.map((p) => `${p.type} ${p.confidence} ${p.name}`).join(' ')} ${inferEngagementKinds(event).join(' ')} ${noticeTypeLabel(event) ?? ''}`.toLowerCase()}
 						>
-							<div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
+							<div class="flex flex-col gap-2 lg:flex-row lg:items-start lg:justify-between lg:gap-3">
 								<div class="min-w-0 flex-1">
 									<h3 class="mt-1 text-base font-semibold leading-snug text-slate-50">{event.title}</h3>
 									<p class="mt-1 text-sm text-slate-300 radar-desc">{event.description}</p>
@@ -669,8 +669,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 										{costLabel(event) ? <><span class="radar-meta-sep" aria-hidden="true">·</span><span class="radar-meta-item">Reg: {costLabel(event)}</span></> : null}
 									</p>
 								</div>
-								<div class="flex w-full flex-col items-start gap-1.5 sm:w-auto sm:items-end">
-									<div class="flex w-full flex-wrap items-center gap-2 sm:w-auto sm:justify-end">
+								<div class="flex w-full flex-col items-start gap-1.5 lg:w-auto lg:items-end">
+									<div class="flex w-full flex-wrap items-center gap-2 lg:w-auto lg:justify-end">
 										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
 										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Event Link</a> : null}
 										{(eventCalendarLink(event) || eventIosIcsLink(event) || eventOutlookIcsLink(event)) ? (
@@ -689,7 +689,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 										<span class="radar-evidence-pill radar-evidence-pill-fresh hidden" data-fresh-badge title="Added recently to your feed">Fresh</span>
 										<span class="radar-new-pill hidden" data-new-badge>New</span>
 									</div>
-									<p class="radar-card-kicker text-left sm:text-right">{event.branch} · {event.type} · {event.status}</p>
+									<p class="radar-card-kicker text-left lg:text-right">{event.branch} · {event.type} · {event.status}</p>
 								</div>
 							</div>
 
@@ -2872,6 +2872,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		border: 1px solid rgba(56, 189, 248, 0.72);
 		background: rgba(56, 189, 248, 0.16);
 		color: rgba(224, 242, 254, 0.98);
+	}
+	.radar-new-pill.hidden,
+	.radar-evidence-pill.hidden,
+	.radar-source-confidence-pill.hidden {
+		display: none !important;
 	}
 	.radar-card-kicker {
 		font-size: 0.64rem;
