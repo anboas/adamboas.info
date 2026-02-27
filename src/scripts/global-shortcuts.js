@@ -14,6 +14,7 @@
 		h: '/',
 		w: '/writing/',
 		e: '/events/',
+		o: '/opportunities/',
 		c: '/changes/',
 	};
 

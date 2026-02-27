@@ -1,0 +1,882 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import { withBase } from '../../utils/withBase';
+import { radarEventsSeed } from '../../data/radar/events';
+import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
+
+type OpportunityRow = {
+	key: string;
+	noticeId: string | null;
+	title: string;
+	noticeType: string;
+	postedDate: string | null;
+	responseDueDate: string | null;
+	solicitationNumber: string | null;
+	agencyPath: string | null;
+	naicsCode: string | null;
+	classificationCode: string | null;
+	uiLink: string | null;
+	weight: number;
+	eventIds: Set<string>;
+	eventTitles: Set<string>;
+	branches: Set<string>;
+	capabilityAreas: Set<string>;
+	missionThreads: Set<string>;
+};
+
+const samIntelOverrides: Record<string, any> = {
+	'radar-sofweek-2026': sofweekIntel,
+};
+
+function samIntel(event: (typeof radarEventsSeed)[number] | undefined | null) {
+	if (!event) return null;
+	return samIntelOverrides[event.id] ?? event.ontology.acquisition?.samIntelligence ?? null;
+}
+
+function noticeKey(notice: any) {
+	const noticeId = String(notice.noticeId ?? '').trim();
+	if (noticeId) return `notice:${noticeId.toLowerCase()}`;
+	const solicitation = String(notice.solicitationNumber ?? '').trim();
+	if (solicitation) return `sol:${solicitation.toLowerCase()}`;
+	return `title:${String(notice.title ?? '').trim().toLowerCase()}::${String(notice.noticeType ?? '').trim().toLowerCase()}::${String(notice.postedDate ?? '').trim().toLowerCase()}`;
+}
+
+function toArray(set: Set<string>) {
+	return [...set].filter(Boolean).sort((a, b) => a.localeCompare(b));
+}
+
+const opportunityMap = new Map<string, OpportunityRow>();
+let totalRawNotices = 0;
+let eventsWithSam = 0;
+
+for (const event of radarEventsSeed) {
+	const sam = samIntel(event);
+	const notices = sam?.topNotices ?? [];
+	if (!notices.length) continue;
+	eventsWithSam += 1;
+	totalRawNotices += notices.length;
+
+	for (const notice of notices) {
+		const key = noticeKey(notice);
+		if (!opportunityMap.has(key)) {
+			opportunityMap.set(key, {
+				key,
+				noticeId: notice.noticeId ?? null,
+				title: notice.title ?? 'Untitled notice',
+				noticeType: notice.noticeType ?? 'Unknown',
+				postedDate: notice.postedDate ?? null,
+				responseDueDate: notice.responseDueDate ?? null,
+				solicitationNumber: notice.solicitationNumber ?? null,
+				agencyPath: notice.agencyPath ?? null,
+				naicsCode: notice.naicsCode ?? null,
+				classificationCode: notice.classificationCode ?? null,
+				uiLink: notice.uiLink ?? null,
+				weight: Number(notice.score ?? 0),
+				eventIds: new Set<string>(),
+				eventTitles: new Set<string>(),
+				branches: new Set<string>(),
+				capabilityAreas: new Set<string>(),
+				missionThreads: new Set<string>(),
+			});
+		}
+
+		const row = opportunityMap.get(key)!;
+		row.weight = Math.max(row.weight, Number(notice.score ?? 0));
+		row.noticeId = row.noticeId ?? notice.noticeId ?? null;
+		row.postedDate = row.postedDate ?? notice.postedDate ?? null;
+		row.responseDueDate = row.responseDueDate ?? notice.responseDueDate ?? null;
+		row.solicitationNumber = row.solicitationNumber ?? notice.solicitationNumber ?? null;
+		row.agencyPath = row.agencyPath ?? notice.agencyPath ?? null;
+		row.naicsCode = row.naicsCode ?? notice.naicsCode ?? null;
+		row.classificationCode = row.classificationCode ?? notice.classificationCode ?? null;
+		row.uiLink = row.uiLink ?? notice.uiLink ?? null;
+		row.eventIds.add(event.id);
+		row.eventTitles.add(event.title);
+		row.branches.add(event.branch);
+		for (const area of event.ontology.capabilityAreas ?? []) row.capabilityAreas.add(area);
+		for (const thread of event.ontology.missionThreads ?? []) row.missionThreads.add(thread);
+	}
+}
+
+const opportunities = [...opportunityMap.values()]
+	.map((row) => ({
+		key: row.key,
+		noticeId: row.noticeId,
+		title: row.title,
+		noticeType: row.noticeType,
+		postedDate: row.postedDate,
+		responseDueDate: row.responseDueDate,
+		solicitationNumber: row.solicitationNumber,
+		agencyPath: row.agencyPath,
+		naicsCode: row.naicsCode,
+		classificationCode: row.classificationCode,
+		uiLink: row.uiLink,
+		weight: row.weight,
+		eventIds: toArray(row.eventIds),
+		eventTitles: toArray(row.eventTitles),
+		branches: toArray(row.branches),
+		capabilityAreas: toArray(row.capabilityAreas),
+		missionThreads: toArray(row.missionThreads),
+		eventCount: row.eventIds.size,
+	}))
+	.sort((a, b) => b.weight - a.weight || (a.responseDueDate ?? '').localeCompare(b.responseDueDate ?? '') || a.title.localeCompare(b.title));
+
+const noticeTypes = [...new Set(opportunities.map((o) => o.noticeType).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+const branches = [...new Set(opportunities.flatMap((o) => o.branches).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+
+const lastCollectedAt = radarEventsSeed
+	.map((event) => samIntel(event)?.collectedAt as string | undefined)
+	.filter(Boolean)
+	.sort()
+	.at(-1) ?? null;
+---
+
+<SiteLayout title="Opportunity Intelligence | Adam Boas" description="Opportunity intelligence mirror from cached SAM opportunity pulls and event-enrichment runs.">
+	<StickyBrowseBar active="opportunities" />
+
+	<section class="card p-5">
+		<div class="opp-header-row">
+			<div>
+				<h1 class="section-title">Opportunity Intelligence</h1>
+				<p class="mt-3 text-sm text-slate-300">A live mirror of SAM opportunity intelligence captured through the event-enrichment pipeline. Open this page to answer: <strong>“What gems can I respond to right now?”</strong></p>
+			</div>
+			<div class="opp-header-actions">
+				<a class="opp-link-btn" href={withBase('/events/')}>Open Events</a>
+				{lastCollectedAt ? <span class="opp-fresh">Last collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+			</div>
+		</div>
+
+		<div class="opp-kpis mt-4">
+			<div class="opp-kpi"><span class="opp-kpi-label">Unique opportunities</span><strong id="opp-kpi-total">{opportunities.length}</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Displayed</span><strong id="opp-kpi-displayed">{opportunities.length}</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Gem candidates</span><strong id="opp-kpi-gems">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Events with SAM cache</span><strong>{eventsWithSam}</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices}</strong></div>
+		</div>
+	</section>
+
+	<section class="card mt-4 p-4">
+		<div class="opp-controls">
+			<label>
+				<span>Search</span>
+				<input id="opp-filter-search" class="opp-input" type="search" placeholder="title, agency, notice id, NAICS, solicitation..." />
+			</label>
+			<label>
+				<span>Notice type</span>
+				<select id="opp-filter-type" class="opp-input">
+					<option value="all">All</option>
+					{noticeTypes.map((type) => <option value={type}>{type}</option>)}
+				</select>
+			</label>
+			<label>
+				<span>Branch</span>
+				<select id="opp-filter-branch" class="opp-input">
+					<option value="all">All</option>
+					{branches.map((branch) => <option value={branch}>{branch}</option>)}
+				</select>
+			</label>
+			<label>
+				<span>Due window</span>
+				<select id="opp-filter-due" class="opp-input">
+					<option value="all">All</option>
+					<option value="future">Future/today</option>
+					<option value="past">Past due</option>
+					<option value="0-30">Due in 0-30 days</option>
+					<option value="31-90">Due in 31-90 days</option>
+					<option value="no-due">No due date</option>
+				</select>
+			</label>
+			<label>
+				<span>Min weight</span>
+				<input id="opp-filter-weight" class="opp-input" type="number" min="0" max="100" step="1" value="0" />
+			</label>
+			<label>
+				<span>Sort</span>
+				<select id="opp-filter-sort" class="opp-input">
+					<option value="gem">Gem score</option>
+					<option value="due">Due soonest</option>
+					<option value="weight">Highest weight</option>
+					<option value="posted">Newest posted</option>
+					<option value="title">Title A-Z</option>
+				</select>
+			</label>
+			<label class="opp-check">
+				<input id="opp-filter-focus" type="checkbox" />
+				<span>My focus only (Software/Cloud/AI/Cyber/Data)</span>
+			</label>
+			<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
+		</div>
+	</section>
+
+	<section class="opp-grid mt-4">
+		<article class="card p-4">
+			<h2 class="opp-subtitle">Gem picks (ranked)</h2>
+			<p class="opp-subcopy">Highest combined score from weight, due urgency, focus fit, and repeat signal across events.</p>
+			<ol id="opp-gem-list" class="opp-gem-list"></ol>
+		</article>
+
+		<article class="card p-4">
+			<h2 class="opp-subtitle">Urgency distribution</h2>
+			<div id="opp-viz-urgency" class="opp-bars"></div>
+		</article>
+
+		<article class="card p-4">
+			<h2 class="opp-subtitle">Notice type mix</h2>
+			<div id="opp-viz-types" class="opp-bars"></div>
+		</article>
+
+		<article class="card p-4">
+			<h2 class="opp-subtitle">Top agencies</h2>
+			<div id="opp-viz-agencies" class="opp-bars"></div>
+		</article>
+
+		<article class="card p-4">
+			<h2 class="opp-subtitle">Top NAICS</h2>
+			<div id="opp-viz-naics" class="opp-bars"></div>
+		</article>
+
+		<article class="card p-4">
+			<h2 class="opp-subtitle">Due timeline (next 6 months)</h2>
+			<div id="opp-viz-timeline" class="opp-bars"></div>
+		</article>
+	</section>
+
+	<section class="card mt-4 p-4">
+		<div class="opp-table-head">
+			<h2 class="opp-subtitle">Opportunity mirror table</h2>
+			<span id="opp-table-count" class="opp-subcopy">0 rows</span>
+		</div>
+		<div class="opp-table-wrap">
+			<table class="opp-table">
+				<thead>
+					<tr>
+						<th>Gem</th>
+						<th>Weight</th>
+						<th>Due</th>
+						<th>Days</th>
+						<th>Notice type</th>
+						<th>Solicitation name</th>
+						<th>Solicitation #</th>
+						<th>Agency</th>
+						<th>NAICS</th>
+						<th>Mapped events</th>
+					</tr>
+				</thead>
+				<tbody id="opp-table-body"></tbody>
+			</table>
+		</div>
+	</section>
+
+	<script id="opp-data" type="application/json">{JSON.stringify(opportunities)}</script>
+	<script is:inline>
+		(() => {
+			const raw = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
+			const focusTerms = ['software', 'cloud', 'ai', 'machine learning', 'cyber', 'data', 'analytics', 'devsecops', 'zero trust'];
+
+			const el = {
+				search: document.getElementById('opp-filter-search'),
+				type: document.getElementById('opp-filter-type'),
+				branch: document.getElementById('opp-filter-branch'),
+				due: document.getElementById('opp-filter-due'),
+				weight: document.getElementById('opp-filter-weight'),
+				sort: document.getElementById('opp-filter-sort'),
+				focus: document.getElementById('opp-filter-focus'),
+				reset: document.getElementById('opp-filter-reset'),
+				total: document.getElementById('opp-kpi-total'),
+				displayed: document.getElementById('opp-kpi-displayed'),
+				gems: document.getElementById('opp-kpi-gems'),
+				count: document.getElementById('opp-table-count'),
+				body: document.getElementById('opp-table-body'),
+				gemList: document.getElementById('opp-gem-list'),
+				urgency: document.getElementById('opp-viz-urgency'),
+				types: document.getElementById('opp-viz-types'),
+				agencies: document.getElementById('opp-viz-agencies'),
+				naics: document.getElementById('opp-viz-naics'),
+				timeline: document.getElementById('opp-viz-timeline'),
+			};
+
+			const dayMs = 86_400_000;
+			const now = new Date();
+			const todayDay = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+
+			const toDayEpoch = (value) => {
+				if (!value) return null;
+				const d = new Date(value);
+				if (Number.isNaN(d.getTime())) return null;
+				return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
+			};
+
+			const daysUntil = (value) => {
+				const day = toDayEpoch(value);
+				if (day === null) return null;
+				return Math.round((day - todayDay) / dayMs);
+			};
+
+			const fmtDate = (value) => {
+				if (!value) return '—';
+				const d = new Date(value);
+				if (Number.isNaN(d.getTime())) return '—';
+				return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+			};
+
+			const escapeHtml = (value) => String(value ?? '')
+				.replaceAll('&', '&amp;')
+				.replaceAll('<', '&lt;')
+				.replaceAll('>', '&gt;')
+				.replaceAll('"', '&quot;')
+				.replaceAll("'", '&#39;');
+
+			const agencyLabel = (path) => {
+				if (!path) return 'Unknown';
+				const parts = String(path).split('.').filter(Boolean);
+				return parts.slice(0, 4).join(' / ') || path;
+			};
+
+			const rows = raw.map((row) => {
+				const dueDays = daysUntil(row.responseDueDate);
+				const postedEpoch = toDayEpoch(row.postedDate);
+				const dueEpoch = toDayEpoch(row.responseDueDate);
+				const blob = [
+					row.title,
+					row.noticeType,
+					row.noticeId,
+					row.solicitationNumber,
+					row.agencyPath,
+					row.naicsCode,
+					...(row.branches || []),
+					...(row.capabilityAreas || []),
+					...(row.missionThreads || []),
+				].join(' ').toLowerCase();
+
+				const focusMatches = focusTerms.reduce((acc, term) => acc + (blob.includes(term) ? 1 : 0), 0);
+				const type = String(row.noticeType || '').toLowerCase();
+				let gemScore = Number(row.weight || 0);
+
+				if (dueDays === null) gemScore += 3;
+				else if (dueDays < 0) gemScore -= 12;
+				else if (dueDays <= 7) gemScore += 18;
+				else if (dueDays <= 21) gemScore += 14;
+				else if (dueDays <= 45) gemScore += 10;
+				else if (dueDays <= 90) gemScore += 6;
+				else gemScore += 2;
+
+				if (type.includes('sources sought')) gemScore += 7;
+				if (type.includes('pre') && type.includes('solicitation')) gemScore += 6;
+				if (type.includes('special notice')) gemScore += 4;
+				if (type.includes('combined synopsis')) gemScore += 4;
+				if (focusMatches > 0) gemScore += Math.min(10, focusMatches * 2);
+				gemScore += Math.min(8, Number(row.eventCount || 0) * 2);
+				if (row.uiLink) gemScore += 2;
+
+				return {
+					...row,
+					dueDays,
+					postedEpoch,
+					dueEpoch,
+					searchBlob: blob,
+					focusMatches,
+					gemScore,
+					agencyLabel: agencyLabel(row.agencyPath),
+				};
+			});
+
+			const state = {
+				search: '',
+				type: 'all',
+				branch: 'all',
+				due: 'all',
+				minWeight: 0,
+				sort: 'gem',
+				focusOnly: false,
+			};
+
+			const updateStateFromInputs = () => {
+				state.search = (el.search?.value || '').trim().toLowerCase();
+				state.type = el.type?.value || 'all';
+				state.branch = el.branch?.value || 'all';
+				state.due = el.due?.value || 'all';
+				state.minWeight = Number(el.weight?.value || 0);
+				state.sort = el.sort?.value || 'gem';
+				state.focusOnly = Boolean(el.focus?.checked);
+			};
+
+			const inDueWindow = (row) => {
+				if (state.due === 'all') return true;
+				if (state.due === 'future') return row.dueDays !== null && row.dueDays >= 0;
+				if (state.due === 'past') return row.dueDays !== null && row.dueDays < 0;
+				if (state.due === '0-30') return row.dueDays !== null && row.dueDays >= 0 && row.dueDays <= 30;
+				if (state.due === '31-90') return row.dueDays !== null && row.dueDays >= 31 && row.dueDays <= 90;
+				if (state.due === 'no-due') return row.dueDays === null;
+				return true;
+			};
+
+			const compareRows = (a, b) => {
+				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
+				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
+				if (state.sort === 'posted') return (b.postedEpoch || 0) - (a.postedEpoch || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'due') {
+					const aDue = a.dueDays === null ? Number.POSITIVE_INFINITY : a.dueDays;
+					const bDue = b.dueDays === null ? Number.POSITIVE_INFINITY : b.dueDays;
+					return aDue - bDue || b.gemScore - a.gemScore;
+				}
+				return b.gemScore - a.gemScore || b.weight - a.weight;
+			};
+
+			const filterRows = () => rows
+				.filter((row) => {
+					if (state.search && !row.searchBlob.includes(state.search)) return false;
+					if (state.type !== 'all' && row.noticeType !== state.type) return false;
+					if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
+					if (!inDueWindow(row)) return false;
+					if (Number(row.weight || 0) < state.minWeight) return false;
+					if (state.focusOnly && row.focusMatches < 1) return false;
+					return true;
+				})
+				.sort(compareRows);
+
+			const countBy = (items, getKey) => {
+				const map = new Map();
+				for (const item of items) {
+					const key = getKey(item);
+					if (!key) continue;
+					map.set(key, (map.get(key) || 0) + 1);
+				}
+				return [...map.entries()].sort((a, b) => b[1] - a[1]);
+			};
+
+			const renderBars = (container, entries, emptyLabel = 'No data') => {
+				if (!container) return;
+				if (!entries.length) {
+					container.innerHTML = `<p class="opp-subcopy">${emptyLabel}</p>`;
+					return;
+				}
+				const top = entries.slice(0, 12);
+				const max = Math.max(...top.map(([, value]) => Number(value || 0)), 1);
+				container.innerHTML = top.map(([label, value]) => {
+					const pct = Math.max(4, Math.round((Number(value) / max) * 100));
+					return `<div class="opp-bar-row"><span class="opp-bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</span><span class="opp-bar-track"><span class="opp-bar-fill" style="width:${pct}%"></span></span><span class="opp-bar-value">${value}</span></div>`;
+				}).join('');
+			};
+
+			const renderVisuals = (items) => {
+				const urgency = [
+					['Past due', items.filter((r) => r.dueDays !== null && r.dueDays < 0).length],
+					['Due 0-14d', items.filter((r) => r.dueDays !== null && r.dueDays >= 0 && r.dueDays <= 14).length],
+					['Due 15-30d', items.filter((r) => r.dueDays !== null && r.dueDays >= 15 && r.dueDays <= 30).length],
+					['Due 31-60d', items.filter((r) => r.dueDays !== null && r.dueDays >= 31 && r.dueDays <= 60).length],
+					['Due 61-120d', items.filter((r) => r.dueDays !== null && r.dueDays >= 61 && r.dueDays <= 120).length],
+					['No due date', items.filter((r) => r.dueDays === null).length],
+				];
+				renderBars(el.urgency, urgency, 'No due data');
+
+				const byType = countBy(items, (r) => r.noticeType);
+				renderBars(el.types, byType, 'No notice types');
+
+				const byAgency = countBy(items, (r) => r.agencyLabel);
+				renderBars(el.agencies, byAgency, 'No agencies');
+
+				const byNaics = countBy(items, (r) => r.naicsCode || null);
+				renderBars(el.naics, byNaics, 'No NAICS tags');
+
+				const monthBuckets = new Map();
+				for (const row of items) {
+					if (row.dueDays === null || row.dueDays < 0 || row.dueDays > 186) continue;
+					const d = new Date(row.responseDueDate);
+					const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+					monthBuckets.set(key, (monthBuckets.get(key) || 0) + 1);
+				}
+				const timeline = [...monthBuckets.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([key, value]) => {
+					const [y, m] = key.split('-').map(Number);
+					const dt = new Date(y, m - 1, 1);
+					const label = dt.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
+					return [label, value];
+				});
+				renderBars(el.timeline, timeline, 'No near-term due timeline');
+			};
+
+			const dueClass = (row) => {
+				if (row.dueDays === null) return '';
+				return row.dueDays < 0 ? 'opp-due-past' : 'opp-due-future';
+			};
+
+			const gemTier = (score) => {
+				if (score >= 36) return 'High';
+				if (score >= 26) return 'Medium';
+				return 'Watch';
+			};
+
+			const renderGemList = (items) => {
+				if (!el.gemList) return;
+				const gems = items
+					.filter((row) => row.gemScore >= 26 && (row.dueDays === null || row.dueDays >= 0))
+					.slice(0, 12);
+				if (!gems.length) {
+					el.gemList.innerHTML = '<li class="opp-subcopy">No current gems under this filter set.</li>';
+					return;
+				}
+
+				el.gemList.innerHTML = gems.map((row) => {
+					const days = row.dueDays === null ? 'No due date' : (row.dueDays < 0 ? 'Past due' : `${row.dueDays}d`);
+					const link = row.uiLink ? `<a href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>` : escapeHtml(row.title);
+					return `<li><span class="opp-gem-tier opp-gem-tier-${gemTier(row.gemScore).toLowerCase()}">${gemTier(row.gemScore)}</span>${link}<span class="opp-gem-meta">gem ${Math.round(row.gemScore)} · weight ${row.weight} · ${days}</span></li>`;
+				}).join('');
+			};
+
+			const renderTable = (items) => {
+				if (!el.body) return;
+				if (!items.length) {
+					el.body.innerHTML = '<tr><td colspan="10" class="opp-empty">No opportunities match your current filters.</td></tr>';
+					return;
+				}
+
+				el.body.innerHTML = items.map((row) => {
+					const days = row.dueDays === null ? '—' : (row.dueDays < 0 ? '-' : String(row.dueDays));
+					const due = fmtDate(row.responseDueDate);
+					const title = row.uiLink
+						? `<a href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
+						: escapeHtml(row.title);
+					const mapped = (row.eventTitles || []).slice(0, 2).map((title) => `<span class="opp-pill" title="${escapeHtml(title)}">${escapeHtml(title)}</span>`).join('')
+						+ ((row.eventTitles || []).length > 2 ? `<span class="opp-pill">+${(row.eventTitles || []).length - 2}</span>` : '');
+					return `<tr>
+						<td><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
+						<td class="opp-num">${row.weight}</td>
+						<td class="${dueClass(row)}">${due}</td>
+						<td class="opp-num">${days}</td>
+						<td>${escapeHtml(row.noticeType || '—')}</td>
+						<td>${title}</td>
+						<td>${escapeHtml(row.solicitationNumber || '—')}</td>
+						<td title="${escapeHtml(row.agencyPath || '')}">${escapeHtml(row.agencyLabel)}</td>
+						<td>${escapeHtml(row.naicsCode || '—')}</td>
+						<td><div class="opp-pill-wrap">${mapped || '—'}</div></td>
+					</tr>`;
+				}).join('');
+			};
+
+			const render = () => {
+				updateStateFromInputs();
+				const filtered = filterRows();
+				const gems = filtered.filter((row) => row.gemScore >= 26 && (row.dueDays === null || row.dueDays >= 0));
+
+				if (el.total) el.total.textContent = String(rows.length);
+				if (el.displayed) el.displayed.textContent = String(filtered.length);
+				if (el.gems) el.gems.textContent = String(gems.length);
+				if (el.count) el.count.textContent = `${filtered.length.toLocaleString()} row${filtered.length === 1 ? '' : 's'}`;
+
+				renderGemList(filtered);
+				renderVisuals(filtered);
+				renderTable(filtered);
+			};
+
+			[el.search, el.type, el.branch, el.due, el.weight, el.sort, el.focus].forEach((node) => node?.addEventListener('input', render));
+			el.reset?.addEventListener('click', () => {
+				if (el.search) el.search.value = '';
+				if (el.type) el.type.value = 'all';
+				if (el.branch) el.branch.value = 'all';
+				if (el.due) el.due.value = 'all';
+				if (el.weight) el.weight.value = '0';
+				if (el.sort) el.sort.value = 'gem';
+				if (el.focus) el.focus.checked = false;
+				render();
+			});
+
+			render();
+		})();
+	</script>
+</SiteLayout>
+
+<style>
+	.opp-header-row {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	.opp-header-actions {
+		display: flex;
+		gap: 0.6rem;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.opp-link-btn {
+		display: inline-flex;
+		align-items: center;
+		height: 1.9rem;
+		padding: 0 0.75rem;
+		border: 1px solid rgba(45, 212, 191, 0.48);
+		background: rgba(45, 212, 191, 0.12);
+		color: rgba(240, 253, 250, 0.97);
+		text-decoration: none;
+		font-size: 0.75rem;
+	}
+	.opp-link-btn:hover {
+		background: rgba(45, 212, 191, 0.2);
+	}
+	.opp-fresh {
+		font-size: 0.72rem;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.opp-kpis {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+		gap: 0.55rem;
+	}
+	.opp-kpi {
+		border: 1px solid rgba(51, 65, 85, 0.85);
+		background: rgba(2, 6, 23, 0.8);
+		padding: 0.5rem 0.65rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 0.6rem;
+	}
+	.opp-kpi-label {
+		font-size: 0.66rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.opp-kpi strong {
+		font-size: 1rem;
+		color: rgba(236, 253, 245, 0.97);
+	}
+	.opp-controls {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+		gap: 0.6rem;
+	}
+	.opp-controls label {
+		display: flex;
+		flex-direction: column;
+		gap: 0.28rem;
+		font-size: 0.67rem;
+		color: rgba(148, 163, 184, 0.95);
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+	.opp-input {
+		height: 2rem;
+		border: 1px solid rgba(71, 85, 105, 0.9);
+		background: rgba(2, 6, 23, 0.9);
+		color: rgba(226, 232, 240, 0.98);
+		padding: 0 0.55rem;
+		font-size: 0.78rem;
+		text-transform: none;
+		letter-spacing: normal;
+	}
+	.opp-check {
+		display: flex !important;
+		flex-direction: row !important;
+		align-items: center;
+		gap: 0.45rem;
+		padding-top: 1.15rem;
+		letter-spacing: normal !important;
+		text-transform: none !important;
+		font-size: 0.72rem !important;
+		color: rgba(203, 213, 225, 0.96) !important;
+	}
+	.opp-reset {
+		margin-top: 1.15rem;
+		height: 2rem;
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgba(15, 23, 42, 0.72);
+		color: rgba(226, 232, 240, 0.96);
+		font-size: 0.74rem;
+	}
+	.opp-reset:hover {
+		background: rgba(30, 41, 59, 0.9);
+	}
+	.opp-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.75rem;
+	}
+	.opp-subtitle {
+		font-size: 0.82rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: rgba(226, 232, 240, 0.98);
+	}
+	.opp-subcopy {
+		margin-top: 0.35rem;
+		font-size: 0.7rem;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.opp-gem-list {
+		margin-top: 0.55rem;
+		display: grid;
+		gap: 0.4rem;
+		padding-left: 0;
+		list-style: none;
+	}
+	.opp-gem-list li {
+		display: grid;
+		gap: 0.2rem;
+		padding: 0.35rem 0.45rem;
+		border: 1px solid rgba(51, 65, 85, 0.72);
+		background: rgba(2, 6, 23, 0.75);
+	}
+	.opp-gem-tier {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: fit-content;
+		padding: 0.05rem 0.3rem;
+		font-size: 0.6rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		border: 1px solid rgba(71, 85, 105, 0.85);
+	}
+	.opp-gem-tier-high {
+		border-color: rgba(34, 197, 94, 0.75);
+		color: rgba(187, 247, 208, 0.98);
+		background: rgba(22, 163, 74, 0.2);
+	}
+	.opp-gem-tier-medium {
+		border-color: rgba(250, 204, 21, 0.75);
+		color: rgba(254, 240, 138, 0.98);
+		background: rgba(202, 138, 4, 0.2);
+	}
+	.opp-gem-tier-watch {
+		border-color: rgba(148, 163, 184, 0.75);
+		color: rgba(226, 232, 240, 0.98);
+		background: rgba(71, 85, 105, 0.24);
+	}
+	.opp-gem-meta {
+		font-size: 0.66rem;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.opp-bars {
+		margin-top: 0.55rem;
+		display: grid;
+		gap: 0.33rem;
+	}
+	.opp-bar-row {
+		display: grid;
+		grid-template-columns: minmax(7rem, 1fr) minmax(8rem, 2fr) auto;
+		gap: 0.4rem;
+		align-items: center;
+	}
+	.opp-bar-label {
+		font-size: 0.67rem;
+		color: rgba(203, 213, 225, 0.96);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.opp-bar-track {
+		height: 0.56rem;
+		border: 1px solid rgba(71, 85, 105, 0.85);
+		background: rgba(15, 23, 42, 0.75);
+	}
+	.opp-bar-fill {
+		display: block;
+		height: 100%;
+		background: rgba(45, 212, 191, 0.58);
+	}
+	.opp-bar-value {
+		font-size: 0.66rem;
+		color: rgba(148, 163, 184, 0.95);
+		min-width: 1.75rem;
+		text-align: right;
+	}
+	.opp-table-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+	}
+	.opp-table-wrap {
+		margin-top: 0.6rem;
+		max-height: 65vh;
+		overflow: auto;
+		border: 1px solid rgba(51, 65, 85, 0.72);
+	}
+	.opp-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.72rem;
+	}
+	.opp-table th,
+	.opp-table td {
+		padding: 0.34rem 0.4rem;
+		border-bottom: 1px solid rgba(51, 65, 85, 0.45);
+		vertical-align: top;
+	}
+	.opp-table th {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+		background: rgba(15, 23, 42, 0.96);
+		color: rgba(226, 232, 240, 0.96);
+		text-align: left;
+	}
+	.opp-table td {
+		color: rgba(203, 213, 225, 0.96);
+	}
+	.opp-num {
+		text-align: center;
+		font-variant-numeric: tabular-nums;
+		white-space: nowrap;
+	}
+	.opp-due-future {
+		color: rgba(74, 222, 128, 0.98) !important;
+		font-weight: 600;
+	}
+	.opp-due-past {
+		color: rgba(248, 113, 113, 0.98) !important;
+		font-weight: 600;
+	}
+	.opp-gem-chip {
+		display: inline-flex;
+		min-width: 2.3rem;
+		justify-content: center;
+		padding: 0.04rem 0.25rem;
+		border: 1px solid rgba(250, 204, 21, 0.68);
+		background: rgba(250, 204, 21, 0.12);
+		color: rgba(254, 240, 138, 0.98);
+		font-variant-numeric: tabular-nums;
+	}
+	.opp-pill-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.22rem;
+	}
+	.opp-pill {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.04rem 0.25rem;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgba(15, 23, 42, 0.64);
+		font-size: 0.62rem;
+		color: rgba(203, 213, 225, 0.95);
+		white-space: nowrap;
+		max-width: 11rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.opp-empty {
+		text-align: center;
+		color: rgba(148, 163, 184, 0.95);
+		padding: 1.1rem 0.7rem !important;
+	}
+
+	@media (max-width: 1024px) {
+		.opp-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.opp-controls {
+			grid-template-columns: 1fr;
+		}
+		.opp-table {
+			font-size: 0.68rem;
+		}
+		.opp-bar-row {
+			grid-template-columns: minmax(6rem, 1fr) minmax(7rem, 2fr) auto;
+		}
+	}
+</style>
