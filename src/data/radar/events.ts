@@ -2318,15 +2318,16 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Official material describes a half-day inaugural symposium on 24 March 2026 in Paris focused on strategic security in the quantum-AI age, with QSECDEF sessions preceding the Quantum Networks Summit on 25-26 March.'
 		}
 	},
-{		id: 'radar-robins-requirements-symposium',
-		title: 'Robins Requirements Symposium',
-		description: 'WR-ALC requirements, sustainment pipeline',
+{
+		id: 'radar-robins-requirements-symposium',
+		title: '2026 Robins Requirements Symposium',
+		description: 'One-day Robins AFB and NDIA Central Georgia symposium focused on portfolio priorities and acquisition forecasts across AFLCMC, AFSC, and related Robins mission organizations.',
 		startDate: '2026-03-26',
-		endDate: null,
+		endDate: '2026-03-26',
 		branch: 'Air Force / Space Force',
 		type: 'Summit',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -2334,45 +2335,145 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'GA',
 			country: 'USA',
 			lat: 32.6200973,
-			lng: -83.606568
+			lng: -83.606568,
+			venue: 'Museum of Aviation, Century of Flight Hangar'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['robins', 'requirements', 'symposium'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Air Force sustainment opportunity forecasting', 'Depot and lifecycle modernization visibility', 'Industry-government alignment at Robins AFB'],
+			capabilityAreas: ['Sustainment acquisition', 'Program lifecycle management', 'Maintenance and modernization support'],
+			missionThreads: ['AFLCMC/AFSC portfolio signaling', 'Robins AFB requirement shaping', 'Large/small business engagement'],
+			stakeholders: ['Robins AFB', 'AFLCMC', 'AFSC', 'NDIA Central Georgia Chapter', 'DoD industry partners'],
+			keywords: ['robins requirements symposium', 'robins afb', 'aflcmc', 'afsc', 'warner robins', 'ndia central georgia'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
+				execution: 'Event day + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'SAM special notice: 2026 Robins Requirements Symposium',
+				url: 'https://sam.gov/workspace/contract/opp/8cd6858ac8cc48bab19e7ffecb226610/view',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
+			},
+			{
+				name: 'Middle Georgia Innovation Corridor event page',
+				url: 'https://middlegeorgiainnovates.com/event/robins-requirements-symposium/',
+				type: 'community',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
+			},
+			{
+				name: 'NDIA Central Georgia chapter site',
+				url: 'https://ndiacg.com/',
+				type: 'community',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://sam.gov/workspace/contract/opp/8cd6858ac8cc48bab19e7ffecb226610/view',
+				registration: 'https://sam.gov/workspace/contract/opp/8cd6858ac8cc48bab19e7ffecb226610/view',
+				agenda: 'https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb9bd959ec544760aa23e32ffbcf6232/download'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 500
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Special Notice', 'Sources Sought', 'Pre-solicitation'],
+				noticeType: 'Robins AFB portfolio forecasts plus near-term sustainment and infrastructure notices across AFLCMC/AFSC and related commands',
+				agency: 'Department of the Air Force (Robins AFB, AFLCMC, AFSC)',
+				solicitationNumber: '2026_Robins_Requirements_Symposium',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '03/01/2025',
+					postedTo: '02/27/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 5,
+					typeCounts:
+					{
+						'Sources Sought': 2,
+						'Combined Synopsis/Solicitation': 2,
+						'Special Notice': 1
+					},
+					topNotices: [
+					{
+						noticeId: '8cd6858ac8cc48bab19e7ffecb226610',
+						title: '2026 Robins Requirements Symposium -26 March 2026',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-04',
+						solicitationNumber: '2026_Robins_Requirements_Symposium',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE',
+						uiLink: 'https://sam.gov/workspace/contract/opp/8cd6858ac8cc48bab19e7ffecb226610/view'
+					},
+					{
+						noticeId: '8318eedaeba54cfa80a5609bc5d87767',
+						title: 'Utility Energy Service Contract (UESC), Warner Robins-Air Logistics Complex, Robins AFB, Georgia',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-26',
+						responseDueDate: '2026-03-10T15:00:00-04:00',
+						solicitationNumber: 'SP0604-26-R-0408',
+						agencyPath: 'DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA ENERGY.DLA ENERGY',
+						naicsCode: '221122',
+						classificationCode: 'S112',
+						uiLink: 'https://sam.gov/workspace/contract/opp/8318eedaeba54cfa80a5609bc5d87767/view'
+					},
+					{
+						noticeId: 'd6a8c13fe4d14955a2bac72b87854aef',
+						title: 'BAF 78384 PSC & PWI Cage Material Robins AFB',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-02-26',
+						responseDueDate: '2026-03-11T15:00:00-04:00',
+						solicitationNumber: 'FA857126Q3000',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8571  MAINT CONTRACTING AFSC PZIM',
+						naicsCode: '332618',
+						classificationCode: '5340',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d6a8c13fe4d14955a2bac72b87854aef/view'
+					},
+					{
+						noticeId: 'cf95bfc336f449e1b3ff198f9b4c2905',
+						title: 'RSAF F-15 Classified Repair and Return Services (Robins AFB)',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-23',
+						responseDueDate: '2026-03-03T16:00:00-05:00',
+						solicitationNumber: 'FA8575-26-RSAFCRSS',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FIGHTER AND ADVANCED AIRCRAFT.FA8575  AFLCMC WAQKA',
+						naicsCode: '488190',
+						classificationCode: 'R706',
+						uiLink: 'https://sam.gov/workspace/contract/opp/cf95bfc336f449e1b3ff198f9b4c2905/view'
+					},
+					{
+						noticeId: 'b89dd560eb484309b3e8004f01036a5a',
+						title: 'Robins AFB Overhead Door B319',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-02-26',
+						responseDueDate: '2026-02-27T12:00:00-05:00',
+						solicitationNumber: 'FA850126Q0011',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8501  OPL CONTRACTING AFSC/PZIO',
+						naicsCode: '332321',
+						classificationCode: '5670',
+						uiLink: 'https://sam.gov/workspace/contract/opp/b89dd560eb484309b3e8004f01036a5a/view'
+					}
+					]
+				}
+			},
+			notes: 'SAM notice confirms the 26 March 2026 symposium at Museum of Aviation (Century of Flight Hangar) with Robins AFB + NDIA Central Georgia co-hosting; latest notice text indicates conference package/registration was pending approval as of 4 February 2026 and references updated draft agenda attachments.'
 		}
 	},
-{
-		id: 'radar-defense-manufacturing-conference-2026',
+{		id: 'radar-defense-manufacturing-conference-2026',
 		title: 'Defense Manufacturing Conference 2026',
 		description: 'Nation\'s annual forum for defense manufacturing. 1,500+ attendees. JDMTP and ARCTOS. Engineers, managers, tech leaders, scientists, policymakers. Rescheduled from Dec 2025 due to gov shutdown.',
 		startDate: '2026-03-30',
