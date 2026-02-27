@@ -130,6 +130,8 @@ const lastCollectedAt = radarEventsSeed
 	.filter(Boolean)
 	.sort()
 	.at(-1) ?? null;
+
+const opportunitiesJson = JSON.stringify(opportunities);
 ---
 
 <SiteLayout title="Opportunity Intelligence | Adam Boas" description="Opportunity intelligence mirror from cached SAM opportunity pulls and event-enrichment runs.">
@@ -268,7 +270,7 @@ const lastCollectedAt = radarEventsSeed
 		</div>
 	</section>
 
-	<script id="opp-data" type="application/json">{JSON.stringify(opportunities)}</script>
+	<script id="opp-data" type="application/json" set:html={opportunitiesJson}></script>
 	<script is:inline>
 		(() => {
 			const raw = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
