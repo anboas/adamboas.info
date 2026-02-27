@@ -2947,14 +2947,14 @@ export const radarEventsSeed: RadarEvent[] = [
 
 {
 		id: 'radar-southeast-region-fedcon-usace-summit',
-		title: 'Southeast Region FEDCON USACE Summit',
-		description: 'Southeast region federal construction summit. NCMBC hosted. All USACE SAD districts attend.',
+		title: 'Southeast Region Federal Construction, Infrastructure & Environment Summit 2026',
+		description: 'NCMBC-led regional summit convening USACE, NAVFAC, military installations, and industry for program/requirements dialogue and federal construction networking across the Southeast.',
 		startDate: '2026-04-14',
 		endDate: '2026-04-16',
 		branch: 'USACE',
 		type: 'Summit',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -2962,43 +2962,120 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'NC',
 			country: 'USA',
 			lat: 34.2352853,
-			lng: -77.9487284
+			lng: -77.9487284,
+			venue: 'Wilmington Convention Center, 515 Nutt Street'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['southeast', 'region', 'fedcon', 'usace'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Southeast federal construction market access', 'USACE/NAVFAC requirement visibility', 'Regional teaming and supplier expansion'],
+			capabilityAreas: ['Federal construction and infrastructure delivery', 'Environmental remediation', 'Facility support and services'],
+			missionThreads: ['Program and requirements dialogue participation', 'Prime-sub supply-chain matchmaking', 'Southeast district capture planning'],
+			stakeholders: ['North Carolina Military Business Center (NCMBC)', 'USACE South Atlantic Division districts', 'NAVFAC and military installations', 'General/specialty contractors and A/E firms'],
+			keywords: ['southeast summit', 'ncmbc', 'federal construction', 'usace sad', 'wilmington convention center'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-21 days',
+				prep: 'T-14 to T-2 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'NCMBC official event listing',
+				url: 'https://www.ncmbc.us/event/southeast-region-federal-construction-infrastructure-and-environmental-summit/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Summit about page (official)',
+				url: 'https://summit.ncmbc.us/why-attend/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Summit registration page',
+				url: 'https://summit.ncmbc.us/register/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.ncmbc.us/event/southeast-region-federal-construction-infrastructure-and-environmental-summit/',
+				registration: 'https://summit.ncmbc.us/register/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 1700
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Special Notice', 'Solicitation', 'Vendor Outreach'],
+				noticeType: 'USACE South Atlantic Division dredging and district-construction signals aligned with summit audience',
+				agency: 'USACE South Atlantic Division (Wilmington/Savannah districts)',
+				solicitationNumber: 'W912PM25BA007',
+				responseDueDate: '2026-03-01T04:45:00+00:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2025',
+					postedTo: '02/27/2026',
+					noticeTypes: ['s', 'o'],
+					totalMatched: 3,
+					typeCounts:
+					{
+						'Special Notice': 2,
+						Solicitation: 1
+					},
+					topNotices: [
+					{
+						noticeId: 'ba3389ff6ebe4e41a3bbb17d0b4d6471',
+						title: 'Industry Day for FY26 South Atlantic Division (SAD) Regional Harbor Dredging Contract (RHDC)',
+						noticeType: 'Special Notice',
+						postedDate: '2025-03-18',
+						responseDueDate: '2025-04-03T13:00:00+00:00',
+						solicitationNumber: 'W912PM25BA007',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SAD.W074 ENDIST WILMINGTON',
+						naicsCode: '237990',
+						uiLink: 'https://sam.gov/workspace/contract/opp/ba3389ff6ebe4e41a3bbb17d0b4d6471/view'
+					},
+					{
+						noticeId: '99a21a4395e548fd87f20620fd643845',
+						title: 'FY26 Maintenance Dredging, South Atlantic Division (SAD) Regional Harbor Dredging Contract (RHDC) Contract 1',
+						noticeType: 'Solicitation',
+						postedDate: '2025-07-17',
+						responseDueDate: '2025-07-17T17:00:00+00:00',
+						solicitationNumber: 'W912PM25BA007',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SAD.W074 ENDIST WILMINGTON',
+						naicsCode: '237990',
+						uiLink: 'https://sam.gov/workspace/contract/opp/99a21a4395e548fd87f20620fd643845/view'
+					},
+					{
+						noticeId: '30f377a70b804d1ca2781d50f4ea05a9',
+						title: 'Virtual Industry Day Notice for construction projects for Fort Gillem, in Forest Park GA.',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-17',
+						responseDueDate: '2026-03-01T04:45:00+00:00',
+						solicitationNumber: 'W912HNA037493',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SAD.W074 ENDIST SAVANNAH',
+						naicsCode: '236220',
+						uiLink: 'https://sam.gov/workspace/contract/opp/30f377a70b804d1ca2781d50f4ea05a9/view'
+					}
+					]
+				}
+			},
+			notes: 'Official NCMBC and summit pages confirm April 14-16, 2026 in Wilmington, with 800+ participants across USACE/NAVFAC/installation stakeholders, requirement-dialogue sessions, and published registration tiers ($200 early attendee; $255 standard; free active duty/federal; exhibitor $800/$850).'
 		}
 	},
+
 {
 		id: 'radar-sacramento-district-usace-industry-day',
 		title: 'Sacramento District USACE Industry Day',
