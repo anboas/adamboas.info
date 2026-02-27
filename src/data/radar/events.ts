@@ -3561,14 +3561,14 @@ export const radarEventsSeed: RadarEvent[] = [
 
 {
 		id: 'radar-usace-national-dredging-meeting',
-		title: 'USACE National Dredging Meeting',
-		description: 'National dredging operations, all USACE divisions',
+		title: 'USACE National Dredging Meeting 2026 (Planned)',
+		description: 'USACE-led national dredging coordination meeting; FY26 outreach matrix places this event in May 2026 in Atlanta with multi-district participation.',
 		startDate: '2026-05-01',
 		endDate: '2026-05-31',
 		branch: 'USACE',
 		type: 'Conference',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -3576,43 +3576,105 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'GA',
 			country: 'USA',
 			lat: 33.7544657,
-			lng: -84.3898151
+			lng: -84.3898151,
+			venue: 'TBD (USACE to publish)'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['usace', 'national', 'dredging', 'meeting'],
+			themes: ['Navigation infrastructure sustainment', 'Civil works dredging execution', 'USACE district-market synchronization'],
+			capabilityAreas: ['Maintenance dredging', 'Hydrographic support', 'Waterway operations'],
+			missionThreads: ['USACE civil works delivery', 'Contract opportunity timing', 'District-level engagement planning'],
+			stakeholders: ['USACE Headquarters', 'USACE South Atlantic Division', 'USACE Savannah District', 'USACE Los Angeles District', 'Dredging industry primes and subs'],
+			keywords: ['USACE', 'national dredging meeting', 'navigation', 'maintenance dredging', 'civil works'],
 			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
 				discovery: 'Now to T-90 days',
 				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				execution: 'Event month + 21-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
+				name: 'USACE South Atlantic Division FY26 outreach conference matrix',
+				url: 'https://www.sac.usace.army.mil/Portals/43/FY26%20USACE%20-%20SAD%20Outreach%20District%20Breakout%209_22_25.pdf',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
+			},
+			{
+				name: 'USACE operations conference page (CAC-restricted)',
+				url: 'https://operations.erdc.dren.mil/conference.cfm?CoP=&Id=16maynat&Type=Conf',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
+			},
+			{
+				name: 'USACE SAM special notice baseline (2024 cycle)',
+				url: 'https://sam.gov/workspace/contract/opp/05bf668f6ec54ccfa1a034811f73fa7d/view',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: {
+				official: 'https://www.sac.usace.army.mil/Portals/43/FY26%20USACE%20-%20SAD%20Outreach%20District%20Breakout%209_22_25.pdf',
+				conferenceAccess: 'https://operations.erdc.dren.mil/conference.cfm?CoP=&Id=16maynat&Type=Conf',
+				baselineNotice: 'https://sam.gov/workspace/contract/opp/05bf668f6ec54ccfa1a034811f73fa7d/view'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 1200
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			acquisition:
+			{
+				noticeType: 'USACE dredging procurement signals aligned to FY26 national dredging mission set',
+				agency: 'USACE SAD / USACE Los Angeles District',
+				solicitationNumber: 'W912PL26RA006',
+				responseDueDate: '2026-02-23T21:00:00+00:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['o'],
+					totalMatched: 2,
+					typeCounts:
+					{
+						Solicitation: 2
+					},
+					topNotices: [
+					{
+						noticeId: '6e90fca2c984402296fd3a3c16939046',
+						title: 'Oceanside Harbor Maintenance Dredging',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-02-23T21:00:00+00:00',
+						solicitationNumber: 'W912PL26RA006',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SPD.W075 ENDIST LOS ANGELES',
+						uiLink: 'https://sam.gov/workspace/contract/opp/6e90fca2c984402296fd3a3c16939046/view'
+					},
+					{
+						noticeId: 'aee792f656944495b7fa18081eb70f10',
+						title: 'FY25 Atlantic Intracoastal Waterway Maintenance Dredging - Select Sites',
+						noticeType: 'Solicitation',
+						postedDate: '2026-01-20',
+						responseDueDate: '2026-01-14T17:00:00+00:00',
+						solicitationNumber: 'W912HN26BA002',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SAD.W074 ENDIST SAVANNAH',
+						uiLink: 'https://sam.gov/workspace/contract/opp/aee792f656944495b7fa18081eb70f10/view'
+					}
+					]
+				}
+			},
+			notes: 'USACE FY26 SAD outreach matrix confirms May 2026 Atlanta placement, while detailed conference page is CAC-restricted. Current SAM dredging solicitations provide live acquisition context pending release of public 2026 meeting registration details.'
 		}
 	},
+
 {
 		id: 'radar-huntington-district-usace-industry-outreach-open-house',
 		title: 'Huntington District USACE Industry Outreach Open House',
