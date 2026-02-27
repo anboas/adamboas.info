@@ -3479,8 +3479,8 @@ export const radarEventsSeed: RadarEvent[] = [
 
 {
 		id: 'radar-dod-small-business-training-week',
-		title: 'DoD Small Business Training Week',
-		description: 'DoD OSBP small business training and engagement',
+		title: 'DoD Small Business Training Week 2026 (Date TBA)',
+		description: 'Annual DoD OSBP training week for federal acquisition and small-business professionals; 2026 event window/location not yet publicly posted.',
 		startDate: '2026-05-01',
 		endDate: '2026-05-31',
 		branch: 'Joint',
@@ -3494,15 +3494,15 @@ export const radarEventsSeed: RadarEvent[] = [
 			country: 'USA',
 			lat: 39.5,
 			lng: -98.35,
-			venue: 'TBD'
+			venue: 'TBD (DoD OSBP to publish)'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['small', 'business', 'training', 'week'],
+			themes: ['Small-business policy execution', 'Acquisition workforce training', 'Defense industrial base expansion'],
+			capabilityAreas: ['Federal acquisition', 'Small-business utilization', 'Mentor-Protégé program operations'],
+			missionThreads: ['Policy-to-execution translation', 'Cross-component OSBP coordination', 'Industry-engagement readiness'],
+			stakeholders: ['DoD Office of Small Business Programs', 'Military Department OSBPs', 'Defense Agencies', 'SBA', 'Federal acquisition workforce'],
+			keywords: ['SBTW', 'DoD OSBP', 'small business', 'acquisition training', 'vanguard awards'],
 			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
@@ -3512,25 +3512,53 @@ export const radarEventsSeed: RadarEvent[] = [
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
+				name: 'DoD OSBP SBTW24 announcement',
+				url: 'https://business.defense.gov/Engage/News/Article/3650311/small-business-training-week-2024-announced/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
+			},
+			{
+				name: 'DoD OSBP SBTW24 registration notice',
+				url: 'https://business.defense.gov/Engage/News/Article/3671835/small-business-training-week-registration-now-open/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
+			},
+			{
+				name: 'DoD OSBP SBTW24 recap',
+				url: 'https://business.defense.gov/Engage/News/SBTW24/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
+			},
+			{
+				name: 'DVIDS DoD OSBP channel',
+				url: 'https://www.dvidshub.net/unit/DoDOSBP',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: {
+				official: 'https://business.defense.gov/Engage/News/SBTW24/',
+				eventsCalendar: 'https://business.defense.gov/Engage/Events-Calendar/',
+				registration: 'https://www.sbtw24.com/',
+				publicMedia: 'https://www.dvidshub.net/unit/DoDOSBP'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 1800
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			notes: '2026-specific date/location not yet publicly posted in accessible official pages. Direct business.defense.gov fetch from this runner returned 403; official pages were verified via mirrored fetch fallback and cross-checked against DoD OSBP DVIDS channel to confirm annual continuity.'
 		}
 	},
+
 {
 		id: 'radar-usace-national-dredging-meeting',
 		title: 'USACE National Dredging Meeting',
