@@ -3677,8 +3677,8 @@ export const radarEventsSeed: RadarEvent[] = [
 
 {
 		id: 'radar-huntington-district-usace-industry-outreach-open-house',
-		title: 'Huntington District USACE Industry Outreach Open House',
-		description: 'Huntington District opportunities, Great Lakes & Ohio River Division',
+		title: 'Huntington District Industry Outreach Open House',
+		description: 'USACE Huntington District outreach open house for industry engagement; official listing currently remains in save-the-date mode pending detailed agenda release.',
 		startDate: '2026-05-07',
 		endDate: null,
 		branch: 'USACE',
@@ -3692,43 +3692,64 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'WV',
 			country: 'USA',
 			lat: 38.4192496,
-			lng: -82.445154
+			lng: -82.445154,
+			venue: 'TBD (USACE Huntington District to publish)'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['huntington', 'district', 'usace', 'industry'],
+			themes: ['USACE district outreach', 'Acquisition visibility', 'Small-business engagement'],
+			capabilityAreas: ['Civil works support', 'Construction services', 'Engineering and A/E services'],
+			missionThreads: ['District relationship building', 'Forecast alignment', 'Follow-on procurement awareness'],
+			stakeholders: ['USACE Huntington District', 'USACE Great Lakes and Ohio River Division', 'Small and large business contractors'],
+			keywords: ['Huntington District', 'industry outreach', 'USACE', 'open house', 'LRH'],
 			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-60 days',
+				prep: 'T-45 to T-7 days',
+				execution: 'Event day + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'USACE LRD announcement page',
+				url: 'https://www.lrd.usace.army.mil/News/Announcements/Display/Article/4328448/huntington-district-industry-outreach-open-house/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
+			},
+			{
+				name: 'USACE print view for announcement',
+				url: 'https://www.lrd.usace.army.mil/DesktopModules/ArticleCS/Print.aspx?PortalId=73&ModuleId=151095&Article=4328448',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Google calendar link embedded by USACE article',
+				url: 'http://www.google.com/calendar/event?action=TEMPLATE&text=Huntington%20District%20Industry%20Outreach%20Open%20House&dates=20260507T000000/20260507T000000&details=Save%20the%20date%20and%20check%20back%20soon%20for%20more%20details.&trp=false&sprop=&sprop=name:',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: {
+				official: 'https://www.lrd.usace.army.mil/News/Announcements/Display/Article/4328448/huntington-district-industry-outreach-open-house/',
+				printView: 'https://www.lrd.usace.army.mil/DesktopModules/ArticleCS/Print.aspx?PortalId=73&ModuleId=151095&Article=4328448',
+				calendar: 'http://www.google.com/calendar/event?action=TEMPLATE&text=Huntington%20District%20Industry%20Outreach%20Open%20House&dates=20260507T000000/20260507T000000&details=Save%20the%20date%20and%20check%20back%20soon%20for%20more%20details.&trp=false&sprop=&sprop=name:'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 500
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			notes: 'Official USACE listing currently provides date-only save-the-date language with no agenda/registration package yet. Direct site access from this runner returned 403; details were validated through official mirrored print payload.'
 		}
 	},
+
 {
 		id: 'radar-auvsi-xponential-2026',
 		title: 'AUVSI XPONENTIAL 2026',
