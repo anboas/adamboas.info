@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-02-26T14:41:05.174949+00:00
+Generated: 2026-02-27T14:40:16.608352+00:00
 
 - Total: 19
 - OK: 11
@@ -14,14 +14,14 @@ Generated: 2026-02-26T14:41:05.174949+00:00
 | AUSA Meetings & Events | official_calendar | 200 | no | 50 | 91 | https://www.ausa.org/meet |  |
 | AFCEA Events | official_calendar | 200 | no | 20 | 260 | https://www.afcea.org/events |  |
 | AFA Events | official_calendar | 200 | no | 24 | 32 | https://www.afa.org/events/ |  |
-| Navy League Meetings & Events | official_calendar | 200 | no | 6 | 35 | https://www.navyleague.org/meetings-and-events/ |  |
+| Navy League Meetings & Events | official_calendar | 200 | no | 6 | 34 | https://www.navyleague.org/meetings-and-events/ |  |
 | CTO Innovation Industry Outreach Calendar | official_calendar | 200 | no | 0 | 29 | https://www.ctoinnovation.mil/events/ |  |
-| SAME Events | official_calendar | 200 | no | 9 | 14 | https://www.same.org/events/ |  |
+| SAME Events | official_calendar | 200 | no | 7 | 9 | https://www.same.org/events/ |  |
 | ASD Events (Defense & Security) | aggregator | 200 | yes | 80 | 179 | https://www.asdevents.com/defense-security |  |
 | Military Expos | aggregator | 200 | no | 171 | 92 | https://www.militaryexpos.com/ |  |
 | Marine Military Expos | aggregator | 200 | yes | 18 | 13 | https://marinemilitaryexpos.com/ |  |
-| Potomac Officers Club GovCon Events | aggregator | 200 | yes | 120 | 237 | https://www.potomacofficersclub.com/govcon-events/ |  |
-| GovCIO Events | aggregator | 200 | no | 26 | 73 | https://govciomedia.com/events/ |  |
+| Potomac Officers Club GovCon Events | aggregator | 200 | yes | 120 | 236 | https://www.potomacofficersclub.com/govcon-events/ |  |
+| GovCIO Events | aggregator | 200 | no | 27 | 71 | https://govciomedia.com/events/ |  |
 | NDIA Events | constrained_official | 200 | yes | 0 | 0 | https://www.ndia.org/events |  |
 | NDIA SpecialOps26 | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/SpecialOps26 |  |
 | 36th Annual NDIA Special Operations Symposium | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium |  |
