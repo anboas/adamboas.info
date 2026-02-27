@@ -3753,13 +3753,13 @@ export const radarEventsSeed: RadarEvent[] = [
 {
 		id: 'radar-auvsi-xponential-2026',
 		title: 'AUVSI XPONENTIAL 2026',
-		description: '8,500+ attendees. Co-located with NDIA MDEX. Unmanned systems, robotics, autonomy',
+		description: 'Global autonomy and uncrewed-systems conference in Detroit with MDEX co-location and dedicated defense autonomy programming.',
 		startDate: '2026-05-11',
 		endDate: '2026-05-14',
 		branch: 'Joint',
 		type: 'Conference',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -3767,47 +3767,127 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'MI',
 			country: 'USA',
 			lat: 42.3315509,
-			lng: -83.0466403
+			lng: -83.0466403,
+			venue: 'Huntington Place Convention Center'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['auvsi', 'xponential', '2026'],
+			themes: ['Autonomy at operational scale', 'Defense-industrial integration', 'Government-industry technical exchange'],
+			capabilityAreas: ['Unmanned systems', 'Counter-UAS', 'Robotics', 'Autonomy software and AI'],
+			missionThreads: ['Defense market positioning', 'Capability mapping to mission buyers', 'Partnership and teaming'],
+			stakeholders: ['AUVSI', 'DoD acquisition organizations', 'USAREUR-AF', 'US Army contracting commands', 'USMC/NAVAIR'],
+			keywords: ['XPONENTIAL', 'AUVSI', 'uncrewed systems', 'autonomy', 'MDEX', 'defense technology zone'],
 			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
 				discovery: 'Now to T-90 days',
 				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				execution: 'Event week + 21-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'AUVSI',
-				url: 'https://www.auvsi.org/events/calendar-of-events/',
+				name: 'XPONENTIAL official site',
+				url: 'https://xponential.org/',
 				type: 'official',
-				lastVerified: '2026-02-17',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'XPONENTIAL schedule-at-a-glance',
+				url: 'https://xponential.org/sag.cfm',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'AUVSI official event listing',
+				url: 'https://www.auvsi.org/event/xponential-2026/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
 			links: {
 				official: 'https://xponential.org/',
-				agenda: 'https://xponential.org/sag.cfm'
+				agenda: 'https://xponential.org/sag.cfm',
+				registration: 'https://xponential.org/',
+				auvsiEvent: 'https://www.auvsi.org/event/xponential-2026/'
 			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 250,
+					max: 2500
 				},
 				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'Co-located with MDEX'
+			acquisition:
+			{
+				noticeType: 'Defense autonomy and UAS requirement signals aligned to XPONENTIAL defense programming',
+				agency: 'US Army ACC / USAREUR-AF / NAVAIR',
+				solicitationNumber: 'W912PB26RA008',
+				responseDueDate: '2028-12-31T22:59:00+00:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['r', 'k'],
+					totalMatched: 4,
+					typeCounts:
+					{
+						'Sources Sought': 3,
+						'Combined Synopsis/Solicitation': 1
+					},
+					topNotices: [
+					{
+						noticeId: '2b32fcbd97224f68bbd4d2649bf6c28f',
+						title: 'USAREUR-AF Small Unmanned Aircraft Systems (sUAS) Blanket Purchase Agreement',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-20',
+						responseDueDate: '2028-12-31T22:59:00+00:00',
+						solicitationNumber: 'W912PB26RA008',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT',
+						uiLink: 'https://sam.gov/workspace/contract/opp/2b32fcbd97224f68bbd4d2649bf6c28f/view'
+					},
+					{
+						noticeId: 'b7c30b38c0c146959eda43eb198f7cd4',
+						title: 'Request for Information (RFI) for Unmanned Aircraft Systems (UAS), Counter-UAS Systems, and Related Supplies',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-01-29',
+						responseDueDate: '2026-03-09T00:00:00+00:00',
+						solicitationNumber: 'PAN411-26-P-0000027192',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG',
+						uiLink: 'https://sam.gov/workspace/contract/opp/b7c30b38c0c146959eda43eb198f7cd4/view'
+					},
+					{
+						noticeId: 'd76cc239a31148dfbc84c17e8bbf3769',
+						title: 'Small Unmanned Aircraft Systems (sUAS) for the United States Marine Corps',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-01-13',
+						responseDueDate: '2026-02-17T04:59:00+00:00',
+						solicitationNumber: '243-25-157',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d76cc239a31148dfbc84c17e8bbf3769/view'
+					},
+					{
+						noticeId: '40ef4cc490164d29a21aea6a77a741c2',
+						title: 'ARTB Drone Targetry',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-01-13',
+						responseDueDate: '2026-01-23T10:00:00+00:00',
+						solicitationNumber: 'W911S226U2440',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION & INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC-FT DRUM',
+						uiLink: 'https://sam.gov/workspace/contract/opp/40ef4cc490164d29a21aea6a77a741c2/view'
+					}
+					]
+				}
+			},
+			notes: 'Official XPONENTIAL + AUVSI sources align on the May 11-14 Detroit run with Huntington Place operations and explicit defense/autonomy emphasis via MDEX co-location and defense programming tracks.'
 		}
 	},
+
 {
 		id: 'radar-ausa-lanpac-2026',
 		title: 'AUSA LANPAC 2026',
