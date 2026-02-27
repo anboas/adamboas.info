@@ -2822,14 +2822,14 @@ export const radarEventsSeed: RadarEvent[] = [
 		}
 	},
 {		id: 'radar-same-fort-worth-post-industry-day-2026',
-		title: 'SAME Fort Worth Post Industry Day 2026',
-		description: 'Industry Government Engagement 2026. Day 1: Presentations at Round Up Inn. Day 2: One-on-One meetings at USACE Fort Worth District HQ.',
-		startDate: '2026-04-14',
+		title: 'SAME Fort Worth Post Industry Government Engagement 2026',
+		description: 'Three-day SAME Fort Worth engagement including a golf kickoff, USACE/Federal partner sessions, and one-on-one networking with Fort Worth District personnel.',
+		startDate: '2026-04-13',
 		endDate: '2026-04-15',
 		branch: 'USACE',
 		type: 'Workshop',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -2837,44 +2837,114 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'TX',
 			country: 'USA',
 			lat: 32.753177,
-			lng: -97.3327459
+			lng: -97.3327459,
+			venue: 'Will Rogers Round Up Inn / USACE Fort Worth District Federal Building'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['same', 'fort', 'worth', 'post'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['USACE district engagement', 'Federal construction pipeline visibility', 'A/E/C partner positioning'],
+			capabilityAreas: ['Federal construction', 'Program delivery support', 'Small-business teaming'],
+			missionThreads: ['Fort Worth District relationship building', 'Pre-RFP capture shaping', 'Post-session one-on-one follow-through'],
+			stakeholders: ['USACE Fort Worth District', 'SAME Fort Worth Post', 'Regional federal partners (VA, TRWD)', 'Small and large business contractors'],
+			keywords: ['same fort worth', 'industry government engagement', 'usace fort worth', 'round up inn', 'one-on-one networking'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'SAME Fort Worth Post announcement (official)',
+				url: 'https://samefortworth.org/2026/02/03/fort-worth-industry-government-engagement-2026/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
+			},
+			{
+				name: 'SAME Fort Worth Industry Day site',
+				url: 'https://samefwindustryday.com/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'SAME Fort Worth ticketing page',
+				url: 'https://samefwindustryday.com/buy-tickets/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'SAME Fort Worth RSS feed listing',
+				url: 'https://samefortworth.org/feed/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://samefortworth.org/2026/02/03/fort-worth-industry-government-engagement-2026/',
+				registration: 'https://samefwindustryday.com/buy-tickets/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 900
 				},
 				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'Primary presenter: USACE Fort Worth District. Fritz G. Lanham Federal Office Building (security checkpoint).'
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Sources Sought', 'Special Notice', 'Vendor Outreach'],
+				noticeType: 'USACE Fort Worth district industry-engagement and event-support signals',
+				agency: 'USACE Fort Worth District (SWD)',
+				solicitationNumber: 'W9126G-26-N-OSBP',
+				responseDueDate: '2025-08-25T22:00:00+00:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2025',
+					postedTo: '02/27/2026',
+					noticeTypes: ['r', 's'],
+					totalMatched: 2,
+					typeCounts:
+					{
+						'Sources Sought': 1,
+						'Special Notice': 1
+					},
+					topNotices: [
+					{
+						noticeId: '7de205cc512c406cb46297f0e247abe1',
+						title: 'Event Planning Services for Industry Day FY2026',
+						noticeType: 'Sources Sought',
+						postedDate: '2025-07-24',
+						responseDueDate: '2025-08-25T22:00:00+00:00',
+						solicitationNumber: 'W9126G-26-N-OSBP',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SWD.W076 ENDIST FT WORTH',
+						naicsCode: '561920',
+						uiLink: 'https://sam.gov/workspace/contract/opp/7de205cc512c406cb46297f0e247abe1/view'
+					},
+					{
+						noticeId: '8bf3d51104194547a4d96c4fbe778c19',
+						title: 'Modified Central City and Dallas Floodway Industry Day – Fort Worth District',
+						noticeType: 'Special Notice',
+						postedDate: '2025-07-15',
+						responseDueDate: '2025-07-09T14:00:00+00:00',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SWD.W076 ENDIST FT WORTH',
+						uiLink: 'https://sam.gov/workspace/contract/opp/8bf3d51104194547a4d96c4fbe778c19/view'
+					}
+					]
+				}
+			},
+			notes: 'Official Fort Worth Post + event-site sources confirm a 3-day format (Apr 13-15, 2026): golf kickoff, full-day district/federal partner sessions at Round Up Inn, and appointment-based one-on-one sessions at the USACE Fort Worth District Federal Building; posted ticket tiers show $150 small-business, $200 large-business, and no-cost government registration.'
 		}
 	},
+
 {
 		id: 'radar-southeast-region-fedcon-usace-summit',
 		title: 'Southeast Region FEDCON USACE Summit',
