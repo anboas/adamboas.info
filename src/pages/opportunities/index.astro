@@ -254,23 +254,41 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-table-head">
-			<h2 class="opp-subtitle">Opportunity mirror table</h2>
+			<h2 class="opp-subtitle">Opportunity Table</h2>
 			<span id="opp-table-count" class="opp-subcopy">0 rows</span>
+		</div>
+		<div class="opp-table-controls">
+			<label class="opp-table-control">
+				<span>Rows</span>
+				<select id="opp-table-page-size" class="opp-input opp-input-sm">
+					<option value="25">25</option>
+					<option value="50" selected>50</option>
+					<option value="100">100</option>
+				</select>
+			</label>
+			<div class="opp-table-pager">
+				<button id="opp-table-first" class="opp-page-btn" type="button" aria-label="First page">«</button>
+				<button id="opp-table-prev" class="opp-page-btn" type="button" aria-label="Previous page">‹</button>
+				<span id="opp-table-page" class="opp-page-indicator">Page 1 / 1</span>
+				<button id="opp-table-next" class="opp-page-btn" type="button" aria-label="Next page">›</button>
+				<button id="opp-table-last" class="opp-page-btn" type="button" aria-label="Last page">»</button>
+			</div>
 		</div>
 		<div class="opp-table-wrap">
 			<table class="opp-table">
 				<thead>
 					<tr>
-						<th>Gem</th>
-						<th>Weight</th>
-						<th>Due</th>
-						<th>Days</th>
-						<th>Notice type</th>
-						<th>Solicitation name</th>
-						<th>Solicitation #</th>
-						<th>Agency</th>
-						<th>NAICS</th>
-						<th>Mapped events</th>
+						<th><button class="opp-sort-btn is-active" data-sort="gemScore" data-dir="desc" type="button">Gem</button></th>
+						<th><button class="opp-sort-btn" data-sort="weight" type="button">Weight</button></th>
+						<th><button class="opp-sort-btn" data-sort="dueDate" type="button">Due</button></th>
+						<th><button class="opp-sort-btn" data-sort="dueDays" type="button">Days</button></th>
+						<th><button class="opp-sort-btn" data-sort="postedDays" type="button">Days Since Release</button></th>
+						<th><button class="opp-sort-btn" data-sort="noticeType" type="button">Notice type</button></th>
+						<th><button class="opp-sort-btn" data-sort="title" type="button">Solicitation name</button></th>
+						<th><button class="opp-sort-btn" data-sort="solicitationNumber" type="button">Solicitation #</button></th>
+						<th><button class="opp-sort-btn" data-sort="agency" type="button">Agency</button></th>
+						<th><button class="opp-sort-btn" data-sort="naics" type="button">NAICS</button></th>
+						<th><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Mapped events</button></th>
 					</tr>
 				</thead>
 				<tbody id="opp-table-body"></tbody>
@@ -298,6 +316,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				gems: document.getElementById('opp-kpi-gems'),
 				count: document.getElementById('opp-table-count'),
 				body: document.getElementById('opp-table-body'),
+				pageSize: document.getElementById('opp-table-page-size'),
+				pageLabel: document.getElementById('opp-table-page'),
+				pageFirst: document.getElementById('opp-table-first'),
+				pagePrev: document.getElementById('opp-table-prev'),
+				pageNext: document.getElementById('opp-table-next'),
+				pageLast: document.getElementById('opp-table-last'),
+				sortButtons: Array.from(document.querySelectorAll('.opp-sort-btn')),
 				gemList: document.getElementById('opp-gem-list'),
 				urgency: document.getElementById('opp-viz-urgency'),
 				types: document.getElementById('opp-viz-types'),
@@ -384,6 +409,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					dueDays,
 					postedEpoch,
 					dueEpoch,
+					postedDays: postedEpoch === null ? null : Math.max(0, Math.round((todayDay - postedEpoch) / dayMs)),
 					searchBlob: blob,
 					focusMatches,
 					gemScore,
@@ -399,6 +425,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				minWeight: 0,
 				sort: 'gem',
 				focusOnly: false,
+			};
+
+			const tableState = {
+				sortKey: 'gemScore',
+				sortDir: 'desc',
+				page: 1,
+				pageSize: Number(el.pageSize?.value || 50),
 			};
 
 			const updateStateFromInputs = () => {
@@ -533,15 +566,82 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}).join('');
 			};
 
+			const compareText = (a, b) => String(a ?? '').localeCompare(String(b ?? ''), undefined, { sensitivity: 'base' });
+			const compareNum = (a, b, nullValue = Number.POSITIVE_INFINITY) => (a ?? nullValue) - (b ?? nullValue);
+
+			const compareTableRows = (a, b) => {
+				let base = 0;
+				switch (tableState.sortKey) {
+					case 'weight':
+						base = compareNum(Number(a.weight || 0), Number(b.weight || 0), 0);
+						break;
+					case 'dueDate':
+						base = compareNum(a.dueEpoch, b.dueEpoch, Number.POSITIVE_INFINITY);
+						break;
+					case 'dueDays':
+						base = compareNum(a.dueDays, b.dueDays, Number.POSITIVE_INFINITY);
+						break;
+					case 'postedDays':
+						base = compareNum(a.postedDays, b.postedDays, Number.POSITIVE_INFINITY);
+						break;
+					case 'noticeType':
+						base = compareText(a.noticeType, b.noticeType);
+						break;
+					case 'title':
+						base = compareText(a.title, b.title);
+						break;
+					case 'solicitationNumber':
+						base = compareText(a.solicitationNumber, b.solicitationNumber);
+						break;
+					case 'agency':
+						base = compareText(a.agencyLabel, b.agencyLabel);
+						break;
+					case 'naics':
+						base = compareText(a.naicsCode, b.naicsCode);
+						break;
+					case 'mappedEvents':
+						base = compareNum(Number(a.eventCount || 0), Number(b.eventCount || 0), 0);
+						break;
+					case 'gemScore':
+					default:
+						base = compareNum(Number(a.gemScore || 0), Number(b.gemScore || 0), 0);
+						break;
+				}
+				if (base === 0) base = compareText(a.title, b.title);
+				return tableState.sortDir === 'asc' ? base : -base;
+			};
+
+			const getPagedRows = (items) => {
+				const sorted = [...items].sort(compareTableRows);
+				const totalRows = sorted.length;
+				const totalPages = Math.max(1, Math.ceil(totalRows / tableState.pageSize));
+				tableState.page = Math.min(Math.max(1, tableState.page), totalPages);
+				const start = (tableState.page - 1) * tableState.pageSize;
+				return {
+					rows: sorted.slice(start, start + tableState.pageSize),
+					totalRows,
+					totalPages,
+				};
+			};
+
+			const updateTableSortIndicators = () => {
+				for (const btn of el.sortButtons || []) {
+					const active = btn.dataset.sort === tableState.sortKey;
+					btn.classList.toggle('is-active', active);
+					btn.dataset.dir = active ? tableState.sortDir : '';
+				}
+			};
+
 			const renderTable = (items) => {
 				if (!el.body) return;
 				if (!items.length) {
-					el.body.innerHTML = '<tr><td colspan="10" class="opp-empty">No opportunities match your current filters.</td></tr>';
+					el.body.innerHTML = '<tr><td colspan="11" class="opp-empty">No opportunities match your current filters.</td></tr>';
 					return;
 				}
 
 				el.body.innerHTML = items.map((row) => {
 					const days = row.dueDays === null ? '—' : (row.dueDays < 0 ? '-' : String(row.dueDays));
+					const daysSinceRelease = row.postedDays === null ? '—' : String(row.postedDays);
 					const due = fmtDate(row.responseDueDate);
 					const title = row.uiLink
 						? `<a href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
@@ -553,6 +653,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<td class="opp-num">${row.weight}</td>
 						<td class="${dueClass(row)}">${due}</td>
 						<td class="opp-num">${days}</td>
+						<td class="opp-num">${daysSinceRelease}</td>
 						<td>${escapeHtml(row.noticeType || '—')}</td>
 						<td>${title}</td>
 						<td>${escapeHtml(row.solicitationNumber || '—')}</td>
@@ -567,18 +668,67 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				updateStateFromInputs();
 				const filtered = filterRows();
 				const gems = filtered.filter((row) => row.gemScore >= 26 && (row.dueDays === null || row.dueDays >= 0));
+				const { rows: pagedRows, totalRows, totalPages } = getPagedRows(filtered);
 
 				if (el.total) el.total.textContent = String(rows.length);
 				if (el.displayed) el.displayed.textContent = String(filtered.length);
 				if (el.gems) el.gems.textContent = String(gems.length);
-				if (el.count) el.count.textContent = `${filtered.length.toLocaleString()} row${filtered.length === 1 ? '' : 's'}`;
+				if (el.count) el.count.textContent = `${totalRows.toLocaleString()} row${totalRows === 1 ? '' : 's'}`;
+				if (el.pageLabel) el.pageLabel.textContent = `Page ${tableState.page} / ${totalPages}`;
+				if (el.pageFirst) el.pageFirst.disabled = tableState.page <= 1;
+				if (el.pagePrev) el.pagePrev.disabled = tableState.page <= 1;
+				if (el.pageNext) el.pageNext.disabled = tableState.page >= totalPages;
+				if (el.pageLast) el.pageLast.disabled = tableState.page >= totalPages;
 
+				updateTableSortIndicators();
 				renderGemList(filtered);
 				renderVisuals(filtered);
-				renderTable(filtered);
+				renderTable(pagedRows);
 			};
 
-			[el.search, el.type, el.branch, el.due, el.weight, el.sort, el.focus].forEach((node) => node?.addEventListener('input', render));
+			[el.search, el.type, el.branch, el.due, el.weight, el.sort, el.focus].forEach((node) => node?.addEventListener('input', () => {
+				tableState.page = 1;
+				render();
+			}));
+
+			el.pageSize?.addEventListener('change', () => {
+				tableState.pageSize = Number(el.pageSize?.value || 50);
+				tableState.page = 1;
+				render();
+			});
+
+			el.pageFirst?.addEventListener('click', () => {
+				tableState.page = 1;
+				render();
+			});
+			el.pagePrev?.addEventListener('click', () => {
+				tableState.page -= 1;
+				render();
+			});
+			el.pageNext?.addEventListener('click', () => {
+				tableState.page += 1;
+				render();
+			});
+			el.pageLast?.addEventListener('click', () => {
+				tableState.page = Number.MAX_SAFE_INTEGER;
+				render();
+			});
+
+			for (const btn of el.sortButtons || []) {
+				btn.addEventListener('click', () => {
+					const key = btn.dataset.sort;
+					if (!key) return;
+					if (tableState.sortKey === key) {
+						tableState.sortDir = tableState.sortDir === 'asc' ? 'desc' : 'asc';
+					} else {
+						tableState.sortKey = key;
+						tableState.sortDir = ['noticeType', 'title', 'solicitationNumber', 'agency', 'naics'].includes(key) ? 'asc' : 'desc';
+					}
+					tableState.page = 1;
+					render();
+				});
+			}
+
 			el.reset?.addEventListener('click', () => {
 				if (el.search) el.search.value = '';
 				if (el.type) el.type.value = 'all';
@@ -587,6 +737,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.weight) el.weight.value = '0';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
+				tableState.page = 1;
+				tableState.sortKey = 'gemScore';
+				tableState.sortDir = 'desc';
 				render();
 			});
 
@@ -920,6 +1073,53 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		gap: 0.6rem;
 		flex-wrap: wrap;
 	}
+	.opp-table-controls {
+		margin-top: 0.42rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+	}
+	.opp-table-control {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-size: 0.65rem;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: rgba(148, 163, 184, 0.96);
+	}
+	.opp-input-sm {
+		height: 1.8rem;
+		min-width: 4.6rem;
+		padding: 0 0.45rem;
+		font-size: 0.72rem;
+	}
+	.opp-table-pager {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+	}
+	.opp-page-btn {
+		height: 1.8rem;
+		min-width: 1.9rem;
+		padding: 0 0.38rem;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgba(15, 23, 42, 0.72);
+		color: rgba(226, 232, 240, 0.96);
+		font-size: 0.79rem;
+	}
+	.opp-page-btn:disabled {
+		opacity: 0.45;
+		cursor: not-allowed;
+	}
+	.opp-page-indicator {
+		min-width: 6.7rem;
+		text-align: center;
+		font-size: 0.69rem;
+		color: rgba(148, 163, 184, 0.95);
+	}
 	.opp-table-wrap {
 		margin-top: 0.6rem;
 		max-height: 65vh;
@@ -953,6 +1153,29 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-size: 0.65rem;
 		text-transform: uppercase;
 		letter-spacing: 0.04em;
+	}
+	.opp-sort-btn {
+		all: unset;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.28rem;
+		cursor: pointer;
+		color: inherit;
+		width: 100%;
+	}
+	.opp-sort-btn::after {
+		content: '↕';
+		font-size: 0.58rem;
+		opacity: 0.5;
+	}
+	.opp-sort-btn.is-active::after {
+		opacity: 1;
+	}
+	.opp-sort-btn.is-active[data-dir='asc']::after {
+		content: '↑';
+	}
+	.opp-sort-btn.is-active[data-dir='desc']::after {
+		content: '↓';
 	}
 	.opp-table td {
 		color: rgba(203, 213, 225, 0.96);
@@ -1047,6 +1270,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		.opp-gem-list {
 			max-height: none;
 			padding-right: 0;
+		}
+		.opp-table-controls {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.opp-table-pager {
+			width: 100%;
+			justify-content: space-between;
+		}
+		.opp-page-indicator {
+			min-width: auto;
 		}
 		.opp-table {
 			font-size: 0.67rem;

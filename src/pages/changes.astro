@@ -27,12 +27,44 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.61',
+		date: '2026-02-27',
+		title: 'Opportunity Table upgraded with release-age, sorting, and pagination controls',
+		summary: 'Upgraded the opportunities table into a full interactive data grid with per-column sorting, page-size controls, pager navigation, and a new Days Since Release signal for faster triage.',
+		impact: 'You can now scan large opportunity sets without scroll fatigue and sort exactly by the field you care about.',
+		current: true,
+		tags: ['opportunities', 'events', 'ux', 'table', 'analytics'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `Days Since Release` column to Opportunity Table (derived from posted date).',
+					'Added table pagination controls with first/prev/next/last navigation and rows-per-page selector.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Renamed section heading from `Opportunity mirror table` to `Opportunity Table`.',
+					'Converted table headers to interactive sort controls (numeric + text-aware defaults).',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved table UX polish for desktop/mobile paging controls and active sort-state visibility.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.60',
 		date: '2026-02-27',
 		title: 'Opportunity Intelligence UI aligned to Events design language',
 		summary: 'Restructured Opportunity Intelligence into a tighter scan-first shell with consistent controls, denser visual cards, and improved table readability matching the Events polish baseline.',
 		impact: 'Opportunity triage now feels like the Events workflow: compact, consistent, and much faster to scan.',
-		current: true,
 		tags: ['opportunities', 'events', 'ux', 'design-system', 'platform'],
 		groups: [
 			{
