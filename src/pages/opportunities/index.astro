@@ -835,16 +835,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const mapped = (row.eventTitles || []).slice(0, 2).map((title) => `<span class="opp-pill" title="${escapeHtml(title)}">${escapeHtml(title)}</span>`).join('')
 						+ ((row.eventTitles || []).length > 2 ? `<span class="opp-pill">+${(row.eventTitles || []).length - 2}</span>` : '');
 					return `<tr>
-						<td><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
+						<td class="opp-num"><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
 						<td class="opp-num">${row.weight}</td>
-						<td class="${dueClass(row)}">${due}</td>
+						<td class="opp-date ${dueClass(row)}">${due}</td>
 						<td class="opp-num">${days}</td>
 						<td class="opp-num">${daysSinceRelease}</td>
 						<td>${escapeHtml(row.noticeType || '—')}</td>
 						<td>${title}</td>
 						<td>${escapeHtml(row.solicitationNumber || '—')}</td>
 						<td title="${escapeHtml(row.agencyPath || '')}">${escapeHtml(row.agencyLabel)}</td>
-						<td>${escapeHtml(row.naicsCode || '—')}</td>
+						<td class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
 						<td><div class="opp-pill-wrap">${mapped || '—'}</div></td>
 					</tr>`;
 				}).join('');
@@ -1333,7 +1333,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-table td {
 		padding: 0.34rem 0.38rem;
 		border-bottom: 1px solid rgba(51, 65, 85, 0.45);
-		vertical-align: top;
+		vertical-align: middle;
 	}
 	.opp-table tbody tr:nth-child(even) {
 		background: rgba(15, 23, 42, 0.26);
@@ -1347,15 +1347,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		z-index: 2;
 		background: rgba(15, 23, 42, 0.97);
 		color: rgba(226, 232, 240, 0.96);
-		text-align: left;
+		text-align: center;
 		font-size: 0.65rem;
 		text-transform: uppercase;
 		letter-spacing: 0.04em;
+		white-space: nowrap;
 	}
 	.opp-sort-btn {
 		all: unset;
 		display: inline-flex;
 		align-items: center;
+		justify-content: center;
 		gap: 0.28rem;
 		cursor: pointer;
 		color: inherit;
@@ -1383,6 +1385,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-variant-numeric: tabular-nums;
 		white-space: nowrap;
 	}
+	.opp-date {
+		text-align: center;
+		white-space: nowrap;
+		font-variant-numeric: tabular-nums;
+	}
 	.opp-due-future {
 		color: rgba(74, 222, 128, 0.98) !important;
 		font-weight: 600;
@@ -1403,6 +1410,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-pill-wrap {
 		display: flex;
+		align-items: center;
 		flex-wrap: wrap;
 		gap: 0.22rem;
 	}
