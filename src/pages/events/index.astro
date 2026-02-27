@@ -109,6 +109,19 @@ function daysUntilDetail(date: string | null) {
 	return `Started ${Math.abs(days)} day(s) ago`;
 }
 
+function dueDateClass(date: string | null | undefined) {
+	const days = daysUntilValue(date ?? null);
+	if (days === null) return '';
+	return days < 0 ? 'radar-due-past' : 'radar-due-future';
+}
+
+function daysUntilDueLabel(date: string | null | undefined) {
+	const days = daysUntilValue(date ?? null);
+	if (days === null) return '—';
+	if (days < 0) return '-';
+	return String(days);
+}
+
 const nextUpcomingDays = events
 	.map((e) => daysUntilValue(e.startDate))
 	.filter((days): days is number => days !== null && days >= 0);
@@ -1127,6 +1140,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 															<th>Type</th>
 															<th>Posted</th>
 															<th>Due</th>
+															<th class="radar-col-days-due">Days to due</th>
 															<th>Solicitation #</th>
 															<th>Agency</th>
 															<th>Overlap</th>
@@ -1140,7 +1154,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 															<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
 															<td>{notice.noticeType}</td>
 															<td>{notice.postedDate ?? '—'}</td>
-															<td>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>
+															<td class={dueDateClass(notice.responseDueDate)}>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>
+															<td class="radar-col-days-due">{daysUntilDueLabel(notice.responseDueDate)}</td>
 															<td>{notice.solicitationNumber ?? '—'}</td>
 															<td>{notice.agencyPath ?? '—'}</td>
 															<td>{noticeOverlapStakeholders(event, notice).length ? noticeOverlapStakeholders(event, notice).join(', ') : '—'}</td>
@@ -3386,6 +3401,19 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		text-align: center !important;
 		white-space: nowrap;
 		font-variant-numeric: tabular-nums;
+	}
+	.radar-col-days-due {
+		text-align: center !important;
+		white-space: nowrap;
+		font-variant-numeric: tabular-nums;
+	}
+	.radar-due-future {
+		color: rgba(74, 222, 128, 0.98) !important;
+		font-weight: 600;
+	}
+	.radar-due-past {
+		color: rgba(248, 113, 113, 0.98) !important;
+		font-weight: 600;
 	}
 	.radar-inline-select {
 		min-width: 11rem;
