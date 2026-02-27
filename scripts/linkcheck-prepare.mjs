@@ -17,6 +17,7 @@ const POLICY = {
     'ausa.org',
     'xponential.org',
     'hilton.com',
+    'whova.com',
   ],
   ignoreDomains: [
     'adamboas.info',
