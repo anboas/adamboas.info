@@ -2473,15 +2473,16 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'SAM notice confirms the 26 March 2026 symposium at Museum of Aviation (Century of Flight Hangar) with Robins AFB + NDIA Central Georgia co-hosting; latest notice text indicates conference package/registration was pending approval as of 4 February 2026 and references updated draft agenda attachments.'
 		}
 	},
-{		id: 'radar-defense-manufacturing-conference-2026',
-		title: 'Defense Manufacturing Conference 2026',
-		description: 'Nation\'s annual forum for defense manufacturing. 1,500+ attendees. JDMTP and ARCTOS. Engineers, managers, tech leaders, scientists, policymakers. Rescheduled from Dec 2025 due to gov shutdown.',
+{
+		id: 'radar-defense-manufacturing-conference-2026',
+		title: 'Defense Manufacturing Conference (DMC) 2025/2026',
+		description: 'Joint Defense Manufacturing Technology Panel forum for defense manufacturing priorities, policy, and innovation, rescheduled into spring 2026 after the 2025 federal shutdown window.',
 		startDate: '2026-03-30',
 		endDate: '2026-04-02',
 		branch: 'Joint',
 		type: 'Conference',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -2489,46 +2490,112 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'FL',
 			country: 'USA',
 			lat: 28.3600587,
-			lng: -81.4934624
+			lng: -81.4934624,
+			venue: 'Caribe Royale Orlando'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['defense', 'manufacturing', 'conference', '2026'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Defense industrial-base modernization', 'Manufacturing innovation adoption', 'Government-industry production alignment'],
+			capabilityAreas: ['Advanced manufacturing', 'Digital manufacturing', 'Production-readiness scaling'],
+			missionThreads: ['DoD manufacturing policy awareness', 'Technology transition to programs', 'Industrial partner positioning'],
+			stakeholders: ['Joint Defense Manufacturing Technology Panel (JDMTP)', 'ARCTOS', 'DoD manufacturing leaders', 'Industry and academia partners'],
+			keywords: ['dmc', 'defense manufacturing conference', 'jdmtp', 'arctos', 'additive manufacturing', 'industrial base'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'DMC official site',
+				url: 'https://www.dmcmeeting.com/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'DMC attend/registration details',
+				url: 'https://www.dmcmeeting.com/pages/attend.html',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Manufacturing USA event listing',
+				url: 'https://www.manufacturingusa.com/events/defense-manufacturing-conference',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.dmcmeeting.com/',
+				registration: 'https://www.dmcmeeting.com/pages/attend.html',
+				hotelBlock: 'https://www.dmcmeeting.com/pages/hotel.html'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 495,
+					max: 995
 				},
 				travelBurdenFromDc: 'Medium'
 			},
-			notes: 'All paid registrations transferred. Hotel booking open.'
+			acquisition:
+			{
+				engagementKinds: ['Special Notice', 'Sources Sought', 'Pre-solicitation', 'Vendor Outreach'],
+				noticeType: 'Defense manufacturing and additive-manufacturing demand signals from Navy/DoD acquisition lanes',
+				agency: 'DoD / DLA / Navy NAVSEA',
+				solicitationNumber: 'SPE4AX26RAMP1',
+				responseDueDate: '2026-03-05T16:00:00-05:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 2,
+					typeCounts:
+					{
+						'Combined Synopsis/Solicitation': 1,
+						'Special Notice': 1
+					},
+					topNotices: [
+					{
+						noticeId: '12fb7a4ad9404543bc055fbf2080510d',
+						title: 'AMENDED Combined Synopsis/Solicitation for NAVAIR Additive Manufacturing Capability',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-03-03T23:59:00-05:00',
+						solicitationNumber: 'SPE4AX26RAMP1',
+						agencyPath: 'DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION',
+						naicsCode: '333248',
+						classificationCode: '9999',
+						uiLink: 'https://sam.gov/workspace/contract/opp/12fb7a4ad9404543bc055fbf2080510d/view'
+					},
+					{
+						noticeId: 'ae049989963c4243b97dd82f81ab4833',
+						title: 'MIL-PRF-XX758, Powder Feedstock, Copper-Nickel (70-30), for Use in Laser Powder Bed Fusion, Additive Manufacturing',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-05',
+						responseDueDate: '2026-03-05T16:00:00-05:00',
+						solicitationNumber: 'N0002426SN-28',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ',
+						naicsCode: '336611',
+						classificationCode: '9999',
+						uiLink: 'https://sam.gov/workspace/contract/opp/ae049989963c4243b97dd82f81ab4833/view'
+					}
+					]
+				}
+			},
+			notes: 'Official DMC sources confirm March 30-April 2, 2026 at Caribe Royale Orlando, with 2025 registrations and sponsorships carried over after federal shutdown delays. Public registration info lists industry/government/day-pass rates and ITAR/DD2345 participation controls.'
 		}
 	},
-{
-		id: 'radar-chicago-district-usace-industry-outreach-open-house',
+{		id: 'radar-chicago-district-usace-industry-outreach-open-house',
 		title: 'Chicago District USACE Industry Outreach Open House',
 		description: 'Chicago District contracting opportunities, Great Lakes & Ohio River Division',
 		startDate: '2026-04-01',
