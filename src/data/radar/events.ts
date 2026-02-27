@@ -2237,11 +2237,12 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Official SATShow sources confirm March 23-26, 2026 at the Walter E. Washington Convention Center, with SATELLITE and GovMilSpace unified under one pass structure. Published event material emphasizes 15,000+ attendees, 450+ exhibitors, expanded government/military programming, and dedicated engineering tech seminars.'
 		}
 	},
-{		id: 'radar-qsecdef-world-symposium',
-		title: 'QSECDEF World Symposium',
-		description: 'Inaugural quantum security for defense, quantum-secure communications',
+{
+		id: 'radar-qsecdef-world-symposium',
+		title: 'QSECDEF World Symposium 2026',
+		description: 'Inaugural half-day symposium on quantum-secure communications and critical-infrastructure resilience in the quantum-AI era, hosted alongside Quantum Networks Summit Paris.',
 		startDate: '2026-03-24',
-		endDate: null,
+		endDate: '2026-03-24',
 		branch: 'Joint',
 		type: 'Summit',
 		status: 'Upcoming',
@@ -2251,46 +2252,73 @@ export const radarEventsSeed: RadarEvent[] = [
 		{
 			city: 'Paris',
 			country: 'France',
-			lat: 48.8534951,
-			lng: 2.3483915
+			lat: 48.8806,
+			lng: 2.2817,
+			venue: 'Palais des Congrès de Paris (Level 3, Auditorium Havana)'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['qsecdef', 'world', 'symposium'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Quantum-safe communications', 'Critical infrastructure resilience', 'International quantum-security collaboration'],
+			capabilityAreas: ['Post-quantum cryptography', 'Secure communications architecture', 'Quantum policy and standards'],
+			missionThreads: ['Quantum transition planning', 'Cross-border interoperability', 'Defense-tech partnership development'],
+			stakeholders: ['QSECDEF', 'Government policy teams', 'Defense and intelligence stakeholders', 'Telecom and enterprise security leaders'],
+			keywords: ['qsecdef', 'quantum security defence', 'post-quantum cryptography', 'quantum secure communications', 'palais des congres'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
+				execution: 'Event day + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'QSECDEF event site',
+				url: 'https://www.quantumdefenceevent.com/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'QSECDEF events page',
+				url: 'https://www.quantumsecuritydefence.com/events',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Paris Quantum Tech event page',
+				url: 'https://www.quantumsecuritydefence.com/events/paris-quantum-tech',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Upperside conference program page',
+				url: 'https://www.uppersideconferences.com/Quantum_Security_Defence/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.quantumdefenceevent.com/',
+				registration: 'https://www.quantumsecuritydefence.com/events/paris-quantum-tech',
+				agenda: 'https://www.uppersideconferences.com/Quantum_Security_Defence/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 1200,
+					min: 149,
 					max: 4200
 				},
 				travelBurdenFromDc: 'High'
-			}
+			},
+			notes: 'Official material describes a half-day inaugural symposium on 24 March 2026 in Paris focused on strategic security in the quantum-AI age, with QSECDEF sessions preceding the Quantum Networks Summit on 25-26 March.'
 		}
 	},
-{
-		id: 'radar-robins-requirements-symposium',
+{		id: 'radar-robins-requirements-symposium',
 		title: 'Robins Requirements Symposium',
 		description: 'WR-ALC requirements, sustainment pipeline',
 		startDate: '2026-03-26',
