@@ -45,7 +45,7 @@ jobs:
           args: >-
             --verbose
             --no-progress
-            --accept 200,206,401,403,429
+            --accept 200,202,206,401,403,429
             --timeout 20
             --max-retries 2
             "tmp/linkcheck/strict-links.txt"
