@@ -137,7 +137,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 <SiteLayout title="Opportunity Intelligence | Adam Boas" description="Opportunity intelligence mirror from cached SAM opportunity pulls and event-enrichment runs.">
 	<StickyBrowseBar active="opportunities" />
 
-	<section class="card p-5">
+	<section class="card control-shell p-5">
 		<div class="opp-header-row">
 			<div>
 				<h1 class="section-title">Opportunity Intelligence</h1>
@@ -158,93 +158,101 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		</div>
 	</section>
 
-	<section class="card mt-4 p-4">
-		<div class="opp-controls">
-			<label>
-				<span>Search</span>
-				<input id="opp-filter-search" class="opp-input" type="search" placeholder="title, agency, notice id, NAICS, solicitation..." />
-			</label>
-			<label>
-				<span>Notice type</span>
-				<select id="opp-filter-type" class="opp-input">
-					<option value="all">All</option>
-					{noticeTypes.map((type) => <option value={type}>{type}</option>)}
-				</select>
-			</label>
-			<label>
-				<span>Branch</span>
-				<select id="opp-filter-branch" class="opp-input">
-					<option value="all">All</option>
-					{branches.map((branch) => <option value={branch}>{branch}</option>)}
-				</select>
-			</label>
-			<label>
-				<span>Due window</span>
-				<select id="opp-filter-due" class="opp-input">
-					<option value="all">All</option>
-					<option value="future">Future/today</option>
-					<option value="past">Past due</option>
-					<option value="0-30">Due in 0-30 days</option>
-					<option value="31-90">Due in 31-90 days</option>
-					<option value="no-due">No due date</option>
-				</select>
-			</label>
-			<label>
-				<span>Min weight</span>
-				<input id="opp-filter-weight" class="opp-input" type="number" min="0" max="100" step="1" value="0" />
-			</label>
-			<label>
-				<span>Sort</span>
-				<select id="opp-filter-sort" class="opp-input">
-					<option value="gem">Gem score</option>
-					<option value="due">Due soonest</option>
-					<option value="weight">Highest weight</option>
-					<option value="posted">Newest posted</option>
-					<option value="title">Title A-Z</option>
-				</select>
-			</label>
-			<label class="opp-check">
-				<input id="opp-filter-focus" type="checkbox" />
-				<span>My focus only (Software/Cloud/AI/Cyber/Data)</span>
-			</label>
-			<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
+	<section class="card control-shell mt-4 p-4">
+		<div class="opp-controls-shell">
+			<div class="opp-controls-head">
+				<h2 class="opp-subtitle">Filter opportunity mirror</h2>
+				<p class="opp-subcopy">Scan-first controls aligned with Events: tighten scope, sort fast, then inspect gem candidates.</p>
+			</div>
+			<div class="opp-controls-grid">
+				<label class="opp-field opp-field-search">
+					<span>Search</span>
+					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="title, agency, notice id, NAICS, solicitation..." />
+				</label>
+				<label class="opp-field">
+					<span>Notice type</span>
+					<select id="opp-filter-type" class="opp-input">
+						<option value="all">All</option>
+						{noticeTypes.map((type) => <option value={type}>{type}</option>)}
+					</select>
+				</label>
+				<label class="opp-field">
+					<span>Branch</span>
+					<select id="opp-filter-branch" class="opp-input">
+						<option value="all">All</option>
+						{branches.map((branch) => <option value={branch}>{branch}</option>)}
+					</select>
+				</label>
+				<label class="opp-field">
+					<span>Due window</span>
+					<select id="opp-filter-due" class="opp-input">
+						<option value="all">All</option>
+						<option value="future">Future/today</option>
+						<option value="past">Past due</option>
+						<option value="0-30">Due in 0-30 days</option>
+						<option value="31-90">Due in 31-90 days</option>
+						<option value="no-due">No due date</option>
+					</select>
+				</label>
+				<label class="opp-field">
+					<span>Min weight</span>
+					<input id="opp-filter-weight" class="opp-input" type="number" min="0" max="100" step="1" value="0" />
+				</label>
+				<label class="opp-field">
+					<span>Sort</span>
+					<select id="opp-filter-sort" class="opp-input">
+						<option value="gem">Gem score</option>
+						<option value="due">Due soonest</option>
+						<option value="weight">Highest weight</option>
+						<option value="posted">Newest posted</option>
+						<option value="title">Title A-Z</option>
+					</select>
+				</label>
+			</div>
+			<div class="opp-controls-actions">
+				<label class="opp-check">
+					<input id="opp-filter-focus" type="checkbox" />
+					<span>My focus only (Software/Cloud/AI/Cyber/Data)</span>
+				</label>
+				<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
+			</div>
 		</div>
 	</section>
 
 	<section class="opp-grid mt-4">
-		<article class="card p-4">
+		<article class="card p-4 opp-viz-card opp-viz-card-gems">
 			<h2 class="opp-subtitle">Gem picks (ranked)</h2>
 			<p class="opp-subcopy">Highest combined score from weight, due urgency, focus fit, and repeat signal across events.</p>
 			<ol id="opp-gem-list" class="opp-gem-list"></ol>
 		</article>
 
-		<article class="card p-4">
+		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Urgency distribution</h2>
 			<div id="opp-viz-urgency" class="opp-bars"></div>
 		</article>
 
-		<article class="card p-4">
+		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Notice type mix</h2>
 			<div id="opp-viz-types" class="opp-bars"></div>
 		</article>
 
-		<article class="card p-4">
+		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Top agencies</h2>
 			<div id="opp-viz-agencies" class="opp-bars"></div>
 		</article>
 
-		<article class="card p-4">
+		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Top NAICS</h2>
 			<div id="opp-viz-naics" class="opp-bars"></div>
 		</article>
 
-		<article class="card p-4">
+		<article class="card p-4 opp-viz-card opp-viz-card-wide">
 			<h2 class="opp-subtitle">Due timeline (next 6 months)</h2>
 			<div id="opp-viz-timeline" class="opp-bars"></div>
 		</article>
 	</section>
 
-	<section class="card mt-4 p-4">
+	<section class="card control-shell mt-4 p-4">
 		<div class="opp-table-head">
 			<h2 class="opp-subtitle">Opportunity mirror table</h2>
 			<span id="opp-table-count" class="opp-subcopy">0 rows</span>
@@ -591,6 +599,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-header-row {
 		display: flex;
 		justify-content: space-between;
+		align-items: flex-start;
 		gap: 1rem;
 		flex-wrap: wrap;
 	}
@@ -606,126 +615,168 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		height: 1.9rem;
 		padding: 0 0.75rem;
 		border: 1px solid rgba(45, 212, 191, 0.48);
-		background: rgba(45, 212, 191, 0.12);
+		background: rgba(45, 212, 191, 0.1);
 		color: rgba(240, 253, 250, 0.97);
 		text-decoration: none;
-		font-size: 0.75rem;
+		font-size: 0.73rem;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
 	}
 	.opp-link-btn:hover {
-		background: rgba(45, 212, 191, 0.2);
+		background: rgba(45, 212, 191, 0.18);
 	}
 	.opp-fresh {
-		font-size: 0.72rem;
+		font-size: 0.71rem;
 		color: rgba(148, 163, 184, 0.95);
+		white-space: nowrap;
 	}
 	.opp-kpis {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-		gap: 0.55rem;
+		grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+		gap: 0.48rem;
 	}
 	.opp-kpi {
-		border: 1px solid rgba(51, 65, 85, 0.85);
-		background: rgba(2, 6, 23, 0.8);
-		padding: 0.5rem 0.65rem;
+		border: 1px solid rgba(51, 65, 85, 0.88);
+		background: rgba(2, 6, 23, 0.82);
+		padding: 0.46rem 0.6rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
-		gap: 0.6rem;
+		gap: 0.56rem;
 	}
 	.opp-kpi-label {
-		font-size: 0.66rem;
-		letter-spacing: 0.04em;
+		font-size: 0.62rem;
+		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: rgba(148, 163, 184, 0.95);
 	}
 	.opp-kpi strong {
-		font-size: 1rem;
-		color: rgba(236, 253, 245, 0.97);
+		font-size: 0.96rem;
+		color: rgba(236, 253, 245, 0.98);
+		font-variant-numeric: tabular-nums;
 	}
-	.opp-controls {
+
+	.opp-controls-shell {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-		gap: 0.6rem;
+		gap: 0.72rem;
 	}
-	.opp-controls label {
+	.opp-controls-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+	}
+	.opp-controls-grid {
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		gap: 0.5rem;
+	}
+	.opp-field {
+		grid-column: span 2;
 		display: flex;
 		flex-direction: column;
-		gap: 0.28rem;
-		font-size: 0.67rem;
+		gap: 0.24rem;
+		font-size: 0.62rem;
 		color: rgba(148, 163, 184, 0.95);
-		letter-spacing: 0.04em;
+		letter-spacing: 0.06em;
 		text-transform: uppercase;
 	}
+	.opp-field-search {
+		grid-column: span 2;
+	}
 	.opp-input {
-		height: 2rem;
+		height: 1.95rem;
 		border: 1px solid rgba(71, 85, 105, 0.9);
 		background: rgba(2, 6, 23, 0.9);
 		color: rgba(226, 232, 240, 0.98);
-		padding: 0 0.55rem;
-		font-size: 0.78rem;
+		padding: 0 0.5rem;
+		font-size: 0.76rem;
 		text-transform: none;
 		letter-spacing: normal;
 	}
+	.opp-input::placeholder {
+		color: rgba(148, 163, 184, 0.75);
+	}
+	.opp-controls-actions {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+		border-top: 1px solid rgba(51, 65, 85, 0.62);
+		padding-top: 0.5rem;
+	}
 	.opp-check {
-		display: flex !important;
-		flex-direction: row !important;
+		display: inline-flex;
 		align-items: center;
 		gap: 0.45rem;
-		padding-top: 1.15rem;
-		letter-spacing: normal !important;
-		text-transform: none !important;
-		font-size: 0.72rem !important;
-		color: rgba(203, 213, 225, 0.96) !important;
+		font-size: 0.72rem;
+		letter-spacing: normal;
+		text-transform: none;
+		color: rgba(203, 213, 225, 0.96);
 	}
 	.opp-reset {
-		margin-top: 1.15rem;
-		height: 2rem;
+		height: 1.95rem;
+		padding: 0 0.75rem;
 		border: 1px solid rgba(71, 85, 105, 0.88);
 		background: rgba(15, 23, 42, 0.72);
 		color: rgba(226, 232, 240, 0.96);
-		font-size: 0.74rem;
+		font-size: 0.73rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
 	}
 	.opp-reset:hover {
 		background: rgba(30, 41, 59, 0.9);
 	}
+
 	.opp-grid {
 		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 0.75rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.6rem;
+	}
+	.opp-viz-card {
+		min-height: 10rem;
+	}
+	.opp-viz-card-gems {
+		grid-column: span 2;
+	}
+	.opp-viz-card-wide {
+		grid-column: span 2;
 	}
 	.opp-subtitle {
-		font-size: 0.82rem;
-		letter-spacing: 0.05em;
+		font-size: 0.78rem;
+		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: rgba(226, 232, 240, 0.98);
 	}
 	.opp-subcopy {
-		margin-top: 0.35rem;
-		font-size: 0.7rem;
+		margin-top: 0.3rem;
+		font-size: 0.69rem;
 		color: rgba(148, 163, 184, 0.95);
 	}
 	.opp-gem-list {
-		margin-top: 0.55rem;
+		margin-top: 0.48rem;
 		display: grid;
-		gap: 0.4rem;
+		gap: 0.36rem;
 		padding-left: 0;
 		list-style: none;
 	}
 	.opp-gem-list li {
 		display: grid;
-		gap: 0.2rem;
-		padding: 0.35rem 0.45rem;
+		gap: 0.16rem;
+		padding: 0.32rem 0.42rem;
 		border: 1px solid rgba(51, 65, 85, 0.72);
-		background: rgba(2, 6, 23, 0.75);
+		background: rgba(2, 6, 23, 0.78);
 	}
 	.opp-gem-tier {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		width: fit-content;
-		padding: 0.05rem 0.3rem;
-		font-size: 0.6rem;
-		letter-spacing: 0.04em;
+		padding: 0.04rem 0.28rem;
+		font-size: 0.58rem;
+		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		border: 1px solid rgba(71, 85, 105, 0.85);
 	}
@@ -745,29 +796,29 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		background: rgba(71, 85, 105, 0.24);
 	}
 	.opp-gem-meta {
-		font-size: 0.66rem;
+		font-size: 0.64rem;
 		color: rgba(148, 163, 184, 0.95);
 	}
 	.opp-bars {
-		margin-top: 0.55rem;
+		margin-top: 0.5rem;
 		display: grid;
-		gap: 0.33rem;
+		gap: 0.28rem;
 	}
 	.opp-bar-row {
 		display: grid;
-		grid-template-columns: minmax(7rem, 1fr) minmax(8rem, 2fr) auto;
-		gap: 0.4rem;
+		grid-template-columns: minmax(7rem, 1fr) minmax(7.5rem, 2fr) auto;
+		gap: 0.36rem;
 		align-items: center;
 	}
 	.opp-bar-label {
-		font-size: 0.67rem;
+		font-size: 0.66rem;
 		color: rgba(203, 213, 225, 0.96);
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
 	.opp-bar-track {
-		height: 0.56rem;
+		height: 0.52rem;
 		border: 1px solid rgba(71, 85, 105, 0.85);
 		background: rgba(15, 23, 42, 0.75);
 	}
@@ -777,11 +828,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		background: rgba(45, 212, 191, 0.58);
 	}
 	.opp-bar-value {
-		font-size: 0.66rem;
+		font-size: 0.64rem;
 		color: rgba(148, 163, 184, 0.95);
-		min-width: 1.75rem;
+		min-width: 1.7rem;
 		text-align: right;
 	}
+
 	.opp-table-head {
 		display: flex;
 		justify-content: space-between;
@@ -798,21 +850,30 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-table {
 		width: 100%;
 		border-collapse: collapse;
-		font-size: 0.72rem;
+		font-size: 0.71rem;
 	}
 	.opp-table th,
 	.opp-table td {
-		padding: 0.34rem 0.4rem;
+		padding: 0.34rem 0.38rem;
 		border-bottom: 1px solid rgba(51, 65, 85, 0.45);
 		vertical-align: top;
+	}
+	.opp-table tbody tr:nth-child(even) {
+		background: rgba(15, 23, 42, 0.26);
+	}
+	.opp-table tbody tr:hover {
+		background: rgba(30, 41, 59, 0.45);
 	}
 	.opp-table th {
 		position: sticky;
 		top: 0;
 		z-index: 2;
-		background: rgba(15, 23, 42, 0.96);
+		background: rgba(15, 23, 42, 0.97);
 		color: rgba(226, 232, 240, 0.96);
 		text-align: left;
+		font-size: 0.65rem;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
 	}
 	.opp-table td {
 		color: rgba(203, 213, 225, 0.96);
@@ -832,9 +893,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-gem-chip {
 		display: inline-flex;
-		min-width: 2.3rem;
+		min-width: 2.2rem;
 		justify-content: center;
-		padding: 0.04rem 0.25rem;
+		padding: 0.04rem 0.23rem;
 		border: 1px solid rgba(250, 204, 21, 0.68);
 		background: rgba(250, 204, 21, 0.12);
 		color: rgba(254, 240, 138, 0.98);
@@ -848,10 +909,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-pill {
 		display: inline-flex;
 		align-items: center;
-		padding: 0.04rem 0.25rem;
+		padding: 0.04rem 0.24rem;
 		border: 1px solid rgba(71, 85, 105, 0.82);
 		background: rgba(15, 23, 42, 0.64);
-		font-size: 0.62rem;
+		font-size: 0.61rem;
 		color: rgba(203, 213, 225, 0.95);
 		white-space: nowrap;
 		max-width: 11rem;
@@ -864,21 +925,47 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		padding: 1.1rem 0.7rem !important;
 	}
 
-	@media (max-width: 1024px) {
+	@media (max-width: 1279px) {
+		.opp-controls-grid {
+			grid-template-columns: repeat(6, minmax(0, 1fr));
+		}
+		.opp-field,
+		.opp-field-search {
+			grid-column: span 2;
+		}
 		.opp-grid {
-			grid-template-columns: 1fr;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+		.opp-viz-card-gems,
+		.opp-viz-card-wide {
+			grid-column: span 2;
 		}
 	}
 
 	@media (max-width: 767px) {
-		.opp-controls {
+		.opp-controls-grid {
 			grid-template-columns: 1fr;
 		}
+		.opp-field,
+		.opp-field-search {
+			grid-column: span 1;
+		}
+		.opp-controls-actions {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+		.opp-grid {
+			grid-template-columns: 1fr;
+		}
+		.opp-viz-card-gems,
+		.opp-viz-card-wide {
+			grid-column: span 1;
+		}
 		.opp-table {
-			font-size: 0.68rem;
+			font-size: 0.67rem;
 		}
 		.opp-bar-row {
-			grid-template-columns: minmax(6rem, 1fr) minmax(7rem, 2fr) auto;
+			grid-template-columns: minmax(5.8rem, 1fr) minmax(6.2rem, 1.7fr) auto;
 		}
 	}
 </style>
