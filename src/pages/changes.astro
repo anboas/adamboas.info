@@ -27,12 +27,40 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.60',
+		date: '2026-02-27',
+		title: 'Opportunity Intelligence UI aligned to Events design language',
+		summary: 'Restructured Opportunity Intelligence into a tighter scan-first shell with consistent controls, denser visual cards, and improved table readability matching the Events polish baseline.',
+		impact: 'Opportunity triage now feels like the Events workflow: compact, consistent, and much faster to scan.',
+		current: true,
+		tags: ['opportunities', 'events', 'ux', 'design-system', 'platform'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Converted top sections to shared control-shell styling for design consistency with `/events`.',
+					'Restructured filter area into a unified scan-first control shell with grouped fields and dedicated action row.',
+					'Reflowed visualization cards to a denser 3-column layout with responsive spans for gem/timeline focus cards.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved typography, spacing, and hierarchy across KPI cards, filter controls, and analytics panels.',
+					'Added zebra/hover treatment for table rows and tighter numeric/readability styling for scan speed.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.59',
 		date: '2026-02-27',
 		title: 'Opportunity Intelligence mirror launched with rendering + CI hardening',
 		summary: 'Shipped a new `/opportunities` intelligence surface with full filtering, ranked gem detection, and visual analytics across cached SAM opportunity data; then patched rendering and deploy blockers.',
 		impact: 'You can now scan and triage opportunities directly from one page, while CI/deploy reliability was tightened to keep dev pages moving.',
-		current: true,
 		tags: ['events', 'opportunities', 'sam', 'ux', 'platform', 'ci'],
 		groups: [
 			{
