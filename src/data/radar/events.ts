@@ -13873,4 +13873,1313 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Source page publishes date/time and registration URL; venue is listed as "Will be announced soon." No public government contact, notice type, agency owner, solicitation number, response deadline, or registration deadline was published as of 2026-02-26.'
 		}
 	},
+
+	{
+		id: 'radar-afa-warfare-symposium-2026',
+		title: 'AFA Warfare Symposium 2026',
+		description: 'USAF & USSF senior leaders, force design, NGAD, CCA, space systems',
+		startDate: '2026-02-23',
+		endDate: '2026-02-25',
+		branch: 'Air Force / Space Force',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Aurora',
+			state: 'CO',
+			country: 'USA',
+			lat: 39.7405111,
+			lng: -104.830994
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['warfare', 'symposium', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Major event - 4,000+ attendees'
+		}
+	},
+	{
+		id: 'radar-deps-hel-symposium-2',
+		title: 'DEPS HEL Symposium',
+		description: 'Directed energy, high energy lasers',
+		startDate: '2026-03-01',
+		endDate: '2026-04-30',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'Tucson',
+			state: 'AZ',
+			country: 'USA',
+			lat: 32.2228765,
+			lng: -110.974847
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['deps', 'symposium'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4200
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
+	{
+		id: 'radar-same-san-juan-industry-day-2',
+		title: 'SAME San Juan Industry Day',
+		description: 'SAME San Juan Post. All SAD districts attend. Caribbean, construction, A/E services.',
+		startDate: '2026-03-02',
+		endDate: '2026-03-06',
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'San Juan',
+			state: 'PR',
+			country: 'USA',
+			lat: 18.465299,
+			lng: -66.116666
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['same', 'juan', 'industry'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-cyberbay-summit-2',
+		title: 'CyberBay Summit',
+		description: 'Cybersecurity/national security convergence, SOCOM & CENTCOM leadership',
+		startDate: '2026-03-11',
+		endDate: '2026-03-13',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Tampa',
+			state: 'FL',
+			country: 'USA',
+			lat: 27.9449854,
+			lng: -82.4583107
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['cyberbay', 'summit'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Emerging event'
+		}
+	},
+	{
+		id: 'radar-same-charleston-post-industry-day-2026-2',
+		title: 'SAME Charleston Post Industry Day 2026',
+		description: 'USACE Charleston District. Day 1: Golf tournament + sunset boat cruise. Day 2: Full industry day with speakers, networking, happy hour.',
+		startDate: '2026-03-18',
+		endDate: '2026-03-19',
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Charleston',
+			state: 'SC',
+			country: 'USA',
+			lat: 32.7884363,
+			lng: -79.9399309
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['same', 'charleston', 'post', 'industry'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Charleston Marriott, 170 Lockwood Blvd. Boat cruise included with ticket.'
+		}
+	},
+	{
+		id: 'radar-satshow-satellite-2026-2',
+		title: 'SATShow / SATELLITE 2026',
+		description: 'Satellite communications, space technology, GovMilSpace',
+		startDate: '2026-03-23',
+		endDate: '2026-03-26',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['satshow', 'satellite', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 150,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'World\'s largest satellite/space communications event. 15,000+ registrants, 450+ exhibitors. Walter E. Washington Convention Center.'
+		}
+	},
+	{
+		id: 'radar-ausa-global-force-2026',
+		title: 'AUSA Global Force 2026',
+		description: 'Army modernization: R&D, acquisition, contracting, sustainment, OIB',
+		startDate: '2026-03-24',
+		endDate: '2026-03-26',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Huntsville',
+			state: 'AL',
+			country: 'USA',
+			lat: 34.729847,
+			lng: -86.5859011
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ausa', 'global', 'force', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Premier Army event - must attend'
+		}
+	},
+	{
+		id: 'radar-qsecdef-world-symposium-2',
+		title: 'QSECDEF World Symposium',
+		description: 'Inaugural quantum security for defense, quantum-secure communications',
+		startDate: '2026-03-24',
+		endDate: null,
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'High',
+		location: 
+		{
+			city: 'Paris',
+			country: 'France',
+			lat: 48.8534951,
+			lng: 2.3483915
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['qsecdef', 'world', 'symposium'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4200
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
+	{
+		id: 'radar-robins-requirements-symposium-2',
+		title: 'Robins Requirements Symposium',
+		description: 'WR-ALC requirements, sustainment pipeline',
+		startDate: '2026-03-26',
+		endDate: null,
+		branch: 'Air Force / Space Force',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Warner Robins',
+			state: 'GA',
+			country: 'USA',
+			lat: 32.6200973,
+			lng: -83.606568
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['robins', 'requirements', 'symposium'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-defense-manufacturing-conference-2026-2',
+		title: 'Defense Manufacturing Conference 2026',
+		description: 'Nation\'s annual forum for defense manufacturing. 1,500+ attendees. JDMTP and ARCTOS. Engineers, managers, tech leaders, scientists, policymakers. Rescheduled from Dec 2025 due to gov shutdown.',
+		startDate: '2026-03-30',
+		endDate: '2026-04-02',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Orlando',
+			state: 'FL',
+			country: 'USA',
+			lat: 28.3600587,
+			lng: -81.4934624
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['defense', 'manufacturing', 'conference', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'All paid registrations transferred. Hotel booking open.'
+		}
+	},
+	{
+		id: 'radar-chicago-district-usace-industry-outreach-open-house-2',
+		title: 'Chicago District USACE Industry Outreach Open House',
+		description: 'Chicago District contracting opportunities, Great Lakes & Ohio River Division',
+		startDate: '2026-04-01',
+		endDate: null,
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Chicago',
+			state: 'IL',
+			country: 'USA',
+			lat: 41.8755616,
+			lng: -87.6244212
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['chicago', 'district', 'usace', 'industry'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-space-symposium-2026-2',
+		title: 'Space Symposium 2026',
+		description: 'Space industry, military space programs, USSF priorities',
+		startDate: '2026-04-13',
+		endDate: '2026-04-16',
+		branch: 'Air Force / Space Force',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Colorado Springs',
+			state: 'CO',
+			country: 'USA',
+			lat: 38.8339578,
+			lng: -104.825348
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['space', 'symposium', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: '41st Space Symposium. The Broadmoor & Cheyenne Mountain Resort. 12,000+ attendees from 60+ countries.'
+		}
+	},
+	{
+		id: 'radar-army-aviation-mission-solutions-summit-2026-quad-a-2',
+		title: 'Army Aviation Mission Solutions Summit 2026 (Quad-A)',
+		description: 'PEO Aviation, FVL/FLRAA, sustainment, UAS, rotary wing modernization',
+		startDate: '2026-04-14',
+		endDate: '2026-04-16',
+		branch: 'Army',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Nashville',
+			state: 'TN',
+			country: 'USA',
+			lat: 36.1622767,
+			lng: -86.7742984
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['army', 'aviation', 'mission', 'solutions'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-same-fort-worth-post-industry-day-2026-2',
+		title: 'SAME Fort Worth Post Industry Day 2026',
+		description: 'Industry Government Engagement 2026. Day 1: Presentations at Round Up Inn. Day 2: One-on-One meetings at USACE Fort Worth District HQ.',
+		startDate: '2026-04-14',
+		endDate: '2026-04-15',
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Fort Worth',
+			state: 'TX',
+			country: 'USA',
+			lat: 32.753177,
+			lng: -97.3327459
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['same', 'fort', 'worth', 'post'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Primary presenter: USACE Fort Worth District. Fritz G. Lanham Federal Office Building (security checkpoint).'
+		}
+	},
+	{
+		id: 'radar-southeast-region-fedcon-usace-summit-2',
+		title: 'Southeast Region FEDCON USACE Summit',
+		description: 'Southeast region federal construction summit. NCMBC hosted. All USACE SAD districts attend.',
+		startDate: '2026-04-14',
+		endDate: '2026-04-16',
+		branch: 'USACE',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Wilmington',
+			state: 'NC',
+			country: 'USA',
+			lat: 34.2352853,
+			lng: -77.9487284
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['southeast', 'region', 'fedcon', 'usace'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-sacramento-district-usace-industry-day-2',
+		title: 'Sacramento District USACE Industry Day',
+		description: 'Sacramento District contracting opportunities, South Pacific Division',
+		startDate: '2026-04-16',
+		endDate: null,
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'Sacramento',
+			state: 'CA',
+			country: 'USA',
+			lat: 38.5810606,
+			lng: -121.493895
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['sacramento', 'district', 'usace', 'industry'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4200
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
+	{
+		id: 'radar-sea-air-space-2026-2',
+		title: 'Sea-Air-Space 2026',
+		description: 'Navy League global maritime exposition. CNO priorities, shipbuilding, undersea warfare',
+		startDate: '2026-04-19',
+		endDate: '2026-04-22',
+		branch: 'Navy',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: 
+		{
+			city: 'National Harbor',
+			state: 'MD',
+			country: 'USA',
+			lat: 38.783342,
+			lng: -77.0148285
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Navy stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['space', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 150,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Navy League\'s Global Maritime Exposition. Gaylord National Resort, National Harbor. 15,000+ attendees, 400+ exhibitors. STEM Expo Apr 19.'
+		}
+	},
+	{
+		id: 'radar-afcea-nova-innovation-it-day-2026-2',
+		title: 'AFCEA NOVA Innovation IT Day 2026',
+		description: 'IT innovation showcase, emerging tech',
+		startDate: '2026-04-27',
+		endDate: null,
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Reston',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.953282,
+			lng: -77.3464516
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['afcea', 'nova', 'innovation', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 150,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Carahsoft Technology HQ. 300+ expected registrants.'
+		}
+	},
+	{
+		id: 'radar-dod-small-business-training-week-2',
+		title: 'DoD Small Business Training Week',
+		description: 'DoD OSBP small business training and engagement',
+		startDate: '2026-05-01',
+		endDate: '2026-05-31',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'TBD',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35,
+			venue: 'TBD'
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['small', 'business', 'training', 'week'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-usace-national-dredging-meeting-2',
+		title: 'USACE National Dredging Meeting',
+		description: 'National dredging operations, all USACE divisions',
+		startDate: '2026-05-01',
+		endDate: '2026-05-31',
+		branch: 'USACE',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Atlanta',
+			state: 'GA',
+			country: 'USA',
+			lat: 33.7544657,
+			lng: -84.3898151
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['usace', 'national', 'dredging', 'meeting'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-huntington-district-usace-industry-outreach-open-house-2',
+		title: 'Huntington District USACE Industry Outreach Open House',
+		description: 'Huntington District opportunities, Great Lakes & Ohio River Division',
+		startDate: '2026-05-07',
+		endDate: null,
+		branch: 'USACE',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Huntington',
+			state: 'WV',
+			country: 'USA',
+			lat: 38.4192496,
+			lng: -82.445154
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['huntington', 'district', 'usace', 'industry'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			}
+		}
+	},
+	{
+		id: 'radar-sof-week-2026',
+		title: 'SOF Week 2026',
+		description: '15,000-20,000 attendees, 600+ exhibitors. New: The Outpost at Peter O. Knight Airport',
+		startDate: '2026-05-18',
+		endDate: '2026-05-21',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Tampa',
+			state: 'FL',
+			country: 'USA',
+			lat: 27.9449854,
+			lng: -82.4583107
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['week', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'Largest SOF event'
+		}
+	},
+	{
+		id: 'radar-afa-air-space-cyber-conference-2026',
+		title: 'AFA Air, Space & Cyber Conference 2026',
+		description: '~300 exhibitors. SECAF keynote, USAF/USSF leadership',
+		startDate: '2026-09-14',
+		endDate: '2026-09-16',
+		branch: 'Air Force / Space Force',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: 
+		{
+			city: 'National Harbor',
+			state: 'MD',
+			country: 'USA',
+			lat: 38.783342,
+			lng: -77.0148285
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['space', 'cyber', 'conference', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 150,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'AFA\'s premier fall conference'
+		}
+	},
+	{
+		id: 'radar-i-itsec-2026-2',
+		title: 'I/ITSEC 2026',
+		description: 'Interservice training, simulation & education conference',
+		startDate: '2026-11-30',
+		endDate: '2026-12-04',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Orlando',
+			state: 'FL',
+			country: 'USA',
+			lat: 28.5421218,
+			lng: -81.379045
+		},
+		ontology: 
+		{
+			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['itsec', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event week + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Government Guide conference tracker',
+				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: {},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 600,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'World\'s largest M&S/training conference. Orange County Convention Center. NTSA/NDIA. 16,000+ visitors.'
+		}
+	},
 ];

@@ -1,18 +1,13 @@
 # Radar Event Candidates (2026-02-13)
 
-Total candidates imported: 87
+Total candidates imported: 24
 
 ## Added events
 
-- AAAA Best Drone Warfighter Competition | Upcoming | 2026-02-17 to 2026-02-19 | Huntsville, AL
 - AFA Warfare Symposium 2026 | Upcoming | 2026-02-23 to 2026-02-25 | Aurora, CO
-- Detroit District USACE Business Open House | Upcoming | 2026-02-23 | Detroit, MI
-- SAME Mid-Atlantic Small Business Outreach + Industry Day | Upcoming | 2026-02-23 to 2026-02-25 | Virginia Beach, VA
-- USACE Albuquerque District Business Opportunities Open House | Upcoming | 2026-02-25 | Albuquerque, NM
 - DEPS HEL Symposium | Upcoming | 2026-03-01 to 2026-04-30 | Tucson, AZ
 - SAME San Juan Industry Day | Upcoming | 2026-03-02 to 2026-03-06 | San Juan, PR
 - CyberBay Summit | Upcoming | 2026-03-11 to 2026-03-13 | Tampa, FL
-- AFCEA NOVA Naval IT Day 2026 | Upcoming | 2026-03-12 | Chantilly, VA
 - SAME Charleston Post Industry Day 2026 | Upcoming | 2026-03-18 to 2026-03-19 | Charleston, SC
 - SATShow / SATELLITE 2026 | Upcoming | 2026-03-23 to 2026-03-26 | Washington, DC
 - AUSA Global Force 2026 | Upcoming | 2026-03-24 to 2026-03-26 | Huntsville, AL
@@ -27,69 +22,11 @@ Total candidates imported: 87
 - Sacramento District USACE Industry Day | Upcoming | 2026-04-16 | Sacramento, CA
 - Sea-Air-Space 2026 | Upcoming | 2026-04-19 to 2026-04-22 | National Harbor, MD
 - AFCEA NOVA Innovation IT Day 2026 | Upcoming | 2026-04-27 | Reston, VA
-- Modern Day Marine 2026 | Upcoming | 2026-04-28 to 2026-04-30 | Washington, DC
 - DoD Small Business Training Week | Upcoming | 2026-05-01 to 2026-05-31 | TBD
 - USACE National Dredging Meeting | Upcoming | 2026-05-01 to 2026-05-31 | Atlanta, GA
 - Huntington District USACE Industry Outreach Open House | Upcoming | 2026-05-07 | Huntington, WV
-- AUVSI XPONENTIAL 2026 | Upcoming | 2026-05-11 to 2026-05-14 | Detroit, MI
-- AUSA LANPAC 2026 | Upcoming | 2026-05-12 to 2026-05-14 | Honolulu, HI
-- AFCEA NOVA Space Force IT Day 2026 | Upcoming | 2026-05-12 | Chantilly, VA
-- New Orleans District USACE Industry Day 2026 | Upcoming | 2026-05-14 | New Orleans, LA
-- DEPS DE Test & Evaluation Conference | Upcoming | 2026-05-18 to 2026-05-21 | Albuquerque, NM
 - SOF Week 2026 | Upcoming | 2026-05-18 to 2026-05-21 | Tampa, FL
-- SAME JETC 2026 | Upcoming | 2026-05-19 to 2026-05-21 | Portland, OR
-- Cyber Industry Day at Fort Eisenhower | Upcoming | 2026-05-19 | Fort Eisenhower, GA
-- MSCoE Protection & Maneuver Support Industry Expo | Upcoming | 2026-05-19 to 2026-05-21 | Fort Leonard Wood, MO
-- US Women's Chamber Small Business Federal Summit | Upcoming | 2026-06-01 to 2026-06-30 | Charleston, SC
-- Dredging Summit and Expo 2026 (WEDA) | Upcoming | 2026-06-01 to 2026-07-31 | Las Vegas, NV
-- NDIA Future Force Capabilities Conference | Upcoming | 2026-06-08 to 2026-06-10 | Las Vegas, NV
-- Eurosatory 2026 | Upcoming | 2026-06-15 to 2026-06-19 | Paris
-- TSIS (Training & Simulation Industry Symposium) | Upcoming | 2026-06-17 to 2026-06-18 | Orlando, FL
-- SAME Savannah USACE Annual Program Review | Upcoming | 2026-06-24 to 2026-06-26 | Savannah, GA
-- National HUBZone Conference | Upcoming | 2026-07-01 to 2026-07-31 | Chantilly, VA
-- SAME DC & NoVA Small Business Conference | Upcoming | 2026-07-07 to 2026-07-08 | Washington, DC
-- DAFITC 2026 | Projected | 2026-08-01 to 2026-08-31 | Montgomery, AL
-- Power Up Energy Expo | Upcoming | 2026-08-01 to 2026-08-31 | Panama City, FL
-- Tinker and the Primes 2026 | Upcoming | 2026-08-04 to 2026-08-06 | Midwest City, OK
-- GVSETS 2026 (18th Annual) | Upcoming | 2026-08-11 to 2026-08-13 | Novi, MI
-- Space & Missile Defense Symposium 2026 | Upcoming | 2026-08-11 to 2026-08-13 | Huntsville, AL
-- GVSETS 2026 | Upcoming | 2026-08-11 to 2026-08-13 | Novi, MI
-- AFCEA TechNet Augusta 2026 | Upcoming | 2026-08-17 to 2026-08-20 | Augusta, GA
 - AFA Air, Space & Cyber Conference 2026 | Upcoming | 2026-09-14 to 2026-09-16 | National Harbor, MD
-- Defense TechConnect Innovation Summit 2026 | Upcoming | 2026-09-22 to 2026-09-24 | National Harbor, MD
-- MOSA Industry & Government Summit 2026 | Upcoming | 2026-09-22 to 2026-09-24 | National Harbor, MD
-- AUSA Annual Meeting 2026 | Upcoming | 2026-10-12 to 2026-10-14 | Washington, DC
-- Imagine Nation ELC 2026 | Upcoming | 2026-10-25 to 2026-10-27 | TBD
-- DEPS Annual Directed Energy Symposium | Upcoming | 2026-11-01 to 2026-11-30 | Monterey, CA
-- SAME SBC 2026 (Small Business Conference) | Upcoming | 2026-11-04 to 2026-11-06 | Charlotte, NC
 - I/ITSEC 2026 | Upcoming | 2026-11-30 to 2026-12-04 | Orlando, FL
-- SpaceCom / Space Congress 2027 | Projected | 2027-01-11 to 2027-01-14 | Orlando, FL
-- AA&S Conference 2026 | Needs Date | TBD | TBD
-- Advanced Manufacturing for Defense Summit 2026 | Needs Date | TBD | California, CA
-- AFA Warfare Symposium 2027 | Projected | TBD | Aurora, CO
-- AFLCMC Life Cycle Industry Days (LCID) 2026 | Needs Date | TBD | Dayton, OH
-- AFRL Classified Industry Day 2026 | Needs Date | TBD | Wright-Patterson AFB, OH
-- AGC FedCon 2026 | Needs Date | TBD | TBD
-- AIAA Aviation 2026 | Needs Date | TBD | TBD
-- Armored Vehicles 2026 | Needs Date | TBD | Detroit, MI
-- AUSA Annual Meeting 2027 | Projected | TBD | Washington, DC
-- AUSA Global Force 2027 | Projected | TBD | Huntsville, AL
-- Autonomy in Defense 2026 | Needs Date | TBD | TBD
-- CCAD Depot Forum 2026 | Needs Date | TBD | Corpus Christi, TX
-- CTMA Partners Meeting 2026 (NCMS) | Needs Date | TBD | TBD (Jacksonville, FL
-- Dayton Digital Transformation 2026 | Needs Date | TBD | Dayton, OH
-- DoDIIS Worldwide Conference 2026 | Needs Date | TBD | TBD
-- Future Indirect Fires Conference 2027 | Projected | TBD | TBD
-- Hypersonic Technology & Systems Conference | Needs Date | TBD | TBD
-- Letterkenny Modernization Industry Day 2026 | Needs Date | TBD | Chambersburg, PA
-- MILSATCOM 2026 | Needs Date | TBD | Arlington, VA
-- PEO Aviation UAS Industry Days 2026 | Needs Date | TBD | Huntsville, AL
-- Pine Bluff Arsenal Industry Day 2026 | Needs Date | TBD | White Hall, AR
-- Realize LIVE 2026 (Siemens) | Needs Date | TBD | TBD (Detroit, MI
-- SASPO Robins AFB Industry Day 2026 | Needs Date | TBD | Warner Robins, GA
-- SE Defense Procurement Conference 2026 | Needs Date | TBD | Atlanta, GA
-- Sea-Air-Space 2027 | Projected | TBD | National Harbor, MD
-- Tri-Regional JETS 2026 (SAME Jacksonville) | Needs Date | TBD | TBD (Jacksonville, FL
-- VETS Conference 2026 | Needs Date | TBD | TBD (Orlando, FL
 
 Source: https://jbenton1.github.io/government-guide/conference-tracker/
