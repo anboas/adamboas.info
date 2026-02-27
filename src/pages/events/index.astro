@@ -1122,7 +1122,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												<table class="radar-intel-table" data-sam-table data-event-id={event.id}>
 													<thead>
 														<tr>
-															<th>Weight</th>
+															<th class="radar-col-weight">Weight</th>
 															<th>Solicitation name</th>
 															<th>Type</th>
 															<th>Posted</th>
@@ -1131,23 +1131,21 @@ function acquisitionReferences(event: (typeof events)[number]) {
 															<th>Agency</th>
 															<th>Overlap</th>
 															<th>Tags</th>
-															<th>Notice</th>
 														</tr>
 													</thead>
 													<tbody>
 														{samTopNotices(event).map((notice) => (
 															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()} data-tags={noticeFocusTags(notice).map((tag) => tag.key).join(',')}>
-																<td>{notice.score ?? 0}</td>
-																<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
+															<td class="radar-col-weight">{notice.score ?? 0}</td>
+															<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
 															<td>{notice.noticeType}</td>
-																<td>{notice.postedDate ?? '—'}</td>
-																<td>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>
-																<td>{notice.solicitationNumber ?? '—'}</td>
-																<td>{notice.agencyPath ?? '—'}</td>
-																<td>{noticeOverlapStakeholders(event, notice).length ? noticeOverlapStakeholders(event, notice).join(', ') : '—'}</td>
-																<td><div class="radar-intel-tags">{noticeFocusTags(notice).map((tag) => <span class="radar-pill radar-sam-tag" title={tag.key}>{tag.label}</span>)}</div></td>
-																<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.noticeId}</a> : <span>{notice.noticeId}</span>}</td>
-															</tr>
+															<td>{notice.postedDate ?? '—'}</td>
+															<td>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>
+															<td>{notice.solicitationNumber ?? '—'}</td>
+															<td>{notice.agencyPath ?? '—'}</td>
+															<td>{noticeOverlapStakeholders(event, notice).length ? noticeOverlapStakeholders(event, notice).join(', ') : '—'}</td>
+															<td><div class="radar-intel-tags">{noticeFocusTags(notice).map((tag) => <span class="radar-pill radar-sam-tag" title={tag.key}>{tag.label}</span>)}</div></td>
+														</tr>
 														))}
 													</tbody>
 												</table>
@@ -3383,6 +3381,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 	.radar-intel-table td {
 		color: rgba(203, 213, 225, 0.95);
+	}
+	.radar-col-weight {
+		text-align: center !important;
+		white-space: nowrap;
+		font-variant-numeric: tabular-nums;
 	}
 	.radar-inline-select {
 		min-width: 11rem;
