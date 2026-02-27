@@ -27,12 +27,39 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.63',
+		date: '2026-02-27',
+		title: 'Opportunities visuals streamlined for signal density',
+		summary: 'Removed underperforming/redundant charts from `/opportunities` to keep the analytics surface focused on high-signal views that support fast exploration.',
+		impact: 'You get a cleaner cockpit with fewer dead or overlapping visuals and faster scan-to-insight behavior.',
+		current: true,
+		tags: ['opportunities', 'analytics', 'ux', 'visualization', 'events'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `Gem score vs due pressure` chart from `/opportunities`.',
+					'Removed `Due timeline` chart to avoid overlap with urgency distribution.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Reduced visual redundancy so remaining charts carry clearer analytical intent.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+
+	{
 		version: 'v2.3.62',
 		date: '2026-02-27',
 		title: 'Opportunities upgraded into interactive analytics cockpit',
 		summary: 'Expanded `/opportunities` with richer interactive visual analytics using ECharts: clickable agency/NAICS distributions, due-pressure scatter analysis, and upgraded timeline rendering.',
 		impact: 'You can now explore patterns by clicking charts directly and instantly pivot the table for deeper analysis.',
-		current: true,
 		tags: ['opportunities', 'analytics', 'visualization', 'ux', 'events'],
 		groups: [
 			{

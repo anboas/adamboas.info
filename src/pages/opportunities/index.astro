@@ -250,16 +250,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div id="opp-viz-naics" class="opp-chart"></div>
 		</article>
 
-		<article class="card p-4 opp-viz-card opp-viz-card-wide">
-			<h2 class="opp-subtitle">Gem score vs due pressure</h2>
-			<p class="opp-subcopy">Bubble size = weight. Click a point to focus that solicitation.</p>
-			<div id="opp-viz-scatter" class="opp-chart opp-chart-tall"></div>
-		</article>
-
-		<article class="card p-4 opp-viz-card opp-viz-card-wide">
-			<h2 class="opp-subtitle">Due timeline (next 6 months)</h2>
-			<div id="opp-viz-timeline" class="opp-chart"></div>
-		</article>
 	</section>
 
 	<section class="card control-shell mt-4 p-4">
@@ -339,8 +329,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				types: document.getElementById('opp-viz-types'),
 				agencies: document.getElementById('opp-viz-agencies'),
 				naics: document.getElementById('opp-viz-naics'),
-				scatter: document.getElementById('opp-viz-scatter'),
-				timeline: document.getElementById('opp-viz-timeline'),
 			};
 
 			const charts = {
@@ -348,8 +336,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				types: null,
 				agencies: null,
 				naics: null,
-				scatter: null,
-				timeline: null,
 			};
 
 			const initChart = (key, node) => {
@@ -642,71 +628,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				} else {
 					renderBars(el.naics, byNaics, 'No NAICS tags');
 				}
-
-				const scatterData = items
-					.filter((row) => row.dueDays !== null)
-					.slice(0, 240)
-					.map((row) => ({
-						name: row.title,
-						value: [row.dueDays, Math.round(row.gemScore), Number(row.weight || 0), row.noticeType, row.uiLink || '', row.solicitationNumber || ''],
-					}));
-				const scatterChart = initChart('scatter', el.scatter);
-				if (scatterChart) {
-					scatterChart.setOption({
-						animationDuration: 220,
-						grid: { top: 12, right: 12, bottom: 28, left: 44 },
-						xAxis: { type: 'value', name: 'days to due', nameTextStyle: { color: '#94a3b8', fontSize: 10 }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						yAxis: { type: 'value', name: 'gem', nameTextStyle: { color: '#94a3b8', fontSize: 10 }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{
-							type: 'scatter',
-							data: scatterData,
-							symbolSize: (val) => Math.max(6, Math.min(20, Number(val?.[2] || 0) * 0.9)),
-							itemStyle: { color: '#22c55e', opacity: 0.78 },
-						}],
-						tooltip: {
-							formatter: (p) => {
-								const v = p.value || [];
-								return `<strong>${escapeHtml(p.name || '')}</strong><br/>gem: ${v[1]} | weight: ${v[2]}<br/>due in: ${v[0]}d<br/>${escapeHtml(v[3] || '')}`;
-							},
-						},
-					});
-					if (!scatterChart.__boundClick) {
-						scatterChart.on('click', (params) => {
-							if (el.search) el.search.value = params.name || '';
-							tableState.page = 1;
-							render();
-						});
-						scatterChart.__boundClick = true;
-					}
-				}
-
-				const monthBuckets = new Map();
-				for (const row of items) {
-					if (row.dueDays === null || row.dueDays < 0 || row.dueDays > 186) continue;
-					const d = new Date(row.responseDueDate);
-					const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
-					monthBuckets.set(key, (monthBuckets.get(key) || 0) + 1);
-				}
-				const timeline = [...monthBuckets.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([key, value]) => {
-					const [y, m] = key.split('-').map(Number);
-					const dt = new Date(y, m - 1, 1);
-					const label = dt.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
-					return [label, value];
-				});
-				const timelineChart = initChart('timeline', el.timeline);
-				if (timelineChart) {
-					timelineChart.setOption({
-						animationDuration: 220,
-						grid: { top: 12, right: 12, bottom: 22, left: 36 },
-						xAxis: { type: 'category', data: timeline.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 10 } },
-						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{ type: 'line', smooth: true, data: timeline.map(([, value]) => value), symbolSize: 7, lineStyle: { width: 2, color: '#06b6d4' }, areaStyle: { color: 'rgba(6,182,212,0.17)' }, itemStyle: { color: '#06b6d4' } }],
-						tooltip: { trigger: 'axis' },
-					});
-				} else {
-					renderBars(el.timeline, timeline, 'No near-term due timeline');
-				}
-			};
 
 			const dueClass = (row) => {
 				if (row.dueDays === null) return '';
