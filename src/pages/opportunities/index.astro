@@ -628,6 +628,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				} else {
 					renderBars(el.naics, byNaics, 'No NAICS tags');
 				}
+			};
 
 			const dueClass = (row) => {
 				if (row.dueDays === null) return '';
