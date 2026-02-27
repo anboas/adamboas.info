@@ -2827,12 +2827,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	:global(.radar-cal-body) {
 		max-height: 2200px;
 		opacity: 1;
-		overflow: hidden;
+		overflow: visible;
 		transition: max-height 220ms ease, opacity 180ms ease;
 	}
 	:global(.radar-cal-body.is-collapsed) {
 		max-height: 0;
 		opacity: 0;
+		overflow: hidden;
 		pointer-events: none;
 		margin-top: 0;
 	}
@@ -2983,28 +2984,28 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		display: none;
 		position: absolute;
 		left: -1px;
-		top: calc(100% + 0.26rem);
-		z-index: 40;
+		bottom: calc(100% + 0.26rem);
+		z-index: 140;
 		pointer-events: none;
 		min-width: 13rem;
 		max-width: min(26rem, 82vw);
-		padding: 0.38rem 0.48rem;
-		border: 1px solid rgba(100, 116, 139, 0.92);
-		background: rgba(2, 6, 23, 0.98);
-		box-shadow: 0 10px 24px rgba(0, 0, 0, 0.42);
+		padding: 0.42rem 0.52rem;
+		border: 1px solid rgba(148, 163, 184, 0.95);
+		background: rgba(15, 23, 42, 0.99);
+		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.58);
 		white-space: normal;
-		line-height: 1.24;
+		line-height: 1.28;
 	}
 	:global(.radar-cal-tooltip::before) {
 		content: '';
 		position: absolute;
 		left: 0.45rem;
-		top: -0.32rem;
+		bottom: -0.32rem;
 		width: 0.56rem;
 		height: 0.56rem;
-		border-left: 1px solid rgba(100, 116, 139, 0.92);
-		border-top: 1px solid rgba(100, 116, 139, 0.92);
-		background: rgba(2, 6, 23, 0.98);
+		border-right: 1px solid rgba(148, 163, 184, 0.95);
+		border-bottom: 1px solid rgba(148, 163, 184, 0.95);
+		background: rgba(15, 23, 42, 0.99);
 		transform: rotate(45deg);
 	}
 	:global(.radar-cal-tooltip-title) {
@@ -3021,7 +3022,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 	:global(.radar-cal-bar:hover .radar-cal-tooltip),
 	:global(.radar-cal-bar:focus-visible .radar-cal-tooltip),
-	:global(.radar-cal-bar:focus-within .radar-cal-tooltip) {
+	:global(.radar-cal-bar:focus-within .radar-cal-tooltip),
+	:global(.radar-cal-bar:active .radar-cal-tooltip) {
 		display: block;
 	}
 	:global(.radar-cal-bar.is-attending) {
@@ -3838,7 +3840,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			padding: 0.08rem 0.22rem;
 		}
 		:global(.radar-cal-tooltip) {
-			display: none !important;
+			min-width: 9.5rem;
+			max-width: min(18rem, 92vw);
+			font-size: 0.62rem;
 		}
 		:global(.radar-cal-legend-chip[data-tooltip]::after),
 		:global(.radar-cal-legend-chip[data-tooltip]::before) {
