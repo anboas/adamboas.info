@@ -4,6 +4,7 @@ import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
+import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
 
 type OpportunityRow = {
 	key: string;
@@ -49,6 +50,7 @@ function toArray(set: Set<string>) {
 const opportunityMap = new Map<string, OpportunityRow>();
 let totalRawNotices = 0;
 let eventsWithSam = 0;
+let samGlobalRawNotices = 0;
 
 for (const event of radarEventsSeed) {
 	const sam = samIntel(event);
@@ -99,6 +101,54 @@ for (const event of radarEventsSeed) {
 	}
 }
 
+for (const candidate of (samOpportunitiesFeed as any[])) {
+	samGlobalRawNotices += 1;
+	const notice = {
+		noticeId: candidate.notice_id ?? null,
+		title: candidate.title ?? 'Untitled notice',
+		noticeType: candidate.notice_type ?? 'Unknown',
+		postedDate: candidate.posted_date ?? null,
+		responseDueDate: candidate.response_deadline ?? null,
+		solicitationNumber: candidate.solicitation_number ?? null,
+		agencyPath: candidate.agency_path ?? null,
+		naicsCode: null,
+		classificationCode: null,
+		uiLink: candidate.ui_link ?? candidate.opportunity_url ?? null,
+		score: Number(candidate.relevance_score ?? 0),
+	};
+	const key = noticeKey(notice);
+	if (!opportunityMap.has(key)) {
+		opportunityMap.set(key, {
+			key,
+			noticeId: notice.noticeId,
+			title: notice.title,
+			noticeType: notice.noticeType,
+			postedDate: notice.postedDate,
+			responseDueDate: notice.responseDueDate,
+			solicitationNumber: notice.solicitationNumber,
+			agencyPath: notice.agencyPath,
+			naicsCode: notice.naicsCode,
+			classificationCode: notice.classificationCode,
+			uiLink: notice.uiLink,
+			weight: Number(notice.score ?? 0),
+			eventIds: new Set<string>(),
+			eventTitles: new Set<string>(),
+			branches: new Set<string>(),
+			capabilityAreas: new Set<string>(),
+			missionThreads: new Set<string>(),
+		});
+	}
+	const row = opportunityMap.get(key)!;
+	row.weight = Math.max(row.weight, Number(notice.score ?? 0));
+	row.noticeId = row.noticeId ?? notice.noticeId;
+	row.postedDate = row.postedDate ?? notice.postedDate;
+	row.responseDueDate = row.responseDueDate ?? notice.responseDueDate;
+	row.solicitationNumber = row.solicitationNumber ?? notice.solicitationNumber;
+	row.agencyPath = row.agencyPath ?? notice.agencyPath;
+	row.uiLink = row.uiLink ?? notice.uiLink;
+	row.branches.add('SAM Global');
+}
+
 const opportunities = [...opportunityMap.values()]
 	.map((row) => ({
 		key: row.key,
@@ -141,7 +191,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		<div class="opp-header-row">
 			<div>
 				<h1 class="section-title">Opportunity Intelligence</h1>
-				<p class="mt-3 text-sm text-slate-300">A live mirror of SAM opportunity intelligence captured through the event-enrichment pipeline.</p>
+				<p class="mt-3 text-sm text-slate-300">A live mirror of SAM opportunity intelligence, including broad SAM feed ingestion plus event-linked enrichment.</p>
 			</div>
 			<div class="opp-header-actions">
 				<a class="opp-link-btn" href={withBase('/events/')}>Open Events</a>
@@ -154,14 +204,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-kpi"><span class="opp-kpi-label">Displayed</span><strong id="opp-kpi-displayed">{opportunities.length}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Gem candidates</span><strong id="opp-kpi-gems">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Events with SAM cache</span><strong>{eventsWithSam}</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices}</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
 		</div>
 	</section>
 
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-controls-shell">
 			<div class="opp-controls-head">
-				<h2 class="opp-subtitle">Filter opportunity mirror</h2>
+				<h2 class="opp-subtitle">Filter opportunity intelligence</h2>
 				<p class="opp-subcopy">Scan-first controls aligned with Events: tighten scope, sort fast, then inspect gem candidates.</p>
 			</div>
 			<div class="opp-controls-grid">

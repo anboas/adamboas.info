@@ -26,13 +26,45 @@ type TopicGroup = {
 
 const releases: Release[] = [
 
+
+	{
+		version: 'v2.3.64',
+		date: '2026-02-27',
+		title: 'Opportunities now includes full SAM feed mirror + resilient chart interactivity',
+		summary: 'Expanded `/opportunities` to include broad SAM candidate feed data (not only event-cached notices) and restored clickable bar filtering across fallback render paths.',
+		impact: 'You can analyze a much wider SAM opportunity set immediately and still use click-driven filtering even when chart runtime falls back.',
+		current: true,
+		tags: ['opportunities', 'events', 'sam', 'analytics', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added ingestion of `events-candidates-sam-opportunities.json` directly into `/opportunities` data model.',
+					'Added KPI visibility for SAM global feed row volume alongside event-linked SAM cache metrics.',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Restored full bar-click filtering behavior for fallback chart rendering (click + keyboard interactions).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated page framing from event-only SAM mirror to combined SAM feed + event enrichment intelligence surface.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.63',
 		date: '2026-02-27',
 		title: 'Opportunities visuals streamlined for signal density',
 		summary: 'Removed underperforming/redundant charts from `/opportunities` to keep the analytics surface focused on high-signal views that support fast exploration.',
 		impact: 'You get a cleaner cockpit with fewer dead or overlapping visuals and faster scan-to-insight behavior.',
-		current: true,
 		tags: ['opportunities', 'analytics', 'ux', 'visualization', 'events'],
 		groups: [
 			{
