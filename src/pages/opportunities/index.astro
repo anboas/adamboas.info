@@ -228,12 +228,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Urgency distribution</h2>
-			<div id="opp-viz-urgency" class="opp-bars"></div>
+			<p class="opp-subcopy">Click a bar to filter by due window.</p>
+			<div id="opp-viz-urgency" class="opp-chart"></div>
 		</article>
 
 		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Notice type mix</h2>
-			<div id="opp-viz-types" class="opp-bars"></div>
+			<p class="opp-subcopy">Click a bar to filter by notice type.</p>
+			<div id="opp-viz-types" class="opp-chart"></div>
 		</article>
 
 		<article class="card p-4 opp-viz-card">
@@ -297,6 +299,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	</section>
 
 	<script id="opp-data" type="application/json" set:html={opportunitiesJson}></script>
+	<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 	<script is:inline>
 		(() => {
 			const raw = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
@@ -329,6 +332,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				agencies: document.getElementById('opp-viz-agencies'),
 				naics: document.getElementById('opp-viz-naics'),
 				timeline: document.getElementById('opp-viz-timeline'),
+			};
+
+			const charts = {
+				urgency: null,
+				types: null,
+			};
+
+			const initChart = (key, node) => {
+				if (!node || typeof window.echarts === 'undefined') return null;
+				if (charts[key]) return charts[key];
+				const chart = window.echarts.init(node, null, { renderer: 'canvas' });
+				charts[key] = chart;
+				window.addEventListener('resize', () => chart.resize());
+				return chart;
 			};
 
 			const dayMs = 86_400_000;
@@ -511,10 +528,61 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					['Due 61-120d', items.filter((r) => r.dueDays !== null && r.dueDays >= 61 && r.dueDays <= 120).length],
 					['No due date', items.filter((r) => r.dueDays === null).length],
 				];
-				renderBars(el.urgency, urgency, 'No due data');
+
+				const urgencyChart = initChart('urgency', el.urgency);
+				if (urgencyChart) {
+					urgencyChart.setOption({
+						animationDuration: 220,
+						grid: { top: 8, right: 12, bottom: 16, left: 74 },
+						xAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						yAxis: { type: 'category', data: urgency.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 10 } },
+						series: [{ type: 'bar', data: urgency.map(([, value]) => value), itemStyle: { color: '#2dd4bf', borderRadius: [0, 2, 2, 0] }, barWidth: '62%' }],
+						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
+					});
+					if (!urgencyChart.__boundClick) {
+						urgencyChart.on('click', (params) => {
+							const map = {
+								'Past due': 'past',
+								'Due 0-14d': '0-30',
+								'Due 15-30d': '0-30',
+								'Due 31-60d': '31-90',
+								'Due 61-120d': 'all',
+								'No due date': 'no-due',
+							};
+							if (el.due) el.due.value = map[params.name] || 'all';
+							tableState.page = 1;
+							render();
+						});
+						urgencyChart.__boundClick = true;
+					}
+				} else {
+					renderBars(el.urgency, urgency, 'No due data');
+				}
 
 				const byType = countBy(items, (r) => r.noticeType);
-				renderBars(el.types, byType, 'No notice types');
+				const typesChart = initChart('types', el.types);
+				if (typesChart) {
+					const labels = byType.slice(0, 10).map(([label]) => label);
+					const values = byType.slice(0, 10).map(([, value]) => value);
+					typesChart.setOption({
+						animationDuration: 220,
+						grid: { top: 8, right: 12, bottom: 38, left: 36 },
+						xAxis: { type: 'category', data: labels, axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 20 } },
+						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						series: [{ type: 'bar', data: values, itemStyle: { color: '#14b8a6', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 28 }],
+						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
+					});
+					if (!typesChart.__boundClick) {
+						typesChart.on('click', (params) => {
+							if (el.type) el.type.value = params.name || 'all';
+							tableState.page = 1;
+							render();
+						});
+						typesChart.__boundClick = true;
+					}
+				} else {
+					renderBars(el.types, byType, 'No notice types');
+				}
 
 				const byAgency = countBy(items, (r) => r.agencyLabel);
 				renderBars(el.agencies, byAgency, 'No agencies');
@@ -1031,6 +1099,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-variant-numeric: tabular-nums;
 		color: rgba(226, 232, 240, 0.98);
 	}
+	.opp-chart {
+		margin-top: 0.42rem;
+		height: 11.5rem;
+		min-height: 11.5rem;
+	}
 	.opp-bars {
 		margin-top: 0.5rem;
 		display: grid;
@@ -1284,6 +1357,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		}
 		.opp-table {
 			font-size: 0.67rem;
+		}
+		.opp-chart {
+			height: 10rem;
+			min-height: 10rem;
 		}
 		.opp-bar-row {
 			grid-template-columns: minmax(5.8rem, 1fr) minmax(6.2rem, 1.7fr) auto;
