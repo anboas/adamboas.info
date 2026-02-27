@@ -3343,60 +3343,140 @@ export const radarEventsSeed: RadarEvent[] = [
 {
 		id: 'radar-modern-day-marine-2026',
 		title: 'Modern Day Marine 2026',
-		description: 'USMC modernization, expeditionary warfighting',
+		description: 'Largest Marine-focused defense technology exposition with acquisitions programming, UAS/C-UAS sessions, and direct Marine Corps stakeholder engagement.',
 		startDate: '2026-04-28',
 		endDate: '2026-04-30',
 		branch: 'Marine Corps',
 		type: 'Conference',
 		status: 'Upcoming',
-		signal: 'Medium',
-		effort: 'Low',
+		signal: 'High',
+		effort: 'Medium',
 		location: 
 		{
 			city: 'Washington',
 			state: 'DC',
 			country: 'USA',
 			lat: 38.8950368,
-			lng: -77.0365427
+			lng: -77.0365427,
+			venue: 'Walter E. Washington Convention Center'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Marine Corps stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['modern', 'marine', '2026'],
+			themes: ['Marine Corps modernization', 'Operational technology transition', 'Acquisition and contracting engagement'],
+			capabilityAreas: ['Unmanned systems', 'Training and simulation', 'Logistics AI', 'Enterprise IT support'],
+			missionThreads: ['Program-office access', 'Industry positioning', 'Technology transition mapping'],
+			stakeholders: ['US Marine Corps', 'Marine Corps Systems Command', 'NAVAIR', 'Acquisition professionals', 'Prime and non-traditional vendors'],
+			keywords: ['Modern Day Marine', 'USMC', 'UAS', 'C-UAS', 'contracts industry day', 'acquisitions'],
 			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-75 days',
+				prep: 'T-45 to T-7 days',
+				execution: 'Event week + 21-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Marine Military Expos',
+				name: 'Modern Day Marine official site',
 				url: 'https://marinemilitaryexpos.com/',
 				type: 'official',
-				lastVerified: '2026-02-17',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Modern Day Marine attendee information',
+				url: 'https://marinemilitaryexpos.com/attendee-information-registration/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Modern Day Marine schedule',
+				url: 'https://marinemilitaryexpos.com/show-schedule-info/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
 			links: {
 				official: 'https://marinemilitaryexpos.com/',
-				registration: 'https://marinemilitaryexpos.com/attendee-information-registration/'
+				registration: 'https://marinemilitaryexpos.com/attendee-information-registration/',
+				schedule: 'https://marinemilitaryexpos.com/show-schedule-info/',
+				showMap: 'https://mme.a2zinc.net/ModernDay2026/Public/eventmap.aspx?shAvailable=1&ID=57353'
 			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 150,
-					max: 900
+					min: 0,
+					max: 300
 				},
 				travelBurdenFromDc: 'Low'
-			}
+			},
+			acquisition:
+			{
+				noticeType: 'USMC and joint modernization notices aligned to event tracks (training ecosystem, UAS/C-UAS, acquisition engagement)',
+				agency: 'USMC Systems Command / NAVAIR / ACC / DoD',
+				solicitationNumber: 'M67854-26-I-4802',
+				responseDueDate: '2026-03-09T00:00:00+00:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['r', 's'],
+					totalMatched: 4,
+					typeCounts:
+					{
+						'Sources Sought': 3,
+						'Special Notice': 1
+					},
+					topNotices: [
+					{
+						noticeId: '5b33422231bf40bebecdc97427922400',
+						title: 'Marine Corps e-Learning Ecosystem (MCeLE) Support Services',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-02-27T20:00:00+00:00',
+						solicitationNumber: 'M67854-26-I-4802',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER',
+						uiLink: 'https://sam.gov/workspace/contract/opp/5b33422231bf40bebecdc97427922400/view'
+					},
+					{
+						noticeId: 'b7c30b38c0c146959eda43eb198f7cd4',
+						title: 'Request for Information (RFI) for Unmanned Aircraft Systems (UAS), Counter-UAS Systems, and Related Supplies',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-01-29',
+						responseDueDate: '2026-03-09T00:00:00+00:00',
+						solicitationNumber: 'PAN411-26-P-0000027192',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG',
+						uiLink: 'https://sam.gov/workspace/contract/opp/b7c30b38c0c146959eda43eb198f7cd4/view'
+					},
+					{
+						noticeId: 'd76cc239a31148dfbc84c17e8bbf3769',
+						title: 'Small Unmanned Aircraft Systems (sUAS) for the United States Marine Corps',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-01-13',
+						responseDueDate: '2026-02-17T04:59:00+00:00',
+						solicitationNumber: '243-25-157',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d76cc239a31148dfbc84c17e8bbf3769/view'
+					},
+					{
+						noticeId: 'dcb4c311e9c342759c0e8b35c330572a',
+						title: 'JIATF 401 C-sUAS Industry Day',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-12',
+						responseDueDate: '2026-02-18T20:00:00+00:00',
+						agencyPath: 'DEPT OF DEFENSE',
+						uiLink: 'https://sam.gov/workspace/contract/opp/dcb4c311e9c342759c0e8b35c330572a/view'
+					}
+					]
+				}
+			},
+			notes: 'Official show pages confirm Apr 28-30, 2026 at Walter E. Washington Convention Center with acquisitions briefings, Contracts Industry Day, and UAS/C-UAS + logistics AI programming that align with current Marine and joint requirement signals in SAM.'
 		}
 	},
+
 {
 		id: 'radar-dod-small-business-training-week',
 		title: 'DoD Small Business Training Week',
