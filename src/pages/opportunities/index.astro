@@ -265,6 +265,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<input id="opp-filter-focus" type="checkbox" />
 					<span>My focus only (Software/Cloud/AI/Cyber/Data)</span>
 				</label>
+				<span id="opp-chart-filter-status" class="opp-chart-filter-status" aria-live="polite"></span>
 				<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
 			</div>
 		</div>
@@ -363,6 +364,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				sort: document.getElementById('opp-filter-sort'),
 				focus: document.getElementById('opp-filter-focus'),
 				reset: document.getElementById('opp-filter-reset'),
+				chartFilterStatus: document.getElementById('opp-chart-filter-status'),
 				total: document.getElementById('opp-kpi-total'),
 				displayed: document.getElementById('opp-kpi-displayed'),
 				gems: document.getElementById('opp-kpi-gems'),
@@ -388,9 +390,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				agencies: null,
 				naics: null,
 			};
+			const chartMode = typeof window.echarts === 'undefined' ? 'fallback' : 'echarts';
 
 			const initChart = (key, node) => {
-				if (!node || typeof window.echarts === 'undefined') return null;
+				if (!node || chartMode !== 'echarts' || typeof window.echarts === 'undefined') return null;
 				if (charts[key]) return charts[key];
 				const chart = window.echarts.init(node, null, { renderer: 'canvas' });
 				charts[key] = chart;
@@ -439,12 +442,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const dueDays = daysUntil(row.responseDueDate);
 				const postedEpoch = toDayEpoch(row.postedDate);
 				const dueEpoch = toDayEpoch(row.responseDueDate);
+				const agencyLabelText = agencyLabel(row.agencyPath);
 				const blob = [
 					row.title,
 					row.noticeType,
 					row.noticeId,
 					row.solicitationNumber,
 					row.agencyPath,
+					agencyLabelText,
 					row.naicsCode,
 					...(row.branches || []),
 					...(row.capabilityAreas || []),
@@ -480,7 +485,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					searchBlob: blob,
 					focusMatches,
 					gemScore,
-					agencyLabel: agencyLabel(row.agencyPath),
+					agencyLabel: agencyLabelText,
 				};
 			});
 
@@ -492,6 +497,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				minWeight: 0,
 				sort: 'gem',
 				focusOnly: false,
+				agencyFilter: '',
+				naicsFilter: '',
 			};
 
 			const tableState = {
@@ -538,6 +545,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (state.search && !row.searchBlob.includes(state.search)) return false;
 					if (state.type !== 'all' && row.noticeType !== state.type) return false;
 					if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
+					if (state.agencyFilter && row.agencyLabel !== state.agencyFilter) return false;
+					if (state.naicsFilter && String(row.naicsCode || '') !== String(state.naicsFilter || '')) return false;
 					if (!inDueWindow(row)) return false;
 					if (Number(row.weight || 0) < state.minWeight) return false;
 					if (state.focusOnly && row.focusMatches < 1) return false;
@@ -610,6 +619,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 					if (!urgencyChart.__boundClick) {
 						urgencyChart.on('click', (params) => {
+							if (!params || Number(params.value || 0) <= 0) return;
 							const map = {
 								'Past due': 'past',
 								'Due 0-14d': '0-30',
@@ -625,7 +635,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						urgencyChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.urgency, urgency, 'No due data', (label) => {
+					renderBars(el.urgency, urgency, 'No due data', (label, value) => {
+						if (Number(value || 0) <= 0) return;
 						const map = {
 							'Past due': 'past',
 							'Due 0-14d': '0-30',
@@ -655,6 +666,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 					if (!typesChart.__boundClick) {
 						typesChart.on('click', (params) => {
+							if (!params || Number(params.value || 0) <= 0) return;
 							if (el.type) el.type.value = params.name || 'all';
 							tableState.page = 1;
 							render();
@@ -662,7 +674,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						typesChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.types, byType, 'No notice types', (label) => {
+					renderBars(el.types, byType, 'No notice types', (label, value) => {
+						if (Number(value || 0) <= 0) return;
 						if (el.type) el.type.value = label || 'all';
 						tableState.page = 1;
 						render();
@@ -682,15 +695,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 					if (!agencyChart.__boundClick) {
 						agencyChart.on('click', (params) => {
-							if (el.search) el.search.value = params.name || '';
+							if (!params || Number(params.value || 0) <= 0) return;
+							state.agencyFilter = state.agencyFilter === params.name ? '' : String(params.name || '');
 							tableState.page = 1;
 							render();
 						});
 						agencyChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.agencies, byAgency, 'No agencies', (label) => {
-						if (el.search) el.search.value = label || '';
+					renderBars(el.agencies, byAgency, 'No agencies', (label, value) => {
+						if (Number(value || 0) <= 0) return;
+						state.agencyFilter = state.agencyFilter === label ? '' : String(label || '');
 						tableState.page = 1;
 						render();
 					});
@@ -709,15 +724,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 					if (!naicsChart.__boundClick) {
 						naicsChart.on('click', (params) => {
-							if (el.search) el.search.value = params.name || '';
+							if (!params || Number(params.value || 0) <= 0) return;
+							state.naicsFilter = state.naicsFilter === String(params.name || '') ? '' : String(params.name || '');
 							tableState.page = 1;
 							render();
 						});
 						naicsChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.naics, byNaics, 'No NAICS tags', (label) => {
-						if (el.search) el.search.value = label || '';
+					renderBars(el.naics, byNaics, 'No NAICS tags', (label, value) => {
+						if (Number(value || 0) <= 0) return;
+						state.naicsFilter = state.naicsFilter === String(label || '') ? '' : String(label || '');
 						tableState.page = 1;
 						render();
 					});
@@ -865,6 +882,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.pagePrev) el.pagePrev.disabled = tableState.page <= 1;
 				if (el.pageNext) el.pageNext.disabled = tableState.page >= totalPages;
 				if (el.pageLast) el.pageLast.disabled = tableState.page >= totalPages;
+				if (el.chartFilterStatus) {
+					const chips = [];
+					if (state.agencyFilter) chips.push(`Agency: ${state.agencyFilter}`);
+					if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
+					el.chartFilterStatus.textContent = chips.length ? chips.join(' · ') : '';
+				}
 
 				updateTableSortIndicators();
 				renderGemList(filtered);
@@ -923,6 +946,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.weight) el.weight.value = '0';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
+				state.agencyFilter = '';
+				state.naicsFilter = '';
 				tableState.page = 1;
 				tableState.sortKey = 'gemScore';
 				tableState.sortDir = 'desc';
@@ -1054,6 +1079,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		letter-spacing: normal;
 		text-transform: none;
 		color: rgba(203, 213, 225, 0.96);
+	}
+	.opp-chart-filter-status {
+		font-size: 0.68rem;
+		color: rgba(125, 211, 252, 0.95);
+		min-height: 1em;
 	}
 	.opp-reset {
 		height: 1.95rem;
