@@ -3078,58 +3078,130 @@ export const radarEventsSeed: RadarEvent[] = [
 
 {
 		id: 'radar-sacramento-district-usace-industry-day',
-		title: 'Sacramento District USACE Industry Day',
-		description: 'Sacramento District contracting opportunities, South Pacific Division',
+		title: 'USACE Sacramento District 2026 Business Opportunities Open House',
+		description: 'USACE Sacramento District open house and small-business matchmaking touchpoint focused on upcoming district procurements and direct networking with district leadership/industry teams.',
 		startDate: '2026-04-16',
-		endDate: null,
+		endDate: '2026-04-17',
 		branch: 'USACE',
 		type: 'Workshop',
 		status: 'Upcoming',
-		signal: 'Medium',
-		effort: 'High',
+		signal: 'High',
+		effort: 'Medium',
 		location: 
 		{
 			city: 'Sacramento',
 			state: 'CA',
 			country: 'USA',
 			lat: 38.5810606,
-			lng: -121.493895
+			lng: -121.493895,
+			venue: 'Hyatt Regency Sacramento'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['sacramento', 'district', 'usace', 'industry'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['USACE district procurement visibility', 'Small-business matchmaking', 'Civil-works and A/E capture timing'],
+			capabilityAreas: ['Civil works engineering', 'Architecture-engineering services', 'Federal construction delivery'],
+			missionThreads: ['District opportunity mapping', 'Prime-sub partner alignment', 'Post-open-house pursuit planning'],
+			stakeholders: ['USACE Sacramento District (SPD)', 'SAME Sacramento Post', 'Small and large business contractors', 'A/E service providers'],
+			keywords: ['usace sacramento', 'business opportunities open house', 'booh', 'small business matchmaking', 'hyatt regency sacramento'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'SAME Sacramento homepage events listing',
+				url: 'http://www.samesacramento.org/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'SAME Sacramento calendar page',
+				url: 'http://www.samesacramento.org/calendar.shtml',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'SAM special notice: USACE Sacramento District 2026 BOOH',
+				url: 'https://sam.gov/workspace/contract/opp/2a881e2c642d4776a1d8c3422433cc63/view',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'Eventbrite registration page',
+				url: 'https://www.eventbrite.com/e/usace-sacramento-district-2026-business-opportunities-open-house-booh-tickets-1981460187761?aff=oddtdtcreator',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://sam.gov/workspace/contract/opp/2a881e2c642d4776a1d8c3422433cc63/view',
+				registration: 'https://www.eventbrite.com/e/usace-sacramento-district-2026-business-opportunities-open-house-booh-tickets-1981460187761?aff=oddtdtcreator'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 1200,
-					max: 4200
+					min: 0,
+					max: 1200
 				},
 				travelBurdenFromDc: 'High'
-			}
+			},
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Small Business Matchmaking', 'Special Notice', 'Solicitation'],
+				noticeType: 'Sacramento District BOOH signal with concurrent district A/E and civil-works procurement activity',
+				agency: 'USACE Sacramento District (SPD)',
+				solicitationNumber: 'SPKFY2026BOOH',
+				responseDueDate: '2026-04-16T16:00:00+00:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['s', 'o'],
+					totalMatched: 2,
+					typeCounts:
+					{
+						'Special Notice': 1,
+						Solicitation: 1
+					},
+					topNotices: [
+					{
+						noticeId: '2a881e2c642d4776a1d8c3422433cc63',
+						title: 'USACE Sacramento District 2026 Business Opportunities Open House',
+						noticeType: 'Special Notice',
+						postedDate: '2026-01-26',
+						responseDueDate: '2026-04-16T16:00:00+00:00',
+						solicitationNumber: 'SPKFY2026BOOH',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SPD.W075 ENDIST SACRAMENTO',
+						uiLink: 'https://sam.gov/workspace/contract/opp/2a881e2c642d4776a1d8c3422433cc63/view'
+					},
+					{
+						noticeId: '5abcf4cc1b6a45dab3097a7fdc2b7b9d',
+						title: '$238M SPK Civil Works AE MATOC',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-20',
+						responseDueDate: '2026-03-02T22:00:00+00:00',
+						solicitationNumber: 'W9123826RA010',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.USACE.SPD.W075 ENDIST SACRAMENTO',
+						naicsCode: '541330',
+						uiLink: 'https://sam.gov/workspace/contract/opp/5abcf4cc1b6a45dab3097a7fdc2b7b9d/view'
+					}
+					]
+				}
+			},
+			notes: 'SAME Sacramento pages list an April 16-17, 2026 USACE Business Opportunities Open House + small-business matchmaking at Hyatt Regency; SAM and Eventbrite copies align on the Apr 16 BOOH session (9:00 AM PT) and reference district forecast/procurement engagement.'
 		}
 	},
+
 {
 		id: 'radar-afcea-nova-innovation-it-day-2026',
 		title: 'AFCEA NOVA Innovation IT Day 2026',
