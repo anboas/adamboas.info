@@ -22,17 +22,20 @@ Examples:
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import os
 import re
+import time
 from dataclasses import dataclass, asdict
-from datetime import date, datetime, timedelta
+from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 API_URL = "https://api.sam.gov/opportunities/v2/search"
+NOTICE_DESC_URL = "https://api.sam.gov/prod/opportunities/v1/noticedesc"
 ROOT = Path("/home/anboas/clawd/adamboas-site")
 
 PTYPE_LABELS = {
@@ -118,6 +121,11 @@ class Candidate:
     relevance_score: int
     relevance_reasons: list[str]
     navy_related: bool
+    detail_url: str | None = None
+    detail_text: str | None = None
+    detail_text_length: int = 0
+    resource_links: list[str] | None = None
+    resource_count: int = 0
 
 
 def parse_args() -> argparse.Namespace:
@@ -143,6 +151,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--min-relevance", type=int, default=2)
     parser.add_argument("--max-results", type=int, default=2500)
     parser.add_argument("--output-prefix", default="sam-opportunities", help="Output suffix for candidate files")
+    parser.add_argument("--enrich-detail-text", action="store_true", help="Fetch and cache full notice description text")
+    parser.add_argument("--detail-max-chars", type=int, default=6000, help="Max chars for stored detail_text (0 = unlimited)")
+    parser.add_argument("--detail-cache-ttl-hours", type=int, default=168, help="Detail cache TTL in hours")
+    parser.add_argument("--detail-sleep-ms", type=int, default=120, help="Delay between detail fetches to reduce API burst")
     return parser.parse_args()
 
 
@@ -168,6 +180,68 @@ def normalize_date(value: str | None) -> str | None:
     if m:
         return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
     return None
+
+
+def normalize_detail_text(value: str | None, max_chars: int = 0) -> str | None:
+    if not value:
+        return None
+    text = re.sub(r"<[^>]+>", " ", value)
+    text = html.unescape(text)
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return None
+    if max_chars and max_chars > 0:
+        return text[:max_chars]
+    return text
+
+
+def extract_notice_desc_url(value: str | None, notice_id: str | None = None) -> str | None:
+    raw = (value or "").strip()
+    if raw and "noticedesc" in raw and "noticeid=" in raw:
+        return raw
+    if notice_id:
+        return f"{NOTICE_DESC_URL}?noticeid={notice_id}"
+    return None
+
+
+def extract_resource_links(row: dict[str, Any]) -> list[str]:
+    links = row.get("resourceLinks")
+    if not isinstance(links, list):
+        return []
+    out: list[str] = []
+    for item in links:
+        if not isinstance(item, str):
+            continue
+        txt = item.strip()
+        if txt.startswith("http://") or txt.startswith("https://"):
+            out.append(txt)
+    return list(dict.fromkeys(out))
+
+
+def fetch_notice_description(api_key: str, notice_id: str, cache_dir: Path, cache_ttl_seconds: int) -> tuple[str | None, bool]:
+    cache_path = cache_dir / f"{notice_id}.json"
+    now = time.time()
+
+    if cache_path.exists():
+        age = now - cache_path.stat().st_mtime
+        if age <= max(0, cache_ttl_seconds):
+            try:
+                payload = json.loads(cache_path.read_text(encoding="utf-8"))
+                desc = payload.get("description") if isinstance(payload, dict) else None
+                if isinstance(desc, str):
+                    return desc, True
+            except Exception:
+                pass
+
+    params = urlencode({"noticeid": notice_id, "api_key": api_key})
+    req = Request(f"{NOTICE_DESC_URL}?{params}", headers={"Accept": "application/json"})
+    with urlopen(req, timeout=45) as resp:
+        payload = json.loads(resp.read().decode("utf-8", errors="ignore"))
+
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cache_path.write_text(json.dumps(payload, ensure_ascii=False) + "\n", encoding="utf-8")
+    desc = payload.get("description") if isinstance(payload, dict) else None
+    return (desc if isinstance(desc, str) else None), False
 
 
 def derive_engagement_kinds(ptype: str, title: str, description: str) -> list[str]:
@@ -299,6 +373,8 @@ def row_to_candidate(row: dict[str, Any], ptype: str) -> Candidate | None:
 
     opportunity_url = f"https://sam.gov/opp/{notice_id}/view"
     ui_link = _safe_get(row, "uiLink")
+    detail_url = extract_notice_desc_url(description, notice_id)
+    resource_links = extract_resource_links(row)
 
     score, reasons, navy_related = relevance(title, description, str(agency_path or ""), ptype)
 
@@ -321,6 +397,9 @@ def row_to_candidate(row: dict[str, Any], ptype: str) -> Candidate | None:
         relevance_score=score,
         relevance_reasons=reasons,
         navy_related=navy_related,
+        detail_url=detail_url,
+        resource_links=resource_links,
+        resource_count=len(resource_links),
     )
 
 
@@ -328,7 +407,7 @@ def to_markdown(candidates: list[Candidate], posted_from: str, posted_to: str, p
     lines: list[str] = []
     lines.append("# SAM.gov Opportunity Signal Candidates")
     lines.append("")
-    lines.append(f"Generated: {datetime.utcnow().isoformat()}Z")
+    lines.append(f"Generated: {datetime.now(UTC).isoformat()}")
     lines.append(f"Profile: {profile}")
     lines.append(f"Notice types: {', '.join(ptypes)}")
     lines.append(f"Posted range: {posted_from} -> {posted_to}")
@@ -337,17 +416,28 @@ def to_markdown(candidates: list[Candidate], posted_from: str, posted_to: str, p
     by_type: dict[str, int] = {}
     engagement_counts: dict[str, int] = {}
     navy_count = 0
+    detail_count = 0
+    attachment_notice_count = 0
+    attachment_link_count = 0
 
     for c in candidates:
         by_type[c.notice_type] = by_type.get(c.notice_type, 0) + 1
         if c.navy_related:
             navy_count += 1
+        if c.detail_text:
+            detail_count += 1
+        if c.resource_count:
+            attachment_notice_count += 1
+            attachment_link_count += c.resource_count
         for k in c.engagement_kinds:
             engagement_counts[k] = engagement_counts.get(k, 0) + 1
 
     lines.append("## Counts")
     lines.append(f"- Total candidates: {len(candidates)}")
     lines.append(f"- Navy-related: {navy_count}")
+    lines.append(f"- Full detail cached: {detail_count}")
+    lines.append(f"- Notices with attachments: {attachment_notice_count}")
+    lines.append(f"- Total attachment links: {attachment_link_count}")
     for key in sorted(by_type):
         lines.append(f"- {key}: {by_type[key]}")
     lines.append("")
@@ -471,6 +561,40 @@ def main() -> int:
         )
     )
 
+    detail_api_fetches = 0
+    detail_cache_hits = 0
+    if args.enrich_detail_text:
+        detail_cache_dir = ROOT / ".cache" / "sam-notice-details"
+        detail_ttl_seconds = max(0, int(args.detail_cache_ttl_hours) * 3600)
+        for candidate in candidates:
+            candidate.detail_url = candidate.detail_url or extract_notice_desc_url(candidate.description, candidate.notice_id)
+            candidate.resource_count = len(candidate.resource_links or [])
+
+            if not candidate.notice_id:
+                continue
+
+            try:
+                detail_html, from_cache = fetch_notice_description(
+                    api_key=api_key,
+                    notice_id=candidate.notice_id,
+                    cache_dir=detail_cache_dir,
+                    cache_ttl_seconds=detail_ttl_seconds,
+                )
+            except Exception:
+                continue
+
+            if detail_html:
+                full_text = normalize_detail_text(detail_html, 0) or ""
+                candidate.detail_text_length = len(full_text)
+                candidate.detail_text = normalize_detail_text(detail_html, args.detail_max_chars)
+
+            if from_cache:
+                detail_cache_hits += 1
+            else:
+                detail_api_fetches += 1
+                if args.detail_sleep_ms > 0:
+                    time.sleep(args.detail_sleep_ms / 1000)
+
     out_json = ROOT / f"src/data/radar/events-candidates-{args.output_prefix}.json"
     out_md = ROOT / f"src/data/radar/events-candidates-{args.output_prefix}.md"
 
@@ -479,6 +603,8 @@ def main() -> int:
 
     print(f"Wrote {len(candidates)} SAM opportunity candidates")
     print(f"Requests sent: {request_count}")
+    if args.enrich_detail_text:
+        print(f"Detail enrichment: api_fetches={detail_api_fetches}, cache_hits={detail_cache_hits}")
     print(f"- {out_json}")
     print(f"- {out_md}")
     return 0
