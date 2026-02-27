@@ -504,7 +504,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return [...map.entries()].sort((a, b) => b[1] - a[1]);
 			};
 
-			const renderBars = (container, entries, emptyLabel = 'No data') => {
+			const renderBars = (container, entries, emptyLabel = 'No data', onClick = null) => {
 				if (!container) return;
 				if (!entries.length) {
 					container.innerHTML = `<p class="opp-subcopy">${emptyLabel}</p>`;
@@ -512,10 +512,29 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}
 				const top = entries.slice(0, 12);
 				const max = Math.max(...top.map(([, value]) => Number(value || 0)), 1);
-				container.innerHTML = top.map(([label, value]) => {
+				container.innerHTML = top.map(([label, value], idx) => {
 					const pct = Math.max(4, Math.round((Number(value) / max) * 100));
-					return `<div class="opp-bar-row"><span class="opp-bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</span><span class="opp-bar-track"><span class="opp-bar-fill" style="width:${pct}%"></span></span><span class="opp-bar-value">${value}</span></div>`;
+					const interactiveClass = onClick ? ' is-clickable' : '';
+					const interactiveAttrs = onClick ? ' role="button" tabindex="0"' : '';
+					return `<div class="opp-bar-row${interactiveClass}" data-idx="${idx}"${interactiveAttrs}><span class="opp-bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</span><span class="opp-bar-track"><span class="opp-bar-fill" style="width:${pct}%"></span></span><span class="opp-bar-value">${value}</span></div>`;
 				}).join('');
+
+				if (onClick) {
+					for (const row of container.querySelectorAll('.opp-bar-row.is-clickable')) {
+						const trigger = () => {
+							const idx = Number(row.dataset.idx || -1);
+							if (idx < 0 || idx >= top.length) return;
+							onClick(top[idx][0], top[idx][1]);
+						};
+						row.addEventListener('click', trigger);
+						row.addEventListener('keydown', (event) => {
+							if (event.key === 'Enter' || event.key === ' ') {
+								event.preventDefault();
+								trigger();
+							}
+						});
+					}
+				}
 			};
 
 			const renderVisuals = (items) => {
@@ -555,7 +574,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						urgencyChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.urgency, urgency, 'No due data');
+					renderBars(el.urgency, urgency, 'No due data', (label) => {
+						const map = {
+							'Past due': 'past',
+							'Due 0-14d': '0-30',
+							'Due 15-30d': '0-30',
+							'Due 31-60d': '31-90',
+							'Due 61-120d': 'all',
+							'No due date': 'no-due',
+						};
+						if (el.due) el.due.value = map[label] || 'all';
+						tableState.page = 1;
+						render();
+					});
 				}
 
 				const byType = countBy(items, (r) => r.noticeType);
@@ -580,7 +611,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						typesChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.types, byType, 'No notice types');
+					renderBars(el.types, byType, 'No notice types', (label) => {
+						if (el.type) el.type.value = label || 'all';
+						tableState.page = 1;
+						render();
+					});
 				}
 
 				const byAgency = countBy(items, (r) => r.agencyLabel).slice(0, 10);
@@ -603,7 +638,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						agencyChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.agencies, byAgency, 'No agencies');
+					renderBars(el.agencies, byAgency, 'No agencies', (label) => {
+						if (el.search) el.search.value = label || '';
+						tableState.page = 1;
+						render();
+					});
 				}
 
 				const byNaics = countBy(items, (r) => r.naicsCode || null).slice(0, 10);
@@ -626,7 +665,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						naicsChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.naics, byNaics, 'No NAICS tags');
+					renderBars(el.naics, byNaics, 'No NAICS tags', (label) => {
+						if (el.search) el.search.value = label || '';
+						tableState.page = 1;
+						render();
+					});
 				}
 			};
 
@@ -1138,6 +1181,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		grid-template-columns: minmax(7rem, 1fr) minmax(7.5rem, 2fr) auto;
 		gap: 0.36rem;
 		align-items: center;
+	}
+	.opp-bar-row.is-clickable {
+		cursor: pointer;
+	}
+	.opp-bar-row.is-clickable:hover .opp-bar-label,
+	.opp-bar-row.is-clickable:focus-visible .opp-bar-label {
+		color: rgba(240, 253, 250, 0.98);
 	}
 	.opp-bar-label {
 		font-size: 0.66rem;
