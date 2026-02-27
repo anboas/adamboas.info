@@ -2707,15 +2707,16 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'SAM notice confirms April 1, 2026 (9:00 AM-3:00 PM CST) in-person open house at USACE Chicago District HQ, with registration/capability statements due March 31, 2026 via LRC.SBO@usace.army.mil.'
 		}
 	},
-{		id: 'radar-army-aviation-mission-solutions-summit-2026-quad-a',
-		title: 'Army Aviation Mission Solutions Summit 2026 (Quad-A)',
-		description: 'PEO Aviation, FVL/FLRAA, sustainment, UAS, rotary wing modernization',
-		startDate: '2026-04-14',
-		endDate: '2026-04-16',
+{
+		id: 'radar-army-aviation-mission-solutions-summit-2026-quad-a',
+		title: '2026 Army Aviation Warfighting Summit (AAAA)',
+		description: 'Annual AAAA summit focused on Army Aviation priorities, leadership panels, professional sessions, and industry engagement across the full aviation mission community.',
+		startDate: '2026-04-15',
+		endDate: '2026-04-17',
 		branch: 'Army',
 		type: 'Summit',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
@@ -2727,41 +2728,100 @@ export const radarEventsSeed: RadarEvent[] = [
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['army', 'aviation', 'mission', 'solutions'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Army aviation modernization awareness', 'Mission-focused government-industry dialogue', 'Aviation capability and training ecosystem alignment'],
+			capabilityAreas: ['Aviation systems', 'Training and readiness', 'Lifecycle sustainment'],
+			missionThreads: ['Army aviation stakeholder engagement', 'Program signal detection', 'Community-wide partnership building'],
+			stakeholders: ['Army Aviation Association of America (AAAA)', 'Army Aviation leadership', 'Program executives', 'Industry solution providers'],
+			keywords: ['army aviation', 'aaaa summit', 'warfighting summit', 'nashville', 'aviation mission solutions'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-14 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'AAAA event listing',
+				url: 'https://www.quad-a.org/Public/Public/ContentAreas/Tagged-Content/AAAA-Events/2026-Army-Aviation-Mission-Solutions-Summit.aspx',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'AAAA Nashville summit page',
+				url: 'https://www.quad-a.org/Public/Public/ContentAreas/Tagged-Content/Summits/2026-Nashville-Summit.aspx',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'AAAA summit registration site',
+				url: 'https://s7.goeshow.com/aaaa/missionsolutions/2026/index.cfm',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'AAAA home page summit notice',
+				url: 'https://quad-a.org/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.quad-a.org/Public/Public/ContentAreas/Tagged-Content/AAAA-Events/2026-Army-Aviation-Mission-Solutions-Summit.aspx',
+				registration: 'https://s7.goeshow.com/aaaa/missionsolutions/2026/index.cfm'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 300,
+					max: 1800
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			acquisition:
+			{
+				engagementKinds: ['Special Notice', 'Sources Sought', 'Pre-solicitation', 'Vendor Outreach'],
+				noticeType: 'Army aviation training and capability modernization signals',
+				agency: 'Department of the Army / ACC',
+				solicitationNumber: 'W9113M-25-S-C006',
+				responseDueDate: '2026-09-30T12:00:00-05:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '03/01/2025',
+					postedTo: '02/27/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 1,
+					typeCounts:
+					{
+						'Combined Synopsis/Solicitation': 1
+					},
+					topNotices: [
+					{
+						noticeId: '0994c5a8f33449768a41e2a96144778b',
+						title: 'CSO - U.S. Army Aviation Training',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2025-12-02',
+						responseDueDate: '2026-09-30T12:00:00-05:00',
+						solicitationNumber: 'W9113M-25-S-C006',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA',
+						naicsCode: '611512',
+						classificationCode: 'U006',
+						uiLink: 'https://sam.gov/workspace/contract/opp/0994c5a8f33449768a41e2a96144778b/view'
+					}
+					]
+				}
+			},
+			notes: 'Official AAAA sources indicate the annual summit runs April 15-17, 2026 in Nashville and is framed as the principal annual gathering for the Army Aviation community.'
 		}
 	},
-{
-		id: 'radar-same-fort-worth-post-industry-day-2026',
+{		id: 'radar-same-fort-worth-post-industry-day-2026',
 		title: 'SAME Fort Worth Post Industry Day 2026',
 		description: 'Industry Government Engagement 2026. Day 1: Presentations at Round Up Inn. Day 2: One-on-One meetings at USACE Fort Worth District HQ.',
 		startDate: '2026-04-14',
