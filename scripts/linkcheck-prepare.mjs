@@ -16,6 +16,7 @@ const POLICY = {
     'calendar.google.com',
     'ausa.org',
     'xponential.org',
+    'hilton.com',
   ],
   ignoreDomains: [
     'adamboas.info',
