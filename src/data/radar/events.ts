@@ -3204,14 +3204,14 @@ export const radarEventsSeed: RadarEvent[] = [
 
 {
 		id: 'radar-afcea-nova-innovation-it-day-2026',
-		title: 'AFCEA NOVA Innovation IT Day 2026',
-		description: 'IT innovation showcase, emerging tech',
+		title: 'AFCEA NOVA Innovation IT Day Showcase 2026',
+		description: 'AFCEA NOVA showcase focused on DoD and 4th-estate digital modernization, innovation demos, and direct government-industry exchange.',
 		startDate: '2026-04-27',
 		endDate: null,
 		branch: 'Joint',
 		type: 'Conference',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Low',
 		location: 
 		{
@@ -3219,44 +3219,127 @@ export const radarEventsSeed: RadarEvent[] = [
 			state: 'VA',
 			country: 'USA',
 			lat: 38.953282,
-			lng: -77.3464516
+			lng: -77.3464516,
+			venue: 'Carahsoft Technology Corporation (11493 Sunset Hills Rd)'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['afcea', 'nova', 'innovation', '2026'],
+			themes: ['Defense IT modernization', 'Government-industry collaboration', 'Emerging technology adoption'],
+			capabilityAreas: ['Cloud modernization', 'Enterprise platforms', 'Cybersecurity', 'Digital engineering'],
+			missionThreads: ['4th-estate mission support', 'Acquisition shaping', 'Partner positioning'],
+			stakeholders: ['AFCEA NOVA', 'DoD military branches', '4th Estate agencies', 'DISA', 'USMC Systems Command', 'NIWC Atlantic', 'AFLCMC BES'],
+			keywords: ['AFCEA NOVA', 'Innovation IT Day', 'DoD IT', '4th Estate', 'cloud', 'cybersecurity'],
 			relatedPrograms: ['Radar expansion'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-60 days',
+				prep: 'T-45 to T-7 days',
+				execution: 'Event day + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'AFCEA NOVA calendar',
+				url: 'https://nova.afceachapters.org/calendar',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'AFCEA NOVA Innovation IT Day event page',
+				url: 'https://afceanova.swoogo.com/innovationitday2026',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'AFCEA NOVA 2025-2026 IT Day sponsorship sheet',
+				url: 'https://afceanova.swoogo.com/sponsor2025-2026/itdays',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
-			links: {},
+			links: {
+				official: 'https://afceanova.swoogo.com/innovationitday2026',
+				registration: 'https://afceanova.swoogo.com/innovationitday2026',
+				eventSeries: 'https://nova.afceachapters.org/calendar'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 150,
-					max: 900
+					min: 0,
+					max: 595
 				},
-				travelBurdenFromDc: 'Low'
+				travelBurdenFromDc: 'Low',
+				registrationDeadline: '2026-04-27'
 			},
-			notes: 'Carahsoft Technology HQ. 300+ expected registrants.'
+			acquisition: 
+			{
+				noticeType: 'Enterprise IT and cyber modernization signals from DISA, USMC, NIWC Atlantic, and AFLCMC BES',
+				agency: 'DoD enterprise IT stakeholders (DISA / USMC / Navy / Air Force)',
+				solicitationNumber: '632674007',
+				responseDueDate: '2026-03-06T21:00:00+00:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['r', 'o'],
+					totalMatched: 4,
+					typeCounts:
+					{
+						'Sources Sought': 3,
+						Solicitation: 1
+					},
+					topNotices: [
+					{
+						noticeId: '72d61906e6fd4f969acca13cea3d3b11',
+						title: 'Spectrum Information Systems (SIS) Helpdesk',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-27',
+						responseDueDate: '2026-03-06T21:00:00+00:00',
+						solicitationNumber: '632674007',
+						agencyPath: 'DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).DEFENSE INFORMATION SYSTEMS AGENCY',
+						uiLink: 'https://sam.gov/workspace/contract/opp/72d61906e6fd4f969acca13cea3d3b11/view'
+					},
+					{
+						noticeId: '5b33422231bf40bebecdc97427922400',
+						title: 'Marine Corps e-Learning Ecosystem (MCeLE) Support Services',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-02-27T20:00:00+00:00',
+						solicitationNumber: 'M67854-26-I-4802',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER',
+						uiLink: 'https://sam.gov/workspace/contract/opp/5b33422231bf40bebecdc97427922400/view'
+					},
+					{
+						noticeId: '2aadca7bbdda41cfa37f51b4983fb60c',
+						title: 'AOI 26-A002: Specter- Container-Native Platform for Navy Tactical and Enterprise Applications',
+						noticeType: 'Solicitation',
+						postedDate: '2026-01-23',
+						responseDueDate: '2026-01-30T18:00:00+00:00',
+						solicitationNumber: 'N6523626SC002',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR LANT.NIWC ATLANTIC',
+						uiLink: 'https://sam.gov/workspace/contract/opp/2aadca7bbdda41cfa37f51b4983fb60c/view'
+					},
+					{
+						noticeId: '81226ff1ad31454a8da7d6f68d528780',
+						title: 'GB CAS - Cloud  Assessment, Cloud Migration, Cloud Continuous Development, and Cybersecurity',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-01-15',
+						responseDueDate: '2026-01-29T22:00:00+00:00',
+						solicitationNumber: 'FA8771-25-R-0017',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.BUSINESS AND ENTERPRISE SYSTEMS.FA8771  AFLCMC GBK',
+						uiLink: 'https://sam.gov/workspace/contract/opp/81226ff1ad31454a8da7d6f68d528780/view'
+					}
+					]
+				}
+			},
+			notes: 'Official AFCEA NOVA sources align on Apr 27, 2026 at Carahsoft Reston; pricing ranges from free (government/military) to paid member/non-member tiers and sponsorship planning indicates ~300 prior-year attendees.'
 		}
 	},
+
 {
 		id: 'radar-modern-day-marine-2026',
 		title: 'Modern Day Marine 2026',
