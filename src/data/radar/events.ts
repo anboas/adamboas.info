@@ -2595,61 +2595,119 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Official DMC sources confirm March 30-April 2, 2026 at Caribe Royale Orlando, with 2025 registrations and sponsorships carried over after federal shutdown delays. Public registration info lists industry/government/day-pass rates and ITAR/DD2345 participation controls.'
 		}
 	},
-{		id: 'radar-chicago-district-usace-industry-outreach-open-house',
-		title: 'Chicago District USACE Industry Outreach Open House',
-		description: 'Chicago District contracting opportunities, Great Lakes & Ohio River Division',
+{
+		id: 'radar-chicago-district-usace-industry-outreach-open-house',
+		title: 'USACE Chicago Industry Open House 2026',
+		description: 'Annual Chicago District industry outreach event for businesses to engage leadership, acquisition teams, and program stakeholders on upcoming projects and contracting opportunities.',
 		startDate: '2026-04-01',
-		endDate: null,
+		endDate: '2026-04-01',
 		branch: 'USACE',
 		type: 'Workshop',
 		status: 'Upcoming',
-		signal: 'Medium',
+		signal: 'High',
 		effort: 'Medium',
 		location: 
 		{
 			city: 'Chicago',
 			state: 'IL',
 			country: 'USA',
-			lat: 41.8755616,
-			lng: -87.6244212
+			lat: 41.8786,
+			lng: -87.6322,
+			venue: 'USACE Chicago District Headquarters (231 South LaSalle Street, Basement Level)'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['USACE stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['chicago', 'district', 'usace', 'industry'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['USACE district contracting visibility', 'Small-business outreach', 'Great Lakes infrastructure opportunity mapping'],
+			capabilityAreas: ['Civil works acquisition', 'Construction and rehabilitation', 'District program engagement'],
+			missionThreads: ['Industry capability alignment', 'Pre-solicitation relationship building', 'USACE pipeline awareness'],
+			stakeholders: ['USACE Chicago District', 'District leadership', 'Program and acquisition personnel', 'Industry partners'],
+			keywords: ['usace chicago', 'industry open house', 'district outreach', 'small business', 'w912p6'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				discovery: 'Now to T-7 days',
+				prep: 'T-7 to T-1 days',
+				execution: 'Event day + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'SAM special notice: USACE Chicago Industry Open House',
+				url: 'https://sam.gov/workspace/contract/opp/bad041f46b4c44df889d99a2ece67e8e/view',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
+			},
+			{
+				name: 'WISPRO community event listing',
+				url: 'https://www.wispro.org/event/chicago-district-corps-of-engineers-open-house-chicago-il/',
+				type: 'community',
+				lastVerified: '2026-02-27',
+				confidence: 'Medium'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://sam.gov/workspace/contract/opp/bad041f46b4c44df889d99a2ece67e8e/view',
+				registration: 'https://sam.gov/workspace/contract/opp/bad041f46b4c44df889d99a2ece67e8e/view'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 600,
-					max: 2200
+					min: 0,
+					max: 300
 				},
 				travelBurdenFromDc: 'Medium'
-			}
+			},
+			acquisition:
+			{
+				engagementKinds: ['Industry Day', 'Special Notice', 'Sources Sought', 'Pre-solicitation'],
+				noticeType: 'District outreach plus near-term Chicago District project solicitations',
+				agency: 'USACE Chicago District (Great Lakes and Ohio Division)',
+				solicitationNumber: 'OSBP2601',
+				responseDueDate: '2026-03-31T23:45:00-04:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 2,
+					typeCounts:
+					{
+						'Special Notice': 1,
+						Solicitation: 1
+					},
+					topNotices: [
+					{
+						noticeId: 'bad041f46b4c44df889d99a2ece67e8e',
+						title: 'USACE Chicago Industry Open House',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-20',
+						responseDueDate: '2026-03-31T23:45:00-04:00',
+						solicitationNumber: 'OSBP2601',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION GREAT LAKES AND OHIO.ENDIST CHICAGO.W072 ENDIST CHICAGO',
+						uiLink: 'https://sam.gov/workspace/contract/opp/bad041f46b4c44df889d99a2ece67e8e/view'
+					},
+					{
+						noticeId: '04f158e4ad8b4ca888ca8326cdbbecda',
+						title: 'W912P626BA003 Chesterton Interceptor Rehab',
+						noticeType: 'Solicitation',
+						postedDate: '2026-02-09',
+						responseDueDate: '2026-03-04T14:00:00-06:00',
+						solicitationNumber: 'W912P626BA003',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION GREAT LAKES AND OHIO.ENDIST CHICAGO.W072 ENDIST CHICAGO',
+						naicsCode: '237990',
+						classificationCode: 'Y1NZ',
+						uiLink: 'https://sam.gov/workspace/contract/opp/04f158e4ad8b4ca888ca8326cdbbecda/view'
+					}
+					]
+				}
+			},
+			notes: 'SAM notice confirms April 1, 2026 (9:00 AM-3:00 PM CST) in-person open house at USACE Chicago District HQ, with registration/capability statements due March 31, 2026 via LRC.SBO@usace.army.mil.'
 		}
 	},
-{
-		id: 'radar-army-aviation-mission-solutions-summit-2026-quad-a',
+{		id: 'radar-army-aviation-mission-solutions-summit-2026-quad-a',
 		title: 'Army Aviation Mission Solutions Summit 2026 (Quad-A)',
 		description: 'PEO Aviation, FVL/FLRAA, sustainment, UAS, rotary wing modernization',
 		startDate: '2026-04-14',
