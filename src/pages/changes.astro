@@ -27,12 +27,44 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.62',
+		date: '2026-02-27',
+		title: 'Opportunities upgraded into interactive analytics cockpit',
+		summary: 'Expanded `/opportunities` with richer interactive visual analytics using ECharts: clickable agency/NAICS distributions, due-pressure scatter analysis, and upgraded timeline rendering.',
+		impact: 'You can now explore patterns by clicking charts directly and instantly pivot the table for deeper analysis.',
+		current: true,
+		tags: ['opportunities', 'analytics', 'visualization', 'ux', 'events'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added interactive `Gem score vs due pressure` scatter plot (bubble size by weight) with click-to-focus behavior.',
+					'Added chart click interactions on Top Agencies and Top NAICS to pivot table focus instantly.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Converted remaining opportunities visuals from static bars to ECharts-powered interactive charts.',
+					'Upgraded due timeline from static bars to smoothed trend visualization for faster temporal interpretation.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved visual analysis flow: each chart now acts as an exploration control surface, not just a display.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.61',
 		date: '2026-02-27',
 		title: 'Opportunity Table upgraded with release-age, sorting, and pagination controls',
 		summary: 'Upgraded the opportunities table into a full interactive data grid with per-column sorting, page-size controls, pager navigation, and a new Days Since Release signal for faster triage.',
 		impact: 'You can now scan large opportunity sets without scroll fatigue and sort exactly by the field you care about.',
-		current: true,
 		tags: ['opportunities', 'events', 'ux', 'table', 'analytics'],
 		groups: [
 			{

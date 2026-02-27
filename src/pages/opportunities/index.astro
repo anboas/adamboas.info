@@ -240,17 +240,25 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Top agencies</h2>
-			<div id="opp-viz-agencies" class="opp-bars"></div>
+			<p class="opp-subcopy">Click a bar to focus that agency family.</p>
+			<div id="opp-viz-agencies" class="opp-chart"></div>
 		</article>
 
 		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Top NAICS</h2>
-			<div id="opp-viz-naics" class="opp-bars"></div>
+			<p class="opp-subcopy">Click a bar to focus that NAICS code.</p>
+			<div id="opp-viz-naics" class="opp-chart"></div>
+		</article>
+
+		<article class="card p-4 opp-viz-card opp-viz-card-wide">
+			<h2 class="opp-subtitle">Gem score vs due pressure</h2>
+			<p class="opp-subcopy">Bubble size = weight. Click a point to focus that solicitation.</p>
+			<div id="opp-viz-scatter" class="opp-chart opp-chart-tall"></div>
 		</article>
 
 		<article class="card p-4 opp-viz-card opp-viz-card-wide">
 			<h2 class="opp-subtitle">Due timeline (next 6 months)</h2>
-			<div id="opp-viz-timeline" class="opp-bars"></div>
+			<div id="opp-viz-timeline" class="opp-chart"></div>
 		</article>
 	</section>
 
@@ -331,12 +339,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				types: document.getElementById('opp-viz-types'),
 				agencies: document.getElementById('opp-viz-agencies'),
 				naics: document.getElementById('opp-viz-naics'),
+				scatter: document.getElementById('opp-viz-scatter'),
 				timeline: document.getElementById('opp-viz-timeline'),
 			};
 
 			const charts = {
 				urgency: null,
 				types: null,
+				agencies: null,
+				naics: null,
+				scatter: null,
+				timeline: null,
 			};
 
 			const initChart = (key, node) => {
@@ -584,11 +597,88 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					renderBars(el.types, byType, 'No notice types');
 				}
 
-				const byAgency = countBy(items, (r) => r.agencyLabel);
-				renderBars(el.agencies, byAgency, 'No agencies');
+				const byAgency = countBy(items, (r) => r.agencyLabel).slice(0, 10);
+				const agencyChart = initChart('agencies', el.agencies);
+				if (agencyChart) {
+					agencyChart.setOption({
+						animationDuration: 220,
+						grid: { top: 8, right: 12, bottom: 12, left: 116 },
+						xAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						yAxis: { type: 'category', data: byAgency.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9, overflow: 'truncate', width: 108 } },
+						series: [{ type: 'bar', data: byAgency.map(([, value]) => value), itemStyle: { color: '#0ea5e9', borderRadius: [0, 2, 2, 0] }, barWidth: '56%' }],
+						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
+					});
+					if (!agencyChart.__boundClick) {
+						agencyChart.on('click', (params) => {
+							if (el.search) el.search.value = params.name || '';
+							tableState.page = 1;
+							render();
+						});
+						agencyChart.__boundClick = true;
+					}
+				} else {
+					renderBars(el.agencies, byAgency, 'No agencies');
+				}
 
-				const byNaics = countBy(items, (r) => r.naicsCode || null);
-				renderBars(el.naics, byNaics, 'No NAICS tags');
+				const byNaics = countBy(items, (r) => r.naicsCode || null).slice(0, 10);
+				const naicsChart = initChart('naics', el.naics);
+				if (naicsChart) {
+					naicsChart.setOption({
+						animationDuration: 220,
+						grid: { top: 10, right: 10, bottom: 38, left: 28 },
+						xAxis: { type: 'category', data: byNaics.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 18 } },
+						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						series: [{ type: 'bar', data: byNaics.map(([, value]) => value), itemStyle: { color: '#a78bfa', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 26 }],
+						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
+					});
+					if (!naicsChart.__boundClick) {
+						naicsChart.on('click', (params) => {
+							if (el.search) el.search.value = params.name || '';
+							tableState.page = 1;
+							render();
+						});
+						naicsChart.__boundClick = true;
+					}
+				} else {
+					renderBars(el.naics, byNaics, 'No NAICS tags');
+				}
+
+				const scatterData = items
+					.filter((row) => row.dueDays !== null)
+					.slice(0, 240)
+					.map((row) => ({
+						name: row.title,
+						value: [row.dueDays, Math.round(row.gemScore), Number(row.weight || 0), row.noticeType, row.uiLink || '', row.solicitationNumber || ''],
+					}));
+				const scatterChart = initChart('scatter', el.scatter);
+				if (scatterChart) {
+					scatterChart.setOption({
+						animationDuration: 220,
+						grid: { top: 12, right: 12, bottom: 28, left: 44 },
+						xAxis: { type: 'value', name: 'days to due', nameTextStyle: { color: '#94a3b8', fontSize: 10 }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						yAxis: { type: 'value', name: 'gem', nameTextStyle: { color: '#94a3b8', fontSize: 10 }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						series: [{
+							type: 'scatter',
+							data: scatterData,
+							symbolSize: (val) => Math.max(6, Math.min(20, Number(val?.[2] || 0) * 0.9)),
+							itemStyle: { color: '#22c55e', opacity: 0.78 },
+						}],
+						tooltip: {
+							formatter: (p) => {
+								const v = p.value || [];
+								return `<strong>${escapeHtml(p.name || '')}</strong><br/>gem: ${v[1]} | weight: ${v[2]}<br/>due in: ${v[0]}d<br/>${escapeHtml(v[3] || '')}`;
+							},
+						},
+					});
+					if (!scatterChart.__boundClick) {
+						scatterChart.on('click', (params) => {
+							if (el.search) el.search.value = params.name || '';
+							tableState.page = 1;
+							render();
+						});
+						scatterChart.__boundClick = true;
+					}
+				}
 
 				const monthBuckets = new Map();
 				for (const row of items) {
@@ -603,7 +693,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const label = dt.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
 					return [label, value];
 				});
-				renderBars(el.timeline, timeline, 'No near-term due timeline');
+				const timelineChart = initChart('timeline', el.timeline);
+				if (timelineChart) {
+					timelineChart.setOption({
+						animationDuration: 220,
+						grid: { top: 12, right: 12, bottom: 22, left: 36 },
+						xAxis: { type: 'category', data: timeline.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 10 } },
+						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						series: [{ type: 'line', smooth: true, data: timeline.map(([, value]) => value), symbolSize: 7, lineStyle: { width: 2, color: '#06b6d4' }, areaStyle: { color: 'rgba(6,182,212,0.17)' }, itemStyle: { color: '#06b6d4' } }],
+						tooltip: { trigger: 'axis' },
+					});
+				} else {
+					renderBars(el.timeline, timeline, 'No near-term due timeline');
+				}
 			};
 
 			const dueClass = (row) => {
