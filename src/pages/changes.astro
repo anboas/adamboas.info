@@ -27,12 +27,50 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.3.59',
+		date: '2026-02-27',
+		title: 'Opportunity Intelligence mirror launched with rendering + CI hardening',
+		summary: 'Shipped a new `/opportunities` intelligence surface with full filtering, ranked gem detection, and visual analytics across cached SAM opportunity data; then patched rendering and deploy blockers.',
+		impact: 'You can now scan and triage opportunities directly from one page, while CI/deploy reliability was tightened to keep dev pages moving.',
+		current: true,
+		tags: ['events', 'opportunities', 'sam', 'ux', 'platform', 'ci'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `/opportunities` page that deduplicates cached SAM intelligence across enriched events into one mirror table.',
+					'Added filters/sorting for search, notice type, branch, due windows, minimum weight, focus-only mode, and gem ranking.',
+					'Added visual analytics blocks: gem picks, urgency distribution, notice mix, top agencies, top NAICS, and due timeline.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Added Opportunities to desktop/mobile navigation and global keyboard shortcuts (`g` then `o`).',
+					'Trimmed opportunity page header copy to remove the “Open this page to answer...” sentence per request.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Adjusted strict linkcheck policy to reduce false deploy blocks (moved `xponential.org` to warn tier; accepted HTTP 202 in strict checks).',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Fixed opportunities client dataset embedding so table/charts/gem list render instead of showing empty sections.',
+				],
+			},
+		],
+	},
+
+	{
 		version: 'v2.3.58',
 		date: '2026-02-24',
 		title: 'Map popup calendar links now show icons only',
 		summary: 'Updated calendar links in event map popups to icon-only actions (🍎 / 🗓️ / 📘) while preserving accessibility labels/tooltips.',
 		impact: 'Calendar popup actions are cleaner and more compact, matching your icon-first preference without losing clarity.',
-		current: true,
 		tags: ['events', 'ux', 'calendar', 'map', 'icons'],
 		groups: [
 			{
