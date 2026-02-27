@@ -2077,9 +2077,10 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Official SAME pages confirm a March 18-19, 2026 two-day format at Charleston Marriott with golf, harbor reception, and Industry Day sessions. Published agenda lists USACE Charleston/Savannah/Wilmington, NAVFAC Southeast, US Coast Guard, and Joint Base Charleston speakers with registration and hotel block links live.'
 		}
 	},
-{		id: 'radar-satshow-satellite-2026',
-		title: 'SATShow / SATELLITE 2026',
-		description: 'Satellite communications, space technology, GovMilSpace',
+{
+		id: 'radar-satshow-satellite-2026',
+		title: 'SATShow Week 2026 (SATELLITE + GovMilSpace)',
+		description: 'Flagship satellite and space-communications week combining SATELLITE and GovMilSpace, with strong commercial, government, and military participation in Washington, DC.',
 		startDate: '2026-03-23',
 		endDate: '2026-03-26',
 		branch: 'Joint',
@@ -2092,47 +2093,151 @@ export const radarEventsSeed: RadarEvent[] = [
 			city: 'Washington',
 			state: 'DC',
 			country: 'USA',
-			lat: 38.8950368,
-			lng: -77.0365427
+			lat: 38.9050,
+			lng: -77.0230,
+			venue: 'Walter E. Washington Convention Center'
 		},
 		ontology: 
 		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['satshow', 'satellite', '2026'],
-			relatedPrograms: ['Radar expansion'],
+			themes: ['Satellite and space communications market intelligence', 'Government-military space collaboration', 'Space-domain capability scouting'],
+			capabilityAreas: ['Satcom architectures', 'Space domain awareness', 'Mission communications resilience'],
+			missionThreads: ['Gov-industry space integration', 'Technology scouting', 'Partnership and capture shaping'],
+			stakeholders: ['SATELLITE organizers', 'GovMilSpace leaders', 'U.S. Space Force stakeholders', 'DoD space acquisition teams', 'Commercial satcom operators'],
+			keywords: ['satshow', 'satellite', 'govmilspace', 'satcom', 'space domain awareness', 'space force'],
+			relatedPrograms: ['Radar expansion', 'Opportunity intelligence'],
 			decisionWindows: 
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
+				discovery: 'Now to T-10 days',
+				prep: 'T-10 to T-1 days',
 				execution: 'Event week + 14-day follow-up'
 			},
 			provenance: [
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
+				name: 'SATShow Week official site',
+				url: 'https://www.satshow.com/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'SATShow registration page',
+				url: 'https://www.satshow.com/register/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'SATELLITE + GovMilSpace agenda expansion release',
+				url: 'https://www.satshow.com/satellite-and-govmilspace-announce-expanded-conference-agenda-designed-to-bolster-the-satellite-and-space-industry-at-satshow-week-2026/',
+				type: 'official',
+				lastVerified: '2026-02-27',
+				confidence: 'High'
+			},
+			{
+				name: 'GovMilSpace program page',
+				url: 'https://www.satshow.com/govmilspace/',
+				type: 'official',
+				lastVerified: '2026-02-27',
 				confidence: 'High'
 			}],
-			links: {},
+			links: 
+			{
+				official: 'https://www.satshow.com/',
+				registration: 'https://www.satshow.com/register/',
+				agenda: 'https://www.satshow.com/satellite-and-govmilspace-announce-expanded-conference-agenda-designed-to-bolster-the-satellite-and-space-industry-at-satshow-week-2026/',
+				exhibitors: 'https://www.satshow.com/exhibit-sponsor/'
+			},
 			logistics: 
 			{
 				format: 'In-person',
 				estimatedCostUsd: 
 				{
-					min: 150,
-					max: 900
+					min: 299,
+					max: 3199
 				},
 				travelBurdenFromDc: 'Low'
 			},
-			notes: 'World\'s largest satellite/space communications event. 15,000+ registrants, 450+ exhibitors. Walter E. Washington Convention Center.'
+			acquisition:
+			{
+				engagementKinds: ['Special Notice', 'Sources Sought', 'Pre-solicitation', 'Vendor Outreach'],
+				noticeType: 'Space domain awareness and satellite mission-support opportunities tied to DoD/USSF demand signals',
+				agency: 'U.S. Space Force / DoD space acquisition organizations',
+				solicitationNumber: 'FA2518-25-S-C001',
+				responseDueDate: '2026-03-20T17:00:00-07:00',
+				samIntelligence:
+				{
+					collectedAt: '2026-02-27',
+					postedFrom: '01/01/2026',
+					postedTo: '02/27/2026',
+					noticeTypes: ['p', 'r', 's', 'o', 'k'],
+					totalMatched: 5,
+					typeCounts:
+					{
+						'Combined Synopsis/Solicitation': 1,
+						'Special Notice': 3,
+						'Sources Sought': 1
+					},
+					topNotices: [
+					{
+						noticeId: 'c2b581d2f96b4930ab4558fa04cf5daa',
+						title: 'Commercial Solutions Opening (CSO) for Space Domain Awareness (SDA) Solutions.',
+						noticeType: 'Combined Synopsis/Solicitation',
+						postedDate: '2026-02-25',
+						responseDueDate: '2030-01-23T12:00:00-07:00',
+						solicitationNumber: 'FA2518-25-S-C001',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPACE COMMAND.FA2518 USSF SPOC/SAIO',
+						naicsCode: '541715',
+						classificationCode: 'AR12',
+						uiLink: 'https://sam.gov/workspace/contract/opp/c2b581d2f96b4930ab4558fa04cf5daa/view'
+					},
+					{
+						noticeId: 'd2d77b78d00941b9a19f34bb41c6b1db',
+						title: 'Kill-web Operations Sustainment & Maintenance Of SDA (Space Domain Awareness) Systems (KOSMOSS)',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-06',
+						solicitationNumber: 'SSC_BMC3I_SpOC_MD2_2STS_KOSMOSS_02062026Update',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPACE COMMAND.SPACE AND MISSILE CENTER.SPACE SYSTEMS2.FA8820  SUSTAINMENT SDACP SSC/PKL',
+						naicsCode: '541330',
+						uiLink: 'https://sam.gov/workspace/contract/opp/d2d77b78d00941b9a19f34bb41c6b1db/view'
+					},
+					{
+						noticeId: '13dadac815274062b002c1f90d36cd89',
+						title: 'Commercial Space Domain Awareness (SDA), Sensors as a Service',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-06',
+						solicitationNumber: 'FA882025R0001_SDA_SensorsAsAService_02062026Update',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPACE COMMAND.SPACE AND MISSILE CENTER.SPACE SYSTEMS2.FA8820  SUSTAINMENT SDACP SSC/PKL',
+						naicsCode: '541715',
+						classificationCode: '5840',
+						uiLink: 'https://sam.gov/workspace/contract/opp/13dadac815274062b002c1f90d36cd89/view'
+					},
+					{
+						noticeId: '0a1e81c4bb3b4931b9e1a1979dbbcbdf',
+						title: 'Space Domain Awareness (SDA) Novel Innovation Pipeline for Enhanced Resilience (SNIPER)',
+						noticeType: 'Special Notice',
+						postedDate: '2026-02-06',
+						solicitationNumber: 'SSC_BMC3I_SpOC_MD2_2STS_SNIPER_020626Update',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPACE COMMAND.SPACE AND MISSILE CENTER.SPACE SYSTEMS2.FA8820  SUSTAINMENT SDACP SSC/PKL',
+						naicsCode: '541330',
+						uiLink: 'https://sam.gov/workspace/contract/opp/0a1e81c4bb3b4931b9e1a1979dbbcbdf/view'
+					},
+					{
+						noticeId: 'bad8794abf484b5bbc03c3b09a3d7ce9',
+						title: 'Space Domain Awareness (SDA) Request for Information (RFI)',
+						noticeType: 'Sources Sought',
+						postedDate: '2026-02-19',
+						responseDueDate: '2026-03-20T17:00:00-07:00',
+						solicitationNumber: 'SSCIA-26-FMS01',
+						agencyPath: 'DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA8802 INTEGRATION OPERATION PIKPKE',
+						uiLink: 'https://sam.gov/workspace/contract/opp/bad8794abf484b5bbc03c3b09a3d7ce9/view'
+					}
+					]
+				}
+			},
+			notes: 'Official SATShow sources confirm March 23-26, 2026 at the Walter E. Washington Convention Center, with SATELLITE and GovMilSpace unified under one pass structure. Published event material emphasizes 15,000+ attendees, 450+ exhibitors, expanded government/military programming, and dedicated engineering tech seminars.'
 		}
 	},
-{
-		id: 'radar-qsecdef-world-symposium',
+{		id: 'radar-qsecdef-world-symposium',
 		title: 'QSECDEF World Symposium',
 		description: 'Inaugural quantum security for defense, quantum-secure communications',
 		startDate: '2026-03-24',
