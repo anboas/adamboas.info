@@ -15,6 +15,7 @@ const POLICY = {
     'usace.army.mil',
     'calendar.google.com',
     'ausa.org',
+    'xponential.org',
   ],
   ignoreDomains: [
     'adamboas.info',
