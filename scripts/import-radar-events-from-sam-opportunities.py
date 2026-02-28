@@ -28,7 +28,7 @@ import os
 import re
 import time
 from dataclasses import dataclass, asdict
-from datetime import UTC, date, datetime, timedelta
+from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -133,7 +133,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     today = date.today()
     default_from = date(today.year, 1, 1).strftime("%m/%d/%Y")
-    default_to = (today + timedelta(days=365)).strftime("%m/%d/%Y")
+    default_to = today.strftime("%m/%d/%Y")
 
     parser.add_argument("--api-key", default=None)
     parser.add_argument("--posted-from", default=default_from)
