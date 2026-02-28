@@ -18,6 +18,8 @@ type OpportunityRow = {
 	naicsCode: string | null;
 	classificationCode: string | null;
 	uiLink: string | null;
+	detailUrl: string | null;
+	detailPreview: string | null;
 	detailTextLength: number;
 	resourceLinks: Set<string>;
 	resourceCount: number;
@@ -50,6 +52,14 @@ function toArray(set: Set<string>) {
 	return [...set].filter(Boolean).sort((a, b) => a.localeCompare(b));
 }
 
+const DETAIL_PREVIEW_MAX_CHARS = 8000;
+
+function toDetailPreview(value: any) {
+	const text = String(value ?? '').replace(/\s+/g, ' ').trim();
+	if (!text) return null;
+	return text.slice(0, DETAIL_PREVIEW_MAX_CHARS);
+}
+
 const opportunityMap = new Map<string, OpportunityRow>();
 let totalRawNotices = 0;
 let eventsWithSam = 0;
@@ -77,6 +87,8 @@ for (const event of radarEventsSeed) {
 				naicsCode: notice.naicsCode ?? null,
 				classificationCode: notice.classificationCode ?? null,
 				uiLink: notice.uiLink ?? null,
+				detailUrl: notice.detailUrl ?? notice.detail_url ?? notice.uiLink ?? null,
+				detailPreview: toDetailPreview(notice.detailText ?? notice.detail_text ?? null),
 				detailTextLength: Number(notice.detailTextLength ?? notice.detail_text_length ?? 0),
 				resourceLinks: new Set<string>((notice.resourceLinks ?? notice.resource_links ?? []).filter(Boolean)),
 				resourceCount: Number(notice.resourceCount ?? notice.resource_count ?? 0),
@@ -99,7 +111,10 @@ for (const event of radarEventsSeed) {
 		row.naicsCode = row.naicsCode ?? notice.naicsCode ?? null;
 		row.classificationCode = row.classificationCode ?? notice.classificationCode ?? null;
 		row.uiLink = row.uiLink ?? notice.uiLink ?? null;
-		row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? notice.detail_text_length ?? 0));
+		row.detailUrl = row.detailUrl ?? notice.detailUrl ?? notice.detail_url ?? notice.uiLink ?? null;
+		const noticePreview = toDetailPreview(notice.detailText ?? notice.detail_text ?? null);
+		if (!row.detailPreview || (noticePreview && noticePreview.length > row.detailPreview.length)) row.detailPreview = noticePreview;
+		row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? notice.detail_text_length ?? (noticePreview?.length ?? 0)));
 		for (const link of (notice.resourceLinks ?? notice.resource_links ?? [])) {
 			if (link) row.resourceLinks.add(String(link));
 		}
@@ -126,6 +141,8 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 		classificationCode: candidate.classification_code ?? null,
 		uiLink: candidate.ui_link ?? candidate.opportunity_url ?? null,
 		score: Number(candidate.relevance_score ?? 0),
+		detailUrl: candidate.detail_url ?? null,
+		detailPreview: toDetailPreview(candidate.detail_text ?? null),
 		detailTextLength: Number(candidate.detail_text_length ?? 0),
 		resourceLinks: Array.isArray(candidate.resource_links) ? candidate.resource_links : [],
 		resourceCount: Number(candidate.resource_count ?? 0),
@@ -144,6 +161,8 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 			naicsCode: notice.naicsCode,
 			classificationCode: notice.classificationCode,
 			uiLink: notice.uiLink,
+			detailUrl: notice.detailUrl ?? notice.uiLink ?? null,
+			detailPreview: notice.detailPreview ?? null,
 			detailTextLength: Number(notice.detailTextLength ?? 0),
 			resourceLinks: new Set<string>((notice.resourceLinks ?? []).filter(Boolean)),
 			resourceCount: Number(notice.resourceCount ?? 0),
@@ -163,7 +182,9 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 	row.solicitationNumber = row.solicitationNumber ?? notice.solicitationNumber;
 	row.agencyPath = row.agencyPath ?? notice.agencyPath;
 	row.uiLink = row.uiLink ?? notice.uiLink;
-	row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? 0));
+	row.detailUrl = row.detailUrl ?? notice.detailUrl ?? notice.uiLink ?? null;
+	if (!row.detailPreview || ((notice.detailPreview ?? '').length > row.detailPreview.length)) row.detailPreview = notice.detailPreview ?? row.detailPreview;
+	row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? (notice.detailPreview?.length ?? 0)));
 	for (const link of (notice.resourceLinks ?? [])) {
 		if (link) row.resourceLinks.add(String(link));
 	}
@@ -184,7 +205,10 @@ const opportunities = [...opportunityMap.values()]
 		naicsCode: row.naicsCode,
 		classificationCode: row.classificationCode,
 		uiLink: row.uiLink,
+		detailUrl: row.detailUrl,
+		detailPreview: row.detailPreview,
 		detailTextLength: row.detailTextLength,
+		resourceLinks: toArray(row.resourceLinks),
 		resourceCount: Math.max(row.resourceCount, row.resourceLinks.size),
 		weight: row.weight,
 		eventIds: toArray(row.eventIds),
@@ -413,12 +437,45 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<th><button class="opp-sort-btn" data-sort="workType" type="button">Work type</button></th>
 						<th><button class="opp-sort-btn" data-sort="naics" type="button">NAICS</button></th>
 						<th><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Mapped events</button></th>
+						<th>Intel view</th>
 					</tr>
 				</thead>
 				<tbody id="opp-table-body"></tbody>
 			</table>
 		</div>
 	</section>
+
+	<div id="opp-intel-modal" class="opp-modal" hidden aria-hidden="true">
+		<div class="opp-modal-backdrop" data-opp-modal-close></div>
+		<div class="opp-modal-panel" role="dialog" aria-modal="true" aria-labelledby="opp-modal-title">
+			<div class="opp-modal-head">
+				<h3 id="opp-modal-title" class="opp-modal-title">Opportunity intel</h3>
+				<button id="opp-modal-close" class="opp-modal-close" type="button" aria-label="Close intel modal">✕</button>
+			</div>
+			<div class="opp-modal-meta">
+				<span><strong>Client:</strong> <span id="opp-modal-client">—</span></span>
+				<span><strong>Work:</strong> <span id="opp-modal-work">—</span></span>
+				<span><strong>Agency:</strong> <span id="opp-modal-agency">—</span></span>
+				<span><strong>Type:</strong> <span id="opp-modal-type">—</span></span>
+				<span><strong>Due:</strong> <span id="opp-modal-due">—</span></span>
+				<span><strong>Intel:</strong> <span id="opp-modal-intel">—</span></span>
+			</div>
+			<div class="opp-modal-links">
+				<a id="opp-modal-link" href="#" target="_blank" rel="noreferrer" hidden>Open SAM notice ↗</a>
+				<a id="opp-modal-detail-link" href="#" target="_blank" rel="noreferrer" hidden>Open detail endpoint ↗</a>
+			</div>
+			<div class="opp-modal-body">
+				<div>
+					<p class="opp-modal-section-title">Deep text preview</p>
+					<pre id="opp-modal-detail" class="opp-modal-detail">No deep text captured for this notice yet.</pre>
+				</div>
+				<div>
+					<p class="opp-modal-section-title">Attachments / resource links</p>
+					<ul id="opp-modal-files" class="opp-modal-files"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script id="opp-data" type="application/json" set:html={opportunitiesJson}></script>
 	<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
@@ -460,6 +517,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				agencies: document.getElementById('opp-viz-agencies'),
 				workmix: document.getElementById('opp-viz-workmix'),
 				naics: document.getElementById('opp-viz-naics'),
+				modal: document.getElementById('opp-intel-modal'),
+				modalClose: document.getElementById('opp-modal-close'),
+				modalCloseTargets: Array.from(document.querySelectorAll('[data-opp-modal-close]')),
+				modalTitle: document.getElementById('opp-modal-title'),
+				modalClient: document.getElementById('opp-modal-client'),
+				modalWork: document.getElementById('opp-modal-work'),
+				modalAgency: document.getElementById('opp-modal-agency'),
+				modalType: document.getElementById('opp-modal-type'),
+				modalDue: document.getElementById('opp-modal-due'),
+				modalIntel: document.getElementById('opp-modal-intel'),
+				modalLink: document.getElementById('opp-modal-link'),
+				modalDetailLink: document.getElementById('opp-modal-detail-link'),
+				modalDetail: document.getElementById('opp-modal-detail'),
+				modalFiles: document.getElementById('opp-modal-files'),
 			};
 
 			const charts = {
@@ -943,6 +1014,75 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return row.dueDays < 0 ? 'opp-due-past' : 'opp-due-future';
 			};
 
+			let modalLastFocus = null;
+
+			const closeIntelModal = () => {
+				if (!el.modal) return;
+				el.modal.setAttribute('hidden', '');
+				el.modal.setAttribute('aria-hidden', 'true');
+				document.body.classList.remove('opp-modal-open');
+				if (modalLastFocus && typeof modalLastFocus.focus === 'function') modalLastFocus.focus();
+				modalLastFocus = null;
+			};
+
+			const openIntelModal = (row, triggerNode = null) => {
+				if (!el.modal) return;
+				modalLastFocus = triggerNode;
+				if (el.modalTitle) el.modalTitle.textContent = row.title || 'Opportunity intel';
+				if (el.modalClient) el.modalClient.textContent = row.clientLabel || 'Unknown';
+				if (el.modalWork) el.modalWork.textContent = row.workTypeLabel || 'General/Other';
+				if (el.modalAgency) el.modalAgency.textContent = row.agencyLabel || 'Unknown';
+				if (el.modalType) el.modalType.textContent = row.noticeType || '—';
+				if (el.modalDue) el.modalDue.textContent = fmtDate(row.responseDueDate);
+				if (el.modalIntel) el.modalIntel.textContent = `${Number(row.detailTextLength || 0).toLocaleString()} chars · ${Number(row.resourceCount || 0)} file links`;
+
+				if (el.modalLink) {
+					if (row.uiLink) {
+						el.modalLink.removeAttribute('hidden');
+						el.modalLink.setAttribute('href', row.uiLink);
+					} else {
+						el.modalLink.setAttribute('hidden', '');
+						el.modalLink.setAttribute('href', '#');
+					}
+				}
+				if (el.modalDetailLink) {
+					if (row.detailUrl && row.detailUrl !== row.uiLink) {
+						el.modalDetailLink.removeAttribute('hidden');
+						el.modalDetailLink.setAttribute('href', row.detailUrl);
+					} else {
+						el.modalDetailLink.setAttribute('hidden', '');
+						el.modalDetailLink.setAttribute('href', '#');
+					}
+				}
+
+				if (el.modalDetail) {
+					const preview = String(row.detailPreview || '').trim();
+					if (!preview) {
+						el.modalDetail.textContent = 'No deep text captured for this notice yet.';
+					} else {
+						const truncated = Number(row.detailTextLength || 0) > preview.length;
+						el.modalDetail.textContent = truncated ? `${preview}\n\n[Preview truncated. Open SAM notice for full text.]` : preview;
+					}
+				}
+
+				if (el.modalFiles) {
+					const links = Array.isArray(row.resourceLinks) ? row.resourceLinks.filter(Boolean) : [];
+					if (!links.length) {
+						el.modalFiles.innerHTML = '<li class="opp-subcopy">No attachments/resource links captured for this notice.</li>';
+					} else {
+						el.modalFiles.innerHTML = links.slice(0, 60).map((link) => {
+							const label = String(link).replace(/^https?:\/\//i, '');
+							return `<li><a href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a></li>`;
+						}).join('');
+					}
+				}
+
+				el.modal.removeAttribute('hidden');
+				el.modal.setAttribute('aria-hidden', 'false');
+				document.body.classList.add('opp-modal-open');
+				if (el.modalClose) el.modalClose.focus();
+			};
+
 			const gemTier = (score) => {
 				if (score >= 36) return 'High';
 				if (score >= 26) return 'Medium';
@@ -1047,11 +1187,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const renderTable = (items) => {
 				if (!el.body) return;
 				if (!items.length) {
-					el.body.innerHTML = '<tr><td colspan="15" class="opp-empty">No opportunities match your current filters.</td></tr>';
+					el.body.innerHTML = '<tr><td colspan="16" class="opp-empty">No opportunities match your current filters.</td></tr>';
 					return;
 				}
 
-				el.body.innerHTML = items.map((row) => {
+				el.body.innerHTML = items.map((row, idx) => {
 					const days = row.dueDays === null ? '—' : (row.dueDays < 0 ? '-' : String(row.dueDays));
 					const daysSinceRelease = row.postedDays === null ? '—' : String(row.postedDays);
 					const intelDepth = row.intelDepthScore ? String(Math.round(row.intelDepthScore)) : '—';
@@ -1078,8 +1218,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<td title="${escapeHtml((row.workTypes || []).map((key) => workTypeLabel[key] || key).join(', '))}">${escapeHtml(row.workTypeLabel || 'General/Other')}</td>
 						<td class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
 						<td><div class="opp-pill-wrap">${mapped || '—'}</div></td>
+						<td class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
 					</tr>`;
 				}).join('');
+
+				for (const button of el.body.querySelectorAll('.opp-intel-open')) {
+					button.addEventListener('click', () => {
+						const idx = Number(button.getAttribute('data-row-idx') || -1);
+						if (idx < 0 || idx >= items.length) return;
+						openIntelModal(items[idx], button);
+					});
+				}
 			};
 
 			const render = () => {
@@ -1174,6 +1323,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				tableState.sortKey = 'gemScore';
 				tableState.sortDir = 'desc';
 				render();
+			});
+
+			el.modalClose?.addEventListener('click', closeIntelModal);
+			for (const node of el.modalCloseTargets || []) {
+				node.addEventListener('click', closeIntelModal);
+			}
+			document.addEventListener('keydown', (event) => {
+				if (event.key !== 'Escape') return;
+				if (!el.modal || el.modal.hasAttribute('hidden')) return;
+				closeIntelModal();
 			});
 
 			hydrateClientFilterOptions();
@@ -1685,6 +1844,137 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		color: rgba(148, 163, 184, 0.95);
 		padding: 1.1rem 0.7rem !important;
 	}
+	.opp-intel-open {
+		height: 1.45rem;
+		padding: 0 0.5rem;
+		border: 1px solid rgba(56, 189, 248, 0.7);
+		background: rgba(14, 165, 233, 0.18);
+		color: rgba(224, 242, 254, 0.98);
+		font-size: 0.63rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.opp-intel-open:hover {
+		background: rgba(14, 165, 233, 0.28);
+	}
+
+	.opp-modal {
+		position: fixed;
+		inset: 0;
+		z-index: 70;
+		display: grid;
+		place-items: center;
+		padding: 1rem;
+	}
+	.opp-modal[hidden] {
+		display: none;
+	}
+	.opp-modal-backdrop {
+		position: absolute;
+		inset: 0;
+		background: rgba(2, 6, 23, 0.78);
+		backdrop-filter: blur(1.5px);
+	}
+	.opp-modal-panel {
+		position: relative;
+		width: min(1100px, 96vw);
+		max-height: min(88vh, 980px);
+		overflow: auto;
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgba(2, 6, 23, 0.98);
+		padding: 0.88rem;
+		display: grid;
+		gap: 0.7rem;
+	}
+	.opp-modal-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.6rem;
+	}
+	.opp-modal-title {
+		font-size: 0.9rem;
+		color: rgba(226, 232, 240, 0.98);
+	}
+	.opp-modal-close {
+		height: 1.75rem;
+		min-width: 1.85rem;
+		border: 1px solid rgba(71, 85, 105, 0.9);
+		background: rgba(15, 23, 42, 0.86);
+		color: rgba(226, 232, 240, 0.98);
+	}
+	.opp-modal-meta {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.4rem;
+		font-size: 0.7rem;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.opp-modal-meta strong {
+		color: rgba(203, 213, 225, 0.97);
+	}
+	.opp-modal-links {
+		display: flex;
+		gap: 0.65rem;
+		flex-wrap: wrap;
+		font-size: 0.72rem;
+	}
+	.opp-modal-links a {
+		color: rgba(125, 211, 252, 0.98);
+		text-decoration: none;
+	}
+	.opp-modal-links a:hover {
+		text-decoration: underline;
+	}
+	.opp-modal-body {
+		display: grid;
+		grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+		gap: 0.72rem;
+	}
+	.opp-modal-section-title {
+		font-size: 0.64rem;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: rgba(148, 163, 184, 0.95);
+		margin-bottom: 0.34rem;
+	}
+	.opp-modal-detail {
+		white-space: pre-wrap;
+		word-break: break-word;
+		max-height: 58vh;
+		overflow: auto;
+		margin: 0;
+		padding: 0.58rem;
+		border: 1px solid rgba(51, 65, 85, 0.84);
+		background: rgba(15, 23, 42, 0.74);
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+		font-size: 0.67rem;
+		line-height: 1.45;
+		color: rgba(203, 213, 225, 0.97);
+	}
+	.opp-modal-files {
+		margin: 0;
+		padding-left: 1rem;
+		display: grid;
+		gap: 0.34rem;
+		max-height: 58vh;
+		overflow: auto;
+	}
+	.opp-modal-files li {
+		font-size: 0.68rem;
+		color: rgba(203, 213, 225, 0.96);
+		word-break: break-all;
+	}
+	.opp-modal-files a {
+		color: rgba(125, 211, 252, 0.98);
+		text-decoration: none;
+	}
+	.opp-modal-files a:hover {
+		text-decoration: underline;
+	}
+	body.opp-modal-open {
+		overflow: hidden;
+	}
 
 	@media (max-width: 1279px) {
 		.opp-controls-grid {
@@ -1729,6 +2019,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		.opp-gem-list {
 			max-height: none;
 			padding-right: 0;
+		}
+		.opp-modal-panel {
+			max-height: 92vh;
+			padding: 0.72rem;
+		}
+		.opp-modal-meta {
+			grid-template-columns: 1fr;
+		}
+		.opp-modal-body {
+			grid-template-columns: 1fr;
 		}
 		.opp-table-controls {
 			flex-direction: column;

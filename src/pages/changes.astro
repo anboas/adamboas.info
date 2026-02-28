@@ -28,12 +28,44 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.67',
+		date: '2026-02-28',
+		title: 'Opportunities intel modal: deep text + attachments in-page',
+		summary: 'Added an in-page intel modal on `/opportunities` so each solicitation can be opened directly for deep-text preview and attachment/resource-link review.',
+		impact: 'You can now inspect notice intelligence context without leaving the opportunities workflow, then jump to source links only when needed.',
+		current: true,
+		tags: ['opportunities', 'sam', 'ux', 'analytics', 'business-development', 'intel'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added per-row `Open` intel action in Opportunity Table.',
+					'Added modal with solicitation metadata (who/what/agency/type/due/intel depth) plus deep-text preview and attachment/resource-link list.',
+					'Added direct links from modal to SAM notice and detail endpoint when available.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Extended opportunities client payload to include detail preview text, detail URL, and captured resource link arrays.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Added modal keyboard/backdrop close behavior and responsive layout for mobile review workflows.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.66',
 		date: '2026-02-28',
 		title: 'Opportunities WHO/WHAT client intelligence explorer',
 		summary: 'Expanded `/opportunities` so you can directly target buyer organizations (WHO) and work lanes (WHAT) with explicit filters, visual distributions, and table columns.',
 		impact: 'You can now isolate likely client accounts and capability demand patterns in one workflow, then pivot into specific solicitations without leaving the page.',
-		current: true,
 		tags: ['opportunities', 'events', 'sam', 'ux', 'analytics', 'business-development'],
 		groups: [
 			{
