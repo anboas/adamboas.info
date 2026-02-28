@@ -1,19 +1,19 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-02-28T05:01:58.242100+00:00
+Generated: 2026-02-28T16:30:43.477334+00:00
 Profile: all
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 02/27/2026
+Posted range: 01/01/2026 -> 02/28/2026
 
 ## Counts
-- Total candidates: 700
+- Total candidates: 699
 - Navy-related: 171
-- Full detail cached: 700
-- Notices with attachments: 424
-- Total attachment links: 917
+- Full detail cached: 11
+- Notices with attachments: 421
+- Total attachment links: 911
 - Combined Synopsis/Solicitation: 15
 - Pre-solicitation: 209
-- Solicitation: 58
+- Solicitation: 57
 - Sources Sought: 209
 - Special Notice: 209
 
@@ -27,16 +27,12 @@ Posted range: 01/01/2026 -> 02/27/2026
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2025-05-09 | GENERAL SERVICES ADMINISTRATION | [New United States Courthouse, Chattanooga- Construction Manager as Constructor (CMc)](https://sam.gov/opp/95f62e24ca1846b99f0ff847c54d1031/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-27 | 2025-07-09 | DEPT OF DEFENSE | [KC-135 Center Console Refresh (CCR) Revision 2](https://sam.gov/opp/61a50c3dc7a44e9aa87bc5edb03b84bb/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-26 | 2025-08-29 | GENERAL SERVICES ADMINISTRATION | [US GOVERNMENT SEEKS TO LEASE SPACE IN ROLLA, MO](https://sam.gov/opp/3a5fd0ab98d7415e848dfb6b7ef28a7b/view) |
 | 7 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-27 | 2025-09-10 | DEPT OF DEFENSE | [RFI - NCIS Case Management System](https://sam.gov/opp/8a2bfba2379349a6a8ba15cdb1b16564/view) |
 | 2 | Special Notice | Special Notice | 2026-02-27 | 2025-09-22 | DEPT OF DEFENSE | [National Space Test and Training Complex (NSTTC) Innovative Technology & Engineering - Space Test and Range (NITE-STAR) - Capability Development](https://sam.gov/opp/e33e13bdfc9a4f26b25714e7431c1292/view) |
-| 5 | Special Notice | Special Notice | 2026-02-27 | 2025-12-17 | DEPT OF DEFENSE | [Open Text Media Management Software and Support Services Upgrade](https://sam.gov/opp/b918c099907f4f6f8dc77727b64ad9a1/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2025-12-29 | DEPT OF DEFENSE | [Dana (9R200) spare parts](https://sam.gov/opp/e7896ddf2597471cbe3854a251f0c2c2/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-01-02 | VETERANS AFFAIRS, DEPARTMENT OF | [National Cemetery Administration - Furniture Purchase/Deliver/Installation - Black Hills National Cemetery - N071](https://sam.gov/opp/2882da0b87bf431f9782b35effb9f69f/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-01-20 | DEPT OF DEFENSE | [Commercial and Military Satellite Communications Operations Support (COSMOS)](https://sam.gov/opp/d2df7e86f0664b90a64bbfef00945627/view) |
-| 4 | Solicitation | - | 2026-02-27 | 2026-02-04 | DEPT OF DEFENSE | [AZURE CONSUMPTION LICENSE](https://sam.gov/opp/a294a72c28cf4265bcf1f6a0db983dde/view) |
 | 5 | Special Notice | Special Notice | 2026-02-25 | 2026-02-20 | DEPT OF DEFENSE | [P617 TRANSIT PROTECTION PROGRAM FACILITY, NSB KINGS BAY, GA](https://sam.gov/opp/4bde9378e2f04348a191c450a106c4c3/view) |
 | 4 | Solicitation | - | 2026-02-27 | 2026-02-23 | DEPT OF DEFENSE | [PRINTED CIRCUIT BOA](https://sam.gov/opp/9308b4198dd94da0876a9ec0dced59ea/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-02-25 | HOMELAND SECURITY, DEPARTMENT OF | [4DV Insight Software Buy](https://sam.gov/opp/ee34cada7a254e0d9c71b7723859d099/view) |
@@ -222,6 +218,8 @@ Posted range: 01/01/2026 -> 02/27/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-05 | VETERANS AFFAIRS, DEPARTMENT OF | [DA10--VLogic Software License I Akaka VA  (VA-26-00020638)  (VA-26-00036142)](https://sam.gov/opp/76d1db32c45540089daf95eb6c0ebfbc/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-03-05 | DEPT OF DEFENSE | [Ferry Transportation Services](https://sam.gov/opp/951ff696a76448cbbcfda5251a044f95/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-05 | HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF | [Ginnie Mae TEP Chair Services](https://sam.gov/opp/6b376777054948cf9d4c8a961d743711/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-02-28 | 2026-03-05 | DEPT OF DEFENSE | [CALCIUM SILICATE INSULATION](https://sam.gov/opp/a3305ebc484847d189cf92d12575abf2/view) |
+| 2 | Sources Sought | Sources Sought | 2026-02-28 | 2026-03-05 | DEPT OF DEFENSE | [Tinian Airfield Grounds Maintenance](https://sam.gov/opp/2544ccd75aab47f7872d6f98e1daf84f/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-03-06 | INTERIOR, DEPARTMENT OF THE | [7A--NOTICE OF INTENT TO AWARD A SOLE SOURCE](https://sam.gov/opp/7c9ef9ce2e324bb7b6b4c8570ca76eb4/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-03-06 | STATE, DEPARTMENT OF | [Amendment 0001 - 19SA4026R0006 - VPN DIA & Circuit Leasing Services](https://sam.gov/opp/7f093ae9bed54bd59b23c14fd73e4e6a/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-03-06 | TRANSPORTATION, DEPARTMENT OF | [Ice Buoy Batteries](https://sam.gov/opp/497ab489d0e54f07b90a8115f7aa8c6a/view) |
@@ -283,7 +281,6 @@ Posted range: 01/01/2026 -> 02/27/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-26 | 2026-03-08 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [Hamamatsu S360 Maintenance Agreement](https://sam.gov/opp/21fb3d83e1a74e2e8fffada33ea5cd52/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-26 | 2026-03-08 | AGRICULTURE, DEPARTMENT OF | [Super Q Water System Services](https://sam.gov/opp/380c0a3940d44e99a8abdc742019394a/view) |
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-02-25 | 2026-03-09 | JUSTICE, DEPARTMENT OF | [Request for Information](https://sam.gov/opp/b4420852077b4b31a010fb4dcdee1eec/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-09 | VETERANS AFFAIRS, DEPARTMENT OF | [SES and IG Suite Furniture](https://sam.gov/opp/bbcfa2c991464033bb3eb884aacda97e/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-03-09 | AGRICULTURE, DEPARTMENT OF | [Two-Step Sealed Bid Solicitation: Refried and Vegetarian Beans Step One: Request for Technical Proposals (RFTP)](https://sam.gov/opp/e41c2eec94d443469a1ffbb15f13c723/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [16--VALVE,ECS, IN REPAIR/MODIFICATION OF](https://sam.gov/opp/f23944d660c343f39c014ddb9aa1f705/view) |
 | 5 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [Vertical Transportation Equipment (VTE) Maintenance, Repair, and Alteration Services, Naval Complex Newport, Newport Rhode Island](https://sam.gov/opp/8a08cee413584560b03270ac60c4f40d/view) |
@@ -327,6 +324,9 @@ Posted range: 01/01/2026 -> 02/27/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-03-09 | DEPT OF DEFENSE | [MAARNG Emergency Truck Light Install](https://sam.gov/opp/b80c3aae86d1428692414640e36ac600/view) |
 | 2 | Special Notice | Special Notice | 2026-02-27 | 2026-03-09 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [Notice of Intent to Sole Source - American National Standards Institute - ISO 35001:2019 License Agreement](https://sam.gov/opp/51046e09abcd4bdfac04e22d5ae58fdc/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-09 | VETERANS AFFAIRS, DEPARTMENT OF | [NX EQ Scanning System Ultrasonic Intestinal](https://sam.gov/opp/0a772272c4054517b6d22e8b9a421788/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-03-09 | COMMODITY FUTURES TRADING COMMISSION | [Operations and Maintenance of Kastle Security System Changes at CFTC's Headquarters Location](https://sam.gov/opp/36e15e8fd369420f9f3493c49f88c13a/view) |
+| 2 | Special Notice | Special Notice | 2026-02-27 | 2026-03-09 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [Pharmacy Switch Services for the Red Lake Service Unit](https://sam.gov/opp/eda411c862454e659b9fc4560f63a6eb/view) |
+| 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-09 | DEPT OF DEFENSE | [VALVE,REGULATING  NSN: 4810016226215](https://sam.gov/opp/118d0d7cad5c45a2afac5514f4ef7f4a/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

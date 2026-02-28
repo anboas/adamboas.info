@@ -1,0 +1,22 @@
+{
+  "run_id": "20260228T162911Z",
+  "generated_at": "2026-02-28T16:30:43.955387+00:00",
+  "output_prefix": "sam-opportunities",
+  "profile": "all",
+  "posted_from": "01/01/2026",
+  "posted_to": "02/28/2026",
+  "ptypes": [
+    "p",
+    "r",
+    "s",
+    "o",
+    "k"
+  ],
+  "candidate_count": 699,
+  "request_count": 50,
+  "query_failures": 0,
+  "detail_api_fetches": 11,
+  "detail_cache_hits": 0,
+  "changed_notices": 699,
+  "snapshot": "src/data/radar/mirror/sam-opportunities/snapshots/20260228T162911Z.json"
+}
