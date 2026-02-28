@@ -4,6 +4,7 @@ import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
+import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
 import type { RadarEngagementKind } from '../../data/radar/types';
 
 const DISALLOWED_SOURCE_HOSTS = new Set(['jbenton1.github.io']);
@@ -77,6 +78,35 @@ const samIntelOverrides: Record<string, any> = {
 
 function samIntel(event: (typeof events)[number]) {
 	return samIntelOverrides[event.id] ?? event.ontology.acquisition?.samIntelligence ?? null;
+}
+
+type SamDeepCandidate = {
+	notice_id?: string;
+	noticeId?: string;
+	detail_text_length?: number;
+	detailTextLength?: number;
+	resource_count?: number;
+	resourceCount?: number;
+	resource_links?: string[];
+	resourceLinks?: string[];
+	detail_url?: string;
+	detailUrl?: string;
+};
+
+const samDeepIndex = new Map<string, SamDeepCandidate>();
+for (const row of samOpportunitiesFeed as SamDeepCandidate[]) {
+	const id = String(row.notice_id ?? row.noticeId ?? '').trim().toLowerCase();
+	if (!id) continue;
+	const prior = samDeepIndex.get(id);
+	if (!prior) {
+		samDeepIndex.set(id, row);
+		continue;
+	}
+	const priorDepth = Number(prior.detail_text_length ?? prior.detailTextLength ?? 0);
+	const nextDepth = Number(row.detail_text_length ?? row.detailTextLength ?? 0);
+	const priorFiles = Number(prior.resource_count ?? prior.resourceCount ?? prior.resource_links?.length ?? prior.resourceLinks?.length ?? 0);
+	const nextFiles = Number(row.resource_count ?? row.resourceCount ?? row.resource_links?.length ?? row.resourceLinks?.length ?? 0);
+	if (nextDepth > priorDepth || nextFiles > priorFiles) samDeepIndex.set(id, row);
 }
 
 const branches = [...new Set(events.map((e) => e.branch))].sort();
@@ -222,6 +252,36 @@ function samOpportunityLinks(event: (typeof events)[number]) {
 
 function samTopNotices(event: (typeof events)[number]) {
 	return samIntel(event)?.topNotices ?? [];
+}
+
+function samDeepMeta(notice: SamNotice) {
+	const id = String(notice.noticeId ?? '').trim().toLowerCase();
+	if (!id) return null;
+	return samDeepIndex.get(id) ?? null;
+}
+
+function samDeepTextLength(notice: SamNotice) {
+	const meta = samDeepMeta(notice);
+	return Number(meta?.detail_text_length ?? meta?.detailTextLength ?? 0);
+}
+
+function samAttachmentCount(notice: SamNotice) {
+	const meta = samDeepMeta(notice);
+	return Number(meta?.resource_count ?? meta?.resourceCount ?? meta?.resource_links?.length ?? meta?.resourceLinks?.length ?? 0);
+}
+
+function deepCoverage(event: (typeof events)[number]) {
+	let withDetail = 0;
+	let withAttachments = 0;
+	let attachmentLinks = 0;
+	for (const notice of samTopNotices(event)) {
+		const detailLen = samDeepTextLength(notice);
+		const fileCount = samAttachmentCount(notice);
+		if (detailLen > 0) withDetail += 1;
+		if (fileCount > 0) withAttachments += 1;
+		attachmentLinks += fileCount;
+	}
+	return { withDetail, withAttachments, attachmentLinks, captured: samTopNotices(event).length };
 }
 
 function samPostedWindow(event: (typeof events)[number]) {
@@ -1038,6 +1098,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												{samPostedWindow(event) ? <li><strong>Posted window:</strong> {samPostedWindow(event)}</li> : null}
 												{typeof samIntel(event)?.totalMatched === 'number' ? <li><strong>Total matched solicitations:</strong> {samIntel(event)?.totalMatched}</li> : null}
 												<li><strong>Captured in this pane:</strong> {samTopNotices(event).length}</li>
+												<li><strong>Deep text captured:</strong> {deepCoverage(event).withDetail}/{deepCoverage(event).captured} notices</li>
+												<li><strong>Notices with attachments:</strong> {deepCoverage(event).withAttachments}/{deepCoverage(event).captured}</li>
+												<li><strong>Attachment links captured:</strong> {deepCoverage(event).attachmentLinks}</li>
 												<li><strong>Stakeholder overlap coverage:</strong> {overlapCoverage(event).withOverlap}/{overlapCoverage(event).total} captured notices</li>
 												{event.ontology.acquisition?.agency ? <li><strong>Agency focus:</strong> {event.ontology.acquisition?.agency}</li> : null}
 												{event.ontology.acquisition?.solicitationNumber ? <li><strong>Reference solicitation #:</strong> {event.ontology.acquisition?.solicitationNumber}</li> : null}
@@ -1105,6 +1168,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												<label class="text-[11px] text-slate-400">View
 													<select class="radar-input radar-input-sort radar-inline-select" data-sam-sort data-event-id={event.id}>
 														<option value="score">Ranked (weight)</option>
+														<option value="intel-depth">Intel depth</option>
+														<option value="attachment-count">Attachment count</option>
 														<option value="due">Nearest due date</option>
 														<option value="posted">Newest posted</option>
 														<option value="title">Title (A-Z)</option>
@@ -1114,6 +1179,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 													<select class="radar-input radar-input-sort radar-inline-select" data-sam-filter data-event-id={event.id}>
 														<option value="all">All</option>
 														<option value="my-focus">My focus (Software/Cloud/AI/Cyber/Data)</option>
+														<option value="deep-text">Deep text available</option>
+														<option value="attachments">Has attachments</option>
 														<option value="software">Software</option>
 														<option value="cloud">Cloud</option>
 														<option value="ai">AI/ML</option>
@@ -1143,13 +1210,15 @@ function acquisitionReferences(event: (typeof events)[number]) {
 															<th class="radar-col-days-due">Days to due</th>
 															<th>Solicitation #</th>
 															<th>Agency</th>
+															<th>Deep text</th>
+															<th>Files</th>
 															<th>Overlap</th>
 															<th>Tags</th>
 														</tr>
 													</thead>
 													<tbody>
 														{samTopNotices(event).map((notice) => (
-															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()} data-tags={noticeFocusTags(notice).map((tag) => tag.key).join(',')}>
+															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()} data-tags={noticeFocusTags(notice).map((tag) => tag.key).join(',')} data-detail={samDeepTextLength(notice)} data-files={samAttachmentCount(notice)}>
 															<td class="radar-col-weight">{notice.score ?? 0}</td>
 															<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
 															<td>{notice.noticeType}</td>
@@ -1158,6 +1227,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 															<td class="radar-col-days-due">{daysUntilDueLabel(notice.responseDueDate)}</td>
 															<td>{notice.solicitationNumber ?? '—'}</td>
 															<td>{notice.agencyPath ?? '—'}</td>
+															<td>{samDeepTextLength(notice) > 0 ? `${Math.round(samDeepTextLength(notice) / 1000)}k chars` : '—'}</td>
+															<td>{samAttachmentCount(notice) > 0 ? samAttachmentCount(notice) : '—'}</td>
 															<td>{noticeOverlapStakeholders(event, notice).length ? noticeOverlapStakeholders(event, notice).join(', ') : '—'}</td>
 															<td><div class="radar-intel-tags">{noticeFocusTags(notice).map((tag) => <span class="radar-pill radar-sam-tag" title={tag.key}>{tag.label}</span>)}</div></td>
 														</tr>
@@ -2573,6 +2644,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 			if (mode === 'posted') {
 				return toEpoch(b.dataset.posted || '') - toEpoch(a.dataset.posted || '') || Number(b.dataset.score || '0') - Number(a.dataset.score || '0');
 			}
+			if (mode === 'intel-depth') {
+				return Number(b.dataset.detail || '0') - Number(a.dataset.detail || '0') || Number(b.dataset.score || '0') - Number(a.dataset.score || '0');
+			}
+			if (mode === 'attachment-count') {
+				return Number(b.dataset.files || '0') - Number(a.dataset.files || '0') || Number(b.dataset.score || '0') - Number(a.dataset.score || '0');
+			}
 			if (mode === 'title') {
 				return (a.dataset.title || '').localeCompare(b.dataset.title || '') || Number(b.dataset.score || '0') - Number(a.dataset.score || '0');
 			}
@@ -2586,6 +2663,12 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		const tags = (row.dataset.tags || '').split(',').map((value) => value.trim()).filter(Boolean);
 		if (filterMode === 'my-focus') {
 			return ['software', 'cloud', 'ai', 'cyber', 'data'].some((tag) => tags.includes(tag));
+		}
+		if (filterMode === 'deep-text') {
+			return Number(row.dataset.detail || '0') > 0;
+		}
+		if (filterMode === 'attachments') {
+			return Number(row.dataset.files || '0') > 0;
 		}
 		return tags.includes(filterMode);
 	}
