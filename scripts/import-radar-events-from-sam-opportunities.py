@@ -31,6 +31,7 @@ from dataclasses import dataclass, asdict
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Any
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -323,6 +324,7 @@ def fetch_page(
     offset: int,
     organization_name: str | None = None,
     state: str | None = None,
+    retries: int = 3,
 ) -> dict[str, Any]:
     params = {
         "api_key": api_key,
@@ -337,9 +339,32 @@ def fetch_page(
     if state:
         params["state"] = state
 
-    req = Request(f"{API_URL}?{urlencode(params)}", headers={"Accept": "application/json"})
-    with urlopen(req, timeout=45) as resp:
-        return json.loads(resp.read().decode("utf-8", errors="ignore"))
+    url = f"{API_URL}?{urlencode(params)}"
+    req = Request(url, headers={"Accept": "application/json"})
+
+    last_error: Exception | None = None
+    for attempt in range(max(1, retries)):
+        try:
+            with urlopen(req, timeout=45) as resp:
+                return json.loads(resp.read().decode("utf-8", errors="ignore"))
+        except HTTPError as exc:
+            last_error = exc
+            if exc.code == 400:
+                raise RuntimeError(
+                    f"SAM API 400 for ptype={ptype}, offset={offset}, org={organization_name or 'ALL'}, posted={posted_from}->{posted_to}"
+                ) from exc
+            if attempt >= retries - 1:
+                raise
+            time.sleep(1.0 * (attempt + 1))
+        except URLError as exc:
+            last_error = exc
+            if attempt >= retries - 1:
+                raise
+            time.sleep(1.0 * (attempt + 1))
+
+    if last_error:
+        raise last_error
+    raise RuntimeError("Unknown SAM API fetch error")
 
 
 def extract_rows(payload: dict[str, Any]) -> list[dict[str, Any]]:
@@ -507,20 +532,30 @@ def main() -> int:
     all_candidates: dict[str, Candidate] = {}
     request_count = 0
 
+    query_failures = 0
+
     for ptype in ptypes:
         for org in org_filters:
             for offset in range(0, args.max_pages):
-                payload = fetch_page(
-                    api_key=api_key,
-                    ptype=ptype,
-                    posted_from=args.posted_from,
-                    posted_to=args.posted_to,
-                    limit=args.limit,
-                    offset=offset,
-                    organization_name=org,
-                    state=args.state,
-                )
-                request_count += 1
+                try:
+                    payload = fetch_page(
+                        api_key=api_key,
+                        ptype=ptype,
+                        posted_from=args.posted_from,
+                        posted_to=args.posted_to,
+                        limit=args.limit,
+                        offset=offset,
+                        organization_name=org,
+                        state=args.state,
+                    )
+                    request_count += 1
+                except Exception as exc:
+                    query_failures += 1
+                    print(
+                        f"[WARN] SAM fetch failed (ptype={ptype}, org={org or 'ALL'}, offset={offset}): {exc}",
+                    )
+                    break
+
                 rows = extract_rows(payload)
                 if not rows:
                     break
@@ -603,6 +638,8 @@ def main() -> int:
 
     print(f"Wrote {len(candidates)} SAM opportunity candidates")
     print(f"Requests sent: {request_count}")
+    if query_failures:
+        print(f"Query failures: {query_failures}")
     if args.enrich_detail_text:
         print(f"Detail enrichment: api_fetches={detail_api_fetches}, cache_hits={detail_cache_hits}")
     print(f"- {out_json}")
