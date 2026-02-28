@@ -28,12 +28,46 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.66',
+		date: '2026-02-28',
+		title: 'Opportunities WHO/WHAT client intelligence explorer',
+		summary: 'Expanded `/opportunities` so you can directly target buyer organizations (WHO) and work lanes (WHAT) with explicit filters, visual distributions, and table columns.',
+		impact: 'You can now isolate likely client accounts and capability demand patterns in one workflow, then pivot into specific solicitations without leaving the page.',
+		current: true,
+		tags: ['opportunities', 'events', 'sam', 'ux', 'analytics', 'business-development'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `Who (client)` filter with dynamic client-family options derived from agency paths.',
+					'Added `What (work type)` filter with capability taxonomy classification (software/cloud/AI/cyber/data/etc).',
+					'Added `WHAT: work profile mix` chart and upgraded `WHO: target clients` chart for click-to-filter exploration.',
+					'Added `Client` and `Work type` columns to Opportunity Table for direct targeting analysis.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated control-shell guidance to emphasize WHO + WHAT targeting workflow.',
+					'Extended sort options with `Client org` and `Work type` modes.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Chart-filter status now surfaces active WHO/WHAT/NAICS pivots for fast context awareness.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.65',
 		date: '2026-02-28',
 		title: 'Deep SAM intel controls expanded + maintenance cohesion sweep',
 		summary: 'Extended both `/events` and `/opportunities` with deep-notice intelligence controls/metrics, then completed a maintenance pass to keep release metadata and sitemap navigation in sync.',
 		impact: 'You can triage opportunities by evidence depth (text + attachments) faster, and supporting utility surfaces stay current as the platform evolves.',
-		current: true,
 		tags: ['events', 'opportunities', 'sam', 'ux', 'sitemap', 'platform'],
 		groups: [
 			{

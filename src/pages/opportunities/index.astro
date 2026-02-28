@@ -239,7 +239,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		<div class="opp-controls-shell">
 			<div class="opp-controls-head">
 				<h2 class="opp-subtitle">Filter opportunity intelligence</h2>
-				<p class="opp-subcopy">Scan-first controls aligned with Events: tighten scope, sort fast, then inspect gem candidates.</p>
+				<p class="opp-subcopy">Use WHO + WHAT controls to target buyer organizations and capability lanes, then inspect gem candidates.</p>
 			</div>
 			<div class="opp-controls-grid">
 				<label class="opp-field opp-field-search">
@@ -258,6 +258,30 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<select id="opp-filter-branch" class="opp-input">
 						<option value="all">All</option>
 						{branches.map((branch) => <option value={branch}>{branch}</option>)}
+					</select>
+				</label>
+				<label class="opp-field">
+					<span>Who (client)</span>
+					<select id="opp-filter-client" class="opp-input">
+						<option value="all">All</option>
+					</select>
+				</label>
+				<label class="opp-field">
+					<span>What (work type)</span>
+					<select id="opp-filter-work" class="opp-input">
+						<option value="all">All</option>
+						<option value="software">Software Delivery</option>
+						<option value="cloud">Cloud Infrastructure</option>
+						<option value="ai">AI/ML & Autonomy</option>
+						<option value="cyber">Cybersecurity</option>
+						<option value="data">Data & Analytics</option>
+						<option value="engineering">Engineering/SETA</option>
+						<option value="hardware">Hardware/Platforms</option>
+						<option value="logistics">Logistics/Sustainment</option>
+						<option value="training">Training/Exercise</option>
+						<option value="services">Professional Services</option>
+						<option value="research">R&D/Prototype</option>
+						<option value="general">General/Other</option>
 					</select>
 				</label>
 				<label class="opp-field">
@@ -289,6 +313,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<select id="opp-filter-sort" class="opp-input">
 						<option value="gem">Gem score</option>
 						<option value="intel">Intel depth</option>
+						<option value="client">Client org</option>
+						<option value="work">Work type</option>
 						<option value="due">Due soonest</option>
 						<option value="weight">Highest weight</option>
 						<option value="posted">Newest posted</option>
@@ -327,9 +353,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		</article>
 
 		<article class="card p-4 opp-viz-card">
-			<h2 class="opp-subtitle">Top agencies</h2>
-			<p class="opp-subcopy">Click a bar to focus that agency family.</p>
+			<h2 class="opp-subtitle">WHO: target clients</h2>
+			<p class="opp-subcopy">Click a bar to focus a buyer organization/client family.</p>
 			<div id="opp-viz-agencies" class="opp-chart"></div>
+		</article>
+
+		<article class="card p-4 opp-viz-card">
+			<h2 class="opp-subtitle">WHAT: work profile mix</h2>
+			<p class="opp-subcopy">Click a bar to focus a work type/capability lane.</p>
+			<div id="opp-viz-workmix" class="opp-chart"></div>
 		</article>
 
 		<article class="card p-4 opp-viz-card">
@@ -376,7 +408,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<th><button class="opp-sort-btn" data-sort="noticeType" type="button">Notice type</button></th>
 						<th><button class="opp-sort-btn" data-sort="title" type="button">Solicitation name</button></th>
 						<th><button class="opp-sort-btn" data-sort="solicitationNumber" type="button">Solicitation #</button></th>
+						<th><button class="opp-sort-btn" data-sort="client" type="button">Client</button></th>
 						<th><button class="opp-sort-btn" data-sort="agency" type="button">Agency</button></th>
+						<th><button class="opp-sort-btn" data-sort="workType" type="button">Work type</button></th>
 						<th><button class="opp-sort-btn" data-sort="naics" type="button">NAICS</button></th>
 						<th><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Mapped events</button></th>
 					</tr>
@@ -397,6 +431,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				search: document.getElementById('opp-filter-search'),
 				type: document.getElementById('opp-filter-type'),
 				branch: document.getElementById('opp-filter-branch'),
+				client: document.getElementById('opp-filter-client'),
+				work: document.getElementById('opp-filter-work'),
 				due: document.getElementById('opp-filter-due'),
 				weight: document.getElementById('opp-filter-weight'),
 				intel: document.getElementById('opp-filter-intel'),
@@ -422,6 +458,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				urgency: document.getElementById('opp-viz-urgency'),
 				types: document.getElementById('opp-viz-types'),
 				agencies: document.getElementById('opp-viz-agencies'),
+				workmix: document.getElementById('opp-viz-workmix'),
 				naics: document.getElementById('opp-viz-naics'),
 			};
 
@@ -429,6 +466,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				urgency: null,
 				types: null,
 				agencies: null,
+				workmix: null,
 				naics: null,
 			};
 			const chartMode = typeof window.echarts === 'undefined' ? 'fallback' : 'echarts';
@@ -479,11 +517,47 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return parts.slice(0, 4).join(' / ') || path;
 			};
 
+			const clientLabel = (path) => {
+				if (!path) return 'Unknown';
+				const parts = String(path).split('.').filter(Boolean);
+				if (parts.length <= 1) return parts[0] || 'Unknown';
+				return parts.slice(0, 2).join(' / ');
+			};
+
+			const workTypeRules = [
+				{ key: 'software', label: 'Software Delivery', terms: ['software', 'application', 'app dev', 'devsecops', 'code', 'platform engineering'] },
+				{ key: 'cloud', label: 'Cloud Infrastructure', terms: ['cloud', 'aws', 'azure', 'kubernetes', 'container', 'hosting'] },
+				{ key: 'ai', label: 'AI/ML & Autonomy', terms: ['artificial intelligence', 'machine learning', ' ai ', 'autonomy', 'autonomous', 'llm', 'model training'] },
+				{ key: 'cyber', label: 'Cybersecurity', terms: ['cyber', 'zero trust', 'rmf', 'iam', 'security', 'soc', 'defensive cyber'] },
+				{ key: 'data', label: 'Data & Analytics', terms: ['data', 'analytics', 'bi', 'etl', 'database', 'data lake'] },
+				{ key: 'engineering', label: 'Engineering/SETA', terms: ['engineering', 'seta', 'technical assistance', 'systems engineering'] },
+				{ key: 'hardware', label: 'Hardware/Platforms', terms: ['hardware', 'sensor', 'payload', 'platform', 'c5isr', 'integration'] },
+				{ key: 'logistics', label: 'Logistics/Sustainment', terms: ['logistics', 'sustainment', 'maintenance', 'lifecycle support', 'fielding'] },
+				{ key: 'training', label: 'Training/Exercise', terms: ['training', 'exercise', 'instruction', 'courseware', 'simulation'] },
+				{ key: 'services', label: 'Professional Services', terms: ['advisory', 'consulting', 'program management', 'support services', 'staff augmentation'] },
+				{ key: 'research', label: 'R&D/Prototype', terms: ['research', 'r&d', 'prototype', 'sbir', 'innovation', 'proof of concept'] },
+			];
+			const workTypeLabel = Object.fromEntries(workTypeRules.map((rule) => [rule.key, rule.label]));
+			workTypeLabel.general = 'General/Other';
+
+			const inferWorkTypes = (row, blob) => {
+				const normalizedBlob = ` ${String(blob || '').toLowerCase()} `;
+				const matched = [];
+				for (const rule of workTypeRules) {
+					if (rule.terms.some((term) => normalizedBlob.includes(` ${String(term).toLowerCase()} `) || normalizedBlob.includes(String(term).toLowerCase()))) {
+						matched.push(rule.key);
+					}
+				}
+				if (!matched.length) return ['general'];
+				return [...new Set(matched)].slice(0, 3);
+			};
+
 			const rows = raw.map((row) => {
 				const dueDays = daysUntil(row.responseDueDate);
 				const postedEpoch = toDayEpoch(row.postedDate);
 				const dueEpoch = toDayEpoch(row.responseDueDate);
 				const agencyLabelText = agencyLabel(row.agencyPath);
+				const clientLabelText = clientLabel(row.agencyPath);
 				const blob = [
 					row.title,
 					row.noticeType,
@@ -491,11 +565,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					row.solicitationNumber,
 					row.agencyPath,
 					agencyLabelText,
+					clientLabelText,
 					row.naicsCode,
+					row.classificationCode,
 					...(row.branches || []),
 					...(row.capabilityAreas || []),
 					...(row.missionThreads || []),
 				].join(' ').toLowerCase();
+				const workTypes = inferWorkTypes(row, blob);
+				const primaryWorkType = workTypes[0] || 'general';
 
 				const focusMatches = focusTerms.reduce((acc, term) => acc + (blob.includes(term) ? 1 : 0), 0);
 				const type = String(row.noticeType || '').toLowerCase();
@@ -533,10 +611,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					detailTextLength,
 					resourceCount,
 					intelDepthScore,
-					searchBlob: blob,
+					searchBlob: `${blob} ${workTypes.map((key) => workTypeLabel[key] || key).join(' ').toLowerCase()}`,
 					focusMatches,
 					gemScore,
 					agencyLabel: agencyLabelText,
+					clientLabel: clientLabelText,
+					workTypes,
+					primaryWorkType,
+					workTypeLabel: workTypeLabel[primaryWorkType] || workTypeLabel.general,
 				};
 			});
 
@@ -544,12 +626,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				search: '',
 				type: 'all',
 				branch: 'all',
+				client: 'all',
+				work: 'all',
 				due: 'all',
 				minWeight: 0,
 				intel: 'all',
 				sort: 'gem',
 				focusOnly: false,
-				agencyFilter: '',
 				naicsFilter: '',
 			};
 
@@ -564,6 +647,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				state.search = (el.search?.value || '').trim().toLowerCase();
 				state.type = el.type?.value || 'all';
 				state.branch = el.branch?.value || 'all';
+				state.client = el.client?.value || 'all';
+				state.work = el.work?.value || 'all';
 				state.due = el.due?.value || 'all';
 				state.minWeight = Number(el.weight?.value || 0);
 				state.intel = el.intel?.value || 'all';
@@ -593,6 +678,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
 				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
 				if (state.sort === 'intel') return (b.intelDepthScore || 0) - (a.intelDepthScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'client') return a.clientLabel.localeCompare(b.clientLabel) || b.gemScore - a.gemScore;
+				if (state.sort === 'work') return a.workTypeLabel.localeCompare(b.workTypeLabel) || b.gemScore - a.gemScore;
 				if (state.sort === 'posted') return (b.postedEpoch || 0) - (a.postedEpoch || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'due') {
 					const aDue = a.dueDays === null ? Number.POSITIVE_INFINITY : a.dueDays;
@@ -607,7 +694,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (state.search && !row.searchBlob.includes(state.search)) return false;
 					if (state.type !== 'all' && row.noticeType !== state.type) return false;
 					if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
-					if (state.agencyFilter && row.agencyLabel !== state.agencyFilter) return false;
+					if (state.client !== 'all' && row.clientLabel !== state.client) return false;
+					if (state.work !== 'all' && !(row.workTypes || []).includes(state.work)) return false;
 					if (state.naicsFilter && String(row.naicsCode || '') !== String(state.naicsFilter || '')) return false;
 					if (!inDueWindow(row)) return false;
 					if (!intelFilterMatch(row)) return false;
@@ -625,6 +713,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					map.set(key, (map.get(key) || 0) + 1);
 				}
 				return [...map.entries()].sort((a, b) => b[1] - a[1]);
+			};
+
+			const hydrateClientFilterOptions = () => {
+				if (!el.client) return;
+				const counts = countBy(rows, (row) => row.clientLabel);
+				for (const [label, count] of counts.slice(0, 80)) {
+					const option = document.createElement('option');
+					option.value = label;
+					option.textContent = `${label} (${count})`;
+					el.client.appendChild(option);
+				}
 			};
 
 			const renderBars = (container, entries, emptyLabel = 'No data', onClick = null) => {
@@ -745,30 +844,65 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 				}
 
-				const byAgency = countBy(items, (r) => r.agencyLabel).slice(0, 10);
+				const byClient = countBy(items, (r) => r.clientLabel).slice(0, 12);
 				const agencyChart = initChart('agencies', el.agencies);
 				if (agencyChart) {
 					agencyChart.setOption({
 						animationDuration: 220,
-						grid: { top: 8, right: 12, bottom: 12, left: 116 },
+						grid: { top: 8, right: 12, bottom: 12, left: 132 },
 						xAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						yAxis: { type: 'category', data: byAgency.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9, overflow: 'truncate', width: 108 } },
-						series: [{ type: 'bar', data: byAgency.map(([, value]) => value), itemStyle: { color: '#0ea5e9', borderRadius: [0, 2, 2, 0] }, barWidth: '56%' }],
+						yAxis: { type: 'category', data: byClient.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9, overflow: 'truncate', width: 124 } },
+						series: [{ type: 'bar', data: byClient.map(([, value]) => value), itemStyle: { color: '#0ea5e9', borderRadius: [0, 2, 2, 0] }, barWidth: '56%' }],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!agencyChart.__boundClick) {
 						agencyChart.on('click', (params) => {
 							if (!params || Number(params.value || 0) <= 0) return;
-							state.agencyFilter = state.agencyFilter === params.name ? '' : String(params.name || '');
+							state.client = state.client === params.name ? 'all' : String(params.name || 'all');
+							if (el.client) el.client.value = state.client;
 							tableState.page = 1;
 							render();
 						});
 						agencyChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.agencies, byAgency, 'No agencies', (label, value) => {
+					renderBars(el.agencies, byClient, 'No client orgs', (label, value) => {
 						if (Number(value || 0) <= 0) return;
-						state.agencyFilter = state.agencyFilter === label ? '' : String(label || '');
+						state.client = state.client === label ? 'all' : String(label || 'all');
+						if (el.client) el.client.value = state.client;
+						tableState.page = 1;
+						render();
+					});
+				}
+
+				const byWork = countBy(items, (r) => r.primaryWorkType || 'general').slice(0, 12);
+				const workChart = initChart('workmix', el.workmix);
+				if (workChart) {
+					workChart.setOption({
+						animationDuration: 220,
+						grid: { top: 10, right: 12, bottom: 44, left: 28 },
+						xAxis: { type: 'category', data: byWork.map(([key]) => workTypeLabel[key] || key), axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 22 } },
+						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						series: [{ type: 'bar', data: byWork.map(([, value]) => value), itemStyle: { color: '#38bdf8', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 28 }],
+						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
+					});
+					if (!workChart.__boundClick) {
+						workChart.on('click', (params) => {
+							if (!params || Number(params.value || 0) <= 0) return;
+							const key = byWork.find(([ruleKey]) => (workTypeLabel[ruleKey] || ruleKey) === params.name)?.[0] || 'all';
+							state.work = state.work === key ? 'all' : key;
+							if (el.work) el.work.value = state.work;
+							tableState.page = 1;
+							render();
+						});
+						workChart.__boundClick = true;
+					}
+				} else {
+					renderBars(el.workmix, byWork.map(([key, count]) => [workTypeLabel[key] || key, count]), 'No work profile data', (label, value) => {
+						if (Number(value || 0) <= 0) return;
+						const key = byWork.find(([ruleKey]) => (workTypeLabel[ruleKey] || ruleKey) === label)?.[0] || 'all';
+						state.work = state.work === key ? 'all' : key;
+						if (el.work) el.work.value = state.work;
 						tableState.page = 1;
 						render();
 					});
@@ -865,8 +999,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					case 'solicitationNumber':
 						base = compareText(a.solicitationNumber, b.solicitationNumber);
 						break;
+					case 'client':
+						base = compareText(a.clientLabel, b.clientLabel);
+						break;
 					case 'agency':
 						base = compareText(a.agencyLabel, b.agencyLabel);
+						break;
+					case 'workType':
+						base = compareText(a.workTypeLabel, b.workTypeLabel);
 						break;
 					case 'naics':
 						base = compareText(a.naicsCode, b.naicsCode);
@@ -907,7 +1047,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const renderTable = (items) => {
 				if (!el.body) return;
 				if (!items.length) {
-					el.body.innerHTML = '<tr><td colspan="13" class="opp-empty">No opportunities match your current filters.</td></tr>';
+					el.body.innerHTML = '<tr><td colspan="15" class="opp-empty">No opportunities match your current filters.</td></tr>';
 					return;
 				}
 
@@ -933,7 +1073,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<td>${escapeHtml(row.noticeType || '—')}</td>
 						<td>${title}</td>
 						<td>${escapeHtml(row.solicitationNumber || '—')}</td>
+						<td title="${escapeHtml(row.clientLabel || '')}">${escapeHtml(row.clientLabel || 'Unknown')}</td>
 						<td title="${escapeHtml(row.agencyPath || '')}">${escapeHtml(row.agencyLabel)}</td>
+						<td title="${escapeHtml((row.workTypes || []).map((key) => workTypeLabel[key] || key).join(', '))}">${escapeHtml(row.workTypeLabel || 'General/Other')}</td>
 						<td class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
 						<td><div class="opp-pill-wrap">${mapped || '—'}</div></td>
 					</tr>`;
@@ -961,7 +1103,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.pageLast) el.pageLast.disabled = tableState.page >= totalPages;
 				if (el.chartFilterStatus) {
 					const chips = [];
-					if (state.agencyFilter) chips.push(`Agency: ${state.agencyFilter}`);
+					if (state.client !== 'all') chips.push(`Who: ${state.client}`);
+					if (state.work !== 'all') chips.push(`What: ${workTypeLabel[state.work] || state.work}`);
 					if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
 					el.chartFilterStatus.textContent = chips.length ? chips.join(' · ') : '';
 				}
@@ -972,7 +1115,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderTable(pagedRows);
 			};
 
-			[el.search, el.type, el.branch, el.due, el.weight, el.intel, el.sort, el.focus].forEach((node) => node?.addEventListener('input', () => {
+			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.sort, el.focus].forEach((node) => node?.addEventListener('input', () => {
 				tableState.page = 1;
 				render();
 			}));
@@ -1008,7 +1151,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						tableState.sortDir = tableState.sortDir === 'asc' ? 'desc' : 'asc';
 					} else {
 						tableState.sortKey = key;
-						tableState.sortDir = ['noticeType', 'title', 'solicitationNumber', 'agency', 'naics'].includes(key) ? 'asc' : 'desc';
+						tableState.sortDir = ['noticeType', 'title', 'solicitationNumber', 'client', 'agency', 'workType', 'naics'].includes(key) ? 'asc' : 'desc';
 					}
 					tableState.page = 1;
 					render();
@@ -1019,12 +1162,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.search) el.search.value = '';
 				if (el.type) el.type.value = 'all';
 				if (el.branch) el.branch.value = 'all';
+				if (el.client) el.client.value = 'all';
+				if (el.work) el.work.value = 'all';
 				if (el.due) el.due.value = 'all';
 				if (el.weight) el.weight.value = '0';
 				if (el.intel) el.intel.value = 'all';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
-				state.agencyFilter = '';
 				state.naicsFilter = '';
 				tableState.page = 1;
 				tableState.sortKey = 'gemScore';
@@ -1032,6 +1176,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				render();
 			});
 
+			hydrateClientFilterOptions();
 			render();
 		})();
 	</script>
