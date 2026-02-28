@@ -28,12 +28,45 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.69',
+		date: '2026-02-28',
+		title: 'SAM full-mirror archival mode with immutable snapshot history',
+		summary: 'Added a mirror-forever mode to SAM opportunity imports so every run can be archived in-repo with per-run snapshots, per-notice version history, and optional raw query payload captures.',
+		impact: 'You can now keep a Git-versioned long-term mirror of SAM content and compare how notices evolve over time without losing previous states.',
+		current: true,
+		tags: ['events', 'opportunities', 'sam', 'platform', 'data-engineering', 'versioning'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added importer flags: `--mirror-forever`, `--mirror-root`, `--run-id`, and `--skip-query-payloads`.',
+					'Added mirror outputs: run snapshots, run metadata index, `latest` pointer, and per-notice version history under mirror directories.',
+					'Added npm script `events:sam-import:mirror` for deep, immutable, full-text mirror runs.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Extended detail-cache semantics so `--detail-cache-ttl-hours -1` behaves as immutable cache (fetch once, reuse forever).',
+					'In mirror mode, notice-description cache path now lives under mirror tree for Git-visible provenance.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved reproducibility for SAM intelligence ingestion with deterministic, content-hash based notice versioning.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.68',
 		date: '2026-02-28',
 		title: 'Opportunities deep-text formatting + attachment filename labels',
 		summary: 'Enhanced intel modal readability by formatting deep-text preview into structured blocks and showing human-readable file names + host context for attachment/resource links.',
 		impact: 'You can scan solicitation detail faster and understand linked files immediately without parsing raw URLs.',
-		current: true,
 		tags: ['opportunities', 'sam', 'ux', 'intel', 'readability', 'business-development'],
 		groups: [
 			{

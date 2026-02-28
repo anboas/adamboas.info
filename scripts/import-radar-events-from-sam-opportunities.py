@@ -22,6 +22,7 @@ Examples:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -154,8 +155,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-prefix", default="sam-opportunities", help="Output suffix for candidate files")
     parser.add_argument("--enrich-detail-text", action="store_true", help="Fetch and cache full notice description text")
     parser.add_argument("--detail-max-chars", type=int, default=6000, help="Max chars for stored detail_text (0 = unlimited)")
-    parser.add_argument("--detail-cache-ttl-hours", type=int, default=168, help="Detail cache TTL in hours")
+    parser.add_argument("--detail-cache-ttl-hours", type=int, default=168, help="Detail cache TTL in hours (-1 = immutable cache)")
     parser.add_argument("--detail-sleep-ms", type=int, default=120, help="Delay between detail fetches to reduce API burst")
+    parser.add_argument("--mirror-forever", action="store_true", help="Write immutable run snapshots + per-notice history into repo")
+    parser.add_argument("--mirror-root", default="src/data/radar/mirror", help="Mirror root directory relative to repo root")
+    parser.add_argument("--run-id", default=None, help="Optional mirror run id (default UTC timestamp)")
+    parser.add_argument("--skip-query-payloads", action="store_true", help="In mirror mode, skip writing raw query payload JSONs")
     return parser.parse_args()
 
 
@@ -225,7 +230,8 @@ def fetch_notice_description(api_key: str, notice_id: str, cache_dir: Path, cach
 
     if cache_path.exists():
         age = now - cache_path.stat().st_mtime
-        if age <= max(0, cache_ttl_seconds):
+        cache_valid = cache_ttl_seconds < 0 or age <= max(0, cache_ttl_seconds)
+        if cache_valid:
             try:
                 payload = json.loads(cache_path.read_text(encoding="utf-8"))
                 desc = payload.get("description") if isinstance(payload, dict) else None
@@ -520,6 +526,94 @@ def select_org_filters(args: argparse.Namespace) -> list[str | None]:
     return [None]
 
 
+def _stable_json_bytes(payload: Any) -> bytes:
+    return json.dumps(payload, sort_keys=True, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+
+
+def _sha256(payload: Any) -> str:
+    return hashlib.sha256(_stable_json_bytes(payload)).hexdigest()
+
+
+def _slug(value: str) -> str:
+    cleaned = re.sub(r"[^a-zA-Z0-9]+", "-", value.strip().lower()).strip("-")
+    return cleaned or "all"
+
+
+def write_mirror_artifacts(
+    *,
+    mirror_base: Path,
+    run_id: str,
+    candidates: list[Candidate],
+    args: argparse.Namespace,
+    ptypes: list[str],
+    request_count: int,
+    query_failures: int,
+    detail_api_fetches: int,
+    detail_cache_hits: int,
+) -> None:
+    mirror_base.mkdir(parents=True, exist_ok=True)
+    runs_dir = mirror_base / "runs"
+    snapshots_dir = mirror_base / "snapshots"
+    notices_dir = mirror_base / "notices"
+    runs_dir.mkdir(parents=True, exist_ok=True)
+    snapshots_dir.mkdir(parents=True, exist_ok=True)
+    notices_dir.mkdir(parents=True, exist_ok=True)
+
+    candidate_payload = [asdict(c) for c in candidates]
+    snapshot_path = snapshots_dir / f"{run_id}.json"
+    snapshot_path.write_text(json.dumps(candidate_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    changed_notices = 0
+    for payload in candidate_payload:
+        notice_id = str(payload.get("notice_id") or payload.get("id") or "unknown-notice").lower()
+        notice_slug = _slug(notice_id)
+        notice_dir = notices_dir / notice_slug
+        versions_dir = notice_dir / "versions"
+        latest_path = notice_dir / "latest.json"
+        versions_dir.mkdir(parents=True, exist_ok=True)
+
+        content_hash = _sha256(payload)
+        previous_hash = None
+        if latest_path.exists():
+            try:
+                latest_payload = json.loads(latest_path.read_text(encoding="utf-8"))
+                previous_hash = latest_payload.get("_mirror_hash")
+            except Exception:
+                previous_hash = None
+
+        if content_hash != previous_hash:
+            changed_notices += 1
+            version_payload = {**payload, "_mirror_hash": content_hash, "_mirror_run_id": run_id, "_mirror_recorded_at": datetime.now(UTC).isoformat()}
+            (versions_dir / f"{run_id}.json").write_text(json.dumps(version_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            latest_path.write_text(json.dumps(version_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    run_meta = {
+        "run_id": run_id,
+        "generated_at": datetime.now(UTC).isoformat(),
+        "output_prefix": args.output_prefix,
+        "profile": args.profile,
+        "posted_from": args.posted_from,
+        "posted_to": args.posted_to,
+        "ptypes": ptypes,
+        "candidate_count": len(candidate_payload),
+        "request_count": request_count,
+        "query_failures": query_failures,
+        "detail_api_fetches": detail_api_fetches,
+        "detail_cache_hits": detail_cache_hits,
+        "changed_notices": changed_notices,
+        "snapshot": str(snapshot_path.relative_to(ROOT)),
+    }
+    run_meta_path = runs_dir / f"{run_id}.json"
+    run_meta_path.write_text(json.dumps(run_meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    latest_meta_path = mirror_base / "latest.json"
+    latest_meta_path.write_text(json.dumps(run_meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    index_path = runs_dir / "index.jsonl"
+    with index_path.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(run_meta, ensure_ascii=False) + "\n")
+
+
 def main() -> int:
     args = parse_args()
     api_key = args.api_key or os.environ.get("SAM_API_KEY")
@@ -528,6 +622,16 @@ def main() -> int:
 
     ptypes = [p.strip() for p in args.ptypes.split(",") if p.strip()]
     org_filters = select_org_filters(args)
+
+    mirror_base: Path | None = None
+    mirror_run_id: str | None = None
+    mirror_queries_dir: Path | None = None
+    if args.mirror_forever:
+        mirror_base = (ROOT / args.mirror_root / args.output_prefix).resolve()
+        mirror_run_id = args.run_id or datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+        mirror_queries_dir = mirror_base / "queries" / mirror_run_id
+        if not args.skip_query_payloads:
+            mirror_queries_dir.mkdir(parents=True, exist_ok=True)
 
     all_candidates: dict[str, Candidate] = {}
     request_count = 0
@@ -549,6 +653,10 @@ def main() -> int:
                         state=args.state,
                     )
                     request_count += 1
+                    if mirror_queries_dir and not args.skip_query_payloads and mirror_run_id:
+                        org_key = _slug(org or "all")
+                        query_file = mirror_queries_dir / f"ptype-{ptype}__org-{org_key}__offset-{offset:03d}.json"
+                        query_file.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
                 except Exception as exc:
                     query_failures += 1
                     print(
@@ -599,8 +707,11 @@ def main() -> int:
     detail_api_fetches = 0
     detail_cache_hits = 0
     if args.enrich_detail_text:
-        detail_cache_dir = ROOT / ".cache" / "sam-notice-details"
-        detail_ttl_seconds = max(0, int(args.detail_cache_ttl_hours) * 3600)
+        if mirror_base:
+            detail_cache_dir = mirror_base / "notice-desc-cache"
+        else:
+            detail_cache_dir = ROOT / ".cache" / "sam-notice-details"
+        detail_ttl_seconds = int(args.detail_cache_ttl_hours) * 3600
         for candidate in candidates:
             candidate.detail_url = candidate.detail_url or extract_notice_desc_url(candidate.description, candidate.notice_id)
             candidate.resource_count = len(candidate.resource_links or [])
@@ -633,8 +744,21 @@ def main() -> int:
     out_json = ROOT / f"src/data/radar/events-candidates-{args.output_prefix}.json"
     out_md = ROOT / f"src/data/radar/events-candidates-{args.output_prefix}.md"
 
-    out_json.write_text(json.dumps([asdict(c) for c in candidates], indent=2) + "\n", encoding="utf-8")
+    out_json.write_text(json.dumps([asdict(c) for c in candidates], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     out_md.write_text(to_markdown(candidates, args.posted_from, args.posted_to, args.profile, ptypes), encoding="utf-8")
+
+    if mirror_base and mirror_run_id:
+        write_mirror_artifacts(
+            mirror_base=mirror_base,
+            run_id=mirror_run_id,
+            candidates=candidates,
+            args=args,
+            ptypes=ptypes,
+            request_count=request_count,
+            query_failures=query_failures,
+            detail_api_fetches=detail_api_fetches,
+            detail_cache_hits=detail_cache_hits,
+        )
 
     print(f"Wrote {len(candidates)} SAM opportunity candidates")
     print(f"Requests sent: {request_count}")
@@ -642,6 +766,10 @@ def main() -> int:
         print(f"Query failures: {query_failures}")
     if args.enrich_detail_text:
         print(f"Detail enrichment: api_fetches={detail_api_fetches}, cache_hits={detail_cache_hits}")
+    if mirror_base and mirror_run_id:
+        print(f"Mirror snapshot: {mirror_base / 'snapshots' / f'{mirror_run_id}.json'}")
+        if not args.skip_query_payloads:
+            print(f"Mirror query payloads: {mirror_base / 'queries' / mirror_run_id}")
     print(f"- {out_json}")
     print(f"- {out_md}")
     return 0

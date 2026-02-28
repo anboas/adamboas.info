@@ -13,6 +13,7 @@
     "og:generate": "node scripts/generate-og-images.mjs",
     "events:sam-import": "python3 scripts/import-radar-events-from-sam-opportunities.py",
     "events:sam-import:deep": "python3 scripts/import-radar-events-from-sam-opportunities.py --enrich-detail-text",
+    "events:sam-import:mirror": "python3 scripts/import-radar-events-from-sam-opportunities.py --enrich-detail-text --detail-max-chars 0 --detail-cache-ttl-hours -1 --mirror-forever",
     "events:navy-sam-import": "python3 scripts/import-radar-events-from-sam-opportunities.py --profile navy --output-prefix sam-opportunities-navy",
     "events:nswc-sam-import": "python3 scripts/import-radar-events-from-sam-opportunities.py --profile nswc --output-prefix sam-opportunities-nswc",
     "events:army-sam-import": "python3 scripts/import-radar-events-from-sam-opportunities.py --profile army --output-prefix sam-opportunities-army",
