@@ -55,7 +55,10 @@ function toArray(set: Set<string>) {
 const DETAIL_PREVIEW_MAX_CHARS = 8000;
 
 function toDetailPreview(value: any) {
-	const text = String(value ?? '').replace(/\s+/g, ' ').trim();
+	const text = String(value ?? '')
+		.replace(/\r\n?/g, '\n')
+		.replace(/\u00a0/g, ' ')
+		.trim();
 	if (!text) return null;
 	return text.slice(0, DETAIL_PREVIEW_MAX_CHARS);
 }
@@ -467,7 +470,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-modal-body">
 				<div>
 					<p class="opp-modal-section-title">Deep text preview</p>
-					<pre id="opp-modal-detail" class="opp-modal-detail">No deep text captured for this notice yet.</pre>
+					<div id="opp-modal-detail" class="opp-modal-detail">No deep text captured for this notice yet.</div>
 				</div>
 				<div>
 					<p class="opp-modal-section-title">Attachments / resource links</p>
@@ -581,6 +584,40 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				.replaceAll('>', '&gt;')
 				.replaceAll('"', '&quot;')
 				.replaceAll("'", '&#39;');
+
+			const formatDetailPreviewHtml = (value) => {
+				const text = String(value || '').replace(/\r\n?/g, '\n').trim();
+				if (!text) return '';
+				const blocks = text.split(/\n{2,}/).map((block) => block.trim()).filter(Boolean);
+				return blocks.map((block) => {
+					const lines = block.split('\n').map((line) => line.trim()).filter(Boolean);
+					if (!lines.length) return '';
+					const ordered = lines.every((line) => /^\d+[.)]\s+/.test(line));
+					const bulleted = lines.every((line) => /^[-*•]\s+/.test(line) || /^\d+[.)]\s+/.test(line));
+					if (ordered || bulleted) {
+						const tag = ordered ? 'ol' : 'ul';
+						const items = lines.map((line) => line.replace(/^([-*•]|\d+[.)])\s+/, '').trim()).map((line) => `<li>${escapeHtml(line)}</li>`).join('');
+						return `<${tag} class="opp-detail-list">${items}</${tag}>`;
+					}
+					if (lines.length === 1 && lines[0].length <= 90 && /:$/.test(lines[0])) {
+						return `<h4 class="opp-detail-subhead">${escapeHtml(lines[0].replace(/:$/, ''))}</h4>`;
+					}
+					return `<p>${lines.map((line) => escapeHtml(line)).join('<br>')}</p>`;
+				}).join('');
+			};
+
+			const attachmentLabel = (value) => {
+				try {
+					const url = new URL(String(value || ''));
+					const host = url.hostname.replace(/^www\./, '');
+					const fileNameRaw = decodeURIComponent(url.pathname.split('/').filter(Boolean).pop() || 'resource-link');
+					const fileName = fileNameRaw.length > 100 ? `${fileNameRaw.slice(0, 97)}...` : fileNameRaw;
+					return { fileName, host };
+				} catch {
+					const fallback = String(value || 'resource-link');
+					return { fileName: fallback.length > 100 ? `${fallback.slice(0, 97)}...` : fallback, host: '' };
+				}
+			};
 
 			const agencyLabel = (path) => {
 				if (!path) return 'Unknown';
@@ -1058,10 +1095,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.modalDetail) {
 					const preview = String(row.detailPreview || '').trim();
 					if (!preview) {
-						el.modalDetail.textContent = 'No deep text captured for this notice yet.';
+						el.modalDetail.innerHTML = '<p class="opp-subcopy">No deep text captured for this notice yet.</p>';
 					} else {
 						const truncated = Number(row.detailTextLength || 0) > preview.length;
-						el.modalDetail.textContent = truncated ? `${preview}\n\n[Preview truncated. Open SAM notice for full text.]` : preview;
+						const formatted = formatDetailPreviewHtml(preview);
+						el.modalDetail.innerHTML = truncated
+							? `${formatted}<p class="opp-subcopy">Preview truncated. Open SAM notice for full text.</p>`
+							: formatted;
 					}
 				}
 
@@ -1071,8 +1111,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						el.modalFiles.innerHTML = '<li class="opp-subcopy">No attachments/resource links captured for this notice.</li>';
 					} else {
 						el.modalFiles.innerHTML = links.slice(0, 60).map((link) => {
-							const label = String(link).replace(/^https?:\/\//i, '');
-							return `<li><a href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a></li>`;
+							const { fileName, host } = attachmentLabel(link);
+							const hostMeta = host ? `<span class="opp-file-host">${escapeHtml(host)}</span>` : '';
+							return `<li><a href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${escapeHtml(fileName)}</a>${hostMeta}</li>`;
 						}).join('');
 					}
 				}
@@ -1939,18 +1980,37 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		margin-bottom: 0.34rem;
 	}
 	.opp-modal-detail {
-		white-space: pre-wrap;
-		word-break: break-word;
 		max-height: 58vh;
 		overflow: auto;
 		margin: 0;
 		padding: 0.58rem;
 		border: 1px solid rgba(51, 65, 85, 0.84);
 		background: rgba(15, 23, 42, 0.74);
-		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-		font-size: 0.67rem;
-		line-height: 1.45;
+		font-size: 0.71rem;
+		line-height: 1.5;
 		color: rgba(203, 213, 225, 0.97);
+	}
+	.opp-modal-detail p {
+		margin: 0 0 0.55rem;
+	}
+	.opp-modal-detail p:last-child {
+		margin-bottom: 0;
+	}
+	.opp-detail-subhead {
+		margin: 0.2rem 0 0.35rem;
+		font-size: 0.7rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		color: rgba(186, 230, 253, 0.98);
+	}
+	.opp-detail-list {
+		margin: 0 0 0.55rem 1rem;
+		padding: 0;
+		display: grid;
+		gap: 0.2rem;
+	}
+	.opp-detail-list:last-child {
+		margin-bottom: 0;
 	}
 	.opp-modal-files {
 		margin: 0;
@@ -1963,7 +2023,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-modal-files li {
 		font-size: 0.68rem;
 		color: rgba(203, 213, 225, 0.96);
-		word-break: break-all;
+		word-break: break-word;
+		display: grid;
+		gap: 0.08rem;
 	}
 	.opp-modal-files a {
 		color: rgba(125, 211, 252, 0.98);
@@ -1971,6 +2033,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-modal-files a:hover {
 		text-decoration: underline;
+	}
+	.opp-file-host {
+		font-size: 0.61rem;
+		color: rgba(148, 163, 184, 0.9);
 	}
 	body.opp-modal-open {
 		overflow: hidden;

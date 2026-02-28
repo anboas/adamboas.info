@@ -28,12 +28,43 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.68',
+		date: '2026-02-28',
+		title: 'Opportunities deep-text formatting + attachment filename labels',
+		summary: 'Enhanced intel modal readability by formatting deep-text preview into structured blocks and showing human-readable file names + host context for attachment/resource links.',
+		impact: 'You can scan solicitation detail faster and understand linked files immediately without parsing raw URLs.',
+		current: true,
+		tags: ['opportunities', 'sam', 'ux', 'intel', 'readability', 'business-development'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added attachment link labeling with extracted file names and source host metadata.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Changed deep-text preview from raw monospace blob to formatted paragraphs/lists/subheads in the intel modal.',
+					'Updated detail-preview extraction to preserve line breaks for richer formatting.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved attachment readability and analyst scan speed in opportunity drilldown modal.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.67',
 		date: '2026-02-28',
 		title: 'Opportunities intel modal: deep text + attachments in-page',
 		summary: 'Added an in-page intel modal on `/opportunities` so each solicitation can be opened directly for deep-text preview and attachment/resource-link review.',
 		impact: 'You can now inspect notice intelligence context without leaving the opportunities workflow, then jump to source links only when needed.',
-		current: true,
 		tags: ['opportunities', 'sam', 'ux', 'analytics', 'business-development', 'intel'],
 		groups: [
 			{
