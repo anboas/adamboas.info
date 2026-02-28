@@ -28,12 +28,44 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.65',
+		date: '2026-02-28',
+		title: 'Deep SAM intel controls expanded + maintenance cohesion sweep',
+		summary: 'Extended both `/events` and `/opportunities` with deep-notice intelligence controls/metrics, then completed a maintenance pass to keep release metadata and sitemap navigation in sync.',
+		impact: 'You can triage opportunities by evidence depth (text + attachments) faster, and supporting utility surfaces stay current as the platform evolves.',
+		current: true,
+		tags: ['events', 'opportunities', 'sam', 'ux', 'sitemap', 'platform'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added deep-intel controls in `/opportunities`: Intel-depth filter/sort, deep/attachment KPI counters, and table depth/files columns.',
+					'Added deep-intel controls in `/events` solicitation tables: deep-text and attachment columns, plus depth/file sort and filters.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated human sitemap core links to include `/opportunities/` and `/radar/` for better intelligence-surface discoverability.',
+					'Expanded sitemap utility links with `Content License` and bumped global displayed release version to `v2.3.65`.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved maintenance cohesion between operational event/SAM updates and user-facing release/navigation surfaces.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.64',
 		date: '2026-02-27',
 		title: 'Opportunities now includes full SAM feed mirror + resilient chart interactivity',
 		summary: 'Expanded `/opportunities` to include broad SAM candidate feed data (not only event-cached notices) and restored clickable bar filtering across fallback render paths.',
 		impact: 'You can analyze a much wider SAM opportunity set immediately and still use click-driven filtering even when chart runtime falls back.',
-		current: true,
 		tags: ['opportunities', 'events', 'sam', 'analytics', 'ux'],
 		groups: [
 			{
