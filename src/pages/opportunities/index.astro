@@ -1,10 +1,22 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
+
+type ResourceAsset = {
+	sourceUrl: string;
+	mirrorDownloadUrl: string | null;
+	mirrorBlobPath: string | null;
+	fileName: string | null;
+	fileId: string | null;
+	contentType: string | null;
+	sizeBytes: number | null;
+};
 
 type OpportunityRow = {
 	key: string;
@@ -21,7 +33,7 @@ type OpportunityRow = {
 	detailUrl: string | null;
 	detailPreview: string | null;
 	detailTextLength: number;
-	resourceLinks: Set<string>;
+	resourceAssets: Map<string, ResourceAsset>;
 	resourceCount: number;
 	weight: number;
 	eventIds: Set<string>;
@@ -50,6 +62,124 @@ function noticeKey(notice: any) {
 
 function toArray(set: Set<string>) {
 	return [...set].filter(Boolean).sort((a, b) => a.localeCompare(b));
+}
+
+function loadMirrorResourceIndex() {
+	const index = new Map<string, ResourceAsset>();
+	const root = path.resolve('src/data/radar/mirror/sam-opportunities/resources/files');
+	if (!fs.existsSync(root)) return index;
+
+	const stack: string[] = [root];
+	while (stack.length) {
+		const dir = stack.pop()!;
+		let entries: fs.Dirent[] = [];
+		try {
+			entries = fs.readdirSync(dir, { withFileTypes: true });
+		} catch {
+			continue;
+		}
+		for (const entry of entries) {
+			const full = path.join(dir, entry.name);
+			if (entry.isDirectory()) {
+				stack.push(full);
+				continue;
+			}
+			if (!entry.isFile() || entry.name !== 'latest.json') continue;
+			try {
+				const payload = JSON.parse(fs.readFileSync(full, 'utf-8'));
+				const sourceUrl = String(payload.source_url ?? '').trim();
+				if (!sourceUrl) continue;
+				const mirrorBlobPath = String(payload.mirror_blob_path ?? '').trim() || null;
+				const mirrorDownloadUrl = String(payload.mirror_download_url ?? '').trim()
+					|| (mirrorBlobPath ? `https://raw.githubusercontent.com/anboas/adamboas.info/main/${mirrorBlobPath.replace(/^\/+/, '')}` : null);
+				index.set(sourceUrl, {
+					sourceUrl,
+					mirrorDownloadUrl,
+					mirrorBlobPath,
+					fileName: String(payload.file_name ?? '').trim() || null,
+					fileId: String(payload.file_id ?? '').trim() || null,
+					contentType: String(payload.content_type ?? '').trim() || null,
+					sizeBytes: Number(payload.size_bytes ?? 0) || null,
+				});
+			} catch {
+				// skip malformed mirror metadata
+			}
+		}
+	}
+	return index;
+}
+
+const mirrorResourceIndex = loadMirrorResourceIndex();
+
+function normalizeResourceAssets(notice: any): ResourceAsset[] {
+	const out = new Map<string, ResourceAsset>();
+	const items = Array.isArray(notice?.resourceItems ?? notice?.resource_items) ? (notice.resourceItems ?? notice.resource_items) : [];
+	for (const item of items) {
+		if (!item) continue;
+		if (typeof item === 'string') {
+			const sourceUrl = String(item).trim();
+			if (!sourceUrl) continue;
+			out.set(sourceUrl, {
+				sourceUrl,
+				mirrorDownloadUrl: null,
+				mirrorBlobPath: null,
+				fileName: null,
+				fileId: null,
+				contentType: null,
+				sizeBytes: null,
+			});
+			continue;
+		}
+		const sourceUrl = String(item.sourceUrl ?? item.source_url ?? item.url ?? item.link ?? '').trim();
+		if (!sourceUrl) continue;
+		const mirrorBlobPath = String(item.mirrorBlobPath ?? item.mirror_blob_path ?? '').trim() || null;
+		const mirrorDownloadUrl = String(item.mirrorDownloadUrl ?? item.mirror_download_url ?? '').trim()
+			|| (mirrorBlobPath ? `https://raw.githubusercontent.com/anboas/adamboas.info/main/${mirrorBlobPath.replace(/^\/+/, '')}` : null);
+		out.set(sourceUrl, {
+			sourceUrl,
+			mirrorDownloadUrl,
+			mirrorBlobPath,
+			fileName: String(item.fileName ?? item.file_name ?? '').trim() || null,
+			fileId: String(item.fileId ?? item.file_id ?? '').trim() || null,
+			contentType: String(item.contentType ?? item.content_type ?? '').trim() || null,
+			sizeBytes: Number(item.sizeBytes ?? item.size_bytes ?? 0) || null,
+		});
+	}
+
+	const fallbackLinks = Array.isArray(notice?.resourceLinks ?? notice?.resource_links) ? (notice.resourceLinks ?? notice.resource_links) : [];
+	for (const link of fallbackLinks) {
+		const sourceUrl = String(link ?? '').trim();
+		if (!sourceUrl || out.has(sourceUrl)) continue;
+		const mirrored = mirrorResourceIndex.get(sourceUrl);
+		out.set(sourceUrl, {
+			sourceUrl,
+			mirrorDownloadUrl: mirrored?.mirrorDownloadUrl ?? null,
+			mirrorBlobPath: mirrored?.mirrorBlobPath ?? null,
+			fileName: mirrored?.fileName ?? null,
+			fileId: mirrored?.fileId ?? null,
+			contentType: mirrored?.contentType ?? null,
+			sizeBytes: mirrored?.sizeBytes ?? null,
+		});
+	}
+
+	return [...out.values()];
+}
+
+function addResourceAssets(target: Map<string, ResourceAsset>, assets: ResourceAsset[]) {
+	for (const asset of assets) {
+		const sourceUrl = String(asset?.sourceUrl ?? '').trim();
+		if (!sourceUrl) continue;
+		const prior = target.get(sourceUrl);
+		target.set(sourceUrl, {
+			sourceUrl,
+			mirrorDownloadUrl: asset.mirrorDownloadUrl ?? prior?.mirrorDownloadUrl ?? null,
+			mirrorBlobPath: asset.mirrorBlobPath ?? prior?.mirrorBlobPath ?? null,
+			fileName: asset.fileName ?? prior?.fileName ?? null,
+			fileId: asset.fileId ?? prior?.fileId ?? null,
+			contentType: asset.contentType ?? prior?.contentType ?? null,
+			sizeBytes: asset.sizeBytes ?? prior?.sizeBytes ?? null,
+		});
+	}
 }
 
 const DETAIL_PREVIEW_MAX_CHARS = 8000;
@@ -93,7 +223,7 @@ for (const event of radarEventsSeed) {
 				detailUrl: notice.detailUrl ?? notice.detail_url ?? notice.uiLink ?? null,
 				detailPreview: toDetailPreview(notice.detailText ?? notice.detail_text ?? null),
 				detailTextLength: Number(notice.detailTextLength ?? notice.detail_text_length ?? 0),
-				resourceLinks: new Set<string>((notice.resourceLinks ?? notice.resource_links ?? []).filter(Boolean)),
+				resourceAssets: new Map<string, ResourceAsset>(),
 				resourceCount: Number(notice.resourceCount ?? notice.resource_count ?? 0),
 				weight: Number(notice.score ?? 0),
 				eventIds: new Set<string>(),
@@ -118,10 +248,8 @@ for (const event of radarEventsSeed) {
 		const noticePreview = toDetailPreview(notice.detailText ?? notice.detail_text ?? null);
 		if (!row.detailPreview || (noticePreview && noticePreview.length > row.detailPreview.length)) row.detailPreview = noticePreview;
 		row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? notice.detail_text_length ?? (noticePreview?.length ?? 0)));
-		for (const link of (notice.resourceLinks ?? notice.resource_links ?? [])) {
-			if (link) row.resourceLinks.add(String(link));
-		}
-		row.resourceCount = Math.max(row.resourceCount, Number(notice.resourceCount ?? notice.resource_count ?? row.resourceLinks.size ?? 0), row.resourceLinks.size);
+		addResourceAssets(row.resourceAssets, normalizeResourceAssets(notice));
+		row.resourceCount = Math.max(row.resourceCount, Number(notice.resourceCount ?? notice.resource_count ?? row.resourceAssets.size ?? 0), row.resourceAssets.size);
 		row.eventIds.add(event.id);
 		row.eventTitles.add(event.title);
 		row.branches.add(event.branch);
@@ -145,9 +273,9 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 		uiLink: candidate.ui_link ?? candidate.opportunity_url ?? null,
 		score: Number(candidate.relevance_score ?? 0),
 		detailUrl: candidate.detail_url ?? null,
-		detailPreview: toDetailPreview(candidate.detail_text ?? null),
-		detailTextLength: Number(candidate.detail_text_length ?? 0),
-		resourceLinks: Array.isArray(candidate.resource_links) ? candidate.resource_links : [],
+		detailPreview: toDetailPreview(candidate.detail_text ?? candidate.description ?? null),
+		detailTextLength: Number(candidate.detail_text_length ?? candidate.detail_text?.length ?? candidate.description?.length ?? 0),
+		resourceAssets: normalizeResourceAssets(candidate),
 		resourceCount: Number(candidate.resource_count ?? 0),
 	};
 	const key = noticeKey(notice);
@@ -167,7 +295,7 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 			detailUrl: notice.detailUrl ?? notice.uiLink ?? null,
 			detailPreview: notice.detailPreview ?? null,
 			detailTextLength: Number(notice.detailTextLength ?? 0),
-			resourceLinks: new Set<string>((notice.resourceLinks ?? []).filter(Boolean)),
+			resourceAssets: new Map<string, ResourceAsset>(),
 			resourceCount: Number(notice.resourceCount ?? 0),
 			weight: Number(notice.score ?? 0),
 			eventIds: new Set<string>(),
@@ -188,10 +316,8 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 	row.detailUrl = row.detailUrl ?? notice.detailUrl ?? notice.uiLink ?? null;
 	if (!row.detailPreview || ((notice.detailPreview ?? '').length > row.detailPreview.length)) row.detailPreview = notice.detailPreview ?? row.detailPreview;
 	row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? (notice.detailPreview?.length ?? 0)));
-	for (const link of (notice.resourceLinks ?? [])) {
-		if (link) row.resourceLinks.add(String(link));
-	}
-	row.resourceCount = Math.max(row.resourceCount, Number(notice.resourceCount ?? row.resourceLinks.size), row.resourceLinks.size);
+	addResourceAssets(row.resourceAssets, notice.resourceAssets ?? []);
+	row.resourceCount = Math.max(row.resourceCount, Number(notice.resourceCount ?? row.resourceAssets.size), row.resourceAssets.size);
 	row.branches.add('SAM Global');
 }
 
@@ -211,8 +337,8 @@ const opportunities = [...opportunityMap.values()]
 		detailUrl: row.detailUrl,
 		detailPreview: row.detailPreview,
 		detailTextLength: row.detailTextLength,
-		resourceLinks: toArray(row.resourceLinks),
-		resourceCount: Math.max(row.resourceCount, row.resourceLinks.size),
+		resourceAssets: [...row.resourceAssets.values()].sort((a, b) => String(a.fileName ?? a.sourceUrl).localeCompare(String(b.fileName ?? b.sourceUrl))),
+		resourceCount: Math.max(row.resourceCount, row.resourceAssets.size),
 		weight: row.weight,
 		eventIds: toArray(row.eventIds),
 		eventTitles: toArray(row.eventTitles),
@@ -1106,14 +1232,29 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}
 
 				if (el.modalFiles) {
-					const links = Array.isArray(row.resourceLinks) ? row.resourceLinks.filter(Boolean) : [];
-					if (!links.length) {
+					const assets = Array.isArray(row.resourceAssets) ? row.resourceAssets.filter((asset) => asset && asset.sourceUrl) : [];
+					if (!assets.length) {
 						el.modalFiles.innerHTML = '<li class="opp-subcopy">No attachments/resource links captured for this notice.</li>';
 					} else {
-						el.modalFiles.innerHTML = links.slice(0, 60).map((link) => {
-							const { fileName, host } = attachmentLabel(link);
-							const hostMeta = host ? `<span class="opp-file-host">${escapeHtml(host)}</span>` : '';
-							return `<li><a href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${escapeHtml(fileName)}</a>${hostMeta}</li>`;
+						el.modalFiles.innerHTML = assets.slice(0, 60).map((asset) => {
+							const sourceUrl = String(asset.sourceUrl || '').trim();
+							const mirrorUrl = String(asset.mirrorDownloadUrl || '').trim();
+							const sourceMeta = attachmentLabel(sourceUrl);
+							const mirrorMeta = mirrorUrl ? attachmentLabel(mirrorUrl) : null;
+							const fileName = String(asset.fileName || '').trim() || sourceMeta.fileName;
+							const hostMeta = sourceMeta.host ? `<span class="opp-file-host">${escapeHtml(sourceMeta.host)}</span>` : '';
+							const mirrorLink = mirrorUrl
+								? `<a href="${escapeHtml(mirrorUrl)}" target="_blank" rel="noreferrer">Mirror download</a>`
+								: '';
+							const sourceLink = sourceUrl
+								? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">SAM.gov source</a>`
+								: '';
+							const links = [mirrorLink, sourceLink].filter(Boolean).join('<span aria-hidden="true"> · </span>');
+							const size = Number(asset.sizeBytes || 0) > 0
+								? `<span class="opp-file-size">${Number(asset.sizeBytes).toLocaleString()} bytes</span>`
+								: '';
+							const mirrorHost = mirrorMeta?.host ? `<span class="opp-file-host">${escapeHtml(mirrorMeta.host)}</span>` : '';
+							return `<li><span class="opp-file-name">${escapeHtml(fileName)}</span><span class="opp-file-links">${links}</span>${hostMeta}${mirrorHost}${size}</li>`;
 						}).join('');
 					}
 				}
@@ -2027,6 +2168,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		display: grid;
 		gap: 0.08rem;
 	}
+	.opp-file-name {
+		font-size: 0.68rem;
+		color: rgba(226, 232, 240, 0.98);
+	}
+	.opp-file-links {
+		font-size: 0.64rem;
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 0.22rem;
+	}
 	.opp-modal-files a {
 		color: rgba(125, 211, 252, 0.98);
 		text-decoration: none;
@@ -2034,7 +2185,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-modal-files a:hover {
 		text-decoration: underline;
 	}
-	.opp-file-host {
+	.opp-file-host,
+	.opp-file-size {
 		font-size: 0.61rem;
 		color: rgba(148, 163, 184, 0.9);
 	}

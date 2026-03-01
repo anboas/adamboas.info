@@ -33,12 +33,13 @@ from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import parse_qs, unquote, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 API_URL = "https://api.sam.gov/opportunities/v2/search"
 NOTICE_DESC_URL = "https://api.sam.gov/prod/opportunities/v1/noticedesc"
 ROOT = Path("/home/anboas/clawd/adamboas-site")
+GITHUB_RAW_MAIN = "https://raw.githubusercontent.com/anboas/adamboas.info/main"
 
 PTYPE_LABELS = {
     "p": "Pre-solicitation",
@@ -128,6 +129,7 @@ class Candidate:
     detail_text_length: int = 0
     resource_links: list[str] | None = None
     resource_count: int = 0
+    resource_items: list[dict[str, Any]] | None = None
 
 
 def parse_args() -> argparse.Namespace:
@@ -161,6 +163,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--mirror-root", default="src/data/radar/mirror", help="Mirror root directory relative to repo root")
     parser.add_argument("--run-id", default=None, help="Optional mirror run id (default UTC timestamp)")
     parser.add_argument("--skip-query-payloads", action="store_true", help="In mirror mode, skip writing raw query payload JSONs")
+    parser.add_argument(
+        "--mirror-download-resources",
+        action="store_true",
+        help="In mirror mode, download attachment/resource files into immutable mirror and expose mirror URLs",
+    )
+    parser.add_argument("--resource-sleep-ms", type=int, default=80, help="Delay between resource downloads to reduce burst")
     return parser.parse_args()
 
 
@@ -222,6 +230,173 @@ def extract_resource_links(row: dict[str, Any]) -> list[str]:
         if txt.startswith("http://") or txt.startswith("https://"):
             out.append(txt)
     return list(dict.fromkeys(out))
+
+
+def _resource_file_id_from_url(url: str) -> str:
+    txt = str(url or "").strip()
+    m = re.search(r"/files/([a-zA-Z0-9-]{16,})/download", txt)
+    if m:
+        return m.group(1).lower()
+    return hashlib.sha1(txt.encode("utf-8")).hexdigest()[:24]
+
+
+def _filename_from_content_disposition(value: str | None) -> str | None:
+    if not value:
+        return None
+
+    match_star = re.search(r"filename\*=UTF-8''([^;]+)", value, flags=re.IGNORECASE)
+    if match_star:
+        return unquote(match_star.group(1)).strip().strip('"')
+
+    match_plain = re.search(r"filename=\"?([^\";]+)\"?", value, flags=re.IGNORECASE)
+    if match_plain:
+        return unquote(match_plain.group(1)).strip().strip('"')
+    return None
+
+
+def _filename_from_url(url: str | None) -> str | None:
+    if not url:
+        return None
+    parsed = urlparse(url)
+    query = parse_qs(parsed.query)
+    for key in ("response-content-disposition", "response_content_disposition"):
+        values = query.get(key)
+        if not values:
+            continue
+        parsed_name = _filename_from_content_disposition(values[0])
+        if parsed_name:
+            return parsed_name
+    name = Path(parsed.path).name
+    if name and name.lower() != "download":
+        return unquote(name)
+    return None
+
+
+def _safe_filename(name: str, fallback: str) -> str:
+    base = (name or "").strip().replace("\x00", "")
+    if not base:
+        base = fallback
+    base = base.replace("/", "-").replace("\\", "-")
+    base = re.sub(r"[^a-zA-Z0-9._+\- ]+", "-", base).strip(" .")
+    if not base:
+        base = fallback
+    if len(base) > 180:
+        stem, suffix = os.path.splitext(base)
+        base = f"{stem[:160]}{suffix[:16]}"
+    return base
+
+
+def _resource_mirror_url(relative_path: str) -> str:
+    return f"{GITHUB_RAW_MAIN}/{relative_path.lstrip('/')}"
+
+
+def mirror_resource_asset(
+    *,
+    source_url: str,
+    mirror_base: Path,
+    run_id: str,
+    timeout_seconds: int = 90,
+) -> tuple[dict[str, Any] | None, str]:
+    source_url = str(source_url or "").strip()
+    if not source_url:
+        return None, "skip"
+
+    file_id = _resource_file_id_from_url(source_url)
+    file_slug = _slug(file_id)
+    files_root = mirror_base / "resources" / "files"
+    blobs_root = mirror_base / "resources" / "blobs"
+    file_dir = files_root / file_slug
+    versions_dir = file_dir / "versions"
+    latest_path = file_dir / "latest.json"
+    versions_dir.mkdir(parents=True, exist_ok=True)
+    blobs_root.mkdir(parents=True, exist_ok=True)
+
+    if latest_path.exists():
+        try:
+            latest_payload = json.loads(latest_path.read_text(encoding="utf-8"))
+            rel_blob = str(latest_payload.get("mirror_blob_path") or "").strip()
+            if rel_blob and (ROOT / rel_blob).exists():
+                item = {
+                    "source_url": source_url,
+                    "mirror_download_url": latest_payload.get("mirror_download_url"),
+                    "mirror_blob_path": rel_blob,
+                    "file_id": latest_payload.get("file_id") or file_id,
+                    "file_name": latest_payload.get("file_name") or _filename_from_url(source_url) or f"{file_id}.bin",
+                    "content_type": latest_payload.get("content_type"),
+                    "size_bytes": latest_payload.get("size_bytes"),
+                    "sha256": latest_payload.get("sha256"),
+                }
+                return item, "cache"
+        except Exception:
+            pass
+
+    req = Request(source_url, headers={"Accept": "*/*", "User-Agent": "adamboas-sam-mirror/1.0"})
+    with urlopen(req, timeout=timeout_seconds) as resp:
+        body = resp.read()
+        final_url = resp.geturl()
+        headers = {k.lower(): v for k, v in resp.headers.items()}
+
+    if not body:
+        return None, "error"
+
+    file_name = (
+        _filename_from_content_disposition(headers.get("content-disposition"))
+        or _filename_from_url(final_url)
+        or _filename_from_url(source_url)
+        or f"{file_id}.bin"
+    )
+    safe_name = _safe_filename(file_name, f"{file_id}.bin")
+    suffix = Path(safe_name).suffix.lower()
+    if len(suffix) > 12:
+        suffix = ""
+
+    sha256 = hashlib.sha256(body).hexdigest()
+    blob_name = f"{sha256}{suffix}"
+    blob_path = blobs_root / blob_name
+    if not blob_path.exists():
+        blob_path.write_bytes(body)
+
+    rel_blob = blob_path.relative_to(ROOT).as_posix()
+    mirror_url = _resource_mirror_url(rel_blob)
+
+    version_payload = {
+        "_mirror_run_id": run_id,
+        "_mirror_recorded_at": datetime.now(UTC).isoformat(),
+        "file_id": file_id,
+        "file_slug": file_slug,
+        "file_name": safe_name,
+        "source_url": source_url,
+        "final_url": final_url,
+        "mirror_blob_path": rel_blob,
+        "mirror_download_url": mirror_url,
+        "content_type": headers.get("content-type"),
+        "size_bytes": len(body),
+        "sha256": sha256,
+    }
+
+    previous_hash = None
+    if latest_path.exists():
+        try:
+            previous = json.loads(latest_path.read_text(encoding="utf-8"))
+            previous_hash = previous.get("sha256")
+        except Exception:
+            previous_hash = None
+
+    if previous_hash != sha256:
+        (versions_dir / f"{run_id}.json").write_text(json.dumps(version_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    latest_path.write_text(json.dumps(version_payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    item = {
+        "source_url": source_url,
+        "mirror_download_url": mirror_url,
+        "mirror_blob_path": rel_blob,
+        "file_id": file_id,
+        "file_name": safe_name,
+        "content_type": headers.get("content-type"),
+        "size_bytes": len(body),
+        "sha256": sha256,
+    }
+    return item, "download"
 
 
 def fetch_notice_description(api_key: str, notice_id: str, cache_dir: Path, cache_ttl_seconds: int) -> tuple[str | None, bool]:
@@ -550,6 +725,9 @@ def write_mirror_artifacts(
     query_failures: int,
     detail_api_fetches: int,
     detail_cache_hits: int,
+    resource_downloads: int,
+    resource_cache_hits: int,
+    resource_errors: int,
 ) -> None:
     mirror_base.mkdir(parents=True, exist_ok=True)
     runs_dir = mirror_base / "runs"
@@ -600,6 +778,9 @@ def write_mirror_artifacts(
         "query_failures": query_failures,
         "detail_api_fetches": detail_api_fetches,
         "detail_cache_hits": detail_cache_hits,
+        "resource_downloads": resource_downloads,
+        "resource_cache_hits": resource_cache_hits,
+        "resource_errors": resource_errors,
         "changed_notices": changed_notices,
         "snapshot": str(snapshot_path.relative_to(ROOT)),
     }
@@ -706,6 +887,9 @@ def main() -> int:
 
     detail_api_fetches = 0
     detail_cache_hits = 0
+    resource_downloads = 0
+    resource_cache_hits = 0
+    resource_errors = 0
     if args.enrich_detail_text:
         if mirror_base:
             detail_cache_dir = mirror_base / "notice-desc-cache"
@@ -733,6 +917,11 @@ def main() -> int:
                 full_text = normalize_detail_text(detail_html, 0) or ""
                 candidate.detail_text_length = len(full_text)
                 candidate.detail_text = normalize_detail_text(detail_html, args.detail_max_chars)
+            else:
+                synopsis_full = normalize_detail_text(candidate.description, 0) or ""
+                if synopsis_full and candidate.detail_text_length <= 0:
+                    candidate.detail_text_length = len(synopsis_full)
+                    candidate.detail_text = normalize_detail_text(candidate.description, args.detail_max_chars)
 
             if from_cache:
                 detail_cache_hits += 1
@@ -740,6 +929,49 @@ def main() -> int:
                 detail_api_fetches += 1
                 if args.detail_sleep_ms > 0:
                     time.sleep(args.detail_sleep_ms / 1000)
+
+    for candidate in candidates:
+        if not candidate.detail_text and candidate.description:
+            fallback_full = normalize_detail_text(candidate.description, 0) or ""
+            if fallback_full:
+                candidate.detail_text_length = max(candidate.detail_text_length, len(fallback_full))
+                candidate.detail_text = normalize_detail_text(candidate.description, args.detail_max_chars)
+
+    if mirror_base and args.mirror_download_resources and mirror_run_id:
+        for candidate in candidates:
+            links = list(dict.fromkeys(candidate.resource_links or []))
+            resolved_items: list[dict[str, Any]] = []
+            for link in links:
+                try:
+                    item, status = mirror_resource_asset(
+                        source_url=link,
+                        mirror_base=mirror_base,
+                        run_id=mirror_run_id,
+                    )
+                except Exception:
+                    item, status = None, "error"
+
+                if status == "cache":
+                    resource_cache_hits += 1
+                elif status == "download":
+                    resource_downloads += 1
+                    if args.resource_sleep_ms > 0:
+                        time.sleep(args.resource_sleep_ms / 1000)
+                elif status == "error":
+                    resource_errors += 1
+
+                if item:
+                    resolved_items.append(item)
+
+            if resolved_items:
+                candidate.resource_items = resolved_items
+                candidate.resource_count = max(candidate.resource_count, len(resolved_items))
+    else:
+        for candidate in candidates:
+            links = list(dict.fromkeys(candidate.resource_links or []))
+            if links:
+                candidate.resource_items = [{"source_url": link} for link in links]
+                candidate.resource_count = max(candidate.resource_count, len(links))
 
     out_json = ROOT / f"src/data/radar/events-candidates-{args.output_prefix}.json"
     out_md = ROOT / f"src/data/radar/events-candidates-{args.output_prefix}.md"
@@ -758,6 +990,9 @@ def main() -> int:
             query_failures=query_failures,
             detail_api_fetches=detail_api_fetches,
             detail_cache_hits=detail_cache_hits,
+            resource_downloads=resource_downloads,
+            resource_cache_hits=resource_cache_hits,
+            resource_errors=resource_errors,
         )
 
     print(f"Wrote {len(candidates)} SAM opportunity candidates")
@@ -766,6 +1001,8 @@ def main() -> int:
         print(f"Query failures: {query_failures}")
     if args.enrich_detail_text:
         print(f"Detail enrichment: api_fetches={detail_api_fetches}, cache_hits={detail_cache_hits}")
+    if mirror_base and args.mirror_download_resources:
+        print(f"Resource mirror: downloads={resource_downloads}, cache_hits={resource_cache_hits}, errors={resource_errors}")
     if mirror_base and mirror_run_id:
         print(f"Mirror snapshot: {mirror_base / 'snapshots' / f'{mirror_run_id}.json'}")
         if not args.skip_query_payloads:
