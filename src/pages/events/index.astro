@@ -1038,22 +1038,26 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 									</p>
 								</div>
 								<div class="flex w-full flex-col items-start gap-1.5 lg:w-auto lg:items-end">
-									<div class="flex w-full flex-wrap items-center gap-2 lg:w-auto lg:justify-end radar-card-actions">
-										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
-										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Event link</a> : null}
-										{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <a class="radar-pin-btn radar-link-btn-sam" href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM notice</a> : null}
-										{(eventCalendarLink(event) || eventIosIcsLink(event) || eventOutlookIcsLink(event)) ? (
-											<span class="radar-calendar-group" aria-label="Calendar options">
-												<span class="radar-calendar-group-label">Calendar:</span>
-												{eventIosIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-ios" href={eventIosIcsLink(event)!} target="_blank" rel="noreferrer" aria-label="iOS calendar (.ics)" title="iOS calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">🍎</span><span class="radar-calendar-chip-label">iOS (.ics)</span></a> : null}
-												{eventCalendarLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-google" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer" aria-label="Google Calendar" title="Google Calendar"><span class="radar-calendar-chip-icon" aria-hidden="true">🗓️</span><span class="radar-calendar-chip-label">Google</span></a> : null}
-												{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)} aria-label="Outlook calendar (.ics)" title="Outlook calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">📘</span><span class="radar-calendar-chip-label">Outlook (.ics)</span></a> : null}
-											</span>
-										) : null}
-										<a class="radar-pin-btn radar-link-btn-opps" href={opportunitiesSliceHref(event)}>Opp intel</a>
-										<button class="radar-pin-btn radar-inline-tool" type="button" data-map-focus data-id={event.id}>Map</button>
-										<button class="radar-pin-btn radar-inline-tool" type="button" data-calendar-focus data-id={event.id}>Calendar</button>
-										<button class="radar-pin-btn radar-pin-btn-primary" type="button" data-open-event data-id={event.id}>Open event</button>
+									<div class="radar-card-actions">
+										<div class="radar-card-actions-main">
+											<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
+											{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Event link</a> : null}
+											{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <a class="radar-pin-btn radar-link-btn-sam" href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM notice</a> : null}
+											{(eventCalendarLink(event) || eventIosIcsLink(event) || eventOutlookIcsLink(event)) ? (
+												<span class="radar-calendar-group" aria-label="Calendar options">
+													<span class="radar-calendar-group-label">Calendar:</span>
+													{eventIosIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-ios" href={eventIosIcsLink(event)!} target="_blank" rel="noreferrer" aria-label="iOS calendar (.ics)" title="iOS calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">🍎</span><span class="radar-calendar-chip-label">iOS (.ics)</span></a> : null}
+													{eventCalendarLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-google" href={eventCalendarLink(event)!} target="_blank" rel="noreferrer" aria-label="Google Calendar" title="Google Calendar"><span class="radar-calendar-chip-icon" aria-hidden="true">🗓️</span><span class="radar-calendar-chip-label">Google</span></a> : null}
+													{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)} aria-label="Outlook calendar (.ics)" title="Outlook calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">📘</span><span class="radar-calendar-chip-label">Outlook (.ics)</span></a> : null}
+												</span>
+											) : null}
+											<a class="radar-pin-btn radar-link-btn-opps" href={opportunitiesSliceHref(event)}>Opp intel</a>
+											<button class="radar-pin-btn radar-inline-tool" type="button" data-map-focus data-id={event.id}>Map</button>
+											<button class="radar-pin-btn radar-inline-tool" type="button" data-calendar-focus data-id={event.id}>Calendar</button>
+										</div>
+										<div class="radar-card-actions-cta">
+											<button class="radar-pin-btn radar-pin-btn-primary" type="button" data-open-event data-id={event.id}>Open event</button>
+										</div>
 									</div>
 									<div class="radar-badge-row">
 										{solicitationCount(event) > 0 ? <span class="radar-solicitations-pill" title="Matched SAM solicitations">{solicitationCount(event)} solicitations</span> : null}
@@ -3550,12 +3554,24 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 	}
 	.radar-card-actions {
 		display: flex;
-		flex-wrap: wrap;
 		align-items: center;
-		gap: 0.34rem;
+		justify-content: space-between;
+		gap: 0.4rem;
 		padding: 0.34rem;
 		border: 1px solid rgba(51, 65, 85, 0.82);
 		background: rgba(15, 23, 42, 0.62);
+		width: 100%;
+	}
+	.radar-card-actions-main {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.34rem;
+	}
+	.radar-card-actions-cta {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
 	}
 	.radar-days-chip {
 		display: inline-flex;
@@ -4112,6 +4128,8 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		background: rgba(14, 116, 144, 0.28);
 		color: rgba(224, 242, 254, 0.98);
 		font-weight: 700;
+		min-width: 6.4rem;
+		letter-spacing: 0.01em;
 	}
 	.radar-pin-btn-primary:hover {
 		background: rgba(14, 116, 144, 0.38);
@@ -4133,6 +4151,18 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 	@media (max-width: 1279px) {
 		.radar-toolbar {
 			position: static;
+		}
+	}
+
+	@media (max-width: 1180px) {
+		.radar-card-actions {
+			align-items: flex-start;
+		}
+		.radar-card-actions-main {
+			max-width: 100%;
+		}
+		.radar-card-actions-cta {
+			margin-left: 0;
 		}
 	}
 
@@ -4163,6 +4193,17 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		.radar-card-actions {
 			gap: 0.28rem;
 			padding: 0.26rem;
+			flex-direction: column;
+			align-items: stretch;
+		}
+		.radar-card-actions-main {
+			width: 100%;
+		}
+		.radar-card-actions-cta {
+			width: 100%;
+		}
+		.radar-card-actions-cta .radar-pin-btn-primary {
+			width: 100%;
 		}
 		.radar-pin-btn {
 			min-height: 1.8rem;
