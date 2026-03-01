@@ -1955,13 +1955,55 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		requestAnimationFrame(frame);
 	}
 
-	function focusCard(id) {
+	function focusCard(id, options = { scroll: true }) {
 		const card = cards.find((c) => c.dataset.id === id);
 		if (!card) return;
 		for (const c of cards) c.classList.remove('radar-card-focus');
 		card.classList.add('radar-card-focus');
-		slowScrollTo(card, 980);
+		if (options.scroll !== false) slowScrollTo(card, 980);
 		setTimeout(() => card.classList.remove('radar-card-focus'), 2000);
+	}
+
+	function normalizeHashEventId() {
+		const raw = String(window.location.hash || '').replace(/^#/, '').trim();
+		if (!raw) return '';
+		try {
+			return decodeURIComponent(raw);
+		} catch {
+			return raw;
+		}
+	}
+
+	function ensureCardVisibleById(id) {
+		if (!id) return false;
+		let { visible } = getVisibleCards();
+		let index = visible.findIndex((card) => card.dataset.id === id);
+		if (index < 0) {
+			applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, newOnly: false, showPast: false, topics: new Set(), windowDays: null });
+			currentPage = 1;
+			render();
+			visible = getVisibleCards().visible;
+			index = visible.findIndex((card) => card.dataset.id === id);
+			if (index < 0) return false;
+		}
+		const targetPage = Math.floor(index / PAGE_SIZE) + 1;
+		if (currentPage !== targetPage) {
+			currentPage = targetPage;
+			render();
+		}
+		return true;
+	}
+
+	function openDeepLinkedEvent(options = { scroll: true, openMap: true }) {
+		const id = normalizeHashEventId();
+		if (!id) return;
+		if (!ensureCardVisibleById(id)) return;
+		const card = cards.find((c) => c.dataset.id === id);
+		if (!card) return;
+		const details = card.querySelector('.radar-details');
+		if (details && !details.open) details.open = true;
+		focusCard(id, { scroll: options.scroll !== false });
+		if (options.openMap) focusMapEvent(id, { openPopup: true });
 	}
 
 	function focusCalendarEvent(id) {
@@ -2509,7 +2551,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		renderMap(visible);
 
 		const query = toQuery(state);
-		const href = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+		const hash = window.location.hash || '';
+		const href = query ? `${window.location.pathname}?${query}${hash}` : `${window.location.pathname}${hash}`;
 		history.replaceState(null, '', href);
 	}
 
@@ -2719,6 +2762,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	applyStatusFacetMode();
 	render();
 	initSamTableControls();
+	requestAnimationFrame(() => openDeepLinkedEvent({ scroll: true, openMap: true }));
+	window.addEventListener('hashchange', () => {
+		requestAnimationFrame(() => openDeepLinkedEvent({ scroll: true, openMap: true }));
+	});
 </script>
 
 <style>
