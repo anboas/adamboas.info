@@ -270,6 +270,21 @@ function samAttachmentCount(notice: SamNotice) {
 	return Number(meta?.resource_count ?? meta?.resourceCount ?? meta?.resource_links?.length ?? meta?.resourceLinks?.length ?? 0);
 }
 
+function opportunitiesIntelHref(notice: SamNotice, eventId: string) {
+	const params = new URLSearchParams();
+	const noticeId = String(notice.noticeId ?? '').trim();
+	if (noticeId) params.set('opp', noticeId);
+	if (notice.solicitationNumber) params.set('q', notice.solicitationNumber);
+	params.set('open', '1');
+	params.set('from', 'events');
+	params.set('event', eventId);
+	const title = String(notice.title ?? '').trim();
+	if (title) params.set('opptitle', title.slice(0, 120));
+	const base = withBase('/opportunities/');
+	const query = params.toString();
+	return query ? `${base}?${query}` : base;
+}
+
 function deepCoverage(event: (typeof events)[number]) {
 	let withDetail = 0;
 	let withAttachments = 0;
@@ -1214,6 +1229,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 														<tr>
 															<th class="radar-col-weight">Weight</th>
 															<th>Solicitation name</th>
+															<th>Intel row</th>
 															<th>Type</th>
 															<th>Posted</th>
 															<th>Due</th>
@@ -1231,6 +1247,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()} data-tags={noticeFocusTags(notice).map((tag) => tag.key).join(',')} data-detail={samDeepTextLength(notice)} data-files={samAttachmentCount(notice)}>
 															<td class="radar-col-weight">{notice.score ?? 0}</td>
 															<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
+															<td><a class="radar-intel-open-link" href={opportunitiesIntelHref(notice, event.id)}>Open intel</a></td>
 															<td>{notice.noticeType}</td>
 															<td>{notice.postedDate ?? '—'}</td>
 															<td class={dueDateClass(notice.responseDueDate)}>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>
@@ -3591,6 +3608,22 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	}
 	.radar-intel-table td {
 		color: rgba(203, 213, 225, 0.95);
+	}
+	.radar-intel-open-link {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(125, 211, 252, 0.5);
+		background: rgba(2, 132, 199, 0.15);
+		padding: 0.08rem 0.34rem;
+		font-size: 0.62rem;
+		line-height: 1.2;
+		color: rgba(224, 242, 254, 0.98);
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	.radar-intel-open-link:hover {
+		background: rgba(2, 132, 199, 0.24);
+		text-decoration: underline;
 	}
 	.radar-col-weight {
 		text-align: center !important;

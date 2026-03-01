@@ -813,6 +813,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-modal-links">
 				<a id="opp-modal-link" href="#" target="_blank" rel="noreferrer" hidden>Open SAM notice ↗</a>
 				<a id="opp-modal-detail-link" href="#" target="_blank" rel="noreferrer" hidden>Open detail endpoint ↗</a>
+				<a id="opp-modal-event-link" href="#" hidden>Back to source event ↗</a>
 			</div>
 			<div class="opp-modal-body">
 				<div>
@@ -885,6 +886,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalAwards: document.getElementById('opp-modal-awards'),
 				modalLink: document.getElementById('opp-modal-link'),
 				modalDetailLink: document.getElementById('opp-modal-detail-link'),
+				modalEventLink: document.getElementById('opp-modal-event-link'),
 				modalDetail: document.getElementById('opp-modal-detail'),
 				modalFiles: document.getElementById('opp-modal-files'),
 				modalEvents: document.getElementById('opp-modal-events'),
@@ -1124,6 +1126,32 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				sortDir: 'desc',
 				page: 1,
 				pageSize: Number(el.pageSize?.value || 50),
+			};
+
+			const incomingParams = new URLSearchParams(window.location.search);
+			const incomingContext = {
+				from: String(incomingParams.get('from') || '').trim(),
+				eventId: String(incomingParams.get('event') || '').trim(),
+				opp: String(incomingParams.get('opp') || '').trim(),
+				q: String(incomingParams.get('q') || '').trim(),
+				open: incomingParams.get('open') === '1',
+			};
+			let pendingAutoOpenNoticeId = incomingContext.open ? incomingContext.opp : '';
+
+			const normalizeNoticeId = (value) => String(value || '')
+				.toLowerCase()
+				.replace(/[^a-z0-9]/g, '');
+
+			const findRowByNoticeId = (noticeId) => {
+				const target = normalizeNoticeId(noticeId);
+				if (!target) return null;
+				return rows.find((row) => normalizeNoticeId(row.noticeId) === target) || null;
+			};
+
+			const applyIncomingContext = () => {
+				if (!el.search) return;
+				if (!el.search.value && incomingContext.q) el.search.value = incomingContext.q;
+				if (!el.search.value && incomingContext.opp) el.search.value = incomingContext.opp;
 			};
 
 			const updateStateFromInputs = () => {
@@ -1468,6 +1496,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					} else {
 						el.modalDetailLink.setAttribute('hidden', '');
 						el.modalDetailLink.setAttribute('href', '#');
+					}
+				}
+				if (el.modalEventLink) {
+					if (incomingContext.from === 'events' && incomingContext.eventId) {
+						el.modalEventLink.removeAttribute('hidden');
+						el.modalEventLink.setAttribute('href', `/events/#${encodeURIComponent(incomingContext.eventId)}`);
+					} else {
+						el.modalEventLink.setAttribute('hidden', '');
+						el.modalEventLink.setAttribute('href', '#');
 					}
 				}
 
@@ -1841,8 +1878,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				closeIntelModal();
 			});
 
+			applyIncomingContext();
 			hydrateClientFilterOptions();
 			render();
+			if (pendingAutoOpenNoticeId) {
+				const match = findRowByNoticeId(pendingAutoOpenNoticeId);
+				if (match) openIntelModal(match, null);
+				pendingAutoOpenNoticeId = '';
+			}
 		})();
 	</script>
 </SiteLayout>
