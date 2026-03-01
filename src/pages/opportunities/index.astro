@@ -549,6 +549,24 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		</div>
 		<div class="opp-table-wrap">
 			<table class="opp-table">
+				<colgroup>
+					<col class="opp-col-gem" />
+					<col class="opp-col-weight" />
+					<col class="opp-col-due" />
+					<col class="opp-col-days" />
+					<col class="opp-col-posted" />
+					<col class="opp-col-intel" />
+					<col class="opp-col-files" />
+					<col class="opp-col-notice" />
+					<col class="opp-col-title" />
+					<col class="opp-col-sol" />
+					<col class="opp-col-client" />
+					<col class="opp-col-agency" />
+					<col class="opp-col-work" />
+					<col class="opp-col-naics" />
+					<col class="opp-col-events" />
+					<col class="opp-col-intel-view" />
+				</colgroup>
 				<thead>
 					<tr>
 						<th><button class="opp-sort-btn is-active" data-sort="gemScore" data-dir="desc" type="button">Gem</button></th>
@@ -1380,8 +1398,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const files = row.resourceCount ? String(row.resourceCount) : '—';
 					const due = fmtDate(row.responseDueDate);
 					const title = row.uiLink
-						? `<a href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
-						: escapeHtml(row.title);
+						? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
+						: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
 					const mapped = (row.eventTitles || []).slice(0, 2).map((title) => `<span class="opp-pill" title="${escapeHtml(title)}">${escapeHtml(title)}</span>`).join('')
 						+ ((row.eventTitles || []).length > 2 ? `<span class="opp-pill">+${(row.eventTitles || []).length - 2}</span>` : '');
 					return `<tr>
@@ -1392,12 +1410,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<td class="opp-num">${daysSinceRelease}</td>
 						<td class="opp-num">${intelDepth}</td>
 						<td class="opp-num">${files}</td>
-						<td>${escapeHtml(row.noticeType || '—')}</td>
-						<td>${title}</td>
-						<td>${escapeHtml(row.solicitationNumber || '—')}</td>
-						<td title="${escapeHtml(row.clientLabel || '')}">${escapeHtml(row.clientLabel || 'Unknown')}</td>
-						<td title="${escapeHtml(row.agencyPath || '')}">${escapeHtml(row.agencyLabel)}</td>
-						<td title="${escapeHtml((row.workTypes || []).map((key) => workTypeLabel[key] || key).join(', '))}">${escapeHtml(row.workTypeLabel || 'General/Other')}</td>
+						<td class="opp-cell-truncate">${escapeHtml(row.noticeType || '—')}</td>
+						<td class="opp-cell-title">${title}</td>
+						<td class="opp-cell-truncate">${escapeHtml(row.solicitationNumber || '—')}</td>
+						<td class="opp-cell-truncate" title="${escapeHtml(row.clientLabel || '')}">${escapeHtml(row.clientLabel || 'Unknown')}</td>
+						<td class="opp-cell-truncate" title="${escapeHtml(row.agencyPath || '')}">${escapeHtml(row.agencyLabel)}</td>
+						<td class="opp-cell-truncate" title="${escapeHtml((row.workTypes || []).map((key) => workTypeLabel[key] || key).join(', '))}">${escapeHtml(row.workTypeLabel || 'General/Other')}</td>
 						<td class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
 						<td><div class="opp-pill-wrap">${mapped || '—'}</div></td>
 						<td class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
@@ -1920,9 +1938,27 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-table {
 		width: 100%;
+		min-width: 132rem;
+		table-layout: fixed;
 		border-collapse: collapse;
 		font-size: 0.71rem;
 	}
+	.opp-col-gem { width: 3.6rem; }
+	.opp-col-weight { width: 4.4rem; }
+	.opp-col-due { width: 6.7rem; }
+	.opp-col-days { width: 4.2rem; }
+	.opp-col-posted { width: 7.1rem; }
+	.opp-col-intel { width: 5.4rem; }
+	.opp-col-files { width: 4rem; }
+	.opp-col-notice { width: 9rem; }
+	.opp-col-title { width: 24rem; }
+	.opp-col-sol { width: 10.7rem; }
+	.opp-col-client { width: 11rem; }
+	.opp-col-agency { width: 13rem; }
+	.opp-col-work { width: 10rem; }
+	.opp-col-naics { width: 6rem; }
+	.opp-col-events { width: 11rem; }
+	.opp-col-intel-view { width: 6.2rem; }
 	.opp-table th,
 	.opp-table td {
 		padding: 0.34rem 0.38rem;
@@ -1973,6 +2009,30 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-table td {
 		color: rgba(203, 213, 225, 0.96);
+	}
+	.opp-cell-truncate {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.opp-cell-title {
+		overflow: hidden;
+	}
+	.opp-title-link,
+	.opp-title-text {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		line-height: 1.28;
+		max-height: 2.56em;
+	}
+	.opp-title-link {
+		color: rgba(203, 213, 225, 0.96);
+		text-decoration: none;
+	}
+	.opp-title-link:hover {
+		text-decoration: underline;
 	}
 	.opp-num {
 		text-align: center;
