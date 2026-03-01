@@ -520,7 +520,17 @@ const opportunities = [...opportunityMap.values()]
 		eventIds: toArray(row.eventIds),
 		eventTitles: toArray(row.eventTitles),
 		eventRefs: [...row.eventIds]
-			.map((id) => ({ id, title: eventById.get(id)?.title ?? id, href: withBase(`/events/#${encodeURIComponent(id)}`) }))
+			.map((id) => {
+				const event = eventById.get(id);
+				return {
+					id,
+					title: event?.title ?? id,
+					href: withBase(`/events/#${encodeURIComponent(id)}`),
+					branch: event?.branch ?? null,
+					status: event?.status ?? null,
+					startDate: event?.startDate ?? null,
+				};
+			})
 			.sort((a, b) => a.title.localeCompare(b.title)),
 		branches: toArray(row.branches),
 		capabilityAreas: toArray(row.capabilityAreas),
@@ -804,6 +814,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<div>
 					<p class="opp-modal-section-title">Attachments / resource links</p>
 					<ul id="opp-modal-files" class="opp-modal-files"></ul>
+					<p class="opp-modal-section-title mt-3">Mapped events</p>
+					<ul id="opp-modal-events" class="opp-modal-events"></ul>
 				</div>
 			</div>
 		</div>
@@ -865,6 +877,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalDetailLink: document.getElementById('opp-modal-detail-link'),
 				modalDetail: document.getElementById('opp-modal-detail'),
 				modalFiles: document.getElementById('opp-modal-files'),
+				modalEvents: document.getElementById('opp-modal-events'),
 			};
 
 			const charts = {
@@ -1471,6 +1484,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					}
 				}
 
+				if (el.modalEvents) {
+					const refs = Array.isArray(row.eventRefs) ? row.eventRefs.filter((ref) => ref && ref.id) : [];
+					if (!refs.length) {
+						el.modalEvents.innerHTML = '<li class="opp-subcopy">No mapped events for this opportunity yet.</li>';
+					} else {
+						el.modalEvents.innerHTML = refs.slice(0, 8).map((ref) => {
+							const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
+							const start = fmtDate(ref.startDate || null);
+							const meta = [ref.branch, ref.status, start !== '—' ? start : ''].filter(Boolean).join(' · ');
+							return `<li><a href="${escapeHtml(href)}">${escapeHtml(ref.title || ref.id)}</a>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
+						}).join('');
+					}
+				}
+
 				el.modal.removeAttribute('hidden');
 				el.modal.setAttribute('aria-hidden', 'false');
 				document.body.classList.add('opp-modal-open');
@@ -1601,7 +1628,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const mappedRefs = Array.isArray(row.eventRefs) ? row.eventRefs : [];
 					const mapped = mappedRefs.slice(0, 2).map((ref) => {
 						const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
-						return `<a class="opp-pill opp-pill-link" href="${escapeHtml(href)}" title="${escapeHtml(ref.title || '')}">${escapeHtml(ref.title || '')}</a>`;
+						const branch = String(ref.branch || '').trim();
+						const when = fmtDate(ref.startDate || null);
+						const titleText = String(ref.title || 'Mapped event');
+						const shortLabel = `${branch ? `${branch} · ` : ''}${titleText}`;
+						const fullTitle = `${titleText}${branch ? `\nBranch: ${branch}` : ''}${when !== '—' ? `\nStarts: ${when}` : ''}${ref.status ? `\nStatus: ${ref.status}` : ''}`;
+						return `<a class="opp-pill opp-pill-link" href="${escapeHtml(href)}" title="${escapeHtml(fullTitle)}">${escapeHtml(shortLabel)}</a>`;
 					}).join('')
 						+ (mappedRefs.length > 2 ? `<span class="opp-pill">+${mappedRefs.length - 2}</span>` : '');
 					return `<tr>
@@ -2427,7 +2459,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-detail-list:last-child {
 		margin-bottom: 0;
 	}
-	.opp-modal-files {
+	.opp-modal-files,
+	.opp-modal-events {
 		margin: 0;
 		padding-left: 1rem;
 		display: grid;
@@ -2435,7 +2468,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		max-height: 58vh;
 		overflow: auto;
 	}
-	.opp-modal-files li {
+	.opp-modal-files li,
+	.opp-modal-events li {
 		font-size: 0.68rem;
 		color: rgba(203, 213, 225, 0.96);
 		word-break: break-word;
@@ -2452,11 +2486,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		flex-wrap: wrap;
 		gap: 0.22rem;
 	}
-	.opp-modal-files a {
+	.opp-modal-files a,
+	.opp-modal-events a {
 		color: rgba(125, 211, 252, 0.98);
 		text-decoration: none;
 	}
-	.opp-modal-files a:hover {
+	.opp-modal-files a:hover,
+	.opp-modal-events a:hover {
 		text-decoration: underline;
 	}
 	.opp-file-host,
