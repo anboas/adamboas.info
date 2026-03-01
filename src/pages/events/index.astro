@@ -843,6 +843,16 @@ function acquisitionReferences(event: (typeof events)[number]) {
 					<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
 				</div>
 			</div>
+			<div id="radar-opportunity-context" class="radar-opportunity-context hidden" aria-live="polite">
+				<div>
+					<p class="radar-opportunity-context-label">Opportunity context</p>
+					<p id="radar-opportunity-context-text" class="radar-opportunity-context-text">Opened from opportunities.</p>
+				</div>
+				<div class="radar-opportunity-context-actions">
+					<a id="radar-opportunity-context-back" class="radar-btn radar-btn-tight" href={withBase('/opportunities/')}>Back to opportunities</a>
+					<button id="radar-opportunity-context-clear" class="radar-btn radar-btn-tight" type="button">Clear context</button>
+				</div>
+			</div>
 			<details id="radar-overview-panel" class="radar-filter-panel radar-overview-panel mt-2">
 				<summary class="radar-summary radar-summary-primary">Overview + quick filters</summary>
 				<div class="mt-2 space-y-2">
@@ -1329,6 +1339,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		reset: document.getElementById('radar-reset'),
 		topicButtons: Array.from(document.querySelectorAll('[data-topic]')),
 		windowButtons: Array.from(document.querySelectorAll('[data-window-days]')),
+		opportunityContext: document.getElementById('radar-opportunity-context'),
+		opportunityContextText: document.getElementById('radar-opportunity-context-text'),
+		opportunityContextBack: document.getElementById('radar-opportunity-context-back'),
+		opportunityContextClear: document.getElementById('radar-opportunity-context-clear'),
 	};
 
 	const list = document.getElementById('radar-list');
@@ -1375,6 +1389,45 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	let currentPage = 1;
 	let currentTotalPages = 1;
 	let statusFacetEnabled = true;
+	let opportunityContext = null;
+
+	function readOpportunityContextFromUrl() {
+		const params = new URLSearchParams(window.location.search);
+		if (params.get('from') !== 'opportunities') return null;
+		const opp = String(params.get('opp') || '').trim();
+		const title = String(params.get('opptitle') || '').trim();
+		if (!opp && !title) return null;
+		return {
+			from: 'opportunities',
+			opp,
+			title: title.slice(0, 140),
+		};
+	}
+
+	function applyOpportunityContextBanner() {
+		const wrap = controls.opportunityContext;
+		if (!wrap) return;
+		const text = controls.opportunityContextText;
+		const back = controls.opportunityContextBack;
+		if (!opportunityContext) {
+			wrap.classList.add('hidden');
+			return;
+		}
+		wrap.classList.remove('hidden');
+		const label = opportunityContext.title
+			? `From opportunity: ${opportunityContext.title}`
+			: `From opportunity notice: ${opportunityContext.opp}`;
+		if (text) text.textContent = label;
+		if (back) {
+			const baseHref = back.dataset.baseHref || back.getAttribute('href') || '/opportunities/';
+			if (!back.dataset.baseHref) back.dataset.baseHref = baseHref;
+			const params = new URLSearchParams();
+			if (opportunityContext.opp) params.set('q', opportunityContext.opp);
+			const qs = params.toString();
+			const [basePath] = String(baseHref).split('?');
+			back.setAttribute('href', qs ? `${basePath}?${qs}` : basePath);
+		}
+	}
 
 
 	function parseDate(value) {
@@ -2285,6 +2338,9 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		if (state.topics?.size) params.set('topics', topicStateToValue(state.topics));
 		if (state.windowDays) params.set('window', String(state.windowDays));
 		if (currentPage > 1) params.set('page', String(currentPage));
+		if (opportunityContext?.from === 'opportunities') params.set('from', 'opportunities');
+		if (opportunityContext?.opp) params.set('opp', opportunityContext.opp);
+		if (opportunityContext?.title) params.set('opptitle', opportunityContext.title);
 		return params.toString();
 	}
 
@@ -2306,6 +2362,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 
 	function applyUrlState() {
 		const params = new URLSearchParams(window.location.search);
+		opportunityContext = readOpportunityContextFromUrl();
+		applyOpportunityContextBanner();
 		const state = {
 			q: params.get('q') || '',
 			branch: params.get('branch') || '',
@@ -2602,6 +2660,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	controls.toggleCompact.addEventListener('click', () => {
 		compactMode = !compactMode;
 		persistCompactModePreference();
+		render();
+	});
+	controls.opportunityContextClear?.addEventListener('click', () => {
+		opportunityContext = null;
+		applyOpportunityContextBanner();
 		render();
 	});
 	controls.calendarToggle?.addEventListener('click', () => {
@@ -3746,6 +3809,34 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		padding: 0.2rem 0.5rem;
 		font-size: 0.68rem;
 		color: rgba(203, 213, 225, 0.95);
+	}
+	.radar-opportunity-context {
+		margin-top: 0.55rem;
+		padding: 0.45rem 0.55rem;
+		border: 1px solid rgba(56, 189, 248, 0.42);
+		background: rgba(14, 116, 144, 0.16);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.55rem;
+		flex-wrap: wrap;
+	}
+	.radar-opportunity-context-label {
+		font-size: 0.58rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(186, 230, 253, 0.92);
+	}
+	.radar-opportunity-context-text {
+		font-size: 0.72rem;
+		line-height: 1.35;
+		color: rgba(224, 242, 254, 0.98);
+	}
+	.radar-opportunity-context-actions {
+		display: flex;
+		align-items: center;
+		gap: 0.34rem;
+		flex-wrap: wrap;
 	}
 
 	.radar-btn-tight {

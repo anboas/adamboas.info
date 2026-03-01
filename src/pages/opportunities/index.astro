@@ -940,6 +940,23 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				.replaceAll('"', '&quot;')
 				.replaceAll("'", '&#39;');
 
+			const contextualEventHref = (href, row) => {
+				const rawHref = String(href || '').trim();
+				if (!rawHref) return '/events/';
+				const noticeId = String(row?.noticeId || row?.key || '').trim();
+				const oppTitle = String(row?.title || '').trim();
+				if (!noticeId && !oppTitle) return rawHref;
+				const [baseRaw, hashRaw = ''] = rawHref.split('#');
+				const base = baseRaw || '/events/';
+				const hash = hashRaw ? `#${hashRaw}` : '';
+				const params = new URLSearchParams();
+				params.set('from', 'opportunities');
+				if (noticeId) params.set('opp', noticeId);
+				if (oppTitle) params.set('opptitle', oppTitle.slice(0, 120));
+				const sep = base.includes('?') ? '&' : '?';
+				return `${base}${sep}${params.toString()}${hash}`;
+			};
+
 			const formatDetailPreviewHtml = (value) => {
 				const text = String(value || '').replace(/\r\n?/g, '\n').trim();
 				if (!text) return '';
@@ -1504,7 +1521,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							el.modalEventDetail.innerHTML = 'Select a mapped event to inspect the event context without leaving this view.';
 							return;
 						}
-						const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
+						const href = contextualEventHref(String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`), row);
 						const official = String(ref.officialLink || '').trim();
 						const start = fmtDate(ref.startDate || null);
 						const end = fmtDate(ref.endDate || null);
@@ -1530,7 +1547,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					} else {
 						if (el.modalEvents) {
 							el.modalEvents.innerHTML = refs.slice(0, 8).map((ref, idx) => {
-								const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
+								const href = contextualEventHref(String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`), row);
 								const start = fmtDate(ref.startDate || null);
 								const meta = [ref.branch, ref.status, start !== '—' ? start : ''].filter(Boolean).join(' · ');
 								return `<li><button class="opp-event-select ${idx === 0 ? 'is-active' : ''}" type="button" data-event-idx="${idx}">${escapeHtml(ref.title || ref.id)}</button><div class="opp-file-links"><a href="${escapeHtml(href)}">Open ↗</a></div>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
@@ -1679,7 +1696,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
 					const mappedRefs = Array.isArray(row.eventRefs) ? row.eventRefs : [];
 					const mapped = mappedRefs.slice(0, 2).map((ref) => {
-						const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
+						const href = contextualEventHref(String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`), row);
 						const branch = String(ref.branch || '').trim();
 						const when = fmtDate(ref.startDate || null);
 						const titleText = String(ref.title || 'Mapped event');
