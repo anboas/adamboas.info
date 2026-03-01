@@ -522,6 +522,9 @@ const opportunities = [...opportunityMap.values()]
 		eventRefs: [...row.eventIds]
 			.map((id) => {
 				const event = eventById.get(id);
+				const location = event?.location
+					? [event.location.venue, event.location.city, event.location.state].filter(Boolean).join(' · ')
+					: null;
 				return {
 					id,
 					title: event?.title ?? id,
@@ -529,6 +532,11 @@ const opportunities = [...opportunityMap.values()]
 					branch: event?.branch ?? null,
 					status: event?.status ?? null,
 					startDate: event?.startDate ?? null,
+					endDate: event?.endDate ?? null,
+					type: event?.type ?? null,
+					description: event?.description ?? null,
+					officialLink: event?.ontology?.links?.official ?? event?.ontology?.links?.registration ?? null,
+					location,
 				};
 			})
 			.sort((a, b) => a.title.localeCompare(b.title)),
@@ -816,6 +824,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<ul id="opp-modal-files" class="opp-modal-files"></ul>
 					<p class="opp-modal-section-title mt-3">Mapped events</p>
 					<ul id="opp-modal-events" class="opp-modal-events"></ul>
+					<p class="opp-modal-section-title mt-3">Event drilldown</p>
+					<div id="opp-modal-event-detail" class="opp-modal-event-detail">Select a mapped event to inspect the event context without leaving this view.</div>
 				</div>
 			</div>
 		</div>
@@ -878,6 +888,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalDetail: document.getElementById('opp-modal-detail'),
 				modalFiles: document.getElementById('opp-modal-files'),
 				modalEvents: document.getElementById('opp-modal-events'),
+				modalEventDetail: document.getElementById('opp-modal-event-detail'),
 			};
 
 			const charts = {
@@ -1484,17 +1495,58 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					}
 				}
 
-				if (el.modalEvents) {
+				if (el.modalEvents || el.modalEventDetail) {
 					const refs = Array.isArray(row.eventRefs) ? row.eventRefs.filter((ref) => ref && ref.id) : [];
+
+					const renderEventDetail = (ref) => {
+						if (!el.modalEventDetail) return;
+						if (!ref) {
+							el.modalEventDetail.innerHTML = 'Select a mapped event to inspect the event context without leaving this view.';
+							return;
+						}
+						const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
+						const official = String(ref.officialLink || '').trim();
+						const start = fmtDate(ref.startDate || null);
+						const end = fmtDate(ref.endDate || null);
+						const when = start === '—' ? '—' : (end !== '—' && end !== start ? `${start} → ${end}` : start);
+						const description = String(ref.description || '').trim();
+						const shortDesc = description.length > 280 ? `${description.slice(0, 277)}...` : description;
+						const meta = [ref.branch, ref.type, ref.status].filter(Boolean).join(' · ');
+						el.modalEventDetail.innerHTML = `
+							<div class="opp-event-detail-head">
+								<strong>${escapeHtml(ref.title || ref.id)}</strong>
+								<div class="opp-file-links"><a href="${escapeHtml(href)}">Open event page ↗</a>${official ? `<span aria-hidden="true"> · </span><a href="${escapeHtml(official)}" target="_blank" rel="noreferrer">Official link ↗</a>` : ''}</div>
+							</div>
+							${meta ? `<p class="opp-file-host">${escapeHtml(meta)}</p>` : ''}
+							${when !== '—' ? `<p class="opp-file-host">When: ${escapeHtml(when)}</p>` : ''}
+							${ref.location ? `<p class="opp-file-host">Where: ${escapeHtml(ref.location)}</p>` : ''}
+							${shortDesc ? `<p>${escapeHtml(shortDesc)}</p>` : ''}
+						`;
+					};
+
 					if (!refs.length) {
-						el.modalEvents.innerHTML = '<li class="opp-subcopy">No mapped events for this opportunity yet.</li>';
+						if (el.modalEvents) el.modalEvents.innerHTML = '<li class="opp-subcopy">No mapped events for this opportunity yet.</li>';
+						renderEventDetail(null);
 					} else {
-						el.modalEvents.innerHTML = refs.slice(0, 8).map((ref) => {
-							const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
-							const start = fmtDate(ref.startDate || null);
-							const meta = [ref.branch, ref.status, start !== '—' ? start : ''].filter(Boolean).join(' · ');
-							return `<li><a href="${escapeHtml(href)}">${escapeHtml(ref.title || ref.id)}</a>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
-						}).join('');
+						if (el.modalEvents) {
+							el.modalEvents.innerHTML = refs.slice(0, 8).map((ref, idx) => {
+								const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
+								const start = fmtDate(ref.startDate || null);
+								const meta = [ref.branch, ref.status, start !== '—' ? start : ''].filter(Boolean).join(' · ');
+								return `<li><button class="opp-event-select ${idx === 0 ? 'is-active' : ''}" type="button" data-event-idx="${idx}">${escapeHtml(ref.title || ref.id)}</button><div class="opp-file-links"><a href="${escapeHtml(href)}">Open ↗</a></div>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
+							}).join('');
+
+							for (const button of el.modalEvents.querySelectorAll('.opp-event-select')) {
+								button.addEventListener('click', () => {
+									const idx = Number(button.getAttribute('data-event-idx') || -1);
+									if (idx < 0 || idx >= refs.length) return;
+									for (const b of el.modalEvents.querySelectorAll('.opp-event-select')) b.classList.remove('is-active');
+									button.classList.add('is-active');
+									renderEventDetail(refs[idx]);
+								});
+							}
+						}
+						renderEventDetail(refs[0]);
 					}
 				}
 
@@ -2499,6 +2551,32 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-file-size {
 		font-size: 0.61rem;
 		color: rgba(148, 163, 184, 0.9);
+	}
+	.opp-event-select {
+		all: unset;
+		cursor: pointer;
+		font-size: 0.68rem;
+		color: rgba(191, 219, 254, 0.98);
+		line-height: 1.35;
+	}
+	.opp-event-select:hover,
+	.opp-event-select.is-active {
+		text-decoration: underline;
+		color: rgba(224, 242, 254, 1);
+	}
+	.opp-modal-event-detail {
+		border: 1px solid rgba(51, 65, 85, 0.84);
+		background: rgba(15, 23, 42, 0.72);
+		padding: 0.5rem 0.56rem;
+		font-size: 0.68rem;
+		line-height: 1.4;
+		color: rgba(203, 213, 225, 0.97);
+		display: grid;
+		gap: 0.22rem;
+	}
+	.opp-event-detail-head {
+		display: grid;
+		gap: 0.12rem;
 	}
 	body.opp-modal-open {
 		overflow: hidden;
