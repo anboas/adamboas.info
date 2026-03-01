@@ -573,6 +573,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				{lastCollectedAt ? <span class="opp-fresh">Last collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
 			</div>
 		</div>
+		<div id="opp-event-context" class="opp-event-context" hidden>
+			<div>
+				<p class="opp-event-context-label">Event context</p>
+				<p id="opp-event-context-text" class="opp-event-context-text">Opened from events.</p>
+			</div>
+			<div class="opp-event-context-actions">
+				<a id="opp-event-context-back" class="opp-link-btn" href={withBase('/events/')}>Back to event</a>
+				<button id="opp-event-context-clear" class="opp-link-btn opp-link-btn-muted" type="button">Clear</button>
+			</div>
+		</div>
 
 		<div class="opp-kpis mt-4">
 			<div class="opp-kpi"><span class="opp-kpi-label">Unique opportunities</span><strong id="opp-kpi-total">{opportunities.length}</strong></div>
@@ -873,6 +883,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				agencies: document.getElementById('opp-viz-agencies'),
 				workmix: document.getElementById('opp-viz-workmix'),
 				naics: document.getElementById('opp-viz-naics'),
+				eventContext: document.getElementById('opp-event-context'),
+				eventContextText: document.getElementById('opp-event-context-text'),
+				eventContextBack: document.getElementById('opp-event-context-back'),
+				eventContextClear: document.getElementById('opp-event-context-clear'),
 				modal: document.getElementById('opp-intel-modal'),
 				modalClose: document.getElementById('opp-modal-close'),
 				modalCloseTargets: Array.from(document.querySelectorAll('[data-opp-modal-close]')),
@@ -1149,9 +1163,34 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			};
 
 			const applyIncomingContext = () => {
-				if (!el.search) return;
-				if (!el.search.value && incomingContext.q) el.search.value = incomingContext.q;
-				if (!el.search.value && incomingContext.opp) el.search.value = incomingContext.opp;
+				if (el.search) {
+					if (!el.search.value && incomingContext.q) el.search.value = incomingContext.q;
+					if (!el.search.value && incomingContext.opp) el.search.value = incomingContext.opp;
+				}
+				if (incomingContext.from === 'events' && incomingContext.eventId && el.eventContext) {
+					el.eventContext.removeAttribute('hidden');
+					if (el.eventContextText) {
+						const label = incomingContext.q
+							? `From event ${incomingContext.eventId} · filtered by ${incomingContext.q}`
+							: `From event ${incomingContext.eventId}`;
+						el.eventContextText.textContent = label;
+					}
+					if (el.eventContextBack) {
+						const baseHref = el.eventContextBack.dataset.baseHref || el.eventContextBack.getAttribute('href') || '/events/';
+						if (!el.eventContextBack.dataset.baseHref) el.eventContextBack.dataset.baseHref = baseHref;
+						const [basePath] = String(baseHref).split('#');
+						el.eventContextBack.setAttribute('href', `${basePath}#${encodeURIComponent(incomingContext.eventId)}`);
+					}
+					el.eventContextClear?.addEventListener('click', () => {
+						if (el.eventContext) el.eventContext.setAttribute('hidden', '');
+						const params = new URLSearchParams(window.location.search);
+						params.delete('from');
+						params.delete('event');
+						params.delete('opptitle');
+						const next = params.toString();
+						history.replaceState(null, '', next ? `${window.location.pathname}?${next}` : window.location.pathname);
+					});
+				}
 			};
 
 			const updateStateFromInputs = () => {
@@ -1919,6 +1958,42 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-link-btn:hover {
 		background: rgba(45, 212, 191, 0.18);
+	}
+	.opp-link-btn-muted {
+		border-color: rgba(100, 116, 139, 0.62);
+		background: rgba(15, 23, 42, 0.55);
+		color: rgba(226, 232, 240, 0.94);
+	}
+	.opp-link-btn-muted:hover {
+		background: rgba(30, 41, 59, 0.8);
+	}
+	.opp-event-context {
+		margin-top: 0.75rem;
+		border: 1px solid rgba(56, 189, 248, 0.44);
+		background: rgba(14, 116, 144, 0.14);
+		padding: 0.5rem 0.6rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+	}
+	.opp-event-context-label {
+		font-size: 0.58rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(186, 230, 253, 0.9);
+	}
+	.opp-event-context-text {
+		font-size: 0.72rem;
+		line-height: 1.4;
+		color: rgba(224, 242, 254, 0.97);
+	}
+	.opp-event-context-actions {
+		display: flex;
+		align-items: center;
+		gap: 0.42rem;
+		flex-wrap: wrap;
 	}
 	.opp-fresh {
 		font-size: 0.71rem;

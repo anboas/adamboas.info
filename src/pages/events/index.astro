@@ -831,6 +831,24 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	return refs;
 }
 
+function opportunitiesSliceHref(event: (typeof events)[number]) {
+	const params = new URLSearchParams({ from: 'events', event: event.id });
+	const solicitation = String(event.ontology.acquisition?.solicitationNumber ?? '').trim();
+	if (solicitation) {
+		params.set('q', solicitation);
+	} else {
+		const tokenPool = [
+			event.branch,
+			...event.ontology.capabilityAreas,
+			...event.ontology.missionThreads,
+			...event.ontology.themes,
+		].map((token) => String(token || '').trim()).filter((token) => token.length >= 3);
+		const query = [...new Set(tokenPool)].slice(0, 4).join(' ');
+		if (query) params.set('q', query);
+	}
+	return `${withBase('/opportunities/')}?${params.toString()}`;
+}
+
 ---
 
 <SiteLayout
@@ -1006,6 +1024,11 @@ function acquisitionReferences(event: (typeof events)[number]) {
 							<div class="flex flex-col gap-2 lg:flex-row lg:items-start lg:justify-between lg:gap-3">
 								<div class="min-w-0 flex-1">
 									<h3 class="mt-1 text-base font-semibold leading-snug text-slate-50">{event.title}</h3>
+									<div class="radar-topline">
+										<span class="radar-topline-pill radar-topline-pill-status">{event.status}</span>
+										<span class="radar-topline-pill radar-topline-pill-type">{event.type}</span>
+										<span class="radar-topline-pill radar-topline-pill-branch">{event.branch}</span>
+									</div>
 									<p class="mt-1 text-sm text-slate-300 radar-desc">{event.description}</p>
 									<p class="mt-2 text-xs text-slate-400 radar-meta">
 										<span class="radar-meta-item">{locationLabel(event)}</span>
@@ -1017,7 +1040,8 @@ function acquisitionReferences(event: (typeof events)[number]) {
 								<div class="flex w-full flex-col items-start gap-1.5 lg:w-auto lg:items-end">
 									<div class="flex w-full flex-wrap items-center gap-2 lg:w-auto lg:justify-end radar-card-actions">
 										<div class="radar-days-chip">{daysUntilBadge(event.startDate)}</div>
-										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Event Link</a> : null}
+										{eventPrimaryLink(event) ? <a class="radar-pin-btn radar-link-btn" href={eventPrimaryLink(event)!} target="_blank" rel="noreferrer">Event link</a> : null}
+										{(samOpportunityLink(event) && samOpportunityLink(event) !== eventPrimaryLink(event)) ? <a class="radar-pin-btn radar-link-btn-sam" href={samOpportunityLink(event)!} target="_blank" rel="noreferrer">SAM notice</a> : null}
 										{(eventCalendarLink(event) || eventIosIcsLink(event) || eventOutlookIcsLink(event)) ? (
 											<span class="radar-calendar-group" aria-label="Calendar options">
 												<span class="radar-calendar-group-label">Calendar:</span>
@@ -1026,8 +1050,10 @@ function acquisitionReferences(event: (typeof events)[number]) {
 												{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)} aria-label="Outlook calendar (.ics)" title="Outlook calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">📘</span><span class="radar-calendar-chip-label">Outlook (.ics)</span></a> : null}
 											</span>
 										) : null}
-										<button class="radar-pin-btn" type="button" data-map-focus data-id={event.id}>Map</button>
-										<button class="radar-pin-btn" type="button" data-calendar-focus data-id={event.id}>In Calendar</button>
+										<a class="radar-pin-btn radar-link-btn-opps" href={opportunitiesSliceHref(event)}>Opp intel</a>
+										<button class="radar-pin-btn radar-inline-tool" type="button" data-map-focus data-id={event.id}>Map</button>
+										<button class="radar-pin-btn radar-inline-tool" type="button" data-calendar-focus data-id={event.id}>Calendar</button>
+										<button class="radar-pin-btn radar-pin-btn-primary" type="button" data-open-event data-id={event.id}>Open event</button>
 									</div>
 									<div class="radar-badge-row">
 										{solicitationCount(event) > 0 ? <span class="radar-solicitations-pill" title="Matched SAM solicitations">{solicitationCount(event)} solicitations</span> : null}
@@ -1383,6 +1409,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	const cards = Array.from(document.querySelectorAll('[data-event-card]'));
 	const mapFocusButtons = Array.from(document.querySelectorAll('[data-map-focus]'));
 	const calendarFocusButtons = Array.from(document.querySelectorAll('[data-calendar-focus]'));
+	const openEventButtons = Array.from(document.querySelectorAll('[data-open-event]'));
 	const pagination = document.getElementById('radar-pagination');
 	const pageFirst = document.getElementById('radar-page-first');
 	const pagePrev = document.getElementById('radar-page-prev');
@@ -2729,6 +2756,23 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	for (const btn of calendarFocusButtons) {
 		btn.addEventListener('click', () => focusCalendarEvent(btn.dataset.id));
 	}
+	for (const btn of openEventButtons) {
+		btn.addEventListener('click', () => {
+			const id = btn.dataset.id;
+			if (!id) return;
+			if (compactMode) {
+				compactMode = false;
+				persistCompactModePreference();
+				render();
+			}
+			if (!ensureCardVisibleById(id)) return;
+			const card = cards.find((c) => c.dataset.id === id);
+			if (!card) return;
+			const details = card.querySelector('.radar-details');
+			if (details && !details.open) details.open = true;
+			focusCard(id, { scroll: true });
+		});
+	}
 
 	document.addEventListener('keydown', (event) => {
 		if (event.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(event.target.tagName)) return;
@@ -3505,7 +3549,13 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		padding: 1rem;
 	}
 	.radar-card-actions {
-		gap: 0.38rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.34rem;
+		padding: 0.34rem;
+		border: 1px solid rgba(51, 65, 85, 0.82);
+		background: rgba(15, 23, 42, 0.62);
 	}
 	.radar-days-chip {
 		display: inline-flex;
@@ -3520,6 +3570,36 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		line-height: 1;
 		color: rgba(241, 245, 249, 0.95);
 		white-space: nowrap;
+	}
+	.radar-topline {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.26rem;
+		margin-top: 0.3rem;
+	}
+	.radar-topline-pill {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.08rem 0.34rem;
+		font-size: 0.58rem;
+		line-height: 1.1;
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgba(15, 23, 42, 0.72);
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.radar-topline-pill-status {
+		border-color: rgba(56, 189, 248, 0.56);
+		color: rgba(186, 230, 253, 0.97);
+	}
+	.radar-topline-pill-type {
+		border-color: rgba(45, 212, 191, 0.56);
+		color: rgba(204, 251, 241, 0.97);
+	}
+	.radar-topline-pill-branch {
+		border-color: rgba(167, 139, 250, 0.58);
+		color: rgba(233, 213, 255, 0.96);
 	}
 	.radar-meta {
 		display: flex;
@@ -4011,6 +4091,31 @@ function acquisitionReferences(event: (typeof events)[number]) {
 	.radar-link-btn-sam:hover {
 		background: rgba(250, 204, 21, 0.24);
 	}
+	.radar-link-btn-opps {
+		border-color: rgba(45, 212, 191, 0.62);
+		background: rgba(45, 212, 191, 0.14);
+		color: rgba(204, 251, 241, 0.97);
+	}
+	.radar-link-btn-opps:hover {
+		background: rgba(45, 212, 191, 0.24);
+	}
+	.radar-inline-tool {
+		border-color: rgba(71, 85, 105, 0.76);
+		background: rgba(15, 23, 42, 0.56);
+		color: rgba(191, 219, 254, 0.96);
+	}
+	.radar-inline-tool:hover {
+		background: rgba(30, 41, 59, 0.82);
+	}
+	.radar-pin-btn-primary {
+		border-color: rgba(56, 189, 248, 0.72);
+		background: rgba(14, 116, 144, 0.28);
+		color: rgba(224, 242, 254, 0.98);
+		font-weight: 700;
+	}
+	.radar-pin-btn-primary:hover {
+		background: rgba(14, 116, 144, 0.38);
+	}
 
 	.radar-list.is-compact .radar-desc,
 	.radar-list.is-compact .radar-theme-row,
@@ -4057,6 +4162,7 @@ function acquisitionReferences(event: (typeof events)[number]) {
 		}
 		.radar-card-actions {
 			gap: 0.28rem;
+			padding: 0.26rem;
 		}
 		.radar-pin-btn {
 			min-height: 1.8rem;
