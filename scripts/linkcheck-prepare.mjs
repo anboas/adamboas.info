@@ -34,6 +34,9 @@ const POLICY = {
     'esd.whs.mil',
     'www.esd.whs.mil',
   ],
+  warnRegex: [
+    /^https:\/\/github\.com\/anboas\/adamboas\.info\/blob\/main\//i,
+  ],
   ignoreRegex: [
     /^mailto:/i,
     /^https:\/\/www\.linkedin\.com\/posts\//i,
@@ -56,6 +59,9 @@ function domainMatches(hostname, rule) {
 function classifyUrl(rawUrl) {
   for (const pattern of POLICY.ignoreRegex) {
     if (pattern.test(rawUrl)) return 'ignore';
+  }
+  for (const pattern of POLICY.warnRegex) {
+    if (pattern.test(rawUrl)) return 'warn';
   }
 
   let parsed;
