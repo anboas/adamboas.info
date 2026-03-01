@@ -202,6 +202,48 @@ function awardSignalSampleDate(notice: any) {
 }
 
 const DETAIL_PREVIEW_MAX_CHARS = 8000;
+const TOKEN_STOPWORDS = new Set([
+	'and', 'the', 'for', 'with', 'from', 'that', 'this', 'into', 'your', 'our', 'their', 'about', 'through', 'under', 'over', 'between',
+	'contract', 'opportunity', 'notice', 'sources', 'sought', 'solicitation', 'combined', 'special', 'pre', 'rfi', 'rfp', 'sam', 'gov',
+	'dept', 'department', 'defense', 'command', 'office', 'support', 'services', 'systems', 'program', 'project', 'task',
+]);
+
+function normalizeIdentifier(value: any) {
+	return String(value ?? '').trim().toLowerCase();
+}
+
+function toDayEpoch(value: any) {
+	if (!value) return null;
+	const d = new Date(String(value));
+	if (Number.isNaN(d.getTime())) return null;
+	return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
+}
+
+function tokenize(value: any) {
+	const tokens = String(value ?? '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, ' ')
+		.split(' ')
+		.map((token) => token.trim())
+		.filter((token) => token.length >= 3 && !TOKEN_STOPWORDS.has(token));
+	return new Set(tokens);
+}
+
+function overlapCount(a: Set<string>, b: Set<string>) {
+	let count = 0;
+	for (const token of a) if (b.has(token)) count += 1;
+	return count;
+}
+
+function branchKeywordMatch(branch: string, blob: string) {
+	const normalized = String(blob ?? '').toLowerCase();
+	if (branch === 'Army') return /\barmy\b|army contracting command|army futures|usace|corps of engineers/.test(normalized);
+	if (branch === 'Navy') return /\bnavy\b|navsea|navair|navsup|navfac|nswc|nuwc|naval/.test(normalized);
+	if (branch === 'Air Force') return /\bair force\b|usaf|afrl|afmc|space force|space systems command/.test(normalized);
+	if (branch === 'Marine Corps') return /\bmarine\b|marsoc|marine corps/.test(normalized);
+	if (branch === 'Joint') return /ussocom|dod|department of defense|joint/.test(normalized);
+	return false;
+}
 
 function toDetailPreview(value: any) {
 	const text = String(value ?? '')
@@ -216,6 +258,50 @@ const opportunityMap = new Map<string, OpportunityRow>();
 let totalRawNotices = 0;
 let eventsWithSam = 0;
 let samGlobalRawNotices = 0;
+
+const eventById = new Map<string, (typeof radarEventsSeed)[number]>();
+for (const event of radarEventsSeed) {
+	if (!event?.id) continue;
+	eventById.set(event.id, event);
+}
+const eventIntelIndex = radarEventsSeed.map((event) => {
+	const sam = samIntel(event);
+	const topNotices = sam?.topNotices ?? [];
+	const solicitationSet = new Set<string>();
+	const noticeSet = new Set<string>();
+	const agencySet = new Set<string>();
+
+	for (const notice of topNotices) {
+		const solicitation = normalizeIdentifier(notice?.solicitationNumber ?? notice?.solicitation_number);
+		if (solicitation) solicitationSet.add(solicitation);
+		const noticeId = normalizeIdentifier(notice?.noticeId ?? notice?.notice_id);
+		if (noticeId) noticeSet.add(noticeId);
+		const agency = normalizeIdentifier(notice?.agencyPath ?? notice?.agency_path);
+		if (agency) agencySet.add(agency);
+	}
+
+	const tokenBlob = [
+		event.title,
+		event.description,
+		...(event.ontology.themes ?? []),
+		...(event.ontology.capabilityAreas ?? []),
+		...(event.ontology.missionThreads ?? []),
+		...(event.ontology.keywords ?? []),
+		...(event.ontology.stakeholders ?? []),
+	].join(' ');
+
+	return {
+		id: event.id,
+		title: event.title,
+		branch: event.branch,
+		startDay: toDayEpoch(event.startDate),
+		endDay: toDayEpoch(event.endDate ?? event.startDate),
+		tokens: tokenize(tokenBlob),
+		solicitationSet,
+		noticeSet,
+		agencySet,
+	};
+});
 
 for (const event of radarEventsSeed) {
 	const sam = samIntel(event);
@@ -353,6 +439,61 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 		row.awardSignalSampleDate = notice.awardSignalSampleDate ?? row.awardSignalSampleDate;
 	}
 	row.branches.add('SAM Global');
+}
+
+for (const row of opportunityMap.values()) {
+	if (row.eventIds.size > 0) continue;
+
+	const rowNoticeId = normalizeIdentifier(row.noticeId);
+	const rowSolicitation = normalizeIdentifier(row.solicitationNumber);
+	const rowAgency = normalizeIdentifier(row.agencyPath);
+	const rowTitleTokens = tokenize(`${row.title} ${row.agencyPath ?? ''} ${row.solicitationNumber ?? ''}`);
+	const rowDueDay = toDayEpoch(row.responseDueDate);
+	const rowPostedDay = toDayEpoch(row.postedDate);
+	const rowBlob = `${row.title} ${row.agencyPath ?? ''} ${row.noticeType} ${row.solicitationNumber ?? ''}`;
+
+	const scored = eventIntelIndex
+		.map((event) => {
+			let score = 0;
+			if (rowNoticeId && event.noticeSet.has(rowNoticeId)) score += 12;
+			if (rowSolicitation && event.solicitationSet.has(rowSolicitation)) score += 10;
+
+			const keywordOverlap = overlapCount(rowTitleTokens, event.tokens);
+			if (keywordOverlap >= 2) score += Math.min(4, keywordOverlap);
+			if (branchKeywordMatch(event.branch, rowBlob)) score += 2;
+
+			if (rowAgency) {
+				for (const agency of event.agencySet) {
+					if (rowAgency.includes(agency) || agency.includes(rowAgency)) {
+						score += 3;
+						break;
+					}
+				}
+			}
+
+			if (rowDueDay !== null && event.startDay !== null) {
+				const eventEnd = event.endDay ?? event.startDay;
+				if (rowDueDay >= event.startDay - 120 * 86_400_000 && rowDueDay <= eventEnd + 45 * 86_400_000) score += 2;
+			}
+			if (rowPostedDay !== null && event.startDay !== null) {
+				if (rowPostedDay >= event.startDay - 220 * 86_400_000 && rowPostedDay <= event.startDay + 40 * 86_400_000) score += 1;
+			}
+
+			return { eventId: event.id, score };
+		})
+		.filter((entry) => entry.score >= 6)
+		.sort((a, b) => b.score - a.score)
+		.slice(0, 3);
+
+	for (const match of scored) {
+		const event = eventById.get(match.eventId);
+		if (!event) continue;
+		row.eventIds.add(event.id);
+		row.eventTitles.add(event.title);
+		row.branches.add(event.branch);
+		for (const area of event.ontology.capabilityAreas ?? []) row.capabilityAreas.add(area);
+		for (const thread of event.ontology.missionThreads ?? []) row.missionThreads.add(thread);
+	}
 }
 
 const opportunities = [...opportunityMap.values()]
