@@ -18,6 +18,8 @@ const POLICY = {
     'xponential.org',
     'hilton.com',
     'whova.com',
+    'modelcontextprotocol.io',
+    'venturebeat.com',
   ],
   ignoreDomains: [
     'adamboas.info',
