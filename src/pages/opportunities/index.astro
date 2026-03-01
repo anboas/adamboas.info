@@ -519,6 +519,9 @@ const opportunities = [...opportunityMap.values()]
 		weight: row.weight,
 		eventIds: toArray(row.eventIds),
 		eventTitles: toArray(row.eventTitles),
+		eventRefs: [...row.eventIds]
+			.map((id) => ({ id, title: eventById.get(id)?.title ?? id, href: withBase(`/events/#${encodeURIComponent(id)}`) }))
+			.sort((a, b) => a.title.localeCompare(b.title)),
 		branches: toArray(row.branches),
 		capabilityAreas: toArray(row.capabilityAreas),
 		missionThreads: toArray(row.missionThreads),
@@ -729,6 +732,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		<div class="opp-table-wrap">
 			<table class="opp-table">
 				<colgroup>
+					<col class="opp-col-intel-view" />
 					<col class="opp-col-gem" />
 					<col class="opp-col-weight" />
 					<col class="opp-col-due" />
@@ -745,10 +749,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<col class="opp-col-work" />
 					<col class="opp-col-naics" />
 					<col class="opp-col-events" />
-					<col class="opp-col-intel-view" />
 				</colgroup>
 				<thead>
 					<tr>
+						<th>Intel view</th>
 						<th><button class="opp-sort-btn is-active" data-sort="gemScore" data-dir="desc" type="button">Gem</button></th>
 						<th><button class="opp-sort-btn" data-sort="weight" type="button">Weight</button></th>
 						<th><button class="opp-sort-btn" data-sort="dueDate" type="button">Due</button></th>
@@ -765,7 +769,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<th><button class="opp-sort-btn" data-sort="workType" type="button">Work type</button></th>
 						<th><button class="opp-sort-btn" data-sort="naics" type="button">NAICS</button></th>
 						<th><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Mapped events</button></th>
-						<th>Intel view</th>
 					</tr>
 				</thead>
 				<tbody id="opp-table-body"></tbody>
@@ -1595,9 +1598,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const title = row.uiLink
 						? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
 						: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
-					const mapped = (row.eventTitles || []).slice(0, 2).map((title) => `<span class="opp-pill" title="${escapeHtml(title)}">${escapeHtml(title)}</span>`).join('')
-						+ ((row.eventTitles || []).length > 2 ? `<span class="opp-pill">+${(row.eventTitles || []).length - 2}</span>` : '');
+					const mappedRefs = Array.isArray(row.eventRefs) ? row.eventRefs : [];
+					const mapped = mappedRefs.slice(0, 2).map((ref) => {
+						const href = String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`);
+						return `<a class="opp-pill opp-pill-link" href="${escapeHtml(href)}" title="${escapeHtml(ref.title || '')}">${escapeHtml(ref.title || '')}</a>`;
+					}).join('')
+						+ (mappedRefs.length > 2 ? `<span class="opp-pill">+${mappedRefs.length - 2}</span>` : '');
 					return `<tr>
+						<td class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
 						<td class="opp-num"><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
 						<td class="opp-num">${row.weight}</td>
 						<td class="opp-date ${dueClass(row)}">${due}</td>
@@ -1614,7 +1622,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<td class="opp-cell-truncate" title="${escapeHtml((row.workTypes || []).map((key) => workTypeLabel[key] || key).join(', '))}">${escapeHtml(row.workTypeLabel || 'General/Other')}</td>
 						<td class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
 						<td><div class="opp-pill-wrap">${mapped || '—'}</div></td>
-						<td class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
 					</tr>`;
 				}).join('');
 
@@ -2279,6 +2286,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		max-width: 11rem;
 		overflow: hidden;
 		text-overflow: ellipsis;
+	}
+	.opp-pill-link {
+		text-decoration: none;
+		color: rgba(191, 219, 254, 0.98);
+	}
+	.opp-pill-link:hover {
+		text-decoration: underline;
+		border-color: rgba(96, 165, 250, 0.72);
 	}
 	.opp-empty {
 		text-align: center;
