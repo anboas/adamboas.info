@@ -21,6 +21,7 @@ const POLICY = {
     'whova.com',
     'modelcontextprotocol.io',
     'venturebeat.com',
+    'cyberbay.org',
   ],
   ignoreDomains: [
     'adamboas.info',
