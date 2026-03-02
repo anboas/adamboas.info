@@ -797,11 +797,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				</label>
 			</div>
 			<div class="opp-controls-actions">
-				<label class="opp-check">
-					<input id="opp-filter-focus" type="checkbox" />
-					<span>My focus only (Software/Cloud/AI/Cyber/Data)</span>
-				</label>
+				<div class="opp-controls-checks">
+					<label class="opp-check">
+						<input id="opp-filter-focus" type="checkbox" />
+						<span>My focus only (Software/Cloud/AI/Cyber/Data)</span>
+					</label>
+					<label class="opp-check">
+						<input id="opp-filter-fast" type="checkbox" />
+						<span>Fast mode (High confidence + upcoming + focus)</span>
+					</label>
+				</div>
 				<span id="opp-chart-filter-status" class="opp-chart-filter-status" aria-live="polite"></span>
+				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence</span>
 				<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
 			</div>
 		</div>
@@ -1016,6 +1023,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				confidenceFilter: document.getElementById('opp-filter-confidence'),
 				sort: document.getElementById('opp-filter-sort'),
 				focus: document.getElementById('opp-filter-focus'),
+				fastMode: document.getElementById('opp-filter-fast'),
 				reset: document.getElementById('opp-filter-reset'),
 				chartFilterStatus: document.getElementById('opp-chart-filter-status'),
 				total: document.getElementById('opp-kpi-total'),
@@ -1339,6 +1347,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				confidence: 'all',
 				sort: 'gem',
 				focusOnly: false,
+				fastMode: false,
 				naicsFilter: '',
 			};
 
@@ -1413,6 +1422,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				state.confidence = el.confidenceFilter?.value || 'all';
 				state.sort = el.sort?.value || 'gem';
 				state.focusOnly = Boolean(el.focus?.checked);
+				state.fastMode = Boolean(el.fastMode?.checked);
 				tableState.mode = el.tableDensity?.value === 'full' ? 'full' : 'compact';
 			};
 
@@ -1474,6 +1484,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (!confidenceFilterMatch(row)) return false;
 					if (Number(row.weight || 0) < state.minWeight) return false;
 					if (state.focusOnly && row.focusMatches < 1) return false;
+					if (state.fastMode) {
+						if (Number(row.confidenceScore || 0) < 70) return false;
+						if (row.dueDays === null || row.dueDays < 0) return false;
+						if (row.focusMatches < 1) return false;
+					}
 					return true;
 				})
 				.sort(compareRows);
@@ -2314,6 +2329,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (state.client !== 'all') chips.push(`Who: ${state.client}`);
 					if (state.work !== 'all') chips.push(`What: ${workTypeLabel[state.work] || state.work}`);
 					if (state.confidence !== 'all') chips.push(`Confidence: ${state.confidence}`);
+					if (state.fastMode) chips.push('Fast mode: on');
 					if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
 					el.chartFilterStatus.textContent = chips.length ? chips.join(' · ') : '';
 				}
@@ -2326,7 +2342,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderTable(pagedRows);
 			};
 
-			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.sort, el.focus].forEach((node) => node?.addEventListener('input', () => {
+			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.sort, el.focus, el.fastMode].forEach((node) => node?.addEventListener('input', () => {
 				tableState.page = 1;
 				render();
 			}));
@@ -2385,6 +2401,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.confidenceFilter) el.confidenceFilter.value = 'all';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
+				if (el.fastMode) el.fastMode.checked = false;
 				state.naicsFilter = '';
 				tableState.page = 1;
 				tableState.sortKey = 'gemScore';
@@ -2402,6 +2419,51 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (event.key !== 'Escape') return;
 				if (!el.modal || el.modal.hasAttribute('hidden')) return;
 				closeIntelModal();
+			});
+
+			const isTypingTarget = (target) => {
+				if (!target) return false;
+				const tag = String(target.tagName || '').toLowerCase();
+				return tag === 'input' || tag === 'textarea' || tag === 'select' || Boolean(target.isContentEditable);
+			};
+
+			document.addEventListener('keydown', (event) => {
+				if (event.defaultPrevented) return;
+				const key = String(event.key || '').toLowerCase();
+				const typing = isTypingTarget(event.target);
+
+				if (event.key === '/' && !typing) {
+					event.preventDefault();
+					el.search?.focus();
+					el.search?.select?.();
+					return;
+				}
+				if (typing) return;
+				if (el.modal && !el.modal.hasAttribute('hidden')) return;
+
+				if (key === 'f') {
+					event.preventDefault();
+					if (el.fastMode) el.fastMode.checked = !el.fastMode.checked;
+					tableState.page = 1;
+					render();
+					return;
+				}
+				if (key === 'g') {
+					event.preventDefault();
+					if (el.sort) el.sort.value = 'gem';
+					tableState.page = 1;
+					render();
+					return;
+				}
+				if (key === 'c') {
+					event.preventDefault();
+					const cycle = ['all', 'high', 'medium', 'low'];
+					const current = el.confidenceFilter?.value || 'all';
+					const next = cycle[(cycle.indexOf(current) + 1 + cycle.length) % cycle.length];
+					if (el.confidenceFilter) el.confidenceFilter.value = next;
+					tableState.page = 1;
+					render();
+				}
 			});
 
 			applyIncomingContext();
@@ -2564,6 +2626,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		border-top: 1px solid rgba(51, 65, 85, 0.62);
 		padding-top: 0.5rem;
 	}
+	.opp-controls-checks {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.7rem;
+		flex-wrap: wrap;
+	}
 	.opp-check {
 		display: inline-flex;
 		align-items: center;
@@ -2577,6 +2645,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-size: 0.68rem;
 		color: rgba(125, 211, 252, 0.95);
 		min-height: 1em;
+	}
+	.opp-shortcuts-hint {
+		font-size: 0.66rem;
+		color: rgba(148, 163, 184, 0.95);
+		white-space: nowrap;
 	}
 	.opp-reset {
 		height: 1.95rem;
@@ -2926,6 +2999,30 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		text-transform: uppercase;
 		letter-spacing: 0.04em;
 		white-space: nowrap;
+	}
+	.opp-table [data-col='view'] {
+		position: sticky;
+		left: 0;
+		z-index: 4;
+		background: rgba(15, 23, 42, 0.98);
+	}
+	.opp-table [data-col='gem'] {
+		position: sticky;
+		left: 4.4rem;
+		z-index: 4;
+		background: rgba(15, 23, 42, 0.98);
+	}
+	.opp-table tbody tr:nth-child(even) [data-col='view'],
+	.opp-table tbody tr:nth-child(even) [data-col='gem'] {
+		background: rgba(15, 23, 42, 0.94);
+	}
+	.opp-table tbody tr:hover [data-col='view'],
+	.opp-table tbody tr:hover [data-col='gem'] {
+		background: rgba(30, 41, 59, 0.98);
+	}
+	.opp-table th[data-col='view'],
+	.opp-table th[data-col='gem'] {
+		z-index: 6;
 	}
 	.opp-sort-btn {
 		all: unset;
@@ -3326,6 +3423,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		.opp-controls-actions {
 			align-items: flex-start;
 			flex-direction: column;
+		}
+		.opp-controls-checks {
+			width: 100%;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.35rem;
+		}
+		.opp-shortcuts-hint {
+			white-space: normal;
 		}
 		.opp-grid {
 			grid-template-columns: 1fr;
