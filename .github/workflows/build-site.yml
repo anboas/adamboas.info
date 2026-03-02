@@ -50,7 +50,7 @@ jobs:
             sleep 1
           done
 
-          SITE_BASE=http://127.0.0.1:4321 npx playwright test tests/smoke.spec.ts tests/overflow.spec.ts tests/a11y.spec.ts
+          SITE_BASE=http://127.0.0.1:4321 npx playwright test tests/smoke.spec.ts tests/overflow.spec.ts tests/a11y.spec.ts tests/opportunities-events-regression.spec.ts
 
       - name: Prepare linkcheck policy sets (strict/warn/ignore)
         run: npm run linkcheck:prepare

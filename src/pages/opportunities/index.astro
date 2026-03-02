@@ -1352,9 +1352,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (corroborationScore >= 70) confidenceScore += 18;
 				else if (corroborationScore >= 45) confidenceScore += 12;
 				else if (corroborationScore >= 20) confidenceScore += 6;
+				if (fpdsAlignmentScore >= 70) confidenceScore += 14;
+				else if (fpdsAlignmentScore >= 45) confidenceScore += 8;
+				else if (fpdsAlignmentScore > 0) confidenceScore += 4;
+				if (fpdsCanonicalPiid) confidenceScore += 2;
 				if (detailTextLength > 0) confidenceScore += 4;
 				if (resourceCount > 0) confidenceScore += 4;
 				if (row.noticeId && row.solicitationNumber) confidenceScore += 5;
+				if (usaspendingAgeDays !== null && usaspendingAgeDays > 14) confidenceScore -= 8;
+				else if (usaspendingAgeDays !== null && usaspendingAgeDays > 7) confidenceScore -= 4;
 				if (usaspendingError) confidenceScore -= 22;
 				confidenceScore = Math.max(0, Math.min(100, Math.round(confidenceScore)));
 				const confidenceLevel = confidenceScore >= 70 ? 'High' : (confidenceScore >= 45 ? 'Medium' : 'Low');
@@ -1382,6 +1388,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				gemScore += Math.min(6, awardSignalCount);
 				gemScore += Math.min(6, usaspendingMatchCount);
 				gemScore += Math.min(8, Math.round(corroborationScore / 12));
+				if (fpdsAlignmentScore >= 70) gemScore += 4;
+				else if (fpdsAlignmentScore >= 45) gemScore += 2;
+				else if (fpdsAlignmentScore > 0) gemScore += 1;
+				if (usaspendingAgeDays !== null && usaspendingAgeDays > 14) gemScore -= 2;
+				if (usaspendingError) gemScore -= 3;
 				if (usaspendingAmount >= 5_000_000) gemScore += 2;
 				if (row.uiLink) gemScore += 2;
 
@@ -1456,10 +1467,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				total: items.length,
 				highConfidence: items.filter((row) => safeNum(row.confidenceScore) >= 70).length,
 				strongCorroboration: items.filter((row) => safeNum(row.corroborationScore) >= 70).length,
+				fpdsMedium: items.filter((row) => safeNum(row.fpdsAlignmentScore) >= 45).length,
 				thirdPartyErrors: items.filter((row) => String(row.usaspendingError || '').trim()).length,
 				exactMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && safeNum(row.usaspendingMatchCount) > 0).length,
 				fallbackMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && safeNum(row.usaspendingMatchCount) > 0).length,
 				freshChecks: items.filter((row) => safeNum(row.usaspendingMatchCount) > 0 && safeNum(row.usaspendingAgeDays) <= 3).length,
+				staleChecks: items.filter((row) => safeNum(row.usaspendingMatchCount) > 0 && safeNum(row.usaspendingAgeDays) > 14).length,
 				ts: Date.now(),
 			});
 			const readSnapshot = () => {
@@ -2151,13 +2164,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const usErrors = items.filter((row) => String(row.usaspendingError || '').trim()).length;
 				const exactMatches = items.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && Number(row.usaspendingMatchCount || 0) > 0).length;
 				const fallbackMatches = items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
+				const staleChecks = items.filter((row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) > 14).length;
 				const fpdsMed = items.filter((row) => Number(row.fpdsAlignmentScore || 0) >= 45).length;
 				const lines = [
 					`Slice average: Gem ${avgGem} · Corroboration ${avgCor} · High-confidence ${highConf}/${items.length}.`,
 					topClient ? `Top buyer family: ${topClient[0]} (${topClient[1]} opportunities).` : 'Top buyer family: no data.',
 					soon ? `Nearest due: ${soon.title} (${soon.dueDays}d, ${soon.noticeType || 'notice'}).` : 'No upcoming due dates in this slice.',
 					`Corroboration mix: ${strong} Strong · ${moderate} Moderate · ${Math.max(0, items.length - strong - moderate)} Weak/None.`,
-					`3P quality: ${exactMatches} exact matches · ${fallbackMatches} fallback matches · ${usErrors} upstream-error rows.`,
+					`3P quality: ${exactMatches} exact matches · ${fallbackMatches} fallback matches · ${usErrors} upstream-error rows · ${staleChecks} stale checks (>14d).`,
 					`FPDS continuity: ${fpdsMed} rows at Medium+ alignment.`,
 				];
 				el.insights.innerHTML = lines.map((line) => `<li>${escapeHtml(line)}</li>`).join('');
@@ -2183,7 +2197,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const lines = [
 					`Compared to ${prevLabel}: total ${deltaSigned(datasetSnapshot.total, previousDatasetSnapshot.total)}.`,
 					`High-confidence ${deltaSigned(datasetSnapshot.highConfidence, previousDatasetSnapshot.highConfidence)} · Strong corroboration ${deltaSigned(datasetSnapshot.strongCorroboration, previousDatasetSnapshot.strongCorroboration)}.`,
-					`3P errors ${deltaSigned(datasetSnapshot.thirdPartyErrors, previousDatasetSnapshot.thirdPartyErrors)} · Fresh checks ${deltaSigned(datasetSnapshot.freshChecks, previousDatasetSnapshot.freshChecks)}.`,
+					`FPDS Medium+ ${deltaSigned(datasetSnapshot.fpdsMedium, previousDatasetSnapshot.fpdsMedium)} · 3P errors ${deltaSigned(datasetSnapshot.thirdPartyErrors, previousDatasetSnapshot.thirdPartyErrors)}.`,
+					`Fresh checks ${deltaSigned(datasetSnapshot.freshChecks, previousDatasetSnapshot.freshChecks)} · Stale checks ${deltaSigned(datasetSnapshot.staleChecks, previousDatasetSnapshot.staleChecks)}.`,
 					`Exact query matches ${deltaSigned(datasetSnapshot.exactMatches, previousDatasetSnapshot.exactMatches)} · Fallback matches ${deltaSigned(datasetSnapshot.fallbackMatches, previousDatasetSnapshot.fallbackMatches)}.`,
 				];
 				el.delta.innerHTML = lines.map((line) => `<li>${escapeHtml(line)}</li>`).join('');
@@ -2554,7 +2569,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const timingDue = row.dueDays === null ? 'D:—' : (row.dueDays < 0 ? `D:${row.dueDays}` : `D:+${row.dueDays}`);
 					const timingPosted = row.postedDays === null ? 'P:—' : `P:+${row.postedDays}`;
 					const timing = `<span class="opp-signal-stack"><span>${timingDue}</span><span>${timingPosted}</span></span>`;
-					const signals = `<span class="opp-signal-stack"><span>I${intelDepth} F${files} A${awards} U${usCount}</span><span>C${Math.round(corrobScore)} Cf${confidence}</span></span>`;
+					const signalBadges = [];
+					if (row.usaspendingError) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-error" title="USAspending fetch error on latest check">3P error</span>');
+					else if (Number(row.usaspendingMatchCount || 0) > 0 && row.usaspendingAgeDays !== null) {
+						if (Number(row.usaspendingAgeDays || 0) <= 3) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fresh" title="USAspending corroboration checked in last 3 days">Fresh</span>');
+						else if (Number(row.usaspendingAgeDays || 0) > 14) signalBadges.push(`<span class="opp-signal-badge opp-signal-badge-stale" title="USAspending corroboration older than 14 days">Stale ${Number(row.usaspendingAgeDays || 0)}d</span>`);
+					}
+					if (Number(row.fpdsAlignmentScore || 0) >= 70) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fpds-high" title="High identifier continuity (FPDS-aligned)">FPDS High</span>');
+					else if (Number(row.fpdsAlignmentScore || 0) >= 45) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fpds" title="Medium identifier continuity (FPDS-aligned)">FPDS Med</span>');
+					if (String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0) {
+						signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fallback" title="USAspending corroboration used fallback keyword path">Fallback</span>');
+					}
+					const badgeLine = signalBadges.length ? `<span class="opp-signal-badge-line">${signalBadges.join('')}</span>` : '';
+					const signals = `<span class="opp-signal-stack"><span>I${intelDepth} F${files} A${awards} U${usCount}</span><span>C${Math.round(corrobScore)} Cf${confidence}</span>${badgeLine}</span>`;
 					const title = row.uiLink
 						? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
 						: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
@@ -3449,6 +3476,54 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-size: 0.58rem;
 		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 		white-space: nowrap;
+	}
+	.opp-signal-badge-line {
+		display: inline-flex;
+		gap: 0.18rem;
+		flex-wrap: wrap;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	}
+	.opp-signal-badge {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.03rem 0.2rem;
+		border: 1px solid rgba(100, 116, 139, 0.74);
+		background: rgba(15, 23, 42, 0.72);
+		color: rgba(203, 213, 225, 0.96);
+		font-size: 0.52rem;
+		line-height: 1.16;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+	}
+	.opp-signal-badge-error {
+		border-color: rgba(248, 113, 113, 0.7);
+		background: rgba(185, 28, 28, 0.25);
+		color: rgba(254, 226, 226, 0.98);
+	}
+	.opp-signal-badge-stale {
+		border-color: rgba(251, 146, 60, 0.68);
+		background: rgba(154, 52, 18, 0.25);
+		color: rgba(255, 237, 213, 0.98);
+	}
+	.opp-signal-badge-fresh {
+		border-color: rgba(34, 197, 94, 0.66);
+		background: rgba(21, 128, 61, 0.23);
+		color: rgba(220, 252, 231, 0.98);
+	}
+	.opp-signal-badge-fpds {
+		border-color: rgba(56, 189, 248, 0.66);
+		background: rgba(2, 132, 199, 0.22);
+		color: rgba(224, 242, 254, 0.98);
+	}
+	.opp-signal-badge-fpds-high {
+		border-color: rgba(16, 185, 129, 0.72);
+		background: rgba(5, 150, 105, 0.24);
+		color: rgba(209, 250, 229, 0.98);
+	}
+	.opp-signal-badge-fallback {
+		border-color: rgba(250, 204, 21, 0.64);
+		background: rgba(161, 98, 7, 0.24);
+		color: rgba(254, 249, 195, 0.98);
 	}
 	.opp-confidence-chip {
 		display: inline-flex;
