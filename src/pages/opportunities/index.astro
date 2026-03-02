@@ -37,6 +37,12 @@ type OpportunityRow = {
 	resourceCount: number;
 	awardSignalCount: number;
 	awardSignalSampleDate: string | null;
+	usaspendingSignal: any | null;
+	usaspendingMatchCount: number;
+	usaspendingAmount: number;
+	crossDataSignal: any | null;
+	crossDataScore: number;
+	crossDataLevel: string;
 	weight: number;
 	eventIds: Set<string>;
 	eventTitles: Set<string>;
@@ -201,6 +207,52 @@ function awardSignalSampleDate(notice: any) {
 		?? null;
 }
 
+function usaspendingSignal(notice: any) {
+	return notice?.usaspendingSignal
+		?? notice?.usaspending_signal
+		?? null;
+}
+
+function usaspendingMatchCount(notice: any) {
+	const signal = usaspendingSignal(notice);
+	return Number(signal?.matched_award_count
+		?? signal?.matchedAwardCount
+		?? notice?.usaspendingMatchCount
+		?? notice?.usaspending_match_count
+		?? 0);
+}
+
+function usaspendingAmount(notice: any) {
+	const signal = usaspendingSignal(notice);
+	return Number(signal?.total_award_amount
+		?? signal?.totalAwardAmount
+		?? notice?.usaspendingAmount
+		?? notice?.usaspending_amount
+		?? 0);
+}
+
+function crossDataSignal(notice: any) {
+	return notice?.crossDataSignal
+		?? notice?.cross_data_signal
+		?? null;
+}
+
+function crossDataScore(notice: any) {
+	const signal = crossDataSignal(notice);
+	return Number(signal?.score
+		?? notice?.crossDataScore
+		?? notice?.cross_data_score
+		?? 0);
+}
+
+function crossDataLevel(notice: any) {
+	const signal = crossDataSignal(notice);
+	return String(signal?.level
+		?? notice?.crossDataLevel
+		?? notice?.cross_data_level
+		?? 'None');
+}
+
 const DETAIL_PREVIEW_MAX_CHARS = 8000;
 const TOKEN_STOPWORDS = new Set([
 	'and', 'the', 'for', 'with', 'from', 'that', 'this', 'into', 'your', 'our', 'their', 'about', 'through', 'under', 'over', 'between',
@@ -332,6 +384,12 @@ for (const event of radarEventsSeed) {
 				resourceCount: Number(notice.resourceCount ?? notice.resource_count ?? 0),
 				awardSignalCount: awardSignalCount(notice),
 				awardSignalSampleDate: awardSignalSampleDate(notice),
+				usaspendingSignal: usaspendingSignal(notice),
+				usaspendingMatchCount: usaspendingMatchCount(notice),
+				usaspendingAmount: usaspendingAmount(notice),
+				crossDataSignal: crossDataSignal(notice),
+				crossDataScore: crossDataScore(notice),
+				crossDataLevel: crossDataLevel(notice),
 				weight: Number(notice.score ?? 0),
 				eventIds: new Set<string>(),
 				eventTitles: new Set<string>(),
@@ -362,6 +420,18 @@ for (const event of radarEventsSeed) {
 			row.awardSignalCount = nextAwardCount;
 			row.awardSignalSampleDate = awardSignalSampleDate(notice) ?? row.awardSignalSampleDate;
 		}
+		const nextUsCount = usaspendingMatchCount(notice);
+		if (nextUsCount >= row.usaspendingMatchCount) {
+			row.usaspendingMatchCount = nextUsCount;
+			row.usaspendingAmount = Math.max(row.usaspendingAmount, usaspendingAmount(notice));
+			row.usaspendingSignal = usaspendingSignal(notice) ?? row.usaspendingSignal;
+		}
+		const nextCrossScore = crossDataScore(notice);
+		if (nextCrossScore >= row.crossDataScore) {
+			row.crossDataScore = nextCrossScore;
+			row.crossDataLevel = crossDataLevel(notice);
+			row.crossDataSignal = crossDataSignal(notice) ?? row.crossDataSignal;
+		}
 		row.eventIds.add(event.id);
 		row.eventTitles.add(event.title);
 		row.branches.add(event.branch);
@@ -391,6 +461,12 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 		resourceCount: Number(candidate.resource_count ?? 0),
 		awardSignalCount: awardSignalCount(candidate),
 		awardSignalSampleDate: awardSignalSampleDate(candidate),
+		usaspendingSignal: usaspendingSignal(candidate),
+		usaspendingMatchCount: usaspendingMatchCount(candidate),
+		usaspendingAmount: usaspendingAmount(candidate),
+		crossDataSignal: crossDataSignal(candidate),
+		crossDataScore: crossDataScore(candidate),
+		crossDataLevel: crossDataLevel(candidate),
 	};
 	const key = noticeKey(notice);
 	if (!opportunityMap.has(key)) {
@@ -413,6 +489,12 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 			resourceCount: Number(notice.resourceCount ?? 0),
 			awardSignalCount: Number(notice.awardSignalCount ?? 0),
 			awardSignalSampleDate: notice.awardSignalSampleDate ?? null,
+			usaspendingSignal: notice.usaspendingSignal ?? null,
+			usaspendingMatchCount: Number(notice.usaspendingMatchCount ?? 0),
+			usaspendingAmount: Number(notice.usaspendingAmount ?? 0),
+			crossDataSignal: notice.crossDataSignal ?? null,
+			crossDataScore: Number(notice.crossDataScore ?? 0),
+			crossDataLevel: String(notice.crossDataLevel ?? 'None'),
 			weight: Number(notice.score ?? 0),
 			eventIds: new Set<string>(),
 			eventTitles: new Set<string>(),
@@ -437,6 +519,16 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 	if (Number(notice.awardSignalCount ?? 0) >= row.awardSignalCount) {
 		row.awardSignalCount = Number(notice.awardSignalCount ?? 0);
 		row.awardSignalSampleDate = notice.awardSignalSampleDate ?? row.awardSignalSampleDate;
+	}
+	if (Number(notice.usaspendingMatchCount ?? 0) >= row.usaspendingMatchCount) {
+		row.usaspendingMatchCount = Number(notice.usaspendingMatchCount ?? 0);
+		row.usaspendingAmount = Math.max(row.usaspendingAmount, Number(notice.usaspendingAmount ?? 0));
+		row.usaspendingSignal = notice.usaspendingSignal ?? row.usaspendingSignal;
+	}
+	if (Number(notice.crossDataScore ?? 0) >= row.crossDataScore) {
+		row.crossDataScore = Number(notice.crossDataScore ?? 0);
+		row.crossDataLevel = String(notice.crossDataLevel ?? row.crossDataLevel ?? 'None');
+		row.crossDataSignal = notice.crossDataSignal ?? row.crossDataSignal;
 	}
 	row.branches.add('SAM Global');
 }
@@ -516,6 +608,12 @@ const opportunities = [...opportunityMap.values()]
 		resourceCount: Math.max(row.resourceCount, row.resourceAssets.size),
 		awardSignalCount: Number(row.awardSignalCount ?? 0),
 		awardSignalSampleDate: row.awardSignalSampleDate ?? null,
+		usaspendingSignal: row.usaspendingSignal ?? null,
+		usaspendingMatchCount: Number(row.usaspendingMatchCount ?? 0),
+		usaspendingAmount: Number(row.usaspendingAmount ?? 0),
+		crossDataSignal: row.crossDataSignal ?? null,
+		corroborationScore: Number(row.crossDataScore ?? 0),
+		corroborationLevel: row.crossDataLevel ?? 'None',
 		weight: row.weight,
 		eventIds: toArray(row.eventIds),
 		eventTitles: toArray(row.eventTitles),
@@ -592,6 +690,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-kpi"><span class="opp-kpi-label">With deep text</span><strong id="opp-kpi-deep">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">With attachments</span><strong id="opp-kpi-files">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
 		</div>
@@ -676,6 +775,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="gem">Gem score</option>
 						<option value="intel">Intel depth</option>
 						<option value="awards">Award history</option>
+						<option value="corroboration">Cross-data corroboration</option>
 						<option value="client">Client org</option>
 						<option value="work">Work type</option>
 						<option value="due">Due soonest</option>
@@ -769,6 +869,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<col class="opp-col-intel" />
 					<col class="opp-col-files" />
 					<col class="opp-col-awards" />
+					<col class="opp-col-corrob" />
 					<col class="opp-col-notice" />
 					<col class="opp-col-title" />
 					<col class="opp-col-sol" />
@@ -789,6 +890,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<th><button class="opp-sort-btn" data-sort="detailLen" type="button">Intel depth</button></th>
 						<th><button class="opp-sort-btn" data-sort="files" type="button">Files</button></th>
 						<th><button class="opp-sort-btn" data-sort="awardSignal" type="button">Awards</button></th>
+						<th><button class="opp-sort-btn" data-sort="crossData" type="button">Corroboration</button></th>
 						<th><button class="opp-sort-btn" data-sort="noticeType" type="button">Notice type</button></th>
 						<th><button class="opp-sort-btn" data-sort="title" type="button">Solicitation name</button></th>
 						<th><button class="opp-sort-btn" data-sort="solicitationNumber" type="button">Solicitation #</button></th>
@@ -819,6 +921,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<span><strong>Due:</strong> <span id="opp-modal-due">—</span></span>
 				<span><strong>Intel:</strong> <span id="opp-modal-intel">—</span></span>
 				<span><strong>Awards:</strong> <span id="opp-modal-awards">—</span></span>
+				<span><strong>USAspending:</strong> <span id="opp-modal-usaspending">—</span></span>
+				<span><strong>Corroboration:</strong> <span id="opp-modal-corroboration">—</span></span>
 			</div>
 			<div class="opp-modal-links">
 				<a id="opp-modal-link" href="#" target="_blank" rel="noreferrer" hidden>Open SAM notice ↗</a>
@@ -837,6 +941,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<ul id="opp-modal-events" class="opp-modal-events"></ul>
 					<p class="opp-modal-section-title mt-3">Event drilldown</p>
 					<div id="opp-modal-event-detail" class="opp-modal-event-detail">Select a mapped event to inspect the event context without leaving this view.</div>
+					<p class="opp-modal-section-title mt-3">USAspending corroboration</p>
+					<ul id="opp-modal-usaspending-list" class="opp-modal-events"></ul>
 				</div>
 			</div>
 		</div>
@@ -868,6 +974,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				deep: document.getElementById('opp-kpi-deep'),
 				files: document.getElementById('opp-kpi-files'),
 				awards: document.getElementById('opp-kpi-awards'),
+				corroborated: document.getElementById('opp-kpi-corroborated'),
 				count: document.getElementById('opp-table-count'),
 				body: document.getElementById('opp-table-body'),
 				pageSize: document.getElementById('opp-table-page-size'),
@@ -898,6 +1005,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalDue: document.getElementById('opp-modal-due'),
 				modalIntel: document.getElementById('opp-modal-intel'),
 				modalAwards: document.getElementById('opp-modal-awards'),
+				modalUsaspending: document.getElementById('opp-modal-usaspending'),
+				modalCorroboration: document.getElementById('opp-modal-corroboration'),
 				modalLink: document.getElementById('opp-modal-link'),
 				modalDetailLink: document.getElementById('opp-modal-detail-link'),
 				modalEventLink: document.getElementById('opp-modal-event-link'),
@@ -905,6 +1014,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalFiles: document.getElementById('opp-modal-files'),
 				modalEvents: document.getElementById('opp-modal-events'),
 				modalEventDetail: document.getElementById('opp-modal-event-detail'),
+				modalUsaspendingList: document.getElementById('opp-modal-usaspending-list'),
 			};
 
 			const charts = {
@@ -1076,6 +1186,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const detailTextLength = Number(row.detailTextLength || 0);
 				const resourceCount = Number(row.resourceCount || 0);
 				const awardSignalCount = Number(row.awardSignalCount || 0);
+				const usaspendingSignal = row.usaspendingSignal || {};
+				const usaspendingMatchCount = Number(usaspendingSignal.matched_award_count ?? usaspendingSignal.matchedAwardCount ?? row.usaspendingMatchCount ?? 0);
+				const usaspendingAmount = Number(usaspendingSignal.total_award_amount ?? usaspendingSignal.totalAwardAmount ?? row.usaspendingAmount ?? 0);
+				const crossDataSignal = row.crossDataSignal || {};
+				const corroborationScore = Number(crossDataSignal.score || 0);
+				const corroborationLevel = String(crossDataSignal.level || 'None');
 				let intelDepthScore = 0;
 				if (detailTextLength > 0) intelDepthScore += Math.min(18, Math.max(2, Math.round(detailTextLength / 1400)));
 				if (resourceCount > 0) intelDepthScore += Math.min(10, resourceCount * 2);
@@ -1098,6 +1214,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				gemScore += Math.min(8, Number(row.eventCount || 0) * 2);
 				gemScore += Math.min(12, intelDepthScore);
 				gemScore += Math.min(6, awardSignalCount);
+				gemScore += Math.min(6, usaspendingMatchCount);
+				gemScore += Math.min(8, Math.round(corroborationScore / 12));
+				if (usaspendingAmount >= 5_000_000) gemScore += 2;
 				if (row.uiLink) gemScore += 2;
 
 				return {
@@ -1109,6 +1228,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					detailTextLength,
 					resourceCount,
 					awardSignalCount,
+					usaspendingMatchCount,
+					usaspendingAmount,
+					usaspendingSignal,
+					corroborationScore,
+					corroborationLevel,
+					crossDataSignal,
 					intelDepthScore,
 					searchBlob: `${blob} ${workTypes.map((key) => workTypeLabel[key] || key).join(' ').toLowerCase()}`,
 					focusMatches,
@@ -1229,6 +1354,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
 				if (state.sort === 'intel') return (b.intelDepthScore || 0) - (a.intelDepthScore || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'awards') return (b.awardSignalCount || 0) - (a.awardSignalCount || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'corroboration') return (b.corroborationScore || 0) - (a.corroborationScore || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'client') return a.clientLabel.localeCompare(b.clientLabel) || b.gemScore - a.gemScore;
 				if (state.sort === 'work') return a.workTypeLabel.localeCompare(b.workTypeLabel) || b.gemScore - a.gemScore;
 				if (state.sort === 'posted') return (b.postedEpoch || 0) - (a.postedEpoch || 0) || b.gemScore - a.gemScore;
@@ -1518,6 +1644,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.modalAwards) el.modalAwards.textContent = Number(row.awardSignalCount || 0) > 0
 					? `${Number(row.awardSignalCount || 0).toLocaleString()} related awards`
 					: 'No matched awards';
+				if (el.modalUsaspending) {
+					const usCount = Number(row.usaspendingMatchCount || 0);
+					const usAmount = Number(row.usaspendingAmount || 0);
+					el.modalUsaspending.textContent = usCount > 0
+						? `${usCount.toLocaleString()} awards · $${Math.round(usAmount).toLocaleString()}`
+						: 'No third-party matches';
+				}
+				if (el.modalCorroboration) {
+					const level = String(row.corroborationLevel || 'None');
+					const score = Number(row.corroborationScore || 0);
+					el.modalCorroboration.textContent = `${level} (${Math.round(score)})`;
+				}
 
 				if (el.modalLink) {
 					if (row.uiLink) {
@@ -1584,6 +1722,25 @@ const opportunitiesJson = JSON.stringify(opportunities);
 								: '';
 							const mirrorHost = mirrorMeta?.host ? `<span class="opp-file-host">${escapeHtml(mirrorMeta.host)}</span>` : '';
 							return `<li><span class="opp-file-name">${escapeHtml(fileName)}</span><span class="opp-file-links">${links}</span>${hostMeta}${mirrorHost}${size}</li>`;
+						}).join('');
+					}
+				}
+
+				if (el.modalUsaspendingList) {
+					const signal = row.usaspendingSignal || {};
+					const awards = Array.isArray(signal.top_awards)
+						? signal.top_awards
+						: (Array.isArray(signal.topAwards) ? signal.topAwards : []);
+					if (!awards.length) {
+						el.modalUsaspendingList.innerHTML = '<li class="opp-subcopy">No USAspending award rows captured for this solicitation yet.</li>';
+					} else {
+						el.modalUsaspendingList.innerHTML = awards.slice(0, 6).map((award) => {
+							const awardId = String(award.award_id || '').trim() || 'Award';
+							const recipient = String(award.recipient_name || '').trim();
+							const amount = Number(award.award_amount || 0);
+							const agency = [award.awarding_agency, award.awarding_sub_agency].filter(Boolean).join(' · ');
+							const meta = [recipient, agency, amount > 0 ? `$${Math.round(amount).toLocaleString()}` : ''].filter(Boolean).join(' · ');
+							return `<li><span class="opp-file-name">${escapeHtml(awardId)}</span>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
 						}).join('');
 					}
 				}
@@ -1699,6 +1856,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					case 'awardSignal':
 						base = compareNum(Number(a.awardSignalCount || 0), Number(b.awardSignalCount || 0), 0);
 						break;
+					case 'crossData':
+						base = compareNum(Number(a.corroborationScore || 0), Number(b.corroborationScore || 0), 0);
+						break;
 					case 'noticeType':
 						base = compareText(a.noticeType, b.noticeType);
 						break;
@@ -1756,7 +1916,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const renderTable = (items) => {
 				if (!el.body) return;
 				if (!items.length) {
-					el.body.innerHTML = '<tr><td colspan="17" class="opp-empty">No opportunities match your current filters.</td></tr>';
+					el.body.innerHTML = '<tr><td colspan="18" class="opp-empty">No opportunities match your current filters.</td></tr>';
 					return;
 				}
 
@@ -1766,6 +1926,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const intelDepth = row.intelDepthScore ? String(Math.round(row.intelDepthScore)) : '—';
 					const files = row.resourceCount ? String(row.resourceCount) : '—';
 					const awards = row.awardSignalCount ? String(row.awardSignalCount) : '—';
+					const corrobScore = Number(row.corroborationScore || 0);
+					const corrobLevel = String(row.corroborationLevel || 'None');
+					const corrobClass = corrobLevel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'none';
+					const corrob = `<span class="opp-corroboration-chip opp-corroboration-${escapeHtml(corrobClass)}" title="Cross-data score ${Math.round(corrobScore)}">${escapeHtml(corrobLevel)} · ${Math.round(corrobScore)}</span>`;
 					const due = fmtDate(row.responseDueDate);
 					const title = row.uiLink
 						? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
@@ -1791,6 +1955,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<td class="opp-num">${intelDepth}</td>
 						<td class="opp-num">${files}</td>
 						<td class="opp-num">${awards}</td>
+						<td class="opp-num">${corrob}</td>
 						<td class="opp-cell-truncate">${escapeHtml(row.noticeType || '—')}</td>
 						<td class="opp-cell-title">${title}</td>
 						<td class="opp-cell-truncate">${escapeHtml(row.solicitationNumber || '—')}</td>
@@ -1818,6 +1983,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const deepCount = filtered.filter((row) => Number(row.detailTextLength || 0) > 0).length;
 				const fileCount = filtered.filter((row) => Number(row.resourceCount || 0) > 0).length;
 				const awardCount = filtered.filter((row) => Number(row.awardSignalCount || 0) > 0).length;
+				const corroboratedCount = filtered.filter((row) => Number(row.corroborationScore || 0) >= 70).length;
 				const { rows: pagedRows, totalRows, totalPages } = getPagedRows(filtered);
 
 				if (el.total) el.total.textContent = String(rows.length);
@@ -1826,6 +1992,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.deep) el.deep.textContent = String(deepCount);
 				if (el.files) el.files.textContent = String(fileCount);
 				if (el.awards) el.awards.textContent = String(awardCount);
+				if (el.corroborated) el.corroborated.textContent = String(corroboratedCount);
 				if (el.count) el.count.textContent = `${totalRows.toLocaleString()} row${totalRows === 1 ? '' : 's'}`;
 				if (el.pageLabel) el.pageLabel.textContent = `Page ${tableState.page} / ${totalPages}`;
 				if (el.pageFirst) el.pageFirst.disabled = tableState.page <= 1;
@@ -2375,6 +2542,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-col-intel { width: 5.4rem; }
 	.opp-col-files { width: 4rem; }
 	.opp-col-awards { width: 4.8rem; }
+	.opp-col-corrob { width: 7rem; }
 	.opp-col-notice { width: 9rem; }
 	.opp-col-title { width: 24rem; }
 	.opp-col-sol { width: 10.7rem; }
@@ -2486,6 +2654,37 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		background: rgba(250, 204, 21, 0.12);
 		color: rgba(254, 240, 138, 0.98);
 		font-variant-numeric: tabular-nums;
+	}
+	.opp-corroboration-chip {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.04rem 0.24rem;
+		font-size: 0.61rem;
+		line-height: 1.2;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgba(15, 23, 42, 0.62);
+		white-space: nowrap;
+	}
+	.opp-corroboration-strong {
+		border-color: rgba(34, 197, 94, 0.68);
+		background: rgba(34, 197, 94, 0.14);
+		color: rgba(220, 252, 231, 0.98);
+	}
+	.opp-corroboration-moderate {
+		border-color: rgba(56, 189, 248, 0.66);
+		background: rgba(56, 189, 248, 0.13);
+		color: rgba(224, 242, 254, 0.98);
+	}
+	.opp-corroboration-weak {
+		border-color: rgba(250, 204, 21, 0.66);
+		background: rgba(250, 204, 21, 0.12);
+		color: rgba(254, 243, 199, 0.97);
+	}
+	.opp-corroboration-none {
+		border-color: rgba(100, 116, 139, 0.72);
+		background: rgba(15, 23, 42, 0.62);
+		color: rgba(148, 163, 184, 0.95);
 	}
 	.opp-pill-wrap {
 		display: flex;
