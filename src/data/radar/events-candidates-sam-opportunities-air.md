@@ -1,24 +1,24 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-01T14:50:13.182613+00:00
+Generated: 2026-03-02T14:43:14.580743+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/01/2026
+Posted range: 01/01/2026 -> 03/02/2026
 
 ## Counts
-- Total candidates: 254
+- Total candidates: 252
 - Navy-related: 0
-- Full detail cached: 254
-- Notices with attachments: 208
-- Total attachment links: 558
+- Full detail cached: 252
+- Notices with attachments: 206
+- Total attachment links: 556
 - Pre-solicitation: 55
-- Sources Sought: 159
+- Sources Sought: 157
 - Special Notice: 40
 
 ## Engagement signals
 - Industry Day: 2
 - Pre-solicitation: 102
-- Sources Sought: 159
+- Sources Sought: 157
 - Special Notice: 40
 
 ## Top candidates
@@ -40,8 +40,6 @@ Posted range: 01/01/2026 -> 03/01/2026
 | 2 | Special Notice | Special Notice | 2026-02-09 | 2026-01-30 | DEPT OF DEFENSE | [MJU-76B Anticipated Formal Solicitation Date](https://sam.gov/opp/5f12767e21f54fbf8907a00c47f11f94/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-27 | 2026-02-10 | DEPT OF DEFENSE | [FA8604 Air Cargo Conveyor System at Dover Air Force Base, Delaward](https://sam.gov/opp/90a0bf5309944cf6a1a7b67a3a8a0b13/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-28 | 2026-02-10 | DEPT OF DEFENSE | [AN/ALQ-172 LRU-8 BIT LIMITERS AND DOWN CONVETERS REPAIR](https://sam.gov/opp/27887d1878cb4e168e8837d7256388a8/view) |
-| 2 | Sources Sought | Sources Sought | 2026-01-13 | 2026-02-14 | DEPT OF DEFENSE | [APS-133 Radar Modulator, for Weather Radar System](https://sam.gov/opp/6a19fee24de343afa8afa30800a076cc/view) |
-| 2 | Sources Sought | Sources Sought | 2026-01-30 | 2026-02-14 | DEPT OF DEFENSE | [Industrial Floor Scrubbers](https://sam.gov/opp/e604f65691dd46189ed3020d593be24d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-14 | 2026-02-15 | DEPT OF DEFENSE | [Conformable Batteries](https://sam.gov/opp/bf381ba274b74cd5b229fe3465bcf092/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-04 | 2026-02-15 | DEPT OF DEFENSE | [Synopsis - Materiel Management Operations](https://sam.gov/opp/85916b09e4204d2581efe2335d28249a/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-15 | 2026-02-16 | DEPT OF DEFENSE | [T-38 Wingtips](https://sam.gov/opp/0816ea24e239494b890cdf34efd7fba6/view) |
@@ -211,10 +209,10 @@ Posted range: 01/01/2026 -> 03/01/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-13 | DEPT OF DEFENSE | [Repair of Transmitters for the JTE Program Multiple NSNs](https://sam.gov/opp/6ed69fa325f148df8ed41ce939269dfb/view) |
 | 4 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Sources Sought for WWYK200131 - Repair Chilled Water System, Bldg. 2280](https://sam.gov/opp/63e6546fc6834eb1918033cbe584b0f8/view) |
 | 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Air Force Research Laboratory (AFRL) Enterprise Commercial Solutions Opening (CSO)](https://sam.gov/opp/33fd343112ac4698a5ce8671e2bcb9b5/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [HH-60W Link-16 Advanced Capability Modernization](https://sam.gov/opp/b2cad88ba8c54fb3925ff447ba5c1321/view) |
 | 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [ICBM Development, Operations, and Sustainment (IDOS) Update](https://sam.gov/opp/597968a21cce47678d5b6ee467efcb27/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Psychological Health Training Video](https://sam.gov/opp/c51dde5927da41479e281efbf3d6b46e/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Spectrum Instrumentation Digitizers](https://sam.gov/opp/0dc47c5e3f8241b39064245797f5cfa0/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-13 | DEPT OF DEFENSE | [HH-60W Link-16 Advanced Capability Modernization](https://sam.gov/opp/90ccc75a6bf54053b9a719608fbb2bb8/view) |
 | 2 | Special Notice | Special Notice | 2026-02-27 | 2026-03-14 | DEPT OF DEFENSE | [Notice of Intent to Sole Source - Mental Health First Aid Instructor Training](https://sam.gov/opp/3a36d1ea782a4305900ae1a97ccaa308/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-01-13 | 2026-03-15 | DEPT OF DEFENSE | [CNC Router Cutting System](https://sam.gov/opp/bed4d9ff2a8746908673e55a498be7b8/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-15 | DEPT OF DEFENSE | [Flight Data Transmitter Remanufacture](https://sam.gov/opp/0d740d2434764f85a6e8037684a2a885/view) |

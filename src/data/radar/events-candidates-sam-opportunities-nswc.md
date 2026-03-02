@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-01T14:51:13.162223+00:00
+Generated: 2026-03-02T14:44:18.151646+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/01/2026
+Posted range: 01/01/2026 -> 03/02/2026
 
 ## Counts
-- Total candidates: 392
-- Navy-related: 392
-- Full detail cached: 392
-- Notices with attachments: 208
-- Total attachment links: 609
-- Combined Synopsis/Solicitation: 144
+- Total candidates: 397
+- Navy-related: 397
+- Full detail cached: 397
+- Notices with attachments: 212
+- Total attachment links: 617
+- Combined Synopsis/Solicitation: 146
 - Pre-solicitation: 47
-- Solicitation: 81
-- Sources Sought: 66
+- Solicitation: 83
+- Sources Sought: 67
 - Special Notice: 54
 
 ## Engagement signals
 - Industry Day: 7
 - Pre-solicitation: 52
-- Sources Sought: 67
+- Sources Sought: 68
 - Vendor Outreach: 1
 - Special Notice: 54
 
@@ -302,6 +302,7 @@ Posted range: 01/01/2026 -> 03/01/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-24 | 2026-03-05 | DEPT OF DEFENSE | [Emergenetics Profile](https://sam.gov/opp/ed4b8351b004454189ad2b60ec6fae40/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-02-26 | 2026-03-05 | DEPT OF DEFENSE | [Personalized Navy Galley Uniforms](https://sam.gov/opp/e92c04d10b7b4e15b91036d40b40bbbb/view) |
 | 5 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-05 | DEPT OF DEFENSE | [Carbon Dioxide (CO2) Scrubber and Carbon Monoxide-Hydrogen Burner Repairs](https://sam.gov/opp/05c5436162d243ccb3cb73c570417562/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-03-02 | 2026-03-05 | DEPT OF DEFENSE | [B-25 Shipping Boxes NBPL](https://sam.gov/opp/b2f76b374a754d9b82374a62bfb7f3b7/view) |
 | 6 | Solicitation | - | 2026-02-04 | 2026-03-06 | DEPT OF DEFENSE | [LEVEL 1 SUBSAFE MATERIAL CABLE CUTTER AND REELING MACHINE ASSEMBLY COMPONENTS](https://sam.gov/opp/2ef5f468775d4465b7047e118193181d/view) |
 | 5 | Special Notice | Special Notice | 2026-02-05 | 2026-03-06 | DEPT OF DEFENSE | [A-A-50616A, Battery, Storage (Valve-Regulated Lead-Acid, Absorbent Glass Mat), 12-Volt, 130 130-Ampere-Hour](https://sam.gov/opp/9c16b177116d4d09be1deef739ea3b17/view) |
 | 5 | Special Notice | Special Notice | 2026-02-05 | 2026-03-06 | DEPT OF DEFENSE | [MIL-DTL-24175A, Panels, Power Supply and Control for Navigation Lights, General Specification for MIL-DTL-24175A/2B, Panel, Power Supply and Control for Navigation Lights, N.W.T., 10 Amperes, 120 Volts AC, 60 Hertz 3 Phase Bus, 8 Circuits, Symbol No. 940.1](https://sam.gov/opp/9e01219aeef544c6a274a843f0ddab3d/view) |
@@ -326,7 +327,6 @@ Posted range: 01/01/2026 -> 03/01/2026
 | 4 | Combined Synopsis/Solicitation | - | 2026-02-27 | 2026-03-06 | DEPT OF DEFENSE | [Berth Curtains](https://sam.gov/opp/7ad2357a759042e788f04525f56708c8/view) |
 | 6 | Solicitation | - | 2026-02-05 | 2026-03-09 | DEPT OF DEFENSE | [SA 86687.1 SIBS TECH REFRESH (RIPOUT) ON ONE (1) CVN CLASS SHIP, CVN 75 USS HARRY S. TRUMAN](https://sam.gov/opp/dbd5bd92a4634fb1a04b4c021984fc9e/view) |
 | 6 | Solicitation | - | 2026-02-10 | 2026-03-09 | DEPT OF DEFENSE | [TIH 28/30/32](https://sam.gov/opp/ef0112fc73af4e388a1ffb1ffd8f0257/view) |
-| 7 | Pre-solicitation | Pre-solicitation | 2026-02-11 | 2026-03-09 | DEPT OF DEFENSE | [H20 Engineering Services](https://sam.gov/opp/f975673fd21e46699e4096649c2abe3d/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

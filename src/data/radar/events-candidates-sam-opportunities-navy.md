@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-01T14:51:06.970881+00:00
+Generated: 2026-03-02T14:44:10.607435+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/01/2026
+Posted range: 01/01/2026 -> 03/02/2026
 
 ## Counts
-- Total candidates: 99
-- Navy-related: 99
-- Full detail cached: 99
-- Notices with attachments: 36
-- Total attachment links: 155
-- Combined Synopsis/Solicitation: 26
-- Pre-solicitation: 24
+- Total candidates: 101
+- Navy-related: 101
+- Full detail cached: 101
+- Notices with attachments: 37
+- Total attachment links: 160
+- Combined Synopsis/Solicitation: 27
+- Pre-solicitation: 25
 - Solicitation: 12
 - Sources Sought: 27
 - Special Notice: 10
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 26
+- Pre-solicitation: 27
 - Sources Sought: 27
 - Vendor Outreach: 1
 - Special Notice: 10
@@ -91,6 +91,7 @@ Posted range: 01/01/2026 -> 03/01/2026
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-20 | 2026-03-07 | DEPT OF DEFENSE | [MH-60 Airborne Mine Countermeasure (AMCM) Carriage, Stream, Tow and Recovery System (CSTRS) Support](https://sam.gov/opp/d0ff988a1b6c4d5aac65f876bb02aa49/view) |
 | 6 | Solicitation | - | 2026-02-10 | 2026-03-09 | DEPT OF DEFENSE | [TIH 28/30/32](https://sam.gov/opp/ef0112fc73af4e388a1ffb1ffd8f0257/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-09 | DEPT OF DEFENSE | [Defense Compressed Air Test Kits and Testing Services Follow-on](https://sam.gov/opp/f726e95a66164d8998b58bf7bc37a41e/view) |
+| 7 | Combined Synopsis/Solicitation | - | 2026-03-02 | 2026-03-09 | DEPT OF DEFENSE | [Total Small Business Set Aside for Various Quantities of Brand: Glenair Connectors](https://sam.gov/opp/cb7eb77ad9d54fc2b0e36e69b2e7ee2a/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-10 | DEPT OF DEFENSE | [EOD NexGen UBAs](https://sam.gov/opp/05801bdf078a4a1c946dc59a4d19bb1a/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-24 | 2026-03-11 | DEPT OF DEFENSE | [Integration of PGU-48/B 25mm Ammunition for F-35B/C Platforms](https://sam.gov/opp/a63479430a954289a08ae4f0132414e9/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-24 | 2026-03-11 | DEPT OF DEFENSE | [Joint Strike Missile (JSM) Additional Integration](https://sam.gov/opp/1c9cb8f6a8124c37a964525173eab202/view) |
@@ -110,10 +111,11 @@ Posted range: 01/01/2026 -> 03/01/2026
 | 9 | Special Notice | Pre-solicitation, Special Notice | 2026-02-27 | 2026-03-13 | DEPT OF DEFENSE | [NSWC PCD - Request For Information (RFI) - Other Transaction Authority (OTA) - Consortium Management Firm](https://sam.gov/opp/3064da4200794b44bf18592da23cd7ea/view) |
 | 9 | Special Notice | Industry Day, Special Notice | 2026-01-12 | 2026-03-15 | DEPT OF DEFENSE | [INDUSTRY DAY 2026](https://sam.gov/opp/8fdaf30d706b4d51b60401bcbf8e1648/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-01 | 2026-03-17 | DEPT OF DEFENSE | [Engineering and technical support for AN/APG-65 and AN/APG-79 Active Electronically Scanned Array (AESA) radars](https://sam.gov/opp/0663a80e66b54e58b9e7d0dbc4af8d6b/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [P-8A Poseidon ADIRU Updates](https://sam.gov/opp/9180ad325d1b4199841c633422bfb20f/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-18 | DEPT OF DEFENSE | [Electronics Repair Kits for the 2M/MTR Program](https://sam.gov/opp/3045d43f6ee84f2899ff2a2552a78968/view) |
-| 5 | Sources Sought | Sources Sought | 2026-02-20 | 2026-03-23 | DEPT OF DEFENSE | [Unmanned Common Controller (UCC) for the United States Marine Corps](https://sam.gov/opp/7e2c7a9a5d434249954f7f011eb8ce0d/view) |
 | 5 | Sources Sought | Sources Sought | 2026-02-21 | 2026-03-23 | DEPT OF DEFENSE | [Auxiliary Fuel Tank](https://sam.gov/opp/8e04d72b1e7d4905a12e84027da1f6ad/view) |
 | 4 | Solicitation | - | 2026-02-23 | 2026-03-23 | DEPT OF DEFENSE | [Contractor Logistics Support (CLS) Follow-On, FY 27-30](https://sam.gov/opp/a691f367f97841caac64aefe5cc8ddec/view) |
+| 5 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-23 | DEPT OF DEFENSE | [Unmanned Common Controller (UCC) for the United States Marine Corps](https://sam.gov/opp/ce7bc54b516a40a39f1e65bfb4d92030/view) |
 | 7 | Special Notice | Special Notice | 2026-02-24 | 2026-03-24 | DEPT OF DEFENSE | [2026 Pacific Northwest Regional Council Training Event](https://sam.gov/opp/f6ab3404eef94e2daea810b1e3b24b3a/view) |
 | 4 | Solicitation | - | 2026-01-30 | 2026-03-25 | DEPT OF DEFENSE | [Joint Tactical Terminal – Transceiver (JTT-X)](https://sam.gov/opp/3486dd2c51b4401099fadf19b5ddfe18/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-18 | 2026-03-25 | DEPT OF DEFENSE | [Shipboard Warning System](https://sam.gov/opp/c318c00423d64540a00afe77d4574246/view) |

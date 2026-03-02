@@ -1,0 +1,46 @@
+{
+  "id": "sam-03c1c0e488bd4b10a6791c85e16bd927",
+  "title": "CABLE ASSEMBLY,SPEC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03c1c0e488bd4b10a6791c85e16bd927",
+  "opportunity_url": "https://sam.gov/opp/03c1c0e488bd4b10a6791c85e16bd927/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/03c1c0e488bd4b10a6791c85e16bd927/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "03c1c0e488bd4b10a6791c85e16bd927",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM126RKC68",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03c1c0e488bd4b10a6791c85e16bd927",
+  "detail_text": "DLA Weapons Support Mechanicsburg is seeking sources capable of supplying the following items: QTY NSN Part Number Nomenclature 7 1HM 5995 014816257 WN 1155130-115 CABLE ASSEMBLY,SPEC 31 1HM 5995 015416173 WN 1155205-103 CABLE ASSEMBLY,SPEC 65 1HM 6150 015476543 WN 1155130-113 CABLE ASSEMBLY SPEC 7 1HM 6150 015594019 WN 1155205-105 CABLE ASSEMBLY,SPEC Approved Design Cage Code: Teledyne Instruments, Inc. (CAGE 17476) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to Jennifer.Elliott@dla.mil by 2:00 PM EST on 13 March 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1420,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69badf83d0f142d1b5c11aaa0ae02c36/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69badf83d0f142d1b5c11aaa0ae02c36/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c846355303cc7bf48ec0342417faddace4b92b729a1760a0df5d9e88011217a3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c846355303cc7bf48ec0342417faddace4b92b729a1760a0df5d9e88011217a3.pdf",
+      "file_id": "69badf83d0f142d1b5c11aaa0ae02c36",
+      "file_name": "1.08+Sources+Sought+-+Market+Survey.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 383990,
+      "sha256": "c846355303cc7bf48ec0342417faddace4b92b729a1760a0df5d9e88011217a3"
+    }
+  ],
+  "_mirror_hash": "292480255fd6918b322e0f171dc4e24e44590fd26208d1ee4c49cc5bdb805e95",
+  "_mirror_run_id": "20260302T144056Z",
+  "_mirror_recorded_at": "2026-03-02T14:42:39.320592+00:00"
+}

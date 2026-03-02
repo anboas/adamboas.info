@@ -1,0 +1,47 @@
+{
+  "id": "sam-36b7876752de463d8bfe0ce51b6c45fa",
+  "title": "YCV-19 Maintenance and Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=36b7876752de463d8bfe0ce51b6c45fa",
+  "opportunity_url": "https://sam.gov/opp/36b7876752de463d8bfe0ce51b6c45fa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/36b7876752de463d8bfe0ce51b6c45fa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "36b7876752de463d8bfe0ce51b6c45fa",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6264926RA033",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=36b7876752de463d8bfe0ce51b6c45fa",
+  "detail_text": "The solicitation for this requirement is expected to be issued approximately 17 March 2026. The date and time will be indentified in the solicitation. Please see attachment for more detailed information.",
+  "detail_text_length": 203,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b8de24b9deb6459a9bbb6ccb559418d9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b8de24b9deb6459a9bbb6ccb559418d9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4707fc9961d50b43b0e6cfc207125758a9d8b7959cc3549525266b83291386d3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4707fc9961d50b43b0e6cfc207125758a9d8b7959cc3549525266b83291386d3.pdf",
+      "file_id": "b8de24b9deb6459a9bbb6ccb559418d9",
+      "file_name": "Pre-Solicitation+Notice+YCV-19.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 177584,
+      "sha256": "4707fc9961d50b43b0e6cfc207125758a9d8b7959cc3549525266b83291386d3"
+    }
+  ],
+  "_mirror_hash": "8e91ccb72492d0a9aa84a3df554ef513738d3f27f6f38b4f0d1c134754ba5974",
+  "_mirror_run_id": "20260302T144056Z",
+  "_mirror_recorded_at": "2026-03-02T14:42:39.127069+00:00"
+}

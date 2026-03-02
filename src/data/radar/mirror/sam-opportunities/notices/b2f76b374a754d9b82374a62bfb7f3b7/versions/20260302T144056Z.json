@@ -1,0 +1,56 @@
+{
+  "id": "sam-b2f76b374a754d9b82374a62bfb7f3b7",
+  "title": "B-25 Shipping Boxes NBPL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2f76b374a754d9b82374a62bfb7f3b7",
+  "opportunity_url": "https://sam.gov/opp/b2f76b374a754d9b82374a62bfb7f3b7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b2f76b374a754d9b82374a62bfb7f3b7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b2f76b374a754d9b82374a62bfb7f3b7",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N3904026Q5425",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2f76b374a754d9b82374a62bfb7f3b7",
+  "detail_text": "This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with the format in subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; proposals are being requested and a written solicitation will not be issued Paper copies of this solicitation will not be available. This combined synopsis/solicitation SHALL be posted on SAM.gov. This solicitation documents and incorporates provisions and clauses in effect through FAC 2025-06 and DFARS Change Notice 2025-1110. It is the responsibility of the contractor to be familiar with the applicable clauses and provisions. The clauses may be accessed in full text at these addresses: https://www.acquisition.gov/browse/index/far and http://www.acq.osd.mil/dpap/dars/change_notices.html. The NAICS code is 332439. The business size standard is 600 Employees. This is a 100% Small Business Set-Aside solicitation. The Portsmouth Naval Shipyard requests responses from sources capable in accordance with RFQ #N3904026Q5425. See attached RFQ for details. Required Delivery Date: 4/01/2026 (ASAP) Place of performance is: Naval Base Point Loma, San Diego, CA 92106 For evaluation purposes, please provide any applicable procedures and technical information. If no information is provided, your quotation may be determined to be unresponsive. Award may be made on the basis of adherence to the schedule and/or soonest mobilization. PPIRS/CPARS information will be utilized to evaluate Past Performance. Please provide breakdown of total prices, if applicable, for Price Justification purposes. The Contracting Officer will utilize any available information, public or otherwise, to evaluate Vendor Responsibility. See RFQ for Applicable Clauses, and Attachment 1 for technical specification.",
+  "detail_text_length": 1860,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8cc523ad6f9c4e179ef719d381b2e54e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3ba417764564390869140eea71fd11a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8cc523ad6f9c4e179ef719d381b2e54e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7cbc975770d4dce08f56b43546e3352ead4741775932614b863b9163ededaece.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7cbc975770d4dce08f56b43546e3352ead4741775932614b863b9163ededaece.docx",
+      "file_id": "8cc523ad6f9c4e179ef719d381b2e54e",
+      "file_name": "N3904026Q5425+Attachment+1+-+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20609,
+      "sha256": "7cbc975770d4dce08f56b43546e3352ead4741775932614b863b9163ededaece"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3ba417764564390869140eea71fd11a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/16f0cd203541d4b4b791e8cfd14cb5161b1e8db7894db438689cf0da6f5a7be9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/16f0cd203541d4b4b791e8cfd14cb5161b1e8db7894db438689cf0da6f5a7be9.docx",
+      "file_id": "a3ba417764564390869140eea71fd11a",
+      "file_name": "N3904026Q5425+Combined+Synopsis+Solicitation.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 38371,
+      "sha256": "16f0cd203541d4b4b791e8cfd14cb5161b1e8db7894db438689cf0da6f5a7be9"
+    }
+  ],
+  "_mirror_hash": "515f6d7b55c769537bb0bcdfd9fb71d5cdb569ce4e661ab1f205abdd9ab5fc76",
+  "_mirror_run_id": "20260302T144056Z",
+  "_mirror_recorded_at": "2026-03-02T14:42:39.137836+00:00"
+}

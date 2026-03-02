@@ -1,0 +1,57 @@
+{
+  "id": "sam-91cff0260381494e91a52a394b965ae3",
+  "title": "Brand Name HPE Servers and 60-month Warranties",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91cff0260381494e91a52a394b965ae3",
+  "opportunity_url": "https://sam.gov/opp/91cff0260381494e91a52a394b965ae3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/91cff0260381494e91a52a394b965ae3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "91cff0260381494e91a52a394b965ae3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "500022659",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE.IT STRATEGY AND MODERNIZATION",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91cff0260381494e91a52a394b965ae3",
+  "detail_text": "This is a SOURCES SOUGHT RFI Only. HPE DL380/DL380a servers, storage and switches, described in the SOW (attached), to support a range of patterns and applications in the CDM computing environment. This effort will ensure FIPS 140-3 compliance is met and appropriate levels of technology infrastructure for enterprise analytics and mitigate risks to other management and technical controls related to the separation of production, development, test, and prototyping environments. Details of specific servers required and warranty are listed in the SOW. ATTACHMENTS: SOW PRICING SHEET* NOTE: The pricing sheet assumes that this includes all components, peripherals, switches, etc. to install the servers. If you are unsure please check the other tabs to cross-reference",
+  "detail_text_length": 768,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b21c0aac3e84485a6aaad989f00ac11/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f0929681647457bad08d0082602c82c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b21c0aac3e84485a6aaad989f00ac11/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c64199e03fc85ee7c8cdb15a042b7710ebdea92a0081e8016cc215c3d7155e3f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c64199e03fc85ee7c8cdb15a042b7710ebdea92a0081e8016cc215c3d7155e3f.pdf",
+      "file_id": "3b21c0aac3e84485a6aaad989f00ac11",
+      "file_name": "I_1b_SOW+v2023.06.00_FINAL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 160266,
+      "sha256": "c64199e03fc85ee7c8cdb15a042b7710ebdea92a0081e8016cc215c3d7155e3f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f0929681647457bad08d0082602c82c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/92cd574856936606b6836d2732c206d2dd9e55de9dc2c80c0089f132cdea8b23.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/92cd574856936606b6836d2732c206d2dd9e55de9dc2c80c0089f132cdea8b23.xlsx",
+      "file_id": "9f0929681647457bad08d0082602c82c",
+      "file_name": "CLIN_Pricing+Sheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24765,
+      "sha256": "92cd574856936606b6836d2732c206d2dd9e55de9dc2c80c0089f132cdea8b23"
+    }
+  ],
+  "_mirror_hash": "de7922acfb8c4accb0471d89499eeee83ff373fa8f4e176c387c7a2f2a154962",
+  "_mirror_run_id": "20260302T144056Z",
+  "_mirror_recorded_at": "2026-03-02T14:42:39.280959+00:00"
+}

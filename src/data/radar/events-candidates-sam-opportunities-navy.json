@@ -860,6 +860,55 @@
     "resource_items": null
   },
   {
+    "id": "sam-cb7eb77ad9d54fc2b0e36e69b2e7ee2a",
+    "title": "Total Small Business Set Aside for Various Quantities of Brand: Glenair Connectors",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb7eb77ad9d54fc2b0e36e69b2e7ee2a",
+    "opportunity_url": "https://sam.gov/opp/cb7eb77ad9d54fc2b0e36e69b2e7ee2a/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/cb7eb77ad9d54fc2b0e36e69b2e7ee2a/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "cb7eb77ad9d54fc2b0e36e69b2e7ee2a",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N61331-26-Q-TR19",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+    "posted_date": "2026-03-02",
+    "response_deadline": "2026-03-09",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "Vendor engagement keywords",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb7eb77ad9d54fc2b0e36e69b2e7ee2a",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb7eb77ad9d54fc2b0e36e69b2e7ee2a",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f92070bb9f24a4983d249a4f332d24e/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/606fc1bf2679479bb616718c330c5151/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77dab27fac5b4c65854da1d9635a2b68/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfdb07863a6546629cd90df7c228c3f9/download"
+    ],
+    "resource_count": 4,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f92070bb9f24a4983d249a4f332d24e/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/606fc1bf2679479bb616718c330c5151/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77dab27fac5b4c65854da1d9635a2b68/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfdb07863a6546629cd90df7c228c3f9/download"
+      }
+    ]
+  },
+  {
     "id": "sam-05801bdf078a4a1c946dc59a4d19bb1a",
     "title": "EOD NexGen UBAs",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=05801bdf078a4a1c946dc59a4d19bb1a",
@@ -3049,41 +3098,35 @@
     "resource_items": null
   },
   {
-    "id": "sam-7e2c7a9a5d434249954f7f011eb8ce0d",
-    "title": "Unmanned Common Controller (UCC) for the United States Marine Corps",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e2c7a9a5d434249954f7f011eb8ce0d",
-    "opportunity_url": "https://sam.gov/opp/7e2c7a9a5d434249954f7f011eb8ce0d/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/7e2c7a9a5d434249954f7f011eb8ce0d/view",
+    "id": "sam-9180ad325d1b4199841c633422bfb20f",
+    "title": "P-8A Poseidon ADIRU Updates",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9180ad325d1b4199841c633422bfb20f",
+    "opportunity_url": "https://sam.gov/opp/9180ad325d1b4199841c633422bfb20f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/9180ad325d1b4199841c633422bfb20f/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "7e2c7a9a5d434249954f7f011eb8ce0d",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
+    "notice_id": "9180ad325d1b4199841c633422bfb20f",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
     "engagement_kinds": [
-      "Sources Sought"
+      "Pre-solicitation"
     ],
-    "solicitation_number": "243-26-012",
+    "solicitation_number": "N00019-25-NORFP-APM290-1228",
     "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
-    "posted_date": "2026-02-20",
-    "response_deadline": "2026-03-23",
+    "posted_date": "2026-03-02",
+    "response_deadline": "2026-03-17",
     "place_of_performance": null,
     "relevance_score": 5,
     "relevance_reasons": [
       "Navy-linked organization or content",
-      "Signal notice type: Sources Sought"
+      "Signal notice type: Pre-solicitation"
     ],
     "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e2c7a9a5d434249954f7f011eb8ce0d",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e2c7a9a5d434249954f7f011eb8ce0d",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9180ad325d1b4199841c633422bfb20f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9180ad325d1b4199841c633422bfb20f",
     "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d267fcec4284dff94be29e7614547af/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d267fcec4284dff94be29e7614547af/download"
-      }
-    ]
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-8e04d72b1e7d4905a12e84027da1f6ad",
@@ -3115,6 +3158,47 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-ce7bc54b516a40a39f1e65bfb4d92030",
+    "title": "Unmanned Common Controller (UCC) for the United States Marine Corps",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce7bc54b516a40a39f1e65bfb4d92030",
+    "opportunity_url": "https://sam.gov/opp/ce7bc54b516a40a39f1e65bfb4d92030/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/ce7bc54b516a40a39f1e65bfb4d92030/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "ce7bc54b516a40a39f1e65bfb4d92030",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "243-26-012",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
+    "posted_date": "2026-03-02",
+    "response_deadline": "2026-03-23",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce7bc54b516a40a39f1e65bfb4d92030",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce7bc54b516a40a39f1e65bfb4d92030",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1001e501b6144de49c0be241bf125873/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d267fcec4284dff94be29e7614547af/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1001e501b6144de49c0be241bf125873/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d267fcec4284dff94be29e7614547af/download"
+      }
+    ]
   },
   {
     "id": "sam-96970190fa2a40ddaaa3ecdd9329f6f7",

@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-03-01T14:41:01.212016+00:00
+Generated: 2026-03-02T14:40:36.803457+00:00
 
 - Total: 19
 - OK: 11
