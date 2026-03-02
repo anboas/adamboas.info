@@ -7,6 +7,7 @@ import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
+import opportunitiesDrift from '../../data/radar/events-candidates-sam-opportunities-drift-latest.json';
 
 type ResourceAsset = {
 	sourceUrl: string;
@@ -70,6 +71,12 @@ function noticeKey(notice: any) {
 
 function toArray(set: Set<string>) {
 	return [...set].filter(Boolean).sort((a, b) => a.localeCompare(b));
+}
+
+function signed(value: number) {
+	if (!Number.isFinite(value)) return '0';
+	if (value > 0) return `+${Math.round(value)}`;
+	return String(Math.round(value));
 }
 
 function loadMirrorResourceIndex() {
@@ -654,6 +661,10 @@ const lastCollectedAt = radarEventsSeed
 	.sort()
 	.at(-1) ?? null;
 
+const driftLatest = (opportunitiesDrift ?? {}) as any;
+const driftDeltas = (driftLatest.deltas ?? {}) as Record<string, number>;
+const driftGeneratedAt = typeof driftLatest.generated_at === 'string' ? driftLatest.generated_at : null;
+
 const opportunitiesJson = JSON.stringify(opportunities);
 ---
 
@@ -668,7 +679,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			</div>
 			<div class="opp-header-actions">
 				<a class="opp-link-btn" href={withBase('/events/')}>Open Events</a>
+				<a class="opp-link-btn opp-link-btn-muted" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open Drift Report</a>
 				{lastCollectedAt ? <span class="opp-fresh">Last collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+				{driftGeneratedAt ? <span class="opp-fresh">Drift refreshed: {new Date(driftGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
 			</div>
 		</div>
 		<div id="opp-event-context" class="opp-event-context" hidden>
@@ -692,6 +705,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">3P error rows</span><strong id="opp-kpi-third-party-errors">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Exact query matches</span><strong id="opp-kpi-exact">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Fallback query matches</span><strong id="opp-kpi-fallback">0</strong></div>

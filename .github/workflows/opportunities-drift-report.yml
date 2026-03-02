@@ -1,0 +1,61 @@
+name: opportunities-drift-report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily 10:35 ET / 15:35 UTC (adjusts with DST as UTC)
+    - cron: "35 15 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: opportunities-drift-report
+  cancel-in-progress: true
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate opportunities drift report
+        run: python3 scripts/generate-opportunities-drift-report.py
+
+      - name: Upload drift artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: opportunities-drift-report
+          path: |
+            src/data/radar/events-candidates-sam-opportunities-drift-latest.json
+            src/data/radar/events-candidates-sam-opportunities-drift-latest.md
+            src/data/radar/events-candidates-sam-opportunities-drift-snapshot.json
+
+      - name: Create/update pull request for drift refresh
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/opportunities-drift-report
+          delete-branch: true
+          commit-message: "chore(opportunities): refresh drift and freshness report"
+          title: "chore(opportunities): refresh drift and freshness report"
+          body: |
+            Automated refresh of opportunities drift/freshness analytics.
+
+            - Regenerates latest drift JSON and markdown summary
+            - Updates snapshot baseline for next run deltas
+            - Supports trend monitoring for match quality and source freshness
+          labels: |
+            opportunities
+            automation
+            analytics
+          add-paths: |
+            src/data/radar/events-candidates-sam-opportunities-drift-latest.json
+            src/data/radar/events-candidates-sam-opportunities-drift-latest.md
+            src/data/radar/events-candidates-sam-opportunities-drift-snapshot.json
