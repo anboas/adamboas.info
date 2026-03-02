@@ -876,7 +876,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 					<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
 				</div>
 			</div>
-			<div id="radar-opportunity-context" class="radar-opportunity-context hidden" aria-live="polite">
+			<div id="radar-opportunity-context" class="radar-opportunity-context hidden" aria-live="polite" hidden>
 				<div>
 					<p class="radar-opportunity-context-label">Opportunity context</p>
 					<p id="radar-opportunity-context-text" class="radar-opportunity-context-text">Opened from opportunities.</p>
@@ -1459,9 +1459,11 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		const back = controls.opportunityContextBack;
 		if (!opportunityContext) {
 			wrap.classList.add('hidden');
+			wrap.setAttribute('hidden', '');
 			return;
 		}
 		wrap.classList.remove('hidden');
+		wrap.removeAttribute('hidden');
 		const label = opportunityContext.title
 			? `From opportunity: ${opportunityContext.title}`
 			: `From opportunity notice: ${opportunityContext.opp}`;
@@ -3964,6 +3966,9 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		justify-content: space-between;
 		gap: 0.55rem;
 		flex-wrap: wrap;
+	}
+	.radar-opportunity-context.hidden {
+		display: none !important;
 	}
 	.radar-opportunity-context-label {
 		font-size: 0.58rem;
