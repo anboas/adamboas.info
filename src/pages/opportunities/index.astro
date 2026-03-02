@@ -692,6 +692,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">3P error rows</span><strong id="opp-kpi-third-party-errors">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Exact query matches</span><strong id="opp-kpi-exact">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Fallback query matches</span><strong id="opp-kpi-fallback">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Fresh 3P checks (≤3d)</span><strong id="opp-kpi-fresh">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
 		</div>
@@ -819,7 +823,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</label>
 				</div>
 				<span id="opp-chart-filter-status" class="opp-chart-filter-status" aria-live="polite"></span>
-				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence</span>
+				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence · t 3P signal</span>
 				<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
 			</div>
 		</div>
@@ -869,6 +873,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		</article>
 
 		<article class="card p-4 opp-viz-card">
+			<h2 class="opp-subtitle">Source freshness</h2>
+			<p class="opp-subcopy">Age of USAspending checks for matched opportunities.</p>
+			<div id="opp-viz-freshness" class="opp-chart"></div>
+		</article>
+
+		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Confidence profile</h2>
 			<p class="opp-subcopy">High confidence favors exact query matches + multi-source corroboration.</p>
 			<div id="opp-viz-confidence" class="opp-chart"></div>
@@ -890,6 +900,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<h2 class="opp-subtitle">Auto insights</h2>
 			<p class="opp-subcopy">Live takeaways from the current filtered slice.</p>
 			<ul id="opp-insights-list" class="opp-insights-list"></ul>
+		</article>
+
+		<article class="card p-4 opp-viz-card opp-viz-card-wide">
+			<h2 class="opp-subtitle">Snapshot delta (vs previous visit)</h2>
+			<p class="opp-subcopy">Trend deltas from the last saved dataset snapshot on this browser.</p>
+			<ul id="opp-delta-list" class="opp-insights-list"></ul>
 		</article>
 
 	</section>
@@ -1054,6 +1070,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				awards: document.getElementById('opp-kpi-awards'),
 				corroborated: document.getElementById('opp-kpi-corroborated'),
 				confidenceKpi: document.getElementById('opp-kpi-confidence'),
+				thirdPartyErrorsKpi: document.getElementById('opp-kpi-third-party-errors'),
+				exactKpi: document.getElementById('opp-kpi-exact'),
+				fallbackKpi: document.getElementById('opp-kpi-fallback'),
+				freshKpi: document.getElementById('opp-kpi-fresh'),
 				count: document.getElementById('opp-table-count'),
 				body: document.getElementById('opp-table-body'),
 				tableWrap: document.getElementById('opp-table-wrap'),
@@ -1072,10 +1092,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				workmix: document.getElementById('opp-viz-workmix'),
 				naics: document.getElementById('opp-viz-naics'),
 				sources: document.getElementById('opp-viz-sources'),
+				freshness: document.getElementById('opp-viz-freshness'),
 				confidenceViz: document.getElementById('opp-viz-confidence'),
 				scatter: document.getElementById('opp-viz-scatter'),
 				clientWork: document.getElementById('opp-viz-client-work'),
 				insights: document.getElementById('opp-insights-list'),
+				delta: document.getElementById('opp-delta-list'),
 				eventContext: document.getElementById('opp-event-context'),
 				eventContextText: document.getElementById('opp-event-context-text'),
 				eventContextBack: document.getElementById('opp-event-context-back'),
@@ -1112,6 +1134,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				workmix: null,
 				naics: null,
 				sources: null,
+				freshness: null,
 				confidence: null,
 				scatter: null,
 				clientWork: null,
@@ -1287,6 +1310,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const usaspendingQueryType = String(usaspendingSignal.query_type || usaspendingSignal.queryType || '').toLowerCase();
 				const usaspendingQueryConfidence = String(usaspendingSignal.query_confidence || usaspendingSignal.queryConfidence || row.usaspendingQueryConfidence || '').trim() || 'Low';
 				const usaspendingCheckedAt = String(usaspendingSignal.checked_at || usaspendingSignal.checkedAt || '').trim() || null;
+				const usaspendingCheckedEpoch = toDayEpoch(usaspendingCheckedAt);
+				const usaspendingAgeDays = usaspendingCheckedEpoch === null ? null : Math.max(0, Math.round((todayDay - usaspendingCheckedEpoch) / dayMs));
 				const usaspendingError = String(usaspendingSignal.error || '').trim();
 				let confidenceScore = 8;
 				if (awardSignalCount > 0) confidenceScore += 18;
@@ -1349,6 +1374,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					usaspendingQueryType,
 					usaspendingQueryConfidence,
 					usaspendingCheckedAt,
+					usaspendingCheckedEpoch,
+					usaspendingAgeDays,
 					usaspendingError,
 					intelDepthScore,
 					searchBlob: `${blob} ${workTypes.map((key) => workTypeLabel[key] || key).join(' ').toLowerCase()}`,
@@ -1386,6 +1413,37 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				pageSize: Number(el.pageSize?.value || 50),
 				mode: el.tableDensity?.value === 'full' ? 'full' : 'compact',
 			};
+
+			const snapshotStorageKey = 'adamboas.opportunities.dataset-snapshot.v1';
+			const safeNum = (value) => (Number.isFinite(Number(value)) ? Number(value) : 0);
+			const buildDatasetSnapshot = (items) => ({
+				total: items.length,
+				highConfidence: items.filter((row) => safeNum(row.confidenceScore) >= 70).length,
+				strongCorroboration: items.filter((row) => safeNum(row.corroborationScore) >= 70).length,
+				thirdPartyErrors: items.filter((row) => String(row.usaspendingError || '').trim()).length,
+				exactMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && safeNum(row.usaspendingMatchCount) > 0).length,
+				fallbackMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && safeNum(row.usaspendingMatchCount) > 0).length,
+				freshChecks: items.filter((row) => safeNum(row.usaspendingMatchCount) > 0 && safeNum(row.usaspendingAgeDays) <= 3).length,
+				ts: Date.now(),
+			});
+			const readSnapshot = () => {
+				try {
+					const raw = localStorage.getItem(snapshotStorageKey);
+					if (!raw) return null;
+					const parsed = JSON.parse(raw);
+					return parsed && typeof parsed === 'object' ? parsed : null;
+				} catch {
+					return null;
+				}
+			};
+			const writeSnapshot = (snapshot) => {
+				try {
+					localStorage.setItem(snapshotStorageKey, JSON.stringify(snapshot));
+				} catch {}
+			};
+			const datasetSnapshot = buildDatasetSnapshot(rows);
+			const previousDatasetSnapshot = readSnapshot();
+			writeSnapshot(datasetSnapshot);
 
 			const incomingParams = new URLSearchParams(window.location.search);
 			const incomingContext = {
@@ -1819,6 +1877,27 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 				}
 
+				const freshnessBuckets = [
+					['0-1d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) <= 1).length],
+					['2-3d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) >= 2 && Number(r.usaspendingAgeDays || 9999) <= 3).length],
+					['4-7d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) >= 4 && Number(r.usaspendingAgeDays || 9999) <= 7).length],
+					['8-14d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) >= 8 && Number(r.usaspendingAgeDays || 9999) <= 14).length],
+					['15d+', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) > 14).length],
+				];
+				const freshnessChart = initChart('freshness', el.freshness);
+				if (freshnessChart) {
+					freshnessChart.setOption({
+						animationDuration: 220,
+						grid: { top: 10, right: 10, bottom: 38, left: 28 },
+						xAxis: { type: 'category', data: freshnessBuckets.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9 } },
+						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						series: [{ type: 'bar', data: freshnessBuckets.map(([, value]) => value), itemStyle: { color: '#14b8a6', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 28 }],
+						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
+					});
+				} else {
+					renderBars(el.freshness, freshnessBuckets, 'No freshness data');
+				}
+
 				const confidenceBuckets = [
 					['High', items.filter((r) => Number(r.confidenceScore || 0) >= 70).length],
 					['Medium', items.filter((r) => Number(r.confidenceScore || 0) >= 45 && Number(r.confidenceScore || 0) < 70).length],
@@ -2023,6 +2102,32 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					`3P quality: ${exactMatches} exact matches · ${fallbackMatches} fallback matches · ${usErrors} upstream-error rows.`,
 				];
 				el.insights.innerHTML = lines.map((line) => `<li>${escapeHtml(line)}</li>`).join('');
+			};
+
+			const deltaSigned = (current, previous) => {
+				const delta = Number(current || 0) - Number(previous || 0);
+				if (delta > 0) return `+${delta}`;
+				if (delta < 0) return `${delta}`;
+				return '0';
+			};
+
+			const renderDatasetDelta = () => {
+				if (!el.delta) return;
+				if (!previousDatasetSnapshot || typeof previousDatasetSnapshot !== 'object') {
+					el.delta.innerHTML = '<li>No previous snapshot in this browser yet.</li>';
+					return;
+				}
+				const previousTime = Number(previousDatasetSnapshot.ts || 0);
+				const prevLabel = Number.isFinite(previousTime) && previousTime > 0
+					? new Date(previousTime).toLocaleString()
+					: 'unknown time';
+				const lines = [
+					`Compared to ${prevLabel}: total ${deltaSigned(datasetSnapshot.total, previousDatasetSnapshot.total)}.`,
+					`High-confidence ${deltaSigned(datasetSnapshot.highConfidence, previousDatasetSnapshot.highConfidence)} · Strong corroboration ${deltaSigned(datasetSnapshot.strongCorroboration, previousDatasetSnapshot.strongCorroboration)}.`,
+					`3P errors ${deltaSigned(datasetSnapshot.thirdPartyErrors, previousDatasetSnapshot.thirdPartyErrors)} · Fresh checks ${deltaSigned(datasetSnapshot.freshChecks, previousDatasetSnapshot.freshChecks)}.`,
+					`Exact query matches ${deltaSigned(datasetSnapshot.exactMatches, previousDatasetSnapshot.exactMatches)} · Fallback matches ${deltaSigned(datasetSnapshot.fallbackMatches, previousDatasetSnapshot.fallbackMatches)}.`,
+				];
+				el.delta.innerHTML = lines.map((line) => `<li>${escapeHtml(line)}</li>`).join('');
 			};
 
 			let modalLastFocus = null;
@@ -2443,6 +2548,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const awardCount = filtered.filter((row) => Number(row.awardSignalCount || 0) > 0).length;
 				const corroboratedCount = filtered.filter((row) => Number(row.corroborationScore || 0) >= 70).length;
 				const confidenceCount = filtered.filter((row) => Number(row.confidenceScore || 0) >= 70).length;
+				const thirdPartyErrorCount = filtered.filter((row) => String(row.usaspendingError || '').trim()).length;
+				const exactCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && Number(row.usaspendingMatchCount || 0) > 0).length;
+				const fallbackCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
+				const freshCount = filtered.filter((row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) <= 3).length;
 				const { rows: pagedRows, totalRows, totalPages } = getPagedRows(filtered);
 
 				if (el.total) el.total.textContent = String(rows.length);
@@ -2453,6 +2562,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.awards) el.awards.textContent = String(awardCount);
 				if (el.corroborated) el.corroborated.textContent = String(corroboratedCount);
 				if (el.confidenceKpi) el.confidenceKpi.textContent = String(confidenceCount);
+				if (el.thirdPartyErrorsKpi) el.thirdPartyErrorsKpi.textContent = String(thirdPartyErrorCount);
+				if (el.exactKpi) el.exactKpi.textContent = String(exactCount);
+				if (el.fallbackKpi) el.fallbackKpi.textContent = String(fallbackCount);
+				if (el.freshKpi) el.freshKpi.textContent = String(freshCount);
 				if (el.count) el.count.textContent = `${totalRows.toLocaleString()} row${totalRows === 1 ? '' : 's'}`;
 				if (el.pageLabel) el.pageLabel.textContent = `Page ${tableState.page} / ${totalPages}`;
 				if (el.pageFirst) el.pageFirst.disabled = tableState.page <= 1;
@@ -2475,6 +2588,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderGemList(filtered);
 				renderVisuals(filtered);
 				renderInsights(filtered);
+				renderDatasetDelta();
 				renderTable(pagedRows);
 			};
 
@@ -2598,6 +2712,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const current = el.confidenceFilter?.value || 'all';
 					const next = cycle[(cycle.indexOf(current) + 1 + cycle.length) % cycle.length];
 					if (el.confidenceFilter) el.confidenceFilter.value = next;
+					tableState.page = 1;
+					render();
+					return;
+				}
+				if (key === 't') {
+					event.preventDefault();
+					const cycle = ['all', 'ok', 'exact', 'fallback', 'error', 'none'];
+					const current = el.thirdParty?.value || 'all';
+					const next = cycle[(cycle.indexOf(current) + 1 + cycle.length) % cycle.length];
+					if (el.thirdParty) el.thirdParty.value = next;
 					tableState.page = 1;
 					render();
 				}
