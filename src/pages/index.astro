@@ -79,15 +79,15 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 	<a id="page-top" class="block" aria-hidden="true"></a>
 
 	<section class="card p-8">
-		<div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-			<div class="max-w-2xl">
+		<div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+			<div class="w-full max-w-none">
 				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">Adam Boas</h1>
 				<p class="mt-2 text-slate-400">Solutions Architect</p>
-				<p class="mt-4 text-lg text-slate-300">
+				<p class="mt-4 max-w-[95ch] text-lg leading-relaxed text-slate-300">
 					Warfighter lethality through trusted autonomy, control planes, and execution at tempo.
 				</p>
 			</div>
-			<div class="flex flex-wrap gap-3 md:hidden">
+			<div class="flex flex-wrap gap-3 md:max-w-sm md:justify-end">
 				<a
 					href="#writing"
 					class="rounded-none border border-slate-700 bg-slate-900/40 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900"
@@ -115,16 +115,16 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 			<h2 class="section-title">Featured Reading</h2>
 			<a href={`${import.meta.env.BASE_URL}writing/`} class="text-sm font-semibold text-stone-100 hover:text-stone-50">All writing →</a>
 		</div>
-		<div class="mt-4 grid gap-3 md:grid-cols-3">
+		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
 			{featuredReading.map((w) => (
 				<a class="card block min-w-0 overflow-hidden p-4 hover:border-slate-700" href={`${import.meta.env.BASE_URL}writing/${w.slug}/`}>
 					<div class="flex min-w-0 items-start gap-2">
 						<span class={`writing-type-pill writing-type-${w.type} shrink-0 rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}>
 							{w.type}
 						</span>
-						<h3 class="clamp-2 min-w-0 break-words text-sm font-semibold leading-snug text-slate-100">{w.title}</h3>
+						<h3 class="clamp-3 min-w-0 break-words text-sm font-semibold leading-snug text-slate-100">{w.title}</h3>
 					</div>
-					{w.description && <p class="clamp-2 mt-2 break-words text-sm text-slate-300">{w.description}</p>}
+					{w.description && <p class="clamp-3 mt-2 break-words text-sm text-slate-300">{w.description}</p>}
 				</a>
 			))}
 		</div>
@@ -133,7 +133,7 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 	<div class="mt-10 grid gap-6 md:grid-cols-2">
 		<section class="card p-6">
 			<h2 class="section-title">Operating Principles</h2>
-			<ul class="mt-3 space-y-2 text-sm text-slate-300">
+			<ul class="mt-3 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
 				<li><span class="text-slate-100">Mission assurance over novelty</span>: contested operations first, graceful degradation always</li>
 				<li><span class="text-slate-100">Governed autonomy by default</span>: trust scopes, policy gates, and operator override paths</li>
 				<li><span class="text-slate-100">Evidence before action</span>: signed traces, provenance, and auditable decisions</li>
@@ -144,8 +144,8 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 
 		<section class="card p-6">
 			<h2 class="section-title">Engagement</h2>
-			<p class="mt-3 text-sm text-slate-300">Consulting and hands-on support for high-tempo delivery.</p>
-			<ul class="mt-4 space-y-2 text-sm text-slate-300">
+			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">Consulting and hands-on support for high-tempo delivery.</p>
+			<ul class="mt-4 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
 				<li><span class="text-slate-100">Architecture &amp; modernization</span> (cloud platforms, control planes, migration plans)</li>
 				<li><span class="text-slate-100">Delivery systems</span> (paved roads, CI/CD, SLOs, observability, rollback)</li>
 				<li><span class="text-slate-100">Governed autonomy</span> (evals, trust scopes, policy + audit trails)</li>
@@ -176,9 +176,9 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 									<span class={`writing-type-pill writing-type-${w.type} rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}>
 										{w.type}
 									</span>
-									<h3 class="min-w-0 truncate text-base font-semibold text-slate-50">{w.title}</h3>
+									<h3 class="clamp-2 min-w-0 break-words text-base font-semibold leading-snug text-slate-50">{w.title}</h3>
 								</div>
-								{w.description && <p class="clamp-2 mt-2 break-words text-sm text-slate-300">{w.description}</p>}
+								{w.description && <p class="clamp-3 mt-2 break-words text-sm text-slate-300">{w.description}</p>}
 																{w.type === 'paper' && (w.tags?.length ?? 0) > 0 ? (
 																	<ul class="mt-3 flex flex-wrap gap-2">
 																		{(w.tags ?? []).slice(0, 2).map((t) => (
