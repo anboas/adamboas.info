@@ -1,0 +1,82 @@
+name: opportunities-usaspending-enrich
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_lookups:
+        description: "Max solicitation lookups"
+        required: false
+        default: "220"
+      force_refresh:
+        description: "Ignore cache TTL"
+        type: boolean
+        required: false
+        default: false
+  schedule:
+    # Daily 10:10 ET / 15:10 UTC (adjusts with DST as UTC)
+    - cron: "10 15 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: opportunities-usaspending-enrich
+  cancel-in-progress: true
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run USAspending corroboration enrichment
+        env:
+          MAX_LOOKUPS: ${{ github.event.inputs.max_lookups || '220' }}
+          FORCE_REFRESH: ${{ github.event.inputs.force_refresh || 'false' }}
+        run: |
+          set -euo pipefail
+          EXTRA_ARGS=""
+          if [ "${FORCE_REFRESH}" = "true" ]; then
+            EXTRA_ARGS="--force-refresh"
+          fi
+          python3 scripts/enrich-opportunities-from-usaspending.py \
+            --max-lookups "${MAX_LOOKUPS}" \
+            --sleep-ms 120 \
+            --limit 7 \
+            ${EXTRA_ARGS}
+
+      - name: Upload enrichment artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: opportunities-usaspending-enrichment
+          path: |
+            src/data/radar/events-candidates-sam-opportunities.json
+            src/data/radar/events-candidates-sam-opportunities-usaspending-signals.md
+
+      - name: Create/update pull request for enrichment refresh
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/opportunities-usaspending-enrich
+          delete-branch: true
+          commit-message: "chore(opportunities): refresh USAspending corroboration signals"
+          title: "chore(opportunities): refresh USAspending corroboration signals"
+          body: |
+            Automated refresh of opportunity corroboration signals from USAspending.
+
+            - Updates `usaspending_signal` and `cross_data_signal` fields
+            - Regenerates corroboration summary markdown
+            - Supports deterministic, repeatable intelligence overlays for `/opportunities`
+          labels: |
+            opportunities
+            automation
+            intelligence
+          add-paths: |
+            src/data/radar/events-candidates-sam-opportunities.json
+            src/data/radar/events-candidates-sam-opportunities-usaspending-signals.md
