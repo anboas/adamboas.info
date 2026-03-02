@@ -2386,10 +2386,23 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		if (state.topics?.size) params.set('topics', topicStateToValue(state.topics));
 		if (state.windowDays) params.set('window', String(state.windowDays));
 		if (currentPage > 1) params.set('page', String(currentPage));
-		if (opportunityContext?.from === 'opportunities') params.set('from', 'opportunities');
-		if (opportunityContext?.opp) params.set('opp', opportunityContext.opp);
-		if (opportunityContext?.title) params.set('opptitle', opportunityContext.title);
 		return params.toString();
+	}
+
+	function stripOpportunityContextParamsFromUrl() {
+		const params = new URLSearchParams(window.location.search);
+		let changed = false;
+		for (const key of ['from', 'opp', 'opptitle']) {
+			if (params.has(key)) {
+				params.delete(key);
+				changed = true;
+			}
+		}
+		if (!changed) return;
+		const query = params.toString();
+		const hash = window.location.hash || '';
+		const href = query ? `${window.location.pathname}?${query}${hash}` : `${window.location.pathname}${hash}`;
+		history.replaceState(null, '', href);
 	}
 
 	function hasActiveFilters(state) {
@@ -2412,6 +2425,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		const params = new URLSearchParams(window.location.search);
 		opportunityContext = readOpportunityContextFromUrl();
 		applyOpportunityContextBanner();
+		if (opportunityContext) stripOpportunityContextParamsFromUrl();
 		const state = {
 			q: params.get('q') || '',
 			branch: params.get('branch') || '',
@@ -2712,6 +2726,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 	});
 	controls.opportunityContextClear?.addEventListener('click', () => {
 		opportunityContext = null;
+		stripOpportunityContextParamsFromUrl();
 		applyOpportunityContextBanner();
 		render();
 	});
