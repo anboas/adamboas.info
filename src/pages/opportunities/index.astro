@@ -691,6 +691,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-kpi"><span class="opp-kpi-label">With attachments</span><strong id="opp-kpi-files">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
 		</div>
@@ -770,12 +771,22 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</select>
 				</label>
 				<label class="opp-field">
+					<span>Confidence</span>
+					<select id="opp-filter-confidence" class="opp-input">
+						<option value="all">All</option>
+						<option value="high">High (70+)</option>
+						<option value="medium">Medium (45-69)</option>
+						<option value="low">Low (&lt;45)</option>
+					</select>
+				</label>
+				<label class="opp-field">
 					<span>Sort</span>
 					<select id="opp-filter-sort" class="opp-input">
 						<option value="gem">Gem score</option>
 						<option value="intel">Intel depth</option>
 						<option value="awards">Award history</option>
 						<option value="corroboration">Cross-data corroboration</option>
+						<option value="confidence">Signal confidence</option>
 						<option value="client">Client org</option>
 						<option value="work">Work type</option>
 						<option value="due">Due soonest</option>
@@ -833,6 +844,30 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div id="opp-viz-naics" class="opp-chart"></div>
 		</article>
 
+		<article class="card p-4 opp-viz-card">
+			<h2 class="opp-subtitle">Confidence profile</h2>
+			<p class="opp-subcopy">High confidence favors exact query matches + multi-source corroboration.</p>
+			<div id="opp-viz-confidence" class="opp-chart"></div>
+		</article>
+
+		<article class="card p-4 opp-viz-card">
+			<h2 class="opp-subtitle">Corroboration vs gem</h2>
+			<p class="opp-subcopy">Top-right = high potential and high cross-data support.</p>
+			<div id="opp-viz-scatter" class="opp-chart"></div>
+		</article>
+
+		<article class="card p-4 opp-viz-card opp-viz-card-wide">
+			<h2 class="opp-subtitle">Client × work heatmap</h2>
+			<p class="opp-subcopy">Cross-demand hotspots by buyer family and work lane. Click cell to filter.</p>
+			<div id="opp-viz-client-work" class="opp-chart opp-matrix"></div>
+		</article>
+
+		<article class="card p-4 opp-viz-card opp-viz-card-wide">
+			<h2 class="opp-subtitle">Auto insights</h2>
+			<p class="opp-subcopy">Live takeaways from the current filtered slice.</p>
+			<ul id="opp-insights-list" class="opp-insights-list"></ul>
+		</article>
+
 	</section>
 
 	<section class="card control-shell mt-4 p-4">
@@ -841,14 +876,23 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<span id="opp-table-count" class="opp-subcopy">0 rows</span>
 		</div>
 		<div class="opp-table-controls">
-			<label class="opp-table-control">
-				<span>Rows</span>
-				<select id="opp-table-page-size" class="opp-input opp-input-sm">
-					<option value="25">25</option>
-					<option value="50" selected>50</option>
-					<option value="100">100</option>
-				</select>
-			</label>
+			<div class="opp-table-controls-left">
+				<label class="opp-table-control">
+					<span>Rows</span>
+					<select id="opp-table-page-size" class="opp-input opp-input-sm">
+						<option value="25">25</option>
+						<option value="50" selected>50</option>
+						<option value="100">100</option>
+					</select>
+				</label>
+				<label class="opp-table-control">
+					<span>View</span>
+					<select id="opp-table-density" class="opp-input opp-input-sm">
+						<option value="compact" selected>Compact</option>
+						<option value="full">Full</option>
+					</select>
+				</label>
+			</div>
 			<div class="opp-table-pager">
 				<button id="opp-table-first" class="opp-page-btn" type="button" aria-label="First page">«</button>
 				<button id="opp-table-prev" class="opp-page-btn" type="button" aria-label="Previous page">‹</button>
@@ -857,48 +901,52 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<button id="opp-table-last" class="opp-page-btn" type="button" aria-label="Last page">»</button>
 			</div>
 		</div>
-		<div class="opp-table-wrap">
+		<div id="opp-table-wrap" class="opp-table-wrap opp-table-mode-compact">
 			<table class="opp-table">
 				<colgroup>
-					<col class="opp-col-intel-view" />
-					<col class="opp-col-gem" />
-					<col class="opp-col-weight" />
-					<col class="opp-col-due" />
-					<col class="opp-col-days" />
-					<col class="opp-col-posted" />
-					<col class="opp-col-intel" />
-					<col class="opp-col-files" />
-					<col class="opp-col-awards" />
-					<col class="opp-col-corrob" />
-					<col class="opp-col-notice" />
-					<col class="opp-col-title" />
-					<col class="opp-col-sol" />
-					<col class="opp-col-client" />
-					<col class="opp-col-agency" />
-					<col class="opp-col-work" />
-					<col class="opp-col-naics" />
-					<col class="opp-col-events" />
+					<col class="opp-col-intel-view" data-col="view" />
+					<col class="opp-col-gem" data-col="gem" />
+					<col class="opp-col-weight" data-col="weight" />
+					<col class="opp-col-due" data-col="due" />
+					<col class="opp-col-timing" data-col="timing" />
+					<col class="opp-col-days" data-col="days" />
+					<col class="opp-col-posted" data-col="posted" />
+					<col class="opp-col-intel" data-col="intel" />
+					<col class="opp-col-files" data-col="files" />
+					<col class="opp-col-awards" data-col="awards" />
+					<col class="opp-col-corrob" data-col="corrob" />
+					<col class="opp-col-signals" data-col="signals" />
+					<col class="opp-col-notice" data-col="notice" />
+					<col class="opp-col-title" data-col="title" />
+					<col class="opp-col-sol" data-col="sol" />
+					<col class="opp-col-client" data-col="client" />
+					<col class="opp-col-agency" data-col="agency" />
+					<col class="opp-col-work" data-col="work" />
+					<col class="opp-col-naics" data-col="naics" />
+					<col class="opp-col-events" data-col="events" />
 				</colgroup>
 				<thead>
 					<tr>
-						<th>Intel view</th>
-						<th><button class="opp-sort-btn is-active" data-sort="gemScore" data-dir="desc" type="button">Gem</button></th>
-						<th><button class="opp-sort-btn" data-sort="weight" type="button">Weight</button></th>
-						<th><button class="opp-sort-btn" data-sort="dueDate" type="button">Due</button></th>
-						<th><button class="opp-sort-btn" data-sort="dueDays" type="button">Days</button></th>
-						<th><button class="opp-sort-btn" data-sort="postedDays" type="button">Days Since Release</button></th>
-						<th><button class="opp-sort-btn" data-sort="detailLen" type="button">Intel depth</button></th>
-						<th><button class="opp-sort-btn" data-sort="files" type="button">Files</button></th>
-						<th><button class="opp-sort-btn" data-sort="awardSignal" type="button">Awards</button></th>
-						<th><button class="opp-sort-btn" data-sort="crossData" type="button">Corroboration</button></th>
-						<th><button class="opp-sort-btn" data-sort="noticeType" type="button">Notice type</button></th>
-						<th><button class="opp-sort-btn" data-sort="title" type="button">Solicitation name</button></th>
-						<th><button class="opp-sort-btn" data-sort="solicitationNumber" type="button">Solicitation #</button></th>
-						<th><button class="opp-sort-btn" data-sort="client" type="button">Client</button></th>
-						<th><button class="opp-sort-btn" data-sort="agency" type="button">Agency</button></th>
-						<th><button class="opp-sort-btn" data-sort="workType" type="button">Work type</button></th>
-						<th><button class="opp-sort-btn" data-sort="naics" type="button">NAICS</button></th>
-						<th><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Mapped events</button></th>
+						<th data-col="view" title="Open intel modal">View</th>
+						<th data-col="gem"><button class="opp-sort-btn is-active" data-sort="gemScore" data-dir="desc" type="button" title="Gem score">Gem</button></th>
+						<th data-col="weight"><button class="opp-sort-btn" data-sort="weight" type="button" title="Source weight">W</button></th>
+						<th data-col="due"><button class="opp-sort-btn" data-sort="dueDate" type="button" title="Response due date">Due</button></th>
+						<th data-col="timing" title="Due + posting age">Time</th>
+						<th data-col="days"><button class="opp-sort-btn" data-sort="dueDays" type="button" title="Days until due">D</button></th>
+						<th data-col="posted"><button class="opp-sort-btn" data-sort="postedDays" type="button" title="Days since posted">Since</button></th>
+						<th data-col="intel"><button class="opp-sort-btn" data-sort="detailLen" type="button" title="Intel depth">I</button></th>
+						<th data-col="files"><button class="opp-sort-btn" data-sort="files" type="button" title="Attachment count">F</button></th>
+						<th data-col="awards"><button class="opp-sort-btn" data-sort="awardSignal" type="button" title="Award history count">A</button></th>
+						<th data-col="corrob"><button class="opp-sort-btn" data-sort="crossData" type="button" title="Cross-data corroboration">Cor</button></th>
+						<th data-col="signals" title="I/F/A/U/C/Cf combined">Signals</th>
+						<th data-col="notice"><button class="opp-sort-btn" data-sort="noticeType" type="button">Type</button></th>
+						<th data-col="title"><button class="opp-sort-btn" data-sort="title" type="button">Title</button></th>
+						<th data-col="sol"><button class="opp-sort-btn" data-sort="solicitationNumber" type="button">Sol #</button></th>
+						<th data-col="client"><button class="opp-sort-btn" data-sort="client" type="button">Client</button></th>
+						<th data-col="agency"><button class="opp-sort-btn" data-sort="agency" type="button">Agency</button></th>
+						<th data-col="work"><button class="opp-sort-btn" data-sort="workType" type="button">Work</button></th>
+						<th data-col="naics"><button class="opp-sort-btn" data-sort="naics" type="button">NAICS</button></th>
+						<th data-col="events"><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Events</button></th>
 					</tr>
 				</thead>
 				<tbody id="opp-table-body"></tbody>
@@ -923,6 +971,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<span><strong>Awards:</strong> <span id="opp-modal-awards">—</span></span>
 				<span><strong>USAspending:</strong> <span id="opp-modal-usaspending">—</span></span>
 				<span><strong>Corroboration:</strong> <span id="opp-modal-corroboration">—</span></span>
+				<span><strong>Confidence:</strong> <span id="opp-modal-confidence">—</span></span>
 			</div>
 			<div class="opp-modal-links">
 				<a id="opp-modal-link" href="#" target="_blank" rel="noreferrer" hidden>Open SAM notice ↗</a>
@@ -964,6 +1013,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				due: document.getElementById('opp-filter-due'),
 				weight: document.getElementById('opp-filter-weight'),
 				intel: document.getElementById('opp-filter-intel'),
+				confidenceFilter: document.getElementById('opp-filter-confidence'),
 				sort: document.getElementById('opp-filter-sort'),
 				focus: document.getElementById('opp-filter-focus'),
 				reset: document.getElementById('opp-filter-reset'),
@@ -975,9 +1025,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				files: document.getElementById('opp-kpi-files'),
 				awards: document.getElementById('opp-kpi-awards'),
 				corroborated: document.getElementById('opp-kpi-corroborated'),
+				confidenceKpi: document.getElementById('opp-kpi-confidence'),
 				count: document.getElementById('opp-table-count'),
 				body: document.getElementById('opp-table-body'),
+				tableWrap: document.getElementById('opp-table-wrap'),
 				pageSize: document.getElementById('opp-table-page-size'),
+				tableDensity: document.getElementById('opp-table-density'),
 				pageLabel: document.getElementById('opp-table-page'),
 				pageFirst: document.getElementById('opp-table-first'),
 				pagePrev: document.getElementById('opp-table-prev'),
@@ -990,6 +1043,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				agencies: document.getElementById('opp-viz-agencies'),
 				workmix: document.getElementById('opp-viz-workmix'),
 				naics: document.getElementById('opp-viz-naics'),
+				confidenceViz: document.getElementById('opp-viz-confidence'),
+				scatter: document.getElementById('opp-viz-scatter'),
+				clientWork: document.getElementById('opp-viz-client-work'),
+				insights: document.getElementById('opp-insights-list'),
 				eventContext: document.getElementById('opp-event-context'),
 				eventContextText: document.getElementById('opp-event-context-text'),
 				eventContextBack: document.getElementById('opp-event-context-back'),
@@ -1007,6 +1064,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalAwards: document.getElementById('opp-modal-awards'),
 				modalUsaspending: document.getElementById('opp-modal-usaspending'),
 				modalCorroboration: document.getElementById('opp-modal-corroboration'),
+				modalConfidence: document.getElementById('opp-modal-confidence'),
 				modalLink: document.getElementById('opp-modal-link'),
 				modalDetailLink: document.getElementById('opp-modal-detail-link'),
 				modalEventLink: document.getElementById('opp-modal-event-link'),
@@ -1023,6 +1081,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				agencies: null,
 				workmix: null,
 				naics: null,
+				confidence: null,
+				scatter: null,
+				clientWork: null,
 			};
 			const chartMode = typeof window.echarts === 'undefined' ? 'fallback' : 'echarts';
 
@@ -1192,6 +1253,22 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const crossDataSignal = row.crossDataSignal || {};
 				const corroborationScore = Number(crossDataSignal.score || 0);
 				const corroborationLevel = String(crossDataSignal.level || 'None');
+				const usaspendingQueryType = String(usaspendingSignal.query_type || usaspendingSignal.queryType || '').toLowerCase();
+				const usaspendingError = String(usaspendingSignal.error || '').trim();
+				let confidenceScore = 8;
+				if (awardSignalCount > 0) confidenceScore += 18;
+				if (usaspendingMatchCount > 0) confidenceScore += 24;
+				if (usaspendingQueryType.includes('solicitation')) confidenceScore += 16;
+				if (usaspendingQueryType.includes('fallback')) confidenceScore += 7;
+				if (corroborationScore >= 70) confidenceScore += 18;
+				else if (corroborationScore >= 45) confidenceScore += 12;
+				else if (corroborationScore >= 20) confidenceScore += 6;
+				if (detailTextLength > 0) confidenceScore += 4;
+				if (resourceCount > 0) confidenceScore += 4;
+				if (row.noticeId && row.solicitationNumber) confidenceScore += 5;
+				if (usaspendingError) confidenceScore -= 22;
+				confidenceScore = Math.max(0, Math.min(100, Math.round(confidenceScore)));
+				const confidenceLevel = confidenceScore >= 70 ? 'High' : (confidenceScore >= 45 ? 'Medium' : 'Low');
 				let intelDepthScore = 0;
 				if (detailTextLength > 0) intelDepthScore += Math.min(18, Math.max(2, Math.round(detailTextLength / 1400)));
 				if (resourceCount > 0) intelDepthScore += Math.min(10, resourceCount * 2);
@@ -1234,6 +1311,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					corroborationScore,
 					corroborationLevel,
 					crossDataSignal,
+					confidenceScore,
+					confidenceLevel,
+					usaspendingQueryType,
+					usaspendingError,
 					intelDepthScore,
 					searchBlob: `${blob} ${workTypes.map((key) => workTypeLabel[key] || key).join(' ').toLowerCase()}`,
 					focusMatches,
@@ -1255,6 +1336,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				due: 'all',
 				minWeight: 0,
 				intel: 'all',
+				confidence: 'all',
 				sort: 'gem',
 				focusOnly: false,
 				naicsFilter: '',
@@ -1265,6 +1347,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				sortDir: 'desc',
 				page: 1,
 				pageSize: Number(el.pageSize?.value || 50),
+				mode: el.tableDensity?.value === 'full' ? 'full' : 'compact',
 			};
 
 			const incomingParams = new URLSearchParams(window.location.search);
@@ -1327,8 +1410,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				state.due = el.due?.value || 'all';
 				state.minWeight = Number(el.weight?.value || 0);
 				state.intel = el.intel?.value || 'all';
+				state.confidence = el.confidenceFilter?.value || 'all';
 				state.sort = el.sort?.value || 'gem';
 				state.focusOnly = Boolean(el.focus?.checked);
+				tableState.mode = el.tableDensity?.value === 'full' ? 'full' : 'compact';
 			};
 
 			const inDueWindow = (row) => {
@@ -1349,12 +1434,22 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return true;
 			};
 
+			const confidenceFilterMatch = (row) => {
+				const score = Number(row.confidenceScore || 0);
+				if (state.confidence === 'all') return true;
+				if (state.confidence === 'high') return score >= 70;
+				if (state.confidence === 'medium') return score >= 45 && score < 70;
+				if (state.confidence === 'low') return score < 45;
+				return true;
+			};
+
 			const compareRows = (a, b) => {
 				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
 				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
 				if (state.sort === 'intel') return (b.intelDepthScore || 0) - (a.intelDepthScore || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'awards') return (b.awardSignalCount || 0) - (a.awardSignalCount || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'corroboration') return (b.corroborationScore || 0) - (a.corroborationScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'confidence') return (b.confidenceScore || 0) - (a.confidenceScore || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'client') return a.clientLabel.localeCompare(b.clientLabel) || b.gemScore - a.gemScore;
 				if (state.sort === 'work') return a.workTypeLabel.localeCompare(b.workTypeLabel) || b.gemScore - a.gemScore;
 				if (state.sort === 'posted') return (b.postedEpoch || 0) - (a.postedEpoch || 0) || b.gemScore - a.gemScore;
@@ -1376,6 +1471,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (state.naicsFilter && String(row.naicsCode || '') !== String(state.naicsFilter || '')) return false;
 					if (!inDueWindow(row)) return false;
 					if (!intelFilterMatch(row)) return false;
+					if (!confidenceFilterMatch(row)) return false;
 					if (Number(row.weight || 0) < state.minWeight) return false;
 					if (state.focusOnly && row.focusMatches < 1) return false;
 					return true;
@@ -1613,11 +1709,207 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						render();
 					});
 				}
+
+				const confidenceBuckets = [
+					['High', items.filter((r) => Number(r.confidenceScore || 0) >= 70).length],
+					['Medium', items.filter((r) => Number(r.confidenceScore || 0) >= 45 && Number(r.confidenceScore || 0) < 70).length],
+					['Low', items.filter((r) => Number(r.confidenceScore || 0) < 45).length],
+				];
+				const confidenceChart = initChart('confidence', el.confidenceViz);
+				if (confidenceChart) {
+					confidenceChart.setOption({
+						animationDuration: 220,
+						legend: { bottom: 2, textStyle: { color: '#94a3b8', fontSize: 10 } },
+						series: [{
+							type: 'pie',
+							radius: ['44%', '72%'],
+							center: ['50%', '44%'],
+							label: { color: '#cbd5e1', fontSize: 10, formatter: '{b}: {c}' },
+							data: confidenceBuckets.map(([name, value]) => ({ name, value })),
+							itemStyle: {
+								color: (params) => ({ High: '#22c55e', Medium: '#38bdf8', Low: '#94a3b8' }[params.name] || '#64748b'),
+							},
+						}],
+						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
+					});
+					if (!confidenceChart.__boundClick) {
+						confidenceChart.on('click', (params) => {
+							if (!params || Number(params.value || 0) <= 0) return;
+							const map = { High: 'high', Medium: 'medium', Low: 'low' };
+							if (el.confidenceFilter) el.confidenceFilter.value = map[params.name] || 'all';
+							tableState.page = 1;
+							render();
+						});
+						confidenceChart.__boundClick = true;
+					}
+				} else {
+					renderBars(el.confidenceViz, confidenceBuckets, 'No confidence data', (label, value) => {
+						if (Number(value || 0) <= 0) return;
+						if (el.confidenceFilter) el.confidenceFilter.value = ({ High: 'high', Medium: 'medium', Low: 'low' }[label] || 'all');
+						tableState.page = 1;
+						render();
+					});
+				}
+
+				const scatterRows = [...items]
+					.sort((a, b) => Number(b.gemScore || 0) - Number(a.gemScore || 0))
+					.slice(0, 180);
+				const scatterChart = initChart('scatter', el.scatter);
+				if (scatterChart) {
+					scatterChart.setOption({
+						animationDuration: 220,
+						grid: { top: 18, right: 14, bottom: 34, left: 42 },
+						xAxis: { type: 'value', name: 'Cor', nameTextStyle: { color: '#94a3b8' }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						yAxis: { type: 'value', name: 'Gem', nameTextStyle: { color: '#94a3b8' }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
+						series: [{
+							type: 'scatter',
+							symbolSize: (val) => Math.max(7, Math.min(18, Math.round(Number(val[2] || 0) / 8) + 6)),
+							data: scatterRows.map((row) => [
+								Number(row.corroborationScore || 0),
+								Number(row.gemScore || 0),
+								Number(row.confidenceScore || 0),
+								row.title,
+								row.noticeId || row.solicitationNumber || '',
+							]),
+							itemStyle: {
+								color: (params) => {
+									const c = Number((params.value || [])[2] || 0);
+									if (c >= 70) return '#22c55e';
+									if (c >= 45) return '#38bdf8';
+									return '#94a3b8';
+								},
+								opacity: 0.88,
+							},
+						}],
+						tooltip: {
+							trigger: 'item',
+							formatter: (p) => {
+								const val = p.value || [];
+								return `${escapeHtml(String(val[3] || 'Opportunity'))}<br/>Cor: ${Math.round(Number(val[0] || 0))} · Gem: ${Math.round(Number(val[1] || 0))} · Cf: ${Math.round(Number(val[2] || 0))}`;
+							},
+						},
+					});
+					if (!scatterChart.__boundClick) {
+						scatterChart.on('click', (params) => {
+							const notice = String((params?.value || [])[4] || '').trim();
+							if (!notice) return;
+							if (el.search) el.search.value = notice;
+							tableState.page = 1;
+							render();
+						});
+						scatterChart.__boundClick = true;
+					}
+				} else {
+					renderBars(el.scatter, scatterRows.slice(0, 10).map((row) => [
+						`${Math.round(row.corroborationScore || 0)}/${Math.round(row.gemScore || 0)} ${String(row.title || '').slice(0, 44)}`,
+						Number(row.confidenceScore || 0),
+					]), 'No scatter data');
+				}
+
+				const heatClients = countBy(items, (r) => r.clientLabel).slice(0, 8).map(([label]) => label);
+				const heatWork = countBy(items, (r) => r.primaryWorkType || 'general').slice(0, 6).map(([label]) => label);
+				const heatData = [];
+				for (let x = 0; x < heatWork.length; x += 1) {
+					for (let y = 0; y < heatClients.length; y += 1) {
+						const workKey = heatWork[x];
+						const clientKey = heatClients[y];
+						const value = items.filter((row) => row.primaryWorkType === workKey && row.clientLabel === clientKey).length;
+						heatData.push([x, y, value]);
+					}
+				}
+
+				const clientWorkChart = initChart('clientWork', el.clientWork);
+				if (clientWorkChart) {
+					clientWorkChart.setOption({
+						animationDuration: 220,
+						grid: { top: 18, right: 12, bottom: 64, left: 132 },
+						xAxis: { type: 'category', data: heatWork.map((key) => workTypeLabel[key] || key), axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 24 } },
+						yAxis: { type: 'category', data: heatClients, axisLabel: { color: '#cbd5e1', fontSize: 9, width: 124, overflow: 'truncate' } },
+						visualMap: {
+							min: 0,
+							max: Math.max(1, ...heatData.map((cell) => Number(cell[2] || 0))),
+							calculable: false,
+							show: false,
+							inRange: { color: ['#0f172a', '#1d4ed8', '#22c55e'] },
+						},
+						series: [{ type: 'heatmap', data: heatData, label: { show: true, fontSize: 9, color: '#e2e8f0' }, itemStyle: { borderColor: 'rgba(100,116,139,0.4)', borderWidth: 1 } }],
+						tooltip: { trigger: 'item', formatter: (p) => `${heatClients[p.value[1]] || 'Client'} · ${workTypeLabel[heatWork[p.value[0]]] || heatWork[p.value[0]]}: ${p.value[2]}` },
+					});
+					if (!clientWorkChart.__boundClick) {
+						clientWorkChart.on('click', (params) => {
+							if (!params || Number((params.value || [])[2] || 0) <= 0) return;
+							const workKey = heatWork[Number((params.value || [])[0] || 0)] || 'all';
+							const clientKey = heatClients[Number((params.value || [])[1] || 0)] || 'all';
+							if (el.work) el.work.value = state.work === workKey ? 'all' : workKey;
+							if (el.client) el.client.value = state.client === clientKey ? 'all' : clientKey;
+							tableState.page = 1;
+							render();
+						});
+						clientWorkChart.__boundClick = true;
+					}
+				} else if (el.clientWork) {
+					if (!heatClients.length || !heatWork.length) {
+						el.clientWork.innerHTML = '<p class="opp-subcopy">No matrix data for this filter.</p>';
+					} else {
+						const maxCell = Math.max(1, ...heatData.map((cell) => Number(cell[2] || 0)));
+						const rowHead = `<div class="opp-matrix-row opp-matrix-row-head" style="--opp-matrix-cols:${heatWork.length}"><span></span>${heatWork.map((key) => `<span class="opp-matrix-head">${escapeHtml(workTypeLabel[key] || key)}</span>`).join('')}</div>`;
+						const body = heatClients.map((client, y) => {
+							const cells = heatWork.map((_, x) => {
+								const value = heatData.find((cell) => cell[0] === x && cell[1] === y)?.[2] || 0;
+								const alpha = value <= 0 ? 0.08 : Math.max(0.16, Math.min(0.78, value / maxCell));
+								return `<button class="opp-matrix-cell" type="button" data-client="${escapeHtml(client)}" data-work="${escapeHtml(heatWork[x])}" style="background: rgba(34,197,94,${alpha});">${value || '·'}</button>`;
+							}).join('');
+							return `<div class="opp-matrix-row" style="--opp-matrix-cols:${heatWork.length}"><span class="opp-matrix-label" title="${escapeHtml(client)}">${escapeHtml(client)}</span>${cells}</div>`;
+						}).join('');
+						el.clientWork.innerHTML = `<div class="opp-matrix"><div class="opp-matrix-grid">${rowHead}${body}</div></div>`;
+						for (const btn of el.clientWork.querySelectorAll('.opp-matrix-cell')) {
+							btn.addEventListener('click', () => {
+								const nextClient = String(btn.getAttribute('data-client') || 'all');
+								const nextWork = String(btn.getAttribute('data-work') || 'all');
+								if (el.client) el.client.value = state.client === nextClient ? 'all' : nextClient;
+								if (el.work) el.work.value = state.work === nextWork ? 'all' : nextWork;
+								tableState.page = 1;
+								render();
+							});
+						}
+					}
+				}
 			};
 
 			const dueClass = (row) => {
 				if (row.dueDays === null) return '';
 				return row.dueDays < 0 ? 'opp-due-past' : 'opp-due-future';
+			};
+
+			const applyTableMode = () => {
+				if (!el.tableWrap) return;
+				el.tableWrap.classList.toggle('opp-table-mode-compact', tableState.mode === 'compact');
+				el.tableWrap.classList.toggle('opp-table-mode-full', tableState.mode === 'full');
+			};
+
+			const renderInsights = (items) => {
+				if (!el.insights) return;
+				if (!items.length) {
+					el.insights.innerHTML = '<li class="opp-subcopy">No rows under the current filter set.</li>';
+					return;
+				}
+				const avgGem = Math.round(items.reduce((sum, row) => sum + Number(row.gemScore || 0), 0) / items.length);
+				const avgCor = Math.round(items.reduce((sum, row) => sum + Number(row.corroborationScore || 0), 0) / items.length);
+				const highConf = items.filter((row) => Number(row.confidenceScore || 0) >= 70).length;
+				const byClient = countBy(items, (row) => row.clientLabel);
+				const topClient = byClient[0];
+				const soon = [...items]
+					.filter((row) => row.dueDays !== null && row.dueDays >= 0)
+					.sort((a, b) => Number(a.dueDays || 9999) - Number(b.dueDays || 9999))[0];
+				const strong = items.filter((row) => Number(row.corroborationScore || 0) >= 70).length;
+				const moderate = items.filter((row) => Number(row.corroborationScore || 0) >= 45 && Number(row.corroborationScore || 0) < 70).length;
+				const lines = [
+					`Slice average: Gem ${avgGem} · Corroboration ${avgCor} · High-confidence ${highConf}/${items.length}.`,
+					topClient ? `Top buyer family: ${topClient[0]} (${topClient[1]} opportunities).` : 'Top buyer family: no data.',
+					soon ? `Nearest due: ${soon.title} (${soon.dueDays}d, ${soon.noticeType || 'notice'}).` : 'No upcoming due dates in this slice.',
+					`Corroboration mix: ${strong} Strong · ${moderate} Moderate · ${Math.max(0, items.length - strong - moderate)} Weak/None.`,
+				];
+				el.insights.innerHTML = lines.map((line) => `<li>${escapeHtml(line)}</li>`).join('');
 			};
 
 			let modalLastFocus = null;
@@ -1655,6 +1947,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const level = String(row.corroborationLevel || 'None');
 					const score = Number(row.corroborationScore || 0);
 					el.modalCorroboration.textContent = `${level} (${Math.round(score)})`;
+				}
+				if (el.modalConfidence) {
+					const level = String(row.confidenceLevel || 'Low');
+					const score = Number(row.confidenceScore || 0);
+					el.modalConfidence.textContent = `${level} (${Math.round(score)})`;
 				}
 
 				if (el.modalLink) {
@@ -1916,21 +2213,30 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const renderTable = (items) => {
 				if (!el.body) return;
 				if (!items.length) {
-					el.body.innerHTML = '<tr><td colspan="18" class="opp-empty">No opportunities match your current filters.</td></tr>';
+					el.body.innerHTML = '<tr><td colspan="20" class="opp-empty">No opportunities match your current filters.</td></tr>';
 					return;
 				}
 
+				const metric = (value) => Number(value || 0) > 0 ? String(Math.round(Number(value || 0))) : '·';
 				el.body.innerHTML = items.map((row, idx) => {
-					const days = row.dueDays === null ? '—' : (row.dueDays < 0 ? '-' : String(row.dueDays));
+					const days = row.dueDays === null ? '—' : String(row.dueDays);
 					const daysSinceRelease = row.postedDays === null ? '—' : String(row.postedDays);
-					const intelDepth = row.intelDepthScore ? String(Math.round(row.intelDepthScore)) : '—';
-					const files = row.resourceCount ? String(row.resourceCount) : '—';
-					const awards = row.awardSignalCount ? String(row.awardSignalCount) : '—';
+					const intelDepth = metric(row.intelDepthScore);
+					const files = metric(row.resourceCount);
+					const awards = metric(row.awardSignalCount);
+					const usCount = metric(row.usaspendingMatchCount);
 					const corrobScore = Number(row.corroborationScore || 0);
 					const corrobLevel = String(row.corroborationLevel || 'None');
+					const confidence = Number(row.confidenceScore || 0);
+					const confidenceLevel = String(row.confidenceLevel || 'Low');
 					const corrobClass = corrobLevel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'none';
+					const confidenceClass = confidenceLevel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'low';
 					const corrob = `<span class="opp-corroboration-chip opp-corroboration-${escapeHtml(corrobClass)}" title="Cross-data score ${Math.round(corrobScore)}">${escapeHtml(corrobLevel)} · ${Math.round(corrobScore)}</span>`;
 					const due = fmtDate(row.responseDueDate);
+					const timingDue = row.dueDays === null ? 'D:—' : (row.dueDays < 0 ? `D:${row.dueDays}` : `D:+${row.dueDays}`);
+					const timingPosted = row.postedDays === null ? 'P:—' : `P:+${row.postedDays}`;
+					const timing = `<span class="opp-signal-stack"><span>${timingDue}</span><span>${timingPosted}</span></span>`;
+					const signals = `<span class="opp-signal-stack"><span>I${intelDepth} F${files} A${awards} U${usCount}</span><span>C${Math.round(corrobScore)} Cf${confidence}</span></span>`;
 					const title = row.uiLink
 						? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
 						: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
@@ -1946,24 +2252,26 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					}).join('')
 						+ (mappedRefs.length > 2 ? `<span class="opp-pill">+${mappedRefs.length - 2}</span>` : '');
 					return `<tr>
-						<td class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
-						<td class="opp-num"><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
-						<td class="opp-num">${row.weight}</td>
-						<td class="opp-date ${dueClass(row)}">${due}</td>
-						<td class="opp-num">${days}</td>
-						<td class="opp-num">${daysSinceRelease}</td>
-						<td class="opp-num">${intelDepth}</td>
-						<td class="opp-num">${files}</td>
-						<td class="opp-num">${awards}</td>
-						<td class="opp-num">${corrob}</td>
-						<td class="opp-cell-truncate">${escapeHtml(row.noticeType || '—')}</td>
-						<td class="opp-cell-title">${title}</td>
-						<td class="opp-cell-truncate">${escapeHtml(row.solicitationNumber || '—')}</td>
-						<td class="opp-cell-truncate" title="${escapeHtml(row.clientLabel || '')}">${escapeHtml(row.clientLabel || 'Unknown')}</td>
-						<td class="opp-cell-truncate" title="${escapeHtml(row.agencyPath || '')}">${escapeHtml(row.agencyLabel)}</td>
-						<td class="opp-cell-truncate" title="${escapeHtml((row.workTypes || []).map((key) => workTypeLabel[key] || key).join(', '))}">${escapeHtml(row.workTypeLabel || 'General/Other')}</td>
-						<td class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
-						<td><div class="opp-pill-wrap">${mapped || '—'}</div></td>
+						<td data-col="view" class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
+						<td data-col="gem" class="opp-num"><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
+						<td data-col="weight" class="opp-num">${row.weight}</td>
+						<td data-col="due" class="opp-date ${dueClass(row)}">${due}</td>
+						<td data-col="timing" class="opp-num">${timing}</td>
+						<td data-col="days" class="opp-num">${days}</td>
+						<td data-col="posted" class="opp-num">${daysSinceRelease}</td>
+						<td data-col="intel" class="opp-num">${intelDepth}</td>
+						<td data-col="files" class="opp-num">${files}</td>
+						<td data-col="awards" class="opp-num">${awards}</td>
+						<td data-col="corrob" class="opp-num">${corrob}</td>
+						<td data-col="signals" class="opp-num" title="Confidence ${confidenceLevel}"><span class="opp-confidence-chip opp-confidence-${escapeHtml(confidenceClass)}">${signals}</span></td>
+						<td data-col="notice" class="opp-cell-truncate">${escapeHtml(row.noticeType || '—')}</td>
+						<td data-col="title" class="opp-cell-title">${title}</td>
+						<td data-col="sol" class="opp-cell-truncate">${escapeHtml(row.solicitationNumber || '—')}</td>
+						<td data-col="client" class="opp-cell-truncate" title="${escapeHtml(row.clientLabel || '')}">${escapeHtml(row.clientLabel || 'Unknown')}</td>
+						<td data-col="agency" class="opp-cell-truncate" title="${escapeHtml(row.agencyPath || '')}">${escapeHtml(row.agencyLabel)}</td>
+						<td data-col="work" class="opp-cell-truncate" title="${escapeHtml((row.workTypes || []).map((key) => workTypeLabel[key] || key).join(', '))}">${escapeHtml(row.workTypeLabel || 'General/Other')}</td>
+						<td data-col="naics" class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
+						<td data-col="events"><div class="opp-pill-wrap">${mapped || '—'}</div></td>
 					</tr>`;
 				}).join('');
 
@@ -1984,6 +2292,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const fileCount = filtered.filter((row) => Number(row.resourceCount || 0) > 0).length;
 				const awardCount = filtered.filter((row) => Number(row.awardSignalCount || 0) > 0).length;
 				const corroboratedCount = filtered.filter((row) => Number(row.corroborationScore || 0) >= 70).length;
+				const confidenceCount = filtered.filter((row) => Number(row.confidenceScore || 0) >= 70).length;
 				const { rows: pagedRows, totalRows, totalPages } = getPagedRows(filtered);
 
 				if (el.total) el.total.textContent = String(rows.length);
@@ -1993,6 +2302,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.files) el.files.textContent = String(fileCount);
 				if (el.awards) el.awards.textContent = String(awardCount);
 				if (el.corroborated) el.corroborated.textContent = String(corroboratedCount);
+				if (el.confidenceKpi) el.confidenceKpi.textContent = String(confidenceCount);
 				if (el.count) el.count.textContent = `${totalRows.toLocaleString()} row${totalRows === 1 ? '' : 's'}`;
 				if (el.pageLabel) el.pageLabel.textContent = `Page ${tableState.page} / ${totalPages}`;
 				if (el.pageFirst) el.pageFirst.disabled = tableState.page <= 1;
@@ -2003,17 +2313,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const chips = [];
 					if (state.client !== 'all') chips.push(`Who: ${state.client}`);
 					if (state.work !== 'all') chips.push(`What: ${workTypeLabel[state.work] || state.work}`);
+					if (state.confidence !== 'all') chips.push(`Confidence: ${state.confidence}`);
 					if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
 					el.chartFilterStatus.textContent = chips.length ? chips.join(' · ') : '';
 				}
 
+				applyTableMode();
 				updateTableSortIndicators();
 				renderGemList(filtered);
 				renderVisuals(filtered);
+				renderInsights(filtered);
 				renderTable(pagedRows);
 			};
 
-			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.sort, el.focus].forEach((node) => node?.addEventListener('input', () => {
+			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.sort, el.focus].forEach((node) => node?.addEventListener('input', () => {
 				tableState.page = 1;
 				render();
 			}));
@@ -2021,6 +2334,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			el.pageSize?.addEventListener('change', () => {
 				tableState.pageSize = Number(el.pageSize?.value || 50);
 				tableState.page = 1;
+				render();
+			});
+			el.tableDensity?.addEventListener('change', () => {
+				tableState.mode = el.tableDensity?.value === 'full' ? 'full' : 'compact';
 				render();
 			});
 
@@ -2065,12 +2382,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.due) el.due.value = 'all';
 				if (el.weight) el.weight.value = '0';
 				if (el.intel) el.intel.value = 'all';
+				if (el.confidenceFilter) el.confidenceFilter.value = 'all';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
 				state.naicsFilter = '';
 				tableState.page = 1;
 				tableState.sortKey = 'gemScore';
 				tableState.sortDir = 'desc';
+				tableState.mode = 'compact';
+				if (el.tableDensity) el.tableDensity.value = 'compact';
 				render();
 			});
 
@@ -2300,6 +2620,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-size: 0.69rem;
 		color: rgba(148, 163, 184, 0.95);
 	}
+	.opp-insights-list {
+		margin-top: 0.52rem;
+		padding-left: 1.05rem;
+		display: grid;
+		gap: 0.36rem;
+		font-size: 0.7rem;
+		color: rgba(203, 213, 225, 0.97);
+	}
 	.opp-gem-list {
 		margin-top: 0.48rem;
 		display: grid;
@@ -2482,6 +2810,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		gap: 0.6rem;
 		flex-wrap: wrap;
 	}
+	.opp-table-controls-left {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		flex-wrap: wrap;
+	}
 	.opp-table-control {
 		display: inline-flex;
 		align-items: center;
@@ -2529,29 +2863,46 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-table {
 		width: 100%;
-		min-width: 137rem;
+		min-width: 128rem;
 		table-layout: fixed;
 		border-collapse: collapse;
 		font-size: 0.71rem;
 	}
-	.opp-col-gem { width: 3.6rem; }
-	.opp-col-weight { width: 4.4rem; }
-	.opp-col-due { width: 6.7rem; }
-	.opp-col-days { width: 4.2rem; }
-	.opp-col-posted { width: 7.1rem; }
-	.opp-col-intel { width: 5.4rem; }
-	.opp-col-files { width: 4rem; }
-	.opp-col-awards { width: 4.8rem; }
-	.opp-col-corrob { width: 7rem; }
-	.opp-col-notice { width: 9rem; }
-	.opp-col-title { width: 24rem; }
-	.opp-col-sol { width: 10.7rem; }
-	.opp-col-client { width: 11rem; }
-	.opp-col-agency { width: 13rem; }
-	.opp-col-work { width: 10rem; }
-	.opp-col-naics { width: 6rem; }
-	.opp-col-events { width: 11rem; }
-	.opp-col-intel-view { width: 6.2rem; }
+	.opp-table-wrap.opp-table-mode-compact .opp-table {
+		min-width: 96rem;
+	}
+	.opp-col-gem { width: 3.4rem; }
+	.opp-col-weight { width: 3.6rem; }
+	.opp-col-due { width: 6.1rem; }
+	.opp-col-timing { width: 6.2rem; }
+	.opp-col-days { width: 3.7rem; }
+	.opp-col-posted { width: 4.2rem; }
+	.opp-col-intel { width: 3.2rem; }
+	.opp-col-files { width: 3.2rem; }
+	.opp-col-awards { width: 3.4rem; }
+	.opp-col-corrob { width: 6.3rem; }
+	.opp-col-signals { width: 8.2rem; }
+	.opp-col-notice { width: 8rem; }
+	.opp-col-title { width: 20rem; }
+	.opp-col-sol { width: 9.2rem; }
+	.opp-col-client { width: 9.4rem; }
+	.opp-col-agency { width: 12rem; }
+	.opp-col-work { width: 8.6rem; }
+	.opp-col-naics { width: 4.8rem; }
+	.opp-col-events { width: 10rem; }
+	.opp-col-intel-view { width: 4.4rem; }
+	.opp-table-wrap.opp-table-mode-full [data-col='timing'],
+	.opp-table-wrap.opp-table-mode-full [data-col='signals'] {
+		display: none;
+	}
+	.opp-table-wrap.opp-table-mode-compact [data-col='weight'],
+	.opp-table-wrap.opp-table-mode-compact [data-col='days'],
+	.opp-table-wrap.opp-table-mode-compact [data-col='posted'],
+	.opp-table-wrap.opp-table-mode-compact [data-col='intel'],
+	.opp-table-wrap.opp-table-mode-compact [data-col='files'],
+	.opp-table-wrap.opp-table-mode-compact [data-col='awards'] {
+		display: none;
+	}
 	.opp-table th,
 	.opp-table td {
 		padding: 0.34rem 0.38rem;
@@ -2654,6 +3005,33 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		background: rgba(250, 204, 21, 0.12);
 		color: rgba(254, 240, 138, 0.98);
 		font-variant-numeric: tabular-nums;
+	}
+	.opp-signal-stack {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 0.04rem;
+		line-height: 1.08;
+		font-size: 0.58rem;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+		white-space: nowrap;
+	}
+	.opp-confidence-chip {
+		display: inline-flex;
+		padding: 0.04rem 0.24rem;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgba(15, 23, 42, 0.64);
+	}
+	.opp-confidence-high {
+		border-color: rgba(34, 197, 94, 0.66);
+		background: rgba(34, 197, 94, 0.13);
+	}
+	.opp-confidence-medium {
+		border-color: rgba(56, 189, 248, 0.66);
+		background: rgba(56, 189, 248, 0.12);
+	}
+	.opp-confidence-low {
+		border-color: rgba(148, 163, 184, 0.7);
+		background: rgba(71, 85, 105, 0.2);
 	}
 	.opp-corroboration-chip {
 		display: inline-flex;
@@ -2973,6 +3351,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		.opp-table-controls {
 			flex-direction: column;
 			align-items: flex-start;
+		}
+		.opp-table-controls-left {
+			width: 100%;
+			justify-content: space-between;
 		}
 		.opp-table-pager {
 			width: 100%;
