@@ -15,6 +15,7 @@ const POLICY = {
     'usace.army.mil',
     'calendar.google.com',
     'ausa.org',
+    'afa.org',
     'xponential.org',
     'hilton.com',
     'whova.com',
