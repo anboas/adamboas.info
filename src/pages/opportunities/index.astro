@@ -79,6 +79,30 @@ function signed(value: number) {
 	return String(Math.round(value));
 }
 
+function isGovernmentContact(contact: any) {
+	const org = String(contact?.organization ?? '').toLowerCase();
+	const role = String(contact?.role ?? '').toLowerCase();
+	const email = String(contact?.email ?? '').toLowerCase();
+	const blob = `${org} ${role} ${email}`;
+	if (email.endsWith('.gov') || email.endsWith('.mil')) return true;
+	return /(department|agency|command|office|district|federal|government|dod|defense|army|navy|air force|marine|usace|disa|uscybercom|cio)/.test(blob);
+}
+
+function eventEngagementContacts(event: (typeof radarEventsSeed)[number] | undefined | null) {
+	const raw = (event as any)?.ontology?.engagement?.contacts;
+	if (!Array.isArray(raw)) return [];
+	return raw
+		.map((contact) => ({
+			name: String(contact?.name ?? '').trim() || null,
+			role: String(contact?.role ?? '').trim() || null,
+			organization: String(contact?.organization ?? '').trim() || null,
+			email: String(contact?.email ?? '').trim() || null,
+			phone: String(contact?.phone ?? '').trim() || null,
+			isGovernment: isGovernmentContact(contact),
+		}))
+		.filter((contact) => contact.name || contact.email || contact.phone || contact.organization);
+}
+
 function loadMirrorResourceIndex() {
 	const index = new Map<string, ResourceAsset>();
 	const root = path.resolve('src/data/radar/mirror/sam-opportunities/resources/files');
@@ -630,6 +654,8 @@ const opportunities = [...opportunityMap.values()]
 				const location = event?.location
 					? [event.location.venue, event.location.city, event.location.state].filter(Boolean).join(' · ')
 					: null;
+				const contacts = eventEngagementContacts(event);
+				const governmentContacts = contacts.filter((contact) => contact.isGovernment);
 				return {
 					id,
 					title: event?.title ?? id,
@@ -642,9 +668,35 @@ const opportunities = [...opportunityMap.values()]
 					description: event?.description ?? null,
 					officialLink: event?.ontology?.links?.official ?? event?.ontology?.links?.registration ?? null,
 					location,
+					contacts,
+					contactCount: contacts.length,
+					governmentContacts,
+					governmentContactCount: governmentContacts.length,
 				};
 			})
 			.sort((a, b) => a.title.localeCompare(b.title)),
+		governmentPocRefs: [...row.eventIds].flatMap((id) => {
+			const event = eventById.get(id);
+			if (!event) return [];
+			const governmentContacts = eventEngagementContacts(event).filter((contact) => contact.isGovernment);
+			return governmentContacts.map((contact) => ({
+				eventId: id,
+				eventTitle: event.title,
+				eventHref: withBase(`/events/#${encodeURIComponent(id)}`),
+				...contact,
+			}));
+		}),
+		governmentPocCount: new Set(
+			[...row.eventIds]
+				.flatMap((id) => {
+					const event = eventById.get(id);
+					if (!event) return [];
+					return eventEngagementContacts(event)
+						.filter((contact) => contact.isGovernment)
+						.map((contact) => String(contact.email ?? contact.name ?? `${id}:${contact.role ?? ''}`).toLowerCase());
+				})
+				.filter(Boolean)
+		).size,
 		branches: toArray(row.branches),
 		capabilityAreas: toArray(row.capabilityAreas),
 		missionThreads: toArray(row.missionThreads),
@@ -705,6 +757,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Pursue now</span><strong id="opp-kpi-pursue">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">Rows with gov POCs</span><strong id="opp-kpi-govpoc">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">3P error rows</span><strong id="opp-kpi-third-party-errors">0</strong></div>
@@ -820,9 +874,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</select>
 				</label>
 				<label class="opp-field">
+					<span>Decision</span>
+					<select id="opp-filter-decision" class="opp-input">
+						<option value="all">All</option>
+						<option value="pursue">Pursue now</option>
+						<option value="watch">Watch / qualify</option>
+						<option value="skip">Skip for now</option>
+					</select>
+				</label>
+				<label class="opp-field">
 					<span>Sort</span>
 					<select id="opp-filter-sort" class="opp-input">
 						<option value="gem">Gem score</option>
+						<option value="response">Response worthiness</option>
+						<option value="event">Event leverage</option>
 						<option value="intel">Intel depth</option>
 						<option value="awards">Award history</option>
 						<option value="corroboration">Cross-data corroboration</option>
@@ -848,7 +913,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</label>
 				</div>
 				<span id="opp-chart-filter-status" class="opp-chart-filter-status" aria-live="polite"></span>
-				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence · t 3P signal · p FPDS</span>
+				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence · t 3P signal · p FPDS · v decision</span>
 				<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
 			</div>
 		</div>
@@ -893,7 +958,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Source coverage</h2>
-			<p class="opp-subcopy">Tracks deep intel, attachments, SAM awards, USA matches, and upstream errors.</p>
+			<p class="opp-subcopy">Tracks deep intel, attachments, SAM awards, USA matches, published gov POCs, and upstream errors.</p>
 			<div id="opp-viz-sources" class="opp-chart"></div>
 		</article>
 
@@ -1053,6 +1118,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<ul id="opp-modal-files" class="opp-modal-files"></ul>
 					<p class="opp-modal-section-title mt-3">Mapped events</p>
 					<ul id="opp-modal-events" class="opp-modal-events"></ul>
+					<p class="opp-modal-section-title mt-3">Government POCs</p>
+					<ul id="opp-modal-gov-pocs" class="opp-modal-events"></ul>
 					<p class="opp-modal-section-title mt-3">Event drilldown</p>
 					<div id="opp-modal-event-detail" class="opp-modal-event-detail">Select a mapped event to inspect the event context without leaving this view.</div>
 					<p class="opp-modal-section-title mt-3">USAspending corroboration</p>
@@ -1083,6 +1150,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				confidenceFilter: document.getElementById('opp-filter-confidence'),
 				thirdParty: document.getElementById('opp-filter-third-party'),
 				fpds: document.getElementById('opp-filter-fpds'),
+				decision: document.getElementById('opp-filter-decision'),
 				sort: document.getElementById('opp-filter-sort'),
 				focus: document.getElementById('opp-filter-focus'),
 				fastMode: document.getElementById('opp-filter-fast'),
@@ -1096,6 +1164,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				awards: document.getElementById('opp-kpi-awards'),
 				corroborated: document.getElementById('opp-kpi-corroborated'),
 				confidenceKpi: document.getElementById('opp-kpi-confidence'),
+				pursueKpi: document.getElementById('opp-kpi-pursue'),
+				govPocKpi: document.getElementById('opp-kpi-govpoc'),
 				thirdPartyErrorsKpi: document.getElementById('opp-kpi-third-party-errors'),
 				exactKpi: document.getElementById('opp-kpi-exact'),
 				fallbackKpi: document.getElementById('opp-kpi-fallback'),
@@ -1149,6 +1219,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalDetail: document.getElementById('opp-modal-detail'),
 				modalFiles: document.getElementById('opp-modal-files'),
 				modalEvents: document.getElementById('opp-modal-events'),
+				modalGovPocs: document.getElementById('opp-modal-gov-pocs'),
 				modalEventDetail: document.getElementById('opp-modal-event-detail'),
 				modalUsaspendingList: document.getElementById('opp-modal-usaspending-list'),
 				modalProvenance: document.getElementById('opp-modal-provenance'),
@@ -1344,6 +1415,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const usaspendingCheckedEpoch = toDayEpoch(usaspendingCheckedAt);
 				const usaspendingAgeDays = usaspendingCheckedEpoch === null ? null : Math.max(0, Math.round((todayDay - usaspendingCheckedEpoch) / dayMs));
 				const usaspendingError = String(usaspendingSignal.error || '').trim();
+				const governmentPocRefs = Array.isArray(row.governmentPocRefs) ? row.governmentPocRefs : [];
+				const governmentPocCount = Number(row.governmentPocCount || governmentPocRefs.length || 0);
+				const eventCount = Number(row.eventCount || (Array.isArray(row.eventRefs) ? row.eventRefs.length : 0) || 0);
 				let confidenceScore = 8;
 				if (awardSignalCount > 0) confidenceScore += 18;
 				if (usaspendingMatchCount > 0) confidenceScore += 24;
@@ -1396,6 +1470,41 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (usaspendingAmount >= 5_000_000) gemScore += 2;
 				if (row.uiLink) gemScore += 2;
 
+				const freshnessSignal = usaspendingMatchCount <= 0
+					? 35
+					: (usaspendingAgeDays === null ? 55 : usaspendingAgeDays <= 3 ? 100 : usaspendingAgeDays <= 7 ? 75 : usaspendingAgeDays <= 14 ? 50 : 25);
+				let eventLeverageScore = 0;
+				eventLeverageScore += Math.min(34, eventCount * 10);
+				eventLeverageScore += Math.min(36, governmentPocCount * 12);
+				if (eventCount > 0 && dueDays !== null && dueDays >= 0 && dueDays <= 60) eventLeverageScore += 16;
+				if (eventCount > 0 && dueDays !== null && dueDays < 0) eventLeverageScore -= 16;
+				eventLeverageScore = Math.max(0, Math.min(100, Math.round(eventLeverageScore)));
+				const eventPriority = eventLeverageScore >= 70 ? 'Attend' : (eventLeverageScore >= 45 ? 'Selective' : (eventLeverageScore > 0 ? 'Monitor' : 'None'));
+
+				let responseWorthinessScore = Math.round(
+					(Math.min(100, gemScore * 2) * 0.32)
+					+ (confidenceScore * 0.28)
+					+ (Math.min(100, Math.round(corroborationScore * 1.25)) * 0.2)
+					+ (Math.min(100, fpdsAlignmentScore) * 0.12)
+					+ (freshnessSignal * 0.08)
+				);
+				if (dueDays !== null && dueDays < 0) responseWorthinessScore -= 30;
+				if (usaspendingError) responseWorthinessScore -= 8;
+				if (eventLeverageScore >= 70) responseWorthinessScore += 5;
+				responseWorthinessScore = Math.max(0, Math.min(100, Math.round(responseWorthinessScore)));
+				const responseDecision = responseWorthinessScore >= 70
+					? 'Pursue now'
+					: (responseWorthinessScore >= 45 ? 'Watch / qualify' : 'Skip for now');
+				const decisionClass = responseWorthinessScore >= 70 ? 'pursue' : (responseWorthinessScore >= 45 ? 'watch' : 'skip');
+				const decisionReasons = [];
+				if (confidenceScore >= 70) decisionReasons.push('High confidence corroboration');
+				if (fpdsAlignmentScore >= 45) decisionReasons.push('Identifier continuity present');
+				if (governmentPocCount > 0) decisionReasons.push(`${governmentPocCount} government POC${governmentPocCount === 1 ? '' : 's'} published`);
+				if (dueDays !== null && dueDays >= 0 && dueDays <= 30) decisionReasons.push('Near-term response window');
+				if (usaspendingError) decisionReasons.push('3P signal fetch error');
+				if (usaspendingAgeDays !== null && usaspendingAgeDays > 14) decisionReasons.push('3P corroboration is stale');
+				if (!decisionReasons.length) decisionReasons.push('Limited corroboration right now');
+
 				return {
 					...row,
 					dueDays,
@@ -1424,6 +1533,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					usaspendingAgeDays,
 					usaspendingError,
 					intelDepthScore,
+					governmentPocRefs,
+					governmentPocCount,
+					eventCount,
+					eventLeverageScore,
+					eventPriority,
+					responseWorthinessScore,
+					responseDecision,
+					decisionClass,
+					decisionReasons,
 					searchBlob: `${blob} ${workTypes.map((key) => workTypeLabel[key] || key).join(' ').toLowerCase()}`,
 					focusMatches,
 					gemScore,
@@ -1447,6 +1565,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				confidence: 'all',
 				thirdParty: 'all',
 				fpds: 'all',
+				decision: 'all',
 				sort: 'gem',
 				focusOnly: false,
 				fastMode: false,
@@ -1468,6 +1587,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				highConfidence: items.filter((row) => safeNum(row.confidenceScore) >= 70).length,
 				strongCorroboration: items.filter((row) => safeNum(row.corroborationScore) >= 70).length,
 				fpdsMedium: items.filter((row) => safeNum(row.fpdsAlignmentScore) >= 45).length,
+				pursueNow: items.filter((row) => String(row.decisionClass || '') === 'pursue').length,
+				govPocRows: items.filter((row) => safeNum(row.governmentPocCount) > 0).length,
 				thirdPartyErrors: items.filter((row) => String(row.usaspendingError || '').trim()).length,
 				exactMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && safeNum(row.usaspendingMatchCount) > 0).length,
 				fallbackMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && safeNum(row.usaspendingMatchCount) > 0).length,
@@ -1557,6 +1678,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				state.confidence = el.confidenceFilter?.value || 'all';
 				state.thirdParty = el.thirdParty?.value || 'all';
 				state.fpds = el.fpds?.value || 'all';
+				state.decision = el.decision?.value || 'all';
 				state.sort = el.sort?.value || 'gem';
 				state.focusOnly = Boolean(el.focus?.checked);
 				state.fastMode = Boolean(el.fastMode?.checked);
@@ -1614,9 +1736,21 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return true;
 			};
 
+			const decisionFilterMatch = (row) => {
+				const mode = String(state.decision || 'all');
+				if (mode === 'all') return true;
+				const cls = String(row.decisionClass || '');
+				if (mode === 'pursue') return cls === 'pursue';
+				if (mode === 'watch') return cls === 'watch';
+				if (mode === 'skip') return cls === 'skip';
+				return true;
+			};
+
 			const compareRows = (a, b) => {
 				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
 				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
+				if (state.sort === 'response') return (b.responseWorthinessScore || 0) - (a.responseWorthinessScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'event') return (b.eventLeverageScore || 0) - (a.eventLeverageScore || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'intel') return (b.intelDepthScore || 0) - (a.intelDepthScore || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'awards') return (b.awardSignalCount || 0) - (a.awardSignalCount || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'corroboration') return (b.corroborationScore || 0) - (a.corroborationScore || 0) || b.gemScore - a.gemScore;
@@ -1645,6 +1779,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (!confidenceFilterMatch(row)) return false;
 					if (!thirdPartyFilterMatch(row)) return false;
 					if (!fpdsFilterMatch(row)) return false;
+					if (!decisionFilterMatch(row)) return false;
 					if (Number(row.weight || 0) < state.minWeight) return false;
 					if (state.focusOnly && row.focusMatches < 1) return false;
 					if (state.fastMode) {
@@ -1894,6 +2029,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					['SAM awards', items.filter((r) => Number(r.awardSignalCount || 0) > 0).length],
 					['USA matches', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0).length],
 					['FPDS Med+', items.filter((r) => Number(r.fpdsAlignmentScore || 0) >= 45).length],
+					['Gov POC rows', items.filter((r) => Number(r.governmentPocCount || 0) > 0).length],
 					['3P errors', items.filter((r) => String(r.usaspendingError || '').trim()).length],
 					['Exact query', items.filter((r) => String(r.usaspendingQueryType || '').includes('solicitation') && Number(r.usaspendingMatchCount || 0) > 0).length],
 					['Fallback query', items.filter((r) => String(r.usaspendingQueryType || '').includes('fallback') && Number(r.usaspendingMatchCount || 0) > 0).length],
@@ -1919,6 +2055,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							};
 							if (params.name === 'FPDS Med+' && el.fpds) {
 								el.fpds.value = 'medium';
+							} else if (params.name === 'Gov POC rows' && el.decision) {
+								el.decision.value = 'pursue';
 							} else {
 								const next = map[params.name];
 								if (next && el.thirdParty) el.thirdParty.value = next;
@@ -1939,6 +2077,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						};
 						if (label === 'FPDS Med+' && el.fpds) {
 							el.fpds.value = 'medium';
+						} else if (label === 'Gov POC rows' && el.decision) {
+							el.decision.value = 'pursue';
 						} else if (map[label] && el.thirdParty) {
 							el.thirdParty.value = map[label];
 						}
@@ -2166,11 +2306,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const fallbackMatches = items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
 				const staleChecks = items.filter((row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) > 14).length;
 				const fpdsMed = items.filter((row) => Number(row.fpdsAlignmentScore || 0) >= 45).length;
+				const pursueNow = items.filter((row) => String(row.decisionClass || '') === 'pursue').length;
+				const withGovPoc = items.filter((row) => Number(row.governmentPocCount || 0) > 0).length;
 				const lines = [
 					`Slice average: Gem ${avgGem} · Corroboration ${avgCor} · High-confidence ${highConf}/${items.length}.`,
 					topClient ? `Top buyer family: ${topClient[0]} (${topClient[1]} opportunities).` : 'Top buyer family: no data.',
 					soon ? `Nearest due: ${soon.title} (${soon.dueDays}d, ${soon.noticeType || 'notice'}).` : 'No upcoming due dates in this slice.',
 					`Corroboration mix: ${strong} Strong · ${moderate} Moderate · ${Math.max(0, items.length - strong - moderate)} Weak/None.`,
+					`Decision support: ${pursueNow} pursue-now candidates · ${withGovPoc} rows with published government POCs.`,
 					`3P quality: ${exactMatches} exact matches · ${fallbackMatches} fallback matches · ${usErrors} upstream-error rows · ${staleChecks} stale checks (>14d).`,
 					`FPDS continuity: ${fpdsMed} rows at Medium+ alignment.`,
 				];
@@ -2197,6 +2340,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const lines = [
 					`Compared to ${prevLabel}: total ${deltaSigned(datasetSnapshot.total, previousDatasetSnapshot.total)}.`,
 					`High-confidence ${deltaSigned(datasetSnapshot.highConfidence, previousDatasetSnapshot.highConfidence)} · Strong corroboration ${deltaSigned(datasetSnapshot.strongCorroboration, previousDatasetSnapshot.strongCorroboration)}.`,
+					`Pursue-now ${deltaSigned(datasetSnapshot.pursueNow, previousDatasetSnapshot.pursueNow)} · Rows with gov POCs ${deltaSigned(datasetSnapshot.govPocRows, previousDatasetSnapshot.govPocRows)}.`,
 					`FPDS Medium+ ${deltaSigned(datasetSnapshot.fpdsMedium, previousDatasetSnapshot.fpdsMedium)} · 3P errors ${deltaSigned(datasetSnapshot.thirdPartyErrors, previousDatasetSnapshot.thirdPartyErrors)}.`,
 					`Fresh checks ${deltaSigned(datasetSnapshot.freshChecks, previousDatasetSnapshot.freshChecks)} · Stale checks ${deltaSigned(datasetSnapshot.staleChecks, previousDatasetSnapshot.staleChecks)}.`,
 					`Exact query matches ${deltaSigned(datasetSnapshot.exactMatches, previousDatasetSnapshot.exactMatches)} · Fallback matches ${deltaSigned(datasetSnapshot.fallbackMatches, previousDatasetSnapshot.fallbackMatches)}.`,
@@ -2370,13 +2514,24 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						label: 'FPDS-aligned continuity',
 						meta: `${row.fpdsAlignmentLevel || 'None'} (${Math.round(Number(row.fpdsAlignmentScore || 0))})${row.fpdsCanonicalPiid ? ` · ${row.fpdsCanonicalPiid}` : ''}`,
 					});
+					entries.push({
+						label: 'Response recommendation',
+						meta: `${row.responseDecision || 'Unrated'} (${Math.round(Number(row.responseWorthinessScore || 0))})`,
+					});
+					entries.push({
+						label: 'Event leverage',
+						meta: `${row.eventPriority || 'None'} (${Math.round(Number(row.eventLeverageScore || 0))}) · ${Math.round(Number(row.governmentPocCount || 0))} gov POCs`,
+					});
 					el.modalProvenance.innerHTML = entries
 						.map((entry) => `<li><span class="opp-file-name">${escapeHtml(entry.label)}</span><span class="opp-file-host">${escapeHtml(entry.meta)}</span></li>`)
 						.join('');
 				}
 
-				if (el.modalEvents || el.modalEventDetail) {
+				if (el.modalEvents || el.modalGovPocs || el.modalEventDetail) {
 					const refs = Array.isArray(row.eventRefs) ? row.eventRefs.filter((ref) => ref && ref.id) : [];
+					const govPocs = Array.isArray(row.governmentPocRefs)
+						? row.governmentPocRefs.filter((entry) => entry && (entry.name || entry.email || entry.phone))
+						: refs.flatMap((ref) => (Array.isArray(ref.governmentContacts) ? ref.governmentContacts.map((contact) => ({ ...contact, eventTitle: ref.title, eventHref: ref.href })) : []));
 
 					const renderEventDetail = (ref) => {
 						if (!el.modalEventDetail) return;
@@ -2391,6 +2546,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						const when = start === '—' ? '—' : (end !== '—' && end !== start ? `${start} → ${end}` : start);
 						const description = String(ref.description || '').trim();
 						const shortDesc = description.length > 280 ? `${description.slice(0, 277)}...` : description;
+						const govPocCount = Number(ref.governmentContactCount || 0);
 						const meta = [ref.branch, ref.type, ref.status].filter(Boolean).join(' · ');
 						el.modalEventDetail.innerHTML = `
 							<div class="opp-event-detail-head">
@@ -2400,9 +2556,36 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							${meta ? `<p class="opp-file-host">${escapeHtml(meta)}</p>` : ''}
 							${when !== '—' ? `<p class="opp-file-host">When: ${escapeHtml(when)}</p>` : ''}
 							${ref.location ? `<p class="opp-file-host">Where: ${escapeHtml(ref.location)}</p>` : ''}
+							${govPocCount > 0 ? `<p class="opp-file-host">Published government POCs: ${govPocCount}</p>` : ''}
 							${shortDesc ? `<p>${escapeHtml(shortDesc)}</p>` : ''}
 						`;
 					};
+
+					if (el.modalGovPocs) {
+						if (!govPocs.length) {
+							el.modalGovPocs.innerHTML = '<li class="opp-subcopy">No published government POCs found for mapped events in this slice yet.</li>';
+						} else {
+							const unique = [];
+							const seen = new Set();
+							for (const entry of govPocs) {
+								const key = String(entry.email || entry.name || `${entry.eventTitle || ''}:${entry.role || ''}`).toLowerCase();
+								if (!key || seen.has(key)) continue;
+								seen.add(key);
+								unique.push(entry);
+								if (unique.length >= 12) break;
+							}
+							el.modalGovPocs.innerHTML = unique.map((entry) => {
+								const eventHref = contextualEventHref(String(entry.eventHref || `/events/#${encodeURIComponent(String(entry.eventId || ''))}`), row);
+								const name = String(entry.name || 'Unnamed contact');
+								const role = String(entry.role || '').trim();
+								const org = String(entry.organization || '').trim();
+								const mail = String(entry.email || '').trim();
+								const phone = String(entry.phone || '').trim();
+								const meta = [role, org, mail, phone].filter(Boolean).join(' · ');
+								return `<li><span class="opp-file-name">${escapeHtml(name)}</span>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}<div class="opp-file-links"><a href="${escapeHtml(eventHref)}">${escapeHtml(String(entry.eventTitle || 'Event'))} ↗</a></div></li>`;
+							}).join('');
+						}
+					}
 
 					if (!refs.length) {
 						if (el.modalEvents) el.modalEvents.innerHTML = '<li class="opp-subcopy">No mapped events for this opportunity yet.</li>';
@@ -2412,7 +2595,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							el.modalEvents.innerHTML = refs.slice(0, 8).map((ref, idx) => {
 								const href = contextualEventHref(String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`), row);
 								const start = fmtDate(ref.startDate || null);
-								const meta = [ref.branch, ref.status, start !== '—' ? start : ''].filter(Boolean).join(' · ');
+								const govPocMeta = Number(ref.governmentContactCount || 0) > 0 ? `${Number(ref.governmentContactCount || 0)} gov POCs` : '';
+								const meta = [ref.branch, ref.status, start !== '—' ? start : '', govPocMeta].filter(Boolean).join(' · ');
 								return `<li><button class="opp-event-select ${idx === 0 ? 'is-active' : ''}" type="button" data-event-idx="${idx}">${escapeHtml(ref.title || ref.id)}</button><div class="opp-file-links"><a href="${escapeHtml(href)}">Open ↗</a></div>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
 							}).join('');
 
@@ -2455,7 +2639,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				el.gemList.innerHTML = gems.map((row) => {
 					const days = row.dueDays === null ? 'No due date' : (row.dueDays < 0 ? 'Past due' : `${row.dueDays}d`);
 					const link = row.uiLink ? `<a href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>` : escapeHtml(row.title);
-					return `<li><span class="opp-gem-tier opp-gem-tier-${gemTier(row.gemScore).toLowerCase()}">${gemTier(row.gemScore)}</span>${link}<span class="opp-gem-meta">gem ${Math.round(row.gemScore)} · weight ${row.weight} · ${days}</span></li>`;
+					return `<li><span class="opp-gem-tier opp-gem-tier-${gemTier(row.gemScore).toLowerCase()}">${gemTier(row.gemScore)}</span>${link}<span class="opp-gem-meta">${escapeHtml(String(row.responseDecision || 'Watch / qualify'))} (${Math.round(Number(row.responseWorthinessScore || 0))}) · event ${Math.round(Number(row.eventLeverageScore || 0))} · gov POC ${Math.round(Number(row.governmentPocCount || 0))} · ${days}</span></li>`;
 				}).join('');
 			};
 
@@ -2570,6 +2754,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const timingPosted = row.postedDays === null ? 'P:—' : `P:+${row.postedDays}`;
 					const timing = `<span class="opp-signal-stack"><span>${timingDue}</span><span>${timingPosted}</span></span>`;
 					const signalBadges = [];
+					if (row.decisionClass === 'pursue') signalBadges.push('<span class="opp-signal-badge opp-signal-badge-pursue" title="Recommended immediate qualification and response path">Pursue</span>');
+					else if (row.decisionClass === 'watch') signalBadges.push('<span class="opp-signal-badge opp-signal-badge-watch" title="Worth qualification or monitoring before bid/no-bid">Watch</span>');
+					else signalBadges.push('<span class="opp-signal-badge opp-signal-badge-skip" title="Low current return signal">Skip</span>');
+					if (Number(row.governmentPocCount || 0) > 0) signalBadges.push(`<span class="opp-signal-badge opp-signal-badge-govpoc" title="Government points of contact published across mapped events">Gov POC ${Number(row.governmentPocCount || 0)}</span>`);
 					if (row.usaspendingError) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-error" title="USAspending fetch error on latest check">3P error</span>');
 					else if (Number(row.usaspendingMatchCount || 0) > 0 && row.usaspendingAgeDays !== null) {
 						if (Number(row.usaspendingAgeDays || 0) <= 3) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fresh" title="USAspending corroboration checked in last 3 days">Fresh</span>');
@@ -2581,7 +2769,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fallback" title="USAspending corroboration used fallback keyword path">Fallback</span>');
 					}
 					const badgeLine = signalBadges.length ? `<span class="opp-signal-badge-line">${signalBadges.join('')}</span>` : '';
-					const signals = `<span class="opp-signal-stack"><span>I${intelDepth} F${files} A${awards} U${usCount}</span><span>C${Math.round(corrobScore)} Cf${confidence}</span>${badgeLine}</span>`;
+					const signals = `<span class="opp-signal-stack"><span>I${intelDepth} F${files} A${awards} U${usCount}</span><span>C${Math.round(corrobScore)} Cf${confidence}</span><span>Resp${Math.round(Number(row.responseWorthinessScore || 0))} Ev${Math.round(Number(row.eventLeverageScore || 0))}</span>${badgeLine}</span>`;
 					const title = row.uiLink
 						? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
 						: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
@@ -2638,6 +2826,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const awardCount = filtered.filter((row) => Number(row.awardSignalCount || 0) > 0).length;
 				const corroboratedCount = filtered.filter((row) => Number(row.corroborationScore || 0) >= 70).length;
 				const confidenceCount = filtered.filter((row) => Number(row.confidenceScore || 0) >= 70).length;
+				const pursueCount = filtered.filter((row) => String(row.decisionClass || '') === 'pursue').length;
+				const govPocCount = filtered.filter((row) => Number(row.governmentPocCount || 0) > 0).length;
 				const thirdPartyErrorCount = filtered.filter((row) => String(row.usaspendingError || '').trim()).length;
 				const exactCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && Number(row.usaspendingMatchCount || 0) > 0).length;
 				const fallbackCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
@@ -2653,6 +2843,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.awards) el.awards.textContent = String(awardCount);
 				if (el.corroborated) el.corroborated.textContent = String(corroboratedCount);
 				if (el.confidenceKpi) el.confidenceKpi.textContent = String(confidenceCount);
+				if (el.pursueKpi) el.pursueKpi.textContent = String(pursueCount);
+				if (el.govPocKpi) el.govPocKpi.textContent = String(govPocCount);
 				if (el.thirdPartyErrorsKpi) el.thirdPartyErrorsKpi.textContent = String(thirdPartyErrorCount);
 				if (el.exactKpi) el.exactKpi.textContent = String(exactCount);
 				if (el.fallbackKpi) el.fallbackKpi.textContent = String(fallbackCount);
@@ -2671,6 +2863,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (state.confidence !== 'all') chips.push(`Confidence: ${state.confidence}`);
 					if (state.thirdParty !== 'all') chips.push(`3P: ${state.thirdParty}`);
 					if (state.fpds !== 'all') chips.push(`FPDS: ${state.fpds}`);
+					if (state.decision !== 'all') chips.push(`Decision: ${state.decision}`);
 					if (state.fastMode) chips.push('Fast mode: on');
 					if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
 					el.chartFilterStatus.textContent = chips.length ? chips.join(' · ') : '';
@@ -2685,7 +2878,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderTable(pagedRows);
 			};
 
-			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.thirdParty, el.fpds, el.sort, el.focus, el.fastMode].forEach((node) => node?.addEventListener('input', () => {
+			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.thirdParty, el.fpds, el.decision, el.sort, el.focus, el.fastMode].forEach((node) => node?.addEventListener('input', () => {
 				tableState.page = 1;
 				render();
 			}));
@@ -2744,6 +2937,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.confidenceFilter) el.confidenceFilter.value = 'all';
 				if (el.thirdParty) el.thirdParty.value = 'all';
 				if (el.fpds) el.fpds.value = 'all';
+				if (el.decision) el.decision.value = 'all';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
 				if (el.fastMode) el.fastMode.checked = false;
@@ -2826,6 +3020,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const current = el.fpds?.value || 'all';
 					const next = cycle[(cycle.indexOf(current) + 1 + cycle.length) % cycle.length];
 					if (el.fpds) el.fpds.value = next;
+					tableState.page = 1;
+					render();
+					return;
+				}
+				if (key === 'v') {
+					event.preventDefault();
+					const cycle = ['all', 'pursue', 'watch', 'skip'];
+					const current = el.decision?.value || 'all';
+					const next = cycle[(cycle.indexOf(current) + 1 + cycle.length) % cycle.length];
+					if (el.decision) el.decision.value = next;
 					tableState.page = 1;
 					render();
 				}
@@ -3524,6 +3728,26 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		border-color: rgba(250, 204, 21, 0.64);
 		background: rgba(161, 98, 7, 0.24);
 		color: rgba(254, 249, 195, 0.98);
+	}
+	.opp-signal-badge-pursue {
+		border-color: rgba(34, 197, 94, 0.78);
+		background: rgba(22, 163, 74, 0.26);
+		color: rgba(220, 252, 231, 0.99);
+	}
+	.opp-signal-badge-watch {
+		border-color: rgba(56, 189, 248, 0.72);
+		background: rgba(2, 132, 199, 0.24);
+		color: rgba(224, 242, 254, 0.99);
+	}
+	.opp-signal-badge-skip {
+		border-color: rgba(148, 163, 184, 0.66);
+		background: rgba(51, 65, 85, 0.28);
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.opp-signal-badge-govpoc {
+		border-color: rgba(167, 139, 250, 0.74);
+		background: rgba(109, 40, 217, 0.26);
+		color: rgba(237, 233, 254, 0.98);
 	}
 	.opp-confidence-chip {
 		display: inline-flex;
