@@ -94,6 +94,14 @@ def summarize(rows: list[dict[str, Any]], now: datetime) -> dict[str, Any]:
         r for r in rows
         if str((r.get('cross_data_signal') or {}).get('level') or '') == 'Strong'
     ]
+    fpds_medium = [
+        r for r in rows
+        if as_int((r.get('fpds_signal') or {}).get('alignment_score')) >= 45
+    ]
+    fpds_high = [
+        r for r in rows
+        if as_int((r.get('fpds_signal') or {}).get('alignment_score')) >= 70
+    ]
 
     deep_text = [r for r in rows if as_int(r.get('detail_text_length')) > 0]
     attachments = [r for r in rows if as_int(r.get('resource_count')) > 0]
@@ -126,6 +134,8 @@ def summarize(rows: list[dict[str, Any]], now: datetime) -> dict[str, Any]:
         'fallback_matches': len(fallback_matches),
         'high_confidence': len(high_confidence),
         'strong_corroboration': len(strong_corroboration),
+        'fpds_medium': len(fpds_medium),
+        'fpds_high': len(fpds_high),
         'deep_text_rows': len(deep_text),
         'attachment_rows': len(attachments),
         'sam_award_rows': len(sam_awards),
@@ -137,6 +147,7 @@ def summarize(rows: list[dict[str, Any]], now: datetime) -> dict[str, Any]:
             'us_match_rate': round((len(us_matches) / total), 4) if total else 0.0,
             'us_error_rate': round((len(us_errors) / total), 4) if total else 0.0,
             'high_confidence_rate': round((len(high_confidence) / total), 4) if total else 0.0,
+            'fpds_medium_rate': round((len(fpds_medium) / total), 4) if total else 0.0,
             'exact_match_share': round((len(exact_matches) / max(1, len(us_matches))), 4),
             'fallback_match_share': round((len(fallback_matches) / max(1, len(us_matches))), 4),
             'fresh_check_share': round((len(fresh) / max(1, len(us_matches))), 4),
@@ -154,6 +165,8 @@ def deltas(current: dict[str, Any], previous: dict[str, Any] | None) -> dict[str
         'fallback_matches',
         'high_confidence',
         'strong_corroboration',
+        'fpds_medium',
+        'fpds_high',
         'fresh_checks_3d',
         'stale_checks_14d',
     ]
@@ -182,6 +195,8 @@ def to_markdown(*, generated_at: str, current: dict[str, Any], previous: dict[st
     lines.append(f"- Fallback matches: {current['fallback_matches']} ({current['rates']['fallback_match_share']:.2%} of matched)")
     lines.append(f"- High confidence: {current['high_confidence']} ({current['rates']['high_confidence_rate']:.2%})")
     lines.append(f"- Strong corroboration: {current['strong_corroboration']}")
+    lines.append(f"- FPDS aligned Medium+: {current['fpds_medium']} ({current['rates']['fpds_medium_rate']:.2%})")
+    lines.append(f"- FPDS aligned High: {current['fpds_high']}")
     lines.append(f"- Fresh checks (<=3d): {current['fresh_checks_3d']} ({current['rates']['fresh_check_share']:.2%} of matched)")
     lines.append(f"- Stale checks (>14d): {current['stale_checks_14d']}")
     lines.append(f"- Unknown check age: {current['unknown_check_age']}")
@@ -194,6 +209,8 @@ def to_markdown(*, generated_at: str, current: dict[str, Any], previous: dict[st
     lines.append(f"- Fallback matches: {fmt_delta(change['fallback_matches'])}")
     lines.append(f"- High confidence: {fmt_delta(change['high_confidence'])}")
     lines.append(f"- Strong corroboration: {fmt_delta(change['strong_corroboration'])}")
+    lines.append(f"- FPDS aligned Medium+: {fmt_delta(change['fpds_medium'])}")
+    lines.append(f"- FPDS aligned High: {fmt_delta(change['fpds_high'])}")
     lines.append(f"- Fresh checks (<=3d): {fmt_delta(change['fresh_checks_3d'])}")
     lines.append(f"- Stale checks (>14d): {fmt_delta(change['stale_checks_14d'])}")
     lines.append('')
@@ -251,6 +268,7 @@ def main() -> int:
     print(f"Rows: {current_metrics['total_rows']}")
     print(f"USA matches: {current_metrics['us_matches']}")
     print(f"USA errors: {current_metrics['us_errors']}")
+    print(f"FPDS aligned Medium+: {current_metrics['fpds_medium']}")
     print(f"Fresh checks <=3d: {current_metrics['fresh_checks_3d']}")
     return 0
 

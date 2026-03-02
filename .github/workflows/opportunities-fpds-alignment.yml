@@ -1,0 +1,59 @@
+name: opportunities-fpds-alignment
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily 10:22 ET / 15:22 UTC (adjusts with DST as UTC)
+    - cron: "22 15 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: opportunities-fpds-alignment
+  cancel-in-progress: true
+
+jobs:
+  align:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build FPDS-aligned continuity scaffold
+        run: python3 scripts/enrich-opportunities-fpds-alignment.py
+
+      - name: Upload FPDS alignment artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: opportunities-fpds-alignment
+          path: |
+            src/data/radar/events-candidates-sam-opportunities.json
+            src/data/radar/events-candidates-sam-opportunities-fpds-alignment.md
+
+      - name: Create/update pull request for FPDS alignment refresh
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/opportunities-fpds-alignment
+          delete-branch: true
+          commit-message: "chore(opportunities): refresh fpds-aligned continuity signals"
+          title: "chore(opportunities): refresh fpds-aligned continuity signals"
+          body: |
+            Automated refresh of FPDS-aligned identifier continuity scaffold.
+
+            - Recomputes `fpds_signal` fields on opportunities
+            - Regenerates FPDS alignment markdown summary
+            - Prepares continuity features for future direct FPDS integrations
+          labels: |
+            opportunities
+            automation
+            analytics
+          add-paths: |
+            src/data/radar/events-candidates-sam-opportunities.json
+            src/data/radar/events-candidates-sam-opportunities-fpds-alignment.md

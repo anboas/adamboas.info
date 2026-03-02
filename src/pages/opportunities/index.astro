@@ -711,6 +711,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-kpi"><span class="opp-kpi-label">Exact query matches</span><strong id="opp-kpi-exact">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Fallback query matches</span><strong id="opp-kpi-fallback">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Fresh 3P checks (≤3d)</span><strong id="opp-kpi-fresh">0</strong></div>
+			<div class="opp-kpi"><span class="opp-kpi-label">FPDS-aligned (Med+)</span><strong id="opp-kpi-fpds">0</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
 			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
 		</div>
@@ -810,6 +811,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</select>
 				</label>
 				<label class="opp-field">
+					<span>ID continuity</span>
+					<select id="opp-filter-fpds" class="opp-input">
+						<option value="all">All</option>
+						<option value="medium">FPDS Medium+</option>
+						<option value="high">FPDS High only</option>
+						<option value="none">No FPDS signal</option>
+					</select>
+				</label>
+				<label class="opp-field">
 					<span>Sort</span>
 					<select id="opp-filter-sort" class="opp-input">
 						<option value="gem">Gem score</option>
@@ -838,7 +848,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</label>
 				</div>
 				<span id="opp-chart-filter-status" class="opp-chart-filter-status" aria-live="polite"></span>
-				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence · t 3P signal</span>
+				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence · t 3P signal · p FPDS</span>
 				<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
 			</div>
 		</div>
@@ -1072,6 +1082,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				intel: document.getElementById('opp-filter-intel'),
 				confidenceFilter: document.getElementById('opp-filter-confidence'),
 				thirdParty: document.getElementById('opp-filter-third-party'),
+				fpds: document.getElementById('opp-filter-fpds'),
 				sort: document.getElementById('opp-filter-sort'),
 				focus: document.getElementById('opp-filter-focus'),
 				fastMode: document.getElementById('opp-filter-fast'),
@@ -1089,6 +1100,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				exactKpi: document.getElementById('opp-kpi-exact'),
 				fallbackKpi: document.getElementById('opp-kpi-fallback'),
 				freshKpi: document.getElementById('opp-kpi-fresh'),
+				fpdsKpi: document.getElementById('opp-kpi-fpds'),
 				count: document.getElementById('opp-table-count'),
 				body: document.getElementById('opp-table-body'),
 				tableWrap: document.getElementById('opp-table-wrap'),
@@ -1322,6 +1334,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const crossDataSignal = row.crossDataSignal || {};
 				const corroborationScore = Number(crossDataSignal.score || 0);
 				const corroborationLevel = String(crossDataSignal.level || 'None');
+				const fpdsSignal = row.fpdsSignal || row.fpds_signal || {};
+				const fpdsAlignmentScore = Number(fpdsSignal.alignment_score ?? fpdsSignal.alignmentScore ?? row.fpdsAlignmentScore ?? 0);
+				const fpdsAlignmentLevel = String(fpdsSignal.alignment_level ?? fpdsSignal.alignmentLevel ?? row.fpdsAlignmentLevel ?? 'None');
+				const fpdsCanonicalPiid = String(fpdsSignal.canonical_piid ?? fpdsSignal.canonicalPiid ?? row.fpdsCanonicalPiid ?? '').trim() || null;
 				const usaspendingQueryType = String(usaspendingSignal.query_type || usaspendingSignal.queryType || '').toLowerCase();
 				const usaspendingQueryConfidence = String(usaspendingSignal.query_confidence || usaspendingSignal.queryConfidence || row.usaspendingQueryConfidence || '').trim() || 'Low';
 				const usaspendingCheckedAt = String(usaspendingSignal.checked_at || usaspendingSignal.checkedAt || '').trim() || null;
@@ -1384,6 +1400,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					corroborationScore,
 					corroborationLevel,
 					crossDataSignal,
+					fpdsSignal,
+					fpdsAlignmentScore,
+					fpdsAlignmentLevel,
+					fpdsCanonicalPiid,
 					confidenceScore,
 					confidenceLevel,
 					usaspendingQueryType,
@@ -1415,6 +1435,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				intel: 'all',
 				confidence: 'all',
 				thirdParty: 'all',
+				fpds: 'all',
 				sort: 'gem',
 				focusOnly: false,
 				fastMode: false,
@@ -1522,6 +1543,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				state.intel = el.intel?.value || 'all';
 				state.confidence = el.confidenceFilter?.value || 'all';
 				state.thirdParty = el.thirdParty?.value || 'all';
+				state.fpds = el.fpds?.value || 'all';
 				state.sort = el.sort?.value || 'gem';
 				state.focusOnly = Boolean(el.focus?.checked);
 				state.fastMode = Boolean(el.fastMode?.checked);
@@ -1569,6 +1591,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return true;
 			};
 
+			const fpdsFilterMatch = (row) => {
+				const mode = String(state.fpds || 'all');
+				if (mode === 'all') return true;
+				const score = Number(row.fpdsAlignmentScore || 0);
+				if (mode === 'high') return score >= 70;
+				if (mode === 'medium') return score >= 45;
+				if (mode === 'none') return score <= 0;
+				return true;
+			};
+
 			const compareRows = (a, b) => {
 				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
 				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
@@ -1599,6 +1631,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (!intelFilterMatch(row)) return false;
 					if (!confidenceFilterMatch(row)) return false;
 					if (!thirdPartyFilterMatch(row)) return false;
+					if (!fpdsFilterMatch(row)) return false;
 					if (Number(row.weight || 0) < state.minWeight) return false;
 					if (state.focusOnly && row.focusMatches < 1) return false;
 					if (state.fastMode) {
@@ -1847,6 +1880,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					['Attachments', items.filter((r) => Number(r.resourceCount || 0) > 0).length],
 					['SAM awards', items.filter((r) => Number(r.awardSignalCount || 0) > 0).length],
 					['USA matches', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0).length],
+					['FPDS Med+', items.filter((r) => Number(r.fpdsAlignmentScore || 0) >= 45).length],
 					['3P errors', items.filter((r) => String(r.usaspendingError || '').trim()).length],
 					['Exact query', items.filter((r) => String(r.usaspendingQueryType || '').includes('solicitation') && Number(r.usaspendingMatchCount || 0) > 0).length],
 					['Fallback query', items.filter((r) => String(r.usaspendingQueryType || '').includes('fallback') && Number(r.usaspendingMatchCount || 0) > 0).length],
@@ -1870,8 +1904,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 								'Fallback query': 'fallback',
 								'USA matches': 'ok',
 							};
-							const next = map[params.name];
-							if (next && el.thirdParty) el.thirdParty.value = next;
+							if (params.name === 'FPDS Med+' && el.fpds) {
+								el.fpds.value = 'medium';
+							} else {
+								const next = map[params.name];
+								if (next && el.thirdParty) el.thirdParty.value = next;
+							}
 							tableState.page = 1;
 							render();
 						});
@@ -1886,7 +1924,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							'Fallback query': 'fallback',
 							'USA matches': 'ok',
 						};
-						if (map[label] && el.thirdParty) el.thirdParty.value = map[label];
+						if (label === 'FPDS Med+' && el.fpds) {
+							el.fpds.value = 'medium';
+						} else if (map[label] && el.thirdParty) {
+							el.thirdParty.value = map[label];
+						}
 						tableState.page = 1;
 						render();
 					});
@@ -2109,12 +2151,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const usErrors = items.filter((row) => String(row.usaspendingError || '').trim()).length;
 				const exactMatches = items.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && Number(row.usaspendingMatchCount || 0) > 0).length;
 				const fallbackMatches = items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
+				const fpdsMed = items.filter((row) => Number(row.fpdsAlignmentScore || 0) >= 45).length;
 				const lines = [
 					`Slice average: Gem ${avgGem} · Corroboration ${avgCor} · High-confidence ${highConf}/${items.length}.`,
 					topClient ? `Top buyer family: ${topClient[0]} (${topClient[1]} opportunities).` : 'Top buyer family: no data.',
 					soon ? `Nearest due: ${soon.title} (${soon.dueDays}d, ${soon.noticeType || 'notice'}).` : 'No upcoming due dates in this slice.',
 					`Corroboration mix: ${strong} Strong · ${moderate} Moderate · ${Math.max(0, items.length - strong - moderate)} Weak/None.`,
 					`3P quality: ${exactMatches} exact matches · ${fallbackMatches} fallback matches · ${usErrors} upstream-error rows.`,
+					`FPDS continuity: ${fpdsMed} rows at Medium+ alignment.`,
 				];
 				el.insights.innerHTML = lines.map((line) => `<li>${escapeHtml(line)}</li>`).join('');
 			};
@@ -2306,6 +2350,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					entries.push({
 						label: 'Cross-data signal',
 						meta: `${row.corroborationLevel || 'None'} (${Math.round(Number(row.corroborationScore || 0))})`,
+					});
+					entries.push({
+						label: 'FPDS-aligned continuity',
+						meta: `${row.fpdsAlignmentLevel || 'None'} (${Math.round(Number(row.fpdsAlignmentScore || 0))})${row.fpdsCanonicalPiid ? ` · ${row.fpdsCanonicalPiid}` : ''}`,
 					});
 					el.modalProvenance.innerHTML = entries
 						.map((entry) => `<li><span class="opp-file-name">${escapeHtml(entry.label)}</span><span class="opp-file-host">${escapeHtml(entry.meta)}</span></li>`)
@@ -2567,6 +2615,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const exactCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && Number(row.usaspendingMatchCount || 0) > 0).length;
 				const fallbackCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
 				const freshCount = filtered.filter((row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) <= 3).length;
+				const fpdsCount = filtered.filter((row) => Number(row.fpdsAlignmentScore || 0) >= 45).length;
 				const { rows: pagedRows, totalRows, totalPages } = getPagedRows(filtered);
 
 				if (el.total) el.total.textContent = String(rows.length);
@@ -2581,6 +2630,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.exactKpi) el.exactKpi.textContent = String(exactCount);
 				if (el.fallbackKpi) el.fallbackKpi.textContent = String(fallbackCount);
 				if (el.freshKpi) el.freshKpi.textContent = String(freshCount);
+				if (el.fpdsKpi) el.fpdsKpi.textContent = String(fpdsCount);
 				if (el.count) el.count.textContent = `${totalRows.toLocaleString()} row${totalRows === 1 ? '' : 's'}`;
 				if (el.pageLabel) el.pageLabel.textContent = `Page ${tableState.page} / ${totalPages}`;
 				if (el.pageFirst) el.pageFirst.disabled = tableState.page <= 1;
@@ -2593,6 +2643,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (state.work !== 'all') chips.push(`What: ${workTypeLabel[state.work] || state.work}`);
 					if (state.confidence !== 'all') chips.push(`Confidence: ${state.confidence}`);
 					if (state.thirdParty !== 'all') chips.push(`3P: ${state.thirdParty}`);
+					if (state.fpds !== 'all') chips.push(`FPDS: ${state.fpds}`);
 					if (state.fastMode) chips.push('Fast mode: on');
 					if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
 					el.chartFilterStatus.textContent = chips.length ? chips.join(' · ') : '';
@@ -2607,7 +2658,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderTable(pagedRows);
 			};
 
-			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.thirdParty, el.sort, el.focus, el.fastMode].forEach((node) => node?.addEventListener('input', () => {
+			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.thirdParty, el.fpds, el.sort, el.focus, el.fastMode].forEach((node) => node?.addEventListener('input', () => {
 				tableState.page = 1;
 				render();
 			}));
@@ -2665,6 +2716,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.intel) el.intel.value = 'all';
 				if (el.confidenceFilter) el.confidenceFilter.value = 'all';
 				if (el.thirdParty) el.thirdParty.value = 'all';
+				if (el.fpds) el.fpds.value = 'all';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
 				if (el.fastMode) el.fastMode.checked = false;
@@ -2737,6 +2789,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const current = el.thirdParty?.value || 'all';
 					const next = cycle[(cycle.indexOf(current) + 1 + cycle.length) % cycle.length];
 					if (el.thirdParty) el.thirdParty.value = next;
+					tableState.page = 1;
+					render();
+					return;
+				}
+				if (key === 'p') {
+					event.preventDefault();
+					const cycle = ['all', 'medium', 'high', 'none'];
+					const current = el.fpds?.value || 'all';
+					const next = cycle[(cycle.indexOf(current) + 1 + cycle.length) % cycle.length];
+					if (el.fpds) el.fpds.value = next;
 					tableState.page = 1;
 					render();
 				}

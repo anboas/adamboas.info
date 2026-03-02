@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-02T04:47:00.988330+00:00",
+  "generated_at": "2026-03-02T05:33:49.107868+00:00",
   "metrics": {
     "total_rows": 684,
     "us_matches": 453,
@@ -8,6 +8,8 @@
     "fallback_matches": 449,
     "high_confidence": 1,
     "strong_corroboration": 1,
+    "fpds_medium": 1,
+    "fpds_high": 0,
     "deep_text_rows": 684,
     "attachment_rows": 410,
     "sam_award_rows": 1,
@@ -23,6 +25,7 @@
       "us_match_rate": 0.6623,
       "us_error_rate": 0.0029,
       "high_confidence_rate": 0.0015,
+      "fpds_medium_rate": 0.0015,
       "exact_match_share": 0.0088,
       "fallback_match_share": 0.9912,
       "fresh_check_share": 1.0

@@ -16,6 +16,7 @@
     "events:sam-import:mirror": "python3 scripts/import-radar-events-from-sam-opportunities.py --enrich-detail-text --detail-max-chars 0 --detail-cache-ttl-hours -1 --mirror-forever --mirror-download-resources",
     "events:opps-award-enrich": "python3 scripts/enrich-opportunities-from-contract-awards.py",
     "events:opps-usaspending-enrich": "python3 scripts/enrich-opportunities-from-usaspending.py",
+    "events:opps-fpds-align": "python3 scripts/enrich-opportunities-fpds-alignment.py",
     "events:opps-drift-report": "python3 scripts/generate-opportunities-drift-report.py",
     "events:navy-sam-import": "python3 scripts/import-radar-events-from-sam-opportunities.py --profile navy --output-prefix sam-opportunities-navy",
     "events:nswc-sam-import": "python3 scripts/import-radar-events-from-sam-opportunities.py --profile nswc --output-prefix sam-opportunities-nswc",
