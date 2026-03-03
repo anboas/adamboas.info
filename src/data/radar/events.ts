@@ -15182,4 +15182,61 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'World\'s largest M&S/training conference. Orange County Convention Center. NTSA/NDIA. 16,000+ visitors.'
 		}
 	},
+	{
+		id: 'radar-wildfire-technology-summit-2026',
+		title: 'Wildfire Technology Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-04-21',
+		endDate: '2026-04-22',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'San Diego',
+			state: 'CA',
+			country: 'USA',
+			lat: 32.7174202,
+			lng: -117.162772
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['wildfire', 'technology', 'summit', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25838'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
 ];

@@ -1,0 +1,46 @@
+{
+  "id": "sam-049a4ca5804040ee9eb5204a58fb4d75",
+  "title": "Morganza to the Gulf, Upper Reach F",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=049a4ca5804040ee9eb5204a58fb4d75",
+  "opportunity_url": "https://sam.gov/opp/049a4ca5804040ee9eb5204a58fb4d75/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/049a4ca5804040ee9eb5204a58fb4d75/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "049a4ca5804040ee9eb5204a58fb4d75",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912P826SS0005",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION MISSISSIPPI VALLEY.ENDIST NEW ORLEANS.W07V ENDIST NEW ORLEANS",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=049a4ca5804040ee9eb5204a58fb4d75",
+  "detail_text": "This announcement is seeking information from industry, which will be used for preliminary planning purposes. No proposals are being requested or accepted with this sources sought, and no reimbursement will be made for any costs associated with providing information in response to this synopsis or any follow-up information requests. THIS IS NOT A SOLICITATION FOR PROPOSALS AND NO CONTRACT SHALL BE AWARDED FROM THIS SOURCES SOUGHT . After review of the responses to this notice, and if the Government intends to proceed with the acquisition, a separate announcement will be published on the System for Acquisition Management (SAM) website (SAM.gov). Please send your responses no later than 11:00 a.m. March 13, 2026, via email to taylor.h.brandon@usace.army.mil.",
+  "detail_text_length": 766,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a3a08c4162f4acb9025c674371cb913/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a3a08c4162f4acb9025c674371cb913/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d707b3126bddb71b23f5b56f8fcb95c30c17016548da529c81a5330afc5769e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d707b3126bddb71b23f5b56f8fcb95c30c17016548da529c81a5330afc5769e.pdf",
+      "file_id": "9a3a08c4162f4acb9025c674371cb913",
+      "file_name": "W912P826SS0005+Morganza+to+the+Gulf+Upper+Reach+F.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 207800,
+      "sha256": "8d707b3126bddb71b23f5b56f8fcb95c30c17016548da529c81a5330afc5769e"
+    }
+  ],
+  "_mirror_hash": "bd43b3032f7fd477b9632293e767665b8ae5e5fa94f56dd96cab90764bcf4da9",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.701598+00:00"
+}

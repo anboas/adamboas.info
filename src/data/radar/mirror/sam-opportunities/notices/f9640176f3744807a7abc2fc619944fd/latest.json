@@ -1,0 +1,57 @@
+{
+  "id": "sam-f9640176f3744807a7abc2fc619944fd",
+  "title": "FORMULATRIX F.A.S.T. Liquid Handler",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f9640176f3744807a7abc2fc619944fd",
+  "opportunity_url": "https://sam.gov/opp/f9640176f3744807a7abc2fc619944fd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f9640176f3744807a7abc2fc619944fd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f9640176f3744807a7abc2fc619944fd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HT9426-26-RFI-3175",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f9640176f3744807a7abc2fc619944fd",
+  "detail_text": "THIS IS A REQUEST FOR INFORMATION (RFI)/SOURCES SOUGHT (SS) NOTIFICIATION TO INCLUDE INDUSTRY FEEDBACK RFI Number: HT9426-26-RFI-3175 SEE ATTACHED RFI",
+  "detail_text_length": 150,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48e05c55f1ab4a228b79219f2abd1249/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc1e6e2fc9774b1bb20ed65009e209c9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48e05c55f1ab4a228b79219f2abd1249/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba334a89ac4ecda30b3fe24eee6ea0c503ba02a86d63169f6ec0a85395c336a8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba334a89ac4ecda30b3fe24eee6ea0c503ba02a86d63169f6ec0a85395c336a8.docx",
+      "file_id": "48e05c55f1ab4a228b79219f2abd1249",
+      "file_name": "MECs+-+FORMULATRIX+F.A.S.T.+Liquid+Handler.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18597,
+      "sha256": "ba334a89ac4ecda30b3fe24eee6ea0c503ba02a86d63169f6ec0a85395c336a8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc1e6e2fc9774b1bb20ed65009e209c9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6322abb1f2b7b2af07542ccb0e11ed12af608d0d1494f3e1410e60e6e133d6d8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6322abb1f2b7b2af07542ccb0e11ed12af608d0d1494f3e1410e60e6e133d6d8.docx",
+      "file_id": "fc1e6e2fc9774b1bb20ed65009e209c9",
+      "file_name": "A.02+Request+for+Information+FAST+2MAR26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 37145,
+      "sha256": "6322abb1f2b7b2af07542ccb0e11ed12af608d0d1494f3e1410e60e6e133d6d8"
+    }
+  ],
+  "_mirror_hash": "a51b8ca3db0a615cb0eaf6fecd851f500036d22bccf936d4b31b71e665f40976",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.676055+00:00"
+}

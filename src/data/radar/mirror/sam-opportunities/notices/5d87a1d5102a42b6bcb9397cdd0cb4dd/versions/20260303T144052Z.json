@@ -1,0 +1,46 @@
+{
+  "id": "sam-5d87a1d5102a42b6bcb9397cdd0cb4dd",
+  "title": "TUGCON; OPEN-OCEAN TOW MISSION",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d87a1d5102a42b6bcb9397cdd0cb4dd",
+  "opportunity_url": "https://sam.gov/opp/5d87a1d5102a42b6bcb9397cdd0cb4dd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5d87a1d5102a42b6bcb9397cdd0cb4dd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5d87a1d5102a42b6bcb9397cdd0cb4dd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N32205-SS-PM4-26-067",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d87a1d5102a42b6bcb9397cdd0cb4dd",
+  "detail_text": "Please see attached Sources Sought Notice N32205-26-PM4-067.",
+  "detail_text_length": 60,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfe8740f0d634069825cdb7059fbe550/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfe8740f0d634069825cdb7059fbe550/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/38fa5dd5410ecb5a7f8a2226094ab92a861b7c790f2ec15218e681c61d76c684.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/38fa5dd5410ecb5a7f8a2226094ab92a861b7c790f2ec15218e681c61d76c684.pdf",
+      "file_id": "cfe8740f0d634069825cdb7059fbe550",
+      "file_name": "SS-26-067.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 140606,
+      "sha256": "38fa5dd5410ecb5a7f8a2226094ab92a861b7c790f2ec15218e681c61d76c684"
+    }
+  ],
+  "_mirror_hash": "423cdfda0b668a0c3ddbdc84a30e85a061ee064f802f97026a78f067cc1b5917",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.666141+00:00"
+}

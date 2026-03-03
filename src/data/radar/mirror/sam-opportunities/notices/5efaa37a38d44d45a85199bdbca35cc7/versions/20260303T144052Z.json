@@ -1,0 +1,46 @@
+{
+  "id": "sam-5efaa37a38d44d45a85199bdbca35cc7",
+  "title": "Defense Contract Management Agency (DCMA) Information Technology (IT) Mission Support.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5efaa37a38d44d45a85199bdbca35cc7",
+  "opportunity_url": "https://sam.gov/opp/5efaa37a38d44d45a85199bdbca35cc7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5efaa37a38d44d45a85199bdbca35cc7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5efaa37a38d44d45a85199bdbca35cc7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "642674020",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).DEFENSE INFORMATION SYSTEMS AGENCY",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5efaa37a38d44d45a85199bdbca35cc7",
+  "detail_text": "This is a SOURCES SOUGHT NOTICE to determine the availability and technical capability of small businesses to provide the required services. This includes the following subsets: Small Disadvantaged Businesses (SDB), Certified 8(a), Service-Disabled Veteran-Owned Small Businesses (SDVOSB), HUBZone Small Businesses, and Woman-Owned Small Businesses (WOSB). DCMA is seeking information from potential sources for IT Mission Support requirements. The resulting contract will ensure the availability, reliability, integrity, and security of all DCMA IT services that provide critical acquisition insight information for DCMA users and business partners.",
+  "detail_text_length": 650,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dff107ebe8d4c96972b898df0e021f2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dff107ebe8d4c96972b898df0e021f2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d1b513cea0a8103c0bd606281fe17f2326cd421a975b1722daadb173df5331b7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d1b513cea0a8103c0bd606281fe17f2326cd421a975b1722daadb173df5331b7.docx",
+      "file_id": "6dff107ebe8d4c96972b898df0e021f2",
+      "file_name": "DCMA+IT+Mission+Support+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 63391,
+      "sha256": "d1b513cea0a8103c0bd606281fe17f2326cd421a975b1722daadb173df5331b7"
+    }
+  ],
+  "_mirror_hash": "302cc796294fb4420bb3ba2ff66e0c8ce43844627d2cbbafb7f87399b11aa8a3",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.713226+00:00"
+}

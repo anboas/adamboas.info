@@ -1,0 +1,57 @@
+{
+  "id": "sam-405dee1aff024e68b45b7cc081ab62de",
+  "title": "6515--Data Distributing DD207 DICOM 6000N",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=405dee1aff024e68b45b7cc081ab62de",
+  "opportunity_url": "https://sam.gov/opp/405dee1aff024e68b45b7cc081ab62de/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/405dee1aff024e68b45b7cc081ab62de/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "405dee1aff024e68b45b7cc081ab62de",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24226Q0388",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.242-NETWORK CONTRACT OFFICE 02 (36C242)",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=405dee1aff024e68b45b7cc081ab62de",
+  "detail_text": "This is a sources sought for a Data Distributing DD207 DICOM 6000N and accessories.",
+  "detail_text_length": 83,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4727f83d1acc4052999618efbf0be28c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/884ec98b88b746d984bde284637a8bb5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4727f83d1acc4052999618efbf0be28c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2982152d71c5dc740c18b5250136c7682e3894167682a58eabda7d42d6b4b97c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2982152d71c5dc740c18b5250136c7682e3894167682a58eabda7d42d6b4b97c.docx",
+      "file_id": "4727f83d1acc4052999618efbf0be28c",
+      "file_name": "36C24226Q0388.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14462,
+      "sha256": "2982152d71c5dc740c18b5250136c7682e3894167682a58eabda7d42d6b4b97c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/884ec98b88b746d984bde284637a8bb5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e523884c49bf474e46502120c3f24015cdae017b7e8653cd701e0bf5342879e9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e523884c49bf474e46502120c3f24015cdae017b7e8653cd701e0bf5342879e9.docx",
+      "file_id": "884ec98b88b746d984bde284637a8bb5",
+      "file_name": "Sources+Sought+-+Data+Distributing.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26449,
+      "sha256": "e523884c49bf474e46502120c3f24015cdae017b7e8653cd701e0bf5342879e9"
+    }
+  ],
+  "_mirror_hash": "c874fa2c49e9e559758396971af1943ad5646196c1a0afb029b2e27feb14c4c6",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.711091+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-b64fc9e9597847a0818bc317216e7483",
+  "title": "Iowa National Guard Medical Exams Waterloo, IA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b64fc9e9597847a0818bc317216e7483",
+  "opportunity_url": "https://sam.gov/opp/b64fc9e9597847a0818bc317216e7483/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b64fc9e9597847a0818bc317216e7483/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b64fc9e9597847a0818bc317216e7483",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912LP-26-Q-4003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO IA.USPFO IA PROCUREMENT.W7M8 USPFO ACTIVITY IA ARNG",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b64fc9e9597847a0818bc317216e7483",
+  "detail_text": "I am conducting market research for the Iowa Army National Guard’s requirement of Medical Surveillance Exams. This requirement is for services in clinical settings within a 40-mile radius of AASF # 2 and FMS# 2, 2245 West Big Rock Rd, Waterloo Iowa 50036. The period of performance will be from the date of award through 31 May 2026. Please review attached DRAFT Performance Work Statement (PWS) for more details. Please provide an emailed response to seth.a.vansteenwyk.civ@army.mil and kelsey.l.letcher.civ@army.mil if you are interested in receiving a quote for this requirement. At this time, no quotes are being requested. However, please respond by Wednesday, 11 March 2026 if you are interested in submitting a quote and please clarify the amount of time needed in preparing a quote. How many days after award do you need to complete 23 exams?",
+  "detail_text_length": 850,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bda806ef98847fc84ba982727714673/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bda806ef98847fc84ba982727714673/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c812a7c3358d65ad92361aae074c653117391a582dc5fd6043b3c68731e58258.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c812a7c3358d65ad92361aae074c653117391a582dc5fd6043b3c68731e58258.pdf",
+      "file_id": "2bda806ef98847fc84ba982727714673",
+      "file_name": "01.+Draft+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 671261,
+      "sha256": "c812a7c3358d65ad92361aae074c653117391a582dc5fd6043b3c68731e58258"
+    }
+  ],
+  "_mirror_hash": "d401204c28267fb94ff3bcc08baed7258277deb729c10b431c47326ceedf7d68",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.686919+00:00"
+}

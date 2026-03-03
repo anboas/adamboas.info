@@ -1,0 +1,46 @@
+{
+  "id": "sam-4759e97a15fd44ca964c744d0b3dcd63",
+  "title": "Notice of Intent",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4759e97a15fd44ca964c744d0b3dcd63",
+  "opportunity_url": "https://sam.gov/opp/4759e97a15fd44ca964c744d0b3dcd63/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4759e97a15fd44ca964c744d0b3dcd63/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4759e97a15fd44ca964c744d0b3dcd63",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "D-26-OE-0008",
+  "agency_path": "JUSTICE, DEPARTMENT OF.DRUG ENFORCEMENT ADMINISTRATION.HEADQUATERS",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4759e97a15fd44ca964c744d0b3dcd63",
+  "detail_text": "This is a Special Notice. The U.S. Department of Justice, Drug Enforcement Administration (DEA), intends to award a sole source Purchase Order to Sheraton Buenos Aires & Convention Center – Park Tower Buenos Aires pursuant to FAR 13.302, Purchase Orders. All communication regarding this posting shall be in writing and received on or before 10:00 am (ET) March 17, 2026. Point of contact is Naomi Collier Naomi.S.Collier@dea.gov. The proposed order is for Hosting site for DEA's IDEC Conference for which the Government intends to solicit and negotiate only with Sheraton Buenos Aires & Convention Center – Park Tower Buenos Aires 1225 San Martin Av. Ciudad Autónoma de Buenos Aires C1104AKC Argentina. The North American Industry Classification System (NAICS) code is 721110. A determination by the Government not to open the requirement to competition based on the responses to this notice is solely within the discretion of the Government. This notice of intent is not a request for competitive quotation. A Request for Quotation (RFQ) is not available. This is not a Request for Quotation (RFQ). Any source capable of providing the service and interested in submitting a capability statement may do so electronically to Naomi.S.Collier@dea.gov. The vendor must be able to provide all services on the dates listed in the statement of work.",
+  "detail_text_length": 1343,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dc65353409746feb9a32a500ab79063/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dc65353409746feb9a32a500ab79063/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cbcd4b35a76b2cdee207882171b038ae089df2184939555ddccb8ab339d7736a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cbcd4b35a76b2cdee207882171b038ae089df2184939555ddccb8ab339d7736a.pdf",
+      "file_id": "6dc65353409746feb9a32a500ab79063",
+      "file_name": "A02+IDEC+Hotel+SOW++.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 293361,
+      "sha256": "cbcd4b35a76b2cdee207882171b038ae089df2184939555ddccb8ab339d7736a"
+    }
+  ],
+  "_mirror_hash": "e104d96a070a1a8ac22eae0e6111adeaa161f1112bd82f27f6f0ebbe9212938f",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.736274+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "sam-8bc58da9c9484f3f91e930acf5677e22",
+  "title": "Instructor Support - NCTC Gulfport, MS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bc58da9c9484f3f91e930acf5677e22",
+  "opportunity_url": "https://sam.gov/opp/8bc58da9c9484f3f91e930acf5677e22/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8bc58da9c9484f3f91e930acf5677e22/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8bc58da9c9484f3f91e930acf5677e22",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6883626RS0030002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bc58da9c9484f3f91e930acf5677e22",
+  "detail_text": "This is to re-open solicitation notice N6883626RS003 via amendment 0002. Please see attachment amednment 0002 to supplement solicitation requirements of N6883626RS003 for Instructor Support. This solictation is only open to eligible 8(a) vendors at the time of solictation close.",
+  "detail_text_length": 279,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5705b0bd57f1480fab66fcbd7721e298/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bc248dc97e04b89b15bb9df0ab360b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7472af46da87435383e01f1aed51fd96/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d2e24a3905e4961b8db528f3b6e9a5a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc07f8579154c6a944eb15f9fb397f4/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5705b0bd57f1480fab66fcbd7721e298/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a7763f5edebcea67ce58c38099041964ac0459d1799fb20054962be24cb3d696.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a7763f5edebcea67ce58c38099041964ac0459d1799fb20054962be24cb3d696.pdf",
+      "file_id": "5705b0bd57f1480fab66fcbd7721e298",
+      "file_name": "2.10_+N6883626RS0030002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2041399,
+      "sha256": "a7763f5edebcea67ce58c38099041964ac0459d1799fb20054962be24cb3d696"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bc248dc97e04b89b15bb9df0ab360b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/894abe5ec96ec95575ec141668fadb0cebd90d8544d07d049be05a87bb6e0c15.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/894abe5ec96ec95575ec141668fadb0cebd90d8544d07d049be05a87bb6e0c15.pdf",
+      "file_id": "6bc248dc97e04b89b15bb9df0ab360b1",
+      "file_name": "2.10+001+RFPAmend+SF-30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 235016,
+      "sha256": "894abe5ec96ec95575ec141668fadb0cebd90d8544d07d049be05a87bb6e0c15"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7472af46da87435383e01f1aed51fd96/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cbacbc955c14ed98d8d06f6ee7dd70c89fb5f9bf7a7a8c90a9cc546a543ac5da.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cbacbc955c14ed98d8d06f6ee7dd70c89fb5f9bf7a7a8c90a9cc546a543ac5da.pdf",
+      "file_id": "7472af46da87435383e01f1aed51fd96",
+      "file_name": "2.04_RFP_N6883626RS003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1078947,
+      "sha256": "cbacbc955c14ed98d8d06f6ee7dd70c89fb5f9bf7a7a8c90a9cc546a543ac5da"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d2e24a3905e4961b8db528f3b6e9a5a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c83d9ac88495a4b85a3ee00a1f5afe6ff937289f0bd1ab40614678214514dc9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c83d9ac88495a4b85a3ee00a1f5afe6ff937289f0bd1ab40614678214514dc9.pdf",
+      "file_id": "9d2e24a3905e4961b8db528f3b6e9a5a",
+      "file_name": "2.04_RFP_N6883626RS003_PPQ.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 143989,
+      "sha256": "0c83d9ac88495a4b85a3ee00a1f5afe6ff937289f0bd1ab40614678214514dc9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc07f8579154c6a944eb15f9fb397f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d699934b2c08109ed44512c78b903f3b9659a2b36370bb2340cce8a9e437a2a0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d699934b2c08109ed44512c78b903f3b9659a2b36370bb2340cce8a9e437a2a0.pdf",
+      "file_id": "bcc07f8579154c6a944eb15f9fb397f4",
+      "file_name": "2.10+002+RFPAmend+SF-30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 428134,
+      "sha256": "d699934b2c08109ed44512c78b903f3b9659a2b36370bb2340cce8a9e437a2a0"
+    }
+  ],
+  "_mirror_hash": "8c983c817b606ba0664cfbe138d06f4c752a72a7d470db9af0b85c45cd50c9fb",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.485127+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-a61c0ee383cc4df8835222e2730fc63f",
+  "title": "DA10--VA Enterprise - Data Call Centers -Pupose Statement RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a61c0ee383cc4df8835222e2730fc63f",
+  "opportunity_url": "https://sam.gov/opp/a61c0ee383cc4df8835222e2730fc63f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a61c0ee383cc4df8835222e2730fc63f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a61c0ee383cc4df8835222e2730fc63f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "36C10B26Q0084",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a61c0ee383cc4df8835222e2730fc63f",
+  "detail_text": "The purpose of this notice is to close the loop for Request for Information (RFI) 36C10B26Q0084, for Data Call Centers - RFI, which was posted on December 3, 2025. VA has released a follow-on RFI, on March 2, 2026, using Notice ID 36C10B26Q0224, NAICS 541512 Computer Systems Design Services\". Please review Notice ID 36C10B26Q0224 for additional information.",
+  "detail_text_length": 359,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/405cd4114cf440deb6faa5b70cadbb13/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/405cd4114cf440deb6faa5b70cadbb13/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9de15288f87b0021a2fe7441b4c1380e6c6cb6645c8da8515d28d6c5cdf4b47c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9de15288f87b0021a2fe7441b4c1380e6c6cb6645c8da8515d28d6c5cdf4b47c.docx",
+      "file_id": "405cd4114cf440deb6faa5b70cadbb13",
+      "file_name": "36C10B26Q0084_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14389,
+      "sha256": "9de15288f87b0021a2fe7441b4c1380e6c6cb6645c8da8515d28d6c5cdf4b47c"
+    }
+  ],
+  "_mirror_hash": "4c3b96432eb5cf2c0d4fcc925172af4dafd2a4e0e1405c316cbd84a92743680c",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.488076+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-d07f6579a76f45d09a1a10d625b8c825",
+  "title": "ATF Storage and Disposal Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d07f6579a76f45d09a1a10d625b8c825",
+  "opportunity_url": "https://sam.gov/opp/d07f6579a76f45d09a1a10d625b8c825/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d07f6579a76f45d09a1a10d625b8c825/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d07f6579a76f45d09a1a10d625b8c825",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DJA-26-XXXX-PR-XXXX",
+  "agency_path": "JUSTICE, DEPARTMENT OF.ATF ACQUISITION AND PROPERTY MGMT DIV.ATF",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d07f6579a76f45d09a1a10d625b8c825",
+  "detail_text": "THIS REQUEST FOR INFORMATION (RFI) IS FOR PLANNING PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL (RFP) OR QUOTE (RFQ). IT DOES NOT CONSTITUTE SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS RFI. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY. NOT RESPONDING TO THIS RFI DOES NOT PRECLUDE PARTICIPATION IN ANY FUTURE RFP, IF ISSUED. ALL SUBMISSIONS BECOME GOVERNMENT PROPERTY AND WILL NOT BE RETURNED. PLEASE SEE RFI ATTACHMENTS (2 total) FOR YOUR REVIEW. ANY QUESTIONS, EMAIL STEVEN.JAIMES@ATF.GOV BY 03/05/2026",
+  "detail_text_length": 707,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/617aca817b9e4109826dc5c319ae591e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/698dae1a34df473aa1f178873721f33b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/617aca817b9e4109826dc5c319ae591e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/558c0e4fcf2aa82b7aecb144e68b04a9e93bbd9ba0ed02f19c0d6fabd46977d4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/558c0e4fcf2aa82b7aecb144e68b04a9e93bbd9ba0ed02f19c0d6fabd46977d4.pdf",
+      "file_id": "617aca817b9e4109826dc5c319ae591e",
+      "file_name": "SOW+-+National+Property+Contract_DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 311689,
+      "sha256": "558c0e4fcf2aa82b7aecb144e68b04a9e93bbd9ba0ed02f19c0d6fabd46977d4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/698dae1a34df473aa1f178873721f33b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a0d0060288a041d715eaf55a0f486f413085c0d5679ba0b21eb276efe5449f7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a0d0060288a041d715eaf55a0f486f413085c0d5679ba0b21eb276efe5449f7.pdf",
+      "file_id": "698dae1a34df473aa1f178873721f33b",
+      "file_name": "ATF+Storage+and+Disposal+Services+Request+For+Information+-RFI-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 310192,
+      "sha256": "2a0d0060288a041d715eaf55a0f486f413085c0d5679ba0b21eb276efe5449f7"
+    }
+  ],
+  "_mirror_hash": "834ea00dbb4364edb45d410bad227dc58a78ab5fd0d637dade80abdd715ab047",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.655903+00:00"
+}

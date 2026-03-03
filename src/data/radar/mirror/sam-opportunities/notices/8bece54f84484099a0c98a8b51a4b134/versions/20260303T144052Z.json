@@ -1,0 +1,67 @@
+{
+  "id": "sam-8bece54f84484099a0c98a8b51a4b134",
+  "title": "Replace Remaining Water Source Heat Pumps, B4414",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bece54f84484099a0c98a8b51a4b134",
+  "opportunity_url": "https://sam.gov/opp/8bece54f84484099a0c98a8b51a4b134/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8bece54f84484099a0c98a8b51a4b134/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8bece54f84484099a0c98a8b51a4b134",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N400857507874",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC MID-ATLANTIC.NAVFACSYSCOM MID-ATLANTIC",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bece54f84484099a0c98a8b51a4b134",
+  "detail_text": "This procurement is restricted to the Mechanical MACC contractors. Only the Mechanical MACC contractors listed on the RFP cover letter may submit a proposal. See attached documents for scope of work and any applicable drawings.",
+  "detail_text_length": 227,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aee844f54d9043d68cc694d68bea388a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9cbddbbd08e48c29094fa2debe32960/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6d878c2504549208bb2c37b6dedb4f3/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aee844f54d9043d68cc694d68bea388a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68e93922ae3a389e7bd90f18c2872968408d73fdfd3205f95e625841540a6b99.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68e93922ae3a389e7bd90f18c2872968408d73fdfd3205f95e625841540a6b99.pdf",
+      "file_id": "aee844f54d9043d68cc694d68bea388a",
+      "file_name": "RFP+7507874.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 252794,
+      "sha256": "68e93922ae3a389e7bd90f18c2872968408d73fdfd3205f95e625841540a6b99"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9cbddbbd08e48c29094fa2debe32960/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/48abc7f5867d5b6b17f5e465ebb730d1a8ec7010142a80ce358d4943cca8d439.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/48abc7f5867d5b6b17f5e465ebb730d1a8ec7010142a80ce358d4943cca8d439.pdf",
+      "file_id": "e9cbddbbd08e48c29094fa2debe32960",
+      "file_name": "WO7507874+STATEMENT+OF+WORK.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122604,
+      "sha256": "48abc7f5867d5b6b17f5e465ebb730d1a8ec7010142a80ce358d4943cca8d439"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6d878c2504549208bb2c37b6dedb4f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/338394d46de9e7a53db13a73401b357bdf639b369251f7ee7f71a9519d1e479e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/338394d46de9e7a53db13a73401b357bdf639b369251f7ee7f71a9519d1e479e.pdf",
+      "file_id": "f6d878c2504549208bb2c37b6dedb4f3",
+      "file_name": "Amendment+0001+7507874.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12435235,
+      "sha256": "338394d46de9e7a53db13a73401b357bdf639b369251f7ee7f71a9519d1e479e"
+    }
+  ],
+  "_mirror_hash": "d56c35720a16f9b1be87401921c3de9baf02921bb369afab1cb81806b9bf13e7",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.495672+00:00"
+}

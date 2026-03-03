@@ -1,0 +1,48 @@
+{
+  "id": "sam-f8d8f89208a54c63b7141c99f0a6047d",
+  "title": "Request for Information (RFI) Forensic Pathology",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f8d8f89208a54c63b7141c99f0a6047d",
+  "opportunity_url": "https://sam.gov/opp/f8d8f89208a54c63b7141c99f0a6047d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f8d8f89208a54c63b7141c99f0a6047d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f8d8f89208a54c63b7141c99f0a6047d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "15F06726RFI0101",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.FBI-JEH",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f8d8f89208a54c63b7141c99f0a6047d",
+  "detail_text": "The Federal Bureau of Investigation (FBI) mission is to protect and defend the United States against terrorist and foreign intelligence threats, to uphold and enforce the criminal laws of the United States, and to provide leadership and criminal justice services to federal, state, municipal, and international agencies and partners. The FBI performs these responsibilities in a manner that is responsive to the needs of the public and is faithful to the Constitution of the United States. The Critical Incident Response Group (CIRG), Investigative and Operational Support Section (IOSS) which houses the Behavioral Analysis Units (BAUs), has a continuing requirement to assist federal, state, local, and foreign law enforcement agencies in matters involving child abductions, mysterious disappearances of children, child homicides, and other child victimization investigations. Specifically, BAU-3 which focuses on Violent Crimes Against Children has a need for a trained medical examiner to provide Forensic Pathology services by conducting on-site case consultations telephone conference calls with investigators at the IOSS on all aspects of pediatric and adult death investigations.",
+  "detail_text_length": 1187,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb86aac6e9a0445aabda5b3946b31e0e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb86aac6e9a0445aabda5b3946b31e0e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d15904fe3e47b055ddb989f60e81d212b3e5f09839a40bedd46d0fe0dd527af8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d15904fe3e47b055ddb989f60e81d212b3e5f09839a40bedd46d0fe0dd527af8.pdf",
+      "file_id": "eb86aac6e9a0445aabda5b3946b31e0e",
+      "file_name": "RFI_Forensic+Pathology_15F06726RFI0101.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 418887,
+      "sha256": "d15904fe3e47b055ddb989f60e81d212b3e5f09839a40bedd46d0fe0dd527af8"
+    }
+  ],
+  "_mirror_hash": "4ebbe051b062145049263b6db373e7d6ae0133a6358c969b121c9b663b8d004f",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.516488+00:00"
+}

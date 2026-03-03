@@ -1,0 +1,57 @@
+{
+  "id": "sam-e89e9b9e45664bce9c52d4bed81018c0",
+  "title": "ISMUG Yearly Meeting",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e89e9b9e45664bce9c52d4bed81018c0",
+  "opportunity_url": "https://sam.gov/opp/e89e9b9e45664bce9c52d4bed81018c0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e89e9b9e45664bce9c52d4bed81018c0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e89e9b9e45664bce9c52d4bed81018c0",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6426726Q4020",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-04",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e89e9b9e45664bce9c52d4bed81018c0",
+  "detail_text": "This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in Subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; proposals are being requested and a written solicitation will not be issued. The solicitation document and incorporated provisions and clauses are those in effect through Federal Acquisition Circular FAC 2025-06 October 1, 2025. The provisions at 52.212-1, 52.212-3 and the clauses at 52.212-4, 52.212-5 apply to this acquisition; no addenda are attached. The Naval Surface Warfare Center (NSWC) Corona Division intends to use other than full and open competition to award a sole source Firm Fixed Price (FFP) contract to Long Beach Marriott. This is an all-or-none requirement and partial quotes will be deemed unresponsive and will not be evaluated. The Government will award on a single purchase order to the responsible Offeror whose offer conforms to the requirements as stated in the Solicitation and is most advantageous to the Government based on the criteria listed in section L and section M of the Solicitation. Interested parties may identify their interest and capability to respond to the requirement, or by submitting capability statements. This notice of interest is not a request for competitive quotes. Offerors must be registered in SAM and all responsible sources may submit a quotation which, if timely received, will be considered by the Agency. Quotes are due no later than the response date in the posting. Responses/offers shall be submitted electronically, PDF or MS Word Format to email address in the posting. Any amendment(s) issued to this Request for Quote (RFQ) will be published on this website. Therefore, it is the Offerors responsibility to visit this website frequently for updates on this procurement. No telephone requests.",
+  "detail_text_length": 1902,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9324c97d8a094de8be82c427bd9e4d37/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a8adceb915f847b69a211fc8ac606695/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9324c97d8a094de8be82c427bd9e4d37/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9035d404c759340973280ba381552a6bdb609f3803e46ccd7fe6cf18ef06db17.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9035d404c759340973280ba381552a6bdb609f3803e46ccd7fe6cf18ef06db17.pdf",
+      "file_id": "9324c97d8a094de8be82c427bd9e4d37",
+      "file_name": "Comb+Synopsis_N6426726Q4020.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2011955,
+      "sha256": "9035d404c759340973280ba381552a6bdb609f3803e46ccd7fe6cf18ef06db17"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a8adceb915f847b69a211fc8ac606695/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d7e51577699c79d1888def21ff4291bb2d5860fbe93467e8bf42f6e41bf83c00.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d7e51577699c79d1888def21ff4291bb2d5860fbe93467e8bf42f6e41bf83c00.pdf",
+      "file_id": "a8adceb915f847b69a211fc8ac606695",
+      "file_name": "Wage+Determination+2015-5613_N6426726Q4020.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 453209,
+      "sha256": "d7e51577699c79d1888def21ff4291bb2d5860fbe93467e8bf42f6e41bf83c00"
+    }
+  ],
+  "_mirror_hash": "81f1d6cabb87739c5696065c791af302b9abb794770c571d4b4094cedf6fb8b2",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.424539+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-dda371ef276546e78cfee10d74013a34",
+  "title": "Drive Unit, Angle",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dda371ef276546e78cfee10d74013a34",
+  "opportunity_url": "https://sam.gov/opp/dda371ef276546e78cfee10d74013a34/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dda371ef276546e78cfee10d74013a34/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dda371ef276546e78cfee10d74013a34",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPRDL1-26-R-0026",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dda371ef276546e78cfee10d74013a34",
+  "detail_text": "THIS IS A PRE-SOLICITATION NOTICE ITEM: Drive Unit, Angle NSN: 3010-01-485-0432 P/N: 10863320-1 QTY: 177 EA OPTION: 100% FOB: Destination THE OFFER DUE DATE IS ON OR ABOUT 4/15/2026 (SEE SOLICITATION FOR ACTUAL OFFER DUE DATE). SEE SAM.GOV FOR A COPY OF THE SOLICITATION. THE SOLICITATION WILL INSTRUCT HOW TO OBTAIN DRAWINGS. SMALL BUSINESS SET-ASIDE. ONLY OFFERS FROM SMALL BUSINESS CONCERNS WILL BE CONSIDERED. REVERSE AUCTION The solicitation will contain DLAD provision 52.215-9023, Reverse Auction, which allows for the use of a reverse auction as a pricing technique. After the solicitation closes, the contracting officer will determine if a reverse auction will be held. If a reverse auction is held, contractors must be registered in the reverse auction system in order to participate in the auction. Additionally, the contractor representative participating in the auction must have taken the on-line reverse auction training prior to the auction. Registration, on-line training, and other information regarding the reverse auction can be found at https://dla.procurexinc.com.",
+  "detail_text_length": 1087,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3687e94161184043b75dcb8d58596490/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2067cf90a1743ffa72c89689e4a6ebc/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3687e94161184043b75dcb8d58596490/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ce7b2f62f618c8a5181e39325bd7398a2b64f12a0d694279b6f41733549cf665.zip",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ce7b2f62f618c8a5181e39325bd7398a2b64f12a0d694279b6f41733549cf665.zip",
+      "file_id": "3687e94161184043b75dcb8d58596490",
+      "file_name": "SPRDL126R0026+TDP+-+Drive+Unit+EH6C0060EH.zip",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12015704,
+      "sha256": "ce7b2f62f618c8a5181e39325bd7398a2b64f12a0d694279b6f41733549cf665"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2067cf90a1743ffa72c89689e4a6ebc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/441494939197c5631b5ec4c3934d6a4aa2e3fef21e4aadc62232b8be6217df4f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/441494939197c5631b5ec4c3934d6a4aa2e3fef21e4aadc62232b8be6217df4f.pdf",
+      "file_id": "f2067cf90a1743ffa72c89689e4a6ebc",
+      "file_name": "SPRDL126R0026+SPI+-+AK14850432.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 328421,
+      "sha256": "441494939197c5631b5ec4c3934d6a4aa2e3fef21e4aadc62232b8be6217df4f"
+    }
+  ],
+  "_mirror_hash": "5486c818297883bbb238213049a12703bf982ce96b521348a6310cdd6a260b6a",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.742542+00:00"
+}

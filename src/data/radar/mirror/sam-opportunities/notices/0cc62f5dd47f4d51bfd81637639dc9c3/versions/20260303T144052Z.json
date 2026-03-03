@@ -1,0 +1,57 @@
+{
+  "id": "sam-0cc62f5dd47f4d51bfd81637639dc9c3",
+  "title": "41--ECAO Chiller Compressor Replacement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0cc62f5dd47f4d51bfd81637639dc9c3",
+  "opportunity_url": "https://sam.gov/opp/0cc62f5dd47f4d51bfd81637639dc9c3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0cc62f5dd47f4d51bfd81637639dc9c3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0cc62f5dd47f4d51bfd81637639dc9c3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140R6026Q0037",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.GREAT PLAINS REGIONAL OFFICE",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0cc62f5dd47f4d51bfd81637639dc9c3",
+  "detail_text": "The Bureau of Reclamation, Eastern Colorado Area Office (ECAO), has a requirement for the supply and incidental installation of a new commercially available, water-cooled chiller to replace the existing 50-ton unit located at the ECAO Main Office in Loveland, Colorado. The principal purpose of this acquisition is the purchase of a newly manufactured chiller unit. Installation, removal of the existing unit (including refrigerant recovery and disposal), mechanical and electrical tie-ins, startup, commissioning, and training are incidental to the equipment purchase. This notice is issued for market research purposes in accordance with FAR Part 10. There is no solicitation at this time. Please see the attached Statement of Work (SOW) and Sources Sought Notice (SSN) for detailed technical requirements and submission instructions.",
+  "detail_text_length": 836,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a92ba4002d649a4bf204940c66d5f6d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec6cc18ae95a45958ea7f8746f356506/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a92ba4002d649a4bf204940c66d5f6d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7fd9b847a928b92de97594b3fb5f267e99ee7abfc24f031cc40bf77a0c87d87f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7fd9b847a928b92de97594b3fb5f267e99ee7abfc24f031cc40bf77a0c87d87f.pdf",
+      "file_id": "9a92ba4002d649a4bf204940c66d5f6d",
+      "file_name": "Chiller_Compressor_Replacement_-_SOW_DRAFT_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 826110,
+      "sha256": "7fd9b847a928b92de97594b3fb5f267e99ee7abfc24f031cc40bf77a0c87d87f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec6cc18ae95a45958ea7f8746f356506/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2822ed78b686e27dcd95d6daca7835e754e44c3e7d54531192b698d2cd8cd996.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2822ed78b686e27dcd95d6daca7835e754e44c3e7d54531192b698d2cd8cd996.pdf",
+      "file_id": "ec6cc18ae95a45958ea7f8746f356506",
+      "file_name": "Sources_Sought_Notice_-_Chiller_Compressor_Replacement_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 131098,
+      "sha256": "2822ed78b686e27dcd95d6daca7835e754e44c3e7d54531192b698d2cd8cd996"
+    }
+  ],
+  "_mirror_hash": "2acd255f3cebb4fed9eb102336606e93d1f3ce1eb1b9ccbf5be0fc951aec19bc",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.697692+00:00"
+}

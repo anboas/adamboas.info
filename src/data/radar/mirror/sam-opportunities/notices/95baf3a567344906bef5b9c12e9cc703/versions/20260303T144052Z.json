@@ -1,0 +1,46 @@
+{
+  "id": "sam-95baf3a567344906bef5b9c12e9cc703",
+  "title": "USACE Corpus Christi Resident Office Janitorial and Lawn Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95baf3a567344906bef5b9c12e9cc703",
+  "opportunity_url": "https://sam.gov/opp/95baf3a567344906bef5b9c12e9cc703/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/95baf3a567344906bef5b9c12e9cc703/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "95baf3a567344906bef5b9c12e9cc703",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912HY26X1BAR",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTHWESTERN.ENDIST GALVESTON.W076 ENDIST GALVESTON",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95baf3a567344906bef5b9c12e9cc703",
+  "detail_text": "The approximated areas are as follows: -Building area is 4,137.78 square feet per floor. -The lawn is 40,100 square feet, which is equivalent to 0.9206 acres. Sources Sought Attached",
+  "detail_text_length": 182,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31dd3d2bd4864e1d8bbac49ba7bcca3c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31dd3d2bd4864e1d8bbac49ba7bcca3c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/51df6cf71ed1de23400ca1333bae9e22c07bc79c5cc709774d6e10d2e4c054c6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/51df6cf71ed1de23400ca1333bae9e22c07bc79c5cc709774d6e10d2e4c054c6.pdf",
+      "file_id": "31dd3d2bd4864e1d8bbac49ba7bcca3c",
+      "file_name": "Sources+Sought+Synopsis_26X1BAR_26+Feb+26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 97801,
+      "sha256": "51df6cf71ed1de23400ca1333bae9e22c07bc79c5cc709774d6e10d2e4c054c6"
+    }
+  ],
+  "_mirror_hash": "c31b808997de95c22875e8d96ab2735d29aaeaa70cd9dec61c9a965390e770dd",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.722208+00:00"
+}

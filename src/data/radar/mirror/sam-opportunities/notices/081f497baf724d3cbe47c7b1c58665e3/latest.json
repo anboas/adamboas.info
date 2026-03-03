@@ -1,0 +1,57 @@
+{
+  "id": "sam-081f497baf724d3cbe47c7b1c58665e3",
+  "title": "Bakersfield Activation Dental Exam Chairs/Stools",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=081f497baf724d3cbe47c7b1c58665e3",
+  "opportunity_url": "https://sam.gov/opp/081f497baf724d3cbe47c7b1c58665e3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/081f497baf724d3cbe47c7b1c58665e3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "081f497baf724d3cbe47c7b1c58665e3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26Q0082",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=081f497baf724d3cbe47c7b1c58665e3",
+  "detail_text": "532 TRAD DELIVERY SYSTEM",
+  "detail_text_length": 24,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97b9fa4e9d584b82b457b39ca3e960de/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9997c93b34114dacb40665d732227e1f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97b9fa4e9d584b82b457b39ca3e960de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8c79542123f645c740ad5f1aef8e57e17b6a5f520507c8b1dcef3cdd8dd42caf.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8c79542123f645c740ad5f1aef8e57e17b6a5f520507c8b1dcef3cdd8dd42caf.docx",
+      "file_id": "97b9fa4e9d584b82b457b39ca3e960de",
+      "file_name": "SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 39114,
+      "sha256": "8c79542123f645c740ad5f1aef8e57e17b6a5f520507c8b1dcef3cdd8dd42caf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9997c93b34114dacb40665d732227e1f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9c5ccfc35c2c7792050e6c42036d4cc0baa396bc66029232471e330fac4c3380.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9c5ccfc35c2c7792050e6c42036d4cc0baa396bc66029232471e330fac4c3380.pdf",
+      "file_id": "9997c93b34114dacb40665d732227e1f",
+      "file_name": "36C24W26Q0082.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114623,
+      "sha256": "9c5ccfc35c2c7792050e6c42036d4cc0baa396bc66029232471e330fac4c3380"
+    }
+  ],
+  "_mirror_hash": "3e11746d964596e96b8c22197e7cf9dd27d4c8776a07a602e560cb55ef8a0202",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.689789+00:00"
+}

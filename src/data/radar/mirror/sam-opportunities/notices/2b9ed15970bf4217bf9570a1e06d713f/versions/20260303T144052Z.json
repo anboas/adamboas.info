@@ -1,0 +1,45 @@
+{
+  "id": "sam-2b9ed15970bf4217bf9570a1e06d713f",
+  "title": "STOP ASSEMBLY,LOW P, N00383-26-Q-B065",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b9ed15970bf4217bf9570a1e06d713f",
+  "opportunity_url": "https://sam.gov/opp/2b9ed15970bf4217bf9570a1e06d713f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2b9ed15970bf4217bf9570a1e06d713f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2b9ed15970bf4217bf9570a1e06d713f",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00383-26-Q-B065",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b9ed15970bf4217bf9570a1e06d713f",
+  "detail_text": "N0038326PR0R237 FMS _REPAIR This solicitation is for the repair of 1 unit of National Stock Number (NSN) 1610 011424521 • Induction Period The induction period for the initial units in this order is 365 calendar days from the date of contract award. The Government reserves the right to extend this period by an additional 365 days, for a total of two years. Any unused induction slots from the initial year may be carried over into the second year. • Pricing and Options The contractor shall propose option pricing for a maximum of 200 units over the entire contract period, inclusive of the initial quantity. If pricing will change after the first 365 days, please provide separate pricing for the second year. • Contract Award The Government reserves the right to place the initial order for any number of units up to the specified maximum. For threshold purposes, the total contract value will be calculated by multiplying the highest proposed unit price by the maximum number of units. All Terms and Conditions of BOA N0038322GTV01 Apply. The Requested RTAT for this repair is 90 Days",
+  "detail_text_length": 1089,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67d4560e30a34fa585011af7a0577906/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67d4560e30a34fa585011af7a0577906/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba8dbefc1added4dfcd1c86e2ddd699843190757fe56815437e8d6c935bde35a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba8dbefc1added4dfcd1c86e2ddd699843190757fe56815437e8d6c935bde35a.pdf",
+      "file_id": "67d4560e30a34fa585011af7a0577906",
+      "file_name": "3.01_Solicitation_N0038326PR0R237.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28716588,
+      "sha256": "ba8dbefc1added4dfcd1c86e2ddd699843190757fe56815437e8d6c935bde35a"
+    }
+  ],
+  "_mirror_hash": "0e3482ed92b1bde83fb28d3be3d0796e1ddee59be91045b44f0f73028eb58b40",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.504573+00:00"
+}

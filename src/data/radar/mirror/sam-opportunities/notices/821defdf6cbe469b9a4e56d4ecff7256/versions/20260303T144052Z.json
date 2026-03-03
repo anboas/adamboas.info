@@ -1,0 +1,33 @@
+{
+  "id": "sam-821defdf6cbe469b9a4e56d4ecff7256",
+  "title": "OCTO-FloX System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=821defdf6cbe469b9a4e56d4ecff7256",
+  "opportunity_url": "https://sam.gov/opp/821defdf6cbe469b9a4e56d4ecff7256/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/821defdf6cbe469b9a4e56d4ecff7256/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "821defdf6cbe469b9a4e56d4ecff7256",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "1163769",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=821defdf6cbe469b9a4e56d4ecff7256",
+  "detail_text": "Requirement for a rugged, field-ready hyperspectral spectrometer capable of sufficiently high spectral resolution to acquire solar-induced chlorophyll fluorescence and sequentially measuring six or more targets. Only minor follow-on work (firmware updates) are expected. Product must be equivalent to the OCTO-FloX produced by JB Hyperspectral Devices GmbH. Salient characteristics for Item 0001: The following are minimum specifications and performance criteria for the unit: • Spectral resolution fine enough to retrieve solar-induced chlorophyll fluorescence (SIF) from telluric and solar absorption features (< 1 nm FWHM). • Wavelength range wide enough to cover 500 – 900 nm to enable simultaneous acquisition of red SIF at 687 nm; far-red SIF at 760 nm; photochemical reflectance index (PRI) at 530 nm and 570 nm; normalized difference vegetation index (NDVI) and near-infrared reflectance of vegetation (NIRv) at 650 nm and 860 nm. • Capable of rapid acquisition across multiple (at least 6) vegetative targets in different plots or growth chambers using fixed fiber optics. • Capable of both hemispherical-conical or bi-hemispherical configurations, adjustable by user through removable cosine correctors designed for outdoor use. • Weatherproof (IP67 rated) to allow deployment of unit in variable outdoor environments. • Integrated thermal regulation to maintain spectrometer temperature consistently at 20 degrees Celsius. Intelligent temperature management modes for power saving. Heatingo for cold conditions. • System operational temperature range from -10 to 50 degrees Celsius.• Automatic optimization of integration time to maximize spectrometer dynamic range across 0-2000 PPFD. • Correction for dark current and detector nonlinearity. • Wavelength calibration and optimization of spectral shift. • Radiometric calibration for both bare fiber and cosine corrected fiber configurations. Salient characteristics for Item 0002 – JB COS Cosine Receptor for the measurement of solar irradiance. Must be equivalent to the JB COS produced by JB Hyperspectral. Salient Characteristics for Item 0002: • Must be 100 percent compatible with the other item(s) described in this notice (see Item 0001). • Cosine error of < 10% at 80 degrees • Spectral range of 400 nm - 1000 nm",
+  "detail_text_length": 2282,
+  "resource_links": [],
+  "resource_count": 0,
+  "resource_items": null,
+  "_mirror_hash": "ddb8956274d4a47b1b8ff2bcdb051dcf6d5b6c6722bbc72c2d806e8e4816e9e8",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.719991+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-d8fe5593454b4eefa35f94a862407a55",
+  "title": "ENGINE,OUTBOARD MUL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d8fe5593454b4eefa35f94a862407a55",
+  "opportunity_url": "https://sam.gov/opp/d8fe5593454b4eefa35f94a862407a55/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d8fe5593454b4eefa35f94a862407a55/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d8fe5593454b4eefa35f94a862407a55",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRAL126R0009",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND ALBANY.DLA  LAND AND MARITIME (ALBANY)",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d8fe5593454b4eefa35f94a862407a55",
+  "detail_text": "DLA Weapons Support (Columbus) – is preparing to solicit a one-time buy for the following NSN: NSN – 2805-01-555-6505 – ENGINE,OUTBOARD MUL The currently approved manufacturer and associated part number for this item is as follows: BRP US Inc (CAGE 1UVT5) for Part Number E55MJRLAF. Sources interested in becoming an approved source for this NSN must submit the appropriate information as outlined in DLAD Procurement Notes L04, Offers for Part Number Items and M06, Evaluation of Offers for Part Numbered Items. Sources interested in offering on this solicitation should complete the attached market survey and return the completed copies to Cerita Sellers via email at cerita.sellers@dla.mil by 1:00 PM EST on 12 March 2026. Destination Information: SW3121 DLA DISTRIBUTION ALBANY DDAG-T MCLB BLDG 1221 DOOR 20 814 RADFORD BLVD ALBANY GA 31704-1128 US",
+  "detail_text_length": 853,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca8a475881854b9e96be533ef0536ef9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca8a475881854b9e96be533ef0536ef9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0e319e99045eb087cb41bc9fa6aaa12c40456119c26e5ab8d43a9956c047a526.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0e319e99045eb087cb41bc9fa6aaa12c40456119c26e5ab8d43a9956c047a526.docx",
+      "file_id": "ca8a475881854b9e96be533ef0536ef9",
+      "file_name": "Market+Survey+SPRAL126R0009.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40342,
+      "sha256": "0e319e99045eb087cb41bc9fa6aaa12c40456119c26e5ab8d43a9956c047a526"
+    }
+  ],
+  "_mirror_hash": "029a5c8695a89f1313ceadae958e3feab071c93f769c940342e0dace54ee92e2",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.691483+00:00"
+}

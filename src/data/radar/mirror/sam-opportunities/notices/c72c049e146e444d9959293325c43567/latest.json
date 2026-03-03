@@ -1,0 +1,68 @@
+{
+  "id": "sam-c72c049e146e444d9959293325c43567",
+  "title": "Sentinel 3.0_2026 Updated Market Research",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c72c049e146e444d9959293325c43567",
+  "opportunity_url": "https://sam.gov/opp/c72c049e146e444d9959293325c43567/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c72c049e146e444d9959293325c43567/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c72c049e146e444d9959293325c43567",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "75F40126SSN00100",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.FOOD AND DRUG ADMINISTRATION.FDA OFFICE OF ACQ  GRANT SVCS",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c72c049e146e444d9959293325c43567",
+  "detail_text": "The U.S. Food and Drug Administration (FDA) issues this Noitce as a means of conducting market research to inform acquisition planning in accordance with the Federal Acquisition Regulation (FAR) Parts 7 and 10. This notice is not a Request for Proposal (RFP), Request for Quotation (RFQ), or Invitation for Bid (IFB), and no award will result from this announcement. As part of its market research, the FDA previously issued Notice FDARFI5302025. The operational framework described in that notice has since been revised. The FDA now anticipates supporting its Sentinel 3.0 programmatic requirements with the following contract structure: Contract 1: Sentinel 3.0 – Data Partners (Tiers 1–6, previously Tiers 1–5) providing access to multiple types of healthcare data. The FDA is considering a Data Broker–led acquisition model in which a prime contractor is responsible for acquiring, licensing, governing, and providing access to healthcare data across Tiers 1–6, including coordination with third-party data providers. Respondents should assume a single prime contractor retains full contractual, legal, and compliance responsibility for all data delivered under this model. Contract 2: Sentinel 3.0 – Government-Owned, Contractor-Operated (GOCO) platform (Tier 7) serving as a data repository, enabling interoperability, and delivering informatics tools and capabilities. Uder this model, the Government will not require platform development, platform hosting, platform replacement, alternative architectures, or contractor-operated environments. All pricing responses should assume data is delivered to, accessed through, or integrated with the existing Government platform. Contract 3: Sentinel 3.0 – Scientific Support Services (Tier 8). Provide scientific services including data analytics support (e.g., capability to conduct complex pharmacoepidemiology and pharmacovigilance studies, and advanced analytics). Specifically, under this notice, the Government is seeking information to better understand the commercial market’s capabilities to support Tiers 1–6 under a Data Broker–led acquisition model for Sentinel 3.0. The Government anticipates requiring the expertise of an experienced and qualified provider to acquire, aggregate, de-identify, govern, license, and facilitate access to healthcare data across multiple data types and sources. This may include coordination and management of third-party data providers, as outlined in the draft Performance Work Statement (PWS). See attached documents for complete notice.",
+  "detail_text_length": 2534,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0570642f16814c41a86441a45de91617/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2391df4e2186483380815216034f8e84/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/712dd0db236841e58f9b9318b1e3a012/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0570642f16814c41a86441a45de91617/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/87c88a94de18ac3b03a1623bef6bd294c9f38da02fe491bbfe3362975fb2eb89.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/87c88a94de18ac3b03a1623bef6bd294c9f38da02fe491bbfe3362975fb2eb89.xlsx",
+      "file_id": "0570642f16814c41a86441a45de91617",
+      "file_name": "DRAFT+Data+Characteristics+Table+-+Attachment+H.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43126,
+      "sha256": "87c88a94de18ac3b03a1623bef6bd294c9f38da02fe491bbfe3362975fb2eb89"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2391df4e2186483380815216034f8e84/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5a0087815c0eb09ec67b61f82138f3e31d65fc07a1222c3a3d182da45583a73b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5a0087815c0eb09ec67b61f82138f3e31d65fc07a1222c3a3d182da45583a73b.pdf",
+      "file_id": "2391df4e2186483380815216034f8e84",
+      "file_name": "Sentinel+3.0_SSN+-+Data+Broker+Services+03022026+v1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 221414,
+      "sha256": "5a0087815c0eb09ec67b61f82138f3e31d65fc07a1222c3a3d182da45583a73b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/712dd0db236841e58f9b9318b1e3a012/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/97d2e45fe53233535d1df82ea22b2bf29c3d7712ea8013218fa841439c793dd9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/97d2e45fe53233535d1df82ea22b2bf29c3d7712ea8013218fa841439c793dd9.pdf",
+      "file_id": "712dd0db236841e58f9b9318b1e3a012",
+      "file_name": "DRAFT+PWS-+Sentinel+3.0+Data+Broker+Services+-Tiers+1-6-+3.2.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 720442,
+      "sha256": "97d2e45fe53233535d1df82ea22b2bf29c3d7712ea8013218fa841439c793dd9"
+    }
+  ],
+  "_mirror_hash": "7a089b6e8daab55f37b07994d7834e7a6c67283777f697514a0eba247c798b2f",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.768576+00:00"
+}

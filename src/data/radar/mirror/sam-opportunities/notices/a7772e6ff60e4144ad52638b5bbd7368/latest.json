@@ -1,0 +1,45 @@
+{
+  "id": "sam-a7772e6ff60e4144ad52638b5bbd7368",
+  "title": "Virginia Class SSTG",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7772e6ff60e4144ad52638b5bbd7368",
+  "opportunity_url": "https://sam.gov/opp/a7772e6ff60e4144ad52638b5bbd7368/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a7772e6ff60e4144ad52638b5bbd7368/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a7772e6ff60e4144ad52638b5bbd7368",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N32253-26-Q-0029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PEARL HARBOR NAVAL SHIPYARD IMF",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7772e6ff60e4144ad52638b5bbd7368",
+  "detail_text": "The Pearl Harbor Naval Shipyard and Intermediate Maintenance Facility (PHNSY&IMF) is issuing a request for quote (RFQ) to Northrop Grumman Systems Corporation/Northrop Grumman Marine Systems, in accordance with RFO 6.103-1, for a Firm Fixed Price contract to perform repairs on SSTG No. 1 and No. 2 onboard a Virigina Class Submarine. In accordance with Class Deviation 2026-O0017 (DFARS PGI 206.103-170(d)) a sources sought notice, N32253-26-Q-0002, was posted to the Government Point of Entry (GPE), SAM.gov, from 16 December 2025 to 30 December 2025 to satisfy this requirement. The Government received one response that was deemed to be incapable in performing the requirement. The applicable North American Industry Classification System (NAICS) code assigned to this procurement is 336611 Ship Building and Repair with a size standard of 1,300 employees. The Product Service Code is J020 Maintenance, Repair, Rebuilding of Equipment-Ship and Marine Equipment. Please note the following: *This solicitation is available upon request only. Please email both the primary and secondary point of contacts listed in this posting to obtain this solicitation.* • The Offer must be submitted in accordance with the CLIN structure and instructions established in the Solicitation. • All Solicitation amendments must be acknowledged in offeror submission. • All questions regarding the solicitation shall be submitted in writing via email to the listed POCs. This solicitation is prepared in accordance with the format in FAR Part 13, as supplemented with additional information included with this notice. This solicitation document and incorporated provisions and clauses are those in effect through Revolutionary FAR Overhaul 01 February 2026, Federal Acquisitions Circular (FAC) 2025-06, DFARS (last updated 11/10/2025) and NMCARS 26-02.",
+  "detail_text_length": 1835,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4baa18030848484abb7a6aced616e5c2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4baa18030848484abb7a6aced616e5c2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/16ccff4c825044b24b8babace70e4554ba3d8abbd7703dcf9e4e294b2e144ed1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/16ccff4c825044b24b8babace70e4554ba3d8abbd7703dcf9e4e294b2e144ed1.pdf",
+      "file_id": "4baa18030848484abb7a6aced616e5c2",
+      "file_name": "HIRMC-502-26_SOW_rev1_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 332993,
+      "sha256": "16ccff4c825044b24b8babace70e4554ba3d8abbd7703dcf9e4e294b2e144ed1"
+    }
+  ],
+  "_mirror_hash": "9fa53f01b4281549d134da7f41c2b49cd58b9cef73286d09ee68572d03f56828",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.569831+00:00"
+}

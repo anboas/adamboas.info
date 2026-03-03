@@ -1,0 +1,57 @@
+{
+  "id": "sam-585b1152a4b34782985811bc6dd8a873",
+  "title": "A&E Replace Upper Digester Compressors",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=585b1152a4b34782985811bc6dd8a873",
+  "opportunity_url": "https://sam.gov/opp/585b1152a4b34782985811bc6dd8a873/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/585b1152a4b34782985811bc6dd8a873/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "585b1152a4b34782985811bc6dd8a873",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FTQW261406",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.PACIFIC AIR FORCES.FA5004  354 CONS PK",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=585b1152a4b34782985811bc6dd8a873",
+  "detail_text": "The Sources Sought notice is posted by the Government agency seeking possible sources for a project. This notice is not a solicitation for work or a request for a project. The purpose of this notice is to identify interested and capable vendors to perform the work described below and to incorporate the resuts of this notice into the Government's Market Research Report. This project encompasses design of the replacement of the upper digester compressors 1 & 2; assessment of the existing compressors, piping, and all related appurtenances and devices; collecting/reviewing project data and records; evaluation of alternatives; developing design concepts and cost estimates; attendance and participation in review meetings; and making revisions requested by the Government. The contractor is expected to submit intermediate design documents and ultimately produce a complete design based on specified requirements and comments received during the 65%, 95%, and 100% design review meetings. If interested, please respond with your cage code to 354CONS.PKA.Designs@us.af.mil.",
+  "detail_text_length": 1075,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3828bd578b9d4adca45b445c6ca5c7ee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea50f73cd3c048658c8b67c36da03047/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3828bd578b9d4adca45b445c6ca5c7ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2fb9ad3671be34ebfc81ea25eaf4f869722746e3ba29ec183a818957f048f7d3.zip",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2fb9ad3671be34ebfc81ea25eaf4f869722746e3ba29ec183a818957f048f7d3.zip",
+      "file_id": "3828bd578b9d4adca45b445c6ca5c7ee",
+      "file_name": "Digester+As-Builts+--Div+1+Specifications+--+Div+1+Environmental.zip",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20216397,
+      "sha256": "2fb9ad3671be34ebfc81ea25eaf4f869722746e3ba29ec183a818957f048f7d3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea50f73cd3c048658c8b67c36da03047/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b76e289be343c1a2d1f5bb4b833fafa84031fce94f61a2a708c54b7ba0348e06.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b76e289be343c1a2d1f5bb4b833fafa84031fce94f61a2a708c54b7ba0348e06.pdf",
+      "file_id": "ea50f73cd3c048658c8b67c36da03047",
+      "file_name": "03.+FTQW261406-+Dgst+Compressors-+SOW-+17+Dec+25.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 250237,
+      "sha256": "b76e289be343c1a2d1f5bb4b833fafa84031fce94f61a2a708c54b7ba0348e06"
+    }
+  ],
+  "_mirror_hash": "5cb6931f9606ff250cb0d06ab927028b90c5de0a29fd6570d20c26b40983a806",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.683379+00:00"
+}

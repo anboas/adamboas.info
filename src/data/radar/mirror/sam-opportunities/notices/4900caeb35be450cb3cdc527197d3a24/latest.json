@@ -1,0 +1,46 @@
+{
+  "id": "sam-4900caeb35be450cb3cdc527197d3a24",
+  "title": "NOTICE OF INTENT TO AWARD SOLE SOURCE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4900caeb35be450cb3cdc527197d3a24",
+  "opportunity_url": "https://sam.gov/opp/4900caeb35be450cb3cdc527197d3a24/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4900caeb35be450cb3cdc527197d3a24/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4900caeb35be450cb3cdc527197d3a24",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "TAGM0000-26-00014",
+  "agency_path": "COMMERCE, DEPARTMENT OF.OFFICE OF THE SECRETARY.DEPT OF COMMERCE SSPO",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4900caeb35be450cb3cdc527197d3a24",
+  "detail_text": "This is a notice of intent to award a sole source contract. Pursuant to Revolutionary FAR Overhaul (RFO) FAR 12.102 and 41 U.S.C. § 1901, the Government intends to award a firm-fixed-price contract to The Financial Times Limited for commercial subscription access to the fDi Markets database in support of SelectUSA requirements. The Department of Commerce (DOC), Shared Services Procurement Office (SSPO), on behalf of SelectUSA, requires access to a global foreign direct investment (FDI) database providing current and historical greenfield investment data, early investment signals, company investment intelligence, and exportable analytical reporting capabilities supporting investment attraction activities. The anticipated period of performance will consist of a base period with three one‑year option periods. THIS NOTICE IS FOR INFORMATIONAL PURPOSES ONLY AND DOES NOT CONSTITUTE A REQUEST FOR PROPOSALS. Any responsible source that believes it can meet the requirement may submit a capability statement demonstrating its ability to satisfy the Government’s needs. Capability statements must be submitted in writing within fifteen (15) calendar days of publication of this notice to the Contracting Officer. Inquiries will only be accepted via email to the Primary Point of Contact: Alicia Brister at abrister@doc.gov .",
+  "detail_text_length": 1328,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/81a560646e364107902e261199f5704a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/81a560646e364107902e261199f5704a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bc785e74357871ca5d4a9fe1b83f30e6733a34175f0c468762146068d73c0431.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bc785e74357871ca5d4a9fe1b83f30e6733a34175f0c468762146068d73c0431.docx",
+      "file_id": "81a560646e364107902e261199f5704a",
+      "file_name": "JFOC.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 743268,
+      "sha256": "bc785e74357871ca5d4a9fe1b83f30e6733a34175f0c468762146068d73c0431"
+    }
+  ],
+  "_mirror_hash": "c7fbdd026816c107bb047997305e348c04a117e08f2e2e61ac6eb54646486efb",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.737082+00:00"
+}

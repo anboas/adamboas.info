@@ -1,0 +1,58 @@
+{
+  "id": "sam-96e879a653a74169b798808ad236ab2c",
+  "title": "Sources Sought Synopsis Notice - OINS Monitoring Platform Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=96e879a653a74169b798808ad236ab2c",
+  "opportunity_url": "https://sam.gov/opp/96e879a653a74169b798808ad236ab2c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/96e879a653a74169b798808ad236ab2c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "96e879a653a74169b798808ad236ab2c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "AA-OS-26-OINS",
+  "agency_path": "COMMERCE, DEPARTMENT OF.OFFICE OF THE SECRETARY.DEPT OF COMMERCE SSPO",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=96e879a653a74169b798808ad236ab2c",
+  "detail_text": "The Office of Intelligence and National Security (OINS) Protective Intelligence Monitoring Platform Software Sources Sought Synopsis. This request for capability information does not constitute a request for proposals; submission of any information in response to this market survey is purely voluntary; the Government assumes no financial responsibility for any costs incurred. Attachments: 1. Sources Sought Synopsis 2. Draft Statement of Need (SON) Provide capability statements no later than March 09, 2026 by 12:00 pm EST.",
+  "detail_text_length": 527,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d4e44cf21d045beb0e70b472adcd7f4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1744acc49744f2e9e0895bc7243274a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d4e44cf21d045beb0e70b472adcd7f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2304adffb4ce8b86481807940c1261dba412b31b67b695576861149d66f8767d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2304adffb4ce8b86481807940c1261dba412b31b67b695576861149d66f8767d.pdf",
+      "file_id": "6d4e44cf21d045beb0e70b472adcd7f4",
+      "file_name": "Sources+Sought+Synopsis+Notice+-++OINS+Monitoring+Platform+Software.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 224569,
+      "sha256": "2304adffb4ce8b86481807940c1261dba412b31b67b695576861149d66f8767d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1744acc49744f2e9e0895bc7243274a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6f94f0c52069e337b161033c78927e626280070c0ef051262662504de0ea8f7f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6f94f0c52069e337b161033c78927e626280070c0ef051262662504de0ea8f7f.pdf",
+      "file_id": "e1744acc49744f2e9e0895bc7243274a",
+      "file_name": "1.+Statement+of+Need+-Open-Source+Support+Requirement-_draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174258,
+      "sha256": "6f94f0c52069e337b161033c78927e626280070c0ef051262662504de0ea8f7f"
+    }
+  ],
+  "_mirror_hash": "53652f84c14beb88dad26aab0a8a3150efa0a6dfcf2002da2831235f3e6930ba",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.498121+00:00"
+}

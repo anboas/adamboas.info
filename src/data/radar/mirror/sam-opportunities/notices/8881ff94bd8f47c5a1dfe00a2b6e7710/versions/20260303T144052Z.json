@@ -1,0 +1,46 @@
+{
+  "id": "sam-8881ff94bd8f47c5a1dfe00a2b6e7710",
+  "title": "LANDING CRAFT UTILITY SHIPPING",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8881ff94bd8f47c5a1dfe00a2b6e7710",
+  "opportunity_url": "https://sam.gov/opp/8881ff94bd8f47c5a1dfe00a2b6e7710/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8881ff94bd8f47c5a1dfe00a2b6e7710/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8881ff94bd8f47c5a1dfe00a2b6e7710",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N32205-SS-N103-26-066",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8881ff94bd8f47c5a1dfe00a2b6e7710",
+  "detail_text": "Please see attached Sources Sought Notice N32205-SS-N103-26-066.",
+  "detail_text_length": 64,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b93bec6aba1142daa75a4c0af9137bab/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b93bec6aba1142daa75a4c0af9137bab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1a33f18644f96800ae27b75f5df6b253258c0eb0bb3595db081cd6e9c475ebbf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1a33f18644f96800ae27b75f5df6b253258c0eb0bb3595db081cd6e9c475ebbf.pdf",
+      "file_id": "b93bec6aba1142daa75a4c0af9137bab",
+      "file_name": "26-066+Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 130384,
+      "sha256": "1a33f18644f96800ae27b75f5df6b253258c0eb0bb3595db081cd6e9c475ebbf"
+    }
+  ],
+  "_mirror_hash": "b8245a85a8dacc694ed45f7b80040b97b25cb75ef774e36691315c33809a63b7",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.660126+00:00"
+}

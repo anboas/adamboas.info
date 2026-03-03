@@ -1,0 +1,46 @@
+{
+  "id": "sam-e1fe51f7e36842bf88f0076c55817010",
+  "title": "20--PIT Tag Antennas",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1fe51f7e36842bf88f0076c55817010",
+  "opportunity_url": "https://sam.gov/opp/e1fe51f7e36842bf88f0076c55817010/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e1fe51f7e36842bf88f0076c55817010/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e1fe51f7e36842bf88f0076c55817010",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140G0326Q0045",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFFICE OF ACQUISITON  GRANTS",
+  "posted_date": "2026-03-02",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1fe51f7e36842bf88f0076c55817010",
+  "detail_text": "Reference attached document for details.",
+  "detail_text_length": 40,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdc93d660214449c97b422cfb0bf6059/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdc93d660214449c97b422cfb0bf6059/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c316faf77f285df1ea21b84a5fd4d90e039d55d2c39974b3eb10cea88d7f75b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c316faf77f285df1ea21b84a5fd4d90e039d55d2c39974b3eb10cea88d7f75b.pdf",
+      "file_id": "fdc93d660214449c97b422cfb0bf6059",
+      "file_name": "Sources_Sought_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 201581,
+      "sha256": "1c316faf77f285df1ea21b84a5fd4d90e039d55d2c39974b3eb10cea88d7f75b"
+    }
+  ],
+  "_mirror_hash": "ef18aa6ddf6ef699411de876e7a33df48006afada0ef22da805c051c2888a1df",
+  "_mirror_run_id": "20260303T144052Z",
+  "_mirror_recorded_at": "2026-03-03T14:45:35.652716+00:00"
+}
