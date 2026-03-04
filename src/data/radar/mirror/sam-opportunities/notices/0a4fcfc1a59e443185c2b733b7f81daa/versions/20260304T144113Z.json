@@ -1,0 +1,46 @@
+{
+  "id": "sam-0a4fcfc1a59e443185c2b733b7f81daa",
+  "title": "MATTRESS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a4fcfc1a59e443185c2b733b7f81daa",
+  "opportunity_url": "https://sam.gov/opp/0a4fcfc1a59e443185c2b733b7f81daa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0a4fcfc1a59e443185c2b733b7f81daa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0a4fcfc1a59e443185c2b733b7f81daa",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M320016901502",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.COMMANDING GENERAL",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a4fcfc1a59e443185c2b733b7f81daa",
+  "detail_text": "Sources Sought ONLY, this is not a Request for Quote (RFQ) and in no way obligates the Government to award any contract/purchase order. The purpose of this Sources Sought is to seek out interested Small Businesses capable of fulfilling this supply requirement. MCRD Parris Island is performing market research to determine available sources that can provide 800 Mattress. The salient characteristics for the Mattress can be found in the attachment. Interested Vendors shall provide the following information to the POC: Cage Code/ Unique Identity Code. Socio Economic Status (i.e., HUBZone, Woman Owned Small Business, VSOB) All Sources Sought responses shall be received by 1:00PM(EST) on 6 MARCH 2026 Please submit to POC: Steven Kirk steven.kirk.civ@usmc.mil 843-228-3258",
+  "detail_text_length": 774,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15c54b4b62a240d9a2709b57e22811b8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15c54b4b62a240d9a2709b57e22811b8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/84472e80c6d0071411e8d0738cbd6439131f5c36fcb7725ba1b3035bd5baa773.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/84472e80c6d0071411e8d0738cbd6439131f5c36fcb7725ba1b3035bd5baa773.docx",
+      "file_id": "15c54b4b62a240d9a2709b57e22811b8",
+      "file_name": "Salient+Characteristics+Document.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15410,
+      "sha256": "84472e80c6d0071411e8d0738cbd6439131f5c36fcb7725ba1b3035bd5baa773"
+    }
+  ],
+  "_mirror_hash": "22cd8bda70c8d862d0fe9989d0a83db322a8d60b373ce868895b3d77ccea44fb",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.050895+00:00"
+}

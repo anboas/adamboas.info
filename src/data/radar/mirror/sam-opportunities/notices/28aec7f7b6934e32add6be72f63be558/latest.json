@@ -1,0 +1,46 @@
+{
+  "id": "sam-28aec7f7b6934e32add6be72f63be558",
+  "title": "Fluticasone Propionate",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28aec7f7b6934e32add6be72f63be558",
+  "opportunity_url": "https://sam.gov/opp/28aec7f7b6934e32add6be72f63be558/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/28aec7f7b6934e32add6be72f63be558/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "28aec7f7b6934e32add6be72f63be558",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPE2D2-25-R-0015",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT MEDICAL.DLA TROOP SUPPORT",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28aec7f7b6934e32add6be72f63be558",
+  "detail_text": "The Defense Logistics Agency is planning to issue a solicitation for a national requirements contract for Fluticasone Propionate. Procurement details follow. FLUTICASONE PROPIONATE 115 MCG-SALMETEROL 21 MCG/ACTUATION HFA INHALER FLUTICASONE PROPIONATE 230 MCG-SALMETEROL 21 MCG/ACTUATION HFA INHALER FLUTICASONE PROPIONATE 45 MCG-SALMETEROL 21 MCG/ACTUATION HFA INHALER This will be an unrestricted and fully competitive acquisition. The contract will be a firm-fixed price, requirements type contract with a one-year base and four one-year options. A contract resulting from this solicitation will establish a national supply source, in accordance with FAR 52.216-21 (Requirements), to provide the items listed in the schedule for purchase by Department of Defense, Indian Health Service and Bureau of Prisons customers through the DLA and VA prime vendor programs. The annual usage estimates will be provided in the Schedule of Supplies section of the solicitation. This is a commercial item and will be solicited using FAR part 12. All sources may submit a proposal which shall be considered by the agency. A copy of the solicitation will be posted to the DLA Bid Board System (DIBBS) at https://www.dibbs.bsm.dla.mil and Sam.Gov at https://sam.gov. Interested parties should contact Jeremy Brown at (445) 737-5419, ( Jeremy.Brown@dla.mil ) for any questions/comments. Interested parties are further advised to set up automated notifications of pre-solicitation or solicitation changes through this website. The current projected solicitation date is May of 2025. DLA reserves the right to issue the solicitation before or after the projected solicitation date.",
+  "detail_text_length": 1664,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fe63e766ced4fbdadafcd4cfbff6154/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fe63e766ced4fbdadafcd4cfbff6154/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c27a9159a4946c37d6112279d5d56460d79dc0ba2cc0fb1e3c699fac0d399d09.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c27a9159a4946c37d6112279d5d56460d79dc0ba2cc0fb1e3c699fac0d399d09.pdf",
+      "file_id": "1fe63e766ced4fbdadafcd4cfbff6154",
+      "file_name": "SPE2D225R0015.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98849,
+      "sha256": "c27a9159a4946c37d6112279d5d56460d79dc0ba2cc0fb1e3c699fac0d399d09"
+    }
+  ],
+  "_mirror_hash": "59f8502b2791e9faeab27b6c89d75bc3f39bb9f895f4a1f5eb396e2ab6966a34",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.184229+00:00"
+}

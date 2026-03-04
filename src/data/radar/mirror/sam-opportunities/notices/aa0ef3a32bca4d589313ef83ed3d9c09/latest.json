@@ -1,0 +1,57 @@
+{
+  "id": "sam-aa0ef3a32bca4d589313ef83ed3d9c09",
+  "title": "Request for Lease (RFL) Eglin Air Force Base (AFB), FL,",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa0ef3a32bca4d589313ef83ed3d9c09",
+  "opportunity_url": "https://sam.gov/opp/aa0ef3a32bca4d589313ef83ed3d9c09/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aa0ef3a32bca4d589313ef83ed3d9c09/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aa0ef3a32bca4d589313ef83ed3d9c09",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "AFCEC-26-R-0005",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AF INSTALLATION & MISSION SUPPORT CENTER.FA8903  772 ESS PK",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa0ef3a32bca4d589313ef83ed3d9c09",
+  "detail_text": "Notice of Availability: Eglin Air Force Base (AFB), FL, has received a request from the Okaloosa County Board of County Commissioners, a local municipal government agency, for a new lease. The 96th Test Wing Facilities Board gave conceptual approval to the prospective Lessee. The Lessee will pay fair market value for the parcel which is to be used for the purpose of operating a public beach park and constructing improvements to include bathrooms, bike racks, parking, signage and portable life guard towers; the proposal provides a management plan which includes maintained public access and specific daily hours, park rules, waste disposal and code/trespass enforcement consistent with other public beach access points, and no other use. Notice is hereby given in accordance with 10 U.S.C. 2667 (h)(1)(a). Summary of the outgrant terms and conditions: Eglin AFB hereby announces its intent to lease a portion of the east end of Okaloosa Island on Eglin AFB to the Okaloosa County Board of County Commissioners, a local municipal government entity, for the use of approximately 1.8 acres of Eglin AFB property for the purpose of constructing and operating a public beach park, and no other use. Lease period will be for a term of thirty (30) years. Cost of lease of property will be at a minimum equal to fair market value. Lessee must meet all conditions in the attached lease template. Lease will be at no cost to the United States Air Force. Grantee will be responsible for all administrative costs associated with the lease.",
+  "detail_text_length": 1532,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdcb0ec3e4f74c3790542b04adb702cd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9c01f56d1f2495194213a3ab773802a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdcb0ec3e4f74c3790542b04adb702cd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f3905050cb2f06312148608a41b830452c80fccf8f9c066b5f477798218369ff.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f3905050cb2f06312148608a41b830452c80fccf8f9c066b5f477798218369ff.pdf",
+      "file_id": "bdcb0ec3e4f74c3790542b04adb702cd",
+      "file_name": "Atch+2.+Location+Image.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 304090,
+      "sha256": "f3905050cb2f06312148608a41b830452c80fccf8f9c066b5f477798218369ff"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9c01f56d1f2495194213a3ab773802a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/956b9947cd5f64c8b06a2703ba583b13756552995dcf0836991444ae8332edde.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/956b9947cd5f64c8b06a2703ba583b13756552995dcf0836991444ae8332edde.pdf",
+      "file_id": "d9c01f56d1f2495194213a3ab773802a",
+      "file_name": "Atch+1.+Lease+Outgrant+Template.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 417027,
+      "sha256": "956b9947cd5f64c8b06a2703ba583b13756552995dcf0836991444ae8332edde"
+    }
+  ],
+  "_mirror_hash": "9cf462bb5b07140e1b27f734fa8cafa97e0af918ef614352dd10fafaa372a728",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.169102+00:00"
+}

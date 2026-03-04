@@ -1,0 +1,68 @@
+{
+  "id": "sam-a341580d861b4cc990e9a8cbedbb2b0d",
+  "title": "IRS-DA_COMP_SVCS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a341580d861b4cc990e9a8cbedbb2b0d",
+  "opportunity_url": "https://sam.gov/opp/a341580d861b4cc990e9a8cbedbb2b0d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a341580d861b4cc990e9a8cbedbb2b0d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a341580d861b4cc990e9a8cbedbb2b0d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IRS-DA_COMP_SVCS",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE.SMALL BUSINESS/SELF EMPLOYED",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a341580d861b4cc990e9a8cbedbb2b0d",
+  "detail_text": "Please see attached RFI/SSN Notice, PWS Draft, and Vendor Questions. THIS IS A REQUEST FOR INFORMATION (RFI) ONLY. This RFI is issued solely for market research, planning and information purposes and is not to be construed as a commitment by the U.S. Government to issue a subsequent solicitation (Request for Proposal, etc.). This RFI does not commit the U.S. Government to contract for any supply or service. IRS is not seeking proposals at this time. Further, IRS will not accept unsolicited proposals in response to this RFI. Participants in this market research are advised that the U.S. Government will not pay any costs incurred in response to this RFI. All costs associated with responding to this RFI will be solely at the interested party’s expense. Responses to this RFI will be used to identify potential sources, vehicles and set asides for specific small business classifications. There is no funding set aside for this requirement at the time of this RFI.",
+  "detail_text_length": 970,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cb87487e42048b4ad7b291cb09e7ee4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40c0de7af92b4b8d90401fdf4ab77a73/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e630756bb77548fd91988aafe99391e9/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cb87487e42048b4ad7b291cb09e7ee4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c784f4edfc51c58bf15d125d67684ff2c34b1b77f4b1c1bb6a8c825e1481be54.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c784f4edfc51c58bf15d125d67684ff2c34b1b77f4b1c1bb6a8c825e1481be54.pdf",
+      "file_id": "1cb87487e42048b4ad7b291cb09e7ee4",
+      "file_name": "IRS_Digital_Asset_Computation_RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 237888,
+      "sha256": "c784f4edfc51c58bf15d125d67684ff2c34b1b77f4b1c1bb6a8c825e1481be54"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40c0de7af92b4b8d90401fdf4ab77a73/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5e5f5b114352b7c4a1a34ced033b576994a7af89d209476c3960e738c257b3e6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5e5f5b114352b7c4a1a34ced033b576994a7af89d209476c3960e738c257b3e6.pdf",
+      "file_id": "40c0de7af92b4b8d90401fdf4ab77a73",
+      "file_name": "IRS_Digital_Asset_Computation_RFI_Questions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 95797,
+      "sha256": "5e5f5b114352b7c4a1a34ced033b576994a7af89d209476c3960e738c257b3e6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e630756bb77548fd91988aafe99391e9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8944f4c758bbdf745b6033c295204f73244fd75cace92f643bf69a4f7a26aa2e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8944f4c758bbdf745b6033c295204f73244fd75cace92f643bf69a4f7a26aa2e.pdf",
+      "file_id": "e630756bb77548fd91988aafe99391e9",
+      "file_name": "PWS+DAI+Computation+Services+-RFI+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 496224,
+      "sha256": "8944f4c758bbdf745b6033c295204f73244fd75cace92f643bf69a4f7a26aa2e"
+    }
+  ],
+  "_mirror_hash": "9be5d1ac6cd5ca53b7fc1b0ae7660955cdf8aef58c15f677e60556d83f51af1f",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.267393+00:00"
+}

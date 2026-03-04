@@ -1,0 +1,57 @@
+{
+  "id": "sam-3f4e662764c54e48a0dbe56f9bf4be42",
+  "title": "National Cemetery Administration - Office Furniture Purchase, Deliver, Installation - Black Hills National Cemetery",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3f4e662764c54e48a0dbe56f9bf4be42",
+  "opportunity_url": "https://sam.gov/opp/3f4e662764c54e48a0dbe56f9bf4be42/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3f4e662764c54e48a0dbe56f9bf4be42/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3f4e662764c54e48a0dbe56f9bf4be42",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C78626Q50015",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CEMETERY ADMIN (36C786)",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3f4e662764c54e48a0dbe56f9bf4be42",
+  "detail_text": "The purpose of this amendment 0004 is to provide responses to vendor questions. Questions are closed.",
+  "detail_text_length": 101,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/003f4bcba9f547898783e514fb2cfcad/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71dc32aadcfb4436805cf9cf1256b2a6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/003f4bcba9f547898783e514fb2cfcad/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ca224ea344dbd97f6a94233b609e2dd8cd6bc93fc2005dd3afd4808b503d3d78.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ca224ea344dbd97f6a94233b609e2dd8cd6bc93fc2005dd3afd4808b503d3d78.docx",
+      "file_id": "003f4bcba9f547898783e514fb2cfcad",
+      "file_name": "AMENDMENT+0004+Question-Answer+3-3-2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 505368,
+      "sha256": "ca224ea344dbd97f6a94233b609e2dd8cd6bc93fc2005dd3afd4808b503d3d78"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71dc32aadcfb4436805cf9cf1256b2a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5982c02813c16f648063d92d4de8da34e7984bbac0277ea6cd8518a610c15fd8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5982c02813c16f648063d92d4de8da34e7984bbac0277ea6cd8518a610c15fd8.pdf",
+      "file_id": "71dc32aadcfb4436805cf9cf1256b2a6",
+      "file_name": "36C78626Q50015_0004+Furniture+Black+Hills+NC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 65915,
+      "sha256": "5982c02813c16f648063d92d4de8da34e7984bbac0277ea6cd8518a610c15fd8"
+    }
+  ],
+  "_mirror_hash": "e58afea320fcd5c452faaa4f17189c4d1b50c86fff89d165201f965c9c3bc709",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.111205+00:00"
+}

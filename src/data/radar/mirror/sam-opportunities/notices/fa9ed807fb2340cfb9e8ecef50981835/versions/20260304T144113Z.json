@@ -1,0 +1,45 @@
+{
+  "id": "sam-fa9ed807fb2340cfb9e8ecef50981835",
+  "title": "NIIN:013145838/ACTUATOR,ELECTRO-ME",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fa9ed807fb2340cfb9e8ecef50981835",
+  "opportunity_url": "https://sam.gov/opp/fa9ed807fb2340cfb9e8ecef50981835/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fa9ed807fb2340cfb9e8ecef50981835/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fa9ed807fb2340cfb9e8ecef50981835",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QF084",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fa9ed807fb2340cfb9e8ecef50981835",
+  "detail_text": "This is a sole source requirement for the repair of the following: NSN: 1680013145838 PART NUMBER: 70550-28903-103 NOM: ACTUATOR,ELECTRO-ME QTY: 3 The Government physically does not have in its possession sufficient, accurate, or legible data to contract with other than the current source. One or more of the items under this acquisition is subject to Free Trade Agreements. (FAR 52.225-3).\\\\ One or more of the items under this acquisition is subject to the World Trade Organization Government Procurement Agreement and Free Trade Agreements. (FAR 52.225-5).\\\\ These items require Government Source Approval prior to award. The time required for approval of a new source is normally such that an award cannot be delayed pending approval of a new source. If you are not an approved source, you must submit, together with your proposal, the information detailed in the NAVSUP WSS Source Approval Brochure, which can be obtained on the internet at https://www.navsup.navy.mil/Business-Opportunities/Home/ Offers received which fail to provide all data required by the source approval brochure will not be considered for award under this solicitation. \\\\ For information or questions regarding this notice, please contact Lauren Phillips at the email address: lauren.n.phillips6.civ@us.navy.mil",
+  "detail_text_length": 1292,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37e4e911cea348e981095752a91bebb0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37e4e911cea348e981095752a91bebb0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/659d853eb2419a97d897f650e22c94b06e862bb2e9f8304fda2704fe8d3caa40.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/659d853eb2419a97d897f650e22c94b06e862bb2e9f8304fda2704fe8d3caa40.pdf",
+      "file_id": "37e4e911cea348e981095752a91bebb0",
+      "file_name": "3.01_Solicitation_N0038326QF084.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2074631,
+      "sha256": "659d853eb2419a97d897f650e22c94b06e862bb2e9f8304fda2704fe8d3caa40"
+    }
+  ],
+  "_mirror_hash": "f3c4d02659360dfabc35679d1f5a91ae13276708ec02f07bac4b2fa42be1fac3",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:17.927733+00:00"
+}

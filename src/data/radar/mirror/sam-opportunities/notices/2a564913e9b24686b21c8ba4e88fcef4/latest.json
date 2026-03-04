@@ -1,0 +1,46 @@
+{
+  "id": "sam-2a564913e9b24686b21c8ba4e88fcef4",
+  "title": "NoteCetera and IDCx license renewal, maintenance, and consulting (Notice of Intent to sole source)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a564913e9b24686b21c8ba4e88fcef4",
+  "opportunity_url": "https://sam.gov/opp/2a564913e9b24686b21c8ba4e88fcef4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2a564913e9b24686b21c8ba4e88fcef4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2a564913e9b24686b21c8ba4e88fcef4",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "NOI-26-001724",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH - CC",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a564913e9b24686b21c8ba4e88fcef4",
+  "detail_text": "Acquisition Description: This is a Notice of Intent, not a request for proposal. The National Institute of Health, Clinical Center (NIH-CC) intends to negotiate on an other than full and open competition basis with Working Diagnosis LLC. Working Diagnosis LLC creates the licenses/applications ICDx and NoteCetera. These applications are deeply integrated into the NIH CRIS electronic health record and are essential for clinical documentation workflows, as stated in the Working Diagnosis quote. ICDx improves structured problem list maintenance, and NoteCetera supports efficient clinical note generation. The NIH requires the following: - ICDx / NoteCetera Annual Maintenance (licensing, upgrades, technical support) - 100 hours of consulting - 300 hours of optional consulting (included as part of Option A) Justification: Working Diagnosis LLC is the sole vendor capable of providing these licenses. The licenses are proprietary, and they are only vendor. Both NoteCetera and IDCx applications were custom‑engineered for NIH and are deeply integrated into CRIS so there is no substitute. No other vendor possesses the proprietary code, technical expertise, or integration knowledge required to maintain or enhance these tools. Thus, Working Diagnosis is the only qualified vendor with rights to the ICDx and NoteCetera applications. Competing the requirement would risk system instability, loss of functionality, and disruption to clinical documentation processes within the NIH Clinical Center. Place of Performance or Delivery: The Period of Performance is: 02/25/2026 – 02/24/2027 02/25/2027 – 02/24/2028 Place of Performance: NIH Clinical Center in Bethesda, MD The statutory authority for this sole source requirement is 41 U.S.C. 1901 (a) (1) as implemented by FAR 13.106-1 only one responsible source and no other supply of service will satisfy agency requirements. THIS IS NOT A REQUEST FOR PROPOSAL. All responsible sources that could provide the required may submit a capability statement that will be considered by email (subject line to reference NOI-CC-26-001724 ) by 04:00 PM eastern standard time on 03/05/2026 to: lu-chang.lu@nih.gov All responses received by the closing date of this synopsis will be considered by the Government. A determination not to compete this requirement, based upon responses to this notice, is solely within the discretion of the Government.",
+  "detail_text_length": 2389,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a5b410420654dc5bb07e78be407b0b6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a5b410420654dc5bb07e78be407b0b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/19bf1a177e100a6e6e9c1987e56f3fa3848b837770a5844428e018f9282c468b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/19bf1a177e100a6e6e9c1987e56f3fa3848b837770a5844428e018f9282c468b.docx",
+      "file_id": "0a5b410420654dc5bb07e78be407b0b6",
+      "file_name": "NoteCetera+SOW+12-13-2025.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27264,
+      "sha256": "19bf1a177e100a6e6e9c1987e56f3fa3848b837770a5844428e018f9282c468b"
+    }
+  ],
+  "_mirror_hash": "d363c901fc2b180636e8403d342f5d44d41ba56365320058f33071a518089d5e",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.025194+00:00"
+}

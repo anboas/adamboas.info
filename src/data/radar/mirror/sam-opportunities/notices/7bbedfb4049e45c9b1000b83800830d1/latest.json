@@ -1,0 +1,46 @@
+{
+  "id": "sam-7bbedfb4049e45c9b1000b83800830d1",
+  "title": "Z--DIESEL STANDBY GENERATOR TOOELE AIR CENT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7bbedfb4049e45c9b1000b83800830d1",
+  "opportunity_url": "https://sam.gov/opp/7bbedfb4049e45c9b1000b83800830d1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7bbedfb4049e45c9b1000b83800830d1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7bbedfb4049e45c9b1000b83800830d1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140L5726Q0012",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.UTAH STATE OFFICE",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7bbedfb4049e45c9b1000b83800830d1",
+  "detail_text": "This Special Notice is to notify interested parties that a site visit will be schedule for March 17, 2026 at 9:00 MT. (see attachments for Revised Pre-solicitation Notice)",
+  "detail_text_length": 171,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbcc2d3a557c40068f9de21d21a3da55/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbcc2d3a557c40068f9de21d21a3da55/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/21e38ae98fa9dbf90de36ae5880731ecb61505d13bc33eafc417dc96e4f2d2c6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/21e38ae98fa9dbf90de36ae5880731ecb61505d13bc33eafc417dc96e4f2d2c6.pdf",
+      "file_id": "cbcc2d3a557c40068f9de21d21a3da55",
+      "file_name": "REVISED_PreSolicitationNotice140L5726Q0012_tbm_changes_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 197307,
+      "sha256": "21e38ae98fa9dbf90de36ae5880731ecb61505d13bc33eafc417dc96e4f2d2c6"
+    }
+  ],
+  "_mirror_hash": "e8709b08c54e773bba9b3dc6970eb8ed0498702ef04801b4b1204864a035e3f3",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.172855+00:00"
+}

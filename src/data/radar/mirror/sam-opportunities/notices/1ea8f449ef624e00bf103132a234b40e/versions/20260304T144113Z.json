@@ -1,0 +1,57 @@
+{
+  "id": "sam-1ea8f449ef624e00bf103132a234b40e",
+  "title": "Junior Airmen Retreat lodging",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ea8f449ef624e00bf103132a234b40e",
+  "opportunity_url": "https://sam.gov/opp/1ea8f449ef624e00bf103132a234b40e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1ea8f449ef624e00bf103132a234b40e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1ea8f449ef624e00bf103132a234b40e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA442726QZ020",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4427  60 CONS LGC",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ea8f449ef624e00bf103132a234b40e",
+  "detail_text": "Travis AFB is seeking information for resort-style lodging venue for resiliency retreat from May 15 - May 17 2026. Please see attached documents for more information. Please send responses to the emails below. SSgt Edward Kim at edward.kim.7@us.af.mil and SrA Joseph Restua-Perez at joseph.restua_perez@us.af.mil This sources sought ends 11 March 2026 at 1:00 PM PDT.",
+  "detail_text_length": 367,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ad1f871f0bf4a1994ea4d1a892b8293/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb2dc11dc54341ee9d67d1aa762ef01d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ad1f871f0bf4a1994ea4d1a892b8293/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aae2ce7fe5ccf3a845a9197138df44e8bb3388ebe44469d4c5ffad033752cc21.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aae2ce7fe5ccf3a845a9197138df44e8bb3388ebe44469d4c5ffad033752cc21.docx",
+      "file_id": "4ad1f871f0bf4a1994ea4d1a892b8293",
+      "file_name": "Sources+Sought+-+Junior+Airmen+Retreat.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58888,
+      "sha256": "aae2ce7fe5ccf3a845a9197138df44e8bb3388ebe44469d4c5ffad033752cc21"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb2dc11dc54341ee9d67d1aa762ef01d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3c5018b1360abc2e582fdfa7304160a7e5f70201bfdae2b4cdc1add340bb533c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3c5018b1360abc2e582fdfa7304160a7e5f70201bfdae2b4cdc1add340bb533c.docx",
+      "file_id": "fb2dc11dc54341ee9d67d1aa762ef01d",
+      "file_name": "Junior+Airmen+Retreat+15-17+May+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30119,
+      "sha256": "3c5018b1360abc2e582fdfa7304160a7e5f70201bfdae2b4cdc1add340bb533c"
+    }
+  ],
+  "_mirror_hash": "77ea240796972bfa00a85547b28ceae31747d22ae012592998daff43c6406763",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.132057+00:00"
+}

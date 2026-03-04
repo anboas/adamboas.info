@@ -1,0 +1,46 @@
+{
+  "id": "sam-94f5acaf619d4df3be6b613faa8398f1",
+  "title": "Alarm Monitoring and Telephonic Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94f5acaf619d4df3be6b613faa8398f1",
+  "opportunity_url": "https://sam.gov/opp/94f5acaf619d4df3be6b613faa8398f1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/94f5acaf619d4df3be6b613faa8398f1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "94f5acaf619d4df3be6b613faa8398f1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC-26-P-040893",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FDO FT HOOD",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94f5acaf619d4df3be6b613faa8398f1",
+  "detail_text": "The Government requires a follow-on, non-personal services contract to provide 24/7/365 intrusion detection system monitoring and remote telephonic technical support for three (3) of its community-based clinics. The Intrusion Detection and Duress systems at the specified locations are Government Furnished Equipment (GFE). The contractor shall provide: Alarm Monitoring & Reporting: Continuous (24/7/365, including public holidays) monitoring of the Intrusion Detection System. Upon alarm activation, the contractor shall immediately notify designated Government personnel and/or local authorities. Technical Support: Provide telephone-based technical support to Government personnel during normal business hours to assist in performing system maintenance and repairs. See attached Sources Sought Notice",
+  "detail_text_length": 804,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/096f2e49eaaf4f8193c2397d6d9a5f93/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/096f2e49eaaf4f8193c2397d6d9a5f93/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6b05a494a68dd76a0872b3ceb98272a1ec215b1a666d7bdd45700754fa2d9256.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6b05a494a68dd76a0872b3ceb98272a1ec215b1a666d7bdd45700754fa2d9256.pdf",
+      "file_id": "096f2e49eaaf4f8193c2397d6d9a5f93",
+      "file_name": "Sources+Sought+PAN+040893.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 152472,
+      "sha256": "6b05a494a68dd76a0872b3ceb98272a1ec215b1a666d7bdd45700754fa2d9256"
+    }
+  ],
+  "_mirror_hash": "2d5924313b205b76cbbd3c15460544105412b10bd94ec91ed14b04405bc28032",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.148038+00:00"
+}

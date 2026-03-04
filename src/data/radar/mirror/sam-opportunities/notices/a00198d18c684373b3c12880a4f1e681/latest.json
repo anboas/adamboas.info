@@ -1,0 +1,46 @@
+{
+  "id": "sam-a00198d18c684373b3c12880a4f1e681",
+  "title": "Dynamic Electro optical Test Target Array System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a00198d18c684373b3c12880a4f1e681",
+  "opportunity_url": "https://sam.gov/opp/a00198d18c684373b3c12880a4f1e681/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a00198d18c684373b3c12880a4f1e681/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a00198d18c684373b3c12880a4f1e681",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "F1S0AG6015A001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9302  AFTC PZZ",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a00198d18c684373b3c12880a4f1e681",
+  "detail_text": "1.0 GENERAL INFORMATION This is a Sources Sought Notice issued for market research purposes only. This is not a Request for Proposal (RFP), Request for Quotation (RFQ), or an Invitation for Bid (IFB). The Government is not seeking proposals at this time and will not accept unsolicited proposals. A contract will not be awarded from this announcement. This notice does not constitute a commitment by the Government to issue a solicitation or award a contract. The Government will not pay for any information or administrative costs incurred in response to this Sources Souight Notice. All costs associated with responding to this SSN will be solely at the interested party’s expense . The purpose of this notice is to obtain information from the market on the availability and capability of qualified sources to provide a high-fidelity, integrated EO/IR Target Projector System that meets the minimum technical requirements specified in Section 3.0 of this notice. The information received will be used to determine the appropriate acquisition strategy, including whether a competitive procurement is feasible. 2.0 BACKGROUND The Air Force Test Center requires a turnkey test system to perform laboratory characterization, performance verification, and calibration of next-generation EO/IR sensor systems. The accuracy and validity of this testing are dependent on a target projection system capable of simulating various infrared signatures with exceptionally high fidelity and radiometric accuracy. The system must function as a fully integrated hardware and software solution to ensure data integrity, automate complex test sequences, and minimize risk. 3.0 MINIMUM TECHNICAL REQUIREMENTS The Government requires a single, fully integrated system that meets or exceeds the following minimum performance and capability specifications: Requirement ID Specification Minimum Government Requirement 1. Collimator Optical Performance Must project targets from the visible spectrum through the Long-Wave Infrared (LWIR) spectrum (approx. 0.4µm to 14µm). 2. IR Sources Blackbody Emissivity Must include at least two blackbody sources, each with a demonstrated minimum emissivity of > 0.995. 3. IR Sources Blackbody Type Must include both a differential and an absolute blackbody source. 4. Visible Source Visible/SWIR Capability Must include an integrated uniform source (e.g., an integrating sphere) for sensor testing in the visible through Short-Wave Infrared (SWIR) spectrum. 5. Integration Software Control All components (all sources, target wheels, etc.) must be controllable from a single, unified software interface. The software must be delivered fully integrated with the hardware. 6. Integration Turnkey System The vendor must be responsible for providing a complete, turnkey system. The Government will not act as a systems integrator. Responses based on providing separate, non-integrated components will be considered non-responsive. 7. Physical Installation & Training The vendor must be capable of providing on-site installation, system calibration, and operator training at a Government facility. 4.0 REQUESTED INFORMATION FROM INTERESTED PARTIES Interested parties who believe they can meet the minimum technical requirements outlined in Section 3.0 are requested to submit a Capability Statement. The statement shall be no more than ten (10) pages and must include, at a minimum, the following information: 4.1. Company Information: Company name, address, point of contact (name, email, and phone number), CAGE code, and Unique Entity ID (SAM). 4.2. Business Size: Business size and status under NAICS code 334511 (e.g., Small Business, Other Than Small Business, 8(a), HUBZone, SDVOSB, WOSB). 4.3. Technical Capability: A detailed narrative describing how your proposed solution meets or exceeds each of the seven (7) Minimum Technical Requirements listed in Section 3.0. Please provide specific product names, model numbers, and technical specification data sheets for the proposed system and its key components (especially the high-emissivity blackbody sources). General marketing material is not sufficient. 4.4. Integration Experience: Describe your company's experience in providing fully integrated hardware/software test systems of similar complexity. Provide at least one (1) example of a past project where you delivered a comparable turnkey system. 4.5. Commerciality: Provide evidence that the proposed system, or its key components, are commercial products as defined in FAR 2.101. 5.0 SUBMISSION INSTRUCTIONS Interested parties shall submit their Capability Statements via email to the points of contact listed above. The subject line of the email shall read: \"Response to Sources Sought F1S0AG6015A001",
+  "detail_text_length": 4731,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af5edc59f0ef4bd9a31a39affb663b85/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af5edc59f0ef4bd9a31a39affb663b85/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c097ac36f0ccccae35b46fc0094513bc942869f7f27c691673c0b5e2a0fb1de.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c097ac36f0ccccae35b46fc0094513bc942869f7f27c691673c0b5e2a0fb1de.pdf",
+      "file_id": "af5edc59f0ef4bd9a31a39affb663b85",
+      "file_name": "Statement+of+Requirements+F1S0AG6015A001+-++Target+Projector+System.pdf.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 115400,
+      "sha256": "2c097ac36f0ccccae35b46fc0094513bc942869f7f27c691673c0b5e2a0fb1de"
+    }
+  ],
+  "_mirror_hash": "605dd0d94bc479999269c68e6e2bdc5ef2f53bba9b78d8f65e528b5798c18483",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.098537+00:00"
+}

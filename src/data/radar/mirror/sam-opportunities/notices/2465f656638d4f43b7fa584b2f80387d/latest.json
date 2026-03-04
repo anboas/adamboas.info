@@ -1,0 +1,46 @@
+{
+  "id": "sam-2465f656638d4f43b7fa584b2f80387d",
+  "title": "HQ Shredding Contract",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2465f656638d4f43b7fa584b2f80387d",
+  "opportunity_url": "https://sam.gov/opp/2465f656638d4f43b7fa584b2f80387d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2465f656638d4f43b7fa584b2f80387d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2465f656638d4f43b7fa584b2f80387d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912EF26RSS15",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTHWESTERN.ENDIST WALLA WALLA.US ARMY ENGINEER DISTRICT WALLA WAL",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2465f656638d4f43b7fa584b2f80387d",
+  "detail_text": "The U.S. Army Corps of Engineers, Walla Walla District is seeking sources for a service requirement for a base contract plus four option years of a firm fixed price contract coming up for our Walla Walla District for shredding services that will destroy documents and other non-paper media to render “PII” in Walla Walla, WA. The North American Industry Classification System (NAICS) code for this project is anticipated to be 561990 (Document Shredding Services) and the associated small business size standard is $16,500,000.00 dollar amount. Please see attached Performance Work Statement for detailed description of requirements. THIS IS NOT A SOLICITATION. This source sought announcement is a tool to identify businesses with the capability to accomplish the work. Only those firms who respond to this announcement by submitting the following information will be used in determining whether to set aside this requirement. SUBMISSION REQUIREMENTS FOR RESPONSES TO THIS SOURCES SOUGHT SYNOPSIS: 1) A capability statement expressing interest in this requirement, describing your company and its capability to complete a project of this scope, magnitude, and complexity. Include a statement detailing any special qualifications or certifications, applicable to this project’s scope, held by your firm and/or in-house personnel. 2) Name of firm and point of contact. 3) State your business size (large or small business) under above NAICS Code. 4) UEI (Unique Entity Identifier) and CAGE Code from SAM.gov. 5) Can you meet the delivery date in the technical specs? If not, please suggest a realistic delivery date or if the technical specs need to be adjusted. Please do not respond to this notice unless you will be responding to the solicitation. Respond to this notice by emailing the following information to tonya.c.french@usace.army.mil.",
+  "detail_text_length": 1844,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31125d027ed44e5f81b92e45baac4be9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31125d027ed44e5f81b92e45baac4be9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/01f7e11f7d959b9063668d5b18c328da37c0c37dafa41cbed786d4fa1e4a38f5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/01f7e11f7d959b9063668d5b18c328da37c0c37dafa41cbed786d4fa1e4a38f5.pdf",
+      "file_id": "31125d027ed44e5f81b92e45baac4be9",
+      "file_name": "SS+HQ+Shredding+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 166397,
+      "sha256": "01f7e11f7d959b9063668d5b18c328da37c0c37dafa41cbed786d4fa1e4a38f5"
+    }
+  ],
+  "_mirror_hash": "f4e39778e45861212aaf3ff1398a68a730bf5e6c2ad14ca701cc700f49770c96",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.103267+00:00"
+}

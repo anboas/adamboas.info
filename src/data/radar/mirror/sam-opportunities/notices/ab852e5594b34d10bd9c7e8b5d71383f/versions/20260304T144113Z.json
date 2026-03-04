@@ -1,0 +1,57 @@
+{
+  "id": "sam-ab852e5594b34d10bd9c7e8b5d71383f",
+  "title": "PEO DHMS - CSO, Area of Opportunity (AOI) 6 - Autonomous Coding & Denials Mgmt",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab852e5594b34d10bd9c7e8b5d71383f",
+  "opportunity_url": "https://sam.gov/opp/ab852e5594b34d10bd9c7e8b5d71383f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ab852e5594b34d10bd9c7e8b5d71383f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ab852e5594b34d10bd9c7e8b5d71383f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "HT003826X0006",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab852e5594b34d10bd9c7e8b5d71383f",
+  "detail_text": "March 3, 2026: Revision 2 to AOI #06, lists the support contractors supporting this effort and includes a data restriction. March 3, 2026 : Revision 1 to AOI #06, correcting requirement of high level, IL5/IL6 to Medium level, IL4. This AOI #6 is being competed under Commercial Solutions Opening HT003825SC001. The DHMSM PMO is interested in awarding prototype other transaction agreement(s) for prototype projects under the authority of 10 U.S.C. 4022 for Area of Interest (AOI) #06, Autonomous Coding & Denials Management Services. This AOI #6 leverages the competitive process under Commercial Solutions Opening (CSO) HT0038-25-S-C001. For the Request for Solutions, companies shall email a white paper(s) to Dominique Brown, dominique.u.brown.civ@health.mil and Elizabeth Holten, elizabeth.l.holten.civ@health.mil no later than March 9, 2026, at 1:00PM Eastern Time , clearly titled AOI #6. If the submission is too large (over 25MB) to send via email, notify the Government POCs no later than 05 March 2026. DATES: March 5, 2026, 5:00 P.M. ET - Bidscale Access Request, if applicable (Access needed if submission is too large to send via email and/or submitting demonstration video instead of link) March 9, 2026, 1:00 P.M. ET - White Paper Submissions Due **SEE AOI ATTACHMENTS FOR MORE DETAILS**",
+  "detail_text_length": 1302,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5affd5a6e7b3484fa62cae985089260d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5bd6d22706e240eaade898f28ae24d0a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5affd5a6e7b3484fa62cae985089260d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/33a925320b19c2a71805946f1dd67e2954cc6e86234bd4a718b1bb03e7c27307.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/33a925320b19c2a71805946f1dd67e2954cc6e86234bd4a718b1bb03e7c27307.pdf",
+      "file_id": "5affd5a6e7b3484fa62cae985089260d",
+      "file_name": "AOI+6+-+Autonomous+Coding+and+Denials+Mgmt_Rev+2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 205611,
+      "sha256": "33a925320b19c2a71805946f1dd67e2954cc6e86234bd4a718b1bb03e7c27307"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5bd6d22706e240eaade898f28ae24d0a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/27e168dd7d155c7dcc550db81505f8243f62385e45685a0a693604d8b5310e87.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/27e168dd7d155c7dcc550db81505f8243f62385e45685a0a693604d8b5310e87.pdf",
+      "file_id": "5bd6d22706e240eaade898f28ae24d0a",
+      "file_name": "AOI+6+-+Government+Rider.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 105406,
+      "sha256": "27e168dd7d155c7dcc550db81505f8243f62385e45685a0a693604d8b5310e87"
+    }
+  ],
+  "_mirror_hash": "6b29ac10b8db141ece931c00459268b020819164b16317cdf68576e1f5bbe3ac",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.078095+00:00"
+}

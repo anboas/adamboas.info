@@ -1,0 +1,79 @@
+{
+  "id": "sam-5036212fa6fc4cfb9d9645c4369b4b6d",
+  "title": "FMCS Financial Audit Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5036212fa6fc4cfb9d9645c4369b4b6d",
+  "opportunity_url": "https://sam.gov/opp/5036212fa6fc4cfb9d9645c4369b4b6d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5036212fa6fc4cfb9d9645c4369b4b6d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5036212fa6fc4cfb9d9645c4369b4b6d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "93310026Q0003",
+  "agency_path": "FEDERAL MEDIATION AND CONCILIATION SERVICE.FEDERAL MEDIATION AND CONCILIATION SERVICE.FMCS",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5036212fa6fc4cfb9d9645c4369b4b6d",
+  "detail_text": "The Federal Mediation and Conciliation Service (FMCS) is conducting market research to identify capable firms for financial audit services. This notice is being issued as a Sources Sought to determine the availability of qualified vendors and to supplement the solicitation currently posted on GSA eBuy. The requirement is currently posted on GSA eBuy under the MAS 8(a) Pool – Competitive Set-Aside. GSA eBuy Request ID: RFQ1798262 Interested vendors that hold a GSA MAS contract and are active participants in the SBA 8(a) Business Development Program are encouraged to review the full solicitation and submit quotations through GSA eBuy. The solicitation may be found on GSA eBuy under Request ID RFQ1798262. The North American Industry Classification System (NAICS) code for this requirement is 541211 – Offices of Certified Public Accountants. The Government seeks firms capable of performing an independent financial statement audit in accordance with Government Auditing Standards (GAGAS). Vendors must also have an active AICPA Peer Review in order to perform financial statement audit services. Vendors that are not able to access the GSA eBuy posting but believe they are capable of performing the requirement are encouraged to submit a capability statement demonstrating their qualifications and experience performing federal financial statement audits. Capability statements should include: • Company name and UEI • Confirmation of active SBA 8(a) status (if applicable) • GSA MAS contract number and relevant SIN (if applicable) • Confirmation of active AICPA Peer Review • Relevant experience performing federal financial statement audits in accordance with GAGAS Interested firms should email their capability statement or statement of interest to: Bronson Madero bmadero@fmcs.gov The subject line of the email should read: Capability Statement for FMCS Audit from (Insert Company Name) Responses will be accepted through March 12, 2026. This notice is issued for market research purposes only and does not constitute a solicitation for quotes through SAM.gov. Vendors interested in submitting a quotation should do so through the GSA eBuy solicitation identified above.",
+  "detail_text_length": 2185,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87e98ff46d274f42a13cbe03924e1a95/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/923f215435614639a4c98c8ceb2bb40b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d9b1b0c3ed7497b96457786b50a154d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2f05ac77dbc430297847fe05e87f6bb/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87e98ff46d274f42a13cbe03924e1a95/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0d7fa298fc92c0d8c8ab7fa7b6ef00444fe3acf993f118cadce373935d7a2930.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0d7fa298fc92c0d8c8ab7fa7b6ef00444fe3acf993f118cadce373935d7a2930.pdf",
+      "file_id": "87e98ff46d274f42a13cbe03924e1a95",
+      "file_name": "Attachment+1-+Submission+Instructions+Evaluation+Criteria+Finalized.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 221113,
+      "sha256": "0d7fa298fc92c0d8c8ab7fa7b6ef00444fe3acf993f118cadce373935d7a2930"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/923f215435614639a4c98c8ceb2bb40b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd7011bfcf83a9a37ed83121de453db12763a61e1790e36040423e9f4ff7003e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd7011bfcf83a9a37ed83121de453db12763a61e1790e36040423e9f4ff7003e.pdf",
+      "file_id": "923f215435614639a4c98c8ceb2bb40b",
+      "file_name": "FMCS+Financial+Audit+SOW+Finalized.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 197402,
+      "sha256": "cd7011bfcf83a9a37ed83121de453db12763a61e1790e36040423e9f4ff7003e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d9b1b0c3ed7497b96457786b50a154d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cbc25e8748999fe457b92f0eaf33c9f1d7fb4614303e1725263410ef6dc5a7e8.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cbc25e8748999fe457b92f0eaf33c9f1d7fb4614303e1725263410ef6dc5a7e8.xlsx",
+      "file_id": "9d9b1b0c3ed7497b96457786b50a154d",
+      "file_name": "Attachment+2-+Vendor+Quote+Sheet+FMCS+Aduit-FFP.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10715,
+      "sha256": "cbc25e8748999fe457b92f0eaf33c9f1d7fb4614303e1725263410ef6dc5a7e8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2f05ac77dbc430297847fe05e87f6bb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aa83b26aeaf584c20cd1951cc98d81e1647681c1f4c939b093880dbc8dceb86c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aa83b26aeaf584c20cd1951cc98d81e1647681c1f4c939b093880dbc8dceb86c.pdf",
+      "file_id": "a2f05ac77dbc430297847fe05e87f6bb",
+      "file_name": "FMCS+Audit+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 130557,
+      "sha256": "aa83b26aeaf584c20cd1951cc98d81e1647681c1f4c939b093880dbc8dceb86c"
+    }
+  ],
+  "_mirror_hash": "59e4a03f68163039e9e7a4960490daa3808eb415d54b17fa740d67835d53b222",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.149717+00:00"
+}

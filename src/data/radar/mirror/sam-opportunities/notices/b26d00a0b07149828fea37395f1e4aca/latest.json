@@ -1,0 +1,46 @@
+{
+  "id": "sam-b26d00a0b07149828fea37395f1e4aca",
+  "title": "Audiometric Booths",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b26d00a0b07149828fea37395f1e4aca",
+  "opportunity_url": "https://sam.gov/opp/b26d00a0b07149828fea37395f1e4aca/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b26d00a0b07149828fea37395f1e4aca/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b26d00a0b07149828fea37395f1e4aca",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY MEDICAL COMMAND.US ARMY HEALTH CONTRACTING ACTIVITY.W40M MRC0 WEST",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b26d00a0b07149828fea37395f1e4aca",
+  "detail_text": "Questions and Answers are posted as Amendment 2. Proposal to contain signed copies of SF 1449 Solicitation and both Amendment 1 and Amendment 2. Pricing submission on SF1449.",
+  "detail_text_length": 174,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e5b407fe58748cc90aa61a77879bb50/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e5b407fe58748cc90aa61a77879bb50/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5e59100008e3f1a4ddd3ddd9099a3fa2d28b33e848c7abc2dce34a39f1ef60be.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5e59100008e3f1a4ddd3ddd9099a3fa2d28b33e848c7abc2dce34a39f1ef60be.pdf",
+      "file_id": "0e5b407fe58748cc90aa61a77879bb50",
+      "file_name": "Solicitation+Amendment+W81K0026QA0680002+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3984656,
+      "sha256": "5e59100008e3f1a4ddd3ddd9099a3fa2d28b33e848c7abc2dce34a39f1ef60be"
+    }
+  ],
+  "_mirror_hash": "db2f4c2455ac92da4442909cb1f52c4a8a03ec3f2c890707236e6d4bc7e69e36",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.068001+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-94699b6c68574254b15977e25203c4ff",
+  "title": "Queue Management System Auburn Clinic",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94699b6c68574254b15977e25203c4ff",
+  "opportunity_url": "https://sam.gov/opp/94699b6c68574254b15977e25203c4ff/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/94699b6c68574254b15977e25203c4ff/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "94699b6c68574254b15977e25203c4ff",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26Q0088",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94699b6c68574254b15977e25203c4ff",
+  "detail_text": "VA Puget Sound Health Care System requires a contractor to provide and deliver, install, and provide training for the Qmatic, or a similar Queue Management System for the new Auburn Primary Care Clinic. The Queue Management System is used in medical clinics to improve patient flow, reduce wait times, and enhance overall patient experience. It helps streamline the patient journey by providing tools for appointment scheduling, virtual queuing, and real-time communication, ultimately leading to a more efficient and pleasant experience for both patients and staff.",
+  "detail_text_length": 566,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bdc2beb8ea540e4b00da69e73c36384/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f6bdc53a01a489b9d9a02480da9d4da/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d2c6ddd26244fe8bf820e5101f3dcc1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bdc2beb8ea540e4b00da69e73c36384/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c497148958850ae28bf990d3f24bdc7c63a583d754efd6590fe0ac5374df8518.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c497148958850ae28bf990d3f24bdc7c63a583d754efd6590fe0ac5374df8518.pdf",
+      "file_id": "0bdc2beb8ea540e4b00da69e73c36384",
+      "file_name": "Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 221536,
+      "sha256": "c497148958850ae28bf990d3f24bdc7c63a583d754efd6590fe0ac5374df8518"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f6bdc53a01a489b9d9a02480da9d4da/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e0d0c321730b1021d55d6b65dc63c3397eaaca89338a2541e3810b534b2a1c7f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e0d0c321730b1021d55d6b65dc63c3397eaaca89338a2541e3810b534b2a1c7f.pdf",
+      "file_id": "1f6bdc53a01a489b9d9a02480da9d4da",
+      "file_name": "S02+36C24W26Q0088.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 155830,
+      "sha256": "e0d0c321730b1021d55d6b65dc63c3397eaaca89338a2541e3810b534b2a1c7f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d2c6ddd26244fe8bf820e5101f3dcc1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/60e55bb820a4af8682cd77e47bb0269fc6d2559879d19f5ae194f879fd7526ba.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/60e55bb820a4af8682cd77e47bb0269fc6d2559879d19f5ae194f879fd7526ba.pdf",
+      "file_id": "5d2c6ddd26244fe8bf820e5101f3dcc1",
+      "file_name": "S06+36C24W26Q0088+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 295035,
+      "sha256": "60e55bb820a4af8682cd77e47bb0269fc6d2559879d19f5ae194f879fd7526ba"
+    }
+  ],
+  "_mirror_hash": "362ba30a103fe4f3d9548c19204012eda3ac5a7f6069a00483cd967af7a38029",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.179312+00:00"
+}

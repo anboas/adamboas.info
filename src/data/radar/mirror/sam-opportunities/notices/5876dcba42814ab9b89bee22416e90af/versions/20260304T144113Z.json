@@ -1,0 +1,79 @@
+{
+  "id": "sam-5876dcba42814ab9b89bee22416e90af",
+  "title": "7C20--Data Center and Telecommunications Modernization  (VA-26-00039374)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5876dcba42814ab9b89bee22416e90af",
+  "opportunity_url": "https://sam.gov/opp/5876dcba42814ab9b89bee22416e90af/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5876dcba42814ab9b89bee22416e90af/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5876dcba42814ab9b89bee22416e90af",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0218",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5876dcba42814ab9b89bee22416e90af",
+  "detail_text": "See attachment to this notice providing RFI Questions and Answers. The RFI response date and time is not extended.",
+  "detail_text_length": 114,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27b93c0860bd4ffaa58ee1ca31c3d11d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6092ddc8860843b39871ec059ba28c45/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cf498a4b2794626b1668928b27f2ceb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e60e7aca1f543ec9bed822311fad555/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27b93c0860bd4ffaa58ee1ca31c3d11d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af2ed327225c56fb0a6f12b78d7f39dbe7490fe71da3cc8ebc7f60ffa3687ce5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af2ed327225c56fb0a6f12b78d7f39dbe7490fe71da3cc8ebc7f60ffa3687ce5.pdf",
+      "file_id": "27b93c0860bd4ffaa58ee1ca31c3d11d",
+      "file_name": "P02+RFI+36C10B26Q0218_EDCTM_2.26.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 164474,
+      "sha256": "af2ed327225c56fb0a6f12b78d7f39dbe7490fe71da3cc8ebc7f60ffa3687ce5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6092ddc8860843b39871ec059ba28c45/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a720bdcaedb427c463169ad72099c604a1439c9e26e196f31da7cb61f0b8e662.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a720bdcaedb427c463169ad72099c604a1439c9e26e196f31da7cb61f0b8e662.docx",
+      "file_id": "6092ddc8860843b39871ec059ba28c45",
+      "file_name": "36C10B26Q0218.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14407,
+      "sha256": "a720bdcaedb427c463169ad72099c604a1439c9e26e196f31da7cb61f0b8e662"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cf498a4b2794626b1668928b27f2ceb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a17269a35797e852d89c578e0f5581e841356de3557f961b64805496bdd98615.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a17269a35797e852d89c578e0f5581e841356de3557f961b64805496bdd98615.docx",
+      "file_id": "6cf498a4b2794626b1668928b27f2ceb",
+      "file_name": "P02+RFI+Amend+01+QandA+3.3.26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21270,
+      "sha256": "a17269a35797e852d89c578e0f5581e841356de3557f961b64805496bdd98615"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e60e7aca1f543ec9bed822311fad555/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/87a74efa8b9793e8adbda076e936d4e060d5e61feee3b4e5bd4c28c7da0e983f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/87a74efa8b9793e8adbda076e936d4e060d5e61feee3b4e5bd4c28c7da0e983f.docx",
+      "file_id": "7e60e7aca1f543ec9bed822311fad555",
+      "file_name": "36C10B26Q0218+0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14420,
+      "sha256": "87a74efa8b9793e8adbda076e936d4e060d5e61feee3b4e5bd4c28c7da0e983f"
+    }
+  ],
+  "_mirror_hash": "59a88c2ceb547b84688911148528c24d609ea12166efc1386e65d30331b8409b",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.129193+00:00"
+}

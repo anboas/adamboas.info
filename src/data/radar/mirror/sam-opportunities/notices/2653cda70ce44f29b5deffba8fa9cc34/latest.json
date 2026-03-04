@@ -1,0 +1,58 @@
+{
+  "id": "sam-2653cda70ce44f29b5deffba8fa9cc34",
+  "title": "FA4661 Vindicator IDIQ Source Sought",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2653cda70ce44f29b5deffba8fa9cc34",
+  "opportunity_url": "https://sam.gov/opp/2653cda70ce44f29b5deffba8fa9cc34/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2653cda70ce44f29b5deffba8fa9cc34/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2653cda70ce44f29b5deffba8fa9cc34",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA4661VindIDIQ",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4661  7 CONS CD",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2653cda70ce44f29b5deffba8fa9cc34",
+  "detail_text": "THIS IS A SOURCES SOUGHT NOTICE FOR INFORMATION ONLY. THIS IS NOT A REQUEST FOR PROPOSAL OR QUOTATION OR AN ANNOUNCEMENT OF A SOLICITATION. This sources sought request for information is for the purpose of conducting market research to provide data for planning purposes. This sources sought synopsis announcement does not constitute a formal solicitation and is not a request for proposal, request for quote, invitation for bid, does not obligate the government to award a contract, issue a solicitation, reimburse respondents for any proposal preparation and/or submittal costs, nor does its issuance in any way restrict the Government as to its ultimate acquisition approach. The Government will not pay for any materials provided in response to this notice and the submission will not be returned to the sender. The United States Air Force, 7th Contracting Squadron, located on Dyess Air Force Base, in Abilene, Texas is seeking potential sources capable of providing all personnel, equipment, tools, material, supervision, and other items and services for a indefinite-Delivery Indefinite-Quantity(IDIQ) contract for the installation of a Honeywell (Vindicator) alarm system in various buildings located on Dyess AFB, TX in accordance with the attached DRAFT statement of work, any attached appendices, manufacturer standards, applicable US laws, commercial standards and business practices. Please refer to the Source Sought and Draft SOW for more detailed information. Interested potential vendors are encouraged to provide their capabilities statements outline interest, and capability to meet this requirement. Direct responses and/or questions to A1C Limtiaco at christian.limtiaco@us.af.mil, and TSGT Trevor Finch at trevor.finch.1@us.af.mil.",
+  "detail_text_length": 1753,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16429da381e149719c9a960e20e40678/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f28b5baa837b4979ae8ce213c1394fc1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16429da381e149719c9a960e20e40678/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/321b1393632228f6c0d61a1fa9c72e0bdda19d05ddb09a22c5d47d850ed920ad.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/321b1393632228f6c0d61a1fa9c72e0bdda19d05ddb09a22c5d47d850ed920ad.docx",
+      "file_id": "16429da381e149719c9a960e20e40678",
+      "file_name": "Dyess+AFB+Vindicator+IDIQ+STATEMENT+OF+WORK+-Draft-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 222920,
+      "sha256": "321b1393632228f6c0d61a1fa9c72e0bdda19d05ddb09a22c5d47d850ed920ad"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f28b5baa837b4979ae8ce213c1394fc1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/53a3045f3ef16b0acbae0f852bdeb1a1b01fdd9ad1bb5a22a9d57d08355afcf3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/53a3045f3ef16b0acbae0f852bdeb1a1b01fdd9ad1bb5a22a9d57d08355afcf3.docx",
+      "file_id": "f28b5baa837b4979ae8ce213c1394fc1",
+      "file_name": "Sources+Sought+Vindicator+IDIQ.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26910,
+      "sha256": "53a3045f3ef16b0acbae0f852bdeb1a1b01fdd9ad1bb5a22a9d57d08355afcf3"
+    }
+  ],
+  "_mirror_hash": "d172ce286d79a255095dcdd6d208742011631d8cf8addb59934fe3aa25381363",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:17.822204+00:00"
+}

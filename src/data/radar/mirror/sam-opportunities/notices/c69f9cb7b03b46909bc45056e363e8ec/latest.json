@@ -1,0 +1,79 @@
+{
+  "id": "sam-c69f9cb7b03b46909bc45056e363e8ec",
+  "title": "Customs and Border Protection electronic fingerprinting service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c69f9cb7b03b46909bc45056e363e8ec",
+  "opportunity_url": "https://sam.gov/opp/c69f9cb7b03b46909bc45056e363e8ec/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c69f9cb7b03b46909bc45056e363e8ec/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c69f9cb7b03b46909bc45056e363e8ec",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "20156753",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c69f9cb7b03b46909bc45056e363e8ec",
+  "detail_text": "2.1.1. The purpose of this document is to provide the necessary requirements to procure automated electronic fingerprint services for all CBP employees, contractors, consultants, and applicants (hereafter referred to as “candidates”). 2.1.2. The Contractor shall provide all fingerprinting facilities, all fingerprinting personnel, electronic communications of all fingerprint data, and all equipment necessary for completing an automated electronic fingerprint process. 2.1.3. The Contractor shall provide the following services in compliance with this Statement of Work (SOW): 2.1.3.1. Provide a means to schedule all participants for fingerprinting in coordination with the Hiring Center (HC), the Office of Professional Responsibility (OPR) / Personnel Security Division (PSD), and the Office of Information and Technology (OIT) / Workforce Management Division (WMD) as requested by the Contracting Officer’s Representative (COR). 2.1.3.2. Provide an automated self-scheduling capability to allow candidates to elect date, time and location for the electronic collection of their fingerprints. 2.1.3.3. Capture the electronic fingerprints for all CBP candidates requiring fingerprints as part of their background investigation NAC requirements. 2.1.3.4. Maintain a web-based data system, accessible remotely by CBP personnel per the Web Services and reporting requirements in this SOW. 2.1.3.5. Ensure any and all data that is collected, generated, and/or tracked in the vendor system must be exposed for integration via web service(s) and are to include relationship and unique identifiers. 2.1.3.6. Provide all trained personnel to administer fingerprint functions at facilities nationwide as specified in this SOW. The Contractor shall provide the fingerprinting sites in each of the forty-eight (48) continental United States as well as Alaska, Hawaii, Washington, D.C., Puerto Rico, the U.S. Virgin Islands, Guam, and Saipan. 2.1.3.7. The services under this contract are subject to the needs of the Government and to the availability of funds; the volume of electronic fingerprints ordered is contingent upon the number of new hires approved by Congress, current CBP employees (i.e. periodic investigations), contractors requiring reinvestigations, and specific hiring requirements. CBP shall make a good faith effort to keep the Contractor informed of anticipated or impending needs for services. The volume of requests sent by CBP to the Contractor shall vary widely by day – CBP may send up to several thousand requests in one day which shall be completed within the timelines specified in this SOW. 2.1.4. The vendor must provide a testing environment that mimics the current production environment. CBP will be going through multiple systems changes and expects additional changes in the near future. These changes must allow CBP to have a testing environment in order to ensure any updates made are functioning correctly with the interfaces prior to deployment.",
+  "detail_text_length": 2977,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/618ff1b078c34fa7a597173eb5fafff8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bef496a60dc490c8d754e7f72be7aed/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6e9d8a00e2243b5ad63a90f53f6845f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e84ac2ac69da4f15b19ebe5c1a46e088/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/618ff1b078c34fa7a597173eb5fafff8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/67e3dc35e642c48510f4c8758ae3e434c20d512c8803f09fd756a387bb36e977.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/67e3dc35e642c48510f4c8758ae3e434c20d512c8803f09fd756a387bb36e977.pdf",
+      "file_id": "618ff1b078c34fa7a597173eb5fafff8",
+      "file_name": "CBP+DRAFT+FINGERPRINT+RFQ+20156753.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 744701,
+      "sha256": "67e3dc35e642c48510f4c8758ae3e434c20d512c8803f09fd756a387bb36e977"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bef496a60dc490c8d754e7f72be7aed/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1518d6ab42cbecd54ed55f0b43331e517576e1b28a9e75d6e76d8ecb6e314ba5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1518d6ab42cbecd54ed55f0b43331e517576e1b28a9e75d6e76d8ecb6e314ba5.pdf",
+      "file_id": "6bef496a60dc490c8d754e7f72be7aed",
+      "file_name": "Attachment+C+Draft+RFQ+20156753+Past+Performance+Questionaire.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 141596,
+      "sha256": "1518d6ab42cbecd54ed55f0b43331e517576e1b28a9e75d6e76d8ecb6e314ba5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6e9d8a00e2243b5ad63a90f53f6845f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b53fa628d6050dd79f9edcd8ff0bb2e9b93034821eaa104d85f3b720736a85a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b53fa628d6050dd79f9edcd8ff0bb2e9b93034821eaa104d85f3b720736a85a.xlsx",
+      "file_id": "b6e9d8a00e2243b5ad63a90f53f6845f",
+      "file_name": "Attachment+A+Draft+RFQ+20156753+Pricing+Template.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30101,
+      "sha256": "8b53fa628d6050dd79f9edcd8ff0bb2e9b93034821eaa104d85f3b720736a85a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e84ac2ac69da4f15b19ebe5c1a46e088/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8fc62bac851dc0111fd87d6f276a3937650df6d7c2ad7d2a2ab52fa3483e4517.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8fc62bac851dc0111fd87d6f276a3937650df6d7c2ad7d2a2ab52fa3483e4517.pdf",
+      "file_id": "e84ac2ac69da4f15b19ebe5c1a46e088",
+      "file_name": "Attachment+B+Draft+RFQ+20156753+SOW+-+Electronic+Fingerprint+Services+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 386016,
+      "sha256": "8fc62bac851dc0111fd87d6f276a3937650df6d7c2ad7d2a2ab52fa3483e4517"
+    }
+  ],
+  "_mirror_hash": "542c38c0d1effd45e16917974435f130f0225a5517d5953a5ca10967b9ebad40",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.097816+00:00"
+}

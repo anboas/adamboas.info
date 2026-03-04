@@ -1,0 +1,69 @@
+{
+  "id": "sam-dfba260b6ad84267b39e7a7f9a2cc4c2",
+  "title": "Sources Sought for Construction Management, Project Controls, and Claims Analysis Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dfba260b6ad84267b39e7a7f9a2cc4c2",
+  "opportunity_url": "https://sam.gov/opp/dfba260b6ad84267b39e7a7f9a2cc4c2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dfba260b6ad84267b39e7a7f9a2cc4c2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dfba260b6ad84267b39e7a7f9a2cc4c2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912DR26R1BBO",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTH ATLANTIC.ENDIST BALTIMORE.W2SD ENDIST BALTIMORE",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dfba260b6ad84267b39e7a7f9a2cc4c2",
+  "detail_text": "The U.S. Army Corps of Engineers (USACE), Baltimore District, is conducting market research for a potential future requirement for technical support services. This Sources Sought notice seeks to identify qualified firms capable of providing: Area A: Construction Management Support (CMS) Area B: Scheduling, Project Controls, and Delay/Claims Analysis The Government will use responses to this notice to inform its acquisition strategy. This is not a solicitation. Responses are required via a survey link contained within the full announcement details and/or attachments. Interested parties must review all documents for the complete requirement description and submission instructions.",
+  "detail_text_length": 687,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28c09c3b99f3437e8a277d7fa3b9fecc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83635c7f8596491da8ab952effd592dc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e9915e6a6184cbb8ac47cbf65694038/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28c09c3b99f3437e8a277d7fa3b9fecc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8fa237f0879fb39b391683c2483709e4559a2fe9851a1b3a46a0fc07a258bfa4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8fa237f0879fb39b391683c2483709e4559a2fe9851a1b3a46a0fc07a258bfa4.pdf",
+      "file_id": "28c09c3b99f3437e8a277d7fa3b9fecc",
+      "file_name": "Area+B+Scheduling+CMS_Project+Controls_Data+Analytics...pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 213786,
+      "sha256": "8fa237f0879fb39b391683c2483709e4559a2fe9851a1b3a46a0fc07a258bfa4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83635c7f8596491da8ab952effd592dc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b03aa4eac38564dda19f5365b5e74df2a4f23306c620eee3e2691cf7fc76870d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b03aa4eac38564dda19f5365b5e74df2a4f23306c620eee3e2691cf7fc76870d.pdf",
+      "file_id": "83635c7f8596491da8ab952effd592dc",
+      "file_name": "Area+A+Construction+Management+Support_CMS..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 220982,
+      "sha256": "b03aa4eac38564dda19f5365b5e74df2a4f23306c620eee3e2691cf7fc76870d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e9915e6a6184cbb8ac47cbf65694038/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/90c5238bfdb076a9f4b6af4ffdcdf246dfca500beed8ae600b077fb976a25c37.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/90c5238bfdb076a9f4b6af4ffdcdf246dfca500beed8ae600b077fb976a25c37.pdf",
+      "file_id": "9e9915e6a6184cbb8ac47cbf65694038",
+      "file_name": "Sources+Sought+Construction+Management+Services_Final..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 135990,
+      "sha256": "90c5238bfdb076a9f4b6af4ffdcdf246dfca500beed8ae600b077fb976a25c37"
+    }
+  ],
+  "_mirror_hash": "ecd94803fa163820a81f5994053055827f99991c766dbfc1e036939707f363d4",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:17.828790+00:00"
+}

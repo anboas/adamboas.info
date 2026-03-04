@@ -1,28 +1,28 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-03T14:46:25.921745+00:00
+Generated: 2026-03-04T14:51:12.828719+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/03/2026
+Posted range: 01/01/2026 -> 03/04/2026
 
 ## Counts
-- Total candidates: 106
-- Navy-related: 106
-- Full detail cached: 106
-- Notices with attachments: 41
-- Total attachment links: 180
-- Combined Synopsis/Solicitation: 29
-- Pre-solicitation: 27
+- Total candidates: 104
+- Navy-related: 104
+- Full detail cached: 104
+- Notices with attachments: 40
+- Total attachment links: 177
+- Combined Synopsis/Solicitation: 28
+- Pre-solicitation: 26
 - Solicitation: 13
-- Sources Sought: 27
-- Special Notice: 10
+- Sources Sought: 26
+- Special Notice: 11
 
 ## Engagement signals
-- Industry Day: 2
-- Pre-solicitation: 29
-- Sources Sought: 27
+- Industry Day: 3
+- Pre-solicitation: 28
+- Sources Sought: 26
 - Vendor Outreach: 1
-- Special Notice: 10
+- Special Notice: 11
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -37,10 +37,6 @@ Posted range: 01/01/2026 -> 03/03/2026
 | 6 | Solicitation | - | 2026-01-23 | 2026-02-06 | DEPT OF DEFENSE | [Request for Proposals for Modeling, Simulation, Engineering, Analysis, and Tactics (MSEAT)](https://sam.gov/opp/d304ad4995e9428dbeae0d04018ca9e4/view) |
 | 6 | Solicitation | - | 2026-01-30 | 2026-02-09 | DEPT OF DEFENSE | [Mass Comparator](https://sam.gov/opp/f0656267fc694c0fa4b6b10d53d3aff7/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-04 | 2026-02-13 | DEPT OF DEFENSE | [Canadian Vehicle Liability Service](https://sam.gov/opp/02a440dfe5784e34ac6357ea74e459e9/view) |
-| 5 | Sources Sought | Sources Sought | 2026-01-13 | 2026-02-16 | DEPT OF DEFENSE | [Small Unmanned Aircraft Systems (sUAS) for the United States Marine Corps](https://sam.gov/opp/d76cc239a31148dfbc84c17e8bbf3769/view) |
-| 5 | Sources Sought | Sources Sought | 2026-02-09 | 2026-02-16 | DEPT OF DEFENSE | [APY-10 Radar Non-Recurring Engineering](https://sam.gov/opp/ed14796240814f80818065948a6a0d2c/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-02-02 | 2026-02-17 | DEPT OF DEFENSE | [MQ-9A Unmanned Air System (UAS) Engineering Logistics Support (ELS) Optix Sustainment](https://sam.gov/opp/0b3017269034499f9970bceb8a7ca0e3/view) |
-| 7 | Combined Synopsis/Solicitation | - | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Total Small Business Set Aside for Brand Name: TE-Connectivity Conductor Cables](https://sam.gov/opp/cc966a55ad1e4b118c9efaabe0cedf92/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-02 | 2026-02-18 | DEPT OF DEFENSE | [LCAC Rugged Mission Computer](https://sam.gov/opp/4aaa101b2eb446e2bf3a0ed882c9a708/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-02-12 | 2026-02-18 | DEPT OF DEFENSE | [Total Small Business Set Aside: Various Quantities of  Brand Name: Woods-Hole: Micromodem Stacks and Support Equipment](https://sam.gov/opp/a5dc56f4cdf34518b7e61949865b8df5/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-04 | 2026-02-19 | DEPT OF DEFENSE | [Next Generation Jammer Low Band (NGJ-LB) Engineering, Maintenance, and Development (EMD) Phase II Increment I](https://sam.gov/opp/f01dc62a18e34627b43d64b56c583caa/view) |
@@ -115,6 +111,7 @@ Posted range: 01/01/2026 -> 03/03/2026
 | 5 | Sources Sought | Sources Sought | 2026-03-01 | 2026-03-17 | DEPT OF DEFENSE | [Engineering and technical support for AN/APG-65 and AN/APG-79 Active Electronically Scanned Array (AESA) radars](https://sam.gov/opp/0663a80e66b54e58b9e7d0dbc4af8d6b/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [P-8A Poseidon ADIRU Updates](https://sam.gov/opp/9180ad325d1b4199841c633422bfb20f/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [PMAT XS Risk Management Framework Support](https://sam.gov/opp/1e0897d57bf942a6ad23ed77cd5153c1/view) |
+| 5 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-17 | DEPT OF DEFENSE | [AECM RR-198 and RR-199 CHAFF](https://sam.gov/opp/c8b070197d0d4125b9a6e64e196f1e5b/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-18 | DEPT OF DEFENSE | [Electronics Repair Kits for the 2M/MTR Program](https://sam.gov/opp/3045d43f6ee84f2899ff2a2552a78968/view) |
 | 4 | Solicitation | - | 2026-03-02 | 2026-03-18 | DEPT OF DEFENSE | [AGR4 DRAM Chip Life of Type Buy (LOTB)](https://sam.gov/opp/096f277695a745369611546e58bd8613/view) |
 | 5 | Sources Sought | Sources Sought | 2026-02-21 | 2026-03-23 | DEPT OF DEFENSE | [Auxiliary Fuel Tank](https://sam.gov/opp/8e04d72b1e7d4905a12e84027da1f6ad/view) |
@@ -127,8 +124,9 @@ Posted range: 01/01/2026 -> 03/03/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-27 | 2026-03-30 | DEPT OF DEFENSE | [Avian Waste Abatement and Removal Services at Building 1055, NUWC Keyport](https://sam.gov/opp/e6a9a1eeb4a643b8895797d2f1b59c5b/view) |
 | 5 | Special Notice | Special Notice | 2026-01-29 | 2026-03-31 | DEPT OF DEFENSE | [N0001925R0024 C-130 Depot Maintenance Repair and Overhaul (MRO): DRAFT Request For Proposal (RFP)](https://sam.gov/opp/96970190fa2a40ddaaa3ecdd9329f6f7/view) |
 | 5 | Special Notice | Special Notice | 2026-02-09 | 2026-03-31 | DEPT OF DEFENSE | [PEO(U&W)’s Industry Event 2026](https://sam.gov/opp/d6f7c5555e5a49d880b42cdfcea6bd78/view) |
-| 4 | Solicitation | - | 2026-02-20 | 2026-03-31 | DEPT OF DEFENSE | [N0001926R0018 C-130 Depot Maintenance Repair and Overhaul (MRO): Request For Proposal (RFP)](https://sam.gov/opp/fe8cfd03028e4170ae54bb5af39c8c0b/view) |
+| 4 | Solicitation | - | 2026-03-03 | 2026-03-31 | DEPT OF DEFENSE | [N0001926R0018 C-130 Depot Maintenance Repair and Overhaul (MRO): Request For Proposal (RFP)](https://sam.gov/opp/989f30fac0764abc9fa7f56f1a342a3c/view) |
 | 4 | Solicitation | - | 2026-02-27 | 2026-04-01 | DEPT OF DEFENSE | [NAWCAD (WOLF) Ship and Air Integrated Warfare Division Small Unmanned Aircraft Systems (SUAS) Reusable Architecture (SRA)](https://sam.gov/opp/9b1e17955f08441eb3c4b5da849bce32/view) |
+| 7 | Special Notice | Industry Day, Special Notice | 2026-03-04 | 2026-05-22 | DEPT OF DEFENSE | [F-35 JPO Unclassified IT Industry Day](https://sam.gov/opp/eded23d1b65b4e70921536be0e160522/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-01-14 | 2026-08-08 | DEPT OF DEFENSE | [E-6B Maintenance, Repair and Overhaul (MRO)](https://sam.gov/opp/3a4fde89ec9549d1b6e90a3e94f7edb9/view) |
 | 9 | Special Notice | Industry Day, Special Notice | 2026-03-02 | 2026-12-15 | DEPT OF DEFENSE | [INDUSTRY DAY 2026](https://sam.gov/opp/7d06e46d373b41378cfd5e9d8e54c6ab/view) |
 | 8 | Special Notice | Vendor Outreach, Special Notice | 2026-01-22 | 2026-12-16 | DEPT OF DEFENSE | [NUWC Division Keyport Industry Engagement -  Wednesday with the Deputy for Small Business](https://sam.gov/opp/b6aad3fa8c4e4b12b94e68b48b9467bc/view) |

@@ -1,0 +1,46 @@
+{
+  "id": "sam-eef12b7acc9a43119fb78e248861829f",
+  "title": "Catering Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eef12b7acc9a43119fb78e248861829f",
+  "opportunity_url": "https://sam.gov/opp/eef12b7acc9a43119fb78e248861829f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/eef12b7acc9a43119fb78e248861829f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "eef12b7acc9a43119fb78e248861829f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PAN41026P0000025596",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.410TH CSB.0410 AQ HQ     CONTRACT",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eef12b7acc9a43119fb78e248861829f",
+  "detail_text": "The 410th Contracting Support Brigade (CSB), Regional Contracting Office (RCO) – Miami, intends to award a sole source purchase order to KNS Culinary Group LLC for catering services in support of a luncheon for a conference scheduled to take place on 5 March 2026 . The determination to pursue this sole source procurement is made in accordance with FAR 13.106-1(b)(1) , which allows for soliciting from a single source. Due to the short notice for this conference, the availability of high-quality, vetted catering companies for the specified date is extremely limited. After conducting a thorough search, only one company has been identified that meets all requirements and is available on the specified date. A Limited Source Justification (LSJ) has been submitted with the requirement and is part of the contract file. This special notice is not a request for competitive quotes . No solicitation documents are available, and telephone requests will not be accepted.Interested parties may submit supporting evidence in sufficient detail to demonstrate their ability to meet the above requirement. Responses will be considered by the Government; however, the Government reserves the right to make a determination not to compete this proposed acquisition based on responses to this notice. Such a determination is solely at the discretion of the Government. All inquiries regarding this notice must be submitted in writing via email to the acquisition team: Sonia Boppell , Contract Specialist, sonia.m.boppell.civ@mail.mil Lian Pino , Contracting Officer, lian.pinzon.civ@mail.mil Please reference USSOUTHCOM Catering Services in the subject line of any correspondence related to this special notice.",
+  "detail_text_length": 1703,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22fe20f0715d44eeb69fcfe23e54eaf1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22fe20f0715d44eeb69fcfe23e54eaf1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e68397ee37fd475890b9412805f972ee1c19bab28da4c0bb671f2c2c17dddec0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e68397ee37fd475890b9412805f972ee1c19bab28da4c0bb671f2c2c17dddec0.pdf",
+      "file_id": "22fe20f0715d44eeb69fcfe23e54eaf1",
+      "file_name": "LSJ_+Catering_Conf_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3036215,
+      "sha256": "e68397ee37fd475890b9412805f972ee1c19bab28da4c0bb671f2c2c17dddec0"
+    }
+  ],
+  "_mirror_hash": "522cc3f6783f602ee95a195deb27a2b6f48ce643162d9025d447b0ee5c0f3626",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.007123+00:00"
+}

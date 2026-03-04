@@ -15239,4 +15239,116 @@ export const radarEventsSeed: RadarEvent[] = [
 			}
 		}
 	},
+	{
+		id: 'radar-hot-topic-transforming-army-installations',
+		title: 'Hot Topic - Transforming Army Installations',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-04-01',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Hot Topic - Transforming Army Installations Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['topic', 'transforming', 'army', 'installations'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/hot-topic/transforming-army-installations'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-future-armoured-vehicles-situational-awareness-conference-2026',
+		title: 'Future Armoured Vehicles Situational Awareness Conference 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-04-22',
+		endDate: '2026-04-23',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'London',
+			country: 'United Kingdom',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['future', 'armoured', 'vehicles', 'situational', 'awareness'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25775'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
 ];

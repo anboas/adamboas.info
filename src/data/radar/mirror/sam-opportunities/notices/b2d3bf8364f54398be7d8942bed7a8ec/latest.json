@@ -1,0 +1,46 @@
+{
+  "id": "sam-b2d3bf8364f54398be7d8942bed7a8ec",
+  "title": "Full Food Services - Fort Gordon, Georgia",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2d3bf8364f54398be7d8942bed7a8ec",
+  "opportunity_url": "https://sam.gov/opp/b2d3bf8364f54398be7d8942bed7a8ec/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b2d3bf8364f54398be7d8942bed7a8ec/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b2d3bf8364f54398be7d8942bed7a8ec",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "A041301",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-FT GORDON",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2d3bf8364f54398be7d8942bed7a8ec",
+  "detail_text": "The Mission Installation and Contracting Command (MICC) ‐ Fort Gordon is conducting market research to identify parties that are interested in and have the resources to provide support for the Fort Gordon Full Food Service (FFS) requirement. The Government shall not exercise any supervision or control over the contract service providers performing the services herein. Such contract service providers shall be accountable solely to the Contractor who, in turn is responsible to the Government.",
+  "detail_text_length": 495,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51de89a270504a7b9ea0777f0af074d6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51de89a270504a7b9ea0777f0af074d6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df01b7cdfff50701ee5374d1ea71b20cddefae61ac42708fb0380d4f12f71ed7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df01b7cdfff50701ee5374d1ea71b20cddefae61ac42708fb0380d4f12f71ed7.docx",
+      "file_id": "51de89a270504a7b9ea0777f0af074d6",
+      "file_name": "Sources+Sought+Notice-+Full+Food+Service+Ft+Gordon.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25335,
+      "sha256": "df01b7cdfff50701ee5374d1ea71b20cddefae61ac42708fb0380d4f12f71ed7"
+    }
+  ],
+  "_mirror_hash": "7f7fd85e064ef8115013e6057062a2bb5238ddb7cd71b3de9bc785bb4da8a9be",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.185188+00:00"
+}

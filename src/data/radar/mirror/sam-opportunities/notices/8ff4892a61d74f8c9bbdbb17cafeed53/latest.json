@@ -1,0 +1,57 @@
+{
+  "id": "sam-8ff4892a61d74f8c9bbdbb17cafeed53",
+  "title": "Intent to Award Sole Source- Amatrol 950-SH1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ff4892a61d74f8c9bbdbb17cafeed53",
+  "opportunity_url": "https://sam.gov/opp/8ff4892a61d74f8c9bbdbb17cafeed53/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8ff4892a61d74f8c9bbdbb17cafeed53/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8ff4892a61d74f8c9bbdbb17cafeed53",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ff4892a61d74f8c9bbdbb17cafeed53",
+  "detail_text": "The 82d Contracting Squadron, Sheppard AFB, TX intends to award a sole source, firm-fixed price purchase order for Amatrol 950-SH1 Steam Systems 1 Learning System to Technical Laboratory Systems, Inc at 1113 Avenue B, Katy, Texas 77493. The statutory authority which permits other than full and open competition for this acquisition is 10 United States Code (USC) 2304 (c)(1), as implemented by FAR 13.106-1(b). This authority is supported by an approved Single Source Justification. It is the Government's intent to proceed with this sole-source action. The applicable NAICS code is 332410. The size standard as defined by the U.S. Small Business Administration is 750 employees. THIS NOTICE OF INTENT IS NOT A SOLICITATION, REQUEST FOR PROPOSAL OR A REQUEST FOR QUOTATION. A solicitation package will NOT be issued. Requests for copies of a solicitation in response to this notice will not be honored or acknowledged. Information received in response to this notice will be considered solely for the purpose of determining whether conducting a competitive procurement in the future is in the best interest of the Government. All information submitted should support the offeror's capability to provide the services required, and shall be furnished at no cost or obligation to the Government. Responses must be in writing and must provide clear and concise documentation indicating an offeror's capability to provide these services. Verbal responses are not acceptable and will not be considered. Responses and questions shall be received via email by e-mail address NLT (3 days from posting date).",
+  "detail_text_length": 1599,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/64d4cde55f6c4847995b9b0bc8b5f8bb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/99b7d2d23618458c8fe5e84be26863df/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/64d4cde55f6c4847995b9b0bc8b5f8bb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8c3e95ac769f3c455afd8528356f67953f98f2a6a183af6dd74272a516c3c614.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8c3e95ac769f3c455afd8528356f67953f98f2a6a183af6dd74272a516c3c614.pdf",
+      "file_id": "64d4cde55f6c4847995b9b0bc8b5f8bb",
+      "file_name": "Sheppard+AFB+Sole+Source+Letter+Tech+Labs+Industry+TX.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 164304,
+      "sha256": "8c3e95ac769f3c455afd8528356f67953f98f2a6a183af6dd74272a516c3c614"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/99b7d2d23618458c8fe5e84be26863df/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9df34c313ca3b187335646cd7466ca3509aec30b805a3e582bf5c144b1c9c6fd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9df34c313ca3b187335646cd7466ca3509aec30b805a3e582bf5c144b1c9c6fd.pdf",
+      "file_id": "99b7d2d23618458c8fe5e84be26863df",
+      "file_name": "Amatrol+950-SH1+Sole+Source+ltr+ao+25Feb26+v2+Signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2016994,
+      "sha256": "9df34c313ca3b187335646cd7466ca3509aec30b805a3e582bf5c144b1c9c6fd"
+    }
+  ],
+  "_mirror_hash": "20d8834f5866cefe020c697b1b5857fbca98a6080b690e3ad0f6100dd2c3a53e",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.104581+00:00"
+}

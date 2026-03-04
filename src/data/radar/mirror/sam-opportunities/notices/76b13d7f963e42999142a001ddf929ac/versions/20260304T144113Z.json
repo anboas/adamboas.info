@@ -1,0 +1,57 @@
+{
+  "id": "sam-76b13d7f963e42999142a001ddf929ac",
+  "title": "Event Space - Sergeants Major Course (SMC) Class 76 Graduation Ceremony",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76b13d7f963e42999142a001ddf929ac",
+  "opportunity_url": "https://sam.gov/opp/76b13d7f963e42999142a001ddf929ac/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/76b13d7f963e42999142a001ddf929ac/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "76b13d7f963e42999142a001ddf929ac",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W911SG26QA020",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT BLISS",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76b13d7f963e42999142a001ddf929ac",
+  "detail_text": "The Mission and Installation Contracting Command – Fort Bliss is issuing this solicitation to identify parties having an interest in and the resources to support and provide venue space and services. The requirement is for a one-day service contract to provide a commercial venue and comprehensive event support services for the SMC Class 76 Graduation Ceremony on 11 June 2026 in El Paso, Texas. The contractor shall furnish all personnel, equipment, supplies, tools, materials, and services necessary to support the full execution of the graduation event. Required services include venue rental, staging, audiovisual production, lighting, projection capability, security operations, general labor, custodial support, medical standby, and associated equipment as specified in the PWS. The contractor shall ensure the facility accommodates 8,000–10,000 attendees, provides designated seating for graduates and VIPs, and meets all accessibility, safety, and operational requirements. All services must comply with applicable Federal, State of Texas, and local regulations, as well as OSHA and installation safety standards. The intention is to procure these services on a competitive basis.",
+  "detail_text_length": 1189,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/231301d3fe804a2498a906e62125bb9e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d54a311318e94b58a044ccef616a8499/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/231301d3fe804a2498a906e62125bb9e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/813a1737c244aab4403198b0b579d2af9a8521857ffe06200823bc433cb950a1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/813a1737c244aab4403198b0b579d2af9a8521857ffe06200823bc433cb950a1.pdf",
+      "file_id": "231301d3fe804a2498a906e62125bb9e",
+      "file_name": "Sources-Sought-Technical-Description-Services-+SMC+Graduation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144935,
+      "sha256": "813a1737c244aab4403198b0b579d2af9a8521857ffe06200823bc433cb950a1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d54a311318e94b58a044ccef616a8499/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/61b97cdac98987ce779ecc03f4dc07cded359bfc1e153a375809b148d9feb689.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/61b97cdac98987ce779ecc03f4dc07cded359bfc1e153a375809b148d9feb689.pdf",
+      "file_id": "d54a311318e94b58a044ccef616a8499",
+      "file_name": "PWS+SMC+Graduation+FY26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 186854,
+      "sha256": "61b97cdac98987ce779ecc03f4dc07cded359bfc1e153a375809b148d9feb689"
+    }
+  ],
+  "_mirror_hash": "10e2fd3ca9698eb59019ddab6f3b4f148087aad3b3cf05108a45712759a6434c",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.042521+00:00"
+}

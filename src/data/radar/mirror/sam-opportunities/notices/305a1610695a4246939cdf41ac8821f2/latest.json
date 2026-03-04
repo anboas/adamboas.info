@@ -1,0 +1,46 @@
+{
+  "id": "sam-305a1610695a4246939cdf41ac8821f2",
+  "title": "Valve, Linear Direct",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=305a1610695a4246939cdf41ac8821f2",
+  "opportunity_url": "https://sam.gov/opp/305a1610695a4246939cdf41ac8821f2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/305a1610695a4246939cdf41ac8821f2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "305a1610695a4246939cdf41ac8821f2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302400694-03",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=305a1610695a4246939cdf41ac8821f2",
+  "detail_text": "SEE ATTACHED",
+  "detail_text_length": 12,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f41b727adcf4cafacaf2800e0edc13e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f41b727adcf4cafacaf2800e0edc13e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/594c77a105848def11af7abca65dda7a5c7d1d632dd9442f0402e56837be9c0d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/594c77a105848def11af7abca65dda7a5c7d1d632dd9442f0402e56837be9c0d.pdf",
+      "file_id": "7f41b727adcf4cafacaf2800e0edc13e",
+      "file_name": "MRSSS+Form+FD20302400694_03.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 651312,
+      "sha256": "594c77a105848def11af7abca65dda7a5c7d1d632dd9442f0402e56837be9c0d"
+    }
+  ],
+  "_mirror_hash": "8255a323085adbc39f40c884fbccfffa79ddb855df9e8e7cd9c5a21859e4a961",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.119750+00:00"
+}

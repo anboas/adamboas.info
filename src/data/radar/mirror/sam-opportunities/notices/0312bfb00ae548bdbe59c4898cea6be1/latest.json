@@ -1,0 +1,46 @@
+{
+  "id": "sam-0312bfb00ae548bdbe59c4898cea6be1",
+  "title": "Grounds Maintenance Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0312bfb00ae548bdbe59c4898cea6be1",
+  "opportunity_url": "https://sam.gov/opp/0312bfb00ae548bdbe59c4898cea6be1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0312bfb00ae548bdbe59c4898cea6be1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0312bfb00ae548bdbe59c4898cea6be1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25626Q0469",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.256-NETWORK CONTRACT OFFICE 16 (36C256)",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0312bfb00ae548bdbe59c4898cea6be1",
+  "detail_text": "Please see attachments for details.",
+  "detail_text_length": 35,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e37b101341f4aadab07f615ea37e6bf/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e37b101341f4aadab07f615ea37e6bf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/73e8237a130894923c34c4c511c3c697c6a781c3d178640d345d676deb904c58.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/73e8237a130894923c34c4c511c3c697c6a781c3d178640d345d676deb904c58.docx",
+      "file_id": "9e37b101341f4aadab07f615ea37e6bf",
+      "file_name": "P11.+Sources+Sought+Notice+-+36C25626Q0469.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46504,
+      "sha256": "73e8237a130894923c34c4c511c3c697c6a781c3d178640d345d676deb904c58"
+    }
+  ],
+  "_mirror_hash": "b52390b0a17580f90f27882ba1de815917d88242cb16e9b1e0ea7da53515f9b2",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.102053+00:00"
+}

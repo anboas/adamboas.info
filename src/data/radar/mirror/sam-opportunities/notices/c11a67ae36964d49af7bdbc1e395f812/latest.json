@@ -1,0 +1,68 @@
+{
+  "id": "sam-c11a67ae36964d49af7bdbc1e395f812",
+  "title": "Repair VAVs in Building 1122",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c11a67ae36964d49af7bdbc1e395f812",
+  "opportunity_url": "https://sam.gov/opp/c11a67ae36964d49af7bdbc1e395f812/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c11a67ae36964d49af7bdbc1e395f812/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c11a67ae36964d49af7bdbc1e395f812",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "VLSB26-0037",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c11a67ae36964d49af7bdbc1e395f812",
+  "detail_text": "Please see the attached Sources Sought, Statement of Work, and Request for Information (RFI) for Project B1122: VAVs Repair at Shaw AFB.",
+  "detail_text_length": 136,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10fd03bac89f4cdd9283475b1dcfe75c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8174b5c13dcc459fb331bf871f7ddafd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c755c150f5454bb78e417264c799a8c5/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10fd03bac89f4cdd9283475b1dcfe75c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93755eca076e0b3eb037193e607b9741a566f76d640fe57810e9ab39099b6d74.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93755eca076e0b3eb037193e607b9741a566f76d640fe57810e9ab39099b6d74.pdf",
+      "file_id": "10fd03bac89f4cdd9283475b1dcfe75c",
+      "file_name": "Sources+Sought+VAV+B1122.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142494,
+      "sha256": "93755eca076e0b3eb037193e607b9741a566f76d640fe57810e9ab39099b6d74"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8174b5c13dcc459fb331bf871f7ddafd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a1b10e2a0195367e8dd601665f16a74838e955eb7c00162949eef523d713e964.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a1b10e2a0195367e8dd601665f16a74838e955eb7c00162949eef523d713e964.pdf",
+      "file_id": "8174b5c13dcc459fb331bf871f7ddafd",
+      "file_name": "01+SOW+VLSB+26-0037+B1122+Repair+VAVs+01.26.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 147666,
+      "sha256": "a1b10e2a0195367e8dd601665f16a74838e955eb7c00162949eef523d713e964"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c755c150f5454bb78e417264c799a8c5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/476573d44b3c8f17cdeef5e552b79af21afdfaa24015f834d670273ba66624ae.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/476573d44b3c8f17cdeef5e552b79af21afdfaa24015f834d670273ba66624ae.docx",
+      "file_id": "c755c150f5454bb78e417264c799a8c5",
+      "file_name": "Request+for+Information.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 175104,
+      "sha256": "476573d44b3c8f17cdeef5e552b79af21afdfaa24015f834d670273ba66624ae"
+    }
+  ],
+  "_mirror_hash": "54e06810347ea18b1548f058292558642d64a2e6cd466700e8b0e8c6f682b2ad",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.168520+00:00"
+}

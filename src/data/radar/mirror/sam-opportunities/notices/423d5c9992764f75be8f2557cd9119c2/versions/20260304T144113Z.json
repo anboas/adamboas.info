@@ -1,0 +1,46 @@
+{
+  "id": "sam-423d5c9992764f75be8f2557cd9119c2",
+  "title": "Pump Unit, Centrifug",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=423d5c9992764f75be8f2557cd9119c2",
+  "opportunity_url": "https://sam.gov/opp/423d5c9992764f75be8f2557cd9119c2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/423d5c9992764f75be8f2557cd9119c2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "423d5c9992764f75be8f2557cd9119c2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM1-26-R-MD61",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-03",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=423d5c9992764f75be8f2557cd9119c2",
+  "detail_text": "DLA Weapons Support Mechanicsburg is seeking sources capable of supplying the following item: NSN: 4320003683186 Nomenclautre: Pump Unit, Centrifug P/N: 777H440 Qty: 109 Approved Design Cage: CRANE PUMPS & SYSTEMS PFT CORP (96046) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to amanda.heller@dla.mil by 4:00 PM EST on 17 March 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1227,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3058f1fecf3f40cba69ddf98ae4a52fc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3058f1fecf3f40cba69ddf98ae4a52fc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/668257b8f237b46a04580fee730ab7ecf47f9e6782a4ee4e6f19a537b640dfdc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/668257b8f237b46a04580fee730ab7ecf47f9e6782a4ee4e6f19a537b640dfdc.docx",
+      "file_id": "3058f1fecf3f40cba69ddf98ae4a52fc",
+      "file_name": "1.08+Sources+Sought+MARKET+SURVEY.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52168,
+      "sha256": "668257b8f237b46a04580fee730ab7ecf47f9e6782a4ee4e6f19a537b640dfdc"
+    }
+  ],
+  "_mirror_hash": "486090c8f92d1054226dec5a50f0173afc1b6ffdb9e732c50d7bb7c604a2e631",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.207430+00:00"
+}

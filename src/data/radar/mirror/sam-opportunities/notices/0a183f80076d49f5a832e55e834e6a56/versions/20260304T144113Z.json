@@ -1,0 +1,57 @@
+{
+  "id": "sam-0a183f80076d49f5a832e55e834e6a56",
+  "title": "COUPLING ASSEMBLY,Q",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a183f80076d49f5a832e55e834e6a56",
+  "opportunity_url": "https://sam.gov/opp/0a183f80076d49f5a832e55e834e6a56/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0a183f80076d49f5a832e55e834e6a56/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0a183f80076d49f5a832e55e834e6a56",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601322",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a183f80076d49f5a832e55e834e6a56",
+  "detail_text": "See Attachment",
+  "detail_text_length": 14,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6385454c8337476e9b50fedc21fd73a2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee01dbf696e84792a81a2c95bd63bd23/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6385454c8337476e9b50fedc21fd73a2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/11c379d4048e9af4df09f4fe789fd9fa8c1701e56b64dcc738b01b89e9f015c8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/11c379d4048e9af4df09f4fe789fd9fa8c1701e56b64dcc738b01b89e9f015c8.pdf",
+      "file_id": "6385454c8337476e9b50fedc21fd73a2",
+      "file_name": "FD20302601322.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 707977,
+      "sha256": "11c379d4048e9af4df09f4fe789fd9fa8c1701e56b64dcc738b01b89e9f015c8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee01dbf696e84792a81a2c95bd63bd23/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/04c68e02f8a1f4a204a6c0cebfb0c2382895d351a3acc71ae81df34e0f805f03.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/04c68e02f8a1f4a204a6c0cebfb0c2382895d351a3acc71ae81df34e0f805f03.pdf",
+      "file_id": "ee01dbf696e84792a81a2c95bd63bd23",
+      "file_name": "FD20302601322-1-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 722599,
+      "sha256": "04c68e02f8a1f4a204a6c0cebfb0c2382895d351a3acc71ae81df34e0f805f03"
+    }
+  ],
+  "_mirror_hash": "46c8f93d61778c3900a9bf2b96a34a87d13fa993b05c67b39f532c2d50089192",
+  "_mirror_run_id": "20260304T144113Z",
+  "_mirror_recorded_at": "2026-03-04T14:50:18.140386+00:00"
+}
