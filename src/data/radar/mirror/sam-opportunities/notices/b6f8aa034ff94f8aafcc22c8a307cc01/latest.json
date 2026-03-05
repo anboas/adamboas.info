@@ -1,0 +1,57 @@
+{
+  "id": "sam-b6f8aa034ff94f8aafcc22c8a307cc01",
+  "title": "Compliance Automation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6f8aa034ff94f8aafcc22c8a307cc01",
+  "opportunity_url": "https://sam.gov/opp/b6f8aa034ff94f8aafcc22c8a307cc01/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b6f8aa034ff94f8aafcc22c8a307cc01/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b6f8aa034ff94f8aafcc22c8a307cc01",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "Compliance_Automation",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE FINANCE AND ACCOUNTING SERVICE (DFAS).DEFENSE FINANCE AND ACCOUNTING SVC",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6f8aa034ff94f8aafcc22c8a307cc01",
+  "detail_text": "Note as of 5 Mar 2026: Q&A document has been uploaded. This Sources Sought is to gather information from industry on commercially available or near-market solutions that can simplify, automate, and manage the full lifecycle of system accreditation, from initial assessment to continuous monitoring.",
+  "detail_text_length": 298,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8de69d582bd646bbbbe96c14a0f04b52/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba20b11ddfda43e4be14dbd45896dc72/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8de69d582bd646bbbbe96c14a0f04b52/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/74a4d3811bc0b6e3b6d364f173725ca8931c29c0cac920e738aa4057f33b9866.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/74a4d3811bc0b6e3b6d364f173725ca8931c29c0cac920e738aa4057f33b9866.pdf",
+      "file_id": "8de69d582bd646bbbbe96c14a0f04b52",
+      "file_name": "Sources_Sought_Compliance_Automation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 959682,
+      "sha256": "74a4d3811bc0b6e3b6d364f173725ca8931c29c0cac920e738aa4057f33b9866"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba20b11ddfda43e4be14dbd45896dc72/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8fa88528eb0c85a1baa415725841e821bec94d0470ece48e706a6acc1f1b6f8c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8fa88528eb0c85a1baa415725841e821bec94d0470ece48e706a6acc1f1b6f8c.pdf",
+      "file_id": "ba20b11ddfda43e4be14dbd45896dc72",
+      "file_name": "Sources+Sought+Questions_Answers.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59434,
+      "sha256": "8fa88528eb0c85a1baa415725841e821bec94d0470ece48e706a6acc1f1b6f8c"
+    }
+  ],
+  "_mirror_hash": "1478b65dfeacb773b7b2e9173031a0d2a7bc1e0ea7ebb1b87a92db844e79d34e",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.511184+00:00"
+}

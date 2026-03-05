@@ -1,0 +1,58 @@
+{
+  "id": "sam-1cc58c6336114d8296c5ab5627c7eae7",
+  "title": "R499--Small Business Event | Grainger Private Sector Office  Virtual One-on-One Session | Cisco Webex Mar 31",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1cc58c6336114d8296c5ab5627c7eae7",
+  "opportunity_url": "https://sam.gov/opp/1cc58c6336114d8296c5ab5627c7eae7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1cc58c6336114d8296c5ab5627c7eae7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1cc58c6336114d8296c5ab5627c7eae7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36U10126Q0015",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.OFFICE OF SMALL & DISADVANTAGED BUSINESS UTILIZATION (OSDBU) (36U101)",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Vendor engagement keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1cc58c6336114d8296c5ab5627c7eae7",
+  "detail_text": "1. DATE, TIME, AND PLACE: The event takes place, Tuesday March 31, 2026 from 9:00 A.M. 4:00 P.M. EST. Â Â 2. AGENDA: Participants will be provided the outline of a business opportunity and related details. 3. REGISTRATION: Visit https://www.vetbiz.va.gov/events and click the link for the REGISTRATION OPEN - Grainger Federal Sales Virtual Scheduled One-on-One Meetings to register. 4. PRIMARY NAICS CODES: Multiple North American Industry Classification System (NAICS) codes pertains to this opportunity.Â Additional amendments may be issued to target other related NAICS codes specified within this announcement. 5. DISCLAIMER: This notice is issued solely for information and planning purposes and does not constitute a solicitation. Neither unsolicited proposals nor any other kind of offers will be considered in response to this notice.",
+  "detail_text_length": 842,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04d27417600b4c16a82e1848368bc5f4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/19bd772891cd4e799e9be345aa976ed3/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04d27417600b4c16a82e1848368bc5f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/56922d867b763ed53afded1ebcc984134369911ce39fa15b85a5a7401126a029.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/56922d867b763ed53afded1ebcc984134369911ce39fa15b85a5a7401126a029.docx",
+      "file_id": "04d27417600b4c16a82e1848368bc5f4",
+      "file_name": "36U10126Q0015.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16135,
+      "sha256": "56922d867b763ed53afded1ebcc984134369911ce39fa15b85a5a7401126a029"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/19bd772891cd4e799e9be345aa976ed3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6492a4cbe4da83d5ff2a6e236525094aaf94b0f8ab99cb3fb77052535ddedbbd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6492a4cbe4da83d5ff2a6e236525094aaf94b0f8ab99cb3fb77052535ddedbbd.pdf",
+      "file_id": "19bd772891cd4e799e9be345aa976ed3",
+      "file_name": "Flyer+Grainger+Federal+Sales+Virtual+Scheduled+One-on-One+Meetings+final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 218922,
+      "sha256": "6492a4cbe4da83d5ff2a6e236525094aaf94b0f8ab99cb3fb77052535ddedbbd"
+    }
+  ],
+  "_mirror_hash": "146d0a98f586246e089f5a6beb99918310c80fa146ade558b672b983b7abe68f",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.402846+00:00"
+}

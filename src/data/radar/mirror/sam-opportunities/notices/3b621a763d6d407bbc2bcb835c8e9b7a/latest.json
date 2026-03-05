@@ -1,0 +1,47 @@
+{
+  "id": "sam-3b621a763d6d407bbc2bcb835c8e9b7a",
+  "title": "Stencil Ink Presolicitation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b621a763d6d407bbc2bcb835c8e9b7a",
+  "opportunity_url": "https://sam.gov/opp/3b621a763d6d407bbc2bcb835c8e9b7a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3b621a763d6d407bbc2bcb835c8e9b7a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3b621a763d6d407bbc2bcb835c8e9b7a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W90Y3H53630002",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE.GSA/FAS/GSS/QSCBA/SPECIAL CONTRACTING BRANCH A AND QSCBB SPECIAL CONTRACTING BRANCH B",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b621a763d6d407bbc2bcb835c8e9b7a",
+  "detail_text": "The General Services Administration (GSA) anticipates issuing a solicitation for the procurement of Ink, Marking Stencil , National Stock Number (NSN) 7510-00-888-8526 , or equal, to support Federal civilian and military activities. The item is a Type II, nonconductive, liquid stencil ink with an overall capacity of approximately 32 ounces , black in color, opaque, and suitable for use on nonporous surfaces . The ink must be heat, light, mildew, water, and salt resistant and furnished in accordance with applicable federal specifications, including A-A-56032 , or equivalent. Packaging, packing, marking, palletization, and delivery shall be in accordance with applicable commercial practices and federal standards, including FED-STD-123 and MIL-STD-129 , as applicable. Material Safety Data documentation shall be provided in accordance with federal requirements. Shelf-life requirements apply. This presolicitation notice is issued for planning and informational purposes only and does not constitute a solicitation. The Government is not requesting proposals at this time and will not reimburse costs incurred in response to this notice. Information received may be used to finalize the acquisition strategy, including contract type and set-aside determination. The solicitation, if issued, is anticipated to be posted to SAM.gov at a later date.",
+  "detail_text_length": 1354,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7090d8f7dcd6431fbbe00d2a9321a775/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7090d8f7dcd6431fbbe00d2a9321a775/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a427c8eba8e5b02e783b3ff01f9af2bbdd344c08ff7230ad51503749329d6c06.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a427c8eba8e5b02e783b3ff01f9af2bbdd344c08ff7230ad51503749329d6c06.pdf",
+      "file_id": "7090d8f7dcd6431fbbe00d2a9321a775",
+      "file_name": "7510008888526.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 54098,
+      "sha256": "a427c8eba8e5b02e783b3ff01f9af2bbdd344c08ff7230ad51503749329d6c06"
+    }
+  ],
+  "_mirror_hash": "90cefc4c9641ad65b03500e95102e2d2903808b17629262e84e22099c40d51d3",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.186683+00:00"
+}

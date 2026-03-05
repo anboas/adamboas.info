@@ -1,0 +1,46 @@
+{
+  "id": "sam-c734d24e73ed47299d91bc31cafb7cdb",
+  "title": "6505--RX - Brand name or Equal to Pylarify",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c734d24e73ed47299d91bc31cafb7cdb",
+  "opportunity_url": "https://sam.gov/opp/c734d24e73ed47299d91bc31cafb7cdb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c734d24e73ed47299d91bc31cafb7cdb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c734d24e73ed47299d91bc31cafb7cdb",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24226Q0246",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.242-NETWORK CONTRACT OFFICE 02 (36C242)",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c734d24e73ed47299d91bc31cafb7cdb",
+  "detail_text": "This is a pre-solicitation notice-The official solicitation will be posted 03/05/2026 at 10AM",
+  "detail_text_length": 93,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6a93a4433a94a5c9b3f3e6f2d143257/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6a93a4433a94a5c9b3f3e6f2d143257/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4f7a0322ed087471698124a48e8501a7e47f9fa1703c7e8f9d9551fc6457fc5e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4f7a0322ed087471698124a48e8501a7e47f9fa1703c7e8f9d9551fc6457fc5e.docx",
+      "file_id": "d6a93a4433a94a5c9b3f3e6f2d143257",
+      "file_name": "36C24226Q0246_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14492,
+      "sha256": "4f7a0322ed087471698124a48e8501a7e47f9fa1703c7e8f9d9551fc6457fc5e"
+    }
+  ],
+  "_mirror_hash": "e1d06681e5cde3246a2bfe320747e2beeca4e40498a94e18dfe059eb11ec9a7e",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.414422+00:00"
+}

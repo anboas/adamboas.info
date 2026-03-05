@@ -1,0 +1,79 @@
+{
+  "id": "sam-bb8c900b6f6e49b991e3054240d0fcd0",
+  "title": "00134 - No Surprises Act Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bb8c900b6f6e49b991e3054240d0fcd0",
+  "opportunity_url": "https://sam.gov/opp/bb8c900b6f6e49b991e3054240d0fcd0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bb8c900b6f6e49b991e3054240d0fcd0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bb8c900b6f6e49b991e3054240d0fcd0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "OAA-26-00134",
+  "agency_path": "LABOR, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION AND MANAGEMENT.DOL - CAS DIVISION 1 PROCUREMENT",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bb8c900b6f6e49b991e3054240d0fcd0",
+  "detail_text": "3/5: The RFI is being amended to incorporate the responses to vendor questions in Attachment 01 - Q&A Log - No Surprises Act - Responses to Vendor Questions. The response date for the RFI remains unchanged and are due on March 17, 2026 at 2:00PM EST. The U.S. Department of Labor, Employee Benefit Security Administration (EBSA), seeks information/solutions for No Surprises Act (NSA) Services in accordance with the attached Performance Work Statement (PWS). This is a Request for Information (RFI). Please submit questions using Attachment 01 - QA Log NLT February 26, 2026. Responses to the RFI are due on March 17, 2026 at 2:00PM EST.",
+  "detail_text_length": 638,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/261fd46b3c0f425586bb10fa39319efd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/473ac48ab1004f24bea96cacdf48fa7f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba96dd5e0f3b465385a55b7f940a1e3c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4fe5ef334a9479f9c6fb4d1b57e4e83/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/261fd46b3c0f425586bb10fa39319efd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e4aa2d9dd989bb8952c2a6d0166d8c3b652481303d279ebb3b2d89f6cd5b85cb.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e4aa2d9dd989bb8952c2a6d0166d8c3b652481303d279ebb3b2d89f6cd5b85cb.xlsx",
+      "file_id": "261fd46b3c0f425586bb10fa39319efd",
+      "file_name": "Attachment+01+-+QA+Log+-+No+Surprises+Act+-+Responses+to+Vendor+Questions.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19198,
+      "sha256": "e4aa2d9dd989bb8952c2a6d0166d8c3b652481303d279ebb3b2d89f6cd5b85cb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/473ac48ab1004f24bea96cacdf48fa7f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/520a2478ef65241ee2abd60f54c6f5a89e38450d89bc448ce2549aacc08f3da1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/520a2478ef65241ee2abd60f54c6f5a89e38450d89bc448ce2549aacc08f3da1.docx",
+      "file_id": "473ac48ab1004f24bea96cacdf48fa7f",
+      "file_name": "RFI+PWS+NSA+Complaint+Processing+02.11.26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43802,
+      "sha256": "520a2478ef65241ee2abd60f54c6f5a89e38450d89bc448ce2549aacc08f3da1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba96dd5e0f3b465385a55b7f940a1e3c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e11cd4b20b6a9075f6f1f616059d6b4e9b638fe21d7a40d5050e8c8743dfd3da.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e11cd4b20b6a9075f6f1f616059d6b4e9b638fe21d7a40d5050e8c8743dfd3da.doc",
+      "file_id": "ba96dd5e0f3b465385a55b7f940a1e3c",
+      "file_name": "RFI+-+No+Surprises+Act.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153088,
+      "sha256": "e11cd4b20b6a9075f6f1f616059d6b4e9b638fe21d7a40d5050e8c8743dfd3da"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4fe5ef334a9479f9c6fb4d1b57e4e83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cb627c857b502eb8a1ebeca3f46c815119d0697c4a0a34c50d9f4582e8cb8598.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cb627c857b502eb8a1ebeca3f46c815119d0697c4a0a34c50d9f4582e8cb8598.xlsx",
+      "file_id": "e4fe5ef334a9479f9c6fb4d1b57e4e83",
+      "file_name": "Attachment+01+-+QA+Log.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18338,
+      "sha256": "cb627c857b502eb8a1ebeca3f46c815119d0697c4a0a34c50d9f4582e8cb8598"
+    }
+  ],
+  "_mirror_hash": "a4fab7437ea5f34ccdb442414d71d2790d53b8901917b2edec8b45bb3e3be158",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.578566+00:00"
+}

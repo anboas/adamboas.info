@@ -1,0 +1,57 @@
+{
+  "id": "sam-3ac3af6c8db44aadb5459648e429ab9e",
+  "title": "TUGCON; OPEN-OCEAN TOW MISSION",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3ac3af6c8db44aadb5459648e429ab9e",
+  "opportunity_url": "https://sam.gov/opp/3ac3af6c8db44aadb5459648e429ab9e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3ac3af6c8db44aadb5459648e429ab9e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3ac3af6c8db44aadb5459648e429ab9e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N32205-SS-PM4-26-065",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3ac3af6c8db44aadb5459648e429ab9e",
+  "detail_text": "Please see attached Sources Sought Notice Amendment 0001. Please see attached Sources Sought Notice N32205-26-PM4-065.",
+  "detail_text_length": 118,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49e5407273eb4094a6cd77676338d921/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4f4cf7e9cd8439c9f6542b846e8a573/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49e5407273eb4094a6cd77676338d921/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d7f760d894bb7bf110d2c12c5c3cc8cfa6c511e5929b7720cef0906b6f624864.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d7f760d894bb7bf110d2c12c5c3cc8cfa6c511e5929b7720cef0906b6f624864.pdf",
+      "file_id": "49e5407273eb4094a6cd77676338d921",
+      "file_name": "SS-26-065+A0001+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 104278,
+      "sha256": "d7f760d894bb7bf110d2c12c5c3cc8cfa6c511e5929b7720cef0906b6f624864"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4f4cf7e9cd8439c9f6542b846e8a573/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/349222e01637eb9a0d8783be64e90366d02fd100975ea9002ced0a956e37954b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/349222e01637eb9a0d8783be64e90366d02fd100975ea9002ced0a956e37954b.pdf",
+      "file_id": "b4f4cf7e9cd8439c9f6542b846e8a573",
+      "file_name": "SS-26-065.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118135,
+      "sha256": "349222e01637eb9a0d8783be64e90366d02fd100975ea9002ced0a956e37954b"
+    }
+  ],
+  "_mirror_hash": "0c29d83bce75041ec411e2969369e3d38d8063b108a7ac47ab2ca53370b1bc01",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.440551+00:00"
+}

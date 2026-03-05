@@ -1,0 +1,57 @@
+{
+  "id": "sam-1d870dfd8d6b49819ef302cc1c04df30",
+  "title": "PROJECT CM26036008",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d870dfd8d6b49819ef302cc1c04df30",
+  "opportunity_url": "https://sam.gov/opp/1d870dfd8d6b49819ef302cc1c04df30/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1d870dfd8d6b49819ef302cc1c04df30/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1d870dfd8d6b49819ef302cc1c04df30",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "1000223657",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d870dfd8d6b49819ef302cc1c04df30",
+  "detail_text": "CLIN 0001: 4820-01-538-6178 VALVE, SAFETY RELIEF Approved Source(s) – NORTHROP GRUMMAN SYSTEMS CORPORATION (26916) P/N: 029-002088-0002 BROWNELL LTD (K3649) P/N: BLD9397/02 The AMC/AMSC for CLIN 0001 is: 3 / D AMC 3. Suitable for competitive acquisition for the second or subsequent time AMSC D. The data needed to acquire this part competitively is not physically available, it cannot be obtained economically, nor is it possible to draft adequate specifications or any other adequate, economical description of the material for a competitive solicitation. AMCS 3, 4, or 5 are valid. Primary Point of Contact: Mindy M Cook, Contract Specialist Please review the NSN listed above and provide any sources that may be able to manufacture this item. The approved sources for this NSN are currently listed above. All information may be submitted directly to the Contract Specialist listed above. This information must be provided by the response date indicated above. Should a company wish to be reviewed and qualified as an “Approved Source”, they must submit an application package through the DLA Land and Maritime Alternate Offer/Source Approval Request (SAR) Program. A SAR package contains all technical data needed to demonstrate that the prospective contractor can completely manufacture the item to the same level of quality or better than the Original Equipment Manufacturer (OEM). The onus is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item which DLA Land and Maritime is procuring. For further information, please reference the DLA Weapons System webpage shown below for detailed explanation for the information and format necessary for a SAR and for the SAR approval process. http://www.dla.mil/LandandMaritime/Business/Selling/Alternate-Offers/ See DIBBS DLAD PROC NOTE L04 Offers for Part Numbered Items and M06 Evaluation of Offers for Part Numbered Items. This SOURCES SOUGHT notice is for informational and planning purposes only and shall not be construed as a solicitation or as an obligation or commitment by the Government. This notice is strictly for market research. This is NOT a solicitation for proposals, proposal abstracts, or quotations. The purpose of this notice is to be obtain information regarding the capability and availability of qualified businesses that are capable of executing this potential contract. The Government is not obligated and will not pay for any information received from potential sources as a result of this notice. Your response to the information requested will assist the Government in determining the appropriate acquisition method. Sources interested in providing an offer on the solicitation, should complete the attached market survey and return the completed copy to Mindy Cook via email at mindy.cook@dla.mil.",
+  "detail_text_length": 2840,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d79be4a9b9c4a25b4024f04a2298d4c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a95f255535fb4611878e634d4ced53f1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d79be4a9b9c4a25b4024f04a2298d4c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4f0115f6229a36e9f0db32eabc8fba1eb38a62d2348bc837c53f70488e38ab3d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4f0115f6229a36e9f0db32eabc8fba1eb38a62d2348bc837c53f70488e38ab3d.docx",
+      "file_id": "4d79be4a9b9c4a25b4024f04a2298d4c",
+      "file_name": "CM26036008+Market+Research+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56892,
+      "sha256": "4f0115f6229a36e9f0db32eabc8fba1eb38a62d2348bc837c53f70488e38ab3d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a95f255535fb4611878e634d4ced53f1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d6bd0d1d6460bf7ca0af1819a04b01d4593e53c13542c74008111ec30a8608a6.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d6bd0d1d6460bf7ca0af1819a04b01d4593e53c13542c74008111ec30a8608a6.xlsx",
+      "file_id": "a95f255535fb4611878e634d4ced53f1",
+      "file_name": "CM26036008+Market+Research+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 201480,
+      "sha256": "d6bd0d1d6460bf7ca0af1819a04b01d4593e53c13542c74008111ec30a8608a6"
+    }
+  ],
+  "_mirror_hash": "ed64aa428564de4659aa240af6cd272176271933594d9a345f547a1753534f7d",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.477351+00:00"
+}

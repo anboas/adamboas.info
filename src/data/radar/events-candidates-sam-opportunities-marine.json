@@ -820,6 +820,36 @@
     "resource_items": null
   },
   {
+    "id": "sam-6f9e41a375e744b294d1e313bcd67f82",
+    "title": "Training and Education Command (TECOM) Human Performance (HPB) Branch (Synopsis)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f9e41a375e744b294d1e313bcd67f82",
+    "opportunity_url": "https://sam.gov/opp/6f9e41a375e744b294d1e313bcd67f82/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6f9e41a375e744b294d1e313bcd67f82/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6f9e41a375e744b294d1e313bcd67f82",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "M0026426R0009",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MCINCR.COMMANDER",
+    "posted_date": "2026-03-04",
+    "response_deadline": "2026-03-18",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f9e41a375e744b294d1e313bcd67f82",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f9e41a375e744b294d1e313bcd67f82",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-56806bd9cce54f9bb33b5f44d928cc5d",
     "title": "Training and Education Command (TECOM) Range and Training Area Management (RTAM)",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=56806bd9cce54f9bb33b5f44d928cc5d",
@@ -892,6 +922,42 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebd2ce340fc0442583a353077258c714/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-4cb4b860bc084179a2fc47b17730eb82",
+    "title": "American Sign Language (ASL) Interpreter",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4cb4b860bc084179a2fc47b17730eb82",
+    "opportunity_url": "https://sam.gov/opp/4cb4b860bc084179a2fc47b17730eb82/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/4cb4b860bc084179a2fc47b17730eb82/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "4cb4b860bc084179a2fc47b17730eb82",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "M00264-26-RFI-0018",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MCINCR.COMMANDER",
+    "posted_date": "2026-03-05",
+    "response_deadline": "2026-03-31",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4cb4b860bc084179a2fc47b17730eb82",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4cb4b860bc084179a2fc47b17730eb82",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/517918b0e2954c258c5f05ce1cbe4705/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/517918b0e2954c258c5f05ce1cbe4705/download"
       }
     ]
   }

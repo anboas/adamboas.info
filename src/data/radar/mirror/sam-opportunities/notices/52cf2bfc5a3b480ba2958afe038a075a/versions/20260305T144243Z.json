@@ -1,0 +1,57 @@
+{
+  "id": "sam-52cf2bfc5a3b480ba2958afe038a075a",
+  "title": "Sole Source / Maintenance of Falcon Scanner and License",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52cf2bfc5a3b480ba2958afe038a075a",
+  "opportunity_url": "https://sam.gov/opp/52cf2bfc5a3b480ba2958afe038a075a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/52cf2bfc5a3b480ba2958afe038a075a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "52cf2bfc5a3b480ba2958afe038a075a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "5000221545",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52cf2bfc5a3b480ba2958afe038a075a",
+  "detail_text": "This is a notice of intent to sole source contract pursuant to Federal Acquisition Regulation (FAR) Part 13.106-1(b)(1): For purchases not exceeding the simplified acquisition threshold (SAT), Contracting Officers may solicit from one source if the Contracting Officer determines that the circumstances of the contract action deem only one source reasonably available. This notice of intent is not a request for competitive proposals. This synopsis is for informational purposes only. Criminal Investifation CI utilizes OPEX Falcon Scanners, critical for high-speed, efficient document processing that supports CSD case processing, Ensuring the functionality of this proprietary equipment though timely and expert maintenance, essential to preserving the goverment's initial investment and avoiding operational disruptions. The OPEX Falacon Scanner includes patented propreitary software (CertainScan) and unique hardware components that are integral to its performance. Only OPEX Corporation can service and maintain these systems as the sole manufacturer and provider of certified maintenance.",
+  "detail_text_length": 1095,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09ab504506e147c898a13d073787d368/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c88da1ea3ad5412c80754d26fb665b6f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09ab504506e147c898a13d073787d368/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8ca64baf3a56d002ee5dfcd2c55afe4b1251a6fb178424a5ef248acf0ca1a225.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8ca64baf3a56d002ee5dfcd2c55afe4b1251a6fb178424a5ef248acf0ca1a225.pdf",
+      "file_id": "09ab504506e147c898a13d073787d368",
+      "file_name": "Sole+Source+Justification+Redacted_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 470689,
+      "sha256": "8ca64baf3a56d002ee5dfcd2c55afe4b1251a6fb178424a5ef248acf0ca1a225"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c88da1ea3ad5412c80754d26fb665b6f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/327cdeca287365aa94d44fcab4f866a9cc2c1a4cebc98c1648cfd2b46569d0af.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/327cdeca287365aa94d44fcab4f866a9cc2c1a4cebc98c1648cfd2b46569d0af.docx",
+      "file_id": "c88da1ea3ad5412c80754d26fb665b6f",
+      "file_name": "SOW_Falcon.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19980,
+      "sha256": "327cdeca287365aa94d44fcab4f866a9cc2c1a4cebc98c1648cfd2b46569d0af"
+    }
+  ],
+  "_mirror_hash": "9267632934653b98c2b77fdbea5a50d616471ca0515aa7fe99b452309711ebce",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.600886+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "sam-9d19875262bc42a69ff8faac7885f77a",
+  "title": "Sources Sought Notice: Guide, Firing Pin (NSN: 1005-13-122-1241)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d19875262bc42a69ff8faac7885f77a",
+  "opportunity_url": "https://sam.gov/opp/9d19875262bc42a69ff8faac7885f77a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9d19875262bc42a69ff8faac7885f77a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9d19875262bc42a69ff8faac7885f77a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912CH-26-Q-0024",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC- DTA",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d19875262bc42a69ff8faac7885f77a",
+  "detail_text": "SOURCES SOUGHT NOTICE The Army Contracting Command – Detroit Arsenal (ACC-DTA) is seeking to gain knowledge of interest, capabilities, and qualifications of various members of the community, to include both small and large businesses, for production of the following: Guide, Firing Pin NSN: 1005-13-122-1241 PART NO.: 3524470030 The purpose of this market survey is to identify potential offerors and gather information for planning purposes about capabilities of each industry source. This input will help ACC-DTA ascertain the interest, capability, and capacity of all potential offerors. The survey does not constitute a solicitation and shall not be construed as commitment by the Government to award a contract. No telephone responses will be accepted. Interested vendors are encouraged to complete the survey located under \"Attachments/Links\" and return it via e-mail to: Michael Shammami Contract Specialist, ACC-DTA E-mail: Michael.S.Shammami.Civ@Army.Mil Subject Line: “ Guide, Firing Pin Survey Response ” All survey responses must be received no later than Wednesday, 18-March-2026 at 5:00 p.m. eastern .",
+  "detail_text_length": 1115,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bbcd5b8a2ab4737b71e1d65f65b47fd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bbcd5b8a2ab4737b71e1d65f65b47fd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/17aa3a13a074348b9ef70a9d6088284ce366e0d394924ffd8043c6f860686106.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/17aa3a13a074348b9ef70a9d6088284ce366e0d394924ffd8043c6f860686106.docx",
+      "file_id": "0bbcd5b8a2ab4737b71e1d65f65b47fd",
+      "file_name": "Market+Survey_Firing+Pin.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25286,
+      "sha256": "17aa3a13a074348b9ef70a9d6088284ce366e0d394924ffd8043c6f860686106"
+    }
+  ],
+  "_mirror_hash": "965f8dd05e493607515d37bdab852e07c12e71f9d3c5994e582d3c0cf5d5a656",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.245201+00:00"
+}

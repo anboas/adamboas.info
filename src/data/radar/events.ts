@@ -15351,4 +15351,90 @@ export const radarEventsSeed: RadarEvent[] = [
 			}
 		}
 	},
+	{
+		id: 'radar-hot-topic-installation-transformation',
+		title: 'Hot Topic - Installation Transformation',
+		description: 'AUSA Army Aviation hot-topic forum focused on force modernization, acquisition priorities, and industry-government collaboration.',
+		startDate: '2026-04-01',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8908,
+			lng: -77.0881,
+			venue: 'General Gordon R. Sullivan Conference & Events Center'
+		},
+		ontology: 
+		{
+			themes: ['Army aviation modernization', 'Industry-government collaboration', 'Aviation force sustainment'],
+			capabilityAreas: ['Aviation systems', 'Acquisition', 'Training and sustainment'],
+			missionThreads: ['Army Aviation readiness', 'Multi-Domain Operations support'],
+			stakeholders: ['Army aviation leaders', 'Program offices', 'Industry partners'],
+			keywords: ['army aviation', 'installation transformation', 'hot topic'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-30 days',
+				prep: 'T-21 to T-1 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA events',
+				url: 'https://www.ausa.org/events/hot-topic/installation-transformation',
+				type: 'official',
+				lastVerified: '2026-03-05',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/hot-topic/installation-transformation',
+				registration: 'https://ausa.my.site.com/OnlineCommunity/s/community-event?id=a2VPn000003RzqTMAS'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 0,
+					max: 750
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			acquisition:
+			{
+				engagementKinds: ['Vendor Outreach'],
+				noticeType: 'Event registration (no SAM solicitation published on official event page)',
+				agency: 'U.S. Army Aviation (topic focus)',
+				registrationDeadline: '2026-03-30'
+			},
+			engagement:
+			{
+				status: 'Not engaged',
+				contacts: [
+				{
+					name: 'Kevin Engler',
+					role: 'Deputy Director, Outreach and Programs',
+					organization: 'AUSA',
+					email: 'kengler@ausa.org',
+					phone: '703.907.2412'
+				},
+				{
+					name: 'Sophia Martin',
+					role: 'Registrar',
+					organization: 'AUSA',
+					email: 'smartin@ausa.org',
+					phone: '703.907.2692'
+				}
+				]
+			},
+			notes: 'Official listing provides registration details and organizer contacts only; no public government POC or solicitation number was listed as of 2026-03-05.'
+		}
+	},
 ];

@@ -1,0 +1,58 @@
+{
+  "id": "sam-b1b8412d65ab49448b89bbcc2281fb54",
+  "title": "Logistics and Property Management Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1b8412d65ab49448b89bbcc2281fb54",
+  "opportunity_url": "https://sam.gov/opp/b1b8412d65ab49448b89bbcc2281fb54/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b1b8412d65ab49448b89bbcc2281fb54/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b1b8412d65ab49448b89bbcc2281fb54",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N0018926LPMSS",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1b8412d65ab49448b89bbcc2281fb54",
+  "detail_text": "The Fleet Logistics Center Norfolk (FLCN), Norfolk, Virginia is seeking information on qualified and experienced sources for planning purposes in an effort to derive one contract to provide Logistics and Property Managemenet Support Services in support of Naval Oceanographic Office (NAVOCEANO) in accordance with the Draft Performance Work Statement (PWS). THIS SOURCES SOUGHT NOTICE IS FOR MARKET RESEARCH AND PLANNING PURPOSES ONLY. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT TO AWARD A CONTRACT FORM RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY INTERESTED PARTIES IS STRICTLY VOLUNTARY AND NO MONETARY COMPENSATION WILL BE PROVIDED FOR RESPONDSE PREPARATION.",
+  "detail_text_length": 734,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4981e141d5c84435af7433d5006da5b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d68f29fce5e440db88b9323d71648b21/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4981e141d5c84435af7433d5006da5b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c1465cbc0b11223a2a665349f1253c26e28a3ad60459439d4228d40fdeefbf2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c1465cbc0b11223a2a665349f1253c26e28a3ad60459439d4228d40fdeefbf2.docx",
+      "file_id": "4981e141d5c84435af7433d5006da5b1",
+      "file_name": "PWS_Prop_Mgmt+FY26-31+V1+-+DRAFT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59007,
+      "sha256": "7c1465cbc0b11223a2a665349f1253c26e28a3ad60459439d4228d40fdeefbf2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d68f29fce5e440db88b9323d71648b21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6bf315e1b933d2358cd8572965421b8d0f2856607dc8502341cb5bb3652cca04.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6bf315e1b933d2358cd8572965421b8d0f2856607dc8502341cb5bb3652cca04.docx",
+      "file_id": "d68f29fce5e440db88b9323d71648b21",
+      "file_name": "Sources+Sought_Logistics+and+Property+Management+Support+Services.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26848,
+      "sha256": "6bf315e1b933d2358cd8572965421b8d0f2856607dc8502341cb5bb3652cca04"
+    }
+  ],
+  "_mirror_hash": "25499b2fb4cf3a5a1ed0cbc3ca393f578264a93d4e5c738132beda0a9e25c6a7",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.104485+00:00"
+}

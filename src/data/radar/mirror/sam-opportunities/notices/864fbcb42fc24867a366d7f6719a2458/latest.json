@@ -1,0 +1,46 @@
+{
+  "id": "sam-864fbcb42fc24867a366d7f6719a2458",
+  "title": "Wiring Harness",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=864fbcb42fc24867a366d7f6719a2458",
+  "opportunity_url": "https://sam.gov/opp/864fbcb42fc24867a366d7f6719a2458/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/864fbcb42fc24867a366d7f6719a2458/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "864fbcb42fc24867a366d7f6719a2458",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRDL1-26-Q-0062",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=864fbcb42fc24867a366d7f6719a2458",
+  "detail_text": "**Informal quotes may be submitted to the Contract Specialist via email in response to this notice.** Please see the attached Sources Sought Notice for the following item: Item: Wiring Harness (Bradley Fighting Vehicle) NSN: 5995-01-464-1175 PN: 12956620 Quantity: 4 EA (1 year, 100% option) Packaging: Military, Level B Inspection/Acceptance: Origin FOB: Destination",
+  "detail_text_length": 367,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/400970f18e5a439da7cecd4361a20874/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/400970f18e5a439da7cecd4361a20874/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d3bb8eecab7b4bb5fb5be5a85d972b8e643e14cd5685a17a3c984c3dfb07c6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d3bb8eecab7b4bb5fb5be5a85d972b8e643e14cd5685a17a3c984c3dfb07c6f.pdf",
+      "file_id": "400970f18e5a439da7cecd4361a20874",
+      "file_name": "SPRDL126Q0062_Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 102509,
+      "sha256": "8d3bb8eecab7b4bb5fb5be5a85d972b8e643e14cd5685a17a3c984c3dfb07c6f"
+    }
+  ],
+  "_mirror_hash": "ff027b3ca8d7532282905f506e49f8d04b1efdbc4189e440b9a7590cbff6c844",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.645365+00:00"
+}

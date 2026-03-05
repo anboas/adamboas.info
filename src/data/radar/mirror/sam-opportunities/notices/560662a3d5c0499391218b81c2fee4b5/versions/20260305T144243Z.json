@@ -1,0 +1,68 @@
+{
+  "id": "sam-560662a3d5c0499391218b81c2fee4b5",
+  "title": "N0016426Q0084",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=560662a3d5c0499391218b81c2fee4b5",
+  "opportunity_url": "https://sam.gov/opp/560662a3d5c0499391218b81c2fee4b5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/560662a3d5c0499391218b81c2fee4b5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "560662a3d5c0499391218b81c2fee4b5",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "GXN-0029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CRANE",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=560662a3d5c0499391218b81c2fee4b5",
+  "detail_text": "N00164-26-Q-0084 – HOIST/TROLLEY–PSC 3950 – NAICS 333923 ISSUE DATE 05 MAR 2026 – CLOSING DATE 12 MAR 2026 – 4:00 PM Eastern Time Naval Surface Warfare Center (NSWC) Crane has a requirement for CLIN 0001: Hoist/Trolley IAW Salient Characteristics 100% SET ASIDE FOR SMALL BUSINESS Contractors must be properly registered in the System for Award Management (SAM). Offerors may obtain information on SAM registration and annual confirmation requirements by calling 866-606-8220 or via the internet at https://sam.gov. This solicitation is being issued pursuant to the procedures at FAR Part 13 as a written . Synopsis exception FAR 5.202(a)(13) applies and Solicitation Number N00164-26-Q-0084 is hereby issued as an attachment hereto. All changes to the requirement that occur prior to the closing date will be posted to Contract Opportunities on https://sam.gov/. It is the responsibility of interested vendors to monitor https://sam.gov/ for any amendments, which may be issued to this solicitation. For changes made after the closing date, only those offerors that provide a quote will be provided any changes/amendments and considered for future discussions and/or award. Offers shall be e-mailed to trista.m.ray.civ@us.navy.mil. All required information must be received on or before 12 MAR 2026 – 4:00 PM EASTERN TIME.",
+  "detail_text_length": 1323,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71816f66f53044449e6139f856a1a349/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6055f80711343d28bc779862dc334c9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9e35f3189564a3c931f591a3430dab0/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71816f66f53044449e6139f856a1a349/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9910a65c286440c2ef940475d9b5c23ca04e97b9f54bc4fe59ff1e4e6dc42eda.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9910a65c286440c2ef940475d9b5c23ca04e97b9f54bc4fe59ff1e4e6dc42eda.pdf",
+      "file_id": "71816f66f53044449e6139f856a1a349",
+      "file_name": "C11_RFQ_N0016426Q0084.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2051885,
+      "sha256": "9910a65c286440c2ef940475d9b5c23ca04e97b9f54bc4fe59ff1e4e6dc42eda"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6055f80711343d28bc779862dc334c9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b25e420e51a42508169ccb02fdd8943e4909208bcf12da941e70d9a63bf781cb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b25e420e51a42508169ccb02fdd8943e4909208bcf12da941e70d9a63bf781cb.docx",
+      "file_id": "a6055f80711343d28bc779862dc334c9",
+      "file_name": "C11_Synopsis.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22530,
+      "sha256": "b25e420e51a42508169ccb02fdd8943e4909208bcf12da941e70d9a63bf781cb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9e35f3189564a3c931f591a3430dab0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20df810978bceeab4a81003ed05b24d25f2fd05450358bb6c909630056375d51.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20df810978bceeab4a81003ed05b24d25f2fd05450358bb6c909630056375d51.xlsx",
+      "file_id": "e9e35f3189564a3c931f591a3430dab0",
+      "file_name": "C12_Salient+Characteristics.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21937,
+      "sha256": "20df810978bceeab4a81003ed05b24d25f2fd05450358bb6c909630056375d51"
+    }
+  ],
+  "_mirror_hash": "1506475f8ea20dc09c5f859e8ee1d80d5178c77985d60059b65a04c5186c1a4e",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.087954+00:00"
+}

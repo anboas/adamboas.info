@@ -1,0 +1,68 @@
+{
+  "id": "sam-515e31ba74ef42f4ad4ab04445858998",
+  "title": "Y--DOI Construction Services MATOC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=515e31ba74ef42f4ad4ab04445858998",
+  "opportunity_url": "https://sam.gov/opp/515e31ba74ef42f4ad4ab04445858998/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/515e31ba74ef42f4ad4ab04445858998/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "515e31ba74ef42f4ad4ab04445858998",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140FGA26R0010",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US FISH AND WILDLIFE SERVICE.FWS, GAOA",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=515e31ba74ef42f4ad4ab04445858998",
+  "detail_text": "Multiple-Award Task Order Contracts (MATOC) for Construction Services for the continental US and Hawaii in any state or US territory for the Department of Interior (DOI) See Attached Documents: 1. Sources Sought Notice - 2 Pages 2. Statement of Work - 9 Pages 3. Vendor Response Form - 2 Pages",
+  "detail_text_length": 293,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab6b574c040c487f8353340710d96b26/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4195abd83164e84ac4aa62e79dfe3bf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c2dbb3aec21e4bc79738a6ffc4039c09/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab6b574c040c487f8353340710d96b26/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8ea7f3cc48daa92e70350754f098f3a3f38c60db4ed29155fe9a17acbf18f95b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8ea7f3cc48daa92e70350754f098f3a3f38c60db4ed29155fe9a17acbf18f95b.pdf",
+      "file_id": "ab6b574c040c487f8353340710d96b26",
+      "file_name": "Sources_Sought_Notice_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 138775,
+      "sha256": "8ea7f3cc48daa92e70350754f098f3a3f38c60db4ed29155fe9a17acbf18f95b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4195abd83164e84ac4aa62e79dfe3bf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39283bc3a9914bdc55aef66d793f2501a06a689b3d378289b28702b1e5f24247.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39283bc3a9914bdc55aef66d793f2501a06a689b3d378289b28702b1e5f24247.pdf",
+      "file_id": "b4195abd83164e84ac4aa62e79dfe3bf",
+      "file_name": "Vendor_Response_Form_-_Construction_Services_MATOC_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 60560,
+      "sha256": "39283bc3a9914bdc55aef66d793f2501a06a689b3d378289b28702b1e5f24247"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c2dbb3aec21e4bc79738a6ffc4039c09/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a06c6bb961515550dd09a0c7d30190a9900e018b233746a60d12986a5b96235b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a06c6bb961515550dd09a0c7d30190a9900e018b233746a60d12986a5b96235b.pdf",
+      "file_id": "c2dbb3aec21e4bc79738a6ffc4039c09",
+      "file_name": "Construction_Services_MATOC_Statement_of_Work_March_2026_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 256623,
+      "sha256": "a06c6bb961515550dd09a0c7d30190a9900e018b233746a60d12986a5b96235b"
+    }
+  ],
+  "_mirror_hash": "ed706f9524badd3a105ca190c5ce29cdf8511776a1877cb75da2e8a350119c90",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.633143+00:00"
+}

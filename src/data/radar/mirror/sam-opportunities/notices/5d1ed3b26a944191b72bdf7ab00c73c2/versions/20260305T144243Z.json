@@ -1,0 +1,47 @@
+{
+  "id": "sam-5d1ed3b26a944191b72bdf7ab00c73c2",
+  "title": "CLDJ Mini MACC Bridge Synopsis",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d1ed3b26a944191b72bdf7ab00c73c2",
+  "opportunity_url": "https://sam.gov/opp/5d1ed3b26a944191b72bdf7ab00c73c2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5d1ed3b26a944191b72bdf7ab00c73c2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5d1ed3b26a944191b72bdf7ab00c73c2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "JandA2607",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC EUR SWA.NAVFACSYSCOM EUROPE AFRICA CENTRAL",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d1ed3b26a944191b72bdf7ab00c73c2",
+  "detail_text": "This contract action is for services for which the Government intends to execute a Justification and Approval under the authority of FAR 6.302-1 to the current MACC to extend the ordering period by one year and to add additional capacity. Without this limited source action there would be an unreasonable constraint in the Agency’s ability to execute the remaining projects on the ROICC Management Execution Plans for FY26 and FY27, which will lead to significantly delaying or canceling various required renovation, repair, electrical and other minor construction projects, which in turn will compromise mission readiness, diminish airfield safety and capabilities, and will delay the availability of required facilities to support the combat missions originating from ROICC Contracting Department. The agency is actively pursuing a follow-on MACC using full and open competitive procedures with the primary objective of awarding the contract in a timeframe to eliminate the need for a second bridge. The agency anticipates adequate competition for the follow-on MACC, consistent with the current MACC. The work to be performed will provide for Design-Build and Design-Bid-Build projects, primarily consisting of general building type projects including new construction, renovations, alterations, demolition, repair work, and any necessary design work for various locations throughout Djibouti and Kenya including, but not limited to Camp Lemonnier and Chabelley Airfield in Djibouti and Camp Simba and Manda Bay in Kenya.",
+  "detail_text_length": 1524,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a8456f2cfe14674a1e0c8509cde45a6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a8456f2cfe14674a1e0c8509cde45a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5ce14af38ef2f4da5a2ada0df4cbed7314bc487b251b5bc459335e2dd1eebd8c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5ce14af38ef2f4da5a2ada0df4cbed7314bc487b251b5bc459335e2dd1eebd8c.pdf",
+      "file_id": "8a8456f2cfe14674a1e0c8509cde45a6",
+      "file_name": "CLDJ+Mini+MACC+Bridge+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125498,
+      "sha256": "5ce14af38ef2f4da5a2ada0df4cbed7314bc487b251b5bc459335e2dd1eebd8c"
+    }
+  ],
+  "_mirror_hash": "74ae2485d7ba659997681361ab3fe43fec87cbeab06aae422dd49b30dddcc58f",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.130811+00:00"
+}

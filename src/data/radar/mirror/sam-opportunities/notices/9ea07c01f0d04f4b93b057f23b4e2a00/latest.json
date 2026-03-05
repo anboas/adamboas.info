@@ -1,0 +1,67 @@
+{
+  "id": "sam-9ea07c01f0d04f4b93b057f23b4e2a00",
+  "title": "Hyster High Lift Maintenance Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ea07c01f0d04f4b93b057f23b4e2a00",
+  "opportunity_url": "https://sam.gov/opp/9ea07c01f0d04f4b93b057f23b4e2a00/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9ea07c01f0d04f4b93b057f23b4e2a00/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9ea07c01f0d04f4b93b057f23b4e2a00",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QL012",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ea07c01f0d04f4b93b057f23b4e2a00",
+  "detail_text": "See attached for PWS.",
+  "detail_text_length": 21,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/23605837a0614cbc8e57fffbbc69f266/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6323bf29f07b422c9bd4753c45f59be0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9909972bc44a4af5a31e71164258ce05/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/23605837a0614cbc8e57fffbbc69f266/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/21a8e87f07be6f185fabd9bd6aa068de3e336fe24f328856c95e05441b30575c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/21a8e87f07be6f185fabd9bd6aa068de3e336fe24f328856c95e05441b30575c.pdf",
+      "file_id": "23605837a0614cbc8e57fffbbc69f266",
+      "file_name": "Quality+Assurance+Surveillance+Plan+-QASP-+and+Matrix+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 314256,
+      "sha256": "21a8e87f07be6f185fabd9bd6aa068de3e336fe24f328856c95e05441b30575c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6323bf29f07b422c9bd4753c45f59be0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4d907b74f06d7d145a37932a37c6b5c39f28b11e63369e268dc2c0bc75530b51.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4d907b74f06d7d145a37932a37c6b5c39f28b11e63369e268dc2c0bc75530b51.pdf",
+      "file_id": "6323bf29f07b422c9bd4753c45f59be0",
+      "file_name": "Wage+Determination+2015-4341+Rev.+32.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4874583,
+      "sha256": "4d907b74f06d7d145a37932a37c6b5c39f28b11e63369e268dc2c0bc75530b51"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9909972bc44a4af5a31e71164258ce05/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ed22e1958bcd2bb28dbd69f1d92722c153dbfba0afdb1e8d2cd1678a4a84ec9a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ed22e1958bcd2bb28dbd69f1d92722c153dbfba0afdb1e8d2cd1678a4a84ec9a.pdf",
+      "file_id": "9909972bc44a4af5a31e71164258ce05",
+      "file_name": "Solicitation+-+N0018926QL012.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1871218,
+      "sha256": "ed22e1958bcd2bb28dbd69f1d92722c153dbfba0afdb1e8d2cd1678a4a84ec9a"
+    }
+  ],
+  "_mirror_hash": "812520eca11bb6349353a34742c561e808159a7b4fc67fd3eef663ad8cccc0ba",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.215755+00:00"
+}

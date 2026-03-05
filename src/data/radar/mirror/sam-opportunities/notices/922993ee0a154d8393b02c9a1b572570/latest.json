@@ -1,0 +1,46 @@
+{
+  "id": "sam-922993ee0a154d8393b02c9a1b572570",
+  "title": "Specialized Low Alpha Tin - DLA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=922993ee0a154d8393b02c9a1b572570",
+  "opportunity_url": "https://sam.gov/opp/922993ee0a154d8393b02c9a1b572570/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/922993ee0a154d8393b02c9a1b572570/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "922993ee0a154d8393b02c9a1b572570",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI-SpecializedLowAlphaTin",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DCSO COLUMBUS DIVISION #3",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=922993ee0a154d8393b02c9a1b572570",
+  "detail_text": "1. DISCLAIMER: This request for information (RFI) is for planning purposes only and is not a request for quote (RFQ), invitation for bid (IFB), or an obligation on the part of the government to acquire any supplies or services. Responses to this RFI are not quotes or offers and cannot be accepted by the government to form a binding contract. The government will determine if/how to proceed based on the results of this notice. Companies that respond to this notice should not expect to receive feedback regarding submissions. The government will not pay any costs incurred in response to this notice. All costs associated with responding to this RFI will be solely at the expense of the responding party. The information provided in this notice is subject to change and is not binding on the government. All submissions become government property and will not be returned. DLA Strategic Materials representatives may or may not choose to meet with potential offerors. Such conversations would only be intended to get further clarification of potential capability to meet the requirements, especially any development and certification risks. 2. SCOPE OF WORK: The Defense Logistics Agency (DLA) Strategic Materials Directorate is seeking information for the potential acquisition of reprocess/re-melt of 1,978 MT of Long Horn brand tin ingot with tin-pest (Grade A 99.80%) into specialized low alpha tin of Min 99.999% Sn + (Exact Elemental Specifications and Form TBD) for addition into the National Defense Stockpile (NDS).",
+  "detail_text_length": 1526,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67f532fc0de043b98bd17acd8921267f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67f532fc0de043b98bd17acd8921267f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7f2213ec40b6d8f4db4cba947dd472fc7b6e956b5d43a548dedc674c0ecc789f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7f2213ec40b6d8f4db4cba947dd472fc7b6e956b5d43a548dedc674c0ecc789f.pdf",
+      "file_id": "67f532fc0de043b98bd17acd8921267f",
+      "file_name": "RFI+Specialized+Low+Alpha+Tin.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 199502,
+      "sha256": "7f2213ec40b6d8f4db4cba947dd472fc7b6e956b5d43a548dedc674c0ecc789f"
+    }
+  ],
+  "_mirror_hash": "92c8d47d2fc405f336acb9d0fbc4a5ba0ef3d712926716815b050f19edeeb72a",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.629514+00:00"
+}

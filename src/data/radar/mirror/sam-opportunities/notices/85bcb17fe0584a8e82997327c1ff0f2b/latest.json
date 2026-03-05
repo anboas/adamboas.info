@@ -1,0 +1,57 @@
+{
+  "id": "sam-85bcb17fe0584a8e82997327c1ff0f2b",
+  "title": "SOLE SOURCE RIEGL VZ-20001 3D TLS 2 YEAR MAINTENANCE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=85bcb17fe0584a8e82997327c1ff0f2b",
+  "opportunity_url": "https://sam.gov/opp/85bcb17fe0584a8e82997327c1ff0f2b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/85bcb17fe0584a8e82997327c1ff0f2b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "85bcb17fe0584a8e82997327c1ff0f2b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA820126Q0008",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8201  AFSC OL H PZIO",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=85bcb17fe0584a8e82997327c1ff0f2b",
+  "detail_text": "THIS IS NOT A REQUEST FOR QUOTE (RFQ). THE GOVERNMENT WILL NOT PAY FOR ANY COSTS ASSOCIATED WITH RESPONDING TO THIS PRESOLICITATION. The Government intends to issue a Firm-Fixed-Price (FFP) sole source solicitation/contract to Riegl USA (Cage Code 1RMP5). Riegl USA is the OEM and the only authorized service provider for the referenced scanner for the following requirement: 2 Year Maintenance for Riegl VZ-20001 3D TLS Qty: 1 ea. Type: Service Estimated Delivery Schedule: On or Before 3 June 2026 Anticipated Award: 03/20/2026 Firm-Fixed-Price (FFP) Contract",
+  "detail_text_length": 561,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b1e23f5a2e447e8be205956c3589b38/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7b97667332489c8c266a957b02463a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b1e23f5a2e447e8be205956c3589b38/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/07929a8ffe99ef42539a349c116ba257ac3581e7dcef0b93a192cdcca5b65a6d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/07929a8ffe99ef42539a349c116ba257ac3581e7dcef0b93a192cdcca5b65a6d.pdf",
+      "file_id": "2b1e23f5a2e447e8be205956c3589b38",
+      "file_name": "Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 82411,
+      "sha256": "07929a8ffe99ef42539a349c116ba257ac3581e7dcef0b93a192cdcca5b65a6d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec7b97667332489c8c266a957b02463a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c91821582fe1c03450dfcbfed7e022be3eaba5168a3fa299adc62b6081f3256c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c91821582fe1c03450dfcbfed7e022be3eaba5168a3fa299adc62b6081f3256c.pdf",
+      "file_id": "ec7b97667332489c8c266a957b02463a",
+      "file_name": "GFPFA820126Q0008_Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2360,
+      "sha256": "c91821582fe1c03450dfcbfed7e022be3eaba5168a3fa299adc62b6081f3256c"
+    }
+  ],
+  "_mirror_hash": "824985a2a4fd91f76c952669e9e1b8ac0aee7bcee3b0158647061b27000c90d4",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.565105+00:00"
+}

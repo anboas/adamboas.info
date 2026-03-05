@@ -1,0 +1,46 @@
+{
+  "id": "sam-3d4cfa27db5d4d72b92680e97d22c4c0",
+  "title": "STRmix Annual Upgrade and Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3d4cfa27db5d4d72b92680e97d22c4c0",
+  "opportunity_url": "https://sam.gov/opp/3d4cfa27db5d4d72b92680e97d22c4c0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3d4cfa27db5d4d72b92680e97d22c4c0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3d4cfa27db5d4d72b92680e97d22c4c0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PR12392940",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3d4cfa27db5d4d72b92680e97d22c4c0",
+  "detail_text": "NOTICE OF INTENT TO SOLE SOURCE Mission and Installation Contracting Command, Fort Gordon, Georgia intends to negotiate/award a sole-source contract with NICHE VISION, FORENSICS, LLC. for the following items: STR Mix Annual Maintenance. The NAICS code is 513210. The authority for this non-competitive award is 10 USC 2304(c)(l), Only one responsible Source. The Government intends to procure this sole source requirement under Simplified Acquisition Procedures in FAR part 13 and Commercial procedures in FAR part 12. THIS NOTICE IS NOT A REQUEST FOR COMPETITIVE PROPOSALS and a solicitation will not be issued. Interested concerns must show clear and convincing evidence that competition of this requirement would be advantageous to the Government. If no affirmative written responses are received by 12:00 PM on March 09, 2026, the award will be made without further notice. Oral communications are not acceptable in response to this notice. A determination by the government not to compete this proposed requirement is solely within the discretion of the government. Please see draft PWS for additional details.",
+  "detail_text_length": 1115,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0730075de93243a8bfdb8259fa7a2ec5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0730075de93243a8bfdb8259fa7a2ec5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a93160ef946318170ae3b780c822dd65dd03c3a8826a149b3a60515bd50db067.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a93160ef946318170ae3b780c822dd65dd03c3a8826a149b3a60515bd50db067.docx",
+      "file_id": "0730075de93243a8bfdb8259fa7a2ec5",
+      "file_name": "PWS-STRMix+Software+License+and+Maintenance_FY26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46716,
+      "sha256": "a93160ef946318170ae3b780c822dd65dd03c3a8826a149b3a60515bd50db067"
+    }
+  ],
+  "_mirror_hash": "c91cb1c783079c4fd41757c1b0c4cfeac640abe1e55ce837cd0ca8002f93161f",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.462892+00:00"
+}

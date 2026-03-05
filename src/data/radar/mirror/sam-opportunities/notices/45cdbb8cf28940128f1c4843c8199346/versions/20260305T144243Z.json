@@ -1,0 +1,47 @@
+{
+  "id": "sam-45cdbb8cf28940128f1c4843c8199346",
+  "title": "Naples Micro-MACC Synopsis",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=45cdbb8cf28940128f1c4843c8199346",
+  "opportunity_url": "https://sam.gov/opp/45cdbb8cf28940128f1c4843c8199346/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/45cdbb8cf28940128f1c4843c8199346/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "45cdbb8cf28940128f1c4843c8199346",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "JandA2606",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC EUR SWA.NAVFACSYSCOM EUROPE AFRICA CENTRAL",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=45cdbb8cf28940128f1c4843c8199346",
+  "detail_text": "This contract action is for services for which the Government intends to execute a Justification and Approval under the authority of FAR 6.302-1 to the current MACC to extend the ordering period by one year and to add $10 Million in additional capacity. Without this limited source action there would be an unreasonable constraint in the Agency’s ability to execute the remaining projects on the ROICC Management Execution Plans for FY26 and FY27, which will lead to significantly delaying or canceling various required renovation, repair, electrical and other minor construction projects, which in turn will compromise mission readiness, diminish airfield safety and capabilities, and will delay the availability of required facilities to support the combat missions originating from ROICC Contracting Department. The work includes, but is not limited to the following: Construction projects to be performed will primarily consist of general building type projects (new construction, renovations, alterations, demolition, repair work, and any necessary design) including: road repair; pavement repair; building renovation; roofing; excavation; emergency repairs; providing new finishes on the interior of buildings; water lines and gas line construction and repair; all utility repairs including sanitary sewer and storm drainage; all fire protection repairs, dormitory, community support facilities and both vertical and horizontal construction for Department of Defense activities in Naples, Italy and areas managed by NAVFAC EURAFCENT.",
+  "detail_text_length": 1539,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f08860cc374b4be7948cb016fab83f6d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f08860cc374b4be7948cb016fab83f6d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7becec6ac05ddfd233e78d11078f06197b47582417c8956e1aa453298d29ffcc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7becec6ac05ddfd233e78d11078f06197b47582417c8956e1aa453298d29ffcc.pdf",
+      "file_id": "f08860cc374b4be7948cb016fab83f6d",
+      "file_name": "Naples+MACC+Bridge+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 126357,
+      "sha256": "7becec6ac05ddfd233e78d11078f06197b47582417c8956e1aa453298d29ffcc"
+    }
+  ],
+  "_mirror_hash": "39d068f8a1b12b5fd78b1a49f91fa4a68341002a4731b6c63af33a7087d8d41b",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.132319+00:00"
+}

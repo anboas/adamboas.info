@@ -1,0 +1,47 @@
+{
+  "id": "sam-495ca64e79754f0fb4e1100590891724",
+  "title": "Purification System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=495ca64e79754f0fb4e1100590891724",
+  "opportunity_url": "https://sam.gov/opp/495ca64e79754f0fb4e1100590891724/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/495ca64e79754f0fb4e1100590891724/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "495ca64e79754f0fb4e1100590891724",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4215826QE023",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=495ca64e79754f0fb4e1100590891724",
+  "detail_text": "SEE ATTACHED PRESOLICITATION.",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce95d7fd2454448e924c8279932682c4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce95d7fd2454448e924c8279932682c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e5749ce7724c5274345ac458aaf7bd1eeac7f1d46aabf184d7fd9e4483a5ec9b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e5749ce7724c5274345ac458aaf7bd1eeac7f1d46aabf184d7fd9e4483a5ec9b.pdf",
+      "file_id": "ce95d7fd2454448e924c8279932682c4",
+      "file_name": "Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 275729,
+      "sha256": "e5749ce7724c5274345ac458aaf7bd1eeac7f1d46aabf184d7fd9e4483a5ec9b"
+    }
+  ],
+  "_mirror_hash": "c88790c5f755d503c4e8decfbe307ae8ed2486c8220034cefcad17dccb60ad94",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.109443+00:00"
+}

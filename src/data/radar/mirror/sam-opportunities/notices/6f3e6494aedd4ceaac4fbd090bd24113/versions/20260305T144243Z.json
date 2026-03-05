@@ -1,0 +1,79 @@
+{
+  "id": "sam-6f3e6494aedd4ceaac4fbd090bd24113",
+  "title": "All Weather Coat",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f3e6494aedd4ceaac4fbd090bd24113",
+  "opportunity_url": "https://sam.gov/opp/6f3e6494aedd4ceaac4fbd090bd24113/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6f3e6494aedd4ceaac4fbd090bd24113/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6f3e6494aedd4ceaac4fbd090bd24113",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "8405-8410-AWC",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CLOTHING & TEXTILE.DLA TROOP SUPPORT",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f3e6494aedd4ceaac4fbd090bd24113",
+  "detail_text": "This is a Sources Sought Notice only. This is NOT a Request for Proposal, Request for Quote, or Invitation for Bid. DLA Troop Support is seeking to identify possible sources that can supply the following: All Weather Coats Items : ITEM DESCRIPTION/PGC/PD/CID/SPEC/PATTERN DATE MC Man’s All Weather Coat/02850/MIL-DTL-32768/15 JUL 2024 MC Woman’s All Weather Coat/02851/MIL-DTL-32767/15 JUL 2024 AGSU Man’s All Weather Coat/00181/PD-19026A/13 MAR 2020 DLA Troop Support is researching possible sources for the referenced items. Interested contractors should contact Sorina Tanczos via Sorina.Prian-Tanczos@dla.mil or (445)737-3666. This Sources Sought Notice is issued for the purpose of market research only, and the Government is in no way obligated to purchase any material as a result of this inquiry. The Government will NOT pay for any information submitted by respondents in response to this Sources Sought Notice. If a solicitation or solicitations would result, it/they would be synopsized on the Contract Opportunities website (SAM.gov) and it would be the offeror’s responsibility to monitor the Contract Opportunities website for any such notices.",
+  "detail_text_length": 1158,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/598a765796c642e785a8f5438dd398b0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec2068166bc84ebaa94f10fe096a15e4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee7282124ad6420296a6d65b53964738/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f97989ed1d744d868358c04adafebc0e/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/598a765796c642e785a8f5438dd398b0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b6590f06d3a6e6c06e1b3698ba4fe03ca073da1f20b0283369b9c4fdc4c6af5d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b6590f06d3a6e6c06e1b3698ba4fe03ca073da1f20b0283369b9c4fdc4c6af5d.pdf",
+      "file_id": "598a765796c642e785a8f5438dd398b0",
+      "file_name": "Specifications+-+GL-PD+19026A+-+Mens+AGSU+AWC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 732450,
+      "sha256": "b6590f06d3a6e6c06e1b3698ba4fe03ca073da1f20b0283369b9c4fdc4c6af5d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec2068166bc84ebaa94f10fe096a15e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/319ca5176174c63d461418fd9797cb0c87dce4b730078013cad3416e38adb992.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/319ca5176174c63d461418fd9797cb0c87dce4b730078013cad3416e38adb992.pdf",
+      "file_id": "ec2068166bc84ebaa94f10fe096a15e4",
+      "file_name": "MIL-DTL-32768.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1000743,
+      "sha256": "319ca5176174c63d461418fd9797cb0c87dce4b730078013cad3416e38adb992"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee7282124ad6420296a6d65b53964738/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31009de0cb95f567c34252666ac57b6ac6ff1a786114d4ce0b25e01d2691fce4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31009de0cb95f567c34252666ac57b6ac6ff1a786114d4ce0b25e01d2691fce4.pdf",
+      "file_id": "ee7282124ad6420296a6d65b53964738",
+      "file_name": "MIL-DTL-32767.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 667416,
+      "sha256": "31009de0cb95f567c34252666ac57b6ac6ff1a786114d4ce0b25e01d2691fce4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f97989ed1d744d868358c04adafebc0e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3e646df5048a5ebc050513ddc170b513763089d6bdab194eabec789ee4b6c176.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3e646df5048a5ebc050513ddc170b513763089d6bdab194eabec789ee4b6c176.pdf",
+      "file_id": "f97989ed1d744d868358c04adafebc0e",
+      "file_name": "AWC-SourcesSought02172026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 71305,
+      "sha256": "3e646df5048a5ebc050513ddc170b513763089d6bdab194eabec789ee4b6c176"
+    }
+  ],
+  "_mirror_hash": "7f7b57bf1213a1ea87b1dd46ef6508539aac63a2a8a0800771f4eb7164ef0827",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.590524+00:00"
+}

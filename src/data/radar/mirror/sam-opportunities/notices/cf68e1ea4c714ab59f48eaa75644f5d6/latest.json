@@ -1,0 +1,58 @@
+{
+  "id": "sam-cf68e1ea4c714ab59f48eaa75644f5d6",
+  "title": "R499--Small Business Event | VHA Procurement Logistics Office RPO  Central NCO 10 Virtual Business Opportunity Session | Cisco  Webex Mar 18",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cf68e1ea4c714ab59f48eaa75644f5d6",
+  "opportunity_url": "https://sam.gov/opp/cf68e1ea4c714ab59f48eaa75644f5d6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cf68e1ea4c714ab59f48eaa75644f5d6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cf68e1ea4c714ab59f48eaa75644f5d6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36U10126Q0014",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.OFFICE OF SMALL & DISADVANTAGED BUSINESS UTILIZATION (OSDBU) (36U101)",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Vendor engagement keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cf68e1ea4c714ab59f48eaa75644f5d6",
+  "detail_text": "1. DATE, TIME, AND PLACE: The event takes place, Wednesday March 18, 2026 from 3:00 P.M. 4:00 P.M. EST. Â Â 2. AGENDA: Participants will be provided the outline of a business opportunity and related details. 3. REGISTRATION: Visit https://www.vetbiz.va.gov/events and click the link for the REGISTRATION OPEN - VHA Procurement & Logistics Office (P&LO) Regional Program Office (RPO) Central (NCO 10) Quarterly Virtual Business Opportunity Session to register. 4. PRIMARY NAICS CODES: Multiple North American Industry Classification System (NAICS) codes pertains to this opportunity.Â Additional amendments may be issued to target other related NAICS codes specified within this announcement. 5. DISCLAIMER: This notice is issued solely for information and planning purposes and does not constitute a solicitation. Neither unsolicited proposals nor any other kind of offers will be considered in response to this notice.",
+  "detail_text_length": 919,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a4990e5311f4ee1b18b88f5c1f4b6ff/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b7967138c8a49c8810868c690f0485b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a4990e5311f4ee1b18b88f5c1f4b6ff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/da47cfeff7010242e545cd9ef1a3492849c6a2ea63f637aa8808eca7c18f461b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/da47cfeff7010242e545cd9ef1a3492849c6a2ea63f637aa8808eca7c18f461b.docx",
+      "file_id": "1a4990e5311f4ee1b18b88f5c1f4b6ff",
+      "file_name": "36U10126Q0014.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16190,
+      "sha256": "da47cfeff7010242e545cd9ef1a3492849c6a2ea63f637aa8808eca7c18f461b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b7967138c8a49c8810868c690f0485b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/180196d15d3f4b89266c2afa308e8c5cb52b75350c1f7a0a51f57ca69a7fcbda.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/180196d15d3f4b89266c2afa308e8c5cb52b75350c1f7a0a51f57ca69a7fcbda.pdf",
+      "file_id": "7b7967138c8a49c8810868c690f0485b",
+      "file_name": "FBOFlyer-RPO+Central+NCO+10+-+Mar2026_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 244561,
+      "sha256": "180196d15d3f4b89266c2afa308e8c5cb52b75350c1f7a0a51f57ca69a7fcbda"
+    }
+  ],
+  "_mirror_hash": "464cfc170bafe2d4f31e704f74eb63b407b221ca9d3b356904706cbfe1ba6a30",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.401924+00:00"
+}

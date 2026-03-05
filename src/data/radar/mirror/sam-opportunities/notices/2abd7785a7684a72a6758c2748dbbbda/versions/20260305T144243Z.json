@@ -1,0 +1,90 @@
+{
+  "id": "sam-2abd7785a7684a72a6758c2748dbbbda",
+  "title": "FEC IT Support Services - Enterprise Architecture",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2abd7785a7684a72a6758c2748dbbbda",
+  "opportunity_url": "https://sam.gov/opp/2abd7785a7684a72a6758c2748dbbbda/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2abd7785a7684a72a6758c2748dbbbda/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2abd7785a7684a72a6758c2748dbbbda",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "9531BP-26-RFI-0001",
+  "agency_path": "FEDERAL ELECTION COMMISSION.FEDERAL ELECTION COMMISSION.FEDERAL ELECTION COMMISSION",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2abd7785a7684a72a6758c2748dbbbda",
+  "detail_text": "The Federal Election Commission (FEC) is seeking information from qualified, experienced vendors/contractors about securing a commercial vendor to operate, maintain and update several applications and systems. The requirements of this development effort are described in Attachment 1: IT Support Services Draft Requirements.",
+  "detail_text_length": 324,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59571cbb44c841c29bf0469675f57863/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/826b5fc841c645dd9f7222a8e3fb480c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce164d89f1ee4a4caeff7a6cba4c3aec/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8250c6c7d9747588b4b696885222b80/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f173b500d4f246f8aba375ae36bd9d85/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59571cbb44c841c29bf0469675f57863/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/26f388a776bb8b87be7e741e1c94b31db3e9334b93638198c98d0966a06b3261.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/26f388a776bb8b87be7e741e1c94b31db3e9334b93638198c98d0966a06b3261.pdf",
+      "file_id": "59571cbb44c841c29bf0469675f57863",
+      "file_name": "Attachment+1C+-+RAD+Modules.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 220814,
+      "sha256": "26f388a776bb8b87be7e741e1c94b31db3e9334b93638198c98d0966a06b3261"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/826b5fc841c645dd9f7222a8e3fb480c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4c6c45d4d723ebc3d8452f61804de278f6275306221222f08770b4b1562a094d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4c6c45d4d723ebc3d8452f61804de278f6275306221222f08770b4b1562a094d.pdf",
+      "file_id": "826b5fc841c645dd9f7222a8e3fb480c",
+      "file_name": "RFI+-9531BP-26-RFI-0001-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 224971,
+      "sha256": "4c6c45d4d723ebc3d8452f61804de278f6275306221222f08770b4b1562a094d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce164d89f1ee4a4caeff7a6cba4c3aec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a7a117c31b7adb6d701d2db09092867775eadf50638fbdf09c075c4fdef6a51a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a7a117c31b7adb6d701d2db09092867775eadf50638fbdf09c075c4fdef6a51a.pdf",
+      "file_id": "ce164d89f1ee4a4caeff7a6cba4c3aec",
+      "file_name": "Attachment+1B+-+FEC+Disclosure+Suite.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 166997,
+      "sha256": "a7a117c31b7adb6d701d2db09092867775eadf50638fbdf09c075c4fdef6a51a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8250c6c7d9747588b4b696885222b80/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/026c42811a8536b4168af88a24687642b98e7a9c333111156bb19b9d7fb4c09e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/026c42811a8536b4168af88a24687642b98e7a9c333111156bb19b9d7fb4c09e.pdf",
+      "file_id": "d8250c6c7d9747588b4b696885222b80",
+      "file_name": "Attachment+1+-+Draft+requirements+IT+support+services+FINAL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 163201,
+      "sha256": "026c42811a8536b4168af88a24687642b98e7a9c333111156bb19b9d7fb4c09e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f173b500d4f246f8aba375ae36bd9d85/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e42858a002086c67a21a3becd526862057b16a4a47f5dd1dad47f473c407944.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e42858a002086c67a21a3becd526862057b16a4a47f5dd1dad47f473c407944.pdf",
+      "file_id": "f173b500d4f246f8aba375ae36bd9d85",
+      "file_name": "Attachment+1A+-+Searchable+Legal+Systems.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 272039,
+      "sha256": "9e42858a002086c67a21a3becd526862057b16a4a47f5dd1dad47f473c407944"
+    }
+  ],
+  "_mirror_hash": "a11e06dcbbb954b4a3b6776d3ae75183e9ded372eabe29cdf2315a7f6b77b3c5",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.535855+00:00"
+}

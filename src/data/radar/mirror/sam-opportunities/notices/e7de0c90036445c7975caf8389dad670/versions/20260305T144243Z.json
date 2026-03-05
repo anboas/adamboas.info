@@ -1,0 +1,68 @@
+{
+  "id": "sam-e7de0c90036445c7975caf8389dad670",
+  "title": "6830--BULK LIQUID OXYGEN HAMPTON VAMC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7de0c90036445c7975caf8389dad670",
+  "opportunity_url": "https://sam.gov/opp/e7de0c90036445c7975caf8389dad670/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e7de0c90036445c7975caf8389dad670/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e7de0c90036445c7975caf8389dad670",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24626Q0375",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.246-NETWORK CONTRACTING OFFICE 6 (36C246)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7de0c90036445c7975caf8389dad670",
+  "detail_text": "The Department of Veterans Affairs (VA) VISN 6 has a requirement for the distribution and supply of medical-grade liquid bulk oxygen at the Hampton, Virginia VA Medical Center. The purpose of this solicitation is to establish a committed source of supply of medical-grade liquid bulk oxygen for the facilities. The contractor shall also provide a contractor-owned tank and back-up tanks as required.",
+  "detail_text_length": 399,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51f91852c2cc4658815149acc691c57f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/70d779a7fd1d44f799248ce5f15c5098/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93c4366bfe6c4f1ebaea7e3780c7e68c/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51f91852c2cc4658815149acc691c57f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5a34b9b1a3ddde871214b648805de0e9c2d4fa8d15696e9dcfbf3b2f0eabcfa1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5a34b9b1a3ddde871214b648805de0e9c2d4fa8d15696e9dcfbf3b2f0eabcfa1.docx",
+      "file_id": "51f91852c2cc4658815149acc691c57f",
+      "file_name": "36C24626Q0375.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14011,
+      "sha256": "5a34b9b1a3ddde871214b648805de0e9c2d4fa8d15696e9dcfbf3b2f0eabcfa1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/70d779a7fd1d44f799248ce5f15c5098/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a622535ff7cb6a3bf280eddce821efe67e8620c881f1ec1fbaaad1cc15c8f5fa.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a622535ff7cb6a3bf280eddce821efe67e8620c881f1ec1fbaaad1cc15c8f5fa.docx",
+      "file_id": "70d779a7fd1d44f799248ce5f15c5098",
+      "file_name": "36C24626Q0375_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 138992,
+      "sha256": "a622535ff7cb6a3bf280eddce821efe67e8620c881f1ec1fbaaad1cc15c8f5fa"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93c4366bfe6c4f1ebaea7e3780c7e68c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e80489d47c2c44092da11b347dc88b7a0322e8cd6f199ec636ec8951ce4ee24d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e80489d47c2c44092da11b347dc88b7a0322e8cd6f199ec636ec8951ce4ee24d.docx",
+      "file_id": "93c4366bfe6c4f1ebaea7e3780c7e68c",
+      "file_name": "Bulk+O2+Requirement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14239,
+      "sha256": "e80489d47c2c44092da11b347dc88b7a0322e8cd6f199ec636ec8951ce4ee24d"
+    }
+  ],
+  "_mirror_hash": "80797c936f17e64d4c9de7f8899f51bd999baa63d65111390d0e65d13aef2ce8",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.642400+00:00"
+}

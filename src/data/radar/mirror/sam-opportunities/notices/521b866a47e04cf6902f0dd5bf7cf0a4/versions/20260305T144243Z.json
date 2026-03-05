@@ -1,0 +1,46 @@
+{
+  "id": "sam-521b866a47e04cf6902f0dd5bf7cf0a4",
+  "title": "C-5 Honeycomb Contract Strategy",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=521b866a47e04cf6902f0dd5bf7cf0a4",
+  "opportunity_url": "https://sam.gov/opp/521b866a47e04cf6902f0dd5bf7cf0a4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/521b866a47e04cf6902f0dd5bf7cf0a4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "521b866a47e04cf6902f0dd5bf7cf0a4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "C-5-Honeycomb-Contract-Strategy",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.F3YCCF 448 SCMW",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=521b866a47e04cf6902f0dd5bf7cf0a4",
+  "detail_text": "The C-5 Galaxy aircraft relies on varius adhesive bonded honeycomb panels to provide aerodynamic contours and adds structural integrity to airframes. Manufacturing bonded panels requires strict control in facility contamination levels, building temperature/humidity, tracking adhesive life, autoclave operation and bond line surface preparations. C-5 bonded panel manufacturing follows detailed processing specifications, and in the case of highly contoured areas, requires an experienced technical staff to interpret aircraft loft data.",
+  "detail_text_length": 537,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1c37994aa394ec49cd9bfc52e6afd48/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1c37994aa394ec49cd9bfc52e6afd48/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68bb4ac25e82bf9b9c495f2a409eac5f822b2468a3e632e48e9122101be41424.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68bb4ac25e82bf9b9c495f2a409eac5f822b2468a3e632e48e9122101be41424.pdf",
+      "file_id": "f1c37994aa394ec49cd9bfc52e6afd48",
+      "file_name": "C-5+Honeycomb+Panels+SQS+for+Industry+Day.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1007051,
+      "sha256": "68bb4ac25e82bf9b9c495f2a409eac5f822b2468a3e632e48e9122101be41424"
+    }
+  ],
+  "_mirror_hash": "92f9a0db80d231b37b2aa4554e53fcd60a28b3e810f0cf21b06b39abc0441b71",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.658771+00:00"
+}

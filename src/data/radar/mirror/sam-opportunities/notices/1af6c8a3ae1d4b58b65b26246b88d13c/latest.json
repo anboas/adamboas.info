@@ -1,0 +1,46 @@
+{
+  "id": "sam-1af6c8a3ae1d4b58b65b26246b88d13c",
+  "title": "AAR Woodward SPE4A226RX0010",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1af6c8a3ae1d4b58b65b26246b88d13c",
+  "opportunity_url": "https://sam.gov/opp/1af6c8a3ae1d4b58b65b26246b88d13c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1af6c8a3ae1d4b58b65b26246b88d13c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1af6c8a3ae1d4b58b65b26246b88d13c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE4A226RX0010",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1af6c8a3ae1d4b58b65b26246b88d13c",
+  "detail_text": "This Sources Sought Notice is for informational purposes only. A sources sought is a means of conducting market research to seek possible sources for a project, and to determine if a set-aside of a type is appropriate. The sources sought process is not restricted to small businesses. In many cases, large businesses should also respond with capability statements, as this will provide a clearer understanding of the current market. Based on the information received in response to this notice, the Government may change the initial acquisition strategy. PLEASE NOTE: THIS SOURCES SOUGHT IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY. The Defense Logistics Agency (DLA) is issuing this Sources Sought Notice to determine if other companies are capable of manufacturing, or legitimately obtaining the items listed and included as Attachment 1 to this announcement. DLA intends to solicit and negotiate with only one source under the authority of 10 U.S.C. 2304(c)(1) as implemented by FAR 6.302-1. Items are sole source to Unison (59501 & 83311) with AAR Supply Chain, Inc. (CAGE 1Y249) as the sole exclusive distributor and only known source of supply. The Government intends to award a sole source, long-term contract to AAR Supply Chain, Inc. Interested and responsible sources who consider themselves qualified to manufacture, or legitimately obtain the items listed under Attachment 1 are invited to submit a response to this Sources Sought by March 11, 2026. Responses must include the name and address of the company, CAGE code, business size status, point of contact name, title, phone, and email. Responses should also include a capability statement demonstrating the company’s ability to meet this requirement and include documentation demonstrating adequate financial resources, satisfactory record of integrity and business ethics, experience, accounting and operational controls, technical skills, management resources and facilities, or the ability to obtain them. Submission Instructions: Interested parties who consider themselves qualified to perform the above-listed services are invited to submit a response to this Sources Sought Notice by March 11, 2026, 5 pm EST. All responses under this Sources Sought Notice must be emailed to Kevin.Brown@dla.mil. If your company desires to be reviewed and qualified as an \"Approved Source\" for this item, submit your application package through the Source Approval Request (SAR) Program. A SAR package contains all of the technical data needed to demonstrate that the prospective contractor can competently manufacture the product to the same level of quality, or better, than the Original Equipment Manufacturer (OEM). The responsibility is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item, which DLA Aviation is procuring. SAR Program DLA Aviation Attn: DLA AVN-DU (SAR Program Manager) 8000 Jefferson Davis Highway Richmond, VA 23297-5100 If you have any questions concerning this opportunity, please contact: Kevin.Brown@dla.mil. Solicitation: SPE4A226RX0010 NSNs include: 012138292 012140565 013223771 015074285",
+  "detail_text_length": 3576,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55d2564cae8248b599ad1819ffebc47d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55d2564cae8248b599ad1819ffebc47d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd3807eb91e81b48b8f379d3e4a4c22bb81d61a93154c17c953120def154b5b1.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd3807eb91e81b48b8f379d3e4a4c22bb81d61a93154c17c953120def154b5b1.xlsx",
+      "file_id": "55d2564cae8248b599ad1819ffebc47d",
+      "file_name": "Unison+NIINs.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 8634,
+      "sha256": "dd3807eb91e81b48b8f379d3e4a4c22bb81d61a93154c17c953120def154b5b1"
+    }
+  ],
+  "_mirror_hash": "4b4a06c793319496ea8a1caf416e2a682da8d65851a23d0643fb0d6d7b447050",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.492376+00:00"
+}

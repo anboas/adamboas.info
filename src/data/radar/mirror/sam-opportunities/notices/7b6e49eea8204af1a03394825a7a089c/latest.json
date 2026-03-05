@@ -1,0 +1,47 @@
+{
+  "id": "sam-7b6e49eea8204af1a03394825a7a089c",
+  "title": "Cutting Shields",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b6e49eea8204af1a03394825a7a089c",
+  "opportunity_url": "https://sam.gov/opp/7b6e49eea8204af1a03394825a7a089c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7b6e49eea8204af1a03394825a7a089c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7b6e49eea8204af1a03394825a7a089c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4215826QE022",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b6e49eea8204af1a03394825a7a089c",
+  "detail_text": "SEE ATTACHED PRESOLICITATION NOTICE.",
+  "detail_text_length": 36,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/235036b73cd94c1cacf18af9e72a60c0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/235036b73cd94c1cacf18af9e72a60c0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d59ab1d09d1dd60bc894047a9d79e4b751fe770fadea36c0c1380e1fd4d376b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d59ab1d09d1dd60bc894047a9d79e4b751fe770fadea36c0c1380e1fd4d376b.pdf",
+      "file_id": "235036b73cd94c1cacf18af9e72a60c0",
+      "file_name": "Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 275584,
+      "sha256": "2d59ab1d09d1dd60bc894047a9d79e4b751fe770fadea36c0c1380e1fd4d376b"
+    }
+  ],
+  "_mirror_hash": "a49d23d924dc408c0a53e5b71b233aaf3677eee925f5e19fa9139146c33c4057",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.108621+00:00"
+}

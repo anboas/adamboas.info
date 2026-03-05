@@ -1,7 +1,7 @@
 [
   {
-    "id": "radar-hot-topic-transforming-army-installations",
-    "title": "Hot Topic - Transforming Army Installations",
+    "id": "radar-hot-topic-installation-transformation",
+    "title": "Hot Topic - Installation Transformation",
     "description": "AUSA sourced event for defense ecosystem tracking and engagement planning.",
     "startDate": "2026-04-01",
     "endDate": null,
@@ -11,7 +11,7 @@
     "signal": "Medium",
     "effort": "Low",
     "location": {
-      "city": "Hot Topic - Transforming Army Installations Arlington",
+      "city": "Hot Topic - Installation Transformation Arlington",
       "state": "VA",
       "country": "USA",
       "lat": 39.5,
@@ -39,9 +39,8 @@
       ],
       "keywords": [
         "topic",
-        "transforming",
-        "army",
-        "installations"
+        "installation",
+        "transformation"
       ],
       "relatedPrograms": [
         "Radar expansion"
@@ -61,7 +60,7 @@
         }
       ],
       "links": {
-        "official": "https://www.ausa.org/events/hot-topic/transforming-army-installations"
+        "official": "https://www.ausa.org/events/hot-topic/installation-transformation"
       },
       "logistics": {
         "format": "In-person",
@@ -70,82 +69,6 @@
           "max": 900
         },
         "travelBurdenFromDc": "Low"
-      },
-      "notes": null
-    }
-  },
-  {
-    "id": "radar-future-armoured-vehicles-situational-awareness-conference-2026",
-    "title": "Future Armoured Vehicles Situational Awareness Conference 2026",
-    "description": "ASD Events sourced event for defense ecosystem tracking and engagement planning.",
-    "startDate": "2026-04-22",
-    "endDate": "2026-04-23",
-    "branch": "Joint",
-    "type": "Conference",
-    "status": "Upcoming",
-    "signal": "Medium",
-    "effort": "High",
-    "location": {
-      "city": "London",
-      "state": null,
-      "country": "United Kingdom",
-      "lat": 39.5,
-      "lng": -98.35
-    },
-    "ontology": {
-      "themes": [
-        "Defense conference monitoring",
-        "Opportunity timing",
-        "Ecosystem engagement"
-      ],
-      "capabilityAreas": [
-        "Acquisition",
-        "Mission systems",
-        "Digital modernization"
-      ],
-      "missionThreads": [
-        "Partnership development",
-        "Program sensing"
-      ],
-      "stakeholders": [
-        "Joint stakeholders",
-        "Program offices",
-        "Industry partners"
-      ],
-      "keywords": [
-        "future",
-        "armoured",
-        "vehicles",
-        "situational",
-        "awareness"
-      ],
-      "relatedPrograms": [
-        "Radar expansion"
-      ],
-      "decisionWindows": {
-        "discovery": "Now to T-90 days",
-        "prep": "T-60 to T-14 days",
-        "execution": "Event window + 14-day follow-up"
-      },
-      "provenance": [
-        {
-          "name": "ASD Events",
-          "url": "https://www.asdevents.com/defense-security",
-          "type": "aggregator",
-          "lastVerified": "2026-02-13",
-          "confidence": "High"
-        }
-      ],
-      "links": {
-        "official": "https://www.asdevents.com/event.asp?id=25775"
-      },
-      "logistics": {
-        "format": "In-person",
-        "estimatedCostUsd": {
-          "min": 1200,
-          "max": 4500
-        },
-        "travelBurdenFromDc": "High"
       },
       "notes": null
     }

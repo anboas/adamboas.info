@@ -1,0 +1,68 @@
+{
+  "id": "sam-d0d3c8974df8487abb55e188efdcffcb",
+  "title": "USNS COMFORT (T- AH 20) ROH/DD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0d3c8974df8487abb55e188efdcffcb",
+  "opportunity_url": "https://sam.gov/opp/d0d3c8974df8487abb55e188efdcffcb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d0d3c8974df8487abb55e188efdcffcb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d0d3c8974df8487abb55e188efdcffcb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N3220526R6007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0d3c8974df8487abb55e188efdcffcb",
+  "detail_text": "Please see attached for Sources Sought Notice, J-14 Non-Discolsure Form, and Initial (draft) Work Item Package Index.",
+  "detail_text_length": 117,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/529149919238419c9c73f487ebe98d5b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55068f6212794118a1227048ac7ac5b6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c81085927ba4a038c3a40f6b3b85d4a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/529149919238419c9c73f487ebe98d5b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5e4e5c85823e3f343e046259443709c8fe7359db0baf77fbcb9cf1b7d7487430.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5e4e5c85823e3f343e046259443709c8fe7359db0baf77fbcb9cf1b7d7487430.docx",
+      "file_id": "529149919238419c9c73f487ebe98d5b",
+      "file_name": "J-14+NDA+.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36545,
+      "sha256": "5e4e5c85823e3f343e046259443709c8fe7359db0baf77fbcb9cf1b7d7487430"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55068f6212794118a1227048ac7ac5b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03449b51fc3a962557d7f30f4b7f433b016e575c5f9406cedaf114445a23188b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03449b51fc3a962557d7f30f4b7f433b016e575c5f9406cedaf114445a23188b.docx",
+      "file_id": "55068f6212794118a1227048ac7ac5b6",
+      "file_name": "Sources_Sought_Notice_Ship_Repair.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27853,
+      "sha256": "03449b51fc3a962557d7f30f4b7f433b016e575c5f9406cedaf114445a23188b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c81085927ba4a038c3a40f6b3b85d4a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b8f29c1e7d020eb09552845485ce8ed1bc742880d28a95eb05f9b1690382440d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b8f29c1e7d020eb09552845485ce8ed1bc742880d28a95eb05f9b1690382440d.docx",
+      "file_id": "7c81085927ba4a038c3a40f6b3b85d4a",
+      "file_name": "COMFORT+draft+WIP+Index.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45144,
+      "sha256": "b8f29c1e7d020eb09552845485ce8ed1bc742880d28a95eb05f9b1690382440d"
+    }
+  ],
+  "_mirror_hash": "0f72df88d542729efd588661a9cbcdb3fdf739b6fc4c3b23d9616c6cda523995",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.631792+00:00"
+}

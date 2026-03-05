@@ -1,0 +1,46 @@
+{
+  "id": "sam-7db17b3884034f139e49997be9cdb5ef",
+  "title": "Vertical Take Off and Landing Drone",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7db17b3884034f139e49997be9cdb5ef",
+  "opportunity_url": "https://sam.gov/opp/7db17b3884034f139e49997be9cdb5ef/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7db17b3884034f139e49997be9cdb5ef/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7db17b3884034f139e49997be9cdb5ef",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA4913-26-Z-0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA4913  AFCENT PMO",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7db17b3884034f139e49997be9cdb5ef",
+  "detail_text": "Please see athe attached Sources Sought for Vertical Take Off and Landing Drones. If you have any questions in regards to this please contact MSgt Bridge, jesse.bridge@spaceforce.mil",
+  "detail_text_length": 182,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35251b79437546c9bfe26c5dc23a34e8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35251b79437546c9bfe26c5dc23a34e8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2ee29089e936b1a402fcf8a5dd50295f40fa6fb13ebaa7f81b791639e7ca4c0a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2ee29089e936b1a402fcf8a5dd50295f40fa6fb13ebaa7f81b791639e7ca4c0a.pdf",
+      "file_id": "35251b79437546c9bfe26c5dc23a34e8",
+      "file_name": "TF-99+VTOL+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 317250,
+      "sha256": "2ee29089e936b1a402fcf8a5dd50295f40fa6fb13ebaa7f81b791639e7ca4c0a"
+    }
+  ],
+  "_mirror_hash": "c5ad21ad496afaddfb59f50416d32a480d0e9e862aecb563895bb5bb1ff0e4c5",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.523726+00:00"
+}

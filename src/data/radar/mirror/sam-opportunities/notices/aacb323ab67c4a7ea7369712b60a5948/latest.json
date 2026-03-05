@@ -1,0 +1,46 @@
+{
+  "id": "sam-aacb323ab67c4a7ea7369712b60a5948",
+  "title": "Lessors of Nonresidential Office Space for Lease",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aacb323ab67c4a7ea7369712b60a5948",
+  "opportunity_url": "https://sam.gov/opp/aacb323ab67c4a7ea7369712b60a5948/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aacb323ab67c4a7ea7369712b60a5948/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aacb323ab67c4a7ea7369712b60a5948",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DACA41526000100",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTHWESTERN.ENDIST KANSAS CITY.W071 ENDIST KANSAS CITY",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aacb323ab67c4a7ea7369712b60a5948",
+  "detail_text": "The US Government currently occupies office and related space in a building under lease in Burlington, Iowa that will be expiring. The Government is considering alternate space if economically advantageous. In making this determination, the Government will consider, among other things, the availability of alternate space that potentially can satisfy the Government’s requirements, as well as costs likely to be incurred through relocating, such as physical move costs, replication of tenant improvements and telecommunication infrastructure, and non-productive agency downtime. The amount of square footage needed is approximately 2200 square feet. Information should be sent to Realty Specialist Rick Randle, at rick.randle@usace.army.mil, 816-389-3933.",
+  "detail_text_length": 756,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc68a233c4174b30893de6c94bb3a9e7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc68a233c4174b30893de6c94bb3a9e7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c76c31098566b160c87452827f4fdca79d96c9ff9a772d766f459c9d7f081afa.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c76c31098566b160c87452827f4fdca79d96c9ff9a772d766f459c9d7f081afa.pdf",
+      "file_id": "fc68a233c4174b30893de6c94bb3a9e7",
+      "file_name": "Exhibit+A+Recruiting+Lease+Form+L100+for+use+with+RLP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 584843,
+      "sha256": "c76c31098566b160c87452827f4fdca79d96c9ff9a772d766f459c9d7f081afa"
+    }
+  ],
+  "_mirror_hash": "7b66f1f165afbf543666aa4ca7b209410151f88dd9b0d5eb332adb42c210226d",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.663524+00:00"
+}

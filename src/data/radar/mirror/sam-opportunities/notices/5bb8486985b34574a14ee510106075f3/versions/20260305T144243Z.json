@@ -1,0 +1,68 @@
+{
+  "id": "sam-5bb8486985b34574a14ee510106075f3",
+  "title": "Z--GAOA BAR ISLAND DAM RECONSTRUCTION",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5bb8486985b34574a14ee510106075f3",
+  "opportunity_url": "https://sam.gov/opp/5bb8486985b34574a14ee510106075f3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5bb8486985b34574a14ee510106075f3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5bb8486985b34574a14ee510106075f3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140L0626B0004",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.NATIONAL OPERATIONS CENTER",
+  "posted_date": "2026-03-04",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5bb8486985b34574a14ee510106075f3",
+  "detail_text": "This is a Sources Sought Announcement for the Bar Island Dam Reconstruction project located in Phillips County, Montana. See attachments for details.",
+  "detail_text_length": 149,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42b0bba3b5c44221981bec67b33e7f31/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cf8a001124342878743ea997e726cef/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b41f493e6cd46c1b27c7c0256c3063d/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42b0bba3b5c44221981bec67b33e7f31/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2355a1852f9b5f2730ce1bdabfd31c75dac46cd59e42dd3440613ae10f26d93b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2355a1852f9b5f2730ce1bdabfd31c75dac46cd59e42dd3440613ae10f26d93b.pdf",
+      "file_id": "42b0bba3b5c44221981bec67b33e7f31",
+      "file_name": "140L0626B0004_DRAFT_Specifications_GeoReport_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19016330,
+      "sha256": "2355a1852f9b5f2730ce1bdabfd31c75dac46cd59e42dd3440613ae10f26d93b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cf8a001124342878743ea997e726cef/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2cdbe6ff167610f56f87da448f3e11df19a5729f204fd58b31cf2837dac640f3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2cdbe6ff167610f56f87da448f3e11df19a5729f204fd58b31cf2837dac640f3.pdf",
+      "file_id": "5cf8a001124342878743ea997e726cef",
+      "file_name": "140L0626B0004_DRAFT_Drawings_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13937532,
+      "sha256": "2cdbe6ff167610f56f87da448f3e11df19a5729f204fd58b31cf2837dac640f3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b41f493e6cd46c1b27c7c0256c3063d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc45f9b92455276a57e8af18b4bf068799f334681605b4bd18d7c6e268f5af56.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc45f9b92455276a57e8af18b4bf068799f334681605b4bd18d7c6e268f5af56.pdf",
+      "file_id": "7b41f493e6cd46c1b27c7c0256c3063d",
+      "file_name": "140L0626B0004_SourcesSought_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153885,
+      "sha256": "dc45f9b92455276a57e8af18b4bf068799f334681605b4bd18d7c6e268f5af56"
+    }
+  ],
+  "_mirror_hash": "445126ad696f330c7e6d8304586e57f413f2a6f357eb51e1a9ab355e1d32113d",
+  "_mirror_run_id": "20260305T144243Z",
+  "_mirror_recorded_at": "2026-03-05T14:51:32.544751+00:00"
+}
