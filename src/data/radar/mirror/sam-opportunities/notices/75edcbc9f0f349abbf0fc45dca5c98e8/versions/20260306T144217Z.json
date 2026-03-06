@@ -1,0 +1,57 @@
+{
+  "id": "sam-75edcbc9f0f349abbf0fc45dca5c98e8",
+  "title": "Z2FE--Renovate B119 Catholic Chapel [552-22-201]",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75edcbc9f0f349abbf0fc45dca5c98e8",
+  "opportunity_url": "https://sam.gov/opp/75edcbc9f0f349abbf0fc45dca5c98e8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/75edcbc9f0f349abbf0fc45dca5c98e8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "75edcbc9f0f349abbf0fc45dca5c98e8",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C25026B0013_SpecialNotice3_4_26",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.250-NETWORK CONTRACT OFFICE 10 (36C250)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75edcbc9f0f349abbf0fc45dca5c98e8",
+  "detail_text": "Special Notice to post the bid abstract.",
+  "detail_text_length": 40,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da8c0f3ec9ff44d89f9fc90b1b3b1d4b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd64cebc743a44f18805e8e20fe3de08/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da8c0f3ec9ff44d89f9fc90b1b3b1d4b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9442bf401ea50b701d5f67d60abc6a9314198ee1a48de93620541a7b24b2e61e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9442bf401ea50b701d5f67d60abc6a9314198ee1a48de93620541a7b24b2e61e.pdf",
+      "file_id": "da8c0f3ec9ff44d89f9fc90b1b3b1d4b",
+      "file_name": "36C25026B0013_3+-+Special+Notice+3.5.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 133766,
+      "sha256": "9442bf401ea50b701d5f67d60abc6a9314198ee1a48de93620541a7b24b2e61e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd64cebc743a44f18805e8e20fe3de08/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b6af3a82a196e45d90bfe38c5b1e960f11fa472c6b293c1bce4853a73e54b98f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b6af3a82a196e45d90bfe38c5b1e960f11fa472c6b293c1bce4853a73e54b98f.pdf",
+      "file_id": "fd64cebc743a44f18805e8e20fe3de08",
+      "file_name": "Renovate+Catholic+Chapel+B119+Bid+Abstract+-+3.4.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 297173,
+      "sha256": "b6af3a82a196e45d90bfe38c5b1e960f11fa472c6b293c1bce4853a73e54b98f"
+    }
+  ],
+  "_mirror_hash": "a7e3116a5752f11aceeecf7d338cd88888eac1a7f03efbc00fc2a0cd372ec09a",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.423236+00:00"
+}

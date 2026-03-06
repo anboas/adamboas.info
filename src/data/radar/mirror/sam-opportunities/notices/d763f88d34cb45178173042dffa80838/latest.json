@@ -1,0 +1,70 @@
+{
+  "id": "sam-d763f88d34cb45178173042dffa80838",
+  "title": "NGA HRM-II RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d763f88d34cb45178173042dffa80838",
+  "opportunity_url": "https://sam.gov/opp/d763f88d34cb45178173042dffa80838/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d763f88d34cb45178173042dffa80838/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d763f88d34cb45178173042dffa80838",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "NGA_HM0476_HRM_II_RFI",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).ATTN MS S84   OCS",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d763f88d34cb45178173042dffa80838",
+  "detail_text": "The National Geospatial-Intelligence Agency (NGA) is issuing this Request for Information (RFI) to conduct market research for the Human Resources Management II (HRM II) requirement. The purpose of this RFI is to identify qualified sources capable of providing a full range of human resources services to support NGA’s mission. The Government invites all businesses, including small businesses, to respond to this RFI. Please note: The Performance Requirements Summary (PRS) and Quality Assurance Surveillance Plan (QASP), referenced in Section 16.0 of the attached PWS, are currently under development by the Government and will be provided in a future solicitation, if any is issued. Response Requirements: Interested parties are requested to respond to this RFI by providing a white paper as described in the RFI document. The white paper must provide a response to all sections of the RFI and all questions listed in \"Attachment 2 - Government Questions.\" Page Limit: The white paper shall not exceed twenty (20) pages . The cover page and table of contents are excluded from this limit.",
+  "detail_text_length": 1091,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/892b3571db514de28f1a7800b0c968ed/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/972f2bf494c44828aba9443556421ff5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c4a0241bf77d429aad17dc6350fb435a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/892b3571db514de28f1a7800b0c968ed/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/843d83d7b99ee9636f85267ba683ff1bc239613299133fb58c40d3bef5978b72.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/843d83d7b99ee9636f85267ba683ff1bc239613299133fb58c40d3bef5978b72.pdf",
+      "file_id": "892b3571db514de28f1a7800b0c968ed",
+      "file_name": "HRM+II+RFI+05MAR2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 359085,
+      "sha256": "843d83d7b99ee9636f85267ba683ff1bc239613299133fb58c40d3bef5978b72"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/972f2bf494c44828aba9443556421ff5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a4e5c13d9ff15158803e775ffab69cfb85543125048551e5c19a1f52cadd2764.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a4e5c13d9ff15158803e775ffab69cfb85543125048551e5c19a1f52cadd2764.pdf",
+      "file_id": "972f2bf494c44828aba9443556421ff5",
+      "file_name": "Attachment+1-+HRM+II+PWS+05MAR2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2696772,
+      "sha256": "a4e5c13d9ff15158803e775ffab69cfb85543125048551e5c19a1f52cadd2764"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c4a0241bf77d429aad17dc6350fb435a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8afd1bdb19380754f21312c2d9c9a707db0e9673ec9b38576caed69a9019eb7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8afd1bdb19380754f21312c2d9c9a707db0e9673ec9b38576caed69a9019eb7.pdf",
+      "file_id": "c4a0241bf77d429aad17dc6350fb435a",
+      "file_name": "Attachment+2-+HRM+II+Government+Questions+05MAR2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145666,
+      "sha256": "a8afd1bdb19380754f21312c2d9c9a707db0e9673ec9b38576caed69a9019eb7"
+    }
+  ],
+  "_mirror_hash": "b32f1f6b4c8cc67d9839d95b19b76e046ecdd615c16bb3176cd496ea57ffa5a0",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.308047+00:00"
+}

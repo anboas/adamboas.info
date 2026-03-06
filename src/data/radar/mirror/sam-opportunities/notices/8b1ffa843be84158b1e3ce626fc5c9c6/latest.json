@@ -1,0 +1,57 @@
+{
+  "id": "sam-8b1ffa843be84158b1e3ce626fc5c9c6",
+  "title": "Amendment 0001  Clutch, Fan, Engine",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b1ffa843be84158b1e3ce626fc5c9c6",
+  "opportunity_url": "https://sam.gov/opp/8b1ffa843be84158b1e3ce626fc5c9c6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8b1ffa843be84158b1e3ce626fc5c9c6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8b1ffa843be84158b1e3ce626fc5c9c6",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "SPRDL125R0159",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b1ffa843be84158b1e3ce626fc5c9c6",
+  "detail_text": "The purpose of this amendment 0001 to solicitation SPRDL1-25-R-0159 is to update CS8001 narrative and input FAR 52.216-19 to the solicitation. 1. CS8001 Contractor Retention of Supply Chain Traceability Documentation (See below and CS8001). 2. Order Limitations (See below and Section I). 3. All other terms and conditions of solicitation SPRDL1-25-R-0159 remain in full force and effect.",
+  "detail_text_length": 388,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4cced7316cab41168a4570be0875dc9e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b146bab110c74ddc95acc39e46d7639a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4cced7316cab41168a4570be0875dc9e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f9bca686eedce2ac719cd93ae0e5837c91e1a7b4214f87947178102cdf977ef3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f9bca686eedce2ac719cd93ae0e5837c91e1a7b4214f87947178102cdf977ef3.pdf",
+      "file_id": "4cced7316cab41168a4570be0875dc9e",
+      "file_name": "SPRDL125R0159-0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27126,
+      "sha256": "f9bca686eedce2ac719cd93ae0e5837c91e1a7b4214f87947178102cdf977ef3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b146bab110c74ddc95acc39e46d7639a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7c2e7bf4d7029a65c67ce3af38bc6251c5997114c83f027fe0596bb0b8bde9f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7c2e7bf4d7029a65c67ce3af38bc6251c5997114c83f027fe0596bb0b8bde9f.pdf",
+      "file_id": "b146bab110c74ddc95acc39e46d7639a",
+      "file_name": "SPRDL125R0159+Conformed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137196,
+      "sha256": "f7c2e7bf4d7029a65c67ce3af38bc6251c5997114c83f027fe0596bb0b8bde9f"
+    }
+  ],
+  "_mirror_hash": "009433cf80c3ceb02265023e11396e16ae06f8c1d10323dd1f90287065e7b431",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.765665+00:00"
+}

@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-05T14:52:08.983231+00:00
+Generated: 2026-03-06T14:50:49.204645+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/05/2026
+Posted range: 01/01/2026 -> 03/06/2026
 
 ## Counts
-- Total candidates: 266
+- Total candidates: 272
 - Navy-related: 0
-- Full detail cached: 266
-- Notices with attachments: 215
-- Total attachment links: 598
+- Full detail cached: 272
+- Notices with attachments: 221
+- Total attachment links: 626
 - Pre-solicitation: 60
-- Sources Sought: 162
-- Special Notice: 44
+- Sources Sought: 167
+- Special Notice: 45
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 106
-- Sources Sought: 162
-- Special Notice: 44
+- Pre-solicitation: 108
+- Sources Sought: 167
+- Special Notice: 45
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -41,9 +41,6 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Sources Sought | Sources Sought | 2026-01-27 | 2026-02-10 | DEPT OF DEFENSE | [FA8604 Air Cargo Conveyor System at Dover Air Force Base, Delaward](https://sam.gov/opp/90a0bf5309944cf6a1a7b67a3a8a0b13/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-28 | 2026-02-10 | DEPT OF DEFENSE | [AN/ALQ-172 LRU-8 BIT LIMITERS AND DOWN CONVETERS REPAIR](https://sam.gov/opp/27887d1878cb4e168e8837d7256388a8/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-15 | 2026-02-16 | DEPT OF DEFENSE | [T-38 Wingtips](https://sam.gov/opp/0816ea24e239494b890cdf34efd7fba6/view) |
-| 4 | Sources Sought | Sources Sought | 2026-02-04 | 2026-02-18 | DEPT OF DEFENSE | [Sources Sought Notice - G Range Hone](https://sam.gov/opp/97b9c3e8459541faacd2a4ea7bdb69ce/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-11 | 2026-02-18 | DEPT OF DEFENSE | [F-35 Radar Sustainment Support Follow-On](https://sam.gov/opp/692c59a3055747099b897e4db80ffe2e/view) |
-| 2 | Special Notice | Special Notice | 2026-02-12 | 2026-02-18 | DEPT OF DEFENSE | [Synopsis of Contract Action STARBASE Custodial, Facility Maintenance, and Groundskeeping Services](https://sam.gov/opp/b4ee5336b7d547f1aa663ca438b1209d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-20 | 2026-02-19 | DEPT OF DEFENSE | [Contractor Operated Civil Engineer Supply Store (COCESS) - EGLIN AFB, FL](https://sam.gov/opp/c058263281c34a1ebf5fab4b3639e9c0/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-03 | 2026-02-19 | DEPT OF DEFENSE | [KC-135 Electronic Component Assembly](https://sam.gov/opp/2779ec266bf54c1cb120a4c43cde46e1/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-04 | 2026-02-19 | DEPT OF DEFENSE | [Contractor Engineering and Technical Services (CETS)](https://sam.gov/opp/a81bc4a100a84e6089db67ad17fe31ec/view) |
@@ -161,14 +158,12 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-05 | 2026-03-09 | DEPT OF DEFENSE | [C-5 Battery Control Electronics Module (BCEM)](https://sam.gov/opp/8986f748cabf4f6bb92820f84825bc5b/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-06 | 2026-03-09 | DEPT OF DEFENSE | [RFI - 711 HPW/RHB Chillers Maintenance and Repair](https://sam.gov/opp/227240213486483ca53b457e3b1d8159/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-06 | 2026-03-09 | DEPT OF DEFENSE | [AN/ALQ-131 Electronic Countermeasures (ECM) Pod parts](https://sam.gov/opp/ac8757b5016c48fea005dc3c8668c7a2/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-09 | DEPT OF DEFENSE | [Countermeasure Magazines](https://sam.gov/opp/6fbcd3f99c5e458b8baeffb5d0753ebe/view) |
 | 2 | Special Notice | Special Notice | 2026-02-10 | 2026-03-09 | DEPT OF DEFENSE | [Enterprise Sustainment Contract for Repair, Spares, & Engineering Services](https://sam.gov/opp/f606cef5e3b24baeb0d6c13ddf4bd1e0/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-10 | 2026-03-09 | DEPT OF DEFENSE | [INDUSTRIAL PROCESS WASTE (IPW) CLEANING](https://sam.gov/opp/eb039cecb63a4a5cb024f82b8f123a4d/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-18 | 2026-03-09 | DEPT OF DEFENSE | [EDRM - Enhanced Drogue Rocket Motor](https://sam.gov/opp/e2e0528771da4bfbbf77f1c06fd67e14/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-09 | DEPT OF DEFENSE | [KT300D Piston Pumps](https://sam.gov/opp/590c9ea7eae3465aa04f18dae397eaf1/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-24 | 2026-03-09 | DEPT OF DEFENSE | [EOD Trailers RFI](https://sam.gov/opp/e9c2ddf7c197496f89faf32d6b1016a3/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-09 | DEPT OF DEFENSE | [WORLDWIDE WAREHOUSE REDISTRIBUTION SERVICES PROGRAM](https://sam.gov/opp/17664a3f240c493e8f93740a75db35b8/view) |
-| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [KC-46 Training Systems Request for Information (RFI), Operations & Sustainment - February 2026](https://sam.gov/opp/b2d40856fd2f4bc8899e027ac1f96948/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-09 | DEPT OF DEFENSE | [Airboats & Trailer](https://sam.gov/opp/665568b9f9ad4c3ab675753f996cfd1f/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-05 | 2026-03-10 | DEPT OF DEFENSE | [Autonomous Closed Loop Ventilation (AFMEDCOM)](https://sam.gov/opp/bdcab5a95b874d02b3111da253f22c3c/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-10 | DEPT OF DEFENSE | [B-2 Fire Extinguisher Cartridge](https://sam.gov/opp/51aa348b3f7040528fea3903e0353c03/view) |
@@ -189,14 +184,16 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-24 | 2026-03-11 | DEPT OF DEFENSE | [Repair services for the circuit cards and sub-assemblies of the Helmet Mounted Integrated Targeting (HMIT).](https://sam.gov/opp/340d59e8e0c146028113f60e6e81d482/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-11 | DEPT OF DEFENSE | [F-16 Radar Electrical Limiter IDIQ - NSN: 5895-01-515-8924 WF](https://sam.gov/opp/5e85b159f5e44cd39fc1a075f09e0474/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-11 | DEPT OF DEFENSE | [Gantner DAQ System Upgrade](https://sam.gov/opp/b692f3133cd94c8097a592f35febaaa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-11 | DEPT OF DEFENSE | [Printed Circuit Board Assembly](https://sam.gov/opp/3ce2c6075f6c4dd3a15ccfcea5b87ec1/view) |
 | 2 | Special Notice | Special Notice | 2026-03-02 | 2026-03-11 | DEPT OF DEFENSE | [Ceiling Increase to Existing Emergency Water Damage Restoration Services](https://sam.gov/opp/35938863c03e461cadc22349841c0d91/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-11 | DEPT OF DEFENSE | [New Generation Ammunition & Munitions Equipment (NGAME) for MMHE](https://sam.gov/opp/633ff34982b7413ebcfa9ba7f4a7c29d/view) |
+| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-05 | 2026-03-11 | DEPT OF DEFENSE | [RFI -Portable Freestanding Horizontal Lifeline and Sunshade Hangar Overhead System](https://sam.gov/opp/686d5d5b234848f3a579e905207d8d53/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-11 | DEPT OF DEFENSE | [Printed Circuit Board Assembly](https://sam.gov/opp/bb24d2abe0084771b0ecb351be58ec50/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [C-17 Data Recorder](https://sam.gov/opp/658144be18254edd80798a9f1c7f481b/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [CEESIM and RFGEN Repairs](https://sam.gov/opp/cf8723239aa3496288b6dec8d1d7e806/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [REPAIR SERVICES REGULATOR ASSEMBLY](https://sam.gov/opp/f620e48362674b24a119ac6ec51b5ebb/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [Synopsis of Modernization and Upgrade of the LC-130H Polar Mission aircraft to LC-130J Aircraft](https://sam.gov/opp/fab11964ea00473faeb7b21320ef54ae/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-02 | 2026-03-12 | DEPT OF DEFENSE | [Sources Sought/Request for Information (RFI) for the production of Payload Transporter Replacement (PTR)](https://sam.gov/opp/e8acbf547343469badc3b422981ce906/view) |
+| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-05 | 2026-03-12 | DEPT OF DEFENSE | [KC-46 Training Systems Request for Information (RFI), Operations & Sustainment - February 2026](https://sam.gov/opp/97c6eedc3a4e4cc7ae13d7a5d4e3079f/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-17 | 2026-03-13 | DEPT OF DEFENSE | [Potential Leasing of Land in Alaska](https://sam.gov/opp/b36f2769fde9452085ff0834ca5edcdc/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-13 | DEPT OF DEFENSE | [Repair of Transmitters for the JTE Program Multiple NSNs](https://sam.gov/opp/6ed69fa325f148df8ed41ce939269dfb/view) |
 | 4 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Sources Sought for WWYK200131 - Repair Chilled Water System, Bldg. 2280](https://sam.gov/opp/63e6546fc6834eb1918033cbe584b0f8/view) |
@@ -208,6 +205,7 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-13 | DEPT OF DEFENSE | [HH-60W Link-16 Advanced Capability Modernization](https://sam.gov/opp/90ccc75a6bf54053b9a719608fbb2bb8/view) |
 | 2 | Special Notice | Special Notice | 2026-03-03 | 2026-03-13 | DEPT OF DEFENSE | [Request for Lease (RFL) Eglin Air Force Base (AFB), FL,](https://sam.gov/opp/aa0ef3a32bca4d589313ef83ed3d9c09/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-13 | DEPT OF DEFENSE | [TINKER AFB MAC BOA WWYK150083 - Repair Transformer Vault 6, B9001](https://sam.gov/opp/4529fd5481194673b8aca100d4aeff36/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-13 | DEPT OF DEFENSE | [F139-PW4062-100 SPARE ENGINE CORE PROCUREMENT](https://sam.gov/opp/f361d62791ad4c43a5926b0290536881/view) |
 | 2 | Special Notice | Special Notice | 2026-02-27 | 2026-03-14 | DEPT OF DEFENSE | [Notice of Intent to Sole Source - Mental Health First Aid Instructor Training](https://sam.gov/opp/3a36d1ea782a4305900ae1a97ccaa308/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-01-13 | 2026-03-15 | DEPT OF DEFENSE | [CNC Router Cutting System](https://sam.gov/opp/bed4d9ff2a8746908673e55a498be7b8/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-15 | DEPT OF DEFENSE | [Flight Data Transmitter Remanufacture](https://sam.gov/opp/0d740d2434764f85a6e8037684a2a885/view) |
@@ -221,7 +219,7 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Sources Sought | Sources Sought | 2026-01-28 | 2026-03-17 | DEPT OF DEFENSE | [ADR AM2 Airfield Matting](https://sam.gov/opp/3f29ad44baf14ca896875d06dbdc05f6/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-17 | DEPT OF DEFENSE | [RFI_KA Maintenance Support](https://sam.gov/opp/05d68300a6ad491392d7d6ec391be93d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [Joint Personal Property Shipping Office (JPPSO) - Personal Property Movement  Services](https://sam.gov/opp/97c00780c55f407faec12af0f268e105/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-17 | DEPT OF DEFENSE | [Hill AFB COPARS (Contractor Operated Parts Store) for 75th Logistics Readiness Squadron](https://sam.gov/opp/d34cf1bd08c7471e9db0a4bae1023f42/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-17 | DEPT OF DEFENSE | [Hill AFB COPARS (Contractor Operated Parts Store) for 75th Logistics Readiness Squadron](https://sam.gov/opp/7ab3a0ca168747bd9b7461995754a301/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-17 | 2026-03-18 | DEPT OF DEFENSE | [Request for Information \| F-15 Avionics Systems Supportability Analysis](https://sam.gov/opp/401e65f3489843ebadd939fe70b46045/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-17 | 2026-03-18 | DEPT OF DEFENSE | [Request for Information \| F-15 Maintenance Testability Analysis Program](https://sam.gov/opp/2d5683d10b244c0eb0aa67609d7fe6ee/view) |
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-02-17 | 2026-03-18 | DEPT OF DEFENSE | [RFI for LINK 22 radios](https://sam.gov/opp/094268a7743547d99431197ae4b238fd/view) |
@@ -236,10 +234,13 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-04 | 2026-03-19 | DEPT OF DEFENSE | [Access Control Systems (ACS) Door Maintenance](https://sam.gov/opp/6b4052dd30d94c12b4d5ec00c95fc846/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-04 | 2026-03-19 | DEPT OF DEFENSE | [Defense Injection Reception Emergency Action Message Command and Control Terminal (DIRECT)](https://sam.gov/opp/ef594382700e49929cc72c74b5263853/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-04 | 2026-03-19 | DEPT OF DEFENSE | [LANTIRN Sustaining Engineering Services](https://sam.gov/opp/ec4f2f3e648b45349f44f9419deb6c33/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-19 | DEPT OF DEFENSE | [B-2 Interface Adapters TPS Hardware Replacement](https://sam.gov/opp/b64fcf35df23415db3dcbaff08538bab/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-18 | 2026-03-20 | DEPT OF DEFENSE | [Current and Emerging Artificial Intelligence (AI) Tools to Accelerate Air Force Mobility Aircraft Acquisition Activities](https://sam.gov/opp/f294572b9b8a4bb5a1c24c67fd77dd09/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-20 | DEPT OF DEFENSE | [Repair of the B-1/Multi Functional Displays](https://sam.gov/opp/822667649a654843ade2df20586cebf5/view) |
 | 4 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-20 | DEPT OF DEFENSE | [Sources Sought: Nuclear Stores Interface Units (NSIU)](https://sam.gov/opp/1362fb898cf54950a801b10dc1247d98/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-26 | 2026-03-20 | DEPT OF DEFENSE | [Request for Information: Next-Generation Air Operations Center (AOC) Weapon System](https://sam.gov/opp/b3c69875964c40ecb02b4dcb4f7feb78/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-20 | DEPT OF DEFENSE | [Spectro Cloud Palette VerteX Software License](https://sam.gov/opp/09830a9f027f44b9ac5e6eacb4d0ef16/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-21 | DEPT OF DEFENSE | [USAF Air Launch Cruise Missile (ALCM)](https://sam.gov/opp/6d52902a99894bd8ab3e1065df1b75d5/view) |
 | 4 | Sources Sought | Sources Sought | 2026-02-19 | 2026-03-22 | DEPT OF DEFENSE | [Sources Sought Notice for 415th Transmitter IDIQ](https://sam.gov/opp/0858e3e1be3d4580bc75ab5900baf9b7/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-23 | 2026-03-22 | DEPT OF DEFENSE | [Tinker Air Force Base Request for Information](https://sam.gov/opp/f4fcc1849bc542b4865c8af597305407/view) |
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-02-20 | 2026-03-23 | DEPT OF DEFENSE | [AFRL National Research Network Request for Information](https://sam.gov/opp/38d7c5a321b54a7c9cb48aa997ae299c/view) |
@@ -255,9 +256,13 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-31 | DEPT OF DEFENSE | [B-1 Fully Integrated Data Link (FIDL) Ethernet Switch Unit (ESU) 7025016509308BY](https://sam.gov/opp/dd1fd517402a44958fa64e751f313ee9/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-04 | 2026-03-31 | DEPT OF DEFENSE | [(Amended) Sources Sought: Study- For CRC (Power, Fuel, Data, Water, Air Handling & Transportation)](https://sam.gov/opp/d97fa770d6fd445284917fe070c9c784/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-17 | 2026-04-02 | DEPT OF DEFENSE | [Repair Services for the JTE Program](https://sam.gov/opp/db5db8d3897f4648a0949b3bd64c69d1/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-04-05 | DEPT OF DEFENSE | [F-16 Upgraded Central Air Data Computer](https://sam.gov/opp/d49bfdd59d47446bae9d04da31b0da36/view) |
+| 4 | Special Notice | Pre-solicitation, Special Notice | 2026-03-05 | 2026-04-06 | DEPT OF DEFENSE | [Special Notice (Request for Information (RFI)) for Modern Unmanned-warfare Systems Environment (MUSE)](https://sam.gov/opp/e1e2bdba331f4ac78834b2b7d680ac58/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-04-06 | DEPT OF DEFENSE | [Countermeasure Magazines](https://sam.gov/opp/5ad2cd3553b546d885de890503b4bd40/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-04-07 | DEPT OF DEFENSE | [F-16 Circuit Card Assembly NSN: 5998-01-653-6192WF](https://sam.gov/opp/8da68aec8a8547679dfb3ebfa8f825d7/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-04-15 | DEPT OF DEFENSE | [WWYK250003 - Relocate Fire Alarm Circuit O106-062, B3001](https://sam.gov/opp/e09f23900ce645e2bd8be8786b16dd84/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-04-18 | DEPT OF DEFENSE | [F100 Blade Set, Turbine, A](https://sam.gov/opp/14fee7dfd80446da82730eaac1d910e7/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-03-05 | 2026-04-20 | DEPT OF DEFENSE | [REPAIR SERVICES FOR THE UMTE PROGRAM](https://sam.gov/opp/9833b00e3b0a4d6e951352162b6a11bb/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-01-28 | 2026-05-20 | DEPT OF DEFENSE | [Elevon Actuator Controller Phase III Remanufacture](https://sam.gov/opp/35c94e13112f40e7869bd839bb82466d/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-07-12 | DEPT OF DEFENSE | [**ACCEPTANCE OF WHITE PAPERS IS SUSPENDED UNTIL FURTHER NOTICE** Defense Production Act Title III Expansion of Domestic Production Capability and Capacity - Funding Opportunity Announcement (FOA)](https://sam.gov/opp/58dc0fd5ceb9406cbfb908e5eeda6d5c/view) |
 | 2 | Special Notice | Special Notice | 2026-02-04 | 2026-11-09 | DEPT OF DEFENSE | [Commercial Solutions Opening for Joint All-Domain Command and Control (JADC2)](https://sam.gov/opp/ea6dc4a1448c43dcb7311849c8e10a7d/view) |
@@ -274,6 +279,7 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Special Notice | Special Notice | 2026-02-19 | 2027-02-19 | DEPT OF DEFENSE | [FD2030-26-01082](https://sam.gov/opp/a796d4d20e5c4f0b8dd3544a1476b231/view) |
 | 2 | Special Notice | Special Notice | 2026-03-02 | 2027-03-02 | DEPT OF DEFENSE | [FD2030-26-00823](https://sam.gov/opp/6bae7e6ba2934778b6308a2cc4a8cfd6/view) |
 | 2 | Special Notice | Special Notice | 2026-03-02 | 2027-03-02 | DEPT OF DEFENSE | [FD2030-26-01136](https://sam.gov/opp/7d37e77c21f04d4a929aa55b10e80d8d/view) |
+| 2 | Special Notice | Special Notice | 2026-03-05 | 2027-03-05 | DEPT OF DEFENSE | [FD2030-26-01113](https://sam.gov/opp/d3cd4ce53f42490db963d3414770e910/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-01-28 | 2027-03-31 | DEPT OF DEFENSE | [Trusted and Elastic Military Platforms and Electronic Warfare (EW) System Technologies (TEMPEST)](https://sam.gov/opp/804e4b92804f4f44a5ccbbfb009ed0e1/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-20 | 2027-09-30 | DEPT OF DEFENSE | [AERIAL LAYER NETWORKING & TRANSMISSION TECHNOLOGIES](https://sam.gov/opp/d51294ac2bf14bc3942e7d359e9a4f45/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-04 | 2027-12-01 | DEPT OF DEFENSE | [F16_AN_APG_Dual_Mode_Transmitter_NSN5998012428035_PN_762R117G01](https://sam.gov/opp/a91210f83e734902ba03ab876db82a0c/view) |

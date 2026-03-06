@@ -1,0 +1,56 @@
+{
+  "id": "sam-f15f568358e047ba90ccd6ea9d7289db",
+  "title": "B1245 Roof Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f15f568358e047ba90ccd6ea9d7289db",
+  "opportunity_url": "https://sam.gov/opp/f15f568358e047ba90ccd6ea9d7289db/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f15f568358e047ba90ccd6ea9d7289db/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f15f568358e047ba90ccd6ea9d7289db",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS219",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f15f568358e047ba90ccd6ea9d7289db",
+  "detail_text": "The Contractor shall provide all personnel, materials, equipment, tools, transportation, supervision, safety equipment, and any other resources necessary to repair the RUBB fabric structure on Building 1245 at Fleet Logistics Center Puget Sound (FLCPS), Bremerton, WA 98314, as detailed in this Performance Work Statement.",
+  "detail_text_length": 322,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29636cbbc3f94b468051a8a586c68be6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e058c6c0780426b8cbcfa88323611d8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29636cbbc3f94b468051a8a586c68be6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b06b5102b44cafed2729e79509b3f06de49185f3b7076030cc98ea80b76394c3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b06b5102b44cafed2729e79509b3f06de49185f3b7076030cc98ea80b76394c3.pdf",
+      "file_id": "29636cbbc3f94b468051a8a586c68be6",
+      "file_name": "N0040626QS219_Roof_Pictures.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 180560,
+      "sha256": "b06b5102b44cafed2729e79509b3f06de49185f3b7076030cc98ea80b76394c3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e058c6c0780426b8cbcfa88323611d8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c981a034c1f2513969312db3612a895d2d334ca9f4c8ef0dbaf957a32410e446.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c981a034c1f2513969312db3612a895d2d334ca9f4c8ef0dbaf957a32410e446.pdf",
+      "file_id": "4e058c6c0780426b8cbcfa88323611d8",
+      "file_name": "N0040626QS219_Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9656848,
+      "sha256": "c981a034c1f2513969312db3612a895d2d334ca9f4c8ef0dbaf957a32410e446"
+    }
+  ],
+  "_mirror_hash": "f13a067b11be28bfc110132193c9464442dc8aaa83ad83457b7c583bcd7da42a",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.262607+00:00"
+}

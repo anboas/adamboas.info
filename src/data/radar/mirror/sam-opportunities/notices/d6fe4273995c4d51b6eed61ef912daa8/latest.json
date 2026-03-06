@@ -1,0 +1,46 @@
+{
+  "id": "sam-d6fe4273995c4d51b6eed61ef912daa8",
+  "title": "Directorate of Simulation (DOS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d6fe4273995c4d51b6eed61ef912daa8",
+  "opportunity_url": "https://sam.gov/opp/d6fe4273995c4d51b6eed61ef912daa8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d6fe4273995c4d51b6eed61ef912daa8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d6fe4273995c4d51b6eed61ef912daa8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W9124G_DOS",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-FT RUCKER",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d6fe4273995c4d51b6eed61ef912daa8",
+  "detail_text": "(DOS) is an Army organization sited on Fort Novosel, Alabama. DOS plans, coordinates, implements, and manages live, virtual, constructive, gaming (LVCG), and Mission Command (MC) efforts that support Institutional Initial Military Training (IMT), Professional Military Education (PME), and select external training readiness requirements. DOS executes its critical training support mission from two separate facilities (Bldg 5440 and Bldg 5101) which together house in excess of $500 Million worth of simulation and simulator equipment as well as associated network and communication architectures. The Government shall not exercise any supervision or control over the contract service providers performing the services herein. Such contract Service providers shall be accountable solely to the Contractor who, in turn is responsible to the Government. The Contractor, in turn, shall be accountable to the Government for Contractor or subcontractor personnel. Period of Performance is from 1 May 2026 to 1 May 2027.",
+  "detail_text_length": 1015,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/969318f305fd4fbdb3fea9094fb19105/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/969318f305fd4fbdb3fea9094fb19105/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/98b95eee9d05369f21ebd311e25ac3c5b86da4e66807faee9885aaecaa71e723.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/98b95eee9d05369f21ebd311e25ac3c5b86da4e66807faee9885aaecaa71e723.pdf",
+      "file_id": "969318f305fd4fbdb3fea9094fb19105",
+      "file_name": "Physical+Security+PWS+FY26_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132337,
+      "sha256": "98b95eee9d05369f21ebd311e25ac3c5b86da4e66807faee9885aaecaa71e723"
+    }
+  ],
+  "_mirror_hash": "4056cb036a26e705fe6fff0143b2f64ea0c72b1ab39ac2fa6cdd24bec8167083",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.534893+00:00"
+}

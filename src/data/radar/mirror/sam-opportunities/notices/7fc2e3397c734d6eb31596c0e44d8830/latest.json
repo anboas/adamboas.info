@@ -1,0 +1,46 @@
+{
+  "id": "sam-7fc2e3397c734d6eb31596c0e44d8830",
+  "title": "BladeSetFanAircr_End_Item_F108_NSN_2840011966053PN_PN_301-291-942-0",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7fc2e3397c734d6eb31596c0e44d8830",
+  "opportunity_url": "https://sam.gov/opp/7fc2e3397c734d6eb31596c0e44d8830/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7fc2e3397c734d6eb31596c0e44d8830/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7fc2e3397c734d6eb31596c0e44d8830",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302600553",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7fc2e3397c734d6eb31596c0e44d8830",
+  "detail_text": "See Attached Document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cafa6aae250e42f5a899c071ecdbfcc8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cafa6aae250e42f5a899c071ecdbfcc8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4fbfecdb02dec2bd2dada90fcafd6c3bfbfb5b58f732e6c72b24b33f0654c820.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4fbfecdb02dec2bd2dada90fcafd6c3bfbfb5b58f732e6c72b24b33f0654c820.pdf",
+      "file_id": "cafa6aae250e42f5a899c071ecdbfcc8",
+      "file_name": "MRSSS_FD20302600553.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2777238,
+      "sha256": "4fbfecdb02dec2bd2dada90fcafd6c3bfbfb5b58f732e6c72b24b33f0654c820"
+    }
+  ],
+  "_mirror_hash": "41a8af83bb2f2af4a07ac830392b61c50dc5b00acd26ab44620e73a7d53f7bcc",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.564469+00:00"
+}

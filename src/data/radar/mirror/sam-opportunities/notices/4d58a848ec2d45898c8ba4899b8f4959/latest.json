@@ -1,0 +1,46 @@
+{
+  "id": "sam-4d58a848ec2d45898c8ba4899b8f4959",
+  "title": "Open-End Flooring USAG-HI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d58a848ec2d45898c8ba4899b8f4959",
+  "opportunity_url": "https://sam.gov/opp/4d58a848ec2d45898c8ba4899b8f4959/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4d58a848ec2d45898c8ba4899b8f4959/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4d58a848ec2d45898c8ba4899b8f4959",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912CN26BA00X",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.413TH CSB.0413 AQ HQ     RCO-HI",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d58a848ec2d45898c8ba4899b8f4959",
+  "detail_text": "The 413th Contracting Support Brigade is seeking qualified SBA Certified Women-Owned Small Business vendors regarding their ability for the following: Furnish all labor, equipment, materials, and all incidental related services to perform Replacement of Repair of Floor Covering and Carpeting of Miscellaneous Buildings in accordance with the technical provisions prepared by the Directorate of Public Works, U.S. Army Garrison, at various Army Installations on the Island of Oahu, Hawaii. The scope of work covered by this contract does not cover floor covering and or carpet work, which might arise as part of the contract to repair or renovate a building or group of buildings. The work covered by this contract does not include projects awarded by The U.S. Army Engineering District, Honolulu, or the Medical Facilities under Tripler (TAMC), to be designated during the contract period. This Sources Sought is for market research purposes only and does not constitute as a commitment. Responses to should concise and focused on the requested information. *Note: The Statement of Work is not finalized.",
+  "detail_text_length": 1105,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ca17c07e9a849518c22b3840cc47352/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ca17c07e9a849518c22b3840cc47352/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c0f28068f3e013b7fb9d3efabb25a9d26691abbf5f223e511beb29840a97519.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c0f28068f3e013b7fb9d3efabb25a9d26691abbf5f223e511beb29840a97519.docx",
+      "file_id": "3ca17c07e9a849518c22b3840cc47352",
+      "file_name": "6+-+01026+SUMMARY+OF+WORK.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36087,
+      "sha256": "7c0f28068f3e013b7fb9d3efabb25a9d26691abbf5f223e511beb29840a97519"
+    }
+  ],
+  "_mirror_hash": "0f59662be67b63467c0c6c8f65535b74c1011d70f3a672798942d0e319b69802",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.615133+00:00"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "sam-7aedc58bbc3446e1aa54ddd475802ccd",
+  "title": "Fort Riley Packing & Crating",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7aedc58bbc3446e1aa54ddd475802ccd",
+  "opportunity_url": "https://sam.gov/opp/7aedc58bbc3446e1aa54ddd475802ccd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7aedc58bbc3446e1aa54ddd475802ccd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7aedc58bbc3446e1aa54ddd475802ccd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W911RX-26-Q-A021",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT RILEY",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7aedc58bbc3446e1aa54ddd475802ccd",
+  "detail_text": "Mission and Installation Contracting Command (MICC)-Fort Riley has received a requirement to procure Direct Procurement Method (DPM) services for packaging, packing, tagging, inventorying, containerization, marking, loading, storing, unpacking, and inspecting of household goods, unaccompanied baggage and other authorized personal property as directed on a small business set-aside basis, provided two (2) or more qualified small businesses respond to this sources sought notice with information sufficient to support a set-aside. This notice is issued solely for information and planning purposes. It does not constitute a Request for Quote (RFQ)/Invitation for Bid (IFB)/Request for Proposal (RFP) or a promise to issue an RFQ, IFB or RFP in the future. This notice does not commit the U.S. Government to contract for any supply or service. Further, the U.S. Government is not seeking quotes, bids or proposals at this time and will not accept unsolicited proposals in response to this sources sought notice.",
+  "detail_text_length": 1011,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/231198f14a884675927994bed2a9f370/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3f2990eb7132432fb51396ae8149a4cc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ea3d0d34a4f44859e627e9c127621d8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf8dd23890ee4757b8b51aa97cdb7eb7/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/231198f14a884675927994bed2a9f370/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8934a5ca58265aff5ec3cbd0a08b5726cd48b05ad0c466e9446ae1b3a5a758ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8934a5ca58265aff5ec3cbd0a08b5726cd48b05ad0c466e9446ae1b3a5a758ca.pdf",
+      "file_id": "231198f14a884675927994bed2a9f370",
+      "file_name": "PWS_Addendum.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84476,
+      "sha256": "8934a5ca58265aff5ec3cbd0a08b5726cd48b05ad0c466e9446ae1b3a5a758ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3f2990eb7132432fb51396ae8149a4cc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8a19f6ebbe74a10d65648d8e6ba9cee314a152be7b3420f8486705c1e0589526.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8a19f6ebbe74a10d65648d8e6ba9cee314a152be7b3420f8486705c1e0589526.pdf",
+      "file_id": "3f2990eb7132432fb51396ae8149a4cc",
+      "file_name": "SOURCES+SOUGHT+NOTICE+Packing+Crating.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 203881,
+      "sha256": "8a19f6ebbe74a10d65648d8e6ba9cee314a152be7b3420f8486705c1e0589526"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ea3d0d34a4f44859e627e9c127621d8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ecda6344493790835c21c4e73a5e2f44359986d5cf6c8db1d3a4253047d06ac.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ecda6344493790835c21c4e73a5e2f44359986d5cf6c8db1d3a4253047d06ac.pdf",
+      "file_id": "6ea3d0d34a4f44859e627e9c127621d8",
+      "file_name": "PWS_Appendix+G.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1186434,
+      "sha256": "0ecda6344493790835c21c4e73a5e2f44359986d5cf6c8db1d3a4253047d06ac"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf8dd23890ee4757b8b51aa97cdb7eb7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7ddffd3d8f595199f802658827f6e35ae0a80eac3f7d6a51911045142cea4da1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7ddffd3d8f595199f802658827f6e35ae0a80eac3f7d6a51911045142cea4da1.pdf",
+      "file_id": "bf8dd23890ee4757b8b51aa97cdb7eb7",
+      "file_name": "PRS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 206182,
+      "sha256": "7ddffd3d8f595199f802658827f6e35ae0a80eac3f7d6a51911045142cea4da1"
+    }
+  ],
+  "_mirror_hash": "25f63079c67e054f84fa1fe909f068ea709aef9e23772bfccd97d603e245d03c",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.463321+00:00"
+}

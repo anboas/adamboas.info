@@ -1,31 +1,30 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-05T14:51:57.438645+00:00
+Generated: 2026-03-06T14:50:37.352439+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/05/2026
+Posted range: 01/01/2026 -> 03/06/2026
 
 ## Counts
-- Total candidates: 27
+- Total candidates: 26
 - Navy-related: 0
-- Full detail cached: 27
-- Notices with attachments: 20
-- Total attachment links: 28
+- Full detail cached: 26
+- Notices with attachments: 19
+- Total attachment links: 27
 - Pre-solicitation: 5
-- Sources Sought: 16
-- Special Notice: 6
+- Sources Sought: 14
+- Special Notice: 7
 
 ## Engagement signals
 - Pre-solicitation: 5
-- Sources Sought: 16
-- Special Notice: 6
+- Sources Sought: 14
+- Special Notice: 7
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-01-16 | DEPT OF DEFENSE | [Capacity as A Service (CaaS)](https://sam.gov/opp/4daa3f92dba84c58a453bcae9caea775/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-11 | 2026-02-18 | DEPT OF DEFENSE | [Virtual Financial Literacy Training](https://sam.gov/opp/e3545dc1ce3a4a7a917cb13d26ce071d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-17 | 2026-02-20 | DEPT OF DEFENSE | [Polaris Ranger Crew and Accessories](https://sam.gov/opp/660ec0fc3be7483ca290d2a0816ee516/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-11 | 2026-02-26 | DEPT OF DEFENSE | [Catholic Priest Services](https://sam.gov/opp/0046d8d0beaf40a28021ad7257e4de2b/view) |
 | 2 | Special Notice | Special Notice | 2026-02-18 | 2026-02-26 | DEPT OF DEFENSE | [Pega Term Licenses](https://sam.gov/opp/190e58391f8e4feb96ef476c03f74d9b/view) |
@@ -38,7 +37,6 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-20 | 2026-03-02 | DEPT OF DEFENSE | [Parachute Training Support Services](https://sam.gov/opp/e1f4707d72a84254b4f05722ef797cee/view) |
 | 2 | Special Notice | Special Notice | 2026-02-24 | 2026-03-03 | DEPT OF DEFENSE | [Notice of Intent to Sole Source Eclipse Software](https://sam.gov/opp/6e58d8f5bdf14168b7f1fe5906031606/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-04 | DEPT OF DEFENSE | [Wireless Receiver and Transmitter Bundle](https://sam.gov/opp/f41ec02d17544af8bb6d52c77d0fe498/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-04 | DEPT OF DEFENSE | [SEMPER DURUS 2026 SCENARIO SUPPORT](https://sam.gov/opp/23693ca0832d4ea8beba6012ba79d119/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-03-05 | DEPT OF DEFENSE | [Ferry Transportation Services](https://sam.gov/opp/951ff696a76448cbbcfda5251a044f95/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-06 | DEPT OF DEFENSE | [EV Charger and Deiseal Generator](https://sam.gov/opp/0fc8006da8564316a8ae77b0e4a4ef7e/view) |
 | 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [North Carolina Ports Authority Services](https://sam.gov/opp/ab822a3527f1475eb3437030286276df/view) |
@@ -46,6 +44,7 @@ Posted range: 01/01/2026 -> 03/05/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-09 | DEPT OF DEFENSE | [150-pound Amerex Wheeled Fire Extinguishers Testing and Maintenance](https://sam.gov/opp/ab78b5f298a241e4a10e126f585f7417/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-10 | DEPT OF DEFENSE | [Notice of Intent to Sole Source to WOSB for K9 System](https://sam.gov/opp/a5f2ab980911448791d95721fd573d16/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [DMO Personal Effects Storage](https://sam.gov/opp/755cec093c8648158439981c68ee2023/view) |
+| 2 | Special Notice | Special Notice | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [NOI -  Sole Source - Training Vouchers](https://sam.gov/opp/04012f50fa5642cdadfc8dfd1321fbce/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-18 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Human Performance (HPB) Branch (Synopsis)](https://sam.gov/opp/6f9e41a375e744b294d1e313bcd67f82/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-20 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Range and Training Area Management (RTAM)](https://sam.gov/opp/56806bd9cce54f9bb33b5f44d928cc5d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-20 | DEPT OF DEFENSE | [MCIEAST G-6 TSD GPON/DWDM MAINTENANCE SUPPORT SERVICES](https://sam.gov/opp/4e5719ee5d51416b9a863e44c0a4458e/view) |

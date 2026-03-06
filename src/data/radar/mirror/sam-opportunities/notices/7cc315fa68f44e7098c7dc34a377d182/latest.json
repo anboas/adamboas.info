@@ -1,0 +1,57 @@
+{
+  "id": "sam-7cc315fa68f44e7098c7dc34a377d182",
+  "title": "Baltimore VA Medical Center 3rd Floor Atrium Greenspace",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7cc315fa68f44e7098c7dc34a377d182",
+  "opportunity_url": "https://sam.gov/opp/7cc315fa68f44e7098c7dc34a377d182/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7cc315fa68f44e7098c7dc34a377d182/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7cc315fa68f44e7098c7dc34a377d182",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24526Q0346",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.245-NETWORK CONTRACT OFFICE 5 (36C245)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7cc315fa68f44e7098c7dc34a377d182",
+  "detail_text": "Installation of new artificial plants, trees and flowers for thrid floor atrium located at Baltimore VA Maryland Health Care System, VA Medical Center..",
+  "detail_text_length": 152,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/707b3de968b0424e82510c8a0265734e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edecc75bbece40a98833ee739fa41867/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/707b3de968b0424e82510c8a0265734e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/873f34c7adf143a39d55227e128647b37115acf6c4b32c9e0ee959920d580e39.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/873f34c7adf143a39d55227e128647b37115acf6c4b32c9e0ee959920d580e39.pdf",
+      "file_id": "707b3de968b0424e82510c8a0265734e",
+      "file_name": "SOW+-+BALTIMORE+VA+MEDICAL+CENTER+GREENSPACE+3RD+FLOOR.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 232446,
+      "sha256": "873f34c7adf143a39d55227e128647b37115acf6c4b32c9e0ee959920d580e39"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edecc75bbece40a98833ee739fa41867/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/069d0746bffa9fde47a0927aaa6ef758fc84ddd83e34726dac8866d57fb9dd29.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/069d0746bffa9fde47a0927aaa6ef758fc84ddd83e34726dac8866d57fb9dd29.pdf",
+      "file_id": "edecc75bbece40a98833ee739fa41867",
+      "file_name": "36C24526Q0346.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 161476,
+      "sha256": "069d0746bffa9fde47a0927aaa6ef758fc84ddd83e34726dac8866d57fb9dd29"
+    }
+  ],
+  "_mirror_hash": "e8f1264e62eeae764a42313fb9430d373c9b618c4789a49c9c5c0555d8badfac",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.561421+00:00"
+}

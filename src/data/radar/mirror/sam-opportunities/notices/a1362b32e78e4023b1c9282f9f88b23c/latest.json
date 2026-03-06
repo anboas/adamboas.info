@@ -1,0 +1,46 @@
+{
+  "id": "sam-a1362b32e78e4023b1c9282f9f88b23c",
+  "title": "Sonosite ultra sound and accessories",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1362b32e78e4023b1c9282f9f88b23c",
+  "opportunity_url": "https://sam.gov/opp/a1362b32e78e4023b1c9282f9f88b23c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a1362b32e78e4023b1c9282f9f88b23c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a1362b32e78e4023b1c9282f9f88b23c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1522591",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.PHOENIX AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1362b32e78e4023b1c9282f9f88b23c",
+  "detail_text": "1 each – L28354-Sonosite LX Ultrasound System 1 each – L23119- Transducer C5-1 1 each – L22916- Transducer L12-3",
+  "detail_text_length": 112,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abfedf94b8014f698182306ab9d87d64/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abfedf94b8014f698182306ab9d87d64/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ce194e53322c1e4f14a16532f879b6f0352a508377246cf8645d7803026e37dc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ce194e53322c1e4f14a16532f879b6f0352a508377246cf8645d7803026e37dc.pdf",
+      "file_id": "abfedf94b8014f698182306ab9d87d64",
+      "file_name": "Updated+ISBEE+FBO+Sources+Sought+FY25.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 253573,
+      "sha256": "ce194e53322c1e4f14a16532f879b6f0352a508377246cf8645d7803026e37dc"
+    }
+  ],
+  "_mirror_hash": "c285505dc354cf69fec1327796947321e76576f2bd1c2accb4643bf5a05c53bc",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.586458+00:00"
+}

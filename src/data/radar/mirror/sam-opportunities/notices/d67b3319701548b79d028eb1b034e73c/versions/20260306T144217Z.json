@@ -1,0 +1,69 @@
+{
+  "id": "sam-d67b3319701548b79d028eb1b034e73c",
+  "title": "MVHAHCS Ground Ambulance IDIQ RFQ Combined Pre-Solicitation Notice and Solicitation Notice",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d67b3319701548b79d028eb1b034e73c",
+  "opportunity_url": "https://sam.gov/opp/d67b3319701548b79d028eb1b034e73c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d67b3319701548b79d028eb1b034e73c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d67b3319701548b79d028eb1b034e73c",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C26326Q0088",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 23 (36C263)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d67b3319701548b79d028eb1b034e73c",
+  "detail_text": "Hello, this is the notice of the publication of the Minneapolis VA Health Care System Ground Ambulance Solicitation and Pre-Solcitation (Solicitation #: 36C26326Q0088). The question deadline is 03/13/2026, 17:00 Central Time. The offer deadline is 03/25/2026, 17:00 Central Time. Read all of the directions very carefully and make sure to follow them. Make sure to pay extra attention to the Addendum to Instructions to Offerors FAR 52.212-1 for offer submission instructions. Always utilize the most recent version of the solicitation posting on SAM.gov to avoid issues with out of date forms or information",
+  "detail_text_length": 608,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33cdbbe0501546c08e71b632299aed5d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b41c0b396b247309a7da907a0378314/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40e4beaf2e0d40929d7ddbad0f166141/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33cdbbe0501546c08e71b632299aed5d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ec12b0453837709225568a6a89eabfceae4fbd522db26f846bf17cedc16ac0ca.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ec12b0453837709225568a6a89eabfceae4fbd522db26f846bf17cedc16ac0ca.docx",
+      "file_id": "33cdbbe0501546c08e71b632299aed5d",
+      "file_name": "Pre-Solicitation+Notice+36C26326Q0088.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24119,
+      "sha256": "ec12b0453837709225568a6a89eabfceae4fbd522db26f846bf17cedc16ac0ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b41c0b396b247309a7da907a0378314/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c6d098e99ed2e88b3c12c8fdd145eddb7ce3d85a669b61530d29ddafada9577f.txt",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c6d098e99ed2e88b3c12c8fdd145eddb7ce3d85a669b61530d29ddafada9577f.txt",
+      "file_id": "3b41c0b396b247309a7da907a0378314",
+      "file_name": "S02+DOL+WD+2015-4945+R30+12032025.txt",
+      "content_type": "application/octet-stream",
+      "size_bytes": 47198,
+      "sha256": "c6d098e99ed2e88b3c12c8fdd145eddb7ce3d85a669b61530d29ddafada9577f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40e4beaf2e0d40929d7ddbad0f166141/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3a1845ba5fa16e23ce28caf8df68a0f75150b88755e56c55d9ab55e4c8b416e5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3a1845ba5fa16e23ce28caf8df68a0f75150b88755e56c55d9ab55e4c8b416e5.docx",
+      "file_id": "40e4beaf2e0d40929d7ddbad0f166141",
+      "file_name": "S02+Ground+Ambulance+MVAHCS+36C26326Q0088.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 329218,
+      "sha256": "3a1845ba5fa16e23ce28caf8df68a0f75150b88755e56c55d9ab55e4c8b416e5"
+    }
+  ],
+  "_mirror_hash": "551a4e6f82b8c398c243e6b6d27ec18d95b36ec1fd2db9a50e71dc193f4234dd",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.409717+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-c36980bfaf5c4a588eb2d897dfaca274",
+  "title": "Notice of Intent to Award - Sole Source",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c36980bfaf5c4a588eb2d897dfaca274",
+  "opportunity_url": "https://sam.gov/opp/c36980bfaf5c4a588eb2d897dfaca274/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c36980bfaf5c4a588eb2d897dfaca274/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c36980bfaf5c4a588eb2d897dfaca274",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.USDA, DEPARTMENTAL ADMINISTRATION.USDA, OCP-POD-ACQ-MGMT-BRANCH-FTC",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c36980bfaf5c4a588eb2d897dfaca274",
+  "detail_text": "There will be no written solicitation issued. This is an intent to pruchse a sole source procurement under the authority of FAR 6.302-1, titled \"Only one responsible source and no other supplies or services will satisfy agency requirements.\" This will be a Firm-Fixed Price contract utilizing Contracting by Negotiating procedures in FAR Part 15. The United States Department of Agriculture (USDA) is requiring Data and Voice support with telecommunication services. See attached Justification",
+  "detail_text_length": 493,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddd5105ccae24038a4de8a7e1c65fea0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddd5105ccae24038a4de8a7e1c65fea0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ee3d737cbb2396fdaa0253f6ea772eeb4fbca1b688829e357826645d69b77aa4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ee3d737cbb2396fdaa0253f6ea772eeb4fbca1b688829e357826645d69b77aa4.pdf",
+      "file_id": "ddd5105ccae24038a4de8a7e1c65fea0",
+      "file_name": "1F+-+FAR+6.103+J-A_USDA+Voice+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 321746,
+      "sha256": "ee3d737cbb2396fdaa0253f6ea772eeb4fbca1b688829e357826645d69b77aa4"
+    }
+  ],
+  "_mirror_hash": "fac52960edc038885bde4d064a82ad943b7219daa6fc4fbfa7b78ac0e1042f0e",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.439488+00:00"
+}

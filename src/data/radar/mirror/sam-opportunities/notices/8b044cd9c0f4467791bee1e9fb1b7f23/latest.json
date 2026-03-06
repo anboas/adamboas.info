@@ -1,0 +1,68 @@
+{
+  "id": "sam-8b044cd9c0f4467791bee1e9fb1b7f23",
+  "title": "PKA - USAF Band Production Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b044cd9c0f4467791bee1e9fb1b7f23",
+  "opportunity_url": "https://sam.gov/opp/8b044cd9c0f4467791bee1e9fb1b7f23/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8b044cd9c0f4467791bee1e9fb1b7f23/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8b044cd9c0f4467791bee1e9fb1b7f23",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA706026R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE DISTRICT OF WASHINGTON.FA7060 11TH CONTRACTING SQ PK",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b044cd9c0f4467791bee1e9fb1b7f23",
+  "detail_text": "The purpose of this sources sought is to conduct market research to determine if responsible sources exist as well as provide estimated market pricing. The proposed North American Industry Classification Systems (NAICS) is 541330 with a table size standard of $25.5M. The government will use the information gathered from this sources sought to determine the best acquisition strategy. The requirement is to obtain production services for the USAF Band IAW the attached Perfomance Work Statement (PWS).",
+  "detail_text_length": 502,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3aaedeab30684d238da06f7a87c66e7e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf8b99d8c42c41329625859becac7fca/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db449dee95674bf989ef2c5e734d8ca0/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3aaedeab30684d238da06f7a87c66e7e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e013ce473fa9db4dd4be8b311e89480faa9bd5d0b20413dc7580973017dc64b8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e013ce473fa9db4dd4be8b311e89480faa9bd5d0b20413dc7580973017dc64b8.pdf",
+      "file_id": "3aaedeab30684d238da06f7a87c66e7e",
+      "file_name": "SourcesSought+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 129980,
+      "sha256": "e013ce473fa9db4dd4be8b311e89480faa9bd5d0b20413dc7580973017dc64b8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf8b99d8c42c41329625859becac7fca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ac83ea258c6a71ec79f2880f310dfb5790010dfcb63b396dfee178fe6a7e357.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ac83ea258c6a71ec79f2880f310dfb5790010dfcb63b396dfee178fe6a7e357.pdf",
+      "file_id": "bf8b99d8c42c41329625859becac7fca",
+      "file_name": "2-+PWS+-+Production+BPA+Recompete.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 115292,
+      "sha256": "0ac83ea258c6a71ec79f2880f310dfb5790010dfcb63b396dfee178fe6a7e357"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db449dee95674bf989ef2c5e734d8ca0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20419c285e69d88337ae1513b1494d7b11c82394103612065c48728ce89ef67a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20419c285e69d88337ae1513b1494d7b11c82394103612065c48728ce89ef67a.xlsx",
+      "file_id": "db449dee95674bf989ef2c5e734d8ca0",
+      "file_name": "Price+List+-+Production+BPA+Recompete.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48128,
+      "sha256": "20419c285e69d88337ae1513b1494d7b11c82394103612065c48728ce89ef67a"
+    }
+  ],
+  "_mirror_hash": "b5fed978f16d3dac87e785199ffa234602a657865fa331af4082ab41e8abec14",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.584091+00:00"
+}

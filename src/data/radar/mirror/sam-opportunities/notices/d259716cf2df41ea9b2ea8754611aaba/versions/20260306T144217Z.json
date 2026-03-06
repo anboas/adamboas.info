@@ -1,0 +1,56 @@
+{
+  "id": "sam-d259716cf2df41ea9b2ea8754611aaba",
+  "title": "Advanced PPE Cleaning",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d259716cf2df41ea9b2ea8754611aaba",
+  "opportunity_url": "https://sam.gov/opp/d259716cf2df41ea9b2ea8754611aaba/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d259716cf2df41ea9b2ea8754611aaba/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d259716cf2df41ea9b2ea8754611aaba",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6883626QS027",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d259716cf2df41ea9b2ea8754611aaba",
+  "detail_text": "ADVANCED PPE CLEANING SEE PERFORMANCE WORK STATEMENT FOR SPECIFIC REQUIREMENTS. MUST BE ABLE TO PICK UP AND DROP OFF. MAILING OF ITEMS IS NOT PERMITTED.",
+  "detail_text_length": 152,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/218f6854d90f406fb246071f2f806bae/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbaecd4e513843ba9b2eca9bfe5e99c4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/218f6854d90f406fb246071f2f806bae/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e8fefa318281a84513552dbf6d561ec82e3599d2f1deaffdec7cd570d0d996ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e8fefa318281a84513552dbf6d561ec82e3599d2f1deaffdec7cd570d0d996ce.pdf",
+      "file_id": "218f6854d90f406fb246071f2f806bae",
+      "file_name": "1.21+WD+2015-5147+Rev+28.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 344618,
+      "sha256": "e8fefa318281a84513552dbf6d561ec82e3599d2f1deaffdec7cd570d0d996ce"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbaecd4e513843ba9b2eca9bfe5e99c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b185123d05bd0e54daa3e9211cedd381196319b15c1e07f93aa28bcf2df34f90.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b185123d05bd0e54daa3e9211cedd381196319b15c1e07f93aa28bcf2df34f90.docx",
+      "file_id": "cbaecd4e513843ba9b2eca9bfe5e99c4",
+      "file_name": "1.05+PWS+v2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40758,
+      "sha256": "b185123d05bd0e54daa3e9211cedd381196319b15c1e07f93aa28bcf2df34f90"
+    }
+  ],
+  "_mirror_hash": "01495492fb297ee23788076a8b48e0d59a5a15584cffcbde88c6e36f21b86743",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.261352+00:00"
+}

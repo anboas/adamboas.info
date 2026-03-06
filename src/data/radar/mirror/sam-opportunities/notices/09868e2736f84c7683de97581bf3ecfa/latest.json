@@ -1,0 +1,57 @@
+{
+  "id": "sam-09868e2736f84c7683de97581bf3ecfa",
+  "title": "PROJECT CM26036006",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=09868e2736f84c7683de97581bf3ecfa",
+  "opportunity_url": "https://sam.gov/opp/09868e2736f84c7683de97581bf3ecfa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/09868e2736f84c7683de97581bf3ecfa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "09868e2736f84c7683de97581bf3ecfa",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "1000223794",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=09868e2736f84c7683de97581bf3ecfa",
+  "detail_text": "NSN 4130-00-595-0135 FILTER ELEMENT, AIR The AMC/AMSC for the NSNs listed above is \"1 G\" Primary Point of Contact: Mindy M Cook, Contract Specialist AMC 1. Suitable for competitive acquisition for the second or subsequent time. AMSC G. The Government has rights to the technical data, the data package is complete, and there are no technical data, engineering, tooling or manufacturing restrictions. (This is the only AMSC that implies that parts are candidates for full and open competition. Other AMSCs such as K, M, N, Q, and S may imply limited competition when two or more independent sources exist yet the technical data package is inadequate for full and open competition.) AMCs 1 or 2 are valid. Purchased in accordance with: IAW BASIC SPEC NR MIL-PRF-16552F NOT 1 REVISION NR F DTD 01/22/2007 PART PIECE NUMBER: CLASS 1, SIZE 12AF IAW REFERENCE DRAWING NR 53711 S9074-AR-GIB-010/278 REVISION NR DTD 08/01/1995 PART PIECE NUMBER: IAW REFERENCE DRAWING NR 80064 S9074-AR-GIB-010/278 REVISION NR A DTD 02/14/2013 PART PIECE NUMBER: Please review the NSN listed above and provide any sources that may be able to manufacture this item. All information be submitted directly to the Contracting Officer listed above. This information must be provided by the response date indicated above. NOTE: This project contains Drawings/Specifications. Vendors may access the applicable drawings/specifications by querying SPE7MX26MR002 within the solicitation field at the following cfolders link: https://pcf1.bsm.dla.mil/cfolders. Drawings cannot be accessed through DIBBS at this time. This SOURCES SOUGHT notice is for informational and planning purposes only and shall not be construed as a solicitation or as an obligation or commitment by the Government. This notice is strictly for market research. This is NOT a solicitation for proposals, proposal abstracts, or quotations. The purpose of this notice is to be obtain information regarding the capability and availability of qualified businesses that are capable of executing this potential contract. The Government is not obligated and will not pay for any information received from potential sources as a result of this notice. Your response to the information requested will assist the Government in determining the appropriate acquisition method. Sources interested in providing an offer on the solicitation, should complete the attached market survey and return the completed copy to Mindy Cook via email at mindy.cook@dla.mil.",
+  "detail_text_length": 2483,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53abe27a64ed4aad9192b416702f25c3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e1843ebac5d486a92fb79333ac8e791/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53abe27a64ed4aad9192b416702f25c3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/de0862ca0aa4de75e73561681d99d543deb20eee1db496a459a586b17ad36072.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/de0862ca0aa4de75e73561681d99d543deb20eee1db496a459a586b17ad36072.xlsx",
+      "file_id": "53abe27a64ed4aad9192b416702f25c3",
+      "file_name": "CM26036006+Market+Research+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 190792,
+      "sha256": "de0862ca0aa4de75e73561681d99d543deb20eee1db496a459a586b17ad36072"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e1843ebac5d486a92fb79333ac8e791/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0715cb72d0e5065d284410cda203fcdc19b3ce8fbdccc21bf36bddf045d78969.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0715cb72d0e5065d284410cda203fcdc19b3ce8fbdccc21bf36bddf045d78969.docx",
+      "file_id": "9e1843ebac5d486a92fb79333ac8e791",
+      "file_name": "CM26036006+Market+Research+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56575,
+      "sha256": "0715cb72d0e5065d284410cda203fcdc19b3ce8fbdccc21bf36bddf045d78969"
+    }
+  ],
+  "_mirror_hash": "99d9812cb100a4db409ae6491dcd4e5fdf0ba252aface391652d7cc9203b84a0",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.595672+00:00"
+}

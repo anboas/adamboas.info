@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-03-05T19:21:39.376056+00:00
+Generated: 2026-03-06T14:41:30.912918+00:00
 
 - Total: 19
 - OK: 11
@@ -11,8 +11,8 @@ Generated: 2026-03-05T19:21:39.376056+00:00
 |---|---|---:|:---:|---:|---:|---|---|
 | SAM.gov Opportunities API | official_api | 404 | no | 0 | 0 | https://api.sam.gov/opportunities/v2/search | HTTP 404 |
 | NAVSEA / NSWC source set | official_pages | 403 | no | 0 | 0 | https://www.navsea.navy.mil/Home/Warfare-Centers/ | HTTP 403 |
-| AUSA Meetings & Events | official_calendar | 200 | no | 52 | 91 | https://www.ausa.org/meet |  |
-| AFCEA Events | official_calendar | 200 | no | 21 | 264 | https://www.afcea.org/events |  |
+| AUSA Meetings & Events | official_calendar | 200 | no | 43 | 92 | https://www.ausa.org/meet |  |
+| AFCEA Events | official_calendar | 200 | no | 21 | 263 | https://www.afcea.org/events |  |
 | AFA Events | official_calendar | 200 | no | 27 | 35 | https://www.afa.org/events/ |  |
 | Navy League Meetings & Events | official_calendar | 200 | no | 6 | 33 | https://www.navyleague.org/meetings-and-events/ |  |
 | CTO Innovation Industry Outreach Calendar | official_calendar | 200 | no | 0 | 29 | https://www.ctoinnovation.mil/events/ |  |

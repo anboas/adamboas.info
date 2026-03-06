@@ -1,0 +1,47 @@
+{
+  "id": "sam-26d4b84b8f614890b569ed260c4fd744",
+  "title": "Contracting and Acquisition Support Services (CASS) - Preaward Notification to Small Business Programs",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=26d4b84b8f614890b569ed260c4fd744",
+  "opportunity_url": "https://sam.gov/opp/26d4b84b8f614890b569ed260c4fd744/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/26d4b84b8f614890b569ed260c4fd744/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "26d4b84b8f614890b569ed260c4fd744",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DHA ENTERPRISE MED SUPPORT EMS-CD",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Vendor engagement keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=26d4b84b8f614890b569ed260c4fd744",
+  "detail_text": "Contracting and Acquisition Support Services (CASS) - Preaward Notification to Small Business Programs. See attached.",
+  "detail_text_length": 117,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d1f420279214df69f98ca214a58ae39/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d1f420279214df69f98ca214a58ae39/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/794328abfd307849862e3999a060075913c4e7ed996041ff9b8fcdecac6aa2ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/794328abfd307849862e3999a060075913c4e7ed996041ff9b8fcdecac6aa2ca.pdf",
+      "file_id": "2d1f420279214df69f98ca214a58ae39",
+      "file_name": "MFR+-+CASS+Preaward+Notification+to+Small+Business+Programs+Special+Notice+CO+Signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 263573,
+      "sha256": "794328abfd307849862e3999a060075913c4e7ed996041ff9b8fcdecac6aa2ca"
+    }
+  ],
+  "_mirror_hash": "142c2fe4982d315c851b56d20dad7a0c109279723c4a4569c664bb479d892763",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.407007+00:00"
+}

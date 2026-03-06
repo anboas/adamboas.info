@@ -1,0 +1,57 @@
+{
+  "id": "sam-e10704b89f634aa9b44cb465982a8a0a",
+  "title": "FY26 NASA OIG IMPACT Conference",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e10704b89f634aa9b44cb465982a8a0a",
+  "opportunity_url": "https://sam.gov/opp/e10704b89f634aa9b44cb465982a8a0a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e10704b89f634aa9b44cb465982a8a0a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e10704b89f634aa9b44cb465982a8a0a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26926192Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e10704b89f634aa9b44cb465982a8a0a",
+  "detail_text": "Please see the attached documents for details.",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c467530d3df4ad59c059c631088adfc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e04a0e75a673412283128894aef57c1a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c467530d3df4ad59c059c631088adfc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3e20da675d076e75ae5ceb391a3e1baaf30580e31ff6fb5e229637228cf6c34e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3e20da675d076e75ae5ceb391a3e1baaf30580e31ff6fb5e229637228cf6c34e.pdf",
+      "file_id": "4c467530d3df4ad59c059c631088adfc",
+      "file_name": "SATPC0040470+Tab+07+Capability+Statement+FBO+Posting.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 113385,
+      "sha256": "3e20da675d076e75ae5ceb391a3e1baaf30580e31ff6fb5e229637228cf6c34e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e04a0e75a673412283128894aef57c1a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1fd0d740ade5fffcf306aa1294669104e0b54eed9482770e3cc5f34d54c6111a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1fd0d740ade5fffcf306aa1294669104e0b54eed9482770e3cc5f34d54c6111a.pdf",
+      "file_id": "e04a0e75a673412283128894aef57c1a",
+      "file_name": "SATPC0040470+Tab+04+4+SOW_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 211673,
+      "sha256": "1fd0d740ade5fffcf306aa1294669104e0b54eed9482770e3cc5f34d54c6111a"
+    }
+  ],
+  "_mirror_hash": "59da2b0bca93bf83043082ee1fb48128d37b2ea83dd85d9d15ed1f75de107eba",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.486006+00:00"
+}

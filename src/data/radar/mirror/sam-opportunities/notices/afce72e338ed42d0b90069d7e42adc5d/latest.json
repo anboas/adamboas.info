@@ -1,0 +1,46 @@
+{
+  "id": "sam-afce72e338ed42d0b90069d7e42adc5d",
+  "title": "N063--Top Door Alarm Recertification",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=afce72e338ed42d0b90069d7e42adc5d",
+  "opportunity_url": "https://sam.gov/opp/afce72e338ed42d0b90069d7e42adc5d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/afce72e338ed42d0b90069d7e42adc5d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "afce72e338ed42d0b90069d7e42adc5d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24226Q0400",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.242-NETWORK CONTRACT OFFICE 02 (36C242)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=afce72e338ed42d0b90069d7e42adc5d",
+  "detail_text": "This is a Sources Sought Notice. PLEASE SEE THE ATTACHED PDF FOR MORE IMFORMATION. Contractors that are able to meet the requirements in the attachment are encouraged to email a capability statement and full information to jamie.boyar@va.gov by Friday, March 13, 2026 by 3:30PM EST.",
+  "detail_text_length": 282,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0164410cecb24cdbb93950eb7e65a6e7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0164410cecb24cdbb93950eb7e65a6e7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3393844174170deeade821ad6f0349c95b3a89ea5c35b817ba8f9c84ac8b31ee.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3393844174170deeade821ad6f0349c95b3a89ea5c35b817ba8f9c84ac8b31ee.pdf",
+      "file_id": "0164410cecb24cdbb93950eb7e65a6e7",
+      "file_name": "Sources+Sought+Notice+-+36C24226Q0400+-+Alarm+Recertification+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 228331,
+      "sha256": "3393844174170deeade821ad6f0349c95b3a89ea5c35b817ba8f9c84ac8b31ee"
+    }
+  ],
+  "_mirror_hash": "e6282fd8993c7671b5f88610f703b4da6377ac78e79c4ec6c000c5950184b173",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.579638+00:00"
+}

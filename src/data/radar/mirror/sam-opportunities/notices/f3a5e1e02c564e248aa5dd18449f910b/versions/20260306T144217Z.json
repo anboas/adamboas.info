@@ -1,0 +1,48 @@
+{
+  "id": "sam-f3a5e1e02c564e248aa5dd18449f910b",
+  "title": "Request for Information - 70SBUR26I00000010 -Digital Immigration Document Solution - Office of Intake and Document Production",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f3a5e1e02c564e248aa5dd18449f910b",
+  "opportunity_url": "https://sam.gov/opp/f3a5e1e02c564e248aa5dd18449f910b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f3a5e1e02c564e248aa5dd18449f910b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f3a5e1e02c564e248aa5dd18449f910b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "70SBUR26I00000010",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US CITIZENSHIP AND IMMIGRATION SERVICES.USCIS CONTRACTING OFFICE(ERBUR)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f3a5e1e02c564e248aa5dd18449f910b",
+  "detail_text": "The U.S. Citizenship and Immigration Services (USCIS), Office of Intake and Document Production (OIDP), is conducting market research to identify industry capabilities, best practices, and innovative approaches to support the issuance of Secure Digital Credentials to serve as digital analogues to existing physical immigration credentials. Digital Credentials will be issued in parallel to the physical credentials and will not be replacing the physical credentials. This Request for Information (RFI) is issued for information and planning purposes only in accordance with Federal Acquisition Regulation (FAR) Part 10. This RFI does not constitute a solicitation and will not directly result in the award of a contract. Responses to this RFI are strictly voluntary and will be used by USCIS to refine requirements, assess acquisition options, and inform a potential future solicitation. USCIS is intentionally not prescribing a single technical standard or credential model at this time. USCIS is particularly interested in understanding the tradeoffs between using mDL-style mobile identity approaches and more general-purpose verifiable credential frameworks (e.g., W3C VC/DID) as the core credential model, including hybrid approaches. While the Agency is interested in solutions aligned with mobile identity and mobile driver’s license (mDL) standards, it also seeks information on other standards-based digital credential approaches (e.g., W3C Verifiable Credentials and Decentralized Identifiers, or equivalent), including their relative maturity, interoperability, and suitability for immigration use cases.",
+  "detail_text_length": 1616,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5eda679d168e4498a7a497083cca40a6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5eda679d168e4498a7a497083cca40a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c1fc84866551290b9ddaa1810a5b7efbf8f7e3d0bb95809e42555026fc9cc45a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c1fc84866551290b9ddaa1810a5b7efbf8f7e3d0bb95809e42555026fc9cc45a.pdf",
+      "file_id": "5eda679d168e4498a7a497083cca40a6",
+      "file_name": "1_2_1_Request+For+Information_Digital+Credential_OIDP_20260305.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 240434,
+      "sha256": "c1fc84866551290b9ddaa1810a5b7efbf8f7e3d0bb95809e42555026fc9cc45a"
+    }
+  ],
+  "_mirror_hash": "56084abe7b94de35af991bf08f9487dce923118ab9c4c1fb5e3c954ea6750e5f",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.361131+00:00"
+}

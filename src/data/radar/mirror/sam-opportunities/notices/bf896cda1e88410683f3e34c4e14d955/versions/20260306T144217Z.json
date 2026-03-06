@@ -1,0 +1,57 @@
+{
+  "id": "sam-bf896cda1e88410683f3e34c4e14d955",
+  "title": "HCHV Contracted Emergency Residential Services - SFVAHCS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf896cda1e88410683f3e34c4e14d955",
+  "opportunity_url": "https://sam.gov/opp/bf896cda1e88410683f3e34c4e14d955/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bf896cda1e88410683f3e34c4e14d955/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bf896cda1e88410683f3e34c4e14d955",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26126Q0424",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf896cda1e88410683f3e34c4e14d955",
+  "detail_text": "See Performance Work Statement",
+  "detail_text_length": 30,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4eaffa5723848fd8568f0655361f4d5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1639d4cf5e64001943c385d75425804/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4eaffa5723848fd8568f0655361f4d5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/116766af0ed94911e28c95f88d570bdfede0ff4816ae2c7bdf34166734e9b5e8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/116766af0ed94911e28c95f88d570bdfede0ff4816ae2c7bdf34166734e9b5e8.pdf",
+      "file_id": "a4eaffa5723848fd8568f0655361f4d5",
+      "file_name": "Sources+Sought+Notice+36C26126Q0424.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 246577,
+      "sha256": "116766af0ed94911e28c95f88d570bdfede0ff4816ae2c7bdf34166734e9b5e8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1639d4cf5e64001943c385d75425804/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/624d1c08ed80b2f8b330836dd6371604cad10e01b6746a705cb26a1d1a1bd7e0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/624d1c08ed80b2f8b330836dd6371604cad10e01b6746a705cb26a1d1a1bd7e0.docx",
+      "file_id": "b1639d4cf5e64001943c385d75425804",
+      "file_name": "REVISED+Performance+Work+Statement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 81502,
+      "sha256": "624d1c08ed80b2f8b330836dd6371604cad10e01b6746a705cb26a1d1a1bd7e0"
+    }
+  ],
+  "_mirror_hash": "998f2d5db4b75355426dbfef64a22a3ef6eb3c3b082151a3381d57fdb63fb438",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.570946+00:00"
+}

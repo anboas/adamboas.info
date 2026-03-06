@@ -1,0 +1,46 @@
+{
+  "id": "sam-4d3940cad01b48b4b132f57b1f6c8bad",
+  "title": "6515--VENTILATORS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d3940cad01b48b4b132f57b1f6c8bad",
+  "opportunity_url": "https://sam.gov/opp/4d3940cad01b48b4b132f57b1f6c8bad/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4d3940cad01b48b4b132f57b1f6c8bad/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4d3940cad01b48b4b132f57b1f6c8bad",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0460",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d3940cad01b48b4b132f57b1f6c8bad",
+  "detail_text": "See attached Sources Sought Notice",
+  "detail_text_length": 34,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e3ee9888fa3460ca0001ab6b0720bd6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e3ee9888fa3460ca0001ab6b0720bd6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b5cf964e3e08e498255b87446c748f439b0bc9468d2f4c53ca4de40ec5305ed0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b5cf964e3e08e498255b87446c748f439b0bc9468d2f4c53ca4de40ec5305ed0.pdf",
+      "file_id": "7e3ee9888fa3460ca0001ab6b0720bd6",
+      "file_name": "RFI_36C26226Q0460+VENTILATORS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 305111,
+      "sha256": "b5cf964e3e08e498255b87446c748f439b0bc9468d2f4c53ca4de40ec5305ed0"
+    }
+  ],
+  "_mirror_hash": "5f75bacb65985f2b4f0ba66b0bfb631e38d9264acef8d5b25db5c72732f22e23",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.481570+00:00"
+}

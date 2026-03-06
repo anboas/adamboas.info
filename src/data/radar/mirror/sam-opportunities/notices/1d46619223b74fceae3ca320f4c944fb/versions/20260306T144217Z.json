@@ -1,0 +1,46 @@
+{
+  "id": "sam-1d46619223b74fceae3ca320f4c944fb",
+  "title": "Dock-Side (DS): CGC ESCANABA AA FY27",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d46619223b74fceae3ca320f4c944fb",
+  "opportunity_url": "https://sam.gov/opp/1d46619223b74fceae3ca320f4c944fb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1d46619223b74fceae3ca320f4c944fb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1d46619223b74fceae3ca320f4c944fb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70Z08026SMECPESCANABA",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 1(00080)",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d46619223b74fceae3ca320f4c944fb",
+  "detail_text": "CGC ESCANABA AA POC: CAROLINE GREER, CAROLINE.C.GREER@USCG.MIL",
+  "detail_text_length": 62,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37c718e6c8d34c6cb2ad908f65b8b007/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37c718e6c8d34c6cb2ad908f65b8b007/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/605c1b5e06843f76b294e307533ed172afb2c8137df483fa32a653faa5ba459c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/605c1b5e06843f76b294e307533ed172afb2c8137df483fa32a653faa5ba459c.pdf",
+      "file_id": "37c718e6c8d34c6cb2ad908f65b8b007",
+      "file_name": "Sources+Sought+Template_ESCANABA_updated.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 121396,
+      "sha256": "605c1b5e06843f76b294e307533ed172afb2c8137df483fa32a653faa5ba459c"
+    }
+  ],
+  "_mirror_hash": "325eb61eccb2349f80e00d35a2d337275d077a129ca8cb61380e9e1bcb2db8cb",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.484278+00:00"
+}

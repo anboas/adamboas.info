@@ -1,0 +1,68 @@
+{
+  "id": "sam-70e5f08fa5f2412195ef1f9d8c36a6bf",
+  "title": "A&E Services NSWCDD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70e5f08fa5f2412195ef1f9d8c36a6bf",
+  "opportunity_url": "https://sam.gov/opp/70e5f08fa5f2412195ef1f9d8c36a6bf/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/70e5f08fa5f2412195ef1f9d8c36a6bf/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "70e5f08fa5f2412195ef1f9d8c36a6bf",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0017826R3105",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-04-05",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70e5f08fa5f2412195ef1f9d8c36a6bf",
+  "detail_text": "This acquisition will provide Architectural and Engineering (A&E) services in support of facility repairs and renovations for facilities located at the Naval Surface Warfare Center, Dahlgren Division (NSWCDD), Dahlgren, VA, Wallops Island, VA, the Naval Observatory, Washington, D.C., and the Pumpkin Neck Annex Experimental Explosives Area in King George, VA. Operation and execution are primarily focused on repairing, upgrading, and architectural design and structural construction in accordance with and not exceeding Category I of the Naval Facilities Engineering Command (NAVFAC) Engineering & Construction Bulletin Issue No.2006-04. All such support shall be accomplished in strict accordance with all applicable Navy and local instructions, processes, and procedures. The A&E requirements will be identified in individual Task Orders.",
+  "detail_text_length": 842,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/103248c582754a619fc43a07880f5fae/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a7719cdc5b74eff8cc5f2f04c33db89/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d8343ca49be404f9ff4b8d54eef3d40/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/103248c582754a619fc43a07880f5fae/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146.pdf",
+      "file_id": "103248c582754a619fc43a07880f5fae",
+      "file_name": "SF330-21a.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1073371,
+      "sha256": "18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a7719cdc5b74eff8cc5f2f04c33db89/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2ef2a419ffc1402e35aa3bf2ac4867884ce5856cb91938e27e1e76cad818f3d4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2ef2a419ffc1402e35aa3bf2ac4867884ce5856cb91938e27e1e76cad818f3d4.pdf",
+      "file_id": "5a7719cdc5b74eff8cc5f2f04c33db89",
+      "file_name": "N0017826R3105+Synopsis+3-5-26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 791938,
+      "sha256": "2ef2a419ffc1402e35aa3bf2ac4867884ce5856cb91938e27e1e76cad818f3d4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d8343ca49be404f9ff4b8d54eef3d40/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3dbe29d9a3db96b67850202e3214cd32217ce6d67aa099c9349f9a8645652f18.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3dbe29d9a3db96b67850202e3214cd32217ce6d67aa099c9349f9a8645652f18.pdf",
+      "file_id": "9d8343ca49be404f9ff4b8d54eef3d40",
+      "file_name": "Element+B+-+PWS+-+AE+Services+IDIQ+Follow-On+3-5-2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 303979,
+      "sha256": "3dbe29d9a3db96b67850202e3214cd32217ce6d67aa099c9349f9a8645652f18"
+    }
+  ],
+  "_mirror_hash": "8030f339b0f563e7b188e362f653ba429afd94dd6cb1c962f5207806581d8ff7",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.195856+00:00"
+}

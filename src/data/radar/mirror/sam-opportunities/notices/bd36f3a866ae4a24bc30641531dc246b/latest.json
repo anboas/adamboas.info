@@ -1,0 +1,123 @@
+{
+  "id": "sam-bd36f3a866ae4a24bc30641531dc246b",
+  "title": "Federated Search",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd36f3a866ae4a24bc30641531dc246b",
+  "opportunity_url": "https://sam.gov/opp/bd36f3a866ae4a24bc30641531dc246b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bd36f3a866ae4a24bc30641531dc246b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bd36f3a866ae4a24bc30641531dc246b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ATF_OM_AMD_RFI_FEDERATED_SEARCH",
+  "agency_path": "JUSTICE, DEPARTMENT OF.ATF ACQUISITION AND PROPERTY MGMT DIV.ATF",
+  "posted_date": "2026-03-05",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd36f3a866ae4a24bc30641531dc246b",
+  "detail_text": "PLEASE SEE RFI's ATTACHMENTS. RESPOND TO REQUESTS and QUESTIONS IN ATTACHMENT (ATF Federated Search Request For Information (RFI)) THIS REQUEST FOR INFORMATION (RFI) IS FOR PLANNING PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL (RFP) OR QUOTE (RFQ). IT DOES NOT CONSTITUTE SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS RFI. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY. NOT RESPONDING TO THIS RFI DOES NOT PRECLUDE PARTICIPATION IN ANY FUTURE RFP, IF ISSUED. ALL SUBMISSIONS BECOME GOVERNMENT PROPERTY AND WILL NOT BE RETURNED.",
+  "detail_text_length": 727,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26b6600852bf4113a6a9f297c06318d7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/278b13c1faf8406985fab0f7996167f8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/392a4dbb156743dc9d144df317ec334e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/58431acaf2284f6e9f1569a9a1abb302/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5fbb5fc1b1ab4d6daf329fbcef396f33/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9411f6305204eebb727b2ceef25da34/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7f102104a8844eeaf263da7150e6439/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f80ca4a83f25473c9ef6908b0a1b093b/download"
+  ],
+  "resource_count": 8,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26b6600852bf4113a6a9f297c06318d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc6f4a9ac514d0f04504c9a081dd8a226d728fb8b6aa5d024a8c99da65c6edb9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc6f4a9ac514d0f04504c9a081dd8a226d728fb8b6aa5d024a8c99da65c6edb9.docx",
+      "file_id": "26b6600852bf4113a6a9f297c06318d7",
+      "file_name": "9+-+ATF+-+Attachment+2+-+ATF+Enterprise+Standard+Technologies+-+June2023.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23331,
+      "sha256": "dc6f4a9ac514d0f04504c9a081dd8a226d728fb8b6aa5d024a8c99da65c6edb9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/278b13c1faf8406985fab0f7996167f8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7fbd72a4f256119b4956596fa1f41a6c82d9f7c36a0bc6899e3480108e9176fd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7fbd72a4f256119b4956596fa1f41a6c82d9f7c36a0bc6899e3480108e9176fd.docx",
+      "file_id": "278b13c1faf8406985fab0f7996167f8",
+      "file_name": "Definition+of+Done+User+Story+Checklist+rev.1.1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84057,
+      "sha256": "7fbd72a4f256119b4956596fa1f41a6c82d9f7c36a0bc6899e3480108e9176fd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/392a4dbb156743dc9d144df317ec334e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/235de119d4241fcdfaefa3df430adba46efda0925e6ae31801e0669548110621.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/235de119d4241fcdfaefa3df430adba46efda0925e6ae31801e0669548110621.pdf",
+      "file_id": "392a4dbb156743dc9d144df317ec334e",
+      "file_name": "ATF+Data+Governance+Policy.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 608116,
+      "sha256": "235de119d4241fcdfaefa3df430adba46efda0925e6ae31801e0669548110621"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/58431acaf2284f6e9f1569a9a1abb302/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03651b01ebff750e747d724328c2114e45a1570d843c063773bd42ef67190c26.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03651b01ebff750e747d724328c2114e45a1570d843c063773bd42ef67190c26.pdf",
+      "file_id": "58431acaf2284f6e9f1569a9a1abb302",
+      "file_name": "Style+Guide_+Final+Version.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4637196,
+      "sha256": "03651b01ebff750e747d724328c2114e45a1570d843c063773bd42ef67190c26"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5fbb5fc1b1ab4d6daf329fbcef396f33/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ffe4b074b28fcbc6b74dfcbba47aef3a076592926d672cad3bb9cb8a1c341455.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ffe4b074b28fcbc6b74dfcbba47aef3a076592926d672cad3bb9cb8a1c341455.docx",
+      "file_id": "5fbb5fc1b1ab4d6daf329fbcef396f33",
+      "file_name": "Federated+Search+PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 188178,
+      "sha256": "ffe4b074b28fcbc6b74dfcbba47aef3a076592926d672cad3bb9cb8a1c341455"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9411f6305204eebb727b2ceef25da34/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4b1d4a00ea474a84c67c28a704341f6452ceef6e69fff35a3feeded74d7c1d42.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4b1d4a00ea474a84c67c28a704341f6452ceef6e69fff35a3feeded74d7c1d42.docx",
+      "file_id": "a9411f6305204eebb727b2ceef25da34",
+      "file_name": "ATF+Federated+Search+Request+For+Information+-RFI-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 116371,
+      "sha256": "4b1d4a00ea474a84c67c28a704341f6452ceef6e69fff35a3feeded74d7c1d42"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7f102104a8844eeaf263da7150e6439/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/906ae5b241c38e58b0aba06e9b79793eff2770dc769630d6112260a3a7e60bac.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/906ae5b241c38e58b0aba06e9b79793eff2770dc769630d6112260a3a7e60bac.docx",
+      "file_id": "c7f102104a8844eeaf263da7150e6439",
+      "file_name": "ATF+DG+Handbook+-+Version+4.2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 311313,
+      "sha256": "906ae5b241c38e58b0aba06e9b79793eff2770dc769630d6112260a3a7e60bac"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f80ca4a83f25473c9ef6908b0a1b093b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/384b586497cc4940e8b5b31fb3e830bdb8411f0744e5958ae4cd384639839e11.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/384b586497cc4940e8b5b31fb3e830bdb8411f0744e5958ae4cd384639839e11.pdf",
+      "file_id": "f80ca4a83f25473c9ef6908b0a1b093b",
+      "file_name": "ATF+Agile+Playbook.pdf-search-agile+playbook.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2399720,
+      "sha256": "384b586497cc4940e8b5b31fb3e830bdb8411f0744e5958ae4cd384639839e11"
+    }
+  ],
+  "_mirror_hash": "fd1706975e93ebc69ed4e04555f9c697bd662f48ce2c36f4bcbb86804c5ea38a",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.705844+00:00"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "sam-d5af71d24a5541219c1e4d3bc7a6fc22",
+  "title": "NONSKID DECK COVERING ON FLIGHT DECK; REPLACE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5af71d24a5541219c1e4d3bc7a6fc22",
+  "opportunity_url": "https://sam.gov/opp/d5af71d24a5541219c1e4d3bc7a6fc22/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d5af71d24a5541219c1e4d3bc7a6fc22/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d5af71d24a5541219c1e4d3bc7a6fc22",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926R0035",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5af71d24a5541219c1e4d3bc7a6fc22",
+  "detail_text": "USS RUSHMORE (LSD-47) NONSKID DECK COVERING ON FLIGHT DECK; REPLACE Pursuant to FAR 5.202(a) (12), this is a non-mandatory synopsis. This solicitation is intended only for sources duly authorized to operate and do business in Japan as prescribed by DFARS 225.1103(3).",
+  "detail_text_length": 267,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/730c3c90282e40c0b807e6d2755ce0dc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9f8b3e21a854f23b593e5ac15112d63/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c14a0c65225648249137259f00931acc/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/730c3c90282e40c0b807e6d2755ce0dc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/41396c873baa43ea392c921bb63a740e14d086ca26db8eced8673f4a46dad7f7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/41396c873baa43ea392c921bb63a740e14d086ca26db8eced8673f4a46dad7f7.pdf",
+      "file_id": "730c3c90282e40c0b807e6d2755ce0dc",
+      "file_name": "Solicitation+-+N6264926R0035.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2413949,
+      "sha256": "41396c873baa43ea392c921bb63a740e14d086ca26db8eced8673f4a46dad7f7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9f8b3e21a854f23b593e5ac15112d63/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/43bc61f743fc8a1ae4d23fb91448cab3867a45c0a92576c138aa1f67b46c3fa7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/43bc61f743fc8a1ae4d23fb91448cab3867a45c0a92576c138aa1f67b46c3fa7.pdf",
+      "file_id": "b9f8b3e21a854f23b593e5ac15112d63",
+      "file_name": "Solicitation+Amendment+N6264926R00350001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 539273,
+      "sha256": "43bc61f743fc8a1ae4d23fb91448cab3867a45c0a92576c138aa1f67b46c3fa7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c14a0c65225648249137259f00931acc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7672584935ff1ca47689677c466b546e2f0bf6b4d6f9a8af19a0924b08722442.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7672584935ff1ca47689677c466b546e2f0bf6b4d6f9a8af19a0924b08722442.pdf",
+      "file_id": "c14a0c65225648249137259f00931acc",
+      "file_name": "1.+38E9313902_00_A01.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1901404,
+      "sha256": "7672584935ff1ca47689677c466b546e2f0bf6b4d6f9a8af19a0924b08722442"
+    }
+  ],
+  "_mirror_hash": "efb36fdfa47e621c3ce2f3f7f7f038ab054962889bdc3608d2f231a02adf72be",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.327324+00:00"
+}

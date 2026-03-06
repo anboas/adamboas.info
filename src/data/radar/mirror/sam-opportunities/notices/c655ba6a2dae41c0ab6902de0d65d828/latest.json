@@ -1,0 +1,45 @@
+{
+  "id": "sam-c655ba6a2dae41c0ab6902de0d65d828",
+  "title": "Exhaust Gaskets and Hardware",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c655ba6a2dae41c0ab6902de0d65d828",
+  "opportunity_url": "https://sam.gov/opp/c655ba6a2dae41c0ab6902de0d65d828/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c655ba6a2dae41c0ab6902de0d65d828/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c655ba6a2dae41c0ab6902de0d65d828",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6883626QS038",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c655ba6a2dae41c0ab6902de0d65d828",
+  "detail_text": "Request for quote N6883626QS038. See attached RFQ for further instructions.",
+  "detail_text_length": 75,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/044d9a16085f4db88e1718d8fd3613ab/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/044d9a16085f4db88e1718d8fd3613ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8da6c75a3a676f0949309f03e2f7b3bf8f45e82e58ae2373bbf26467289ff5bd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8da6c75a3a676f0949309f03e2f7b3bf8f45e82e58ae2373bbf26467289ff5bd.pdf",
+      "file_id": "044d9a16085f4db88e1718d8fd3613ab",
+      "file_name": "2.01_N6883626QS038.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1975726,
+      "sha256": "8da6c75a3a676f0949309f03e2f7b3bf8f45e82e58ae2373bbf26467289ff5bd"
+    }
+  ],
+  "_mirror_hash": "12fb65dff591078f356213ce035ca744ba039fc9a5a3966b7bcd1f55565a7f47",
+  "_mirror_run_id": "20260306T144217Z",
+  "_mirror_recorded_at": "2026-03-06T14:49:59.279770+00:00"
+}
