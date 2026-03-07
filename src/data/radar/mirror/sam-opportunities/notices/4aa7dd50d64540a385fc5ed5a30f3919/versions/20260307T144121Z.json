@@ -1,0 +1,47 @@
+{
+  "id": "sam-4aa7dd50d64540a385fc5ed5a30f3919",
+  "title": "Laundry Services PHNSY&IMF",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4aa7dd50d64540a385fc5ed5a30f3919",
+  "opportunity_url": "https://sam.gov/opp/4aa7dd50d64540a385fc5ed5a30f3919/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4aa7dd50d64540a385fc5ed5a30f3919/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4aa7dd50d64540a385fc5ed5a30f3919",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "25-960-0006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PEARL HARBOR NAVAL SHIPYARD IMF",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4aa7dd50d64540a385fc5ed5a30f3919",
+  "detail_text": "THIS IS A PRE-SOLICITATION NOTICE. THIS IS NOT A SOLICITATION. This Pre-solicitation Notice is issued solely for informational and planning purposes. The Pearl Harbor Naval Shipyard and Intermediate Maintenance Facility (PHNSY & IMF) intends to solicit a requirement for laundry services in accordance with the attached DRAFT Performance Work Statement for a base year and four (4) one-year option periods with an additional 6-month option period, through a total small business set-aside. A sources sought notice was posted on the Government Point of Entry, SAM.gov IAW RFO 5.204, from 12 FEB 2026 - 13 FEB 2026 to determine whether other sources could satisfy this requirement. The Government received responses indicating there are vendors capable of performing the requirement. This pre-solicitation does not constitute a request for proposals. Submission of any information in response to this notification is purely voluntary and the Government does not assume financial responsibility for any costs incurred. The planned period of performance is as follows: Base Period: 18 APR 2026 – 17 APR 2027 Option Period 1: 18 APR 2027 – 17 APR 2028 Option Period 2: 18 APR 2028 – 17 APR 2029 Option Period 3: 18 APR 2029 – 17 APR 2030 Option Period 4: 18 APR 2030 – 17 APR 2031 Option Period 5 (6 mos): 18 APR 2031 – 17 OCT 2031 A solicitation notice will be posted on or about 13 MAR 2026. All dates and information included in this announcement are subject to change.",
+  "detail_text_length": 1467,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d1cd1fe7c1f44f9842b8f5aaac8b7c6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d1cd1fe7c1f44f9842b8f5aaac8b7c6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bb4cdc199af4c9a4af386cbbab314a2b6fd996aa717d15e8a7f394b2d34ddacd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bb4cdc199af4c9a4af386cbbab314a2b6fd996aa717d15e8a7f394b2d34ddacd.pdf",
+      "file_id": "5d1cd1fe7c1f44f9842b8f5aaac8b7c6",
+      "file_name": "06.A6.PWS_DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 549581,
+      "sha256": "bb4cdc199af4c9a4af386cbbab314a2b6fd996aa717d15e8a7f394b2d34ddacd"
+    }
+  ],
+  "_mirror_hash": "a2409e86611fe7f975f43e5b3890be0713b98f8d670cca31937a0b00d09a1eea",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.413422+00:00"
+}

@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-06T14:51:00.894481+00:00
+Generated: 2026-03-07T14:47:05.579560+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/06/2026
+Posted range: 01/01/2026 -> 03/07/2026
 
 ## Counts
-- Total candidates: 113
-- Navy-related: 113
-- Full detail cached: 113
-- Notices with attachments: 42
-- Total attachment links: 186
-- Combined Synopsis/Solicitation: 30
-- Pre-solicitation: 30
+- Total candidates: 107
+- Navy-related: 107
+- Full detail cached: 107
+- Notices with attachments: 40
+- Total attachment links: 182
+- Combined Synopsis/Solicitation: 26
+- Pre-solicitation: 29
 - Solicitation: 13
-- Sources Sought: 29
+- Sources Sought: 28
 - Special Notice: 11
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 32
-- Sources Sought: 29
+- Pre-solicitation: 31
+- Sources Sought: 28
 - Vendor Outreach: 1
 - Special Notice: 11
 
@@ -37,11 +37,6 @@ Posted range: 01/01/2026 -> 03/06/2026
 | 6 | Solicitation | - | 2026-01-23 | 2026-02-06 | DEPT OF DEFENSE | [Request for Proposals for Modeling, Simulation, Engineering, Analysis, and Tactics (MSEAT)](https://sam.gov/opp/d304ad4995e9428dbeae0d04018ca9e4/view) |
 | 6 | Solicitation | - | 2026-01-30 | 2026-02-09 | DEPT OF DEFENSE | [Mass Comparator](https://sam.gov/opp/f0656267fc694c0fa4b6b10d53d3aff7/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-04 | 2026-02-13 | DEPT OF DEFENSE | [Canadian Vehicle Liability Service](https://sam.gov/opp/02a440dfe5784e34ac6357ea74e459e9/view) |
-| 7 | Sources Sought | Sources Sought | 2026-02-02 | 2026-02-18 | DEPT OF DEFENSE | [LCAC Rugged Mission Computer](https://sam.gov/opp/4aaa101b2eb446e2bf3a0ed882c9a708/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-02-04 | 2026-02-19 | DEPT OF DEFENSE | [Next Generation Jammer Low Band (NGJ-LB) Engineering, Maintenance, and Development (EMD) Phase II Increment I](https://sam.gov/opp/f01dc62a18e34627b43d64b56c583caa/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-02-04 | 2026-02-19 | DEPT OF DEFENSE | [Digital Scene Matching Area Correlator (DSMAC) Illuminator Unit (DIU) Re-design](https://sam.gov/opp/8a482a07a5bc4531a0e6fc8fb5942176/view) |
-| 7 | Combined Synopsis/Solicitation | - | 2026-02-12 | 2026-02-19 | DEPT OF DEFENSE | [Total Small Business Set Aside for Various Quantities of Brand Name: Swagelok Fitting and Adapters](https://sam.gov/opp/57e42ed4e03e4b1c832a3eba55f87c26/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-02-17 | 2026-02-19 | DEPT OF DEFENSE | [Sole Source to Arc Controls Inc. - Hydraulic Chamber Repairs.](https://sam.gov/opp/5f6964d7d3cc4667824549a4fa2e61de/view) |
 | 5 | Sources Sought | Sources Sought | 2026-02-05 | 2026-02-20 | DEPT OF DEFENSE | [Amendment 1 E-6B Subsystems Sustained Mission Readiness (SMR)](https://sam.gov/opp/d622b0cc9acf45769c04c3cb0f2d8bb0/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-05 | 2026-02-20 | DEPT OF DEFENSE | [Repair of Embedded Acoustic Data Recorders (EADRs) and Data Access Storage Devices (DASDs)](https://sam.gov/opp/e05d8716f29245cc87e901e294f87642/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-02-05 | 2026-02-20 | DEPT OF DEFENSE | [Greece S-70B 365-Day Inspections](https://sam.gov/opp/78c86488a627460d9f60afae2ed4ae25/view) |
@@ -75,7 +70,6 @@ Posted range: 01/01/2026 -> 03/06/2026
 | 9 | Special Notice | Industry Day, Special Notice | 2026-02-02 | 2026-03-05 | DEPT OF DEFENSE | [NAVSEALOGCEN Virtual Industry Day](https://sam.gov/opp/80cc33505e1141f2844ef1b61276906b/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-18 | 2026-03-05 | DEPT OF DEFENSE | [Rollaway Container System Production](https://sam.gov/opp/1fb7d7bb8474494db27b14b32c32e757/view) |
 | 5 | Sources Sought | Sources Sought | 2026-02-18 | 2026-03-05 | DEPT OF DEFENSE | [Fiscal Years (FY) 2027 & 2028 Laser Guided Training Round (LGTR) BDU-59C/B Production](https://sam.gov/opp/0738bc255ab241aa82baecb9a193b156/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-02-18 | 2026-03-05 | DEPT OF DEFENSE | [Global Lightning Door 40](https://sam.gov/opp/489b76465f0a4eb8a693877c92fa1448/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-02-18 | 2026-03-05 | DEPT OF DEFENSE | [Greece Air Frame Field Service Representative (FSR)](https://sam.gov/opp/02c5f3f01ede40d3a04622e286ac2995/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [EVALUATION-DRIVEN ARTIFICIAL INTELLIGENCE DEVELOPMENT AND DELIVERY SUPPORT FOR MISSION-CRITICAL DATA WORKFLOWS](https://sam.gov/opp/a282da068fd14ea4bd1577b20b81b418/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [Airborne Radar supporting Multi-mission Maritime Aircraft](https://sam.gov/opp/78ebb01c9dca4e79b0279b4f37c62f07/view) |

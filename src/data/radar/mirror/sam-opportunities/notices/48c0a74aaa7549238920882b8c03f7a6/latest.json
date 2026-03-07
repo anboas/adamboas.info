@@ -1,0 +1,68 @@
+{
+  "id": "sam-48c0a74aaa7549238920882b8c03f7a6",
+  "title": "6525--JAN 2026 Consolidation - HTME with Extended Installation  Services (includes Turnkey Services)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48c0a74aaa7549238920882b8c03f7a6",
+  "opportunity_url": "https://sam.gov/opp/48c0a74aaa7549238920882b8c03f7a6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/48c0a74aaa7549238920882b8c03f7a6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "48c0a74aaa7549238920882b8c03f7a6",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36A79726Q0008",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NAC HIGH TECH ORDERS (36A797)",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48c0a74aaa7549238920882b8c03f7a6",
+  "detail_text": "JAN 2026 Consolidation - HTME with Extended Installation Services (includes Turnkey Services)",
+  "detail_text_length": 93,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26ba5fdbb3b94458912a79fa5f785970/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7f42290fa7d460e895859297b3bbe94/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f81b9aa6abd34fae840ae4d8d5305486/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26ba5fdbb3b94458912a79fa5f785970/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c4e175a6c2c733a06140fa3a2f27e48e52e2a74a6c35c30134ff63545607576b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c4e175a6c2c733a06140fa3a2f27e48e52e2a74a6c35c30134ff63545607576b.pdf",
+      "file_id": "26ba5fdbb3b94458912a79fa5f785970",
+      "file_name": "Pre-Solicitation+Notice+-+JAN+2026+TKY+Only+Consolidation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 237054,
+      "sha256": "c4e175a6c2c733a06140fa3a2f27e48e52e2a74a6c35c30134ff63545607576b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7f42290fa7d460e895859297b3bbe94/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7d903f6289dcc15ab0c7acd8e2d5e3e3e954ac1cf7ed0fb6a7169e3fc0822a72.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7d903f6289dcc15ab0c7acd8e2d5e3e3e954ac1cf7ed0fb6a7169e3fc0822a72.docx",
+      "file_id": "e7f42290fa7d460e895859297b3bbe94",
+      "file_name": "36A79726Q0008.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14692,
+      "sha256": "7d903f6289dcc15ab0c7acd8e2d5e3e3e954ac1cf7ed0fb6a7169e3fc0822a72"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f81b9aa6abd34fae840ae4d8d5305486/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9511fffaa49704f409a1ab753908a3911dc3f0282c5cfb6fbc7bb9135ccd541a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9511fffaa49704f409a1ab753908a3911dc3f0282c5cfb6fbc7bb9135ccd541a.xlsx",
+      "file_id": "f81b9aa6abd34fae840ae4d8d5305486",
+      "file_name": "JAN+2026+TKY+Schedule+of+Requirements+-+Updated+3-6-26.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13896,
+      "sha256": "9511fffaa49704f409a1ab753908a3911dc3f0282c5cfb6fbc7bb9135ccd541a"
+    }
+  ],
+  "_mirror_hash": "e690055cc856b1978155bd906095459aaace5de4e587a0430d4340f93abbedfe",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.780816+00:00"
+}

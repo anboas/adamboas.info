@@ -1,0 +1,59 @@
+{
+  "id": "sam-e11901d927f249479d51821f2056b600",
+  "title": "RFI M6785426I5316 Extended Boom Forklift",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e11901d927f249479d51821f2056b600",
+  "opportunity_url": "https://sam.gov/opp/e11901d927f249479d51821f2056b600/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e11901d927f249479d51821f2056b600/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e11901d927f249479d51821f2056b600",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "M6785426I5316",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e11901d927f249479d51821f2056b600",
+  "detail_text": "Product Manager, Engineer Systems (PdM ES), Marine Corps Systems Command (MARCORSYSCOM) is conducting market research for potential sources to purchase an Extendable Boom Forklift (EBFL). Please see attached RFI document.",
+  "detail_text_length": 221,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50508f9aeefe4e03a94fcef7ce2d13d3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cb1fa68dd864b4bb0f4a582a6c0586c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50508f9aeefe4e03a94fcef7ce2d13d3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d1e720cee5d0aff05f0f5973a51bd7c5b7e4ee8b84d46695b83afbcc1d3c9d7b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d1e720cee5d0aff05f0f5973a51bd7c5b7e4ee8b84d46695b83afbcc1d3c9d7b.pdf",
+      "file_id": "50508f9aeefe4e03a94fcef7ce2d13d3",
+      "file_name": "Performance+Specification+for+EBFL+20260218+-NON-CUI-+-002-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 383506,
+      "sha256": "d1e720cee5d0aff05f0f5973a51bd7c5b7e4ee8b84d46695b83afbcc1d3c9d7b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cb1fa68dd864b4bb0f4a582a6c0586c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b22a9462bead4ac06108fdc22b50e3ea2210213b8940fc6ca498a6178510656a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b22a9462bead4ac06108fdc22b50e3ea2210213b8940fc6ca498a6178510656a.pdf",
+      "file_id": "5cb1fa68dd864b4bb0f4a582a6c0586c",
+      "file_name": "RFI+M67854-26-I-5316+EBFL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 722718,
+      "sha256": "b22a9462bead4ac06108fdc22b50e3ea2210213b8940fc6ca498a6178510656a"
+    }
+  ],
+  "_mirror_hash": "dc60c21e4a034e8a3be48b6c2c4f84ac4570aced083a0a2d0683622d2ec911c6",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.510205+00:00"
+}

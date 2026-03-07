@@ -1,0 +1,57 @@
+{
+  "id": "sam-4ccb6d88657b4e63be4817d5557dff16",
+  "title": "VA-26-00050029 User and Entity Behavior Analytics (UEBA) Solution",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4ccb6d88657b4e63be4817d5557dff16",
+  "opportunity_url": "https://sam.gov/opp/4ccb6d88657b4e63be4817d5557dff16/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4ccb6d88657b4e63be4817d5557dff16/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4ccb6d88657b4e63be4817d5557dff16",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "VA-26-00050029",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4ccb6d88657b4e63be4817d5557dff16",
+  "detail_text": "User and Entity Behavior Analytics (UEBA) Solution (VA-26-00050029)",
+  "detail_text_length": 67,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fe3e2cc71474a25b0b6a28010d7c719/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/831b0577c56e40b8ba194f137e35e3fe/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fe3e2cc71474a25b0b6a28010d7c719/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/92f713e96e053568330c9cdff8845d72347b0d5233a0f559ea7d61d53de17dea.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/92f713e96e053568330c9cdff8845d72347b0d5233a0f559ea7d61d53de17dea.docx",
+      "file_id": "0fe3e2cc71474a25b0b6a28010d7c719",
+      "file_name": "PWS_UEBA+Host+Based+Solution.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 178946,
+      "sha256": "92f713e96e053568330c9cdff8845d72347b0d5233a0f559ea7d61d53de17dea"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/831b0577c56e40b8ba194f137e35e3fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ba14d4ffcbe7e2f77f7dd0d6696d6433ce82c2b1ac77a6b9b283681ab3425fd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ba14d4ffcbe7e2f77f7dd0d6696d6433ce82c2b1ac77a6b9b283681ab3425fd.docx",
+      "file_id": "831b0577c56e40b8ba194f137e35e3fe",
+      "file_name": "P02-Sources+Sought-+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 85577,
+      "sha256": "1ba14d4ffcbe7e2f77f7dd0d6696d6433ce82c2b1ac77a6b9b283681ab3425fd"
+    }
+  ],
+  "_mirror_hash": "366f8a1b617c22063eeeb89f26a7736bf838e0a40ed3612efed60865a68ff540",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.603989+00:00"
+}

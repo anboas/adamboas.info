@@ -1,0 +1,58 @@
+{
+  "id": "sam-73208a52407e4b52aa4b19aa73ce449e",
+  "title": "SOURCES SOUGHT: RENOVATE/CONVERT 50th 49th SQ OPS, B230",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=73208a52407e4b52aa4b19aa73ce449e",
+  "opportunity_url": "https://sam.gov/opp/73208a52407e4b52aa4b19aa73ce449e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/73208a52407e4b52aa4b19aa73ce449e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "73208a52407e4b52aa4b19aa73ce449e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "EEPZ252131",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3022 14 CONS LGCA",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=73208a52407e4b52aa4b19aa73ce449e",
+  "detail_text": "The Contractor must provide all plant, labor, equipment, transportation, and tools required to complete the renovation of B230 to be converted into a consolidated Flying Training Squadron (FTS) facility. Work includes replacing interior finishes, upgrading electrical fixtures, demolishing and erecting interior partition walls and doors, mechanical and plumbing work, among others. Perform all work according to this Statement of Work (SOW), the Concept Design Drawings, and all related AF requirements and other codes and references. This is a sources sought. No award will be made off this posting. This is for market research purposes only.",
+  "detail_text_length": 644,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9607751b83f749afa2fc7f5cfc5fcc38/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d467515ff25e43eab3bdc9577fd72f68/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9607751b83f749afa2fc7f5cfc5fcc38/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/94c19ca7710f4dad1d25310acfad8f540e94b7f5e9a7ec110cf7cbf2a89cde52.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/94c19ca7710f4dad1d25310acfad8f540e94b7f5e9a7ec110cf7cbf2a89cde52.pdf",
+      "file_id": "9607751b83f749afa2fc7f5cfc5fcc38",
+      "file_name": "Sources+Sought+Questionnaire.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 77995,
+      "sha256": "94c19ca7710f4dad1d25310acfad8f540e94b7f5e9a7ec110cf7cbf2a89cde52"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d467515ff25e43eab3bdc9577fd72f68/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ad8a8bf3d52d5cd070059af2cf9dceb5491bc28ab8559e24f09d96abe36fe546.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ad8a8bf3d52d5cd070059af2cf9dceb5491bc28ab8559e24f09d96abe36fe546.pdf",
+      "file_id": "d467515ff25e43eab3bdc9577fd72f68",
+      "file_name": "Att+1+-+Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 705738,
+      "sha256": "ad8a8bf3d52d5cd070059af2cf9dceb5491bc28ab8559e24f09d96abe36fe546"
+    }
+  ],
+  "_mirror_hash": "8924f9f2216479d43572cb512aca12667fcfd4842fb3bc6e5ad86bf048ed22d9",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.489506+00:00"
+}

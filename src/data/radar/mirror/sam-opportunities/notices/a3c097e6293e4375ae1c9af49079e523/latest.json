@@ -1,0 +1,46 @@
+{
+  "id": "sam-a3c097e6293e4375ae1c9af49079e523",
+  "title": "XTREME LABS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a3c097e6293e4375ae1c9af49079e523",
+  "opportunity_url": "https://sam.gov/opp/a3c097e6293e4375ae1c9af49079e523/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a3c097e6293e4375ae1c9af49079e523/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a3c097e6293e4375ae1c9af49079e523",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-FT GORDON",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a3c097e6293e4375ae1c9af49079e523",
+  "detail_text": "NOTICE OF INTENT TO SOLE SOURCE Mission and Installation Contracting Command, Fort Gordon, GA intends to negotiate/award a sole-source contract with Xtreme Labs for the following items: TRADOC Cloud Environment and XTREME LABS, the NAICS code is 513210. The authority for this non-competitive award is 10 USC 2304(c)(1), Only one responsible Source. The Government intends to procure this sole source requirement under Simplified Acquisition Procedures for Commercial products and services in FAR part 12. THIS NOTICE IS NOT A REQUEST FOR COMPETITIVE PROPOSALS and a solicitation will not be issued. Interested concerns must show clear and convincing evidence that competition of this requirement would be advantageous to the Government. If no affirmative written responses are received by March 11th, 2026, award will be made without further notice. Oral communications are not acceptable in response to this notice. A determination by the government not to compete this proposed requirement is solely within the discretion of the government. Vendor will provide Environments that incorporate cloud elements with on-perm custom environments to support targeted scenarios. These environments will feature specific controls to make them ideal for the training of the war fighters to become familiar with the cloud. Examples of cloud labs to be used: Microsoft Azure and AWS digital labs. The services include 24 X 7 lab environment support for one year from start date of the service. Total of 1445 Units. See Salient Characteristics attachment for more details.",
+  "detail_text_length": 1561,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c6d971a3fef4e7b8663619048f96975/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c6d971a3fef4e7b8663619048f96975/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5e32cc6e5bf5d633a3a1ab2b0783668d98632c197bd9cd4362778c2e95dec684.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5e32cc6e5bf5d633a3a1ab2b0783668d98632c197bd9cd4362778c2e95dec684.pdf",
+      "file_id": "6c6d971a3fef4e7b8663619048f96975",
+      "file_name": "Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 32302,
+      "sha256": "5e32cc6e5bf5d633a3a1ab2b0783668d98632c197bd9cd4362778c2e95dec684"
+    }
+  ],
+  "_mirror_hash": "f0878295ea407272d39ec7e8d8826b04733fe5c052925d58c7b249f3f0acd9cf",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.584496+00:00"
+}

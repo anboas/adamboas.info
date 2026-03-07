@@ -1,0 +1,46 @@
+{
+  "id": "sam-3ab9cb9328bd44fc8ca82c9a7918056c",
+  "title": "Bonneville Old Navigation Lock (NL1) Swing Bridge",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3ab9cb9328bd44fc8ca82c9a7918056c",
+  "opportunity_url": "https://sam.gov/opp/3ab9cb9328bd44fc8ca82c9a7918056c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3ab9cb9328bd44fc8ca82c9a7918056c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3ab9cb9328bd44fc8ca82c9a7918056c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANNWD26P0000028934",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTHWESTERN.ENDIST PORTLAND.W071 ENDIST PORTLAND",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3ab9cb9328bd44fc8ca82c9a7918056c",
+  "detail_text": "This is a SOURCES SOUGHT and is for informational/market research purposes only. THIS IS NOT A REQUEST FOR PROPOSAL, QUOTATION OR BID, NOR A SYNOPSIS OF A PROPOSED CONTRACT ACTION UNDER FAR SUBPART 5.2. The Bonneville Old Navigation Lock (NL1) Swing Bridge is located at Bonneville Lock and Dam, which is 145 river miles from the Mouth of the Columbia River and approximately 40 miles east of Portland, OR, near Cascade Locks, OR and North Bonneville, WA. The Navlock 1 Swing Bridge was constructed in 1935 as a rail bridge to carry heavy transformers and was modified in 1950. For a myriad of reasons, including seismic and operational inadequacy of the original bridge, USACE Portland District developed design documents to replace the existing bridge with a new fixed bridge on a new alignment and to provide for partial demolition of the existing bridge. See the attachment for more details.",
+  "detail_text_length": 895,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2aa6c61a735f40f8bb849131aff87d21/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2aa6c61a735f40f8bb849131aff87d21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b40d82207d615439cff201b17ddc0bd1abb2d1c593ff7fa8190918cdb7969de1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b40d82207d615439cff201b17ddc0bd1abb2d1c593ff7fa8190918cdb7969de1.pdf",
+      "file_id": "2aa6c61a735f40f8bb849131aff87d21",
+      "file_name": "Sources+Sought+-+Bonneville+Old+Navigation+Lock+-NL1-+Swing+Bridge+Replacement+20260306.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 198219,
+      "sha256": "b40d82207d615439cff201b17ddc0bd1abb2d1c593ff7fa8190918cdb7969de1"
+    }
+  ],
+  "_mirror_hash": "192c6c7da72106cb054a286452687e20f3ba5093e87b338e88d7d2738fc85fa6",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.667887+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-ff38aaef1dc345709d346ea7f1e603c1",
+  "title": "B-2 PDUC Motor Controller",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff38aaef1dc345709d346ea7f1e603c1",
+  "opportunity_url": "https://sam.gov/opp/ff38aaef1dc345709d346ea7f1e603c1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ff38aaef1dc345709d346ea7f1e603c1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ff38aaef1dc345709d346ea7f1e603c1",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA811926R0010",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8119  AFSC PZABC",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff38aaef1dc345709d346ea7f1e603c1",
+  "detail_text": "Test, Teardown, and Evalution (TT&E) and/or Repair of NSN: 6110-01-317-2372FW P/N 741146J TT&E prior to actual repair of the unit. The contractor shall provide a proposal to the Government detailing the repairs that are needed and the associated costs for the needed repairs. The purpose for TT&E is to have a full breakdown of parts and labor needed to return a unit to serviceable condion.",
+  "detail_text_length": 391,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/13975843e95345beac61e62f51b77324/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/13975843e95345beac61e62f51b77324/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/761e861a8b0fe6926a6393b023f09ce510dcabb60d65fe6648b399ec4a4e351c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/761e861a8b0fe6926a6393b023f09ce510dcabb60d65fe6648b399ec4a4e351c.pdf",
+      "file_id": "13975843e95345beac61e62f51b77324",
+      "file_name": "FD20302201194_05_Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 184075,
+      "sha256": "761e861a8b0fe6926a6393b023f09ce510dcabb60d65fe6648b399ec4a4e351c"
+    }
+  ],
+  "_mirror_hash": "899f9594bd8efb108e8b4d85cac86ab122d055fcd6e7ee2bdd03dd47b07f0514",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.708754+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-0e5da136b2e8410a9605181beb64016e",
+  "title": "JBSA LMR Coverage Analysis",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0e5da136b2e8410a9605181beb64016e",
+  "opportunity_url": "https://sam.gov/opp/0e5da136b2e8410a9605181beb64016e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0e5da136b2e8410a9605181beb64016e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0e5da136b2e8410a9605181beb64016e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "F2M3U26049AC01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0e5da136b2e8410a9605181beb64016e",
+  "detail_text": "The purpose of this Sources Sought Notice is to query the market for potential interested, capable, responsible, and qualified offerors that can provide/perform the stated requirement. Please send responses to the POCs identified in the Contact Information.",
+  "detail_text_length": 257,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/723a3ec56a974998bde1b3361dcbdd42/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a26cd68358094d20b7e880d9301438ba/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/723a3ec56a974998bde1b3361dcbdd42/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c30eb97f3a42c6c3042b526b286b27caf2c574ff7036d51d52f2b200aebf89b4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c30eb97f3a42c6c3042b526b286b27caf2c574ff7036d51d52f2b200aebf89b4.pdf",
+      "file_id": "723a3ec56a974998bde1b3361dcbdd42",
+      "file_name": "Sources+Sought+Notice+questionaire.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 328835,
+      "sha256": "c30eb97f3a42c6c3042b526b286b27caf2c574ff7036d51d52f2b200aebf89b4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a26cd68358094d20b7e880d9301438ba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3a5a1b3b1ce0e5e8c232d685af0f4244781a420e844b04e673da79536d72edc1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3a5a1b3b1ce0e5e8c232d685af0f4244781a420e844b04e673da79536d72edc1.pdf",
+      "file_id": "a26cd68358094d20b7e880d9301438ba",
+      "file_name": "Attachment+1+Draft+SON.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 102967,
+      "sha256": "3a5a1b3b1ce0e5e8c232d685af0f4244781a420e844b04e673da79536d72edc1"
+    }
+  ],
+  "_mirror_hash": "691ac817d82ff4f67c367ec3b39ddc55ef073a8213d943644f0a659b741cfce7",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.627909+00:00"
+}

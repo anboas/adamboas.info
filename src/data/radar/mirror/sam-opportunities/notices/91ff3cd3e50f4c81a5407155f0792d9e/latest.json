@@ -1,0 +1,46 @@
+{
+  "id": "sam-91ff3cd3e50f4c81a5407155f0792d9e",
+  "title": "The GSA seeks to lease office space in Pinetop-Lakeside or Show Low, AZ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91ff3cd3e50f4c81a5407155f0792d9e",
+  "opportunity_url": "https://sam.gov/opp/91ff3cd3e50f4c81a5407155f0792d9e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/91ff3cd3e50f4c81a5407155f0792d9e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "91ff3cd3e50f4c81a5407155f0792d9e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "3AZ0295a",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.PUBLIC BUILDINGS SERVICE.PBS R00 CENTER FOR BROKER SERVICES",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91ff3cd3e50f4c81a5407155f0792d9e",
+  "detail_text": "See the attached Presolicitationj Notice / Advertisement",
+  "detail_text_length": 56,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31828d332db94a09a7b8a77b18703d0e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31828d332db94a09a7b8a77b18703d0e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1b30b5bb71d8bdc06f26d20ca86d0884addab89685e9cc518231e351269e197e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1b30b5bb71d8bdc06f26d20ca86d0884addab89685e9cc518231e351269e197e.pdf",
+      "file_id": "31828d332db94a09a7b8a77b18703d0e",
+      "file_name": "2A-2026.03.06-Advertisement-3AZ0295.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 216496,
+      "sha256": "1b30b5bb71d8bdc06f26d20ca86d0884addab89685e9cc518231e351269e197e"
+    }
+  ],
+  "_mirror_hash": "0c6201e4acfb78d5af8ec7ac9dcfe0969fcf578585ef566b09009f5fa6c00e82",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.632776+00:00"
+}

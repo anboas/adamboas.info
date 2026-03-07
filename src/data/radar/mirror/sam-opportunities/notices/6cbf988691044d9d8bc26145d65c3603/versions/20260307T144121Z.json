@@ -1,0 +1,47 @@
+{
+  "id": "sam-6cbf988691044d9d8bc26145d65c3603",
+  "title": "Domestic Private Sector CMAV Workload Estimate",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cbf988691044d9d8bc26145d65c3603",
+  "opportunity_url": "https://sam.gov/opp/6cbf988691044d9d8bc26145d65c3603/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6cbf988691044d9d8bc26145d65c3603/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6cbf988691044d9d8bc26145d65c3603",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "CNRMC-CMAV-Projections",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ.NAVSEA HQ",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-06-06",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cbf988691044d9d8bc26145d65c3603",
+  "detail_text": "This Domestic Workload Forecast reflects the workload estimate as of Q2 M2 FY2026. These workload charts and availability reports are released to the continental U.S (CONUS) industry partners to communicate the aggregate ship maintenance demand for information and planning purposes only. The information provided reflects a broad overview of current maintenance schedule and forecasting, and is subject to change based on current and future operational commitments. These workload charts and availability reports do not in any way constitute a request for information or proposal nor commitment to contract work. The Government will not pay for any effort expended in response to this announcement. Future information, if any, will be posted at SAM.gov.",
+  "detail_text_length": 754,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ae3018016194de0a265674f6edd5a82/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ae3018016194de0a265674f6edd5a82/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b9469ddad2027c8d4ccce8a236a1d19821cc910b37e310be373f9509fb89b8ef.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b9469ddad2027c8d4ccce8a236a1d19821cc910b37e310be373f9509fb89b8ef.xlsx",
+      "file_id": "3ae3018016194de0a265674f6edd5a82",
+      "file_name": "CNRMC+Domestic+CMAV+Workload+-04FEB2026-++FY26+Q2+M2.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 353036,
+      "sha256": "b9469ddad2027c8d4ccce8a236a1d19821cc910b37e310be373f9509fb89b8ef"
+    }
+  ],
+  "_mirror_hash": "a34bd1db519098772ae47f5d0536aed76d588c885c8adb0714a1523495069ca2",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.443683+00:00"
+}

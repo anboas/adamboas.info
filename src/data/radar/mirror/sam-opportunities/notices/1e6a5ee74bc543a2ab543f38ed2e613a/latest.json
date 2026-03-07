@@ -1,0 +1,69 @@
+{
+  "id": "sam-1e6a5ee74bc543a2ab543f38ed2e613a",
+  "title": "Sources Sought Notice for Project CL25328002",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1e6a5ee74bc543a2ab543f38ed2e613a",
+  "opportunity_url": "https://sam.gov/opp/1e6a5ee74bc543a2ab543f38ed2e613a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1e6a5ee74bc543a2ab543f38ed2e613a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1e6a5ee74bc543a2ab543f38ed2e613a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL25328002",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1e6a5ee74bc543a2ab543f38ed2e613a",
+  "detail_text": "Sources Sought Notice ID: CL25328002 The Defense Logistics Agency (DLA) Weapons Support in Columbus, OH is looking for potential vendors to enter into a Long-Term Contract (LTC). Please review the attached Market Research Survey, Spreadsheet and Product Identification Description (PID) containing the following (4) National Stock Numbers (NSNs). If interested in supplying any of the listed NSNs, please email the filled-out survey and spreadsheet to Camerson.Siebeneck@dla.mil by the response date of 3/13/2026 by 11:59PM EST. 5330011476003, Preformed Packaging, AMC/AMSC of 1/R 5330012342618, Gasket, AMC/AMSC of 1/R 5330013488345, Gasket, AMC/AMSC of 1/R 2530014745785, Ball Joint Parts Kit, AMC/AMSC of 1/C Items with the Acquisition Method Code / Acquisition Method Suffix Code (AMC/AMSC) of 1/R indicate the item is suitable for competition (AMC of 1), and the Government does not own the data rights and two or more sources own the data rights to manufacture this item (AMSC of R). Items with AMC/AMSC of 1/C indicate the item is suitable for competition (AMC of 1), and a list of approved sources have engineering approval to manufacture this item (AMSC of C). *Sources that have the data rights to manufacture the NSNs are listed on the attached PID and Spreadsheet. ** Should a company wish to be reviewed and qualified as an \"Approved Source\", they may submit an application package through the DLA Land and Maritime Alternate Offer / Source Approval Request (SAR) Program. A SAR package contains all technical data needed to demonstrate that the prospective contractor can competently manufacture the product to the same level of quality or better than the Original Equipment Manufacturer (OEM). The onus is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item which DLA Land and Maritime is procuring. Offerors should complete and submit their Alternate Offer (with SAR package) to the Contracting Officer listed in the Solicitation. For further information, please refer to the DLA Land and Maritime web page at: http://www.dla.mil/LandandMaritime/Business/Selling/AlternateOffers.aspx Click on the highlight Alternate Offer/Source Approval Program for a detailed explanation of the information and format necessary for a SAR and for the SAR approval process. Offers not cited as an approved source are required to obtain source approval prior to award. The contractor must submit a Source Approval Request (SAR) PKG to DLA for evaluation. All required information must be provided.",
+  "detail_text_length": 2561,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/679a5f75d242430284e02bd9c2363b97/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c81573dcce2948aba9fa6c1da0c11dc6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d77f49cbdefe4949aea05d0cec57f51b/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/679a5f75d242430284e02bd9c2363b97/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f312a77f6e1746dff198c366bca137799248467aca49a0a85de9a21fa5f268d5.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f312a77f6e1746dff198c366bca137799248467aca49a0a85de9a21fa5f268d5.xlsx",
+      "file_id": "679a5f75d242430284e02bd9c2363b97",
+      "file_name": "CL25328002+MR+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 199549,
+      "sha256": "f312a77f6e1746dff198c366bca137799248467aca49a0a85de9a21fa5f268d5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c81573dcce2948aba9fa6c1da0c11dc6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2e34640f54b93fd23915d88aae5fdc5a8bb9920e6184cf1a7e26ad0eec6651c7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2e34640f54b93fd23915d88aae5fdc5a8bb9920e6184cf1a7e26ad0eec6651c7.docx",
+      "file_id": "c81573dcce2948aba9fa6c1da0c11dc6",
+      "file_name": "CL25328002+MR+LTC+Question.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 57486,
+      "sha256": "2e34640f54b93fd23915d88aae5fdc5a8bb9920e6184cf1a7e26ad0eec6651c7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d77f49cbdefe4949aea05d0cec57f51b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e1622302c18c4f141dd787eef69d2237e7ffb6dc9d1d3c583538f4e954c80d5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e1622302c18c4f141dd787eef69d2237e7ffb6dc9d1d3c583538f4e954c80d5.pdf",
+      "file_id": "d77f49cbdefe4949aea05d0cec57f51b",
+      "file_name": "CL25328002+PID.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 72115,
+      "sha256": "9e1622302c18c4f141dd787eef69d2237e7ffb6dc9d1d3c583538f4e954c80d5"
+    }
+  ],
+  "_mirror_hash": "087fe3c79e747f8e002d8dd6eff6fd1c73ef708406d5d2f5a0234a0d426c437c",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.471350+00:00"
+}

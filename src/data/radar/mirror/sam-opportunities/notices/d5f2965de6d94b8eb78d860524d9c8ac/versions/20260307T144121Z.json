@@ -1,0 +1,57 @@
+{
+  "id": "sam-d5f2965de6d94b8eb78d860524d9c8ac",
+  "title": "5' Performance Locker",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5f2965de6d94b8eb78d860524d9c8ac",
+  "opportunity_url": "https://sam.gov/opp/d5f2965de6d94b8eb78d860524d9c8ac/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d5f2965de6d94b8eb78d860524d9c8ac/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d5f2965de6d94b8eb78d860524d9c8ac",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326Q0024",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5f2965de6d94b8eb78d860524d9c8ac",
+  "detail_text": "RFI Number: N/A Project Title: 5' PERFORMANCE LOCKER Response Date: Friday, March 13 at 1200 pm Original Set-aside: 100% Small Business Product Service Code: 7810 NAICS Code: 339920 THIS IS A SOURCES SOUGHT ONLY The Government is requesting information to provide 5' PERFORMANCE LOCKER at Shaw AFB, SC according to the Salient Characteristics attached. At this time the Government is only requesting to know if your company can provide this, IF YES, please provide a copy of your capability statement and price estimation to SSgt. Mackenzie Fullenlove at mackenzie.fullenlove@us.af.mil and Ms. Mar Rodriguez Martinez at maria_del_mar.rodriguez_martinez@us.af.mil. DO NOT SUBMIT ANY QUESTIONS OR AN OFFER AT THIS TIME.",
+  "detail_text_length": 717,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e537c8739a34c7fbce2623014ffc7f8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f66746c673b042d795c7e06f40933a02/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e537c8739a34c7fbce2623014ffc7f8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b3114a32fd0fe2446c7fd0dfabde80a7174019d76239a141a6e4cf4d127d9d6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b3114a32fd0fe2446c7fd0dfabde80a7174019d76239a141a6e4cf4d127d9d6f.pdf",
+      "file_id": "5e537c8739a34c7fbce2623014ffc7f8",
+      "file_name": "SALIENT+CHARACTERISTICS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 66342,
+      "sha256": "b3114a32fd0fe2446c7fd0dfabde80a7174019d76239a141a6e4cf4d127d9d6f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f66746c673b042d795c7e06f40933a02/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3853ed554e43c77de633e01f3db25d62a15196e127aa554a16b3c4b22096c825.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3853ed554e43c77de633e01f3db25d62a15196e127aa554a16b3c4b22096c825.pdf",
+      "file_id": "f66746c673b042d795c7e06f40933a02",
+      "file_name": "GSAA+RFI+Performance+lockers.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122778,
+      "sha256": "3853ed554e43c77de633e01f3db25d62a15196e127aa554a16b3c4b22096c825"
+    }
+  ],
+  "_mirror_hash": "7c330be2c0806d7f9d82b03b23cbf1a15e637f7836b351764def2414abe85913",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.612116+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-7ab954f2526f47feb0ca69b4bc52dbe9",
+  "title": "ACTUATOR, HYDRAULIC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ab954f2526f47feb0ca69b4bc52dbe9",
+  "opportunity_url": "https://sam.gov/opp/7ab954f2526f47feb0ca69b4bc52dbe9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7ab954f2526f47feb0ca69b4bc52dbe9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7ab954f2526f47feb0ca69b4bc52dbe9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426RN050",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ab954f2526f47feb0ca69b4bc52dbe9",
+  "detail_text": "SPARE. QTY 19 - ACTUATOR, HYDRAULIC. See details outlined in the solicitation.",
+  "detail_text_length": 78,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/500f6b92fb194227a0b4af4270794a52/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/500f6b92fb194227a0b4af4270794a52/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9bfb0eb63ab2295027ff6cfd5212887d6d6b19116cb6ea7ad46c7db387ad165b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9bfb0eb63ab2295027ff6cfd5212887d6d6b19116cb6ea7ad46c7db387ad165b.pdf",
+      "file_id": "500f6b92fb194227a0b4af4270794a52",
+      "file_name": "3.01_+N0010426RN050_A02550.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 518859,
+      "sha256": "9bfb0eb63ab2295027ff6cfd5212887d6d6b19116cb6ea7ad46c7db387ad165b"
+    }
+  ],
+  "_mirror_hash": "e742059f8dcc6271e63bfc77ef6ae8d3c4278213b82c4dcde1ce774830f39c5f",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.514341+00:00"
+}

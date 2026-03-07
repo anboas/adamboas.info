@@ -1,0 +1,68 @@
+{
+  "id": "sam-d88f948bfdd34430ba90bdae21d30e08",
+  "title": "Closed Circuit TV Maintenance Support for DFAS-IN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d88f948bfdd34430ba90bdae21d30e08",
+  "opportunity_url": "https://sam.gov/opp/d88f948bfdd34430ba90bdae21d30e08/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d88f948bfdd34430ba90bdae21d30e08/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d88f948bfdd34430ba90bdae21d30e08",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "3003385",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE FINANCE AND ACCOUNTING SERVICE (DFAS).DEFENSE FINANCE AND ACCOUNTING SVC",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d88f948bfdd34430ba90bdae21d30e08",
+  "detail_text": "This Sources Sought Notice is issued for market research purposes only and does not constitute a solicitation or commitment by the Government. The Defense Finance and Accounting Service (DFAS) is seeking information from interested and capable vendors that can provide maintenance and on-call service support for Closed-Circuit Television (CCTV), Intrusion Detection System (IDS), and Access Control System (ACS) located at DFAS Indianapolis, IN (DFAS-IN).",
+  "detail_text_length": 456,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d0dd82f3fd04bbcb0bae5f53c93e635/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4eb516e1745746b2aa9f1e5b256450d8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/afea6bb8c264427dae56e6ad445b01fb/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d0dd82f3fd04bbcb0bae5f53c93e635/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4ac9663953ad0b0b120ea1b67e2d2a5f4f1eb03d0c1898ebd2610876eda88d75.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4ac9663953ad0b0b120ea1b67e2d2a5f4f1eb03d0c1898ebd2610876eda88d75.docx",
+      "file_id": "3d0dd82f3fd04bbcb0bae5f53c93e635",
+      "file_name": "Contractor+Capability+Survey+Statement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28688,
+      "sha256": "4ac9663953ad0b0b120ea1b67e2d2a5f4f1eb03d0c1898ebd2610876eda88d75"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4eb516e1745746b2aa9f1e5b256450d8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/319e371bd4b9fb91ea268f988e207db4b1d57c7594a235477ed2aab33529f01a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/319e371bd4b9fb91ea268f988e207db4b1d57c7594a235477ed2aab33529f01a.pdf",
+      "file_id": "4eb516e1745746b2aa9f1e5b256450d8",
+      "file_name": "Draft+Performance+Work+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142617,
+      "sha256": "319e371bd4b9fb91ea268f988e207db4b1d57c7594a235477ed2aab33529f01a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/afea6bb8c264427dae56e6ad445b01fb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eb9606e5624e534d2c3f12ee7af74f3269a1a3efae854ffd6e671121486fc9bb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eb9606e5624e534d2c3f12ee7af74f3269a1a3efae854ffd6e671121486fc9bb.pdf",
+      "file_id": "afea6bb8c264427dae56e6ad445b01fb",
+      "file_name": "Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28057,
+      "sha256": "eb9606e5624e534d2c3f12ee7af74f3269a1a3efae854ffd6e671121486fc9bb"
+    }
+  ],
+  "_mirror_hash": "b5fb6c1f15aa391fb7f6e276ac3709074684da7c4f279513d2a0fdf11ee63c90",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.668590+00:00"
+}

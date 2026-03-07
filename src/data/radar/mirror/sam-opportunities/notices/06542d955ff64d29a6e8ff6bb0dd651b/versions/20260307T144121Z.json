@@ -1,0 +1,69 @@
+{
+  "id": "sam-06542d955ff64d29a6e8ff6bb0dd651b",
+  "title": "NAWC WOLF IDS Technical Project Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=06542d955ff64d29a6e8ff6bb0dd651b",
+  "opportunity_url": "https://sam.gov/opp/06542d955ff64d29a6e8ff6bb0dd651b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/06542d955ff64d29a6e8ff6bb0dd651b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "06542d955ff64d29a6e8ff6bb0dd651b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N00421-25-RFPREQ-TW00000-1387",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC AD.NAVAL AIR WARFARE CENTER AIR DIV",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=06542d955ff64d29a6e8ff6bb0dd651b",
+  "detail_text": "The NAWCAD WOLF Identification Systems (IDS) Division, operating under the oLSI® model, has requirements for technical/project management support; budget execution support; material procurement support; data management support; training support; and graphics, media, communications, and clerical support. The projects directly support multiple major defense acquisition programs, other acquisition category designations, and other defense weapons systems including, but not limited to, air, ship, shore, and identification; expeditionary and range control systems; operational control systems; integration, production, installation, and certification; system, mission, and software engineering; and fleet area control and surveillance facility field maintenance.",
+  "detail_text_length": 762,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/61695ee3216d46be901aeba0a9e0c5e7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d342225c15514100bec2021596128bb7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6f9c736c7db47aa9e7cb2450c11a27b/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/61695ee3216d46be901aeba0a9e0c5e7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/022f4a1859973e6ec3433224f5b9a9f1fe9161e418ec8ea2c18e4aefa79c27d4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/022f4a1859973e6ec3433224f5b9a9f1fe9161e418ec8ea2c18e4aefa79c27d4.pdf",
+      "file_id": "61695ee3216d46be901aeba0a9e0c5e7",
+      "file_name": "IDS+TPS_CSS+SOW_Draft_SS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 489443,
+      "sha256": "022f4a1859973e6ec3433224f5b9a9f1fe9161e418ec8ea2c18e4aefa79c27d4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d342225c15514100bec2021596128bb7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd46c9ca05742706a82ade5de37a64d45500bf13a2dcb7429930a869926577a6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd46c9ca05742706a82ade5de37a64d45500bf13a2dcb7429930a869926577a6.pdf",
+      "file_id": "d342225c15514100bec2021596128bb7",
+      "file_name": "IDS+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 198348,
+      "sha256": "dd46c9ca05742706a82ade5de37a64d45500bf13a2dcb7429930a869926577a6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6f9c736c7db47aa9e7cb2450c11a27b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a8945b0a0a9e2f30ec016c4baabde9ca20f3c7e8893a1d9d05d2fc108a14397.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a8945b0a0a9e2f30ec016c4baabde9ca20f3c7e8893a1d9d05d2fc108a14397.pdf",
+      "file_id": "f6f9c736c7db47aa9e7cb2450c11a27b",
+      "file_name": "TPS+LOE+Estimate.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 363381,
+      "sha256": "2a8945b0a0a9e2f30ec016c4baabde9ca20f3c7e8893a1d9d05d2fc108a14397"
+    }
+  ],
+  "_mirror_hash": "27eb171b75b21ca4a9cb0f62e2f950ba4a4a3d28a213355809d051f21f73511a",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.429500+00:00"
+}

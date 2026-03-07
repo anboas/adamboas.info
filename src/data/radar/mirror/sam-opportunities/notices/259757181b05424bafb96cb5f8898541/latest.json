@@ -1,0 +1,70 @@
+{
+  "id": "sam-259757181b05424bafb96cb5f8898541",
+  "title": "Draft RFP MHE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=259757181b05424bafb96cb5f8898541",
+  "opportunity_url": "https://sam.gov/opp/259757181b05424bafb96cb5f8898541/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/259757181b05424bafb96cb5f8898541/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "259757181b05424bafb96cb5f8898541",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "W911RX25RA003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT RILEY",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=259757181b05424bafb96cb5f8898541",
+  "detail_text": "This Draft Request for Proposal (DRFP) is issued by the Mission and Installation Contracting Command (MICC) - Fort Riley KS for Fort Hood solely for market research and acquisition planning purposes. This document does not constitute a formal solicitation (RFP) or a promise to issue a solicitation in the future.\" Non-Binding Nature: \"The Government is not seeking or accepting competitive proposals at this time, and no contract award will result from this posting. Any costs incurred by interested parties in responding to this Draft RFP are the sole responsibility of the responder; the Government will not provide reimbursement for any costs associated with this request.\" Industry Feedback Objective: \"The purpose of this Draft RFP is to solicit industry feedback, comments, and suggestions regarding the Performance Work Statement (PWS), evaluation criteria, and contract structure to improve the clarity and feasibility of the final requirement.\" This is a non-personal services contract toprovide Material Handling Equipment (MHE) for III AC & Fort Hood, Texas. Thecontractor shall provide all personnel, equipment, supplies, transportation, tools,materials, supervision, fuel, and other items necessary to perform movements of UnitEquipment, (except as otherwise noted in the specific Task Order (TO) and perform allwork in strict accordance with the subsequent task orders as defined in the PWS,required for this MATOC. The MATOC is for Material Handling Equipment at Fort Hood,TX and surrounding areas, not to exceed 100-mile radius. The contractor shall providethe capability to simultaneously upload and download containerized equipment acrossseveral battalion footprints, when necessary and established at the TO level. Locationsalso include the wash rack, line haul site, Deployment Ready Reaction Field (DRRF)and the Rail Operations Center (ROC) to support operations throughout the III ACfootprint. Services provided under this action will be in support of deployment,redeployment operations and in certain circumstances will require 24 hours ofcontinuous operations, which will be identified at the TO level. During the contractperiod, the Government will identify tasks required to complete each specific job and willissue Requests for Task Order Proposals (RTOP) to all the MATOC Contractors. TheContractor(s) shall be required to furnish all materials, equipment, and labor necessaryto manage and accomplish the TO(s).",
+  "detail_text_length": 2440,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e82a9229dee474aa50348860e42d3ab/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78dbfab487a74de6a260d1d9676cc23b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b24f17d4bba4e3894429826865756a8/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e82a9229dee474aa50348860e42d3ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/901e96c2cc543b12afaa621c05a4b8edbac74f952cea67bdda9934efcde054ef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/901e96c2cc543b12afaa621c05a4b8edbac74f952cea67bdda9934efcde054ef.pdf",
+      "file_id": "5e82a9229dee474aa50348860e42d3ab",
+      "file_name": "Attachment+2+Wage+Determination+2015+5237RV+29+W911RX24RA0003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 107463,
+      "sha256": "901e96c2cc543b12afaa621c05a4b8edbac74f952cea67bdda9934efcde054ef"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78dbfab487a74de6a260d1d9676cc23b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9b302e7b1978909d5e0ba6ffcd7658b2d5404f555fddbcf79317398835ab0cb9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9b302e7b1978909d5e0ba6ffcd7658b2d5404f555fddbcf79317398835ab0cb9.pdf",
+      "file_id": "78dbfab487a74de6a260d1d9676cc23b",
+      "file_name": "Attachment+1+PWS+MH+EIII+AC+PWS+02MAR25+W911RX25RA003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 561366,
+      "sha256": "9b302e7b1978909d5e0ba6ffcd7658b2d5404f555fddbcf79317398835ab0cb9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b24f17d4bba4e3894429826865756a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d8aafb010efa9f69490d59471195f79778868c399bb9f3e53c4033a01099675c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d8aafb010efa9f69490d59471195f79778868c399bb9f3e53c4033a01099675c.pdf",
+      "file_id": "9b24f17d4bba4e3894429826865756a8",
+      "file_name": "DRAFT+Solicitation++W911RX25RA003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4603505,
+      "sha256": "d8aafb010efa9f69490d59471195f79778868c399bb9f3e53c4033a01099675c"
+    }
+  ],
+  "_mirror_hash": "7a65240d4e0facd9e12725be47b8724093e2d676f975c4d7ed4e1763c62244fb",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.494841+00:00"
+}

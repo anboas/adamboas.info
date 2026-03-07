@@ -1,11 +1,11 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-03-06T14:41:30.912918+00:00
+Generated: 2026-03-07T14:40:29.442936+00:00
 
 - Total: 19
-- OK: 11
+- OK: 10
 - Blocked: 6
-- Failed: 2
+- Failed: 3
 
 | Feed | Category | Status | Blocked | Year hits | Event hits | URL | Notes |
 |---|---|---:|:---:|---:|---:|---|---|
@@ -25,6 +25,6 @@ Generated: 2026-03-06T14:41:30.912918+00:00
 | NDIA Events | constrained_official | 200 | yes | 0 | 0 | https://www.ndia.org/events |  |
 | NDIA SpecialOps26 | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/SpecialOps26 |  |
 | 36th Annual NDIA Special Operations Symposium | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium |  |
-| Federal AI Forum 2026 | one_off_event | 200 | no | 33 | 22 | https://govciomedia.com/federal-ai-forum/ |  |
-| AI Summit 2026 | one_off_event | 200 | no | 65 | 61 | https://govciomedia.com/ai-summit-2026/ |  |
-| GovEvents Calendar | aggregator_discovery | 200 | no | 1 | 20 | https://www.govevents.com/calendar.php?s=1 |  |
+| Federal AI Forum 2026 | one_off_event | 200 | no | 31 | 22 | https://govciomedia.com/federal-ai-forum/ |  |
+| AI Summit 2026 | one_off_event | 200 | no | 63 | 61 | https://govciomedia.com/ai-summit-2026/ |  |
+| GovEvents Calendar | aggregator_discovery | 403 | no | 0 | 0 | https://www.govevents.com/calendar.php?s=1 | HTTP 403 |

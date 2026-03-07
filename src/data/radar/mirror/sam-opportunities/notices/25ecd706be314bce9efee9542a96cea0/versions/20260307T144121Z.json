@@ -1,0 +1,57 @@
+{
+  "id": "sam-25ecd706be314bce9efee9542a96cea0",
+  "title": "Maintenance and Services for Integrated Commercial Intrusion Detection System (ICIDSIV), Version IV",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=25ecd706be314bce9efee9542a96cea0",
+  "opportunity_url": "https://sam.gov/opp/25ecd706be314bce9efee9542a96cea0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/25ecd706be314bce9efee9542a96cea0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "25ecd706be314bce9efee9542a96cea0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W56ZLW-26-Q-0005",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.0418 AQ HQ     CONTRACTING SUP",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=25ecd706be314bce9efee9542a96cea0",
+  "detail_text": "The U.S. Government is conducting additional market research to support a potential update to this requirement. Specifically, the Government is evaluating whether certain technical requirements associated with the Integrated Commercial Intrusion Detection System (ICIDS‑IV)—including the use of DAQ Electronics‑certified equipment, tools, software, and technicians—may necessitate a Brand‑Name Justification and Approval (J&A) in accordance with FAR 11.105. This updated Sources Sought Notice seeks to confirm the availability of qualified sources capable of meeting these requirements or providing technically acceptable alternatives. The U.S. Government desires to procure Maintenance and Services for the Integrated Commercial Intrusion Detection System (ICIDS‑IV), which includes providing the management, personnel, and technical capability necessary to effectively, efficiently, and safely support system operability across the Fort Bliss Military Reservation. The contractor will provide all services and preventive maintenance required to maintain ICIDS‑IV components in operational status, including the Primary Monitoring Cabinet, Operator Work Station, Remote Monitoring Stations (RMS), and associated devices throughout the installation. The Contractor shall furnish all personnel, equipment, supplies, facilities, transportation, tools, materials, supervision, and other non‑personal services necessary to perform preventive maintenance and sustainment of ICIDS‑IV on Fort Bliss, East Fort Bliss, Dona Ana (NM), Oro Grande (NM), and McGregor Range (NM), as defined in the draft Performance Work Statement (PWS), except for those items designated as Government‑furnished property or services.",
+  "detail_text_length": 1704,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdaaf689a8eb4abdb74c547c1a11db68/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddf22689dbe045e28c80f23debd87502/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdaaf689a8eb4abdb74c547c1a11db68/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cdbfc17e994488aea57429a19c35294551ebc2f2eb76d3f4f8e084cf2dfe05cb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cdbfc17e994488aea57429a19c35294551ebc2f2eb76d3f4f8e084cf2dfe05cb.docx",
+      "file_id": "bdaaf689a8eb4abdb74c547c1a11db68",
+      "file_name": "ICIDS+PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9087182,
+      "sha256": "cdbfc17e994488aea57429a19c35294551ebc2f2eb76d3f4f8e084cf2dfe05cb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddf22689dbe045e28c80f23debd87502/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d05838c9c7dcf66644bd599161339c53e27b079fb8edfa3dbb7f850b7743002d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d05838c9c7dcf66644bd599161339c53e27b079fb8edfa3dbb7f850b7743002d.docx",
+      "file_id": "ddf22689dbe045e28c80f23debd87502",
+      "file_name": "W56ZLW-26-Q-0005+P0001+SAM+Sources+Sought+Notice.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20151,
+      "sha256": "d05838c9c7dcf66644bd599161339c53e27b079fb8edfa3dbb7f850b7743002d"
+    }
+  ],
+  "_mirror_hash": "76559822ba209f0b4bc07cfed61abe8bfb1cd846af388a433f3975be055fe13a",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.564819+00:00"
+}

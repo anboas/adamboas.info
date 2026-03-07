@@ -1,0 +1,47 @@
+{
+  "id": "sam-89a077edee8b4d36a2e88ce8ded10dfe",
+  "title": "Maryland Education Enterprise Consortium (MEEC) Microsoft EES",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=89a077edee8b4d36a2e88ce8ded10dfe",
+  "opportunity_url": "https://sam.gov/opp/89a077edee8b4d36a2e88ce8ded10dfe/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/89a077edee8b4d36a2e88ce8ded10dfe/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "89a077edee8b4d36a2e88ce8ded10dfe",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "1301340287",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=89a077edee8b4d36a2e88ce8ded10dfe",
+  "detail_text": "The Fleet Logistics Center Norfolk, Virginia is seeking information for planning purposes to identify qualified and experienced sources in an effort to provide an annual subscription of software components from the Maryland Education Enterprise Consortium’s (hereinafter “MEEC”) Microsoft Enrollment for Education Solutions (hereinafter “EES) on behalf of the United States Naval Academy. A Firm-Fixed-Price (FFP), Single Award, contract action under NAICS code 513210 – Software Publishers , with a Size Standard of $47.0M (millions of dollars) is anticipated. Please see the attached \" Sources Sought Notice\" for more information. Subject to FAR Clause 52.215-3, entitled \"Solicitation for Information of Planning Purpose,\" this announcement constitutes a sources sought synopsis for written information only. This is not a solicitation announcement for proposals and no contract will be awarded from this announcement. This sources sought notice is not to be construed in any way as a commitment by the Government, nor will the Government pay for the information submitted in response.",
+  "detail_text_length": 1088,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e3575af371c43359427b582c62aad65/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e3575af371c43359427b582c62aad65/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7903857069ef804b91035cbb368407fdb7f07d07f25b3a0a0054fa78aa26768e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7903857069ef804b91035cbb368407fdb7f07d07f25b3a0a0054fa78aa26768e.pdf",
+      "file_id": "5e3575af371c43359427b582c62aad65",
+      "file_name": "Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 546477,
+      "sha256": "7903857069ef804b91035cbb368407fdb7f07d07f25b3a0a0054fa78aa26768e"
+    }
+  ],
+  "_mirror_hash": "cdb952f173ccb8867ce6ab4158c37dd7051034c8dc3142ef9827dc72cdccee5f",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.406657+00:00"
+}

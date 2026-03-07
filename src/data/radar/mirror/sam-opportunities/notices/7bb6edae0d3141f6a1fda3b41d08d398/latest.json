@@ -1,0 +1,67 @@
+{
+  "id": "sam-7bb6edae0d3141f6a1fda3b41d08d398",
+  "title": "26-SIMACQ-E20-0005 Crane Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7bb6edae0d3141f6a1fda3b41d08d398",
+  "opportunity_url": "https://sam.gov/opp/7bb6edae0d3141f6a1fda3b41d08d398/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7bb6edae0d3141f6a1fda3b41d08d398/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7bb6edae0d3141f6a1fda3b41d08d398",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6339426Q4018",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.COMMANDING OFFICER",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7bb6edae0d3141f6a1fda3b41d08d398",
+  "detail_text": "See Solicitation with SOW for details.In addition see answers to questions. ALCON, The period for questions and answers has now ended 3/6/2026. All questions that have been sent prior will be answered and available to view as an attachment with this solicitation.",
+  "detail_text_length": 263,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/169ca3178a004025a0d5392837a6bb95/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c17afbd07d1f49c6b76df70860893eb3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6f1900702fe495592e898895f87f486/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/169ca3178a004025a0d5392837a6bb95/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/348e602df3c38bf6ea3836582a88d3e115ddb865194031804421d7e223ee19d7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/348e602df3c38bf6ea3836582a88d3e115ddb865194031804421d7e223ee19d7.pdf",
+      "file_id": "169ca3178a004025a0d5392837a6bb95",
+      "file_name": "26-SIMACQ-E20-0005_Solicitation_Vr2_2262026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1884884,
+      "sha256": "348e602df3c38bf6ea3836582a88d3e115ddb865194031804421d7e223ee19d7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c17afbd07d1f49c6b76df70860893eb3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/778aececef641a94139093584cd027855b36b8f48a31c0408a4121cff9116c03.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/778aececef641a94139093584cd027855b36b8f48a31c0408a4121cff9116c03.pdf",
+      "file_id": "c17afbd07d1f49c6b76df70860893eb3",
+      "file_name": "26-SIMACQ-E20-0005_Answers-To_Questions_2262026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 117090,
+      "sha256": "778aececef641a94139093584cd027855b36b8f48a31c0408a4121cff9116c03"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6f1900702fe495592e898895f87f486/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e09cd2993da4a7e5bfaab095ee973a8e205db9e07b0da7dd9f0f78370dc68952.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e09cd2993da4a7e5bfaab095ee973a8e205db9e07b0da7dd9f0f78370dc68952.pdf",
+      "file_id": "f6f1900702fe495592e898895f87f486",
+      "file_name": "26-SIMACQ-E20-0005_Answers-To_Questions_Vr2_322026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 104394,
+      "sha256": "e09cd2993da4a7e5bfaab095ee973a8e205db9e07b0da7dd9f0f78370dc68952"
+    }
+  ],
+  "_mirror_hash": "815e37dcd16a01b0be1ad7c6efea6300c68759ebb0707eaddb66fd2c927c4b9e",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.462727+00:00"
+}

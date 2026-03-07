@@ -1,0 +1,57 @@
+{
+  "id": "sam-18d1118419bc4c60a314631769cefc4f",
+  "title": "JCLC Rescia",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=18d1118419bc4c60a314631769cefc4f",
+  "opportunity_url": "https://sam.gov/opp/18d1118419bc4c60a314631769cefc4f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/18d1118419bc4c60a314631769cefc4f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "18d1118419bc4c60a314631769cefc4f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "PANMCC26P0000039916",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO SAM HOUSTON.W6QM MICC-FT KNOX",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=18d1118419bc4c60a314631769cefc4f",
+  "detail_text": "See the DRAFT PWS and Intent to Sole Source.",
+  "detail_text_length": 44,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/571242ec85c845079cc736e58a7d770d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d0188909424404e99fa321b8a3edc8b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/571242ec85c845079cc736e58a7d770d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3c36de7c5a6ba73031abcf7f687b3d1cf3bd0508f48adf7fe5c1034611c897b1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3c36de7c5a6ba73031abcf7f687b3d1cf3bd0508f48adf7fe5c1034611c897b1.pdf",
+      "file_id": "571242ec85c845079cc736e58a7d770d",
+      "file_name": "IA02+PWS+DRAFT+-2BDE+JCLC+Resica-3MAR26+-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 239538,
+      "sha256": "3c36de7c5a6ba73031abcf7f687b3d1cf3bd0508f48adf7fe5c1034611c897b1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d0188909424404e99fa321b8a3edc8b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a54a443a2284e114614aec88af8df42ec7876f9910ba27c4fa8b529c2a1938ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a54a443a2284e114614aec88af8df42ec7876f9910ba27c4fa8b529c2a1938ca.pdf",
+      "file_id": "8d0188909424404e99fa321b8a3edc8b",
+      "file_name": "IB01+Intent+to+Sole+Source+-+JCLC+Resica.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 146101,
+      "sha256": "a54a443a2284e114614aec88af8df42ec7876f9910ba27c4fa8b529c2a1938ca"
+    }
+  ],
+  "_mirror_hash": "aeb221b510b28be18415d0a44834796ba3cb3a73f75e8cf9afbabc8c17865253",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.653576+00:00"
+}

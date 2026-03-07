@@ -1,0 +1,59 @@
+{
+  "id": "sam-996f91f49cb54a4fb1d0882830d14104",
+  "title": "Request For Information - 3rd Party Airline Travel Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=996f91f49cb54a4fb1d0882830d14104",
+  "opportunity_url": "https://sam.gov/opp/996f91f49cb54a4fb1d0882830d14104/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/996f91f49cb54a4fb1d0882830d14104/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "996f91f49cb54a4fb1d0882830d14104",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "70US0926ES0001",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US SECRET SERVICE.U S SECRET SERVICE",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=996f91f49cb54a4fb1d0882830d14104",
+  "detail_text": "Amended 3/6/2026; Added Q&As Request for Information - 3rd Party Airline Travel Information The US Secret Service is requesting information on the existing capability or feasibility of creating an online investigative searching tool/application would serve as a banking agency between airlines and travel agencies (such as Orbitz, Expedia, and Travelocity).",
+  "detail_text_length": 357,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e7d4d52d31d4733944affc9227017a8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cb96fef69904dc9b9eb9f3e0730ed18/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e7d4d52d31d4733944affc9227017a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a0c1b69c72609b959360d85fe8848de4f2ea98d1c9ddaaacc6f36ad605418d69.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a0c1b69c72609b959360d85fe8848de4f2ea98d1c9ddaaacc6f36ad605418d69.pdf",
+      "file_id": "1e7d4d52d31d4733944affc9227017a8",
+      "file_name": "QAs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 234391,
+      "sha256": "a0c1b69c72609b959360d85fe8848de4f2ea98d1c9ddaaacc6f36ad605418d69"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cb96fef69904dc9b9eb9f3e0730ed18/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f484c06f0b02e4d162f394d532704b1aab3286a06d9c7c17e23a1f8c96b70ea8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f484c06f0b02e4d162f394d532704b1aab3286a06d9c7c17e23a1f8c96b70ea8.docx",
+      "file_id": "5cb96fef69904dc9b9eb9f3e0730ed18",
+      "file_name": "3rd+Party+Flight+Information+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 42262,
+      "sha256": "f484c06f0b02e4d162f394d532704b1aab3286a06d9c7c17e23a1f8c96b70ea8"
+    }
+  ],
+  "_mirror_hash": "e48140321aa0e29dc7cced945e72faaffb6830d825dd83d8bce7244f22297879",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.456851+00:00"
+}

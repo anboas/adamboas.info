@@ -1,0 +1,46 @@
+{
+  "id": "sam-aeafde762e6d4ce1a0bb6ce15f4a7e22",
+  "title": "SASPO Strategic Sourcing Brochure",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aeafde762e6d4ce1a0bb6ce15f4a7e22",
+  "opportunity_url": "https://sam.gov/opp/aeafde762e6d4ce1a0bb6ce15f4a7e22/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aeafde762e6d4ce1a0bb6ce15f4a7e22/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aeafde762e6d4ce1a0bb6ce15f4a7e22",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SASPO-Strategic-Sourcing-Brochure",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.F3YCCF 448 SCMW",
+  "posted_date": "2026-03-06",
+  "response_deadline": "2026-01-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aeafde762e6d4ce1a0bb6ce15f4a7e22",
+  "detail_text": "SASPO Strategic Sourcing Brochure",
+  "detail_text_length": 33,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cade0846a5634883aecdf40747de4c70/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cade0846a5634883aecdf40747de4c70/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d5fbf4b80c1743c3a3c1a26c4a7832f32f5ad43c96ca25f9b14ff8aaa3e7e9d8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d5fbf4b80c1743c3a3c1a26c4a7832f32f5ad43c96ca25f9b14ff8aaa3e7e9d8.pdf",
+      "file_id": "cade0846a5634883aecdf40747de4c70",
+      "file_name": "SASPO+Strategic+Sourcing+Brochure+Royal+Blue_v3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 884480,
+      "sha256": "d5fbf4b80c1743c3a3c1a26c4a7832f32f5ad43c96ca25f9b14ff8aaa3e7e9d8"
+    }
+  ],
+  "_mirror_hash": "654ecb3f02f6ad94f2bdca9e398e373a0c6d4261beb7ff6d8094597eec454722",
+  "_mirror_run_id": "20260307T144121Z",
+  "_mirror_recorded_at": "2026-03-07T14:46:20.527450+00:00"
+}
