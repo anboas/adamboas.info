@@ -1,19 +1,19 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-07T14:46:20.320860+00:00
+Generated: 2026-03-08T13:42:03.817569+00:00
 Profile: all
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/07/2026
+Posted range: 01/01/2026 -> 03/08/2026
 
 ## Counts
-- Total candidates: 690
-- Navy-related: 163
-- Full detail cached: 690
-- Notices with attachments: 406
-- Total attachment links: 1154
-- Combined Synopsis/Solicitation: 20
+- Total candidates: 681
+- Navy-related: 153
+- Full detail cached: 681
+- Notices with attachments: 397
+- Total attachment links: 1072
+- Combined Synopsis/Solicitation: 10
 - Pre-solicitation: 209
-- Solicitation: 43
+- Solicitation: 44
 - Sources Sought: 209
 - Special Notice: 209
 
@@ -70,7 +70,6 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-06 | DEPT OF DEFENSE | [Airshow Vehicle BPA](https://sam.gov/opp/d0cabae0801b4214b4f7cba4ea0f2fe4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-06 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [Managed Teleradiology Services Phoenix Area Indian Health Service (IHS)](https://sam.gov/opp/891ca0057a8b483096f5f1e13f233c09/view) |
 | 2 | Special Notice | Special Notice | 2026-03-06 | 2026-03-06 | DEPT OF DEFENSE | [Notice of Intent to Sole Source – Submersible Electric pump rated for 20cfs @ 13.03 feet Total Dynamic Head (THD).](https://sam.gov/opp/6a6d1d5436724b51b521734e045e57fc/view) |
-| 5 | Special Notice | Special Notice | 2026-03-04 | 2026-03-07 | DEPT OF DEFENSE | [Software Licenses](https://sam.gov/opp/e064ae51d8c04f9e8d657d1b48e2e7a4/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-07 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [Intent to Sole Source - 2 BK Medical E14CL4b Biplane Endocavity transducer Transrectal and Transvaginal probes](https://sam.gov/opp/adcd49391cc14df9898cc84ae8f0ea6a/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-07 | DEPT OF DEFENSE | [Notice of Intent to Award Sole Source - TLETS Upgrade](https://sam.gov/opp/eee34e6e791d430ead0a2f2ad378ccd2/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-07 | DEPT OF DEFENSE | [Sole Source to Karcher Group](https://sam.gov/opp/aa0fbcf03c384a9eb7f2d55a2cb5a55f/view) |
@@ -126,7 +125,6 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-10 | DEPT OF DEFENSE | [Instron Test System](https://sam.gov/opp/a2d80e73a66c4251b89653bb7ac7f7b4/view) |
 | 4 | Solicitation | - | 2026-03-06 | 2026-03-10 | DEPT OF DEFENSE | [B1245 Roof Repair](https://sam.gov/opp/f406ecc5f9f44800a77f5e74cfeaa9c8/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-06 | 2026-03-10 | HOMELAND SECURITY, DEPARTMENT OF | [Request For Information - 3rd Party Airline Travel Information](https://sam.gov/opp/996f91f49cb54a4fb1d0882830d14104/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-10 | DEPT OF DEFENSE | [technical and instructional services for the US Naval Academy ARES Squadron](https://sam.gov/opp/5d3c142666fd4ec28921f022702ad86b/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-10 | DEPT OF DEFENSE | [66--DISPLAY UNIT,HEAD-U](https://sam.gov/opp/38a4ab51928e4b5c93c742a090606fc7/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-10 | DEPT OF DEFENSE | [Access Control System (ACS) and Intrusion Control System (IDS) Install](https://sam.gov/opp/329328ff92e74b249ca1914d8f492a1b/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-10 | DEPT OF DEFENSE | [FTQW261406 Replace Upper Dgst Compressors](https://sam.gov/opp/332879b11888481681373d758d55b0d3/view) |
@@ -170,7 +168,6 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 5 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-11 | DEPT OF DEFENSE | [Maryland Education Enterprise Consortium (MEEC) Microsoft EES](https://sam.gov/opp/89a077edee8b4d36a2e88ce8ded10dfe/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-11 | DEPT OF DEFENSE | [Radar Depot Mast Thermal Spray Services](https://sam.gov/opp/a355d56eca624414b3ef0fd098f374b2/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-11 | DEPT OF DEFENSE | [RJ-10 Fuel](https://sam.gov/opp/8effd73f7e76452db203d4c04f17da46/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-11 | DEPT OF DEFENSE | [100 STUDS, CONTINUOUS THREAD (PNSY)](https://sam.gov/opp/6ca119cf91544fec937a0fdcfb45c40e/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-11 | DEPT OF DEFENSE | [BRAND NAME - MARKFORGED 3D PRINTERS AND PARTS](https://sam.gov/opp/ecbdd3c1882a4adea91b6faef9db6029/view) |
 | 4 | Solicitation | - | 2026-03-06 | 2026-03-11 | DEPT OF DEFENSE | [SOLE SOURCE OEM SOF SURFACES INC. GYM FLOORING](https://sam.gov/opp/ac857e1fedac43deaf2f4cd47a33816b/view) |
 | 3 | Solicitation | Sources Sought | 2026-03-06 | 2026-03-11 | INTERIOR, DEPARTMENT OF THE | [The purpose of this notice is a Source Sought Noti](https://sam.gov/opp/ef570488aeb846939d665ecbe3fc3e39/view) |
@@ -258,7 +255,6 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 4 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-13 | VETERANS AFFAIRS, DEPARTMENT OF | [6515--Sources Sought - Pill Packaging System](https://sam.gov/opp/f45eb830ffc14f50bfd2ad2161aad948/view) |
 | 4 | Solicitation | - | 2026-03-06 | 2026-03-13 | DEPT OF DEFENSE | [N0001426R3002 DRAFT REQUEST FOR PROPOSAL](https://sam.gov/opp/e0707dc45f4f47669e8a26b96216d61a/view) |
 | 4 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-13 | DEPT OF DEFENSE | [Pre-Solicitation Notice and Draft RFP for Environmental Remediation Services (ERS) Single Award Task Order Contract (SATOC) For the Shaw Air Force Base Optimized Remediation Contract (ORC)](https://sam.gov/opp/7ecf8aefa5204de5986ad98c60facbe5/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-13 | DEPT OF DEFENSE | [Purchase, 20Feet Conex Box](https://sam.gov/opp/26d79e268c9642e99d83b89dcca6323e/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-13 | AGRICULTURE, DEPARTMENT OF | [SOURCES SOUGHT - Service contract for Shimadzu TOC-LCPH, TNM-L Total Nitrogen Module, and ASI-L](https://sam.gov/opp/9773f8f9747e4d6aaa948048d0e0eb5a/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-13 | DEPT OF DEFENSE | [Sources Sought Notice for Project CL25328002](https://sam.gov/opp/1e6a5ee74bc543a2ab543f38ed2e613a/view) |
 | 4 | Solicitation | - | 2026-03-06 | 2026-03-13 | DEPT OF DEFENSE | [VALVE ASSY,COMPRESS](https://sam.gov/opp/64a145f47a404178977019da65547567/view) |
@@ -308,7 +304,6 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-16 | DEPT OF DEFENSE | [Joint Enterprise Task Management System (JETMS)](https://sam.gov/opp/600404f4a8e04fafb828ab0ec63fc8c4/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-16 | DEPT OF DEFENSE | [Notice of Intent to Sole Source: DEOMI American Council on Education (ACE) Learning Evaluation](https://sam.gov/opp/a8e100d5a0bf430a8a46f31a631ea3f3/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [Measurement International Option Year Calibration](https://sam.gov/opp/f4e12edf7017443faf794d8406726849/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [Regional 8(a) Janitorial Services](https://sam.gov/opp/f8889400ec144427a0279058ebb149d1/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [Request for Information-Innovative Food Service Equipment, Automation, and Data-Driven Production Solutions](https://sam.gov/opp/f519dc1c7ddd49538f3b90ca1ab79b2a/view) |
 | 2 | Special Notice | Special Notice | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [DLA Energy Into-Plane Information Session](https://sam.gov/opp/6bfbe43e10c1424bb2477ee1674b3fca/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-16 | STATE, DEPARTMENT OF | [Global Asset Tag Printing - Updated](https://sam.gov/opp/8cf530259bf940c1a14b1743dde5a5ce/view) |
@@ -326,7 +321,12 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-16 | DEPT OF DEFENSE | [2040 JOINER DOOR](https://sam.gov/opp/ae47fb7e7ba748c7b3292c84baf62c4c/view) |
 | 4 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-16 | VETERANS AFFAIRS, DEPARTMENT OF | [6505--Nuclear Medicine Radiopharmaceuticals (VA-26-00043023)  Request for Information](https://sam.gov/opp/8a18c923cc4449118873dfcd0ab160de/view) |
 | 4 | Solicitation | - | 2026-03-06 | 2026-03-16 | DEPT OF DEFENSE | [BOLT,MACHINE](https://sam.gov/opp/96576c62559b40ffa26d5bd5a8444c49/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-16 | DEPT OF DEFENSE | [IAR Software Renewal](https://sam.gov/opp/29b82719dbe34f959994460096fa63d7/view) |
+| 4 | Solicitation | - | 2026-03-06 | 2026-03-16 | DEPT OF DEFENSE | [VOYAGE REPAIRS (VR)](https://sam.gov/opp/e56a102ff44949ea86d91cc8ff9a159e/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-16 | VETERANS AFFAIRS, DEPARTMENT OF | [7240--Linen Carts & Hampers, Durham VAMC](https://sam.gov/opp/110a95c2c942473bba2a70d077145545/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-16 | DEPT OF DEFENSE | [BATTERY,NONRECHARGE](https://sam.gov/opp/579b244a53cd4397a6834209b94e92ce/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-16 | DEPT OF DEFENSE | [Full Food Services - Fort Gordon, Georgia](https://sam.gov/opp/0da117e30d4548f1b87a396fb6411544/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-16 | DEPT OF DEFENSE | [Joint Enabling Capabilities Command (JECC)/Joint Planners Support Element (JPSE) Support Services (JECC/JPSE SS)](https://sam.gov/opp/584d423af1c3459cacf1d0fd2b9d91e1/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-03-16 | ENERGY, DEPARTMENT OF | [R--DOE EDF Financial Advisor FY26 Standing List](https://sam.gov/opp/961edc423f8646c5a575b87b62ea4b5d/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

@@ -1,23 +1,23 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-07T14:46:43.439928+00:00
+Generated: 2026-03-08T13:42:29.608718+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/07/2026
+Posted range: 01/01/2026 -> 03/08/2026
 
 ## Counts
-- Total candidates: 26
+- Total candidates: 25
 - Navy-related: 0
-- Full detail cached: 26
+- Full detail cached: 25
 - Notices with attachments: 19
 - Total attachment links: 27
 - Pre-solicitation: 5
-- Sources Sought: 14
+- Sources Sought: 13
 - Special Notice: 7
 
 ## Engagement signals
 - Pre-solicitation: 5
-- Sources Sought: 14
+- Sources Sought: 13
 - Special Notice: 7
 
 ## Top candidates
@@ -25,7 +25,6 @@ Posted range: 01/01/2026 -> 03/07/2026
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-01-16 | DEPT OF DEFENSE | [Capacity as A Service (CaaS)](https://sam.gov/opp/4daa3f92dba84c58a453bcae9caea775/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-17 | 2026-02-20 | DEPT OF DEFENSE | [Polaris Ranger Crew and Accessories](https://sam.gov/opp/660ec0fc3be7483ca290d2a0816ee516/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-11 | 2026-02-26 | DEPT OF DEFENSE | [Catholic Priest Services](https://sam.gov/opp/0046d8d0beaf40a28021ad7257e4de2b/view) |
 | 2 | Special Notice | Special Notice | 2026-02-18 | 2026-02-26 | DEPT OF DEFENSE | [Pega Term Licenses](https://sam.gov/opp/190e58391f8e4feb96ef476c03f74d9b/view) |
 | 2 | Special Notice | Special Notice | 2026-02-25 | 2026-02-26 | DEPT OF DEFENSE | [NOI TO SOLE SOURCE WHITE UNIFORM GLOVES](https://sam.gov/opp/7419042851654d70b07fa10212b0d3e6/view) |

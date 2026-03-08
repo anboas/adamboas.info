@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-07T14:47:05.579560+00:00
+Generated: 2026-03-08T13:42:52.424048+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/07/2026
+Posted range: 01/01/2026 -> 03/08/2026
 
 ## Counts
-- Total candidates: 107
-- Navy-related: 107
-- Full detail cached: 107
+- Total candidates: 104
+- Navy-related: 104
+- Full detail cached: 104
 - Notices with attachments: 40
 - Total attachment links: 182
-- Combined Synopsis/Solicitation: 26
-- Pre-solicitation: 29
+- Combined Synopsis/Solicitation: 25
+- Pre-solicitation: 28
 - Solicitation: 13
-- Sources Sought: 28
+- Sources Sought: 27
 - Special Notice: 11
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 31
-- Sources Sought: 28
+- Pre-solicitation: 30
+- Sources Sought: 27
 - Vendor Outreach: 1
 - Special Notice: 11
 
@@ -37,9 +37,6 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 6 | Solicitation | - | 2026-01-23 | 2026-02-06 | DEPT OF DEFENSE | [Request for Proposals for Modeling, Simulation, Engineering, Analysis, and Tactics (MSEAT)](https://sam.gov/opp/d304ad4995e9428dbeae0d04018ca9e4/view) |
 | 6 | Solicitation | - | 2026-01-30 | 2026-02-09 | DEPT OF DEFENSE | [Mass Comparator](https://sam.gov/opp/f0656267fc694c0fa4b6b10d53d3aff7/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-04 | 2026-02-13 | DEPT OF DEFENSE | [Canadian Vehicle Liability Service](https://sam.gov/opp/02a440dfe5784e34ac6357ea74e459e9/view) |
-| 5 | Sources Sought | Sources Sought | 2026-02-05 | 2026-02-20 | DEPT OF DEFENSE | [Amendment 1 E-6B Subsystems Sustained Mission Readiness (SMR)](https://sam.gov/opp/d622b0cc9acf45769c04c3cb0f2d8bb0/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-02-05 | 2026-02-20 | DEPT OF DEFENSE | [Repair of Embedded Acoustic Data Recorders (EADRs) and Data Access Storage Devices (DASDs)](https://sam.gov/opp/e05d8716f29245cc87e901e294f87642/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-02-05 | 2026-02-20 | DEPT OF DEFENSE | [Greece S-70B 365-Day Inspections](https://sam.gov/opp/78c86488a627460d9f60afae2ed4ae25/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-02 | 2026-02-23 | DEPT OF DEFENSE | [DRAFT REQUEST FOR PROPOSAL (RFP)  Undergraduate Jet Training System (UJTS)](https://sam.gov/opp/409c83b53a094adb95565a7533e03e4b/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-09 | 2026-02-23 | DEPT OF DEFENSE | [Manufacturing for QTY 9x Cable ASSY, Exploder, 2W7](https://sam.gov/opp/004ed7ad390441e280b6a3d41befea91/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-02-09 | 2026-02-23 | DEPT OF DEFENSE | [SSC Advance Skirts Systems](https://sam.gov/opp/1b7c2552fa6c4c56a8836fecec35e40a/view) |

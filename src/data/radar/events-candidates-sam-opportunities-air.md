@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-07T14:46:55.381817+00:00
+Generated: 2026-03-08T13:42:41.302972+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/07/2026
+Posted range: 01/01/2026 -> 03/08/2026
 
 ## Counts
-- Total candidates: 272
+- Total candidates: 266
 - Navy-related: 0
-- Full detail cached: 272
-- Notices with attachments: 219
-- Total attachment links: 623
+- Full detail cached: 266
+- Notices with attachments: 213
+- Total attachment links: 614
 - Pre-solicitation: 60
-- Sources Sought: 164
-- Special Notice: 48
+- Sources Sought: 160
+- Special Notice: 46
 
 ## Engagement signals
 - Industry Day: 5
-- Pre-solicitation: 106
-- Sources Sought: 164
-- Special Notice: 48
+- Pre-solicitation: 103
+- Sources Sought: 160
+- Special Notice: 46
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -42,13 +42,7 @@ Posted range: 01/01/2026 -> 03/07/2026
 | 2 | Sources Sought | Sources Sought | 2026-01-28 | 2026-02-10 | DEPT OF DEFENSE | [AN/ALQ-172 LRU-8 BIT LIMITERS AND DOWN CONVETERS REPAIR](https://sam.gov/opp/27887d1878cb4e168e8837d7256388a8/view) |
 | 2 | Sources Sought | Sources Sought | 2026-01-15 | 2026-02-16 | DEPT OF DEFENSE | [T-38 Wingtips](https://sam.gov/opp/0816ea24e239494b890cdf34efd7fba6/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-04 | 2026-02-19 | DEPT OF DEFENSE | [Contractor Engineering and Technical Services (CETS)](https://sam.gov/opp/a81bc4a100a84e6089db67ad17fe31ec/view) |
-| 2 | Sources Sought | Sources Sought | 2026-01-20 | 2026-02-20 | DEPT OF DEFENSE | [C-5 Hydraulic Valve Repair](https://sam.gov/opp/68b51429b6ef4a9b8764168a0a382996/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-01-29 | 2026-02-20 | DEPT OF DEFENSE | [MAPA Rotary Actuators](https://sam.gov/opp/593d769764a5440ab21b79b86f2d1531/view) |
-| 2 | Special Notice | Special Notice | 2026-02-04 | 2026-02-20 | DEPT OF DEFENSE | [Notice of Intent to Award a Sole Source: High Temperature Black Body](https://sam.gov/opp/cadf7646372a46078be2d530bbe3822c/view) |
-| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-06 | 2026-02-20 | DEPT OF DEFENSE | [Atlassian or Alternatives - Request for Information](https://sam.gov/opp/e0b5e5c8bfa5409e8bbba172bd68596c/view) |
-| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-06 | 2026-02-20 | DEPT OF DEFENSE | [ODOO or Alternatives - Request for Information](https://sam.gov/opp/a638a33a1e5e4344b3aa49f23a6ea248/view) |
-| 2 | Special Notice | Special Notice | 2026-02-06 | 2026-02-20 | DEPT OF DEFENSE | [Looking Glass – Next (LG-N) Information Update](https://sam.gov/opp/1fe9884ef7e24e629870ec6443263e61/view) |
-| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-17 | 2026-02-20 | DEPT OF DEFENSE | [Space- and Ground-Based Environmental Monitoring (EM) Commercial Data and Services Request for Information (RFI)](https://sam.gov/opp/2e818773a6cd426fbe014fe5a216207f/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-01-22 | 2026-02-23 | DEPT OF DEFENSE | [RFI – Enterprise Data Integration Space Operations Node](https://sam.gov/opp/f9510ef7b8ea43c3983471cacbbe7647/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-01-23 | 2026-02-23 | DEPT OF DEFENSE | [REQUEST FOR INFORMATION: PROGRAM MANAGEMENT (PM) ACADEMY SERVICES](https://sam.gov/opp/cf03055d37f4409a9b8620b553edff5b/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-01-23 | 2026-02-23 | DEPT OF DEFENSE | [RFI: B-52H/B-1B ASQ-184 and AYQ-10 Fire Control Computers](https://sam.gov/opp/88eb3df2ce224f9094a8d51753ca8112/view) |

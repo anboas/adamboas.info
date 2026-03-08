@@ -1,11 +1,11 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-03-07T14:40:29.442936+00:00
+Generated: 2026-03-08T13:40:22.272650+00:00
 
 - Total: 19
-- OK: 10
+- OK: 11
 - Blocked: 6
-- Failed: 3
+- Failed: 2
 
 | Feed | Category | Status | Blocked | Year hits | Event hits | URL | Notes |
 |---|---|---:|:---:|---:|---:|---|---|
@@ -27,4 +27,4 @@ Generated: 2026-03-07T14:40:29.442936+00:00
 | 36th Annual NDIA Special Operations Symposium | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium |  |
 | Federal AI Forum 2026 | one_off_event | 200 | no | 31 | 22 | https://govciomedia.com/federal-ai-forum/ |  |
 | AI Summit 2026 | one_off_event | 200 | no | 63 | 61 | https://govciomedia.com/ai-summit-2026/ |  |
-| GovEvents Calendar | aggregator_discovery | 403 | no | 0 | 0 | https://www.govevents.com/calendar.php?s=1 | HTTP 403 |
+| GovEvents Calendar | aggregator_discovery | 200 | no | 0 | 0 | https://www.govevents.com/calendar.php?s=1 |  |
