@@ -1,0 +1,46 @@
+{
+  "id": "sam-398592f57db34264ae21839aeecdf95d",
+  "title": "GeneTitan equipment maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=398592f57db34264ae21839aeecdf95d",
+  "opportunity_url": "https://sam.gov/opp/398592f57db34264ae21839aeecdf95d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/398592f57db34264ae21839aeecdf95d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "398592f57db34264ae21839aeecdf95d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "26-000134",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION (ASA).PROGRAM SUPPORT CENTER ACQ MGMT SVC",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=398592f57db34264ae21839aeecdf95d",
+  "detail_text": "This contract action is for the acquisition of services for which the Government intends to solicit and negotiate with only one source under the authority of Federal Acquisition Regulation (FAR) Subpart 13.106-1(b)(1). The National Cancer Institute (NCI), Office of Acquisitions (OA) intends to award a single source purchase order to Life Technologies Corporation, 5781 Van Allen Way, Carlsbad, CA 92008. The Life Technologies maintenance agreement is needed, for they are the only qualified field service engineers allowed to open and service the Gene Titan Scanner. There are no customer serviceable parts inside the scanner housing. Unauthorized service can result in injury, damage to the instrument, and/or void the warranty.",
+  "detail_text_length": 731,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e4dd87ac7c44bdb8b0c556b5e1548c2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e4dd87ac7c44bdb8b0c556b5e1548c2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5e48c22b2d05098b15926251c6c4f9cfd0730c53414bb0a1f78b9a00d64e9672.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5e48c22b2d05098b15926251c6c4f9cfd0730c53414bb0a1f78b9a00d64e9672.pdf",
+      "file_id": "3e4dd87ac7c44bdb8b0c556b5e1548c2",
+      "file_name": "NOI+Life+Tech+26-000134+Updated.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 50221,
+      "sha256": "5e48c22b2d05098b15926251c6c4f9cfd0730c53414bb0a1f78b9a00d64e9672"
+    }
+  ],
+  "_mirror_hash": "1f5c3b068d7ed819f1a817f0c0acb9e5f48801e860c735701a3e87792ea3f7a2",
+  "_mirror_run_id": "20260309T134135Z",
+  "_mirror_recorded_at": "2026-03-09T13:42:56.793468+00:00"
+}

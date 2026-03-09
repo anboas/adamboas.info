@@ -1,0 +1,89 @@
+{
+  "id": "sam-eb031fa47d854a6da1812ee1153301e5",
+  "title": "KINGSVILLE TEXAS ROTHR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb031fa47d854a6da1812ee1153301e5",
+  "opportunity_url": "https://sam.gov/opp/eb031fa47d854a6da1812ee1153301e5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/eb031fa47d854a6da1812ee1153301e5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "eb031fa47d854a6da1812ee1153301e5",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N7027226Q0015",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP OTHER HCA.US FLEET FORCES CMD.NCTAMS LANT",
+  "posted_date": "2026-03-08",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb031fa47d854a6da1812ee1153301e5",
+  "detail_text": "RELOCATABLE OVER-THE-HORIZON RADAR SERVICE CONTINUATION IN KINGSVILLE TEXAS SEE ATTACHED RFQ, ANNEX A, ANNEX B, AND ANNEX C. SEE BNLS JUSTIFICATION",
+  "detail_text_length": 147,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b4b042e304248b297915bd627b99b64/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/615f330760c04738bceb2f0a209c56f0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95245dd97896489e83ce99794af5d302/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e188603ebdc24d2ba188526091951989/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e54486aec2454c2ca219d9f87afb6b1e/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b4b042e304248b297915bd627b99b64/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a4a280b76db8e764627d0199b998c94eb1d7d5a61c150dc4742e695d5acf371.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a4a280b76db8e764627d0199b998c94eb1d7d5a61c150dc4742e695d5acf371.pdf",
+      "file_id": "2b4b042e304248b297915bd627b99b64",
+      "file_name": "26Q0015+BNLS_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 83548,
+      "sha256": "4a4a280b76db8e764627d0199b998c94eb1d7d5a61c150dc4742e695d5acf371"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/615f330760c04738bceb2f0a209c56f0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39c4b8cfa4036e6dd191a14271c0051a94f886da1e2c00d926cb5d52a49cf5e5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39c4b8cfa4036e6dd191a14271c0051a94f886da1e2c00d926cb5d52a49cf5e5.docx",
+      "file_id": "615f330760c04738bceb2f0a209c56f0",
+      "file_name": "26Q0015+RFQ.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76274,
+      "sha256": "39c4b8cfa4036e6dd191a14271c0051a94f886da1e2c00d926cb5d52a49cf5e5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95245dd97896489e83ce99794af5d302/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d697be14ecdcc58c4dbe7810d09447be14458061d715945927b9f42b3f563ee8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d697be14ecdcc58c4dbe7810d09447be14458061d715945927b9f42b3f563ee8.docx",
+      "file_id": "95245dd97896489e83ce99794af5d302",
+      "file_name": "26Q0015+ANNEX+A+PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36525,
+      "sha256": "d697be14ecdcc58c4dbe7810d09447be14458061d715945927b9f42b3f563ee8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e188603ebdc24d2ba188526091951989/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a9c5d1e42dc9f946290995e0976bb66b0a33813d845030faeac4099a0c6a5338.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a9c5d1e42dc9f946290995e0976bb66b0a33813d845030faeac4099a0c6a5338.docx",
+      "file_id": "e188603ebdc24d2ba188526091951989",
+      "file_name": "26Q0015+ANNEX+B+EVAL+FACTORS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26588,
+      "sha256": "a9c5d1e42dc9f946290995e0976bb66b0a33813d845030faeac4099a0c6a5338"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e54486aec2454c2ca219d9f87afb6b1e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/94173821b74ef5284b1a06cbe16e8fdad5fc4545f3eefcc20261cf60a92f521d.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/94173821b74ef5284b1a06cbe16e8fdad5fc4545f3eefcc20261cf60a92f521d.xlsx",
+      "file_id": "e54486aec2454c2ca219d9f87afb6b1e",
+      "file_name": "26Q0015+ANNEX+C+PRICING.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 38916,
+      "sha256": "94173821b74ef5284b1a06cbe16e8fdad5fc4545f3eefcc20261cf60a92f521d"
+    }
+  ],
+  "_mirror_hash": "05d4b328c223e5aac2ed61c4eae1be7fb5bef85598a80a25857c31b0edcdace6",
+  "_mirror_run_id": "20260309T134135Z",
+  "_mirror_recorded_at": "2026-03-09T13:42:56.688442+00:00"
+}

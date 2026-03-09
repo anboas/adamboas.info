@@ -1,0 +1,47 @@
+{
+  "id": "sam-aea0bceaf23149499cb2e9bcf4128e48",
+  "title": "CH-53K Program O-Level Bag Group B",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aea0bceaf23149499cb2e9bcf4128e48",
+  "opportunity_url": "https://sam.gov/opp/aea0bceaf23149499cb2e9bcf4128e48/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aea0bceaf23149499cb2e9bcf4128e48/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aea0bceaf23149499cb2e9bcf4128e48",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N68335-26-R-1028",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC AD.NAVAIR WARFARE CTR AIRCRAFT DIV",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-01-29",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aea0bceaf23149499cb2e9bcf4128e48",
+  "detail_text": "Synopsis Title: CH-53K Program O-Level Bag Group B The Naval Air Warfare Center, Aircraft Division, Lakehurst, New Jersey intends to issue a Firm Fixed Price (FFP) contract on a competitive basis for the procurement of items of Peculiar Support Equipment (PSE) as outlined in the attached spreadsheet. These items are in support of the NAVAIR CH-53K Program, and Foreign Military Sales Program for Israel maintenance operations at the O-Level of maintenance for the CH-53K Aircraft. Specific information regarding solicitation N68335-26-R-1028 will be issued and posted on the SAM website in the near future. No telephone or written requests for the solicitation will be accepted. Amendments to the solicitation, if issued, will be posted to the same website. After solicitation release, vendors should regularly access the website to ensure they have all of the amendments. THIS NOTICE IS NOT A REQUEST FOR PROPOSAL. The Government is not obligated to pay for any information received from potential sources as a result of this synopsis. This synopsis is for administrative purposes only. It does not constitute a solicitation for bid or proposals, and should not be construed as a commitment by the Government. The information provided herein is subject to change and in no way binds the Government to solicit for award of a competitive contract.",
+  "detail_text_length": 1348,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edd3063d4ace4791914cb54195cd019e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edd3063d4ace4791914cb54195cd019e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5ddf1d964858b715d91c96368569f87aa34b31ab50de0073e83d90ba83e6e285.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5ddf1d964858b715d91c96368569f87aa34b31ab50de0073e83d90ba83e6e285.xlsx",
+      "file_id": "edd3063d4ace4791914cb54195cd019e",
+      "file_name": "PSE+ITEM+LIST+-0133-.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10395,
+      "sha256": "5ddf1d964858b715d91c96368569f87aa34b31ab50de0073e83d90ba83e6e285"
+    }
+  ],
+  "_mirror_hash": "141d06e4c0924dca3a168a1d815564b6309adbc33a5275512554ce825e5355fb",
+  "_mirror_run_id": "20260309T134135Z",
+  "_mirror_recorded_at": "2026-03-09T13:42:56.631438+00:00"
+}

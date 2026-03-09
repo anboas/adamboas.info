@@ -15437,4 +15437,56 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Official listing provides registration details and organizer contacts only; no public government POC or solicitation number was listed as of 2026-03-05.'
 		}
 	},
+	{
+		id: 'radar-cyber-intelligence-europe-2026-conference',
+		title: 'Cyber Intelligence Europe 2026 Conference',
+		description: 'Conference listing for Cyber Intelligence Europe 2026 in Brussels.',
+		startDate: '2026-04-22',
+		endDate: '2026-04-23',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'Brussels',
+			country: 'Belgium',
+			lat: 50.8503,
+			lng: 4.3517
+		},
+		ontology: 
+		{
+			themes: ['Cyber intelligence'],
+			capabilityAreas: [],
+			missionThreads: [],
+			stakeholders: [],
+			keywords: ['cyber intelligence', 'europe', 'brussels'],
+			relatedPrograms: [],
+			decisionWindows: 
+			{
+				discovery: 'Unspecified in source',
+				prep: 'Unspecified in source',
+				execution: 'Unspecified in source'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-03-09',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25854'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'High'
+			},
+			notes: 'Source provides event title/date/location and registration link only. No public government contacts, solicitation number, response date, or registration deadline were listed as of 2026-03-09.'
+		}
+	},
 ];

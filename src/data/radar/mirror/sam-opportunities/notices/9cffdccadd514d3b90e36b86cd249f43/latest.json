@@ -1,0 +1,57 @@
+{
+  "id": "sam-9cffdccadd514d3b90e36b86cd249f43",
+  "title": "Rifle Ammunition .308 and 5.56",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9cffdccadd514d3b90e36b86cd249f43",
+  "opportunity_url": "https://sam.gov/opp/9cffdccadd514d3b90e36b86cd249f43/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9cffdccadd514d3b90e36b86cd249f43/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9cffdccadd514d3b90e36b86cd249f43",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70US0926R70093724",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US SECRET SERVICE.U S SECRET SERVICE",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9cffdccadd514d3b90e36b86cd249f43",
+  "detail_text": "The United States Secret Service (USSS) procurement is issuing a Request for Information on behalf of the J. Rowley Training Center for Rifle Ammunition, .308 and 5.56.",
+  "detail_text_length": 168,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d4b5ee012ee41d1bf8095bb42b4c3e4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c31a37d19484c07a1f21f36b8568877/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d4b5ee012ee41d1bf8095bb42b4c3e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b83559efe5796474fb1af074a088f8bae5559526db1905e03aec0829c524d143.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b83559efe5796474fb1af074a088f8bae5559526db1905e03aec0829c524d143.docx",
+      "file_id": "0d4b5ee012ee41d1bf8095bb42b4c3e4",
+      "file_name": "REQUEST+FOR+INFORMATION+rifle+ammunition.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29730,
+      "sha256": "b83559efe5796474fb1af074a088f8bae5559526db1905e03aec0829c524d143"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c31a37d19484c07a1f21f36b8568877/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a0354235dea6c06eadda90da0445fc8f7c92b82b49c90283cbf838be9f08e005.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a0354235dea6c06eadda90da0445fc8f7c92b82b49c90283cbf838be9f08e005.pdf",
+      "file_id": "7c31a37d19484c07a1f21f36b8568877",
+      "file_name": "5.56+-+.308+Solicitation+-+Statement+of+Requirements.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 241204,
+      "sha256": "a0354235dea6c06eadda90da0445fc8f7c92b82b49c90283cbf838be9f08e005"
+    }
+  ],
+  "_mirror_hash": "e0c5c939a45d67f10cafd55cdbc6d75da2c8923ae34cf37583890f20ba902d7f",
+  "_mirror_run_id": "20260309T134135Z",
+  "_mirror_recorded_at": "2026-03-09T13:42:56.809710+00:00"
+}
