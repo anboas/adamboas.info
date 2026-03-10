@@ -1,0 +1,68 @@
+{
+  "id": "sam-14d599b379b14476bf709e00bb1dfca7",
+  "title": "AuSIM3D Software Service Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14d599b379b14476bf709e00bb1dfca7",
+  "opportunity_url": "https://sam.gov/opp/14d599b379b14476bf709e00bb1dfca7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/14d599b379b14476bf709e00bb1dfca7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "14d599b379b14476bf709e00bb1dfca7",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26926721Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14d599b379b14476bf709e00bb1dfca7",
+  "detail_text": "** THIS IS A SOLE SOURCE REQUIREMENT ** for AuSIM3D Software Service Renewal",
+  "detail_text_length": 76,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7dd9f784bbd14daf8a1fbf6eec657210/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8429cdc3132945508235aa2f76fa086c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f266076e090e472698ede1d691a620f5/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7dd9f784bbd14daf8a1fbf6eec657210/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/88b24285b133ee4814b0fe4c068981a29b0e6535940d72b2b16a1d16bcc9448c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/88b24285b133ee4814b0fe4c068981a29b0e6535940d72b2b16a1d16bcc9448c.pdf",
+      "file_id": "7dd9f784bbd14daf8a1fbf6eec657210",
+      "file_name": "SATPC0040523+Tab+06+RDSS..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 141689,
+      "sha256": "88b24285b133ee4814b0fe4c068981a29b0e6535940d72b2b16a1d16bcc9448c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8429cdc3132945508235aa2f76fa086c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/37b8fecffe405a21c9a5546884fcc950f2540c483dd840bd984e1f47df824d33.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/37b8fecffe405a21c9a5546884fcc950f2540c483dd840bd984e1f47df824d33.pdf",
+      "file_id": "8429cdc3132945508235aa2f76fa086c",
+      "file_name": "SATPC0040523+Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 109509,
+      "sha256": "37b8fecffe405a21c9a5546884fcc950f2540c483dd840bd984e1f47df824d33"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f266076e090e472698ede1d691a620f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b02c06d7367ff5d7465c98527956ac0401476a617ee901799cd283ad39b57820.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b02c06d7367ff5d7465c98527956ac0401476a617ee901799cd283ad39b57820.pdf",
+      "file_id": "f266076e090e472698ede1d691a620f5",
+      "file_name": "SATPC0040523+Tab+04+4+SOW..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 203112,
+      "sha256": "b02c06d7367ff5d7465c98527956ac0401476a617ee901799cd283ad39b57820"
+    }
+  ],
+  "_mirror_hash": "f3f5c25dff7199234f0a775375d01a9d5920ea1aa509e35ef4aaee8311e896c9",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.896026+00:00"
+}

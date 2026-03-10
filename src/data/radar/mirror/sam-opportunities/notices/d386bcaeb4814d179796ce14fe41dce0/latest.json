@@ -1,0 +1,57 @@
+{
+  "id": "sam-d386bcaeb4814d179796ce14fe41dce0",
+  "title": "PIMC Temporary Restroom Trailer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d386bcaeb4814d179796ce14fe41dce0",
+  "opportunity_url": "https://sam.gov/opp/d386bcaeb4814d179796ce14fe41dce0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d386bcaeb4814d179796ce14fe41dce0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d386bcaeb4814d179796ce14fe41dce0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1524441BIA",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.PHOENIX AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d386bcaeb4814d179796ce14fe41dce0",
+  "detail_text": "THIS IS A SOURCES SOUGHT NOTICE ONLY. IT IS NOT A REQUEST FOR QUOTE, RATHER MARKET RESEARCH TO DETERMINE COMPLAINCE WITH THE BUY INDIAN ACT AND DETERMINATION OF SET-ASIDE. The contractor shall provide a temporary safe and clean ADA compliant restroom trailer",
+  "detail_text_length": 258,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d16200bdfce4346ae02368e088df8f9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d78c2f569e24795b5e12e4992ec68f8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d16200bdfce4346ae02368e088df8f9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/26e79e4df400dd706a7bf512e51224c5c4f8aeb1a881e1e599d13b3278c357d1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/26e79e4df400dd706a7bf512e51224c5c4f8aeb1a881e1e599d13b3278c357d1.pdf",
+      "file_id": "1d16200bdfce4346ae02368e088df8f9",
+      "file_name": "BIA+Sources+Sought+Temp+Restrooms.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 310396,
+      "sha256": "26e79e4df400dd706a7bf512e51224c5c4f8aeb1a881e1e599d13b3278c357d1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d78c2f569e24795b5e12e4992ec68f8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "file_id": "8d78c2f569e24795b5e12e4992ec68f8",
+      "file_name": "IEE+Representation+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132270,
+      "sha256": "e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700"
+    }
+  ],
+  "_mirror_hash": "74a0de1636263ad21197c9fef20f9f07c4cf1f05edfcec6bbae4b0aa0bcb4d95",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.952776+00:00"
+}

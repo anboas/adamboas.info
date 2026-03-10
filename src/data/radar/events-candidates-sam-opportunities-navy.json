@@ -1183,6 +1183,38 @@
     "resource_items": null
   },
   {
+    "id": "sam-6d2350e77ec64d6fa5319c3d60de94c8",
+    "title": "Assault APR-39 /FRP4 Production Base Contract (lots 10-12) Pre-Solicitation Notice",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6d2350e77ec64d6fa5319c3d60de94c8",
+    "opportunity_url": "https://sam.gov/opp/6d2350e77ec64d6fa5319c3d60de94c8/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6d2350e77ec64d6fa5319c3d60de94c8/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6d2350e77ec64d6fa5319c3d60de94c8",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "N00019-25-RFPREQ-TPM272-0209",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
+    "posted_date": "2026-03-09",
+    "response_deadline": "2026-03-23",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Pre-solicitation",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6d2350e77ec64d6fa5319c3d60de94c8",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6d2350e77ec64d6fa5319c3d60de94c8",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-f6ab3404eef94e2daea810b1e3b24b3a",
     "title": "2026 Pacific Northwest Regional Council Training Event",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6ab3404eef94e2daea810b1e3b24b3a",
@@ -1324,6 +1356,70 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c265db83fe64dc8b0ceae05b225d8ba/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-0265581e66ee47078faee2d61ced8f14",
+    "title": "*CANCELED* Fiber Optic Measurement System",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0265581e66ee47078faee2d61ced8f14",
+    "opportunity_url": "https://sam.gov/opp/0265581e66ee47078faee2d61ced8f14/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/0265581e66ee47078faee2d61ced8f14/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "0265581e66ee47078faee2d61ced8f14",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N6426725R1008",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+    "posted_date": "2026-03-09",
+    "response_deadline": "2025-11-12",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0265581e66ee47078faee2d61ced8f14",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0265581e66ee47078faee2d61ced8f14",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a09862148f4477589e7a0a57fd31980/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/650b1a1a741d421195084a5fa0bcd865/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/679bba071d1547f4a39b05c557356515/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/793e1e61d4bc4756a06240491a634fa6/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e320abd75a64457926092ef4c25eadb/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/947bf232e5bf44e2bf001f7ecc33afbe/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b03582f4cdd1407eb374282222dcf3f1/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f615002becb3446fbb4e68826ae189a6/download"
+    ],
+    "resource_count": 8,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a09862148f4477589e7a0a57fd31980/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/650b1a1a741d421195084a5fa0bcd865/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/679bba071d1547f4a39b05c557356515/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/793e1e61d4bc4756a06240491a634fa6/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e320abd75a64457926092ef4c25eadb/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/947bf232e5bf44e2bf001f7ecc33afbe/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b03582f4cdd1407eb374282222dcf3f1/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f615002becb3446fbb4e68826ae189a6/download"
       }
     ]
   },

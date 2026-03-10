@@ -1,0 +1,57 @@
+{
+  "id": "sam-933e66bc103a4fa886bf1f7b13fa47bc",
+  "title": "TRAM Transportation Services with Driver and Attendant, Travis AFB, CA (Airshow)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=933e66bc103a4fa886bf1f7b13fa47bc",
+  "opportunity_url": "https://sam.gov/opp/933e66bc103a4fa886bf1f7b13fa47bc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/933e66bc103a4fa886bf1f7b13fa47bc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "933e66bc103a4fa886bf1f7b13fa47bc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA442726QZ022",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4427  60 CONS LGC",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=933e66bc103a4fa886bf1f7b13fa47bc",
+  "detail_text": "The 60th Contracting Squadrong is seeking available sources for a qualified contractor to provide guest transportation (TRAM) services for the 2026 Wings Over Solano Airshow at Travis Air Force Base on April 25-26, 2026 in accordance with the attached Statement of Work (SOW). THIS IS A SOURCES SOUGHT ONLY to identify sources that can provide TRAM Services with Driver and Attendant as defined in the Statement of Work (SOW). The information provided in the Sources Sought is subject to change and is not binding on the Government. Travis AFB has not made a commitment to procure any of the items discussed, and release of this Sources Sought should not be construed as such a commitment or as authorization to incur cost for which reimbursement would be required or sought. All submissions become Government property and will not be returned. See attachments for complete details.",
+  "detail_text_length": 882,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84bcde43e00b43da9baf9cd5227c5221/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb75327d78514e3c900bb582e49878ec/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84bcde43e00b43da9baf9cd5227c5221/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf0a500550cb4ea1a2e96166912eb6a044c68397d428cfaf6ac3410be31bc4b2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf0a500550cb4ea1a2e96166912eb6a044c68397d428cfaf6ac3410be31bc4b2.pdf",
+      "file_id": "84bcde43e00b43da9baf9cd5227c5221",
+      "file_name": "Attach+1+TRAM+SOW_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 338781,
+      "sha256": "cf0a500550cb4ea1a2e96166912eb6a044c68397d428cfaf6ac3410be31bc4b2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb75327d78514e3c900bb582e49878ec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5376b1b9d03d3b282198af387eccf23bf04559f56e968983b0f4e8d0a12ed114.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5376b1b9d03d3b282198af387eccf23bf04559f56e968983b0f4e8d0a12ed114.pdf",
+      "file_id": "fb75327d78514e3c900bb582e49878ec",
+      "file_name": "Attach+2++Sources+Sought+TRAM+Services+IAW+SOW+Travis+AFB_CA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 131460,
+      "sha256": "5376b1b9d03d3b282198af387eccf23bf04559f56e968983b0f4e8d0a12ed114"
+    }
+  ],
+  "_mirror_hash": "1736546dd240b90fe9fbd964c978f01bac3c684ddcf72c71999ecb7f90b003ee",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.955827+00:00"
+}

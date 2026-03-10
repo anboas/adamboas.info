@@ -1,0 +1,57 @@
+{
+  "id": "sam-116e2640cf2242b7b3d0da4e5ebdce44",
+  "title": "Armed Forces Network Go Multi-Platform AoIP App",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=116e2640cf2242b7b3d0da4e5ebdce44",
+  "opportunity_url": "https://sam.gov/opp/116e2640cf2242b7b3d0da4e5ebdce44/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/116e2640cf2242b7b3d0da4e5ebdce44/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "116e2640cf2242b7b3d0da4e5ebdce44",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HQ0516-FY-26-0003",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE MEDIA ACTIVITY (DMA).HQ DEFENSE MEDIA ACTIVITY",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=116e2640cf2242b7b3d0da4e5ebdce44",
+  "detail_text": "The Department of War Information Activity (DWIA) is seeking information from industry to assist with market research identifying small businesses capable of providing support. The intent of this Sources Sought is for development of a Multi-Platform Audio Over Internet Protocol (AoIP) App for the American Forces Network (AFN), AFN Go service. Interested parties are responsible for adequately marking proprietary or competition sensitive information contained in their response. DWIA representatives may choose to meet with respondents and others who express interest and hold one-on-one discussions. Such discussions would only be intended to obtain further clarification of potential capability to meet the requirements, including any development and implementation risks. The Government reserves the right to use information provided by respondents for any purpose deemed necessary and legally appropriate. Any organization responding to this notice should ensure that its response is complete and sufficiently detailed. Information provided will be used to assess availability of the anticipated requirement and may lead to the development of a solicitation. Respondents are advised that the Government is under no obligation to provide feedback to respondents with respect to any information submitted.",
+  "detail_text_length": 1309,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0c39ab927c64278a50e1e95b12c8a32/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f55a21f434264fc6b86d7b65c6f59f2c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0c39ab927c64278a50e1e95b12c8a32/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ae3757a50110c4fbc0ba31487bb6c602d9758e460c621bb2ef0687ea5c31e4b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ae3757a50110c4fbc0ba31487bb6c602d9758e460c621bb2ef0687ea5c31e4b.docx",
+      "file_id": "c0c39ab927c64278a50e1e95b12c8a32",
+      "file_name": "AFN+Go+Multi-Platform+AoIP+App+RFI+Attachment+Q_A.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20119,
+      "sha256": "1ae3757a50110c4fbc0ba31487bb6c602d9758e460c621bb2ef0687ea5c31e4b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f55a21f434264fc6b86d7b65c6f59f2c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/13e30c28aff11d256091cdcc8ac9a05ddb5b5f6fab8b4756f40441bbcc86effd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/13e30c28aff11d256091cdcc8ac9a05ddb5b5f6fab8b4756f40441bbcc86effd.pdf",
+      "file_id": "f55a21f434264fc6b86d7b65c6f59f2c",
+      "file_name": "Source+Sought+Notice+HQ0516-FY-26-0003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 163778,
+      "sha256": "13e30c28aff11d256091cdcc8ac9a05ddb5b5f6fab8b4756f40441bbcc86effd"
+    }
+  ],
+  "_mirror_hash": "68066fab1eabb86f2647bdd78806170cded4c80aca6cd968d4b4b6d281ef3610",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.074839+00:00"
+}

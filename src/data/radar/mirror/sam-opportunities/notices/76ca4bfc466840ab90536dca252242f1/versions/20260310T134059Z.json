@@ -1,0 +1,59 @@
+{
+  "id": "sam-76ca4bfc466840ab90536dca252242f1",
+  "title": "Request for Information for Healthcare Compliance Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76ca4bfc466840ab90536dca252242f1",
+  "opportunity_url": "https://sam.gov/opp/76ca4bfc466840ab90536dca252242f1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/76ca4bfc466840ab90536dca252242f1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "76ca4bfc466840ab90536dca252242f1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANDHA-26-P-0000036141",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76ca4bfc466840ab90536dca252242f1",
+  "detail_text": "The Defense Health Agency Contracting Activity (DHACA), Professional Services Contracting Division (PS-CD) is conducting Market Research to identify qualified sources for the Healthcare Compliance Training (HCT) Content requirement. THIS IS A REQUEST FOR INFORMATION (RFI) ONLY. This RFI is issued solely for information and planning purposes – it does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. This request for information does not commit the Government to contract for any supply or service whatsoever. Further, the Government is not seeking proposals at this time and will not accept unsolicited proposals. Vendors are advised that the Government will not pay for any information or administrative costs incurred in response to this RFI; all costs associated with responding to this RFI will be solely at the interested party’s expense. Not responding to this RFI does not preclude participation in any future RFP that may be issued. See attachments for additional information.",
+  "detail_text_length": 1026,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76bc4b7173a54df9a1d1863e9800b5e0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5ed8964a05d42168b22e0b2ad828a7f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76bc4b7173a54df9a1d1863e9800b5e0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d341991d46ea39bf9044ae582cbe165f26e024343e77d8b237fff46a106b6a6a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d341991d46ea39bf9044ae582cbe165f26e024343e77d8b237fff46a106b6a6a.pdf",
+      "file_id": "76bc4b7173a54df9a1d1863e9800b5e0",
+      "file_name": "Attachment+-+Draft+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 690691,
+      "sha256": "d341991d46ea39bf9044ae582cbe165f26e024343e77d8b237fff46a106b6a6a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5ed8964a05d42168b22e0b2ad828a7f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0427a5c060d354f126f965d4c778ba377a14167fdc6be973d73752b25ca0d1d6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0427a5c060d354f126f965d4c778ba377a14167fdc6be973d73752b25ca0d1d6.pdf",
+      "file_id": "a5ed8964a05d42168b22e0b2ad828a7f",
+      "file_name": "RFI+for+Healthcare+Compliance+Training.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1066407,
+      "sha256": "0427a5c060d354f126f965d4c778ba377a14167fdc6be973d73752b25ca0d1d6"
+    }
+  ],
+  "_mirror_hash": "cc8232137f8818fc453ce1ec1365ee5bb37bead4aefccf47fae17f7b2ebe95e0",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.807358+00:00"
+}

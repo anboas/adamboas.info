@@ -1,0 +1,46 @@
+{
+  "id": "sam-039558255e514571aea03586431c1d6b",
+  "title": "Circuit Card Assembly",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=039558255e514571aea03586431c1d6b",
+  "opportunity_url": "https://sam.gov/opp/039558255e514571aea03586431c1d6b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/039558255e514571aea03586431c1d6b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "039558255e514571aea03586431c1d6b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302400037-01",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=039558255e514571aea03586431c1d6b",
+  "detail_text": "See Attachment",
+  "detail_text_length": 14,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25b4f396047a44699b691108d610840a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25b4f396047a44699b691108d610840a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8a142db5303bfa540cfbe898b49391d9e5a2a5f49e346d50d54b1f2b960c4976.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8a142db5303bfa540cfbe898b49391d9e5a2a5f49e346d50d54b1f2b960c4976.pdf",
+      "file_id": "25b4f396047a44699b691108d610840a",
+      "file_name": "SSS_5998015657854HY.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 782313,
+      "sha256": "8a142db5303bfa540cfbe898b49391d9e5a2a5f49e346d50d54b1f2b960c4976"
+    }
+  ],
+  "_mirror_hash": "97283bb585e9edcb90c60a23b2bd4fa34dd7ae25d4a0d54c1861b91de6781498",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.945056+00:00"
+}

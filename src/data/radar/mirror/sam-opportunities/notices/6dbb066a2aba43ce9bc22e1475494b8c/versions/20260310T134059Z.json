@@ -1,0 +1,46 @@
+{
+  "id": "sam-6dbb066a2aba43ce9bc22e1475494b8c",
+  "title": "Notice of Intent to Sole Source",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6dbb066a2aba43ce9bc22e1475494b8c",
+  "opportunity_url": "https://sam.gov/opp/6dbb066a2aba43ce9bc22e1475494b8c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6dbb066a2aba43ce9bc22e1475494b8c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6dbb066a2aba43ce9bc22e1475494b8c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "PENSION BENEFIT GUARANTY CORPORATION.PENSION BENEFIT GUARANTY CORPORATION.PENSION BENEFIT GUARANTY CORP",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6dbb066a2aba43ce9bc22e1475494b8c",
+  "detail_text": "The Pension Benefit Guaranty Corporation (PBGC) intends to make a sole source bridge award for a base period of five months and a three month option period to Ninety One North America, Inc. for emerging market investment management services for assets assigned under Contract No. PBGC01-CT-15-0044. The recompete for the next iteration of fundamental emerging market investment management services is currently in proposal evaluations. Therefore, this bridge contract will allow for the continuation of services until the resultant long-term emerging market investment management contracts are awarded. Please see the attached Sole Source Justification for further information. This is not a Request for Proposal (RFP). Rather, this is a notice of intent to award sole source to Ninety One North America, Inc. Interested parties may request further information (no later than, March 10, 2026, 5:00 PM (Eastern Time)) by email to Rudy Baldus at Baldus.Carl@pbgc.gov and Marius Morgan at Morgan.Marius@pbgc.gov. A determination to compete the proposed procurement based upon responses to this notice is solely at the discretion of the Government.",
+  "detail_text_length": 1144,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de5f481d905b40d08c6cd99bad6b4bb4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de5f481d905b40d08c6cd99bad6b4bb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/78c071230b4fe02d39db9953fbcd58139ed547e4fdec14340bc01a586c4273e7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/78c071230b4fe02d39db9953fbcd58139ed547e4fdec14340bc01a586c4273e7.pdf",
+      "file_id": "de5f481d905b40d08c6cd99bad6b4bb4",
+      "file_name": "EME+Bridges+-+JOFOC+-+Ninety+One+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 477848,
+      "sha256": "78c071230b4fe02d39db9953fbcd58139ed547e4fdec14340bc01a586c4273e7"
+    }
+  ],
+  "_mirror_hash": "b0c60c2374ee2524c77052a22547d2fc794287f3c72d2f076fe5ee9f278c2377",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.900702+00:00"
+}

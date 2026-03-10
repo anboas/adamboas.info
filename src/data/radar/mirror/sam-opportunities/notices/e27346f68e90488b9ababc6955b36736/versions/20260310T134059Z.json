@@ -1,0 +1,46 @@
+{
+  "id": "sam-e27346f68e90488b9ababc6955b36736",
+  "title": "Q522--VISN 12 BioDose/NMIS Enterprise",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e27346f68e90488b9ababc6955b36736",
+  "opportunity_url": "https://sam.gov/opp/e27346f68e90488b9ababc6955b36736/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e27346f68e90488b9ababc6955b36736/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e27346f68e90488b9ababc6955b36736",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C25226Q0326",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.252-NETWORK CONTRACT OFFICE 12 (36C252)",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e27346f68e90488b9ababc6955b36736",
+  "detail_text": "Page 1 of 1 Under Statutory Authority Public Law 109 Sec. 502 and VAAR 819.7008, the Government anticipates entering into sole-source procurement negotiations with Mystic Ventures Group a certified, verified service-disabled Veteran-owned small business (SDVOSB) for a BioDose/NMIS enterprise licensing for VISN 12. Pursuant to 38 U.S.C 8127(b), COs may use other than competitive procedures to enter into a contract with a verified Service-disabled veteran-owned small business (SDVOSB) or Veteran-owned small business (VOSB) for procurements under the simplified acquisition threshold. Vendors that would like to be considered and that are authorized to provide the BioDose/NMIS enterprise licensing upgrades for multiple facilities should submit authorization letters, records of successful performance, and proof of current SDVOSB certification no later than 3/16/2026 at 10:00 AM Central Time to brandon.harris@va.gov. A determination that only one SDVOSB can meet the requirement is not required. This notice is not a request for competitive quotes.",
+  "detail_text_length": 1055,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f33f2f8ecc34ccdaaa036c6ab398ec1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f33f2f8ecc34ccdaaa036c6ab398ec1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf21fd72b6e8989228bf4163b22c639dae5d51416db50ea8bee3a126ab126898.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf21fd72b6e8989228bf4163b22c639dae5d51416db50ea8bee3a126ab126898.docx",
+      "file_id": "0f33f2f8ecc34ccdaaa036c6ab398ec1",
+      "file_name": "36C25226Q0326.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20887,
+      "sha256": "cf21fd72b6e8989228bf4163b22c639dae5d51416db50ea8bee3a126ab126898"
+    }
+  ],
+  "_mirror_hash": "d8d755a3b4044bb3221e526d5995d16c93233a0043890a65cf69523a5b990998",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.953289+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-30982569ff1e4f6aab749431bb9bf332",
+  "title": "DeCA OCONUS (EUROPE) 2026 WTO/FTA and Yearly Acquisition Strategy",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30982569ff1e4f6aab749431bb9bf332",
+  "opportunity_url": "https://sam.gov/opp/30982569ff1e4f6aab749431bb9bf332/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/30982569ff1e4f6aab749431bb9bf332/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "30982569ff1e4f6aab749431bb9bf332",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DECAWTO2026",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE COMMISSARY AGENCY  (DECA)",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30982569ff1e4f6aab749431bb9bf332",
+  "detail_text": "DeCA OCONUS (EUROPE) 2026 WTO/FTA and Yearly Acquisition Strategy Defense Commissary Agency (DeCA) OCONUS Contracting Office (EUROPE) This publication of the synopsis notice incorporates an in-depth annual forecast, and Fiscal Year 2026 Acquisition Strategy. This synopsis is being posted in accordance with FAR Part 5.203(h) because one or more of the items under this acquisition is subject to the World Trade Organization (WTO) Government Procurement Agreement and Free Trade Agreements (FTA). WTO/FTA: DeCA has multiple requirements for equipment and services as outlined in the attached documents. Future solicitations of these requirements will be made using local notice procedures within the Geographic areas as broken out in the attached documents (EU, Turkey, United Kingdom, Egypt). Interested parties who are located in the areas provided may express interest regarding this requirement by e-mail to the point of contacts identified in this synopsis. Please see attached excel document with a in-depth breakout of requirements.",
+  "detail_text_length": 1039,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72e13fc845884ee5bac09187bb7fe263/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f756e25f82e44ef6844efdebeed467f5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72e13fc845884ee5bac09187bb7fe263/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3a1698b22eb0e5fe0953f70e4c7cccc038a022c773ab8c629b88c6f641b3416a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3a1698b22eb0e5fe0953f70e4c7cccc038a022c773ab8c629b88c6f641b3416a.xlsx",
+      "file_id": "72e13fc845884ee5bac09187bb7fe263",
+      "file_name": "FY26+Equipment+list+for+WTO.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14401,
+      "sha256": "3a1698b22eb0e5fe0953f70e4c7cccc038a022c773ab8c629b88c6f641b3416a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f756e25f82e44ef6844efdebeed467f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/270ebecdf2141638facfc6bcc117d914bd2805398c5f5a8e5e521ce9b5bbd8f7.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/270ebecdf2141638facfc6bcc117d914bd2805398c5f5a8e5e521ce9b5bbd8f7.xlsx",
+      "file_id": "f756e25f82e44ef6844efdebeed467f5",
+      "file_name": "FY2026+Acqusition+Strategy+and+WTO.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 35738,
+      "sha256": "270ebecdf2141638facfc6bcc117d914bd2805398c5f5a8e5e521ce9b5bbd8f7"
+    }
+  ],
+  "_mirror_hash": "e48d0846a70bc269aabdffaaa6e1160f1b417ba0de3f6720c1b7a216bb26bba2",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.088045+00:00"
+}

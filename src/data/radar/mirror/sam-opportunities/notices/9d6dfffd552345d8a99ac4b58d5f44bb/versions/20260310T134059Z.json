@@ -1,0 +1,46 @@
+{
+  "id": "sam-9d6dfffd552345d8a99ac4b58d5f44bb",
+  "title": "Selective Service System Website Modernization",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d6dfffd552345d8a99ac4b58d5f44bb",
+  "opportunity_url": "https://sam.gov/opp/9d6dfffd552345d8a99ac4b58d5f44bb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9d6dfffd552345d8a99ac4b58d5f44bb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9d6dfffd552345d8a99ac4b58d5f44bb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "90MC00_0002",
+  "agency_path": "SELECTIVE SERVICE SYSTEM.SELECTIVE SERVICE SYSTEM.SELECTIVE SERVICE SYSTEM (SSS)",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d6dfffd552345d8a99ac4b58d5f44bb",
+  "detail_text": "ATTENTION: INTERESTED AND CAPABLE VENDORS Request for Information (RFI) / Sources Sought Notice – Selective Service System (SSS) Website Modernization The Selective Service System (SSS) is conducting market research through this Request for Information (RFI) to identify qualified vendors capable of fulfilling the Government’s requirements for website modernization. Interested vendors are requested to review the attached documentation. Based on your organization’s capabilities, please submit a capability statement along with responses to the Government’s questions . Responses must be submitted to the Contracting Officer by the stated deadline.",
+  "detail_text_length": 650,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36c6283759364aa5b138c16d7336fa4c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36c6283759364aa5b138c16d7336fa4c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dde542e63fa35d4084273c2130473e8b81ada1cb165a1a2539228473a9497888.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dde542e63fa35d4084273c2130473e8b81ada1cb165a1a2539228473a9497888.pdf",
+      "file_id": "36c6283759364aa5b138c16d7336fa4c",
+      "file_name": "SSS+RFI_Web+Hosting+Services_03092026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 315744,
+      "sha256": "dde542e63fa35d4084273c2130473e8b81ada1cb165a1a2539228473a9497888"
+    }
+  ],
+  "_mirror_hash": "859b9d00b9e81e4c560cc3846805dd2691c7682fa6dc2d347eb2ca2c1e876c74",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.005185+00:00"
+}

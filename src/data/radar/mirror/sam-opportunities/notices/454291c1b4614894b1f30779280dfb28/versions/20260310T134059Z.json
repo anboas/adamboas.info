@@ -1,0 +1,59 @@
+{
+  "id": "sam-454291c1b4614894b1f30779280dfb28",
+  "title": "JIATF 401 March 2026 Industry Day Slides",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=454291c1b4614894b1f30779280dfb28",
+  "opportunity_url": "https://sam.gov/opp/454291c1b4614894b1f30779280dfb28/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/454291c1b4614894b1f30779280dfb28/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "454291c1b4614894b1f30779280dfb28",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=454291c1b4614894b1f30779280dfb28",
+  "detail_text": "On behalf of the Joint Interagency Task Force 401 (JIATF 401), we would like to extend our sincere gratitude for your participation in our Industry Day on March 5, 2026. We were delighted by the high level of engagement and appreciate the time you took to join us. As a follow-up, we are pleased to provide you with the presentation slides from the event and an updated Industry Partners list. Please find these documents attached to this email. In keeping with our commitment to privacy and security, please note that we do not distribute the contact information of our attendees. Thank you once again for your valuable contributions to our Industry Day. We look forward to the possibility of future collaborations.",
+  "detail_text_length": 716,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a293276232547a2b37e3457222ebf1e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ed3ee471ea274aa0996af569d004f059/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a293276232547a2b37e3457222ebf1e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2426bcc72cf904e274488c0bf7db17638ff90374976f2e15eea9a5e975fb9f86.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2426bcc72cf904e274488c0bf7db17638ff90374976f2e15eea9a5e975fb9f86.pdf",
+      "file_id": "0a293276232547a2b37e3457222ebf1e",
+      "file_name": "JIATF+401+Industry+Day+Briefing.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4097475,
+      "sha256": "2426bcc72cf904e274488c0bf7db17638ff90374976f2e15eea9a5e975fb9f86"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ed3ee471ea274aa0996af569d004f059/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/04c7eb05c4a3693ee83814ed37825e0ced208ef5343bd920aa13874061e9dadf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/04c7eb05c4a3693ee83814ed37825e0ced208ef5343bd920aa13874061e9dadf.pdf",
+      "file_id": "ed3ee471ea274aa0996af569d004f059",
+      "file_name": "Industry+Partners+List+v2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 141451,
+      "sha256": "04c7eb05c4a3693ee83814ed37825e0ced208ef5343bd920aa13874061e9dadf"
+    }
+  ],
+  "_mirror_hash": "a5a54f119d4ebfe7486c664e955971f85d131836d2f50f44f6fda58260ea430a",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.772319+00:00"
+}

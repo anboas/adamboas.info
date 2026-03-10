@@ -1,0 +1,47 @@
+{
+  "id": "sam-7e2e940c6110464baafed4501382206e",
+  "title": "Contracting and Acquisition Support Services (CASS) - Preaward Notification to Small Business Programs",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e2e940c6110464baafed4501382206e",
+  "opportunity_url": "https://sam.gov/opp/7e2e940c6110464baafed4501382206e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7e2e940c6110464baafed4501382206e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7e2e940c6110464baafed4501382206e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DHA ENTERPRISE MED SUPPORT EMS-CD",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Vendor engagement keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e2e940c6110464baafed4501382206e",
+  "detail_text": "9 March 2026 - Amended Notice - This amendment removes the CUI/Procure designation from the MFR document heading. Contracting and Acquisition Support Services (CASS) - Preaward Notification to Small Business Programs. See attached.",
+  "detail_text_length": 231,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b662f613d43c4eb09aaf7cd3f1b79602/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b662f613d43c4eb09aaf7cd3f1b79602/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c6d926d21a0b28a3044a86ad2ad2f89d024c49949e920c1a7646237d85a25d4d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c6d926d21a0b28a3044a86ad2ad2f89d024c49949e920c1a7646237d85a25d4d.pdf",
+      "file_id": "b662f613d43c4eb09aaf7cd3f1b79602",
+      "file_name": "MFR+CASS+Preaward+Notification+to+Small+Business+Programs+Special+Notice+CO+Signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 228765,
+      "sha256": "c6d926d21a0b28a3044a86ad2ad2f89d024c49949e920c1a7646237d85a25d4d"
+    }
+  ],
+  "_mirror_hash": "584dc253d9ea9ddf0ed21b821c3db25e3bee6f0054b168901c3c8c5c6488268a",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.870390+00:00"
+}

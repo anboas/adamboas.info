@@ -1,0 +1,68 @@
+{
+  "id": "sam-72994615b47b45418f4b943071001696",
+  "title": "On-site destruction services for DFAS Indianapolis, IN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=72994615b47b45418f4b943071001696",
+  "opportunity_url": "https://sam.gov/opp/72994615b47b45418f4b943071001696/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/72994615b47b45418f4b943071001696/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "72994615b47b45418f4b943071001696",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "AIP3003768",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE FINANCE AND ACCOUNTING SERVICE (DFAS).DEFENSE FINANCE AND ACCOUNTING SVC",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=72994615b47b45418f4b943071001696",
+  "detail_text": "This Sources Sought Notice is issued for market research purposes only and does not constitute a solicitation or commitment by the Government. The Defense Finance and Accounting Service (DFAS) is seeking information from interested and capable vendors that can provide on-site destruction services for approximately 1353 Tapes and 7891 Hard Drives located at DFAS Indianapolis, IN (DFAS-IN).",
+  "detail_text_length": 391,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7197996ada23432296f0ff26b3d1495b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e99b2581be64bcf86e609069675cadc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e48f1512f81e473db28d48442d226aff/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7197996ada23432296f0ff26b3d1495b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/795ba15c50f20702835b96cb21b4e46071cadf2dab2ff78d2820cafdb318cd1a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/795ba15c50f20702835b96cb21b4e46071cadf2dab2ff78d2820cafdb318cd1a.pdf",
+      "file_id": "7197996ada23432296f0ff26b3d1495b",
+      "file_name": "Draft+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 176038,
+      "sha256": "795ba15c50f20702835b96cb21b4e46071cadf2dab2ff78d2820cafdb318cd1a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e99b2581be64bcf86e609069675cadc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68734d918a2fd5232a97e8c330c5dce6ea78f65e9fb2fc0870116b8526539815.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68734d918a2fd5232a97e8c330c5dce6ea78f65e9fb2fc0870116b8526539815.pdf",
+      "file_id": "7e99b2581be64bcf86e609069675cadc",
+      "file_name": "Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 136632,
+      "sha256": "68734d918a2fd5232a97e8c330c5dce6ea78f65e9fb2fc0870116b8526539815"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e48f1512f81e473db28d48442d226aff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6115735265ade3a692fa3103c02d831929b19974d69e0b4014f8f11e8933cd35.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6115735265ade3a692fa3103c02d831929b19974d69e0b4014f8f11e8933cd35.docx",
+      "file_id": "e48f1512f81e473db28d48442d226aff",
+      "file_name": "Contractor+Capability+Survey_DFAS+IN.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16432,
+      "sha256": "6115735265ade3a692fa3103c02d831929b19974d69e0b4014f8f11e8933cd35"
+    }
+  ],
+  "_mirror_hash": "3eff75791b8a20a033e50757a72b01bf06dde0b622ad1d0090ec5255423819bf",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.002824+00:00"
+}

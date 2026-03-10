@@ -1,0 +1,46 @@
+{
+  "id": "sam-63873492cc6d488f9a6e6054f34b6f63",
+  "title": "66 - FLASH POINT TESTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63873492cc6d488f9a6e6054f34b6f63",
+  "opportunity_url": "https://sam.gov/opp/63873492cc6d488f9a6e6054f34b6f63/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/63873492cc6d488f9a6e6054f34b6f63/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "63873492cc6d488f9a6e6054f34b6f63",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM1-26-Q-MC64",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63873492cc6d488f9a6e6054f34b6f63",
+  "detail_text": "DLA Maritime Mechanicsburg is seeking sources capable of supplying the following item: NSN: 7HH 6630 017251759 NOM: FLASH POINT TESTER P/N: FPH-VISION QTY: 100 EA Approved Design CAGE Code: 0DRR8 (PETROLAB LLC) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to james.fleniken@dla.mil by 12:00 PM EST on 09 March 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1209,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c445be6156ed408494afec5249f8c946/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c445be6156ed408494afec5249f8c946/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0cd403a723f34eee38e8d0c7e12c54461a2625b5dc021fef507bca9d230b13ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0cd403a723f34eee38e8d0c7e12c54461a2625b5dc021fef507bca9d230b13ce.pdf",
+      "file_id": "c445be6156ed408494afec5249f8c946",
+      "file_name": "1.08+Sources+Sought+-+MARKET+SURVEY_SPRMM1-26-Q-MC645.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 390356,
+      "sha256": "0cd403a723f34eee38e8d0c7e12c54461a2625b5dc021fef507bca9d230b13ce"
+    }
+  ],
+  "_mirror_hash": "2643788a66c3420e2a1919ea0c4f946b962436b463cdfa0fc76deee7c9f58513",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.971269+00:00"
+}

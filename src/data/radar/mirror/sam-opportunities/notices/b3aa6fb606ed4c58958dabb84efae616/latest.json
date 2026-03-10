@@ -1,0 +1,57 @@
+{
+  "id": "sam-b3aa6fb606ed4c58958dabb84efae616",
+  "title": "Integrated Security System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3aa6fb606ed4c58958dabb84efae616",
+  "opportunity_url": "https://sam.gov/opp/b3aa6fb606ed4c58958dabb84efae616/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b3aa6fb606ed4c58958dabb84efae616/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b3aa6fb606ed4c58958dabb84efae616",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANHCA260000029576",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY MEDICAL COMMAND.US ARMY HEALTH CONTRACTING ACTIVITY.W40M MRC0 WEST",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3aa6fb606ed4c58958dabb84efae616",
+  "detail_text": "See attached Performance Work Statement",
+  "detail_text_length": 39,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33b1f220657140ad959699461194bddb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a946cb0647ba4f1e8fc02576d43af0ee/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33b1f220657140ad959699461194bddb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3882f86cc3b66a00cc923c5205da4e4d9d67e73ff6efa05d2770d243d9d9ce57.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3882f86cc3b66a00cc923c5205da4e4d9d67e73ff6efa05d2770d243d9d9ce57.pdf",
+      "file_id": "33b1f220657140ad959699461194bddb",
+      "file_name": "Sources+Sought+Integrated+Security+Systems.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 139196,
+      "sha256": "3882f86cc3b66a00cc923c5205da4e4d9d67e73ff6efa05d2770d243d9d9ce57"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a946cb0647ba4f1e8fc02576d43af0ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c826245cb344d3b4e3e4a04d60651880d204beb50a5bfc6fc0c2744daca654f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c826245cb344d3b4e3e4a04d60651880d204beb50a5bfc6fc0c2744daca654f.pdf",
+      "file_id": "a946cb0647ba4f1e8fc02576d43af0ee",
+      "file_name": "002_PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 345506,
+      "sha256": "7c826245cb344d3b4e3e4a04d60651880d204beb50a5bfc6fc0c2744daca654f"
+    }
+  ],
+  "_mirror_hash": "83b03fbeed34f2ce36521b2a622810eda0aa0f9ff8e27f06199dbdee393be381",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.999847+00:00"
+}

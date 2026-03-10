@@ -1,0 +1,56 @@
+{
+  "id": "sam-cc1e82e9c2794c3aaaf65d1ebfff0f10",
+  "title": "NNSY WALL PANELS \"AWIP\"",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc1e82e9c2794c3aaaf65d1ebfff0f10",
+  "opportunity_url": "https://sam.gov/opp/cc1e82e9c2794c3aaaf65d1ebfff0f10/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cc1e82e9c2794c3aaaf65d1ebfff0f10/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cc1e82e9c2794c3aaaf65d1ebfff0f10",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4215826QE024",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc1e82e9c2794c3aaaf65d1ebfff0f10",
+  "detail_text": "Please see the attached documents.",
+  "detail_text_length": 34,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b3b9fb70e3a4d07b27f529c46bf0ba7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e0c4449c6814b17a20a3fa9b4decb7b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b3b9fb70e3a4d07b27f529c46bf0ba7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3fe8b42c23164b1284b2e1f67c17f57bf295600d5c4e2f2cac7e9c25e4dd12d8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3fe8b42c23164b1284b2e1f67c17f57bf295600d5c4e2f2cac7e9c25e4dd12d8.pdf",
+      "file_id": "1b3b9fb70e3a4d07b27f529c46bf0ba7",
+      "file_name": "TECHNICAL+CAPABILITIES+STATEMENT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 509460,
+      "sha256": "3fe8b42c23164b1284b2e1f67c17f57bf295600d5c4e2f2cac7e9c25e4dd12d8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e0c4449c6814b17a20a3fa9b4decb7b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fb36d779858a79b28611e88b6b792925cb618a9cd19ffc8cf5cc42b96ff16bbd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fb36d779858a79b28611e88b6b792925cb618a9cd19ffc8cf5cc42b96ff16bbd.pdf",
+      "file_id": "9e0c4449c6814b17a20a3fa9b4decb7b",
+      "file_name": "Solicitation+-+N4215826QE024.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1859454,
+      "sha256": "fb36d779858a79b28611e88b6b792925cb618a9cd19ffc8cf5cc42b96ff16bbd"
+    }
+  ],
+  "_mirror_hash": "628b002d1a9819a3efd4cefed0f6421081fd500f853e3053220ec16e46e44a1c",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.768492+00:00"
+}

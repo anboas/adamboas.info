@@ -1,23 +1,23 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-09T13:43:20.811801+00:00
+Generated: 2026-03-10T13:48:05.716674+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/09/2026
+Posted range: 01/01/2026 -> 03/10/2026
 
 ## Counts
-- Total candidates: 25
+- Total candidates: 26
 - Navy-related: 0
-- Full detail cached: 25
-- Notices with attachments: 19
-- Total attachment links: 27
+- Full detail cached: 26
+- Notices with attachments: 20
+- Total attachment links: 28
 - Pre-solicitation: 5
-- Sources Sought: 13
+- Sources Sought: 14
 - Special Notice: 7
 
 ## Engagement signals
 - Pre-solicitation: 5
-- Sources Sought: 13
+- Sources Sought: 14
 - Special Notice: 7
 
 ## Top candidates
@@ -47,6 +47,7 @@ Posted range: 01/01/2026 -> 03/09/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-18 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Human Performance (HPB) Branch (Synopsis)](https://sam.gov/opp/6f9e41a375e744b294d1e313bcd67f82/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-20 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Range and Training Area Management (RTAM)](https://sam.gov/opp/56806bd9cce54f9bb33b5f44d928cc5d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-20 | DEPT OF DEFENSE | [MCIEAST G-6 TSD GPON/DWDM MAINTENANCE SUPPORT SERVICES](https://sam.gov/opp/4e5719ee5d51416b9a863e44c0a4458e/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-20 | DEPT OF DEFENSE | [MEDLOGCO Warehousing Support Operations](https://sam.gov/opp/776b6c25b4b74e63bb4d22db1ebe265a/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/4cb4b860bc084179a2fc47b17730eb82/view) |
 
 ## Notes

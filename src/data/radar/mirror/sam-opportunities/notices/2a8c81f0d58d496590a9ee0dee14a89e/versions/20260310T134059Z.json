@@ -1,0 +1,68 @@
+{
+  "id": "sam-2a8c81f0d58d496590a9ee0dee14a89e",
+  "title": "Firm-Fixed Price for Propane to Mobridge, South Dakota",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a8c81f0d58d496590a9ee0dee14a89e",
+  "opportunity_url": "https://sam.gov/opp/2a8c81f0d58d496590a9ee0dee14a89e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2a8c81f0d58d496590a9ee0dee14a89e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2a8c81f0d58d496590a9ee0dee14a89e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1523808",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.GREAT PLAINS AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a8c81f0d58d496590a9ee0dee14a89e",
+  "detail_text": "The Government is conducting market research to identify qualified Indian Small Business Economic Enterprises (ISBEE) capable of providing bulk propane (liquefied petroleum gas) delivery to a Government facility located in Mobridge, South Dakota. The contractor shall provide delivery of propane to Government-owned storage tanks on an as-needed basis. The anticipated period of performance is one (1) year from the date of award. This notice is issued for market research purposes only to determine the availability of ISBEE firms. This is not a solicitation and does not constitute a commitment by the Government to issue a solicitation or award a contract.",
+  "detail_text_length": 659,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4bed1d2e24cb44e68cb2b14dcb49ea79/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/991f6b9ec42a4dfd92aec500cc5ba0d2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a601a12a218e4c9fba9c09ddd5aec457/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4bed1d2e24cb44e68cb2b14dcb49ea79/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a368031e8acaf53317327fd801278eae10dfa066b58db11fc853c6a4f6acbb75.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a368031e8acaf53317327fd801278eae10dfa066b58db11fc853c6a4f6acbb75.pdf",
+      "file_id": "4bed1d2e24cb44e68cb2b14dcb49ea79",
+      "file_name": "IHS+IEE+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 134255,
+      "sha256": "a368031e8acaf53317327fd801278eae10dfa066b58db11fc853c6a4f6acbb75"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/991f6b9ec42a4dfd92aec500cc5ba0d2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/14da5b0c971d45099fb61e9d47a01cd6de7ba124b64c8ab62b82cafb509383df.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/14da5b0c971d45099fb61e9d47a01cd6de7ba124b64c8ab62b82cafb509383df.pdf",
+      "file_id": "991f6b9ec42a4dfd92aec500cc5ba0d2",
+      "file_name": "SOW+IHS1523808.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 305524,
+      "sha256": "14da5b0c971d45099fb61e9d47a01cd6de7ba124b64c8ab62b82cafb509383df"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a601a12a218e4c9fba9c09ddd5aec457/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/085a05b6b5b80b94ef23c5eb447b55f298eb9c5f6c6bf9cbfb0b6580f29a4d3f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/085a05b6b5b80b94ef23c5eb447b55f298eb9c5f6c6bf9cbfb0b6580f29a4d3f.pdf",
+      "file_id": "a601a12a218e4c9fba9c09ddd5aec457",
+      "file_name": "Sources+Sought+IHS1523808-Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 159703,
+      "sha256": "085a05b6b5b80b94ef23c5eb447b55f298eb9c5f6c6bf9cbfb0b6580f29a4d3f"
+    }
+  ],
+  "_mirror_hash": "0d292bc2e0d42963bae1562f76493fec89f3e7732b0f1f3f5efd99be1552e51f",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.042357+00:00"
+}

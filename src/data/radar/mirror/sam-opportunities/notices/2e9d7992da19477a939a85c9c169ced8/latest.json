@@ -1,0 +1,68 @@
+{
+  "id": "sam-2e9d7992da19477a939a85c9c169ced8",
+  "title": "DA10--Enterprise Digital Government Enablement (EDGE)  36C10B26Q0245",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e9d7992da19477a939a85c9c169ced8",
+  "opportunity_url": "https://sam.gov/opp/2e9d7992da19477a939a85c9c169ced8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2e9d7992da19477a939a85c9c169ced8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2e9d7992da19477a939a85c9c169ced8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0245",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e9d7992da19477a939a85c9c169ced8",
+  "detail_text": "See attached RFI documents.",
+  "detail_text_length": 27,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3290a4708cb84d0c8937a3d442e20fb4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51c4ce2ae757430e9e1e26512be21be9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c660c9c17bc46a98ef169aa5b072d41/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3290a4708cb84d0c8937a3d442e20fb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e27340dc11453909a565b7d82b62f74e5cc27bd6ba89059ee92ee5a9ba6877d2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e27340dc11453909a565b7d82b62f74e5cc27bd6ba89059ee92ee5a9ba6877d2.docx",
+      "file_id": "3290a4708cb84d0c8937a3d442e20fb4",
+      "file_name": "EDGE+RFI+36C10B26Q0245.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28920,
+      "sha256": "e27340dc11453909a565b7d82b62f74e5cc27bd6ba89059ee92ee5a9ba6877d2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51c4ce2ae757430e9e1e26512be21be9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/62be7b82f7462f5f4fa2e60eec53a2eabeb7212e33f5b2f59e4caf542d899292.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/62be7b82f7462f5f4fa2e60eec53a2eabeb7212e33f5b2f59e4caf542d899292.docx",
+      "file_id": "51c4ce2ae757430e9e1e26512be21be9",
+      "file_name": "36C10B26Q0245.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14344,
+      "sha256": "62be7b82f7462f5f4fa2e60eec53a2eabeb7212e33f5b2f59e4caf542d899292"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c660c9c17bc46a98ef169aa5b072d41/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6cd7026fda8fb2eb0684de353cbe7ba928db42b258ea9c6aceb3e20df1c0acab.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6cd7026fda8fb2eb0684de353cbe7ba928db42b258ea9c6aceb3e20df1c0acab.docx",
+      "file_id": "9c660c9c17bc46a98ef169aa5b072d41",
+      "file_name": "EDGE+PWS+Draft.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 616004,
+      "sha256": "6cd7026fda8fb2eb0684de353cbe7ba928db42b258ea9c6aceb3e20df1c0acab"
+    }
+  ],
+  "_mirror_hash": "6a4edf12f96070aa3877d4b027038967b5282ca70dca70d9a4fef2fc015e57a9",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.061643+00:00"
+}

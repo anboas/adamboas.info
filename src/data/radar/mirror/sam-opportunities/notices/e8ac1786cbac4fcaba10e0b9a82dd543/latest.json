@@ -1,0 +1,57 @@
+{
+  "id": "sam-e8ac1786cbac4fcaba10e0b9a82dd543",
+  "title": "No-cost Contract for Soldier Virtual Trainer (SVT) (Bailment)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8ac1786cbac4fcaba10e0b9a82dd543",
+  "opportunity_url": "https://sam.gov/opp/e8ac1786cbac4fcaba10e0b9a82dd543/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e8ac1786cbac4fcaba10e0b9a82dd543/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e8ac1786cbac4fcaba10e0b9a82dd543",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-ORLANDO.W6QK ACC-ORLANDO",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8ac1786cbac4fcaba10e0b9a82dd543",
+  "detail_text": "Update:3/9/2026. This Special Notice is re-opened to update changes to the Bailment Agreement with a close date of 15 April 2026 11:00am EST. The revised Bailment language will be out shortly. NOTE: Response expectation is for an interested vendor to return the Att_01 filled out. Update: 2/17/2026. Response date is extended to 5 March 2026 11:00am EST. Update: 2/5/2026. Reloaded the attachments so you can dowload them as necesary. The US Army, Capability Program Executive – Simulations Training and Instrumentation (CPE-STRI), Soldier Virtual Trainer (SVT) has a requirement to build a Virtual Marksmanship Simulator that is compatible with the US Army Next Generation Squad Weapons (NGSW), which include the M7 and M250 weapons and the XM157 Fire Control Smart Scope. The Program Manager for SVT team seeks to accelerate the development of the SVT components like a surrogate and / or weapon “drop-in-kit”, which replaces some of the internal components of the M7 and M250 with components that will allow simulated firing and functioning of the weapons in the SVT training simulator. To accomplish this, PM-SVT feels it is advantageous for CPE-Soldier to loan the NGSW systems to select vendors under a no-cost contract - bailment agreement. Vendors must be willing to self-fund the development of these drop-in-kits or surrogates without any government funding. Vendors who have the capability to and intend to expend Independent Research and Development (IRAD) funds for the development of a surrogate M7 and/or M250 NGSW and are willing and able to adhere to the language in the bailment language attachment, are encouraged to reply with the information found in attachment 1. Vendors will find a template of the actual Bailment Agreement language that must be agreed to and accepted by the vendor. Responses are requested before 3/5/2026 11:00am and this Notice will expire 3/5/2026 with no further submissions accepted. Attachments: No-cost contract – bailment agreement language. Att_01_Company_information_and_assertions",
+  "detail_text_length": 2033,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33a6538dcaf149a7bcb923a4ed220b79/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b099b65d38874f129d3d6c68493e91f2/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33a6538dcaf149a7bcb923a4ed220b79/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b980b2725f2b4a50b6066656143fc5ffa5bf444afe817cd2e42eac2c7b1b33fa.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b980b2725f2b4a50b6066656143fc5ffa5bf444afe817cd2e42eac2c7b1b33fa.docx",
+      "file_id": "33a6538dcaf149a7bcb923a4ed220b79",
+      "file_name": "Bailment_Agreement_FINAL.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48841,
+      "sha256": "b980b2725f2b4a50b6066656143fc5ffa5bf444afe817cd2e42eac2c7b1b33fa"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b099b65d38874f129d3d6c68493e91f2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79934a4ab753e1f495555f7cd478a4ffbe7b8854bfc136b94deccf8287f3c4d4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79934a4ab753e1f495555f7cd478a4ffbe7b8854bfc136b94deccf8287f3c4d4.docx",
+      "file_id": "b099b65d38874f129d3d6c68493e91f2",
+      "file_name": "Att_01_Company_information_and_assertions.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25843,
+      "sha256": "79934a4ab753e1f495555f7cd478a4ffbe7b8854bfc136b94deccf8287f3c4d4"
+    }
+  ],
+  "_mirror_hash": "833d00d66c6cc92cb4f2072ce8137ad6feba130d3fe9faf1b4b12499b32cdd26",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.095342+00:00"
+}

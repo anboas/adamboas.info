@@ -1,0 +1,46 @@
+{
+  "id": "sam-d821d972fbc44fe8b606969a50b1e2cb",
+  "title": "Steam Turbine",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d821d972fbc44fe8b606969a50b1e2cb",
+  "opportunity_url": "https://sam.gov/opp/d821d972fbc44fe8b606969a50b1e2cb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d821d972fbc44fe8b606969a50b1e2cb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d821d972fbc44fe8b606969a50b1e2cb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM126QMD53",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d821d972fbc44fe8b606969a50b1e2cb",
+  "detail_text": "DLA Weapons Support Mechanicsburg is seeking sources capable of supplying the following item: NSN: 7HH 2825 013883336 Nomenclature: Steam Turbine P/N: S2RN/198615 Qty: 8 Approved Design Cage: CURTISS-WRIGHT ELECTRO-MECHANICAL CORP (CAGE 8FGX3) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources should confirm if contract financing is required to meet the requirement. Sources capable of an interested in supplying this item should complete the attached market survey and return the completed copy via email to Tyese.Swain@dla.mil by 3:00 PM EST on 25 March 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1319,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc698a818a54453682941b78ca4dba89/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc698a818a54453682941b78ca4dba89/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/85592317f3fe1e245dc6b39cfca31938be1e1cede9b06ff43c66081fefd8ce39.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/85592317f3fe1e245dc6b39cfca31938be1e1cede9b06ff43c66081fefd8ce39.docx",
+      "file_id": "bc698a818a54453682941b78ca4dba89",
+      "file_name": "1.08+Sources+Sought+MARKET+SURVEY+.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49476,
+      "sha256": "85592317f3fe1e245dc6b39cfca31938be1e1cede9b06ff43c66081fefd8ce39"
+    }
+  ],
+  "_mirror_hash": "fe3c7668222c7254bce69918f22bc405b97d919f7c0970d2b7ac1f27fba31af9",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.060453+00:00"
+}

@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-09T13:43:46.384335+00:00
+Generated: 2026-03-10T13:48:32.004778+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/09/2026
+Posted range: 01/01/2026 -> 03/10/2026
 
 ## Counts
-- Total candidates: 106
-- Navy-related: 106
-- Full detail cached: 106
-- Notices with attachments: 41
-- Total attachment links: 185
-- Combined Synopsis/Solicitation: 26
-- Pre-solicitation: 28
+- Total candidates: 108
+- Navy-related: 108
+- Full detail cached: 108
+- Notices with attachments: 42
+- Total attachment links: 193
+- Combined Synopsis/Solicitation: 27
+- Pre-solicitation: 29
 - Solicitation: 14
 - Sources Sought: 27
 - Special Notice: 11
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 30
+- Pre-solicitation: 31
 - Sources Sought: 27
 - Vendor Outreach: 1
 - Special Notice: 11
@@ -27,6 +27,7 @@ Posted range: 01/01/2026 -> 03/09/2026
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
+| 6 | Combined Synopsis/Solicitation | - | 2026-03-09 | 2025-11-12 | DEPT OF DEFENSE | [*CANCELED* Fiber Optic Measurement System](https://sam.gov/opp/0265581e66ee47078faee2d61ced8f14/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-01-07 | 2025-12-05 | DEPT OF DEFENSE | [CH-53K Electrical Optical (EO) / Infrared (IR) Sensor System Competition](https://sam.gov/opp/6a074623cbaa4fbcada63a24a8156cec/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-01-07 | 2025-12-23 | DEPT OF DEFENSE | [Combustion IC and Profiler-F Installation and Training](https://sam.gov/opp/aec40896263648d493dee850c10b7516/view) |
 | 6 | Solicitation | - | 2026-01-08 | 2026-01-16 | DEPT OF DEFENSE | [Unmanned Maritime Systems (UMS) Support](https://sam.gov/opp/930b288442584843b94ec1d27d2279fe/view) |
@@ -117,6 +118,7 @@ Posted range: 01/01/2026 -> 03/09/2026
 | 5 | Sources Sought | Sources Sought | 2026-02-21 | 2026-03-23 | DEPT OF DEFENSE | [Auxiliary Fuel Tank](https://sam.gov/opp/8e04d72b1e7d4905a12e84027da1f6ad/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-23 | DEPT OF DEFENSE | [Unmanned Common Controller (UCC) for the United States Marine Corps](https://sam.gov/opp/ce7bc54b516a40a39f1e65bfb4d92030/view) |
 | 4 | Solicitation | - | 2026-03-05 | 2026-03-23 | DEPT OF DEFENSE | [Contractor Logistics Support (CLS) Follow-On, FY 27-30](https://sam.gov/opp/ad2e0331412b44a29ee795751c1ae8d3/view) |
+| 7 | Pre-solicitation | Pre-solicitation | 2026-03-09 | 2026-03-23 | DEPT OF DEFENSE | [Assault APR-39 /FRP4 Production Base Contract (lots 10-12) Pre-Solicitation Notice](https://sam.gov/opp/6d2350e77ec64d6fa5319c3d60de94c8/view) |
 | 7 | Special Notice | Special Notice | 2026-02-24 | 2026-03-24 | DEPT OF DEFENSE | [2026 Pacific Northwest Regional Council Training Event](https://sam.gov/opp/f6ab3404eef94e2daea810b1e3b24b3a/view) |
 | 4 | Solicitation | - | 2026-01-30 | 2026-03-25 | DEPT OF DEFENSE | [Joint Tactical Terminal – Transceiver (JTT-X)](https://sam.gov/opp/3486dd2c51b4401099fadf19b5ddfe18/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-18 | 2026-03-25 | DEPT OF DEFENSE | [Shipboard Warning System](https://sam.gov/opp/c318c00423d64540a00afe77d4574246/view) |

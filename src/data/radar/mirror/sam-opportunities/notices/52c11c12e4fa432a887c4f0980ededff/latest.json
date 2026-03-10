@@ -1,0 +1,79 @@
+{
+  "id": "sam-52c11c12e4fa432a887c4f0980ededff",
+  "title": "Z1DA--Renovate Pharmacy for USP800 Compliance  Project Number 540-18-107",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52c11c12e4fa432a887c4f0980ededff",
+  "opportunity_url": "https://sam.gov/opp/52c11c12e4fa432a887c4f0980ededff/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/52c11c12e4fa432a887c4f0980ededff/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "52c11c12e4fa432a887c4f0980ededff",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24526B0001",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.245-NETWORK CONTRACT OFFICE 5 (36C245)",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52c11c12e4fa432a887c4f0980ededff",
+  "detail_text": "The date for the issuance of the solicitation has been extended. It is anticipated that the solicitation will be issued on or about March 31, 2026. The solicitation package, amendments, and site visit minutes will be issued by way of SAM.gov website only. All questions regarding this solicitation must be submitted in writing by email to Rebecca.besten@va.gov. All questions pertaining to this solicitation must be received in writing. There will be a pre-bid site visit for this project which will be held at the Louis A. Johnson VA Medical Center. All interested parties are encouraged to attend the site visit. The date of the site visit will be announced in the solicitation. A firm fixed price contract will be awarded as a result of this solicitation based on the availability of funds. It is the responsibility of the contractor to frequently check the web site for all notices, amendments, etc. regarding this solicitation. The government will not be responsible for any notifications not sent or received by contractors regarding this solicitation.",
+  "detail_text_length": 1058,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2e0ad10f6ad34fa58c6996aabdd4c0b5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/530bb8b7c54b44feb055480b56bf106c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abbaba0760e14f388801495fa99d3164/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0937b76a9914b238c43b1034e1ad910/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2e0ad10f6ad34fa58c6996aabdd4c0b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1f1e53f815473470864def9346aa21f31a28214bd3387b72f55c41a980f572c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1f1e53f815473470864def9346aa21f31a28214bd3387b72f55c41a980f572c.docx",
+      "file_id": "2e0ad10f6ad34fa58c6996aabdd4c0b5",
+      "file_name": "36C24526B0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25645,
+      "sha256": "b1f1e53f815473470864def9346aa21f31a28214bd3387b72f55c41a980f572c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/530bb8b7c54b44feb055480b56bf106c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/00b7b75005cb869dde7d7121507d3157203a836148e2e65a3baa6ab8b0f2906f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/00b7b75005cb869dde7d7121507d3157203a836148e2e65a3baa6ab8b0f2906f.docx",
+      "file_id": "530bb8b7c54b44feb055480b56bf106c",
+      "file_name": "36C24526B0001_4.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24387,
+      "sha256": "00b7b75005cb869dde7d7121507d3157203a836148e2e65a3baa6ab8b0f2906f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abbaba0760e14f388801495fa99d3164/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5b08ce736541d75f18290067cce0edaee82f75b806887893413d962d5ef45744.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5b08ce736541d75f18290067cce0edaee82f75b806887893413d962d5ef45744.docx",
+      "file_id": "abbaba0760e14f388801495fa99d3164",
+      "file_name": "36C24526B0001_3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24386,
+      "sha256": "5b08ce736541d75f18290067cce0edaee82f75b806887893413d962d5ef45744"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0937b76a9914b238c43b1034e1ad910/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/784bbf9e34f0b1273a02d653675168bb47b300f141e564864794df6855b0c1bd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/784bbf9e34f0b1273a02d653675168bb47b300f141e564864794df6855b0c1bd.docx",
+      "file_id": "f0937b76a9914b238c43b1034e1ad910",
+      "file_name": "36C24526B0001_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15945,
+      "sha256": "784bbf9e34f0b1273a02d653675168bb47b300f141e564864794df6855b0c1bd"
+    }
+  ],
+  "_mirror_hash": "6f827db9810688025d72ce2c6b03bce49494adb0f15320c5042705113aa05779",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.112347+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-3647d39e0e8a419cabedea66b1fbd022",
+  "title": "Confinement Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3647d39e0e8a419cabedea66b1fbd022",
+  "opportunity_url": "https://sam.gov/opp/3647d39e0e8a419cabedea66b1fbd022/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3647d39e0e8a419cabedea66b1fbd022/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3647d39e0e8a419cabedea66b1fbd022",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W91249-12373210",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-FT GORDON",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3647d39e0e8a419cabedea66b1fbd022",
+  "detail_text": "Mission and Installation Contracting Command, Fort Gordon, GA intends to negotiate/award a sole-source contract to County of Lincoln 210 HUMPHREY STREET RM 107 LINCOLNTON, GEORGIA 30817-5847 USA for the following service: Confinement Services for Military Prisoners, Pre- and Post-trial Confinement. The NAICS code is 561210. The Contractor shall provide all personnel, equipment, supplies, facilities, transportation, tools, materials, supervision, and other items and non-personal services necessary to perform Confinement for military offenders awaiting trial and adjudication for criminal offenses in accordance with Army Regulation 633-30, Military Sentences to Confinement, 02 December 2015 as defined in this Performance Work Statement (PWS), section 5 except for those items specified as government furnished property and services. The Contractor shall perform to the standards in this contract. Market research techniques included queries via the internet to obtain more detailed information about available services. Based on information gathered from the search, County of Lincoln is the sole source of this service. The authority for this non-competitive award is 10 USC 2304(c)(1), Only one responsible Source. The Government intends to procure this sole source requirement under Simplified Acquisition Procedures in FAR part 13 and Commercial procedures in FAR part 12. THIS NOTICE IS NOT A REQUEST FOR COMPETITIVE PROPOSALS and a solicitation will not be issued. Interested concerns must show clear and convincing evidence that competition of this requirement would be advantageous to the Government. If no affirmative written responses are received by Monday March 16, 2026, the award will be made without further notice. Oral communications are not acceptable in response to this notice. A determination by the government not to compete this proposed requirement is solely within the discretion of the government.",
+  "detail_text_length": 1930,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/972e6d1294df415eb3964270e28e046e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/972e6d1294df415eb3964270e28e046e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e9fd76e38fa3ad3dd789b39ec48d3613bbec7d4f3f0616fac1fe1683140c39e8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e9fd76e38fa3ad3dd789b39ec48d3613bbec7d4f3f0616fac1fe1683140c39e8.pdf",
+      "file_id": "972e6d1294df415eb3964270e28e046e",
+      "file_name": "PWS+Confinement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 397689,
+      "sha256": "e9fd76e38fa3ad3dd789b39ec48d3613bbec7d4f3f0616fac1fe1683140c39e8"
+    }
+  ],
+  "_mirror_hash": "a98dfa3eaab6ad267518e7ac9689f8741c90b0ff70f9b661852a8c25a1d1cf45",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.958490+00:00"
+}

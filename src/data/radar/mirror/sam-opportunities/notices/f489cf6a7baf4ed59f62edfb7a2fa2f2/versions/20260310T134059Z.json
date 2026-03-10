@@ -1,0 +1,45 @@
+{
+  "id": "sam-f489cf6a7baf4ed59f62edfb7a2fa2f2",
+  "title": "SCR,CAP,SLFLKG",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f489cf6a7baf4ed59f62edfb7a2fa2f2",
+  "opportunity_url": "https://sam.gov/opp/f489cf6a7baf4ed59f62edfb7a2fa2f2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f489cf6a7baf4ed59f62edfb7a2fa2f2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f489cf6a7baf4ed59f62edfb7a2fa2f2",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFC89",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f489cf6a7baf4ed59f62edfb7a2fa2f2",
+  "detail_text": "Procurement of NSN 1HM 5305-01-670-8159 D4, SCR,CAP,SLFLKG, Qty 10 EA. See attached solicitation for more details.",
+  "detail_text_length": 114,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b1d13c7b3984ca3aa3599de8ba8864d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b1d13c7b3984ca3aa3599de8ba8864d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bcbac3772890b7550bf5061fa422db255a5d782d98a56dd7fece690e293f08d9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bcbac3772890b7550bf5061fa422db255a5d782d98a56dd7fece690e293f08d9.pdf",
+      "file_id": "8b1d13c7b3984ca3aa3599de8ba8864d",
+      "file_name": "N0010426QFC89.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 891398,
+      "sha256": "bcbac3772890b7550bf5061fa422db255a5d782d98a56dd7fece690e293f08d9"
+    }
+  ],
+  "_mirror_hash": "74cdf772bca75cb66c5aefe5a5f4b33ebe3a12cafa3c268cf8783da2aad02063",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.848967+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-bd9a43f144794eb0ad19c48dc4c729ee",
+  "title": "Commercial Operation Supplies for OCONUS Commissaries",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd9a43f144794eb0ad19c48dc4c729ee",
+  "opportunity_url": "https://sam.gov/opp/bd9a43f144794eb0ad19c48dc4c729ee/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bd9a43f144794eb0ad19c48dc4c729ee/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bd9a43f144794eb0ad19c48dc4c729ee",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DeCA-CSO-MOSBP-Pacific",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE COMMISSARY AGENCY  (DECA)",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd9a43f144794eb0ad19c48dc4c729ee",
+  "detail_text": "The selected vendor will be responsible for the sourcing, management, and timely delivery of all items listed in Attachment 1 for OCONUS orders to Costal Pacific Food Distribution, Inc in Stockton, CA. Key capabilities include: Product Sourcing: Ability to procure the specified commercial items. Logistics & Distribution: A robust supply chain capable of providing reliable, on-time delivery to a container point in Stockton, CA. Quality Control: Ensuring all products meet the specifications outlined in the attachment.",
+  "detail_text_length": 521,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71e011f53acf46cdadc21d94b7c66637/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7f11712ac194007927d9cfb5eec4685/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee845e89edfe4e53ab866967ad23d36f/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71e011f53acf46cdadc21d94b7c66637/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dcfdb2830481a0aa4d5c5433736dcb3cb8793100c107cb5d3d049c7cc70f82e1.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dcfdb2830481a0aa4d5c5433736dcb3cb8793100c107cb5d3d049c7cc70f82e1.xlsx",
+      "file_id": "71e011f53acf46cdadc21d94b7c66637",
+      "file_name": "Material+Items+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 85041,
+      "sha256": "dcfdb2830481a0aa4d5c5433736dcb3cb8793100c107cb5d3d049c7cc70f82e1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7f11712ac194007927d9cfb5eec4685/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/600d4977cabe478fbe31575e6356a1220fa8326a66c01e91cd15ecf51061f225.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/600d4977cabe478fbe31575e6356a1220fa8326a66c01e91cd15ecf51061f225.pdf",
+      "file_id": "d7f11712ac194007927d9cfb5eec4685",
+      "file_name": "COMMERCIAL+SOLUTIONS+OPENING+MOSBP+-+Pacific.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 115485,
+      "sha256": "600d4977cabe478fbe31575e6356a1220fa8326a66c01e91cd15ecf51061f225"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee845e89edfe4e53ab866967ad23d36f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/50dee9c390f25d99078d79c6609a5f020edb1fd8514c1fdbd44297262aad2ea4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/50dee9c390f25d99078d79c6609a5f020edb1fd8514c1fdbd44297262aad2ea4.pdf",
+      "file_id": "ee845e89edfe4e53ab866967ad23d36f",
+      "file_name": "Commercial+Solutions+Opening+Defense+Commissary+Agency+-DeCA-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 982815,
+      "sha256": "50dee9c390f25d99078d79c6609a5f020edb1fd8514c1fdbd44297262aad2ea4"
+    }
+  ],
+  "_mirror_hash": "5af66cf4c30c94a8527e536db912e7f92690b2e21c975d72dab3e1d51d4d07c2",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.887729+00:00"
+}

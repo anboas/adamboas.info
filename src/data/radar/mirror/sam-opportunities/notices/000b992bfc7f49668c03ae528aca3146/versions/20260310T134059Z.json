@@ -1,0 +1,48 @@
+{
+  "id": "sam-000b992bfc7f49668c03ae528aca3146",
+  "title": "Space Domain Awareness (SDA) Request for Information (RFI)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=000b992bfc7f49668c03ae528aca3146",
+  "opportunity_url": "https://sam.gov/opp/000b992bfc7f49668c03ae528aca3146/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/000b992bfc7f49668c03ae528aca3146/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "000b992bfc7f49668c03ae528aca3146",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "SSCIA-26-FMS01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA8802 INTEGRATION OPERATION PIKPKE",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=000b992bfc7f49668c03ae528aca3146",
+  "detail_text": "Please refer to the attachment.",
+  "detail_text_length": 31,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3d0a3e72d8e4e7ca35521adf64037d5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3d0a3e72d8e4e7ca35521adf64037d5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/87c5f5902c19dcfb29b2dc4b55885e160b959366f21ca3f1c2176a1fa2d9d5a2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/87c5f5902c19dcfb29b2dc4b55885e160b959366f21ca3f1c2176a1fa2d9d5a2.pdf",
+      "file_id": "b3d0a3e72d8e4e7ca35521adf64037d5",
+      "file_name": "SDA+RFI.2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 218767,
+      "sha256": "87c5f5902c19dcfb29b2dc4b55885e160b959366f21ca3f1c2176a1fa2d9d5a2"
+    }
+  ],
+  "_mirror_hash": "d08f314cde8c61d15895b53e3a8b7b71e382b3aa46a76c29f94e9c8d89bf229d",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.788651+00:00"
+}

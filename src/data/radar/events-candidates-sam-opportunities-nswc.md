@@ -1,34 +1,35 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-09T13:43:52.211560+00:00
+Generated: 2026-03-10T13:48:38.148915+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/09/2026
+Posted range: 01/01/2026 -> 03/10/2026
 
 ## Counts
-- Total candidates: 403
-- Navy-related: 403
-- Full detail cached: 403
-- Notices with attachments: 232
-- Total attachment links: 655
-- Combined Synopsis/Solicitation: 136
-- Pre-solicitation: 53
-- Solicitation: 89
-- Sources Sought: 71
-- Special Notice: 54
+- Total candidates: 423
+- Navy-related: 423
+- Full detail cached: 423
+- Notices with attachments: 239
+- Total attachment links: 678
+- Combined Synopsis/Solicitation: 144
+- Pre-solicitation: 56
+- Solicitation: 93
+- Sources Sought: 73
+- Special Notice: 57
 
 ## Engagement signals
 - Industry Day: 7
-- Pre-solicitation: 60
-- Sources Sought: 72
+- Pre-solicitation: 63
+- Sources Sought: 74
 - Vendor Outreach: 1
-- Special Notice: 54
+- Special Notice: 57
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
+| 7 | Pre-solicitation | Pre-solicitation | 2026-03-10 | 2025-03-25 | DEPT OF DEFENSE | [SOLE SOURCE – PRODUCTION, REPAIRS, INCIDENTAL SERVICES](https://sam.gov/opp/a4dfce15bcdf410d8b1f4b597be8da5f/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-03-09 | 2025-11-12 | DEPT OF DEFENSE | [*CANCELED* Fiber Optic Measurement System](https://sam.gov/opp/0265581e66ee47078faee2d61ced8f14/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-01-07 | 2025-12-23 | DEPT OF DEFENSE | [Combustion IC and Profiler-F Installation and Training](https://sam.gov/opp/aec40896263648d493dee850c10b7516/view) |
-| 5 | Sources Sought | Sources Sought | 2026-01-05 | 2026-01-09 | DEPT OF DEFENSE | [Shipboard Oven](https://sam.gov/opp/9d11789e09f3446cad9c58551c7a7e70/view) |
 | 6 | Solicitation | - | 2026-01-08 | 2026-01-16 | DEPT OF DEFENSE | [Unmanned Maritime Systems (UMS) Support](https://sam.gov/opp/930b288442584843b94ec1d27d2279fe/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-01-10 | 2026-01-16 | DEPT OF DEFENSE | [Industrial Finishing Services for New Government-Furnished Millwork and Furniture](https://sam.gov/opp/29c8cb7a66e9426b9ec44b80ec427ea6/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-01-20 | 2026-01-27 | DEPT OF DEFENSE | [Service and Maintenance of Teradyne Spectrum Test Systems](https://sam.gov/opp/06a43c84191947548b3e9af496f3caef/view) |
@@ -240,7 +241,6 @@ Posted range: 01/01/2026 -> 03/09/2026
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-05 | 2026-03-06 | DEPT OF DEFENSE | [H10 Engineering Technical Support](https://sam.gov/opp/97330b20f4404cf7bfb048ff8db8c654/view) |
 | 6 | Solicitation | - | 2026-02-05 | 2026-03-09 | DEPT OF DEFENSE | [SA 86687.1 SIBS TECH REFRESH (RIPOUT) ON ONE (1) CVN CLASS SHIP, CVN 75 USS HARRY S. TRUMAN](https://sam.gov/opp/dbd5bd92a4634fb1a04b4c021984fc9e/view) |
 | 6 | Solicitation | - | 2026-02-10 | 2026-03-09 | DEPT OF DEFENSE | [TIH 28/30/32](https://sam.gov/opp/ef0112fc73af4e388a1ffb1ffd8f0257/view) |
-| 7 | Pre-solicitation | Pre-solicitation | 2026-02-11 | 2026-03-09 | DEPT OF DEFENSE | [H20 Engineering Services](https://sam.gov/opp/f975673fd21e46699e4096649c2abe3d/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-09 | DEPT OF DEFENSE | [Defense Compressed Air Test Kits and Testing Services Follow-on](https://sam.gov/opp/f726e95a66164d8998b58bf7bc37a41e/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-03-09 | DEPT OF DEFENSE | [Film Tape](https://sam.gov/opp/c75c3cef085549e9aae751bb2a7afb3b/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-03-02 | 2026-03-09 | DEPT OF DEFENSE | [Total Small Business Set Aside for Various Quantities of Brand: Glenair Connectors](https://sam.gov/opp/cb7eb77ad9d54fc2b0e36e69b2e7ee2a/view) |
@@ -304,12 +304,15 @@ Posted range: 01/01/2026 -> 03/09/2026
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-04 | 2026-03-12 | DEPT OF DEFENSE | [Dumpster/Waste Removal](https://sam.gov/opp/e70111d9f6294244812a17dcaad9fa94/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-05 | 2026-03-12 | DEPT OF DEFENSE | [Custom Platforms](https://sam.gov/opp/69402ee1b125414d9a6dda072c3fe80f/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-05 | 2026-03-12 | DEPT OF DEFENSE | [N0016426Q0084](https://sam.gov/opp/560662a3d5c0499391218b81c2fee4b5/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-05 | 2026-03-12 | DEPT OF DEFENSE | [Outdoor LED Sign, Programmable](https://sam.gov/opp/57025c09d08540eab53f93ece30757e7/view) |
 | 5 | Special Notice | Special Notice | 2026-03-05 | 2026-03-12 | DEPT OF DEFENSE | [SERVICENOW APP](https://sam.gov/opp/0b19b34cb1a346ab9404dc493fbd6b9d/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-05 | 2026-03-12 | DEPT OF DEFENSE | [Butterfly Valve](https://sam.gov/opp/9b294b4bfaff40679db19cb9bcf49f0c/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-06 | 2026-03-12 | DEPT OF DEFENSE | [26-SIMACQ-E20-0005 Crane Services](https://sam.gov/opp/7bb6edae0d3141f6a1fda3b41d08d398/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-03-12 | DEPT OF DEFENSE | [Avalue PC](https://sam.gov/opp/e7670fe3a285432caba1b4ebe7e8fe54/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-03-09 | 2026-03-12 | DEPT OF DEFENSE | [N0016426Q0072](https://sam.gov/opp/78d7e7bf40a641f9b13b80c554c5d055/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-03-09 | 2026-03-12 | DEPT OF DEFENSE | [Outdoor LED Sign, Programmable](https://sam.gov/opp/6e57d2b513584b6aa9baa797a59cbb01/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-03-09 | 2026-03-12 | DEPT OF DEFENSE | [Rudder Stock Upper Bearing](https://sam.gov/opp/f126735827e440d789d56a30650a14be/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-09 | 2026-03-12 | DEPT OF DEFENSE | [SLIDING MOUNT PADEYE; KINGPOST](https://sam.gov/opp/8131faee525b43a1839fe4183e63a46e/view) |
+| 4 | Solicitation | - | 2026-03-10 | 2026-03-12 | DEPT OF DEFENSE | [NNSY WALL PANELS "AWIP"](https://sam.gov/opp/cc1e82e9c2794c3aaaf65d1ebfff0f10/view) |
 | 9 | Sources Sought | Sources Sought | 2026-02-11 | 2026-03-13 | DEPT OF DEFENSE | [Sources Sought for Handheld Gas Analyzers](https://sam.gov/opp/c9341f8952914165b1ac6f6a976f29d6/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-18 | 2026-03-13 | DEPT OF DEFENSE | [EVALUATION, OVERHAUL, SUPPLEMENTAL REPAIR, AND TESTING OF ALTERNATING CURRENT (AC) MOTORS USED IN THE AN/SPS-49, AN/SPS-48E, AN/SPS-67(V)3, AN/SPS-67(V)1, AN/SPS-40, AN/SPQ-9B, AN/SPS-55A, AND AN/SPS-55 RADAR SYSTEMS](https://sam.gov/opp/b93b6199cbfe4772a98ae02faa008386/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-13 | DEPT OF DEFENSE | [GTA Containers, LLC - BPA NSWC PCD](https://sam.gov/opp/2f14f1234352402f94d7e0a651ee7a51/view) |
@@ -324,9 +327,6 @@ Posted range: 01/01/2026 -> 03/09/2026
 | 5 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-13 | DEPT OF DEFENSE | [Repair and Maintenance of COMET X-Ray Generators and Cooling Systems](https://sam.gov/opp/a57f696a76494e0c989b56648e5d7f2d/view) |
 | 4 | Solicitation | - | 2026-03-05 | 2026-03-13 | DEPT OF DEFENSE | [N5523626Q0039-VIDEO BORESCOPE SYSTEM](https://sam.gov/opp/be1778f3c5744c74a32dc162ec86d4c6/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-13 | DEPT OF DEFENSE | [Laundry Services PHNSY&IMF](https://sam.gov/opp/4aa7dd50d64540a385fc5ed5a30f3919/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-05 | 2026-03-14 | DEPT OF DEFENSE | [Demineralizers](https://sam.gov/opp/ef9a9f506d2c46d698a54e00e6bd3b64/view) |
-| 5 | Special Notice | Special Notice | 2026-02-20 | 2026-03-15 | DEPT OF DEFENSE | [NOTICE OF INTENT TO SOLE SOURCE:  Arbinger Leadership Training (PSNS&IMF)](https://sam.gov/opp/de7e1385c4e64011abff43ae938de294/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-02-23 | 2026-03-16 | DEPT OF DEFENSE | [Technical Writing Training Course](https://sam.gov/opp/9b17c53841f14a1ebc5b60dcb5f65578/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

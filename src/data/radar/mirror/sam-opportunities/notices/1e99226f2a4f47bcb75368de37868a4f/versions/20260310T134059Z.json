@@ -1,0 +1,46 @@
+{
+  "id": "sam-1e99226f2a4f47bcb75368de37868a4f",
+  "title": "Aircraft Fire Trainer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1e99226f2a4f47bcb75368de37868a4f",
+  "opportunity_url": "https://sam.gov/opp/1e99226f2a4f47bcb75368de37868a4f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1e99226f2a4f47bcb75368de37868a4f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1e99226f2a4f47bcb75368de37868a4f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA302226R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3022 14 CONS LGCA",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1e99226f2a4f47bcb75368de37868a4f",
+  "detail_text": "The 14 Contracting Squadron (14 CONS) is conducting market research for a potential requirement. This is a Request for Information (RFI) issued to obtain knowledge and information for acquisition and project planning purposes. This is NOT a solicitation for proposals, proposal abstracts, or price quotations. The purpose of this notice is to obtain information from industry vendors regarding their interest and capabilities for the requirement described below, located at Columbus Air Base (CAFB), Mississippi. 1.2 Specific Tasks. 1.2.1. Building 994-Aircraft Fire Trainer 1.2.1.1. Repair the following ignitors to include wiring harnesses: Spill, APU (Auxiliary Power Unit), and PAX (Passenger). 1.2.1.2. Repair the training point ignition protection. Provide 7 shields to keep all debris off the ground ignitors. 1.2.1.3. Repair the troop ramp. There is a 2” tripping hazard, provide a transition plate. 1.2.1.4. Repair the rear section fuselage walking surfaces. The surfaces are missing from the floor frame and bar grating. 1.2.1.5. Repair the hydrostatic pressure relief valves on all propane valves. There is a total of 17 valves. 1.2.1.6. Repair the propane tank over pressure valves. There is a total of 4 valves. 1.2.1.7. Repair the fuel control emergency stop system. Install raceways, air actuators and pneumatic airlines. 1.2.1.8. Repair the Remtron emergency isolation system. Install new base station. 1.2.1.9. Repair 4 doorways in fuselage that are not compliant. Install hardware stainless chains. 2.0 Delivery: The vehicle is to be shipped to the Fire Department, 14 CES/CEF, 1024 Independence Ave, Blvd, building 998, Columbus AFB, MS 39710. 3.0 Security Requirements: Contractor must comply with the security requirements identified in AFFARS 5352.242-9000, Contractor Access to Air Force Installations and the Local Base Entry Procedures identified in the contract clauses.",
+  "detail_text_length": 1896,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea248fb4827f4ae887ad8a16e9441d6d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea248fb4827f4ae887ad8a16e9441d6d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f27dbd2cad3c7f4c7d9510c52dd5aebfb8eea78637130e6313d4129b0df7226a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f27dbd2cad3c7f4c7d9510c52dd5aebfb8eea78637130e6313d4129b0df7226a.docx",
+      "file_id": "ea248fb4827f4ae887ad8a16e9441d6d",
+      "file_name": "RFI_Aircraft+Fire+Trainer.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23816,
+      "sha256": "f27dbd2cad3c7f4c7d9510c52dd5aebfb8eea78637130e6313d4129b0df7226a"
+    }
+  ],
+  "_mirror_hash": "79ea5006013778d5052f810436e5aca24a8a74535ac688f18a2d20b3af19403d",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.909058+00:00"
+}

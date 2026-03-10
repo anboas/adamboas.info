@@ -1,0 +1,46 @@
+{
+  "id": "sam-97645b09aa144f419feb2cf2e44eb070",
+  "title": "Motor, Alternating C",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=97645b09aa144f419feb2cf2e44eb070",
+  "opportunity_url": "https://sam.gov/opp/97645b09aa144f419feb2cf2e44eb070/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/97645b09aa144f419feb2cf2e44eb070/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "97645b09aa144f419feb2cf2e44eb070",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM1-26-R-MD62",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=97645b09aa144f419feb2cf2e44eb070",
+  "detail_text": "DLA Weapons Support Mechanicsburg is seeking sources capable of supplying the following item: NSN: 6105012450981 Nomenclautre: Motor, Alternating C P/N: A-505-83 Qty: 15 Approved Design Cage: HANSOME ENERGY SYSTEMS INC (51802) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to amanda.heller@dla.mil by 12:30 PM EST on 24 March 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1224,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4ca04946e584a8d88581d05c13921a7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4ca04946e584a8d88581d05c13921a7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/592ed9b4f8c39fb4e4f578fed939287721cd0ba27f587facd10a29bb11f6e744.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/592ed9b4f8c39fb4e4f578fed939287721cd0ba27f587facd10a29bb11f6e744.docx",
+      "file_id": "a4ca04946e584a8d88581d05c13921a7",
+      "file_name": "1.08+Sources+Sought+MARKET+SURVEY.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52281,
+      "sha256": "592ed9b4f8c39fb4e4f578fed939287721cd0ba27f587facd10a29bb11f6e744"
+    }
+  ],
+  "_mirror_hash": "44afb9f050c3a1ab67bbf1f88bc36c088ff02f2ab2f24967b2926028ba8181d4",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:40.046995+00:00"
+}

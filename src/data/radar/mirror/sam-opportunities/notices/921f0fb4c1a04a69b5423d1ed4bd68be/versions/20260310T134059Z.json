@@ -1,0 +1,47 @@
+{
+  "id": "sam-921f0fb4c1a04a69b5423d1ed4bd68be",
+  "title": "Roman Catholic Priest Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=921f0fb4c1a04a69b5423d1ed4bd68be",
+  "opportunity_url": "https://sam.gov/opp/921f0fb4c1a04a69b5423d1ed4bd68be/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/921f0fb4c1a04a69b5423d1ed4bd68be/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "921f0fb4c1a04a69b5423d1ed4bd68be",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "20260002238",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-03-09",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=921f0fb4c1a04a69b5423d1ed4bd68be",
+  "detail_text": "This Sources Sought is being issued by the NAVSUP Fleet Logistics Center Jacksonville ahead of an anticipated procurement for Roman Catholic Priest Services at Naval Air Station (NAS), Jacksonville, Florida. This is for market research purpose only. Period of Performance has not yet been determined but is anticipated to include options years. This requirement will be a total 100% Small Business Set-Aside. The North American Industry Classification System (NAICS) code for this acquisition is 813110 and the Small Business size standard is $13M. The Government anticipates award of a single firm fixed price service type contract. This requirement will be solicited using commercial, simplified acquisition procedures. The solicitation and any subsequent amendments will be made available electronically upon its release at the System for Award Management (SAM) website, https://sam.gov/. Interested parties are solely responsible for monitoring the SAM website for the posting of the RFQ and any amendments. Vendors must be registered in the SAM database in order to be considered for award.",
+  "detail_text_length": 1095,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c205f33ad4e44e9a96260d68c194f57b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c205f33ad4e44e9a96260d68c194f57b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/993d53c6316fffab565bf1513c623f8e2984998d14443611c941f4851878ac52.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/993d53c6316fffab565bf1513c623f8e2984998d14443611c941f4851878ac52.pdf",
+      "file_id": "c205f33ad4e44e9a96260d68c194f57b",
+      "file_name": "1.05_PWS_DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 101912,
+      "sha256": "993d53c6316fffab565bf1513c623f8e2984998d14443611c941f4851878ac52"
+    }
+  ],
+  "_mirror_hash": "6b2f31a3f581bf8bce2fccda2db802822d2f5f3193c540e1cb15ceed8a058818",
+  "_mirror_run_id": "20260310T134059Z",
+  "_mirror_recorded_at": "2026-03-10T13:47:39.717189+00:00"
+}
