@@ -1,0 +1,46 @@
+{
+  "id": "sam-6c81ac0774404854bafc1d2d211c3b01",
+  "title": "NexGen FOIA Tech Showcase 3.0",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c81ac0774404854bafc1d2d211c3b01",
+  "opportunity_url": "https://sam.gov/opp/6c81ac0774404854bafc1d2d211c3b01/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6c81ac0774404854bafc1d2d211c3b01/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6c81ac0774404854bafc1d2d211c3b01",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "NATIONAL ARCHIVES AND RECORDS ADMINISTRATION.NATIONAL ARCHIVES AND RECORDS ADMINISTRATION",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c81ac0774404854bafc1d2d211c3b01",
+  "detail_text": "This is an amendment to extend the Submission Deadline to 11:59pm ET on March 27, 2026 The Chief FOIA Officers Council’s Technology Committee (Technology Committee), in conjunction with the Office of Government Information Services (OGIS) at the National Archives and Records Administration (NARA), and the U.S. Department of Justice (DOJ) Office of Information Policy (OIP), is planning a virtual event for federal agencies May 12-14, 2026 called the NexGen FOIA Tech Showcase 3.0 . This event is in follow-up to the two-day NexGen FOIA Tech Showcase [1.0] that was held on February 9-10, 2022; and the NexGen FOIA Tech Showcase 2.0, held May 14-16, 2024. The purpose of the 2022 and 2024 events was to identify Freedom of Information Act (FOIA) technology solutions for federal agencies in response to existing FOIA case processing challenges; and to raise awareness within federal agencies of the different technology capabilities to consider for future case processing by leveraging advanced technology, including, but not limited to, artificial intelligence (AI). See attached document for more information.",
+  "detail_text_length": 1112,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35bb36a27173447db333d6aa5569b683/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35bb36a27173447db333d6aa5569b683/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1d33e24fe7018ae531bb55ac42adff5185575e14f58f30c81960eb84078b2371.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1d33e24fe7018ae531bb55ac42adff5185575e14f58f30c81960eb84078b2371.docx",
+      "file_id": "35bb36a27173447db333d6aa5569b683",
+      "file_name": "CFOTC+RFI+AI+and+FOIA2.5.2026.FINAL.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2418863,
+      "sha256": "1d33e24fe7018ae531bb55ac42adff5185575e14f58f30c81960eb84078b2371"
+    }
+  ],
+  "_mirror_hash": "9492622ecb48840b4751c46bfefd92f2d291631b350d3c27532fa106a0e7fe63",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.990004+00:00"
+}

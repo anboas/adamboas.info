@@ -1,0 +1,58 @@
+{
+  "id": "sam-ade6d528b96e4be49847e87453d901f3",
+  "title": "R614--PRE-SOLICITATION NOTICE ONLY  Montgomery On-Site Shredding",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ade6d528b96e4be49847e87453d901f3",
+  "opportunity_url": "https://sam.gov/opp/ade6d528b96e4be49847e87453d901f3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ade6d528b96e4be49847e87453d901f3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ade6d528b96e4be49847e87453d901f3",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C10D26Q0034",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.VETERANS BENEFITS ADMIN (36C10D)",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Solicitation notice type: Solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ade6d528b96e4be49847e87453d901f3",
+  "detail_text": "Solicitation 36C10D26Q0034 Montgomery On-Site Shredding",
+  "detail_text_length": 55,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df195bd8c8a34d1fb9bab841f0a775a8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc00dcb94df84def8a38b730ce85c66b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df195bd8c8a34d1fb9bab841f0a775a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4e2e5299914e4b6d3505681095695872b77c5a58f1a1f85902d2570ec2c72293.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4e2e5299914e4b6d3505681095695872b77c5a58f1a1f85902d2570ec2c72293.docx",
+      "file_id": "df195bd8c8a34d1fb9bab841f0a775a8",
+      "file_name": "36C10D26Q0034.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 95941,
+      "sha256": "4e2e5299914e4b6d3505681095695872b77c5a58f1a1f85902d2570ec2c72293"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc00dcb94df84def8a38b730ce85c66b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/44b48a15cd4dd2e8730f86d107a6fa1dfb61d8e9344bbb41610d193b8bac1124.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/44b48a15cd4dd2e8730f86d107a6fa1dfb61d8e9344bbb41610d193b8bac1124.pdf",
+      "file_id": "fc00dcb94df84def8a38b730ce85c66b",
+      "file_name": "Wage+Determination+Montgomery+12-3-2025.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4781341,
+      "sha256": "44b48a15cd4dd2e8730f86d107a6fa1dfb61d8e9344bbb41610d193b8bac1124"
+    }
+  ],
+  "_mirror_hash": "7dfc2dba177c3b264f6247b95b1f6b2490014477d8dc3eca130ae5728f90a05a",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.805312+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-a1249270056c48baa4c04beac75dd5c4",
+  "title": "Third Party Collections Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1249270056c48baa4c04beac75dd5c4",
+  "opportunity_url": "https://sam.gov/opp/a1249270056c48baa4c04beac75dd5c4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a1249270056c48baa4c04beac75dd5c4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a1249270056c48baa4c04beac75dd5c4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HT001126RFI0239",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1249270056c48baa4c04beac75dd5c4",
+  "detail_text": "This is a request for information (RFI) to identify companies/vendors capable of providing third party collections program services. Please see attached details of RFI# HT001126RFI0239.",
+  "detail_text_length": 185,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a304fe1c5f249bc8fcb2583e5e42118/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/317c35c7777f49848963697650b2128b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a304fe1c5f249bc8fcb2583e5e42118/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/37f84b7ab2240c70333f6c238d756ffb931bb2391d12e4b2755f283b1f740ae8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/37f84b7ab2240c70333f6c238d756ffb931bb2391d12e4b2755f283b1f740ae8.pdf",
+      "file_id": "0a304fe1c5f249bc8fcb2583e5e42118",
+      "file_name": "DRAFT+PWS+-+Third+Party+Collections+Program.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 645546,
+      "sha256": "37f84b7ab2240c70333f6c238d756ffb931bb2391d12e4b2755f283b1f740ae8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/317c35c7777f49848963697650b2128b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ef4c89d98dac0153e469baf12efc17191bd60a5e4582fe2a00aa2e2add7e86e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ef4c89d98dac0153e469baf12efc17191bd60a5e4582fe2a00aa2e2add7e86e.pdf",
+      "file_id": "317c35c7777f49848963697650b2128b",
+      "file_name": "HT001126RFI0239+Third+Party+Collections+Program.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 128981,
+      "sha256": "0ef4c89d98dac0153e469baf12efc17191bd60a5e4582fe2a00aa2e2add7e86e"
+    }
+  ],
+  "_mirror_hash": "551060f0cbf0034c87ac8d4e28599e098f7ee2432bfbf38204e5b68bc2539789",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:15.003541+00:00"
+}

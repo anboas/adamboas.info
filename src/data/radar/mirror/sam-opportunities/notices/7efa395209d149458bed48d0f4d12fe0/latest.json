@@ -1,0 +1,48 @@
+{
+  "id": "sam-7efa395209d149458bed48d0f4d12fe0",
+  "title": "Request for Information - F-15 Large Area Display (LAD) Depot Activation Capabilities",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7efa395209d149458bed48d0f4d12fe0",
+  "opportunity_url": "https://sam.gov/opp/7efa395209d149458bed48d0f4d12fe0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7efa395209d149458bed48d0f4d12fe0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7efa395209d149458bed48d0f4d12fe0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8637-22-F-0035_22",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FIGHTER AND ADVANCED AIRCRAFT.FA8634 AFLCMC WAQK F15",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7efa395209d149458bed48d0f4d12fe0",
+  "detail_text": "Please see the attached.",
+  "detail_text_length": 24,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a4afd4f27294154b6fc42559d14fdc4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a4afd4f27294154b6fc42559d14fdc4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/985cd19aaf62147de5d9865e586da272ec17787a80b7865bd35ce536d37d86cc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/985cd19aaf62147de5d9865e586da272ec17787a80b7865bd35ce536d37d86cc.pdf",
+      "file_id": "6a4afd4f27294154b6fc42559d14fdc4",
+      "file_name": "RFI+Source+Sought+template+-LAD-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 186046,
+      "sha256": "985cd19aaf62147de5d9865e586da272ec17787a80b7865bd35ce536d37d86cc"
+    }
+  ],
+  "_mirror_hash": "8894ad00bdf3eefafb13d8800e18069f96f93a7bd42ce21d7393adcea8cb021c",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.775655+00:00"
+}

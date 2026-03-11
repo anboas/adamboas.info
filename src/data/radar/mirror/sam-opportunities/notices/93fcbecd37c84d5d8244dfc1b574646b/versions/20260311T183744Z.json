@@ -1,0 +1,68 @@
+{
+  "id": "sam-93fcbecd37c84d5d8244dfc1b574646b",
+  "title": "C--Midwest Region Architectural and Engineering (A&E) Services IDIQ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93fcbecd37c84d5d8244dfc1b574646b",
+  "opportunity_url": "https://sam.gov/opp/93fcbecd37c84d5d8244dfc1b574646b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/93fcbecd37c84d5d8244dfc1b574646b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "93fcbecd37c84d5d8244dfc1b574646b",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140P2026R0039",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.DSC CONTRACTING SERVICES DIVISION",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93fcbecd37c84d5d8244dfc1b574646b",
+  "detail_text": "Request for Qualifications - Midwest Region Architectural and Engineering (A&E) Services",
+  "detail_text_length": 88,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ba5f1e580a94e26bddd6ad555904326/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89de911cae5f4376969d90fbd3d7dc93/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e659feade5a4db48b4fd6e227a2017f/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ba5f1e580a94e26bddd6ad555904326/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e27775e051d6b3167062ff898007e61b14222755688c5652579f2e883e48090e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e27775e051d6b3167062ff898007e61b14222755688c5652579f2e883e48090e.docx",
+      "file_id": "4ba5f1e580a94e26bddd6ad555904326",
+      "file_name": "B08_Attch2_PPQ_RFQ__1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 47430,
+      "sha256": "e27775e051d6b3167062ff898007e61b14222755688c5652579f2e883e48090e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89de911cae5f4376969d90fbd3d7dc93/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ee863e599892fb1bf029f8b289f06328a45f3f799c1a9d9c88bb797fb759a4a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ee863e599892fb1bf029f8b289f06328a45f3f799c1a9d9c88bb797fb759a4a.pdf",
+      "file_id": "89de911cae5f4376969d90fbd3d7dc93",
+      "file_name": "B08_Solic_AE_IDIQ_RFQ_2_6_26_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 346616,
+      "sha256": "1ee863e599892fb1bf029f8b289f06328a45f3f799c1a9d9c88bb797fb759a4a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e659feade5a4db48b4fd6e227a2017f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146.pdf",
+      "file_id": "8e659feade5a4db48b4fd6e227a2017f",
+      "file_name": "B08_Attch1_SF330-21a_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1073371,
+      "sha256": "18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146"
+    }
+  ],
+  "_mirror_hash": "05e32c68bb47d809079561ee21369b68c1c135ef63fe1393d93c74cc0949fde2",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:15.030564+00:00"
+}

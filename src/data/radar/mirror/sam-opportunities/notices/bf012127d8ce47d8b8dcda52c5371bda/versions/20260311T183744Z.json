@@ -1,0 +1,57 @@
+{
+  "id": "sam-bf012127d8ce47d8b8dcda52c5371bda",
+  "title": "Laboratory tables and shelves - installed",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf012127d8ce47d8b8dcda52c5371bda",
+  "opportunity_url": "https://sam.gov/opp/bf012127d8ce47d8b8dcda52c5371bda/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bf012127d8ce47d8b8dcda52c5371bda/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bf012127d8ce47d8b8dcda52c5371bda",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1523250",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.PHOENIX AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf012127d8ce47d8b8dcda52c5371bda",
+  "detail_text": "ISBEE – Indian Small Business Economic Enterprise Set-aside SOURCES SOUGHT Indian Health Service (IHS), Phoenix Area Office on behalf of Phoenix Indian Medical Center is conducting this Sources Sought to identify contractors who could provide: Laboratory table and shelves including installation – please see enclosed for complete details. For technical inquires – please contact deana.thompson@ihs.gov alternate zervini.oliver@ihs.gov",
+  "detail_text_length": 435,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37f44efed16e4364a2c2f0ba2619a52b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a1f19618b2f40bc97b0f50133c93033/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37f44efed16e4364a2c2f0ba2619a52b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5ce781282a915e7bc82a599cb6ad631a9c2fc91d6a9a49d3e08c3036bd127e6b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5ce781282a915e7bc82a599cb6ad631a9c2fc91d6a9a49d3e08c3036bd127e6b.pdf",
+      "file_id": "37f44efed16e4364a2c2f0ba2619a52b",
+      "file_name": "ISBEE+FBO+Sources+Sought+FY26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 258468,
+      "sha256": "5ce781282a915e7bc82a599cb6ad631a9c2fc91d6a9a49d3e08c3036bd127e6b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a1f19618b2f40bc97b0f50133c93033/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/08d26ca0c26715d4aca38413d9dbf032c1641880a09634f481a65f1a80a42474.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/08d26ca0c26715d4aca38413d9dbf032c1641880a09634f481a65f1a80a42474.pdf",
+      "file_id": "4a1f19618b2f40bc97b0f50133c93033",
+      "file_name": "Specification+Sheet+-+Workstations+-+Microbiology+-+MR.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 71501,
+      "sha256": "08d26ca0c26715d4aca38413d9dbf032c1641880a09634f481a65f1a80a42474"
+    }
+  ],
+  "_mirror_hash": "fd3251176ceb9126d3b653007907bc180e3bbab053fec1830370b5eb591eb7f9",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.891946+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "sam-2425b3a2b34946bf90181041e49e6fd4",
+  "title": "Sources Sought- Solid Waste removal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2425b3a2b34946bf90181041e49e6fd4",
+  "opportunity_url": "https://sam.gov/opp/2425b3a2b34946bf90181041e49e6fd4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2425b3a2b34946bf90181041e49e6fd4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2425b3a2b34946bf90181041e49e6fd4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25526Q0255",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2425b3a2b34946bf90181041e49e6fd4",
+  "detail_text": "Please see attached",
+  "detail_text_length": 19,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0f0f38b479447e5bcc3c171388ea8dd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0f0f38b479447e5bcc3c171388ea8dd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8dadcbecbe8d8f44492e2eaa26423937bfce6cfb6e0ccdbb8cb503ae4d5afe31.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8dadcbecbe8d8f44492e2eaa26423937bfce6cfb6e0ccdbb8cb503ae4d5afe31.pdf",
+      "file_id": "b0f0f38b479447e5bcc3c171388ea8dd",
+      "file_name": "36C25526Q0255+sources+sought+posting.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 73727,
+      "sha256": "8dadcbecbe8d8f44492e2eaa26423937bfce6cfb6e0ccdbb8cb503ae4d5afe31"
+    }
+  ],
+  "_mirror_hash": "ceea01a1185bb91a583aac8ad091441dd76f9d47e80d2eed870402f4f0b37401",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.763367+00:00"
+}

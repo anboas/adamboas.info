@@ -1,0 +1,46 @@
+{
+  "id": "sam-def030e33c39413ba4a4a8beeace1709",
+  "title": "6505--MED/SURGE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=def030e33c39413ba4a4a8beeace1709",
+  "opportunity_url": "https://sam.gov/opp/def030e33c39413ba4a4a8beeace1709/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/def030e33c39413ba4a4a8beeace1709/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "def030e33c39413ba4a4a8beeace1709",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C77026Q0103",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=def030e33c39413ba4a4a8beeace1709",
+  "detail_text": "Presolicitation Notice Presolicitation Notice Page 4 of 4 Presolicitation Notice *=Required Field Presolicitation Notice Page 1 of 4 The Department of Veterans Affairs, Network Contracting Office 15, CMOP Division, intends to release a requirement to procure one (1) pharmaceutical and one (1) MedSurg items listed below for delivery to the CMOP facility which is located at: Department of Veteran Affairs TUCSON CMOP 3675 E. Britannia Drive Tucson, AZ 85706 Item Number Description NDC Qty Unit of Measure Packaging Multiple 0001 MIRTAZAPINE 7.5M TAB (M0654) 57664-0510-83 11016 BT 1 0002 CATH, EXTERNAL EXTENDED WEAR (XT265) 99901-0092-07 (Brand Name Only) 900 BX 1 RFQ: 36C77026Q0103 SET ASIDE CATEGORY: Small Business set-aside PRODUCT CODES: 6505, Drugs and Biologicals NAICS CODES: 325412, Pharmaceutical Preparation Manufacturing ESTIMATED ISSUE DATE OF ACTUAL SOLICITATON: 03/17/2026 ESTIMATED RESPONSE DUE DATE: 03/23/2026 DELIVERY TIME FRAME: One-Time Delivery 3 Days ARO (After Receipt of Order) All responsible sources may submit a quotation, which if received timely, shall be considered by this agency. Responses must be concise and be specifically directed to the requirement referenced above. It is the offeror s responsibility to monitor SAM.GOV for changes or amendments. Offeror shall supply their state wholesale distributor licensure, verifying compliance with the Drug Supply Chain Security Act (DSCSA), with their quote. All solicitation packages will be submitted via email. 1. SF1449 - Solicitation cover page (Signed) 2. Quote - Price Schedule (Excel format) 3. State Wholesale Distributor License, valid and unexpired 4. Buy American Act (BAA) Certificate; vendor must provide place of manufacturing Submit the RFQ to Contract Specialist, Martha.Jackson1@va.gov, and cc: Contracting Officer, Kelly.Mann@va.gov",
+  "detail_text_length": 1836,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d139f0c59a142da8f193f0f9b10a9d1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d139f0c59a142da8f193f0f9b10a9d1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ed5738c3d9d89b766d10a8e5d1baa7a20ef87dfb2dac1e4d5af08d4f72c6efd1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ed5738c3d9d89b766d10a8e5d1baa7a20ef87dfb2dac1e4d5af08d4f72c6efd1.docx",
+      "file_id": "2d139f0c59a142da8f193f0f9b10a9d1",
+      "file_name": "36C77026Q0103_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 32156,
+      "sha256": "ed5738c3d9d89b766d10a8e5d1baa7a20ef87dfb2dac1e4d5af08d4f72c6efd1"
+    }
+  ],
+  "_mirror_hash": "d28e81e868d98f84a136b12b1aa688bba83d0bf2a9df04f1db833c4a8dbc7ddc",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.934531+00:00"
+}

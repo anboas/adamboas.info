@@ -1,0 +1,47 @@
+{
+  "id": "sam-e1e602cfe14a4ae6af157b2eef64e3f8",
+  "title": "Bleed Air Hose Fabrication and Shipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1e602cfe14a4ae6af157b2eef64e3f8",
+  "opportunity_url": "https://sam.gov/opp/e1e602cfe14a4ae6af157b2eef64e3f8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e1e602cfe14a4ae6af157b2eef64e3f8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e1e602cfe14a4ae6af157b2eef64e3f8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "20260001167",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SAN DIEGO.NAVSUP FLT LOG CTR  SAN DIEGO",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1e602cfe14a4ae6af157b2eef64e3f8",
+  "detail_text": "See attached SOW. The Government is performing market research in order to determine if small businesses possess the capability to execute the requirements within this acquisition. Respondents need to indicate all small business designations. Based upon small business responses received, consideration will be given to defining what part of the acquisition, if any, will be set-aside for small business competition. If interested in this opportunity, please submit a capabilities statement by 17 March 2026 at 09:00 AM PST and shall be submitted to Mr. Jason Pelle at jason.a.pelle.civ@us.navy.mil.",
+  "detail_text_length": 599,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54d8a4fbd2e94222a8d0d0b241b82702/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54d8a4fbd2e94222a8d0d0b241b82702/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/85d7c3098e350707023af4328d4bb3a21a45fb84224c5ab4baf7209252b0284a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/85d7c3098e350707023af4328d4bb3a21a45fb84224c5ab4baf7209252b0284a.docx",
+      "file_id": "54d8a4fbd2e94222a8d0d0b241b82702",
+      "file_name": "STATEMENT+OF+WORK.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16090,
+      "sha256": "85d7c3098e350707023af4328d4bb3a21a45fb84224c5ab4baf7209252b0284a"
+    }
+  ],
+  "_mirror_hash": "c78be16a99170750ceb36dac47639e922a7180f0202455677d1541be17f2ef96",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.706036+00:00"
+}

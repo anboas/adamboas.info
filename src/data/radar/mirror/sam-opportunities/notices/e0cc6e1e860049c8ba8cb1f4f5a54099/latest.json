@@ -1,0 +1,46 @@
+{
+  "id": "sam-e0cc6e1e860049c8ba8cb1f4f5a54099",
+  "title": "2026 Compensation Analysis Software Tool Requirement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e0cc6e1e860049c8ba8cb1f4f5a54099",
+  "opportunity_url": "https://sam.gov/opp/e0cc6e1e860049c8ba8cb1f4f5a54099/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e0cc6e1e860049c8ba8cb1f4f5a54099/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e0cc6e1e860049c8ba8cb1f4f5a54099",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "19AQMM26N0148",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.ACQUISITIONS - AQM MOMENTUM",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e0cc6e1e860049c8ba8cb1f4f5a54099",
+  "detail_text": "Attached is the Sources Sought Notice for the Compensation Analysis Software Tool Requirement. Please see attached document titled Sources Sought Notice Compensation Data Tool-Final for the full details to include response due date and time.",
+  "detail_text_length": 241,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f4aede5c266c4b6b8d0b1d6fd47a7917/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f4aede5c266c4b6b8d0b1d6fd47a7917/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4069f414b5dd416523fb5e21d57284a5c618491517ddc3e790964385f45cb23b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4069f414b5dd416523fb5e21d57284a5c618491517ddc3e790964385f45cb23b.pdf",
+      "file_id": "f4aede5c266c4b6b8d0b1d6fd47a7917",
+      "file_name": "Sources+Sought+Notice+Compensation+Data+Tool-Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 257194,
+      "sha256": "4069f414b5dd416523fb5e21d57284a5c618491517ddc3e790964385f45cb23b"
+    }
+  ],
+  "_mirror_hash": "b1f7082a31da516b6d6921d29a705a462a605b33586812650f5f410a7e6518b8",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.964423+00:00"
+}

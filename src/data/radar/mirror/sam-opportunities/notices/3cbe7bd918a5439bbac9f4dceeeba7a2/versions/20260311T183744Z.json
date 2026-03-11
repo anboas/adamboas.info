@@ -1,0 +1,56 @@
+{
+  "id": "sam-3cbe7bd918a5439bbac9f4dceeeba7a2",
+  "title": "59  - FMS REPAIR - CONTROL PANEL,RADIO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3cbe7bd918a5439bbac9f4dceeeba7a2",
+  "opportunity_url": "https://sam.gov/opp/3cbe7bd918a5439bbac9f4dceeeba7a2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3cbe7bd918a5439bbac9f4dceeeba7a2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3cbe7bd918a5439bbac9f4dceeeba7a2",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QF100",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3cbe7bd918a5439bbac9f4dceeeba7a2",
+  "detail_text": "This is a sole source requirement for the repair of the following: Nomenclature: CONTROL PANEL,RADIO NSN: 5999- 015474392 Part Number: 760-1000-300 FMS Case: SR-P-MAL QTY: 1 RMC: 3D NAVUP WSS Philadelphia intends to award this requirement on a sole source basis under an already established BOA. The Government physically does not have in its possession sufficient, accurate, or legible data to contract with other than the current source. One or more of the items under this acquisition is subject to Free Trade Agreements. (FAR 52.225-3). One or more of the items under this acquisition are subject to the World Trade Organization Government Procurement Agreement and Free Trade Agreements. (FAR 52.225-5) These items require Government Source Approval prior to the award. The time required for approval of a new source is normally such that an award cannot be delayed pending approval of a new source. If you are not an approved source, you must submit, together with your proposal, the information detailed in the NAVSUP WSS Source Approval Brochure, which can be obtained on the internet at https://www.navsup.navy.mil/Business-Opportunities/Home/ Offers received which fail to provide all data required by the source approval brochure will not be considered for award under this solicitation. This solicitation is for the repair of 1 unit of National Stock Number (NSN) 5999- 015474392 . Induction Period The induction period for the initial units in this order is 365 calendar days from the date of contract award. The Government reserves the right to extend this period by an additional 365 days, for a total of two years. Any unused induction slots from the initial year may be carried over into the second year. Pricing and Options The contractor shall propose option pricing for a maximum of 10 units over the entire contract period, inclusive of the initial quantity. If pricing will change after the first 365 days, please provide separate pricing for the second year. Contract Award The Government reserves the right to place the initial order for any number of units up to the specified maximum. For threshold purposes, the total contract value will be calculated by multiplying the highest proposed unit price by the maximum number of units. For information or questions regarding this notice, please contact Mrs. Dana Scott at the email address: dana.l.scott14.civ@us.navy.mil",
+  "detail_text_length": 2393,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/65effae46c3b44deb83e806ac9412248/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78505700bc77498484d7fe26efbdc53f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/65effae46c3b44deb83e806ac9412248/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6e4e11791c7a22183a0075cd47bf8bb225703857ec2e7a9bb7fb5f66d271450e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6e4e11791c7a22183a0075cd47bf8bb225703857ec2e7a9bb7fb5f66d271450e.docx",
+      "file_id": "65effae46c3b44deb83e806ac9412248",
+      "file_name": "Packaging_26PR0R417.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46674,
+      "sha256": "6e4e11791c7a22183a0075cd47bf8bb225703857ec2e7a9bb7fb5f66d271450e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78505700bc77498484d7fe26efbdc53f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2239c7b731af424f7b0ac7fa89a2638deaa246b3650cdb284ace59b8c868dd3e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2239c7b731af424f7b0ac7fa89a2638deaa246b3650cdb284ace59b8c868dd3e.pdf",
+      "file_id": "78505700bc77498484d7fe26efbdc53f",
+      "file_name": "Solicitation+-+N0038326QF100.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1231180,
+      "sha256": "2239c7b731af424f7b0ac7fa89a2638deaa246b3650cdb284ace59b8c868dd3e"
+    }
+  ],
+  "_mirror_hash": "b24566c87486f23b51d62f00b63210ee0219168da7cee88971c2eceb3a743f61",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.793862+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-63f6578172914f7f8e1c7764218539ed",
+  "title": "Home Sales Data",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63f6578172914f7f8e1c7764218539ed",
+  "opportunity_url": "https://sam.gov/opp/63f6578172914f7f8e1c7764218539ed/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/63f6578172914f7f8e1c7764218539ed/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "63f6578172914f7f8e1c7764218539ed",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "NOF-2",
+  "agency_path": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF.HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF.CPO : IT OPERATIONS SUPPORT DIVISION; NOF",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63f6578172914f7f8e1c7764218539ed",
+  "detail_text": "The Department of Housing and Urban Development (HUD), Economic and Market Analysis Division (EMAD) is seeking a dynamic real estate data and analytics database that is adept at meeting the varied needs of multiple HUD staff engaged in housing market analysis. Services shall include providing EMAD staff and other HUD employees with online access to home sales data covering markets across the United States, and providing a project manager who shall be responsible for assisting users with the database. Detailed descriptions of specific tasks are provided in Section 5, Specific Tasks, of the attached Draft Performance Work Statement.",
+  "detail_text_length": 638,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cc952a8d8f14cb2bcd0685263a4a86c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80019d92062d4ae18afc4a893496d4fd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cc952a8d8f14cb2bcd0685263a4a86c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/48b13e42e5df486166c420675a2c2978104675ac4fd9033f328e5a4bc9e20f78.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/48b13e42e5df486166c420675a2c2978104675ac4fd9033f328e5a4bc9e20f78.pdf",
+      "file_id": "6cc952a8d8f14cb2bcd0685263a4a86c",
+      "file_name": "DRAFT+PWS+-+EMAD+Home+Sales+Data+03.11.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 495804,
+      "sha256": "48b13e42e5df486166c420675a2c2978104675ac4fd9033f328e5a4bc9e20f78"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80019d92062d4ae18afc4a893496d4fd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/221b9620420fb96994c0e6cfd9299452a0d3363221e9b16d43e94d93dc58e191.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/221b9620420fb96994c0e6cfd9299452a0d3363221e9b16d43e94d93dc58e191.pdf",
+      "file_id": "80019d92062d4ae18afc4a893496d4fd",
+      "file_name": "Sources-Sought-RFI-Home+Sales+Data.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 283802,
+      "sha256": "221b9620420fb96994c0e6cfd9299452a0d3363221e9b16d43e94d93dc58e191"
+    }
+  ],
+  "_mirror_hash": "313cd2881716c3199916b64c2958a7049aeba3e615de30bd39d8bb51c2939fd8",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.977103+00:00"
+}

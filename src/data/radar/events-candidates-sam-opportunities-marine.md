@@ -1,24 +1,24 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-10T13:48:05.716674+00:00
+Generated: 2026-03-11T18:44:53.388660+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/10/2026
+Posted range: 01/01/2026 -> 03/11/2026
 
 ## Counts
 - Total candidates: 26
 - Navy-related: 0
 - Full detail cached: 26
-- Notices with attachments: 20
-- Total attachment links: 28
-- Pre-solicitation: 5
+- Notices with attachments: 21
+- Total attachment links: 29
+- Pre-solicitation: 4
 - Sources Sought: 14
-- Special Notice: 7
+- Special Notice: 8
 
 ## Engagement signals
-- Pre-solicitation: 5
+- Pre-solicitation: 4
 - Sources Sought: 14
-- Special Notice: 7
+- Special Notice: 8
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -40,7 +40,6 @@ Posted range: 01/01/2026 -> 03/10/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-06 | DEPT OF DEFENSE | [EV Charger and Deiseal Generator](https://sam.gov/opp/0fc8006da8564316a8ae77b0e4a4ef7e/view) |
 | 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [North Carolina Ports Authority Services](https://sam.gov/opp/ab822a3527f1475eb3437030286276df/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-09 | DEPT OF DEFENSE | [Contractor-Operated Parts Store (COPARS)](https://sam.gov/opp/743935fdd658447b85fe0c4802f75444/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-09 | DEPT OF DEFENSE | [150-pound Amerex Wheeled Fire Extinguishers Testing and Maintenance](https://sam.gov/opp/ab78b5f298a241e4a10e126f585f7417/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-10 | DEPT OF DEFENSE | [Notice of Intent to Sole Source to WOSB for K9 System](https://sam.gov/opp/a5f2ab980911448791d95721fd573d16/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [DMO Personal Effects Storage](https://sam.gov/opp/755cec093c8648158439981c68ee2023/view) |
 | 2 | Special Notice | Special Notice | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [NOI -  Sole Source - Training Vouchers](https://sam.gov/opp/04012f50fa5642cdadfc8dfd1321fbce/view) |
@@ -48,6 +47,7 @@ Posted range: 01/01/2026 -> 03/10/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-20 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Range and Training Area Management (RTAM)](https://sam.gov/opp/56806bd9cce54f9bb33b5f44d928cc5d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-20 | DEPT OF DEFENSE | [MCIEAST G-6 TSD GPON/DWDM MAINTENANCE SUPPORT SERVICES](https://sam.gov/opp/4e5719ee5d51416b9a863e44c0a4458e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-20 | DEPT OF DEFENSE | [MEDLOGCO Warehousing Support Operations](https://sam.gov/opp/776b6c25b4b74e63bb4d22db1ebe265a/view) |
+| 2 | Special Notice | Special Notice | 2026-03-10 | 2026-03-20 | DEPT OF DEFENSE | [PSO Credits](https://sam.gov/opp/d5e5a9fef19c4d019769ff52d7ee7c7e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/4cb4b860bc084179a2fc47b17730eb82/view) |
 
 ## Notes

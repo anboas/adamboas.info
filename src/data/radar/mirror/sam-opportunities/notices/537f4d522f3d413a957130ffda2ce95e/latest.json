@@ -1,0 +1,68 @@
+{
+  "id": "sam-537f4d522f3d413a957130ffda2ce95e",
+  "title": "AUTOPACKER CONSUMABLES FOR CMOP 763 TX",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=537f4d522f3d413a957130ffda2ce95e",
+  "opportunity_url": "https://sam.gov/opp/537f4d522f3d413a957130ffda2ce95e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/537f4d522f3d413a957130ffda2ce95e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "537f4d522f3d413a957130ffda2ce95e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C77026Q0106",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=537f4d522f3d413a957130ffda2ce95e",
+  "detail_text": "This Sources Sought notice is issued solely for market research purposes and does not constitute a solicitation. The NCO 15 Consolidated Mail Outpatient Pharmacy (CMOP) Division is seeking to identify qualified and capable sources for the procurement of supplies. Attachments Auto Supplies Lancaster CMOP – Statement of Requirements Sources Sought _ Auto Supplies Excel Spreadsheet Please answer all questions on the attached Excel Spreadsheet.",
+  "detail_text_length": 444,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ca7e9cadc9144e1afe7d4cb169ff89b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7826628da7cc46919c7ac43aea56397e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f22aac82b4344afc846475a1936aadbd/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ca7e9cadc9144e1afe7d4cb169ff89b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/29d38246d86b2ca6992565a6de300361ba4171fb56641cb541db6c7c06e43b2f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/29d38246d86b2ca6992565a6de300361ba4171fb56641cb541db6c7c06e43b2f.pdf",
+      "file_id": "4ca7e9cadc9144e1afe7d4cb169ff89b",
+      "file_name": "36C77026Q0106_Sources+Sought+_+763.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 294619,
+      "sha256": "29d38246d86b2ca6992565a6de300361ba4171fb56641cb541db6c7c06e43b2f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7826628da7cc46919c7ac43aea56397e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e26e4edf0b130a829355e89d76344f750547ccf0367e6505955a3537d2df217e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e26e4edf0b130a829355e89d76344f750547ccf0367e6505955a3537d2df217e.xlsx",
+      "file_id": "7826628da7cc46919c7ac43aea56397e",
+      "file_name": "Sources+Sought+-+Q0106.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12571,
+      "sha256": "e26e4edf0b130a829355e89d76344f750547ccf0367e6505955a3537d2df217e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f22aac82b4344afc846475a1936aadbd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5cbd317651a1fef77c52c33e0b2bd54a48d383f7315749ccd68d32a42cbdac41.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5cbd317651a1fef77c52c33e0b2bd54a48d383f7315749ccd68d32a42cbdac41.pdf",
+      "file_id": "f22aac82b4344afc846475a1936aadbd",
+      "file_name": "Q0106_STATEMENT_OF_REQUIREMENTS_BPM_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 105911,
+      "sha256": "5cbd317651a1fef77c52c33e0b2bd54a48d383f7315749ccd68d32a42cbdac41"
+    }
+  ],
+  "_mirror_hash": "78ae71d820a2c4478cd0bc7cf3277bea1a147e4b4fbeeb95d68ed0b19352e219",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.836227+00:00"
+}

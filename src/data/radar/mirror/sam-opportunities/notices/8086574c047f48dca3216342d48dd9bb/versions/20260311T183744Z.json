@@ -1,0 +1,68 @@
+{
+  "id": "sam-8086574c047f48dca3216342d48dd9bb",
+  "title": "Notice of Intent to Sole Source – Soft Computer Corporation (SCC)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8086574c047f48dca3216342d48dd9bb",
+  "opportunity_url": "https://sam.gov/opp/8086574c047f48dca3216342d48dd9bb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8086574c047f48dca3216342d48dd9bb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8086574c047f48dca3216342d48dd9bb",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "NOI-OD-26-003941",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8086574c047f48dca3216342d48dd9bb",
+  "detail_text": "This is a notice of intent, not a request for a quotation. A solicitation document will not be issued and quotations will not be requested. This procurement is acquisition is to continue to obtain Soft software and hardware license and maintenance services for the IBM hardware and AIX operating system for servers that support the existing Laboratory Information System (LIS). Soft Computer Corporation (SCC) has been the incumbent since the initial install of the software and due to its proprietary nature they have performed the ongoing maintenance and support on the system. The current LIS software system is proprietary to SCC who developed it. SCC does not permit 3rd party maintenance and will not release their source code to other entities. As the LIS modules in the Clinical Center are currently handling large volumes of patient data and test and diagnostic results, it is absolutely imperative that there be no interruption in the ongoing operation/functioning of the existing system. Patient safety is of great concern if there is a system failure or interruption in service. Therefore it is critical that the system continues to be maintained by SCC who is the only source capable of providing the necessary maintenance, including making revisions to the source code as circumstances may dictate. Because the LIS helps support patient diagnosis and care activities, it is deemed a mission critical system for the Clinical Center. The proprietary status of the system to SCC clearly demonstrates that they are the only firm qualified to perform the required maintenance services. This acquisition is being conducted using policies unique to the Federal Acquisition Regulation (FAR) Part 13 –Simplified Acquisition Procedures, Subpart 13.106-1(b)(1), For purchases not exceeding the simplified acquisition threshold (SAT), contracting officers may solicit from one source if the contracting officer determines that the circumstance of the contract action deem only one source reasonably available. Contracts awarded using FAR Part 13-Simplified Acquisition Procedures are exempt from the requirements of FAR Part 6-Competition Requirements. Comments to this announcement, referencing this posting number, may be submitted to the NIH, Clinical Center, Office of Purchasing and Contracts, prior to the closing date specified in this announcement, to the attention of Ryssa Nix, Contract Specialist via email to Ryssa.nix@nih.gov by close date.",
+  "detail_text_length": 2455,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/758008cd2d9549e7adbb650393c5f783/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/baffa47b80f1478687d2e4c23bdd63f3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fff90c15973c4be8a9ac90b3da039ea3/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/758008cd2d9549e7adbb650393c5f783/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a3f7ba33e726063677d843142c522fe899d24160bf29145d158b1905d3e7345.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a3f7ba33e726063677d843142c522fe899d24160bf29145d158b1905d3e7345.docx",
+      "file_id": "758008cd2d9549e7adbb650393c5f783",
+      "file_name": "SCC+SOW+3-4-2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 60646,
+      "sha256": "2a3f7ba33e726063677d843142c522fe899d24160bf29145d158b1905d3e7345"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/baffa47b80f1478687d2e4c23bdd63f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c6b57974b7f59385849352281b33d1a55b3d13bcb73c3d6566f27cfbbd289cd6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c6b57974b7f59385849352281b33d1a55b3d13bcb73c3d6566f27cfbbd289cd6.docx",
+      "file_id": "baffa47b80f1478687d2e4c23bdd63f3",
+      "file_name": "NOI+to+sole+source.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15971,
+      "sha256": "c6b57974b7f59385849352281b33d1a55b3d13bcb73c3d6566f27cfbbd289cd6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fff90c15973c4be8a9ac90b3da039ea3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f597316cca1d2d4813cac88e78f176f2dee6050cc648c16366f933227f3ca8ab.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f597316cca1d2d4813cac88e78f176f2dee6050cc648c16366f933227f3ca8ab.doc",
+      "file_id": "fff90c15973c4be8a9ac90b3da039ea3",
+      "file_name": "1.+JOFOC+SCC.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 94208,
+      "sha256": "f597316cca1d2d4813cac88e78f176f2dee6050cc648c16366f933227f3ca8ab"
+    }
+  ],
+  "_mirror_hash": "8ad5a7112652e17beb5ab37aeab09b2f041a61d575619d6eed68267bf2d3e160",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.854678+00:00"
+}

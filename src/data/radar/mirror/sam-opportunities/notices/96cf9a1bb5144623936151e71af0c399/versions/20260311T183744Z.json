@@ -1,0 +1,57 @@
+{
+  "id": "sam-96cf9a1bb5144623936151e71af0c399",
+  "title": "SP-POL-PPS-Fueling System Repairs-Lambert Field",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=96cf9a1bb5144623936151e71af0c399",
+  "opportunity_url": "https://sam.gov/opp/96cf9a1bb5144623936151e71af0c399/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/96cf9a1bb5144623936151e71af0c399/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "96cf9a1bb5144623936151e71af0c399",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "575198",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTHWESTERN.ENDIST OMAHA.W071 ENDIST OMAHA",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=96cf9a1bb5144623936151e71af0c399",
+  "detail_text": "Includes all work to replace 5K gallon diesel tank with 5K gallon double-wall UL-2085 tank; provide secondary containment; replace EFSO system, provide access platform, provide concrete fueling area, and Replace Ronan ATG console with Veeder Root TLS-450, new MAG probe and install new manufacturer recommended cable. Amendment 0001 - The purpose of this amendment is to correct the submission language in the attached sources sought notice.",
+  "detail_text_length": 441,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1dfc1dbf48084993acf5dcd3c1e73f7b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8373b196a9df4dac9074cf57fbfc6f1a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1dfc1dbf48084993acf5dcd3c1e73f7b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f20a4af5cc35183b299c946955a3e0e112869f1fcd5e089a2468f882188d5ae6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f20a4af5cc35183b299c946955a3e0e112869f1fcd5e089a2468f882188d5ae6.pdf",
+      "file_id": "1dfc1dbf48084993acf5dcd3c1e73f7b",
+      "file_name": "575198_Sources+Sought_3.10.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 159122,
+      "sha256": "f20a4af5cc35183b299c946955a3e0e112869f1fcd5e089a2468f882188d5ae6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8373b196a9df4dac9074cf57fbfc6f1a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/09e6cf9a7450e1ed442d7dd3592f6d4ba0e719d74ce0afb34035cfd6aed91597.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/09e6cf9a7450e1ed442d7dd3592f6d4ba0e719d74ce0afb34035cfd6aed91597.pdf",
+      "file_id": "8373b196a9df4dac9074cf57fbfc6f1a",
+      "file_name": "Lambert+Field+Scope+Outline.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 119058,
+      "sha256": "09e6cf9a7450e1ed442d7dd3592f6d4ba0e719d74ce0afb34035cfd6aed91597"
+    }
+  ],
+  "_mirror_hash": "4daf65af1394f447f59966d5c7dbe08426e49b4a46f855a19ddad4a3794a7777",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.994161+00:00"
+}

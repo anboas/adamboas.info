@@ -1,0 +1,46 @@
+{
+  "id": "sam-6ecc7dc15bc94e80ace2ef7e55f447c2",
+  "title": "8135--12 OZ GEL PACKS - AMBIENT AND FROZEN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ecc7dc15bc94e80ace2ef7e55f447c2",
+  "opportunity_url": "https://sam.gov/opp/6ecc7dc15bc94e80ace2ef7e55f447c2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6ecc7dc15bc94e80ace2ef7e55f447c2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6ecc7dc15bc94e80ace2ef7e55f447c2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C77026Q0076",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ecc7dc15bc94e80ace2ef7e55f447c2",
+  "detail_text": "The Department Of Veterans Affairs, Network 15 Contracting Office has recorded the following award resulting from solicitation 36C77026Q0076 to procure 12 OZ gel packs. The following information is provided: USVETSERV, LLC.: is awarded $488,164.00. All awards are effective 03/10/26; point of contact: Kelly.Mann@va.gov",
+  "detail_text_length": 319,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd4f2a20893b4f90a1a1c5cf2fc45a86/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd4f2a20893b4f90a1a1c5cf2fc45a86/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c901ed683945467fb5347f3d438f248ba73484f9abd7ff1400577202ae05d779.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c901ed683945467fb5347f3d438f248ba73484f9abd7ff1400577202ae05d779.docx",
+      "file_id": "fd4f2a20893b4f90a1a1c5cf2fc45a86",
+      "file_name": "36C77026Q0076_3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14131,
+      "sha256": "c901ed683945467fb5347f3d438f248ba73484f9abd7ff1400577202ae05d779"
+    }
+  ],
+  "_mirror_hash": "87a5c57af4f4a1d56ac08f7740549cf9e387eda38bc1167ea722a335e68e9af7",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.822592+00:00"
+}

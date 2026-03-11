@@ -1,0 +1,46 @@
+{
+  "id": "sam-6c8c25dadb504a7e8ff3eb947f024c2d",
+  "title": "Subscription Service-ANSI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c8c25dadb504a7e8ff3eb947f024c2d",
+  "opportunity_url": "https://sam.gov/opp/6c8c25dadb504a7e8ff3eb947f024c2d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6c8c25dadb504a7e8ff3eb947f024c2d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6c8c25dadb504a7e8ff3eb947f024c2d",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "1165073",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.ANIMAL AND PLANT HEALTH INSPECTION SERVICE.MRPBS AAMD CONTRACTING",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c8c25dadb504a7e8ff3eb947f024c2d",
+  "detail_text": "This request is to create a subscription service contract for American National Standards Institute (ANSI), with the purpose of ISO Standards Library access, and the purchasing of electronic standards. This contract encompasses the provision of a service block consisting of seventy-five (75) ISO standards, along with additional standards, including ANSI/ISEA, DS/ISO, NFS/ANSI, and SMACNA standards. The agreement also includes access to and use of the ISO Library standards, with the option to obtain electronic additions and purchase hard copy materials as needed. The period of performance will be a Base Year Plus Four Option Years. RFO FAR 12.201-1 Simplified procedures will be used for awarding the contract. The anticipated award date is March 27, 2026. The intended source for this acquisition is American National Standards Institute. The proposed contractor, American National Standards Institute, is the sole provider of the proprietary software solution required to fulfill the Government's needs. This software is copyrighted and constitutes the intellectual property of American National Standards Institute, and therefore cannot be replicated, resold, or modified by third-party vendors without violating intellectual property rights. All responsible sources may submit a response which will be considered by the agency. Please email responses to bonnie.k.simpson@usda.gov, no later than the response date of this notice. Telephonic inquiries will not be honored.",
+  "detail_text_length": 1481,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12048db484ee41599a5f54d0c9260b05/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12048db484ee41599a5f54d0c9260b05/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa17c05c0bcd05836f7f5b558204399c93fc9bdb7cb99433aeaa3274750150a8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa17c05c0bcd05836f7f5b558204399c93fc9bdb7cb99433aeaa3274750150a8.pdf",
+      "file_id": "12048db484ee41599a5f54d0c9260b05",
+      "file_name": "Sole+Source+ANSI+FYI2026_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 395192,
+      "sha256": "fa17c05c0bcd05836f7f5b558204399c93fc9bdb7cb99433aeaa3274750150a8"
+    }
+  ],
+  "_mirror_hash": "01f94c144a81285b03d0ac21c634a5df8abb5a4c99728df2f48aee02575f1e39",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.962888+00:00"
+}

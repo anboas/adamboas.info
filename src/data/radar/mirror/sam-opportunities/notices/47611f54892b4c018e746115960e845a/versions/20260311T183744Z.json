@@ -1,0 +1,47 @@
+{
+  "id": "sam-47611f54892b4c018e746115960e845a",
+  "title": "N0038325Y036N",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47611f54892b4c018e746115960e845a",
+  "opportunity_url": "https://sam.gov/opp/47611f54892b4c018e746115960e845a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/47611f54892b4c018e746115960e845a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "47611f54892b4c018e746115960e845a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N0038325Y036N",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47611f54892b4c018e746115960e845a",
+  "detail_text": "This requirement is for a 5-year BOA with WOODWARD HRT INC (81873) for various NIINs. This BOA is intended for repairs/spares and will support the Navy. This is for the V-22, F-18 and H-1 platform.",
+  "detail_text_length": 197,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e58d80ece5184083b1341247c3816fe8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e58d80ece5184083b1341247c3816fe8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20689c8411239437642907ad9a561aa35da2e1a056a21a7cd2b7e1244ddd4f67.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20689c8411239437642907ad9a561aa35da2e1a056a21a7cd2b7e1244ddd4f67.pdf",
+      "file_id": "e58d80ece5184083b1341247c3816fe8",
+      "file_name": "SYNOPSIS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 495266,
+      "sha256": "20689c8411239437642907ad9a561aa35da2e1a056a21a7cd2b7e1244ddd4f67"
+    }
+  ],
+  "_mirror_hash": "92bf0ab04f238a628668355fe276ac9db45677460a32fed421144c833f7f46ce",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.714940+00:00"
+}

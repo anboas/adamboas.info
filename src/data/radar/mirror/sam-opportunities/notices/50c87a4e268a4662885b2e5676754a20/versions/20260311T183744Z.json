@@ -1,0 +1,46 @@
+{
+  "id": "sam-50c87a4e268a4662885b2e5676754a20",
+  "title": "Hearing Enhancement Devices",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=50c87a4e268a4662885b2e5676754a20",
+  "opportunity_url": "https://sam.gov/opp/50c87a4e268a4662885b2e5676754a20/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/50c87a4e268a4662885b2e5676754a20/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "50c87a4e268a4662885b2e5676754a20",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M6785426I5408",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=50c87a4e268a4662885b2e5676754a20",
+  "detail_text": "This is a Sources Sought Notice/Request for Information (RFI). Product Manager Combat Service Support Equipment (PdM CSSE), Marine Corps Systems Command (MARCORSYSCOM), is conducting market research to identify potential sources capable of providing a suite of Hearing Enhancement Devices (NAICS - 334220 and PSC - 8470 apply). Please see the attachment for additional information.",
+  "detail_text_length": 381,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1a83703e1e14cd28edd2e0aab384279/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1a83703e1e14cd28edd2e0aab384279/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/72cec7a0722640e5ad83f494ce376686001cb17fe6b37f8d29ec764e1a3487a6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/72cec7a0722640e5ad83f494ce376686001cb17fe6b37f8d29ec764e1a3487a6.pdf",
+      "file_id": "f1a83703e1e14cd28edd2e0aab384279",
+      "file_name": "M6785426I5408-RFI_HEARING+ENHANCEMENT+DEVICES.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148944,
+      "sha256": "72cec7a0722640e5ad83f494ce376686001cb17fe6b37f8d29ec764e1a3487a6"
+    }
+  ],
+  "_mirror_hash": "bc2a694e579877497d23284d23845ad1f53f177477cf8ddf30addd7b648d3646",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:15.016412+00:00"
+}

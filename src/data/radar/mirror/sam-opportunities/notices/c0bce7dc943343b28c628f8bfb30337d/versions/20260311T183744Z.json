@@ -1,0 +1,68 @@
+{
+  "id": "sam-c0bce7dc943343b28c628f8bfb30337d",
+  "title": "FY26 GetFocus SW Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c0bce7dc943343b28c628f8bfb30337d",
+  "opportunity_url": "https://sam.gov/opp/c0bce7dc943343b28c628f8bfb30337d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c0bce7dc943343b28c628f8bfb30337d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c0bce7dc943343b28c628f8bfb30337d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26927608Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c0bce7dc943343b28c628f8bfb30337d",
+  "detail_text": "** THIS IS A SOLE SOURCE REQUIREMENT ** for FY26 GetFocus SW Renewal",
+  "detail_text_length": 68,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97fb147c4cdc4b7db6471cc7f60a541d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abb5c57f31864a86a5f8c61880acb66d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4327da526be49e0905bbaf542119092/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97fb147c4cdc4b7db6471cc7f60a541d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1ac46eb7939198c2befad3797ed6fb7d9387907c7dce70c196eb42dd50e5cb1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1ac46eb7939198c2befad3797ed6fb7d9387907c7dce70c196eb42dd50e5cb1.pdf",
+      "file_id": "97fb147c4cdc4b7db6471cc7f60a541d",
+      "file_name": "SATPC0040591+Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 111504,
+      "sha256": "b1ac46eb7939198c2befad3797ed6fb7d9387907c7dce70c196eb42dd50e5cb1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abb5c57f31864a86a5f8c61880acb66d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9a793cf4be62078a9c643f5e909983ac45015eb36b214f91466930d884942308.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9a793cf4be62078a9c643f5e909983ac45015eb36b214f91466930d884942308.pdf",
+      "file_id": "abb5c57f31864a86a5f8c61880acb66d",
+      "file_name": "SATPC0040591+Tab+04+4+SOW..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137265,
+      "sha256": "9a793cf4be62078a9c643f5e909983ac45015eb36b214f91466930d884942308"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4327da526be49e0905bbaf542119092/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/49cb3416272b0075cf801983713bee81794f5e2e192ea10686d1f67e7ae7b9a1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/49cb3416272b0075cf801983713bee81794f5e2e192ea10686d1f67e7ae7b9a1.pdf",
+      "file_id": "e4327da526be49e0905bbaf542119092",
+      "file_name": "SATPC0040591+Tab+06+RDSS..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 139744,
+      "sha256": "49cb3416272b0075cf801983713bee81794f5e2e192ea10686d1f67e7ae7b9a1"
+    }
+  ],
+  "_mirror_hash": "0badf132f07186e9389db2e47b9f662f6c8300442ddad971593494eda2d3fb3f",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.847406+00:00"
+}

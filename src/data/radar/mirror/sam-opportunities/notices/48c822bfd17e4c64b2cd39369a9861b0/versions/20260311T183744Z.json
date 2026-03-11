@@ -1,0 +1,59 @@
+{
+  "id": "sam-48c822bfd17e4c64b2cd39369a9861b0",
+  "title": "N0017826R4403 Rapid Prototyping",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48c822bfd17e4c64b2cd39369a9861b0",
+  "opportunity_url": "https://sam.gov/opp/48c822bfd17e4c64b2cd39369a9861b0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/48c822bfd17e4c64b2cd39369a9861b0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "48c822bfd17e4c64b2cd39369a9861b0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N0017826R4403",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48c822bfd17e4c64b2cd39369a9861b0",
+  "detail_text": "The primary focus of this contract shall be delivery of tactical systems to the warfighter. The purpose of this requirement is to provide prototype development, hardware fabrication, hardware for hardware prototype or prototype higher volume units and kits, and project management. Specifically, the Contractor shall provide engineering design, development, and testing. Additionally, the Contractor shall provide drawing development, bill of material development, fabrication, design analysis, and manufacturability analysis.",
+  "detail_text_length": 526,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35c95272eef34916a5471290cbdf59b0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdcc118e94f54895baefa8407e69e86a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35c95272eef34916a5471290cbdf59b0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/063654747bd2a9827b699e896a0f32d3bbc67a70d778cc73352f7d6f9af82cb1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/063654747bd2a9827b699e896a0f32d3bbc67a70d778cc73352f7d6f9af82cb1.pdf",
+      "file_id": "35c95272eef34916a5471290cbdf59b0",
+      "file_name": "Sources+Sought-N0017826R4003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 128206,
+      "sha256": "063654747bd2a9827b699e896a0f32d3bbc67a70d778cc73352f7d6f9af82cb1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdcc118e94f54895baefa8407e69e86a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc72d28744f540f0b7c179fd82d1945247d2dccde11c5e1089142a85d75d4eb2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc72d28744f540f0b7c179fd82d1945247d2dccde11c5e1089142a85d75d4eb2.pdf",
+      "file_id": "fdcc118e94f54895baefa8407e69e86a",
+      "file_name": "Draft_H40_H60_RAPID+PROTOTYPING_SOW+03-09-2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 400218,
+      "sha256": "dc72d28744f540f0b7c179fd82d1945247d2dccde11c5e1089142a85d75d4eb2"
+    }
+  ],
+  "_mirror_hash": "992700a287812f68e33350e48d5c976dad4f5136e85f875e684aa48b89ccfdec",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.685431+00:00"
+}

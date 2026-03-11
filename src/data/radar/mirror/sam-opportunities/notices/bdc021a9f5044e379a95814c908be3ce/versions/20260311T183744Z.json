@@ -1,0 +1,46 @@
+{
+  "id": "sam-bdc021a9f5044e379a95814c908be3ce",
+  "title": "VALVE,GATE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdc021a9f5044e379a95814c908be3ce",
+  "opportunity_url": "https://sam.gov/opp/bdc021a9f5044e379a95814c908be3ce/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bdc021a9f5044e379a95814c908be3ce/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bdc021a9f5044e379a95814c908be3ce",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM126RGB62",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdc021a9f5044e379a95814c908be3ce",
+  "detail_text": "DLA Maritime Mechanicsburg is seeking sources capable of supplying the following items: QTY NSN Part Number Nomenclature 7 7HH 4820 014002217 04000587 VALVE,GATE Approved Design Cage Code: FLOWSERVE US INC (CAGE 5XH59) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to Brendan.1.Heasley@dla.mil by 2:00 PM EST on 21 March 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1219,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb10f348b3bd4148a4fbfa01590d273c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb10f348b3bd4148a4fbfa01590d273c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f47360268af6154858811c3cf771bc043b9d92306f547b6cdf1eaedfdeff857.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f47360268af6154858811c3cf771bc043b9d92306f547b6cdf1eaedfdeff857.docx",
+      "file_id": "eb10f348b3bd4148a4fbfa01590d273c",
+      "file_name": "1.08+Sources+Sought+-+MARKET+SURVEY.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 378932,
+      "sha256": "2f47360268af6154858811c3cf771bc043b9d92306f547b6cdf1eaedfdeff857"
+    }
+  ],
+  "_mirror_hash": "ab1467f28cd6d18393fa8608caa92997dc3100acad1e61ac9bee1baf5d7ac0b3",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.930589+00:00"
+}

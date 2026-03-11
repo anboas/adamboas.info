@@ -1,0 +1,47 @@
+{
+  "id": "sam-2babd1447d1c407d90c51e50e23e30c6",
+  "title": "USNS HENRY J. KAISER DANFOSS AIRFLEX ENGINE COMPONENTS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2babd1447d1c407d90c51e50e23e30c6",
+  "opportunity_url": "https://sam.gov/opp/2babd1447d1c407d90c51e50e23e30c6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2babd1447d1c407d90c51e50e23e30c6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2babd1447d1c407d90c51e50e23e30c6",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4044326Q0020",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSFSC.MILITARY SEALIFT COMMAND BATS",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2babd1447d1c407d90c51e50e23e30c6",
+  "detail_text": "The Government intends to make a sole-source award to Danfoss Airflex for parts required to conduct the overhaul and certification of the following critical engine components installed on USNS KAISER: Main diesel power (MDP) couplings and clutches Port and starboard propulsion shaft brakes PTO clutches and couplings The above-listed items are ship critical equipment items that are installed in the Military Sealift Command’s T-AO Class of ships. Danfoss Airflex is the sole-source OEM parts and service provider for these parts. Note: MSC maintains a list of non-OEM authorized parts and service providers for various ship critical equipment items. Information on becoming an MSC approved non-OEM for ship critical equipment items is located here: https://www.msc.usff.navy.mil/Business-Opportunities/Contracts/Qualification-for-Items-Critical-to-Shipboard-Safety-on-MSC-Vessels/ This notice of intent is NOT a request for quotes. A determination not to compete with the proposed procurement based upon responses to this notice is solely within the discretion of the Government.",
+  "detail_text_length": 1081,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6408f9ea64e549b0a04dbe417df08e91/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6408f9ea64e549b0a04dbe417df08e91/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/45948354afc74f7d1dda47cd9ba63b7b7ee3671a63938b1c23776968d7170f1e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/45948354afc74f7d1dda47cd9ba63b7b7ee3671a63938b1c23776968d7170f1e.pdf",
+      "file_id": "6408f9ea64e549b0a04dbe417df08e91",
+      "file_name": "LMTD-SRC_KAISER_Danfoss-Airflex_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1360897,
+      "sha256": "45948354afc74f7d1dda47cd9ba63b7b7ee3671a63938b1c23776968d7170f1e"
+    }
+  ],
+  "_mirror_hash": "74452e5864ab050ef8ebf5fcc4390c2a3b6e7d3ede3aae533fc903814536f89f",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.701698+00:00"
+}

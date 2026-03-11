@@ -1,0 +1,57 @@
+{
+  "id": "sam-5bf6f44303b74912946f58174e8deb4c",
+  "title": "NATO Business Opportunity: M&S Proof of Concepts - Centralized Data & EXCON-Simulation Automation for MDO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5bf6f44303b74912946f58174e8deb4c",
+  "opportunity_url": "https://sam.gov/opp/5bf6f44303b74912946f58174e8deb4c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5bf6f44303b74912946f58174e8deb4c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5bf6f44303b74912946f58174e8deb4c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "RFP-ACT-SACT-26-36",
+  "agency_path": "COMMERCE, DEPARTMENT OF.BUREAU OF INDUSTRY AND SECURITY",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5bf6f44303b74912946f58174e8deb4c",
+  "detail_text": "Headquarters, Supreme Allied Commander Transformation (HQ SACT) has issued a Request for Proposal (RFP) for Modelling & Simulation (M&S) Proof of Concepts: Centralized Data and Exercise Control (EXCON)-Simulation Automation for Multi-Domain Operations (MDO). The increasing complexity of MDO requires enhanced interoperability, automation, and data coherence across NATO Computer Assisted Exercises (CAX), Computer Assisted Wargames (CAW), and Computer Assisted Analysis (CAA). Current processes supporting exercise scripting, simulation execution, and data preparation are fragmented, simulation-specific, and heavily dependent on manual intervention. To address these issues, the RFP establishes two complementary but separable capability development efforts: 1) automation between EXCON toolsets and simulation systems and 2) development of a centralized, common agreed dataset for NATO simulation systems. While technically distinct and awardable separately, both efforts contribute to a common objective: enabling simulation-agnostic automation and standardized, reusable data foundations to support NATO MDO-driven events. Prospective bidders should seek clarification at their earliest convenience. Any explanation regarding the meaning or interpretation of this RFP, terms, clauses, provisions or specifications, shall be requested in writing, from the Contracting Office. All Contracting Officers listed on this RFP must receive such requests via email for clarification no later than 30 March 2026. Bids shall be received at HQ SACT, Purchasing and Contracting Office, no later than 13 April 2026, 0900 hours EDT. No bids shall be accepted after this date and time. No hard copy proposals will be accepted. Please see attachment for more details. Period of Performance: Contract award to December 2026. BIDDING DOCUMENTS Please see attached. BIDDING PROCEDURE A Declaration of Eligibility is NOT required for this opportunity. Do NOT submit your proposal to the Department of Commerce. Please submit your proposal directly to HQ SACT using the contact information provided in the RFP.",
+  "detail_text_length": 2094,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/448852405f714746bcfc25c921eba471/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb81e16f4d58420aa7ead233983d8411/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/448852405f714746bcfc25c921eba471/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c37d9ebfc9badebb733a8f0893c779bb7837a240aaf4b8d992003ad66a99cba9.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c37d9ebfc9badebb733a8f0893c779bb7837a240aaf4b8d992003ad66a99cba9.xlsx",
+      "file_id": "448852405f714746bcfc25c921eba471",
+      "file_name": "RFP-ACT-SACT-26-36_pricing.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31505,
+      "sha256": "c37d9ebfc9badebb733a8f0893c779bb7837a240aaf4b8d992003ad66a99cba9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb81e16f4d58420aa7ead233983d8411/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bef2d9b15409c1ef552442714c8570d90cb00c4d4596f62829dcb954e339c020.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bef2d9b15409c1ef552442714c8570d90cb00c4d4596f62829dcb954e339c020.pdf",
+      "file_id": "cb81e16f4d58420aa7ead233983d8411",
+      "file_name": "RFP-ACT-SACT-26-36.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 474772,
+      "sha256": "bef2d9b15409c1ef552442714c8570d90cb00c4d4596f62829dcb954e339c020"
+    }
+  ],
+  "_mirror_hash": "58bd27d427030a340c72f0bb06d7eb381848542df3b1cefa2c9b91e6eb3e9319",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:15.015288+00:00"
+}

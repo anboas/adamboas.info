@@ -1,0 +1,79 @@
+{
+  "id": "sam-0a1a29e111c14ef586d8d1c367e41391",
+  "title": "National Center for Critical Information Processing and Storage (NCCIPS) V3",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a1a29e111c14ef586d8d1c367e41391",
+  "opportunity_url": "https://sam.gov/opp/0a1a29e111c14ef586d8d1c367e41391/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0a1a29e111c14ef586d8d1c367e41391/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0a1a29e111c14ef586d8d1c367e41391",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "80NSSC26R7002",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-01-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a1a29e111c14ef586d8d1c367e41391",
+  "detail_text": "The National Aeronautics and Space Administration’s Shared Services Center (NSSC) is hereby requesting information from potential sources for facility operations, maintenance, management, and data center power and network integration to support the data center facility known as the National Center for Critical Information Processing and Storage (NCCIPS). NCCIPS is a federal shared services facility supporting collocated data centers and is managed by the NSSC. NCCIPS supports data center requirements of federal agencies and manages those relationships via Interagency Agreements. NCCIPS is a 200,000 sq. ft. secure facility situated on a 64-acre campus within NASA Stennis Space Center in southern Mississippi. NCCIPS was created as a result of a 2005 Congressional initiative to provide secure processing and storage of nationally sensitive, critical, or classified data.",
+  "detail_text_length": 878,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/06ce5b4d6fa14812bb89fb0b145fc1fa/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b5c89a1dd954738b5e58b8dad998b30/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfd5cd9329494e7a92aa3795c9d672bc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e573959c2f724ba199f7aedf3637350e/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/06ce5b4d6fa14812bb89fb0b145fc1fa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4fa39700aae7915230d655fb925b447bc4c152fd7b4129914d24b1776c0a48c7.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4fa39700aae7915230d655fb925b447bc4c152fd7b4129914d24b1776c0a48c7.xlsx",
+      "file_id": "06ce5b4d6fa14812bb89fb0b145fc1fa",
+      "file_name": "Attachment+2+-+Capabilities+Statement+Worksheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13287,
+      "sha256": "4fa39700aae7915230d655fb925b447bc4c152fd7b4129914d24b1776c0a48c7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b5c89a1dd954738b5e58b8dad998b30/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/21d5e01f8d35597a658b86638efdf3eae90076f1b42fa0ae6aad312ce5b799d6.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/21d5e01f8d35597a658b86638efdf3eae90076f1b42fa0ae6aad312ce5b799d6.xlsx",
+      "file_id": "0b5c89a1dd954738b5e58b8dad998b30",
+      "file_name": "SAM.gov+Listing+of+Respondents.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10703,
+      "sha256": "21d5e01f8d35597a658b86638efdf3eae90076f1b42fa0ae6aad312ce5b799d6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfd5cd9329494e7a92aa3795c9d672bc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/85268ef41958a7b46578e6e6886007a48f36466aa4459b775531f0dc27daaa21.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/85268ef41958a7b46578e6e6886007a48f36466aa4459b775531f0dc27daaa21.pdf",
+      "file_id": "cfd5cd9329494e7a92aa3795c9d672bc",
+      "file_name": "Attachment+1+-+Draft+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 7693425,
+      "sha256": "85268ef41958a7b46578e6e6886007a48f36466aa4459b775531f0dc27daaa21"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e573959c2f724ba199f7aedf3637350e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f7f76210d7a890579f61e3306d43565e1068aecc003415a5a8f93f147cc79e7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f7f76210d7a890579f61e3306d43565e1068aecc003415a5a8f93f147cc79e7.pdf",
+      "file_id": "e573959c2f724ba199f7aedf3637350e",
+      "file_name": "80NSSC26R7002+Source+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 73822,
+      "sha256": "2f7f76210d7a890579f61e3306d43565e1068aecc003415a5a8f93f147cc79e7"
+    }
+  ],
+  "_mirror_hash": "53a0e6b29506af1a172a29a056ce5dd3aff9cffae1c5db84e4ceb825ed1c56d7",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.808065+00:00"
+}

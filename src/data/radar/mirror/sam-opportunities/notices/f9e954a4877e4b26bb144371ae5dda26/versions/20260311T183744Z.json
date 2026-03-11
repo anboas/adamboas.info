@@ -1,0 +1,57 @@
+{
+  "id": "sam-f9e954a4877e4b26bb144371ae5dda26",
+  "title": "Desigo/Apogee IV",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f9e954a4877e4b26bb144371ae5dda26",
+  "opportunity_url": "https://sam.gov/opp/f9e954a4877e4b26bb144371ae5dda26/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f9e954a4877e4b26bb144371ae5dda26/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f9e954a4877e4b26bb144371ae5dda26",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912DY-26-00XX",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.SCO ALEXANDRIA.SUPPORT CENTER HUNTSVILLE.W2V6 USA ENG SPT CTR HUNTSVIL",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f9e954a4877e4b26bb144371ae5dda26",
+  "detail_text": "The U.S. Army Corps of Engineers, Huntsville Engineering and Support Center (CEHNC) in Huntsville, Alabama is conducting market research to identify qualified firms capable of procuring and installing Utility Monitoring and Control Systems (UMCS) in anticipation of awarding the fourth generation Apogee IV for the UMCS program. Services locations include the Department of Defense (DoD) installations or other Government facilities throughout the Continental United States, Alaska, Hawaii, and Outlying areas, as well as outside the Contiguous United States to include: Germany, Italy, Japan (including Okinawa) and Africa-Tanzania, where controls systems are installed. The total anticipated program capacity is estimated at $507M.",
+  "detail_text_length": 733,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d4cfeb8ba3e4beda2e19c801a6b921a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ce0a7957d354f7f997e30061d3e4192/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d4cfeb8ba3e4beda2e19c801a6b921a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c51afb7ed9e4011931beba9f6c067bcab2b95ed5d94194b13eca7cab2d5f2c9e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c51afb7ed9e4011931beba9f6c067bcab2b95ed5d94194b13eca7cab2d5f2c9e.docx",
+      "file_id": "1d4cfeb8ba3e4beda2e19c801a6b921a",
+      "file_name": "APOGEE+IV+-+SOURCES+SOUGHT+NOTICE_FINAL.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48442,
+      "sha256": "c51afb7ed9e4011931beba9f6c067bcab2b95ed5d94194b13eca7cab2d5f2c9e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ce0a7957d354f7f997e30061d3e4192/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf40ae4198a17c32525e1ab820c9d3c72051770110759f7d01cc42036ce7fc6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf40ae4198a17c32525e1ab820c9d3c72051770110759f7d01cc42036ce7fc6f.pdf",
+      "file_id": "9ce0a7957d354f7f997e30061d3e4192",
+      "file_name": "Attachment+1+-+Performance+Work+Statement+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 313550,
+      "sha256": "bf40ae4198a17c32525e1ab820c9d3c72051770110759f7d01cc42036ce7fc6f"
+    }
+  ],
+  "_mirror_hash": "50a7d8d41320db3fd239ab938884ac4495c912205c744f1d41a0b3bd636c15a6",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:15.006553+00:00"
+}

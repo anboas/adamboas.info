@@ -1,0 +1,68 @@
+{
+  "id": "sam-a9e187e741fe467fbb4339f9c2ab48fb",
+  "title": "J023--FY26 Dual Use Vehicle 1 and 2 Modernization",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9e187e741fe467fbb4339f9c2ab48fb",
+  "opportunity_url": "https://sam.gov/opp/a9e187e741fe467fbb4339f9c2ab48fb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a9e187e741fe467fbb4339f9c2ab48fb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a9e187e741fe467fbb4339f9c2ab48fb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24826Q0428",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9e187e741fe467fbb4339f9c2ab48fb",
+  "detail_text": "The contractor shall provide all labor, materials, tools, and equipment necessary to restore, refinish, and upgrade the exterior, lighting, windows, and interior of two Department of Veterans Affairs vehicles to meet OEM quality standards and operational requirements.",
+  "detail_text_length": 268,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2508a56405ae4992be394f45d0c35480/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54ed4cd08ec04e26ae49a70c3a0fe921/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dff482a65dd44df9949105d2297faa6f/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2508a56405ae4992be394f45d0c35480/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/588d95ee4c586384ecb803011a92bcd7e462c237a66fc14dbaa335081672575b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/588d95ee4c586384ecb803011a92bcd7e462c237a66fc14dbaa335081672575b.docx",
+      "file_id": "2508a56405ae4992be394f45d0c35480",
+      "file_name": "Draft+PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24215,
+      "sha256": "588d95ee4c586384ecb803011a92bcd7e462c237a66fc14dbaa335081672575b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54ed4cd08ec04e26ae49a70c3a0fe921/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d7d1cb4423ac21ea6cc9ea008c3a4ba094cebf4f1b74bebfbb641410c51d22dc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d7d1cb4423ac21ea6cc9ea008c3a4ba094cebf4f1b74bebfbb641410c51d22dc.docx",
+      "file_id": "54ed4cd08ec04e26ae49a70c3a0fe921",
+      "file_name": "36C24826Q0428.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14591,
+      "sha256": "d7d1cb4423ac21ea6cc9ea008c3a4ba094cebf4f1b74bebfbb641410c51d22dc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dff482a65dd44df9949105d2297faa6f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4fd988fc71af4ac8cdb35be640ba047df4a10bc69d2634559f227d597a6e73f5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4fd988fc71af4ac8cdb35be640ba047df4a10bc69d2634559f227d597a6e73f5.docx",
+      "file_id": "dff482a65dd44df9949105d2297faa6f",
+      "file_name": "Sources+Sought+Atch.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 42283,
+      "sha256": "4fd988fc71af4ac8cdb35be640ba047df4a10bc69d2634559f227d597a6e73f5"
+    }
+  ],
+  "_mirror_hash": "c1fc630d90015a956888aed02a0cef695170886b25a4c750596c1040442f8806",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.912255+00:00"
+}

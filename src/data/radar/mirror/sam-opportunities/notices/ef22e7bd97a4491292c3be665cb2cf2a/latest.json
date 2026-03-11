@@ -1,0 +1,57 @@
+{
+  "id": "sam-ef22e7bd97a4491292c3be665cb2cf2a",
+  "title": "USAG Ranges & Airfields Grounds Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ef22e7bd97a4491292c3be665cb2cf2a",
+  "opportunity_url": "https://sam.gov/opp/ef22e7bd97a4491292c3be665cb2cf2a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ef22e7bd97a4491292c3be665cb2cf2a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ef22e7bd97a4491292c3be665cb2cf2a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC041724",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC FDO FT BRAGG",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ef22e7bd97a4491292c3be665cb2cf2a",
+  "detail_text": "This is a requirement for non-personal services to provide comprehensive grounds and airfield maintenance. The contractor shall furnish all labor, supervision, equipment, and supplies necessary to ensure the safe and continuous operation of mission-critical infrastructure. The core requirement is for recurring grass cutting, vegetation control, and groundskeeping services across approximately 3,207 acres. The scope is divided into two primary functional areas with distinct performance standards: Airfield Maintenance : The contractor is responsible for maintaining all designated airfield areas, including runways, taxiways, and infields. This is vital for mitigating the Bird/Wildlife Aircraft Strike Hazard (BASH) and ensuring safe aviation operations. Training Area & Range Maintenance : The contractor will maintain all specified training ranges, impact areas, and support facilities to ensure they are safe, accessible, and suitable for troop training and maneuvers. Locations : The services will be performed across the following (TE 7.1 of PWS): Fort Bragg Pope Army Airfield (AAF) Simmons Army Airfield (AAF) Camp Mackall Key Performance Objectives : The purpose of this service is to support installation safety and mission readiness by meeting the following critical standards: Airfields : Maintain grass height strictly between 6 and 12 inches to prevent wildlife nesting and foraging, directly supporting the BASH program and protecting aviation assets. Ranges & Training Areas : Maintain grass height not to exceed 6 inches to ensure clear lines of sight, reduce fire hazards, and facilitate safe and effective training exercises.",
+  "detail_text_length": 1648,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0318ec5ed7a74984b93bc565475312ac/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f5bed355ad44761a2f20557d5aafd26/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0318ec5ed7a74984b93bc565475312ac/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/453c2b317ee13c1af08070a3e5d04f142bcc5c2e91d588ec7a9ddf90aa64ed76.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/453c2b317ee13c1af08070a3e5d04f142bcc5c2e91d588ec7a9ddf90aa64ed76.pdf",
+      "file_id": "0318ec5ed7a74984b93bc565475312ac",
+      "file_name": "Sources+Sought+Notice+-SSN-+-+USAG+Ranges+and+Airfields+-PANMCC+041724-+-+20260309.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 110061,
+      "sha256": "453c2b317ee13c1af08070a3e5d04f142bcc5c2e91d588ec7a9ddf90aa64ed76"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f5bed355ad44761a2f20557d5aafd26/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fbfa9697ad77c44a6095f2d44dfea671b0dceec283a42bb4370e429c5428833b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fbfa9697ad77c44a6095f2d44dfea671b0dceec283a42bb4370e429c5428833b.pdf",
+      "file_id": "7f5bed355ad44761a2f20557d5aafd26",
+      "file_name": "PWS+-+USAG+Ranges+and+Airfields+-PANMCC+041724-+-+202603010+-Draft-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 560820,
+      "sha256": "fbfa9697ad77c44a6095f2d44dfea671b0dceec283a42bb4370e429c5428833b"
+    }
+  ],
+  "_mirror_hash": "dcf07e05fefce48d635c6fb959a7bb5507473ff5863684c7a8a3eb91fb9b5c11",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.865125+00:00"
+}

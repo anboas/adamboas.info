@@ -1,0 +1,46 @@
+{
+  "id": "sam-7027a2d1d1234aef8878372a568af905",
+  "title": "Notice of Intent to Sole Source - Mouse Colony Breeding Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7027a2d1d1234aef8878372a568af905",
+  "opportunity_url": "https://sam.gov/opp/7027a2d1d1234aef8878372a568af905/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7027a2d1d1234aef8878372a568af905/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7027a2d1d1234aef8878372a568af905",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "PCA-NHLBI-01737",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7027a2d1d1234aef8878372a568af905",
+  "detail_text": "THIS IS A PRE-SOLICITATION NON-COMPETITIVE (NOTICE OF INTENT) SYNOPSIS TO AWARD A CONTRACT WITHOUT PROVIDING FOR FULL OR OPEN COMPETITION (INCLUDING BRAND-NAME). The National Heart, Lung, and Blood Institute (NHLBI) intends to negotiate and award a purchase order without providing for full and open competition to Ozgene (Bentley, WA, Australia). The purpose of this acquisition will be to provide National Heart, Lung, and Blood Institute (NHLBI) with mouse models carrying the human δ-globin gene that can be used to evaluate the impact of the KLF1–GATA1 fusion protein and candidate compounds on SCD and β-thalassemia phenotypes.",
+  "detail_text_length": 633,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9f9493e40ae46f1b7062ad7bc41da5e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9f9493e40ae46f1b7062ad7bc41da5e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/52b4f218e3a6a613a2c843a4207e663ad4e382f913e656c599c400daa3e59232.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/52b4f218e3a6a613a2c843a4207e663ad4e382f913e656c599c400daa3e59232.pdf",
+      "file_id": "b9f9493e40ae46f1b7062ad7bc41da5e",
+      "file_name": "NOI_PCA-NHLBI-01737.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 536834,
+      "sha256": "52b4f218e3a6a613a2c843a4207e663ad4e382f913e656c599c400daa3e59232"
+    }
+  ],
+  "_mirror_hash": "f8b6f9d669317d7b77ae4045964107de1e7cf5b56ac4879865d8236c8135b2ce",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.980564+00:00"
+}

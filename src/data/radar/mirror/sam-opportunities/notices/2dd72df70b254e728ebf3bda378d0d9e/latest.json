@@ -1,0 +1,47 @@
+{
+  "id": "sam-2dd72df70b254e728ebf3bda378d0d9e",
+  "title": "MTRA Disposal Box",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2dd72df70b254e728ebf3bda378d0d9e",
+  "opportunity_url": "https://sam.gov/opp/2dd72df70b254e728ebf3bda378d0d9e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2dd72df70b254e728ebf3bda378d0d9e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2dd72df70b254e728ebf3bda378d0d9e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4215826QE028",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2dd72df70b254e728ebf3bda378d0d9e",
+  "detail_text": "SEE ATTACHED PRESOLICITATION.",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25b7c0737a80471e8125000db22ce86d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25b7c0737a80471e8125000db22ce86d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/75f4fe59f7f1088477d500ae05356b7c6064fa7d203b2e07a9e8f584512b0aee.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/75f4fe59f7f1088477d500ae05356b7c6064fa7d203b2e07a9e8f584512b0aee.pdf",
+      "file_id": "25b7c0737a80471e8125000db22ce86d",
+      "file_name": "Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 275914,
+      "sha256": "75f4fe59f7f1088477d500ae05356b7c6064fa7d203b2e07a9e8f584512b0aee"
+    }
+  ],
+  "_mirror_hash": "f95f515de3be67c24556e1b8980d79be9963354ff054f2790f6c943a30d968e9",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.708893+00:00"
+}

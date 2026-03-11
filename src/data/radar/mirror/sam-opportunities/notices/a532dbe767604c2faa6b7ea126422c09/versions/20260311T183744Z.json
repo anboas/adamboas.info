@@ -1,0 +1,46 @@
+{
+  "id": "sam-a532dbe767604c2faa6b7ea126422c09",
+  "title": "Decisive Action Follow-On",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a532dbe767604c2faa6b7ea126422c09",
+  "opportunity_url": "https://sam.gov/opp/a532dbe767604c2faa6b7ea126422c09/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a532dbe767604c2faa6b7ea126422c09/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a532dbe767604c2faa6b7ea126422c09",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HDTRA1-26-R-0026",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE THREAT REDUCTION AGENCY (DTRA).DEFENSE THREAT REDUCTION AGENCY",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a532dbe767604c2faa6b7ea126422c09",
+  "detail_text": "DTRA requires support services to provide a wide range of professional analytical services to assist with its mission of countering and deterring Weapons of Mass Destruction (WMD), emerging threats, and threat networks in the Continental United States (CONUS) and Outside the Continental United States (OCONUS). Government responses will be submitted by 11 March 2026. The response due date has been revised to 13 March 2026. 03/10/26-DTRA is hosting an Industry Day on Tuesday, 31 March 2026. View the Industry Day:Decisive Action Follow-On posting via Sam.gov for additonal information and how to register.",
+  "detail_text_length": 608,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c5d9c8fd20842b1823902467ea9f9ff/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c5d9c8fd20842b1823902467ea9f9ff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c38afc9e408c26e1ef7b051d4c1185fb4651fbe884a9845dc635aad9375da084.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c38afc9e408c26e1ef7b051d4c1185fb4651fbe884a9845dc635aad9375da084.docx",
+      "file_id": "7c5d9c8fd20842b1823902467ea9f9ff",
+      "file_name": "RFI_SSN_RADAR_03052026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 53214,
+      "sha256": "c38afc9e408c26e1ef7b051d4c1185fb4651fbe884a9845dc635aad9375da084"
+    }
+  ],
+  "_mirror_hash": "bd330f17a52b0632b0121e76ecd6d8007d6894313db7a1d32872a54dba9d3417",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.837804+00:00"
+}

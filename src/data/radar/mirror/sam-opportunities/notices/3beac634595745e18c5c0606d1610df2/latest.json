@@ -1,0 +1,59 @@
+{
+  "id": "sam-3beac634595745e18c5c0606d1610df2",
+  "title": "Meals for Survivors Request for Information (RFI)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3beac634595745e18c5c0606d1610df2",
+  "opportunity_url": "https://sam.gov/opp/3beac634595745e18c5c0606d1610df2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3beac634595745e18c5c0606d1610df2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3beac634595745e18c5c0606d1610df2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "70FB7026I00000001",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.FEDERAL EMERGENCY MANAGEMENT AGENCY.INCIDENT SUPPORT SECTION(ISS70)",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3beac634595745e18c5c0606d1610df2",
+  "detail_text": "FEDERAL EMERGENCY MANAGEMENT AGENCY MEALS FOR SURVIVORS REQUEST FOR INFORMATION The Department of Homeland Security (DHS), Federal Emergency Management Agency (FEMA), Logistics Management Division, Distribution Management Division, Supply Chain Integration Branch, requires to identify and assess industry capabilities to provide disaster meals in support of emergency response and steady-state operations within the Continental United States (CONUS) and Outside the Continental United States (OCONUS). The information collected will be used to support contingency planning, requirements development, and operational readiness assessments related to mass feeding operations during natural disasters, humanitarian assistance, and other emergency response scenarios. This is Request for Information (RFI) is issued solely for information gathering purposes to identify sources that can provide support for the Supply Chain Integration Branch. In accordance with FAR 15.201(e), RFIs may be used when the Government wants to obtain price, delivery, other market information, and capabilities for planning purposes. Responses to these RFIs are not offers and cannot be accepted by the Government to form a binding contract. This RFI shall not be construed as a commitment by the Government for any purpose, nor does it restrict the Government to an ultimate acquisition approach. Respondents are solely responsible for all expenses associated with their RFI response. Respondents will not receive additional information in response to their submittal to the RFI and will not be notified of the resulting market research. Interested contractors shall submit their RFI responses electronically to Danyelle Wilcox, Contracting Officer, at Danyelle.wilcox@fema.dhs.gov and Danielle Sweetney, Contract Specialist, at Danielle.Sweetney@fema.dhs.gov no later than 3:00PM Eastern Standard Time (EST), March 20, 2026. Questions regarding this RFI are due no later than March 16, 2026.",
+  "detail_text_length": 1970,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2635ced0dc3b4c4f991c6c874087d745/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b76ee5f02a854a5eae7b99e1cf259c49/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2635ced0dc3b4c4f991c6c874087d745/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/722c09847b43cb6094112333d97878ea505f6f2f1f91557a33bc2e5b43aba1ea.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/722c09847b43cb6094112333d97878ea505f6f2f1f91557a33bc2e5b43aba1ea.pdf",
+      "file_id": "2635ced0dc3b4c4f991c6c874087d745",
+      "file_name": "MEALS+IDIQ-SOW+with+new+specifications+3.2.2026x.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 565499,
+      "sha256": "722c09847b43cb6094112333d97878ea505f6f2f1f91557a33bc2e5b43aba1ea"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b76ee5f02a854a5eae7b99e1cf259c49/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a5edf10dd9e25acb71d271d74b07fa203ecff0799df7d236ebbd5047e273e56e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a5edf10dd9e25acb71d271d74b07fa203ecff0799df7d236ebbd5047e273e56e.pdf",
+      "file_id": "b76ee5f02a854a5eae7b99e1cf259c49",
+      "file_name": "RFI+Meals+for+Survivors+3.10.2026x.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144365,
+      "sha256": "a5edf10dd9e25acb71d271d74b07fa203ecff0799df7d236ebbd5047e273e56e"
+    }
+  ],
+  "_mirror_hash": "ce76a6b981962f27198d02d77c499d1051505d179680eb15d6cbf01a727390a9",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.759894+00:00"
+}

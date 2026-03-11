@@ -1,0 +1,57 @@
+{
+  "id": "sam-e8ff2e6637bb4e7592c28a05ad769cb2",
+  "title": "6515--Anesthesia Vaporizers",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8ff2e6637bb4e7592c28a05ad769cb2",
+  "opportunity_url": "https://sam.gov/opp/e8ff2e6637bb4e7592c28a05ad769cb2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e8ff2e6637bb4e7592c28a05ad769cb2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e8ff2e6637bb4e7592c28a05ad769cb2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24226Q0426",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.242-NETWORK CONTRACT OFFICE 02 (36C242)",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8ff2e6637bb4e7592c28a05ad769cb2",
+  "detail_text": "This is a sources sought for Anesthesia Vaporizers for the Buffalo VA Medical Center.",
+  "detail_text_length": 85,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e31ce5a30724f7db8d51c342db97f9e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/706112e98d38471e8e6316f110374736/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e31ce5a30724f7db8d51c342db97f9e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c8ca2baa301b6d8ea1474755f8c7f1015f3d724da9548b3ed5d57451577f0a82.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c8ca2baa301b6d8ea1474755f8c7f1015f3d724da9548b3ed5d57451577f0a82.docx",
+      "file_id": "4e31ce5a30724f7db8d51c342db97f9e",
+      "file_name": "36C24226Q0426.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14424,
+      "sha256": "c8ca2baa301b6d8ea1474755f8c7f1015f3d724da9548b3ed5d57451577f0a82"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/706112e98d38471e8e6316f110374736/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15816f0fda4b2f8b6d2c20d95244370b717de58cd1003f5adb45b1ccb1fad5e4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15816f0fda4b2f8b6d2c20d95244370b717de58cd1003f5adb45b1ccb1fad5e4.docx",
+      "file_id": "706112e98d38471e8e6316f110374736",
+      "file_name": "Sources+Sought+-+Anesthesia+Vaporizers.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27722,
+      "sha256": "15816f0fda4b2f8b6d2c20d95244370b717de58cd1003f5adb45b1ccb1fad5e4"
+    }
+  ],
+  "_mirror_hash": "fd07208dbd687a7348ca0667ad17735073a881ac3dcbdec2813f149b7a86094c",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.946865+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-d61700e4d34348a4b1526ec5d0b86c3e",
+  "title": "EDXRF SPECTROMETER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d61700e4d34348a4b1526ec5d0b86c3e",
+  "opportunity_url": "https://sam.gov/opp/d61700e4d34348a4b1526ec5d0b86c3e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d61700e4d34348a4b1526ec5d0b86c3e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d61700e4d34348a4b1526ec5d0b86c3e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA813226Q0023",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8132  AFSC PZIMC",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d61700e4d34348a4b1526ec5d0b86c3e",
+  "detail_text": "The Air Force intends to solicit and award a firm fixed price single source purchase order to Gatan, L.L.C., Pleasanton, California; CAGE Code 0LP59, under the authority of FAR 12.201-1 Simplified Procedures for a EDXRF SPECTROMETER for the Oklahoma City Air Logistics Complex (OC-ALC), Tinker AFB Oklahoma. The NAICS code for this requirement is 334516 with a size standard of 1,000 employees Contractor registration in the System for Award Management (SAM) – which results in receiving a unique, active CAGE Code – is required prior to receiving any contracts or orders from the Government in accordance with FAR 4.203-1(b) Contractors can register electronically at https://sam.gov/.",
+  "detail_text_length": 686,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36528aa0a1a34aa7b399dd939d7ecfdc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36528aa0a1a34aa7b399dd939d7ecfdc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0d0c8204c5cb1d19c80a3ee820bcb746fc65f5697799645f2c626a7ed76db10d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0d0c8204c5cb1d19c80a3ee820bcb746fc65f5697799645f2c626a7ed76db10d.pdf",
+      "file_id": "36528aa0a1a34aa7b399dd939d7ecfdc",
+      "file_name": "Sole+Source+JA--H6TM06+Spectrometer_CO+Signed_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 832974,
+      "sha256": "0d0c8204c5cb1d19c80a3ee820bcb746fc65f5697799645f2c626a7ed76db10d"
+    }
+  ],
+  "_mirror_hash": "8cd1c88043d50eca38e338221a16efcc305c353a43b7289d8251a1abf703b7dc",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.919308+00:00"
+}

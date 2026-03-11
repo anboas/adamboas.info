@@ -1,0 +1,57 @@
+{
+  "id": "sam-7d91748cfb2d4cee9408caaddccf2b69",
+  "title": "General Funds Enterprise Business System (GFEBS) Resource Management Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d91748cfb2d4cee9408caaddccf2b69",
+  "opportunity_url": "https://sam.gov/opp/7d91748cfb2d4cee9408caaddccf2b69/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7d91748cfb2d4cee9408caaddccf2b69/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7d91748cfb2d4cee9408caaddccf2b69",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANAPG-26-P-0000039029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d91748cfb2d4cee9408caaddccf2b69",
+  "detail_text": "This is a non-personal services Contract to provide Training and Technical Support for General Funds Enterprise Business System (GFEBS)) Support Services for the Deputy Chief of Staff (DCS), G-3/5/7 Ensure Technical Mastery of Core Financial Tasks : Train personnel to independently and accurately perform the full spectrum of GFEBS financial management tasks. Provide Integrated Remote-First User Support: The Contractor shall provide reliable and responsive remote support as the primary method for all GFEBS training and technical assistance, available to all designated personnel during core business hours. [RB1] All user support requests must be logged in a Government-approved tracking system.",
+  "detail_text_length": 700,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54933880d59847a6a9c9c8e45d0343de/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb4b01bd6e92448bbce6c2e9cc7aa51f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54933880d59847a6a9c9c8e45d0343de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4298424eab0073a3bad546fc98e6a1ba5e2a8754dd8a62b4a2e83821b034cfa0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4298424eab0073a3bad546fc98e6a1ba5e2a8754dd8a62b4a2e83821b034cfa0.docx",
+      "file_id": "54933880d59847a6a9c9c8e45d0343de",
+      "file_name": "PWS+GFEBS+for+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48097,
+      "sha256": "4298424eab0073a3bad546fc98e6a1ba5e2a8754dd8a62b4a2e83821b034cfa0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb4b01bd6e92448bbce6c2e9cc7aa51f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/071984c5e2f48324f4a98ea98b4975fed0a2ca966296288c0d47a2a1ecf1c998.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/071984c5e2f48324f4a98ea98b4975fed0a2ca966296288c0d47a2a1ecf1c998.docx",
+      "file_id": "cb4b01bd6e92448bbce6c2e9cc7aa51f",
+      "file_name": "Request+for+Information+GFEBS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23198,
+      "sha256": "071984c5e2f48324f4a98ea98b4975fed0a2ca966296288c0d47a2a1ecf1c998"
+    }
+  ],
+  "_mirror_hash": "a8b40783b35f39741587fd403df521fea22e5c58bedbf5ad9568e9a07341d878",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.900715+00:00"
+}

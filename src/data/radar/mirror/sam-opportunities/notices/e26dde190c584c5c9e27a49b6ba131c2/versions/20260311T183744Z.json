@@ -1,0 +1,57 @@
+{
+  "id": "sam-e26dde190c584c5c9e27a49b6ba131c2",
+  "title": "Psychological Health Training Video",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e26dde190c584c5c9e27a49b6ba131c2",
+  "opportunity_url": "https://sam.gov/opp/e26dde190c584c5c9e27a49b6ba131c2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e26dde190c584c5c9e27a49b6ba131c2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e26dde190c584c5c9e27a49b6ba131c2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA800326Q0004",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AF INSTALLATION & MISSION SUPPORT CENTER.FA8003  771 ENTERPRISE SOURCING SQ",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e26dde190c584c5c9e27a49b6ba131c2",
+  "detail_text": "This is a performance-based, non-personal services contract for the development, production, and delivery of two high-quality audio-visual products: (1) iCover and (2) BH GEAR. The Contractor shall perform all tasks necessary to deliver the two complete video products, including but not limited to concept development, scriptwriting, storyboarding, filming, editing, motion graphics, audio mixing, deliverable formatting, review cycles, and final delivery. The Contractor will coordinate with the Government POC for messaging, branding, and approval, and shall provide all personnel, equipment, materials, supervision, facilities, and transportation required unless otherwise specified as Government-furnished.",
+  "detail_text_length": 711,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0637507c7e1d4f009482c750a3f00ef4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11793021468f4ca18b4e20e2b7e380ac/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0637507c7e1d4f009482c750a3f00ef4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79f1e00634900e6fcc066672f106f1bc0eb35406f2e02e69f307efff06575db7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79f1e00634900e6fcc066672f106f1bc0eb35406f2e02e69f307efff06575db7.pdf",
+      "file_id": "0637507c7e1d4f009482c750a3f00ef4",
+      "file_name": "Attachment+02+-+Questions_+Answers+signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 220063,
+      "sha256": "79f1e00634900e6fcc066672f106f1bc0eb35406f2e02e69f307efff06575db7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11793021468f4ca18b4e20e2b7e380ac/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/642f9de66fd52fa6e7c78e3c6d2814a7c665d1d4d19e3af608ef166df13a617d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/642f9de66fd52fa6e7c78e3c6d2814a7c665d1d4d19e3af608ef166df13a617d.pdf",
+      "file_id": "11793021468f4ca18b4e20e2b7e380ac",
+      "file_name": "Attachment+01+-+Psychological+Health+Readiness+Training+-+PWS+-+2.23.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 899861,
+      "sha256": "642f9de66fd52fa6e7c78e3c6d2814a7c665d1d4d19e3af608ef166df13a617d"
+    }
+  ],
+  "_mirror_hash": "208854ab95174229583d2948068711b93fbe7177d331b15236de5c87bebe4f18",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.848990+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-81e140da5eeb4b30813ceec1f2625156",
+  "title": "AFTAC CONTRACT ADMINISTRATION SUPPORT SERVICES (ACASS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=81e140da5eeb4b30813ceec1f2625156",
+  "opportunity_url": "https://sam.gov/opp/81e140da5eeb4b30813ceec1f2625156/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/81e140da5eeb4b30813ceec1f2625156/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "81e140da5eeb4b30813ceec1f2625156",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ACASSR2D29939",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.AMIC.AMICDET2.FA7022  AMIC DET 2 OL PATRICK PKA",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=81e140da5eeb4b30813ceec1f2625156",
+  "detail_text": "The Air Force Technical Applications Center (AFTAC) and AMIC DET 2/OL/PKA (Patrick SFB, FL) is conducting Market Research for non-personal services for information and planning purposes in support of professional federal contracting support services at AFTAC in collaboration with AMIC contracting officers. Services include acquisition planning, market research, acquisition strategy development, acquisition and contract document development. Services also include cost/price analysis, preparation of determinations and justifications, synopsis, solicitations, price negotiation memoranda, and the contractor shall provide assistance with and document proposal evaluations and will receive AFTAC technical evaluations as well as contractor submitted technical/cost proposals for review and use in the contract formation process. The contractor will professionally execute contract administration duties and will maintain contract writing, filing, and tracking systems/tools and will accurately document, file (to include electronic filing), and maintain contract documents. The contractor will develop and adhere to acquisition milestones.",
+  "detail_text_length": 1141,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17afa827be0c4f2fa0a2b8ffe040d77b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fab1b6f107074ea5b821c077a6a20780/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17afa827be0c4f2fa0a2b8ffe040d77b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/479b9a090edec6b35fe5e413e453f5fa8df3debcb4c027cb936187dbfb5ec8fd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/479b9a090edec6b35fe5e413e453f5fa8df3debcb4c027cb936187dbfb5ec8fd.docx",
+      "file_id": "17afa827be0c4f2fa0a2b8ffe040d77b",
+      "file_name": "ACASS+SSS+19FEB26+DDA.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45559,
+      "sha256": "479b9a090edec6b35fe5e413e453f5fa8df3debcb4c027cb936187dbfb5ec8fd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fab1b6f107074ea5b821c077a6a20780/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/110e5ec10c4de2f4b6cd65bd7d2404244baf26dca1e5c6f533a1646775f79a8e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/110e5ec10c4de2f4b6cd65bd7d2404244baf26dca1e5c6f533a1646775f79a8e.docx",
+      "file_id": "fab1b6f107074ea5b821c077a6a20780",
+      "file_name": "ACASS+PWS+30+Jan+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 61386,
+      "sha256": "110e5ec10c4de2f4b6cd65bd7d2404244baf26dca1e5c6f533a1646775f79a8e"
+    }
+  ],
+  "_mirror_hash": "6938d466c02e28e83902b43bb1401a6b0368d8a66dd05aadf70f7b3a0350465d",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.810783+00:00"
+}

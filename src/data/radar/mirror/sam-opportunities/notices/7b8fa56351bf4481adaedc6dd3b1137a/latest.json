@@ -1,0 +1,48 @@
+{
+  "id": "sam-7b8fa56351bf4481adaedc6dd3b1137a",
+  "title": "Request for Information (RFI) for Product Support Business Case Analysis (BCA) for USAF E-7A Aircraft",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b8fa56351bf4481adaedc6dd3b1137a",
+  "opportunity_url": "https://sam.gov/opp/7b8fa56351bf4481adaedc6dd3b1137a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7b8fa56351bf4481adaedc6dd3b1137a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7b8fa56351bf4481adaedc6dd3b1137a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "AFLCMC_WIW",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.INTELLIGENCE, SURVEILLANCE, RECONNAISSANCE - SPECIAL OPERATIONS FORCES.FA2371 US AWACS AFLCMC/HBS",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b8fa56351bf4481adaedc6dd3b1137a",
+  "detail_text": "The United States Air Force E-7A Program Office (AFLCMC/WIW), is seeking information from interested companies with the ability to perform a comprehensive Product Support Business Case Analysis (BCA) for the E-7A aircraft fleet. Notice Type: Request for Information (RFI) Reference Number: RFI-E7A-BCA-2026 Posting Date: 10 March 2026 Response Due Date: 11 May 2026, 5:00 PM (EST) Agency: Department of the Air Force (DAF) Office: E-7A System Program Office (SPO) NAICS Codes: 541611 - Administrative Management and General Management Consulting Services 541330 - Engineering Services THIS IS A REQUEST FOR INFORMATION (RFI) ONLY. This RFI is issued solely for information and planning purposes; it does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. This RFI does not commit the Government to contract for any supply or service whatsoever. Further, the Air Force is not at this time seeking proposals and will not accept unsolicited proposals. The U.S. Government will not pay for any information or administrative costs incurred in response to this RFI. Not responding to this RFI does not preclude participation in any future RFP, if any is issued.",
+  "detail_text_length": 1192,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/81e2c8c919b940d9a6388fb8f1bef715/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/81e2c8c919b940d9a6388fb8f1bef715/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/880b9a705bd99a51d628b277ea7953227cef4f817a825ded3a62f8024f8db8a5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/880b9a705bd99a51d628b277ea7953227cef4f817a825ded3a62f8024f8db8a5.docx",
+      "file_id": "81e2c8c919b940d9a6388fb8f1bef715",
+      "file_name": "Final_PS-BCA+RFI_20260304.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 33787,
+      "sha256": "880b9a705bd99a51d628b277ea7953227cef4f817a825ded3a62f8024f8db8a5"
+    }
+  ],
+  "_mirror_hash": "427ba99487af651c976fcda1504ba3b5f55b8c99ae64ee37eb5e63d9614d7843",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.801545+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-8917e0ea9c944ff89291989bcf2ec1b4",
+  "title": "S--CAHA - DUMPSTER SERVICES",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8917e0ea9c944ff89291989bcf2ec1b4",
+  "opportunity_url": "https://sam.gov/opp/8917e0ea9c944ff89291989bcf2ec1b4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8917e0ea9c944ff89291989bcf2ec1b4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8917e0ea9c944ff89291989bcf2ec1b4",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140P5326Q0009",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.SER SOUTH MABO (54000)",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8917e0ea9c944ff89291989bcf2ec1b4",
+  "detail_text": "CAPE HATTERAS NATIONAL SEASHORE DUMPSTER SERVICES Services Include: (1) Base, (4) Option Years",
+  "detail_text_length": 94,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8569a151e95348bea2069c3935ae5ec2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8569a151e95348bea2069c3935ae5ec2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/82e8c95cb727d78b331f9a8c3ffede496102c24b3d612344116cd43dcd58db5d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/82e8c95cb727d78b331f9a8c3ffede496102c24b3d612344116cd43dcd58db5d.docx",
+      "file_id": "8569a151e95348bea2069c3935ae5ec2",
+      "file_name": "Pre-Solicitation_Notice_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25399,
+      "sha256": "82e8c95cb727d78b331f9a8c3ffede496102c24b3d612344116cd43dcd58db5d"
+    }
+  ],
+  "_mirror_hash": "c7418f1654d7e880bb9a06acbc9d6cbf0e2df61788198323f1e6fa49ad6ff521",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:15.022666+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-b6fc59a94b224e6181cf7932fda07100",
+  "title": "B--Apatite fission-track (AFT) and U-Pb analyses",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6fc59a94b224e6181cf7932fda07100",
+  "opportunity_url": "https://sam.gov/opp/b6fc59a94b224e6181cf7932fda07100/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b6fc59a94b224e6181cf7932fda07100/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b6fc59a94b224e6181cf7932fda07100",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140G0326Q0047",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFFICE OF ACQUISITON  GRANTS",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6fc59a94b224e6181cf7932fda07100",
+  "detail_text": "Apatite fission-track (AFT) and U-Pb analyses Notice of Intent This is a notice of intent to solicit from a single source. The U.S. Geological Survey (USGS), intends to award a purchase order to Geosep Services for apatite fission-track (AFT) and U-Pb analyses from geological samples. Award will be made in accordance with Federal Acquisition Regulation (FAR) 13.106-1(b) and the procedures at FAR Part 12 entitled, Acquisition of Commercial Items and FAR Part 13 entitled, Simplified Acquisition Procedures. Geosep Services is, to the USGS' knowledge, the only source who can provide the offer in-situ Uranium and Lead isotope measurements by LA-ICP-MS for U-Pb date determination and 252Cf irradiation. The purpose of this notice is to satisfy the requirements of FAR Subpart 5.101(a)(1) and FAR 5.2. This notice of intent is not a request for competitive quotes. However, all responsible parties may submit a quotation by the closing date of this announcement which shall be considered by the agency. No solicitation will be issued. A determination not to compete this action based upon responses received is in the sole discretion of the Government. The NAICS code for this action is 541380, Testing Laboratory. Responses or inquiries shall only be accepted through electronic mail addressed to yangzhideng@usgs.gov and must be uploaded and received in their entirety no later than March 13, 2026 at 1500 PST. Responses submitted by hardcopy or any web portal shall not be accepted or considered. The attached sole source justification has been redacted in accordance with FAR 6.305.",
+  "detail_text_length": 1588,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05ca1eaf3dd94a3aa9f993b9397a02d0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddc9cef674cf484896eb85603922e9e9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05ca1eaf3dd94a3aa9f993b9397a02d0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b359aae05957a6cd14246cf06d33fea5383642df6f9d19190cd6985f85dbb120.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b359aae05957a6cd14246cf06d33fea5383642df6f9d19190cd6985f85dbb120.pdf",
+      "file_id": "05ca1eaf3dd94a3aa9f993b9397a02d0",
+      "file_name": "SOW_U-Pb_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 176557,
+      "sha256": "b359aae05957a6cd14246cf06d33fea5383642df6f9d19190cd6985f85dbb120"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddc9cef674cf484896eb85603922e9e9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cfd722aa7520e3eacf6799c8cf0e19057e8e883bec9c7f30f6096b2eb9ecd1d5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cfd722aa7520e3eacf6799c8cf0e19057e8e883bec9c7f30f6096b2eb9ecd1d5.pdf",
+      "file_id": "ddc9cef674cf484896eb85603922e9e9",
+      "file_name": "J_A_Geosep_redacted_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 147067,
+      "sha256": "cfd722aa7520e3eacf6799c8cf0e19057e8e883bec9c7f30f6096b2eb9ecd1d5"
+    }
+  ],
+  "_mirror_hash": "46fb49b4165753a5d7a399f05c1124329e12161e78534a5f6d0b38e5e0246fcf",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.836834+00:00"
+}

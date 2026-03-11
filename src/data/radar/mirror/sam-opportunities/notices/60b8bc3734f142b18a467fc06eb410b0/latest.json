@@ -1,0 +1,57 @@
+{
+  "id": "sam-60b8bc3734f142b18a467fc06eb410b0",
+  "title": "Document Management Solution",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=60b8bc3734f142b18a467fc06eb410b0",
+  "opportunity_url": "https://sam.gov/opp/60b8bc3734f142b18a467fc06eb410b0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/60b8bc3734f142b18a467fc06eb410b0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "60b8bc3734f142b18a467fc06eb410b0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CAEFPD26-0001",
+  "agency_path": "ADMINISTRATIVE OFFICE OF THE US COURTS.ADMINISTRATIVE OFFICE OF THE US COURTS.CA EASTERN FPD SACRAMENTO",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=60b8bc3734f142b18a467fc06eb410b0",
+  "detail_text": "The Federal Public Defender – California Eastern District (FPD) is issuing a Request for Information (RFI) FOR INFORMATION FOR PLANNING PURPOSES ONLY. As part of its market research, the FPD is issuing this RFI to determine if there exists an adequate number of qualified and interested contractors capable of the scope of the requirement in the draft Statement of Work (SOW). The purpose of this RFI is also to receive any questions or concerns regarding the draft requirements listed in the SOW. FPD is seeking to procure a Document Management System (DMS) to replace our legacy DMS platform which is reaching end of life (EOL) on 12/31/2026. This solution will modernize our document management capabilities and centralize our data for robust review and search functions. FPD has approximately 75 active users and manages roughly 950,000 documents (~350GB) in the current DMS spread across two physical office locations. **Deadline has been extended to 3/20/26** FPD requires a modern software-based DMS that utilizes metadata to categorize documents and allow for robust document searchability. This solution can be either on-premises or cloud-based hosted by the contactor. Any cloud-based solution shall be FedRAMP authorized at moderate level or higher and/or have documentation showing efforts to become FedRAMP authorized.",
+  "detail_text_length": 1331,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04cee56e8f8e4622bae710cc359cf3d9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d9e0c1259dc4dde8b3565ade2bb41a6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04cee56e8f8e4622bae710cc359cf3d9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bbf714f6dbda4c8ec2ee6f35087771e6cd1df2723da9fd2099899e1e9eb8ec6e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bbf714f6dbda4c8ec2ee6f35087771e6cd1df2723da9fd2099899e1e9eb8ec6e.docx",
+      "file_id": "04cee56e8f8e4622bae710cc359cf3d9",
+      "file_name": "RFI_Sources+Sought+Announcement_Document+Management+Solution+for+FPD+2.25.26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 39899,
+      "sha256": "bbf714f6dbda4c8ec2ee6f35087771e6cd1df2723da9fd2099899e1e9eb8ec6e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d9e0c1259dc4dde8b3565ade2bb41a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/795187173320ff3a8a5dec2d07fbe05da0f3b165ad879fc75ee864c7ddf09b8d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/795187173320ff3a8a5dec2d07fbe05da0f3b165ad879fc75ee864c7ddf09b8d.docx",
+      "file_id": "6d9e0c1259dc4dde8b3565ade2bb41a6",
+      "file_name": "2029.01.26_DMS_RFI_SOW+2.25.26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21438,
+      "sha256": "795187173320ff3a8a5dec2d07fbe05da0f3b165ad879fc75ee864c7ddf09b8d"
+    }
+  ],
+  "_mirror_hash": "ad33bb30095778c35ecdba711926c3a88606ad1ff33d92262d0f436048f15625",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.918727+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-d5e5a9fef19c4d019769ff52d7ee7c7e",
+  "title": "PSO Credits",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5e5a9fef19c4d019769ff52d7ee7c7e",
+  "opportunity_url": "https://sam.gov/opp/d5e5a9fef19c4d019769ff52d7ee7c7e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d5e5a9fef19c4d019769ff52d7ee7c7e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d5e5a9fef19c4d019769ff52d7ee7c7e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MCINCR.COMMANDER",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5e5a9fef19c4d019769ff52d7ee7c7e",
+  "detail_text": "Notice of Intent to Sole Source This is a notice of intent to sole source a procurement under FAR subpart 19.106-3 Sole Source Awards, Service-Disabled Veteran Owned Small Business (SDVOSB). The Marine Corps Software Factory (MCSWF) has continued requirement for consulting credits/vouchers to educate, mentor, and maintain current installed software development. Due to its limited uniformed structure, MCSWF is embedded in the US Army Futures Command Software Factory, and is reliant on US Army facilities, equipment, software, and administrative support therefore ATX Captial Partners, LLC (ATX Defense) is required to be utilized. The anticipated NAICS Code is 611430 – Professional and Management Development Training. The USMC Regional Contracting Office (RCO) – Marine Corps Installations-National Capital Region (MCI-NCR) at Marine Corps Base, Quantico VA intends to award a sole source contract to ATX Capital Partners LLC (ATX Defense), 1212 Rio Grande Street, Austin, TX 78704, in accordance with FAR 19.1406 Service-Disabled Veteran Owned Small Business (SDVOSB). This notice of intent is NOT a request for competitive quotes; however, all responsible sources may submit a capability statement or quotation which shall be considered by the agency. Capability statements or quotes, if received timely, will be considered; however, a determination by the Government not to compete the requirement based upon responses to this notice is solely within the discretion of the Government. Information received will normally be considered solely for the purpose of determining whether to conduct a competitive procurement. Responses shall be emailed to Kevin Guertin at kevin.guertin@usmc.mil and Kellie Holley at kellie.holley@usmc.mil no later than 20 March 2026, 0800 am Eastern Standard Time. Late responses will not be considered.",
+  "detail_text_length": 1839,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0e2fab56cc142178a12b780259abc24/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0e2fab56cc142178a12b780259abc24/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cbb14677db87b368aeebf4838708c9340f705dfeecf529f5cc4cdebbeafd7997.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cbb14677db87b368aeebf4838708c9340f705dfeecf529f5cc4cdebbeafd7997.pdf",
+      "file_id": "e0e2fab56cc142178a12b780259abc24",
+      "file_name": "C12.+Notice+of+Intent-+Sole+Source+-+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118137,
+      "sha256": "cbb14677db87b368aeebf4838708c9340f705dfeecf529f5cc4cdebbeafd7997"
+    }
+  ],
+  "_mirror_hash": "7f08fd8966a778bcff49ce506af397c217b684e2ae0ce4aa3412a243994f6509",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.921924+00:00"
+}

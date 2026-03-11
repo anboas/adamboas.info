@@ -15605,4 +15605,60 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Source page provides agenda and speaker roster but no public government point-of-contact email/phone, solicitation number, response deadline, or registration cutoff as of 2026-03-10.'
 		}
 	},
+	{
+		id: 'radar-ausa-noon-report-soldier-for-life',
+		title: 'AUSA Noon Report: Soldier for Life',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-04-30',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['ausa', 'noon', 'report', 'soldier', 'life'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/noon-report/soldier-for-life'
+			},
+			logistics: 
+			{
+				format: 'Virtual',
+				estimatedCostUsd: 
+				{
+					min: 500,
+					max: 2200
+				},
+				travelBurdenFromDc: 'Medium'
+			},
+			notes: 'AUSA source lists title/date and official event link only; no public government contact, solicitation number, response date, registration deadline, or engagement-kind metadata was published as of 2026-03-11.'
+		}
+	},
 ];

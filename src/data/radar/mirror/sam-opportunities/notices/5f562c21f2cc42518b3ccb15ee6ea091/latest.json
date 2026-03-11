@@ -1,0 +1,46 @@
+{
+  "id": "sam-5f562c21f2cc42518b3ccb15ee6ea091",
+  "title": "C--WY BRIDGE INSPECTIONS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f562c21f2cc42518b3ccb15ee6ea091",
+  "opportunity_url": "https://sam.gov/opp/5f562c21f2cc42518b3ccb15ee6ea091/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5f562c21f2cc42518b3ccb15ee6ea091/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5f562c21f2cc42518b3ccb15ee6ea091",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140R6026Q0042",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.GREAT PLAINS REGIONAL OFFICE",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f562c21f2cc42518b3ccb15ee6ea091",
+  "detail_text": "See attachment for pre-solicitation notice.",
+  "detail_text_length": 43,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ceacbd9144b34851b1a8a37bccb26ffb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ceacbd9144b34851b1a8a37bccb26ffb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/99dfa0dcc91798fabc113037d6aa32e0512cea2e4e80b2fd031d4e671744eb26.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/99dfa0dcc91798fabc113037d6aa32e0512cea2e4e80b2fd031d4e671744eb26.pdf",
+      "file_id": "ceacbd9144b34851b1a8a37bccb26ffb",
+      "file_name": "Pre-Solicitation_WY_Bridge_Inspection_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 864205,
+      "sha256": "99dfa0dcc91798fabc113037d6aa32e0512cea2e4e80b2fd031d4e671744eb26"
+    }
+  ],
+  "_mirror_hash": "442365ce395f10e11dabd3082002c35793e0d67d0a4621bc80a098aa1311b160",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.974341+00:00"
+}

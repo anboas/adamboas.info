@@ -1,0 +1,57 @@
+{
+  "id": "sam-8547c16fa3e5468eadf93b4c3f258dbc",
+  "title": "Hanel Lift System Upgrade",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8547c16fa3e5468eadf93b4c3f258dbc",
+  "opportunity_url": "https://sam.gov/opp/8547c16fa3e5468eadf93b4c3f258dbc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8547c16fa3e5468eadf93b4c3f258dbc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8547c16fa3e5468eadf93b4c3f258dbc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326Q0030",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8547c16fa3e5468eadf93b4c3f258dbc",
+  "detail_text": "The Contractor shall furnish a comprehensive \"Turn-Key\" solution on two existing Hanel Lean Lift at Shaw AFB, SC in building 1604. This will encompass equipment setup, operational verification, and personnel training. All component replacements must be executed by Hanel factory-trained and certified technicians. Furthermore, the Contractor shall provide both a factory-trained Service Technician and a factory-trained Systems Integration Specialist to perform the installation, configuration, data migration, and training updates on the Lean-Lift units, in conjunction with the controller refit.",
+  "detail_text_length": 597,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14e1362fe2a547c0b46a820b2029ba95/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4146487934a64c63b476ba0df9d28742/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14e1362fe2a547c0b46a820b2029ba95/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7e9f81a0b5e8470226f866601d272f67a9a03447d74235e4f7c85258d164f6eb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7e9f81a0b5e8470226f866601d272f67a9a03447d74235e4f7c85258d164f6eb.docx",
+      "file_id": "14e1362fe2a547c0b46a820b2029ba95",
+      "file_name": "SOW+Hanel+Lift+System+Upgrade_+19+Dec+2025.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30280,
+      "sha256": "7e9f81a0b5e8470226f866601d272f67a9a03447d74235e4f7c85258d164f6eb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4146487934a64c63b476ba0df9d28742/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4d13fbdddf7063f11798eca03f37804101f1c82098e4ddd56cfcbf7f9ddb9c99.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4d13fbdddf7063f11798eca03f37804101f1c82098e4ddd56cfcbf7f9ddb9c99.pdf",
+      "file_id": "4146487934a64c63b476ba0df9d28742",
+      "file_name": "Sources+Sought+Synopsis+-+FA480326Q0030.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 126374,
+      "sha256": "4d13fbdddf7063f11798eca03f37804101f1c82098e4ddd56cfcbf7f9ddb9c99"
+    }
+  ],
+  "_mirror_hash": "7eb17e40fd1ebd4f98efad2801b4245ce65395c9626c9a2d8791b64cc4d1b0d9",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.902212+00:00"
+}

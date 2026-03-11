@@ -1,0 +1,46 @@
+{
+  "id": "sam-7d6aa55072cf4e808efcf29755937ff0",
+  "title": "FRS M7A1 Manifold",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d6aa55072cf4e808efcf29755937ff0",
+  "opportunity_url": "https://sam.gov/opp/7d6aa55072cf4e808efcf29755937ff0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7d6aa55072cf4e808efcf29755937ff0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7d6aa55072cf4e808efcf29755937ff0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W519TC26Q8810",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d6aa55072cf4e808efcf29755937ff0",
+  "detail_text": "The Rock Island Arsenal is conducting market research for potential vendors to provide FRS M7A1 MANIFOLDS in accordance with top level drawings attached. Interested vendors shall send a capability statement, provide their business size (Large Business, Small business, Women-owned small business, etc.), whether they are the manufacture of the item; and if not the manufacture, the business size of the manufacturer, and the country of origin of the item. Tentative minimum quantity is 92 each...Max is 1,000 each. Request rough estimate of cost as well as rough timeline estimate to provide the min qty. NOTE: Full set of drawings will be released at time of solicitation.",
+  "detail_text_length": 673,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7d8eb3d6b22647aa8fba2f816800ae3b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7d8eb3d6b22647aa8fba2f816800ae3b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ebd618a1e80c688c763198c60085d08b466228b79a9c39fdb3b8679cdd08fc70.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ebd618a1e80c688c763198c60085d08b466228b79a9c39fdb3b8679cdd08fc70.pdf",
+      "file_id": "7d8eb3d6b22647aa8fba2f816800ae3b",
+      "file_name": "Drawing+package.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 286275,
+      "sha256": "ebd618a1e80c688c763198c60085d08b466228b79a9c39fdb3b8679cdd08fc70"
+    }
+  ],
+  "_mirror_hash": "22444d0bbe1d2f641bb88b925347ee8c1479360dab3cc2c51a81c595df3804be",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.950390+00:00"
+}

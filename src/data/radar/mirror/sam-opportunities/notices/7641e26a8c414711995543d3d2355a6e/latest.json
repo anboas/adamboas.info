@@ -1,0 +1,46 @@
+{
+  "id": "sam-7641e26a8c414711995543d3d2355a6e",
+  "title": "Painting and Siding at LPOE Building-Orient ME",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7641e26a8c414711995543d3d2355a6e",
+  "opportunity_url": "https://sam.gov/opp/7641e26a8c414711995543d3d2355a6e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7641e26a8c414711995543d3d2355a6e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7641e26a8c414711995543d3d2355a6e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "47PC5226R0024",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.PUBLIC BUILDINGS SERVICE.PBS PROJECT DELIVERY EAST - BRANCH B",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7641e26a8c414711995543d3d2355a6e",
+  "detail_text": "General Service Administration (GSA) has found it necessary to remove and replace all vinyl siding on the main building of the LPOE along with the detached garage. Building shall be house wrapped with a weather tight breathable type material, a Hardi type cement board 4” lap reveal to match original historic siding shall be installed. All fascia, pillars, canopy ceiling, and any wood shall be scraped to remove old paint, lead paint safety precautions shall be used. Caulk all seams and joints where paint was removed and new siding was installed, paint all siding and where old paint was removed. ADA ramp, and median concrete shall be cleaned and epoxied. Paint railing on ADA ramp.",
+  "detail_text_length": 687,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1539f2440d542128f2e142f1d9c95fd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1539f2440d542128f2e142f1d9c95fd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd167cf3bd497a84b8b3d10be72413606a847fa94a5eff072b7b58c5d9377857.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd167cf3bd497a84b8b3d10be72413606a847fa94a5eff072b7b58c5d9377857.pdf",
+      "file_id": "e1539f2440d542128f2e142f1d9c95fd",
+      "file_name": "Notice+of+Source+Sought+LPOE+Painting+and+Siding+20260305.docx.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 95742,
+      "sha256": "cd167cf3bd497a84b8b3d10be72413606a847fa94a5eff072b7b58c5d9377857"
+    }
+  ],
+  "_mirror_hash": "8b1580b0782eaf456e824788df84ca47c393f39d88dbde3a9934164d504b748c",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:15.011778+00:00"
+}

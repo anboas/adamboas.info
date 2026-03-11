@@ -1,0 +1,46 @@
+{
+  "id": "sam-f910995aeb2c4082974533d76e95fe78",
+  "title": "Technical Software and Engineering Services Solution",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f910995aeb2c4082974533d76e95fe78",
+  "opportunity_url": "https://sam.gov/opp/f910995aeb2c4082974533d76e95fe78/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f910995aeb2c4082974533d76e95fe78/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f910995aeb2c4082974533d76e95fe78",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "Technical_Software_Engineering_Services_Solution",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8100  AFSC PZIEC",
+  "posted_date": "2026-03-10",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f910995aeb2c4082974533d76e95fe78",
+  "detail_text": "Please see attached Sources Sought Synopsis for complete details. NOTE: This is a Sources Sought only. This is not a request for quote (RFQ), request for proposal (RFP), invidtation for bids (IFB), or a commitment by the government to award a contract. The government is not seeking proposals at this time and will not accept unsolicited proposals. All responses are due by 3:00PM CST 20 March 2026. Please email your responses to jeffrey.atterbury@us.af.mil and chelsea.kuykendall@us.af.mil. Subject : Technical Software and Engineering Services Solution Sources Sought",
+  "detail_text_length": 570,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75cd4a49008a49ef86dc2d3b64f0d934/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75cd4a49008a49ef86dc2d3b64f0d934/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a0b92bfe837dc18f4cdac4083ab7ed6dd7ddaf6364d076eabea206b8ecdfe210.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a0b92bfe837dc18f4cdac4083ab7ed6dd7ddaf6364d076eabea206b8ecdfe210.pdf",
+      "file_id": "75cd4a49008a49ef86dc2d3b64f0d934",
+      "file_name": "Sources+Sought+Synopsis_10MAR2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 155724,
+      "sha256": "a0b92bfe837dc18f4cdac4083ab7ed6dd7ddaf6364d076eabea206b8ecdfe210"
+    }
+  ],
+  "_mirror_hash": "2907392c55fd5c5347333d70710124c435c33095639c9654c48c65c3619333f3",
+  "_mirror_run_id": "20260311T183744Z",
+  "_mirror_recorded_at": "2026-03-11T18:44:14.922926+00:00"
+}
