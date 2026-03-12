@@ -15661,4 +15661,5 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'AUSA source lists title/date and official event link only; no public government contact, solicitation number, response date, registration deadline, or engagement-kind metadata was published as of 2026-03-11.'
 		}
 	},
+
 ];

@@ -1,0 +1,46 @@
+{
+  "id": "sam-c0809c2f3e024327804831f1c26091b3",
+  "title": "J--Rescue Vessels Service and Repair, NPS-PORE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c0809c2f3e024327804831f1c26091b3",
+  "opportunity_url": "https://sam.gov/opp/c0809c2f3e024327804831f1c26091b3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c0809c2f3e024327804831f1c26091b3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c0809c2f3e024327804831f1c26091b3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P8426Q0023",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.PWR PORE MABO (84000)",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c0809c2f3e024327804831f1c26091b3",
+  "detail_text": "Rescue Vessels Service and Repair, Point Reyes National Seashore, Marin County, California This Sources Sought notice is issued solely for information and planning purposes. Its intent is to support market research by identifying interested and capable parties for a potential Indefinite Delivery/Indefinite Quantity (IDIQ) contract. The anticipated contract would provide routine and non-routine service and repair for two National Park Service (NPS) emergency rescue vessels located within Point Reyes National Seashore in Marin County, California. Interested vendors with the capability to meet these requirements are encouraged to review the attached document for additional project details and submission instructions.",
+  "detail_text_length": 723,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/85211d809aa74a47b37205b0099f86c0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/85211d809aa74a47b37205b0099f86c0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f371175751a1bb9bb57913844d22f1e3b4b80be8e3af7a1b098023aa23c0ca6d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f371175751a1bb9bb57913844d22f1e3b4b80be8e3af7a1b098023aa23c0ca6d.pdf",
+      "file_id": "85211d809aa74a47b37205b0099f86c0",
+      "file_name": "Sources_Sought_PORE_140P8426Q0023_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 123138,
+      "sha256": "f371175751a1bb9bb57913844d22f1e3b4b80be8e3af7a1b098023aa23c0ca6d"
+    }
+  ],
+  "_mirror_hash": "e2da8790ed663a86349508019674bdd84862ede336accdd4b949e274c66ce516",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.107119+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-bbd4269deaac4a8b86ae050de3ffec46",
+  "title": "VTC Tech Refresh Bldg 523 Rms 201 & 202, Goodfellow AFB, TX",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bbd4269deaac4a8b86ae050de3ffec46",
+  "opportunity_url": "https://sam.gov/opp/bbd4269deaac4a8b86ae050de3ffec46/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bbd4269deaac4a8b86ae050de3ffec46/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bbd4269deaac4a8b86ae050de3ffec46",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3030  17 CONS CC",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bbd4269deaac4a8b86ae050de3ffec46",
+  "detail_text": "The 17th Contracting Squadron/PKB intends to award a sole source contract for a requirement that is a technology upgrade of the VTC system that is in the 17 Training Squadron, building 523 rooms 201 and 202. The requirement will be a sole source contract because AV3 Inc. created the original design of infrastructure of the Secret Internet Protocol Router Network (SIPR) Classified Video Teleconferencing (VTC) and Joint Worldwide Intelligence Communications System (JWICS) within the 17 Training Squadron. These plans are a continuation of the systems that were previously put in place by AV3 Inc. and the same design and infrastructure is needed to maintain consistency throughout the squadron. System design has been created and planned by AV3 to ensure seamless integration with the existing AV3 equipment already instated throughout the workplace. Please refer to the attachments for further justification.",
+  "detail_text_length": 912,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3fea2bc7c701421c90c95a2a452344c8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f03ae2828d5494492afcff61da252fc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcaaadd8ee6d4a1f9dd4bb4778a432c8/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3fea2bc7c701421c90c95a2a452344c8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c6d46b095a59d7fb2d502aa97d3fd331d0b9c5ccc7a58bf139d293f89c38ea7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c6d46b095a59d7fb2d502aa97d3fd331d0b9c5ccc7a58bf139d293f89c38ea7.pdf",
+      "file_id": "3fea2bc7c701421c90c95a2a452344c8",
+      "file_name": "REDACTED+JA+VTC+Tech+Refresh+Bldg+523+Rms+201+and+202.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 472016,
+      "sha256": "1c6d46b095a59d7fb2d502aa97d3fd331d0b9c5ccc7a58bf139d293f89c38ea7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f03ae2828d5494492afcff61da252fc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/940a49a141ae946e9ba1a4ec494a7fc6269c1dc29128ac97a5fdac182688c057.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/940a49a141ae946e9ba1a4ec494a7fc6269c1dc29128ac97a5fdac182688c057.pdf",
+      "file_id": "9f03ae2828d5494492afcff61da252fc",
+      "file_name": "Notice+of+Intent+to+Award+Sole+Source_CAO+11+Mar+26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191431,
+      "sha256": "940a49a141ae946e9ba1a4ec494a7fc6269c1dc29128ac97a5fdac182688c057"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcaaadd8ee6d4a1f9dd4bb4778a432c8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc7da2c328ea37c97abd5abe8718c8eb51d2bb7c9daa886e14181df88b97b3de.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc7da2c328ea37c97abd5abe8718c8eb51d2bb7c9daa886e14181df88b97b3de.docx",
+      "file_id": "dcaaadd8ee6d4a1f9dd4bb4778a432c8",
+      "file_name": "DRAFT+SOO.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 101887,
+      "sha256": "dc7da2c328ea37c97abd5abe8718c8eb51d2bb7c9daa886e14181df88b97b3de"
+    }
+  ],
+  "_mirror_hash": "bca4208d198c85252de2f7102a0822e43b27d88d10cca4143b0b545633835409",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.147754+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-70b14d0031ce4a3794beafa6e780655c",
+  "title": "Dust & Moisture Seal Boot",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70b14d0031ce4a3794beafa6e780655c",
+  "opportunity_url": "https://sam.gov/opp/70b14d0031ce4a3794beafa6e780655c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/70b14d0031ce4a3794beafa6e780655c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "70b14d0031ce4a3794beafa6e780655c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL25342005",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70b14d0031ce4a3794beafa6e780655c",
+  "detail_text": "***Sources Sought*** This is not a request for either a quote or proposal. This announcement is considered market research in accordance with FAR Part 10. ****************** NO SOLICITATION IS BEING ISSUED AT THIS TIME **************** DLA Weapons Support (Columbus) plans to issue a solicitation for one (1) National Stock Number (NSN), that is a code and part numbered item. The solicitation will be a five-year, Firm-Fixed-Price, Indefinite Quantity Contract (IDC). The five-year period is inclusive of a three-year base period and two separately priced one-year option periods. First Destination Transportation (FDT) will apply to this item. The maximum contract value will be $6,342,368.25. The solicitation will be available on DIBBS on or about March 30, 2026. The purpose of this synopsis is to identify qualified vendors capable of manufacturing items in accordance with the requirements listed below. Please review the below NSNs and provide us with any additional sources that are able to manufacture these items. Please provide the company name, city / state, country if applicable, and POCs with telephone /email information. All information can be submitted to Joseph Coleman at Joseph.Coleman@dla.mil, Phone 614 693-0141. NSN NAME 5340-00-055-2914 Dust & Moisture Seal Boot AMC /AMSC = 1/P See attachment for additional item description, packaging, and marking information on items. Responses to this Request for Information (RFI) are not considered offers and cannot be accepted by the Government to form a binding contract. This RFI is for market research purposes only. Any information submitted is at the company's own expense. The Government will not reimburse respondents for any costs associated with submission of capability statements in connection with the market survey. Any information provided is voluntary.",
+  "detail_text_length": 1835,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05159482df404ce08ee982c7bda305d7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dab5f9d1d58e48108ea7050cef34eb73/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05159482df404ce08ee982c7bda305d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8af07c76665c6702bb7b0278b11caa28e691ac654312ca67d6fd9a16e9e08d29.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8af07c76665c6702bb7b0278b11caa28e691ac654312ca67d6fd9a16e9e08d29.docx",
+      "file_id": "05159482df404ce08ee982c7bda305d7",
+      "file_name": "Market+Research+LTC+Questionnaire+CL25342005.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58347,
+      "sha256": "8af07c76665c6702bb7b0278b11caa28e691ac654312ca67d6fd9a16e9e08d29"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dab5f9d1d58e48108ea7050cef34eb73/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3aaddd6baef772eb6e70bdf022612a0792b759d54c4919196f244b841334ebcb.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3aaddd6baef772eb6e70bdf022612a0792b759d54c4919196f244b841334ebcb.xlsx",
+      "file_id": "dab5f9d1d58e48108ea7050cef34eb73",
+      "file_name": "MR+Questionnaire+Spreadsheet+CL25342005.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 198644,
+      "sha256": "3aaddd6baef772eb6e70bdf022612a0792b759d54c4919196f244b841334ebcb"
+    }
+  ],
+  "_mirror_hash": "470574a4784c4e6aa34736a114dfb10a34a817744f64619cb817018d9532cf49",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.088260+00:00"
+}

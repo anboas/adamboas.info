@@ -1,0 +1,46 @@
+{
+  "id": "sam-88174fd9d7ba459a8e34221bdc59ae3a",
+  "title": "Large Scale Mower with Attachments",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88174fd9d7ba459a8e34221bdc59ae3a",
+  "opportunity_url": "https://sam.gov/opp/88174fd9d7ba459a8e34221bdc59ae3a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/88174fd9d7ba459a8e34221bdc59ae3a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "88174fd9d7ba459a8e34221bdc59ae3a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W912PB26QA031",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88174fd9d7ba459a8e34221bdc59ae3a",
+  "detail_text": "Supply of Large Scale Lawn Mower with attachments.",
+  "detail_text_length": 50,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/104dc80dba1e40f6b611c958e5dabe89/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/104dc80dba1e40f6b611c958e5dabe89/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bbfe416a8a7eab4952d87b1497078e6034018936a49b9db8ff87b367f0bcf0bc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bbfe416a8a7eab4952d87b1497078e6034018936a49b9db8ff87b367f0bcf0bc.pdf",
+      "file_id": "104dc80dba1e40f6b611c958e5dabe89",
+      "file_name": "Item+Description+large+scale+mower+rought+terrain.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 141011,
+      "sha256": "bbfe416a8a7eab4952d87b1497078e6034018936a49b9db8ff87b367f0bcf0bc"
+    }
+  ],
+  "_mirror_hash": "9b3d9e1cb8ce718379248be2b638bef25b7774eeecac208f9aa2eb608f1ff7b3",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.154717+00:00"
+}

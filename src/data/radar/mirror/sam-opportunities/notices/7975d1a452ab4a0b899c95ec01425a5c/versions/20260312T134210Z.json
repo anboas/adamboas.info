@@ -1,0 +1,68 @@
+{
+  "id": "sam-7975d1a452ab4a0b899c95ec01425a5c",
+  "title": "Grounds Maintenance Services - Newark, DE (DE007)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7975d1a452ab4a0b899c95ec01425a5c",
+  "opportunity_url": "https://sam.gov/opp/7975d1a452ab4a0b899c95ec01425a5c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7975d1a452ab4a0b899c95ec01425a5c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7975d1a452ab4a0b899c95ec01425a5c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W15QKN-26-Q-A078",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-NJ.W6QK ACC-PICA",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7975d1a452ab4a0b899c95ec01425a5c",
+  "detail_text": "See attached Source Sought Notice as Request for Information, Draft Performance Work Statement and Site Map.",
+  "detail_text_length": 108,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a36fe4b9b304006be2df49be988da67/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97ba722a50e7445393b5bf779f577146/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a815c5ebf4d745ed9fca03491bb62d83/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a36fe4b9b304006be2df49be988da67/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/43804df419a02a264d7fd3acdece40f2df1987fdc457f84788d4d4831af475ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/43804df419a02a264d7fd3acdece40f2df1987fdc457f84788d4d4831af475ca.pdf",
+      "file_id": "2a36fe4b9b304006be2df49be988da67",
+      "file_name": "26-Q-A078+-+SOURCE+SOUGHT+NOTICE.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 82792,
+      "sha256": "43804df419a02a264d7fd3acdece40f2df1987fdc457f84788d4d4831af475ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97ba722a50e7445393b5bf779f577146/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7e07b2ec3b74e776ea984a3adc3bd85bad73356725e402c998bac94e7c69d8c4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7e07b2ec3b74e776ea984a3adc3bd85bad73356725e402c998bac94e7c69d8c4.pdf",
+      "file_id": "97ba722a50e7445393b5bf779f577146",
+      "file_name": "DE007_GROUNDSMAINTENANCEMAP_20260130.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2154512,
+      "sha256": "7e07b2ec3b74e776ea984a3adc3bd85bad73356725e402c998bac94e7c69d8c4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a815c5ebf4d745ed9fca03491bb62d83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8838d368bcf08e20ab4799a7b5e4d177c582dcb0b8acf0f3a963bd6153a44ed1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8838d368bcf08e20ab4799a7b5e4d177c582dcb0b8acf0f3a963bd6153a44ed1.pdf",
+      "file_id": "a815c5ebf4d745ed9fca03491bb62d83",
+      "file_name": "DRAFT+FY26+-+PWS+-+Grounds+Maintenance+-+Version+1+-+DE007+-+Newark.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191108,
+      "sha256": "8838d368bcf08e20ab4799a7b5e4d177c582dcb0b8acf0f3a963bd6153a44ed1"
+    }
+  ],
+  "_mirror_hash": "3a57f255a6a84c181aafc73821923ea80aa11b52116bd1d5badcd6b3123440f9",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.082792+00:00"
+}

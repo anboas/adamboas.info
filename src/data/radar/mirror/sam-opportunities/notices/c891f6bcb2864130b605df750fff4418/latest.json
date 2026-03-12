@@ -1,0 +1,57 @@
+{
+  "id": "sam-c891f6bcb2864130b605df750fff4418",
+  "title": "Notice of Intent - 80-T RT Crane",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c891f6bcb2864130b605df750fff4418",
+  "opportunity_url": "https://sam.gov/opp/c891f6bcb2864130b605df750fff4418/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c891f6bcb2864130b605df750fff4418/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c891f6bcb2864130b605df750fff4418",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA910126QB019",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c891f6bcb2864130b605df750fff4418",
+  "detail_text": "This is a notice of intent to award a sole source, firm fixed price purchase order to MGX Equipment Services, Inc. for the acquisition of one (1) used 2019 Grove GRT880 80-Ton Rough Terrain Crane (Serial #: 236124). The Deparment of the Air Force has a requirement for this specific crane to support the mission of the 704th Test Group, Detachment 1, at the National Radar Cross Section Test Facility (NRTF). The crane is required to support operational tasks including loading and unloading trucks, mounting and dismounting large test targets, and other mission support activities. The statutory authority permitting other than full and open competition is 10 U.S.C. 3204(a)(1), as implmented by FAR 6.302-1, Only One Responsible Source and No Other Supplies or Services Will Satisfy Agency Requirements. This acquistiion is being conducted using commercial product procedures under FAR Part 12 and FAR 13.501. The justification for the proposed sole source award is as follows: MGX Equipment Services, Inc. is the only known source capable of providing the specific used crane, Serial Number 236124, required by the Government. This crane is currently located on-site at the point of need and has been operated by the requiring activity since 2019. The Government possesses knowledge of the asset's operational and maintenance history, which reduces the technical and performance risks associated with acquiring a different used crane. Acquisition of any other new or used crane would require return of the currently leased asset and would likely result in a significant capabiltiy gap while the Government identifies, procures, transports, inspects, and places another crane into service. Market Research and a rent-versus-buy analysis have determined that purchasing this specific crane from the identified source represents the most advantageous solution for the Government. This notice of intent is not a request for competitive proposals, and no solicitation document is available. However, all responsible sources may submit a capability statement, proposal, or quotation, which shall be considered by the agency. A determination by the Government not to compete this proposed contract based upon responses to this notice is solely within the discretion of the Government. Information received will normally be considered solely for the purpose of determining whether to conduct a competitive procurement. Interested parties may identify their interest and capability to respond to the requirement no later than 2:00 PM Central Time on March 16th , to the point of contact identified in this notice.",
+  "detail_text_length": 2607,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29c1e135304e49e2a77e5e7f3f0024d4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c63dcab778b4867aa9f5a2f8cefd947/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29c1e135304e49e2a77e5e7f3f0024d4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a0d90835148f05718c8b44581877d6d88b9491401a3e2aeabc42de2195826306.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a0d90835148f05718c8b44581877d6d88b9491401a3e2aeabc42de2195826306.pdf",
+      "file_id": "29c1e135304e49e2a77e5e7f3f0024d4",
+      "file_name": "Attachment+1+-+SOW+80-Ton+Rough+Terrain+Crane.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144932,
+      "sha256": "a0d90835148f05718c8b44581877d6d88b9491401a3e2aeabc42de2195826306"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c63dcab778b4867aa9f5a2f8cefd947/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/95cc76d11ba59a44cae23552646916a0bdbe80fbddd8fa9535b250cd33190523.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/95cc76d11ba59a44cae23552646916a0bdbe80fbddd8fa9535b250cd33190523.pdf",
+      "file_id": "4c63dcab778b4867aa9f5a2f8cefd947",
+      "file_name": "JA+80-Ton+Rough+Terrain+Crane_FINAL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3193535,
+      "sha256": "95cc76d11ba59a44cae23552646916a0bdbe80fbddd8fa9535b250cd33190523"
+    }
+  ],
+  "_mirror_hash": "7ce3635630b86fc4d323d32c70f334383dff653e6d7bdbfe594c7efd2c73c814",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.067248+00:00"
+}

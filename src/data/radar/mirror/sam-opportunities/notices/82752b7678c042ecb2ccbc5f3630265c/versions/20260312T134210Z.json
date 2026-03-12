@@ -1,0 +1,57 @@
+{
+  "id": "sam-82752b7678c042ecb2ccbc5f3630265c",
+  "title": "BATTERY, NONRECHARGE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=82752b7678c042ecb2ccbc5f3630265c",
+  "opportunity_url": "https://sam.gov/opp/82752b7678c042ecb2ccbc5f3630265c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/82752b7678c042ecb2ccbc5f3630265c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "82752b7678c042ecb2ccbc5f3630265c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL25339004",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=82752b7678c042ecb2ccbc5f3630265c",
+  "detail_text": "***Sources Sought*** This is not a request for either a quote or proposal. This announcement is considered market research in accordance with FAR Part 10. ****************** NO SOLICITATION IS BEING ISSUED AT THIS TIME **************** DLA Weapons Support (Columbus) plans to issue a solicitation for one (1) National Stock Number (NSN), that is a code and part numbered item. The solicitation will be a five-year, Firm-Fixed-Price, Indefinite Quantity Contract (IDC). The five-year period is inclusive of a three-year base period and two separately priced one-year option periods. First Destination Transportation (FDT) does not apply to this item. The maximum contract value will be $2,244,692.16. The solicitation will be available on DIBBS on or about March 30, 2026. The purpose of this synopsis is to identify qualified vendors capable of manufacturing items in accordance with the requirements listed below. Please review the below NSNs and provide us with any additional sources that are able to manufacture these items. Please provide the company name, city / state, country if applicable, and POCs with telephone /email information. All information can be submitted to Joseph Coleman at Joseph.Coleman@dla.mil, Phone 614 693-0141. NSN NAME 6135-01-545-6582 BATTERY, NONRECHARGE AMC /AMSC = 1/C See attachment for additional item description, packaging, and marking information on items. --------------------------------------------------------------- Responses to this Request for Information (RFI) are not considered offers and cannot be accepted by the Government to form a binding contract. This RFI is for market research purposes only. Any information submitted is at the company's own expense. The Government will not reimburse respondents for any costs associated with submission of capability statements in connection with the market survey. Any information provided is voluntary.",
+  "detail_text_length": 1898,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05538dbcc5f74715b17faa4eb411f568/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd78e624d77440cd8eab80065bd520f9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05538dbcc5f74715b17faa4eb411f568/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5a2183e795a9c84c1f8712bbdbbdf0c266ebfa9efe9fdd013378dc6cedc3d0a3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5a2183e795a9c84c1f8712bbdbbdf0c266ebfa9efe9fdd013378dc6cedc3d0a3.docx",
+      "file_id": "05538dbcc5f74715b17faa4eb411f568",
+      "file_name": "Market+Research+LTC+Questionnaire+CL25339004.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58307,
+      "sha256": "5a2183e795a9c84c1f8712bbdbbdf0c266ebfa9efe9fdd013378dc6cedc3d0a3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd78e624d77440cd8eab80065bd520f9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f61c823533b3d598ab1b096ec31703d0a7bd900476b98cc63a2618a5c0811b11.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f61c823533b3d598ab1b096ec31703d0a7bd900476b98cc63a2618a5c0811b11.xlsx",
+      "file_id": "fd78e624d77440cd8eab80065bd520f9",
+      "file_name": "MR+LTC+Questionnaire+Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 198575,
+      "sha256": "f61c823533b3d598ab1b096ec31703d0a7bd900476b98cc63a2618a5c0811b11"
+    }
+  ],
+  "_mirror_hash": "24a9b683f541905e5cdc57cd0916e6b023bee0c5197ca737f161ebf767fcbb43",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.087356+00:00"
+}

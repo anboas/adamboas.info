@@ -1,0 +1,47 @@
+{
+  "id": "sam-4658f342c33942eabb8d73ffc88c25df",
+  "title": "MCW Halal & MCW Kosher - Sources Sought",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4658f342c33942eabb8d73ffc88c25df",
+  "opportunity_url": "https://sam.gov/opp/4658f342c33942eabb8d73ffc88c25df/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4658f342c33942eabb8d73ffc88c25df/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4658f342c33942eabb8d73ffc88c25df",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE3S1-MCWKosherMCWHalal",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT SUBSISTENCE.DLA TROOP SUPPORT",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4658f342c33942eabb8d73ffc88c25df",
+  "detail_text": "See attachment.",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e69732e3a2f45288deddfcb71b6a4dc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e69732e3a2f45288deddfcb71b6a4dc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/603a9f33134642142eabd57a1fb25fdd52476b067ecca8ae6e764737c41cf702.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/603a9f33134642142eabd57a1fb25fdd52476b067ecca8ae6e764737c41cf702.docx",
+      "file_id": "6e69732e3a2f45288deddfcb71b6a4dc",
+      "file_name": "Sources+Sought+MCW+Halal+and+Kosher.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19095,
+      "sha256": "603a9f33134642142eabd57a1fb25fdd52476b067ecca8ae6e764737c41cf702"
+    }
+  ],
+  "_mirror_hash": "b1f542d6023e4a71c2a8c8afb537bbfb941e3a0f9be5ed0794725640a4ebef18",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:06.962966+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-c9a0073dee0349f9a6ae8716abec0814",
+  "title": "Buckley SFB - CE Generator Rental",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c9a0073dee0349f9a6ae8716abec0814",
+  "opportunity_url": "https://sam.gov/opp/c9a0073dee0349f9a6ae8716abec0814/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c9a0073dee0349f9a6ae8716abec0814/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c9a0073dee0349f9a6ae8716abec0814",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA2543GenRental",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2543  460 CONS",
+  "posted_date": "2026-03-11",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c9a0073dee0349f9a6ae8716abec0814",
+  "detail_text": "The purpose of this Sources Sought is for market research purposes only to obtain a list of capable vendors. This requirement will have an expedited timeline for delivery and installation of the required generator and cables. In addition to a capability statement, please provide an estimated lead time to install fully operational equipment after receipt of contract award. Please see attached Statement of Need for all requirements. Please include TSgt Kennedy(matthew.kennedy.24@spaceforce.mil) and SSgt Wolff(cody.wolff@spaceforce.mil) on all communications.",
+  "detail_text_length": 562,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8d2aca9cc894891b92a6906771faaf9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8d2aca9cc894891b92a6906771faaf9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/763c14fa95d1746186dd85192b27734236078f197587c412667d059c3c1bf8c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/763c14fa95d1746186dd85192b27734236078f197587c412667d059c3c1bf8c1.pdf",
+      "file_id": "f8d2aca9cc894891b92a6906771faaf9",
+      "file_name": "Statement+of+Need+-+1MW+Generator+Rental+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 93316,
+      "sha256": "763c14fa95d1746186dd85192b27734236078f197587c412667d059c3c1bf8c1"
+    }
+  ],
+  "_mirror_hash": "093e70dec80e3046ea649cce023f50960f73aa0ddd726e0d05d85efca6fccabe",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:07.065024+00:00"
+}

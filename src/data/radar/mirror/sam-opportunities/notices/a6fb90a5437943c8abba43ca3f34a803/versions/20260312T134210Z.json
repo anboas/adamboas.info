@@ -1,0 +1,89 @@
+{
+  "id": "sam-a6fb90a5437943c8abba43ca3f34a803",
+  "title": "LEC SERVICES FOR PANAMA FLORIDA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6fb90a5437943c8abba43ca3f34a803",
+  "opportunity_url": "https://sam.gov/opp/a6fb90a5437943c8abba43ca3f34a803/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a6fb90a5437943c8abba43ca3f34a803/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a6fb90a5437943c8abba43ca3f34a803",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N7027226Q0017",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP OTHER HCA.US FLEET FORCES CMD.NCTAMS LANT",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6fb90a5437943c8abba43ca3f34a803",
+  "detail_text": "CONTINUATION OF LEC SERVICES IN PANAMA FLORIDA SEE ATTACHED RFQ ALONG WITH ANNEX A PWS, ANNEX B EVAL FACTORS, ANNEX C PRICING STRUCTURE, AND JUSTIFICATION DOCUMENT",
+  "detail_text_length": 163,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b90df9b907e49b88e44ff35531d1795/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72991d4b68fb42f892f625cdc3aa8504/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83c6d20d3f5044c2ad5cf862e061f17b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87e9e5f5b719451bb072ac5e6d9044d4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9d27640a1f24d6f9127f6f395b2d5f5/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b90df9b907e49b88e44ff35531d1795/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5bdce55250b3803a90a321b76e5ee05d5108dcd462bbe57b04f1deea4fd09881.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5bdce55250b3803a90a321b76e5ee05d5108dcd462bbe57b04f1deea4fd09881.xlsx",
+      "file_id": "1b90df9b907e49b88e44ff35531d1795",
+      "file_name": "26Q0017+ANNEX+C+PRICING.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48834,
+      "sha256": "5bdce55250b3803a90a321b76e5ee05d5108dcd462bbe57b04f1deea4fd09881"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72991d4b68fb42f892f625cdc3aa8504/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/568d5d08f6600bed8f5a4ae8282c5f50b3a22c7767f1d13ece928592dc54cf14.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/568d5d08f6600bed8f5a4ae8282c5f50b3a22c7767f1d13ece928592dc54cf14.docx",
+      "file_id": "72991d4b68fb42f892f625cdc3aa8504",
+      "file_name": "26Q0017+RFQ.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76366,
+      "sha256": "568d5d08f6600bed8f5a4ae8282c5f50b3a22c7767f1d13ece928592dc54cf14"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83c6d20d3f5044c2ad5cf862e061f17b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7e082f0363153737264cd6f9b80c08fffce69662384f2f4d0483b9b0df0046f1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7e082f0363153737264cd6f9b80c08fffce69662384f2f4d0483b9b0df0046f1.docx",
+      "file_id": "83c6d20d3f5044c2ad5cf862e061f17b",
+      "file_name": "26Q0017+ANNEX+A+PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 53299,
+      "sha256": "7e082f0363153737264cd6f9b80c08fffce69662384f2f4d0483b9b0df0046f1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87e9e5f5b719451bb072ac5e6d9044d4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/edb7febdcb58003e6972200e9f3a8274f5937d19a3762f12d77e3e3c198838a8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/edb7febdcb58003e6972200e9f3a8274f5937d19a3762f12d77e3e3c198838a8.pdf",
+      "file_id": "87e9e5f5b719451bb072ac5e6d9044d4",
+      "file_name": "26Q0017+BNLS_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 173115,
+      "sha256": "edb7febdcb58003e6972200e9f3a8274f5937d19a3762f12d77e3e3c198838a8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9d27640a1f24d6f9127f6f395b2d5f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1bdc3f6ef259f49a6d1e283c80f014938a3c80dd0c4d5796a8c28afb825db4f8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1bdc3f6ef259f49a6d1e283c80f014938a3c80dd0c4d5796a8c28afb825db4f8.docx",
+      "file_id": "d9d27640a1f24d6f9127f6f395b2d5f5",
+      "file_name": "26Q0017+ANNEX+B+EVAL+FACTORS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14403,
+      "sha256": "1bdc3f6ef259f49a6d1e283c80f014938a3c80dd0c4d5796a8c28afb825db4f8"
+    }
+  ],
+  "_mirror_hash": "68af08f9fb88ce9d6e2a95587a3cbcfbadd6fed40813f4a3c4fee3e334a2ccf6",
+  "_mirror_run_id": "20260312T134210Z",
+  "_mirror_recorded_at": "2026-03-12T13:45:06.936315+00:00"
+}
