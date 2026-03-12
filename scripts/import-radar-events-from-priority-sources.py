@@ -2,6 +2,8 @@
 import json
 import re
 import html
+import os
+import subprocess
 from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
@@ -19,6 +21,8 @@ OUT_JSON = SITE_ROOT / 'src/data/radar/events-candidates-priority-sources-2026-0
 OUT_MD = SITE_ROOT / 'src/data/radar/events-candidates-priority-sources-2026-02-13.md'
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (compatible; RadarSourceImport/1.0)'}
+FAST_BROWSER_FETCH = Path('/home/anboas/clawd/scripts/fast_browser_fetch.sh')
+BROWSER_FETCH_TIMEOUT = int(os.environ.get('RADAR_BROWSER_FETCH_TIMEOUT', '30'))
 
 MONTHS = {
     'january': 1, 'jan': 1,
@@ -340,10 +344,35 @@ def source_url_for_event(base: str, href: str):
     return urljoin(base, href)
 
 
-def get(url: str) -> BeautifulSoup:
+def fetch_html(url: str) -> str:
+    if FAST_BROWSER_FETCH.exists():
+        try:
+            p = subprocess.run(
+                [
+                    str(FAST_BROWSER_FETCH),
+                    '--engine',
+                    'auto',
+                    '--timeout',
+                    str(BROWSER_FETCH_TIMEOUT),
+                    '--quiet-meta',
+                    url,
+                ],
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+            if p.stdout.strip():
+                return p.stdout
+        except Exception:
+            pass
+
     r = requests.get(url, timeout=30, headers=HEADERS)
     r.raise_for_status()
-    return BeautifulSoup(r.text, 'html.parser')
+    return r.text
+
+
+def get(url: str) -> BeautifulSoup:
+    return BeautifulSoup(fetch_html(url), 'html.parser')
 
 
 def scrape_ausa() -> list[RawEvent]:
@@ -537,9 +566,7 @@ def scrape_asd_events() -> list[RawEvent]:
 
 def scrape_military_expos() -> list[RawEvent]:
     url = 'https://www.militaryexpos.com/'
-    r = requests.get(url, timeout=30, headers=HEADERS)
-    r.raise_for_status()
-    text = r.text
+    text = fetch_html(url)
 
     m = re.search(r"data-events='(\[.*?\])'\s+data-events-image", text, re.S)
     if not m:
@@ -588,9 +615,7 @@ def scrape_military_expos() -> list[RawEvent]:
 
 def scrape_marine_military_expos() -> list[RawEvent]:
     url = 'https://marinemilitaryexpos.com/'
-    r = requests.get(url, timeout=30, headers=HEADERS)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.text, 'html.parser')
+    soup = BeautifulSoup(fetch_html(url), 'html.parser')
 
     title_text = ' '.join((soup.title.get_text(' ', strip=True) if soup.title else '').split())
     if not title_text:

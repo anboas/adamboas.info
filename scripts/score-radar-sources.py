@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import json
+import os
 import re
 import ssl
+import subprocess
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -12,6 +14,8 @@ from urllib.request import Request, urlopen
 ROOT = Path('/home/anboas/clawd/adamboas-site')
 OUT_JSON = ROOT / 'src/data/radar/source-priority-2026-02-13.json'
 OUT_MD = ROOT / 'src/data/radar/source-priority-2026-02-13.md'
+FAST_BROWSER_FETCH = Path('/home/anboas/clawd/scripts/fast_browser_fetch.sh')
+BROWSER_FETCH_TIMEOUT = int(os.environ.get('RADAR_BROWSER_FETCH_TIMEOUT', '20'))
 
 SOURCES = [
     ('CTO Innovation Industry Outreach Calendar', 'https://www.ctoinnovation.mil/events/'),
@@ -63,6 +67,26 @@ def authority_score(host: str) -> float:
     return 2.0
 
 
+def fetch_via_browser(url: str):
+    if not FAST_BROWSER_FETCH.exists():
+        raise RuntimeError('fast_browser_fetch_not_found')
+    p = subprocess.run(
+        [
+            str(FAST_BROWSER_FETCH),
+            '--engine',
+            'auto',
+            '--timeout',
+            str(BROWSER_FETCH_TIMEOUT),
+            '--quiet-meta',
+            url,
+        ],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return 200, 'text/html', p.stdout
+
+
 def fetch(url: str):
     req = Request(
         url,
@@ -72,10 +96,13 @@ def fetch(url: str):
         },
     )
     ctx = ssl.create_default_context()
-    with urlopen(req, timeout=15, context=ctx) as r:
-        content_type = r.headers.get('Content-Type', '')
-        data = r.read(220_000)
-        return r.status, content_type, data.decode('utf-8', errors='ignore')
+    try:
+        with urlopen(req, timeout=15, context=ctx) as r:
+            content_type = r.headers.get('Content-Type', '')
+            data = r.read(220_000)
+            return r.status, content_type, data.decode('utf-8', errors='ignore')
+    except Exception:
+        return fetch_via_browser(url)
 
 
 def html_to_text(html: str) -> str:

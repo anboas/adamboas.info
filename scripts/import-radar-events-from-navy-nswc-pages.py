@@ -7,7 +7,9 @@ Produces candidate artifacts for manual review + merge into Events tracker.
 from __future__ import annotations
 
 import json
+import os
 import re
+import subprocess
 from collections import deque
 from dataclasses import dataclass, asdict
 from datetime import datetime
@@ -23,6 +25,8 @@ OUT_JSON = ROOT / "src/data/radar/events-candidates-navy-nswc-pages.json"
 OUT_MD = ROOT / "src/data/radar/events-candidates-navy-nswc-pages.md"
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; NavyNSWCCrawler/1.0)"}
+FAST_BROWSER_FETCH = Path("/home/anboas/clawd/scripts/fast_browser_fetch.sh")
+BROWSER_FETCH_TIMEOUT = int(os.environ.get("RADAR_BROWSER_FETCH_TIMEOUT", "20"))
 
 SEED_URLS = [
     # Official NAVSEA/NSWC pages (best authority, sometimes blocked by edge policy)
@@ -277,6 +281,32 @@ def extract_links(url: str, soup: BeautifulSoup) -> Iterable[str]:
             yield canonical_url(target)
 
 
+def fetch_page_html(url: str) -> tuple[int, str, str]:
+    if FAST_BROWSER_FETCH.exists():
+        try:
+            p = subprocess.run(
+                [
+                    str(FAST_BROWSER_FETCH),
+                    "--engine",
+                    "auto",
+                    "--timeout",
+                    str(BROWSER_FETCH_TIMEOUT),
+                    "--quiet-meta",
+                    url,
+                ],
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+            if p.stdout.strip():
+                return 200, "text/html", p.stdout
+        except Exception:
+            pass
+
+    resp = requests.get(url, headers=HEADERS, timeout=(5, 10), allow_redirects=True)
+    return resp.status_code, resp.headers.get("content-type", ""), resp.text
+
+
 def crawl(max_pages: int = 60, max_depth: int = 1) -> list[Candidate]:
     seed_urls = [canonical_url(u) for u in SEED_URLS]
     seen: set[str] = set()
@@ -291,15 +321,15 @@ def crawl(max_pages: int = 60, max_depth: int = 1) -> list[Candidate]:
         seen.add(url)
 
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=(5, 10), allow_redirects=True)
-            if resp.status_code != 200:
+            status, content_type, page_text = fetch_page_html(url)
+            if status != 200:
                 continue
-            if "text/html" not in resp.headers.get("content-type", ""):
+            if "text/html" not in (content_type or "").lower():
                 continue
         except Exception:
             continue
 
-        soup = BeautifulSoup(resp.text, "html.parser")
+        soup = BeautifulSoup(page_text, "html.parser")
         title = clean((soup.find("h1") or soup.find("title") or soup.find("h2") or soup).get_text(" ", strip=True))
         body = clean(soup.get_text(" ", strip=True))
 

@@ -9,7 +9,9 @@ Outputs:
 from __future__ import annotations
 
 import json
+import os
 import re
+import subprocess
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,6 +25,8 @@ OUT_MD = ROOT / "src/data/radar/feed-crawl-report-latest.md"
 
 UA = "Mozilla/5.0 (compatible; RadarFeedCrawler/1.0; +https://www.adamboas.com/events/sources/)"
 MAX_READ = 350_000
+FAST_BROWSER_FETCH = Path("/home/anboas/clawd/scripts/fast_browser_fetch.sh")
+BROWSER_FETCH_TIMEOUT = int(os.environ.get("RADAR_BROWSER_FETCH_TIMEOUT", "30"))
 
 BLOCK_PATTERNS = [
     re.compile(r"incapsula", re.I),
@@ -50,15 +54,39 @@ class CrawlResult:
     fetchedAt: str
 
 
+def fetch_via_browser(url: str) -> tuple[int, str, str, str]:
+    if not FAST_BROWSER_FETCH.exists():
+        raise RuntimeError("fast_browser_fetch_not_found")
+
+    p = subprocess.run(
+        [
+            str(FAST_BROWSER_FETCH),
+            "--engine",
+            "auto",
+            "--timeout",
+            str(BROWSER_FETCH_TIMEOUT),
+            "--quiet-meta",
+            url,
+        ],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    return 200, url, "text/html", p.stdout
+
+
 def fetch(url: str) -> tuple[int, str, str, str]:
     req = Request(url, headers={"User-Agent": UA})
-    with urlopen(req, timeout=30) as resp:
-        status = int(resp.status)
-        final_url = str(resp.geturl())
-        content_type = str(resp.headers.get("content-type", ""))
-        body_bytes = resp.read(MAX_READ)
-        body = body_bytes.decode("utf-8", errors="ignore")
-        return status, final_url, content_type, body
+    try:
+        with urlopen(req, timeout=30) as resp:
+            status = int(resp.status)
+            final_url = str(resp.geturl())
+            content_type = str(resp.headers.get("content-type", ""))
+            body_bytes = resp.read(MAX_READ)
+            body = body_bytes.decode("utf-8", errors="ignore")
+            return status, final_url, content_type, body
+    except Exception:
+        return fetch_via_browser(url)
 
 
 def analyze_text(text: str) -> tuple[bool, int, int]:
@@ -126,6 +154,17 @@ def run() -> None:
         try:
             status, final_url, ctype, text = fetch(url)
             blocked, year_hits, event_hits = analyze_text(text)
+
+            if blocked and FAST_BROWSER_FETCH.exists():
+                try:
+                    b_status, b_final, b_ctype, b_text = fetch_via_browser(url)
+                    b_blocked, b_year_hits, b_event_hits = analyze_text(b_text)
+                    if not b_blocked:
+                        status, final_url, ctype, text = b_status, b_final, b_ctype, b_text
+                        blocked, year_hits, event_hits = b_blocked, b_year_hits, b_event_hits
+                except Exception:
+                    pass
+
             results.append(
                 CrawlResult(
                     id=feed.get("id", "unknown"),
