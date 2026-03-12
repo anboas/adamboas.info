@@ -12041,8 +12041,7 @@ export const radarEventsSeed: RadarEvent[] = [
 			],
 			links: {
 				official: 'https://www.ndia.org/events/2026/4/21/6md3-missile-defense-conference',
-				registration: 'https://www.ndia.org/events/2026/4/21/6md3-missile-defense-conference/registration',
-				agenda: 'https://www.ndia.org/events/2026/4/21/6md3-missile-defense-conference/agenda'
+				registration: 'https://www.ndia.org/events/2026/4/21/6md3-missile-defense-conference/registration'
 			},
 			logistics: {
 				format: 'In-person',

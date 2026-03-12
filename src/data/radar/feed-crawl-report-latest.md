@@ -1,16 +1,16 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-03-12T13:41:45.546704+00:00
+Generated: 2026-03-12T21:31:45.270590+00:00
 
 - Total: 19
-- OK: 11
-- Blocked: 6
-- Failed: 2
+- OK: 12
+- Blocked: 7
+- Failed: 0
 
 | Feed | Category | Status | Blocked | Year hits | Event hits | URL | Notes |
 |---|---|---:|:---:|---:|---:|---|---|
-| SAM.gov Opportunities API | official_api | 404 | no | 0 | 0 | https://api.sam.gov/opportunities/v2/search | HTTP 404 |
-| NAVSEA / NSWC source set | official_pages | 403 | no | 0 | 0 | https://www.navsea.navy.mil/Home/Warfare-Centers/ | HTTP 403 |
+| SAM.gov Opportunities API | official_api | 200 | no | 0 | 0 | https://api.sam.gov/opportunities/v2/search |  |
+| NAVSEA / NSWC source set | official_pages | 200 | yes | 0 | 0 | https://www.navsea.navy.mil/Home/Warfare-Centers/ |  |
 | AUSA Meetings & Events | official_calendar | 200 | no | 44 | 92 | https://www.ausa.org/meet |  |
 | AFCEA Events | official_calendar | 200 | no | 22 | 262 | https://www.afcea.org/events |  |
 | AFA Events | official_calendar | 200 | no | 27 | 35 | https://www.afa.org/events/ |  |
@@ -21,10 +21,10 @@ Generated: 2026-03-12T13:41:45.546704+00:00
 | Military Expos | aggregator | 200 | no | 168 | 92 | https://www.militaryexpos.com/ |  |
 | Marine Military Expos | aggregator | 200 | yes | 18 | 13 | https://marinemilitaryexpos.com/ |  |
 | Potomac Officers Club GovCon Events | aggregator | 200 | yes | 123 | 235 | https://www.potomacofficersclub.com/govcon-events/ |  |
-| GovCIO Events | aggregator | 200 | no | 28 | 71 | https://govciomedia.com/events/ |  |
+| GovCIO Events | aggregator | 200 | no | 22 | 65 | https://govciomedia.com/events/ |  |
 | NDIA Events | constrained_official | 200 | yes | 0 | 0 | https://www.ndia.org/events |  |
 | NDIA SpecialOps26 | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/SpecialOps26 |  |
 | 36th Annual NDIA Special Operations Symposium | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium |  |
-| Federal AI Forum 2026 | one_off_event | 200 | no | 37 | 23 | https://govciomedia.com/federal-ai-forum/ |  |
-| AI Summit 2026 | one_off_event | 200 | no | 61 | 62 | https://govciomedia.com/ai-summit-2026/ |  |
+| Federal AI Forum 2026 | one_off_event | 200 | no | 31 | 17 | https://govciomedia.com/federal-ai-forum/ |  |
+| AI Summit 2026 | one_off_event | 200 | no | 55 | 56 | https://govciomedia.com/ai-summit-2026/ |  |
 | GovEvents Calendar | aggregator_discovery | 200 | no | 0 | 0 | https://www.govevents.com/calendar.php?s=1 |  |
