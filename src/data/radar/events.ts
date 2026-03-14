@@ -15661,4 +15661,65 @@ export const radarEventsSeed: RadarEvent[] = [
 		}
 	},
 
+	{
+		id: 'radar-2026-ausa-annual-meeting-exposition',
+		title: '2026 AUSA Annual Meeting & Exposition',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-10-12',
+		endDate: '2026-10-14',
+		branch: 'Army',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.9072,
+			lng: -77.0369
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['2026', 'ausa', 'annual', 'meeting', 'exposition'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/meet',
+				type: 'official',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/2026-ausa-annual-meeting-exposition'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+
+
+
+
 ];
