@@ -1,35 +1,30 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-12T13:45:31.092490+00:00
+Generated: 2026-03-15T13:44:43.502672+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/12/2026
+Posted range: 01/01/2026 -> 03/15/2026
 
 ## Counts
-- Total candidates: 26
+- Total candidates: 22
 - Navy-related: 0
-- Full detail cached: 26
-- Notices with attachments: 21
-- Total attachment links: 29
-- Pre-solicitation: 4
-- Sources Sought: 14
-- Special Notice: 8
+- Full detail cached: 22
+- Notices with attachments: 17
+- Total attachment links: 23
+- Pre-solicitation: 3
+- Sources Sought: 13
+- Special Notice: 6
 
 ## Engagement signals
-- Pre-solicitation: 4
-- Sources Sought: 14
-- Special Notice: 8
+- Pre-solicitation: 3
+- Sources Sought: 13
+- Special Notice: 6
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-01-16 | DEPT OF DEFENSE | [Capacity as A Service (CaaS)](https://sam.gov/opp/4daa3f92dba84c58a453bcae9caea775/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-11 | 2026-02-26 | DEPT OF DEFENSE | [Catholic Priest Services](https://sam.gov/opp/0046d8d0beaf40a28021ad7257e4de2b/view) |
-| 2 | Special Notice | Special Notice | 2026-02-18 | 2026-02-26 | DEPT OF DEFENSE | [Pega Term Licenses](https://sam.gov/opp/190e58391f8e4feb96ef476c03f74d9b/view) |
-| 2 | Special Notice | Special Notice | 2026-02-25 | 2026-02-26 | DEPT OF DEFENSE | [NOI TO SOLE SOURCE WHITE UNIFORM GLOVES](https://sam.gov/opp/7419042851654d70b07fa10212b0d3e6/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-18 | 2026-02-27 | DEPT OF DEFENSE | [STRETCH WRAPPER MAINTENANCE](https://sam.gov/opp/e81c6e44f497456aaa4277d12f80c409/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-19 | 2026-02-27 | DEPT OF DEFENSE | [TECOM Multi-Mission Parachute Course (MMPC)](https://sam.gov/opp/244f8055aefd4cd58df81a4ed7ef7117/view) |
 | 2 | Special Notice | Special Notice | 2026-02-24 | 2026-03-01 | DEPT OF DEFENSE | [NOI to Sole Source JROTC Event to Sports Network International INC](https://sam.gov/opp/0c247c8f05974ebfa48b8d79dee0fc8a/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-19 | 2026-03-02 | DEPT OF DEFENSE | [SSA for Working Dog Management System to K9 System](https://sam.gov/opp/1673dcca0ad849e78220f45fdadd29a3/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-20 | 2026-03-02 | DEPT OF DEFENSE | [Parachute Loft and Boat Locker Support Services](https://sam.gov/opp/22cd1f6b45c4412d9a4593d3ec37b55e/view) |
@@ -44,6 +39,7 @@ Posted range: 01/01/2026 -> 03/12/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [DMO Personal Effects Storage](https://sam.gov/opp/755cec093c8648158439981c68ee2023/view) |
 | 2 | Special Notice | Special Notice | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [NOI -  Sole Source - Training Vouchers](https://sam.gov/opp/04012f50fa5642cdadfc8dfd1321fbce/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-18 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Human Performance (HPB) Branch (Synopsis)](https://sam.gov/opp/6f9e41a375e744b294d1e313bcd67f82/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-19 | DEPT OF DEFENSE | [Liebert HVAC PM Services](https://sam.gov/opp/e84e80da26664f30b5e271672947fca4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-20 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Range and Training Area Management (RTAM)](https://sam.gov/opp/56806bd9cce54f9bb33b5f44d928cc5d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-20 | DEPT OF DEFENSE | [MCIEAST G-6 TSD GPON/DWDM MAINTENANCE SUPPORT SERVICES](https://sam.gov/opp/4e5719ee5d51416b9a863e44c0a4458e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-20 | DEPT OF DEFENSE | [MEDLOGCO Warehousing Support Operations](https://sam.gov/opp/776b6c25b4b74e63bb4d22db1ebe265a/view) |

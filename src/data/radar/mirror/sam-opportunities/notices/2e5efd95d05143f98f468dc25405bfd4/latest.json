@@ -1,0 +1,67 @@
+{
+  "id": "sam-2e5efd95d05143f98f468dc25405bfd4",
+  "title": "26FT Electric Scissor Lift Lease",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e5efd95d05143f98f468dc25405bfd4",
+  "opportunity_url": "https://sam.gov/opp/2e5efd95d05143f98f468dc25405bfd4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2e5efd95d05143f98f468dc25405bfd4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2e5efd95d05143f98f468dc25405bfd4",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4523A26Q4015",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PUGET SOUND NAVAL SHIPYARD IMF",
+  "posted_date": "2026-03-14",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e5efd95d05143f98f468dc25405bfd4",
+  "detail_text": "NOTE : Read all paperwork carefully for compliance and pay special attention to the NAICS Code being used. The NAICS Code must be listed in your SAM profile. This is a combined synopsis solicitation for a Scissor Lift Lease. 1. Make sure there is a Point of Contact Name, Email, and Phone Number on your submittal. 2. RETURN all paperwork requested (RFQ & any attached forms). REQUIRED : - RFQ Completely filled-out - Corporate Experience Data Sheet - Vendor Information Sheet See the attached RFQ and other documents for details of the requirement and submittal instructions.",
+  "detail_text_length": 576,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/539e09052ab84896af0146b4380505a4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68bea8917f0b41a39cfaf1cf7463c279/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cebad17ef7a3453685a32d3f6478291a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/539e09052ab84896af0146b4380505a4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7497b0d5892cc7c69e1244b3ee780ff79673e525050c694dec259f9abbc664a9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7497b0d5892cc7c69e1244b3ee780ff79673e525050c694dec259f9abbc664a9.pdf",
+      "file_id": "539e09052ab84896af0146b4380505a4",
+      "file_name": "26Q4015_Solicitation_Scissor+Lift.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 278039,
+      "sha256": "7497b0d5892cc7c69e1244b3ee780ff79673e525050c694dec259f9abbc664a9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68bea8917f0b41a39cfaf1cf7463c279/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15545772d9444485c16d7064cafa95c1bde52b23cffb55304cb6668ace4d2219.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15545772d9444485c16d7064cafa95c1bde52b23cffb55304cb6668ace4d2219.docx",
+      "file_id": "68bea8917f0b41a39cfaf1cf7463c279",
+      "file_name": "Vendor+Information+Sheet-FILL+IN+-+RETURN.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14338,
+      "sha256": "15545772d9444485c16d7064cafa95c1bde52b23cffb55304cb6668ace4d2219"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cebad17ef7a3453685a32d3f6478291a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c36ca0b5b42e90f87cf2f1144e96546f4d3bb6e2ac13bda221eac68314f53e2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c36ca0b5b42e90f87cf2f1144e96546f4d3bb6e2ac13bda221eac68314f53e2.docx",
+      "file_id": "cebad17ef7a3453685a32d3f6478291a",
+      "file_name": "26Q4015_Corporate+Experience+Data+Sheet-FILL+IN-RETURN.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17325,
+      "sha256": "7c36ca0b5b42e90f87cf2f1144e96546f4d3bb6e2ac13bda221eac68314f53e2"
+    }
+  ],
+  "_mirror_hash": "5fbb96d72b8efbbab14dd3ff1e1733d3a89ddf55d818fcb2eedd03ea34b7348f",
+  "_mirror_run_id": "20260315T134352Z",
+  "_mirror_recorded_at": "2026-03-15T13:44:19.444496+00:00"
+}
