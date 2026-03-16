@@ -1,0 +1,56 @@
+{
+  "id": "sam-ead2a539186b47a8bba2c99fb5aca92e",
+  "title": "2010 BEARING, STAVE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ead2a539186b47a8bba2c99fb5aca92e",
+  "opportunity_url": "https://sam.gov/opp/ead2a539186b47a8bba2c99fb5aca92e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ead2a539186b47a8bba2c99fb5aca92e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ead2a539186b47a8bba2c99fb5aca92e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS244",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ead2a539186b47a8bba2c99fb5aca92e",
+  "detail_text": "This is a SOLICITATION for commercial product prepared in accordance with FAR part 12, as supplemented with additional information included in this notice. This announcement constitutes only solicitation; quotes are being requested and a separate written solicitation will not be issued. The solicitation number is N0040626QS244 is issued as a Request for Quotation (RFQ) for Bearing, Stave. This acquisition is being conducted on a Sole Source basis . This solicitation incorporates provisions and clauses by reference. The full text of provisions and clauses may be accessed electronically at www.acquisition.gov The applicable NAICS Code is 332991, with a size standard of 1,250 employees. This procurement is issued on an unrestricted basis. This acquisition will be negotiated on a sole source basis with DURAMAX MARINE LLC. per FAR 6.302-1 utilizing FAR Parts 12, Commercial Products and Simplified Acquisition Procedure. Award of firm-fixed price supply type contract is anticipated. Prospective offerors are responsible for downloading their own copy of the solicitation from the Sam.Gov website and for frequently monitoring the site for any amendments. The Government is not responsible for any inability of the offeror to access the posted documents. Kindly refer to the attached solicitation for detailed requirements and specifications, applicable clauses and provisions, as well as shipping and invoicing instructions. Quote submissions in response to this solicitation are due by 12PM Pacific Standard Time on Monday, March 23, 2026 . Please email your completed quote to the acquisition point of contact(s): Ann Fulton at annarose.m.fulton.civ@us.navy.mil. Any questions received after this deadline may not be answered.",
+  "detail_text_length": 1736,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77b9338d34424bd08fedf292b4458e89/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdde806ae92a497fb6898088afd9489e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77b9338d34424bd08fedf292b4458e89/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bfb0ded90ea6736d29e83579c4b9a80721d4671357f4dbcdaea6d3bdb15c80ee.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bfb0ded90ea6736d29e83579c4b9a80721d4671357f4dbcdaea6d3bdb15c80ee.pdf",
+      "file_id": "77b9338d34424bd08fedf292b4458e89",
+      "file_name": "N00406-26-Q-S244+SOLICITATION.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1870151,
+      "sha256": "bfb0ded90ea6736d29e83579c4b9a80721d4671357f4dbcdaea6d3bdb15c80ee"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdde806ae92a497fb6898088afd9489e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e9ce674ed7f2523242c9b34c4855bf0ce854945cf2009a9aae8ba8d19431a47b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e9ce674ed7f2523242c9b34c4855bf0ce854945cf2009a9aae8ba8d19431a47b.pdf",
+      "file_id": "fdde806ae92a497fb6898088afd9489e",
+      "file_name": "1.4+1301331907+SS+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 384175,
+      "sha256": "e9ce674ed7f2523242c9b34c4855bf0ce854945cf2009a9aae8ba8d19431a47b"
+    }
+  ],
+  "_mirror_hash": "46b8e89fdeae106ed6b738759306f3bac00a87762b6b85ff7917c5bd9c2df0a4",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.830778+00:00"
+}

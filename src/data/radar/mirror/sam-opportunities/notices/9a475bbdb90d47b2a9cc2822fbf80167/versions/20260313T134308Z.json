@@ -1,0 +1,46 @@
+{
+  "id": "sam-9a475bbdb90d47b2a9cc2822fbf80167",
+  "title": "7A21--IBM Middleware Recompete VA-26-00039630 (SSI6  O2509-036-036-123912) (VA-26-00039630)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9a475bbdb90d47b2a9cc2822fbf80167",
+  "opportunity_url": "https://sam.gov/opp/9a475bbdb90d47b2a9cc2822fbf80167/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9a475bbdb90d47b2a9cc2822fbf80167/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9a475bbdb90d47b2a9cc2822fbf80167",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C10B26Q0260",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9a475bbdb90d47b2a9cc2822fbf80167",
+  "detail_text": "Please see attached documents.",
+  "detail_text_length": 30,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0228a9838f224d34a3ec76a84ea80036/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0228a9838f224d34a3ec76a84ea80036/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ef1295def51623ab353ce9541b104d423c019327558812397ede519b83385101.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ef1295def51623ab353ce9541b104d423c019327558812397ede519b83385101.docx",
+      "file_id": "0228a9838f224d34a3ec76a84ea80036",
+      "file_name": "36C10B26Q0260.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27627,
+      "sha256": "ef1295def51623ab353ce9541b104d423c019327558812397ede519b83385101"
+    }
+  ],
+  "_mirror_hash": "607bd0266808962b6cb663a9a7d8242f3fabb3102ad8fd441d3d7a9b2af1b525",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.109989+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-0950160467a14c3492536c057b7b2da4",
+  "title": "U.S. Embassy Manama - Vehicle Purchase",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0950160467a14c3492536c057b7b2da4",
+  "opportunity_url": "https://sam.gov/opp/0950160467a14c3492536c057b7b2da4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0950160467a14c3492536c057b7b2da4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0950160467a14c3492536c057b7b2da4",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY MANAMA",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0950160467a14c3492536c057b7b2da4",
+  "detail_text": "NOTICE TYPE Award SOLICITATION NUMBER: MPR0572237 CONTRACT NUMBER: 19BA3026P0068 CONTRACT AWARD AMOUNT: 23,000.00 BHD CONTRACT AWARDED DUNS: XCLZS691Q713 CONTRACT AWARDEE: AlMoayyed Motors W.L.L Block 623, Road 31, Building 862 Al Akr Sharqi Manama, Bahrain PLACE OF PERFORMANCE: Manama, Kingdom of Bahrain",
+  "detail_text_length": 306,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/efcf4b9130e643c3ac2fcea85db6c755/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/efcf4b9130e643c3ac2fcea85db6c755/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b2fbd4c6eeaa2138fd56f9acc7d02b8475ae8566ebe96267ca350ee7368151de.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b2fbd4c6eeaa2138fd56f9acc7d02b8475ae8566ebe96267ca350ee7368151de.docx",
+      "file_id": "efcf4b9130e643c3ac2fcea85db6c755",
+      "file_name": "Award+Document.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15079,
+      "sha256": "b2fbd4c6eeaa2138fd56f9acc7d02b8475ae8566ebe96267ca350ee7368151de"
+    }
+  ],
+  "_mirror_hash": "903ab7c6cf122cac2fbc6e94bb9b41805ea7cf626365b1649dd362b3e14b02f2",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.087450+00:00"
+}

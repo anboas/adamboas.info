@@ -1,0 +1,57 @@
+{
+  "id": "sam-5b29ad3ee4f24e5694ef690b333d1caf",
+  "title": "2023 Light Duty Vocational Trucks",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b29ad3ee4f24e5694ef690b333d1caf",
+  "opportunity_url": "https://sam.gov/opp/5b29ad3ee4f24e5694ef690b333d1caf/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5b29ad3ee4f24e5694ef690b333d1caf/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5b29ad3ee4f24e5694ef690b333d1caf",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "47QMCA22R0014VOC",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE.GSA/FAS AUTOMOTIVE CENTER",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-12-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b29ad3ee4f24e5694ef690b333d1caf",
+  "detail_text": "Tentative Key Milestone Dates Vendor Pre-Bid Intentions: May 1, 2026 - June 2, 2026 Comment Collector: May 1, 2026 - June 2, 2026 Open Season Notice (SAM.gov): May 5, 2026 Open Season Industry: May 19, 2026 Open Season Round 1: May 22, 2026 - July 10, 2026 Open Season Round 2: August 10, 2026 - August 26, 2026 Open season Round 3: September 17, 2026 - September 24, 2026 Ordering open in GSAFleet.gov for Next Model Year: October 28, 2026 As a reminder, these dates are subject to change. Note: Vehicle supplier accounts on GSAFleet.gov can only be created by GSA. Once created, vehicle suppliers can then independently manage their account, including managing their company’s users and roles. The “Vendor Company Request Form” and the “GSAFleet.gov User Account Request Form” are attached for your convenience.",
+  "detail_text_length": 813,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ec9dbb7e6354a7090c8746e6bc40542/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca07ab53cccb415c957d255664386495/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ec9dbb7e6354a7090c8746e6bc40542/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4fdfff6535aa36ce2485bd2cdc64da8ff486466c78fb7f46f539152fe3901a99.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4fdfff6535aa36ce2485bd2cdc64da8ff486466c78fb7f46f539152fe3901a99.pdf",
+      "file_id": "1ec9dbb7e6354a7090c8746e6bc40542",
+      "file_name": "GSAfleet.gov+Vendor+Company+Request+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132763,
+      "sha256": "4fdfff6535aa36ce2485bd2cdc64da8ff486466c78fb7f46f539152fe3901a99"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca07ab53cccb415c957d255664386495/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a7576a77ce8e989e51733f1d630eb11169c744a65fde3d228fc31d7fe961f0f2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a7576a77ce8e989e51733f1d630eb11169c744a65fde3d228fc31d7fe961f0f2.pdf",
+      "file_id": "ca07ab53cccb415c957d255664386495",
+      "file_name": "GSAfleet.gov+User+Account+Request+Form+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 89872,
+      "sha256": "a7576a77ce8e989e51733f1d630eb11169c744a65fde3d228fc31d7fe961f0f2"
+    }
+  ],
+  "_mirror_hash": "4373e6fed073361a39d9feddf75c28e20328e872d107c7196271d6aea9aac186",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.244467+00:00"
+}

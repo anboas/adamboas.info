@@ -1,0 +1,46 @@
+{
+  "id": "sam-3dca75b8652843a2bbb6fc9539462020",
+  "title": "USNS LARAMIE (T-AO 203) MTA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3dca75b8652843a2bbb6fc9539462020",
+  "opportunity_url": "https://sam.gov/opp/3dca75b8652843a2bbb6fc9539462020/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3dca75b8652843a2bbb6fc9539462020/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3dca75b8652843a2bbb6fc9539462020",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N3220526R6058",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-06-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3dca75b8652843a2bbb6fc9539462020",
+  "detail_text": "Prepare for and accomplish the mid-term availability of the USNS LARAMIE (T-AO 203) as specified in the solicitation and in accordance with the work item package. The anticipated period of performance is June 28, 2027 to September 11, 2027. The place of performance for this contract shall be the contractor’s facility. Due to operational and national security availability considerations, the location shall be East and Gulf Coast. All responsible sources may submit a proposal, which shall be considered by the agency. The solicitation will be made available on or about April 1, 2026 through the Procurement Integrated Enterprise Environment Solicitation Module. https://piee.eb.mil/sol/xhtml/unauth/index.xhtml To obtain access to the work item package and government furnished information technical data, complete and return the attached non-disclosure agreement to the point of contact of this announcement. The decision to solicit as a total small business set-aside was made from market research. There is an expectation of receiving proposals from two or more small businesses. The MSC Office of Small Business and Small Business Administration Procurement Center Representative concurs. Questions or comments regarding this notice may be addressed to the point of contact of this announcement.",
+  "detail_text_length": 1303,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/145bc8217fae400886a5f26a78cf814f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/145bc8217fae400886a5f26a78cf814f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/44b4762da5a29d48927fbe77485c4a090058acc71703a799463753eba5df97e3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/44b4762da5a29d48927fbe77485c4a090058acc71703a799463753eba5df97e3.docx",
+      "file_id": "145bc8217fae400886a5f26a78cf814f",
+      "file_name": "J-14-Technical+NDA.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 32499,
+      "sha256": "44b4762da5a29d48927fbe77485c4a090058acc71703a799463753eba5df97e3"
+    }
+  ],
+  "_mirror_hash": "4d6a2aec2fd05cbfaab4c06cea297285beaa9ea679a5ef6e89a3c98a8f248af8",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.242763+00:00"
+}

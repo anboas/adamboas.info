@@ -1,0 +1,46 @@
+{
+  "id": "sam-9ac41ab5e7434805bf070b24de25f127",
+  "title": "MEDICAL EQUIPMENT MOVE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ac41ab5e7434805bf070b24de25f127",
+  "opportunity_url": "https://sam.gov/opp/9ac41ab5e7434805bf070b24de25f127/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9ac41ab5e7434805bf070b24de25f127/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9ac41ab5e7434805bf070b24de25f127",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FY26-0012403418",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO WA.USPFO WA PROCUREMENT.W7N6 USPFO ACTIVITY WA ARNG",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ac41ab5e7434805bf070b24de25f127",
+  "detail_text": "The WAARNG located at Camp Murray, WA 98430 intends to award a Firm Fixed Price purchase order by other than full and open competition. Only one source and no other source will satisfy agency requirements. This notice is not a request for competitive proposals. Award will be made to JK Moving at Camp Murray WA for Medical equipment move for the Washington Army National Guard. A determination not to compete this procurement was made because only one responsible source and no other source will satisfy agency requirements to provide Bumblebee/Hornet Drones to the Washington National Guard. This award and any extensions to this award are covered under this special notice. Questions should be directed to Fred Quintana via email to: fredesvin.quintana.civ@army.mil",
+  "detail_text_length": 768,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59d95d8256254882a89631ffe45445a2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59d95d8256254882a89631ffe45445a2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/28246b246f689fe572066c751de848a6a60a10dfba52387befb1819f67020e6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/28246b246f689fe572066c751de848a6a60a10dfba52387befb1819f67020e6f.pdf",
+      "file_id": "59d95d8256254882a89631ffe45445a2",
+      "file_name": "A2.+Sole+Source+Memo_Medical+Equipment+Move.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1089137,
+      "sha256": "28246b246f689fe572066c751de848a6a60a10dfba52387befb1819f67020e6f"
+    }
+  ],
+  "_mirror_hash": "35812065c16a095c5330b665b562b6bfb9a777595a7cc7a471d54cb16e219463",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.896789+00:00"
+}

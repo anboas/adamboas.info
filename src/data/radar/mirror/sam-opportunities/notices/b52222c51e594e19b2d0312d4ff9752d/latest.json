@@ -1,0 +1,68 @@
+{
+  "id": "sam-b52222c51e594e19b2d0312d4ff9752d",
+  "title": "6525--Sonomed Escalon Ophthalmic Ultrasound",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b52222c51e594e19b2d0312d4ff9752d",
+  "opportunity_url": "https://sam.gov/opp/b52222c51e594e19b2d0312d4ff9752d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b52222c51e594e19b2d0312d4ff9752d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b52222c51e594e19b2d0312d4ff9752d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25626Q0505",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.256-NETWORK CONTRACT OFFICE 16 (36C256)",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b52222c51e594e19b2d0312d4ff9752d",
+  "detail_text": "Please see the draft Statement of Work (SOW), provided as Attachment A, and Sources Sought Notice 36C25626Q0505 for additional background and technical information.",
+  "detail_text_length": 164,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37684ba1a4d84b8bac178a0ac9dc962a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac11931a26064af0bab435bd43fb8173/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db5d8eb2dbe7474e99207416432f1ef9/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37684ba1a4d84b8bac178a0ac9dc962a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6040afbedb040ea97cd77c28f51891ea1525f5c72c679980dd138425ff307640.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6040afbedb040ea97cd77c28f51891ea1525f5c72c679980dd138425ff307640.pdf",
+      "file_id": "37684ba1a4d84b8bac178a0ac9dc962a",
+      "file_name": "Sources+Sought+Notice+36C25626Q0505.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99674,
+      "sha256": "6040afbedb040ea97cd77c28f51891ea1525f5c72c679980dd138425ff307640"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac11931a26064af0bab435bd43fb8173/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/42e07012229cd70bdaa40f1acac51a2e41937329c648668a2b0e95e6f0d38a82.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/42e07012229cd70bdaa40f1acac51a2e41937329c648668a2b0e95e6f0d38a82.pdf",
+      "file_id": "ac11931a26064af0bab435bd43fb8173",
+      "file_name": "AttachmentA+Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 208462,
+      "sha256": "42e07012229cd70bdaa40f1acac51a2e41937329c648668a2b0e95e6f0d38a82"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db5d8eb2dbe7474e99207416432f1ef9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b6f260658edd8af7c8b0746d4b6c65f33caffe6f76e520f4c6b07f170c0d322.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b6f260658edd8af7c8b0746d4b6c65f33caffe6f76e520f4c6b07f170c0d322.docx",
+      "file_id": "db5d8eb2dbe7474e99207416432f1ef9",
+      "file_name": "36C25626Q0505.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14584,
+      "sha256": "8b6f260658edd8af7c8b0746d4b6c65f33caffe6f76e520f4c6b07f170c0d322"
+    }
+  ],
+  "_mirror_hash": "b078414bdbf38a0ecfde4f1552afdecb1beaf6c4a43efb4e46398952fc76c41b",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.904964+00:00"
+}

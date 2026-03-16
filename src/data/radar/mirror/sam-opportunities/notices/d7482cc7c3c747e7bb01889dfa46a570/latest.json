@@ -1,0 +1,46 @@
+{
+  "id": "sam-d7482cc7c3c747e7bb01889dfa46a570",
+  "title": "HIGH DESERT VET CENTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7482cc7c3c747e7bb01889dfa46a570",
+  "opportunity_url": "https://sam.gov/opp/d7482cc7c3c747e7bb01889dfa46a570/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d7482cc7c3c747e7bb01889dfa46a570/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d7482cc7c3c747e7bb01889dfa46a570",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26R0036",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7482cc7c3c747e7bb01889dfa46a570",
+  "detail_text": "The Department of Veterans Affairs (VA) Readjustment Counseling Service (RCS) is currently seeking to lease a minimum 4,362 ABOA 5,888 (RSF) and a maximum of 4,580 ABOA 6,183 (RSF) for use by VA as a Veteran Center leased space in or near Victorville, California.",
+  "detail_text_length": 263,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb8ae8b04ae24a6aa2df4d46fe954733/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb8ae8b04ae24a6aa2df4d46fe954733/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/66e52ce3ad748d2ae503635b2bf7c70e2d921cd5c46c7c50c71f338988244787.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/66e52ce3ad748d2ae503635b2bf7c70e2d921cd5c46c7c50c71f338988244787.pdf",
+      "file_id": "eb8ae8b04ae24a6aa2df4d46fe954733",
+      "file_name": "S02+High+Desert+CA+VC+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 315363,
+      "sha256": "66e52ce3ad748d2ae503635b2bf7c70e2d921cd5c46c7c50c71f338988244787"
+    }
+  ],
+  "_mirror_hash": "fa23937adaef34dcb10f83c19b0e4ddbfe5e8263f111f0892cbf56d9ad5f248f",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.114312+00:00"
+}

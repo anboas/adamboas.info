@@ -1,0 +1,57 @@
+{
+  "id": "sam-8b5f5d8ad1144886998d94c8c5638208",
+  "title": "Ammunition Disposal Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b5f5d8ad1144886998d94c8c5638208",
+  "opportunity_url": "https://sam.gov/opp/8b5f5d8ad1144886998d94c8c5638208/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8b5f5d8ad1144886998d94c8c5638208/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8b5f5d8ad1144886998d94c8c5638208",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DJA-26-AFSPD-XXXXX",
+  "agency_path": "JUSTICE, DEPARTMENT OF.ATF ACQUISITION AND PROPERTY MGMT DIV.ATF",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b5f5d8ad1144886998d94c8c5638208",
+  "detail_text": "SEE BELOW AND RFI ATTACHMENTS FOR FULL DESCRIPTON THIS REQUEST FOR INFORMATION (RFI) IS FOR PLANNING PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL (RFP) OR QUOTE (RFQ). IT DOES NOT CONSTITUTE SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS RFI. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY. NOT RESPONDING TO THIS RFI DOES NOT PRECLUDE PARTICIPATION IN ANY FUTURE RFP, IF ISSUED. ALL SUBMISSIONS BECOME GOVERNMENT PROPERTY AND WILL NOT BE RETURNED. This notice is not a Request for Proposal (RFP); it is a market research tool being utilized to determine the availability of qualified sources prior to issuing an RFP. ATF is not seeking proposals at this time and will not accept unsolicited proposals. The Government is accepting questions in writing via email as part of this RFI process and shall be submitted NLT 10am ET, , March 23, 2026. RFI responses are due NLT 4pm ET Thursday, March 18, 2026. No telephone calls will be accepted.",
+  "detail_text_length": 1137,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ccde607bb804083a0432e37c3820aa9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77f216e9b53e4dbbb8da9f5cd04208d7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ccde607bb804083a0432e37c3820aa9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aefff1d0a7074d3d566fe72ef4ea4d6c6f212c9838f4f2c29a3e626a9bf3786d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aefff1d0a7074d3d566fe72ef4ea4d6c6f212c9838f4f2c29a3e626a9bf3786d.docx",
+      "file_id": "0ccde607bb804083a0432e37c3820aa9",
+      "file_name": "Ammo+Disposal+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114890,
+      "sha256": "aefff1d0a7074d3d566fe72ef4ea4d6c6f212c9838f4f2c29a3e626a9bf3786d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77f216e9b53e4dbbb8da9f5cd04208d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6ef249a9d7837e57e25664953dd5f465016312d3195362787b5765f83288dbb2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6ef249a9d7837e57e25664953dd5f465016312d3195362787b5765f83288dbb2.docx",
+      "file_id": "77f216e9b53e4dbbb8da9f5cd04208d7",
+      "file_name": "Ammunition+Performance+Work+Statement_DRAFT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 50939,
+      "sha256": "6ef249a9d7837e57e25664953dd5f465016312d3195362787b5765f83288dbb2"
+    }
+  ],
+  "_mirror_hash": "b0c66e3a4447bbaffa8e339ec70bcd1d9b631078822b5147cbde9c4ea6eb1947",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.160254+00:00"
+}

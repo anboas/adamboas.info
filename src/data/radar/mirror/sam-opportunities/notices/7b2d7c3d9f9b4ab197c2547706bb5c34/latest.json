@@ -1,0 +1,46 @@
+{
+  "id": "sam-7b2d7c3d9f9b4ab197c2547706bb5c34",
+  "title": "57 MUNS PMEL Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b2d7c3d9f9b4ab197c2547706bb5c34",
+  "opportunity_url": "https://sam.gov/opp/7b2d7c3d9f9b4ab197c2547706bb5c34/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7b2d7c3d9f9b4ab197c2547706bb5c34/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7b2d7c3d9f9b4ab197c2547706bb5c34",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "F3G2CA6040AQ01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4861  99 CONS LGC",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b2d7c3d9f9b4ab197c2547706bb5c34",
+  "detail_text": "a. (i) Clear and Concise Description of Supplies or Services: Service Title: 57 MUNS PMEL Repair Brief Description: 57 MUNS requires a contracted service to provide repairs and calibration for two: (1) 50 GHz Spectrum Analyzer, Model E4448A, Serial Number SG46180397; (2) 26.5 GHz Spectrum Analyzer, Model E4440A, Serial Number SG428250185, restored to original manufacturer specifications. (ii) Procedures for Award: The proposed action is not estimated to be greater than $25,000.00. (iii) Trade Agreements Language: Not Applicable (iv) Technical Data: The Performance Work Statement is included as an attachment (v) Construction Contract Information: Not Applicable (vi) Statement Regarding Responsible Sources: All responsible sources may submit a quotation, bid, or proposal, as appropriate, which will be considered by the agency. (vii) Competitive Status: The Government intends to award a contract directly to Keysight Technologies Inc. in accordance with RFO 12.102 Restricting Competition, and RFO 6.103-1 under the authority at 1- U.S.C 3204(a)(1) for one responsible source. (viii) Qualification Requirement: Not Applicable",
+  "detail_text_length": 1135,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48dfad6362684cfcaee9d539952ab310/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48dfad6362684cfcaee9d539952ab310/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e0b439f77a47e131de62e496c189080a46187817eca2ab7e778089e7d4d2c53f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e0b439f77a47e131de62e496c189080a46187817eca2ab7e778089e7d4d2c53f.pdf",
+      "file_id": "48dfad6362684cfcaee9d539952ab310",
+      "file_name": "57+MUNS+PMEL+Repairs+PWS_CAO+March+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142818,
+      "sha256": "e0b439f77a47e131de62e496c189080a46187817eca2ab7e778089e7d4d2c53f"
+    }
+  ],
+  "_mirror_hash": "0cfff3c8bd71021e78bfb02efd2341f2e0b914a34fdec3d63d16bff006dd7e27",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.941470+00:00"
+}

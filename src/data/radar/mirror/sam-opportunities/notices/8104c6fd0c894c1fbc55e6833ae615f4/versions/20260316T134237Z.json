@@ -1,0 +1,68 @@
+{
+  "id": "sam-8104c6fd0c894c1fbc55e6833ae615f4",
+  "title": "NSN 2940015587221",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8104c6fd0c894c1fbc55e6833ae615f4",
+  "opportunity_url": "https://sam.gov/opp/8104c6fd0c894c1fbc55e6833ae615f4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8104c6fd0c894c1fbc55e6833ae615f4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8104c6fd0c894c1fbc55e6833ae615f4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CM26035007",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8104c6fd0c894c1fbc55e6833ae615f4",
+  "detail_text": "Type: Sources Sought Synopsis NAICS: 336390 PSC: 2940 Place of Performance: Columbus, OH 43218 USA NO SOLICITATION IS BEING ISSUED AT THIS TIME. ***Sources Sought*** This is not a request for either a quote or proposal. This announcement is considered market research in accordance with FAR Part 10. BACKGROUND: Notice from the Department of Defense, Defense Logistics Agency, Strategic Acquisition Program Directorate (SAPD) at DLA Columbus, Ohio. The SAPD/ZAA Division is seeking capabilities packages of potential sources, including small businesses. This sources sought synopsis is published for market research purposes only, to identify potential sources capable of supplying the Government with the items in accordance with the requirements listed below. Please review the below National Stock Number (NSN) and provide any additional sources that can supply the item with an unknown demand. NSN: 2940015587221 Item Name: Filter, Element, Fluid The Acquisition Method Code (AMC) / Acquisition Method Suffix Code (AMSC) for the NSN listed above is “1/Z”. AMC: 1 – Suitable for Competition, potential sources shall include dealers/distributors. AMSC: Z – This part is a commercial product, nondevelopmental item, or commercially available off-the-shelf item. Commercial item descriptions, commercial vendor catalog or price lists, or commercial manuals assigned a technical manual number apply. If one source is available, AMCs 3, 4, or 5 are valid. If at least two sources are available, AMCs 1 or 2 are valid. Responses to this Request for Information (RFI) are not considered offers and cannot be accepted by the Government to form a binding contract. This RFI is for market research purposes only, respondents will not be individually notified of the results of any government assessments. This sources sought synopsis notice is not to be construed as a commitment by the Government, nor will the Government reimburse any costs associated with the submission of information in response to this notice. The Government's assessment of the capability statements received will factor into whether any forthcoming solicitation will be conducted as a full and open competition or not. Interested parties shall also complete the attached Market Research Survey and attached spreadsheet where vendor fill-in is required. All this information can be submitted to tyler.bender@dla.mil with the subject line labeled, “CM26035007 – SSS”. Thank you for your time and interest.",
+  "detail_text_length": 2471,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00f28b8931654c92835ddf14efb65ca9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eff6cdabf5344b63aef4a7a89bf561b2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fda6704b2f3547db80a767156fa17646/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00f28b8931654c92835ddf14efb65ca9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/926dda91302deafbb3b8968433db814f8d13b698ab05ce5be8c26b21dcb0b946.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/926dda91302deafbb3b8968433db814f8d13b698ab05ce5be8c26b21dcb0b946.docx",
+      "file_id": "00f28b8931654c92835ddf14efb65ca9",
+      "file_name": "CM26035007_Market_Survey.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 62864,
+      "sha256": "926dda91302deafbb3b8968433db814f8d13b698ab05ce5be8c26b21dcb0b946"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eff6cdabf5344b63aef4a7a89bf561b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9fda554bc435a10761b1006e3295188e5cc03d9d7a69b236619a321cbd1e88b7.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9fda554bc435a10761b1006e3295188e5cc03d9d7a69b236619a321cbd1e88b7.xlsx",
+      "file_id": "eff6cdabf5344b63aef4a7a89bf561b2",
+      "file_name": "CM26035007_NSN_Information.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9897,
+      "sha256": "9fda554bc435a10761b1006e3295188e5cc03d9d7a69b236619a321cbd1e88b7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fda6704b2f3547db80a767156fa17646/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/06e9160dd24a02103a09a0771d6a960bf94c86e58695150ac39fe244d27e2faa.txt",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/06e9160dd24a02103a09a0771d6a960bf94c86e58695150ac39fe244d27e2faa.txt",
+      "file_id": "fda6704b2f3547db80a767156fa17646",
+      "file_name": "CM26035007_PID.TXT",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1928,
+      "sha256": "06e9160dd24a02103a09a0771d6a960bf94c86e58695150ac39fe244d27e2faa"
+    }
+  ],
+  "_mirror_hash": "ebbab98da368a0575f7415ae295f992970097a932e54943b2954c87bc0f0d615",
+  "_mirror_run_id": "20260316T134237Z",
+  "_mirror_recorded_at": "2026-03-16T13:43:57.305766+00:00"
+}

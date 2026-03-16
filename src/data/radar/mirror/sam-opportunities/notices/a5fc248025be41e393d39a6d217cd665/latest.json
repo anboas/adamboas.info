@@ -1,0 +1,68 @@
+{
+  "id": "sam-a5fc248025be41e393d39a6d217cd665",
+  "title": "Islamic Religious Items Market Research Survey",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5fc248025be41e393d39a6d217cd665",
+  "opportunity_url": "https://sam.gov/opp/a5fc248025be41e393d39a6d217cd665/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a5fc248025be41e393d39a6d217cd665/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a5fc248025be41e393d39a6d217cd665",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "SPE1C1-26-R-Islamic_Items",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CLOTHING & TEXTILE.DLA TROOP SUPPORT",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5fc248025be41e393d39a6d217cd665",
+  "detail_text": "See attached market survey and spreadsheet for more information on this upcoming requirement.",
+  "detail_text_length": 93,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40bcd3467ec04abb9409cb851ef424d5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f6226a5760c48258d87e0c05bb4c98e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c077d86a3004f0f8962eeecb39e6aa6/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40bcd3467ec04abb9409cb851ef424d5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6e3172af28971a8ab6e3b39a4bee732d9cee5966318f4e00e2fd043c70f21693.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6e3172af28971a8ab6e3b39a4bee732d9cee5966318f4e00e2fd043c70f21693.docx",
+      "file_id": "40bcd3467ec04abb9409cb851ef424d5",
+      "file_name": "Technical+Data.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26231,
+      "sha256": "6e3172af28971a8ab6e3b39a4bee732d9cee5966318f4e00e2fd043c70f21693"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f6226a5760c48258d87e0c05bb4c98e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/30548627758fa247ebffbc64f301af6a2f2c6b294bd3fe14cc2df4d5e6180d2c.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/30548627758fa247ebffbc64f301af6a2f2c6b294bd3fe14cc2df4d5e6180d2c.xlsx",
+      "file_id": "4f6226a5760c48258d87e0c05bb4c98e",
+      "file_name": "Market+Research+Survey+Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13795,
+      "sha256": "30548627758fa247ebffbc64f301af6a2f2c6b294bd3fe14cc2df4d5e6180d2c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c077d86a3004f0f8962eeecb39e6aa6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a33b597fa738875d8315e9f1e4d8afec77671d5bb91853d7b7e975b130d4e167.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a33b597fa738875d8315e9f1e4d8afec77671d5bb91853d7b7e975b130d4e167.pdf",
+      "file_id": "6c077d86a3004f0f8962eeecb39e6aa6",
+      "file_name": "Market+Research+Survey.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 127613,
+      "sha256": "a33b597fa738875d8315e9f1e4d8afec77671d5bb91853d7b7e975b130d4e167"
+    }
+  ],
+  "_mirror_hash": "3c9690a8955dd7b8f46814933f9323ec59d0e5b253072f9b1d09134d57b9064c",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.178921+00:00"
+}

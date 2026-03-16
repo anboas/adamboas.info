@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-15T13:45:06.008406+00:00
+Generated: 2026-03-16T13:44:43.720515+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/15/2026
+Posted range: 01/01/2026 -> 03/16/2026
 
 ## Counts
-- Total candidates: 110
-- Navy-related: 110
-- Full detail cached: 110
+- Total candidates: 109
+- Navy-related: 109
+- Full detail cached: 109
 - Notices with attachments: 44
 - Total attachment links: 177
 - Combined Synopsis/Solicitation: 24
 - Pre-solicitation: 36
 - Solicitation: 14
-- Sources Sought: 25
+- Sources Sought: 24
 - Special Notice: 11
 
 ## Engagement signals
 - Industry Day: 3
 - Pre-solicitation: 38
-- Sources Sought: 25
+- Sources Sought: 24
 - Vendor Outreach: 1
 - Special Notice: 11
 
@@ -43,7 +43,6 @@ Posted range: 01/01/2026 -> 03/15/2026
 | 7 | Sources Sought | Sources Sought | 2026-02-13 | 2026-02-24 | DEPT OF DEFENSE | [Base Assemblies](https://sam.gov/opp/abcf191218124794a716ce06ad0f3619/view) |
 | 7 | Special Notice | Pre-solicitation, Special Notice | 2026-02-02 | 2026-02-27 | DEPT OF DEFENSE | [Undergraduate Jet Training System (UJTS) Request for Information March 2025](https://sam.gov/opp/38ff7981021b4da19d631777a849109d/view) |
 | 5 | Special Notice | Special Notice | 2026-02-24 | 2026-02-27 | DEPT OF DEFENSE | [N0001925R1004 Draft PMA-271 E-6B Mercury Depot Level MRO PWS and PMI Depot Level Maintenance Spec for MRO](https://sam.gov/opp/cbedb8a59397447b922b62c2f53cf5c9/view) |
-| 5 | Sources Sought | Sources Sought | 2026-02-19 | 2026-02-28 | DEPT OF DEFENSE | [2026 Laser Guided Training Round (LGTR) BDU-59C/B Product Improvement Plan](https://sam.gov/opp/9b75063b6c004d91a1ad41e9d2a7f57e/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-12 | 2026-03-02 | DEPT OF DEFENSE | [Sole Source to Northrop Grumman - Generalized Automatic Target Recognition (GATR) Software Development Kit](https://sam.gov/opp/a7ed26e001434cf7a794cec8c5264443/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-20 | 2026-03-02 | DEPT OF DEFENSE | [Leveraging Enterprise Technologies for Holistic AI, Logistics, Integration, Transformation, and Yield](https://sam.gov/opp/1d37b1152dd44a36875daa9671734b2a/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-24 | 2026-03-02 | DEPT OF DEFENSE | [Vector Network Analyzer Repair](https://sam.gov/opp/7d5bd255b015433bb529e10f11871ee2/view) |

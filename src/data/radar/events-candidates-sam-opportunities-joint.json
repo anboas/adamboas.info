@@ -185,47 +185,6 @@
     ]
   },
   {
-    "id": "sam-67116dfd72af4eb78605ffc9b54a0add",
-    "title": "DCAA Axway Sources Sought Only",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=67116dfd72af4eb78605ffc9b54a0add",
-    "opportunity_url": "https://sam.gov/opp/67116dfd72af4eb78605ffc9b54a0add/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/67116dfd72af4eb78605ffc9b54a0add/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "67116dfd72af4eb78605ffc9b54a0add",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SP4704-26-SS-6502",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DCSO.DCSO RICHMOND.DCSO RICHMOND DIVISION #2",
-    "posted_date": "2026-02-25",
-    "response_deadline": "2026-03-05",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought",
-      "Industry/sourcing signal keywords"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=67116dfd72af4eb78605ffc9b54a0add",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=67116dfd72af4eb78605ffc9b54a0add",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/824f8634ea7d45e8bf4ea4863854b4de/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a010ed5c91784d768b619effe2543f17/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/824f8634ea7d45e8bf4ea4863854b4de/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a010ed5c91784d768b619effe2543f17/download"
-      }
-    ]
-  },
-  {
     "id": "sam-e72ac06c84c242cbb56c791ac248287f",
     "title": "UNIFIED CAPABILITIES REQUIREMENTS (UCR) REQUEST FOR INFORMATION (RFI)",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e72ac06c84c242cbb56c791ac248287f",
@@ -1055,6 +1014,44 @@
     "resource_items": null
   },
   {
+    "id": "sam-7ae3ee2640f1433ebce0c26bd3632dac",
+    "title": "Request for Information (RFI) for full service food support for DLA Troop Support's (OCONUS SPV) in Thailand.",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ae3ee2640f1433ebce0c26bd3632dac",
+    "opportunity_url": "https://sam.gov/opp/7ae3ee2640f1433ebce0c26bd3632dac/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/7ae3ee2640f1433ebce0c26bd3632dac/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "7ae3ee2640f1433ebce0c26bd3632dac",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Pre-solicitation",
+      "Sources Sought"
+    ],
+    "solicitation_number": "Thailand",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT SUBSISTENCE.DLA TROOP SUPPORT",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-04-16",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ae3ee2640f1433ebce0c26bd3632dac",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ae3ee2640f1433ebce0c26bd3632dac",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2aad2bb6877647dbbd96e59ef307c978/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2aad2bb6877647dbbd96e59ef307c978/download"
+      }
+    ]
+  },
+  {
     "id": "sam-2c30e11feba64d9891c3604931cb9410",
     "title": "DLA Disposition Services Industry Day 2026",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2c30e11feba64d9891c3604931cb9410",
@@ -1126,6 +1123,51 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/554ab0518ff446b0bbcd6a768e1a8a35/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-ca0bf7b3de294f05973d1e61ca18d22d",
+    "title": "Sources Sought - HAND TRUCK - 7013079317 - (NSN): 3920-01-574-0457",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca0bf7b3de294f05973d1e61ca18d22d",
+    "opportunity_url": "https://sam.gov/opp/ca0bf7b3de294f05973d1e61ca18d22d/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/ca0bf7b3de294f05973d1e61ca18d22d/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "ca0bf7b3de294f05973d1e61ca18d22d",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE8EF26Q0049",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT SUBSISTENCE.DIR OF SUB  DLA TROOP SUPPORT",
+    "posted_date": "2026-03-15",
+    "response_deadline": "2026-03-31",
+    "place_of_performance": null,
+    "relevance_score": 3,
+    "relevance_reasons": [
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca0bf7b3de294f05973d1e61ca18d22d",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca0bf7b3de294f05973d1e61ca18d22d",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f229b8ae965491d8a9f20d35894b200/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7d130bce79b64413aa4b5b02fc0f1170/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f99a77ac5218430daf06abccd31bd413/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f229b8ae965491d8a9f20d35894b200/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7d130bce79b64413aa4b5b02fc0f1170/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f99a77ac5218430daf06abccd31bd413/download"
       }
     ]
   },
@@ -1484,42 +1526,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-6bb2ee8921434a38b40706662c30e655",
-    "title": "TRANSPONDER,SONAR",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6bb2ee8921434a38b40706662c30e655",
-    "opportunity_url": "https://sam.gov/opp/6bb2ee8921434a38b40706662c30e655/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/6bb2ee8921434a38b40706662c30e655/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "6bb2ee8921434a38b40706662c30e655",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPE4A726R0458",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-02-25",
-    "response_deadline": "2026-03-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6bb2ee8921434a38b40706662c30e655",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6bb2ee8921434a38b40706662c30e655",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c021626fd0a0433e89a32e103a3ad7ee/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c021626fd0a0433e89a32e103a3ad7ee/download"
-      }
-    ]
   },
   {
     "id": "sam-c6a5a4b6ad1949b195349e1e8eb55f43",
@@ -1944,46 +1950,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-683d832222da4daaa72f181cf525c9e6",
-    "title": "REGULATOR VOLTAGE",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=683d832222da4daaa72f181cf525c9e6",
-    "opportunity_url": "https://sam.gov/opp/683d832222da4daaa72f181cf525c9e6/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/683d832222da4daaa72f181cf525c9e6/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "683d832222da4daaa72f181cf525c9e6",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "CM26035004",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
-    "posted_date": "2026-02-25",
-    "response_deadline": "2026-03-05",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=683d832222da4daaa72f181cf525c9e6",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=683d832222da4daaa72f181cf525c9e6",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63623e6720e448b49fec79f05c790a69/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b740ea486a9e4fd1b88849b303d8acaa/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63623e6720e448b49fec79f05c790a69/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b740ea486a9e4fd1b88849b303d8acaa/download"
-      }
-    ]
   },
   {
     "id": "sam-967115d31ab44724840ccf31d51285b1",
@@ -3370,42 +3336,6 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48af0a466b8248c28f6ba5c7d55d0b3b/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-59e8878712bc4386b21ddfa855d0f133",
-    "title": "NSN: 4810-00-692-8254HS\t PN: S6027\t SLEEVE AND SLIDE, DI",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=59e8878712bc4386b21ddfa855d0f133",
-    "opportunity_url": "https://sam.gov/opp/59e8878712bc4386b21ddfa855d0f133/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/59e8878712bc4386b21ddfa855d0f133/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "59e8878712bc4386b21ddfa855d0f133",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRTA126R0225",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
-    "posted_date": "2026-02-23",
-    "response_deadline": "2026-03-10",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=59e8878712bc4386b21ddfa855d0f133",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=59e8878712bc4386b21ddfa855d0f133",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ec282e123b94b18b33a3121e69a87bb/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ec282e123b94b18b33a3121e69a87bb/download"
       }
     ]
   },
@@ -7700,6 +7630,36 @@
     "resource_items": null
   },
   {
+    "id": "sam-eb2f59e723db4e8b8ae21abfe852923e",
+    "title": "BATTERY,NONRECHARGE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb2f59e723db4e8b8ae21abfe852923e",
+    "opportunity_url": "https://sam.gov/opp/eb2f59e723db4e8b8ae21abfe852923e/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/eb2f59e723db4e8b8ae21abfe852923e/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "eb2f59e723db4e8b8ae21abfe852923e",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPE7L126Q0849",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-17",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb2f59e723db4e8b8ae21abfe852923e",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb2f59e723db4e8b8ae21abfe852923e",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-f7ab0f313c7043ff94ca3e246a2360fa",
     "title": "Human Capital Management Software Development and Sustainment",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f7ab0f313c7043ff94ca3e246a2360fa",
@@ -9522,6 +9482,50 @@
     ]
   },
   {
+    "id": "sam-8104c6fd0c894c1fbc55e6833ae615f4",
+    "title": "NSN 2940015587221",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8104c6fd0c894c1fbc55e6833ae615f4",
+    "opportunity_url": "https://sam.gov/opp/8104c6fd0c894c1fbc55e6833ae615f4/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/8104c6fd0c894c1fbc55e6833ae615f4/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "8104c6fd0c894c1fbc55e6833ae615f4",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "CM26035007",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-20",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8104c6fd0c894c1fbc55e6833ae615f4",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8104c6fd0c894c1fbc55e6833ae615f4",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00f28b8931654c92835ddf14efb65ca9/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eff6cdabf5344b63aef4a7a89bf561b2/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fda6704b2f3547db80a767156fa17646/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00f28b8931654c92835ddf14efb65ca9/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eff6cdabf5344b63aef4a7a89bf561b2/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fda6704b2f3547db80a767156fa17646/download"
+      }
+    ]
+  },
+  {
     "id": "sam-bdc021a9f5044e379a95814c908be3ce",
     "title": "VALVE,GATE",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdc021a9f5044e379a95814c908be3ce",
@@ -10180,46 +10184,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-3a31198e3c65495f815799914e68635c",
-    "title": "Soda Bag in Box (BIB) Beverage",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a31198e3c65495f815799914e68635c",
-    "opportunity_url": "https://sam.gov/opp/3a31198e3c65495f815799914e68635c/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/3a31198e3c65495f815799914e68635c/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "3a31198e3c65495f815799914e68635c",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPE30026R0032",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT SUBSISTENCE.DLA TROOP SUPPORT",
-    "posted_date": "2026-03-09",
-    "response_deadline": "2026-03-24",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a31198e3c65495f815799914e68635c",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a31198e3c65495f815799914e68635c",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/18def751885c4817b9eba3f90d919dcd/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eaf1c86a80734279a1e6b19ae15be599/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/18def751885c4817b9eba3f90d919dcd/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eaf1c86a80734279a1e6b19ae15be599/download"
-      }
-    ]
-  },
-  {
     "id": "sam-73b245cf32bf41fbba086b7c949ad75c",
     "title": "V22 Priced BOA Project G-0008",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=73b245cf32bf41fbba086b7c949ad75c",
@@ -10366,6 +10330,46 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f5f31acd0d06431398f0eba6c286d742/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-434c8d8792c04b828af204ead7448be7",
+    "title": "Soda Bag in Box (BIB) Beverage",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=434c8d8792c04b828af204ead7448be7",
+    "opportunity_url": "https://sam.gov/opp/434c8d8792c04b828af204ead7448be7/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/434c8d8792c04b828af204ead7448be7/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "434c8d8792c04b828af204ead7448be7",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE30026R0032",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT SUBSISTENCE.DLA TROOP SUPPORT",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-24",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=434c8d8792c04b828af204ead7448be7",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=434c8d8792c04b828af204ead7448be7",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/18def751885c4817b9eba3f90d919dcd/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3fa76eeb5ccb4d36b9b4879a2018d14a/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/18def751885c4817b9eba3f90d919dcd/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3fa76eeb5ccb4d36b9b4879a2018d14a/download"
       }
     ]
   },
@@ -12280,36 +12284,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-110b6607957542999ea9882149515c98",
-    "title": "1680-00-783-5774- PARTS KIT,SCREWJACK",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=110b6607957542999ea9882149515c98",
-    "opportunity_url": "https://sam.gov/opp/110b6607957542999ea9882149515c98/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/110b6607957542999ea9882149515c98/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "110b6607957542999ea9882149515c98",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A726R0434",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-02-23",
-    "response_deadline": "2026-04-09",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=110b6607957542999ea9882149515c98",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=110b6607957542999ea9882149515c98",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-bd7cf3fb701147eba77d2ae4613e6211",
     "title": "58--RECEIVER,COUNTERMEA",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd7cf3fb701147eba77d2ae4613e6211",
@@ -13622,6 +13596,42 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-e5da4ce0a90748aa9274df4c7fbec6ef",
+    "title": "2,225/ea. - Hood, Chemical Biolo NSN: 4240-01-528-9286",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e5da4ce0a90748aa9274df4c7fbec6ef",
+    "opportunity_url": "https://sam.gov/opp/e5da4ce0a90748aa9274df4c7fbec6ef/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/e5da4ce0a90748aa9274df4c7fbec6ef/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "e5da4ce0a90748aa9274df4c7fbec6ef",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "7013249202_ ",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-04-15",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e5da4ce0a90748aa9274df4c7fbec6ef",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e5da4ce0a90748aa9274df4c7fbec6ef",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1b21d7c48ac4c3f8bef3b593059ce70/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1b21d7c48ac4c3f8bef3b593059ce70/download"
+      }
+    ]
   },
   {
     "id": "sam-344139524bd945a8b4c0cb69774186b4",
@@ -15130,6 +15140,36 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30e466fe6a5f45b9ac659b7b025c55ff",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30e466fe6a5f45b9ac659b7b025c55ff",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-1c7daa2b152d4667b31337fe58007f44",
+    "title": "04F | B-52 | VALVE ASSEMBLY, SLID",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c7daa2b152d4667b31337fe58007f44",
+    "opportunity_url": "https://sam.gov/opp/1c7daa2b152d4667b31337fe58007f44/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/1c7daa2b152d4667b31337fe58007f44/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "1c7daa2b152d4667b31337fe58007f44",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "1000221390",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-05-04",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c7daa2b152d4667b31337fe58007f44",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c7daa2b152d4667b31337fe58007f44",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,

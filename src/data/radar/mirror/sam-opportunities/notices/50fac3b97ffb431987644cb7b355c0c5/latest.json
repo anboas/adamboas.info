@@ -1,0 +1,57 @@
+{
+  "id": "sam-50fac3b97ffb431987644cb7b355c0c5",
+  "title": "EXata Annual License Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=50fac3b97ffb431987644cb7b355c0c5",
+  "opportunity_url": "https://sam.gov/opp/50fac3b97ffb431987644cb7b355c0c5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/50fac3b97ffb431987644cb7b355c0c5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "50fac3b97ffb431987644cb7b355c0c5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PAN040592",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-FT GORDON",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=50fac3b97ffb431987644cb7b355c0c5",
+  "detail_text": "EXata/QualNet is a Modeling and Simulation (M&S) tool that emulates high-fidelity Tactical and Enterprise Networks of the US Army that are either a Program of Record (POR) or emerging in the Army’s capability development portfolio. This M&S tool was also designed to federate with other models such as the Army’s POR Force on Force model One Semi-Automated Force (OneSAF). EXata/QaulNet also uses an open DIA/HLA architecture allowing it to incorporate real time hardware in the loop. This software platform is also capable of integrating and representing Cyber and Electromagnetic Warfare effects natively.",
+  "detail_text_length": 607,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11524cd0cd954263ae546e357511205a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29ba0e11b23a4dcbb453cc1244e0c68c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11524cd0cd954263ae546e357511205a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c482bebd8b03e70c90de25fc2c9dc876141a8695ae002aa3dbb60ebf21b29b4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c482bebd8b03e70c90de25fc2c9dc876141a8695ae002aa3dbb60ebf21b29b4.pdf",
+      "file_id": "11524cd0cd954263ae546e357511205a",
+      "file_name": "4005.02_IGCE_EXATA_20260115_signed_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 83435,
+      "sha256": "7c482bebd8b03e70c90de25fc2c9dc876141a8695ae002aa3dbb60ebf21b29b4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29ba0e11b23a4dcbb453cc1244e0c68c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/19506f6dfc189e5130b94b094aeb82ffda425e7a2630a576be5d699d2eeb81c0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/19506f6dfc189e5130b94b094aeb82ffda425e7a2630a576be5d699d2eeb81c0.pdf",
+      "file_id": "29ba0e11b23a4dcbb453cc1244e0c68c",
+      "file_name": "4005.2_EXata_Keysight_Sole_Source_Document_20250127.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 157869,
+      "sha256": "19506f6dfc189e5130b94b094aeb82ffda425e7a2630a576be5d699d2eeb81c0"
+    }
+  ],
+  "_mirror_hash": "5c15b2218664467f3f822fb7fcfdfd5d1c7113cf9ca88dcde80437c3dd2188f4",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.101677+00:00"
+}

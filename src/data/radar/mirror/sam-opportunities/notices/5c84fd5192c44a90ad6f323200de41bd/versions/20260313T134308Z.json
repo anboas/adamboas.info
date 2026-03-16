@@ -1,0 +1,57 @@
+{
+  "id": "sam-5c84fd5192c44a90ad6f323200de41bd",
+  "title": "INDUSTRIAL GAS IDIQ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5c84fd5192c44a90ad6f323200de41bd",
+  "opportunity_url": "https://sam.gov/opp/5c84fd5192c44a90ad6f323200de41bd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5c84fd5192c44a90ad6f323200de41bd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5c84fd5192c44a90ad6f323200de41bd",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPMYM226Q5267",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME SHIPYARDS.DLA MARITIME - PUGET SOUND",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5c84fd5192c44a90ad6f323200de41bd",
+  "detail_text": "Solicitation SPMYM226Q5267 - INDUSTRIAL GAS IDIQ NASNI SAN DEIGO Contract Opportunity Type: Pre-solicitation (Original) DLA Maritime Puget Sound intends to issue a solicitation for the procurement of Industrial Gases for the NAVSGIPYD PUGET SOUND DET SAN DIEGO. This requirement will be solicited on an unrestricted basis using the commercial item procedures in FAR Parts 12 and 13.5 The resultant contract will be a firm fixed price (FFP) indefinite delivery indefinite quantity contract. The FOB will be DESTINATION NAICS Code is 325120 Product Service Code 6830 The completed solicitation MUST BE EMAILED TO THE BUYER at vera.anderson@dla.mil All interests and questions MUST BE EMAILED TO BUYER. The period of performance date will be adjusted at the time of the award. Requests to adjust during the solicitation phase will not be honored. OFFERORS WISHING TO SUBMIT AN OFFER ARE RESPONSIBLE FOR DOWNLOADING THEIR OWN COPY OF THE RFQ from FBO and to frequently monitor FBO for any amendments. A list of bidders will not be maintained by this office, NO TELEPHONE OR FAX REQUESTS FOR THE RFQ PACKAGE WILL BE ACCEPTED. Failure to respond to the electronically posted RFQ and associated amendments prior to the date and time set for receipt of quotes may render vendor offer non-responsive and result in rejection of the same. FIRMS INTERESTED IN SUBMITTING PROPOSALS MUST: COMPLETE THE ENTIRE SOLICITATION DOCUMENT to include representations and certifications, provisions and clauses, provide all product technical specification documentation and technical compliance certifications, and ensure current registration in the SAM system at https://sam.gov/",
+  "detail_text_length": 1656,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f67e47fc8704236bde8170a3032f400/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b730091b1d3b4ac4ae8c138607613f50/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f67e47fc8704236bde8170a3032f400/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ca566c5c468f14746059344e1fd6aa70d52b95e5376887967851c1b86284b1da.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ca566c5c468f14746059344e1fd6aa70d52b95e5376887967851c1b86284b1da.xlsx",
+      "file_id": "8f67e47fc8704236bde8170a3032f400",
+      "file_name": "CLIN+SHEET_GAS+updated.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27859,
+      "sha256": "ca566c5c468f14746059344e1fd6aa70d52b95e5376887967851c1b86284b1da"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b730091b1d3b4ac4ae8c138607613f50/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d1a847916a9054ee83f81c9f7a2fd0664592db1368d0cb610c504c96e00a70ba.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d1a847916a9054ee83f81c9f7a2fd0664592db1368d0cb610c504c96e00a70ba.pdf",
+      "file_id": "b730091b1d3b4ac4ae8c138607613f50",
+      "file_name": "NASNI+IDIQ+GAS_STATEMENT+OF+WORK_2025.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 305782,
+      "sha256": "d1a847916a9054ee83f81c9f7a2fd0664592db1368d0cb610c504c96e00a70ba"
+    }
+  ],
+  "_mirror_hash": "30e12c9156647f4daf7f26bbdaa095d615f2380da17b7b1ecca1f5d86e23a462",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.094003+00:00"
+}

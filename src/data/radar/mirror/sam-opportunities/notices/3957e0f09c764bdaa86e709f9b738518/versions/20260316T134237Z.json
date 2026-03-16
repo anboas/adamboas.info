@@ -1,0 +1,57 @@
+{
+  "id": "sam-3957e0f09c764bdaa86e709f9b738518",
+  "title": "Ramp alterations PH II",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3957e0f09c764bdaa86e709f9b738518",
+  "opportunity_url": "https://sam.gov/opp/3957e0f09c764bdaa86e709f9b738518/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3957e0f09c764bdaa86e709f9b738518/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3957e0f09c764bdaa86e709f9b738518",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W50S8SRPHII2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO OH.USPFO OH PROCUREMENT.W7NU USPFO ACTIVITY OHANG 180",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3957e0f09c764bdaa86e709f9b738518",
+  "detail_text": "The Ohio Air National Guard (OHANG) has issued this sources sought as a means of conducting market research to identify potential vendors, including Small Business vendors, relative to NAICS 238110. Disclaimer: This sources sought notice is for informational purposes only. This is not a request for proposal (RFP), invitation for bid (IFB), or request for quote (RFQ). It does not constitute a solicitation and shall not be construed as a commitment by the Government. Responses in any form are not offers and the Government is under no obligation to award a contract as a result of this announcement. No funds shall be paid for preparation of responses to this announcement. Any information submitted by respondents to this notice is voluntary. Responses will not be returned to the responder. Not responding to this notice does not preclude participation in any future RFP, IFB, or RFQ. If a solicitation is released, it will be synopsized on the government-wide point of entry (GPE). It is the responsibility of potential offerors to monitor the GPE for additional information pertaining to this requirement. Objectives: Demo and remove buildings 115, 131, 133, tent structure 321, abandoned electrical components, guardrail, fencing, and concrete and asphalt areas as shown on the demolition plan. Purchase and install storm water control structures as shown in the drawings to include catch basins, piping, and trench drains to provide a proper flow channel and remove water from the areas allowing the grounds to be maintained. Purchase and install the required electrical conduit and wiring to support new fabric shelters. Prepare areas for placement of a new concrete access road, concrete tent pad, and concrete approach around building 137 and an asphalt shoulder patch as shown on the pavements plan. Purchase and install two new tensioned fabric shelters with liners, electrical equipment, interior lights, and doors as shown on attached drawing with one shelter having dehumidification equipment for humidity control. The contractor shall provide all labor, equipment, tools, appliances, transportation, materials, disposal and all documentation associated with the project. Site visit offered will be 7 April 2026 at 10:00 a.m. EST Additional Information and Submission Details: Interested parties are requested to submit an Interested Vendor Form and a narrative statement of no more than three pages length to the email address below by 4 pm, EST, 13 April 2026. All responses under this notice must be electronically mailed (e-mailed) to Adam Krouse, Contract Specialist, at adam.krouse@us.af.mil. No phone calls will be accepted.",
+  "detail_text_length": 2648,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/609ace76685b4fbba16b7aa93e687f72/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa3da1166941484282d94ffd5ea58844/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/609ace76685b4fbba16b7aa93e687f72/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fb122558674cf06f500a8253399f2db39d1df6555f116eb0caa67bafca713bdb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fb122558674cf06f500a8253399f2db39d1df6555f116eb0caa67bafca713bdb.pdf",
+      "file_id": "609ace76685b4fbba16b7aa93e687f72",
+      "file_name": "Interested+Vendor+Form+16MAR2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 83452,
+      "sha256": "fb122558674cf06f500a8253399f2db39d1df6555f116eb0caa67bafca713bdb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa3da1166941484282d94ffd5ea58844/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4d91f8ae2c1fd11fb3c67d8f1cd8d869ca945a1eac42a75fe4c96ba90e8b8b9e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4d91f8ae2c1fd11fb3c67d8f1cd8d869ca945a1eac42a75fe4c96ba90e8b8b9e.pdf",
+      "file_id": "aa3da1166941484282d94ffd5ea58844",
+      "file_name": "180th+FW+Engine+Shop+Phase+2_3-10-26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1133403,
+      "sha256": "4d91f8ae2c1fd11fb3c67d8f1cd8d869ca945a1eac42a75fe4c96ba90e8b8b9e"
+    }
+  ],
+  "_mirror_hash": "c6f4ff99a4c6433b60306355c25aaf847c8b260472d7cf90af7dc0e53c64a083",
+  "_mirror_run_id": "20260316T134237Z",
+  "_mirror_recorded_at": "2026-03-16T13:43:57.363127+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-032cd4cba3214c2598278c5b5f7a08eb",
+  "title": "Phalanx Shields Sensors",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=032cd4cba3214c2598278c5b5f7a08eb",
+  "opportunity_url": "https://sam.gov/opp/032cd4cba3214c2598278c5b5f7a08eb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/032cd4cba3214c2598278c5b5f7a08eb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "032cd4cba3214c2598278c5b5f7a08eb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326Q0043",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=032cd4cba3214c2598278c5b5f7a08eb",
+  "detail_text": "The contractor shall provide a fully operational Phalanx Shield sensors to enhance capability to detect, track, and classify human and vehicular movement.",
+  "detail_text_length": 154,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07bb2706670d4b0db2232993e425f5a8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c45ba25956b9485ab348658f38f20173/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07bb2706670d4b0db2232993e425f5a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/efe9a898d788314b7fc2281c5cf9da38f717d3d308af4455778450ef42400239.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/efe9a898d788314b7fc2281c5cf9da38f717d3d308af4455778450ef42400239.pdf",
+      "file_id": "07bb2706670d4b0db2232993e425f5a8",
+      "file_name": "Source+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76167,
+      "sha256": "efe9a898d788314b7fc2281c5cf9da38f717d3d308af4455778450ef42400239"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c45ba25956b9485ab348658f38f20173/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ec6e5a8a458cd0aa878ef0e8fb3a39a9bc920834461f40606b69680b7f52e4df.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ec6e5a8a458cd0aa878ef0e8fb3a39a9bc920834461f40606b69680b7f52e4df.pdf",
+      "file_id": "c45ba25956b9485ab348658f38f20173",
+      "file_name": "Salient+Characteristics+Phalanx+Shield+Sensors.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 602204,
+      "sha256": "ec6e5a8a458cd0aa878ef0e8fb3a39a9bc920834461f40606b69680b7f52e4df"
+    }
+  ],
+  "_mirror_hash": "d38e4409df82171fbc35720ca4fe8ead17728a570a03652479fa675632f444de",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.908557+00:00"
+}

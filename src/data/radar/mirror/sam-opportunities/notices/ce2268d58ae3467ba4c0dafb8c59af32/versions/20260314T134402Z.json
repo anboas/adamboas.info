@@ -1,0 +1,68 @@
+{
+  "id": "sam-ce2268d58ae3467ba4c0dafb8c59af32",
+  "title": "IRS-WV_CAFE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce2268d58ae3467ba4c0dafb8c59af32",
+  "opportunity_url": "https://sam.gov/opp/ce2268d58ae3467ba4c0dafb8c59af32/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ce2268d58ae3467ba4c0dafb8c59af32/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ce2268d58ae3467ba4c0dafb8c59af32",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IRS-WV_CAFE",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE.IRS/MARTINSBURG COMP CENT RES MGMT",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce2268d58ae3467ba4c0dafb8c59af32",
+  "detail_text": "Please see attached RFI/SSN Notice, PWS Draft, and Vendor Questions. THIS IS A REQUEST FOR INFORMATION (RFI) ONLY. This RFI is issued solely for market research, planning and information purposes and is not to be construed as a commitment by the U.S. Government to issue a subsequent solicitation (Request for Proposal, etc.). This RFI does not commit the U.S. Government to contract for any supply or service. IRS is not seeking proposals at this time. Further, IRS will not accept unsolicited proposals in response to this RFI. Participants in this market research are advised that the U.S. Government will not pay any costs incurred in response to this RFI. All costs associated with responding to this RFI will be solely at the interested party’s expense. Responses to this RFI will be used to identify potential sources, vehicles and set asides for specific small business classifications. There is no funding set aside for this requirement at the time of this RFI.",
+  "detail_text_length": 970,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44dfca5eaa9746a790dbb16b6428e92c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a2a729a740845c688154be0d82e97f0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d63cbdc9d5bf450a81108550e6919e43/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44dfca5eaa9746a790dbb16b6428e92c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3aa47ab42a0d36021eb632b9f2efe4ad64c24cb5818fd02a91b4c01ed2b048dc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3aa47ab42a0d36021eb632b9f2efe4ad64c24cb5818fd02a91b4c01ed2b048dc.pdf",
+      "file_id": "44dfca5eaa9746a790dbb16b6428e92c",
+      "file_name": "First+Draft+PWS+-+FY+2026+Cafeteria+Contract+v1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 311873,
+      "sha256": "3aa47ab42a0d36021eb632b9f2efe4ad64c24cb5818fd02a91b4c01ed2b048dc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a2a729a740845c688154be0d82e97f0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2b83fc1e95a2442062d5750c2a5f80508c09c752f4596505be5eeb71abd5c67c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2b83fc1e95a2442062d5750c2a5f80508c09c752f4596505be5eeb71abd5c67c.pdf",
+      "file_id": "7a2a729a740845c688154be0d82e97f0",
+      "file_name": "IRS_WV_Cafe_RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 245225,
+      "sha256": "2b83fc1e95a2442062d5750c2a5f80508c09c752f4596505be5eeb71abd5c67c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d63cbdc9d5bf450a81108550e6919e43/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3ff4e3d460021e0c4a4a08bc34b80fad7f2a1b3e392a12b0316b4c086a66c750.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3ff4e3d460021e0c4a4a08bc34b80fad7f2a1b3e392a12b0316b4c086a66c750.pdf",
+      "file_id": "d63cbdc9d5bf450a81108550e6919e43",
+      "file_name": "IRS_WV_Cafe_RFI_Questions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144688,
+      "sha256": "3ff4e3d460021e0c4a4a08bc34b80fad7f2a1b3e392a12b0316b4c086a66c750"
+    }
+  ],
+  "_mirror_hash": "4b63769b9d25c7b898fd0728e1268cdc682b3658556eb264f9de8922792ff1c9",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.979646+00:00"
+}

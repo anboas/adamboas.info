@@ -1,0 +1,59 @@
+{
+  "id": "sam-2cbedcf8088041ae92d1a70780fed369",
+  "title": "RFI-FA2835-1690 FTTD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2cbedcf8088041ae92d1a70780fed369",
+  "opportunity_url": "https://sam.gov/opp/2cbedcf8088041ae92d1a70780fed369/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2cbedcf8088041ae92d1a70780fed369/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2cbedcf8088041ae92d1a70780fed369",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA2835-1690",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA2835 AFLCMC HANSCOM PZI",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-11",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2cbedcf8088041ae92d1a70780fed369",
+  "detail_text": "A site visit will be held on Hanscom AFB on Monday 2 March 2026 beginning at 1:00 PM ET. Please be at the Hanscom AFB Visitor Control Center by Sartain Gate (formerly Vandenburg Gate) in Bldg. 1617, Old Bedford Rd., Hanscom AFB, MA, 01731 no later than 12:15 PM ET to allow enough time to obtain visitor passes. The contractor shall obtain base identification and vehicle passes for all visitors. You must contact Mia Orris by 1:00 PM ET on 25 February 2026 to register for the site visit to gain access to the base at mia.orris@us.af.mil. Please courtesy copy kristin.morrison.1@us.af.mil. All contractors MUST pre-register in order to attend. Each individual must possess a REAL ID compliant driver’s license or must present a second form of identification along with their non REAL ID-compliant identification, and registration and proof of insurance for each vehicle, including rentals. Please be aware that despite the legalization of marijuana possession in the Commonwealth of Massachusetts, under 21 U.S.C. § 812 and 21 U.S.C. § 844 marijuana possession remains a federal offense, and it is not allowed on Federal installations, including Hanscom AFB. All questions are due on or before 1:00 PM ET, 6 March 2026 . Answers will be posted to SAM.gov no later than 11 March 2026. Please see attached RFI for additional information/specifics.",
+  "detail_text_length": 1346,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10c4d1237f2e409f9eb54b696c836b07/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/711f2239256641389b4bec24eff68596/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10c4d1237f2e409f9eb54b696c836b07/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b49a76511ed5f16aee6b920fdb12c2625cea019facde2512c8273313c4787692.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b49a76511ed5f16aee6b920fdb12c2625cea019facde2512c8273313c4787692.pdf",
+      "file_id": "10c4d1237f2e409f9eb54b696c836b07",
+      "file_name": "RFI-+FA2835-1690+FTTD.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 146876,
+      "sha256": "b49a76511ed5f16aee6b920fdb12c2625cea019facde2512c8273313c4787692"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/711f2239256641389b4bec24eff68596/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0834348879f03451181ce8ee77f55b62e79b8c548a2921e3d4fe668b5e722a0a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0834348879f03451181ce8ee77f55b62e79b8c548a2921e3d4fe668b5e722a0a.pdf",
+      "file_id": "711f2239256641389b4bec24eff68596",
+      "file_name": "FTTD+and+VTC+QA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 47563,
+      "sha256": "0834348879f03451181ce8ee77f55b62e79b8c548a2921e3d4fe668b5e722a0a"
+    }
+  ],
+  "_mirror_hash": "f7a3883c4afc2e3f0ba60fa89259ef9f64327f0129b44a96831eee1394bfb9d6",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.022568+00:00"
+}

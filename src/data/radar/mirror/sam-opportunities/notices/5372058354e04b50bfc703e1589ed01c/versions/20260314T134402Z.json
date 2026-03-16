@@ -1,0 +1,57 @@
+{
+  "id": "sam-5372058354e04b50bfc703e1589ed01c",
+  "title": "Intent to Award Sole Source - HAP Server Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5372058354e04b50bfc703e1589ed01c",
+  "opportunity_url": "https://sam.gov/opp/5372058354e04b50bfc703e1589ed01c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5372058354e04b50bfc703e1589ed01c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5372058354e04b50bfc703e1589ed01c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA2396 USAF AFMC AFRL PZL AFRL PZLE",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5372058354e04b50bfc703e1589ed01c",
+  "detail_text": "The United States Air Force (the Government) intends to issue a Firm-Fixed-Price order to a single source; DDN Federal, LLC., on or about 1 April 2026. The period of performance (PoP) will run from 9 April 2026 to 8 April 2027. PSC : 7A21 NAICS : 541519 Size Standard : $34M Subscription Name : HAP Server Maintenance Supplier Name : DDN Federal, LLC. Product Description : -SEE REDACTED J&A This notice of intent is not a request for competitive quotations. However, all responsible sources may submit a capability statement, proposal, or quotation, which shall be considered by the Government. The Government will consider responses received within 3 days of issuance of this notice. Information received will normally be considered solely for the purpose of determining whether or not to conduct a full and open competitive procurement or a small business set aside competitive procurement. The Government will not pay for any information received in response to this announcement. A determination not to compete this requirement based upon responses to this notice is solely within the discretion of the Government. Contractors should be aware of the following information : Contractors must include the following information: Points of contact, addresses, email addresses, phone numbers. Identification as a large U.S. business, a small U.S. business, or a foreign business. Please note that size indicated should be based on the NAICS code for this effort listed above. Identification of any other socioeconomic status (Women-Owned Small Business, Economically Disadvantaged Small Business, 8(a), Service Disabled Veteran Owned Small Business, Veteran Owned Small Business or HUBZone). Company CAGE Code or DUNS Number. In your response, you must address how your product meets the product characteristics specified above. Submitted information shall be UNCLASSIFIED. Responses are limited to 10 pages in a Microsoft Word compatible format. Responses should be emailed to Anne Mitchell at anne.mitchell.1@us.af.mil no later than, 18 March 2026, 12:00 PM EST . Any questions should be directed to Anne Mitchell through email.",
+  "detail_text_length": 2130,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f26e5dc1873464eb506c156399fc500/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f117562f0de04c659b0fd3996ed1e686/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f26e5dc1873464eb506c156399fc500/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2e91b5eb6107d091cae919a0c7edaf32a8aa34903e283bce594f4917fdabc123.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2e91b5eb6107d091cae919a0c7edaf32a8aa34903e283bce594f4917fdabc123.pdf",
+      "file_id": "9f26e5dc1873464eb506c156399fc500",
+      "file_name": "SSJ_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 399135,
+      "sha256": "2e91b5eb6107d091cae919a0c7edaf32a8aa34903e283bce594f4917fdabc123"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f117562f0de04c659b0fd3996ed1e686/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/790f4b62d62c5b6d9d94eeffc1529e207861440bdb1b352a010cf32eba31aaa6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/790f4b62d62c5b6d9d94eeffc1529e207861440bdb1b352a010cf32eba31aaa6.docx",
+      "file_id": "f117562f0de04c659b0fd3996ed1e686",
+      "file_name": "IASS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23179,
+      "sha256": "790f4b62d62c5b6d9d94eeffc1529e207861440bdb1b352a010cf32eba31aaa6"
+    }
+  ],
+  "_mirror_hash": "c27f948039ff82e718b14d3f1942484ce77bddb4de482e1d980735a950f9666b",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.906655+00:00"
+}

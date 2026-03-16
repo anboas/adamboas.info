@@ -1,0 +1,46 @@
+{
+  "id": "sam-63f0c5fdf64a4ee3bee65f4589ac2c8e",
+  "title": "CaseCompressorAir_End_Item_F110_NSN_2840013119046PR_PN_9528M23G13",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63f0c5fdf64a4ee3bee65f4589ac2c8e",
+  "opportunity_url": "https://sam.gov/opp/63f0c5fdf64a4ee3bee65f4589ac2c8e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/63f0c5fdf64a4ee3bee65f4589ac2c8e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "63f0c5fdf64a4ee3bee65f4589ac2c8e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601527",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-04-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63f0c5fdf64a4ee3bee65f4589ac2c8e",
+  "detail_text": "See Attached Document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42b9bc03014f4f6899136bb2503e3b39/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42b9bc03014f4f6899136bb2503e3b39/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f27821b74d631fccd12817342e63283960040fc12f9ae6933d0299e424e82ab1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f27821b74d631fccd12817342e63283960040fc12f9ae6933d0299e424e82ab1.pdf",
+      "file_id": "42b9bc03014f4f6899136bb2503e3b39",
+      "file_name": "MRSSS+_+FD20302601527.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 709502,
+      "sha256": "f27821b74d631fccd12817342e63283960040fc12f9ae6933d0299e424e82ab1"
+    }
+  ],
+  "_mirror_hash": "3a44ec1837fcd7ebb37582182c194643cdcaa0a3165a0a675d100dea93a9b8d0",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.222733+00:00"
+}

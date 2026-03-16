@@ -1,0 +1,57 @@
+{
+  "id": "sam-c53f068e5a97432da6515f36f5cd4a5b",
+  "title": "Chief Orientation Course Guest Speaker (01) - HAF/A1 OCMSAF, Maxwell AFB",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c53f068e5a97432da6515f36f5cd4a5b",
+  "opportunity_url": "https://sam.gov/opp/c53f068e5a97432da6515f36f5cd4a5b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c53f068e5a97432da6515f36f5cd4a5b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c53f068e5a97432da6515f36f5cd4a5b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA330026RFI098",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3300  42 CONS CC",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c53f068e5a97432da6515f36f5cd4a5b",
+  "detail_text": "The 42d Contracting Squadron, Maxwell AFB, AL , is conducting market research to identify qualified sources capable of providing services of briefing a 1-hr session for the 2026 Chief Orientation Course to instill warrior ethos, mental toughness, accountability, and teamwork. All feedback and information received may be used to determine the appropriate acquisition strategy. The Government is seeking information from industry to assist in determining what types of products and capabilities are available in the market for this type of requirement outlined in the attached DRAFT Statement of Requirement (SOR).",
+  "detail_text_length": 614,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1befb6671984faeafe9ff05ec6f9552/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f401aeb4a22143f2baf23254e09a294a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1befb6671984faeafe9ff05ec6f9552/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ffe3c84307e446dd34b3359ab7d6ec01ad7be98e7f89913036c4e168ab4d54c6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ffe3c84307e446dd34b3359ab7d6ec01ad7be98e7f89913036c4e168ab4d54c6.pdf",
+      "file_id": "d1befb6671984faeafe9ff05ec6f9552",
+      "file_name": "Attachment+1+-+Statement+of+Requirement+-SOR-+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 257799,
+      "sha256": "ffe3c84307e446dd34b3359ab7d6ec01ad7be98e7f89913036c4e168ab4d54c6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f401aeb4a22143f2baf23254e09a294a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4bea5873c78c8d9f99ce9e9463816830c78e693f0750c27b611387b7e71cf3fd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4bea5873c78c8d9f99ce9e9463816830c78e693f0750c27b611387b7e71cf3fd.docx",
+      "file_id": "f401aeb4a22143f2baf23254e09a294a",
+      "file_name": "Attachment+2+-+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20338,
+      "sha256": "4bea5873c78c8d9f99ce9e9463816830c78e693f0750c27b611387b7e71cf3fd"
+    }
+  ],
+  "_mirror_hash": "3e3069cefe8b6c7bf2f786b39e0a65209fc5b9ab1dd3dd193f40a01afa36902c",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.899599+00:00"
+}

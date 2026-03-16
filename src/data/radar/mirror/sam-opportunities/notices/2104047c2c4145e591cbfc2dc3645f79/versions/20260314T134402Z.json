@@ -1,0 +1,58 @@
+{
+  "id": "sam-2104047c2c4145e591cbfc2dc3645f79",
+  "title": "USSC CCTVs Sources Sought",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2104047c2c4145e591cbfc2dc3645f79",
+  "opportunity_url": "https://sam.gov/opp/2104047c2c4145e591cbfc2dc3645f79/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2104047c2c4145e591cbfc2dc3645f79/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2104047c2c4145e591cbfc2dc3645f79",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SSUSSCCCTVsFY26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2104047c2c4145e591cbfc2dc3645f79",
+  "detail_text": "The Peterson Space Force Base (PSFB) 21st Contracting Squadron is requesting information from vendors that provide CCTVs. This sources sought is issued for the purpose of market research in accordance with FAR Part 10. Please see the attachments for information pertaining to this Sources Sought.",
+  "detail_text_length": 296,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/03bfa8f3c9e2454db46b3519fb4a1947/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cde970e1b8343f498d93ec3ac78f389/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/03bfa8f3c9e2454db46b3519fb4a1947/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4df6b99b8a630138689f1ed75406a9b8a98bbd6e9b148e542df86b4d770a1d99.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4df6b99b8a630138689f1ed75406a9b8a98bbd6e9b148e542df86b4d770a1d99.docx",
+      "file_id": "03bfa8f3c9e2454db46b3519fb4a1947",
+      "file_name": "USSC+CCTVs+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58738,
+      "sha256": "4df6b99b8a630138689f1ed75406a9b8a98bbd6e9b148e542df86b4d770a1d99"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cde970e1b8343f498d93ec3ac78f389/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c96df768d358f78a37aef869081e4eee70e446288c3a2de51f38e5e283ad448b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c96df768d358f78a37aef869081e4eee70e446288c3a2de51f38e5e283ad448b.docx",
+      "file_id": "3cde970e1b8343f498d93ec3ac78f389",
+      "file_name": "Attachment+1+-+CCTVs+Salient+Characteristics.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15190,
+      "sha256": "c96df768d358f78a37aef869081e4eee70e446288c3a2de51f38e5e283ad448b"
+    }
+  ],
+  "_mirror_hash": "12ab3383f0644e8b7cc0e7f22c27f487d40ac01d31045ad807fee22b513a14c2",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.829491+00:00"
+}

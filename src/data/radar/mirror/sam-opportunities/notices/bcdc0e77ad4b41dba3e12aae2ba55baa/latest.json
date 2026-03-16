@@ -1,0 +1,46 @@
+{
+  "id": "sam-bcdc0e77ad4b41dba3e12aae2ba55baa",
+  "title": "Back 40 Generator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bcdc0e77ad4b41dba3e12aae2ba55baa",
+  "opportunity_url": "https://sam.gov/opp/bcdc0e77ad4b41dba3e12aae2ba55baa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bcdc0e77ad4b41dba3e12aae2ba55baa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bcdc0e77ad4b41dba3e12aae2ba55baa",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA5025-26-Q-A004",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.PACIFIC AIR FORCES.FA5025  356 ECEG PK",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bcdc0e77ad4b41dba3e12aae2ba55baa",
+  "detail_text": "The 356 ETSG is seeking information from potential vendors capable of supplying and delivering one (1) Caterpillar XQ570 Diesel Generator (Brand Name Only) to Andersen Air Base, Guam. This Sources Sought Notice is issued for market research purposes in accordance with FAR Part 10. Interested vendors are encouraged to review the attached document, which includes: A detailed description of the requirement, A questionnaire for interested parties, and A disclaimer outlining the purpose and limitations of this notice. Responses are due no later than 2:00 PM Chamorro Standard Time (ChST) on March 18, 2026 . Submission instructions and contact information are provided in the attachment. Attachment: Sources Sought – Back 40 Generator",
+  "detail_text_length": 735,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ed4ba19f9ef42fa944fd7864ad3f367/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ed4ba19f9ef42fa944fd7864ad3f367/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fe205b074321733c0b460d3ea9e5d8028d75124ee425584ca900f1595975fda1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fe205b074321733c0b460d3ea9e5d8028d75124ee425584ca900f1595975fda1.pdf",
+      "file_id": "9ed4ba19f9ef42fa944fd7864ad3f367",
+      "file_name": "Back+40+Generator+-+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3253738,
+      "sha256": "fe205b074321733c0b460d3ea9e5d8028d75124ee425584ca900f1595975fda1"
+    }
+  ],
+  "_mirror_hash": "1852642841169c8e117feca9073c7561fab5a410348a8a313d59fee30bc5ef1f",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.111818+00:00"
+}

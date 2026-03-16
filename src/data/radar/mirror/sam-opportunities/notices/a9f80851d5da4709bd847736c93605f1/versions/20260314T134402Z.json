@@ -1,0 +1,57 @@
+{
+  "id": "sam-a9f80851d5da4709bd847736c93605f1",
+  "title": "CRRC Facility Maintenance Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9f80851d5da4709bd847736c93605f1",
+  "opportunity_url": "https://sam.gov/opp/a9f80851d5da4709bd847736c93605f1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a9f80851d5da4709bd847736c93605f1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a9f80851d5da4709bd847736c93605f1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10X26Q0091",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.SAC FREDERICK (36C10X)",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9f80851d5da4709bd847736c93605f1",
+  "detail_text": "The Department of Veterans Affairs (VA), Capital Region Readiness Center (CRRC) has a requirement for the maintenance of the CRRC. The facility is a 24/7/365 operation and as such maintaining the CRRC is critical to the readiness objective of the mission. The Contractor shall provide all labor, supplies, personnel, equipment, tools, materials, supervision and other items and services necessary for the monitoring, maintenance, and repair of building components, structures, emergency electrical power system, and the associated diesel fuel storage plant and fuel delivery and transfer components. All systems shall be maintained according to manufacturers’ recommendations for service level and interval. March 13, 2026 - SOURCES SOUGHT RESPONSE DATE CORRECTED IN DOCUMENT.",
+  "detail_text_length": 776,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6818d0e54fb444d9a59746f03d2fe6d0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aee306a55fc144ea93067bd774eae61e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6818d0e54fb444d9a59746f03d2fe6d0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/375dd6e3ed2fdeaee3e0e6c4b6eb690ee08ee683a652e2af13a750a8cc09e0e4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/375dd6e3ed2fdeaee3e0e6c4b6eb690ee08ee683a652e2af13a750a8cc09e0e4.pdf",
+      "file_id": "6818d0e54fb444d9a59746f03d2fe6d0",
+      "file_name": "36C10X26Q0091+Sources+Sought+_+REVISED_13+March+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 205748,
+      "sha256": "375dd6e3ed2fdeaee3e0e6c4b6eb690ee08ee683a652e2af13a750a8cc09e0e4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aee306a55fc144ea93067bd774eae61e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6b32616d92c820c4a7a33988368da00c526aa5f786359bd92f351e1292158b24.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6b32616d92c820c4a7a33988368da00c526aa5f786359bd92f351e1292158b24.pdf",
+      "file_id": "aee306a55fc144ea93067bd774eae61e",
+      "file_name": "36C10X26Q0091+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181768,
+      "sha256": "6b32616d92c820c4a7a33988368da00c526aa5f786359bd92f351e1292158b24"
+    }
+  ],
+  "_mirror_hash": "1781ae6d7b7813853e96052ad59c2be393dc81c9749a9e2ab965a4cf85884d1d",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.994194+00:00"
+}

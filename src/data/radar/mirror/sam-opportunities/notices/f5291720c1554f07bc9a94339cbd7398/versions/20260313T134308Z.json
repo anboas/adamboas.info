@@ -1,0 +1,46 @@
+{
+  "id": "sam-f5291720c1554f07bc9a94339cbd7398",
+  "title": "Chromium - DLA SP8000",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f5291720c1554f07bc9a94339cbd7398",
+  "opportunity_url": "https://sam.gov/opp/f5291720c1554f07bc9a94339cbd7398/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f5291720c1554f07bc9a94339cbd7398/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f5291720c1554f07bc9a94339cbd7398",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI-Chromium",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DCSO COLUMBUS DIVISION #3",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f5291720c1554f07bc9a94339cbd7398",
+  "detail_text": "1. DISCLAIMER: This request for information (RFI) is for planning purposes only and is not a request for quote (RFQ), invitation for bid (IFB), or an obligation on the part of the government to acquire any supplies or services. Responses to this RFI are not quotes or offers and cannot be accepted by the government to form a binding contract. The government will determine if/how to proceed based on the results of this notice. Companies that respond to this notice should not expect to receive feedback regarding submissions. The government will not pay any costs incurred in response to this notice. All costs associated with responding to this RFI will be solely at the expense of the responding party. The information provided in this notice is subject to change and is not binding on the government. All submissions become government property and will not be returned. DLA Strategic Materials representatives may or may not choose to meet with potential offerors. Such conversations would only be intended to get further clarification of potential capability to meet the requirements, especially any development and certification risks. 2. SCOPE OF WORK: The Defense Logistics Agency (DLA) Strategic Materials Directorate is seeking information for the potential acquisition of Chromium metal (99.9% pure or higher) – approximately 4,500 short tons (95000,000 lbs.) for addition into the National Defense Stockpile (NDS).",
+  "detail_text_length": 1427,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/714b63921fb14dd18f4a9c7ce7bc9e5d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/714b63921fb14dd18f4a9c7ce7bc9e5d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d366cc0c140a305a2f12216d53b75ec0ecace72803ff3f5933f1696dfe618974.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d366cc0c140a305a2f12216d53b75ec0ecace72803ff3f5933f1696dfe618974.pdf",
+      "file_id": "714b63921fb14dd18f4a9c7ce7bc9e5d",
+      "file_name": "RFI+Chromium.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 221093,
+      "sha256": "d366cc0c140a305a2f12216d53b75ec0ecace72803ff3f5933f1696dfe618974"
+    }
+  ],
+  "_mirror_hash": "aede9e045b4231ea33f9c71cdf0ab6b727e32aece60de29bac0d78f2f56da820",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.123932+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-4a981e9813874f909d23f981e3608e8f",
+  "title": "VISN 15 Bed/Mattress Rental",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a981e9813874f909d23f981e3608e8f",
+  "opportunity_url": "https://sam.gov/opp/4a981e9813874f909d23f981e3608e8f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4a981e9813874f909d23f981e3608e8f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4a981e9813874f909d23f981e3608e8f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25526Q0263",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a981e9813874f909d23f981e3608e8f",
+  "detail_text": "Statement of Requirements The Department of Veterans Affairs (VA), VISN 15 VA Hospital Medical Centers (VAMCs), has a requirement for the rental of inpatient beds, mattresses, and accessories (See List Below) The requirement will include all inpatient requirements of the facility along with; Spinal Cord Injury Units, and Community Living Centers located at the facilities only. Under the contract the contractor shall provide delivery, set-up, maintenance/service/repair, and pick-up of all items. Key Operator Training will also be needed for all rental items. VISN 15 FACILITY LOCATIONS ARE: VAMC Marion IL: 2401 W Main St. Marion IL 62959 VAMC Kansas City: 4801 Linwood Blvd, Kansas City MO 64128 VAMC St. Louis- John Cochran Division: 915 North Grand Blvd, St. Louis MO 63106 VAMC St. Louis-Jefferson Barracks Division: 1 Jefferson Barracks Drive, St. Louis MO 63125 VAMC Columbia: 800 Hospital Drive, Columbia MO 65201 VAMC Poplar Bluff: 1500 N. Westwood, Poplar Bluff MO 63901 VAMC Wichita: Dole VAMC 5500 E Kellogg, Wichita KS 67218 VAMC Topeka: 2200 Gage Blvd, Topeka KS 66622 VAMC Leavenworth: 4101 S. 4th. St. Trafficway, Leavenworth KS 66048",
+  "detail_text_length": 1154,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd2426ab638148dc9fdb0f83b1a98649/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd2426ab638148dc9fdb0f83b1a98649/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f36ad3d3638d30c4d2d24b07415fccfe681c79e0c1b42cb4e12f7725c2532c4a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f36ad3d3638d30c4d2d24b07415fccfe681c79e0c1b42cb4e12f7725c2532c4a.pdf",
+      "file_id": "bd2426ab638148dc9fdb0f83b1a98649",
+      "file_name": "36C25526Q0263.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 189573,
+      "sha256": "f36ad3d3638d30c4d2d24b07415fccfe681c79e0c1b42cb4e12f7725c2532c4a"
+    }
+  ],
+  "_mirror_hash": "46b13ef445a21c6037b79765ced22df7df0be6e62ca482989bf53d3a7bab97c2",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.947997+00:00"
+}

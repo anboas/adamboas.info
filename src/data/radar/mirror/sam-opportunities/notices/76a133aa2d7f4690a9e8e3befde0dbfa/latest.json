@@ -1,0 +1,46 @@
+{
+  "id": "sam-76a133aa2d7f4690a9e8e3befde0dbfa",
+  "title": "BLADE SET,COMPRESSO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76a133aa2d7f4690a9e8e3befde0dbfa",
+  "opportunity_url": "https://sam.gov/opp/76a133aa2d7f4690a9e8e3befde0dbfa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/76a133aa2d7f4690a9e8e3befde0dbfa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "76a133aa2d7f4690a9e8e3befde0dbfa",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPRTA126Q0242",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76a133aa2d7f4690a9e8e3befde0dbfa",
+  "detail_text": "NSN: 2840013224798NZ PN: 4077733 AMC: 3V",
+  "detail_text_length": 40,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c4067ad3e7ae40618f462422d236bd97/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c4067ad3e7ae40618f462422d236bd97/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9bb67765bbd5d215f8b52ae7d52ff65697d48427e7d21946d2769cdd52a4f58e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9bb67765bbd5d215f8b52ae7d52ff65697d48427e7d21946d2769cdd52a4f58e.pdf",
+      "file_id": "c4067ad3e7ae40618f462422d236bd97",
+      "file_name": "Waiver+to+Synopsis+for+Sam.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 146569,
+      "sha256": "9bb67765bbd5d215f8b52ae7d52ff65697d48427e7d21946d2769cdd52a4f58e"
+    }
+  ],
+  "_mirror_hash": "07cdc495eca488471f164f5071b5e0911004eef31718bfb346a3140cf05fab16",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.082205+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-823c7598d9d947f089734f4809a5e69d",
+  "title": "Request for Information (RFI) – Friendly Force Tracker (FFT)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=823c7598d9d947f089734f4809a5e69d",
+  "opportunity_url": "https://sam.gov/opp/823c7598d9d947f089734f4809a5e69d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/823c7598d9d947f089734f4809a5e69d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "823c7598d9d947f089734f4809a5e69d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8629-26-R-5008",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.INTELLIGENCE, SURVEILLANCE, RECONNAISSANCE.FA8629 AFLCMC WISK SOF/PR",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=823c7598d9d947f089734f4809a5e69d",
+  "detail_text": "This Sources Sought Synopsis (SSS)/Request for Information (RFI) is issued for informational purposes and market research only; it does not constitute a solicitation. The Government will not reimburse any company or individual for any expenses associated with preparing/submitting information in response to this posting. The information provided may be used by the Government in developing its acquisition strategy, statement of work/statement of objectives, and/or performance specifications. Interested parties are responsible for adequately marking proprietary or competition sensitive information contained within their response as instructed later in this posting. The United States (US) Air Force Life Cycle Management Center (AFLCMC), Intelligence, Surveillance and Reconnaissance & Special Operations Forces (ISR & SOF) Directorate, Special Warfare (SW) Program Office (AFLCMC/WISN) and Contracting Office (AFLCMC/WISK) are conducting market research to identify possible sources that can manufacture/acquire a small form factor Low Probability of Identification (LPI) / Low Probability of Detection (LPD) Friendly Force Tracker (FFT). Tracker should be capable of operating across a range of new and/or emerging waveforms operating in and out of previously unused bands, which have not been highlighted by overuse, or exploited by the pacing threat. USAF dismounted operators deploy at or near the forward edge to conduct operations, operations include tactical control of airborne strike assets, special tactics, and assault zone operations. These may require staging at forward operating sites up to 250 nautical miles (NM) from main operating bases and command and control (C2) nodes to support Combat Air Forces. Forward operating sites may face enemy attempts to locate friendly forces through electromagnetic emissions from line of sight (LOS)/Over the Horizon (OTH) communications, and global positioning systems jamming. Adapting communications capability to counter near peer detection and jamming capabilities is essential to ensure uncontested access and the ability to freely maneuver throughout the range of military operations around the globe. This capability will allow dismounted operators to maneuver through denied and degraded frequency environments. This is a Request for Information (RFI) only to identify potential sources for the solution. The information provided in the RFI is subject to change and is not binding on the Government. The Government has not made a commitment to procure any of the items discussed, and release of this RFI should not be construed as creating such a commitment or as an authorization to incur cost for which reimbursement would be required or sought. Please see attachment for further details and instructions on how to respond to this Request for Information.",
+  "detail_text_length": 2826,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8256db4641d04506bd05763c2e8f70e5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8256db4641d04506bd05763c2e8f70e5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df4aab279cb0486909f02aeb17590815f88b79642510a8ec97067f33f49d58f9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df4aab279cb0486909f02aeb17590815f88b79642510a8ec97067f33f49d58f9.pdf",
+      "file_id": "8256db4641d04506bd05763c2e8f70e5",
+      "file_name": "Request+for+Information+26R5008+-+FFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262209,
+      "sha256": "df4aab279cb0486909f02aeb17590815f88b79642510a8ec97067f33f49d58f9"
+    }
+  ],
+  "_mirror_hash": "c7facb97f83c58cbb4996b206fa8e011190639f98dc0c032eadeda35d7837aa5",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.059958+00:00"
+}

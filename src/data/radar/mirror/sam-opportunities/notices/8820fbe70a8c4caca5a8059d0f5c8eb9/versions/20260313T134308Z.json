@@ -1,0 +1,46 @@
+{
+  "id": "sam-8820fbe70a8c4caca5a8059d0f5c8eb9",
+  "title": "Program Manager Development Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8820fbe70a8c4caca5a8059d0f5c8eb9",
+  "opportunity_url": "https://sam.gov/opp/8820fbe70a8c4caca5a8059d0f5c8eb9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8820fbe70a8c4caca5a8059d0f5c8eb9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8820fbe70a8c4caca5a8059d0f5c8eb9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "75N99226SS105",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.ADVANCED RESEARCH PROJECTS AGENCY FOR HEALTH (ARPA-H)",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8820fbe70a8c4caca5a8059d0f5c8eb9",
+  "detail_text": "The Advanced Research Projects Agency for Health (ARPA-H) is conducting market research in support of the Office of the Director (DIRO). ARPA-H has a requirement for a Program Manager Development Program to further the agency’s mission. This requirement supports ARPA-H in executing its mission by enhancing Program Manager (PM) development, and implementation capability through an ARPA-H Program Manager Development Framework. This requirement is intended to deploy and sustain a fully operational Program Manager Development Framework by: Providing a day 1 fully deployable ready-to-use Program Manager Development Framework—requiring no additional stand‑up time—that is specifically designed to train and prepare Program Managers to operate effectively in an ARPA-like environment. The contractor shall demonstrate experience operating within an ARPA or similar high-risk, high-reward innovation culture to design, deliver, and refine the framework so that it rapidly builds and sustains program management, performer engagement, risk-mitigation, and transition-planning capabilities. Strengthening the capabilities of current ARPA-H PMs through structured mentorship, cross-PM learning, and targeted skill development that improves program design, metrics definition, risk management, and transition strategies. This Sources Sought Notice serves to determine the capabilities of the market to provide specialized and agile solutions. Please see the attachment PMDP_SSN_031226 for further information that is being requested and instructions for responding to this notice.",
+  "detail_text_length": 1576,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3d260966a0345129ef8318214bd8ea0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3d260966a0345129ef8318214bd8ea0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4825844a4ea04116de541ddd0148e4bef5465ac47e139d6be2d5f937044718de.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4825844a4ea04116de541ddd0148e4bef5465ac47e139d6be2d5f937044718de.pdf",
+      "file_id": "c3d260966a0345129ef8318214bd8ea0",
+      "file_name": "PMDP_SSN_031226.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 229360,
+      "sha256": "4825844a4ea04116de541ddd0148e4bef5465ac47e139d6be2d5f937044718de"
+    }
+  ],
+  "_mirror_hash": "e42265cfc199f65679ff0ce16d1a39ec1c7bfcc6203d67aa35f157f985dc97fe",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.157815+00:00"
+}

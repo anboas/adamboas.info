@@ -1,0 +1,123 @@
+{
+  "id": "sam-a1c0859e3a4f4e48b850a97e89881f2d",
+  "title": "Y--NGWSP BLOCK 2-3 PIPELINE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1c0859e3a4f4e48b850a97e89881f2d",
+  "opportunity_url": "https://sam.gov/opp/a1c0859e3a4f4e48b850a97e89881f2d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a1c0859e3a4f4e48b850a97e89881f2d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a1c0859e3a4f4e48b850a97e89881f2d",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140R4026B0001",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.UPPER COLORADO REGIONAL OFFICE",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-06-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1c0859e3a4f4e48b850a97e89881f2d",
+  "detail_text": "NGWSP BLOCK 2-3 PIPELINE - Amendment to include Draft Solicitation and attachments, including Draft Specs, Draft Drawings, subcontracting plan, and wage determinations.",
+  "detail_text_length": 168,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/132c59225b9a43df929edee3e20da2e6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ea1445c20234f2b953089eca726a73c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/256a564cfd37481d876dba41393c3953/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36f9ea6a92a44294a2f044e9689659cf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/724a959e68294c2984c35edfe1803cb0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96a1b878c0324019b7f901e2260fa720/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e32d0b2b07944e92893eafd3a8ad2c85/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6168dac05b94f8bb742bc511d9837f6/download"
+  ],
+  "resource_count": 8,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/132c59225b9a43df929edee3e20da2e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/28996bcbf964002500e15a114c9d6592a952e93e16177dd66c70be863b2d32f7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/28996bcbf964002500e15a114c9d6592a952e93e16177dd66c70be863b2d32f7.docx",
+      "file_id": "132c59225b9a43df929edee3e20da2e6",
+      "file_name": "Attachment_4__Small_Business_Subcontracting_Plan_3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56997,
+      "sha256": "28996bcbf964002500e15a114c9d6592a952e93e16177dd66c70be863b2d32f7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ea1445c20234f2b953089eca726a73c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0562c0f6a4251521987a074ef77822942629bb658eecf1537699b28b721d566a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0562c0f6a4251521987a074ef77822942629bb658eecf1537699b28b721d566a.pdf",
+      "file_id": "1ea1445c20234f2b953089eca726a73c",
+      "file_name": "Attachment_3_DRAFT_NGWSP_BLK2-3_90__Geotech_Drawings_and_Logs_3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67163230,
+      "sha256": "0562c0f6a4251521987a074ef77822942629bb658eecf1537699b28b721d566a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/256a564cfd37481d876dba41393c3953/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0534d87745a6b1c6a1e2a3519536c20c7bf034f727e7b3cd69b8b2b7266f1675.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0534d87745a6b1c6a1e2a3519536c20c7bf034f727e7b3cd69b8b2b7266f1675.pdf",
+      "file_id": "256a564cfd37481d876dba41393c3953",
+      "file_name": "Attachment_6__WD_NM20260046_Building_-_San_Juan_County__NM_3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169674,
+      "sha256": "0534d87745a6b1c6a1e2a3519536c20c7bf034f727e7b3cd69b8b2b7266f1675"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36f9ea6a92a44294a2f044e9689659cf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f36ee57651039f80769984e2a9701abc23feddd8a4b9d9b4826eb686a678436a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f36ee57651039f80769984e2a9701abc23feddd8a4b9d9b4826eb686a678436a.pdf",
+      "file_id": "36f9ea6a92a44294a2f044e9689659cf",
+      "file_name": "140R4026B0001_Draft_IFB_3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2418435,
+      "sha256": "f36ee57651039f80769984e2a9701abc23feddd8a4b9d9b4826eb686a678436a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/724a959e68294c2984c35edfe1803cb0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6a61715f8854893ba4144cd58593b15c2f7a3fd596002cf1922a21a0158b758c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6a61715f8854893ba4144cd58593b15c2f7a3fd596002cf1922a21a0158b758c.pdf",
+      "file_id": "724a959e68294c2984c35edfe1803cb0",
+      "file_name": "Attachment_1_DRAFT_NGWSP_BLK_2-3_90__Specs_3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 37052660,
+      "sha256": "6a61715f8854893ba4144cd58593b15c2f7a3fd596002cf1922a21a0158b758c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96a1b878c0324019b7f901e2260fa720/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/75911e79b365be493169e431d31a83b5240863b403f988bf3ddf9e2a2dd9d51a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/75911e79b365be493169e431d31a83b5240863b403f988bf3ddf9e2a2dd9d51a.pdf",
+      "file_id": "96a1b878c0324019b7f901e2260fa720",
+      "file_name": "Attachment_2_DRAFT_NGWSP_BLK2-3_90__Drawings_3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64394640,
+      "sha256": "75911e79b365be493169e431d31a83b5240863b403f988bf3ddf9e2a2dd9d51a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e32d0b2b07944e92893eafd3a8ad2c85/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/21c97d09f05cfebb6a92bdd81c9ef2489aa9134e730a8c2f10d0b4b5d4f8b498.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/21c97d09f05cfebb6a92bdd81c9ef2489aa9134e730a8c2f10d0b4b5d4f8b498.pdf",
+      "file_id": "e32d0b2b07944e92893eafd3a8ad2c85",
+      "file_name": "Attachment_5_WD_NM20260040_Heavy_-_San_Juan_County__NM_3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144086,
+      "sha256": "21c97d09f05cfebb6a92bdd81c9ef2489aa9134e730a8c2f10d0b4b5d4f8b498"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6168dac05b94f8bb742bc511d9837f6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fc0224e5bffd0833e6a04c22d0678a297cb3678629605c1234a87590e3da6fe9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fc0224e5bffd0833e6a04c22d0678a297cb3678629605c1234a87590e3da6fe9.pdf",
+      "file_id": "e6168dac05b94f8bb742bc511d9837f6",
+      "file_name": "140R4026B0001_Synopsis_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 160925,
+      "sha256": "fc0224e5bffd0833e6a04c22d0678a297cb3678629605c1234a87590e3da6fe9"
+    }
+  ],
+  "_mirror_hash": "650f4066c48e864a8212d74cd773cad91d1630ee9f2ba5eea6eaa8dae788038c",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:19.017753+00:00"
+}

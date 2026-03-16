@@ -1,0 +1,46 @@
+{
+  "id": "sam-a7d8b992cd1249faa129d522a1efbdfb",
+  "title": "Propane Supply and Delivery in Romney, WV and Wheeling, WV",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7d8b992cd1249faa129d522a1efbdfb",
+  "opportunity_url": "https://sam.gov/opp/a7d8b992cd1249faa129d522a1efbdfb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a7d8b992cd1249faa129d522a1efbdfb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a7d8b992cd1249faa129d522a1efbdfb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W15QKN26QA070",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-NJ.W6QK ACC-PICA",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7d8b992cd1249faa129d522a1efbdfb",
+  "detail_text": "On behalf of the 99th Readiness Division we have a requirement for Propane Delivery in Romney, WV (WV038) and Wheeling, WV (WV053). Please see Draft-Statement of Work (SOW) for requirements. This Sources Sought which is issued solely for information and planning purposes and shall not be misconstrued as a Request for Quote (RFQ), nor does it constitute a commitment to the Government. All information submitted in response to this announcement is voluntary; the Government will not pay for information requested. Please email all inquiries to Tyler Behr and Raina Derrick at tyler.e.behr2.civ@army.mil and raina.m.derrick.civ@army.mil.",
+  "detail_text_length": 637,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc79c12a852a4858a2ef75b42d0c8405/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc79c12a852a4858a2ef75b42d0c8405/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8af4434ada56435a2f8f0a638f171ddd5f22f018362e03ac6a2730442ccd13c1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8af4434ada56435a2f8f0a638f171ddd5f22f018362e03ac6a2730442ccd13c1.docx",
+      "file_id": "dc79c12a852a4858a2ef75b42d0c8405",
+      "file_name": "SOW+Propane++WV038_WV053.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52206,
+      "sha256": "8af4434ada56435a2f8f0a638f171ddd5f22f018362e03ac6a2730442ccd13c1"
+    }
+  ],
+  "_mirror_hash": "3733f98087c2883cb27226d6425ed4d92d8ca5d53aac156f69ececfa658eec65",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.133959+00:00"
+}

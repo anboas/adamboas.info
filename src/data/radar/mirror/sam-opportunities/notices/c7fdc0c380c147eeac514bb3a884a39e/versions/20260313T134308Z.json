@@ -1,0 +1,46 @@
+{
+  "id": "sam-c7fdc0c380c147eeac514bb3a884a39e",
+  "title": "Section X: Survival Training Equipment, Supplies, and Contractor Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c7fdc0c380c147eeac514bb3a884a39e",
+  "opportunity_url": "https://sam.gov/opp/c7fdc0c380c147eeac514bb3a884a39e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c7fdc0c380c147eeac514bb3a884a39e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c7fdc0c380c147eeac514bb3a884a39e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W91QF026Q6006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-CARLISLE BARRACKS",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c7fdc0c380c147eeac514bb3a884a39e",
+  "detail_text": "This requirement supports training in wilderness survival, food procurement, cooking, fire craft, and the humane handling of live training fish. The contractor shall provide all equipment, materials, labor (i.e., all contractor personnel time associated with planning, transporting, installing, tensioning, anchoring, inspecting, coordinating, correcting deficiencies, removing, and documenting required systems), delivery, and specialized technical support required to enable the execution of the Cadet Field Training (CFT) Survival Training Program occurring during CFT 1, CFT 1/A, and CFT 2 in May & June 2026. All delivered items and services shall meet Army environmental, safety, and ethical standards and comply with New York State (NYS) Department of Environmental Conservation (DEC) regulations and USMA Directorate of Public Works (DPW) Natural Resources guidance. The contractor shall ensure all materials and services are available in support of the following training windows: - CFT 1 & CFT 1/A: 2931 May 2026 - CFT 2: 712 June 2026 Fish delivery timelines shall align with: - Delivery Window 1: 2527 May 2026 (~175 live fish) - Delivery Window 2: 35 June 2026 (~350 live fish) The place of performance/delivery address is as follows: Camp Buckner Parade Field Highland Mills, NY 10930 Please see attached Performance Work Statement for further details.",
+  "detail_text_length": 1366,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/45221a4d631140c2aa84eafad8586aa5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/45221a4d631140c2aa84eafad8586aa5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f0683d8275460d55fffc8acf0b177e5e9f993494709ee90b9d96870f4898266a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f0683d8275460d55fffc8acf0b177e5e9f993494709ee90b9d96870f4898266a.docx",
+      "file_id": "45221a4d631140c2aa84eafad8586aa5",
+      "file_name": "PWS_CFT2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 35510,
+      "sha256": "f0683d8275460d55fffc8acf0b177e5e9f993494709ee90b9d96870f4898266a"
+    }
+  ],
+  "_mirror_hash": "133de37f705a680df6d3e30ae59ff5e7e6c7106ec8d673878a3c47c4f954db87",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.166152+00:00"
+}

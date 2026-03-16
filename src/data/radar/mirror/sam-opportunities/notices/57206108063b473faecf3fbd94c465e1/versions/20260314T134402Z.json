@@ -1,0 +1,57 @@
+{
+  "id": "sam-57206108063b473faecf3fbd94c465e1",
+  "title": "Gage Block Comparator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57206108063b473faecf3fbd94c465e1",
+  "opportunity_url": "https://sam.gov/opp/57206108063b473faecf3fbd94c465e1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/57206108063b473faecf3fbd94c465e1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "57206108063b473faecf3fbd94c465e1",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6426726Q4015",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57206108063b473faecf3fbd94c465e1",
+  "detail_text": "This is a combined synopsis/solicitation for commercial items prepared in accordance with the format in Subpart 12.6, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; proposals are being requested and a written solicitation will not be issued. The solicitation document and incorporated provisions and clauses are those in effect through Federal Acquisition Circular 2025-05 Effective date: 8/07/2025. The provisions at 52.212-1, 52.212-2, 52.212-3 and the clauses at 52.212-4, 52.212-5 apply to this acquisition; no addenda are attached. The Naval Surface Warfare Center (NSWC) Corona Division intends to use other than full and open competition to award a sole source Firm Fixed Price (FFP) contract to All Axis Precision . This is an all-or-none requirement and partial quotes will be deemed unresponsive and will not be evaluated. The Government will award on a single purchase order to the responsible Offeror whose offer conforms to the requirements as stated in the Solicitation and is most advantageous to the Government based on the criteria listed in section L and section M of the Solicitation. Interested parties may identify their interest and capability to respond to the requirement, or by submitting capability statements. This notice of interest is not a request for competitive quotes. Offerors must be registered in SAM and all responsible sources may submit a quotation which, if timely received, will be considered by the Agency. Quotes are due no later than the response date in the posting. Responses/offers shall be submitted electronically, PDF or MS Word Format to email address in the posting. Any amendment(s) issued to this Request for Quote (RFQ) will be published on this website. Therefore, it is the Offerors responsibility to visit this website frequently for updates on this procurement. No telephone requests.",
+  "detail_text_length": 1918,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56abe3faa7984b49a042307f9d094dcc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/637190f7e60f47b2aec55819cad0fff7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56abe3faa7984b49a042307f9d094dcc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/316cd8dc1928e52072fd8b3db7345c3e0c1fc8f2b86ccfcef94152b8e67f6c87.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/316cd8dc1928e52072fd8b3db7345c3e0c1fc8f2b86ccfcef94152b8e67f6c87.pdf",
+      "file_id": "56abe3faa7984b49a042307f9d094dcc",
+      "file_name": "Combined+Synopsis+Solicitation_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25872603,
+      "sha256": "316cd8dc1928e52072fd8b3db7345c3e0c1fc8f2b86ccfcef94152b8e67f6c87"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/637190f7e60f47b2aec55819cad0fff7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c0069a4c1960efaaa1a20ca200f2a78bf3e5bcca06146b493ba26bf7502e9b3e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c0069a4c1960efaaa1a20ca200f2a78bf3e5bcca06146b493ba26bf7502e9b3e.pdf",
+      "file_id": "637190f7e60f47b2aec55819cad0fff7",
+      "file_name": "BN_N6426726Q4015_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 481918,
+      "sha256": "c0069a4c1960efaaa1a20ca200f2a78bf3e5bcca06146b493ba26bf7502e9b3e"
+    }
+  ],
+  "_mirror_hash": "4278638bd13817cd4238afeaf95f87fce448760a798b10054f29e19701023586",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.790423+00:00"
+}

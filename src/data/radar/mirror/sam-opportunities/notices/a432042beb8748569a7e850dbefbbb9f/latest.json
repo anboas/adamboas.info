@@ -1,0 +1,59 @@
+{
+  "id": "sam-a432042beb8748569a7e850dbefbbb9f",
+  "title": "Request for Information - Mercury",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a432042beb8748569a7e850dbefbbb9f",
+  "opportunity_url": "https://sam.gov/opp/a432042beb8748569a7e850dbefbbb9f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a432042beb8748569a7e850dbefbbb9f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a432042beb8748569a7e850dbefbbb9f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "Mercury_2026",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA)",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a432042beb8748569a7e850dbefbbb9f",
+  "detail_text": "See attached Request for Information instructions and associated draft Performance Work Statement.",
+  "detail_text_length": 98,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93889117e63141d1a4bb2ce3ed480143/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a67d487a388b42cdb2485e712229583a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93889117e63141d1a4bb2ce3ed480143/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/50ac6a60866c4066be3d23c74a335804ac21956203a7ee7b021e5d19cc8cb5cc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/50ac6a60866c4066be3d23c74a335804ac21956203a7ee7b021e5d19cc8cb5cc.pdf",
+      "file_id": "93889117e63141d1a4bb2ce3ed480143",
+      "file_name": "-U-+Mercury_RFI_031226_final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 304480,
+      "sha256": "50ac6a60866c4066be3d23c74a335804ac21956203a7ee7b021e5d19cc8cb5cc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a67d487a388b42cdb2485e712229583a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/10e44d41ed1d480bc29435930173b92261fa7b9bf83709a484c3846d2d7667ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/10e44d41ed1d480bc29435930173b92261fa7b9bf83709a484c3846d2d7667ca.pdf",
+      "file_id": "a67d487a388b42cdb2485e712229583a",
+      "file_name": "-U-+Mercury_IDIQ_PWS_Draft_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 764474,
+      "sha256": "10e44d41ed1d480bc29435930173b92261fa7b9bf83709a484c3846d2d7667ca"
+    }
+  ],
+  "_mirror_hash": "832b923e4b7bbd1247fddb3986569ef469dd6b46c9600e85b5bd497df95a1ac8",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.055245+00:00"
+}

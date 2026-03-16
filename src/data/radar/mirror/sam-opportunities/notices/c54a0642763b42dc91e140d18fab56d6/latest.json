@@ -1,0 +1,46 @@
+{
+  "id": "sam-c54a0642763b42dc91e140d18fab56d6",
+  "title": "BAA number W56KGU-23-R-RTID, entitled “Research and Technology Integration (RTI) Directorate Broad Agency Announcement”",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c54a0642763b42dc91e140d18fab56d6",
+  "opportunity_url": "https://sam.gov/opp/c54a0642763b42dc91e140d18fab56d6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c54a0642763b42dc91e140d18fab56d6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c54a0642763b42dc91e140d18fab56d6",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W56KGU26RRTID",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-04-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c54a0642763b42dc91e140d18fab56d6",
+  "detail_text": "This call for White Papers (WP) is under Broad Agency Announcement (BAA) W56KGU-23-R-RTID. Respondents must refer to BAA number W56KGU-23-R-RTID, entitled “Research and Technology Integration (RTI) Directorate Broad Agency Announcement\". *NOTE:* Requests for viewing CUI documents must be accompanied by the Contractor's JCP Certification Number and CAGE Code. If you DO NOT include the required information, your request will be DENIED. If your request is denied, you will need to re-request with your JCP Certification Number and CAGE Code.",
+  "detail_text_length": 542,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bba9d61cc2547779a8a99c56385c2d8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bba9d61cc2547779a8a99c56385c2d8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bc78cf28119bbe5cdbdd5830107666a381e73e3d3497c120cc345a30f04786eb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bc78cf28119bbe5cdbdd5830107666a381e73e3d3497c120cc345a30f04786eb.docx",
+      "file_id": "6bba9d61cc2547779a8a99c56385c2d8",
+      "file_name": "BAA+W56KGU-23-R-RTID+WHITE+PAPER.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 50788,
+      "sha256": "bc78cf28119bbe5cdbdd5830107666a381e73e3d3497c120cc345a30f04786eb"
+    }
+  ],
+  "_mirror_hash": "2214f9b64bcc56bedcbc7d7c688b798491b50b3180645e9da8fe46f4efec33e6",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:19.001724+00:00"
+}

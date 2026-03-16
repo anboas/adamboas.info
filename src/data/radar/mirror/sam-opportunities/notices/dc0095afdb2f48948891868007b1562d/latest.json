@@ -1,0 +1,57 @@
+{
+  "id": "sam-dc0095afdb2f48948891868007b1562d",
+  "title": "ODIN RADAR M1 OR EQUAL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc0095afdb2f48948891868007b1562d",
+  "opportunity_url": "https://sam.gov/opp/dc0095afdb2f48948891868007b1562d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dc0095afdb2f48948891868007b1562d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dc0095afdb2f48948891868007b1562d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA524026QM100",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.PACIFIC AIR FORCES.FA5240  36 CONS LGC",
+  "posted_date": "2026-03-15",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc0095afdb2f48948891868007b1562d",
+  "detail_text": "ODIN RADAR MR1 OR EQUAL This system should be packaged in hard body transit cases for deployment operations and must have capabilities for slew to cue integration with camera system for immediate target identification with 120 degrees field of view (360 degrees of coverage total) with Range, Azimuth and Elevation identification. Must include all necessary mounting hardware for tower integration. Provide heightened cybersecurity, enable software release updates to ensure system is not vulnerable to attacks. 1. Remotely operated ground radar system 2. Camera integration and sensor feed to an operation center 3. Must have capabilities for slew to cue integration 4. Hard body transit cases 5. Able to update software to reduce cyber security threat 6. ATAK system integration 7. Smart phone or tablet compatibility, Command and control 8. Ability to Geo-Locate 9. Capability for 120 degrees detection to exceed 800 meters 10. Capability for 360 detection to exceed 800 meters 11. Rugged construction 12. Must be able to provide range, azimuth and elevation identification 13. Frequency K-band 24.45 – 24.65 GHz (USA) K-band 24.05 – 24.25 GHz (INTL) 14. Field of View- 120° Azimuth x 80° Elevation 15. Track Accuracy - < 1° Azimuth x < 1.5° Elevation 16. Track Update Rate - 10 Hz 17. Max Tracks - Up to 20 Simultaneous Tracks 18. Instrumented Range - 6 km Range 19. Short-Range, Software-Defined, Metamaterials ESA (MESA®) Radar in a Compact Solid- State Format.",
+  "detail_text_length": 1467,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0dfcdf672ef241a1bce48d249a1d56f0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7dc2f7f76e824cd88bb9611e2c7a1f1c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0dfcdf672ef241a1bce48d249a1d56f0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7064ed8712cc30bfc77084a5c5e6aa9699f3faf68fafbd7b4b2b136d84f1f43f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7064ed8712cc30bfc77084a5c5e6aa9699f3faf68fafbd7b4b2b136d84f1f43f.pdf",
+      "file_id": "0dfcdf672ef241a1bce48d249a1d56f0",
+      "file_name": "Sources+Sought+736+Ground+Radar+System.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 189186,
+      "sha256": "7064ed8712cc30bfc77084a5c5e6aa9699f3faf68fafbd7b4b2b136d84f1f43f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7dc2f7f76e824cd88bb9611e2c7a1f1c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b67c4580278ec3c75a050c2c522be32faa47b1cf4fa0450330fbe894d8ca774b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b67c4580278ec3c75a050c2c522be32faa47b1cf4fa0450330fbe894d8ca774b.pdf",
+      "file_id": "7dc2f7f76e824cd88bb9611e2c7a1f1c",
+      "file_name": "Attachment+1+-+Salient+Characteristics+736+Ground+Radar+System.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 88453,
+      "sha256": "b67c4580278ec3c75a050c2c522be32faa47b1cf4fa0450330fbe894d8ca774b"
+    }
+  ],
+  "_mirror_hash": "8855e0a9e68da13695ce0c17b00360c22ad689358653ff256dfd9c56c4f8db4d",
+  "_mirror_run_id": "20260316T134237Z",
+  "_mirror_recorded_at": "2026-03-16T13:43:57.314029+00:00"
+}

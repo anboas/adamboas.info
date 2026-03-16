@@ -1,0 +1,68 @@
+{
+  "id": "sam-df39695a215f4645889f52da61613f35",
+  "title": "J--SJC RIO CHAMA TRAIL STAIRCASE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=df39695a215f4645889f52da61613f35",
+  "opportunity_url": "https://sam.gov/opp/df39695a215f4645889f52da61613f35/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/df39695a215f4645889f52da61613f35/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "df39695a215f4645889f52da61613f35",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140R4026R0012",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.UPPER COLORADO REGIONAL OFFICE",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=df39695a215f4645889f52da61613f35",
+  "detail_text": "SJC RIO CHAMA TRAIL STAIRCASE",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d26dc3cedf94e5da8c486dd8d9eb566/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63c0412ff0074158a2bf4679f5e0fb9f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da01416d07be4b2b820ac08edcbe15c1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d26dc3cedf94e5da8c486dd8d9eb566/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e4ba928dd62a92e0a4a86ea81b65826f8f58b17f8f017fb4575774215e17e141.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e4ba928dd62a92e0a4a86ea81b65826f8f58b17f8f017fb4575774215e17e141.docx",
+      "file_id": "0d26dc3cedf94e5da8c486dd8d9eb566",
+      "file_name": "SJCP_RCT_Staircase_SOW_Section_C_v2_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 333726,
+      "sha256": "e4ba928dd62a92e0a4a86ea81b65826f8f58b17f8f017fb4575774215e17e141"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63c0412ff0074158a2bf4679f5e0fb9f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0361a71523646930689eb2cabcb163f2a795910350e530a2885f6d3ffbdfa2fc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0361a71523646930689eb2cabcb163f2a795910350e530a2885f6d3ffbdfa2fc.pdf",
+      "file_id": "63c0412ff0074158a2bf4679f5e0fb9f",
+      "file_name": "BOR_Std_Dwg_Set_2026-02-20_3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 801404,
+      "sha256": "0361a71523646930689eb2cabcb163f2a795910350e530a2885f6d3ffbdfa2fc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da01416d07be4b2b820ac08edcbe15c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/12e80106998ab494fb80d45d6b7c42c4f272ea6e30f466d5b055caecdc3d5d31.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/12e80106998ab494fb80d45d6b7c42c4f272ea6e30f466d5b055caecdc3d5d31.docx",
+      "file_id": "da01416d07be4b2b820ac08edcbe15c1",
+      "file_name": "SYNOPSIS_SCJP_Rio_Chama_Trail_Staircase_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18906,
+      "sha256": "12e80106998ab494fb80d45d6b7c42c4f272ea6e30f466d5b055caecdc3d5d31"
+    }
+  ],
+  "_mirror_hash": "19cffc24ded7138c3ca33f4e8d02280ce531bd35e895b2602cd18d52a34f97d3",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.956848+00:00"
+}

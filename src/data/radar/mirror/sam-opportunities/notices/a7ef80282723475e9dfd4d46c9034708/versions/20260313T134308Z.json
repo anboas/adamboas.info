@@ -1,0 +1,46 @@
+{
+  "id": "sam-a7ef80282723475e9dfd4d46c9034708",
+  "title": "NESO Items",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7ef80282723475e9dfd4d46c9034708",
+  "opportunity_url": "https://sam.gov/opp/a7ef80282723475e9dfd4d46c9034708/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a7ef80282723475e9dfd4d46c9034708/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a7ef80282723475e9dfd4d46c9034708",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE1C1-26-R-TBDX",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CLOTHING & TEXTILE.DLA TROOP SUPPORT",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7ef80282723475e9dfd4d46c9034708",
+  "detail_text": "SEE ATTACHED NOTICE",
+  "detail_text_length": 19,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5577d9543ce54db68bed24c2bce7c71e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5577d9543ce54db68bed24c2bce7c71e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf07a4ff9abddff5f454c7825b85a093244bdadc5930724278837c00a26afe18.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf07a4ff9abddff5f454c7825b85a093244bdadc5930724278837c00a26afe18.docx",
+      "file_id": "5577d9543ce54db68bed24c2bce7c71e",
+      "file_name": "SourcesSought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 35614,
+      "sha256": "bf07a4ff9abddff5f454c7825b85a093244bdadc5930724278837c00a26afe18"
+    }
+  ],
+  "_mirror_hash": "db5f42165ad538b453e69befc4d36ff1be122a0b728ca5d0fa206076b8349c5b",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.195490+00:00"
+}

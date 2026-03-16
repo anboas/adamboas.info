@@ -1,0 +1,46 @@
+{
+  "id": "sam-f3d55d05f01b4343aa76c0db80431f04",
+  "title": "Engineering Pathway Courseware",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f3d55d05f01b4343aa76c0db80431f04",
+  "opportunity_url": "https://sam.gov/opp/f3d55d05f01b4343aa76c0db80431f04/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f3d55d05f01b4343aa76c0db80431f04/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f3d55d05f01b4343aa76c0db80431f04",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "HE125426QE033",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF DEFENSE EDUCATION ACTIVITY (DODEA).DOD EDUCATION ACTIVITY",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f3d55d05f01b4343aa76c0db80431f04",
+  "detail_text": "This pre-solicitation notice serves as a synopsis and is posted in accordance with FAR subpart 5.2, Synopses of Proposed Contract Actions. This is not a solicitation. Vendors shall not submit a quote until the solicitation is posted to www.SAM.gov. The Department of War Education Activity (DoWEA) has the following requirements: The Contractor shall commercial off-the-shelf, 100% digital courseware for students and teachers as well as related professional learning, and technical support for three courses: Principles of Engineering, Engineering Design and Development, and Engineering Drawing Computer-Aided Design (CAD). The instructional resources shall be based on research-based best practices shown to help students master the standards. The period of performance shall be 1 year base period 29 Aug 2026 – 28 Aug 2027. The option periods are: Option Period 1 - 29 Aug 2027 – 28 Aug 2028 Option Period 2 - 29 Aug 2028 – 28 Aug 2029 Option Period 3 - 29 Aug 2029 – 28 Aug 2030 Option Period 4 - 29 Aug 2030 – 28 Aug 2031 The applicable North American Industry Classification System (NAICS) codes include 611710 (Educational Support Services), 513130 (Book Publishers) and 513120 (Periodical Publishers), and the applicable PSC is U009 (Education/Training - General). Interested parties must be registered under the NAICS code in the System for Award Management (SAM) prior to submitting their quotes. DoDEA intends to issue a solicitation in support of this requirement HE125426QE033. This acquisition will be conducted under FAR Part 12, Acquisition of Commercial Products and Commercial Services, in conjunction with Simplified Acquisition Procedures, as the value is below the Simplified Acquisition Threshold. This requirement will be processed as: total small business set-aside . The anticipated award contract type is a Firm-Fixed-Price Indefinite Delivery Indefinite Quantity (IDIQ) contract. The anticipated posting date of the solicitation is on or about 03/23/2026 and an award date on or about 06/02/2026. Attachment(s): 1. Draft Performance Work Statement (PWS) Engineering Pathway Courseware is attached to this pre-solicitation notice.",
+  "detail_text_length": 2157,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/978bf809a86a4dc08a6baf4392ae403a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/978bf809a86a4dc08a6baf4392ae403a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d49560b1acf5b1c6309f990c841933aa50f28ced378c075ea4e2ad67efa18c3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d49560b1acf5b1c6309f990c841933aa50f28ced378c075ea4e2ad67efa18c3.pdf",
+      "file_id": "978bf809a86a4dc08a6baf4392ae403a",
+      "file_name": "26QE033_PWS-v4_030526.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 342439,
+      "sha256": "8d49560b1acf5b1c6309f990c841933aa50f28ced378c075ea4e2ad67efa18c3"
+    }
+  ],
+  "_mirror_hash": "e2bb5afe33c5c71d0ef5399b30cb0b45c558ab9048c8ff814d63dcf40d61c298",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.144569+00:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sam-97f9d5f175e94a6882b7166b40099c14",
+  "title": "Sources Sought - RT-4110 Blade Radio Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=97f9d5f175e94a6882b7166b40099c14",
+  "opportunity_url": "https://sam.gov/opp/97f9d5f175e94a6882b7166b40099c14/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/97f9d5f175e94a6882b7166b40099c14/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "97f9d5f175e94a6882b7166b40099c14",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "A059955",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8201  AFSC OL H PZIO",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-04-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=97f9d5f175e94a6882b7166b40099c14",
+  "detail_text": "This is not a solicitation, but rather a SOURCES SOUGHT ANNOUNCEMENT to acquire a company able to tear down, evaluate, and repair the RT-4110 Blade Radio, part number 270-3186-070. The Statement of Work (SOW) is found in Attachment 1: “Blade Radio Repair, Statement of Work, 28 January 2026”. In accordance with FAR Part 10, Market Research, Headquarters at the Utah Test and Training Range/A4L is seeking information for potential sources for the tear down, evaluate, and repair of the RT-4110 Blade Radio, part number 270-3186-070.",
+  "detail_text_length": 533,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b0749d90d2443879eabf9532cd53d7a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e088313eb88441d39d53283828621df7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b0749d90d2443879eabf9532cd53d7a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1f318de9b3f97aa09add320edcec3a6c4c5584345c58638e1bcdcf81f6262f6c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1f318de9b3f97aa09add320edcec3a6c4c5584345c58638e1bcdcf81f6262f6c.docx",
+      "file_id": "4b0749d90d2443879eabf9532cd53d7a",
+      "file_name": "Attachment+1+-+SOW+BLADE+RADIO+REPAIR.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174600,
+      "sha256": "1f318de9b3f97aa09add320edcec3a6c4c5584345c58638e1bcdcf81f6262f6c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e088313eb88441d39d53283828621df7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f5a8b0b46e8ec499f4cd3f288ceff0b7996d8224ad3814770700fb521fabbf3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f5a8b0b46e8ec499f4cd3f288ceff0b7996d8224ad3814770700fb521fabbf3.docx",
+      "file_id": "e088313eb88441d39d53283828621df7",
+      "file_name": "Sources+Sought+Blade+Radio+Repair_v5.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 182792,
+      "sha256": "2f5a8b0b46e8ec499f4cd3f288ceff0b7996d8224ad3814770700fb521fabbf3"
+    }
+  ],
+  "_mirror_hash": "5df3259c005d58b502a76ea73007b325a4514790a1aaa70c530247ef018deb84",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.062564+00:00"
+}

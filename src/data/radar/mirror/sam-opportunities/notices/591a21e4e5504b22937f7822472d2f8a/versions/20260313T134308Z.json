@@ -1,0 +1,68 @@
+{
+  "id": "sam-591a21e4e5504b22937f7822472d2f8a",
+  "title": "Spatial Analyzer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=591a21e4e5504b22937f7822472d2f8a",
+  "opportunity_url": "https://sam.gov/opp/591a21e4e5504b22937f7822472d2f8a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/591a21e4e5504b22937f7822472d2f8a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "591a21e4e5504b22937f7822472d2f8a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA910126QB021",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=591a21e4e5504b22937f7822472d2f8a",
+  "detail_text": "Please review the Notice of Intent (NOI) and related documents.",
+  "detail_text_length": 63,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/093aa3bac9524cbe985179478d36f25c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8bffc6a1ec04461e82ab039e5512cacc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a0cc7bd74f74fbebdbde10f4410fceb/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/093aa3bac9524cbe985179478d36f25c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/92c174efb70872cacb87dc398b8e333aff0a6c27dc8ae4682d98516005af6e7f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/92c174efb70872cacb87dc398b8e333aff0a6c27dc8ae4682d98516005af6e7f.pdf",
+      "file_id": "093aa3bac9524cbe985179478d36f25c",
+      "file_name": "Attachment+1+-+SOW+SpatialAnalyzer+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 113233,
+      "sha256": "92c174efb70872cacb87dc398b8e333aff0a6c27dc8ae4682d98516005af6e7f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8bffc6a1ec04461e82ab039e5512cacc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/32bbe8ff9043c8956d478ad33580bbf067faada228c31ec529a2c26eac68f9b8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/32bbe8ff9043c8956d478ad33580bbf067faada228c31ec529a2c26eac68f9b8.pdf",
+      "file_id": "8bffc6a1ec04461e82ab039e5512cacc",
+      "file_name": "Notice+of+Intent+to+Sole+Source+to+Hexagon+Manufacturing+Intelligence+Inc..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 203569,
+      "sha256": "32bbe8ff9043c8956d478ad33580bbf067faada228c31ec529a2c26eac68f9b8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a0cc7bd74f74fbebdbde10f4410fceb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b17cdd001f9faa7eb82b722cd3b69a3df0b2ad683c59cb699bf750d42d7c1dae.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b17cdd001f9faa7eb82b722cd3b69a3df0b2ad683c59cb699bf750d42d7c1dae.pdf",
+      "file_id": "9a0cc7bd74f74fbebdbde10f4410fceb",
+      "file_name": "JA+SpatialAnalyzer+2026+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 465893,
+      "sha256": "b17cdd001f9faa7eb82b722cd3b69a3df0b2ad683c59cb699bf750d42d7c1dae"
+    }
+  ],
+  "_mirror_hash": "d924ca4f8f75120fce38700ac39ee55dbe8da9bf988928513e1eec8b7b4b9c53",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.136197+00:00"
+}

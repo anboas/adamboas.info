@@ -1,0 +1,46 @@
+{
+  "id": "sam-007e0470c10241079daf62d3e7cd4d60",
+  "title": "NAHQ Membership and Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=007e0470c10241079daf62d3e7cd4d60",
+  "opportunity_url": "https://sam.gov/opp/007e0470c10241079daf62d3e7cd4d60/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/007e0470c10241079daf62d3e7cd4d60/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "007e0470c10241079daf62d3e7cd4d60",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25526Q0262",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=007e0470c10241079daf62d3e7cd4d60",
+  "detail_text": "National Association for Healthcare Quality (NAHQ) Professional Membership and Training",
+  "detail_text_length": 87,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd84a3bcddf34dfa80fd6b67766fa3e5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd84a3bcddf34dfa80fd6b67766fa3e5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b119aa69d713171594b97607b533eeb0e954c39c1eaca62114ed1eddda215493.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b119aa69d713171594b97607b533eeb0e954c39c1eaca62114ed1eddda215493.pdf",
+      "file_id": "bd84a3bcddf34dfa80fd6b67766fa3e5",
+      "file_name": "36C25526Q0262.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 237450,
+      "sha256": "b119aa69d713171594b97607b533eeb0e954c39c1eaca62114ed1eddda215493"
+    }
+  ],
+  "_mirror_hash": "cdf1e8c6156f231b624846d53636fc4254a9fc4907a8105e6d0c8a7a7eec6a87",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.945362+00:00"
+}

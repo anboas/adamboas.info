@@ -1,0 +1,68 @@
+{
+  "id": "sam-cef82e0455d142979fdf0e3970c7d6b9",
+  "title": "6632--VISN Tissue Processors",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cef82e0455d142979fdf0e3970c7d6b9",
+  "opportunity_url": "https://sam.gov/opp/cef82e0455d142979fdf0e3970c7d6b9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cef82e0455d142979fdf0e3970c7d6b9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cef82e0455d142979fdf0e3970c7d6b9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0490",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cef82e0455d142979fdf0e3970c7d6b9",
+  "detail_text": "See attachments:",
+  "detail_text_length": 16,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d05d0ef43fb460db6b4ad4b65ac1b07/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a36aee7aa2aa4713ba3ac14e53c8ddfe/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cca60edb0c90469186e8b455d68fbfda/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d05d0ef43fb460db6b4ad4b65ac1b07/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba958074a5d128b878fabac27247f88843f44c4741c5f115eb742bbf8c8fb415.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba958074a5d128b878fabac27247f88843f44c4741c5f115eb742bbf8c8fb415.docx",
+      "file_id": "6d05d0ef43fb460db6b4ad4b65ac1b07",
+      "file_name": "36C26226Q0490.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23017,
+      "sha256": "ba958074a5d128b878fabac27247f88843f44c4741c5f115eb742bbf8c8fb415"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a36aee7aa2aa4713ba3ac14e53c8ddfe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6a3e22d9a5cc422a06b85eb8cf40089c3e368cde739df7f611f22052cb29517e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6a3e22d9a5cc422a06b85eb8cf40089c3e368cde739df7f611f22052cb29517e.docx",
+      "file_id": "a36aee7aa2aa4713ba3ac14e53c8ddfe",
+      "file_name": "P02+-+Tissue+Processor+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26272,
+      "sha256": "6a3e22d9a5cc422a06b85eb8cf40089c3e368cde739df7f611f22052cb29517e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cca60edb0c90469186e8b455d68fbfda/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9d3303e4dcd2580258e3e2fdf7c7b4fac3745ae98a01ac61f66a205f7b33bfd3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9d3303e4dcd2580258e3e2fdf7c7b4fac3745ae98a01ac61f66a205f7b33bfd3.docx",
+      "file_id": "cca60edb0c90469186e8b455d68fbfda",
+      "file_name": "P02+-+RFI+36C26226Q0490.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 38547,
+      "sha256": "9d3303e4dcd2580258e3e2fdf7c7b4fac3745ae98a01ac61f66a205f7b33bfd3"
+    }
+  ],
+  "_mirror_hash": "296fdcd39c1c682d6863e94f5125d9fc0520fa10ab374c1df475b80b79997404",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.943066+00:00"
+}

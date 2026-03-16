@@ -1,0 +1,67 @@
+{
+  "id": "sam-0815d2e2e0964ba5bf71456afa0e0082",
+  "title": "Advanced PPE Cleaning",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0815d2e2e0964ba5bf71456afa0e0082",
+  "opportunity_url": "https://sam.gov/opp/0815d2e2e0964ba5bf71456afa0e0082/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0815d2e2e0964ba5bf71456afa0e0082/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0815d2e2e0964ba5bf71456afa0e0082",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6883626QS027",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0815d2e2e0964ba5bf71456afa0e0082",
+  "detail_text": "*Amended SF-30 will be posted soonest to address vendor questions recevied.* ADVANCED PPE CLEANING SEE PERFORMANCE WORK STATEMENT FOR SPECIFIC REQUIREMENTS. MUST BE ABLE TO PICK UP AND DROP OFF. MAILING OF ITEMS IS NOT PERMITTED.",
+  "detail_text_length": 229,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/218f6854d90f406fb246071f2f806bae/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbaecd4e513843ba9b2eca9bfe5e99c4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1a893529db1414186151aeab74ce193/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/218f6854d90f406fb246071f2f806bae/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e8fefa318281a84513552dbf6d561ec82e3599d2f1deaffdec7cd570d0d996ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e8fefa318281a84513552dbf6d561ec82e3599d2f1deaffdec7cd570d0d996ce.pdf",
+      "file_id": "218f6854d90f406fb246071f2f806bae",
+      "file_name": "1.21+WD+2015-5147+Rev+28.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 344618,
+      "sha256": "e8fefa318281a84513552dbf6d561ec82e3599d2f1deaffdec7cd570d0d996ce"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbaecd4e513843ba9b2eca9bfe5e99c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b185123d05bd0e54daa3e9211cedd381196319b15c1e07f93aa28bcf2df34f90.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b185123d05bd0e54daa3e9211cedd381196319b15c1e07f93aa28bcf2df34f90.docx",
+      "file_id": "cbaecd4e513843ba9b2eca9bfe5e99c4",
+      "file_name": "1.05+PWS+v2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40758,
+      "sha256": "b185123d05bd0e54daa3e9211cedd381196319b15c1e07f93aa28bcf2df34f90"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1a893529db1414186151aeab74ce193/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/72452dd565d67be928e537bcd1cd0877c1154292a8d50007e36f591cca89f5d8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/72452dd565d67be928e537bcd1cd0877c1154292a8d50007e36f591cca89f5d8.pdf",
+      "file_id": "f1a893529db1414186151aeab74ce193",
+      "file_name": "2.05+Amendment+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 604484,
+      "sha256": "72452dd565d67be928e537bcd1cd0877c1154292a8d50007e36f591cca89f5d8"
+    }
+  ],
+  "_mirror_hash": "07bf00edd0b74ed46299046eb920d1a56f6a4f6d61f6c20ece41c47f309e3835",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.025505+00:00"
+}

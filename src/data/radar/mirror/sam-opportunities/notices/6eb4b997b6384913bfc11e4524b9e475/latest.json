@@ -1,0 +1,46 @@
+{
+  "id": "sam-6eb4b997b6384913bfc11e4524b9e475",
+  "title": "Ride Share Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6eb4b997b6384913bfc11e4524b9e475",
+  "opportunity_url": "https://sam.gov/opp/6eb4b997b6384913bfc11e4524b9e475/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6eb4b997b6384913bfc11e4524b9e475/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6eb4b997b6384913bfc11e4524b9e475",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "19AQMM26N0154",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.ACQUISITIONS - AQM MOMENTUM",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6eb4b997b6384913bfc11e4524b9e475",
+  "detail_text": "Attached is the Sources Sought Notice for the Rideshare Requirement. Please see attached document titled Sources Sought Notice- Rideshare Services for the full details. Responses Due: March 16th, 2026 5:00 PM ET",
+  "detail_text_length": 211,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/287d3aa3828b4a70b16aeb502e6f8904/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/287d3aa3828b4a70b16aeb502e6f8904/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/685729a312c3753d40adb17018717289a9687c6f1f9e580c6ff9d8dd90a74ac8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/685729a312c3753d40adb17018717289a9687c6f1f9e580c6ff9d8dd90a74ac8.docx",
+      "file_id": "287d3aa3828b4a70b16aeb502e6f8904",
+      "file_name": "Sources+Sought+Notice-+Rideshare+Services.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49988,
+      "sha256": "685729a312c3753d40adb17018717289a9687c6f1f9e580c6ff9d8dd90a74ac8"
+    }
+  ],
+  "_mirror_hash": "f65711c16f70704f1bc81403b0cc0c5197e868a061d76bd3840dfa1c6cc9ebc1",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.096261+00:00"
+}

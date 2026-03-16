@@ -1,0 +1,68 @@
+{
+  "id": "sam-e9bc27c82cd1446ca53ca0a4847bec21",
+  "title": "65--MEDICAL AND DENTAL SUPPLIES",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9bc27c82cd1446ca53ca0a4847bec21",
+  "opportunity_url": "https://sam.gov/opp/e9bc27c82cd1446ca53ca0a4847bec21/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e9bc27c82cd1446ca53ca0a4847bec21/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e9bc27c82cd1446ca53ca0a4847bec21",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140D0426Q0254",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9bc27c82cd1446ca53ca0a4847bec21",
+  "detail_text": "The Contractor shall fill and /or refill all Medical Supply and Dental Supply requirements (Attachment A).",
+  "detail_text_length": 106,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62ae6ac9c9b44b58ae6aa89aba3a5563/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/646832b3f6b94d6dad5abbef8e3db6b2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f4ea2168ff634ca18ee66151a7801a2d/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62ae6ac9c9b44b58ae6aa89aba3a5563/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ab9c89b4ff654cd4bb2e1ee68e3a02853d7923dae6e95cc8de60d9f20a54cfcf.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ab9c89b4ff654cd4bb2e1ee68e3a02853d7923dae6e95cc8de60d9f20a54cfcf.docx",
+      "file_id": "62ae6ac9c9b44b58ae6aa89aba3a5563",
+      "file_name": "A17_RFI_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 161884,
+      "sha256": "ab9c89b4ff654cd4bb2e1ee68e3a02853d7923dae6e95cc8de60d9f20a54cfcf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/646832b3f6b94d6dad5abbef8e3db6b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b6c9e89bf03f5570c0654c218e97af0ce15199d47b3f5cdbbd4ce34b5228876.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b6c9e89bf03f5570c0654c218e97af0ce15199d47b3f5cdbbd4ce34b5228876.xlsx",
+      "file_id": "646832b3f6b94d6dad5abbef8e3db6b2",
+      "file_name": "Attachment_A_Supply_List_2_25_26_1.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31051,
+      "sha256": "8b6c9e89bf03f5570c0654c218e97af0ce15199d47b3f5cdbbd4ce34b5228876"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f4ea2168ff634ca18ee66151a7801a2d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b41487b3512512bfaf4f144df214301a1d07a527b35cac1ecf8725a5760e9536.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b41487b3512512bfaf4f144df214301a1d07a527b35cac1ecf8725a5760e9536.pdf",
+      "file_id": "f4ea2168ff634ca18ee66151a7801a2d",
+      "file_name": "Attachment_A_A05_PWS_MEDCAL_SUPPLY___equipment_2_26_26_v1_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 215684,
+      "sha256": "b41487b3512512bfaf4f144df214301a1d07a527b35cac1ecf8725a5760e9536"
+    }
+  ],
+  "_mirror_hash": "af1b44c549575a65f8b7be84e618eb36333bc672b6d2f0030a05f57531ff10f7",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.209599+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "sam-90ad8d7304c441d38987984d20c85802",
+  "title": "PORTABLE RESTROOM RENTAL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90ad8d7304c441d38987984d20c85802",
+  "opportunity_url": "https://sam.gov/opp/90ad8d7304c441d38987984d20c85802/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/90ad8d7304c441d38987984d20c85802/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "90ad8d7304c441d38987984d20c85802",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00244-26-Q-S037",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SAN DIEGO.NAVSUP FLT LOG CTR  SAN DIEGO",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90ad8d7304c441d38987984d20c85802",
+  "detail_text": "Please see attached Combined Synopsis/Solicitation along with the Statement Of Work (SOW).",
+  "detail_text_length": 90,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f925064ca74412a9784c5cd265fdcf4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de01b6be5ab14dcc9cbd2c1a2c145b81/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f925064ca74412a9784c5cd265fdcf4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e6c67ca11908397e47ada1c9dfc788a434317bf82ad2615887fbb5c50d2d51a1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e6c67ca11908397e47ada1c9dfc788a434317bf82ad2615887fbb5c50d2d51a1.pdf",
+      "file_id": "7f925064ca74412a9784c5cd265fdcf4",
+      "file_name": "-SOW-+Statement+Of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 65740,
+      "sha256": "e6c67ca11908397e47ada1c9dfc788a434317bf82ad2615887fbb5c50d2d51a1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de01b6be5ab14dcc9cbd2c1a2c145b81/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d3111680df360cbf9186c8a40df6fb077b3c72971f6aabccfe7cfa561d6c0a77.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d3111680df360cbf9186c8a40df6fb077b3c72971f6aabccfe7cfa561d6c0a77.pdf",
+      "file_id": "de01b6be5ab14dcc9cbd2c1a2c145b81",
+      "file_name": "COMB_SYN_SOL_N0024426QS037.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 359860,
+      "sha256": "d3111680df360cbf9186c8a40df6fb077b3c72971f6aabccfe7cfa561d6c0a77"
+    }
+  ],
+  "_mirror_hash": "38dde5179ad90ea2613689b852bbd72d7d835c416e5ff96163a6ec066c9b2964",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.821118+00:00"
+}

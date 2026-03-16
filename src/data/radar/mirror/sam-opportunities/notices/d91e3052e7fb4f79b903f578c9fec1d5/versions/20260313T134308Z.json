@@ -1,0 +1,57 @@
+{
+  "id": "sam-d91e3052e7fb4f79b903f578c9fec1d5",
+  "title": "AFTAC CONTRACT ADMINISTRATION SUPPORT SERVICES (ACASS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d91e3052e7fb4f79b903f578c9fec1d5",
+  "opportunity_url": "https://sam.gov/opp/d91e3052e7fb4f79b903f578c9fec1d5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d91e3052e7fb4f79b903f578c9fec1d5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d91e3052e7fb4f79b903f578c9fec1d5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ACASSR2D29939",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.AMIC.AMICDET2.FA7022  AMIC DET 2 OL PATRICK PKA",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d91e3052e7fb4f79b903f578c9fec1d5",
+  "detail_text": "The Air Force Technical Applications Center (AFTAC) and AMIC DET 2/OL/PKA (Patrick SFB, FL) is conducting Market Research for non-personal services for information and planning purposes in support of professional federal contracting support services at AFTAC in collaboration with AMIC contracting officers. Services include Department of Defense acquisition planning, market research, acquisition strategy development, acquisition and contract document development. Services also include cost/price analysis, preparation of determinations and justifications, synopsis, solicitations, price negotiation memoranda, and the contractor shall provide assistance with and document proposal evaluations and will receive AFTAC technical evaluations as well as contractor submitted technical/cost proposals for review and use in the contract formation process. The contractor will professionally execute contract administration duties and will maintain contract writing, filing, and tracking systems/tools and will accurately document, file (to include electronic filing), and maintain contract documents. The contractor will develop and adhere to acquisition milestones. This Sources Sought is one of the elements of the Government’s Market Research and will be used to determine the acquisition approach and, if needed, to determine sub-contracting goals. Therefore, if a company has the capabilities to participate as a contractor/sub-contractor, please provide that information.",
+  "detail_text_length": 1474,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d595c5e1a6e4493cb2870148a69ec393/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fab1b6f107074ea5b821c077a6a20780/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d595c5e1a6e4493cb2870148a69ec393/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ad1a6a517b731b5ee0b5f3c02f84bbd4b72578329ea3a04401e429f404965fb4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ad1a6a517b731b5ee0b5f3c02f84bbd4b72578329ea3a04401e429f404965fb4.docx",
+      "file_id": "d595c5e1a6e4493cb2870148a69ec393",
+      "file_name": "ACASS+SSS+13MAR26+DDA.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 195080,
+      "sha256": "ad1a6a517b731b5ee0b5f3c02f84bbd4b72578329ea3a04401e429f404965fb4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fab1b6f107074ea5b821c077a6a20780/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/110e5ec10c4de2f4b6cd65bd7d2404244baf26dca1e5c6f533a1646775f79a8e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/110e5ec10c4de2f4b6cd65bd7d2404244baf26dca1e5c6f533a1646775f79a8e.docx",
+      "file_id": "fab1b6f107074ea5b821c077a6a20780",
+      "file_name": "ACASS+PWS+30+Jan+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 61386,
+      "sha256": "110e5ec10c4de2f4b6cd65bd7d2404244baf26dca1e5c6f533a1646775f79a8e"
+    }
+  ],
+  "_mirror_hash": "e958f451089e220008c0e18225014904a315c2176ee4610f124d8fa3f371f009",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.159694+00:00"
+}

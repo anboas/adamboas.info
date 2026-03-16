@@ -1,0 +1,78 @@
+{
+  "id": "sam-b2e665be6ed34c82ab5494b266995975",
+  "title": "Rental of a steam heat exchanger and associated components",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2e665be6ed34c82ab5494b266995975",
+  "opportunity_url": "https://sam.gov/opp/b2e665be6ed34c82ab5494b266995975/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b2e665be6ed34c82ab5494b266995975/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b2e665be6ed34c82ab5494b266995975",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N3904026Q2867",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2e665be6ed34c82ab5494b266995975",
+  "detail_text": "Portsmouth Naval Shipyard (PNSY) is seeking to lease a steam heat exchanger and associated components. The system must include a steam heat exchanger; temperature, pressure and flow monitoring capability; and safety, control and isolation valves. The system must be frame/skid mounted with fork truck pockets as well as lifting pad eyes in a footprint no greater than 8 FT x 8 FT and a maximum weight of 4000 LB.",
+  "detail_text_length": 412,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dec642e4648441fa338cc8024fb6f56/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2d31b927ae64dcd85bea7544490b4b6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c760df5b915748d2964e8cf6f630a345/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc23ee32eae84e83a5f69bb6ec64e9e1/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dec642e4648441fa338cc8024fb6f56/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5e166487bb94d9c7888bed238546eed37327f1b5b414121d10a04ddfb074ee19.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5e166487bb94d9c7888bed238546eed37327f1b5b414121d10a04ddfb074ee19.pdf",
+      "file_id": "6dec642e4648441fa338cc8024fb6f56",
+      "file_name": "N3904026Q2867+Attachment+1+SOW+Enclosure+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 542146,
+      "sha256": "5e166487bb94d9c7888bed238546eed37327f1b5b414121d10a04ddfb074ee19"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2d31b927ae64dcd85bea7544490b4b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5f8c7982508e21850f2a381f1e1cb627519a6506f92629d78cdd8a9d3feeeff6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5f8c7982508e21850f2a381f1e1cb627519a6506f92629d78cdd8a9d3feeeff6.pdf",
+      "file_id": "a2d31b927ae64dcd85bea7544490b4b6",
+      "file_name": "N3904026Q2867+Attachment+2+PNSY+OPSEC+Contract+Requirements.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 723869,
+      "sha256": "5f8c7982508e21850f2a381f1e1cb627519a6506f92629d78cdd8a9d3feeeff6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c760df5b915748d2964e8cf6f630a345/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d576502fbf0b7b83ab3784955fa06a05e785acf8edca2e6449fc2353483787f1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d576502fbf0b7b83ab3784955fa06a05e785acf8edca2e6449fc2353483787f1.pdf",
+      "file_id": "c760df5b915748d2964e8cf6f630a345",
+      "file_name": "N3904026Q2867+Combined+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1079476,
+      "sha256": "d576502fbf0b7b83ab3784955fa06a05e785acf8edca2e6449fc2353483787f1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc23ee32eae84e83a5f69bb6ec64e9e1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2e3ac3febce5201a9bf9a462bd7bfc3f2bf35aa13e0140a644ec0bc3c0cc5118.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2e3ac3febce5201a9bf9a462bd7bfc3f2bf35aa13e0140a644ec0bc3c0cc5118.pdf",
+      "file_id": "dc23ee32eae84e83a5f69bb6ec64e9e1",
+      "file_name": "N3904026Q2867+Attachment+3+CDRL++DD+Form+1423.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118751,
+      "sha256": "2e3ac3febce5201a9bf9a462bd7bfc3f2bf35aa13e0140a644ec0bc3c0cc5118"
+    }
+  ],
+  "_mirror_hash": "404504f960c25fd1e628b209a9d779bba2003f55bee943cf9a679e294d7465f0",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.838719+00:00"
+}

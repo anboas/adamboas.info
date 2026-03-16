@@ -1,0 +1,79 @@
+{
+  "id": "sam-18bee947f12e42d2b559e65e3b9e3bdb",
+  "title": "New Building IT Design and Build",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=18bee947f12e42d2b559e65e3b9e3bdb",
+  "opportunity_url": "https://sam.gov/opp/18bee947f12e42d2b559e65e3b9e3bdb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/18bee947f12e42d2b559e65e3b9e3bdb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "18bee947f12e42d2b559e65e3b9e3bdb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "49100426K0003",
+  "agency_path": "NATIONAL SCIENCE FOUNDATION.NATIONAL SCIENCE FOUNDATION.NATIONAL SCIENCE FOUNDATION",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=18bee947f12e42d2b559e65e3b9e3bdb",
+  "detail_text": "This is a combined Sources Sought/Request for Information. NSF is reducing the scope of its on-premises enterprise IT infrastructure to allow, combined with Building Automation System, IT Asset Management, and Configuration Management Database (CMDB) tools, to provide visibility into all computer spaces operated by the NSF. Existing IT Infrastructure topography includes a Co-location Data Center, managed by Equinix located in Ashburn, VA and an Enhanced Communication Equipment Room, located in the NSF Headquarters in Alexandria, VA. The key component of this topography is the Amazon Web Services, Direct Connect, tied to the Equinix data center supporting NSF’s multi-cloud environment.",
+  "detail_text_length": 693,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4587005788204489b047b23edda63904/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5aade9ea632145cf99c000e4a4047b34/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/687c59928d4142d18b22b73539910a09/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c977989bfe6e405ebf5b0cf1c123caa7/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4587005788204489b047b23edda63904/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/192baf52b5cf98624735fc45251333b698d118fc9bbffa81c58b9b65ce2e72d6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/192baf52b5cf98624735fc45251333b698d118fc9bbffa81c58b9b65ce2e72d6.pdf",
+      "file_id": "4587005788204489b047b23edda63904",
+      "file_name": "New+Headquarters+Design+and+Build+SS-RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142896,
+      "sha256": "192baf52b5cf98624735fc45251333b698d118fc9bbffa81c58b9b65ce2e72d6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5aade9ea632145cf99c000e4a4047b34/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d063e29b3a13ae2f91413514e552f81f888c0794e9c445d200ed8564008b683b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d063e29b3a13ae2f91413514e552f81f888c0794e9c445d200ed8564008b683b.xlsx",
+      "file_id": "5aade9ea632145cf99c000e4a4047b34",
+      "file_name": "Tentative+Cable-Design-Build+Schedule.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10068,
+      "sha256": "d063e29b3a13ae2f91413514e552f81f888c0794e9c445d200ed8564008b683b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/687c59928d4142d18b22b73539910a09/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ad79884d14105638e5dc41e236089c0fa56c2fb38a5920e65912f029d25d6457.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ad79884d14105638e5dc41e236089c0fa56c2fb38a5920e65912f029d25d6457.pdf",
+      "file_id": "687c59928d4142d18b22b73539910a09",
+      "file_name": "Network+Design+Build+Cabling+PWS_DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 254249,
+      "sha256": "ad79884d14105638e5dc41e236089c0fa56c2fb38a5920e65912f029d25d6457"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c977989bfe6e405ebf5b0cf1c123caa7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/399760b84ad849baeae9b039d8e8cf66259c3ab51e5f641844695fe1286347d5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/399760b84ad849baeae9b039d8e8cf66259c3ab51e5f641844695fe1286347d5.docx",
+      "file_id": "c977989bfe6e405ebf5b0cf1c123caa7",
+      "file_name": "Network+Design+Build+Problem+Statement+Questions.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16206,
+      "sha256": "399760b84ad849baeae9b039d8e8cf66259c3ab51e5f641844695fe1286347d5"
+    }
+  ],
+  "_mirror_hash": "6fe5850f67c64fdf9cee24df4915a11c02eaf034d957b625188f3d5a4c11a0ec",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.180563+00:00"
+}

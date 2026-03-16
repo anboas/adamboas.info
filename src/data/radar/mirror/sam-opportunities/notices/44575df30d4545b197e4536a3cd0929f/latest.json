@@ -1,0 +1,48 @@
+{
+  "id": "sam-44575df30d4545b197e4536a3cd0929f",
+  "title": "DARPA-SN-26-52: RFI - Low Earth Orbit (LEO) and Medium Earth Orbit (MEO) Satellite Power Capability",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=44575df30d4545b197e4536a3cd0929f",
+  "opportunity_url": "https://sam.gov/opp/44575df30d4545b197e4536a3cd0929f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/44575df30d4545b197e4536a3cd0929f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "44575df30d4545b197e4536a3cd0929f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-52",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=44575df30d4545b197e4536a3cd0929f",
+  "detail_text": "The Defense Advanced Research Projects Agency (DARPA) is requesting information related to space companies’ ability to produce satellites for Low Earth Orbit (LEO) and Medium Earth Orbit (MEO) which can provide medium to high levels of Orbital Average Power (OAP) to the payload.",
+  "detail_text_length": 279,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4d5fa99c4f141d6a905aec7d9bab6d4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4d5fa99c4f141d6a905aec7d9bab6d4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f1dafb8dd686fe07316636c72d6d9b1d2466737fef8ee7d73decf90e16ef854d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f1dafb8dd686fe07316636c72d6d9b1d2466737fef8ee7d73decf90e16ef854d.pdf",
+      "file_id": "b4d5fa99c4f141d6a905aec7d9bab6d4",
+      "file_name": "DARPA-SN-26-52.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 81799,
+      "sha256": "f1dafb8dd686fe07316636c72d6d9b1d2466737fef8ee7d73decf90e16ef854d"
+    }
+  ],
+  "_mirror_hash": "b4164f9269016c676c079a9a87126cb1d49008885ae3a2b5a140dfbaf24a284e",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.048297+00:00"
+}

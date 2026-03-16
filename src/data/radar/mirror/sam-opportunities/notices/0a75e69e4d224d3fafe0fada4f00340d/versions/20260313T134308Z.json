@@ -1,0 +1,48 @@
+{
+  "id": "sam-0a75e69e4d224d3fafe0fada4f00340d",
+  "title": "Flexible Spending Account (FSA) Request for Information (RFI)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a75e69e4d224d3fafe0fada4f00340d",
+  "opportunity_url": "https://sam.gov/opp/0a75e69e4d224d3fafe0fada4f00340d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0a75e69e4d224d3fafe0fada4f00340d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0a75e69e4d224d3fafe0fada4f00340d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "3122026",
+  "agency_path": "NATIONAL SCIENCE FOUNDATION.NATIONAL SCIENCE FOUNDATION.DIV OF ACQ AND COOPERATIVE SUPPORT",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a75e69e4d224d3fafe0fada4f00340d",
+  "detail_text": "The US NSF has a requirement for an experienced and qualified contractor to administer its FSA program. Please see the attachment for further information. Please send responses directly to chloss@nsf.gov.",
+  "detail_text_length": 204,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0846e446b164577bee75f8a934d7621/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0846e446b164577bee75f8a934d7621/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fd8f35923f9bec3c441fcbdb946a9d4126dca723a78f26a623d7751f200d7787.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fd8f35923f9bec3c441fcbdb946a9d4126dca723a78f26a623d7751f200d7787.pdf",
+      "file_id": "e0846e446b164577bee75f8a934d7621",
+      "file_name": "Problem+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 111979,
+      "sha256": "fd8f35923f9bec3c441fcbdb946a9d4126dca723a78f26a623d7751f200d7787"
+    }
+  ],
+  "_mirror_hash": "5c7294dd559134771e2fb05bad93ae428ed59992e252f847a1ef92933b88b148",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.030601+00:00"
+}

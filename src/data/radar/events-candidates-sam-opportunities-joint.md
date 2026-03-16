@@ -1,24 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-15T13:44:39.161200+00:00
+Generated: 2026-03-16T13:44:16.946610+00:00
 Profile: joint
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/15/2026
+Posted range: 01/01/2026 -> 03/16/2026
 
 ## Counts
-- Total candidates: 524
+- Total candidates: 525
 - Navy-related: 3
-- Full detail cached: 524
+- Full detail cached: 525
 - Notices with attachments: 197
-- Total attachment links: 270
+- Total attachment links: 272
+- Combined Synopsis/Solicitation: 1
 - Pre-solicitation: 210
 - Sources Sought: 224
 - Special Notice: 90
 
 ## Engagement signals
 - Industry Day: 1
-- Pre-solicitation: 221
-- Sources Sought: 224
+- Pre-solicitation: 222
+- Sources Sought: 225
 - Special Notice: 90
 
 ## Top candidates
@@ -37,7 +38,6 @@ Posted range: 01/01/2026 -> 03/15/2026
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-02-18 | 2026-03-02 | DEPT OF DEFENSE | [Request for Information - Rockwell Software Studio 500 Legacy, Factory Talk w/Studio Enterprise, RDLogix 500 Standard Edition Perpetual Licenses and associated 24/7 Rockwell Maintenance Support for each product.](https://sam.gov/opp/f9eb297cca8b4753bbcbde7b51c772c9/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-02 | DEPT OF DEFENSE | [MANUAL DRIVE ASSEMBLY](https://sam.gov/opp/6d7053e10fa54f32ade668062ebf8911/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-02 | DEPT OF DEFENSE | [SPE4A726Q0474,6680005264435,INDICATOR,LIQUID QU,EA148ANH-70](https://sam.gov/opp/993ea96e0a3c440795ea650f767a65e6/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-02 | DEPT OF DEFENSE | [TRANSPONDER,SONAR](https://sam.gov/opp/6bb2ee8921434a38b40706662c30e655/view) |
 | 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-02 | DEPT OF DEFENSE | [Intent to Sole Source-AV Service Contract](https://sam.gov/opp/c6a5a4b6ad1949b195349e1e8eb55f43/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-02 | DEPT OF DEFENSE | [NSN: 6625-01-647-3044 OSCILLOSCOPE](https://sam.gov/opp/cb05855d812941fabcde364ca15a3dc4/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-03 | DEPT OF DEFENSE | [BATTERY,STORAGE](https://sam.gov/opp/ae0d9568c452496c9dbe4045a5e3e1d1/view) |
@@ -47,12 +47,10 @@ Posted range: 01/01/2026 -> 03/15/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-04 | DEPT OF DEFENSE | [4820-Safety Relief Valve](https://sam.gov/opp/d549f7ced069481386cad9c99694aaa6/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-04 | DEPT OF DEFENSE | [NSN 6650-01-444-1212 (LENS,OPTICAL INSTRU)](https://sam.gov/opp/716d10f70b1d4c5fb6b04fae2d393cfd/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-04 | DEPT OF DEFENSE | [SENSING ELEMENT, FIR / NSN 6340-01-434-8871 / C130 AIRCRAFT](https://sam.gov/opp/01c320ff559f4656afd9ff4d2d0046d7/view) |
-| 4 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-05 | DEPT OF DEFENSE | [DCAA Axway Sources Sought Only](https://sam.gov/opp/67116dfd72af4eb78605ffc9b54a0add/view) |
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-02-25 | 2026-03-05 | DEPT OF DEFENSE | [UNIFIED CAPABILITIES REQUIREMENTS (UCR) REQUEST FOR INFORMATION (RFI)](https://sam.gov/opp/e72ac06c84c242cbb56c791ac248287f/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-05 | DEPT OF DEFENSE | [2040_WINDOW, MARINE](https://sam.gov/opp/9c9878c346264e9ba01a6774ba2ceca1/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-05 | DEPT OF DEFENSE | [4810 VALVE, GATE](https://sam.gov/opp/e1d48c46125840ca9dafa35881e49541/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-05 | DEPT OF DEFENSE | [BOOT, CONTROL STICK AIRCRAFT](https://sam.gov/opp/fc5059a19cb84a45b93a8d289bd0b86b/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-05 | DEPT OF DEFENSE | [REGULATOR VOLTAGE](https://sam.gov/opp/683d832222da4daaa72f181cf525c9e6/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-05 | DEPT OF DEFENSE | [Sources Sougnt - 1 NSN FILTEREINHEIT](https://sam.gov/opp/967115d31ab44724840ccf31d51285b1/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-05 | DEPT OF DEFENSE | [31-  BEARING, SLEEVE](https://sam.gov/opp/d73c20f9d1884faeaababc4ee963246c/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-05 | DEPT OF DEFENSE | [DISK, FLEXIBLE DRIVE SHAFT](https://sam.gov/opp/1ca0ce82f51341cf9935b7b3abd18bda/view) |
@@ -98,7 +96,6 @@ Posted range: 01/01/2026 -> 03/15/2026
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-09 | DEPT OF DEFENSE | [Global Tires Program 2.0](https://sam.gov/opp/15506926aec14010876e0f770ef7a158/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-09 | DEPT OF DEFENSE | [NSN 6150-01-659-8921 - CABLE ASSEMBLY, SPECIAL PURPOSE, ELECTR](https://sam.gov/opp/8fa50df16e934ffda58b8e05d39370f5/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-10 | DEPT OF DEFENSE | [MONITOR ENVIRONMENT](https://sam.gov/opp/e0da74ddada546ec9f80ec68ff6522aa/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-10 | DEPT OF DEFENSE | [NSN: 4810-00-692-8254HS	 PN: S6027	 SLEEVE AND SLIDE, DI](https://sam.gov/opp/59e8878712bc4386b21ddfa855d0f133/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-10 | DEPT OF DEFENSE | [NSN:1560-017249840, BEAM AIRCRAFT, WSDC: 56F, B-1B BOMBER](https://sam.gov/opp/66de9f026c854aacb3c44f84ff728f8c/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-10 | DEPT OF DEFENSE | [SPE4A526R0151; 1560010229176; Terminal, Assembly, F.](https://sam.gov/opp/6b18965511334aa8a0cd5a13cf5278f1/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-10 | DEPT OF DEFENSE | [SPRRA1-26-Q-0020/NSN: 5998-21-921-0709/NOUN: CIRCUIT CARD ASSEMB](https://sam.gov/opp/e464596a86eb4d3aa3eaeeb9ae340f82/view) |
@@ -240,6 +237,7 @@ Posted range: 01/01/2026 -> 03/15/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-17 | DEPT OF DEFENSE | [SPE4A526R0158; 1560006280158; Coupling, Flexible, A.](https://sam.gov/opp/2757ec54075b41958e1ef15a81aeef5e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-17 | DEPT OF DEFENSE | [TANK,FUEL,AIRCRAFT, NSN 1560-010837468, Part-Number 70307-03003-102, Weapon System Designator Code 40A](https://sam.gov/opp/1c181d40f9d340779fdc3d9f76358748/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-13 | 2026-03-17 | DEPT OF DEFENSE | [SENSOR, AMBIENT TEMP](https://sam.gov/opp/81ff02a2170047dfbdf1f0372c2cb70f/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-17 | DEPT OF DEFENSE | [BATTERY,NONRECHARGE](https://sam.gov/opp/eb2f59e723db4e8b8ae21abfe852923e/view) |
 | 2 | Special Notice | Special Notice | 2026-02-19 | 2026-03-18 | DEPT OF DEFENSE | [Human Capital Management Software Development and Sustainment](https://sam.gov/opp/f7ab0f313c7043ff94ca3e246a2360fa/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-18 | DEPT OF DEFENSE | [BEARING,PLAIN,ROD END](https://sam.gov/opp/f138084429574f2b8470688f74423228/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-18 | DEPT OF DEFENSE | [PARTS KIT,BATTERY](https://sam.gov/opp/b75a50734b07456c9bbff8c1306850b0/view) |
@@ -296,6 +294,7 @@ Posted range: 01/01/2026 -> 03/15/2026
 | 4 | Sources Sought | Sources Sought | 2026-03-13 | 2026-03-20 | DEPT OF DEFENSE | [Sources Sought, 1 NSN, CM26037003](https://sam.gov/opp/9a1fb809dffe47c499d5cf2cd6ce7313/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-13 | 2026-03-20 | DEPT OF DEFENSE | [Control Assembly](https://sam.gov/opp/98666fceb0ce433daa580f72d7cf329c/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-13 | 2026-03-20 | DEPT OF DEFENSE | [LINKAGE ASSEMBLY](https://sam.gov/opp/ffa8fc9d637b4642b0cfa59420b5c4d7/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-16 | 2026-03-20 | DEPT OF DEFENSE | [NSN 2940015587221](https://sam.gov/opp/8104c6fd0c894c1fbc55e6833ae615f4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-10 | 2026-03-21 | DEPT OF DEFENSE | [VALVE,GATE](https://sam.gov/opp/bdc021a9f5044e379a95814c908be3ce/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-13 | 2026-03-21 | DEPT OF DEFENSE | [NSN2840-01-687-6045_CaseVane_F110_PN2214M15G06_FD2030-24-00223](https://sam.gov/opp/baa0a3cab04548b8bace026727c67727/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-03 | 2026-03-23 | DEPT OF DEFENSE | [Upgrade To California Heating Equipment Model MODEL: 10’ x 5’ x 3’ SOLUTION FURNACE/2092  Drop Bottom Furnace](https://sam.gov/opp/4a2524a499634970a90ca699eac8b391/view) |
@@ -317,13 +316,15 @@ Posted range: 01/01/2026 -> 03/15/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-24 | DEPT OF DEFENSE | [Motor, Alternating C](https://sam.gov/opp/97645b09aa144f419feb2cf2e44eb070/view) |
 | 2 | Special Notice | Special Notice | 2026-03-09 | 2026-03-24 | DEPT OF DEFENSE | [Notice of Intent Radar Development Contract (RDC) Ordering Period Extension](https://sam.gov/opp/28eaa383aa7b4445af67ab1b4cd3dc1f/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-09 | 2026-03-24 | DEPT OF DEFENSE | [Panel, Protection, Electric](https://sam.gov/opp/a44d45806de942ee955e0549413c30ff/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-24 | DEPT OF DEFENSE | [Soda Bag in Box (BIB) Beverage](https://sam.gov/opp/3a31198e3c65495f815799914e68635c/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-09 | 2026-03-24 | DEPT OF DEFENSE | [V22 Priced BOA Project G-0008](https://sam.gov/opp/73b245cf32bf41fbba086b7c949ad75c/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-24 | DEPT OF DEFENSE | [Valve, Butterfly](https://sam.gov/opp/96ee176258b0461eabe7408aaba08af0/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-10 | 2026-03-24 | DEPT OF DEFENSE | [IHPS Brackets & Rail Assembly](https://sam.gov/opp/dc010fc0319544b7a5829293b8d79a96/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-24 | DEPT OF DEFENSE | [6160014619622](https://sam.gov/opp/e6bd5de0ac604696bd6fcd049d3dacdd/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-16 | 2026-03-24 | DEPT OF DEFENSE | [Soda Bag in Box (BIB) Beverage](https://sam.gov/opp/434c8d8792c04b828af204ead7448be7/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-25 | DEPT OF DEFENSE | [5995-01-478-4876; KMA; INFANTRY CARRIER (STRYKER FIGHTNING VEH)](https://sam.gov/opp/a5f6b082c0714bbab23c0b66bae397ab/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-25 | DEPT OF DEFENSE | [Steam Turbine](https://sam.gov/opp/d821d972fbc44fe8b606969a50b1e2cb/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-03-10 | 2026-03-25 | DEPT OF DEFENSE | [Parka, Navy Working Uniform (NWU), Woodland Camouflage, Type III](https://sam.gov/opp/5831586dc0344b21931fe4ead0cfb95e/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-03-10 | 2026-03-25 | DEPT OF DEFENSE | [BATTERY,THERMAL](https://sam.gov/opp/0aad80f23b1e40a0bf8aab4819014ca5/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

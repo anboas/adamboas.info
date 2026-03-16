@@ -1,0 +1,46 @@
+{
+  "id": "sam-e2b8722095f140de83db8cc4a56789a7",
+  "title": "91--9,000 Gallons of Turbine Oil",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2b8722095f140de83db8cc4a56789a7",
+  "opportunity_url": "https://sam.gov/opp/e2b8722095f140de83db8cc4a56789a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e2b8722095f140de83db8cc4a56789a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e2b8722095f140de83db8cc4a56789a7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140R1726Q0020",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.PACIFIC NW REGION PN 6615",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2b8722095f140de83db8cc4a56789a7",
+  "detail_text": "This is a Sources Sought for market research purposes only. An award will not be made from this notice. Please see the attached document and respond accordingly if interested.",
+  "detail_text_length": 175,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e3414e169c94f0a8a1cbba33d4d9a0d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e3414e169c94f0a8a1cbba33d4d9a0d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8a0a8c5b01e9bab1375acc0dbfa211ec492ea16321eda8a2fcec5473fc9c082.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8a0a8c5b01e9bab1375acc0dbfa211ec492ea16321eda8a2fcec5473fc9c082.pdf",
+      "file_id": "6e3414e169c94f0a8a1cbba33d4d9a0d",
+      "file_name": "B01_08_Sources_Sought_for_Turbine_Oil_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 93837,
+      "sha256": "a8a0a8c5b01e9bab1375acc0dbfa211ec492ea16321eda8a2fcec5473fc9c082"
+    }
+  ],
+  "_mirror_hash": "7d2ef03caaa68ecdb5fb102ba676ddbf931747f366cf0a0ac0b825096c9f906d",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.961332+00:00"
+}

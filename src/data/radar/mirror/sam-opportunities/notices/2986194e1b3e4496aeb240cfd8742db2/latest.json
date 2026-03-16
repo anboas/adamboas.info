@@ -1,0 +1,46 @@
+{
+  "id": "sam-2986194e1b3e4496aeb240cfd8742db2",
+  "title": "NOI to Sole Source to Imaging Service Solutions for maintenance support services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2986194e1b3e4496aeb240cfd8742db2",
+  "opportunity_url": "https://sam.gov/opp/2986194e1b3e4496aeb240cfd8742db2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2986194e1b3e4496aeb240cfd8742db2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2986194e1b3e4496aeb240cfd8742db2",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "NOI-OD-26-003563",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2986194e1b3e4496aeb240cfd8742db2",
+  "detail_text": "The purpose of this acquisition is to acquire maintenance support services for the Philips MRI Scanner. The Surgery Operating MRI Section relies on the Philips MRI scanner for CC patient imaging during surgery to provide comprehensive imaging services to the Clinical Center (CC) and NIH Institutes. The Original Equipment Manufacturer (OEM), Philips, designated the system’s End of Service Life (EOSL) as December 31, 2025, and has confirmed that it can no longer provide formal maintenance support, nor time-and-materials service. As a result, OEM support is no longer available. Due to safety and The Joint Commission requirement, the scanner cannot be clinically used without at least preventive maintenance according to the manufacturer’s defined schedule. The National Institutes of Health (NIH) intends to award a firm-fixed-price contract for a third-party maintenance contract starting immediately for the Philips MRI scanner (FL# 105291) in the MRI Section of Operating Room within the NIH Clinical Center (building 10, room 2C609). The proposed vendor, Imaging Service Solutions LLC, is the only source able to support the system as currently configured (without requiring software regression), provide coverage for coils and supporting electronics, and deliver service responsiveness consistent with the clinical demands of an actively used MRI in an OR setting.",
+  "detail_text_length": 1374,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e77ff0007ac44746a160bb2c3bc75771/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e77ff0007ac44746a160bb2c3bc75771/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/47da488ecc5b2b8d9753472c21b93270b9b991a4093b45abd9a8364734355dda.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/47da488ecc5b2b8d9753472c21b93270b9b991a4093b45abd9a8364734355dda.docx",
+      "file_id": "e77ff0007ac44746a160bb2c3bc75771",
+      "file_name": "NOI+to+Sole+Source.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17205,
+      "sha256": "47da488ecc5b2b8d9753472c21b93270b9b991a4093b45abd9a8364734355dda"
+    }
+  ],
+  "_mirror_hash": "7b0b57d9a73153dc4dee9aa9c96f09dd70207bc1419a34a970cb3053dd62891d",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.131542+00:00"
+}

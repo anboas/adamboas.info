@@ -1,0 +1,78 @@
+{
+  "id": "sam-aa9cc05cf6e047199d2de39d71f700d4",
+  "title": "High Voltage Switchboard",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa9cc05cf6e047199d2de39d71f700d4",
+  "opportunity_url": "https://sam.gov/opp/aa9cc05cf6e047199d2de39d71f700d4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aa9cc05cf6e047199d2de39d71f700d4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aa9cc05cf6e047199d2de39d71f700d4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS253",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa9cc05cf6e047199d2de39d71f700d4",
+  "detail_text": "** Due to NAVY OPSEC procedures, the vessel name has been redacted from the solicitation. If required to quote, please request the vessel name via email ** NAVSUP Fleet Logistics Center Puget Sound intends to solicit and award a firm-fixed-price Supply-type Purchase Order for Original Equipment Manufacturer (OEM) Point Eight Power, LLC High Voltage Switchboard maintenance and repair on a Brand Name basis. See attached solicitation posted 13 Mar 2026 for requirements. All respones must be submitted prior to the solicitation closing date on page 1, box 8.",
+  "detail_text_length": 559,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63f045bdaf66459cb08ee4cc2db70903/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/88dd94ce9ad4446781bce6dd2e76639e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9454c48e720472e9091774520f8c471/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eee7be01004746b19ad534b2854f51e2/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63f045bdaf66459cb08ee4cc2db70903/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4044fb2510d3fbb4260a2821b0dd4f5efb9e7a5e4b94b4030dcecdb43cd4c0a0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4044fb2510d3fbb4260a2821b0dd4f5efb9e7a5e4b94b4030dcecdb43cd4c0a0.pdf",
+      "file_id": "63f045bdaf66459cb08ee4cc2db70903",
+      "file_name": "ATTACH001+-+SOR-26-051_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 276222,
+      "sha256": "4044fb2510d3fbb4260a2821b0dd4f5efb9e7a5e4b94b4030dcecdb43cd4c0a0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/88dd94ce9ad4446781bce6dd2e76639e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ca4e76b42fbc11b1b4bf3a805c1c246db226cc4f549190f4f267575cd2d092c0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ca4e76b42fbc11b1b4bf3a805c1c246db226cc4f549190f4f267575cd2d092c0.pdf",
+      "file_id": "88dd94ce9ad4446781bce6dd2e76639e",
+      "file_name": "ATTACH002+-+BNJ_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 517056,
+      "sha256": "ca4e76b42fbc11b1b4bf3a805c1c246db226cc4f549190f4f267575cd2d092c0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9454c48e720472e9091774520f8c471/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1119698d2e976859d3389d325860a17783677aae7bba4114746ac6eda4cdbc99.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1119698d2e976859d3389d325860a17783677aae7bba4114746ac6eda4cdbc99.pdf",
+      "file_id": "c9454c48e720472e9091774520f8c471",
+      "file_name": "ATTACH003+-+GFP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4336,
+      "sha256": "1119698d2e976859d3389d325860a17783677aae7bba4114746ac6eda4cdbc99"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eee7be01004746b19ad534b2854f51e2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/96bb3b41fbbff7f89eff5c6ffd820e98f26024a3f326d56eeeb755a41da95619.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/96bb3b41fbbff7f89eff5c6ffd820e98f26024a3f326d56eeeb755a41da95619.pdf",
+      "file_id": "eee7be01004746b19ad534b2854f51e2",
+      "file_name": "2.1.1+26QS253+SOL_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1840899,
+      "sha256": "96bb3b41fbbff7f89eff5c6ffd820e98f26024a3f326d56eeeb755a41da95619"
+    }
+  ],
+  "_mirror_hash": "a4be4ac1b0652d351e314887e21142b57c5b16784e4d870620b1cd10b99fffde",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.818074+00:00"
+}

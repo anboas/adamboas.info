@@ -1,0 +1,57 @@
+{
+  "id": "sam-40204aa13b314c3996f760c195f6f745",
+  "title": "DSCR B41 Parking Lot Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=40204aa13b314c3996f760c195f6f745",
+  "opportunity_url": "https://sam.gov/opp/40204aa13b314c3996f760c195f6f745/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/40204aa13b314c3996f760c195f6f745/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "40204aa13b314c3996f760c195f6f745",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SP470326Q0027",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DCSO.DCSO RICHMOND.DCSO RICHMOND DIVISION #1",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=40204aa13b314c3996f760c195f6f745",
+  "detail_text": "SYNOPSIS This is a synopsis for construction prepared in accordance with the format in FAR 5.207, as supplemented with additional information included in this notice. The solicitation number SP4703-26-Q-0027 is to be issued as a request for quote (RFQ). The resulting contract will be a firm-fixed price award with an expected Period of Performance of 60 days from issuance of the Notice to Proceed. This acquisition is set-aside for 100% small businesses. The North American Industry Classification System (NAICS) Code is 237310 (Parking Lot Repair). The small business size standard is $45M. Department of Labor Wage Determination based on location of the service provided (Richmond, VA). Partial proposals will not be accepted. For an offer to be considered for award, the contractor must be within a commutable driving distance to the DSCR facility and annotate the point from which mobilization occurs. This must be the site of the prime contractor, not a subcontractor. A 120-mile radius from DSCR is considered the commutable radius. Award will be made to the lowest priced, technically acceptable (LPTA) offeror that meets the requirements stated in the Statement of Work and the solicitation. Also refer to clauses and provisions includes in this notice. Past performance will be considered a part of Technical Acceptability, and the Contracting Officer will pull contractor data from CPARS and SPRS. The contractor must be registered in the System for Award Management (SAM) prior to award. If not already registered in SAM, go to the SAM website www.sam.gov to register prior to submitting your quote.",
+  "detail_text_length": 1612,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/58d5196e9c8344878ab9f13cec6c646b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fef57c8fa074232a47712ce5b79f444/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/58d5196e9c8344878ab9f13cec6c646b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e0e73e5b86a26c49d358110b30893299efa57f5eafb83372910b90a41e25e031.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e0e73e5b86a26c49d358110b30893299efa57f5eafb83372910b90a41e25e031.pdf",
+      "file_id": "58d5196e9c8344878ab9f13cec6c646b",
+      "file_name": "Attachment+1+-+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1921782,
+      "sha256": "e0e73e5b86a26c49d358110b30893299efa57f5eafb83372910b90a41e25e031"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fef57c8fa074232a47712ce5b79f444/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3dceca087f4c4916b1d9b1493ac185888eb065f36ff6d0bca27ea64162a91d56.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3dceca087f4c4916b1d9b1493ac185888eb065f36ff6d0bca27ea64162a91d56.pdf",
+      "file_id": "7fef57c8fa074232a47712ce5b79f444",
+      "file_name": "Attachment+2+-+Wage+Determination+-HWY-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 184094,
+      "sha256": "3dceca087f4c4916b1d9b1493ac185888eb065f36ff6d0bca27ea64162a91d56"
+    }
+  ],
+  "_mirror_hash": "d23abb51c7a2cc8d70f96906db1f27931bc96cbca2e594d480b70a1b3fbbc991",
+  "_mirror_run_id": "20260314T134402Z",
+  "_mirror_recorded_at": "2026-03-14T13:47:18.984598+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-9049160d8838467191e1683797567113",
+  "title": "Decisive Action Follow-On",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9049160d8838467191e1683797567113",
+  "opportunity_url": "https://sam.gov/opp/9049160d8838467191e1683797567113/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9049160d8838467191e1683797567113/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9049160d8838467191e1683797567113",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HDTRA1-26-R-0026",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE THREAT REDUCTION AGENCY (DTRA).DEFENSE THREAT REDUCTION AGENCY",
+  "posted_date": "2026-03-13",
+  "response_deadline": "2026-03-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9049160d8838467191e1683797567113",
+  "detail_text": "DTRA requires support services to provide a wide range of professional analytical services to assist with its mission of countering and deterring Weapons of Mass Destruction (WMD), emerging threats, and threat networks in the Continental United States (CONUS) and Outside the Continental United States (OCONUS). 03/10/26-DTRA is hosting an Industry Day on Tuesday, 31 March 2026. View the Industry Day:Decisive Action Follow-On posting via Sam.gov for additonal information and how to register. 03/12/2026-Government responses are now uploaded. The response due date is 13 March 2026. 03/13/2026-Revised the Government responses. The anticipated value is > $100,000,000.",
+  "detail_text_length": 670,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11e696fce13c40fca17b26a26d22bfe7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c5d9c8fd20842b1823902467ea9f9ff/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11e696fce13c40fca17b26a26d22bfe7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18a6cd178bbc64f8b1e1d748bedebb16b9b9c88bfe6bb93c001b47e6690c1442.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18a6cd178bbc64f8b1e1d748bedebb16b9b9c88bfe6bb93c001b47e6690c1442.xlsx",
+      "file_id": "11e696fce13c40fca17b26a26d22bfe7",
+      "file_name": "DA+Follow+On+QA_Government+Responses.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17890,
+      "sha256": "18a6cd178bbc64f8b1e1d748bedebb16b9b9c88bfe6bb93c001b47e6690c1442"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c5d9c8fd20842b1823902467ea9f9ff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c38afc9e408c26e1ef7b051d4c1185fb4651fbe884a9845dc635aad9375da084.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c38afc9e408c26e1ef7b051d4c1185fb4651fbe884a9845dc635aad9375da084.docx",
+      "file_id": "7c5d9c8fd20842b1823902467ea9f9ff",
+      "file_name": "RFI_SSN_RADAR_03052026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 53214,
+      "sha256": "c38afc9e408c26e1ef7b051d4c1185fb4651fbe884a9845dc635aad9375da084"
+    }
+  ],
+  "_mirror_hash": "5fa6f9060092a4d53ea525eaf9930adb0df119a24f9dad76d800c6294834be59",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.086815+00:00"
+}

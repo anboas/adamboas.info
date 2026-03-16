@@ -1,0 +1,46 @@
+{
+  "id": "sam-7ec9d6405a8c4500833e1234e7595e7a",
+  "title": "Notice of Intent - Sole Source - Tango Reserve",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ec9d6405a8c4500833e1234e7595e7a",
+  "opportunity_url": "https://sam.gov/opp/7ec9d6405a8c4500833e1234e7595e7a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7ec9d6405a8c4500833e1234e7595e7a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7ec9d6405a8c4500833e1234e7595e7a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "JUSTICE, DEPARTMENT OF.OFFICE OF JUSTICE PROGRAMS.OJP AGENCY WIDE",
+  "posted_date": "2026-03-12",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ec9d6405a8c4500833e1234e7595e7a",
+  "detail_text": "The Department of Justice, Office of Justice Programs, Office of Administration (OA) intends to issue a sole source award for Tango Reserve/BookIt Scheduling system by Tango Analytics. A Firm-Fixed Price order is anticipated for a base period of 12 months, plus two (2) 12-month option periods.",
+  "detail_text_length": 294,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/552f0c2ff2dc45beb16a88313d78856d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/552f0c2ff2dc45beb16a88313d78856d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4377664c2e73808b88872b0c10816343a41b55674ab3aa992496da04b954dd54.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4377664c2e73808b88872b0c10816343a41b55674ab3aa992496da04b954dd54.pdf",
+      "file_id": "552f0c2ff2dc45beb16a88313d78856d",
+      "file_name": "Notice+of+Intent+-+Sole+Source.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148335,
+      "sha256": "4377664c2e73808b88872b0c10816343a41b55674ab3aa992496da04b954dd54"
+    }
+  ],
+  "_mirror_hash": "cb1528b4f34302308977d23053fd6ea58214bfa9cc18e327f0ee7fa5b7ddb311",
+  "_mirror_run_id": "20260313T134308Z",
+  "_mirror_recorded_at": "2026-03-13T13:48:06.114812+00:00"
+}

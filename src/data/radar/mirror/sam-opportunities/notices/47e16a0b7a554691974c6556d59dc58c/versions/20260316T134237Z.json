@@ -1,0 +1,68 @@
+{
+  "id": "sam-47e16a0b7a554691974c6556d59dc58c",
+  "title": "NFPC Three Year Weld",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47e16a0b7a554691974c6556d59dc58c",
+  "opportunity_url": "https://sam.gov/opp/47e16a0b7a554691974c6556d59dc58c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/47e16a0b7a554691974c6556d59dc58c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "47e16a0b7a554691974c6556d59dc58c",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "NFPC_three_year_weld_IDIQ",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47e16a0b7a554691974c6556d59dc58c",
+  "detail_text": "NSWC Philadelphia is soliciting a three-year Firm-Fixed-Price (FFP) Indefinite-Delivery, Indefinite-Quantity (IDIQ) weld service contract through NFPC. Each delivery order will require two (2) each welders’ as specified in Paragraph 12.4 of the Statement of Work, for duration of (2) weeks (80 hours) per trip, for a maximum of five (5) trips per contract year. All travel, material, and other direct costs shall be included in the FFP for each order.",
+  "detail_text_length": 451,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c61e6d819894252b3ab042cc28859d7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5b5b097bc844af0b7a16bf38317cfbf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f74f6700dbf14c59ab65f9f3d49901f5/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c61e6d819894252b3ab042cc28859d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c18f40d94884c1c7252171e32e9385bdd188bf86c2c7e8df2da0d74a5d33a8f8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c18f40d94884c1c7252171e32e9385bdd188bf86c2c7e8df2da0d74a5d33a8f8.pdf",
+      "file_id": "2c61e6d819894252b3ab042cc28859d7",
+      "file_name": "N64498-25-SIMACQ-PD-1410-0079+Welder.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 75662,
+      "sha256": "c18f40d94884c1c7252171e32e9385bdd188bf86c2c7e8df2da0d74a5d33a8f8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5b5b097bc844af0b7a16bf38317cfbf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c02a14beeb5d9e41b18c5d36dafd8f2c0a455aa2cf6d090e3882e8ffa75a988c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c02a14beeb5d9e41b18c5d36dafd8f2c0a455aa2cf6d090e3882e8ffa75a988c.pdf",
+      "file_id": "e5b5b097bc844af0b7a16bf38317cfbf",
+      "file_name": "Solicitation+Amendment+N6449826Q50480001+SF+30_released.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 653994,
+      "sha256": "c02a14beeb5d9e41b18c5d36dafd8f2c0a455aa2cf6d090e3882e8ffa75a988c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f74f6700dbf14c59ab65f9f3d49901f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/580f4735924710375b4a3a220da861e4e89c4bed72681dd88eea5910e09110be.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/580f4735924710375b4a3a220da861e4e89c4bed72681dd88eea5910e09110be.pdf",
+      "file_id": "f74f6700dbf14c59ab65f9f3d49901f5",
+      "file_name": "Solicitation+-+N6449826Q5048+-1-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1895312,
+      "sha256": "580f4735924710375b4a3a220da861e4e89c4bed72681dd88eea5910e09110be"
+    }
+  ],
+  "_mirror_hash": "4a2e576634fd56e7bdb054889e5d4d42ef5bac540d5ed80c2bd876c63b622979",
+  "_mirror_run_id": "20260316T134237Z",
+  "_mirror_recorded_at": "2026-03-16T13:43:57.144318+00:00"
+}
