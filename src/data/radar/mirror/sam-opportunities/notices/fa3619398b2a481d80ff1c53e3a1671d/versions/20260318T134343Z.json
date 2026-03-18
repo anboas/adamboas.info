@@ -1,0 +1,47 @@
+{
+  "id": "sam-fa3619398b2a481d80ff1c53e3a1671d",
+  "title": "Sources Sought_ DAY OPTICAL SIGHT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fa3619398b2a481d80ff1c53e3a1671d",
+  "opportunity_url": "https://sam.gov/opp/fa3619398b2a481d80ff1c53e3a1671d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fa3619398b2a481d80ff1c53e3a1671d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fa3619398b2a481d80ff1c53e3a1671d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912CH-26-Q-0035",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC- DTA",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fa3619398b2a481d80ff1c53e3a1671d",
+  "detail_text": "Army Contracting Command - Detroit Arsenal (ACC-DTA) is conducting a Market Survey to determine the level of interest among qualified Contractors for the production of Day Optical Sight, NSN:1240-01-696-3063. Suppliers capable of manufacturing this item must indicate so in response, by email, to Ashley Treier, ashley.s.treier.civ@army.mil. The purpose of this market survey is to identify potential offerors and gather information for planning purposes about capabilities of each industry source as defined in Federal Acquisition Regulation 15.201(e). The input will help ACC-DTA ascertain the interest, capability, and capacity of all potential offerors. The market survey does not constitute a solicitation and shall not be construed as commitment by the Government. No telephone responses will be accepted.",
+  "detail_text_length": 811,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df9f0c8240c14c84a23d73bd72ec57b2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df9f0c8240c14c84a23d73bd72ec57b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b8724f3472f7385566dd2c904f36b4b29b56d8ac3f2666fc28e6b797ac29f767.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b8724f3472f7385566dd2c904f36b4b29b56d8ac3f2666fc28e6b797ac29f767.docx",
+      "file_id": "df9f0c8240c14c84a23d73bd72ec57b2",
+      "file_name": "Sources_Sought_Questionnaire_26Q0035.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26664,
+      "sha256": "b8724f3472f7385566dd2c904f36b4b29b56d8ac3f2666fc28e6b797ac29f767"
+    }
+  ],
+  "_mirror_hash": "790258062912420de33bae84990bbe8d5e0d4c759842c1f8159a36ed39d1e615",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.811434+00:00"
+}

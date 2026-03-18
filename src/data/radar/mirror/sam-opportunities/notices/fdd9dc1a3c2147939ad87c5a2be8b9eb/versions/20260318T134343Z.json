@@ -1,0 +1,58 @@
+{
+  "id": "sam-fdd9dc1a3c2147939ad87c5a2be8b9eb",
+  "title": "LPS Camera - Sources Sought",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdd9dc1a3c2147939ad87c5a2be8b9eb",
+  "opportunity_url": "https://sam.gov/opp/fdd9dc1a3c2147939ad87c5a2be8b9eb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fdd9dc1a3c2147939ad87c5a2be8b9eb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fdd9dc1a3c2147939ad87c5a2be8b9eb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA9101Camera",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdd9dc1a3c2147939ad87c5a2be8b9eb",
+  "detail_text": "This is a Sources Sought Notice to determine the availability and technical capability of small and large businesses to meet the Government’s requirement for commercial equipment IAW Attachment 1 – Technical Specification Sheet.",
+  "detail_text_length": 228,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00b46c2e4eec4c7197890c0a2cb136dd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98dbcf4db50045349b9427c1207568ad/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00b46c2e4eec4c7197890c0a2cb136dd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/75bf76e475aa9f5bc6a5ea683cc8406b43507a95fc0145e284cb74783268d99e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/75bf76e475aa9f5bc6a5ea683cc8406b43507a95fc0145e284cb74783268d99e.pdf",
+      "file_id": "00b46c2e4eec4c7197890c0a2cb136dd",
+      "file_name": "Sources+Sought+Notice+LPS-Camera.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118884,
+      "sha256": "75bf76e475aa9f5bc6a5ea683cc8406b43507a95fc0145e284cb74783268d99e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98dbcf4db50045349b9427c1207568ad/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c6ff10c26334cabab8518a2608e3ed3b5c9aa37ae010c3ce565deed2bc363e7e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c6ff10c26334cabab8518a2608e3ed3b5c9aa37ae010c3ce565deed2bc363e7e.pdf",
+      "file_id": "98dbcf4db50045349b9427c1207568ad",
+      "file_name": "Technical+Specification+Sheet-+Camera.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 552997,
+      "sha256": "c6ff10c26334cabab8518a2608e3ed3b5c9aa37ae010c3ce565deed2bc363e7e"
+    }
+  ],
+  "_mirror_hash": "314922367ec85f80090c18c6521cb8c0faf58b2214ff7aa531038166154c5436",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.758126+00:00"
+}

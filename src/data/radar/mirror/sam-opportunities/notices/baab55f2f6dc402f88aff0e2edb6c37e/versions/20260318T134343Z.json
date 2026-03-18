@@ -1,0 +1,57 @@
+{
+  "id": "sam-baab55f2f6dc402f88aff0e2edb6c37e",
+  "title": "Stancil Voice Logging Recorder SW & Remote Installation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=baab55f2f6dc402f88aff0e2edb6c37e",
+  "opportunity_url": "https://sam.gov/opp/baab55f2f6dc402f88aff0e2edb6c37e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/baab55f2f6dc402f88aff0e2edb6c37e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "baab55f2f6dc402f88aff0e2edb6c37e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26927808Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=baab55f2f6dc402f88aff0e2edb6c37e",
+  "detail_text": "NASA/NSSC has a requirement for Stancil Voice Logging Recorder SW & Remote Installation. See the attached SOW and capability statement for further information.",
+  "detail_text_length": 159,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52f9475ab86a4dcabe9d0b9f18c1cf37/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a615ee5ff064d37be49cee18aac17e6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52f9475ab86a4dcabe9d0b9f18c1cf37/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f5728e70ca1504abfc2826958b80b897d150160c0344d3eadd0ae9517c7c7f18.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f5728e70ca1504abfc2826958b80b897d150160c0344d3eadd0ae9517c7c7f18.pdf",
+      "file_id": "52f9475ab86a4dcabe9d0b9f18c1cf37",
+      "file_name": "Tab+07+Capability+Statement+SAM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 130156,
+      "sha256": "f5728e70ca1504abfc2826958b80b897d150160c0344d3eadd0ae9517c7c7f18"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a615ee5ff064d37be49cee18aac17e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d22c11fb04c6b001938d83cd796e97e84129c915e262046d090c4b1d7a57a9ee.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d22c11fb04c6b001938d83cd796e97e84129c915e262046d090c4b1d7a57a9ee.pdf",
+      "file_id": "5a615ee5ff064d37be49cee18aac17e6",
+      "file_name": "Tab+04+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 91568,
+      "sha256": "d22c11fb04c6b001938d83cd796e97e84129c915e262046d090c4b1d7a57a9ee"
+    }
+  ],
+  "_mirror_hash": "f1361c5087f96e76f43718cb8c8fe7a8f13604a12d7832984d80200da644e15b",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.901720+00:00"
+}

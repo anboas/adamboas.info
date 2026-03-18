@@ -1,0 +1,101 @@
+{
+  "id": "sam-6f6a52322dbc431babb85543a65fe68d",
+  "title": "J--This is a combined synopsis/solicitation for commercial products or commercial",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f6a52322dbc431babb85543a65fe68d",
+  "opportunity_url": "https://sam.gov/opp/6f6a52322dbc431babb85543a65fe68d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6f6a52322dbc431babb85543a65fe68d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6f6a52322dbc431babb85543a65fe68d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140D0426Q0234",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f6a52322dbc431babb85543a65fe68d",
+  "detail_text": "The contractor shall provide all personnel, management, supervision, tools, equipment, materials, transportation, and services necessary to perform preventive, corrective, and emergency maintenance on government-owned medical and dental equipment at the Armed Forces Retirement Home, Gulfport Campus (AFRH-G). Services provided shall ensure all equipment is safe, functional, and in compliance with manufacturer specifications, Joint Commission standards, CARF, OSHA, NFPA, EPA, and other applicable federal regulations.",
+  "detail_text_length": 520,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2e4cf6953f72455f8b0f673b4938ad46/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53d7e463a9a14702988f9006729fdb08/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a91260a9835a422a8256d43a1703a378/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caaed168bb3b403eb6641e1a3c11a904/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10904c434364e5db6c7b52012f06ed6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5858b811f8f406cb3372cb6c24e05ab/download"
+  ],
+  "resource_count": 6,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2e4cf6953f72455f8b0f673b4938ad46/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/de37648b8093861cac8552fa69ce6a1a604056792c4bec114fae6d2a4dc7b216.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/de37648b8093861cac8552fa69ce6a1a604056792c4bec114fae6d2a4dc7b216.pdf",
+      "file_id": "2e4cf6953f72455f8b0f673b4938ad46",
+      "file_name": "B08_SOL_Biomedical_Engineering_Maintenance_and_Repair_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 580869,
+      "sha256": "de37648b8093861cac8552fa69ce6a1a604056792c4bec114fae6d2a4dc7b216"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53d7e463a9a14702988f9006729fdb08/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d0f81f5ab2fe3d7983e8082eb0695d5d627a156596ff44abae0deb4a31e748f4.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d0f81f5ab2fe3d7983e8082eb0695d5d627a156596ff44abae0deb4a31e748f4.xlsx",
+      "file_id": "53d7e463a9a14702988f9006729fdb08",
+      "file_name": "B08_SOL__Attachment_1_Excel_Pricing_Template_1.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11656,
+      "sha256": "d0f81f5ab2fe3d7983e8082eb0695d5d627a156596ff44abae0deb4a31e748f4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a91260a9835a422a8256d43a1703a378/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6dd266a2d73744645ed91e48ee630b2ee6953de974377012cbf3939a3eb92c7f.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6dd266a2d73744645ed91e48ee630b2ee6953de974377012cbf3939a3eb92c7f.xlsx",
+      "file_id": "a91260a9835a422a8256d43a1703a378",
+      "file_name": "B08_SOL__Attachment_2_Equipment_Inventory_1.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36422,
+      "sha256": "6dd266a2d73744645ed91e48ee630b2ee6953de974377012cbf3939a3eb92c7f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caaed168bb3b403eb6641e1a3c11a904/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03654e138ed9cac8c1285de3d83fc2af9298ba78c08ba740461988e425dd0dd5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03654e138ed9cac8c1285de3d83fc2af9298ba78c08ba740461988e425dd0dd5.pdf",
+      "file_id": "caaed168bb3b403eb6641e1a3c11a904",
+      "file_name": "B08_SOL__Attachment_5_SCA_WD_2015-5147_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 344598,
+      "sha256": "03654e138ed9cac8c1285de3d83fc2af9298ba78c08ba740461988e425dd0dd5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10904c434364e5db6c7b52012f06ed6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0d6b16c2c5b6edc16518fe05375edf51552bd9c6ff4787ec5f448c0d8ea57fe0.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0d6b16c2c5b6edc16518fe05375edf51552bd9c6ff4787ec5f448c0d8ea57fe0.xlsx",
+      "file_id": "d10904c434364e5db6c7b52012f06ed6",
+      "file_name": "B08_SOL__Attachment_3_AED_Inventory_1.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16536,
+      "sha256": "0d6b16c2c5b6edc16518fe05375edf51552bd9c6ff4787ec5f448c0d8ea57fe0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5858b811f8f406cb3372cb6c24e05ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2112999cdf953e2ee476775058c2400235c8ae03aa5a41b47248d1a5b05913d7.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2112999cdf953e2ee476775058c2400235c8ae03aa5a41b47248d1a5b05913d7.xlsx",
+      "file_id": "d5858b811f8f406cb3372cb6c24e05ab",
+      "file_name": "B08_SOL__Attachment_4_Q_A_Spreadsheet_1.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10316,
+      "sha256": "2112999cdf953e2ee476775058c2400235c8ae03aa5a41b47248d1a5b05913d7"
+    }
+  ],
+  "_mirror_hash": "256a5ea022081fb8e790174a9095e74ae0bffac81c0ad783285ced0f360aac2d",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.091440+00:00"
+}

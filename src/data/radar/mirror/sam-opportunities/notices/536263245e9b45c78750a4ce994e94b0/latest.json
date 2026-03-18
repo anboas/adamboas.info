@@ -1,0 +1,57 @@
+{
+  "id": "sam-536263245e9b45c78750a4ce994e94b0",
+  "title": "High Speed Combustion Analyzer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=536263245e9b45c78750a4ce994e94b0",
+  "opportunity_url": "https://sam.gov/opp/536263245e9b45c78750a4ce994e94b0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/536263245e9b45c78750a4ce994e94b0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "536263245e9b45c78750a4ce994e94b0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA860126Q0018",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=536263245e9b45c78750a4ce994e94b0",
+  "detail_text": "The Air Force Life Cycle Management Center (AFLCMC/PZIBA), intends to award a sole-source, firm-fixed-price contract to AVL Test Systems, Inc. 47519 Halyard Drive, Plymouth MI 48170, for the procurement of a High-Speed Combustion Analyzer for the Air Force Institute of Technology (AFIT) at Wright-Patterson Air Force Base, Ohio. Extensive market research was conducted including Internet market research, Sources Sought, SME input, similar research topics at AFRL and GSA Advantage were reviewed for vendors utilizing IndiCom software. It was found that AVL Test Systems is the sole manufacturer to meet the minimum requirements outlined in the SOW without adding additional costs for further equipment and installation to operate other brands. AVL does not have any authorized distributors of their equipment. The Air Force Institute of Technology (AFIT) has already invested time and engineering hours in incorporating IndiCom software component configurations. Awarding any other manufacturer’s equipment other than that using IndiCom software will result in significant delays in utilizing the equipment. Estimates are a year or more to adapt existing programming to accommodate non-IndiCom equipment. For this reason, only products utilizing IndiCom will be acceptable. AVL is the only manufacturer of High-Speed Combustion Analyzer meeting the requirements of the Statement of Work (SOW) and current software used in AFIT. In accordance with FAR 5.207(c)(15), the justification for the lack of competition is that the required proprietary product is only available from a single authorized source. Therefore, this acquisition is being conducted under the authority of Federal Acquisition Regulation (FAR) 6.302-1. Submission Instructions and Points of Contact: Interested parties who believe they can satisfy the requirements must provide a capability statement with clear and convincing evidence of their ability to do so. The statement must demonstrate the vendor's capability to provide systems furniture that is 100% physically compatible and interchangeable with the existing Haworth system, including its proprietary connections. A simple statement of capability is not sufficient. All responses, questions, and capability statements shall be submitted via email to the following points of contact no later than March 31, 2026, at 11:00 AM Eastern Time. Contract Specialist: Brian Algeo, brian.algeo.l@us.af.mil Contracting Officer: Candice Snow, candice.snow@us.af.mil All correspondence sent via email must contain the subject line: \"FA8601-26-Q-0018, High Speed Combustion Analyzer (HSCA).\" Be advised that emails without this exact subject line or with prohibited attachments (.zip, .exe) may be blocked by network filters. Acceptable attachment formats are PDF, .doc, and. xis. This notice is not a request for competitive proposals or quotes. A decision by the Government not to compete this proposed contract based upon responses to this notice is solely within the discretion of the Government. Attachments: Statement of Work (SOW) Sole Source Justification (SSJ) Redacted",
+  "detail_text_length": 3093,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28bd0d81cc6e49eb8ea330276f54fda4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d2d4e539ce7412aa05f103bbf6c8ad5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28bd0d81cc6e49eb8ea330276f54fda4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3c2bcdf9c23997b86d8c6abab76f6cc13eccd51371c8c06f7bc85de8a5954c53.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3c2bcdf9c23997b86d8c6abab76f6cc13eccd51371c8c06f7bc85de8a5954c53.pdf",
+      "file_id": "28bd0d81cc6e49eb8ea330276f54fda4",
+      "file_name": "Attachment+2+-+HSCA__Redacted_Brand+Name+SSJ.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 281762,
+      "sha256": "3c2bcdf9c23997b86d8c6abab76f6cc13eccd51371c8c06f7bc85de8a5954c53"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d2d4e539ce7412aa05f103bbf6c8ad5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4eea3d0a2f3d6fc40e26376107a25e1fe8f03d3768ecda6f922c46f814ad8e83.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4eea3d0a2f3d6fc40e26376107a25e1fe8f03d3768ecda6f922c46f814ad8e83.pdf",
+      "file_id": "9d2d4e539ce7412aa05f103bbf6c8ad5",
+      "file_name": "Attachment+2+-+Statement+of+Work+For+A+HPLC-MS+6+Jan+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 129557,
+      "sha256": "4eea3d0a2f3d6fc40e26376107a25e1fe8f03d3768ecda6f922c46f814ad8e83"
+    }
+  ],
+  "_mirror_hash": "38281a8ecac07be38af612641d3d090eed77fe68e086cb08530412f2a911f8c8",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.050761+00:00"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "sam-0c67fc3f27254eeaa2b43c434140a35f",
+  "title": "16th Air Force Commercial Solutions Opening",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c67fc3f27254eeaa2b43c434140a35f",
+  "opportunity_url": "https://sam.gov/opp/0c67fc3f27254eeaa2b43c434140a35f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0c67fc3f27254eeaa2b43c434140a35f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0c67fc3f27254eeaa2b43c434140a35f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA7037-23-S-C0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.AMIC.AMICDET2",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c67fc3f27254eeaa2b43c434140a35f",
+  "detail_text": "The 16th Air Force is offering a CSO authorized by 10 USC 3458 and DFARS 212.70 Defense Commercial Solutions Opening. Under a CSO, the USAF may competitively award contracts to proposals received in response to a general solicitation, similar to a Broad Agency Announcement (BAA), to acquire innovative commercial items, technologies, and services, based on a review of proposals by scientific, technological, or other subject-matter expert peers within the USAF. Under this CSO, all items, technologies, and services shall be treated as commercial items. The USAF intends to obtain \"innovative\" solutions or potential new capabilities that fulfill requirements, close capability gaps, or provide potential technology advancements. Solutions may include existing technologies or procedures, not currently in use by the USAF, that would enhance or streamline USAF mission capabilities. \"Innovative\" is defined as any technology, process or method that is new as of the date of submission of a proposal. It also includes any new application of an existing technology, process, or method. Call 0001 (Topic 0007, MRT-C Automation) is now closed for submissions. Call 0002 (Topic 0006, CTIOS) is now closed for submissions. Call 0003 (Topic 0007, Modernization of Joint Command Language Program Manager Database) is now closed for submissions Call 0004 (Topic 0007, WAPS Scheduling Tool) is now closed for submissions. Call 0005 (Topics 0007 & 0016 OSCARS) is now closed for submissions. Call 0006 (Topics 001 & 006 - FMS Threat Data Support) is open for submissions until March 30, 2026. *After review of the initial submissions to Call 0006 - FMS Threat Data Support, the Government has determined that we did not sufficiently define the need for industry to respond appropriately. The Call has been revised to include further clarification of objectives. If you have already provided a submission, please review Call 0006 again and make changes if you see appropriate to your White Paper and Quad Chart. All interested Vendors must resubmit, even if no changes are made, as we have discarded any previous submissions. Please note that the extended submission date is now 30 March 2026. Call 0007 (Topic 007 AFIN - Premise Wiring Architectural Design (PWAD)) is open for submissions until March 31, 2026.",
+  "detail_text_length": 2301,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b1cc8a1bd494bdf81ff913383dde4ac/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69cc4adcadf149f1a6c54cb61047abb4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bae02e1d2f5243deb68c3f17f9ccb2ef/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfe295b69be448dd8ce9c29c10811cd6/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b1cc8a1bd494bdf81ff913383dde4ac/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5f5580b1bee1eec4f08368d3c96acf0008299fc0f1b3952d01cb5d4cc4a29c30.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5f5580b1bee1eec4f08368d3c96acf0008299fc0f1b3952d01cb5d4cc4a29c30.pdf",
+      "file_id": "1b1cc8a1bd494bdf81ff913383dde4ac",
+      "file_name": "16th+AF+CSO+Call+0007_PWAD.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1691386,
+      "sha256": "5f5580b1bee1eec4f08368d3c96acf0008299fc0f1b3952d01cb5d4cc4a29c30"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69cc4adcadf149f1a6c54cb61047abb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f19080e6ec3307b98d36fc8a3716ce298406c82676fa220d8ced64209b1c07eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f19080e6ec3307b98d36fc8a3716ce298406c82676fa220d8ced64209b1c07eb.pdf",
+      "file_id": "69cc4adcadf149f1a6c54cb61047abb4",
+      "file_name": "16TH+AF+CSO_Updated+12+Dec+2025.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 341892,
+      "sha256": "f19080e6ec3307b98d36fc8a3716ce298406c82676fa220d8ced64209b1c07eb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bae02e1d2f5243deb68c3f17f9ccb2ef/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/94b2acd6d4d2872f6fa1f032f2d2168bbe8ada871fa6da17fa402969031ce662.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/94b2acd6d4d2872f6fa1f032f2d2168bbe8ada871fa6da17fa402969031ce662.pdf",
+      "file_id": "bae02e1d2f5243deb68c3f17f9ccb2ef",
+      "file_name": "16th+AF+CSO+Call+0006_FMS+Threat+Data+Support_rev+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 564549,
+      "sha256": "94b2acd6d4d2872f6fa1f032f2d2168bbe8ada871fa6da17fa402969031ce662"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfe295b69be448dd8ce9c29c10811cd6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc1ed3bf9d93e6633b6d05b0dcbad6dd9dc64d1650ab76d8a2944922d4b3a457.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc1ed3bf9d93e6633b6d05b0dcbad6dd9dc64d1650ab76d8a2944922d4b3a457.pdf",
+      "file_id": "cfe295b69be448dd8ce9c29c10811cd6",
+      "file_name": "Call+0006_Attachment+8_EW+Parametrics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 92406,
+      "sha256": "dc1ed3bf9d93e6633b6d05b0dcbad6dd9dc64d1650ab76d8a2944922d4b3a457"
+    }
+  ],
+  "_mirror_hash": "2f67a91c32a191f6d68b3b2c2cc5f29e0fa5b3a95ee769279eb8de75d38f068e",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.153797+00:00"
+}

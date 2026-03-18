@@ -1,0 +1,90 @@
+{
+  "id": "sam-0ed4a12a3e6e436f815f12a5ab71c13f",
+  "title": "Spill Response - Scott AFB, IL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ed4a12a3e6e436f815f12a5ab71c13f",
+  "opportunity_url": "https://sam.gov/opp/0ed4a12a3e6e436f815f12a5ab71c13f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0ed4a12a3e6e436f815f12a5ab71c13f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0ed4a12a3e6e436f815f12a5ab71c13f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA440726_SPILL",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4407  375 CONS LGC",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ed4a12a3e6e436f815f12a5ab71c13f",
+  "detail_text": "This is a request for information ONLY. This is not a request for quote/proposal and there is no solicitation package available at this time. The 375 Contracting Squadron, Scott Air Force Base, IL is seeking sources to provide Spill Response Services in accordance with the draft Performance Work Statement (PWS). Service to include Emergency Oil and Hazardous Substance/Hazardous Waste (OHS) spill response, sampling and cleanup services for the installation and resulting from operations of SAFB that take place off installation within 25 miles. See attached documents for furthur details and how to submit a response to this request. Attachment 1 – DRAFT RFI for Spill Response BPA Attachement 2 - Performance Work Statement Spills BPA Attachment 3 – Draft Pricing List Attachment 4 – RFI Response List Amendment - March 17, 2026 - PDF version of PWS added to this request due to vendor inability to open word document version. All other aspects of this request remain the same.",
+  "detail_text_length": 981,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38b5288a52b74bfb9a5a4c27d80531ab/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/671a8d5b82fc4e45adf884b9846c35c8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80b1de8b435645e5a7dc2b625d2d1497/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5f07e5c66634885aa12a16218e5d6ad/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b90f53cc66f84e2399823033bd0cf1a6/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38b5288a52b74bfb9a5a4c27d80531ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/76bfb1a3c36163c02f5089a928f6eb3baed400d3cb764390efb9b586b04f082d.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/76bfb1a3c36163c02f5089a928f6eb3baed400d3cb764390efb9b586b04f082d.xlsx",
+      "file_id": "38b5288a52b74bfb9a5a4c27d80531ab",
+      "file_name": "DRAFT_Pricing+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25367,
+      "sha256": "76bfb1a3c36163c02f5089a928f6eb3baed400d3cb764390efb9b586b04f082d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/671a8d5b82fc4e45adf884b9846c35c8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/edc2d8aac663014527d9d065cccd043068e36bc6404c484e7e76897f377d107b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/edc2d8aac663014527d9d065cccd043068e36bc6404c484e7e76897f377d107b.xlsx",
+      "file_id": "671a8d5b82fc4e45adf884b9846c35c8",
+      "file_name": "RFI+Response+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21772,
+      "sha256": "edc2d8aac663014527d9d065cccd043068e36bc6404c484e7e76897f377d107b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80b1de8b435645e5a7dc2b625d2d1497/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c224c71d86c3476f74567d86e9854359ad3d02af78294cc4d2db7e813965f02d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c224c71d86c3476f74567d86e9854359ad3d02af78294cc4d2db7e813965f02d.pdf",
+      "file_id": "80b1de8b435645e5a7dc2b625d2d1497",
+      "file_name": "Performance_Work_Statement_Spills_BPA_10February2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 163143,
+      "sha256": "c224c71d86c3476f74567d86e9854359ad3d02af78294cc4d2db7e813965f02d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5f07e5c66634885aa12a16218e5d6ad/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/651e05edc7b232215be24072ea84a8eded990465f9f6b17b4619e636e3b8aee9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/651e05edc7b232215be24072ea84a8eded990465f9f6b17b4619e636e3b8aee9.docx",
+      "file_id": "b5f07e5c66634885aa12a16218e5d6ad",
+      "file_name": "DRAFT+RFI+for+Spill+Response+BPA.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43255,
+      "sha256": "651e05edc7b232215be24072ea84a8eded990465f9f6b17b4619e636e3b8aee9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b90f53cc66f84e2399823033bd0cf1a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c5abb04268e766468c2c9a7f1a64b28b1849d4f12d01fa7aef22680f98f74b87.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c5abb04268e766468c2c9a7f1a64b28b1849d4f12d01fa7aef22680f98f74b87.docx",
+      "file_id": "b90f53cc66f84e2399823033bd0cf1a6",
+      "file_name": "Performance_Work_Statement_Spills_BPA_10February2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67592,
+      "sha256": "c5abb04268e766468c2c9a7f1a64b28b1849d4f12d01fa7aef22680f98f74b87"
+    }
+  ],
+  "_mirror_hash": "1f0a356ca3e9ab25dd676dff09d483e369918709f5fcc931511307d96b3aa3fc",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.953713+00:00"
+}

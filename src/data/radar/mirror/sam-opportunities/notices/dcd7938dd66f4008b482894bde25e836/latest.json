@@ -1,0 +1,57 @@
+{
+  "id": "sam-dcd7938dd66f4008b482894bde25e836",
+  "title": "Notice of Intent -Logistical Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dcd7938dd66f4008b482894bde25e836",
+  "opportunity_url": "https://sam.gov/opp/dcd7938dd66f4008b482894bde25e836/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dcd7938dd66f4008b482894bde25e836/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dcd7938dd66f4008b482894bde25e836",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "M6700126Q0037",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MCIEAST.COMMANDING GENERAL",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dcd7938dd66f4008b482894bde25e836",
+  "detail_text": "M6700126Q0037 Notice of Intent to Sole Source",
+  "detail_text_length": 45,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6663c611e42a4f7a8054eda829ebf683/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e45c5205426746dba8618b94300f61f8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6663c611e42a4f7a8054eda829ebf683/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3f1f2dabc6b06bb38ff91788ea338e81ed7bf33bbe6f6ef8248ba5c7ee82c246.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3f1f2dabc6b06bb38ff91788ea338e81ed7bf33bbe6f6ef8248ba5c7ee82c246.pdf",
+      "file_id": "6663c611e42a4f7a8054eda829ebf683",
+      "file_name": "2nd+MED+LOG+J++A+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 460078,
+      "sha256": "3f1f2dabc6b06bb38ff91788ea338e81ed7bf33bbe6f6ef8248ba5c7ee82c246"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e45c5205426746dba8618b94300f61f8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/887bab913d2386b79c596f379334f968af97cc8c9df42992a3738c2af783d93a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/887bab913d2386b79c596f379334f968af97cc8c9df42992a3738c2af783d93a.pdf",
+      "file_id": "e45c5205426746dba8618b94300f61f8",
+      "file_name": "JP+Logistics+2nd+MEDLOG+Notice+of+Intent.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174031,
+      "sha256": "887bab913d2386b79c596f379334f968af97cc8c9df42992a3738c2af783d93a"
+    }
+  ],
+  "_mirror_hash": "ecc4a481536b74bfd13c443c12d9de056962df4200c123838607f860a092bf7e",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.054081+00:00"
+}

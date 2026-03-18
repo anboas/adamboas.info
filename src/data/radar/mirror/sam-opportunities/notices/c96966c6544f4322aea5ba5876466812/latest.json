@@ -1,0 +1,57 @@
+{
+  "id": "sam-c96966c6544f4322aea5ba5876466812",
+  "title": "FY26 Studio Camera Upgrade",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c96966c6544f4322aea5ba5876466812",
+  "opportunity_url": "https://sam.gov/opp/c96966c6544f4322aea5ba5876466812/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c96966c6544f4322aea5ba5876466812/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c96966c6544f4322aea5ba5876466812",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA3300ABWPA26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3300  42 CONS CC",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c96966c6544f4322aea5ba5876466812",
+  "detail_text": "The 42d Contracting Squadron, Maxwell AFB, AL, is requesting information from industry to procure brand name Sony ILME-FR7K, or equal, studio camera systems for the 42d Air Base Wing, Public Affairs (PA) office. This requirement involves unique characteristics necessary for compatibility with the end-user's existing equipment inventory. Information gathered from this notice will be used to finalize the acquisition strategy for the requirement detailed in the attached draft Statement of Requirements (SOR).",
+  "detail_text_length": 510,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25eda20c1c4c487aabdb9498f1f47390/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b79fb7c8147448aab659e35130e9dcdf/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25eda20c1c4c487aabdb9498f1f47390/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eb20d140fca05eff365098f839474b7c5a2b72d0cde1378bf8c3610ca8505192.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eb20d140fca05eff365098f839474b7c5a2b72d0cde1378bf8c3610ca8505192.docx",
+      "file_id": "25eda20c1c4c487aabdb9498f1f47390",
+      "file_name": "Studio+Camera+Upgrade+-+SAM+Sources+Sought+42+ABW+PA.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19101,
+      "sha256": "eb20d140fca05eff365098f839474b7c5a2b72d0cde1378bf8c3610ca8505192"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b79fb7c8147448aab659e35130e9dcdf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e9b5bc17ec065e9c491790b25f01064e4755cf27383509257b4af80eb3e735d2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e9b5bc17ec065e9c491790b25f01064e4755cf27383509257b4af80eb3e735d2.docx",
+      "file_id": "b79fb7c8147448aab659e35130e9dcdf",
+      "file_name": "Attachment+1.+Draft+SOR+-+FY26+Studio+Camera+Upgrade.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25590,
+      "sha256": "e9b5bc17ec065e9c491790b25f01064e4755cf27383509257b4af80eb3e735d2"
+    }
+  ],
+  "_mirror_hash": "5fef1a100585436cbe6d07420ec909d6e4f56129564626f8b56e11575f188f6a",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.966551+00:00"
+}

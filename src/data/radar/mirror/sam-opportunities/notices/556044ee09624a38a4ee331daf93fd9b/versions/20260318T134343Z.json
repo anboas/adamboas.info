@@ -1,0 +1,57 @@
+{
+  "id": "sam-556044ee09624a38a4ee331daf93fd9b",
+  "title": "Bridge task order - DTMO TMC Services DTA6",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=556044ee09624a38a4ee331daf93fd9b",
+  "opportunity_url": "https://sam.gov/opp/556044ee09624a38a4ee331daf93fd9b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/556044ee09624a38a4ee331daf93fd9b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "556044ee09624a38a4ee331daf93fd9b",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "47QMCB26Q0003",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=556044ee09624a38a4ee331daf93fd9b",
+  "detail_text": "LSJ Addendum to extend period of performance through July 8, 2026 for Court of Federal Claims (COFC) protest. Please see the attached limited sources justification for Travel Management Company services for Defense Travel Area 6 (DTA-6)",
+  "detail_text_length": 236,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f3c78bffe9b49e0bf06cfbde4d39c7e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a546a7c31e0450989e9a3bb3d37e05f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f3c78bffe9b49e0bf06cfbde4d39c7e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7fa03932efbf3809678bc72dd8c34dd8630ddf9ef91d5963343009fbe8df6b19.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7fa03932efbf3809678bc72dd8c34dd8630ddf9ef91d5963343009fbe8df6b19.pdf",
+      "file_id": "6f3c78bffe9b49e0bf06cfbde4d39c7e",
+      "file_name": "47QMCB26Q0003_DTA6+LSJ+Addendum_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 666201,
+      "sha256": "7fa03932efbf3809678bc72dd8c34dd8630ddf9ef91d5963343009fbe8df6b19"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a546a7c31e0450989e9a3bb3d37e05f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/274bcacfe05f2c08eb619aff7a1ea6517d638cb1ab875827725aa7f3f32e67ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/274bcacfe05f2c08eb619aff7a1ea6517d638cb1ab875827725aa7f3f32e67ce.pdf",
+      "file_id": "8a546a7c31e0450989e9a3bb3d37e05f",
+      "file_name": "47QMCB26Q0003_DTA6_LSJRedacted_2026-02-25p.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 106992,
+      "sha256": "274bcacfe05f2c08eb619aff7a1ea6517d638cb1ab875827725aa7f3f32e67ce"
+    }
+  ],
+  "_mirror_hash": "2ea91a2902e80e26e9cc7863c1f4aa052b06d9d208253d03672774562faebf65",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.116174+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-a005122b4c744a038580eb5150f8c409",
+  "title": "CensiTrac Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a005122b4c744a038580eb5150f8c409",
+  "opportunity_url": "https://sam.gov/opp/a005122b4c744a038580eb5150f8c409/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a005122b4c744a038580eb5150f8c409/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a005122b4c744a038580eb5150f8c409",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY MEDICAL COMMAND",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a005122b4c744a038580eb5150f8c409",
+  "detail_text": "See the attachment.",
+  "detail_text_length": 19,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e88f03da2aaa45fcb7ddb35af4fd0bcd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e88f03da2aaa45fcb7ddb35af4fd0bcd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2e5b10e08426066d03b74cb34ed2b74932f2395b66c10a79408474e3de960258.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2e5b10e08426066d03b74cb34ed2b74932f2395b66c10a79408474e3de960258.pdf",
+      "file_id": "e88f03da2aaa45fcb7ddb35af4fd0bcd",
+      "file_name": "Notice+of+Intent+to+Issue+Sole+Source+Contract.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142391,
+      "sha256": "2e5b10e08426066d03b74cb34ed2b74932f2395b66c10a79408474e3de960258"
+    }
+  ],
+  "_mirror_hash": "a3b1c1416c65bcf85def858552709499c5654eaa2601680c01fff59154b2e318",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.064438+00:00"
+}

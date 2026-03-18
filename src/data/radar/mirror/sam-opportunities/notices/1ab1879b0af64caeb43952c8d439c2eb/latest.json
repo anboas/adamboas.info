@@ -1,0 +1,57 @@
+{
+  "id": "sam-1ab1879b0af64caeb43952c8d439c2eb",
+  "title": "Launchpad 2.0 - Market Research",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ab1879b0af64caeb43952c8d439c2eb",
+  "opportunity_url": "https://sam.gov/opp/1ab1879b0af64caeb43952c8d439c2eb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1ab1879b0af64caeb43952c8d439c2eb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1ab1879b0af64caeb43952c8d439c2eb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "Launchpad-MRR",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8604  AFLCMC PZI",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ab1879b0af64caeb43952c8d439c2eb",
+  "detail_text": "The Government is seeking information for a potential industry day related to this requirement. Please review Attachments 1 and 2 for more information on this opportunity.",
+  "detail_text_length": 171,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/616960ebcce145248d1243104321cb79/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/882a2d24aeba4f15b7a64271bf53794e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/616960ebcce145248d1243104321cb79/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/335f4af85edd2a7171eb0ab6affedb9922503063c27354fc0e9024efdf41e488.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/335f4af85edd2a7171eb0ab6affedb9922503063c27354fc0e9024efdf41e488.docx",
+      "file_id": "616960ebcce145248d1243104321cb79",
+      "file_name": "Attachment+1+-+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21693,
+      "sha256": "335f4af85edd2a7171eb0ab6affedb9922503063c27354fc0e9024efdf41e488"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/882a2d24aeba4f15b7a64271bf53794e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f07302f457e7bf1691d1137d80550fd34497b9fd3af03f747b0938e5f8fb335.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f07302f457e7bf1691d1137d80550fd34497b9fd3af03f747b0938e5f8fb335.pdf",
+      "file_id": "882a2d24aeba4f15b7a64271bf53794e",
+      "file_name": "Attachment+2+-+DRAFT+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 200965,
+      "sha256": "2f07302f457e7bf1691d1137d80550fd34497b9fd3af03f747b0938e5f8fb335"
+    }
+  ],
+  "_mirror_hash": "69a843a69c26d4f87d64a8ca69a0d8230b0a2e33b3474d7b7f25e1b90d243999",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.101424+00:00"
+}

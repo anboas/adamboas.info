@@ -1,0 +1,46 @@
+{
+  "id": "sam-9fc3c445a99d46d7ad003b0666c717d1",
+  "title": "J061--Mid-South CMOP Station Generator PM",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9fc3c445a99d46d7ad003b0666c717d1",
+  "opportunity_url": "https://sam.gov/opp/9fc3c445a99d46d7ad003b0666c717d1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9fc3c445a99d46d7ad003b0666c717d1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9fc3c445a99d46d7ad003b0666c717d1",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C77026Q0110",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9fc3c445a99d46d7ad003b0666c717d1",
+  "detail_text": "OPPORTUNITIES - DESCRIPTION Firm Fixed Price contract for Preventive Maintenance for two (2) Generac Generators located at Mid-South Consolidated Mail Outpatient Pharmacy (CMOP) 3209 Elam Farms PKWY, Murfreesboro TN 37127. Five-year contract Period of Performance: date of award or Date of Award 03/31/2031. Contracting POC: Mona Nimmo, mona.nimmo@va.gov Total SDVOSB Set-Aside. Questions Due by March 23, 2026 RFQ Response Due by March 27, 2026 @ noon CST.",
+  "detail_text_length": 457,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7899c3db4e9b48a0a3f6ff2b67bb3b77/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7899c3db4e9b48a0a3f6ff2b67bb3b77/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b2ad4f28facedb0d91557ff4ad7f608b3d13fcba3c74bdf4588d961978f018aa.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b2ad4f28facedb0d91557ff4ad7f608b3d13fcba3c74bdf4588d961978f018aa.docx",
+      "file_id": "7899c3db4e9b48a0a3f6ff2b67bb3b77",
+      "file_name": "36C77026Q0110_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23693,
+      "sha256": "b2ad4f28facedb0d91557ff4ad7f608b3d13fcba3c74bdf4588d961978f018aa"
+    }
+  ],
+  "_mirror_hash": "4abe1a1de52fa279e0059e78f11bcf9709c681e215bda9f4f884329e4f5ea719",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.957731+00:00"
+}

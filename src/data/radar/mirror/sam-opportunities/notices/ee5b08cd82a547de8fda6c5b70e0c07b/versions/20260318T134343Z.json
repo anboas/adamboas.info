@@ -1,0 +1,46 @@
+{
+  "id": "sam-ee5b08cd82a547de8fda6c5b70e0c07b",
+  "title": "Furniture Requirement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee5b08cd82a547de8fda6c5b70e0c07b",
+  "opportunity_url": "https://sam.gov/opp/ee5b08cd82a547de8fda6c5b70e0c07b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ee5b08cd82a547de8fda6c5b70e0c07b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ee5b08cd82a547de8fda6c5b70e0c07b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA255026Furniture",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2550  50 CONS PKP",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee5b08cd82a547de8fda6c5b70e0c07b",
+  "detail_text": "!!!THIS IS A SOURCES SOUGHT ONLY!!! The Government is seeking a small business vendor who can provide and install Office Furniture. Please see the provided attachment in this sources sought for a general overview of the requirement. The official Statement of Work (SOW) will be available in the official solicitation and accessed via DoD Safe. If you are interested in this requirement, please send an email to the Contracting Officer (kaitlyn.guldan@spaceforce.mil) with the following information: 1. Header: Schriever Furniture - FY26 2. Business Size 3. CAGE or UEI code 4. Company Name 5. Please state if you are the installer, manufacturer, or both. 6. If you are only the installer and subcontracting to a manufacturer for the product, provide the subcontractor's information: - Company Name - UEI or CAGE code",
+  "detail_text_length": 816,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87d57e6f8a8f4d1fbcfd5e5555751944/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87d57e6f8a8f4d1fbcfd5e5555751944/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba526e7220d92ba68ea7ab138566a65b1c4edffaab6efaebb71818ecfe503813.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba526e7220d92ba68ea7ab138566a65b1c4edffaab6efaebb71818ecfe503813.pdf",
+      "file_id": "87d57e6f8a8f4d1fbcfd5e5555751944",
+      "file_name": "Work+Description.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 207751,
+      "sha256": "ba526e7220d92ba68ea7ab138566a65b1c4edffaab6efaebb71818ecfe503813"
+    }
+  ],
+  "_mirror_hash": "4063e831db90bef201b75005f274aeafbc0900912637116d0e0f18fc088186d9",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.950377+00:00"
+}

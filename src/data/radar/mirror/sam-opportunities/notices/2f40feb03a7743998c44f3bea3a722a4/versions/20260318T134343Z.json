@@ -1,0 +1,57 @@
+{
+  "id": "sam-2f40feb03a7743998c44f3bea3a722a4",
+  "title": "Market Study on historical US aviation-related patents",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f40feb03a7743998c44f3bea3a722a4",
+  "opportunity_url": "https://sam.gov/opp/2f40feb03a7743998c44f3bea3a722a4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2f40feb03a7743998c44f3bea3a722a4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2f40feb03a7743998c44f3bea3a722a4",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26925934Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f40feb03a7743998c44f3bea3a722a4",
+  "detail_text": "NASA/NSSC has a requirement for Market Study on historical US aviation-related patents. See the attached SOW and Capability statement for full details of the requirement.",
+  "detail_text_length": 170,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7555124fe9f04bd4bb94b291044dbd3f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/953ba08453ba46ec9936fbe6ec6fc311/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7555124fe9f04bd4bb94b291044dbd3f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/08d27c0484e002facdde5f0d591dfd64ed1a77e8908cc0096129251ded21186b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/08d27c0484e002facdde5f0d591dfd64ed1a77e8908cc0096129251ded21186b.pdf",
+      "file_id": "7555124fe9f04bd4bb94b291044dbd3f",
+      "file_name": "Tab+07+Capability+Statement+SAM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 129532,
+      "sha256": "08d27c0484e002facdde5f0d591dfd64ed1a77e8908cc0096129251ded21186b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/953ba08453ba46ec9936fbe6ec6fc311/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/794dcd05f267c1b4bbfd3ffe7703b35eec3b0dfacfe71fe359596fe9367e4c1b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/794dcd05f267c1b4bbfd3ffe7703b35eec3b0dfacfe71fe359596fe9367e4c1b.pdf",
+      "file_id": "953ba08453ba46ec9936fbe6ec6fc311",
+      "file_name": "Tab+04+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114748,
+      "sha256": "794dcd05f267c1b4bbfd3ffe7703b35eec3b0dfacfe71fe359596fe9367e4c1b"
+    }
+  ],
+  "_mirror_hash": "ace6e61524dfcd4ebae555ee3816f651233243bc4e9e68172983ea1a75819ecd",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.898953+00:00"
+}

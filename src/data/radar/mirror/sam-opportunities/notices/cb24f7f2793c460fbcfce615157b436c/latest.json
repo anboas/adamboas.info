@@ -1,0 +1,46 @@
+{
+  "id": "sam-cb24f7f2793c460fbcfce615157b436c",
+  "title": "Destruction of SAP hardware",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb24f7f2793c460fbcfce615157b436c",
+  "opportunity_url": "https://sam.gov/opp/cb24f7f2793c460fbcfce615157b436c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cb24f7f2793c460fbcfce615157b436c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cb24f7f2793c460fbcfce615157b436c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "2026OL01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.CYBER AND NETWORKS.FA2057 AFLCMC HNJK",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb24f7f2793c460fbcfce615157b436c",
+  "detail_text": "HNJT-OL located at Wright-Patterson AFB, Ohio requires the destruction of 8,000 lbs of SAP IT Hardware. Facility must be a Department of the Air Force approved IT sanitation facility Minimum standards to meet sanitization requirements IAW DAF SAP IT Sanitization Standard Operating Procedure, minimum standards to meet sanitization requirements are: Incineration: 670 degrees Celsius with two exceptions. Solid State Drives (SSD): 500 degrees Celsius Optical storage device: 600 degrees Celsius Smelting: 1204 degrees Celsius Disintegration to particles that are nominally 2 millimeters (mm) in size.",
+  "detail_text_length": 600,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc10432740ad419188c0da25172cf38c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc10432740ad419188c0da25172cf38c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/379cf52a4a1bc10afa688806ef32a8d2a8b5dee8e3a5713031abf0e84aea27f8.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/379cf52a4a1bc10afa688806ef32a8d2a8b5dee8e3a5713031abf0e84aea27f8.xlsx",
+      "file_id": "cc10432740ad419188c0da25172cf38c",
+      "file_name": "FY26+Destruction+Run+BOM.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20118,
+      "sha256": "379cf52a4a1bc10afa688806ef32a8d2a8b5dee8e3a5713031abf0e84aea27f8"
+    }
+  ],
+  "_mirror_hash": "32537363d2f8dc534108978c9322495bd9a6075a3873e520ed7023954df50f6d",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.932713+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-d14cc27c1a7e4d9ab8a181a5be06db89",
+  "title": "RTP Division Fair Opportunity Updates",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d14cc27c1a7e4d9ab8a181a5be06db89",
+  "opportunity_url": "https://sam.gov/opp/d14cc27c1a7e4d9ab8a181a5be06db89/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d14cc27c1a7e4d9ab8a181a5be06db89/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d14cc27c1a7e4d9ab8a181a5be06db89",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "ACC-APG_RTP_FY22_FAIR_OPPORTUNITY",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG DURHAM",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2029-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d14cc27c1a7e4d9ab8a181a5be06db89",
+  "detail_text": "In order to improve communication with our stakeholders, the Army Contracting Command – Aberdeen Proving Ground (ACC-APG) Research Triangle Park Division will post updates for known competitive acquisitions. The posted documents and responses are for informational purposes ONLY. This is NOT a Solicitation/Requests for proposal (RFP)/Requests for Quote (RFQ). Do NOT submit any formal proposals/quotes to this posting. All information contained in this posting is subject to change at any time. Any comments or questions shall be directed to the point of contact or Contracting Officer specified in the opportunity of interest. ALL PROJECTS/PROCUREMENTS ARE SUBJECT TO CANCELATION AT ANY TIME. THE GOVERNMENT WILL NOT REIMBURSE FOR ANY FEEDBACK, QUESTIONS, OR DOCUMENTATION PROVIDED BY INDUSTRY. The Government will not provide any procurement sensitive information that would violate the integrity of the source selection process. In order to avoid the actual or the appearance of an organizational conflict of interest, interested parties shall not contact the requiring activity directly to discuss any of the specific requirements. Doing so could later ban the interested party from participating in a particular acquisition.",
+  "detail_text_length": 1230,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4613199ffc41459bb0465420f7634aad/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b32762236fb743a0b4fe98f8389c2a5c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e487a543466e43aebd71be769e3ba977/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4613199ffc41459bb0465420f7634aad/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/db44e9766b788246b7a2569c243f1100613fcd4760963d082f326ee18c9fec90.pptx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/db44e9766b788246b7a2569c243f1100613fcd4760963d082f326ee18c9fec90.pptx",
+      "file_id": "4613199ffc41459bb0465420f7634aad",
+      "file_name": "RTP_Fair_Opportuni_Posting_December+2024.pptx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4288025,
+      "sha256": "db44e9766b788246b7a2569c243f1100613fcd4760963d082f326ee18c9fec90"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b32762236fb743a0b4fe98f8389c2a5c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7131534d4ceb6dcd18c1a9df795252d4a51db9bcdc600740ab9f78fa3c42fd97.pptx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7131534d4ceb6dcd18c1a9df795252d4a51db9bcdc600740ab9f78fa3c42fd97.pptx",
+      "file_id": "b32762236fb743a0b4fe98f8389c2a5c",
+      "file_name": "RTP_Fair_Opportuni_Posting_March+2026.pptx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4270388,
+      "sha256": "7131534d4ceb6dcd18c1a9df795252d4a51db9bcdc600740ab9f78fa3c42fd97"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e487a543466e43aebd71be769e3ba977/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bfb01d33b63bbb1834a6435d309d2b1e018f9a05742a9a2ed0638b029bad42f4.pptx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bfb01d33b63bbb1834a6435d309d2b1e018f9a05742a9a2ed0638b029bad42f4.pptx",
+      "file_id": "e487a543466e43aebd71be769e3ba977",
+      "file_name": "RTP_Fair_Opportuni_Posting_July+2024.pptx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3448328,
+      "sha256": "bfb01d33b63bbb1834a6435d309d2b1e018f9a05742a9a2ed0638b029bad42f4"
+    }
+  ],
+  "_mirror_hash": "a0fb2749e335cf3ed076921b3c4ec96fee569f8158ac82a20d69c22758f04f06",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.163785+00:00"
+}

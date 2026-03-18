@@ -1,0 +1,46 @@
+{
+  "id": "sam-b461d376d591432096ecdcdd7552a073",
+  "title": "OAA-26-00205 - Healthcare Building Model Development and Cost Updates",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b461d376d591432096ecdcdd7552a073",
+  "opportunity_url": "https://sam.gov/opp/b461d376d591432096ecdcdd7552a073/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b461d376d591432096ecdcdd7552a073/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b461d376d591432096ecdcdd7552a073",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "OAA-26-00205",
+  "agency_path": "LABOR, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION AND MANAGEMENT.DEPARTMENT OF LABOR (OASAM)",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b461d376d591432096ecdcdd7552a073",
+  "detail_text": "The purpose of this RFI is to gather information about potential vendors who can perform the services described in the scope below. If your firm can provide Healthcare Building Construction model and cost data, please respond to this RFI with a rough order of magnitude for market research purposes. The primary objectives are: 1. Identify a specific project (one for each of the four major Census regions) that best reflects the “average” or typical Healthcare building project within that region relative to size, and any other characteristic deemed relevant as demonstrated by data gathered for the specified time frame. BLS will provide plans and specs to the vendor for up to five preselected projects for each of the four Census regions separately on a flow basis. Vendor will need to rate the plans and specs provided for quality to develop a model based on the quality and detail provided in the plans and specs to be able to develop a cost model for the building. BLS will finalize the model selection for each Census region based on the vendor’s ratings. 2. Develop four detailed regional Healthcare building cost models. Each model shall reflect the known characteristics of the project selected as the “average” for the region. 3. Develop and implement a methodology to update the material, labor, and installation costs for the four regional models on a quarterly basis. Responses to this RFI will be reviewed by DOL for their applicability to the Government’s need and determined to be “Relevant” or “Irrelevant” to the above problem. Offerors of “Relevant” responses may be requested to demonstrate their approach and/or product to a Government panel of Subject Matter Experts to help DOL determine the best approach.",
+  "detail_text_length": 1732,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d68546b1e0fa4b4a97c386dcf8e9a2b3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d68546b1e0fa4b4a97c386dcf8e9a2b3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/54b187bfa516706aec3323eec679353bacf6cf1cb2c7190ea53dc4f402be1ad0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/54b187bfa516706aec3323eec679353bacf6cf1cb2c7190ea53dc4f402be1ad0.pdf",
+      "file_id": "d68546b1e0fa4b4a97c386dcf8e9a2b3",
+      "file_name": "RFI+-+OAA-26-00205.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 175091,
+      "sha256": "54b187bfa516706aec3323eec679353bacf6cf1cb2c7190ea53dc4f402be1ad0"
+    }
+  ],
+  "_mirror_hash": "3001d7575b3e9bdca192b66bd9884106e8c471e512a1a0cac7160303dc860b01",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.940000+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-14f057af3b5343b08cefa7a700a8e026",
+  "title": "6515--Medical Meds",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14f057af3b5343b08cefa7a700a8e026",
+  "opportunity_url": "https://sam.gov/opp/14f057af3b5343b08cefa7a700a8e026/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/14f057af3b5343b08cefa7a700a8e026/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "14f057af3b5343b08cefa7a700a8e026",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24626Q0296",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.246-NETWORK CONTRACTING OFFICE 6 (36C246)",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14f057af3b5343b08cefa7a700a8e026",
+  "detail_text": "Stretchers for Durham VAMC.",
+  "detail_text_length": 27,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56adcb4b3afa423a893b3f1a26c96387/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56adcb4b3afa423a893b3f1a26c96387/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/09d996a4d9eb13fd33a5b3e8457dec72ffa0b2a4f19fa64ccb1f9f8f2c9577ee.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/09d996a4d9eb13fd33a5b3e8457dec72ffa0b2a4f19fa64ccb1f9f8f2c9577ee.docx",
+      "file_id": "56adcb4b3afa423a893b3f1a26c96387",
+      "file_name": "36C24626Q0296_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14407,
+      "sha256": "09d996a4d9eb13fd33a5b3e8457dec72ffa0b2a4f19fa64ccb1f9f8f2c9577ee"
+    }
+  ],
+  "_mirror_hash": "4b94898118cf7e4da0df9aebed7f52d80a8c7fcd8e0e539a5b510a1732c2ed27",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.930482+00:00"
+}

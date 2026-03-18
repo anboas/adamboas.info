@@ -1,0 +1,79 @@
+{
+  "id": "sam-2e08b5aeb7e844adb37755fc4f3c2a5f",
+  "title": "Language Service IDIQ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e08b5aeb7e844adb37755fc4f3c2a5f",
+  "opportunity_url": "https://sam.gov/opp/2e08b5aeb7e844adb37755fc4f3c2a5f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2e08b5aeb7e844adb37755fc4f3c2a5f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2e08b5aeb7e844adb37755fc4f3c2a5f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "15F067-26-PN-NRY01",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.FBI - REDSTONE ARSENAL",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e08b5aeb7e844adb37755fc4f3c2a5f",
+  "detail_text": "The Federal Bureau of Investigation (FBI) is conducting market research to identify capable sources that can provide comprehensive, scalable, and fully accommodational language services under a potential Multiple-Award Indefinite Delivery, Indefinite Quantity (IDIQ) contract vehicle pursuant to FAR 16.504.",
+  "detail_text_length": 307,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f44d1557b8b448a941f8e9b88549691/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/703f9869253744d48c973eb10d303241/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75c654f4c04f4f069d728a54d8fe9e44/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c683b54c9f0b4e3ea7af8ce20d0a5dc2/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f44d1557b8b448a941f8e9b88549691/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/becc0acec45b8771288c9626b54a63371fca045a8b6584929f4b27c5c6676c3a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/becc0acec45b8771288c9626b54a63371fca045a8b6584929f4b27c5c6676c3a.xlsx",
+      "file_id": "5f44d1557b8b448a941f8e9b88549691",
+      "file_name": "ATTACHMENT+B_+Template+Languages+Offered.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11764,
+      "sha256": "becc0acec45b8771288c9626b54a63371fca045a8b6584929f4b27c5c6676c3a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/703f9869253744d48c973eb10d303241/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/59c96466eb930ee3bc941fbb4e8d288424956e7d33489210b3ff1c2b16befae4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/59c96466eb930ee3bc941fbb4e8d288424956e7d33489210b3ff1c2b16befae4.pdf",
+      "file_id": "703f9869253744d48c973eb10d303241",
+      "file_name": "Attachment+C_+Language+Service+IDIQ+Statement+of+Objectives+SOO+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 458904,
+      "sha256": "59c96466eb930ee3bc941fbb4e8d288424956e7d33489210b3ff1c2b16befae4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75c654f4c04f4f069d728a54d8fe9e44/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a5f48d68a12acefdee308046f165dd5efd8a180ac2e32999ca02616e53005f08.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a5f48d68a12acefdee308046f165dd5efd8a180ac2e32999ca02616e53005f08.pdf",
+      "file_id": "75c654f4c04f4f069d728a54d8fe9e44",
+      "file_name": "ATTACHMENT+A+_List+of+Languages.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122825,
+      "sha256": "a5f48d68a12acefdee308046f165dd5efd8a180ac2e32999ca02616e53005f08"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c683b54c9f0b4e3ea7af8ce20d0a5dc2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/489be6c5d117126f9721cd40f0476235b39acbad08b2edd77e0829c2deb10c68.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/489be6c5d117126f9721cd40f0476235b39acbad08b2edd77e0829c2deb10c68.pdf",
+      "file_id": "c683b54c9f0b4e3ea7af8ce20d0a5dc2",
+      "file_name": "Language+Service+IDIQ+Request+For+Information.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 302248,
+      "sha256": "489be6c5d117126f9721cd40f0476235b39acbad08b2edd77e0829c2deb10c68"
+    }
+  ],
+  "_mirror_hash": "b220aeb41a6c1f973e2ce2a9f81b7c9e48be263895de6e15dec8a7110d0bbd9d",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.092185+00:00"
+}

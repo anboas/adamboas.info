@@ -1,0 +1,68 @@
+{
+  "id": "sam-915bf1205c0f44f2a1b6cf203695d84c",
+  "title": "GSA Short-Term Rental (STR) Call Center Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=915bf1205c0f44f2a1b6cf203695d84c",
+  "opportunity_url": "https://sam.gov/opp/915bf1205c0f44f2a1b6cf203695d84c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/915bf1205c0f44f2a1b6cf203695d84c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "915bf1205c0f44f2a1b6cf203695d84c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "47QMCA26Q0041",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE.GSA/FAS AUTOMOTIVE CENTER",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=915bf1205c0f44f2a1b6cf203695d84c",
+  "detail_text": "This is an Request for Information (RFI)-Sources Sought for the GSA presolicitation for Short-Term Vehicle Rental Program Call Center Support Services. Please see \"Attachment_1_RFI_47QMCA26Q0041_Sources_Sought_Draft_RFQ_GSA_Short_Term_Rental_Services\" for instructions on how to submit a response. Please see “Attachment_2_Performance_Work_Statement_PWS_GSA_Short_Term_Rental_Call_Center_Support_Services\" for technical specifications. Please see “ Attachment_3_Service_Summary_PWS_GSA_Short_Term_Rental_Call_Center_Support_Services for service summary ** Submit responses to this RFI via email to Mark Brown at email: mark.f.brown@gsa.gov with reference to “RFI-47QMCA26Q0041 – GSA Short-Term Rental (STR) Call Center Support Services listed in the subject line of the email.",
+  "detail_text_length": 776,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b185f7100d14900a9a6fb54a26a047e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da3d65c72b8545598867658c5820af76/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4aa07ab104642a08b8a7008c22507e1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b185f7100d14900a9a6fb54a26a047e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d9a6339ebb57c072116cb3c8b71cd40edd5a3bebe75f29b3a83550edceed6f0b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d9a6339ebb57c072116cb3c8b71cd40edd5a3bebe75f29b3a83550edceed6f0b.pdf",
+      "file_id": "1b185f7100d14900a9a6fb54a26a047e",
+      "file_name": "Attachment_3_Service_Summary_PWS_GSA_Short_Term_Rental_Call_Center_Support_Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 82333,
+      "sha256": "d9a6339ebb57c072116cb3c8b71cd40edd5a3bebe75f29b3a83550edceed6f0b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da3d65c72b8545598867658c5820af76/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/16d3bcd13f274ff6a6971a4f0313f702ab68275e3a1f134229d3f49c2b13d93a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/16d3bcd13f274ff6a6971a4f0313f702ab68275e3a1f134229d3f49c2b13d93a.pdf",
+      "file_id": "da3d65c72b8545598867658c5820af76",
+      "file_name": "Attachment_1_RFI_47QMCA26Q0041_Sources_Sought_Draft_RFQ_GSA_Short_Term_Rental_Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 167775,
+      "sha256": "16d3bcd13f274ff6a6971a4f0313f702ab68275e3a1f134229d3f49c2b13d93a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4aa07ab104642a08b8a7008c22507e1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b0462bd900dfea7ed3d8e43a41940b8b0c81a422bd948d2715151b54a07a86f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b0462bd900dfea7ed3d8e43a41940b8b0c81a422bd948d2715151b54a07a86f.pdf",
+      "file_id": "e4aa07ab104642a08b8a7008c22507e1",
+      "file_name": "Attachment_2_Performance_Work_Statement_PWS_GSA_Short_Term_Rental_Call_Center_Support_Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 194050,
+      "sha256": "8b0462bd900dfea7ed3d8e43a41940b8b0c81a422bd948d2715151b54a07a86f"
+    }
+  ],
+  "_mirror_hash": "9a6348a14f0162526af94ce5594113267ea3e71b1c68bc847e40fef1edc3faf7",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.100218+00:00"
+}

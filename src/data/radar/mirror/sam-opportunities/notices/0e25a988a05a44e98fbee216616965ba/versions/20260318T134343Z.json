@@ -1,0 +1,46 @@
+{
+  "id": "sam-0e25a988a05a44e98fbee216616965ba",
+  "title": "Javelin Biometric Module Application",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0e25a988a05a44e98fbee216616965ba",
+  "opportunity_url": "https://sam.gov/opp/0e25a988a05a44e98fbee216616965ba/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0e25a988a05a44e98fbee216616965ba/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0e25a988a05a44e98fbee216616965ba",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA255026Javelin",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2550  50 CONS PKP",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0e25a988a05a44e98fbee216616965ba",
+  "detail_text": "THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY. This is NOT a solicitation, but market research to determine potential sources for Javelin+ Mobile Biometric Collection Kit for Schriever Space Force Base, CO, in accordance with the attached Javelin Salient Characteristics. This notice does not constitute a promise to issue a solicitation in the future. If you are interested and capable of meeting this requirement, please provide the following information the POC listed in this sources sought: 1. Company Name 2. UEI or CAGE Code 3. Primary Point of Contact 4. Business Size",
+  "detail_text_length": 573,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9302a01ecaf49dab0154420cbbe5475/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9302a01ecaf49dab0154420cbbe5475/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/772ddc0579d99cafcdee44df91fbdb0326d59969a3296c6ff32177237c7f3700.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/772ddc0579d99cafcdee44df91fbdb0326d59969a3296c6ff32177237c7f3700.pdf",
+      "file_id": "b9302a01ecaf49dab0154420cbbe5475",
+      "file_name": "Javelin+Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 157340,
+      "sha256": "772ddc0579d99cafcdee44df91fbdb0326d59969a3296c6ff32177237c7f3700"
+    }
+  ],
+  "_mirror_hash": "768007fae73e478bd1b3c98db3e82e4946e6db83d02d860e28443cd650689730",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.898404+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-089481c1d0d34fb6b397f2bcf5585b8e",
+  "title": "038761 Paving Materials BPA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=089481c1d0d34fb6b397f2bcf5585b8e",
+  "opportunity_url": "https://sam.gov/opp/089481c1d0d34fb6b397f2bcf5585b8e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/089481c1d0d34fb6b397f2bcf5585b8e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "089481c1d0d34fb6b397f2bcf5585b8e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "038761",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG CONT CT TYAD OFC",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=089481c1d0d34fb6b397f2bcf5585b8e",
+  "detail_text": "This sources sought is to find companies interested in being part of a Blanket Purchase Agreement (BPA) with the Tobyhanna Army Depot for Paving Materials which would include cement. The Scope of Work is the first rough draft as move towards the official solicitation in the next several weeks. If you are interested in this requirement, please experss your interest by sending an email to Brian.K.Dionysius.civ@army.mil.",
+  "detail_text_length": 421,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2a2db9af15743adaca7c48b685ceeca/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a94d02911f014b40b093ebb49520d3b2/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2a2db9af15743adaca7c48b685ceeca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20272c228e27b810224eeffd4ddcfb95f16aefd26e1b276c23c632e2504bc2ee.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20272c228e27b810224eeffd4ddcfb95f16aefd26e1b276c23c632e2504bc2ee.pdf",
+      "file_id": "a2a2db9af15743adaca7c48b685ceeca",
+      "file_name": "Scope+of+Work+DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 850350,
+      "sha256": "20272c228e27b810224eeffd4ddcfb95f16aefd26e1b276c23c632e2504bc2ee"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a94d02911f014b40b093ebb49520d3b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2fb44d98c5f7cbc3dc61b1952bf0f9407770697a1bcea590b823e1d7b7a4e845.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2fb44d98c5f7cbc3dc61b1952bf0f9407770697a1bcea590b823e1d7b7a4e845.xlsx",
+      "file_id": "a94d02911f014b40b093ebb49520d3b2",
+      "file_name": "Product+Sheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10987,
+      "sha256": "2fb44d98c5f7cbc3dc61b1952bf0f9407770697a1bcea590b823e1d7b7a4e845"
+    }
+  ],
+  "_mirror_hash": "4f9b1327be0d9364fabdf5bf23e32d2c333568c75b5c30c84d6645787c9a22ec",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.000660+00:00"
+}

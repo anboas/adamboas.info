@@ -1,0 +1,46 @@
+{
+  "id": "sam-30a08aa4c4e440399024456c6ecca199",
+  "title": "Lexis Online Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30a08aa4c4e440399024456c6ecca199",
+  "opportunity_url": "https://sam.gov/opp/30a08aa4c4e440399024456c6ecca199/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/30a08aa4c4e440399024456c6ecca199/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "30a08aa4c4e440399024456c6ecca199",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "BS0316261603",
+  "agency_path": "DEPT OF DEFENSE.WASHINGTON HEADQUARTERS SERVICES (WHS)",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30a08aa4c4e440399024456c6ecca199",
+  "detail_text": "This requirement is to provide 40 users from the United States Court of Appeals for the Armed Forces with access to Lexis online legal research databases along with their proprietary search features based on the latest artificial intelligence development.",
+  "detail_text_length": 255,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ae5a75fb70546e6bb00b4d4d192ddce/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ae5a75fb70546e6bb00b4d4d192ddce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/490f509778191b4ba67ed1bb8553fec5db2f1fc5edb1c5908570e010c5bcc394.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/490f509778191b4ba67ed1bb8553fec5db2f1fc5edb1c5908570e010c5bcc394.pdf",
+      "file_id": "1ae5a75fb70546e6bb00b4d4d192ddce",
+      "file_name": "A03+SOWFY26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 206266,
+      "sha256": "490f509778191b4ba67ed1bb8553fec5db2f1fc5edb1c5908570e010c5bcc394"
+    }
+  ],
+  "_mirror_hash": "195c564561a1e991d6042564d0282843bdfc4844160805b893fe363b264a04cb",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.926312+00:00"
+}

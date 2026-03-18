@@ -1,0 +1,47 @@
+{
+  "id": "sam-7d400e580c3c44039c631526e7d5a980",
+  "title": "26-SIMACQ-D60-0001 Timken Bearings",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d400e580c3c44039c631526e7d5a980",
+  "opportunity_url": "https://sam.gov/opp/7d400e580c3c44039c631526e7d5a980/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7d400e580c3c44039c631526e7d5a980/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7d400e580c3c44039c631526e7d5a980",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N6339426Q4022",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.COMMANDING OFFICER",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d400e580c3c44039c631526e7d5a980",
+  "detail_text": "See attached. *In order to gain access to drawings, vendors must have a completed JCP registration and request access on SAM.gov.",
+  "detail_text_length": 129,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/39f220a29d8e4a7c9d07f124865e706a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/39f220a29d8e4a7c9d07f124865e706a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/935b3db6c1631f7e805f95daeb563d4936dad04a41f93dbc35bb3908991b68d9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/935b3db6c1631f7e805f95daeb563d4936dad04a41f93dbc35bb3908991b68d9.pdf",
+      "file_id": "39f220a29d8e4a7c9d07f124865e706a",
+      "file_name": "26-SIMACQ-D60-0001_Sources+Sought_03172026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 486303,
+      "sha256": "935b3db6c1631f7e805f95daeb563d4936dad04a41f93dbc35bb3908991b68d9"
+    }
+  ],
+  "_mirror_hash": "cce0859fb469efbf71a94e5c632111aa42a4fe4f66210e846afbaf7213abf611",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.713184+00:00"
+}

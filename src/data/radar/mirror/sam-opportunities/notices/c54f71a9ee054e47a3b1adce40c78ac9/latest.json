@@ -1,0 +1,57 @@
+{
+  "id": "sam-c54f71a9ee054e47a3b1adce40c78ac9",
+  "title": "Intent to Sole Source - Construction Project Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c54f71a9ee054e47a3b1adce40c78ac9",
+  "opportunity_url": "https://sam.gov/opp/c54f71a9ee054e47a3b1adce40c78ac9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c54f71a9ee054e47a3b1adce40c78ac9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c54f71a9ee054e47a3b1adce40c78ac9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "NOI-CC-26-003118",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c54f71a9ee054e47a3b1adce40c78ac9",
+  "detail_text": "This is a Notice of Intent, not a request for proposal. The National Institute of Health intends to negotiate on an other than full and open competition basis with the following vendor: Vetruvius, LLC. Acquisition Description: The purpose of this acquisition is to provide the funding required to complete the SRLM construction project. Proper and adequate funding must be proactively programmed, and actively managed, to ensure safe and successful CC transition to the $620M SRLM project.The NIH\\CC is seeking project management and consulting services to support the outfitting and transition from current SRLM space to the new SRLM Wing ready for occupancy in Spring 2029. the consultant will support communication activities and provide project management support. The statutory authority for this sole source requirement is 41 U.S.C. 253(c) (1) as implemented by FAR 6.302-1 only one responsible source and no other supply of service will satisfy agency requirements. THIS IS NOT A REQUEST FOR PROPOSAL. All responsible sources that could provide the required may submit a capability statement that will be considered by email (subject line to reference NOI-CC-26-003118) by 12:00 PM eastern standard time on 03/20/2026 to: valerie.gregorio@nih.gov. All responses received by the closing date of this synopsis will be considered by the Government. A determination not to compete this requirement, based upon responses to this notice, is solely within the discretion of the Government.",
+  "detail_text_length": 1489,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/135ab5e4a5334efab98bb370118c8b04/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c35ddf8606bb472ab542f6559811a210/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/135ab5e4a5334efab98bb370118c8b04/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6b2a22722d41050bcdfff19d99b38032f39638318ce18566e28be94220118bd6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6b2a22722d41050bcdfff19d99b38032f39638318ce18566e28be94220118bd6.docx",
+      "file_id": "135ab5e4a5334efab98bb370118c8b04",
+      "file_name": "Statement+of+Work+-+SRLM+Support+9-29-2025+1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30774,
+      "sha256": "6b2a22722d41050bcdfff19d99b38032f39638318ce18566e28be94220118bd6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c35ddf8606bb472ab542f6559811a210/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a1769ad91672261e117a084d2e13828de52baf01060fca9dbc9ced3740323310.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a1769ad91672261e117a084d2e13828de52baf01060fca9dbc9ced3740323310.pdf",
+      "file_id": "c35ddf8606bb472ab542f6559811a210",
+      "file_name": "Sole+Source+Justification_SRLM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 566402,
+      "sha256": "a1769ad91672261e117a084d2e13828de52baf01060fca9dbc9ced3740323310"
+    }
+  ],
+  "_mirror_hash": "b8c9148bdfbb60d419ec9bdf26d7f1bb9a907e39af4b3ceb08fdb5bdd837b9b4",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.879015+00:00"
+}

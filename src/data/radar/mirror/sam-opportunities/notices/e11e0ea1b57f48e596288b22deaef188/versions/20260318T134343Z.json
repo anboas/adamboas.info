@@ -1,0 +1,45 @@
+{
+  "id": "sam-e11e0ea1b57f48e596288b22deaef188",
+  "title": "Lathe",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e11e0ea1b57f48e596288b22deaef188",
+  "opportunity_url": "https://sam.gov/opp/e11e0ea1b57f48e596288b22deaef188/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e11e0ea1b57f48e596288b22deaef188/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e11e0ea1b57f48e596288b22deaef188",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926QB034",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e11e0ea1b57f48e596288b22deaef188",
+  "detail_text": "Procurement of lathe and accessories for SRF-JRMC Yokosuka, Japan. NOTE: This solicitation is intended only for sources duly authorized to operate and do business in Japan, as prescribed by DFARS 252.225-7042. Prime Contractors outside of Japan must submit documentation that unambiguously demonstrates the Quoter's compliance with DFARS 252.225-7042 (e.g. proof of incorporation) as part of their quotation.",
+  "detail_text_length": 408,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecee85fd5de7499b85c87e698af692e9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecee85fd5de7499b85c87e698af692e9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7de8b1449a8a553cbb7da80bcc97eac823820a60c285ce07fc63139cffba82a6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7de8b1449a8a553cbb7da80bcc97eac823820a60c285ce07fc63139cffba82a6.pdf",
+      "file_id": "ecee85fd5de7499b85c87e698af692e9",
+      "file_name": "N6264926QB034.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 307032,
+      "sha256": "7de8b1449a8a553cbb7da80bcc97eac823820a60c285ce07fc63139cffba82a6"
+    }
+  ],
+  "_mirror_hash": "fc14bade17d7feb508b3f955e0363486451ac9853560d96a1ad62ac3ecf609e4",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.772213+00:00"
+}

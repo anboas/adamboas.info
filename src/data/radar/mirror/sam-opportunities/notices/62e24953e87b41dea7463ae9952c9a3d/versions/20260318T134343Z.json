@@ -1,0 +1,45 @@
+{
+  "id": "sam-62e24953e87b41dea7463ae9952c9a3d",
+  "title": "GAGE, DEPTH, VERNIER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62e24953e87b41dea7463ae9952c9a3d",
+  "opportunity_url": "https://sam.gov/opp/62e24953e87b41dea7463ae9952c9a3d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/62e24953e87b41dea7463ae9952c9a3d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "62e24953e87b41dea7463ae9952c9a3d",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010425QXA29 ",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62e24953e87b41dea7463ae9952c9a3d",
+  "detail_text": "GAGE, DEPTH, VERNIER",
+  "detail_text_length": 20,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9551943f818e458990e5b3479d1d2582/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9551943f818e458990e5b3479d1d2582/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bef2e194b679dbb7c1d6b03d3211ee2645010312774e349b57b73a870165020e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bef2e194b679dbb7c1d6b03d3211ee2645010312774e349b57b73a870165020e.pdf",
+      "file_id": "9551943f818e458990e5b3479d1d2582",
+      "file_name": "SOL+N0010425QXA29.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 600229,
+      "sha256": "bef2e194b679dbb7c1d6b03d3211ee2645010312774e349b57b73a870165020e"
+    }
+  ],
+  "_mirror_hash": "fd6f57997266365f840fa5b24fce37f45fd5f446d2e5b718481baaf719f48779",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.822010+00:00"
+}

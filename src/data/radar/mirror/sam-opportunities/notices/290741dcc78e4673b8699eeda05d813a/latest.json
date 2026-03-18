@@ -1,0 +1,46 @@
+{
+  "id": "sam-290741dcc78e4673b8699eeda05d813a",
+  "title": "Clarivate Endnote",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=290741dcc78e4673b8699eeda05d813a",
+  "opportunity_url": "https://sam.gov/opp/290741dcc78e4673b8699eeda05d813a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/290741dcc78e4673b8699eeda05d813a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "290741dcc78e4673b8699eeda05d813a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "75D30126Q78898",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.CENTERS FOR DISEASE CONTROL AND PREVENTION.CDC OFFICE OF ACQUISITION SERVICES",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=290741dcc78e4673b8699eeda05d813a",
+  "detail_text": "The Centers for Disease and Prevention (CDC) intends to award a sole-source, firm-fixed price purchase order to CLARIVATE ANALYTICS (US) LLC for Clarivate Endnote Software Site License. This contract action is for supplies or services for which the Govenement intends to solicit and negotiate with only once source under authority of FAR 13.106-1(b)(1). Interested parties may identify their interest and capability to respond to this requirement or submit a quotation. This notice of intent is not a request for competitive quotations. However, all responses recieved no later than 3:30pm EST on April 1,2026 will be considered by the Government. A determination by the Government not to compete this proposed contract based on responses to this notice is soley within the Government's discretion. Information received will normally be considered only for the purpose of determining whether to conduct a competitive procurement. Responses should be emailed to the Alyssa Thomas at ah78@cdc.gov and CC Marie Claxton at utj4@cdc.gov no later than 3:30PM EST on April 1, 2026.",
+  "detail_text_length": 1074,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5dcdb92f2854e95b2b133bba4bbe0c4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5dcdb92f2854e95b2b133bba4bbe0c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/82eefc2e168d93c22d50342f5f9d27508bcef5cd9e156fe9ce3c2f9f2817373a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/82eefc2e168d93c22d50342f5f9d27508bcef5cd9e156fe9ce3c2f9f2817373a.pdf",
+      "file_id": "d5dcdb92f2854e95b2b133bba4bbe0c4",
+      "file_name": "A13+Redacted+Clarivate+EndNote+SSJ+signed+by+CO.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 406433,
+      "sha256": "82eefc2e168d93c22d50342f5f9d27508bcef5cd9e156fe9ce3c2f9f2817373a"
+    }
+  ],
+  "_mirror_hash": "9f2642cccb0ac217a1bfabe12ac3cd96c479987adb31299343572dbe6c2f6f55",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.064963+00:00"
+}

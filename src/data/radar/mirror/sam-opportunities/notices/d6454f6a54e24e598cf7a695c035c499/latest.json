@@ -1,0 +1,46 @@
+{
+  "id": "sam-d6454f6a54e24e598cf7a695c035c499",
+  "title": "LiDAR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d6454f6a54e24e598cf7a695c035c499",
+  "opportunity_url": "https://sam.gov/opp/d6454f6a54e24e598cf7a695c035c499/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d6454f6a54e24e598cf7a695c035c499/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d6454f6a54e24e598cf7a695c035c499",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "1202SA25R9801",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d6454f6a54e24e598cf7a695c035c499",
+  "detail_text": "This RFI is for market research only and does not constitute a solicitation for proposals. The information provided may be utilized by the USFS in developing its acquisition strategy and requirements documents. It does not commit the Government to pay any cost incurred in the submission of responses or in making necessary studies or designs, nor to contract for supplies or services. No funds have been authorized, appropriated, or received for this contemplated effort. Any cost incurred shall be at the Offeror’s own risk. Live demonstrations that are currently integrated with approved USFS unmanned aircraft may be requested at a future date. Responses shall include potential Offeror’s Unique Entity Identifier (UEI), be in PDF format, and emailed to the Contracting Officer by 1200 hours MT, March 31, 2026, at steven.b.peterson@usda.gov.",
+  "detail_text_length": 846,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c157877080c4e9689eaba0b787fb9bf/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c157877080c4e9689eaba0b787fb9bf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f1a492889e6d27a8d158a5fbaf0b8503a51c68c112b6ba86e381442302fb138.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f1a492889e6d27a8d158a5fbaf0b8503a51c68c112b6ba86e381442302fb138.pdf",
+      "file_id": "3c157877080c4e9689eaba0b787fb9bf",
+      "file_name": "1202SA25R9801+-+RFI+-+LiDAR.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 139340,
+      "sha256": "2f1a492889e6d27a8d158a5fbaf0b8503a51c68c112b6ba86e381442302fb138"
+    }
+  ],
+  "_mirror_hash": "609d88e01a0d5963135d206a7399d65c94cca1f178484673514b3a69539b9308",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.040720+00:00"
+}

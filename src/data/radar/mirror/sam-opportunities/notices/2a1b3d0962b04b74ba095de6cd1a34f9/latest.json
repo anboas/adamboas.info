@@ -1,0 +1,57 @@
+{
+  "id": "sam-2a1b3d0962b04b74ba095de6cd1a34f9",
+  "title": "Aggregate Delivery or Pickup for Various locations in the NRV Ranger District",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a1b3d0962b04b74ba095de6cd1a34f9",
+  "opportunity_url": "https://sam.gov/opp/2a1b3d0962b04b74ba095de6cd1a34f9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2a1b3d0962b04b74ba095de6cd1a34f9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2a1b3d0962b04b74ba095de6cd1a34f9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA-FS, CSA EAST 2",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a1b3d0962b04b74ba095de6cd1a34f9",
+  "detail_text": "This is a modification to the solicitation 12444026Q0039. The Schedule of Items is updated to price per load for the delivery of the stone instead of price per ton. Also the SOW inadvertantly had a dollar amount which is not accurate.",
+  "detail_text_length": 234,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bd3e3304d4b4cb8936837f5f55686cc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8002762b86264db88faccc26a5c42ddc/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bd3e3304d4b4cb8936837f5f55686cc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/137fc0b9885a1f525ee43a1e79cd97b883119eea0f0b454fd914d538756b8505.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/137fc0b9885a1f525ee43a1e79cd97b883119eea0f0b454fd914d538756b8505.xlsx",
+      "file_id": "2bd3e3304d4b4cb8936837f5f55686cc",
+      "file_name": "Attachment+2_Stone+Schedule+of+Items.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31317,
+      "sha256": "137fc0b9885a1f525ee43a1e79cd97b883119eea0f0b454fd914d538756b8505"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8002762b86264db88faccc26a5c42ddc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e2259617bce5067d8edff99ba520e5c6309f8accfe8bffcda9e4df31dfb7a895.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e2259617bce5067d8edff99ba520e5c6309f8accfe8bffcda9e4df31dfb7a895.docx",
+      "file_id": "8002762b86264db88faccc26a5c42ddc",
+      "file_name": "Attachement+1_Updated_SOW_Stone_2025.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15373,
+      "sha256": "e2259617bce5067d8edff99ba520e5c6309f8accfe8bffcda9e4df31dfb7a895"
+    }
+  ],
+  "_mirror_hash": "3212fe7b101f8250e2a61188087495710730880e177e1fb434e5b25bfb91f062",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.106210+00:00"
+}

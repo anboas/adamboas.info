@@ -1,0 +1,68 @@
+{
+  "id": "sam-d21273d5c4254be6938e4c21c1e96337",
+  "title": "Service - HURST Jaws of Life",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d21273d5c4254be6938e4c21c1e96337",
+  "opportunity_url": "https://sam.gov/opp/d21273d5c4254be6938e4c21c1e96337/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d21273d5c4254be6938e4c21c1e96337/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d21273d5c4254be6938e4c21c1e96337",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA449726Q0014",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4497  436 CONS LGC",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d21273d5c4254be6938e4c21c1e96337",
+  "detail_text": "The 436 Contracting Squadron at Dover AFB, DE is conducting this Pre-solicitation Notice to identify small business vendors interested in providing preventative maintenance and inspection service annually for HURST Jaws of Life extrication tools as specified in the description below. If your firm may be interested in this requirement, it is a qualified small business, and has performed similar projects, we request the information shown below. An organization that is not considered a small business should not submit a response to this notice. Oral communications ARE NOT acceptable in response to this notice. DESCRIPTION – 436 AW/CE - Service CE - Hurst Jaws of Life All Hurst tools and equipment are required by the manufacturer's recommendations to undergo a preventive maintenance and inspection service annually. This service ensures the safety of the responders and any potential emergency victims when these extrication tools are utilized. Perform annual inspection and preventative maintenance services on Hurst Laws of Life tools and equipment per the Performance Work Statement (PWS). Preventive maintenance and inspection must be performed by Hurst certified technicians on all assigned equipment IAW Hurst Jaws of Life guidelines. A 2026 Dealer Verification letter (attached) provides a list of HURST Jaws of Life dealers that are authorized by HURST to provide rescue equipment sales and service to the United States Government and military market.",
+  "detail_text_length": 1466,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/08026e3b94004f128650b962dfbb86ef/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3b4d0e3902949068e0a3da1d9642728/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e52cc48ecd8946b1ad670f7bf7683eba/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/08026e3b94004f128650b962dfbb86ef/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2765962e21924f991b782ec4f75eb9128ebb6fc3d5a0e64a8c15ec01fe75d4e5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2765962e21924f991b782ec4f75eb9128ebb6fc3d5a0e64a8c15ec01fe75d4e5.pdf",
+      "file_id": "08026e3b94004f128650b962dfbb86ef",
+      "file_name": "Attachment+1_DRAFT_Hurst+Jaws+of+Life+PWS+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 176064,
+      "sha256": "2765962e21924f991b782ec4f75eb9128ebb6fc3d5a0e64a8c15ec01fe75d4e5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3b4d0e3902949068e0a3da1d9642728/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a58e786f49529bf1b4dee7ec45fcfc14334577afcdd3ac475e372b0b3910fef6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a58e786f49529bf1b4dee7ec45fcfc14334577afcdd3ac475e372b0b3910fef6.pdf",
+      "file_id": "d3b4d0e3902949068e0a3da1d9642728",
+      "file_name": "Attachment+2_2026+Dealer+Verification+Letter+-+GOVERNMENT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 610622,
+      "sha256": "a58e786f49529bf1b4dee7ec45fcfc14334577afcdd3ac475e372b0b3910fef6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e52cc48ecd8946b1ad670f7bf7683eba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9bd426b7be9ae10ceb3112c8490bb1b294a633f790a101f9860a16cab5d7d547.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9bd426b7be9ae10ceb3112c8490bb1b294a633f790a101f9860a16cab5d7d547.pdf",
+      "file_id": "e52cc48ecd8946b1ad670f7bf7683eba",
+      "file_name": "PRESOLICITATION+NOTICE_HURST+Jaws+of+Life.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 246707,
+      "sha256": "9bd426b7be9ae10ceb3112c8490bb1b294a633f790a101f9860a16cab5d7d547"
+    }
+  ],
+  "_mirror_hash": "107faa812c28dd2bac1f58d94a40888b709ca65a7a61f9c5a63fb2ad9e09e5b7",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.071760+00:00"
+}

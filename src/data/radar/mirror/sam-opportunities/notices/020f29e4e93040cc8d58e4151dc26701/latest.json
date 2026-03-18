@@ -1,0 +1,133 @@
+{
+  "id": "sam-020f29e4e93040cc8d58e4151dc26701",
+  "title": "Receipt Inspectors",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=020f29e4e93040cc8d58e4151dc26701",
+  "opportunity_url": "https://sam.gov/opp/020f29e4e93040cc8d58e4151dc26701/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/020f29e4e93040cc8d58e4151dc26701/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "020f29e4e93040cc8d58e4151dc26701",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N3904026R0003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=020f29e4e93040cc8d58e4151dc26701",
+  "detail_text": "***Amendment to the solicitation has been made to include all answers in the Q and A document that will be posted in SAM.Gov****THIS REQUIREMENT IS ONLY FOR SEAPORT MAC HOLDERS TO SUBMIT A PROPOSAL AND THE SOLICIATION NUMBER IN THIS SYSTEM HAD TO BE CHANGED TO N3904026R0003 DUE TO A GLITCH, THE ACTUAL SOLICIATION NUMBER AS YOU WILL SEE ON ALL DOCUMENTION IS N3904026R0002* Portsmouth Naval Shipyard (PNS) has a requirement for Receipt Inspectors to support the Receipt Inspection Services within the Quality Assurance (QA) Department. Receipt Inspection provides assurance that the materials procured for use on Naval Nuclear Submarines meet the required and specified requirements before being issued.",
+  "detail_text_length": 704,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44e03b9091b74804962a3da8126a7c41/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c8188f76c984ee7a935faa051fb988c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/70f7e40ef2d24b6cb99f9922bfa0247d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8852cef9691d464bad82c706d702253c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a0a855e2e384459ea92d24aa7e273200/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a616e0df641b44d8b646e88dbd5846a1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d338dc0266e9487fbfddd56892531a08/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d46cf4ca07ca4164b8b05d2c075421e6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df302fee9189459ab1bedc0fb3ecf784/download"
+  ],
+  "resource_count": 9,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44e03b9091b74804962a3da8126a7c41/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c787331b5327a3ddd76e7e420506650c3635e58c4c33eef8155230fbf644263.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c787331b5327a3ddd76e7e420506650c3635e58c4c33eef8155230fbf644263.pdf",
+      "file_id": "44e03b9091b74804962a3da8126a7c41",
+      "file_name": "N3904026R0002+Attachment+4+QASP+and+Matrix.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262331,
+      "sha256": "1c787331b5327a3ddd76e7e420506650c3635e58c4c33eef8155230fbf644263"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c8188f76c984ee7a935faa051fb988c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea5466ba462b00b9f780014fc5bb4ba5d25b5d4c1a9099947dfedbdbc5fe6fb0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea5466ba462b00b9f780014fc5bb4ba5d25b5d4c1a9099947dfedbdbc5fe6fb0.pdf",
+      "file_id": "4c8188f76c984ee7a935faa051fb988c",
+      "file_name": "N3904026R0002+Exhibit+A+CDRL+001+and+002+and+003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262533,
+      "sha256": "ea5466ba462b00b9f780014fc5bb4ba5d25b5d4c1a9099947dfedbdbc5fe6fb0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/70f7e40ef2d24b6cb99f9922bfa0247d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1df0429dc8aff52bc53b64535ab2e9b1c31186adf3c504035f8dac4050408e70.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1df0429dc8aff52bc53b64535ab2e9b1c31186adf3c504035f8dac4050408e70.pdf",
+      "file_id": "70f7e40ef2d24b6cb99f9922bfa0247d",
+      "file_name": "N3904026R0002+Q+and+A.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 219226,
+      "sha256": "1df0429dc8aff52bc53b64535ab2e9b1c31186adf3c504035f8dac4050408e70"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8852cef9691d464bad82c706d702253c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3b5486d902d60b44d6ac64f40784aed09b07927c8291076e5296c3e09c7b49c4.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3b5486d902d60b44d6ac64f40784aed09b07927c8291076e5296c3e09c7b49c4.xlsx",
+      "file_id": "8852cef9691d464bad82c706d702253c",
+      "file_name": "N3904026R0002+Attachment+3+Cost_Proposal_Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17797,
+      "sha256": "3b5486d902d60b44d6ac64f40784aed09b07927c8291076e5296c3e09c7b49c4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a0a855e2e384459ea92d24aa7e273200/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/34efbdc785a6b9d7b0bdb67eba62cdf76205092ef72e65cfba63d058fe13f60e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/34efbdc785a6b9d7b0bdb67eba62cdf76205092ef72e65cfba63d058fe13f60e.xlsx",
+      "file_id": "a0a855e2e384459ea92d24aa7e273200",
+      "file_name": "N3904026R0002+Attachment+2+Staffing+Plan.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21931,
+      "sha256": "34efbdc785a6b9d7b0bdb67eba62cdf76205092ef72e65cfba63d058fe13f60e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a616e0df641b44d8b646e88dbd5846a1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/355d1c2d25063209a883d941ddce0f288fc5652c01ebe234ff9dd1e84229e665.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/355d1c2d25063209a883d941ddce0f288fc5652c01ebe234ff9dd1e84229e665.pdf",
+      "file_id": "a616e0df641b44d8b646e88dbd5846a1",
+      "file_name": "N3904026R0002+Attachment+1+OPSEC+and+Wage+Determination.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 5818752,
+      "sha256": "355d1c2d25063209a883d941ddce0f288fc5652c01ebe234ff9dd1e84229e665"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d338dc0266e9487fbfddd56892531a08/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e51e16b72c631abb95939a17edb8ad414f55308a385d32ee00f54afdf30a5358.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e51e16b72c631abb95939a17edb8ad414f55308a385d32ee00f54afdf30a5358.pdf",
+      "file_id": "d338dc0266e9487fbfddd56892531a08",
+      "file_name": "N3904026R0002+Attachment+7+Amended+for+Q+and+A+Section+L+Evaluation+of+Offerors.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 424333,
+      "sha256": "e51e16b72c631abb95939a17edb8ad414f55308a385d32ee00f54afdf30a5358"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d46cf4ca07ca4164b8b05d2c075421e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/71dd9d8b57bdea552b89d829cf8cef5572b2db256900aed63fa8722acfaa8aac.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/71dd9d8b57bdea552b89d829cf8cef5572b2db256900aed63fa8722acfaa8aac.docx",
+      "file_id": "d46cf4ca07ca4164b8b05d2c075421e6",
+      "file_name": "N3904026R0002+Attachment+5+Past+Performance.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13324,
+      "sha256": "71dd9d8b57bdea552b89d829cf8cef5572b2db256900aed63fa8722acfaa8aac"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df302fee9189459ab1bedc0fb3ecf784/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a77ffbfd1dadea73d1fd2e44f6f6ac73f72513fa54428afa01f088863bdfadbf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a77ffbfd1dadea73d1fd2e44f6f6ac73f72513fa54428afa01f088863bdfadbf.pdf",
+      "file_id": "df302fee9189459ab1bedc0fb3ecf784",
+      "file_name": "N3904026R0002+Attachment+6+DD+Form+254.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 883859,
+      "sha256": "a77ffbfd1dadea73d1fd2e44f6f6ac73f72513fa54428afa01f088863bdfadbf"
+    }
+  ],
+  "_mirror_hash": "3274e0e1b3bc97c2f1a15c4f94ede4deec667a976e34353d3473a816acf09ed7",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.783657+00:00"
+}

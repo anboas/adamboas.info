@@ -1,0 +1,70 @@
+{
+  "id": "sam-e17a0704d9144ad19aa49246de50bd02",
+  "title": "Mobile Forensic Distributed Solution RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e17a0704d9144ad19aa49246de50bd02",
+  "opportunity_url": "https://sam.gov/opp/e17a0704d9144ad19aa49246de50bd02/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e17a0704d9144ad19aa49246de50bd02/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e17a0704d9144ad19aa49246de50bd02",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "15F06726RFITBC02",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.FBI-JEH",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e17a0704d9144ad19aa49246de50bd02",
+  "detail_text": "The United States Department of Justice (DOJ), Federal Bureau of Investigation (FBI), Operational Technology Division (OTD) is seeking a solution to allow the use of forensic mobile device extraction capabilities across all physical sites and locations where the FBI operates. The FBI has over 400 physical locations and also needs to perform device extractions during field operations and OCONUS. Current solutions require the purchase of a physical extraction device and license for each location for the entire period of performance OR transporting a device/license to each location where it is needed which incurs labor and travel costs and may delay the exploitation of evidence in exigent circumstances. Some remote locations may only need access to this capability one time per year or less but still require the purchase and deployment of hardware and a license for the entire year. The FBI intends to identify potential solutions to more efficiently deploy and manage finite capabilities where they are needed on demand. Potential solutions should meet the technical requirements described in the Contemplated Requirements section below.",
+  "detail_text_length": 1146,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5afa5807c80e4131a2f6d5f48ea608e7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76c61a20053440029bb1f41da6716cb6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a11a0aab38a64185ae9506721f725bf9/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5afa5807c80e4131a2f6d5f48ea608e7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6eac483b6d0c78de92a7391aa0c3ef5827b492cf266469776eeb3b1bed4f02cf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6eac483b6d0c78de92a7391aa0c3ef5827b492cf266469776eeb3b1bed4f02cf.pdf",
+      "file_id": "5afa5807c80e4131a2f6d5f48ea608e7",
+      "file_name": "15F06726RFITBC02.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 402297,
+      "sha256": "6eac483b6d0c78de92a7391aa0c3ef5827b492cf266469776eeb3b1bed4f02cf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76c61a20053440029bb1f41da6716cb6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9b6ce1042ae31d038bf4016a4ab97508a3622b9fc8ad8cee4ed777678ac61e0e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9b6ce1042ae31d038bf4016a4ab97508a3622b9fc8ad8cee4ed777678ac61e0e.xlsx",
+      "file_id": "76c61a20053440029bb1f41da6716cb6",
+      "file_name": "RFI+Question+Template+Answered.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20518,
+      "sha256": "9b6ce1042ae31d038bf4016a4ab97508a3622b9fc8ad8cee4ed777678ac61e0e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a11a0aab38a64185ae9506721f725bf9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9164c121614999cf5cbb04eeb988e990e041bade6b4f4e8b3310e1acdef7f4a6.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9164c121614999cf5cbb04eeb988e990e041bade6b4f4e8b3310e1acdef7f4a6.xlsx",
+      "file_id": "a11a0aab38a64185ae9506721f725bf9",
+      "file_name": "RFI+Question+Template.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18910,
+      "sha256": "9164c121614999cf5cbb04eeb988e990e041bade6b4f4e8b3310e1acdef7f4a6"
+    }
+  ],
+  "_mirror_hash": "3fef9e272dd34e78cca680af2aeaa63cce0374491f3a6880d7bcbc343ce1cb8c",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.784313+00:00"
+}

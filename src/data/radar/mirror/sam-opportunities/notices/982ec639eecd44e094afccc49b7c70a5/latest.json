@@ -1,0 +1,57 @@
+{
+  "id": "sam-982ec639eecd44e094afccc49b7c70a5",
+  "title": "75H71326Q00025 Medical Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=982ec639eecd44e094afccc49b7c70a5",
+  "opportunity_url": "https://sam.gov/opp/982ec639eecd44e094afccc49b7c70a5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/982ec639eecd44e094afccc49b7c70a5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "982ec639eecd44e094afccc49b7c70a5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "75H71326Q00025",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.INDIAN HEALTH SERVICE",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=982ec639eecd44e094afccc49b7c70a5",
+  "detail_text": "Medical Support for Portland Area Office, Physician (MD/DO) & Physician Assistant (PA-C) This is a Sources Sought Notice Announcement only. This advertisement is not a solicitation for offers, nor is it a request for quotes. A request for quotes may be issued at a later date. The Indian Health Service (IHS), Portland Area Office intends to solicit one (1) firm fixed price requirement for Medical Support the Portland Area Office and Service Units at multiple locations (Fort Hall Service Unit, Warm Springs Service Unit, Western Oregon Service Unit & Yakama Service Unit). The performance period is for six months, with the possibility of extending it for an additional six month period. The NAICS code is 621399. This notice is in accordance with 48 CFR Part 326, Subpart 326.603-3 and IHM 5.5-6, Indian Health Service must use the negotiation authority of the Buy Indian Act, 25 U.S.C. 47, to give preference to Indian Economic Enterprises (IEE) whenever the use of that authority is authorized and practicable. Interested parties shall not be reimbursed for costs associated with preparation of their responses. Any proprietary information should be marked. Interested organizations presenting a Capability Statement in response to this Sources Sought Notice must identify their size status. Respondents must be registered in the System for Award Management (SAM) at www.sam.gov and complete Online Representations and Certifications Application. Responses must include: (1) Business Name, (2) Point of Contact Name, Phone Number, and E-mail Address, (3) UEI, and NAICS code, (4) Business Size SMALL OR LARGE, (5) Type of Business NATIVE OWNED, SERVICE-DISABLED VETERAN OWNED, 8A, HUBZone, WOMEN-OWNED, etc., (6) Demonstration capability, and capacity to furnish goods/services. All capability statements sent in response to this Sources Sought Notice must be submitted electronically (via email) to the Point of Contact below in MS Word or Adobe Portable Document Format (PDF). (7) Complete the IEE Form. All information submissions must be received via e-mail to PORAOAcquisition@ihs.gov. Email must include “ 75H71326Q00025/Interested Seller Company Name ” on the subject line to be considered.",
+  "detail_text_length": 2203,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15b3e0698f4b470295611bea0ca4166c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54b4544de70041daaba575593af0009f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15b3e0698f4b470295611bea0ca4166c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6cfc284b4351ddcd61fcdcc7f9cff16dfabde71f0e497369a2d19f64e2bc24a0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6cfc284b4351ddcd61fcdcc7f9cff16dfabde71f0e497369a2d19f64e2bc24a0.docx",
+      "file_id": "15b3e0698f4b470295611bea0ca4166c",
+      "file_name": "SOW_medical+services+MD_PA+10.16.25_Draft_Sam.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40759,
+      "sha256": "6cfc284b4351ddcd61fcdcc7f9cff16dfabde71f0e497369a2d19f64e2bc24a0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/54b4544de70041daaba575593af0009f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9d816af0b4289cf243ee4b2ba8db99d130e33291b11da2219361101e5855f5d1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9d816af0b4289cf243ee4b2ba8db99d130e33291b11da2219361101e5855f5d1.pdf",
+      "file_id": "54b4544de70041daaba575593af0009f",
+      "file_name": "SELF+CERT+BUY+INDIAN+ACT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70710,
+      "sha256": "9d816af0b4289cf243ee4b2ba8db99d130e33291b11da2219361101e5855f5d1"
+    }
+  ],
+  "_mirror_hash": "5d964ba849aa662e82f8d849c999b31dcd8da5c238602d95a113f5608f0abf38",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.004609+00:00"
+}

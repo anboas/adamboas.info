@@ -1,0 +1,59 @@
+{
+  "id": "sam-24e0305e6763445dbaae73ede9c10d4e",
+  "title": "Request for Information - Contract Resource Management Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24e0305e6763445dbaae73ede9c10d4e",
+  "opportunity_url": "https://sam.gov/opp/24e0305e6763445dbaae73ede9c10d4e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/24e0305e6763445dbaae73ede9c10d4e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "24e0305e6763445dbaae73ede9c10d4e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "HT001126RFI0237",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24e0305e6763445dbaae73ede9c10d4e",
+  "detail_text": "THIS IS A REQUEST FOR INFORMATION (RFI) ONLY. This requirement is currently in the 8(a) program; therefore, the Defense Health Agency (DHA) is only seeking responses from 8(a) companies. This RFI is being issued solely for information and planning purposes. It does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. This request for information does not commit the Government to contract for any supply or service whatsoever. Further, the Defense Health Agency (DHA) is not at this time seeking quotes or proposals and will not accept unsolicited proposals. Respondents are advised that the U.S. Government will not pay for any information or administrative costs incurred in response to this RFI; all costs associated with responding to this RFI will be solely at the interested party’s expense. Not responding to this RFI does not preclude participation in any future RFP, if any is issued. If a solicitation is released, it may be synopsized on the System for Award Management (SAM) website or solicited through other government points of entry such as GSA eBuy for FSS Schedules, through the 8(a) program, OASIS+, etc. It is the responsibility of the potential offerors to monitor all sites for additional information pertaining to this requirement. The results of this market research may contribute to determining the method of procurement. Telephone and e-mail inquiries will not be accepted or acknowledged, and no feedback or evaluations will be provided to companies regarding their submissions. Please see the attached documents for additional details.",
+  "detail_text_length": 1601,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84b91af2684a4229b4ed58e8626ca176/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd931a317d3040bdbe7a8e140f8ce5f1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84b91af2684a4229b4ed58e8626ca176/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6b3cb283db146be7238d51ad23b9931955935d8c5d5e05b52264f49f6125540d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6b3cb283db146be7238d51ad23b9931955935d8c5d5e05b52264f49f6125540d.docx",
+      "file_id": "84b91af2684a4229b4ed58e8626ca176",
+      "file_name": "A.02+DRAFT+PWS+CRM+Support+HT001126RFI0237.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1616678,
+      "sha256": "6b3cb283db146be7238d51ad23b9931955935d8c5d5e05b52264f49f6125540d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd931a317d3040bdbe7a8e140f8ce5f1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d6a5339fba844eaa4c5c5b693ade8a81845c676bb34e63f3d1fa78991d33c020.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d6a5339fba844eaa4c5c5b693ade8a81845c676bb34e63f3d1fa78991d33c020.pdf",
+      "file_id": "bd931a317d3040bdbe7a8e140f8ce5f1",
+      "file_name": "A.02+RFI+HT001126RFI0237.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 162120,
+      "sha256": "d6a5339fba844eaa4c5c5b693ade8a81845c676bb34e63f3d1fa78991d33c020"
+    }
+  ],
+  "_mirror_hash": "d50d1e551994cb85cdbe0eac0743b971341643b7370fd62ade895e597739d0e5",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.799512+00:00"
+}

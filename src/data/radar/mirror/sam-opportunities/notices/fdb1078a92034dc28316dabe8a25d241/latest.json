@@ -1,0 +1,46 @@
+{
+  "id": "sam-fdb1078a92034dc28316dabe8a25d241",
+  "title": "Battery Performance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdb1078a92034dc28316dabe8a25d241",
+  "opportunity_url": "https://sam.gov/opp/fdb1078a92034dc28316dabe8a25d241/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fdb1078a92034dc28316dabe8a25d241/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fdb1078a92034dc28316dabe8a25d241",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "1202SA25R9802",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE",
+  "posted_date": "2026-03-16",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdb1078a92034dc28316dabe8a25d241",
+  "detail_text": "This RFI is for market research only and does not constitute a solicitation for proposals. The information provided may be utilized by the USFS in developing its acquisition strategy and requirements documents. It does not commit the Government to pay any cost incurred in the submission of responses or in making necessary studies or designs, nor to contract for supplies or services. No funds have been authorized, appropriated, or received for this contemplated effort. Any cost incurred shall be at the Offeror’s own risk. Live demonstrations that are currently integrated with approved USFS unmanned aircraft may be requested at a future date. Responses shall include potential Offeror’s Unique Entity Identifier (UEI), be in PDF format, and emailed to the Contracting Officer by 1200 hours MT, March 31, 2026, at steven.b.peterson@usda.gov.",
+  "detail_text_length": 846,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7e777eee7134cc68ac69a58f0df5193/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7e777eee7134cc68ac69a58f0df5193/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5d2a9d584bb9705cd4429c39e7f93cccef6af1975951197bb511a9804f53607a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5d2a9d584bb9705cd4429c39e7f93cccef6af1975951197bb511a9804f53607a.pdf",
+      "file_id": "d7e777eee7134cc68ac69a58f0df5193",
+      "file_name": "1202SA25R9802+-+RFI+-+Batteries.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174188,
+      "sha256": "5d2a9d584bb9705cd4429c39e7f93cccef6af1975951197bb511a9804f53607a"
+    }
+  ],
+  "_mirror_hash": "2799d2a11b68c13cbc81292716dbde563be73f3a7759e70a2f51e39883f7f04e",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.035193+00:00"
+}

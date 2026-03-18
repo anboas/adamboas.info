@@ -1,0 +1,46 @@
+{
+  "id": "sam-13747c9ea16846b1abfee3cef25bb89c",
+  "title": "GPS Increment 2 GNSS M-Code Receiver JASSM",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13747c9ea16846b1abfee3cef25bb89c",
+  "opportunity_url": "https://sam.gov/opp/13747c9ea16846b1abfee3cef25bb89c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/13747c9ea16846b1abfee3cef25bb89c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "13747c9ea16846b1abfee3cef25bb89c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "JASSM_GPS_Increment2",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8682  AFLCMC EBJK",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-05-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13747c9ea16846b1abfee3cef25bb89c",
+  "detail_text": "The purpose of this RFI is to conduct market research to identify qualified vendors with mature technical solutions and resources to develop and produce a Global Positioning System (GPS) Increment 2 Global Navigation Satellite System (GNSS) M-code receiver for JASSM.",
+  "detail_text_length": 267,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4163d7dc20ed4cf29070192be62974c1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4163d7dc20ed4cf29070192be62974c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6db63ed2c7e71022317e9e7c41e0c1389642dfb6f44d2a692577aef589e2ffa4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6db63ed2c7e71022317e9e7c41e0c1389642dfb6f44d2a692577aef589e2ffa4.docx",
+      "file_id": "4163d7dc20ed4cf29070192be62974c1",
+      "file_name": "Request_for_Information_JASSM_GPS_Inc2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45380,
+      "sha256": "6db63ed2c7e71022317e9e7c41e0c1389642dfb6f44d2a692577aef589e2ffa4"
+    }
+  ],
+  "_mirror_hash": "fdc7cf2b4e5e6c716f322aa696b69f8800e65b2791ab74a84d15f9a3cf2334f8",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.146760+00:00"
+}

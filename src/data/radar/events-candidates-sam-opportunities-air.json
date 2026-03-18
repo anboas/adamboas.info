@@ -1,37 +1,5 @@
 [
   {
-    "id": "sam-d9f8ea1182eb47b49442eebc802af53a",
-    "title": "Request for Information (RFI) for High-Performance Server",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9f8ea1182eb47b49442eebc802af53a",
-    "opportunity_url": "https://sam.gov/opp/d9f8ea1182eb47b49442eebc802af53a/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/d9f8ea1182eb47b49442eebc802af53a/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "d9f8ea1182eb47b49442eebc802af53a",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Pre-solicitation",
-      "Sources Sought"
-    ],
-    "solicitation_number": "C3NK-JADSI-0002",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA2291 AFLCMC C3NK",
-    "posted_date": "2026-02-23",
-    "response_deadline": "2026-03-02",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought",
-      "Industry/sourcing signal keywords"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9f8ea1182eb47b49442eebc802af53a",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9f8ea1182eb47b49442eebc802af53a",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-1a166e0fd28848299f7ecaeac858f918",
     "title": "FA821726 CRC RRSVS TCRR Request for Information",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1a166e0fd28848299f7ecaeac858f918",
@@ -1048,6 +1016,88 @@
     ]
   },
   {
+    "id": "sam-fdd9dc1a3c2147939ad87c5a2be8b9eb",
+    "title": "LPS Camera - Sources Sought",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdd9dc1a3c2147939ad87c5a2be8b9eb",
+    "opportunity_url": "https://sam.gov/opp/fdd9dc1a3c2147939ad87c5a2be8b9eb/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/fdd9dc1a3c2147939ad87c5a2be8b9eb/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "fdd9dc1a3c2147939ad87c5a2be8b9eb",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FA9101Camera",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-20",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdd9dc1a3c2147939ad87c5a2be8b9eb",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdd9dc1a3c2147939ad87c5a2be8b9eb",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00b46c2e4eec4c7197890c0a2cb136dd/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98dbcf4db50045349b9427c1207568ad/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00b46c2e4eec4c7197890c0a2cb136dd/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98dbcf4db50045349b9427c1207568ad/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-917afa00edaf42ffb58d3525a1426879",
+    "title": "LPS Laser - Sources Sought",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=917afa00edaf42ffb58d3525a1426879",
+    "opportunity_url": "https://sam.gov/opp/917afa00edaf42ffb58d3525a1426879/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/917afa00edaf42ffb58d3525a1426879/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "917afa00edaf42ffb58d3525a1426879",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FA9101Laser",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-20",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=917afa00edaf42ffb58d3525a1426879",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=917afa00edaf42ffb58d3525a1426879",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/560474af062644ff8cb067742ed2a28a/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f08dbf74e62f4bf883f9260994af9ac3/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/560474af062644ff8cb067742ed2a28a/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f08dbf74e62f4bf883f9260994af9ac3/download"
+      }
+    ]
+  },
+  {
     "id": "sam-0858e3e1be3d4580bc75ab5900baf9b7",
     "title": "Sources Sought Notice for 415th Transmitter IDIQ",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0858e3e1be3d4580bc75ab5900baf9b7",
@@ -1157,44 +1207,6 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc955c3650b44312aa520f73cfb0292e/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-ae733ec71579469694df1faba6a32cc3",
-    "title": "Request for Information - Next Generation Penetrator Tail Kit Development",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ae733ec71579469694df1faba6a32cc3",
-    "opportunity_url": "https://sam.gov/opp/ae733ec71579469694df1faba6a32cc3/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/ae733ec71579469694df1faba6a32cc3/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "ae733ec71579469694df1faba6a32cc3",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Pre-solicitation",
-      "Sources Sought"
-    ],
-    "solicitation_number": "EBDA_NGPTK_RFI",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8681  AFLCMC EBD",
-    "posted_date": "2026-02-23",
-    "response_deadline": "2026-03-23",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought",
-      "Industry/sourcing signal keywords"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ae733ec71579469694df1faba6a32cc3",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ae733ec71579469694df1faba6a32cc3",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edf28070dfe045cb9d895dc04396ea62/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edf28070dfe045cb9d895dc04396ea62/download"
       }
     ]
   },
@@ -1480,6 +1492,48 @@
     ]
   },
   {
+    "id": "sam-8798120cde084e6ab9459c95c1bd49f6",
+    "title": "Request for Information - Next Generation Penetrator Tail Kit Development",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8798120cde084e6ab9459c95c1bd49f6",
+    "opportunity_url": "https://sam.gov/opp/8798120cde084e6ab9459c95c1bd49f6/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/8798120cde084e6ab9459c95c1bd49f6/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "8798120cde084e6ab9459c95c1bd49f6",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Pre-solicitation",
+      "Sources Sought"
+    ],
+    "solicitation_number": "EBDA_NGPTK_RFI",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8681  AFLCMC EBD",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-25",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8798120cde084e6ab9459c95c1bd49f6",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8798120cde084e6ab9459c95c1bd49f6",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce1b85581c724aefb41f8b8be6cd701f/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edf28070dfe045cb9d895dc04396ea62/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce1b85581c724aefb41f8b8be6cd701f/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edf28070dfe045cb9d895dc04396ea62/download"
+      }
+    ]
+  },
+  {
     "id": "sam-5a3323d79c4d48cca25aae41b78195de",
     "title": "Request for Information (RFI) for the Repair of F-15 Air Data Processor (ADP)",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5a3323d79c4d48cca25aae41b78195de",
@@ -1632,13 +1686,13 @@
     ]
   },
   {
-    "id": "sam-d5b55ae6ba1344aaa20a278b7bc9c364",
+    "id": "sam-03e97e3f3ebe4620b9a659f0af6570b6",
     "title": "Sources Sought/Request for Information (RFI) for Solid Waste Collection and Disposal/Recycling Services",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5b55ae6ba1344aaa20a278b7bc9c364",
-    "opportunity_url": "https://sam.gov/opp/d5b55ae6ba1344aaa20a278b7bc9c364/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/d5b55ae6ba1344aaa20a278b7bc9c364/view",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03e97e3f3ebe4620b9a659f0af6570b6",
+    "opportunity_url": "https://sam.gov/opp/03e97e3f3ebe4620b9a659f0af6570b6/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/03e97e3f3ebe4620b9a659f0af6570b6/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "d5b55ae6ba1344aaa20a278b7bc9c364",
+    "notice_id": "03e97e3f3ebe4620b9a659f0af6570b6",
     "notice_type_code": "r",
     "notice_type": "Sources Sought",
     "engagement_kinds": [
@@ -1647,7 +1701,7 @@
     ],
     "solicitation_number": "FA461026R0005",
     "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA4610 30 CONS PKB",
-    "posted_date": "2026-03-13",
+    "posted_date": "2026-03-16",
     "response_deadline": "2026-03-27",
     "place_of_performance": null,
     "relevance_score": 4,
@@ -1656,8 +1710,8 @@
       "Industry/sourcing signal keywords"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5b55ae6ba1344aaa20a278b7bc9c364",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d5b55ae6ba1344aaa20a278b7bc9c364",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03e97e3f3ebe4620b9a659f0af6570b6",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03e97e3f3ebe4620b9a659f0af6570b6",
     "detail_text_length": 94,
     "resource_links": [
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ccb39047502046b4923437611f351a0a/download",
@@ -2211,6 +2265,37 @@
     ]
   },
   {
+    "id": "sam-bc753d9a86e24e60b24e9c53c2099121",
+    "title": "Sources Sought for the F-16 Multiplier Assembly Repair",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bc753d9a86e24e60b24e9c53c2099121",
+    "opportunity_url": "https://sam.gov/opp/bc753d9a86e24e60b24e9c53c2099121/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/bc753d9a86e24e60b24e9c53c2099121/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "bc753d9a86e24e60b24e9c53c2099121",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FA8251-26-D-FMAR",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8251  AFSC PZABB",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-04-17",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bc753d9a86e24e60b24e9c53c2099121",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bc753d9a86e24e60b24e9c53c2099121",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-241af3c5181b4f27b328a78da5a93f45",
     "title": "Industry Day - 711th HPW Mission Support Services Follow On",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=241af3c5181b4f27b328a78da5a93f45",
@@ -2392,13 +2477,13 @@
     "resource_items": null
   },
   {
-    "id": "sam-fc08a172446944dc80ce4294d32d72d5",
+    "id": "sam-fddb4570980340f0bef80c381221e764",
     "title": "KC-135 Center Console Refresh (CCR) Revision 2",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc08a172446944dc80ce4294d32d72d5",
-    "opportunity_url": "https://sam.gov/opp/fc08a172446944dc80ce4294d32d72d5/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/fc08a172446944dc80ce4294d32d72d5/view",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fddb4570980340f0bef80c381221e764",
+    "opportunity_url": "https://sam.gov/opp/fddb4570980340f0bef80c381221e764/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/fddb4570980340f0bef80c381221e764/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "fc08a172446944dc80ce4294d32d72d5",
+    "notice_id": "fddb4570980340f0bef80c381221e764",
     "notice_type_code": "r",
     "notice_type": "Sources Sought",
     "engagement_kinds": [
@@ -2406,7 +2491,7 @@
     ],
     "solicitation_number": "FA8105_CCR_Rev2",
     "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.MOBILITY AIRCRAFT.FA8105  AFLCMC  WKK",
-    "posted_date": "2026-03-16",
+    "posted_date": "2026-03-17",
     "response_deadline": "2025-07-09",
     "place_of_performance": null,
     "relevance_score": 2,
@@ -2414,24 +2499,31 @@
       "Signal notice type: Sources Sought"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc08a172446944dc80ce4294d32d72d5",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc08a172446944dc80ce4294d32d72d5",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fddb4570980340f0bef80c381221e764",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fddb4570980340f0bef80c381221e764",
     "detail_text_length": 94,
     "resource_links": [
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ac2958aadc9406298d570e1446c94c1/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cb8dfb9d29b4e08934279f15c2b4118/download",
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2fbfed4e88dd498abb8e146efc889ac2/download",
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3bfdca9617fd49468549fddf84e7545e/download",
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/404a50df6fe44691a4c96f602a3ea41f/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/701ede11f8f94809bda95954affd8594/download",
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75f9596c9d274350baf6ed865e352ef0/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a453788858564babbbc93f7c2a4666cb/download",
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac556da9301a47f6800e7352c4834e06/download",
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be061dc2227e4e1f9f3a5062623eb0eb/download",
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d14ba04341fe46f2b2908fdf1b4da952/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d427a1b678384a4fa7cf0b3521df6282/download"
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d427a1b678384a4fa7cf0b3521df6282/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea4fa88a5e474100a2db67f1eb4b8bb4/download"
     ],
-    "resource_count": 9,
+    "resource_count": 13,
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ac2958aadc9406298d570e1446c94c1/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cb8dfb9d29b4e08934279f15c2b4118/download"
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2fbfed4e88dd498abb8e146efc889ac2/download"
@@ -2443,7 +2535,13 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/404a50df6fe44691a4c96f602a3ea41f/download"
       },
       {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/701ede11f8f94809bda95954affd8594/download"
+      },
+      {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75f9596c9d274350baf6ed865e352ef0/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a453788858564babbbc93f7c2a4666cb/download"
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac556da9301a47f6800e7352c4834e06/download"
@@ -2456,6 +2554,9 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d427a1b678384a4fa7cf0b3521df6282/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea4fa88a5e474100a2db67f1eb4b8bb4/download"
       }
     ]
   },
@@ -3248,232 +3349,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-7ef043d0084144948c0450653bab1e36",
-    "title": "Repair of the C-130/ Pressure Altimeter",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ef043d0084144948c0450653bab1e36",
-    "opportunity_url": "https://sam.gov/opp/7ef043d0084144948c0450653bab1e36/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/7ef043d0084144948c0450653bab1e36/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "7ef043d0084144948c0450653bab1e36",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "FA8117-26-SS-0013",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8117  AFSC PZABA",
-    "posted_date": "2026-02-02",
-    "response_deadline": "2026-03-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ef043d0084144948c0450653bab1e36",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ef043d0084144948c0450653bab1e36",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10e058303a6d42bc96458b1d17ea8333/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55f1744549cb4ec0895f8420a5f24a59/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c1669e65a8534fefa9d98aef35d3816b/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3bcb7c59bb049ebb47fda473a100eed/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dbb1bf790fc743f08e1c135f23adfe39/download"
-    ],
-    "resource_count": 5,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10e058303a6d42bc96458b1d17ea8333/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55f1744549cb4ec0895f8420a5f24a59/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c1669e65a8534fefa9d98aef35d3816b/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3bcb7c59bb049ebb47fda473a100eed/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dbb1bf790fc743f08e1c135f23adfe39/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-8b7a8ed9084b45d0a628043e2b3501c8",
-    "title": "Fair Opportunity Proposal Request - F108 Module 13/15 & 14 LPT Assembly (USAF/USN) Remanufacture",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b7a8ed9084b45d0a628043e2b3501c8",
-    "opportunity_url": "https://sam.gov/opp/8b7a8ed9084b45d0a628043e2b3501c8/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/8b7a8ed9084b45d0a628043e2b3501c8/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "8b7a8ed9084b45d0a628043e2b3501c8",
-    "notice_type_code": "s",
-    "notice_type": "Special Notice",
-    "engagement_kinds": [
-      "Special Notice"
-    ],
-    "solicitation_number": null,
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8122  AFSC PZAAB",
-    "posted_date": "2026-02-13",
-    "response_deadline": "2026-03-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Special Notice"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b7a8ed9084b45d0a628043e2b3501c8",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b7a8ed9084b45d0a628043e2b3501c8",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0150137e94b648be86b9ee6c0660f704/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c3f1562692d4d218a4507f1e46ce265/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d37f4b09ef34050a6d6edef8e861452/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/39b039aade184e8a839dad4b57f403ae/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a17f91ce24734c50ba9d5955f1cb2b2a/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad860ed5313f446daa0b4aad6b4cafce/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c02aa4a6a21d4595abf4e745a77b708e/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbcef4db21ae4a379d1242de04fe0bd6/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7a8fe75e8b14912b317b68300fa058f/download"
-    ],
-    "resource_count": 9,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0150137e94b648be86b9ee6c0660f704/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c3f1562692d4d218a4507f1e46ce265/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d37f4b09ef34050a6d6edef8e861452/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/39b039aade184e8a839dad4b57f403ae/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a17f91ce24734c50ba9d5955f1cb2b2a/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad860ed5313f446daa0b4aad6b4cafce/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c02aa4a6a21d4595abf4e745a77b708e/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbcef4db21ae4a379d1242de04fe0bd6/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7a8fe75e8b14912b317b68300fa058f/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-cb7aa87293934f89b43b4f2a426b49a6",
-    "title": "IUID Equipment",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb7aa87293934f89b43b4f2a426b49a6",
-    "opportunity_url": "https://sam.gov/opp/cb7aa87293934f89b43b4f2a426b49a6/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/cb7aa87293934f89b43b4f2a426b49a6/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "cb7aa87293934f89b43b4f2a426b49a6",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "FA822226SSUD",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8222  AFSC OL H PZIE",
-    "posted_date": "2026-02-19",
-    "response_deadline": "2026-03-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb7aa87293934f89b43b4f2a426b49a6",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb7aa87293934f89b43b4f2a426b49a6",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10bd4d3258d468f9d40fa13fd636f27/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecb5a2d700624585aec4e3699b1cd299/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10bd4d3258d468f9d40fa13fd636f27/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecb5a2d700624585aec4e3699b1cd299/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-3e535fb54c794b1c949f710d186166f8",
-    "title": "RSLP Targets Program",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e535fb54c794b1c949f710d186166f8",
-    "opportunity_url": "https://sam.gov/opp/3e535fb54c794b1c949f710d186166f8/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/3e535fb54c794b1c949f710d186166f8/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "3e535fb54c794b1c949f710d186166f8",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "RSLP-TARGETS",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.PEO ASSURED ACCESS TO SPACE.FA8818  ASSRD ACS TO SPC SSC/AAK-KT",
-    "posted_date": "2026-02-23",
-    "response_deadline": "2026-03-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e535fb54c794b1c949f710d186166f8",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e535fb54c794b1c949f710d186166f8",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-751d179879be4d87a7d55c6bc0086656",
-    "title": "Central Vacuum Pre-Separator",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=751d179879be4d87a7d55c6bc0086656",
-    "opportunity_url": "https://sam.gov/opp/751d179879be4d87a7d55c6bc0086656/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/751d179879be4d87a7d55c6bc0086656/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "751d179879be4d87a7d55c6bc0086656",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "FA812526Q0034",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8125  AFSC PZIMA",
-    "posted_date": "2026-02-26",
-    "response_deadline": "2026-03-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=751d179879be4d87a7d55c6bc0086656",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=751d179879be4d87a7d55c6bc0086656",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b74cf3223de4ca7b5fdef873688d2b1/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b74cf3223de4ca7b5fdef873688d2b1/download"
-      }
-    ]
   },
   {
     "id": "sam-9d86bdee36734afe99002eeaba0bd127",
@@ -5924,90 +5799,6 @@
     ]
   },
   {
-    "id": "sam-d68b88e7bfd64e4fb9a9fdd8adc2fc9a",
-    "title": "High Speed Combustion Analyzer (HSCA)",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d68b88e7bfd64e4fb9a9fdd8adc2fc9a",
-    "opportunity_url": "https://sam.gov/opp/d68b88e7bfd64e4fb9a9fdd8adc2fc9a/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/d68b88e7bfd64e4fb9a9fdd8adc2fc9a/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "d68b88e7bfd64e4fb9a9fdd8adc2fc9a",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "FA860126Q0018",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8601  AFLCMC PZIO",
-    "posted_date": "2026-02-26",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d68b88e7bfd64e4fb9a9fdd8adc2fc9a",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d68b88e7bfd64e4fb9a9fdd8adc2fc9a",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2561369e986a4d0eab750011c93592be/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fee2485dd6074c65966f4816ecec7f6d/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2561369e986a4d0eab750011c93592be/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fee2485dd6074c65966f4816ecec7f6d/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-574d0f9b2be4440a9e53474e7ecf1a46",
-    "title": "Fatty-Acid Methyl Ester (FAME) Analyzers (x3) for Jet Fuel Testing",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=574d0f9b2be4440a9e53474e7ecf1a46",
-    "opportunity_url": "https://sam.gov/opp/574d0f9b2be4440a9e53474e7ecf1a46/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/574d0f9b2be4440a9e53474e7ecf1a46/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "574d0f9b2be4440a9e53474e7ecf1a46",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "A059653",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8601  AFLCMC PZIO",
-    "posted_date": "2026-02-27",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=574d0f9b2be4440a9e53474e7ecf1a46",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=574d0f9b2be4440a9e53474e7ecf1a46",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/079378b368c44c599c96c08983135345/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c68848d7b82478f92732135d921c7c3/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77f0770a2989487eb5fab3efcd6c4f6c/download"
-    ],
-    "resource_count": 3,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/079378b368c44c599c96c08983135345/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c68848d7b82478f92732135d921c7c3/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77f0770a2989487eb5fab3efcd6c4f6c/download"
-      }
-    ]
-  },
-  {
     "id": "sam-4f0a19d667d94946a4d2702cad0f5c93",
     "title": "SOLE SOURCE RIEGL VZ-20001 3D TLS 2 YEAR MAINTENANCE",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4f0a19d667d94946a4d2702cad0f5c93",
@@ -6114,46 +5905,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-c18853122a234b88ad7c30b28fcf6606",
-    "title": "Envitia Software Renewal",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18853122a234b88ad7c30b28fcf6606",
-    "opportunity_url": "https://sam.gov/opp/c18853122a234b88ad7c30b28fcf6606/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/c18853122a234b88ad7c30b28fcf6606/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "c18853122a234b88ad7c30b28fcf6606",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "FD2399-2600117",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA8527  AFLCMC C3IAK",
-    "posted_date": "2026-03-11",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18853122a234b88ad7c30b28fcf6606",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18853122a234b88ad7c30b28fcf6606",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1be0e4a6d11c4ae19d69cc955b045bf9/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fa96c48d5c344e92ba38dcefaedd6127/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1be0e4a6d11c4ae19d69cc955b045bf9/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fa96c48d5c344e92ba38dcefaedd6127/download"
-      }
-    ]
-  },
-  {
     "id": "sam-c891f6bcb2864130b605df750fff4418",
     "title": "Notice of Intent - 80-T RT Crane",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c891f6bcb2864130b605df750fff4418",
@@ -6190,6 +5941,86 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c63dcab778b4867aa9f5a2f8cefd947/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-629f414ccf004426be3e13466845c443",
+    "title": "High Speed Combustion Analyzer (HSCA)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=629f414ccf004426be3e13466845c443",
+    "opportunity_url": "https://sam.gov/opp/629f414ccf004426be3e13466845c443/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/629f414ccf004426be3e13466845c443/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "629f414ccf004426be3e13466845c443",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FA860126Q0018",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8601  AFLCMC PZIO",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-16",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=629f414ccf004426be3e13466845c443",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=629f414ccf004426be3e13466845c443",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2561369e986a4d0eab750011c93592be/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fee2485dd6074c65966f4816ecec7f6d/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2561369e986a4d0eab750011c93592be/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fee2485dd6074c65966f4816ecec7f6d/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-efc4d6973f964923b4cc09d58e763ff5",
+    "title": "Envitia Software Renewal",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efc4d6973f964923b4cc09d58e763ff5",
+    "opportunity_url": "https://sam.gov/opp/efc4d6973f964923b4cc09d58e763ff5/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/efc4d6973f964923b4cc09d58e763ff5/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "efc4d6973f964923b4cc09d58e763ff5",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FD2399-2600117",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA8527  AFLCMC C3IAK",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-03-16",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efc4d6973f964923b4cc09d58e763ff5",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efc4d6973f964923b4cc09d58e763ff5",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1be0e4a6d11c4ae19d69cc955b045bf9/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fa96c48d5c344e92ba38dcefaedd6127/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1be0e4a6d11c4ae19d69cc955b045bf9/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fa96c48d5c344e92ba38dcefaedd6127/download"
       }
     ]
   },
@@ -7392,13 +7223,57 @@
     ]
   },
   {
-    "id": "sam-3454616a15d446af9629e32bc77c6d08",
-    "title": "Emergency Medical Services (EMS) Recertification Vouchers",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3454616a15d446af9629e32bc77c6d08",
-    "opportunity_url": "https://sam.gov/opp/3454616a15d446af9629e32bc77c6d08/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/3454616a15d446af9629e32bc77c6d08/view",
+    "id": "sam-4b1694b87f704fe38375c800ce04442f",
+    "title": "Intent to Award Sole Source (IASS) Eaton UPS Maintenance",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4b1694b87f704fe38375c800ce04442f",
+    "opportunity_url": "https://sam.gov/opp/4b1694b87f704fe38375c800ce04442f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/4b1694b87f704fe38375c800ce04442f/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "3454616a15d446af9629e32bc77c6d08",
+    "notice_id": "4b1694b87f704fe38375c800ce04442f",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": null,
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-20",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4b1694b87f704fe38375c800ce04442f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4b1694b87f704fe38375c800ce04442f",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/126eb08ce6314197a9d17243eb659a36/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25f604ee616f41b5835071ae42c8ade3/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd7d568c845c4ed4ab5b5523b24cf674/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/126eb08ce6314197a9d17243eb659a36/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25f604ee616f41b5835071ae42c8ade3/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd7d568c845c4ed4ab5b5523b24cf674/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-90d0dac6cfbc40da9051b73280c5dd4d",
+    "title": "Emergency Medical Services (EMS) Recertification Vouchers",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90d0dac6cfbc40da9051b73280c5dd4d",
+    "opportunity_url": "https://sam.gov/opp/90d0dac6cfbc40da9051b73280c5dd4d/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/90d0dac6cfbc40da9051b73280c5dd4d/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "90d0dac6cfbc40da9051b73280c5dd4d",
     "notice_type_code": "r",
     "notice_type": "Sources Sought",
     "engagement_kinds": [
@@ -7406,7 +7281,7 @@
     ],
     "solicitation_number": "FA8051-26-SS-EMS",
     "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AF INSTALLATION & MISSION SUPPORT CENTER.FA8051  772 ESS PKD",
-    "posted_date": "2026-03-12",
+    "posted_date": "2026-03-17",
     "response_deadline": "2026-03-20",
     "place_of_performance": null,
     "relevance_score": 2,
@@ -7414,12 +7289,52 @@
       "Signal notice type: Sources Sought"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3454616a15d446af9629e32bc77c6d08",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3454616a15d446af9629e32bc77c6d08",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90d0dac6cfbc40da9051b73280c5dd4d",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90d0dac6cfbc40da9051b73280c5dd4d",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-46b733d0ad194e16b1af591fd89af8c0",
+    "title": "Optical Interrogator",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=46b733d0ad194e16b1af591fd89af8c0",
+    "opportunity_url": "https://sam.gov/opp/46b733d0ad194e16b1af591fd89af8c0/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/46b733d0ad194e16b1af591fd89af8c0/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "46b733d0ad194e16b1af591fd89af8c0",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FA9101Optical_Interrogator",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+    "posted_date": "2026-03-18",
+    "response_deadline": "2026-03-20",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=46b733d0ad194e16b1af591fd89af8c0",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=46b733d0ad194e16b1af591fd89af8c0",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1689c95719a144aebfa6dca43f33d074/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d72c6f7f70a44b9a2766e0272e1da03/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1689c95719a144aebfa6dca43f33d074/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d72c6f7f70a44b9a2766e0272e1da03/download"
+      }
+    ]
   },
   {
     "id": "sam-6d52902a99894bd8ab3e1065df1b75d5",
@@ -7494,13 +7409,13 @@
     ]
   },
   {
-    "id": "sam-7e44d249feb840b9ad8760488466efb4",
+    "id": "sam-cb24f7f2793c460fbcfce615157b436c",
     "title": "Destruction of SAP hardware",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e44d249feb840b9ad8760488466efb4",
-    "opportunity_url": "https://sam.gov/opp/7e44d249feb840b9ad8760488466efb4/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/7e44d249feb840b9ad8760488466efb4/view",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb24f7f2793c460fbcfce615157b436c",
+    "opportunity_url": "https://sam.gov/opp/cb24f7f2793c460fbcfce615157b436c/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/cb24f7f2793c460fbcfce615157b436c/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "7e44d249feb840b9ad8760488466efb4",
+    "notice_id": "cb24f7f2793c460fbcfce615157b436c",
     "notice_type_code": "p",
     "notice_type": "Pre-solicitation",
     "engagement_kinds": [
@@ -7508,7 +7423,7 @@
     ],
     "solicitation_number": "2026OL01",
     "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.CYBER AND NETWORKS.FA2057 AFLCMC HNJK",
-    "posted_date": "2026-03-12",
+    "posted_date": "2026-03-16",
     "response_deadline": "2026-03-22",
     "place_of_performance": null,
     "relevance_score": 2,
@@ -7516,8 +7431,8 @@
       "Signal notice type: Pre-solicitation"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e44d249feb840b9ad8760488466efb4",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e44d249feb840b9ad8760488466efb4",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb24f7f2793c460fbcfce615157b436c",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb24f7f2793c460fbcfce615157b436c",
     "detail_text_length": 94,
     "resource_links": [
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc10432740ad419188c0da25172cf38c/download"
@@ -7770,70 +7685,46 @@
     ]
   },
   {
-    "id": "sam-e34dd025c26d492a94dcfc7d32266ab4",
-    "title": "F-16 Circuit Card Assembly NSN: 5998-01-629-5711WF",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e34dd025c26d492a94dcfc7d32266ab4",
-    "opportunity_url": "https://sam.gov/opp/e34dd025c26d492a94dcfc7d32266ab4/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/e34dd025c26d492a94dcfc7d32266ab4/view",
+    "id": "sam-e9728de244f1483198fa069bc8c36aa8",
+    "title": "Access Control System",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9728de244f1483198fa069bc8c36aa8",
+    "opportunity_url": "https://sam.gov/opp/e9728de244f1483198fa069bc8c36aa8/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/e9728de244f1483198fa069bc8c36aa8/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "e34dd025c26d492a94dcfc7d32266ab4",
+    "notice_id": "e9728de244f1483198fa069bc8c36aa8",
     "notice_type_code": "r",
     "notice_type": "Sources Sought",
     "engagement_kinds": [
       "Sources Sought"
     ],
-    "solicitation_number": "FA8212-26-Q-0004",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8212  AFSC OLH PZABA",
-    "posted_date": "2026-02-19",
-    "response_deadline": "2026-03-24",
+    "solicitation_number": "FA810125S0001",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8101  AFSC PZIOA",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-03-23",
     "place_of_performance": null,
     "relevance_score": 2,
     "relevance_reasons": [
       "Signal notice type: Sources Sought"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e34dd025c26d492a94dcfc7d32266ab4",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e34dd025c26d492a94dcfc7d32266ab4",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9728de244f1483198fa069bc8c36aa8",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9728de244f1483198fa069bc8c36aa8",
     "detail_text_length": 94,
     "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17151eef5f1c449888657e74317394e6/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b4d79500b7149a8a884586e6851b294/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/378359d21c974d1bad1db1cc81f8c899/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/381d68caf12448fb8a0be228bc7ea25a/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a37b31c8a26414182784eaed94223d8/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9aa8688dcf5e4a1887cfdd235c4de17e/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2bb4abbdc3a4533a690c09baa5d4712/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af3d389e4bcb4aab9a223a8593b10124/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3c24b4373204cee95b9e5f86a137cdd/download"
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15f582d080024e228d49f6caf97b3673/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30ca70d22918428492220a619d8839c9/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7d48e91022b41e3bd626f37b6295c9f/download"
     ],
-    "resource_count": 9,
+    "resource_count": 3,
     "resource_items": [
       {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17151eef5f1c449888657e74317394e6/download"
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15f582d080024e228d49f6caf97b3673/download"
       },
       {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b4d79500b7149a8a884586e6851b294/download"
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30ca70d22918428492220a619d8839c9/download"
       },
       {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/378359d21c974d1bad1db1cc81f8c899/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/381d68caf12448fb8a0be228bc7ea25a/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a37b31c8a26414182784eaed94223d8/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9aa8688dcf5e4a1887cfdd235c4de17e/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2bb4abbdc3a4533a690c09baa5d4712/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af3d389e4bcb4aab9a223a8593b10124/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3c24b4373204cee95b9e5f86a137cdd/download"
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7d48e91022b41e3bd626f37b6295c9f/download"
       }
     ]
   },
@@ -7926,6 +7817,146 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-14db3b6ec7e54eafa7f2e1391aae0c77",
+    "title": "Design and Fabrication of Custom Force-Proportional Tracking Ball Controllers",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14db3b6ec7e54eafa7f2e1391aae0c77",
+    "opportunity_url": "https://sam.gov/opp/14db3b6ec7e54eafa7f2e1391aae0c77/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/14db3b6ec7e54eafa7f2e1391aae0c77/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "14db3b6ec7e54eafa7f2e1391aae0c77",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FA461026R0099",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA4610 30 CONS PKB",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-24",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14db3b6ec7e54eafa7f2e1391aae0c77",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14db3b6ec7e54eafa7f2e1391aae0c77",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37077402631345239a019293351a4233/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37077402631345239a019293351a4233/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-aa71c4750d67449f9317733be6976bf3",
+    "title": "F-16 Circuit Card Assembly NSN: 5998-01-629-5711WF",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa71c4750d67449f9317733be6976bf3",
+    "opportunity_url": "https://sam.gov/opp/aa71c4750d67449f9317733be6976bf3/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/aa71c4750d67449f9317733be6976bf3/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "aa71c4750d67449f9317733be6976bf3",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FA8212-26-Q-0004",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8212  AFSC OLH PZABA",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-24",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa71c4750d67449f9317733be6976bf3",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa71c4750d67449f9317733be6976bf3",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17151eef5f1c449888657e74317394e6/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b4d79500b7149a8a884586e6851b294/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/378359d21c974d1bad1db1cc81f8c899/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/381d68caf12448fb8a0be228bc7ea25a/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a37b31c8a26414182784eaed94223d8/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9aa8688dcf5e4a1887cfdd235c4de17e/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2bb4abbdc3a4533a690c09baa5d4712/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af3d389e4bcb4aab9a223a8593b10124/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3c24b4373204cee95b9e5f86a137cdd/download"
+    ],
+    "resource_count": 9,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17151eef5f1c449888657e74317394e6/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b4d79500b7149a8a884586e6851b294/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/378359d21c974d1bad1db1cc81f8c899/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/381d68caf12448fb8a0be228bc7ea25a/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a37b31c8a26414182784eaed94223d8/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9aa8688dcf5e4a1887cfdd235c4de17e/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2bb4abbdc3a4533a690c09baa5d4712/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af3d389e4bcb4aab9a223a8593b10124/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3c24b4373204cee95b9e5f86a137cdd/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-20e7967542e54cd9a274b960f128ef11",
+    "title": "Intent to Sole Source - CAPRE EMI Testing",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=20e7967542e54cd9a274b960f128ef11",
+    "opportunity_url": "https://sam.gov/opp/20e7967542e54cd9a274b960f128ef11/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/20e7967542e54cd9a274b960f128ef11/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "20e7967542e54cd9a274b960f128ef11",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "FA822226HG001",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8222  AFSC OL H PZIE",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-03-24",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=20e7967542e54cd9a274b960f128ef11",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=20e7967542e54cd9a274b960f128ef11",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c828a550ca843f1b8861606eeaec151/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c828a550ca843f1b8861606eeaec151/download"
+      }
+    ]
   },
   {
     "id": "sam-eea87d3f2c0d45deb5a8eb22197d3a5a",
@@ -8618,6 +8649,156 @@
     ]
   },
   {
+    "id": "sam-3b1e3ee801dd48de9e3d2242bfcd2b5f",
+    "title": "Ball Bearing",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b1e3ee801dd48de9e3d2242bfcd2b5f",
+    "opportunity_url": "https://sam.gov/opp/3b1e3ee801dd48de9e3d2242bfcd2b5f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/3b1e3ee801dd48de9e3d2242bfcd2b5f/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "3b1e3ee801dd48de9e3d2242bfcd2b5f",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FA822626Q0413",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8212  AFSC OLH PZABA",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-31",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b1e3ee801dd48de9e3d2242bfcd2b5f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b1e3ee801dd48de9e3d2242bfcd2b5f",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-d4d849ff9a2646839edcb10c39d1d5a4",
+    "title": "Contractor Operated Civil Engineering Supply Store (COCESS) - Eglin AFB, FL",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d4d849ff9a2646839edcb10c39d1d5a4",
+    "opportunity_url": "https://sam.gov/opp/d4d849ff9a2646839edcb10c39d1d5a4/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/d4d849ff9a2646839edcb10c39d1d5a4/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "d4d849ff9a2646839edcb10c39d1d5a4",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FA282326R0004",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA2823  AFTC PZIO",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-31",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d4d849ff9a2646839edcb10c39d1d5a4",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d4d849ff9a2646839edcb10c39d1d5a4",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-98cc4d8bf3a540529da79f1131fb5dd3",
+    "title": "F-16 Aircraft Seat HUD Monitor (ASHM) for United States Air Force (USAF)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98cc4d8bf3a540529da79f1131fb5dd3",
+    "opportunity_url": "https://sam.gov/opp/98cc4d8bf3a540529da79f1131fb5dd3/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/98cc4d8bf3a540529da79f1131fb5dd3/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "98cc4d8bf3a540529da79f1131fb5dd3",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FA825126RASHM",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8251  AFSC PZABB",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-03-31",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98cc4d8bf3a540529da79f1131fb5dd3",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98cc4d8bf3a540529da79f1131fb5dd3",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-579fcc7b5c07443887248be2194dad57",
+    "title": "DCGS Enterprise Field Support (DEFS)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=579fcc7b5c07443887248be2194dad57",
+    "opportunity_url": "https://sam.gov/opp/579fcc7b5c07443887248be2194dad57/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/579fcc7b5c07443887248be2194dad57/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "579fcc7b5c07443887248be2194dad57",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SS-AFLCMC-DEFS-27",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA8527  AFLCMC C3IAK",
+    "posted_date": "2026-03-16",
+    "response_deadline": "2026-04-01",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=579fcc7b5c07443887248be2194dad57",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=579fcc7b5c07443887248be2194dad57",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-2f086b0496624c06817f3833df9e29c6",
+    "title": "Pressure Transducers for Minuteman III",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f086b0496624c06817f3833df9e29c6",
+    "opportunity_url": "https://sam.gov/opp/2f086b0496624c06817f3833df9e29c6/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/2f086b0496624c06817f3833df9e29c6/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "2f086b0496624c06817f3833df9e29c6",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FA820626Q0272",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8206  AFSC PZACA (ICBM)",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-04-01",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f086b0496624c06817f3833df9e29c6",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f086b0496624c06817f3833df9e29c6",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-db5db8d3897f4648a0949b3bd64c69d1",
     "title": "Repair Services for the JTE Program",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db5db8d3897f4648a0949b3bd64c69d1",
@@ -8744,6 +8925,36 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecdbca04584c4cd2893e1111cb58ae57/download"
       }
     ]
+  },
+  {
+    "id": "sam-20e09e9956d94900b16cfa2bfc0dca92",
+    "title": "REPAIR OF BLOWER ASSEMBLY NSN 4920011116824RN",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=20e09e9956d94900b16cfa2bfc0dca92",
+    "opportunity_url": "https://sam.gov/opp/20e09e9956d94900b16cfa2bfc0dca92/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/20e09e9956d94900b16cfa2bfc0dca92/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "20e09e9956d94900b16cfa2bfc0dca92",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FD20602700008",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8517  AFSC PZAAC",
+    "posted_date": "2026-03-18",
+    "response_deadline": "2026-04-02",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=20e09e9956d94900b16cfa2bfc0dca92",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=20e09e9956d94900b16cfa2bfc0dca92",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-d193ef3b26d1498296f6beef3beb365a",
@@ -8906,6 +9117,46 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b650ec849d5745dda8f190566757e8fd/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-1ab1879b0af64caeb43952c8d439c2eb",
+    "title": "Launchpad 2.0 - Market Research",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ab1879b0af64caeb43952c8d439c2eb",
+    "opportunity_url": "https://sam.gov/opp/1ab1879b0af64caeb43952c8d439c2eb/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/1ab1879b0af64caeb43952c8d439c2eb/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "1ab1879b0af64caeb43952c8d439c2eb",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "Launchpad-MRR",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8604  AFLCMC PZI",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-04-07",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ab1879b0af64caeb43952c8d439c2eb",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ab1879b0af64caeb43952c8d439c2eb",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/616960ebcce145248d1243104321cb79/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/882a2d24aeba4f15b7a64271bf53794e/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/616960ebcce145248d1243104321cb79/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/882a2d24aeba4f15b7a64271bf53794e/download"
       }
     ]
   },
@@ -9112,6 +9363,42 @@
     ]
   },
   {
+    "id": "sam-648c77a0f6554f71bc3b9ed07b07a1c2",
+    "title": "Joint Simulation Environment (JSE) Contractor Logistics Support (CLS)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=648c77a0f6554f71bc3b9ed07b07a1c2",
+    "opportunity_url": "https://sam.gov/opp/648c77a0f6554f71bc3b9ed07b07a1c2/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/648c77a0f6554f71bc3b9ed07b07a1c2/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "648c77a0f6554f71bc3b9ed07b07a1c2",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "A060291",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.TRAINING.FA8635 ADV TRNG CPBLTES AFLCMC WNRK",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-04-10",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=648c77a0f6554f71bc3b9ed07b07a1c2",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=648c77a0f6554f71bc3b9ed07b07a1c2",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bb7a7459e234fc39845851e78bc6437/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bb7a7459e234fc39845851e78bc6437/download"
+      }
+    ]
+  },
+  {
     "id": "sam-c4e5e68b56d4459e90eb35958cf4dc25",
     "title": "Colibrium Additive Maintenance",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c4e5e68b56d4459e90eb35958cf4dc25",
@@ -9218,6 +9505,72 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9fee15e56cb4cf299fb0842c6b766fc/download"
       }
     ]
+  },
+  {
+    "id": "sam-d103aaf67b934c20837a7bdf140f5185",
+    "title": "Engineering Support for Building B210 Optimization",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d103aaf67b934c20837a7bdf140f5185",
+    "opportunity_url": "https://sam.gov/opp/d103aaf67b934c20837a7bdf140f5185/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/d103aaf67b934c20837a7bdf140f5185/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "d103aaf67b934c20837a7bdf140f5185",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "55555",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8579  SOFTWARE SPRT AFSC PZIM",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-04-16",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d103aaf67b934c20837a7bdf140f5185",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d103aaf67b934c20837a7bdf140f5185",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12b7773cd3934d69ac8e24b339cb9c8a/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12b7773cd3934d69ac8e24b339cb9c8a/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-36529e3071b3491785010fe08eee1823",
+    "title": "Hot Bonders",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=36529e3071b3491785010fe08eee1823",
+    "opportunity_url": "https://sam.gov/opp/36529e3071b3491785010fe08eee1823/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/36529e3071b3491785010fe08eee1823/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "36529e3071b3491785010fe08eee1823",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FA812526Q0038",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8125  AFSC PZIMA",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-04-17",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=36529e3071b3491785010fe08eee1823",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=36529e3071b3491785010fe08eee1823",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-14fee7dfd80446da82730eaac1d910e7",
@@ -9452,6 +9805,42 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-13747c9ea16846b1abfee3cef25bb89c",
+    "title": "GPS Increment 2 GNSS M-Code Receiver JASSM",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13747c9ea16846b1abfee3cef25bb89c",
+    "opportunity_url": "https://sam.gov/opp/13747c9ea16846b1abfee3cef25bb89c/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/13747c9ea16846b1abfee3cef25bb89c/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "13747c9ea16846b1abfee3cef25bb89c",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "JASSM_GPS_Increment2",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8682  AFLCMC EBJK",
+    "posted_date": "2026-03-17",
+    "response_deadline": "2026-05-29",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13747c9ea16846b1abfee3cef25bb89c",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13747c9ea16846b1abfee3cef25bb89c",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4163d7dc20ed4cf29070192be62974c1/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4163d7dc20ed4cf29070192be62974c1/download"
+      }
+    ]
   },
   {
     "id": "sam-58dc0fd5ceb9406cbfb908e5eeda6d5c",

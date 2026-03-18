@@ -1,0 +1,101 @@
+{
+  "id": "sam-ef03bc86eeea4292ab3f09b57927e083",
+  "title": "Laurel Fulfillment Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ef03bc86eeea4292ab3f09b57927e083",
+  "opportunity_url": "https://sam.gov/opp/ef03bc86eeea4292ab3f09b57927e083/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ef03bc86eeea4292ab3f09b57927e083/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ef03bc86eeea4292ab3f09b57927e083",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "040ADV-26-R-0017-003",
+  "agency_path": "UNITED STATES GOVERNMENT PUBLISHING OFFICE.UNITED STATES GOVERNMENT PUBLISHING OFFICE.Acquisition Services",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ef03bc86eeea4292ab3f09b57927e083",
+  "detail_text": "The purpose of this document is to respond to questions posed by potential offerers, attach supporting documents (Site Visit List, Sample Sign-in Sheet), provide a revised SOW and solicitation language, and the wage determinations. This amendment also extends the offer due date to Thursday, April 2nd, 2026.",
+  "detail_text_length": 308,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14e6c8dcef8d42c6b36ca2b85722f0ab/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5249bcfb43a3437c903798803830ea5d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66e0d1baebd54d75a31bdd66a3afeb85/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb9e008558e7441991357925cdfe060f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca285cda0bab4ca0b253b4ecc176aec3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6736d91ad9944d18db3930d177ac347/download"
+  ],
+  "resource_count": 6,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14e6c8dcef8d42c6b36ca2b85722f0ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9df1207f15ea2e47f44939d4fc2ba9f9919c42db48cc0f9da36ab9f3af30bf00.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9df1207f15ea2e47f44939d4fc2ba9f9919c42db48cc0f9da36ab9f3af30bf00.pdf",
+      "file_id": "14e6c8dcef8d42c6b36ca2b85722f0ab",
+      "file_name": "GPO+Laurel+Order+Fulfillment+Services+SOW+Rev.+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 396072,
+      "sha256": "9df1207f15ea2e47f44939d4fc2ba9f9919c42db48cc0f9da36ab9f3af30bf00"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5249bcfb43a3437c903798803830ea5d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/85ad858d63c55d69ecd597741b7775bee31ef91633559947172fb2ef6f9be9d3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/85ad858d63c55d69ecd597741b7775bee31ef91633559947172fb2ef6f9be9d3.pdf",
+      "file_id": "5249bcfb43a3437c903798803830ea5d",
+      "file_name": "Questions+for+Laurel+Fulfillment+RFP+-+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 447512,
+      "sha256": "85ad858d63c55d69ecd597741b7775bee31ef91633559947172fb2ef6f9be9d3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66e0d1baebd54d75a31bdd66a3afeb85/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7c0167e75c3592d34473c876444f7bb5d7e4d701f054f5b6a515908bd90ce61.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7c0167e75c3592d34473c876444f7bb5d7e4d701f054f5b6a515908bd90ce61.pdf",
+      "file_id": "66e0d1baebd54d75a31bdd66a3afeb85",
+      "file_name": "Laurel+Fulfillment+Site+Visit+Check-in+Sheet.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52483,
+      "sha256": "f7c0167e75c3592d34473c876444f7bb5d7e4d701f054f5b6a515908bd90ce61"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb9e008558e7441991357925cdfe060f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0885775d1a90a3e724d0fa7f2c0ac329fd64394a73147915a2ca51fb80488b1f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0885775d1a90a3e724d0fa7f2c0ac329fd64394a73147915a2ca51fb80488b1f.pdf",
+      "file_id": "bb9e008558e7441991357925cdfe060f",
+      "file_name": "Wage+Determination.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4847686,
+      "sha256": "0885775d1a90a3e724d0fa7f2c0ac329fd64394a73147915a2ca51fb80488b1f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca285cda0bab4ca0b253b4ecc176aec3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/37493cb3ba77d6247de8fbd52cf7074e4f4dbe4245afda4e48fd6a69ad560d6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/37493cb3ba77d6247de8fbd52cf7074e4f4dbe4245afda4e48fd6a69ad560d6f.pdf",
+      "file_id": "ca285cda0bab4ca0b253b4ecc176aec3",
+      "file_name": "040ADV-26-R-0017-003+Solicitation+Amendment+Signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 531013,
+      "sha256": "37493cb3ba77d6247de8fbd52cf7074e4f4dbe4245afda4e48fd6a69ad560d6f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6736d91ad9944d18db3930d177ac347/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f1246dad576c8864a5a45906bc9c566fbd2684f4d2861912d8a7a97e02739ddb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f1246dad576c8864a5a45906bc9c566fbd2684f4d2861912d8a7a97e02739ddb.pdf",
+      "file_id": "d6736d91ad9944d18db3930d177ac347",
+      "file_name": "Sample+Admin+Sign+In+Sheet.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31818,
+      "sha256": "f1246dad576c8864a5a45906bc9c566fbd2684f4d2861912d8a7a97e02739ddb"
+    }
+  ],
+  "_mirror_hash": "cb542c8f339afaddff1698cbd69f032c145a508ab22ac63b7f2c52c97a12c5eb",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:42.086151+00:00"
+}

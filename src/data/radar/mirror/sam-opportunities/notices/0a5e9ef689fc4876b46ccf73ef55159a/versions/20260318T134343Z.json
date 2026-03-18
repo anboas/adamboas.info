@@ -1,0 +1,47 @@
+{
+  "id": "sam-0a5e9ef689fc4876b46ccf73ef55159a",
+  "title": "New Spare Buy / NSN: 1HS 2040 014213254 SQ, MATERIAL,RADAR ABSO, REF NO: 4491223 ITEM 20, QTY: 50, U/I: SH",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a5e9ef689fc4876b46ccf73ef55159a",
+  "opportunity_url": "https://sam.gov/opp/0a5e9ef689fc4876b46ccf73ef55159a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0a5e9ef689fc4876b46ccf73ef55159a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0a5e9ef689fc4876b46ccf73ef55159a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N0010425X5509",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-17",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a5e9ef689fc4876b46ccf73ef55159a",
+  "detail_text": "Sources Sought New Spare Buy / NSN: 1HS 2040 014213254 SQ, MATERIAL,RADAR ABSO, REF NO: 4491223 ITEM 20, QTY: 50, U/I: SH (Sheets) FOLDER: 25122-0090 PD Number: N0010425X5509 AMC/AMSC: 1G DD254 REQUIRED: Y DD254 SECURITY CLASS: CONFIDENTIAL",
+  "detail_text_length": 240,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a33bc99bb2a34d2a855ed72070f9bf52/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a33bc99bb2a34d2a855ed72070f9bf52/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8c7e2c6d649728d665b00efc61dbc840ef7b278e4eef40edc5745fd0bb45d8bf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8c7e2c6d649728d665b00efc61dbc840ef7b278e4eef40edc5745fd0bb45d8bf.pdf",
+      "file_id": "a33bc99bb2a34d2a855ed72070f9bf52",
+      "file_name": "PD-N0010425X5509-TBD+DD254.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1418618,
+      "sha256": "8c7e2c6d649728d665b00efc61dbc840ef7b278e4eef40edc5745fd0bb45d8bf"
+    }
+  ],
+  "_mirror_hash": "93eeb056f6e21bac26735476c0c71dc272f4684cab041ed0129d99058dfb699a",
+  "_mirror_run_id": "20260318T134343Z",
+  "_mirror_recorded_at": "2026-03-18T13:50:41.743246+00:00"
+}
