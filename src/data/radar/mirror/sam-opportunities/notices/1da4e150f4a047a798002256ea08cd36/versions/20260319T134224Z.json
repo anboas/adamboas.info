@@ -1,0 +1,57 @@
+{
+  "id": "sam-1da4e150f4a047a798002256ea08cd36",
+  "title": "VMware by Broadcom VSphere application (VCF-CLD-FND)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1da4e150f4a047a798002256ea08cd36",
+  "opportunity_url": "https://sam.gov/opp/1da4e150f4a047a798002256ea08cd36/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1da4e150f4a047a798002256ea08cd36/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1da4e150f4a047a798002256ea08cd36",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA4600_VMware_or_Equal",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4600  55 CONS  PKP",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1da4e150f4a047a798002256ea08cd36",
+  "detail_text": "SOURCES SOUGHT SYNOPSIS: Note that this is NOT a request for quotes or proposals; the 55th Contracting Squadron, Offutt Air Force Base, NE, is seeking information for market research purposes only for the following items listed below: The government intends to award a contract to Carahsoft Technology Corporation for the requirement of VMWare Cloud Foundations, as required on DOW ESI https://www.esi.mil/. This sources sought is being posted in support of an \"Other than full and open competition\" justification in accordance with FAR 6.103-1. If offerors have an alternative source that can meet the same capabilities as VMWare Cloud Foundation, Product ID VCF-CLD-FND, and the product is able to communicate appropriately with other products on this software, please submit a capabilities statement with technical data supporting the alternative offering to jake.freligh@us.af.mil and jacob.davis.56@us.af.mil prior to 30 March 2026 at 11 AM CDT. The NAICS for this product will be 541519 and PSC DA01. If you believe this incorrect, please feel free to let me know what NAICS/PSC better fits the criteria. IF A SOLICITATION IS ISSUED IT WILL BE ANNOUNCED AT A LATER DATE, and all interested parties must respond to that solicitation announcement separately from the responses to this announcement. No reimbursement will be made for any costs associated with providing information in response to this announcement.",
+  "detail_text_length": 1418,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97f69f620df94bdf8f1e5c67000068e8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/991564aa26ed469cb2baf7fa6f7d0b77/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97f69f620df94bdf8f1e5c67000068e8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f159b7fe4844cf6e51c8f89302955b41c7066681f73b1395b68952b12b42a440.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f159b7fe4844cf6e51c8f89302955b41c7066681f73b1395b68952b12b42a440.docx",
+      "file_id": "97f69f620df94bdf8f1e5c67000068e8",
+      "file_name": "Attachment+1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16389,
+      "sha256": "f159b7fe4844cf6e51c8f89302955b41c7066681f73b1395b68952b12b42a440"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/991564aa26ed469cb2baf7fa6f7d0b77/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/23e429234f624cc5c0507ef25c730bd375a8fb623d1531571b5900df04af908e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/23e429234f624cc5c0507ef25c730bd375a8fb623d1531571b5900df04af908e.pdf",
+      "file_id": "991564aa26ed469cb2baf7fa6f7d0b77",
+      "file_name": "Statement+of+Need_30+Jan+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 193505,
+      "sha256": "23e429234f624cc5c0507ef25c730bd375a8fb623d1531571b5900df04af908e"
+    }
+  ],
+  "_mirror_hash": "36c098500b67e0ccf13f663c452da01ea889c37998374ad440d33b19976ecdbb",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.294190+00:00"
+}

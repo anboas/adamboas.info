@@ -1,16 +1,16 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-18T13:51:04.159177+00:00
+Generated: 2026-03-19T13:47:32.545973+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/18/2026
+Posted range: 01/01/2026 -> 03/19/2026
 
 ## Counts
 - Total candidates: 20
 - Navy-related: 0
 - Full detail cached: 20
-- Notices with attachments: 15
-- Total attachment links: 22
+- Notices with attachments: 13
+- Total attachment links: 18
 - Pre-solicitation: 4
 - Sources Sought: 10
 - Special Notice: 6
@@ -23,9 +23,7 @@ Posted range: 01/01/2026 -> 03/18/2026
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
-| 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-01-16 | DEPT OF DEFENSE | [Capacity as A Service (CaaS)](https://sam.gov/opp/4daa3f92dba84c58a453bcae9caea775/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Special Notice | Special Notice | 2026-02-24 | 2026-03-03 | DEPT OF DEFENSE | [Notice of Intent to Sole Source Eclipse Software](https://sam.gov/opp/6e58d8f5bdf14168b7f1fe5906031606/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-04 | DEPT OF DEFENSE | [Wireless Receiver and Transmitter Bundle](https://sam.gov/opp/f41ec02d17544af8bb6d52c77d0fe498/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-03-05 | DEPT OF DEFENSE | [Ferry Transportation Services](https://sam.gov/opp/951ff696a76448cbbcfda5251a044f95/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-06 | DEPT OF DEFENSE | [EV Charger and Deiseal Generator](https://sam.gov/opp/0fc8006da8564316a8ae77b0e4a4ef7e/view) |
@@ -40,7 +38,9 @@ Posted range: 01/01/2026 -> 03/18/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-20 | DEPT OF DEFENSE | [MCIEAST G-6 TSD GPON/DWDM MAINTENANCE SUPPORT SERVICES](https://sam.gov/opp/4e5719ee5d51416b9a863e44c0a4458e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-20 | DEPT OF DEFENSE | [MEDLOGCO Warehousing Support Operations](https://sam.gov/opp/776b6c25b4b74e63bb4d22db1ebe265a/view) |
 | 2 | Special Notice | Special Notice | 2026-03-10 | 2026-03-20 | DEPT OF DEFENSE | [PSO Credits](https://sam.gov/opp/d5e5a9fef19c4d019769ff52d7ee7c7e/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-18 | 2026-03-25 | DEPT OF DEFENSE | [MCAS Beaufort Catholic Priest Services](https://sam.gov/opp/ebde22af22b84e0799423660d49d5622/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-30 | DEPT OF DEFENSE | [Parachute Training Support Services](https://sam.gov/opp/4fc6bf6364b144e3b462013d3e45cb3b/view) |
+| 2 | Special Notice | Special Notice | 2026-03-19 | 2026-03-30 | DEPT OF DEFENSE | [Intent to Sole Source to DODESI](https://sam.gov/opp/433586a058bb439c8a367329138b1fd7/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/4cb4b860bc084179a2fc47b17730eb82/view) |
 | 2 | Special Notice | Special Notice | 2026-03-17 | 2026-03-31 | DEPT OF DEFENSE | [Notice of Intent -Logistical Support Services](https://sam.gov/opp/dcd7938dd66f4008b482894bde25e836/view) |
 

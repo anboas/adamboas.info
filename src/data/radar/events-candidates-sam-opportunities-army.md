@@ -1,9 +1,9 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-18T13:51:09.659016+00:00
+Generated: 2026-03-19T13:47:38.053670+00:00
 Profile: army
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/18/2026
+Posted range: 01/01/2026 -> 03/19/2026
 
 ## Counts
 - Total candidates: 0

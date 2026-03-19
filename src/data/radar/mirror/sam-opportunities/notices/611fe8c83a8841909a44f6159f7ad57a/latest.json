@@ -1,0 +1,46 @@
+{
+  "id": "sam-611fe8c83a8841909a44f6159f7ad57a",
+  "title": "Real-Time Post-Market Signal For Enhanced Surveillance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=611fe8c83a8841909a44f6159f7ad57a",
+  "opportunity_url": "https://sam.gov/opp/611fe8c83a8841909a44f6159f7ad57a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/611fe8c83a8841909a44f6159f7ad57a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "611fe8c83a8841909a44f6159f7ad57a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ODT-2026-133586",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.FOOD AND DRUG ADMINISTRATION.FDA Office of Acquisitions and Grants Services",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=611fe8c83a8841909a44f6159f7ad57a",
+  "detail_text": "The U.S. Food and Drug Administration (FDA) is conducting market research to better understand industry capabilities related to providing real-time or near-real-time signals that may support FDA’s post-market surveillance activities for regulated products. FDA is interested in learning whether commercial organizations currently provide, or could provide, timely signals or alerts related to events affecting regulated products, such as safety events, product quality issues, supply disruptions, or other significant public health signals. Information obtained through this Request for Information (RFI) will assist the Government in determining the availability of industry capabilities, potential technical integration approaches, and possible cost models associated with providing real-time signal feeds to FDA systems. This RFI is issued for market research purposes only and does not constitute a solicitation for proposals or a commitment by the Government to issue a solicitation in the future.",
+  "detail_text_length": 1002,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b8567fb06a647f8b56a00b6ce30ced0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b8567fb06a647f8b56a00b6ce30ced0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d5ac7c8214cf96703ac7a5d5fe6c48a4734a7ea4241290c5b8eb8314e225633d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d5ac7c8214cf96703ac7a5d5fe6c48a4734a7ea4241290c5b8eb8314e225633d.pdf",
+      "file_id": "9b8567fb06a647f8b56a00b6ce30ced0",
+      "file_name": "RFI+-+Enhanced+Surveillance+3.16.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148405,
+      "sha256": "d5ac7c8214cf96703ac7a5d5fe6c48a4734a7ea4241290c5b8eb8314e225633d"
+    }
+  ],
+  "_mirror_hash": "3c1642bf6c583c0d80ce702af62a76ae7a06341d1e04226a75948fcc1a92f56a",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.368216+00:00"
+}

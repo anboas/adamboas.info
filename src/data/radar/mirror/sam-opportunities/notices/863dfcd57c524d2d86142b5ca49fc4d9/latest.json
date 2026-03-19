@@ -1,0 +1,68 @@
+{
+  "id": "sam-863dfcd57c524d2d86142b5ca49fc4d9",
+  "title": "Automated Discovery for Design and Control of Turbulent Systems (AutoDIDACTS) Proposers Day",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=863dfcd57c524d2d86142b5ca49fc4d9",
+  "opportunity_url": "https://sam.gov/opp/863dfcd57c524d2d86142b5ca49fc4d9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/863dfcd57c524d2d86142b5ca49fc4d9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "863dfcd57c524d2d86142b5ca49fc4d9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-47",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=863dfcd57c524d2d86142b5ca49fc4d9",
+  "detail_text": "The Defense Advanced Research Projects Agency (DARPA) Defense Sciences Office (DSO) is sponsoring a Proposers Day webcast to provide information to potential proposers on the objectives of an anticipated Broad Agency Announcement (BAA) for the Automated Discovery for Design and Control of Turbulent Systems (AutoDIDACTS) program. The Proposers Day will be held via webcast on April 1, 2026, from 10:00 a.m. to 5:00 p.m. (Eastern Time). Advance registration is required for viewing the webcast.",
+  "detail_text_length": 494,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c84f43fcb434b7cbb70f06b20d59fdd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/911bc7cbadb44140a8f2f0dadf3e20df/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dca4746c268d4868a5c1288f3f6c3cd1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c84f43fcb434b7cbb70f06b20d59fdd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d89565c2dd3815b211d5b7f9083a432d84ca62fd751f83e16cffbdd566741b0a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d89565c2dd3815b211d5b7f9083a432d84ca62fd751f83e16cffbdd566741b0a.pdf",
+      "file_id": "6c84f43fcb434b7cbb70f06b20d59fdd",
+      "file_name": "DARPA-SN-26-47-Amendment-01.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98701,
+      "sha256": "d89565c2dd3815b211d5b7f9083a432d84ca62fd751f83e16cffbdd566741b0a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/911bc7cbadb44140a8f2f0dadf3e20df/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e2a1408308df656a47c322f619c7773ca64b7074f734ef3cfdbe76231023c641.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e2a1408308df656a47c322f619c7773ca64b7074f734ef3cfdbe76231023c641.docx",
+      "file_id": "911bc7cbadb44140a8f2f0dadf3e20df",
+      "file_name": "DARPA-SN-26-47_AutoDIDACTS_Amendment_1_Summary_of_Changes.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25854,
+      "sha256": "e2a1408308df656a47c322f619c7773ca64b7074f734ef3cfdbe76231023c641"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dca4746c268d4868a5c1288f3f6c3cd1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9b9ac64e627bb82e52a63b54dc79401e58c97bb0fd48c893ccc6f3bda314f816.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9b9ac64e627bb82e52a63b54dc79401e58c97bb0fd48c893ccc6f3bda314f816.pdf",
+      "file_id": "dca4746c268d4868a5c1288f3f6c3cd1",
+      "file_name": "DARPA-SN-26-47.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 97808,
+      "sha256": "9b9ac64e627bb82e52a63b54dc79401e58c97bb0fd48c893ccc6f3bda314f816"
+    }
+  ],
+  "_mirror_hash": "65720c2a12154f02873012c0f57f92d925712becb2c56c98910be76c80ffc315",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.165151+00:00"
+}

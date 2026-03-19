@@ -1,0 +1,57 @@
+{
+  "id": "sam-eb1e619c62804f1db83d788cd53984dc",
+  "title": "Construct EHRM Infrastructure Upgrades - University Drive - Pittsburgh, PA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb1e619c62804f1db83d788cd53984dc",
+  "opportunity_url": "https://sam.gov/opp/eb1e619c62804f1db83d788cd53984dc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/eb1e619c62804f1db83d788cd53984dc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "eb1e619c62804f1db83d788cd53984dc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C77626Q0142",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.PCAC (36C776)",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb1e619c62804f1db83d788cd53984dc",
+  "detail_text": "The scope of work shall generally consist of but is not limited to the following: construction work to facilitate all modifications at multiple existing buildings on the VAPHS University Drive VA campus to upgrade the infrastructure to support the new Electronic Health Records Modernization (EHRM) system. The upgrade to the infrastructure will be campus wide buildings impacted to include Buildings 1, 5, 8, 29, 30, 33, and site. The architectural total existing space square footage affected is approximately 3,030 SF with new tower addition square footage of 11,600 SF. Upgrades for these buildings will include the construction of new towers, existing rooms and telecommunication closets and include relocation, reconfiguration, expansion, and renovation involving new walls, doors and finishes, etc. throughout each space. Bid work will be based on “EHRM Infrastructure Upgrades” Drawings and Specifications prepared by AWEN Solutions, dated 13 June 2025. Construction work shall also comply with VA “Infrastructure Standard for Telecommunications Spaces (ISTS) V4.0, June 1, 2023. Bid work will include General Construction (and associated trades), Structural, Mechanical and HVAC, Plumbing and Fire Protection, Electric, and Information Technology, Civil. The VA Physical Security Design and Resiliency Manual (PDRSM) requirements will need to be incorporated into the construction of the project. The areas of disturbance will be occupied by staff or patients during construction, so phasing shall be required. See attachments for additional details. **A DECISION TO SET-ASIDE THIS PROCUREMENT FOR ANY SPECIFIC SOCIO-ECONOMIC CATEGORY HAS NOT BEEN MADE AT THIS TIME***",
+  "detail_text_length": 1677,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38c7237a4d394d2e8b8f6da3c5e3cf40/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/99f9d77680c9471f96c13e7e5c23f881/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38c7237a4d394d2e8b8f6da3c5e3cf40/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1eca61c1ec79a75cca66557e65634d5d5489f5097929ec1ace391695803f6350.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1eca61c1ec79a75cca66557e65634d5d5489f5097929ec1ace391695803f6350.docx",
+      "file_id": "38c7237a4d394d2e8b8f6da3c5e3cf40",
+      "file_name": "P01+-+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 319674,
+      "sha256": "1eca61c1ec79a75cca66557e65634d5d5489f5097929ec1ace391695803f6350"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/99f9d77680c9471f96c13e7e5c23f881/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2af67386698337f108a93c6222d4a270568875d3fb0fff247a53be9c6479ad7f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2af67386698337f108a93c6222d4a270568875d3fb0fff247a53be9c6479ad7f.pdf",
+      "file_id": "99f9d77680c9471f96c13e7e5c23f881",
+      "file_name": "P02+-+36C77626Q0142.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 184390,
+      "sha256": "2af67386698337f108a93c6222d4a270568875d3fb0fff247a53be9c6479ad7f"
+    }
+  ],
+  "_mirror_hash": "6776a93ef8d1817239f26240a2d04010f530a249adca1104e1cb5b887c0d7023",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.232437+00:00"
+}

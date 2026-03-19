@@ -1,0 +1,57 @@
+{
+  "id": "sam-a37b586a34524beba7fdb775ae91635a",
+  "title": "Lightning Protection System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a37b586a34524beba7fdb775ae91635a",
+  "opportunity_url": "https://sam.gov/opp/a37b586a34524beba7fdb775ae91635a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a37b586a34524beba7fdb775ae91635a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a37b586a34524beba7fdb775ae91635a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "LPS0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a37b586a34524beba7fdb775ae91635a",
+  "detail_text": "The Peterson Space Force Base (PSFB) 21st Contracting Squadron is requesting information from vendors. This request is for Market Research Purposes only. No award will be created off of this Sources Sought Opportunity. THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY. The 21st Contracting Squadron is conducting market research to determine interest and capability of potential sources. This notice does not constitute a commitment by the Government. All information submitted in response to this announcement is voluntary, and the Government will not pay for information requested nor will it compensate any respondent for any cost incurred in developing information provided to the Government. The 21st Contracting Squadron is requesting information for Lightning Protection Systems on Peterson Space Force Base, Colorado. Please see the attachments for information.",
+  "detail_text_length": 863,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71c799b239794fff90b448889951ca89/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/956f587e3bc443f297d5737072018699/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71c799b239794fff90b448889951ca89/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3fc4e0db83ad4945a1891c17d389fa99344ed257ec3a853749b067ff39392349.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3fc4e0db83ad4945a1891c17d389fa99344ed257ec3a853749b067ff39392349.xlsx",
+      "file_id": "71c799b239794fff90b448889951ca89",
+      "file_name": "Attachment+1+-+LPS+Product+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15507,
+      "sha256": "3fc4e0db83ad4945a1891c17d389fa99344ed257ec3a853749b067ff39392349"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/956f587e3bc443f297d5737072018699/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/58e81fc5c26f00afac175708aa10d5315c00ad7c32b07d2e7a1364217282250c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/58e81fc5c26f00afac175708aa10d5315c00ad7c32b07d2e7a1364217282250c.docx",
+      "file_id": "956f587e3bc443f297d5737072018699",
+      "file_name": "Sources+Sought+Lightning+Protection+System.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58842,
+      "sha256": "58e81fc5c26f00afac175708aa10d5315c00ad7c32b07d2e7a1364217282250c"
+    }
+  ],
+  "_mirror_hash": "bae8eb3b957a728d90dc3637a702e0e8242437a059315393b8026adec6d18063",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.243064+00:00"
+}

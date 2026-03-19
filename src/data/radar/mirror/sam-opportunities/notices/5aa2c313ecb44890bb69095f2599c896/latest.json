@@ -1,0 +1,57 @@
+{
+  "id": "sam-5aa2c313ecb44890bb69095f2599c896",
+  "title": "Demolition of Buildings 13140 & 13143 at Vandenberg SFB",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5aa2c313ecb44890bb69095f2599c896",
+  "opportunity_url": "https://sam.gov/opp/5aa2c313ecb44890bb69095f2599c896/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5aa2c313ecb44890bb69095f2599c896/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5aa2c313ecb44890bb69095f2599c896",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA461026_13140",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA4610 30 CONS PKB",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5aa2c313ecb44890bb69095f2599c896",
+  "detail_text": "The project requires the contractor to provide all labor, material, and equipment to completely demolish Building 13140 (a multi-story dormitory), including its slab and foundations. The scope also includes the removal and disposal of all supporting equipment from Building 13143, abatement of all identified Asbestos Containing Material (ACM) and Lead-Based Paint (LBP), termination of all associated utilities, and complete restoration of the site. A draft Performance Work Statement (PWS) is attached for review.",
+  "detail_text_length": 515,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/01d8e19447db4ea9929cc6945ae540a1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c48fa475023420c8136a6ceade70581/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/01d8e19447db4ea9929cc6945ae540a1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0f3496676415d37c061051a81f7fb021f8796f780bade42c9ccf470048758c05.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0f3496676415d37c061051a81f7fb021f8796f780bade42c9ccf470048758c05.pdf",
+      "file_id": "01d8e19447db4ea9929cc6945ae540a1",
+      "file_name": "Request+for+InformationDEMO.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 86637,
+      "sha256": "0f3496676415d37c061051a81f7fb021f8796f780bade42c9ccf470048758c05"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c48fa475023420c8136a6ceade70581/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/14c59dbe42748ffb7cd0f28f76179e6340e3034c9c5df5d97d82b7d677db1ef0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/14c59dbe42748ffb7cd0f28f76179e6340e3034c9c5df5d97d82b7d677db1ef0.pdf",
+      "file_id": "3c48fa475023420c8136a6ceade70581",
+      "file_name": "DemoPWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 686431,
+      "sha256": "14c59dbe42748ffb7cd0f28f76179e6340e3034c9c5df5d97d82b7d677db1ef0"
+    }
+  ],
+  "_mirror_hash": "a24e0b210ad671fbd83f3a4506838f0e51e8274a520fefcaa4e8969f9809809f",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.327360+00:00"
+}

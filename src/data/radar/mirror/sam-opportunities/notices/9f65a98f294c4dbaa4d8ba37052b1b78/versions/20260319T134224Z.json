@@ -1,0 +1,58 @@
+{
+  "id": "sam-9f65a98f294c4dbaa4d8ba37052b1b78",
+  "title": "MOGAS Chain Hoist - USS ESB Vessel",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9f65a98f294c4dbaa4d8ba37052b1b78",
+  "opportunity_url": "https://sam.gov/opp/9f65a98f294c4dbaa4d8ba37052b1b78/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9f65a98f294c4dbaa4d8ba37052b1b78/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9f65a98f294c4dbaa4d8ba37052b1b78",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N6817126QN029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SIGONELLA.NAVSUP FLC SIGONELLA NAPLES OFFICE",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9f65a98f294c4dbaa4d8ba37052b1b78",
+  "detail_text": "Please see attached Source Sought and DRAFT statement of work (SOW).",
+  "detail_text_length": 68,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1bb62665942148bb89afc5263ba79d41/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d843474adeb441084b712a078dbf14f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1bb62665942148bb89afc5263ba79d41/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79086b56e1274ad610288c46f972fecfd5c28bddbfc653534805216f954ad9bd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79086b56e1274ad610288c46f972fecfd5c28bddbfc653534805216f954ad9bd.pdf",
+      "file_id": "1bb62665942148bb89afc5263ba79d41",
+      "file_name": "Statement+of+Work+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 563757,
+      "sha256": "79086b56e1274ad610288c46f972fecfd5c28bddbfc653534805216f954ad9bd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d843474adeb441084b712a078dbf14f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d33e5ff981526d6569921d318eac8418a47dae3ee6b51ec13b69f008d6a34681.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d33e5ff981526d6569921d318eac8418a47dae3ee6b51ec13b69f008d6a34681.pdf",
+      "file_id": "5d843474adeb441084b712a078dbf14f",
+      "file_name": "2.01+Source+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 357706,
+      "sha256": "d33e5ff981526d6569921d318eac8418a47dae3ee6b51ec13b69f008d6a34681"
+    }
+  ],
+  "_mirror_hash": "e481da28055ed071f8bfaaec05c7d439791461c1ed323c457b958b8a07b75c39",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.001927+00:00"
+}

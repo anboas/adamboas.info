@@ -1,0 +1,48 @@
+{
+  "id": "sam-b86554eea8f440b4a7daa2d9c69ecad6",
+  "title": "Request for Information - One Way Attack Small Unmanned Aircraft Systems (sUAS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b86554eea8f440b4a7daa2d9c69ecad6",
+  "opportunity_url": "https://sam.gov/opp/b86554eea8f440b4a7daa2d9c69ecad6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b86554eea8f440b4a7daa2d9c69ecad6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b86554eea8f440b4a7daa2d9c69ecad6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8629-26-R-5009",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.INTELLIGENCE, SURVEILLANCE, RECONNAISSANCE.FA8629 AFLCMC WISK SOF/PR",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b86554eea8f440b4a7daa2d9c69ecad6",
+  "detail_text": "This Sources Sought Synopsis (SSS)/Request for Information (RFI) is issued for informational purposes and market research only; it does not constitute a solicitation. The Government will not reimburse any company or individual for any expenses associated with preparing/submitting information in response to this posting. The information provided may be used by the Government in developing its acquisition strategy, statement of work/statement of objectives, and/or performance specifications. Interested parties are responsible for adequately marking proprietary or competition sensitive information contained within their response as instructed later in this posting. The United States (US) Air Force Life Cycle Management Center (AFLCMC), Intelligence, Surveillance and Reconnaissance & Special Operations Forces (ISR & SOF) Directorate, Special Warfare (SW) Program Office (AFLCMC/WISN) is conducting market research to identify possible sources capable of providing an Electromagnetic Interference (EMI)-robust one-way attack (OWA) drone leveraging commercial off-the-shelf (COTS) components, a completed solution with in-house custom components and Electronic Safe and Arm Device (ESAD), that are National Defense Authorization Act (NDAA)-compliant and circumvent Chinese supply constraints. This system needs to integrate Global Positioning System (GPS), 4G/LTE/5G cellular connectivity, true frequency hopping between bands, and an optional repeater to extend operational range to over 20 kilometers (km). Designed for specialized individuals within Special Tactics Teams (STTs), this capability will enable the integration of First-Person View One-Way Attack (FPV OWA) into core mission sets, including Global Access, Precision Strike, and Personnel Recovery. PLEASE SEE ATTACHMENT FOR FURTHER DETAILS AND INFORMATION ON HOW TO RESPOND.",
+  "detail_text_length": 1846,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/619bf932ebb443b28476e1e9cff7cf74/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/619bf932ebb443b28476e1e9cff7cf74/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6acdbe6f4dcd0840fd1a39a5653b7149fe83797441938fb2d0e7c377bf5d5ad0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6acdbe6f4dcd0840fd1a39a5653b7149fe83797441938fb2d0e7c377bf5d5ad0.pdf",
+      "file_id": "619bf932ebb443b28476e1e9cff7cf74",
+      "file_name": "Request+for+Information+26R5009+-+One+Way+Attack+sUAS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 241479,
+      "sha256": "6acdbe6f4dcd0840fd1a39a5653b7149fe83797441938fb2d0e7c377bf5d5ad0"
+    }
+  ],
+  "_mirror_hash": "a305d6094b6747b7e442654d44f1c6100d12427d491d6eae3dad8ff7abc3f796",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.103303+00:00"
+}

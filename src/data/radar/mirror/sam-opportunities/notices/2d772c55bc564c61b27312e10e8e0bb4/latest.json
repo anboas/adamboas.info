@@ -1,0 +1,58 @@
+{
+  "id": "sam-2d772c55bc564c61b27312e10e8e0bb4",
+  "title": "Sources Sought Notice Mobile Production Vehicle",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d772c55bc564c61b27312e10e8e0bb4",
+  "opportunity_url": "https://sam.gov/opp/2d772c55bc564c61b27312e10e8e0bb4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2d772c55bc564c61b27312e10e8e0bb4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2d772c55bc564c61b27312e10e8e0bb4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HQ0516-FY-26-0004",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE MEDIA ACTIVITY (DMA).HQ DEFENSE MEDIA ACTIVITY",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d772c55bc564c61b27312e10e8e0bb4",
+  "detail_text": "The Department of War Information Activity (DWIA) is seeking information from industry to assist with market research identifying small businesses capable of providing support. The intent of this Sources Sought is for one (1) on-site 4K video production vehicle. Interested parties are responsible for adequately marking proprietary or competition sensitive information contained in their response. DWIA representatives may choose to meet with respondents and others who express interest and hold one-on-one discussions. Such discussions would only be intended to obtain further clarification of potential capability to meet the requirements, including any development and implementation risks. The Government reserves the right to use information provided by respondents for any purpose deemed necessary and legally appropriate. Any organization responding to this notice should ensure that its response is complete and sufficiently detailed. Information provided will be used to assess availability of the anticipated requirement and may lead to the development of a solicitation. Respondents are advised that the Government is under no obligation to provide feedback to respondents with respect to any information submitted.",
+  "detail_text_length": 1227,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dbde8bcb87449c9a58f0b464d220d97/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cecccf473a654d8ab3e2ce7bd6a86c67/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dbde8bcb87449c9a58f0b464d220d97/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a75413394069c1940374966cf80e6147c3e8e304dfea1386d4ccbc2463714b10.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a75413394069c1940374966cf80e6147c3e8e304dfea1386d4ccbc2463714b10.pdf",
+      "file_id": "6dbde8bcb87449c9a58f0b464d220d97",
+      "file_name": "A9+HQ0516-FY-26-0004_Sources+Sought+Notice_Mobile+Production+Vehicle.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 520863,
+      "sha256": "a75413394069c1940374966cf80e6147c3e8e304dfea1386d4ccbc2463714b10"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cecccf473a654d8ab3e2ce7bd6a86c67/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c2caed792ff64cafd499bc7d6e78de72328af6f8b219651789fe7419a666fcf.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c2caed792ff64cafd499bc7d6e78de72328af6f8b219651789fe7419a666fcf.docx",
+      "file_id": "cecccf473a654d8ab3e2ce7bd6a86c67",
+      "file_name": "A9+Attachment+1+Question+and+Answer.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20196,
+      "sha256": "2c2caed792ff64cafd499bc7d6e78de72328af6f8b219651789fe7419a666fcf"
+    }
+  ],
+  "_mirror_hash": "e61d8f520a63b0368718f590be2c6b93c41b86aa9edbeb2c5f47d9087f6b8a32",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.096755+00:00"
+}

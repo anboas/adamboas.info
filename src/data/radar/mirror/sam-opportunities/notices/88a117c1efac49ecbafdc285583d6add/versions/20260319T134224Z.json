@@ -1,0 +1,46 @@
+{
+  "id": "sam-88a117c1efac49ecbafdc285583d6add",
+  "title": "Grounds",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88a117c1efac49ecbafdc285583d6add",
+  "opportunity_url": "https://sam.gov/opp/88a117c1efac49ecbafdc285583d6add/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/88a117c1efac49ecbafdc285583d6add/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "88a117c1efac49ecbafdc285583d6add",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA302226Q0310",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3022 14 CONS LGCA",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88a117c1efac49ecbafdc285583d6add",
+  "detail_text": "The Contractor shall provide non-personal services, to include all personnel, equipment, tools, supervision, and other items and services necessary to ensure that grounds maintenance is performed at Columbus Air Force Base (CAFB) and Shuqualak Auxiliary Airfield, MS in a manner that will promote the growth of healthy grass, trees, shrubs, and plants and present a clean, neat, and professional appearance. This will be a five (5) year contract a base plus four (4) option years . This is a sources sought posting. No award will be made as a result of this post.",
+  "detail_text_length": 563,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b83cb74199a2429ab3abdc303c4d8720/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b83cb74199a2429ab3abdc303c4d8720/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cbfd31deb7e0029111f9c8fc295a0499da9cb01cbde7d0a4dc25b7e6ebe0a995.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cbfd31deb7e0029111f9c8fc295a0499da9cb01cbde7d0a4dc25b7e6ebe0a995.pdf",
+      "file_id": "b83cb74199a2429ab3abdc303c4d8720",
+      "file_name": "PWS+26+GROUNDS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 458810,
+      "sha256": "cbfd31deb7e0029111f9c8fc295a0499da9cb01cbde7d0a4dc25b7e6ebe0a995"
+    }
+  ],
+  "_mirror_hash": "a52afba6de370ba0feea07b6e74bc67a6185997aca9657afbf90a9660aeb8b27",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.353930+00:00"
+}

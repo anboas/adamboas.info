@@ -1,0 +1,70 @@
+{
+  "id": "sam-a9f0acb0aec34dc49f24f629a2e800c1",
+  "title": "Request for Information - Next Generation Penetrator Tail Kit Development",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9f0acb0aec34dc49f24f629a2e800c1",
+  "opportunity_url": "https://sam.gov/opp/a9f0acb0aec34dc49f24f629a2e800c1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a9f0acb0aec34dc49f24f629a2e800c1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a9f0acb0aec34dc49f24f629a2e800c1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "EBDA_NGPTK_RFI",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8681  AFLCMC EBD",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9f0acb0aec34dc49f24f629a2e800c1",
+  "detail_text": "18 March 2026 - Please see posted questions and answers. 16 March 2026 - Please see updated RFI dated 16 March; we have extended the request for CUI as well as the response date for submissions. This is an update to a previous Request for Information (RFI) posted 18 November 2025 for Notice ID: EBDA_RFI_LCP_01. The RFI has been updated to better understand industry capabilities. Please see attached RFI.",
+  "detail_text_length": 406,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce1b85581c724aefb41f8b8be6cd701f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eba535dbdff74c5eb691fe82661a5344/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edf28070dfe045cb9d895dc04396ea62/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce1b85581c724aefb41f8b8be6cd701f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c33713feb60e6df4bbd0a3c57737ecadd5f7459df549fc80e2c751400729680.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c33713feb60e6df4bbd0a3c57737ecadd5f7459df549fc80e2c751400729680.pdf",
+      "file_id": "ce1b85581c724aefb41f8b8be6cd701f",
+      "file_name": "Next+Generation+Penetrator+Tail+kit_Phase+1B+RFI+Amend+1_16+Mar+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 246544,
+      "sha256": "2c33713feb60e6df4bbd0a3c57737ecadd5f7459df549fc80e2c751400729680"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eba535dbdff74c5eb691fe82661a5344/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/681236d639217df092eb1d63eeb00bc7c6357bac1132fa12113e700e88d32dbd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/681236d639217df092eb1d63eeb00bc7c6357bac1132fa12113e700e88d32dbd.pdf",
+      "file_id": "eba535dbdff74c5eb691fe82661a5344",
+      "file_name": "Questions_Answers_18Mar2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 89030,
+      "sha256": "681236d639217df092eb1d63eeb00bc7c6357bac1132fa12113e700e88d32dbd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/edf28070dfe045cb9d895dc04396ea62/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aac70a9b02532852383c7cb511f6d01699e94d66668532b3b27aa2de38d01761.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aac70a9b02532852383c7cb511f6d01699e94d66668532b3b27aa2de38d01761.pdf",
+      "file_id": "edf28070dfe045cb9d895dc04396ea62",
+      "file_name": "Next+Generation+Penetrator+Tail+kit_Phase+1B+RFI_23+Feb+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 244392,
+      "sha256": "aac70a9b02532852383c7cb511f6d01699e94d66668532b3b27aa2de38d01761"
+    }
+  ],
+  "_mirror_hash": "16023d5e9555041ede126b29ba8bd1b4a0cc9613c5b8f79781ab3343a33c20f8",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.054534+00:00"
+}

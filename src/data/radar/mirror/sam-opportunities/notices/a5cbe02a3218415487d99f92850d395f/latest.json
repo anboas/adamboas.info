@@ -1,0 +1,57 @@
+{
+  "id": "sam-a5cbe02a3218415487d99f92850d395f",
+  "title": "Bakersfield CBOC Activation Stretchers",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5cbe02a3218415487d99f92850d395f",
+  "opportunity_url": "https://sam.gov/opp/a5cbe02a3218415487d99f92850d395f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a5cbe02a3218415487d99f92850d395f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a5cbe02a3218415487d99f92850d395f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26Q0097",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5cbe02a3218415487d99f92850d395f",
+  "detail_text": "Stretcher, Mobile, CRS, 9 Position Electric Stretcher Must be electric powered lift Must include Chaperone bed exit system- two zone alarm Shall have big wheel to reduce start up push force and steering Maximum 700 lb. weight capacity Must be capable of less than 21-inch low height Must have Height range: high 34\" and low 20.75\" Must include litter-mounted oxygen bottle holder Must have center-locking brake system with dual end activators Must have power washable design Must have dual, side-mounted foot control hydraulics with uni-lower pedal Must have dual end brake/steer controls Must have glide away side rails Must include four (4) integrated IV receptacles Must be capable of ±17°Trendelenburg Must include five (5) 8-inch omni surface casters with integrated wheel covers Must include pneumatic backrest/stationary foot Must have thermoformed ABS base Must include integrated utility tray Must include integrated transfer board Must have electric patient controls Must include lift assist backrest Must be capable of recovery chair position Dimension: 35”D x 85”W x 33”H Quantity: 2",
+  "detail_text_length": 1095,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e449872d0c54050b5efa34e7d70b74c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9fd1788041e45c881abbda362d39fd6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e449872d0c54050b5efa34e7d70b74c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/51dfd5f72a4cdb40ff122247324c35bac2665004af00dd3ada6c1b8dbe5a6a82.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/51dfd5f72a4cdb40ff122247324c35bac2665004af00dd3ada6c1b8dbe5a6a82.docx",
+      "file_id": "8e449872d0c54050b5efa34e7d70b74c",
+      "file_name": "PKG+B035+-+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 37084,
+      "sha256": "51dfd5f72a4cdb40ff122247324c35bac2665004af00dd3ada6c1b8dbe5a6a82"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9fd1788041e45c881abbda362d39fd6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/24bdf32693ed35badae4da4c92459ae058dc4bbb030f151d9f4162e2ea0ca70c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/24bdf32693ed35badae4da4c92459ae058dc4bbb030f151d9f4162e2ea0ca70c.pdf",
+      "file_id": "f9fd1788041e45c881abbda362d39fd6",
+      "file_name": "36C24W26Q0097.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 598196,
+      "sha256": "24bdf32693ed35badae4da4c92459ae058dc4bbb030f151d9f4162e2ea0ca70c"
+    }
+  ],
+  "_mirror_hash": "7c8e7b9f837c0671db72aa9ff6dc37d0bb05d97931dab4b35e22f40cae9a311c",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.228865+00:00"
+}

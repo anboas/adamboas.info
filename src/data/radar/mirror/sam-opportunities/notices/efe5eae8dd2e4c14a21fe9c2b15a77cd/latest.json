@@ -1,0 +1,57 @@
+{
+  "id": "sam-efe5eae8dd2e4c14a21fe9c2b15a77cd",
+  "title": "Uninterruptible Power Systems (UPS) Preventive Maintenance Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efe5eae8dd2e4c14a21fe9c2b15a77cd",
+  "opportunity_url": "https://sam.gov/opp/efe5eae8dd2e4c14a21fe9c2b15a77cd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/efe5eae8dd2e4c14a21fe9c2b15a77cd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "efe5eae8dd2e4c14a21fe9c2b15a77cd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC26P0000041905",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FDO FT HOOD",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efe5eae8dd2e4c14a21fe9c2b15a77cd",
+  "detail_text": "Please see the attached DRAFT PWS.",
+  "detail_text_length": 34,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/600af4f1407b456aa16dd44a36774ffb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef9e811c67654cd7af03b6a3eee09110/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/600af4f1407b456aa16dd44a36774ffb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/769c54e6ea7c8c3a4228c33deab40bc01fe4a635fc1592f9064dc6dd26d52c89.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/769c54e6ea7c8c3a4228c33deab40bc01fe4a635fc1592f9064dc6dd26d52c89.docx",
+      "file_id": "600af4f1407b456aa16dd44a36774ffb",
+      "file_name": "DRAFT+PWS_UPS_18MAR.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90935,
+      "sha256": "769c54e6ea7c8c3a4228c33deab40bc01fe4a635fc1592f9064dc6dd26d52c89"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef9e811c67654cd7af03b6a3eee09110/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/172c0460f29066ed02e42189105640ce5208b21580b24f5f960059c97db54b04.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/172c0460f29066ed02e42189105640ce5208b21580b24f5f960059c97db54b04.docx",
+      "file_id": "ef9e811c67654cd7af03b6a3eee09110",
+      "file_name": "Sources+Sought_UPS_18MAR.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 69859,
+      "sha256": "172c0460f29066ed02e42189105640ce5208b21580b24f5f960059c97db54b04"
+    }
+  ],
+  "_mirror_hash": "5efdbb343df973e7912a856bb3226fe436c41e431b109c3029e824ec8491a234",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.279841+00:00"
+}

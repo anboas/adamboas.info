@@ -1,0 +1,46 @@
+{
+  "id": "sam-44768fba091947b6a5d394479a5db768",
+  "title": "macOS Workstations",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=44768fba091947b6a5d394479a5db768",
+  "opportunity_url": "https://sam.gov/opp/44768fba091947b6a5d394479a5db768/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/44768fba091947b6a5d394479a5db768/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "44768fba091947b6a5d394479a5db768",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA251726SS0006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=44768fba091947b6a5d394479a5db768",
+  "detail_text": "The Peterson Space Force Base (PSFB) 21st Contracting Squadron is requesting information from vendors that provide the subject part number. The North American Industry Classification System (NAICS) code is 334111 - Electronic Computer Manufacturing, and the small business size standard is 1,250 Employees .",
+  "detail_text_length": 307,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6596f4c534f46b28716513afce07244/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6596f4c534f46b28716513afce07244/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3fb95164d585f56e9ce9e375182a19802560eb291849c8942810f080b00c12e9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3fb95164d585f56e9ce9e375182a19802560eb291849c8942810f080b00c12e9.pdf",
+      "file_id": "c6596f4c534f46b28716513afce07244",
+      "file_name": "Sources+Sought+macOS+Workstations.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 164988,
+      "sha256": "3fb95164d585f56e9ce9e375182a19802560eb291849c8942810f080b00c12e9"
+    }
+  ],
+  "_mirror_hash": "a7b2e90aa75f0c4fd16c20ac0193d8b9e9110d1062be25f1e6fb62ca0712df2a",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.219121+00:00"
+}

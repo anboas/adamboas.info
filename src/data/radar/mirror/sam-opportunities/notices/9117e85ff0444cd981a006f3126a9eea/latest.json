@@ -1,0 +1,59 @@
+{
+  "id": "sam-9117e85ff0444cd981a006f3126a9eea",
+  "title": "Request for Information - Traumatic Brain Injury (TBI) Registry and Rehabilitation Database",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9117e85ff0444cd981a006f3126a9eea",
+  "opportunity_url": "https://sam.gov/opp/9117e85ff0444cd981a006f3126a9eea/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9117e85ff0444cd981a006f3126a9eea/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9117e85ff0444cd981a006f3126a9eea",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI-2026-03-018-01",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.SAC FREDERICK (36C10X)",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9117e85ff0444cd981a006f3126a9eea",
+  "detail_text": "The Department of Veterans Affairs (VA) is seeking information from qualified sources capable of supporting the Traumatic Brain Injury (TBI) Veterans Health Registry and the VA Polytrauma Rehabilitation Center–Traumatic Brain Injury Model Systems (PRC‑TBIMS) longitudinal research database. The contemplated effort includes program management; biannual processing and reporting of VA data on Operation Enduring Freedom/Operation Iraqi Freedom and post‑9/11 era Veterans with TBI; development and maintenance of a limited data set research database behind the VA firewall; data quality monitoring and quarterly data quality reports; statistical and methodological consultation; and support for knowledge translation activities, training, and meetings with VA Polytrauma Rehabilitation Centers and TBIMS partners. The anticipated period of performance is five years and may include both on‑site and virtual support; this RFI is issued solely for information and planning purposes and does not constitute a solicitation or commitment by the Government.",
+  "detail_text_length": 1049,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29b0737653f945679aa32863e44b9fe1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9a608c13e634279ac14412349fa0b42/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29b0737653f945679aa32863e44b9fe1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/78959c8531bfa7a0a74eb7565e18f27b34a457c76719e2a283564cf09ab9899a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/78959c8531bfa7a0a74eb7565e18f27b34a457c76719e2a283564cf09ab9899a.pdf",
+      "file_id": "29b0737653f945679aa32863e44b9fe1",
+      "file_name": "RFI-2026-03-018-01+SOURCES+SOUGHT+NOTICE.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169583,
+      "sha256": "78959c8531bfa7a0a74eb7565e18f27b34a457c76719e2a283564cf09ab9899a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9a608c13e634279ac14412349fa0b42/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4407f99ed9958c126cfa46fb4cee31137ff20b1201c3ed349598131550e23fcd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4407f99ed9958c126cfa46fb4cee31137ff20b1201c3ed349598131550e23fcd.pdf",
+      "file_id": "b9a608c13e634279ac14412349fa0b42",
+      "file_name": "TBIMS+-+TBI+Registry+PWS+-draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 444758,
+      "sha256": "4407f99ed9958c126cfa46fb4cee31137ff20b1201c3ed349598131550e23fcd"
+    }
+  ],
+  "_mirror_hash": "e99fca8bdcff3da229beff9f4d7939b9af2c1dd67c9421ada3bfeb31ead02819",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.076098+00:00"
+}

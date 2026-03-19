@@ -1,0 +1,47 @@
+{
+  "id": "sam-a026fcedf29a454cae131255542ca205",
+  "title": "Presolicitation 19KS7026Q0025, Air Purifier",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a026fcedf29a454cae131255542ca205",
+  "opportunity_url": "https://sam.gov/opp/a026fcedf29a454cae131255542ca205/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a026fcedf29a454cae131255542ca205/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a026fcedf29a454cae131255542ca205",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "19KS7026Q0025",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY SEOUL",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a026fcedf29a454cae131255542ca205",
+  "detail_text": "Note that this solicitation is not ready to be issued as of this date. The Embassy of the United States in Seoul, Korea requires 70 air purifiers. The Government plans to issue the solicitation at the beginning of April 2026. The solicitation will be posted on the SAM.gov. No paper copies will be made available. See the RFQ for the actual response date and for specific quotation requirements.",
+  "detail_text_length": 395,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68341ea35aa04f288b0a82cf50ddf292/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68341ea35aa04f288b0a82cf50ddf292/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e7e6aade9cf254a5998305077402316b8c1cd08740d6963be483eef777ff0328.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e7e6aade9cf254a5998305077402316b8c1cd08740d6963be483eef777ff0328.pdf",
+      "file_id": "68341ea35aa04f288b0a82cf50ddf292",
+      "file_name": "Pre-Solicitation+Notice+-+19KS7026Q0025+Air+Purifier.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148227,
+      "sha256": "e7e6aade9cf254a5998305077402316b8c1cd08740d6963be483eef777ff0328"
+    }
+  ],
+  "_mirror_hash": "8b444c799d52fb621810ab74b2a5a803495568521bce668c66ef5986cc5bb80f",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.090263+00:00"
+}

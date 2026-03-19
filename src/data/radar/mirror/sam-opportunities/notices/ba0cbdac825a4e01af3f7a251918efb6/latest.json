@@ -1,0 +1,90 @@
+{
+  "id": "sam-ba0cbdac825a4e01af3f7a251918efb6",
+  "title": "00161 - Form 5500 Data Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba0cbdac825a4e01af3f7a251918efb6",
+  "opportunity_url": "https://sam.gov/opp/ba0cbdac825a4e01af3f7a251918efb6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ba0cbdac825a4e01af3f7a251918efb6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ba0cbdac825a4e01af3f7a251918efb6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "OAA-26-00161",
+  "agency_path": "LABOR, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION AND MANAGEMENT.DOL - CAS DIVISION 1 PROCUREMENT",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba0cbdac825a4e01af3f7a251918efb6",
+  "detail_text": "***Amendment 01; The purpose of this Amendment is to incorporate both the responses to vendor questions and a revised PWS. Response Time has been extended until March 30, 2026 at 2:00PM EST. The U.S. Department of Labor, Employee Benefit Security Administration (EBSA), seeks information/solutions for Form 5500 Data Subscription Services in accordance with the attached Performance Work Statement (PWS). This is a Request for Information (RFI). Please submit questions using Attachment 01 - QA Log NLT March 11, 2026. Responses to the RFI are due on March 24, 2026 at 2:00PM EST.",
+  "detail_text_length": 580,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d2e5820ee5548439a9365719420423e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5c870f5ffc1f434da58607096f7c2dcf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8146759d81dc42a1a778525da12b4f11/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c96297552c62493f9dcbc5292bb95690/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca27d23f6d6d478895b22dd537ef7b71/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d2e5820ee5548439a9365719420423e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/196ebc584515ca2d017d775bb6f392a3d7457d5562bf93a8334e9d3234df8f88.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/196ebc584515ca2d017d775bb6f392a3d7457d5562bf93a8334e9d3234df8f88.docx",
+      "file_id": "1d2e5820ee5548439a9365719420423e",
+      "file_name": "Revised+PWS+Form+5500+Data+Subscription+and+Analyst+Support.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 68954,
+      "sha256": "196ebc584515ca2d017d775bb6f392a3d7457d5562bf93a8334e9d3234df8f88"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5c870f5ffc1f434da58607096f7c2dcf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/687a0eaff25a542961a4f6e751400ff211b2d8e3a75dcd2370370cca6197d277.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/687a0eaff25a542961a4f6e751400ff211b2d8e3a75dcd2370370cca6197d277.docx",
+      "file_id": "5c870f5ffc1f434da58607096f7c2dcf",
+      "file_name": "RFI+PWS+Form+5500+Data+Subscription+and+Analyst+Support.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 44003,
+      "sha256": "687a0eaff25a542961a4f6e751400ff211b2d8e3a75dcd2370370cca6197d277"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8146759d81dc42a1a778525da12b4f11/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0357f017f19b3823db5588b9fad45583db4f6f8751dc72346cf565146b5377c.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0357f017f19b3823db5588b9fad45583db4f6f8751dc72346cf565146b5377c.xlsx",
+      "file_id": "8146759d81dc42a1a778525da12b4f11",
+      "file_name": "Attachment+01+-+QA+Log+-+Form+5500+-+Responses+to+Vendor+Questions+-3.18.2026-+r1.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19836,
+      "sha256": "b0357f017f19b3823db5588b9fad45583db4f6f8751dc72346cf565146b5377c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c96297552c62493f9dcbc5292bb95690/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/59a30183a6274971b41a28e709fa84fd873e0693d5b2a1871bc0ab671e2c9eee.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/59a30183a6274971b41a28e709fa84fd873e0693d5b2a1871bc0ab671e2c9eee.doc",
+      "file_id": "c96297552c62493f9dcbc5292bb95690",
+      "file_name": "RFI+-+Form+5500.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153088,
+      "sha256": "59a30183a6274971b41a28e709fa84fd873e0693d5b2a1871bc0ab671e2c9eee"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ca27d23f6d6d478895b22dd537ef7b71/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c5eaa9e779ce93b070bc2f76ea0cebb50d6cb85d0e4d6fb17455581b0fd7fe6.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c5eaa9e779ce93b070bc2f76ea0cebb50d6cb85d0e4d6fb17455581b0fd7fe6.xlsx",
+      "file_id": "ca27d23f6d6d478895b22dd537ef7b71",
+      "file_name": "Attachment+01+-+QA+Log+-+Form+5500.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18359,
+      "sha256": "2c5eaa9e779ce93b070bc2f76ea0cebb50d6cb85d0e4d6fb17455581b0fd7fe6"
+    }
+  ],
+  "_mirror_hash": "3a95b18e9ff3a86b1644cc03a0d0911cca83f54cc6bb824bac04c0a4e99e90d1",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.294819+00:00"
+}

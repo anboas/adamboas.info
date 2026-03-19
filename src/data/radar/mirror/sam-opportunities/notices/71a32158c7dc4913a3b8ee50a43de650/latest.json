@@ -1,0 +1,46 @@
+{
+  "id": "sam-71a32158c7dc4913a3b8ee50a43de650",
+  "title": "Tallahassee National Cemetery, National Shrine Irrigation Project",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71a32158c7dc4913a3b8ee50a43de650",
+  "opportunity_url": "https://sam.gov/opp/71a32158c7dc4913a3b8ee50a43de650/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/71a32158c7dc4913a3b8ee50a43de650/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "71a32158c7dc4913a3b8ee50a43de650",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C78626B0013",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CEMETERY ADMIN (36C786)",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71a32158c7dc4913a3b8ee50a43de650",
+  "detail_text": "See attached presolicitation notice",
+  "detail_text_length": 35,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69b7a281ae3547c0946e85c8f122a30e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69b7a281ae3547c0946e85c8f122a30e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f93d368086ef7dacf7b73c528239a5788ea33c762ecce95bca3d4140dfde1be7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f93d368086ef7dacf7b73c528239a5788ea33c762ecce95bca3d4140dfde1be7.pdf",
+      "file_id": "69b7a281ae3547c0946e85c8f122a30e",
+      "file_name": "S02_36C78626B0013+Presolicitation+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 155283,
+      "sha256": "f93d368086ef7dacf7b73c528239a5788ea33c762ecce95bca3d4140dfde1be7"
+    }
+  ],
+  "_mirror_hash": "29048c676919247e9af45aa7af34adfa723d7a584c398096f3e3b309b7d47813",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.405526+00:00"
+}

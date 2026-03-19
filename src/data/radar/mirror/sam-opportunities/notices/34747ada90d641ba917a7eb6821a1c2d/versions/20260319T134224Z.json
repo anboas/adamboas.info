@@ -1,0 +1,46 @@
+{
+  "id": "sam-34747ada90d641ba917a7eb6821a1c2d",
+  "title": "GE Muse EKG Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=34747ada90d641ba917a7eb6821a1c2d",
+  "opportunity_url": "https://sam.gov/opp/34747ada90d641ba917a7eb6821a1c2d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/34747ada90d641ba917a7eb6821a1c2d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "34747ada90d641ba917a7eb6821a1c2d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0XXX",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=34747ada90d641ba917a7eb6821a1c2d",
+  "detail_text": "**This is solely for Market Research purposes** Please see attached Purchase Description for details. If interested please send capabilities statement to Medin Boljevic at medin.boljevic@va.gov",
+  "detail_text_length": 193,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f3611b3b2944308bc62763e1a0ac3a8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f3611b3b2944308bc62763e1a0ac3a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b933c027362fab23c07da0e46baff47f87a850f597203d7331163842d5199a06.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b933c027362fab23c07da0e46baff47f87a850f597203d7331163842d5199a06.docx",
+      "file_id": "4f3611b3b2944308bc62763e1a0ac3a8",
+      "file_name": "Purchase+Description+-+GE+Muse+-+DRAFT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99110,
+      "sha256": "b933c027362fab23c07da0e46baff47f87a850f597203d7331163842d5199a06"
+    }
+  ],
+  "_mirror_hash": "345ad3089421d4b5ca99e2a54753285d70b719cfc1e490886762624c96dc9a4a",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.236481+00:00"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "sam-ca6b87dbd7c84414aafe1b0d71d96bc4",
+  "title": "MOBILITY PROTOTYPING",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca6b87dbd7c84414aafe1b0d71d96bc4",
+  "opportunity_url": "https://sam.gov/opp/ca6b87dbd7c84414aafe1b0d71d96bc4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ca6b87dbd7c84414aafe1b0d71d96bc4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ca6b87dbd7c84414aafe1b0d71d96bc4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0016426RMP01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CRANE",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca6b87dbd7c84414aafe1b0d71d96bc4",
+  "detail_text": "Mobility Prototyping MAC Solicitation",
+  "detail_text_length": 37,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5fc0f95237284345a702179caf5d45d3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7cc40e462db24f19bcb4b6b27089dfd8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92f0c431d19f41acb8de37dc73f495e6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf27dd04e0574c84b1032c10198179f7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6fe685363374c75b4de9a495d4b84da/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5fc0f95237284345a702179caf5d45d3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c91c6a36c6b48abac9076a3d3141431ff58234f57d707456ae31120f4e23ad7e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c91c6a36c6b48abac9076a3d3141431ff58234f57d707456ae31120f4e23ad7e.docx",
+      "file_id": "5fc0f95237284345a702179caf5d45d3",
+      "file_name": "Attachment+1_Past+Performance+Matrix.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 32229,
+      "sha256": "c91c6a36c6b48abac9076a3d3141431ff58234f57d707456ae31120f4e23ad7e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7cc40e462db24f19bcb4b6b27089dfd8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ac5eee880097423b8765a7ed78d97dcfb8cf3c5c5f036aef7cb61bd4a4c797a0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ac5eee880097423b8765a7ed78d97dcfb8cf3c5c5f036aef7cb61bd4a4c797a0.docx",
+      "file_id": "7cc40e462db24f19bcb4b6b27089dfd8",
+      "file_name": "Attachment+2_Past+Performance+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 35590,
+      "sha256": "ac5eee880097423b8765a7ed78d97dcfb8cf3c5c5f036aef7cb61bd4a4c797a0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92f0c431d19f41acb8de37dc73f495e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3a361f7a20a51ccfbf330a17ac6382f8b7e955414e4e4878d17a8b7e9099eabf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3a361f7a20a51ccfbf330a17ac6382f8b7e955414e4e4878d17a8b7e9099eabf.pdf",
+      "file_id": "92f0c431d19f41acb8de37dc73f495e6",
+      "file_name": "Attachment+3_QASP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 248249,
+      "sha256": "3a361f7a20a51ccfbf330a17ac6382f8b7e955414e4e4878d17a8b7e9099eabf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf27dd04e0574c84b1032c10198179f7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/112b70f622b75c1f10400da468cd9af0ec8e54da6ae74ef6470d64e889f536b3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/112b70f622b75c1f10400da468cd9af0ec8e54da6ae74ef6470d64e889f536b3.pdf",
+      "file_id": "bf27dd04e0574c84b1032c10198179f7",
+      "file_name": "Solicitation+-+N0016426RMP01.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2637981,
+      "sha256": "112b70f622b75c1f10400da468cd9af0ec8e54da6ae74ef6470d64e889f536b3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6fe685363374c75b4de9a495d4b84da/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7f5e3eded5118ca1c663575da3dcab5367e0cdaa3232cf536b7a5731c5f6825.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7f5e3eded5118ca1c663575da3dcab5367e0cdaa3232cf536b7a5731c5f6825.pdf",
+      "file_id": "d6fe685363374c75b4de9a495d4b84da",
+      "file_name": "Exhibit+A_CDRLs+A001-A018.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 693105,
+      "sha256": "f7f5e3eded5118ca1c663575da3dcab5367e0cdaa3232cf536b7a5731c5f6825"
+    }
+  ],
+  "_mirror_hash": "712d0619fd179de79f54d4bc640308cec81239777d2322dd611d45bc5fa32530",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:08.992630+00:00"
+}

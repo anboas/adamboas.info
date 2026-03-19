@@ -1,0 +1,46 @@
+{
+  "id": "sam-7280fcab148f4a4d9904cff2c49a68fd",
+  "title": "GEARBOX ASSEMBLY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7280fcab148f4a4d9904cff2c49a68fd",
+  "opportunity_url": "https://sam.gov/opp/7280fcab148f4a4d9904cff2c49a68fd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7280fcab148f4a4d9904cff2c49a68fd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7280fcab148f4a4d9904cff2c49a68fd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601242",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7280fcab148f4a4d9904cff2c49a68fd",
+  "detail_text": "See Attachment",
+  "detail_text_length": 14,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbf77b8379e14b48833b673d1262390c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbf77b8379e14b48833b673d1262390c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9d2e9e177915e6de5d723aa4e343cc5650a70e21566097e8254747b559fd0e09.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9d2e9e177915e6de5d723aa4e343cc5650a70e21566097e8254747b559fd0e09.pdf",
+      "file_id": "fbf77b8379e14b48833b673d1262390c",
+      "file_name": "FD20302601242.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 66065,
+      "sha256": "9d2e9e177915e6de5d723aa4e343cc5650a70e21566097e8254747b559fd0e09"
+    }
+  ],
+  "_mirror_hash": "8838b60233bc3532c9e937fb6359426778b7ef223463ea291defd72dfa9d8f11",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.237023+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-59e70967796244389fd887cc8dca1fe3",
+  "title": "FMSNA Improvement Engineering Plan",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=59e70967796244389fd887cc8dca1fe3",
+  "opportunity_url": "https://sam.gov/opp/59e70967796244389fd887cc8dca1fe3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/59e70967796244389fd887cc8dca1fe3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "59e70967796244389fd887cc8dca1fe3",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "26-PD-42-0048",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=59e70967796244389fd887cc8dca1fe3",
+  "detail_text": "NSWCPD anticipates awarding a sole source task order for FMSNA Exhaust System Piping Structural Analysis Plan services as described in the attached statement of work (SOW) to FMSNA via Basic Ordering Agreement (BOA) N64498-23-F-4304.",
+  "detail_text_length": 233,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/485e4f5da63d460aaaf54edf78774b83/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/485e4f5da63d460aaaf54edf78774b83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d20c12a036c06e399cd8a7530b23899fd859127a5b1718480757a43808bddf5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d20c12a036c06e399cd8a7530b23899fd859127a5b1718480757a43808bddf5.docx",
+      "file_id": "485e4f5da63d460aaaf54edf78774b83",
+      "file_name": "TO+006+SOW_12.05.2025.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64804,
+      "sha256": "8d20c12a036c06e399cd8a7530b23899fd859127a5b1718480757a43808bddf5"
+    }
+  ],
+  "_mirror_hash": "3017524d272754ee48f4f1e99402981defadbba7c9bdf97e20502f28a96d3b63",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:08.985091+00:00"
+}

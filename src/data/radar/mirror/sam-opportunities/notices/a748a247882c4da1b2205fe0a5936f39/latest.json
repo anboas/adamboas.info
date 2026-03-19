@@ -1,0 +1,68 @@
+{
+  "id": "sam-a748a247882c4da1b2205fe0a5936f39",
+  "title": "0170 - SFA Actuarial Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a748a247882c4da1b2205fe0a5936f39",
+  "opportunity_url": "https://sam.gov/opp/a748a247882c4da1b2205fe0a5936f39/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a748a247882c4da1b2205fe0a5936f39/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a748a247882c4da1b2205fe0a5936f39",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "OAA-26-00170",
+  "agency_path": "LABOR, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION AND MANAGEMENT.DOL - CAS DIVISION 1 PROCUREMENT",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a748a247882c4da1b2205fe0a5936f39",
+  "detail_text": "The U.S. Department of Labor, Employee Benefit Security Administration (EBSA), seeks information/solutions for Special Financial Assistance (SFA) Program – Casework Actuarial Services in accordance with the attached Performance Work Statement (PWS). This is a Request for Information (RFI). Please submit questions using Attachment 01 - QA Log NLT March 24, 2026. Responses to the RFI are due on April 03, 2026 at 2:00PM EST.",
+  "detail_text_length": 425,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d1a0f5d680f4753be5299c2178a7418/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91e447bfff2b45af86e13c4cdc814f5a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebd8967d25ed4a9fa703d0304a4e7b03/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d1a0f5d680f4753be5299c2178a7418/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/976784839cbeab019de128beacef4b56c531e6c356c73da1a856be23004325cb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/976784839cbeab019de128beacef4b56c531e6c356c73da1a856be23004325cb.docx",
+      "file_id": "2d1a0f5d680f4753be5299c2178a7418",
+      "file_name": "SFA+and+Casework+Actuarial+PWS+-1-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 68544,
+      "sha256": "976784839cbeab019de128beacef4b56c531e6c356c73da1a856be23004325cb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91e447bfff2b45af86e13c4cdc814f5a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9c0673199733573f865389f6e71d8e95f50d13b9135a690666d044e76abcbdf2.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9c0673199733573f865389f6e71d8e95f50d13b9135a690666d044e76abcbdf2.doc",
+      "file_id": "91e447bfff2b45af86e13c4cdc814f5a",
+      "file_name": "RFI+-+SFA+Actuarial+Services.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153600,
+      "sha256": "9c0673199733573f865389f6e71d8e95f50d13b9135a690666d044e76abcbdf2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebd8967d25ed4a9fa703d0304a4e7b03/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/26117488f9e6e474fb2da30d6cb70f50f156441da13e217753c3d50248b5fee6.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/26117488f9e6e474fb2da30d6cb70f50f156441da13e217753c3d50248b5fee6.xlsx",
+      "file_id": "ebd8967d25ed4a9fa703d0304a4e7b03",
+      "file_name": "Attachment+01+-+QA+Log+-+SFA+Casework.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18373,
+      "sha256": "26117488f9e6e474fb2da30d6cb70f50f156441da13e217753c3d50248b5fee6"
+    }
+  ],
+  "_mirror_hash": "4e526ac65afbf3f380b6f6771175fe6958c9585e62a75dafd83579c06999311d",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.351996+00:00"
+}

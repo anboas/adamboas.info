@@ -1,0 +1,46 @@
+{
+  "id": "sam-a4a49fa1ac714fd8bcb249ea1b71ec41",
+  "title": "EACH Newborn Screening",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4a49fa1ac714fd8bcb249ea1b71ec41",
+  "opportunity_url": "https://sam.gov/opp/a4a49fa1ac714fd8bcb249ea1b71ec41/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a4a49fa1ac714fd8bcb249ea1b71ec41/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a4a49fa1ac714fd8bcb249ea1b71ec41",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W81K0026QA094",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY MEDICAL COMMAND.US ARMY HEALTH CONTRACTING ACTIVITY.W40M MRC0 WEST",
+  "posted_date": "2026-03-18",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4a49fa1ac714fd8bcb249ea1b71ec41",
+  "detail_text": "Medical Readiness Contracting Office - West (MRCO-W), Fort Bliss, TX Cell, intends to award a sole-source contract for the following: Evans Army Community Hospital (EACH), Fort Carson, CO, requires newborn screening testing. See attached draft performance work statement (PWS) for full details. A five-year contract (base period of one year and four one-year options) is anticipated, to begin 1 April 2026. Annual Workload estimate: 900 newborn screenings, 900 hearing screenings, and 12 birth certificate corrections.",
+  "detail_text_length": 518,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cbb0f3d5f9b4b15a4a4de03d3834ab7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cbb0f3d5f9b4b15a4a4de03d3834ab7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e9f774082b7c5583fa33d8132a8febeb8731dd275640930fea304d3e64827f58.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e9f774082b7c5583fa33d8132a8febeb8731dd275640930fea304d3e64827f58.pdf",
+      "file_id": "1cbb0f3d5f9b4b15a4a4de03d3834ab7",
+      "file_name": "I.A.02+Justification+and+Authorization+-+Approved.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1086651,
+      "sha256": "e9f774082b7c5583fa33d8132a8febeb8731dd275640930fea304d3e64827f58"
+    }
+  ],
+  "_mirror_hash": "9ca6be1727fe30f2b8ad0c6be1d2b354151e5e406e54d0a95a42c04ed75a9bc8",
+  "_mirror_run_id": "20260319T134224Z",
+  "_mirror_recorded_at": "2026-03-19T13:47:09.234632+00:00"
+}
