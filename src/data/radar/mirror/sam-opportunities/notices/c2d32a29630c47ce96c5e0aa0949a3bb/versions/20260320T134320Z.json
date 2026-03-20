@@ -1,0 +1,46 @@
+{
+  "id": "sam-c2d32a29630c47ce96c5e0aa0949a3bb",
+  "title": "Medical Case Management Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2d32a29630c47ce96c5e0aa0949a3bb",
+  "opportunity_url": "https://sam.gov/opp/c2d32a29630c47ce96c5e0aa0949a3bb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c2d32a29630c47ce96c5e0aa0949a3bb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c2d32a29630c47ce96c5e0aa0949a3bb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912JF26S0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO AR.USPFO AR PROCUREMENT.W7MW USPFO ACTIVITY AR ARNG",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2d32a29630c47ce96c5e0aa0949a3bb",
+  "detail_text": "The Arkansas National Guard intends to re-compete an ongoing contract for Medical Case Management Services. The contractor shall provide all personnel, materials, supervision, and quality control necessary, except as specified in Paragraph 3.0 as Government Furnished, to perform Case Management Services , as defined in this PWS. The purpose of this requirement is to provide Medical and Dental Non-clinical Case Management and administrative Care Coordinator staffing in support of Individual Medical Readiness (IMR). This requirement is designed to be flexible, responsive, and meet the ever-evolving needs of the government. DoDI 6025.19 establishes aggressive quarterly and annual metric goals for the separate IMR elements and for the overall IMR category of Fully Medically Ready (FMR) soldiers. The goal is to improve the deployability of units within the Arkansas Army National Guard. The minimum goal for overall medical readiness is more than 85% of Service members FMR, with the ideal goal being 100%. The Arkansas Army National Guard (AR ARNG) Surgeon’s Office requires a highly responsive process whereby the government can quickly obtain needed support and services. This PWS reflects existing National Guard Bureau policies and regulations.",
+  "detail_text_length": 1256,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8036323e87ce495fbbe99aaef3e416ea/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8036323e87ce495fbbe99aaef3e416ea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4addc3513fa27c27f5b2cf8f2038c47d183f444f0dbbdf617fe3e7d6ef79cbba.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4addc3513fa27c27f5b2cf8f2038c47d183f444f0dbbdf617fe3e7d6ef79cbba.pdf",
+      "file_id": "8036323e87ce495fbbe99aaef3e416ea",
+      "file_name": "AR+ARNG+Med+Det+PWS+and+PRS+MAR+26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 236831,
+      "sha256": "4addc3513fa27c27f5b2cf8f2038c47d183f444f0dbbdf617fe3e7d6ef79cbba"
+    }
+  ],
+  "_mirror_hash": "1f9ab9297f853483380734b92e47bd2d6179102ccb56ba21de441e3f795bd587",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.600769+00:00"
+}

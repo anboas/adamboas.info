@@ -1,0 +1,47 @@
+{
+  "id": "sam-83f7035ca2b0405da028970a9cba21e0",
+  "title": "AirX Miniaturization and Prototype Development",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=83f7035ca2b0405da028970a9cba21e0",
+  "opportunity_url": "https://sam.gov/opp/83f7035ca2b0405da028970a9cba21e0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/83f7035ca2b0405da028970a9cba21e0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "83f7035ca2b0405da028970a9cba21e0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N3239826Q1466",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP OTHER HCA.BUMED.NAVY MEDICINE WEST.NAVAL MEDICAL RESEARCH CENTER",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-05",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=83f7035ca2b0405da028970a9cba21e0",
+  "detail_text": "Modification of the Dräger AviAir in a smaller version such that it maintains or improves upon current sensing capabilities while improving performance and incorporating additional sensing capabilities. These changes are to be made to address the outcomes of StF and airworthiness testing and to prepare the AviAir V2 for inclusion in the Navy Operator State Monitoring (OSM) system as well as the Air Force Integrated Cockpit Sensing (ICS) system.",
+  "detail_text_length": 448,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a49e9db126c946f1afa5ad85bcbe3aed/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a49e9db126c946f1afa5ad85bcbe3aed/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/caed9d1bbc195fd2782587dfe0bd77455454df445e530f62d1541206c6fadbf2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/caed9d1bbc195fd2782587dfe0bd77455454df445e530f62d1541206c6fadbf2.pdf",
+      "file_id": "a49e9db126c946f1afa5ad85bcbe3aed",
+      "file_name": "ERP+PR+1301341466_JNA_KOSigned.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 268684,
+      "sha256": "caed9d1bbc195fd2782587dfe0bd77455454df445e530f62d1541206c6fadbf2"
+    }
+  ],
+  "_mirror_hash": "0e11e3f09cecdf84096128691f2c053da7e4eef4c97ffa18799d270d76314e2f",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.111804+00:00"
+}

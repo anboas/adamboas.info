@@ -1,0 +1,57 @@
+{
+  "id": "sam-9018b8f00c814600988e657b55863740",
+  "title": "Z1DA--Renovate B26 for Mental Health - 538-23-102",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9018b8f00c814600988e657b55863740",
+  "opportunity_url": "https://sam.gov/opp/9018b8f00c814600988e657b55863740/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9018b8f00c814600988e657b55863740/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9018b8f00c814600988e657b55863740",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C25026B0009",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.250-NETWORK CONTRACT OFFICE 10 (36C250)",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9018b8f00c814600988e657b55863740",
+  "detail_text": "Attached is the Pre-Bid Site Visit Attendance. Project 538-23-102 Renovate B26 Mental Health, Solicitation 36C25026B0009.",
+  "detail_text_length": 121,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f7db2994ad84ca8ab072d9d0d6f0b5c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5fbb135b7bf487b95d044072a9b6881/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f7db2994ad84ca8ab072d9d0d6f0b5c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/001a2bd3ef929069a4f206ba8e4199e4e8244958ea4933007ac623d1c5c446ed.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/001a2bd3ef929069a4f206ba8e4199e4e8244958ea4933007ac623d1c5c446ed.pdf",
+      "file_id": "6f7db2994ad84ca8ab072d9d0d6f0b5c",
+      "file_name": "36C25026B0009+-+538-23-102+Renovate+B26+Mental+Health+Site+Visit+Attendance.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 266223,
+      "sha256": "001a2bd3ef929069a4f206ba8e4199e4e8244958ea4933007ac623d1c5c446ed"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5fbb135b7bf487b95d044072a9b6881/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1f01a030a6a25d5cc78e859ded5404928c5d6f3c690664bf1a3722278d7f271.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1f01a030a6a25d5cc78e859ded5404928c5d6f3c690664bf1a3722278d7f271.docx",
+      "file_id": "d5fbb135b7bf487b95d044072a9b6881",
+      "file_name": "36C25026B0009_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23278,
+      "sha256": "b1f01a030a6a25d5cc78e859ded5404928c5d6f3c690664bf1a3722278d7f271"
+    }
+  ],
+  "_mirror_hash": "096c0267e5a2262d46bb3320e04ae4ff44fa2bfd15a455fb1e5f3796cbf5bdcc",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.579284+00:00"
+}

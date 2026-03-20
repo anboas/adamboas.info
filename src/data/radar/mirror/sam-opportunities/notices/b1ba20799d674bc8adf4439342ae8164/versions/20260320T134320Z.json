@@ -1,0 +1,47 @@
+{
+  "id": "sam-b1ba20799d674bc8adf4439342ae8164",
+  "title": "FMS Repair of STRUT, AIRCRAFT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1ba20799d674bc8adf4439342ae8164",
+  "opportunity_url": "https://sam.gov/opp/b1ba20799d674bc8adf4439342ae8164/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b1ba20799d674bc8adf4439342ae8164/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b1ba20799d674bc8adf4439342ae8164",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N0038326QN095",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1ba20799d674bc8adf4439342ae8164",
+  "detail_text": "See attached document",
+  "detail_text_length": 21,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea6d3ef0eda7433a899984d666215676/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea6d3ef0eda7433a899984d666215676/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6cef0427fa2e0042ac2d3a164a410488eaa51c914e047fffd9da2ba400ea4241.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6cef0427fa2e0042ac2d3a164a410488eaa51c914e047fffd9da2ba400ea4241.pdf",
+      "file_id": "ea6d3ef0eda7433a899984d666215676",
+      "file_name": "2.08_Synopsis_N0038326PR0R315.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118889,
+      "sha256": "6cef0427fa2e0042ac2d3a164a410488eaa51c914e047fffd9da2ba400ea4241"
+    }
+  ],
+  "_mirror_hash": "b9c29d7546dda467d4796f98971c9652976a80ff939036a94cf2e38554080109",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.105932+00:00"
+}

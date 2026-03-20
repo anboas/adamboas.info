@@ -1,0 +1,56 @@
+{
+  "id": "sam-90708251421148a1b5cb4ec2478b2e1a",
+  "title": "1355-01-620-4752 CWRT Wire Coil, Short",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90708251421148a1b5cb4ec2478b2e1a",
+  "opportunity_url": "https://sam.gov/opp/90708251421148a1b5cb4ec2478b2e1a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/90708251421148a1b5cb4ec2478b2e1a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "90708251421148a1b5cb4ec2478b2e1a",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426RK012",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90708251421148a1b5cb4ec2478b2e1a",
+  "detail_text": "1355-01-620-4752 CWRT Wire Coil, Short",
+  "detail_text_length": 38,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e0039db558a4663b7763b07b1ac35a3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5cf2e4a0ee545b881ef64f51b569d07/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e0039db558a4663b7763b07b1ac35a3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0824fb811904af0deb7a0bdfacf1371c5120ab70ecf4aef4cb169fc723277cb6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0824fb811904af0deb7a0bdfacf1371c5120ab70ecf4aef4cb169fc723277cb6.pdf",
+      "file_id": "3e0039db558a4663b7763b07b1ac35a3",
+      "file_name": "Solicitation+-+N0010426RK012.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2761416,
+      "sha256": "0824fb811904af0deb7a0bdfacf1371c5120ab70ecf4aef4cb169fc723277cb6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5cf2e4a0ee545b881ef64f51b569d07/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/80ba33894ee8b85e48d59cef08109daa9fe574d159f3be79ed2fd678bc576313.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/80ba33894ee8b85e48d59cef08109daa9fe574d159f3be79ed2fd678bc576313.pdf",
+      "file_id": "b5cf2e4a0ee545b881ef64f51b569d07",
+      "file_name": "CDRLs_26RK012.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 237700,
+      "sha256": "80ba33894ee8b85e48d59cef08109daa9fe574d159f3be79ed2fd678bc576313"
+    }
+  ],
+  "_mirror_hash": "d015244c880b9d26155469fd80939cd6b4278f0bb447e0ebc7785405f00727bb",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.244683+00:00"
+}

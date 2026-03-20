@@ -1,0 +1,47 @@
+{
+  "id": "sam-38cf15e2809d4c7faecb6b68a869fa4d",
+  "title": "E-2D Support Equipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38cf15e2809d4c7faecb6b68a869fa4d",
+  "opportunity_url": "https://sam.gov/opp/38cf15e2809d4c7faecb6b68a869fa4d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/38cf15e2809d4c7faecb6b68a869fa4d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "38cf15e2809d4c7faecb6b68a869fa4d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N68335-26-RFI-0498",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC AD.NAVAIR WARFARE CTR AIRCRAFT DIV",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38cf15e2809d4c7faecb6b68a869fa4d",
+  "detail_text": "Pursuant to FAR 15.201(e)- This is a Request for Information only. There is no solicitation package available. This Sources Sought notice is being posted to satisfy the requirements of Defense Federal Acquisition Regulation Supplement (DFARS) 206.302-1(d). This acquisition is for various pieces of support equipment found in the attachment below in support of the E-2D Program. You must be able to provide all of the parts from the list in the attachment, This RFI is issued for information and planning purposes and is issued in conformance with DFARS PGI 206.302-1; it does not constitute an Invitation for Bid (IFB), a Request for Proposals (RFP), or a Request for Quotes (RFQ). This RFI does not commit the Government to contract for any supply or service whatsoever. The Government WILL NOT pay for any information received in response to this RFI, and the Government will not compensate the respondent for any cost incurred in developing the response to this RFI. Respondents are notified that a formal solicitation may be announced under a separate SAM announcement. Any requests for copies of solicitations will not be addressed since this is an RFI, not an IFB, RFP or RFQ. Not responding to this RFI does not preclude participation in any future RFP. Any comments provided may or may not be included in a formal solicitation. The Government will not release any information marked with a proprietary legend received in response to this RFI to any firms, agencies or individuals outside the Government without written permission in accordance with the legend. Please be advised that all submissions become Government property and will not be returned. All interested parties should send company information and descriptive literature on currently available products that meet the Navy's requirements, as described above. With the response, include a point of contact, phone number, email address, website information, DUNS number, CAGE Code, and Business Size Status for the North American Industry Classification System (NAICS) code of this RFI. Any responses in reference to this RFI shall be submitted electronically to the Point of Contact associated with this RFI no later than the requested responses date.",
+  "detail_text_length": 2222,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/869e50fd654e4d18989a986e8b0decc7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/869e50fd654e4d18989a986e8b0decc7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/41b50d9543a9ff3538ba2468ce93799e1dd726edc9e057ca1a7d4714011386f1.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/41b50d9543a9ff3538ba2468ce93799e1dd726edc9e057ca1a7d4714011386f1.xlsx",
+      "file_id": "869e50fd654e4d18989a986e8b0decc7",
+      "file_name": "Parts+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11971,
+      "sha256": "41b50d9543a9ff3538ba2468ce93799e1dd726edc9e057ca1a7d4714011386f1"
+    }
+  ],
+  "_mirror_hash": "7993a54012f13ae1e7b4efe7bae87d19964f0f5fb0cad8f6e182d2aaa5d33959",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.104398+00:00"
+}

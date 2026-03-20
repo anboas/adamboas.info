@@ -1,0 +1,68 @@
+{
+  "id": "sam-ba5384fde63f42f78391b5f202685a57",
+  "title": "JBSA Hood & Duct Cleaning",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba5384fde63f42f78391b5f202685a57",
+  "opportunity_url": "https://sam.gov/opp/ba5384fde63f42f78391b5f202685a57/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ba5384fde63f42f78391b5f202685a57/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ba5384fde63f42f78391b5f202685a57",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA301626D-123",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba5384fde63f42f78391b5f202685a57",
+  "detail_text": "Sources Sought Notice for Exhaust Hood and Duct Cleaning Services. This notice includes 2 attachments: Draft PWS with Draft Bid Schedule and Sources Sought Notice Questionnaire.",
+  "detail_text_length": 177,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/524fd3e812c843a38e9eb3a2ee2f6d20/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ba82c1f825746dd8303fdaf9afdc4bc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1fa708ce04146c7aada0b0ca810d9dd/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/524fd3e812c843a38e9eb3a2ee2f6d20/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d0b5c498a1ac7f779038fe770d54af141678cb271b3930363e4f107f96f4053a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d0b5c498a1ac7f779038fe770d54af141678cb271b3930363e4f107f96f4053a.pdf",
+      "file_id": "524fd3e812c843a38e9eb3a2ee2f6d20",
+      "file_name": "Draft+Vent+Hood+Bid+Sheet.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 604132,
+      "sha256": "d0b5c498a1ac7f779038fe770d54af141678cb271b3930363e4f107f96f4053a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ba82c1f825746dd8303fdaf9afdc4bc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fe910599dc52d6e9daa795278de2ecc0e9bfffd2b102a1d5be001a1ec4f52d05.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fe910599dc52d6e9daa795278de2ecc0e9bfffd2b102a1d5be001a1ec4f52d05.docx",
+      "file_id": "9ba82c1f825746dd8303fdaf9afdc4bc",
+      "file_name": "Sources+Sought+Notice+Hood+and+Duct+Cleaning.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90107,
+      "sha256": "fe910599dc52d6e9daa795278de2ecc0e9bfffd2b102a1d5be001a1ec4f52d05"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1fa708ce04146c7aada0b0ca810d9dd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1efb44c9d09a1073ef3d778860a45773c28abbe46499f01b3b09542ab67f4598.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1efb44c9d09a1073ef3d778860a45773c28abbe46499f01b3b09542ab67f4598.pdf",
+      "file_id": "f1fa708ce04146c7aada0b0ca810d9dd",
+      "file_name": "Draft+PWS+-+Hood+and+Duct-2-24-26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 440016,
+      "sha256": "1efb44c9d09a1073ef3d778860a45773c28abbe46499f01b3b09542ab67f4598"
+    }
+  ],
+  "_mirror_hash": "27932f10655b5a9cdcb3febbf27216697c1c79b8c02b72978b1b2880e16bba13",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.379423+00:00"
+}

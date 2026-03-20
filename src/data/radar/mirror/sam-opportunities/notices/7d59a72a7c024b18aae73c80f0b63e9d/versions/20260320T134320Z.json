@@ -1,0 +1,68 @@
+{
+  "id": "sam-7d59a72a7c024b18aae73c80f0b63e9d",
+  "title": "USSOCOM Information Technology Management, Strategic/Operational Planning, and Technical Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d59a72a7c024b18aae73c80f0b63e9d",
+  "opportunity_url": "https://sam.gov/opp/7d59a72a7c024b18aae73c80f0b63e9d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7d59a72a7c024b18aae73c80f0b63e9d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7d59a72a7c024b18aae73c80f0b63e9d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "H9241526ITMSS",
+  "agency_path": "DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).HQ USSOCOM",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d59a72a7c024b18aae73c80f0b63e9d",
+  "detail_text": "NOTE: This RFI is limited to 8(a) companies only. USSOCOM is issuing a request for information to seek sources in support of Information Technology Management, Strategic/Operational Planning, and Technical Support. USSOCOM J6 requires contract program support, ecompassing program management, contract management, and contract administration services in support of various programs and contracts which provide both real-time and strategic IT support to HQ USSOCOM, its Components and TSOCs.",
+  "detail_text_length": 490,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3af1eccf19a74a10b7712c0473a24641/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aea3802f67b5469ea6e5ab1e4e162c22/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f27a32ab7da74fae8b389276ed74ffcd/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3af1eccf19a74a10b7712c0473a24641/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d94df6801d4746030ffc98ebb1cb0b3d0654924312df56fddaecd06d2670b02b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d94df6801d4746030ffc98ebb1cb0b3d0654924312df56fddaecd06d2670b02b.docx",
+      "file_id": "3af1eccf19a74a10b7712c0473a24641",
+      "file_name": "RFI_ITMSOPTS_Questions+Template.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26346,
+      "sha256": "d94df6801d4746030ffc98ebb1cb0b3d0654924312df56fddaecd06d2670b02b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aea3802f67b5469ea6e5ab1e4e162c22/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c8f8524508a1e74d9393f0be4fdcd5f11e71afac3a472af69d6da3239a926a00.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c8f8524508a1e74d9393f0be4fdcd5f11e71afac3a472af69d6da3239a926a00.pdf",
+      "file_id": "aea3802f67b5469ea6e5ab1e4e162c22",
+      "file_name": "RFI_ITMSOPTS_20260319.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 202826,
+      "sha256": "c8f8524508a1e74d9393f0be4fdcd5f11e71afac3a472af69d6da3239a926a00"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f27a32ab7da74fae8b389276ed74ffcd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fd781c1ab2ed3563f5e5d735f886082eacd521f7f573bc2cd5080d0f4d07e41e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fd781c1ab2ed3563f5e5d735f886082eacd521f7f573bc2cd5080d0f4d07e41e.pdf",
+      "file_id": "f27a32ab7da74fae8b389276ed74ffcd",
+      "file_name": "ITMSOPTS_Draft+SOW_20260316.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 214187,
+      "sha256": "fd781c1ab2ed3563f5e5d735f886082eacd521f7f573bc2cd5080d0f4d07e41e"
+    }
+  ],
+  "_mirror_hash": "0912599ed779d3e61b16e512a670cb020ccb2bbf16e4a566deefee9a176cb99e",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.502686+00:00"
+}

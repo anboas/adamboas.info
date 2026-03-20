@@ -1,0 +1,57 @@
+{
+  "id": "sam-ecdebfa23838420b812c3a19e4f6edd1",
+  "title": "400G Optical Network Upgrade Installation and Commissioning",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ecdebfa23838420b812c3a19e4f6edd1",
+  "opportunity_url": "https://sam.gov/opp/ecdebfa23838420b812c3a19e4f6edd1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ecdebfa23838420b812c3a19e4f6edd1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ecdebfa23838420b812c3a19e4f6edd1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480026SSJBLEON",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4800  633 CONS PKP",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ecdebfa23838420b812c3a19e4f6edd1",
+  "detail_text": "THIS IS A SOURCES SOUGHT NOTICE FOR INFORMATION AND PLANNING PURPOSES ONLY. This announcement closes 12:00 p.m. Eastern Time on Monday, 26 March 2026. The applicable North American Industry Classification System (NAICS) for this requirement is 541512, Electrical Contractors and Other Wiring Installation Contractors, with a corresponding size standard of $34M. Interested parties must be registered under NAICS 541512 in the System for Award Management (SAM) at www.sam.gov. The Government plans to consider all information submitted in response to this Sources Sought Notice. The contractor shall provide all project management, personnel, labor, equipment, tools, and technical expertise necessary to perform the installation, configuration, testing, and integration of government-furnished 400G optical networking equipment. The 633rd Communications Squadron (633 CS) at Langley Air Force Base, Virginia, has a need to upgrade its core optical transport network. This project requires professional services to install and commission Government-Furnished Equipment (GFE), specifically Cisco Network Convergence System 2006 Series (NCS2K) Dense Wavelength Division Multiplexing (DWDM) nodes and 400G Transponder Modules, into the existing network infrastructure to complete this critical modernization effort. Please see the attached notice for additional information.",
+  "detail_text_length": 1370,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f0de9b794e4411495b1f94f148dae88/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d54a1fb6b70c4efb95e648fa087973a8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f0de9b794e4411495b1f94f148dae88/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/32f6d7bb22a6bbec631fa7f6049b6117f6c11f8f628edcb5ecc789b01a001c49.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/32f6d7bb22a6bbec631fa7f6049b6117f6c11f8f628edcb5ecc789b01a001c49.pdf",
+      "file_id": "1f0de9b794e4411495b1f94f148dae88",
+      "file_name": "Draft+SOW+-+400G+Optical+Network+Installation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 152396,
+      "sha256": "32f6d7bb22a6bbec631fa7f6049b6117f6c11f8f628edcb5ecc789b01a001c49"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d54a1fb6b70c4efb95e648fa087973a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a1d701aa01027470afddebf8dc3fe5fab1a1488f254fd903869f0d0dd15e18a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a1d701aa01027470afddebf8dc3fe5fab1a1488f254fd903869f0d0dd15e18a.pdf",
+      "file_id": "d54a1fb6b70c4efb95e648fa087973a8",
+      "file_name": "Sources+Sought+-+400G+Optical+Network+Upgrade+Installation+and+Commissioning.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137503,
+      "sha256": "2a1d701aa01027470afddebf8dc3fe5fab1a1488f254fd903869f0d0dd15e18a"
+    }
+  ],
+  "_mirror_hash": "ee94564796d1da958bc6c6b94b9a62ec9cfed895d0985b4d1d375a02e31c72b9",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.359091+00:00"
+}

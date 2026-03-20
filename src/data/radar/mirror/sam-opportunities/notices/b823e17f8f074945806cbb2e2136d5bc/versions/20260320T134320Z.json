@@ -1,0 +1,68 @@
+{
+  "id": "sam-b823e17f8f074945806cbb2e2136d5bc",
+  "title": "DA10--Ambient Scribe Enterprise IDIQ (VA-26-00012979)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b823e17f8f074945806cbb2e2136d5bc",
+  "opportunity_url": "https://sam.gov/opp/b823e17f8f074945806cbb2e2136d5bc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b823e17f8f074945806cbb2e2136d5bc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b823e17f8f074945806cbb2e2136d5bc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0056",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b823e17f8f074945806cbb2e2136d5bc",
+  "detail_text": "This notice serves as a follow-up to Sources Sought posting 36C10B26Q0056 and informs interested parties that, based on market research, the Department of Veterans Affairs (VA) intends to pursue a competitive acquisition on a full and open basis. The solicitation will be posted to SAM Contract Opportunities, under solicitation number 36C10B26R0006, with an estimated release date of March 24, 2026, subject to change.",
+  "detail_text_length": 419,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/325a3bd3ad664578aeab0b86b13e3c8a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4dfb60c19966419b9670f2ad14c03fd4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cd83dcb1d584c2f851a9c9cbe1430e6/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/325a3bd3ad664578aeab0b86b13e3c8a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c1173e4b8740ed074f940471220ac7ade0f3184fe0f44b54de2b21fd68456ea1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c1173e4b8740ed074f940471220ac7ade0f3184fe0f44b54de2b21fd68456ea1.docx",
+      "file_id": "325a3bd3ad664578aeab0b86b13e3c8a",
+      "file_name": "Draft+Ambient+Scribe+Basic+PWS+v1.0.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 161393,
+      "sha256": "c1173e4b8740ed074f940471220ac7ade0f3184fe0f44b54de2b21fd68456ea1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4dfb60c19966419b9670f2ad14c03fd4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/04ea92e055b332eee6de08fb2df7618fdb545f6cb231706f9eab363333bbf820.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/04ea92e055b332eee6de08fb2df7618fdb545f6cb231706f9eab363333bbf820.docx",
+      "file_id": "4dfb60c19966419b9670f2ad14c03fd4",
+      "file_name": "36C10B26Q0056_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14488,
+      "sha256": "04ea92e055b332eee6de08fb2df7618fdb545f6cb231706f9eab363333bbf820"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cd83dcb1d584c2f851a9c9cbe1430e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4b4b536e010dc8e8bacabd8e73c49c44bec54438a05f915c74b1067efb959b2d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4b4b536e010dc8e8bacabd8e73c49c44bec54438a05f915c74b1067efb959b2d.docx",
+      "file_id": "5cd83dcb1d584c2f851a9c9cbe1430e6",
+      "file_name": "36C10B26Q0056.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19967,
+      "sha256": "4b4b536e010dc8e8bacabd8e73c49c44bec54438a05f915c74b1067efb959b2d"
+    }
+  ],
+  "_mirror_hash": "e0158fd684cb62baed84617ecce25327a31a905fce08ad5bd7d2b790269d3eb9",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.628104+00:00"
+}

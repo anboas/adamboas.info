@@ -1,0 +1,45 @@
+{
+  "id": "sam-8bfed1f102f541d7a03d9089f8040b24",
+  "title": "CIRCUIT CARD ASSEMB",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bfed1f102f541d7a03d9089f8040b24",
+  "opportunity_url": "https://sam.gov/opp/8bfed1f102f541d7a03d9089f8040b24/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8bfed1f102f541d7a03d9089f8040b24/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8bfed1f102f541d7a03d9089f8040b24",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QX066",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bfed1f102f541d7a03d9089f8040b24",
+  "detail_text": "N0010425PR26430 FMS Case NU: JA-P-P-RJX Requisition Quantity: 1 NSN: 5998015290540 P/N: 7642030 Nomen: CIRCUIT CARD ASSEMB LOA: 97-11X8242.2862/000/74622/0/065916/2D/PJASE4/50083073 /0RJX",
+  "detail_text_length": 187,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05f119f575ac4a6e9c3d54a8b380f144/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05f119f575ac4a6e9c3d54a8b380f144/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ff5b930e1e91688b2e4b2c8fad7e26feedbb751d99a9c4235593044d94c81aa8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ff5b930e1e91688b2e4b2c8fad7e26feedbb751d99a9c4235593044d94c81aa8.pdf",
+      "file_id": "05f119f575ac4a6e9c3d54a8b380f144",
+      "file_name": "3.01_Solicitation_25PR26430.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1075023,
+      "sha256": "ff5b930e1e91688b2e4b2c8fad7e26feedbb751d99a9c4235593044d94c81aa8"
+    }
+  ],
+  "_mirror_hash": "bf814dea42715ee64feae3201ac106ef0ba85b45ceba7c57d12374b8750f8f09",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.202677+00:00"
+}

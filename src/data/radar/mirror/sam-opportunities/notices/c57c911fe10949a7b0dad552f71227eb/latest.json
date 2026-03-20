@@ -1,0 +1,57 @@
+{
+  "id": "sam-c57c911fe10949a7b0dad552f71227eb",
+  "title": "Virtual Air Defense Systems Integrator (ADSI) software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c57c911fe10949a7b0dad552f71227eb",
+  "opportunity_url": "https://sam.gov/opp/c57c911fe10949a7b0dad552f71227eb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c57c911fe10949a7b0dad552f71227eb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c57c911fe10949a7b0dad552f71227eb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC26P0000041479",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.0418 AQ HQ     CONTRACTING SUP",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c57c911fe10949a7b0dad552f71227eb",
+  "detail_text": "This Sources Sought notice is for market research and preliminary planning purposes only. It is not a solicitation for proposals, and no contract will be awarded based on this notice. The objective is to identify qualified sources capable of providing the Virtual Air Defense Systems Integrator (ADSI) software. While a potential sole source has been identified, this market research will determine if other sources can satisfy the government's requirements. For complete details, please refer to the attached SAM Sources Sought Notice and Salient Characteristics documents. All responses must be submitted via email no later than 11:00 AM EDT on March 23, 2026 . Please send submissions to Donelle White, Contract Specialist, at donelle.h.white.mil@army.mil and Leona Lu, Contracting Officer, at leona.lu.mil@army.mil.",
+  "detail_text_length": 819,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3215b88fcfa4449687f3622c404726fa/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f960c74f87a94a5ab9f2a40ff9e41a84/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3215b88fcfa4449687f3622c404726fa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4f2b971aa6c03a3159eaf14c03311960e613c7ff9047c1c255cf232dd7ede8da.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4f2b971aa6c03a3159eaf14c03311960e613c7ff9047c1c255cf232dd7ede8da.pdf",
+      "file_id": "3215b88fcfa4449687f3622c404726fa",
+      "file_name": "PANMCC-26-P-0000+041479+SAM+Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 78608,
+      "sha256": "4f2b971aa6c03a3159eaf14c03311960e613c7ff9047c1c255cf232dd7ede8da"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f960c74f87a94a5ab9f2a40ff9e41a84/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ac1a64126d4177ea975a3175d83c51aacbdf9ed2365652797d004fe66830c3de.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ac1a64126d4177ea975a3175d83c51aacbdf9ed2365652797d004fe66830c3de.pdf",
+      "file_id": "f960c74f87a94a5ab9f2a40ff9e41a84",
+      "file_name": "Salient+Characteristics++-+V-ADSI+Software.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 92214,
+      "sha256": "ac1a64126d4177ea975a3175d83c51aacbdf9ed2365652797d004fe66830c3de"
+    }
+  ],
+  "_mirror_hash": "1e10cd94b02ed889954c2db45f491927a9e24c62010f571566d31b09557a145b",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.303798+00:00"
+}

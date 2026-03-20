@@ -1,0 +1,46 @@
+{
+  "id": "sam-8b67c6aaeedf4a789d578c4b920dd161",
+  "title": "LAM P,INCANDESCENT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b67c6aaeedf4a789d578c4b920dd161",
+  "opportunity_url": "https://sam.gov/opp/8b67c6aaeedf4a789d578c4b920dd161/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8b67c6aaeedf4a789d578c4b920dd161/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8b67c6aaeedf4a789d578c4b920dd161",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "012620148",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b67c6aaeedf4a789d578c4b920dd161",
+  "detail_text": "SYNOPSIS: NSN 6240-012620148, LAM P,INCANDESCENT; WSIC: F; IQC: 1000225802; Issue Date: 4/3/26; Closing Date: 5/2/26. This solicitation will result in an Indefinite Quantity Contract (IQC) for a 5-year base period. This procurement will be SBSA. Certified Cost and Pricing Data is not required for this procurement. EEO clearance is not required. Progress Payments are not authorized for this procurement. This is Life Support Item. Surge applies. SPRS apply. Price, Past Performance and Delivery will equally weigh. The final contract award decision may be based upon a combination of price, past performance, and other evaluation factors as described in the solicitation. This request is for a written quote. Please submit offers in writing. The solicitation issue date will be 4/3/26 with a closing date on 5/2/26. DURATION OF CONTRACT PERIOD: 60 MONTHS Estimated Annual Demand Quantity: 4,534 Minimum Delivery Order Quantity: 1,118 Maximum Delivery Order Quantity: 4,534 Approved Source(s) FOB Destination Inspection/Acceptance: Origin DLA Direct (STOCK) Delivery Schedule: 115 Suppliers must be registered in the System for Award Management (SAM). Annual updates to suppliers’ registration will be required. For registration procedures and information, visit the World Wide Web at http://www.sam.gov. A copy of the solicitation will be available via DLA Internet Bid Board Systems athttps://www.dibbs.bsm.dla.mil/RFP on the same issue date cited in the RFP. From the DIBBS Homepage, select “Request for Proposal (RFP)/Invitation for Bid (IFB)” from the menu under the tab “Solicitations”. To download and view these documents you will need the latest version of Adobe Acrobat Reader. This software is available free at http://www.adobe.com A paper copy of this solicitation will not be available to requestors. All responsible sources may submit an offer, which will be considered.",
+  "detail_text_length": 1886,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ed4dc3e61894820b7eb818ee086df29/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ed4dc3e61894820b7eb818ee086df29/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/344839592e7997a65a66beef9a08d2348520dd97aea90a088bb2d1e97e85d82a.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/344839592e7997a65a66beef9a08d2348520dd97aea90a088bb2d1e97e85d82a.doc",
+      "file_id": "3ed4dc3e61894820b7eb818ee086df29",
+      "file_name": "SYNOPSIS+012620148.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27136,
+      "sha256": "344839592e7997a65a66beef9a08d2348520dd97aea90a088bb2d1e97e85d82a"
+    }
+  ],
+  "_mirror_hash": "cf4c70183cc501c560c8baf358007b19b0b92d5c4c5e1b05fcdbf664a4752000",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.493611+00:00"
+}

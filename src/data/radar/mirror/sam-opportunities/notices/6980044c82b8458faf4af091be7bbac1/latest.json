@@ -1,0 +1,48 @@
+{
+  "id": "sam-6980044c82b8458faf4af091be7bbac1",
+  "title": "Request for Information (RFI) C-130 Cargo Winch Overhaul",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6980044c82b8458faf4af091be7bbac1",
+  "opportunity_url": "https://sam.gov/opp/6980044c82b8458faf4af091be7bbac1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6980044c82b8458faf4af091be7bbac1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6980044c82b8458faf4af091be7bbac1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20602700029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8538  AFSC PZAAB",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6980044c82b8458faf4af091be7bbac1",
+  "detail_text": "The Government is conducting market research to identify potential sources that possess the repair data, expertise, capabilities, and experience to meet qualification requirements to overhaul the C-130 Cargo Winch operated and maintained by United States Air Force (USAF) and United States Navy (USN). The National Stock Number (NSN) and Part Number (PN) are as follows: Item: C-130 Cargo Winch NSN: 1680-00-860-3934 PN: 41750-3-41BG RMC/RMSC: R1/C The C-130H Aircraft Cargo Winch is a heavy duty, lightweight and extremely rugged all weather aircraft cargo winch. This item provides the aircrew the ability to expeditiously load heavy cargo on and off the aircraft. Maintenance to be performed includes teardown, analysis, overhaul, testing and procurement of spare sub-components, package handling, storage, transportation, data collection, engineering support and services. The overhaul and testing of this asset must be to approved Military Specification (Mil-W-26217A) and Technical Orders (T.O.s) 35D4-2-30-l and 35D4-2-30-4; returning the assets to the Air Force in Ready-for-Issue (RFI) condition while meeting required performance thresholds. The Government has unlimited rights to these T.O.s but has incomplete build/overhaul data. The service shall include providing obsolete parts resolution along with the necessary engineering to investigate Deficiency Reports and Material Improvement Projects (MIPs). The Government does not own the data or the rights to the data needed to compete the overhaul of these parts. It has been determined to be uneconomical to reverse engineer the data, qualify a new source, or buy the data and/or data rights. ***MORE INFORMATION AND INSTRUCTIONS FOR SUBMISSION OF INFORMATION, INTEREST, AND QUESTIONS IS FOUND IN THE ATTACHMENT***",
+  "detail_text_length": 1779,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/470b009ea3c44f25be6a609628404627/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/470b009ea3c44f25be6a609628404627/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4b4b715301b9fc229bd5d0e99ad84a6f880d839dd38bde6dbc096da04c3c5590.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4b4b715301b9fc229bd5d0e99ad84a6f880d839dd38bde6dbc096da04c3c5590.pdf",
+      "file_id": "470b009ea3c44f25be6a609628404627",
+      "file_name": "RFI+-+C-130+Cargo+Winch.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 211297,
+      "sha256": "4b4b715301b9fc229bd5d0e99ad84a6f880d839dd38bde6dbc096da04c3c5590"
+    }
+  ],
+  "_mirror_hash": "4f23c8c8b3c873d3ac17a1c0d5f19457054531eceb9363b23522bdfd351b7c28",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.227780+00:00"
+}

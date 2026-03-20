@@ -1,0 +1,46 @@
+{
+  "id": "sam-66a7fac7c0f9485a976527315658f49a",
+  "title": "Small Micro Reactor",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=66a7fac7c0f9485a976527315658f49a",
+  "opportunity_url": "https://sam.gov/opp/66a7fac7c0f9485a976527315658f49a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/66a7fac7c0f9485a976527315658f49a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "66a7fac7c0f9485a976527315658f49a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA824026R3001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA8240 AFTC PZ",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=66a7fac7c0f9485a976527315658f49a",
+  "detail_text": "The purpose of this Request for Information (RFI) is to assist the Government in identifying potential offerors for understanding the company’s capability to design, license, fuel, construct, and deploy Small, Micro, or Modular Reactor (SMR) technologies in compliance with applicable regulatory, safety, environmental, and security requirements. The information collected will help assess industry confidence in achieving and installing a commercially viable Nth-of-a-Kind (NOAK) capability.",
+  "detail_text_length": 492,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38901a40911f451dbf22a4e0a2db5581/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38901a40911f451dbf22a4e0a2db5581/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/131b438925e81f3e04dd4c6bf41917118621ff4d0dd8e87d68ce4c467d015ee3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/131b438925e81f3e04dd4c6bf41917118621ff4d0dd8e87d68ce4c467d015ee3.pdf",
+      "file_id": "38901a40911f451dbf22a4e0a2db5581",
+      "file_name": "RFI_SMR_19+Mar+26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 139546,
+      "sha256": "131b438925e81f3e04dd4c6bf41917118621ff4d0dd8e87d68ce4c467d015ee3"
+    }
+  ],
+  "_mirror_hash": "51010a8265018a816f04fab966c8d40c1531ed32be9fc71b568f7f4196a7d6ef",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.590087+00:00"
+}

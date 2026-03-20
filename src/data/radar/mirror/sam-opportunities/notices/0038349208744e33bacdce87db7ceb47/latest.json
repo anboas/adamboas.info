@@ -1,0 +1,46 @@
+{
+  "id": "sam-0038349208744e33bacdce87db7ceb47",
+  "title": "Z--JELA 311263 - Canal Backfill Restoration",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0038349208744e33bacdce87db7ceb47",
+  "opportunity_url": "https://sam.gov/opp/0038349208744e33bacdce87db7ceb47/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0038349208744e33bacdce87db7ceb47/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0038349208744e33bacdce87db7ceb47",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140P2026R0036",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.DSC CONTRACTING SERVICES DIVISION",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0038349208744e33bacdce87db7ceb47",
+  "detail_text": "JELA 311263 - Canal Backfill Restoration",
+  "detail_text_length": 40,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a20590d550c94dc2b840106b5f091eaa/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a20590d550c94dc2b840106b5f091eaa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1187140343629b69d02529c18aafe32be9eea68b931756ede543fe07ed7c366.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1187140343629b69d02529c18aafe32be9eea68b931756ede543fe07ed7c366.pdf",
+      "file_id": "a20590d550c94dc2b840106b5f091eaa",
+      "file_name": "B01_Synopsis_PreSolitNotice_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 217049,
+      "sha256": "b1187140343629b69d02529c18aafe32be9eea68b931756ede543fe07ed7c366"
+    }
+  ],
+  "_mirror_hash": "3d1be4fa1836c7aa08330c39eaeadf03663ace217179a5355777f70eb06af74b",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.623424+00:00"
+}

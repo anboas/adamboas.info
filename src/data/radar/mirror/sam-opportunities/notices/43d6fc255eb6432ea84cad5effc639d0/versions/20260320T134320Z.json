@@ -1,0 +1,46 @@
+{
+  "id": "sam-43d6fc255eb6432ea84cad5effc639d0",
+  "title": "3D Mapping Laser Scanner",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=43d6fc255eb6432ea84cad5effc639d0",
+  "opportunity_url": "https://sam.gov/opp/43d6fc255eb6432ea84cad5effc639d0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/43d6fc255eb6432ea84cad5effc639d0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "43d6fc255eb6432ea84cad5effc639d0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25526Q0273",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=43d6fc255eb6432ea84cad5effc639d0",
+  "detail_text": "This is a Sources Sought for a 3D Mapping Laser Scanner. Please see attached Statement of Requirement for additional information.",
+  "detail_text_length": 129,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0912117c832f48b0abea8308f248051b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0912117c832f48b0abea8308f248051b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f871fc30c4bd825ac33cad7f7f94e4882f1a9bbee1eeff63f0ad9c4f0b37a1bb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f871fc30c4bd825ac33cad7f7f94e4882f1a9bbee1eeff63f0ad9c4f0b37a1bb.pdf",
+      "file_id": "0912117c832f48b0abea8308f248051b",
+      "file_name": "36C25526Q0273.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125740,
+      "sha256": "f871fc30c4bd825ac33cad7f7f94e4882f1a9bbee1eeff63f0ad9c4f0b37a1bb"
+    }
+  ],
+  "_mirror_hash": "e120ce1a0597838188bbcfeeff115070cc0fd84f567bc34cad8b96f175f00565",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.432976+00:00"
+}

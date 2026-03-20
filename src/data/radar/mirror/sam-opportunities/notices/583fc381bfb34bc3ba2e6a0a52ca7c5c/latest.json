@@ -1,0 +1,57 @@
+{
+  "id": "sam-583fc381bfb34bc3ba2e6a0a52ca7c5c",
+  "title": "Replace Chiller JBSA Fort Sam Houston",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=583fc381bfb34bc3ba2e6a0a52ca7c5c",
+  "opportunity_url": "https://sam.gov/opp/583fc381bfb34bc3ba2e6a0a52ca7c5c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/583fc381bfb34bc3ba2e6a0a52ca7c5c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "583fc381bfb34bc3ba2e6a0a52ca7c5c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA3016FY26FSHChillerReplacement",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=583fc381bfb34bc3ba2e6a0a52ca7c5c",
+  "detail_text": "1. JBSA Lackland AFB is searching for potential contractors that can provide Chiller Replacement services IAW the Statement of Work (SOW). Lackland is seeking information from interested parties that can provide the requirements below. All prospective contractors must be registered in the System for Award Management (SAM.Gov) database to be awarded a DOD contract. The product service code for this is J041 - EQUIPMENT-REFRIGERATION, AIR CONDITIONING, AND AIR CIRCULATING EQUIPMENT and the NAICS for this action is 238220 - PLUMBING, HEATING, AND AIR-CONDITIONING CONTRACTORS (size standard: $19 MILLION). 2. The Department of War is seeking capable sources for a turn-key project to replace a 150-ton chiller and associated chilled water pump at Building 1029, Fort Sam Houston, Texas. The selected contractor will be responsible for providing all supervision, labor, and materials to remove and dispose of the existing equipment and install a new, fully operational system. This requirement includes all necessary electrical, piping, and control system modifications to ensure the new chiller is seamlessly integrated with the existing Building Management System (BMS). The project will conclude with comprehensive system testing, calibration, and factory start-up verification. Interested vendors must be able to provide a 5-year parts and 1-year labor warranty and demonstrate significant experience with HVAC projects of similar size and complexity, particularly those performed on military installations. 3. This announcement is a Sources Sought and is NOT a Request for Quotation (RFQ). This announcement does not commit the government to award a contract now or in the future. There is no solicitation or funding currently available. Additionally, the government is not obligated to and will not pay for any information received from potential sources because of this Sources Sought announcement. The result of this Source Sought will be utilized to determine if there are enough vendors capable to provide chiller replacement services IAW the statement of work. In addition, this market research tool can be used to identify potential and eligible firms, of all sizes, prior to determining the method acquisition and issuance of a solicitation. This is projected to be a small business set-aside, all small business set-aside categories will be considered. Attached is the DRAFT of the statement of work for this requirement, to allow for a better idea of work to be expected. It is subject to adjustments as necessary.",
+  "detail_text_length": 2530,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30ef070979914b808e1c6c245ee84518/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49f040dcefb24fe09ec51e04298fd95e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30ef070979914b808e1c6c245ee84518/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/22afb4dd5e82ce4b378badc5216b45fd59148c8ad93bc50b7e954d4d8e0243a6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/22afb4dd5e82ce4b378badc5216b45fd59148c8ad93bc50b7e954d4d8e0243a6.docx",
+      "file_id": "30ef070979914b808e1c6c245ee84518",
+      "file_name": "Sources+Sought+-+Chillers+B1029+-+Draft.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 91415,
+      "sha256": "22afb4dd5e82ce4b378badc5216b45fd59148c8ad93bc50b7e954d4d8e0243a6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49f040dcefb24fe09ec51e04298fd95e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bc87219001a72da1d2efe2a4fb6eec1020399f4a43773d2ef6b5574192c4a5d1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bc87219001a72da1d2efe2a4fb6eec1020399f4a43773d2ef6b5574192c4a5d1.docx",
+      "file_id": "49f040dcefb24fe09ec51e04298fd95e",
+      "file_name": "B1029_JBSF_Chiller+Replacement_SOW_Justin.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27258,
+      "sha256": "bc87219001a72da1d2efe2a4fb6eec1020399f4a43773d2ef6b5574192c4a5d1"
+    }
+  ],
+  "_mirror_hash": "66e0f71aaea4f12cb7a4e6cc51c53a1feeff2fff664247207381d504ac807a7b",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.350976+00:00"
+}

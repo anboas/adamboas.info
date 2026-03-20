@@ -1,0 +1,57 @@
+{
+  "id": "sam-da5d95712d6346099bcc72a62728758b",
+  "title": "Procure Mobile Generators",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=da5d95712d6346099bcc72a62728758b",
+  "opportunity_url": "https://sam.gov/opp/da5d95712d6346099bcc72a62728758b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/da5d95712d6346099bcc72a62728758b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "da5d95712d6346099bcc72a62728758b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA2517SB",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=da5d95712d6346099bcc72a62728758b",
+  "detail_text": "Please see attached document for requirement description. This is amended to include the product list.",
+  "detail_text_length": 102,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10b3d236df0443038576d78ac0ff7e03/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2dfce5df56740b9880aa52aff2b1228/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10b3d236df0443038576d78ac0ff7e03/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d18bfdc7c3b2e87d1ecee91c6db7102b4c7272a1e6d596a5d0ecfd0e21a0a01.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d18bfdc7c3b2e87d1ecee91c6db7102b4c7272a1e6d596a5d0ecfd0e21a0a01.docx",
+      "file_id": "10b3d236df0443038576d78ac0ff7e03",
+      "file_name": "Mobile+Generators+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58984,
+      "sha256": "2d18bfdc7c3b2e87d1ecee91c6db7102b4c7272a1e6d596a5d0ecfd0e21a0a01"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2dfce5df56740b9880aa52aff2b1228/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/280099d847346477797e47111b9ad201af430b00eecad7d2bcfa089b9aa395c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/280099d847346477797e47111b9ad201af430b00eecad7d2bcfa089b9aa395c1.pdf",
+      "file_id": "f2dfce5df56740b9880aa52aff2b1228",
+      "file_name": "Attachment+1+-+Mobile+Generators+and+ATS+Product+List.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40005,
+      "sha256": "280099d847346477797e47111b9ad201af430b00eecad7d2bcfa089b9aa395c1"
+    }
+  ],
+  "_mirror_hash": "d531f5493e7993df00d056da247dcdb460fdde34c94da64090bd9e0b02043dcf",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.387005+00:00"
+}

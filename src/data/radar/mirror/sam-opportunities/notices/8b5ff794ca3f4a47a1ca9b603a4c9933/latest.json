@@ -1,0 +1,57 @@
+{
+  "id": "sam-8b5ff794ca3f4a47a1ca9b603a4c9933",
+  "title": "CISCO Switches",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b5ff794ca3f4a47a1ca9b603a4c9933",
+  "opportunity_url": "https://sam.gov/opp/8b5ff794ca3f4a47a1ca9b603a4c9933/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8b5ff794ca3f4a47a1ca9b603a4c9933/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8b5ff794ca3f4a47a1ca9b603a4c9933",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "Switches0002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b5ff794ca3f4a47a1ca9b603a4c9933",
+  "detail_text": "THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY. The 21st Contracting Squadron is conducting market research to determine interest and capability of potential sources. This notice does not constitute a commitment by the Government. All information submitted in response to this announcement is voluntary, and the Government will not pay for information requested nor will it compensate any respondent for any cost incurred in developing information provided to the Government. The 21st Contracting Squadron is requesting information for CISCO Switches on Peterson Space Force Base, Colorado. Please see the attachments for information. Attachment 1 - Cisco Switches product list is the total list and quantity of the items needed for this Sources Sought. If there are questions about whether there are further bundle items that must be answered, please see the Expanded List Sheet included in this EXCEL document.",
+  "detail_text_length": 908,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8cab93d0f2c849a997a2f619194138b0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a1e036235297460bb3cff609df4ead05/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8cab93d0f2c849a997a2f619194138b0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31835199dee95208a3257cee3761669c598b035a5e964958042a16ab74325d12.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31835199dee95208a3257cee3761669c598b035a5e964958042a16ab74325d12.docx",
+      "file_id": "8cab93d0f2c849a997a2f619194138b0",
+      "file_name": "Sources+Sought+CISCO+Switches.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58721,
+      "sha256": "31835199dee95208a3257cee3761669c598b035a5e964958042a16ab74325d12"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a1e036235297460bb3cff609df4ead05/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d17db556d953b6bddb17e4dbe2fc07c967a95c8cadcdcc252a33105bba8795e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d17db556d953b6bddb17e4dbe2fc07c967a95c8cadcdcc252a33105bba8795e.xlsx",
+      "file_id": "a1e036235297460bb3cff609df4ead05",
+      "file_name": "Attachment+1+-+Cisco+Switches+Product+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16716,
+      "sha256": "8d17db556d953b6bddb17e4dbe2fc07c967a95c8cadcdcc252a33105bba8795e"
+    }
+  ],
+  "_mirror_hash": "e836458b3cb92a49b974c6d3ad19cfb76aa3ca580f68580fef35b48bd0363968",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.370051+00:00"
+}

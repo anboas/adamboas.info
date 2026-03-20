@@ -1,0 +1,57 @@
+{
+  "id": "sam-3256404b6290411aaed0381a8f2bcf54",
+  "title": "Service Agreement- Environmental System Maintenance and Repair (TSC Tobyhanna)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3256404b6290411aaed0381a8f2bcf54",
+  "opportunity_url": "https://sam.gov/opp/3256404b6290411aaed0381a8f2bcf54/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3256404b6290411aaed0381a8f2bcf54/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3256404b6290411aaed0381a8f2bcf54",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PANRSA-26-P-0000-034216",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3256404b6290411aaed0381a8f2bcf54",
+  "detail_text": "The U.S. Army Contracting Command-Redstone, Operations, Services, & Training Division, plans to obtain information to serve as market research to help identify potential sources that can provide has a requirement for maintenance and repair of its laboratory environment systems located at its TMDE Support Center, Tobyhanna Army Depot, 11 Hap Arnold Blvd, Tobyhanna, PA 18466. The maintenance and repair shall include the following specifications or equivalent (if not brand name): • Remove existing Temp/Humidity Controller for each of the Three (3) labs and replace with PLC Controller • PLC controller to be housed in a new 24x24 NEMA Enclosure • Provide a new stand along PC with VT SCADA to monitor, trend and store all data • Program PLC's to match existing temperature/humidity control • Install new control panels and interface to existing equipment • Startup/Training of new control system This RFI will utilize NAICS Code 811210.",
+  "detail_text_length": 939,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92a4a0239d1c49d29202c93950ac0dc0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfcca7d9d34740cbaaaab173b4d79f2f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92a4a0239d1c49d29202c93950ac0dc0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c34bcd4e669e18fa912a89a45c763432aba238bd1fcfa17a90d8c410352dac09.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c34bcd4e669e18fa912a89a45c763432aba238bd1fcfa17a90d8c410352dac09.pdf",
+      "file_id": "92a4a0239d1c49d29202c93950ac0dc0",
+      "file_name": "PWS+USATA+W80RA6-11-26C.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 120434,
+      "sha256": "c34bcd4e669e18fa912a89a45c763432aba238bd1fcfa17a90d8c410352dac09"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfcca7d9d34740cbaaaab173b4d79f2f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9c351bce64394c9a7b4b7009d222a754a091a61c08af587384dc6aab681ac89b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9c351bce64394c9a7b4b7009d222a754a091a61c08af587384dc6aab681ac89b.pdf",
+      "file_id": "cfcca7d9d34740cbaaaab173b4d79f2f",
+      "file_name": "Request+for+Information+-W80RA6-11-26C-v1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 247725,
+      "sha256": "9c351bce64394c9a7b4b7009d222a754a091a61c08af587384dc6aab681ac89b"
+    }
+  ],
+  "_mirror_hash": "69647c5c72b20f5d9b514b0469ec1cfa13b29d83dbc83f75d14c3fb6f046c171",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.455884+00:00"
+}

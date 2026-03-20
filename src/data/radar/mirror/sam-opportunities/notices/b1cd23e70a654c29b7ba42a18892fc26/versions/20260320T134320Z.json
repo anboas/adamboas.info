@@ -1,0 +1,70 @@
+{
+  "id": "sam-b1cd23e70a654c29b7ba42a18892fc26",
+  "title": "Request for Information (RFI) – Standardization of Service Contract Act (SCA) Price Adjustment Templates & Methodology (FAR 52.222-43) for the FCDAS O&M Contract",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1cd23e70a654c29b7ba42a18892fc26",
+  "opportunity_url": "https://sam.gov/opp/b1cd23e70a654c29b7ba42a18892fc26/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b1cd23e70a654c29b7ba42a18892fc26/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b1cd23e70a654c29b7ba42a18892fc26",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "REQUIREMENTS-25-4967",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION.DEPT OF COMMERCE NOAA",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1cd23e70a654c29b7ba42a18892fc26",
+  "detail_text": "1.0 DESCRIPTION SIAD is currently conducting market research to refine its methodology for calculating price adjustments under FAR 52.222-43 (Fair Labor Standards Act and Service Contract Labor Standards—Price Adjustment). SIAD is developing a standardized pricing template intended for use in Independent Government Cost Estimates (IGCEs), Contractor pricing proposals, and subsequent contract modification requests for a firm fixed price contract. The primary objective of this RFI is to solicit industry feedback on two critical pricing challenges:: SCA/CBA Price Adjustments: To solicit industry feedback on the usability of the attached template and best practices for segregating \"voluntary\" company fringe benefits from minimum mandatory requirements established in Collective Bargaining Agreements (CBAs) and Department of Labor Wage Determinations (WDs). Government-Directed Overtime: Segregating surge/emergency overtime from standard Firm Fixed Price (FFP) operations. A draft version of this pricing template is attached to this notice (See Attachment 1). This is a Request for Information (RFI) only. This RFI is issued solely for information and planning purposes – it does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. 2.0 PROBLEM STATEMENT & OBJECTIVE To comply with FAR 52.222-43, price adjustments must be limited to the cost increases required to comply with the new Wage Determination (WD) or Collective Bargaining Agreement (CBA). The Government cannot reimburse increases in voluntary benefits that were already in excess of the previous minimums. The Challenge: Standard templates often obscure the \"Actual Rate Paid.\" For example, if a CBA required $4.50/hr but the contractor actually paid $5.00/hr, and the new CBA requires $4.80/hr, the recoverable cost is $0 (since the contractor is already compliant). However, many templates simply calculate the delta between Old CBA ($4.50) and New CBA ($4.80), incorrectly suggesting a $0.30 reimbursement. The Objective: We are seeking industry input on how to design a \"Waterfall\" or \"Side-by-Side\" schedule that clearly visualizes: The Floor: The Old WD/CBA Minimum. The Actual: The actual rate paid by the contractor (including voluntary variance). The New Requirement: The New WD/CBA Minimum. The Delta: The mathematical logic to isolate only the recoverable increase. 3.0 REQUESTED INFORMATION The Government requests that interested parties provide feedback, methodologies, and/or sample redacted templates that demonstrate how your firm handles the following: Template and Verification A. Template Structure & Visualization Visualizing the Segregation : What is the most effective layout to display \"Minimum Required\" vs. \"Actual Paid\" side-by-side? How do you visually differentiate between the \"Voluntary Variance\" (non-recoverable) and the \"Statutory Increase\" (recoverable)? Handling \"Lump Sum\" vs. \"Hourly\": How does your preferred template structure handle the conversion of monthly fixed-cost benefits (e.g., Health Insurance premiums) into the hourly rates required for the adjustment calculation? B. Calculation Logic The \"Max\" Formula: Does your firm utilize a specific formulaic approach (e.g., IF Actual > New Minimum THEN 0) to automatically zero-out non-recoverable costs? How is this best represented in a spreadsheet to ensure transparency for government evaluators? Granularity: Should this comparison be done at the \"Labor Category\" level (using averages) or the \"Individual Employee\" level? What are the trade-offs in administrative burden vs. accuracy? Assumptions: Are there any errors/omissions in the Government draft of the pricing template and what corrections are recommended to these errors? C. Verification Audit Trail: How can a template best link \"Actuals Paid\" to payroll records? Do you recommend adding a specific column for \"Payroll Reference / GL Code\" to streamline the audit of the \"Actuals\" column? Company Practices A. Accounting & Segregation Capabilities Does your accounting system currently code fringe benefit contributions mandated by a CBA/WD separately from voluntary company contributions (e.g., 401k matching above CBA limits, superior health plans)? Can your system export these costs as distinct line items for a prior performance period to support a \"look-back\" analysis? B. Calculation Methodology & Conversion Fixed Cost Conversion: For benefits paid on a fixed monthly basis (e.g., health insurance premiums), what methodology does your firm use to convert these fixed costs into the hourly equivalent required for SCA comparison? How are fluctuating hours (overtime/LWOP) accounted for in this conversion? Actuals vs. Composites: For FAR 52.222-43 adjustments, do you typically rely on actual rates paid per individual employee, or do you utilize average composite rates per labor category? Benefit Plan Structure: How does your firm capture cost increases for \"defined benefit\" or \"level of care\" plans (where premiums rise but the CBA minimum dollar value remains static)? C. Template Logic & Statutory Burdens Payroll Tax Burden: The Government intends to structure the template to apply statutory burdens (FICA, FUTA, SUTA, WCI) only to the recoverable wage/benefit increase, while strictly excluding G&A, Overhead, and Profit as per FAR 52.222-43(e). Does this alignment cause any conflict with your standard estimating systems? Uncompensated Overtime: How should the pricing template best account for Health & Welfare (H&W) liability on uncompensated overtime hours for exempt employees (if applicable)? Handling Government-Directed Overtime (Non-FFP) The Government intends to treat \"Government-Directed Overtime\" (e.g., surge support, emergencies) as a separate reimbursable Contract Line Item Number (CLIN), distinct from the base Firm Fixed Price (FFP) services. Segregation Mechanism: How should the pricing template best isolate these overtime hours to ensure they are not commingled with the operational overtime already \"baked in\" to the FFP overhead/labor mix? Pricing the Premium: How do you structure the template to show the \"Overtime Premium\" (the 0.5x on top of the 1.0x base) separately? Fringe/H&W Caps: Since Service Contract Act H&W benefits are typically capped at 40 hours per week, how does your pricing model ensure that H&W is not double-counted on Government-directed overtime hours if the employee has already met their weekly cap on the FFP side? Staffing Baselines and Pricing Flexibility The Government is assessing how to strike the right balance between prescribing staffing levels and encouraging industry flexibility. Currently, there are 18 Full-Time Equivalents (FTEs) serving as Operations and Maintenance Technicians on the existing contract. When the formal solicitation is released, the Government plans to stipulate a minimum mandatory staffing level and coverage of 18 FTEs for this functional work during the base period of the new contract to reduce performance and technical risk given the 24/7/365 nature of the work. Prescribing mandatory headcounts and a specific labor mix is typically a Statement of Work (SOW) practice, which often reduces flexibility by defining specific tasks and methods. However, the Government ultimately wants bidding companies to propose the most cost-effective, best-value, and creative ways to run the site. We request industry input on finding the right balance for this requirement: Future Period Staffing Projections: If the Government fixes the minimum 18 FTE headcount in the pricing template for future periods, do you believe industry can better understand and propose the work? Industry-Driven Approach: Alternatively, is it preferable that the pricing template allows industry the flexibility to provide their own staffing approach and labor mix for the periods following the mandated base period? 4.0 SUBMISSION INSTRUCTIONS Sample Templates: The Government highly encourages respondents to attach sample Excel templates (with proprietary data removed/redacted) that demonstrate your recommended structure for this calculation taking into consideration the attached Collective Bargaining Agreements and different types of labor covered by the contract. Format: Responses should be submitted in PDF or Word format, with Excel attachments permitted. PDF or Word submission shall use a minimum font of 12 point (Times New Roman) on 8 ½ x 11-inch paper. Each page should be separately numbered. Page Limit: Responses are limited to 2 pages (excluding Excel attachments). Response: Please submit responses via email to jame.chang@noaa.gov and andrea.chiodi@noaa.gov no later than Monday, April, 6. 2026 3:00PM Eastern time . 5.0 DISCLAIMER This RFI is issued solely for information and planning purposes. It does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. Attachments: Please see the Attached Collective Bargaining Agreements that pertain to this contract and the pricing template.",
+  "detail_text_length": 8985,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/104e37fe476c44809d3ff5c815067e57/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53d627210d494265ac422b7248d3690c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e25d79732ab42358171eb250174dd97/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/104e37fe476c44809d3ff5c815067e57/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c48dfd21e82d969dd5db250c1f22c19d98a94425210989bcdb35fdabc205d3a4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c48dfd21e82d969dd5db250c1f22c19d98a94425210989bcdb35fdabc205d3a4.pdf",
+      "file_id": "104e37fe476c44809d3ff5c815067e57",
+      "file_name": "Attachment+5.+060123_053126+NetCentric+Technology+LLC+CBA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1401025,
+      "sha256": "c48dfd21e82d969dd5db250c1f22c19d98a94425210989bcdb35fdabc205d3a4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53d627210d494265ac422b7248d3690c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/85bc574e261e93b1df0d24a4cba633181979d002456965de8bfd3ed5bee27128.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/85bc574e261e93b1df0d24a4cba633181979d002456965de8bfd3ed5bee27128.pdf",
+      "file_id": "53d627210d494265ac422b7248d3690c",
+      "file_name": "Attachment+4.+NOAA+FJCC+CBA+2023+-+2026+_.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 281155,
+      "sha256": "85bc574e261e93b1df0d24a4cba633181979d002456965de8bfd3ed5bee27128"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e25d79732ab42358171eb250174dd97/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d7141872e952ace1229960000be2f16c6c4f3f6cc4e7700a39cfb8ac83f592a7.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d7141872e952ace1229960000be2f16c6c4f3f6cc4e7700a39cfb8ac83f592a7.xlsx",
+      "file_id": "5e25d79732ab42358171eb250174dd97",
+      "file_name": "FCDAS+Pricing+Template+3.19.26.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 140085,
+      "sha256": "d7141872e952ace1229960000be2f16c6c4f3f6cc4e7700a39cfb8ac83f592a7"
+    }
+  ],
+  "_mirror_hash": "e37ea298a3ab0cac81ef4b1dd790639c97b55731928ff98b5655e358c50531dd",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.217592+00:00"
+}

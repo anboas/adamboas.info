@@ -1,0 +1,46 @@
+{
+  "id": "sam-e61624525a344a0ca80ec8182ce29564",
+  "title": "Brand Name- Monaco D-21",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e61624525a344a0ca80ec8182ce29564",
+  "opportunity_url": "https://sam.gov/opp/e61624525a344a0ca80ec8182ce29564/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e61624525a344a0ca80ec8182ce29564/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e61624525a344a0ca80ec8182ce29564",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W912DW-27-R-A003mon",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTHWESTERN.ENDIST SEATTLE.W071 ENDIST SEATTLE",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e61624525a344a0ca80ec8182ce29564",
+  "detail_text": "Notice of Intent for use of brand name or equal descriptions to meet requirements under section 888(a) of the National Defense Authorization Act for Fiscal Year 2017 (Pub. L. 114-328) as referenced in DFARS 206.302-1(c)(2). SPECIAL NOTICE: The U.S. Army Corps of Engineers Seattle District (USACE) will be soliciting proposals for construction of a FY26 project titled: “Construct Hydrant Fueling Facility – Area C (DESC2506), Fairchild ANG, WA.” As part of the construction solicitation, USACE intends to include the following brand name requirement: Monaco Fire Alarm Transceiver and Fire Panel, including the Monaco D-21 fire alarm radio receiver and the Monaco MAAP-X panel (or newest version). Justification: This requirement is essential for Fire Alarm Panel Standardization at Fairchild Air Force Base, as mandated by the Fairchild AFB Design Guide (2022) and authorized by AFCEC/CO Memorandum dated 19 May 2023. The base's current fire alarm reporting system exclusively uses the Monaco D-21 system, which requires all new panels and devices to be of the same manufacturer to match the fire alarm master. The new facility's transceiver must be capable of transmitting a Zone Identification (ZID) to the Monaco D-21 VHF Radio Alarm System located in the base fire stations (FM frequency 138.925 MHz). Standardization is necessary to ensure compatibility with existing equipment, software, and service contracts. Utilizing a different system would require adaptive software or additional equipment, leading to substantial duplication of costs for installation, training, and reprogramming, which are not expected to be recovered through competition. This is not a solicitation for competitive proposals; however, if any interested party believes they can meet the requirement for a brand name or equal description for the Monaco D-21 system, they may submit a capability statement to the point of contact listed in this Special Notice. All information furnished must be in writing and must contain sufficient detail to allow USACE to determine if the interested party can perform the requirement described herein. Compatible system(s) must comply with Provision 52.225-12, Notice of Buy American Requirement-Construction Materials Under Trade Agreements, and Clause 52.225-11, Buy American-Construction Materials under Trade Agreements. All responsible sources may submit a capability statement, which shall be considered by the agency. The submission must be received no later than 10:00 AM PT on April 2, 2026 , to linda.s.obrien@usace.army.mil",
+  "detail_text_length": 2552,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78f8f715f5b84d6aaf973649132f9fda/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78f8f715f5b84d6aaf973649132f9fda/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5cfbbcff82029c735dd4158b44786eee7101bc89462c23b2c49e7cc15a7dfdbf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5cfbbcff82029c735dd4158b44786eee7101bc89462c23b2c49e7cc15a7dfdbf.pdf",
+      "file_id": "78f8f715f5b84d6aaf973649132f9fda",
+      "file_name": "Monaco+D-21.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70797,
+      "sha256": "5cfbbcff82029c735dd4158b44786eee7101bc89462c23b2c49e7cc15a7dfdbf"
+    }
+  ],
+  "_mirror_hash": "b557aded764d215dae8c74aba66cad8f4d7fb74d5de43fc059913b6efa14052a",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.484719+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-dd11cef604d94816b50eef155b20b9d9",
+  "title": "NIIN:011447117/ NOM: Detector, Helicopter, NIIN:011302901/NOM: Signal Processor, NIIN: 011258904/NOM: Indicator, Pressure",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd11cef604d94816b50eef155b20b9d9",
+  "opportunity_url": "https://sam.gov/opp/dd11cef604d94816b50eef155b20b9d9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dd11cef604d94816b50eef155b20b9d9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dd11cef604d94816b50eef155b20b9d9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326RF053",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd11cef604d94816b50eef155b20b9d9",
+  "detail_text": "NAVUP WSS Philadelphia intends to award this 5 Year BOA renewal requirement on a sole source basis. The Government physically does not have in its possession sufficient, accurate, or legible data to contract with other than the current source. One or more of the items under this acquisition is subject to Free Trade Agreements. (FAR 52.225-3). One or more of the items under this acquisition are subject to the World Trade Organization Government Procurement Agreement and Free Trade Agreements. (FAR 52.225-5) These items require Government Source Approval prior to the award. The time required for approval of a new source is normally such that an award cannot be delayed pending approval of a new source. If you are not an approved source, you must submit, together with your proposal, the information detailed in the NAVSUP WSS Source Approval Brochure, which can be obtained on the internet at https://www.navsup.navy.mil/Business-Opportunities/Home/ Offers received which fail to provide all data required by the source approval brochure will not be considered for award under this solicitation. For information or questions regarding this notice, please contact Lauren Phillips at the email address: lauren.n.phillips6.civ@us.navy.mil.",
+  "detail_text_length": 1243,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26639fcaa1004972aa9457a5d3284848/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26639fcaa1004972aa9457a5d3284848/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b910f2a1e8de701e118d2e54c09cf9b0dcb3de21a9afd72a1086a380b50b9cf5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b910f2a1e8de701e118d2e54c09cf9b0dcb3de21a9afd72a1086a380b50b9cf5.pdf",
+      "file_id": "26639fcaa1004972aa9457a5d3284848",
+      "file_name": "3.01_Solicitation_N0038326RF053.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 7451834,
+      "sha256": "b910f2a1e8de701e118d2e54c09cf9b0dcb3de21a9afd72a1086a380b50b9cf5"
+    }
+  ],
+  "_mirror_hash": "2fc89b03ab3f49d3b763bfecd04a36c85707529535a18d1dcc20fc4969bbb4ec",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.235462+00:00"
+}

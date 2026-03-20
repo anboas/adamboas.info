@@ -1,30 +1,29 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-19T13:47:32.545973+00:00
+Generated: 2026-03-20T13:50:16.362074+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/19/2026
+Posted range: 01/01/2026 -> 03/20/2026
 
 ## Counts
-- Total candidates: 20
+- Total candidates: 19
 - Navy-related: 0
-- Full detail cached: 20
+- Full detail cached: 19
 - Notices with attachments: 13
 - Total attachment links: 18
 - Pre-solicitation: 4
-- Sources Sought: 10
+- Sources Sought: 9
 - Special Notice: 6
 
 ## Engagement signals
 - Pre-solicitation: 4
-- Sources Sought: 10
+- Sources Sought: 9
 - Special Notice: 6
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-04 | DEPT OF DEFENSE | [Wireless Receiver and Transmitter Bundle](https://sam.gov/opp/f41ec02d17544af8bb6d52c77d0fe498/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-27 | 2026-03-05 | DEPT OF DEFENSE | [Ferry Transportation Services](https://sam.gov/opp/951ff696a76448cbbcfda5251a044f95/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-06 | DEPT OF DEFENSE | [EV Charger and Deiseal Generator](https://sam.gov/opp/0fc8006da8564316a8ae77b0e4a4ef7e/view) |
 | 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [North Carolina Ports Authority Services](https://sam.gov/opp/ab822a3527f1475eb3437030286276df/view) |

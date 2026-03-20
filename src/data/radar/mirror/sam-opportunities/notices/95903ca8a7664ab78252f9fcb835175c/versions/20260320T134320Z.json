@@ -1,0 +1,46 @@
+{
+  "id": "sam-95903ca8a7664ab78252f9fcb835175c",
+  "title": "Follow-On Administrative Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95903ca8a7664ab78252f9fcb835175c",
+  "opportunity_url": "https://sam.gov/opp/95903ca8a7664ab78252f9fcb835175c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/95903ca8a7664ab78252f9fcb835175c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "95903ca8a7664ab78252f9fcb835175c",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6426726R3002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+  "posted_date": "2026-03-19",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95903ca8a7664ab78252f9fcb835175c",
+  "detail_text": "Questions and Answers_N6426726R3002 posted as of 03/19/2026. ----------------------------------------------------------------------------------------------- This solicitation is for a task order under the SeaPort-NxG Multiple Award Contract (MAC) and is open exclusively to active SeaPort-NxG MAC Prime holders, in accordance with FAR 16.505. Proposals submitted by non-MAC holders will not be evaluated. This task order is set aside for SBA-certified 8(a) program participants. As these are non-commercial support services, refer to the attachments for additional details. Note: Only Prime MAC holders on the SeaPort-NxG MAC are eligible for award.",
+  "detail_text_length": 649,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7678c88d6de346a1a62041fb8bbe3160/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7678c88d6de346a1a62041fb8bbe3160/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d08f8a64c7f7798c573c1552a68f5f5a905bd0d47ae8b3af2802535c75c58c98.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d08f8a64c7f7798c573c1552a68f5f5a905bd0d47ae8b3af2802535c75c58c98.docx",
+      "file_id": "7678c88d6de346a1a62041fb8bbe3160",
+      "file_name": "Questions+and+Answers_N6426726R3002.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 112136,
+      "sha256": "d08f8a64c7f7798c573c1552a68f5f5a905bd0d47ae8b3af2802535c75c58c98"
+    }
+  ],
+  "_mirror_hash": "21641f85a05cbb326785fdb639ed530a94f0f4c3fc5711eddba083fd2749a787",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.065551+00:00"
+}

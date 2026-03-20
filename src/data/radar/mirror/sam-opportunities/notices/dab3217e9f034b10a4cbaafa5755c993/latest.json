@@ -1,0 +1,45 @@
+{
+  "id": "sam-dab3217e9f034b10a4cbaafa5755c993",
+  "title": "Galley Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dab3217e9f034b10a4cbaafa5755c993",
+  "opportunity_url": "https://sam.gov/opp/dab3217e9f034b10a4cbaafa5755c993/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dab3217e9f034b10a4cbaafa5755c993/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dab3217e9f034b10a4cbaafa5755c993",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QW093",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dab3217e9f034b10a4cbaafa5755c993",
+  "detail_text": "The Contracting Department, NAVSUP Fleet Logistics Center, Norfolk, VA, 23511-3392 intends to negotiate a Full and Open Competition of FAR Part 13, Simplified Acquisition Procedures, galley maintenance services. . Delivery is FOB Destination and is required not later than 30 days after contract award; Delivery location is NAVAL SUBMARINE BASE GROTON, CT AND NAVAL STATION NEWPORT, RI . Responsibility and Inspection: unless otherwise specified in the order, the supplier is responsible for the performance of all inspection requirements and quality control. The Government will conduct an acceptance inspection at the point of delivery. The North American Industry Classification System (NAICS) code for this acquisition is 811412 with a size standard of $19 million dollars. A complete RFQ package will be available on or about 20 March 2026 by downloading the documents at the NECO Website as follows: http:// www.neco.navy.mil and Sam.gov. website as follows: https://sam.gov/. Potential contractors are hereby notified that the solicitation and subsequent amendments to the solicitation will ONLY be available for download at the above site; this office will no longer issue hard copy solicitations. By submitting a quote, the vendor is self-certifying that neither the requestor nor the principal corporate officials and owners are currently suspended, debarred, or otherwise ineligible to receive contracts from any federal agency. Failure to do so may represent grounds for refusing to accept the quote. By submission of a quote, the contractor acknowledges the requirement that a prospective awardee must be registered in the System for Award Management (SAM) database prior to award, during performance, and through final payment of any contract resulting from this solicitation, except for awards to foreign vendors for work to be performed outside the United States. Lack of registration in the SAM database will make a contractor ineligible for award. Contractors may obtain information on registration and annual confirmation requirements by calling 866-606-8220, or via the Internet at https://www.sam.gov. Please direct all questions regarding this requirement via e-mail to the POC identified in this synopsis: Sarah Celestin, Contract Specialist, sarah.n.celestin.civ@us.navy.mil, (757) 443-2105.",
+  "detail_text_length": 2315,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/835e8b62761b4ae98e395bbebc2a1301/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/835e8b62761b4ae98e395bbebc2a1301/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a335fc2776de9a0aa1b43477aac521ddeba1c7e9f2117d71935be58107328949.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a335fc2776de9a0aa1b43477aac521ddeba1c7e9f2117d71935be58107328949.pdf",
+      "file_id": "835e8b62761b4ae98e395bbebc2a1301",
+      "file_name": "Official+Solicitation+-+N0018926QW093.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2895025,
+      "sha256": "a335fc2776de9a0aa1b43477aac521ddeba1c7e9f2117d71935be58107328949"
+    }
+  ],
+  "_mirror_hash": "f52ad175e5232a84e1309e7f6ff2ccb90f1e7a1826e5673d4ee26a5aff5501c6",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.169727+00:00"
+}

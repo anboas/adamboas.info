@@ -1,0 +1,48 @@
+{
+  "id": "sam-c22b5e5358e548c4b2db57ac09f3357a",
+  "title": "Pre-Solicitation Notice for USS HIGGINS (DDG 76)  6C1 Bundle 3",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c22b5e5358e548c4b2db57ac09f3357a",
+  "opportunity_url": "https://sam.gov/opp/c22b5e5358e548c4b2db57ac09f3357a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c22b5e5358e548c4b2db57ac09f3357a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c22b5e5358e548c4b2db57ac09f3357a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6264926RA044",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-04-05",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c22b5e5358e548c4b2db57ac09f3357a",
+  "detail_text": "The Government anticipates issuing a Request for Proposal (RFP) on or about 6 Apr 2026. The solicitation and any subsequent amendments will be made available through the System for Award Management (SAM.gov) website. Please see attachment for more detailed information.",
+  "detail_text_length": 269,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b35d2b077ccb4d5586f807508237eece/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b35d2b077ccb4d5586f807508237eece/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79fe25f6a3baed34ba306e5079b3183820a9637aae85e94c005c545950742d03.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79fe25f6a3baed34ba306e5079b3183820a9637aae85e94c005c545950742d03.pdf",
+      "file_id": "b35d2b077ccb4d5586f807508237eece",
+      "file_name": "Pre-Solicitation+Notice+N6264926RA044.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148883,
+      "sha256": "79fe25f6a3baed34ba306e5079b3183820a9637aae85e94c005c545950742d03"
+    }
+  ],
+  "_mirror_hash": "78a54457102da6f13cbab2e63a8077825a78aa359d1e86cafb158c36507d040b",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.053302+00:00"
+}

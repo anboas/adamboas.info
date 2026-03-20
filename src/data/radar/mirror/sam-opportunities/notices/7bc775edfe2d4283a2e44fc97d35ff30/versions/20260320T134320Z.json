@@ -1,0 +1,46 @@
+{
+  "id": "sam-7bc775edfe2d4283a2e44fc97d35ff30",
+  "title": "Copper to Fiber Migration",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7bc775edfe2d4283a2e44fc97d35ff30",
+  "opportunity_url": "https://sam.gov/opp/7bc775edfe2d4283a2e44fc97d35ff30/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7bc775edfe2d4283a2e44fc97d35ff30/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7bc775edfe2d4283a2e44fc97d35ff30",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "Copper_to_Fiber_Migration",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7bc775edfe2d4283a2e44fc97d35ff30",
+  "detail_text": "The 31st Contracting Squadron, Aviano AFB, intends to award a sole source acquisition, under authority FAR Overhaul 12.102 Restricting Competition; 41 U.S.C. 1901, for establishing a contract (base + 3 years option) to provide 31st Fighter Wing, GSUs and supported organizations with telecommunications commercial fixed services. This involves transformation/adaptation of \"generic\" ADSL lines, analog involves transformation adaptation of \"generic\" ADSL lines, analog (POTS) and Basic ISDN (BRI) lines and three Primary ISDN (PRI) trunks, which provide commercial calling capability (both incoming and outgoing) to the entire base. The services requested include activation, deactivation, maintenance, relocation and billing for current and future services. The Italian Authority is mandating to terminate the copper-based technology lines by May 2026 which involves transformation of old Aviano AB lines. A determination not to compete this procurement based on response to this notice is solely within the discretion of the Government. This notice of intent is NOT a request for competitive proposals or a solicitation of offers. The Justification for Other Than Full and Open Competition is attached. The point of contact for this action is Ms. Barbara Francescon, phone 0039-0434-307950, e-mail: barbara.francescon.1.it@us.af.mil or Mr. Gualtiero Casadio, phone 0039-0434-307931, E-mail: gualtiero.casadio.it@us.af.mil",
+  "detail_text_length": 1423,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29aab782b350468fb26030807dc2a967/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29aab782b350468fb26030807dc2a967/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/866a2470d8200732e95fba1c737e5a27be5bb4f0aaab694aad7593868c25d921.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/866a2470d8200732e95fba1c737e5a27be5bb4f0aaab694aad7593868c25d921.pdf",
+      "file_id": "29aab782b350468fb26030807dc2a967",
+      "file_name": "3_Sole+Source_+Telecommunications+Services+_Redacted1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 779656,
+      "sha256": "866a2470d8200732e95fba1c737e5a27be5bb4f0aaab694aad7593868c25d921"
+    }
+  ],
+  "_mirror_hash": "89807c875c6d9b6b51980a8e054a8134f12827d2c96835257a93db4e455a7d65",
+  "_mirror_run_id": "20260320T134320Z",
+  "_mirror_recorded_at": "2026-03-20T13:48:30.558628+00:00"
+}
