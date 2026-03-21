@@ -1,0 +1,59 @@
+{
+  "id": "sam-ec59625af0a54ca68f501e0aa806c41a",
+  "title": "Q--Sources Sought Notice for DOI Wellness Center Operations",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec59625af0a54ca68f501e0aa806c41a",
+  "opportunity_url": "https://sam.gov/opp/ec59625af0a54ca68f501e0aa806c41a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ec59625af0a54ca68f501e0aa806c41a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ec59625af0a54ca68f501e0aa806c41a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Sources Sought",
+    "Special Notice"
+  ],
+  "solicitation_number": "140D0426Q0279",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec59625af0a54ca68f501e0aa806c41a",
+  "detail_text": "Purpose: The Government is seeking information related to the attached draft Statement of Work (Attachment A) from interested vendors. Interested vendors shall confirm whether or not it is capable of performing the work and hold the correct certifications. Additional Information: Responses to this Sources Sought Notice are strictly voluntary and will not affect any vendor¿s ability to submit a quote if, or when, a solicitation is released. This is being issued solely for information and planning purposes and does not constitute a solicitation or obligation on the part of the Government. Neither unsolicited quotes nor any other kinds of offers will be considered at this time. No entitlement to payment by the Government of direct or indirect costs or charges will arise as a result of the submission of information in response to this Sources Sought. The Government will not be liable for or suffer any consequential damages for any improperly identified proprietary information. Proprietary information will be safeguarded in accordance with the applicable Government regulations. If you submit proprietary information, you must clearly mark ¿PROPRIETARY¿ on every sheet containing such information and segregate the proprietary information to the maximum extent practical from other portions of your response (e.g., use an attachment or exhibit). Respondents are responsible for adequately marking proprietary information in their response. All information received in response to this Sources Sought that is marked ¿Proprietary¿ will be handled accordingly. An electronic acknowledgement of the vendor¿s submission will be provided. If you do not receive an acknowledgement within one business day, please notify the Contracting Officer to ensure successful delivery. Submission Information: This Sources Sought is issued via SAM.gov https://sam.gov/ under NAICS Code 621999 for All Other Miscellaneous Ambulatory Health Care Services. All potential sources with the capability to provide the requirements identified in the SOW are invited to submit, in writing, sufficient information within the page limitation (listed below). This information shall demonstrate the vendor¿s ability to fulfill the requirement and be responsive to the technical and acquisition-related questions in this Sources Sought, as indicated below.",
+  "detail_text_length": 2335,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac3af746b6d647a4a1885d64e23645da/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c27bb89fda5a4dcaaa64c31f6edd617c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac3af746b6d647a4a1885d64e23645da/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b8abff191556e2c99445b1d619448fe1425e0bb603224770b9da69356a08bfd2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b8abff191556e2c99445b1d619448fe1425e0bb603224770b9da69356a08bfd2.pdf",
+      "file_id": "ac3af746b6d647a4a1885d64e23645da",
+      "file_name": "Sources_Sought_Notice_DOI_Wellness_Center_Operations_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 409360,
+      "sha256": "b8abff191556e2c99445b1d619448fe1425e0bb603224770b9da69356a08bfd2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c27bb89fda5a4dcaaa64c31f6edd617c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/62fc14021881b04724acdc0c5ef78d6c78f1de2d3329befafb42a43dbe356ebc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/62fc14021881b04724acdc0c5ef78d6c78f1de2d3329befafb42a43dbe356ebc.pdf",
+      "file_id": "c27bb89fda5a4dcaaa64c31f6edd617c",
+      "file_name": "Draft_SOW_DOI_WELLNESS_CENTER_OPERATIONS_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 444023,
+      "sha256": "62fc14021881b04724acdc0c5ef78d6c78f1de2d3329befafb42a43dbe356ebc"
+    }
+  ],
+  "_mirror_hash": "6330686f78256f9c9c93dfc9ef4b3c8d4a97597c194da58713f384e5bbc62df3",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.238427+00:00"
+}

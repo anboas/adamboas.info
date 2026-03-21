@@ -1,0 +1,56 @@
+{
+  "id": "sam-6e206cdfaa1a47d7835f9c585abb68b0",
+  "title": "Adventure Light Liferaft Lights",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e206cdfaa1a47d7835f9c585abb68b0",
+  "opportunity_url": "https://sam.gov/opp/6e206cdfaa1a47d7835f9c585abb68b0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6e206cdfaa1a47d7835f9c585abb68b0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6e206cdfaa1a47d7835f9c585abb68b0",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS270",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e206cdfaa1a47d7835f9c585abb68b0",
+  "detail_text": "This Solicitation is a BRAND NAME REQUIREMENT for direct replacements of ADVENTURE LIGHT'S LIFERAFT LIGHTS iaw RFO 12.201-1(c)(1). See attached soliciation issued 3/20/26, closing 3/31/26. This posting including its attachments provides all information required by RFO 5.201(c). Please contact the listed contracting personnel should you have any questions.",
+  "detail_text_length": 357,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96984c51ddb54c2dac2534aec982d973/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a8eaeacfb93445d18f0259885e4134c6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96984c51ddb54c2dac2534aec982d973/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c80abb3e57840c63b5bc0ea7fbe1b7249e8a24f9adebeb13f8e3348c4eb11cc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c80abb3e57840c63b5bc0ea7fbe1b7249e8a24f9adebeb13f8e3348c4eb11cc.pdf",
+      "file_id": "96984c51ddb54c2dac2534aec982d973",
+      "file_name": "1.3.5+N62758297600+RFO+Brand+Name_RD_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 173352,
+      "sha256": "2c80abb3e57840c63b5bc0ea7fbe1b7249e8a24f9adebeb13f8e3348c4eb11cc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a8eaeacfb93445d18f0259885e4134c6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0bc92df89630c08abd7ac3eb815cc0f9455e3951c0b5e57c5037afee7fcc5719.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0bc92df89630c08abd7ac3eb815cc0f9455e3951c0b5e57c5037afee7fcc5719.pdf",
+      "file_id": "a8eaeacfb93445d18f0259885e4134c6",
+      "file_name": "N0040626QS270+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 7797880,
+      "sha256": "0bc92df89630c08abd7ac3eb815cc0f9455e3951c0b5e57c5037afee7fcc5719"
+    }
+  ],
+  "_mirror_hash": "30a0a85dcc2d6536bc1b90268602fad0afbdad637382471266edc419774a2ac2",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.241096+00:00"
+}

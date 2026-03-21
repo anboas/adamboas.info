@@ -1,0 +1,46 @@
+{
+  "id": "sam-70d9f020e8ce41b2a8f109b8c1210d8a",
+  "title": "CASE CARRING, BATTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70d9f020e8ce41b2a8f109b8c1210d8a",
+  "opportunity_url": "https://sam.gov/opp/70d9f020e8ce41b2a8f109b8c1210d8a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/70d9f020e8ce41b2a8f109b8c1210d8a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "70d9f020e8ce41b2a8f109b8c1210d8a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRRA2-26-Q-0034",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION HUNTSVILLE.DLA AVIATION AT HUNTSVILLE, AL",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70d9f020e8ce41b2a8f109b8c1210d8a",
+  "detail_text": "CASE CARRING, BATTER",
+  "detail_text_length": 20,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42d07aa90f9f4f2a8e966d8a6029659a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42d07aa90f9f4f2a8e966d8a6029659a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ecd8e3358a583975cd386c9567944f37fee2189894d111ed545d193d9e522e25.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ecd8e3358a583975cd386c9567944f37fee2189894d111ed545d193d9e522e25.doc",
+      "file_id": "42d07aa90f9f4f2a8e966d8a6029659a",
+      "file_name": "Sources+Sought+D16F0329D1-SPRRA2-26-Q-0034.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 41984,
+      "sha256": "ecd8e3358a583975cd386c9567944f37fee2189894d111ed545d193d9e522e25"
+    }
+  ],
+  "_mirror_hash": "a7a07044bb64076b15be54fef7b5585702df90a8739b4fa87101f974fed000c7",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.330360+00:00"
+}

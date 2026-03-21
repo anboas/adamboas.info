@@ -1,0 +1,68 @@
+{
+  "id": "sam-5f56167af1c54d7891c1e82e3d9d0f23",
+  "title": "JBLE Honor Guard alteration and dry-cleaning services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f56167af1c54d7891c1e82e3d9d0f23",
+  "opportunity_url": "https://sam.gov/opp/5f56167af1c54d7891c1e82e3d9d0f23/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5f56167af1c54d7891c1e82e3d9d0f23/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5f56167af1c54d7891c1e82e3d9d0f23",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480026Q9999",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4800  633 CONS PKP",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f56167af1c54d7891c1e82e3d9d0f23",
+  "detail_text": "The Joint Base Langley-Eustis Honor Guard requires professional alteration services and Dry Cleaning for ceremonial uniforms (blues blouses, trousers, Blues light weight jacket, All-Weather Coat, and Overcoat) to ensure a precise, professional appearance. The Government does not intend to award a contract based on this RFI or otherwise pay for the information requested. Pursuant to the FAR Part 19 overhaul, this RFI is issued to identify capable small businesses, including 8(a), HUBZone, Service-Disabled Veteran-Owned (SDVOSB), and Women-Owned Small Business (WOSB) concerns, capable of performing these services. This is not a Request for Proposal (RFP) or a Request for Quotation (RFQ). Responses will be treated as information only. Please complete the rate sheet, RFI information sheet, and notify this agency if your company can provide these services IAW the SOW.",
+  "detail_text_length": 875,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bb487fa80d84082a74b74fcd2ab6fc5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71411b9c427d4f65a8f9774f61996c09/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f222f330ff0d452c8ce9e671c24ab6ee/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bb487fa80d84082a74b74fcd2ab6fc5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf2456275c53e51afc8edef7422ac75e8f54ba74d5971bdf22c980c1b9d3cadb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf2456275c53e51afc8edef7422ac75e8f54ba74d5971bdf22c980c1b9d3cadb.pdf",
+      "file_id": "2bb487fa80d84082a74b74fcd2ab6fc5",
+      "file_name": "SOW+-+BHG+Alterations+and+Dry+Cleaning.1773952078427.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 572230,
+      "sha256": "bf2456275c53e51afc8edef7422ac75e8f54ba74d5971bdf22c980c1b9d3cadb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71411b9c427d4f65a8f9774f61996c09/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/57cb2c208f2784efed2f309186029f2e2916313d2398cc9536319f09e9d5f510.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/57cb2c208f2784efed2f309186029f2e2916313d2398cc9536319f09e9d5f510.xlsx",
+      "file_id": "71411b9c427d4f65a8f9774f61996c09",
+      "file_name": "Contractor+Proposal+Rates.1773952411630.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23884,
+      "sha256": "57cb2c208f2784efed2f309186029f2e2916313d2398cc9536319f09e9d5f510"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f222f330ff0d452c8ce9e671c24ab6ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fabfdbe1ecfcbc2dfe18e1e7d1c2b232796a8c63f26b847b03cbeb694de5c0c1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fabfdbe1ecfcbc2dfe18e1e7d1c2b232796a8c63f26b847b03cbeb694de5c0c1.docx",
+      "file_id": "f222f330ff0d452c8ce9e671c24ab6ee",
+      "file_name": "RFI+Organizational+Information+Request+Sheet.1773955100569.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18011,
+      "sha256": "fabfdbe1ecfcbc2dfe18e1e7d1c2b232796a8c63f26b847b03cbeb694de5c0c1"
+    }
+  ],
+  "_mirror_hash": "aa037c98d6f81febf91b547bac5c1febd6787d339fc7103d65a4f8faa3d41d89",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.366299+00:00"
+}

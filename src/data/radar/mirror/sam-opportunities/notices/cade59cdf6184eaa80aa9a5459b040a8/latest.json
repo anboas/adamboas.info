@@ -1,0 +1,68 @@
+{
+  "id": "sam-cade59cdf6184eaa80aa9a5459b040a8",
+  "title": "Repair of the KC-135-Surge-Surpressor",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cade59cdf6184eaa80aa9a5459b040a8",
+  "opportunity_url": "https://sam.gov/opp/cade59cdf6184eaa80aa9a5459b040a8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cade59cdf6184eaa80aa9a5459b040a8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cade59cdf6184eaa80aa9a5459b040a8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "KC_135_Surge_Surpressor",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8119  AFSC PZABC",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cade59cdf6184eaa80aa9a5459b040a8",
+  "detail_text": "The attached Sources Sought Synopsis is to support the repair of the KC-135-Surge-Surpressor.",
+  "detail_text_length": 93,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0788e84f6d8e47d7ac4ac7cec6934c05/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e8f713678f5402a98d8ee9cbd8a5f7f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a0050f7bead487f977df3c7a5b85923/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0788e84f6d8e47d7ac4ac7cec6934c05/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8046ec0ebb078675d7d72cdc0f473162dec32bbae572421f9326fe20237e1eae.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8046ec0ebb078675d7d72cdc0f473162dec32bbae572421f9326fe20237e1eae.docx",
+      "file_id": "0788e84f6d8e47d7ac4ac7cec6934c05",
+      "file_name": "PWS+for+Surge+Suppressor+C+Contract+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 351459,
+      "sha256": "8046ec0ebb078675d7d72cdc0f473162dec32bbae572421f9326fe20237e1eae"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e8f713678f5402a98d8ee9cbd8a5f7f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ab7ed5d0505953556ca1f230e6f7e2bf6f36c1624d8b0aa2d4f27ce1afb54e7f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ab7ed5d0505953556ca1f230e6f7e2bf6f36c1624d8b0aa2d4f27ce1afb54e7f.pdf",
+      "file_id": "4e8f713678f5402a98d8ee9cbd8a5f7f",
+      "file_name": "MRSSS+Surge+Suppressor.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 156283,
+      "sha256": "ab7ed5d0505953556ca1f230e6f7e2bf6f36c1624d8b0aa2d4f27ce1afb54e7f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a0050f7bead487f977df3c7a5b85923/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a3c1ccecb2f302ff7690709f748a4447e0737cb7ee6a5cab152b898b258eb3ea.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a3c1ccecb2f302ff7690709f748a4447e0737cb7ee6a5cab152b898b258eb3ea.pdf",
+      "file_id": "6a0050f7bead487f977df3c7a5b85923",
+      "file_name": "QR+Memo+for+the+Record_June+2031.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 249310,
+      "sha256": "a3c1ccecb2f302ff7690709f748a4447e0737cb7ee6a5cab152b898b258eb3ea"
+    }
+  ],
+  "_mirror_hash": "2fbb42b6ae5c292af7f74e810cb9280117f343eb8e9d1e8fd3d7c7a382b56e6f",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.466987+00:00"
+}

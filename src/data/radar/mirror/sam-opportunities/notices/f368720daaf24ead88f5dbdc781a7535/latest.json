@@ -1,0 +1,47 @@
+{
+  "id": "sam-f368720daaf24ead88f5dbdc781a7535",
+  "title": "HPAC Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f368720daaf24ead88f5dbdc781a7535",
+  "opportunity_url": "https://sam.gov/opp/f368720daaf24ead88f5dbdc781a7535/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f368720daaf24ead88f5dbdc781a7535/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f368720daaf24ead88f5dbdc781a7535",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N3904026R3075",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f368720daaf24ead88f5dbdc781a7535",
+  "detail_text": "Portsmouth Naval Shipyard, Kittery, ME seeks to identify sources capable of providing Portsmouth Naval Shipyard is seeking to identify sources capable of supporting a Firm Fixed Price contract for a service contract to remove, reinstall and test HPAC #1 and HPAC #2 Due 8:00am EST on Wednesday, March 25, 2026. This Sources Sought announcement is published for Market Research Purposes ONLY. *At a later date, an actual solicitation may be posted to the Government Point of Entry, GPE, at SAM.gov with an official Solicitation number, RFQ Form, and Performance Work Statement. The market research information collected resulting from this Sources Sought Notice will be used to help the Government to identify qualified sources capable of accomplishing the required work outlined in the attached Statement of Work under NAICS Code 811310. All interested parties are encouraged to respond. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination by the Government not to compete this proposed contract based upon responses to this notice is solely within the discretion of the Government. In accordance with FAR 15.201(e), responses to this notice are NOT deemed offers, and CANNOT be accepted by the Government to form a binding contract. Only those Responders that can meet the following criteria should respond to this Sources Sought Notice: Entity has an active CAGE Code, and current registration in the System for Award Management (www.SAM.gov). Entity does NOT appear on the Excluded Parties List If your organization has the potential capacity to accomplish this requirement, responses should include the following information: Company Name and CAGE Code as reflected in its current SAM Registration, and Tax Identification Number (TIN). Point of Contact (POC) (name, telephone number, email address, street address). Business Size & Business Type. Company’s Capabilities Statement, and related marketing materials. Interested parties are requested to respond to this Sources Sought with a PDF Document Format. Responses shall be limited to ten (10) pages and submitted via email to the Contract Specialist, Christie Ashcraft at christie.j.ashcraft.civ@us.navy.mil no later than 8:00am EST on Wednesday, March 25, 2026. Proprietary information should be minimized and must be clearly marked. THIS NOTICE IS FOR MARKET RESEARCH PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT.",
+  "detail_text_length": 2698,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82a8a62760d24beaa3e30536a1394f06/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82a8a62760d24beaa3e30536a1394f06/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/54cdea7546becbf579e4ce20c3ea19a7cc1091b3c8bced46454f5e3be9cb751d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/54cdea7546becbf579e4ce20c3ea19a7cc1091b3c8bced46454f5e3be9cb751d.pdf",
+      "file_id": "82a8a62760d24beaa3e30536a1394f06",
+      "file_name": "N3904026Q3075+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 276122,
+      "sha256": "54cdea7546becbf579e4ce20c3ea19a7cc1091b3c8bced46454f5e3be9cb751d"
+    }
+  ],
+  "_mirror_hash": "43def4025b5bb7048768055c8e54b37870a22720e4ff18cb9bca1741f01ee354",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.180659+00:00"
+}

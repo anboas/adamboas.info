@@ -1,0 +1,57 @@
+{
+  "id": "sam-5d820892abe148988aaa743129d84e80",
+  "title": "Contact Center as a Service Products and Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d820892abe148988aaa743129d84e80",
+  "opportunity_url": "https://sam.gov/opp/5d820892abe148988aaa743129d84e80/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5d820892abe148988aaa743129d84e80/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5d820892abe148988aaa743129d84e80",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "VA-26-00006714",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d820892abe148988aaa743129d84e80",
+  "detail_text": "Contact Center as a Service Products and Services This Request for Information (RFI) is issued for information and planning purposes only and does not constitute a solicitation nor does it restrict the Department of Veterans Affairs (VA) as to the ultimate acquisition approach. This notice is issued solely for information and planning purposes - it does not constitute a Request for Quote (RFQ)/Invitation for Bid (IFB)/Request for Proposal (RFP) or a promise to issue an RFQ, IFB or RFP in the future. This notice does not commit the VA to contract for any supply or service. Further, the VA is not seeking quotes, bids or proposals at this time and will not accept unsolicited proposals in response to this source sought notice. The VA will not pay for any information or administrative costs incurred in response to this notice. Submittals will not be returned to the responder. Not responding to this notice does not preclude participation in any future RFQ or IFB or RFP, if any is issued. If a solicitation is released, it will be synopsized on the Governmentwide Point of Entry. It is the responsibility of potential offerors to monitor the Governmentwide Point of Entry for additional information pertaining to this requirement. A brief synopsis of the required product is provided below: The Department of Veterans Affairs (VA), Office of Information & Technology (OIT), Connectivity & Collaboration Services (CCS), Unified Communications, has a requirement for Contact Center as a Service Products and Services. This is a mission critical OIT project intended to stabilize and improve upon the technical and service delivery of connecting VA Contact Center Professionals to Veterans having a mental health crisis or having thoughts of suicide and improving the Veterans experience with all VA Enterprise Contact Centers. The effort includes supporting the VA in its efforts to expand the implementation and deployment of its current Federal Risk and Authorization Management Program (FedRAMP) Contact Center as a Service (CCaaS), inclusive of new telephony circuits, monitoring, call recording, workforce management tools, voice analytics. VA considers CCaaS to be a cloud-based platform that delivers all the technology and tools a contact center needs—without requiring on premises hardware or traditional Private Branch Exchange (PBX) and/or Automatic Call Distribution (ACD) systems. The VA will staff the contact centers. The CCaaS includes the following capabilities: It’s delivered over the internet as a subscription service. The vendor hosts and maintains the infrastructure, updates, and reliability stack. Organizations get a scalable, flexible contact center that can grow or shrink without major capital investment. Omnichannel routing (voice, email, chat, SMS, social) Interactive Voice Response (IVR) and intelligent call routing Workforce management and quality monitoring AI driven features like bots, transcription, and sentiment analysis Integration with CRMs and UC platforms Realtime and historical analytics",
+  "detail_text_length": 3041,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/285a4d875dea4b24bc82d04415f003de/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a157833b8b04f309ee3965e60366617/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/285a4d875dea4b24bc82d04415f003de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e2ad10f42fc1364ae57f4db465c36f05d86fd7ec090a71f52f30952acc8243b8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e2ad10f42fc1364ae57f4db465c36f05d86fd7ec090a71f52f30952acc8243b8.pdf",
+      "file_id": "285a4d875dea4b24bc82d04415f003de",
+      "file_name": "CCaaS+PWS+Draft+-+13Mar26+v.3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 791855,
+      "sha256": "e2ad10f42fc1364ae57f4db465c36f05d86fd7ec090a71f52f30952acc8243b8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a157833b8b04f309ee3965e60366617/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/64feca1d56d37024ba0020ebff47ad3974eb3f26b98ec406f783359a28b726c3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/64feca1d56d37024ba0020ebff47ad3974eb3f26b98ec406f783359a28b726c3.docx",
+      "file_id": "8a157833b8b04f309ee3965e60366617",
+      "file_name": "Sources+Sought+for+CCaaS+-+SAM+v1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28727,
+      "sha256": "64feca1d56d37024ba0020ebff47ad3974eb3f26b98ec406f783359a28b726c3"
+    }
+  ],
+  "_mirror_hash": "e439b3a6ff09f5d4f8bc5eac57331785dad33c646103eeb09c45bd59a8fff4b9",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.390878+00:00"
+}

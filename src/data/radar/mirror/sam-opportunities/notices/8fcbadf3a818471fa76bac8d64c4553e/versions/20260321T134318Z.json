@@ -1,0 +1,67 @@
+{
+  "id": "sam-8fcbadf3a818471fa76bac8d64c4553e",
+  "title": "ADAPTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8fcbadf3a818471fa76bac8d64c4553e",
+  "opportunity_url": "https://sam.gov/opp/8fcbadf3a818471fa76bac8d64c4553e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8fcbadf3a818471fa76bac8d64c4553e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8fcbadf3a818471fa76bac8d64c4553e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4215826QE033",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-23",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8fcbadf3a818471fa76bac8d64c4553e",
+  "detail_text": "The Norfolk Naval Shipyard (NNSY) in Portsmouth, Virginia, is seeking to Purchase 300 Adapters (specifications within Request for Quote page four (4)). This is a Firm Fixed Price Sole-Sourced Requirement. This is a brief explanation of the attachments included on SAM.gov for this requirement. Please read each one carefully for descriptions and specifications. Attachment two (2) needs to be filled in as directed with YES or NO boxes checked and initialed and dated at the bottom. Attachment two (2) shall be returned with the filled in RFQ. This Award is Sole-Sourced. Your quoted price must be all inclusive. This shall include the price for shipping, completing test reports, completing the Certificate of Compliance, and any other costs.",
+  "detail_text_length": 743,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0edb8bb390274142919ab0517e43cef1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b63a188fc73476a873633161d5f607c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b288fc21ac04bf2b6c84dd9af8b03c6/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0edb8bb390274142919ab0517e43cef1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c3ca0d6a5cfaff1aa231dec85e96ce01248d87f9c54e92d80f9e845c5a75ae5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c3ca0d6a5cfaff1aa231dec85e96ce01248d87f9c54e92d80f9e845c5a75ae5.pdf",
+      "file_id": "0edb8bb390274142919ab0517e43cef1",
+      "file_name": "Attachment+-2-+-+Technical+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191607,
+      "sha256": "7c3ca0d6a5cfaff1aa231dec85e96ce01248d87f9c54e92d80f9e845c5a75ae5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b63a188fc73476a873633161d5f607c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/47a829d8c75a051d1eb8bcc40a1f8eebbea7cdfb24cae1fba641cfc2a01850b5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/47a829d8c75a051d1eb8bcc40a1f8eebbea7cdfb24cae1fba641cfc2a01850b5.pdf",
+      "file_id": "2b63a188fc73476a873633161d5f607c",
+      "file_name": "RFQ+-+N4215826QE033.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1820110,
+      "sha256": "47a829d8c75a051d1eb8bcc40a1f8eebbea7cdfb24cae1fba641cfc2a01850b5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b288fc21ac04bf2b6c84dd9af8b03c6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/efa199b72f374141d70fe1ad147d7793ec09f19faf29121c44df05fa8d8821b7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/efa199b72f374141d70fe1ad147d7793ec09f19faf29121c44df05fa8d8821b7.pdf",
+      "file_id": "6b288fc21ac04bf2b6c84dd9af8b03c6",
+      "file_name": "Attachment+-1-+-+Certificate+of+Compliance.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 446882,
+      "sha256": "efa199b72f374141d70fe1ad147d7793ec09f19faf29121c44df05fa8d8821b7"
+    }
+  ],
+  "_mirror_hash": "13d7a1172de65b593514a9e0ca9a98ad244f8ea5970ad94c1346d4d73132d261",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.213967+00:00"
+}

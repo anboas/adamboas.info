@@ -1,0 +1,57 @@
+{
+  "id": "sam-cd2387430870412eb0713efd2441ce89",
+  "title": "Private Office Space Rental/Workstations for ICE Personnel",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd2387430870412eb0713efd2441ce89",
+  "opportunity_url": "https://sam.gov/opp/cd2387430870412eb0713efd2441ce89/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cd2387430870412eb0713efd2441ce89/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cd2387430870412eb0713efd2441ce89",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70CMSW-033126",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US IMMIGRATION AND CUSTOMS ENFORCEMENT.MISSION SUPPORT WASHINGTON",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd2387430870412eb0713efd2441ce89",
+  "detail_text": "Scope of Work To provide flexible workspace (private offices and/or workstations) for assigned ICE personnel at approved coworking locations across the listed cities, as coordinated with approved vendor and ICE POC. Term: 12 months of coworking space use, starting upon approval/award. Workspace Details : Each site will offer a mix of workstations and private offices. Services Included : Workstations or private office Wi-Fi access Printing privileges (per-site monthly limits) Locations: See full site list below; Locations (by State): •AL: Huntsville, Montgomery •AZ: Concho, Pima, Casa Grande, Chandler, Eloy, Mesa, Phoenix, Scottsdale, Sierra Vista,Tucson •CA: San Diego, Long Beach, Morgan Hill, Sacramento, San Bernadino, San Diego, SanFrancisco, Santa Ana, Rocklin •CO: Colorado Springs •CT: Hartford •DE: Wilmington •FL: Bradenton, Ft Myers, Gainesville, Jacksonville, Niceville, Miami, Naples, Orlando,Sarasota, Tampa, West Palm Beach •GA: Atlanta, East Point, Leesburg • HI: Honolulu • IL: Chicago, Rock Island • IN: Indianapolis • KS: Manhattan, Kansas City • KY: Louisville • LA: Baton Rouge • MA: Boston, Burlington • MD: Baltimore, Frederick • ME: Portland, Scarborough, Caribou • MI: Grand Rapids • MN: Fort Snelling • MO: Kansas City, St Louis • MS: Hattiesburg, Vicksburg, Gulfport • MT: Savage • NC: Cary, Greensboro, Charlotte, Raleigh • NH: Manchester • NE: Omaha • NJ: Mt Laurel • NY: New York • OH: Brooklyn Heights, Westerville • OR: Portland, Roseburg • PA: Allentown, Altoona • PR: San Juan • RI: Crawford • SC: Summerville, Columbia • SD: Hot Springs, Mitchell • TN: Knoxville, Nashville, • TX: Austin, Bryan, El Paso, Houston, San Antonio, Cibolo • UT: West Valley City • VA: Norfolk, North Chesterfield • VT: Derby, Williston • WA: Seattle • WI: Maynes • WV: Martinsburg, Milton • WY: Casper Note: Full physical addresses to be requested as needed; only operational locations will move forward.",
+  "detail_text_length": 1924,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25b71979dac74d41a1255985e83220e4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26da599bf5b242cd84236cd56d95a747/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25b71979dac74d41a1255985e83220e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/27dabc0aeb66902c26d5a834d396901b328b26f067b03415e388b50e1c4578a6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/27dabc0aeb66902c26d5a834d396901b328b26f067b03415e388b50e1c4578a6.pdf",
+      "file_id": "25b71979dac74d41a1255985e83220e4",
+      "file_name": "RFI_Instructions+To+Vendors.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191441,
+      "sha256": "27dabc0aeb66902c26d5a834d396901b328b26f067b03415e388b50e1c4578a6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26da599bf5b242cd84236cd56d95a747/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ab7c9f6f3e34416bc010c781d377d4b0307836f2e3f0c458d5c225a12fb63b10.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ab7c9f6f3e34416bc010c781d377d4b0307836f2e3f0c458d5c225a12fb63b10.pdf",
+      "file_id": "26da599bf5b242cd84236cd56d95a747",
+      "file_name": "Attachment+01+-+DRAFT+SOW_Private+Office+Space+Rental-Workstations+for+ICE+Personnel.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 168079,
+      "sha256": "ab7c9f6f3e34416bc010c781d377d4b0307836f2e3f0c458d5c225a12fb63b10"
+    }
+  ],
+  "_mirror_hash": "54fd2dcd16ae7df16864cdc8fce4d88887b30d6087d5252897d6aedcf4cce939",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.393947+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-88d05bb028574b53907cdd9fe8d21c24",
+  "title": "R614--FY26 - NJHCS Sensitive Document Destruction B+4 OPT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88d05bb028574b53907cdd9fe8d21c24",
+  "opportunity_url": "https://sam.gov/opp/88d05bb028574b53907cdd9fe8d21c24/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/88d05bb028574b53907cdd9fe8d21c24/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "88d05bb028574b53907cdd9fe8d21c24",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24226Q0454",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.242-NETWORK CONTRACT OFFICE 02 (36C242)",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88d05bb028574b53907cdd9fe8d21c24",
+  "detail_text": "This Sources Sought is issued by VISN 2 Contracting Office in Network Contracting Office 2 for the purpose of collecting information about VA New Jersey Healthcare System Sensitive Document Destruction Services. The VA is seeking to provide for this requirement on or about April 2026 to establish a new service contract. The NAICS code identified for this requirement is 561410 Document Preparation Services. Contractor must provide service to all locations listed. The requirement is detailed in the Statement of Work section of this document.",
+  "detail_text_length": 545,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a986a406c9c464693caf09149e90675/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a986a406c9c464693caf09149e90675/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/94331450deb6080a3fd6ebfa314d4dd508f954b1e1b96a2032abcaa283dd29f4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/94331450deb6080a3fd6ebfa314d4dd508f954b1e1b96a2032abcaa283dd29f4.docx",
+      "file_id": "1a986a406c9c464693caf09149e90675",
+      "file_name": "36C24226Q0454.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52984,
+      "sha256": "94331450deb6080a3fd6ebfa314d4dd508f954b1e1b96a2032abcaa283dd29f4"
+    }
+  ],
+  "_mirror_hash": "4197c3bd05367e7f29ae07e8aa98db19e460022e18ca9fadb4602cf9e125749a",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.335660+00:00"
+}

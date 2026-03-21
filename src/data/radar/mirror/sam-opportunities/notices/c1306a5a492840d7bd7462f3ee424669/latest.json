@@ -1,0 +1,79 @@
+{
+  "id": "sam-c1306a5a492840d7bd7462f3ee424669",
+  "title": "Radford Army Ammunition Plant (RFAAP) Sections L&M Matrix",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1306a5a492840d7bd7462f3ee424669",
+  "opportunity_url": "https://sam.gov/opp/c1306a5a492840d7bd7462f3ee424669/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c1306a5a492840d7bd7462f3ee424669/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c1306a5a492840d7bd7462f3ee424669",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1306a5a492840d7bd7462f3ee424669",
+  "detail_text": "Related Notice ID: W519TC-26-R-00003 RFAAP Draft RFP #2 The USG has restructured the evaluation criteria for the Radford Army Ammunition Plant (RFAAP) Competition to incorporate use of a Self-Scoring Matrix as part of a phased evaluation approach. Please refer to the attached Sections L&M and accompanying Solicitation Attachments 0035 and 0036. Request industry feedback on incorporation of this phased approach and specifically the details associated with Phase I and the Self-Scoring Matrix. The USG acknowledges recent receipt of Draft RFP #2 feedback from Industry, which the USG is still evaluating. Therefore, please refrain from commenting on Volumes 1 and 2 (currently referred to as Phase II) within this version of Sections L&M. The purpose of this announcement is to solicit feedback on use of the phased evaluation approach and use of the Self-Scoring Matrix. This is a request for information, and therefore, any potential offerors will not be reimbursed for cost associated with providing responses. Provide responses or questions to the individuals identified on this announcement.",
+  "detail_text_length": 1098,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/20b57a1fca5d41acb3c983fb2a08ed53/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42a9ab698dcd44879b69738e3b827bed/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91bf19a7126a48c6a7c63295fa1605b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a449732b474142c291d8cfad63b847b2/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/20b57a1fca5d41acb3c983fb2a08ed53/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd936a9ea28ef160a61086929f7d02f5166be297d60889cb025cddc8b49f2ada.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd936a9ea28ef160a61086929f7d02f5166be297d60889cb025cddc8b49f2ada.xlsx",
+      "file_id": "20b57a1fca5d41acb3c983fb2a08ed53",
+      "file_name": "Attachment+0035+-+RFAAP+Phase+I+Self-Scoring+Matrix+-+20260310.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90741,
+      "sha256": "cd936a9ea28ef160a61086929f7d02f5166be297d60889cb025cddc8b49f2ada"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42a9ab698dcd44879b69738e3b827bed/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18838fcd7b1a13aadd01ece5a37dddcb26aa9293e4c406d9f244c6b949680f84.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18838fcd7b1a13aadd01ece5a37dddcb26aa9293e4c406d9f244c6b949680f84.docx",
+      "file_id": "42a9ab698dcd44879b69738e3b827bed",
+      "file_name": "Section+L+20Mar2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 115814,
+      "sha256": "18838fcd7b1a13aadd01ece5a37dddcb26aa9293e4c406d9f244c6b949680f84"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91bf19a7126a48c6a7c63295fa1605b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/55c1b336c0a7e88203e49cf08fa0864ad431a93ed93d236e25813b29bf4bd0f1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/55c1b336c0a7e88203e49cf08fa0864ad431a93ed93d236e25813b29bf4bd0f1.pdf",
+      "file_id": "91bf19a7126a48c6a7c63295fa1605b1",
+      "file_name": "Attachment+0036+-+Project+Reference+Template.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122011,
+      "sha256": "55c1b336c0a7e88203e49cf08fa0864ad431a93ed93d236e25813b29bf4bd0f1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a449732b474142c291d8cfad63b847b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7adb71bdcfc179bff54e6bd4987b8916bd27971eb0e6eee86c2e677a7ae9cd1c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7adb71bdcfc179bff54e6bd4987b8916bd27971eb0e6eee86c2e677a7ae9cd1c.docx",
+      "file_id": "a449732b474142c291d8cfad63b847b2",
+      "file_name": "Section+M+20Mar2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 85010,
+      "sha256": "7adb71bdcfc179bff54e6bd4987b8916bd27971eb0e6eee86c2e677a7ae9cd1c"
+    }
+  ],
+  "_mirror_hash": "07f0663e51fbb1b19027188d54075eecc07926c340173c83fcb4fe69bf9cb9cc",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.369079+00:00"
+}

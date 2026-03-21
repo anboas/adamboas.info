@@ -1,0 +1,46 @@
+{
+  "id": "sam-b3d9f6a8e9034ed9a64c3efb835d676c",
+  "title": "Arcadia Wet Well Rehabilitation, Arcadia, Oklahoma",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3d9f6a8e9034ed9a64c3efb835d676c",
+  "opportunity_url": "https://sam.gov/opp/b3d9f6a8e9034ed9a64c3efb835d676c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b3d9f6a8e9034ed9a64c3efb835d676c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b3d9f6a8e9034ed9a64c3efb835d676c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912BV26RCY02",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTHWESTERN.ENDIST TULSA.W076 ENDIST TULSA",
+  "posted_date": "2026-03-20",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3d9f6a8e9034ed9a64c3efb835d676c",
+  "detail_text": "Please see attachment.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83389170130f432ca463f89b03d54d81/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83389170130f432ca463f89b03d54d81/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/00f26c7a40bc974b0a829352f7c6ef6618fd6e38609277aad2115942def9d59d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/00f26c7a40bc974b0a829352f7c6ef6618fd6e38609277aad2115942def9d59d.pdf",
+      "file_id": "83389170130f432ca463f89b03d54d81",
+      "file_name": "Sources+Sought+Notice_Arcadia+Wet+Well+Rahabilitation_20+Mar+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 291711,
+      "sha256": "00f26c7a40bc974b0a829352f7c6ef6618fd6e38609277aad2115942def9d59d"
+    }
+  ],
+  "_mirror_hash": "1f1144f5cd04b82c3a8fc557b0b99e7c7aa2bebc427e34e6f5d2b4ccc0ece72c",
+  "_mirror_run_id": "20260321T134318Z",
+  "_mirror_recorded_at": "2026-03-21T13:46:29.467949+00:00"
+}
