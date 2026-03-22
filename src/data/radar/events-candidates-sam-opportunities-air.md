@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-21T13:47:04.475497+00:00
+Generated: 2026-03-22T13:43:45.421413+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/21/2026
+Posted range: 01/01/2026 -> 03/22/2026
 
 ## Counts
-- Total candidates: 282
+- Total candidates: 274
 - Navy-related: 0
-- Full detail cached: 282
-- Notices with attachments: 221
-- Total attachment links: 651
-- Pre-solicitation: 78
-- Sources Sought: 159
-- Special Notice: 45
+- Full detail cached: 274
+- Notices with attachments: 215
+- Total attachment links: 639
+- Pre-solicitation: 75
+- Sources Sought: 156
+- Special Notice: 43
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 117
-- Sources Sought: 159
-- Special Notice: 45
+- Pre-solicitation: 113
+- Sources Sought: 156
+- Special Notice: 43
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -47,14 +47,6 @@ Posted range: 01/01/2026 -> 03/21/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-03 | 2026-03-04 | DEPT OF DEFENSE | [C-40C (B700) Augmentation](https://sam.gov/opp/c336d8e9d45d4ef8acad3e6d970e4a5d/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-17 | 2026-03-04 | DEPT OF DEFENSE | [SVBU Regression Testing Targets](https://sam.gov/opp/f24f47ef48c243cc95caba938b20a116/view) |
 | 4 | Pre-solicitation | Pre-solicitation | 2026-02-18 | 2026-03-05 | DEPT OF DEFENSE | [Pre-Solicitation Abatement](https://sam.gov/opp/4e56f45acf024a39b298646f1e755b35/view) |
-| 2 | Sources Sought | Sources Sought | 2026-01-22 | 2026-03-06 | DEPT OF DEFENSE | [AFLCMC/ESAN FMS Beni Suef Air Base Runway & Airfield Lighting](https://sam.gov/opp/5e58ff385e914b898f99920f375661cd/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-04 | 2026-03-06 | DEPT OF DEFENSE | [Advanced Color Multi-Functional Display (ACMFD) DMC Retrofit](https://sam.gov/opp/74c8703b00184489b320b25bcbf3a585/view) |
-| 4 | Pre-solicitation | Pre-solicitation | 2026-02-18 | 2026-03-06 | DEPT OF DEFENSE | [Request For Information (RFI) Repair of the C-5 Aft Cargo Doors (Left & Right)_1560 Stock Class NSNs](https://sam.gov/opp/f0c56b3f2f6d41d69bab8123b295aa00/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [F-15 Initiators](https://sam.gov/opp/235823fdf56a4bc4803b01ab13e3d16a/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [Heated Air Supply – Market Intelligence Request](https://sam.gov/opp/39962b25d1ba427a89bfe2db07fbf2e7/view) |
-| 2 | Special Notice | Special Notice | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [Notice of Intent to Award Sole Source - GOENGINEER LLC](https://sam.gov/opp/30da46d292e04eeab7eb5ab18cd52c97/view) |
-| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-24 | 2026-03-06 | DEPT OF DEFENSE | [Request for Information - Commerciality of USAF IDS Design, Installation, and Sustainment](https://sam.gov/opp/a47bf89aabb94dea9fd880469e24ee3e/view) |
-| 2 | Special Notice | Special Notice | 2026-02-24 | 2026-03-06 | DEPT OF DEFENSE | [Overhead Door Repair](https://sam.gov/opp/e441cee5c67a4a54bbe5251176f6ba71/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-11 | 2026-03-07 | DEPT OF DEFENSE | [High Velocity Oxygen Fuel (HVOF) System Calibration and Maintenance](https://sam.gov/opp/e077c679d1cc46c6b682fa3f7b86ead0/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-05 | 2026-03-09 | DEPT OF DEFENSE | [C-5 Battery Control Electronics Module (BCEM)](https://sam.gov/opp/8986f748cabf4f6bb92820f84825bc5b/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-06 | 2026-03-09 | DEPT OF DEFENSE | [RFI - 711 HPW/RHB Chillers Maintenance and Repair](https://sam.gov/opp/227240213486483ca53b457e3b1d8159/view) |

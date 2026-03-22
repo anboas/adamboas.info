@@ -1,30 +1,29 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-21T13:46:53.240628+00:00
+Generated: 2026-03-22T13:43:35.074161+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/21/2026
+Posted range: 01/01/2026 -> 03/22/2026
 
 ## Counts
-- Total candidates: 19
+- Total candidates: 18
 - Navy-related: 0
-- Full detail cached: 19
-- Notices with attachments: 12
-- Total attachment links: 16
+- Full detail cached: 18
+- Notices with attachments: 11
+- Total attachment links: 14
 - Pre-solicitation: 3
-- Sources Sought: 9
+- Sources Sought: 8
 - Special Notice: 7
 
 ## Engagement signals
 - Pre-solicitation: 3
-- Sources Sought: 9
+- Sources Sought: 8
 - Special Notice: 7
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-06 | DEPT OF DEFENSE | [EV Charger and Deiseal Generator](https://sam.gov/opp/0fc8006da8564316a8ae77b0e4a4ef7e/view) |
 | 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [North Carolina Ports Authority Services](https://sam.gov/opp/ab822a3527f1475eb3437030286276df/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-09 | DEPT OF DEFENSE | [Contractor-Operated Parts Store (COPARS)](https://sam.gov/opp/743935fdd658447b85fe0c4802f75444/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-10 | DEPT OF DEFENSE | [Notice of Intent to Sole Source to WOSB for K9 System](https://sam.gov/opp/a5f2ab980911448791d95721fd573d16/view) |

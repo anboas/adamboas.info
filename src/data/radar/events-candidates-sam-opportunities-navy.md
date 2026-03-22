@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-21T13:47:15.804416+00:00
+Generated: 2026-03-22T13:43:57.094620+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/21/2026
+Posted range: 01/01/2026 -> 03/22/2026
 
 ## Counts
-- Total candidates: 118
-- Navy-related: 118
-- Full detail cached: 118
-- Notices with attachments: 45
-- Total attachment links: 180
-- Combined Synopsis/Solicitation: 24
-- Pre-solicitation: 45
+- Total candidates: 110
+- Navy-related: 110
+- Full detail cached: 110
+- Notices with attachments: 41
+- Total attachment links: 172
+- Combined Synopsis/Solicitation: 21
+- Pre-solicitation: 41
 - Solicitation: 14
-- Sources Sought: 25
+- Sources Sought: 24
 - Special Notice: 10
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 47
-- Sources Sought: 25
+- Pre-solicitation: 43
+- Sources Sought: 24
 - Vendor Outreach: 1
 - Special Notice: 10
 
@@ -43,14 +43,6 @@ Posted range: 01/01/2026 -> 03/21/2026
 | 7 | Sources Sought | Sources Sought | 2026-02-13 | 2026-02-24 | DEPT OF DEFENSE | [Base Assemblies](https://sam.gov/opp/abcf191218124794a716ce06ad0f3619/view) |
 | 7 | Special Notice | Pre-solicitation, Special Notice | 2026-02-02 | 2026-02-27 | DEPT OF DEFENSE | [Undergraduate Jet Training System (UJTS) Request for Information March 2025](https://sam.gov/opp/38ff7981021b4da19d631777a849109d/view) |
 | 5 | Special Notice | Special Notice | 2026-02-24 | 2026-02-27 | DEPT OF DEFENSE | [N0001925R1004 Draft PMA-271 E-6B Mercury Depot Level MRO PWS and PMI Depot Level Maintenance Spec for MRO](https://sam.gov/opp/cbedb8a59397447b922b62c2f53cf5c9/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [EVALUATION-DRIVEN ARTIFICIAL INTELLIGENCE DEVELOPMENT AND DELIVERY SUPPORT FOR MISSION-CRITICAL DATA WORKFLOWS](https://sam.gov/opp/a282da068fd14ea4bd1577b20b81b418/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [Airborne Radar supporting Multi-mission Maritime Aircraft](https://sam.gov/opp/78ebb01c9dca4e79b0279b4f37c62f07/view) |
-| 5 | Sources Sought | Sources Sought | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [Assault APR-39/FRP4 Production Base Contract (lots 10-12)](https://sam.gov/opp/3d1e0fcda66646fc9e1c8654e68f3ba1/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-02-19 | 2026-03-06 | DEPT OF DEFENSE | [TT&E and Repair of LTU](https://sam.gov/opp/b06e56247bbd4ea587dd22e582ccb892/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-02-20 | 2026-03-06 | DEPT OF DEFENSE | [BAE EECU/Super AMATS Test Bench](https://sam.gov/opp/815d1748aa3a43b7a7d982a035b87977/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-02 | 2026-03-06 | DEPT OF DEFENSE | [Meter Calibrator Repair](https://sam.gov/opp/9eb3b21048d44791bf3e9078a32f7aa0/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-02 | 2026-03-06 | DEPT OF DEFENSE | [T-AGS 67 Uninterruptible Power Supply Start Up Commissioning and Familiarization](https://sam.gov/opp/8305903b93904561bf53cb716d8453f3/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-06 | DEPT OF DEFENSE | [USNS HENRY J. KAISER (T-AO 187) Goulds 3196 Pump](https://sam.gov/opp/490f1e277b8b4a43b89447c889304bd5/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-02-20 | 2026-03-07 | DEPT OF DEFENSE | [MH-60 Airborne Mine Countermeasure (AMCM) Carriage, Stream, Tow and Recovery System (CSTRS) Support](https://sam.gov/opp/d0ff988a1b6c4d5aac65f876bb02aa49/view) |
 | 6 | Solicitation | - | 2026-02-10 | 2026-03-09 | DEPT OF DEFENSE | [TIH 28/30/32](https://sam.gov/opp/ef0112fc73af4e388a1ffb1ffd8f0257/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-09 | DEPT OF DEFENSE | [Defense Compressed Air Test Kits and Testing Services Follow-on](https://sam.gov/opp/f726e95a66164d8998b58bf7bc37a41e/view) |
