@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-22T13:43:31.189599+00:00
+Generated: 2026-03-23T13:43:25.419946+00:00
 Profile: joint
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/22/2026
+Posted range: 01/01/2026 -> 03/23/2026
 
 ## Counts
-- Total candidates: 525
+- Total candidates: 528
 - Navy-related: 2
-- Full detail cached: 525
-- Notices with attachments: 202
-- Total attachment links: 259
+- Full detail cached: 528
+- Notices with attachments: 201
+- Total attachment links: 258
 - Combined Synopsis/Solicitation: 1
 - Pre-solicitation: 210
-- Sources Sought: 222
+- Sources Sought: 225
 - Special Notice: 92
 
 ## Engagement signals
 - Industry Day: 1
-- Pre-solicitation: 219
-- Sources Sought: 223
+- Pre-solicitation: 222
+- Sources Sought: 226
 - Special Notice: 92
 
 ## Top candidates
@@ -38,7 +38,6 @@ Posted range: 01/01/2026 -> 03/22/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-05 | DEPT OF DEFENSE | [NSN 6150-01-658-3357 - CABLE ASSEMBLY, POWER](https://sam.gov/opp/a53571aef2a543ae89522491f2e7d47f/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-06 | 2026-03-06 | DEPT OF DEFENSE | [RFI: 10GB Commercial Ethernet Circuit Intra-Europe](https://sam.gov/opp/522908971e714c4b88eab0666d55b2c6/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-06 | 2026-03-06 | DEPT OF DEFENSE | [RFI: 1GB Commercial Ethernet Circuit Intra-Europe](https://sam.gov/opp/e10cd60227764fa3afe29de0f557fa5a/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-07 | DEPT OF DEFENSE | [NSN 1680-015446606, 2210193-2,SCROLL ASSEMBLY,AIR](https://sam.gov/opp/1c41f128e64e4235b9c03ce903f5e468/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-08 | DEPT OF DEFENSE | [WINCH PARTS KITS 2590-01-693-7794](https://sam.gov/opp/217db4f7d52148d4ab49740fa5ece39e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-09 | DEPT OF DEFENSE | [VALVE, SHUT-OFF / NSN 2995-01-052-6098 / F-15 AIRCRAFT](https://sam.gov/opp/e348942cebe64f8b91c775d91b4badc4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-09 | DEPT OF DEFENSE | [WRENCH, SPANNER / NSN 5120-01-631-9214 / SPECIAL, MISC. SPARES TOOL ISSUE](https://sam.gov/opp/f7b4f00436b6492d9226975dad242018/view) |
@@ -207,7 +206,6 @@ NSN: 4320-01-643-5963](https://sam.gov/opp/f89153cd3cbb49a884337836ee72f17e/view
 | 2 | Sources Sought | Sources Sought | 2026-03-10 | 2026-03-21 | DEPT OF DEFENSE | [VALVE,GATE](https://sam.gov/opp/bdc021a9f5044e379a95814c908be3ce/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-13 | 2026-03-21 | DEPT OF DEFENSE | [NSN2840-01-687-6045_CaseVane_F110_PN2214M15G06_FD2030-24-00223](https://sam.gov/opp/baa0a3cab04548b8bace026727c67727/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-16 | 2026-03-21 | DEPT OF DEFENSE | [MX9 SHAFT SEAL MAJOR OVERHAUL KIT](https://sam.gov/opp/09ea11c19750437ebea6aabc37b575a7/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-03-03 | 2026-03-23 | DEPT OF DEFENSE | [Upgrade To California Heating Equipment Model MODEL: 10’ x 5’ x 3’ SOLUTION FURNACE/2092  Drop Bottom Furnace](https://sam.gov/opp/4a2524a499634970a90ca699eac8b391/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-23 | DEPT OF DEFENSE | [SPE4A6-16-D-0226 - 8120-6830 - IGP - Bridge](https://sam.gov/opp/8babc7fc74064affad063bbb3f9987c8/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-23 | DEPT OF DEFENSE | [Sources Sought Announcement for Procurement of Air Traffic Control (ATC) Support Components that include NSN 5895-01-623-8439, PROCESSOR,SIGNAL DA, NSN 6145-01-589-2110, CABLE,SPECIAL PURPO, and NSN 5995-01-624-4533, CABLE ASSEMBLY,SPEC.](https://sam.gov/opp/0cf2f55d587d4ca49c7cfe8e1a95ca41/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-23 | DEPT OF DEFENSE | [J&A and Publication for Sole Source BPA for Coca-Cola Guam](https://sam.gov/opp/33013ffa26384f3da4ae983587f2e309/view) |
@@ -322,11 +320,13 @@ NSN: 4320-01-643-5963](https://sam.gov/opp/f89153cd3cbb49a884337836ee72f17e/view
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-17 | 2026-04-01 | DEPT OF DEFENSE | [VALVE, REGULATING, FL](https://sam.gov/opp/508ac75a5cec4fdf9be53a3d35e998d5/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-20 | 2026-04-01 | DEPT OF DEFENSE | [CONTROL, MANIFOLD](https://sam.gov/opp/e6619af863e741fbb4e82312f9b5bf5b/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-20 | 2026-04-01 | DEPT OF DEFENSE | [Notice of Intent to Sole Source Maintenance, Repair & Operations](https://sam.gov/opp/81a600e44d094eff939e229b9457fc63/view) |
+| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-23 | 2026-04-01 | DEPT OF DEFENSE | [RFI: 2.5GB Intra SWA](https://sam.gov/opp/fa6b420c96844ef4add89849b09883a7/view) |
+| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-23 | 2026-04-01 | DEPT OF DEFENSE | [RFI: 2.5GB Intra SWA](https://sam.gov/opp/dcf57c22cf5f49058cc84600e6e7ef0c/view) |
+| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-23 | 2026-04-01 | DEPT OF DEFENSE | [RFI: 2.5GB Intra SWA](https://sam.gov/opp/2c2a7eb49b634c87a130b80626d9c133/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-04-02 | DEPT OF DEFENSE | [350 Ton Press Brake](https://sam.gov/opp/03243865c82347ef977f4cc571d9ff61/view) |
 | 2 | Special Notice | Special Notice | 2026-03-06 | 2026-04-02 | DEPT OF DEFENSE | [Amendment 0001  Clutch, Fan, Engine](https://sam.gov/opp/8b1ffa843be84158b1e3ce626fc5c9c6/view) |
 | 2 | Special Notice | Special Notice | 2026-03-06 | 2026-04-02 | DEPT OF DEFENSE | [Amendment 0001 Clutch Fan Engine](https://sam.gov/opp/87afd07768a04a468758145e511426b1/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-17 | 2026-04-02 | DEPT OF DEFENSE | [AAR Unison SPE4A226R0010](https://sam.gov/opp/d271406adb0d4f8f9ba6de8efa7bba01/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-03-17 | 2026-04-02 | DEPT OF DEFENSE | [AAR Woodward SPE4A226R0008](https://sam.gov/opp/26d43ff096a640058d11cc4030ce870c/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

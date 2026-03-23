@@ -1,18 +1,18 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-22T13:44:03.406426+00:00
+Generated: 2026-03-23T13:43:56.882129+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/22/2026
+Posted range: 01/01/2026 -> 03/23/2026
 
 ## Counts
-- Total candidates: 408
-- Navy-related: 408
-- Full detail cached: 408
-- Notices with attachments: 228
-- Total attachment links: 634
-- Combined Synopsis/Solicitation: 140
-- Pre-solicitation: 63
+- Total candidates: 411
+- Navy-related: 411
+- Full detail cached: 411
+- Notices with attachments: 231
+- Total attachment links: 639
+- Combined Synopsis/Solicitation: 142
+- Pre-solicitation: 64
 - Solicitation: 104
 - Sources Sought: 62
 - Special Notice: 39

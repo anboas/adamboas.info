@@ -1,0 +1,68 @@
+{
+  "id": "sam-41a0122ced9b4912b1dc8a2060420204",
+  "title": "Commercial Satellite Communications (COMSATCOM) for USSOCOM J6",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=41a0122ced9b4912b1dc8a2060420204",
+  "opportunity_url": "https://sam.gov/opp/41a0122ced9b4912b1dc8a2060420204/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/41a0122ced9b4912b1dc8a2060420204/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "41a0122ced9b4912b1dc8a2060420204",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "USSOCOMJ6COMSATCOM",
+  "agency_path": "DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).HQ USSOCOM",
+  "posted_date": "2026-03-21",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=41a0122ced9b4912b1dc8a2060420204",
+  "detail_text": "ALL DOCUMENTS ARE CURRENT AS OF 20 MAR 2026 ***Amended to add Q&As. The United States Special Operations Command (USSOCOM) is seeking information from industry on the capabilities available to provide a comprehensive, global, end-to-end Commercial Satellite Communications (COMSATCOM) solution. The purpose of this RFI is to conduct market research and identify sources capable of meeting the requirements. This is an RFI only, which in addition to the current performer, the Government is seeking information to identify any potential, capable sources for the required services described herein. This RFI is issued solely for information and planning purposes; it does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. Respondents are advised that the U.S. Government will not pay for any information or administrative costs incurred in response to this RFI. Please see \"USSOCOM J6 COMSATCOM RFI Final 260302\" attachment for all instructions and response guidelines.",
+  "detail_text_length": 1005,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/007fcf8b51f841e6b394ccbbd8bf174c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/857c0260e0914c21876b46a9a865eaa6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cba3596d230b48228b76556a04422906/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/007fcf8b51f841e6b394ccbbd8bf174c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f1851a9a8cd9ff833acc16be6f003ba2245ac22c026e008e28d76db1ba9fab6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f1851a9a8cd9ff833acc16be6f003ba2245ac22c026e008e28d76db1ba9fab6.pdf",
+      "file_id": "007fcf8b51f841e6b394ccbbd8bf174c",
+      "file_name": "USSOCOM+J6+COMSATCOM+RFI+Final+260302.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 91432,
+      "sha256": "2f1851a9a8cd9ff833acc16be6f003ba2245ac22c026e008e28d76db1ba9fab6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/857c0260e0914c21876b46a9a865eaa6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/859a166c22475f69034e8ab426026f1b23beae32d4029ca9a5cc0d8c86ffc95b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/859a166c22475f69034e8ab426026f1b23beae32d4029ca9a5cc0d8c86ffc95b.xlsx",
+      "file_id": "857c0260e0914c21876b46a9a865eaa6",
+      "file_name": "USSOCOM+J6+COMSATCOM+RFI+Q-A.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21500,
+      "sha256": "859a166c22475f69034e8ab426026f1b23beae32d4029ca9a5cc0d8c86ffc95b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cba3596d230b48228b76556a04422906/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e88ccb8e16c83a032ad083c6f154baeb04d8ee666c65c5880f6a8cede8101b8b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e88ccb8e16c83a032ad083c6f154baeb04d8ee666c65c5880f6a8cede8101b8b.xlsx",
+      "file_id": "cba3596d230b48228b76556a04422906",
+      "file_name": "USSOCOM+J6+COMSATCOM+RFI+Q-A+-2-.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28505,
+      "sha256": "e88ccb8e16c83a032ad083c6f154baeb04d8ee666c65c5880f6a8cede8101b8b"
+    }
+  ],
+  "_mirror_hash": "299f0ea0454de14774dc832a54f8d25d31909ad4e2129d8b67a0d7596225a7b2",
+  "_mirror_run_id": "20260323T134141Z",
+  "_mirror_recorded_at": "2026-03-23T13:43:05.954345+00:00"
+}

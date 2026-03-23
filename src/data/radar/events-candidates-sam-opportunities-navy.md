@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-22T13:43:57.094620+00:00
+Generated: 2026-03-23T13:43:50.780707+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/22/2026
+Posted range: 01/01/2026 -> 03/23/2026
 
 ## Counts
-- Total candidates: 110
-- Navy-related: 110
-- Full detail cached: 110
+- Total candidates: 109
+- Navy-related: 109
+- Full detail cached: 109
 - Notices with attachments: 41
 - Total attachment links: 172
 - Combined Synopsis/Solicitation: 21
-- Pre-solicitation: 41
+- Pre-solicitation: 40
 - Solicitation: 14
 - Sources Sought: 24
 - Special Notice: 10
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 43
+- Pre-solicitation: 42
 - Sources Sought: 24
 - Vendor Outreach: 1
 - Special Notice: 10
@@ -43,7 +43,6 @@ Posted range: 01/01/2026 -> 03/22/2026
 | 7 | Sources Sought | Sources Sought | 2026-02-13 | 2026-02-24 | DEPT OF DEFENSE | [Base Assemblies](https://sam.gov/opp/abcf191218124794a716ce06ad0f3619/view) |
 | 7 | Special Notice | Pre-solicitation, Special Notice | 2026-02-02 | 2026-02-27 | DEPT OF DEFENSE | [Undergraduate Jet Training System (UJTS) Request for Information March 2025](https://sam.gov/opp/38ff7981021b4da19d631777a849109d/view) |
 | 5 | Special Notice | Special Notice | 2026-02-24 | 2026-02-27 | DEPT OF DEFENSE | [N0001925R1004 Draft PMA-271 E-6B Mercury Depot Level MRO PWS and PMI Depot Level Maintenance Spec for MRO](https://sam.gov/opp/cbedb8a59397447b922b62c2f53cf5c9/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-02-20 | 2026-03-07 | DEPT OF DEFENSE | [MH-60 Airborne Mine Countermeasure (AMCM) Carriage, Stream, Tow and Recovery System (CSTRS) Support](https://sam.gov/opp/d0ff988a1b6c4d5aac65f876bb02aa49/view) |
 | 6 | Solicitation | - | 2026-02-10 | 2026-03-09 | DEPT OF DEFENSE | [TIH 28/30/32](https://sam.gov/opp/ef0112fc73af4e388a1ffb1ffd8f0257/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-02-23 | 2026-03-09 | DEPT OF DEFENSE | [Defense Compressed Air Test Kits and Testing Services Follow-on](https://sam.gov/opp/f726e95a66164d8998b58bf7bc37a41e/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-03-02 | 2026-03-09 | DEPT OF DEFENSE | [Total Small Business Set Aside for Various Quantities of Brand: Glenair Connectors](https://sam.gov/opp/cb7eb77ad9d54fc2b0e36e69b2e7ee2a/view) |

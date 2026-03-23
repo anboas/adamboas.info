@@ -1,0 +1,48 @@
+{
+  "id": "sam-bf29bc3fa619486b977ec7f00a9ffc78",
+  "title": "NUWC Newport Electromagnetic Special Programs Synopsis",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf29bc3fa619486b977ec7f00a9ffc78",
+  "opportunity_url": "https://sam.gov/opp/bf29bc3fa619486b977ec7f00a9ffc78/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bf29bc3fa619486b977ec7f00a9ffc78/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bf29bc3fa619486b977ec7f00a9ffc78",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6660426R3103",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2027-03-23",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf29bc3fa619486b977ec7f00a9ffc78",
+  "detail_text": "This is the Advance Notice for the Naval Undersea Warfare Center Division, Newport (NUWCDIVNPT) Code 34 \"SP RF Eng & Fleet Svcs\" task order for engineering and technical services. See Draft Performance Work Statement (PWS) attached. Est. LOE: 332,640; POP: One (1) Base Year and Four (4) One-Year Options, NTE Five (5) years (Sixty (60) Months). Est. RFP release: On/around 1 May 2026; Estimated RFP Period: 35 Calendar Days. Est Award: 1 April 2027. Requirement Will Be Solicited as Unrestricted; NAICS Code; 541330; PSC: AC33; Security Level: Facility Clearance - Top Secret SCI, Safeguarding Clearance - Secret. Term-type Task Order with CPFF and CR Provisions Will be Awarded Based on Best Value-Tradeoff; Evaluation Factors: Technical, Past Performance and Cost/Price; Follow-on to SeaPort-e Task Order N00178-19-D-8623/N6660422F3011 with Systems Engineering Associates Corporation (SEA CORP); OCI applies; Sec. 508-N/A, Exception. POC: Levi Andrews, levi.s.andrews2.civ@us.navy.mil, 401-832-0044. Questions shall be sent via email to levi.s.andrews2.civ@us.navy.mil This Notice will also be posted in the SeaPort Module. The SeaPort Module will not be utilized for Q&A or Solicitations.",
+  "detail_text_length": 1192,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8baee8a7102f4f01823689cdef9ee400/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8baee8a7102f4f01823689cdef9ee400/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8fe7f4dfe9fe23ecd7453f7dee088e9d41ba0835d3996523afc5c01de85e89dd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8fe7f4dfe9fe23ecd7453f7dee088e9d41ba0835d3996523afc5c01de85e89dd.pdf",
+      "file_id": "8baee8a7102f4f01823689cdef9ee400",
+      "file_name": "I.H.+Adv.+Notice+Att.+1+DRAFT+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 279834,
+      "sha256": "8fe7f4dfe9fe23ecd7453f7dee088e9d41ba0835d3996523afc5c01de85e89dd"
+    }
+  ],
+  "_mirror_hash": "1086df75e147507a1ea37455d0c83f6e26432cbef9f000f9d02eb833f4b4df4a",
+  "_mirror_run_id": "20260323T134141Z",
+  "_mirror_recorded_at": "2026-03-23T13:43:05.839903+00:00"
+}

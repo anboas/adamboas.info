@@ -1,24 +1,24 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-22T13:43:45.421413+00:00
+Generated: 2026-03-23T13:43:40.355721+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/22/2026
+Posted range: 01/01/2026 -> 03/23/2026
 
 ## Counts
-- Total candidates: 274
+- Total candidates: 272
 - Navy-related: 0
-- Full detail cached: 274
-- Notices with attachments: 215
-- Total attachment links: 639
-- Pre-solicitation: 75
-- Sources Sought: 156
+- Full detail cached: 272
+- Notices with attachments: 213
+- Total attachment links: 637
+- Pre-solicitation: 74
+- Sources Sought: 155
 - Special Notice: 43
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 113
-- Sources Sought: 156
+- Pre-solicitation: 112
+- Sources Sought: 155
 - Special Notice: 43
 
 ## Top candidates
@@ -47,7 +47,6 @@ Posted range: 01/01/2026 -> 03/22/2026
 | 2 | Sources Sought | Sources Sought | 2026-02-03 | 2026-03-04 | DEPT OF DEFENSE | [C-40C (B700) Augmentation](https://sam.gov/opp/c336d8e9d45d4ef8acad3e6d970e4a5d/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-17 | 2026-03-04 | DEPT OF DEFENSE | [SVBU Regression Testing Targets](https://sam.gov/opp/f24f47ef48c243cc95caba938b20a116/view) |
 | 4 | Pre-solicitation | Pre-solicitation | 2026-02-18 | 2026-03-05 | DEPT OF DEFENSE | [Pre-Solicitation Abatement](https://sam.gov/opp/4e56f45acf024a39b298646f1e755b35/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-11 | 2026-03-07 | DEPT OF DEFENSE | [High Velocity Oxygen Fuel (HVOF) System Calibration and Maintenance](https://sam.gov/opp/e077c679d1cc46c6b682fa3f7b86ead0/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-05 | 2026-03-09 | DEPT OF DEFENSE | [C-5 Battery Control Electronics Module (BCEM)](https://sam.gov/opp/8986f748cabf4f6bb92820f84825bc5b/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-06 | 2026-03-09 | DEPT OF DEFENSE | [RFI - 711 HPW/RHB Chillers Maintenance and Repair](https://sam.gov/opp/227240213486483ca53b457e3b1d8159/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-06 | 2026-03-09 | DEPT OF DEFENSE | [AN/ALQ-131 Electronic Countermeasures (ECM) Pod parts](https://sam.gov/opp/ac8757b5016c48fea005dc3c8668c7a2/view) |
@@ -142,7 +141,6 @@ Posted range: 01/01/2026 -> 03/22/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-06 | 2026-03-21 | DEPT OF DEFENSE | [Hidden Level C-sUAS HAFB](https://sam.gov/opp/e5c480eb9ba6407c8479043dcf0cd7ba/view) |
 | 4 | Sources Sought | Sources Sought | 2026-02-19 | 2026-03-22 | DEPT OF DEFENSE | [Sources Sought Notice for 415th Transmitter IDIQ](https://sam.gov/opp/0858e3e1be3d4580bc75ab5900baf9b7/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-23 | 2026-03-22 | DEPT OF DEFENSE | [Tinker Air Force Base Request for Information](https://sam.gov/opp/f4fcc1849bc542b4865c8af597305407/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-22 | DEPT OF DEFENSE | [Destruction of SAP hardware](https://sam.gov/opp/cb24f7f2793c460fbcfce615157b436c/view) |
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-02-20 | 2026-03-23 | DEPT OF DEFENSE | [AFRL National Research Network Request for Information](https://sam.gov/opp/38d7c5a321b54a7c9cb48aa997ae299c/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-23 | 2026-03-23 | DEPT OF DEFENSE | [Lean Depot Management System (LDMS) Sustainment Support](https://sam.gov/opp/f7bb983528b74a078b9e13a6b90b24b6/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-23 | DEPT OF DEFENSE | [FA8251-26-DED_PWRSUPPLY](https://sam.gov/opp/5e1fe9fc017b45f4bcf7604a117b9295/view) |
@@ -194,9 +192,9 @@ Posted range: 01/01/2026 -> 03/22/2026
 | 2 | Special Notice | Special Notice | 2026-03-20 | 2026-03-27 | DEPT OF DEFENSE | [SAS Software Maintenance Licenses and new licenses](https://sam.gov/opp/4d9ace2d4196442cbdc602be5e87b835/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-20 | 2026-03-27 | DEPT OF DEFENSE | [Spares Procurement for the F-15/ Support, Turbine](https://sam.gov/opp/7cf5b469244e459c997c965e86032070/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-02-26 | 2026-03-30 | DEPT OF DEFENSE | [Request for Information - Oracle User Productivity Kit (UPK) Replacement Effort](https://sam.gov/opp/8f4e636efa614d698d8ed542380294c2/view) |
-| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-10 | 2026-03-30 | DEPT OF DEFENSE | [Request for Information (RFI) Hardened Advanced M-Code Receivers (HAMR)](https://sam.gov/opp/178f7e227e034175b30626e532107c84/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-30 | DEPT OF DEFENSE | [Fast Scanner, Hyper-Spectral Imager](https://sam.gov/opp/c86192d4ab3442e8ab3f872fbf3810b3/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-13 | 2026-03-30 | DEPT OF DEFENSE | [Sources Sought - Pelletized Asphalt](https://sam.gov/opp/63547ced854f4379b965916a5fcfde45/view) |
+| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-23 | 2026-03-30 | DEPT OF DEFENSE | [Request for Information (RFI) Hardened Advanced M-Code Receivers (HAMR)](https://sam.gov/opp/4548575b70e14cb4ab650de890147a15/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-24 | 2026-03-31 | DEPT OF DEFENSE | [B-1 Fully Integrated Data Link (FIDL) Ethernet Switch Unit (ESU) 7025016509308BY](https://sam.gov/opp/dd1fd517402a44958fa64e751f313ee9/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-04 | 2026-03-31 | DEPT OF DEFENSE | [(Amended) Sources Sought: Study- For CRC (Power, Fuel, Data, Water, Air Handling & Transportation)](https://sam.gov/opp/d97fa770d6fd445284917fe070c9c784/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-31 | DEPT OF DEFENSE | [Sources Sought: Nuclear Stores Interface Units (NSIU)](https://sam.gov/opp/5e8b2f88b35d4a23a17ad9e7332d3bf8/view) |

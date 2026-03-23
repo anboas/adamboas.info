@@ -1,0 +1,56 @@
+{
+  "id": "sam-4a12d680803a440182392f71e4fcccfe",
+  "title": "1377 - 01-170-5245 MS81, 1377-01-170-5246 MS82, 1377-01-170-5261 MS83, 1377-01-170-5263 MS85, 1377-01-170-5264 MS86, 1377-01-170-5265 MS87",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a12d680803a440182392f71e4fcccfe",
+  "opportunity_url": "https://sam.gov/opp/4a12d680803a440182392f71e4fcccfe/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4a12d680803a440182392f71e4fcccfe/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4a12d680803a440182392f71e4fcccfe",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426RK055",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a12d680803a440182392f71e4fcccfe",
+  "detail_text": "Paper copies will not be provided. Procurement is restricted to Rockwell Collins Inc. and Pacific Scientific. A limited drawing package is available. Drawings are NOT available on CD. Items are explosive. A Safety Survey will be required. See solicitation for explosive weight and class. PSC: 1377 NAICS: 325920 Quantity: MS81 224 EA, MS82 221 EA, MS83 227 EA, MS84 0 EA, MS85 228 EA, MS86 233 EA, MS87 323 EA, MS88 0 EA. Option: 100% of Base Quantity",
+  "detail_text_length": 451,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4021e8c4f9a74c3db24bfd7c564f9421/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/477b76fc878141dfb0345c997f02c82e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4021e8c4f9a74c3db24bfd7c564f9421/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/09db3fa9535146c2caa4034fbd4bf0abcd3a2d60e50e38f9c91cb7a62e47fa18.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/09db3fa9535146c2caa4034fbd4bf0abcd3a2d60e50e38f9c91cb7a62e47fa18.pdf",
+      "file_id": "4021e8c4f9a74c3db24bfd7c564f9421",
+      "file_name": "3.02_N0010426RK055_Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 814263,
+      "sha256": "09db3fa9535146c2caa4034fbd4bf0abcd3a2d60e50e38f9c91cb7a62e47fa18"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/477b76fc878141dfb0345c997f02c82e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc5e17f5273c26986a0b232a10bf948b19d3667e1beb43e7b046763db54e6ac2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc5e17f5273c26986a0b232a10bf948b19d3667e1beb43e7b046763db54e6ac2.pdf",
+      "file_id": "477b76fc878141dfb0345c997f02c82e",
+      "file_name": "1.06_26NB041-+MS81-88+CDRLS+r1-REDACTED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1447606,
+      "sha256": "dc5e17f5273c26986a0b232a10bf948b19d3667e1beb43e7b046763db54e6ac2"
+    }
+  ],
+  "_mirror_hash": "3827945a695bec1a184741632df4db81010fa781b21c93d98eb2c067c0584836",
+  "_mirror_run_id": "20260323T134141Z",
+  "_mirror_recorded_at": "2026-03-23T13:43:05.925191+00:00"
+}
