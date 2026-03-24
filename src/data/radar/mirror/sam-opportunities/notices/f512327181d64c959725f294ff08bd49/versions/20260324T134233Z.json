@@ -1,0 +1,59 @@
+{
+  "id": "sam-f512327181d64c959725f294ff08bd49",
+  "title": "Support for the Industrial Wastewater Treatment Plant_RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f512327181d64c959725f294ff08bd49",
+  "opportunity_url": "https://sam.gov/opp/f512327181d64c959725f294ff08bd49/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f512327181d64c959725f294ff08bd49/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f512327181d64c959725f294ff08bd49",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8201-IWTP-3_23_2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8201  AFSC OL H PZIO",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f512327181d64c959725f294ff08bd49",
+  "detail_text": "Hill Air Force Base requests information of sources capable of providing support for the Industrial Waste Treatment Plant’s (IWTP) control system. The goal of this work is to furnish a completely integrated Supervisory Control and Data Acquisition (SCADA) system to monitor and control industrial waste treatment processes located in the IWTP compound located at Hill AFB. Please review the attached documents.",
+  "detail_text_length": 410,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33f17da9b5834ca8823704d7fa64fc9e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b62fee1cd449431cae99de9a9b38852d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33f17da9b5834ca8823704d7fa64fc9e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4616508f5c1fd060c24f6d6f36119aa4b844aed67ffa01225bfe3f57cf394acc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4616508f5c1fd060c24f6d6f36119aa4b844aed67ffa01225bfe3f57cf394acc.pdf",
+      "file_id": "33f17da9b5834ca8823704d7fa64fc9e",
+      "file_name": "IWTP+SCADA+SPECIFICATIONS+10MAR26+v1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 257222,
+      "sha256": "4616508f5c1fd060c24f6d6f36119aa4b844aed67ffa01225bfe3f57cf394acc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b62fee1cd449431cae99de9a9b38852d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20c9530a0abdd44983224346fdccfd73b757a84251af74e9114501ff179c232f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20c9530a0abdd44983224346fdccfd73b757a84251af74e9114501ff179c232f.pdf",
+      "file_id": "b62fee1cd449431cae99de9a9b38852d",
+      "file_name": "Support+for+the+Industrial+Wastewater+Treatment+Plant_RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 156762,
+      "sha256": "20c9530a0abdd44983224346fdccfd73b757a84251af74e9114501ff179c232f"
+    }
+  ],
+  "_mirror_hash": "c85a26fcdccfba2e50cb0893e3ecbc1176e3ad16e6dc54dda29415f48c0668e6",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:35.949864+00:00"
+}

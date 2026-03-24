@@ -1,0 +1,57 @@
+{
+  "id": "sam-1bd6245348aa4194a73d2a59224feb8e",
+  "title": "DSPO Connect Program for Suicide Prevention",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1bd6245348aa4194a73d2a59224feb8e",
+  "opportunity_url": "https://sam.gov/opp/1bd6245348aa4194a73d2a59224feb8e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1bd6245348aa4194a73d2a59224feb8e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1bd6245348aa4194a73d2a59224feb8e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "H98210_DSPO_FY26_1633",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HUMAN RESOURCES ACTIVITY.DEFENSE HUMAN RESOURCES ACTIVITY",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1bd6245348aa4194a73d2a59224feb8e",
+  "detail_text": "The Sources Sought Notice is issued for Market Research purposes to see if there are potential vendors who can tailor, expand, and validate the existing Connect Program for Suicide Prevention to the Department of War (DoW) and all Military Services (Army, Navy, Marine Corps, Air Force, Space Force, National Guard Bureau, and Coast Guard). The Contractor shall validate the implementation of the Connect Program and provide a report that includes evaluation findings and recommendations for sustained program implementation and evaluation in accordance with the PWS, see attached. Additionally, this posting includes a Notice of Intent. If the Sources Sought Notice does not identify other vendors who can perform the PWS requirements, then the Government intends to negotiate and award a sole-source, firm fixed price contract for the Connect Program for Suicide Prevention. Safeside Prevention LLC is identified as a sublicensee for the Connect Program.",
+  "detail_text_length": 956,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/668e69641c1242de9369909670acf854/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a54768b6ded54075bffc545d5c316f73/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/668e69641c1242de9369909670acf854/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cb1779180f5bf56290643fb2bda6e112ad4305887dfba1f6975b1ef6a6ca45bd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cb1779180f5bf56290643fb2bda6e112ad4305887dfba1f6975b1ef6a6ca45bd.pdf",
+      "file_id": "668e69641c1242de9369909670acf854",
+      "file_name": "draft_PWS+Connect+Program.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 360696,
+      "sha256": "cb1779180f5bf56290643fb2bda6e112ad4305887dfba1f6975b1ef6a6ca45bd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a54768b6ded54075bffc545d5c316f73/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3791c9b5144dc2af03bc3360b128faeb06245dbc43e6c2b111ac06655045eeb3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3791c9b5144dc2af03bc3360b128faeb06245dbc43e6c2b111ac06655045eeb3.pdf",
+      "file_id": "a54768b6ded54075bffc545d5c316f73",
+      "file_name": "Combined+Sources+Sought_NOI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 113131,
+      "sha256": "3791c9b5144dc2af03bc3360b128faeb06245dbc43e6c2b111ac06655045eeb3"
+    }
+  ],
+  "_mirror_hash": "3465a8e8d1c37a99d858417ff5d5dc6d3feed774fd913639d667fc873a96da78",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.147029+00:00"
+}

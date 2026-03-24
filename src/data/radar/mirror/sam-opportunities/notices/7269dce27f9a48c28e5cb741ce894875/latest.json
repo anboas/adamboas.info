@@ -1,0 +1,57 @@
+{
+  "id": "sam-7269dce27f9a48c28e5cb741ce894875",
+  "title": "Air Boss (Airshow 2027)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7269dce27f9a48c28e5cb741ce894875",
+  "opportunity_url": "https://sam.gov/opp/7269dce27f9a48c28e5cb741ce894875/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7269dce27f9a48c28e5cb741ce894875/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7269dce27f9a48c28e5cb741ce894875",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA468626AirBoss",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4686 9 CONS PK",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7269dce27f9a48c28e5cb741ce894875",
+  "detail_text": "******POSTING FOR MARKET RESEARCH PURPOSES ONLY****** THIS IS A SOURCES SOUGHT ONLY. THIS IS NOT A SOLICITATION FOR PROPOSALS AND NO CONTRACT WILL BE AWARDED FROM THIS SOURCES SOUGHT. PLEASE DO NOT REQUEST A COPY OF A SOLICITATION, AS ONE DOES NOT EXIST. A DRAFT Performance Work Statement (PWS) detailing the requirement is attached for reference. No reimbursement will be made for any costs associated with providing information to this Sources Sought or any follow-up information requests. The purpose of this source’s sought is to notify the industry of the USAF intent for contract action and to: 1) Your Company UEI and CAGE code with your response? UEI: CAGE: 2) This is not an official RFQ, I would like a Rough Order of Magnitude (ROM) for Market Research Report (MRR) purposes only on the subject project. Please reference PWS for exact information below on required services needed. ****Please see excel attachment for ROM (Pricing) input**** 3) If you have other suggestions for NAICS/PSC please feel free to annotate on your response back. The suggested NAICS is 711320 – Promoters of Performing Arts, Sports, and Similar Events without Facilities The suggest PSC is G003 – Social – Recreational NAICS: PSC: The proposed contract action is anticipated to be issued as a Firm Fixed Price (FFP). Interested parties should submit a capabilities statement and any relevant past performance indicators pertaining to Air Boss to Teresa Romig, Email: teresa.romig@us.af.mil and SrA Ezekiel Onumah, Email: ezekiel.onumah.1@us.af.mil",
+  "detail_text_length": 1537,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f0f2fe098b0468bb08710d1bddf64e5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a6a7347c8a44db0b71067d27f79ebe5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f0f2fe098b0468bb08710d1bddf64e5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/74414665679a7b96cffb5d046f7657b1e792551d229be023b4b3a008bf195689.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/74414665679a7b96cffb5d046f7657b1e792551d229be023b4b3a008bf195689.xlsx",
+      "file_id": "1f0f2fe098b0468bb08710d1bddf64e5",
+      "file_name": "SAM+-+Air+Boss+-Airshow+2027-+-+ROM.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12552,
+      "sha256": "74414665679a7b96cffb5d046f7657b1e792551d229be023b4b3a008bf195689"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a6a7347c8a44db0b71067d27f79ebe5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5aef3b25b5f164a2602dc7da35077dad265d16f41610d52211a9b6d78326d72f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5aef3b25b5f164a2602dc7da35077dad265d16f41610d52211a9b6d78326d72f.pdf",
+      "file_id": "3a6a7347c8a44db0b71067d27f79ebe5",
+      "file_name": "DRAFT+PWS+-+Air+Boss+-Airshow+2027-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 193169,
+      "sha256": "5aef3b25b5f164a2602dc7da35077dad265d16f41610d52211a9b6d78326d72f"
+    }
+  ],
+  "_mirror_hash": "0e1e74bb87544f32a2d02cffd66880f0ea753652fcf9861b699528bcbc761617",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.044660+00:00"
+}

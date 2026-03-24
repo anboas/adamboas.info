@@ -1,0 +1,46 @@
+{
+  "id": "sam-f085d6747d0f4525934c336f37f7d1b7",
+  "title": "Conference Support Assistant and Travel Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f085d6747d0f4525934c336f37f7d1b7",
+  "opportunity_url": "https://sam.gov/opp/f085d6747d0f4525934c336f37f7d1b7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f085d6747d0f4525934c336f37f7d1b7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f085d6747d0f4525934c336f37f7d1b7",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "1232SA26Q0357",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f085d6747d0f4525934c336f37f7d1b7",
+  "detail_text": "Pre-solicitation for Commercial Services – Prepared in Accordance with FAR Part 12 This notice is an informational Pre-solicitation notice only. It is not a solicitation and does not request quotes at this time. The U.S. Department of Agriculture (USDA) intends to issue a BPA Call for Conference Support Assistant and Travel Services. The intended sources are existing BPA holders under which multiple BPAs were awarded: 1232SA23A0003, 1232SA23A0004, and 1232SA23A0005. A Request for Quote (RFQ) will be issued to these BPA holders ONLY. Award will be made to the BPA contract holder that provides the Lowest Priced Technically Acceptable response to the Government for these services. Description of Services USDA requires a Conference Support Assistant and Travel Services to Support ARS, AFM, FMAD Travel Policy and Systems Branch (TPSB). The contractor is responsible for preparing and reviewing conference packages, assisting with REE Annual Conference planning and reporting, and providing excellent customer service. This task can be executed on-site at the following location: USDA/ARS George Washington Carver Center (GWCC) 5601 Sunnyside Ave. Beltsville, MD 20705",
+  "detail_text_length": 1174,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43cb55c2efc44aa1ab7e7839bbbc5afa/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43cb55c2efc44aa1ab7e7839bbbc5afa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2e9b7f7873b57c22cbc78e807da6f75e43e208233b253e35be5e3f7d192f9ec1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2e9b7f7873b57c22cbc78e807da6f75e43e208233b253e35be5e3f7d192f9ec1.pdf",
+      "file_id": "43cb55c2efc44aa1ab7e7839bbbc5afa",
+      "file_name": "Conference+Support+Statement+of+Work+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148869,
+      "sha256": "2e9b7f7873b57c22cbc78e807da6f75e43e208233b253e35be5e3f7d192f9ec1"
+    }
+  ],
+  "_mirror_hash": "a9799f49aa8a1be4e6d4e614046cbb6a53d3f5f3d3f15c23d65cb2b362082d88",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.084569+00:00"
+}

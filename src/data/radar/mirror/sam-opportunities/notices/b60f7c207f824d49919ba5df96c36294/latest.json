@@ -1,0 +1,46 @@
+{
+  "id": "sam-b60f7c207f824d49919ba5df96c36294",
+  "title": "DH10--DIGITAL WAYFINDING",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b60f7c207f824d49919ba5df96c36294",
+  "opportunity_url": "https://sam.gov/opp/b60f7c207f824d49919ba5df96c36294/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b60f7c207f824d49919ba5df96c36294/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b60f7c207f824d49919ba5df96c36294",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C26226Q0506",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b60f7c207f824d49919ba5df96c36294",
+  "detail_text": "DIGITY WAYFINDING SYSTEM",
+  "detail_text_length": 24,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02bceb58c808492a90e71f54848ad365/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02bceb58c808492a90e71f54848ad365/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e2028715b7abab682cf24c0d50ba06d1bb725860e32dda9e99a4c1941f028485.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e2028715b7abab682cf24c0d50ba06d1bb725860e32dda9e99a4c1941f028485.docx",
+      "file_id": "02bceb58c808492a90e71f54848ad365",
+      "file_name": "36C26226Q0506_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23507,
+      "sha256": "e2028715b7abab682cf24c0d50ba06d1bb725860e32dda9e99a4c1941f028485"
+    }
+  ],
+  "_mirror_hash": "d478db8e5d0d2277dd44354e143afd046060d12cd06cd7237ec390176caf8215",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.018757+00:00"
+}

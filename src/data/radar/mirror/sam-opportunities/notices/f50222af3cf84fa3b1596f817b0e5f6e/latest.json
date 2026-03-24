@@ -1,0 +1,46 @@
+{
+  "id": "sam-f50222af3cf84fa3b1596f817b0e5f6e",
+  "title": "Digital Archivist Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f50222af3cf84fa3b1596f817b0e5f6e",
+  "opportunity_url": "https://sam.gov/opp/f50222af3cf84fa3b1596f817b0e5f6e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f50222af3cf84fa3b1596f817b0e5f6e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f50222af3cf84fa3b1596f817b0e5f6e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "1166521",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f50222af3cf84fa3b1596f817b0e5f6e",
+  "detail_text": "Pre-solicitation for Commercial Services – Prepared in Accordance with FAR Part 12 The U.S. Department of Agriculture (USDA) intends to issue a BPA Call for a Digital Archivist. The intended sources are existing BPA holders under which multiple BPAs were awarded: 1232SA23A0006, 1232SA23A0007, and 1232SA23A0008. A Request for Quote (RFQ) will be issued to these BPA holders. Award will be made to the vendor that provides the best value to the Government for these services. Description of Services USDA requires a Digital Archivist to provide expert advice and operational support in the following areas: Scholarly publishing Research integrity Copyright and licensing Open access and public access to USDA-funded research These services will advance USDA’s scientific integrity and gold-standard science requirements. Scope of Work Digital Archivist to establish and maintain a library digital preservation program, including foundational policies, that ensures the long-term accessibility, integrity, and quality of both digitized and born-digital collections. This includes effectively managing new digital acquisitions, enhancing metadata, and providing reporting on all preservation efforts. No quotes will be accepted at this time. This is a Pre-Soliciation Only.",
+  "detail_text_length": 1271,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4806efb224245f4bc7d8c5b6315a7f3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4806efb224245f4bc7d8c5b6315a7f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9585eb6c73e9b5ba0aa11ea9d6ed97403657ad7cdd7a4bf99f13f8bda339e1df.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9585eb6c73e9b5ba0aa11ea9d6ed97403657ad7cdd7a4bf99f13f8bda339e1df.docx",
+      "file_id": "d4806efb224245f4bc7d8c5b6315a7f3",
+      "file_name": "Statement+of+Work.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48213,
+      "sha256": "9585eb6c73e9b5ba0aa11ea9d6ed97403657ad7cdd7a4bf99f13f8bda339e1df"
+    }
+  ],
+  "_mirror_hash": "346eafbf2963c7c93c07a786384591208a77af0c8d3058f5d0074c8d8c2e55ff",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.163580+00:00"
+}

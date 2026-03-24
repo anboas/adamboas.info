@@ -1,0 +1,100 @@
+{
+  "id": "sam-fd97c60afd6c4537886da69dc0e527bd",
+  "title": "Demineralizer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd97c60afd6c4537886da69dc0e527bd",
+  "opportunity_url": "https://sam.gov/opp/fd97c60afd6c4537886da69dc0e527bd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fd97c60afd6c4537886da69dc0e527bd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fd97c60afd6c4537886da69dc0e527bd",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4215826QE025",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd97c60afd6c4537886da69dc0e527bd",
+  "detail_text": "SEE ATTACHED SOLICITATION AND RELATED DOCUMENTS.",
+  "detail_text_length": 48,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d7408cb86a94131b73a2b15ea09372e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9a0046c40ff467ca53b6de15eeb28d1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e875ade62c274a588c9dcb64a740961b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea96c33740d0450a81b0eb2db8ebe5e0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0076cc52dc54bd9959dabaf535b676e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f34fa764f5114bbe80475a3a6c96af7b/download"
+  ],
+  "resource_count": 6,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d7408cb86a94131b73a2b15ea09372e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f6a1a1f57e9aacde5d55a7f15540dbf9115799b80853160a62e8d7eff75bfacc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f6a1a1f57e9aacde5d55a7f15540dbf9115799b80853160a62e8d7eff75bfacc.docx",
+      "file_id": "1d7408cb86a94131b73a2b15ea09372e",
+      "file_name": "CERTIFICATE+OF+COMPLIANCE.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21998,
+      "sha256": "f6a1a1f57e9aacde5d55a7f15540dbf9115799b80853160a62e8d7eff75bfacc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9a0046c40ff467ca53b6de15eeb28d1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/36097c37059880fbd204a80d86c7cde8baa1885f2554f73c22506456738ec9f3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/36097c37059880fbd204a80d86c7cde8baa1885f2554f73c22506456738ec9f3.pdf",
+      "file_id": "a9a0046c40ff467ca53b6de15eeb28d1",
+      "file_name": "52.212-1+Addendum.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 113049,
+      "sha256": "36097c37059880fbd204a80d86c7cde8baa1885f2554f73c22506456738ec9f3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e875ade62c274a588c9dcb64a740961b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1086e51a53b582fb6b0e671763301be6f5984e1722dc98ec785076aa674fd795.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1086e51a53b582fb6b0e671763301be6f5984e1722dc98ec785076aa674fd795.pdf",
+      "file_id": "e875ade62c274a588c9dcb64a740961b",
+      "file_name": "FAR+52.212-2+Attachment+-A-+-+Technical+Capabilities+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 226477,
+      "sha256": "1086e51a53b582fb6b0e671763301be6f5984e1722dc98ec785076aa674fd795"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea96c33740d0450a81b0eb2db8ebe5e0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af0126ab13c22f9521528d0d126456e285db6d7950ad2d7e9c8ea831bda6adf5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af0126ab13c22f9521528d0d126456e285db6d7950ad2d7e9c8ea831bda6adf5.pdf",
+      "file_id": "ea96c33740d0450a81b0eb2db8ebe5e0",
+      "file_name": "Attachment+-A-_DEMINERALIZER+SPECIFICATIONS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 234921,
+      "sha256": "af0126ab13c22f9521528d0d126456e285db6d7950ad2d7e9c8ea831bda6adf5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0076cc52dc54bd9959dabaf535b676e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/35d3782cce8ac9fdb114ac6cd5cbce51ff595eb70d864c38cc9cd8f42ea8ec97.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/35d3782cce8ac9fdb114ac6cd5cbce51ff595eb70d864c38cc9cd8f42ea8ec97.pdf",
+      "file_id": "f0076cc52dc54bd9959dabaf535b676e",
+      "file_name": "Solicitation+N4215826QE025.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 353736,
+      "sha256": "35d3782cce8ac9fdb114ac6cd5cbce51ff595eb70d864c38cc9cd8f42ea8ec97"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f34fa764f5114bbe80475a3a6c96af7b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/63fc2395d1f56234e9fc571022e14133b71aac49d4f689668c83b4af31ee6ace.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/63fc2395d1f56234e9fc571022e14133b71aac49d4f689668c83b4af31ee6ace.pdf",
+      "file_id": "f34fa764f5114bbe80475a3a6c96af7b",
+      "file_name": "Attachment+-B-+Certified+Test+Reports.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18072,
+      "sha256": "63fc2395d1f56234e9fc571022e14133b71aac49d4f689668c83b4af31ee6ace"
+    }
+  ],
+  "_mirror_hash": "b85c880f29c040786c6efa5302886b847fc5d54513d23c2216d4e2ab1f647149",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:35.930942+00:00"
+}

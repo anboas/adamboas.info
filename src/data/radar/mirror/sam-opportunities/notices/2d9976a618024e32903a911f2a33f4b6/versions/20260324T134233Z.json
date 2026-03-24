@@ -1,0 +1,57 @@
+{
+  "id": "sam-2d9976a618024e32903a911f2a33f4b6",
+  "title": "Bowling Ball Return",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d9976a618024e32903a911f2a33f4b6",
+  "opportunity_url": "https://sam.gov/opp/2d9976a618024e32903a911f2a33f4b6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2d9976a618024e32903a911f2a33f4b6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2d9976a618024e32903a911f2a33f4b6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326Q0032",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d9976a618024e32903a911f2a33f4b6",
+  "detail_text": "THIS IS A SOURCES SOUGHT ONLY – The Government is requesting information to provide Bowling Ball Return according to the Statement of Work. At this time the Government is only requesting to know if your company can provide these services, IF YES, please provide a copy of your capability statement to Lt. Michael Mitchell at michael.mitchell.66@us.af.mil and Ms. Shaunannette Watson at shaunannette.watson@us.af.mil DO NOT SUBMIT ANY QUESTIONS OR AN OFFER AT THIS TIME.",
+  "detail_text_length": 469,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04ce11d357ac444289a9d1e7ee030e5c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3ab7d0e5a3b48ce969f893d0c52a318/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04ce11d357ac444289a9d1e7ee030e5c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fe2bc24de21de58c457bb8a765565593367da8caaed08784d9446abdd0d93c1c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fe2bc24de21de58c457bb8a765565593367da8caaed08784d9446abdd0d93c1c.pdf",
+      "file_id": "04ce11d357ac444289a9d1e7ee030e5c",
+      "file_name": "SOW+Bowling+Ball+Return_19+Mar+26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 179335,
+      "sha256": "fe2bc24de21de58c457bb8a765565593367da8caaed08784d9446abdd0d93c1c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3ab7d0e5a3b48ce969f893d0c52a318/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ddbf8fbaecdfe68e0d78ffabe0f41e07db999e90dbde4317807563b6b2e5d80c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ddbf8fbaecdfe68e0d78ffabe0f41e07db999e90dbde4317807563b6b2e5d80c.pdf",
+      "file_id": "c3ab7d0e5a3b48ce969f893d0c52a318",
+      "file_name": "RFI_+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23130,
+      "sha256": "ddbf8fbaecdfe68e0d78ffabe0f41e07db999e90dbde4317807563b6b2e5d80c"
+    }
+  ],
+  "_mirror_hash": "96c04d624f5c10609b59402e8b6f33a3c70f857d6b294ec6d7cad326ba40d6cd",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.083733+00:00"
+}

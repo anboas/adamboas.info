@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "id": "radar-assured-logistics-summit-2026",
+    "title": "Assured Logistics Summit 2026",
+    "description": "ASD Events sourced event for defense ecosystem tracking and engagement planning.",
+    "startDate": "2026-05-12",
+    "endDate": "2026-05-13",
+    "branch": "Joint",
+    "type": "Summit",
+    "status": "Upcoming",
+    "signal": "Medium",
+    "effort": "Low",
+    "location": {
+      "city": "Washington",
+      "state": "DC",
+      "country": "USA",
+      "lat": 38.8950368,
+      "lng": -77.0365427
+    },
+    "ontology": {
+      "themes": [
+        "Defense conference monitoring",
+        "Opportunity timing",
+        "Ecosystem engagement"
+      ],
+      "capabilityAreas": [
+        "Acquisition",
+        "Mission systems",
+        "Digital modernization"
+      ],
+      "missionThreads": [
+        "Partnership development",
+        "Program sensing"
+      ],
+      "stakeholders": [
+        "Joint stakeholders",
+        "Program offices",
+        "Industry partners"
+      ],
+      "keywords": [
+        "assured",
+        "logistics",
+        "summit",
+        "2026"
+      ],
+      "relatedPrograms": [
+        "Radar expansion"
+      ],
+      "decisionWindows": {
+        "discovery": "Now to T-90 days",
+        "prep": "T-60 to T-14 days",
+        "execution": "Event window + 14-day follow-up"
+      },
+      "provenance": [
+        {
+          "name": "ASD Events",
+          "url": "https://www.asdevents.com/defense-security",
+          "type": "aggregator",
+          "lastVerified": "2026-02-13",
+          "confidence": "High"
+        }
+      ],
+      "links": {
+        "official": "https://www.asdevents.com/event.asp?id=25990"
+      },
+      "logistics": {
+        "format": "In-person",
+        "estimatedCostUsd": {
+          "min": 100,
+          "max": 900
+        },
+        "travelBurdenFromDc": "Low"
+      },
+      "notes": null
+    }
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "id": "sam-342ebe9036d94b00a18e34b107d4f63d",
+  "title": "SLAT ASSEMBLY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=342ebe9036d94b00a18e34b107d4f63d",
+  "opportunity_url": "https://sam.gov/opp/342ebe9036d94b00a18e34b107d4f63d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/342ebe9036d94b00a18e34b107d4f63d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "342ebe9036d94b00a18e34b107d4f63d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM1-26-R-RA53",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=342ebe9036d94b00a18e34b107d4f63d",
+  "detail_text": "THIS SOURCES SOUGHT IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE US GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR THE PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS NOTICE IS STRICTLY VOLUNTARY. DLA MARITIME-MECHANICSBURG is seeking sources capable of supplying the following items: NSN: 5865 017140832",
+  "detail_text_length": 599,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dde617b8dac54dfb981e416a29b7625e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dde617b8dac54dfb981e416a29b7625e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f9f44064224427e903f5cd72edcd269b8765f00c501606811cefdf86ff76deeb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f9f44064224427e903f5cd72edcd269b8765f00c501606811cefdf86ff76deeb.pdf",
+      "file_id": "dde617b8dac54dfb981e416a29b7625e",
+      "file_name": "SOURCES+SOUGHT_MARKET+SURVEY_5865017140832.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 388278,
+      "sha256": "f9f44064224427e903f5cd72edcd269b8765f00c501606811cefdf86ff76deeb"
+    }
+  ],
+  "_mirror_hash": "31dca75b20bede3269bb39ce7ea346796846b57defd7ae2ee694ca5d4b95b7e6",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.134624+00:00"
+}

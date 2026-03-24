@@ -1,0 +1,46 @@
+{
+  "id": "sam-91dba73cd8314730ab1be1f6e2be2bf7",
+  "title": "Y--MACA 258051 - Replace Seasonal Housing",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91dba73cd8314730ab1be1f6e2be2bf7",
+  "opportunity_url": "https://sam.gov/opp/91dba73cd8314730ab1be1f6e2be2bf7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/91dba73cd8314730ab1be1f6e2be2bf7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "91dba73cd8314730ab1be1f6e2be2bf7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P2026R0048",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.DSC CONTRACTING SERVICES DIVISION",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91dba73cd8314730ab1be1f6e2be2bf7",
+  "detail_text": "MACA 258051 - Replace Seasonal Housing This is a sources sought notice for an upcoming employee housing project at Mammoth Cave National Park. NPS is not requesting pricing at this time. Please see the attached document for further information on how to submit a response. Thank you for your interest in this project.",
+  "detail_text_length": 317,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9dfdd98b767f4c81b31bd18dc7a2f35d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9dfdd98b767f4c81b31bd18dc7a2f35d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/30536d2fa163d94561ca2862536b72209a6aeae5c1eee48ac6ff3b811134c0ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/30536d2fa163d94561ca2862536b72209a6aeae5c1eee48ac6ff3b811134c0ce.pdf",
+      "file_id": "9dfdd98b767f4c81b31bd18dc7a2f35d",
+      "file_name": "MACA-Construction_SSN_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 456538,
+      "sha256": "30536d2fa163d94561ca2862536b72209a6aeae5c1eee48ac6ff3b811134c0ce"
+    }
+  ],
+  "_mirror_hash": "e9c0ed92d99f554798f2dad53e93de02877c3fe56d573bd5f626ed1dc95cd734",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.114713+00:00"
+}

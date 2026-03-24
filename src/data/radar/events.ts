@@ -16006,4 +16006,57 @@ export const radarEventsSeed: RadarEvent[] = [
 		}
 	},
 
+	{
+		id: 'radar-assured-logistics-summit-2026',
+		title: 'Assured Logistics Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-05-12',
+		endDate: '2026-05-13',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology: 
+		{
+			themes: [],
+			capabilityAreas: [],
+			missionThreads: [],
+			stakeholders: [],
+			keywords: ['assured', 'logistics', 'summit', '2026'],
+			relatedPrograms: [],
+			decisionWindows: 
+			{
+				discovery: '',
+				prep: '',
+				execution: ''
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25990'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Source listing does not publish public government contact, notice type, solicitation, or response/registration dates.'
+		}
+	},
 ];

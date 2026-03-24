@@ -1,0 +1,46 @@
+{
+  "id": "sam-61d0790c82c848489af3f6cc7ecbaa60",
+  "title": "Valve, Flow, Control",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61d0790c82c848489af3f6cc7ecbaa60",
+  "opportunity_url": "https://sam.gov/opp/61d0790c82c848489af3f6cc7ecbaa60/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/61d0790c82c848489af3f6cc7ecbaa60/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "61d0790c82c848489af3f6cc7ecbaa60",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302400989_01",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61d0790c82c848489af3f6cc7ecbaa60",
+  "detail_text": "SEE ATTACHED",
+  "detail_text_length": 12,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1956b417311b4633a835363e6cefb6f2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1956b417311b4633a835363e6cefb6f2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/96c2ac33fc30bb20ce55f47557a7fca2134fe7cc32ef5dcf867e39e10c227743.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/96c2ac33fc30bb20ce55f47557a7fca2134fe7cc32ef5dcf867e39e10c227743.pdf",
+      "file_id": "1956b417311b4633a835363e6cefb6f2",
+      "file_name": "MRSSS+Form+FD20302400989.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 646428,
+      "sha256": "96c2ac33fc30bb20ce55f47557a7fca2134fe7cc32ef5dcf867e39e10c227743"
+    }
+  ],
+  "_mirror_hash": "7eac3089d26e9a099dae5e9896a71b7f1c5e1086e77f71b0ae7d672dec6aa331",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.093867+00:00"
+}

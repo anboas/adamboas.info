@@ -1,0 +1,57 @@
+{
+  "id": "sam-654a5636c29942b0acfc3027168673e1",
+  "title": "Patient Library Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=654a5636c29942b0acfc3027168673e1",
+  "opportunity_url": "https://sam.gov/opp/654a5636c29942b0acfc3027168673e1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/654a5636c29942b0acfc3027168673e1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "654a5636c29942b0acfc3027168673e1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "NIH-OD-SS-26-001219",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-03-23",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=654a5636c29942b0acfc3027168673e1",
+  "detail_text": "OBJECTIVES AND SPECIFIC ACTIONS FOR THE PROCUREMENT: 1) Provide library services to a customer base of patients, patient visitors, family members of the Clinical Center. Materials and services provided are focused on (1) diversional, (2) health – related information, (3) general interest and (4) current interest. 2) Library services shall provide outstanding customer service which includes a warm, friendly, courteous greeting as well as an inquiry as to how the librarian can meet the customer’s needs. The assessment of customer needs should not only be in the above-mentioned areas, but also reflect an understanding of reading comprehension levels. 3) The scope of services includes all operations, to include management of personnel and space, material resources, guest wireless accounts, and on-going currency of new releases of books and other library materials. 4) Hours of service are defined and reflective of customer demand. 5) Library services will be performed at the Clinical Center. Period of Performance: Provide library services for the Clinical Center Patient Library. Base Period: July 13, 2026 – July 12, 2027 Option Year 1: July 13, 2027 – July 12, 2028 Option Year 2: July 13, 2028 – July 12, 2029 Option Year 3: July 13, 2029 – July 12, 2030 Option Year 4: July 13, 2030 – July 12, 2031",
+  "detail_text_length": 1313,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/41e2618f1e934168b50c2381a66b7419/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/61d4bb06ba2548b8b21c5ab4b945d36c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/41e2618f1e934168b50c2381a66b7419/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39f2cbcde37c461e956416ffecd07911a07421fca779459ffe80f0245a0bb5b2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39f2cbcde37c461e956416ffecd07911a07421fca779459ffe80f0245a0bb5b2.docx",
+      "file_id": "41e2618f1e934168b50c2381a66b7419",
+      "file_name": "Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20971,
+      "sha256": "39f2cbcde37c461e956416ffecd07911a07421fca779459ffe80f0245a0bb5b2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/61d4bb06ba2548b8b21c5ab4b945d36c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/818dc1f573ba99ecddd700c49c79bd8cb301f69c4e2f12b09fda14f72b663309.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/818dc1f573ba99ecddd700c49c79bd8cb301f69c4e2f12b09fda14f72b663309.docx",
+      "file_id": "61d4bb06ba2548b8b21c5ab4b945d36c",
+      "file_name": "Patient+Library+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45108,
+      "sha256": "818dc1f573ba99ecddd700c49c79bd8cb301f69c4e2f12b09fda14f72b663309"
+    }
+  ],
+  "_mirror_hash": "4287bfa617042789771c24f48993e9d66a86426afbf822386b5b5bbfe9a08ad0",
+  "_mirror_run_id": "20260324T134233Z",
+  "_mirror_recorded_at": "2026-03-24T13:46:36.055975+00:00"
+}
