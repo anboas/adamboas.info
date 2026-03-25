@@ -1,0 +1,46 @@
+{
+  "id": "sam-d923e0d6652849d39370d7295140664b",
+  "title": "R--Acid Precip - CO00 FY26",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d923e0d6652849d39370d7295140664b",
+  "opportunity_url": "https://sam.gov/opp/d923e0d6652849d39370d7295140664b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d923e0d6652849d39370d7295140664b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d923e0d6652849d39370d7295140664b",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140G0126Q0076",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFC OF ACQUSITION  GRANTS-NATIONAL",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d923e0d6652849d39370d7295140664b",
+  "detail_text": "Acid Precip - CO00 FY26",
+  "detail_text_length": 23,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0eb16d0bb3b14045b5b5bc3a36c69975/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0eb16d0bb3b14045b5b5bc3a36c69975/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a11c40919f3563d405dbdcf2112a871228d3799586590f392f8ef2a6333c0152.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a11c40919f3563d405dbdcf2112a871228d3799586590f392f8ef2a6333c0152.pdf",
+      "file_id": "0eb16d0bb3b14045b5b5bc3a36c69975",
+      "file_name": "FBO_Announcement_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 91677,
+      "sha256": "a11c40919f3563d405dbdcf2112a871228d3799586590f392f8ef2a6333c0152"
+    }
+  ],
+  "_mirror_hash": "4e9ad6a1844e197d320a8e53bd87932a0a650dedfaf1acbf42367bf0bca51b54",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.389656+00:00"
+}

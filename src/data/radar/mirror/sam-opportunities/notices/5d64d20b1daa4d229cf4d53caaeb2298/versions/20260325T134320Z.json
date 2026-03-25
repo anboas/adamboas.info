@@ -1,0 +1,45 @@
+{
+  "id": "sam-5d64d20b1daa4d229cf4d53caaeb2298",
+  "title": "FMS Repair N0038326PR0R402",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d64d20b1daa4d229cf4d53caaeb2298",
+  "opportunity_url": "https://sam.gov/opp/5d64d20b1daa4d229cf4d53caaeb2298/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5d64d20b1daa4d229cf4d53caaeb2298/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5d64d20b1daa4d229cf4d53caaeb2298",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00383-26-Q-M062",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5d64d20b1daa4d229cf4d53caaeb2298",
+  "detail_text": "ALL CONTRACTUAL DOCUMENTS (I.E. CONTRACTS, PURCHASE ORDERS, TASK ORDERS DELIVERY ORDERS AND MODIFICATIONS) RELATED TO THE INSTANT PROCUREMENT ARE CONSIDERED TO BE \"ISSUED\" BY THE GOVERNMENT WHEN COPIES ARE EITHER DEPOSITED IN THE MAIL, TRANSMITTED BY FACSIMILE, OR SENT BY OTHER ELECTRONIC COMMERCE METHODS, SUCH AS EMAIL. THE GOVERNMENT'S ACCEPTANCE OF THE CONTRACTOR'S PROPOSAL CONSTITUTES BILATERAL AGREEMENT TO \"ISSUE\" CONTRACTUAL DOCUMENTS AS DETAILED HEREIN. Early and incremental deliveries accepted and preferred",
+  "detail_text_length": 520,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d460b71106b4ffea374eced3896af9c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d460b71106b4ffea374eced3896af9c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1eb07296f3e99ede15aeca51eafe3047fab49661d1059a2c8347404be8135082.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1eb07296f3e99ede15aeca51eafe3047fab49661d1059a2c8347404be8135082.pdf",
+      "file_id": "0d460b71106b4ffea374eced3896af9c",
+      "file_name": "3.01_RFQ_N00383-26-Q-M062_N0038326PR0R402.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1191225,
+      "sha256": "1eb07296f3e99ede15aeca51eafe3047fab49661d1059a2c8347404be8135082"
+    }
+  ],
+  "_mirror_hash": "9cc073be849b4b5016b05165f4f74cb59d41b6f7237135f5932fde7a70f1ea2c",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.287169+00:00"
+}

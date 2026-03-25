@@ -1,0 +1,78 @@
+{
+  "id": "sam-7d4b9a24f51f40cebfbc53289af784ed",
+  "title": "USS Frank Cable Wireless Devices and Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d4b9a24f51f40cebfbc53289af784ed",
+  "opportunity_url": "https://sam.gov/opp/7d4b9a24f51f40cebfbc53289af784ed/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7d4b9a24f51f40cebfbc53289af784ed/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7d4b9a24f51f40cebfbc53289af784ed",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926QH019",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d4b9a24f51f40cebfbc53289af784ed",
+  "detail_text": "This requirement is for wireless devices and service in support of the USS Frank Cable (AS-40). See attached Solicitation N6264926QH019 for details. For submittal instructions, refer to Addendum to 52.212-1,Instructions to Offerors, on Page 21. Please direct any questions via email to Joshua Tyquiengco at joshua.g.tyquiengco.civ@us.navy.mil AND Rafael Battung at rafaeleladio.m.battung.civ@us.navy.mil by 0900 am ChST (Guam Time) on Tuesday, March 24, 2026. Amendment 0001: The purpose of this amendment is to include Attachment (B) Q & A to provide a government response to a request for information. All previously submitted quotes must be resubmitted after the posting of this amendment to be considered for award. The due date and time of offers remain the same (26MAR26 at 900 JST/1000 ChST).",
+  "detail_text_length": 799,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15c56f11fe594053b32ddf5230750e26/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3595fb17a78a491c928d52446c443677/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6d4ae23b85a4936b669f1ad2e4d3655/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c37b464d235b4aa999a2682ad97250e4/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15c56f11fe594053b32ddf5230750e26/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/00767686765d4b13badbf89dcf22ede364d1200f8ad0283161909b9d7fa35577.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/00767686765d4b13badbf89dcf22ede364d1200f8ad0283161909b9d7fa35577.pdf",
+      "file_id": "15c56f11fe594053b32ddf5230750e26",
+      "file_name": "Amendment+N6264926QH019-0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 589439,
+      "sha256": "00767686765d4b13badbf89dcf22ede364d1200f8ad0283161909b9d7fa35577"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3595fb17a78a491c928d52446c443677/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8da501b94233a37824ff35c4425aa1c649c6d72763750ec523010a7d42034601.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8da501b94233a37824ff35c4425aa1c649c6d72763750ec523010a7d42034601.xlsx",
+      "file_id": "3595fb17a78a491c928d52446c443677",
+      "file_name": "Attachment+-A-+Pricing+Sheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24443,
+      "sha256": "8da501b94233a37824ff35c4425aa1c649c6d72763750ec523010a7d42034601"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6d4ae23b85a4936b669f1ad2e4d3655/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3e8903ab01acc49341a3a05fee7c2d9237359a3f87099048203d5b03cca36a77.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3e8903ab01acc49341a3a05fee7c2d9237359a3f87099048203d5b03cca36a77.pdf",
+      "file_id": "b6d4ae23b85a4936b669f1ad2e4d3655",
+      "file_name": "Attachment+-B-+Q+and+A.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 386319,
+      "sha256": "3e8903ab01acc49341a3a05fee7c2d9237359a3f87099048203d5b03cca36a77"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c37b464d235b4aa999a2682ad97250e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68da27cd6e8621b2498d55cf03a5b164cca46aa54eeff39f691acd23650ed301.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68da27cd6e8621b2498d55cf03a5b164cca46aa54eeff39f691acd23650ed301.pdf",
+      "file_id": "c37b464d235b4aa999a2682ad97250e4",
+      "file_name": "Solicitation+-+N6264926QH019.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1856248,
+      "sha256": "68da27cd6e8621b2498d55cf03a5b164cca46aa54eeff39f691acd23650ed301"
+    }
+  ],
+  "_mirror_hash": "4979dc4d48e7d9fa0ec11d01f68bce778a3fbb046f90df20de2087528adfc308",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.227992+00:00"
+}

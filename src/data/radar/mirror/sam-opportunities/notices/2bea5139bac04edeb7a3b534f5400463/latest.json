@@ -1,0 +1,90 @@
+{
+  "id": "sam-2bea5139bac04edeb7a3b534f5400463",
+  "title": "Directed Medical Services (DMS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2bea5139bac04edeb7a3b534f5400463",
+  "opportunity_url": "https://sam.gov/opp/2bea5139bac04edeb7a3b534f5400463/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2bea5139bac04edeb7a3b534f5400463/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2bea5139bac04edeb7a3b534f5400463",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "OAA-26-00215",
+  "agency_path": "LABOR, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION AND MANAGEMENT.DOL - CAS DIVISION 3 PROCUREMENT",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2bea5139bac04edeb7a3b534f5400463",
+  "detail_text": "The Government’s objective is to locate sources capable of managing and providing a nationwide consortium of various medical specialists dedicated to facilitating the timely adjudication of workers’ compensation claims via the timely scheduling of appointments and case file reviews and delivery of viable medical reports. As outlined in the following Performance Work Statement (PWS), the basic service objectives are: (1) to determine the causal relationship between work factors and the disease or injury; (2) to assess the extent and duration of the physical impairment or disability; (3) to determine the appropriateness of therapy, including some surgical procedures; (4) to determine when recovery has occurred and a return to work is feasible; (5) to resolve a conflict in medical evidence; and (6) to obtain the physician/specialists written unbiased, viable medical diagnosis and report based on medical evidence and that answers questions posed by OWCP and the SOAF. In some cases, OWCP will request a file review only, including IME File reviews, but the objectives will remain the same",
+  "detail_text_length": 1098,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0aa8ca94a52743de8e01a46c66ad123e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/279197f153a34bd4a61b491fa4949f66/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/528d5378e7134016b16aeeb31e38c5df/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71a64be1da864abd9ab453d543942caa/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7abcc710b7f14fcd92dfbf0f7f9521cb/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0aa8ca94a52743de8e01a46c66ad123e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9ab1a0510bca69af1ac2abdc5e03220fd36dfe9b798e04839307dd1f44012120.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9ab1a0510bca69af1ac2abdc5e03220fd36dfe9b798e04839307dd1f44012120.docx",
+      "file_id": "0aa8ca94a52743de8e01a46c66ad123e",
+      "file_name": "Directed+Medical+Services+-RFI+questions+3.13.26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20497,
+      "sha256": "9ab1a0510bca69af1ac2abdc5e03220fd36dfe9b798e04839307dd1f44012120"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/279197f153a34bd4a61b491fa4949f66/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d6920bd9532020c991d64f64c93d91236b1cc6c8bfd0457367a0e55298b38672.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d6920bd9532020c991d64f64c93d91236b1cc6c8bfd0457367a0e55298b38672.xlsx",
+      "file_id": "279197f153a34bd4a61b491fa4949f66",
+      "file_name": "A19-J.5+Directed+Medical+Services+Data+CY24+.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 609862,
+      "sha256": "d6920bd9532020c991d64f64c93d91236b1cc6c8bfd0457367a0e55298b38672"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/528d5378e7134016b16aeeb31e38c5df/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bbb8cabb5151df208fe28577ff30b92830f8bfa09123d0b218d70f192e1e1953.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bbb8cabb5151df208fe28577ff30b92830f8bfa09123d0b218d70f192e1e1953.docx",
+      "file_id": "528d5378e7134016b16aeeb31e38c5df",
+      "file_name": "DMS+RFI_+3.23.26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18634,
+      "sha256": "bbb8cabb5151df208fe28577ff30b92830f8bfa09123d0b218d70f192e1e1953"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71a64be1da864abd9ab453d543942caa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6c8f256db893ae9934400cd3126011c47c529f0c414e67a6ea0cfe00654af0e1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6c8f256db893ae9934400cd3126011c47c529f0c414e67a6ea0cfe00654af0e1.docx",
+      "file_id": "71a64be1da864abd9ab453d543942caa",
+      "file_name": "Directed+Medical+Services+-PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 108291,
+      "sha256": "6c8f256db893ae9934400cd3126011c47c529f0c414e67a6ea0cfe00654af0e1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7abcc710b7f14fcd92dfbf0f7f9521cb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7a3cfbb6a13e3a027cce1fabdf8dc53f09d9c809574a6c933de936ba9d6450c1.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7a3cfbb6a13e3a027cce1fabdf8dc53f09d9c809574a6c933de936ba9d6450c1.xlsx",
+      "file_id": "7abcc710b7f14fcd92dfbf0f7f9521cb",
+      "file_name": "Pricing+Sheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22644,
+      "sha256": "7a3cfbb6a13e3a027cce1fabdf8dc53f09d9c809574a6c933de936ba9d6450c1"
+    }
+  ],
+  "_mirror_hash": "2eb1b65e39e8a7a16d494418bb79ae6d8e2c5c73107ce1932b732d068a6121e9",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.420474+00:00"
+}

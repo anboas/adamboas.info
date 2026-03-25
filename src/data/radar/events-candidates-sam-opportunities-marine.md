@@ -1,31 +1,29 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-24T13:47:01.115600+00:00
+Generated: 2026-03-25T13:48:06.453995+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/24/2026
+Posted range: 01/01/2026 -> 03/25/2026
 
 ## Counts
-- Total candidates: 18
+- Total candidates: 16
 - Navy-related: 0
-- Full detail cached: 18
-- Notices with attachments: 11
-- Total attachment links: 14
+- Full detail cached: 16
+- Notices with attachments: 10
+- Total attachment links: 12
 - Pre-solicitation: 3
-- Sources Sought: 8
-- Special Notice: 7
+- Sources Sought: 7
+- Special Notice: 6
 
 ## Engagement signals
 - Pre-solicitation: 3
-- Sources Sought: 8
-- Special Notice: 7
+- Sources Sought: 7
+- Special Notice: 6
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Special Notice | Special Notice | 2026-02-26 | 2026-03-09 | DEPT OF DEFENSE | [North Carolina Ports Authority Services](https://sam.gov/opp/ab822a3527f1475eb3437030286276df/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-09 | DEPT OF DEFENSE | [Contractor-Operated Parts Store (COPARS)](https://sam.gov/opp/743935fdd658447b85fe0c4802f75444/view) |
 | 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-10 | DEPT OF DEFENSE | [Notice of Intent to Sole Source to WOSB for K9 System](https://sam.gov/opp/a5f2ab980911448791d95721fd573d16/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [DMO Personal Effects Storage](https://sam.gov/opp/755cec093c8648158439981c68ee2023/view) |
 | 2 | Special Notice | Special Notice | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [NOI -  Sole Source - Training Vouchers](https://sam.gov/opp/04012f50fa5642cdadfc8dfd1321fbce/view) |
@@ -39,8 +37,8 @@ Posted range: 01/01/2026 -> 03/24/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-30 | DEPT OF DEFENSE | [Parachute Training Support Services](https://sam.gov/opp/4fc6bf6364b144e3b462013d3e45cb3b/view) |
 | 2 | Special Notice | Special Notice | 2026-03-19 | 2026-03-30 | DEPT OF DEFENSE | [Intent to Sole Source to DODESI](https://sam.gov/opp/433586a058bb439c8a367329138b1fd7/view) |
 | 2 | Special Notice | Special Notice | 2026-03-20 | 2026-03-30 | DEPT OF DEFENSE | [150-pound Amerex Wheeled Fire Extinguishers Testing and Maintenance](https://sam.gov/opp/0e5724564510433498e6526d2e192f27/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/4cb4b860bc084179a2fc47b17730eb82/view) |
 | 2 | Special Notice | Special Notice | 2026-03-17 | 2026-03-31 | DEPT OF DEFENSE | [Notice of Intent -Logistical Support Services](https://sam.gov/opp/dcd7938dd66f4008b482894bde25e836/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-25 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/c97180bf1656451ea14cd6ad7e81b378/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

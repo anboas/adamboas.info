@@ -1,0 +1,47 @@
+{
+  "id": "sam-e13222b03a9142b9ba8864959eb44ccb",
+  "title": "Sources Sought for P/N 822835-5-108, Manufacturer Pratt & Whitney Component Solutions",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e13222b03a9142b9ba8864959eb44ccb",
+  "opportunity_url": "https://sam.gov/opp/e13222b03a9142b9ba8864959eb44ccb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e13222b03a9142b9ba8864959eb44ccb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e13222b03a9142b9ba8864959eb44ccb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA910126ECC",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e13222b03a9142b9ba8864959eb44ccb",
+  "detail_text": "SOURCES SOUGHT NOTICE 1. Description This is a Sources Sought notice for market research purposes only, issued to identify potential sources capable of providing the item described below. This is not a solicitation for proposals, a request for quotation, or an invitation for bid, nor does it commit the Government to any contractual agreement. The Government will not pay for any information received in response to this notice. 3. Requirement Details The Government is seeking authorized sources for the following part: Part Name: Engine Electronic Control Part Number (P/N): 822835-5-108 Manufacturer: Pratt & Whitney Component Solutions Required Quantity: Minimum of 1, Maximum of 2 Condition: New or New Surplus condition is required. 4. Information Requested from Interested Parties Interested parties are requested to submit a capabilities statement demonstrating their ability to provide the specified part. The statement should include, at a minimum, the following information: Company Information: Company Name and Address Unique Entity Identifier (UEI) from SAM.gov CAGE Code Point of Contact (Name, Title, Email, Phone) Authorization Status: Evidence of being an authorized reseller or distributor for Pratt & Whitney Component Solutions. This can include a letter of authorization, a copy of a distribution agreement, or other verifiable proof. Availability: Current stock availability for P/N 822835-5-108. Lead time for delivery if the part is not in stock. Business Size: Indicate if your business is a Small Business, Service-Disabled Veteran-Owned Small Business (SDVOSB), HUBZone, Woman-Owned Small Business (WOSB), etc., under the relevant NAICS code. 5. Submission Instructions Please submit your capabilities statement and all requested information via email to Brooke Vandeman via email at brooke.vandeman@us.af.mil no later than 1:00 PM Central Time on Wednesday, 25 March 2026. The subject line of the email should read: \"Sources Sought Response for P/N 822835-5-108\". 6. Disclaimer The information gathered from this notice will be used for market research to determine the appropriate acquisition strategy. The Government reserves the right to issue a solicitation based on the results of this market research, but is not obligated to do so. All information submitted is for market research purposes only.",
+  "detail_text_length": 2332,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/123dedf1d9ef4b75b8cd09f8f930ee69/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/123dedf1d9ef4b75b8cd09f8f930ee69/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea7f36026b0ad949bdfcdd3b19dd2069fe2a3abd7763c6fa7ed28550dcd2406a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea7f36026b0ad949bdfcdd3b19dd2069fe2a3abd7763c6fa7ed28550dcd2406a.docx",
+      "file_id": "123dedf1d9ef4b75b8cd09f8f930ee69",
+      "file_name": "SOURCES+SOUGHT+NOTICE.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17149,
+      "sha256": "ea7f36026b0ad949bdfcdd3b19dd2069fe2a3abd7763c6fa7ed28550dcd2406a"
+    }
+  ],
+  "_mirror_hash": "a29811ee81f0a91652b76c32017d05df03b43f6a141989b5866ad77b7b7d1694",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.220205+00:00"
+}

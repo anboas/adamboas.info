@@ -1,0 +1,48 @@
+{
+  "id": "sam-79433034d5c64012a77c16eebd69eccb",
+  "title": "AUTOMATED COUNTER-UAS EXPEDITIONARY SOLUTIONS (ACES)_RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=79433034d5c64012a77c16eebd69eccb",
+  "opportunity_url": "https://sam.gov/opp/79433034d5c64012a77c16eebd69eccb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/79433034d5c64012a77c16eebd69eccb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "79433034d5c64012a77c16eebd69eccb",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA2385 USAF AFMC AFRL PZL AFRL RSKD",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=79433034d5c64012a77c16eebd69eccb",
+  "detail_text": "The proliferation of small, low-cost Unmanned Aerial Systems (UAS) poses a significant and growing threat to military and civilian assets. These systems can be used for adversarial intelligence, surveillance, and reconnaissance (ISR) or as direct-attack weapon platforms. A critical need exists for a point-defense capability that can be deployed rapidly and affordably to protect fixed and semi-fixed sites, such as airbases, forward operating bases, and critical infrastructure.",
+  "detail_text_length": 480,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c12e1966a4b3468e8c91c9b78ac0947a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c12e1966a4b3468e8c91c9b78ac0947a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7de589c16afd3497a37a7836ebc5afb95f2dd0ac4d856ab29d9ad2b64849eab6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7de589c16afd3497a37a7836ebc5afb95f2dd0ac4d856ab29d9ad2b64849eab6.pdf",
+      "file_id": "c12e1966a4b3468e8c91c9b78ac0947a",
+      "file_name": "ACES+Request+for+Information_03242026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 172694,
+      "sha256": "7de589c16afd3497a37a7836ebc5afb95f2dd0ac4d856ab29d9ad2b64849eab6"
+    }
+  ],
+  "_mirror_hash": "0ae080f134691485af7b81f5d52bdc9c39daddf6e2982fda9d5bf0dc511439ea",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.261884+00:00"
+}

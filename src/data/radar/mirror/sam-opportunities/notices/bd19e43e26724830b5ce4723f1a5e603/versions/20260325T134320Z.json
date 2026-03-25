@@ -1,0 +1,59 @@
+{
+  "id": "sam-bd19e43e26724830b5ce4723f1a5e603",
+  "title": "Request for Information (RFI) for Versatile Diagnostic Automatic Test Station (VDATS) Engineering Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd19e43e26724830b5ce4723f1a5e603",
+  "opportunity_url": "https://sam.gov/opp/bd19e43e26724830b5ce4723f1a5e603/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bd19e43e26724830b5ce4723f1a5e603/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bd19e43e26724830b5ce4723f1a5e603",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD2060-26-31093",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMBAT READINESS.FA8533  AFLCMC ROKB",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd19e43e26724830b5ce4723f1a5e603",
+  "detail_text": "FOR ATSA-I AWARDEES, FA8533-24-R-0002 ONLY This Request for Information (RFI) describes the services required to provide Engineering Services for the Versatile Diagnostic Automatic Test Station (VDATS) testers, National Stock Numbers (NSNs) 4920-01-553-0693, 4920-01-553-1534, 4920-01-663-3117KV and 4920-01-663-3118KV. These services include obsolescence monitoring and forecasting.",
+  "detail_text_length": 383,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/320ff160dd9244f3b54aa4a6ccf4dd15/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eadcb777460b4e1bb619d2502f720ff2/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/320ff160dd9244f3b54aa4a6ccf4dd15/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bd52f28f47c9b2d5b0990b69b87d0c5230810d1f9aa5d55f55d8e76165064c50.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bd52f28f47c9b2d5b0990b69b87d0c5230810d1f9aa5d55f55d8e76165064c50.docx",
+      "file_id": "320ff160dd9244f3b54aa4a6ccf4dd15",
+      "file_name": "26-31093+VDATS+DMSMS+RFI+-20260309-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28495,
+      "sha256": "bd52f28f47c9b2d5b0990b69b87d0c5230810d1f9aa5d55f55d8e76165064c50"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eadcb777460b4e1bb619d2502f720ff2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d936e706338f2c94a91beec68495eed9e6646ae67cdd8e14329b7d76264ea406.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d936e706338f2c94a91beec68495eed9e6646ae67cdd8e14329b7d76264ea406.docx",
+      "file_id": "eadcb777460b4e1bb619d2502f720ff2",
+      "file_name": "FD2060-26-31093+VDATS+PWS+-20260309-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70888,
+      "sha256": "d936e706338f2c94a91beec68495eed9e6646ae67cdd8e14329b7d76264ea406"
+    }
+  ],
+  "_mirror_hash": "f4f50925d561af2ec40c06517d084d3b1e425708d62d4450f7fbc0ca864f4fc7",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.219675+00:00"
+}

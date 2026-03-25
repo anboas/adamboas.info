@@ -1,0 +1,48 @@
+{
+  "id": "sam-e12cd09ad17b4d4b84f4906b3ecfbb5a",
+  "title": "Request for Information (RFI) / Sources Sought Testing and Calibration of Testing Equipment - Stockton and Harry S. Truman Powerplants",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e12cd09ad17b4d4b84f4906b3ecfbb5a",
+  "opportunity_url": "https://sam.gov/opp/e12cd09ad17b4d4b84f4906b3ecfbb5a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e12cd09ad17b4d4b84f4906b3ecfbb5a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e12cd09ad17b4d4b84f4906b3ecfbb5a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912DQ26S8901",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTHWESTERN.ENDIST KANSAS CITY.W071 ENDIST KANSAS CITY",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e12cd09ad17b4d4b84f4906b3ecfbb5a",
+  "detail_text": "The U.S. Army Corps of Engineers (USACE), Kansas City District (NWK), has a potential project coming up at Harry S. Truman Lake in Benton County, Missouri and Stockton Lake Project in Cedar County, Missouri. The contractor shall provide all personnel, equipment, supplies, transportation, tools, materials, supervision, and other items and non-personal services necessary to perform inspection, testing, and calibration of testing equipment. The contractor shall perform to the standards in this contract. If you are interested in this project, p lease respond to the following information : 1) Company Name, SAM.gov Unique Entity ID (UEI), and POC information 2) Are you a small business or a large business associated with NAICS code 811210, 811310, or 541380 ( please specify) ? If a small business, do you fall under any socio-economic groups (8(a), HUBZone, Service-Disabled Veteran Owned (SDVSB), Women-Owned (WOSB), and/or Economically Disadvantaged Women-Owned (EDWOSB)? 3) Does your firm have the capability and capacity to provide testing/calibration services for all items listed on the Draft Equipment List Description? If not, what can you provide? See Attachment - Draft Equipment List 4) Is your firm accredited to ISO/IEC 17025 for calibration ? 5) Do you have the capacity to mobilize to Stockton, Missouri and also Warsaw, Missouri. 6) Will your firm self-perform, or do you plan to subcontract?",
+  "detail_text_length": 1413,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29fe925b98d9467bb25c15ed99f3ea12/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29fe925b98d9467bb25c15ed99f3ea12/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd3517010e8ae28ed64429a2f8fe9105476fdbf8346b7cb2ad8860785a2ad0f4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd3517010e8ae28ed64429a2f8fe9105476fdbf8346b7cb2ad8860785a2ad0f4.pdf",
+      "file_id": "29fe925b98d9467bb25c15ed99f3ea12",
+      "file_name": "Draft+Equipment+List.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 188980,
+      "sha256": "dd3517010e8ae28ed64429a2f8fe9105476fdbf8346b7cb2ad8860785a2ad0f4"
+    }
+  ],
+  "_mirror_hash": "e7913fa3a809a72d8a15338006e851403b0dbbbe86fc3807bcefa965502976ff",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.237038+00:00"
+}

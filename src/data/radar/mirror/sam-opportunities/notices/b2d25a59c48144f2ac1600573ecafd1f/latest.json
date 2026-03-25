@@ -1,0 +1,57 @@
+{
+  "id": "sam-b2d25a59c48144f2ac1600573ecafd1f",
+  "title": "Robins Modernization Summit 2026",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2d25a59c48144f2ac1600573ecafd1f",
+  "opportunity_url": "https://sam.gov/opp/b2d25a59c48144f2ac1600573ecafd1f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b2d25a59c48144f2ac1600573ecafd1f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b2d25a59c48144f2ac1600573ecafd1f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA8532-26-Modern",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMBAT READINESS.FA8532  AFLCMC WNKAA",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2d25a59c48144f2ac1600573ecafd1f",
+  "detail_text": "AFLCMC/RO, Support Equipment, Vehicles, and Automatic Test System will be hosting Industry Days at the 2026 Robins Modernization Summit from May 11th to May 15th at the Georgia National Fairgrounds. Please see the attachments and rsevmis.com for more details and information on registration. Registration will close on May 4th.",
+  "detail_text_length": 327,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6abdff5a53224c21be2491057ab8fe6c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b1742ace12d4f5bbd1a699c2a78326d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6abdff5a53224c21be2491057ab8fe6c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c753fa3353effa4e4787b8664261c94b15d2497accae82cd249c003445ee1ff0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c753fa3353effa4e4787b8664261c94b15d2497accae82cd249c003445ee1ff0.pdf",
+      "file_id": "6abdff5a53224c21be2491057ab8fe6c",
+      "file_name": "IndustryDay_ModSummit_Flyer_v3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1423373,
+      "sha256": "c753fa3353effa4e4787b8664261c94b15d2497accae82cd249c003445ee1ff0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b1742ace12d4f5bbd1a699c2a78326d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6ed05725dc2d53fb17dd99aae0ae1d0f6164fede880c3475a21ab098d1b8ecb1.png",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6ed05725dc2d53fb17dd99aae0ae1d0f6164fede880c3475a21ab098d1b8ecb1.png",
+      "file_id": "6b1742ace12d4f5bbd1a699c2a78326d",
+      "file_name": "2026+Robins+Modernization+Summit.png",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1578089,
+      "sha256": "6ed05725dc2d53fb17dd99aae0ae1d0f6164fede880c3475a21ab098d1b8ecb1"
+    }
+  ],
+  "_mirror_hash": "2793f7c2d3c0234d3081c05950e23b4ee8cde463b79b9ecad46efb8d6aef6189",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.484506+00:00"
+}

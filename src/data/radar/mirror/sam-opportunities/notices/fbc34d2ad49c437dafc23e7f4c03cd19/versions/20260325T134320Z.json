@@ -1,0 +1,45 @@
+{
+  "id": "sam-fbc34d2ad49c437dafc23e7f4c03cd19",
+  "title": "Autodesk Managed Services and Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fbc34d2ad49c437dafc23e7f4c03cd19",
+  "opportunity_url": "https://sam.gov/opp/fbc34d2ad49c437dafc23e7f4c03cd19/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fbc34d2ad49c437dafc23e7f4c03cd19/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fbc34d2ad49c437dafc23e7f4c03cd19",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4215826QN015",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fbc34d2ad49c437dafc23e7f4c03cd19",
+  "detail_text": "Continued support for Autodesk services",
+  "detail_text_length": 39,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bae75e5460664498ad7db50aa231bfc5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bae75e5460664498ad7db50aa231bfc5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1f3705cb625bd172e5087041c5831a48033dc5ef181a2d718761a5ed9ce5f046.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1f3705cb625bd172e5087041c5831a48033dc5ef181a2d718761a5ed9ce5f046.pdf",
+      "file_id": "bae75e5460664498ad7db50aa231bfc5",
+      "file_name": "Solicitation+-+N4215826QN015.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1910619,
+      "sha256": "1f3705cb625bd172e5087041c5831a48033dc5ef181a2d718761a5ed9ce5f046"
+    }
+  ],
+  "_mirror_hash": "8dfe58e572b82d1884a67cb15c6746fc57c16271487d41e1b8743d2e3b974376",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.242306+00:00"
+}

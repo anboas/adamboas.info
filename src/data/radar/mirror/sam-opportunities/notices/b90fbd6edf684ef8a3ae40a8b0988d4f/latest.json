@@ -1,0 +1,46 @@
+{
+  "id": "sam-b90fbd6edf684ef8a3ae40a8b0988d4f",
+  "title": "679-19-101 Correct Critical Access and ADA Deficiencies B61",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b90fbd6edf684ef8a3ae40a8b0988d4f",
+  "opportunity_url": "https://sam.gov/opp/b90fbd6edf684ef8a3ae40a8b0988d4f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b90fbd6edf684ef8a3ae40a8b0988d4f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b90fbd6edf684ef8a3ae40a8b0988d4f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24726R0069",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.247-NETWORK CONTRACT OFFICE 7 (36C247)",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b90fbd6edf684ef8a3ae40a8b0988d4f",
+  "detail_text": "See attached pre-solicitation.",
+  "detail_text_length": 30,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a8a2b09c90c24377a1e413f5a532b98c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a8a2b09c90c24377a1e413f5a532b98c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7783125e9000a1dc11eb56b5ce99fde41963115005812d98831d8c7a83fc5d83.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7783125e9000a1dc11eb56b5ce99fde41963115005812d98831d8c7a83fc5d83.pdf",
+      "file_id": "a8a2b09c90c24377a1e413f5a532b98c",
+      "file_name": "Pre-Sol+36C24726R0069.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 194474,
+      "sha256": "7783125e9000a1dc11eb56b5ce99fde41963115005812d98831d8c7a83fc5d83"
+    }
+  ],
+  "_mirror_hash": "59fc4adff5a0ef5a08e594a495cf81d454dda0b91a75407d39365e09182a324b",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.433506+00:00"
+}

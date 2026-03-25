@@ -1,0 +1,57 @@
+{
+  "id": "sam-33e83d33bb6d427497da470516705207",
+  "title": "Reflux Drain Pipe",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33e83d33bb6d427497da470516705207",
+  "opportunity_url": "https://sam.gov/opp/33e83d33bb6d427497da470516705207/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/33e83d33bb6d427497da470516705207/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "33e83d33bb6d427497da470516705207",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "70Z08526N40099B00",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 2(00085)",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33e83d33bb6d427497da470516705207",
+  "detail_text": "This is a Sole Source Special Notice. If you choose to submit a quote for this notice, it must include a letter from the OEM, FINCANTIERI MARINE SYSTEMS., CAGE CODE 0VP52 , verifying that your company is an authorized distributor, NOT an authorized reseller. PLEASE SEE ATTACHED.",
+  "detail_text_length": 279,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e316af58fac4f52b46459c9154b0924/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/65defd130d9e4a388d6248ba1eeeee9c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e316af58fac4f52b46459c9154b0924/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4cf52407a89fe0ee98d643dd3bedbc8e94c2cdc8fe11c4659d39fb221c376636.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4cf52407a89fe0ee98d643dd3bedbc8e94c2cdc8fe11c4659d39fb221c376636.docx",
+      "file_id": "3e316af58fac4f52b46459c9154b0924",
+      "file_name": "SOLE+SOURCE+SUPPLY+SPECIAL+70Z08526N40099B00.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43680,
+      "sha256": "4cf52407a89fe0ee98d643dd3bedbc8e94c2cdc8fe11c4659d39fb221c376636"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/65defd130d9e4a388d6248ba1eeeee9c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa7a47b5d5c2c33b5c3025385152e776f4f09ee17291271feba58b0430e0d73b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa7a47b5d5c2c33b5c3025385152e776f4f09ee17291271feba58b0430e0d73b.docx",
+      "file_id": "65defd130d9e4a388d6248ba1eeeee9c",
+      "file_name": "FAR+Clauses+dated+10SEP21+-1-+-1-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 100854,
+      "sha256": "fa7a47b5d5c2c33b5c3025385152e776f4f09ee17291271feba58b0430e0d73b"
+    }
+  ],
+  "_mirror_hash": "2e620c4953498344d688d10d7aed32d14c52a607f1fbb55d811ac9724edc8888",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.363246+00:00"
+}

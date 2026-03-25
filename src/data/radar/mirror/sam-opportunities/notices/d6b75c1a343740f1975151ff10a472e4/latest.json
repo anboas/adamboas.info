@@ -1,0 +1,68 @@
+{
+  "id": "sam-d6b75c1a343740f1975151ff10a472e4",
+  "title": "DA01--Enterprise Cybersecurity Program Audit Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d6b75c1a343740f1975151ff10a472e4",
+  "opportunity_url": "https://sam.gov/opp/d6b75c1a343740f1975151ff10a472e4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d6b75c1a343740f1975151ff10a472e4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d6b75c1a343740f1975151ff10a472e4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0155",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d6b75c1a343740f1975151ff10a472e4",
+  "detail_text": "Please see attached RFI documents.",
+  "detail_text_length": 34,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d71ad1511e14c98adf09c7d202325c8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d2dff01904c34e8eae5d9a6a46fb280b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2c2cf93123844ed82361a22bdec0cac/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d71ad1511e14c98adf09c7d202325c8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af1153c35867042010dde4bdcb8de25297d78540af45206b6e61e6f7484010b9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af1153c35867042010dde4bdcb8de25297d78540af45206b6e61e6f7484010b9.docx",
+      "file_id": "9d71ad1511e14c98adf09c7d202325c8",
+      "file_name": "36C10B26Q0155.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14339,
+      "sha256": "af1153c35867042010dde4bdcb8de25297d78540af45206b6e61e6f7484010b9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d2dff01904c34e8eae5d9a6a46fb280b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/42db487d6ed7c4a334a13c435c6ed8d093bcc71268be16c7b457ed3aa4b94ece.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/42db487d6ed7c4a334a13c435c6ed8d093bcc71268be16c7b457ed3aa4b94ece.docx",
+      "file_id": "d2dff01904c34e8eae5d9a6a46fb280b",
+      "file_name": "Performance+Work+Statement+ECSP+Audit+Support+2.0_RFI+draft.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 165588,
+      "sha256": "42db487d6ed7c4a334a13c435c6ed8d093bcc71268be16c7b457ed3aa4b94ece"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2c2cf93123844ed82361a22bdec0cac/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6fa95e389b47cdbeba155fad05120fd50fdd378fdd8258bade9849dfd2609eb3.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6fa95e389b47cdbeba155fad05120fd50fdd378fdd8258bade9849dfd2609eb3.doc",
+      "file_id": "f2c2cf93123844ed82361a22bdec0cac",
+      "file_name": "RFI_SAM.gov_ECSP+Audit+Support_Final.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 55808,
+      "sha256": "6fa95e389b47cdbeba155fad05120fd50fdd378fdd8258bade9849dfd2609eb3"
+    }
+  ],
+  "_mirror_hash": "755416d248f884162e1635fdc6c65502f346e995416d0a4a113818058a92af3e",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.429925+00:00"
+}

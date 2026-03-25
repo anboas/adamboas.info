@@ -1,0 +1,67 @@
+{
+  "id": "sam-9503cb36e7e24d49a30f160ab557b6c3",
+  "title": "UNICOR BUY Office Furniture",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9503cb36e7e24d49a30f160ab557b6c3",
+  "opportunity_url": "https://sam.gov/opp/9503cb36e7e24d49a30f160ab557b6c3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9503cb36e7e24d49a30f160ab557b6c3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9503cb36e7e24d49a30f160ab557b6c3",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QL052",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-03-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9503cb36e7e24d49a30f160ab557b6c3",
+  "detail_text": "Office Furniture",
+  "detail_text_length": 16,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/473a89bddb334b5eb3e1522ed36685b0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/759529981fd54cc799a4a19d9991d332/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bec098504c4a43cfba1c6919e66bfe86/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/473a89bddb334b5eb3e1522ed36685b0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a819276441d57c996d3da3be8b6291f581d00362f7e106339da848b25849fa21.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a819276441d57c996d3da3be8b6291f581d00362f7e106339da848b25849fa21.pdf",
+      "file_id": "473a89bddb334b5eb3e1522ed36685b0",
+      "file_name": "4.02+Solicitation+-+N0018926QL052.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2540955,
+      "sha256": "a819276441d57c996d3da3be8b6291f581d00362f7e106339da848b25849fa21"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/759529981fd54cc799a4a19d9991d332/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dbebc6d3d6fc1d28c5e181112c9cc110f8350de6f9873489908b26b0c59a21ef.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dbebc6d3d6fc1d28c5e181112c9cc110f8350de6f9873489908b26b0c59a21ef.docx",
+      "file_id": "759529981fd54cc799a4a19d9991d332",
+      "file_name": "4.02+Synopsis+IC.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23741,
+      "sha256": "dbebc6d3d6fc1d28c5e181112c9cc110f8350de6f9873489908b26b0c59a21ef"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bec098504c4a43cfba1c6919e66bfe86/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a78025a2d03be89d96d1fe69da5db16ee74657a1f7b19dbdcb9018f2506e0eef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a78025a2d03be89d96d1fe69da5db16ee74657a1f7b19dbdcb9018f2506e0eef.pdf",
+      "file_id": "bec098504c4a43cfba1c6919e66bfe86",
+      "file_name": "2.01+OEI26-0221+Rev2+DRAWING+Code+200+Front+Office+Furniture.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 602572,
+      "sha256": "a78025a2d03be89d96d1fe69da5db16ee74657a1f7b19dbdcb9018f2506e0eef"
+    }
+  ],
+  "_mirror_hash": "0d7d5054a47fe912c2ab067f628eb60dc4b500987ddedf0fc0af6a1687b1aa41",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.227421+00:00"
+}

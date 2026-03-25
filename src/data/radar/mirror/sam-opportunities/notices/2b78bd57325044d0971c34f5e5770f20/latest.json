@@ -1,0 +1,46 @@
+{
+  "id": "sam-2b78bd57325044d0971c34f5e5770f20",
+  "title": "Partial Consolidation Determination: Case Processing Operations Center 2.0",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b78bd57325044d0971c34f5e5770f20",
+  "opportunity_url": "https://sam.gov/opp/2b78bd57325044d0971c34f5e5770f20/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2b78bd57325044d0971c34f5e5770f20/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2b78bd57325044d0971c34f5e5770f20",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE COUNTERINTELLIGENCE AND SECURITY AGENCY (DCSA).DEFENSE CI AND SECURITY AGENCY",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b78bd57325044d0971c34f5e5770f20",
+  "detail_text": "The partial consolidation determination for the Case Processing Operations Center (CPOC) 2.0 requirement was made in accordance with Revolutionary Federal Acquisition Regulation (FAR) Overhaul (RFO) 7.107-2 and 15 U.S.C. 657q. A redacted copy of the determination is provided in accordance with RFO FAR 7.107-3(b)(1).",
+  "detail_text_length": 317,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e13a82549053425d8202b7f1cb7dc2f1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e13a82549053425d8202b7f1cb7dc2f1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dcd0e537c8c0a80190978cf8e35e993053647fd5f4a2dad8cec9c74857ce5708.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dcd0e537c8c0a80190978cf8e35e993053647fd5f4a2dad8cec9c74857ce5708.pdf",
+      "file_id": "e13a82549053425d8202b7f1cb7dc2f1",
+      "file_name": "CPOC+Consolidation+Determination+Memo_Rev2_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 247950,
+      "sha256": "dcd0e537c8c0a80190978cf8e35e993053647fd5f4a2dad8cec9c74857ce5708"
+    }
+  ],
+  "_mirror_hash": "d852f2260a46c17dba97aef1f1b311f8eedde19dfabba687fcd188168c6ac7b3",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.362749+00:00"
+}

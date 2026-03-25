@@ -1,0 +1,46 @@
+{
+  "id": "sam-6cba9fd7210b4857ac371e8778461c03",
+  "title": "Justification for Exception to Fair Opportunity - Speed Loader Agile Pod",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cba9fd7210b4857ac371e8778461c03",
+  "opportunity_url": "https://sam.gov/opp/6cba9fd7210b4857ac371e8778461c03/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6cba9fd7210b4857ac371e8778461c03/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6cba9fd7210b4857ac371e8778461c03",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA8689",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.INTELLIGENCE, SURVEILLANCE, RECONNAISSANCE.FA8689  AFLCMC WIIK        UAS",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cba9fd7210b4857ac371e8778461c03",
+  "detail_text": "FAR 16.505(b)(2)(i)(B) Only one awardee is capable of providing the supplies or services required at the level of quality required because the supplies or services ordered are unique or highly specialized.",
+  "detail_text_length": 205,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3afa3d2acde4a938e0865975caec67e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3afa3d2acde4a938e0865975caec67e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/41afe5a74cf4e0da163395e50395600dd5849a4414fd17e9b076f04e5cb71b03.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/41afe5a74cf4e0da163395e50395600dd5849a4414fd17e9b076f04e5cb71b03.pdf",
+      "file_id": "b3afa3d2acde4a938e0865975caec67e",
+      "file_name": "SLAP+Redacted+FINAL_Approved+By+All+Parties_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1207714,
+      "sha256": "41afe5a74cf4e0da163395e50395600dd5849a4414fd17e9b076f04e5cb71b03"
+    }
+  ],
+  "_mirror_hash": "3c690a018b63b5cd8eb039f8d4fa995045a735e806890410b07c2d8c0f70731a",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.475375+00:00"
+}

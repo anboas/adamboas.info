@@ -1,0 +1,57 @@
+{
+  "id": "sam-87bf2f1b783b4af39f013d6a9da40f8c",
+  "title": "Joint Planning and Execution Services (JPES) and Joint Capabilities Requirements Manager (JCRM) Software Sustainment and Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=87bf2f1b783b4af39f013d6a9da40f8c",
+  "opportunity_url": "https://sam.gov/opp/87bf2f1b783b4af39f013d6a9da40f8c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/87bf2f1b783b4af39f013d6a9da40f8c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "87bf2f1b783b4af39f013d6a9da40f8c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "622572376",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).DEFENSE INFORMATION SYSTEMS AGENCY",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2025-07-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=87bf2f1b783b4af39f013d6a9da40f8c",
+  "detail_text": "The DISA Global Force Management (GFM) Program Management Office (PMO) is seeking information from potential sources for: the JPES and JCRM Software Sustainment and Maintenance Requirement. JPES is the modernized Joint Operations Planning and Execution System (JOPES), the DoD's primary system for planning and managing military operations, from the strategic level down to the tactical level. JCRM is the joint system used to identify force requirements in service of the GFM allocation process. It is a tool that takes operational plans inputted into the JOPES (soon to be replaced by JPES) and creates orders for those plans, which in turn are sent to the Department of Defense (DoD) secretary for authorization. The scope of this effort includes Project Management, Configuration and Release Management, Risk Management, JPES & JCRM Software Sustainment, Tier 3 Help Desk Support, Testing and Evaluation, Information Assurance (IA) and Cybersecurity Support, and System Administration. The anticipated Period of Performance is July 2026 through July 2027, with four, 12-month option periods, ending July 2031. The anticipated Place of Performance includes: the contractor’s facility for unclassified work and on-site at DISA Headquarters – 6910 Cooper Ave. Ft Meade, MD 20755 for classified work. Classified work includes Cybersecurity, Development in the Microsoft Azure IL6 Environment, and Information Assurance support. See the attached sources sought notice document and draft PWS for additional details on response and service requirements. UPDATE: March 25, 2026 - The JPES/JCRM Sustainment and Maintenance requirement will be competed via GSA MAS as a total small business set aside. The draft RFP is anticipated to be posted in April 2026 and the final RFP is anticipated to be posted in May 2026. The Government is NOT asking for additional responses from this posting.",
+  "detail_text_length": 1883,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b3d3b033df5405797cad4482629f639/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f81ef904b578421f861990c4df5e6265/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b3d3b033df5405797cad4482629f639/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/866fef7653b85f201895516664a23608b9123afafef5fff03d26889ce275d025.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/866fef7653b85f201895516664a23608b9123afafef5fff03d26889ce275d025.pdf",
+      "file_id": "9b3d3b033df5405797cad4482629f639",
+      "file_name": "622572376+JPES-JCRM+SSN.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 200899,
+      "sha256": "866fef7653b85f201895516664a23608b9123afafef5fff03d26889ce275d025"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f81ef904b578421f861990c4df5e6265/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ad856c462aa01a3e6f1cb03c1ef74908985d233b794cdc841f90da276eb469c8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ad856c462aa01a3e6f1cb03c1ef74908985d233b794cdc841f90da276eb469c8.pdf",
+      "file_id": "f81ef904b578421f861990c4df5e6265",
+      "file_name": "Draft+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 455356,
+      "sha256": "ad856c462aa01a3e6f1cb03c1ef74908985d233b794cdc841f90da276eb469c8"
+    }
+  ],
+  "_mirror_hash": "62b52b1291da011de4f5cec62def23cd3bfcd96c8d8d29e261fd1e17d1592327",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.316180+00:00"
+}

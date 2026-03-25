@@ -1,0 +1,57 @@
+{
+  "id": "sam-1f78f7ced641437b94d199909db04ffe",
+  "title": "INL/El Salvador Single Purpose Green Canines",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f78f7ced641437b94d199909db04ffe",
+  "opportunity_url": "https://sam.gov/opp/1f78f7ced641437b94d199909db04ffe/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1f78f7ced641437b94d199909db04ffe/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1f78f7ced641437b94d199909db04ffe",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "191NLE26N0051",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.ACQUISITIONS - INL",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f78f7ced641437b94d199909db04ffe",
+  "detail_text": "The U.S. Department of State is conducting market research through this Sources Sought / Request for Information (RFI) to identify vendors capable of providing SINGLE PURPOSE GREEN CANINES AND K‑9 EQUIPMENT in support of the El Salvador Civilian National Police (PNC) K‑9 Program. This notice is issued in accordance with FAR 15.201(e) for information and planning purposes only and does not constitute a solicitation, offer, or commitment by the Government. Interested vendors should review the full Sources Sought/RFI notice and the attached draft Statement of Work (SOW) for detailed requirements, response instructions, and requested information on capabilities, past performance, NAICS/socioeconomic status, suggested CLIN structure, and notional pricing ranges. Responses are due by Tuesday, April 7, 2026, 5:00 PM EST , via email to WeselyCJ@state.gov with the subject line: “RFI – SINGLE PURPOSE GREEN CANINES AND K‑9 EQUIPMENT.” The Government will use responses to assess industry capability and to refine the requirement and acquisition strategy. No reimbursement will be made for any costs incurred in responding to this notice.",
+  "detail_text_length": 1140,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c1dde27b13041568f5e712c2e885bb2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ce140a75fc047f9bef32d63c7463a93/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c1dde27b13041568f5e712c2e885bb2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/397ee81424dd1624d715bcf1c6dc7f055cf664ab16854771f19e1767d33a0ebc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/397ee81424dd1624d715bcf1c6dc7f055cf664ab16854771f19e1767d33a0ebc.docx",
+      "file_id": "6c1dde27b13041568f5e712c2e885bb2",
+      "file_name": "SOURCES+SOUGHT+Canines.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 38648,
+      "sha256": "397ee81424dd1624d715bcf1c6dc7f055cf664ab16854771f19e1767d33a0ebc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ce140a75fc047f9bef32d63c7463a93/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/73902ede8d236f4febdbd3022dcf3de07e9f7038a6c2d7a6b3d5d1fa0b5c9a3b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/73902ede8d236f4febdbd3022dcf3de07e9f7038a6c2d7a6b3d5d1fa0b5c9a3b.docx",
+      "file_id": "6ce140a75fc047f9bef32d63c7463a93",
+      "file_name": "SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 458949,
+      "sha256": "73902ede8d236f4febdbd3022dcf3de07e9f7038a6c2d7a6b3d5d1fa0b5c9a3b"
+    }
+  ],
+  "_mirror_hash": "f397744422a57a6f78591c0233fed1e6031d19b38fceba6b7edde12f0e3196e1",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.430512+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-71bcd53efd9240de9e03717305f967ff",
+  "title": "CNC Milling Machine",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71bcd53efd9240de9e03717305f967ff",
+  "opportunity_url": "https://sam.gov/opp/71bcd53efd9240de9e03717305f967ff/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/71bcd53efd9240de9e03717305f967ff/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "71bcd53efd9240de9e03717305f967ff",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA9101CNC_Milling_Machine",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71bcd53efd9240de9e03717305f967ff",
+  "detail_text": "This is a Sources Sought notice for a new, fully functional CNC Milling Machine for Arnold Engineering Development Complex (AEDC) at Arnold Air Force Base, TN. The machine must be factory assembled, fully enclosed, and include an automatic tool changer, 4th Axis, and compatibility with Inventor software. Delivery and on-site installation at AEDC are required. For full technical specifications, please refer to the attached Technical Specification Sheet. The NAICS code is 333517 and the PSC is 3417 . This is for market research only and not a solicitation.",
+  "detail_text_length": 560,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4a37c0850424b88a3bf4416d5b231a9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4a37c0850424b88a3bf4416d5b231a9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eedd5656a4d7b72bef4c6a90e36e18a532fa0b663c10bbf1f0ae40ddf00e70d8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eedd5656a4d7b72bef4c6a90e36e18a532fa0b663c10bbf1f0ae40ddf00e70d8.pdf",
+      "file_id": "b4a37c0850424b88a3bf4416d5b231a9",
+      "file_name": "Specification+for+CNC+Milling+Machine.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 150238,
+      "sha256": "eedd5656a4d7b72bef4c6a90e36e18a532fa0b663c10bbf1f0ae40ddf00e70d8"
+    }
+  ],
+  "_mirror_hash": "5104e10b0616a7dd3e270fd0d9bea7f439261e46c40750e1bb33c7568023bc59",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.391409+00:00"
+}

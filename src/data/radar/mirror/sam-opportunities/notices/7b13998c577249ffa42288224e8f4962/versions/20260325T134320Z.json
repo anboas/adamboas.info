@@ -1,0 +1,67 @@
+{
+  "id": "sam-7b13998c577249ffa42288224e8f4962",
+  "title": "1377-00-777-5670; M492; Cutter, Cartridge Actuated MK18 MOD 0; SCD DL2518207",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b13998c577249ffa42288224e8f4962",
+  "opportunity_url": "https://sam.gov/opp/7b13998c577249ffa42288224e8f4962/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7b13998c577249ffa42288224e8f4962/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7b13998c577249ffa42288224e8f4962",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QK034",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b13998c577249ffa42288224e8f4962",
+  "detail_text": "Paper copies will not be provided. Competitive, 100 percent small business set-aside acquisition. Drawings are available. Drawings are NOT available on CD. Item is explosive. A Safety Survey will be required. See solicitation for explosive weight and class.",
+  "detail_text_length": 257,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e93f981feee4a469737b4a1395f6b6d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/468e31dc837e43b48dd9c5f1e898f504/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b67047fc1b04ff1b518c5ed46520348/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e93f981feee4a469737b4a1395f6b6d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18ebf3c3fab30d714fa322a2bb63e2505d24e326383ca7d5295e66ffc1b782b8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18ebf3c3fab30d714fa322a2bb63e2505d24e326383ca7d5295e66ffc1b782b8.pdf",
+      "file_id": "1e93f981feee4a469737b4a1395f6b6d",
+      "file_name": "3.04_Amendment-2-N0010426QK034.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 589548,
+      "sha256": "18ebf3c3fab30d714fa322a2bb63e2505d24e326383ca7d5295e66ffc1b782b8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/468e31dc837e43b48dd9c5f1e898f504/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1d9faeba1c5981e6385de8a91cf5e736c8b565a5b0d1ee4c4d35084ca96ebbb2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1d9faeba1c5981e6385de8a91cf5e736c8b565a5b0d1ee4c4d35084ca96ebbb2.pdf",
+      "file_id": "468e31dc837e43b48dd9c5f1e898f504",
+      "file_name": "3.04_Amendment-1-N0010426QK034.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 579477,
+      "sha256": "1d9faeba1c5981e6385de8a91cf5e736c8b565a5b0d1ee4c4d35084ca96ebbb2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b67047fc1b04ff1b518c5ed46520348/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bcfd71896d8901cfdc4215e4d87c94e6f690ec2b4b0ad0967be2d238c27162f0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bcfd71896d8901cfdc4215e4d87c94e6f690ec2b4b0ad0967be2d238c27162f0.pdf",
+      "file_id": "8b67047fc1b04ff1b518c5ed46520348",
+      "file_name": "3.01_Solicitation_N0010426NB060_14JAN2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2026195,
+      "sha256": "bcfd71896d8901cfdc4215e4d87c94e6f690ec2b4b0ad0967be2d238c27162f0"
+    }
+  ],
+  "_mirror_hash": "cd22e748284b311c028410ae9cddbaefd1f88f3dd7fdb3a04083a86011db123c",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.293160+00:00"
+}

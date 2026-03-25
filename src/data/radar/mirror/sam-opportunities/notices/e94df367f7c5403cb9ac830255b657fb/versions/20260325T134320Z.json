@@ -1,0 +1,57 @@
+{
+  "id": "sam-e94df367f7c5403cb9ac830255b657fb",
+  "title": "6515--Bronchoscope CIVAHCS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e94df367f7c5403cb9ac830255b657fb",
+  "opportunity_url": "https://sam.gov/opp/e94df367f7c5403cb9ac830255b657fb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e94df367f7c5403cb9ac830255b657fb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e94df367f7c5403cb9ac830255b657fb",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C26326F0053",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 23 (36C263)",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e94df367f7c5403cb9ac830255b657fb",
+  "detail_text": "Award #36F79721D0168 36C26326F0053 Date: 3/24/2026 Award amount: $29,280.00 Vendor: OLYMPUS AMERICA INC 3500 CORPORATE PKWY CENTER VALLEY PA 18034",
+  "detail_text_length": 146,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02443502c31245a2b9879dc974475bda/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/945dedad3148422e8f1fa785861ea499/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02443502c31245a2b9879dc974475bda/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3332c75776f0f72d49a440ddb8f0dda111acdf84405501312e749ea571caa770.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3332c75776f0f72d49a440ddb8f0dda111acdf84405501312e749ea571caa770.docx",
+      "file_id": "02443502c31245a2b9879dc974475bda",
+      "file_name": "36F79721D0168+36C26326F0053_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14291,
+      "sha256": "3332c75776f0f72d49a440ddb8f0dda111acdf84405501312e749ea571caa770"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/945dedad3148422e8f1fa785861ea499/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/97541262f1c3118a36c53d3e2b3a61c9f31bcd824a51933927814b2cfd75e50c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/97541262f1c3118a36c53d3e2b3a61c9f31bcd824a51933927814b2cfd75e50c.pdf",
+      "file_id": "945dedad3148422e8f1fa785861ea499",
+      "file_name": "PG_Part808.405-6_Atch1_Limiting_Sources_Justification_MPT-SAT+CO+SIGNED_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 257313,
+      "sha256": "97541262f1c3118a36c53d3e2b3a61c9f31bcd824a51933927814b2cfd75e50c"
+    }
+  ],
+  "_mirror_hash": "5b3bbdbca63dd7bce54a05a802685ec78827aa10372be17936f81c14f21944f5",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.471163+00:00"
+}

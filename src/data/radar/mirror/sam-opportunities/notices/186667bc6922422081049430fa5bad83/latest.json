@@ -1,0 +1,68 @@
+{
+  "id": "sam-186667bc6922422081049430fa5bad83",
+  "title": "FY26 Protective Coating BPA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=186667bc6922422081049430fa5bad83",
+  "opportunity_url": "https://sam.gov/opp/186667bc6922422081049430fa5bad83/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/186667bc6922422081049430fa5bad83/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "186667bc6922422081049430fa5bad83",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA440723Q0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4407  375 CONS LGC",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=186667bc6922422081049430fa5bad83",
+  "detail_text": "This is a request for information only . This is not a request for quote/proposal and there is no solicitation package available at this time. The United States Air Force, 375 Contracting Squadron, Scott Air Force Base, IL is seeking potential sources for a future Blanket Purchase Agree (BPA) for Protective Coating services in accordance with Attachment 2, Statement of Work, to support the U.S Air Force Civil Engineering Squadron (CES) at Scott Air Force Base. Interested parties are preferably relative to NAICS 238320, Painting and Wall Covering Contractors, with a small business size standard of $19 Million. The Product Service Code is Z1JZ, Maintenance of Miscellaneous Buildings. The anticipated years for this BPA are from fiscal years 2026 – 2031.",
+  "detail_text_length": 760,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/247ed4fe24b74b2d980909ba029d94bf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c2e776981a94502a030251bd1edcba9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc891276f9bd4d03b415805d54436097/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/247ed4fe24b74b2d980909ba029d94bf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f25b978a40c93e03fe4ff53f52214c7cc09aa8acf79fa9fccd36d422bb075e76.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f25b978a40c93e03fe4ff53f52214c7cc09aa8acf79fa9fccd36d422bb075e76.xlsx",
+      "file_id": "247ed4fe24b74b2d980909ba029d94bf",
+      "file_name": "Atch+1.+FY26+Protective+Coating+Equipment+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28805,
+      "sha256": "f25b978a40c93e03fe4ff53f52214c7cc09aa8acf79fa9fccd36d422bb075e76"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c2e776981a94502a030251bd1edcba9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e42d9377a1df53d828f21529c0ee80c6694d0408fa5da8e128238b43c492626f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e42d9377a1df53d828f21529c0ee80c6694d0408fa5da8e128238b43c492626f.pdf",
+      "file_id": "9c2e776981a94502a030251bd1edcba9",
+      "file_name": "FY26+Protective+Coating+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 218081,
+      "sha256": "e42d9377a1df53d828f21529c0ee80c6694d0408fa5da8e128238b43c492626f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc891276f9bd4d03b415805d54436097/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/11bd97a382e00145086001e2ce548e9b40899aa67b813ee85fe35bacadfa9e0b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/11bd97a382e00145086001e2ce548e9b40899aa67b813ee85fe35bacadfa9e0b.pdf",
+      "file_id": "cc891276f9bd4d03b415805d54436097",
+      "file_name": "Atch+2.+FY26+BPA+Protecting+Coating+Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 164769,
+      "sha256": "11bd97a382e00145086001e2ce548e9b40899aa67b813ee85fe35bacadfa9e0b"
+    }
+  ],
+  "_mirror_hash": "ee5e29370991b94d0eb05a2f167453f4e1b046a0ded7737d5e5f14b0d3dd6668",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.372780+00:00"
+}

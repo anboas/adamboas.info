@@ -1,0 +1,57 @@
+{
+  "id": "sam-93c8b6ef8d804029a39bd8c47de60f10",
+  "title": "Rubber and Marking",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93c8b6ef8d804029a39bd8c47de60f10",
+  "opportunity_url": "https://sam.gov/opp/93c8b6ef8d804029a39bd8c47de60f10/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/93c8b6ef8d804029a39bd8c47de60f10/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "93c8b6ef8d804029a39bd8c47de60f10",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA489726QA015",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4897 366 CONS PKP",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93c8b6ef8d804029a39bd8c47de60f10",
+  "detail_text": "Mountain Home Air Force Base is conducting market research on Rubber Removal On Heliports and Airfields. \"This post is for market research purposes only. THIS IS NOT A SOLICITATION FOR PROPOSAL OR QUOTE AND NO CONTRACT WILL BE AWARDED FROM THIS SOURCES SOUGHT. No reimbursement will be made for any costs associated with providing information in response to this synapsis or any follow up information request.\"",
+  "detail_text_length": 410,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/727b3e9cd7104cf69210701b782a4a06/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5b4be1b06654022a4726611353d5e84/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/727b3e9cd7104cf69210701b782a4a06/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b28632177fe8a2ecb5264b9fb9952612bd03364482a3252b91cca283f1850de.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b28632177fe8a2ecb5264b9fb9952612bd03364482a3252b91cca283f1850de.pdf",
+      "file_id": "727b3e9cd7104cf69210701b782a4a06",
+      "file_name": "SOW_QYZH260014+Airfield+Rubber+Removal_Markings+FY26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169964,
+      "sha256": "8b28632177fe8a2ecb5264b9fb9952612bd03364482a3252b91cca283f1850de"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5b4be1b06654022a4726611353d5e84/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/db5a981b558b71e24d75f8d6b03250b2c8227c7f6e08d81fc55975a1e2d5fabb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/db5a981b558b71e24d75f8d6b03250b2c8227c7f6e08d81fc55975a1e2d5fabb.pdf",
+      "file_id": "c5b4be1b06654022a4726611353d5e84",
+      "file_name": "Sources+Sought+Rubber+Removal.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 92988,
+      "sha256": "db5a981b558b71e24d75f8d6b03250b2c8227c7f6e08d81fc55975a1e2d5fabb"
+    }
+  ],
+  "_mirror_hash": "5bc33cb6375252617165d7cd1ffa3d937dc1eb42b0d2b832413578a21bcdc9cf",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.443479+00:00"
+}

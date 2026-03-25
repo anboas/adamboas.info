@@ -1,0 +1,67 @@
+{
+  "id": "sam-d0719bb1c98a4b71937d031621052420",
+  "title": "RFP N6523626R3007-0001",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0719bb1c98a4b71937d031621052420",
+  "opportunity_url": "https://sam.gov/opp/d0719bb1c98a4b71937d031621052420/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d0719bb1c98a4b71937d031621052420/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d0719bb1c98a4b71937d031621052420",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6523626R3007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR LANT.NIWC ATLANTIC",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0719bb1c98a4b71937d031621052420",
+  "detail_text": "Request for Proposal for Command, Control, Communications, Computer, Intelligence, Surveillance, and Reconnaissance Sustainment III ***This opportunity is for SEAPORT NXG MAC HOLDERS ONLY and is a SMALL BUSINESS SET ASIDE. No other offers will be considered. SeaPort MAC holders will need to register for PIEE accounts in order to receive solicitations and submit proposals/offers.*** Note: Attachments 5 Staffing Scope Matrix, 8 Consolidated GFP Form, 9 Contractor Acquired Property, 12 Prime Pricing Model, and 13 Subcontractor Pricing Model included with this RFP include Controlled Unclassified Information (CUI) and will not be made publicly available. In order to obtain access to these attachments, the Offeror shall download, complete, and submit a signed Non-Disclosure Agreement (NDA) (Attachment #17 NDA for CUI Attachments) for each individual requiring access to the non-public documents. To ensure a streamlined process, the Prime Offeror shall designate a single Point of Contact (POC) responsible for collecting all required Non-Disclosure Agreements (NDAs) from its team members and subcontractors. The POC will then submit the consolidated NDAs as a single, encrypted email package to the Contract Specialist, Jessica Meddick, at jessica.l.meddick.civ@us.navy.mil. The body of the submission email must clearly identify the full names of the individuals for whom NDAs are being submitted, specifying whether they are team members or subcontractors.The deadline for receipt of all NDAs is 12:00 p.m. Eastern Time on 25 March 2026. *** Q&A doc has been added.",
+  "detail_text_length": 1575,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24a5768cf7ae4c5abdf4f7121186c70b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b4ec6f2a1324b5db674cabf203b3a03/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9203737eeb0e4353b244e2ea357aa099/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24a5768cf7ae4c5abdf4f7121186c70b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b099ed3efc97da8b0d9205472722719c48e6048e96662f5ca5e0a55342ffae07.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b099ed3efc97da8b0d9205472722719c48e6048e96662f5ca5e0a55342ffae07.pdf",
+      "file_id": "24a5768cf7ae4c5abdf4f7121186c70b",
+      "file_name": "Solicitation+Amendment+N6523626R30070001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 587481,
+      "sha256": "b099ed3efc97da8b0d9205472722719c48e6048e96662f5ca5e0a55342ffae07"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b4ec6f2a1324b5db674cabf203b3a03/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0647b51df1060a7e4a9df3f85cd2db5f1470d34983e7a1ef758e4da2a6717b1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0647b51df1060a7e4a9df3f85cd2db5f1470d34983e7a1ef758e4da2a6717b1.docx",
+      "file_id": "6b4ec6f2a1324b5db674cabf203b3a03",
+      "file_name": "QA+for+N6523626R3007.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14618,
+      "sha256": "b0647b51df1060a7e4a9df3f85cd2db5f1470d34983e7a1ef758e4da2a6717b1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9203737eeb0e4353b244e2ea357aa099/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d5f89c7a4c95895735d3ef9440e1086684e6c79fbb7ae7b952430e80103424c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d5f89c7a4c95895735d3ef9440e1086684e6c79fbb7ae7b952430e80103424c.docx",
+      "file_id": "9203737eeb0e4353b244e2ea357aa099",
+      "file_name": "Section+L_Revised+for+Amendment+0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76908,
+      "sha256": "2d5f89c7a4c95895735d3ef9440e1086684e6c79fbb7ae7b952430e80103424c"
+    }
+  ],
+  "_mirror_hash": "f8c8e682971d8d23371d4348f27569a9930535f723dda321cd7e37cbfb4fd582",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.283220+00:00"
+}

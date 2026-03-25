@@ -1,0 +1,46 @@
+{
+  "id": "sam-f4ec7f914a824b6fa15d9b184f66462c",
+  "title": "Bulkhead Connector Feed-Thru (BCF)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4ec7f914a824b6fa15d9b184f66462c",
+  "opportunity_url": "https://sam.gov/opp/f4ec7f914a824b6fa15d9b184f66462c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f4ec7f914a824b6fa15d9b184f66462c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f4ec7f914a824b6fa15d9b184f66462c",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6660426Q0221",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4ec7f914a824b6fa15d9b184f66462c",
+  "detail_text": "This is a combined synopsis and solicitation for commercial items prepared in accordance with the format in FAR Subpart 12.6-Streamlined Procedures for Evaluation and Solicitation for Commercial Items, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; quotations are being requested, and a written solicitation will not be issued. In accordance with FAR 5.203(b) this combined synopsis and solicitation will be posted for less than fifteen (15) days. This is a brand name only, no substitutions requirement, for Glenair brand products. This brand is essential for the requirement due to critical compatibilities with existing infrastructure, physical constraints, and the increased costs and schedule delays associated with transitioning to an alternative manufacturer. Brand Name/Resellers need to be a certified Glenair vendor to ensure that the NSA/CSS protocols are being met.",
+  "detail_text_length": 952,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50265384523040ecb34c46668aef3433/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50265384523040ecb34c46668aef3433/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b2ef79e525bdcbf0809c47b224395e4eee56690cf6b9ef94cc93465bdc25b1b4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b2ef79e525bdcbf0809c47b224395e4eee56690cf6b9ef94cc93465bdc25b1b4.pdf",
+      "file_id": "50265384523040ecb34c46668aef3433",
+      "file_name": "N6660426Q0221.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 123511,
+      "sha256": "b2ef79e525bdcbf0809c47b224395e4eee56690cf6b9ef94cc93465bdc25b1b4"
+    }
+  ],
+  "_mirror_hash": "7c2bff172736bfefe825d52799e5d81efa37fe16073b931f82be175ce718afdd",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.182811+00:00"
+}

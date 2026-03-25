@@ -1,0 +1,78 @@
+{
+  "id": "sam-2cd85517391b408cbf9d3deb96833c27",
+  "title": "Stewie Costume",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2cd85517391b408cbf9d3deb96833c27",
+  "opportunity_url": "https://sam.gov/opp/2cd85517391b408cbf9d3deb96833c27/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2cd85517391b408cbf9d3deb96833c27/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2cd85517391b408cbf9d3deb96833c27",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QL048",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2cd85517391b408cbf9d3deb96833c27",
+  "detail_text": "Stewie Costume and materials IAW PWS",
+  "detail_text_length": 36,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c5446a17d4144398c6d98fc612a8a1e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/39cbfd0342954edd80364bc26a87a78a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6397f015710e45bba7cb250d3edd17cd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebf1d09612284273bae6c8737fdce78c/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c5446a17d4144398c6d98fc612a8a1e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3259ba75dafaf37c59cfee536bac2eb3943755e2b16a858653a2d196e276d83a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3259ba75dafaf37c59cfee536bac2eb3943755e2b16a858653a2d196e276d83a.pdf",
+      "file_id": "2c5446a17d4144398c6d98fc612a8a1e",
+      "file_name": "Justification+at+or+Below+SAT++Stewie+-1-+_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 275785,
+      "sha256": "3259ba75dafaf37c59cfee536bac2eb3943755e2b16a858653a2d196e276d83a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/39cbfd0342954edd80364bc26a87a78a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/607384d94e5c7fafa6afd6db7393943e5db3fbd3ecd67d003594688c642f5fd2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/607384d94e5c7fafa6afd6db7393943e5db3fbd3ecd67d003594688c642f5fd2.pdf",
+      "file_id": "39cbfd0342954edd80364bc26a87a78a",
+      "file_name": "N0018926QL048.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1969814,
+      "sha256": "607384d94e5c7fafa6afd6db7393943e5db3fbd3ecd67d003594688c642f5fd2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6397f015710e45bba7cb250d3edd17cd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8834ce168e77dea4d803c8454218ad8ec303837d9d4859b780916968c61edf5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8834ce168e77dea4d803c8454218ad8ec303837d9d4859b780916968c61edf5.pdf",
+      "file_id": "6397f015710e45bba7cb250d3edd17cd",
+      "file_name": "Small+Business+Coordination+Record-+Stewie_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 212836,
+      "sha256": "a8834ce168e77dea4d803c8454218ad8ec303837d9d4859b780916968c61edf5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebf1d09612284273bae6c8737fdce78c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c70203ca1db64725c9168eca0ff8ef88e093bdca3ab3819c2bfbabed3bd31439.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c70203ca1db64725c9168eca0ff8ef88e093bdca3ab3819c2bfbabed3bd31439.pdf",
+      "file_id": "ebf1d09612284273bae6c8737fdce78c",
+      "file_name": "SOTS+Stewie+and+Graphics+PWS+-2-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 264289,
+      "sha256": "c70203ca1db64725c9168eca0ff8ef88e093bdca3ab3819c2bfbabed3bd31439"
+    }
+  ],
+  "_mirror_hash": "efac4bbc15ff2c8e3e39d32d489009c8ce4d1ea1a21f7fc31584d42bce544ad9",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.222388+00:00"
+}

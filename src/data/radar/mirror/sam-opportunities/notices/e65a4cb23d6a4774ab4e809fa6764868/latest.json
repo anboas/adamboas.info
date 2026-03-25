@@ -1,0 +1,57 @@
+{
+  "id": "sam-e65a4cb23d6a4774ab4e809fa6764868",
+  "title": "Leads Online",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e65a4cb23d6a4774ab4e809fa6764868",
+  "opportunity_url": "https://sam.gov/opp/e65a4cb23d6a4774ab4e809fa6764868/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e65a4cb23d6a4774ab4e809fa6764868/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e65a4cb23d6a4774ab4e809fa6764868",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W15QKN-26-Q-0058",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-NJ.W6QK ACC-PICA",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e65a4cb23d6a4774ab4e809fa6764868",
+  "detail_text": "The United States Army Contracting Command – New Jersey (ACC-NJ) on behalf of the Department of Army Criminal Investigation Division has a requirement for Leads Online Software as identified in this Request for Information (RFI) for market research purposes and in accordance with Attachment 0001 Statement of Work (SOW), dated 04 March 2026.",
+  "detail_text_length": 342,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a5059522bc242c1bfc3b714c74636ab/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d62630a6b474dca883a5be79499715b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a5059522bc242c1bfc3b714c74636ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/795e3cc295f2c5721875703815f2c18bbc11cf1c793dc8d3f4fc253e5730835d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/795e3cc295f2c5721875703815f2c18bbc11cf1c793dc8d3f4fc253e5730835d.docx",
+      "file_id": "1a5059522bc242c1bfc3b714c74636ab",
+      "file_name": "Attachment+0001+Statement+of+Work+W15QKN26Q0058.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24154,
+      "sha256": "795e3cc295f2c5721875703815f2c18bbc11cf1c793dc8d3f4fc253e5730835d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d62630a6b474dca883a5be79499715b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8470e874cace2a8d11fc8e9887b56896eb277b31619c0520cf91f0f4dff7d3bb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8470e874cace2a8d11fc8e9887b56896eb277b31619c0520cf91f0f4dff7d3bb.docx",
+      "file_id": "4d62630a6b474dca883a5be79499715b",
+      "file_name": "RFI+W15QKN26Q0058+Sam.gov.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1371459,
+      "sha256": "8470e874cace2a8d11fc8e9887b56896eb277b31619c0520cf91f0f4dff7d3bb"
+    }
+  ],
+  "_mirror_hash": "706399607017e21894762e832467b43ab77fbd33699e3a09808120e01e7f269d",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.346918+00:00"
+}

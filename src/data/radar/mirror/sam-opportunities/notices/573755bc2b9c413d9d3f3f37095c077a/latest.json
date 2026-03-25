@@ -1,0 +1,57 @@
+{
+  "id": "sam-573755bc2b9c413d9d3f3f37095c077a",
+  "title": "Multi Facility Door Replacement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=573755bc2b9c413d9d3f3f37095c077a",
+  "opportunity_url": "https://sam.gov/opp/573755bc2b9c413d9d3f3f37095c077a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/573755bc2b9c413d9d3f3f37095c077a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "573755bc2b9c413d9d3f3f37095c077a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA489726QC006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4897 366 CONS PKP",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=573755bc2b9c413d9d3f3f37095c077a",
+  "detail_text": "The 366ᵗʰ Contracting Squadron (366 CONS) at Mountain Home Air Force Base (MHAFB), Elmore County, Idaho, is seeking responsible contractors to compete via forthcoming Request for Quote (RFQ) for door replacement services to provide and install aluminum/glass doors for existing storefront systems and hollow metal doors for remainder of personnel doors. \"This post is for market research purposes only. THIS IS NOT A SOLICITATION FOR PROPOSAL OR QUOTE AND NO CONTRACT WILL BE AWARDED FROM THIS SOURCES SOUGHT. No reimbursement will be made for any costs associated with providing information in response to this synapsis or any follow up information request.\"",
+  "detail_text_length": 659,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8785bc0d782540e88f04fc0f53ca3cb2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9532b7cd0246424e83e95ae2cdf1b767/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8785bc0d782540e88f04fc0f53ca3cb2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c552cd3be46900916f05209f8adc7a19dfb74711af261984bab54d07130757f9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c552cd3be46900916f05209f8adc7a19dfb74711af261984bab54d07130757f9.pdf",
+      "file_id": "8785bc0d782540e88f04fc0f53ca3cb2",
+      "file_name": "SS+26Q0006-Facility+Door+Replacement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 134474,
+      "sha256": "c552cd3be46900916f05209f8adc7a19dfb74711af261984bab54d07130757f9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9532b7cd0246424e83e95ae2cdf1b767/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0e06371af4a078fd5cc57081d582ef3e3f3b4194fd13ac8aa6e5c0bff0d862e2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0e06371af4a078fd5cc57081d582ef3e3f3b4194fd13ac8aa6e5c0bff0d862e2.pdf",
+      "file_id": "9532b7cd0246424e83e95ae2cdf1b767",
+      "file_name": "FY+26+Door+SOW+-+Multi+Facility.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153976,
+      "sha256": "0e06371af4a078fd5cc57081d582ef3e3f3b4194fd13ac8aa6e5c0bff0d862e2"
+    }
+  ],
+  "_mirror_hash": "49104c0fbd850e4a18789a704f22910ebb4d266c24e4689f37ff887aa2dd792e",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.440313+00:00"
+}

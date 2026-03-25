@@ -1,0 +1,79 @@
+{
+  "id": "sam-b06eef1fe7354b04b35236da77180da2",
+  "title": "Wheel Assembly",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b06eef1fe7354b04b35236da77180da2",
+  "opportunity_url": "https://sam.gov/opp/b06eef1fe7354b04b35236da77180da2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b06eef1fe7354b04b35236da77180da2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b06eef1fe7354b04b35236da77180da2",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPRDL126R0077",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b06eef1fe7354b04b35236da77180da2",
+  "detail_text": "This upcoming Full and Open competiton requirement will be for a 3 Year Indefinite Delivery Indefinite Quantity (IDIQ) of two differnt wheel assemblies. Item One: Wheel Assembly NSN:2530-01-621-3685 Part Number: 12620902-2/19207 FOB: Destination; Inspection Point: Orign/ Origin; Packaging: Military B Minimum Guaranteed Quantity: 42 each Max: 939 each Item Two: Wheel Assembly NSN: 2530-01-621-5737 Part Number: 12620902-1/19207 FOB: Destination; Inspection Point: Orign/ Origin; Packaging: Military B Minimum Guaranteed Quantity: 42 each Max: 953 each",
+  "detail_text_length": 553,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1eb7cacdc56e429fb784f92e595e40db/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94c0cd9e73ef4492b2d517d615ba3e7c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9350ee6589343c6852e16db6cc61abb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6f8a1d1f73d43ddb9da205b883ceaf3/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1eb7cacdc56e429fb784f92e595e40db/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79b27d74d3f4e146b32aaa6a769ab4ce4f784c6eae6a2eb80adc644a71789e82.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79b27d74d3f4e146b32aaa6a769ab4ce4f784c6eae6a2eb80adc644a71789e82.pdf",
+      "file_id": "1eb7cacdc56e429fb784f92e595e40db",
+      "file_name": "SPRDL126R0077+SPI+-2-+-+AK00000001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 475803,
+      "sha256": "79b27d74d3f4e146b32aaa6a769ab4ce4f784c6eae6a2eb80adc644a71789e82"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94c0cd9e73ef4492b2d517d615ba3e7c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1271f7d4dd481a189cb5fb3ccc06f2a99f3d66f6631658def5bbd213ed49f781.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1271f7d4dd481a189cb5fb3ccc06f2a99f3d66f6631658def5bbd213ed49f781.pdf",
+      "file_id": "94c0cd9e73ef4492b2d517d615ba3e7c",
+      "file_name": "SPRDL126R0077+SPI+-+AK00000001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 475792,
+      "sha256": "1271f7d4dd481a189cb5fb3ccc06f2a99f3d66f6631658def5bbd213ed49f781"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9350ee6589343c6852e16db6cc61abb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7662cd503cd734103f43ac4ba8b0e17e6f0a7334fc220369a353f181f217ee46.zip",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7662cd503cd734103f43ac4ba8b0e17e6f0a7334fc220369a353f181f217ee46.zip",
+      "file_id": "c9350ee6589343c6852e16db6cc61abb",
+      "file_name": "SPRDL126R0077+TDP+-+Wheel+Assembly+EH6L0026EH.zip",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3276684,
+      "sha256": "7662cd503cd734103f43ac4ba8b0e17e6f0a7334fc220369a353f181f217ee46"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6f8a1d1f73d43ddb9da205b883ceaf3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cb52976ca581d6f782397ab05f238510eadb58ddd8aed73c114dfb819e562c5d.zip",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cb52976ca581d6f782397ab05f238510eadb58ddd8aed73c114dfb819e562c5d.zip",
+      "file_id": "d6f8a1d1f73d43ddb9da205b883ceaf3",
+      "file_name": "SPRDL126R0077+TDP+-+Wheel+Assembly+EH6L0025EH.zip",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3276660,
+      "sha256": "cb52976ca581d6f782397ab05f238510eadb58ddd8aed73c114dfb819e562c5d"
+    }
+  ],
+  "_mirror_hash": "fe38f297c8b80df68ea05e17cbb2b9bb04edfc7b3e9c50c1b75423a402feae3b",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.445042+00:00"
+}

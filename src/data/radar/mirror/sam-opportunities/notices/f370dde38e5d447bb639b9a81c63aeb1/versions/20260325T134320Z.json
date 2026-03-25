@@ -1,0 +1,46 @@
+{
+  "id": "sam-f370dde38e5d447bb639b9a81c63aeb1",
+  "title": "IDIQ CONTRACT OF PAINTING SERVICE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f370dde38e5d447bb639b9a81c63aeb1",
+  "opportunity_url": "https://sam.gov/opp/f370dde38e5d447bb639b9a81c63aeb1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f370dde38e5d447bb639b9a81c63aeb1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f370dde38e5d447bb639b9a81c63aeb1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA5682-PAINTING",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5682 31 CONS (UNIT 6102)",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f370dde38e5d447bb639b9a81c63aeb1",
+  "detail_text": "THIS IS A SOURCES SOUGHT NOTICE ONLY. The U.S. Government currently intends to solicit an award of an Indefinite Delivery Indefinite Quantity Contract (IDIQ) Simplified Acquisition of Painting Service contract for the 31st Civil Engineering Squadron at Aviano AB, Italy. This requirement will include a wide variety of trades including painting, pavement marking, resin floor, wall cladding-insulation and finish system, plaster. The Government is seeking vendors that may be able to provide these types of services for this requirement in order to support a competitive procurement. The U.S. Government highly encourages all interested businesses (large and small) to respond to this sources sought synopsis. This notice does not constitute a Request for Quote (RFQ)/Invitation for Bid (IFB)/Request for Proposal (RFP) or a promise to issue an RFQ, IFB or RFP in the future. This notice does not commit the U.S. Government to contract for any supply or service. Further, the U.S. Government is not seeking quotes, bids or proposals at this time and will not accept unsolicited proposals in response to this sources sought notice.",
+  "detail_text_length": 1130,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5a4fa7a97c34ceda35b08918ffd92fe/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5a4fa7a97c34ceda35b08918ffd92fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf56f06904ef88b09c18f95ed6eed2f95fc2d007cfa00d5a56fbaa95318c4925.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf56f06904ef88b09c18f95ed6eed2f95fc2d007cfa00d5a56fbaa95318c4925.pdf",
+      "file_id": "c5a4fa7a97c34ceda35b08918ffd92fe",
+      "file_name": "SOURCES+SOUGHT+NOTICE-+For+IDIQ+contract+Painting+Service.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76694,
+      "sha256": "cf56f06904ef88b09c18f95ed6eed2f95fc2d007cfa00d5a56fbaa95318c4925"
+    }
+  ],
+  "_mirror_hash": "815930ff5788042ef91b7b294327b10c4cd80daefa0476d7e7312af45120e14f",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.387019+00:00"
+}

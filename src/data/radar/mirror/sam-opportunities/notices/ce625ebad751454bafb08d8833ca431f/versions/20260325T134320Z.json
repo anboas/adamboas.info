@@ -1,0 +1,68 @@
+{
+  "id": "sam-ce625ebad751454bafb08d8833ca431f",
+  "title": "Warehousing, Equipment Receipt, and Pre‑Shipment Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce625ebad751454bafb08d8833ca431f",
+  "opportunity_url": "https://sam.gov/opp/ce625ebad751454bafb08d8833ca431f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ce625ebad751454bafb08d8833ca431f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ce625ebad751454bafb08d8833ca431f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "03122026CM",
+  "agency_path": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.PNNL CONTRACTS - DOE CONTRACTOR",
+  "posted_date": "2026-03-24",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce625ebad751454bafb08d8833ca431f",
+  "detail_text": "See attached Request for Information. Note: Place of Performance identifies Richland, WA USA, as that is the location of PNNL. The warehouse location associated with this RFI may be located anywhere in the United States.",
+  "detail_text_length": 220,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ce833075c8f4154ad959a9a170dd311/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8c8b0b09c7e540dfb0536bdf5cc8bd45/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ca2cf22713143f4a15247bf65ed8417/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ce833075c8f4154ad959a9a170dd311/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f5d8b80a5e16979fd84bffd7e6bdb68cacf05d7cd567fb38ae4f39a688b0439e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f5d8b80a5e16979fd84bffd7e6bdb68cacf05d7cd567fb38ae4f39a688b0439e.pdf",
+      "file_id": "4ce833075c8f4154ad959a9a170dd311",
+      "file_name": "RFI+03122026CM+Attachment+1+-+Example+Functional+Checklist.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 521559,
+      "sha256": "f5d8b80a5e16979fd84bffd7e6bdb68cacf05d7cd567fb38ae4f39a688b0439e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8c8b0b09c7e540dfb0536bdf5cc8bd45/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a1623e75dae2927fe3df5b77a2f39b5d2a677c44021a05c420ee73568ef3ae7a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a1623e75dae2927fe3df5b77a2f39b5d2a677c44021a05c420ee73568ef3ae7a.pdf",
+      "file_id": "8c8b0b09c7e540dfb0536bdf5cc8bd45",
+      "file_name": "RFI+03122026CM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 194409,
+      "sha256": "a1623e75dae2927fe3df5b77a2f39b5d2a677c44021a05c420ee73568ef3ae7a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ca2cf22713143f4a15247bf65ed8417/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/10ea3a8886a159238b1651c4652894afa9d98e9c23b741a44749c5e51478407e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/10ea3a8886a159238b1651c4652894afa9d98e9c23b741a44749c5e51478407e.pdf",
+      "file_id": "9ca2cf22713143f4a15247bf65ed8417",
+      "file_name": "RFI+03122026CM+Attachment+2+-+Questions+and+Answers.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64162,
+      "sha256": "10ea3a8886a159238b1651c4652894afa9d98e9c23b741a44749c5e51478407e"
+    }
+  ],
+  "_mirror_hash": "e238d34d589b614f146eb8a39ded72bb2dad82089376092375a9576a1f32a1c6",
+  "_mirror_run_id": "20260325T134320Z",
+  "_mirror_recorded_at": "2026-03-25T13:47:42.455234+00:00"
+}
