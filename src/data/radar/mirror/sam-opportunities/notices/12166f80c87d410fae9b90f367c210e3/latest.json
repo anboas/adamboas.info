@@ -1,0 +1,147 @@
+{
+  "id": "sam-12166f80c87d410fae9b90f367c210e3",
+  "title": "NGA Request for Information: Applicant Tracking System (ATS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12166f80c87d410fae9b90f367c210e3",
+  "opportunity_url": "https://sam.gov/opp/12166f80c87d410fae9b90f367c210e3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/12166f80c87d410fae9b90f367c210e3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "12166f80c87d410fae9b90f367c210e3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "NGA_RFI_ATS",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).ATTN: MS S84 - OCS",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12166f80c87d410fae9b90f367c210e3",
+  "detail_text": "The National Geospatial-Intelligence Agency (NGA) is issuing a Request for Information (RFI) for Applicant Tracking System (ATS) solutions/capabilities to support its Human Development (HD), Talent Acquisition Office (HDR). The RFI is issued in accordance with FAR 52.215-3, Request for Information or Solicitation for Planning Purposes (Oct 1997), with the purpose of assisting the Government in developing the highest quality solicitation and acquisition possible that will meet the mission needs of the agency. Accordingly, industry is requested to provide its response to the RFI. Responses to this RFI must be submitted on or before April 15, 2026 at 1600 Eastern Time to be considered by the Government. The Government may not respond to comments; however, all comments received prior to the due date and time will be reviewed. This RFI is not a solicitation and NGA is not requesting proposals at this time. It is the responsibility of the prospective interested party to monitor the internet site(s) for any releases of information (if any) pertaining this effort.",
+  "detail_text_length": 1072,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42ef19358797495fac9a5d90d5397321/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fb2ad68170e41569b663de9a189ea7d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91e987b9235d4c9f8ee252b8241b9763/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/965aec515fe741fab5fb3fbab79632fc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a44f602460be4450bcc8fd4450dd211b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b13b25d82cba472f8512f01c80a0ca83/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcb1db9a4bdc4bffb15aecc81474cdbf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6073ed70c364ddab2fbf2621ee387f4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cefb61f2c2fc4d17995a38d63d76a702/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db87f94705584aa5b7889706f624ea35/download"
+  ],
+  "resource_count": 10,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42ef19358797495fac9a5d90d5397321/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af1cf89fc1e2dab1361a54a35c080f93a746e58fce0d4d574b7df7c1ede5bd51.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af1cf89fc1e2dab1361a54a35c080f93a746e58fce0d4d574b7df7c1ede5bd51.xlsx",
+      "file_id": "42ef19358797495fac9a5d90d5397321",
+      "file_name": "Attachment+2_RFI_Questions_ATS.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17351,
+      "sha256": "af1cf89fc1e2dab1361a54a35c080f93a746e58fce0d4d574b7df7c1ede5bd51"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fb2ad68170e41569b663de9a189ea7d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7b29b4eb4a48353dbcf462eec2da19b8234f7343f0e676838d792e91fa818ecb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7b29b4eb4a48353dbcf462eec2da19b8234f7343f0e676838d792e91fa818ecb.pdf",
+      "file_id": "7fb2ad68170e41569b663de9a189ea7d",
+      "file_name": "Appendix+B_Chance-to-Compete-Act_PLAW-118publ188.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 218075,
+      "sha256": "7b29b4eb4a48353dbcf462eec2da19b8234f7343f0e676838d792e91fa818ecb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91e987b9235d4c9f8ee252b8241b9763/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5aea607cbbbe834f80675b6ca3941d66157c438dc28269377ef4d9a52018ecdf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5aea607cbbbe834f80675b6ca3941d66157c438dc28269377ef4d9a52018ecdf.pdf",
+      "file_id": "91e987b9235d4c9f8ee252b8241b9763",
+      "file_name": "Appendix+E_Executive_Order_13932_2020-14337.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181807,
+      "sha256": "5aea607cbbbe834f80675b6ca3941d66157c438dc28269377ef4d9a52018ecdf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/965aec515fe741fab5fb3fbab79632fc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/81644769c8a84cd8e02d6b5a1d9a086af6c6a838a66f6d1960b1c5970406cc64.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/81644769c8a84cd8e02d6b5a1d9a086af6c6a838a66f6d1960b1c5970406cc64.pdf",
+      "file_id": "965aec515fe741fab5fb3fbab79632fc",
+      "file_name": "Attachment+1_Draft_Bailment_Agreement_ATS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 150213,
+      "sha256": "81644769c8a84cd8e02d6b5a1d9a086af6c6a838a66f6d1960b1c5970406cc64"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a44f602460be4450bcc8fd4450dd211b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/65825d5eb7697e5ca26f977e1c1e71ea73bd1f7fe3378911f1ab81b1aec61158.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/65825d5eb7697e5ca26f977e1c1e71ea73bd1f7fe3378911f1ab81b1aec61158.pdf",
+      "file_id": "a44f602460be4450bcc8fd4450dd211b",
+      "file_name": "Appendix+G_OPM_end-to-end-hiring-initiative.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 367154,
+      "sha256": "65825d5eb7697e5ca26f977e1c1e71ea73bd1f7fe3378911f1ab81b1aec61158"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b13b25d82cba472f8512f01c80a0ca83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8f2b8de78e221250dba2e13aa7ea37b9bef8831881fc20617e42aa9a35a19d4e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8f2b8de78e221250dba2e13aa7ea37b9bef8831881fc20617e42aa9a35a19d4e.pdf",
+      "file_id": "b13b25d82cba472f8512f01c80a0ca83",
+      "file_name": "Appendix+D_Reforming_the_Federal_Hiring_Process_2025-02094.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 190062,
+      "sha256": "8f2b8de78e221250dba2e13aa7ea37b9bef8831881fc20617e42aa9a35a19d4e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcb1db9a4bdc4bffb15aecc81474cdbf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5aea607cbbbe834f80675b6ca3941d66157c438dc28269377ef4d9a52018ecdf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5aea607cbbbe834f80675b6ca3941d66157c438dc28269377ef4d9a52018ecdf.pdf",
+      "file_id": "bcb1db9a4bdc4bffb15aecc81474cdbf",
+      "file_name": "Appendix+F_Modernizing_and_Reforming_2020-14337.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181807,
+      "sha256": "5aea607cbbbe834f80675b6ca3941d66157c438dc28269377ef4d9a52018ecdf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6073ed70c364ddab2fbf2621ee387f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8f2b8de78e221250dba2e13aa7ea37b9bef8831881fc20617e42aa9a35a19d4e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8f2b8de78e221250dba2e13aa7ea37b9bef8831881fc20617e42aa9a35a19d4e.pdf",
+      "file_id": "c6073ed70c364ddab2fbf2621ee387f4",
+      "file_name": "Appendix+C_Executive_Order_14170_2025-02094.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 190062,
+      "sha256": "8f2b8de78e221250dba2e13aa7ea37b9bef8831881fc20617e42aa9a35a19d4e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cefb61f2c2fc4d17995a38d63d76a702/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/114cf50a5f7c29628d03ed3f5a0afa30338b563d94c5b66cc20beb1a12ca9214.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/114cf50a5f7c29628d03ed3f5a0afa30338b563d94c5b66cc20beb1a12ca9214.pdf",
+      "file_id": "cefb61f2c2fc4d17995a38d63d76a702",
+      "file_name": "NGA+ATS+RFI+20260325.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 349117,
+      "sha256": "114cf50a5f7c29628d03ed3f5a0afa30338b563d94c5b66cc20beb1a12ca9214"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db87f94705584aa5b7889706f624ea35/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4ff11f0fbf9d25b4f2bf19fdf75cd11a86a73f3fd7bd1ef9463fa53a0e3c870a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4ff11f0fbf9d25b4f2bf19fdf75cd11a86a73f3fd7bd1ef9463fa53a0e3c870a.pdf",
+      "file_id": "db87f94705584aa5b7889706f624ea35",
+      "file_name": "Appendix+A_Merit-hiring-plan-5-29-2025-final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 558173,
+      "sha256": "4ff11f0fbf9d25b4f2bf19fdf75cd11a86a73f3fd7bd1ef9463fa53a0e3c870a"
+    }
+  ],
+  "_mirror_hash": "b05e7829717d1ddc211e3292eda4aaf9f11e30d10e2683bb478c44733ce99fe8",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.628469+00:00"
+}

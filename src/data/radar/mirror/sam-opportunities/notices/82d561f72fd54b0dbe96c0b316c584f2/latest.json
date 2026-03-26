@@ -1,0 +1,58 @@
+{
+  "id": "sam-82d561f72fd54b0dbe96c0b316c584f2",
+  "title": "Total Small Business Set Aside for Various Quantities of Brand: Glenair- Connectors and Adapters",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=82d561f72fd54b0dbe96c0b316c584f2",
+  "opportunity_url": "https://sam.gov/opp/82d561f72fd54b0dbe96c0b316c584f2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/82d561f72fd54b0dbe96c0b316c584f2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "82d561f72fd54b0dbe96c0b316c584f2",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N61331-26-Q-TR21",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "Vendor engagement keywords",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=82d561f72fd54b0dbe96c0b316c584f2",
+  "detail_text": "This procurement is a Total Small Business Set Aside: Various Quantities of Brand Name: Glenair- Connectors and Adapters. Email quotes as a PDF file, on your companies letterhead with full specifications to terra.s.roberts.civ@us.navy.mil on or before the closing date and time of Wednesday 25 March 2026 11:00 a.m. Central Time. The Government will not accept late quotes. Provide Cage Code and Lead time on your quote. All invoices are NET 30 and must be submitted through Wide Area Workflow (WAWF). If shipping is not included in the price please include a line item for shipping. See the attached document for the product description and quantity. Award will be based on the best value to the government considering price, delivery, quality, and past performance. Please review all attachments.",
+  "detail_text_length": 798,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d8678ff220b40879290f0a09cb0b29e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ac54be478424af688b24c03ddad5efd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d8678ff220b40879290f0a09cb0b29e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ac032df4eb166742f6f00467a260f026421c73a211f757ef798df13df65440f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ac032df4eb166742f6f00467a260f026421c73a211f757ef798df13df65440f.pdf",
+      "file_id": "4d8678ff220b40879290f0a09cb0b29e",
+      "file_name": "RFQ+-Clauses-Supply.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 232597,
+      "sha256": "0ac032df4eb166742f6f00467a260f026421c73a211f757ef798df13df65440f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ac54be478424af688b24c03ddad5efd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a2e821be59170d7e5e9fa9bd8873de5d86bb90e3079e39369b76297c930a94a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a2e821be59170d7e5e9fa9bd8873de5d86bb90e3079e39369b76297c930a94a.pdf",
+      "file_id": "6ac54be478424af688b24c03ddad5efd",
+      "file_name": "BNJ+REDACTED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 233262,
+      "sha256": "4a2e821be59170d7e5e9fa9bd8873de5d86bb90e3079e39369b76297c930a94a"
+    }
+  ],
+  "_mirror_hash": "410e308d4a019650947dd5761ca704b5dc2bf3d63757e0248fcb4e4af587eed2",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.533041+00:00"
+}

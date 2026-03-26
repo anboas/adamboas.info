@@ -1,0 +1,57 @@
+{
+  "id": "sam-d7a35c3981f94e56a933021849036fff",
+  "title": "Standard Contract Reconciliation Tool (SCRT)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7a35c3981f94e56a933021849036fff",
+  "opportunity_url": "https://sam.gov/opp/d7a35c3981f94e56a933021849036fff/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d7a35c3981f94e56a933021849036fff/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d7a35c3981f94e56a933021849036fff",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "17Mar2026SCRT",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE FINANCE AND ACCOUNTING SERVICE (DFAS).DEFENSE FINANCE AND ACCOUNTING SVC",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7a35c3981f94e56a933021849036fff",
+  "detail_text": "*Updated to add Q&A on March 25, 2026. The Defense Finance and Accounting Service (DFAS), Contract Services Directorate, is seeking sources and capability statements on market capabilities for a System Integrator that has proven experience leading large-scale government application technical refresh efforts. All qualified and experienced sources including small businesses, 8(a) small businesses, service-disabled veteran-owned small businesses, HUBZone small businesses, and Women-owned small businesses are encouraged to respond to the Notice. Questions due no later than March 23, 2026, at 12PM ET. Responses are due no later than March 31, 2026 , at 12PM ET.",
+  "detail_text_length": 664,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/351c3d9d6550471eb8ba633b6344b0ad/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62990bd0157d426496fefe3bedf9abe7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/351c3d9d6550471eb8ba633b6344b0ad/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a74e46165d2fba11d0311e3ada27e3c3aed10dfdfaa0e55a6a75307574e4e398.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a74e46165d2fba11d0311e3ada27e3c3aed10dfdfaa0e55a6a75307574e4e398.pdf",
+      "file_id": "351c3d9d6550471eb8ba633b6344b0ad",
+      "file_name": "SCRT_SourcesSought-Mar2026-Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 741263,
+      "sha256": "a74e46165d2fba11d0311e3ada27e3c3aed10dfdfaa0e55a6a75307574e4e398"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62990bd0157d426496fefe3bedf9abe7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/003db51e2e2b9614ff2107a396c4682405c03b9f85be1a1024f8aa2b3449020c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/003db51e2e2b9614ff2107a396c4682405c03b9f85be1a1024f8aa2b3449020c.pdf",
+      "file_id": "62990bd0157d426496fefe3bedf9abe7",
+      "file_name": "Sources+Sought+QA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 87208,
+      "sha256": "003db51e2e2b9614ff2107a396c4682405c03b9f85be1a1024f8aa2b3449020c"
+    }
+  ],
+  "_mirror_hash": "815c5833e1d8f5b301f8cf5af352f32c8b13e540ebe7292e10cda17c3424d0c8",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.756868+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-372b7181ee564b658bcf057774032280",
+  "title": "Total Tank Solutions",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=372b7181ee564b658bcf057774032280",
+  "opportunity_url": "https://sam.gov/opp/372b7181ee564b658bcf057774032280/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/372b7181ee564b658bcf057774032280/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "372b7181ee564b658bcf057774032280",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA5613-TTS",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=372b7181ee564b658bcf057774032280",
+  "detail_text": "The Government is conducting market research to identify companies as potential sources that may possess the expertise, capabilities and experience to competently and competitively respond to the requirements to provide all management, tools, supplies, equipment and labor necessary to maintain oil/water separators, grease traps, and septic tanks located at Ramstein Air Base.",
+  "detail_text_length": 377,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9db50f8e1714731bf50312914632597/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f67dda4ceca24e06bfa5c7f55d5512aa/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9db50f8e1714731bf50312914632597/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9a3b22a07b9f21a6010dc04a5736688a68a15c7f7c4d4c78f554216f1f596df5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9a3b22a07b9f21a6010dc04a5736688a68a15c7f7c4d4c78f554216f1f596df5.pdf",
+      "file_id": "b9db50f8e1714731bf50312914632597",
+      "file_name": "SOW+Oil+Water+Separator_Grease+Traps_Septic+Tanks+11+March+26+Draft_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1888597,
+      "sha256": "9a3b22a07b9f21a6010dc04a5736688a68a15c7f7c4d4c78f554216f1f596df5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f67dda4ceca24e06bfa5c7f55d5512aa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3b5428673546ef64c92a2f05c3f2443ce3811c62916156d93319ac1987a9ad82.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3b5428673546ef64c92a2f05c3f2443ce3811c62916156d93319ac1987a9ad82.pdf",
+      "file_id": "f67dda4ceca24e06bfa5c7f55d5512aa",
+      "file_name": "RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 340917,
+      "sha256": "3b5428673546ef64c92a2f05c3f2443ce3811c62916156d93319ac1987a9ad82"
+    }
+  ],
+  "_mirror_hash": "c8d1083ddcbcf5fecf2428a80d07c9ae001060b01e582abd8774ff3598d481b0",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.890312+00:00"
+}

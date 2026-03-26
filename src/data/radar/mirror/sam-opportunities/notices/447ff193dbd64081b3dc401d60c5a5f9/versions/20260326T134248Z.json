@@ -1,0 +1,46 @@
+{
+  "id": "sam-447ff193dbd64081b3dc401d60c5a5f9",
+  "title": "SUGV CHASSIS,QUAD V",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=447ff193dbd64081b3dc401d60c5a5f9",
+  "opportunity_url": "https://sam.gov/opp/447ff193dbd64081b3dc401d60c5a5f9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/447ff193dbd64081b3dc401d60c5a5f9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "447ff193dbd64081b3dc401d60c5a5f9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRAL126R0010",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND ALBANY.DLA  LAND AND MARITIME (ALBANY)",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=447ff193dbd64081b3dc401d60c5a5f9",
+  "detail_text": "DLA Land and Maritime is preparing to solicit a one-time buy for the following NSN: NSN – 1385-01-659-6533– SUGV CHASSIS,QUAD V The currently approved manufacturer and associated part number for this item is as follows: TELEDYNE FLIR UNMANNED GROUND SYSTEMS, INC (CAGE 7KJ69) for Part Number 4217050-00001. Sources interested in becoming an approved source for this NSN must submit the appropriate information as outlined in DLAD Procurement Notes L04, Offers for Part Number Items and M06, Evaluation of Offers for Part Numbered Items. Sources interested in offering on this solicitation should complete the attached market survey and return the completed copies to Garrison Ball via email at garrison.ball@dla.mil by 1:00 PM EST on 04 April 2026. Destination Information: SW3121 DLA DISTRIBUTION ALBANY DDAG-T MCLB BLDG 1221 DOOR 20 814 RADFORD BLVD ALBANY GA 31704-1128 US",
+  "detail_text_length": 875,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f7fce14fc6d4bf688b2ce31bc493e9c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f7fce14fc6d4bf688b2ce31bc493e9c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6b35bf4baf16fe35c5a62cf0137d7fe2625dedb702a9f521639b356746f2d5a3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6b35bf4baf16fe35c5a62cf0137d7fe2625dedb702a9f521639b356746f2d5a3.docx",
+      "file_id": "2f7fce14fc6d4bf688b2ce31bc493e9c",
+      "file_name": "Market+Survey+SAM.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 39980,
+      "sha256": "6b35bf4baf16fe35c5a62cf0137d7fe2625dedb702a9f521639b356746f2d5a3"
+    }
+  ],
+  "_mirror_hash": "975a21387357b3a60adb484bd2c1a0da4d1027d1b068755560194d29dc7feecd",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.800640+00:00"
+}

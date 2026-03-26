@@ -1,0 +1,46 @@
+{
+  "id": "sam-68138d7e80f44dab906c3813994a0723",
+  "title": "Local Telecommunications Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68138d7e80f44dab906c3813994a0723",
+  "opportunity_url": "https://sam.gov/opp/68138d7e80f44dab906c3813994a0723/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/68138d7e80f44dab906c3813994a0723/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "68138d7e80f44dab906c3813994a0723",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA860421CB028",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8604  AFLCMC PZI",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68138d7e80f44dab906c3813994a0723",
+  "detail_text": "The Government intends to award a six month extension to contract FA8604-21-C-B028 to Centurylink Communications, LLC. to compete and execute a follow-on contract for similiar supplies / services.",
+  "detail_text_length": 196,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38de0c29264d491f975d03b2eaf2eb15/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38de0c29264d491f975d03b2eaf2eb15/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18a0de039ae216203b081c1091fa2ad5c9c82b5d81d3799d927078674da51fec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18a0de039ae216203b081c1091fa2ad5c9c82b5d81d3799d927078674da51fec.pdf",
+      "file_id": "38de0c29264d491f975d03b2eaf2eb15",
+      "file_name": "LTS_JA_Final_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 412334,
+      "sha256": "18a0de039ae216203b081c1091fa2ad5c9c82b5d81d3799d927078674da51fec"
+    }
+  ],
+  "_mirror_hash": "86153ce44b1f895eea85b7fa8b11649f4e9e5517cafbc3aeab0eefe206fff791",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.903255+00:00"
+}

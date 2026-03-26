@@ -1,0 +1,68 @@
+{
+  "id": "sam-3cce92375f7243db90d5eaf179936a83",
+  "title": "FRA Enterprise Unmanned Aircraft Systems (UAS) Delivery Model Validation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3cce92375f7243db90d5eaf179936a83",
+  "opportunity_url": "https://sam.gov/opp/3cce92375f7243db90d5eaf179936a83/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3cce92375f7243db90d5eaf179936a83/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3cce92375f7243db90d5eaf179936a83",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "693JJ6FRAUAS",
+  "agency_path": "TRANSPORTATION, DEPARTMENT OF.FEDERAL RAILROAD ADMINISTRATION.693JJ6 FEDERAL RAILROAD ADMIN",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3cce92375f7243db90d5eaf179936a83",
+  "detail_text": "This is a Request for Information (RFI) only. It does not constitute a solicitation, and it is not an indication that the government will contract for any of the items and services discussed in this notice. The purpose of this RFI is to invite qualified vendors to provide information regarding their Unmanned Aircraft Systems (UAS) platforms, (purchasing and leasing options) sensors, payload options, software solutions, UAS Data Processing and Rendering Services) and overall system capabilities, in an effort to assess and identify various delivery models for UAS services. This RFI will help FRA: • Evaluate potential enterprise delivery models for UAS capability • Understand commercially available UAS platforms and services • Inform acquisition planning and lifecycle cost modeling • Determine the most effective operational approach for a national FRA UAS capability FRA seeks industry input to inform acquisition planning and to understand how commercial solutions may support multiple delivery model approaches. Potential operational uses may include, but are not limited to: • Railroad grade crossing inspections • Accident and derailment investigations • Infrastructure and right-of-way assessments • Safety situational awareness within railroad operating environments • Site distance analysis and obstruction evaluation • Trespassing detection and evaluation",
+  "detail_text_length": 1372,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a856473fe4a04f18a36724c8e910c845/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0256bf154a44d89b1ce9f584b86a4f8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcccccc0e8c94a1aa9f2763461779dc0/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a856473fe4a04f18a36724c8e910c845/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68c40945980340f23218e47f252b390736432b7494e293bdc39e26fe172ef24f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68c40945980340f23218e47f252b390736432b7494e293bdc39e26fe172ef24f.pdf",
+      "file_id": "a856473fe4a04f18a36724c8e910c845",
+      "file_name": "Attachment+B_Technical+Requirements.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 173713,
+      "sha256": "68c40945980340f23218e47f252b390736432b7494e293bdc39e26fe172ef24f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0256bf154a44d89b1ce9f584b86a4f8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ec8af6b4f57bd3b2177b693393843e820a5caa22cc5f72bc315c0b91139f0196.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ec8af6b4f57bd3b2177b693393843e820a5caa22cc5f72bc315c0b91139f0196.xlsx",
+      "file_id": "b0256bf154a44d89b1ce9f584b86a4f8",
+      "file_name": "Attachment+C_ROM_Pricing_Template+v2.0.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16995,
+      "sha256": "ec8af6b4f57bd3b2177b693393843e820a5caa22cc5f72bc315c0b91139f0196"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcccccc0e8c94a1aa9f2763461779dc0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cc81de10aa4784a267e16bdb4203ee21df69cd557fe8ac4bce5873f6711b2a60.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cc81de10aa4784a267e16bdb4203ee21df69cd557fe8ac4bce5873f6711b2a60.pdf",
+      "file_id": "bcccccc0e8c94a1aa9f2763461779dc0",
+      "file_name": "Attachment+A+-+Instructions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181822,
+      "sha256": "cc81de10aa4784a267e16bdb4203ee21df69cd557fe8ac4bce5873f6711b2a60"
+    }
+  ],
+  "_mirror_hash": "60335c6f38a7ab8b42430f1f7c8d119a319c3bcad9545e135dd12271d0d426ca",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.827874+00:00"
+}

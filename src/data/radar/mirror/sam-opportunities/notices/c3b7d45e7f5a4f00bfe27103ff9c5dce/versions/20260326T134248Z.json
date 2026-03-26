@@ -1,0 +1,68 @@
+{
+  "id": "sam-c3b7d45e7f5a4f00bfe27103ff9c5dce",
+  "title": "DA01--Controlled Unclassified Information (CUI) (VA-26-00041445)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3b7d45e7f5a4f00bfe27103ff9c5dce",
+  "opportunity_url": "https://sam.gov/opp/c3b7d45e7f5a4f00bfe27103ff9c5dce/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c3b7d45e7f5a4f00bfe27103ff9c5dce/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c3b7d45e7f5a4f00bfe27103ff9c5dce",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C10B26Q0291",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3b7d45e7f5a4f00bfe27103ff9c5dce",
+  "detail_text": "CUI",
+  "detail_text_length": 3,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f41ccd26fd3415a8a47267cd0dbd583/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a199ada29ff4f38b170317922c740c4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e638d7520a374396a1c4bd1e4f792129/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f41ccd26fd3415a8a47267cd0dbd583/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bb4398851805403379fe78cda5bc22de2127e5349dd565cdcb80cfe80f08662d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bb4398851805403379fe78cda5bc22de2127e5349dd565cdcb80cfe80f08662d.docx",
+      "file_id": "1f41ccd26fd3415a8a47267cd0dbd583",
+      "file_name": "PWS+Template_May_16_Rev2_MAR_18_2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 907396,
+      "sha256": "bb4398851805403379fe78cda5bc22de2127e5349dd565cdcb80cfe80f08662d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a199ada29ff4f38b170317922c740c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/323534812bbe7c94741274f07bfa55e6fc55b4cf636781d9ee5f6c5a73745121.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/323534812bbe7c94741274f07bfa55e6fc55b4cf636781d9ee5f6c5a73745121.docx",
+      "file_id": "9a199ada29ff4f38b170317922c740c4",
+      "file_name": "rfi+cover+page+with+questions+to+the+vendors+rfi+final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23892,
+      "sha256": "323534812bbe7c94741274f07bfa55e6fc55b4cf636781d9ee5f6c5a73745121"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e638d7520a374396a1c4bd1e4f792129/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/51fdd48b3f605d8b90f899999e74e8784fcd1cb194a1d967cf9be1519ef3a482.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/51fdd48b3f605d8b90f899999e74e8784fcd1cb194a1d967cf9be1519ef3a482.docx",
+      "file_id": "e638d7520a374396a1c4bd1e4f792129",
+      "file_name": "36C10B26Q0291.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14545,
+      "sha256": "51fdd48b3f605d8b90f899999e74e8784fcd1cb194a1d967cf9be1519ef3a482"
+    }
+  ],
+  "_mirror_hash": "c2715d9127f28ce76a69de5888058af641d78787c064ff4e57c06a179b42d709",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.780292+00:00"
+}

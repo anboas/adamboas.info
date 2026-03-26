@@ -1,21 +1,21 @@
 [
   {
-    "id": "radar-loitering-munitions-usa-conference-2026",
-    "title": "Loitering Munitions USA Conference 2026",
-    "description": "ASD Events sourced event for defense ecosystem tracking and engagement planning.",
-    "startDate": "2026-05-13",
-    "endDate": "2026-05-14",
-    "branch": "Joint",
+    "id": "radar-ausa-noon-report-once-a-soldier-always-a-soldier-how-soldier-for-life-",
+    "title": "AUSA Noon Report: Once a Soldier, Always a Soldier: How Soldier for Life Builds Lifelong Readiness",
+    "description": "AUSA sourced event for defense ecosystem tracking and engagement planning.",
+    "startDate": "2026-04-30",
+    "endDate": null,
+    "branch": "Army",
     "type": "Conference",
     "status": "Upcoming",
     "signal": "Medium",
-    "effort": "Low",
+    "effort": "Medium",
     "location": {
-      "city": "Arlington",
-      "state": "VA",
+      "city": "Virtual",
+      "state": null,
       "country": "USA",
-      "lat": 38.8769326,
-      "lng": -77.0893094
+      "lat": 39.5,
+      "lng": -98.35
     },
     "ontology": {
       "themes": [
@@ -33,15 +33,16 @@
         "Program sensing"
       ],
       "stakeholders": [
-        "Joint stakeholders",
+        "Army stakeholders",
         "Program offices",
         "Industry partners"
       ],
       "keywords": [
-        "loitering",
-        "munitions",
-        "conference",
-        "2026"
+        "ausa",
+        "noon",
+        "report",
+        "once",
+        "soldier"
       ],
       "relatedPrograms": [
         "Radar expansion"
@@ -53,23 +54,23 @@
       },
       "provenance": [
         {
-          "name": "ASD Events",
-          "url": "https://www.asdevents.com/defense-security",
-          "type": "aggregator",
+          "name": "AUSA",
+          "url": "https://www.ausa.org/meet",
+          "type": "official",
           "lastVerified": "2026-02-13",
           "confidence": "High"
         }
       ],
       "links": {
-        "official": "https://www.asdevents.com/event.asp?id=25842"
+        "official": "https://www.ausa.org/events/noon-report/soldier-for-life"
       },
       "logistics": {
-        "format": "In-person",
+        "format": "Virtual",
         "estimatedCostUsd": {
-          "min": 100,
-          "max": 900
+          "min": 500,
+          "max": 2200
         },
-        "travelBurdenFromDc": "Low"
+        "travelBurdenFromDc": "Medium"
       },
       "notes": null
     }

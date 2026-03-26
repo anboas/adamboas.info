@@ -1,0 +1,59 @@
+{
+  "id": "sam-6a9510e7f7f644f6aa7822fa757f0aa8",
+  "title": "Air Force Tactical Terminal (AFTT) RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6a9510e7f7f644f6aa7822fa757f0aa8",
+  "opportunity_url": "https://sam.gov/opp/6a9510e7f7f644f6aa7822fa757f0aa8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6a9510e7f7f644f6aa7822fa757f0aa8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6a9510e7f7f644f6aa7822fa757f0aa8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "AFTT_RFI_MARCH2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA2291 AFLCMC C3NK",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6a9510e7f7f644f6aa7822fa757f0aa8",
+  "detail_text": "The Department of the Air Force is seeking information regarding the Air Force Tactical Terminals. Please refer to the attached Request for Information (RFI) for further details.",
+  "detail_text_length": 178,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9bb70aee4b04911bd511663fc1a4cfb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e66a252868484f16a341b2724c639068/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9bb70aee4b04911bd511663fc1a4cfb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fff829dc33dcfd5f2c3ebac02dfd8e0a2099c116dde63edfa6b1d4dca6cef671.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fff829dc33dcfd5f2c3ebac02dfd8e0a2099c116dde63edfa6b1d4dca6cef671.docx",
+      "file_id": "c9bb70aee4b04911bd511663fc1a4cfb",
+      "file_name": "FINAL+RFI+AFTT+TRS+on+JTT-NG+Development.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 193024,
+      "sha256": "fff829dc33dcfd5f2c3ebac02dfd8e0a2099c116dde63edfa6b1d4dca6cef671"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e66a252868484f16a341b2724c639068/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df099c052ab5d27f2f935c295f0519b4cc2b34f5ceb631bf9cd369674653c2ef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df099c052ab5d27f2f935c295f0519b4cc2b34f5ceb631bf9cd369674653c2ef.pdf",
+      "file_id": "e66a252868484f16a341b2724c639068",
+      "file_name": "FINAL+RFI+AFTT+TRS+on+JTT-NG+Development_.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181321,
+      "sha256": "df099c052ab5d27f2f935c295f0519b4cc2b34f5ceb631bf9cd369674653c2ef"
+    }
+  ],
+  "_mirror_hash": "91ec931b67ea9746828639131bb0cf0a26cf1d95752df253979cfb44f78bea0e",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.646319+00:00"
+}

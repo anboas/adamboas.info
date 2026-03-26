@@ -1,0 +1,46 @@
+{
+  "id": "sam-5f8a7f1ea0ae4c03bfa1c8c15de4e04f",
+  "title": "Loader and Adapter",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f8a7f1ea0ae4c03bfa1c8c15de4e04f",
+  "opportunity_url": "https://sam.gov/opp/5f8a7f1ea0ae4c03bfa1c8c15de4e04f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5f8a7f1ea0ae4c03bfa1c8c15de4e04f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5f8a7f1ea0ae4c03bfa1c8c15de4e04f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "F3N0614354AW01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f8a7f1ea0ae4c03bfa1c8c15de4e04f",
+  "detail_text": "IAW RFO 5.101(c)(4): (i) The 86th Vehicle Readiness Squadron (VRS) at Ramstein Air Base is seeking to procure two (2) multi-purpose loaders and the necessary fork and crane arm adapters compatible with the selected loader models. This equipment is essential for daily material handling, cargo movement, and various logistical support tasks integral to the squadron's mission. The specific technical specifications for the loaders and adapters are attached. (ii) In accordance with FAR 12.201-1(c), this pre-solicitation is being published on the Government Point of Entry to document the requirement. The contract will be awarded based on the Lowest Price Technically Acceptable (LPTA) selection process. Under this method, the contract is awarded to the bidder who proposes the lowest price, as long as their technical proposal satisfies the minimum standards stipulated in the salient characteristics document. Funds have not been received yet, so the anticipated contract award date is TBD. (vi) All responsible sources may submit a quotation, bid, or proposal, as appropriate, which will be considered by the agency. (viii) An offeror’s proposed product must meet the specification requirement in order to be eligible for award (see salient characteristics document)",
+  "detail_text_length": 1270,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/403ce0fe091644ffa321d89af6891cf4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/403ce0fe091644ffa321d89af6891cf4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/afefacffb7c2d70bab4bb2d91c32e00931726b1ea31e2fa10778df9b18c69e91.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/afefacffb7c2d70bab4bb2d91c32e00931726b1ea31e2fa10778df9b18c69e91.pdf",
+      "file_id": "403ce0fe091644ffa321d89af6891cf4",
+      "file_name": "Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21739,
+      "sha256": "afefacffb7c2d70bab4bb2d91c32e00931726b1ea31e2fa10778df9b18c69e91"
+    }
+  ],
+  "_mirror_hash": "19a279ee96e6dd9538f9826c83f1a5c482ff9602fdff7ac1099c9aa9c54b8ecb",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.754095+00:00"
+}

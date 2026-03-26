@@ -1,0 +1,58 @@
+{
+  "id": "sam-83b6049feac24b288a6c1f8c180b8e1e",
+  "title": "Electro-Optical Infrared Direct Injection (EOIRDI)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=83b6049feac24b288a6c1f8c180b8e1e",
+  "opportunity_url": "https://sam.gov/opp/83b6049feac24b288a6c1f8c180b8e1e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/83b6049feac24b288a6c1f8c180b8e1e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "83b6049feac24b288a6c1f8c180b8e1e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N00421-26-RFPREQ-AD60000AD6000M-0191",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC AD.NAVAL AIR WARFARE CENTER AIR DIV",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=83b6049feac24b288a6c1f8c180b8e1e",
+  "detail_text": "SYNOPSIS - NOTICE OF INTENT TO SOLE SOURCE. This synopsis is hereby issued in accordance with FAR Subpart 5.1. The purpose of this synopsis is to announce the Naval Air Warfare Command Aircraft Division (NAWCAD) intent to solicit a sole source proposal for the continuation of Tier 1 efforts and completion of Terrain/Radiance Map Generation, additional user and developer documentation, and ARINC interface requirements on the previously awarded Electro-Optical Infrared Direct Injection (EOIRDI) system delivery order (N0042123F0031) against Basic Ordering Agreement N0042122G0004. This requirement will increase ceiling of Teir 1 (CLIN 0001) and establish Option CLINs on the delivery order under Basic Ordering Agreement N0042122G0004 to Northrop Grumman Systems Corporation, 1740 Wehrle Dr, Buffalo, NY 14221. This notice is published for informational purposes only and is not a request for quotes or request for information . A determination by the Government not to compete this procurement is solely within the discretion of the Government and the Government is not considering responses to this notice.",
+  "detail_text_length": 1112,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47f0a6c2f3984943aae256e0dd5da427/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef8b9711ce50494e84887ed17982f73e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47f0a6c2f3984943aae256e0dd5da427/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a8a1ace0dca2a105e341deacbb99ea53c52bc557e5f254f06886d32a2c763fb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a8a1ace0dca2a105e341deacbb99ea53c52bc557e5f254f06886d32a2c763fb.pdf",
+      "file_id": "47f0a6c2f3984943aae256e0dd5da427",
+      "file_name": "Notice+of+Intent_EOIRDI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 150505,
+      "sha256": "2a8a1ace0dca2a105e341deacbb99ea53c52bc557e5f254f06886d32a2c763fb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef8b9711ce50494e84887ed17982f73e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4d377a7b43af8bdf87a3a8003da3cd062fc9296f19b5bd9921ea342ea5b49c6b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4d377a7b43af8bdf87a3a8003da3cd062fc9296f19b5bd9921ea342ea5b49c6b.pdf",
+      "file_id": "ef8b9711ce50494e84887ed17982f73e",
+      "file_name": "Draft_EOIRDI+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 347774,
+      "sha256": "4d377a7b43af8bdf87a3a8003da3cd062fc9296f19b5bd9921ea342ea5b49c6b"
+    }
+  ],
+  "_mirror_hash": "665acadda21e0ad4e2c4d4ce25ea6b0351a840cf4603d9db007071c94cf12f24",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.557671+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-d9b9c12a053d499da7fb32a22694e2e3",
+  "title": "NIIN:012224316/PN:70651-03201-105/ NOM:ACCUMULATOR, HYDRAUL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9b9c12a053d499da7fb32a22694e2e3",
+  "opportunity_url": "https://sam.gov/opp/d9b9c12a053d499da7fb32a22694e2e3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d9b9c12a053d499da7fb32a22694e2e3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d9b9c12a053d499da7fb32a22694e2e3",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QF097",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9b9c12a053d499da7fb32a22694e2e3",
+  "detail_text": "his solicitation is for the repair of 3 units of National Stock Number (NSN) 7R 1650012224316. Induction Period The induction period for the initial units in this order is 365 calendar days from the date of contract award. The Government reserves the right to extend this period by an additional [insert number of days] days, for a total of two years. Any unused induction slots from the initial year may be carried over into the second year. Pricing and Options The contractor shall propose option pricing for a maximum of [insert number of units] units over the entire contract period, inclusive of the initial quantity. If pricing will change after the first 365 days, please provide separate pricing for the second year. Contract Award The Government reserves the right to place the initial order for any number of units up to the specified maximum. For threshold purposes, the total contract value will be calculated by multiplying the highest proposed unit price by the maximum number of units. NAVUP WSS Philadelphia intends to award this requirement on a standalone a sole source basis. The Government physically does not have in its possession sufficient, accurate, or legible data to contract with other than the current source. One or more of the items under this acquisition is subject to Free Trade Agreements. (FAR 52.225-3). One or more of the items under this acquisition are subject to the World Trade Organization Government Procurement Agreement and Free Trade Agreements. (FAR 52.225-5) These items require Government Source Approval prior to the award. The time required for approval of a new source is normally such that an award cannot be delayed pending approval of a new source. If you are not an approved source, you must submit, together with your proposal, the information detailed in the NAVSUP WSS Source Approval Brochure, which can be obtained on the internet at https://www.navsup.navy.mil/Business-Opportunities/Home/ Offers received which fail to provide all data required by the source approval brochure will not be considered for award under this solicitation. For information or questions regarding this notice, please contact Anna Kiessling at the email address: lauren.n.phillips6.civ@us.navy.mil.",
+  "detail_text_length": 2237,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e2b680eeadf4774b0d3e8d77d18d89d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e2b680eeadf4774b0d3e8d77d18d89d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c527dc3bb305682e01410fd3caa187427b46536acd9085e12927fb1400450d3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c527dc3bb305682e01410fd3caa187427b46536acd9085e12927fb1400450d3.pdf",
+      "file_id": "5e2b680eeadf4774b0d3e8d77d18d89d",
+      "file_name": "3.01_Solicitation_N0038326QF097.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1319606,
+      "sha256": "7c527dc3bb305682e01410fd3caa187427b46536acd9085e12927fb1400450d3"
+    }
+  ],
+  "_mirror_hash": "e74fd45094ab1b8b8a387bf17ca6e25a1c29867b2a7c92bcd50d77b6caf82a06",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.649992+00:00"
+}

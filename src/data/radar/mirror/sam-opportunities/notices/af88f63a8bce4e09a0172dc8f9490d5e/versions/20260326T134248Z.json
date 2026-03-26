@@ -1,0 +1,46 @@
+{
+  "id": "sam-af88f63a8bce4e09a0172dc8f9490d5e",
+  "title": "Cody CBOC - Succeeding Lease",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=af88f63a8bce4e09a0172dc8f9490d5e",
+  "opportunity_url": "https://sam.gov/opp/af88f63a8bce4e09a0172dc8f9490d5e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/af88f63a8bce4e09a0172dc8f9490d5e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "af88f63a8bce4e09a0172dc8f9490d5e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W25R0004",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=af88f63a8bce4e09a0172dc8f9490d5e",
+  "detail_text": "The VA is seeking a 20-year lease, and currentyly occupies office and related space in a building under lease in Cody, WY. The government will consider alternative space if economically advantagaeous to provide quality care to veterans and families in the communtites without a break in service.",
+  "detail_text_length": 295,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82a9024cf39b42ecbf2c34c6c42a2f31/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82a9024cf39b42ecbf2c34c6c42a2f31/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0b0399e60c25b77c57fab8c6782d31eda530c44fd29cc378405c098d08df4465.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0b0399e60c25b77c57fab8c6782d31eda530c44fd29cc378405c098d08df4465.pdf",
+      "file_id": "82a9024cf39b42ecbf2c34c6c42a2f31",
+      "file_name": "Cody+CBOC+-+Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 211864,
+      "sha256": "0b0399e60c25b77c57fab8c6782d31eda530c44fd29cc378405c098d08df4465"
+    }
+  ],
+  "_mirror_hash": "fa6c041f9b91ff27aeea7b03598754009407170a8ed67c51ae5cc3a0af742277",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.787895+00:00"
+}

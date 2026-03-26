@@ -1,0 +1,48 @@
+{
+  "id": "sam-1f7161659fa0481ca3eaf13ce7fd5447",
+  "title": "RFI-Advanced Forensic Capabilities for Identifying Non-Traditional Insider Data Exfiltration Methods",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f7161659fa0481ca3eaf13ce7fd5447",
+  "opportunity_url": "https://sam.gov/opp/1f7161659fa0481ca3eaf13ce7fd5447/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1f7161659fa0481ca3eaf13ce7fd5447/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1f7161659fa0481ca3eaf13ce7fd5447",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI4222026MM",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.FBI-JEH",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f7161659fa0481ca3eaf13ce7fd5447",
+  "detail_text": "REQUEST FOR INFORMATION (RFI) The objective of this Request for Information (RFI) is to survey the market for mature, commercially available (or proprietary/non-proprietary) technologies from industry providers that can help forensically trace and attribute non-traditional methods of exfiltrating sensitive or classified materials from FBI managed workstations. The cost of responding to the RFI shall be exclusively borne by the organization submitting the information. No costs will be reimbursed by the Government. The FBI makes no implied or in fact contract by issuing this RFI.",
+  "detail_text_length": 584,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7100f7a68812480bae91d78a41750234/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7100f7a68812480bae91d78a41750234/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4ce3db7d2ae3a2c1da29d9516488fb4657757095c543e337d145310d6409254e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4ce3db7d2ae3a2c1da29d9516488fb4657757095c543e337d145310d6409254e.pdf",
+      "file_id": "7100f7a68812480bae91d78a41750234",
+      "file_name": "RFI4222026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 991547,
+      "sha256": "4ce3db7d2ae3a2c1da29d9516488fb4657757095c543e337d145310d6409254e"
+    }
+  ],
+  "_mirror_hash": "8201d2b1cc49b575c27542e9c847ec5e462cd0a5d404da66077a6e0811893c4f",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.641433+00:00"
+}

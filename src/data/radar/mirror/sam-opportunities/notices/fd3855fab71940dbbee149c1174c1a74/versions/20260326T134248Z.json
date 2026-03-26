@@ -1,0 +1,48 @@
+{
+  "id": "sam-fd3855fab71940dbbee149c1174c1a74",
+  "title": "66--Request For Information/Sources Sought; National Cancer Institute Center For Ca",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd3855fab71940dbbee149c1174c1a74",
+  "opportunity_url": "https://sam.gov/opp/fd3855fab71940dbbee149c1174c1a74/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fd3855fab71940dbbee149c1174c1a74/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fd3855fab71940dbbee149c1174c1a74",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "DOIDFBO260036",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd3855fab71940dbbee149c1174c1a74",
+  "detail_text": "On behalf of the National Cancer Institute, the Department of the Interior is seeking sources to determine the availability of an automated robotic arm system with software integration to restore plate handling capabilities within the existing NIH high throughput imaging automation platform.",
+  "detail_text_length": 292,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2e65455d788f49a7aba4afa0dd4d3484/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2e65455d788f49a7aba4afa0dd4d3484/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/24e7f390f613afb1c8b4916a4e456984152011b27e0177edc7f7f9049ac2bf41.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/24e7f390f613afb1c8b4916a4e456984152011b27e0177edc7f7f9049ac2bf41.pdf",
+      "file_id": "2e65455d788f49a7aba4afa0dd4d3484",
+      "file_name": "A14_MR_RFI_Robotic_Arm_System_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 165643,
+      "sha256": "24e7f390f613afb1c8b4916a4e456984152011b27e0177edc7f7f9049ac2bf41"
+    }
+  ],
+  "_mirror_hash": "59bb19f13fb8e7cf79912c1cf20cc3ccfe69257f4bd87c5e75833a2558cb7927",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.615209+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-3445ed79e81e4924b98a03cbd63fca2c",
+  "title": "TELERADIOLOGY PHYSICIAN SERVICES",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3445ed79e81e4924b98a03cbd63fca2c",
+  "opportunity_url": "https://sam.gov/opp/3445ed79e81e4924b98a03cbd63fca2c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3445ed79e81e4924b98a03cbd63fca2c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3445ed79e81e4924b98a03cbd63fca2c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C10G26R0015_0002",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.STRATEGIC ACQUISITION CENTER FREDERICKSBURG (36C10G)",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3445ed79e81e4924b98a03cbd63fca2c",
+  "detail_text": "The purpose of this amendment is to: 1. Provide answers to questions received. See attachment E. 2. Added to the price schedule new CLINs 0005 to 4005 to include SLA fee. 3. Providing revised Attachment D- Proposal Price Template. 4. Extended proposal receipt date: April 6, 2026 at 9:00 am ET.",
+  "detail_text_length": 294,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/277b623dc682414d83e3e20fd3fe7175/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4390f8a9aa3d49ca85f84193ea59964e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d724f7f74a6f4298869781cc1e900f7c/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/277b623dc682414d83e3e20fd3fe7175/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/611be220554c0f14012b32eedcc234a610e12b73ef3de7210f479b4047e39448.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/611be220554c0f14012b32eedcc234a610e12b73ef3de7210f479b4047e39448.xlsx",
+      "file_id": "277b623dc682414d83e3e20fd3fe7175",
+      "file_name": "Attachment+E+-+Questions+and+Answers+Completed+03.25.26.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30695,
+      "sha256": "611be220554c0f14012b32eedcc234a610e12b73ef3de7210f479b4047e39448"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4390f8a9aa3d49ca85f84193ea59964e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9806ace36b42b466c830a924cfa1011cbefa31f4855c9d9ce93002c6fce19d23.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9806ace36b42b466c830a924cfa1011cbefa31f4855c9d9ce93002c6fce19d23.pdf",
+      "file_id": "4390f8a9aa3d49ca85f84193ea59964e",
+      "file_name": "36C10G26R0015+0002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169109,
+      "sha256": "9806ace36b42b466c830a924cfa1011cbefa31f4855c9d9ce93002c6fce19d23"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d724f7f74a6f4298869781cc1e900f7c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/768b587f0426e8a0c17f3c4ddfb32689dd4b89ef12b9901b11a8ef3a9d634213.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/768b587f0426e8a0c17f3c4ddfb32689dd4b89ef12b9901b11a8ef3a9d634213.xlsx",
+      "file_id": "d724f7f74a6f4298869781cc1e900f7c",
+      "file_name": "Attachment+D+-+Proposal+Price+Template+REV.1+03.25.26.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28402,
+      "sha256": "768b587f0426e8a0c17f3c4ddfb32689dd4b89ef12b9901b11a8ef3a9d634213"
+    }
+  ],
+  "_mirror_hash": "32882acfc18cd4420f4990be84bcaeb50cb57a9e8bd80dd64113d33013488760",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.808198+00:00"
+}

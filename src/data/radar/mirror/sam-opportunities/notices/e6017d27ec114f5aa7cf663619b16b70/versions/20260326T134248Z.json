@@ -1,0 +1,46 @@
+{
+  "id": "sam-e6017d27ec114f5aa7cf663619b16b70",
+  "title": "MOTOR,ALTERNATING C",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e6017d27ec114f5aa7cf663619b16b70",
+  "opportunity_url": "https://sam.gov/opp/e6017d27ec114f5aa7cf663619b16b70/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e6017d27ec114f5aa7cf663619b16b70/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e6017d27ec114f5aa7cf663619b16b70",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM126RGC22",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e6017d27ec114f5aa7cf663619b16b70",
+  "detail_text": "DLA Maritime Mechanicsburg is seeking sources capable of supplying the following items: NSN 7HH 6105 014585540 NOM: MOTOR,ALTERNATING C P/N: 801641‐500GP2 Approved Design Cage Code: ELECTRIC MOTOR & CONTRACTING CO INC (CAGE 9X480) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to Dillon.Hippensteel@dla.mil by 12:00 PM EST on 09 April 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1233,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/663b4e0fe3db451eab785cc6dfec400a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/663b4e0fe3db451eab785cc6dfec400a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/632eda44fa7d3b6a6e057c36f0fd345236de8a2155686ea0b69971a7e7d07ee4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/632eda44fa7d3b6a6e057c36f0fd345236de8a2155686ea0b69971a7e7d07ee4.docx",
+      "file_id": "663b4e0fe3db451eab785cc6dfec400a",
+      "file_name": "1.08+Sources+Sought+-+MARKET+SURVEY.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 379246,
+      "sha256": "632eda44fa7d3b6a6e057c36f0fd345236de8a2155686ea0b69971a7e7d07ee4"
+    }
+  ],
+  "_mirror_hash": "a57bcdcee53ca7bad5b973ba25e86d9c7c9d76334d479d2400d6a3d3fd8d2431",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.849084+00:00"
+}

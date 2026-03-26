@@ -1,0 +1,57 @@
+{
+  "id": "sam-2dbac8289b8846f5a51d71f5563c50f3",
+  "title": "INL/Trinidad & Tobago Operational Goods",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2dbac8289b8846f5a51d71f5563c50f3",
+  "opportunity_url": "https://sam.gov/opp/2dbac8289b8846f5a51d71f5563c50f3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2dbac8289b8846f5a51d71f5563c50f3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2dbac8289b8846f5a51d71f5563c50f3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "191NLE26N0052",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.ACQUISITIONS - INL",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2dbac8289b8846f5a51d71f5563c50f3",
+  "detail_text": "The U.S. Department of State, Embassy Port of Spain, is conducting market research through this Sources Sought / Request for Information (RFI) to identify vendors capable of providing goods and services to operationalize a U.S. Drug Enforcement Administration (DEA) Vetted Unit in Trinidad and Tobago. The anticipated requirement includes the supply, installation, integration, and long‑term in‑country support of: (1) digital forensics lab equipment and data storage systems (e.g., Dell PowerScale A310 or equivalent); (2) rack systems with cooling and electrical accessories (e.g., APC NetShelter SX 42U with InRow cooling or equivalent); (3) laptop workstations and rugged laptops pre‑installed with required hardware/software; and (4) an integrated building and perimeter security system with access control and CCTV. Computer equipment must be deliverable within 8–12 weeks from purchase order issuance, and quoted prices in any future solicitation are expected to include all shipping, brokerage, and transportation to the INL office in Port of Spain. Interested vendors should carefully review and respond in accordance with the attached full Sources Sought/RFI document and the attached draft Statement of Work (SOW). This RFI is for planning purposes only and does not constitute a solicitation or a commitment to award.",
+  "detail_text_length": 1329,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/689cf9f842794f08a864942c249a0ddf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f28ad6c5ede541aab74b2197d989daa2/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/689cf9f842794f08a864942c249a0ddf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c152d9867a5cf0bef2f54fd35be31f73578e68117c3b16919759007f4a4eba3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c152d9867a5cf0bef2f54fd35be31f73578e68117c3b16919759007f4a4eba3.docx",
+      "file_id": "689cf9f842794f08a864942c249a0ddf",
+      "file_name": "SOURCES+SOUGHT+Op+Goods.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 44932,
+      "sha256": "2c152d9867a5cf0bef2f54fd35be31f73578e68117c3b16919759007f4a4eba3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f28ad6c5ede541aab74b2197d989daa2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0036fed9890dd08eb7798231890db366fa0372f012baa76e142f3db154384b27.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0036fed9890dd08eb7798231890db366fa0372f012baa76e142f3db154384b27.docx",
+      "file_id": "f28ad6c5ede541aab74b2197d989daa2",
+      "file_name": "SOW+TT+Op+Goods.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 105383,
+      "sha256": "0036fed9890dd08eb7798231890db366fa0372f012baa76e142f3db154384b27"
+    }
+  ],
+  "_mirror_hash": "cb6479ff87c346961625ffdc0c2b823bb502b41225dbfe63382a736c5e5487ba",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.815792+00:00"
+}

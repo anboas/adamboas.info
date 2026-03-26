@@ -1,0 +1,46 @@
+{
+  "id": "sam-d73bd547348742e2a57b0cc7b674d86c",
+  "title": "Loan File Review for Risk Oversight Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d73bd547348742e2a57b0cc7b674d86c",
+  "opportunity_url": "https://sam.gov/opp/d73bd547348742e2a57b0cc7b674d86c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d73bd547348742e2a57b0cc7b674d86c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d73bd547348742e2a57b0cc7b674d86c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "47QACA26K0024",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE.OFFICE OF CENTRALIZED ACQUISITION SERVICES",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d73bd547348742e2a57b0cc7b674d86c",
+  "detail_text": "SOURCES SOUGHT NOTICE Notice : 47QACA26K0024 Project Title : Loan File Review for Risk Oversight Support Services NOTE: THIS FORM IS FOR MARKET RESEARCH PURPOSES ONLY . THIS IS NOT A SOLICITATION OR REQUEST FOR QUOTES/PROPOSALS. THE GOVERNMENT IS UNDER NO OBLIGATION TO ENTER INTO A CONTRACT WITH RESPONDENTS WHO COMPLETE THIS FORM. The General Services Administration on behalf of the Small Business Administration is looking for qualified firms to perform Loan File Reviews for Risk Oversight Support Services. This Sources Sought notice is being issued in conjunction with an RFI on eBuy. If there is not sufficient interest form schedule holders, the responses to this Sources Sought will help provide data for a solicitation that may be posted on sam.gov. The NAICS code for the potential solicitation will be 541990 - All Other Professional, Scientific, and Technical Services. Summary Objectives and Statement of Work This procurement will be for Loan File Review Services; specifically for the SBA's 7(a) and 504 programs . This will be a performance-based contract; the requirements will be stated in terms of desired results with associated quality standards. A draft performance work statement (PWS) is being issued with this sources sought to allow interested firms to respond to this notice. Interested vendors should complete the form here: https://docs.google.com/forms/d/e/1FAIpQLSdvL6OaJSODQe16eyQsfGFb6v_-Bbem9xh4BUkItIU6qCD5QA/viewform?usp=header INSTRUCTIONS : Firms should complete this form no later than April 8, 2026 at 4:00PM Eastern Time . You can obtain more information SAM Registration and your SAM UEI here: https://sam.gov/content/entity-registration",
+  "detail_text_length": 1681,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf555293725d43da8fd803a14a2dd450/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf555293725d43da8fd803a14a2dd450/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7fd247f3ebb804c0c20c1b19d4408a0f9fe7458a92d9d0706ebe08faeac69fa1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7fd247f3ebb804c0c20c1b19d4408a0f9fe7458a92d9d0706ebe08faeac69fa1.pdf",
+      "file_id": "cf555293725d43da8fd803a14a2dd450",
+      "file_name": "7-a-+504+Loan+Program+Sources+Sought+SAM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 60860,
+      "sha256": "7fd247f3ebb804c0c20c1b19d4408a0f9fe7458a92d9d0706ebe08faeac69fa1"
+    }
+  ],
+  "_mirror_hash": "4b0d148292f48ccbf35e87d4bb6e6348ffec2a20d2edc68e557c1ea1e85c384a",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.832952+00:00"
+}

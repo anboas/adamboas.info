@@ -1,0 +1,57 @@
+{
+  "id": "sam-cc16c55167ac47509bb42db1ee4b2217",
+  "title": "Oracle Hyperion and Essbase Annual Support Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc16c55167ac47509bb42db1ee4b2217",
+  "opportunity_url": "https://sam.gov/opp/cc16c55167ac47509bb42db1ee4b2217/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cc16c55167ac47509bb42db1ee4b2217/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cc16c55167ac47509bb42db1ee4b2217",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26928775Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-03-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc16c55167ac47509bb42db1ee4b2217",
+  "detail_text": "NASA/NSSC has a requirement for Oracle Hyperion and Essbase Annual Support Renewal. See the attached SOW and Capability statement for full details of the requirement. Please note* THIS IS NOT A REQUEST FOR QUOTES AND ANY PRICING OFFERED WILL NOT BE REVIEWED AT THIS TIME. ALL CORRESPONDENCE SHOULD REFERENCE NOTICE ID 80NSSC26928775Q TO ENSURE VISIBILITY. PHONE CALLS WILL NOT BE ACCEPTED.",
+  "detail_text_length": 389,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87b425f22868495588f01cc5a081e29b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d74bb8f55007462e9afebcd51f2723a6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87b425f22868495588f01cc5a081e29b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d3b6b3451e1ec0bf8f66a53cefb7438204c7a4220c60b545bb0785c9b610c5e0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d3b6b3451e1ec0bf8f66a53cefb7438204c7a4220c60b545bb0785c9b610c5e0.pdf",
+      "file_id": "87b425f22868495588f01cc5a081e29b",
+      "file_name": "Tab+07+Capability+Statement+SAM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 128626,
+      "sha256": "d3b6b3451e1ec0bf8f66a53cefb7438204c7a4220c60b545bb0785c9b610c5e0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d74bb8f55007462e9afebcd51f2723a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/14758fc6dfec439f3c8644397020ee2341023d8bcf1c70804b2818943946ea13.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/14758fc6dfec439f3c8644397020ee2341023d8bcf1c70804b2818943946ea13.pdf",
+      "file_id": "d74bb8f55007462e9afebcd51f2723a6",
+      "file_name": "Tab+04+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 93499,
+      "sha256": "14758fc6dfec439f3c8644397020ee2341023d8bcf1c70804b2818943946ea13"
+    }
+  ],
+  "_mirror_hash": "6bfa563448f493994896a7756a8b0bd67cac957053e10e77dce325d2c4c006b5",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.714064+00:00"
+}

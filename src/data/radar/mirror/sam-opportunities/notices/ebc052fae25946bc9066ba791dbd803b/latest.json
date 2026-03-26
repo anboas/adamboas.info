@@ -1,0 +1,79 @@
+{
+  "id": "sam-ebc052fae25946bc9066ba791dbd803b",
+  "title": "ADR AM2 Airfield Matting",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ebc052fae25946bc9066ba791dbd803b",
+  "opportunity_url": "https://sam.gov/opp/ebc052fae25946bc9066ba791dbd803b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ebc052fae25946bc9066ba791dbd803b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ebc052fae25946bc9066ba791dbd803b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8051-AM2-Matting",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AF INSTALLATION & MISSION SUPPORT CENTER.FA8051  772 ESS PKD",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ebc052fae25946bc9066ba791dbd803b",
+  "detail_text": "Amendment 1 - January 28, 2026 - The following documents were converted to PDFs due to Microsoft security settings to allow interested parties easier access. No changes were made to the contents of the documents. 1. “AM2_Sources_Sought” 2. Attachment 1- ADR AM2 Airfield Matting IDIQ SOW 3. Attachment A - AM2 Airfield Matting Kits and Components Specifications 4. Attachment C - AM2 IDIQ Unit of Issue 5. Attachment D - Shipping Locations THIS NOTICE IS ISSUED AS A SOURCES SOUGHT ANNOUNCEMENT FOR INFORMATION PURPOSES ONLY. This notice DOES NOT constitute a Request for Proposal or complete package outlining the technical competencies/qualifications of the prospective contractor, nor does it represent any commitment by the Government. Since this is a Sources Sought announcement, no evaluation letters and/or results will be issued to the respondents. No reimbursement will be made for any costs associated with providing information in response to this announcement. No telephone calls will be accepted requesting a bid package or solicitation. A solicitation does not presently exist Please see the attached: 1. AM2 Sources sought 2. Attachment 1 - ADR AM2 Airfield Matting IDIQ SOW 3. Attachment A - AM2 Airfield Matting Kits and Components Specifications 4. Attachment B - Combined AM2 Drawings 5. Attachment C - AM2 IDIQ Unit of Issue 6. Attachment D - Shipping Locations",
+  "detail_text_length": 1381,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b8b945b6ce648989b681b1b2194b930/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/437efeeac15546e181574b4004246d77/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a050828e6a2549b3a422080f4b5fef41/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c26723cea0d24c81bda3ddbb30cbaf28/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b8b945b6ce648989b681b1b2194b930/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eef58f2d0379fc0a03eef0801200d75ab8760b35e1c6e1bc4a48736a39e2aa9a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eef58f2d0379fc0a03eef0801200d75ab8760b35e1c6e1bc4a48736a39e2aa9a.pdf",
+      "file_id": "0b8b945b6ce648989b681b1b2194b930",
+      "file_name": "Attachment+1+-+ADR+AM2+Airfield+Matting+IDIQ+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 213490,
+      "sha256": "eef58f2d0379fc0a03eef0801200d75ab8760b35e1c6e1bc4a48736a39e2aa9a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/437efeeac15546e181574b4004246d77/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/23428cb0a4b15b4016c471ae2a4402d37f1e32928bac3533adc62bdb40ad69b4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/23428cb0a4b15b4016c471ae2a4402d37f1e32928bac3533adc62bdb40ad69b4.pdf",
+      "file_id": "437efeeac15546e181574b4004246d77",
+      "file_name": "Attachment+C+-+AM2+IDIQ+Unit+of+Issue.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 270421,
+      "sha256": "23428cb0a4b15b4016c471ae2a4402d37f1e32928bac3533adc62bdb40ad69b4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a050828e6a2549b3a422080f4b5fef41/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a35caf94d356570a7193767b5ad3eb8fbf6aa61703b96e42d9a0048c975b71f2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a35caf94d356570a7193767b5ad3eb8fbf6aa61703b96e42d9a0048c975b71f2.pdf",
+      "file_id": "a050828e6a2549b3a422080f4b5fef41",
+      "file_name": "AM2_Sources_Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 158125,
+      "sha256": "a35caf94d356570a7193767b5ad3eb8fbf6aa61703b96e42d9a0048c975b71f2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c26723cea0d24c81bda3ddbb30cbaf28/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6a1ac26afdf6311a763229359208411cb01cf23a3d281cc72b4b382a0ef2cce6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6a1ac26afdf6311a763229359208411cb01cf23a3d281cc72b4b382a0ef2cce6.pdf",
+      "file_id": "c26723cea0d24c81bda3ddbb30cbaf28",
+      "file_name": "Attachment+D+-+Shipping+Locations.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 111040,
+      "sha256": "6a1ac26afdf6311a763229359208411cb01cf23a3d281cc72b4b382a0ef2cce6"
+    }
+  ],
+  "_mirror_hash": "1cee78be042a84bb617465836c927ec3ab920ce40bc443d40d9a3e850ca998c0",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.692754+00:00"
+}

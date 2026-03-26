@@ -1,0 +1,47 @@
+{
+  "id": "sam-5f2ec548b68148cf8c8fa7e7191e3a48",
+  "title": "N5523626Q0058-LLTM-USS-ANCHORAGE (LPD-23)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f2ec548b68148cf8c8fa7e7191e3a48",
+  "opportunity_url": "https://sam.gov/opp/5f2ec548b68148cf8c8fa7e7191e3a48/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5f2ec548b68148cf8c8fa7e7191e3a48/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5f2ec548b68148cf8c8fa7e7191e3a48",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N5523626Q0058",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.SOUTHWEST REGIONAL MAINT CENTER",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f2ec548b68148cf8c8fa7e7191e3a48",
+  "detail_text": "This is a Sources Sought announcement in accordance with FAR Part 12 and is in anticipation of a potential future procurement. Southwest Regional Maintenance Center (SWRMC) is conducting market research to determine industry capability and interest to provide the following material, including Freight on Board (FOB) Destination: See product description for required materials information. The required delivery date is 20 May 2027 and may be subject to change. SWRMC is seeking vendors with the capability to provide the previously mentioned material under applicable NAICS 333613. Interested companies should submit a letter of interest including the company’s name, SAM Unique Entity ID number, business size, telephone number, mailing address, and e-mail address of the company point of contact, along with a brief description of your company and its capabilities as they relate to the requirements set forth in the Product Description to include any lead times, if the information is available. The information submitted will be used for acquisition planning purposes. The Government does not commit to providing a response to any comments or questions. No basis for a claim against the Government shall arise as a result of this announcement. Responses to this announcement are voluntary and are of no cost to the Government. All responses are due 03 April 2026, at 06:00 PM PST, and should be sent via email to both Esther Cing at esther.c.cing.civ@us.navy.mil and Dayen Lagunas at dayen.lagunas.civ@us.navy.mil.",
+  "detail_text_length": 1519,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6fb89cb9e054e50a070110449e39e7c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6fb89cb9e054e50a070110449e39e7c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4cd8233a2b7bd52db71ed4b38d8542c3a7db3be3aa7d9770bc1b353b375e0860.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4cd8233a2b7bd52db71ed4b38d8542c3a7db3be3aa7d9770bc1b353b375e0860.pdf",
+      "file_id": "c6fb89cb9e054e50a070110449e39e7c",
+      "file_name": "26Q0058-PRODUCT-DESCRIPTION.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 165698,
+      "sha256": "4cd8233a2b7bd52db71ed4b38d8542c3a7db3be3aa7d9770bc1b353b375e0860"
+    }
+  ],
+  "_mirror_hash": "087d276c8930ad72e0c9faed1878517cee5db0a041f53117b5e281404966f954",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.552299+00:00"
+}

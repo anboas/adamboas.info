@@ -1,9 +1,9 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-25T13:48:06.453995+00:00
+Generated: 2026-03-26T13:46:51.633282+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/25/2026
+Posted range: 01/01/2026 -> 03/26/2026
 
 ## Counts
 - Total candidates: 16
@@ -24,7 +24,6 @@ Posted range: 01/01/2026 -> 03/25/2026
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Special Notice | Special Notice | 2026-03-04 | 2026-03-10 | DEPT OF DEFENSE | [Notice of Intent to Sole Source to WOSB for K9 System](https://sam.gov/opp/a5f2ab980911448791d95721fd573d16/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [DMO Personal Effects Storage](https://sam.gov/opp/755cec093c8648158439981c68ee2023/view) |
 | 2 | Special Notice | Special Notice | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [NOI -  Sole Source - Training Vouchers](https://sam.gov/opp/04012f50fa5642cdadfc8dfd1321fbce/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-18 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Human Performance (HPB) Branch (Synopsis)](https://sam.gov/opp/6f9e41a375e744b294d1e313bcd67f82/view) |
@@ -39,6 +38,7 @@ Posted range: 01/01/2026 -> 03/25/2026
 | 2 | Special Notice | Special Notice | 2026-03-20 | 2026-03-30 | DEPT OF DEFENSE | [150-pound Amerex Wheeled Fire Extinguishers Testing and Maintenance](https://sam.gov/opp/0e5724564510433498e6526d2e192f27/view) |
 | 2 | Special Notice | Special Notice | 2026-03-17 | 2026-03-31 | DEPT OF DEFENSE | [Notice of Intent -Logistical Support Services](https://sam.gov/opp/dcd7938dd66f4008b482894bde25e836/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-25 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/c97180bf1656451ea14cd6ad7e81b378/view) |
+| 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-09 | DEPT OF DEFENSE | [MCAS Beaufort Washer and Dryer Contract](https://sam.gov/opp/bdb18416a4a3453e917005faaf3c5b34/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

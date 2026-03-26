@@ -1,0 +1,46 @@
+{
+  "id": "sam-9177f925323242efaca005e6104f7539",
+  "title": "LTN-92 Navigation Database Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9177f925323242efaca005e6104f7539",
+  "opportunity_url": "https://sam.gov/opp/9177f925323242efaca005e6104f7539/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9177f925323242efaca005e6104f7539/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9177f925323242efaca005e6104f7539",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26928696Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9177f925323242efaca005e6104f7539",
+  "detail_text": "NASA/NSSC has a requirement for LTN-92 Navigation Database Renewal. NASA/NSSC intends to issue a sole source contract to NORTHROP GRUMMAN SYSTEMS CORPORATION, 21240 Burbank BLVD, Woodland Hills, California 91367-6675 under the authority of FAR 13.106-1(b)(1)(i). It has been determined that NORTHROP GRUMMAN SYSTEMS CORPORATION is the sole provider of LTN-92 Navigation Database Renewal. NASA/NSSC will be the procuring center for this effort. Performance will be located at NASA/ Armstrong Flight Research Center (AFRC). The Government intends to acquire commercial items and services using the provisions, clauses and procedures prescribed in FAR Part 12 and FAR Part 13. The NAICS Code for this procurement is 334511 Interested organizations may submit their capabilities and qualifications to perform the effort in writing to the identified point of contact not later than 4:00 p.m. Central Standard Time on 3/30/2026. Such capabilities/qualifications will be evaluated solely for the purpose of determining whether or not to conduct this procurement on a competitive basis. A determination by the Government not to compete this proposed effort on a full and open competition basis, based upon responses to this notice, is solely within the discretion of the government. Oral communications are not acceptable in response to this notice. NASA Clause 1852.215-84, Ombudsman, is applicable. The Center Ombudsman for this acquisition can be found at http://prod.nais.nasa.gov/pub/pub_library/Omb.html .",
+  "detail_text_length": 1503,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82ab72de5c454f0aafd3e61015e0c9a2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82ab72de5c454f0aafd3e61015e0c9a2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8924d93e68c7c1388e93ec08e7bd0bd057e6700362a98afe2f119fb09087bf07.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8924d93e68c7c1388e93ec08e7bd0bd057e6700362a98afe2f119fb09087bf07.pdf",
+      "file_id": "82ab72de5c454f0aafd3e61015e0c9a2",
+      "file_name": "SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 339848,
+      "sha256": "8924d93e68c7c1388e93ec08e7bd0bd057e6700362a98afe2f119fb09087bf07"
+    }
+  ],
+  "_mirror_hash": "e6fd48b52c0fc6fce643881caa94539d86e5e5db8dbe7d1cf3cd8c4b81c8f281",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.742633+00:00"
+}

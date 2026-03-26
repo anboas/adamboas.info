@@ -1,0 +1,57 @@
+{
+  "id": "sam-d9f27a2bd2ab4f46b8cfc356e93cb8cd",
+  "title": "Research Participant Recruiting",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9f27a2bd2ab4f46b8cfc356e93cb8cd",
+  "opportunity_url": "https://sam.gov/opp/d9f27a2bd2ab4f46b8cfc356e93cb8cd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d9f27a2bd2ab4f46b8cfc356e93cb8cd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d9f27a2bd2ab4f46b8cfc356e93cb8cd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "OAA-26-00192",
+  "agency_path": "LABOR, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION AND MANAGEMENT.DOL - CAS DIVISION 5 PROCUREMENT",
+  "posted_date": "2026-03-25",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9f27a2bd2ab4f46b8cfc356e93cb8cd",
+  "detail_text": "The purpose of this amendment/modification is to post Q&A and extend the deadline for another week to April 2, 2026. On behalf of the Bureau of Labor Statistics (BLS), the Office of the Senior Procurement Executive (OSPE) issues this RFI. The purpose of this RFI is to gather information about potential solutions to achieve the following high level objectives: - Identify pools of potential research study participants, verify that the potential participants meet eligibility requirements, and schedule participants for small-scale research studies conducted by the Bureau of Labor Statistics (BLS) Office of Survey Methods Research (OSMR). - Upon successful completion of the study, provide a monetary incentive to individuals. Ensure participants are remunerated appropriately, including capturing signatures and retaining required records, as needed. - Handle participant information in accordance with BLS confidentiality and privacy policies and standards. - Provide status updates and summary reports (on a real-time and/or periodic basis) to BLS/OSMR. Responses to this RFI will be reviewed by DOL for their applicability to the Government's need and determined to be \"Relevant\" or \"Irrelevant\" to the above problem. Offerors of \"Relevant\" responses may be requested to demonstrate their approach and/or product to a Government panel of Subject Matter Experts to help DOL determine the best approach. See attached document for details.",
+  "detail_text_length": 1443,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59e8b729b9d44fb4add110058ada08ee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f49e03434a74204a1a26781d632b75e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59e8b729b9d44fb4add110058ada08ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/264488ec8ec66bb96ea2ea3e0dcbfba641134171c8255b1d8c6ba76bae971cf0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/264488ec8ec66bb96ea2ea3e0dcbfba641134171c8255b1d8c6ba76bae971cf0.docx",
+      "file_id": "59e8b729b9d44fb4add110058ada08ee",
+      "file_name": "Q_A+OSMR+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20481,
+      "sha256": "264488ec8ec66bb96ea2ea3e0dcbfba641134171c8255b1d8c6ba76bae971cf0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f49e03434a74204a1a26781d632b75e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/45dbc13d3e6dd413fcf5798c234afafe1a551fbc5007a76329abbaf24eb5b3af.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/45dbc13d3e6dd413fcf5798c234afafe1a551fbc5007a76329abbaf24eb5b3af.docx",
+      "file_id": "7f49e03434a74204a1a26781d632b75e",
+      "file_name": "RFI+-+BLS+OSMR+Participant+Recruiting+v2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 47187,
+      "sha256": "45dbc13d3e6dd413fcf5798c234afafe1a551fbc5007a76329abbaf24eb5b3af"
+    }
+  ],
+  "_mirror_hash": "baf41f8d3aa638e1692532cf8b45aa969fa2e644de1e459d1af064a3db2d6cb0",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.777180+00:00"
+}

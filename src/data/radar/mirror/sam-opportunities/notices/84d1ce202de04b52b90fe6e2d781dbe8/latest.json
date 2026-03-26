@@ -1,0 +1,46 @@
+{
+  "id": "sam-84d1ce202de04b52b90fe6e2d781dbe8",
+  "title": "Transformer 1600 Watt",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=84d1ce202de04b52b90fe6e2d781dbe8",
+  "opportunity_url": "https://sam.gov/opp/84d1ce202de04b52b90fe6e2d781dbe8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/84d1ce202de04b52b90fe6e2d781dbe8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "84d1ce202de04b52b90fe6e2d781dbe8",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "F3N0526042A006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=84d1ce202de04b52b90fe6e2d781dbe8",
+  "detail_text": "200 Transformers -Must be 1600 Watt. -Transformer 220/240 Volt to 110 Volt. -Must be step down only. -All EU plugs must be dual polarity. -Steel sheet housing must be gray color. -Must have portable handle. -Single phase FFP-self cooling. -2-meter flexible cable, shuko plug type F. -Must have 2 each U.S. socket only compatible with plugs type A & B. -Must have 2 primary circuit breaker 4,5 AMP to react as overload and to be used as an on-off switch. -Location of circuit breaker/on-off switch must be in the front centered above socket.",
+  "detail_text_length": 540,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4f013ca810e47cd881e828141bcd54a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b4f013ca810e47cd881e828141bcd54a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/939eae9325124c555e386cb3ccb3c56e613af4a987671ad3b3b93084cec0e775.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/939eae9325124c555e386cb3ccb3c56e613af4a987671ad3b3b93084cec0e775.docx",
+      "file_id": "b4f013ca810e47cd881e828141bcd54a",
+      "file_name": "Presolicitation+Notice.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36194,
+      "sha256": "939eae9325124c555e386cb3ccb3c56e613af4a987671ad3b3b93084cec0e775"
+    }
+  ],
+  "_mirror_hash": "98de93e2a877306c7acdc97ebae50714f3590a05d27c53b9fab13f577db6afd4",
+  "_mirror_run_id": "20260326T134248Z",
+  "_mirror_recorded_at": "2026-03-26T13:46:27.760047+00:00"
+}

@@ -16117,4 +16117,55 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Source listing does not publish public government contact, notice type, solicitation, or response/registration dates.'
 		}
 	},
+	{
+		id: 'radar-ausa-noon-report-once-a-soldier-always-a-soldier-how-soldier-for-life-',
+		title: 'AUSA Noon Report: Once a Soldier, Always a Soldier: How Soldier for Life Builds Lifelong Readiness',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-04-30',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Medium',
+		location: 
+		{
+			city: 'Virtual',
+			country: 'USA',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: [],
+			capabilityAreas: [],
+			missionThreads: [],
+			stakeholders: [],
+			keywords: ['ausa', 'soldier-for-life'],
+			relatedPrograms: [],
+			decisionWindows: 
+			{
+				discovery: '',
+				prep: '',
+				execution: ''
+			},
+			provenance: [
+			{
+				name: 'AUSA',
+				url: 'https://www.ausa.org/events/noon-report/soldier-for-life',
+				type: 'official',
+				lastVerified: '2026-03-26',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/noon-report/soldier-for-life'
+			},
+			logistics: 
+			{
+				format: 'Virtual',
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Source confirms event title/date and virtual format. No public government contact, notice type, solicitation number, response due date, or registration deadline published as of 2026-03-26.'
+		}
+	},
 ];
