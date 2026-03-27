@@ -1,0 +1,69 @@
+{
+  "id": "sam-f222a7af7ee64eda8424ef074ed16cd6",
+  "title": "RFI 140D0426Q0271 CISCO SOFTWARE AND HARDWARE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f222a7af7ee64eda8424ef074ed16cd6",
+  "opportunity_url": "https://sam.gov/opp/f222a7af7ee64eda8424ef074ed16cd6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f222a7af7ee64eda8424ef074ed16cd6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f222a7af7ee64eda8424ef074ed16cd6",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140D0426Q0271",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Solicitation notice type: Solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f222a7af7ee64eda8424ef074ed16cd6",
+  "detail_text": "This Request for Information (RFI)/Sources Sought (SS) notice is issued solely for information and planning purposes - it does not constitute an invitation for bid, request for quotation, request for proposal, or an obligation on behalf of the Government or a promise to issue a solicitation in the future. The Government is not seeking proposals and will not accept unsolicited proposals at this time. Vendors responding to this notice are advised that the U.S. Government will not pay for any information or administrative costs incurred in response to this Sources Sought notice; all costs associated with responding to this notice will be solely at the interested party's expense. Responses will not be evaluated for award, and not responding to this notice does not preclude participation in any future solicitation, if issued. Interested parties are responsible for CLEARLY MARKING proprietary or competition sensitive information contained in their response. No classified, confidential, or sensitive information should be included in your response. Please be advised that all submissions become Government property and will not be returned. Marketing brochures and/or generic company literature will not be considered and shall not be sent in response to this notice.",
+  "detail_text_length": 1275,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27cb3636e2f14addb6b58362523e1c50/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3283efd2e760499495f4e4dd9b635fe5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9cd09e78654a49c0b2402331a9ef3fbb/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27cb3636e2f14addb6b58362523e1c50/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93b83907fa8dc2436bfa2dee93e77b8ebfe6d5c928f17771c7eee077e352d610.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93b83907fa8dc2436bfa2dee93e77b8ebfe6d5c928f17771c7eee077e352d610.xlsx",
+      "file_id": "27cb3636e2f14addb6b58362523e1c50",
+      "file_name": "A14_MR_140D0426Q0271_Attachment_1_-_CISCO_Required_Product_List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142732,
+      "sha256": "93b83907fa8dc2436bfa2dee93e77b8ebfe6d5c928f17771c7eee077e352d610"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3283efd2e760499495f4e4dd9b635fe5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/305fe19595feae6901dde7666f3a41e23e28eeb9210ad89d7969dfe717437b35.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/305fe19595feae6901dde7666f3a41e23e28eeb9210ad89d7969dfe717437b35.pdf",
+      "file_id": "3283efd2e760499495f4e4dd9b635fe5",
+      "file_name": "A14_MR_RFI_140D0426Q0271_-_DOI_Cisco_Hardware__Software__Installation_Services_3_26_26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 663056,
+      "sha256": "305fe19595feae6901dde7666f3a41e23e28eeb9210ad89d7969dfe717437b35"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9cd09e78654a49c0b2402331a9ef3fbb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/49fb83dcb2d0b0865dc8690110f2ebbef0681690b44b2a49c5fe36efb4783b01.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/49fb83dcb2d0b0865dc8690110f2ebbef0681690b44b2a49c5fe36efb4783b01.pdf",
+      "file_id": "9cd09e78654a49c0b2402331a9ef3fbb",
+      "file_name": "A14_MR_140D0426Q0271_Attachment_2_-_DOI_IT_Baseline_Compliance_Contract_Guidelines.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1066617,
+      "sha256": "49fb83dcb2d0b0865dc8690110f2ebbef0681690b44b2a49c5fe36efb4783b01"
+    }
+  ],
+  "_mirror_hash": "9e813bbdd35a34ad6d4b2e30bbb5dd808a9ed09fd4946748b95a1705a3856e30",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.235560+00:00"
+}

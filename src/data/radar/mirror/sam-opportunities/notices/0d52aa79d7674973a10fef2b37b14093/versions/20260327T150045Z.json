@@ -1,0 +1,57 @@
+{
+  "id": "sam-0d52aa79d7674973a10fef2b37b14093",
+  "title": "Axle Assembly, Automotive, Driving",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0d52aa79d7674973a10fef2b37b14093",
+  "opportunity_url": "https://sam.gov/opp/0d52aa79d7674973a10fef2b37b14093/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0d52aa79d7674973a10fef2b37b14093/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0d52aa79d7674973a10fef2b37b14093",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "SPRDL1-25-Q-0180",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0d52aa79d7674973a10fef2b37b14093",
+  "detail_text": "The purpose of this amendment 0002 to solicitation SPRDL1-25-Q-0180 is to reopen and extend the deadline for submission of offers and add clauses/narratives regulation. 1. Solicitation SPRDL1-25-Q-0180 is hereby reopened. The deadline for submission of offers to solicitation SPRDL1-25-Q-0180 is hereby extended from March 27, 2025, at 3:00 pm local time (Warren, MI) to April 09, 2026, at 3:00 pm local time (Warren, MI). 2.Per regulation the following has been added to the solicitation via amendment: DFARS 252.240-7997 NIST SP 800-171 DoD Assessment Requirements, local TACOM narrative AS7400 Army Contract Writing System (ACWS) Transition Information for Offerors and local TACOM narrative AS7401 Army Contract Writing System (ACWS) Transition Information for Contractors. The full text is below. 3. All other terms and conditions of solicitation SPRDL1-25-Q-0180 remain in full force and effect.",
+  "detail_text_length": 901,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/461bc0959e9145f096272202687cc27c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c988d108183d4a9ea69a82fb50ebbfc3/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/461bc0959e9145f096272202687cc27c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a9febea2243b851bcae323c42d4098116aa8617846696d50d2f5167aed3117a3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a9febea2243b851bcae323c42d4098116aa8617846696d50d2f5167aed3117a3.pdf",
+      "file_id": "461bc0959e9145f096272202687cc27c",
+      "file_name": "SPRDL1-25-Q-0180+Conformed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 164392,
+      "sha256": "a9febea2243b851bcae323c42d4098116aa8617846696d50d2f5167aed3117a3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c988d108183d4a9ea69a82fb50ebbfc3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6d07452b5827c1be96cf9c2fdd59708ab49ada2c2fa561eb7f6523e9a7f572a9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6d07452b5827c1be96cf9c2fdd59708ab49ada2c2fa561eb7f6523e9a7f572a9.pdf",
+      "file_id": "c988d108183d4a9ea69a82fb50ebbfc3",
+      "file_name": "SPRDL125Q0180-0002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22048,
+      "sha256": "6d07452b5827c1be96cf9c2fdd59708ab49ada2c2fa561eb7f6523e9a7f572a9"
+    }
+  ],
+  "_mirror_hash": "c00a97bf259dda41294405666b57a5359d5c969f355c73d8358d8691c351367e",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.369399+00:00"
+}

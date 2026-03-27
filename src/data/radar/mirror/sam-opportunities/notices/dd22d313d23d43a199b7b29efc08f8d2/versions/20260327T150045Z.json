@@ -1,0 +1,59 @@
+{
+  "id": "sam-dd22d313d23d43a199b7b29efc08f8d2",
+  "title": "Facility Support Services - Request For Information (RFI)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd22d313d23d43a199b7b29efc08f8d2",
+  "opportunity_url": "https://sam.gov/opp/dd22d313d23d43a199b7b29efc08f8d2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dd22d313d23d43a199b7b29efc08f8d2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dd22d313d23d43a199b7b29efc08f8d2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA9101FSSIII",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd22d313d23d43a199b7b29efc08f8d2",
+  "detail_text": "THIS ANNOUNCEMENT IS NOT A NOTICE OF SOLICITATION ISSUANCE. THIS IS A REQUEST FOR INFORMATION (RFI) FOR PLANNING PURPOSES ONLY. This RFI is issued for the purpose of developing a viable solicitation that will best communicate the Government’s requirements to industry. All information contained in this RFI is preliminary and subject to change. Response to this RFI is strictly voluntary and will not affect any firm’s ability to submit an offer if, or when, a solicitation is released. The requested information is for planning purposes only and does NOT constitute a commitment, implied or otherwise, that a procurement action will be issued. All information received that is marked as proprietary will be handled as such. No entitlement to payment by the Government of direct or indirect costs or charges will arise as a result of the submission of information in response to this RFI. The Government shall not be liable for or suffer any consequential damages for any improperly identified proprietary information. Proprietary information will be safeguarded in accordance with the applicable Government regulations. Formal notices will be posted on the System for Award Management website, http://sam.gov.",
+  "detail_text_length": 1210,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bfca2fc4708a42db8377c620734df3e9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e44680922b684665bac6bb9d81c9f293/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bfca2fc4708a42db8377c620734df3e9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b2208c34df043f4a652be5d64beefc411848b5922ac5d6c418e30218717674c3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b2208c34df043f4a652be5d64beefc411848b5922ac5d6c418e30218717674c3.pdf",
+      "file_id": "bfca2fc4708a42db8377c620734df3e9",
+      "file_name": "FSS+II+PWS+dtd+10+Sep+25.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 5579068,
+      "sha256": "b2208c34df043f4a652be5d64beefc411848b5922ac5d6c418e30218717674c3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e44680922b684665bac6bb9d81c9f293/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/813b3ed8af4152748431fd8e4e7537d31e25d8073c370618e82c899cf501672d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/813b3ed8af4152748431fd8e4e7537d31e25d8073c370618e82c899cf501672d.pdf",
+      "file_id": "e44680922b684665bac6bb9d81c9f293",
+      "file_name": "FSS+III+RFI+-+Final+12+Mar+26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 785229,
+      "sha256": "813b3ed8af4152748431fd8e4e7537d31e25d8073c370618e82c899cf501672d"
+    }
+  ],
+  "_mirror_hash": "4fe70ca4f423fde9e03962a22db9766f39a9311c67c242f167aed440116da724",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.156478+00:00"
+}

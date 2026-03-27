@@ -1,0 +1,45 @@
+{
+  "id": "sam-facf7a0bfdd643a286ede35c88823f5e",
+  "title": "BUMPER EXTENSTION",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=facf7a0bfdd643a286ede35c88823f5e",
+  "opportunity_url": "https://sam.gov/opp/facf7a0bfdd643a286ede35c88823f5e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/facf7a0bfdd643a286ede35c88823f5e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "facf7a0bfdd643a286ede35c88823f5e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0022",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=facf7a0bfdd643a286ede35c88823f5e",
+  "detail_text": "Please see attached solicitation posted on BUMPER EXTENTION. See attached solicitation for complete requirement.",
+  "detail_text_length": 112,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b02036acbd9c49f291f096cad14bcb09/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b02036acbd9c49f291f096cad14bcb09/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa6af29eb3942ed9d278ccba8f5248b5ed41e75f3199270bcb2b6df86ceaaa20.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa6af29eb3942ed9d278ccba8f5248b5ed41e75f3199270bcb2b6df86ceaaa20.pdf",
+      "file_id": "b02036acbd9c49f291f096cad14bcb09",
+      "file_name": "Solicitation+-+N0040626Q0022.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1851645,
+      "sha256": "fa6af29eb3942ed9d278ccba8f5248b5ed41e75f3199270bcb2b6df86ceaaa20"
+    }
+  ],
+  "_mirror_hash": "b97863cdce46f78418d08f7af5d548ea99501bc09ad10f9cc5e19730aabc9d1f",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.184191+00:00"
+}

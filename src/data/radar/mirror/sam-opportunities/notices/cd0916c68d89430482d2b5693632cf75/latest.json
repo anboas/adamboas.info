@@ -1,0 +1,57 @@
+{
+  "id": "sam-cd0916c68d89430482d2b5693632cf75",
+  "title": "Training and Development Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd0916c68d89430482d2b5693632cf75",
+  "opportunity_url": "https://sam.gov/opp/cd0916c68d89430482d2b5693632cf75/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cd0916c68d89430482d2b5693632cf75/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cd0916c68d89430482d2b5693632cf75",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M67854-26-I-0506",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd0916c68d89430482d2b5693632cf75",
+  "detail_text": "Marine Corps Systems Command (MARCORSYSCOM), Human Capital Management (HCM) has a requirement for training and development services in four key areas: (1) Department of War (DoW) acquisition-related training, (2) safety and health training, (3) leadership development, and (4) general technology. Please see attachments for additional details.",
+  "detail_text_length": 343,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c72c6719aa604730a699fce49b316ed3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce3e1222e6e4426486bf7ec6481f6c31/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c72c6719aa604730a699fce49b316ed3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd634d25ffc9aa50bb4455628df798ae2cadbac4335e186a3fdb6dbff8958bf3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd634d25ffc9aa50bb4455628df798ae2cadbac4335e186a3fdb6dbff8958bf3.pdf",
+      "file_id": "c72c6719aa604730a699fce49b316ed3",
+      "file_name": "MCSC+Training+RFI+-+Enclosure+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 235363,
+      "sha256": "cd634d25ffc9aa50bb4455628df798ae2cadbac4335e186a3fdb6dbff8958bf3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce3e1222e6e4426486bf7ec6481f6c31/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0fff7dd9640a030cf232a3c79740eca61b9dcf3a1d5c64e335b55929042c23f9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0fff7dd9640a030cf232a3c79740eca61b9dcf3a1d5c64e335b55929042c23f9.pdf",
+      "file_id": "ce3e1222e6e4426486bf7ec6481f6c31",
+      "file_name": "MCSC+Training+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 253316,
+      "sha256": "0fff7dd9640a030cf232a3c79740eca61b9dcf3a1d5c64e335b55929042c23f9"
+    }
+  ],
+  "_mirror_hash": "37b45fd5ad14045896452e0f1dd9b02a56cca335764597c3df6751a6c91145e7",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.381664+00:00"
+}

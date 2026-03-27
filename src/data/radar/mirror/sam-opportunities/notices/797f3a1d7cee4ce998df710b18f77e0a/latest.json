@@ -1,0 +1,69 @@
+{
+  "id": "sam-797f3a1d7cee4ce998df710b18f77e0a",
+  "title": "USSC CCTVs Sources Sought",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=797f3a1d7cee4ce998df710b18f77e0a",
+  "opportunity_url": "https://sam.gov/opp/797f3a1d7cee4ce998df710b18f77e0a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/797f3a1d7cee4ce998df710b18f77e0a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "797f3a1d7cee4ce998df710b18f77e0a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SSUSSCCCTVsFY26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=797f3a1d7cee4ce998df710b18f77e0a",
+  "detail_text": "The Peterson Space Force Base (PSFB) 21st Contracting Squadron is requesting information from vendors that provide CCTVs. This sources sought is issued for the purpose of market research in accordance with FAR Part 10. Please see the attachments for information pertaining to this Sources Sought.",
+  "detail_text_length": 296,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/03bfa8f3c9e2454db46b3519fb4a1947/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cde970e1b8343f498d93ec3ac78f389/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf6dd997460b48f8b6bf7ca183725ea3/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/03bfa8f3c9e2454db46b3519fb4a1947/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4df6b99b8a630138689f1ed75406a9b8a98bbd6e9b148e542df86b4d770a1d99.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4df6b99b8a630138689f1ed75406a9b8a98bbd6e9b148e542df86b4d770a1d99.docx",
+      "file_id": "03bfa8f3c9e2454db46b3519fb4a1947",
+      "file_name": "USSC+CCTVs+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58738,
+      "sha256": "4df6b99b8a630138689f1ed75406a9b8a98bbd6e9b148e542df86b4d770a1d99"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cde970e1b8343f498d93ec3ac78f389/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c96df768d358f78a37aef869081e4eee70e446288c3a2de51f38e5e283ad448b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c96df768d358f78a37aef869081e4eee70e446288c3a2de51f38e5e283ad448b.docx",
+      "file_id": "3cde970e1b8343f498d93ec3ac78f389",
+      "file_name": "Attachment+1+-+CCTVs+Salient+Characteristics.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15190,
+      "sha256": "c96df768d358f78a37aef869081e4eee70e446288c3a2de51f38e5e283ad448b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf6dd997460b48f8b6bf7ca183725ea3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8ce2e93c0b98312a3df3b47c0ef7dc94f8f07b31e64a5bdcfd9843608ddf742a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8ce2e93c0b98312a3df3b47c0ef7dc94f8f07b31e64a5bdcfd9843608ddf742a.docx",
+      "file_id": "cf6dd997460b48f8b6bf7ca183725ea3",
+      "file_name": "RFI+1+-+SSUSSCCCTVsFY26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15581,
+      "sha256": "8ce2e93c0b98312a3df3b47c0ef7dc94f8f07b31e64a5bdcfd9843608ddf742a"
+    }
+  ],
+  "_mirror_hash": "e658e6189c870ab029d09be88dd334fdc388ca4418451b1e3db8302039dba43b",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.134165+00:00"
+}

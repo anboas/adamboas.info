@@ -1,0 +1,57 @@
+{
+  "id": "sam-a6f906846b964547894699d756afb9ee",
+  "title": "R425--Stationary Engineer Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6f906846b964547894699d756afb9ee",
+  "opportunity_url": "https://sam.gov/opp/a6f906846b964547894699d756afb9ee/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a6f906846b964547894699d756afb9ee/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a6f906846b964547894699d756afb9ee",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C25226R0008",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.252-NETWORK CONTRACT OFFICE 12 (36C252)",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2025-11-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6f906846b964547894699d756afb9ee",
+  "detail_text": "The Department of Veterans Affairs, Great Lakes Acquisition Center (GLAC) intends to issue Solicitation 36C25226R0008 for six (6) qualified stationary engineers/operators to maintain the industrial level high-pressure boiler and chiller plants as well as building facility operations for Edward Hines, Jr. VA Hospital campus in Hines, IL (see campus map attachment). The boiler plant houses four (4) Cleaver Brooks 35,000 lb/hr water tube boilers with a normal header pressure of 125psi. The main hospital chiller plant includes three (3) 1,200-ton Carrier Chillers which include an exceptionally diverse array of other facility equipment that supports the hospital. Coverage to include various rotating shifts including days, evenings, and nights as well as weekdays and weekends (to include Holidays). It is anticipated that the RFP will be issued on or around November 13, 2025. The Government intends to award a 5-year firm-fixed-price contract. The North American Industry Classification System (NAICS) code for this procurement is 561210.",
+  "detail_text_length": 1044,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c5aad8c528e47efae492e80e5659a26/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/998b584d497b45a0ba0e5681cfee55b5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c5aad8c528e47efae492e80e5659a26/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d736145ae50c06bac39d4f608f3c4a5b4f15cf5fffe0f1b05866e86c8f31cd84.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d736145ae50c06bac39d4f608f3c4a5b4f15cf5fffe0f1b05866e86c8f31cd84.pdf",
+      "file_id": "2c5aad8c528e47efae492e80e5659a26",
+      "file_name": "Attachment+1+Hines+VA+Campus+Site+Plan.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 824212,
+      "sha256": "d736145ae50c06bac39d4f608f3c4a5b4f15cf5fffe0f1b05866e86c8f31cd84"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/998b584d497b45a0ba0e5681cfee55b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/705756752ab80374b970c1f1eed0b97cfe7e73e010761805905b7a1256d60fd4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/705756752ab80374b970c1f1eed0b97cfe7e73e010761805905b7a1256d60fd4.docx",
+      "file_id": "998b584d497b45a0ba0e5681cfee55b5",
+      "file_name": "36C25226R0008_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23678,
+      "sha256": "705756752ab80374b970c1f1eed0b97cfe7e73e010761805905b7a1256d60fd4"
+    }
+  ],
+  "_mirror_hash": "0e53947bb1e0ec3d66f44547972700bac91d6de30d4e0271793145a77e86355e",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.236998+00:00"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "sam-1f8e29dfc8314a9c8cd920c6a901834b",
+  "title": "Repair ADM Baker Pool Complex",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f8e29dfc8314a9c8cd920c6a901834b",
+  "opportunity_url": "https://sam.gov/opp/1f8e29dfc8314a9c8cd920c6a901834b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1f8e29dfc8314a9c8cd920c6a901834b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1f8e29dfc8314a9c8cd920c6a901834b",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "NAVMWR-26-R-0029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP OTHER HCA.CNIC.COMMANDER NAVY INSTALLATIONS CMD",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f8e29dfc8314a9c8cd920c6a901834b",
+  "detail_text": "The Navy is renovating the ADM Baker Pool Complex to meet high demand and ensure safety. This project includes upgrading the main pool, converting a wading pool into a splash pad, and renovating the snack bar and locker room",
+  "detail_text_length": 224,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/443d054bda1e4d79926f8bdfd2735c7f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d82ece910e84a7198edeec5dff4fc34/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b095b19938fb4f8dbe2eb9abc075b5f6/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/443d054bda1e4d79926f8bdfd2735c7f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7d6650a468df1864d90c9604cffb7b93bf05d3540df51a101229106218025281.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7d6650a468df1864d90c9604cffb7b93bf05d3540df51a101229106218025281.pdf",
+      "file_id": "443d054bda1e4d79926f8bdfd2735c7f",
+      "file_name": "NAVMWR-26-R-0029+Amendment+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 206716,
+      "sha256": "7d6650a468df1864d90c9604cffb7b93bf05d3540df51a101229106218025281"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d82ece910e84a7198edeec5dff4fc34/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/47d9bcf81398af6cb92075dd69ebe63c3d0518d15159888d849e454ee57da733.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/47d9bcf81398af6cb92075dd69ebe63c3d0518d15159888d849e454ee57da733.pdf",
+      "file_id": "4d82ece910e84a7198edeec5dff4fc34",
+      "file_name": "NAVMWR-26-R-0029.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 102750261,
+      "sha256": "47d9bcf81398af6cb92075dd69ebe63c3d0518d15159888d849e454ee57da733"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b095b19938fb4f8dbe2eb9abc075b5f6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a10a84f4f4c90398bcec15dd9c1070e3d79ef1dbd88bd127f43ea336d85d649d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a10a84f4f4c90398bcec15dd9c1070e3d79ef1dbd88bd127f43ea336d85d649d.pdf",
+      "file_id": "b095b19938fb4f8dbe2eb9abc075b5f6",
+      "file_name": "NAVMWR-26-R-0029+Amendment+0002+Pre-Proposal+Meeting.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 495536,
+      "sha256": "a10a84f4f4c90398bcec15dd9c1070e3d79ef1dbd88bd127f43ea336d85d649d"
+    }
+  ],
+  "_mirror_hash": "89ad774adb98d83a1e4a15fc8cab70ae7bf6e0deb24d5c5a68bbfd39720a8a03",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.188698+00:00"
+}

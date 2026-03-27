@@ -1,0 +1,48 @@
+{
+  "id": "sam-22043c657b614e58bf31a96a668f6d6a",
+  "title": "B--RFI/Sources Sought - Economic Analysis USGS EMRI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=22043c657b614e58bf31a96a668f6d6a",
+  "opportunity_url": "https://sam.gov/opp/22043c657b614e58bf31a96a668f6d6a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/22043c657b614e58bf31a96a668f6d6a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "22043c657b614e58bf31a96a668f6d6a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "140G0126Q0082",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFC OF ACQUSITION  GRANTS-NATIONAL",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=22043c657b614e58bf31a96a668f6d6a",
+  "detail_text": "RFI/Sources Sought. Responses will assist the USGS in understanding available analytical approaches and organizational capabilities relevant to conducting an economic analysis of the USGS Earth Mapping Resources Initiative (Earth MRI) within the Geology, Energy, and Minerals Mission Area (GEMMA). REFERENCE ATTACHMENT FOR DETAILS AND INSTRUCTIONS.",
+  "detail_text_length": 348,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a07878a7aff449319682331e71fb12f4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a07878a7aff449319682331e71fb12f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8217ce65cb9d314828192a3430b7a560e2021130169acf6ff2db9039414154c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8217ce65cb9d314828192a3430b7a560e2021130169acf6ff2db9039414154c.pdf",
+      "file_id": "a07878a7aff449319682331e71fb12f4",
+      "file_name": "140G0126Q0082_RFI_Text_-_USGS_Earth_MRI_-_Economic_Valuation_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 289280,
+      "sha256": "a8217ce65cb9d314828192a3430b7a560e2021130169acf6ff2db9039414154c"
+    }
+  ],
+  "_mirror_hash": "9855a13219252592f2e414e315935164565f40db8df0025480a56a4940e926f3",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.186663+00:00"
+}

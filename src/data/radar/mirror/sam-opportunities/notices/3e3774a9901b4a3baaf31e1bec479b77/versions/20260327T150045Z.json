@@ -1,0 +1,57 @@
+{
+  "id": "sam-3e3774a9901b4a3baaf31e1bec479b77",
+  "title": "NGA Police Boots",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e3774a9901b4a3baaf31e1bec479b77",
+  "opportunity_url": "https://sam.gov/opp/3e3774a9901b4a3baaf31e1bec479b77/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3e3774a9901b4a3baaf31e1bec479b77/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3e3774a9901b4a3baaf31e1bec479b77",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "Sources03262026",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).NATL GEOSPATIAL-INTELLIGENCE AGENCY",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e3774a9901b4a3baaf31e1bec479b77",
+  "detail_text": "Please see attached Request for Information and Statement of Need.",
+  "detail_text_length": 66,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a4e7c7338a84d94a28ae2d2be5b1d88/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0f8c55ba26747f7b04c4cb315e12a6e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a4e7c7338a84d94a28ae2d2be5b1d88/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f6aa56dbf2a8035f571b199da64151c81d5f3406dc2dd8ef053fa5ee04c1316a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f6aa56dbf2a8035f571b199da64151c81d5f3406dc2dd8ef053fa5ee04c1316a.pdf",
+      "file_id": "0a4e7c7338a84d94a28ae2d2be5b1d88",
+      "file_name": "Draft+Boot+Statement+of+Need.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 103070,
+      "sha256": "f6aa56dbf2a8035f571b199da64151c81d5f3406dc2dd8ef053fa5ee04c1316a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0f8c55ba26747f7b04c4cb315e12a6e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fb6bd0da251836aa5e838f2d8f7f914852477977ed40b02a05320ab95d32c6aa.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fb6bd0da251836aa5e838f2d8f7f914852477977ed40b02a05320ab95d32c6aa.pdf",
+      "file_id": "c0f8c55ba26747f7b04c4cb315e12a6e",
+      "file_name": "Boots+RFI_Template_v1.0.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 309121,
+      "sha256": "fb6bd0da251836aa5e838f2d8f7f914852477977ed40b02a05320ab95d32c6aa"
+    }
+  ],
+  "_mirror_hash": "8864a73a05b4bf9d89e13b49ea42c27f516307d4ebf2b17bfe63b95cfcf15405",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.440637+00:00"
+}

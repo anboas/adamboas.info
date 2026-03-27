@@ -1,0 +1,57 @@
+{
+  "id": "sam-e25055472b544e02baef9d861129c478",
+  "title": "NGA Police Modernization",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e25055472b544e02baef9d861129c478",
+  "opportunity_url": "https://sam.gov/opp/e25055472b544e02baef9d861129c478/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e25055472b544e02baef9d861129c478/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e25055472b544e02baef9d861129c478",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI03262026",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).NATL GEOSPATIAL-INTELLIGENCE AGENCY",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e25055472b544e02baef9d861129c478",
+  "detail_text": "Please see attached Request for Information (RFI) and Statement of Objectives.",
+  "detail_text_length": 78,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/489b50d8cdc14211a586c3e7f4223355/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5b366c1bf4d49c4b8063fc595d8f12f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/489b50d8cdc14211a586c3e7f4223355/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9dfd71f46447233885dc80616f2bdb851d4dc9aeec3379d69286a7c7f7cdb1d1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9dfd71f46447233885dc80616f2bdb851d4dc9aeec3379d69286a7c7f7cdb1d1.pdf",
+      "file_id": "489b50d8cdc14211a586c3e7f4223355",
+      "file_name": "Police+Modernization+-Statement+of+Objectives.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 468961,
+      "sha256": "9dfd71f46447233885dc80616f2bdb851d4dc9aeec3379d69286a7c7f7cdb1d1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5b366c1bf4d49c4b8063fc595d8f12f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ce3698320573e252ae0cdaa96be1f7aca40ed75d949978a9405567c7afdf0b2c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ce3698320573e252ae0cdaa96be1f7aca40ed75d949978a9405567c7afdf0b2c.pdf",
+      "file_id": "b5b366c1bf4d49c4b8063fc595d8f12f",
+      "file_name": "RFI+Police+Modernization.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 354560,
+      "sha256": "ce3698320573e252ae0cdaa96be1f7aca40ed75d949978a9405567c7afdf0b2c"
+    }
+  ],
+  "_mirror_hash": "17524c6b52c5b58a88dbe43aa2abb5bd3c101eabe655d706c7f4b845e671226c",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.441114+00:00"
+}

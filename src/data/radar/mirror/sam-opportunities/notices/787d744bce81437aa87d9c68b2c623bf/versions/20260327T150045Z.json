@@ -1,0 +1,57 @@
+{
+  "id": "sam-787d744bce81437aa87d9c68b2c623bf",
+  "title": "Advanced Medical Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=787d744bce81437aa87d9c68b2c623bf",
+  "opportunity_url": "https://sam.gov/opp/787d744bce81437aa87d9c68b2c623bf/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/787d744bce81437aa87d9c68b2c623bf/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "787d744bce81437aa87d9c68b2c623bf",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.DIRECTOR OF CONTRACTING",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=787d744bce81437aa87d9c68b2c623bf",
+  "detail_text": "Marine Force Reserves requires specialized medial training in support of 3d Reconnaissance Force for prolonged field care capability development. Please see the Performance Work Statement for requirements and refer to the Intent to Award Sole Source Contract for justification of the sole source award. Please have all responses submitted no later than 1200 CST 30 March 2026.",
+  "detail_text_length": 376,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ba6e8f417374e5c8d6b0219af00ce91/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/981e67728a2f42d7adf662e065a8c790/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ba6e8f417374e5c8d6b0219af00ce91/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0e9bf52ebea90b190b25027447a1b981eae522d1da132b1cb8cb9bf1471f3f72.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0e9bf52ebea90b190b25027447a1b981eae522d1da132b1cb8cb9bf1471f3f72.pdf",
+      "file_id": "2ba6e8f417374e5c8d6b0219af00ce91",
+      "file_name": "Notice+of+Intent+to+Award+Sole+Source.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 217280,
+      "sha256": "0e9bf52ebea90b190b25027447a1b981eae522d1da132b1cb8cb9bf1471f3f72"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/981e67728a2f42d7adf662e065a8c790/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/721528d0fa9efa49f464bab6b05c27d31324cb4fa8a23e6bb1e623d4bb54d13c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/721528d0fa9efa49f464bab6b05c27d31324cb4fa8a23e6bb1e623d4bb54d13c.pdf",
+      "file_id": "981e67728a2f42d7adf662e065a8c790",
+      "file_name": "Performance+Work+Statement_AMT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 229988,
+      "sha256": "721528d0fa9efa49f464bab6b05c27d31324cb4fa8a23e6bb1e623d4bb54d13c"
+    }
+  ],
+  "_mirror_hash": "07b7f3cc0c416a9ff6b022434b64f0a1c11929c47e06e0d483cf6e8ff4d1ec4e",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.257764+00:00"
+}

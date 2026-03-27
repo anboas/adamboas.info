@@ -1,0 +1,57 @@
+{
+  "id": "sam-ccfa22278bdd4f42a3197e4e0541ec49",
+  "title": "Spectro Cloud Palette VerteX Software License",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ccfa22278bdd4f42a3197e4e0541ec49",
+  "opportunity_url": "https://sam.gov/opp/ccfa22278bdd4f42a3197e4e0541ec49/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ccfa22278bdd4f42a3197e4e0541ec49/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ccfa22278bdd4f42a3197e4e0541ec49",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PaletteVertex_2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8126  AFSC PZIMB",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ccfa22278bdd4f42a3197e4e0541ec49",
+  "detail_text": "***PLEASE NOTE UPDATED EQUIPMENT LIST*** This market survey and request for information is being conducted to identify potential sources for the acquisition of Spectro Cloud Palette VerteX software licenses.",
+  "detail_text_length": 207,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/832511c9517844639b484a964815299f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5cc217774c3411b9befdf1bdea2797a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/832511c9517844639b484a964815299f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ef28b0f6678e0e44b74674678bf9dc09139582f9dfc82e34a86f6f0a6c6fda2a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ef28b0f6678e0e44b74674678bf9dc09139582f9dfc82e34a86f6f0a6c6fda2a.xlsx",
+      "file_id": "832511c9517844639b484a964815299f",
+      "file_name": "Equipment+List_updated.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27384,
+      "sha256": "ef28b0f6678e0e44b74674678bf9dc09139582f9dfc82e34a86f6f0a6c6fda2a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5cc217774c3411b9befdf1bdea2797a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/62b1dc743f097bdaab460a04303b27191bf9fc5b4a48bb0cc0d3d1387483337e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/62b1dc743f097bdaab460a04303b27191bf9fc5b4a48bb0cc0d3d1387483337e.pdf",
+      "file_id": "a5cc217774c3411b9befdf1bdea2797a",
+      "file_name": "Sources+Sought_Palette+VerteX.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 343618,
+      "sha256": "62b1dc743f097bdaab460a04303b27191bf9fc5b4a48bb0cc0d3d1387483337e"
+    }
+  ],
+  "_mirror_hash": "b05d4bb4441916e0ea260fc9b1637a872a8943878801f4a1aaf73da0a2ea5bf2",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.296296+00:00"
+}

@@ -1,23 +1,23 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-26T13:46:51.633282+00:00
+Generated: 2026-03-27T15:06:32.887068+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/26/2026
+Posted range: 01/01/2026 -> 03/27/2026
 
 ## Counts
-- Total candidates: 16
+- Total candidates: 19
 - Navy-related: 0
-- Full detail cached: 16
-- Notices with attachments: 10
-- Total attachment links: 12
-- Pre-solicitation: 3
-- Sources Sought: 7
+- Full detail cached: 19
+- Notices with attachments: 12
+- Total attachment links: 14
+- Pre-solicitation: 4
+- Sources Sought: 9
 - Special Notice: 6
 
 ## Engagement signals
-- Pre-solicitation: 3
-- Sources Sought: 7
+- Pre-solicitation: 4
+- Sources Sought: 9
 - Special Notice: 6
 
 ## Top candidates
@@ -36,9 +36,12 @@ Posted range: 01/01/2026 -> 03/26/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-30 | DEPT OF DEFENSE | [Parachute Training Support Services](https://sam.gov/opp/4fc6bf6364b144e3b462013d3e45cb3b/view) |
 | 2 | Special Notice | Special Notice | 2026-03-19 | 2026-03-30 | DEPT OF DEFENSE | [Intent to Sole Source to DODESI](https://sam.gov/opp/433586a058bb439c8a367329138b1fd7/view) |
 | 2 | Special Notice | Special Notice | 2026-03-20 | 2026-03-30 | DEPT OF DEFENSE | [150-pound Amerex Wheeled Fire Extinguishers Testing and Maintenance](https://sam.gov/opp/0e5724564510433498e6526d2e192f27/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-03-30 | DEPT OF DEFENSE | [Gym Equipment Preventative Maintenance](https://sam.gov/opp/0dc29cebd5dc49f796ac81e8a238efe5/view) |
 | 2 | Special Notice | Special Notice | 2026-03-17 | 2026-03-31 | DEPT OF DEFENSE | [Notice of Intent -Logistical Support Services](https://sam.gov/opp/dcd7938dd66f4008b482894bde25e836/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-25 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/c97180bf1656451ea14cd6ad7e81b378/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-01 | DEPT OF DEFENSE | [Custom Fitted Musical Instrument Cases](https://sam.gov/opp/8adbaeeffc864a17948349e59d4d3106/view) |
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-09 | DEPT OF DEFENSE | [MCAS Beaufort Washer and Dryer Contract](https://sam.gov/opp/bdb18416a4a3453e917005faaf3c5b34/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-04-10 | DEPT OF DEFENSE | [Personally Owned Vehicle (POV ) Storage](https://sam.gov/opp/16a613f6cacc4c688b36d7f43426a6ec/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

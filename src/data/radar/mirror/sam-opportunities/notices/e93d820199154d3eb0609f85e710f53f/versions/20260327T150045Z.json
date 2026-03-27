@@ -1,0 +1,57 @@
+{
+  "id": "sam-e93d820199154d3eb0609f85e710f53f",
+  "title": "Notice of Intent to Award a Sole Source Purchase Order to Huntron Inc. in accordance with RFO FAR 6.103-1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e93d820199154d3eb0609f85e710f53f",
+  "opportunity_url": "https://sam.gov/opp/e93d820199154d3eb0609f85e710f53f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e93d820199154d3eb0609f85e710f53f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e93d820199154d3eb0609f85e710f53f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W50S8526PA006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO MI.USPFO MI PROCUREMENT.W7NF USPFO ACTIVITY MIANG 127",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e93d820199154d3eb0609f85e710f53f",
+  "detail_text": "The Huntron Access DH2 is a robotic \"flying probe\" system designed for automated testing and diagnostics of printed circuit boards and electronic assemblies. This equipment is essential for the Air Force Repair Enhancement Program (AFREP) mission, which involves component-level troubleshooting and repair of mission-critical assets. The probing station allows trained technicians to quickly and reliably diagnose failures on complex Circuit Card Assemblies (CCAs), enabling local repair, saving procurement and depot-level repair costs, and improving mission readiness. The government's minimum requirements can only be met by the Huntron Access DH2 for the following reasons pertaining to standardization, interoperability, and the avoidance of substantial duplication of costs that would not be recovered through competition: Incompatibility with Existing, Government-Owned Test Program Sets (TPS): The requiring activity currently possesses a substantial library of government-funded and validated Test Program Sets developed specifically for the Huntron hardware and software architecture. These TPS \"files\" are the core of the diagnostic and repair capability for numerous mission-essential CCAs. A competing manufacturer's probing station would be incompatible with this entire library. The acquisition of any other system would render this significant government investment obsolete and require an expensive and extensive effort to recreate, validate, and certify new TPS for every CCA currently supported. This would result in unacceptable delays and substantial, unrecoverable costs. Standardization with Existing Mission-Critical Infrastructure: The AFREP and other military repair depots have been standardized on Huntron test equipment since 1986. The tools, repair procedures, and—most importantly—the governing Technical Orders (TOs) for CCA repair are predicated on the use of Huntron systems. Procuring a different system would introduce a non-standard piece of equipment, creating logistical and training burdens and potentially conflicting with the mandated repair procedures within the technical data. Specialized and Non-Transferable Technician Training: Most AFREP technicians have undergone extensive, specialized training on the operation and programming of Huntron equipment, including the \"Huntron User Development course.\" The skillset required to operate this system is not directly transferable to competing systems. Huntron offers this training when purchasing this equipment at the contractors expense. Acquiring another manufacturer's prober would necessitate a complete retraining of all personnel, incurring significant costs and a loss of operational readiness while technicians are brought up to speed on a new, non-standard system. In summary, only the Huntron Access DH2 can integrate with the government's existing investment in test programs, technical procedures, and personnel expertise without causing mission disruption and incurring substantial duplicative costs.",
+  "detail_text_length": 3008,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3566ccabe80d4bba88c83264e7c06a53/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6524e6f479f4ca5a5ca03f966ae5f78/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3566ccabe80d4bba88c83264e7c06a53/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93638859b108eebbd5b84938cf4499b67cae5da04c7ede587a46ea964bc1cfad.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93638859b108eebbd5b84938cf4499b67cae5da04c7ede587a46ea964bc1cfad.pdf",
+      "file_id": "3566ccabe80d4bba88c83264e7c06a53",
+      "file_name": "Limited+Competition+Justification-Huntron+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 683654,
+      "sha256": "93638859b108eebbd5b84938cf4499b67cae5da04c7ede587a46ea964bc1cfad"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6524e6f479f4ca5a5ca03f966ae5f78/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bb23a2993cce44ee9f46aaacbb8a59097fd6af329b75a9e9c031d22a967ce6ea.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bb23a2993cce44ee9f46aaacbb8a59097fd6af329b75a9e9c031d22a967ce6ea.pdf",
+      "file_id": "a6524e6f479f4ca5a5ca03f966ae5f78",
+      "file_name": "MFR+Sources+Sought+Results.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142123,
+      "sha256": "bb23a2993cce44ee9f46aaacbb8a59097fd6af329b75a9e9c031d22a967ce6ea"
+    }
+  ],
+  "_mirror_hash": "7891016224ff4bf9b9d466dc9aef27302ae840d88e1f92253769b34edff7b56c",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.325653+00:00"
+}

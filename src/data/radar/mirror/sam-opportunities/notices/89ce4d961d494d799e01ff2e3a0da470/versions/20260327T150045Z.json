@@ -1,0 +1,46 @@
+{
+  "id": "sam-89ce4d961d494d799e01ff2e3a0da470",
+  "title": "Z--SAPU GATES UPGRADE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=89ce4d961d494d799e01ff2e3a0da470",
+  "opportunity_url": "https://sam.gov/opp/89ce4d961d494d799e01ff2e3a0da470/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/89ce4d961d494d799e01ff2e3a0da470/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "89ce4d961d494d799e01ff2e3a0da470",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140P1226Q0021",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.IMR INTERMOUNTAIN REGION(1200)",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=89ce4d961d494d799e01ff2e3a0da470",
+  "detail_text": "Salinas Pueblo Missions National Monument Security Gates Upgrades",
+  "detail_text_length": 65,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d850717c9dbb477f8635a8aa26f8b0cd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d850717c9dbb477f8635a8aa26f8b0cd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0b116168b5412f9b275524295b5d4450e80d27a48f8d8cf5c17d459a287426ea.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0b116168b5412f9b275524295b5d4450e80d27a48f8d8cf5c17d459a287426ea.docx",
+      "file_id": "d850717c9dbb477f8635a8aa26f8b0cd",
+      "file_name": "Pre-Solicitation_Notice_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15929,
+      "sha256": "0b116168b5412f9b275524295b5d4450e80d27a48f8d8cf5c17d459a287426ea"
+    }
+  ],
+  "_mirror_hash": "177218599f0d34211aa9b1e47ec0f90ea08dfa2da8ee500f352c71a3941131d3",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.448491+00:00"
+}

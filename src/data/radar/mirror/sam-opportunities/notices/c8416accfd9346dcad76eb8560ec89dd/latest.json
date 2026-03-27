@@ -1,0 +1,59 @@
+{
+  "id": "sam-c8416accfd9346dcad76eb8560ec89dd",
+  "title": "Naval Surface Warfare Center- Carderock Division – Fire Protection",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c8416accfd9346dcad76eb8560ec89dd",
+  "opportunity_url": "https://sam.gov/opp/c8416accfd9346dcad76eb8560ec89dd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c8416accfd9346dcad76eb8560ec89dd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c8416accfd9346dcad76eb8560ec89dd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912BU26QNSWC",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTH ATLANTIC.ENDIST PHILADELPHIA.W2SD ENDIST PHILADELPHIA",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c8416accfd9346dcad76eb8560ec89dd",
+  "detail_text": "The Contractor shall provide all qualified personnel, equipment, supplies, transportation, materials, and supervision necessary to perform inspection, maintenance and operation support services for the Operations Department, Infrastructure Division, NSWCCD as defined in Section 5 of this Performance Work Statement. This shall include inspections, maintenance, modification, and repairs to all fire alarm, protection, extinguishing, and notification systems. The contractor shall maintain a database of all equipment and maintenance records. The Contractor shall perform in accordance with (IAW) the terms and conditions of the contract and consistently with the established standards in this PWS. See PWS and sources sought notice with response requirements attached.",
+  "detail_text_length": 769,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac2fbee75b24419891c472e842cbbeee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8fe8fcca03f40f090993cc380613daf/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac2fbee75b24419891c472e842cbbeee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1f8bbc1749531d325f05db78e6b189a0c6646fe75545b3da42b0c95bfe7c9be3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1f8bbc1749531d325f05db78e6b189a0c6646fe75545b3da42b0c95bfe7c9be3.pdf",
+      "file_id": "ac2fbee75b24419891c472e842cbbeee",
+      "file_name": "Sources+Sought+Notice_NSWCCD+Fire+Protection.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 86791,
+      "sha256": "1f8bbc1749531d325f05db78e6b189a0c6646fe75545b3da42b0c95bfe7c9be3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8fe8fcca03f40f090993cc380613daf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/72b062376a69b365bdf79272fdad6a5f8fcd3279d7c17f702a1d76b377af32f8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/72b062376a69b365bdf79272fdad6a5f8fcd3279d7c17f702a1d76b377af32f8.pdf",
+      "file_id": "f8fe8fcca03f40f090993cc380613daf",
+      "file_name": "Fire+Protection+SOW+2.0+_+02.10.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 239931,
+      "sha256": "72b062376a69b365bdf79272fdad6a5f8fcd3279d7c17f702a1d76b377af32f8"
+    }
+  ],
+  "_mirror_hash": "0412f5866eaed2494d728228be50f7ee8c8d643d21f98ce75731839e5cc2d163",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.083503+00:00"
+}

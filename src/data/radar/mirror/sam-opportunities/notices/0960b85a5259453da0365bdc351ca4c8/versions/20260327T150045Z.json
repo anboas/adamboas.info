@@ -1,0 +1,68 @@
+{
+  "id": "sam-0960b85a5259453da0365bdc351ca4c8",
+  "title": "Third Party Collections Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0960b85a5259453da0365bdc351ca4c8",
+  "opportunity_url": "https://sam.gov/opp/0960b85a5259453da0365bdc351ca4c8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0960b85a5259453da0365bdc351ca4c8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0960b85a5259453da0365bdc351ca4c8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HT001126RFI0239",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0960b85a5259453da0365bdc351ca4c8",
+  "detail_text": "Amendment 0001 Issued on 26 March 2026. This amendment added performance metric 3.2.4, increased page limit to 15 pages and extended the response due date to Friday, 10 April 2026. ___________________ This is a request for information (RFI) to identify companies/vendors capable of providing third party collections program services. Please see attached details of RFI# HT001126RFI0239.",
+  "detail_text_length": 386,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a304fe1c5f249bc8fcb2583e5e42118/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/317c35c7777f49848963697650b2128b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f31430913bbf4bb181b046478bedf268/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a304fe1c5f249bc8fcb2583e5e42118/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/37f84b7ab2240c70333f6c238d756ffb931bb2391d12e4b2755f283b1f740ae8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/37f84b7ab2240c70333f6c238d756ffb931bb2391d12e4b2755f283b1f740ae8.pdf",
+      "file_id": "0a304fe1c5f249bc8fcb2583e5e42118",
+      "file_name": "DRAFT+PWS+-+Third+Party+Collections+Program.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 645546,
+      "sha256": "37f84b7ab2240c70333f6c238d756ffb931bb2391d12e4b2755f283b1f740ae8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/317c35c7777f49848963697650b2128b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ef4c89d98dac0153e469baf12efc17191bd60a5e4582fe2a00aa2e2add7e86e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ef4c89d98dac0153e469baf12efc17191bd60a5e4582fe2a00aa2e2add7e86e.pdf",
+      "file_id": "317c35c7777f49848963697650b2128b",
+      "file_name": "HT001126RFI0239+Third+Party+Collections+Program.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 128981,
+      "sha256": "0ef4c89d98dac0153e469baf12efc17191bd60a5e4582fe2a00aa2e2add7e86e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f31430913bbf4bb181b046478bedf268/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/977b7a73c50de9cd3c472f81969a40107aef9e872a0a061d6f521c2d6490b21a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/977b7a73c50de9cd3c472f81969a40107aef9e872a0a061d6f521c2d6490b21a.pdf",
+      "file_id": "f31430913bbf4bb181b046478bedf268",
+      "file_name": "HT001126RFI0239+Third+Party+Collections+Program+-+Amendment+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 161041,
+      "sha256": "977b7a73c50de9cd3c472f81969a40107aef9e872a0a061d6f521c2d6490b21a"
+    }
+  ],
+  "_mirror_hash": "f022f863c81073c54b874f0da22ea7bdefac69c1dc337857cefae4ec22b426bc",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.381144+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-37ffe8f5134448d89aeb520d1d80b511",
+  "title": "INCIDENT INSPECTIONS AND DETAINEE DEATH REVIEWS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37ffe8f5134448d89aeb520d1d80b511",
+  "opportunity_url": "https://sam.gov/opp/37ffe8f5134448d89aeb520d1d80b511/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/37ffe8f5134448d89aeb520d1d80b511/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "37ffe8f5134448d89aeb520d1d80b511",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70CDCR26Q00000004",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US IMMIGRATION AND CUSTOMS ENFORCEMENT.DETENTION COMPLIANCE AND REMOVALS",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37ffe8f5134448d89aeb520d1d80b511",
+  "detail_text": "The Office of Professional Responsibility (OPR) is an organizational element within the Department of Homeland Security (DHS), U.S. Immigration and Customs Enforcement (ICE). The Office of Detention Oversight (ODO) is a unit of OPR, Inspections Program Office (ISP). ODO conducts compliance inspections of detention facilities in which detainees are accommodated for periods in excess of seventy-two (72) hours to determine compliance with the ICE 2025 and 2019 National Detention Standards (NDS), the 2025 Non-Dedicated Intergovernmental Standards (NDIDS), the 2011 Performance-Based National Detention Standards (PBNDS), as applicable, or the 2020 Family Residential Standards (FRS). The External Reviews and Analysis Unit (ERAU) is also a unit in the OPR, Inspections Program Office. ERAU is responsible for conducting administrative reviews of all deaths of individuals in ICE custody. The Detainee Death Review (DDR) is a focused, fact-finding, objective investigation of the facts and circumstances surrounding the death. ERAU also conducts special and focused reviews, as requested by ICE leadership. See draft Statement of Work (SOW) and below for more details. As part of its market research, ICE is issuing this RFI to determine the estimated number of interested vendors capable of providing the requirements as described in the draft SOW. The government may use the responses to this RFI for information and planning purposes",
+  "detail_text_length": 1437,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0478012903e24bcebe7b745f730ab1e6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/108f94234eff468c801ec2e87039a694/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0478012903e24bcebe7b745f730ab1e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1752eb47d2de73a6bf588c651565599784d0fd84c2e3a834434fa24b14e5fe46.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1752eb47d2de73a6bf588c651565599784d0fd84c2e3a834434fa24b14e5fe46.docx",
+      "file_id": "0478012903e24bcebe7b745f730ab1e6",
+      "file_name": "1.2.1-RFI-Sam.Gov+-+Unrestricted-3-26-26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 183507,
+      "sha256": "1752eb47d2de73a6bf588c651565599784d0fd84c2e3a834434fa24b14e5fe46"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/108f94234eff468c801ec2e87039a694/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/36055f05f911577f2f7b3016b8a2dd7a9b1183e7264e97488a94d6966f0338a9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/36055f05f911577f2f7b3016b8a2dd7a9b1183e7264e97488a94d6966f0338a9.docx",
+      "file_id": "108f94234eff468c801ec2e87039a694",
+      "file_name": "1.1.4-Base-SOW-Draft.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 290845,
+      "sha256": "36055f05f911577f2f7b3016b8a2dd7a9b1183e7264e97488a94d6966f0338a9"
+    }
+  ],
+  "_mirror_hash": "30148f983acb4935be181b057e4a1c214253008000bfe25f36c1a3766ac07f30",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.369959+00:00"
+}

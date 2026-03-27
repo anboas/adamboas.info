@@ -1,0 +1,57 @@
+{
+  "id": "sam-cc20aebf1b07436babb18a955c52fbb7",
+  "title": "JLG Man Lift Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc20aebf1b07436babb18a955c52fbb7",
+  "opportunity_url": "https://sam.gov/opp/cc20aebf1b07436babb18a955c52fbb7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cc20aebf1b07436babb18a955c52fbb7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cc20aebf1b07436babb18a955c52fbb7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326S0051",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc20aebf1b07436babb18a955c52fbb7",
+  "detail_text": "1.0 Description & Purpose The 20th Contracting Squadron is issuing this Sources Sought notice as a means of conducting market research to identify parties having an interest in performing repair services on a JLG Man Lift. THIS IS A SOURCES SOUGHT NOTICE ONLY. This is not a solicitation for proposals, proposal abstracts, or quotations. The purpose of this notice is to obtain information for market research purposes only. The Government is not obligated to and will not pay for any information received from potential sources as a result of this notice. 2.0 Background The 20th Contracting Squadron requires repair services for a JLG Man Lift. The equipment requires several major component replacements to be returned to full operational status in accordance with the Original Equipment Manufacturer’s (OEM) specifications. The contractor shall be required to provide all necessary labor, tools, certified technicians, and specified OEM parts to complete the required repairs. 3.0 Scope of Work & Salient Characteristics Please refer to Attachment 1 and 2 for the Statement of Work and Salient Characteristics related to this requirement. All work must be completed within 14 days of contract award. 4.0 Requested Information from Industry Interested parties are requested to submit a capability statement that addresses the following. Please limit your response to 1-2 pages. Corporate Information: Company Name & Address Unique Entity ID (UEI) & CAGE Code Company Point of Contact (Name, Title, Email, Phone) Business Size and any applicable socio-economic classifications (Small Business, 8(a), SDVOSB, WOSB, HUBZone). Capability Narrative: A brief description of your company's capabilities to perform the work. Confirm your ability to source the specified OEM parts. Describe your technician's certifications and training relative to JLG or similar heavy equipment. Relevant Experience: Provide brief summaries of similar projects from the past five (5) years that are similar in scope and complexity. Confirmation: Please confirm your ability to meet the 14-day Period of Performance. 5.0 Submission Instructions Interested parties who consider themselves qualified to perform the services are invited to submit a response to this Sources Sought Notice by 31 March 2026 at 5:00 PM Eastern. All responses under this notice must be emailed to: Primary Contact: SSgt Braulio Ramirez Email: braulio.ramirez_galvan@us.af.mil",
+  "detail_text_length": 2429,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce80bda3695b49109cbe1aafd534fd94/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5027cf95c884ec7bdde9067830abd86/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce80bda3695b49109cbe1aafd534fd94/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3fa9b8864808ce021924d66f80be59a173687d2663b064df9150625c55dbe810.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3fa9b8864808ce021924d66f80be59a173687d2663b064df9150625c55dbe810.pdf",
+      "file_id": "ce80bda3695b49109cbe1aafd534fd94",
+      "file_name": "Attachment+1+-+Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 97657,
+      "sha256": "3fa9b8864808ce021924d66f80be59a173687d2663b064df9150625c55dbe810"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5027cf95c884ec7bdde9067830abd86/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/967c952e7d1b60fc3f9d335d9436387317b3693af6a5996853b0a0a349b04992.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/967c952e7d1b60fc3f9d335d9436387317b3693af6a5996853b0a0a349b04992.pdf",
+      "file_id": "e5027cf95c884ec7bdde9067830abd86",
+      "file_name": "Attachment+2+-+Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 221156,
+      "sha256": "967c952e7d1b60fc3f9d335d9436387317b3693af6a5996853b0a0a349b04992"
+    }
+  ],
+  "_mirror_hash": "5da11f3f8f7ca00fcbf9fd4d811bc0f2133744f04ab0f18a8ac245eecca1499d",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.271513+00:00"
+}

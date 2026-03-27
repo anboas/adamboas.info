@@ -1,0 +1,46 @@
+{
+  "id": "sam-1c0c0d2d8e5c4a0aae1940a78bcb5773",
+  "title": "AS9100/AS9110 Certification",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c0c0d2d8e5c4a0aae1940a78bcb5773",
+  "opportunity_url": "https://sam.gov/opp/1c0c0d2d8e5c4a0aae1940a78bcb5773/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1c0c0d2d8e5c4a0aae1940a78bcb5773/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1c0c0d2d8e5c4a0aae1940a78bcb5773",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA813226Q0024",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8132  AFSC PZIMC",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c0c0d2d8e5c4a0aae1940a78bcb5773",
+  "detail_text": "The Air Force intends to solicit and award a firm fixed price, single source purchase order contract to Performance Review Institute (PRI) of Warrendale, PA ; CAGE Code 1N0B4, under the authority of RFO FAR 12.201-1, for a three (3) year contract for ISO 9001:2015 AS9100D:2016 initial certification and AS9110C:20116 recertification for the Oklahoma City Air Logistics Complex (OC-ALC)/QA (Quality Assurance) for the period of 1 May 2026 – 30 April 2029. The NAICS code for this requirement is 541380 with a size standard of $19 Million. Contractor registration in the System for Award Management (SAM) – which results in receiving a unique, active CAGE Code – is required prior to receiving any contracts or orders from the Government in accordance with RFO FAR 4.203-1(b). Contractors can register electronically at https://sam.gov/ . Interested persons may identify their interest and capability to respond to the requirement by submitting a quote and information. Electronic procedures will be used for this solicitation through SAM at https://sam.gov/. No telephone requests.",
+  "detail_text_length": 1081,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a82dd4530a84ef3914806f34a1ccd62/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a82dd4530a84ef3914806f34a1ccd62/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c6bd0ce9665594e68b60e7bcd7b7c84e4ef0dbb0ecf1ee53cc0d915aa3b5eea0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c6bd0ce9665594e68b60e7bcd7b7c84e4ef0dbb0ecf1ee53cc0d915aa3b5eea0.pdf",
+      "file_id": "6a82dd4530a84ef3914806f34a1ccd62",
+      "file_name": "Single+Source+Justification_FA813226Q0024_AS9100-AS9110+Certification.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 245092,
+      "sha256": "c6bd0ce9665594e68b60e7bcd7b7c84e4ef0dbb0ecf1ee53cc0d915aa3b5eea0"
+    }
+  ],
+  "_mirror_hash": "cee84d2926b333fb840094715c0c0c0fa32668c6b44082e246fc5c9de7eb039f",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.324158+00:00"
+}

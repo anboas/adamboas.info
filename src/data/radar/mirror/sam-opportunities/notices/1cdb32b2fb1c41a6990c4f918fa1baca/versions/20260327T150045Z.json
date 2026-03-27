@@ -1,0 +1,69 @@
+{
+  "id": "sam-1cdb32b2fb1c41a6990c4f918fa1baca",
+  "title": "USS HERSHEL \"WOODY\" WILLIAMS MID TERM AVAILABILITY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1cdb32b2fb1c41a6990c4f918fa1baca",
+  "opportunity_url": "https://sam.gov/opp/1cdb32b2fb1c41a6990c4f918fa1baca/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1cdb32b2fb1c41a6990c4f918fa1baca/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1cdb32b2fb1c41a6990c4f918fa1baca",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6817126RN003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SIGONELLA.NAVSUP FLC SIGONELLA NAPLES OFFICE",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1cdb32b2fb1c41a6990c4f918fa1baca",
+  "detail_text": "The Naval Supply Systems Command Fleet Logistics Center (NAVSUP FLCSI) Detachment Naples intends to issue a solicitation in the near future for award in accordance with FAR Part 15 procedures. The solicitation will include instructions for submitting proposals and inquiries. A formal solicitation will be posted electronically on the System for Award Management (https://www.SAM.gov). The anticipated solicitation number will be N6817126RN003.",
+  "detail_text_length": 444,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/405fd7d3ef6a4df3b9e10b1241a865ce/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/676927bf8af341e4b5b35d7bc64920ef/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/835774a4e292451ea57bdc2a12800210/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/405fd7d3ef6a4df3b9e10b1241a865ce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ae599a851aba2c9c565bb802c8704363ebd61c0bff057fbf9a2264a3e26a3469.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ae599a851aba2c9c565bb802c8704363ebd61c0bff057fbf9a2264a3e26a3469.pdf",
+      "file_id": "405fd7d3ef6a4df3b9e10b1241a865ce",
+      "file_name": "Work+Item+Index+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13713521,
+      "sha256": "ae599a851aba2c9c565bb802c8704363ebd61c0bff057fbf9a2264a3e26a3469"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/676927bf8af341e4b5b35d7bc64920ef/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e1d92a47f740381b8bec7c82427c1c7b42e6382fefea0735acf05ba43cb4be6e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e1d92a47f740381b8bec7c82427c1c7b42e6382fefea0735acf05ba43cb4be6e.pdf",
+      "file_id": "676927bf8af341e4b5b35d7bc64920ef",
+      "file_name": "1.02b+Presol+notice+Amend+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 283309,
+      "sha256": "e1d92a47f740381b8bec7c82427c1c7b42e6382fefea0735acf05ba43cb4be6e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/835774a4e292451ea57bdc2a12800210/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e7bce94c3882a254961116813656e5c126c72f115826d75222ffdb467d10beb9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e7bce94c3882a254961116813656e5c126c72f115826d75222ffdb467d10beb9.pdf",
+      "file_id": "835774a4e292451ea57bdc2a12800210",
+      "file_name": "1.02+Presol+notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 283150,
+      "sha256": "e7bce94c3882a254961116813656e5c126c72f115826d75222ffdb467d10beb9"
+    }
+  ],
+  "_mirror_hash": "db3318989a54900d9586bd0bbbe46c9fceddb47a44f925dcaaad18abd6a33046",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.117844+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "sam-ca5b760a1c4043ec931c31a0813c89c2",
+  "title": "1377 - 01-504-6606 WB15, 1377-01-470-7659 WB16",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca5b760a1c4043ec931c31a0813c89c2",
+  "opportunity_url": "https://sam.gov/opp/ca5b760a1c4043ec931c31a0813c89c2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ca5b760a1c4043ec931c31a0813c89c2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ca5b760a1c4043ec931c31a0813c89c2",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426RK030",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca5b760a1c4043ec931c31a0813c89c2",
+  "detail_text": "Paper copies will not be provided. Procurement is restricted to Martin Baker Aircraft Co.. A limited drawing package is available. Drawings are NOT available on CD. Items are explosive. A Safety Survey will be required. See solicitation for explosive weight and class.",
+  "detail_text_length": 268,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0da35241dadf48f09e1320dece2fae2e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3437c3369a064b1ab83f081291043fb4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53d8202414d24b1ea938352720ac244d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f020a96561e4a2fb1e207e71cc8fe57/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2067c44ac564de397f64038311fc3f7/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0da35241dadf48f09e1320dece2fae2e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa9f69c84280543196fa6ee18bbdae92070c380d2c446b29b09980108013ad35.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa9f69c84280543196fa6ee18bbdae92070c380d2c446b29b09980108013ad35.pdf",
+      "file_id": "0da35241dadf48f09e1320dece2fae2e",
+      "file_name": "3.02_Solicitation_N0010426RK030.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2687340,
+      "sha256": "fa9f69c84280543196fa6ee18bbdae92070c380d2c446b29b09980108013ad35"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3437c3369a064b1ab83f081291043fb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea72cd05eb4640d580b747340eeb05a6ee4773448836f42f2017158bd44d3263.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea72cd05eb4640d580b747340eeb05a6ee4773448836f42f2017158bd44d3263.pdf",
+      "file_id": "3437c3369a064b1ab83f081291043fb4",
+      "file_name": "3.04_Amendment_001_N0010426RK030.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 584573,
+      "sha256": "ea72cd05eb4640d580b747340eeb05a6ee4773448836f42f2017158bd44d3263"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53d8202414d24b1ea938352720ac244d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2bd057f7cf6f476141423a941a5f665fedb05e3e17d4718ec501dcc107da654f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2bd057f7cf6f476141423a941a5f665fedb05e3e17d4718ec501dcc107da654f.pdf",
+      "file_id": "53d8202414d24b1ea938352720ac244d",
+      "file_name": "3.04_Amendment_004_N0010426RK030.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 701089,
+      "sha256": "2bd057f7cf6f476141423a941a5f665fedb05e3e17d4718ec501dcc107da654f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f020a96561e4a2fb1e207e71cc8fe57/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/60caedaebfe1ed51f496f65459c7819b6068aca823a20923068b371d942e4450.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/60caedaebfe1ed51f496f65459c7819b6068aca823a20923068b371d942e4450.pdf",
+      "file_id": "7f020a96561e4a2fb1e207e71cc8fe57",
+      "file_name": "3.04_Amendment_002_N0010426RK030.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 147988,
+      "sha256": "60caedaebfe1ed51f496f65459c7819b6068aca823a20923068b371d942e4450"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2067c44ac564de397f64038311fc3f7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/703be8af3d76537e04230d3adfaa86432b8b501ff3a46edec61e2ee1cbb4477c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/703be8af3d76537e04230d3adfaa86432b8b501ff3a46edec61e2ee1cbb4477c.pdf",
+      "file_id": "f2067c44ac564de397f64038311fc3f7",
+      "file_name": "3.04_Amendment_003_N0010426RK030-1-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 172143,
+      "sha256": "703be8af3d76537e04230d3adfaa86432b8b501ff3a46edec61e2ee1cbb4477c"
+    }
+  ],
+  "_mirror_hash": "000f056856551c775167f981c887b044447c9755746715bd12c202e5f9bcf0b9",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.226991+00:00"
+}

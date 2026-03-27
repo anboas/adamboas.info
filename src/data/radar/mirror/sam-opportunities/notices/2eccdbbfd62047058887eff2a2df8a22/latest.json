@@ -1,0 +1,46 @@
+{
+  "id": "sam-2eccdbbfd62047058887eff2a2df8a22",
+  "title": "Single Source Notification for FA568526P0009",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2eccdbbfd62047058887eff2a2df8a22",
+  "opportunity_url": "https://sam.gov/opp/2eccdbbfd62047058887eff2a2df8a22/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2eccdbbfd62047058887eff2a2df8a22/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2eccdbbfd62047058887eff2a2df8a22",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA568526P0009",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5685  39 CONS LGC",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2eccdbbfd62047058887eff2a2df8a22",
+  "detail_text": "This is a notification that a sole source was awarded on contract FA568526P0009 Dronebusters. Please see the attached the single source justification.",
+  "detail_text_length": 150,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/407fd23bbabd49e6be8b550d948caaf4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/407fd23bbabd49e6be8b550d948caaf4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bd5c402dfa47c90b0b3366e10b73e092a07c6aa3b8b838691631be2e46799ec9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bd5c402dfa47c90b0b3366e10b73e092a07c6aa3b8b838691631be2e46799ec9.pdf",
+      "file_id": "407fd23bbabd49e6be8b550d948caaf4",
+      "file_name": "FA568526P0009+Sole+Source+JA_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 883027,
+      "sha256": "bd5c402dfa47c90b0b3366e10b73e092a07c6aa3b8b838691631be2e46799ec9"
+    }
+  ],
+  "_mirror_hash": "2651506bf4f481ecc55cae4118983b59a2266b98fbc654ca577f9c6100ef036c",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.263886+00:00"
+}

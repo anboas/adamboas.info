@@ -1,0 +1,90 @@
+{
+  "id": "sam-9d95796e1a804083862f5d833a5eb7cb",
+  "title": "Repair of Magnetic Azimuth Detector",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d95796e1a804083862f5d833a5eb7cb",
+  "opportunity_url": "https://sam.gov/opp/9d95796e1a804083862f5d833a5eb7cb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9d95796e1a804083862f5d833a5eb7cb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9d95796e1a804083862f5d833a5eb7cb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8117-26-SS-0019",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8117  AFSC PZABA",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-05-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d95796e1a804083862f5d833a5eb7cb",
+  "detail_text": "This Sources Sought Synopsis (SSS) is in support of Market Research being conducted by the United States Air Force to identify potential sources for the requirements identified in the attachments provided on this notice.",
+  "detail_text_length": 220,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51ed0db62b1f4615acf61ff2559f8fc7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b287df5e0cb743b29b9173f91dfb78c1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c342b4cfa19d4b7082c7d6a345ecc355/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cadb00630bb64ccfb0df1c7a369db8f6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d086c6de5b504979b0800db0c33d01b8/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51ed0db62b1f4615acf61ff2559f8fc7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/230f5b595c2467883b49584b5c3a5d76197b4ffc5a8cce98c714080e3c20c71d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/230f5b595c2467883b49584b5c3a5d76197b4ffc5a8cce98c714080e3c20c71d.pdf",
+      "file_id": "51ed0db62b1f4615acf61ff2559f8fc7",
+      "file_name": "SSS+-+T-38_A-10_C-130+MAGNETIC+AZIMUTH+DETECTOR.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90238,
+      "sha256": "230f5b595c2467883b49584b5c3a5d76197b4ffc5a8cce98c714080e3c20c71d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b287df5e0cb743b29b9173f91dfb78c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6d2eb04df87f7d56e333f1e83eafae5b7bc8fdd6f34d64cbddc69165df50bb3f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6d2eb04df87f7d56e333f1e83eafae5b7bc8fdd6f34d64cbddc69165df50bb3f.pdf",
+      "file_id": "b287df5e0cb743b29b9173f91dfb78c1",
+      "file_name": "Technical+Orders+List.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125733,
+      "sha256": "6d2eb04df87f7d56e333f1e83eafae5b7bc8fdd6f34d64cbddc69165df50bb3f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c342b4cfa19d4b7082c7d6a345ecc355/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cce2fbf0fd33128ba4051ba8771f12b3d05837c9614962b6b91984a11ea74f63.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cce2fbf0fd33128ba4051ba8771f12b3d05837c9614962b6b91984a11ea74f63.pdf",
+      "file_id": "c342b4cfa19d4b7082c7d6a345ecc355",
+      "file_name": "RQR-848+Current.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 344073,
+      "sha256": "cce2fbf0fd33128ba4051ba8771f12b3d05837c9614962b6b91984a11ea74f63"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cadb00630bb64ccfb0df1c7a369db8f6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dfd2f7a3e7d6e63e81f6a2c9478e86ca7356bf32326fcb71c84d7749f3fc1b65.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dfd2f7a3e7d6e63e81f6a2c9478e86ca7356bf32326fcb71c84d7749f3fc1b65.docx",
+      "file_id": "cadb00630bb64ccfb0df1c7a369db8f6",
+      "file_name": "TO+PUBLIC+SALES+FACT+SHEET+-April+21-++Final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 39849,
+      "sha256": "dfd2f7a3e7d6e63e81f6a2c9478e86ca7356bf32326fcb71c84d7749f3fc1b65"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d086c6de5b504979b0800db0c33d01b8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a9ff0216e577a88531c1d237ca0105db82c615475eb28ff53bd903646355fdd1.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a9ff0216e577a88531c1d237ca0105db82c615475eb28ff53bd903646355fdd1.xlsx",
+      "file_id": "d086c6de5b504979b0800db0c33d01b8",
+      "file_name": "PubSalesForm_Rev8_2020910.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 61838,
+      "sha256": "a9ff0216e577a88531c1d237ca0105db82c615475eb28ff53bd903646355fdd1"
+    }
+  ],
+  "_mirror_hash": "814b2723046013a3e6fcfb69a18291f439143d505bc9539e605da81c3550b993",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.456648+00:00"
+}

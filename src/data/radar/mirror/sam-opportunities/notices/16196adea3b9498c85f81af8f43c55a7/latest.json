@@ -1,0 +1,59 @@
+{
+  "id": "sam-16196adea3b9498c85f81af8f43c55a7",
+  "title": "RFI - Enterprise Collaboration Tools",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=16196adea3b9498c85f81af8f43c55a7",
+  "opportunity_url": "https://sam.gov/opp/16196adea3b9498c85f81af8f43c55a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/16196adea3b9498c85f81af8f43c55a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "16196adea3b9498c85f81af8f43c55a7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "02-25-2026",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.FBI-JEH",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-03-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=16196adea3b9498c85f81af8f43c55a7",
+  "detail_text": "ll responses and questions must be submitted electronically to Dionna Brown (dnbrown@fbi.gov)",
+  "detail_text_length": 93,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e2165c2d10f4248803de785666daea7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7174d33054444746b93746114bfabb1a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e2165c2d10f4248803de785666daea7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ac28758b8724dbf1b4ff8aa12c2de4c88e4a4c7e91a33662f38fdaeb2a161ca4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ac28758b8724dbf1b4ff8aa12c2de4c88e4a4c7e91a33662f38fdaeb2a161ca4.pdf",
+      "file_id": "4e2165c2d10f4248803de785666daea7",
+      "file_name": "RFI+-+Enterprise+Collaboration+Tools+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 413676,
+      "sha256": "ac28758b8724dbf1b4ff8aa12c2de4c88e4a4c7e91a33662f38fdaeb2a161ca4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7174d33054444746b93746114bfabb1a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a6abb989b61e7e51c649ef145171e016678739058b933d372c8b8fe7efb933d.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a6abb989b61e7e51c649ef145171e016678739058b933d372c8b8fe7efb933d.xlsx",
+      "file_id": "7174d33054444746b93746114bfabb1a",
+      "file_name": "Final++RFI+Questions+-+CJIS.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31714,
+      "sha256": "4a6abb989b61e7e51c649ef145171e016678739058b933d372c8b8fe7efb933d"
+    }
+  ],
+  "_mirror_hash": "f4ff2d82a31c607ab9230be3a9c7ac055fb186e474ca943a7ca5c452193074eb",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.135290+00:00"
+}

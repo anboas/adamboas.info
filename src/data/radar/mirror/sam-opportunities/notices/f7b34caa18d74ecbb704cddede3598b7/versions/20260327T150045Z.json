@@ -1,0 +1,46 @@
+{
+  "id": "sam-f7b34caa18d74ecbb704cddede3598b7",
+  "title": "Power Supplies",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f7b34caa18d74ecbb704cddede3598b7",
+  "opportunity_url": "https://sam.gov/opp/f7b34caa18d74ecbb704cddede3598b7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f7b34caa18d74ecbb704cddede3598b7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f7b34caa18d74ecbb704cddede3598b7",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPRHA526R0588",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA AVIATION AT OGDEN, UT",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f7b34caa18d74ecbb704cddede3598b7",
+  "detail_text": "Power Supplies",
+  "detail_text_length": 14,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e8d1dcb4b95e44e3bcd3e00548df0ccc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e8d1dcb4b95e44e3bcd3e00548df0ccc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ab254496d366ff270b1f64392ef096a659caa2dd0c10bcd44195afe196907b2d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ab254496d366ff270b1f64392ef096a659caa2dd0c10bcd44195afe196907b2d.pdf",
+      "file_id": "e8d1dcb4b95e44e3bcd3e00548df0ccc",
+      "file_name": "Combined+Request+for+Information+and+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 77520,
+      "sha256": "ab254496d366ff270b1f64392ef096a659caa2dd0c10bcd44195afe196907b2d"
+    }
+  ],
+  "_mirror_hash": "0b081ad22b30d7597f19ea96388d5f800fcd189db0fe8f20df52f7087191891f",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.366248+00:00"
+}

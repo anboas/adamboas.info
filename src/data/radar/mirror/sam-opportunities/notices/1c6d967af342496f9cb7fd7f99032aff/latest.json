@@ -1,0 +1,57 @@
+{
+  "id": "sam-1c6d967af342496f9cb7fd7f99032aff",
+  "title": "Lab Standard Microphone System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c6d967af342496f9cb7fd7f99032aff",
+  "opportunity_url": "https://sam.gov/opp/1c6d967af342496f9cb7fd7f99032aff/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1c6d967af342496f9cb7fd7f99032aff/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1c6d967af342496f9cb7fd7f99032aff",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PANRSA-26-P-0000-033738",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c6d967af342496f9cb7fd7f99032aff",
+  "detail_text": "The U.S. Army Contracting Command-Redstone, Operations, Services, & Training Division, plans to obtain information to serve as market research to help identify potential sources that can provide a brand name purchase of one (1) Lab Standard Microphone System model or equivalent that will be a suitable replacement for the 4180/4160 Microphones are the main standard for the Acoustics Lab. Three standards have been lost due to damage. Reciprocity calibration requires three microphones of the same model to function appropriately. APSL needs to replace these standards to prevent a potential shutdown of the acoustics laboratory. All accredited parameters within the acoustics lab are tied to these laboratory grade Microphones. The Lab Standard Microphone System shall include the following specifications or equivalent (if not brand name): 4180—PTO 1/2\" Calibration Condenser Microphone, laboratory standard. Qty: 1 ET-2014-W-002 - Primary DPLA Microphone Calibration 1/3 octave frequencies 10Hz to 25 kHz for type 4180 Qty: 1 4160—PTO 1\" Laboratory Standard Pressure Microphone, 200V Polarization. Qty: 1 ET-2014-W-001 -Primary DPLA Microphone Calibration 1/3 octave frequencies 2Hz to 10kHz for type 4160. Results calculated according to IEC 61094-2:2009/AMD1:2022 Qty:1 AO-0087-D-012- Cable, coax single screen, BNC (M) to BNC (M), 1,2m (4.0ft), max.+85°C (185°F) Qty:1 Shipping Qty: 2 This RFI will utilize NAICS Code 334310.",
+  "detail_text_length": 1432,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c14f341bbb74fdba33b6e23860b13b6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/186a474f25854f7799bf78b88b12b034/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c14f341bbb74fdba33b6e23860b13b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a468149107cc9d262566467d02541479ed583f991c3a89c98d95c42076e62fa7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a468149107cc9d262566467d02541479ed583f991c3a89c98d95c42076e62fa7.docx",
+      "file_id": "0c14f341bbb74fdba33b6e23860b13b6",
+      "file_name": "Purchase+Description+-W80RA6-05-26C-+PANRSA-26-P-0000+033738.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17653,
+      "sha256": "a468149107cc9d262566467d02541479ed583f991c3a89c98d95c42076e62fa7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/186a474f25854f7799bf78b88b12b034/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/249b50a48a316e83a3a1ecad43e519f5d1ec87ec2d48ae81518f31c6cbb4e82d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/249b50a48a316e83a3a1ecad43e519f5d1ec87ec2d48ae81518f31c6cbb4e82d.docx",
+      "file_id": "186a474f25854f7799bf78b88b12b034",
+      "file_name": "Request+for+Information+-W80RA6-05-26C-+PANRSA-26-P-0000+033738.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21347,
+      "sha256": "249b50a48a316e83a3a1ecad43e519f5d1ec87ec2d48ae81518f31c6cbb4e82d"
+    }
+  ],
+  "_mirror_hash": "9cd4c290381d875e2ff43d867762204f6b2b8ae83f1cc9583043ca6b41dc8607",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.306697+00:00"
+}

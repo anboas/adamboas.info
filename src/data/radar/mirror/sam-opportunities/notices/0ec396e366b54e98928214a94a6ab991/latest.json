@@ -1,0 +1,46 @@
+{
+  "id": "sam-0ec396e366b54e98928214a94a6ab991",
+  "title": "MARFORSOC Acquisition Forecast",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ec396e366b54e98928214a94a6ab991",
+  "opportunity_url": "https://sam.gov/opp/0ec396e366b54e98928214a94a6ab991/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0ec396e366b54e98928214a94a6ab991/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0ec396e366b54e98928214a94a6ab991",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).MARSOC H92257",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ec396e366b54e98928214a94a6ab991",
+  "detail_text": "CURRENT AS OF 27 MARCH 2028 To support industry partners in their planning and market research efforts, the MARFORSOC Contracting Office is releasing the following acquisition forecast. This information is provided solely for informational and planning purposes to enhance industry awareness of potential acquisition opportunities. Please note, this forecast does not represent an offer, solicitation, or commitment by MARFORSOC to fund any of the requirements referenced, either partially or in full. All acquisitions remain subject to applicable statutory, regulatory, and funding requirements. The forecast includes anticipated contract actions with option years that may exceed the Simplified Acquisition Threshold (SAT) of $350,000, in accordance with FAR Part 13.5 procedures. While the forecast reflects the best available information at the time of publication, it is not comprehensive. Official contract opportunities and additional details on individual requirements will be provided when actions are announced via the Governmentwide Point of Entry (GPE) or through the issuance of solicitations. Any references to potential small business set-asides or other socioeconomic programs are preliminary and subject to change. Final determinations will be made during the acquisition process. MARFORSOC plans to issue Requests for Information (RFIs) or Sources Sought (SS) notifications ahead of each solicitation. Draft Performance Work Statements (PWS) and Statements of Work (SOW) will only be made available at the time of their respective RFI/SS or solicitation postings. Questions regarding this forecast may be submitted to: Sam Williams Contracting Officer Deputy Chief of Contracting / Small Business Representative MARFORSOC Samuel.williams1@socom.mil Additional Points of Contact: Allison O’Donnell - allison.c.odonnell.civ@socom.mil MSgt Krissia Avelares - krissia.i.avelaresvalle.mil@socom.mil Maj Justin Moore - justin.r.moore.mil@socom.mil",
+  "detail_text_length": 1959,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/74b89a16e59a457fbbc16616f19ce1db/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/74b89a16e59a457fbbc16616f19ce1db/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7bc4eb016438e039ca4bcf685c5f37d40f80281a8638f1c23483dce74fc8ae87.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7bc4eb016438e039ca4bcf685c5f37d40f80281a8638f1c23483dce74fc8ae87.xlsx",
+      "file_id": "74b89a16e59a457fbbc16616f19ce1db",
+      "file_name": "MARSOC+Long+Range+Acquisition+Forecast_27Mar2026.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29020,
+      "sha256": "7bc4eb016438e039ca4bcf685c5f37d40f80281a8638f1c23483dce74fc8ae87"
+    }
+  ],
+  "_mirror_hash": "f3eb350db39b6d4cba289b4c094dd2392c32f804bbbbe21f2908fd66f2ead988",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.460026+00:00"
+}

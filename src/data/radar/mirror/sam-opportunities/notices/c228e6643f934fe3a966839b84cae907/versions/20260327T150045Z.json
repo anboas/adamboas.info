@@ -1,0 +1,46 @@
+{
+  "id": "sam-c228e6643f934fe3a966839b84cae907",
+  "title": "Joint Interoperability of Tactical Command and Control Systems (JINTACCS) Software Development and Sustainment (SDS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c228e6643f934fe3a966839b84cae907",
+  "opportunity_url": "https://sam.gov/opp/c228e6643f934fe3a966839b84cae907/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c228e6643f934fe3a966839b84cae907/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c228e6643f934fe3a966839b84cae907",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "612674211",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).DEFENSE INFORMATION SYSTEMS AGENCY",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c228e6643f934fe3a966839b84cae907",
+  "detail_text": "This is a SOURCES SOUGHT NOTICE to determine the availability and technical capability of small businesses (including the following subsets: Small Disadvantaged Businesses, Certified 8(a), Service-Disabled Veteran-Owned Small Businesses, HUBZone Small Businesses and Woman-Owned Small Businesses) to provide the required products and/or services.​​​​​​ The DISA / Emerging Technologies organization is seeking information from potential sources for software development and sustainment of two systems summarized below. Tactical Data Link Configuration Management Tool (TCMT) TCMT is a Configuration Management (CM) application that was developed under a previous contract and to date can generate two documents 1) MIL-STD-6017 Variable Message Format (VMF) and 2) Joint Multi-Tactical Data Link (TDL) Operating Procedures (JMTOP) CJCSM 6120.01. It was developed to perform CM of TDL MIL-STDs using a systematic approach that ensures consistency of processing and tracks the impacts to previously released products. The TCMT is a replacement for the legacy software TDL Document System (TDS). TCMT is composed of both Commercial-Off-The-Shelf (COTS) products and custom code. United States Message Text Format (USMTF) – Web Application (WA) The USMTF-WA is an application in sustainment that supports the CM of MIL-STD-6040. Specifically, the USMTF-WA is used to update the Message Text Format (MTF) message catalog. The catalog contains over 300 message formats. The messages are the official source for DoD entities to convey information in a non-real time format. USMTF messages are made of Sets and Fields. Sets and Fields may be used in any of the 300+ MTF messages. The anticipated Period of Performance is Sep 2026 – Sep 2030. The anticipated Place of Performance is both Fort George G. Meade (FGGM) and the contractor’s location (within 50 miles of FGGM). The attached Sources Sought Notice and draft Performance Work Statement (PWS) provide additional details for responding to this inquiry. Please be advised, the draft PWS is marked as Controlled Unclassified Information (CUI). Interested vendors must formally request access in order to download and review the document.",
+  "detail_text_length": 2182,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fc304960e064bc19c23f7ba17169abd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fc304960e064bc19c23f7ba17169abd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/24bc7cd95533a0042701e46c1d2c01339d4aa322365331a75c2491a48a1b51f0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/24bc7cd95533a0042701e46c1d2c01339d4aa322365331a75c2491a48a1b51f0.docx",
+      "file_id": "7fc304960e064bc19c23f7ba17169abd",
+      "file_name": "612674211+-+SSN-Final+JLBL.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59382,
+      "sha256": "24bc7cd95533a0042701e46c1d2c01339d4aa322365331a75c2491a48a1b51f0"
+    }
+  ],
+  "_mirror_hash": "b3bc5c5d0f7326b33cbf6a778012b7dcd397887a3cce70cfada86e35a505d0fc",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.378231+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-1ae9e19d4583408291a8bb6b780e376b",
+  "title": "KC-135R/T Unscheduled Depot Level Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ae9e19d4583408291a8bb6b780e376b",
+  "opportunity_url": "https://sam.gov/opp/1ae9e19d4583408291a8bb6b780e376b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1ae9e19d4583408291a8bb6b780e376b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1ae9e19d4583408291a8bb6b780e376b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8105_UDLM_Sources_Sought_26Mar2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.MOBILITY AIRCRAFT.FA8105  AFLCMC  WKK",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ae9e19d4583408291a8bb6b780e376b",
+  "detail_text": "This Sources Sought Synopsis (SSS) is in support of Market Research being conducted by the United States Air Force (USAF) to identify potential sources to perform KC-135R/T Depot Level Maintenance, Unscheduled Depot Level Maintenance, Modifications and Organizational Level/Intermediate Level Maintenance to supplement Organic Depot activities. This is not a Request for Proposal (RFP) or solicitation. Please see attachment for details.",
+  "detail_text_length": 437,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e91e2e28ae91499d823adc6582b0b10c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e91e2e28ae91499d823adc6582b0b10c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d8ffa5641dc12c7a209ea8f5d6e597047a1d500a1f687c4eeda1e567caf49088.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d8ffa5641dc12c7a209ea8f5d6e597047a1d500a1f687c4eeda1e567caf49088.pdf",
+      "file_id": "e91e2e28ae91499d823adc6582b0b10c",
+      "file_name": "UDLM+Sources+Sought+26+March+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 136100,
+      "sha256": "d8ffa5641dc12c7a209ea8f5d6e597047a1d500a1f687c4eeda1e567caf49088"
+    }
+  ],
+  "_mirror_hash": "5df0421469cdf040e2e282944970a206eb11152d274a6156f930ac3c2e53d805",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.430966+00:00"
+}

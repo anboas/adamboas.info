@@ -1,0 +1,57 @@
+{
+  "id": "sam-23a1244d50b3414980119ac43eca494a",
+  "title": "USAG Pressure Washing",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=23a1244d50b3414980119ac43eca494a",
+  "opportunity_url": "https://sam.gov/opp/23a1244d50b3414980119ac43eca494a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/23a1244d50b3414980119ac43eca494a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "23a1244d50b3414980119ac43eca494a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC040350",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC FDO FT BRAGG",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=23a1244d50b3414980119ac43eca494a",
+  "detail_text": "The U.S. Government is seeking capable and responsible sources to provide non-personal services for pressure washing and, when required, sandblasting of various external facilities and structures. The primary objective of these services is to clean and extend the life of facility surfaces by removing embedded oils, gum, dirt, paint, graffiti, and other soils. Scope of Services The contractor shall provide all necessary personnel, equipment, tools, supplies, transportation, and supervision to perform the required services. The scope of work includes, but is not limited to, the cleaning of vertical buildings and structures such as headquarters buildings, Child Development Centers (CDCs), administrative facilities, barracks, bridges, and stationary tanks. Locations Services will be performed at Fort Bragg, Pope Army Airfield, Camp MacKall, Simmons Army Airfield, and the Linden Oaks Subdivision in North Carolina. Detailed Requirements All work shall be performed in accordance with the requirements and standards set forth in the Performance Work Statement (PWS) for this procurement. The PWS provides comprehensive details on service delivery, response times, equipment specifications, and safety requirements. Interested parties should refer to the PWS for a complete understanding of the government's needs.",
+  "detail_text_length": 1320,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/006af453a3464636ade3878f3856794f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9615dab172534816bf664afeaf01cc02/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/006af453a3464636ade3878f3856794f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1bf3e195ce25a60ca55c7c1cfc7b829e84eb2b96ba5f0c2f4b56035895e87a7a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1bf3e195ce25a60ca55c7c1cfc7b829e84eb2b96ba5f0c2f4b56035895e87a7a.pdf",
+      "file_id": "006af453a3464636ade3878f3856794f",
+      "file_name": "Sources+Sought+Notice+-SSN-+-+USAG+Pressure+Washing+-PANMCC+040350-+-+20260325.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 107788,
+      "sha256": "1bf3e195ce25a60ca55c7c1cfc7b829e84eb2b96ba5f0c2f4b56035895e87a7a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9615dab172534816bf664afeaf01cc02/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f88549017fb9a63767db192104787790600c1edfd378db24c43bf8d5834978f0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f88549017fb9a63767db192104787790600c1edfd378db24c43bf8d5834978f0.pdf",
+      "file_id": "9615dab172534816bf664afeaf01cc02",
+      "file_name": "PWS+-+USAG+Pressure+Washing+-PANMCC+040350-+-+20260312+-Draft-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 556097,
+      "sha256": "f88549017fb9a63767db192104787790600c1edfd378db24c43bf8d5834978f0"
+    }
+  ],
+  "_mirror_hash": "3256a9211782968a252206df85b9debfe88d685d5a417de47f0d47012281aeed",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.424506+00:00"
+}

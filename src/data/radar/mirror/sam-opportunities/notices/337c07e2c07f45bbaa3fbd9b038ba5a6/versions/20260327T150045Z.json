@@ -1,0 +1,46 @@
+{
+  "id": "sam-337c07e2c07f45bbaa3fbd9b038ba5a6",
+  "title": "Display Unit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=337c07e2c07f45bbaa3fbd9b038ba5a6",
+  "opportunity_url": "https://sam.gov/opp/337c07e2c07f45bbaa3fbd9b038ba5a6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/337c07e2c07f45bbaa3fbd9b038ba5a6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "337c07e2c07f45bbaa3fbd9b038ba5a6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM126RME56",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=337c07e2c07f45bbaa3fbd9b038ba5a6",
+  "detail_text": "DLA Weapons Support Mechanicsburg is seeking sources capable of supplying the following items NSN: 7HH 6110 015494175 NOM: Display Unit P/N: 81306-0200-00-E Approved Design Cage Code: Valkyrie Enterprises, LLC Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to Nicholas.Birbeck@dla.mil by 4:00 PM EST on 10 April 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1209,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffa2c5692ae0467f9b5fabfb35f433fe/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffa2c5692ae0467f9b5fabfb35f433fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6facd5c920747f35b15fba9f0637fedbf7f3b216c098715b1b33e8557653f9d8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6facd5c920747f35b15fba9f0637fedbf7f3b216c098715b1b33e8557653f9d8.docx",
+      "file_id": "ffa2c5692ae0467f9b5fabfb35f433fe",
+      "file_name": "1.08+Sources+Sought+-+MARKET+SURVEY.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48809,
+      "sha256": "6facd5c920747f35b15fba9f0637fedbf7f3b216c098715b1b33e8557653f9d8"
+    }
+  ],
+  "_mirror_hash": "25bc42a3ad6fa7ef0159ee99ca67ebbbc61bd6d9308122c022e32c6e0057dc0b",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.387111+00:00"
+}

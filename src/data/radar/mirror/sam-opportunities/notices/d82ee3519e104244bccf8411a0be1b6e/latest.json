@@ -1,0 +1,48 @@
+{
+  "id": "sam-d82ee3519e104244bccf8411a0be1b6e",
+  "title": "Request For Information Accounting Instructors",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d82ee3519e104244bccf8411a0be1b6e",
+  "opportunity_url": "https://sam.gov/opp/d82ee3519e104244bccf8411a0be1b6e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d82ee3519e104244bccf8411a0be1b6e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d82ee3519e104244bccf8411a0be1b6e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FDICRFICU0326",
+  "agency_path": "FEDERAL DEPOSIT INSURANCE CORPORATION.FEDERAL DEPOSIT INSURANCE CORPORATION._",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d82ee3519e104244bccf8411a0be1b6e",
+  "detail_text": "This is a Request for Information (RFI) only. This RFI is issued solely for information and planning purposes and shall not be construed as a Request for Proposal (RFP) or as an obligation on the part of the Government to acquire any products or services. Submitting a response does not ensure your firm will be solicited on any resulting RFP. Not responding to this RFI does not preclude participation in any future RFP. The Government does not intend to award a contract on the basis of this request or otherwise pay for the information requested. Submission of a response to this request is entirely voluntary. The voluntary submission of a response to this request shall not obligate the Government to pay or entitle the submitter of information to claim any direct or indirect costs or charges or any other remuneration whatsoever. The Federal Deposit Insurance Corporation (FDIC), Corporate University is seeking accounting instructors who can teach the FDIC Fundamentals of Accounting course. The course is offered virtually using the Microsoft Teams platform. The accounting instructors will provide whole group, instructor-led instruction of Chapters 1-5 of the Intermediate Accounting, Enhanced eText textbook and the complete Accounting Fundamentals Study Guide with Supplemental Materials. Class instruction will be approximately two (2) hours per day with additional time allotted for questions and answers from the students. See the attached Draft Statement of Work (SOW) for additional details.",
+  "detail_text_length": 1509,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cdea271fec1940df8a486e1214e79be3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cdea271fec1940df8a486e1214e79be3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7584e077c6ff2361f2616da5a9c46979b06b3e3def119c110cf4a1bcacc812eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7584e077c6ff2361f2616da5a9c46979b06b3e3def119c110cf4a1bcacc812eb.pdf",
+      "file_id": "cdea271fec1940df8a486e1214e79be3",
+      "file_name": "RFI+and+Draft+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 143141,
+      "sha256": "7584e077c6ff2361f2616da5a9c46979b06b3e3def119c110cf4a1bcacc812eb"
+    }
+  ],
+  "_mirror_hash": "541a1c1fae97d8075c293a20146f12c771f5f4967acacd4d84dc8686059b3fd7",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.159187+00:00"
+}

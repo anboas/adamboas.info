@@ -1,0 +1,90 @@
+{
+  "id": "sam-cdfb2ea0024843fd9ff894d50f58c1b6",
+  "title": "DA01--Controlled Unclassified Information (CUI) (VA-26-00041445)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cdfb2ea0024843fd9ff894d50f58c1b6",
+  "opportunity_url": "https://sam.gov/opp/cdfb2ea0024843fd9ff894d50f58c1b6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cdfb2ea0024843fd9ff894d50f58c1b6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cdfb2ea0024843fd9ff894d50f58c1b6",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C10B26Q0291",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-26",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cdfb2ea0024843fd9ff894d50f58c1b6",
+  "detail_text": "CUI",
+  "detail_text_length": 3,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f41ccd26fd3415a8a47267cd0dbd583/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/452578de1dd140dc9bf999ad0b2edd63/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/585083bea7b4442996c4a51e35225c74/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a199ada29ff4f38b170317922c740c4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e638d7520a374396a1c4bd1e4f792129/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f41ccd26fd3415a8a47267cd0dbd583/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bb4398851805403379fe78cda5bc22de2127e5349dd565cdcb80cfe80f08662d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bb4398851805403379fe78cda5bc22de2127e5349dd565cdcb80cfe80f08662d.docx",
+      "file_id": "1f41ccd26fd3415a8a47267cd0dbd583",
+      "file_name": "PWS+Template_May_16_Rev2_MAR_18_2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 907396,
+      "sha256": "bb4398851805403379fe78cda5bc22de2127e5349dd565cdcb80cfe80f08662d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/452578de1dd140dc9bf999ad0b2edd63/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15d032fe58d888d4fdb93f4fef9059e787172631f6a11f6f4fb816ff908e3d48.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15d032fe58d888d4fdb93f4fef9059e787172631f6a11f6f4fb816ff908e3d48.docx",
+      "file_id": "452578de1dd140dc9bf999ad0b2edd63",
+      "file_name": "PWS+CUI+with+comment+3_9_26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 158718,
+      "sha256": "15d032fe58d888d4fdb93f4fef9059e787172631f6a11f6f4fb816ff908e3d48"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/585083bea7b4442996c4a51e35225c74/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf79c7cced780129753faa5d52fb9daff0ea5494168d400e9000ecc1e682da94.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf79c7cced780129753faa5d52fb9daff0ea5494168d400e9000ecc1e682da94.docx",
+      "file_id": "585083bea7b4442996c4a51e35225c74",
+      "file_name": "36C10B26Q0291+0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14347,
+      "sha256": "cf79c7cced780129753faa5d52fb9daff0ea5494168d400e9000ecc1e682da94"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a199ada29ff4f38b170317922c740c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/323534812bbe7c94741274f07bfa55e6fc55b4cf636781d9ee5f6c5a73745121.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/323534812bbe7c94741274f07bfa55e6fc55b4cf636781d9ee5f6c5a73745121.docx",
+      "file_id": "9a199ada29ff4f38b170317922c740c4",
+      "file_name": "rfi+cover+page+with+questions+to+the+vendors+rfi+final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23892,
+      "sha256": "323534812bbe7c94741274f07bfa55e6fc55b4cf636781d9ee5f6c5a73745121"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e638d7520a374396a1c4bd1e4f792129/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/51fdd48b3f605d8b90f899999e74e8784fcd1cb194a1d967cf9be1519ef3a482.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/51fdd48b3f605d8b90f899999e74e8784fcd1cb194a1d967cf9be1519ef3a482.docx",
+      "file_id": "e638d7520a374396a1c4bd1e4f792129",
+      "file_name": "36C10B26Q0291.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14545,
+      "sha256": "51fdd48b3f605d8b90f899999e74e8784fcd1cb194a1d967cf9be1519ef3a482"
+    }
+  ],
+  "_mirror_hash": "11f66e00c0e8fc338d61af0d4dadc6d0bd63c1c428d6dcfc0ace2afbc05323f3",
+  "_mirror_run_id": "20260327T150045Z",
+  "_mirror_recorded_at": "2026-03-27T15:06:04.303749+00:00"
+}
