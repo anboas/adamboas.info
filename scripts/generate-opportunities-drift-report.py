@@ -14,7 +14,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-ROOT = Path('/home/anboas/clawd/adamboas-site')
+ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES_PATH = ROOT / 'src/data/radar/events-candidates-sam-opportunities.json'
 DRIFT_JSON_PATH = ROOT / 'src/data/radar/events-candidates-sam-opportunities-drift-latest.json'
 DRIFT_MD_PATH = ROOT / 'src/data/radar/events-candidates-sam-opportunities-drift-latest.md'

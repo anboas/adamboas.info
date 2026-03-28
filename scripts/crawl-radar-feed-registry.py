@@ -18,14 +18,19 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-ROOT = Path("/home/anboas/clawd/adamboas-site")
+ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "src/data/radar/feed-registry.json"
 OUT_JSON = ROOT / "src/data/radar/feed-crawl-report-latest.json"
 OUT_MD = ROOT / "src/data/radar/feed-crawl-report-latest.md"
 
 UA = "Mozilla/5.0 (compatible; RadarFeedCrawler/1.0; +https://www.adamboas.com/events/sources/)"
 MAX_READ = 350_000
-FAST_BROWSER_FETCH = Path("/home/anboas/clawd/scripts/fast_browser_fetch.sh")
+FAST_BROWSER_FETCH = Path(
+    os.environ.get(
+        "FAST_BROWSER_FETCH",
+        str(ROOT.parent / "scripts/fast_browser_fetch.sh"),
+    )
+)
 BROWSER_FETCH_TIMEOUT = int(os.environ.get("RADAR_BROWSER_FETCH_TIMEOUT", "30"))
 
 BLOCK_PATTERNS = [

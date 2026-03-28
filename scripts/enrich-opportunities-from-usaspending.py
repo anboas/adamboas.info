@@ -22,7 +22,7 @@ from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-ROOT = Path('/home/anboas/clawd/adamboas-site')
+ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES_PATH = ROOT / 'src/data/radar/events-candidates-sam-opportunities.json'
 CACHE_PATH = ROOT / '.cache/usaspending/by-solicitation.json'
 SUMMARY_PATH = ROOT / 'src/data/radar/events-candidates-sam-opportunities-usaspending-signals.md'
