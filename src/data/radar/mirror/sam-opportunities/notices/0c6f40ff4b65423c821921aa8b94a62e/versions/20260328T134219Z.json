@@ -1,0 +1,56 @@
+{
+  "id": "sam-0c6f40ff4b65423c821921aa8b94a62e",
+  "title": "NRL Long Range Broad Agency Announcement (BAA) for Basic and Applied Research",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c6f40ff4b65423c821921aa8b94a62e",
+  "opportunity_url": "https://sam.gov/opp/0c6f40ff4b65423c821921aa8b94a62e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0c6f40ff4b65423c821921aa8b94a62e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0c6f40ff4b65423c821921aa8b94a62e",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00173-24-S-BA01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR NRL.NAVAL RESEARCH LABORATORY",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c6f40ff4b65423c821921aa8b94a62e",
+  "detail_text": "Amendment 0005 The purpose of this amendment is to extend the due date for acceptance of White Papers. All other terms and conditions remain unchanged. -------------------------------------------------------------- Amendment 0004 The purpose of this amendment is to extend the due date for acceptance of White Papers and revise Appendix 1 Summary Topics and email addresses in it’s entirety. -------------------------------------------------------------- Amendment 0003 The purpose of this amendment is to extend the due date for acceptance of White Papers. All other terms and conditions remain unchanged. -------------------------------------------------------------- Amendment 0002 The purpose of this amendment is to extend the due date for acceptance of White Papers. All other terms and conditions remain unchanged. -------------------------------------------------------------- Amendment 0001 The purpose of this amendment is to extend the due date for acceptance of White Papers. All other terms and conditions remain unchanged. -------------------------------------------------------------- The Naval Research Laboratory is interested in receiving innovative proposals that offer potential for advancement and improvement in the technical topic areas listed. This notice constitutes a Broad Agency Announcement (BAA) as contemplated in FAR 6.302(d) that provides for the competitive selection of research proposals. The Government reserves the right to select for award all, some, or none of the proposals received. Awards under this BAA are expected to take the form of Contracts, Grants, Cooperative Agreements and Other Transactions may also be awarded if appropriate. NRL encourages Educational Institutions, Small Businesses (SBs), Small Disadvantaged Business Concerns (SDBs) and Historically Black Colleges and Universities (HBCUs) and Minority Institutions (MIs) to submit proposals under this BAA. In order to conserve valuable offeror and Government resources, prospective offerors shall first submit a White Paper (WP) to the email address identified in the individual Summary Topics contained in Appedix 1, to include a rough cost estimate. If there is interest in the proposed research the offeror will be invited to submit a Formal Proposal. The selection of proposals for award will be based on a scientific review of proposals submitted in response to each BAA Summary Topic. The major purpose of the evaluation will be to determine the relative merit of the technical approach of each proposal. Business and contractual aspects, including proposed cost and cost realism, will also be considered as part of the evaluation. Selection of proposals for award will be based on the potential benefits to the Government weighed against the cost of the proposals, in view of the availability of funds. The complete BAA including proposal preparation instructions, award considerations, and evaluation criteria is also available at https://www.nrl.navy.mil/Doing-Business/Contracts/Broad-Agency-Announcements/ .",
+  "detail_text_length": 3028,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50e18533ab87410aa2b809d117f13520/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5c8a596b2c945728a3d3ee70c4eec9a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50e18533ab87410aa2b809d117f13520/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/127c5faabc7bf7d21a478143d6583bf07c7f6f93fa03195aa64aeb086d1509a5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/127c5faabc7bf7d21a478143d6583bf07c7f6f93fa03195aa64aeb086d1509a5.pdf",
+      "file_id": "50e18533ab87410aa2b809d117f13520",
+      "file_name": "FY24+BAA+Announcement+FINAL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1875509,
+      "sha256": "127c5faabc7bf7d21a478143d6583bf07c7f6f93fa03195aa64aeb086d1509a5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5c8a596b2c945728a3d3ee70c4eec9a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf9fa59d270ba8dd44e2d81a39cc21aa016b34f9531e28ed007a86e6d6f40683.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf9fa59d270ba8dd44e2d81a39cc21aa016b34f9531e28ed007a86e6d6f40683.pdf",
+      "file_id": "e5c8a596b2c945728a3d3ee70c4eec9a",
+      "file_name": "N00173-24-S-BA01+Amendment+0004.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1184443,
+      "sha256": "cf9fa59d270ba8dd44e2d81a39cc21aa016b34f9531e28ed007a86e6d6f40683"
+    }
+  ],
+  "_mirror_hash": "3debd364a6766de366a75401bdd760aab34dc8466117140aa25825d20322b9d7",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.474217+00:00"
+}

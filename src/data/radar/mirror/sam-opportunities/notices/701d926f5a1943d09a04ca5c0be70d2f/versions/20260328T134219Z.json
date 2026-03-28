@@ -1,0 +1,47 @@
+{
+  "id": "sam-701d926f5a1943d09a04ca5c0be70d2f",
+  "title": "A--Pre-Solicitation Notice",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=701d926f5a1943d09a04ca5c0be70d2f",
+  "opportunity_url": "https://sam.gov/opp/701d926f5a1943d09a04ca5c0be70d2f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/701d926f5a1943d09a04ca5c0be70d2f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "701d926f5a1943d09a04ca5c0be70d2f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "75N94026R00005",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NICHD",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=701d926f5a1943d09a04ca5c0be70d2f",
+  "detail_text": "This is a pre-solicitation notice for the Biological Testing Facility, RFP 75N94026R00005. THIS IS NOT A REQUEST FOR PROPOSALS.",
+  "detail_text_length": 127,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9df6980ce77419182e5aaabf92f2109/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9df6980ce77419182e5aaabf92f2109/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f13b2b753b99db8727046f56a5561414284043e9a9f60a5ecb111f01d57a90a0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f13b2b753b99db8727046f56a5561414284043e9a9f60a5ecb111f01d57a90a0.pdf",
+      "file_id": "d9df6980ce77419182e5aaabf92f2109",
+      "file_name": "2026_BTF_Presol_Notice_MAR_27_2026_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 180306,
+      "sha256": "f13b2b753b99db8727046f56a5561414284043e9a9f60a5ecb111f01d57a90a0"
+    }
+  ],
+  "_mirror_hash": "e926a9b7c54792f65d849a9bae1a5bf2ba59c338d5908c0b428194fbdcf0fc41",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.461889+00:00"
+}

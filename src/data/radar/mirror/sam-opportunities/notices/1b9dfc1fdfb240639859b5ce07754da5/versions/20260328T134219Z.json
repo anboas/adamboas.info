@@ -1,0 +1,57 @@
+{
+  "id": "sam-1b9dfc1fdfb240639859b5ce07754da5",
+  "title": "Repair: Localizer, Antenna Distribution Unit NSN: 5895-01-534-4227IM P/N: 030742-0001",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b9dfc1fdfb240639859b5ce07754da5",
+  "opportunity_url": "https://sam.gov/opp/1b9dfc1fdfb240639859b5ce07754da5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1b9dfc1fdfb240639859b5ce07754da5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1b9dfc1fdfb240639859b5ce07754da5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD2030-26-4227IM",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8119  AFSC PZABC",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b9dfc1fdfb240639859b5ce07754da5",
+  "detail_text": "The purposed of this SSS is to seek out potential contractors that are able to complete the repair requirements for the Localizer Antenna Distribution Unit 5895-01-5344227IM specified in Attachment A of the PWS. The work encompasses the disassembly, cleaning, inspection, maintenance, reassembly, testing and finishing actions required to return the items to a serviceable condition. The contractor is responsible for having the repair capabilities to include appropriate technical data, repair documents, and license agreements, required to accomplish this repair. The Contractor is responsible for the scheduled delivery of a quality product.",
+  "detail_text_length": 644,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/18723c8f0b904d6fac0cad253d58cdca/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78654c32ede44b9bb01a721c760c6f04/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/18723c8f0b904d6fac0cad253d58cdca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c03f8d439f2683cdb504dda0efb8c8a5795ad9e6321356a84fdcd8c695a7a726.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c03f8d439f2683cdb504dda0efb8c8a5795ad9e6321356a84fdcd8c695a7a726.pdf",
+      "file_id": "18723c8f0b904d6fac0cad253d58cdca",
+      "file_name": "SSS-5895015344227IM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 179523,
+      "sha256": "c03f8d439f2683cdb504dda0efb8c8a5795ad9e6321356a84fdcd8c695a7a726"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78654c32ede44b9bb01a721c760c6f04/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4af1cfbf88a46b45473dc3c70f2308c06eab75391cfd2e0e887e52921c9374ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4af1cfbf88a46b45473dc3c70f2308c06eab75391cfd2e0e887e52921c9374ce.pdf",
+      "file_id": "78654c32ede44b9bb01a721c760c6f04",
+      "file_name": "PWS+5895015344227IM+DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 534784,
+      "sha256": "4af1cfbf88a46b45473dc3c70f2308c06eab75391cfd2e0e887e52921c9374ce"
+    }
+  ],
+  "_mirror_hash": "9898daecd80fe472b52d7fd6d0f31ada2f9e0b85eabc8b6b4b1cbde22ea244fe",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.569247+00:00"
+}

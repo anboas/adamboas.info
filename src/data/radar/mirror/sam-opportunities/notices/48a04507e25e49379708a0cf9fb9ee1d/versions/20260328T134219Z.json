@@ -1,0 +1,47 @@
+{
+  "id": "sam-48a04507e25e49379708a0cf9fb9ee1d",
+  "title": "A--Pre-Solicitation Notice",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48a04507e25e49379708a0cf9fb9ee1d",
+  "opportunity_url": "https://sam.gov/opp/48a04507e25e49379708a0cf9fb9ee1d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/48a04507e25e49379708a0cf9fb9ee1d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "48a04507e25e49379708a0cf9fb9ee1d",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "75N94026R00006",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH NICHD",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48a04507e25e49379708a0cf9fb9ee1d",
+  "detail_text": "This is a Pre-Solicitation Notice for RFP 75N94026R00006, Repository of Mouse Models for Down Syndrome. THIS IS NOT A REQUEST FOR PROPOSAL.",
+  "detail_text_length": 139,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a370eae3a9b400b824020b49a818c28/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a370eae3a9b400b824020b49a818c28/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/752afa6b805519e7b6b0b8d5c6a596753398f210c52be13fbbf041276acfb16c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/752afa6b805519e7b6b0b8d5c6a596753398f210c52be13fbbf041276acfb16c.pdf",
+      "file_id": "4a370eae3a9b400b824020b49a818c28",
+      "file_name": "Attachment_6_-_Pre-Solicitation_Notice_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 162376,
+      "sha256": "752afa6b805519e7b6b0b8d5c6a596753398f210c52be13fbbf041276acfb16c"
+    }
+  ],
+  "_mirror_hash": "c8b29113968886629e440d74cd64e588ed053febed539e0787376b4a44a20588",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.462396+00:00"
+}

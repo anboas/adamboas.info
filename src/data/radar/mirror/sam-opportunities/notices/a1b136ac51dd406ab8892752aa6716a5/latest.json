@@ -1,0 +1,57 @@
+{
+  "id": "sam-a1b136ac51dd406ab8892752aa6716a5",
+  "title": "Notice of Intent to Sole Source: IT Support for NOAA Employees and Contractors at the Joint Hydrographic Center",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1b136ac51dd406ab8892752aa6716a5",
+  "opportunity_url": "https://sam.gov/opp/a1b136ac51dd406ab8892752aa6716a5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a1b136ac51dd406ab8892752aa6716a5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a1b136ac51dd406ab8892752aa6716a5",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "REQUIREMENTS-25-4397",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION.DEPT OF COMMERCE NOAA",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1b136ac51dd406ab8892752aa6716a5",
+  "detail_text": "This is a notice of intent to negotiate a sole source contract pursuant to the authority of 41 U.S.C. 1901 as implemented by Revolutionary Federal Acquisition Regulation Overhaul 12.102 “Restricting Competition.” The Government intends to negotiate a five-year (5) firm-fixed-price contract with the University of New Hampshire (UNH) for the National Oceanic and Atmospheric Administration, National Ocean Service, Office of Coast Survey, for Information Technology Support for NOAA employees and NOAA contractors at the Joint Hydrographic Center located at UNH. This requirement is for annual Information Technology (IT) support for NOAA personnel and/or NOAA contractors working collaboratively with UNH researchers and in facilities provided by and shared with UNH. These personnel require IT services and support that is tightly integrated with the UNH IT infrastructure. Due to the combination of physical and IT security concerns, it is not possible to provide the needed support through a third-party contractor. Areas of service include: computers and services, basic IT services, data storage for high-resilience data; and data storage for bulk data. This action is intended to support the IT needs of 15 NOAA users throughout the period of performance, and up to four additional NOAA users (19 total) in any option years.",
+  "detail_text_length": 1331,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b7b754b74554c858da6fa0675944e98/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b8c5e5d36f184de19826ccafdc6d38ed/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b7b754b74554c858da6fa0675944e98/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7dec996384620ff05e49f30fda84f315aeb93e8b4b595a5760f49ef9a608679c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7dec996384620ff05e49f30fda84f315aeb93e8b4b595a5760f49ef9a608679c.pdf",
+      "file_id": "4b7b754b74554c858da6fa0675944e98",
+      "file_name": "01+NOI+Sole+Source+F.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 68752,
+      "sha256": "7dec996384620ff05e49f30fda84f315aeb93e8b4b595a5760f49ef9a608679c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b8c5e5d36f184de19826ccafdc6d38ed/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/06fe2e31bd2534ae765e7f20aca2366bcaea6c6b953d2cc6f9c8862651f5abfc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/06fe2e31bd2534ae765e7f20aca2366bcaea6c6b953d2cc6f9c8862651f5abfc.pdf",
+      "file_id": "b8c5e5d36f184de19826ccafdc6d38ed",
+      "file_name": "01+NOI+Attachment+1+-+Draft+SOW+F.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 271011,
+      "sha256": "06fe2e31bd2534ae765e7f20aca2366bcaea6c6b953d2cc6f9c8862651f5abfc"
+    }
+  ],
+  "_mirror_hash": "0ce53f7f45f81a9493607816aad114cb997bc88d3f6c058862c934c0feb358fb",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.498474+00:00"
+}

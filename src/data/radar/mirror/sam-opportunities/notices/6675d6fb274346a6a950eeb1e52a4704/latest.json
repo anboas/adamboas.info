@@ -1,0 +1,48 @@
+{
+  "id": "sam-6675d6fb274346a6a950eeb1e52a4704",
+  "title": "Data Migration RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6675d6fb274346a6a950eeb1e52a4704",
+  "opportunity_url": "https://sam.gov/opp/6675d6fb274346a6a950eeb1e52a4704/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6675d6fb274346a6a950eeb1e52a4704/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6675d6fb274346a6a950eeb1e52a4704",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA283426Q0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.PRESIDENTIAL AND EXECUTIVE AIRLIFT.FA2834  AFLCMC WV",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6675d6fb274346a6a950eeb1e52a4704",
+  "detail_text": "The United States Air Force, Air Force Life Cycle Management Center, AFLCMC/WVSS is seeking information from interested companies with the capability to deliver a data migration solution for the 3DEXPERIENCE (3DX) platform. Previous efforts configured the application code to serve as a collaboration and approval platform to support the Government's migration to a digital-based acquisition program. The application integrates data from other supporting applications including Cameo and Teamwork Cloud (TWC) and CATIA.",
+  "detail_text_length": 519,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0da0402338441408d909ff429909ff8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0da0402338441408d909ff429909ff8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/59a6afcc6f14a1ce172415e97ba5cbe7af4785dd41378e91e47e4a9097bf89da.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/59a6afcc6f14a1ce172415e97ba5cbe7af4785dd41378e91e47e4a9097bf89da.docx",
+      "file_id": "c0da0402338441408d909ff429909ff8",
+      "file_name": "Data+Migration+RFI+27+March+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 41050,
+      "sha256": "59a6afcc6f14a1ce172415e97ba5cbe7af4785dd41378e91e47e4a9097bf89da"
+    }
+  ],
+  "_mirror_hash": "db2f4074b5df7948a80d40efa3121996e6c62945826cb37ddafd7fd7e1205d83",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.462807+00:00"
+}

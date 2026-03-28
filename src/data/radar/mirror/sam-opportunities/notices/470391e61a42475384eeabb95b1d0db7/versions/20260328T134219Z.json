@@ -1,0 +1,46 @@
+{
+  "id": "sam-470391e61a42475384eeabb95b1d0db7",
+  "title": "Warehouse Storage",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=470391e61a42475384eeabb95b1d0db7",
+  "opportunity_url": "https://sam.gov/opp/470391e61a42475384eeabb95b1d0db7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/470391e61a42475384eeabb95b1d0db7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "470391e61a42475384eeabb95b1d0db7",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6426726Q4040",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-03-30",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=470391e61a42475384eeabb95b1d0db7",
+  "detail_text": "This is a solicitation for noncommercial items prepared in accordance with FAR Part 12, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; offers are being requested and a written solicitation will not be issued. The Naval Surface Warfare Center (NSWC) Corona Division intends to use other than full and open competition to award a sole source Firm Fixed Price (FFP) contract to PFINIX LLC . This is an all-or-none requirement and partial quotes will be deemed unresponsive and will not be evaluated. The Government will award on a single purchase order to the responsible Offeror whose offer conforms to the requirements as stated in the Solicitation and is most advantageous to the Government based on the criteria listed in section L and section M of the Solicitation. Interested parties may identify their interest and capability to respond to the requirement, or by submitting capability statements. This notice of interest is not a request for competitive quotes. Offerors must be registered in SAM and all responsible sources may submit a quotation which, if timely received, will be considered by the Agency. Quotes are due no later than the response date in the posting. Responses/offers shall be submitted electronically, PDF or MS Word Format to email address in the posting. Any amendment(s) issued to this Request for Quote (RFQ) will be published on this website. Therefore, it is the Offerors responsibility to visit this website frequently for updates on this procurement. No telephone requests.",
+  "detail_text_length": 1582,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d18eb2c21d534887ad9d633acb8249a0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d18eb2c21d534887ad9d633acb8249a0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/63291bc776227f33b74ab9d7a2d0cdd74b3023f0f6708f52359bb1eb85558304.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/63291bc776227f33b74ab9d7a2d0cdd74b3023f0f6708f52359bb1eb85558304.pdf",
+      "file_id": "d18eb2c21d534887ad9d633acb8249a0",
+      "file_name": "Solicitation+-+N6426726Q4040.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1838173,
+      "sha256": "63291bc776227f33b74ab9d7a2d0cdd74b3023f0f6708f52359bb1eb85558304"
+    }
+  ],
+  "_mirror_hash": "2ebad41ff343354659079f3013890539141a44d5b4b5fc156d91d47da960dbeb",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.399306+00:00"
+}

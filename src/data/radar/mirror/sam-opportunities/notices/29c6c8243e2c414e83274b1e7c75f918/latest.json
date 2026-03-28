@@ -1,0 +1,46 @@
+{
+  "id": "sam-29c6c8243e2c414e83274b1e7c75f918",
+  "title": "Consumer-Reported Verification Data Sources for State Medicaid Eligibility Determination",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=29c6c8243e2c414e83274b1e7c75f918",
+  "opportunity_url": "https://sam.gov/opp/29c6c8243e2c414e83274b1e7c75f918/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/29c6c8243e2c414e83274b1e7c75f918/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "29c6c8243e2c414e83274b1e7c75f918",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "269998",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.CENTERS FOR MEDICARE AND MEDICAID SERVICES.OFC OF ACQUISITION AND GRANTS MGMT",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=29c6c8243e2c414e83274b1e7c75f918",
+  "detail_text": "This is a Request for Information (RFI) only. This is NOT a solicitation for proposals, proposed abstracts, or quotations, and it does not commit the Centers for Medicare and Medicaid Services (CMS) to award a contract now or in the future. Likewise, responding to this RFI does not guarantee participation in or award under any future procurement. CMS seeks information regarding consumer-reported verification data sources and services to support state Medicaid agencies in meeting federal eligibility determination requirements. CMS is developing the EMMY (Eligibility Made Easy) platform, a centralized, API-based data exchange infrastructure designed to provide participating state Medicaid agencies with standardized access to trusted third-party data sources for eligibility verification. CMS has an operational need for authoritative payroll and employment verification data to support Medicaid eligibility determinations and to prepare for community engagement verification requirements established under the Working Families Tax Cut Act (WFTCA), subject to implementing guidance. CMS is also gathering market intelligence on industry capabilities across other verification data domains relevant to Medicaid eligibility and benefits program compliance, including but not limited to educational enrollment verification, asset and financial verification, and identity verification. This RFI does not signal a single consolidated procurement across all data domains described. Vendors are encouraged to respond to the areas most relevant to their capabilities. Please see Attachment.",
+  "detail_text_length": 1589,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3ff0767cbf442a88ce374a0cdd7dbd2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3ff0767cbf442a88ce374a0cdd7dbd2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/45d1785b3bb19408435f2e3ca948ab34951188e0b483d4109a595660f0849dd9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/45d1785b3bb19408435f2e3ca948ab34951188e0b483d4109a595660f0849dd9.pdf",
+      "file_id": "f3ff0767cbf442a88ce374a0cdd7dbd2",
+      "file_name": "REQUEST+FOR+INFORMATION_EMMY+VERIFICATION+DATA+SERVICES.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 255641,
+      "sha256": "45d1785b3bb19408435f2e3ca948ab34951188e0b483d4109a595660f0849dd9"
+    }
+  ],
+  "_mirror_hash": "14ceee3906ed2e47b6352049c01b0245e5af93c78a6aa6a1c431261b63c10972",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.579293+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-cedefcbbea12429383e90a7c4ae01246",
+  "title": "AI Tools for Medicare Experience Modernization - Request for Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cedefcbbea12429383e90a7c4ae01246",
+  "opportunity_url": "https://sam.gov/opp/cedefcbbea12429383e90a7c4ae01246/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cedefcbbea12429383e90a7c4ae01246/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cedefcbbea12429383e90a7c4ae01246",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "269999",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.CENTERS FOR MEDICARE AND MEDICAID SERVICES.OFC OF ACQUISITION AND GRANTS MGMT",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cedefcbbea12429383e90a7c4ae01246",
+  "detail_text": "This is a Request for Information (RFI) only. This is NOT a solicitation for proposals, proposed abstracts, or quotations, and it does not commit the Centers for Medicare and Medicaid Services (CMS) to award a contract now or in the future. Likewise, responding to this RFI does not guarantee participation in or award under any future procurement. The Centers for Medicare & Medicaid Services (CMS) seeks information regarding artificial intelligence (AI) and machine learning (ML) platforms and services that are capable of enhancing the Medicare experience for beneficiaries across digital and voice channels. CMS is interested in solutions that can provide personalized plan recommendations, conversational AI support, predictive analytics, accessible decision support tools, and call center automation to help Medicare beneficiaries make informed plan choices and maximize their coverage. Please see Attachment.",
+  "detail_text_length": 916,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42c00cab374d422aa68c0717da246582/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42c00cab374d422aa68c0717da246582/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/63246c9cd54707b5fbc033a428ecf662a24a4ca15cbb36fe9832aa2dc5da5de1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/63246c9cd54707b5fbc033a428ecf662a24a4ca15cbb36fe9832aa2dc5da5de1.pdf",
+      "file_id": "42c00cab374d422aa68c0717da246582",
+      "file_name": "CMS_RFI-Sources+Sought_AI+Tools+for+Medicare.gov+-002-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 120047,
+      "sha256": "63246c9cd54707b5fbc033a428ecf662a24a4ca15cbb36fe9832aa2dc5da5de1"
+    }
+  ],
+  "_mirror_hash": "6837287acaf783fe3fdc4f89f5900f9763812d4cdb213d2adc06001fc42fe818",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.426717+00:00"
+}

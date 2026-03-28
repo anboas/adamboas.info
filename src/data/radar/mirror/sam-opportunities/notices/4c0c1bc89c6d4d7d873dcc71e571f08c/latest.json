@@ -1,0 +1,144 @@
+{
+  "id": "sam-4c0c1bc89c6d4d7d873dcc71e571f08c",
+  "title": "N0018926RL009 CNSL MHE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4c0c1bc89c6d4d7d873dcc71e571f08c",
+  "opportunity_url": "https://sam.gov/opp/4c0c1bc89c6d4d7d873dcc71e571f08c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4c0c1bc89c6d4d7d873dcc71e571f08c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4c0c1bc89c6d4d7d873dcc71e571f08c",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926RL009",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4c0c1bc89c6d4d7d873dcc71e571f08c",
+  "detail_text": "MAINTENANCE AND OVERHAUL SERVICES FOR COMMANDER NAVAL SURFACE FORCE, ATLANTIC [CNSL] SHIPBOARD MATERIAL HANDLING EQUIPMENT [MHE] AND SHIPBOARD MOBILE SUPPORT EQUIPMENT [SMSE] CONSISTING OF PREVENTATIVE MAINTENANCE [PM], UNSCHEDULED MAINTENANCE [UM], 12/18-MONTH MAINTENANCE, 18-MONTH WEIGHT TEST AND/OR FORK CERTIFICATION, TECHNICAL TROUBLESHOOTER [TTS], TRANSPORTATION SERVICES AND ADMINISTRATIVE SUPPORT [ADMIN]",
+  "detail_text_length": 413,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ccd5bd1032240cdb7d19032d20d1877/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4191bcdf882b403292f368b8fb4ec246/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71d7a85aed8d4762931a8a677074b72b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/816f1bcdf96b4bc2bc8d3ab114d833ec/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e5d2e9eea4d4a1981d2836b0a9e6350/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/994b593e4825428aa41b688d5ec41c4a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9cc7c219c2f840939110cf005dd3ca5b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c26bfe91746447a7b66fa69d1aa8adc0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbc5708fe3744877bc546a2b35276296/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e81f8743f6394d3ab8140ea323e786fe/download"
+  ],
+  "resource_count": 10,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ccd5bd1032240cdb7d19032d20d1877/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/350b92ae5eef8512f941c033ed4921f09d09fde16dff0c8d8f311b73edd4f2c2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/350b92ae5eef8512f941c033ed4921f09d09fde16dff0c8d8f311b73edd4f2c2.pdf",
+      "file_id": "2ccd5bd1032240cdb7d19032d20d1877",
+      "file_name": "Attachment+8+CDR.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 97787,
+      "sha256": "350b92ae5eef8512f941c033ed4921f09d09fde16dff0c8d8f311b73edd4f2c2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4191bcdf882b403292f368b8fb4ec246/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ae5e16124f42f93b45cb44a301bbccd0df333fdf78fd86b2ae266d0774439b2c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ae5e16124f42f93b45cb44a301bbccd0df333fdf78fd86b2ae266d0774439b2c.docx",
+      "file_id": "4191bcdf882b403292f368b8fb4ec246",
+      "file_name": "Attachment+6+Past+Performance+Report+Form.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 33932,
+      "sha256": "ae5e16124f42f93b45cb44a301bbccd0df333fdf78fd86b2ae266d0774439b2c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71d7a85aed8d4762931a8a677074b72b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9cb5089fa3863d64275d48af1784dc95137d6fa694104c2d5e886295b8f6d660.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9cb5089fa3863d64275d48af1784dc95137d6fa694104c2d5e886295b8f6d660.docx",
+      "file_id": "71d7a85aed8d4762931a8a677074b72b",
+      "file_name": "Attachment+5+Past+Performance+Info+Form.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14337,
+      "sha256": "9cb5089fa3863d64275d48af1784dc95137d6fa694104c2d5e886295b8f6d660"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/816f1bcdf96b4bc2bc8d3ab114d833ec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/278c81e0f3bed09d3fb6128a1387433225bcdf580df11ff705c16ff691a000e1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/278c81e0f3bed09d3fb6128a1387433225bcdf580df11ff705c16ff691a000e1.pdf",
+      "file_id": "816f1bcdf96b4bc2bc8d3ab114d833ec",
+      "file_name": "Attachment+3+QUALITY+ASSURANCE+SURVEILLANCE+PLAN+AND+MATRIX.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99599,
+      "sha256": "278c81e0f3bed09d3fb6128a1387433225bcdf580df11ff705c16ff691a000e1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e5d2e9eea4d4a1981d2836b0a9e6350/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4bb0d1c31753ac490f6378510ac3bf399ab40de4104ece4ffd7f85ce6c295e11.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4bb0d1c31753ac490f6378510ac3bf399ab40de4104ece4ffd7f85ce6c295e11.pdf",
+      "file_id": "8e5d2e9eea4d4a1981d2836b0a9e6350",
+      "file_name": "Solicitation+-+N0018926RL009.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1952887,
+      "sha256": "4bb0d1c31753ac490f6378510ac3bf399ab40de4104ece4ffd7f85ce6c295e11"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/994b593e4825428aa41b688d5ec41c4a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1857b7710fa312d3da73bc6cd58703a8c58df3adcbf2c99fe237f7c8c4beb526.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1857b7710fa312d3da73bc6cd58703a8c58df3adcbf2c99fe237f7c8c4beb526.pdf",
+      "file_id": "994b593e4825428aa41b688d5ec41c4a",
+      "file_name": "Attachment+7+WD+2015-4341.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 476969,
+      "sha256": "1857b7710fa312d3da73bc6cd58703a8c58df3adcbf2c99fe237f7c8c4beb526"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9cc7c219c2f840939110cf005dd3ca5b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4c4c03a2290caebe151d3bb47297004977b832b7d3bdfff4408f193fe215ea92.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4c4c03a2290caebe151d3bb47297004977b832b7d3bdfff4408f193fe215ea92.pdf",
+      "file_id": "9cc7c219c2f840939110cf005dd3ca5b",
+      "file_name": "Attachment+9+List+of+Government+Furnished+Property.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 182361,
+      "sha256": "4c4c03a2290caebe151d3bb47297004977b832b7d3bdfff4408f193fe215ea92"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c26bfe91746447a7b66fa69d1aa8adc0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c827b6faf4a004d0eb817f909d26728c57536b581c59cbc3a386a749588c18a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c827b6faf4a004d0eb817f909d26728c57536b581c59cbc3a386a749588c18a.pdf",
+      "file_id": "c26bfe91746447a7b66fa69d1aa8adc0",
+      "file_name": "Attachment+1+CNSL+MHE+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 236628,
+      "sha256": "7c827b6faf4a004d0eb817f909d26728c57536b581c59cbc3a386a749588c18a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cbc5708fe3744877bc546a2b35276296/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e810979d4b66ed9ef1deca6dd962846aa33ce118da66a040604206b2aaf6210c.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e810979d4b66ed9ef1deca6dd962846aa33ce118da66a040604206b2aaf6210c.xlsx",
+      "file_id": "cbc5708fe3744877bc546a2b35276296",
+      "file_name": "Attachment+2+Level+of+Effort+Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 37831,
+      "sha256": "e810979d4b66ed9ef1deca6dd962846aa33ce118da66a040604206b2aaf6210c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e81f8743f6394d3ab8140ea323e786fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/32c3f1141b64da84736d0602aba778c60db7de538887cbb3001de8d58f66b5bc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/32c3f1141b64da84736d0602aba778c60db7de538887cbb3001de8d58f66b5bc.pdf",
+      "file_id": "e81f8743f6394d3ab8140ea323e786fe",
+      "file_name": "Attachment+4+CAP+Cost.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125691,
+      "sha256": "32c3f1141b64da84736d0602aba778c60db7de538887cbb3001de8d58f66b5bc"
+    }
+  ],
+  "_mirror_hash": "068caa3566b30b04f56d1933c5a4b12fa20991e70e4a7b467d45970dba3b9c52",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.468035+00:00"
+}

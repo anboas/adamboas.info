@@ -1,0 +1,92 @@
+{
+  "id": "sam-3b20af1090d0487d9ce6d12cd687b4bb",
+  "title": "5820--VHA High Frequency Radio Network RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b20af1090d0487d9ce6d12cd687b4bb",
+  "opportunity_url": "https://sam.gov/opp/3b20af1090d0487d9ce6d12cd687b4bb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3b20af1090d0487d9ce6d12cd687b4bb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3b20af1090d0487d9ce6d12cd687b4bb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0267",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b20af1090d0487d9ce6d12cd687b4bb",
+  "detail_text": "See Attached RFI QA 36C10B26Q0267 3.27.26.xlsx See Attached Facilities List HF Radio\\RFI\\VHA Facility Inventory (HFRN).xlsx",
+  "detail_text_length": 123,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/379fc982e798448a8bd185f9d7e90b28/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a4106ebdcb54ea5976d2c0f3f7d7318/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82ed2d6519d0465d94956d359cbefa1a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/adf7eae23a6f40a686fd2b0f92e788b5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c30f7b05ed824a4cbfb8efbd5d104c33/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/379fc982e798448a8bd185f9d7e90b28/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1916742acc60ff1747cd917a1fee5243af982382de0b1f13ad609ac558f8397f.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1916742acc60ff1747cd917a1fee5243af982382de0b1f13ad609ac558f8397f.xlsx",
+      "file_id": "379fc982e798448a8bd185f9d7e90b28",
+      "file_name": "VHA+Facility+Inventory+HFRN.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36518,
+      "sha256": "1916742acc60ff1747cd917a1fee5243af982382de0b1f13ad609ac558f8397f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a4106ebdcb54ea5976d2c0f3f7d7318/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/42652bd8c273a7b2cbe880e15b9192ad2ec8ce274219e484354ae1be315de44d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/42652bd8c273a7b2cbe880e15b9192ad2ec8ce274219e484354ae1be315de44d.docx",
+      "file_id": "4a4106ebdcb54ea5976d2c0f3f7d7318",
+      "file_name": "36C10B26Q0267.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 34152,
+      "sha256": "42652bd8c273a7b2cbe880e15b9192ad2ec8ce274219e484354ae1be315de44d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82ed2d6519d0465d94956d359cbefa1a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/00ca8389631a022ef68e031293b3af8977f11e068717e792da70f6ff16ec8a48.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/00ca8389631a022ef68e031293b3af8977f11e068717e792da70f6ff16ec8a48.docx",
+      "file_id": "82ed2d6519d0465d94956d359cbefa1a",
+      "file_name": "36C10B26Q0267+0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14408,
+      "sha256": "00ca8389631a022ef68e031293b3af8977f11e068717e792da70f6ff16ec8a48"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/adf7eae23a6f40a686fd2b0f92e788b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5386079c3b8a87134202f2ca139eb2d1e61c7ae9fd25453da3ec6309218c13f1.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5386079c3b8a87134202f2ca139eb2d1e61c7ae9fd25453da3ec6309218c13f1.xlsx",
+      "file_id": "adf7eae23a6f40a686fd2b0f92e788b5",
+      "file_name": "RFI+QA+36C10B26Q0267+3.27.26.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11190,
+      "sha256": "5386079c3b8a87134202f2ca139eb2d1e61c7ae9fd25453da3ec6309218c13f1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c30f7b05ed824a4cbfb8efbd5d104c33/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d8644e354ce48f4f5fbcbbcbbe4ad56b81b0c8fe6683795746e9eafae99e4310.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d8644e354ce48f4f5fbcbbcbbe4ad56b81b0c8fe6683795746e9eafae99e4310.docx",
+      "file_id": "c30f7b05ed824a4cbfb8efbd5d104c33",
+      "file_name": "36C10B26Q0267+0002.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14460,
+      "sha256": "d8644e354ce48f4f5fbcbbcbbe4ad56b81b0c8fe6683795746e9eafae99e4310"
+    }
+  ],
+  "_mirror_hash": "da44aca9bc69902ab3e1849c9d5b66c2bea404622ee21421bbf4cf461ab320e3",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.431706+00:00"
+}

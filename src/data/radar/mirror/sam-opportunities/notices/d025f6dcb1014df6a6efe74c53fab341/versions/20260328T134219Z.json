@@ -1,0 +1,57 @@
+{
+  "id": "sam-d025f6dcb1014df6a6efe74c53fab341",
+  "title": "Federal Mediation and Conciliation Service Application Development and Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d025f6dcb1014df6a6efe74c53fab341",
+  "opportunity_url": "https://sam.gov/opp/d025f6dcb1014df6a6efe74c53fab341/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d025f6dcb1014df6a6efe74c53fab341/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d025f6dcb1014df6a6efe74c53fab341",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "93310026Q1001",
+  "agency_path": "FEDERAL MEDIATION AND CONCILIATION SERVICE.FEDERAL MEDIATION AND CONCILIATION SERVICE.FMCS",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d025f6dcb1014df6a6efe74c53fab341",
+  "detail_text": "The Federal Mediation and Conciliation Service (FMCS) is issuing this Sources Sought notice for market research purposes to identify qualified and interested firms capable of providing Application Development and Support Services (ADSS) in support of the agency’s Microsoft 365 (M365) environment and related systems. The anticipated requirement includes application development, system enhancements, operations and maintenance (O&M), and modernization support across multiple enterprise applications and platforms. Draft Statement of Work (SOW) A draft Statement of Work (SOW) is attached for informational and planning purposes only. The draft SOW is not final and may be revised based on responses received to this notice. Vendors are encouraged to review the draft SOW and provide feedback to help refine the requirement and support acquisition planning. Purpose of This Notice This notice is issued in accordance with FAR Part 10 to: Conduct market research Support development of an Independent Government Cost Estimate (IGCE) Determine the appropriate acquisition strategy, including potential small business set-aside decisions This is not a solicitation , and the Government does not intend to award a contract based on responses. NAICS Code The Government is considering NAICS codes 541512 and 541519 . Vendors are encouraged to recommend the most appropriate NAICS code.",
+  "detail_text_length": 1381,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/438d42831cde4a2196878d3540ac47ec/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffd037f9d0f044e7a08a2d339f67de6f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/438d42831cde4a2196878d3540ac47ec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/225bf4808b600805bcd00324da405b9be1adf1c6ba51c90b5f1aaa354be419a8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/225bf4808b600805bcd00324da405b9be1adf1c6ba51c90b5f1aaa354be419a8.docx",
+      "file_id": "438d42831cde4a2196878d3540ac47ec",
+      "file_name": "ADSS_DRAFT+-SOW-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 34503,
+      "sha256": "225bf4808b600805bcd00324da405b9be1adf1c6ba51c90b5f1aaa354be419a8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffd037f9d0f044e7a08a2d339f67de6f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7281a24e22eb92acdf14badac0659e02906b007efb43d227c0e180a0fb7b05a2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7281a24e22eb92acdf14badac0659e02906b007efb43d227c0e180a0fb7b05a2.pdf",
+      "file_id": "ffd037f9d0f044e7a08a2d339f67de6f",
+      "file_name": "FMCS+ADSS+Sources_Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 130062,
+      "sha256": "7281a24e22eb92acdf14badac0659e02906b007efb43d227c0e180a0fb7b05a2"
+    }
+  ],
+  "_mirror_hash": "2dacb904f09a014cb9a8bd6252ee79d939af2aa3d17c893e04df2375803049bb",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.552483+00:00"
+}

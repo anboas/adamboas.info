@@ -1,0 +1,57 @@
+{
+  "id": "sam-5ff454605c054000a0727b637f74cb97",
+  "title": "Acquisition and Technical Programmatic Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5ff454605c054000a0727b637f74cb97",
+  "opportunity_url": "https://sam.gov/opp/5ff454605c054000a0727b637f74cb97/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5ff454605c054000a0727b637f74cb97/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5ff454605c054000a0727b637f74cb97",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ATPS2026",
+  "agency_path": "TRANSPORTATION, DEPARTMENT OF.FEDERAL TRANSIT ADMINISTRATION.693195 OFFICE OF ACQUISITION MGT",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5ff454605c054000a0727b637f74cb97",
+  "detail_text": "The purpose of this acquisition is to provide acquisition and technical programmatic support services for TAD-40 in support of its critical mission requirements.",
+  "detail_text_length": 161,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d0e030c69dc4ee9a2103f541d86e164/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9fec89c9c414789832dbe7d6b6ac5cd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d0e030c69dc4ee9a2103f541d86e164/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf8c8e7447b55370177ca53ed171fbdeb3a0904720380942cd575fe869b156cb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf8c8e7447b55370177ca53ed171fbdeb3a0904720380942cd575fe869b156cb.docx",
+      "file_id": "4d0e030c69dc4ee9a2103f541d86e164",
+      "file_name": "RFI-ACQ+and+Tech+Programmatic+-+TAD40+-+2026+COv3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25142,
+      "sha256": "bf8c8e7447b55370177ca53ed171fbdeb3a0904720380942cd575fe869b156cb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9fec89c9c414789832dbe7d6b6ac5cd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/34835eb7e2758c4c296a790ae76e52f216576f69f48b87b46cad68cd4ce935a0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/34835eb7e2758c4c296a790ae76e52f216576f69f48b87b46cad68cd4ce935a0.docx",
+      "file_id": "d9fec89c9c414789832dbe7d6b6ac5cd",
+      "file_name": "ACQ+and+Technical+Programmatic+Support+SOW+2026+COv3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2685128,
+      "sha256": "34835eb7e2758c4c296a790ae76e52f216576f69f48b87b46cad68cd4ce935a0"
+    }
+  ],
+  "_mirror_hash": "4ef3db09cd24201156bce90024ec16bf7b9b557360cd1990e2b82aeb5768949d",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.576832+00:00"
+}

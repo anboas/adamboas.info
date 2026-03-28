@@ -1,0 +1,69 @@
+{
+  "id": "sam-cedeafa849b740bda8eb16d89ffd9c3e",
+  "title": "F--CHALLIS FIELD OFFICE VAULT PUMPING Sources Sought",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cedeafa849b740bda8eb16d89ffd9c3e",
+  "opportunity_url": "https://sam.gov/opp/cedeafa849b740bda8eb16d89ffd9c3e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cedeafa849b740bda8eb16d89ffd9c3e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cedeafa849b740bda8eb16d89ffd9c3e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DOILFBO260013",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.IDAHO STATE OFFICE",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cedeafa849b740bda8eb16d89ffd9c3e",
+  "detail_text": "The Bureau of Land Management, Idaho, is seeking small business sources capable of providing vault pumping services in the Challis and Mackay areas. Interested sources must be registered/active in SAM and capable of receiving government contracts. Interested sources should email the Contracting Officer Heather McBride at heather_mcbride@ios.doi.gov with a capability statement, as well as company information (UEI/DUNS, Business size status, etc), as well as indicating interest in serving one or both areas specified in the requirement, and any potential areas of concern in the draft documents if noted. Interested sources must be legally authorized to provide proposed service. Provided information will assist the CO in determining set-aside and overall structure of the requirement for forthcoming solicitation.",
+  "detail_text_length": 818,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24d52cc95d0d46e281dffe983c7033d7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/459e86aebd084b8aa67b683be929cdb5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e692c2ca90ef41188b3721d42f41a6f8/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24d52cc95d0d46e281dffe983c7033d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b9237a62126905d8fd3ad91b9cbfc6b653fe74c0625f94ad81b72565000f364.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b9237a62126905d8fd3ad91b9cbfc6b653fe74c0625f94ad81b72565000f364.pdf",
+      "file_id": "24d52cc95d0d46e281dffe983c7033d7",
+      "file_name": "Appendix_1_-_BPA_Pricing_Schedule_DRAFT_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 107199,
+      "sha256": "8b9237a62126905d8fd3ad91b9cbfc6b653fe74c0625f94ad81b72565000f364"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/459e86aebd084b8aa67b683be929cdb5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b5182c356a1bd14048eaf798e563dd6ebb07ff112ff4e0f410a7fab4a12bfe8b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b5182c356a1bd14048eaf798e563dd6ebb07ff112ff4e0f410a7fab4a12bfe8b.pdf",
+      "file_id": "459e86aebd084b8aa67b683be929cdb5",
+      "file_name": "Attachment_2_-_Vault_Locations_DRAFT_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12051551,
+      "sha256": "b5182c356a1bd14048eaf798e563dd6ebb07ff112ff4e0f410a7fab4a12bfe8b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e692c2ca90ef41188b3721d42f41a6f8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b9e62d8d4c4c99f5c7cb903554ec0f0600e395ef15a9324c69aef7205a790b4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b9e62d8d4c4c99f5c7cb903554ec0f0600e395ef15a9324c69aef7205a790b4.pdf",
+      "file_id": "e692c2ca90ef41188b3721d42f41a6f8",
+      "file_name": "Attachment_1_-_Vault_Pumping_SOW_DRAFT_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145499,
+      "sha256": "8b9e62d8d4c4c99f5c7cb903554ec0f0600e395ef15a9324c69aef7205a790b4"
+    }
+  ],
+  "_mirror_hash": "195ae91b2f63137f949a5ce91eb36c94d5d43bce82db25de6daf17fadc694653",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.443193+00:00"
+}

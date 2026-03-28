@@ -1,0 +1,46 @@
+{
+  "id": "sam-ee5a3b6038af497e9a33702efb1c8ab2",
+  "title": "Notice to Industry - Application of Cybersecurity Maturity Model Certification (CMMC) Requirements",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee5a3b6038af497e9a33702efb1c8ab2",
+  "opportunity_url": "https://sam.gov/opp/ee5a3b6038af497e9a33702efb1c8ab2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ee5a3b6038af497e9a33702efb1c8ab2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ee5a3b6038af497e9a33702efb1c8ab2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N62473CMMCNotice",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2028-11-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee5a3b6038af497e9a33702efb1c8ab2",
+  "detail_text": "Notice to Industry – Application of Cybersecurity Maturity Model Certification (CMMC) Requirements NAVFAC SOUTHWEST (SW) provides this notice to Industry to inform current and prospective contractors about the CMMC Requirements under all NAVFAC SW Planning, Design and Construction (PDC) Multiple Award Construction Contracts (MACCs) and Architect-Engineer IDIQ Contracts. Future contract actions shall include the CMMC requirements in accordance with Department of War (DoW) implementation of the CMMC program. As DoW continues implementation of the CMMC program, solicitations and contracts shall identify when contractor information systems are expected to process, store, or transmit Federal Contract Information (FCI) or Controlled Unclassified Information (CUI). The applicable CMMC level will be identified in the solicitation and contract. Offerors shall be required to have a current CMMC status recorded in the Supplier Performance Risk System (SPRS), including applicable assessment results and affirmations, as a condition of award for the contract, task order, and associated options where CMMC requirements apply. In order to receive an IDIQ award from NAVFAC SW PDC, on or after November 10, 2026, prospective contractors must show that they have obtained a CMMC Level 2 (C3PAO) or higher. Task orders issued under NAVFAC SW IDIQs may be assigned a CMMC Level below Level 2 (C3PAO); however, for the majority of work under Construction and Architect-Engineering IDIQs, it is anticipated that a Level 2 (C3PAO) certification will be required after November 10, 2026. Immediate Steps Required We urge all contractors and subcontractors to take the following immediate steps to prevent any disruption to your contract eligibility: Access SPRS: Log in to the SPRS on PIEE, at https://piee.eb.mil/ SPRS Vendor (Role) & Cyber Reports Access: https://www.sprs.csd.disa.mil/pdf/SPRS_Access_CyberReports.pdf SPRS CMMC Level 2 Entry tutorial: https://www.sprs.csd.disa.mil/videos/Tutorials/CMMCL2SelfAssessment/CMMCLevel2selfassessmenttutorial.html How to upload CMMC Level Training offered on SPRS as an Affirming Official (AO) https://www.sprs.csd.disa.mil/cmmc.htm Verify Your Status: Confirm that your firm has a current CMMC status type properly posted in SPRS. Ensure Accuracy: Validate that the posted CMMC status type accurately reflects your current cybersecurity posture as it aligns with the CMMC level required by your existing or potential contracts. This notice is for informational purposes only and does not constitute a solicitation, a request for proposal, nor a guarantee of award.",
+  "detail_text_length": 2605,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d1ca946e8dc40c3ac9a0a9fe23d71e4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d1ca946e8dc40c3ac9a0a9fe23d71e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3b83133aa722105dc1cb2791e2bf3ef91a4cfd0dc21eea619b0909532d5b1f63.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3b83133aa722105dc1cb2791e2bf3ef91a4cfd0dc21eea619b0909532d5b1f63.pdf",
+      "file_id": "2d1ca946e8dc40c3ac9a0a9fe23d71e4",
+      "file_name": "Notice+to+Industry+Statement+for+Sam.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58798,
+      "sha256": "3b83133aa722105dc1cb2791e2bf3ef91a4cfd0dc21eea619b0909532d5b1f63"
+    }
+  ],
+  "_mirror_hash": "bf0ede0054992ed8169758ffc993d43e148edda77ff8cc4aa86e2839db2f3014",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.601016+00:00"
+}

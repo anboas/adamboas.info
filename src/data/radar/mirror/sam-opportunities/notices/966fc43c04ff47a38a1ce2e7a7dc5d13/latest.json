@@ -1,0 +1,57 @@
+{
+  "id": "sam-966fc43c04ff47a38a1ce2e7a7dc5d13",
+  "title": "2026 Base Laundry Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=966fc43c04ff47a38a1ce2e7a7dc5d13",
+  "opportunity_url": "https://sam.gov/opp/966fc43c04ff47a38a1ce2e7a7dc5d13/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/966fc43c04ff47a38a1ce2e7a7dc5d13/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "966fc43c04ff47a38a1ce2e7a7dc5d13",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA4626-26-BASE-LAUNDRY-SVCE",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4626  341 CONS  LGC",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=966fc43c04ff47a38a1ce2e7a7dc5d13",
+  "detail_text": "This procurement is for a non-personal service to provide all personnel, equipment, transportation, materials, supplies, and supervision necessary to provide laundry and dry cleaning services, including pick-up and delivery for multiple locations at Malmstrom AFB as described in the PWS (attachment 1). The contractor shall establish a complete quality control program to ensure the requirements of the contract are provided as specified.",
+  "detail_text_length": 439,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e75dc1fcab7457482a7e2a22531a1c1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c10def8f45d541f1984afd323f6f3e9c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e75dc1fcab7457482a7e2a22531a1c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0dfc80ab7015fe46c4eae5b2e613edb60a2c2a1fbc634e70ff1f2ac830929488.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0dfc80ab7015fe46c4eae5b2e613edb60a2c2a1fbc634e70ff1f2ac830929488.pdf",
+      "file_id": "3e75dc1fcab7457482a7e2a22531a1c1",
+      "file_name": "Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 229013,
+      "sha256": "0dfc80ab7015fe46c4eae5b2e613edb60a2c2a1fbc634e70ff1f2ac830929488"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c10def8f45d541f1984afd323f6f3e9c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8f925da03c317b5e2bd2a421f3597172060d53d839f2d2d864e9417e29d7b46e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8f925da03c317b5e2bd2a421f3597172060d53d839f2d2d864e9417e29d7b46e.pdf",
+      "file_id": "c10def8f45d541f1984afd323f6f3e9c",
+      "file_name": "PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 365558,
+      "sha256": "8f925da03c317b5e2bd2a421f3597172060d53d839f2d2d864e9417e29d7b46e"
+    }
+  ],
+  "_mirror_hash": "5ab89909d21eee42bc4cc884a892422393e1a2b5ded46d58a6eb66aa88971665",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.559559+00:00"
+}

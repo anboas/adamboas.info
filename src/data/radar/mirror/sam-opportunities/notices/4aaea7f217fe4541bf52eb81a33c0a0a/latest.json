@@ -1,0 +1,45 @@
+{
+  "id": "sam-4aaea7f217fe4541bf52eb81a33c0a0a",
+  "title": "Sole Source to J. Byler Rivet Supply Inc., Huck Tools",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4aaea7f217fe4541bf52eb81a33c0a0a",
+  "opportunity_url": "https://sam.gov/opp/4aaea7f217fe4541bf52eb81a33c0a0a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4aaea7f217fe4541bf52eb81a33c0a0a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4aaea7f217fe4541bf52eb81a33c0a0a",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0034",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4aaea7f217fe4541bf52eb81a33c0a0a",
+  "detail_text": "See attached cobmined synopsis / solicitation document.",
+  "detail_text_length": 55,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/34fb881ef198448b939c8b1eb1bebb5f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/34fb881ef198448b939c8b1eb1bebb5f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8dd4e6d41315395afad7330eafc86b1239537e6ecbf4a81bd27b1c3de304e2fe.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8dd4e6d41315395afad7330eafc86b1239537e6ecbf4a81bd27b1c3de304e2fe.pdf",
+      "file_id": "34fb881ef198448b939c8b1eb1bebb5f",
+      "file_name": "2.1.1+26Q0034+Combined+Synopsis+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 374884,
+      "sha256": "8dd4e6d41315395afad7330eafc86b1239537e6ecbf4a81bd27b1c3de304e2fe"
+    }
+  ],
+  "_mirror_hash": "43480986122c0df4150a039b881393008efa5a973810936fef22b4f9580cf387",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.432805+00:00"
+}

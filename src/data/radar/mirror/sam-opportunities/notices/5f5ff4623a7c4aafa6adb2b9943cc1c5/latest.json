@@ -1,0 +1,58 @@
+{
+  "id": "sam-5f5ff4623a7c4aafa6adb2b9943cc1c5",
+  "title": "FMCS Documentation Strategy Sources Sought",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f5ff4623a7c4aafa6adb2b9943cc1c5",
+  "opportunity_url": "https://sam.gov/opp/5f5ff4623a7c4aafa6adb2b9943cc1c5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5f5ff4623a7c4aafa6adb2b9943cc1c5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5f5ff4623a7c4aafa6adb2b9943cc1c5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "93310026Q1002",
+  "agency_path": "FEDERAL MEDIATION AND CONCILIATION SERVICE.FEDERAL MEDIATION AND CONCILIATION SERVICE.FMCS",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f5ff4623a7c4aafa6adb2b9943cc1c5",
+  "detail_text": "Description of Requirement The Federal Mediation and Conciliation Service (FMCS) is issuing this Sources Sought notice for market research purposes to identify qualified and interested firms capable of providing enterprise technical documentation, modernization strategy development, and roadmap development services in support of the agency’s enterprise IT environment. The anticipated requirement includes development of system documentation packages, modernization assessments, future-state architecture, and migration roadmaps across multiple enterprise systems and platforms. Draft Performance Work Statement (PWS) A draft Performance Work Statement (PWS) is attached for informational and planning purposes only. The draft PWS is not final and may be revised based on responses received to this Sources Sought notice. The Government is seeking industry feedback to help refine the requirement, validate the proposed scope, and support acquisition planning. Vendors are encouraged to review the draft PWS and provide feedback, including: Identification of unclear or ambiguous requirements Recommendations to improve clarity, feasibility, or performance outcomes Identification of any overly restrictive language Suggestions to align the requirement with industry best practices Purpose of This Notice This notice is issued in accordance with FAR Part 10 to: Conduct market research Support development of an Independent Government Cost Estimate (IGCE) Determine the appropriate acquisition strategy, including potential small business set-aside decisions This is not a solicitation , and the Government does not intend to award a contract based on responses to this notice.",
+  "detail_text_length": 1679,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05ce05983ff941ada62d9387ca53d596/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/13b46c4904c24edc88daa8238e6dec5b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05ce05983ff941ada62d9387ca53d596/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79c38c19d8dc2b51c6fc85c0c2a5c4cb2d2c7b0d3d8a4b29ddeff724ad7e38fd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79c38c19d8dc2b51c6fc85c0c2a5c4cb2d2c7b0d3d8a4b29ddeff724ad7e38fd.docx",
+      "file_id": "05ce05983ff941ada62d9387ca53d596",
+      "file_name": "FMCS_IT_Applications_DocumentationRoadmap_PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19276,
+      "sha256": "79c38c19d8dc2b51c6fc85c0c2a5c4cb2d2c7b0d3d8a4b29ddeff724ad7e38fd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/13b46c4904c24edc88daa8238e6dec5b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c78e3074069003fc164ce2dfdfd6a5b834777774635b2daaeeb8aca8b6f03246.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c78e3074069003fc164ce2dfdfd6a5b834777774635b2daaeeb8aca8b6f03246.pdf",
+      "file_id": "13b46c4904c24edc88daa8238e6dec5b",
+      "file_name": "FMCS+Documentation+Strategy+Sources+Sought+FINAL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 110534,
+      "sha256": "c78e3074069003fc164ce2dfdfd6a5b834777774635b2daaeeb8aca8b6f03246"
+    }
+  ],
+  "_mirror_hash": "f875c2416d008e57f7ec7c33f3c18f8c3c3ab1918aedd21323a7f5827b026e60",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.448937+00:00"
+}

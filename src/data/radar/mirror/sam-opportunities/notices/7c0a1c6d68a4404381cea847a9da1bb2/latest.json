@@ -1,0 +1,56 @@
+{
+  "id": "sam-7c0a1c6d68a4404381cea847a9da1bb2",
+  "title": "INSULATION FIRE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c0a1c6d68a4404381cea847a9da1bb2",
+  "opportunity_url": "https://sam.gov/opp/7c0a1c6d68a4404381cea847a9da1bb2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7c0a1c6d68a4404381cea847a9da1bb2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7c0a1c6d68a4404381cea847a9da1bb2",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0043",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-27",
+  "response_deadline": "2026-04-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c0a1c6d68a4404381cea847a9da1bb2",
+  "detail_text": "Please see attached solicitation posted on INSULATION FIRE. This requirement is a brand name CLAREMONT SALES CORP. See attached solicitation for complete requirement.",
+  "detail_text_length": 166,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a2a7c828f9d45a8a2abdcdcd051f937/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e2cc89734e1468f9c5b574f92a166b1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a2a7c828f9d45a8a2abdcdcd051f937/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1c4105766b9f67be7aa29fc2fe9d0013e88cae6e1d451d43db12ca7e77a190a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1c4105766b9f67be7aa29fc2fe9d0013e88cae6e1d451d43db12ca7e77a190a.pdf",
+      "file_id": "5a2a7c828f9d45a8a2abdcdcd051f937",
+      "file_name": "Solicitation+-+N0040626Q0043.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1847237,
+      "sha256": "b1c4105766b9f67be7aa29fc2fe9d0013e88cae6e1d451d43db12ca7e77a190a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e2cc89734e1468f9c5b574f92a166b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/56a3d6c2621a93507a4f5aa2724633d2a7d0b7517a56676a225dac0cc6fcc443.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/56a3d6c2621a93507a4f5aa2724633d2a7d0b7517a56676a225dac0cc6fcc443.pdf",
+      "file_id": "5e2cc89734e1468f9c5b574f92a166b1",
+      "file_name": "1.4+1301335722+BN+REDACTED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 318302,
+      "sha256": "56a3d6c2621a93507a4f5aa2724633d2a7d0b7517a56676a225dac0cc6fcc443"
+    }
+  ],
+  "_mirror_hash": "3f4cb8b1912c3026ba2f6ef56682ec752aa54755c42a86a75e145c99f76dd1ab",
+  "_mirror_run_id": "20260328T134219Z",
+  "_mirror_recorded_at": "2026-03-28T13:44:56.438289+00:00"
+}
