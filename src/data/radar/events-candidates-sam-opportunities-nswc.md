@@ -1,9 +1,9 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-28T13:45:50.002656+00:00
+Generated: 2026-03-29T13:44:04.534375+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/28/2026
+Posted range: 01/01/2026 -> 03/29/2026
 
 ## Counts
 - Total candidates: 417

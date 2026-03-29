@@ -1,24 +1,24 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-28T13:45:33.160516+00:00
+Generated: 2026-03-29T13:43:46.364530+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/28/2026
+Posted range: 01/01/2026 -> 03/29/2026
 
 ## Counts
 - Total candidates: 281
 - Navy-related: 0
 - Full detail cached: 281
-- Notices with attachments: 213
-- Total attachment links: 620
-- Pre-solicitation: 73
-- Sources Sought: 149
+- Notices with attachments: 214
+- Total attachment links: 621
+- Pre-solicitation: 74
+- Sources Sought: 148
 - Special Notice: 59
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 111
-- Sources Sought: 149
+- Pre-solicitation: 112
+- Sources Sought: 148
 - Special Notice: 59
 
 ## Top candidates
@@ -145,7 +145,6 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 2 | Special Notice | Special Notice | 2026-03-20 | 2026-03-27 | DEPT OF DEFENSE | [SAS Software Maintenance Licenses and new licenses](https://sam.gov/opp/4d9ace2d4196442cbdc602be5e87b835/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-20 | 2026-03-27 | DEPT OF DEFENSE | [Spares Procurement for the F-15/ Support, Turbine](https://sam.gov/opp/7cf5b469244e459c997c965e86032070/view) |
 | 2 | Special Notice | Special Notice | 2026-03-23 | 2026-03-27 | DEPT OF DEFENSE | [Max-Air Compressor SKIDS](https://sam.gov/opp/79d3a8f1459a43268252b451f66e9db7/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-23 | 2026-03-27 | DEPT OF DEFENSE | [Pre-Fabricated Transportable Bunkers](https://sam.gov/opp/422d9f4015fb4fe09a4cb54909d3ab01/view) |
 | 2 | Special Notice | Special Notice | 2026-03-24 | 2026-03-27 | DEPT OF DEFENSE | [Intent to Award Sole Source - Pointwise 2026](https://sam.gov/opp/35a5df2987ff4f51a59af95bb0e49ee2/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-24 | 2026-03-27 | DEPT OF DEFENSE | [Notice of Intent to Sole-Source Protected Tactical Enterprise Service (PTES) Protected Tactical Waveform (PTW) over Protected Tactical SATCOM-Global (PTS-G) Joint Hubs (NON-VARIANT)](https://sam.gov/opp/983f853f838646d789d1b9342bfa96b2/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-25 | 2026-03-27 | DEPT OF DEFENSE | [Market Research Request: Vcinity Software and Professional Services](https://sam.gov/opp/22fa6bdfe59544e6a563bc1d402748e3/view) |
@@ -220,6 +219,7 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-03-12 | 2026-04-10 | DEPT OF DEFENSE | [RFI for LINK 22 radios](https://sam.gov/opp/6ad778a5a7bc45cabeb3b2f4f9c307ca/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-17 | 2026-04-10 | DEPT OF DEFENSE | [Joint Simulation Environment (JSE) Contractor Logistics Support (CLS)](https://sam.gov/opp/648c77a0f6554f71bc3b9ed07b07a1c2/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-18 | 2026-04-10 | DEPT OF DEFENSE | [TINKER AFB MAC BOA WWYK250088 ~ Repair Interior Walls, B8400](https://sam.gov/opp/611e472f0eb2426783766c6b8c1c79e3/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-03-28 | 2026-04-11 | DEPT OF DEFENSE | [Sole Source Award for Pratt & Whitney Component Solutions Turbofan Engine Component](https://sam.gov/opp/b6e6022d54574caeb476888484cd5341/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-16 | 2026-04-12 | DEPT OF DEFENSE | [Colibrium Additive Maintenance](https://sam.gov/opp/c4e5e68b56d4459e90eb35958cf4dc25/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-20 | 2026-04-12 | DEPT OF DEFENSE | [Sources Sought - RT-4110 Blade Radio Repair](https://sam.gov/opp/e9b4ff440e7f430b89cd686d4b11a4a4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-13 | DEPT OF DEFENSE | [Repair: Localizer, Antenna Distribution Unit NSN: 5895-01-534-4227IM P/N: 030742-0001](https://sam.gov/opp/1b9dfc1fdfb240639859b5ce07754da5/view) |

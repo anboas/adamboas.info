@@ -6158,36 +6158,6 @@
     ]
   },
   {
-    "id": "sam-422d9f4015fb4fe09a4cb54909d3ab01",
-    "title": "Pre-Fabricated Transportable Bunkers",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=422d9f4015fb4fe09a4cb54909d3ab01",
-    "opportunity_url": "https://sam.gov/opp/422d9f4015fb4fe09a4cb54909d3ab01/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/422d9f4015fb4fe09a4cb54909d3ab01/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "422d9f4015fb4fe09a4cb54909d3ab01",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "ETSG26Z0060",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.PEO ASSURED ACCESS TO SPACE.FA8811 ASSRD ACSS TO SPC SSC/AAK-LA",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-27",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=422d9f4015fb4fe09a4cb54909d3ab01",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=422d9f4015fb4fe09a4cb54909d3ab01",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-35a5df2987ff4f51a59af95bb0e49ee2",
     "title": "Intent to Award Sole Source - Pointwise 2026",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35a5df2987ff4f51a59af95bb0e49ee2",
@@ -8496,6 +8466,42 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f5f8014318144825adf24895e65a6429/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-b6e6022d54574caeb476888484cd5341",
+    "title": "Sole Source Award for Pratt & Whitney Component Solutions Turbofan Engine Component",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6e6022d54574caeb476888484cd5341",
+    "opportunity_url": "https://sam.gov/opp/b6e6022d54574caeb476888484cd5341/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b6e6022d54574caeb476888484cd5341/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "b6e6022d54574caeb476888484cd5341",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "FA910126PWCS",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+    "posted_date": "2026-03-28",
+    "response_deadline": "2026-04-11",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6e6022d54574caeb476888484cd5341",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b6e6022d54574caeb476888484cd5341",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0298a245f744f1095c78e7eaef585e3/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0298a245f744f1095c78e7eaef585e3/download"
       }
     ]
   },

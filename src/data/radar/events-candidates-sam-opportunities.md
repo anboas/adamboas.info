@@ -1,19 +1,19 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-28T13:44:56.339497+00:00
+Generated: 2026-03-29T13:43:08.495226+00:00
 Profile: all
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/28/2026
+Posted range: 01/01/2026 -> 03/29/2026
 
 ## Counts
-- Total candidates: 706
-- Navy-related: 162
-- Full detail cached: 706
-- Notices with attachments: 396
-- Total attachment links: 950
-- Combined Synopsis/Solicitation: 26
+- Total candidates: 679
+- Navy-related: 135
+- Full detail cached: 679
+- Notices with attachments: 373
+- Total attachment links: 814
+- Combined Synopsis/Solicitation: 1
 - Pre-solicitation: 209
-- Solicitation: 53
+- Solicitation: 51
 - Sources Sought: 209
 - Special Notice: 209
 
@@ -43,7 +43,6 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 4 | Sources Sought | Sources Sought | 2026-03-26 | 2026-03-20 | DEPT OF DEFENSE | [USSC CCTVs Sources Sought](https://sam.gov/opp/797f3a1d7cee4ce998df710b18f77e0a/view) |
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-03-23 | NATIONAL AERONAUTICS AND SPACE ADMINISTRATION | [SW - IDEAS (BK Connect)](https://sam.gov/opp/0c909eaa9b41485f8461506f89996018/view) |
 | 4 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-03-23 | JUSTICE, DEPARTMENT OF | [Presolicitation (Amendment #4):  Residential Reentry Center (RRC) and Home Confinement (HC) Services within the area of Albany, New York](https://sam.gov/opp/5f26c5a33e6448eca3763f687014846c/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-03-24 | DEPT OF DEFENSE | [BEQ Chiller Repairs FC66, HP476, BB137, etc](https://sam.gov/opp/8afe23642e3247f592edb6d4ab6d7342/view) |
 | 4 | Special Notice | Industry Day, Special Notice | 2026-03-27 | 2026-03-24 | DEPT OF DEFENSE | [Industry Day: Decisive Action Follow-On](https://sam.gov/opp/561707eee3bf4bf7b16d5776f2c55d3a/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-25 | 2026-03-25 | DEPT OF DEFENSE | [TINKER AFB MAC BOA WWYK150083 - Repair Transformer Vault 6, B9001](https://sam.gov/opp/dd7436d5a150488a884b936dd5702686/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-25 | 2026-03-26 | DEPT OF DEFENSE | [59--MAGNETOMETER,OUTBOA](https://sam.gov/opp/c43fa67313a6494899f8492ce43f6195/view) |
@@ -81,7 +80,6 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-03-30 | DEPT OF DEFENSE | [Repair and Installation of Various Electrical Systems within USAG Bavaria](https://sam.gov/opp/a99900bb8176426ea8f78d13fc172d37/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-25 | 2026-03-30 | AGRICULTURE, DEPARTMENT OF | [Wolf Capture, Depredation, Investigation, and training](https://sam.gov/opp/ebb4a056923d4552a27b84b29313eb2c/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-03-30 | DEPT OF DEFENSE | [Vinyl Pyrrolidone](https://sam.gov/opp/bce642f508ca41d88426c96acf25d144/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-26 | 2026-03-30 | DEPT OF DEFENSE | [AVOT HARD DRIVE KITS](https://sam.gov/opp/feb02c6a9bc2465bba5454c2bfdb56a5/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-26 | 2026-03-30 | DEPT OF DEFENSE | [Sanding Booth-Tobyhanna-Sources Sought](https://sam.gov/opp/aa2c761bcf904e7c9b2e7c1a3e46da95/view) |
 | 2 | Special Notice | Special Notice | 2026-03-26 | 2026-03-30 | DEPT OF DEFENSE | [Advanced Medical Training](https://sam.gov/opp/787d744bce81437aa87d9c68b2c623bf/view) |
 | 2 | Special Notice | Special Notice | 2026-03-26 | 2026-03-30 | NATIONAL AERONAUTICS AND SPACE ADMINISTRATION | [AI Government Leadership Program, Virtual instructor-led training (vILT).](https://sam.gov/opp/6fe3837461144cf79c0bef5b78aee1b9/view) |
@@ -93,9 +91,7 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-03-30 | NATIONAL AERONAUTICS AND SPACE ADMINISTRATION | [Network Extension for User Continuity and Sustainability (NEXUS) Ka-Band Backward-Compatible Relay Broad Agency Announcement (BAA) NextSTEP-3 Appendix E](https://sam.gov/opp/e33cd0cc61064a6497a55fca8e9b30c6/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-03-30 | DEPT OF DEFENSE | [Purchase of Case Goods](https://sam.gov/opp/3452ae6cd2dd4d258f9fca3b808e4e21/view) |
 | 2 | Special Notice | Special Notice | 2026-03-26 | 2026-03-30 | INTERIOR, DEPARTMENT OF THE | [R--Intent to Award - NTN Site CO01](https://sam.gov/opp/bb2beb26a4394604bcab0b33e15ed420/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-03-30 | DEPT OF DEFENSE | [Warehouse Storage](https://sam.gov/opp/470391e61a42475384eeabb95b1d0db7/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-03-30 | DEPT OF DEFENSE | [Diesel Engine Wire Harness Replacement on a Virginia-Class Submarine](https://sam.gov/opp/45c1a59cf2d644ff8d9cd4422cd60525/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-03-30 | DEPT OF DEFENSE | [26FT Electric Scissor Lift Lease](https://sam.gov/opp/a43c1979ac2d48ce93930c41617a5490/view) |
 | 4 | Solicitation | - | 2026-03-27 | 2026-03-30 | DEPT OF DEFENSE | [CIRCUIT CARD ASSEMB](https://sam.gov/opp/ff345bd083bb4d7a9b156aae3174293e/view) |
 | 4 | Solicitation | - | 2026-03-27 | 2026-03-30 | DEPT OF DEFENSE | [CIRCUIT CARD ASSEMB](https://sam.gov/opp/eead8959667e4ab59c292c914dd812ff/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-03-30 | DEPT OF DEFENSE | [BEARING,BALL,DUPLEX](https://sam.gov/opp/c545a030ca1f4286b8b8778030410f7e/view) |
@@ -128,9 +124,7 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-03-31 | DEPT OF DEFENSE | [Transformer 1600 Watt](https://sam.gov/opp/84d1ce202de04b52b90fe6e2d781dbe8/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-03-31 | DEPT OF DEFENSE | [Transformer 1600 Watts](https://sam.gov/opp/f05d2ed5f1fd4906b45c7028f43b20ce/view) |
 | 2 | Special Notice | Special Notice | 2026-03-26 | 2026-03-31 | HOMELAND SECURITY, DEPARTMENT OF | [USCGC Bertholf and Stratton Wiper System Parts](https://sam.gov/opp/aad0e417ae794f8682a8d4f8cab5bc73/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-03-31 | DEPT OF DEFENSE | [PCB Piezotronics  Inductively Coupled Plasma (ICP) Quartz Force Rings](https://sam.gov/opp/252d03d409af468ca74892ed179e6fa5/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-27 | 2026-03-31 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [AI Tools for Medicare Experience Modernization - Request for Information](https://sam.gov/opp/cedefcbbea12429383e90a7c4ae01246/view) |
-| 4 | Solicitation | - | 2026-03-27 | 2026-03-31 | DEPT OF DEFENSE | [CHARTER BUS SERVICES FOR NAVFAC MID-ATLANTIC HAMPTON ROADS AREA OF RESPONSIBILITY (AOR), SOUTHEAST AND NORTHEAST CLIENT BASE LOCATIONS AND OTHER AORS](https://sam.gov/opp/3f849bd3288b412d8b1677b432d059b6/view) |
 | 4 | Solicitation | - | 2026-03-27 | 2026-03-31 | DEPT OF DEFENSE | [MAIN CIRCULATING PUMP PARTS](https://sam.gov/opp/6c367524f9c242358b960da66feb919e/view) |
 | 4 | Solicitation | - | 2026-03-27 | 2026-03-31 | DEPT OF DEFENSE | [N0001926R0018 C-130 Depot Maintenance Repair and Overhaul (MRO): Request For Proposal (RFP)](https://sam.gov/opp/c6cf1b0cce3b45579fdd6a9040a681b1/view) |
 | 2 | Special Notice | Special Notice | 2026-03-27 | 2026-03-31 | NUCLEAR REGULATORY COMMISSION | [Intent to Award a Sole Source Modification to Nuclear Regulatory Commission (NRC) FAIMIS Support IDIQ Contract](https://sam.gov/opp/9d0ce4b36ebd46f5b1358033d6a6ac78/view) |
@@ -173,8 +167,6 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-01 | DEPT OF DEFENSE | [KC-130 NP2000 Assorted PSE](https://sam.gov/opp/760c0d9bd41142359fb187c47eb65a93/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-01 | DEPT OF DEFENSE | [Rack-Mountable, High-Power, Frequency-Doubled Red Laser System](https://sam.gov/opp/e7cf843ffa3b439d8ce72eaae17a8956/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-27 | 2026-04-01 | HOMELAND SECURITY, DEPARTMENT OF | [Mobile Technology Passive Optical Network Request for Information (RFI)](https://sam.gov/opp/09289a85363f4182a1d6ba88cc8a7ba2/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-01 | DEPT OF DEFENSE | [O2X HUMAN PERFORMANCE TRAINING SERVICES](https://sam.gov/opp/357285c45c734a709a0558d9cf0349b9/view) |
-| 4 | Solicitation | - | 2026-03-27 | 2026-04-01 | DEPT OF DEFENSE | [STEERING WHEEL](https://sam.gov/opp/3f4ae29fa3064f4e857e0e0c5bc76129/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-01 | VETERANS AFFAIRS, DEPARTMENT OF | [6135--534-26-4-5088-0053 / BATTERY REPLACEMENT and DISPOSAL /  (VA-26-00048963)](https://sam.gov/opp/d2823ac5143d461391148f356f31b81d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-01 | VETERANS AFFAIRS, DEPARTMENT OF | [6515--NKV-330 Series Ventilator System](https://sam.gov/opp/ddf74318643841db9669ae0ed38b8399/view) |
 | 2 | Special Notice | Special Notice | 2026-03-27 | 2026-04-01 | TRANSPORTATION, DEPARTMENT OF | [Alaskan Satellite Telecommunications Infrastructure (ASTI) Space Segment Network](https://sam.gov/opp/2a0f3e0def8a4908ba3da7cfb3b46edd/view) |
@@ -216,8 +208,6 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-02 | DEPT OF DEFENSE | [Destruction Center Operations Support at Norfolk Naval Shipyard](https://sam.gov/opp/3fc4fcb578914818b913d9d68dd67fa7/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-27 | 2026-04-02 | VETERANS AFFAIRS, DEPARTMENT OF | [5820--VHA High Frequency Radio Network RFI](https://sam.gov/opp/3b20af1090d0487d9ce6d12cd687b4bb/view) |
 | 4 | Solicitation | - | 2026-03-27 | 2026-04-02 | DEPT OF DEFENSE | [INDEFINITE DELIVERY INDEFINITE QUANTITY UNRESTRICTED MULTIPLE AWARD CONSTRUCTION CONTRACT FOR NEW CONSTRUCTION, RENOVATION, AND REPAIR OF COMMERCIAL AND INSTITUTIONAL FACILITIES USING ALTERNATIVE CONSTRUCTION METHODS (ACM) AT VARIOUS GOVERNMENT INSTALLATI](https://sam.gov/opp/e8d76d25a826445e8d76dde2ac0bf6be/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-02 | GENERAL SERVICES ADMINISTRATION | [Navy 60-Ton Lowbed Trailers (17 each)](https://sam.gov/opp/946ed0e68fd74a2fb13896f5c002486b/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-02 | DEPT OF DEFENSE | [Sole Source to J. Byler Rivet Supply Inc., Huck Tools](https://sam.gov/opp/4aaea7f217fe4541bf52eb81a33c0a0a/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-02 | DEPT OF DEFENSE | [Sources Sought  - Motek CAREN Maintenance](https://sam.gov/opp/8a22c5469334430389aed501b4ee8c9a/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-02 | DEPT OF DEFENSE | [Sources Sought - Specimens/Cadavers (Brooke Army Medical Center, JBSA Fort Sam Houston, TX 78234 - San Antonio)](https://sam.gov/opp/37f03e8abd494ba6b2839def6e54bde1/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-27 | 2026-04-02 | VETERANS AFFAIRS, DEPARTMENT OF | [3438--VRE Welding Tools Milwaukee  SB Set-aside](https://sam.gov/opp/1af653e2ec5544518603ef53a8d93ce8/view) |
@@ -237,7 +227,6 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 7 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-03 | DEPT OF DEFENSE | [Naval Surface Warfare Center- Carderock Division – Fire Protection](https://sam.gov/opp/c8416accfd9346dcad76eb8560ec89dd/view) |
 | 7 | Special Notice | Special Notice | 2026-03-26 | 2026-04-03 | DEPT OF DEFENSE | [Postponement of Competitive Procurement for AN/SPY6(V) LRUs](https://sam.gov/opp/cf5b478f396d4ed3898c02a42d3b5f68/view) |
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-03-26 | 2026-04-03 | DEPT OF DEFENSE | [Draft RFP for Industry Comments - Veterans Affairs St. Louis Health Care System (VASTLHCS) John Cochran (JC) Hospital in St. Louis, Missouri](https://sam.gov/opp/b424bc0962db4cffb0f44300a8702795/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-26 | 2026-04-03 | DEPT OF DEFENSE | [N0017326Q5311 - CHARTER BOAT SUPPORT](https://sam.gov/opp/fffcd0023096404fab1ca4c966536b2f/view) |
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-03-26 | 2026-04-03 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [Request for Information (RFI): Commercial Off-the-Shelf Task Management Tool](https://sam.gov/opp/4f650473be78448eaa0e2135fac94304/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-03 | VETERANS AFFAIRS, DEPARTMENT OF | [6515--Ophthalmology Surgical Chairs  Syracuse VAMC](https://sam.gov/opp/9d58d86140924888996bd41ac625a91d/view) |
 | 2 | Special Notice | Special Notice | 2026-03-26 | 2026-04-03 | VETERANS AFFAIRS, DEPARTMENT OF | [6550--10x Genomic Test Kits and Reagents](https://sam.gov/opp/1c02ed2e9a594791927d8cb5b0a8dc95/view) |
@@ -297,8 +286,6 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 2 | Special Notice | Special Notice | 2026-03-26 | 2026-04-06 | DEPT OF DEFENSE | [Kymeta Prescription for the 1st Combat Communications (1 CBCS)](https://sam.gov/opp/06272d523dd04e1c9e4a3a0e69cabe43/view) |
 | 2 | Special Notice | Special Notice | 2026-03-26 | 2026-04-06 | DEPT OF DEFENSE | [Special Notice: Common Tactical Truck (CTT) Commercial Solutions Opening (CSO) / Area of Interest (AoI) - Anticipated Quantities & Contractor Virtual (MS Teams) Meetings](https://sam.gov/opp/61305b7259754cf38e3fb1377e71462a/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-04-06 | VETERANS AFFAIRS, DEPARTMENT OF | [U010--Complete Decongestive Therapy Certification Training for  VA Northern California Health Care System](https://sam.gov/opp/ddecb4579f7149c2a5e5519491954142/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [Gage Block Comparator](https://sam.gov/opp/7fe6733627d54c52b1ce7fa1e8815945/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [P1625 MARSOC Storage and Training Facilities](https://sam.gov/opp/9574cb9bbeb8401990e4d4a329b308e8/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [Request for Information (RFI) - Project Manager, Short and Intermediate Effectors for Layered Defense Maneuver-Short Range Air Defense Increment 4](https://sam.gov/opp/422dee039a4c4c7d9754e86d839918b1/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [Source Sought  - 50 TON Lifting/Spreader Beam (BRAND NAME OR EQUAL) to Caldwell Model 20HS-50-25NS, Travis AFB, CA](https://sam.gov/opp/ab2397d78c01434f95c6cc116bdbe2b4/view) |
 | 4 | Solicitation | - | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [TURBOCHARGER,DIESEL](https://sam.gov/opp/dbb916e06f584bbc9b624e5b42f5a332/view) |
@@ -314,6 +301,7 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-06 | VETERANS AFFAIRS, DEPARTMENT OF | [V225--Ground Ambulance Service](https://sam.gov/opp/8d5845b721df4a40a99c08f77665b0a7/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [Wire EDM with ESPRIT CAM and Dell Computer for Offline Programming](https://sam.gov/opp/e79889f41e434ec2b942197551b3ac6f/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-27 | 2026-04-06 | INTERIOR, DEPARTMENT OF THE | [Z--Replacement HVAC System CBVC ADMIN, Chickamauga Chattanooga National Military P](https://sam.gov/opp/c36b3ade83314c228e98d416c565495a/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-28 | 2026-04-06 | HEALTH AND HUMAN SERVICES, DEPARTMENT OF | [Pharmacy Patient Workflow Tracking System](https://sam.gov/opp/e97c051bcfd34199a3ce8185d2d3822a/view) |
 | 7 | Special Notice | Special Notice | 2026-03-25 | 2026-04-07 | DEPT OF DEFENSE | [Request for Solutions (RFS) - Microelectronics Operations, Sustainment, Acquisition, and Infrastructure Capabilities Modernization (MOSAIC)](https://sam.gov/opp/6b8b2ea22cdd435899db666249381fbf/view) |
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-07 | DEPT OF DEFENSE | [Common Tactical Truck (CTT) Industry Communications Forum Presentation with Question and Answer (Q&A) and Videos](https://sam.gov/opp/67e56677a47742acb73ce4889918794e/view) |
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-07 | HOMELAND SECURITY, DEPARTMENT OF | [SFLC LRE BALTIMORE SALTWATER SYSTEM MODIFY](https://sam.gov/opp/c258d8e982904859bb2ab541ecc21827/view) |
@@ -321,12 +309,24 @@ Posted range: 01/01/2026 -> 03/28/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-07 | VETERANS AFFAIRS, DEPARTMENT OF | [J059--Strax/Hiperwall/AV Support Services- Greater Los Angeles VA  Healthcare System](https://sam.gov/opp/9bc538e3ec814d08886b3d5719e9d6dd/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-07 | VETERANS AFFAIRS, DEPARTMENT OF | [J065-- OFF SITE Olympus Endoscope Refurbishment](https://sam.gov/opp/93504f28ad044a15b6fe2cff0b465c18/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-07 | ENERGY, DEPARTMENT OF | [SOLICITATION NUMBER 389296 “AMPS CONSTRUCTION MOBILE OFFICES”](https://sam.gov/opp/9ce486a4622745aeb31f9791bb2795f4/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [DNA Warehousing Support](https://sam.gov/opp/1ffe2fbf32834a15a8238af740d54762/view) |
 | 4 | Special Notice | Industry Day, Special Notice | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [Brandon Road Interbasin Project Industry Day - 7 April 2026](https://sam.gov/opp/78b78b8cb98b470985e34312a7c3ed20/view) |
 | 4 | Solicitation | - | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [Camp Lemonnier Djibout Job Order Contract](https://sam.gov/opp/c4a42151dba9423aa5f712e6c716991b/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-07 | INTERIOR, DEPARTMENT OF THE | [F--CHALLIS FIELD OFFICE VAULT PUMPING Sources Sought](https://sam.gov/opp/cedeafa849b740bda8eb16d89ffd9c3e/view) |
 | 4 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [Material Transfer Vehicle (MTV) - Sources Sought](https://sam.gov/opp/a72285d995054cc9b1480c89d3a4d196/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [Mechanical Repairs Bldg TT113 CDC](https://sam.gov/opp/791feac89d6f4311b7dc100c2137f47e/view) |
+| 4 | Solicitation | - | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [SP-312 Chiller Replacement, Naval Station Norfolk (NSN), Norfolk, Virginia.](https://sam.gov/opp/def454b5e6ea40d79ba4d95b49e69d43/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [Advanced Marksmanship Training](https://sam.gov/opp/4ba1a3dab6984535b6a0b490f1aa07f2/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-07 | EDUCATION, DEPARTMENT OF | [Cloud Hosting, System Administration, and Website Support and Development for the Institute of Education Sciences](https://sam.gov/opp/4a962a63d536421abe3570617fb3aea3/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-07 | VETERANS AFFAIRS, DEPARTMENT OF | [N099--OR Overhead Paging Speaker Redesign](https://sam.gov/opp/4f34a9c5b813405baa606dc5642b2561/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [Portable Latrine and Greywater Services](https://sam.gov/opp/dd0f309d58c44e1da663e7cc23b29414/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-03-28 | 2026-04-07 | DEPT OF DEFENSE | [High Security NSA Regulated Shredders](https://sam.gov/opp/1fd05c8293df419794cfc33899101634/view) |
+| 5 | Special Notice | Special Notice | 2026-03-25 | 2026-04-08 | DEPT OF DEFENSE | [Automatic Wiring Analyzer (AWA) Intent to Sole Source](https://sam.gov/opp/035291edfe464581956a1f559a90010d/view) |
+| 5 | Special Notice | Special Notice | 2026-03-25 | 2026-04-08 | DEPT OF DEFENSE | [laboratory reagents](https://sam.gov/opp/d988d92fec4c4c2e8343b67bc49eaa08/view) |
+| 5 | Special Notice | Special Notice | 2026-03-25 | 2026-04-08 | DEPT OF DEFENSE | [Maintenance and Repair Services for Rees Scientific Temperature Monitoring - Naval Hospital Pensacola](https://sam.gov/opp/3e697335dd8743c5a6fbe66f44332619/view) |
+| 4 | Special Notice | Sources Sought, Special Notice | 2026-03-25 | 2026-04-08 | COMMERCE, DEPARTMENT OF | [Cryogenic Radiometer Electronic Control System– Combined Sources Sought/Notice of Intent to Sole Source](https://sam.gov/opp/5f78a9c008044fa9b36415f8fd898f6f/view) |
+| 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-08 | VETERANS AFFAIRS, DEPARTMENT OF | [6515--36C25526Q0268 \| Micra Pacemakers Equipment \| WI](https://sam.gov/opp/629acca3e6164376a56904d17ef08488/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-03-25 | 2026-04-08 | VETERANS AFFAIRS, DEPARTMENT OF | [FY26: NRM (PROJ: 548-23-105) BB Upgrade Interior Signage and Wayfinding](https://sam.gov/opp/eb347362dbe4417897d75d0000a8b44f/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-04-08 | DEPT OF DEFENSE | [16--VALVE,5 IN. A063](https://sam.gov/opp/f634ddcb3c73416ea2b91af046668637/view) |
+| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-26 | 2026-04-08 | INTERIOR, DEPARTMENT OF THE | [66--Request For Information/Sources Sought; National Cancer Institute Center For Ca](https://sam.gov/opp/fd3855fab71940dbbee149c1174c1a74/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.
