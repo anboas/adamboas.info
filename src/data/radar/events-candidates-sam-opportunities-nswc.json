@@ -8563,50 +8563,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-e940d963e5cd415b8d208ff4820eaf80",
-    "title": "Cables",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e940d963e5cd415b8d208ff4820eaf80",
-    "opportunity_url": "https://sam.gov/opp/e940d963e5cd415b8d208ff4820eaf80/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/e940d963e5cd415b8d208ff4820eaf80/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "e940d963e5cd415b8d208ff4820eaf80",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N0017826Q6719",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
-    "posted_date": "2026-03-26",
-    "response_deadline": "2026-04-02",
-    "place_of_performance": null,
-    "relevance_score": 6,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e940d963e5cd415b8d208ff4820eaf80",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e940d963e5cd415b8d208ff4820eaf80",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f9db44ae8454d13b5d505365b8944ae/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8406a99f36e64931af50741450843928/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d17172b897141a9945b934b12f10f74/download"
-    ],
-    "resource_count": 3,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f9db44ae8454d13b5d505365b8944ae/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8406a99f36e64931af50741450843928/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d17172b897141a9945b934b12f10f74/download"
-      }
-    ]
-  },
-  {
     "id": "sam-39d7e61b44a340caa1900f7360dddb89",
     "title": "Follow-On Administrative Support Services",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=39d7e61b44a340caa1900f7360dddb89",
@@ -8679,6 +8635,50 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a61ed8873e543a4b8ee956c6d94925d/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-0992395061f34bce9964ab280d3556fe",
+    "title": "Cables",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0992395061f34bce9964ab280d3556fe",
+    "opportunity_url": "https://sam.gov/opp/0992395061f34bce9964ab280d3556fe/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/0992395061f34bce9964ab280d3556fe/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "0992395061f34bce9964ab280d3556fe",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N0017826Q6719",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
+    "posted_date": "2026-03-30",
+    "response_deadline": "2026-04-02",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0992395061f34bce9964ab280d3556fe",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0992395061f34bce9964ab280d3556fe",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d17172b897141a9945b934b12f10f74/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b948988b9cf44a81bc40865713b98832/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9f865655c6049de996e3376f5594247/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d17172b897141a9945b934b12f10f74/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b948988b9cf44a81bc40865713b98832/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9f865655c6049de996e3376f5594247/download"
       }
     ]
   },
@@ -8826,19 +8826,15 @@
     "detail_text_length": 94,
     "resource_links": [
       "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/103248c582754a619fc43a07880f5fae/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d8343ca49be404f9ff4b8d54eef3d40/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e280c0c33146412b8866b63bf7300399/download"
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d8343ca49be404f9ff4b8d54eef3d40/download"
     ],
-    "resource_count": 3,
+    "resource_count": 2,
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/103248c582754a619fc43a07880f5fae/download"
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d8343ca49be404f9ff4b8d54eef3d40/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e280c0c33146412b8866b63bf7300399/download"
       }
     ]
   },
@@ -15115,6 +15111,41 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdfcef7407e348d096e70d891277ad44/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-8d58553882424c65be37d7d2cea31c03",
+    "title": "NUT, HEX, REGULAR, STEEL, SELF LOCKING, CADMIUM PLATED 0.875\"- 09UNC - 3B. BOA Item 7025AJ",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d58553882424c65be37d7d2cea31c03",
+    "opportunity_url": "https://sam.gov/opp/8d58553882424c65be37d7d2cea31c03/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/8d58553882424c65be37d7d2cea31c03/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "8d58553882424c65be37d7d2cea31c03",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N3904026Q5390",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+    "posted_date": "2026-03-30",
+    "response_deadline": "2026-04-07",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d58553882424c65be37d7d2cea31c03",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d58553882424c65be37d7d2cea31c03",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb865c0774d64a19b57453ddad1f3744/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb865c0774d64a19b57453ddad1f3744/download"
       }
     ]
   },

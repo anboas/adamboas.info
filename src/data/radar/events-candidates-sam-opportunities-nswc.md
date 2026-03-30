@@ -1,17 +1,17 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-29T13:44:04.534375+00:00
+Generated: 2026-03-30T13:46:32.946624+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/29/2026
+Posted range: 01/01/2026 -> 03/30/2026
 
 ## Counts
-- Total candidates: 417
-- Navy-related: 417
-- Full detail cached: 417
-- Notices with attachments: 231
+- Total candidates: 418
+- Navy-related: 418
+- Full detail cached: 418
+- Notices with attachments: 232
 - Total attachment links: 656
-- Combined Synopsis/Solicitation: 152
+- Combined Synopsis/Solicitation: 153
 - Pre-solicitation: 55
 - Solicitation: 103
 - Sources Sought: 64
@@ -305,10 +305,10 @@ Posted range: 01/01/2026 -> 03/29/2026
 | 7 | Special Notice | Special Notice | 2026-03-20 | 2026-04-02 | DEPT OF DEFENSE | [LabVantage software for Chem Lab](https://sam.gov/opp/05a8d83c7aa942bfb7de1d5ad3bcaf14/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-24 | 2026-04-02 | DEPT OF DEFENSE | [Anderometer Hydraulics Replacement/Repair Services](https://sam.gov/opp/439baacd42ae469d8c178fd72c08e932/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-25 | 2026-04-02 | DEPT OF DEFENSE | [Adobe Acrobat Pro for Enterprise Offline Feature Restricted License, 1 User. Total 500 copies.](https://sam.gov/opp/18eee5c5e012484d8b14a0f55d789166/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-26 | 2026-04-02 | DEPT OF DEFENSE | [Cables](https://sam.gov/opp/e940d963e5cd415b8d208ff4820eaf80/view) |
 | 6 | Solicitation | - | 2026-03-26 | 2026-04-02 | DEPT OF DEFENSE | [Follow-On Administrative Support Services](https://sam.gov/opp/39d7e61b44a340caa1900f7360dddb89/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-26 | 2026-04-02 | DEPT OF DEFENSE | [Rugged Tactile PC](https://sam.gov/opp/5b4d7cfdaa4f4ebeb1ba8c331af07581/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-02 | DEPT OF DEFENSE | [Destruction Center Operations Support at Norfolk Naval Shipyard](https://sam.gov/opp/3fc4fcb578914818b913d9d68dd67fa7/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-03-30 | 2026-04-02 | DEPT OF DEFENSE | [Cables](https://sam.gov/opp/0992395061f34bce9964ab280d3556fe/view) |
 | 6 | Solicitation | - | 2026-03-02 | 2026-04-03 | DEPT OF DEFENSE | [BRAND NAME or EQUAL AUTOMATIC PACKAGE MIXER](https://sam.gov/opp/9395c2f05bac4626887f00aa01fc5908/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-16 | 2026-04-03 | DEPT OF DEFENSE | [NFPC Three Year Weld](https://sam.gov/opp/47e16a0b7a554691974c6556d59dc58c/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-03 | DEPT OF DEFENSE | [MK 66 Mod 0 Heavyweight Undersea Training Targets (MK 66 HUTTs), Support Equipment, Spares, & Engineering Services](https://sam.gov/opp/401ad71112544bf898eb0163766bf33d/view) |

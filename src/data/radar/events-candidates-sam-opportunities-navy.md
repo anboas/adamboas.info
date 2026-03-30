@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-29T13:43:57.824361+00:00
+Generated: 2026-03-30T13:46:19.766875+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/29/2026
+Posted range: 01/01/2026 -> 03/30/2026
 
 ## Counts
-- Total candidates: 103
-- Navy-related: 103
-- Full detail cached: 103
+- Total candidates: 104
+- Navy-related: 104
+- Full detail cached: 104
 - Notices with attachments: 38
 - Total attachment links: 158
 - Combined Synopsis/Solicitation: 22
-- Pre-solicitation: 34
+- Pre-solicitation: 35
 - Solicitation: 15
 - Sources Sought: 23
 - Special Notice: 9
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 35
+- Pre-solicitation: 36
 - Sources Sought: 23
 - Vendor Outreach: 1
 - Special Notice: 9
@@ -83,6 +83,7 @@ Posted range: 01/01/2026 -> 03/29/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-25 | 2026-03-30 | DEPT OF DEFENSE | [Toxic Vapor Analyzer](https://sam.gov/opp/37675edcb6bd42908dd1917c4132d44d/view) |
 | 4 | Solicitation | - | 2026-03-25 | 2026-03-30 | DEPT OF DEFENSE | [Request for Proposal (RFP) for H-1 Modernization Services](https://sam.gov/opp/0a32ccae974d41be8d94185ce69a46fa/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-03-30 | DEPT OF DEFENSE | [Warehouse Storage](https://sam.gov/opp/470391e61a42475384eeabb95b1d0db7/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-03-30 | 2026-03-30 | DEPT OF DEFENSE | [Tomahawk Cruise Missiles Recertification & Depot Operations](https://sam.gov/opp/ad13a5fe8e54409793570456efd1ce52/view) |
 | 5 | Special Notice | Special Notice | 2026-01-29 | 2026-03-31 | DEPT OF DEFENSE | [N0001925R0024 C-130 Depot Maintenance Repair and Overhaul (MRO): DRAFT Request For Proposal (RFP)](https://sam.gov/opp/96970190fa2a40ddaaa3ecdd9329f6f7/view) |
 | 9 | Sources Sought | Sources Sought | 2026-03-16 | 2026-03-31 | DEPT OF DEFENSE | [Sources Sought: Evaluation-Driven Artificial Intelligence (AI) Development and Delivery Support for Mission-Critical Data Workflows](https://sam.gov/opp/2413702481cc4b22a73506803f4c21cd/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-31 | DEPT OF DEFENSE | [FY23-26 Harpoon/SLAM-ER Depot Repairs](https://sam.gov/opp/667b757e4dd2428eacc2d1bbaa3b19ec/view) |
