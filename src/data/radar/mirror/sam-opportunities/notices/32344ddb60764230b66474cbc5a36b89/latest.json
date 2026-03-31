@@ -1,0 +1,57 @@
+{
+  "id": "sam-32344ddb60764230b66474cbc5a36b89",
+  "title": "R--CULTURAL INVENTORIES, TFD, IDAHO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=32344ddb60764230b66474cbc5a36b89",
+  "opportunity_url": "https://sam.gov/opp/32344ddb60764230b66474cbc5a36b89/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/32344ddb60764230b66474cbc5a36b89/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "32344ddb60764230b66474cbc5a36b89",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DOILFBO260014",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.IDAHO STATE OFFICE",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=32344ddb60764230b66474cbc5a36b89",
+  "detail_text": "The Department of the Interior/Bureau of Land Management (BLM) Twin Falls Office (Idaho) is seeking qualified sources capable of providing the following: Class III Cultural Resource Inventories/Site Recordings on Thorn Creek/Carey-Kimana and South Hills Fuel Break projects (two separate contract actions). Please see attached work statements for acquisition specifics. Interested parties must be registered in System for Award Management, capable of receiving government contracts, and qualified to perform the required work. Interested parties should send capability statement or similar information to the Contracting Officer via email at charles_dodson@ios.doi.gov no later than April 9, 2026. Please include Cage Code and/or UEI number and small business/socioeconomic status. Please do not include pricing or a quote ¿ this notice seeks ¿interested¿ sources only. Information received will assist the CO in determining set aside, if any, for forthcoming solicitations. Both actions are estimated to begin by June 1, 2026.",
+  "detail_text_length": 1027,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eef0252b10346c5a88c91e71101da27/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be8ce7ab03f24b9381c96891b9097640/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eef0252b10346c5a88c91e71101da27/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/45ed1e61c02a9e94755b807dd0c868cd3e503ecacaafe9b0670dee8f518350f0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/45ed1e61c02a9e94755b807dd0c868cd3e503ecacaafe9b0670dee8f518350f0.pdf",
+      "file_id": "9eef0252b10346c5a88c91e71101da27",
+      "file_name": "Work_Statement_BFO_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4750375,
+      "sha256": "45ed1e61c02a9e94755b807dd0c868cd3e503ecacaafe9b0670dee8f518350f0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be8ce7ab03f24b9381c96891b9097640/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dee6cd0c78a716a81f1d52098d7c90336077122c80e8db6d2d1fde5d3afac915.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dee6cd0c78a716a81f1d52098d7c90336077122c80e8db6d2d1fde5d3afac915.pdf",
+      "file_id": "be8ce7ab03f24b9381c96891b9097640",
+      "file_name": "work_statement_SFO_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 6523591,
+      "sha256": "dee6cd0c78a716a81f1d52098d7c90336077122c80e8db6d2d1fde5d3afac915"
+    }
+  ],
+  "_mirror_hash": "706dca2f44cbb17291fd954e1ab3876826fbabea2835272931e6f6549c9d4f90",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.525597+00:00"
+}

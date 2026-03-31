@@ -1,0 +1,57 @@
+{
+  "id": "sam-767eebf0fb93495bb1730dd0b638b167",
+  "title": "Repair Replace Hangar Roof B11525",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=767eebf0fb93495bb1730dd0b638b167",
+  "opportunity_url": "https://sam.gov/opp/767eebf0fb93495bb1730dd0b638b167/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/767eebf0fb93495bb1730dd0b638b167/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "767eebf0fb93495bb1730dd0b638b167",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FXSB-26-6837",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.PACIFIC AIR FORCES.FA5000  673 CONS LGC",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=767eebf0fb93495bb1730dd0b638b167",
+  "detail_text": "Building 11525 is a one-story, 113,000 square feet (SF) building framed from steel and cast concrete (beams and columns with CMU infill). The building was originally constructed in the early 1940s and is a historic property. The high barrel roof section that’s approximately 200-ft (curved) by 280-ft, two low roof low sections that are approximately 35-ft by 280-ft each, and one low roof section that approximately 62 ft by 242 ft. This project will remove the existing built-up roof (BUR) from both barrel center section and the east side roof low section, down to the existing decking and replaced with new 3-ply SBS-Modified BUR roof assembly with granular cap sheet on the barrel roof section and the south lower roof low section shall be replaced with a new 90-mil Ethylene Propylene Diene Monomer (EPDM) roof assembly. All roofing assemblies shall be fully adhered. Replace existing roof drains, flashings, vent pipe flashing, cover board (as required), vapor barrier, cant strips, metal copings and trim with new. Contractor shall provide all labor, materials, equipment, hardware, software and programming necessary to provide fully functional repairs for Tank Farms 3 and 4 in accordance with (IAW) the SOW and as detailed in drawings and specifications",
+  "detail_text_length": 1264,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c1c5ee4b3af412982569368e051cc3f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abaefe6366f74586838d89ab628ce487/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c1c5ee4b3af412982569368e051cc3f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/adf6f7c27d9563dd79b41942e3d80f89c4bd940c2f82e95172235cf6ab1fa482.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/adf6f7c27d9563dd79b41942e3d80f89c4bd940c2f82e95172235cf6ab1fa482.pdf",
+      "file_id": "3c1c5ee4b3af412982569368e051cc3f",
+      "file_name": "Draft+SOW+-+FXSB+26-6837+Repair+Replace+Roof+B11525.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 708088,
+      "sha256": "adf6f7c27d9563dd79b41942e3d80f89c4bd940c2f82e95172235cf6ab1fa482"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abaefe6366f74586838d89ab628ce487/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fdead94b10ce9d2b807b93d649115fa9f49df90751fe20dc165edb16cb190272.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fdead94b10ce9d2b807b93d649115fa9f49df90751fe20dc165edb16cb190272.pdf",
+      "file_id": "abaefe6366f74586838d89ab628ce487",
+      "file_name": "Sources+Sought+FXSB+26-6837+Repair+Replace+Hangar+Roof+B11525.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 167698,
+      "sha256": "fdead94b10ce9d2b807b93d649115fa9f49df90751fe20dc165edb16cb190272"
+    }
+  ],
+  "_mirror_hash": "43fceba7bd84667b9238557821af5ca9109b4e494d6cef188b51332abf366c7e",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.512754+00:00"
+}

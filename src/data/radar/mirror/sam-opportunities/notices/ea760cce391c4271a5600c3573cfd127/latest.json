@@ -1,0 +1,46 @@
+{
+  "id": "sam-ea760cce391c4271a5600c3573cfd127",
+  "title": "Air Traffic Controller Academy Performance & Excellence System (APEX)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea760cce391c4271a5600c3573cfd127",
+  "opportunity_url": "https://sam.gov/opp/ea760cce391c4271a5600c3573cfd127/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ea760cce391c4271a5600c3573cfd127/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ea760cce391c4271a5600c3573cfd127",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "APEXRFI032026",
+  "agency_path": "TRANSPORTATION, DEPARTMENT OF.FEDERAL AVIATION ADMINISTRATION.693KA8 SYSTEM OPERATIONS CONTRACTS",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea760cce391c4271a5600c3573cfd127",
+  "detail_text": "This Request for Information (RFI) includes a Statement of Objectives (SOO) which describes the Federal Aviation Administration’s (FAA) goals and expectations for the implementation and operation of the ATC Training Performance Intelligence System. The FAA seeks concepts, approaches, and general capabilities only; please do not submit proprietary, trade secret, or confidential information. All responses should be written at a level that can be released publicly without restriction. The FAA seeks a scalable, data-driven system capable of providing near–real-time visibility into student performance across all phases of Academy training. The FAA seeks a modern, adaptive solution that can serve as an enterprise training performance intelligence backbone. The FAA intends for this solution to function as an enterprise-level training performance intelligence infrastructure, forming a scalable data architecture that integrates disparate training data sources into a unified analytics environment. The system must serve as the foundational performance intelligence backbone for Academy training operations and future enterprise expansion. The FAA does not seek a standalone reporting overlay or content delivery enhancement tool; rather, the solution must establish an interoperable, extensible enterprise data framework capable of supporting predictive modeling, performance standardization, and strategic decision-making. The FAA requests that respondents provide concept papers identifying real-world solutions, along with an implementation plan that, at a minimum, addresses the following areas: Comprehensive Data Integration Objective-Level Mastery Mapping Near–Real-Time Analytics Dashboards Error Taxonomy and Trend Analytics Predictive Analytics Instructor Performance Analysis Enterprise Leadership Reporting Technical and Security Requirements Scalability and Future Expansion Implementation Approach Nature of this RFI: (a) This is not a commitment to issue a further screening information request or request for proposals. (b) The FAA is not seeking or accepting unsolicited proposals. (c) The FAA will not pay for any information received or costs incurred in preparing any response to this RFI. (d) Any costs associated with any response to this RFI are solely at the interested vendor’s expense. (e) The FAA does not seek and will not review proprietary, trade‑secret, or confidential information in response to this RFI. Responses should be written so they can be made publicly available. Optional: Demonstration materials Sample dashboards using representative data",
+  "detail_text_length": 2588,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b874048f346d48f781a69ada0c0f6354/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b874048f346d48f781a69ada0c0f6354/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8089ab75fea5d8bd79fa13f7aaec16b45cdfad86c8ec895af1e4d846fcd54eac.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8089ab75fea5d8bd79fa13f7aaec16b45cdfad86c8ec895af1e4d846fcd54eac.pdf",
+      "file_id": "b874048f346d48f781a69ada0c0f6354",
+      "file_name": "APEX+SOO+and+RFI+Instructions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 197786,
+      "sha256": "8089ab75fea5d8bd79fa13f7aaec16b45cdfad86c8ec895af1e4d846fcd54eac"
+    }
+  ],
+  "_mirror_hash": "ef18a5166b9107ab771d9bd442941b08ac85a04b6060d0d8df4fad34feffe2c8",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.580857+00:00"
+}

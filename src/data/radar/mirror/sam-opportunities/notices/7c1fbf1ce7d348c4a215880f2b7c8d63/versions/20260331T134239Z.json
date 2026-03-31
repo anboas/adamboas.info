@@ -1,0 +1,46 @@
+{
+  "id": "sam-7c1fbf1ce7d348c4a215880f2b7c8d63",
+  "title": "VA OIG BankScan Software License Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c1fbf1ce7d348c4a215880f2b7c8d63",
+  "opportunity_url": "https://sam.gov/opp/7c1fbf1ce7d348c4a215880f2b7c8d63/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7c1fbf1ce7d348c4a215880f2b7c8d63/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7c1fbf1ce7d348c4a215880f2b7c8d63",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.OFFICE OF INSPECTOR GENERAL OIG (36C10M)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c1fbf1ce7d348c4a215880f2b7c8d63",
+  "detail_text": "The Department of Veterans Affairs, Office of Inspector General (VA OIG) is awarding a sole source contract, in accordance with 10 U.S.C. 3204, 41 U.S.C. 3304 and FAR 6.103-1(b), One Responsible Source. This contract is negotiated with and awarded to: Gee Whiz Software, LLC 6540 Mulberry St San Diego, CA 92114-1505 The scope of work is for renewal of BankScan software and peripherals. The contract is Firm Fixed Price with a Base Period of Performance of twelve (12) months, followed by four (4) Option Periods of twelve (12) months each. The NAICS code is 541519. The size standard is $34 million to 150 employees. The PSC is DA10. In accordance with FAR 6.301, the Sole Source Justification is attached to this notice.",
+  "detail_text_length": 723,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e66d3ef570754b439d140f9bf4db7132/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e66d3ef570754b439d140f9bf4db7132/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/06efb067bf71fc973655fc8efd58c662270561c51f5fce7094a1f577114c91eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/06efb067bf71fc973655fc8efd58c662270561c51f5fce7094a1f577114c91eb.pdf",
+      "file_id": "e66d3ef570754b439d140f9bf4db7132",
+      "file_name": "Sole+Source+Justification+BankScan+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 185609,
+      "sha256": "06efb067bf71fc973655fc8efd58c662270561c51f5fce7094a1f577114c91eb"
+    }
+  ],
+  "_mirror_hash": "5225b1a58dc71613181c87597821c74ec77b377a6e4e4ef410cfb51147237737",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.461406+00:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sam-ef36a36e8b0f4a38af8f8a9b6bb40cbe",
+  "title": "NADTC Initial Spares",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ef36a36e8b0f4a38af8f8a9b6bb40cbe",
+  "opportunity_url": "https://sam.gov/opp/ef36a36e8b0f4a38af8f8a9b6bb40cbe/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ef36a36e8b0f4a38af8f8a9b6bb40cbe/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ef36a36e8b0f4a38af8f8a9b6bb40cbe",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N61340-26-Q-1006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC TSD.NAWC TRAINING SYSTEMS DIV",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ef36a36e8b0f4a38af8f8a9b6bb40cbe",
+  "detail_text": "NAWCTSD has a requirement to procure Spares for the Naval Aviation Distributed Training Center (NADTC) Expansion located at Naval Air Station (NAS) Oceana. The components are for device upgrades to enhance Distributed Mission Training (DMT) capabilities. This expansion effort is for the NAS Oceana NADTC's high-fidelity system trainer. This effort involves upgrading computer hardware, and monitors with specific commercial-off-the-shelf (COTS) components to ensure compatibility and continuity with the existing training devices. This is a low-risk update that will not impact the training curriculum.",
+  "detail_text_length": 603,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad3216b727e94215bf41a8e22f7718bb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f69fc59c68da4ade8eeacfe6758711b7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad3216b727e94215bf41a8e22f7718bb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f853c3d7d50662f9fa3e3a8b40d7c5adcc737c9d7eca6a186169ba599dcecf6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f853c3d7d50662f9fa3e3a8b40d7c5adcc737c9d7eca6a186169ba599dcecf6.pdf",
+      "file_id": "ad3216b727e94215bf41a8e22f7718bb",
+      "file_name": "Sources_Sought_NADTC+Initial+Spares_03302026_.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 161311,
+      "sha256": "2f853c3d7d50662f9fa3e3a8b40d7c5adcc737c9d7eca6a186169ba599dcecf6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f69fc59c68da4ade8eeacfe6758711b7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d721466ad197b4ca23d0b19b118751aed79dba0e0310cefc2935d02a91bf7749.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d721466ad197b4ca23d0b19b118751aed79dba0e0310cefc2935d02a91bf7749.xlsx",
+      "file_id": "f69fc59c68da4ade8eeacfe6758711b7",
+      "file_name": "NADTC+Initial+Spares+Material+List+-+NAS+Oceana.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19836,
+      "sha256": "d721466ad197b4ca23d0b19b118751aed79dba0e0310cefc2935d02a91bf7749"
+    }
+  ],
+  "_mirror_hash": "45ab3b2609d59ade97429a19d15935e47d2ff89ed9576b71274442aa4e58329f",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.387690+00:00"
+}

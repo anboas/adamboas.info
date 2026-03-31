@@ -1,0 +1,46 @@
+{
+  "id": "sam-018775d0071a4a408d6163a3723d7ff7",
+  "title": "RACER Maintenance Support Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=018775d0071a4a408d6163a3723d7ff7",
+  "opportunity_url": "https://sam.gov/opp/018775d0071a4a408d6163a3723d7ff7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/018775d0071a4a408d6163a3723d7ff7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "018775d0071a4a408d6163a3723d7ff7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W56ZLW26R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.0418 AQ HQ     CONTRACTING SUP",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=018775d0071a4a408d6163a3723d7ff7",
+  "detail_text": "The Contractor shall provide services for the maintenance and sustainment of four (4) RACER Heavy Platforms.The Contractor shall provide service level subject matter expertise to maintain and sustain the RHP hardware. The Contractor shall provide service level subject matter expertise to maintain and sustain the RHP software. See attached PWS.",
+  "detail_text_length": 345,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebe71789981b4997a4ebb59d6505a56b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebe71789981b4997a4ebb59d6505a56b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0977fba1998ef6fa3b81df9d576c489340ccbac11ffbfea67ec439c7da1a198b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0977fba1998ef6fa3b81df9d576c489340ccbac11ffbfea67ec439c7da1a198b.pdf",
+      "file_id": "ebe71789981b4997a4ebb59d6505a56b",
+      "file_name": "RACER+PWS+Redacted_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 885406,
+      "sha256": "0977fba1998ef6fa3b81df9d576c489340ccbac11ffbfea67ec439c7da1a198b"
+    }
+  ],
+  "_mirror_hash": "1dc3bc4e2d4091d1baf5dca7cdad9050ef317229e478f56925511765d274b1b7",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.551148+00:00"
+}

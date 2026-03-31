@@ -1,0 +1,46 @@
+{
+  "id": "sam-64dba5194f9b422193746318fa0c3725",
+  "title": "R--West Entrance Fire and EMS Response",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64dba5194f9b422193746318fa0c3725",
+  "opportunity_url": "https://sam.gov/opp/64dba5194f9b422193746318fa0c3725/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/64dba5194f9b422193746318fa0c3725/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "64dba5194f9b422193746318fa0c3725",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140P1426Q0053",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.IMR NORTHERN ROCKIES(12200)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64dba5194f9b422193746318fa0c3725",
+  "detail_text": "This is a notice of intent to award a sole source contract to Hebgen Fire District, Gallatin County, Montana. The Hebgen Fire District is the only organization capable of meeting the required emergency response times for this area. Due to geographic constraints, no other entities are able to initiate timely fire and EMS responses. The nearest alternative fire engine and ambulance are located at Old Faithful, with an estimated response time of approximately one hour to the West Entrance. The National Fire Protection Association (NFPA) and State and Local EMS standards have established benchmark response times for emergency services, which cannot be met by any provider other than Hebgen Fire District. Due to its proximity, Hebgen Fire District is uniquely positioned to deliver the required services within these established timeframes. Please see attached for additional information.",
+  "detail_text_length": 892,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e34c3602e684f23b6ee2aa53870518f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e34c3602e684f23b6ee2aa53870518f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7a6ea6c35223d41be7f37240eabe22ba5370299aaad6c4d1164ac5dfe044a29f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7a6ea6c35223d41be7f37240eabe22ba5370299aaad6c4d1164ac5dfe044a29f.docx",
+      "file_id": "5e34c3602e684f23b6ee2aa53870518f",
+      "file_name": "Intent_to_Sole_Source_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 55400,
+      "sha256": "7a6ea6c35223d41be7f37240eabe22ba5370299aaad6c4d1164ac5dfe044a29f"
+    }
+  ],
+  "_mirror_hash": "8a6aa5a3dd48225b6829d1f0a4a27b7b75ae0416fd3297273f9c1d3fbd9259a8",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.505104+00:00"
+}

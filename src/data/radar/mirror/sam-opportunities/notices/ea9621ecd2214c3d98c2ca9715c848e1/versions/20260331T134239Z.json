@@ -1,0 +1,57 @@
+{
+  "id": "sam-ea9621ecd2214c3d98c2ca9715c848e1",
+  "title": "Service contract for Thermo chromatograph-mass spectrometer systems",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea9621ecd2214c3d98c2ca9715c848e1",
+  "opportunity_url": "https://sam.gov/opp/ea9621ecd2214c3d98c2ca9715c848e1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ea9621ecd2214c3d98c2ca9715c848e1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ea9621ecd2214c3d98c2ca9715c848e1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26928350Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea9621ecd2214c3d98c2ca9715c848e1",
+  "detail_text": "See attached SOW and Capability Statement",
+  "detail_text_length": 41,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16cd5e44fa9147fba1bb384fa02a4be8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a3a0245174446b19b918dfbe0b2be0d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16cd5e44fa9147fba1bb384fa02a4be8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0efda537e5f8ab2b2dcbee0cf201717d40e9a5cf5cee60f2a0f4f095f4689377.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0efda537e5f8ab2b2dcbee0cf201717d40e9a5cf5cee60f2a0f4f095f4689377.docx",
+      "file_id": "16cd5e44fa9147fba1bb384fa02a4be8",
+      "file_name": "SATPC0040658+Tab+07+Capability+Statement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 32947,
+      "sha256": "0efda537e5f8ab2b2dcbee0cf201717d40e9a5cf5cee60f2a0f4f095f4689377"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a3a0245174446b19b918dfbe0b2be0d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b53310d409da8b83d45f5ea28aecb41fd20dd43c3c73c9a56592f07a35a03454.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b53310d409da8b83d45f5ea28aecb41fd20dd43c3c73c9a56592f07a35a03454.pdf",
+      "file_id": "9a3a0245174446b19b918dfbe0b2be0d",
+      "file_name": "SATPC0040658+Tab+04+4+SOW+REDACTED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114915,
+      "sha256": "b53310d409da8b83d45f5ea28aecb41fd20dd43c3c73c9a56592f07a35a03454"
+    }
+  ],
+  "_mirror_hash": "49cc545b9dbd9c7382dbaff65756834f00a17429dc3293869ce8e4d5ae4678ad",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.506207+00:00"
+}

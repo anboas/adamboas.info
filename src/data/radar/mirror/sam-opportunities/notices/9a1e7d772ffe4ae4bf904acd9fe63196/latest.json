@@ -1,0 +1,47 @@
+{
+  "id": "sam-9a1e7d772ffe4ae4bf904acd9fe63196",
+  "title": "Sources Sought - Sample Canister, 400",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9a1e7d772ffe4ae4bf904acd9fe63196",
+  "opportunity_url": "https://sam.gov/opp/9a1e7d772ffe4ae4bf904acd9fe63196/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9a1e7d772ffe4ae4bf904acd9fe63196/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9a1e7d772ffe4ae4bf904acd9fe63196",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912CH26R0075",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC- DTA",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9a1e7d772ffe4ae4bf904acd9fe63196",
+  "detail_text": "The Army Contracting Command - Detroit Arsenal (ACC-DTA) is seeking to gain knowledge of interest, capabilities, and qualifications of various members of the community, to include both small and large businesses, for production of the item identified below. Sample Canister, 400 NSN: 6665-01-546-4513 Part Number: 5-15-30819 FAT: Required unless waived Responses to this survey will assist ACC-DTA in planning for a potential contract. Interested vendors are encouraged to complete the survey located under \"Attachments/Links\" and then return it via e-mail to: Danielle Campbell Contract Specialist, ACC-DTA Email: danielle.r.campbell9.civ@army.mil Subject Line: Market Survey - Sample Canister You may respond in total, or in part, to the survey. However, all responses must be received no later than 07 April 2026 at 12:00 PM Local Warren, MI Time. PLEASE NOTE: The associated Technical Data Package (TDP) will only be made available to vendors if/when a solicitation is released.",
+  "detail_text_length": 982,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31e1627e132749d89993bfb3024b475a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31e1627e132749d89993bfb3024b475a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/08846bc801ea07ffa0d03787c235cc8cad6601d62f08b3c13f3e948fd3d9cb65.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/08846bc801ea07ffa0d03787c235cc8cad6601d62f08b3c13f3e948fd3d9cb65.docx",
+      "file_id": "31e1627e132749d89993bfb3024b475a",
+      "file_name": "Sources+Sought+Notice+-+Sample+Canister.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40351,
+      "sha256": "08846bc801ea07ffa0d03787c235cc8cad6601d62f08b3c13f3e948fd3d9cb65"
+    }
+  ],
+  "_mirror_hash": "1160b26a7cc3f7a7c02f0a3d879288519d274f0871e774bb3080d584a8c5a0b6",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.416071+00:00"
+}

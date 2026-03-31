@@ -1,0 +1,47 @@
+{
+  "id": "sam-ceb116d4261044219f8ba21fe0caadde",
+  "title": "Sources Sought for Banking Writs and Levies Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ceb116d4261044219f8ba21fe0caadde",
+  "opportunity_url": "https://sam.gov/opp/ceb116d4261044219f8ba21fe0caadde/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ceb116d4261044219f8ba21fe0caadde/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ceb116d4261044219f8ba21fe0caadde",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ACQ002498",
+  "agency_path": "SECURITIES AND EXCHANGE COMMISSION.SECURITIES AND EXCHANGE COMMISSION.SECURITIES AND EXCHANGE COMMISSION",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ceb116d4261044219f8ba21fe0caadde",
+  "detail_text": "This request for information (RFI) is being issued to survey potential sources that will be able to support the procurement described in the attached draft Statement of Work (SOW) for U.S. banks’ Writs, Legal Order Processing, or other contacts for service of writs, asset freezes, and other Court Orders. Please review the attached draft Statement of Work (SOW) for more information. In your response, please provide the following no later than April 20, 2026 : Technical Capability Statement to address the requirements of the SOW, GSA Schedule Category that corresponds to the entire requirement, if applicable, and, Rough Order of Magnitude (ROM) with your company’s pricing information. There is no page limitation. Please note that this notice is for INFORMATIONAL and PLANNING purposes only and does not constitute a Request for Proposal (RFP). Responses to this RFI will not be accepted by the Government to form a binding contract. The Government will not pay for the information solicited nor recognize any costs associated with the submission of the RFI. The purpose of this RFI is to provide an opportunity for industry to enhance the success of any future procurement to meet this requirement. Any information obtained as a result of this RFI is intended to be used by the Government on a non-attribution basis for program planning and acquisition strategy development. A determination by the Government not to issue a solicitation based upon responses to this notice is solely within the discretion of the Government. Please e-mail all comments and questions in response to this RFI and the draft Statement of Work to morrist@sec.gov and lewisf@sec.gov by the stated RFI deadline. Please include the following information along with your response: Unique Entity Identifier; Company Name; Company Address; Company Website; POC, and contact information for this RFI. Questions and comments will be considered for market research purposes in the event a solicitation is released in the future.",
+  "detail_text_length": 2004,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a82d15cc67e43faa3ee0530510007c1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a82d15cc67e43faa3ee0530510007c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8fb606a6a176d4e27c5304b6e9c87e6d1280bf7acd20b04c4f3f0a08b468eeab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8fb606a6a176d4e27c5304b6e9c87e6d1280bf7acd20b04c4f3f0a08b468eeab.pdf",
+      "file_id": "2a82d15cc67e43faa3ee0530510007c1",
+      "file_name": "Banking+Writs+and+Levies+Department+Information+Requirements.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 53332,
+      "sha256": "8fb606a6a176d4e27c5304b6e9c87e6d1280bf7acd20b04c4f3f0a08b468eeab"
+    }
+  ],
+  "_mirror_hash": "05508809915910e05680431d4d8c5e4414c0fc555a6c849271a793401109fd04",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.431610+00:00"
+}

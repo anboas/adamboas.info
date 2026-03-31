@@ -1,0 +1,57 @@
+{
+  "id": "sam-55637657ed624ef6876987027d908196",
+  "title": "Mass Notification System Upgrade Project",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=55637657ed624ef6876987027d908196",
+  "opportunity_url": "https://sam.gov/opp/55637657ed624ef6876987027d908196/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/55637657ed624ef6876987027d908196/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "55637657ed624ef6876987027d908196",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA252126QB049",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA2521  45 CONS PK",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=55637657ed624ef6876987027d908196",
+  "detail_text": "See attachments",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/862bd2546d1344d2b6ec14352c054008/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee748838da7a4f2b960c53d7481ff918/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/862bd2546d1344d2b6ec14352c054008/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a3179bbce73420e354267ceedb18c236574b8ac0e90d1eaa6f310ce1b8ec40a7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a3179bbce73420e354267ceedb18c236574b8ac0e90d1eaa6f310ce1b8ec40a7.pdf",
+      "file_id": "862bd2546d1344d2b6ec14352c054008",
+      "file_name": "SS_26QB049.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99162,
+      "sha256": "a3179bbce73420e354267ceedb18c236574b8ac0e90d1eaa6f310ce1b8ec40a7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee748838da7a4f2b960c53d7481ff918/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c8b5c784ba1d53267cb2aa3876df573e9ac78598e2ff121a8ec3505307a78e33.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c8b5c784ba1d53267cb2aa3876df573e9ac78598e2ff121a8ec3505307a78e33.pdf",
+      "file_id": "ee748838da7a4f2b960c53d7481ff918",
+      "file_name": "Section+II-3.+Patrick+SFB+and+CCSFS+MNS+Upgrade+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132290,
+      "sha256": "c8b5c784ba1d53267cb2aa3876df573e9ac78598e2ff121a8ec3505307a78e33"
+    }
+  ],
+  "_mirror_hash": "a444a89898672e9c57231459a2f776632124f3b8513c35df85d9b2d67059c37a",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.481899+00:00"
+}

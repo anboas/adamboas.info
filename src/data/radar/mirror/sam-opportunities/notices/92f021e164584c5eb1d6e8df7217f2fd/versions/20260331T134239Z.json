@@ -1,0 +1,47 @@
+{
+  "id": "sam-92f021e164584c5eb1d6e8df7217f2fd",
+  "title": "Noise Tested Bearings IDIQ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92f021e164584c5eb1d6e8df7217f2fd",
+  "opportunity_url": "https://sam.gov/opp/92f021e164584c5eb1d6e8df7217f2fd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/92f021e164584c5eb1d6e8df7217f2fd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "92f021e164584c5eb1d6e8df7217f2fd",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N0010426RY001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92f021e164584c5eb1d6e8df7217f2fd",
+  "detail_text": "This announcement constitutes a DRAFT Request for Proposals (RFP) for planning purposes only. It does not commit the Government to any contractual agreements or arrangements. Proposals are NOT being solicited under this Draft RFP and will not be accepted at this time. NAVSUP Weapon Systems Support (WSS) is seeking to procure Noise Tested Bearings as described in the attached draft RFP. The purpose of releasing this draft RFP is to facilitate an improved understanding of the Government's requirements and to obtain valuable feedback from the industry. Disclaimer: This is NOT a formal solicitation. This announcement is for informational purposes only. The Government will not reimburse any costs associated with the documentation submitted in response to this request. The contents of the draft RFP are subject to change prior to the release of the final RFP. Instructions for Feedback: The Government welcomes questions and comments on all sections and documents of this draft RFP. Interested parties who wish to provide feedback must submit their written questions or comments no later than the response date listed above. Please submit all feedback via email to the points of contact listed below.",
+  "detail_text_length": 1205,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfdc2fd7324c461f9b16013a86ed9d8d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfdc2fd7324c461f9b16013a86ed9d8d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ca67858527590662533e148ac9e9259d504523fa161683803acf2a8a9c8209a3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ca67858527590662533e148ac9e9259d504523fa161683803acf2a8a9c8209a3.pdf",
+      "file_id": "dfdc2fd7324c461f9b16013a86ed9d8d",
+      "file_name": "N0010426RY001+-DRAFT+RFP-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2215021,
+      "sha256": "ca67858527590662533e148ac9e9259d504523fa161683803acf2a8a9c8209a3"
+    }
+  ],
+  "_mirror_hash": "bcad1168d73d2fa3503eda9541f8d50b7aab471eb8f0840d450ae507a66b07db",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.383471+00:00"
+}

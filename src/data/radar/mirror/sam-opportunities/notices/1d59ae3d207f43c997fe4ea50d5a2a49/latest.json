@@ -1,0 +1,46 @@
+{
+  "id": "sam-1d59ae3d207f43c997fe4ea50d5a2a49",
+  "title": "FY26 Toledo Dredge SATOC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d59ae3d207f43c997fe4ea50d5a2a49",
+  "opportunity_url": "https://sam.gov/opp/1d59ae3d207f43c997fe4ea50d5a2a49/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1d59ae3d207f43c997fe4ea50d5a2a49/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1d59ae3d207f43c997fe4ea50d5a2a49",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W912P426BA002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION GREAT LAKES AND OHIO.ENDIST BUFFALO.W072 ENDIST BUFFALO",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d59ae3d207f43c997fe4ea50d5a2a49",
+  "detail_text": "Two year SATOC. The project is located in Toledo, Ohio on Lake Erie.",
+  "detail_text_length": 68,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49b3266c56c1494aaf6d3cd84af609c9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49b3266c56c1494aaf6d3cd84af609c9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/70a77f282742781b3b4e9d7ba6d1b92a639e35b9aca8a4bbd6c01fe22352d47d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/70a77f282742781b3b4e9d7ba6d1b92a639e35b9aca8a4bbd6c01fe22352d47d.pdf",
+      "file_id": "49b3266c56c1494aaf6d3cd84af609c9",
+      "file_name": "Pre+Solicitation_FY26_Toledo_Dredge_30_March+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90332,
+      "sha256": "70a77f282742781b3b4e9d7ba6d1b92a639e35b9aca8a4bbd6c01fe22352d47d"
+    }
+  ],
+  "_mirror_hash": "e82b7fe5ac1cb43406ee8e0734a3208309aca2591060aea414252197d5b42282",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.601005+00:00"
+}

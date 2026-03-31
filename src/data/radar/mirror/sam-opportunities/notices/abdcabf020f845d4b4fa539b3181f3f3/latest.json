@@ -1,0 +1,46 @@
+{
+  "id": "sam-abdcabf020f845d4b4fa539b3181f3f3",
+  "title": "J065--Medrad Injector Service Contract",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=abdcabf020f845d4b4fa539b3181f3f3",
+  "opportunity_url": "https://sam.gov/opp/abdcabf020f845d4b4fa539b3181f3f3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/abdcabf020f845d4b4fa539b3181f3f3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "abdcabf020f845d4b4fa539b3181f3f3",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24626Q0448",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.246-NETWORK CONTRACTING OFFICE 6 (36C246)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=abdcabf020f845d4b4fa539b3181f3f3",
+  "detail_text": "This is a Pre-solicitation notice. This Pre-solicitation notice is not a request for formal quotes. Solicitation 36C24626Q0448, will be issued on or about 03/25/2026. The Department of Veterans Affairs, Richmond VAMC, Richmond, VA has a requirement for Medrad Injector Preventative Maintenance Service. This is a 3-year contract. Â This acquisition is set-aside for Service Disabled Veteran-Owned Small Businesses. The applicable NAICS Code is 811210 with a size standard of $34.0 Million. All correspondence and responses shall be via e-mail to Stephen.Nasssan@va.gov. Telephone requests for information or questions will NOT be accepted. Â Offerors are responsible for downloading all documents including amendments from Contracting Opportunities at sam.gov website without further notification from the Contracting Officer.",
+  "detail_text_length": 826,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e102694ac666435498c59336e044f689/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e102694ac666435498c59336e044f689/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/035e3179f0862ee1a8ee4eef87cb528e3f22b99c65e73798a6b016c1f80e9e9e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/035e3179f0862ee1a8ee4eef87cb528e3f22b99c65e73798a6b016c1f80e9e9e.docx",
+      "file_id": "e102694ac666435498c59336e044f689",
+      "file_name": "36C24626Q0448.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24409,
+      "sha256": "035e3179f0862ee1a8ee4eef87cb528e3f22b99c65e73798a6b016c1f80e9e9e"
+    }
+  ],
+  "_mirror_hash": "ad72a779ebf6931dde3027194039b47840249576dbbece51a23c524410620321",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.511100+00:00"
+}

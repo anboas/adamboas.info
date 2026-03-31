@@ -1,0 +1,46 @@
+{
+  "id": "sam-047581f0b26f419f9f6bc62046005128",
+  "title": "USNS GRASP Crane Repairs C3",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=047581f0b26f419f9f6bc62046005128",
+  "opportunity_url": "https://sam.gov/opp/047581f0b26f419f9f6bc62046005128/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/047581f0b26f419f9f6bc62046005128/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "047581f0b26f419f9f6bc62046005128",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N4044326Q0026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=047581f0b26f419f9f6bc62046005128",
+  "detail_text": "The government intends to make a sole source award to Appleton Marine Inc, as they are the sole source for the Appleton crane repairs. They are the only source capable of ensuring the correct material is procured to replace parts as required for USNS GRASP (T-ARS 51).",
+  "detail_text_length": 268,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/541e1f6e20ce4356ac80670a64441a32/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/541e1f6e20ce4356ac80670a64441a32/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f8a5f3e2f04413503e09b47d71b4114bdf9a5b078d5362a088a917f9c1b1471e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f8a5f3e2f04413503e09b47d71b4114bdf9a5b078d5362a088a917f9c1b1471e.pdf",
+      "file_id": "541e1f6e20ce4356ac80670a64441a32",
+      "file_name": "USNS+GRASP+C3+WI+505+sole+source_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 189922,
+      "sha256": "f8a5f3e2f04413503e09b47d71b4114bdf9a5b078d5362a088a917f9c1b1471e"
+    }
+  ],
+  "_mirror_hash": "eeecc6b40bf6ee8de3f6836e840ac759b91e763c6a9e0c188f131b369f657445",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.486962+00:00"
+}

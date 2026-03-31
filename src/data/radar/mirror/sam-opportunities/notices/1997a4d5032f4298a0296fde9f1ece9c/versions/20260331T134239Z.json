@@ -1,0 +1,46 @@
+{
+  "id": "sam-1997a4d5032f4298a0296fde9f1ece9c",
+  "title": "Recurrent Glioblastomas",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1997a4d5032f4298a0296fde9f1ece9c",
+  "opportunity_url": "https://sam.gov/opp/1997a4d5032f4298a0296fde9f1ece9c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1997a4d5032f4298a0296fde9f1ece9c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1997a4d5032f4298a0296fde9f1ece9c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "NIMH26000869",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1997a4d5032f4298a0296fde9f1ece9c",
+  "detail_text": "The goal of this clinical trial is to evaluate progression-free and overall survival in participants with recurrent glioblastoma receiving LMP744 compared to historic controls. We will also directly compare molecular and metabolic profiles of tissue, CSF, and plasma pre- and postexposure to LMP744 to determine pharmacologic responses to the drug in this patient population. We will also correlate the pre- and post-exposure molecular and metabolic profiles with clinical response and outcome, to determine which molecular and metabolic features are predictive of drug response. The latter information will be critical for the design of phase III clinical trials involving LMP744. Finally, we will evaluate the safety of LMP744 in patients with recurrent glioblastoma through continuous, objective monitoring. This is the first clinical trial to investigate the role of the novel indenoisoquinolone, CMYC/TOPOISOMERASE 1 inhibitor LMP744 in participants diagnosed with recurrent glioblastoma. Results from this study will provide objective assessment of the pharmacologic response to the drug and provide an initial assessment of efficacy when compared to historical controls. Our goal is to addresses the urgent need for effective therapies for patients with recurrent glioblastoma. Clinical trial monitoring of each enrolled patient (40 total) will be required for accutae assessment of safety for enrolled patients and future patients on study.",
+  "detail_text_length": 1448,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c54ff16cdbb9491eaf8d1af501807edb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c54ff16cdbb9491eaf8d1af501807edb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a9f3ad9343d781aba896712e5ff5040bcf3701b32d0aac853bd6f438878742b6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a9f3ad9343d781aba896712e5ff5040bcf3701b32d0aac853bd6f438878742b6.pdf",
+      "file_id": "c54ff16cdbb9491eaf8d1af501807edb",
+      "file_name": "NOTICE+OF+INTENT+to+Sole+Source.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 189521,
+      "sha256": "a9f3ad9343d781aba896712e5ff5040bcf3701b32d0aac853bd6f438878742b6"
+    }
+  ],
+  "_mirror_hash": "92cf318784ac62ce9b0dd7d47426b4ea7769c8d26049482d03dda048eee02a8c",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.577486+00:00"
+}

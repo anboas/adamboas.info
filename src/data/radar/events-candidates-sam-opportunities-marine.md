@@ -1,23 +1,23 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-30T13:45:38.445095+00:00
+Generated: 2026-03-31T13:47:13.442502+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/30/2026
+Posted range: 01/01/2026 -> 03/31/2026
 
 ## Counts
-- Total candidates: 18
+- Total candidates: 19
 - Navy-related: 0
-- Full detail cached: 18
+- Full detail cached: 19
 - Notices with attachments: 12
 - Total attachment links: 14
 - Pre-solicitation: 3
-- Sources Sought: 9
+- Sources Sought: 10
 - Special Notice: 6
 
 ## Engagement signals
 - Pre-solicitation: 3
-- Sources Sought: 9
+- Sources Sought: 10
 - Special Notice: 6
 
 ## Top candidates
@@ -39,6 +39,7 @@ Posted range: 01/01/2026 -> 03/30/2026
 | 2 | Special Notice | Special Notice | 2026-03-17 | 2026-03-31 | DEPT OF DEFENSE | [Notice of Intent -Logistical Support Services](https://sam.gov/opp/dcd7938dd66f4008b482894bde25e836/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-25 | 2026-03-31 | DEPT OF DEFENSE | [American Sign Language (ASL) Interpreter](https://sam.gov/opp/c97180bf1656451ea14cd6ad7e81b378/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-01 | DEPT OF DEFENSE | [Custom Fitted Musical Instrument Cases](https://sam.gov/opp/8adbaeeffc864a17948349e59d4d3106/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-30 | 2026-04-03 | DEPT OF DEFENSE | [Preventative Maintenance for Sweeper and Scrubbers](https://sam.gov/opp/1a6b214a8d774fbb9db8207689a67538/view) |
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-09 | DEPT OF DEFENSE | [MCAS Beaufort Washer and Dryer Contract](https://sam.gov/opp/bdb18416a4a3453e917005faaf3c5b34/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-04-10 | DEPT OF DEFENSE | [Personally Owned Vehicle (POV ) Storage](https://sam.gov/opp/16a613f6cacc4c688b36d7f43426a6ec/view) |
 

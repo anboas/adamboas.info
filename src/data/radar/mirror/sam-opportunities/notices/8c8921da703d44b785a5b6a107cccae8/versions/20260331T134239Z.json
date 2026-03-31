@@ -1,0 +1,58 @@
+{
+  "id": "sam-8c8921da703d44b785a5b6a107cccae8",
+  "title": "S222--Sources Sought Veterans Construction Team Rental.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8c8921da703d44b785a5b6a107cccae8",
+  "opportunity_url": "https://sam.gov/opp/8c8921da703d44b785a5b6a107cccae8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8c8921da703d44b785a5b6a107cccae8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8c8921da703d44b785a5b6a107cccae8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24126Q0373",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8c8921da703d44b785a5b6a107cccae8",
+  "detail_text": "Sources Sought Veterans Construction Team Dumpster Rental.",
+  "detail_text_length": 58,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3849766301d3440eb2d487702dcc0b38/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5c077196e67543bc93a5e2800c238461/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3849766301d3440eb2d487702dcc0b38/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9f3f17ce865d6d11a45eb7cb97bd842fde542cdc0aa70665b59360b0a8d01825.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9f3f17ce865d6d11a45eb7cb97bd842fde542cdc0aa70665b59360b0a8d01825.docx",
+      "file_id": "3849766301d3440eb2d487702dcc0b38",
+      "file_name": "36C24126Q0373.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 176074,
+      "sha256": "9f3f17ce865d6d11a45eb7cb97bd842fde542cdc0aa70665b59360b0a8d01825"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5c077196e67543bc93a5e2800c238461/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7009a761e154e2e5dfcfb55cf12b2120fb4edf56671c56d6846234f9dffc2b55.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7009a761e154e2e5dfcfb55cf12b2120fb4edf56671c56d6846234f9dffc2b55.xlsx",
+      "file_id": "5c077196e67543bc93a5e2800c238461",
+      "file_name": "36C24126Q0360+LineItems.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 459164,
+      "sha256": "7009a761e154e2e5dfcfb55cf12b2120fb4edf56671c56d6846234f9dffc2b55"
+    }
+  ],
+  "_mirror_hash": "e67bac16d7a3ecb567494740ba8adf9c7b2cc1b62c1be74b436c5afd52bd8b0b",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.415496+00:00"
+}

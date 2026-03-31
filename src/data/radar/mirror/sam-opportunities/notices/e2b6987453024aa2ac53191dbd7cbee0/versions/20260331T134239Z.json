@@ -1,0 +1,57 @@
+{
+  "id": "sam-e2b6987453024aa2ac53191dbd7cbee0",
+  "title": "Marketing Printer Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2b6987453024aa2ac53191dbd7cbee0",
+  "opportunity_url": "https://sam.gov/opp/e2b6987453024aa2ac53191dbd7cbee0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e2b6987453024aa2ac53191dbd7cbee0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e2b6987453024aa2ac53191dbd7cbee0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA489726QSS06",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4897 366 CONS PKP",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2b6987453024aa2ac53191dbd7cbee0",
+  "detail_text": "Mountain Home Air Force Base is conducting market research to determine the availability, interest, and capability of potential business sources qualified and able to compete for a contract to provide routine quarterly preventive maintenance to include but not limited to telephone service calls, emergency on-site repair services, IT support, and toner for one (1) Konica-Minolta BizHub C654E, serial # A2X1018000501 Printer/Copier/Scanner. \"This post is for market research purposes only. THIS IS NOT A SOLICITATION FOR PROPOSAL OR QUOTE AND NO CONTRACT WILL BE AWARDED FROM THIS SOURCES SOUGHT. No reimbursement will be made for any costs associated with providing information in response to this synopsis or any follow up information request.\"",
+  "detail_text_length": 747,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1624b7e399244d99b1589bd370c46ee8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84d6b060623d4359876200f59b7bc224/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1624b7e399244d99b1589bd370c46ee8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31a29124df459db2e8e6132501706f918ab8ea5c2b3983663c88719dad80c4e4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31a29124df459db2e8e6132501706f918ab8ea5c2b3983663c88719dad80c4e4.pdf",
+      "file_id": "1624b7e399244d99b1589bd370c46ee8",
+      "file_name": "SS+NOTICE+-++Marketing+Printer+Maintenance.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 110903,
+      "sha256": "31a29124df459db2e8e6132501706f918ab8ea5c2b3983663c88719dad80c4e4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84d6b060623d4359876200f59b7bc224/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2ad8b7777049faf6b87120e244e4250e4c1cdbbf873cbb0b0a097676c9a95bf6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2ad8b7777049faf6b87120e244e4250e4c1cdbbf873cbb0b0a097676c9a95bf6.pdf",
+      "file_id": "84d6b060623d4359876200f59b7bc224",
+      "file_name": "PWS-FSS+Marketing+Printer.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 235878,
+      "sha256": "2ad8b7777049faf6b87120e244e4250e4c1cdbbf873cbb0b0a097676c9a95bf6"
+    }
+  ],
+  "_mirror_hash": "af9a54bdfa861b48ffa8caf14af175bafb1a72287456d5c9d4de3801bba9c51a",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.520409+00:00"
+}

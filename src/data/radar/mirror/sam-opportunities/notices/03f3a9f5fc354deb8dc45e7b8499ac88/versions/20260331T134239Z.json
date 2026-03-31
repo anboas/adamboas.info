@@ -1,0 +1,57 @@
+{
+  "id": "sam-03f3a9f5fc354deb8dc45e7b8499ac88",
+  "title": "6640--Cepheid  Molecular/Testing IDIQ FY26",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03f3a9f5fc354deb8dc45e7b8499ac88",
+  "opportunity_url": "https://sam.gov/opp/03f3a9f5fc354deb8dc45e7b8499ac88/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/03f3a9f5fc354deb8dc45e7b8499ac88/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "03f3a9f5fc354deb8dc45e7b8499ac88",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C26126Q0396",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03f3a9f5fc354deb8dc45e7b8499ac88",
+  "detail_text": "PRE-SOLICITATION NOTICE OF INTENT TO SOLE SOURCE Department of Veterans Affairs (VA) Network Contracting Office (NCO 21) intends to award a sole source, firm fixed price contract to Cepheid. The procurement will result in an Indefinite Delivery Indefinite Quantity contract for test kits (reagents) to be used at VA Southern Nevada Healthcare System. The solicitation for this action will be posted to SAM.gov, and all responsible sources may submit a capability statement, proposal, or quotation, which shall be considered by the agency. After consideration, the Government will determine whether to proceed with the sole source acquisition. The solicitation will be posted on or about March 31, 2026. Please respond to Mat Czeshinski in writing at email Mathew.czeshinski@va.gov by 12:00 EST March 31, 2026.",
+  "detail_text_length": 809,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4eb6e9415f5b4efebf7672079af4c665/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/642fbe68b75a4067aeafaf970f51d7ae/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4eb6e9415f5b4efebf7672079af4c665/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df3f00d64fb54740d3ed62cde8e5167c8295c4d236c9effd85a160601f81b3b4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df3f00d64fb54740d3ed62cde8e5167c8295c4d236c9effd85a160601f81b3b4.docx",
+      "file_id": "4eb6e9415f5b4efebf7672079af4c665",
+      "file_name": "36C26126Q0396_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24571,
+      "sha256": "df3f00d64fb54740d3ed62cde8e5167c8295c4d236c9effd85a160601f81b3b4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/642fbe68b75a4067aeafaf970f51d7ae/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7b9a36d8b72ad3585a3881c85f70968f1083e6ae6bdd0c94616296f99ddc3e89.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7b9a36d8b72ad3585a3881c85f70968f1083e6ae6bdd0c94616296f99ddc3e89.pdf",
+      "file_id": "642fbe68b75a4067aeafaf970f51d7ae",
+      "file_name": "36C26126AP2174FY261753+JOFOC+NCO21+Cepheid+Test+Kits++HCA+Approved_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153299,
+      "sha256": "7b9a36d8b72ad3585a3881c85f70968f1083e6ae6bdd0c94616296f99ddc3e89"
+    }
+  ],
+  "_mirror_hash": "dbb79ab7e2de83638ec002a64ed5eee59ec8da0caf0d9e2de6b0c5ee627d5ba3",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.459761+00:00"
+}

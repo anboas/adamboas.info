@@ -1,0 +1,46 @@
+{
+  "id": "sam-cd6dc08c576e44aea4fe02d6e841643e",
+  "title": "J--Gillig Bus Repairs for Yosemite NP",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd6dc08c576e44aea4fe02d6e841643e",
+  "opportunity_url": "https://sam.gov/opp/cd6dc08c576e44aea4fe02d6e841643e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cd6dc08c576e44aea4fe02d6e841643e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cd6dc08c576e44aea4fe02d6e841643e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P8526Q0034",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.PWR SF/SEA MABO(85000)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd6dc08c576e44aea4fe02d6e841643e",
+  "detail_text": "This is a Sources Sought Notice for the purpose of conducting market research and obtaining industry information ONLY. This is NOT a request for quotation. The National Park Service is seeking sources to obtain information from businesses which would be interested and capable of providing services to Yosemite National Park, California. The work consists of diagnostics, repair, and corrective maintenance services for six Gillig diesel hybrid electric buses. Services may only be performed by an authorized Gillig repair facility or Gillig factory-certified technicians. Interested and capable contractors (i.e. authorized Gillig repair facilities or Gillig factory-certified technicians) should complete the attached sources sought survey and return it in accordance with the instructions.",
+  "detail_text_length": 792,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffab8854d5384fca8f4c123727208b9e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffab8854d5384fca8f4c123727208b9e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8c9706ee843f28d7fbd8a09bf993caaf74482335a960507469e277a8daf65f52.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8c9706ee843f28d7fbd8a09bf993caaf74482335a960507469e277a8daf65f52.pdf",
+      "file_id": "ffab8854d5384fca8f4c123727208b9e",
+      "file_name": "Sources_Sought_Gillig_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 211336,
+      "sha256": "8c9706ee843f28d7fbd8a09bf993caaf74482335a960507469e277a8daf65f52"
+    }
+  ],
+  "_mirror_hash": "ec1c9763f65219f28313290c9b0e497eca38edb6cf7c0621ccd76f676bd308ff",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.559469+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-ac6622bdafc1492285767c527c0bad3c",
+  "title": "Grease Interceptor Pumping Services for VA Reno",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ac6622bdafc1492285767c527c0bad3c",
+  "opportunity_url": "https://sam.gov/opp/ac6622bdafc1492285767c527c0bad3c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ac6622bdafc1492285767c527c0bad3c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ac6622bdafc1492285767c527c0bad3c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26126Q0543",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ac6622bdafc1492285767c527c0bad3c",
+  "detail_text": "This is a RFI for Grease Interceptor Pumping Services for VA Reno Health Care System. The Government is seeking information on the availability of qualified vendors capable of providing Grease Interceptor Pumping Services. The purpose of this RFI is to gauge market interest and gather input from potential sources. Please review the attached RFI 36C26126Q0543 document, which includes a Sample Performance Work Statement (PWS). To be considered a complete response, provide the information requested in items 1-7 of the RFI. Please note that Item 2 requests an informal pricing estimate or quote. Please provide any feedback, questions, or clarifications, including any areas where the PWS may need further clarification. The last day for questions regarding this notice is April 9, 2026 at 10:00 am HST. Questions or clarifications will be sent to Shaneldylana.Pagaragan@va.gov. The anticipated posting date for the formal solicitation is early May. Vendors that provide a complete and timely response to this RFI will be notified.",
+  "detail_text_length": 1033,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bfc6c4a0427d4ab89d2f71a25fe6ad6c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4aa046e425248eeada44fb000676dbd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bfc6c4a0427d4ab89d2f71a25fe6ad6c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/56fbc5bcce1b06d2015c8e13764b7c0e2addd5de3ecde789da4cdc289438cd22.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/56fbc5bcce1b06d2015c8e13764b7c0e2addd5de3ecde789da4cdc289438cd22.pdf",
+      "file_id": "bfc6c4a0427d4ab89d2f71a25fe6ad6c",
+      "file_name": "PWS+Grease+Interceptor+Pumping+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 111103,
+      "sha256": "56fbc5bcce1b06d2015c8e13764b7c0e2addd5de3ecde789da4cdc289438cd22"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4aa046e425248eeada44fb000676dbd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/028d9fe34012d5b3ffcc586ddb444daaf23c6277043e4c2b940378927956ed31.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/028d9fe34012d5b3ffcc586ddb444daaf23c6277043e4c2b940378927956ed31.pdf",
+      "file_id": "d4aa046e425248eeada44fb000676dbd",
+      "file_name": "RFI+36C26126Q0543.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 190885,
+      "sha256": "028d9fe34012d5b3ffcc586ddb444daaf23c6277043e4c2b940378927956ed31"
+    }
+  ],
+  "_mirror_hash": "2c5bde9ac9bacbee5aa25f22f89f40b241b78b6b8dd62c094ea46a7e7055c593",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.558497+00:00"
+}

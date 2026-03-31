@@ -1,0 +1,46 @@
+{
+  "id": "sam-94b9ef111da445f88ec6f267d738cdec",
+  "title": "R--Kotzebue, Alaska",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94b9ef111da445f88ec6f267d738cdec",
+  "opportunity_url": "https://sam.gov/opp/94b9ef111da445f88ec6f267d738cdec/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/94b9ef111da445f88ec6f267d738cdec/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "94b9ef111da445f88ec6f267d738cdec",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140D0426Q0299",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94b9ef111da445f88ec6f267d738cdec",
+  "detail_text": "Kotzebue, Alaska",
+  "detail_text_length": 16,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b006ebf702334f5b8d0c927999cfb7e4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b006ebf702334f5b8d0c927999cfb7e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d2395dd24f6b869d8a872b97214f24c92a55896c629f36494d6c8a018bfb5035.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d2395dd24f6b869d8a872b97214f24c92a55896c629f36494d6c8a018bfb5035.pdf",
+      "file_id": "b006ebf702334f5b8d0c927999cfb7e4",
+      "file_name": "A21_MISC_-_Sources_Sought_Notice_BIA_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 620527,
+      "sha256": "d2395dd24f6b869d8a872b97214f24c92a55896c629f36494d6c8a018bfb5035"
+    }
+  ],
+  "_mirror_hash": "a6bd25e734fd555e3d4fab0a6945d07696c992f3f287614eba1c366ee668761c",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.474614+00:00"
+}

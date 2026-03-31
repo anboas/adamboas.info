@@ -1,0 +1,46 @@
+{
+  "id": "sam-bebb5e8f00c94b398c1e568380918557",
+  "title": "Dry-Dock: USCG STA MAYPORT (45644) FY26 DD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bebb5e8f00c94b398c1e568380918557",
+  "opportunity_url": "https://sam.gov/opp/bebb5e8f00c94b398c1e568380918557/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bebb5e8f00c94b398c1e568380918557/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bebb5e8f00c94b398c1e568380918557",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70Z04026SSPBL3470",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 3(00040)",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bebb5e8f00c94b398c1e568380918557",
+  "detail_text": "USCG STA MAYPORT (45644) FY26 , 7040Z04026SSBPL3470 Sources Sought Notice USCG STA MAYPORT (45644) FY26 DD , 7040Z04026SSBPL3470 with work items is provided as a PDF file and available for download.",
+  "detail_text_length": 198,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdf9fcfec99c472584ff559fda52794d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdf9fcfec99c472584ff559fda52794d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d71cd60136a3c50c8dccc9735aa6dd5227dc1d31dc1611ecf724796f61680372.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d71cd60136a3c50c8dccc9735aa6dd5227dc1d31dc1611ecf724796f61680372.pdf",
+      "file_id": "fdf9fcfec99c472584ff559fda52794d",
+      "file_name": "45644+SOURCES+SOUGHT+NOTICE+70Z04025SSBPL3470.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 233700,
+      "sha256": "d71cd60136a3c50c8dccc9735aa6dd5227dc1d31dc1611ecf724796f61680372"
+    }
+  ],
+  "_mirror_hash": "4f7b37ecdc6a5e9d6965b660d3da96df2db73663e823ddbefe07f0aaf109c4c8",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.480047+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-f2dd203502a84e388558b4d8f2c0bf71",
+  "title": "402-26-C05 Address Patient Safety Findings Presque Isle",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2dd203502a84e388558b4d8f2c0bf71",
+  "opportunity_url": "https://sam.gov/opp/f2dd203502a84e388558b4d8f2c0bf71/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f2dd203502a84e388558b4d8f2c0bf71/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f2dd203502a84e388558b4d8f2c0bf71",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24126Q0341",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2dd203502a84e388558b4d8f2c0bf71",
+  "detail_text": "The VA Community Based Outpatient Clinic (CBOC) in Presque Isle, Maine has a requirement for a Firm-Fixed-Price contract to provide minor construction services to install remote doors, handrails, and an oxygen sensor in accordance with the attached Sources Sought Notice and Scope of Work (SOW). To qualify as interested, firms must submt the five (5) components addressed in the attached Sources Sought Notice. Responses are due in writing to the contracing specialist, Sydney Dugal sydney.dugal@va.gov, no later than 14 April 2026 at 3:00 PM ET. Please see the attached Sources Sought for all details. DISCLAIMER This Sources Sought Notice is issued solely for information and planning purposes and does not constitute a solicitation. All information received in response to this notice is marked as proprietary and will be handled accordingly. Responses are voluntary and will not be reimbursed. Responses to this notice are not offers and cannot be accepted by the Government to form a binding contract.",
+  "detail_text_length": 1007,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82eb155053824fb1b8d28ccc335931b9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87f57fba09ac4e06991e8ee040e9decb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d81bfb2fd3ca461ab5bd4af676d66c7d/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82eb155053824fb1b8d28ccc335931b9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1f55a3dedc809b38bda5151235a7cf9c8d7f6718e60b8b186125338b4b6c251d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1f55a3dedc809b38bda5151235a7cf9c8d7f6718e60b8b186125338b4b6c251d.pdf",
+      "file_id": "82eb155053824fb1b8d28ccc335931b9",
+      "file_name": "SOW+Attachment+1+-+Specifications.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 370173,
+      "sha256": "1f55a3dedc809b38bda5151235a7cf9c8d7f6718e60b8b186125338b4b6c251d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87f57fba09ac4e06991e8ee040e9decb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fc71845ed447b406ca0a1a14e7401b7bd8f97f4ebcef85c8ac5d5a345216b697.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fc71845ed447b406ca0a1a14e7401b7bd8f97f4ebcef85c8ac5d5a345216b697.docx",
+      "file_id": "87f57fba09ac4e06991e8ee040e9decb",
+      "file_name": "36C24126Q0341+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29307,
+      "sha256": "fc71845ed447b406ca0a1a14e7401b7bd8f97f4ebcef85c8ac5d5a345216b697"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d81bfb2fd3ca461ab5bd4af676d66c7d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0a641f87b9d9dd3aafa8ecb9124707ff5f005e82deb32c6de57971342503e72f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0a641f87b9d9dd3aafa8ecb9124707ff5f005e82deb32c6de57971342503e72f.docx",
+      "file_id": "d81bfb2fd3ca461ab5bd4af676d66c7d",
+      "file_name": "Attachment+1+SOW+402-26-C05+Address+Patient+Safety+Findings.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 364019,
+      "sha256": "0a641f87b9d9dd3aafa8ecb9124707ff5f005e82deb32c6de57971342503e72f"
+    }
+  ],
+  "_mirror_hash": "d7bb458fd29970d5e2b3790da034e460ac2831c578f5a650f0dc58290c462c3f",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.567644+00:00"
+}

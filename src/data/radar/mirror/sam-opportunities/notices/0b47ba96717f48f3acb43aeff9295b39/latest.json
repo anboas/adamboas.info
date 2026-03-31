@@ -1,0 +1,57 @@
+{
+  "id": "sam-0b47ba96717f48f3acb43aeff9295b39",
+  "title": "J--Pole Hill Powerplant Upgrade",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0b47ba96717f48f3acb43aeff9295b39",
+  "opportunity_url": "https://sam.gov/opp/0b47ba96717f48f3acb43aeff9295b39/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0b47ba96717f48f3acb43aeff9295b39/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0b47ba96717f48f3acb43aeff9295b39",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140R6026R0010",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.UPPER COLORADO REGIONAL OFFICE",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0b47ba96717f48f3acb43aeff9295b39",
+  "detail_text": "SOURCES SOUGHT ONLY. NO AWARD WILL RESULT FROM THIS NOTICE. NO SOLICITATION EXISTS. Work consists primarily of replacement of protection, controls, instrumentation, and station service switchgear and transformer at Pole Hill Powerplant, located in Loveland, Colorado. See Sources Sought Notice and Draft Specifications Document, attached.",
+  "detail_text_length": 338,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a1ef92c3c7c0464c864e367a9bdd1fd7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7055cc510fe4b9d941a7756f58fcceb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a1ef92c3c7c0464c864e367a9bdd1fd7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4c2f2794e53a1053bc7d1b5709bf39e796f5eaff56e451b91190f4e944381fdd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4c2f2794e53a1053bc7d1b5709bf39e796f5eaff56e451b91190f4e944381fdd.pdf",
+      "file_id": "a1ef92c3c7c0464c864e367a9bdd1fd7",
+      "file_name": "DRAFT_-_PH_Specifications2026_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19467221,
+      "sha256": "4c2f2794e53a1053bc7d1b5709bf39e796f5eaff56e451b91190f4e944381fdd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7055cc510fe4b9d941a7756f58fcceb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ceb0c9123194e91233b19d4e73f3931b79418d3a39340f6891debdf054c20221.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ceb0c9123194e91233b19d4e73f3931b79418d3a39340f6891debdf054c20221.pdf",
+      "file_id": "d7055cc510fe4b9d941a7756f58fcceb",
+      "file_name": "Pole_Hill_Sources_Sought_-_03-30-26_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 634450,
+      "sha256": "ceb0c9123194e91233b19d4e73f3931b79418d3a39340f6891debdf054c20221"
+    }
+  ],
+  "_mirror_hash": "c06b18e3a6610e4f7bf0d2a94182984117bd9e2ef5c55cc82e48647a742dcc5a",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.588939+00:00"
+}

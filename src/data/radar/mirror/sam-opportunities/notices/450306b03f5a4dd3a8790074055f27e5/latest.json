@@ -1,0 +1,57 @@
+{
+  "id": "sam-450306b03f5a4dd3a8790074055f27e5",
+  "title": "Standard Recovery - Brazil (Follow-on)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=450306b03f5a4dd3a8790074055f27e5",
+  "opportunity_url": "https://sam.gov/opp/450306b03f5a4dd3a8790074055f27e5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/450306b03f5a4dd3a8790074055f27e5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "450306b03f5a4dd3a8790074055f27e5",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "83310126Q0024",
+  "agency_path": "EXPORT-IMPORT BANK OF THE US.EXPORT-IMPORT BANK OF THE US.EXPORT IMPORT BANK OF US",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=450306b03f5a4dd3a8790074055f27e5",
+  "detail_text": "Synopsis – 83310126Q0024 | Claim(s) in Brazil (Follow-on) EXIM Bank, headquartered in Washington, D.C., is providing this notice of intent to issue a sole source a follow-on award to provide asset protection and recovery services. The applicable Product/Service Code is R418. The applicable North American Industry Classification System (NAICS) code is 541110 - Offices of Lawyers, which has a size standard of $16M. This requirement is to assist EXIM in its efforts to collect outstanding amounts owed to EXIM by the obligor/buyer and all guarantors, if any. These efforts will include, as EXIM may direct, asset searches, site visits, negotiations, litigation, documentation of agreements, embargoing assets and executing upon assets. See attached PWS. When an individual AMD recovery contract ends but the recovery action is still pending resolution, we award follow-on contracts on a sole source basis to the original vendor (per FAR 16.505(2)(c)) as long as it is for the same recovery case(s). The rationale for this is the combination of contingency payment agreement and the frequent long length of the recovery process. With limited vendor availability, if we did not follow this practice, the original vendor could perform most of the work and the subsequent vendor would reap the rewards of any funds recovered. By awarding follow-on contracts in this manner, we establish fairness for the vendors in an unusual situation, retain good relations with a limited vendor pool for future needs, and therefore get the best long-term benefit to the government. Place of Contract Performance: EXIM Bank in Washington, D.C. and Brazil Contracting Point of Contact and/or Contracting Officer: Travis Finkle Travis.Finkle@exim.gov Contracting Office Address: Office of Contract Services 811 Vermont Ave., NW Washington, DC 20571",
+  "detail_text_length": 1828,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02d726b2ef80446b8b19adcf2067cf6f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/355ea36ff509490fbaf6a05b6485c3ee/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02d726b2ef80446b8b19adcf2067cf6f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a29b51df943088d63e39407f481a537007a528a5736966329bd450c4ce9c3258.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a29b51df943088d63e39407f481a537007a528a5736966329bd450c4ce9c3258.pdf",
+      "file_id": "02d726b2ef80446b8b19adcf2067cf6f",
+      "file_name": "JOFOC_IR_BRAZIL_I200668_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 461354,
+      "sha256": "a29b51df943088d63e39407f481a537007a528a5736966329bd450c4ce9c3258"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/355ea36ff509490fbaf6a05b6485c3ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e75ddb3d0b8023cca2363674b9342c22673a83e9789590ad6374aa8bfc140e00.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e75ddb3d0b8023cca2363674b9342c22673a83e9789590ad6374aa8bfc140e00.pdf",
+      "file_id": "355ea36ff509490fbaf6a05b6485c3ee",
+      "file_name": "PWS_IR_Brazil_I200668_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 559033,
+      "sha256": "e75ddb3d0b8023cca2363674b9342c22673a83e9789590ad6374aa8bfc140e00"
+    }
+  ],
+  "_mirror_hash": "9941ed27943e58bf7b635d338dc4024da8fff1d420c95f0015ed31054ae32796",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.575905+00:00"
+}

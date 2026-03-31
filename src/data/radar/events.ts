@@ -16168,4 +16168,56 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Source confirms event title/date and virtual format. No public government contact, notice type, solicitation number, response due date, or registration deadline published as of 2026-03-26.'
 		}
 	},
+	{
+		id: 'radar-future-armoured-vehicles-central-and-eastern-europe-conference-2026',
+		title: 'Future Armoured Vehicles Central and Eastern Europe Conference 2026',
+		description: 'ASD Events listing for defense ecosystem tracking.',
+		startDate: '2026-05-18',
+		endDate: '2026-05-19',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'Prague',
+			country: 'Czech Republic',
+			lat: 50.0755,
+			lng: 14.4378
+		},
+		ontology: 
+		{
+			themes: [],
+			capabilityAreas: [],
+			missionThreads: [],
+			stakeholders: [],
+			keywords: ['future', 'armoured', 'vehicles', 'central', 'eastern europe'],
+			relatedPrograms: [],
+			decisionWindows: 
+			{
+				discovery: '',
+				prep: '',
+				execution: ''
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-03-31',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25843'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'High'
+			},
+			notes: 'Source confirms title, date range, city, and official event URL. No public government contact, notice type, solicitation number, response due date, or registration deadline published as of 2026-03-31.'
+		}
+	},
 ];

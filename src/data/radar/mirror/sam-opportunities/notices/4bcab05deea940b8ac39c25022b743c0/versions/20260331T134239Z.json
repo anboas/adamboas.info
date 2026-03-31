@@ -1,0 +1,57 @@
+{
+  "id": "sam-4bcab05deea940b8ac39c25022b743c0",
+  "title": "Ansys STK Support Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4bcab05deea940b8ac39c25022b743c0",
+  "opportunity_url": "https://sam.gov/opp/4bcab05deea940b8ac39c25022b743c0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4bcab05deea940b8ac39c25022b743c0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4bcab05deea940b8ac39c25022b743c0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26929353Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4bcab05deea940b8ac39c25022b743c0",
+  "detail_text": "See attached SOW and Capability Statement",
+  "detail_text_length": 41,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16d9e16ca6cc4ab79f5bd789275d9e90/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8593a736506b4e2abd9c4bf4f806713c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16d9e16ca6cc4ab79f5bd789275d9e90/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3e2b30a7007ba3d8a07ac61bc1cb0217b0092ec617aa6bcfe0dd5120839433a5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3e2b30a7007ba3d8a07ac61bc1cb0217b0092ec617aa6bcfe0dd5120839433a5.pdf",
+      "file_id": "16d9e16ca6cc4ab79f5bd789275d9e90",
+      "file_name": "SATPC00403730+Tab+04+4+SOW+REDACTED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 146216,
+      "sha256": "3e2b30a7007ba3d8a07ac61bc1cb0217b0092ec617aa6bcfe0dd5120839433a5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8593a736506b4e2abd9c4bf4f806713c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c2d31db45ee4f937c6957039e9dd085528115edec297ec814b9927e8105918f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c2d31db45ee4f937c6957039e9dd085528115edec297ec814b9927e8105918f.docx",
+      "file_id": "8593a736506b4e2abd9c4bf4f806713c",
+      "file_name": "SATPC00403730+Tab+07+Capability+Statement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 32849,
+      "sha256": "0c2d31db45ee4f937c6957039e9dd085528115edec297ec814b9927e8105918f"
+    }
+  ],
+  "_mirror_hash": "84c4d00302fe434c3125c887ae43c42847b326c48e38ddf94c19d6317f90ad2e",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.494602+00:00"
+}

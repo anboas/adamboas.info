@@ -1,0 +1,57 @@
+{
+  "id": "sam-9c8bddb2b97a4ef79e87388361fa0155",
+  "title": "Elevator Repair Assesment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c8bddb2b97a4ef79e87388361fa0155",
+  "opportunity_url": "https://sam.gov/opp/9c8bddb2b97a4ef79e87388361fa0155/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9c8bddb2b97a4ef79e87388361fa0155/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9c8bddb2b97a4ef79e87388361fa0155",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "F2M3CB6065A001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-03-30",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c8bddb2b97a4ef79e87388361fa0155",
+  "detail_text": "*****This is a sources sought for market research purposes only. Please see below and attachments for more details.***** 1. JBSA Randolph AFB is searching for potential contractors that can provide Elevator Assesment Services IAW the Statement of Work (SOW). Lackland is seeking information from interested parties that can provide the requirements below. All prospective contractors must be registered in the System for Award Management (SAM.Gov) database to be awarded a DOW contract. The product service code for this is J039 - Maint/Repair/Rebuild of Equipment—Materials Handling Equipment and the NAICS for this action is 333921 - Elevators, passenger and freight, manufacturing (size standard: 1,000 Employees) 2. The Department of War is seeking capable contractors to investigate and assess the repair of elevator at Building 663, JBSA-Randolph AFB, San Antonio in Texas. The selected contractor shall furnish all supervision, labor, transportation materials, tools, incidentals, equipment, and quality assurance for investigation of the hydraulic jack leak and associated parts to get the full scope of the leak and remediate the affected area. This requierement is for an assesment only. 3. This announcement is a Sources Sought and is NOT a Request for Quotation (RFQ). This announcement does not commit the government to award a contract now or in the future. There is no solicitation or funding currently available. Additionally, the government is not obligated to and will not pay for any information received from potential sources because of this Sources Sought announcement. The result of this Source Sought will be utilized to determine if there are enough vendors capable to provide an elevator assessment IAW the statement of work. In addition, this market research tool can be used to identify potential and eligible firms, of all sizes, prior to determining the method acquisition and issuance of a solicitation. This is projected to be a small business set-aside, all small business set-aside categories will be considered. Attached is the DRAFT of the statement of work for this requirement, to allow for a better idea of work to be expected. It is subject to adjustments as necessary. 4. Please complete Sources Sought Notice Template and send to BOTH emails alejandra.lemus@us.af.mil and norena.phillips@us.af.mil.",
+  "detail_text_length": 2340,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/726b4335336d4ebfb0385bb97d695aeb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c53a057200484a18b26f7ddd27c61cd9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/726b4335336d4ebfb0385bb97d695aeb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3f8817e04a32ff4c48f3a886908e8f26da2091a9c492f502923f82501d9397bd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3f8817e04a32ff4c48f3a886908e8f26da2091a9c492f502923f82501d9397bd.docx",
+      "file_id": "726b4335336d4ebfb0385bb97d695aeb",
+      "file_name": "Sources+Sought+Notice+Template.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122985,
+      "sha256": "3f8817e04a32ff4c48f3a886908e8f26da2091a9c492f502923f82501d9397bd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c53a057200484a18b26f7ddd27c61cd9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/da7aa37fc756ae4779809f24d1a299ce838be2dd7327dfbd03114b62b248b8e1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/da7aa37fc756ae4779809f24d1a299ce838be2dd7327dfbd03114b62b248b8e1.docx",
+      "file_id": "c53a057200484a18b26f7ddd27c61cd9",
+      "file_name": "SOW+Elevator+Pit+Investigation-+DRAFT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29106,
+      "sha256": "da7aa37fc756ae4779809f24d1a299ce838be2dd7327dfbd03114b62b248b8e1"
+    }
+  ],
+  "_mirror_hash": "14eee3d36ebd5f0f5a0f6e8941697859501edf448ff35819fed8b185bf9b7457",
+  "_mirror_run_id": "20260331T134239Z",
+  "_mirror_recorded_at": "2026-03-31T13:46:47.496467+00:00"
+}
