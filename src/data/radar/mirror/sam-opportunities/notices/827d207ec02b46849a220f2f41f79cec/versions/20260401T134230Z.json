@@ -1,0 +1,46 @@
+{
+  "id": "sam-827d207ec02b46849a220f2f41f79cec",
+  "title": "DHS FY 2025 Annual Posting of Buy American Act Domestic Nonavailability Actions",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=827d207ec02b46849a220f2f41f79cec",
+  "opportunity_url": "https://sam.gov/opp/827d207ec02b46849a220f2f41f79cec/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/827d207ec02b46849a220f2f41f79cec/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "827d207ec02b46849a220f2f41f79cec",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2027-03-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=827d207ec02b46849a220f2f41f79cec",
+  "detail_text": "In recognition of the importance of the Buy American statute (BAA) to the U.S. economy, and to promote and enhance awareness and public visibility, the Department of Homeland Security (DHS) publishes annually a list of procurement actions using the BAA domestic nonavailability waivers executed during the previous year. During Fiscal Year 2025, DHS executed 1,051 contract actions valued at $80,195,215.23 using the domestic nonavailability exception under the BAA. This figure represents approximately 1.87 percent (by dollar value) of the annual DHS procurement obligations for the fiscal year subject to compliance with the BAA. Most of these actions were awarded by the U.S. Coast Guard (USCG) for i) miscellaneous aircraft accessories and components; ii) airframe structural components; iii) helicopter rotor blades, drive mechanisms, and components; iv) tubing; and v) hardware. To maintain and service aircrafts and various other assets, USCG must acquire parts from the original equipment manufacturers (OEMs), many of which are foreign. These items are considered “spare and replacement parts for equipment of foreign manufacture, and for which domestic parts are not available,” and fall under the class nonavailability determination at FAR 25.103(b)(1) and 25.104(a). For any questions about this posting, please contact: Shaundra Ford Shaundra.Ford@hq.dhs.gov DHS Office of the Chief Procurement Officer",
+  "detail_text_length": 1416,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2971b72f9ec24450955690e5b695c4c9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2971b72f9ec24450955690e5b695c4c9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dca08213ae32181177cb2a65f7446a739dc2f6ac7316bd62536ef4658f3b5a85.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dca08213ae32181177cb2a65f7446a739dc2f6ac7316bd62536ef4658f3b5a85.pdf",
+      "file_id": "2971b72f9ec24450955690e5b695c4c9",
+      "file_name": "DHS_FY_2025_Buy_American_Domestic_Nonavailability_Listing.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 428431,
+      "sha256": "dca08213ae32181177cb2a65f7446a739dc2f6ac7316bd62536ef4658f3b5a85"
+    }
+  ],
+  "_mirror_hash": "8c481c1d3c9f44705c0c40f6388a920db3a51b5a480ce15dc19618e451f6b817",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.589731+00:00"
+}

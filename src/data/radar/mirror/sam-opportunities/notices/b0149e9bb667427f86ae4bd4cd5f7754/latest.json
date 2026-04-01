@@ -1,0 +1,57 @@
+{
+  "id": "sam-b0149e9bb667427f86ae4bd4cd5f7754",
+  "title": "6515--Triplane Transducer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b0149e9bb667427f86ae4bd4cd5f7754",
+  "opportunity_url": "https://sam.gov/opp/b0149e9bb667427f86ae4bd4cd5f7754/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b0149e9bb667427f86ae4bd4cd5f7754/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b0149e9bb667427f86ae4bd4cd5f7754",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0578",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b0149e9bb667427f86ae4bd4cd5f7754",
+  "detail_text": "Please see attached Word document for details.",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/739d6ce045384e3f806b388c7955c0de/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/950ee03fd0054e79973b8fcdb4065527/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/739d6ce045384e3f806b388c7955c0de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/45a3dbf1626766b5cfa55d5f6869b130fc569cf546b7976d101196925cdba6ca.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/45a3dbf1626766b5cfa55d5f6869b130fc569cf546b7976d101196925cdba6ca.docx",
+      "file_id": "739d6ce045384e3f806b388c7955c0de",
+      "file_name": "36C26226Q0578.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14475,
+      "sha256": "45a3dbf1626766b5cfa55d5f6869b130fc569cf546b7976d101196925cdba6ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/950ee03fd0054e79973b8fcdb4065527/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2759e7b4eb8b9029d871cc9ff25a979ba58923569846ef1dbb40e81255d6cc46.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2759e7b4eb8b9029d871cc9ff25a979ba58923569846ef1dbb40e81255d6cc46.docx",
+      "file_id": "950ee03fd0054e79973b8fcdb4065527",
+      "file_name": "S05+RFI+Triplane+Transducer.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 44322,
+      "sha256": "2759e7b4eb8b9029d871cc9ff25a979ba58923569846ef1dbb40e81255d6cc46"
+    }
+  ],
+  "_mirror_hash": "f2fe576829cebd9188b6dee53f95d76ab3dee5d58300ac3b0d4cbcdd1e4cb2be",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.408448+00:00"
+}

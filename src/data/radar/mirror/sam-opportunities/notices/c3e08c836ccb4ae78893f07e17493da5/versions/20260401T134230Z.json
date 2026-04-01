@@ -1,0 +1,46 @@
+{
+  "id": "sam-c3e08c836ccb4ae78893f07e17493da5",
+  "title": "SZCQ192156 Repair of Building 156 Intent to Sole Source",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3e08c836ccb4ae78893f07e17493da5",
+  "opportunity_url": "https://sam.gov/opp/c3e08c836ccb4ae78893f07e17493da5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c3e08c836ccb4ae78893f07e17493da5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c3e08c836ccb4ae78893f07e17493da5",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W50S8A26RA002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO NH.USPFO NH PROCUREMENT.W7NN USPFO ACTIVITY NHANG 157",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3e08c836ccb4ae78893f07e17493da5",
+  "detail_text": "The 157th Air Refueling Wing has a long-standing requirement to bring the electrical and HVAC systems in its simulator building up to code. To address the extensive mechanical deficiencies in Building 156, an architecture-engineering firm will undertake a comprehensive project beginning with a full retro-commission of the entire mechanical system. This initial phase involves testing every system input and output, calibrating all sensors for accuracy, and updating the operational sequences to comply with current building codes, which may differ from the original design intent. Upon completion, this retro-commission report, containing recommendations for optimization, will be delivered to the Base Civil Engineer. Following this analysis, the design phase will commence, focusing on critical upgrades such as upgrading the chilled water loop pumps to modern variable speed models, and replacing the computer room's problematic mist humidifier with a superior mist-free ultrasonic system. The design will also incorporate a new backup cooling system for the critical computer room, a permanent solution to prevent rodents from infesting the pad-mounted HVAC unit, and a significant modification of the building's energy management control system to support the new equipment, which includes researching the cost-effectiveness of a full upgrade to Schneider Electric's \"Smart\" platform. This work was previously contracted to Oak Point Associates under contract number W912TF19F5304 for Type A services but was not extended to a full Type A and B design due to funding limitations at the time. A sole source justification was signed using the authority of 10 United States Code 3204(a)(1) as implemented in Federal Acquisition Regulation 6.302-1(a)(2)(iii)(A), Substantial Duplication of cost to the Government that is not expected to be recovered through competition. That justification recommends a sole source award to the Designer of Record: Oak Point Associates (UEI: JY7EDGSXZ769) at 231 Main Street, Biddeford, Maine 04005. A copy of the justification is attached to this posting.",
+  "detail_text_length": 2092,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2fe7dcfdd372494b80752b1bec9020ca/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2fe7dcfdd372494b80752b1bec9020ca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1550f56c1062a1268ccdb4a60b4a7acbae5cbc3653c83b680b2f7f159dab8c0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1550f56c1062a1268ccdb4a60b4a7acbae5cbc3653c83b680b2f7f159dab8c0.pdf",
+      "file_id": "2fe7dcfdd372494b80752b1bec9020ca",
+      "file_name": "Redacted_Limited+Competition+Justification_B156+FINAL_SIGNED1_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 456156,
+      "sha256": "b1550f56c1062a1268ccdb4a60b4a7acbae5cbc3653c83b680b2f7f159dab8c0"
+    }
+  ],
+  "_mirror_hash": "894bdcd9cfeaaae81a08f58353bfcd698b452247d21dfdf11e6e4e52d7ee17ae",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.537406+00:00"
+}

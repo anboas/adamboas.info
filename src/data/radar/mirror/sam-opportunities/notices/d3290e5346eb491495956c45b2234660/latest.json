@@ -1,0 +1,57 @@
+{
+  "id": "sam-d3290e5346eb491495956c45b2234660",
+  "title": "Cobra Radios",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3290e5346eb491495956c45b2234660",
+  "opportunity_url": "https://sam.gov/opp/d3290e5346eb491495956c45b2234660/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d3290e5346eb491495956c45b2234660/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d3290e5346eb491495956c45b2234660",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "F2MTBG6056A001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3290e5346eb491495956c45b2234660",
+  "detail_text": "The Government is only conducting market research and attaining information to identify contractors that can provide all items listed below and the cost associated to acquire these specific items/services. All information provided is STRICTLY VOLUNTARY. Cobra Radios (SKU: PX650-BCH6) 6-Pack with Bulk Charger (80 each) Please see attached Salient Characteristics. Please complete attached Request for Information and return by response by 9 April 2026 by 10:00am CST to Jack Caniglia, jack.caniglia.3@us.af.mil",
+  "detail_text_length": 511,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fc38dfc43784239b360480cfe7fae8e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79289ecf9ebe422ba2fad51baccd09bb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fc38dfc43784239b360480cfe7fae8e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba8430aa9ee3347f24b0dcb11f1117015867f463c703c23bfcce14867a992d47.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba8430aa9ee3347f24b0dcb11f1117015867f463c703c23bfcce14867a992d47.pdf",
+      "file_id": "1fc38dfc43784239b360480cfe7fae8e",
+      "file_name": "RFI+-+Cobra+Radios.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 301215,
+      "sha256": "ba8430aa9ee3347f24b0dcb11f1117015867f463c703c23bfcce14867a992d47"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79289ecf9ebe422ba2fad51baccd09bb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6719bce8c0655ae57a0cfca2bf77b18eb69b026d166f1da7663d94ab830f18a2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6719bce8c0655ae57a0cfca2bf77b18eb69b026d166f1da7663d94ab830f18a2.pdf",
+      "file_id": "79289ecf9ebe422ba2fad51baccd09bb",
+      "file_name": "Attachment+1+-+Cobra+Two+Way+Radio+Salient+Characteristics_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 159430,
+      "sha256": "6719bce8c0655ae57a0cfca2bf77b18eb69b026d166f1da7663d94ab830f18a2"
+    }
+  ],
+  "_mirror_hash": "fa83aeb11f4f5b1f1f1ac55d2a285ba113b49929351f9ff311ed56a44ea8b898",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.470700+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-55032d2d831d4a8488ef813025dbe7e7",
+  "title": "1 NSN SK FILTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=55032d2d831d4a8488ef813025dbe7e7",
+  "opportunity_url": "https://sam.gov/opp/55032d2d831d4a8488ef813025dbe7e7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/55032d2d831d4a8488ef813025dbe7e7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "55032d2d831d4a8488ef813025dbe7e7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CM26036009",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=55032d2d831d4a8488ef813025dbe7e7",
+  "detail_text": "PLEASE REVIEW THE NSNS LISTED AND PROVIDE ANY SOURCES THAT MAY BE ABLE TO MANUFACTURE THESE ITEMS. THE ONLY APPROVED SOURCES FOR THESE NSNS ARE LISTED BELOW. ALL INFORMATION MAY BE SUBMITTED DIRECTLY TO TAURA MITCHELL AT TAURA.MITCHELL@DLA.MIL. THIS INFORMATION MUST BE PROVIDED BY THE RESPONSE DATE OF THIS NOTICE. FSC- NIIN CAGE MANUFACTOR PART_NUMBER 4330-015388020 CAGE 26916 NORTHROP GRUMMAN SYSTEMS CORP. P/N: 034-005558-0001 4330-015388020 CAGE K3649 BROWNELL LTD P/N: BLD9399",
+  "detail_text_length": 483,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0de94c48f27a49638cf14a0f2e85d7ba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1bd4f6e5e870479084333877724fa794/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0de94c48f27a49638cf14a0f2e85d7ba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6422a4511a98d85e707b1828a2ed657bf2dd95a91aaa374ebbad2e83d6b3912c.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6422a4511a98d85e707b1828a2ed657bf2dd95a91aaa374ebbad2e83d6b3912c.xlsx",
+      "file_id": "0de94c48f27a49638cf14a0f2e85d7ba",
+      "file_name": "-CM26036009-MR+LTC+Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 198718,
+      "sha256": "6422a4511a98d85e707b1828a2ed657bf2dd95a91aaa374ebbad2e83d6b3912c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1bd4f6e5e870479084333877724fa794/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c780e6a0296ef699d9e130266c25ab3c613b5a9943b8e4a00cab9d7f9b3045a1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c780e6a0296ef699d9e130266c25ab3c613b5a9943b8e4a00cab9d7f9b3045a1.docx",
+      "file_id": "1bd4f6e5e870479084333877724fa794",
+      "file_name": "-CM26036009-+MR+LTC+Question.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56493,
+      "sha256": "c780e6a0296ef699d9e130266c25ab3c613b5a9943b8e4a00cab9d7f9b3045a1"
+    }
+  ],
+  "_mirror_hash": "6b285bf8e63efe45418bc99799475fbada4f5592c79dcc39a18ea10494f64181",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.442968+00:00"
+}

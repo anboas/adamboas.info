@@ -1,0 +1,48 @@
+{
+  "id": "sam-37f995c4e9d7441ea5f5c14944608809",
+  "title": "INL Costa Rica Construction Industry Day",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37f995c4e9d7441ea5f5c14944608809",
+  "opportunity_url": "https://sam.gov/opp/37f995c4e9d7441ea5f5c14944608809/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/37f995c4e9d7441ea5f5c14944608809/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "37f995c4e9d7441ea5f5c14944608809",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY SAN JOSE",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37f995c4e9d7441ea5f5c14944608809",
+  "detail_text": "Please join us on April 16th, 2026 , for the U.S.Department of State, Bureau ofInternational Narcotics and LawEnforcement Affairs (INL) Costa Rica Construction Industry Day.",
+  "detail_text_length": 173,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba96af8206fd4771b8c75ce44df57142/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba96af8206fd4771b8c75ce44df57142/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fb8e46b6ed31b78ea8d9f324feef088a412a8129e5b55776acba332ec08111ea.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fb8e46b6ed31b78ea8d9f324feef088a412a8129e5b55776acba332ec08111ea.pdf",
+      "file_id": "ba96af8206fd4771b8c75ce44df57142",
+      "file_name": "Industry+Day+Costa+Rica.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 101172,
+      "sha256": "fb8e46b6ed31b78ea8d9f324feef088a412a8129e5b55776acba332ec08111ea"
+    }
+  ],
+  "_mirror_hash": "ca294be34063daa3efb56158133cdaa4fa3dd7fa1b60206dcca45b0f225b2619",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.327957+00:00"
+}

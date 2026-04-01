@@ -1,0 +1,57 @@
+{
+  "id": "sam-c752303158bb4b579db6c7417f30cb85",
+  "title": "Semiautomatic Aerosol Propellant Filler",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c752303158bb4b579db6c7417f30cb85",
+  "opportunity_url": "https://sam.gov/opp/c752303158bb4b579db6c7417f30cb85/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c752303158bb4b579db6c7417f30cb85/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c752303158bb4b579db6c7417f30cb85",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CDR-2026-133243",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.FOOD AND DRUG ADMINISTRATION.FOOD AND DRUG ADMINISTRATION",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c752303158bb4b579db6c7417f30cb85",
+  "detail_text": "This is a Sources Sought Notice only and shall not be construed as a solicitation or as an obligation on the part of the Government to acquire any products or services. The purpose of this notice is to gain knowledge of potential qualified sources and their size classification relative to NAICS code [Insert Code] in support of market research. The U.S. Food and Drug Administration (FDA), Center for Drug Evaluation and Research (CDER), is seeking information from qualified vendors capable of providing a complete semiautomatic Aerosol Propellant Filler system for pressurized metered-dose inhaler (pMDI) formulations to support advanced pharmaceutical manufacturing research. This notice is issued solely for information and planning purposes and does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. This notice does not commit the Government to contract for any supply or service. Please review the attached Sources Sought Notice (SSN) and respond using the attached SSN response form on or before April 14, 2026@10:00 am to Michele Jackson at Michele.Jackson@fda.hhs.gov",
+  "detail_text_length": 1116,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1db9c08ae5bc47368c653c8252c9bea9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47e3dafc595649dd8a0a8df49457e89a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1db9c08ae5bc47368c653c8252c9bea9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4b9831e3efc4ffbab44cad83fa45e06c00bb82550e3a4838fe6780cd1c2cd599.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4b9831e3efc4ffbab44cad83fa45e06c00bb82550e3a4838fe6780cd1c2cd599.docx",
+      "file_id": "1db9c08ae5bc47368c653c8252c9bea9",
+      "file_name": "SSN+Response+Template+CDER2026133243final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52026,
+      "sha256": "4b9831e3efc4ffbab44cad83fa45e06c00bb82550e3a4838fe6780cd1c2cd599"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47e3dafc595649dd8a0a8df49457e89a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/53d8c73aff6167380e55e06d32e354269b892438d9c384772be77cf83cbe7191.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/53d8c73aff6167380e55e06d32e354269b892438d9c384772be77cf83cbe7191.docx",
+      "file_id": "47e3dafc595649dd8a0a8df49457e89a",
+      "file_name": "Sources+Sought+Notice++CDR-2026-133243+final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 42046,
+      "sha256": "53d8c73aff6167380e55e06d32e354269b892438d9c384772be77cf83cbe7191"
+    }
+  ],
+  "_mirror_hash": "83d276a2c56a9889ba64da04c041fc92dd1bad657b11112254aa18de0d9a2cfc",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.516924+00:00"
+}

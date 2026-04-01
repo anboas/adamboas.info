@@ -1,0 +1,57 @@
+{
+  "id": "sam-c8e21cce23344b2f825b94a1cd775098",
+  "title": "ISS AGILE OWL LIFESTYLE REFRESH",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c8e21cce23344b2f825b94a1cd775098",
+  "opportunity_url": "https://sam.gov/opp/c8e21cce23344b2f825b94a1cd775098/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c8e21cce23344b2f825b94a1cd775098/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c8e21cce23344b2f825b94a1cd775098",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "F3NT176057AW01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c8e21cce23344b2f825b94a1cd775098",
+  "detail_text": "The proposed contract action is anticipated to be a brand name acquisition to Cisco due to critical technical compatibility requiremnts to align with 693 ISS existing network infrastructure currently deployed within the organization. Procuring a different brand would require significant reconfiguration to the current environment, potential redesing of existing routing,switching, and security policies. To prevent the unnecessary duplication of costs and ensure technical compatibility with current support equipment, only Cisco brand-name equipment is capable of meeting the governments requirement.",
+  "detail_text_length": 602,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef958dff8b7f41049e465a5933f926fe/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f138be5c7c3042a6a2ab10045526c114/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef958dff8b7f41049e465a5933f926fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2ab8008b10a9e61c3c9b00adb74ebaadaf526948e6417cc5923690ca521931d1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2ab8008b10a9e61c3c9b00adb74ebaadaf526948e6417cc5923690ca521931d1.pdf",
+      "file_id": "ef958dff8b7f41049e465a5933f926fe",
+      "file_name": "Salient+Characteristics+Sheet+-+AO+Tech+Refresh.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 123390,
+      "sha256": "2ab8008b10a9e61c3c9b00adb74ebaadaf526948e6417cc5923690ca521931d1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f138be5c7c3042a6a2ab10045526c114/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8a46cdf764b6b047e45aad0a99dca36d73b7ebc2978efc2727c9c4fbf0bddaca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8a46cdf764b6b047e45aad0a99dca36d73b7ebc2978efc2727c9c4fbf0bddaca.pdf",
+      "file_id": "f138be5c7c3042a6a2ab10045526c114",
+      "file_name": "BNJ+-+CO+Signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84915,
+      "sha256": "8a46cdf764b6b047e45aad0a99dca36d73b7ebc2978efc2727c9c4fbf0bddaca"
+    }
+  ],
+  "_mirror_hash": "8f07d0d3c1ec1c02cc1287edf4559c90f34fb859910246711d0ccbd96bd4aeb7",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.487630+00:00"
+}

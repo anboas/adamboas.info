@@ -1,0 +1,68 @@
+{
+  "id": "sam-e099caa1cf1542c084713ea95574e9f4",
+  "title": "On-Site SCRUM Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e099caa1cf1542c084713ea95574e9f4",
+  "opportunity_url": "https://sam.gov/opp/e099caa1cf1542c084713ea95574e9f4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e099caa1cf1542c084713ea95574e9f4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e099caa1cf1542c084713ea95574e9f4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6449826Q5092",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e099caa1cf1542c084713ea95574e9f4",
+  "detail_text": "An amendment to N6449826Q5092 has been issued and closes Friday 3 April 2026. Vendors must submit the below in order to be considered for award. 2. Price Proposal: CLIN 0001. INCLUDED WITH YOUR PROPOSAL, PLEASE PROVIDE ANY PAST EXPERIENCE, INSTRUCTOR QUALIFICATIONS/EXPERIENCE TO TEACH THE CLASS AND PLAN FOR PROVIDING ACCESS TO THE CERTIFICATION TESTS. AWARDEE MUST HAVE SCRUM.ORG CERTIFICATION OR AN EQUIVALENT INDUSTRY-RECOGNIZED CERTIFICATION IS ACCEPTABLE LIKE FROM SCRUM INC. PLEASE PROVIDE THIS INFORMATION WITH YOUR PROPOSAL, FAILURE TO SUBMIT WILL CLASSIFY THE PROPOSAL AS UNACCEPTABLE.",
+  "detail_text_length": 595,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1eb9270940ea406ca3844b964d6e5557/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/270c8f696ccc4ab79bbbaf8dddac1238/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc2523e2f3d4a739d45284b61a34ef2/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1eb9270940ea406ca3844b964d6e5557/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c64d671f4b8353ec6d7e29c3836f14dec7fe6c513a7142dcf3a99787556f2745.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c64d671f4b8353ec6d7e29c3836f14dec7fe6c513a7142dcf3a99787556f2745.pdf",
+      "file_id": "1eb9270940ea406ca3844b964d6e5557",
+      "file_name": "Solicitation+Amendment+-+N6449826Q50920001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2006401,
+      "sha256": "c64d671f4b8353ec6d7e29c3836f14dec7fe6c513a7142dcf3a99787556f2745"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/270c8f696ccc4ab79bbbaf8dddac1238/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1b509213d8e9e325f49dd2e0a9ed7978df663ad4aca9501d917253ee0cb30b88.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1b509213d8e9e325f49dd2e0a9ed7978df663ad4aca9501d917253ee0cb30b88.pdf",
+      "file_id": "270c8f696ccc4ab79bbbaf8dddac1238",
+      "file_name": "Solicitation+Amendment+N6449826Q50920001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 619593,
+      "sha256": "1b509213d8e9e325f49dd2e0a9ed7978df663ad4aca9501d917253ee0cb30b88"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc2523e2f3d4a739d45284b61a34ef2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aa622a53a36fe6f86e722e2179425e0c0074e0a5f85ad12188cc88f7b643f366.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aa622a53a36fe6f86e722e2179425e0c0074e0a5f85ad12188cc88f7b643f366.pdf",
+      "file_id": "2bc2523e2f3d4a739d45284b61a34ef2",
+      "file_name": "Solicitation+-+N6449826Q5092.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2006053,
+      "sha256": "aa622a53a36fe6f86e722e2179425e0c0074e0a5f85ad12188cc88f7b643f366"
+    }
+  ],
+  "_mirror_hash": "cfb231681912c75f15a3f27a88a6b8b654fc3f25e45b3fbf662d8762bdb16029",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.260607+00:00"
+}

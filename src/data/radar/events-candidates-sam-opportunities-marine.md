@@ -1,30 +1,29 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-31T13:47:13.442502+00:00
+Generated: 2026-04-01T13:48:36.168560+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/31/2026
+Posted range: 01/01/2026 -> 04/01/2026
 
 ## Counts
-- Total candidates: 19
+- Total candidates: 18
 - Navy-related: 0
-- Full detail cached: 19
-- Notices with attachments: 12
-- Total attachment links: 14
+- Full detail cached: 18
+- Notices with attachments: 11
+- Total attachment links: 13
 - Pre-solicitation: 3
 - Sources Sought: 10
-- Special Notice: 6
+- Special Notice: 5
 
 ## Engagement signals
 - Pre-solicitation: 3
 - Sources Sought: 10
-- Special Notice: 6
+- Special Notice: 5
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Special Notice | Special Notice | 2026-03-05 | 2026-03-16 | DEPT OF DEFENSE | [NOI -  Sole Source - Training Vouchers](https://sam.gov/opp/04012f50fa5642cdadfc8dfd1321fbce/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-18 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Human Performance (HPB) Branch (Synopsis)](https://sam.gov/opp/6f9e41a375e744b294d1e313bcd67f82/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-19 | DEPT OF DEFENSE | [Liebert HVAC PM Services](https://sam.gov/opp/e84e80da26664f30b5e271672947fca4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-20 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Range and Training Area Management (RTAM)](https://sam.gov/opp/56806bd9cce54f9bb33b5f44d928cc5d/view) |

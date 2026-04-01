@@ -16220,4 +16220,5 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Source confirms title, date range, city, and official event URL. No public government contact, notice type, solicitation number, response due date, or registration deadline published as of 2026-03-31.'
 		}
 	},
+
 ];

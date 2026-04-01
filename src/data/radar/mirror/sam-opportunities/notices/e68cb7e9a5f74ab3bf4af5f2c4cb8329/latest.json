@@ -1,0 +1,57 @@
+{
+  "id": "sam-e68cb7e9a5f74ab3bf4af5f2c4cb8329",
+  "title": "NGA TSCM Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e68cb7e9a5f74ab3bf4af5f2c4cb8329",
+  "opportunity_url": "https://sam.gov/opp/e68cb7e9a5f74ab3bf4af5f2c4cb8329/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e68cb7e9a5f74ab3bf4af5f2c4cb8329/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e68cb7e9a5f74ab3bf4af5f2c4cb8329",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HM0476_TSCM_Support",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).ATTN: MS S84 - OCS",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e68cb7e9a5f74ab3bf4af5f2c4cb8329",
+  "detail_text": "The National Geospatial-Intelligence Agency (NGA) in support of the Office of Counterintelligence (SIC) is seeking information on how an interested contractor could provide security support services to integrate, enhance, and optimize technical security and signals countermeasures programs in support of the protection of national intelligence, sources, and methods, including sensitive compartmented information, and the facilities, systems, and networks that house them.",
+  "detail_text_length": 473,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3c90962dc19464eb2808a64051d33d3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcab37e1118449b5b3a55b85decb62ad/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3c90962dc19464eb2808a64051d33d3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4964ff6d1d5872ed995d59c558aba4becb88012d8341d0107ea50f165ef26765.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4964ff6d1d5872ed995d59c558aba4becb88012d8341d0107ea50f165ef26765.pdf",
+      "file_id": "d3c90962dc19464eb2808a64051d33d3",
+      "file_name": "TSCM_DRAFT_SOW_20260325.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 624673,
+      "sha256": "4964ff6d1d5872ed995d59c558aba4becb88012d8341d0107ea50f165ef26765"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcab37e1118449b5b3a55b85decb62ad/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df137af6c706aeb3a974f2f0ee744c5e6521e820425f4b53cd77a9a415d3c2d9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df137af6c706aeb3a974f2f0ee744c5e6521e820425f4b53cd77a9a415d3c2d9.pdf",
+      "file_id": "dcab37e1118449b5b3a55b85decb62ad",
+      "file_name": "TSCM_RFI_.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 375504,
+      "sha256": "df137af6c706aeb3a974f2f0ee744c5e6521e820425f4b53cd77a9a415d3c2d9"
+    }
+  ],
+  "_mirror_hash": "47cd787baa6fc4e3b2cf58d80f4d328a4fb6211cb0051d043915df954a3b3e9b",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.513778+00:00"
+}

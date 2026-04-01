@@ -1,0 +1,46 @@
+{
+  "id": "sam-805bcc3779594a659e097747a334863d",
+  "title": "Preventive Maintenance Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=805bcc3779594a659e097747a334863d",
+  "opportunity_url": "https://sam.gov/opp/805bcc3779594a659e097747a334863d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/805bcc3779594a659e097747a334863d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "805bcc3779594a659e097747a334863d",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "NIH-SS-02113",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=805bcc3779594a659e097747a334863d",
+  "detail_text": "PLEASE SEE ATTACHED DOCUMENT",
+  "detail_text_length": 28,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb58e7321dcc41ceb6c1b825c5279a00/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb58e7321dcc41ceb6c1b825c5279a00/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7756460172bf91cb5026f9745d24f8a956d884bfa181f349b200825de0a6790.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7756460172bf91cb5026f9745d24f8a956d884bfa181f349b200825de0a6790.docx",
+      "file_id": "bb58e7321dcc41ceb6c1b825c5279a00",
+      "file_name": "NOI-BD+02113_A.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19938,
+      "sha256": "f7756460172bf91cb5026f9745d24f8a956d884bfa181f349b200825de0a6790"
+    }
+  ],
+  "_mirror_hash": "75749c83668411d4c159fec25c1c59d5bc7e9907f2a340f596ecc61c0f919366",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.481963+00:00"
+}

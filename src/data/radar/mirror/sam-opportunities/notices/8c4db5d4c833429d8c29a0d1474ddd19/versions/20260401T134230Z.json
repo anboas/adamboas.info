@@ -1,0 +1,46 @@
+{
+  "id": "sam-8c4db5d4c833429d8c29a0d1474ddd19",
+  "title": "White Paper Template - SASPO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8c4db5d4c833429d8c29a0d1474ddd19",
+  "opportunity_url": "https://sam.gov/opp/8c4db5d4c833429d8c29a0d1474ddd19/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8c4db5d4c833429d8c29a0d1474ddd19/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8c4db5d4c833429d8c29a0d1474ddd19",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "For-Reverse-Engineering-or-Repair-Development",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8c4db5d4c833429d8c29a0d1474ddd19",
+  "detail_text": "Attached is a white paper template for industry vendors to utilize for wapon system opportunities that require reverse engineering and/or repair development.",
+  "detail_text_length": 157,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a1eeed930f014011a1eaf578690b6645/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a1eeed930f014011a1eaf578690b6645/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e66ba90ae8ebe7e6843d8473677162348d5d6cf74ac48e8805fa5f346d940fb2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e66ba90ae8ebe7e6843d8473677162348d5d6cf74ac48e8805fa5f346d940fb2.pdf",
+      "file_id": "a1eeed930f014011a1eaf578690b6645",
+      "file_name": "White+Paper+Template.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137747,
+      "sha256": "e66ba90ae8ebe7e6843d8473677162348d5d6cf74ac48e8805fa5f346d940fb2"
+    }
+  ],
+  "_mirror_hash": "5ebd81df012489ef320c00dde53bd6e6bf818baa74a54dba9ce5759a6b849d14",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.396476+00:00"
+}

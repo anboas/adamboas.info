@@ -1,0 +1,59 @@
+{
+  "id": "sam-0800ae3555254ad4bb1bdd4eb05c1667",
+  "title": "RFI Low Earth Orbit Satellite Equipment and Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0800ae3555254ad4bb1bdd4eb05c1667",
+  "opportunity_url": "https://sam.gov/opp/0800ae3555254ad4bb1bdd4eb05c1667/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0800ae3555254ad4bb1bdd4eb05c1667/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0800ae3555254ad4bb1bdd4eb05c1667",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0302",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0800ae3555254ad4bb1bdd4eb05c1667",
+  "detail_text": "The VA OIT, CCS requires multiple commercially available LEO satellite equipment and services for more than 2,200 sites to provide internet connectivity services The VA OIT, CCS requires multiple commercially available LEO satellite equipment and services for more than 2,200 sites to provide internet connectivity services.",
+  "detail_text_length": 324,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6fdbc9c7ebfa4c35b36496b9f34af106/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/745ad256372d435cb6ba7fd0b495e755/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6fdbc9c7ebfa4c35b36496b9f34af106/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0bcc273ef11aaa354506e87f88bf65877476f45b2b57b2c4a59c64bf9df2233.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0bcc273ef11aaa354506e87f88bf65877476f45b2b57b2c4a59c64bf9df2233.pdf",
+      "file_id": "6fdbc9c7ebfa4c35b36496b9f34af106",
+      "file_name": "RFI+Low+Earth+Orbit+Satellite+Equipment+and+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 93824,
+      "sha256": "b0bcc273ef11aaa354506e87f88bf65877476f45b2b57b2c4a59c64bf9df2233"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/745ad256372d435cb6ba7fd0b495e755/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a15f8232c2e85878cacfb1ac674b2dce3a3c005f76bb8e3c7705444cfad11a6f.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a15f8232c2e85878cacfb1ac674b2dce3a3c005f76bb8e3c7705444cfad11a6f.xlsx",
+      "file_id": "745ad256372d435cb6ba7fd0b495e755",
+      "file_name": "RFI+-+VA+Locations.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 217542,
+      "sha256": "a15f8232c2e85878cacfb1ac674b2dce3a3c005f76bb8e3c7705444cfad11a6f"
+    }
+  ],
+  "_mirror_hash": "4050c952801aea9246e7aa8365e62d07bd905b3835c4bdbe880d504b5ba6990c",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.326833+00:00"
+}

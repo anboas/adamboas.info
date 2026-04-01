@@ -1,0 +1,56 @@
+{
+  "id": "sam-ad9bfdf1357044d48d6c54029aaadb17",
+  "title": "ANCHOR WINDLASS PARTS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ad9bfdf1357044d48d6c54029aaadb17",
+  "opportunity_url": "https://sam.gov/opp/ad9bfdf1357044d48d6c54029aaadb17/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ad9bfdf1357044d48d6c54029aaadb17/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ad9bfdf1357044d48d6c54029aaadb17",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS255",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-03-31",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ad9bfdf1357044d48d6c54029aaadb17",
+  "detail_text": "***See attached amendment 0001 to the solicitation.*** NAVSUP Fleet Logistics Center Puget Sound intends to solicit and award a firm-fixed-price Supply-type Purchase Order for OEM MACGREGOR USA INC Anchor Windlass Replacement Parts on a SOLE SOURCE basis. See attached solicitation posted 26 MAR 2026 for requirements. All responses shall be submitted prior to the solicitation closing date on page 1, box 8.",
+  "detail_text_length": 408,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14de01b390cc46f680015f6c1dfb3397/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b07950741423417f84ed597d18232a65/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14de01b390cc46f680015f6c1dfb3397/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4d17df2dac6c1b85ce9c24acb1ff02f2c4bee284b753e82d89dfbd2e954b31a0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4d17df2dac6c1b85ce9c24acb1ff02f2c4bee284b753e82d89dfbd2e954b31a0.pdf",
+      "file_id": "14de01b390cc46f680015f6c1dfb3397",
+      "file_name": "Solicitation+-+N0040626QS255.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2004420,
+      "sha256": "4d17df2dac6c1b85ce9c24acb1ff02f2c4bee284b753e82d89dfbd2e954b31a0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b07950741423417f84ed597d18232a65/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b79447629dc403d51a3f68e38eae2dfd0b9f6c4cb5336b7970cb24de46cffbf2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b79447629dc403d51a3f68e38eae2dfd0b9f6c4cb5336b7970cb24de46cffbf2.pdf",
+      "file_id": "b07950741423417f84ed597d18232a65",
+      "file_name": "Solicitation+Amendment+-+N0040626QS2550001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 586653,
+      "sha256": "b79447629dc403d51a3f68e38eae2dfd0b9f6c4cb5336b7970cb24de46cffbf2"
+    }
+  ],
+  "_mirror_hash": "5a613c21c2bd252206063bdc56c36ea96a2835512da833246dfe81e120828f5c",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.304451+00:00"
+}

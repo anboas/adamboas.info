@@ -1,0 +1,46 @@
+{
+  "id": "sam-8753874e419740888c5d50c5d5403a2f",
+  "title": "NOTICE OF INTENT TO AWARD A SOLE SOURCE CONTRACT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8753874e419740888c5d50c5d5403a2f",
+  "opportunity_url": "https://sam.gov/opp/8753874e419740888c5d50c5d5403a2f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8753874e419740888c5d50c5d5403a2f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8753874e419740888c5d50c5d5403a2f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA701426QB007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE DISTRICT OF WASHINGTON",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8753874e419740888c5d50c5d5403a2f",
+  "detail_text": "The Air Force District Washington (AFDW)/PKF intends to award a Sole Source contract The Air Force Sergeants Association, 5211 Auth Rd., Suitland, Maryland 20746, for the Worldwide Space Conference. AFDW/PKF will use Simplified Acquisition Procedures and Other Than Full and Open Competition. The authority for soliciting a single source under simplified acquisition procedures is FAR 13.106-1(b)(1)(i), Soliciting Competition, which states: Contracting Officers may solicit from one source if the contracting officer determines that the circumstances of the contract action deem only one source reasonably available (e.g., urgency, exclusive licensing agreements, brand-name or industrial mobilization).",
+  "detail_text_length": 704,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac2c07f37209433b9fe40c0ea726030a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac2c07f37209433b9fe40c0ea726030a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a434e2447cf56f3255179ac10292e34685242a54d88bf2afc05571d5fefa99ab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a434e2447cf56f3255179ac10292e34685242a54d88bf2afc05571d5fefa99ab.pdf",
+      "file_id": "ac2c07f37209433b9fe40c0ea726030a",
+      "file_name": "single_source_justification_Worldwide+Conference_REDACTED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 95569,
+      "sha256": "a434e2447cf56f3255179ac10292e34685242a54d88bf2afc05571d5fefa99ab"
+    }
+  ],
+  "_mirror_hash": "af420a079b57d7f9a64ec31c3da2ef0c5769f90124f2d6668dca933112bea0d9",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.534211+00:00"
+}

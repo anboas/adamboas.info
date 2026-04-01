@@ -1,0 +1,57 @@
+{
+  "id": "sam-9c9b4c4ce37f47e0ae203f2634915ba9",
+  "title": "CL26071007 Pump, Hydraulic Ramp",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c9b4c4ce37f47e0ae203f2634915ba9",
+  "opportunity_url": "https://sam.gov/opp/9c9b4c4ce37f47e0ae203f2634915ba9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9c9b4c4ce37f47e0ae203f2634915ba9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9c9b4c4ce37f47e0ae203f2634915ba9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL26071007",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c9b4c4ce37f47e0ae203f2634915ba9",
+  "detail_text": "Please review the NSN attached and provide any sources that may be able to manufacture the Pump, Hydraulic Ramp. See table attached, labeled “CL26071007 Market Research LTC NSN info”, Drawings are in cFolders. All information may be submitted directly to the Contracting Officer Jeffrey Wright at Jeffery.Wright@dla.mil. This information must be provided by the response date of this synopsis. Thank you in advance for your assistance.",
+  "detail_text_length": 435,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96c1cb59ff424f3997d47d10dbc4bc91/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9b9093d9d9a4169aae5e49ed451c7be/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96c1cb59ff424f3997d47d10dbc4bc91/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af9d8fbe27f33d00a0c8dcb49c7001dc9b28f15e40fb222a5fb2f6d01899d05f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af9d8fbe27f33d00a0c8dcb49c7001dc9b28f15e40fb222a5fb2f6d01899d05f.docx",
+      "file_id": "96c1cb59ff424f3997d47d10dbc4bc91",
+      "file_name": "Market+Research+LTC+Questionnaire+CL26071007.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58277,
+      "sha256": "af9d8fbe27f33d00a0c8dcb49c7001dc9b28f15e40fb222a5fb2f6d01899d05f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9b9093d9d9a4169aae5e49ed451c7be/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/25b6ccfa9b93a206a959fd90da363ee00bbed344c0b948d5fc4d7ac7d15d1ad4.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/25b6ccfa9b93a206a959fd90da363ee00bbed344c0b948d5fc4d7ac7d15d1ad4.xlsx",
+      "file_id": "b9b9093d9d9a4169aae5e49ed451c7be",
+      "file_name": "-CL26071007-MR+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181795,
+      "sha256": "25b6ccfa9b93a206a959fd90da363ee00bbed344c0b948d5fc4d7ac7d15d1ad4"
+    }
+  ],
+  "_mirror_hash": "71631620797ce0a32bbcfdd4f2fc06c15a09946204b69fda4100135099f090b4",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.527649+00:00"
+}

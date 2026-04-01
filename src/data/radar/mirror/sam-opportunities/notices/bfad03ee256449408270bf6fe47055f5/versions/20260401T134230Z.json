@@ -1,0 +1,45 @@
+{
+  "id": "sam-bfad03ee256449408270bf6fe47055f5",
+  "title": "Repair of NIIN 012694732 / NOMEN: HOOK,CARGO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfad03ee256449408270bf6fe47055f5",
+  "opportunity_url": "https://sam.gov/opp/bfad03ee256449408270bf6fe47055f5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bfad03ee256449408270bf6fe47055f5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bfad03ee256449408270bf6fe47055f5",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QF089",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfad03ee256449408270bf6fe47055f5",
+  "detail_text": "The Small Business Administration representative at NAVSUP WSS has reviewed this requirement and determined that a set-aside recommendation was not applicable for this repair. This RFQ is for repair. NAVSUP WSS requests that contractors submit a quote that includes either a firm-fixed price or TT&E pricing as well as estimate costs to repair this item. This contract/delivery order/purchase order/modification is issued by the Government when deposited in the mail, transmitted by facsimile or sent by any electronic commerce method, including email. The Government's acceptance of the contractor's proposal constitutes bilateral agreement to issue this contract/delivery order/purchase order/modification.",
+  "detail_text_length": 708,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76b9105ea10c4748a17955db96ed005c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76b9105ea10c4748a17955db96ed005c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c655ef4eaad5d1ca352f2cafda01e006d920626d1eb919598bc72a0ef07073ab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c655ef4eaad5d1ca352f2cafda01e006d920626d1eb919598bc72a0ef07073ab.pdf",
+      "file_id": "76b9105ea10c4748a17955db96ed005c",
+      "file_name": "3.01_Solicitation_N0038326QF089.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1962832,
+      "sha256": "c655ef4eaad5d1ca352f2cafda01e006d920626d1eb919598bc72a0ef07073ab"
+    }
+  ],
+  "_mirror_hash": "95ed5e75b5bc867928d4bc68388b54309e90cb8f84f6831f2a40138e0f4d4ff3",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.372398+00:00"
+}

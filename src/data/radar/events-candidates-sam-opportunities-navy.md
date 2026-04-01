@@ -1,16 +1,16 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-03-31T13:47:36.745471+00:00
+Generated: 2026-04-01T13:49:12.022035+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 03/31/2026
+Posted range: 01/01/2026 -> 04/01/2026
 
 ## Counts
 - Total candidates: 105
 - Navy-related: 105
 - Full detail cached: 105
 - Notices with attachments: 37
-- Total attachment links: 143
+- Total attachment links: 144
 - Combined Synopsis/Solicitation: 22
 - Pre-solicitation: 36
 - Solicitation: 15
@@ -44,8 +44,6 @@ Posted range: 01/01/2026 -> 03/31/2026
 | 9 | Sources Sought | Sources Sought | 2026-02-11 | 2026-03-13 | DEPT OF DEFENSE | [Sources Sought for Handheld Gas Analyzers](https://sam.gov/opp/c9341f8952914165b1ac6f6a976f29d6/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Consolidated Gases](https://sam.gov/opp/a1d9a51872cb42739fef419e9318ece2/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-04 | 2026-03-16 | DEPT OF DEFENSE | [NUWC Keyport Propane Supply](https://sam.gov/opp/7b925a4a373e4a13915776502b9b0e25/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-10 | 2026-03-16 | DEPT OF DEFENSE | [USNS HENRY J. KAISER DANFOSS AIRFLEX ENGINE COMPONENTS](https://sam.gov/opp/2babd1447d1c407d90c51e50e23e30c6/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-11 | 2026-03-16 | DEPT OF DEFENSE | [Sole Source to Innovative Professional Solutions for the Production of AN/SQQ-32(V) UR6 Circuit Card Assemblies](https://sam.gov/opp/2f42b5c82888406ba4add450e35e1365/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-01 | 2026-03-17 | DEPT OF DEFENSE | [Engineering and technical support for AN/APG-65 and AN/APG-79 Active Electronically Scanned Array (AESA) radars](https://sam.gov/opp/0663a80e66b54e58b9e7d0dbc4af8d6b/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [P-8A Poseidon ADIRU Updates](https://sam.gov/opp/9180ad325d1b4199841c633422bfb20f/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-17 | DEPT OF DEFENSE | [AECM RR-198 and RR-199 CHAFF](https://sam.gov/opp/c8b070197d0d4125b9a6e64e196f1e5b/view) |
@@ -104,12 +102,13 @@ Posted range: 01/01/2026 -> 03/31/2026
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-20 | 2026-04-03 | DEPT OF DEFENSE | [Synopsis for F/A-18 E/F ADVEW Flight Test Integration](https://sam.gov/opp/e5569f63e8804e5a99fdd698e2463868/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-20 | 2026-04-03 | DEPT OF DEFENSE | [Synopsis for F/A-18 E/F ADVEW FTI Modification for Block III Incorporation](https://sam.gov/opp/e551619bc0f9443684dada23d5d7108a/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-03-30 | 2026-04-03 | DEPT OF DEFENSE | [Total Small Business Set Aside for Various Quantities of Brand: Glenair Adapters and Amphenol Connectors](https://sam.gov/opp/fe22571a373144c18ec59f9a2ae72b58/view) |
+| 7 | Combined Synopsis/Solicitation | - | 2026-03-31 | 2026-04-03 | DEPT OF DEFENSE | [Small Business Set-Aside for Rosemount Inc X-STREAM Enhanced General Purpose Process Gas Analyzer (XEGP) Per Attachments](https://sam.gov/opp/fd7b299bb96c4feba670b4cc47ef0dc1/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-23 | 2026-04-06 | DEPT OF DEFENSE | [AECM RR-198 and RR-199 CHAFF](https://sam.gov/opp/7a7d97003098409d8a5b7a5a3785afd0/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-23 | 2026-04-06 | DEPT OF DEFENSE | [Supersonic Aerial Target (SSST) BQM 34S Update Statement of Work to add Part Procurement](https://sam.gov/opp/589d17f4e04d412785e16bfb1d46258d/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-24 | 2026-04-06 | DEPT OF DEFENSE | [Rollaway Container System Production](https://sam.gov/opp/1b77a083524f422c8091297b3d37e06b/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [Gage Block Comparator](https://sam.gov/opp/7fe6733627d54c52b1ce7fa1e8815945/view) |
 | 4 | Solicitation | - | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [Contractor Logistics Support (CLS) Follow-On, FY 27-30](https://sam.gov/opp/c55cf82054104f70be0b21201692008b/view) |
-| 5 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-07 | DEPT OF DEFENSE | [CV-22 Joint Tactical Terminal - Next Generation](https://sam.gov/opp/1fd017343b11416ebff01cebb46bfe75/view) |
+| 5 | Sources Sought | Sources Sought | 2026-04-01 | 2026-04-07 | DEPT OF DEFENSE | [CV-22 Joint Tactical Terminal - Next Generation](https://sam.gov/opp/952d47daa04346dd973e55debdeb45c7/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-24 | 2026-04-08 | DEPT OF DEFENSE | [Low-Rate Initial Production (LRIP) of AN/SSQ-101B sonobuoys](https://sam.gov/opp/e668359745cf42989cd9ab4e94532885/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-25 | 2026-04-08 | DEPT OF DEFENSE | [2026 Laser Guided Training Round (LGTR) BDU-59C/B Product Improvement Plan](https://sam.gov/opp/8ccd678f34c14c838407770621d32e87/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-04-09 | DEPT OF DEFENSE | [Low Pressure Gage Calibrators](https://sam.gov/opp/cec0318ca29d44b3b42ae08e09020e94/view) |
@@ -122,6 +121,7 @@ Posted range: 01/01/2026 -> 03/31/2026
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-26 | 2026-04-13 | DEPT OF DEFENSE | [MSCPAC GSR IDIQ Rolling Admissions](https://sam.gov/opp/f487b052a7f14e6885ccb4718c4f13cb/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-13 | DEPT OF DEFENSE | [ECP 6556 Gen2 LPHUD](https://sam.gov/opp/5c46a132305e45ba8f2d13e3688efb69/view) |
 | 7 | Special Notice | Special Notice | 2026-03-30 | 2026-04-14 | DEPT OF DEFENSE | [MINE HUNTING IN CHALLENGING ENVIRONMENTS PARTICIPATION AGREEMENT (MHCE PA) ACOUSTIC COMMUNICATIONS (ACOMMS) EXP](https://sam.gov/opp/aa3d6bdcb7bd40d7a13fc0f91e0b7d50/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-03-31 | 2026-04-15 | DEPT OF DEFENSE | [CH-53K DDSR Retrofit Kits & RIO 785D Kits](https://sam.gov/opp/dfd67428d7a2455eb4c508ee4640f472/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-17 | DEPT OF DEFENSE | [MQ-9A Detect and Avoid Systems (DAAS) and DAAS Ground Control Station (GCS) Production Procurements](https://sam.gov/opp/d7d3ceb3348b4e3fa7c2e2aacd9bbe3c/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-19 | 2026-04-18 | DEPT OF DEFENSE | [FMS Country Initial Studies Case](https://sam.gov/opp/544cd98cccfc41d3835459a4877d774c/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-30 | DEPT OF DEFENSE | [Tactical Tomahawk Maritime Strike Supply Chain Management Data Deliverables](https://sam.gov/opp/6e7f3394f3f846a7905cb24cc0a7762c/view) |

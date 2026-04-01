@@ -1,0 +1,46 @@
+{
+  "id": "sam-ec46117a1aea4604817dbaeee50ca090",
+  "title": "R--Prudhoe, Alaska",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec46117a1aea4604817dbaeee50ca090",
+  "opportunity_url": "https://sam.gov/opp/ec46117a1aea4604817dbaeee50ca090/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ec46117a1aea4604817dbaeee50ca090/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ec46117a1aea4604817dbaeee50ca090",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140D0426Q0304",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec46117a1aea4604817dbaeee50ca090",
+  "detail_text": "Prudhoe, Alaska",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e0689b146324330ac319134aeafb5a8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e0689b146324330ac319134aeafb5a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d6dca7b69cd021ce304a0abbce2e08fa3f9ccaa27227f85cd6bd68dc00ffac7e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d6dca7b69cd021ce304a0abbce2e08fa3f9ccaa27227f85cd6bd68dc00ffac7e.pdf",
+      "file_id": "0e0689b146324330ac319134aeafb5a8",
+      "file_name": "A21_MISC_Sources_Sought_Notice_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 654495,
+      "sha256": "d6dca7b69cd021ce304a0abbce2e08fa3f9ccaa27227f85cd6bd68dc00ffac7e"
+    }
+  ],
+  "_mirror_hash": "d7b6297ea4b69f07a0ef3b6ff0fef0683f9d75fadeb7eed452f585e802363e61",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.416292+00:00"
+}

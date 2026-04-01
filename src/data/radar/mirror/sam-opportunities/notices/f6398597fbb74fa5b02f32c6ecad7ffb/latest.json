@@ -1,0 +1,67 @@
+{
+  "id": "sam-f6398597fbb74fa5b02f32c6ecad7ffb",
+  "title": "Preventative Generator Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6398597fbb74fa5b02f32c6ecad7ffb",
+  "opportunity_url": "https://sam.gov/opp/f6398597fbb74fa5b02f32c6ecad7ffb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f6398597fbb74fa5b02f32c6ecad7ffb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f6398597fbb74fa5b02f32c6ecad7ffb",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QL036",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6398597fbb74fa5b02f32c6ecad7ffb",
+  "detail_text": "NOTICE OF INTENT TO AWARD SOLE SOURCE THIS IS NOT A REQUEST FOR COMPETITIVE PROPOSALS. This is a notice of intent to solicit and award a sole source contract under statutory authority 10 USC 2304 (c)(1), set forth in Federal Acquisition Regulation 13.106-1(b)(1), only one responsible source and no other supplies or services will satisfy agency requirements. The NAVSUP FLC intends to solicit and award a sole source contract for services related to Caterpillar Generator Maintenance to Carter Machiney Company, Inc. See the attached sole source justification for additional information regarding the sole source justification. A determination by the Government not to compete this proposed action based upon responses to this notice is soleyl within the discretion of the Government. Address questions to Casey Mayer, Contract Specialist, casey.l.mayer.civ@us.navy.mil",
+  "detail_text_length": 870,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02b5a37a784544e895c2ee3652b00a54/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/675eef39fc6d43459ebbdd080848ba83/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9de83f9313714afbaf34959a6e86b374/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/02b5a37a784544e895c2ee3652b00a54/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6429560d6dfafbba7eafd09d95839c08c04894c3d6027383d7dbcb2d1581ee85.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6429560d6dfafbba7eafd09d95839c08c04894c3d6027383d7dbcb2d1581ee85.pdf",
+      "file_id": "02b5a37a784544e895c2ee3652b00a54",
+      "file_name": "4.03b+N0018926QL0360001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26214400,
+      "sha256": "6429560d6dfafbba7eafd09d95839c08c04894c3d6027383d7dbcb2d1581ee85"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/675eef39fc6d43459ebbdd080848ba83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/70bb22a0625bf68f4fcfdb6d4673b852bf4ae9f136cadc5766e5556c6db693a7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/70bb22a0625bf68f4fcfdb6d4673b852bf4ae9f136cadc5766e5556c6db693a7.pdf",
+      "file_id": "675eef39fc6d43459ebbdd080848ba83",
+      "file_name": "4.03+N0018926QL036.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 53722476,
+      "sha256": "70bb22a0625bf68f4fcfdb6d4673b852bf4ae9f136cadc5766e5556c6db693a7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9de83f9313714afbaf34959a6e86b374/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f0e5a8c5e9e3866064742247e27aeddd4e350e78c8af08a4e07cb00084df831c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f0e5a8c5e9e3866064742247e27aeddd4e350e78c8af08a4e07cb00084df831c.pdf",
+      "file_id": "9de83f9313714afbaf34959a6e86b374",
+      "file_name": "4.02a+Redacted+SSJ+Generator+Maintenance.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 360123,
+      "sha256": "f0e5a8c5e9e3866064742247e27aeddd4e350e78c8af08a4e07cb00084df831c"
+    }
+  ],
+  "_mirror_hash": "70008280b5afcbd6d722f4c00655d2cc68603498c7ff46d19820733b4ba4b06d",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.311067+00:00"
+}

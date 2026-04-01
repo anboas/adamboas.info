@@ -1,0 +1,46 @@
+{
+  "id": "sam-ade70dc825884fa98f8dd912c59aab85",
+  "title": "7E--DOI TABLET COMMAND",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ade70dc825884fa98f8dd912c59aab85",
+  "opportunity_url": "https://sam.gov/opp/ade70dc825884fa98f8dd912c59aab85/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ade70dc825884fa98f8dd912c59aab85/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ade70dc825884fa98f8dd912c59aab85",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DOILFBO260015",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.CALIFORNIA STATE OFFICE",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ade70dc825884fa98f8dd912c59aab85",
+  "detail_text": "Notice of Intent to Sole Source DOI Tablet Command Licenses and access data This is a Sole Source Notice in accordance with FAR 5.207 (c)(15). The Bureau of Land Management (BLM) Palm Springs Field Office intends to purchase on a sole source basis mobile application that can display data from our cooperator's dispatch centers. We also need to see vehicle locations of our cooperator's equipment in relation to several GIS layers associated with fire suppression. The Government needs one enterprise license and portal setup, Incident sharing capability with our cooperators, AVL (automatic vehicle locations), GIS Map layers, as well as Administrator functions that allow us to modify incident checklists and incident management templates. The Government needs 25 Pro licenses for mobile devices to use the existing DOI approved Tablet Command app that is available in the COMP Portal. This will allow users to access real time data from their mobile device while out in the field managing incidents. The purchase will be made under the Simplified Acquisition Procedures as authorized by FAR 13.106-1 (b)(1) and pursuant to FAR 6.302-1, Only One Responsible Source and No Other Supplies or Services will Satisfy Agency Requirement. The awarded contract will be between 04/30/2026 and 05/01/2026. A firm fixed price contract is anticipated. The associated NAICS code for this requirement is 541512. This U.S. industry comprises establishments primarily engaged in planning and designing computer systems that integrate computer hardware, software, and communication technologies. The hardware and software components of the system may be provided by this establishment or company as part of integrated services or may be provided by third parties or vendors. These establishments often install the system and train and support users of the system. The attached sole source justification has been made available for review. No solicitation documents exist currently. This item/service utilizes North American Industry Classification System (NAICS) code of 541512, size standard: $34.0 Million. The notice of intent is not a request for competitive quotes and is not a solicitation or request for offers. No solicitation package is available. A determination by the government not to compete this proposed contract lies solely within the discretion of the Government. Firms believing, they have the capability to provide the services must send that information in writing and must show clear and convincing evidence that it can provide the services. Information received will be considered solely for the purpose of determining whether to conduct a competitive requirement. Response to this notice must refence number DOILFBO260015 and be sent in writing to Laurie Ehlinger at laurie_ehlinger@ios.doi.gov no later than April 14, 2026, at 9:00 AM PDT.",
+  "detail_text_length": 2849,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33afd7494f8c409c88dd5448ff1a98fc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33afd7494f8c409c88dd5448ff1a98fc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9ad17e5752729590499c6db09749e34ce1b9b574dd4c08d48a0f3f1e728e7718.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9ad17e5752729590499c6db09749e34ce1b9b574dd4c08d48a0f3f1e728e7718.docx",
+      "file_id": "33afd7494f8c409c88dd5448ff1a98fc",
+      "file_name": "A16__JOFOC_Open_Market_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23312,
+      "sha256": "9ad17e5752729590499c6db09749e34ce1b9b574dd4c08d48a0f3f1e728e7718"
+    }
+  ],
+  "_mirror_hash": "f9927638f2955b61cdb199fbe6d9078a0556b3cebed822781445bfa2c1fab960",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.510349+00:00"
+}

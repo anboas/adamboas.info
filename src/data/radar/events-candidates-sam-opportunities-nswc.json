@@ -2783,48 +2783,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-3d7de6142cfc425f95a8972b6e578592",
-    "title": "NUWC DIV NPT Seaport Council Meeting",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3d7de6142cfc425f95a8972b6e578592",
-    "opportunity_url": "https://sam.gov/opp/3d7de6142cfc425f95a8972b6e578592/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/3d7de6142cfc425f95a8972b6e578592/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "3d7de6142cfc425f95a8972b6e578592",
-    "notice_type_code": "s",
-    "notice_type": "Special Notice",
-    "engagement_kinds": [
-      "Special Notice"
-    ],
-    "solicitation_number": "0426Council",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
-    "posted_date": "2026-03-25",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 7,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Signal notice type: Special Notice",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3d7de6142cfc425f95a8972b6e578592",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3d7de6142cfc425f95a8972b6e578592",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f5d0f84d4e64a72931b84f288eae0c5/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e3fba7f0e35940a8b8018324ab00073e/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f5d0f84d4e64a72931b84f288eae0c5/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e3fba7f0e35940a8b8018324ab00073e/download"
-      }
-    ]
-  },
-  {
     "id": "sam-cf5b478f396d4ed3898c02a42d3b5f68",
     "title": "Postponement of Competitive Procurement for AN/SPY6(V) LRUs",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cf5b478f396d4ed3898c02a42d3b5f68",
@@ -2896,6 +2854,83 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f89d6bca6ccc4d1bb39e426eed008f30/download"
       }
     ]
+  },
+  {
+    "id": "sam-fd7b299bb96c4feba670b4cc47ef0dc1",
+    "title": "Small Business Set-Aside for Rosemount Inc X-STREAM Enhanced General Purpose Process Gas Analyzer (XEGP) Per Attachments",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd7b299bb96c4feba670b4cc47ef0dc1",
+    "opportunity_url": "https://sam.gov/opp/fd7b299bb96c4feba670b4cc47ef0dc1/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/fd7b299bb96c4feba670b4cc47ef0dc1/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "fd7b299bb96c4feba670b4cc47ef0dc1",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N61331-26-Q-JK12",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-03",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "Vendor engagement keywords",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd7b299bb96c4feba670b4cc47ef0dc1",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd7b299bb96c4feba670b4cc47ef0dc1",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ba362d5c021499cbcaec7620680e9b3/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7d84f3deb8545e18a53f4cfc85c7006/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9d87b7aeb5a40dc9e41fbf0005d914d/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ba362d5c021499cbcaec7620680e9b3/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7d84f3deb8545e18a53f4cfc85c7006/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9d87b7aeb5a40dc9e41fbf0005d914d/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-f5d774930cd04de5b355ef37ba21f24a",
+    "title": "Impressed Current Cathodic Protection (ICCP) system control unit",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f5d774930cd04de5b355ef37ba21f24a",
+    "opportunity_url": "https://sam.gov/opp/f5d774930cd04de5b355ef37ba21f24a/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/f5d774930cd04de5b355ef37ba21f24a/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "f5d774930cd04de5b355ef37ba21f24a",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "33-0037",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+    "posted_date": "2026-04-01",
+    "response_deadline": "2026-04-03",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f5d774930cd04de5b355ef37ba21f24a",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f5d774930cd04de5b355ef37ba21f24a",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-1e2aaaba4b5e4d1ab3c34864e3d7c48b",
@@ -3566,6 +3601,108 @@
     ]
   },
   {
+    "id": "sam-726a9387b52c407484b82cfb043d6127",
+    "title": "Ensign-Bickford Aerospace & Defense (EBAD) Detonating Cord Assemblies",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=726a9387b52c407484b82cfb043d6127",
+    "opportunity_url": "https://sam.gov/opp/726a9387b52c407484b82cfb043d6127/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/726a9387b52c407484b82cfb043d6127/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "726a9387b52c407484b82cfb043d6127",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "N00174-26-SIMACQ-E18-0004",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC INDIAN HEAD DIVISION",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-14",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=726a9387b52c407484b82cfb043d6127",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=726a9387b52c407484b82cfb043d6127",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-9c5d6581e692468e9f7674cd73d6d49c",
+    "title": "Filtration Group Panel Retro-Fit Kit",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c5d6581e692468e9f7674cd73d6d49c",
+    "opportunity_url": "https://sam.gov/opp/9c5d6581e692468e9f7674cd73d6d49c/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/9c5d6581e692468e9f7674cd73d6d49c/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "9c5d6581e692468e9f7674cd73d6d49c",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "33-0065",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-15",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c5d6581e692468e9f7674cd73d6d49c",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c5d6581e692468e9f7674cd73d6d49c",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-cb64a98be2bd4ef2962b56b6d43e182e",
+    "title": "SOURCES SOUGHT VIRGINIA & OHIO-CLASS LARGE VERTICAL ARRAY (LVA) BACK-FIT INSTALLATION",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb64a98be2bd4ef2962b56b6d43e182e",
+    "opportunity_url": "https://sam.gov/opp/cb64a98be2bd4ef2962b56b6d43e182e/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/cb64a98be2bd4ef2962b56b6d43e182e/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "cb64a98be2bd4ef2962b56b6d43e182e",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "N0002426R2699",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ.NAVSEA HQ",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-16",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Sources Sought",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb64a98be2bd4ef2962b56b6d43e182e",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb64a98be2bd4ef2962b56b6d43e182e",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/083a54102d05474eb7e8cf48d6bd1b5e/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/083a54102d05474eb7e8cf48d6bd1b5e/download"
+      }
+    ]
+  },
+  {
     "id": "sam-f94de4c955fb431fb50e1d24afa318d7",
     "title": "Systems Engineering Support (A Dept)",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f94de4c955fb431fb50e1d24afa318d7",
@@ -3701,6 +3838,52 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-eb34e7a1cd3246fdad66c234519953ad",
+    "title": "Weapons Effects_Rev1",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb34e7a1cd3246fdad66c234519953ad",
+    "opportunity_url": "https://sam.gov/opp/eb34e7a1cd3246fdad66c234519953ad/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/eb34e7a1cd3246fdad66c234519953ad/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "eb34e7a1cd3246fdad66c234519953ad",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "N00167-25-RFPREQ-CD-66-0014_Rev1",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-21",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Sources Sought",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb34e7a1cd3246fdad66c234519953ad",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb34e7a1cd3246fdad66c234519953ad",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a3f8cea54254a9ea33cd48a71664c50/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/74d35c2a8f4f4d74ac31d424d7818271/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93c282438cbd4fb0b9864aa5d5cab3b4/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a3f8cea54254a9ea33cd48a71664c50/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/74d35c2a8f4f4d74ac31d424d7818271/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93c282438cbd4fb0b9864aa5d5cab3b4/download"
+      }
+    ]
   },
   {
     "id": "sam-daf952756d68464097b6dcafeb875ddc",
@@ -5345,46 +5528,6 @@
     ]
   },
   {
-    "id": "sam-2f42b5c82888406ba4add450e35e1365",
-    "title": "Sole Source to Innovative Professional Solutions for the Production of AN/SQQ-32(V) UR6 Circuit Card Assemblies",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f42b5c82888406ba4add450e35e1365",
-    "opportunity_url": "https://sam.gov/opp/2f42b5c82888406ba4add450e35e1365/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/2f42b5c82888406ba4add450e35e1365/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "2f42b5c82888406ba4add450e35e1365",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N61331-26-Q-JK10",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
-    "posted_date": "2026-03-11",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 6,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f42b5c82888406ba4add450e35e1365",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2f42b5c82888406ba4add450e35e1365",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/165d16577db24acd928f92ef6940dad5/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b74f6bf1504c4e599efa28efeacb78c7/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/165d16577db24acd928f92ef6940dad5/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b74f6bf1504c4e599efa28efeacb78c7/download"
-      }
-    ]
-  },
-  {
     "id": "sam-7fb6f2050f2d4e35bd82317d2d2a9509",
     "title": "Container Office",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7fb6f2050f2d4e35bd82317d2d2a9509",
@@ -6431,42 +6574,6 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de616b457225461ebb95503f71114052/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-13864a4ef7574ff9b3c2cec0eea1f148",
-    "title": "On-Site SCRUM Training",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13864a4ef7574ff9b3c2cec0eea1f148",
-    "opportunity_url": "https://sam.gov/opp/13864a4ef7574ff9b3c2cec0eea1f148/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/13864a4ef7574ff9b3c2cec0eea1f148/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "13864a4ef7574ff9b3c2cec0eea1f148",
-    "notice_type_code": "o",
-    "notice_type": "Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N6449826Q5092",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
-    "posted_date": "2026-03-10",
-    "response_deadline": "2026-03-24",
-    "place_of_performance": null,
-    "relevance_score": 6,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Solicitation",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13864a4ef7574ff9b3c2cec0eea1f148",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=13864a4ef7574ff9b3c2cec0eea1f148",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc2523e2f3d4a739d45284b61a34ef2/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc2523e2f3d4a739d45284b61a34ef2/download"
       }
     ]
   },
@@ -8179,46 +8286,6 @@
     ]
   },
   {
-    "id": "sam-2245977950ee43ed914b22e21ce44ff5",
-    "title": "Montena Optical Link",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2245977950ee43ed914b22e21ce44ff5",
-    "opportunity_url": "https://sam.gov/opp/2245977950ee43ed914b22e21ce44ff5/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/2245977950ee43ed914b22e21ce44ff5/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "2245977950ee43ed914b22e21ce44ff5",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N0017826Q6703",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-03-31",
-    "place_of_performance": null,
-    "relevance_score": 6,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2245977950ee43ed914b22e21ce44ff5",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2245977950ee43ed914b22e21ce44ff5",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62b65b579282476da73105312acadfc5/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b47a60e714d14453b7c2ca85f9a70ad9/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62b65b579282476da73105312acadfc5/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b47a60e714d14453b7c2ca85f9a70ad9/download"
-      }
-    ]
-  },
-  {
     "id": "sam-4d7e1ab97ad84d529312a28ecdc8f013",
     "title": "Code 70 Business Services Seaport Task Order Solicitation",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d7e1ab97ad84d529312a28ecdc8f013",
@@ -8441,94 +8508,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-3b501d18707a47a7a990264f4450c8e7",
-    "title": "Cable Drive Unit (CDU) Parts",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b501d18707a47a7a990264f4450c8e7",
-    "opportunity_url": "https://sam.gov/opp/3b501d18707a47a7a990264f4450c8e7/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/3b501d18707a47a7a990264f4450c8e7/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "3b501d18707a47a7a990264f4450c8e7",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N6660426Q0202",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
-    "posted_date": "2026-03-25",
-    "response_deadline": "2026-04-01",
-    "place_of_performance": null,
-    "relevance_score": 6,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b501d18707a47a7a990264f4450c8e7",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3b501d18707a47a7a990264f4450c8e7",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1adaf6ec33bf414ab105fe6152abf56b/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a9f6d85041e4e4b97146b746b1ac27f/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51b5945923e14af4a8a371f1b92cadae/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55e7dffa10504ab3b8d77e70fe0abceb/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d06f94450dd4a19a4f8e596546201d1/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/88b1e005f4e747009591b5a60459e6c6/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/953e60960b0444b08468199051975f3b/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae077784f6c34d56b3006d321d20c8dc/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7ae730e458c4dc5b89c035836af0df0/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf623509306a4eedb1c53faf12f11a5f/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d183fe6715094c8e89fb7c66be19e832/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfb39722d7f3424fa8d86434359dd33d/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0665fc236c644aeb86c3c7a6cde02d3/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbbcf7e473144c25b7aa266fbfe6244e/download"
-    ],
-    "resource_count": 14,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1adaf6ec33bf414ab105fe6152abf56b/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a9f6d85041e4e4b97146b746b1ac27f/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51b5945923e14af4a8a371f1b92cadae/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55e7dffa10504ab3b8d77e70fe0abceb/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d06f94450dd4a19a4f8e596546201d1/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/88b1e005f4e747009591b5a60459e6c6/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/953e60960b0444b08468199051975f3b/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae077784f6c34d56b3006d321d20c8dc/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7ae730e458c4dc5b89c035836af0df0/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf623509306a4eedb1c53faf12f11a5f/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d183fe6715094c8e89fb7c66be19e832/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfb39722d7f3424fa8d86434359dd33d/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0665fc236c644aeb86c3c7a6cde02d3/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbbcf7e473144c25b7aa266fbfe6244e/download"
-      }
-    ]
-  },
-  {
     "id": "sam-af631735cd9d4fd4933d41e6deb03dcd",
     "title": "Fuel Oil Quality Management Testing Support Services",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=af631735cd9d4fd4933d41e6deb03dcd",
@@ -8649,6 +8628,94 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-7d99eab6bbb949dea82d5c1bae5366ba",
+    "title": "Cable Drive Unit (CDU) Parts",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d99eab6bbb949dea82d5c1bae5366ba",
+    "opportunity_url": "https://sam.gov/opp/7d99eab6bbb949dea82d5c1bae5366ba/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/7d99eab6bbb949dea82d5c1bae5366ba/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "7d99eab6bbb949dea82d5c1bae5366ba",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N6660426Q0202",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+    "posted_date": "2026-04-01",
+    "response_deadline": "2026-04-01",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d99eab6bbb949dea82d5c1bae5366ba",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d99eab6bbb949dea82d5c1bae5366ba",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1adaf6ec33bf414ab105fe6152abf56b/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a9f6d85041e4e4b97146b746b1ac27f/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51b5945923e14af4a8a371f1b92cadae/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55e7dffa10504ab3b8d77e70fe0abceb/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d06f94450dd4a19a4f8e596546201d1/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/88b1e005f4e747009591b5a60459e6c6/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/953e60960b0444b08468199051975f3b/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae077784f6c34d56b3006d321d20c8dc/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7ae730e458c4dc5b89c035836af0df0/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf623509306a4eedb1c53faf12f11a5f/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d183fe6715094c8e89fb7c66be19e832/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfb39722d7f3424fa8d86434359dd33d/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0665fc236c644aeb86c3c7a6cde02d3/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbbcf7e473144c25b7aa266fbfe6244e/download"
+    ],
+    "resource_count": 14,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1adaf6ec33bf414ab105fe6152abf56b/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a9f6d85041e4e4b97146b746b1ac27f/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51b5945923e14af4a8a371f1b92cadae/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55e7dffa10504ab3b8d77e70fe0abceb/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d06f94450dd4a19a4f8e596546201d1/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/88b1e005f4e747009591b5a60459e6c6/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/953e60960b0444b08468199051975f3b/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae077784f6c34d56b3006d321d20c8dc/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7ae730e458c4dc5b89c035836af0df0/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf623509306a4eedb1c53faf12f11a5f/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d183fe6715094c8e89fb7c66be19e832/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfb39722d7f3424fa8d86434359dd33d/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0665fc236c644aeb86c3c7a6cde02d3/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbbcf7e473144c25b7aa266fbfe6244e/download"
+      }
+    ]
   },
   {
     "id": "sam-439baacd42ae469d8c178fd72c08e932",
@@ -8957,6 +9024,50 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbd5e95fcae245f6ba0e9ce4e4ee55ac/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-e099caa1cf1542c084713ea95574e9f4",
+    "title": "On-Site SCRUM Training",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e099caa1cf1542c084713ea95574e9f4",
+    "opportunity_url": "https://sam.gov/opp/e099caa1cf1542c084713ea95574e9f4/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/e099caa1cf1542c084713ea95574e9f4/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "e099caa1cf1542c084713ea95574e9f4",
+    "notice_type_code": "o",
+    "notice_type": "Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N6449826Q5092",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-03",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e099caa1cf1542c084713ea95574e9f4",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e099caa1cf1542c084713ea95574e9f4",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1eb9270940ea406ca3844b964d6e5557/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/270c8f696ccc4ab79bbbaf8dddac1238/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc2523e2f3d4a739d45284b61a34ef2/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1eb9270940ea406ca3844b964d6e5557/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/270c8f696ccc4ab79bbbaf8dddac1238/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc2523e2f3d4a739d45284b61a34ef2/download"
       }
     ]
   },
@@ -9377,6 +9488,50 @@
     ]
   },
   {
+    "id": "sam-6acee316b68c4c8abe591518c1fd7a07",
+    "title": "Fundamentals of Uncertainty Analysis Training",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6acee316b68c4c8abe591518c1fd7a07",
+    "opportunity_url": "https://sam.gov/opp/6acee316b68c4c8abe591518c1fd7a07/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6acee316b68c4c8abe591518c1fd7a07/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6acee316b68c4c8abe591518c1fd7a07",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N0016726Q1069",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-08",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6acee316b68c4c8abe591518c1fd7a07",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6acee316b68c4c8abe591518c1fd7a07",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/187e05726f5d4a88896876dc9cc39f1c/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e433927f225444ca81f96702f32d50d/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a863191440d4404a2225a81e4f70042/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/187e05726f5d4a88896876dc9cc39f1c/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e433927f225444ca81f96702f32d50d/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a863191440d4404a2225a81e4f70042/download"
+      }
+    ]
+  },
+  {
     "id": "sam-04d8ae8aa6774d1b89432bf82710f3ea",
     "title": "Item 27- D40 Equipment Services MAC- SPDS",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04d8ae8aa6774d1b89432bf82710f3ea",
@@ -9509,6 +9664,46 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a61775002ef74778bddaf2e86a614532/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-8a76795e0b84430fbf5779efe2dbcdff",
+    "title": "LS Dyna SWM",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a76795e0b84430fbf5779efe2dbcdff",
+    "opportunity_url": "https://sam.gov/opp/8a76795e0b84430fbf5779efe2dbcdff/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/8a76795e0b84430fbf5779efe2dbcdff/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "8a76795e0b84430fbf5779efe2dbcdff",
+    "notice_type_code": "o",
+    "notice_type": "Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N0017826Q6700",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-09",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a76795e0b84430fbf5779efe2dbcdff",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a76795e0b84430fbf5779efe2dbcdff",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5ff78750f620486fb561ca1ffbb2a5fd/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f68c587f0c1a4228bb83baec0345bfe3/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5ff78750f620486fb561ca1ffbb2a5fd/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f68c587f0c1a4228bb83baec0345bfe3/download"
       }
     ]
   },
@@ -10161,6 +10356,42 @@
     "resource_items": null
   },
   {
+    "id": "sam-2e8bd05f24df4d50b9963a07fbf44a2c",
+    "title": "Manufacture Miniature AC Fan",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e8bd05f24df4d50b9963a07fbf44a2c",
+    "opportunity_url": "https://sam.gov/opp/2e8bd05f24df4d50b9963a07fbf44a2c/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/2e8bd05f24df4d50b9963a07fbf44a2c/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "2e8bd05f24df4d50b9963a07fbf44a2c",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N6660426Q0192",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-21",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e8bd05f24df4d50b9963a07fbf44a2c",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e8bd05f24df4d50b9963a07fbf44a2c",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b0660376a644c92a6db199f57a5decc/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b0660376a644c92a6db199f57a5decc/download"
+      }
+    ]
+  },
+  {
     "id": "sam-8ff0c6b8c3464b039a381aeb330208ef",
     "title": "SOLICITATION FOR Big Blue 3 MAC (N6449821D0013 - N6449821D0023) PROPULSION AND AUXILLIARY CONTROL SYSTEM (PACS) and BALLAST AND DAMAGE CONTROL SYSTEMS (BCS/DCS) INSTALLATION UPGRADE.",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ff0c6b8c3464b039a381aeb330208ef",
@@ -10457,6 +10688,36 @@
     "resource_items": null
   },
   {
+    "id": "sam-4a7946c8340546beaa9b61adbe96fc10",
+    "title": "DT-513 Series Hydrophones",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a7946c8340546beaa9b61adbe96fc10",
+    "opportunity_url": "https://sam.gov/opp/4a7946c8340546beaa9b61adbe96fc10/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/4a7946c8340546beaa9b61adbe96fc10/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "4a7946c8340546beaa9b61adbe96fc10",
+    "notice_type_code": "o",
+    "notice_type": "Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N6660426R0029",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-28",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a7946c8340546beaa9b61adbe96fc10",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a7946c8340546beaa9b61adbe96fc10",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-6dbab5819fb14d84ba5e57e86b6bf961",
     "title": "Solicitation - Submarine High Data Rate (SubHDR) LN-100 Mast Motion Sensor (MMS) Repair, Restoration and Replacement Services",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6dbab5819fb14d84ba5e57e86b6bf961",
@@ -10515,6 +10776,36 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f7e5163819504716a5737e4a11a7a672/download"
       }
     ]
+  },
+  {
+    "id": "sam-d59eed47148a4654806d3fe1be14f054",
+    "title": "N6449826R0525",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d59eed47148a4654806d3fe1be14f054",
+    "opportunity_url": "https://sam.gov/opp/d59eed47148a4654806d3fe1be14f054/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/d59eed47148a4654806d3fe1be14f054/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "d59eed47148a4654806d3fe1be14f054",
+    "notice_type_code": "o",
+    "notice_type": "Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N6449826R0525",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Solicitation",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d59eed47148a4654806d3fe1be14f054",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d59eed47148a4654806d3fe1be14f054",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-e4216fa9fe564aada3301be33a9606fd",
@@ -10657,6 +10948,38 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6fe685363374c75b4de9a495d4b84da/download"
       }
     ]
+  },
+  {
+    "id": "sam-16bd868aacf448558bcab419fefbe98f",
+    "title": "Hampton Roads Small Business Expo",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=16bd868aacf448558bcab419fefbe98f",
+    "opportunity_url": "https://sam.gov/opp/16bd868aacf448558bcab419fefbe98f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/16bd868aacf448558bcab419fefbe98f/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "16bd868aacf448558bcab419fefbe98f",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": null,
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.MID ATLANTIC REG MAINT CTR",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-05-18",
+    "place_of_performance": null,
+    "relevance_score": 6,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice",
+      "Vendor engagement keywords"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=16bd868aacf448558bcab419fefbe98f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=16bd868aacf448558bcab419fefbe98f",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-5bae2dec64c84bf0b728d64be977d6d7",
@@ -11400,111 +11723,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-80600167aee043a5b7feb36db9bd566b",
-    "title": "Nuclear Regional Maintenance Department (NRMD)",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=80600167aee043a5b7feb36db9bd566b",
-    "opportunity_url": "https://sam.gov/opp/80600167aee043a5b7feb36db9bd566b/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/80600167aee043a5b7feb36db9bd566b/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "80600167aee043a5b7feb36db9bd566b",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "N0002426R4321",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ.NAVSEA HQ",
-    "posted_date": "2026-03-02",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 5,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=80600167aee043a5b7feb36db9bd566b",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=80600167aee043a5b7feb36db9bd566b",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-e84ea31f95d0422ebaf24e7dca39bf1c",
-    "title": "Rigid Hull Inflatable Boat (RHIB) Training",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e84ea31f95d0422ebaf24e7dca39bf1c",
-    "opportunity_url": "https://sam.gov/opp/e84ea31f95d0422ebaf24e7dca39bf1c/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/e84ea31f95d0422ebaf24e7dca39bf1c/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "e84ea31f95d0422ebaf24e7dca39bf1c",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "E20-0001",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.COMMANDING OFFICER",
-    "posted_date": "2026-03-04",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 5,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e84ea31f95d0422ebaf24e7dca39bf1c",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e84ea31f95d0422ebaf24e7dca39bf1c",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ecde48d6fbc4b7ba3f5107cb626c5e5/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ecde48d6fbc4b7ba3f5107cb626c5e5/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-f4e12edf7017443faf794d8406726849",
-    "title": "Measurement International Option Year Calibration",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4e12edf7017443faf794d8406726849",
-    "opportunity_url": "https://sam.gov/opp/f4e12edf7017443faf794d8406726849/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/f4e12edf7017443faf794d8406726849/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "f4e12edf7017443faf794d8406726849",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "N4215826RX60166",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
-    "posted_date": "2026-03-05",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 5,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4e12edf7017443faf794d8406726849",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4e12edf7017443faf794d8406726849",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae5b0976fe9f4d1f89b40f0611e950b9/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae5b0976fe9f4d1f89b40f0611e950b9/download"
-      }
-    ]
-  },
-  {
     "id": "sam-63168cf4745b456cb4b11aebd9c72e70",
     "title": "Office Furniture Remodel",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63168cf4745b456cb4b11aebd9c72e70",
@@ -12152,37 +12370,6 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82a8a62760d24beaa3e30536a1394f06/download"
       }
     ]
-  },
-  {
-    "id": "sam-4671aadf926e4cbc8931ad407c8dbfec",
-    "title": "MODIFICATION TO EXTEND SROMC POP SYNOPSIS",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4671aadf926e4cbc8931ad407c8dbfec",
-    "opportunity_url": "https://sam.gov/opp/4671aadf926e4cbc8931ad407c8dbfec/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/4671aadf926e4cbc8931ad407c8dbfec/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "4671aadf926e4cbc8931ad407c8dbfec",
-    "notice_type_code": "s",
-    "notice_type": "Special Notice",
-    "engagement_kinds": [
-      "Special Notice"
-    ],
-    "solicitation_number": "N0002420C4315",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ.NAVSEA HQ",
-    "posted_date": "2026-03-11",
-    "response_deadline": "2026-03-26",
-    "place_of_performance": null,
-    "relevance_score": 5,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Signal notice type: Special Notice"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4671aadf926e4cbc8931ad407c8dbfec",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4671aadf926e4cbc8931ad407c8dbfec",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
   },
   {
     "id": "sam-2eed21aeb16c4908b49f44f3b1f17486",
@@ -13241,6 +13428,130 @@
     "resource_items": null
   },
   {
+    "id": "sam-665df90c901e43b18d324910df3fe31a",
+    "title": "MIL-DTL-1189E w/Amd 2, Valve, Gate, Bronze",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=665df90c901e43b18d324910df3fe31a",
+    "opportunity_url": "https://sam.gov/opp/665df90c901e43b18d324910df3fe31a/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/665df90c901e43b18d324910df3fe31a/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "665df90c901e43b18d324910df3fe31a",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "N0002426SN-32",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=665df90c901e43b18d324910df3fe31a",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=665df90c901e43b18d324910df3fe31a",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-416d75fd37bc47b1980202337e9c9e4e",
+    "title": "MIL-DTL-24643/70, Cable, Electrical, -4 Degrees Fahrenheit (‑20 Degrees Celsius) to +194 Degrees Fahrenheit (+90 Degrees Celsius), 1,000 Volts, Types LS7SPWO, LS10SPWO, LS12SPWO, and LS19SPWO",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=416d75fd37bc47b1980202337e9c9e4e",
+    "opportunity_url": "https://sam.gov/opp/416d75fd37bc47b1980202337e9c9e4e/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/416d75fd37bc47b1980202337e9c9e4e/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "416d75fd37bc47b1980202337e9c9e4e",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "N0002426SN-31",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=416d75fd37bc47b1980202337e9c9e4e",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=416d75fd37bc47b1980202337e9c9e4e",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-6fb220bd18b84a2895022094ef61bfd3",
+    "title": "MIL-DTL-46615E, Cartridge, Impulse, M29A2 Assembly",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6fb220bd18b84a2895022094ef61bfd3",
+    "opportunity_url": "https://sam.gov/opp/6fb220bd18b84a2895022094ef61bfd3/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6fb220bd18b84a2895022094ef61bfd3/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6fb220bd18b84a2895022094ef61bfd3",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "N0002426SN-34",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6fb220bd18b84a2895022094ef61bfd3",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6fb220bd18b84a2895022094ef61bfd3",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-3a5bf022c47f483aaf6c273f1f2145dc",
+    "title": "MIL-STD-2148A with Change 1, Vibration Damping Materials, Procedures for Installation, Maintenance, and Repairs",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a5bf022c47f483aaf6c273f1f2145dc",
+    "opportunity_url": "https://sam.gov/opp/3a5bf022c47f483aaf6c273f1f2145dc/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/3a5bf022c47f483aaf6c273f1f2145dc/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "3a5bf022c47f483aaf6c273f1f2145dc",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "N0002426SN-33",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a5bf022c47f483aaf6c273f1f2145dc",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a5bf022c47f483aaf6c273f1f2145dc",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-5ada04252cf345fb87042d6ad228735e",
     "title": "Preservation, Hull, Mechanical, and Electrical/Electronic Repairs - VBSS 11MRX1101 and 11MRX1102",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5ada04252cf345fb87042d6ad228735e",
@@ -13270,6 +13581,43 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-23b67f0677e245c0b9e58191ce0acac8",
+    "title": "AN/BYG-1 Applications",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=23b67f0677e245c0b9e58191ce0acac8",
+    "opportunity_url": "https://sam.gov/opp/23b67f0677e245c0b9e58191ce0acac8/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/23b67f0677e245c0b9e58191ce0acac8/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "23b67f0677e245c0b9e58191ce0acac8",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "N0002426R6222",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ.NAVSEA HQ",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-05-05",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=23b67f0677e245c0b9e58191ce0acac8",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=23b67f0677e245c0b9e58191ce0acac8",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1be3342b13114503bbfa36b186a40c35/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1be3342b13114503bbfa36b186a40c35/download"
+      }
+    ]
   },
   {
     "id": "sam-c48d626933fd4bc2a81433b83c63aa32",
@@ -13577,35 +13925,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-f02ba93c513b4c9c8f661b52350047c2",
-    "title": "CPP Propulsion Hub Retaining Bolt",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f02ba93c513b4c9c8f661b52350047c2",
-    "opportunity_url": "https://sam.gov/opp/f02ba93c513b4c9c8f661b52350047c2/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/f02ba93c513b4c9c8f661b52350047c2/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "f02ba93c513b4c9c8f661b52350047c2",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N5005426Q0096",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.MID ATLANTIC REG MAINT CTR",
-    "posted_date": "2026-02-24",
-    "response_deadline": "2026-02-27",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f02ba93c513b4c9c8f661b52350047c2",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f02ba93c513b4c9c8f661b52350047c2",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-427d98acaeec40f480faf919a7bb2d5f",
     "title": "Decoupling Rubber",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=427d98acaeec40f480faf919a7bb2d5f",
@@ -13629,35 +13948,6 @@
     "navy_related": true,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=427d98acaeec40f480faf919a7bb2d5f",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=427d98acaeec40f480faf919a7bb2d5f",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-885ce2564d2b471fadd4b27610cb6ab5",
-    "title": "Boat Trailers",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=885ce2564d2b471fadd4b27610cb6ab5",
-    "opportunity_url": "https://sam.gov/opp/885ce2564d2b471fadd4b27610cb6ab5/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/885ce2564d2b471fadd4b27610cb6ab5/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "885ce2564d2b471fadd4b27610cb6ab5",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N5005426Q0095",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.MID ATLANTIC REG MAINT CTR",
-    "posted_date": "2026-02-24",
-    "response_deadline": "2026-03-03",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=885ce2564d2b471fadd4b27610cb6ab5",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=885ce2564d2b471fadd4b27610cb6ab5",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -13806,35 +14096,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-63e6457114694e0ba2759a3b9220c938",
-    "title": "Next Generation Logistics Ship (NGLS) Concept Design Multiple Award Contract (MAC) Solicitation",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63e6457114694e0ba2759a3b9220c938",
-    "opportunity_url": "https://sam.gov/opp/63e6457114694e0ba2759a3b9220c938/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/63e6457114694e0ba2759a3b9220c938/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "63e6457114694e0ba2759a3b9220c938",
-    "notice_type_code": "o",
-    "notice_type": "Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N0002425R2231",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ.NAVSEA HQ",
-    "posted_date": "2026-03-04",
-    "response_deadline": "2026-03-06",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63e6457114694e0ba2759a3b9220c938",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63e6457114694e0ba2759a3b9220c938",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-f126735827e440d789d56a30650a14be",
     "title": "Rudder Stock Upper Bearing",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f126735827e440d789d56a30650a14be",
@@ -13891,41 +14152,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-9b17c53841f14a1ebc5b60dcb5f65578",
-    "title": "Technical Writing Training Course",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9b17c53841f14a1ebc5b60dcb5f65578",
-    "opportunity_url": "https://sam.gov/opp/9b17c53841f14a1ebc5b60dcb5f65578/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/9b17c53841f14a1ebc5b60dcb5f65578/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "9b17c53841f14a1ebc5b60dcb5f65578",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N6278926Q0011",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SUPSHIP.SUP OF SHIPBUILDING GROTON",
-    "posted_date": "2026-02-23",
-    "response_deadline": "2026-03-16",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9b17c53841f14a1ebc5b60dcb5f65578",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9b17c53841f14a1ebc5b60dcb5f65578",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a173a0902924d61aa917f2987cbc52e/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a173a0902924d61aa917f2987cbc52e/download"
-      }
-    ]
   },
   {
     "id": "sam-68358d3e607a4a8983dcc7e35cb5cf9a",
@@ -14637,45 +14863,6 @@
     ]
   },
   {
-    "id": "sam-2e0550d4793d4f3f922d644f64ad7262",
-    "title": "NRTL Field Evaluation Services (Inspections) NASNI",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e0550d4793d4f3f922d644f64ad7262",
-    "opportunity_url": "https://sam.gov/opp/2e0550d4793d4f3f922d644f64ad7262/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/2e0550d4793d4f3f922d644f64ad7262/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "2e0550d4793d4f3f922d644f64ad7262",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N4523A26Q1308",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PUGET SOUND NAVAL SHIPYARD IMF",
-    "posted_date": "2026-03-20",
-    "response_deadline": "2026-03-26",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e0550d4793d4f3f922d644f64ad7262",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e0550d4793d4f3f922d644f64ad7262",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdb8b39f408c472e90a023e7308e4b5a/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3d65fbf65a643408cca78b4ed862787/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdb8b39f408c472e90a023e7308e4b5a/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3d65fbf65a643408cca78b4ed862787/download"
-      }
-    ]
-  },
-  {
     "id": "sam-8582adfb1c79485f991beeafcab391ad",
     "title": "Coolant Machine Maintenance (5-months)",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8582adfb1c79485f991beeafcab391ad",
@@ -14963,49 +15150,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-31096374a90a47e4beedffd7f396c034",
-    "title": "HYDROTESTING PANEL",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=31096374a90a47e4beedffd7f396c034",
-    "opportunity_url": "https://sam.gov/opp/31096374a90a47e4beedffd7f396c034/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/31096374a90a47e4beedffd7f396c034/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "31096374a90a47e4beedffd7f396c034",
-    "notice_type_code": "o",
-    "notice_type": "Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N4215826QE036",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
-    "posted_date": "2026-03-26",
-    "response_deadline": "2026-03-30",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=31096374a90a47e4beedffd7f396c034",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=31096374a90a47e4beedffd7f396c034",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/60c2afdc2ef94109a29882a0d7f46dee/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c492f9b4a1540c4a90b6de8b29d5bd8/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab671fb98d514a968d86125c14065f23/download"
-    ],
-    "resource_count": 3,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/60c2afdc2ef94109a29882a0d7f46dee/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c492f9b4a1540c4a90b6de8b29d5bd8/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab671fb98d514a968d86125c14065f23/download"
-      }
-    ]
-  },
-  {
     "id": "sam-402232b090e04cfeb60e21bf729b5776",
     "title": "MASS COMMUNICATION SERVICES",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=402232b090e04cfeb60e21bf729b5776",
@@ -15181,57 +15325,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-e0b45050ecf1440fb7d2f19e57bc8ab4",
-    "title": "NNSY PURE WATER TANKS 800 GAL",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e0b45050ecf1440fb7d2f19e57bc8ab4",
-    "opportunity_url": "https://sam.gov/opp/e0b45050ecf1440fb7d2f19e57bc8ab4/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/e0b45050ecf1440fb7d2f19e57bc8ab4/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "e0b45050ecf1440fb7d2f19e57bc8ab4",
-    "notice_type_code": "o",
-    "notice_type": "Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N4215826QE018",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
-    "posted_date": "2026-03-25",
-    "response_deadline": "2026-03-31",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e0b45050ecf1440fb7d2f19e57bc8ab4",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e0b45050ecf1440fb7d2f19e57bc8ab4",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9145a7714897424dbb4677a6fb6c8a92/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be975522212248558a708505717296ea/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e8378897d0124e5791c434c1dcc7feee/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb8af06acbc4497e97deb80f20a375b6/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff9420271973459b85551a5e21ae102b/download"
-    ],
-    "resource_count": 5,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9145a7714897424dbb4677a6fb6c8a92/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be975522212248558a708505717296ea/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e8378897d0124e5791c434c1dcc7feee/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb8af06acbc4497e97deb80f20a375b6/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff9420271973459b85551a5e21ae102b/download"
-      }
-    ]
   },
   {
     "id": "sam-8a273d21ecb644b781f98ae175338cc7",
@@ -15464,6 +15557,132 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb865c0774d64a19b57453ddad1f3744/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-a942bc6677424ed1b8eba4316e2e529e",
+    "title": "Central Fresh Water System Parts",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a942bc6677424ed1b8eba4316e2e529e",
+    "opportunity_url": "https://sam.gov/opp/a942bc6677424ed1b8eba4316e2e529e/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/a942bc6677424ed1b8eba4316e2e529e/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "a942bc6677424ed1b8eba4316e2e529e",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N5005426Q0114",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.MID ATLANTIC REG MAINT CTR",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-07",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a942bc6677424ed1b8eba4316e2e529e",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a942bc6677424ed1b8eba4316e2e529e",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-38193b79167647d985679a7ff4810915",
+    "title": "ELECTRICAL LIGHTS",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38193b79167647d985679a7ff4810915",
+    "opportunity_url": "https://sam.gov/opp/38193b79167647d985679a7ff4810915/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/38193b79167647d985679a7ff4810915/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "38193b79167647d985679a7ff4810915",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N5005426Q0112",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.MID ATLANTIC REG MAINT CTR",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-07",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38193b79167647d985679a7ff4810915",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38193b79167647d985679a7ff4810915",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-0700a17a1a094394a71d05d320072392",
+    "title": "Honeycomb Material",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0700a17a1a094394a71d05d320072392",
+    "opportunity_url": "https://sam.gov/opp/0700a17a1a094394a71d05d320072392/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/0700a17a1a094394a71d05d320072392/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "0700a17a1a094394a71d05d320072392",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N5005426Q0111",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.MID ATLANTIC REG MAINT CTR",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-07",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0700a17a1a094394a71d05d320072392",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0700a17a1a094394a71d05d320072392",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-91042887726f42eba36681393230eb06",
+    "title": "NRTL Field Evaluation Services (Inspections) NASNI",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91042887726f42eba36681393230eb06",
+    "opportunity_url": "https://sam.gov/opp/91042887726f42eba36681393230eb06/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/91042887726f42eba36681393230eb06/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "91042887726f42eba36681393230eb06",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N4523A26Q1308",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PUGET SOUND NAVAL SHIPYARD IMF",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-07",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91042887726f42eba36681393230eb06",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=91042887726f42eba36681393230eb06",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdb8b39f408c472e90a023e7308e4b5a/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3d65fbf65a643408cca78b4ed862787/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdb8b39f408c472e90a023e7308e4b5a/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3d65fbf65a643408cca78b4ed862787/download"
       }
     ]
   },
@@ -15723,6 +15942,57 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e128c37d1eb6417a868b2c98ce699300/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-1ee647e91ea440a5b67eda10993a911e",
+    "title": "PNSY Zinc Plating Services",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ee647e91ea440a5b67eda10993a911e",
+    "opportunity_url": "https://sam.gov/opp/1ee647e91ea440a5b67eda10993a911e/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/1ee647e91ea440a5b67eda10993a911e/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "1ee647e91ea440a5b67eda10993a911e",
+    "notice_type_code": "o",
+    "notice_type": "Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N3904026Q0056",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+    "posted_date": "2026-03-31",
+    "response_deadline": "2026-04-10",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ee647e91ea440a5b67eda10993a911e",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1ee647e91ea440a5b67eda10993a911e",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/110a0e9dcbb143d3b08dbe326a3e0fb1/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7de2b0b4b14d4bcfa94f6cd5ea4375f0/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7eb5f7abf3574dc9b26d1f7bfb7f5f78/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8987c8973732451a9af5b166b453e456/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/afe23642253746bd89bd394b5ec0097d/download"
+    ],
+    "resource_count": 5,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/110a0e9dcbb143d3b08dbe326a3e0fb1/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7de2b0b4b14d4bcfa94f6cd5ea4375f0/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7eb5f7abf3574dc9b26d1f7bfb7f5f78/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8987c8973732451a9af5b166b453e456/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/afe23642253746bd89bd394b5ec0097d/download"
       }
     ]
   },
@@ -16120,19 +16390,19 @@
     ]
   },
   {
-    "id": "sam-4d15391a52c74b029f9cf1e0c3fb1277",
+    "id": "sam-b58b2e32722d46fd86d1f52588369d25",
     "title": "USS BOXER (LHD 4) FY27 Selected Restricted Availability (SRA) Request for Proposal (RFP)",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d15391a52c74b029f9cf1e0c3fb1277",
-    "opportunity_url": "https://sam.gov/opp/4d15391a52c74b029f9cf1e0c3fb1277/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/4d15391a52c74b029f9cf1e0c3fb1277/view",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b58b2e32722d46fd86d1f52588369d25",
+    "opportunity_url": "https://sam.gov/opp/b58b2e32722d46fd86d1f52588369d25/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b58b2e32722d46fd86d1f52588369d25/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "4d15391a52c74b029f9cf1e0c3fb1277",
+    "notice_id": "b58b2e32722d46fd86d1f52588369d25",
     "notice_type_code": "o",
     "notice_type": "Solicitation",
     "engagement_kinds": [],
     "solicitation_number": "N0002426R4428",
     "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA HQ.NAVSEA HQ",
-    "posted_date": "2026-03-18",
+    "posted_date": "2026-03-31",
     "response_deadline": "2026-05-04",
     "place_of_performance": null,
     "relevance_score": 4,
@@ -16141,8 +16411,8 @@
       "Solicitation notice type: Solicitation"
     ],
     "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d15391a52c74b029f9cf1e0c3fb1277",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d15391a52c74b029f9cf1e0c3fb1277",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b58b2e32722d46fd86d1f52588369d25",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b58b2e32722d46fd86d1f52588369d25",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,

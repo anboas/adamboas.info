@@ -1,0 +1,46 @@
+{
+  "id": "sam-edae84acbda54ed39c2bd3c9a6bf0240",
+  "title": "All Season Buoys",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edae84acbda54ed39c2bd3c9a6bf0240",
+  "opportunity_url": "https://sam.gov/opp/edae84acbda54ed39c2bd3c9a6bf0240/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/edae84acbda54ed39c2bd3c9a6bf0240/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "edae84acbda54ed39c2bd3c9a6bf0240",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70Z08426QWOPL0008",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.LOG-9",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edae84acbda54ed39c2bd3c9a6bf0240",
+  "detail_text": "Manufacture and Deliver All Season Buoys for the Great Lakes Area. See attached notice.",
+  "detail_text_length": 87,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/170c5f700d5e49e1a2455db1042b4ffb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/170c5f700d5e49e1a2455db1042b4ffb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a95882a6b29b5cb0bad122065762f7d5ef3dbb5a1e7731cace33183854c5e65e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a95882a6b29b5cb0bad122065762f7d5ef3dbb5a1e7731cace33183854c5e65e.docx",
+      "file_id": "170c5f700d5e49e1a2455db1042b4ffb",
+      "file_name": "Sources+Sought+Notice+-+All+Weather+Navigational+Buoy.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20828,
+      "sha256": "a95882a6b29b5cb0bad122065762f7d5ef3dbb5a1e7731cace33183854c5e65e"
+    }
+  ],
+  "_mirror_hash": "ee37699857ea537c21a635e7875ee9e81aa7e779e11971df4f3ae42f3912bb8a",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.524294+00:00"
+}

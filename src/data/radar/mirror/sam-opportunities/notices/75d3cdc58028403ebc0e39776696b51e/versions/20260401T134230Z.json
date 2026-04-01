@@ -1,0 +1,47 @@
+{
+  "id": "sam-75d3cdc58028403ebc0e39776696b51e",
+  "title": "Repair of 012061585 / Nomenclature: SEARCHLIGHT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75d3cdc58028403ebc0e39776696b51e",
+  "opportunity_url": "https://sam.gov/opp/75d3cdc58028403ebc0e39776696b51e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/75d3cdc58028403ebc0e39776696b51e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "75d3cdc58028403ebc0e39776696b51e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N0038326Q0077",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75d3cdc58028403ebc0e39776696b51e",
+  "detail_text": "See attached amendment to increase quantity.",
+  "detail_text_length": 44,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd1adcbbe3c4470ebb4564231236322d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd1adcbbe3c4470ebb4564231236322d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/05338b9328eb35c59b3de7ab92ef8be51b5cd9c5bdf4c51a01d1bbc1d9e9d873.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/05338b9328eb35c59b3de7ab92ef8be51b5cd9c5bdf4c51a01d1bbc1d9e9d873.pdf",
+      "file_id": "bd1adcbbe3c4470ebb4564231236322d",
+      "file_name": "3.03_Amendment-1-_N0038326Q0077.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 582954,
+      "sha256": "05338b9328eb35c59b3de7ab92ef8be51b5cd9c5bdf4c51a01d1bbc1d9e9d873"
+    }
+  ],
+  "_mirror_hash": "3de0a9a2a52638e038c5bd728cef1fd56a90a4b50d9a6c112ef0fec5aaa84e94",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.292726+00:00"
+}

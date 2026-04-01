@@ -1,0 +1,46 @@
+{
+  "id": "sam-e09291a536cc413aaa3137c2ffa83de1",
+  "title": "DLA Weapons Support F100 RPOW Spring 2026",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e09291a536cc413aaa3137c2ffa83de1",
+  "opportunity_url": "https://sam.gov/opp/e09291a536cc413aaa3137c2ffa83de1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e09291a536cc413aaa3137c2ffa83de1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e09291a536cc413aaa3137c2ffa83de1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e09291a536cc413aaa3137c2ffa83de1",
+  "detail_text": "DLA Aviation F100 Spares Requirements Projection on the Web (RPOW) is a list of projected competitive and non-competitive spare part type items for up to three fiscal years. Caution: The projections contained in RPOW may or may not generate due to variability in customer demands and priorities, especially in the year of execution. However, the RPOW projections represent the customer's validated budget and anticipated requirements forecast. The forecast data is for planning purposes only and does not constitute an invitation for bid or request for proposal, and is not a commitment by the government to purchase the described items. It is the government's intention to publish this list every Spring and Fall",
+  "detail_text_length": 713,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f869f7c871c14f1e84bbdeacb3cd8496/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f869f7c871c14f1e84bbdeacb3cd8496/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a3d31d285cb9e6fbf1f890f6636089fd415bf84bb42410b4c0be21ca05faa37.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a3d31d285cb9e6fbf1f890f6636089fd415bf84bb42410b4c0be21ca05faa37.xlsx",
+      "file_id": "f869f7c871c14f1e84bbdeacb3cd8496",
+      "file_name": "PR+Projections_RPOW+Spring+2026.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10611438,
+      "sha256": "4a3d31d285cb9e6fbf1f890f6636089fd415bf84bb42410b4c0be21ca05faa37"
+    }
+  ],
+  "_mirror_hash": "e3480a1f4ba937c56f8b27f60d8e2a53a1dbfb831f50f23cb75011066c20100c",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.586801+00:00"
+}

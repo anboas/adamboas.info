@@ -1,0 +1,57 @@
+{
+  "id": "sam-a4ea9e71dcf94d7c9f5a491188f7846f",
+  "title": "CEREC Primescan Intraoral Scanner Systems",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4ea9e71dcf94d7c9f5a491188f7846f",
+  "opportunity_url": "https://sam.gov/opp/a4ea9e71dcf94d7c9f5a491188f7846f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a4ea9e71dcf94d7c9f5a491188f7846f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a4ea9e71dcf94d7c9f5a491188f7846f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25626Q0596",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.256-NETWORK CONTRACT OFFICE 16 (36C256)",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4ea9e71dcf94d7c9f5a491188f7846f",
+  "detail_text": "Please refer to attachments for more details.",
+  "detail_text_length": 45,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/687481081c1a4652bf41de907126ab51/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc3b3f0053cd4b528613f9ad92c5b2f7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/687481081c1a4652bf41de907126ab51/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fe8960f0b77cf6872044ea067de468d7aad1083d569a4c6248efeab6a9b86340.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fe8960f0b77cf6872044ea067de468d7aad1083d569a4c6248efeab6a9b86340.pdf",
+      "file_id": "687481081c1a4652bf41de907126ab51",
+      "file_name": "P11.+Sources+Sought+Notice+-+36C25626Q0596.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 210088,
+      "sha256": "fe8960f0b77cf6872044ea067de468d7aad1083d569a4c6248efeab6a9b86340"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc3b3f0053cd4b528613f9ad92c5b2f7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f8446642b496ec244bbb7970707f4c8a9be1ca4e189270c62104af748cb6e680.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f8446642b496ec244bbb7970707f4c8a9be1ca4e189270c62104af748cb6e680.docx",
+      "file_id": "cc3b3f0053cd4b528613f9ad92c5b2f7",
+      "file_name": "P11.+Sources+Sought+Notice+-+36C25626Q0596.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 37686,
+      "sha256": "f8446642b496ec244bbb7970707f4c8a9be1ca4e189270c62104af748cb6e680"
+    }
+  ],
+  "_mirror_hash": "2cbd9783e6399b8077efadf81dfe5e9111ac8299d2c58033084ec5c6e98c2209",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.447520+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-e77f71fc9f89468283c709966a875111",
+  "title": "Afocal Relay Optics for Cryovacuum Chamber – Market Intelligence Request",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e77f71fc9f89468283c709966a875111",
+  "opportunity_url": "https://sam.gov/opp/e77f71fc9f89468283c709966a875111/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e77f71fc9f89468283c709966a875111/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e77f71fc9f89468283c709966a875111",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA9101_AfocalRelay",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-03-31",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e77f71fc9f89468283c709966a875111",
+  "detail_text": "The Government is currently in the market intelligence phase of this project, aimed at identifying qualified vendors who can meet the technical and regulatory requirements for All-reflective Afocal Relay for Cryovacuum Chamber. This is not a request for proposal, and an award is not guaranteed to be made. Information received is intended to help the Government determine the final acquisition approach. NIST SP 800-171, Distro D Information, and Joint Certification Program (JCP): This project requires adherence to NIST SP 800-171 and JCP. To understand the technical performance parameters necessary to meet this requirement, you may request access to documents marked as Distribution D. To request these documents, and before you can receive them, your company must undergo a NIST SP 800-171 and JCP compliance vetting process. Please provide your company's CAGE code to the Agreements Officer, who will then validate your organization's NIST SP 800-171 compliance and JCP active status. Important: Distribution D attachments will be released only after the successful validation of your company's NIST SP 800-171 compliance and JCP active status. Failure to meet this requirement will prevent access to this critical project information. Market Intelligence Due Dates: Distro D Document Request Due: 9 Apr 26, COB Market Intelligence Response Due: 21 Apr 26, COB",
+  "detail_text_length": 1368,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14e2a48495384cf4b8e74e28caa39cb4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3b64b6f3a7d4db5b638f62fb3839f50/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14e2a48495384cf4b8e74e28caa39cb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e25a71de6879dfb72595e3c0c9eb3ad1945aecf707ce4d1e9f16732e2c17d2ef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e25a71de6879dfb72595e3c0c9eb3ad1945aecf707ce4d1e9f16732e2c17d2ef.pdf",
+      "file_id": "14e2a48495384cf4b8e74e28caa39cb4",
+      "file_name": "Attachment+1+-+SOO.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 182134,
+      "sha256": "e25a71de6879dfb72595e3c0c9eb3ad1945aecf707ce4d1e9f16732e2c17d2ef"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3b64b6f3a7d4db5b638f62fb3839f50/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/307690a8dcc6ac9ce552ef2e5618fba81af76ade936447f73e5088099b38f1c2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/307690a8dcc6ac9ce552ef2e5618fba81af76ade936447f73e5088099b38f1c2.pdf",
+      "file_id": "a3b64b6f3a7d4db5b638f62fb3839f50",
+      "file_name": "Market+Intelligence+Request+-+Afocal+Relay+Optics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 237988,
+      "sha256": "307690a8dcc6ac9ce552ef2e5618fba81af76ade936447f73e5088099b38f1c2"
+    }
+  ],
+  "_mirror_hash": "2b8eb96e03f1928d63645bee05efe041de29d0dde2c6e471126e2b581d7993c0",
+  "_mirror_run_id": "20260401T134230Z",
+  "_mirror_recorded_at": "2026-04-01T13:48:08.551845+00:00"
+}
