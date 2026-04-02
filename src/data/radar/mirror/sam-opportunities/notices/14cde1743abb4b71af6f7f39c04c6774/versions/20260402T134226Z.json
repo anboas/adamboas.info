@@ -1,0 +1,79 @@
+{
+  "id": "sam-14cde1743abb4b71af6f7f39c04c6774",
+  "title": "Shelving Units",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14cde1743abb4b71af6f7f39c04c6774",
+  "opportunity_url": "https://sam.gov/opp/14cde1743abb4b71af6f7f39c04c6774/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/14cde1743abb4b71af6f7f39c04c6774/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "14cde1743abb4b71af6f7f39c04c6774",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26Q0131",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14cde1743abb4b71af6f7f39c04c6774",
+  "detail_text": "VA Stockton Engineering & Logistics Building requires Shelving Units to outfit the new facility to provide member services for the Veterans Health Administration (VHA). The scope of this purchase order is to provide VA Stockton products that meet or exceed the specifications laid out in these sections. Each item is for delivery to the VA Stockton Engineering & Logistics Building location. Contractors shall furnish the Shelving Units.",
+  "detail_text_length": 437,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f34fc652dea41e7a55dc99799c4c78c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/961798332efc4b729c7f0932a8dfcd47/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b5cff0ba26446c1975b0b277ff98f0f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eaa8dc4b46f4620a1ae0f0fa8765fde/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f34fc652dea41e7a55dc99799c4c78c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aca8e0feb090790138b7a76efd62da9fc80301cb480f03444056bb2667f1c10c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aca8e0feb090790138b7a76efd62da9fc80301cb480f03444056bb2667f1c10c.pdf",
+      "file_id": "4f34fc652dea41e7a55dc99799c4c78c",
+      "file_name": "S06+36C24W26Q0131+0002+SS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122694,
+      "sha256": "aca8e0feb090790138b7a76efd62da9fc80301cb480f03444056bb2667f1c10c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/961798332efc4b729c7f0932a8dfcd47/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/49e5f70f1d23eaa301b41bc3fcb8e32f06873434c08b6dc0fccea2f68b841b6d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/49e5f70f1d23eaa301b41bc3fcb8e32f06873434c08b6dc0fccea2f68b841b6d.pdf",
+      "file_id": "961798332efc4b729c7f0932a8dfcd47",
+      "file_name": "Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132351,
+      "sha256": "49e5f70f1d23eaa301b41bc3fcb8e32f06873434c08b6dc0fccea2f68b841b6d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b5cff0ba26446c1975b0b277ff98f0f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f4473c835e754cf386683dc4f914dab784d13a93253c0cdfcf0787925498111.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f4473c835e754cf386683dc4f914dab784d13a93253c0cdfcf0787925498111.pdf",
+      "file_id": "9b5cff0ba26446c1975b0b277ff98f0f",
+      "file_name": "S02+36C24W26Q0131.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 196056,
+      "sha256": "2f4473c835e754cf386683dc4f914dab784d13a93253c0cdfcf0787925498111"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eaa8dc4b46f4620a1ae0f0fa8765fde/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b5aa8cb1bfe789e74fc2c35ed65f0be5dab2ef4a625db0012fb1f604b2f0c48a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b5aa8cb1bfe789e74fc2c35ed65f0be5dab2ef4a625db0012fb1f604b2f0c48a.pdf",
+      "file_id": "9eaa8dc4b46f4620a1ae0f0fa8765fde",
+      "file_name": "S06+36C24W26Q0131+0001+SS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 120152,
+      "sha256": "b5aa8cb1bfe789e74fc2c35ed65f0be5dab2ef4a625db0012fb1f604b2f0c48a"
+    }
+  ],
+  "_mirror_hash": "dd7c8d640025a7fa554c3585841b0d64d5d313925323ab474f876def6612bc81",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.542341+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-776d7951cf67481c93ef9836fc57f905",
+  "title": "Janitorial Services for Multiple Locations in NH and MA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=776d7951cf67481c93ef9836fc57f905",
+  "opportunity_url": "https://sam.gov/opp/776d7951cf67481c93ef9836fc57f905/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/776d7951cf67481c93ef9836fc57f905/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "776d7951cf67481c93ef9836fc57f905",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "697DCK-26-RFI-MHT",
+  "agency_path": "TRANSPORTATION, DEPARTMENT OF.FEDERAL AVIATION ADMINISTRATION.697DCK REGIONAL ACQUISITIONS SVCS",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=776d7951cf67481c93ef9836fc57f905",
+  "detail_text": "The Federal Aviation Administration is conducting a Market Survey to improve the Government's understanding of the current marketplace and to identify capable sources. Interested sources must respond with information to confirm evidence of their qualifications and capabilities. Responses to this market survey will be used to determine if there is adequate competition to set the requirement aside for Small Businesses. General Scope of Work: The contractor must provide all personnel, equipment, tools, materials, supervision, and services necessary to perform Janitorial services as specified herein the attached draft Statement of Work for the following Federal Aviation Administration (FAA) Facilities: MHT ATCT Site Address: 8 Ammon Dr., Manchester, NH Estimated Sq. Ft.: 3,505 Estimated PoP Start Date: 10/1/2026 A90 TRACON Site Address: Address: 25 Robert Milligan Parkway, Merrimack, NH Estimated Sq. Ft.: 55,185 Estimated PoP Start Date: 10/1/2026 BVY ATCT Site Address: 52 LP Henderson Rd., Beverly, MA Estimated Sq. Ft.: 1,600 Estimated PoP Start Date: 2/1/2027 LWM ATCT Site Address: 492 Sutton St., North Andover, MA Estimated Sq. Ft.: 1,336 Estimated PoP Start Date: 3/1/2027 Please see attached documents for detailed instructions.",
+  "detail_text_length": 1247,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b8a4d948bb044daba2fb2394514d3a2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff159c51f2f143e9a2b01fa207d5d238/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b8a4d948bb044daba2fb2394514d3a2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d4accd014440371e8e4ff8da9de99372354a4e1b779d1e7acc214b3e15c91ca2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d4accd014440371e8e4ff8da9de99372354a4e1b779d1e7acc214b3e15c91ca2.pdf",
+      "file_id": "9b8a4d948bb044daba2fb2394514d3a2",
+      "file_name": "Market+Survey+MHT-A90-BVY-LWM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 340747,
+      "sha256": "d4accd014440371e8e4ff8da9de99372354a4e1b779d1e7acc214b3e15c91ca2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff159c51f2f143e9a2b01fa207d5d238/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/32ea20daf5a365f2bc79e2c8dd34cef2babb93e3132f9c67fafc6dd8f578fc3c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/32ea20daf5a365f2bc79e2c8dd34cef2babb93e3132f9c67fafc6dd8f578fc3c.pdf",
+      "file_id": "ff159c51f2f143e9a2b01fa207d5d238",
+      "file_name": "Janitorial+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 315136,
+      "sha256": "32ea20daf5a365f2bc79e2c8dd34cef2babb93e3132f9c67fafc6dd8f578fc3c"
+    }
+  ],
+  "_mirror_hash": "a4eddc9a32ef8e7cf5d5331c4b81f22a8553292d0f45db0fa24320727ba804b0",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.561867+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-a6450fed71174b8091545b8cd91bf59f",
+  "title": "Case Management System (CMS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6450fed71174b8091545b8cd91bf59f",
+  "opportunity_url": "https://sam.gov/opp/a6450fed71174b8091545b8cd91bf59f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a6450fed71174b8091545b8cd91bf59f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a6450fed71174b8091545b8cd91bf59f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "89303026NIG000059",
+  "agency_path": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.HEADQUARTERS PROCUREMENT SERVICES",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6450fed71174b8091545b8cd91bf59f",
+  "detail_text": "DOE OIG has a requirement to obtain a cloud-based, commercial off-the-shelf (COTS) solution, inclusive of all associated commercial software licensing, software hosting, and system support services, for managing its investigations and its hotline which is FedRAMP certified. This effort includes the configuration and implementation of a cloud-based, COTS solution, including the provision of all necessary user licenses for an anticipated 150 or more full-time users and associated support services. Additionally, this effort may include migration of data from the existing iPRISM solution to the new one.",
+  "detail_text_length": 606,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83a255b6139647838ad15d4c675b4788/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1604b6b9356453182344d61498c70d1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83a255b6139647838ad15d4c675b4788/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3872ce3983547337593b7543285a78daa627eee5e188998ddbb3f6c2adf27792.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3872ce3983547337593b7543285a78daa627eee5e188998ddbb3f6c2adf27792.pdf",
+      "file_id": "83a255b6139647838ad15d4c675b4788",
+      "file_name": "CUI+RFI+-+iPRISM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 291481,
+      "sha256": "3872ce3983547337593b7543285a78daa627eee5e188998ddbb3f6c2adf27792"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1604b6b9356453182344d61498c70d1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/43b7433288c936b80478158a380525930315c172ff57ee7fc1909ce8e660454a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/43b7433288c936b80478158a380525930315c172ff57ee7fc1909ce8e660454a.xlsx",
+      "file_id": "d1604b6b9356453182344d61498c70d1",
+      "file_name": "CUI+RFI+Attachment+A+-+iPRISM+Requirements+Desired+Capabilities.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 60453,
+      "sha256": "43b7433288c936b80478158a380525930315c172ff57ee7fc1909ce8e660454a"
+    }
+  ],
+  "_mirror_hash": "50ffd551ac8a649916291acec5ddec3a15cd9419d8cf43c3d771d1bad2a868d6",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.602693+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-4507fe8168a3497baaf78daf5a1327e6",
+  "title": "R425--Traffic Analysis Brockton B8 Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4507fe8168a3497baaf78daf5a1327e6",
+  "opportunity_url": "https://sam.gov/opp/4507fe8168a3497baaf78daf5a1327e6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4507fe8168a3497baaf78daf5a1327e6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4507fe8168a3497baaf78daf5a1327e6",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24126Q0385",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4507fe8168a3497baaf78daf5a1327e6",
+  "detail_text": "The Department of Veteran Affairs intends to solicit for the following service: Traffic engineering analysis The Government intends to award a Firm-Fixed Priced contract resulting from the solicitation to the responsive offeror whose offer conforms to the solicitation and will be most advantageous to the government in terms of price and other considered factors. The solicitation will be set aside for Veteran-Owned Small Businesses. Solicitation 36C24126Q0385 will be available for download on April 1, 2026. The close date will be on April 3, 2026 at 12PM EST time. Copies of the solicitation will not be available for mailing. All prospective offerors must be registered in the System for Award Management (SAM) prior to award of the contract. Registration may be accomplished at www.sam.gov. Questions concerning this procurement may be directed to the contracting officer Issa Shawki at issa.shawki@va.gov. The applicable NAICS code is 561210.",
+  "detail_text_length": 950,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5562d8bdafaf4f538e8b8ceec3e03e43/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5562d8bdafaf4f538e8b8ceec3e03e43/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f46370a9bb3f7cd594034cd7e8858c0ee0c2fd16a6b1b29f0fd6a75bf2e65c8a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f46370a9bb3f7cd594034cd7e8858c0ee0c2fd16a6b1b29f0fd6a75bf2e65c8a.docx",
+      "file_id": "5562d8bdafaf4f538e8b8ceec3e03e43",
+      "file_name": "36C24126Q0385.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15982,
+      "sha256": "f46370a9bb3f7cd594034cd7e8858c0ee0c2fd16a6b1b29f0fd6a75bf2e65c8a"
+    }
+  ],
+  "_mirror_hash": "c653f9683ef10eeea4eb8fa628512778f7202d694fd93ae57d61caec11d9ff83",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.474320+00:00"
+}

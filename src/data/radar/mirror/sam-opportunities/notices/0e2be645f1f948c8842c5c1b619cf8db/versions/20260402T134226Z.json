@@ -1,0 +1,46 @@
+{
+  "id": "sam-0e2be645f1f948c8842c5c1b619cf8db",
+  "title": "B-2 Zonal Radar",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0e2be645f1f948c8842c5c1b619cf8db",
+  "opportunity_url": "https://sam.gov/opp/0e2be645f1f948c8842c5c1b619cf8db/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0e2be645f1f948c8842c5c1b619cf8db/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0e2be645f1f948c8842c5c1b619cf8db",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "B-2",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.BOMBER AIRCRAFT.FA8616 AFLCMC WBZK B2",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0e2be645f1f948c8842c5c1b619cf8db",
+  "detail_text": "The United States Air Force (USAF) is conducting market research and identifying, as potential sources, companies that may possess the expertise, capabilities, and experience to meet the requirements for a contract for the rapid procurement, sustainment, further development and/or modification of existing zonal radar capability to address obsolescence, new requirements, and/or unforeseen maintenance issues within the B-2 Weapon System.",
+  "detail_text_length": 439,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bca30110fa084953bd2cd7f8744485ec/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bca30110fa084953bd2cd7f8744485ec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7aa2785e83c362207dc86e119c3d7b368da361affd98cbcde32bc5f54aa6d7a6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7aa2785e83c362207dc86e119c3d7b368da361affd98cbcde32bc5f54aa6d7a6.pdf",
+      "file_id": "bca30110fa084953bd2cd7f8744485ec",
+      "file_name": "B-2+Zonal+Radar+Sources+Sought+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 183985,
+      "sha256": "7aa2785e83c362207dc86e119c3d7b368da361affd98cbcde32bc5f54aa6d7a6"
+    }
+  ],
+  "_mirror_hash": "10bf70a4ec74592929fa0e8c7deed0be0c8158ae0434e33d2245880dfd0dc6d8",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.595949+00:00"
+}

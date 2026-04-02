@@ -1,0 +1,58 @@
+{
+  "id": "sam-603bd4df241a4e0dbf8c67a39408f0c0",
+  "title": "U--Source Sought for Educational Support Resources",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=603bd4df241a4e0dbf8c67a39408f0c0",
+  "opportunity_url": "https://sam.gov/opp/603bd4df241a4e0dbf8c67a39408f0c0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/603bd4df241a4e0dbf8c67a39408f0c0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "603bd4df241a4e0dbf8c67a39408f0c0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DOIAFBO260038",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF INDIAN AFFAIRS.INDIAN EDUCATION ACQUISITION OFFICE",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=603bd4df241a4e0dbf8c67a39408f0c0",
+  "detail_text": "FACE Vendor Services for Digital Platform Access",
+  "detail_text_length": 48,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d63ef8cfa6a49f0979f597ca78d0426/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f13b44bd1c274a45bf5cd601be01cd3a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d63ef8cfa6a49f0979f597ca78d0426/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/46ec6a64fe30b2af92e86ad7e1ea62ad3088e1d9ad4313ff03bc17d64f5b054d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/46ec6a64fe30b2af92e86ad7e1ea62ad3088e1d9ad4313ff03bc17d64f5b054d.pdf",
+      "file_id": "4d63ef8cfa6a49f0979f597ca78d0426",
+      "file_name": "NOI_4_SOURCES_SOUGHT_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122693,
+      "sha256": "46ec6a64fe30b2af92e86ad7e1ea62ad3088e1d9ad4313ff03bc17d64f5b054d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f13b44bd1c274a45bf5cd601be01cd3a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31526688037c6b8e5cedea6247ec6b5d3d70e860f5b0d3428205132cc7556526.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31526688037c6b8e5cedea6247ec6b5d3d70e860f5b0d3428205132cc7556526.pdf",
+      "file_id": "f13b44bd1c274a45bf5cd601be01cd3a",
+      "file_name": "Statement_of_Work_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 133355,
+      "sha256": "31526688037c6b8e5cedea6247ec6b5d3d70e860f5b0d3428205132cc7556526"
+    }
+  ],
+  "_mirror_hash": "3feab6d8ea42ced92350aedd149d56c197be4ebdc52108755aa75fa1d8d33a02",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.403571+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-a7ba86d77a1343e7b1d0c7a73aed7580",
+  "title": "PACA Briefing For Industry 2026",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7ba86d77a1343e7b1d0c7a73aed7580",
+  "opportunity_url": "https://sam.gov/opp/a7ba86d77a1343e7b1d0c7a73aed7580/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a7ba86d77a1343e7b1d0c7a73aed7580/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a7ba86d77a1343e7b1d0c7a73aed7580",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-08-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7ba86d77a1343e7b1d0c7a73aed7580",
+  "detail_text": "Pleas see attached announcement.",
+  "detail_text_length": 32,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec8faba16274444eab8605e63fc2d576/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec8faba16274444eab8605e63fc2d576/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eb0e27a23be3f26bee21484246fe0c9949442a4436b2f8c6cad1e3e7163df299.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eb0e27a23be3f26bee21484246fe0c9949442a4436b2f8c6cad1e3e7163df299.docx",
+      "file_id": "ec8faba16274444eab8605e63fc2d576",
+      "file_name": "2026+PACA+BFI+-+1st+SAM+Announcement_25Mar26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 44801,
+      "sha256": "eb0e27a23be3f26bee21484246fe0c9949442a4436b2f8c6cad1e3e7163df299"
+    }
+  ],
+  "_mirror_hash": "771ad468caa3daa89f064e1ce21f4891b5629075820d7f73ae8bacbe6292d34e",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.618588+00:00"
+}

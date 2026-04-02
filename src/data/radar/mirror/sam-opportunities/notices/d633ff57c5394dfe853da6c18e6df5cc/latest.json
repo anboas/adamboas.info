@@ -1,0 +1,57 @@
+{
+  "id": "sam-d633ff57c5394dfe853da6c18e6df5cc",
+  "title": "Intent to Award Sole Source (IASS) - nTop Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d633ff57c5394dfe853da6c18e6df5cc",
+  "opportunity_url": "https://sam.gov/opp/d633ff57c5394dfe853da6c18e6df5cc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d633ff57c5394dfe853da6c18e6df5cc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d633ff57c5394dfe853da6c18e6df5cc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IASS422026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY.FA8650  USAF AFMC AFRL PZL AFRL/PZL",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d633ff57c5394dfe853da6c18e6df5cc",
+  "detail_text": "See attached IASS posting and BOM.",
+  "detail_text_length": 34,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/32ad076d20834e8b8cff051daac43539/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/639bc442a7d344b79fdada539b3887ee/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/32ad076d20834e8b8cff051daac43539/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5147b9c5700775b672d007683f3e32313e677bf583de0a8675749d95fc94046c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5147b9c5700775b672d007683f3e32313e677bf583de0a8675749d95fc94046c.docx",
+      "file_id": "32ad076d20834e8b8cff051daac43539",
+      "file_name": "IASS+-+nTOp.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23375,
+      "sha256": "5147b9c5700775b672d007683f3e32313e677bf583de0a8675749d95fc94046c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/639bc442a7d344b79fdada539b3887ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7cfcfbe9b8412da81eb5c2ca0c5098badce2fd13835505ffb62952ae8a74421f.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7cfcfbe9b8412da81eb5c2ca0c5098badce2fd13835505ffb62952ae8a74421f.xlsx",
+      "file_id": "639bc442a7d344b79fdada539b3887ee",
+      "file_name": "BOM-EAST-446---RQVV---Software---nTop2026.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11737,
+      "sha256": "7cfcfbe9b8412da81eb5c2ca0c5098badce2fd13835505ffb62952ae8a74421f"
+    }
+  ],
+  "_mirror_hash": "99eeb1709a426848ddf47354a56eb083aec1982fb9a6c6b52673a62715eba6fc",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.523099+00:00"
+}

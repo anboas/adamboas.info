@@ -1,0 +1,47 @@
+{
+  "id": "sam-64d1a9fda9034bad88d6ac8e272c4393",
+  "title": "SOURCES SOUGHT SYNOPSIS FY26 FMS IRI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64d1a9fda9034bad88d6ac8e272c4393",
+  "opportunity_url": "https://sam.gov/opp/64d1a9fda9034bad88d6ac8e272c4393/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/64d1a9fda9034bad88d6ac8e272c4393/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "64d1a9fda9034bad88d6ac8e272c4393",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA821326R3024",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8213  AFLCMC EBHK",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64d1a9fda9034bad88d6ac8e272c4393",
+  "detail_text": "Please see attachment for specific information on this Sources Sought.",
+  "detail_text_length": 70,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aae7d940dde942ae8484c09667339dcb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aae7d940dde942ae8484c09667339dcb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5105528a58dc479698d70f7dd22d5bccbae511903610b8e08ee641ae034ad4ff.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5105528a58dc479698d70f7dd22d5bccbae511903610b8e08ee641ae034ad4ff.docx",
+      "file_id": "aae7d940dde942ae8484c09667339dcb",
+      "file_name": "SOURCES+SOUGHT+SYNOPSIS+FY26+FMS+IRI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191496,
+      "sha256": "5105528a58dc479698d70f7dd22d5bccbae511903610b8e08ee641ae034ad4ff"
+    }
+  ],
+  "_mirror_hash": "2d5d7c50a87c0a24b88f4013f35f8994d33ce4d9ebcd757c5fdc7f8c6ce63fa5",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.436342+00:00"
+}

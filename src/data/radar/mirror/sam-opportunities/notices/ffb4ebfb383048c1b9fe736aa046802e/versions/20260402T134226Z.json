@@ -1,0 +1,57 @@
+{
+  "id": "sam-ffb4ebfb383048c1b9fe736aa046802e",
+  "title": "Intent to Sole Source-152 KG175 Bandwidth Upgrade",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffb4ebfb383048c1b9fe736aa046802e",
+  "opportunity_url": "https://sam.gov/opp/ffb4ebfb383048c1b9fe736aa046802e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ffb4ebfb383048c1b9fe736aa046802e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ffb4ebfb383048c1b9fe736aa046802e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO NY.USPFO NY PROCUREMENT.W7NR USPFO ACTIVITY NYANG 174",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffb4ebfb383048c1b9fe736aa046802e",
+  "detail_text": "This is NOT a request for quotes or proposals. Intent to sole source award to General Dynamics Mission Systems, Inc. for 2 Bandwidth Expansion Software (1 Gb/s). See attached J&A and Sole Source Memo. The Government hereby submits a notice of intent to award a sole source firm fixed price System for Award Management (SAM) delivery order for 2 Bandwidth Expansion Software (1 Gb/s) for existing KG175 Flex TACLANES. The total estimated value is under the SAT.",
+  "detail_text_length": 460,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f82210f481294111badf50770a3c1d5a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fcf7d703868c41abbc6a4674967cc1fb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f82210f481294111badf50770a3c1d5a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/691e07f6520af231263b3e6af71b1d383b25266bbffbd38ca81bfe265b7fc6c3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/691e07f6520af231263b3e6af71b1d383b25266bbffbd38ca81bfe265b7fc6c3.pdf",
+      "file_id": "f82210f481294111badf50770a3c1d5a",
+      "file_name": "TACLANE+vIPer+DAR+Sole+Source++Memo+11-2024.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142798,
+      "sha256": "691e07f6520af231263b3e6af71b1d383b25266bbffbd38ca81bfe265b7fc6c3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fcf7d703868c41abbc6a4674967cc1fb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3067c33db406d2b1f7aaa12e70e84099e696934031fb67cb0c96ff7b49466b6c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3067c33db406d2b1f7aaa12e70e84099e696934031fb67cb0c96ff7b49466b6c.pdf",
+      "file_id": "fcf7d703868c41abbc6a4674967cc1fb",
+      "file_name": "Limited+Competition+Justification_152+KG175+Bandwidth+Upgrade_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 380794,
+      "sha256": "3067c33db406d2b1f7aaa12e70e84099e696934031fb67cb0c96ff7b49466b6c"
+    }
+  ],
+  "_mirror_hash": "f60ac54262e3852ea266ecc7363491c23fa6435101d184ff995b4fb88f19a775",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.495140+00:00"
+}

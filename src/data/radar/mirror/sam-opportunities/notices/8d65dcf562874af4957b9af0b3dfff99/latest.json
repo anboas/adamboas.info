@@ -1,0 +1,68 @@
+{
+  "id": "sam-8d65dcf562874af4957b9af0b3dfff99",
+  "title": "DBEH 24-1588 Repair Sewage Treatment Equipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d65dcf562874af4957b9af0b3dfff99",
+  "opportunity_url": "https://sam.gov/opp/8d65dcf562874af4957b9af0b3dfff99/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8d65dcf562874af4957b9af0b3dfff99/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8d65dcf562874af4957b9af0b3dfff99",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA252126QA001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA2521  45 CONS PK",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d65dcf562874af4957b9af0b3dfff99",
+  "detail_text": "See three (3) Attachments: 1. Sources Sought MFR 2. Attachment 1 Statement of Work 3. Attachment 2 Photos for Reference",
+  "detail_text_length": 119,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e68da38706e4607b8f3b60a6a0dc16f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d4bb8a11ea24c408092e02506cc7b3d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7975a5c8e3944f79ac49a1487a9c9e3c/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e68da38706e4607b8f3b60a6a0dc16f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2318fc93c7756682cc6642b3350cef03bc0166f2f4985d9b9a3ab3587044b0b5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2318fc93c7756682cc6642b3350cef03bc0166f2f4985d9b9a3ab3587044b0b5.pdf",
+      "file_id": "0e68da38706e4607b8f3b60a6a0dc16f",
+      "file_name": "Attachment+2+Photos+of+Worksite.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 640849,
+      "sha256": "2318fc93c7756682cc6642b3350cef03bc0166f2f4985d9b9a3ab3587044b0b5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d4bb8a11ea24c408092e02506cc7b3d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7074d12e5fc06a14b66536818c8bde84fe631280b3365811dbd3c7ad596947a2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7074d12e5fc06a14b66536818c8bde84fe631280b3365811dbd3c7ad596947a2.pdf",
+      "file_id": "2d4bb8a11ea24c408092e02506cc7b3d",
+      "file_name": "Attachment+1+DBEH+24-1588+Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 774629,
+      "sha256": "7074d12e5fc06a14b66536818c8bde84fe631280b3365811dbd3c7ad596947a2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7975a5c8e3944f79ac49a1487a9c9e3c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/381ed2e5d39f315b60efe5b49fe4df546156c290e42ec8a0f799f048e4e6d362.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/381ed2e5d39f315b60efe5b49fe4df546156c290e42ec8a0f799f048e4e6d362.pdf",
+      "file_id": "7975a5c8e3944f79ac49a1487a9c9e3c",
+      "file_name": "FA252126QA001+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 189693,
+      "sha256": "381ed2e5d39f315b60efe5b49fe4df546156c290e42ec8a0f799f048e4e6d362"
+    }
+  ],
+  "_mirror_hash": "4e609352b826fb8bb53d790216702ce87ba06971bd9e0d618e566674bb2f5537",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.555787+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-94109cf3a6574c8cb0baa04ae43feac1",
+  "title": "Gantry Crane Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94109cf3a6574c8cb0baa04ae43feac1",
+  "opportunity_url": "https://sam.gov/opp/94109cf3a6574c8cb0baa04ae43feac1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/94109cf3a6574c8cb0baa04ae43feac1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "94109cf3a6574c8cb0baa04ae43feac1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA910126QB029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94109cf3a6574c8cb0baa04ae43feac1",
+  "detail_text": "Please see attached Notice of Intent (NOI).",
+  "detail_text_length": 43,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/73eb678365774d258f3d01b2526df03f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/73eb678365774d258f3d01b2526df03f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2361a4d4b4e06c7c4b4e9450da5192cc6eb6c998815767d0a1b030b899dd1102.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2361a4d4b4e06c7c4b4e9450da5192cc6eb6c998815767d0a1b030b899dd1102.pdf",
+      "file_id": "73eb678365774d258f3d01b2526df03f",
+      "file_name": "Notice+of+Intent+to+Sole+Source+to+ShuttleLift_.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 173137,
+      "sha256": "2361a4d4b4e06c7c4b4e9450da5192cc6eb6c998815767d0a1b030b899dd1102"
+    }
+  ],
+  "_mirror_hash": "36cae2a293772d0171aeb6e53624095ee3f3f4cf1262a05be2b09edaf0b45042",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.483710+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-889aad60fa1e4aaf8b19adca9c86ebb5",
+  "title": "National Transportation Library Digital Repository Platforms",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=889aad60fa1e4aaf8b19adca9c86ebb5",
+  "opportunity_url": "https://sam.gov/opp/889aad60fa1e4aaf8b19adca9c86ebb5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/889aad60fa1e4aaf8b19adca9c86ebb5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "889aad60fa1e4aaf8b19adca9c86ebb5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "693JK426R700001",
+  "agency_path": "TRANSPORTATION, DEPARTMENT OF.OFFICE OF THE SECRETARY.693JK4 OST",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=889aad60fa1e4aaf8b19adca9c86ebb5",
+  "detail_text": "The National Transportation Library (NTL), in coordination with the Office of the Chief Digital and Information Officer, is conducting market research for a repository system for managing and providing public access to its digital collections.",
+  "detail_text_length": 243,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31d1f7b756c3445995ca815aad7f8543/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/625a02d21f8841a78bfe76dfec045f5c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31d1f7b756c3445995ca815aad7f8543/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e15e58f052c2802d4c31099b8a5daf063ecd03f460966ad1d998f2bef794c0be.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e15e58f052c2802d4c31099b8a5daf063ecd03f460966ad1d998f2bef794c0be.pdf",
+      "file_id": "31d1f7b756c3445995ca815aad7f8543",
+      "file_name": "NTL+Digital+Repository+Sources+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 188183,
+      "sha256": "e15e58f052c2802d4c31099b8a5daf063ecd03f460966ad1d998f2bef794c0be"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/625a02d21f8841a78bfe76dfec045f5c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/733496854632087a203c1abf5dddec6d575851d83583c79c0fe7043177364fb3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/733496854632087a203c1abf5dddec6d575851d83583c79c0fe7043177364fb3.docx",
+      "file_id": "625a02d21f8841a78bfe76dfec045f5c",
+      "file_name": "NTLDR+Questionnaire+and+Tables_Fillable.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25062,
+      "sha256": "733496854632087a203c1abf5dddec6d575851d83583c79c0fe7043177364fb3"
+    }
+  ],
+  "_mirror_hash": "10a06d3ed5b172f5079424c56e0441b62d909eda3fa3a9bf1e47e7b75e566be3",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.597266+00:00"
+}

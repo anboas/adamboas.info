@@ -1,0 +1,47 @@
+{
+  "id": "sam-a51d80bc2ea6463aa35ba19691a1881f",
+  "title": "SOURCES SOUGHT F-15 G-0004 R-0011 137 NIINs",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a51d80bc2ea6463aa35ba19691a1881f",
+  "opportunity_url": "https://sam.gov/opp/a51d80bc2ea6463aa35ba19691a1881f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a51d80bc2ea6463aa35ba19691a1881f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a51d80bc2ea6463aa35ba19691a1881f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SOURCES_SOUGHT_F-15_G-0004_R-0011",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a51d80bc2ea6463aa35ba19691a1881f",
+  "detail_text": "The Defense Logistics Agency (DLA) Weapons Support is issuing this Sources Sought as a means of conducting market research to determine if other companies are capable of manufacturing (or legitimately obtaining) the items listed in the attached document. THE APPROVED SOURCE FOR THESE ITEMS BELOW: THE BOEING COMPANY, CAGES 76301, 0PXV4, and 81205. NIINs found not to be sole source will not be considered for future procurement under this Sources Sought. The Sources Sought is for informational purposes only. This is not a request for an offer. This does not constitute as a solicitation and shall not be construed as a commitment by the Government. Responses in any form are not offers and the Government is under no obligation to award a contract as a result of this announcement. No funds are available to pay for preparation of responses to this announcement. Any information submitted by respondents to this technical description is strictly voluntary. Interested parties who consider themselves qualified to manufacture (or legitimately obtain) the below listed NIINs are invited to submit a response to this Sources Sought Notice by Wednesday, April 8, 2026.",
+  "detail_text_length": 1167,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ece163a9857493c82cb6a889c88cf47/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ece163a9857493c82cb6a889c88cf47/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a92a5a0bcd07b328b8ee879f1443f98610554f3618cd9dc530c55bca0734ca5c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a92a5a0bcd07b328b8ee879f1443f98610554f3618cd9dc530c55bca0734ca5c.pdf",
+      "file_id": "3ece163a9857493c82cb6a889c88cf47",
+      "file_name": "F15_SourcesSought_NIIN_LIST.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64899,
+      "sha256": "a92a5a0bcd07b328b8ee879f1443f98610554f3618cd9dc530c55bca0734ca5c"
+    }
+  ],
+  "_mirror_hash": "64d0ee7e0b6fcdb69933f0770ca87f4e2cff31a8c31a535d63fd0afd11b96c36",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.414902+00:00"
+}

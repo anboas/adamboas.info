@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-01T13:49:12.022035+00:00
+Generated: 2026-04-02T13:48:32.048697+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/01/2026
+Posted range: 01/01/2026 -> 04/02/2026
 
 ## Counts
-- Total candidates: 105
-- Navy-related: 105
-- Full detail cached: 105
-- Notices with attachments: 37
-- Total attachment links: 144
-- Combined Synopsis/Solicitation: 22
-- Pre-solicitation: 36
+- Total candidates: 102
+- Navy-related: 102
+- Full detail cached: 102
+- Notices with attachments: 38
+- Total attachment links: 145
+- Combined Synopsis/Solicitation: 23
+- Pre-solicitation: 34
 - Solicitation: 15
-- Sources Sought: 23
+- Sources Sought: 21
 - Special Notice: 9
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 36
-- Sources Sought: 23
+- Pre-solicitation: 34
+- Sources Sought: 21
 - Vendor Outreach: 1
 - Special Notice: 9
 
@@ -44,10 +44,6 @@ Posted range: 01/01/2026 -> 04/01/2026
 | 9 | Sources Sought | Sources Sought | 2026-02-11 | 2026-03-13 | DEPT OF DEFENSE | [Sources Sought for Handheld Gas Analyzers](https://sam.gov/opp/c9341f8952914165b1ac6f6a976f29d6/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Consolidated Gases](https://sam.gov/opp/a1d9a51872cb42739fef419e9318ece2/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-04 | 2026-03-16 | DEPT OF DEFENSE | [NUWC Keyport Propane Supply](https://sam.gov/opp/7b925a4a373e4a13915776502b9b0e25/view) |
-| 5 | Sources Sought | Sources Sought | 2026-03-01 | 2026-03-17 | DEPT OF DEFENSE | [Engineering and technical support for AN/APG-65 and AN/APG-79 Active Electronically Scanned Array (AESA) radars](https://sam.gov/opp/0663a80e66b54e58b9e7d0dbc4af8d6b/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [P-8A Poseidon ADIRU Updates](https://sam.gov/opp/9180ad325d1b4199841c633422bfb20f/view) |
-| 5 | Sources Sought | Sources Sought | 2026-03-03 | 2026-03-17 | DEPT OF DEFENSE | [AECM RR-198 and RR-199 CHAFF](https://sam.gov/opp/c8b070197d0d4125b9a6e64e196f1e5b/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-17 | 2026-03-17 | DEPT OF DEFENSE | [Radio Redesign Integration and Test Effort](https://sam.gov/opp/387618d6d12b4d18adb23f92b0223bcc/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-18 | DEPT OF DEFENSE | [Electronics Repair Kits for the 2M/MTR Program](https://sam.gov/opp/3045d43f6ee84f2899ff2a2552a78968/view) |
 | 4 | Solicitation | - | 2026-03-02 | 2026-03-18 | DEPT OF DEFENSE | [AGR4 DRAM Chip Life of Type Buy (LOTB)](https://sam.gov/opp/096f277695a745369611546e58bd8613/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-13 | 2026-03-18 | DEPT OF DEFENSE | [Gage Block Comparator](https://sam.gov/opp/57206108063b473faecf3fbd94c465e1/view) |
@@ -122,6 +118,7 @@ Posted range: 01/01/2026 -> 04/01/2026
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-13 | DEPT OF DEFENSE | [ECP 6556 Gen2 LPHUD](https://sam.gov/opp/5c46a132305e45ba8f2d13e3688efb69/view) |
 | 7 | Special Notice | Special Notice | 2026-03-30 | 2026-04-14 | DEPT OF DEFENSE | [MINE HUNTING IN CHALLENGING ENVIRONMENTS PARTICIPATION AGREEMENT (MHCE PA) ACOUSTIC COMMUNICATIONS (ACOMMS) EXP](https://sam.gov/opp/aa3d6bdcb7bd40d7a13fc0f91e0b7d50/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-31 | 2026-04-15 | DEPT OF DEFENSE | [CH-53K DDSR Retrofit Kits & RIO 785D Kits](https://sam.gov/opp/dfd67428d7a2455eb4c508ee4640f472/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-04-01 | 2026-04-16 | DEPT OF DEFENSE | [PMA-290 P-8A and PMA-207 C-40 EBU & QEC Kits](https://sam.gov/opp/fb7be5f377464df2b41d53b77a2658e3/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-17 | DEPT OF DEFENSE | [MQ-9A Detect and Avoid Systems (DAAS) and DAAS Ground Control Station (GCS) Production Procurements](https://sam.gov/opp/d7d3ceb3348b4e3fa7c2e2aacd9bbe3c/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-19 | 2026-04-18 | DEPT OF DEFENSE | [FMS Country Initial Studies Case](https://sam.gov/opp/544cd98cccfc41d3835459a4877d774c/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-30 | DEPT OF DEFENSE | [Tactical Tomahawk Maritime Strike Supply Chain Management Data Deliverables](https://sam.gov/opp/6e7f3394f3f846a7905cb24cc0a7762c/view) |

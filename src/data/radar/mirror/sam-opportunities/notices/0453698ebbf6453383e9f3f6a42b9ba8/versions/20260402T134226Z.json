@@ -1,0 +1,68 @@
+{
+  "id": "sam-0453698ebbf6453383e9f3f6a42b9ba8",
+  "title": "Air National Guard (ANG) Fiscal Year 2026 Planned Construction and Design Projects",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0453698ebbf6453383e9f3f6a42b9ba8",
+  "opportunity_url": "https://sam.gov/opp/0453698ebbf6453383e9f3f6a42b9ba8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0453698ebbf6453383e9f3f6a42b9ba8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0453698ebbf6453383e9f3f6a42b9ba8",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.HQ NGB.HQ NGB DIR OF ACQUISITIONS.W39L USA NG READINESS CENTER",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0453698ebbf6453383e9f3f6a42b9ba8",
+  "detail_text": "Update 4/1/2026 - Publishing refined, updated Project lists for Advanced Planning, Design Requirements and Construction Requirements; see attachments. NGB is NOT requesting any information from interested vendors; this posting is informational only. This is an informational posting for Architect - Engineer (A-E) and Construction vendors interested in doing work with the Air National Guard (ANG). Attached is the Integrated Priority List (IPL) for construction projects planned for award in Fiscal Year (FY) 2026 and design projects planned for award in FY 2026 - 2028. This list incorporates all National Guard Bureau (NGB) Military Construction (MILCON) and Facilities Sustainment, Restoration, and Modernization (FSRM) funded projects. The list does not include Installation/Base Level funded projects. Procurement method for each project is determined individually at the Installation/Base level. NGB is NOT requesting any information from interested vendors; this posting is informational only.",
+  "detail_text_length": 1001,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/220dd7d35d454901b8d992812d4d4bdd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9c0378e0a4c461fbedca4a556c9364d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7f6a162c4d74bea9a276b0b9c5f7a61/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/220dd7d35d454901b8d992812d4d4bdd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8a696bddfe5da79877e58ee23b2ac381738e760103a4c400bffecd9b2a215831.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8a696bddfe5da79877e58ee23b2ac381738e760103a4c400bffecd9b2a215831.pdf",
+      "file_id": "220dd7d35d454901b8d992812d4d4bdd",
+      "file_name": "NGB+Project+List+-+Advanced+Planning+-+CAO+3.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137318,
+      "sha256": "8a696bddfe5da79877e58ee23b2ac381738e760103a4c400bffecd9b2a215831"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9c0378e0a4c461fbedca4a556c9364d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3c0cb93b3644b39b5d19ebff0e87d62df3d92a7f3f528109c68ace29832474a1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3c0cb93b3644b39b5d19ebff0e87d62df3d92a7f3f528109c68ace29832474a1.pdf",
+      "file_id": "b9c0378e0a4c461fbedca4a556c9364d",
+      "file_name": "NGB+Project+List+-+Design+Requirements+-+CAO+3.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52489,
+      "sha256": "3c0cb93b3644b39b5d19ebff0e87d62df3d92a7f3f528109c68ace29832474a1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7f6a162c4d74bea9a276b0b9c5f7a61/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7d8db72829b11779f9398d191b52d7c1b60d17bf479a7242b365e22637641956.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7d8db72829b11779f9398d191b52d7c1b60d17bf479a7242b365e22637641956.pdf",
+      "file_id": "e7f6a162c4d74bea9a276b0b9c5f7a61",
+      "file_name": "NGB+Project+List+-+Construction+Requirements+-+CAO+4.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 78299,
+      "sha256": "7d8db72829b11779f9398d191b52d7c1b60d17bf479a7242b365e22637641956"
+    }
+  ],
+  "_mirror_hash": "8f2c13f5f94b007cba1e423e88f93fe1703dd99c756466e9e9d7b95d43ed3baf",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.619909+00:00"
+}

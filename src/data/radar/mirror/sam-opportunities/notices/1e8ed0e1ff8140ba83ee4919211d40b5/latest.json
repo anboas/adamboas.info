@@ -1,0 +1,68 @@
+{
+  "id": "sam-1e8ed0e1ff8140ba83ee4919211d40b5",
+  "title": "DA10--FY26 AQM Calabrio SW Support and Maintenance Recompete  (VA-26-00011254)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1e8ed0e1ff8140ba83ee4919211d40b5",
+  "opportunity_url": "https://sam.gov/opp/1e8ed0e1ff8140ba83ee4919211d40b5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1e8ed0e1ff8140ba83ee4919211d40b5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1e8ed0e1ff8140ba83ee4919211d40b5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0292",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1e8ed0e1ff8140ba83ee4919211d40b5",
+  "detail_text": "This RFI has hereby extended to April 3, 2026 at 10:00 AM ET.",
+  "detail_text_length": 61,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7eaa47d48ec4c1f86eb78f6bf2d66df/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d882e4306ecd4ef0a536f00081393b3e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de82ad02f77d445b80bf6bbaf5388a36/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7eaa47d48ec4c1f86eb78f6bf2d66df/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c190f0ac742edd5d9619e43a212411a69c379838a60251420648cbf8606e5355.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c190f0ac742edd5d9619e43a212411a69c379838a60251420648cbf8606e5355.docx",
+      "file_id": "a7eaa47d48ec4c1f86eb78f6bf2d66df",
+      "file_name": "36C10B26Q0292_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14376,
+      "sha256": "c190f0ac742edd5d9619e43a212411a69c379838a60251420648cbf8606e5355"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d882e4306ecd4ef0a536f00081393b3e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9f648b75988e8040708398d7538302d2b6e878ae2dad6ffc77bb736f8f0d920b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9f648b75988e8040708398d7538302d2b6e878ae2dad6ffc77bb736f8f0d920b.docx",
+      "file_id": "d882e4306ecd4ef0a536f00081393b3e",
+      "file_name": "36C10B26Q0292.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18147,
+      "sha256": "9f648b75988e8040708398d7538302d2b6e878ae2dad6ffc77bb736f8f0d920b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de82ad02f77d445b80bf6bbaf5388a36/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/856a0d59c30bbe9bbe14c5e412e6408c863b8e92f2f21d550143d4ac04fed57e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/856a0d59c30bbe9bbe14c5e412e6408c863b8e92f2f21d550143d4ac04fed57e.docx",
+      "file_id": "de82ad02f77d445b80bf6bbaf5388a36",
+      "file_name": "P01+PD+Calabrio+MAY_16_2025_REV2_MAR_18_2026+03232026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145440,
+      "sha256": "856a0d59c30bbe9bbe14c5e412e6408c863b8e92f2f21d550143d4ac04fed57e"
+    }
+  ],
+  "_mirror_hash": "4d25cad3021f66fe4f62a69ec330fee5782cb411872d0271c1e680d152ca7faf",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.470067+00:00"
+}

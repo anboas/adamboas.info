@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-04-01T13:40:42.534295+00:00
+Generated: 2026-04-02T13:41:01.611752+00:00
 
 - Total: 19
 - OK: 12
@@ -11,9 +11,9 @@ Generated: 2026-04-01T13:40:42.534295+00:00
 |---|---|---:|:---:|---:|---:|---|---|
 | SAM.gov Opportunities API | official_api | 200 | no | 0 | 0 | https://api.sam.gov/opportunities/v2/search |  |
 | NAVSEA / NSWC source set | official_pages | 200 | yes | 0 | 0 | https://www.navsea.navy.mil/Home/Warfare-Centers/ |  |
-| AUSA Meetings & Events | official_calendar | 200 | no | 55 | 76 | https://www.ausa.org/meet |  |
-| AFCEA Events | official_calendar | 200 | no | 19 | 263 | https://www.afcea.org/events |  |
-| AFA Events | official_calendar | 200 | no | 25 | 33 | https://www.afa.org/events/ |  |
+| AUSA Meetings & Events | official_calendar | 200 | no | 52 | 65 | https://www.ausa.org/meet |  |
+| AFCEA Events | official_calendar | 200 | no | 19 | 261 | https://www.afcea.org/events |  |
+| AFA Events | official_calendar | 200 | no | 28 | 35 | https://www.afa.org/events/ |  |
 | Navy League Meetings & Events | official_calendar | 200 | no | 6 | 40 | https://www.navyleague.org/meetings-and-events/ |  |
 | CTO Innovation Industry Outreach Calendar | official_calendar | 200 | no | 0 | 29 | https://www.ctoinnovation.mil/events/ |  |
 | SAME Events | official_calendar | 200 | no | 6 | 9 | https://www.same.org/events/ |  |
@@ -25,6 +25,6 @@ Generated: 2026-04-01T13:40:42.534295+00:00
 | NDIA Events | constrained_official | 200 | yes | 0 | 0 | https://www.ndia.org/events |  |
 | NDIA SpecialOps26 | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/SpecialOps26 |  |
 | 36th Annual NDIA Special Operations Symposium | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium |  |
-| Federal AI Forum 2026 | one_off_event | 200 | no | 33 | 18 | https://govciomedia.com/federal-ai-forum/ |  |
-| AI Summit 2026 | one_off_event | 200 | no | 57 | 57 | https://govciomedia.com/ai-summit-2026/ |  |
+| Federal AI Forum 2026 | one_off_event | 200 | no | 29 | 17 | https://govciomedia.com/federal-ai-forum/ |  |
+| AI Summit 2026 | one_off_event | 200 | no | 53 | 56 | https://govciomedia.com/ai-summit-2026/ |  |
 | GovEvents Calendar | aggregator_discovery | 200 | no | 0 | 0 | https://www.govevents.com/calendar.php?s=1 |  |

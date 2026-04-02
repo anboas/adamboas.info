@@ -1,0 +1,56 @@
+{
+  "id": "sam-2d88dd7f86ff47149f9a5c724b98dd92",
+  "title": "FMS, CABINET SMOKE DETECTION PANEL QTY 1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d88dd7f86ff47149f9a5c724b98dd92",
+  "opportunity_url": "https://sam.gov/opp/2d88dd7f86ff47149f9a5c724b98dd92/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2d88dd7f86ff47149f9a5c724b98dd92/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2d88dd7f86ff47149f9a5c724b98dd92",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QS086",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d88dd7f86ff47149f9a5c724b98dd92",
+  "detail_text": "SOLICITATION NOTES: Repair Turnaround Time (RTAT) definition: The contractual delivery requirement is measured from asset Return to the date of asset acceptance under the terms of the contract. For purposes of this section, Return is defined as physical receipt of the F-condition asset at the contractor’s facility as reflected in the Action Date entry in the Commercial Asset Visibility (CAV) system. In accordance with the CAV Statement of Work, the contractor is required to accurately report all transactions by the end of the fifth regular business day after receipt and the Action Date entered in CAV must be dated to reflect the actual date of physical receipt. Required RTAT: 90 days after receipt of asset The Contractor must obtain final inspection and acceptance by the Government for all assets within the RTATs established in the subsequent contract. Throughput Constraint: Contractor must provide a throughput Constraint for each NSN(s). Total assets to be repaired monthly after initial delivery commences X/month (contractor fill in #). A throughput of ##____ per month reflects no throughput constraint. Induction Expiration Date: 365 days after contract award date. Any asset received after this date in days is not authorized for repair without bi-lateral agreement between the Contractor and NAVSUP WSS Contracting Officer. Reconciliation: A reconciliation modification will be issued after final Inspection and acceptance of all assets inducted under the subsequent contract. The parties have agreed to a price (shown on the schedule page) for each unit at the negotiated RTAT. Such prices are based on the Contractor meeting the RTAT requirements described within the schedule page. If the Contractor does not meet the applicable RTAT requirement, consideration will be assessed and subject to negotiation. ALL CONTRACTUAL DOCUMENTS (I.E. CONTRACTS, PURCHASE ORDERS, TASK ORDERS DELIVERY ORDERS AND MODIFICATIONS) RELATED TO THE INSTANT PROCUREMENT ARE CONSIDERED TO BE \"ISSUED\" BY THE GOVERNMENT WHEN COPIES ARE EITHER DEPOSITED IN THE MAIL, TRANSMITTED BY FACSIMILE, OR SENT BY OTHER ELECTRONIC COMMERCE METHODS, SUCH AS EMAIL. THE GOVERNMENT'S ACCEPTANCE OF THE CONTRACTOR'S PROPOSAL CONSTITUTES BILATERAL AGREEMENT TO \"ISSUE\" CONTRACTUAL DOCUMENTS AS DETAILED HEREIN. Early and incremental deliveries accepted and preferred. Item can only be procured only from suppliers who provide FAA-Certified parts which possess a FAA Authorized Release Certificate, FAA Form 8130-3 Airworthy Approval Tag. The FAA Authorized Release Certificate, FAA Form 8130-3 Airworthy Approval Tag should be provided with the interested party’s proposal/quote. POC: Alainna Pettit Phone:771-229-0534 E-mail: Alainna.m.pettit.civ@us.navy.mil",
+  "detail_text_length": 2743,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cce52d0a6b24220bd14fef3fb3e2e52/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c332774120ec467e9b70823dbbb9db6f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cce52d0a6b24220bd14fef3fb3e2e52/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df087c7b6bba6d25dc86d45f9786fbe0b2c048aa9f483ed37b825b369abc069d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df087c7b6bba6d25dc86d45f9786fbe0b2c048aa9f483ed37b825b369abc069d.pdf",
+      "file_id": "6cce52d0a6b24220bd14fef3fb3e2e52",
+      "file_name": "3.01_Solicitation_N0038326QS086.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1931312,
+      "sha256": "df087c7b6bba6d25dc86d45f9786fbe0b2c048aa9f483ed37b825b369abc069d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c332774120ec467e9b70823dbbb9db6f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/59215daec187e087777b147855f71a627fb7c54f057bc821c52b8274c71f813e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/59215daec187e087777b147855f71a627fb7c54f057bc821c52b8274c71f813e.pdf",
+      "file_id": "c332774120ec467e9b70823dbbb9db6f",
+      "file_name": "3.01_Solicitation_Packagining.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 187431,
+      "sha256": "59215daec187e087777b147855f71a627fb7c54f057bc821c52b8274c71f813e"
+    }
+  ],
+  "_mirror_hash": "27166147687d7db7fbab487a5e85e578b82e13af1f58e4501175371275f511e1",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.452300+00:00"
+}

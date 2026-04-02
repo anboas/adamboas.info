@@ -1,0 +1,57 @@
+{
+  "id": "sam-ffd5f8dedaf54fb19cb2a8a1b7e6acd5",
+  "title": "VISN 5 Nutanix refresh/upgrade",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffd5f8dedaf54fb19cb2a8a1b7e6acd5",
+  "opportunity_url": "https://sam.gov/opp/ffd5f8dedaf54fb19cb2a8a1b7e6acd5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ffd5f8dedaf54fb19cb2a8a1b7e6acd5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ffd5f8dedaf54fb19cb2a8a1b7e6acd5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24526Q0422",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.245-NETWORK CONTRACT OFFICE 5 (36C245)",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffd5f8dedaf54fb19cb2a8a1b7e6acd5",
+  "detail_text": "VISN 5 Nutanix refresh/upgrade",
+  "detail_text_length": 30,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dda4e40a2bd34f38bddb5e564be23079/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3d1d9e60b3a45b790baca34f2922a12/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dda4e40a2bd34f38bddb5e564be23079/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/07dd488b6c9a60bf5bc0628562ad155fb3dad0ffbd58c79ee03fc10e6a4dc9ec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/07dd488b6c9a60bf5bc0628562ad155fb3dad0ffbd58c79ee03fc10e6a4dc9ec.pdf",
+      "file_id": "dda4e40a2bd34f38bddb5e564be23079",
+      "file_name": "36C24526Q0422-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 224048,
+      "sha256": "07dd488b6c9a60bf5bc0628562ad155fb3dad0ffbd58c79ee03fc10e6a4dc9ec"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3d1d9e60b3a45b790baca34f2922a12/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b94776a7451f6bebf2ed48db495b6f2d478d193e4719ce48a2f53209894bb6fb.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b94776a7451f6bebf2ed48db495b6f2d478d193e4719ce48a2f53209894bb6fb.xlsx",
+      "file_id": "f3d1d9e60b3a45b790baca34f2922a12",
+      "file_name": "RFI+Line+item+worksheet-1b+w+COO.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14432,
+      "sha256": "b94776a7451f6bebf2ed48db495b6f2d478d193e4719ce48a2f53209894bb6fb"
+    }
+  ],
+  "_mirror_hash": "8623800ae31c7e54e200573edf7fa73689ee3877d7b78382856378eb53ab2705",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.581051+00:00"
+}

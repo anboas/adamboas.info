@@ -1,28 +1,28 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-01T13:49:20.309613+00:00
+Generated: 2026-04-02T13:48:40.224015+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/01/2026
+Posted range: 01/01/2026 -> 04/02/2026
 
 ## Counts
-- Total candidates: 435
-- Navy-related: 435
-- Full detail cached: 435
-- Notices with attachments: 235
-- Total attachment links: 669
-- Combined Synopsis/Solicitation: 158
-- Pre-solicitation: 58
-- Solicitation: 102
-- Sources Sought: 66
-- Special Notice: 51
+- Total candidates: 448
+- Navy-related: 448
+- Full detail cached: 448
+- Notices with attachments: 248
+- Total attachment links: 706
+- Combined Synopsis/Solicitation: 167
+- Pre-solicitation: 56
+- Solicitation: 104
+- Sources Sought: 68
+- Special Notice: 53
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 63
-- Sources Sought: 68
+- Pre-solicitation: 61
+- Sources Sought: 69
 - Vendor Outreach: 1
-- Special Notice: 51
+- Special Notice: 53
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -97,11 +97,6 @@ Posted range: 01/01/2026 -> 04/01/2026
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Consolidated Gases](https://sam.gov/opp/a1d9a51872cb42739fef419e9318ece2/view) |
 | 6 | Solicitation | - | 2026-02-24 | 2026-03-16 | DEPT OF DEFENSE | [RFP N0016726R3000 - Engineering Services for Signature Silencing Programs](https://sam.gov/opp/3cd6b360df2a406992da6d3726753d2b/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-04 | 2026-03-16 | DEPT OF DEFENSE | [NUWC Keyport Propane Supply](https://sam.gov/opp/7b925a4a373e4a13915776502b9b0e25/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [Office Furniture Remodel](https://sam.gov/opp/63168cf4745b456cb4b11aebd9c72e70/view) |
-| 5 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-17 | DEPT OF DEFENSE | [System Support on Welin Lambie davits onboard LHD, LCS-2 variant, CVN 78, and LSD Class ships](https://sam.gov/opp/6ff4bd131c8047c285ff3688027cfcda/view) |
-| 7 | Pre-solicitation | Pre-solicitation | 2026-03-10 | 2026-03-17 | DEPT OF DEFENSE | [ROCKWELL BOA order under N6449824G4001, ECS LPD31 & LPD 32 software testing](https://sam.gov/opp/cb484d3d7e5a4ddeb947eb4574d3db49/view) |
-| 8 | Combined Synopsis/Solicitation | Sources Sought | 2026-03-11 | 2026-03-17 | DEPT OF DEFENSE | [Sources Sought for Manufacture of a Forged and Machined HY-80 Pedestal](https://sam.gov/opp/9130379fe4ff4d1c87dad998833aaf89/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-03-13 | 2026-03-17 | DEPT OF DEFENSE | [Container Office](https://sam.gov/opp/7fb6f2050f2d4e35bd82317d2d2a9509/view) |
 | 7 | Special Notice | Special Notice | 2026-02-10 | 2026-03-18 | DEPT OF DEFENSE | [Electro-Optic/Infrared (EO/IR) Sight System (EOSS)](https://sam.gov/opp/1e5a72085b374b35bae14b8b166b59e1/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-18 | DEPT OF DEFENSE | [Electronics Repair Kits for the 2M/MTR Program](https://sam.gov/opp/3045d43f6ee84f2899ff2a2552a78968/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-03-18 | DEPT OF DEFENSE | [FY26 Leica Cleaning and Calibration](https://sam.gov/opp/b1547f5027804520ae3de3cbe8e0c416/view) |
@@ -319,6 +314,8 @@ Posted range: 01/01/2026 -> 04/01/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [A&E Services NSWCDD](https://sam.gov/opp/8c03eed2d2844dc1a345046b781de5e2/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [LIMITERS / AMPLIFIERS](https://sam.gov/opp/596a35ea2b1a443592c1b923fb2b1487/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [Radioactive Liquid Waste Processing Process Controls Replacement (PLC Upgrade)](https://sam.gov/opp/195de17e3048436c822f8b069db28c18/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-04-01 | 2026-04-06 | DEPT OF DEFENSE | [Bull Gears Evaluation and Repairs](https://sam.gov/opp/00edd34ced29480d8c659acc889226c9/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-06 | DEPT OF DEFENSE | [Compressor Repairs](https://sam.gov/opp/ddb7a626fa45451696285aebe004c69d/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-19 | 2026-04-07 | DEPT OF DEFENSE | [Furniture](https://sam.gov/opp/3148f5d96f534d07942661172062618b/view) |
 | 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-20 | 2026-04-07 | DEPT OF DEFENSE | [N0016426SNB52 ? SOURCES SOUGHT/REQUEST FOR INFORMATION (RFI) PEO IWS OMNIBUS ENGINEERING SUPPORT SERVICES (ESS)](https://sam.gov/opp/06a0119a677b4140869cc85ad0a02560/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-20 | 2026-04-07 | DEPT OF DEFENSE | [Synopsis for Computed Tomography (CT) Systems Maintenance](https://sam.gov/opp/d1cc73d7dc42488ea271e5dc3e9115e6/view) |
@@ -327,6 +324,9 @@ Posted range: 01/01/2026 -> 04/01/2026
 | 7 | Special Notice | Special Notice | 2026-03-24 | 2026-04-07 | DEPT OF DEFENSE | [ACRU Thermal Management System Hoses](https://sam.gov/opp/3824341a97f34b699a20816e85957c35/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-24 | 2026-04-07 | DEPT OF DEFENSE | [UMM Adaptor Block and Spare Parts](https://sam.gov/opp/5c2a04e8de944a9693ed9e6c8a4345dc/view) |
 | 7 | Special Notice | Special Notice | 2026-03-25 | 2026-04-07 | DEPT OF DEFENSE | [Request for Solutions (RFS) - Microelectronics Operations, Sustainment, Acquisition, and Infrastructure Capabilities Modernization (MOSAIC)](https://sam.gov/opp/6b8b2ea22cdd435899db666249381fbf/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-03-25 | 2026-04-07 | DEPT OF DEFENSE | [Frequency Synthesizer](https://sam.gov/opp/a55a227d9b0641ca8a489db8c5e7a987/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-07 | DEPT OF DEFENSE | [DNA Warehousing Support](https://sam.gov/opp/1ffe2fbf32834a15a8238af740d54762/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-03-30 | 2026-04-07 | DEPT OF DEFENSE | [NUT, HEX, REGULAR, STEEL, SELF LOCKING, CADMIUM PLATED 0.875"- 09UNC - 3B. BOA Item 7025AJ](https://sam.gov/opp/8d58553882424c65be37d7d2cea31c03/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

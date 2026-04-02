@@ -1,0 +1,57 @@
+{
+  "id": "sam-a7f13fca37704b5ca9981b05e9672e7e",
+  "title": "Unit Training & Certification (UT&C) in support of the Japan Annual Service Practice (ASP) Custodial Service Contract",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7f13fca37704b5ca9981b05e9672e7e",
+  "opportunity_url": "https://sam.gov/opp/a7f13fca37704b5ca9981b05e9672e7e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a7f13fca37704b5ca9981b05e9672e7e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a7f13fca37704b5ca9981b05e9672e7e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC-26-P-0000-037243",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.0418 AQ HQ     CONTRACTING SUP",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a7f13fca37704b5ca9981b05e9672e7e",
+  "detail_text": "THIS IS A Sources Sought Notice ONLY. The U.S. Government desires to procure services for non-personal custodial services to include cleaning, sanitation, and annual waxing/stripping for Fort Bliss, Texas at building 1008, and 1009, concerning (1) base, (2) option years, and a 6 month optional extension as defined in the Performance Work Statement except for those items specified as government furnished property and services on a small business set-aside basis, provided 2 or more qualified small businesses respond to this sources sought notice with information sufficient to support a set-aside. Be advised that the U.S. Government will not be able to set aside this requirement if 2 or more small businesses do not respond with information to support the set-aside. We encourage all small businesses, in all socioeconomic categories (including, 8(a) Business Development Program, Small Disadvantage Business, Historically Underutilized Business Zone, Service-Disabled Veteran-Owned, Women-Owned Small Business concerns), to identify their capabilities in meeting the requirement at a fair market price.",
+  "detail_text_length": 1109,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/559afd490d0143a4b9b0782453df9a3c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/596410400db64a10a4e5d825f3ce5026/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/559afd490d0143a4b9b0782453df9a3c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fc9edfb5198e1aba746e86071cc4633000f81cda73892e07574432bbb94f3c9f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fc9edfb5198e1aba746e86071cc4633000f81cda73892e07574432bbb94f3c9f.docx",
+      "file_id": "559afd490d0143a4b9b0782453df9a3c",
+      "file_name": "PANMCC-26-P-0000-037243_Sources+Sought+Notice_Ft_Bliss_Custodial_Services.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17431,
+      "sha256": "fc9edfb5198e1aba746e86071cc4633000f81cda73892e07574432bbb94f3c9f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/596410400db64a10a4e5d825f3ce5026/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d023aafa934ec651bec39a18565c0ba9cdd5ee6b039ce60ced74053ceccd3708.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d023aafa934ec651bec39a18565c0ba9cdd5ee6b039ce60ced74053ceccd3708.docx",
+      "file_id": "596410400db64a10a4e5d825f3ce5026",
+      "file_name": "PANMCC-26-P-0000-037243+Performance+Work+Statement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 102901,
+      "sha256": "d023aafa934ec651bec39a18565c0ba9cdd5ee6b039ce60ced74053ceccd3708"
+    }
+  ],
+  "_mirror_hash": "cdd094c311d2bc5cb744dc0f24d7fec7aec5aae351db05599e8a330d6b990008",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.520097+00:00"
+}

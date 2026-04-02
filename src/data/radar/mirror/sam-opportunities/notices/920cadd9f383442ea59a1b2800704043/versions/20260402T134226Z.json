@@ -1,0 +1,57 @@
+{
+  "id": "sam-920cadd9f383442ea59a1b2800704043",
+  "title": "Technician Coveralls and Laundering",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=920cadd9f383442ea59a1b2800704043",
+  "opportunity_url": "https://sam.gov/opp/920cadd9f383442ea59a1b2800704043/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/920cadd9f383442ea59a1b2800704043/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "920cadd9f383442ea59a1b2800704043",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA481426Q1234",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4814 6 CONS PK",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=920cadd9f383442ea59a1b2800704043",
+  "detail_text": "This program will include the supply, professional laundering, and maintenance of work uniforms, ensuring that technicians have access to clean, safe, and professional work attire at all times with a base year, two option years and a 6 month extension.",
+  "detail_text_length": 252,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/916c32bbae984da38d87f45c0dfbc3d3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c07bfafca7204898803504f1096a8eb8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/916c32bbae984da38d87f45c0dfbc3d3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0aed0e1adc50dece3d9ee7af4502eea6297ba22c4625c6c593c36c0632af848f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0aed0e1adc50dece3d9ee7af4502eea6297ba22c4625c6c593c36c0632af848f.pdf",
+      "file_id": "916c32bbae984da38d87f45c0dfbc3d3",
+      "file_name": "Sources+Sought+-+FA481426Q1234.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 133508,
+      "sha256": "0aed0e1adc50dece3d9ee7af4502eea6297ba22c4625c6c593c36c0632af848f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c07bfafca7204898803504f1096a8eb8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bd1d853ff75604d45cf545cc66eedb99d461890cee8997cfdba3bee72f353e39.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bd1d853ff75604d45cf545cc66eedb99d461890cee8997cfdba3bee72f353e39.pdf",
+      "file_id": "c07bfafca7204898803504f1096a8eb8",
+      "file_name": "SON+-++Vehicle+Management+Coveralls.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114669,
+      "sha256": "bd1d853ff75604d45cf545cc66eedb99d461890cee8997cfdba3bee72f353e39"
+    }
+  ],
+  "_mirror_hash": "279fdb3e693df710774bb65988b47a54d3195bfc429f4726e6abe2ec493b7537",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.513060+00:00"
+}

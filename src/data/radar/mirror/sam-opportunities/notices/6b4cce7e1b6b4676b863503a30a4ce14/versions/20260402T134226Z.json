@@ -1,0 +1,48 @@
+{
+  "id": "sam-6b4cce7e1b6b4676b863503a30a4ce14",
+  "title": "AFLCMC/AZS EPASS-wide Request for Information: CPAR Evaluation Criterion",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6b4cce7e1b6b4676b863503a30a4ce14",
+  "opportunity_url": "https://sam.gov/opp/6b4cce7e1b6b4676b863503a30a4ce14/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6b4cce7e1b6b4676b863503a30a4ce14/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6b4cce7e1b6b4676b863503a30a4ce14",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "AFLCMC_EPASS_RFI_01APRIL2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8721  AFLCMC PZE CM",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6b4cce7e1b6b4676b863503a30a4ce14",
+  "detail_text": "The intended audience for this RFI is GSA OASIS+ SB awardees , not specific to a particular domain or NAICS. The AFLCMC/AZS EPASS office (at both Hanscom and WP locations) is requesting feedback from industry on the CPAR evaluation subfactor criterion typically used in EPASS Fair Opportunity Proposal Requests (FOPRs). Please see attached for detailed request.",
+  "detail_text_length": 361,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78278d4aa3c340f2b8e5078c236171de/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78278d4aa3c340f2b8e5078c236171de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e76cb45a83fcf0a0f89427c7184537b574afaa32b16e4305fe476b927d04ebe9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e76cb45a83fcf0a0f89427c7184537b574afaa32b16e4305fe476b927d04ebe9.pdf",
+      "file_id": "78278d4aa3c340f2b8e5078c236171de",
+      "file_name": "EPASS+RFI+April+2026_signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 325568,
+      "sha256": "e76cb45a83fcf0a0f89427c7184537b574afaa32b16e4305fe476b927d04ebe9"
+    }
+  ],
+  "_mirror_hash": "bfc0dbc724065db35ac84b71bfc751718e1434a442b052be1c5386acc6f29184",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.437527+00:00"
+}

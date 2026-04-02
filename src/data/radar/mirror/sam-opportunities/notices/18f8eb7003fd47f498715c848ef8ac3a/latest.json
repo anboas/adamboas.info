@@ -1,0 +1,58 @@
+{
+  "id": "sam-18f8eb7003fd47f498715c848ef8ac3a",
+  "title": "Sources Sought for NSN 2520-01-413-0080",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=18f8eb7003fd47f498715c848ef8ac3a",
+  "opportunity_url": "https://sam.gov/opp/18f8eb7003fd47f498715c848ef8ac3a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/18f8eb7003fd47f498715c848ef8ac3a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "18f8eb7003fd47f498715c848ef8ac3a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL26070003",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=18f8eb7003fd47f498715c848ef8ac3a",
+  "detail_text": "This is a Sources Sought Notice/Request for Information (RFI) for project CL26070003 to be used for market research purposes. DLA Weapons Support (Columbus) is seeking information regarding companies’ capabilities to provide 2520-01-413-0080 on an Indefinite Delivery Indefinite Quantity (IDIQ) basis. This notice is issued solely for informational and planning purposes. It does not constitute a Request for Proposal (RFP) or in any way provide implication or obligation that a solicitation/RFP will be released in the future. This request for information does not commit the Government to contract for any supply or service for these requirements. NSN Description AMC AMSC NAICS 2520-01-413-0080 PROPELLER SHAFT WIT 1 B 336350 Please review the attached questionnaire and spreadsheet. If you are interested in this opportunity, please fill out both and return to Mia.Proskurenko@dla.mil by the date and time indicated herein. Thank you in advance for your assistance.",
+  "detail_text_length": 969,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79955af9f8ef44d0a6aeb87974f3a1d7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb0f6ab7258e44a39d015b715549eb56/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79955af9f8ef44d0a6aeb87974f3a1d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ebeecb5543977e3af4646ceb0a9f6f1bc0c36e3403e64066a47b6124bd0bb2b2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ebeecb5543977e3af4646ceb0a9f6f1bc0c36e3403e64066a47b6124bd0bb2b2.pdf",
+      "file_id": "79955af9f8ef44d0a6aeb87974f3a1d7",
+      "file_name": "Market+Survey+SS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 386340,
+      "sha256": "ebeecb5543977e3af4646ceb0a9f6f1bc0c36e3403e64066a47b6124bd0bb2b2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb0f6ab7258e44a39d015b715549eb56/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/223a5ffd444c771d43ab318f8340060a30a0a30181d8fb6ffd8fb4778b39a773.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/223a5ffd444c771d43ab318f8340060a30a0a30181d8fb6ffd8fb4778b39a773.xlsx",
+      "file_id": "bb0f6ab7258e44a39d015b715549eb56",
+      "file_name": "Market+Survey+Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13278,
+      "sha256": "223a5ffd444c771d43ab318f8340060a30a0a30181d8fb6ffd8fb4778b39a773"
+    }
+  ],
+  "_mirror_hash": "05a33a65bf2b2beeb961b7bfbf25a5c338b674cff54290c85892637a168b6482",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.419598+00:00"
+}

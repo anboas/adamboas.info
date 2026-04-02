@@ -1,0 +1,69 @@
+{
+  "id": "sam-de19e164efe7410eaa9aac93c39a6529",
+  "title": "26-SIMACQ-E60-0002 Material Depot Level Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de19e164efe7410eaa9aac93c39a6529",
+  "opportunity_url": "https://sam.gov/opp/de19e164efe7410eaa9aac93c39a6529/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/de19e164efe7410eaa9aac93c39a6529/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "de19e164efe7410eaa9aac93c39a6529",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N6339426Q4025",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.COMMANDING OFFICER",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de19e164efe7410eaa9aac93c39a6529",
+  "detail_text": "See attachements for details.",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a9c5a3b291e494ca607b9a76ad8be61/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68b4fa7293804295805ceb0380748568/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b85f9165b1ee49c0b03e326bcd44b17a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a9c5a3b291e494ca607b9a76ad8be61/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e0f599e89b0c466de2b89ca1cc33c9f5d806180902c9a224bb6403eee0560ef2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e0f599e89b0c466de2b89ca1cc33c9f5d806180902c9a224bb6403eee0560ef2.pdf",
+      "file_id": "3a9c5a3b291e494ca607b9a76ad8be61",
+      "file_name": "26-SIMACQ-E60-0002_SOW_4012026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 112897,
+      "sha256": "e0f599e89b0c466de2b89ca1cc33c9f5d806180902c9a224bb6403eee0560ef2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68b4fa7293804295805ceb0380748568/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0768af2f43589902de8cdf5ef38021038468a90586c1cf9a2383a3423a27d383.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0768af2f43589902de8cdf5ef38021038468a90586c1cf9a2383a3423a27d383.xlsx",
+      "file_id": "68b4fa7293804295805ceb0380748568",
+      "file_name": "26-SIMACQ_E60-0002_GFP_AttachmentV1_04012026.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9364950,
+      "sha256": "0768af2f43589902de8cdf5ef38021038468a90586c1cf9a2383a3423a27d383"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b85f9165b1ee49c0b03e326bcd44b17a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/27d3e3330ef9c039f281fb3a09e5bee036729ea065b7ca572f2f569a1528a4de.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/27d3e3330ef9c039f281fb3a09e5bee036729ea065b7ca572f2f569a1528a4de.pdf",
+      "file_id": "b85f9165b1ee49c0b03e326bcd44b17a",
+      "file_name": "26-SIMACQ-E60-0002_SAM_Sources_Sought_4012026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 176446,
+      "sha256": "27d3e3330ef9c039f281fb3a09e5bee036729ea065b7ca572f2f569a1528a4de"
+    }
+  ],
+  "_mirror_hash": "f5bfba46eb349ac6011311b3a3b74c709e16e3c69063917a68fac9f8154e6c4a",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.370894+00:00"
+}

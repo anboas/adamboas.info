@@ -1,0 +1,47 @@
+{
+  "id": "sam-f4f12f5e8ae1466495a068cbd366e251",
+  "title": "USS SHOUP (DDG 86) SRA 7C1, Bundle 1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4f12f5e8ae1466495a068cbd366e251",
+  "opportunity_url": "https://sam.gov/opp/f4f12f5e8ae1466495a068cbd366e251/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f4f12f5e8ae1466495a068cbd366e251/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f4f12f5e8ae1466495a068cbd366e251",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6264927RA001PS",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2027-04-16",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4f12f5e8ae1466495a068cbd366e251",
+  "detail_text": "This is a pre-solicitation notice for an upcoming requirement by Ship Repair Facility and Japan Regional Maintenance Center (SRF-JRMC) and Naval Supply Systems Command (NAVSUP) Fleet Logistics Center Yokosuka (FLCY) for Ship Repair services. The Government intends to issue a solicitation for a Firm-Fixed-Price (FFP) contract for the repair and continuous maintenance of United States Navy (USN) Surface Ship USS SHOUP (DDG 86). The anticipated scope of work includes, but not limited to the work items known as Task Group Instructions (TGI). See attached for the details. The work will be performed onboard Commander, Fleet Activities Yokosuka (CFAY), located in Yokosuka Naval Base, Japan. The anticipated Period of Performance (POP) is from 7-Dec-2026 through 20-Jul-2027.",
+  "detail_text_length": 776,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b75e25e8325b43ee9f40751486f256f4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b75e25e8325b43ee9f40751486f256f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d29677d7d1e8350e45ae455058a0a72cac3028e635dcb5c70a9e2c11b184462a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d29677d7d1e8350e45ae455058a0a72cac3028e635dcb5c70a9e2c11b184462a.pdf",
+      "file_id": "b75e25e8325b43ee9f40751486f256f4",
+      "file_name": "Pre-Solicitation+Notice+_N6264927RA001_Posting.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 467478,
+      "sha256": "d29677d7d1e8350e45ae455058a0a72cac3028e635dcb5c70a9e2c11b184462a"
+    }
+  ],
+  "_mirror_hash": "0ef9ea9c7569cad6a092164ecbd55d31154fc236db42be1b210f4f3f17dee8c7",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.399182+00:00"
+}

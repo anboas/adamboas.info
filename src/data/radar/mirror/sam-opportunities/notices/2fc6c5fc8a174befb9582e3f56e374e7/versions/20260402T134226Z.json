@@ -1,0 +1,57 @@
+{
+  "id": "sam-2fc6c5fc8a174befb9582e3f56e374e7",
+  "title": "National Archives and Records Administration (NARA) 4TH FLOOR Renovation Project",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2fc6c5fc8a174befb9582e3f56e374e7",
+  "opportunity_url": "https://sam.gov/opp/2fc6c5fc8a174befb9582e3f56e374e7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2fc6c5fc8a174befb9582e3f56e374e7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2fc6c5fc8a174befb9582e3f56e374e7",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "040ADV-26-R-0016-C0001",
+  "agency_path": "UNITED STATES GOVERNMENT PUBLISHING OFFICE.UNITED STATES GOVERNMENT PUBLISHING OFFICE.Acquisition Services",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2fc6c5fc8a174befb9582e3f56e374e7",
+  "detail_text": "The purpose of this amendment is to provide the attached site visitors sign-in sheet and contact information.",
+  "detail_text_length": 109,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3903dab03d404087930a3c3ea703710f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ed53fc6804ae4496ab8e2f7d917ab4d1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3903dab03d404087930a3c3ea703710f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/33a612f3e64359ecb7fca079409ae938a22613fddcda696cdeda0d5e11d7f201.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/33a612f3e64359ecb7fca079409ae938a22613fddcda696cdeda0d5e11d7f201.pdf",
+      "file_id": "3903dab03d404087930a3c3ea703710f",
+      "file_name": "GPO+Site+Visit+Log+03-24-2026+--+NARA+Project.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1521818,
+      "sha256": "33a612f3e64359ecb7fca079409ae938a22613fddcda696cdeda0d5e11d7f201"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ed53fc6804ae4496ab8e2f7d917ab4d1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/035bc802632e7d2922663de3402ca42a4721e9f345c70a3d1a36b79fac38737b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/035bc802632e7d2922663de3402ca42a4721e9f345c70a3d1a36b79fac38737b.pdf",
+      "file_id": "ed53fc6804ae4496ab8e2f7d917ab4d1",
+      "file_name": "Amendment+040ADV-26-R-0016-C0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 155573,
+      "sha256": "035bc802632e7d2922663de3402ca42a4721e9f345c70a3d1a36b79fac38737b"
+    }
+  ],
+  "_mirror_hash": "c4df3863d1f658b813e4082c1f04e9f68fd3d5e9b426b5a5178d4e6525fe6e65",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.607447+00:00"
+}

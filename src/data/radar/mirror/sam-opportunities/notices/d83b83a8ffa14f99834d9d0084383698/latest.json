@@ -1,0 +1,57 @@
+{
+  "id": "sam-d83b83a8ffa14f99834d9d0084383698",
+  "title": "Human Humanin (MT-RNR2) ELISA Kits",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d83b83a8ffa14f99834d9d0084383698",
+  "opportunity_url": "https://sam.gov/opp/d83b83a8ffa14f99834d9d0084383698/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d83b83a8ffa14f99834d9d0084383698/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d83b83a8ffa14f99834d9d0084383698",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "PCA-NIA-02859",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-04-01",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d83b83a8ffa14f99834d9d0084383698",
+  "detail_text": "​​​​​​​ Purchase Description: Human putative humanin peptide (MT-RNR2) ELISA kits - 49 Kits Salient characteristics Human Humanin ELISA kit -ELISA technology -96 well format -one kit assays humanin in 96 samples (including standards) -measure humanin from human serum -sensitivity to measure humanin at <7 pg/ml -required volume of serum to be <50 ul -compatibility to read absorbance on a SpectraMax M2 Microplate Reader -for continuity of research we need to compare our new data to our previous results using the Human Putative humanin peptide (MT-RNR2) ELISA kits (CSB-EL015084HU). -for the validity of the scientific research, data generated will need to be directly compared to those previously published in human aging cohorts. The human putative humanin peptide (MT-RNR2) (MT-RNR2) ELISA kits (CSB-EL015084HU) was used to assay humanin in human aging cohorts. Therefore for the validity and direct comparability of our results to our previous results and those previously published, the government requires this same kit to assay the levels of humanin.",
+  "detail_text_length": 1060,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44c5262b6fa54f5fa288ada88a138357/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/feccfc58c568400eb75f26970a4643b4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44c5262b6fa54f5fa288ada88a138357/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/780cee48bdf9200f41caed96e64d1e0b303cc6f1b3466cb8765e0daaf8ab3f56.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/780cee48bdf9200f41caed96e64d1e0b303cc6f1b3466cb8765e0daaf8ab3f56.pdf",
+      "file_id": "44c5262b6fa54f5fa288ada88a138357",
+      "file_name": "Attachment+1+-+Purchase+Descrption+PCA-NIA-02859.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 159296,
+      "sha256": "780cee48bdf9200f41caed96e64d1e0b303cc6f1b3466cb8765e0daaf8ab3f56"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/feccfc58c568400eb75f26970a4643b4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/02f0e7cef2b736fb0f8324002d3661957aa7074a747101e4ee1106b0f84c9baf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/02f0e7cef2b736fb0f8324002d3661957aa7074a747101e4ee1106b0f84c9baf.pdf",
+      "file_id": "feccfc58c568400eb75f26970a4643b4",
+      "file_name": "PCA-NIA-02859+Combined+Synopsis+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 291840,
+      "sha256": "02f0e7cef2b736fb0f8324002d3661957aa7074a747101e4ee1106b0f84c9baf"
+    }
+  ],
+  "_mirror_hash": "f0774ebf91d2ed0ad66c72100e850d2e278204d20928c56f552856fcb4ac1171",
+  "_mirror_run_id": "20260402T134226Z",
+  "_mirror_recorded_at": "2026-04-02T13:47:40.484220+00:00"
+}
