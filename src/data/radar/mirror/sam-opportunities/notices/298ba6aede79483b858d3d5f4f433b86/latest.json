@@ -1,0 +1,48 @@
+{
+  "id": "sam-298ba6aede79483b858d3d5f4f433b86",
+  "title": "RFI - Veterans Affairs Co-located Hosting Services (CHS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=298ba6aede79483b858d3d5f4f433b86",
+  "opportunity_url": "https://sam.gov/opp/298ba6aede79483b858d3d5f4f433b86/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/298ba6aede79483b858d3d5f4f433b86/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "298ba6aede79483b858d3d5f4f433b86",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0315",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=298ba6aede79483b858d3d5f4f433b86",
+  "detail_text": "This Request for Information (RFI) is issued for information and planning purposes only and does not constitute a solicitation nor does it restrict the Department of Veterans Affairs (VA) as to the ultimate acquisition approach. VA’s Office of Information & Technology (OIT), Connectivity & Collaboration Services (CCS) has a requirement to provide a like-for-like transition of existing contracted Co-located Hosting Services (CHS) for VA’s Gateway North and East locations. Please review the attached document \"VA RFI Co-located Hosting Services\" for detailed inforamtion regarding this RFI.",
+  "detail_text_length": 593,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/689370460dc2462283664deac482a45a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/689370460dc2462283664deac482a45a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4aea3dd9b0b3a34a181b0527a7627346c7bcf258ded1a12c05ebd3fe3dd4a091.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4aea3dd9b0b3a34a181b0527a7627346c7bcf258ded1a12c05ebd3fe3dd4a091.docx",
+      "file_id": "689370460dc2462283664deac482a45a",
+      "file_name": "VA+RFI+Co-Located+Hosting+Services.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46093,
+      "sha256": "4aea3dd9b0b3a34a181b0527a7627346c7bcf258ded1a12c05ebd3fe3dd4a091"
+    }
+  ],
+  "_mirror_hash": "c710f0b2323339171320297fc857de7b094ad1cadbc1c66ac1a547094c91edca",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.938830+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-9d3d84d56ec64c1b8b73c2ab7b2f9533",
+  "title": "PUMP,CENTRIFUGAL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d3d84d56ec64c1b8b73c2ab7b2f9533",
+  "opportunity_url": "https://sam.gov/opp/9d3d84d56ec64c1b8b73c2ab7b2f9533/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9d3d84d56ec64c1b8b73c2ab7b2f9533/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9d3d84d56ec64c1b8b73c2ab7b2f9533",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM1-26-Q-ME77",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d3d84d56ec64c1b8b73c2ab7b2f9533",
+  "detail_text": "DLA Maritime Mechanicsburg is seeking sources capable of supplying the following items: QTY NSN Part Number Nomenclature 4 7HH 4320-012530931 60-886 PUMP,CENTRIFUGAL Approved Design Cage Code: 27235 (HARDIE-TYNES CO INC) ) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to scott.coy@dla.mil by 12:00 PM EST on 17 April 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1216,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37b9e0df16934452a16aaeee84305718/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37b9e0df16934452a16aaeee84305718/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b8f863f7f04d9dd2b533ea136e43c45bb81ed23d01e14b7e23f652a71eda9498.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b8f863f7f04d9dd2b533ea136e43c45bb81ed23d01e14b7e23f652a71eda9498.pdf",
+      "file_id": "37b9e0df16934452a16aaeee84305718",
+      "file_name": "1.08+Sources+Sought+-+MARKET+SURVEY_SPRMM1Q26ME77.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 220537,
+      "sha256": "b8f863f7f04d9dd2b533ea136e43c45bb81ed23d01e14b7e23f652a71eda9498"
+    }
+  ],
+  "_mirror_hash": "e60efd7106a6c6ea70fd19edf493f1923079ad49e958d8332dc72ea6c475b9e0",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.132922+00:00"
+}

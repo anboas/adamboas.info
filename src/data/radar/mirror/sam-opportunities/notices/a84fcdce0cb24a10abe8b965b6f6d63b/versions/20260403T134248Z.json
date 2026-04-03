@@ -1,0 +1,46 @@
+{
+  "id": "sam-a84fcdce0cb24a10abe8b965b6f6d63b",
+  "title": "NGA Police Vehicle Upfits",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a84fcdce0cb24a10abe8b965b6f6d63b",
+  "opportunity_url": "https://sam.gov/opp/a84fcdce0cb24a10abe8b965b6f6d63b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a84fcdce0cb24a10abe8b965b6f6d63b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a84fcdce0cb24a10abe8b965b6f6d63b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "PRESOL04022026",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).NATL GEOSPATIAL-INTELLIGENCE AGENCY",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a84fcdce0cb24a10abe8b965b6f6d63b",
+  "detail_text": "The purpose of this pre-solicitation notice is to publicly synopsize the requirement for the Office of Force Protection (SIP) police vehicles upfits. NGA intends to solicit for and award up to (3) Basic Ordering Agreements (BOA). Under issued orders the contractor shall provide upfit services for police vehicles including operations vehicles, Tactical Response Team vehicles, and K9 Vehicles for its Springfield, VA and St. Louis, MO sites. The Contractor shall provide all labor, tools, materials, parts, supplies, components, equipment, supervision, and management necessary to complete the upfits. The work under this contract will be performed at the contractor’s facilities. NGA Washington – 7500 GEOING Dr Springfield, VA - Vehicles over 100 miles from contractor’s facility will need to be transported by contractor to and from the contactor’s facility. NGA St. Louis – 2301 Cass Ave, St. Louis, MO - Vehicles over 50 miles from contractor’s facility will need to be transported by contractor to and from the contactor’s facility. This effort will be full and open competition under NAICS code 811121 – Automotive Body, Paint, and Interior Repair and Maintenance. The request for proposals will be posted on or about April 20, 2026. See attached police vehicle upfit sample Statement of Need.",
+  "detail_text_length": 1301,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f357af4380e4d8396026935cb0d0071/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f357af4380e4d8396026935cb0d0071/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fcf0e05b0395beea22fa434ed7ecb3b353f3da69f467191e21c9c79bc1ed7d98.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fcf0e05b0395beea22fa434ed7ecb3b353f3da69f467191e21c9c79bc1ed7d98.pdf",
+      "file_id": "0f357af4380e4d8396026935cb0d0071",
+      "file_name": "Statement+of+Need+Vehicles.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 257369,
+      "sha256": "fcf0e05b0395beea22fa434ed7ecb3b353f3da69f467191e21c9c79bc1ed7d98"
+    }
+  ],
+  "_mirror_hash": "7cadcd4767eb31b2ff78e65fd029301f402e4bbb40836dcdc86a6168941d3a64",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.130464+00:00"
+}

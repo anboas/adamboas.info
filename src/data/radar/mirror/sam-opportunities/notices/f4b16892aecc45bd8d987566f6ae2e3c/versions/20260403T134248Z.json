@@ -1,0 +1,90 @@
+{
+  "id": "sam-f4b16892aecc45bd8d987566f6ae2e3c",
+  "title": "CONNECTING LINK",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4b16892aecc45bd8d987566f6ae2e3c",
+  "opportunity_url": "https://sam.gov/opp/f4b16892aecc45bd8d987566f6ae2e3c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f4b16892aecc45bd8d987566f6ae2e3c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f4b16892aecc45bd8d987566f6ae2e3c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA820626Q0529",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8226  AFSC OL H PZACA (NON-STOCK)",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-05-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4b16892aecc45bd8d987566f6ae2e3c",
+  "detail_text": "Hill AFB has a requirement for the following: Nomenclature: Connecting Link NSN: 3040-01-436-3487 1680ND101681GXM Manufacture Part Number: LS35052D0750A00 CLIN 0001 QTY 1 each CLIN 0002 QTY 2 each See attached solicitation standard form 18 All responsible sources may submit a capability statement, proposal, or quotation, which shall be considered by the agency. Interested parties, please submit a quote. Vendors must have an active registration in SAM.gov and JCP.",
+  "detail_text_length": 467,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1475a42f1631431195541c4d97def416/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f2b6b8479884721b8d5c6db77040d6c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b2a91b5c9b5456a94b7125f9cc1d782/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b7315dfacbf45ba9db665b7137ad741/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ec827471e8148f39894bfc06c4b1c37/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1475a42f1631431195541c4d97def416/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0a74012a97db8f829d9622dcd2370019cad27af001dd55bbaac77d7af57dad1e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0a74012a97db8f829d9622dcd2370019cad27af001dd55bbaac77d7af57dad1e.pdf",
+      "file_id": "1475a42f1631431195541c4d97def416",
+      "file_name": "FA820626Q0529.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 257400,
+      "sha256": "0a74012a97db8f829d9622dcd2370019cad27af001dd55bbaac77d7af57dad1e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f2b6b8479884721b8d5c6db77040d6c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/734019ce54aa6274bea8cdcd49aa02a93831b9abce70e3c00dce659b86d5161d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/734019ce54aa6274bea8cdcd49aa02a93831b9abce70e3c00dce659b86d5161d.pdf",
+      "file_id": "2f2b6b8479884721b8d5c6db77040d6c",
+      "file_name": "QA+instructions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 50342,
+      "sha256": "734019ce54aa6274bea8cdcd49aa02a93831b9abce70e3c00dce659b86d5161d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b2a91b5c9b5456a94b7125f9cc1d782/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1fd011b06d28ab216fa667c6bf793bdd8d60d6dd6882de03e39b798b87fa2616.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1fd011b06d28ab216fa667c6bf793bdd8d60d6dd6882de03e39b798b87fa2616.pdf",
+      "file_id": "3b2a91b5c9b5456a94b7125f9cc1d782",
+      "file_name": "Packing+Slip.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145636,
+      "sha256": "1fd011b06d28ab216fa667c6bf793bdd8d60d6dd6882de03e39b798b87fa2616"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b7315dfacbf45ba9db665b7137ad741/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/777160d8579cf6630077e217d32b7d483c5171f9cc3dd9accaed178c9d5d0608.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/777160d8579cf6630077e217d32b7d483c5171f9cc3dd9accaed178c9d5d0608.pdf",
+      "file_id": "6b7315dfacbf45ba9db665b7137ad741",
+      "file_name": "Transportation+Instructions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122890,
+      "sha256": "777160d8579cf6630077e217d32b7d483c5171f9cc3dd9accaed178c9d5d0608"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ec827471e8148f39894bfc06c4b1c37/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a4f322f711e92375288097dbe54b0ea35dbff8696f97f102041b601a8eaec103.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a4f322f711e92375288097dbe54b0ea35dbff8696f97f102041b601a8eaec103.pdf",
+      "file_id": "9ec827471e8148f39894bfc06c4b1c37",
+      "file_name": "Packaging+Report.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70446,
+      "sha256": "a4f322f711e92375288097dbe54b0ea35dbff8696f97f102041b601a8eaec103"
+    }
+  ],
+  "_mirror_hash": "285f60e44661817e9bb5ae7bcbfe9a5799c61008dad8734a5c72dfa472d28791",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.161393+00:00"
+}

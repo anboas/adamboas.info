@@ -1,0 +1,58 @@
+{
+  "id": "sam-f2c7fbb42c734554adeb79edd11aa909",
+  "title": "FDRMC TECHNICAL SUPPORT SERVICES",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2c7fbb42c734554adeb79edd11aa909",
+  "opportunity_url": "https://sam.gov/opp/f2c7fbb42c734554adeb79edd11aa909/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f2c7fbb42c734554adeb79edd11aa909/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f2c7fbb42c734554adeb79edd11aa909",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N6817126-FDRMC-RFI",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SIGONELLA.NAVSUP FLC SIGONELLA NAPLES OFFICE",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2c7fbb42c734554adeb79edd11aa909",
+  "detail_text": "The Naval Supply Systems Command Fleet Logistics Center Sigonella, Italy (NAVSUP FLCSI) Naples Shore Branch is issuing this sources sought notice (SSN)/ request for information (RFI) for the purposes of conducting market research. The NAVSUP FLCSI Naples Detachment, Naples, Italy, is searching for sources that can supply services IAW the attached Performance Work Statement draft document. Place of Performance includes multiple OCONUS locations. Please see attached SSN/RFI and Peformance Work Statement (PWS) for more information.",
+  "detail_text_length": 534,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f57db6d8177408681d0a1bc1119a678/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e79b4661f5d1460f830f578f9a8e55d5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f57db6d8177408681d0a1bc1119a678/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d66a040a7c4776cd83cfe5d15cd669de37152c8d708ddcb432bf198d5095cf0e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d66a040a7c4776cd83cfe5d15cd669de37152c8d708ddcb432bf198d5095cf0e.pdf",
+      "file_id": "4f57db6d8177408681d0a1bc1119a678",
+      "file_name": "RFI+-+FDRMC+-+Correction.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132741,
+      "sha256": "d66a040a7c4776cd83cfe5d15cd669de37152c8d708ddcb432bf198d5095cf0e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e79b4661f5d1460f830f578f9a8e55d5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1fd10c94eadb2727c832bdfc8649b3820c2da108e1efcf8deae5c66ab1530d74.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1fd10c94eadb2727c832bdfc8649b3820c2da108e1efcf8deae5c66ab1530d74.pdf",
+      "file_id": "e79b4661f5d1460f830f578f9a8e55d5",
+      "file_name": "Performance+Work+Statement_ENG+-+Draft+-+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 600363,
+      "sha256": "1fd10c94eadb2727c832bdfc8649b3820c2da108e1efcf8deae5c66ab1530d74"
+    }
+  ],
+  "_mirror_hash": "95c34bf4f0903b3449d17d7b6503567c9fe8e01fc1a88c79a7fb52b648535a6b",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.878628+00:00"
+}

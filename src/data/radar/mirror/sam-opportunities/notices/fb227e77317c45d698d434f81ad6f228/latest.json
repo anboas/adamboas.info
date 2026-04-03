@@ -1,0 +1,46 @@
+{
+  "id": "sam-fb227e77317c45d698d434f81ad6f228",
+  "title": "R--Kijik, Alaska",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb227e77317c45d698d434f81ad6f228",
+  "opportunity_url": "https://sam.gov/opp/fb227e77317c45d698d434f81ad6f228/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fb227e77317c45d698d434f81ad6f228/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fb227e77317c45d698d434f81ad6f228",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140D0426Q0315",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb227e77317c45d698d434f81ad6f228",
+  "detail_text": "KIJIK CE P2-LACL 09-154 & 09-163,P260124",
+  "detail_text_length": 40,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eebd7e583794ab1841e2a0a9a83819c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eebd7e583794ab1841e2a0a9a83819c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/08d8db05fb451e3721bcbe6feea81c58015ff861a1574a9e8961ef9e6efa571b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/08d8db05fb451e3721bcbe6feea81c58015ff861a1574a9e8961ef9e6efa571b.pdf",
+      "file_id": "9eebd7e583794ab1841e2a0a9a83819c",
+      "file_name": "A21_MISC_-_Kijik_AK__SSN_-FINAL-_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 363216,
+      "sha256": "08d8db05fb451e3721bcbe6feea81c58015ff861a1574a9e8961ef9e6efa571b"
+    }
+  ],
+  "_mirror_hash": "ff8ade39b4fec3bfe2e53913961d462c3674bc7371e7c6e8a9862804e2db207c",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.014051+00:00"
+}

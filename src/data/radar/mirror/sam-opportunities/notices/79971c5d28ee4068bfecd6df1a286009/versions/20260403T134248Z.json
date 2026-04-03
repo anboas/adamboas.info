@@ -1,0 +1,70 @@
+{
+  "id": "sam-79971c5d28ee4068bfecd6df1a286009",
+  "title": "DARPA \"Venture Horizons\" Request for Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=79971c5d28ee4068bfecd6df1a286009",
+  "opportunity_url": "https://sam.gov/opp/79971c5d28ee4068bfecd6df1a286009/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/79971c5d28ee4068bfecd6df1a286009/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "79971c5d28ee4068bfecd6df1a286009",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA_04022026",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA)",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-06-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=79971c5d28ee4068bfecd6df1a286009",
+  "detail_text": "The purpose of this RFI amendment is to add the \"CommercialStrategy_DARPAVentureHorizons_04.02.2026\" presentation. This RFI seeks to identify commensurate talent from a select group of top-tier investors to which DARPA may provide opportunities for continued investment in DARPA technologies through engagements with our subject matter experts. Please see RFI attachments for details.",
+  "detail_text_length": 384,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f897812217b4151ac58600691a85e79/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8cd6258dcc8746bfa0ff48d5c953856c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c1a591cf67874603b346a8ed688ebe26/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f897812217b4151ac58600691a85e79/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ac21df30d5534ffc2aec73dac929573d03210d8b78039f33a7c7cd0c309386e9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ac21df30d5534ffc2aec73dac929573d03210d8b78039f33a7c7cd0c309386e9.pdf",
+      "file_id": "0f897812217b4151ac58600691a85e79",
+      "file_name": "CommercialStrategy_DARPAVentureHorizons_04.02.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1338677,
+      "sha256": "ac21df30d5534ffc2aec73dac929573d03210d8b78039f33a7c7cd0c309386e9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8cd6258dcc8746bfa0ff48d5c953856c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6558492e4909d0076e85deba8dfbe005871ea9aac9ecc243400c5172f484b5dd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6558492e4909d0076e85deba8dfbe005871ea9aac9ecc243400c5172f484b5dd.pdf",
+      "file_id": "8cd6258dcc8746bfa0ff48d5c953856c",
+      "file_name": "DARPA++Venture+Horizons+RFI_04.02.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 247258,
+      "sha256": "6558492e4909d0076e85deba8dfbe005871ea9aac9ecc243400c5172f484b5dd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c1a591cf67874603b346a8ed688ebe26/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/83717ce2ee94c50018dcfe0cea22bd361dbb8218e4623db73aa11244fbfbfc36.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/83717ce2ee94c50018dcfe0cea22bd361dbb8218e4623db73aa11244fbfbfc36.xlsx",
+      "file_id": "c1a591cf67874603b346a8ed688ebe26",
+      "file_name": "DARPA_VentureHorizons_RFI_Response_Spreadsheet_-Enter+Firm+Name-_2026.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28437,
+      "sha256": "83717ce2ee94c50018dcfe0cea22bd361dbb8218e4623db73aa11244fbfbfc36"
+    }
+  ],
+  "_mirror_hash": "6e552d8440d64b63c15d089016da5885f1d5ef47d635114c9e566111e5a9ed22",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.983671+00:00"
+}

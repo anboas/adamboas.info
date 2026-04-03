@@ -1,0 +1,57 @@
+{
+  "id": "sam-679884ec81234e1f8749da42ffc19cd2",
+  "title": "Buckley SFB - Replace Boiler Vent Piping",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=679884ec81234e1f8749da42ffc19cd2",
+  "opportunity_url": "https://sam.gov/opp/679884ec81234e1f8749da42ffc19cd2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/679884ec81234e1f8749da42ffc19cd2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "679884ec81234e1f8749da42ffc19cd2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA2543BoilerExhaustVentReplacement",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2543  460 CONS",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=679884ec81234e1f8749da42ffc19cd2",
+  "detail_text": "This sources sought is issued for the purpose of market research in accordance with RFO Part 10. The result of this market research will contribute to determining the method of procurement. This announcement is not to be construed as a commitment by the Government, implied or otherwise, to issue a solicitation or to award a contract. At this time, BSFB is not seeking quotes and will not accept unsolicited quotes. Please see the two attachments that provides more information on this requirement. Primary Objective: The Contractor shall provide all supplies, materials, tools, equipment, and qualified labor necessary for replacing all boiler venting (exhaust & inlet) at Bldg. 205. The existing boiler venting is deteriorating due to ongoing condensate leaks creating a risk of failure that could release hazardous flue gases into the facility. Replacing boiler venting will ensure proper system operation and the continued safety of the facility and its occupants. Questions below for discussion: What is the expected timeframe to complete the work tasks laid out? (Please reply citing the delivery time to Buckley Space Force Base, Colorado.) Is there a different NAICS code that would better fit the scope of work? Do you warranty your work? If so, what is the standard warranty? Are there any warranties for the resources used? Please provide company name, address, point of contact, telephone number, e-mail address, CAGE/DUNS and pre-priced contract vehicle number if applicable. Is 60 days after date of award enough time to complete the work and all deliverables? Is a site visit needed for this requirement? Is this requirement clear? Do any aspects need further clarification?",
+  "detail_text_length": 1690,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6013711f60aa44c893cd167a47eedf89/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df103c3f6e2d4ceda99da174354a96af/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6013711f60aa44c893cd167a47eedf89/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5dee74b4b57ebf62f8bc6f42a15968a06f54a2c02ca45c8f278095ce1003ac04.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5dee74b4b57ebf62f8bc6f42a15968a06f54a2c02ca45c8f278095ce1003ac04.pdf",
+      "file_id": "6013711f60aa44c893cd167a47eedf89",
+      "file_name": "B205+Boiler+Venting+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 194871,
+      "sha256": "5dee74b4b57ebf62f8bc6f42a15968a06f54a2c02ca45c8f278095ce1003ac04"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df103c3f6e2d4ceda99da174354a96af/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5cf42d691d4df234c79e8cf6f166e04f3ed032ef1a355809b60777ac317d2eb4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5cf42d691d4df234c79e8cf6f166e04f3ed032ef1a355809b60777ac317d2eb4.pdf",
+      "file_id": "df103c3f6e2d4ceda99da174354a96af",
+      "file_name": "SOW+-+B205+Boiler+Vent+Piping+Replacement-+CONS+revised+-1+Apr-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1179981,
+      "sha256": "5cf42d691d4df234c79e8cf6f166e04f3ed032ef1a355809b60777ac317d2eb4"
+    }
+  ],
+  "_mirror_hash": "2d584e3e0481a3cf25063e909f1332c326794653fc18d9e142a4e7927637646b",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.053224+00:00"
+}

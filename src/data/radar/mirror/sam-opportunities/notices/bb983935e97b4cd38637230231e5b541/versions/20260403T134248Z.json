@@ -1,0 +1,67 @@
+{
+  "id": "sam-bb983935e97b4cd38637230231e5b541",
+  "title": "UPS Maintenance Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bb983935e97b4cd38637230231e5b541",
+  "opportunity_url": "https://sam.gov/opp/bb983935e97b4cd38637230231e5b541/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bb983935e97b4cd38637230231e5b541/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bb983935e97b4cd38637230231e5b541",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6883626Q0006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bb983935e97b4cd38637230231e5b541",
+  "detail_text": "See Attached Solicitation, PWS, and Wage Determination.",
+  "detail_text_length": 55,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c1a842a9b6240669d5151eaadb7a7af/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e403b95b6d14dfc91986b403436eb6b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af411f9335ca4a08bd34438b64d88684/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c1a842a9b6240669d5151eaadb7a7af/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/625af2cd91289bc6c74cbcf2e880924fa771e76e7ce1eed151e5552d07cb51e6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/625af2cd91289bc6c74cbcf2e880924fa771e76e7ce1eed151e5552d07cb51e6.pdf",
+      "file_id": "7c1a842a9b6240669d5151eaadb7a7af",
+      "file_name": "Atch+2+Wage+Determination.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 119621,
+      "sha256": "625af2cd91289bc6c74cbcf2e880924fa771e76e7ce1eed151e5552d07cb51e6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e403b95b6d14dfc91986b403436eb6b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5db341c33719957c250b026e0632a5312e28703d0f922e465716b7e4d6ea7f9e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5db341c33719957c250b026e0632a5312e28703d0f922e465716b7e4d6ea7f9e.pdf",
+      "file_id": "8e403b95b6d14dfc91986b403436eb6b",
+      "file_name": "Atch+1+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1214786,
+      "sha256": "5db341c33719957c250b026e0632a5312e28703d0f922e465716b7e4d6ea7f9e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af411f9335ca4a08bd34438b64d88684/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0143943670efba1d43c014646445cd5992d737fa8baf10abfb1922ad15069843.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0143943670efba1d43c014646445cd5992d737fa8baf10abfb1922ad15069843.pdf",
+      "file_id": "af411f9335ca4a08bd34438b64d88684",
+      "file_name": "RFQ+N6883626Q0006.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1887266,
+      "sha256": "0143943670efba1d43c014646445cd5992d737fa8baf10abfb1922ad15069843"
+    }
+  ],
+  "_mirror_hash": "6d86900262f4a78ef354ee94c7696e0e0e27627e7854763ec685b3f6bed02df7",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.954961+00:00"
+}

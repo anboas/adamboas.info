@@ -1,0 +1,68 @@
+{
+  "id": "sam-4bffbc323387462c8a7cb47cd1796b97",
+  "title": "Leasing of Printer Supply/Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4bffbc323387462c8a7cb47cd1796b97",
+  "opportunity_url": "https://sam.gov/opp/4bffbc323387462c8a7cb47cd1796b97/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4bffbc323387462c8a7cb47cd1796b97/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4bffbc323387462c8a7cb47cd1796b97",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC26P0000041474",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT BLISS",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4bffbc323387462c8a7cb47cd1796b97",
+  "detail_text": "The Mission and Installation Contracting Command – Fort Bliss, Texas is issuing this sources sought synopsis as a means of conducting market research to identify parties having an interest in and the resources to support the requirement for Leased Printer Supply/Services. The intention is to procure these services on a competitive basis. AFSBn-Bliss is requesting a leased copier agreement which will provide 36 new multifunctional devices to replace the current fleet of ageing and disparate devices. This contract is for Multifunctional Devices (MFDs) that meet the minimum salient characteristics listed in the attached document to include color printing, copy/scan functionality, CAC Smartcard enabled, and standard finishing capability. Each MFD will include a Full-Service Maintenance Agreement for service and supplies to include print, toner, developer, dry ink, cleaning rollers, fillers, staples, and HD removal. The Army (Receiving Unit) will maintain ownership of the hard drive(s) at the end of the final POP and/or when the device is replaced. The Contractor must provide non-personal services to furnish all labor, tools, equipment, transportation, materials, testing and supervision in order to provide an operating lease to the AFSBn-Bliss HQ, of Fort Bliss, Texas. The MFDs must remain in inventory for the duration of the awarded delivery orders unless otherwise replaced by a new device of equal or better capabilities at no additional cost to the Government.",
+  "detail_text_length": 1481,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16471d90c6b648339154fc98da0ae524/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/81ff9febafa943e4acdce792d6cd7f63/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5be66e3c5a1410b9fe659d546db8567/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16471d90c6b648339154fc98da0ae524/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dfd62d4df92c5028236811822c58e298443f2ae11d4a1c2e42d8c399236dd2a7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dfd62d4df92c5028236811822c58e298443f2ae11d4a1c2e42d8c399236dd2a7.pdf",
+      "file_id": "16471d90c6b648339154fc98da0ae524",
+      "file_name": "Sources-Sought-Technical-Description-Services-Printers.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148759,
+      "sha256": "dfd62d4df92c5028236811822c58e298443f2ae11d4a1c2e42d8c399236dd2a7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/81ff9febafa943e4acdce792d6cd7f63/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e730e887f829e403af4e185607ff3cec58e1e189d2fc59b2ebcd6e06a6656566.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e730e887f829e403af4e185607ff3cec58e1e189d2fc59b2ebcd6e06a6656566.pdf",
+      "file_id": "81ff9febafa943e4acdce792d6cd7f63",
+      "file_name": "Printer+Services+AFSBn+Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 152960,
+      "sha256": "e730e887f829e403af4e185607ff3cec58e1e189d2fc59b2ebcd6e06a6656566"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5be66e3c5a1410b9fe659d546db8567/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6466b8c258da284c2160bb1c4afbba38f371a4dc0215437fa65a2a40ae64ba6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6466b8c258da284c2160bb1c4afbba38f371a4dc0215437fa65a2a40ae64ba6f.pdf",
+      "file_id": "d5be66e3c5a1410b9fe659d546db8567",
+      "file_name": "AFSBn-Bliss+MFD+PWS+V.2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 414798,
+      "sha256": "6466b8c258da284c2160bb1c4afbba38f371a4dc0215437fa65a2a40ae64ba6f"
+    }
+  ],
+  "_mirror_hash": "382a2c1dc6c1f2ea9ef53db5e666795d7a44aec8bbfb7da50f0380f18aa2cfaf",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.023138+00:00"
+}

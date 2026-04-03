@@ -1,0 +1,46 @@
+{
+  "id": "sam-e4bebae2d3bd4521b125e475adf15ea5",
+  "title": "Music and Radio Data and Analytics Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e4bebae2d3bd4521b125e475adf15ea5",
+  "opportunity_url": "https://sam.gov/opp/e4bebae2d3bd4521b125e475adf15ea5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e4bebae2d3bd4521b125e475adf15ea5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e4bebae2d3bd4521b125e475adf15ea5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HQ0516-FY-26-0005",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE MEDIA ACTIVITY (DMA).HQ DEFENSE MEDIA ACTIVITY",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e4bebae2d3bd4521b125e475adf15ea5",
+  "detail_text": "The DWIA requires a service to provide weekly reports and analytics on U.S. radio stations airplay and music data. This information will be used to support various mission-critical activities. By procuring a service that provides this level of industry-standard data, the DWIA will be able to perform analyses and make assessments with the same level of fidelity and insight used by professionals at the forefront of the commercial radio industry. The scope of this requirement encompasses all tasks associated with the collection, processing, analysis, and delivery of U.S. music and radio airplay data. The contractor shall provide a robust online platform, detailed datasets, and summary reports that cover a broad range of U.S. radio markets, music genres, and consumption methods (sales and streaming). The service shall be the contractor’s standard commercial offering, provided to the Government without modification.",
+  "detail_text_length": 924,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fe79860577844439ba20ad8a851b5e3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fe79860577844439ba20ad8a851b5e3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8668c9709f0852ba95c59d73de508c894138f796da1880129d8b162c4942e671.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8668c9709f0852ba95c59d73de508c894138f796da1880129d8b162c4942e671.pdf",
+      "file_id": "0fe79860577844439ba20ad8a851b5e3",
+      "file_name": "Source+Sought+Notice+HQ0516-FY-26-0005.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 231427,
+      "sha256": "8668c9709f0852ba95c59d73de508c894138f796da1880129d8b162c4942e671"
+    }
+  ],
+  "_mirror_hash": "156a90a21a891d802a5a3cb3d09acd671f4f126b21d40f31e08c0ecb8f1bf813",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.157229+00:00"
+}

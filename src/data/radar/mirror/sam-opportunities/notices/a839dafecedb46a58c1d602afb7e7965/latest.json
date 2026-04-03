@@ -1,0 +1,57 @@
+{
+  "id": "sam-a839dafecedb46a58c1d602afb7e7965",
+  "title": "1099 Replacement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a839dafecedb46a58c1d602afb7e7965",
+  "opportunity_url": "https://sam.gov/opp/a839dafecedb46a58c1d602afb7e7965/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a839dafecedb46a58c1d602afb7e7965/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a839dafecedb46a58c1d602afb7e7965",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HQ0423-26-XXXX",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE FINANCE AND ACCOUNTING SERVICE (DFAS).DEFENSE FINANCE AND ACCOUNTING SVC",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a839dafecedb46a58c1d602afb7e7965",
+  "detail_text": "The purpose of this RFI is to identify qualified vendors and their potential solutions for a comprehensive, modern software platform to replace the legacy Filing Information Returns Electronically (FIRE) system. .Please see attached RFI document and Performance Work Statement for details. This RFI was reopened to amend the required FEDRAMP accreditation from Impact Level 5 to Impact Level 4.",
+  "detail_text_length": 394,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e92e610327b473fa0e853917d44cee2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc384fc664a439793867059498efd6a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7e92e610327b473fa0e853917d44cee2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/67e8953157ec864c15f177def35dcdcc670731327c066e8e0a2f71737ffca2cc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/67e8953157ec864c15f177def35dcdcc670731327c066e8e0a2f71737ffca2cc.docx",
+      "file_id": "7e92e610327b473fa0e853917d44cee2",
+      "file_name": "RFI+for+1099+Pro_v1+-CO1.30.26-+final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 61755,
+      "sha256": "67e8953157ec864c15f177def35dcdcc670731327c066e8e0a2f71737ffca2cc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc384fc664a439793867059498efd6a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d60a0022ef9b928914a1fecab0dd1814798e516e2ba892606c32062aad6bca5e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d60a0022ef9b928914a1fecab0dd1814798e516e2ba892606c32062aad6bca5e.docx",
+      "file_id": "bcc384fc664a439793867059498efd6a",
+      "file_name": "Draft1099+Replacemenrt+Performance+Work+Statement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 44384,
+      "sha256": "d60a0022ef9b928914a1fecab0dd1814798e516e2ba892606c32062aad6bca5e"
+    }
+  ],
+  "_mirror_hash": "fd5ba4de55089d49eadcee9b8c0fc6fc7eadb50e9a0e562dfebda37da020f0ca",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.066105+00:00"
+}

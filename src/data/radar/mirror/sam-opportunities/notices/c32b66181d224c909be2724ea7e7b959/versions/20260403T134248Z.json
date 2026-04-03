@@ -1,0 +1,56 @@
+{
+  "id": "sam-c32b66181d224c909be2724ea7e7b959",
+  "title": "Intent to Sole Source OEM Paul Mueller Company Plate Pack",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c32b66181d224c909be2724ea7e7b959",
+  "opportunity_url": "https://sam.gov/opp/c32b66181d224c909be2724ea7e7b959/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c32b66181d224c909be2724ea7e7b959/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c32b66181d224c909be2724ea7e7b959",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0051",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c32b66181d224c909be2724ea7e7b959",
+  "detail_text": "NAVSUP Fleet Logistics Center Puget Sound intends to solicit and award a firm-fixed-price Supply-type Purchase Order for OEM Paul Mueller Company Plate Pack on a SOLE SOURCE basis. See attached solicitation posted 04/02/2026 for requirements. All responses shall be submitted prior to the solicitation closing date on page 1, box 8",
+  "detail_text_length": 331,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6270a33aae9e43ddb5dde7e542db82d8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f85ac1e8283a4c98a00912d92dd1af86/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6270a33aae9e43ddb5dde7e542db82d8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a0b1f46198396b521a905e58f542de4891474f408521297d72949c32f8549a2c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a0b1f46198396b521a905e58f542de4891474f408521297d72949c32f8549a2c.pdf",
+      "file_id": "6270a33aae9e43ddb5dde7e542db82d8",
+      "file_name": "2.1.1+26Q0051+SOL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1842772,
+      "sha256": "a0b1f46198396b521a905e58f542de4891474f408521297d72949c32f8549a2c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f85ac1e8283a4c98a00912d92dd1af86/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bcb5161b7e19f48fe9d204e1084eb71d629cda37abdb62aa1c4d85644af43616.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bcb5161b7e19f48fe9d204e1084eb71d629cda37abdb62aa1c4d85644af43616.pdf",
+      "file_id": "f85ac1e8283a4c98a00912d92dd1af86",
+      "file_name": "1.3.1+20260003372+SS-BNJ+-Redacted-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 641291,
+      "sha256": "bcb5161b7e19f48fe9d204e1084eb71d629cda37abdb62aa1c4d85644af43616"
+    }
+  ],
+  "_mirror_hash": "5386f819ae56969fca3099d34f8a137ca384e04c7c2d484a93d0490984605b6c",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.920323+00:00"
+}

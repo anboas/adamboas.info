@@ -1,0 +1,57 @@
+{
+  "id": "sam-b80e4d1ae6664c829e822812c6e09f13",
+  "title": "Hearing Enhancement Devices",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b80e4d1ae6664c829e822812c6e09f13",
+  "opportunity_url": "https://sam.gov/opp/b80e4d1ae6664c829e822812c6e09f13/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b80e4d1ae6664c829e822812c6e09f13/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b80e4d1ae6664c829e822812c6e09f13",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M6785426I5408",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b80e4d1ae6664c829e822812c6e09f13",
+  "detail_text": "This is a Sources Sought Notice/Request for Information (RFI). Product Manager Combat Service Support Equipment (PdM CSSE), Marine Corps Systems Command (MARCORSYSCOM), is conducting market research to identify potential sources capable of providing a suite of Hearing Enhancement Devices (NAICS - 334220 and PSC - 8470 apply). Please see the attachment for additional information. *Note - 03 April 2026 - This post was updated to include the attached Q&As.",
+  "detail_text_length": 457,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf48811c61ff45b7b4573b7425ec9672/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1a83703e1e14cd28edd2e0aab384279/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf48811c61ff45b7b4573b7425ec9672/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/91671b0c888004b96d793878fbecc93b21263ed59ec5d228d533dbbdc894c7a7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/91671b0c888004b96d793878fbecc93b21263ed59ec5d228d533dbbdc894c7a7.pdf",
+      "file_id": "cf48811c61ff45b7b4573b7425ec9672",
+      "file_name": "26I5408-QAs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 109072,
+      "sha256": "91671b0c888004b96d793878fbecc93b21263ed59ec5d228d533dbbdc894c7a7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1a83703e1e14cd28edd2e0aab384279/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/72cec7a0722640e5ad83f494ce376686001cb17fe6b37f8d29ec764e1a3487a6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/72cec7a0722640e5ad83f494ce376686001cb17fe6b37f8d29ec764e1a3487a6.pdf",
+      "file_id": "f1a83703e1e14cd28edd2e0aab384279",
+      "file_name": "M6785426I5408-RFI_HEARING+ENHANCEMENT+DEVICES.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148944,
+      "sha256": "72cec7a0722640e5ad83f494ce376686001cb17fe6b37f8d29ec764e1a3487a6"
+    }
+  ],
+  "_mirror_hash": "d5eca635a5cbcadbb0dfcf242a7d45ddd37903fdd28369d3e6533acb258349d0",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.093338+00:00"
+}

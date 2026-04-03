@@ -1,0 +1,47 @@
+{
+  "id": "sam-4a694f13dacb417885b87a0215333d8b",
+  "title": "Sources Sought - HNC Furniture Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a694f13dacb417885b87a0215333d8b",
+  "opportunity_url": "https://sam.gov/opp/4a694f13dacb417885b87a0215333d8b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4a694f13dacb417885b87a0215333d8b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4a694f13dacb417885b87a0215333d8b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "HNCFurnitureProgram",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.SCO ALEXANDRIA.SUPPORT CENTER HUNTSVILLE.W2V6 USA ENG SPT CTR HUNTSVIL",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4a694f13dacb417885b87a0215333d8b",
+  "detail_text": "SUBJECT: Sources Sought – HNC Furniture Program 1. The Army Corps of Engineers Huntsville Center (USACE), Furniture Section, is requesting information for the HNC Furniture program. 2. Please review the excel spreadsheet provided. Fill out the excel spreadsheet Provide any supporting documentation required. 3. Please provide this information no later than 15 April 2026 NLT 5:00 PM CST. 4. The POC for this RFI is the undersigned which can be reached at teddy.hayes@usace.army.mil or 256-895-1095.",
+  "detail_text_length": 499,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9d92a954daa42a6afee3326e3fcab02/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9d92a954daa42a6afee3326e3fcab02/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5729113330fb7b538dc2a4d898e5405d3c945ebbd5df530b3f074344e98ff2c4.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5729113330fb7b538dc2a4d898e5405d3c945ebbd5df530b3f074344e98ff2c4.xlsx",
+      "file_id": "d9d92a954daa42a6afee3326e3fcab02",
+      "file_name": "Sources+Sought+-+HNC+Furniture+Program.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23607,
+      "sha256": "5729113330fb7b538dc2a4d898e5405d3c945ebbd5df530b3f074344e98ff2c4"
+    }
+  ],
+  "_mirror_hash": "4d57dbf145b682ff5d1fcee228e3fd31b219380457560acf30ebc513cfb4f46e",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.940252+00:00"
+}

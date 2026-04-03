@@ -1,0 +1,45 @@
+{
+  "id": "sam-2063fd19dcc74d7fba942311a2052267",
+  "title": "ALIDADE, TELESCOPIC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2063fd19dcc74d7fba942311a2052267",
+  "opportunity_url": "https://sam.gov/opp/2063fd19dcc74d7fba942311a2052267/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2063fd19dcc74d7fba942311a2052267/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2063fd19dcc74d7fba942311a2052267",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QX060",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2063fd19dcc74d7fba942311a2052267",
+  "detail_text": "ALIDADE, TELESCOPIC FMS Case NU: SR-P-P-MAK Quantity: 4 NSN: 6605-01-090-8292 Part Number: 803-5002390THRU5002398",
+  "detail_text_length": 113,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/692e6004c6354917ac08491a9987d312/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/692e6004c6354917ac08491a9987d312/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/41fe97e5f4336e3e1ca31a12db31afd970c2d9f76ce54ed536af07fa3393d310.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/41fe97e5f4336e3e1ca31a12db31afd970c2d9f76ce54ed536af07fa3393d310.pdf",
+      "file_id": "692e6004c6354917ac08491a9987d312",
+      "file_name": "3.01_RFQ_N0010426QX060_N0010425PR26422.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1191434,
+      "sha256": "41fe97e5f4336e3e1ca31a12db31afd970c2d9f76ce54ed536af07fa3393d310"
+    }
+  ],
+  "_mirror_hash": "85fb27746f197a4789ca284924e7d0fd8e2face5f9c0c269e5be2f17fa10d090",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.976397+00:00"
+}

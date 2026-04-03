@@ -1,0 +1,57 @@
+{
+  "id": "sam-9e87768cc0a74623bf47f73b6b2753a9",
+  "title": "MTAC Recrystallization Equipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9e87768cc0a74623bf47f73b6b2753a9",
+  "opportunity_url": "https://sam.gov/opp/9e87768cc0a74623bf47f73b6b2753a9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9e87768cc0a74623bf47f73b6b2753a9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9e87768cc0a74623bf47f73b6b2753a9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "IASS-AFRL-PZLEQ-2026-0011",
+  "agency_path": "DEPT OF DEFENSE",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9e87768cc0a74623bf47f73b6b2753a9",
+  "detail_text": "This requirement is for MTAC Recrystallization Equipment at Eglin Air Force Base, FL. NOTICE OF INTENT TO AWARD SINGLE SOURCE: The NAICS Code is 423490. Air Force Research Laboratory Munitions Directorate (AFRL/RWTE), Eglin AFB, FL contemplates awarding a single source purchase order as authorized by FAR 6.302-1(a)(2) to Mettler-Toledo AutoChem. Please see the attachments to this notice for additional details. This Notice of Intent is not a request for competitive proposals. A determination by the Government for the competition of this requirement based upon responses to this notice is solely within the discretion of the Government. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement. Any responses should be e-mailed to the buyer at EMAIL no later than 10 April 2026 at 9:00 AM Eastern Time. Only responses received by this date will be considered. All questions should be directed to the buyer at michael.hornberger.1@us.af.mil. Be advised that all correspondence sent via e-mail shall contain a subject line that reads “MTAC Recrystallization Equipment” Note that e-mail filters at Wright-Patterson AFB are designed to filter e-mails without subject lines or with suspicious subject lines or contents (i.e., .exe, or .zip files). Therefore, if this subject line is not included, the e-mail may not get through the e-mail filters. Also be advised that .zip or .exe files are not allowable attachments and may be deleted by the e-mail filters at Wright-Patterson AFB. If sending attachments with e-mail, ensure only .PDF, .doc, docx, xls, or .xsls documents are sent. The e-mail filter may delete any other form of attachments.",
+  "detail_text_length": 1708,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9beb066434f44bd292dfd8a1055be340/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c059e4ed6a6549f59a3b8342294c4039/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9beb066434f44bd292dfd8a1055be340/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e70c08205418edb432338a6667164aad727fe8dfde4a390b76704b6482bdb849.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e70c08205418edb432338a6667164aad727fe8dfde4a390b76704b6482bdb849.pdf",
+      "file_id": "9beb066434f44bd292dfd8a1055be340",
+      "file_name": "SSJ+-Redacted-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 236023,
+      "sha256": "e70c08205418edb432338a6667164aad727fe8dfde4a390b76704b6482bdb849"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c059e4ed6a6549f59a3b8342294c4039/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c4e859fc4dc23fc12e9cb36c163da9d7191e7c33ce262bb3bf3269c4569f4979.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c4e859fc4dc23fc12e9cb36c163da9d7191e7c33ce262bb3bf3269c4569f4979.pdf",
+      "file_id": "c059e4ed6a6549f59a3b8342294c4039",
+      "file_name": "MRD+-+Recrystallization+Equipment.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145163,
+      "sha256": "c4e859fc4dc23fc12e9cb36c163da9d7191e7c33ce262bb3bf3269c4569f4979"
+    }
+  ],
+  "_mirror_hash": "3b5e285341f9a3996a7f058d5f726e6e32afd96cfc7e682badd2f115dd3de226",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.078325+00:00"
+}

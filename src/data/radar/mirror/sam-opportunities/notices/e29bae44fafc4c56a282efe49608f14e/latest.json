@@ -1,0 +1,46 @@
+{
+  "id": "sam-e29bae44fafc4c56a282efe49608f14e",
+  "title": "Retirement Calculator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e29bae44fafc4c56a282efe49608f14e",
+  "opportunity_url": "https://sam.gov/opp/e29bae44fafc4c56a282efe49608f14e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e29bae44fafc4c56a282efe49608f14e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e29bae44fafc4c56a282efe49608f14e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DOC-PS-26-0001",
+  "agency_path": "COMMERCE, DEPARTMENT OF.OFFICE OF THE SECRETARY.DEPT OF COMMERCE SSPO",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e29bae44fafc4c56a282efe49608f14e",
+  "detail_text": "The United States Department of Commerce - has the need of a comprehensive commercial retirement benefits calculator platform for up to 45,000 unique employee profiles that is web-based with capabilities to obtain data from the National Finance Center or any third party to accurately compute various complex estimates needed in assisting employees with their retirement decisions. The purpose of the calculator is to electronically calculate various types of employee retirement benefits, retirement case management, and provide metrics/reports on benefits under the Civil Service Retirement System (CSRS), Civil Service Retirement System Offset (CSRS-Offset), Federal Employees Retirement System (FERS/FERS-RAE/FERS-FRAE), the Federal Thrift Savings Plan (TSP) and the Social Security Administration (SSA) program. The software must provide pre-populated forms, provide financial/retirement planning, provide retirement and benefits educational tools via videos, downloadable documents or other media. The software will include internal tools for TSP calculations, SSA calculations and for HR Specialist to make retirement coverage determinations and Federal Erroneous Retirement Coverage Corrections Act (FERCCA) determinations. HR Specialists must be able to view a Federal employee’s record to assist employees inquiring about their Federal retirement and benefits. The calculator must be customizable to direct employees to a third party contactor. Additionally, the application generates approved versions of forms required for processing retirements and benefits that meet standards and guidance set forth by the Office of Personnel Management (OPM), Department of Labor - Office of Workers’ Compensation Program, Federal Employee Group Life Insurance (FEGLI), Thrift Savings Plan, National Finance Center (NFC) and Internal Revenue Service (IRS).",
+  "detail_text_length": 1855,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cb22fd82a8b489cacfc9b59887dcae6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cb22fd82a8b489cacfc9b59887dcae6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4ffddd1d2f7e900a92bfff7922d8e25c4442199d7782a05a2583c2f49f79773c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4ffddd1d2f7e900a92bfff7922d8e25c4442199d7782a05a2583c2f49f79773c.pdf",
+      "file_id": "3cb22fd82a8b489cacfc9b59887dcae6",
+      "file_name": "Problem+Statement+Template_Retirement+Calculator.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 131038,
+      "sha256": "4ffddd1d2f7e900a92bfff7922d8e25c4442199d7782a05a2583c2f49f79773c"
+    }
+  ],
+  "_mirror_hash": "a78c86197688bb508ea60509e840968f39348013f7d1d5f6b0214f1f1b35064f",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.079931+00:00"
+}

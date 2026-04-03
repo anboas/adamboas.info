@@ -1,0 +1,57 @@
+{
+  "id": "sam-ed056324069b4bc6b59bca02ac2fd85e",
+  "title": "L-39 Albatross Aerial Performance Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ed056324069b4bc6b59bca02ac2fd85e",
+  "opportunity_url": "https://sam.gov/opp/ed056324069b4bc6b59bca02ac2fd85e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ed056324069b4bc6b59bca02ac2fd85e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ed056324069b4bc6b59bca02ac2fd85e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA442726AS1001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4427  60 CONS LGC",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ed056324069b4bc6b59bca02ac2fd85e",
+  "detail_text": "This is a sources sought for L-39 Albatross Aerial Performance Services. Please see all attachments. This is not a solicitation and all information provided will be used for market research purposes",
+  "detail_text_length": 198,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3590c1f88a364e19b24fefd84167d7f1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffefda84593549d8bc217982e7ec4def/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3590c1f88a364e19b24fefd84167d7f1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ef9eda0f33118ed932f051e9e5f968d011726bd8c850981a1abe656afd502332.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ef9eda0f33118ed932f051e9e5f968d011726bd8c850981a1abe656afd502332.docx",
+      "file_id": "3590c1f88a364e19b24fefd84167d7f1",
+      "file_name": "Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 38104,
+      "sha256": "ef9eda0f33118ed932f051e9e5f968d011726bd8c850981a1abe656afd502332"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffefda84593549d8bc217982e7ec4def/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/afb82b5c171df1b06971f29f5e012316ee2210786400ddec0d80deae1b4cd3b9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/afb82b5c171df1b06971f29f5e012316ee2210786400ddec0d80deae1b4cd3b9.docx",
+      "file_id": "ffefda84593549d8bc217982e7ec4def",
+      "file_name": "Attachment+1+-+L39+PERFORMANCE+WORK+STATEMENT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28783,
+      "sha256": "afb82b5c171df1b06971f29f5e012316ee2210786400ddec0d80deae1b4cd3b9"
+    }
+  ],
+  "_mirror_hash": "a8fbd0cc8b05c0200782eeb7a25d7b67f14b63091d473502ea839bc7bdcf982b",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.022605+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-de3c06208a6041418beb7a21b99a3b5e",
+  "title": "Security System Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de3c06208a6041418beb7a21b99a3b5e",
+  "opportunity_url": "https://sam.gov/opp/de3c06208a6041418beb7a21b99a3b5e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/de3c06208a6041418beb7a21b99a3b5e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "de3c06208a6041418beb7a21b99a3b5e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W9124R26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.W6DP PEO IEW & S ABERDEEN",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de3c06208a6041418beb7a21b99a3b5e",
+  "detail_text": "SECURITY SYSTEM MAINTENANCE.",
+  "detail_text_length": 28,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e84908fe057418cadc7fa83931badd4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f00dfcde57754989850d65bff17629ef/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e84908fe057418cadc7fa83931badd4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c00977c4690872cd0455567c4f411dedad72fb515b04c47d2b92c41d15e0f37a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c00977c4690872cd0455567c4f411dedad72fb515b04c47d2b92c41d15e0f37a.pdf",
+      "file_id": "5e84908fe057418cadc7fa83931badd4",
+      "file_name": "Revised+5K+Facility+Security+Sys+Material+and+Labor+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 139148,
+      "sha256": "c00977c4690872cd0455567c4f411dedad72fb515b04c47d2b92c41d15e0f37a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f00dfcde57754989850d65bff17629ef/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2045695e97fc8917c819246608fa08518ae9f3fa4a14e928e2b874b601e87745.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2045695e97fc8917c819246608fa08518ae9f3fa4a14e928e2b874b601e87745.pdf",
+      "file_id": "f00dfcde57754989850d65bff17629ef",
+      "file_name": "5K+Security+System_SOW_TSS_5000_Bradford.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 110984,
+      "sha256": "2045695e97fc8917c819246608fa08518ae9f3fa4a14e928e2b874b601e87745"
+    }
+  ],
+  "_mirror_hash": "a7fedb8e6ba9f9c70f953888f6d467ffe8814b10b82e2427cbd756f43b9e3343",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.046060+00:00"
+}

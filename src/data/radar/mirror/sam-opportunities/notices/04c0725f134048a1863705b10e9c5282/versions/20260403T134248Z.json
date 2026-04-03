@@ -1,0 +1,46 @@
+{
+  "id": "sam-04c0725f134048a1863705b10e9c5282",
+  "title": "Pack Liner, Main",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04c0725f134048a1863705b10e9c5282",
+  "opportunity_url": "https://sam.gov/opp/04c0725f134048a1863705b10e9c5282/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/04c0725f134048a1863705b10e9c5282/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "04c0725f134048a1863705b10e9c5282",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPE1C1-26-R-0079",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CLOTHING & TEXTILE.DLA TROOP SUPPORT",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04c0725f134048a1863705b10e9c5282",
+  "detail_text": "View attachment for complete details of set-asides.",
+  "detail_text_length": 51,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/167cc090ee1f42d584bfe8154d5c2288/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/167cc090ee1f42d584bfe8154d5c2288/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6aa10440370aed7f66f5f4f5f1bd67293f52720e50c66b5a2483d86fe4e8da5e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6aa10440370aed7f66f5f4f5f1bd67293f52720e50c66b5a2483d86fe4e8da5e.docx",
+      "file_id": "167cc090ee1f42d584bfe8154d5c2288",
+      "file_name": "Pack+Liner+Main+Synopsis.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23183,
+      "sha256": "6aa10440370aed7f66f5f4f5f1bd67293f52720e50c66b5a2483d86fe4e8da5e"
+    }
+  ],
+  "_mirror_hash": "8c97dceb83194bccf313dd801e92abea706f589f4f56c521e3a22bb816a1d8c4",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.132445+00:00"
+}

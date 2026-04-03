@@ -1,0 +1,46 @@
+{
+  "id": "sam-6b5d4cfcc4b94a519b6726808df509d3",
+  "title": "P8_Priced_BOA_G0002",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6b5d4cfcc4b94a519b6726808df509d3",
+  "opportunity_url": "https://sam.gov/opp/6b5d4cfcc4b94a519b6726808df509d3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6b5d4cfcc4b94a519b6726808df509d3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6b5d4cfcc4b94a519b6726808df509d3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "P8_Priced_BOA_G0002",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6b5d4cfcc4b94a519b6726808df509d3",
+  "detail_text": "Defense Logistics Agency (DLA) Weapons Support (Richmond) is issuing this Sources Sought Notice as a means of conducting market research to determine if other companies can manufacture (or legitimately obtaining) the attached 33 NSNs (see PDF attachment). THERE IS ONE APPROVED SOURCE FOR THESE ITEMS: BOEING, CAGE 0PXV4. NSNs found not to be sole source will not be considered for future procurement under this Sources Sought. This Sources Sought Notice is for informational purposes only. This is not a request for an offer. This does not constitute as a solicitation and shall not be construed as a commitment by the Government. Responses in any form are not offers and the Government is under no obligation to award a contract as a result of this announcement. No funds are available to pay for preparation of responses to this announcement. Any information submitted by respondents to this technical description is strictly voluntary. If your company desires to be reviewed and qualified as an \"Approved Source\" for this item, please submit an application package through the Source Approval Request (SAR) Program. A SAR package contains all the technical data needed to demonstrate that the prospective contractor can competently manufacture the product to the same level of quality, or better, than the required item. The onus is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item, which DLA Aviation is procuring. These items require Government Source Approval prior to award. THERE IS ONE APPROVED SOURCE FOR THESE ITEMS: BOEING, CAGE 0PXV4. If you are not an approved source, you must submit a Source Approval Request (SAR). DLA Weapons Support can only receive Source Approval Requests (SAR) through DoDSafe link due to internet/web safety concerns per Engineering. To submit your SAR, please send an email to: dlaavnsmallbus@dla.mil, subject line \"Request a SAR Drop Off\". Include CAGE code, the NSN, and the email address where you want to receive the DoDSafe link. After DLA Aviation Small Business receives your email request, a DoDSafe drop off will be returned, where you can download your SAR file and return.",
+  "detail_text_length": 2193,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef75d24fb3894ec8afa84931623f2ea5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef75d24fb3894ec8afa84931623f2ea5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6e136116e88c54364613933299dca2650d2330a914b3da161fedf0ccaa595dd4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6e136116e88c54364613933299dca2650d2330a914b3da161fedf0ccaa595dd4.pdf",
+      "file_id": "ef75d24fb3894ec8afa84931623f2ea5",
+      "file_name": "P8+NIIN+Tech+List.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 55821,
+      "sha256": "6e136116e88c54364613933299dca2650d2330a914b3da161fedf0ccaa595dd4"
+    }
+  ],
+  "_mirror_hash": "4af6dfd4aaee41d91c50757cebd60be2f58bf26bf48771e4ba93a54e1db3d51f",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.045549+00:00"
+}

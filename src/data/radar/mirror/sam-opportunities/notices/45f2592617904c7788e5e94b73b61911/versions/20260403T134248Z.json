@@ -1,0 +1,46 @@
+{
+  "id": "sam-45f2592617904c7788e5e94b73b61911",
+  "title": "H--NOTICE OF INTENT TO AWARD A SOLE SOURCE CONTRACT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=45f2592617904c7788e5e94b73b61911",
+  "opportunity_url": "https://sam.gov/opp/45f2592617904c7788e5e94b73b61911/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/45f2592617904c7788e5e94b73b61911/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "45f2592617904c7788e5e94b73b61911",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DOIAFBO260040",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF INDIAN AFFAIRS.INDIAN EDUCATION ACQUISITION OFFICE",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=45f2592617904c7788e5e94b73b61911",
+  "detail_text": "NOTICE OF INTENT TO AWARD A SOLE SOURCE CONTRACT. THIS IS NOT A REQUEST FOR COMPETITVE PROPOSALS. The Bureau of Indian Affairs (BIA) on behalf of the Bureau of Indian Education (BIE) has entered into a sole source Firm-Fixed Price contract with API Group Life Safey USA, LLC, under the authority of FAR 13.106-1(b)(1) sole Source. Urgent request for fire alarm pump inspection at Sanostee Day School. The anticipated delivery is April 30, 2026. No solicitation is available, and no technical questions will be answered regarding this requirement. The NAICS code for this acquisition is 561621. The point of contact for this requirement is Charmaine Williams-James, Contracting Officer, via email at charmaine.williams-james@bie.edu.",
+  "detail_text_length": 732,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b9f8fb748914617ad2eb58018acedd3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b9f8fb748914617ad2eb58018acedd3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/664c3ffa3851805e93a03d1eb089d3460c7d0fee3a1094451aa0584c9dceb39d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/664c3ffa3851805e93a03d1eb089d3460c7d0fee3a1094451aa0584c9dceb39d.pdf",
+      "file_id": "5b9f8fb748914617ad2eb58018acedd3",
+      "file_name": "A17_J_A_Under_the_SAT_FAR_13_-2-_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 277169,
+      "sha256": "664c3ffa3851805e93a03d1eb089d3460c7d0fee3a1094451aa0584c9dceb39d"
+    }
+  ],
+  "_mirror_hash": "cfe2763f3153c2d436dcb294d3bd349230e014dcb16fabb60033dc15099c5146",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.006509+00:00"
+}

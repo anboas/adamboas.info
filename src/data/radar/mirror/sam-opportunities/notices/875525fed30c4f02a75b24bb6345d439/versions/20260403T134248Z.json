@@ -1,0 +1,46 @@
+{
+  "id": "sam-875525fed30c4f02a75b24bb6345d439",
+  "title": "Barcode Scanners",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=875525fed30c4f02a75b24bb6345d439",
+  "opportunity_url": "https://sam.gov/opp/875525fed30c4f02a75b24bb6345d439/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/875525fed30c4f02a75b24bb6345d439/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "875525fed30c4f02a75b24bb6345d439",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26026Q0503",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.260-NETWORK CONTRACT OFFICE 20 (36C260)",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=875525fed30c4f02a75b24bb6345d439",
+  "detail_text": "15 Ultra-Rugged 1D/2D Barcode Scanners (cordless) with stand PN: CT0223",
+  "detail_text_length": 71,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae0442df37f1482d9df0a66ebabf4daf/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae0442df37f1482d9df0a66ebabf4daf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f0248ede7c72eac1de6e7aba80052047d746a1c5a4686c449cb1774fca707c9d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f0248ede7c72eac1de6e7aba80052047d746a1c5a4686c449cb1774fca707c9d.docx",
+      "file_id": "ae0442df37f1482d9df0a66ebabf4daf",
+      "file_name": "36C26026Q0503+-+Bardcode+scanners+-+Sources+sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23346,
+      "sha256": "f0248ede7c72eac1de6e7aba80052047d746a1c5a4686c449cb1774fca707c9d"
+    }
+  ],
+  "_mirror_hash": "926a55d600ef9e40e57af48c09e9b20a09fa24007245434e639e2fe656f0e175",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.109874+00:00"
+}

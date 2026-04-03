@@ -1,0 +1,78 @@
+{
+  "id": "sam-b23544ddbf1b472b88bc2d8ee65b970b",
+  "title": "Security Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b23544ddbf1b472b88bc2d8ee65b970b",
+  "opportunity_url": "https://sam.gov/opp/b23544ddbf1b472b88bc2d8ee65b970b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b23544ddbf1b472b88bc2d8ee65b970b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b23544ddbf1b472b88bc2d8ee65b970b",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6883626QS046",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b23544ddbf1b472b88bc2d8ee65b970b",
+  "detail_text": "Amemdment 0001 was posted 3 April 2026 extending the due date to 6 April 2026. The Contractor shall perform preventative maintenance/repair on one Message Board (Trailer), one K9 Hauler S8 (Trailer) and one Light Cart per quarter (i.e., four times per year).",
+  "detail_text_length": 258,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/197354ab913848b6a37ba42f451c13fd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b03547051f545de8d901892195d13c7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a126963a9c847389ed0e24cbd77a7f5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a50bc2214ef4dc99d6c5a13510b0808/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/197354ab913848b6a37ba42f451c13fd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ec307244ac1ee9a03ec148778e4626ac9b6bfd5a58075662c434e90bb5b434a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ec307244ac1ee9a03ec148778e4626ac9b6bfd5a58075662c434e90bb5b434a.pdf",
+      "file_id": "197354ab913848b6a37ba42f451c13fd",
+      "file_name": "1.05+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 208056,
+      "sha256": "1ec307244ac1ee9a03ec148778e4626ac9b6bfd5a58075662c434e90bb5b434a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b03547051f545de8d901892195d13c7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/baa27b39d58121c923b03cab90e2dc2f1f9193465ad9ae46f6b47ab7a7f85719.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/baa27b39d58121c923b03cab90e2dc2f1f9193465ad9ae46f6b47ab7a7f85719.pdf",
+      "file_id": "1b03547051f545de8d901892195d13c7",
+      "file_name": "1.21+WD.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 74486,
+      "sha256": "baa27b39d58121c923b03cab90e2dc2f1f9193465ad9ae46f6b47ab7a7f85719"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a126963a9c847389ed0e24cbd77a7f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/320bd32c645421475f70140336e0072b12f2f096e543e4ecaf0f4697d2a3f457.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/320bd32c645421475f70140336e0072b12f2f096e543e4ecaf0f4697d2a3f457.pdf",
+      "file_id": "2a126963a9c847389ed0e24cbd77a7f5",
+      "file_name": "2.03_N6883626QS046.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1888997,
+      "sha256": "320bd32c645421475f70140336e0072b12f2f096e543e4ecaf0f4697d2a3f457"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a50bc2214ef4dc99d6c5a13510b0808/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/798cf7871da9ec6437bfb4d43ea3d14c2d6d65b453819d6a18c2143c48784706.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/798cf7871da9ec6437bfb4d43ea3d14c2d6d65b453819d6a18c2143c48784706.pdf",
+      "file_id": "2a50bc2214ef4dc99d6c5a13510b0808",
+      "file_name": "2.05_Amendment_A0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 609394,
+      "sha256": "798cf7871da9ec6437bfb4d43ea3d14c2d6d65b453819d6a18c2143c48784706"
+    }
+  ],
+  "_mirror_hash": "2fe1c149ee2c5dd5ddd18f97a2e9e1ea3e96a1689ab31d88fc1ebfad4d2fd30b",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.915216+00:00"
+}

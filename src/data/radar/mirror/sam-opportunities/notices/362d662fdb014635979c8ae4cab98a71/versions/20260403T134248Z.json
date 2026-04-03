@@ -1,0 +1,112 @@
+{
+  "id": "sam-362d662fdb014635979c8ae4cab98a71",
+  "title": "Milli-Kelvin Scanning Probe Microscope",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=362d662fdb014635979c8ae4cab98a71",
+  "opportunity_url": "https://sam.gov/opp/362d662fdb014635979c8ae4cab98a71/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/362d662fdb014635979c8ae4cab98a71/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "362d662fdb014635979c8ae4cab98a71",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "BSA473768",
+  "agency_path": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.BROOKHAVEN NATL LAB -DOE CONTRACTOR",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=362d662fdb014635979c8ae4cab98a71",
+  "detail_text": "BSA is procuring a Milli-Kelvin Scanning Probe Microscope. The mK-SPM instrument, shall operate tuning-fork-based atomic force microscopy (TFAFM) and be designed to support optimum operation of scanning Microwave Impedance Microscopy (sMIM) and Scanning Resonator Microscopy (SRM) at a base temperature <= 20 mK inside a fully shielded low noise environment within high vacuum (HV).",
+  "detail_text_length": 382,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e4c033052dc4201b5ceb887e7d8df33/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a68a698c1f524316910d29a75c5c62df/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7f668bd000043bda44e413e38a98414/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a81a5061c8964f43aca80feaad6c8150/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4d02b28d8514d409605c5133ec4358c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee3359d679154532b61d3d5deb0fbc2d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f35221fab1354899b76538e47f0ba4e2/download"
+  ],
+  "resource_count": 7,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e4c033052dc4201b5ceb887e7d8df33/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4976a59b88c95a37b4537a189ef942cc981f72d44e77d06a1a0807ddd70da520.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4976a59b88c95a37b4537a189ef942cc981f72d44e77d06a1a0807ddd70da520.pdf",
+      "file_id": "5e4c033052dc4201b5ceb887e7d8df33",
+      "file_name": "B1+Enclosure+A+Draft+Contract.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9181129,
+      "sha256": "4976a59b88c95a37b4537a189ef942cc981f72d44e77d06a1a0807ddd70da520"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a68a698c1f524316910d29a75c5c62df/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8e2ef4f45328779e851855f7ed11c2cbebeb969afbfec82a683d17ec579e0df.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8e2ef4f45328779e851855f7ed11c2cbebeb969afbfec82a683d17ec579e0df.pdf",
+      "file_id": "a68a698c1f524316910d29a75c5c62df",
+      "file_name": "B1+Enclosure+B+AMS-FORM-050.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 922844,
+      "sha256": "a8e2ef4f45328779e851855f7ed11c2cbebeb969afbfec82a683d17ec579e0df"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7f668bd000043bda44e413e38a98414/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/adecd50787576f8311a96c827f952c421879011789afcd54920e2add9453ce88.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/adecd50787576f8311a96c827f952c421879011789afcd54920e2add9453ce88.pdf",
+      "file_id": "a7f668bd000043bda44e413e38a98414",
+      "file_name": "B1+473768+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 648122,
+      "sha256": "adecd50787576f8311a96c827f952c421879011789afcd54920e2add9453ce88"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a81a5061c8964f43aca80feaad6c8150/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53.pdf",
+      "file_id": "a81a5061c8964f43aca80feaad6c8150",
+      "file_name": "B1+Enclosure+E_W9+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 140815,
+      "sha256": "2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e4d02b28d8514d409605c5133ec4358c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d67fc5abae5af11df5d6168a60f7a7e7f27044efa63f660cb76c0e47a241ef6e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d67fc5abae5af11df5d6168a60f7a7e7f27044efa63f660cb76c0e47a241ef6e.pdf",
+      "file_id": "e4d02b28d8514d409605c5133ec4358c",
+      "file_name": "B1+Enclosure+F_W8+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 314634,
+      "sha256": "d67fc5abae5af11df5d6168a60f7a7e7f27044efa63f660cb76c0e47a241ef6e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee3359d679154532b61d3d5deb0fbc2d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/08b038003035473deeadeed3c58025a1bc618e57ea87beae77c93c87bedd04c1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/08b038003035473deeadeed3c58025a1bc618e57ea87beae77c93c87bedd04c1.docx",
+      "file_id": "ee3359d679154532b61d3d5deb0fbc2d",
+      "file_name": "B1+Enclosure+C+Quotation+Pricing+Sheet.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27952,
+      "sha256": "08b038003035473deeadeed3c58025a1bc618e57ea87beae77c93c87bedd04c1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f35221fab1354899b76538e47f0ba4e2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39163ce6b0bfb67a0bc0130cfc380cb7be9baefabb27f55bd0ea56014b1f8bf6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39163ce6b0bfb67a0bc0130cfc380cb7be9baefabb27f55bd0ea56014b1f8bf6.pdf",
+      "file_id": "f35221fab1354899b76538e47f0ba4e2",
+      "file_name": "B1+Enclosure+D+ACH+Authorization+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 116597,
+      "sha256": "39163ce6b0bfb67a0bc0130cfc380cb7be9baefabb27f55bd0ea56014b1f8bf6"
+    }
+  ],
+  "_mirror_hash": "91a9360803fa3c312700b1dc3982c74c0e4ee71455f8ade3dc00aff27db55bb8",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.138129+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-06a46ad7678b49ea9cf4edaeb6565922",
+  "title": "Autonomous Drone Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=06a46ad7678b49ea9cf4edaeb6565922",
+  "opportunity_url": "https://sam.gov/opp/06a46ad7678b49ea9cf4edaeb6565922/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/06a46ad7678b49ea9cf4edaeb6565922/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "06a46ad7678b49ea9cf4edaeb6565922",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CR-101-0017",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CRANE",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=06a46ad7678b49ea9cf4edaeb6565922",
+  "detail_text": "Request for Information: Any interested vendors must be CMMC Level 1 Self at the time of award. NSWC Crane is requesting multiple technical training courses for employees at all levels supporting the Drone Dominance Initiative. All training efforts will be completed in accordance with the Statement of Work.",
+  "detail_text_length": 308,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d8b6ec56efc42d090acb40698c8a20c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d8b6ec56efc42d090acb40698c8a20c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5b74566786a41fc07a2990abd9c8ee05d2b2db253a38f5debf416fe7da124965.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5b74566786a41fc07a2990abd9c8ee05d2b2db253a38f5debf416fe7da124965.docx",
+      "file_id": "8d8b6ec56efc42d090acb40698c8a20c",
+      "file_name": "A5_SOW+-+Drone+Warfare.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29837,
+      "sha256": "5b74566786a41fc07a2990abd9c8ee05d2b2db253a38f5debf416fe7da124965"
+    }
+  ],
+  "_mirror_hash": "7791ac3f9f1f4c664a8024b45c9ca72da8cd4f148477857524950fc4cc93efc3",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.861482+00:00"
+}

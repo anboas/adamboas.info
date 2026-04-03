@@ -1,0 +1,49 @@
+{
+  "id": "sam-a46dc5f34e714e7d8210e4529cb7f9e2",
+  "title": "ONR Innovation Industry Day (I2D): Power & Energy",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a46dc5f34e714e7d8210e4529cb7f9e2",
+  "opportunity_url": "https://sam.gov/opp/a46dc5f34e714e7d8210e4529cb7f9e2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a46dc5f34e714e7d8210e4529cb7f9e2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a46dc5f34e714e7d8210e4529cb7f9e2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": "N0001426SN003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a46dc5f34e714e7d8210e4529cb7f9e2",
+  "detail_text": "The primary goal of the I2D is to solicit direct feedback from industry. This event is a unique forum where the ONR Power & Energy Focus Area Lead will present science and technology (S&T) challenges projected over the next 15 years. ONR seeks to engage non-traditional, commercial, and innovative partners interested in addressing the Navy's future power and energy needs, particularly within Technology Readiness Levels (TRL) 1-6. Discussions will center on key research areas, including: Energy Storage, Power Generation, Thermal Management, and Power Distribution, Control & Resilience.",
+  "detail_text_length": 590,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87ccdfc893f44908ab4f92d6e7e670a2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87ccdfc893f44908ab4f92d6e7e670a2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9488d42ca1456d0bf372debcecbcdcaddee6819655a4e75ce899d25bff9ade78.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9488d42ca1456d0bf372debcecbcdcaddee6819655a4e75ce899d25bff9ade78.pdf",
+      "file_id": "87ccdfc893f44908ab4f92d6e7e670a2",
+      "file_name": "ONR+Innovation+Industry+Day+-I2D-+N0001426SN003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 322899,
+      "sha256": "9488d42ca1456d0bf372debcecbcdcaddee6819655a4e75ce899d25bff9ade78"
+    }
+  ],
+  "_mirror_hash": "65ba91a658243d9bb73c726c89268c9a6b5f588e726023fe9ca3ec969f93a937",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.865128+00:00"
+}

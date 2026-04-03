@@ -1,0 +1,47 @@
+{
+  "id": "sam-0650a6df58114a21baeead09b6e0cd81",
+  "title": "D30-0007 Maintenance Consoles",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0650a6df58114a21baeead09b6e0cd81",
+  "opportunity_url": "https://sam.gov/opp/0650a6df58114a21baeead09b6e0cd81/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0650a6df58114a21baeead09b6e0cd81/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0650a6df58114a21baeead09b6e0cd81",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "D30-0007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.COMMANDING OFFICER",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0650a6df58114a21baeead09b6e0cd81",
+  "detail_text": "Please see attached sources sought for information Only- RFI",
+  "detail_text_length": 60,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db45dd0872ff4a5c885fbd105fc49b8f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db45dd0872ff4a5c885fbd105fc49b8f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f6ca6945593bf0bffe1d5a467fb9ee353aec93e768d2c8122ea7cd7f106183a5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f6ca6945593bf0bffe1d5a467fb9ee353aec93e768d2c8122ea7cd7f106183a5.pdf",
+      "file_id": "db45dd0872ff4a5c885fbd105fc49b8f",
+      "file_name": "D30-0007_sources+sought+Maintenace+Consoles_04022026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169484,
+      "sha256": "f6ca6945593bf0bffe1d5a467fb9ee353aec93e768d2c8122ea7cd7f106183a5"
+    }
+  ],
+  "_mirror_hash": "23f827dbf1988cf60fa37fbc327feb499ad1e96f9105777ebda25a43f8863b04",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:00.878112+00:00"
+}

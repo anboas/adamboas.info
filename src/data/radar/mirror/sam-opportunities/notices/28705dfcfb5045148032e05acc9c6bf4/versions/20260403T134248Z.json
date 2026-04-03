@@ -1,0 +1,46 @@
+{
+  "id": "sam-28705dfcfb5045148032e05acc9c6bf4",
+  "title": "COMMERCIAL INTERNET SERVICE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28705dfcfb5045148032e05acc9c6bf4",
+  "opportunity_url": "https://sam.gov/opp/28705dfcfb5045148032e05acc9c6bf4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/28705dfcfb5045148032e05acc9c6bf4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "28705dfcfb5045148032e05acc9c6bf4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W56ZLW-26-Q-0008",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.0418 AQ HQ     CONTRACTING SUP",
+  "posted_date": "2026-04-02",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28705dfcfb5045148032e05acc9c6bf4",
+  "detail_text": "The contractor shall provide all personnel, equipment, supplies, facilities, transportation, tools, materials, supervision, and other items and non\u0002personal services necessary to provide Commercial Internet Service by a non-government provider for two (2) locations on Ft Bliss, Texas and the William Beaumont Army Medical Center campus (WBAMC) as defined in the performance work statement. Contractor will need to have a presence at Ft. Bliss proper or need to get Ft. Bliss access and perform this work. All work pertaining to the pathway for this service must be approved by WBAMC.",
+  "detail_text_length": 584,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87f68f8f27a44c22aaf85e0f73eeff08/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87f68f8f27a44c22aaf85e0f73eeff08/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c80a5a90928347139886f7be01d84db88d96ce7e0622dedaacfbfd61b6581a9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c80a5a90928347139886f7be01d84db88d96ce7e0622dedaacfbfd61b6581a9.docx",
+      "file_id": "87f68f8f27a44c22aaf85e0f73eeff08",
+      "file_name": "WBAMC+CWR+Commercial+Internet+PWS+March+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 96507,
+      "sha256": "7c80a5a90928347139886f7be01d84db88d96ce7e0622dedaacfbfd61b6581a9"
+    }
+  ],
+  "_mirror_hash": "baa2d5173e87188127719929e944de00e0a9099ffd99d807fe30ad8e85377f53",
+  "_mirror_run_id": "20260403T134248Z",
+  "_mirror_recorded_at": "2026-04-03T13:49:01.068489+00:00"
+}
