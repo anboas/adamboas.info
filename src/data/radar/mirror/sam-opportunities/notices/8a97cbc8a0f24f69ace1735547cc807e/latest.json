@@ -1,0 +1,46 @@
+{
+  "id": "sam-8a97cbc8a0f24f69ace1735547cc807e",
+  "title": "60 MXS Bauer Wheel Torque System and Assembly",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a97cbc8a0f24f69ace1735547cc807e",
+  "opportunity_url": "https://sam.gov/opp/8a97cbc8a0f24f69ace1735547cc807e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8a97cbc8a0f24f69ace1735547cc807e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8a97cbc8a0f24f69ace1735547cc807e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA442726QZ031",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4427  60 CONS LGC",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a97cbc8a0f24f69ace1735547cc807e",
+  "detail_text": "The 60th Maintenance Squadron at Travis AFB, CA has a brand name requirement for a Bauer Model 8071 Wheel Build-Up Stand, a Bauer Model 8731 Wheel Assembly Torque System, and associated Wheel Adapters. This equipment is essential for assembling multiple types of aircraft wheels. The current systems are obsolete or inoperative, and this new, integrated system is required to increase production capacity and ensure mission readiness. The purpose of this opportunity is to serve as a Request for Information (RFI) and is not an official solicitation for this requirement. The required equipment must meet the following general specifications: Wheel Build Up Stand: Must lift and align wheels with the torque system and be adjustable for wheel diameters of 16\"-24\" and tire diameters of 37\"-50\". Wheel Assembly Torque System: Must simultaneously torque two nuts with an accuracy of 2% at max torque, a torque angle accuracy of 1 degree, and a torque range of 45-225 ft/lbs. Additional Items: The requirement also includes a wheel lifting fixture, wheel adapters for C-5, C-17, and KC-46 aircraft, torque standard calibration equipment, on-site installation and training, and equipment warranty.",
+  "detail_text_length": 1193,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da8aec84ae9548f98104712dea30f628/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da8aec84ae9548f98104712dea30f628/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/706ce9df4065ee61c8ba1ffd7dafa75d814399c980fdd1136261c64c7a82a83b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/706ce9df4065ee61c8ba1ffd7dafa75d814399c980fdd1136261c64c7a82a83b.pdf",
+      "file_id": "da8aec84ae9548f98104712dea30f628",
+      "file_name": "1.+SoN+torque+system.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118000,
+      "sha256": "706ce9df4065ee61c8ba1ffd7dafa75d814399c980fdd1136261c64c7a82a83b"
+    }
+  ],
+  "_mirror_hash": "e0e574d2cf87dac015f7eb601d0e1460e5823b699558e3dce6fcb58af4157481",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.077365+00:00"
+}

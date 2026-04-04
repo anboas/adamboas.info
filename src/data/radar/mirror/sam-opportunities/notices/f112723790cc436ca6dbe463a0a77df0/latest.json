@@ -1,0 +1,68 @@
+{
+  "id": "sam-f112723790cc436ca6dbe463a0a77df0",
+  "title": "IASS - Pointwise",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f112723790cc436ca6dbe463a0a77df0",
+  "opportunity_url": "https://sam.gov/opp/f112723790cc436ca6dbe463a0a77df0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f112723790cc436ca6dbe463a0a77df0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f112723790cc436ca6dbe463a0a77df0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE RESEARCH LABORATORY",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f112723790cc436ca6dbe463a0a77df0",
+  "detail_text": "See attached IASS Memo, BOM and Sole Source Memo",
+  "detail_text_length": 48,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e62dd6c69424e50b65d4cc5645aecd4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b38a13838e8b45169aca132f0025ad57/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6094602084a48bcbf8221ca89ff18b2/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e62dd6c69424e50b65d4cc5645aecd4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3fb8cbf43b2ccf6fd19269050dcd2cdb21bc75bc3e1c343287a829eaae7906da.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3fb8cbf43b2ccf6fd19269050dcd2cdb21bc75bc3e1c343287a829eaae7906da.xlsx",
+      "file_id": "9e62dd6c69424e50b65d4cc5645aecd4",
+      "file_name": "BOM-822---RQVV---SoftwareMaintenance---PointwiseRenewal25.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11591,
+      "sha256": "3fb8cbf43b2ccf6fd19269050dcd2cdb21bc75bc3e1c343287a829eaae7906da"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b38a13838e8b45169aca132f0025ad57/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bba30ce47a3e1e61c04629617b71575bac4af35cec62fb769e1e5f1e5e828ae1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bba30ce47a3e1e61c04629617b71575bac4af35cec62fb769e1e5f1e5e828ae1.pdf",
+      "file_id": "b38a13838e8b45169aca132f0025ad57",
+      "file_name": "Fidelity+Pointwise+2026-02-11+Sole+Distributor+Letter+SIGNED-345204.15-+-1-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 104747,
+      "sha256": "bba30ce47a3e1e61c04629617b71575bac4af35cec62fb769e1e5f1e5e828ae1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6094602084a48bcbf8221ca89ff18b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5695978ea4424b9277b72b238536e43e4e539d5db094cd8ab17ec37ac2ac58f4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5695978ea4424b9277b72b238536e43e4e539d5db094cd8ab17ec37ac2ac58f4.docx",
+      "file_id": "f6094602084a48bcbf8221ca89ff18b2",
+      "file_name": "IASS+-+Pointwise+2026+-+Memo.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23990,
+      "sha256": "5695978ea4424b9277b72b238536e43e4e539d5db094cd8ab17ec37ac2ac58f4"
+    }
+  ],
+  "_mirror_hash": "bdf3399ec0fe122ad73e013aedbf4b94f29a5e1ffa1c90d45c2aa6ce0fae3cec",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:51.996377+00:00"
+}

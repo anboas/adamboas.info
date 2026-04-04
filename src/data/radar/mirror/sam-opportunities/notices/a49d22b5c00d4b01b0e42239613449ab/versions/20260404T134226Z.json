@@ -1,0 +1,57 @@
+{
+  "id": "sam-a49d22b5c00d4b01b0e42239613449ab",
+  "title": "CHUCK, AIR, INFLATING",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a49d22b5c00d4b01b0e42239613449ab",
+  "opportunity_url": "https://sam.gov/opp/a49d22b5c00d4b01b0e42239613449ab/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a49d22b5c00d4b01b0e42239613449ab/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a49d22b5c00d4b01b0e42239613449ab",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CM26071117_SOURCE_SOUGHT",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a49d22b5c00d4b01b0e42239613449ab",
+  "detail_text": "This is not a request for either a quote or proposal. This announcement is considered market research in accordance with FAR Part 10. The purpose of this synopsis is to identify qualified companies capable of performing on a solicitation for the NSN(s) listed in the spreadsheet. Note: ADQ(s) total is an estimate only and may change in the actual solicitation. Submittal Information All responsible sources are invited to respond. Interested firms should submit a brief capabilities statement that clearly demonstrates the ability to provide the items indicated. The capabilities brief should include, at a minimum, the following: Company name, address and point of contact with telephone, fax and email information. Company DUNS, CAGE Code, business size and socio-economic classification. The name and part number of the manufacturer whose product you would be supplying (city and state). Brochures and descriptive literature for the products described above, invoices, if considered to be a commercial item. The statement of interest and capability should be forwarded to the Contract Specialist at Email: Edwin.caraballo@dla.mil. As this is only a request for information, companies may respond via email. Responses to this Request for Information (RFI) are not considered offers and cannot be accepted by the Government to form a binding contract. This RFI is for market research purposes only. Any information submitted is at the company's own expense. The Government will not reimburse respondents for any costs associated with submission of capability statements in connection with the market survey. Any information provided is voluntary. Fill out both the market survey questionnaire and spreadsheet to the best of your knowledge and return within five (7) business days. Negative responses (including the reason why you do not want to anticipate) also be returned within the desired timeframe so we can make a timely determination on whether a Long-Term Contract acquisition is possible. Upon receipt of a completed Market Survey, we will further develop the package and forward it to our Buyers. The information contained in the survey and spreadsheet will be used to generate realistic and beneficial solicitation. DLA Weapons Support are considering a solicitation, and subsequent Award, of an Indefinite Quantity Contract (IQC) for the item(s) on the attached Market Research spreadsheet. The resultant IQC could potentially range from 1 to 5 years in length. The resultant solicitation will be issued either in accordance with FAR Part 13.5 – Simplified Procedures for Certain Commercial Products and Commercial Services or FAR Part 12 – Acquisition of Commercial Products and Commercial Services. In order for to determine if an item is commercial, documentation is needed (i.e., commercial invoices which show sales history to non-government entities. Based on that documentation, the Government will determine if your items are commercial per the definition found at FAR 2.101(b). Commercial invoices will help the Contracting Officer make that determination. Submit the proof of commerciality (commercial invoices along with the market research package. Note: Without adequate proof of commerciality, the acquisition will have to be issues as a non-commercial (FAR Part 15) procurement, which may require Certified Cost and Pricing Data. All interested parties are invited to express your interest in this procurement by completing the attached Market Survey and returning to the Acquisition Specialist, Edwin Caraballo via email at Edwin.caraballo@dla.mil.",
+  "detail_text_length": 3578,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6587e661ff7648c6816e6c4809e6110c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9822a4ce1f44af0976086a376f00537/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6587e661ff7648c6816e6c4809e6110c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/76782c2cc32b37f5ddc242fdcd18d0e251eb338aafdb50dc233a64ee88a42950.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/76782c2cc32b37f5ddc242fdcd18d0e251eb338aafdb50dc233a64ee88a42950.xlsx",
+      "file_id": "6587e661ff7648c6816e6c4809e6110c",
+      "file_name": "CM26071117+Market+Research+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 197971,
+      "sha256": "76782c2cc32b37f5ddc242fdcd18d0e251eb338aafdb50dc233a64ee88a42950"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9822a4ce1f44af0976086a376f00537/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0edd4591cdc0adbcfe8749002b174b507e46d7c4b0e8e7ea07e1c4d443f0dfce.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0edd4591cdc0adbcfe8749002b174b507e46d7c4b0e8e7ea07e1c4d443f0dfce.docx",
+      "file_id": "c9822a4ce1f44af0976086a376f00537",
+      "file_name": "CM26071117+Market+Research+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45326,
+      "sha256": "0edd4591cdc0adbcfe8749002b174b507e46d7c4b0e8e7ea07e1c4d443f0dfce"
+    }
+  ],
+  "_mirror_hash": "826bb9ade0e060bd3de1c7f5eba2f000f89c9b149516efbe0719049bf15a0f5d",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.041577+00:00"
+}

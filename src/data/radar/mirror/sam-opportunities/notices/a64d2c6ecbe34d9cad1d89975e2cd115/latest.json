@@ -1,0 +1,57 @@
+{
+  "id": "sam-a64d2c6ecbe34d9cad1d89975e2cd115",
+  "title": "Secure Conference Room Management",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a64d2c6ecbe34d9cad1d89975e2cd115",
+  "opportunity_url": "https://sam.gov/opp/a64d2c6ecbe34d9cad1d89975e2cd115/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a64d2c6ecbe34d9cad1d89975e2cd115/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a64d2c6ecbe34d9cad1d89975e2cd115",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "632674177",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).DEFENSE INFORMATION SYSTEMS AGENCY",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a64d2c6ecbe34d9cad1d89975e2cd115",
+  "detail_text": "DISA is seeking information from potential sources for: support coordination and management of secure meeting spaces for executive level classified meetings in support of DISA. This support minimally includes executive-level / VIP reception, guest services, executive support, meeting management, calendar management, office administration, and enforcing security parameters. Reference the attached draft Performance Work Statement (PWS) for details regarding required services. The Contractor providing these essential services, as determined by the DISA, shall be prepared to continue such services during periods of national emergencies and crisis. See attached Sources Sought Notice and draft Performance Work Statement.",
+  "detail_text_length": 724,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad4522ffeda449daa134030182b15c2a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e09f12e833ec4234a724b4c87737d80f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad4522ffeda449daa134030182b15c2a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf3141769c94176bbc1fcbc7e124d839445589bab10c0c537004113d3e09827d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf3141769c94176bbc1fcbc7e124d839445589bab10c0c537004113d3e09827d.pdf",
+      "file_id": "ad4522ffeda449daa134030182b15c2a",
+      "file_name": "Sources+Sought+Notice+-+Secure+Conference+Room+Management+-Final-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 205508,
+      "sha256": "bf3141769c94176bbc1fcbc7e124d839445589bab10c0c537004113d3e09827d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e09f12e833ec4234a724b4c87737d80f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f180b156c74d830e280ad6949b6177e6deef9ba4f2c3bd24ccb0bd572ff6deae.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f180b156c74d830e280ad6949b6177e6deef9ba4f2c3bd24ccb0bd572ff6deae.pdf",
+      "file_id": "e09f12e833ec4234a724b4c87737d80f",
+      "file_name": "Draft+PWS+for+Secure+Conference+Room+Management+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 349536,
+      "sha256": "f180b156c74d830e280ad6949b6177e6deef9ba4f2c3bd24ccb0bd572ff6deae"
+    }
+  ],
+  "_mirror_hash": "7299375ec6eb0f826029adf3ade78445a70a339c98f4c88e2f28a9884ddd12bf",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.118630+00:00"
+}

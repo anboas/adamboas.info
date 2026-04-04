@@ -1,0 +1,46 @@
+{
+  "id": "sam-edfb9865dc454626aec38d2eb997f157",
+  "title": "Motor Control",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edfb9865dc454626aec38d2eb997f157",
+  "opportunity_url": "https://sam.gov/opp/edfb9865dc454626aec38d2eb997f157/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/edfb9865dc454626aec38d2eb997f157/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "edfb9865dc454626aec38d2eb997f157",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRDL1-26-R-0090",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edfb9865dc454626aec38d2eb997f157",
+  "detail_text": "This is a Sources Sought notice for Motor Control. Responses will assist the Government in planning it's acquisition strategy for a potential future acquisition. The Government is not committed to issue a solicitation or award a contract as a result of this announcement. DLA Land - Warren is seeking qualified and capable potential vendors. Since this is a sources-sought synopsis and not a solicitation for receipt of proposals or quotations, the Government does not encourage questions concerning market research. Please see attachment titled \"Motor Control - Sources Sought Notice\" for additional details.",
+  "detail_text_length": 609,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6078111cc4a348bdb1ee0da706d04108/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6078111cc4a348bdb1ee0da706d04108/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/17638f716d98c57a7ff384ead9701c1587f9be5ef2ad5989ce6da5d9adbd17fd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/17638f716d98c57a7ff384ead9701c1587f9be5ef2ad5989ce6da5d9adbd17fd.docx",
+      "file_id": "6078111cc4a348bdb1ee0da706d04108",
+      "file_name": "Motor+Control+_++Sources+Sought+Notice.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24606,
+      "sha256": "17638f716d98c57a7ff384ead9701c1587f9be5ef2ad5989ce6da5d9adbd17fd"
+    }
+  ],
+  "_mirror_hash": "d6b06e47f45eb6617c76e5a2a8af571965d12cdb3ff4b0c0002594cd5b99ceb6",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.112943+00:00"
+}

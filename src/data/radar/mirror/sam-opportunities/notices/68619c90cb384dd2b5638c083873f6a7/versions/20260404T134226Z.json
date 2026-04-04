@@ -1,0 +1,68 @@
+{
+  "id": "sam-68619c90cb384dd2b5638c083873f6a7",
+  "title": "Gantry Crane Repair Parts",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68619c90cb384dd2b5638c083873f6a7",
+  "opportunity_url": "https://sam.gov/opp/68619c90cb384dd2b5638c083873f6a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/68619c90cb384dd2b5638c083873f6a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "68619c90cb384dd2b5638c083873f6a7",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA910126QB029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68619c90cb384dd2b5638c083873f6a7",
+  "detail_text": "Please see attached Notice of Intent (NOI).",
+  "detail_text_length": 43,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33ee572b2c314774adcada8dca9fa96c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71c70b0ef4184bd69a63ef7e50210fce/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c42506e8bef7404b90fb36f24992d14a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33ee572b2c314774adcada8dca9fa96c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea213b16339b5002080ab934b5efb1e028c7b51aa2e1ec03b31fe7ede0b8796c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea213b16339b5002080ab934b5efb1e028c7b51aa2e1ec03b31fe7ede0b8796c.pdf",
+      "file_id": "33ee572b2c314774adcada8dca9fa96c",
+      "file_name": "Solicitation+-+FA910126QB029.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 445772,
+      "sha256": "ea213b16339b5002080ab934b5efb1e028c7b51aa2e1ec03b31fe7ede0b8796c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71c70b0ef4184bd69a63ef7e50210fce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c35ca116905123d67908790469a4d23aca996be3f8335539849ba9e98029e8b6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c35ca116905123d67908790469a4d23aca996be3f8335539849ba9e98029e8b6.pdf",
+      "file_id": "71c70b0ef4184bd69a63ef7e50210fce",
+      "file_name": "Notice+of+Intent+to+Sole+Source+to+Shuttlelift+FINAL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 227619,
+      "sha256": "c35ca116905123d67908790469a4d23aca996be3f8335539849ba9e98029e8b6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c42506e8bef7404b90fb36f24992d14a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d787060b7fd522bc15af58a3db8773ff3837726f9f6fabc15e40f4ad4a7876c4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d787060b7fd522bc15af58a3db8773ff3837726f9f6fabc15e40f4ad4a7876c4.pdf",
+      "file_id": "c42506e8bef7404b90fb36f24992d14a",
+      "file_name": "J_A+Gantry+Crane+Repair+FINAL_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70298,
+      "sha256": "d787060b7fd522bc15af58a3db8773ff3837726f9f6fabc15e40f4ad4a7876c4"
+    }
+  ],
+  "_mirror_hash": "2cb13f765232210ad88c1d1b2d9d53913b308715a0b4044c51a4565cbb93bcda",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:51.984672+00:00"
+}

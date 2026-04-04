@@ -1,0 +1,57 @@
+{
+  "id": "sam-33001116ea444e84b727e546fb158c93",
+  "title": "Whiteboard Refresh Maxwell",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33001116ea444e84b727e546fb158c93",
+  "opportunity_url": "https://sam.gov/opp/33001116ea444e84b727e546fb158c93/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/33001116ea444e84b727e546fb158c93/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "33001116ea444e84b727e546fb158c93",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA330026RFI0007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3300  42 CONS CC",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33001116ea444e84b727e546fb158c93",
+  "detail_text": "Please see attached Statement of Requirements and Sources Sought!",
+  "detail_text_length": 65,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b5579d0acd6408e96fb4ce877374dec/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e48dff95c73436cb05dbbb9b359f109/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b5579d0acd6408e96fb4ce877374dec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1d45d5fd38d5a88f28e1369c07a3c8cd2f30a9ff87111d090a29661d02cc3a62.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1d45d5fd38d5a88f28e1369c07a3c8cd2f30a9ff87111d090a29661d02cc3a62.pdf",
+      "file_id": "0b5579d0acd6408e96fb4ce877374dec",
+      "file_name": "Whiteboard+SS+SAM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 113081,
+      "sha256": "1d45d5fd38d5a88f28e1369c07a3c8cd2f30a9ff87111d090a29661d02cc3a62"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e48dff95c73436cb05dbbb9b359f109/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/315f1e40fb8af88533b3fdd2827d6b2b63c6cf5d48a27c83b85733cca42b339e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/315f1e40fb8af88533b3fdd2827d6b2b63c6cf5d48a27c83b85733cca42b339e.pdf",
+      "file_id": "1e48dff95c73436cb05dbbb9b359f109",
+      "file_name": "Statement+of+Requirements_WhiteBoards_Refresh.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 216201,
+      "sha256": "315f1e40fb8af88533b3fdd2827d6b2b63c6cf5d48a27c83b85733cca42b339e"
+    }
+  ],
+  "_mirror_hash": "0adf77e7af599a830fca20728f62fad5ffd3fabd68e15b172d17b0e1542c5ca9",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.059020+00:00"
+}

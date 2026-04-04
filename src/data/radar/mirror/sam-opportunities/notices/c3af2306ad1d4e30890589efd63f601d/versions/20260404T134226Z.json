@@ -1,0 +1,68 @@
+{
+  "id": "sam-c3af2306ad1d4e30890589efd63f601d",
+  "title": "Federal Occupational Health (FOH) Private Provider Network (FOHNet)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3af2306ad1d4e30890589efd63f601d",
+  "opportunity_url": "https://sam.gov/opp/c3af2306ad1d4e30890589efd63f601d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c3af2306ad1d4e30890589efd63f601d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c3af2306ad1d4e30890589efd63f601d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PSC348614",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION (ASA).ASA OFFICE OF THE ASSISTANT SECRETARY FOR ADMINISTRATION",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3af2306ad1d4e30890589efd63f601d",
+  "detail_text": "This is a request for information (RFI) notice. This RFI is NOT a solicitation for proposals, proposal abstracts, or quotations. The purpose of this RFI is to obtain knowledge and information on potential vendor interest and capability for project planning purposes. Project Description: The purpose of this requirement will be to acquire professional occupational health services through a nationwide Private Provider Network (PPN) to support Program Support Center (PSC), Federal Occupational Health (FOH) under the Department of Health and Human Services (HHS). The nationwide PPN includes four regions. Services will be performed in the 50 United States plus; Guam, Northern Mariana Islands, American Samoa, Puerto Rico and Virgin Islands. The requirement provides integrated Occupational Health and Safety (OHS) services throughout the Federal Government. Please see the attached RFI and documents for more information and for submitting a response to this RFI.",
+  "detail_text_length": 966,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/20c72b5d47e24d839d1b78e861574ec0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f87d8d964604641a2e589fc896731a5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec111055379049ea95796a84a4d56115/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/20c72b5d47e24d839d1b78e861574ec0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4ce029f4f36fe44caaff36c41f798e3d0a31633291f13aeaccbc3c07e0fd75ca.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4ce029f4f36fe44caaff36c41f798e3d0a31633291f13aeaccbc3c07e0fd75ca.xlsx",
+      "file_id": "20c72b5d47e24d839d1b78e861574ec0",
+      "file_name": "RFI+Questions+Spreadsheet_04032026.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25219,
+      "sha256": "4ce029f4f36fe44caaff36c41f798e3d0a31633291f13aeaccbc3c07e0fd75ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f87d8d964604641a2e589fc896731a5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1b62493e201976e690c5921520f1398fa7a9ceec84146b561aa4ebcb23e3137f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1b62493e201976e690c5921520f1398fa7a9ceec84146b561aa4ebcb23e3137f.pdf",
+      "file_id": "6f87d8d964604641a2e589fc896731a5",
+      "file_name": "RFI+FOHNet_04032026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 163337,
+      "sha256": "1b62493e201976e690c5921520f1398fa7a9ceec84146b561aa4ebcb23e3137f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ec111055379049ea95796a84a4d56115/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bc86706a51620be9457323dd4f23e732a672b055b7cd22df0cd461d22cb3343c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bc86706a51620be9457323dd4f23e732a672b055b7cd22df0cd461d22cb3343c.pdf",
+      "file_id": "ec111055379049ea95796a84a4d56115",
+      "file_name": "PWS+DRAFT_04032026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1116109,
+      "sha256": "bc86706a51620be9457323dd4f23e732a672b055b7cd22df0cd461d22cb3343c"
+    }
+  ],
+  "_mirror_hash": "89b14c7eb5ae8936402d0d04aec0540ecb9110c1a58b77e6c494b9461efbb044",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.158902+00:00"
+}

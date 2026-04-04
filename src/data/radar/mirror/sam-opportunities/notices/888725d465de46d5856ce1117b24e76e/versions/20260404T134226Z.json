@@ -1,0 +1,67 @@
+{
+  "id": "sam-888725d465de46d5856ce1117b24e76e",
+  "title": "EV34 Camp Lejeune UST O&M UST 13 Site Closure UST 11 (Restricted RAOMAC)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=888725d465de46d5856ce1117b24e76e",
+  "opportunity_url": "https://sam.gov/opp/888725d465de46d5856ce1117b24e76e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/888725d465de46d5856ce1117b24e76e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "888725d465de46d5856ce1117b24e76e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4008526R0078",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC MID-ATLANTIC.NAVFACSYSCOM MID-ATLANTIC",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=888725d465de46d5856ce1117b24e76e",
+  "detail_text": "The purpose of this contract task order is to provide program management and support for the UST program at Camp Lejeune.",
+  "detail_text_length": 121,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4549393458aa4841839f4aff4ffb5f43/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5722ee356be842188bbf3c528ed397a0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1f1f36755764091a8ea1894c458bdec/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4549393458aa4841839f4aff4ffb5f43/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1f124ba870c9b04dd1d156c0acdcd71d235dd591f398c21517384ce59a06e6f3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1f124ba870c9b04dd1d156c0acdcd71d235dd591f398c21517384ce59a06e6f3.pdf",
+      "file_id": "4549393458aa4841839f4aff4ffb5f43",
+      "file_name": "N4008526R0078+Amendment+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 195488,
+      "sha256": "1f124ba870c9b04dd1d156c0acdcd71d235dd591f398c21517384ce59a06e6f3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5722ee356be842188bbf3c528ed397a0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/489f1688fab9d24a3609d4b761cdaf252a3b479d08d73d6302cdfecc7ed9fb8c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/489f1688fab9d24a3609d4b761cdaf252a3b479d08d73d6302cdfecc7ed9fb8c.pdf",
+      "file_id": "5722ee356be842188bbf3c528ed397a0",
+      "file_name": "ATTACHMENT+1+PIEE+Vendor+Access+Ins..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 521498,
+      "sha256": "489f1688fab9d24a3609d4b761cdaf252a3b479d08d73d6302cdfecc7ed9fb8c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1f1f36755764091a8ea1894c458bdec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c9287284804fe8789e2a335b5ca06fe5accac7fcfeaf3990869641533b38f174.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c9287284804fe8789e2a335b5ca06fe5accac7fcfeaf3990869641533b38f174.pdf",
+      "file_id": "f1f1f36755764091a8ea1894c458bdec",
+      "file_name": "ATTACHMENT+5+Wage+Determination+2015-4389.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 61705,
+      "sha256": "c9287284804fe8789e2a335b5ca06fe5accac7fcfeaf3990869641533b38f174"
+    }
+  ],
+  "_mirror_hash": "c0adde63e38600c988884f02e097b93bffaf477d36ba7e832a65afedb6d1a812",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:51.899228+00:00"
+}

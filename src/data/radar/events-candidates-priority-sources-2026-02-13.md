@@ -1,7 +1,7 @@
 # Radar Candidates from New Priority Lists (2026-02-13)
 
 Total imported candidates: 0
-Skipped existing (same title/year): 35
+Skipped existing (same title/year): 36
 Scraper errors tolerated: 0
 
 ## Added events

@@ -1,0 +1,46 @@
+{
+  "id": "sam-f6b5bee2c9344bde9a46b213438ac455",
+  "title": "SwitchPressure_End_Item_F110_NSN_5930012154689PR_PN_1274M99P01",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6b5bee2c9344bde9a46b213438ac455",
+  "opportunity_url": "https://sam.gov/opp/f6b5bee2c9344bde9a46b213438ac455/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f6b5bee2c9344bde9a46b213438ac455/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f6b5bee2c9344bde9a46b213438ac455",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601394",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6b5bee2c9344bde9a46b213438ac455",
+  "detail_text": "See Attached Document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3ea79b6d747420e8beb470bbad4e200/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3ea79b6d747420e8beb470bbad4e200/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7978a3166a86831b5121501a5772a2535d2c9d7df726b9b0bbfc52e8c8a57637.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7978a3166a86831b5121501a5772a2535d2c9d7df726b9b0bbfc52e8c8a57637.pdf",
+      "file_id": "d3ea79b6d747420e8beb470bbad4e200",
+      "file_name": "MRSSS_FD20302601394.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2140950,
+      "sha256": "7978a3166a86831b5121501a5772a2535d2c9d7df726b9b0bbfc52e8c8a57637"
+    }
+  ],
+  "_mirror_hash": "d56aa30f4cb33bef6507880363a369c251e1fd00031fb3ad037e06f3828a0de5",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.057071+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-689e756eb67f4da0b52e491e95b04c96",
+  "title": "5680--CONSTRUCTION SUPPLY AND MATERIALS FOR THE KCVAMC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=689e756eb67f4da0b52e491e95b04c96",
+  "opportunity_url": "https://sam.gov/opp/689e756eb67f4da0b52e491e95b04c96/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/689e756eb67f4da0b52e491e95b04c96/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "689e756eb67f4da0b52e491e95b04c96",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C25526Q0298",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=689e756eb67f4da0b52e491e95b04c96",
+  "detail_text": "Dept. of Veterans Affairs, Network Contract Office (NCO) 15 intends to release Request for Quotes (RFQ) 36C25526Q0298on sam.gov for General Construction Related Supplies and Materials for the construction \"In-House Construction\" projects at the Kansas City VA Medical Center.",
+  "detail_text_length": 275,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/049e456b0fa649cebf86aae5bb681659/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/049e456b0fa649cebf86aae5bb681659/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/569f4c10e99910ab4561cd0c8c99d517db18209fa7dbc291566253045f75d3ba.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/569f4c10e99910ab4561cd0c8c99d517db18209fa7dbc291566253045f75d3ba.docx",
+      "file_id": "049e456b0fa649cebf86aae5bb681659",
+      "file_name": "36C25526Q0298_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23510,
+      "sha256": "569f4c10e99910ab4561cd0c8c99d517db18209fa7dbc291566253045f75d3ba"
+    }
+  ],
+  "_mirror_hash": "69d668c190f8af460acdd85d6bdbce5e06ab1847ee9defefe55942d86d76c34c",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.082430+00:00"
+}

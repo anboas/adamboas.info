@@ -1,0 +1,46 @@
+{
+  "id": "sam-c1b7b01d5d054b75b5e04d9dc8466eab",
+  "title": "6515--Surgical Instruments",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1b7b01d5d054b75b5e04d9dc8466eab",
+  "opportunity_url": "https://sam.gov/opp/c1b7b01d5d054b75b5e04d9dc8466eab/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c1b7b01d5d054b75b5e04d9dc8466eab/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c1b7b01d5d054b75b5e04d9dc8466eab",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0594",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1b7b01d5d054b75b5e04d9dc8466eab",
+  "detail_text": "See attached document for full details.",
+  "detail_text_length": 39,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cd3f218ee3e4a728f313e391e381379/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cd3f218ee3e4a728f313e391e381379/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/75fb12118663c49f1a2243e59c7c5fd10980e33403fd5facb6dbf8b72402886e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/75fb12118663c49f1a2243e59c7c5fd10980e33403fd5facb6dbf8b72402886e.docx",
+      "file_id": "3cd3f218ee3e4a728f313e391e381379",
+      "file_name": "36C26226Q0594.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14375,
+      "sha256": "75fb12118663c49f1a2243e59c7c5fd10980e33403fd5facb6dbf8b72402886e"
+    }
+  ],
+  "_mirror_hash": "c3c493d862a1c9fef40d59bfa2038201293d119430fed8c9006dba0b9c16d9a6",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.010132+00:00"
+}

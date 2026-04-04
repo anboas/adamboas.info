@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-04-03T13:40:33.558089+00:00
+Generated: 2026-04-04T13:40:32.992878+00:00
 
 - Total: 19
 - OK: 12
@@ -19,12 +19,12 @@ Generated: 2026-04-03T13:40:33.558089+00:00
 | SAME Events | official_calendar | 200 | no | 6 | 9 | https://www.same.org/events/ |  |
 | ASD Events (Defense & Security) | aggregator | 200 | yes | 81 | 177 | https://www.asdevents.com/defense-security |  |
 | Military Expos | aggregator | 200 | no | 177 | 86 | https://www.militaryexpos.com/ |  |
-| Marine Military Expos | aggregator | 200 | yes | 19 | 15 | https://marinemilitaryexpos.com/ |  |
+| Marine Military Expos | aggregator | 200 | yes | 19 | 17 | https://marinemilitaryexpos.com/ |  |
 | Potomac Officers Club GovCon Events | aggregator | 200 | yes | 122 | 237 | https://www.potomacofficersclub.com/govcon-events/ |  |
 | GovCIO Events | aggregator | 200 | no | 28 | 69 | https://govciomedia.com/events/ |  |
 | NDIA Events | constrained_official | 200 | yes | 0 | 0 | https://www.ndia.org/events |  |
 | NDIA SpecialOps26 | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/SpecialOps26 |  |
 | 36th Annual NDIA Special Operations Symposium | one_off_event | 200 | yes | 0 | 0 | https://www.ndia.org/events/2026/2/17/36th-annual-ndia-special-operations-symposium |  |
-| Federal AI Forum 2026 | one_off_event | 200 | no | 31 | 17 | https://govciomedia.com/federal-ai-forum/ |  |
+| Federal AI Forum 2026 | one_off_event | 200 | no | 35 | 17 | https://govciomedia.com/federal-ai-forum/ |  |
 | AI Summit 2026 | one_off_event | 200 | no | 55 | 56 | https://govciomedia.com/ai-summit-2026/ |  |
 | GovEvents Calendar | aggregator_discovery | 200 | no | 0 | 0 | https://www.govevents.com/calendar.php?s=1 |  |

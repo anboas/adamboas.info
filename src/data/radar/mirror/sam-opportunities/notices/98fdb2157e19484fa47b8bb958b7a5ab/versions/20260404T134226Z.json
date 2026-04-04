@@ -1,0 +1,46 @@
+{
+  "id": "sam-98fdb2157e19484fa47b8bb958b7a5ab",
+  "title": "ALE-50 Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98fdb2157e19484fa47b8bb958b7a5ab",
+  "opportunity_url": "https://sam.gov/opp/98fdb2157e19484fa47b8bb958b7a5ab/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/98fdb2157e19484fa47b8bb958b7a5ab/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "98fdb2157e19484fa47b8bb958b7a5ab",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8522-26-RFI-ALE-50",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8522  AFSC PZABB",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98fdb2157e19484fa47b8bb958b7a5ab",
+  "detail_text": "This market survey is being conducted to identify potential sources that may possess the expertise , capabilities , and experience to meet the requirements for qualification and repair of the ALE-50 Chassis, Launcher Controller, and Control Dispenser for use by United States Air Force (USAF) personnel.",
+  "detail_text_length": 303,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc5eee1ba7ae46a8a0ec5711de896aa4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc5eee1ba7ae46a8a0ec5711de896aa4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3823ed08a74f1ffacaa057223b220690374b1d92d68bf37d2bb11901b21b60b5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3823ed08a74f1ffacaa057223b220690374b1d92d68bf37d2bb11901b21b60b5.pdf",
+      "file_id": "fc5eee1ba7ae46a8a0ec5711de896aa4",
+      "file_name": "ALE-50+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 195542,
+      "sha256": "3823ed08a74f1ffacaa057223b220690374b1d92d68bf37d2bb11901b21b60b5"
+    }
+  ],
+  "_mirror_hash": "cf584ebeb37508c5f2bde4d021f8e8c5983944d956e1da642bf364afdc563fc2",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.167827+00:00"
+}

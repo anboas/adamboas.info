@@ -1,0 +1,57 @@
+{
+  "id": "sam-0a391c7f7ba0407ab39f77822ebd2d16",
+  "title": "FMC Carswell Mobile Ultrasound and Echocardiogram",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a391c7f7ba0407ab39f77822ebd2d16",
+  "opportunity_url": "https://sam.gov/opp/0a391c7f7ba0407ab39f77822ebd2d16/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0a391c7f7ba0407ab39f77822ebd2d16/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0a391c7f7ba0407ab39f77822ebd2d16",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PR000235",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.FAO",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a391c7f7ba0407ab39f77822ebd2d16",
+  "detail_text": "THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY - Solicitations are not available at this time. This notice does not constitute a commitment by the Government. The information gathered from market research will be vital in the formation and set aside status of the solicitation. Should you be interested please Refer to the Attached Market Research Questionnaire and Draft Statement of Work, and complete and return the questionnaire to jholleman@bop.gov. This is a new requirement.",
+  "detail_text_length": 477,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aabc439e123d4fb7806a91f779ecdef7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee2d95c598b34913b158224ca3bff55a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aabc439e123d4fb7806a91f779ecdef7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/72eaf4ff6cad9d9d5b1fe2cc754b3c9251a614aa1e979a2da94f6d564449ddaf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/72eaf4ff6cad9d9d5b1fe2cc754b3c9251a614aa1e979a2da94f6d564449ddaf.pdf",
+      "file_id": "aabc439e123d4fb7806a91f779ecdef7",
+      "file_name": "Questionnaire+FMC+Carswell+2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 186878,
+      "sha256": "72eaf4ff6cad9d9d5b1fe2cc754b3c9251a614aa1e979a2da94f6d564449ddaf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee2d95c598b34913b158224ca3bff55a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fb484f7c6ed56d0b1fbe75f0b58cc2cb71cfbb326ec03ed3ad0ec1f6392b2808.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fb484f7c6ed56d0b1fbe75f0b58cc2cb71cfbb326ec03ed3ad0ec1f6392b2808.pdf",
+      "file_id": "ee2d95c598b34913b158224ca3bff55a",
+      "file_name": "5+-+SOW+Mobile+Ultrasounds+and+Echocardiogram+Services+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 129372,
+      "sha256": "fb484f7c6ed56d0b1fbe75f0b58cc2cb71cfbb326ec03ed3ad0ec1f6392b2808"
+    }
+  ],
+  "_mirror_hash": "35fdf905a0a2e06c36d1902e8caed64a969e1863ec7355e889a6c566d3d997bc",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.149546+00:00"
+}

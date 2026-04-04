@@ -1,0 +1,68 @@
+{
+  "id": "sam-92905007fcca47ce930e6c343b4fa439",
+  "title": "647 CES Architect and Engineer Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92905007fcca47ce930e6c343b4fa439",
+  "opportunity_url": "https://sam.gov/opp/92905007fcca47ce930e6c343b4fa439/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/92905007fcca47ce930e6c343b4fa439/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "92905007fcca47ce930e6c343b4fa439",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "AF2FY26A-E",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.PACIFIC AIR FORCES.FA5215 766 ESS PKP",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92905007fcca47ce930e6c343b4fa439",
+  "detail_text": "This notice is issued for market research and public announcement purposes to identify qualified architect-engineer (A-E) firms capable of performing professional design services for renovation projects at Joint Base Pearl Harbor-Hickam (JBPHH), Hawaii. This notice is not a solicitation and does not constitute a request for price proposals. Responses will be used by the Government to assess the availability of qualified firms and to help determine the appropriate acquisition strategy.",
+  "detail_text_length": 489,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ea96b89ad884280a8b08c4e9adcbec9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7eefabd3bfd048d88bf36225d9df0ec6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aeb36291f4304f0f9f6bfa5b67e8a8d5/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ea96b89ad884280a8b08c4e9adcbec9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c9c70eb6e5980aa7502c6de223e646cc26d305724029daa7236e7f6c4dcbb967.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c9c70eb6e5980aa7502c6de223e646cc26d305724029daa7236e7f6c4dcbb967.docx",
+      "file_id": "3ea96b89ad884280a8b08c4e9adcbec9",
+      "file_name": "A-E+Statement+of+Work+KNMD25-0006+-+JMPC_Rev2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52943,
+      "sha256": "c9c70eb6e5980aa7502c6de223e646cc26d305724029daa7236e7f6c4dcbb967"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7eefabd3bfd048d88bf36225d9df0ec6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f2b1e114ffad5d8e643c5698eb5f05fbfc6cecd271b20336d2d2a2ba055fc133.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f2b1e114ffad5d8e643c5698eb5f05fbfc6cecd271b20336d2d2a2ba055fc133.pdf",
+      "file_id": "7eefabd3bfd048d88bf36225d9df0ec6",
+      "file_name": "Sources_Sought_AE_JBPHH+v2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 149748,
+      "sha256": "f2b1e114ffad5d8e643c5698eb5f05fbfc6cecd271b20336d2d2a2ba055fc133"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aeb36291f4304f0f9f6bfa5b67e8a8d5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c1774cd2959593ec137cffe4492e351e6f762ef2b48570435582a422e378b31f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c1774cd2959593ec137cffe4492e351e6f762ef2b48570435582a422e378b31f.docx",
+      "file_id": "aeb36291f4304f0f9f6bfa5b67e8a8d5",
+      "file_name": "A-E+Statement+of+Work+KNMD25-0006+-+Ni-CAD_Rev2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 51211,
+      "sha256": "c1774cd2959593ec137cffe4492e351e6f762ef2b48570435582a422e378b31f"
+    }
+  ],
+  "_mirror_hash": "0f0e537bd1fca4c089385fe768dee2accad7191e893f677e05c6d427928dfba4",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.165404+00:00"
+}

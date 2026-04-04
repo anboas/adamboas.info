@@ -1,0 +1,57 @@
+{
+  "id": "sam-5711fc1f0f734b4a9ce673672be1bebd",
+  "title": "J035--Proj #TBD | Elevator Modernization | Elias/Prather",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5711fc1f0f734b4a9ce673672be1bebd",
+  "opportunity_url": "https://sam.gov/opp/5711fc1f0f734b4a9ce673672be1bebd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5711fc1f0f734b4a9ce673672be1bebd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5711fc1f0f734b4a9ce673672be1bebd",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C77626B0007",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.PCAC (36C776)",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5711fc1f0f734b4a9ce673672be1bebd",
+  "detail_text": "Elevator Modernization Nationwide Initiative.",
+  "detail_text_length": 45,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e932b08e9b14118ab0c90c9065e4c5f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa41271f71a5479ea3918e5be721bf06/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e932b08e9b14118ab0c90c9065e4c5f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/32addcf506f78516d04fb544775832c07a8c23b3f75669bae9451ba0dd9e87fd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/32addcf506f78516d04fb544775832c07a8c23b3f75669bae9451ba0dd9e87fd.pdf",
+      "file_id": "5e932b08e9b14118ab0c90c9065e4c5f",
+      "file_name": "36C77626B0007.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 95716,
+      "sha256": "32addcf506f78516d04fb544775832c07a8c23b3f75669bae9451ba0dd9e87fd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa41271f71a5479ea3918e5be721bf06/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/641b417d8bbb1d4799e54a742444fd3475fe195cb4a3d8a793b8ead5603decdc.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/641b417d8bbb1d4799e54a742444fd3475fe195cb4a3d8a793b8ead5603decdc.xlsx",
+      "file_id": "aa41271f71a5479ea3918e5be721bf06",
+      "file_name": "Attachment++ALL+CLINs_Location+and+Period+of+Performance.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14220,
+      "sha256": "641b417d8bbb1d4799e54a742444fd3475fe195cb4a3d8a793b8ead5603decdc"
+    }
+  ],
+  "_mirror_hash": "f09c72bdb0e47563253c777685bc7e55705d86dd61f4e8b5eb0b6f2d9ffe7051",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.135071+00:00"
+}

@@ -1,33 +1,31 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-03T13:49:25.948626+00:00
+Generated: 2026-04-04T13:46:16.164115+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/03/2026
+Posted range: 01/01/2026 -> 04/04/2026
 
 ## Counts
-- Total candidates: 17
+- Total candidates: 15
 - Navy-related: 0
-- Full detail cached: 17
-- Notices with attachments: 11
-- Total attachment links: 13
+- Full detail cached: 15
+- Notices with attachments: 9
+- Total attachment links: 11
 - Pre-solicitation: 2
-- Sources Sought: 10
+- Sources Sought: 8
 - Special Notice: 5
 
 ## Engagement signals
 - Pre-solicitation: 2
-- Sources Sought: 10
+- Sources Sought: 8
 - Special Notice: 5
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-12 | 2026-03-19 | DEPT OF DEFENSE | [Liebert HVAC PM Services](https://sam.gov/opp/e84e80da26664f30b5e271672947fca4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-20 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Range and Training Area Management (RTAM)](https://sam.gov/opp/56806bd9cce54f9bb33b5f44d928cc5d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-20 | DEPT OF DEFENSE | [MCIEAST G-6 TSD GPON/DWDM MAINTENANCE SUPPORT SERVICES](https://sam.gov/opp/4e5719ee5d51416b9a863e44c0a4458e/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-20 | DEPT OF DEFENSE | [MEDLOGCO Warehousing Support Operations](https://sam.gov/opp/776b6c25b4b74e63bb4d22db1ebe265a/view) |
 | 2 | Special Notice | Special Notice | 2026-03-10 | 2026-03-20 | DEPT OF DEFENSE | [PSO Credits](https://sam.gov/opp/d5e5a9fef19c4d019769ff52d7ee7c7e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-18 | 2026-03-25 | DEPT OF DEFENSE | [MCAS Beaufort Catholic Priest Services](https://sam.gov/opp/ebde22af22b84e0799423660d49d5622/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-30 | DEPT OF DEFENSE | [Parachute Training Support Services](https://sam.gov/opp/4fc6bf6364b144e3b462013d3e45cb3b/view) |

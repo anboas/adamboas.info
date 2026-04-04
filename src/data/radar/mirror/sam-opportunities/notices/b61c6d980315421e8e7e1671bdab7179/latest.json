@@ -1,0 +1,46 @@
+{
+  "id": "sam-b61c6d980315421e8e7e1671bdab7179",
+  "title": "GRCA South Rim Generator Maintenance BPA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b61c6d980315421e8e7e1671bdab7179",
+  "opportunity_url": "https://sam.gov/opp/b61c6d980315421e8e7e1671bdab7179/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b61c6d980315421e8e7e1671bdab7179/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b61c6d980315421e8e7e1671bdab7179",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P1526Q0064",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.IMR ARIZONA(12400)",
+  "posted_date": "2026-04-03",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b61c6d980315421e8e7e1671bdab7179",
+  "detail_text": "This Request for Information (RFI) is to obtain information from industry for potential sources capable of performing services for the U.S. Department of the Interior, National Park Service (NPS) on behalf of Grand Canyon National Park (GRCA) located in Arizona. Grand Canyon National Park (GRCA) has twelve (12) generators located at various sites throughout the South Rim that support critical infrastructure and visitor services. Due to the essential nature of these generators, they must remain operational at all times to ensure continuity of park operations, safety systems, and emergency response capabilities. Routine inspections and maintenance, preventative maintenance, corrective repairs, and the potential for unforeseen emergency repairs are required on a recurring and sometimes urgent basis. Please refer to the attachment for additional information.",
+  "detail_text_length": 866,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b829028e5944a92b10320916ecf72d5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b829028e5944a92b10320916ecf72d5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/25cfe6598520e210cdda7c1e749cad5f5d10c3c494f21ef04edf2835a0b71e2e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/25cfe6598520e210cdda7c1e749cad5f5d10c3c494f21ef04edf2835a0b71e2e.pdf",
+      "file_id": "9b829028e5944a92b10320916ecf72d5",
+      "file_name": "A14_Sources_Sought_Synopsis_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169976,
+      "sha256": "25cfe6598520e210cdda7c1e749cad5f5d10c3c494f21ef04edf2835a0b71e2e"
+    }
+  ],
+  "_mirror_hash": "b6394ae944d09481c99c651d8ac0ae4232df477daa1b864891897ff38feb0622",
+  "_mirror_run_id": "20260404T134226Z",
+  "_mirror_recorded_at": "2026-04-04T13:45:52.026637+00:00"
+}
