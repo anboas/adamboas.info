@@ -1,32 +1,29 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-04T13:46:16.164115+00:00
+Generated: 2026-04-05T13:43:16.659703+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/04/2026
+Posted range: 01/01/2026 -> 04/05/2026
 
 ## Counts
-- Total candidates: 15
+- Total candidates: 12
 - Navy-related: 0
-- Full detail cached: 15
-- Notices with attachments: 9
-- Total attachment links: 11
+- Full detail cached: 12
+- Notices with attachments: 6
+- Total attachment links: 7
 - Pre-solicitation: 2
-- Sources Sought: 8
-- Special Notice: 5
+- Sources Sought: 6
+- Special Notice: 4
 
 ## Engagement signals
 - Pre-solicitation: 2
-- Sources Sought: 8
-- Special Notice: 5
+- Sources Sought: 6
+- Special Notice: 4
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-09 | 2026-03-20 | DEPT OF DEFENSE | [Training and Education Command (TECOM) Range and Training Area Management (RTAM)](https://sam.gov/opp/56806bd9cce54f9bb33b5f44d928cc5d/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-02 | 2026-03-20 | DEPT OF DEFENSE | [MCIEAST G-6 TSD GPON/DWDM MAINTENANCE SUPPORT SERVICES](https://sam.gov/opp/4e5719ee5d51416b9a863e44c0a4458e/view) |
-| 2 | Special Notice | Special Notice | 2026-03-10 | 2026-03-20 | DEPT OF DEFENSE | [PSO Credits](https://sam.gov/opp/d5e5a9fef19c4d019769ff52d7ee7c7e/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-18 | 2026-03-25 | DEPT OF DEFENSE | [MCAS Beaufort Catholic Priest Services](https://sam.gov/opp/ebde22af22b84e0799423660d49d5622/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-30 | DEPT OF DEFENSE | [Parachute Training Support Services](https://sam.gov/opp/4fc6bf6364b144e3b462013d3e45cb3b/view) |
 | 2 | Special Notice | Special Notice | 2026-03-19 | 2026-03-30 | DEPT OF DEFENSE | [Intent to Sole Source to DODESI](https://sam.gov/opp/433586a058bb439c8a367329138b1fd7/view) |

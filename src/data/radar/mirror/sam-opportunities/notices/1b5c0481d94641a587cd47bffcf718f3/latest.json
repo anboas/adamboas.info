@@ -1,0 +1,46 @@
+{
+  "id": "sam-1b5c0481d94641a587cd47bffcf718f3",
+  "title": "Steel Doors and Components",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b5c0481d94641a587cd47bffcf718f3",
+  "opportunity_url": "https://sam.gov/opp/1b5c0481d94641a587cd47bffcf718f3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1b5c0481d94641a587cd47bffcf718f3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1b5c0481d94641a587cd47bffcf718f3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA5702-B",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.US AIR FORCES CENTRAL.FA5702  379 ECONS",
+  "posted_date": "2026-04-04",
+  "response_deadline": "2026-04-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b5c0481d94641a587cd47bffcf718f3",
+  "detail_text": "This is a sources sought to survey market capabilities in the region in and around Qatar for manufacturing and providing steel doors with steel components to Al Udeid Air Base, Qatar. A specification sheet is attached. Quantities are still unknown but will be published under a future request for quote.",
+  "detail_text_length": 303,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cdbaee75c2740ab8ff91dab10bf4162/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cdbaee75c2740ab8ff91dab10bf4162/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/90e4eff9180c8837b278d9d4c258b57877c4662c47e731068e9a01d0d2b6f19f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/90e4eff9180c8837b278d9d4c258b57877c4662c47e731068e9a01d0d2b6f19f.pdf",
+      "file_id": "5cdbaee75c2740ab8ff91dab10bf4162",
+      "file_name": "Bunker+Door++Bracket+Specs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1295934,
+      "sha256": "90e4eff9180c8837b278d9d4c258b57877c4662c47e731068e9a01d0d2b6f19f"
+    }
+  ],
+  "_mirror_hash": "4d09095062eac65a040f3148a31bd765464be6faea065e6d8687875133c3b38c",
+  "_mirror_run_id": "20260405T134217Z",
+  "_mirror_recorded_at": "2026-04-05T13:42:54.629590+00:00"
+}

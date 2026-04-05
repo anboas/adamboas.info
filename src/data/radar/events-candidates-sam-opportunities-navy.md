@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-04T13:46:37.508910+00:00
+Generated: 2026-04-05T13:43:39.042078+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/04/2026
+Posted range: 01/01/2026 -> 04/05/2026
 
 ## Counts
-- Total candidates: 104
-- Navy-related: 104
-- Full detail cached: 104
+- Total candidates: 102
+- Navy-related: 102
+- Full detail cached: 102
 - Notices with attachments: 41
 - Total attachment links: 149
 - Combined Synopsis/Solicitation: 26
-- Pre-solicitation: 35
+- Pre-solicitation: 33
 - Solicitation: 14
 - Sources Sought: 20
 - Special Notice: 9
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 35
+- Pre-solicitation: 33
 - Sources Sought: 20
 - Vendor Outreach: 1
 - Special Notice: 9
@@ -44,8 +44,6 @@ Posted range: 01/01/2026 -> 04/04/2026
 | 9 | Sources Sought | Sources Sought | 2026-02-11 | 2026-03-13 | DEPT OF DEFENSE | [Sources Sought for Handheld Gas Analyzers](https://sam.gov/opp/c9341f8952914165b1ac6f6a976f29d6/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Consolidated Gases](https://sam.gov/opp/a1d9a51872cb42739fef419e9318ece2/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-04 | 2026-03-16 | DEPT OF DEFENSE | [NUWC Keyport Propane Supply](https://sam.gov/opp/7b925a4a373e4a13915776502b9b0e25/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-05 | 2026-03-20 | DEPT OF DEFENSE | [APKWS II BOA 5 Year Follow On](https://sam.gov/opp/265a1485f6bc45d3a2cae0d9baa7f103/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-05 | 2026-03-20 | DEPT OF DEFENSE | [Fiscal Years (FY)2027 and FY2028 Laser Guided Training Round (LGTR) BDU-59C/B  Production](https://sam.gov/opp/4bc8740ef7e941b994dfb649460356d1/view) |
 | 5 | Sources Sought | Sources Sought | 2026-02-21 | 2026-03-23 | DEPT OF DEFENSE | [Auxiliary Fuel Tank](https://sam.gov/opp/8e04d72b1e7d4905a12e84027da1f6ad/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-09 | 2026-03-23 | DEPT OF DEFENSE | [Assault APR-39 /FRP4 Production Base Contract (lots 10-12) Pre-Solicitation Notice](https://sam.gov/opp/6d2350e77ec64d6fa5319c3d60de94c8/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-16 | 2026-03-23 | DEPT OF DEFENSE | [MS36 PERFORMANCE 2 TRANSMISSIVE SPIRAL PHASE PLATES](https://sam.gov/opp/d39c2424fa2543ee8f972e2941636108/view) |
