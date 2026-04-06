@@ -1,0 +1,56 @@
+{
+  "id": "sam-0f346773028540048fa49cb287e6a248",
+  "title": "Heat Treat Oven",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0f346773028540048fa49cb287e6a248",
+  "opportunity_url": "https://sam.gov/opp/0f346773028540048fa49cb287e6a248/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0f346773028540048fa49cb287e6a248/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0f346773028540048fa49cb287e6a248",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6852026Q1023",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.FLEET READINESS CENTER",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0f346773028540048fa49cb287e6a248",
+  "detail_text": "REQUEST FOR QUOTE The Commander, Fleet Readiness Center (COMFRC) Procurement Group (PG), in support of the Fleet Readiness Mid Atlantic Oceana, Virginia Beach, Virginia intends to procure one (1) Heat Treat Oven. This is a combined synopsis/solicitation for commercial items prepared In Accordance With (IAW) the format in FAR part 12 as supplemented with additional information included in this notice. Please see Request for Quote N6852026Q1023 and Contract Data Requirements List (CDRL), Attachment 01 to this notice for the full requirement description. Please submit all questions via e-mail to gregory.b.fabricante2.civ@us.navy.mil. All questions must be submitted no later than 2:00 Eastern Daylight Time, 6 April 2026. It is the responsibility of the Offeror to ensure timely Government receipt in accordance with above. The Government is not responsible for responses to questions for which the Offeror did not receive submission confirmation from the Government. Responses to questions will be posted as an update to this announcement via this website. It is the Offeror's responsibility to monitor this announcement for further information. INSTRUCTIONS TO OFFERORS : See attached Solicitation N6852026Q1023 DISCLAIMER ISSUANCE OF THIS NOTICE SHOULD NOT BE CONSTRUED AS OBLIGATING THE GOVERNMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARING RESPONSES TO THIS NOTICE.",
+  "detail_text_length": 1377,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/975d8ca9517945908b5817fff61f62fa/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d03f074edce543cab1237d8dd421e5ab/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/975d8ca9517945908b5817fff61f62fa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a7272fe8dfb4a95a1b8cd00d0a60e3d92ab072ccab94f034ea2682757815ffe3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a7272fe8dfb4a95a1b8cd00d0a60e3d92ab072ccab94f034ea2682757815ffe3.pdf",
+      "file_id": "975d8ca9517945908b5817fff61f62fa",
+      "file_name": "Attachment+01+CDRL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144053,
+      "sha256": "a7272fe8dfb4a95a1b8cd00d0a60e3d92ab072ccab94f034ea2682757815ffe3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d03f074edce543cab1237d8dd421e5ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8e3a0cae79897a1f1d70ee9d63c9211c193d879983b7bb9ad8b2efc2b9d33a46.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8e3a0cae79897a1f1d70ee9d63c9211c193d879983b7bb9ad8b2efc2b9d33a46.pdf",
+      "file_id": "d03f074edce543cab1237d8dd421e5ab",
+      "file_name": "Solicitation+-+N6852026Q1023.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1854164,
+      "sha256": "8e3a0cae79897a1f1d70ee9d63c9211c193d879983b7bb9ad8b2efc2b9d33a46"
+    }
+  ],
+  "_mirror_hash": "73ec1f3c7fd5c3638f3330c8f299d9de8e21fb3897bca1d328c1b841aa38e8fd",
+  "_mirror_run_id": "20260406T134250Z",
+  "_mirror_recorded_at": "2026-04-06T13:44:02.826565+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-32c9d60edde7488f9c2d22b0e8065ea3",
+  "title": "736 SFS Ninja Dismount",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=32c9d60edde7488f9c2d22b0e8065ea3",
+  "opportunity_url": "https://sam.gov/opp/32c9d60edde7488f9c2d22b0e8065ea3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/32c9d60edde7488f9c2d22b0e8065ea3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "32c9d60edde7488f9c2d22b0e8065ea3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA524026QM104",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.PACIFIC AIR FORCES.FA5240  36 CONS LGC",
+  "posted_date": "2026-04-05",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=32c9d60edde7488f9c2d22b0e8065ea3",
+  "detail_text": "736 SFS Ninja Dismount NOTICE ID: FA524026QM104 NAICS CODE: 334220 - Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing RESPONSE DATE: 10 Apr 2026 at 10:00am Chamorro Standard Time (CHST) I. This is a market research/sources sought notice seeking information only. This Sources Sought is issued solely for information and planning purposes only and is not a Request for Proposals or Quotes (RFP or RFQ) or an obligation on the part of the Government to acquire any services. II. Responses to this notice are strictly voluntary. Responses to this sources sought are not offers and cannot be accepted by the Government to form a binding contract. The Government reserves the right to determine how it should proceed as a result of this notice. The Government will not pay any cost incurred in response to this sources sought. All costs associated with responding to this sources sought will be solely at the responding party's expense. III. Shipping and Delivery Information: 736 Security Forces Squadron Unit 14065, Bldg 61228 APO, AP 969543-4048 Shipping terms: FOB Destination IV. Submittal Information: a. Responses: Please submit any responses regarding this Sources Sought no later than 10 Apr 2026 at 10:00 am CHST b. Submission Points of Contact (POC): Submit responses via email to: i. Contract Specialist Ethan Langas at ethan.langas.1@us.af.mil ii. Contract Specialist: Angel Blas at angel_nadine.blas.1@us.af.mil AND iii. Contracting Officer: SSgt Danial Callahan at daniel.callahan.7@us.af.mil. V. Attachments a. Attachment 1 – Salient Characteristics",
+  "detail_text_length": 1597,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66167be7979a4d1baf918d9a46ba0904/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2bd46f7c3d54853a8223d5111e59e80/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66167be7979a4d1baf918d9a46ba0904/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/52d6c0b988dc6ae68d37e5431bd1bf1f41ed1de3ace3f71ebc57ef35f969a1c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/52d6c0b988dc6ae68d37e5431bd1bf1f41ed1de3ace3f71ebc57ef35f969a1c1.pdf",
+      "file_id": "66167be7979a4d1baf918d9a46ba0904",
+      "file_name": "Attachment+1+-+Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 215696,
+      "sha256": "52d6c0b988dc6ae68d37e5431bd1bf1f41ed1de3ace3f71ebc57ef35f969a1c1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2bd46f7c3d54853a8223d5111e59e80/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/adfa682c317d29375190aac0a672d0d23b0e27f4eaa57ecf3d8ca0d189cee20f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/adfa682c317d29375190aac0a672d0d23b0e27f4eaa57ecf3d8ca0d189cee20f.pdf",
+      "file_id": "f2bd46f7c3d54853a8223d5111e59e80",
+      "file_name": "Sources+Sought+-+736+SFS+Ninja+Dismount.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 170013,
+      "sha256": "adfa682c317d29375190aac0a672d0d23b0e27f4eaa57ecf3d8ca0d189cee20f"
+    }
+  ],
+  "_mirror_hash": "66ebd9352caf4664b889655988646f23b086dd95f7000bd10e0569c28c6e9cdf",
+  "_mirror_run_id": "20260406T134250Z",
+  "_mirror_recorded_at": "2026-04-06T13:44:02.918333+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-45ccfa483e8c41769e2b7d81bdc84854",
+  "title": "PD-71-0014; Land Based Engineering Site (LBES) Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=45ccfa483e8c41769e2b7d81bdc84854",
+  "opportunity_url": "https://sam.gov/opp/45ccfa483e8c41769e2b7d81bdc84854/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/45ccfa483e8c41769e2b7d81bdc84854/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "45ccfa483e8c41769e2b7d81bdc84854",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N64498-26-RFPREQ-PD-71-0014",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=45ccfa483e8c41769e2b7d81bdc84854",
+  "detail_text": "This Sources Sought notice is being issued by the Naval Surface Warfare Center, Philadelphia Division (NSWCPD). The Government is seeking information regarding the procurement of engineering services for the outfitting and installation of Land Based Engineering Sites/Test Sites (LBES/LBTS). Specifications are listed in the attached Sources Sought Notice. SUBMISSION OF RESPONSES: Respondents shall provide capability statements with specific information regarding their ability to provide the required materials (described in the Sources Sought Attachment) to meet NSWCPD needs. NSWCPD will only accept unclassified, electronic submissions. Responses shall be submitted via email to jenny.e.tomeo.civ@us.navy.mil by 06:00PM EST, 21 April 2026. Responses shall list \"N64498-26-RFPREQ-PD-71-0014\" in the subject line. No phone calls shall be accepted. This notice is for market research purposes only and does NOT constitute a Request for Proposal. This notice shall not be construed as a contract, a promise to contract, or as a commitment of any kind by the Government. The Government is NOT seeking or accepting unsolicited proposals. This notice is issued solely for conducting market research in accordance with FAR Part 10 and gathering information for planning purposes. Government WILL NOT PAY for any information received, and the Government will not compensate the respondent for any cost incurred in developing the response to this notice. The Government will not release any information marked with a proprietary legend received in response to this notice to any firms, agencies or individuals outside the Government without written permission in accordance with the legend. Please be advised that all submissions become Government property and will not be returned.",
+  "detail_text_length": 1778,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67b6b91fcc2e45b3b34e463d7945a942/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67b6b91fcc2e45b3b34e463d7945a942/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c51b2a4ab352d84078c11aef9228f9deb1124845a9ab55d3f19b70ba1c738399.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c51b2a4ab352d84078c11aef9228f9deb1124845a9ab55d3f19b70ba1c738399.docx",
+      "file_id": "67b6b91fcc2e45b3b34e463d7945a942",
+      "file_name": "Sources+Sought_LBES+Large+Install-Outfit+Follow-On_20260316.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24422,
+      "sha256": "c51b2a4ab352d84078c11aef9228f9deb1124845a9ab55d3f19b70ba1c738399"
+    }
+  ],
+  "_mirror_hash": "ac95ca9f0c2abce685e700856dc69e63be65d5750ca4c20dd04610b34fe7025c",
+  "_mirror_run_id": "20260406T134250Z",
+  "_mirror_recorded_at": "2026-04-06T13:44:02.791774+00:00"
+}

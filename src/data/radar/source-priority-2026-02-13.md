@@ -1,6 +1,6 @@
 # Radar Source Priority List (Authority + Freshness)
 
-Generated: 2026-03-14T13:49:45.324394+00:00
+Generated: 2026-04-06T13:47:39.121746+00:00
 
 Scoring: `priority = 0.65*authority + 0.35*freshness`
 
@@ -29,10 +29,10 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 ## Notes
 
 - **AFCEA Events**: Mentions 2026/2027 (19 hits). Strong event/calendar language. Contains multiple dated references.
-- **AUSA Meetings & Events**: Mentions 2026/2027 (19 hits). Strong event/calendar language. Contains multiple dated references.
+- **AUSA Meetings & Events**: Mentions 2026/2027 (17 hits). Strong event/calendar language. Contains multiple dated references.
 - **Navy League Meetings & Events**: Mentions 2026/2027 (4 hits). Strong event/calendar language. Contains multiple dated references.
-- **AFA Events**: Mentions 2026/2027 (9 hits). Strong event/calendar language. Contains multiple dated references.
-- **SAME Events**: Mentions 2026/2027 (7 hits). Strong event/calendar language. Contains multiple dated references.
+- **AFA Events**: Mentions 2026/2027 (10 hits). Strong event/calendar language. Contains multiple dated references.
+- **SAME Events**: Mentions 2026/2027 (4 hits). Strong event/calendar language. Contains multiple dated references.
 - **CTO Innovation Industry Outreach Calendar**: Strong event/calendar language. Applied association-events baseline freshness (content under-extracted).
 - **DoD OSBP Events Calendar**: Applied association-events baseline freshness (content under-extracted).
 - **DLA Events**: Applied association-events baseline freshness (content under-extracted).
@@ -41,9 +41,9 @@ Scoring: `priority = 0.65*authority + 0.35*freshness`
 - **DoD Event Calendars**: Limited date/event signals found.
 - **GovEvents DoD Organizer Listings**: Mentions 2026/2027 (4 hits). Strong event/calendar language.
 - **JBenton Government Guide Tracker**: Mentions 2026/2027 (5 hits). Some event/calendar language.
-- **ASD Events Defense & Security**: Mentions 2026/2027 (47 hits). Strong event/calendar language. Contains multiple dated references.
+- **ASD Events Defense & Security**: Mentions 2026/2027 (45 hits). Strong event/calendar language. Contains multiple dated references.
 - **Potomac Officers Club Defense**: Mentions 2026/2027 (1 hits). Strong event/calendar language. Contains multiple dated references.
 - **DefGovTech**: Mentions 2026/2027 (6 hits). Strong event/calendar language.
-- **Military Expos**: Mentions 2026/2027 (78 hits). Strong event/calendar language.
+- **Military Expos**: Mentions 2026/2027 (69 hits). Strong event/calendar language.
 - **GovEvents Calendar**: No extractable content.
 - **Defense Advancement Events**: Protected by anti-bot challenge. Limited date/event signals found.

@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-05T13:43:39.042078+00:00
+Generated: 2026-04-06T13:45:18.631729+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/05/2026
+Posted range: 01/01/2026 -> 04/06/2026
 
 ## Counts
-- Total candidates: 102
-- Navy-related: 102
-- Full detail cached: 102
-- Notices with attachments: 41
-- Total attachment links: 149
+- Total candidates: 103
+- Navy-related: 103
+- Full detail cached: 103
+- Notices with attachments: 42
+- Total attachment links: 150
 - Combined Synopsis/Solicitation: 26
 - Pre-solicitation: 33
 - Solicitation: 14
-- Sources Sought: 20
+- Sources Sought: 21
 - Special Notice: 9
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 33
-- Sources Sought: 20
+- Pre-solicitation: 34
+- Sources Sought: 21
 - Vendor Outreach: 1
 - Special Notice: 9
 
@@ -121,6 +121,7 @@ Posted range: 01/01/2026 -> 04/05/2026
 | 5 | Sources Sought | Sources Sought | 2026-04-03 | 2026-04-17 | DEPT OF DEFENSE | [Winch Controller Assembly Bumper Bean Isolator Obsolescence](https://sam.gov/opp/bf46640f776e4f7393a49c4cb02a4047/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-19 | 2026-04-18 | DEPT OF DEFENSE | [FMS Country Initial Studies Case](https://sam.gov/opp/544cd98cccfc41d3835459a4877d774c/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-02 | 2026-04-20 | DEPT OF DEFENSE | [Sources Sought for AN/APR-39 Signal Acquisition Circuit Card Assembly Non-Recurring Engineering](https://sam.gov/opp/00e00eeefe11409581121da48ac1bbce/view) |
+| 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-04-06 | 2026-04-29 | DEPT OF DEFENSE | [RFI for CAD Model Conversion and Comment Adjudication Services](https://sam.gov/opp/09f57a3411934ca2975e48616f821a78/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-30 | DEPT OF DEFENSE | [Tactical Tomahawk Maritime Strike Supply Chain Management Data Deliverables](https://sam.gov/opp/6e7f3394f3f846a7905cb24cc0a7762c/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-30 | 2026-04-30 | DEPT OF DEFENSE | [Keyport Infrastructure Security Support Services (KISSS)](https://sam.gov/opp/150859d729234ec28bd7c396d1c8ce29/view) |
 | 7 | Special Notice | Industry Day, Special Notice | 2026-03-04 | 2026-05-22 | DEPT OF DEFENSE | [F-35 JPO Unclassified IT Industry Day](https://sam.gov/opp/eded23d1b65b4e70921536be0e160522/view) |
