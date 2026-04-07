@@ -1,0 +1,48 @@
+{
+  "id": "sam-81536641d19143438a22b7737b2b7286",
+  "title": "Request for Information - Arresting Cable Release Mechanism (ACRM)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=81536641d19143438a22b7737b2b7286",
+  "opportunity_url": "https://sam.gov/opp/81536641d19143438a22b7737b2b7286/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/81536641d19143438a22b7737b2b7286/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "81536641d19143438a22b7737b2b7286",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "W519TC-26-R-IA12",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=81536641d19143438a22b7737b2b7286",
+  "detail_text": "The United States (U.S.) Army Contracting Command - Rock Island, Rock Island, IL 61299, is issuing this RFI for the development of an Arresting Cable Release Mechanism (ACRM) capability for the Mine Clearing Line Charge (MICLIC). This RFI is intended to conduct market research to identify potential sources interested in providing information on current and emerging technologies. The Army is seeking innovative / mature components and / or integrated solutions to support the ACRM development effort. The Army is seeking an innovative, mature, modular, and / or integrated capability to automatically sever / disconnect the arresting cable (3/4 inches nylon rope with two MIL-C-13486-1 electrical wires woven inside) while under tension (approximately 1,000 lbs). The ACRM Integrated Product Team will review white paper responses to this RFI. This approach enables the Army to identify, analyze, and evaluate innovative, mature, and emerging technologies. NOTE: See attachment for further details and response instructions.",
+  "detail_text_length": 1026,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c33551e2e8914495819ebef799b7ddea/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c33551e2e8914495819ebef799b7ddea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a9aca82ebc7bac075a438f7458790c346aa18b3dde9200642aae00b90b03658c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a9aca82ebc7bac075a438f7458790c346aa18b3dde9200642aae00b90b03658c.pdf",
+      "file_id": "c33551e2e8914495819ebef799b7ddea",
+      "file_name": "ACRM+RFI+for+ACC+RI+March+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 190285,
+      "sha256": "a9aca82ebc7bac075a438f7458790c346aa18b3dde9200642aae00b90b03658c"
+    }
+  ],
+  "_mirror_hash": "f37b00121a5f1d8e972a42a4212a670101e2d02e2583d0c4672680b43f3b73ab",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.788105+00:00"
+}

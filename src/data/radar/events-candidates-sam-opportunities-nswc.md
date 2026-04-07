@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-06T13:45:29.639300+00:00
+Generated: 2026-04-07T13:48:04.565709+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/06/2026
+Posted range: 01/01/2026 -> 04/07/2026
 
 ## Counts
-- Total candidates: 421
-- Navy-related: 421
-- Full detail cached: 421
-- Notices with attachments: 240
-- Total attachment links: 668
-- Combined Synopsis/Solicitation: 158
-- Pre-solicitation: 50
-- Solicitation: 98
-- Sources Sought: 67
+- Total candidates: 432
+- Navy-related: 432
+- Full detail cached: 432
+- Notices with attachments: 250
+- Total attachment links: 685
+- Combined Synopsis/Solicitation: 162
+- Pre-solicitation: 51
+- Solicitation: 100
+- Sources Sought: 71
 - Special Notice: 48
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 56
-- Sources Sought: 68
+- Pre-solicitation: 57
+- Sources Sought: 72
 - Vendor Outreach: 1
 - Special Notice: 48
 
@@ -89,7 +89,6 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-18 | 2026-03-19 | DEPT OF DEFENSE | [Welding Wire 100-S .045 MIG wire / 33lb. spools](https://sam.gov/opp/0cb26242e572445195997f90a135b182/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-10 | 2026-03-20 | DEPT OF DEFENSE | [H Dept Weapons Control and Integration Prototyping and Fabrication](https://sam.gov/opp/b8a8b4b68af343c3986700527a5d09d1/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-13 | 2026-03-20 | DEPT OF DEFENSE | [SOLE SOURCE – CEC SIGNAL DATA PROCESSOR UPGRADE, EVALUATION AND REPAIR](https://sam.gov/opp/d427dc16db9a4a4a994362b6b8f38196/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-12 | 2026-03-22 | DEPT OF DEFENSE | [FMB Fire Suppression Replacement](https://sam.gov/opp/1bc609c21ab34ecfbfd173968d17e967/view) |
 | 4 | Solicitation | - | 2026-02-19 | 2026-03-23 | DEPT OF DEFENSE | [Repair and Modernization IDIQ YC-UF-UFDD](https://sam.gov/opp/4604a5bb19064ddc96471af397c2ceb4/view) |
 | 7 | Sources Sought | Sources Sought | 2026-03-09 | 2026-03-23 | DEPT OF DEFENSE | [TR-317D and TR-353A Transducers and TR-353A Spare Parts Production](https://sam.gov/opp/54b05d4f126c4f9f815fc7414b48739d/view) |
 | 7 | Special Notice | Special Notice | 2026-03-09 | 2026-03-23 | DEPT OF DEFENSE | [XY Table Manipulator](https://sam.gov/opp/b623f1b44f42465eb3833472a70ab2e6/view) |
@@ -99,7 +98,6 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 6 | Solicitation | - | 2026-03-12 | 2026-03-23 | DEPT OF DEFENSE | [SOLE SOURCE – CIRCUIT CARD ASSEMBLY](https://sam.gov/opp/fc1dbc8696bc4979bc28b5e439a9c3f9/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-13 | 2026-03-23 | DEPT OF DEFENSE | [Photocentric LC Titan SLA Machine or Equivalent](https://sam.gov/opp/9f81ce1fe3f24beb826c3ba7808d1c18/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-16 | 2026-03-23 | DEPT OF DEFENSE | [MS36 PERFORMANCE 2 TRANSMISSIVE SPIRAL PHASE PLATES](https://sam.gov/opp/d39c2424fa2543ee8f972e2941636108/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-16 | 2026-03-23 | DEPT OF DEFENSE | [MPDE Clutch Assembly](https://sam.gov/opp/91e3492b5c6742e7bd8de41d57916ed1/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-16 | 2026-03-23 | DEPT OF DEFENSE | [Various Countersunk Cap Screws](https://sam.gov/opp/58db8ba18ac043a5bc9134b759f47d56/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-18 | 2026-03-23 | DEPT OF DEFENSE | [GridPro SWM](https://sam.gov/opp/29135fb5a9d3479dbd7716c54e8afaaf/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-18 | 2026-03-23 | DEPT OF DEFENSE | [Synopsis/Solicitation](https://sam.gov/opp/408385dc98684cce991bfae24f9e8686/view) |
@@ -243,11 +241,9 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 5 | Sources Sought | Sources Sought | 2026-02-25 | 2026-04-06 | DEPT OF DEFENSE | [Common Acoustic Cabinet with Technology Insertion (TI)-28, and TI-next](https://sam.gov/opp/60ee026208824d06b23146909138e472/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-10 | 2026-04-06 | DEPT OF DEFENSE | [NUT, HEX, REGULAR, STEEL, SELF LOCKING, CADMIUM PLATED 0.875"- 09UNC - 3B. BOA Item 7025AJ](https://sam.gov/opp/7aeec803833946beb3d64b4049b9fc02/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-19 | 2026-04-06 | DEPT OF DEFENSE | [CVN ICCS CAB HATCH TRACK MACHINING](https://sam.gov/opp/7c1f32211fe74683b698bce067f458a0/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-20 | 2026-04-06 | DEPT OF DEFENSE | [N4523A26Q5709 Overhaul of a 3408 Caterpillar Diesel Engine](https://sam.gov/opp/51ced69a3b94421dbf268395e03f9bad/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-23 | 2026-04-06 | DEPT OF DEFENSE | [Isolation Rings for the TR-343 Transducer system](https://sam.gov/opp/fa15b493d03c4c25bb9e50dbc935368a/view) |
 | 7 | Special Notice | Special Notice | 2026-03-24 | 2026-04-06 | DEPT OF DEFENSE | [Horiba Maintenance Service agreement](https://sam.gov/opp/e278694edff84f179a2aebc714e39880/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-24 | 2026-04-06 | DEPT OF DEFENSE | [Rollaway Container System Production](https://sam.gov/opp/1b77a083524f422c8091297b3d37e06b/view) |
-| 5 | Special Notice | Special Notice | 2026-03-24 | 2026-04-06 | DEPT OF DEFENSE | [PTC Windchill FY26 - FY27  (RENEWAL)](https://sam.gov/opp/1b19067d13364329a5fae925d91a8549/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-25 | 2026-04-06 | DEPT OF DEFENSE | [Bulkhead Connector Feed-Thru (BCF)](https://sam.gov/opp/f4ec7f914a824b6fa15d9b184f66462c/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-06 | DEPT OF DEFENSE | [Gage Block Comparator](https://sam.gov/opp/7fe6733627d54c52b1ce7fa1e8815945/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [A&E Services NSWCDD](https://sam.gov/opp/8c03eed2d2844dc1a345046b781de5e2/view) |
@@ -276,14 +272,13 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-07 | DEPT OF DEFENSE | [Small Business Set-Aside for Authorized Resellers of Ultralife Brand Lithium Batteries Per Attachment](https://sam.gov/opp/e9d3cd0f723a4659960a718ee134ec8b/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-07 | DEPT OF DEFENSE | [DNA Warehousing Support](https://sam.gov/opp/1ed3327a834b43c78b1911fb1903a950/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-02 | 2026-04-07 | DEPT OF DEFENSE | [Industrial Crane Removal Services for Portsmouth Naval Shipyard](https://sam.gov/opp/1dd8245d45e3466eb857235dd811b1e3/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-04-06 | 2026-04-07 | DEPT OF DEFENSE | [Nitrogen, Oxygen, Argon Service PLOMA](https://sam.gov/opp/83b06e2211c14f888fafa249b97d419f/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-04-06 | 2026-04-07 | DEPT OF DEFENSE | [N4523A26Q5709 Overhaul of a 3408 Caterpillar Diesel Engine](https://sam.gov/opp/41ef13745a3d4a56b001d54b83815971/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-04-08 | DEPT OF DEFENSE | [N6449826Q5081](https://sam.gov/opp/cd9b5fa460f340a28d4f1cebbd22ebb9/view) |
 | 7 | Special Notice | Special Notice | 2026-03-24 | 2026-04-08 | DEPT OF DEFENSE | [N0016422GJQ65 JO0005– Sole Source – Repairs and spare parts in support of the Multi-Spectral Targeting Systems (MTS) – PSC (5855) – NAICS (334511)](https://sam.gov/opp/2dee8256ecaa403ea07d1aa5bd647f6d/view) |
 | 7 | Sources Sought | Sources Sought | 2026-03-24 | 2026-04-08 | DEPT OF DEFENSE | [PEO Ships PMS 400D SYSTEMS PROFESSIONAL SUPPORT SERVICES FOR ENGINEERING AND PROGRAM MANAGEMENT](https://sam.gov/opp/10747fce42af4c0eb8b7d0e9721dc7fb/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-24 | 2026-04-08 | DEPT OF DEFENSE | [MK 166 MOD 0 Sill Lift Adapter](https://sam.gov/opp/b56fae1ecc5e46b09843dca1dceca091/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-31 | 2026-04-08 | DEPT OF DEFENSE | [Fundamentals of Uncertainty Analysis Training](https://sam.gov/opp/6acee316b68c4c8abe591518c1fd7a07/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-01 | 2026-04-08 | DEPT OF DEFENSE | [BAND PASS FILTER](https://sam.gov/opp/13938b7428224d57998d6df1c2649339/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-04-01 | 2026-04-08 | DEPT OF DEFENSE | [Breech Plate Board](https://sam.gov/opp/e25faa5c857643529de746bb71785056/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-01 | 2026-04-08 | DEPT OF DEFENSE | [CELESTRON VF-GOLD MAINTENANCE PACKAGE](https://sam.gov/opp/6151c46916ef439dacc0212cf0e551a2/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-01 | 2026-04-08 | DEPT OF DEFENSE | [26-SIMACQ-E60-0002 Material Depot Level Repair](https://sam.gov/opp/de19e164efe7410eaa9aac93c39a6529/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-08 | DEPT OF DEFENSE | [Sole Source to Fiba Technologies Inc. for Bank Bottlefield Replacement per attachments](https://sam.gov/opp/2e3bea510fd74a52a8aa157982c9b703/view) |
@@ -292,6 +287,7 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 4 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-08 | DEPT OF DEFENSE | [Brand Name Hose Assemblies PNSY](https://sam.gov/opp/d0eadddb581e419388720d1feb208403/view) |
 | 4 | Solicitation | - | 2026-04-02 | 2026-04-08 | DEPT OF DEFENSE | [High Temp Pressure Sensitive Adhesive](https://sam.gov/opp/0a2bdd52d89549978b1884e8cfc69ba9/view) |
 | 4 | Solicitation | - | 2026-04-03 | 2026-04-08 | DEPT OF DEFENSE | [Diesel Engine Wire Harness Replacement](https://sam.gov/opp/bb1fd9a11adf49c0a079f95bb6022a89/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-04-07 | 2026-04-08 | DEPT OF DEFENSE | [Nitrogen, Oxygen, Argon Service PLOMA](https://sam.gov/opp/399628153a24461687725db4e0f2fd21/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-04-09 | DEPT OF DEFENSE | [Item 27- D40 Equipment Services MAC- SPDS](https://sam.gov/opp/04d8ae8aa6774d1b89432bf82710f3ea/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-04-09 | DEPT OF DEFENSE | [Low Pressure Gage Calibrators](https://sam.gov/opp/cec0318ca29d44b3b42ae08e09020e94/view) |
 | 7 | Special Notice | Special Notice | 2026-03-25 | 2026-04-09 | DEPT OF DEFENSE | [Improved Tactical Aviation Armament System (ITAAS)](https://sam.gov/opp/243d78ed7e10496284fbfaa6ee307ad6/view) |
@@ -303,9 +299,11 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-09 | DEPT OF DEFENSE | [Matrox Encoder](https://sam.gov/opp/853d0e2fb090447bbfce6042d67bf187/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-09 | DEPT OF DEFENSE | [Payload Tubes](https://sam.gov/opp/f4f63c059180452b9667bdd750ad09bc/view) |
 | 4 | Solicitation | - | 2026-04-02 | 2026-04-09 | DEPT OF DEFENSE | [SEWIP Family of Systems MAC-IDIQ](https://sam.gov/opp/4d42f581c3e549278c10995068c61f0f/view) |
+| 5 | Sources Sought | Sources Sought | 2026-04-06 | 2026-04-09 | DEPT OF DEFENSE | [Air High Pressure Dehydrator (AHPD) Groom](https://sam.gov/opp/1eb2f562848b486db6bf1443b6f884b5/view) |
+| 5 | Sources Sought | Sources Sought | 2026-04-06 | 2026-04-09 | DEPT OF DEFENSE | [High Pressure Air Compressor (HPAC) No. 1 & No. 2 Top-End Overhaul](https://sam.gov/opp/828062e682cd4f6aae5c5837960a5a53/view) |
+| 5 | Sources Sought | Sources Sought | 2026-04-06 | 2026-04-09 | DEPT OF DEFENSE | [No. 1 High Pressure Air Compressor (HPAC) Airend Overhaul](https://sam.gov/opp/bb3d38be974b4d9194f4a0c8f1a524fe/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-04 | 2026-04-10 | DEPT OF DEFENSE | [Acoustic Device Countermeasure (ADC) MK 2 & ADC MK 2 Training Device](https://sam.gov/opp/9d86714a93834c7780a34d569e07d034/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-18 | 2026-04-10 | DEPT OF DEFENSE | [Hybrid 5-Axis Computer Numerical Controlled Vertical Machining Center](https://sam.gov/opp/9acbe87cf54d49aea16bae755b7071c6/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-24 | 2026-04-10 | DEPT OF DEFENSE | [100kW EDG Rental](https://sam.gov/opp/4a610a4ae162415e84e4ce6c8a0aca5f/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-25 | 2026-04-10 | DEPT OF DEFENSE | [Mk38 FY27 Spare Parts](https://sam.gov/opp/8e5a7c19daff45e8be6a207b80a25829/view) |
 | 6 | Solicitation | - | 2026-03-25 | 2026-04-10 | DEPT OF DEFENSE | [Big Blue 3 MAC (N6449821D0013 - N6449821D0023) SALINITY MONITORING SYSTEMS INSTALLATION UPGRADE](https://sam.gov/opp/177aae445a764fafa7a08cbc502d3c4a/view) |
 | 7 | Special Notice | Special Notice | 2026-03-27 | 2026-04-10 | DEPT OF DEFENSE | [TWO-DAY BRIEF COMMUNICATION TRAINING](https://sam.gov/opp/7bb95f9f2b0945dfbdd090929d06f7b8/view) |
@@ -321,12 +319,14 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-02 | 2026-04-10 | DEPT OF DEFENSE | [400 Hz Converter](https://sam.gov/opp/0b6bd0ecb15547dcb027fd7ab290cd83/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-04-03 | 2026-04-10 | DEPT OF DEFENSE | [Technical Representative for Geislinger Couplings](https://sam.gov/opp/20861c84b93f418eaa98abbf1fbb761c/view) |
 | 7 | Special Notice | Special Notice | 2026-04-06 | 2026-04-10 | DEPT OF DEFENSE | [Postponement of Competitive Procurement – MK 138 Mod 1 Demolition Charge Assembly](https://sam.gov/opp/b3f9d9b6616943d7beced93c173cc760/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-04-06 | 2026-04-10 | DEPT OF DEFENSE | [Adacore Gnat SWM](https://sam.gov/opp/7aea212eea234404950090668b67314e/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-04-06 | 2026-04-10 | DEPT OF DEFENSE | [Procurement request for Virtual Acquisition Office (VAO)](https://sam.gov/opp/2a96578e58bc46a793f1d716a3ff23da/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-04-06 | 2026-04-10 | DEPT OF DEFENSE | [100kW EDG Rental](https://sam.gov/opp/4f7fc3049d084d2880bee979cafc25e6/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-04-07 | 2026-04-10 | DEPT OF DEFENSE | [Breech Plate Board](https://sam.gov/opp/8dca7e52a3e94e3b86f91949c865fc5c/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-04-07 | 2026-04-10 | DEPT OF DEFENSE | [service contracts to maintain two (2) stereolithographic apparatus (SLA) printing machines](https://sam.gov/opp/700d804bb1a844a39ff9d626cb82aa32/view) |
 | 7 | Sources Sought | Sources Sought | 2026-03-24 | 2026-04-12 | DEPT OF DEFENSE | [Standard Missile 2 (SM-2) Test Equipment (TE) Improvements Sources Sought](https://sam.gov/opp/7541268df7cc458eaf25aa2bb4b2f434/view) |
 | 6 | Solicitation | - | 2026-03-12 | 2026-04-13 | DEPT OF DEFENSE | [Code 45 Lab Services SeaPort Task Order Solicitation](https://sam.gov/opp/8ffcd96489a7406b87cdb97c8728565a/view) |
 | 6 | Solicitation | - | 2026-03-12 | 2026-04-13 | DEPT OF DEFENSE | [Field Emission Scanning Electron Miscroscope (FESEM)](https://sam.gov/opp/442f601a4acb4f4c8e3b26f52c9a1f82/view) |
-| 6 | Solicitation | - | 2026-03-12 | 2026-04-13 | DEPT OF DEFENSE | [Hub and Oil Distribution (OD) Box Repair Contract](https://sam.gov/opp/347d8a90f8244d8e8079215d721bd2a2/view) |
-| 7 | Sources Sought | Sources Sought | 2026-03-25 | 2026-04-13 | DEPT OF DEFENSE | [Model Shop Rigging and Moving Services](https://sam.gov/opp/de5a5a990dd84ce3b5522a45d50a663d/view) |
-| 5 | Special Notice | Special Notice | 2026-03-27 | 2026-04-13 | DEPT OF DEFENSE | [Notice of Intent to Sole Source - Lincoln Electric Design of Welded Connections Seminar](https://sam.gov/opp/c4cc66bf7c094a3084cbd02fa36f0ab4/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

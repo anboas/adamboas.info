@@ -1,0 +1,70 @@
+{
+  "id": "sam-ec871666db454fc6afed2009faa76f8f",
+  "title": "RFI - REPAIR/REPLACE DOORS, DOOR LOCKS AND HARDWARE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec871666db454fc6afed2009faa76f8f",
+  "opportunity_url": "https://sam.gov/opp/ec871666db454fc6afed2009faa76f8f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ec871666db454fc6afed2009faa76f8f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ec871666db454fc6afed2009faa76f8f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FY26RepairReplaceDoorsLocksHardware",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec871666db454fc6afed2009faa76f8f",
+  "detail_text": "The contractor shall repair or replace doors, door locks, deadbolts, panic exit devices, mullions, thresholds, door closers, catches, strikes, cores, keys, ADA compliant mechanisms, and related hardware. Service consists of repairing or replacing and installing new exterior and interior locks. Doors in facilities may vary in width, height, single door, double door and may be manufactured of wood, metal or aluminum. Locks, panic exit devices, closers and hardware may vary from manufacturers in each facility.",
+  "detail_text_length": 512,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/23f593387e3f446ea0b6d887263334a0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/461d2b7ab81846e09ef54d1c7ebade6a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63dbe702d3e24785acc6da2af9c4758d/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/23f593387e3f446ea0b6d887263334a0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ee8eabc135500c3f68190f59f4c8c40ff385150b28b47f541873a92bd0c618b4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ee8eabc135500c3f68190f59f4c8c40ff385150b28b47f541873a92bd0c618b4.docx",
+      "file_id": "23f593387e3f446ea0b6d887263334a0",
+      "file_name": "Lock+BPA+PWS+30+Mar+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22128,
+      "sha256": "ee8eabc135500c3f68190f59f4c8c40ff385150b28b47f541873a92bd0c618b4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/461d2b7ab81846e09ef54d1c7ebade6a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/99be369f2e1deaf460df457c7b46d16e521d4ddc711351af828484403d0d2ad7.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/99be369f2e1deaf460df457c7b46d16e521d4ddc711351af828484403d0d2ad7.xlsx",
+      "file_id": "461d2b7ab81846e09ef54d1c7ebade6a",
+      "file_name": "Door+Lock+BPA+Price+List+Lock+Shop.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30672,
+      "sha256": "99be369f2e1deaf460df457c7b46d16e521d4ddc711351af828484403d0d2ad7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63dbe702d3e24785acc6da2af9c4758d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f4e5afaac0e27bb5f308e58b06a7980092651bd3ffe2d364614d8ad076832e89.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f4e5afaac0e27bb5f308e58b06a7980092651bd3ffe2d364614d8ad076832e89.docx",
+      "file_id": "63dbe702d3e24785acc6da2af9c4758d",
+      "file_name": "Door+Lock+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90240,
+      "sha256": "f4e5afaac0e27bb5f308e58b06a7980092651bd3ffe2d364614d8ad076832e89"
+    }
+  ],
+  "_mirror_hash": "486b27967896082367ddc7373fbf6e138eb2273ead1cbf7c2063ebf8a02334d0",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.731174+00:00"
+}

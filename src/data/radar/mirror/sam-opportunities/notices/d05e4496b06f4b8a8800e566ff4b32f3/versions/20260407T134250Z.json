@@ -1,0 +1,46 @@
+{
+  "id": "sam-d05e4496b06f4b8a8800e566ff4b32f3",
+  "title": "Standoff Attack Weapon (SoAW) Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d05e4496b06f4b8a8800e566ff4b32f3",
+  "opportunity_url": "https://sam.gov/opp/d05e4496b06f4b8a8800e566ff4b32f3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d05e4496b06f4b8a8800e566ff4b32f3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d05e4496b06f4b8a8800e566ff4b32f3",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8682  AFLCMC EBJK",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-06-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d05e4496b06f4b8a8800e566ff4b32f3",
+  "detail_text": "The Air Force Life Cycle Management Center (AFLCMC) Armament Directorate (EB) is hosting a classified Industry Day as part of its market research efforts under FAR Part 10. The purpose is to provide information and solicit industry feedback regarding materiel solutions for the Standoff Attack Weapon (SoAW) program. The Government is seeking to identify and understand industry's capabilities to deliver a weapon system supporting the SoAW program.",
+  "detail_text_length": 449,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38521ac153094619b13f52bf3b221a9a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/38521ac153094619b13f52bf3b221a9a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e9eeb190ffa65fe1ebd82a6b05814384d3011f5a5576154236fed71941c07d97.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e9eeb190ffa65fe1ebd82a6b05814384d3011f5a5576154236fed71941c07d97.docx",
+      "file_id": "38521ac153094619b13f52bf3b221a9a",
+      "file_name": "Industry+Day+Announcement+Final+REV2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27505,
+      "sha256": "e9eeb190ffa65fe1ebd82a6b05814384d3011f5a5576154236fed71941c07d97"
+    }
+  ],
+  "_mirror_hash": "679a01522605163d118d6c0234b2323f79c69e3e2e8a86defcd4f1573c352425",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:03.022801+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-d0815b2c598e4c6dbc6efa2de39c71c0",
+  "title": "Elopement Alarm System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0815b2c598e4c6dbc6efa2de39c71c0",
+  "opportunity_url": "https://sam.gov/opp/d0815b2c598e4c6dbc6efa2de39c71c0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d0815b2c598e4c6dbc6efa2de39c71c0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d0815b2c598e4c6dbc6efa2de39c71c0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26Q0137",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0815b2c598e4c6dbc6efa2de39c71c0",
+  "detail_text": "Eastern Oklahoma VA Health Care System (EOVAHCS) requires a contractor to supply and install an Elopement Alarm System to notify nursing staff of monitored patients leaving that are identified at elevated risk for elopement at the Tulsa VA Medical Center. The contractor will be required to supply and install all components and to monitor 8 doors on 4 floors and 16 annunciating stations including wiring between all devices in accordance with this statement of work in a cost effective, efficient, and safe manner, while in accordance with the VA Mission.",
+  "detail_text_length": 557,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10d3f2ade66d4675b57eac0f562f0b8f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9395eff4c52548778ac518a9a25a2f16/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cdc8ed17c8a54eb19a44329f19ce505a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10d3f2ade66d4675b57eac0f562f0b8f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f4e4bcac9eea5af48afea5054bd3adc198b09057f4f21bfb3a78f0973be781c7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f4e4bcac9eea5af48afea5054bd3adc198b09057f4f21bfb3a78f0973be781c7.pdf",
+      "file_id": "10d3f2ade66d4675b57eac0f562f0b8f",
+      "file_name": "Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 255536,
+      "sha256": "f4e4bcac9eea5af48afea5054bd3adc198b09057f4f21bfb3a78f0973be781c7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9395eff4c52548778ac518a9a25a2f16/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7e41ddc2a337e417c471250e65c6a66fd2655ba7e81fb8ae40831f179970935b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7e41ddc2a337e417c471250e65c6a66fd2655ba7e81fb8ae40831f179970935b.pdf",
+      "file_id": "9395eff4c52548778ac518a9a25a2f16",
+      "file_name": "S06+36C24W26Q0137+0001+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 200083,
+      "sha256": "7e41ddc2a337e417c471250e65c6a66fd2655ba7e81fb8ae40831f179970935b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cdc8ed17c8a54eb19a44329f19ce505a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3e058827b4ebb60a218f794cb33dd109d9af360b730248ac577ef73afac2334e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3e058827b4ebb60a218f794cb33dd109d9af360b730248ac577ef73afac2334e.pdf",
+      "file_id": "cdc8ed17c8a54eb19a44329f19ce505a",
+      "file_name": "S02+36C24W26Q0137.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 190045,
+      "sha256": "3e058827b4ebb60a218f794cb33dd109d9af360b730248ac577ef73afac2334e"
+    }
+  ],
+  "_mirror_hash": "2caadf8aaacc30d8ef29631485d7c31d8e46da6a9742236638afe6d79a34133b",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.903482+00:00"
+}

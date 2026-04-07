@@ -3277,6 +3277,51 @@
     "resource_items": null
   },
   {
+    "id": "sam-05b6270d1b2c4b9d9bb1f9354322481a",
+    "title": "TACAN Shore Based Antenna",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=05b6270d1b2c4b9d9bb1f9354322481a",
+    "opportunity_url": "https://sam.gov/opp/05b6270d1b2c4b9d9bb1f9354322481a/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/05b6270d1b2c4b9d9bb1f9354322481a/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "05b6270d1b2c4b9d9bb1f9354322481a",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "N00019-26-RFPREQ-TPM213-0030",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
+    "posted_date": "2026-04-06",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=05b6270d1b2c4b9d9bb1f9354322481a",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=05b6270d1b2c4b9d9bb1f9354322481a",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a2e2a7ae9854b5e9577964d580d1d8c/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86a13717624c4e66b216f70407a65fc4/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be887824cbc74d2bb17970e0d3e6c493/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a2e2a7ae9854b5e9577964d580d1d8c/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86a13717624c4e66b216f70407a65fc4/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be887824cbc74d2bb17970e0d3e6c493/download"
+      }
+    ]
+  },
+  {
     "id": "sam-3a4fde89ec9549d1b6e90a3e94f7edb9",
     "title": "E-6B Maintenance, Repair and Overhaul (MRO)",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a4fde89ec9549d1b6e90a3e94f7edb9",

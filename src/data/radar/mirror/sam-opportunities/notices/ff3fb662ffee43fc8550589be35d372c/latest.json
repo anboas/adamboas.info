@@ -1,0 +1,57 @@
+{
+  "id": "sam-ff3fb662ffee43fc8550589be35d372c",
+  "title": "6515--Custom Surgical Packs",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff3fb662ffee43fc8550589be35d372c",
+  "opportunity_url": "https://sam.gov/opp/ff3fb662ffee43fc8550589be35d372c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ff3fb662ffee43fc8550589be35d372c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ff3fb662ffee43fc8550589be35d372c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C246",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.246-NETWORK CONTRACTING OFFICE 6 (36C246)",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff3fb662ffee43fc8550589be35d372c",
+  "detail_text": "QUESTIONS AND ANSWERS",
+  "detail_text_length": 21,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1877e72ceb6c46db8a5b871d40014bad/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db643db774b04aa38782605690a789b4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1877e72ceb6c46db8a5b871d40014bad/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5458e5a31c5ec624c862c04fcace3e437685c7d89754725a61552264511e8fa9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5458e5a31c5ec624c862c04fcace3e437685c7d89754725a61552264511e8fa9.docx",
+      "file_id": "1877e72ceb6c46db8a5b871d40014bad",
+      "file_name": "Custom+Surgical+Packs+-+QA.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 86514,
+      "sha256": "5458e5a31c5ec624c862c04fcace3e437685c7d89754725a61552264511e8fa9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db643db774b04aa38782605690a789b4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/62acf58e0403358b9bc5a2e69525759b6592eb73c87818ffcb79bfbdd07174ad.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/62acf58e0403358b9bc5a2e69525759b6592eb73c87818ffcb79bfbdd07174ad.pdf",
+      "file_id": "db643db774b04aa38782605690a789b4",
+      "file_name": "Amendment+-+36C24626Q0364+0005.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 641227,
+      "sha256": "62acf58e0403358b9bc5a2e69525759b6592eb73c87818ffcb79bfbdd07174ad"
+    }
+  ],
+  "_mirror_hash": "48cd28ed63d4629d9472e0fbc701cd3253200daf2b369a982bb4a78b1c400d90",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.874024+00:00"
+}

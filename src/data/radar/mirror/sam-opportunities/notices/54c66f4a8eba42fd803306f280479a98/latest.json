@@ -1,0 +1,45 @@
+{
+  "id": "sam-54c66f4a8eba42fd803306f280479a98",
+  "title": "Repair of NIIN 016504230 / NOMEN: RDP",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=54c66f4a8eba42fd803306f280479a98",
+  "opportunity_url": "https://sam.gov/opp/54c66f4a8eba42fd803306f280479a98/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/54c66f4a8eba42fd803306f280479a98/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "54c66f4a8eba42fd803306f280479a98",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QF111",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=54c66f4a8eba42fd803306f280479a98",
+  "detail_text": "This RFQ is for repair. NAVSUP WSS requests that contractors submit a quote that includes either a firm-fixed price or TT&E pricing as well as estimate costs to repair this item. This contract/delivery order/purchase order/modification is issued by the Government when deposited in the mail, transmitted by facsimile or sent by any electronic commerce method, including email. The Government's acceptance of the contractor's proposal constitutes bilateral agreement to issue this contract/delivery order/purchase order/modification.",
+  "detail_text_length": 532,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c4c70e7908a442879cc947c3696d1a92/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c4c70e7908a442879cc947c3696d1a92/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/35b0390a3bdc744eb1ec89793a2f2441ee82d0d5681727a32ba4a3f36c3db3c3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/35b0390a3bdc744eb1ec89793a2f2441ee82d0d5681727a32ba4a3f36c3db3c3.pdf",
+      "file_id": "c4c70e7908a442879cc947c3696d1a92",
+      "file_name": "3.01_Solicitation_N0038326QF111.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1238795,
+      "sha256": "35b0390a3bdc744eb1ec89793a2f2441ee82d0d5681727a32ba4a3f36c3db3c3"
+    }
+  ],
+  "_mirror_hash": "3c6dbb8f070ad526b8a3fe33cc640edc6998c869d53855dc01c18d249d26124b",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.791045+00:00"
+}

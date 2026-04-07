@@ -1,0 +1,57 @@
+{
+  "id": "sam-1508f3eed5bc42faadb6f28977b71093",
+  "title": "Fire and Security Monitoring",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1508f3eed5bc42faadb6f28977b71093",
+  "opportunity_url": "https://sam.gov/opp/1508f3eed5bc42faadb6f28977b71093/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1508f3eed5bc42faadb6f28977b71093/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1508f3eed5bc42faadb6f28977b71093",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "VA-25-00001785",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.SAC FREDERICK (36C10X)",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1508f3eed5bc42faadb6f28977b71093",
+  "detail_text": "We have a requirement that we are seeking vendor input on. Please review the RFI and provide responses by the date/time listed. The contractor shall provide all labor, materials, tools, equipment, travel, parts and supervision for full maintenance, repairs and emergency service on the fire alarm, suppression systems and security system located at The Department of Veterans Affairs, Quantico Information Technology Center (QITC), Buildings 5101 and 5107 Russell Road, Quantico, VA. The Contractor must test, inspect, and monitor the Fire, Suppression System and the Security Systems (Security Monitoring Panel (ADT Panel) for 5101 and 5107, Access Keypads (this is for arming and disarming the door sensors), Door Sensors, Motion Sensors, and Locking Mechanisms). All labor, materials, tools, equipment and travel shall be in accordance with the specifications, terms, and conditions of this Performance Work Statement (PWS). This PWS includes emergency services twenty-four (24) hours a day, seven (7) days a week and providing annual and semi-annual testing and maintenance. All equipment and supplies used to perform testing, maintenance and repairs shall also be included. The following table includes include device counts for the systems to be maintained in accordance with this contract. All components shall be covered under the Performance Work Statement (PWS). The tables below are to be used as a guide buy may not be 100% accurate. Devices such as security system, smoke detectors, heat detectors and other small components connected to the system shall be included in the contract even if the device count is not 100% accurate for those devices. Accuracy is within 1-2 devices of actual count.",
+  "detail_text_length": 1708,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7bf6ab8b3680474fa5d42d6f83a42db8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d6155b1f22c479da5861ab2b1f96471/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7bf6ab8b3680474fa5d42d6f83a42db8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cdead1864a851d7fc39e7237bf1fcc8a2a8f8cc6dd4257953f356375ab8c2e53.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cdead1864a851d7fc39e7237bf1fcc8a2a8f8cc6dd4257953f356375ab8c2e53.docx",
+      "file_id": "7bf6ab8b3680474fa5d42d6f83a42db8",
+      "file_name": "REQUEST+FOR+INFORMATION.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20040,
+      "sha256": "cdead1864a851d7fc39e7237bf1fcc8a2a8f8cc6dd4257953f356375ab8c2e53"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d6155b1f22c479da5861ab2b1f96471/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9fdc7d4881615be2a9b31181c13f141e5fed8c94975905a5616f0b7e35937f70.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9fdc7d4881615be2a9b31181c13f141e5fed8c94975905a5616f0b7e35937f70.docx",
+      "file_id": "8d6155b1f22c479da5861ab2b1f96471",
+      "file_name": "PWS_Fire+and+Security+Monitoring_2026_01_20+-002-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 41114,
+      "sha256": "9fdc7d4881615be2a9b31181c13f141e5fed8c94975905a5616f0b7e35937f70"
+    }
+  ],
+  "_mirror_hash": "bf384ffe6e41639e98e11ebd80bba5675b882fedcdb3098c63c56e7001e1f9fe",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.952977+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-e69be212eeaf4ff483cbdcac03e22e70",
+  "title": "Thermotron Calibration Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e69be212eeaf4ff483cbdcac03e22e70",
+  "opportunity_url": "https://sam.gov/opp/e69be212eeaf4ff483cbdcac03e22e70/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e69be212eeaf4ff483cbdcac03e22e70/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e69be212eeaf4ff483cbdcac03e22e70",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6660426Q0224",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e69be212eeaf4ff483cbdcac03e22e70",
+  "detail_text": "See Attached Request for Quote",
+  "detail_text_length": 30,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10405496977a4f12809dced0462c4885/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10405496977a4f12809dced0462c4885/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d958dfb8be5e856ef7803e27769161639332746452106740fa36f93c4d23b6b2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d958dfb8be5e856ef7803e27769161639332746452106740fa36f93c4d23b6b2.pdf",
+      "file_id": "10405496977a4f12809dced0462c4885",
+      "file_name": "III.+D+Combined+synopsis+and+solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1235890,
+      "sha256": "d958dfb8be5e856ef7803e27769161639332746452106740fa36f93c4d23b6b2"
+    }
+  ],
+  "_mirror_hash": "29033d478927ea36f5a7a5e3e6139325d8e72b7b2b397ad7b288099e1797532a",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.690420+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-4dee9043a0844fef8ff7ffa5a963999a",
+  "title": "Y--CRLA 192402 - Bridge Preservation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4dee9043a0844fef8ff7ffa5a963999a",
+  "opportunity_url": "https://sam.gov/opp/4dee9043a0844fef8ff7ffa5a963999a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4dee9043a0844fef8ff7ffa5a963999a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4dee9043a0844fef8ff7ffa5a963999a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P2026R0052",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.DSC CONTRACTING SERVICES DIVISION",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4dee9043a0844fef8ff7ffa5a963999a",
+  "detail_text": "CRLA 192402 - Bridge Preservation",
+  "detail_text_length": 33,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cc6faba71b3471babdee5e150db6bfe/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6cc6faba71b3471babdee5e150db6bfe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1073685bb3b055e3124452d617545e41617fcef05086a2e412f236eebfc4fb28.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1073685bb3b055e3124452d617545e41617fcef05086a2e412f236eebfc4fb28.pdf",
+      "file_id": "6cc6faba71b3471babdee5e150db6bfe",
+      "file_name": "A14_SSN_CRLA_192402_6_Apr_26_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 243332,
+      "sha256": "1073685bb3b055e3124452d617545e41617fcef05086a2e412f236eebfc4fb28"
+    }
+  ],
+  "_mirror_hash": "8380a7a6d0f030e063fdf4923551100d99c5485a5622916c58c7507da6d06c8a",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:03.001129+00:00"
+}

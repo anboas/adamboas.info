@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-06T13:45:18.631729+00:00
+Generated: 2026-04-07T13:47:57.783137+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/06/2026
+Posted range: 01/01/2026 -> 04/07/2026
 
 ## Counts
-- Total candidates: 103
-- Navy-related: 103
-- Full detail cached: 103
-- Notices with attachments: 42
-- Total attachment links: 150
+- Total candidates: 104
+- Navy-related: 104
+- Full detail cached: 104
+- Notices with attachments: 43
+- Total attachment links: 153
 - Combined Synopsis/Solicitation: 26
 - Pre-solicitation: 33
 - Solicitation: 14
-- Sources Sought: 21
+- Sources Sought: 22
 - Special Notice: 9
 
 ## Engagement signals
 - Industry Day: 2
 - Pre-solicitation: 34
-- Sources Sought: 21
+- Sources Sought: 22
 - Vendor Outreach: 1
 - Special Notice: 9
 
@@ -124,6 +124,7 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-04-06 | 2026-04-29 | DEPT OF DEFENSE | [RFI for CAD Model Conversion and Comment Adjudication Services](https://sam.gov/opp/09f57a3411934ca2975e48616f821a78/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-30 | DEPT OF DEFENSE | [Tactical Tomahawk Maritime Strike Supply Chain Management Data Deliverables](https://sam.gov/opp/6e7f3394f3f846a7905cb24cc0a7762c/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-30 | 2026-04-30 | DEPT OF DEFENSE | [Keyport Infrastructure Security Support Services (KISSS)](https://sam.gov/opp/150859d729234ec28bd7c396d1c8ce29/view) |
+| 5 | Sources Sought | Sources Sought | 2026-04-06 | 2026-04-30 | DEPT OF DEFENSE | [TACAN Shore Based Antenna](https://sam.gov/opp/05b6270d1b2c4b9d9bb1f9354322481a/view) |
 | 7 | Special Notice | Industry Day, Special Notice | 2026-03-04 | 2026-05-22 | DEPT OF DEFENSE | [F-35 JPO Unclassified IT Industry Day](https://sam.gov/opp/eded23d1b65b4e70921536be0e160522/view) |
 | 4 | Solicitation | - | 2026-03-26 | 2026-06-29 | DEPT OF DEFENSE | [REQUEST FOR PROPOSAL (RFP) Undergraduate Jet Training System (UJTS)](https://sam.gov/opp/2a690d45196d4930836b34779472edcc/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-01-14 | 2026-08-08 | DEPT OF DEFENSE | [E-6B Maintenance, Repair and Overhaul (MRO)](https://sam.gov/opp/3a4fde89ec9549d1b6e90a3e94f7edb9/view) |

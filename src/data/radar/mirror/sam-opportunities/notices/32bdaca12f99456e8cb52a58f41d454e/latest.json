@@ -1,0 +1,46 @@
+{
+  "id": "sam-32bdaca12f99456e8cb52a58f41d454e",
+  "title": "Oracle Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=32bdaca12f99456e8cb52a58f41d454e",
+  "opportunity_url": "https://sam.gov/opp/32bdaca12f99456e8cb52a58f41d454e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/32bdaca12f99456e8cb52a58f41d454e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "32bdaca12f99456e8cb52a58f41d454e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W519TC-26-R-254",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=32bdaca12f99456e8cb52a58f41d454e",
+  "detail_text": "RFI for Oracle Maintenance. ROM requested, please see attachment.",
+  "detail_text_length": 65,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1c44b4d5d624e6aacf8636ef335f1f7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1c44b4d5d624e6aacf8636ef335f1f7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6d4a0c9076b7fb4a3d5516625ca978af87eff2a9f2db998cb9834fac89f1e6b9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6d4a0c9076b7fb4a3d5516625ca978af87eff2a9f2db998cb9834fac89f1e6b9.docx",
+      "file_id": "f1c44b4d5d624e6aacf8636ef335f1f7",
+      "file_name": "RFI+01APRIL2026+Amended.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1373555,
+      "sha256": "6d4a0c9076b7fb4a3d5516625ca978af87eff2a9f2db998cb9834fac89f1e6b9"
+    }
+  ],
+  "_mirror_hash": "b9ba38cdb232a498140fc8b037aafdddfcf89eadada8180af49c5680ffc57fca",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.808308+00:00"
+}

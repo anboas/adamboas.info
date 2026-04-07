@@ -1,0 +1,48 @@
+{
+  "id": "sam-2a3340da5ed34fad80193de594062a7f",
+  "title": "DA10--Contact Center Consolidation - RFI -PWS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a3340da5ed34fad80193de594062a7f",
+  "opportunity_url": "https://sam.gov/opp/2a3340da5ed34fad80193de594062a7f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2a3340da5ed34fad80193de594062a7f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2a3340da5ed34fad80193de594062a7f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "36C10B26Q0224",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a3340da5ed34fad80193de594062a7f",
+  "detail_text": "Subject: Notice to Industry Planned Solicitation Will Be Issued via GSA Dear Industry Partners, The Government thanks all parties who responded to the recent Request for Information (RFI) regarding 36C10B26Q0224 Contact Center Consolidation - RFI -PWS. The feedback and capability statements received were valuable in helping the Government assess available solutions and determine the most appropriate acquisition strategy. Based on the information gathered through the RFI, the Government has determined that the forthcoming solicitation will be issued through the GSA MAS. Industry partners interested in participating in this requirement should ensure they hold the appropriate GSA contract vehicle and the applicable Special Item Number(s) (SINs) at the time of solicitation issuance. This notice is for informational purposes only and does not constitute a solicitation or a commitment by the Government. Additional details, including the anticipated release date of the solicitation, will be made available through GSA and/or SAM.gov as appropriate. Thank you for your continued interest and engagement.",
+  "detail_text_length": 1110,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47187059e21f402a8a1808f3820a89c0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47187059e21f402a8a1808f3820a89c0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8a0638c81c806d9ccfae6f1fdd98f33a5a253b632f7882a5b31cdd3e6ecc19b3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8a0638c81c806d9ccfae6f1fdd98f33a5a253b632f7882a5b31cdd3e6ecc19b3.docx",
+      "file_id": "47187059e21f402a8a1808f3820a89c0",
+      "file_name": "36C10B26Q0224_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15826,
+      "sha256": "8a0638c81c806d9ccfae6f1fdd98f33a5a253b632f7882a5b31cdd3e6ecc19b3"
+    }
+  ],
+  "_mirror_hash": "03fd11b316b7e58edbc80e80cdc4c5aa828489e0ef4e280aaa0669edaa447627",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.742022+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-74bdfe626648486f907aec605c05a0c9",
+  "title": "VESSEL RENTAL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=74bdfe626648486f907aec605c05a0c9",
+  "opportunity_url": "https://sam.gov/opp/74bdfe626648486f907aec605c05a0c9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/74bdfe626648486f907aec605c05a0c9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "74bdfe626648486f907aec605c05a0c9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70Z08426I00017",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.LOG-9",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=74bdfe626648486f907aec605c05a0c9",
+  "detail_text": "The Coast Guard intends to solicit, negotiate and award a sole-source procurement (under FAR authority 6.302) to Curtain Maritime Corp., 725 Pier T Ave. Long Beach, CA 90802 for the following: Fully crewed, mission-capable offshore vessel capable of supporting integrated maritime training operations, including: Maritime law enforcement or security operations training Personnel transfer and tactical boarding training scenarios Small boat launch and recovery operations Rotary-wing and/or unmanned aerial system (UAS) integration Command and control (C2) operations Personnel berthing and sustainment See attached Statement of Work for full requirement detail This synopsis does not constitute a solicitation, however all responsible sources who believe they can meet all of the requirements may submit a capability statement that demonstrates clear and convincing evidence of capability, addressing the points identified above. All question/concerns regarding this post shall be submitted in writing (NO TELEPHONE INQURIES WILL BE ACCEPTED) to Contracting Officer, Terry Craft at terry.e.craft@uscg.mil no later than 15 April 2026, 11:00am (Pacific Time). Follow-up/additional questions will not be accepted after this date. The NAICS Code for this procurement 483113, PSC V124 small business size 800 Employees. The contract type will be a firm-fixed price. If no responses are received with sufficient information to determine that another responsible source is available, negotiations will be conducted with Curtain Maritime Corp. Responses shall be in written form.",
+  "detail_text_length": 1572,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a77cf6139154b81b1a170ac0acbe8ec/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d91f772ae2664b3ea87dd8151dcc68dc/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a77cf6139154b81b1a170ac0acbe8ec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2be4c0afbe898b50049980bcc1dabcaa00177433a436193440871ab1f190f873.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2be4c0afbe898b50049980bcc1dabcaa00177433a436193440871ab1f190f873.docx",
+      "file_id": "1a77cf6139154b81b1a170ac0acbe8ec",
+      "file_name": "SOW_Commercial+Veseel+07_08MAY26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 41606,
+      "sha256": "2be4c0afbe898b50049980bcc1dabcaa00177433a436193440871ab1f190f873"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d91f772ae2664b3ea87dd8151dcc68dc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4c0c3dc0d5a87eb0bfe4db776246cd783dfa3ca2a6be9bd04b7f869d985991e3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4c0c3dc0d5a87eb0bfe4db776246cd783dfa3ca2a6be9bd04b7f869d985991e3.pdf",
+      "file_id": "d91f772ae2664b3ea87dd8151dcc68dc",
+      "file_name": "JOTFOC_Vessel+Rental_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 207574,
+      "sha256": "4c0c3dc0d5a87eb0bfe4db776246cd783dfa3ca2a6be9bd04b7f869d985991e3"
+    }
+  ],
+  "_mirror_hash": "3e9cb40b8382630f209c5fa9a7b6c017b57e00cdab6ceec1b100b978c75edc64",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.912282+00:00"
+}

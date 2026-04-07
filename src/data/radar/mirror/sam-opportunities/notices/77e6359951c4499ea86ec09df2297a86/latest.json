@@ -1,0 +1,57 @@
+{
+  "id": "sam-77e6359951c4499ea86ec09df2297a86",
+  "title": "ROMO 326235 Kawuneeche VC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77e6359951c4499ea86ec09df2297a86",
+  "opportunity_url": "https://sam.gov/opp/77e6359951c4499ea86ec09df2297a86/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/77e6359951c4499ea86ec09df2297a86/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "77e6359951c4499ea86ec09df2297a86",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P2026R0057",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.DSC CONTRACTING SERVICES DIVISION",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77e6359951c4499ea86ec09df2297a86",
+  "detail_text": "The Kawuneeche Visitor Center (KVC) is located just north of Grand Lake, Colorado and is the only visitor center located on Rocky Mountain National Park’s (ROMO) western side, and it also serves as the administrative headquarters for the western side of the park. The facility has been designated as eligible for listing on the National Register of Historic Places and treatment will meet Secretary of the Interior Standards for the Treatment of Historic Properties and integrated into the design.",
+  "detail_text_length": 497,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0884363fd7824e3fbf82db332a55c22e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9affad8535bf43059d089579dc6a1444/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0884363fd7824e3fbf82db332a55c22e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6fd3c3ebab5a8a051a928430afcbc660c14fdd79394ad0e81a6e3604c87b2fb0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6fd3c3ebab5a8a051a928430afcbc660c14fdd79394ad0e81a6e3604c87b2fb0.pdf",
+      "file_id": "0884363fd7824e3fbf82db332a55c22e",
+      "file_name": "A14_SSN_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 158286,
+      "sha256": "6fd3c3ebab5a8a051a928430afcbc660c14fdd79394ad0e81a6e3604c87b2fb0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9affad8535bf43059d089579dc6a1444/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a763f688959f4f13eba5a9b41fcdf8e63ae752448292396bd4b61c8663d763c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a763f688959f4f13eba5a9b41fcdf8e63ae752448292396bd4b61c8663d763c.docx",
+      "file_id": "9affad8535bf43059d089579dc6a1444",
+      "file_name": "A14_SSN_Survey_Questionnaire_Attachment_1_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58696,
+      "sha256": "2a763f688959f4f13eba5a9b41fcdf8e63ae752448292396bd4b61c8663d763c"
+    }
+  ],
+  "_mirror_hash": "00ed819960d8cd564312f5d521a96aa1983f24e0c1ee779565387ebe44c5ba13",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.970133+00:00"
+}

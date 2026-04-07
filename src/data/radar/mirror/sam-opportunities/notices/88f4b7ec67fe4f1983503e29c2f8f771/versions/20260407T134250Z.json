@@ -1,0 +1,57 @@
+{
+  "id": "sam-88f4b7ec67fe4f1983503e29c2f8f771",
+  "title": "Notice of Intent to Award a Sole Source Lease for a Space at Incheon International Airport, South Korea",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88f4b7ec67fe4f1983503e29c2f8f771",
+  "opportunity_url": "https://sam.gov/opp/88f4b7ec67fe4f1983503e29c2f8f771/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/88f4b7ec67fe4f1983503e29c2f8f771/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "88f4b7ec67fe4f1983503e29c2f8f771",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88f4b7ec67fe4f1983503e29c2f8f771",
+  "detail_text": "The US Government intends to award a succeeding lease using other than full and open competition for an (existing) lease for the U.S. Army Corps of Engineers that is expiring at the Incheon Internation Airport , Incheon, South Korea. The Government requires space yielding a minimum of 15.84 square meters at Terminal 1 and 12.6 square meters at Terminal 2. To submit a location for inspection, contact this office by 20 April 2026. Submissions by other than the owner or manager of a property must be accompanied by a letter from the owner granting permission to make a general offering of the space. This NOTICE OF INTENT is not a request for competitive quotes. The Government will not be responsible for any cost incurred in preparation of response. A determination by the Government not to compete this requirement based upon responses to this notice is solely within the discretion of the Government. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement.",
+  "detail_text_length": 1030,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b64c2f4855f24057aa151d5d746cbb5c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd06b8457e76414490cdeb37a593ea8e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b64c2f4855f24057aa151d5d746cbb5c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b85290cd984f56f51290101c608ca18dc0992e94c9dac6e537d10a494ab0be01.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b85290cd984f56f51290101c608ca18dc0992e94c9dac6e537d10a494ab0be01.docx",
+      "file_id": "b64c2f4855f24057aa151d5d746cbb5c",
+      "file_name": "Single+Source+Justification.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12925,
+      "sha256": "b85290cd984f56f51290101c608ca18dc0992e94c9dac6e537d10a494ab0be01"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd06b8457e76414490cdeb37a593ea8e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e92478c55f5ebca41ea6397f04f1a74b6fb6fe9ee1b0ef673d213075491f6ee2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e92478c55f5ebca41ea6397f04f1a74b6fb6fe9ee1b0ef673d213075491f6ee2.docx",
+      "file_id": "dd06b8457e76414490cdeb37a593ea8e",
+      "file_name": "Single+Source+Narrative.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14064,
+      "sha256": "e92478c55f5ebca41ea6397f04f1a74b6fb6fe9ee1b0ef673d213075491f6ee2"
+    }
+  ],
+  "_mirror_hash": "2420f487adcc45638402484e81fcb6a2538c267d5e8bd813b0b7d4a0e51ea0eb",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.886567+00:00"
+}

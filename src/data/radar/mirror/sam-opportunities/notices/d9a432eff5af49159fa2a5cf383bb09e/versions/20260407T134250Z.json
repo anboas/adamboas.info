@@ -1,0 +1,58 @@
+{
+  "id": "sam-d9a432eff5af49159fa2a5cf383bb09e",
+  "title": "(8) Chemical Toilets",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9a432eff5af49159fa2a5cf383bb09e",
+  "opportunity_url": "https://sam.gov/opp/d9a432eff5af49159fa2a5cf383bb09e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d9a432eff5af49159fa2a5cf383bb09e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d9a432eff5af49159fa2a5cf383bb09e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N3904026P0052",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9a432eff5af49159fa2a5cf383bb09e",
+  "detail_text": "(8) Chemical Toilets adhering to the attached Statement of Work (SOW) Period of Performance: 9/1/2026-6/28/2027 (43 Weeks) Option Period of Performance 6/29/2027-7/26/2027 (4 Weeks) Place of Performance: Naval Base Point Loma (NBPL) San Diego, California",
+  "detail_text_length": 254,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28224ca10a0c43d698b2a37ad4e5edf1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a031e3bffa3b41de9e09f859991e6f13/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28224ca10a0c43d698b2a37ad4e5edf1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b6eb40566dca06d6d5a9cfeafd1863d565250f3d2f3796b35fe3f14ce7253198.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b6eb40566dca06d6d5a9cfeafd1863d565250f3d2f3796b35fe3f14ce7253198.pdf",
+      "file_id": "28224ca10a0c43d698b2a37ad4e5edf1",
+      "file_name": "N3904026P0052+Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 204048,
+      "sha256": "b6eb40566dca06d6d5a9cfeafd1863d565250f3d2f3796b35fe3f14ce7253198"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a031e3bffa3b41de9e09f859991e6f13/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a1be810ad9cef5b3a60b673871441a49b39e48e744252b333d55853bd032b9f8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a1be810ad9cef5b3a60b673871441a49b39e48e744252b333d55853bd032b9f8.pdf",
+      "file_id": "a031e3bffa3b41de9e09f859991e6f13",
+      "file_name": "N3904026P0052+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 140875,
+      "sha256": "a1be810ad9cef5b3a60b673871441a49b39e48e744252b333d55853bd032b9f8"
+    }
+  ],
+  "_mirror_hash": "dc4063bcf922b56436f7c91818fcca006753fc3f303a4938aa6bd59af604b8e9",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.700164+00:00"
+}

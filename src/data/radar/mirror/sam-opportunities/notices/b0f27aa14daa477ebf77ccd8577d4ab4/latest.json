@@ -1,0 +1,45 @@
+{
+  "id": "sam-b0f27aa14daa477ebf77ccd8577d4ab4",
+  "title": "5310 NUT, HEAVY HEX",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b0f27aa14daa477ebf77ccd8577d4ab4",
+  "opportunity_url": "https://sam.gov/opp/b0f27aa14daa477ebf77ccd8577d4ab4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b0f27aa14daa477ebf77ccd8577d4ab4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b0f27aa14daa477ebf77ccd8577d4ab4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0068",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b0f27aa14daa477ebf77ccd8577d4ab4",
+  "detail_text": "FAR 12.202(b)(1)(i) “This is a combined synopsis/solicitation for commercial products or commercial services prepared in accordance with part 12. This announcement constitutes the only solicitation. Offers are being requested and a separate written solicitation will not be issued”. Solicitation number N0040626Q0068 is issued as a RFQ for NUT, HEAVY HEX. This acquisition is set-aside for small business concerns. This solicitation incorporates provisions and clauses by reference. The full text of provisions and clauses may be accessed electronically at www.acquisition.gov.",
+  "detail_text_length": 577,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc9a22593a564a878194df84f4ab03c9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fc9a22593a564a878194df84f4ab03c9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/06e74fd3cff0b595652390e59f8ae754bf0ed9c14069a0300a4c2e899f1b57da.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/06e74fd3cff0b595652390e59f8ae754bf0ed9c14069a0300a4c2e899f1b57da.pdf",
+      "file_id": "fc9a22593a564a878194df84f4ab03c9",
+      "file_name": "2.1.1+26Q0068+Sol.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1855288,
+      "sha256": "06e74fd3cff0b595652390e59f8ae754bf0ed9c14069a0300a4c2e899f1b57da"
+    }
+  ],
+  "_mirror_hash": "7d9614c8cbe5da7974038f6d60f32a47eb9e26cfca7b34ef856fd22999b2d17b",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.754010+00:00"
+}

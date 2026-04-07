@@ -1,0 +1,46 @@
+{
+  "id": "sam-ba24ea3724eb46c7a0a15002eb46de1d",
+  "title": "6515--Advanced Blast Simulator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba24ea3724eb46c7a0a15002eb46de1d",
+  "opportunity_url": "https://sam.gov/opp/ba24ea3724eb46c7a0a15002eb46de1d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ba24ea3724eb46c7a0a15002eb46de1d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ba24ea3724eb46c7a0a15002eb46de1d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C24126Q0401",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba24ea3724eb46c7a0a15002eb46de1d",
+  "detail_text": "Notice of Intent to Sole Source Requirement The Department of Veterans Affairs, VA Healthcare System, Network Contracting Office 1, Regional Procurement Office East intends to negotiate a sole source contract for 6515 - Medical and Surgical Instruments, Equipment, and Supplies in accordance with FAR13.106-1(b). Competition is restricted on this procurement due to Only One Responsible Source and No Other Supplies or Services Will Satisfy Agency Requirements. The associated NAICS code for this is 541715. The vendor will be Stumptown Research and Development, LLC. PO Box 1110, Black Mountain, NC 28711. Description of Supplies: SUPPLY: The Contracting Activity is looking to acquire the design and fabrication of an Advanced Blast Simulator with a 24in x 24in internal cross section for testing biomedical targets. This system will include a dual mode driver, expanding transition section, test section and end wave eliminator. The test section will be made with two observation ports and multiple sensor locations. One test specimen holder, a data acquisition computer, a pitot-static probe, and three piezoresistive wall mounted pressure sensors. Installation and operational training shall be included. The location of the service will be at the White River Junction Veterans Affairs Medical Center 215 North Main Street, White River Junction, VT 05009. It is the Government's belief that only the proposed candidate possesses the required capabilities to successfully meet this requirement. It is the Government's intention to solicit and negotiate with only this source. This notice of intent is not a request for competitive proposals. It is not a solicitation or request for offers. Any response to this notice must show clear and convincing evidence that competition would be advantageous to the Government. Responses must be received NLT 3:30 PM EST on 04/10/2026. No telephonic inquiries will be accepted. All responses must be emailed to Jennifer Fiore, Contracting Officer, Jennifer.Fiore@va.gov.",
+  "detail_text_length": 2012,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3e5f1d26e3148f6a1aa145a86c4dd2f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3e5f1d26e3148f6a1aa145a86c4dd2f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3805af113c8e2c5cd6e2f6c3143d6319bd9715faed9beb0cd1035c1a23974bef.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3805af113c8e2c5cd6e2f6c3143d6319bd9715faed9beb0cd1035c1a23974bef.docx",
+      "file_id": "c3e5f1d26e3148f6a1aa145a86c4dd2f",
+      "file_name": "36C24126Q0401.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24550,
+      "sha256": "3805af113c8e2c5cd6e2f6c3143d6319bd9715faed9beb0cd1035c1a23974bef"
+    }
+  ],
+  "_mirror_hash": "0f8d4fb4865dc62958f375b3d619977d2e69e28012d0b02b9469d115456bf647",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.852729+00:00"
+}

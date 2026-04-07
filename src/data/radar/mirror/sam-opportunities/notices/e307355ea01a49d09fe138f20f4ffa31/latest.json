@@ -1,0 +1,68 @@
+{
+  "id": "sam-e307355ea01a49d09fe138f20f4ffa31",
+  "title": "Real-Time Post-Market Signal For Enhanced Surveillance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e307355ea01a49d09fe138f20f4ffa31",
+  "opportunity_url": "https://sam.gov/opp/e307355ea01a49d09fe138f20f4ffa31/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e307355ea01a49d09fe138f20f4ffa31/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e307355ea01a49d09fe138f20f4ffa31",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ODT-2026-133586",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.FOOD AND DRUG ADMINISTRATION.FDA Office of Acquisitions and Grants Services",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e307355ea01a49d09fe138f20f4ffa31",
+  "detail_text": "The U.S. Food and Drug Administration (FDA) is conducting market research to better understand industry capabilities related to providing real-time or near-real-time signals that may support FDA’s post-market surveillance activities for regulated products. FDA is interested in learning whether commercial organizations currently provide, or could provide, timely signals or alerts related to events affecting regulated products, such as safety events, product quality issues, supply disruptions, or other significant public health signals. Information obtained through this Request for Information (RFI) will assist the Government in determining the availability of industry capabilities, potential technical integration approaches, and possible cost models associated with providing real-time signal feeds to FDA systems. This RFI is issued for market research purposes only and does not constitute a solicitation for proposals or a commitment by the Government to issue a solicitation in the future.",
+  "detail_text_length": 1002,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b8567fb06a647f8b56a00b6ce30ced0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c63a8486128f4e4c94772116f5c72e75/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc192de14f2b43ac8143ba672af4b186/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b8567fb06a647f8b56a00b6ce30ced0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d5ac7c8214cf96703ac7a5d5fe6c48a4734a7ea4241290c5b8eb8314e225633d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d5ac7c8214cf96703ac7a5d5fe6c48a4734a7ea4241290c5b8eb8314e225633d.pdf",
+      "file_id": "9b8567fb06a647f8b56a00b6ce30ced0",
+      "file_name": "RFI+-+Enhanced+Surveillance+3.16.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148405,
+      "sha256": "d5ac7c8214cf96703ac7a5d5fe6c48a4734a7ea4241290c5b8eb8314e225633d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c63a8486128f4e4c94772116f5c72e75/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eeb82a0c3bb9a38d04c35a04692b66fc0e0096967646e9a9328a391d4fe7b9da.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eeb82a0c3bb9a38d04c35a04692b66fc0e0096967646e9a9328a391d4fe7b9da.pdf",
+      "file_id": "c63a8486128f4e4c94772116f5c72e75",
+      "file_name": "FDA+Vendor+Day+Summary.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 171202,
+      "sha256": "eeb82a0c3bb9a38d04c35a04692b66fc0e0096967646e9a9328a391d4fe7b9da"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc192de14f2b43ac8143ba672af4b186/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a027d7ed73be6529f26d82c1f233adbecf8cf6efe94f6761c5433dcbff4f8aae.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a027d7ed73be6529f26d82c1f233adbecf8cf6efe94f6761c5433dcbff4f8aae.pdf",
+      "file_id": "cc192de14f2b43ac8143ba672af4b186",
+      "file_name": "Vendor+Day+April+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 955253,
+      "sha256": "a027d7ed73be6529f26d82c1f233adbecf8cf6efe94f6761c5433dcbff4f8aae"
+    }
+  ],
+  "_mirror_hash": "6d8051ea410c4db16ba87faea0bddca79c2f00fb945dd29ab25dd0f5581a19ce",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.816071+00:00"
+}

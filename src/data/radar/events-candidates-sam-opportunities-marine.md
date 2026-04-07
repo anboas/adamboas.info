@@ -1,23 +1,23 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-06T13:44:35.974977+00:00
+Generated: 2026-04-07T13:47:32.768670+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/06/2026
+Posted range: 01/01/2026 -> 04/07/2026
 
 ## Counts
-- Total candidates: 12
+- Total candidates: 13
 - Navy-related: 0
-- Full detail cached: 12
-- Notices with attachments: 6
-- Total attachment links: 7
+- Full detail cached: 13
+- Notices with attachments: 7
+- Total attachment links: 8
 - Pre-solicitation: 2
-- Sources Sought: 6
+- Sources Sought: 7
 - Special Notice: 4
 
 ## Engagement signals
 - Pre-solicitation: 2
-- Sources Sought: 6
+- Sources Sought: 7
 - Special Notice: 4
 
 ## Top candidates
@@ -35,6 +35,7 @@ Posted range: 01/01/2026 -> 04/06/2026
 | 2 | Sources Sought | Sources Sought | 2026-03-30 | 2026-04-03 | DEPT OF DEFENSE | [Preventative Maintenance for Sweeper and Scrubbers](https://sam.gov/opp/1a6b214a8d774fbb9db8207689a67538/view) |
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-09 | DEPT OF DEFENSE | [MCAS Beaufort Washer and Dryer Contract](https://sam.gov/opp/bdb18416a4a3453e917005faaf3c5b34/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-04-10 | DEPT OF DEFENSE | [Personally Owned Vehicle (POV ) Storage](https://sam.gov/opp/16a613f6cacc4c688b36d7f43426a6ec/view) |
+| 2 | Sources Sought | Sources Sought | 2026-04-06 | 2026-04-17 | DEPT OF DEFENSE | [Investigative Database Services](https://sam.gov/opp/0bbf287a6c2043eb93c2ac8209e64bfb/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

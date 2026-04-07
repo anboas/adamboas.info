@@ -1,0 +1,46 @@
+{
+  "id": "sam-a029b84c0b724485ad00272adbf7b1f1",
+  "title": "NOI - Service Contract Renewal for Bruker Biospec 7T MRI Scanner",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a029b84c0b724485ad00272adbf7b1f1",
+  "opportunity_url": "https://sam.gov/opp/a029b84c0b724485ad00272adbf7b1f1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a029b84c0b724485ad00272adbf7b1f1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a029b84c0b724485ad00272adbf7b1f1",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "PCA-NIMH-01868",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a029b84c0b724485ad00272adbf7b1f1",
+  "detail_text": "THIS IS A PRE-SOLICITATION NON-COMPETITIVE (NOTICE OF INTENT) SYNOPSISTO AWARD A CONTRACT WITHOUT PROVIDING FOR FULL OR OPENCOMPETITION (INCLUDING BRAND-NAME). The Neurophysiology Imaging Facility (NIF), supported by NIMH, NINDS, and NEI, requires a service contract for hardware and software maintenance of its Bruker Biospec 7T MRI Scanner. This system is essential for imaging laboratory animals and must operate reliably to support ongoing research. The contract will ensure the scanner remains in optimal working condition, minimizing downtime and maintaining the high-quality imaging needed for advanced neurophysiological studies. The required services outlined in the attachment include comprehensive hardware and software maintenance, technical support, replacement parts, and system updates necessary to ensure continued operation of this highly specialized imaging system used for nonhuman primate research. The period of performance will consist of a 12-month base period from date of award, with three (3) 12-month option periods. This acquisition is being conducted under the authority of FAR 6.302-1, Only One Responsible Source, as Bruker BioSpin Corporation is the original equipment manufacturer and the only vendor capable of providing proprietary parts, software updates, and certified service required to maintain the system.",
+  "detail_text_length": 1346,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdb8b6b1c835469797bddfba7aff9040/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdb8b6b1c835469797bddfba7aff9040/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c41cc549a69a3ca89ffdab60119155438dd3f89818d7a1ad758cf3ab23f75f3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c41cc549a69a3ca89ffdab60119155438dd3f89818d7a1ad758cf3ab23f75f3.pdf",
+      "file_id": "fdb8b6b1c835469797bddfba7aff9040",
+      "file_name": "PCA-NIMH-01868+-+Notice+of+Intent+to+Sole+Source.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 200865,
+      "sha256": "2c41cc549a69a3ca89ffdab60119155438dd3f89818d7a1ad758cf3ab23f75f3"
+    }
+  ],
+  "_mirror_hash": "67892b61ca885cea4e7e558556246eba1ffc2777c4243eb368c9cddccebaa8d7",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.955073+00:00"
+}

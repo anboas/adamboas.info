@@ -1,0 +1,47 @@
+{
+  "id": "sam-ecea609a301e42ec9d8070204ff0c168",
+  "title": "XRL Integration",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ecea609a301e42ec9d8070204ff0c168",
+  "opportunity_url": "https://sam.gov/opp/ecea609a301e42ec9d8070204ff0c168/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ecea609a301e42ec9d8070204ff0c168/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ecea609a301e42ec9d8070204ff0c168",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N00019-25-RFPREQ-JSFCDS-0038",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC AD.NAVAL AIR WARFARE CENTER AIR DIV",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ecea609a301e42ec9d8070204ff0c168",
+  "detail_text": "XRL Integration",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff66e56788ad40dbb3595a7e3387f6b7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff66e56788ad40dbb3595a7e3387f6b7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/13309fdd5a5bc47cdec46fc2f5a7b44c492d83b26aaa2b3d4c2518fbedb32291.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/13309fdd5a5bc47cdec46fc2f5a7b44c492d83b26aaa2b3d4c2518fbedb32291.pdf",
+      "file_id": "ff66e56788ad40dbb3595a7e3387f6b7",
+      "file_name": "XRL+Pre-Solicitation+Notice+to+Sole+Source_MPZ_04062026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64278,
+      "sha256": "13309fdd5a5bc47cdec46fc2f5a7b44c492d83b26aaa2b3d4c2518fbedb32291"
+    }
+  ],
+  "_mirror_hash": "a4176f8b361ac40acb4ac8caacd7cdfee7d392bfbe9264b91fa7982c99c77551",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.708924+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-6a4c7148a4bc4cb994b435f677a04f6d",
+  "title": "K-6 Learning Portfolio",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6a4c7148a4bc4cb994b435f677a04f6d",
+  "opportunity_url": "https://sam.gov/opp/6a4c7148a4bc4cb994b435f677a04f6d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6a4c7148a4bc4cb994b435f677a04f6d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6a4c7148a4bc4cb994b435f677a04f6d",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "HE125426QE029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF DEFENSE EDUCATION ACTIVITY (DODEA).DOD EDUCATION ACTIVITY",
+  "posted_date": "2026-04-06",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6a4c7148a4bc4cb994b435f677a04f6d",
+  "detail_text": "This pre-solicitation notice serves as a synopsis and is posted in accordance with FAR subpart 5.2, Synopses of Proposed Contract Actions. This is not a solicitation. Vendors shall not submit a quote until the solicitation is posted to www.SAM.gov. The Department of War Education Activity (DoWEA) has the following requirements: A commercial off-the-shelf, 100% cloud-based digital art portfolio to capture K-6 student work in elementary art classes systemwide. The tool allows students and teachers to collect, store, share, and assess student work. DoWEA requires virtual professional learning for K-6 teachers. In addition to the K-6 students, K-6 staff and the students’ parents/sponsors also have access to the platform. Note: DoWEA expects to award one contract for this requirement. The applicable North American Industry Classification System (NAICS) code is 611710 (Educational Support Services) Services), and the applicable PSC is U009 (Education/Training - General). Interested parties must be registered under the NAICS code in the System for Award Management (SAM) prior to submitting their quotes. DoWEA intends to issue solicitation No. HE125426QE029 in support of this requirement. This requirement will be procured using FAR Parts 12, Acquisition of Commercial Products and Services. This requirement will be competed as a full and open competition. The anticipated award contract type is a Firm-Fixed-Price Indefinite Delivery Indefinite Quantity (IDIQ) contract. DoWEA expects to make one award for a 5-year base period The anticipated posting date of the solicitation is on or about 05/14/2025 and an award date on or about 06/14/2026. Attachment(s): 1. Performance Work Statement (PWS) for K-6 Learning Portfolio) is attached to this pre-solicitation notice.",
+  "detail_text_length": 1781,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/006aea613f7f4e61bfb3254967d1b588/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/006aea613f7f4e61bfb3254967d1b588/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/04e5e062a73f40c1cd6d3a486bed874b8fa327bd31adcf5eb24b6079e995f35a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/04e5e062a73f40c1cd6d3a486bed874b8fa327bd31adcf5eb24b6079e995f35a.pdf",
+      "file_id": "006aea613f7f4e61bfb3254967d1b588",
+      "file_name": "26QE029_ATTCH8_PWSv3_040126.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 342403,
+      "sha256": "04e5e062a73f40c1cd6d3a486bed874b8fa327bd31adcf5eb24b6079e995f35a"
+    }
+  ],
+  "_mirror_hash": "2f57c1325fb46f9bfad75c8d610810ec6fbb4a0736b3b7e341af16181d519e8c",
+  "_mirror_run_id": "20260407T134250Z",
+  "_mirror_recorded_at": "2026-04-07T13:47:02.856618+00:00"
+}
