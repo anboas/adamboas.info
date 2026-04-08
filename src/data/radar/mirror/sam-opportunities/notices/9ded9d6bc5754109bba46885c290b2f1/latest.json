@@ -1,0 +1,57 @@
+{
+  "id": "sam-9ded9d6bc5754109bba46885c290b2f1",
+  "title": "Foreign Service Test Administration",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ded9d6bc5754109bba46885c290b2f1",
+  "opportunity_url": "https://sam.gov/opp/9ded9d6bc5754109bba46885c290b2f1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9ded9d6bc5754109bba46885c290b2f1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9ded9d6bc5754109bba46885c290b2f1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "19AQMM-26-RFI-1001",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.ACQUISITIONS - AQM MOMENTUM",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ded9d6bc5754109bba46885c290b2f1",
+  "detail_text": "SOURCES SOUGHT: See sources sought document and draft PWS attached.",
+  "detail_text_length": 67,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/06a6c7ce33ae4d80ac69f65cdf342d0c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/940d6eb652d642c6aea3743088b617b3/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/06a6c7ce33ae4d80ac69f65cdf342d0c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/be26c5b5eba8f9a5027127ebe4b53d5e66677187548f5ff3b3dc9e6649843460.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/be26c5b5eba8f9a5027127ebe4b53d5e66677187548f5ff3b3dc9e6649843460.pdf",
+      "file_id": "06a6c7ce33ae4d80ac69f65cdf342d0c",
+      "file_name": "Draft+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 699492,
+      "sha256": "be26c5b5eba8f9a5027127ebe4b53d5e66677187548f5ff3b3dc9e6649843460"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/940d6eb652d642c6aea3743088b617b3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/739c0be4643aceef282b856ab1c19b790c0225e25f24a169b2b90d1640116758.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/739c0be4643aceef282b856ab1c19b790c0225e25f24a169b2b90d1640116758.pdf",
+      "file_id": "940d6eb652d642c6aea3743088b617b3",
+      "file_name": "Source+Sought+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 138176,
+      "sha256": "739c0be4643aceef282b856ab1c19b790c0225e25f24a169b2b90d1640116758"
+    }
+  ],
+  "_mirror_hash": "40b5a13ae0602ee90a999e41c5c7099b0f04f3756b85e2afa1e31f807302b32d",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.570257+00:00"
+}

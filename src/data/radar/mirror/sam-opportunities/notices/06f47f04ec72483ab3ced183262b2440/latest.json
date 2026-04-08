@@ -1,0 +1,46 @@
+{
+  "id": "sam-06f47f04ec72483ab3ced183262b2440",
+  "title": "Z--GAOA BAR ISLAND DAM RECONSTRUCTION",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=06f47f04ec72483ab3ced183262b2440",
+  "opportunity_url": "https://sam.gov/opp/06f47f04ec72483ab3ced183262b2440/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/06f47f04ec72483ab3ced183262b2440/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "06f47f04ec72483ab3ced183262b2440",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140L0626R0006",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.NATIONAL OPERATIONS CENTER",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=06f47f04ec72483ab3ced183262b2440",
+  "detail_text": "This is a pre-solicitation notice for GAOA BAR ISLAND DAM RECONSTRUCTION in accordance with drawings and specifications. The project is located at the bar Island Dam located in Phillips County, approximately 59 miles southwest of Malta, MT.",
+  "detail_text_length": 240,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1649d178b23c4ce9912ae856cff91ccd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1649d178b23c4ce9912ae856cff91ccd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/073fb252cc917df54cfe1eebd0479be2801953fece6c9b859fcef6bdca949916.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/073fb252cc917df54cfe1eebd0479be2801953fece6c9b859fcef6bdca949916.pdf",
+      "file_id": "1649d178b23c4ce9912ae856cff91ccd",
+      "file_name": "26R0006_PreSolNotice_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 171398,
+      "sha256": "073fb252cc917df54cfe1eebd0479be2801953fece6c9b859fcef6bdca949916"
+    }
+  ],
+  "_mirror_hash": "e84b10eb689b9249d4dedafc63d23c81d03b4d7cd63fe86246dea8477105a915",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.699045+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "sam-f042c3dbeec04e428c66f0bb168af1a9",
+  "title": "MSCPAC GSR IDIQ Rolling Admissions",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f042c3dbeec04e428c66f0bb168af1a9",
+  "opportunity_url": "https://sam.gov/opp/f042c3dbeec04e428c66f0bb168af1a9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f042c3dbeec04e428c66f0bb168af1a9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f042c3dbeec04e428c66f0bb168af1a9",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4044326R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSFSC.MILITARY SEALIFT COMMAND BATS",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f042c3dbeec04e428c66f0bb168af1a9",
+  "detail_text": "MSCPAC General Ship Repair IDIQ Rolling Admissions Request For Proposals",
+  "detail_text_length": 72,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15846b11d7b64bdd9120cf7cb8d1d676/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/333678aa07504b89be04e4758a6652fe/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b38f99834094208a2ef59ad637cbe33/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83f9381e1b7e4785856408df4f641508/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/846ad0bf769a4b19b2a49362550c52b4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94863365f88b4861b1cacd436e73f2cc/download"
+  ],
+  "resource_count": 6,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15846b11d7b64bdd9120cf7cb8d1d676/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4f744a985512b6122e0c8ab542456d1df243ffb1aa184797918a66658791ae8b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4f744a985512b6122e0c8ab542456d1df243ffb1aa184797918a66658791ae8b.pdf",
+      "file_id": "15846b11d7b64bdd9120cf7cb8d1d676",
+      "file_name": "N4044326R0001+Rolling+Admissions+RFP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2544689,
+      "sha256": "4f744a985512b6122e0c8ab542456d1df243ffb1aa184797918a66658791ae8b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/333678aa07504b89be04e4758a6652fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/78f14a4ce3d58603a48aebfb94740f9353ad9fce3d25dc3409f4231d0a4be6e8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/78f14a4ce3d58603a48aebfb94740f9353ad9fce3d25dc3409f4231d0a4be6e8.docx",
+      "file_id": "333678aa07504b89be04e4758a6652fe",
+      "file_name": "J-3+PP+Questionnaire_N4044326R6001_REV-1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1928098,
+      "sha256": "78f14a4ce3d58603a48aebfb94740f9353ad9fce3d25dc3409f4231d0a4be6e8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b38f99834094208a2ef59ad637cbe33/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/50c2cd2a909183595aaf61d4f59e5d80f9d6c7b16b51785aa9913af2f5794172.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/50c2cd2a909183595aaf61d4f59e5d80f9d6c7b16b51785aa9913af2f5794172.docx",
+      "file_id": "4b38f99834094208a2ef59ad637cbe33",
+      "file_name": "J-2+PP+Data_N4044326R6001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31718,
+      "sha256": "50c2cd2a909183595aaf61d4f59e5d80f9d6c7b16b51785aa9913af2f5794172"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83f9381e1b7e4785856408df4f641508/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3e3500702f29e1a87f0503b86c5e592d9e722d24361cfcf27916adea0bed6837.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3e3500702f29e1a87f0503b86c5e592d9e722d24361cfcf27916adea0bed6837.doc",
+      "file_id": "83f9381e1b7e4785856408df4f641508",
+      "file_name": "J-4+SF-LLL_N4044326R6001.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 68608,
+      "sha256": "3e3500702f29e1a87f0503b86c5e592d9e722d24361cfcf27916adea0bed6837"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/846ad0bf769a4b19b2a49362550c52b4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bc0cf51af389815e67d469fda734b28aeb74de4fd508420422f0d2979ce5d133.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bc0cf51af389815e67d469fda734b28aeb74de4fd508420422f0d2979ce5d133.docx",
+      "file_id": "846ad0bf769a4b19b2a49362550c52b4",
+      "file_name": "J-5+Statement+of+Work+-+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45063,
+      "sha256": "bc0cf51af389815e67d469fda734b28aeb74de4fd508420422f0d2979ce5d133"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94863365f88b4861b1cacd436e73f2cc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d2c4e2353b2114dbac308421cba6d6d81e52b905a6cc27e9ecf3ab1fea07de22.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d2c4e2353b2114dbac308421cba6d6d81e52b905a6cc27e9ecf3ab1fea07de22.docx",
+      "file_id": "94863365f88b4861b1cacd436e73f2cc",
+      "file_name": "J-1+Technical+NDA_N4044326R6001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36120,
+      "sha256": "d2c4e2353b2114dbac308421cba6d6d81e52b905a6cc27e9ecf3ab1fea07de22"
+    }
+  ],
+  "_mirror_hash": "a5556d5c4a085dd266dc3193d8506dace41e3f0a0544a3a9dd11972bed35927f",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.514234+00:00"
+}

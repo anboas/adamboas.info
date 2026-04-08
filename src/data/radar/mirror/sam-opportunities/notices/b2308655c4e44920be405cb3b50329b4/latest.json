@@ -1,0 +1,68 @@
+{
+  "id": "sam-b2308655c4e44920be405cb3b50329b4",
+  "title": "DB10--VA Long Beach Real Time Location System - Asst Tracking",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2308655c4e44920be405cb3b50329b4",
+  "opportunity_url": "https://sam.gov/opp/b2308655c4e44920be405cb3b50329b4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b2308655c4e44920be405cb3b50329b4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b2308655c4e44920be405cb3b50329b4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0604",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b2308655c4e44920be405cb3b50329b4",
+  "detail_text": "See attachments",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fa04d0c0dbb44008e396fa3cbcf5959/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/128cf4809063439fa683b9abd30eb57b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc53bad1a0145eb90e03872e1e907b5/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fa04d0c0dbb44008e396fa3cbcf5959/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d4c6e0805b12de8027720b8d3f07793a79b676a3db117aa4b265e33f5999e8dd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d4c6e0805b12de8027720b8d3f07793a79b676a3db117aa4b265e33f5999e8dd.docx",
+      "file_id": "0fa04d0c0dbb44008e396fa3cbcf5959",
+      "file_name": "36C26226Q0604.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14469,
+      "sha256": "d4c6e0805b12de8027720b8d3f07793a79b676a3db117aa4b265e33f5999e8dd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/128cf4809063439fa683b9abd30eb57b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c1aff47b09ee12835f3a8270c1b13c8e7794275415eb7f3068aabd4f9fabf389.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c1aff47b09ee12835f3a8270c1b13c8e7794275415eb7f3068aabd4f9fabf389.docx",
+      "file_id": "128cf4809063439fa683b9abd30eb57b",
+      "file_name": "RFI+for+VALB+RTLS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21225,
+      "sha256": "c1aff47b09ee12835f3a8270c1b13c8e7794275415eb7f3068aabd4f9fabf389"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bc53bad1a0145eb90e03872e1e907b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf7ff7ac4227dd980384b90871eedccaf50332f948d3a0fb0ce899b0a6f39b00.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf7ff7ac4227dd980384b90871eedccaf50332f948d3a0fb0ce899b0a6f39b00.docx",
+      "file_id": "2bc53bad1a0145eb90e03872e1e907b5",
+      "file_name": "Attachment+A+-+VALB++RTLS+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 50521,
+      "sha256": "cf7ff7ac4227dd980384b90871eedccaf50332f948d3a0fb0ce899b0a6f39b00"
+    }
+  ],
+  "_mirror_hash": "c645ab9c60823578fdf5142097e15f3f859e88d196bf2784e4715c805432a563",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.604516+00:00"
+}

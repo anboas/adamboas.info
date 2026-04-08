@@ -1,0 +1,58 @@
+{
+  "id": "sam-7c6ac477d381465685e344cf8f97042a",
+  "title": "Notice of Intent to Sole Source LynxOS v7.0.0 and v7.3.1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c6ac477d381465685e344cf8f97042a",
+  "opportunity_url": "https://sam.gov/opp/7c6ac477d381465685e344cf8f97042a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7c6ac477d381465685e344cf8f97042a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7c6ac477d381465685e344cf8f97042a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N68520-26-SIMACQ-KN00000-0091",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.FLEET READINESS CENTER",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c6ac477d381465685e344cf8f97042a",
+  "detail_text": "The Commander Fleet Readiness Center (COMFRC) hereby gives notice of their intent to award a Firm Fixed Price Purchase Order to Lynx Software Technologies, Inc., 855 Embedded Way, San Jose, CA on a sole source basis. In accordance with the Federal Acquisition Regulation (FAR) 13106-1(b)(1)(i), only one source reasonably available and no other supplies or services will satisfy agency requirements. The MH-60R/S Mission Software Fleet Support Team (MS FST) has been tasked to procure and maintain software. The software LynxOS is currently being used by the Original Equipment Manufacturer (OEM), Lockheed Martin. LynxOS v7.0.0 and v7.3.1 Real-Time Operating System (RTOS) are currently being used for the newer releases of the MH-60R/S software. Both real-time operating systems are part of the (FY26) software support services renewals. Lynx Software Technologies, Inc. is the Original Equipment Manufacturer (OEM) and sole developer of LynxOS, and as they do not authorize any resellers, they are the only source capable of providing the required proprietary software updates and support services. Included in the purchase: - Software License renewal P/N SPMLOSZZZ-PPC700 THIS NOTICE OF INTENT IS NOT A REQUEST FOR COMPETITIVE QUOTES. However, all responsible sources may submit a capability statement, which, if received within three (3) calendar days after the date of the publication of this synopsis, will be considered. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement without impacting the requirement. A determination by the Government not to compete this requirement based upon responses received as a result of this notice is solely within the discretion of the Government. The point of contact for this requirement is sean.s.quigley.civ@us.navy.mil",
+  "detail_text_length": 1836,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/532f78af29164888973e6f292588d7a7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe9f19d41b0548aa9f10e1cc4423345f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/532f78af29164888973e6f292588d7a7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d27f7297d065cf71ae97ae4ae0b214a4510118ee370aaf067ef3eee6771d3938.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d27f7297d065cf71ae97ae4ae0b214a4510118ee370aaf067ef3eee6771d3938.docx",
+      "file_id": "532f78af29164888973e6f292588d7a7",
+      "file_name": "SOW+FY26+LynxOSv7.0.0v7.3.1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 34444,
+      "sha256": "d27f7297d065cf71ae97ae4ae0b214a4510118ee370aaf067ef3eee6771d3938"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe9f19d41b0548aa9f10e1cc4423345f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/16df90359e256d97276aba2d3ffc8a0ec16bb15a53c81ef1b04f2d069e61f7fe.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/16df90359e256d97276aba2d3ffc8a0ec16bb15a53c81ef1b04f2d069e61f7fe.pdf",
+      "file_id": "fe9f19d41b0548aa9f10e1cc4423345f",
+      "file_name": "Lynx+Sole+Source+Justification+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 457742,
+      "sha256": "16df90359e256d97276aba2d3ffc8a0ec16bb15a53c81ef1b04f2d069e61f7fe"
+    }
+  ],
+  "_mirror_hash": "54d8c05799eebecffbbfa8a35019a73cf7b7e2b5fca460a20324a6f8d9a3d870",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.440985+00:00"
+}

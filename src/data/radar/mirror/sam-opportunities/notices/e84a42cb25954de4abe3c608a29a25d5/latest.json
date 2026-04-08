@@ -1,0 +1,68 @@
+{
+  "id": "sam-e84a42cb25954de4abe3c608a29a25d5",
+  "title": "T-7 Sunshade Shelters",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e84a42cb25954de4abe3c608a29a25d5",
+  "opportunity_url": "https://sam.gov/opp/e84a42cb25954de4abe3c608a29a25d5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e84a42cb25954de4abe3c608a29a25d5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e84a42cb25954de4abe3c608a29a25d5",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA301626R0026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e84a42cb25954de4abe3c608a29a25d5",
+  "detail_text": "The 12th Maintenance Group is installing new sunshades to support the initial deployment of T-7A aircrafts. The project includes three new bays in total. One of these bays will be added to an existing row of sunshades that is already scheduled for installation. The other two bays will be constructed as a new, standalone row. Each bay is designed to shelter two T-7A aircrafts. This will be solicited as a Sole Source based on the awarding this to any other firm would be impractical, as it would require them to attach their structure to the end of the existing row, which would violate the warranty of the work currently underway and create unacceptable risk for the government.",
+  "detail_text_length": 681,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/171136082b2d406aa7a7e3d107b2f433/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42aee33212f844a2b4aacd40a026c8ba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b067377cc9214342905b5e82ffe28f19/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/171136082b2d406aa7a7e3d107b2f433/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a09b02a903ea5e8ecf047dca77c2f1236a7855deb888b2eb2198f21951d685c7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a09b02a903ea5e8ecf047dca77c2f1236a7855deb888b2eb2198f21951d685c7.pdf",
+      "file_id": "171136082b2d406aa7a7e3d107b2f433",
+      "file_name": "JA+for+Other+Than+Full+Open_Signed1_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 179727,
+      "sha256": "a09b02a903ea5e8ecf047dca77c2f1236a7855deb888b2eb2198f21951d685c7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/42aee33212f844a2b4aacd40a026c8ba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6e619ca5cb124488082c045872af5ecf747331987589561d6d641498eb7137c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6e619ca5cb124488082c045872af5ecf747331987589561d6d641498eb7137c1.pdf",
+      "file_id": "42aee33212f844a2b4aacd40a026c8ba",
+      "file_name": "DRAFT+SOW+Attachment+6+-+Required+Submittals.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 527963,
+      "sha256": "6e619ca5cb124488082c045872af5ecf747331987589561d6d641498eb7137c1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b067377cc9214342905b5e82ffe28f19/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/621f3843a9645aa3d8a45379f0b70178e9181c8602ef1c06f4876d082ad511f9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/621f3843a9645aa3d8a45379f0b70178e9181c8602ef1c06f4876d082ad511f9.pdf",
+      "file_id": "b067377cc9214342905b5e82ffe28f19",
+      "file_name": "DRAFT+SOW+Randolph+T7+Shelter+Addition+-+4+Feb+26+-+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 6330648,
+      "sha256": "621f3843a9645aa3d8a45379f0b70178e9181c8602ef1c06f4876d082ad511f9"
+    }
+  ],
+  "_mirror_hash": "585fc58fb5996bc9af60bc78e6cf249b517e9f2797d9510ace021d3e4a8120ef",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.723854+00:00"
+}

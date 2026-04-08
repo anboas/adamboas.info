@@ -1,0 +1,79 @@
+{
+  "id": "sam-db37a48363b8402683ad5ded8e5af70a",
+  "title": "US GPO-QCIM Room Renovation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db37a48363b8402683ad5ded8e5af70a",
+  "opportunity_url": "https://sam.gov/opp/db37a48363b8402683ad5ded8e5af70a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/db37a48363b8402683ad5ded8e5af70a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "db37a48363b8402683ad5ded8e5af70a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "040ADV-26-R-0012-0001",
+  "agency_path": "UNITED STATES GOVERNMENT PUBLISHING OFFICE.UNITED STATES GOVERNMENT PUBLISHING OFFICE.Acquisition Services",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db37a48363b8402683ad5ded8e5af70a",
+  "detail_text": "The purpose of this amendment is to provide responses to questions, revise the Statement of Work (changes shown in red), incorporate Attachment J.11, and extend the proposal due date to May 1, 2026, at 5:00 PM EST.",
+  "detail_text_length": 214,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d6e64efad1041468fc361bb3734506f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/406f687a487442638acaef69ab6837f1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7d83c8cf1ca4a19bb490cbb0941dc98/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd104bd868414d98b3eef60294b04713/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d6e64efad1041468fc361bb3734506f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3d0d08bf38a4b10bd02cc73fff8e32622a11f46d8413f240832db49d7d259c27.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3d0d08bf38a4b10bd02cc73fff8e32622a11f46d8413f240832db49d7d259c27.xlsx",
+      "file_id": "3d6e64efad1041468fc361bb3734506f",
+      "file_name": "QA-040ADV-26-R-0012.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18183,
+      "sha256": "3d0d08bf38a4b10bd02cc73fff8e32622a11f46d8413f240832db49d7d259c27"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/406f687a487442638acaef69ab6837f1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6db6ba29d265d666d0231d8e5822ce08bc166dfab78a121f10b0282587ca010e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6db6ba29d265d666d0231d8e5822ce08bc166dfab78a121f10b0282587ca010e.pdf",
+      "file_id": "406f687a487442638acaef69ab6837f1",
+      "file_name": "040ADV-26-R-0012-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 624987,
+      "sha256": "6db6ba29d265d666d0231d8e5822ce08bc166dfab78a121f10b0282587ca010e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7d83c8cf1ca4a19bb490cbb0941dc98/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e108555d134975c9385e5a1330a4fae70d82bb036783c54fc6153eab9bfbd7a8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e108555d134975c9385e5a1330a4fae70d82bb036783c54fc6153eab9bfbd7a8.pdf",
+      "file_id": "b7d83c8cf1ca4a19bb490cbb0941dc98",
+      "file_name": "J.+11+Laboratory+Fume+Hood+User-s+Manual.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2986378,
+      "sha256": "e108555d134975c9385e5a1330a4fae70d82bb036783c54fc6153eab9bfbd7a8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd104bd868414d98b3eef60294b04713/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b09aa968b7ed8b6e45f83ddc7ac468ee77667a26b130800e7a66fe589d32e0d8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b09aa968b7ed8b6e45f83ddc7ac468ee77667a26b130800e7a66fe589d32e0d8.pdf",
+      "file_id": "dd104bd868414d98b3eef60294b04713",
+      "file_name": "040ADV-26-R-0012-0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 172367,
+      "sha256": "b09aa968b7ed8b6e45f83ddc7ac468ee77667a26b130800e7a66fe589d32e0d8"
+    }
+  ],
+  "_mirror_hash": "11ff03b4813fb0270202d5857be331deca96775a0fd0e338739ca54446b5d5b4",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.731880+00:00"
+}

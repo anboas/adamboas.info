@@ -1,0 +1,46 @@
+{
+  "id": "sam-e40b5dd0ef084335989c8887437e401a",
+  "title": "C-5 Engine Cowls",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e40b5dd0ef084335989c8887437e401a",
+  "opportunity_url": "https://sam.gov/opp/e40b5dd0ef084335989c8887437e401a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e40b5dd0ef084335989c8887437e401a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e40b5dd0ef084335989c8887437e401a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "SPRWA1-26-Q-0005-0002",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION WARNER ROBINS.DLA AVIATION AT WARNER ROBINS, GA",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e40b5dd0ef084335989c8887437e401a",
+  "detail_text": "Solicitation Amendment 2",
+  "detail_text_length": 24,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66050b1ab1254bfdb0692384db79e65f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66050b1ab1254bfdb0692384db79e65f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a10a7b3f4ab6d8d71ec513164b251db18e0cf800091d74bd90cf1eb5b4db5598.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a10a7b3f4ab6d8d71ec513164b251db18e0cf800091d74bd90cf1eb5b4db5598.pdf",
+      "file_id": "66050b1ab1254bfdb0692384db79e65f",
+      "file_name": "SPRWA1-26-Q-0005-0002+-7+Apr+26-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 978707,
+      "sha256": "a10a7b3f4ab6d8d71ec513164b251db18e0cf800091d74bd90cf1eb5b4db5598"
+    }
+  ],
+  "_mirror_hash": "3551b8a12558453d93957b07b8781878a8c66a631423cad7e8ee9ea665613108",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.645357+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-bdbbe33366694a97b4d0912f329d8d7e",
+  "title": "Borescope Flexible Inspection Scope",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdbbe33366694a97b4d0912f329d8d7e",
+  "opportunity_url": "https://sam.gov/opp/bdbbe33366694a97b4d0912f329d8d7e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bdbbe33366694a97b4d0912f329d8d7e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bdbbe33366694a97b4d0912f329d8d7e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C25526Q0314",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdbbe33366694a97b4d0912f329d8d7e",
+  "detail_text": "Eastern Kansas Healthcare System is requesting Video Borescope - flexible inspection scopes. Amended to included updated RFQ.",
+  "detail_text_length": 125,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f456db575114b3cb13e96c867e1c66f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3485a5b529947bc818df50bb1bb95de/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f456db575114b3cb13e96c867e1c66f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d4c15b67c4eadf61728d2b4bca232c0574a7ca0dd1f7bdf938689651929c933a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d4c15b67c4eadf61728d2b4bca232c0574a7ca0dd1f7bdf938689651929c933a.docx",
+      "file_id": "7f456db575114b3cb13e96c867e1c66f",
+      "file_name": "36C25526Q0314.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132300,
+      "sha256": "d4c15b67c4eadf61728d2b4bca232c0574a7ca0dd1f7bdf938689651929c933a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3485a5b529947bc818df50bb1bb95de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e8ca320a3fee89e0c14365357f2408825b3658c412e63a9e251e10f487505402.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e8ca320a3fee89e0c14365357f2408825b3658c412e63a9e251e10f487505402.docx",
+      "file_id": "f3485a5b529947bc818df50bb1bb95de",
+      "file_name": "36C25526Q0314+0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 44769,
+      "sha256": "e8ca320a3fee89e0c14365357f2408825b3658c412e63a9e251e10f487505402"
+    }
+  ],
+  "_mirror_hash": "3cd5cedc7f69204b23d820b66511edf80b2478de6c1d6b961c37e5964ca1d3ed",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.639483+00:00"
+}

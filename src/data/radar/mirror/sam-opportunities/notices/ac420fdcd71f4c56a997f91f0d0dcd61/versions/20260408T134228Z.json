@@ -1,0 +1,67 @@
+{
+  "id": "sam-ac420fdcd71f4c56a997f91f0d0dcd61",
+  "title": "VALVE TEMP CONTROL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ac420fdcd71f4c56a997f91f0d0dcd61",
+  "opportunity_url": "https://sam.gov/opp/ac420fdcd71f4c56a997f91f0d0dcd61/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ac420fdcd71f4c56a997f91f0d0dcd61/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ac420fdcd71f4c56a997f91f0d0dcd61",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS240",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ac420fdcd71f4c56a997f91f0d0dcd61",
+  "detail_text": "Amendment 0001 posted on 7 April 2026 to update Notice to Offerors and extend closing date. Please see Notice to Offerors on page 4 of Amendment. NAVSUP Fleet Logistics Center Puget Sound intends to solicit and contract a firm fixed price, supply type contract for OEM Valve Temp Control with only one source, AMOT, on a Brand Name basis. See attached solicitation for requirements. Solicitation closes on 17 March 2026 at 10:00 AM PDT. The Government anticipates awarding on or about 7 April 2026. All questions regarding this solicitation should be submitted to Vicktoria Wright, vicktoria.e.wright.civ@us.navy.mil.",
+  "detail_text_length": 617,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29a45040d59f48fa9d8e2d46575a33b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84541105cc2d4a5db27cdbfc559b3f91/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a92a060384804f25b372f91479c7135e/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29a45040d59f48fa9d8e2d46575a33b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2bf04c22fbbd13da9365311e35486901e9798f2e9355eb2f36222ab0a120d093.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2bf04c22fbbd13da9365311e35486901e9798f2e9355eb2f36222ab0a120d093.pdf",
+      "file_id": "29a45040d59f48fa9d8e2d46575a33b1",
+      "file_name": "1301335017+One+Source+Justification+-+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 299200,
+      "sha256": "2bf04c22fbbd13da9365311e35486901e9798f2e9355eb2f36222ab0a120d093"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84541105cc2d4a5db27cdbfc559b3f91/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/460a75ff07c107b7418f54f494198696a34890b3535dff2ac2e272cc0bc88e7d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/460a75ff07c107b7418f54f494198696a34890b3535dff2ac2e272cc0bc88e7d.pdf",
+      "file_id": "84541105cc2d4a5db27cdbfc559b3f91",
+      "file_name": "26QS240+Solicitation+Amendment.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15724839,
+      "sha256": "460a75ff07c107b7418f54f494198696a34890b3535dff2ac2e272cc0bc88e7d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a92a060384804f25b372f91479c7135e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15f7306729e7a0d00d1093c700a99fefae3475b39d82f00b2644fd95a19caf70.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15f7306729e7a0d00d1093c700a99fefae3475b39d82f00b2644fd95a19caf70.pdf",
+      "file_id": "a92a060384804f25b372f91479c7135e",
+      "file_name": "N0040626QS240+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1836748,
+      "sha256": "15f7306729e7a0d00d1093c700a99fefae3475b39d82f00b2644fd95a19caf70"
+    }
+  ],
+  "_mirror_hash": "92a4371652056d394d0a9b5fbe9d7f9a38df6152428cf728e9c0d4f851678209",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.458847+00:00"
+}

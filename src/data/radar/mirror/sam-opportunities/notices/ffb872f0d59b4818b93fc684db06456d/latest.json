@@ -1,0 +1,46 @@
+{
+  "id": "sam-ffb872f0d59b4818b93fc684db06456d",
+  "title": "Notice of Intent to Sole Source",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffb872f0d59b4818b93fc684db06456d",
+  "opportunity_url": "https://sam.gov/opp/ffb872f0d59b4818b93fc684db06456d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ffb872f0d59b4818b93fc684db06456d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ffb872f0d59b4818b93fc684db06456d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "15205",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8222  AFSC OL H PZIE",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffb872f0d59b4818b93fc684db06456d",
+  "detail_text": "Notice of Intent to Award a Sole-Source Contract to Xtreme Engineering Solutions Inc. (X-ES) for Chassis 1. This notice is being published in accordance with Federal Acquisition Regulation Subpart 5.101 requiring dissemination of information for proposed contract actions. This is a notice of intent to award a sole-source contract; it is not a request for competitive proposals. The 521 Software Squadron (521SWES), supporting F-35 Joint Program Office (JPO), intends to solicit and negotiate a firm-fixed-price contract exclusively with Xtreme Engineering Solutions Inc. (X-ES). 2. The Government requires the following items: North American Industry Classification System (NAICS) code: 334111 Product Service Code (PSC) / Federal Supply Classification (FSC): 5998 PN: 90072665-2 Description: XPand1203, Chassis, 3U, VPX, Dev Platform for Cond. cooled Modules, Pass through Backplane, w/RT3 PN: 90075300-4 Description: XPand1007, Chassis, 3U, VPX, 2 slot Cond. Cooled, Pass Through Backplane, RT3, XPm1520 3. The statutory authority permitting this action is FAR 13.106-1(B) (1) \"Soliciting from a single source. (1) For purchases not exceeding the simplified acquisition threshold. (i) Contracting officers may solicit from one source if the contracting officer determines that the circumstances of the contract action deem only one source reasonably available (e.g., urgency, exclusive licensing agreements, brand-name or industrial mobilization).” X-ES is the Original Equipment Manufacturer (OEM) of the required chassis. X-ES does not have authorized resellers. The Government does not possess the technical data package or intellectual property rights required to have this item manufactured by any other source. A new source would require significant time and investment to reverse-engineer, test, and receive source approval, which would result in unacceptable delays to the program. 4. Submission of Information All responsible sources may identify their interest and submit a capability statement in response to this notice. All responses received within five (5) business days of this notice's publication will be considered by the Government. Responses must demonstrate the capability to provide the exact part number listed above. 5. Disclaimer A determination by the Government not to compete with this proposed contract based on responses to this notice is solely within the discretion of the Government. The award will not be delayed for the purpose of evaluating new sources or pending source approval. It is estimated that an award will be made no later than 07 May 2026.",
+  "detail_text_length": 2591,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e6d1da511454905bdc0d1b865dbc925/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e6d1da511454905bdc0d1b865dbc925/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a6f1b7e6c7f1370a92ec3f711287bad2db319b7b574c30b5e7c005807a85ec7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a6f1b7e6c7f1370a92ec3f711287bad2db319b7b574c30b5e7c005807a85ec7.pdf",
+      "file_id": "3e6d1da511454905bdc0d1b865dbc925",
+      "file_name": "single_source_justification_03.24.2026_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 314053,
+      "sha256": "4a6f1b7e6c7f1370a92ec3f711287bad2db319b7b574c30b5e7c005807a85ec7"
+    }
+  ],
+  "_mirror_hash": "3eb2ffdc5553fdb085261cf96c51096f486461b81037efb322b4f16805e13966",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.679850+00:00"
+}

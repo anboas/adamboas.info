@@ -1,0 +1,79 @@
+{
+  "id": "sam-1c7ddff334104c4599f0a9806e815999",
+  "title": "Non-Temporary Storage of Retrograde (NTS-R)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c7ddff334104c4599f0a9806e815999",
+  "opportunity_url": "https://sam.gov/opp/1c7ddff334104c4599f0a9806e815999/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1c7ddff334104c4599f0a9806e815999/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1c7ddff334104c4599f0a9806e815999",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "TRANSCOM26R005",
+  "agency_path": "DEPT OF DEFENSE.US TRANSPORTATION COMMAND (USTRANSCOM).USTRANSCOM-AQ",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c7ddff334104c4599f0a9806e815999",
+  "detail_text": "UPDATE: 22 January 2026, Due to technical difficulties experienced with accessing the RFI not in PDF, providing an extension to 3:00p CT, 6 February 2026. UPDATE 21 January 2026, Providing RFI Questionnairie in PDF. USTRANSCOM is conducting market research seeking information to determine the availability and technical capability of the business community to provide non-temporary storage. USTRANSCOM will not be obligated to pursue any particular acquisition alternative as a result of this Request for Information. The Government is not obligated to and will not pay for any information received from any sources responding to this questionnaire. Responses to this notice are not offers and cannot be accepted by the U.S. Government to form a binding contract or agreement. All responses will be kept confidential. Please be advised that all submissions become property of the Government and will not be returned. USTRANSCOM is seeking information to determine the availability and technical capability of the business community to provide comprehensive, long-term storage services to military and civilian personnel of the U.S. Department of War (DoW), specifically for Household Goods (HHG) belonging to deployed personnel shipped inbound to the East and West coasts of the United States from overseas. The overall scope of this program is to provide DoW approved storage facilities, operating authority, permits and licenses, labor services, materials, supervision, management, personnel, office space and file storage, mandatory insurance, equipment and all other services required to receive, handle-in, store, and handle-out HHG.",
+  "detail_text_length": 1639,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b71c32de8594857aa05963868a504d6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83300000843840628d5a707790af0f06/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8be05820a78a4fae866c1a65f6653013/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10616c2c01e41f995ebe2fc1c182c40/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b71c32de8594857aa05963868a504d6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ed81d2b78342ebc1426510dbc758b2ed43dbef03536f78991cc6217db2c87c2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ed81d2b78342ebc1426510dbc758b2ed43dbef03536f78991cc6217db2c87c2.pdf",
+      "file_id": "2b71c32de8594857aa05963868a504d6",
+      "file_name": "NTS-R+RFI+2+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 134064,
+      "sha256": "0ed81d2b78342ebc1426510dbc758b2ed43dbef03536f78991cc6217db2c87c2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83300000843840628d5a707790af0f06/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/db9b9d3f2892c2173131ac06bd683f606ae422fcce40f55e296307c42e0349c2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/db9b9d3f2892c2173131ac06bd683f606ae422fcce40f55e296307c42e0349c2.docx",
+      "file_id": "83300000843840628d5a707790af0f06",
+      "file_name": "2026.01.16+NTS-R+RFI+Final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56832,
+      "sha256": "db9b9d3f2892c2173131ac06bd683f606ae422fcce40f55e296307c42e0349c2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8be05820a78a4fae866c1a65f6653013/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/097563517e80d5649f9cf512b46804eda135b73c352ac65ede2353a9d7286365.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/097563517e80d5649f9cf512b46804eda135b73c352ac65ede2353a9d7286365.pdf",
+      "file_id": "8be05820a78a4fae866c1a65f6653013",
+      "file_name": "NTSR+PWS+2026.01.16.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 398170,
+      "sha256": "097563517e80d5649f9cf512b46804eda135b73c352ac65ede2353a9d7286365"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10616c2c01e41f995ebe2fc1c182c40/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6f159e959f918a78629db22c29026f9a39a0dbfd63e9a917d59489a7b51eba60.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6f159e959f918a78629db22c29026f9a39a0dbfd63e9a917d59489a7b51eba60.pdf",
+      "file_id": "d10616c2c01e41f995ebe2fc1c182c40",
+      "file_name": "2026.01.16+NTS-R+RFI+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 139972,
+      "sha256": "6f159e959f918a78629db22c29026f9a39a0dbfd63e9a917d59489a7b51eba60"
+    }
+  ],
+  "_mirror_hash": "5c2fa5f5b2e6ce19dfa868481e8c5188eb203287d031d4fe18fa2e643856767c",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.624864+00:00"
+}

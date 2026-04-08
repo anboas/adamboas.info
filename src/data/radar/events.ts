@@ -16335,4 +16335,110 @@ export const radarEventsSeed: RadarEvent[] = [
 			}
 		}
 	},
+	{
+		id: 'radar-advanced-energy-storage-for-defense-security-summit-2026',
+		title: 'Advanced Energy Storage for Defense & Security Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-05-27',
+		endDate: '2026-05-28',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'National Harbor',
+			state: 'MD',
+			country: 'USA',
+			lat: 38.783342,
+			lng: -77.0148285
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['advanced', 'energy', 'storage', 'defense', 'security'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25995'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Source confirms title, date range, city, and official event URL. No public government contact, SAM notice type, solicitation number, response due date, or registration deadline published as of 2026-02-13.'
+		}
+	},
+	{
+		id: 'radar-future-soldier-technology-usa-conference-2026',
+		title: 'Future Soldier Technology USA Conference 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-06-01',
+		endDate: '2026-06-02',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8769326,
+			lng: -77.0893094
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['future', 'soldier', 'technology', 'conference', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25900'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				travelBurdenFromDc: 'Low'
+			},
+			notes: 'Source confirms title, date range, city, and official event URL. No public government contact, SAM notice type, solicitation number, response due date, or registration deadline published as of 2026-02-13.'
+		}
+	},
 ];

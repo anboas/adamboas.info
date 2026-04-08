@@ -1,0 +1,67 @@
+{
+  "id": "sam-942c3ee76e204ee9873bb6f235433aab",
+  "title": "RFP N6523626R3007",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=942c3ee76e204ee9873bb6f235433aab",
+  "opportunity_url": "https://sam.gov/opp/942c3ee76e204ee9873bb6f235433aab/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/942c3ee76e204ee9873bb6f235433aab/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "942c3ee76e204ee9873bb6f235433aab",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6523626R3007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.SPAWAR.SPAWAR LANT.NIWC ATLANTIC",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=942c3ee76e204ee9873bb6f235433aab",
+  "detail_text": "Request for Proposal for Command, Control, Communications, Computer, Intelligence, Surveillance, and Reconnaissance Sustainment III ***This opportunity is for SEAPORT NXG MAC HOLDERS ONLY and is a SMALL BUSINESS SET ASIDE. No other offers will be considered. SeaPort MAC holders will need to register for PIEE accounts in order to receive solicitations and submit proposals/offers.*** Amendment 0003 revises Section C PWS paragraph 4.3.4 to change the Quantity Personnel for the Intelligence Specialist II to 42 and Intelligence Specialist III to 15 and paragraph 8.2.1.1 to include the number of labor hours for the Logistician II that require a Secret PCL and Top Secret PCL; 2) revises Section L clause L-317 (b) to state that a contingent lease or letter of intent will not count towards the 2-page limit for Factor B and revises clause L-349, paragraph (e) to instruct subcontractors to submit their unsanitized proposal to the Contract Specialist via email; 3) adds a note to Section J explaining that the DD254 block 1b will be revised in the final, award DD254; and 4) revises Attachment 12 Prime Pricing Model and Attachment 13 Subcontractor Pricing Model to specify the required Personal Clearance Level, the applicability of Sensitive Compartmented Information, and the Cybersecurity Workforce (CSWF) designation for each labor category. Additionally, the QA document has been added to this amendment.",
+  "detail_text_length": 1412,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24a5768cf7ae4c5abdf4f7121186c70b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b4ec6f2a1324b5db674cabf203b3a03/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9203737eeb0e4353b244e2ea357aa099/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24a5768cf7ae4c5abdf4f7121186c70b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b099ed3efc97da8b0d9205472722719c48e6048e96662f5ca5e0a55342ffae07.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b099ed3efc97da8b0d9205472722719c48e6048e96662f5ca5e0a55342ffae07.pdf",
+      "file_id": "24a5768cf7ae4c5abdf4f7121186c70b",
+      "file_name": "Solicitation+Amendment+N6523626R30070001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 587481,
+      "sha256": "b099ed3efc97da8b0d9205472722719c48e6048e96662f5ca5e0a55342ffae07"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b4ec6f2a1324b5db674cabf203b3a03/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0647b51df1060a7e4a9df3f85cd2db5f1470d34983e7a1ef758e4da2a6717b1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0647b51df1060a7e4a9df3f85cd2db5f1470d34983e7a1ef758e4da2a6717b1.docx",
+      "file_id": "6b4ec6f2a1324b5db674cabf203b3a03",
+      "file_name": "QA+for+N6523626R3007.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14618,
+      "sha256": "b0647b51df1060a7e4a9df3f85cd2db5f1470d34983e7a1ef758e4da2a6717b1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9203737eeb0e4353b244e2ea357aa099/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d5f89c7a4c95895735d3ef9440e1086684e6c79fbb7ae7b952430e80103424c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d5f89c7a4c95895735d3ef9440e1086684e6c79fbb7ae7b952430e80103424c.docx",
+      "file_id": "9203737eeb0e4353b244e2ea357aa099",
+      "file_name": "Section+L_Revised+for+Amendment+0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76908,
+      "sha256": "2d5f89c7a4c95895735d3ef9440e1086684e6c79fbb7ae7b952430e80103424c"
+    }
+  ],
+  "_mirror_hash": "4dd494ce827239924e1ca9189f563a6509f5b935cb3c4f18909a04dd25b6e130",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.480172+00:00"
+}

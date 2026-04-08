@@ -1,0 +1,45 @@
+{
+  "id": "sam-df8fd1f8c20648fdabc76400319196d0",
+  "title": "Poppet and Seat Assembly",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=df8fd1f8c20648fdabc76400319196d0",
+  "opportunity_url": "https://sam.gov/opp/df8fd1f8c20648fdabc76400319196d0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/df8fd1f8c20648fdabc76400319196d0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "df8fd1f8c20648fdabc76400319196d0",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QZB09",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=df8fd1f8c20648fdabc76400319196d0",
+  "detail_text": "NSN: 3HD 4820-01-381-0275 L1 This is a level 1 requirement for the procurement of Poppet and Seat Assemblies with a quantity of 15. Please see the attached solicitation for full information.",
+  "detail_text_length": 190,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94a1410ec9764053b1a0bed32d1a662f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94a1410ec9764053b1a0bed32d1a662f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/540f355a746655d25040221a035eab80c12946f2c44bcdf727b6955a36ddc000.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/540f355a746655d25040221a035eab80c12946f2c44bcdf727b6955a36ddc000.pdf",
+      "file_id": "94a1410ec9764053b1a0bed32d1a662f",
+      "file_name": "3.01_Solicitation_N0010426QZB09_22153-0044.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 924628,
+      "sha256": "540f355a746655d25040221a035eab80c12946f2c44bcdf727b6955a36ddc000"
+    }
+  ],
+  "_mirror_hash": "8c59dfce1b9c0e796d166b39a8d938f26bd240b926d7f6065ad0fc6de742b7c6",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.507502+00:00"
+}

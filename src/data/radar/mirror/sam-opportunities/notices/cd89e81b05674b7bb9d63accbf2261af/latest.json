@@ -1,0 +1,45 @@
+{
+  "id": "sam-cd89e81b05674b7bb9d63accbf2261af",
+  "title": "USS MIGUEL KEITH (ESB 5) MTA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd89e81b05674b7bb9d63accbf2261af",
+  "opportunity_url": "https://sam.gov/opp/cd89e81b05674b7bb9d63accbf2261af/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cd89e81b05674b7bb9d63accbf2261af/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cd89e81b05674b7bb9d63accbf2261af",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926RL004",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd89e81b05674b7bb9d63accbf2261af",
+  "detail_text": "USS MIGUEL KEITH (ESB 5) Mid-Term Availability (MTA). Place of Performance: Thailand or Singapore. Contractor must be MSRA/ABR holder. Please see attached solicitation. If interested in submitting a proposal, please contact via email at Hipolito.p.ferrer.civ@us.navy.mil for the solicitation attachments, including the specifications and references to be sent separately via DoDSafe email.",
+  "detail_text_length": 389,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc1f2b2de5574f5196c3e829ed320660/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc1f2b2de5574f5196c3e829ed320660/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0d0481a7524abfc2a2e7d5a515f7d04a400352bfa49c5827e9615b410256cca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0d0481a7524abfc2a2e7d5a515f7d04a400352bfa49c5827e9615b410256cca.pdf",
+      "file_id": "dc1f2b2de5574f5196c3e829ed320660",
+      "file_name": "Solicitation+-+N6264926RL004.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2648579,
+      "sha256": "b0d0481a7524abfc2a2e7d5a515f7d04a400352bfa49c5827e9615b410256cca"
+    }
+  ],
+  "_mirror_hash": "cc796887cbe651aaf9946150200f62ac25eada4dc8cf12da39e0aad4a2adbcc6",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.513679+00:00"
+}

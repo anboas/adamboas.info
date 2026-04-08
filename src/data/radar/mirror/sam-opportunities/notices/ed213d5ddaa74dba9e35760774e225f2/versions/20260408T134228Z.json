@@ -1,0 +1,57 @@
+{
+  "id": "sam-ed213d5ddaa74dba9e35760774e225f2",
+  "title": "FIRE PUMP",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ed213d5ddaa74dba9e35760774e225f2",
+  "opportunity_url": "https://sam.gov/opp/ed213d5ddaa74dba9e35760774e225f2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ed213d5ddaa74dba9e35760774e225f2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ed213d5ddaa74dba9e35760774e225f2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "70Z08526Q40106B00",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 2(00085)",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ed213d5ddaa74dba9e35760774e225f2",
+  "detail_text": "4820-01-722-8444 4\" CLA-VAL MODEL 50-20KO FIRE PUMP QTY 04EA",
+  "detail_text_length": 60,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/123c12c625114d1d943a1767d6e2397a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/716b852cb86c4fb28b20040bc2267821/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/123c12c625114d1d943a1767d6e2397a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8ebede1787d9e6d65b714bdeef426324ceb83516ff88a11bb9836259b487c312.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8ebede1787d9e6d65b714bdeef426324ceb83516ff88a11bb9836259b487c312.docx",
+      "file_id": "123c12c625114d1d943a1767d6e2397a",
+      "file_name": "TAB+12+SOLICITATION+70Z08526Q40106B00.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49069,
+      "sha256": "8ebede1787d9e6d65b714bdeef426324ceb83516ff88a11bb9836259b487c312"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/716b852cb86c4fb28b20040bc2267821/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/191d214af2d57336e87fe17d7dd092487e47a2d58b5f9cd09e4bcaf83306e585.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/191d214af2d57336e87fe17d7dd092487e47a2d58b5f9cd09e4bcaf83306e585.docx",
+      "file_id": "716b852cb86c4fb28b20040bc2267821",
+      "file_name": "TAB+12+FAR+Clauses+70Z08526Q40106B00.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 92363,
+      "sha256": "191d214af2d57336e87fe17d7dd092487e47a2d58b5f9cd09e4bcaf83306e585"
+    }
+  ],
+  "_mirror_hash": "0d579eb0cfcc47927fb956bcf35ec3b2ece339c87959ac3a70e24f9aaecb4531",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.662740+00:00"
+}

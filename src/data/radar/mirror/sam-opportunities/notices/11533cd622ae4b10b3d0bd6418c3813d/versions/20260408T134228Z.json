@@ -1,0 +1,46 @@
+{
+  "id": "sam-11533cd622ae4b10b3d0bd6418c3813d",
+  "title": "ThinkTrends Software Implementation and Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=11533cd622ae4b10b3d0bd6418c3813d",
+  "opportunity_url": "https://sam.gov/opp/11533cd622ae4b10b3d0bd6418c3813d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/11533cd622ae4b10b3d0bd6418c3813d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "11533cd622ae4b10b3d0bd6418c3813d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FDA-SS_2026-040726",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.FOOD AND DRUG ADMINISTRATION.FDA OFFICE OF ACQ  GRANT SVCS",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=11533cd622ae4b10b3d0bd6418c3813d",
+  "detail_text": "Sources Sought Notice: 1. Purpose The FDA is conducting market research to identify capable vendors to support the implementation and integration of ThinkTrends software and related human interventions across FDA operations. This enhanced effort will leverage Artificial Intelligence (AI), automation, and emerging technologies to improve operational efficiency, data management, and regulatory processes. This Sources Sought notice is for information and planning purposes only and is not a solicitation. Responses will be used to determine the availability of qualified vendors and to inform future acquisition strategy, including potential sole-source justification or competitive procurement. Background The BPA will support FDA’s efforts in: Advanced Data Management: Data migration, integration, cleansing, cataloging, annotation, and implementation of data lakes or data mesh architectures. Emerging Technology Integration: RPA, AI-based OCR (>90% accuracy), blockchain, edge computing, generative AI, NLP, and LLMs for document summarization. Intelligent Question-Answering: AI-assisted drafting of regulatory responses, highlighting issues, and providing contextual/historical data. Advanced Visualization & Analytics: Interactive dashboards, predictive analytics, and virtual/augmented reality for data visualization. Automation & Process Enhancements: Workflow automation, AI-driven quality control, and regulatory tracking. FDA System Enhancements: Next-generation OCR, FAERS support with AI signal detection, and intelligent digitization of document rooms. Data-Driven Tools: AI decision support, predictive models, and digital twins to optimize regulatory processes. User Experience Improvements: Intuitive AI-assisted interfaces, personalized dashboards, and voice-activated assistants. Comprehensive Support: ThinkTrends license acquisition, agile project management, and continuous staff training. Continues on the attached document.",
+  "detail_text_length": 1950,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8dc4178344f241b8bcad198a88e32857/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8dc4178344f241b8bcad198a88e32857/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c6ab4edc3e9cc4a32f803fdc1baa1769a062bdd3fdc0e5640932b1dc7d0fc79d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c6ab4edc3e9cc4a32f803fdc1baa1769a062bdd3fdc0e5640932b1dc7d0fc79d.pdf",
+      "file_id": "8dc4178344f241b8bcad198a88e32857",
+      "file_name": "SOURCES+SOUGHT+NOTICE.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 239450,
+      "sha256": "c6ab4edc3e9cc4a32f803fdc1baa1769a062bdd3fdc0e5640932b1dc7d0fc79d"
+    }
+  ],
+  "_mirror_hash": "47a9a8787c7220f7d4d14d5c259d50427be189fdf1f79e4c21d20ebd9e34f43d",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.658687+00:00"
+}

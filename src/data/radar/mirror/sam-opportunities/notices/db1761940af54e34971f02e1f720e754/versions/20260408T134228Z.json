@@ -1,0 +1,48 @@
+{
+  "id": "sam-db1761940af54e34971f02e1f720e754",
+  "title": "Virtual Industry Day - Aircraft Maintenance Hangar at CSL Comalapa, El Salvador",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db1761940af54e34971f02e1f720e754",
+  "opportunity_url": "https://sam.gov/opp/db1761940af54e34971f02e1f720e754/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/db1761940af54e34971f02e1f720e754/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "db1761940af54e34971f02e1f720e754",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTH ATLANTIC.ENDIST MOBILE.W074 ENDIST MOBILE",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db1761940af54e34971f02e1f720e754",
+  "detail_text": "The United States Army Corps of Engineers (USACE) has a requirement for construction of an Aircraft Maintenance Hangar in El Salvador at the Cooperative Security Location (CSL) Comalapa. The solicitation number is W9127826RA009. A virtual industry day is offered to provide a description of the project and how to submit a proposal. All interested offerors are invited to attend a site visit for the project at CSL Comalapa in El Salvador on 16 April 2026. Please contact Rene Gil at rene.v.gil.ln@usace.army.mil for full details of the site visit. Contractors are encouraged to begin the registration process prior to the conference in the systems listed on this page to ensure that they can download solicitation. The solicitation will only be announced on https://SAM.gov and can only be downloaded from and proposals submitted through https://piee.eb.mil.",
+  "detail_text_length": 859,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2cfe13c0dcc54daf9e039902f5679420/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2cfe13c0dcc54daf9e039902f5679420/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03b49bdc6c7571b1a16ebab41892ea7945954efe4b3fcaca1059fb75f6185803.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03b49bdc6c7571b1a16ebab41892ea7945954efe4b3fcaca1059fb75f6185803.pdf",
+      "file_id": "2cfe13c0dcc54daf9e039902f5679420",
+      "file_name": "W9127826RA009_CSL+Virtual+Industry+Day+Announcement+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1221864,
+      "sha256": "03b49bdc6c7571b1a16ebab41892ea7945954efe4b3fcaca1059fb75f6185803"
+    }
+  ],
+  "_mirror_hash": "e80fd73700c0bc42efd956a74d5222686c9ff026debb0b127c081adfdd57344b",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.500203+00:00"
+}

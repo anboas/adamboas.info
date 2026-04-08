@@ -1,0 +1,46 @@
+{
+  "id": "sam-735e1d3a105e4f73952e8254f8863f06",
+  "title": "QIAxcel Connect System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=735e1d3a105e4f73952e8254f8863f06",
+  "opportunity_url": "https://sam.gov/opp/735e1d3a105e4f73952e8254f8863f06/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/735e1d3a105e4f73952e8254f8863f06/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "735e1d3a105e4f73952e8254f8863f06",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "1164070",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA  APHIS  PPQ",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=735e1d3a105e4f73952e8254f8863f06",
+  "detail_text": "The USDA, APHIS, PPQ, NIS National Specialists provide support for identifications of insect specimens intercepted as part of domestic and AQI (Agriculture Quarantine Inspection) programs at ports of entry and emergency program activities. The QIAxcel Connect System for the NIS Molecular Mycology Lab (MML) replaces traditional, labor-intensive gel analysis of DNA via a fully automated, high-throughput system that reduces working time and human error and increases quality of results.",
+  "detail_text_length": 487,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f7696e22c85a48a8814ded62e7e34581/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f7696e22c85a48a8814ded62e7e34581/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc49aaf4ed382bff254de0b1796956467e9bba24f1a3915386ac3080c0639697.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc49aaf4ed382bff254de0b1796956467e9bba24f1a3915386ac3080c0639697.pdf",
+      "file_id": "f7696e22c85a48a8814ded62e7e34581",
+      "file_name": "SOW+for+Qiagen+QIAxcel+Connect+for+AKennedy.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 75492,
+      "sha256": "dc49aaf4ed382bff254de0b1796956467e9bba24f1a3915386ac3080c0639697"
+    }
+  ],
+  "_mirror_hash": "68f42eaa3c52b0b49e049133176e09054a37f45702b51523b85be7b2ce941fda",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.597251+00:00"
+}

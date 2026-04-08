@@ -1,0 +1,68 @@
+{
+  "id": "sam-bbd6b05cb26a47b5a5724f5fc35ede6a",
+  "title": "Mathematics of Boosting Agentic Communication (MATHBAC) Proposers Day",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bbd6b05cb26a47b5a5724f5fc35ede6a",
+  "opportunity_url": "https://sam.gov/opp/bbd6b05cb26a47b5a5724f5fc35ede6a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bbd6b05cb26a47b5a5724f5fc35ede6a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bbd6b05cb26a47b5a5724f5fc35ede6a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-59",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bbd6b05cb26a47b5a5724f5fc35ede6a",
+  "detail_text": "The Defense Advanced Research Projects Agency (DARPA) Defense Sciences Office (DSO) is sponsoring a Proposers Day to provide information to potential proposers on the objectives of an anticipated Exploration Program Announcement (PA) for the Mathematics of Boosting Agentic Communication (MATHBAC) program. The Proposers Day will be held on April 21, 2026, from 11:00 a.m. to 2:00 p.m. (Eastern Time) in Arlington, VA. The event will be webcast for those who would like to participate remotely. Advance registration is required for attending the Proposers Day in person and viewing the webcast. Note that all times listed in this announcement and on the registration website are Eastern Time. The goals of the MATHBAC Proposers Day are to (1) introduce the research community (industry and academia) to the MATHBAC program vision and goals; (2) explain the mechanics of a DARPA program and the milestones of this particular effort; and (3) encourage and promote teaming arrangements among potential organizations that have the relevant expertise, facilities, and capabilities for executing a research and development program responsive to the MATHBAC program goals.",
+  "detail_text_length": 1165,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2372c68343574fea869c3e39ab9e5d10/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3238c01dde5e452b81768b95d2fbecff/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcd1d6a68e0f4644b97b0c140b0a4953/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2372c68343574fea869c3e39ab9e5d10/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2fd5eba88a43657cebbbce49e62605998563e3164e206d59088b897c21487bae.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2fd5eba88a43657cebbbce49e62605998563e3164e206d59088b897c21487bae.pdf",
+      "file_id": "2372c68343574fea869c3e39ab9e5d10",
+      "file_name": "DARPA-SN-26-59.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 105097,
+      "sha256": "2fd5eba88a43657cebbbce49e62605998563e3164e206d59088b897c21487bae"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3238c01dde5e452b81768b95d2fbecff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0b87973c6e465fa72493e94e1fd77718d22140d8db9e1b356bbd8b7e3732a3c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0b87973c6e465fa72493e94e1fd77718d22140d8db9e1b356bbd8b7e3732a3c1.pdf",
+      "file_id": "3238c01dde5e452b81768b95d2fbecff",
+      "file_name": "DARPA-SN-26-59-Amendment-01.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 104538,
+      "sha256": "0b87973c6e465fa72493e94e1fd77718d22140d8db9e1b356bbd8b7e3732a3c1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcd1d6a68e0f4644b97b0c140b0a4953/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/168686266cde0b2599a91cc853df13c49b179b2a799b12a22c09690de8e9bc21.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/168686266cde0b2599a91cc853df13c49b179b2a799b12a22c09690de8e9bc21.docx",
+      "file_id": "dcd1d6a68e0f4644b97b0c140b0a4953",
+      "file_name": "DARPA-SN-26-59_MATHBAC_Summary_of_Changes.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25961,
+      "sha256": "168686266cde0b2599a91cc853df13c49b179b2a799b12a22c09690de8e9bc21"
+    }
+  ],
+  "_mirror_hash": "906269c486f5fb2629229480c871c8119566e838d67ec509c61bbbf3c7341d97",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.594515+00:00"
+}

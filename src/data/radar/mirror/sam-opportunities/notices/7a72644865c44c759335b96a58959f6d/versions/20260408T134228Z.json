@@ -1,0 +1,57 @@
+{
+  "id": "sam-7a72644865c44c759335b96a58959f6d",
+  "title": "Axle Assembly, Automotive, Driving",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7a72644865c44c759335b96a58959f6d",
+  "opportunity_url": "https://sam.gov/opp/7a72644865c44c759335b96a58959f6d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7a72644865c44c759335b96a58959f6d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7a72644865c44c759335b96a58959f6d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7a72644865c44c759335b96a58959f6d",
+  "detail_text": "The purpose of this amendment 0003 to solicitation SPRDL1-25-Q-0180 is extend the deadline for submission of offers and add clauses/narratives regulation. 1. Solicitation SPRDL1-25-Q-0180 is hereby reopened. The deadline for submission of offers to solicitation SPRDL1-25-Q-0180 and is hereby extended until April 14, 2026, at 3:00 pm local time (Warren, MI). 2. All other terms and conditions of solicitation SPRDL1-25-Q-0180 remain in full force and effect.",
+  "detail_text_length": 459,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/751fae3d8c9b476bbf0798bf86b94f96/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82858d165b104b049a4134185cf659bd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/751fae3d8c9b476bbf0798bf86b94f96/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31039361a91f9be082c0a584819fdabe72cf0d6daa53a698b87e737756e53ce8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31039361a91f9be082c0a584819fdabe72cf0d6daa53a698b87e737756e53ce8.pdf",
+      "file_id": "751fae3d8c9b476bbf0798bf86b94f96",
+      "file_name": "SPRDL125Q0180-0003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12315,
+      "sha256": "31039361a91f9be082c0a584819fdabe72cf0d6daa53a698b87e737756e53ce8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82858d165b104b049a4134185cf659bd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a9febea2243b851bcae323c42d4098116aa8617846696d50d2f5167aed3117a3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a9febea2243b851bcae323c42d4098116aa8617846696d50d2f5167aed3117a3.pdf",
+      "file_id": "82858d165b104b049a4134185cf659bd",
+      "file_name": "SPRDL1-25-Q-0180+Conformed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 164392,
+      "sha256": "a9febea2243b851bcae323c42d4098116aa8617846696d50d2f5167aed3117a3"
+    }
+  ],
+  "_mirror_hash": "1feb8fe98e92841b49670000c35d699009520528586fda2c52716de7253beeee",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.602122+00:00"
+}

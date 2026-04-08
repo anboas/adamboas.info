@@ -1,0 +1,68 @@
+{
+  "id": "sam-130f49426ec2434aaa503e72b8a8a108",
+  "title": "DA01--Revenue Operations Workflow, Payer Compliance and Technical  Process Optimization - New Requirement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=130f49426ec2434aaa503e72b8a8a108",
+  "opportunity_url": "https://sam.gov/opp/130f49426ec2434aaa503e72b8a8a108/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/130f49426ec2434aaa503e72b8a8a108/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "130f49426ec2434aaa503e72b8a8a108",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0210",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=130f49426ec2434aaa503e72b8a8a108",
+  "detail_text": "Please see that attached RFI Questions and Answers for VA-26-00042471 entitled, Revenue Operations Workflow, Payer Compliance and Technical Process Optimization",
+  "detail_text_length": 160,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/683016ff1c6f4de78043b003beeef5f1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc03a544a7942d7b6d1198558360e54/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f680a00a2e444b18b232e0fa7b39166b/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/683016ff1c6f4de78043b003beeef5f1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8977d77d0376a7a79a9ea1c55df61c6d965c805bba7e82e81bd21c81abc714b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8977d77d0376a7a79a9ea1c55df61c6d965c805bba7e82e81bd21c81abc714b.docx",
+      "file_id": "683016ff1c6f4de78043b003beeef5f1",
+      "file_name": "36C10B26Q0210.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 171014,
+      "sha256": "a8977d77d0376a7a79a9ea1c55df61c6d965c805bba7e82e81bd21c81abc714b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc03a544a7942d7b6d1198558360e54/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c7da54e0091f509e8a6749d5c8a49ae1029549c2b6ae711c484ad7c1a039927f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c7da54e0091f509e8a6749d5c8a49ae1029549c2b6ae711c484ad7c1a039927f.docx",
+      "file_id": "bcc03a544a7942d7b6d1198558360e54",
+      "file_name": "36C10B26Q0210_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28456,
+      "sha256": "c7da54e0091f509e8a6749d5c8a49ae1029549c2b6ae711c484ad7c1a039927f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f680a00a2e444b18b232e0fa7b39166b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea20868a5b0d0f49a841039c4c1d7d8adf22271125a93d739783b5881d7ffe37.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea20868a5b0d0f49a841039c4c1d7d8adf22271125a93d739783b5881d7ffe37.docx",
+      "file_id": "f680a00a2e444b18b232e0fa7b39166b",
+      "file_name": "36C10B26Q0210_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14268,
+      "sha256": "ea20868a5b0d0f49a841039c4c1d7d8adf22271125a93d739783b5881d7ffe37"
+    }
+  ],
+  "_mirror_hash": "367eb240c1d490ffcb7be63e1af9ca9d876c2dd4db2a311cb2e53014ddcd2671",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.540620+00:00"
+}

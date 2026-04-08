@@ -1,0 +1,68 @@
+{
+  "id": "sam-f77ab4ceafa94ae88f736e8063742252",
+  "title": "Medicare Claim Management/Revenue Cycle Management (RCM) Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f77ab4ceafa94ae88f736e8063742252",
+  "opportunity_url": "https://sam.gov/opp/f77ab4ceafa94ae88f736e8063742252/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f77ab4ceafa94ae88f736e8063742252/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f77ab4ceafa94ae88f736e8063742252",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "75H70926BAO-39-SS",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.BILLINGS AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f77ab4ceafa94ae88f736e8063742252",
+  "detail_text": "Service Contract to provide Medicare Claims Management services to allow FPSU to bill medicare claims.",
+  "detail_text_length": 102,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/335fc134a3384fcaaaa4cfa687faac42/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9fc50be1ecbc4f10ab744416e676eb8c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd5e5d318a9748c1ab2d748968e87ad4/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/335fc134a3384fcaaaa4cfa687faac42/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f960d89daa328aad849172a001cc98f134bb37ba0589709c0144795949cf152f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f960d89daa328aad849172a001cc98f134bb37ba0589709c0144795949cf152f.docx",
+      "file_id": "335fc134a3384fcaaaa4cfa687faac42",
+      "file_name": "A05+-+SOW+FPSU+Claims+Management+Services.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29099,
+      "sha256": "f960d89daa328aad849172a001cc98f134bb37ba0589709c0144795949cf152f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9fc50be1ecbc4f10ab744416e676eb8c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1b6a326f5077ca0d68929586b7beb94bceb94c91f5f7fc18c3b73a503f65541e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1b6a326f5077ca0d68929586b7beb94bceb94c91f5f7fc18c3b73a503f65541e.pdf",
+      "file_id": "9fc50be1ecbc4f10ab744416e676eb8c",
+      "file_name": "A16+-+Sources+Sought+Medicare+RCM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169475,
+      "sha256": "1b6a326f5077ca0d68929586b7beb94bceb94c91f5f7fc18c3b73a503f65541e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd5e5d318a9748c1ab2d748968e87ad4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/46206bf76c90cf7813c04d21f290105e31657bc4c5e0a29255ae6fdc76308153.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/46206bf76c90cf7813c04d21f290105e31657bc4c5e0a29255ae6fdc76308153.pdf",
+      "file_id": "dd5e5d318a9748c1ab2d748968e87ad4",
+      "file_name": "B11+-+IEE+Representation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 133974,
+      "sha256": "46206bf76c90cf7813c04d21f290105e31657bc4c5e0a29255ae6fdc76308153"
+    }
+  ],
+  "_mirror_hash": "8c4d8188226d3ed6b4a109f3fd58bec4bdb18f21169b3830f301a4a3e7c6c28e",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.609938+00:00"
+}

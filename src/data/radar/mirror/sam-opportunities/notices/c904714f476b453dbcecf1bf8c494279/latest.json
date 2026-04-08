@@ -1,0 +1,46 @@
+{
+  "id": "sam-c904714f476b453dbcecf1bf8c494279",
+  "title": "Dual Source Laser Engraver",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c904714f476b453dbcecf1bf8c494279",
+  "opportunity_url": "https://sam.gov/opp/c904714f476b453dbcecf1bf8c494279/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c904714f476b453dbcecf1bf8c494279/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c904714f476b453dbcecf1bf8c494279",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA442726Q1055",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4427  60 CONS LGC",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c904714f476b453dbcecf1bf8c494279",
+  "detail_text": "Please see attached Sources Sought Documentation.",
+  "detail_text_length": 49,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cf3bb1327574755b705746ed83444ab/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cf3bb1327574755b705746ed83444ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d89c101fc7800f364e20436dc6061e25022b6c7fb75c9392f7ebee54bc1ec88d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d89c101fc7800f364e20436dc6061e25022b6c7fb75c9392f7ebee54bc1ec88d.pdf",
+      "file_id": "3cf3bb1327574755b705746ed83444ab",
+      "file_name": "Sources+Sought+-+Laser+engraver.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 151787,
+      "sha256": "d89c101fc7800f364e20436dc6061e25022b6c7fb75c9392f7ebee54bc1ec88d"
+    }
+  ],
+  "_mirror_hash": "ba09644e96396fcd471ff4cf9a4cd0eaf6d09dceb90bb83c7351757235c0fcaa",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.588773+00:00"
+}

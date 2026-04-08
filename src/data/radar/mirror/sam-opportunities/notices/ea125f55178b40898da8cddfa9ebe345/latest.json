@@ -1,0 +1,57 @@
+{
+  "id": "sam-ea125f55178b40898da8cddfa9ebe345",
+  "title": "Grades 2-6 Reading Intervention Resources",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea125f55178b40898da8cddfa9ebe345",
+  "opportunity_url": "https://sam.gov/opp/ea125f55178b40898da8cddfa9ebe345/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ea125f55178b40898da8cddfa9ebe345/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ea125f55178b40898da8cddfa9ebe345",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "HE125426QE050",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF DEFENSE EDUCATION ACTIVITY (DODEA).DOD EDUCATION ACTIVITY",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea125f55178b40898da8cddfa9ebe345",
+  "detail_text": "DoWEA requires the continuation of the existing 100% digital resources for the students and reading specialists that need grades 2-6 reading intervention resources. All of the resources are aligned to DoWEA’s literacy standards and designed to (1) increase engagement, (2) increase the volume of reading, (3) increase fluent reading (non-fiction and fiction texts), (4) encourage deep thinking, (5) improve writing to enhance comprehension, (6) support the growth of independent reading, (7) include oral language development (as appropriate), (8) provide intentional vocabulary development, and (9) allow student choice in materials.",
+  "detail_text_length": 634,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f905786efb794df4a2d4c918c0fa9c6c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe0c0521549a4e4d89ff596188870e92/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f905786efb794df4a2d4c918c0fa9c6c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5adfc367a827c3c3ea98dec7a37b1d409431b4825c15fae3ab6936902376f300.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5adfc367a827c3c3ea98dec7a37b1d409431b4825c15fae3ab6936902376f300.docx",
+      "file_id": "f905786efb794df4a2d4c918c0fa9c6c",
+      "file_name": "26QE050_ATTCH9_SYN_040726.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14987,
+      "sha256": "5adfc367a827c3c3ea98dec7a37b1d409431b4825c15fae3ab6936902376f300"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe0c0521549a4e4d89ff596188870e92/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/539af52b8d4f40d7194db24e797fdd59cb4ccc47557be061f853ad8268d6f5d0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/539af52b8d4f40d7194db24e797fdd59cb4ccc47557be061f853ad8268d6f5d0.pdf",
+      "file_id": "fe0c0521549a4e4d89ff596188870e92",
+      "file_name": "2_2-6+Reading+Bridge-PWS-v1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 383892,
+      "sha256": "539af52b8d4f40d7194db24e797fdd59cb4ccc47557be061f853ad8268d6f5d0"
+    }
+  ],
+  "_mirror_hash": "d6431ad1912da064465268685e8be7a74a50b6fc3621139436887c2be60a169c",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.648657+00:00"
+}

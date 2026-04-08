@@ -1,0 +1,59 @@
+{
+  "id": "sam-22279fd9f8e74a9784ced1a0224acbd9",
+  "title": "Doing Business with NASA - Small Business Outreach Event",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=22279fd9f8e74a9784ced1a0224acbd9",
+  "opportunity_url": "https://sam.gov/opp/22279fd9f8e74a9784ced1a0224acbd9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/22279fd9f8e74a9784ced1a0224acbd9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "22279fd9f8e74a9784ced1a0224acbd9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Vendor Outreach",
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Vendor engagement keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=22279fd9f8e74a9784ced1a0224acbd9",
+  "detail_text": "Join us for a special event on June 4, 2026, designed to help businesses learn how to work with NASA and NASA Prime contractors. Attendees will gain insight into procurement processes, upcoming opportunities, and resources available to small businesses interested in supporting NASA’s mission. This is a free event to include parking. See attached documents.",
+  "detail_text_length": 358,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0ff2f46e89c46f29bf243ac5dc4b8bb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eab4f00b9aba49fc804d11207e4c53b8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0ff2f46e89c46f29bf243ac5dc4b8bb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/079324d596be2b718da0ecd2bb8dd1fe2d0537273caa723b1d0f4769bd1a011e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/079324d596be2b718da0ecd2bb8dd1fe2d0537273caa723b1d0f4769bd1a011e.pdf",
+      "file_id": "c0ff2f46e89c46f29bf243ac5dc4b8bb",
+      "file_name": "NASA+Small+Business+Outreach+6-4-26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 959919,
+      "sha256": "079324d596be2b718da0ecd2bb8dd1fe2d0537273caa723b1d0f4769bd1a011e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eab4f00b9aba49fc804d11207e4c53b8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c096bbf68074ebeb7e4fc711f3a6e8125e8240306eb401c8330d91590ca649db.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c096bbf68074ebeb7e4fc711f3a6e8125e8240306eb401c8330d91590ca649db.xlsx",
+      "file_id": "eab4f00b9aba49fc804d11207e4c53b8",
+      "file_name": "NOLA+Event+Participants+4-7-26.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 10401,
+      "sha256": "c096bbf68074ebeb7e4fc711f3a6e8125e8240306eb401c8330d91590ca649db"
+    }
+  ],
+  "_mirror_hash": "38981b349b614c2d9aad149eb243e2cca00a509bba25e287f3b7ca350481741a",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.523139+00:00"
+}

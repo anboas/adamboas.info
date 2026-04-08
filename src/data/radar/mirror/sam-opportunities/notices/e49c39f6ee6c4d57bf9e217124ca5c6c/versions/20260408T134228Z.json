@@ -1,0 +1,57 @@
+{
+  "id": "sam-e49c39f6ee6c4d57bf9e217124ca5c6c",
+  "title": "Joint Enabling Capabilities Command (JECC) Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e49c39f6ee6c4d57bf9e217124ca5c6c",
+  "opportunity_url": "https://sam.gov/opp/e49c39f6ee6c4d57bf9e217124ca5c6c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e49c39f6ee6c4d57bf9e217124ca5c6c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e49c39f6ee6c4d57bf9e217124ca5c6c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480026R0010",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4800  633 CONS PKP",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e49c39f6ee6c4d57bf9e217124ca5c6c",
+  "detail_text": "Services to provide all management, transportation, tools, supplies, , and labor necessary to provide the Joint Enabling Capabilities Command (JECC) with one (1) Manpower and Personnel Staff Representative to perform expert analysis, strategic guidance, and direct execution of human relations (HR) tasks by integrating best practice from military and civilian human capital programs to support the JECC J1 mission. The contractor shall provide one (1) qualified Special Security Representative (SSR) to assist the J2 Special Security Officer (SSO) and security team in the administration of all related security functions. The contractor shall provide two (2) Assessments Support Analysts for the JECC J3 to effectively direct mid and long-term capability allocation; improve the quality of, and accelerate, staff and commander decision cycles; and reduce overall risk for the organization through rigorous, focused assessments support services. The contractor shall provide one (1) qualified Safety and Airborne Operations Program Manager to ensure the implementation of a comprehensive Safety and Occupational Health (SOH) program that protects military and civilian personnel, prevents accidental loss of resources, and ensures compliance with all applicable regulations. All labor necessary is to be performed from the JECC at Norfolk Naval Base, Norfolk, VA while supporting subordinate commands: Joint Planning Support Element (JPSE) located at Norfolk Naval Base, Norfolk, VA and Joint Communications Support Element (JCSE) located at MacDill Air Force Base, Tampa, Florida.",
+  "detail_text_length": 1582,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57329b6ac44d4af2bed5c32d8a6bfc0a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cda24641db2b44e0bbedadd193a07107/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57329b6ac44d4af2bed5c32d8a6bfc0a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ee9242c275e8df69b24ddc2daec659f6964c122a7a13a02a06e73a1b0660e94.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ee9242c275e8df69b24ddc2daec659f6964c122a7a13a02a06e73a1b0660e94.pdf",
+      "file_id": "57329b6ac44d4af2bed5c32d8a6bfc0a",
+      "file_name": "Draft+PWS+JECC+Support+Services+06+Mar+2026+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1093653,
+      "sha256": "1ee9242c275e8df69b24ddc2daec659f6964c122a7a13a02a06e73a1b0660e94"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cda24641db2b44e0bbedadd193a07107/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/54d9e34bf365403dc7b07815bf728611b1ccdf0361ada5309e4fe94333440b73.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/54d9e34bf365403dc7b07815bf728611b1ccdf0361ada5309e4fe94333440b73.docx",
+      "file_id": "cda24641db2b44e0bbedadd193a07107",
+      "file_name": "JECC+Support+Services+Sources+Sought+Notice.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31817,
+      "sha256": "54d9e34bf365403dc7b07815bf728611b1ccdf0361ada5309e4fe94333440b73"
+    }
+  ],
+  "_mirror_hash": "360d1313ca9cc056586b3725ab061934de5dfa80df6c0b3d3b959e28e2c71c92",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.678775+00:00"
+}

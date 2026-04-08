@@ -1,0 +1,57 @@
+{
+  "id": "sam-d7f880629ddc424281850e2d3733d950",
+  "title": "Draft Commander 3000 Apparatus Pump Testing Unit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7f880629ddc424281850e2d3733d950",
+  "opportunity_url": "https://sam.gov/opp/d7f880629ddc424281850e2d3733d950/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d7f880629ddc424281850e2d3733d950/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d7f880629ddc424281850e2d3733d950",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326Q0057",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7f880629ddc424281850e2d3733d950",
+  "detail_text": "The unit shall be a mobile fire pump testing and training system capable of performing true pump tests from draft, creating a suction lift requiring the use of a primer in accordance with NFPA 1911 (2017 Edition). The system must support pump testing up to 3,000 GPM and allow training operations using recycled water.",
+  "detail_text_length": 318,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/602beed42bf34ef6846b6c1f824da3ba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a5b9a6e4854491485031a687a3ff19e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/602beed42bf34ef6846b6c1f824da3ba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6242f06c96664a57917e7e2408bbcd24da827e0176047a7869c558451ea24ccd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6242f06c96664a57917e7e2408bbcd24da827e0176047a7869c558451ea24ccd.pdf",
+      "file_id": "602beed42bf34ef6846b6c1f824da3ba",
+      "file_name": "SAM+RFI+-+Draft+Commander.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22559,
+      "sha256": "6242f06c96664a57917e7e2408bbcd24da827e0176047a7869c558451ea24ccd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a5b9a6e4854491485031a687a3ff19e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/72563267a42d50cc0e81b59d6b05f73b76db2dc45199d09a7f9621c61344e49a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/72563267a42d50cc0e81b59d6b05f73b76db2dc45199d09a7f9621c61344e49a.pdf",
+      "file_id": "6a5b9a6e4854491485031a687a3ff19e",
+      "file_name": "Salient+Characteristics+Draft+Commander.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 143355,
+      "sha256": "72563267a42d50cc0e81b59d6b05f73b76db2dc45199d09a7f9621c61344e49a"
+    }
+  ],
+  "_mirror_hash": "2495f3e293b4e766aab63170f35510b211d74b20b20559404fd8e283fd73153f",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.567604+00:00"
+}

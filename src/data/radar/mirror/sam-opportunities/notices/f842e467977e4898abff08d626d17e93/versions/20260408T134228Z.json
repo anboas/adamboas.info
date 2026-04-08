@@ -1,0 +1,57 @@
+{
+  "id": "sam-f842e467977e4898abff08d626d17e93",
+  "title": "PDSS IV",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f842e467977e4898abff08d626d17e93",
+  "opportunity_url": "https://sam.gov/opp/f842e467977e4898abff08d626d17e93/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f842e467977e4898abff08d626d17e93/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f842e467977e4898abff08d626d17e93",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA853026PDSSIV",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8530  AFSC PZIE",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f842e467977e4898abff08d626d17e93",
+  "detail_text": "Update 1: Attachment \"Sources Sought Synopsis_2026_PDSSIV\" has been replaced with \"Sources Sought Synopsis_2026_PDSSIV_Rev1\". This update is to correct a discrepancy regarding response due date between the attachment (page 4) and the SAM.gov posting; moreover, responses to this sources sought must be received no later than 20 April 2026, 3:00PM EDT. See Attachments for full description/details. Product data systems and processes managed within the Product Services Division are utilized to support the management, conversion, capture, storage, maintenance, retrieval, electronic distribution, transformation, and editorial processes associated with product data. The infrastructure includes standard DoD and locally implemented/developed systems. Product data currently managed within the environment at Robins includes data owned and managed by DAF organizations across the DAF enterprise. Currently, approximately 75,000 technical order documents/increments, comprising an estimated 8 million pages of various sizes; 17 million engineering data images; over 1 million Computer-Aided Design (CAD)/Computer-Aided Manufacturing (CAM) model files; and over 5 million part indenture configurations are managed within the environment.",
+  "detail_text_length": 1234,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52bb3b3692ca4b45a4a60f65421501f5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e0f18663c5f49898b37148cd3c34e5f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52bb3b3692ca4b45a4a60f65421501f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d76a1e22d375600855e9f10ca9cdc4fc242c6829abd0839ee170659cebf143d1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d76a1e22d375600855e9f10ca9cdc4fc242c6829abd0839ee170659cebf143d1.pdf",
+      "file_id": "52bb3b3692ca4b45a4a60f65421501f5",
+      "file_name": "PWS_PDSSIV_DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 490365,
+      "sha256": "d76a1e22d375600855e9f10ca9cdc4fc242c6829abd0839ee170659cebf143d1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e0f18663c5f49898b37148cd3c34e5f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/390417801febb858b08cfae16d720e323d9e726f4051431bb7fa8b5a65327ec7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/390417801febb858b08cfae16d720e323d9e726f4051431bb7fa8b5a65327ec7.pdf",
+      "file_id": "9e0f18663c5f49898b37148cd3c34e5f",
+      "file_name": "Sources+Sought+Synopsis_2026_PDSSIV_Rev1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 209480,
+      "sha256": "390417801febb858b08cfae16d720e323d9e726f4051431bb7fa8b5a65327ec7"
+    }
+  ],
+  "_mirror_hash": "e92b74bbfe0ff330ea885a6614df397eaaedd5da742486d8aa40c0ff88fe5fd0",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.668111+00:00"
+}

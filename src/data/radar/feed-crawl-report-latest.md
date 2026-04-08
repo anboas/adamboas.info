@@ -1,6 +1,6 @@
 # Radar Feed Crawl Report (Latest)
 
-Generated: 2026-04-07T13:40:55.528674+00:00
+Generated: 2026-04-08T13:40:46.313733+00:00
 
 - Total: 19
 - OK: 12
@@ -12,7 +12,7 @@ Generated: 2026-04-07T13:40:55.528674+00:00
 | SAM.gov Opportunities API | official_api | 200 | no | 0 | 0 | https://api.sam.gov/opportunities/v2/search |  |
 | NAVSEA / NSWC source set | official_pages | 200 | yes | 0 | 0 | https://www.navsea.navy.mil/Home/Warfare-Centers/ |  |
 | AUSA Meetings & Events | official_calendar | 200 | no | 52 | 65 | https://www.ausa.org/meet |  |
-| AFCEA Events | official_calendar | 200 | no | 21 | 261 | https://www.afcea.org/events |  |
+| AFCEA Events | official_calendar | 200 | no | 22 | 261 | https://www.afcea.org/events |  |
 | AFA Events | official_calendar | 200 | no | 28 | 35 | https://www.afa.org/events/ |  |
 | Navy League Meetings & Events | official_calendar | 200 | no | 6 | 40 | https://www.navyleague.org/meetings-and-events/ |  |
 | CTO Innovation Industry Outreach Calendar | official_calendar | 200 | no | 0 | 29 | https://www.ctoinnovation.mil/events/ |  |

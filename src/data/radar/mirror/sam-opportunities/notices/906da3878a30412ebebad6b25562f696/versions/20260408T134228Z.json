@@ -1,0 +1,45 @@
+{
+  "id": "sam-906da3878a30412ebebad6b25562f696",
+  "title": "Safety Glasses",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=906da3878a30412ebebad6b25562f696",
+  "opportunity_url": "https://sam.gov/opp/906da3878a30412ebebad6b25562f696/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/906da3878a30412ebebad6b25562f696/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "906da3878a30412ebebad6b25562f696",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926QB037",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=906da3878a30412ebebad6b25562f696",
+  "detail_text": "Safety Glasses See attached.",
+  "detail_text_length": 28,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d32f662460d147a2ad907cb3b48cdc83/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d32f662460d147a2ad907cb3b48cdc83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/114dd9134b88918855e09834b340059ed1534139a96cbdcafbb9bd99e5009658.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/114dd9134b88918855e09834b340059ed1534139a96cbdcafbb9bd99e5009658.pdf",
+      "file_id": "d32f662460d147a2ad907cb3b48cdc83",
+      "file_name": "4.02+Solicitation+-+N6264926QB037.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 288502,
+      "sha256": "114dd9134b88918855e09834b340059ed1534139a96cbdcafbb9bd99e5009658"
+    }
+  ],
+  "_mirror_hash": "f896082eefba6c99c24698d0e3b065e23ce7db1c682c4919f1a150ab8958ff91",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.487481+00:00"
+}

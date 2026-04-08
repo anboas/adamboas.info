@@ -1,0 +1,79 @@
+{
+  "id": "sam-9551d26997c5419ea88f27d393b48445",
+  "title": "Made in America Market Research Hub",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9551d26997c5419ea88f27d393b48445",
+  "opportunity_url": "https://sam.gov/opp/9551d26997c5419ea88f27d393b48445/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9551d26997c5419ea88f27d393b48445/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9551d26997c5419ea88f27d393b48445",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "EOP-OMB-RFI-2026-01",
+  "agency_path": "EXECUTIVE OFFICE OF THE PRESIDENT.EXECUTIVE OFFICE OF THE PRESIDENT.EOP - OFFICE OF ADMINISTRATION",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9551d26997c5419ea88f27d393b48445",
+  "detail_text": "To provide Federal procurement officers and grantees a single, trusted, and continuously updated data source to help identify domestic products efficiently and effectively",
+  "detail_text_length": 171,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/21a9a3532d674cd786908742e65fba2e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4885067c5c9a4cd49ce792ad63bb4240/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67185279b55e472b96c1ee9ecbf4100a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d2b659a7b6804a3e827b1a270a8fcf59/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/21a9a3532d674cd786908742e65fba2e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cc4b2c87c71b9bfcfec2a974eaf4fe70da14afd6e24ddb3f457491e5b93f1578.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cc4b2c87c71b9bfcfec2a974eaf4fe70da14afd6e24ddb3f457491e5b93f1578.pdf",
+      "file_id": "21a9a3532d674cd786908742e65fba2e",
+      "file_name": "Market+Research+Hub+RFI_Final_03242026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 171316,
+      "sha256": "cc4b2c87c71b9bfcfec2a974eaf4fe70da14afd6e24ddb3f457491e5b93f1578"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4885067c5c9a4cd49ce792ad63bb4240/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/725aa5dd1feaf2c423ff1957e8a3ca951a7b5a4a078a1d5aad8525baa6e01d8d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/725aa5dd1feaf2c423ff1957e8a3ca951a7b5a4a078a1d5aad8525baa6e01d8d.pdf",
+      "file_id": "4885067c5c9a4cd49ce792ad63bb4240",
+      "file_name": "Market+Research+Hub+RFI_Final_03312026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 216554,
+      "sha256": "725aa5dd1feaf2c423ff1957e8a3ca951a7b5a4a078a1d5aad8525baa6e01d8d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67185279b55e472b96c1ee9ecbf4100a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/55f98edeeb58554578a713ff0a851e6f9fa7c799d1bfd0a1cad1860b96a41f0c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/55f98edeeb58554578a713ff0a851e6f9fa7c799d1bfd0a1cad1860b96a41f0c.pdf",
+      "file_id": "67185279b55e472b96c1ee9ecbf4100a",
+      "file_name": "Market+Research+Hub+RFI_Final_03112026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 171991,
+      "sha256": "55f98edeeb58554578a713ff0a851e6f9fa7c799d1bfd0a1cad1860b96a41f0c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d2b659a7b6804a3e827b1a270a8fcf59/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8abbaec4308815904ee20eee264400104918036223345bd98107dd01322814f0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8abbaec4308815904ee20eee264400104918036223345bd98107dd01322814f0.pdf",
+      "file_id": "d2b659a7b6804a3e827b1a270a8fcf59",
+      "file_name": "Market+Research+Hub+RFI_Final_04072026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 216553,
+      "sha256": "8abbaec4308815904ee20eee264400104918036223345bd98107dd01322814f0"
+    }
+  ],
+  "_mirror_hash": "59ae1664e0d03b2291be97d2ebd6ab6a86619286c0270834d5b37b5f690d34da",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.622934+00:00"
+}

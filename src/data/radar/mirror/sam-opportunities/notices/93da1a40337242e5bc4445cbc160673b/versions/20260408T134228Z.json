@@ -1,0 +1,57 @@
+{
+  "id": "sam-93da1a40337242e5bc4445cbc160673b",
+  "title": "K-1 Reading Intervention Resources",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93da1a40337242e5bc4445cbc160673b",
+  "opportunity_url": "https://sam.gov/opp/93da1a40337242e5bc4445cbc160673b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/93da1a40337242e5bc4445cbc160673b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "93da1a40337242e5bc4445cbc160673b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "HE125426QE049",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF DEFENSE EDUCATION ACTIVITY (DODEA).DOD EDUCATION ACTIVITY",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93da1a40337242e5bc4445cbc160673b",
+  "detail_text": "Market research was conducted in accordance with FAR Part 10 to identify potential sources capable of providing K-1 digital reading intervention resources. While multiple vendors exist within the marketplace, the current requirement is being fulfilled by Benchmark Education Company, whose resources are fully integrated into DoDEA's instructional framework. Due to the immediate need to maintain continuity of instruction and prevent disruption to ongoing literacy programs, transitioning to alternate vendor at this time would result in operational risk, including delays in service delivery, retraining requirements, and potential impacts to student outcomes. Market research was conducted from December 2025 through February 2026 through review of acquisition history , product literature, SAM. gov, SBA Dynamic Small Business Search (DSBS), and consultation with the requiring activity. The research did not identify any small business sources capable of providing the required K-1 Reading Intervention Resources. The incumbent vendor is the only identified source with access to the required materials. A sole source bridge action is recommended to ensure continuity of services while a full and open competition is planned for FY27. Supporting justification documentation will be included in the contract file.",
+  "detail_text_length": 1317,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddd455291010421ebe428be90db0c2e2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f15f2f85cade415d85936971f167ac42/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddd455291010421ebe428be90db0c2e2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6b67a9b3af04aee113bdbca602c85d28dc59383201a18958aa0dbbd7f1a9f797.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6b67a9b3af04aee113bdbca602c85d28dc59383201a18958aa0dbbd7f1a9f797.docx",
+      "file_id": "ddd455291010421ebe428be90db0c2e2",
+      "file_name": "2_K-1+Reading+Bridge-PWS-v3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84833,
+      "sha256": "6b67a9b3af04aee113bdbca602c85d28dc59383201a18958aa0dbbd7f1a9f797"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f15f2f85cade415d85936971f167ac42/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/19e1c0c6a4676d951488cc6db17ceb189a71c7b479b9ea3b602a5245929ccaca.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/19e1c0c6a4676d951488cc6db17ceb189a71c7b479b9ea3b602a5245929ccaca.docx",
+      "file_id": "f15f2f85cade415d85936971f167ac42",
+      "file_name": "26QE049_ATTCH9_SYN_040726.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22574,
+      "sha256": "19e1c0c6a4676d951488cc6db17ceb189a71c7b479b9ea3b602a5245929ccaca"
+    }
+  ],
+  "_mirror_hash": "026d5636fcf2192704d7d0dd467d934ed677bb045575f453cc00223946e0331d",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.651007+00:00"
+}

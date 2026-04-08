@@ -1,0 +1,68 @@
+{
+  "id": "sam-9f8f0add4ef7485e869d2bec40875158",
+  "title": "new actuators",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9f8f0add4ef7485e869d2bec40875158",
+  "opportunity_url": "https://sam.gov/opp/9f8f0add4ef7485e869d2bec40875158/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9f8f0add4ef7485e869d2bec40875158/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9f8f0add4ef7485e869d2bec40875158",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "1232SA26Q0243",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9f8f0add4ef7485e869d2bec40875158",
+  "detail_text": "A market survey is being conducted to determine if there are adequate Small Business, SBA-certified HUBZone, SBA-certified 8(a), Women-Owned, or Service Disabled Veteran-Owned Small Business (SDVOSB) contractors available for a proposed project who meet the specific criteria outlined below. This is not a solicitation Announcement or Request for Proposal. It does not constitute any commitment by the Government. No award will result from this notice. The purpose is to conduct market research to gain knowledge of potentially qualified sources. Responses to this Sources Sought Notice will be used by the Government to make an appropriate acquisition decision. The USDA Agricultural Research Service (ARS) will not award a contract on the basis of responses or pay for the preparation of any information submitted. Respondents will not be notified of the results of this notice. After completing an analysis of the responses, the Government will determine whether to limit competition to 8(a), HUBZone, SDVOSB, Women-Owned, or other small business firms, or to proceed with issuing an unrestricted solicitation, inviting full and open competition. The USDA, ARS, Sugarcane Research Unit is currently in need of replacement of existing actuators with new actuators for Exhaust Fans 6 and 7 at the Ardoyne farm headhouse as per Statement of Work. This work will be completed at 501 Bull Run Road, Schriever, LA 70395. The NAICS is 561210. The business size is $47.0 million for small business. Companies who have the experience, as well as an interest in doing business with ARS, should submit a Capabilities Statement which, for this notice, is not expected to be a proposal, but rather short statements regarding the company’s ability to demonstrate their expertise and experience in relation to the areas specified in this notice. Companies should also indicate whether they are a Small Business, SBA-certified HUBZone, SBA-certified 8(a), SDVOSB, or Women-Owned Small Business. Responses should be submitted by 4/10/2-26 to the attention of jovan.haynes@usda.gov at the address above. Questions should be directed to Jovan Haynes at jovan.haynes@usda.gov",
+  "detail_text_length": 2158,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/335fe21b71374b1982f2702e14fac536/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b5ef2638eb64b2fa00775f6b4df67c4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63dfe40ba3ac493ebf326b419f28d4b6/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/335fe21b71374b1982f2702e14fac536/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8266c28ff51231da6b61dac43fcc9621f12a8d0951ef19d3abbb651cfbd2c956.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8266c28ff51231da6b61dac43fcc9621f12a8d0951ef19d3abbb651cfbd2c956.docx",
+      "file_id": "335fe21b71374b1982f2702e14fac536",
+      "file_name": "Attachment+2+Statement+of+Work+SRU+Replace.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 51661,
+      "sha256": "8266c28ff51231da6b61dac43fcc9621f12a8d0951ef19d3abbb651cfbd2c956"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b5ef2638eb64b2fa00775f6b4df67c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f08b171be5ff6b3b32990a5ea710702b023a13dc43f628fdd3ee7ad70e7e76f5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f08b171be5ff6b3b32990a5ea710702b023a13dc43f628fdd3ee7ad70e7e76f5.pdf",
+      "file_id": "4b5ef2638eb64b2fa00775f6b4df67c4",
+      "file_name": "Attachment+3-+Wage+Determination.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 115286,
+      "sha256": "f08b171be5ff6b3b32990a5ea710702b023a13dc43f628fdd3ee7ad70e7e76f5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63dfe40ba3ac493ebf326b419f28d4b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/508e5cd84eb78c6c90b844fcc8336c6fee6044c1cc9f785c441f9b9576fa960e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/508e5cd84eb78c6c90b844fcc8336c6fee6044c1cc9f785c441f9b9576fa960e.docx",
+      "file_id": "63dfe40ba3ac493ebf326b419f28d4b6",
+      "file_name": "Attachment+1+-+1232SA26Q0243+Solicitation+Terms+and+Conditions.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70121,
+      "sha256": "508e5cd84eb78c6c90b844fcc8336c6fee6044c1cc9f785c441f9b9576fa960e"
+    }
+  ],
+  "_mirror_hash": "22036ddc77e52da75649c77a766b28eb3be6df183ab4345223e15cd0f04b8839",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.595046+00:00"
+}

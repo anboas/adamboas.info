@@ -1,0 +1,68 @@
+{
+  "id": "sam-4d7fdb5ca99f422f9cc5d7d8afb321f8",
+  "title": "Security Services onboard SBX- 1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d7fdb5ca99f422f9cc5d7d8afb321f8",
+  "opportunity_url": "https://sam.gov/opp/4d7fdb5ca99f422f9cc5d7d8afb321f8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4d7fdb5ca99f422f9cc5d7d8afb321f8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4d7fdb5ca99f422f9cc5d7d8afb321f8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PM2-N105C-26-001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d7fdb5ca99f422f9cc5d7d8afb321f8",
+  "detail_text": "The purpose of this market survey is to gather information regarding vendors’ ability to provide security services onboard the Sea-Based X-Band Radar platform (SBX-1). This requirement is currently set aside for 8(a) Business Development Program contractors.",
+  "detail_text_length": 258,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3415341e08be42eabac5bfd47ecf32ed/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8bdcb35c30eb4e81b3d5c4e259aa488d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2ba551d02184daa8ae75ba3f8318cb7/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3415341e08be42eabac5bfd47ecf32ed/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/302a87ff508107acb825b0d1c8aa2831ea06e15f45bc9f75d3060d6deec82429.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/302a87ff508107acb825b0d1c8aa2831ea06e15f45bc9f75d3060d6deec82429.pdf",
+      "file_id": "3415341e08be42eabac5bfd47ecf32ed",
+      "file_name": "SBX+Security+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 388217,
+      "sha256": "302a87ff508107acb825b0d1c8aa2831ea06e15f45bc9f75d3060d6deec82429"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8bdcb35c30eb4e81b3d5c4e259aa488d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/baf95f79d3b2dff7ce46c4b27e6819c9d849dbe80305819ddb85f015b6868b0d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/baf95f79d3b2dff7ce46c4b27e6819c9d849dbe80305819ddb85f015b6868b0d.pdf",
+      "file_id": "8bdcb35c30eb4e81b3d5c4e259aa488d",
+      "file_name": "PM2-N105C-26-001+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 141162,
+      "sha256": "baf95f79d3b2dff7ce46c4b27e6819c9d849dbe80305819ddb85f015b6868b0d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2ba551d02184daa8ae75ba3f8318cb7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f36c59bd4fa92fa78f12f7cf4aad02d0dadf5ca483a5cf877af206400089471.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f36c59bd4fa92fa78f12f7cf4aad02d0dadf5ca483a5cf877af206400089471.pdf",
+      "file_id": "a2ba551d02184daa8ae75ba3f8318cb7",
+      "file_name": "Sources+Sought+-+PM2-N105C-26-001+REVISED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 111194,
+      "sha256": "2f36c59bd4fa92fa78f12f7cf4aad02d0dadf5ca483a5cf877af206400089471"
+    }
+  ],
+  "_mirror_hash": "688fcc950180e20ff895288585cd916ee4fe5cdc2efeecc968f695b4a98c1fa4",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.641030+00:00"
+}

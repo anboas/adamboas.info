@@ -1,0 +1,57 @@
+{
+  "id": "sam-160dcbf71fa34c48876fc6f39257a941",
+  "title": "D--NCI CRDC Data Acess PORTAL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=160dcbf71fa34c48876fc6f39257a941",
+  "opportunity_url": "https://sam.gov/opp/160dcbf71fa34c48876fc6f39257a941/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/160dcbf71fa34c48876fc6f39257a941/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "160dcbf71fa34c48876fc6f39257a941",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DOIDFBO260039",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=160dcbf71fa34c48876fc6f39257a941",
+  "detail_text": "The Government intends to negotiate on a sole source basis, a firm-fixed-price (FFP) / Time-and-Materials (T&M) acquisition with Jataware for licenses to develop, deploy, and maintain a Data Discovery Portal for the CRDC using Jataware¿s BeakerHub Platform through multiple phases. This non-competitive action is being issued by the Acquisition Services Directorate on the behalf of the National Institutes of Health (NIH), National Cancer Institute (NCI), Center for Biomedical Informatics and Information Technology (CBIIT).",
+  "detail_text_length": 526,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/161af90b35ee42a9ad47b0bd9e1c09ac/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1dc676cf592f478aa328ad9665c3ea60/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/161af90b35ee42a9ad47b0bd9e1c09ac/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/16b73d9b788d196e09a7d301c386961edcd5fa35cbf6485790ca61869c05baaf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/16b73d9b788d196e09a7d301c386961edcd5fa35cbf6485790ca61869c05baaf.pdf",
+      "file_id": "161af90b35ee42a9ad47b0bd9e1c09ac",
+      "file_name": "NCI_CRDC_Data_Acess_PORTAL_Statement_of_Work_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 696705,
+      "sha256": "16b73d9b788d196e09a7d301c386961edcd5fa35cbf6485790ca61869c05baaf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1dc676cf592f478aa328ad9665c3ea60/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03f692c12367fb85fa596a01bb0750b5313c23f6cd058033932e003bde4d58f5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03f692c12367fb85fa596a01bb0750b5313c23f6cd058033932e003bde4d58f5.pdf",
+      "file_id": "1dc676cf592f478aa328ad9665c3ea60",
+      "file_name": "Notice_of_Intent_to_Sole_Source_-_NCI_CRDC_Data_Acess_PORTAL_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 457135,
+      "sha256": "03f692c12367fb85fa596a01bb0750b5313c23f6cd058033932e003bde4d58f5"
+    }
+  ],
+  "_mirror_hash": "63dae00f04dadb4a5d2fedb30b4dcd11f497c0d35654dd5e9a047d5bcd823c01",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.567016+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "sam-2e1dca1bc68d4f0dbd05dd30e266fee0",
+  "title": "UNICOR - Industry Day - Sales & Marketing Office Furniture",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e1dca1bc68d4f0dbd05dd30e266fee0",
+  "opportunity_url": "https://sam.gov/opp/2e1dca1bc68d4f0dbd05dd30e266fee0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2e1dca1bc68d4f0dbd05dd30e266fee0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2e1dca1bc68d4f0dbd05dd30e266fee0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON INDUSTRIES, INC.FEDERAL PRISON INDUSTRIES, INC",
+  "posted_date": "2026-04-07",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e1dca1bc68d4f0dbd05dd30e266fee0",
+  "detail_text": "UNICOR, the trade name of Federal Prison Industries (FPI), will host an in-person Industry Day on May 6, 2026, in Coleman, FL. This is a no-cost event, open to all industry partners with capabilities in sales and marketing of office furniture. UNICOR is a self-sustaining, wholly-owned government corporation established in 1934 that provides job training and skills to federal inmates. It manufactures products and provides services—ranging from furniture and electronics to clothing and data entry—primarily for federal agencies. UNICOR's Office Furniture Group (OFG) provides an extensive range of high-quality, cost-effective office furniture and services to Federal civilian agencies and the DoD, while simultaneously providing valuable work experience and training for Federal inmates. To attend, all participants must complete the attached registration form and back ground clearance form and email them to peyton.perry@usdoj.gov with the subject line: “UNICOR Industry Day, Sales and Marketing” no later than 3:30 p.m., EST, April 20, 2026.",
+  "detail_text_length": 1048,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c65a773bcfe9479d97772d7a0d09607e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f227eed1e1644cef86fc305fc60596b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb3a3de80c57402d89d03f0fe2c61b87/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c65a773bcfe9479d97772d7a0d09607e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/66dca2b42684ebb424bdd1f8d9151c6461b54e9291b74b48d748ab489b1a9071.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/66dca2b42684ebb424bdd1f8d9151c6461b54e9291b74b48d748ab489b1a9071.pdf",
+      "file_id": "c65a773bcfe9479d97772d7a0d09607e",
+      "file_name": "NCIC+Background+Check+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 626291,
+      "sha256": "66dca2b42684ebb424bdd1f8d9151c6461b54e9291b74b48d748ab489b1a9071"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f227eed1e1644cef86fc305fc60596b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0cbea0d012b1a3a8f8284da1cdc02c4a9a52a00f50d0edd482106752542be5dc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0cbea0d012b1a3a8f8284da1cdc02c4a9a52a00f50d0edd482106752542be5dc.docx",
+      "file_id": "f227eed1e1644cef86fc305fc60596b1",
+      "file_name": "Industry+Day+Registration+-+blank.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 82052,
+      "sha256": "0cbea0d012b1a3a8f8284da1cdc02c4a9a52a00f50d0edd482106752542be5dc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb3a3de80c57402d89d03f0fe2c61b87/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7c7f4ef0cc4ac3b7fafe515344670eb2b05c643ddd6910c06c73d05a0de6a73.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7c7f4ef0cc4ac3b7fafe515344670eb2b05c643ddd6910c06c73d05a0de6a73.docx",
+      "file_id": "fb3a3de80c57402d89d03f0fe2c61b87",
+      "file_name": "Industry+Days+-+Sales+and+Marketing+updated.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18422,
+      "sha256": "f7c7f4ef0cc4ac3b7fafe515344670eb2b05c643ddd6910c06c73d05a0de6a73"
+    }
+  ],
+  "_mirror_hash": "62d3509bd04ab61945de3adb69c1423a019749ef48fd917f68b0e2fd73cc31a9",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.483787+00:00"
+}

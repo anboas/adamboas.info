@@ -1,0 +1,57 @@
+{
+  "id": "sam-751a7e2e0c264f739b88ea401118b7eb",
+  "title": "Catholic Priest Burial Services at ANC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=751a7e2e0c264f739b88ea401118b7eb",
+  "opportunity_url": "https://sam.gov/opp/751a7e2e0c264f739b88ea401118b7eb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/751a7e2e0c264f739b88ea401118b7eb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "751a7e2e0c264f739b88ea401118b7eb",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC-26-P-0000-041912",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO SAM HOUSTON.W6QM MICC-FT BELVOIR",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=751a7e2e0c264f739b88ea401118b7eb",
+  "detail_text": "See Attached Sources Sought",
+  "detail_text_length": 27,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ace91502d24421091be111b6f93b39b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e3083be4b23425aa8ce239ef4884b46/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ace91502d24421091be111b6f93b39b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/21260d01063838e2566c8043e2ac90dff232222b5d5ca87ec703fa23e0fe8852.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/21260d01063838e2566c8043e2ac90dff232222b5d5ca87ec703fa23e0fe8852.pdf",
+      "file_id": "1ace91502d24421091be111b6f93b39b",
+      "file_name": "Sources+Sought+Notice+catholic+priest+burial+services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 190302,
+      "sha256": "21260d01063838e2566c8043e2ac90dff232222b5d5ca87ec703fa23e0fe8852"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3e3083be4b23425aa8ce239ef4884b46/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e403c518b50f3c225ac5a30ccbdf084e52bb1ad46ab50e1ecac9fdc3041225c6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e403c518b50f3c225ac5a30ccbdf084e52bb1ad46ab50e1ecac9fdc3041225c6.docx",
+      "file_id": "3e3083be4b23425aa8ce239ef4884b46",
+      "file_name": "Priest-PWS+Updated+01+APR+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 74723,
+      "sha256": "e403c518b50f3c225ac5a30ccbdf084e52bb1ad46ab50e1ecac9fdc3041225c6"
+    }
+  ],
+  "_mirror_hash": "6213155d8b391e7483a3deaabdcb2d384a3b74737f708ea3184e59defdea85e1",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.575896+00:00"
+}

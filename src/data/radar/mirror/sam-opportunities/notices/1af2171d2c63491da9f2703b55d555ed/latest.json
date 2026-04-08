@@ -1,0 +1,46 @@
+{
+  "id": "sam-1af2171d2c63491da9f2703b55d555ed",
+  "title": "Aircraft Trailing Edge",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1af2171d2c63491da9f2703b55d555ed",
+  "opportunity_url": "https://sam.gov/opp/1af2171d2c63491da9f2703b55d555ed/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1af2171d2c63491da9f2703b55d555ed/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1af2171d2c63491da9f2703b55d555ed",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302402763",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1af2171d2c63491da9f2703b55d555ed",
+  "detail_text": "See Attachment",
+  "detail_text_length": 14,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/282e93041fc5491f83054280d72be0de/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/282e93041fc5491f83054280d72be0de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2748bc131a598ff8c7e16a4c0367bfaa60a851c028e833694f63431b5ec3dec9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2748bc131a598ff8c7e16a4c0367bfaa60a851c028e833694f63431b5ec3dec9.pdf",
+      "file_id": "282e93041fc5491f83054280d72be0de",
+      "file_name": "FD20302402763.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 708999,
+      "sha256": "2748bc131a598ff8c7e16a4c0367bfaa60a851c028e833694f63431b5ec3dec9"
+    }
+  ],
+  "_mirror_hash": "eaec4ee19278be16f0581c79632df471dd0ed9c1ae118bf5ab88a31d478dcbf1",
+  "_mirror_run_id": "20260408T134228Z",
+  "_mirror_recorded_at": "2026-04-08T13:48:13.744076+00:00"
+}
