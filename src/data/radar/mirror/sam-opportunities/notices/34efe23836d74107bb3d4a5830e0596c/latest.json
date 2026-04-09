@@ -1,0 +1,46 @@
+{
+  "id": "sam-34efe23836d74107bb3d4a5830e0596c",
+  "title": "Automatic External Defibrillator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=34efe23836d74107bb3d4a5830e0596c",
+  "opportunity_url": "https://sam.gov/opp/34efe23836d74107bb3d4a5830e0596c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/34efe23836d74107bb3d4a5830e0596c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "34efe23836d74107bb3d4a5830e0596c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C25526Q0264_2 ",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=34efe23836d74107bb3d4a5830e0596c",
+  "detail_text": "36C25526Q0264 - Eastern Kansas VA Hospital System - AED's",
+  "detail_text_length": 57,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd3d6e954bd94803b9fd93a3294bf660/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bd3d6e954bd94803b9fd93a3294bf660/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8096e8465f29b4eacf39278865616f6ec893695528eae540b81ee2170ab84663.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8096e8465f29b4eacf39278865616f6ec893695528eae540b81ee2170ab84663.pdf",
+      "file_id": "bd3d6e954bd94803b9fd93a3294bf660",
+      "file_name": "Pre-Solicitation+Description.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99722,
+      "sha256": "8096e8465f29b4eacf39278865616f6ec893695528eae540b81ee2170ab84663"
+    }
+  ],
+  "_mirror_hash": "fc7f410c208ee42024be425bc95d27a0daaa7f6da4882a778a959a82b00cae7f",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.814032+00:00"
+}

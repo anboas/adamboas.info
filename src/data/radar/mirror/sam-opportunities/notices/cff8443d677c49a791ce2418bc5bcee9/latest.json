@@ -1,0 +1,45 @@
+{
+  "id": "sam-cff8443d677c49a791ce2418bc5bcee9",
+  "title": "60--CONTACT,FIBER OPTIC - AND OTHER REPLACEMENT PARTS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cff8443d677c49a791ce2418bc5bcee9",
+  "opportunity_url": "https://sam.gov/opp/cff8443d677c49a791ce2418bc5bcee9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cff8443d677c49a791ce2418bc5bcee9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cff8443d677c49a791ce2418bc5bcee9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QSA40",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cff8443d677c49a791ce2418bc5bcee9",
+  "detail_text": "NSN 1R-6060-017162479-P8, REF NR NF0(EP)-125-3M4-1, QTY 2500 EA, DELIVERY FOB ORIGIN. See attached solicitation.",
+  "detail_text_length": 112,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87898f08cfc14ca191ccbc6048dfe8d9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87898f08cfc14ca191ccbc6048dfe8d9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/74abdbd9f4f387858eef3438058c330233b0e33fd08d3a7807bc139f97857935.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/74abdbd9f4f387858eef3438058c330233b0e33fd08d3a7807bc139f97857935.pdf",
+      "file_id": "87898f08cfc14ca191ccbc6048dfe8d9",
+      "file_name": "Solicitation+N0038326QSA40.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 613214,
+      "sha256": "74abdbd9f4f387858eef3438058c330233b0e33fd08d3a7807bc139f97857935"
+    }
+  ],
+  "_mirror_hash": "ffcd15840f177274448ac4af32902a69eb8b8b3add19d500f162fc86697695b9",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.662528+00:00"
+}

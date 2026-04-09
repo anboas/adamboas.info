@@ -412,38 +412,6 @@
     ]
   },
   {
-    "id": "sam-8192a5e6cb074f7f8c0de770c1da23f3",
-    "title": "2026 Pacific Northwest Regional Council Training Event",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8192a5e6cb074f7f8c0de770c1da23f3",
-    "opportunity_url": "https://sam.gov/opp/8192a5e6cb074f7f8c0de770c1da23f3/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/8192a5e6cb074f7f8c0de770c1da23f3/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "8192a5e6cb074f7f8c0de770c1da23f3",
-    "notice_type_code": "s",
-    "notice_type": "Special Notice",
-    "engagement_kinds": [
-      "Special Notice"
-    ],
-    "solicitation_number": "PNWRC-Spring-03252026",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL UNDERSEA WARFARE CENTER",
-    "posted_date": "2026-03-10",
-    "response_deadline": "2026-03-24",
-    "place_of_performance": null,
-    "relevance_score": 7,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Signal notice type: Special Notice",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8192a5e6cb074f7f8c0de770c1da23f3",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8192a5e6cb074f7f8c0de770c1da23f3",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-c318c00423d64540a00afe77d4574246",
     "title": "Shipboard Warning System",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c318c00423d64540a00afe77d4574246",
@@ -772,6 +740,51 @@
     "resource_items": null
   },
   {
+    "id": "sam-b97e07e9621d4d808b28bc10cf71323a",
+    "title": "Small Business Set-Aside for Quickstrike Extended Range (QES) Parts Fabrication Per the attach Drawings and Statement of Work.  Request Access to the drawings through SAM only.",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b97e07e9621d4d808b28bc10cf71323a",
+    "opportunity_url": "https://sam.gov/opp/b97e07e9621d4d808b28bc10cf71323a/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b97e07e9621d4d808b28bc10cf71323a/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "b97e07e9621d4d808b28bc10cf71323a",
+    "notice_type_code": "k",
+    "notice_type": "Combined Synopsis/Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "N61331-26-Q-JK09",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Combined Synopsis/Solicitation",
+      "Vendor engagement keywords",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b97e07e9621d4d808b28bc10cf71323a",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b97e07e9621d4d808b28bc10cf71323a",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a35665a170e4ba6bcb76fa504aff726/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47023552f0e34149a63457eec9750b93/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6088b23f86244a1fbd92aa77576b8cf0/download"
+    ],
+    "resource_count": 3,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a35665a170e4ba6bcb76fa504aff726/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47023552f0e34149a63457eec9750b93/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6088b23f86244a1fbd92aa77576b8cf0/download"
+      }
+    ]
+  },
+  {
     "id": "sam-aa3d6bdcb7bd40d7a13fc0f91e0b7d50",
     "title": "MINE HUNTING IN CHALLENGING ENVIRONMENTS PARTICIPATION AGREEMENT (MHCE PA) ACOUSTIC COMMUNICATIONS (ACOMMS) EXP",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa3d6bdcb7bd40d7a13fc0f91e0b7d50",
@@ -868,13 +881,13 @@
     "resource_items": null
   },
   {
-    "id": "sam-61226ceb914147c78dcbc81bd273fd7f",
+    "id": "sam-f0b94fd1c2594a6b95b2e1404067c5d5",
     "title": "Sources Sought for Cyber Warfare Engineering and Security Services",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61226ceb914147c78dcbc81bd273fd7f",
-    "opportunity_url": "https://sam.gov/opp/61226ceb914147c78dcbc81bd273fd7f/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/61226ceb914147c78dcbc81bd273fd7f/view",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0b94fd1c2594a6b95b2e1404067c5d5",
+    "opportunity_url": "https://sam.gov/opp/f0b94fd1c2594a6b95b2e1404067c5d5/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/f0b94fd1c2594a6b95b2e1404067c5d5/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "61226ceb914147c78dcbc81bd273fd7f",
+    "notice_id": "f0b94fd1c2594a6b95b2e1404067c5d5",
     "notice_type_code": "r",
     "notice_type": "Sources Sought",
     "engagement_kinds": [
@@ -892,12 +905,50 @@
       "Industry/sourcing signal keywords"
     ],
     "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61226ceb914147c78dcbc81bd273fd7f",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61226ceb914147c78dcbc81bd273fd7f",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0b94fd1c2594a6b95b2e1404067c5d5",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0b94fd1c2594a6b95b2e1404067c5d5",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-03ad935a02604605920a09d154a74ff4",
+    "title": "N00019-26-RFPREQ-TPM265-0560: Main Line Contactors Sources Sought",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03ad935a02604605920a09d154a74ff4",
+    "opportunity_url": "https://sam.gov/opp/03ad935a02604605920a09d154a74ff4/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/03ad935a02604605920a09d154a74ff4/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "03ad935a02604605920a09d154a74ff4",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "N00019-26-RFPREQ-TPM265-0560_Main_Line_Contactors",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-05-11",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Sources Sought",
+      "Industry/sourcing signal keywords"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03ad935a02604605920a09d154a74ff4",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03ad935a02604605920a09d154a74ff4",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79923bb95d1242329b70368ddafd5edf/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79923bb95d1242329b70368ddafd5edf/download"
+      }
+    ]
   },
   {
     "id": "sam-eded23d1b65b4e70921536be0e160522",
@@ -1261,46 +1312,6 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7d20cf6d52e042d9b2356a9bf7c2f125/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-0ced5c3baebb412890a59b772765191f",
-    "title": "Sole Source to Deep South Crane Rentals for Bottlefield Crane Service",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ced5c3baebb412890a59b772765191f",
-    "opportunity_url": "https://sam.gov/opp/0ced5c3baebb412890a59b772765191f/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/0ced5c3baebb412890a59b772765191f/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "0ced5c3baebb412890a59b772765191f",
-    "notice_type_code": "k",
-    "notice_type": "Combined Synopsis/Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "N61331-26-Q-JK11",
-    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
-    "posted_date": "2026-03-20",
-    "response_deadline": "2026-03-24",
-    "place_of_performance": null,
-    "relevance_score": 6,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Combined Synopsis/Solicitation",
-      "NSWC/NUWC signal"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ced5c3baebb412890a59b772765191f",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ced5c3baebb412890a59b772765191f",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8eb05f96003c44c7af86184f5e30de48/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de0def4dec8f41d9b649e6d76127d602/download"
-    ],
-    "resource_count": 2,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8eb05f96003c44c7af86184f5e30de48/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de0def4dec8f41d9b649e6d76127d602/download"
       }
     ]
   },
@@ -3349,22 +3360,59 @@
     ]
   },
   {
-    "id": "sam-3a4fde89ec9549d1b6e90a3e94f7edb9",
-    "title": "E-6B Maintenance, Repair and Overhaul (MRO)",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a4fde89ec9549d1b6e90a3e94f7edb9",
-    "opportunity_url": "https://sam.gov/opp/3a4fde89ec9549d1b6e90a3e94f7edb9/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/3a4fde89ec9549d1b6e90a3e94f7edb9/view",
+    "id": "sam-a2f1ab138dd248e99171fdb746d17c09",
+    "title": "BQM-34S Engine Repair, Overhaul and Conversion",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2f1ab138dd248e99171fdb746d17c09",
+    "opportunity_url": "https://sam.gov/opp/a2f1ab138dd248e99171fdb746d17c09/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/a2f1ab138dd248e99171fdb746d17c09/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "3a4fde89ec9549d1b6e90a3e94f7edb9",
+    "notice_id": "a2f1ab138dd248e99171fdb746d17c09",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "RFI-N00019-242-25-076",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-05-08",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2f1ab138dd248e99171fdb746d17c09",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2f1ab138dd248e99171fdb746d17c09",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d77acb69b76c430e82a84c9d004200c4/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d77acb69b76c430e82a84c9d004200c4/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-f96efe2d0c8d4eebb82a2c7e582656ac",
+    "title": "CH-53K Fuel Shut Off Valve (FSOV) Kit Procurement",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f96efe2d0c8d4eebb82a2c7e582656ac",
+    "opportunity_url": "https://sam.gov/opp/f96efe2d0c8d4eebb82a2c7e582656ac/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/f96efe2d0c8d4eebb82a2c7e582656ac/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "f96efe2d0c8d4eebb82a2c7e582656ac",
     "notice_type_code": "p",
     "notice_type": "Pre-solicitation",
     "engagement_kinds": [
       "Pre-solicitation"
     ],
-    "solicitation_number": "N00019-25-RFPREQ-APM271-0012",
+    "solicitation_number": "N00019-26-RFPREQ-APM261-0230",
     "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
-    "posted_date": "2026-01-14",
-    "response_deadline": "2026-08-08",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-05-09",
     "place_of_performance": null,
     "relevance_score": 5,
     "relevance_reasons": [
@@ -3372,8 +3420,39 @@
       "Signal notice type: Pre-solicitation"
     ],
     "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a4fde89ec9549d1b6e90a3e94f7edb9",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a4fde89ec9549d1b6e90a3e94f7edb9",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f96efe2d0c8d4eebb82a2c7e582656ac",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f96efe2d0c8d4eebb82a2c7e582656ac",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-9d242a32548c4f0da69940f9963b92b3",
+    "title": "E-6B Maintenance, Repair and Overhaul (MRO)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d242a32548c4f0da69940f9963b92b3",
+    "opportunity_url": "https://sam.gov/opp/9d242a32548c4f0da69940f9963b92b3/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/9d242a32548c4f0da69940f9963b92b3/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "9d242a32548c4f0da69940f9963b92b3",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "N00019-25-RFPREQ-APM271-0012",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.NAVAL AIR SYSTEMS COMMAND",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-11-30",
+    "place_of_performance": null,
+    "relevance_score": 5,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d242a32548c4f0da69940f9963b92b3",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9d242a32548c4f0da69940f9963b92b3",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,

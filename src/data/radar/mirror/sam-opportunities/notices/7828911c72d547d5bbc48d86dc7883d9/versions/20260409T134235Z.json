@@ -1,0 +1,46 @@
+{
+  "id": "sam-7828911c72d547d5bbc48d86dc7883d9",
+  "title": "Adapter, Azimuth - Armament Subsystem, 30mm, XM139",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7828911c72d547d5bbc48d86dc7883d9",
+  "opportunity_url": "https://sam.gov/opp/7828911c72d547d5bbc48d86dc7883d9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7828911c72d547d5bbc48d86dc7883d9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7828911c72d547d5bbc48d86dc7883d9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912CH-26-F-0242",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC- DTA",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7828911c72d547d5bbc48d86dc7883d9",
+  "detail_text": "Description (Army Contracting Command-Detroit Arsenal (ACC-DTA) is conducting a Market Survey to determine the level of interest among qualified Contractors for the production of the (Adapter, Azimuth NSN: 1005-01-670-7115). The Army possesses a Purchase Description for this item. Suppliers capable of manufacturing this item, please complete the marked fields in the attached market survey below, and respond to Brandy Sanford, brandy.l.sanford2.civ@army.mil. The Purpose of this market survey is to identify potential offerors and gather information for planning purposes about capabilities of each industry source as defined in Federal Acquisition Regulation 15.201(e). The input will help ACC-DTA ascertain the interest, capability and capacity of all potential offerors. This Market Survey does not constitute a solicitation and shall not be construed as commitment by the Government. No telephone responses will be accepted.)",
+  "detail_text_length": 932,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/088f4c4901f14b1da25ee94d6aa446c5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/088f4c4901f14b1da25ee94d6aa446c5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39d2a23b284c281da93e7876e30f3788d242bba7bd0ef4c99f5e3ced2ca9cc40.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39d2a23b284c281da93e7876e30f3788d242bba7bd0ef4c99f5e3ced2ca9cc40.docx",
+      "file_id": "088f4c4901f14b1da25ee94d6aa446c5",
+      "file_name": "Sources+Sought-26F0242+-+BOA+-+BOEING.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 62697,
+      "sha256": "39d2a23b284c281da93e7876e30f3788d242bba7bd0ef4c99f5e3ced2ca9cc40"
+    }
+  ],
+  "_mirror_hash": "e0ed36f194c90756851655dbd95d45c1218256f59597417ddd8a7d24fa9e1258",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.845541+00:00"
+}

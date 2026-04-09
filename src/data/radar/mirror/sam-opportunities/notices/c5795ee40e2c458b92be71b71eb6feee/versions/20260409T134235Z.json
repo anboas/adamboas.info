@@ -1,0 +1,46 @@
+{
+  "id": "sam-c5795ee40e2c458b92be71b71eb6feee",
+  "title": "America 250 State Fair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c5795ee40e2c458b92be71b71eb6feee",
+  "opportunity_url": "https://sam.gov/opp/c5795ee40e2c458b92be71b71eb6feee/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c5795ee40e2c458b92be71b71eb6feee/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c5795ee40e2c458b92be71b71eb6feee",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "ACQ-26-0918",
+  "agency_path": "COMMERCE, DEPARTMENT OF.US PATENT AND TRADEMARK OFFICE.DEPT OF COMMERCE PTO",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c5795ee40e2c458b92be71b71eb6feee",
+  "detail_text": "***FOR INFORMATION ONLY*** Notice of Intent – PTAG 6.1.1 Sole Source The United States Patent and Trademark Office (USPTO), Office of the Under Secretary (OUS), intends to negotiate and award a sole‑source contract to design a festival-scale \"House of Innovation\" at the Great American State Fair, on the National Mall in Washington, D.C. This requirement will be procured using the Alternative Competition Method in accordance with the Patent and Trademark Office Acquisition Guidelines (PTAG) and under the Patent and Trademark Office Efficiency Act, 35 U.S.C. 2(b)(4)(A). The USPTO is exempt from the Competition in Contracting Act (CICA) for this procurement. The Federal Register notice describing the statutory authority is available at: https://federalregister.gov/a/2013-24316. The USPTO intends to award a sole‑source order for a base period of May 13, 2026- July 12, 2026 (estimated) to Vu Technologies (UEI: P9RNSHN32KC4), under NAICS 512110, as they are uniquely qualified to perform this requirement due to its direct prior involvement responsible for developing and implementing proprietary exhibit components in support of the existing exhibit infrastructure in Alexandria, VA. Primary POC: Yen Nguyen, Contract Specialist yen.nguyen1@uspto.gov Alternate POC: Emalee Gawrelski, Contracting Officer emalee.gawrelski@uspto.gov",
+  "detail_text_length": 1339,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97a8cd15e6fb40e0b36ad445c48a04e1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97a8cd15e6fb40e0b36ad445c48a04e1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39025240394c97b3f18c206c03459183aad5b9bc2343475255d53bd1c1ae3377.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39025240394c97b3f18c206c03459183aad5b9bc2343475255d53bd1c1ae3377.pdf",
+      "file_id": "97a8cd15e6fb40e0b36ad445c48a04e1",
+      "file_name": "PTAG+6_1_1+Notice+of+Intent_A250+State+Fair_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 157478,
+      "sha256": "39025240394c97b3f18c206c03459183aad5b9bc2343475255d53bd1c1ae3377"
+    }
+  ],
+  "_mirror_hash": "afdbf2d5c74e638f34468cd7734c0d56a1f26f75b01811696745dc11b6afe277",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.727685+00:00"
+}

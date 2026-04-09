@@ -1,0 +1,57 @@
+{
+  "id": "sam-ed97a6c89d8c441ba68938d79a35b2a3",
+  "title": "FEACrack and SignalFFS Software Maintenance Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ed97a6c89d8c441ba68938d79a35b2a3",
+  "opportunity_url": "https://sam.gov/opp/ed97a6c89d8c441ba68938d79a35b2a3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ed97a6c89d8c441ba68938d79a35b2a3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ed97a6c89d8c441ba68938d79a35b2a3",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "80NSSC26930312Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ed97a6c89d8c441ba68938d79a35b2a3",
+  "detail_text": "NASA/NSSC has a requirement for FY26 FEACrack and SignalFFS Software Maintenance Renewal . See the attached SOW and request for capability statements. *Pleae note* This is NOT a request for quotes. Pricing offers will not be review/accepted at this time. Correspondence should reference ID 80NSSC26930312Q in the subject line to ensure visibility.",
+  "detail_text_length": 347,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12ba039f202e4d28bb9f647bd050f13b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8fbd6d7b8c764bee870030c9c2e1f98d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12ba039f202e4d28bb9f647bd050f13b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/936fb15c4978d042ab038a79212c57539866a112a8014a1cb73ea9bae6a7b0b4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/936fb15c4978d042ab038a79212c57539866a112a8014a1cb73ea9bae6a7b0b4.pdf",
+      "file_id": "12ba039f202e4d28bb9f647bd050f13b",
+      "file_name": "Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 134036,
+      "sha256": "936fb15c4978d042ab038a79212c57539866a112a8014a1cb73ea9bae6a7b0b4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8fbd6d7b8c764bee870030c9c2e1f98d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba4292b5c09cb9e447212539d2cd9c78fcaf680a908dbe0e5279c8db3089b7c5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba4292b5c09cb9e447212539d2cd9c78fcaf680a908dbe0e5279c8db3089b7c5.pdf",
+      "file_id": "8fbd6d7b8c764bee870030c9c2e1f98d",
+      "file_name": "Tab+04+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 88680,
+      "sha256": "ba4292b5c09cb9e447212539d2cd9c78fcaf680a908dbe0e5279c8db3089b7c5"
+    }
+  ],
+  "_mirror_hash": "baf846101fe4d942f32da33f0cd2962cd583b4372f7f0a92919e8cf998a9b87a",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.716222+00:00"
+}

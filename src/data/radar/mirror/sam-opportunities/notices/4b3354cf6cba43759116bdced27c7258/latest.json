@@ -1,0 +1,46 @@
+{
+  "id": "sam-4b3354cf6cba43759116bdced27c7258",
+  "title": "USNS KAISER Freshwater Generator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4b3354cf6cba43759116bdced27c7258",
+  "opportunity_url": "https://sam.gov/opp/4b3354cf6cba43759116bdced27c7258/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4b3354cf6cba43759116bdced27c7258/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4b3354cf6cba43759116bdced27c7258",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N4044326Q0023",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4b3354cf6cba43759116bdced27c7258",
+  "detail_text": "The Government intends to make a sole source award to Alfa Laval, Inc. as they are the OEM for the Aqua Blue Single Stage Freshwater Generators aboard the USNS HENRY J. KAISER (T-AO 187). Any parts ordered from any entity worldwide will ultimately be purchaed through Alfa Laval.",
+  "detail_text_length": 279,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05585f4fd8074a77b2b68427cbd5a94f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05585f4fd8074a77b2b68427cbd5a94f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e40cdcd1e29f99025e443511ad66da31700422adf3b0881a37c3bab469e136ec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e40cdcd1e29f99025e443511ad66da31700422adf3b0881a37c3bab469e136ec.pdf",
+      "file_id": "05585f4fd8074a77b2b68427cbd5a94f",
+      "file_name": "26.4.7_Limited+Source_KAISER_Alfa+Laval_Signed_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 394541,
+      "sha256": "e40cdcd1e29f99025e443511ad66da31700422adf3b0881a37c3bab469e136ec"
+    }
+  ],
+  "_mirror_hash": "f253f164e1277c18fd0f09e7e93a274df6c4585c0385c5ef5feffdf202f7c056",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.744047+00:00"
+}

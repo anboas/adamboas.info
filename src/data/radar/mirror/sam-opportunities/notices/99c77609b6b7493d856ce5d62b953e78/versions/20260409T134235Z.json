@@ -1,0 +1,59 @@
+{
+  "id": "sam-99c77609b6b7493d856ce5d62b953e78",
+  "title": "Request for Information (RFI): USA Storage 3.0",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=99c77609b6b7493d856ce5d62b953e78",
+  "opportunity_url": "https://sam.gov/opp/99c77609b6b7493d856ce5d62b953e78/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/99c77609b6b7493d856ce5d62b953e78/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "99c77609b6b7493d856ce5d62b953e78",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "EOUSA_USASTORAGE",
+  "agency_path": "JUSTICE, DEPARTMENT OF.OFFICES, BOARDS AND DIVISIONS.EOUSA-ACQUISITIONS STAFF",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=99c77609b6b7493d856ce5d62b953e78",
+  "detail_text": "REQUEST FOR INFORMATION - USA STORAGE 3.0 NOTE: An RFI for this requirement was issued on GSA as well. If you are a GSA schedule holder, please respond to the RFI issued on GSA. The purpose of this RFI is to conduct market research to identify commercial capabilities and solution approaches that may support a future acquisition for enterprise Storage as a Service, referred to as USAStorage 3.0. The EOUSA supporting United States Attorneys’ Offices (USAOs) nationwide requires a modernized, scalable, and secure enterprise storage solution to support evidentiary and mission data. Existing storage capabilities must evolve to address continued data growth, multi-location access requirements, continuity of operations, and enhanced governance, auditability, and security. EOUSA is seeking to understand how industry solutions deployed in FedRAMP-approved Government Cloud environments can meet these needs. The scope of this SOO encompasses enterprise-wide storage capabilities supporting approximately 15,000 users across roughly 250 office locations. The solution must support an initial data footprint of nearly 20 petabytes, with the ability to scale indefinitely for usable capacity and support the ongoing growth of the USAOs at approximately two percent month over month, historically. The solution must support access to data from multiple geographic locations, at the nearest logical location to the user, and enable continuity of operations (COOP) for remote users and COOP processes. Response and Submission Instructions: If your company has the potential capacity to provide the solution outlined in the SOO, please submit a capabilities statement tailored to this requirement and provide the following information on the coverpage of your capabilities statement: company name, address, point of contact (name, phone number, email address), website URL, and UEI Number. Interested parties must complete the USA Storage 3.0 RFI Supplemental Questions attachment and submit it with your response to this RFI by April 23, 2026 at 5:00PM EST . All responses to this RFI must be emailed to Maynard Minor at Maynard.Minor@usdoj.gov. If you have any submission issues concerning this opportunity, please contact Maynard Minor via email at Maynard.Minor@usdoj.gov. Telephone inquiries will not be accepted or acknowledged, and no feedback or evaluations will be provided to companies regarding their submissions.",
+  "detail_text_length": 2419,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fb1ed793b01447594ac89d54075c7ea/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd400cba44d449a29a1ee2e7c9c15e42/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fb1ed793b01447594ac89d54075c7ea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a88db7744f46bea5ff5e6268a0a2a755c35ea7456378202d11be42e6ec436411.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a88db7744f46bea5ff5e6268a0a2a755c35ea7456378202d11be42e6ec436411.docx",
+      "file_id": "1fb1ed793b01447594ac89d54075c7ea",
+      "file_name": "USA+Storage+3.0+RFI+Supplemental+Questions.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21860,
+      "sha256": "a88db7744f46bea5ff5e6268a0a2a755c35ea7456378202d11be42e6ec436411"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd400cba44d449a29a1ee2e7c9c15e42/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3190654a896b8718f1f8e5103f5806e45bdc175a947179f02b1a153e46988b37.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3190654a896b8718f1f8e5103f5806e45bdc175a947179f02b1a153e46988b37.pdf",
+      "file_id": "dd400cba44d449a29a1ee2e7c9c15e42",
+      "file_name": "USAStorage_3.0_SOO+-+v1.3+-+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 732005,
+      "sha256": "3190654a896b8718f1f8e5103f5806e45bdc175a947179f02b1a153e46988b37"
+    }
+  ],
+  "_mirror_hash": "959a7ee88d5a64ef565a2aa8b9c94d415c547f4713e551515d8535db38d4e89d",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.640728+00:00"
+}

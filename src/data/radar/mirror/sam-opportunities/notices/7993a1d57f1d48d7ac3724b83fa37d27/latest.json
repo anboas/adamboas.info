@@ -1,0 +1,46 @@
+{
+  "id": "sam-7993a1d57f1d48d7ac3724b83fa37d27",
+  "title": "Parallel Bars, Hi-Lo Table",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7993a1d57f1d48d7ac3724b83fa37d27",
+  "opportunity_url": "https://sam.gov/opp/7993a1d57f1d48d7ac3724b83fa37d27/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7993a1d57f1d48d7ac3724b83fa37d27/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7993a1d57f1d48d7ac3724b83fa37d27",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26Q0143",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7993a1d57f1d48d7ac3724b83fa37d27",
+  "detail_text": "Please see the Statement of Work for Salient Charteristerics' needs, and also fill out page 3 of 6 with your company information.",
+  "detail_text_length": 129,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/799f6872fff14319be3604c0a6c40f37/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/799f6872fff14319be3604c0a6c40f37/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4b7d31a74dbb170f3674dad6d4cfbcfbeeff4fbeed67b647308cd6a21f20e3ea.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4b7d31a74dbb170f3674dad6d4cfbcfbeeff4fbeed67b647308cd6a21f20e3ea.pdf",
+      "file_id": "799f6872fff14319be3604c0a6c40f37",
+      "file_name": "S03+Source+Sought+_++36C24W26Q0143+Posted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 193988,
+      "sha256": "4b7d31a74dbb170f3674dad6d4cfbcfbeeff4fbeed67b647308cd6a21f20e3ea"
+    }
+  ],
+  "_mirror_hash": "0fbc4b0824c59f2373b8a482f41d2bb999628d3cbb11ff875b42b00b3270b528",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.821986+00:00"
+}

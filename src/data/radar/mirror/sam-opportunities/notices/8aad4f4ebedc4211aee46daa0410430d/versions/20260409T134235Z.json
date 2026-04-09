@@ -1,0 +1,57 @@
+{
+  "id": "sam-8aad4f4ebedc4211aee46daa0410430d",
+  "title": "TrueView Go 132S mapping sensor",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8aad4f4ebedc4211aee46daa0410430d",
+  "opportunity_url": "https://sam.gov/opp/8aad4f4ebedc4211aee46daa0410430d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8aad4f4ebedc4211aee46daa0410430d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8aad4f4ebedc4211aee46daa0410430d",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "80NSSC26928771Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8aad4f4ebedc4211aee46daa0410430d",
+  "detail_text": "NASA/NSSC has a requirement for TrueView Go 132S mapping sensor. See the attached SOW and request for capability statements. *Pleae note* This is NOT a request for quotes. Pricing offers will not be review/accepted at this time. Correspondence should reference ID 80NSSC26928771Q in the subject line to ensure visibility.",
+  "detail_text_length": 321,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5dc3c406da214052b85539b0635e4a6e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3587dd6b8e74b9886d7d7d5495096c9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5dc3c406da214052b85539b0635e4a6e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/67c0e03a0957a57a8293be2a40f908779c7ef70a3f2a95b0761e71641c763cc2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/67c0e03a0957a57a8293be2a40f908779c7ef70a3f2a95b0761e71641c763cc2.pdf",
+      "file_id": "5dc3c406da214052b85539b0635e4a6e",
+      "file_name": "Tab+04+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 110813,
+      "sha256": "67c0e03a0957a57a8293be2a40f908779c7ef70a3f2a95b0761e71641c763cc2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3587dd6b8e74b9886d7d7d5495096c9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a05b8bc95b61173f39f4e6562c936f3db7d4a98352a4723ed6c8fdc9ad4ad42.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a05b8bc95b61173f39f4e6562c936f3db7d4a98352a4723ed6c8fdc9ad4ad42.pdf",
+      "file_id": "a3587dd6b8e74b9886d7d7d5495096c9",
+      "file_name": "Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90288,
+      "sha256": "4a05b8bc95b61173f39f4e6562c936f3db7d4a98352a4723ed6c8fdc9ad4ad42"
+    }
+  ],
+  "_mirror_hash": "5d703dc4f5d01b57ec2bdad3767e0f5947e5757059777d1474e2471186266564",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.726219+00:00"
+}

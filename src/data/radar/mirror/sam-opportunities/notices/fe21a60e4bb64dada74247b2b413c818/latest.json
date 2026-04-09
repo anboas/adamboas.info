@@ -1,0 +1,46 @@
+{
+  "id": "sam-fe21a60e4bb64dada74247b2b413c818",
+  "title": "DDUX",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fe21a60e4bb64dada74247b2b413c818",
+  "opportunity_url": "https://sam.gov/opp/fe21a60e4bb64dada74247b2b413c818/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fe21a60e4bb64dada74247b2b413c818/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fe21a60e4bb64dada74247b2b413c818",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W31P4Q-26-R-0029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RSA.W6QK ACC-RSA",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fe21a60e4bb64dada74247b2b413c818",
+  "detail_text": "The Army Contracting Command Redstone Arsenal hereby issues the folowing Sources Sought notice as a means of conducting research to identify parties having an interest in and the resources to support a requirement of 112 Data Distribution Unit Expandable (DDUX) kits for cooperative partners and Foreign Military Sales (FMS) countries.",
+  "detail_text_length": 335,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27fc55cd25d84c00b34c26bf7aeb7fce/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27fc55cd25d84c00b34c26bf7aeb7fce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/98fc09da23e11d1d6e0696255027724a6236bb39a6afbac6948cd1c78782d05d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/98fc09da23e11d1d6e0696255027724a6236bb39a6afbac6948cd1c78782d05d.docx",
+      "file_id": "27fc55cd25d84c00b34c26bf7aeb7fce",
+      "file_name": "SS+RFI+DDUx+II+CPE+STORM+Approved.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43026,
+      "sha256": "98fc09da23e11d1d6e0696255027724a6236bb39a6afbac6948cd1c78782d05d"
+    }
+  ],
+  "_mirror_hash": "29e8b93a6447ad630e81743ace9dc40574627b930930f89dd3dbbe44813b43c5",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.851563+00:00"
+}

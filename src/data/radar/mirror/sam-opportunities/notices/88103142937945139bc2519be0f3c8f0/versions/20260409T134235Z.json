@@ -1,0 +1,57 @@
+{
+  "id": "sam-88103142937945139bc2519be0f3c8f0",
+  "title": "25--STEERING TIE ROD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88103142937945139bc2519be0f3c8f0",
+  "opportunity_url": "https://sam.gov/opp/88103142937945139bc2519be0f3c8f0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/88103142937945139bc2519be0f3c8f0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "88103142937945139bc2519be0f3c8f0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE7LX-26-R-0060",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=88103142937945139bc2519be0f3c8f0",
+  "detail_text": "This is a Sources Sought Notice for NSN 2530-01-363-4366 TIE ROD, STEERING. It has an Annual Demand Quantity of 1919 and an Annual Demand Value of $930,676.76. Drawings are not available for this item.",
+  "detail_text_length": 201,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ec28e74fdba4738b5f50b65a2dabd2e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3784b70f5ec4938941e5f3b5d6bf2de/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ec28e74fdba4738b5f50b65a2dabd2e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b60abbd889809aefd8c67650b22afcbef7c82412cccce945a2da9f61eca9716d.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b60abbd889809aefd8c67650b22afcbef7c82412cccce945a2da9f61eca9716d.xlsx",
+      "file_id": "2ec28e74fdba4738b5f50b65a2dabd2e",
+      "file_name": "Market+Research+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16520,
+      "sha256": "b60abbd889809aefd8c67650b22afcbef7c82412cccce945a2da9f61eca9716d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3784b70f5ec4938941e5f3b5d6bf2de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/61feed99efc7cba8a8ede7e4c29172d20c508989bc5525417bb6f57924d55b58.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/61feed99efc7cba8a8ede7e4c29172d20c508989bc5525417bb6f57924d55b58.docx",
+      "file_id": "b3784b70f5ec4938941e5f3b5d6bf2de",
+      "file_name": "Market+Research+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58172,
+      "sha256": "61feed99efc7cba8a8ede7e4c29172d20c508989bc5525417bb6f57924d55b58"
+    }
+  ],
+  "_mirror_hash": "840486c6d0280fde82ac1fa2da914d841d78c0e0de61e5b9b7873b7bea2da77e",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.709497+00:00"
+}

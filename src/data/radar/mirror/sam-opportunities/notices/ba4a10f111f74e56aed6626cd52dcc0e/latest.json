@@ -1,0 +1,46 @@
+{
+  "id": "sam-ba4a10f111f74e56aed6626cd52dcc0e",
+  "title": "DA01--Talent Management System Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba4a10f111f74e56aed6626cd52dcc0e",
+  "opportunity_url": "https://sam.gov/opp/ba4a10f111f74e56aed6626cd52dcc0e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ba4a10f111f74e56aed6626cd52dcc0e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ba4a10f111f74e56aed6626cd52dcc0e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C24E26Q0031",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO EAST (36C24E)",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba4a10f111f74e56aed6626cd52dcc0e",
+  "detail_text": "Special Notice Special Notice Page 3 of 3 Special Notice *= Required Field Special Notice Page 1 of 3 Intent to Sole Source The Department of Veterans Affairs, Regional Procurement Office East, intends to negotiate on a sole source basis with Performax 3, Inc., 2708 Alt 19 STE 505C Palm Harbor, Florida 34683-2665, in accordance with FAR 8.405-6. Regional Procurement Office East requires maintenance and support for the existing Performax 3 online platform that houses annual Joint Commission and OSHA training requirements, and additional employee training requirements. Performax 3 interfaces with TMS (the VA online learning system) to house and track employees training histories. The content catalog and content development services provided to VA eastern region by PerforMax 3 uses a proprietary content development template specifically designed for the VA s ADA section 508 requirements and configured for VA TMS compatibility. This enables lessons to be shared from one VA site to another. The combination of TMS hosting and content development and support makes the Performax 3 VA TMS hosting services unique and proprietary to Performax 3, Inc. No third parties are certified or authorized to perform maintenance or supply proprietary software to Performax 3 customers. This Notice of Intent is NOT a request for competitive proposals. Parties may identify their interest, accompanied by supporting literature, to the Contracting Officer no later than 04/29/2026 at 4:00 PM EST. All responses must be sent by email to the Contracting Officer, Eric Santoyo, at eric.santoyo@va.gov. Responses must include ISS 36C24E26Q0031 in the subject line. Telephone responses will not be accepted. Information received will be for the purpose of determining whether to conduct a competitive procurement. The determination to conduct a competitive procurement based on responses to this notice is solely within the discretion of the Contracting Officer. The NAICS Code for this procurement is 611430.",
+  "detail_text_length": 1999,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/462527f9de914d389a5663ed9d73ff4c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/462527f9de914d389a5663ed9d73ff4c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7a32055da51731fe4404c24b45bcd7d2ec6c365f37fb3a006202fb35b88665e8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7a32055da51731fe4404c24b45bcd7d2ec6c365f37fb3a006202fb35b88665e8.docx",
+      "file_id": "462527f9de914d389a5663ed9d73ff4c",
+      "file_name": "36C24E26Q0031.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23841,
+      "sha256": "7a32055da51731fe4404c24b45bcd7d2ec6c365f37fb3a006202fb35b88665e8"
+    }
+  ],
+  "_mirror_hash": "18c8714c8265caaf2740facafd4f432882a6aa6ea5eeae801c3277ccd0dcef80",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.879894+00:00"
+}

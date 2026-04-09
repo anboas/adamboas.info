@@ -1,0 +1,68 @@
+{
+  "id": "sam-ac216a508a054e298f2c81642682cf91",
+  "title": "Data Web Access Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ac216a508a054e298f2c81642682cf91",
+  "opportunity_url": "https://sam.gov/opp/ac216a508a054e298f2c81642682cf91/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ac216a508a054e298f2c81642682cf91/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ac216a508a054e298f2c81642682cf91",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "26-18-APMO",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE.INTERNAL REVENUE SERVICE",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ac216a508a054e298f2c81642682cf91",
+  "detail_text": "The Large Business & International division of IRS is looking for a curated global company database with integrated research tools and a suite of database subscriptions to enable tax audit, analysis, and potential tax assessments in the area of Section 482 transfer pricing and international taxation. The IRS is seeking full access allowing users to easily export all relevant information, save analyses, search sets for future use, and provide future enhancements/updates to the government at no additional cost.",
+  "detail_text_length": 514,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0cc3375b725d41dd93837fc2c05c0c91/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49664e88d00f4d18a44555e95a5cf9e7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d85a6d8663b34860be9319acd894d800/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0cc3375b725d41dd93837fc2c05c0c91/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f82681f29c9feb89e1c4b2b01858dd17785120c2ee075f0ddcf6cf5f62814f39.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f82681f29c9feb89e1c4b2b01858dd17785120c2ee075f0ddcf6cf5f62814f39.pdf",
+      "file_id": "0cc3375b725d41dd93837fc2c05c0c91",
+      "file_name": "RFI+-+Data+Web+Access+Subscription.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181480,
+      "sha256": "f82681f29c9feb89e1c4b2b01858dd17785120c2ee075f0ddcf6cf5f62814f39"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/49664e88d00f4d18a44555e95a5cf9e7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/22fa32937964e13146f6ccd8c1ea4c457121e56d30b3691f97303bb693a5d35d.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/22fa32937964e13146f6ccd8c1ea4c457121e56d30b3691f97303bb693a5d35d.xlsx",
+      "file_id": "49664e88d00f4d18a44555e95a5cf9e7",
+      "file_name": "Attachment+2+-+Vendor+Response+Form.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142661,
+      "sha256": "22fa32937964e13146f6ccd8c1ea4c457121e56d30b3691f97303bb693a5d35d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d85a6d8663b34860be9319acd894d800/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e9652eab375670f7bdcc3fffa31d38362573cfb8914f5c3632f52d18b230307.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e9652eab375670f7bdcc3fffa31d38362573cfb8914f5c3632f52d18b230307.pdf",
+      "file_id": "d85a6d8663b34860be9319acd894d800",
+      "file_name": "Attachment+1+-+DWAS+Requirement+Document.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 283488,
+      "sha256": "9e9652eab375670f7bdcc3fffa31d38362573cfb8914f5c3632f52d18b230307"
+    }
+  ],
+  "_mirror_hash": "1300bc7d2e8a7c5990855303f1c7e5e7b7a27d04b96dbef3b858ee7e156c4cf2",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.833002+00:00"
+}

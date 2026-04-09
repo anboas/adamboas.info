@@ -1,0 +1,56 @@
+{
+  "id": "sam-9ff690551e7940068851ed369d1b54d4",
+  "title": "Housing Home Appliances",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ff690551e7940068851ed369d1b54d4",
+  "opportunity_url": "https://sam.gov/opp/9ff690551e7940068851ed369d1b54d4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9ff690551e7940068851ed369d1b54d4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9ff690551e7940068851ed369d1b54d4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6817126QN038",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SIGONELLA.NAVSUP FLC SIGONELLA NAPLES OFFICE",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ff690551e7940068851ed369d1b54d4",
+  "detail_text": "Please see RFQ N6817126QN038 for requirement information.",
+  "detail_text_length": 57,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9707c3aa162b457bbcb9eeedf521dd46/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ead0390adcd48bba579183e039e1d27/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9707c3aa162b457bbcb9eeedf521dd46/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c9d6333d25ac67b5a5681394a32926d49026832010a05ee10c028ba0d462f5f7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c9d6333d25ac67b5a5681394a32926d49026832010a05ee10c028ba0d462f5f7.docx",
+      "file_id": "9707c3aa162b457bbcb9eeedf521dd46",
+      "file_name": "4.02+Attachment+1+-+Self-Certification+of+the+Anti-Mafia+Communication.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36350,
+      "sha256": "c9d6333d25ac67b5a5681394a32926d49026832010a05ee10c028ba0d462f5f7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9ead0390adcd48bba579183e039e1d27/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b496425db7038a6239cc1d980b6e2e0062bb84fe62f6ce7889fe3db323c4e3af.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b496425db7038a6239cc1d980b6e2e0062bb84fe62f6ce7889fe3db323c4e3af.pdf",
+      "file_id": "9ead0390adcd48bba579183e039e1d27",
+      "file_name": "4.02+N6817126QN038.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1849089,
+      "sha256": "b496425db7038a6239cc1d980b6e2e0062bb84fe62f6ce7889fe3db323c4e3af"
+    }
+  ],
+  "_mirror_hash": "157d488b2b063c1760d330ae6fadcd45d4f0e296e0443101baaf33478f0822dc",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:37.813313+00:00"
+}

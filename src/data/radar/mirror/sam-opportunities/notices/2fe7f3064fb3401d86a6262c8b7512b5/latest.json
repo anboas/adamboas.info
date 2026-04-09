@@ -1,0 +1,57 @@
+{
+  "id": "sam-2fe7f3064fb3401d86a6262c8b7512b5",
+  "title": "Apiay Base Operations Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2fe7f3064fb3401d86a6262c8b7512b5",
+  "opportunity_url": "https://sam.gov/opp/2fe7f3064fb3401d86a6262c8b7512b5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2fe7f3064fb3401d86a6262c8b7512b5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2fe7f3064fb3401d86a6262c8b7512b5",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "PAN25565_W912CL26RA002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.410TH CSB.0410 AQ HQ     CONTRACT",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2fe7f3064fb3401d86a6262c8b7512b5",
+  "detail_text": "The contractor shall provide non-personal services to include repair and maintenance of facilities and equipment, grounds maintenance, housekeeping/janitorial services, administrative support, property accountability, cargo movement, and management of billeting facilities at Apiay Air Base near Villavicencio, Colombia. Anticipated CLIN structure: X001 Base Operations Support Services - Fixed Price X002 Other Direct Costs - Fixed Price NTE (reimbursement excludes indirect cost) X003 CAP - Cost X004 Travel - Fixed Price NTE (IAW JTR) X005 Worker's Compensation / Defense Base Act - Fixed X006 Contractor Manpower Report - Fixed The Government anticipates a 6-month base period starting July 30, 2026 and four 12-month option periods. The solicitation will be made available through the GPE on or around April 20, 2026; interested offerors should monitor sam.gov for this opportunity. Tentatively scheduling a pre-proposal conference / site visit on May 13, 2026. A draft of the PWS is attached for interested vendors to submit questions no later than the pre-solicitation notice response date in order to consider adjustments prior to solicitation issuance. There will be no change to the acquisition strategy / no set-asides. Pre-solicitation notice updated to provide instructions for requesting site access for the tentatively scheduled pre-proposal conference on / around May 13, 2026. Recommendation is to cover a one week period. Cambridge (the incumbent contractor) is only involved in assisting with permission to get into Apiay, please fill out the attached FORM. Please fill out completely. Please send copies of passports. Please send the 5 W’s of your visit. Please arrange your transportation to and from the Base in Apiay, this is a Colombian Air Force base. Cambridge is not involved in the entry process to theater and country.",
+  "detail_text_length": 1847,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59136a5061584e16b2e386983e97c897/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffc991aca7334ee08af541230ee110f5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59136a5061584e16b2e386983e97c897/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9ff74c73481c717cfd5fa30d9cb6aa82ba05e8fd87ce36f17ab999ad83eb4340.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9ff74c73481c717cfd5fa30d9cb6aa82ba05e8fd87ce36f17ab999ad83eb4340.xlsx",
+      "file_id": "59136a5061584e16b2e386983e97c897",
+      "file_name": "CAMBRIDGE+OFICIO+REQUEST+FORM++18+FEB+2025.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29914,
+      "sha256": "9ff74c73481c717cfd5fa30d9cb6aa82ba05e8fd87ce36f17ab999ad83eb4340"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffc991aca7334ee08af541230ee110f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3a1df7c2e529662ef0485be600431291b4c7f1a47200af9c4d55d5f40db387ca.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3a1df7c2e529662ef0485be600431291b4c7f1a47200af9c4d55d5f40db387ca.docx",
+      "file_id": "ffc991aca7334ee08af541230ee110f5",
+      "file_name": "PWS+Draft+Apiay+BOS+for+pre-sol.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 143942,
+      "sha256": "3a1df7c2e529662ef0485be600431291b4c7f1a47200af9c4d55d5f40db387ca"
+    }
+  ],
+  "_mirror_hash": "75f996553c40f338884570e923615a220630481dc3ea201f15eaddb5a44b1d5f",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.682859+00:00"
+}

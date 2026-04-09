@@ -1,0 +1,46 @@
+{
+  "id": "sam-9589b48c7f614c8685fc4bb8822418a7",
+  "title": "Fraud Identification, Unsupervised AI, and Preventing Impersonations",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9589b48c7f614c8685fc4bb8822418a7",
+  "opportunity_url": "https://sam.gov/opp/9589b48c7f614c8685fc4bb8822418a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9589b48c7f614c8685fc4bb8822418a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9589b48c7f614c8685fc4bb8822418a7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "135-0034",
+  "agency_path": "COMMERCE, DEPARTMENT OF.US PATENT AND TRADEMARK OFFICE.DEPT OF COMMERCE PTO",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9589b48c7f614c8685fc4bb8822418a7",
+  "detail_text": "The purpose of this Request For Information/Sources Sought Notice is to conduct Market Research for the USPTO's \"Fraud Identification, Unsupervised AI, and Preventing Impersonations\" requirement. The details of this Request For Information, including response dates and requirements, are provided in the attached PDF document.",
+  "detail_text_length": 326,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/773210829a2f4a9b8df8f06cc5e5436e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/773210829a2f4a9b8df8f06cc5e5436e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6aada826db408a197923608885a80c1dbbca2b19f4997d3b393555daf32f9c46.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6aada826db408a197923608885a80c1dbbca2b19f4997d3b393555daf32f9c46.pdf",
+      "file_id": "773210829a2f4a9b8df8f06cc5e5436e",
+      "file_name": "USPTO+TM+RFI_Anti-Fraud+Impersonations+Unsupervised+AI_4.8.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 371547,
+      "sha256": "6aada826db408a197923608885a80c1dbbca2b19f4997d3b393555daf32f9c46"
+    }
+  ],
+  "_mirror_hash": "1f566103ec41fdbb270b2b22434a12e303250d9e8134952a7df1ceee9d3e8d42",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.885097+00:00"
+}

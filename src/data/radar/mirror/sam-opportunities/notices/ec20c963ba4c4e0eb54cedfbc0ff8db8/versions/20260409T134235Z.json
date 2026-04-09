@@ -1,0 +1,57 @@
+{
+  "id": "sam-ec20c963ba4c4e0eb54cedfbc0ff8db8",
+  "title": "G004 Homeless Care for Homeless Veterans, Akron Ohio",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec20c963ba4c4e0eb54cedfbc0ff8db8",
+  "opportunity_url": "https://sam.gov/opp/ec20c963ba4c4e0eb54cedfbc0ff8db8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ec20c963ba4c4e0eb54cedfbc0ff8db8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ec20c963ba4c4e0eb54cedfbc0ff8db8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25026Q0451",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.249-NETWORK CONTRACT OFFICE 9 (36C249)",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ec20c963ba4c4e0eb54cedfbc0ff8db8",
+  "detail_text": "The Louis Stokes Cleveland Medical Center requires Homeless Care for Homeless Veterans (HCHV) services in Akron, Ohio. Please see attached documents including the draft Performance Work Statement for more information. 36C250 -Contracting Office - Network Contracting Office - NCO 10",
+  "detail_text_length": 282,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d446d0513f4bc6af2ca80a037d1d82/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aab5d3240936478aa94b3c0cb7dcfae9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d446d0513f4bc6af2ca80a037d1d82/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7d9bdfb8a8ff357cafb79e49e2cdf87f3e716120779e1a31ac31b8184e74b5f3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7d9bdfb8a8ff357cafb79e49e2cdf87f3e716120779e1a31ac31b8184e74b5f3.docx",
+      "file_id": "77d446d0513f4bc6af2ca80a037d1d82",
+      "file_name": "Performance+Work+Statement_HCHV.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 79890,
+      "sha256": "7d9bdfb8a8ff357cafb79e49e2cdf87f3e716120779e1a31ac31b8184e74b5f3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aab5d3240936478aa94b3c0cb7dcfae9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/13963ac24a2f855236b37755812b5820fa822bf405f464937726bf21fe264f57.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/13963ac24a2f855236b37755812b5820fa822bf405f464937726bf21fe264f57.docx",
+      "file_id": "aab5d3240936478aa94b3c0cb7dcfae9",
+      "file_name": "36C25026Q0451.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26034,
+      "sha256": "13963ac24a2f855236b37755812b5820fa822bf405f464937726bf21fe264f57"
+    }
+  ],
+  "_mirror_hash": "59cb93cf3f121fdaed11e924c29be5d289fd8e97f3947bcc61f50165d9b48a7c",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.872588+00:00"
+}

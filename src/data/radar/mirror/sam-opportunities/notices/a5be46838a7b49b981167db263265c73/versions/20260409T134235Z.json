@@ -1,0 +1,46 @@
+{
+  "id": "sam-a5be46838a7b49b981167db263265c73",
+  "title": "CROWS - VxWorks Wind River License and Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5be46838a7b49b981167db263265c73",
+  "opportunity_url": "https://sam.gov/opp/a5be46838a7b49b981167db263265c73/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a5be46838a7b49b981167db263265c73/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a5be46838a7b49b981167db263265c73",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W15QKN26QA087",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-NJ.W6QK ACC-PICA",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5be46838a7b49b981167db263265c73",
+  "detail_text": "The United States Army Contracting Command – New Jersey, on behalf of the Combat Capabilities Development Command – Armaments Center (DEVCOM AC), hereby announces its intent to solicit a 12-month Firm Fixed Price (FFP) purchase order for Wind River VxWorks versions 6.9 and 7.0 Software Licenses and Software Maintenance Support. This procurement will be competed exclusively between two authorized resellers operating under U.S. Government contracts: USI Electronics (a division of Avnet Inc.) and Wildflower International, LTD. This procurement action includes a brand name restriction. The limitation of competition is justified in accordance with FAR 13.106-1(b)(1), which permits such restrictions for purchases not exceeding the Simplified Acquisition Threshold (SAT) due to factors including sole source availability, urgency, exclusive licensing agreements, brand names, or industrial mobilization requirements. A redacted copy of the justification is attached for reference. Please note, this notice of intent does not constitute a solicitation or request for competitive proposals. For any questions or further information, please contact Mr. Stevenson J. Vilus at stevenson.j.vilus.civ@army.mil.",
+  "detail_text_length": 1206,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c8a2ad5edec43d2a80c7ba1ea5d7100/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c8a2ad5edec43d2a80c7ba1ea5d7100/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea9c33a6408abc04bd48bc6cefd7f8cb215cea97b7936d40990d0353cfe39a84.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea9c33a6408abc04bd48bc6cefd7f8cb215cea97b7936d40990d0353cfe39a84.pdf",
+      "file_id": "1c8a2ad5edec43d2a80c7ba1ea5d7100",
+      "file_name": "FY26+VxWorks+LSJ+Final_Redacted+-03April26-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1289281,
+      "sha256": "ea9c33a6408abc04bd48bc6cefd7f8cb215cea97b7936d40990d0353cfe39a84"
+    }
+  ],
+  "_mirror_hash": "e86de9f442d52386503f113f1dd89ce4257fedac06708b0117d56f8ec2db4707",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.850113+00:00"
+}

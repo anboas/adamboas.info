@@ -1,0 +1,89 @@
+{
+  "id": "sam-bf088b04ebb744709efc528b7b3a6fcc",
+  "title": "REPLACE GRAVITY SEWER NEAR B298",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf088b04ebb744709efc528b7b3a6fcc",
+  "opportunity_url": "https://sam.gov/opp/bf088b04ebb744709efc528b7b3a6fcc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bf088b04ebb744709efc528b7b3a6fcc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bf088b04ebb744709efc528b7b3a6fcc",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N400857278814",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC MID-ATLANTIC.NAVFACSYSCOM MID-ATLANTIC",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf088b04ebb744709efc528b7b3a6fcc",
+  "detail_text": "This procurement is restricted to the Mechanical MACC contractors. Only the Mechanical MACC contractors listed on the RFP cover letter may submit a proposal. See attached documents for scope of work and any applicable drawings.",
+  "detail_text_length": 227,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/523186f486444a2b9ccb8f0ad00440b2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/686f3029f7ef40dbba18c5316f41386f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a95a7891b6894415bc8a481929a7523c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2d64a6691c74897805dc54fc0e8cee0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be1fe44fcfd34bc4b74f4edb61244ed1/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/523186f486444a2b9ccb8f0ad00440b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/52d733100337b4bb1008ae41007a828803fbcb03f05c477cc8a2b3b1ea4d879f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/52d733100337b4bb1008ae41007a828803fbcb03f05c477cc8a2b3b1ea4d879f.pdf",
+      "file_id": "523186f486444a2b9ccb8f0ad00440b2",
+      "file_name": "7278814+RFP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 233260,
+      "sha256": "52d733100337b4bb1008ae41007a828803fbcb03f05c477cc8a2b3b1ea4d879f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/686f3029f7ef40dbba18c5316f41386f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c66036cba48e59c5b5b29c602fcac84c6ff8a702943374def4acb3e5f1814b7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c66036cba48e59c5b5b29c602fcac84c6ff8a702943374def4acb3e5f1814b7.pdf",
+      "file_id": "686f3029f7ef40dbba18c5316f41386f",
+      "file_name": "7278814+DrawingsAsOne.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2882970,
+      "sha256": "1c66036cba48e59c5b5b29c602fcac84c6ff8a702943374def4acb3e5f1814b7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a95a7891b6894415bc8a481929a7523c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b5b570a6f270fa0da7d6414c3ba4f1d54be8ed059cedc92974d63b654a8824b8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b5b570a6f270fa0da7d6414c3ba4f1d54be8ed059cedc92974d63b654a8824b8.pdf",
+      "file_id": "a95a7891b6894415bc8a481929a7523c",
+      "file_name": "7278814+SpecsAsOne.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2154929,
+      "sha256": "b5b570a6f270fa0da7d6414c3ba4f1d54be8ed059cedc92974d63b654a8824b8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2d64a6691c74897805dc54fc0e8cee0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ec404d8db7e8307c73f09d9b848ce989752f6c78a08820a1d3c0cbd18ef997f3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ec404d8db7e8307c73f09d9b848ce989752f6c78a08820a1d3c0cbd18ef997f3.pdf",
+      "file_id": "b2d64a6691c74897805dc54fc0e8cee0",
+      "file_name": "Amendment+0001+7278814.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 540111,
+      "sha256": "ec404d8db7e8307c73f09d9b848ce989752f6c78a08820a1d3c0cbd18ef997f3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be1fe44fcfd34bc4b74f4edb61244ed1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/da50b11201f46eb39383f3f665c03ff6423e3e335dcc3d728fd261ff58c8a587.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/da50b11201f46eb39383f3f665c03ff6423e3e335dcc3d728fd261ff58c8a587.xlsx",
+      "file_id": "be1fe44fcfd34bc4b74f4edb61244ed1",
+      "file_name": "Master+PPI+Form.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22134,
+      "sha256": "da50b11201f46eb39383f3f665c03ff6423e3e335dcc3d728fd261ff58c8a587"
+    }
+  ],
+  "_mirror_hash": "722fdbfc2084c59f8f26dcacfc8f72a027e7c586a115266946580c05ad032554",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.636330+00:00"
+}

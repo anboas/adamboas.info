@@ -1,0 +1,45 @@
+{
+  "id": "sam-c9ee5692294a40f68d4b6405eaf66886",
+  "title": "Centrifugal Pump Unit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c9ee5692294a40f68d4b6405eaf66886",
+  "opportunity_url": "https://sam.gov/opp/c9ee5692294a40f68d4b6405eaf66886/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c9ee5692294a40f68d4b6405eaf66886/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c9ee5692294a40f68d4b6405eaf66886",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS260",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c9ee5692294a40f68d4b6405eaf66886",
+  "detail_text": "This is a Firm Fixed-Price Supply Type Solicitation NAVSUP Fleet Logistics Center Puget Sound, in support of Military Sealift Command, is negotiating a SOLE SOURCE requirement for the procurement of CARVER PUMP COMPANY, Centrifugal Pump Unit. See solicitation for requirements. Closes on 10 April 2026 at 9:00 AM EDT. All questions regarding this solicitation should be submitted to Aquaseia Osman, aquaseia.t.osman.civ@us.navy.mil.",
+  "detail_text_length": 432,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7756c9bb04ab4949a44e145b579d8994/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7756c9bb04ab4949a44e145b579d8994/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d7c6ba9fed2c5f150ea9d98efde88eb8549d5d28403c83b2c6b16b042cc8b58.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d7c6ba9fed2c5f150ea9d98efde88eb8549d5d28403c83b2c6b16b042cc8b58.pdf",
+      "file_id": "7756c9bb04ab4949a44e145b579d8994",
+      "file_name": "N0040626QS260.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1834768,
+      "sha256": "8d7c6ba9fed2c5f150ea9d98efde88eb8549d5d28403c83b2c6b16b042cc8b58"
+    }
+  ],
+  "_mirror_hash": "c9bb7aa1cbe897e479ea39728a39c391e6332c78cba88b1463df5eabef6f0686",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:37.802816+00:00"
+}

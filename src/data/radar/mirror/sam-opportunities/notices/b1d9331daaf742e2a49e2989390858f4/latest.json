@@ -1,0 +1,45 @@
+{
+  "id": "sam-b1d9331daaf742e2a49e2989390858f4",
+  "title": "5998 - Circuit Card Assemb - in repair/modification of",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1d9331daaf742e2a49e2989390858f4",
+  "opportunity_url": "https://sam.gov/opp/b1d9331daaf742e2a49e2989390858f4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b1d9331daaf742e2a49e2989390858f4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b1d9331daaf742e2a49e2989390858f4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QTB02",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1d9331daaf742e2a49e2989390858f4",
+  "detail_text": "See attached solicitation for details.",
+  "detail_text_length": 38,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d42d531fe6994899a280ce5e270bd825/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d42d531fe6994899a280ce5e270bd825/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c8f147efa8916d49044ef3c6c843fa3fe1eb60be603dfc0f14def6c54866b99b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c8f147efa8916d49044ef3c6c843fa3fe1eb60be603dfc0f14def6c54866b99b.pdf",
+      "file_id": "d42d531fe6994899a280ce5e270bd825",
+      "file_name": "N00104-26-Q-TB02.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 629979,
+      "sha256": "c8f147efa8916d49044ef3c6c843fa3fe1eb60be603dfc0f14def6c54866b99b"
+    }
+  ],
+  "_mirror_hash": "b9057534a26fb56719c62f6c00bb1f1fbec3d71199b05056c774f920c756fa1b",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.631810+00:00"
+}

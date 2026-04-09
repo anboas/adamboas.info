@@ -1,0 +1,58 @@
+{
+  "id": "sam-77b8059d68084472860577529226c5e0",
+  "title": "ICCS CAB HATCH SEAL TRACK MACHINING",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77b8059d68084472860577529226c5e0",
+  "opportunity_url": "https://sam.gov/opp/77b8059d68084472860577529226c5e0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/77b8059d68084472860577529226c5e0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "77b8059d68084472860577529226c5e0",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N42158-26-Q-0014",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77b8059d68084472860577529226c5e0",
+  "detail_text": "SEE ATTACHED SYNOPSIS AND DRAFT SOW",
+  "detail_text_length": 35,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6386e59d149047be859e13648d606adf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c0966a9a18449279d2489d5126f9041/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6386e59d149047be859e13648d606adf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e7493b7c2427be8f7193f01800a56b64fcd02a8145e2029b627560045c2e4648.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e7493b7c2427be8f7193f01800a56b64fcd02a8145e2029b627560045c2e4648.pdf",
+      "file_id": "6386e59d149047be859e13648d606adf",
+      "file_name": "ICC+STATEMENT+OF+WORK+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 653975,
+      "sha256": "e7493b7c2427be8f7193f01800a56b64fcd02a8145e2029b627560045c2e4648"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c0966a9a18449279d2489d5126f9041/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a930f7ad854b878e866cc44c8d46741cc2800a0bd21a3730d5f4a1382b0f52f1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a930f7ad854b878e866cc44c8d46741cc2800a0bd21a3730d5f4a1382b0f52f1.pdf",
+      "file_id": "6c0966a9a18449279d2489d5126f9041",
+      "file_name": "PRE+SOLI+ICCS+CAB+HATCH-1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125012,
+      "sha256": "a930f7ad854b878e866cc44c8d46741cc2800a0bd21a3730d5f4a1382b0f52f1"
+    }
+  ],
+  "_mirror_hash": "b6849a6adef44c6150a887f0f88283c1abb275d68d46165ceb174ef478f53e3a",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:37.786217+00:00"
+}

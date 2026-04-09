@@ -1,0 +1,57 @@
+{
+  "id": "sam-708879dcd225426f9bc7858cf0b571f5",
+  "title": "DPM IDIQ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=708879dcd225426f9bc7858cf0b571f5",
+  "opportunity_url": "https://sam.gov/opp/708879dcd225426f9bc7858cf0b571f5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/708879dcd225426f9bc7858cf0b571f5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "708879dcd225426f9bc7858cf0b571f5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA468626Q0009",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4686 9 CONS PK",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=708879dcd225426f9bc7858cf0b571f5",
+  "detail_text": "THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY. This notice does not constitute a commitment by the Government. It is issued for market research purposes to identify interested and capable sources and to determine the appropriate level of competition for the requirement. Information submitted is voluntary, and the Government will not pay for any costs incurred in responding. The 9th Contracting Squadron at Beale AFB, CA is conducting market research to identify interested and capable sources for Household Goods (HHG) Transportation, Storage, and Related Services. This requirement includes: Outbound Services (packing, transporting HHG from residences/storage facilities). Inbound Services (delivery, unpacking, and debris removal at residences). Intra-City and Intra-Area Moves (local transportation between locations). Storage Services (short- or long-term storage of HHG). Other Services (e.g., drayage, reweighing, partial withdrawals). Performance Locations: Multiple regions in Northern California, including: Area 1: Butte, Colusa, Glenn, Nevada, Placer, Sutter, Yuba Area 2: Del Norte, Humboldt, Lake, Mendocino, Trinity Area 3: Shasta, Siskiyou, Tehama Area 4: El Dorado, Lassen, Modoc, Plumas, Sierra RESPONSE INFORMATION Interested vendors should email the following information: 1. Company Info: Name, address, POC, phone, email, CAGE, UEI, business size/socio-economic status (e.g., Small Business, HUBZone, 8(a)). 2. Capabilities: Experience providing HHG transportation and storage services in accordance with NAICS code 484210 – Used Household and Office Goods Moving (Size Standard: $34M). Daily NCWT capacity and ability to perform in the specified regions. 3. Rough Order of Magnitude (ROM): Provide a high-level cost estimate (ROM) for providing these services based on the estimated daily requirements. The ROM is for informational purposes only and will not bind the respondent to any future pricing. 4. Past Performance: List recent, relevant contracts (past 5 years) with scope, contract value, and customer. 5. Feedback: Suggestions or challenges regarding the draft requirements (if applicable). SUBMISSION INSTRUCTIONS Please submit responses to Cali McVay at cali.mcvay.1@us.af.mil and Daniel Warden at daniel.warden.2@us.af.mil. Include \"Sources Sought Response: HHG Services\" in the subject line. DISCLAIMER This notice is for market research only and does not constitute a solicitation or obligation to award a contract. Final requirements will be provided in a future solicitation.",
+  "detail_text_length": 2515,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8320a8d9d1c042e787f97f88c6918fb0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8fef39e544441b497136c0829bd7c16/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8320a8d9d1c042e787f97f88c6918fb0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fc2ea458cae3d1c2b98e5e89757c5d4a9c6c5f8bf41258ff83fdbd6f350ae58f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fc2ea458cae3d1c2b98e5e89757c5d4a9c6c5f8bf41258ff83fdbd6f350ae58f.pdf",
+      "file_id": "8320a8d9d1c042e787f97f88c6918fb0",
+      "file_name": "DPM+IDIQ+PWS+DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1578473,
+      "sha256": "fc2ea458cae3d1c2b98e5e89757c5d4a9c6c5f8bf41258ff83fdbd6f350ae58f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8fef39e544441b497136c0829bd7c16/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0472277ee0ddab0b9d32356ef2f3daf2cd1141957be4cacf9c3baa586b3d7c40.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0472277ee0ddab0b9d32356ef2f3daf2cd1141957be4cacf9c3baa586b3d7c40.xlsx",
+      "file_id": "d8fef39e544441b497136c0829bd7c16",
+      "file_name": "DPM+IDIQ+Bid+Schedule+Draft.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 295936,
+      "sha256": "0472277ee0ddab0b9d32356ef2f3daf2cd1141957be4cacf9c3baa586b3d7c40"
+    }
+  ],
+  "_mirror_hash": "a3852c5f16b785b6bd64f1afae6f2904ab72c00209a97ec0d46e24e93d9c83c8",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.820645+00:00"
+}

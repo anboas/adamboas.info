@@ -1,0 +1,46 @@
+{
+  "id": "sam-094f3a118fbe4fa79da64bfa68c94aa9",
+  "title": "Analytic Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=094f3a118fbe4fa79da64bfa68c94aa9",
+  "opportunity_url": "https://sam.gov/opp/094f3a118fbe4fa79da64bfa68c94aa9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/094f3a118fbe4fa79da64bfa68c94aa9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "094f3a118fbe4fa79da64bfa68c94aa9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "192126FLMURQ0037",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US IMMIGRATION AND CUSTOMS ENFORCEMENT.INVESTIGATIONS AND OPERATIONS SUPPORT DALLAS",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=094f3a118fbe4fa79da64bfa68c94aa9",
+  "detail_text": "Analytic Support Services",
+  "detail_text_length": 25,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b715e7483f243a58b7fa3860ad42a69/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b715e7483f243a58b7fa3860ad42a69/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0a44e0f3f12a87006ff3c2c6cd0b33880f22977592a55362c28bb4a32b048b51.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0a44e0f3f12a87006ff3c2c6cd0b33880f22977592a55362c28bb4a32b048b51.pdf",
+      "file_id": "6b715e7483f243a58b7fa3860ad42a69",
+      "file_name": "1.9.1-+Notice+of+Intent_Analytic+Support.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 82150,
+      "sha256": "0a44e0f3f12a87006ff3c2c6cd0b33880f22977592a55362c28bb4a32b048b51"
+    }
+  ],
+  "_mirror_hash": "1e067c81c4f3e00d00891c3e55a03fb9b7ea35224e76d9fda386931b449524b2",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.714695+00:00"
+}

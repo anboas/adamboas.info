@@ -1,0 +1,69 @@
+{
+  "id": "sam-171fe1a5e19849fcadc2612d11163b78",
+  "title": "LHD CLASS DIESEL ENGINE ASSESSMENT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=171fe1a5e19849fcadc2612d11163b78",
+  "opportunity_url": "https://sam.gov/opp/171fe1a5e19849fcadc2612d11163b78/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/171fe1a5e19849fcadc2612d11163b78/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "171fe1a5e19849fcadc2612d11163b78",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N5523626Q0061",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.REGIONAL MAINTENANCE CENTER.SOUTHWEST REGIONAL MAINT CENTER",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=171fe1a5e19849fcadc2612d11163b78",
+  "detail_text": "Southwest Regional Maintenance Center (SWRMC), Code 410A Procurement, intends to award a sole source requirement to Fairbanks Morse LLC, to provide a complete assessment of the LHD class diesel generator engine asset (ALCO Model 251C). This requirement will be processed in accordance with FAR part 12. The North American Industry Classification System (NAICS) Code is 811310 – Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance. This notice is neither a request nor a solicitation of offers; however, all information received after the date of publication of this notice will be reviewed by the Government for future considerations. Information received will be considered solely for the purpose of determining whether conducting a competitive procurement is in the best interest of the Government. Responses must provide clear and concise documentation indicating the vendor's bona fide capability to provide this service or its equivalency. Responses must include company name, address, telephone number, email address, CAGE Code, and business size. All information should be delivered via email to Samantha Toles, samantha.l.toles.civ@us.navy.mil, Dayen Lagunas, dayen.lagunas.civ@us.navy.mil, Jorge Morales, jorge.a.morales67.civ@us.navy.mil, and Suzanne Shin, suzanne.j.shin.civ@us.navy.mil no later than 11:00 AM (PACIFIC), 10 April 2026. Certifications in the System for Award Management must be current and active to be eligible for contract award.",
+  "detail_text_length": 1514,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17ae0be53b33439ea4afe0590f467d48/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1b6a56f6f5e4dcbb09bd1e397a42f57/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0075e9d71184e1787a06b37495f42f5/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/17ae0be53b33439ea4afe0590f467d48/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/96206e52580ca60757fce1ced10db20f3a4241f5b6f92f003c9754b6e493f279.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/96206e52580ca60757fce1ced10db20f3a4241f5b6f92f003c9754b6e493f279.pdf",
+      "file_id": "17ae0be53b33439ea4afe0590f467d48",
+      "file_name": "26Q0061_SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 299089,
+      "sha256": "96206e52580ca60757fce1ced10db20f3a4241f5b6f92f003c9754b6e493f279"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1b6a56f6f5e4dcbb09bd1e397a42f57/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a42488e80d7025956150dec7e44c5179d022a0608404d81604af5e9d07de4968.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a42488e80d7025956150dec7e44c5179d022a0608404d81604af5e9d07de4968.docx",
+      "file_id": "b1b6a56f6f5e4dcbb09bd1e397a42f57",
+      "file_name": "26Q0061_RFC.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 213645,
+      "sha256": "a42488e80d7025956150dec7e44c5179d022a0608404d81604af5e9d07de4968"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0075e9d71184e1787a06b37495f42f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/19c56d261135bd374a1b9fa812f9f4ec59431653a12083c4cf209d2c51e1a8ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/19c56d261135bd374a1b9fa812f9f4ec59431653a12083c4cf209d2c51e1a8ce.pdf",
+      "file_id": "c0075e9d71184e1787a06b37495f42f5",
+      "file_name": "26Q0061_COMSS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 207912,
+      "sha256": "19c56d261135bd374a1b9fa812f9f4ec59431653a12083c4cf209d2c51e1a8ce"
+    }
+  ],
+  "_mirror_hash": "e5245d61196b4e1d1e99c70cf21dbc73d82c86a65ee175a28afcb22d5e18f50e",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:37.767703+00:00"
+}

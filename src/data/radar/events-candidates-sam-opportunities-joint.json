@@ -277,37 +277,6 @@
     ]
   },
   {
-    "id": "sam-77534da2574345659cc0b3d309c81530",
-    "title": "Sources Sought",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77534da2574345659cc0b3d309c81530",
-    "opportunity_url": "https://sam.gov/opp/77534da2574345659cc0b3d309c81530/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/77534da2574345659cc0b3d309c81530/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "77534da2574345659cc0b3d309c81530",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRHA126R0499",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA  AVIATION AT OGDEN, UT",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-04-07",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought",
-      "Industry/sourcing signal keywords"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77534da2574345659cc0b3d309c81530",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77534da2574345659cc0b3d309c81530",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-16412ad44dbf413f87d2c6a649f15415",
     "title": "Request for Information (RFI) SPV Support for Honduras",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=16412ad44dbf413f87d2c6a649f15415",
@@ -483,41 +452,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-5b645bf638e7416bbb11ed0e6df8d176",
-    "title": "NAVY HOSE FLANGE",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b645bf638e7416bbb11ed0e6df8d176",
-    "opportunity_url": "https://sam.gov/opp/5b645bf638e7416bbb11ed0e6df8d176/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/5b645bf638e7416bbb11ed0e6df8d176/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "5b645bf638e7416bbb11ed0e6df8d176",
-    "notice_type_code": "o",
-    "notice_type": "Solicitation",
-    "engagement_kinds": [],
-    "solicitation_number": "SPMYM226Q59660",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME SHIPYARDS.DLA MARITIME - PUGET SOUND",
-    "posted_date": "2026-04-07",
-    "response_deadline": "2026-04-08",
-    "place_of_performance": null,
-    "relevance_score": 4,
-    "relevance_reasons": [
-      "Navy-linked organization or content",
-      "Solicitation notice type: Solicitation"
-    ],
-    "navy_related": true,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b645bf638e7416bbb11ed0e6df8d176",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b645bf638e7416bbb11ed0e6df8d176",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4bf59e246da467f850a5f803899f6c7/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4bf59e246da467f850a5f803899f6c7/download"
-      }
-    ]
   },
   {
     "id": "sam-0c776e36e7ff4aadb1a23b19bca6d0bd",
@@ -867,6 +801,45 @@
       },
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/85864ab7d92e4857a95c7d320114f62c/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-dda19f32a943437399184ed312e61b92",
+    "title": "NAVY HOSE FLANGE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dda19f32a943437399184ed312e61b92",
+    "opportunity_url": "https://sam.gov/opp/dda19f32a943437399184ed312e61b92/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/dda19f32a943437399184ed312e61b92/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "dda19f32a943437399184ed312e61b92",
+    "notice_type_code": "o",
+    "notice_type": "Solicitation",
+    "engagement_kinds": [],
+    "solicitation_number": "SPMYM226Q59660",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME SHIPYARDS.DLA MARITIME - PUGET SOUND",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-10",
+    "place_of_performance": null,
+    "relevance_score": 4,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Solicitation notice type: Solicitation"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dda19f32a943437399184ed312e61b92",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dda19f32a943437399184ed312e61b92",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4bf59e246da467f850a5f803899f6c7/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caf5ce2e9e604032b9ee20cfea2626b6/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a4bf59e246da467f850a5f803899f6c7/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caf5ce2e9e604032b9ee20cfea2626b6/download"
       }
     ]
   },
@@ -1417,41 +1390,64 @@
     "resource_items": null
   },
   {
-    "id": "sam-af4691faa10f4dbe825f48688f5f9455",
-    "title": "DRAFT RFP - Landing Gear Collaborative Supply Chain Integration II",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=af4691faa10f4dbe825f48688f5f9455",
-    "opportunity_url": "https://sam.gov/opp/af4691faa10f4dbe825f48688f5f9455/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/af4691faa10f4dbe825f48688f5f9455/view",
+    "id": "sam-04f2dd81eab24f63b8444ee339d2958e",
+    "title": "WIRE, NON-ELECTRICAL",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04f2dd81eab24f63b8444ee339d2958e",
+    "opportunity_url": "https://sam.gov/opp/04f2dd81eab24f63b8444ee339d2958e/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/04f2dd81eab24f63b8444ee339d2958e/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "af4691faa10f4dbe825f48688f5f9455",
+    "notice_id": "04f2dd81eab24f63b8444ee339d2958e",
     "notice_type_code": "p",
     "notice_type": "Pre-solicitation",
     "engagement_kinds": [
       "Pre-solicitation"
     ],
-    "solicitation_number": "SPRHA1-26-R-1003",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA  AVIATION AT OGDEN, UT",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-05-31",
+    "solicitation_number": "SPMYM126Q4054",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME SHIPYARDS.DLA MARITIME - NORFOLK",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2025-04-13",
     "place_of_performance": null,
-    "relevance_score": 4,
+    "relevance_score": 2,
     "relevance_reasons": [
-      "Signal notice type: Pre-solicitation",
-      "Industry/sourcing signal keywords"
+      "Signal notice type: Pre-solicitation"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=af4691faa10f4dbe825f48688f5f9455",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=af4691faa10f4dbe825f48688f5f9455",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04f2dd81eab24f63b8444ee339d2958e",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04f2dd81eab24f63b8444ee339d2958e",
     "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/554ab0518ff446b0bbcd6a768e1a8a35/download"
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-b3035b22e58e4fd092080ca92a294945",
+    "title": "53 - KIT,OVERHAUL",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3035b22e58e4fd092080ca92a294945",
+    "opportunity_url": "https://sam.gov/opp/b3035b22e58e4fd092080ca92a294945/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b3035b22e58e4fd092080ca92a294945/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "b3035b22e58e4fd092080ca92a294945",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
     ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/554ab0518ff446b0bbcd6a768e1a8a35/download"
-      }
-    ]
+    "solicitation_number": "SPE7L126R0076",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2025-04-23",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3035b22e58e4fd092080ca92a294945",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b3035b22e58e4fd092080ca92a294945",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-87bf2f1b783b4af39f013d6a9da40f8c",
@@ -1492,36 +1488,6 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f81ef904b578421f861990c4df5e6265/download"
       }
     ]
-  },
-  {
-    "id": "sam-a82a259b687c42698a1c9a49684f0ddb",
-    "title": "Frame, Front Aircraft",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a82a259b687c42698a1c9a49684f0ddb",
-    "opportunity_url": "https://sam.gov/opp/a82a259b687c42698a1c9a49684f0ddb/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/a82a259b687c42698a1c9a49684f0ddb/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "a82a259b687c42698a1c9a49684f0ddb",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRTA1-26-R-0081",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2025-12-26",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a82a259b687c42698a1c9a49684f0ddb",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a82a259b687c42698a1c9a49684f0ddb",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
   },
   {
     "id": "sam-4e44fa20ba684d54a37bb647e979974c",
@@ -1706,66 +1672,6 @@
     ]
   },
   {
-    "id": "sam-a6406124035c4b41bd9986b8dff9a155",
-    "title": "Electromagnetic Spectrum (EMS) Services Applied Engineering, Spectrum, and Electromagnetic Environmental Effects (E3) Engineering Analysis Support",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6406124035c4b41bd9986b8dff9a155",
-    "opportunity_url": "https://sam.gov/opp/a6406124035c4b41bd9986b8dff9a155/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/a6406124035c4b41bd9986b8dff9a155/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "a6406124035c4b41bd9986b8dff9a155",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "632572927",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).DEFENSE INFORMATION SYSTEMS AGENCY",
-    "posted_date": "2026-03-03",
-    "response_deadline": "2026-03-24",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6406124035c4b41bd9986b8dff9a155",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a6406124035c4b41bd9986b8dff9a155",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-837990559d2649d7b447254e31c4f01b",
-    "title": "8 NSN CREATING TECH  SPE7MX26R0028",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=837990559d2649d7b447254e31c4f01b",
-    "opportunity_url": "https://sam.gov/opp/837990559d2649d7b447254e31c4f01b/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/837990559d2649d7b447254e31c4f01b/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "837990559d2649d7b447254e31c4f01b",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE7MX26R0043",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-24",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=837990559d2649d7b447254e31c4f01b",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=837990559d2649d7b447254e31c4f01b",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-d21d56540e794446a478e433e7a31e23",
     "title": "29--RADIATOR,ENGINE",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d21d56540e794446a478e433e7a31e23",
@@ -1870,42 +1776,6 @@
     ]
   },
   {
-    "id": "sam-c75faa4488004e11b91b40e6af114cbb",
-    "title": "Multi NSN SPRRA1-26-R-0037",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c75faa4488004e11b91b40e6af114cbb",
-    "opportunity_url": "https://sam.gov/opp/c75faa4488004e11b91b40e6af114cbb/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/c75faa4488004e11b91b40e6af114cbb/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "c75faa4488004e11b91b40e6af114cbb",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRRA1-26-R-0037",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION HUNTSVILLE.DLA AVIATION AT HUNTSVILLE, AL",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-26",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c75faa4488004e11b91b40e6af114cbb",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c75faa4488004e11b91b40e6af114cbb",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bf61b734a01443d82fb769f1b84efac/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bf61b734a01443d82fb769f1b84efac/download"
-      }
-    ]
-  },
-  {
     "id": "sam-ef561b0551ab4b818dd4c929812bfc91",
     "title": "NUT, SEFL LOCKING, EX",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ef561b0551ab4b818dd4c929812bfc91",
@@ -2006,102 +1876,6 @@
     ]
   },
   {
-    "id": "sam-8471dd89b89543c7b26352bb67c0eb30",
-    "title": "SPE4A6-26-R-X668, NSN 3110-01-235-0389, CAM, FOLLOWER, NEEDLE",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8471dd89b89543c7b26352bb67c0eb30",
-    "opportunity_url": "https://sam.gov/opp/8471dd89b89543c7b26352bb67c0eb30/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/8471dd89b89543c7b26352bb67c0eb30/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "8471dd89b89543c7b26352bb67c0eb30",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPE4A6-26-R-X668",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-03-26",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8471dd89b89543c7b26352bb67c0eb30",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8471dd89b89543c7b26352bb67c0eb30",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-27e94839c0b04d2f996e574cef5d4d1c",
-    "title": "26 - RUN-FLAT KIT,INSERT",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=27e94839c0b04d2f996e574cef5d4d1c",
-    "opportunity_url": "https://sam.gov/opp/27e94839c0b04d2f996e574cef5d4d1c/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/27e94839c0b04d2f996e574cef5d4d1c/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "27e94839c0b04d2f996e574cef5d4d1c",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "7015536162",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-27",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=27e94839c0b04d2f996e574cef5d4d1c",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=27e94839c0b04d2f996e574cef5d4d1c",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1acbff78dfc84ca0956334a43c7144cd/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1acbff78dfc84ca0956334a43c7144cd/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-7dadf764d42f47759c0a4741f2aae198",
-    "title": "5995-016863833  26F O6A MTRS, MAN-TRANSPORTABLE ROBOTIC SYSTEM,U; O8A CRS-H, COMMON ROBOTIC SYSTEM HEAVY, UNMANN; OUM MAN TRANSPORTABLE ROBOTIC SYSTEM INCREME; TVN EOD TOOLLS & EQUIPMENT",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7dadf764d42f47759c0a4741f2aae198",
-    "opportunity_url": "https://sam.gov/opp/7dadf764d42f47759c0a4741f2aae198/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/7dadf764d42f47759c0a4741f2aae198/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "7dadf764d42f47759c0a4741f2aae198",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPE4A6-26-R-0176",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-27",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7dadf764d42f47759c0a4741f2aae198",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7dadf764d42f47759c0a4741f2aae198",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-febd6ad3f9e646099c1a66caab322af0",
     "title": "66-  CAMERA, INFRARED, INDUSTRIAL",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=febd6ad3f9e646099c1a66caab322af0",
@@ -2198,98 +1972,38 @@
     "resource_items": null
   },
   {
-    "id": "sam-38d2204658a644118d6126c27851bcc3",
-    "title": "53 - KIT,OVERHAUL",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38d2204658a644118d6126c27851bcc3",
-    "opportunity_url": "https://sam.gov/opp/38d2204658a644118d6126c27851bcc3/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/38d2204658a644118d6126c27851bcc3/view",
+    "id": "sam-e3bb66cb67a946c79daa82e0cd7804ef",
+    "title": "49 NSN Gentex SPE4AX17D9402 Follow-On, Solicitation SPE4A726R0491",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e3bb66cb67a946c79daa82e0cd7804ef",
+    "opportunity_url": "https://sam.gov/opp/e3bb66cb67a946c79daa82e0cd7804ef/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/e3bb66cb67a946c79daa82e0cd7804ef/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "38d2204658a644118d6126c27851bcc3",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
+    "notice_id": "e3bb66cb67a946c79daa82e0cd7804ef",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
     "engagement_kinds": [
-      "Sources Sought"
+      "Pre-solicitation"
     ],
-    "solicitation_number": "7015420563",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-30",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38d2204658a644118d6126c27851bcc3",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=38d2204658a644118d6126c27851bcc3",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-d3410903744e4e8e9a301afbec3eff3a",
-    "title": "6220-01-320-6938; EEN; E2/C2 ALL SERIES",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3410903744e4e8e9a301afbec3eff3a",
-    "opportunity_url": "https://sam.gov/opp/d3410903744e4e8e9a301afbec3eff3a/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/d3410903744e4e8e9a301afbec3eff3a/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "d3410903744e4e8e9a301afbec3eff3a",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPE4A626R0170",
+    "solicitation_number": "SPE4A726R0491",
     "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-30",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-03-29",
     "place_of_performance": null,
     "relevance_score": 2,
     "relevance_reasons": [
-      "Signal notice type: Sources Sought"
+      "Signal notice type: Pre-solicitation"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3410903744e4e8e9a301afbec3eff3a",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3410903744e4e8e9a301afbec3eff3a",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-61d0790c82c848489af3f6cc7ecbaa60",
-    "title": "Valve, Flow, Control",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61d0790c82c848489af3f6cc7ecbaa60",
-    "opportunity_url": "https://sam.gov/opp/61d0790c82c848489af3f6cc7ecbaa60/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/61d0790c82c848489af3f6cc7ecbaa60/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "61d0790c82c848489af3f6cc7ecbaa60",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "FD20302400989_01",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-03-30",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61d0790c82c848489af3f6cc7ecbaa60",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=61d0790c82c848489af3f6cc7ecbaa60",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e3bb66cb67a946c79daa82e0cd7804ef",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e3bb66cb67a946c79daa82e0cd7804ef",
     "detail_text_length": 94,
     "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1956b417311b4633a835363e6cefb6f2/download"
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a8296502daa4ab1985e3c1411f04d8b/download"
     ],
     "resource_count": 1,
     "resource_items": [
       {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1956b417311b4633a835363e6cefb6f2/download"
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a8296502daa4ab1985e3c1411f04d8b/download"
       }
     ]
   },
@@ -2348,36 +2062,6 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f537e065bcec4636a406ade31ccab9e1",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f537e065bcec4636a406ade31ccab9e1",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-57ef0474373e4438ab13f3f7e27bd50e",
-    "title": "SPE4A726R0513 - 5342 - SEAL, TRANSPARENT INDICATOR/ WSIC L",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57ef0474373e4438ab13f3f7e27bd50e",
-    "opportunity_url": "https://sam.gov/opp/57ef0474373e4438ab13f3f7e27bd50e/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/57ef0474373e4438ab13f3f7e27bd50e/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "57ef0474373e4438ab13f3f7e27bd50e",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPE4A726R0513",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-03-30",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57ef0474373e4438ab13f3f7e27bd50e",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57ef0474373e4438ab13f3f7e27bd50e",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -2676,42 +2360,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-35cbd37d2752444ab9985ab7950c59eb",
-    "title": "Slat, Aircraft",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35cbd37d2752444ab9985ab7950c59eb",
-    "opportunity_url": "https://sam.gov/opp/35cbd37d2752444ab9985ab7950c59eb/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/35cbd37d2752444ab9985ab7950c59eb/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "35cbd37d2752444ab9985ab7950c59eb",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "FD20302601291",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-03-31",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35cbd37d2752444ab9985ab7950c59eb",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35cbd37d2752444ab9985ab7950c59eb",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c737166375f4198950ecc84c244a931/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c737166375f4198950ecc84c244a931/download"
-      }
-    ]
-  },
-  {
     "id": "sam-70bc9f6d0ec24385bde0ecf57f5b6189",
     "title": "Solicitation SPE60526R0200 for the United Kingdom PC&S Ground Fuels Program",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70bc9f6d0ec24385bde0ecf57f5b6189",
@@ -2806,42 +2454,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-1bd7bd77877c4b559295b331b3e7cb5a",
-    "title": "SEAL, ASSY, MAGNETIC",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1bd7bd77877c4b559295b331b3e7cb5a",
-    "opportunity_url": "https://sam.gov/opp/1bd7bd77877c4b559295b331b3e7cb5a/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/1bd7bd77877c4b559295b331b3e7cb5a/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "1bd7bd77877c4b559295b331b3e7cb5a",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "7015050761",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
-    "posted_date": "2026-03-31",
-    "response_deadline": "2026-03-31",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1bd7bd77877c4b559295b331b3e7cb5a",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1bd7bd77877c4b559295b331b3e7cb5a",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c91a824d0ca426f862dd92b8f3bb4ae/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c91a824d0ca426f862dd92b8f3bb4ae/download"
-      }
-    ]
   },
   {
     "id": "sam-7b8f32cc690f473e9cadab2ee6c842d7",
@@ -3290,78 +2902,6 @@
     ]
   },
   {
-    "id": "sam-8b67c6aaeedf4a789d578c4b920dd161",
-    "title": "LAM P,INCANDESCENT",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b67c6aaeedf4a789d578c4b920dd161",
-    "opportunity_url": "https://sam.gov/opp/8b67c6aaeedf4a789d578c4b920dd161/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/8b67c6aaeedf4a789d578c4b920dd161/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "8b67c6aaeedf4a789d578c4b920dd161",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "012620148",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b67c6aaeedf4a789d578c4b920dd161",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b67c6aaeedf4a789d578c4b920dd161",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ed4dc3e61894820b7eb818ee086df29/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ed4dc3e61894820b7eb818ee086df29/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-47501a084896476e8e57bb2b6838f469",
-    "title": "MAGAZINE,DISPENSER",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47501a084896476e8e57bb2b6838f469",
-    "opportunity_url": "https://sam.gov/opp/47501a084896476e8e57bb2b6838f469/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/47501a084896476e8e57bb2b6838f469/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "47501a084896476e8e57bb2b6838f469",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A725R0866",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-02",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47501a084896476e8e57bb2b6838f469",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47501a084896476e8e57bb2b6838f469",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5e8082a799745dc853491fea0de3efb/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5e8082a799745dc853491fea0de3efb/download"
-      }
-    ]
-  },
-  {
     "id": "sam-045ec4d3432046738e08b231f7ec9e0d",
     "title": "DHS Uniforms - Berry Compliant",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=045ec4d3432046738e08b231f7ec9e0d",
@@ -3626,186 +3166,6 @@
     ]
   },
   {
-    "id": "sam-4ca8e2aa6fed491ebb790b6d28ecf7bc",
-    "title": "B-52 Housing Mechanical",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4ca8e2aa6fed491ebb790b6d28ecf7bc",
-    "opportunity_url": "https://sam.gov/opp/4ca8e2aa6fed491ebb790b6d28ecf7bc/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/4ca8e2aa6fed491ebb790b6d28ecf7bc/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "4ca8e2aa6fed491ebb790b6d28ecf7bc",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRTA126R0178",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4ca8e2aa6fed491ebb790b6d28ecf7bc",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4ca8e2aa6fed491ebb790b6d28ecf7bc",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-a76c56355c384a008c3164012061eb55",
-    "title": "E-3 Turbine Aircraft Co",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a76c56355c384a008c3164012061eb55",
-    "opportunity_url": "https://sam.gov/opp/a76c56355c384a008c3164012061eb55/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/a76c56355c384a008c3164012061eb55/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "a76c56355c384a008c3164012061eb55",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRTA126R0209",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a76c56355c384a008c3164012061eb55",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a76c56355c384a008c3164012061eb55",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-c18d486481a54611b11682da150b4d69",
-    "title": "NSN 1440-011789165, GUIDED MISSILE AIRCRAFT FAIRING LAUNCER, WSDC: 01f, MISSLE, MINUTEMAN III, LGM-30",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18d486481a54611b11682da150b4d69",
-    "opportunity_url": "https://sam.gov/opp/c18d486481a54611b11682da150b4d69/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/c18d486481a54611b11682da150b4d69/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "c18d486481a54611b11682da150b4d69",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A726R0501_Synopsis",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18d486481a54611b11682da150b4d69",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18d486481a54611b11682da150b4d69",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-2dbba165b35b4b1888612caba8ee6e46",
-    "title": "NSN 1560-007922399, COOLER DUCT ASSEMBLY, WSDC: 04F, AIRCRAFT STRATOFORTRESS B-52",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2dbba165b35b4b1888612caba8ee6e46",
-    "opportunity_url": "https://sam.gov/opp/2dbba165b35b4b1888612caba8ee6e46/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/2dbba165b35b4b1888612caba8ee6e46/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "2dbba165b35b4b1888612caba8ee6e46",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A726R0503_Synopsis",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2dbba165b35b4b1888612caba8ee6e46",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2dbba165b35b4b1888612caba8ee6e46",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-747db4273a6c461aa491cb7210476ff0",
-    "title": "NSN 1560-009031018, Pylon Idler Mount, 22F, Helicopter, Iroquois, HH/UH-1",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=747db4273a6c461aa491cb7210476ff0",
-    "opportunity_url": "https://sam.gov/opp/747db4273a6c461aa491cb7210476ff0/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/747db4273a6c461aa491cb7210476ff0/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "747db4273a6c461aa491cb7210476ff0",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A726R0493_Synopsis",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=747db4273a6c461aa491cb7210476ff0",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=747db4273a6c461aa491cb7210476ff0",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-4fbfda441ff443e082cd6269288051b5",
-    "title": "NSN 1660-005348005, AIR CONDITIONING-HEATING AIRCRAFT DUCT ASSEMBLY; WSDC: 05F, AIRCRAFT, STRATOLIFTER C/KC",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4fbfda441ff443e082cd6269288051b5",
-    "opportunity_url": "https://sam.gov/opp/4fbfda441ff443e082cd6269288051b5/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/4fbfda441ff443e082cd6269288051b5/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "4fbfda441ff443e082cd6269288051b5",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A726R0498_Synopsis",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4fbfda441ff443e082cd6269288051b5",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4fbfda441ff443e082cd6269288051b5",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-fb8a56cd29784e2f9f17f8f24593b95a",
     "title": "NSN 1680-015728115, MID-WING STBD COVER, WSDC: CTF, AIRCRAFT, OSPREY CV-22B",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb8a56cd29784e2f9f17f8f24593b95a",
@@ -3830,36 +3190,6 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb8a56cd29784e2f9f17f8f24593b95a",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb8a56cd29784e2f9f17f8f24593b95a",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-2fbd8fb346d246e39f40384487cdf9e7",
-    "title": "NSN 1680-015761826, Aircraft Fuel Probe Assembly, WSDC: 40A, Helicopter, UH-60A, UH-60L, UH-60V",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2fbd8fb346d246e39f40384487cdf9e7",
-    "opportunity_url": "https://sam.gov/opp/2fbd8fb346d246e39f40384487cdf9e7/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/2fbd8fb346d246e39f40384487cdf9e7/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "2fbd8fb346d246e39f40384487cdf9e7",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A726R0497_Synopsis",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2fbd8fb346d246e39f40384487cdf9e7",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2fbd8fb346d246e39f40384487cdf9e7",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -3894,42 +3224,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-342ebe9036d94b00a18e34b107d4f63d",
-    "title": "SLAT ASSEMBLY",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=342ebe9036d94b00a18e34b107d4f63d",
-    "opportunity_url": "https://sam.gov/opp/342ebe9036d94b00a18e34b107d4f63d/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/342ebe9036d94b00a18e34b107d4f63d/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "342ebe9036d94b00a18e34b107d4f63d",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRMM1-26-R-RA53",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-04-03",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=342ebe9036d94b00a18e34b107d4f63d",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=342ebe9036d94b00a18e34b107d4f63d",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dde617b8dac54dfb981e416a29b7625e/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dde617b8dac54dfb981e416a29b7625e/download"
-      }
-    ]
   },
   {
     "id": "sam-7c57f7d9724e443cbcb45bd711a249dd",
@@ -4382,42 +3676,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-5fe2604b1b094dc39ec9670dce68fdb5",
-    "title": "COMPUTER SYSTEM, DI",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5fe2604b1b094dc39ec9670dce68fdb5",
-    "opportunity_url": "https://sam.gov/opp/5fe2604b1b094dc39ec9670dce68fdb5/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/5fe2604b1b094dc39ec9670dce68fdb5/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "5fe2604b1b094dc39ec9670dce68fdb5",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRMM1-26-R-HB98",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-04-04",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5fe2604b1b094dc39ec9670dce68fdb5",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5fe2604b1b094dc39ec9670dce68fdb5",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fac593d367264554b2165745dce45139/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fac593d367264554b2165745dce45139/download"
-      }
-    ]
-  },
-  {
     "id": "sam-eaa4b87f22ff47a3bcbbf56e47225237",
     "title": "Converter, Frequency",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eaa4b87f22ff47a3bcbbf56e47225237",
@@ -4450,42 +3708,6 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e607e76b8ebe4418b89c37d6aa0385de/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-700f1abfd53647b6ba9aea498c8b5301",
-    "title": "MANIFOLD ASSEMBLY,H",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=700f1abfd53647b6ba9aea498c8b5301",
-    "opportunity_url": "https://sam.gov/opp/700f1abfd53647b6ba9aea498c8b5301/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/700f1abfd53647b6ba9aea498c8b5301/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "700f1abfd53647b6ba9aea498c8b5301",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRMM1-26-R-HB97",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-04-04",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=700f1abfd53647b6ba9aea498c8b5301",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=700f1abfd53647b6ba9aea498c8b5301",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d57e025d1e3244d1958f0ff2e3ed2da2/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d57e025d1e3244d1958f0ff2e3ed2da2/download"
       }
     ]
   },
@@ -4524,36 +3746,6 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f7fce14fc6d4bf688b2ce31bc493e9c/download"
       }
     ]
-  },
-  {
-    "id": "sam-1c4f1f05a0c5453cbc74180fbeaf0210",
-    "title": "ARMATURE-ROTOR,GENE",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c4f1f05a0c5453cbc74180fbeaf0210",
-    "opportunity_url": "https://sam.gov/opp/1c4f1f05a0c5453cbc74180fbeaf0210/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/1c4f1f05a0c5453cbc74180fbeaf0210/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "1c4f1f05a0c5453cbc74180fbeaf0210",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRTA126Q0175",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-05",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c4f1f05a0c5453cbc74180fbeaf0210",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c4f1f05a0c5453cbc74180fbeaf0210",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
   },
   {
     "id": "sam-c1918100c4864ec9a5208f5d394f3455",
@@ -4674,84 +3866,6 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
-  },
-  {
-    "id": "sam-947b5118cd934b2eb3e26fac32e64b86",
-    "title": "Impeller, Fan",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=947b5118cd934b2eb3e26fac32e64b86",
-    "opportunity_url": "https://sam.gov/opp/947b5118cd934b2eb3e26fac32e64b86/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/947b5118cd934b2eb3e26fac32e64b86/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "947b5118cd934b2eb3e26fac32e64b86",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRDL1-26-R-0078",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-04-06",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=947b5118cd934b2eb3e26fac32e64b86",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=947b5118cd934b2eb3e26fac32e64b86",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-d3843ff948bd4b26a29aa6de669ef83c",
-    "title": "MAGAZINE,CARTRIDGE",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3843ff948bd4b26a29aa6de669ef83c",
-    "opportunity_url": "https://sam.gov/opp/d3843ff948bd4b26a29aa6de669ef83c/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/d3843ff948bd4b26a29aa6de669ef83c/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "d3843ff948bd4b26a29aa6de669ef83c",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "CL26068001",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-04-06",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3843ff948bd4b26a29aa6de669ef83c",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3843ff948bd4b26a29aa6de669ef83c",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5473cde355f44f19b1ef126781fe583c/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7132af1eeeb74404af00a0283d81fcb7/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9fe6d21f1f98424f8e54c0d0ab026ae1/download",
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2f6bcd9a1884ae6bb8ae5029fbb23af/download"
-    ],
-    "resource_count": 4,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5473cde355f44f19b1ef126781fe583c/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7132af1eeeb74404af00a0283d81fcb7/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9fe6d21f1f98424f8e54c0d0ab026ae1/download"
-      },
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2f6bcd9a1884ae6bb8ae5029fbb23af/download"
-      }
-    ]
   },
   {
     "id": "sam-e79889f41e434ec2b942197551b3ac6f",
@@ -5144,42 +4258,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-661b45cec03943dd90e75966a052cf13",
-    "title": "B-2 Main Landing Gear Wheel Assembly",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=661b45cec03943dd90e75966a052cf13",
-    "opportunity_url": "https://sam.gov/opp/661b45cec03943dd90e75966a052cf13/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/661b45cec03943dd90e75966a052cf13/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "661b45cec03943dd90e75966a052cf13",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRHA1-26-R-0338",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA  AVIATION AT OGDEN, UT",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-04-07",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=661b45cec03943dd90e75966a052cf13",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=661b45cec03943dd90e75966a052cf13",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/409a41e2f9154ec381787d780bd8431e/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/409a41e2f9154ec381787d780bd8431e/download"
-      }
-    ]
-  },
-  {
     "id": "sam-bba0f34e39d6472dad399dd7ac534d50",
     "title": "B-52 Landing Gear Drag Link",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bba0f34e39d6472dad399dd7ac534d50",
@@ -5270,66 +4348,6 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4972c4072c64025a07eea04d6b9adaf",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4972c4072c64025a07eea04d6b9adaf",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-b9f06e236ad44961a9712be1b5fa5d91",
-    "title": "Pump Unit, Centrifugal",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b9f06e236ad44961a9712be1b5fa5d91",
-    "opportunity_url": "https://sam.gov/opp/b9f06e236ad44961a9712be1b5fa5d91/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/b9f06e236ad44961a9712be1b5fa5d91/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "b9f06e236ad44961a9712be1b5fa5d91",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRDL1-26-R-0063",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-04-07",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b9f06e236ad44961a9712be1b5fa5d91",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b9f06e236ad44961a9712be1b5fa5d91",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-e7a47d6a0deb47b2ac56d1f48e379746",
-    "title": "Subcaliber Assembly, 7.62 Millimeter",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7a47d6a0deb47b2ac56d1f48e379746",
-    "opportunity_url": "https://sam.gov/opp/e7a47d6a0deb47b2ac56d1f48e379746/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/e7a47d6a0deb47b2ac56d1f48e379746/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "e7a47d6a0deb47b2ac56d1f48e379746",
-    "notice_type_code": "s",
-    "notice_type": "Special Notice",
-    "engagement_kinds": [
-      "Special Notice"
-    ],
-    "solicitation_number": "SPRDL1-25-R-0254",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
-    "posted_date": "2026-03-23",
-    "response_deadline": "2026-04-07",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Special Notice"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7a47d6a0deb47b2ac56d1f48e379746",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7a47d6a0deb47b2ac56d1f48e379746",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -6022,36 +5040,6 @@
     ]
   },
   {
-    "id": "sam-54afb89199d443aeb717f0201778a2b3",
-    "title": "Crane, Truck Mounted",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=54afb89199d443aeb717f0201778a2b3",
-    "opportunity_url": "https://sam.gov/opp/54afb89199d443aeb717f0201778a2b3/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/54afb89199d443aeb717f0201778a2b3/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "54afb89199d443aeb717f0201778a2b3",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "SPRDL1-26-R-0080",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
-    "posted_date": "2026-03-24",
-    "response_deadline": "2026-04-08",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=54afb89199d443aeb717f0201778a2b3",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=54afb89199d443aeb717f0201778a2b3",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-8f78537c31884e969b7b095c1e970636",
     "title": "Fruits and Vegetables for West Virginia Troops and Schools",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8f78537c31884e969b7b095c1e970636",
@@ -6442,36 +5430,6 @@
     "resource_items": null
   },
   {
-    "id": "sam-49528bf84f244a4eb20c1fad5f536535",
-    "title": "NSN 4720011696129",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=49528bf84f244a4eb20c1fad5f536535",
-    "opportunity_url": "https://sam.gov/opp/49528bf84f244a4eb20c1fad5f536535/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/49528bf84f244a4eb20c1fad5f536535/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "49528bf84f244a4eb20c1fad5f536535",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "CM26034008",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
-    "posted_date": "2026-04-01",
-    "response_deadline": "2026-04-08",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=49528bf84f244a4eb20c1fad5f536535",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=49528bf84f244a4eb20c1fad5f536535",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-d1a2d36e9ced40ad8bbf2337ed74d86f",
     "title": "RELAY, ELECTROMAGNET",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1a2d36e9ced40ad8bbf2337ed74d86f",
@@ -6580,42 +5538,6 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dade006d54964f3d94d0cc4f6ec163a5/download"
-      }
-    ]
-  },
-  {
-    "id": "sam-c425d2dee3d043b0bf18aea1f66569e8",
-    "title": "Aeronautical Navigation (AN) Solution to fulfill a requirement for the Defense Information Systems Agency (DISA)",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c425d2dee3d043b0bf18aea1f66569e8",
-    "opportunity_url": "https://sam.gov/opp/c425d2dee3d043b0bf18aea1f66569e8/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/c425d2dee3d043b0bf18aea1f66569e8/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "c425d2dee3d043b0bf18aea1f66569e8",
-    "notice_type_code": "r",
-    "notice_type": "Sources Sought",
-    "engagement_kinds": [
-      "Sources Sought"
-    ],
-    "solicitation_number": "842674215",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).IT CONTRACTING DIVISION - PL84",
-    "posted_date": "2026-04-02",
-    "response_deadline": "2026-04-08",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Sources Sought"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c425d2dee3d043b0bf18aea1f66569e8",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c425d2dee3d043b0bf18aea1f66569e8",
-    "detail_text_length": 94,
-    "resource_links": [
-      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50f55330f8004df3bf44d5b4130d8165/download"
-    ],
-    "resource_count": 1,
-    "resource_items": [
-      {
-        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50f55330f8004df3bf44d5b4130d8165/download"
       }
     ]
   },
@@ -6828,6 +5750,82 @@
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
+  },
+  {
+    "id": "sam-62b75871e6f64492888cfb50e9b31a14",
+    "title": "Aeronautical Navigation (AN) Solution to fulfill a requirement for the Defense Information Systems Agency (DISA)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62b75871e6f64492888cfb50e9b31a14",
+    "opportunity_url": "https://sam.gov/opp/62b75871e6f64492888cfb50e9b31a14/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/62b75871e6f64492888cfb50e9b31a14/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "62b75871e6f64492888cfb50e9b31a14",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "842674215",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).IT CONTRACTING DIVISION - PL84",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62b75871e6f64492888cfb50e9b31a14",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62b75871e6f64492888cfb50e9b31a14",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50f55330f8004df3bf44d5b4130d8165/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76f6fca324ad4a11a57df944a6a9645f/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50f55330f8004df3bf44d5b4130d8165/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76f6fca324ad4a11a57df944a6a9645f/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-b8ca895fe3b54074be7210653eb24cf5",
+    "title": "Blade Turbine Rotor (3V)",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b8ca895fe3b54074be7210653eb24cf5",
+    "opportunity_url": "https://sam.gov/opp/b8ca895fe3b54074be7210653eb24cf5/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b8ca895fe3b54074be7210653eb24cf5/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "b8ca895fe3b54074be7210653eb24cf5",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPRTA126Q1583",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b8ca895fe3b54074be7210653eb24cf5",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b8ca895fe3b54074be7210653eb24cf5",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/956b8da99ac946a0bfa310a65c01163a/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/956b8da99ac946a0bfa310a65c01163a/download"
+      }
+    ]
   },
   {
     "id": "sam-bbdca55cf11e4cda87472c9bd29b8716",
@@ -7436,6 +6434,36 @@
     "resource_items": null
   },
   {
+    "id": "sam-ab3552af4754457bab6cc924ab075d31",
+    "title": "VANEAXIAL FAN",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab3552af4754457bab6cc924ab075d31",
+    "opportunity_url": "https://sam.gov/opp/ab3552af4754457bab6cc924ab075d31/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/ab3552af4754457bab6cc924ab075d31/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "ab3552af4754457bab6cc924ab075d31",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPRDL1-26-R-0013",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-09",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab3552af4754457bab6cc924ab075d31",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab3552af4754457bab6cc924ab075d31",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-e880637e91b54f73971336e1eae85847",
     "title": "DLA Troop Support Hospital Supply Tailored Logistics Support Program (TLSP)",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e880637e91b54f73971336e1eae85847",
@@ -7470,36 +6498,6 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c66350348bc4557b72cb4ad6b1d7962/download"
       }
     ]
-  },
-  {
-    "id": "sam-8d2fc52970354be3b2110e82f07ad4be",
-    "title": "INDICATOR,AZIMUTH",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d2fc52970354be3b2110e82f07ad4be",
-    "opportunity_url": "https://sam.gov/opp/8d2fc52970354be3b2110e82f07ad4be/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/8d2fc52970354be3b2110e82f07ad4be/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "8d2fc52970354be3b2110e82f07ad4be",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRAL126R0008",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND ALBANY.DLA  LAND AND MARITIME (ALBANY)",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-10",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d2fc52970354be3b2110e82f07ad4be",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d2fc52970354be3b2110e82f07ad4be",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
   },
   {
     "id": "sam-112de9c9eeaf450aa3c18f6d55c4fb40",
@@ -8648,6 +7646,36 @@
     "resource_items": null
   },
   {
+    "id": "sam-a2db3994390c4607bb481c955a2b1dfd",
+    "title": "AIR Card® Information Session for POS",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2db3994390c4607bb481c955a2b1dfd",
+    "opportunity_url": "https://sam.gov/opp/a2db3994390c4607bb481c955a2b1dfd/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/a2db3994390c4607bb481c955a2b1dfd/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "a2db3994390c4607bb481c955a2b1dfd",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": null,
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA ENERGY.DLA ENERGY",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-12",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2db3994390c4607bb481c955a2b1dfd",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2db3994390c4607bb481c955a2b1dfd",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-c2b9866cc81c4873bcb1e497974d4d84",
     "title": "Level, Support and Case",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2b9866cc81c4873bcb1e497974d4d84",
@@ -9258,6 +8286,186 @@
     ]
   },
   {
+    "id": "sam-8b6aff271a2d4745888a8fb3ffaa8670",
+    "title": "GEARBOX ASSEMBLY,AI, NSN 1680-014506898, Part-Number 183315-1, Weapon System Designator Code 26F",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b6aff271a2d4745888a8fb3ffaa8670",
+    "opportunity_url": "https://sam.gov/opp/8b6aff271a2d4745888a8fb3ffaa8670/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/8b6aff271a2d4745888a8fb3ffaa8670/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "8b6aff271a2d4745888a8fb3ffaa8670",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0546",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b6aff271a2d4745888a8fb3ffaa8670",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8b6aff271a2d4745888a8fb3ffaa8670",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe23b90d855248cd83dacb835c232e06/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe23b90d855248cd83dacb835c232e06/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-198734136c754dc3983a160eb680ec46",
+    "title": "MODIFICATION KIT,AI",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=198734136c754dc3983a160eb680ec46",
+    "opportunity_url": "https://sam.gov/opp/198734136c754dc3983a160eb680ec46/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/198734136c754dc3983a160eb680ec46/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "198734136c754dc3983a160eb680ec46",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0544",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=198734136c754dc3983a160eb680ec46",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=198734136c754dc3983a160eb680ec46",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/133d1f21372e44e9b55bcd869ee64c1f/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/133d1f21372e44e9b55bcd869ee64c1f/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-0a0ca7b9cc1843c4a84d2e39597dbe9f",
+    "title": "PARTS KIT,VALVE,CUR",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a0ca7b9cc1843c4a84d2e39597dbe9f",
+    "opportunity_url": "https://sam.gov/opp/0a0ca7b9cc1843c4a84d2e39597dbe9f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/0a0ca7b9cc1843c4a84d2e39597dbe9f/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "0a0ca7b9cc1843c4a84d2e39597dbe9f",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0231",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a0ca7b9cc1843c4a84d2e39597dbe9f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a0ca7b9cc1843c4a84d2e39597dbe9f",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/41fb1cc38c8540e0ba90897e2f1d8fd8/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/41fb1cc38c8540e0ba90897e2f1d8fd8/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-1b5d85be23004f7ebf9ac0b3e2c5f2a1",
+    "title": "PISTON,CYLINDER ASS, NSN 1560-014813078, Part-Number 41015956, Weapon System Designator Code Z9N",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b5d85be23004f7ebf9ac0b3e2c5f2a1",
+    "opportunity_url": "https://sam.gov/opp/1b5d85be23004f7ebf9ac0b3e2c5f2a1/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/1b5d85be23004f7ebf9ac0b3e2c5f2a1/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "1b5d85be23004f7ebf9ac0b3e2c5f2a1",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0545",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b5d85be23004f7ebf9ac0b3e2c5f2a1",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b5d85be23004f7ebf9ac0b3e2c5f2a1",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d8d50bb09184d6b8ba55ce49ec49add/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d8d50bb09184d6b8ba55ce49ec49add/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-56f0214bea284e9a8da8e3f9e88912fd",
+    "title": "REEL ASSEMBLY,HOSE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=56f0214bea284e9a8da8e3f9e88912fd",
+    "opportunity_url": "https://sam.gov/opp/56f0214bea284e9a8da8e3f9e88912fd/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/56f0214bea284e9a8da8e3f9e88912fd/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "56f0214bea284e9a8da8e3f9e88912fd",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0547",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=56f0214bea284e9a8da8e3f9e88912fd",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=56f0214bea284e9a8da8e3f9e88912fd",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/917428ea877847329a44cd2eed78edfd/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/917428ea877847329a44cd2eed78edfd/download"
+      }
+    ]
+  },
+  {
     "id": "sam-2488e3fd1321400297423c0dc5f161fd",
     "title": "WHEEL,LANDING GEAR, NSN 1630-013312589, Part-Number 040-25300, Weapon System Designator Code 40A",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2488e3fd1321400297423c0dc5f161fd",
@@ -9292,6 +8500,66 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48b3f0b2956d441f83c7325f56f932cf/download"
       }
     ]
+  },
+  {
+    "id": "sam-a44d6535034744bc9756bdeb91badaaa",
+    "title": "EDDY CURRENT INSPECTION ARRAY PROBES",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a44d6535034744bc9756bdeb91badaaa",
+    "opportunity_url": "https://sam.gov/opp/a44d6535034744bc9756bdeb91badaaa/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/a44d6535034744bc9756bdeb91badaaa/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "a44d6535034744bc9756bdeb91badaaa",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPMYM126Q4053",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME SHIPYARDS.DLA MARITIME - NORFOLK",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a44d6535034744bc9756bdeb91badaaa",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a44d6535034744bc9756bdeb91badaaa",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-757dac44301b4e3995708a3702870a29",
+    "title": "IGNITER, SPARK, GAS, T",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=757dac44301b4e3995708a3702870a29",
+    "opportunity_url": "https://sam.gov/opp/757dac44301b4e3995708a3702870a29/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/757dac44301b4e3995708a3702870a29/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "757dac44301b4e3995708a3702870a29",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0486",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-13",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=757dac44301b4e3995708a3702870a29",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=757dac44301b4e3995708a3702870a29",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-65e8c2aea148474caad13662891210dd",
@@ -9826,6 +9094,72 @@
     "resource_items": null
   },
   {
+    "id": "sam-6ace21c397d2440faf74c2766da5dd4f",
+    "title": "NSN: 2840-010263002, BLADE,COMPRESSOR,AI, WSDC: 39A, PATRIOTMISSILE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ace21c397d2440faf74c2766da5dd4f",
+    "opportunity_url": "https://sam.gov/opp/6ace21c397d2440faf74c2766da5dd4f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6ace21c397d2440faf74c2766da5dd4f/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6ace21c397d2440faf74c2766da5dd4f",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A526Q0456",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-14",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ace21c397d2440faf74c2766da5dd4f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ace21c397d2440faf74c2766da5dd4f",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-b686784b5dd648c8bfcc5ce070003091",
+    "title": "SEAL ASSEMBLY,COMPL",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b686784b5dd648c8bfcc5ce070003091",
+    "opportunity_url": "https://sam.gov/opp/b686784b5dd648c8bfcc5ce070003091/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/b686784b5dd648c8bfcc5ce070003091/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "b686784b5dd648c8bfcc5ce070003091",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0548",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-14",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b686784b5dd648c8bfcc5ce070003091",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b686784b5dd648c8bfcc5ce070003091",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92e7441ac5d24f83815fdf3cf4fc4a42/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92e7441ac5d24f83815fdf3cf4fc4a42/download"
+      }
+    ]
+  },
+  {
     "id": "sam-7ee2cd2f3be84f8aae3d43dfe0a0d073",
     "title": "ENGINE,OUTBOARD MUL",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7ee2cd2f3be84f8aae3d43dfe0a0d073",
@@ -10356,6 +9690,66 @@
     ]
   },
   {
+    "id": "sam-d1008eabb8cf4158a3a0c9303972e43c",
+    "title": "ADAPTER, MICROPHONE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1008eabb8cf4158a3a0c9303972e43c",
+    "opportunity_url": "https://sam.gov/opp/d1008eabb8cf4158a3a0c9303972e43c/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/d1008eabb8cf4158a3a0c9303972e43c/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "d1008eabb8cf4158a3a0c9303972e43c",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE7MX26R0049",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-15",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1008eabb8cf4158a3a0c9303972e43c",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1008eabb8cf4158a3a0c9303972e43c",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-ab07f3ccd6ee48288889ee36408c7775",
+    "title": "Metal Plate",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab07f3ccd6ee48288889ee36408c7775",
+    "opportunity_url": "https://sam.gov/opp/ab07f3ccd6ee48288889ee36408c7775/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/ab07f3ccd6ee48288889ee36408c7775/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "ab07f3ccd6ee48288889ee36408c7775",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "9515-00-554-0933",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-15",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab07f3ccd6ee48288889ee36408c7775",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab07f3ccd6ee48288889ee36408c7775",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-c31c2b8520074e31baf563441a5006bf",
     "title": "NozzleTurbineAirc_End_Item_F110_NSN_2840015975184PR_PN_9547M21G07",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c31c2b8520074e31baf563441a5006bf",
@@ -10392,6 +9786,36 @@
     ]
   },
   {
+    "id": "sam-1811336088074d91baedd72c984b2f03",
+    "title": "NSN 5306-011164391, BOLT,INTERNALLY REL",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1811336088074d91baedd72c984b2f03",
+    "opportunity_url": "https://sam.gov/opp/1811336088074d91baedd72c984b2f03/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/1811336088074d91baedd72c984b2f03/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "1811336088074d91baedd72c984b2f03",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A626Q0800",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-15",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1811336088074d91baedd72c984b2f03",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1811336088074d91baedd72c984b2f03",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-57cb88c002944bfebb421fbcfb2cb47d",
     "title": "RotorTurbineAircr_End_Item_F110_NSN_2840016759398PR_PN_2215M18G04",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57cb88c002944bfebb421fbcfb2cb47d",
@@ -10426,6 +9850,66 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eaf4a5ae49f84ff19ed855307b53643a/download"
       }
     ]
+  },
+  {
+    "id": "sam-4866e6068d834e618a55a270937686ca",
+    "title": "HEADSET‐MICROPHONE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4866e6068d834e618a55a270937686ca",
+    "opportunity_url": "https://sam.gov/opp/4866e6068d834e618a55a270937686ca/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/4866e6068d834e618a55a270937686ca/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "4866e6068d834e618a55a270937686ca",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE7MX26Q0005",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-15",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4866e6068d834e618a55a270937686ca",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4866e6068d834e618a55a270937686ca",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-2bc4f6087dd14298a08044c5b8889021",
+    "title": "SEAL, COVER PLATE / NSN 1420-00-906-1247 / LGM-30",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2bc4f6087dd14298a08044c5b8889021",
+    "opportunity_url": "https://sam.gov/opp/2bc4f6087dd14298a08044c5b8889021/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/2bc4f6087dd14298a08044c5b8889021/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "2bc4f6087dd14298a08044c5b8889021",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPE4A726R0549",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-15",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2bc4f6087dd14298a08044c5b8889021",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2bc4f6087dd14298a08044c5b8889021",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
   },
   {
     "id": "sam-a15280a3bbfa4e7f8af0b076ee315b87",
@@ -10652,6 +10136,46 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1205d462a09d4d0190bc56bb382e3bc0/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-6cbdb0917db04b6c9c36b79478fe77f2",
+    "title": "Knife,Canopy Punctu / NSN: 1680-01-695-5739 / PN: 405387-5",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cbdb0917db04b6c9c36b79478fe77f2",
+    "opportunity_url": "https://sam.gov/opp/6cbdb0917db04b6c9c36b79478fe77f2/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6cbdb0917db04b6c9c36b79478fe77f2/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6cbdb0917db04b6c9c36b79478fe77f2",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FD20302601221",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-16",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cbdb0917db04b6c9c36b79478fe77f2",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cbdb0917db04b6c9c36b79478fe77f2",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ab5d7e81f1b4c3f95178b32b4be094e/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6df77ae5651145b78dbee4a00a5302aa/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ab5d7e81f1b4c3f95178b32b4be094e/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6df77ae5651145b78dbee4a00a5302aa/download"
       }
     ]
   },
@@ -11762,30 +11286,96 @@
     "resource_items": null
   },
   {
-    "id": "sam-5833c088c8e64904985277754ff273d9",
-    "title": "16--VOLTAGE AVERAGING U",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5833c088c8e64904985277754ff273d9",
-    "opportunity_url": "https://sam.gov/opp/5833c088c8e64904985277754ff273d9/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/5833c088c8e64904985277754ff273d9/view",
+    "id": "sam-04e88a2d4caa40c69fb4a89caa6db4b3",
+    "title": "Oil Pump Assembly",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04e88a2d4caa40c69fb4a89caa6db4b3",
+    "opportunity_url": "https://sam.gov/opp/04e88a2d4caa40c69fb4a89caa6db4b3/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/04e88a2d4caa40c69fb4a89caa6db4b3/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "5833c088c8e64904985277754ff273d9",
+    "notice_id": "04e88a2d4caa40c69fb4a89caa6db4b3",
     "notice_type_code": "p",
     "notice_type": "Pre-solicitation",
     "engagement_kinds": [
       "Pre-solicitation"
     ],
-    "solicitation_number": "SPRPA126QUA84",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-23",
+    "solicitation_number": "SPRDL1-25-R-0178",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-22",
     "place_of_performance": null,
     "relevance_score": 2,
     "relevance_reasons": [
       "Signal notice type: Pre-solicitation"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5833c088c8e64904985277754ff273d9",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5833c088c8e64904985277754ff273d9",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04e88a2d4caa40c69fb4a89caa6db4b3",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04e88a2d4caa40c69fb4a89caa6db4b3",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-e93c28bdc2a940a8bc90c01a46810736",
+    "title": "PARTS KIT,VALVE,CUR",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e93c28bdc2a940a8bc90c01a46810736",
+    "opportunity_url": "https://sam.gov/opp/e93c28bdc2a940a8bc90c01a46810736/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/e93c28bdc2a940a8bc90c01a46810736/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "e93c28bdc2a940a8bc90c01a46810736",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPE4A726R0231",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-22",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e93c28bdc2a940a8bc90c01a46810736",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e93c28bdc2a940a8bc90c01a46810736",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8debf16da3d9497391943dca823893cb/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8debf16da3d9497391943dca823893cb/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-6c09314b6cff4df79e27a6e77ec75a9c",
+    "title": "Valve, Linear, Direct",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c09314b6cff4df79e27a6e77ec75a9c",
+    "opportunity_url": "https://sam.gov/opp/6c09314b6cff4df79e27a6e77ec75a9c/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6c09314b6cff4df79e27a6e77ec75a9c/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6c09314b6cff4df79e27a6e77ec75a9c",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPRTA1-26-R-0077",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-22",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c09314b6cff4df79e27a6e77ec75a9c",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c09314b6cff4df79e27a6e77ec75a9c",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -12002,6 +11592,108 @@
     "resource_items": null
   },
   {
+    "id": "sam-52efa55a8ba745c09ce8e6b456a93c8b",
+    "title": "Cylinder Assembly A. NSN :3040-01-642-5372",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52efa55a8ba745c09ce8e6b456a93c8b",
+    "opportunity_url": "https://sam.gov/opp/52efa55a8ba745c09ce8e6b456a93c8b/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/52efa55a8ba745c09ce8e6b456a93c8b/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "52efa55a8ba745c09ce8e6b456a93c8b",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "7015232330",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-23",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52efa55a8ba745c09ce8e6b456a93c8b",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52efa55a8ba745c09ce8e6b456a93c8b",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bc799ec771d4b97854cc06843becd9a/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bc799ec771d4b97854cc06843becd9a/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-475f7e90cc3645f082ac5422535d184d",
+    "title": "ICBM Cable Assembly, Spec",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=475f7e90cc3645f082ac5422535d184d",
+    "opportunity_url": "https://sam.gov/opp/475f7e90cc3645f082ac5422535d184d/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/475f7e90cc3645f082ac5422535d184d/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "475f7e90cc3645f082ac5422535d184d",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "SPRHA2-26-R-0526",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA  AVIATION AT OGDEN, UT",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-23",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=475f7e90cc3645f082ac5422535d184d",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=475f7e90cc3645f082ac5422535d184d",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-8e762acd49a14906859cbd6dd2e45b5c",
+    "title": "Shaft Shouldered. NSN :3040-01-187-2914",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e762acd49a14906859cbd6dd2e45b5c",
+    "opportunity_url": "https://sam.gov/opp/8e762acd49a14906859cbd6dd2e45b5c/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/8e762acd49a14906859cbd6dd2e45b5c/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "8e762acd49a14906859cbd6dd2e45b5c",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "7015232737",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-23",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e762acd49a14906859cbd6dd2e45b5c",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e762acd49a14906859cbd6dd2e45b5c",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a46517bf5e4d4612870cc11ba1bbebed/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a46517bf5e4d4612870cc11ba1bbebed/download"
+      }
+    ]
+  },
+  {
     "id": "sam-63340640b1a24298ad4a5180d6636675",
     "title": "SPE4A526R0165, 1560016981190, Stiffener, Aircraft",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63340640b1a24298ad4a5180d6636675",
@@ -12032,64 +11724,70 @@
     "resource_items": null
   },
   {
-    "id": "sam-800ae21120824ed3b540178178aa86b2",
-    "title": "16--CHASSIS UNIT",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=800ae21120824ed3b540178178aa86b2",
-    "opportunity_url": "https://sam.gov/opp/800ae21120824ed3b540178178aa86b2/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/800ae21120824ed3b540178178aa86b2/view",
+    "id": "sam-3378232eea524ce7954f8649d7b1c0fb",
+    "title": "Transfer Transmission",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3378232eea524ce7954f8649d7b1c0fb",
+    "opportunity_url": "https://sam.gov/opp/3378232eea524ce7954f8649d7b1c0fb/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/3378232eea524ce7954f8649d7b1c0fb/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "800ae21120824ed3b540178178aa86b2",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
+    "notice_id": "3378232eea524ce7954f8649d7b1c0fb",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
     "engagement_kinds": [
-      "Pre-solicitation"
+      "Sources Sought"
     ],
-    "solicitation_number": "SPRPA126QZA76",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-24",
+    "solicitation_number": "2026-SPRDL126R0093",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-23",
     "place_of_performance": null,
     "relevance_score": 2,
     "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
+      "Signal notice type: Sources Sought"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=800ae21120824ed3b540178178aa86b2",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=800ae21120824ed3b540178178aa86b2",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3378232eea524ce7954f8649d7b1c0fb",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3378232eea524ce7954f8649d7b1c0fb",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
     "resource_items": null
   },
   {
-    "id": "sam-90d0749561b64efba95810ece9155c5c",
-    "title": "16--CONTROL PROCESSOR",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90d0749561b64efba95810ece9155c5c",
-    "opportunity_url": "https://sam.gov/opp/90d0749561b64efba95810ece9155c5c/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/90d0749561b64efba95810ece9155c5c/view",
+    "id": "sam-8a551e6e496548a2af1b838a7be59082",
+    "title": "LTC for NSN: 1005-000179551",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a551e6e496548a2af1b838a7be59082",
+    "opportunity_url": "https://sam.gov/opp/8a551e6e496548a2af1b838a7be59082/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/8a551e6e496548a2af1b838a7be59082/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "90d0749561b64efba95810ece9155c5c",
+    "notice_id": "8a551e6e496548a2af1b838a7be59082",
     "notice_type_code": "p",
     "notice_type": "Pre-solicitation",
     "engagement_kinds": [
       "Pre-solicitation"
     ],
-    "solicitation_number": "SPRPA126QZA70",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-04-24",
+    "solicitation_number": "SPE7LX26R0044",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-23",
     "place_of_performance": null,
     "relevance_score": 2,
     "relevance_reasons": [
       "Signal notice type: Pre-solicitation"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90d0749561b64efba95810ece9155c5c",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90d0749561b64efba95810ece9155c5c",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a551e6e496548a2af1b838a7be59082",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a551e6e496548a2af1b838a7be59082",
     "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db60ba147f634604aba0669fdde085a3/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db60ba147f634604aba0669fdde085a3/download"
+      }
+    ]
   },
   {
     "id": "sam-621a60a904ad4f6a8c5d5ce342efac0e",
@@ -12176,6 +11874,36 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=59a8cef8b8124fc5a1c0220df80e9465",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=59a8cef8b8124fc5a1c0220df80e9465",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-89a894b881184186ae1cb564624987f8",
+    "title": "REGULATOR, VOLTAGE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=89a894b881184186ae1cb564624987f8",
+    "opportunity_url": "https://sam.gov/opp/89a894b881184186ae1cb564624987f8/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/89a894b881184186ae1cb564624987f8/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "89a894b881184186ae1cb564624987f8",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPE7MX26R0040",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-04-24",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=89a894b881184186ae1cb564624987f8",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=89a894b881184186ae1cb564624987f8",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -12434,6 +12162,36 @@
     "resource_items": null
   },
   {
+    "id": "sam-fb9e7a6de2824659a8169c62cf2c28b1",
+    "title": "16x16 Tent Liner",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb9e7a6de2824659a8169c62cf2c28b1",
+    "opportunity_url": "https://sam.gov/opp/fb9e7a6de2824659a8169c62cf2c28b1/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/fb9e7a6de2824659a8169c62cf2c28b1/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "fb9e7a6de2824659a8169c62cf2c28b1",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "8340-01-452-7049",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CLOTHING & TEXTILE.DLA TROOP SUPPORT",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-29",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb9e7a6de2824659a8169c62cf2c28b1",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb9e7a6de2824659a8169c62cf2c28b1",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-1007a9ac831f4075a556b3cddaf383a4",
     "title": "70--COMPUTER CONSOLE,TA",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1007a9ac831f4075a556b3cddaf383a4",
@@ -12620,6 +12378,66 @@
     "resource_items": null
   },
   {
+    "id": "sam-fb271afbf18b465da2837658c28f8ea3",
+    "title": "AU CSEL Rechargeable Battery",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb271afbf18b465da2837658c28f8ea3",
+    "opportunity_url": "https://sam.gov/opp/fb271afbf18b465da2837658c28f8ea3/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/fb271afbf18b465da2837658c28f8ea3/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "fb271afbf18b465da2837658c28f8ea3",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPRBL126R0005",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND ABERDEEN.DLA LAND AT ABERDEEN",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb271afbf18b465da2837658c28f8ea3",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb271afbf18b465da2837658c28f8ea3",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-3699e9be62b24fc0a6f6a5e2c289bbaa",
+    "title": "Large Buy for Dehumidifier. NSN: 4440016994396",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3699e9be62b24fc0a6f6a5e2c289bbaa",
+    "opportunity_url": "https://sam.gov/opp/3699e9be62b24fc0a6f6a5e2c289bbaa/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/3699e9be62b24fc0a6f6a5e2c289bbaa/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "3699e9be62b24fc0a6f6a5e2c289bbaa",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "DEHUMIDIFIER4440016994396",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-04-30",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3699e9be62b24fc0a6f6a5e2c289bbaa",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3699e9be62b24fc0a6f6a5e2c289bbaa",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-e6c3928cb9964fd3ba7f09dd29a2dbad",
     "title": "3950- Winch, Power Operated",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e6c3928cb9964fd3ba7f09dd29a2dbad",
@@ -12720,66 +12538,6 @@
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/08f9e1cc8507409e9ea777485c227adb/download"
       }
     ]
-  },
-  {
-    "id": "sam-30cf011e0b5a4cb5b7690b93a91b2883",
-    "title": "16--ECU,AIRCRAFT,MATERI",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30cf011e0b5a4cb5b7690b93a91b2883",
-    "opportunity_url": "https://sam.gov/opp/30cf011e0b5a4cb5b7690b93a91b2883/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/30cf011e0b5a4cb5b7690b93a91b2883/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "30cf011e0b5a4cb5b7690b93a91b2883",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRPA126RWA44",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-05-04",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30cf011e0b5a4cb5b7690b93a91b2883",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30cf011e0b5a4cb5b7690b93a91b2883",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
-    "id": "sam-3c87b13bfe65475b9bc6db7283e83ef8",
-    "title": "16--MOTOR,WINDSHIELD WI",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3c87b13bfe65475b9bc6db7283e83ef8",
-    "opportunity_url": "https://sam.gov/opp/3c87b13bfe65475b9bc6db7283e83ef8/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/3c87b13bfe65475b9bc6db7283e83ef8/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "3c87b13bfe65475b9bc6db7283e83ef8",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPRPA126QUA93",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-05-04",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3c87b13bfe65475b9bc6db7283e83ef8",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3c87b13bfe65475b9bc6db7283e83ef8",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
   },
   {
     "id": "sam-f90e3da1c238442c8cca59ca9035df4b",
@@ -13108,36 +12866,6 @@
     ]
   },
   {
-    "id": "sam-c2b66a0e401548ad97d2ce0e2f091359",
-    "title": "TURNING TOOL, CRANKS",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2b66a0e401548ad97d2ce0e2f091359",
-    "opportunity_url": "https://sam.gov/opp/c2b66a0e401548ad97d2ce0e2f091359/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/c2b66a0e401548ad97d2ce0e2f091359/view",
-    "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "c2b66a0e401548ad97d2ce0e2f091359",
-    "notice_type_code": "p",
-    "notice_type": "Pre-solicitation",
-    "engagement_kinds": [
-      "Pre-solicitation"
-    ],
-    "solicitation_number": "SPE4A726R0445",
-    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
-    "posted_date": "2026-03-19",
-    "response_deadline": "2026-05-07",
-    "place_of_performance": null,
-    "relevance_score": 2,
-    "relevance_reasons": [
-      "Signal notice type: Pre-solicitation"
-    ],
-    "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2b66a0e401548ad97d2ce0e2f091359",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2b66a0e401548ad97d2ce0e2f091359",
-    "detail_text_length": 94,
-    "resource_links": [],
-    "resource_count": 0,
-    "resource_items": null
-  },
-  {
     "id": "sam-b36a4780fc49499085c7f408c8799447",
     "title": "5995, CABLE ASSEMBLY, SPEC, LEADER RADIO SYSTEM",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b36a4780fc49499085c7f408c8799447",
@@ -13378,6 +13106,78 @@
     "resource_items": null
   },
   {
+    "id": "sam-6e8f8daf4f8e47909d70762dd24a6ef2",
+    "title": "Aircraft Leading Edge",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e8f8daf4f8e47909d70762dd24a6ef2",
+    "opportunity_url": "https://sam.gov/opp/6e8f8daf4f8e47909d70762dd24a6ef2/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6e8f8daf4f8e47909d70762dd24a6ef2/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6e8f8daf4f8e47909d70762dd24a6ef2",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FD20302402756",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-05-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e8f8daf4f8e47909d70762dd24a6ef2",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e8f8daf4f8e47909d70762dd24a6ef2",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05a580b04b2641d9852ab60b7db2ea4e/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05a580b04b2641d9852ab60b7db2ea4e/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-10101f55d25b47b2bbb0da1258853a15",
+    "title": "Aircraft Tip",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=10101f55d25b47b2bbb0da1258853a15",
+    "opportunity_url": "https://sam.gov/opp/10101f55d25b47b2bbb0da1258853a15/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/10101f55d25b47b2bbb0da1258853a15/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "10101f55d25b47b2bbb0da1258853a15",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FD20302402764",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-05-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=10101f55d25b47b2bbb0da1258853a15",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=10101f55d25b47b2bbb0da1258853a15",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97a1691faa3942a0900e99805718ba47/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97a1691faa3942a0900e99805718ba47/download"
+      }
+    ]
+  },
+  {
     "id": "sam-3f21bd73f5874aacac2a97717438cd35",
     "title": "Aircraft Trailing Edge",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3f21bd73f5874aacac2a97717438cd35",
@@ -13482,6 +13282,72 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/670e813774114e05bb54bace35ddae30/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-cd755c4b16c841249b30d92208368717",
+    "title": "Ram Assembly",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd755c4b16c841249b30d92208368717",
+    "opportunity_url": "https://sam.gov/opp/cd755c4b16c841249b30d92208368717/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/cd755c4b16c841249b30d92208368717/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "cd755c4b16c841249b30d92208368717",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "4540016631262",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-05-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd755c4b16c841249b30d92208368717",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd755c4b16c841249b30d92208368717",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-30bbe68a807a439daa6032ae0ef4958e",
+    "title": "Structural Panel",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30bbe68a807a439daa6032ae0ef4958e",
+    "opportunity_url": "https://sam.gov/opp/30bbe68a807a439daa6032ae0ef4958e/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/30bbe68a807a439daa6032ae0ef4958e/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "30bbe68a807a439daa6032ae0ef4958e",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "FD20302402758",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-05-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Sources Sought"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30bbe68a807a439daa6032ae0ef4958e",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30bbe68a807a439daa6032ae0ef4958e",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f0d4c3803354b5c95cb6f719b5b5633/download"
+    ],
+    "resource_count": 1,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f0d4c3803354b5c95cb6f719b5b5633/download"
       }
     ]
   },
@@ -14062,6 +13928,36 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f91296fb34147f29302ec90eddcf3d5",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f91296fb34147f29302ec90eddcf3d5",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-6dfd344fffde4a009bbdf58dd199f65a",
+    "title": "58--RECEIVER,COUNTERMEA",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6dfd344fffde4a009bbdf58dd199f65a",
+    "opportunity_url": "https://sam.gov/opp/6dfd344fffde4a009bbdf58dd199f65a/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/6dfd344fffde4a009bbdf58dd199f65a/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "6dfd344fffde4a009bbdf58dd199f65a",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPRPA126QZA89",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION PHILADELPHIA.DLA AVIATION AT PHILADELPHIA, PA",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-05-14",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6dfd344fffde4a009bbdf58dd199f65a",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6dfd344fffde4a009bbdf58dd199f65a",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -14928,13 +14824,13 @@
     "resource_items": null
   },
   {
-    "id": "sam-64df3f723ec243b09ec8bcd3ea34644e",
+    "id": "sam-0b48040866c14299801f363bf902e152",
     "title": "Gearshaft Assembly",
-    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64df3f723ec243b09ec8bcd3ea34644e",
-    "opportunity_url": "https://sam.gov/opp/64df3f723ec243b09ec8bcd3ea34644e/view",
-    "ui_link": "https://sam.gov/workspace/contract/opp/64df3f723ec243b09ec8bcd3ea34644e/view",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0b48040866c14299801f363bf902e152",
+    "opportunity_url": "https://sam.gov/opp/0b48040866c14299801f363bf902e152/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/0b48040866c14299801f363bf902e152/view",
     "source": "SAM.gov Get Opportunities Public API",
-    "notice_id": "64df3f723ec243b09ec8bcd3ea34644e",
+    "notice_id": "0b48040866c14299801f363bf902e152",
     "notice_type_code": "p",
     "notice_type": "Pre-solicitation",
     "engagement_kinds": [
@@ -14942,7 +14838,7 @@
     ],
     "solicitation_number": "SPRDL1-26-Q-0071",
     "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
-    "posted_date": "2026-04-07",
+    "posted_date": "2026-04-08",
     "response_deadline": "2026-05-21",
     "place_of_performance": null,
     "relevance_score": 2,
@@ -14950,8 +14846,38 @@
       "Signal notice type: Pre-solicitation"
     ],
     "navy_related": false,
-    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64df3f723ec243b09ec8bcd3ea34644e",
-    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64df3f723ec243b09ec8bcd3ea34644e",
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0b48040866c14299801f363bf902e152",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0b48040866c14299801f363bf902e152",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-437cbd8814f34a989a59c00a7a88672f",
+    "title": "WHEEL,PNEUMATIC TIRE,ASSEMBY",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=437cbd8814f34a989a59c00a7a88672f",
+    "opportunity_url": "https://sam.gov/opp/437cbd8814f34a989a59c00a7a88672f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/437cbd8814f34a989a59c00a7a88672f/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "437cbd8814f34a989a59c00a7a88672f",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPRDL125R0262",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND WARREN MICHIGAN.DLA LAND WARREN",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-05-21",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=437cbd8814f34a989a59c00a7a88672f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=437cbd8814f34a989a59c00a7a88672f",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -15270,6 +15196,36 @@
     "resource_items": null
   },
   {
+    "id": "sam-d468140aa1ed47b5ab7a86ca2b664de7",
+    "title": "Fingolimod Capsules",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d468140aa1ed47b5ab7a86ca2b664de7",
+    "opportunity_url": "https://sam.gov/opp/d468140aa1ed47b5ab7a86ca2b664de7/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/d468140aa1ed47b5ab7a86ca2b664de7/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "d468140aa1ed47b5ab7a86ca2b664de7",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPE2D2-26-R-0007",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT MEDICAL.DLA TROOP SUPPORT",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2026-06-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d468140aa1ed47b5ab7a86ca2b664de7",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d468140aa1ed47b5ab7a86ca2b664de7",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-3e0bf66d6a32439db724ef5c4aed564d",
     "title": "70--INTERFACE UNIT,AUTO",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e0bf66d6a32439db724ef5c4aed564d",
@@ -15294,6 +15250,36 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e0bf66d6a32439db724ef5c4aed564d",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e0bf66d6a32439db724ef5c4aed564d",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-a3ef5f24c96d45dbbc44befeb5f4ac5f",
+    "title": "48 - SERVOVALVE, HYDRAULIC - SPE7MC26R0003",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a3ef5f24c96d45dbbc44befeb5f4ac5f",
+    "opportunity_url": "https://sam.gov/opp/a3ef5f24c96d45dbbc44befeb5f4ac5f/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/a3ef5f24c96d45dbbc44befeb5f4ac5f/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "a3ef5f24c96d45dbbc44befeb5f4ac5f",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation"
+    ],
+    "solicitation_number": "SPE7MC26R0003PS",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+    "posted_date": "2026-04-09",
+    "response_deadline": "2026-06-15",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Pre-solicitation"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a3ef5f24c96d45dbbc44befeb5f4ac5f",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a3ef5f24c96d45dbbc44befeb5f4ac5f",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,
@@ -17856,6 +17842,36 @@
     "navy_related": false,
     "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4b062c7b3bb9481f97603118731744ea",
     "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4b062c7b3bb9481f97603118731744ea",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
+    "id": "sam-962268fcc91142ef81de264c7171533a",
+    "title": "FD2030-26-01257",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=962268fcc91142ef81de264c7171533a",
+    "opportunity_url": "https://sam.gov/opp/962268fcc91142ef81de264c7171533a/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/962268fcc91142ef81de264c7171533a/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "962268fcc91142ef81de264c7171533a",
+    "notice_type_code": "s",
+    "notice_type": "Special Notice",
+    "engagement_kinds": [
+      "Special Notice"
+    ],
+    "solicitation_number": "FD2030-26-01257",
+    "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY",
+    "posted_date": "2026-04-08",
+    "response_deadline": "2027-04-08",
+    "place_of_performance": null,
+    "relevance_score": 2,
+    "relevance_reasons": [
+      "Signal notice type: Special Notice"
+    ],
+    "navy_related": false,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=962268fcc91142ef81de264c7171533a",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=962268fcc91142ef81de264c7171533a",
     "detail_text_length": 94,
     "resource_links": [],
     "resource_count": 0,

@@ -1,0 +1,46 @@
+{
+  "id": "sam-0ff9a2bad6ba4f9e9af69eb22240eebd",
+  "title": "FY2026_APM Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ff9a2bad6ba4f9e9af69eb22240eebd",
+  "opportunity_url": "https://sam.gov/opp/0ff9a2bad6ba4f9e9af69eb22240eebd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0ff9a2bad6ba4f9e9af69eb22240eebd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0ff9a2bad6ba4f9e9af69eb22240eebd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FY_2026_APM_Support",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 2(00085)",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ff9a2bad6ba4f9e9af69eb22240eebd",
+  "detail_text": "This is a SOURCES SOUGHT NOTICE / REQUEST FOR INFORMATION not a pre-solicitation notice or solicitation for proposals/quotations. Pursuant to FAR Part 10 (Market Research), the purpose of this notice is to determine if sources capable of satisfying the agency's requirements exist. Please see the SOW attachment for description of the agency needs. This notice in no way obligates the Government to any further action.",
+  "detail_text_length": 418,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ed9216ed39114b66bdf177126f733a03/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ed9216ed39114b66bdf177126f733a03/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1670a3d3d4e9f35d62efc26e9053efe75c02d26b3e94bfb52dad060a829827f9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1670a3d3d4e9f35d62efc26e9053efe75c02d26b3e94bfb52dad060a829827f9.pdf",
+      "file_id": "ed9216ed39114b66bdf177126f733a03",
+      "file_name": "FY2026_APM+Support_SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 182334,
+      "sha256": "1670a3d3d4e9f35d62efc26e9053efe75c02d26b3e94bfb52dad060a829827f9"
+    }
+  ],
+  "_mirror_hash": "9abb3598c0f38c3905d04ecae7a7630bbf994b3a1f74e14acefed8091043b84a",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.872105+00:00"
+}

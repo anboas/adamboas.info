@@ -1,0 +1,70 @@
+{
+  "id": "sam-26cefad7bad1498bb65cabd548fcbdf7",
+  "title": "United States Space Force (USSF) Human Resources Information Technology (HRIT) Guardian Automation Layer (GAL) Request for Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=26cefad7bad1498bb65cabd548fcbdf7",
+  "opportunity_url": "https://sam.gov/opp/26cefad7bad1498bb65cabd548fcbdf7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/26cefad7bad1498bb65cabd548fcbdf7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "26cefad7bad1498bb65cabd548fcbdf7",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "FA2553-HRIT-GAL-RFI",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2553 OPRN TEST & TRG INFR OTTI PK",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=26cefad7bad1498bb65cabd548fcbdf7",
+  "detail_text": "The United States Space Force (USSF) is seeking information on how an interested contractor could provide the user interface and automation layer of a military Human Resources Information Technology (HRIT) system that is easy to use for both Guardians and Human Resource (HR) Practitioners. In support of this effort, USSF is interested in gathering industry feedback on a phased approach to incrementally deliver military HR and Talent Management capabilities in accordance with the Personnel Management Act. Interested parties are invited to respond to this request for information (RFI) by completing the accompanying “SRD_Response_Spreadsheet.xlsx” and an unclassified white paper as outlined in the attached HRIT GAL RFI document. Oral communications are not permissible. No telephonic communications will be permitted.",
+  "detail_text_length": 824,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d009a5f793c4c08933aab0a9130a867/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1889229b78bc49a490c83698ac5bb96f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9320138ff8954b24ab88a1b93978ae76/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d009a5f793c4c08933aab0a9130a867/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/533ea3ffc3bb397316d1e8459c13d6a7151a4aadd5b35b78d5818d98e0b12c71.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/533ea3ffc3bb397316d1e8459c13d6a7151a4aadd5b35b78d5818d98e0b12c71.pdf",
+      "file_id": "0d009a5f793c4c08933aab0a9130a867",
+      "file_name": "USSF_HRIT_GAL_RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 216528,
+      "sha256": "533ea3ffc3bb397316d1e8459c13d6a7151a4aadd5b35b78d5818d98e0b12c71"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1889229b78bc49a490c83698ac5bb96f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7877f5501f8898e95d390f3450ebbfbad4c2a695db6039a00362397f7d5babd4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7877f5501f8898e95d390f3450ebbfbad4c2a695db6039a00362397f7d5babd4.pdf",
+      "file_id": "1889229b78bc49a490c83698ac5bb96f",
+      "file_name": "SRD-SF+Guardian+PMS+v1.0.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 685108,
+      "sha256": "7877f5501f8898e95d390f3450ebbfbad4c2a695db6039a00362397f7d5babd4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9320138ff8954b24ab88a1b93978ae76/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5f397a4a4b05b60bf3b224b7bf2610d303bf7300c7941a5bc7db1ca2299a30fc.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5f397a4a4b05b60bf3b224b7bf2610d303bf7300c7941a5bc7db1ca2299a30fc.xlsx",
+      "file_id": "9320138ff8954b24ab88a1b93978ae76",
+      "file_name": "SRD_Response_Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24110,
+      "sha256": "5f397a4a4b05b60bf3b224b7bf2610d303bf7300c7941a5bc7db1ca2299a30fc"
+    }
+  ],
+  "_mirror_hash": "cdf4641d27b7405b57cf636a5d98348eecef1e06c91c5a91e4039eaf665e7b59",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.663214+00:00"
+}

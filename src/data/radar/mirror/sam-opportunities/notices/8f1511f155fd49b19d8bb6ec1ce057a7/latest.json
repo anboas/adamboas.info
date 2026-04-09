@@ -1,0 +1,46 @@
+{
+  "id": "sam-8f1511f155fd49b19d8bb6ec1ce057a7",
+  "title": "Laser Tracker Refresh",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8f1511f155fd49b19d8bb6ec1ce057a7",
+  "opportunity_url": "https://sam.gov/opp/8f1511f155fd49b19d8bb6ec1ce057a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8f1511f155fd49b19d8bb6ec1ce057a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8f1511f155fd49b19d8bb6ec1ce057a7",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "H6WC23",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8125  AFSC PZIMA",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8f1511f155fd49b19d8bb6ec1ce057a7",
+  "detail_text": "** THIS IS A PRE-SOLICITATION NOTICE. QUOTES WILL NOT BE ACCEPTED UNTIL THE REQUEST FOR QUOTE (RFQ) IS POSTED AT A LATER DATE. ** The Air Force and 76 CMXG intend to solicit and issue a sole-source contract to Hexagon Metrology Intelligence, Inc. under the authority of FAR 6.103-1(b) and 10 U.S.C. 3204(a)(1) for the following: Description: The following sets forth the minimum requirements for the procurement of (8) Leica Laser trackers, scanners, and accessories by Hexagon Metrology Intelligence, Inc. The machines shall include all equipment, materials, accessories, and attachments to provide the full capabilities described in the Statement of Work. Additionally, the contractor shall include a 1-year warranty commencing after delivery of the equipment to Tinker Air Force Base. Expected Delivery Date: 120 days After Receipt of Award Contemplated contract details: Firm-fixed price (FFP) Commercial, Sole-Source Acquisition FSC/PSC – 6650 NAICS – 334513 Size Standard – 750 Employees Requirements for Award: System for Award Management (SAM) is required to receive any award. Vendors can register electronically at https://sam.gov/content/home .",
+  "detail_text_length": 1155,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6674d06c6a7c4efb9fed7f6ab7f31243/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6674d06c6a7c4efb9fed7f6ab7f31243/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/99d11bde6ec7ba002730473f16ce5ed89f6e21cdd893a5ea31e88a1d5cfa3bcb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/99d11bde6ec7ba002730473f16ce5ed89f6e21cdd893a5ea31e88a1d5cfa3bcb.pdf",
+      "file_id": "6674d06c6a7c4efb9fed7f6ab7f31243",
+      "file_name": "SSJ_H6WC23+Laser+Trackers_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 289887,
+      "sha256": "99d11bde6ec7ba002730473f16ce5ed89f6e21cdd893a5ea31e88a1d5cfa3bcb"
+    }
+  ],
+  "_mirror_hash": "5b45f20e89b8f021d7f43582acc7144c8fde26758627bf375f11608f22bc7193",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.718629+00:00"
+}

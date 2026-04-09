@@ -1,0 +1,47 @@
+{
+  "id": "sam-cf1582a74f23402fb6a299db214644f8",
+  "title": "RFI for HRD AI Tools and Automations",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cf1582a74f23402fb6a299db214644f8",
+  "opportunity_url": "https://sam.gov/opp/cf1582a74f23402fb6a299db214644f8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cf1582a74f23402fb6a299db214644f8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cf1582a74f23402fb6a299db214644f8",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140D0426R0032",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Solicitation notice type: Solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cf1582a74f23402fb6a299db214644f8",
+  "detail_text": "RFI for HRD AI Tools and Automations",
+  "detail_text_length": 36,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e34ead112f6e4f48bedb0a5d26854405/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e34ead112f6e4f48bedb0a5d26854405/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc5a12f4038d364a117837d83bd21293fe298677c6d43dc929b032057758bfb2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc5a12f4038d364a117837d83bd21293fe298677c6d43dc929b032057758bfb2.pdf",
+      "file_id": "e34ead112f6e4f48bedb0a5d26854405",
+      "file_name": "A14_Source_Sought_-RFI_140D0426R0032_IBC-HRD_AI_Tools_and_Automations_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 292566,
+      "sha256": "dc5a12f4038d364a117837d83bd21293fe298677c6d43dc929b032057758bfb2"
+    }
+  ],
+  "_mirror_hash": "e383cc38c6148843f93ad26786841364916f23e5cba881ff5447cee574570bcc",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.671603+00:00"
+}

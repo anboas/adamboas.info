@@ -1,0 +1,70 @@
+{
+  "id": "sam-0c8280a609184decbc7ba36455bdec53",
+  "title": "B Department Operations Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c8280a609184decbc7ba36455bdec53",
+  "opportunity_url": "https://sam.gov/opp/0c8280a609184decbc7ba36455bdec53/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0c8280a609184decbc7ba36455bdec53/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0c8280a609184decbc7ba36455bdec53",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N0017827R3103",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c8280a609184decbc7ba36455bdec53",
+  "detail_text": "B Department Operations Support. *THIS REQUIREMENT WILL BE SOLICITED AMONGST SEAPORT-NxG MAC HOLDERS ONLY* B Department has a requirement for technical and support services in the general Work Areas of: Information Technology, Program Financial Management, Technical Writing/Editing, Operations Support, Configuration Management, Program Analysis, Facilities Operations, Property Management, Procurement Support and Electronics Technician. These services shall be provided in support of existing, near-term, and out-year projects, programs, technology developments, technology insertions, prototyping and technology demonstrations, fielding and sustainment, and related acquisition efforts. The Contractor shall provide technical support services at NSWCDD, test facilities, Contractor facilities, and in the field.",
+  "detail_text_length": 815,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6208371211ec4bdd9147e772ce0cfeb7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c14dafa681ab4ce4b087a422bfa5d8e8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9f1d009914d462fbccef145912c29e1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6208371211ec4bdd9147e772ce0cfeb7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d99b0031f47f67f8904acdded19f8676729997ade5ee789a69aa5a12b12400b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d99b0031f47f67f8904acdded19f8676729997ade5ee789a69aa5a12b12400b.pdf",
+      "file_id": "6208371211ec4bdd9147e772ce0cfeb7",
+      "file_name": "B-SOW+1April26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 327224,
+      "sha256": "2d99b0031f47f67f8904acdded19f8676729997ade5ee789a69aa5a12b12400b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c14dafa681ab4ce4b087a422bfa5d8e8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ae636e935a7efa8a634ddfd664435a48e69fe2a04ea6544e541c7ce8374f13d5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ae636e935a7efa8a634ddfd664435a48e69fe2a04ea6544e541c7ce8374f13d5.pdf",
+      "file_id": "c14dafa681ab4ce4b087a422bfa5d8e8",
+      "file_name": "M.1-+Advance_notice_B+Operations+Support_4-1-26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144867,
+      "sha256": "ae636e935a7efa8a634ddfd664435a48e69fe2a04ea6544e541c7ce8374f13d5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9f1d009914d462fbccef145912c29e1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c8e0daf5863058f8308a6f9fab3274c192b5dc0482042e10dfb515a198d24d4e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c8e0daf5863058f8308a6f9fab3274c192b5dc0482042e10dfb515a198d24d4e.pdf",
+      "file_id": "f9f1d009914d462fbccef145912c29e1",
+      "file_name": "H.1-B+Dept+OPS+Support_LCAT_1April26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 226193,
+      "sha256": "c8e0daf5863058f8308a6f9fab3274c192b5dc0482042e10dfb515a198d24d4e"
+    }
+  ],
+  "_mirror_hash": "4a5d4374587781afa5469939a6fcc678f7ab1e559815080c301feacab4d33336",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:37.760280+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-a1574ceec2f44eeead66ef2a0b353184",
+  "title": "F-15 Ejection Mode Selector REMAN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1574ceec2f44eeead66ef2a0b353184",
+  "opportunity_url": "https://sam.gov/opp/a1574ceec2f44eeead66ef2a0b353184/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a1574ceec2f44eeead66ef2a0b353184/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a1574ceec2f44eeead66ef2a0b353184",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8213-26-R-3032",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.WEAPONS.FA8213  AFLCMC EBHK",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1574ceec2f44eeead66ef2a0b353184",
+  "detail_text": "Please see the attachment for a summary of parts being sought.",
+  "detail_text_length": 62,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29b39761ee1341afbe273bb4af52bfe7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29b39761ee1341afbe273bb4af52bfe7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7b13f47f9cf4013c3ff7e2dfe49b1ee8bbcae8700208a3331e4d1af0174ea482.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7b13f47f9cf4013c3ff7e2dfe49b1ee8bbcae8700208a3331e4d1af0174ea482.pdf",
+      "file_id": "29b39761ee1341afbe273bb4af52bfe7",
+      "file_name": "Sources+Sought+Synopsis+-+FA8213-26-R-3032+Ejection+Mode+Selector+Reman.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 117601,
+      "sha256": "7b13f47f9cf4013c3ff7e2dfe49b1ee8bbcae8700208a3331e4d1af0174ea482"
+    }
+  ],
+  "_mirror_hash": "2482b67ac302c6b8e8775faa76d4bf2b491b782574be1dabe1fb92d4fc9b7572",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.833554+00:00"
+}

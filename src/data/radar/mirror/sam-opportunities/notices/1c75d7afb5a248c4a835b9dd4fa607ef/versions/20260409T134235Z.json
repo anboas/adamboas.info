@@ -1,0 +1,45 @@
+{
+  "id": "sam-1c75d7afb5a248c4a835b9dd4fa607ef",
+  "title": "FLASK,COMPRESS GAS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c75d7afb5a248c4a835b9dd4fa607ef",
+  "opportunity_url": "https://sam.gov/opp/1c75d7afb5a248c4a835b9dd4fa607ef/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1c75d7afb5a248c4a835b9dd4fa607ef/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1c75d7afb5a248c4a835b9dd4fa607ef",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010425QFF55",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2025-09-11",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c75d7afb5a248c4a835b9dd4fa607ef",
+  "detail_text": "Solicitation",
+  "detail_text_length": 12,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82b94d967f064ac0b14bb96421c88c0b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82b94d967f064ac0b14bb96421c88c0b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/91d960832c935184bdf6472289c5d6c1ab125cb123305c9b5c80223731e37df5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/91d960832c935184bdf6472289c5d6c1ab125cb123305c9b5c80223731e37df5.pdf",
+      "file_id": "82b94d967f064ac0b14bb96421c88c0b",
+      "file_name": "3.01_Solicitation_23145-0081.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1025458,
+      "sha256": "91d960832c935184bdf6472289c5d6c1ab125cb123305c9b5c80223731e37df5"
+    }
+  ],
+  "_mirror_hash": "d59f7f5020a7e99bc40f540c39cbeaaa12f4a51b7b54bf5a800522d44bce8eca",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:37.800665+00:00"
+}

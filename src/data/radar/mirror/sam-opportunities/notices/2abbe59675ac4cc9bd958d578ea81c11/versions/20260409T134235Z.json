@@ -1,0 +1,58 @@
+{
+  "id": "sam-2abbe59675ac4cc9bd958d578ea81c11",
+  "title": "Sources Sought - 81 CONS Furniture Move",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2abbe59675ac4cc9bd958d578ea81c11",
+  "opportunity_url": "https://sam.gov/opp/2abbe59675ac4cc9bd958d578ea81c11/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2abbe59675ac4cc9bd958d578ea81c11/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2abbe59675ac4cc9bd958d578ea81c11",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA301026SS0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3010  81 CONS CC",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2abbe59675ac4cc9bd958d578ea81c11",
+  "detail_text": "Notice to Offeror(s)/Supplier(s): Funds are not presently available for this effort. No award will be made under this solicitation until funds are available. The Government reserves the right to cancel this solicitation, either before or after the closing date. In the event the Government cancels this solicitation, the Government has no obligation to reimburse an offeror for any costs. The 81st CONS is performing market research for the disassembly/reassembly and relocation of office furniture IAW the SOW. Please see the attached Sources Sought Synopsis and SOW.",
+  "detail_text_length": 568,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78c8b3b22d864cd7836641a1e78c2bbe/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86ef65eb5e134e0583fb1e1025a7a670/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78c8b3b22d864cd7836641a1e78c2bbe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/28d7f72cbee5142174ce1fae627c067dce96ce706b279186ce5da2c6cb27d02d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/28d7f72cbee5142174ce1fae627c067dce96ce706b279186ce5da2c6cb27d02d.pdf",
+      "file_id": "78c8b3b22d864cd7836641a1e78c2bbe",
+      "file_name": "Sources+Sought+Synopsis+81+CONS+Furniture+Move.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 160434,
+      "sha256": "28d7f72cbee5142174ce1fae627c067dce96ce706b279186ce5da2c6cb27d02d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86ef65eb5e134e0583fb1e1025a7a670/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2ae5f0330e3d57a6b6becbab4be7769dbf7ad7781c5c79e9fddd41b93a94616d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2ae5f0330e3d57a6b6becbab4be7769dbf7ad7781c5c79e9fddd41b93a94616d.pdf",
+      "file_id": "86ef65eb5e134e0583fb1e1025a7a670",
+      "file_name": "81CONS+Furniture+Move+Requirement+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90789,
+      "sha256": "2ae5f0330e3d57a6b6becbab4be7769dbf7ad7781c5c79e9fddd41b93a94616d"
+    }
+  ],
+  "_mirror_hash": "4ba0fbe43a8f512564d496725e959ba8636471c94d08af0d95f63f093ac5479b",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:37.809335+00:00"
+}

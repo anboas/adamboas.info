@@ -1,0 +1,57 @@
+{
+  "id": "sam-803a7e3d3ba4474c9aecc7234ecdf898",
+  "title": "Q201--635 HCR Blackwell CBOC (VA-26-00045948)  Short- Term",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=803a7e3d3ba4474c9aecc7234ecdf898",
+  "opportunity_url": "https://sam.gov/opp/803a7e3d3ba4474c9aecc7234ecdf898/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/803a7e3d3ba4474c9aecc7234ecdf898/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "803a7e3d3ba4474c9aecc7234ecdf898",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C25926D0028",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+  "posted_date": "2026-04-08",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=803a7e3d3ba4474c9aecc7234ecdf898",
+  "detail_text": "This is an award notice for a contracted Community Based Outpatient Clinic (CBOC) for primary care services for the Oklahoma City Veterans Affairs Health Care System (OKCVAHCS) to be located in Blackwell, Oklahoma.",
+  "detail_text_length": 214,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/264872ce37074635a71756c58e4afdba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c0ffb26064345d5a5a5e79bb33b7dcf/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/264872ce37074635a71756c58e4afdba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bc2b41f37772e27dd2cdc759dfc8db315b35d5da972349a5d815ce8026c666c8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bc2b41f37772e27dd2cdc759dfc8db315b35d5da972349a5d815ce8026c666c8.docx",
+      "file_id": "264872ce37074635a71756c58e4afdba",
+      "file_name": "36C25926D0028_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14348,
+      "sha256": "bc2b41f37772e27dd2cdc759dfc8db315b35d5da972349a5d815ce8026c666c8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c0ffb26064345d5a5a5e79bb33b7dcf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/61d2409a10b822a87810216df455a7e2324ce651ffee5362cf97f0aa06212bd1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/61d2409a10b822a87810216df455a7e2324ce651ffee5362cf97f0aa06212bd1.pdf",
+      "file_id": "2c0ffb26064345d5a5a5e79bb33b7dcf",
+      "file_name": "P03+-+JOFOC-Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1370019,
+      "sha256": "61d2409a10b822a87810216df455a7e2324ce651ffee5362cf97f0aa06212bd1"
+    }
+  ],
+  "_mirror_hash": "6b6fcde5131789277054303baa6b788046836a78dcc80360042d6f8c36864c87",
+  "_mirror_run_id": "20260409T134235Z",
+  "_mirror_recorded_at": "2026-04-09T13:46:36.893524+00:00"
+}
