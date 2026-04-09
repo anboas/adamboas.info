@@ -62,6 +62,79 @@ export const radarEventsSeed: RadarEvent[] = [
 		}
 	},
 {
+		id: 'radar-dsca-industry-day-2026',
+		title: 'DSCA Industry Day 2026',
+		description: 'Defense Security Cooperation University (DSCU) industry day focused on security cooperation priorities, FMS process updates, and foreign-industry partnership pathways.',
+		startDate: '2026-04-23',
+		endDate: '2026-04-23',
+		branch: 'Joint',
+		type: 'Workshop',
+		status: 'Upcoming',
+		signal: 'High',
+		effort: 'Low',
+		location:
+		{
+			city: 'National Capital Region',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.9072,
+			lng: -77.0369,
+			venue: 'NCR venue details provided upon registration'
+		},
+		ontology:
+		{
+			themes: ['Security Cooperation', 'FMS Reform', 'Defense Industrial Partnerships'],
+			capabilityAreas: ['Program execution', 'Partner integration', 'Acquisition alignment'],
+			missionThreads: ['Security cooperation modernization', 'Partner capacity building'],
+			stakeholders: ['DSCA', 'DSCU', 'U.S. government stakeholders', 'Foreign government representatives', 'Defense industry'],
+			keywords: ['dsca', 'dscu', 'industry day', 'fms', 'security cooperation'],
+			relatedPrograms: ['Foreign Military Sales', 'Security cooperation initiatives'],
+			decisionWindows:
+			{
+				discovery: 'Now to registration close (2026-04-17)',
+				prep: 'T-14 to T-1 days',
+				execution: 'Event day + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'Defense Security Cooperation Agency LinkedIn announcement',
+				url: 'https://www.linkedin.com/',
+				type: 'official',
+				lastVerified: '2026-04-09',
+				confidence: 'Medium'
+			}],
+			links:
+			{
+				official: 'https://www.dsca.mil/',
+				registration: 'https://lnkd.in/eu7H2DH9'
+			},
+			logistics:
+			{
+				format: 'Hybrid',
+				estimatedCostUsd:
+				{
+					min: 0,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			acquisition:
+			{
+				engagementKinds: ['Industry Day'],
+				noticeType: 'Industry Day announcement',
+				agency: 'Defense Security Cooperation Agency / Defense Security Cooperation University',
+				registrationDeadline: '2026-04-17'
+			},
+			engagement:
+			{
+				status: 'Not engaged',
+				nextAction: 'Register and prepare target stakeholder list',
+				nextActionDate: '2026-04-16'
+			},
+			notes: 'From DSCA/DSCU save-the-date announcement: hybrid format, registration required, in-person venue details provided after registration.'
+		}
+	},
+{
 		id: 'radar-sofweek-2026',
 		title: 'SOF Week',
 		description: 'Special operations ecosystem event with acquisition, tactical experimentation, and mission partner participation.',
