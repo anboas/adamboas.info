@@ -1,0 +1,46 @@
+{
+  "id": "sam-fb2dae68513a474ca9d96b36788fbfd9",
+  "title": "Chant Equipment Calibrations",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb2dae68513a474ca9d96b36788fbfd9",
+  "opportunity_url": "https://sam.gov/opp/fb2dae68513a474ca9d96b36788fbfd9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fb2dae68513a474ca9d96b36788fbfd9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fb2dae68513a474ca9d96b36788fbfd9",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "Serv-C26-059",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8125  AFSC PZIMA",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fb2dae68513a474ca9d96b36788fbfd9",
+  "detail_text": "** THIS IS A PRE-SOLICITATION NOTICE. QUOTES WILL NOT BE ACCEPTED UNTIL THE REQUEST FOR QUOTE (RFQ) IS POSTED AT A LATER DATE. ** The Air Force and 76 CMXG intend to solicit and issue a sole-source contract to Chant Engineering Company under the authority of FAR 6.103-1(b) and 10 U.S.C. 3204(a)(1) for the following: The Contractor shall provide all labor, tools, equipment, test equipment, material, parts, quality control, transportation and inspection manuals necessary to perform the Annual Calibration for the 150K Horizontal Pull Test, OC10181 and the 100K Multi-Point Load Test, OC25578 at the Oklahoma City–Air Logistics Complex (OC-ALC). The Contractor shall be responsible for ensuring all services, parts and Original Equipment Manufacturer (OEM) components provided under this contract are in accordance with (IAW) the terms and conditions outlined herein, conform to the manufacturer’s equipment specifications and the Performance Work Statement (PWS). Contemplated contract details: Firm-fixed price (FFP) Commercial, Sole-Source Acquisition FSC/PSC – J066 NAICS – 811310 Size Standard – $12.5M Requirements for Award: System for Award Management (SAM) is required to receive any award. Vendors can register electronically at https://sam.gov/content/home.",
+  "detail_text_length": 1270,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5955b8d6130f409aa3df4e63d55223ee/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5955b8d6130f409aa3df4e63d55223ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/82da90cc36a687f660a5ea4c220b9bbcfce4c828090c15fd9fd06a62d0d78bc6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/82da90cc36a687f660a5ea4c220b9bbcfce4c828090c15fd9fd06a62d0d78bc6.pdf",
+      "file_id": "5955b8d6130f409aa3df4e63d55223ee",
+      "file_name": "SSJ+-+Chant+Equipment+Calibration+-Redacted-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 88434,
+      "sha256": "82da90cc36a687f660a5ea4c220b9bbcfce4c828090c15fd9fd06a62d0d78bc6"
+    }
+  ],
+  "_mirror_hash": "def8a2a63ec43a303365c46a4d9dedfb3354b7b4434b0dfabd76ebab1b6e3b31",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.841571+00:00"
+}

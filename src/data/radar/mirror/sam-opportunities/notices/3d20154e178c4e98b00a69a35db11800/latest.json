@@ -1,0 +1,57 @@
+{
+  "id": "sam-3d20154e178c4e98b00a69a35db11800",
+  "title": "Membership in NSF SHREC Center",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3d20154e178c4e98b00a69a35db11800",
+  "opportunity_url": "https://sam.gov/opp/3d20154e178c4e98b00a69a35db11800/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3d20154e178c4e98b00a69a35db11800/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3d20154e178c4e98b00a69a35db11800",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "80NSSC26929801Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3d20154e178c4e98b00a69a35db11800",
+  "detail_text": "NASA/NSSC has a requirement for Membership in NSF SHREC Center. See the attached SOW and request for capability statements. *PLEASE NOTE* This is not a request for quotes. Pricing offers will not be reviewed or accepted at this time. Correspondence should reference ID 80NSSC26929801Q in the subject line to ensure visibility.",
+  "detail_text_length": 326,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4bbaea3ddd014a8fb888356c18a7f8b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7813c4430fc46bc8a1c4c68aa09056f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4bbaea3ddd014a8fb888356c18a7f8b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0cb6787366ebb90fea3f83677688284fea61a7638528892d1da59d0e1fe0d9b0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0cb6787366ebb90fea3f83677688284fea61a7638528892d1da59d0e1fe0d9b0.pdf",
+      "file_id": "4bbaea3ddd014a8fb888356c18a7f8b1",
+      "file_name": "Tab+04+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 87847,
+      "sha256": "0cb6787366ebb90fea3f83677688284fea61a7638528892d1da59d0e1fe0d9b0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7813c4430fc46bc8a1c4c68aa09056f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/97d81d662eb2f9faf2c319f0c892ed0089c6b24cabc690ca9b71e7ac55ef7fef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/97d81d662eb2f9faf2c319f0c892ed0089c6b24cabc690ca9b71e7ac55ef7fef.pdf",
+      "file_id": "c7813c4430fc46bc8a1c4c68aa09056f",
+      "file_name": "Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 91218,
+      "sha256": "97d81d662eb2f9faf2c319f0c892ed0089c6b24cabc690ca9b71e7ac55ef7fef"
+    }
+  ],
+  "_mirror_hash": "401bac91789dcef4da7c46fef4b321047e7efcfdf9a99f777c0765c14c46028d",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.825470+00:00"
+}

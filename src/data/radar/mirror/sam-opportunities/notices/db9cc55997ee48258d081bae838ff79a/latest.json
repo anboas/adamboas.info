@@ -1,0 +1,59 @@
+{
+  "id": "sam-db9cc55997ee48258d081bae838ff79a",
+  "title": "D--Amendment 0001 is issued to answer all questions and to extend the RFI due date",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db9cc55997ee48258d081bae838ff79a",
+  "opportunity_url": "https://sam.gov/opp/db9cc55997ee48258d081bae838ff79a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/db9cc55997ee48258d081bae838ff79a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "db9cc55997ee48258d081bae838ff79a",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "140D0426R0032",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=db9cc55997ee48258d081bae838ff79a",
+  "detail_text": "Amendment 0001 is issued to responses to all submitted questions and to extended the due date until 4/27/2026 at 1PM ET.",
+  "detail_text_length": 120,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c2af80c55cb643c6832c3a4b443bdf5d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9a8e7a6d97c4c1a88a87a72f3962379/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c2af80c55cb643c6832c3a4b443bdf5d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8eaeacc27f11b595f4058d0c68be6801f57e5a662015ebd93fa7843a0b2c686c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8eaeacc27f11b595f4058d0c68be6801f57e5a662015ebd93fa7843a0b2c686c.pdf",
+      "file_id": "c2af80c55cb643c6832c3a4b443bdf5d",
+      "file_name": "A14_MR_Questions_and_Answers_-_AI_Vendor_Responses_per_RFI_-1-_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 170160,
+      "sha256": "8eaeacc27f11b595f4058d0c68be6801f57e5a662015ebd93fa7843a0b2c686c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9a8e7a6d97c4c1a88a87a72f3962379/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc5a12f4038d364a117837d83bd21293fe298677c6d43dc929b032057758bfb2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc5a12f4038d364a117837d83bd21293fe298677c6d43dc929b032057758bfb2.pdf",
+      "file_id": "e9a8e7a6d97c4c1a88a87a72f3962379",
+      "file_name": "A14_Source_Sought_-RFI_140D0426R0032_IBC-HRD_AI_Tools_and_Automations_Final_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 292566,
+      "sha256": "dc5a12f4038d364a117837d83bd21293fe298677c6d43dc929b032057758bfb2"
+    }
+  ],
+  "_mirror_hash": "ce00a83f7aa7b51e3bfcf63c64f81f5a934c334cafa0a68d2b868388c9df4eaf",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.758625+00:00"
+}

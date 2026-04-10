@@ -1,0 +1,57 @@
+{
+  "id": "sam-f2e08cbe720d4bcba57afa5e9d2b48f0",
+  "title": "NSN 2540-01-436-4175 (SEAT, VEHICULAR)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2e08cbe720d4bcba57afa5e9d2b48f0",
+  "opportunity_url": "https://sam.gov/opp/f2e08cbe720d4bcba57afa5e9d2b48f0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f2e08cbe720d4bcba57afa5e9d2b48f0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f2e08cbe720d4bcba57afa5e9d2b48f0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL26075002",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2e08cbe720d4bcba57afa5e9d2b48f0",
+  "detail_text": "A Sources Sought Notice is being issued for SEAT, VEHICULAR under NSN 2540-01-436-4175. This is for a potential Long-Term Contract (LTC) solicitation with a 3 year base period and 2 option years for a total of 5 years. Please review the attached Market Survey Questionnaire and Spreadsheet. Please return completed documents to Anna Douglass at anna.douglass@dla.mil if you are interested.",
+  "detail_text_length": 389,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57b3f90142a54b6a9571daac5af91855/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5bd9b556b5c454faffb8cc98c185332/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57b3f90142a54b6a9571daac5af91855/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3638e1fc41a05817fa4678c14d7b7f015ab3893d6926251cf9113ee0a720bf74.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3638e1fc41a05817fa4678c14d7b7f015ab3893d6926251cf9113ee0a720bf74.docx",
+      "file_id": "57b3f90142a54b6a9571daac5af91855",
+      "file_name": "-CL26075002-MR+LTC+Question.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56715,
+      "sha256": "3638e1fc41a05817fa4678c14d7b7f015ab3893d6926251cf9113ee0a720bf74"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5bd9b556b5c454faffb8cc98c185332/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/593e4f0b4b0617084e4637185662b2a574cbf85fc32e7204ba43681131a4c84f.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/593e4f0b4b0617084e4637185662b2a574cbf85fc32e7204ba43681131a4c84f.xlsx",
+      "file_id": "a5bd9b556b5c454faffb8cc98c185332",
+      "file_name": "-CL26075002-MR+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 189786,
+      "sha256": "593e4f0b4b0617084e4637185662b2a574cbf85fc32e7204ba43681131a4c84f"
+    }
+  ],
+  "_mirror_hash": "e85432ec6c2fa4dcec6cec3ada142754330e037199b6d88f8f68f72d6a42aae9",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.895198+00:00"
+}

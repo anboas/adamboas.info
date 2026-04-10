@@ -1,0 +1,45 @@
+{
+  "id": "sam-ce769eecd2f047d48897a1a22349666d",
+  "title": "Post office Unit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce769eecd2f047d48897a1a22349666d",
+  "opportunity_url": "https://sam.gov/opp/ce769eecd2f047d48897a1a22349666d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ce769eecd2f047d48897a1a22349666d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ce769eecd2f047d48897a1a22349666d",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q066",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce769eecd2f047d48897a1a22349666d",
+  "detail_text": "This solicitation is for various metal Post office units and counter, IAW RFO 12.201-1(c)(1). See attached soliciation issued 4/3/26, closing 4/15/26. This posting including its attachments provides all information required by RFO 5.201(c). Please contact the listed contracting personnel should you have any questions.",
+  "detail_text_length": 319,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1901b7dbbf44a9fa1357a76e2e202e2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1901b7dbbf44a9fa1357a76e2e202e2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f6f1fa35567aa6dfd0864f828c2008d5d736646889d68e8a1ecbdfe5d6f15aa1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f6f1fa35567aa6dfd0864f828c2008d5d736646889d68e8a1ecbdfe5d6f15aa1.pdf",
+      "file_id": "b1901b7dbbf44a9fa1357a76e2e202e2",
+      "file_name": "Solicitation+-+N0040626Q0066.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1841086,
+      "sha256": "f6f1fa35567aa6dfd0864f828c2008d5d736646889d68e8a1ecbdfe5d6f15aa1"
+    }
+  ],
+  "_mirror_hash": "abccba0aa5cd3a658ed43392e7298de05efad161f1bb5b0b888c4e92435b0cfd",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.718217+00:00"
+}

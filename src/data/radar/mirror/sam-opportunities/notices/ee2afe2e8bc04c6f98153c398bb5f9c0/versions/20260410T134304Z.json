@@ -1,0 +1,46 @@
+{
+  "id": "sam-ee2afe2e8bc04c6f98153c398bb5f9c0",
+  "title": "BTO Innovation Opportunity (BIO) Fair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee2afe2e8bc04c6f98153c398bb5f9c0",
+  "opportunity_url": "https://sam.gov/opp/ee2afe2e8bc04c6f98153c398bb5f9c0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ee2afe2e8bc04c6f98153c398bb5f9c0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ee2afe2e8bc04c6f98153c398bb5f9c0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-04",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-05-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee2afe2e8bc04c6f98153c398bb5f9c0",
+  "detail_text": "The Biological Technologies Office (BTO) of the Defense Advanced Research Projects Agency (DARPA) will host the BTO Innovation Opportunity Fair (BIO Fair) event for prospective proposers on November 12, 2025, in Arlington, Virginia. Advance registration is required for in-person and virtual event. There will be no on-site registration. The event will include overview presentations by DARPA personnel, including BTO Program Managers.",
+  "detail_text_length": 435,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92d9b2c90d4948dfa08fcc37b4f89b41/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/92d9b2c90d4948dfa08fcc37b4f89b41/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0f31f102aca4215e70bb26ec6ab87db0705f5a4dc43b796d49d2df15e7544c70.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0f31f102aca4215e70bb26ec6ab87db0705f5a4dc43b796d49d2df15e7544c70.pdf",
+      "file_id": "92d9b2c90d4948dfa08fcc37b4f89b41",
+      "file_name": "DARPA-SN-26-04.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 75836,
+      "sha256": "0f31f102aca4215e70bb26ec6ab87db0705f5a4dc43b796d49d2df15e7544c70"
+    }
+  ],
+  "_mirror_hash": "5bd490cfb7970d785a2bf1ce1d19758dbe73f820eaa26b0a158029860a758958",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:53.038006+00:00"
+}

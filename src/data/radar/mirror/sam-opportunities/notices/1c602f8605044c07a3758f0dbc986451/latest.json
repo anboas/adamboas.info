@@ -1,0 +1,46 @@
+{
+  "id": "sam-1c602f8605044c07a3758f0dbc986451",
+  "title": "Client Technological Engagement (CTE) with Tribal Partners",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c602f8605044c07a3758f0dbc986451",
+  "opportunity_url": "https://sam.gov/opp/1c602f8605044c07a3758f0dbc986451/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1c602f8605044c07a3758f0dbc986451/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1c602f8605044c07a3758f0dbc986451",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "75H70426Q00020",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.DIVISION OF ACQUISITIONS POLICY HQ",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1c602f8605044c07a3758f0dbc986451",
+  "detail_text": "This Sources Sought Notice (SSN) #75H70426Q00020 is for market research and planning purposes only and shall not be construed as a solicitation or an obligation or commitment to issue a solicitation by the Indian Health Service (IHS). This SSN is seeking information from the specific types of entities listed below to assess their capabilities in fulfilling the requirements set forth in this SSN. The information from this SSN will be used to determine the appropriate set-aside, if any, in accordance with the applicable regulations listed. The Government encourages the identified to respond to this Notice and will be assessed of their capabilities in the following priority: Indian Small Business Economic Enterprise (ISBEE), Indian Economic Enterprise’s (IEE) in accordance with HHSAR 326.603-1. Small business concerns in accordance with FAR 19.502-2 (b)(1) & (2). See attachment for more details.",
+  "detail_text_length": 905,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0e8f91a385c409daab871595d3139ca/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0e8f91a385c409daab871595d3139ca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dfb0f9489f9a4ecfe38a040b956bd0d64d0ee5de06a2ea601677076b60a0691d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dfb0f9489f9a4ecfe38a040b956bd0d64d0ee5de06a2ea601677076b60a0691d.pdf",
+      "file_id": "f0e8f91a385c409daab871595d3139ca",
+      "file_name": "SOURCES+SOUGHT+NOTICE_OCPS-DBH+_CTE+with+Tribal+Partners+4.09.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 232066,
+      "sha256": "dfb0f9489f9a4ecfe38a040b956bd0d64d0ee5de06a2ea601677076b60a0691d"
+    }
+  ],
+  "_mirror_hash": "1705471dac575b537c522e4bab3c8b748a04f9b33ef30966faf7ccf204fd4267",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.861380+00:00"
+}

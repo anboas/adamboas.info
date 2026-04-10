@@ -1,0 +1,57 @@
+{
+  "id": "sam-2430bad1d5b640f8b7208e0ef05cecb9",
+  "title": "Potomac Security Barrier Maintenance 2-yr renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2430bad1d5b640f8b7208e0ef05cecb9",
+  "opportunity_url": "https://sam.gov/opp/2430bad1d5b640f8b7208e0ef05cecb9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2430bad1d5b640f8b7208e0ef05cecb9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2430bad1d5b640f8b7208e0ef05cecb9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26925896",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2430bad1d5b640f8b7208e0ef05cecb9",
+  "detail_text": "** THIS IS A SOLE SOURCE REQUIREMENT ** for Potomac Security Barrier Maintenance 2-yr renewal",
+  "detail_text_length": 93,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7d15e9be944d44938b5ea3e6d39929c5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a89cbec281d14be3a972dede226f3145/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7d15e9be944d44938b5ea3e6d39929c5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c52293dfa7decd845e4f87e4b4e0f20807f07445d3c0d026004ace2d5214f209.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c52293dfa7decd845e4f87e4b4e0f20807f07445d3c0d026004ace2d5214f209.pdf",
+      "file_id": "7d15e9be944d44938b5ea3e6d39929c5",
+      "file_name": "SATPC0040727+Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114546,
+      "sha256": "c52293dfa7decd845e4f87e4b4e0f20807f07445d3c0d026004ace2d5214f209"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a89cbec281d14be3a972dede226f3145/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ddef51b2cf5d8537849f8f726b9478f012aa7627b5e2c275afd685ef0a51a779.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ddef51b2cf5d8537849f8f726b9478f012aa7627b5e2c275afd685ef0a51a779.pdf",
+      "file_id": "a89cbec281d14be3a972dede226f3145",
+      "file_name": "SATPC0040727+Tab+04+4+SOW+-Revised-..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 224174,
+      "sha256": "ddef51b2cf5d8537849f8f726b9478f012aa7627b5e2c275afd685ef0a51a779"
+    }
+  ],
+  "_mirror_hash": "7a6d6c2776b2433c5f83d58452e709914606626b49808d4460335fefb3a64fdc",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.826513+00:00"
+}

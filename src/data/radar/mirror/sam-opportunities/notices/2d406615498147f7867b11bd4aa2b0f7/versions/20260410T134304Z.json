@@ -1,0 +1,46 @@
+{
+  "id": "sam-2d406615498147f7867b11bd4aa2b0f7",
+  "title": "F-16 Iridium Catalyst",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d406615498147f7867b11bd4aa2b0f7",
+  "opportunity_url": "https://sam.gov/opp/2d406615498147f7867b11bd4aa2b0f7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2d406615498147f7867b11bd4aa2b0f7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2d406615498147f7867b11bd4aa2b0f7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA825226R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8252  AFSC OL-H PZACB SCNDARY PWR",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-05-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d406615498147f7867b11bd4aa2b0f7",
+  "detail_text": "The purpose of this Sources Sought is to conduct market research to determine if responsible sources exist, to assist in determining if this effort can be competitive and/or a total Small Business Set-Aside. Please see attached document.",
+  "detail_text_length": 237,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c0cea24bbd943fca4fa1795cf67417a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c0cea24bbd943fca4fa1795cf67417a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/69a4af6950504fae0c14dba99a8e862f5111dc0a88e7dba49f192a0511df6211.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/69a4af6950504fae0c14dba99a8e862f5111dc0a88e7dba49f192a0511df6211.docx",
+      "file_id": "4c0cea24bbd943fca4fa1795cf67417a",
+      "file_name": "F-16+Iridium+Catalyst+SSS+final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191496,
+      "sha256": "69a4af6950504fae0c14dba99a8e862f5111dc0a88e7dba49f192a0511df6211"
+    }
+  ],
+  "_mirror_hash": "afd10c7ce5e31c2676d272c004afb5c60c0c48e3533827c265a1ebb0f0b61eb2",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:53.025790+00:00"
+}

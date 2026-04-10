@@ -1,0 +1,57 @@
+{
+  "id": "sam-95a678d812d64447940d2dc6be1e1638",
+  "title": "FA2543BuckleyCoolingInfrastructureRepair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95a678d812d64447940d2dc6be1e1638",
+  "opportunity_url": "https://sam.gov/opp/95a678d812d64447940d2dc6be1e1638/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/95a678d812d64447940d2dc6be1e1638/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "95a678d812d64447940d2dc6be1e1638",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA2543BuckleyCoolingInfrastructureRepair",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2543  460 CONS",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95a678d812d64447940d2dc6be1e1638",
+  "detail_text": "This sources sought is issued for the purpose of market research in accordance with RFQ Part 10. The result of this market research will contribute to determining the method of procurement. This announcement is not to be construed as a commitment by the Government, implied or otherwise, to issue a solicitation or to award a contract. At this time, BSFB is not seeking quotes and will not accept unsolicited quotes. The Buckley Space Force Base (BSFB) 460th Contracting Squadron is requesting information from vendors to determine the availability of qualified contractors to provide the following material packages: - ITEM 0001: Elbow and Pipe Repair Package - ITEM 0002: Pipe Freezing Kit - ITEM 0003: Carbon Fiber Composite Reinforcement Package PLEASE SEE TWO ATTACHED DOCUMENTS THAT PROVIDE ADDITIONAL INFORMATION ON REQUIREMENT. The Government is requesting a response to the following: 1. What is the fastest delivery time after award you could provide each of these items? (Please reply citing the delivery time to Buckley Space Force Base, Colorado, noting the required delivery of no later than 3 days after receipt of order.) 2. Is there a different NAICS code that would better fit the item(s)? 3. What certifications (if any) are required by the end user to use or install this brand of equipment? 4. Do you have a pre-priced contract vehicle with these items on your schedule? If so, please provide the contract/schedule number for validation. 5. Is a warranty included? If so, what is the standard commercial warranty? What are your extended warranty options? 6. Company name, address, point of contact, telephone number, e-mail address, CAGE/DUNS and pre-priced contract vehicle number if applicable. 7. Confirmation that you are an authorized re-seller of the items and provided on your GSA schedule (not open market). 8. Is this requirement clear? Do any aspects need further clarification? 9. Can you provide a Rough Order of Magnitude (ROM)? 10. Is 3 days after receipt of award enough time to complete the work and all deliverables? 11. Would a site visit be needed for this requirement?",
+  "detail_text_length": 2109,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52e077e76563447899bf8c962d31fa7a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abaae9fea72843268700d8831a55a273/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52e077e76563447899bf8c962d31fa7a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6ecc41383843336ae9a9ff817f0e38b5c7e2abc01f5835a1e6dda8bbd96d1deb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6ecc41383843336ae9a9ff817f0e38b5c7e2abc01f5835a1e6dda8bbd96d1deb.pdf",
+      "file_id": "52e077e76563447899bf8c962d31fa7a",
+      "file_name": "Statement+of+Need+-+RA+Cooling+Infrastructure+Repair+PDF.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 173853,
+      "sha256": "6ecc41383843336ae9a9ff817f0e38b5c7e2abc01f5835a1e6dda8bbd96d1deb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abaae9fea72843268700d8831a55a273/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ecfcadbeb5ea0283ab01bedf789a7b371396c7e89ce7e098a4786869e779e107.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ecfcadbeb5ea0283ab01bedf789a7b371396c7e89ce7e098a4786869e779e107.pdf",
+      "file_id": "abaae9fea72843268700d8831a55a273",
+      "file_name": "Sources+Sought+-+RA+Cooling+Infrastructure+PDF.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 163906,
+      "sha256": "ecfcadbeb5ea0283ab01bedf789a7b371396c7e89ce7e098a4786869e779e107"
+    }
+  ],
+  "_mirror_hash": "245a5a8328a2120e25082598cb8b7096bb84fefb31e96b0690be6cc113f1184f",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.863970+00:00"
+}

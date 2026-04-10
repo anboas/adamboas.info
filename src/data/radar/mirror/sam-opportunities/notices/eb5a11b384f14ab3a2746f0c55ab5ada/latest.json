@@ -1,0 +1,58 @@
+{
+  "id": "sam-eb5a11b384f14ab3a2746f0c55ab5ada",
+  "title": "Sources Sought - MXG Automated Benchstock",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb5a11b384f14ab3a2746f0c55ab5ada",
+  "opportunity_url": "https://sam.gov/opp/eb5a11b384f14ab3a2746f0c55ab5ada/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/eb5a11b384f14ab3a2746f0c55ab5ada/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "eb5a11b384f14ab3a2746f0c55ab5ada",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W50S6V26-SS-MXG-Benchstock",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO CO.USPFO CO PROCUREMENT.W7MY USPFO ACTIVITY COANG 140",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb5a11b384f14ab3a2746f0c55ab5ada",
+  "detail_text": "This is a SOURCES SOUGHT for the 140th Maintenance Group at Buckley Space Force Base in Colorado to request information for market research and planning purposes. This announcement is NOT a solicitation and does not constitute a request for quotes, proposals, or bids. The purpose of this sources sought is to identify and collect information on potential sources with the capability of providing an automated vending benchstock/hardware machine, please review the salient characteristics for specifications on this item. Responses to this announcement will be used by the Government for acquisition planning and decision making. The FSC/PSC being contemplated for this requirement is 5140 - Tool and hardware boxes, and the primary North American Industry Classification System (NAICS) Code contemplated for this requirement is 423830 - Industrial Machinery and Equipment Merchant Wholesalers. The small business size standard is 100 employees. If ther is another FSC/PSC or NAICS that you believe would best fit this requriement please let us know. The Government is seeking to gain knowledge of interest, capabilities, and qualifications of both small and large businesses. A firm-fixed-price contract is contemplated. The following is requested from interested companies 1. Company information including name, Unique Entity Identification (UEI), and point(s) of contact with telephone number and e-mail address. 2. Please indicate if your company is willing/able to provide the automated vending benchstock/hardware machine. 3. Is there an or equal product of a different brand that your company is able to provide? If so, please provide the Manufacturing Part #, National Stock Number, along with the name/description of the product and salient characteristics. Please provide brochures / descriptive literature commonly provided to the general public if possible. 4. Based upon the above description and delivery information, are there any aspects that are unclear and/or do not allow a clear understanding of the US Government’s requirements? Please submit a written response via scan/email-attach on company letter head to points of contract listed below. Please be sure to include either the Notice ID or posting title in the subject box of the email.",
+  "detail_text_length": 2260,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c390c2ec84940f3b07828a106ff8824/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6a686c50e6b4a4b9e59ca304f1433fb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c390c2ec84940f3b07828a106ff8824/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/544b305b8252b33cfbbce1a97f9b4508895c34fca5e35f2d305753db0dac0b60.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/544b305b8252b33cfbbce1a97f9b4508895c34fca5e35f2d305753db0dac0b60.pdf",
+      "file_id": "2c390c2ec84940f3b07828a106ff8824",
+      "file_name": "Attachment+2+-+Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 127271,
+      "sha256": "544b305b8252b33cfbbce1a97f9b4508895c34fca5e35f2d305753db0dac0b60"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6a686c50e6b4a4b9e59ca304f1433fb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/85c32528d5c34c3a7f230e785010f5d5c117bffa7dc609f96c44a4ad91d36d8a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/85c32528d5c34c3a7f230e785010f5d5c117bffa7dc609f96c44a4ad91d36d8a.pdf",
+      "file_id": "a6a686c50e6b4a4b9e59ca304f1433fb",
+      "file_name": "Attachment+1+-+Statement+of+Need.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84063,
+      "sha256": "85c32528d5c34c3a7f230e785010f5d5c117bffa7dc609f96c44a4ad91d36d8a"
+    }
+  ],
+  "_mirror_hash": "3b747f3e415af3441dc29ac7f9a3fc8e98a324c8521c4f744210dc5a4cfed9a8",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.751466+00:00"
+}

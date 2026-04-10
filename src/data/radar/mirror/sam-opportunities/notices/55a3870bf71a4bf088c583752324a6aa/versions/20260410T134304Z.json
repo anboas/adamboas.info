@@ -1,0 +1,46 @@
+{
+  "id": "sam-55a3870bf71a4bf088c583752324a6aa",
+  "title": "Tradewinds Solutions Marketplace",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=55a3870bf71a4bf088c583752324a6aa",
+  "opportunity_url": "https://sam.gov/opp/55a3870bf71a4bf088c583752324a6aa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/55a3870bf71a4bf088c583752324a6aa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "55a3870bf71a4bf088c583752324a6aa",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-05-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=55a3870bf71a4bf088c583752324a6aa",
+  "detail_text": "Revision #9.3 to W519-23-S-CTSM. Effective 09/01/2025. Please Note Revision #9.1 was removed on 08/27/2025. All submissions on 09/01/2025 and after shall be in accordance with Revision #9.3. Please read the full Tradewind Solutions Marketplace Open Call Revision #9 attached to this announcement as several areas have been updated. Any and all questions regarding the Tradewind Solutions Marketplace shall be submitted via success@tradewindai.com. The Department of Defense (DOD) Chief Digital and Artificial Intelligence Office (CDAO) in conjunction with its marketplace manager, The Applied Research Institute (ARI), is initiating this long-term, open call solicitation for new and novel technology solutions to support the DoD in advancing research, development, prototyping, test, procurement, and sustainment of AI/ML, digital, or data hardware, software, and service solutions. Specifically, the CDAO seeks to obtain solutions or potential capabilities that fulfill requirements, close capability gaps, or provide potential technological advancements that are new as of the date of submission; or technologies, processes, or methods that represent a new application as of the date of submission. This initiative, entitled the “Tradewinds Solutions Marketplace” will solicit, collect, assess, and curate AI/ML, digital, or data solutions, and make those solutions available through rapid acquisition pathways.",
+  "detail_text_length": 1414,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/915a247fe3c14aa0bd365b3700c7eaba/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/915a247fe3c14aa0bd365b3700c7eaba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0d85f5066b8ebeedc92b12e6d29703b56c3cc8991214812a8ea27347aef17b20.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0d85f5066b8ebeedc92b12e6d29703b56c3cc8991214812a8ea27347aef17b20.pdf",
+      "file_id": "915a247fe3c14aa0bd365b3700c7eaba",
+      "file_name": "TSM+Announcement+v9.3+Sept2025.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 5299947,
+      "sha256": "0d85f5066b8ebeedc92b12e6d29703b56c3cc8991214812a8ea27347aef17b20"
+    }
+  ],
+  "_mirror_hash": "495adb0b0eb82df5b87240b5fe1e19d2c3c498d1e50e1856548c9b77a0918b9f",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:53.039177+00:00"
+}

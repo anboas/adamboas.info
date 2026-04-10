@@ -1,30 +1,29 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-09T13:47:05.062488+00:00
+Generated: 2026-04-10T13:48:17.179176+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/09/2026
+Posted range: 01/01/2026 -> 04/10/2026
 
 ## Counts
-- Total candidates: 17
+- Total candidates: 16
 - Navy-related: 0
-- Full detail cached: 17
+- Full detail cached: 16
 - Notices with attachments: 10
-- Total attachment links: 11
+- Total attachment links: 12
 - Pre-solicitation: 4
-- Sources Sought: 8
+- Sources Sought: 7
 - Special Notice: 5
 
 ## Engagement signals
 - Pre-solicitation: 4
-- Sources Sought: 8
+- Sources Sought: 7
 - Special Notice: 5
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-02-12 | 2026-02-17 | DEPT OF DEFENSE | [Telephone Services](https://sam.gov/opp/bd9294f1774543dd983551e90af98aa1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-18 | 2026-03-25 | DEPT OF DEFENSE | [MCAS Beaufort Catholic Priest Services](https://sam.gov/opp/ebde22af22b84e0799423660d49d5622/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-16 | 2026-03-30 | DEPT OF DEFENSE | [Parachute Training Support Services](https://sam.gov/opp/4fc6bf6364b144e3b462013d3e45cb3b/view) |
 | 2 | Special Notice | Special Notice | 2026-03-19 | 2026-03-30 | DEPT OF DEFENSE | [Intent to Sole Source to DODESI](https://sam.gov/opp/433586a058bb439c8a367329138b1fd7/view) |
 | 2 | Special Notice | Special Notice | 2026-03-20 | 2026-03-30 | DEPT OF DEFENSE | [150-pound Amerex Wheeled Fire Extinguishers Testing and Maintenance](https://sam.gov/opp/0e5724564510433498e6526d2e192f27/view) |
@@ -37,7 +36,7 @@ Posted range: 01/01/2026 -> 04/09/2026
 | 2 | Special Notice | Special Notice | 2026-04-08 | 2026-04-09 | DEPT OF DEFENSE | [Notice of Intent Sole Source Guest Artist "Michael Feinstein" for USMB Musical Performance](https://sam.gov/opp/1271d86389d04d2bb1642824b7eb1221/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-04-10 | DEPT OF DEFENSE | [Personally Owned Vehicle (POV ) Storage](https://sam.gov/opp/16a613f6cacc4c688b36d7f43426a6ec/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-06 | 2026-04-17 | DEPT OF DEFENSE | [Investigative Database Services](https://sam.gov/opp/0bbf287a6c2043eb93c2ac8209e64bfb/view) |
-| 2 | Sources Sought | Sources Sought | 2026-04-07 | 2026-04-17 | DEPT OF DEFENSE | [Non-Tactical Vehicles](https://sam.gov/opp/833c66bfb1f7454290d02ecfa5ce7dc6/view) |
+| 2 | Sources Sought | Sources Sought | 2026-04-09 | 2026-04-17 | DEPT OF DEFENSE | [Non-Tactical Vehicles](https://sam.gov/opp/e6cd9b95b7ec4caa80df5fd2d2a97914/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-08 | 2026-04-22 | DEPT OF DEFENSE | [Base Telephone Parts](https://sam.gov/opp/4740ffbeca8743faae63ee51182b0daa/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-08 | 2026-04-22 | DEPT OF DEFENSE | [MCAS Beaufort Catholic Priest Services](https://sam.gov/opp/e5fdf57e7da448d58742fd90ea9eaf05/view) |
 

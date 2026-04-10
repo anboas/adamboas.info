@@ -1,0 +1,57 @@
+{
+  "id": "sam-8ece3de3d8e84edfb15788cdcf237589",
+  "title": "Installation Service Node Modernization (ISN-M)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ece3de3d8e84edfb15788cdcf237589",
+  "opportunity_url": "https://sam.gov/opp/8ece3de3d8e84edfb15788cdcf237589/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8ece3de3d8e84edfb15788cdcf237589/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8ece3de3d8e84edfb15788cdcf237589",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "ISN-M-RFI2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA8726  AFLCMC HNK C3IN",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ece3de3d8e84edfb15788cdcf237589",
+  "detail_text": "The United States Air Force (USAF) is issuing this Request for Information (RFI) to conduct market research and gather information on industry best practices and innovative solutions for a significant Information Technology (IT) initiative. The primary objective of this initiative is to bring our two disparate, physically and functionally separate network infrastructures into architectural parity by developing a single, modern technical framework to be applied across both. The goal of this project is to optimize performance, enhance security, improve reliability and achieve significant operational efficiencies and cost savings. We are seeking to understand the capabilities, approaches, and experience of qualified vendors in planning and executing complex network consolidation projects of this nature. This RFI is for informational and planning purposes only and does not constitute a solicitation for a formal proposal (RFP) or a commitment to issue one in the future. The information gathered from this RFI will be used to refine our requirements, inform our strategy, and identify potential partners who possess the expertise to meet our project goals. Responses to this RFI will not result in a contract award. We appreciate your time and expertise in responding to this request and look forward to learning more about the solutions your organization can provide. For a more detailed overview, please see the attached RFI cover letter and Statement of Objectives (SOO).",
+  "detail_text_length": 1483,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56413624aed849b3bf17997d5b896c44/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf8fc2d5aab242cbbcabd50a2f12e139/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56413624aed849b3bf17997d5b896c44/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/26fde5648eb21f3f02f3c57e4717215ecca903edaccee0273bac433b2adfd10f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/26fde5648eb21f3f02f3c57e4717215ecca903edaccee0273bac433b2adfd10f.pdf",
+      "file_id": "56413624aed849b3bf17997d5b896c44",
+      "file_name": "ISN-M+RFI+Cover+Page_Final_9Apr26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 258392,
+      "sha256": "26fde5648eb21f3f02f3c57e4717215ecca903edaccee0273bac433b2adfd10f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf8fc2d5aab242cbbcabd50a2f12e139/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9bb9eda5f5c5a707e263193889916f4acfb7dea9523595ae681e4d4df2f77021.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9bb9eda5f5c5a707e263193889916f4acfb7dea9523595ae681e4d4df2f77021.pdf",
+      "file_id": "bf8fc2d5aab242cbbcabd50a2f12e139",
+      "file_name": "ISN-M+SOO_Final+_9Apr26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 282816,
+      "sha256": "9bb9eda5f5c5a707e263193889916f4acfb7dea9523595ae681e4d4df2f77021"
+    }
+  ],
+  "_mirror_hash": "c477d87ca2246d0249520f6b02867436db80a614aee9f3a187208a697990ca46",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:53.022095+00:00"
+}

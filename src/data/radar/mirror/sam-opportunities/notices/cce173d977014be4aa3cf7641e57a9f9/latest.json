@@ -1,0 +1,56 @@
+{
+  "id": "sam-cce173d977014be4aa3cf7641e57a9f9",
+  "title": "Circuit Card Assembly",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cce173d977014be4aa3cf7641e57a9f9",
+  "opportunity_url": "https://sam.gov/opp/cce173d977014be4aa3cf7641e57a9f9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cce173d977014be4aa3cf7641e57a9f9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cce173d977014be4aa3cf7641e57a9f9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QX071",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cce173d977014be4aa3cf7641e57a9f9",
+  "detail_text": "FMS Case Nu: NE-P-P-MDG No. of Requisitions: 3 NSN: 5998015614141 Part Number: 6388254-159 Nomenclature: Circuit Card Assembly",
+  "detail_text_length": 126,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63b60ec312484da6a3cad22cce910e77/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9dec45310f88403493f937cf2f2ba99c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63b60ec312484da6a3cad22cce910e77/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3862b1c320f9452a1ccac07cf133d6bbb2190a0675f1e586011e9ce05f9ece56.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3862b1c320f9452a1ccac07cf133d6bbb2190a0675f1e586011e9ce05f9ece56.pdf",
+      "file_id": "63b60ec312484da6a3cad22cce910e77",
+      "file_name": "3.01_Solicitation_25PR26311.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1073037,
+      "sha256": "3862b1c320f9452a1ccac07cf133d6bbb2190a0675f1e586011e9ce05f9ece56"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9dec45310f88403493f937cf2f2ba99c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c78d730d6c797853cd5103c559eed1494ca978509a75d288c5ea65388d562bfc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c78d730d6c797853cd5103c559eed1494ca978509a75d288c5ea65388d562bfc.pdf",
+      "file_id": "9dec45310f88403493f937cf2f2ba99c",
+      "file_name": "3.03_Amendment-1-_25PR26311.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 525737,
+      "sha256": "c78d730d6c797853cd5103c559eed1494ca978509a75d288c5ea65388d562bfc"
+    }
+  ],
+  "_mirror_hash": "2b785b064222a7685664541295f8a27fbf0d16a5230a112d89cf8c72ff0a47dd",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.752175+00:00"
+}

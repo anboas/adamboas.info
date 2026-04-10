@@ -1,0 +1,46 @@
+{
+  "id": "sam-2a90c13087a74e8584ff9a4474930349",
+  "title": "Repair Deep Well 051 for Closure",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a90c13087a74e8584ff9a4474930349",
+  "opportunity_url": "https://sam.gov/opp/2a90c13087a74e8584ff9a4474930349/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2a90c13087a74e8584ff9a4474930349/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2a90c13087a74e8584ff9a4474930349",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W519TC26R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a90c13087a74e8584ff9a4474930349",
+  "detail_text": "The Army Contracting Command - Rock Island Arsenal is issuing this sources sought notice for the construction project to seal an approximately 380ft deep, disused water well. The Contractor is required to employ the necessary equipment, instruments, and materials to accomplish the task of sealing this old well in accordance with Illinois Administrative Code Title 77 Chapter I Section 920.120. The Contractor shall complete the necessary reporting to the County of Rock Island Public Health Department including paying fees. This project is located on the Rock Island Arsenal, Rock Island, IL. This project shall be a working day contract. The contractor is allowed 90 working days to complete the project. See attached Statement of Work dated March 18, 2026. Interested sources should provide responses no later than 3:00PM Central Time on April 20, 2026. Responses should include the following information: Details of previous, in-scope projects, including dates and the organizations for which the work was performed. CAGE code. Small business designation. Business size status. Please provide a capability statement to Hila Anderson, hila.r.anderson.civ@army.mil. This is a SOURCES SOUGHT NOTICE only and shall not be construed as a solicitation or as an obligation on the part of the Government. This notice does not obligate the Government to award a contract or otherwise pay for the information provided in the response. The Government will not reimburse expenses incurred to interested parties for responses to this announcement. The Government will not accept requests for meetings or briefings. No phone solicitations or email with regards to the status of the Request for Proposal (RFP) will be accepted prior to the solicitation release. However, information obtained as a result of this announcement may be reflected in subsequent solicitation, this announcement is Government market research and may result in revisions to both its requirements and its acquisition strategy based on industry responses.",
+  "detail_text_length": 2019,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30b5e99d09f44271a7e380053db8a546/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30b5e99d09f44271a7e380053db8a546/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15eea773a14471f926ea2c6b95b50c950d895dcd47d2bfc327fd9b815ee80d80.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15eea773a14471f926ea2c6b95b50c950d895dcd47d2bfc327fd9b815ee80d80.pdf",
+      "file_id": "30b5e99d09f44271a7e380053db8a546",
+      "file_name": "Statement+of+Work+-SOW-+Repair+Deep+Well+051+-18MAR2026-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 187755,
+      "sha256": "15eea773a14471f926ea2c6b95b50c950d895dcd47d2bfc327fd9b815ee80d80"
+    }
+  ],
+  "_mirror_hash": "3939f6be197d20350e7f024e02f64b4bbe9f3df05e092bdb41f81e7e4b843c3a",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.940256+00:00"
+}

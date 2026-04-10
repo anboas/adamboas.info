@@ -1,0 +1,57 @@
+{
+  "id": "sam-c5a037227d104e43957c7e44eca4407c",
+  "title": "Continuous Monitoring Analytical Tool Set (CMATS) Development and Sustainment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c5a037227d104e43957c7e44eca4407c",
+  "opportunity_url": "https://sam.gov/opp/c5a037227d104e43957c7e44eca4407c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c5a037227d104e43957c7e44eca4407c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c5a037227d104e43957c7e44eca4407c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "832674365",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).IT CONTRACTING DIVISION - PL83",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c5a037227d104e43957c7e44eca4407c",
+  "detail_text": "See attached Sources_Sought_CMATS and Draft_PWS_CMATS.",
+  "detail_text_length": 54,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/01dae82bd38440cf8042df7600757228/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eccf14cfc36546b2962446e977f0077c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/01dae82bd38440cf8042df7600757228/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e8a1f2af3af1c54cf7c37b45dd6acea5925af2c46229163a530fe2ba098ed67e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e8a1f2af3af1c54cf7c37b45dd6acea5925af2c46229163a530fe2ba098ed67e.docx",
+      "file_id": "01dae82bd38440cf8042df7600757228",
+      "file_name": "Sources_Sought_CMATS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59129,
+      "sha256": "e8a1f2af3af1c54cf7c37b45dd6acea5925af2c46229163a530fe2ba098ed67e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eccf14cfc36546b2962446e977f0077c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cc9213e281b665ff7fdc64c72cff0f076758c486f825d8c1eed2704c84788dcc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cc9213e281b665ff7fdc64c72cff0f076758c486f825d8c1eed2704c84788dcc.docx",
+      "file_id": "eccf14cfc36546b2962446e977f0077c",
+      "file_name": "Draft_PWS_CMATS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 225962,
+      "sha256": "cc9213e281b665ff7fdc64c72cff0f076758c486f825d8c1eed2704c84788dcc"
+    }
+  ],
+  "_mirror_hash": "e8268d9c2cafd214e92800346f2ca1422327f48179266416b59431c20e7431e3",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.964828+00:00"
+}

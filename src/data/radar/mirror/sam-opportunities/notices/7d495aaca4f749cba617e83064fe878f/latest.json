@@ -1,0 +1,46 @@
+{
+  "id": "sam-7d495aaca4f749cba617e83064fe878f",
+  "title": "KC-135R/T Unscheduled Depot Level Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d495aaca4f749cba617e83064fe878f",
+  "opportunity_url": "https://sam.gov/opp/7d495aaca4f749cba617e83064fe878f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7d495aaca4f749cba617e83064fe878f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7d495aaca4f749cba617e83064fe878f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8105_UDLM_Sources_Sought_26Mar2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.MOBILITY AIRCRAFT.FA8105  AFLCMC  WKK",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d495aaca4f749cba617e83064fe878f",
+  "detail_text": "9 April 2026 This RFI has been updated. See attached document \"UDLM Sources Sought 26 March 2026-Revised\" for updated details. To request access to view controlled documents via sam.gov. You must have a role assigned in sam.gov. This is not something Government personnel can assist you with. If you are unable to view the controlled documents, you will need to contact sam.gov for questions. After you have a role assigned in sam.gov, request to view the documents and ensure you put your company’s cage code in the request. If you do not provide the cage code, this will delay your request for access. Access will be granted to the controlled documents if an active DD2345 is on file for your company via the JCP website, https://www.dla.mil/Logistics-Operations/Services/JCP/. If a DD2345 is not found or is inactive, this will need to be updated and active before access will be granted to view controlled documents. ----------------------------------------------- This Sources Sought Synopsis (SSS) is in support of Market Research being conducted by the United States Air Force (USAF) to identify potential sources to perform KC-135R/T Depot Level Maintenance, Unscheduled Depot Level Maintenance, Modifications and Organizational Level/Intermediate Level Maintenance to supplement Organic Depot activities. This is not a Request for Proposal (RFP) or solicitation. Please see attachment for details.",
+  "detail_text_length": 1406,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e91e2e28ae91499d823adc6582b0b10c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e91e2e28ae91499d823adc6582b0b10c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d8ffa5641dc12c7a209ea8f5d6e597047a1d500a1f687c4eeda1e567caf49088.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d8ffa5641dc12c7a209ea8f5d6e597047a1d500a1f687c4eeda1e567caf49088.pdf",
+      "file_id": "e91e2e28ae91499d823adc6582b0b10c",
+      "file_name": "UDLM+Sources+Sought+26+March+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 136100,
+      "sha256": "d8ffa5641dc12c7a209ea8f5d6e597047a1d500a1f687c4eeda1e567caf49088"
+    }
+  ],
+  "_mirror_hash": "a0167ca534b0042a889016a2504434396a70797ae972ced3647c3ed00d0c17d7",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.979830+00:00"
+}

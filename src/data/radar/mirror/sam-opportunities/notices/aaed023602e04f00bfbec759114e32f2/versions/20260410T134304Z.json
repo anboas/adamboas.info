@@ -1,0 +1,46 @@
+{
+  "id": "sam-aaed023602e04f00bfbec759114e32f2",
+  "title": "Dover AFB - Grief Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aaed023602e04f00bfbec759114e32f2",
+  "opportunity_url": "https://sam.gov/opp/aaed023602e04f00bfbec759114e32f2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aaed023602e04f00bfbec759114e32f2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aaed023602e04f00bfbec759114e32f2",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA449726Q0023",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4497  436 CONS LGC",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aaed023602e04f00bfbec759114e32f2",
+  "detail_text": "The Air Force Mortuary Affairs Operations (AFMAO) intends to award a sole source, firm-fixed-price contract to acquire a two-day professional workshop on advanced grief and loss care. This training is required for AFMAO personnel. Based on market research conducted, the Government has determined that only one responsible source is available to meet this requirement. The training must be based on the \"Companioning\" model of grief care, which is a proprietary and copyrighted methodology. It has been determined that only one source is authorized and certified to provide instruction on this specific model of care, making them uniquely qualified to fulfill the Government's requirement.",
+  "detail_text_length": 689,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2d35f95050144b7b1a40f29516864a7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2d35f95050144b7b1a40f29516864a7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7e1fa6a09b1f712176a33a79c3dd95d0e0fddd6a3fa5ccb700c578bb2b89d713.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7e1fa6a09b1f712176a33a79c3dd95d0e0fddd6a3fa5ccb700c578bb2b89d713.docx",
+      "file_id": "a2d35f95050144b7b1a40f29516864a7",
+      "file_name": "PWS-AFMAO+Grief+Training.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27516,
+      "sha256": "7e1fa6a09b1f712176a33a79c3dd95d0e0fddd6a3fa5ccb700c578bb2b89d713"
+    }
+  ],
+  "_mirror_hash": "95742ac47d42fc8e51dcb0a3251ee5ef7b99e47e618614b74b19536263c062f3",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.933644+00:00"
+}

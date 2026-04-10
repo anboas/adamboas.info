@@ -1,0 +1,46 @@
+{
+  "id": "sam-388f6ed75752434a831174a711d8f2a7",
+  "title": "GMTK Metric Tool Kits",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=388f6ed75752434a831174a711d8f2a7",
+  "opportunity_url": "https://sam.gov/opp/388f6ed75752434a831174a711d8f2a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/388f6ed75752434a831174a711d8f2a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "388f6ed75752434a831174a711d8f2a7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PAN26P3390",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO FL.USPFO FL PROCUREMENT.W7M2 USPFO ACTIVITY FL ARNG",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=388f6ed75752434a831174a711d8f2a7",
+  "detail_text": "This office has a requirement for six (6) metric General Mechanic Tool Kits (GMTK) to support the Army's fleet of UH72 Lakota helicopters. The 6 Metric Tool Kits requested will have a sufficient amount of tools to allow mechanics to operate on multiple aircraft at the same time and in multiple locations. These kits also contain tools that will allow the mechanics to complete phase level maintenance for future operations, especially when there is high OPTEMPO during border missions. The attached component list for a GMTK is imperial measurements. The requested purchase is for the METRIC version of these tool kits. Responses to this notice should include a capabilities statement to fulfill the requirement.",
+  "detail_text_length": 713,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dff59340a8341e9bc74aa562a1e30a1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6dff59340a8341e9bc74aa562a1e30a1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b129f8f9019b8f4e0b44c54fe71f20b58f7bcc55d04e4c92fbfb293f4bee766f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b129f8f9019b8f4e0b44c54fe71f20b58f7bcc55d04e4c92fbfb293f4bee766f.pdf",
+      "file_id": "6dff59340a8341e9bc74aa562a1e30a1",
+      "file_name": "GMTK-Imperial_Component+Listing.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1541366,
+      "sha256": "b129f8f9019b8f4e0b44c54fe71f20b58f7bcc55d04e4c92fbfb293f4bee766f"
+    }
+  ],
+  "_mirror_hash": "799bd752e494e6a6bbdd193a7f58ccfe978bc73f0849add50fd53d7714a8cfe9",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.889759+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-33ff3b35824b4a8081f70770640f851a",
+  "title": "NSWCCD Recast Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33ff3b35824b4a8081f70770640f851a",
+  "opportunity_url": "https://sam.gov/opp/33ff3b35824b4a8081f70770640f851a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/33ff3b35824b4a8081f70770640f851a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "33ff3b35824b4a8081f70770640f851a",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0016726Q1071",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33ff3b35824b4a8081f70770640f851a",
+  "detail_text": "This is a combined synopsis/solicitation for commercial items prepared in accordance with Federal Acquisition Regulation (FAR) Subpart 12.6 and Subpart 13 as supplemented with additional information included in this notice. Naval Surface Warfare Center Carderock Division (NSWCCD) intends to award a firm fixed price (FFP) purchase order using Simplified Acquisition Procedures for Recast Software that meets the specifications outlined below. This solicitation is set aside for small business. This announcement constitutes the only solicitation and a written solicitation will not be issued. Quotes are being requested under Request for Quotation (RFQ) no. N0016726Q1071 . The NAICS code is 513210 and the business size standard is $47 millions of dollars employees. The provisions and clauses included and/or incorporated in this solicitation document are those in effect through the Federal Acquisition Circular. This RFQ incorporates all provisions and clauses in effect through Federal Acquisition Circular FAC 2026-01 and the Defense Federal Acquisition Regulation Supplement (DFARS) DPN 20251110. SEE ATTACHED SOLICITATION FOR CLAUSES AND PROVISIONS. The Government will award a contract resulting from this solicitation to the responsible quoter whose quote, conforming to the solicitation that will be most advantageous to the Government, price and other factors considered. The Government intends to evaluate all timely quotes received from eligible quoters on a lowest price technically acceptable (LPTA) basis. The Government intends to evaluate quotations and award a contract without discussions with quoters. Evaluation Factors (See 52.212-2- Evaluation—Commercial Products and Commercial Services on Page 29) Questions/clarification regarding this solicitation must be submitted via email to michael.s.brodie7.civ@us.navy.mil by Tuesday, April 14 2026 12:00 pm EST . All questions will be answered in an amendment to the solicitation. Quote packages are due by Thursday, April 16 2026 12:00 P M EST. Late quotes will not be considered. Quote packages shall be sent to michael.s.brodie7.civ@us.navy.mil and contain the following information by separate cover sheet or within the body of the email response: Official Company Name; Point of contact including name and phone number; and Cage Code number; and SAM UEI number. The Point of Contact for this acquisition is Mike Brodie, at michael.s.brodie7.civ@us.navy.mil.",
+  "detail_text_length": 2433,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89ef97bb9ce0441c99ccc76cba140acc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7222345b9494db8b158c1180f0cc343/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89ef97bb9ce0441c99ccc76cba140acc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/44ce381dc7cf38ba23db2859be49a7929f2ed54437bd5889260e8d9b71bf6696.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/44ce381dc7cf38ba23db2859be49a7929f2ed54437bd5889260e8d9b71bf6696.pdf",
+      "file_id": "89ef97bb9ce0441c99ccc76cba140acc",
+      "file_name": "PR+1301348510+Brand+Name+Justification_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 194740,
+      "sha256": "44ce381dc7cf38ba23db2859be49a7929f2ed54437bd5889260e8d9b71bf6696"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7222345b9494db8b158c1180f0cc343/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/69b8e30525b411a0a7d34972eab5b9ff712bdf9a40ae5cbec61b02c545d88799.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/69b8e30525b411a0a7d34972eab5b9ff712bdf9a40ae5cbec61b02c545d88799.pdf",
+      "file_id": "e7222345b9494db8b158c1180f0cc343",
+      "file_name": "Solicitation+-+N0016726Q1071.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1927358,
+      "sha256": "69b8e30525b411a0a7d34972eab5b9ff712bdf9a40ae5cbec61b02c545d88799"
+    }
+  ],
+  "_mirror_hash": "44510506609fe8e3fd671a4e537e7d9ffd7e99b8b1032208522904195fd62b26",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.656930+00:00"
+}

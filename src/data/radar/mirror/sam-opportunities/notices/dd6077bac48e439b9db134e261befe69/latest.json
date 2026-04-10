@@ -1,0 +1,57 @@
+{
+  "id": "sam-dd6077bac48e439b9db134e261befe69",
+  "title": "Hangar Door Assessment at Travis AFB",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd6077bac48e439b9db134e261befe69",
+  "opportunity_url": "https://sam.gov/opp/dd6077bac48e439b9db134e261befe69/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dd6077bac48e439b9db134e261befe69/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dd6077bac48e439b9db134e261befe69",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA442726QZ032",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4427  60 CONS LGC",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd6077bac48e439b9db134e261befe69",
+  "detail_text": "The contractor shall provide all labor, equipment, tools, material, supervision, and any other items necessary to properly assess the current condition of the hangar doors at H808, H809, and H810. After assessment the contractor shall provide a list of all discrepancies found. (see Statement of Work attached for additional information).",
+  "detail_text_length": 338,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b085bfa65e64ff9acf9d4f86681f3f4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f3ba99aec824f2d8f4a15e0a19c21ab/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b085bfa65e64ff9acf9d4f86681f3f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cddf54610df7f68d04cdf21c9e5d784336558654be2ac292b374577399da91e0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cddf54610df7f68d04cdf21c9e5d784336558654be2ac292b374577399da91e0.pdf",
+      "file_id": "7b085bfa65e64ff9acf9d4f86681f3f4",
+      "file_name": "SOW+Hangar+Door+H808+H809+H810+Assessments.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 200389,
+      "sha256": "cddf54610df7f68d04cdf21c9e5d784336558654be2ac292b374577399da91e0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f3ba99aec824f2d8f4a15e0a19c21ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7b3e1070c9051345b149d6a0f537eaa5e9eb17f7d6c3c4deebac07c317febe1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7b3e1070c9051345b149d6a0f537eaa5e9eb17f7d6c3c4deebac07c317febe1.pdf",
+      "file_id": "9f3ba99aec824f2d8f4a15e0a19c21ab",
+      "file_name": "Sources+Sought+H808+H809+H10+Hangar+Door+Assessment.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125154,
+      "sha256": "f7b3e1070c9051345b149d6a0f537eaa5e9eb17f7d6c3c4deebac07c317febe1"
+    }
+  ],
+  "_mirror_hash": "88efd8758596e5c9619a7015005551d1121ac81a3dee2ffc1d1f35081116d1f0",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.911790+00:00"
+}

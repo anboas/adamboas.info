@@ -1,0 +1,46 @@
+{
+  "id": "sam-7c05b08daa7942248044390ce9fdf0b6",
+  "title": "6515--Custom Surgical Packs",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c05b08daa7942248044390ce9fdf0b6",
+  "opportunity_url": "https://sam.gov/opp/7c05b08daa7942248044390ce9fdf0b6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7c05b08daa7942248044390ce9fdf0b6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7c05b08daa7942248044390ce9fdf0b6",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C24626Q03640006",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.246-NETWORK CONTRACTING OFFICE 6 (36C246)",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c05b08daa7942248044390ce9fdf0b6",
+  "detail_text": "EXTEND DELIVERY DATE",
+  "detail_text_length": 20,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/febc39f7a59c45c8ac685f2a67916294/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/febc39f7a59c45c8ac685f2a67916294/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93ee5d8d4ba6ccbe8894c0432c45d3814b9312983d28bb30466c50f633140814.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93ee5d8d4ba6ccbe8894c0432c45d3814b9312983d28bb30466c50f633140814.pdf",
+      "file_id": "febc39f7a59c45c8ac685f2a67916294",
+      "file_name": "Amendment+-+36C24626Q0364+0006.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 623325,
+      "sha256": "93ee5d8d4ba6ccbe8894c0432c45d3814b9312983d28bb30466c50f633140814"
+    }
+  ],
+  "_mirror_hash": "228e3d93d15594d0f4aab93ac85ac44bee39f4938d42c7906cb51a3c082ac584",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.879740+00:00"
+}

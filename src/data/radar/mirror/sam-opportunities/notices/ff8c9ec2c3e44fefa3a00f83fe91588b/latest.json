@@ -1,0 +1,57 @@
+{
+  "id": "sam-ff8c9ec2c3e44fefa3a00f83fe91588b",
+  "title": "Portable Blood Analyzers",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff8c9ec2c3e44fefa3a00f83fe91588b",
+  "opportunity_url": "https://sam.gov/opp/ff8c9ec2c3e44fefa3a00f83fe91588b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ff8c9ec2c3e44fefa3a00f83fe91588b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ff8c9ec2c3e44fefa3a00f83fe91588b",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26929567Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff8c9ec2c3e44fefa3a00f83fe91588b",
+  "detail_text": "Please see the attached documents for details.",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa2e8db4a9d847d0b871101b389e87a7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e12424498fb24037bcca04583a18d05a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa2e8db4a9d847d0b871101b389e87a7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd5ea96af7c60b2e110c0a23dcbb9024a4aa1527d3a3844d484e57243fb44ff8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd5ea96af7c60b2e110c0a23dcbb9024a4aa1527d3a3844d484e57243fb44ff8.pdf",
+      "file_id": "aa2e8db4a9d847d0b871101b389e87a7",
+      "file_name": "SATPC0040815+Tab+04+4+SOW+Updated_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 192350,
+      "sha256": "cd5ea96af7c60b2e110c0a23dcbb9024a4aa1527d3a3844d484e57243fb44ff8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e12424498fb24037bcca04583a18d05a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18b9cc774fa819a88414b0c0a3b85d6bdf1091ec4a9da84092c3953c1e7b0600.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18b9cc774fa819a88414b0c0a3b85d6bdf1091ec4a9da84092c3953c1e7b0600.pdf",
+      "file_id": "e12424498fb24037bcca04583a18d05a",
+      "file_name": "SATPC0040815+Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 197732,
+      "sha256": "18b9cc774fa819a88414b0c0a3b85d6bdf1091ec4a9da84092c3953c1e7b0600"
+    }
+  ],
+  "_mirror_hash": "d7f3b9482bfd1b20523476a8867188438b8b7bf02b5ae1b96db7a672de7136b2",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.847857+00:00"
+}

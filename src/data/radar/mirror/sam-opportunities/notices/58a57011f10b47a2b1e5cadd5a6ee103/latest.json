@@ -1,0 +1,70 @@
+{
+  "id": "sam-58a57011f10b47a2b1e5cadd5a6ee103",
+  "title": "Request for Information-Gulf Barge Re-compete",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=58a57011f10b47a2b1e5cadd5a6ee103",
+  "opportunity_url": "https://sam.gov/opp/58a57011f10b47a2b1e5cadd5a6ee103/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/58a57011f10b47a2b1e5cadd5a6ee103/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "58a57011f10b47a2b1e5cadd5a6ee103",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "TRANSCOM26W001",
+  "agency_path": "DEPT OF DEFENSE.US TRANSPORTATION COMMAND (USTRANSCOM).USTRANSCOM-AQ",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=58a57011f10b47a2b1e5cadd5a6ee103",
+  "detail_text": "USTRANSCOM is seeking sources that possess the availability and capability to provide scheduled fuel barge transportation services in the Gulf region, information about what solutions currently exist in the market, and is interested in learning about what information industry may need to scope a logical roadmap to succeed. This announcement constitutes an RFI for informational and planning purposes only. THIS IS NOT A REQUEST FOR PROPOSAL (RFP), nor is it to be construed as a commitment by the Government. No contract will be awarded as a result. Industry’s response to the RFI⁠—or lack thereof—will have no impact on the evaluation of responses to any subsequent RFP or Request for Quote (RFQ) released. The information requested will be used within USTRANSCOM as market research to facilitate decision making (e.g., determining acquisition strategy, small business concerns) and will not be disclosed outside the Government.",
+  "detail_text_length": 931,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c8aade8212d4f7ebb16d0f70efa9bbb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d68c5e4eee74c36a8b87d8f1b245586/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d3b0013723d4afea9c5831a938dc3cc/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c8aade8212d4f7ebb16d0f70efa9bbb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3420596fcd194bae3b2b5e9cbeda4f21460cac149e01d9788a130201c122d3d3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3420596fcd194bae3b2b5e9cbeda4f21460cac149e01d9788a130201c122d3d3.pdf",
+      "file_id": "1c8aade8212d4f7ebb16d0f70efa9bbb",
+      "file_name": "01_GB+Recompete_Exhibit+1-PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 438598,
+      "sha256": "3420596fcd194bae3b2b5e9cbeda4f21460cac149e01d9788a130201c122d3d3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d68c5e4eee74c36a8b87d8f1b245586/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/09fe351533b509eaaa9c976b166648724cb457a4d7bd07413bb303554fcbcbf5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/09fe351533b509eaaa9c976b166648724cb457a4d7bd07413bb303554fcbcbf5.pdf",
+      "file_id": "2d68c5e4eee74c36a8b87d8f1b245586",
+      "file_name": "2026.04.09+Request+for+Information+-RFI-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144875,
+      "sha256": "09fe351533b509eaaa9c976b166648724cb457a4d7bd07413bb303554fcbcbf5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9d3b0013723d4afea9c5831a938dc3cc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6df103e81664db2114fb0a0a289b46167b5bcaa39e324543006c3e9a5f7bf96a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6df103e81664db2114fb0a0a289b46167b5bcaa39e324543006c3e9a5f7bf96a.pdf",
+      "file_id": "9d3b0013723d4afea9c5831a938dc3cc",
+      "file_name": "2026.04.09_GB-Re-compete_+RFI+Worksheet.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 295745,
+      "sha256": "6df103e81664db2114fb0a0a289b46167b5bcaa39e324543006c3e9a5f7bf96a"
+    }
+  ],
+  "_mirror_hash": "d7643feb6ce81883f768712aa0228a6a24ddb33492316e1665d91fda3f4751c6",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.764968+00:00"
+}

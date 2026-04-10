@@ -1,0 +1,57 @@
+{
+  "id": "sam-e6cd9b95b7ec4caa80df5fd2d2a97914",
+  "title": "Non-Tactical Vehicles",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e6cd9b95b7ec4caa80df5fd2d2a97914",
+  "opportunity_url": "https://sam.gov/opp/e6cd9b95b7ec4caa80df5fd2d2a97914/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e6cd9b95b7ec4caa80df5fd2d2a97914/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e6cd9b95b7ec4caa80df5fd2d2a97914",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M67400-26-RFI-0006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MCIPAC.COMMANDING OFFICER",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e6cd9b95b7ec4caa80df5fd2d2a97914",
+  "detail_text": "Amendment M67400-26-RFI-0006-0001 (4/10/2026) Addtional vehicels have been added as item 17 for Iwakuni. Please refer to the updated list in the attachment. ********************************************************************** Sources Sought Notification (SSN) Non-Tactical Vehicles 1. OVERVIEW The Marine Corps Installations Pacific – Regional Contracting Office (MCIPAC–RCO) is seeking written responses with information to assist the Government with identifying potential sources that are interested in and capable of providing non-tactical vehicles described in section 2. below. The Government is particularly interested in identifying potential sources that can provide all non-tactical vehicles, if possible, for the delivery locations listed in section 2. 2. DESCRIPTION All vehicles shall be the newest model and year at the time of delivery and ready for use. Vehicle/Equipment and furnished accessories shall comply with Japanese Motor Vehicle Safety Standards, including, but not limited to, exhaust emission control requirement, in effect on the date of manufacture. List of vehicles: See attached for detail 3. Responses Interested vendors may submit a written Capabilities Statement with enough information to determine the company's ability to fulfill the government requirement described in section 2. above. The following information should be included: Availability of Requested items or equal items o Product description or copy of Catalog o Manufacture, Model, Type o Approximate Lead time for each item Company Information o Name o Cage code and Unique Entity ID (UEI), o NAICS codes registered in the System for Award Management (SAM). o Phone number o Email address o Point of contact If interested, please respond to this notice with a capability statement no later than 17Apr2026, 15:00 (Japan Standard Time). Government POC: Ms. Minako Kinjo Email to minako.kinjo.ln@usmc.mil 4. Disclaimer Sources Sought Notification (SSN) Only. This SSN is issued solely for information and planning purposes – it does not constitute as a Request for Quote (RFQ) or a promise to issue an RFQ in the future. This request for information does not commit the Government to contract for any supply or service whatsoever. Further, the Government is not at this time seeking proposals and will not accept unsolicited proposals. The SSN respondees are advised that the Government will not pay for any information or administrative costs incurred in response to this SSN; all costs associated with responding to this SSN will be solely at the interested party’s expense. Not responding to this SSN does not preclude participation in any future RFQ, if any is issued. If a solicitation is released, it will be synopsized on System for Award Management https://sam.gov. It is the responsibility of the potential offerors to monitor these sites for additional information pertaining to this requirement.",
+  "detail_text_length": 2905,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09902e466a514f34a98529cfde681f72/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2dc825e4b6c4c2caee061eecbc2ae5a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09902e466a514f34a98529cfde681f72/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/449fca20da96a8387244a208c0a7c45a15aae8a0953fcc6b3a4eca6d4c4515ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/449fca20da96a8387244a208c0a7c45a15aae8a0953fcc6b3a4eca6d4c4515ca.pdf",
+      "file_id": "09902e466a514f34a98529cfde681f72",
+      "file_name": "M67400-26-RFI-0006-0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169721,
+      "sha256": "449fca20da96a8387244a208c0a7c45a15aae8a0953fcc6b3a4eca6d4c4515ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2dc825e4b6c4c2caee061eecbc2ae5a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3a8743ed75a5a4dd4fa5f8af734b2328fba8c760ede7e6d76558606aaa4141d3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3a8743ed75a5a4dd4fa5f8af734b2328fba8c760ede7e6d76558606aaa4141d3.pdf",
+      "file_id": "a2dc825e4b6c4c2caee061eecbc2ae5a",
+      "file_name": "Sources+Sought+Notification+M67400-26-RFI-0006.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169756,
+      "sha256": "3a8743ed75a5a4dd4fa5f8af734b2328fba8c760ede7e6d76558606aaa4141d3"
+    }
+  ],
+  "_mirror_hash": "dd36ab56e31b8585cbe151af1a00d8724dad0565ad059a17b2f81184eb1d9712",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.913956+00:00"
+}

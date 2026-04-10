@@ -1,0 +1,48 @@
+{
+  "id": "sam-3bdf0817358543d3aec5cade9e08c137",
+  "title": "Splunk or Alternatives - Request For Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3bdf0817358543d3aec5cade9e08c137",
+  "opportunity_url": "https://sam.gov/opp/3bdf0817358543d3aec5cade9e08c137/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3bdf0817358543d3aec5cade9e08c137/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3bdf0817358543d3aec5cade9e08c137",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8307Splunk26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA8307  AFLCMC HNCK C3IN",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3bdf0817358543d3aec5cade9e08c137",
+  "detail_text": "***THIS IS A RFI / SOURCES SOUGHT, NOT AN RFQ*** The Government requests that any vendor interested in proposing on either Splunk licenses or proposing an alternative solution, please provide an answer to all questions included on the attachment in section 4.0. Further directions for submission are included on the attached document under section 5.",
+  "detail_text_length": 350,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/883a4544481841d39159318166ba33ab/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/883a4544481841d39159318166ba33ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a4abba1d0c0cc133e06b480cb93426c12c35ae01bb869f1edfcccc8c9e3c4c76.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a4abba1d0c0cc133e06b480cb93426c12c35ae01bb869f1edfcccc8c9e3c4c76.pdf",
+      "file_id": "883a4544481841d39159318166ba33ab",
+      "file_name": "SPLUNK+SAM.gov+RFI+DOC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 204036,
+      "sha256": "a4abba1d0c0cc133e06b480cb93426c12c35ae01bb869f1edfcccc8c9e3c4c76"
+    }
+  ],
+  "_mirror_hash": "ad43a002d5a4f77cd1c53f9387c8b9f3c3417e43ab657677dc7fde48ce2fe207",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.762965+00:00"
+}

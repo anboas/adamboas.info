@@ -1,0 +1,81 @@
+{
+  "id": "sam-87d5c037aa004f7ba7edb5633b8b1f29",
+  "title": "RFI-SN-26-44",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=87d5c037aa004f7ba7edb5633b8b1f29",
+  "opportunity_url": "https://sam.gov/opp/87d5c037aa004f7ba7edb5633b8b1f29/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/87d5c037aa004f7ba7edb5633b8b1f29/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "87d5c037aa004f7ba7edb5633b8b1f29",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-44",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=87d5c037aa004f7ba7edb5633b8b1f29",
+  "detail_text": "This Request for Information (RFI) from the Defense Advanced Research Projects Agency (DARPA)’s Tactical Technology Office (TTO) seeks to gain understanding of the U.S. industry and supplier base that could support rapid manufacturing of less expensive counter-air capabilities at greater scale.",
+  "detail_text_length": 295,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44a7e363079842efaf3f45017a6c1c8e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/651d4ea2eed24fc9aac8b9a86ab08555/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4431cc30c0b4648b986ac5c88b0137d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d84fa3e6da6e495e96f387865875759b/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44a7e363079842efaf3f45017a6c1c8e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0f9a0aa4ee382671336a15562a5ce987ce21d374051953908e60d864c2452c1a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0f9a0aa4ee382671336a15562a5ce987ce21d374051953908e60d864c2452c1a.pdf",
+      "file_id": "44a7e363079842efaf3f45017a6c1c8e",
+      "file_name": "DARPA-SN-26-44-Amendment-01.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145560,
+      "sha256": "0f9a0aa4ee382671336a15562a5ce987ce21d374051953908e60d864c2452c1a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/651d4ea2eed24fc9aac8b9a86ab08555/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b4abce318f16442d8ca929ba2cb4f16e28acfb3340ade6abac653da27c5ca2ab.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b4abce318f16442d8ca929ba2cb4f16e28acfb3340ade6abac653da27c5ca2ab.docx",
+      "file_id": "651d4ea2eed24fc9aac8b9a86ab08555",
+      "file_name": "RFI_SN-26-44_Template-_Attachment_2__for_submissions__SI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 55065,
+      "sha256": "b4abce318f16442d8ca929ba2cb4f16e28acfb3340ade6abac653da27c5ca2ab"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4431cc30c0b4648b986ac5c88b0137d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/97e55ab889ee77c9b13df6386190de02590dee9e1c371785000092f77d67fb8f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/97e55ab889ee77c9b13df6386190de02590dee9e1c371785000092f77d67fb8f.docx",
+      "file_id": "d4431cc30c0b4648b986ac5c88b0137d",
+      "file_name": "RFI_SN-26-44_Attachment_1_-_Security__SI_.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 176380,
+      "sha256": "97e55ab889ee77c9b13df6386190de02590dee9e1c371785000092f77d67fb8f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d84fa3e6da6e495e96f387865875759b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/56087285c24de7ccba2e9b3e043803a82dddb3c607f2f6f5a3ddc71efdd006e0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/56087285c24de7ccba2e9b3e043803a82dddb3c607f2f6f5a3ddc71efdd006e0.pdf",
+      "file_id": "d84fa3e6da6e495e96f387865875759b",
+      "file_name": "DARPA-SN-26-44.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 116853,
+      "sha256": "56087285c24de7ccba2e9b3e043803a82dddb3c607f2f6f5a3ddc71efdd006e0"
+    }
+  ],
+  "_mirror_hash": "69fc9feba9cd77769f20936187206530efbf1401066f9e851225acd29cd33d0d",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.741612+00:00"
+}

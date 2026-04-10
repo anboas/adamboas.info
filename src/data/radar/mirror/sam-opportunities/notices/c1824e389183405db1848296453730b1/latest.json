@@ -1,0 +1,45 @@
+{
+  "id": "sam-c1824e389183405db1848296453730b1",
+  "title": "METALLIC TUBE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1824e389183405db1848296453730b1",
+  "opportunity_url": "https://sam.gov/opp/c1824e389183405db1848296453730b1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c1824e389183405db1848296453730b1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c1824e389183405db1848296453730b1",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS165",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-09",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1824e389183405db1848296453730b1",
+  "detail_text": "PLEASE SEE ATTACHED SOLICITATION N0040626QS165.",
+  "detail_text_length": 47,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b65d656fce6f436eb6f3871361c15e12/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b65d656fce6f436eb6f3871361c15e12/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/926785cb6e9fe4725a01f205f0f2121f5e92079a13e115961a57b0a3387f5b56.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/926785cb6e9fe4725a01f205f0f2121f5e92079a13e115961a57b0a3387f5b56.pdf",
+      "file_id": "b65d656fce6f436eb6f3871361c15e12",
+      "file_name": "4.0+26QS165+SOL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1838168,
+      "sha256": "926785cb6e9fe4725a01f205f0f2121f5e92079a13e115961a57b0a3387f5b56"
+    }
+  ],
+  "_mirror_hash": "8939834ef5cc18c70b1bb791d04f3edbe9c5e36910aeb95cf8db1f81bcdadd51",
+  "_mirror_run_id": "20260410T134304Z",
+  "_mirror_recorded_at": "2026-04-10T13:47:52.721736+00:00"
+}
