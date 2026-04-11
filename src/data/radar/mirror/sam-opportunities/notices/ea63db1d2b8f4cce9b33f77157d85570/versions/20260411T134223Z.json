@@ -1,0 +1,46 @@
+{
+  "id": "sam-ea63db1d2b8f4cce9b33f77157d85570",
+  "title": "Dorm Broadband Internet",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea63db1d2b8f4cce9b33f77157d85570",
+  "opportunity_url": "https://sam.gov/opp/ea63db1d2b8f4cce9b33f77157d85570/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ea63db1d2b8f4cce9b33f77157d85570/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ea63db1d2b8f4cce9b33f77157d85570",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "A061249",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4830  23 CONS CC",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea63db1d2b8f4cce9b33f77157d85570",
+  "detail_text": "Please See Attached Document.",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bff609d4fd5f43c5b6022d43150b8f6d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bff609d4fd5f43c5b6022d43150b8f6d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/02df70ab8ae52277da948732d63c5d3cd0da05f857cabfc4dd5d10722b69d7ec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/02df70ab8ae52277da948732d63c5d3cd0da05f857cabfc4dd5d10722b69d7ec.pdf",
+      "file_id": "bff609d4fd5f43c5b6022d43150b8f6d",
+      "file_name": "RFI+-+Broadband+Internet+and+Wi-Fi+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99408,
+      "sha256": "02df70ab8ae52277da948732d63c5d3cd0da05f857cabfc4dd5d10722b69d7ec"
+    }
+  ],
+  "_mirror_hash": "25809c08cba1fb9476753ee4e51d1940380fcdf915216106b8ec8387021e585b",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.469136+00:00"
+}

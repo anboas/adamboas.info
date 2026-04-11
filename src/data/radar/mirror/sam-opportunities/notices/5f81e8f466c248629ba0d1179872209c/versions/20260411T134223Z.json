@@ -1,0 +1,46 @@
+{
+  "id": "sam-5f81e8f466c248629ba0d1179872209c",
+  "title": "Sole Source Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f81e8f466c248629ba0d1179872209c",
+  "opportunity_url": "https://sam.gov/opp/5f81e8f466c248629ba0d1179872209c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5f81e8f466c248629ba0d1179872209c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5f81e8f466c248629ba0d1179872209c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "70Z08526P39014B00",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 2(00085)",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5f81e8f466c248629ba0d1179872209c",
+  "detail_text": "The U.S. Coast Guard intends to award a sole source contract to MDF TECHNOLOGIES. This procurement is being conducted under the authority of FAR 13.106-1(b), which permits sole source awards when only one responsible source and no other supplies or services will satisfy agency requirements. MDF TECHNOLOGIES is the original equipment manufacturers (OEM) authorized partner and possesses proprietary knowledge, technical expertise, and specialized capabilities that are essential to meet the requirements of this procurement. No other vendor has been identified that can provide the required goods/services with the same level of compatibility, quality, and performance. Key Details: Vendor Name: MDF TECHNOLOGIES NAICS Code: 611420 This Notice of Intent is not a request for competitive proposals. However, any interested party that believes it can fulfill the requirements may submit a capability statement to the point of contact listed below. All submissions must be received by 04/15/2026. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination by the Government not to compete this proposed purchase order based upon response to this notice is solely within the discretion of the Government. No reimbursement for any cost connected with providing capability information will be provided. Telephone requests will not be honored.",
+  "detail_text_length": 1418,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/60faa8c598d747e29ebd169e52450c9c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/60faa8c598d747e29ebd169e52450c9c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9dc8b9e6991ac96cb7fd40b6c4f5feb468b52a79c258f15a5b719898fdab961b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9dc8b9e6991ac96cb7fd40b6c4f5feb468b52a79c258f15a5b719898fdab961b.pdf",
+      "file_id": "60faa8c598d747e29ebd169e52450c9c",
+      "file_name": "CONT..pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 63688,
+      "sha256": "9dc8b9e6991ac96cb7fd40b6c4f5feb468b52a79c258f15a5b719898fdab961b"
+    }
+  ],
+  "_mirror_hash": "f3afa657547c6ec9f9526bc28b7580ba4a43ffe47798b12aaa7c1f703b2cc810",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.397095+00:00"
+}

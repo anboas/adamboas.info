@@ -1,0 +1,47 @@
+{
+  "id": "sam-1af38da34594491ea53e7d90ebe4742b",
+  "title": "Sources Sought_Mount Aircraft Bar",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1af38da34594491ea53e7d90ebe4742b",
+  "opportunity_url": "https://sam.gov/opp/1af38da34594491ea53e7d90ebe4742b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1af38da34594491ea53e7d90ebe4742b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1af38da34594491ea53e7d90ebe4742b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912CH26R0081",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC- DTA",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1af38da34594491ea53e7d90ebe4742b",
+  "detail_text": "Army Contracting Command - Detroit Arsenal (ACC-DTA) is conducting a Market Survey to determine the level ofinterest among qualified Contractors for the production of the MOUNT, AIRCRAFT, BAR , NSN: 2840-01-583-7965. Suppliers capable of manufacturing this item must indicate so in response, by email, to Pamela Cunha, Pamela.cunha.civ@army.mil. The purpose of this marketsurvey is to identify potential offerors and gather information for planning purposes about capabilities of each industry source as defined in Federal Acquisition Regulation 15.201(e). The input will help ACC-DTA ascertain the interest, capability, and capacity of all potential offerors. The market survey does not constitute a solicitation and shall not be construed as commitment by the Government. No telephone responses will be accepted.",
+  "detail_text_length": 814,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6be84fa245f7437883ab777a460992d2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6be84fa245f7437883ab777a460992d2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eb500fe2ab4560a1119a33a87532bb342d24b5e178ef3619f19c26d7f86a1ee7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eb500fe2ab4560a1119a33a87532bb342d24b5e178ef3619f19c26d7f86a1ee7.docx",
+      "file_id": "6be84fa245f7437883ab777a460992d2",
+      "file_name": "Sources+Sought+Notice+-+W912CH-26-R-0081.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40038,
+      "sha256": "eb500fe2ab4560a1119a33a87532bb342d24b5e178ef3619f19c26d7f86a1ee7"
+    }
+  ],
+  "_mirror_hash": "79360b021b2a324ebd78b2cd536a6680668144c6c0eb236d6a056bbfaed46782",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.327140+00:00"
+}

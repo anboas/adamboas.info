@@ -1,0 +1,57 @@
+{
+  "id": "sam-9951c4d0e8cd40e68b38cbafafcf0ce3",
+  "title": "DIGITAL ASSET MANAGEMENT SYSTEM",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9951c4d0e8cd40e68b38cbafafcf0ce3",
+  "opportunity_url": "https://sam.gov/opp/9951c4d0e8cd40e68b38cbafafcf0ce3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9951c4d0e8cd40e68b38cbafafcf0ce3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9951c4d0e8cd40e68b38cbafafcf0ce3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "88310325RFI0006",
+  "agency_path": "NATIONAL ARCHIVES AND RECORDS ADMINISTRATION.NATIONAL ARCHIVES AND RECORDS ADMINISTRATION.NARA CONTRACTING OFFICE",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9951c4d0e8cd40e68b38cbafafcf0ce3",
+  "detail_text": "The purpose of this Request for Information / Source Sought Notice is to obtain technical information about approaches and commercially available software products that can be used to manage several categories of audio-visual assets used for multiple purposes in support of the mission of the National Archives and Records Administration.",
+  "detail_text_length": 338,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d7d4029e9224736a1859d0e8966bf6f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/246867b0ee4d4664965f7ec402a8f797/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d7d4029e9224736a1859d0e8966bf6f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f13a3e21f5d936b5013bc08988e1f570861d01bf0fa802feda7bcd1edb997207.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f13a3e21f5d936b5013bc08988e1f570861d01bf0fa802feda7bcd1edb997207.pdf",
+      "file_id": "1d7d4029e9224736a1859d0e8966bf6f",
+      "file_name": "RFI_+NARA+Digital+Asset+Management+System.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142162,
+      "sha256": "f13a3e21f5d936b5013bc08988e1f570861d01bf0fa802feda7bcd1edb997207"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/246867b0ee4d4664965f7ec402a8f797/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39e628e133ad4376ddbcb67ffdfb3f530bf15a45236f29463b9ef3cea0eb5b5c.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39e628e133ad4376ddbcb67ffdfb3f530bf15a45236f29463b9ef3cea0eb5b5c.xlsx",
+      "file_id": "246867b0ee4d4664965f7ec402a8f797",
+      "file_name": "Attachment+1_ADAMS_RVTM.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 220072,
+      "sha256": "39e628e133ad4376ddbcb67ffdfb3f530bf15a45236f29463b9ef3cea0eb5b5c"
+    }
+  ],
+  "_mirror_hash": "000082686cd8b2eb66f836793d944ac61f4af0d58c9b9038cfb03aa771ff03c9",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.515275+00:00"
+}

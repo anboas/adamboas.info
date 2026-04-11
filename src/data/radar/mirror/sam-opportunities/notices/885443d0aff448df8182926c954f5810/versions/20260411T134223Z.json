@@ -1,0 +1,57 @@
+{
+  "id": "sam-885443d0aff448df8182926c954f5810",
+  "title": "Strain Gage",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=885443d0aff448df8182926c954f5810",
+  "opportunity_url": "https://sam.gov/opp/885443d0aff448df8182926c954f5810/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/885443d0aff448df8182926c954f5810/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "885443d0aff448df8182926c954f5810",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA9101_StrainGage",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE TEST CENTER.FA9101  AEDC PKP   PROCRMNT BR",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=885443d0aff448df8182926c954f5810",
+  "detail_text": "This is a Sources Sought Notice to determine the availability and technical capability of small and large businesses to meet the Government’s requirement for commercial equipment IAW Attachment 1 – Technical Specification Sheet.",
+  "detail_text_length": 228,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/645cc8158e594a0caf0c53d811da0508/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7ed17a524e7a4887bc0a6f41fe28b4b9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/645cc8158e594a0caf0c53d811da0508/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cbe60ff764772db2daad1d45451cc1e6e7b129fe0b178aa91b4babe6799330ec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cbe60ff764772db2daad1d45451cc1e6e7b129fe0b178aa91b4babe6799330ec.pdf",
+      "file_id": "645cc8158e594a0caf0c53d811da0508",
+      "file_name": "Sources+Sought+Notice_Strain+Gage.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 119936,
+      "sha256": "cbe60ff764772db2daad1d45451cc1e6e7b129fe0b178aa91b4babe6799330ec"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7ed17a524e7a4887bc0a6f41fe28b4b9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3ffbc5b9ee82a0bc37f8c22de99394e3af927c98cb046597da7fbc01351832ed.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3ffbc5b9ee82a0bc37f8c22de99394e3af927c98cb046597da7fbc01351832ed.pdf",
+      "file_id": "7ed17a524e7a4887bc0a6f41fe28b4b9",
+      "file_name": "Technical+Specification+Sheet_Strain+Gage.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 558957,
+      "sha256": "3ffbc5b9ee82a0bc37f8c22de99394e3af927c98cb046597da7fbc01351832ed"
+    }
+  ],
+  "_mirror_hash": "6a2d38faef0b434bf46def1eee7c5e1512e07b94e613f8108e2e4dbd3d653c30",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.398186+00:00"
+}

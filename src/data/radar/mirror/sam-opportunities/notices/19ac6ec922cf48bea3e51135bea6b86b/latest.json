@@ -1,0 +1,45 @@
+{
+  "id": "sam-19ac6ec922cf48bea3e51135bea6b86b",
+  "title": "PLUG, 5935-LLF02N907, BACC63CT17-35PN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=19ac6ec922cf48bea3e51135bea6b86b",
+  "opportunity_url": "https://sam.gov/opp/19ac6ec922cf48bea3e51135bea6b86b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/19ac6ec922cf48bea3e51135bea6b86b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "19ac6ec922cf48bea3e51135bea6b86b",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QSA53",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=19ac6ec922cf48bea3e51135bea6b86b",
+  "detail_text": "This solicitation is for the procurement of PLUG, NSN: 5935 LLF02N907, PN: BACC63CT17-35PN, QTY 1 EA. See attached solicitation.",
+  "detail_text_length": 128,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af47476a1a0546f1baae12386f2e4be2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af47476a1a0546f1baae12386f2e4be2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bc58ce20335b228b222e89b376aec779b0b3fcf8bfcd4102bce83091bb79978b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bc58ce20335b228b222e89b376aec779b0b3fcf8bfcd4102bce83091bb79978b.pdf",
+      "file_id": "af47476a1a0546f1baae12386f2e4be2",
+      "file_name": "N00383-26-Q-SA53.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 604867,
+      "sha256": "bc58ce20335b228b222e89b376aec779b0b3fcf8bfcd4102bce83091bb79978b"
+    }
+  ],
+  "_mirror_hash": "6df44b242f6386f1ed1505e60dfb5232da57b9ab6bed3f76e83abb4e1474a74a",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.341223+00:00"
+}

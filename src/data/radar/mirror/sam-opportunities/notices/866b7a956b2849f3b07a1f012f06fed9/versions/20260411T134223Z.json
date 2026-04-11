@@ -1,0 +1,45 @@
+{
+  "id": "sam-866b7a956b2849f3b07a1f012f06fed9",
+  "title": "BUMPER, NSN: 1680-LLF02M636, PN: 811453-3",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=866b7a956b2849f3b07a1f012f06fed9",
+  "opportunity_url": "https://sam.gov/opp/866b7a956b2849f3b07a1f012f06fed9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/866b7a956b2849f3b07a1f012f06fed9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "866b7a956b2849f3b07a1f012f06fed9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QSA52",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=866b7a956b2849f3b07a1f012f06fed9",
+  "detail_text": "Spares procurement of BUMPER, NSN: 1680 LLF02M636, PN: 811453-3, QTY 2 EA. See attached solicitation.",
+  "detail_text_length": 101,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cd31f127fc1c49b5a2a126463fcaa9f9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cd31f127fc1c49b5a2a126463fcaa9f9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fd19b607d1f24e95b71e087c173bf7b73373ec01c9c80b95f44667669276b6cf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fd19b607d1f24e95b71e087c173bf7b73373ec01c9c80b95f44667669276b6cf.pdf",
+      "file_id": "cd31f127fc1c49b5a2a126463fcaa9f9",
+      "file_name": "N00383-26-Q-SA52.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 604917,
+      "sha256": "fd19b607d1f24e95b71e087c173bf7b73373ec01c9c80b95f44667669276b6cf"
+    }
+  ],
+  "_mirror_hash": "880de0c5743f6798968af991e25bb7e195036728f0186bcbc89c336a3f133adb",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.339566+00:00"
+}

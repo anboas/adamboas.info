@@ -1,0 +1,56 @@
+{
+  "id": "sam-c539a90eb6ec4707a11d28ea1cf7b486",
+  "title": "59 -- FUSEHOLDER,EXTRACTO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c539a90eb6ec4707a11d28ea1cf7b486",
+  "opportunity_url": "https://sam.gov/opp/c539a90eb6ec4707a11d28ea1cf7b486/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c539a90eb6ec4707a11d28ea1cf7b486/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c539a90eb6ec4707a11d28ea1cf7b486",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QBJ75",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c539a90eb6ec4707a11d28ea1cf7b486",
+  "detail_text": "PLEASE SEE SOLICITATION FOR DESCRIPTION OF SUPPLIES BEING PROCURED.",
+  "detail_text_length": 67,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43dbea7e4ca7411abc5ee832cec15fc3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6886182cb2f43cba6897d2c094ba958/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43dbea7e4ca7411abc5ee832cec15fc3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2350c2ea1f066d93a1d47f68e392e79bb023d0e229484d5d51a4bf44e147b8a9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2350c2ea1f066d93a1d47f68e392e79bb023d0e229484d5d51a4bf44e147b8a9.pdf",
+      "file_id": "43dbea7e4ca7411abc5ee832cec15fc3",
+      "file_name": "3.01_SOL_26QBJ75_25324-0070.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 817640,
+      "sha256": "2350c2ea1f066d93a1d47f68e392e79bb023d0e229484d5d51a4bf44e147b8a9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6886182cb2f43cba6897d2c094ba958/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5ce9bfaa835e4f9042b331672543207fffe65153b601111cea51e71db7266838.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5ce9bfaa835e4f9042b331672543207fffe65153b601111cea51e71db7266838.pdf",
+      "file_id": "a6886182cb2f43cba6897d2c094ba958",
+      "file_name": "3.02_AMENDMENT_0001_25324-0070.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 295758,
+      "sha256": "5ce9bfaa835e4f9042b331672543207fffe65153b601111cea51e71db7266838"
+    }
+  ],
+  "_mirror_hash": "360ec35b9b1a70860c8bed5cb2693ca847f1f93d5fd8489f96f11042d6ea1353",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.334155+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-94fbcb8bbc234a61bdefdd4e49dfbef9",
+  "title": "Wiring Harness, Bran (3C)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94fbcb8bbc234a61bdefdd4e49dfbef9",
+  "opportunity_url": "https://sam.gov/opp/94fbcb8bbc234a61bdefdd4e49dfbef9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/94fbcb8bbc234a61bdefdd4e49dfbef9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "94fbcb8bbc234a61bdefdd4e49dfbef9",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPRTA126Q1671",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94fbcb8bbc234a61bdefdd4e49dfbef9",
+  "detail_text": "See Attached Document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e797b2457ec54cff95c16706db0ad83a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e797b2457ec54cff95c16706db0ad83a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/411fde811d3455237016202d09ddee81ee891a4dfa63e7fdb871ba2472ab6ba4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/411fde811d3455237016202d09ddee81ee891a4dfa63e7fdb871ba2472ab6ba4.pdf",
+      "file_id": "e797b2457ec54cff95c16706db0ad83a",
+      "file_name": "2501671_No+Synopsis+Memo.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 149605,
+      "sha256": "411fde811d3455237016202d09ddee81ee891a4dfa63e7fdb871ba2472ab6ba4"
+    }
+  ],
+  "_mirror_hash": "9bf362d5398deeb84373f8ddef64cc7f8aeffbff2e50732ba0925ad8d205830a",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.359050+00:00"
+}

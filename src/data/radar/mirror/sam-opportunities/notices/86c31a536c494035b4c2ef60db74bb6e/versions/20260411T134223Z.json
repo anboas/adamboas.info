@@ -1,0 +1,56 @@
+{
+  "id": "sam-86c31a536c494035b4c2ef60db74bb6e",
+  "title": "9520 BEAM, STRUCTURAL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=86c31a536c494035b4c2ef60db74bb6e",
+  "opportunity_url": "https://sam.gov/opp/86c31a536c494035b4c2ef60db74bb6e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/86c31a536c494035b4c2ef60db74bb6e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "86c31a536c494035b4c2ef60db74bb6e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0025",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=86c31a536c494035b4c2ef60db74bb6e",
+  "detail_text": "EMAIL QUESTIONS TO: KYLE.X.SINGLETON.MIL@US.NAVY.MIL COMPETITIVE. Fleet Logistics Center Puget Sound will be soliciting for BEAM, STRUCTURAL in accordance with solicitation specifications. This acquisition will be negotiated on a SMALL BUSINESS SET A SIDE. Interested parties may identify their interest and capability to respond to the requirement or submit proposals prior to offer due date. A determination to compete this action based upon responses received to this notice is solely within the discretion of the Government. Terms will be FOB: ORIGIN BY FACT-SP (NOLSC): to U.S. NAVAL BASE YOKOSUKA JAPAN It is anticipated that the solicitation will be posted to the Sam.Gov website on or about 25 MARCH 2026 with proposals due by 16 APRIL 2026. A Firm-Fixed Price, Supply type contract will be awarded in accordance with FAR parts 12 and 13, Commercial and Simplified Acquisition Procedures. All responsible sources may submit a proposal which shall be considered by FLCPS. This solicitation and any subsequent amendments will be posted to the Sam.Gov website: https://www.sam.gov. Prospective offerors are responsible for downloading their own copy of the solicitation from this website and for frequently monitoring that site for any amendments. The Government is not responsible for any inability of the offeror to access the posted documents. No telephone or fax requests will be accepted, and no hard-copy solicitation/amendment will be mailed or faxed. Emailed completed solicitations are acceptable. PLEASE SEE ATTCHED SOLICITATION FOR REQUIREMENTS & SPECIFICATIONS, APPLICABLE CLAUSES & PROVISIONS, SHIPPING AND INVOICING INFORMATION.",
+  "detail_text_length": 1647,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f494ef6218d402ebe9a3bf40e782eb9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a126fcca2da439fa9a657135674fff5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f494ef6218d402ebe9a3bf40e782eb9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0a4378fcb93301d1279e471d3c23379e086994dc83363668beb77eee121bf845.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0a4378fcb93301d1279e471d3c23379e086994dc83363668beb77eee121bf845.pdf",
+      "file_id": "1f494ef6218d402ebe9a3bf40e782eb9",
+      "file_name": "N0040626Q0025+SOLICITATION.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 7425091,
+      "sha256": "0a4378fcb93301d1279e471d3c23379e086994dc83363668beb77eee121bf845"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a126fcca2da439fa9a657135674fff5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c5c01bd63ce8cf925e725f133a1aa5e62b3b164665e3bed233c135f176b8f0d0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c5c01bd63ce8cf925e725f133a1aa5e62b3b164665e3bed233c135f176b8f0d0.pdf",
+      "file_id": "4a126fcca2da439fa9a657135674fff5",
+      "file_name": "N0040626Q00250001+SOLICITATION.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1859405,
+      "sha256": "c5c01bd63ce8cf925e725f133a1aa5e62b3b164665e3bed233c135f176b8f0d0"
+    }
+  ],
+  "_mirror_hash": "9e7c9892322ed5e52a5ea3ffa9a3b03a344863a656a5351e8efe9b82b67e7106",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.298096+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-21aa1e69aef64e91a6a19e31c2966490",
+  "title": "PIPE FITTING",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=21aa1e69aef64e91a6a19e31c2966490",
+  "opportunity_url": "https://sam.gov/opp/21aa1e69aef64e91a6a19e31c2966490/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/21aa1e69aef64e91a6a19e31c2966490/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "21aa1e69aef64e91a6a19e31c2966490",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS210",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=21aa1e69aef64e91a6a19e31c2966490",
+  "detail_text": "Please see the attached soliciation N0040626QS210. Note: This requirement is FOB Destination to Japan.",
+  "detail_text_length": 102,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f23f99a62fb94f5286abe89eb38b9c56/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f23f99a62fb94f5286abe89eb38b9c56/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af3d6399af403d1ab13489a31ef9ac27121cfbb4982c6947f195a675ed1a60a1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af3d6399af403d1ab13489a31ef9ac27121cfbb4982c6947f195a675ed1a60a1.pdf",
+      "file_id": "f23f99a62fb94f5286abe89eb38b9c56",
+      "file_name": "4.0+26QS210+SOL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1852746,
+      "sha256": "af3d6399af403d1ab13489a31ef9ac27121cfbb4982c6947f195a675ed1a60a1"
+    }
+  ],
+  "_mirror_hash": "295241635b969750bcc39e792b23040b6a2a64556ea12a6de0bd9b5f80d1e947",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.294092+00:00"
+}

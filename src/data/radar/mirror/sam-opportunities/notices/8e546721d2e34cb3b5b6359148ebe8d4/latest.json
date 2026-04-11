@@ -1,0 +1,80 @@
+{
+  "id": "sam-8e546721d2e34cb3b5b6359148ebe8d4",
+  "title": "Laser Tracking Systems",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e546721d2e34cb3b5b6359148ebe8d4",
+  "opportunity_url": "https://sam.gov/opp/8e546721d2e34cb3b5b6359148ebe8d4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8e546721d2e34cb3b5b6359148ebe8d4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8e546721d2e34cb3b5b6359148ebe8d4",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N68520-26-SIMACQ-HJ00000-0010",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR HQS.FLEET READINESS CENTER",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-10",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e546721d2e34cb3b5b6359148ebe8d4",
+  "detail_text": "The Commander Fleet Readiness Centers (COMFRC) Procurement Group, Patuxent River, MD 20670 hereby gives notice of their intent to award a purchase order to Automated Precision, Inc, 15000 John Hopkins Dr, Rockville, MD 20850 (CAGE: 0KED7) on a sole source basis in accordance with Federal Acquisition Regulation (FAR) Subpart 13.106-1(b)(i), only one source reasonably available and no other supplies or services will satisfy agency requirements. Fleet Readiness Center Southeast (FRCSE) has a requirement for annual Calibration, Certification, and Preventive Maintenance (CCPM) for specified laser tracking and probing systems used in the maintenance of the F/A-18 aircraft for the Fleet Readiness Center Mid-Atlantic (FRCMA) Oceana, located at FRC MidAtlantic Aircraft Department at Virginia Beach, VA. The calibration is critical to prevent a work stoppage for structural repair lines. Automated Precision, Inc is the original equipment manufacturer (OEM) of these Laser Tracking Systems and are the only known source that can return equipment to factory level calibration and provide software updates. These parts are not supported in the Federal Supply System but are only available through Automated Precision, Inc. THIS NOTICE OF INTENT IS NOT A REQUEST FOR COMPETITIVE QUOTES. However, all responsible sources may submit a capability statement, which, if received within five (5) calendar days after the date of the publication of this synopsis, will be considered. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination by the Government not to compete this requirement based upon responses received as a result of this notice is solely within the discretion of the Government. Point of contact for this requirement is Sarah Metcalf at sarah.e.metcalf2.civ@us.navy.mil.",
+  "detail_text_length": 1863,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10f73d4597dc4deeb2f50bdaf7029d80/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/196b4fbf62464e4bb3b5e11abf617ea0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e33bebdf9973440185a9b1016b6ea806/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb34240ac14241dc8b8609690020311a/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10f73d4597dc4deeb2f50bdaf7029d80/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/70288c774383ae10dc76a142147e40bab11edb82430abb5fed04c86aff18063e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/70288c774383ae10dc76a142147e40bab11edb82430abb5fed04c86aff18063e.xlsx",
+      "file_id": "10f73d4597dc4deeb2f50bdaf7029d80",
+      "file_name": "GFP_Attachment.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9345986,
+      "sha256": "70288c774383ae10dc76a142147e40bab11edb82430abb5fed04c86aff18063e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/196b4fbf62464e4bb3b5e11abf617ea0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b94cf401099a2d59294dcbcc08957ebe51330522c8bf0d23f261882d00fa7dfb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b94cf401099a2d59294dcbcc08957ebe51330522c8bf0d23f261882d00fa7dfb.pdf",
+      "file_id": "196b4fbf62464e4bb3b5e11abf617ea0",
+      "file_name": "draft+Exhibit+A_CDRLs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 424710,
+      "sha256": "b94cf401099a2d59294dcbcc08957ebe51330522c8bf0d23f261882d00fa7dfb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e33bebdf9973440185a9b1016b6ea806/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/153d21bd3dbf20f6d00162dc0c71b1a10c02e86f60898d32997884ace5e04422.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/153d21bd3dbf20f6d00162dc0c71b1a10c02e86f60898d32997884ace5e04422.pdf",
+      "file_id": "e33bebdf9973440185a9b1016b6ea806",
+      "file_name": "Solicitation+-+N6852026Q1012.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1883478,
+      "sha256": "153d21bd3dbf20f6d00162dc0c71b1a10c02e86f60898d32997884ace5e04422"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fb34240ac14241dc8b8609690020311a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dfc77ce840434606017f5ff645a8f0027ea5c97e4974c9771e4065e3d345f2e5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dfc77ce840434606017f5ff645a8f0027ea5c97e4974c9771e4065e3d345f2e5.pdf",
+      "file_id": "fb34240ac14241dc8b8609690020311a",
+      "file_name": "Sole+Source+Justification_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 355605,
+      "sha256": "dfc77ce840434606017f5ff645a8f0027ea5c97e4974c9771e4065e3d345f2e5"
+    }
+  ],
+  "_mirror_hash": "4a8705a6dcc2b61fc534d12f26eacb8078eace804c14c978539711cce213886b",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.252862+00:00"
+}

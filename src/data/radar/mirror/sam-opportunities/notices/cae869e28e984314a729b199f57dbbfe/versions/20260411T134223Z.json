@@ -1,0 +1,46 @@
+{
+  "id": "sam-cae869e28e984314a729b199f57dbbfe",
+  "title": "6540--Biometer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cae869e28e984314a729b199f57dbbfe",
+  "opportunity_url": "https://sam.gov/opp/cae869e28e984314a729b199f57dbbfe/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cae869e28e984314a729b199f57dbbfe/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cae869e28e984314a729b199f57dbbfe",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C24826Q0572",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cae869e28e984314a729b199f57dbbfe",
+  "detail_text": "THIS IS A NOTICE OF INTENT FOR SINGLE SOURCE AWARD The Department of Veterans Affairs, Network Contracting Office 8, intends to issue a sole source, firm fixed price award to Biofrontera Inc. for the procurement of an Argos Biometer System. This equipment is required for the Ophthalmology Clinic at the James A. Haley Veterans Hospital, 13000 Bruce B. Downs Blvd., Tampa, FL 33612. This acquisition is being conducted under the authority of FAR 13.106 1(b), which allows for sole source procurement when only one responsible source is capable of providing the required supplies due to their unique or highly specialized nature. A Sole Source Justification has been completed and approved in accordance with applicable regulations. Period of Performance: April 20, 2026 May 19, 2026. This is a Special Notice, not a solicitation. No solicitation package will be issued. The Government does not intend to compete this requirement. However, interested parties may submit capability statements that provide clear and convincing evidence that an alternative source could meet the Government s needs. The Government will review all responses received but is not obligated to conduct a competitive procurement based on them. Response Deadline: 10:00 AM EDT, April 17, 2026. Submission Instructions: All capability statements must be submitted via email. Telephone inquiries will not be accepted. Email: Quentin.Ford@va.gov Point of Contact: Quentin Ford, Contracting Officer, NCO 8",
+  "detail_text_length": 1475,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/075729567daf4289a6382a6091b7fe29/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/075729567daf4289a6382a6091b7fe29/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/319392c15f8eff7d45d91f9852beabfcf9bc852a6ff7f1e482689168dcfeb00a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/319392c15f8eff7d45d91f9852beabfcf9bc852a6ff7f1e482689168dcfeb00a.docx",
+      "file_id": "075729567daf4289a6382a6091b7fe29",
+      "file_name": "36C24826Q0572.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16062,
+      "sha256": "319392c15f8eff7d45d91f9852beabfcf9bc852a6ff7f1e482689168dcfeb00a"
+    }
+  ],
+  "_mirror_hash": "bc9ea0d76d21163dcf897de5ce8c4a1c5489b842e997d2539fbf67f994fd3c41",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.417953+00:00"
+}

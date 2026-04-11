@@ -1,0 +1,57 @@
+{
+  "id": "sam-47ac0eabcfa146eaba999ed77736cad9",
+  "title": "PIMC Laparoscopic PM",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47ac0eabcfa146eaba999ed77736cad9",
+  "opportunity_url": "https://sam.gov/opp/47ac0eabcfa146eaba999ed77736cad9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/47ac0eabcfa146eaba999ed77736cad9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "47ac0eabcfa146eaba999ed77736cad9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ACQ-IHS-2026-U-00085",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.PHOENIX AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47ac0eabcfa146eaba999ed77736cad9",
+  "detail_text": "Contractor shall provide lease of laparoscopic instruments including inspection and repair.",
+  "detail_text_length": 91,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/250e31978f6a46879784f7a31c6b8c84/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5acb4354b354dc18e87afc2e5c91a8c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/250e31978f6a46879784f7a31c6b8c84/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3afb00d4f65c61b16afe5476ff03cc09be7bf63fc06088c5983cb988c1a74061.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3afb00d4f65c61b16afe5476ff03cc09be7bf63fc06088c5983cb988c1a74061.pdf",
+      "file_id": "250e31978f6a46879784f7a31c6b8c84",
+      "file_name": "BIA+Sources+Sought+Laporoscopic+PM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 65031,
+      "sha256": "3afb00d4f65c61b16afe5476ff03cc09be7bf63fc06088c5983cb988c1a74061"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5acb4354b354dc18e87afc2e5c91a8c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "file_id": "a5acb4354b354dc18e87afc2e5c91a8c",
+      "file_name": "IEE+Representation+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132270,
+      "sha256": "e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700"
+    }
+  ],
+  "_mirror_hash": "6dba09e0e2ca303d1410571d75aeb3430b3d85b368f93aeca9a211a47906e31e",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.431304+00:00"
+}

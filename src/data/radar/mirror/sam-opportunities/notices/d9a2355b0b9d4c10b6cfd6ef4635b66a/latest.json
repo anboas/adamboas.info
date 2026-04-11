@@ -1,0 +1,68 @@
+{
+  "id": "sam-d9a2355b0b9d4c10b6cfd6ef4635b66a",
+  "title": "Y1DZ--556-23-104 CON:  Chilled Water Piping from Bldg.188 to Bldg.3",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9a2355b0b9d4c10b6cfd6ef4635b66a",
+  "opportunity_url": "https://sam.gov/opp/d9a2355b0b9d4c10b6cfd6ef4635b66a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d9a2355b0b9d4c10b6cfd6ef4635b66a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d9a2355b0b9d4c10b6cfd6ef4635b66a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C25226B0027",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.252-NETWORK CONTRACT OFFICE 12 (36C252)",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-06-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d9a2355b0b9d4c10b6cfd6ef4635b66a",
+  "detail_text": "Pre-Solicitation Notice Rev1 Solicitation: 36C25226B0027 Project: 556-23-104 Chilled Water Piping from Bldg. 188 to Bldg. 3",
+  "detail_text_length": 123,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a274526a741413a898d8e5b9d2fac16/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a74b4e2f4f6c499db2a1fd3b9f5132ea/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbf2f3cbc7734a22b30b796203ff7ec1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a274526a741413a898d8e5b9d2fac16/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9379690c8af02355d32bcd14bacfcfdd62dc2d674751dfd70924c689c9a79724.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9379690c8af02355d32bcd14bacfcfdd62dc2d674751dfd70924c689c9a79724.pdf",
+      "file_id": "3a274526a741413a898d8e5b9d2fac16",
+      "file_name": "S06_Att1+IFB+Amendment+to+Presol+Notice+556-23-104+36C25226B0027_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84266,
+      "sha256": "9379690c8af02355d32bcd14bacfcfdd62dc2d674751dfd70924c689c9a79724"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a74b4e2f4f6c499db2a1fd3b9f5132ea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/353d11d751b10ed26bcaa26b1a5b3e0ba04db110d751e3fbf0c95ed121a6855a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/353d11d751b10ed26bcaa26b1a5b3e0ba04db110d751e3fbf0c95ed121a6855a.docx",
+      "file_id": "a74b4e2f4f6c499db2a1fd3b9f5132ea",
+      "file_name": "36C25226B0027_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24048,
+      "sha256": "353d11d751b10ed26bcaa26b1a5b3e0ba04db110d751e3fbf0c95ed121a6855a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbf2f3cbc7734a22b30b796203ff7ec1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/57c83fab33f6f47a4fa369d67fd225c755dee7de66f399a2d901b9fb748ebf2f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/57c83fab33f6f47a4fa369d67fd225c755dee7de66f399a2d901b9fb748ebf2f.docx",
+      "file_id": "fbf2f3cbc7734a22b30b796203ff7ec1",
+      "file_name": "36C25226B0027.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25858,
+      "sha256": "57c83fab33f6f47a4fa369d67fd225c755dee7de66f399a2d901b9fb748ebf2f"
+    }
+  ],
+  "_mirror_hash": "6585845cf6a10ad18445f5198200dd4a81c614d372961f2b6be68953b606e398",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.566462+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-158757e60f314ccfb52e0142ef117ab8",
+  "title": "SHAWNEE CMOP OM PHARMACEUTICALS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=158757e60f314ccfb52e0142ef117ab8",
+  "opportunity_url": "https://sam.gov/opp/158757e60f314ccfb52e0142ef117ab8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/158757e60f314ccfb52e0142ef117ab8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "158757e60f314ccfb52e0142ef117ab8",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C77026Q0119",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=158757e60f314ccfb52e0142ef117ab8",
+  "detail_text": "Presolicitation RFQ 36C77026Q0119",
+  "detail_text_length": 33,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecaa7031ebe746a4b5563a566f9cef64/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecaa7031ebe746a4b5563a566f9cef64/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0bb49148269542bb50f28b5366135c0f04d33c5bb934660dca3e67fd80bd2786.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0bb49148269542bb50f28b5366135c0f04d33c5bb934660dca3e67fd80bd2786.pdf",
+      "file_id": "ecaa7031ebe746a4b5563a566f9cef64",
+      "file_name": "S03_PRE_SOL_Q0119.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 104713,
+      "sha256": "0bb49148269542bb50f28b5366135c0f04d33c5bb934660dca3e67fd80bd2786"
+    }
+  ],
+  "_mirror_hash": "d70eb7443f0b9645d29afbbcdc5e1caa575118b8ea70099c5e8faa99b7e6ce76",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.445961+00:00"
+}

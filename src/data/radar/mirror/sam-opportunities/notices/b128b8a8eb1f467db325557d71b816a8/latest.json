@@ -1,0 +1,57 @@
+{
+  "id": "sam-b128b8a8eb1f467db325557d71b816a8",
+  "title": "6515--PATIENT ELOPEMENT TRACKING SYSTEM",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b128b8a8eb1f467db325557d71b816a8",
+  "opportunity_url": "https://sam.gov/opp/b128b8a8eb1f467db325557d71b816a8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b128b8a8eb1f467db325557d71b816a8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b128b8a8eb1f467db325557d71b816a8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24226Q0530",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.242-NETWORK CONTRACT OFFICE 02 (36C242)",
+  "posted_date": "2026-04-10",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b128b8a8eb1f467db325557d71b816a8",
+  "detail_text": "Seeking Sources for Wanderguard or Equal Patient Elopement Management System",
+  "detail_text_length": 76,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7185056ea8744ce39456432e69fd20ee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd68c89c8dce49f0bcdd0f6713a36bdd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7185056ea8744ce39456432e69fd20ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/615cd4a17e5123d89f11142e3316952cf76c61cb64e3d1e27536016f1db56f56.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/615cd4a17e5123d89f11142e3316952cf76c61cb64e3d1e27536016f1db56f56.docx",
+      "file_id": "7185056ea8744ce39456432e69fd20ee",
+      "file_name": "36C24226Q0530.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14607,
+      "sha256": "615cd4a17e5123d89f11142e3316952cf76c61cb64e3d1e27536016f1db56f56"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd68c89c8dce49f0bcdd0f6713a36bdd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a2bef5e4d33d9a71bb95c410455ade00a54169ff43ce8e876e4fad891c58d7cb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a2bef5e4d33d9a71bb95c410455ade00a54169ff43ce8e876e4fad891c58d7cb.docx",
+      "file_id": "dd68c89c8dce49f0bcdd0f6713a36bdd",
+      "file_name": "Sources+Sought+Template.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24529,
+      "sha256": "a2bef5e4d33d9a71bb95c410455ade00a54169ff43ce8e876e4fad891c58d7cb"
+    }
+  ],
+  "_mirror_hash": "b505aacbcd12d196057d28d4c83d693efa70c2218e62b0e959645d17c92c27db",
+  "_mirror_run_id": "20260411T134223Z",
+  "_mirror_recorded_at": "2026-04-11T13:45:56.483237+00:00"
+}
