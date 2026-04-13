@@ -1,0 +1,46 @@
+{
+  "id": "sam-bd8b35a8b3904b2bbb04a32c8eb9952f",
+  "title": "48-VALVE,FLOW CONTROL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd8b35a8b3904b2bbb04a32c8eb9952f",
+  "opportunity_url": "https://sam.gov/opp/bd8b35a8b3904b2bbb04a32c8eb9952f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bd8b35a8b3904b2bbb04a32c8eb9952f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bd8b35a8b3904b2bbb04a32c8eb9952f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM1-26-R-HC52",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bd8b35a8b3904b2bbb04a32c8eb9952f",
+  "detail_text": "DLA Maritime Mechanicsburg is seeking sources capable of supplying the following items: NSN 7HE 4810 014851393 NOM: VALVE,FLOW CONTROL P/N: 23070186 Approved Design Cage Code: Rolls-Royce Corporation (CAGE 63005) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to Jennifer.Elliott@dla.mil by 2:00 PM EST on 23 April 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1212,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7e27c23c2c7439fa17ba5d358208ada/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7e27c23c2c7439fa17ba5d358208ada/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/54bac90d07dfe54a6f30d12ed24eb2b90408f8317b7f3d1320a67e845db6d8f1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/54bac90d07dfe54a6f30d12ed24eb2b90408f8317b7f3d1320a67e845db6d8f1.docx",
+      "file_id": "a7e27c23c2c7439fa17ba5d358208ada",
+      "file_name": "1.08_MARKET_SURVEY_-SPRMM126RHC52-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 55885,
+      "sha256": "54bac90d07dfe54a6f30d12ed24eb2b90408f8317b7f3d1320a67e845db6d8f1"
+    }
+  ],
+  "_mirror_hash": "beceb41f6b2792109534b00de8f454d7609a7da091191cd91208e891c0f160c9",
+  "_mirror_run_id": "20260413T134220Z",
+  "_mirror_recorded_at": "2026-04-13T13:43:36.423409+00:00"
+}

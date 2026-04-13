@@ -1,24 +1,24 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-11T13:46:33.170814+00:00
+Generated: 2026-04-13T13:44:17.454740+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/11/2026
+Posted range: 01/01/2026 -> 04/13/2026
 
 ## Counts
 - Total candidates: 286
 - Navy-related: 0
 - Full detail cached: 286
-- Notices with attachments: 210
-- Total attachment links: 580
-- Pre-solicitation: 84
-- Sources Sought: 146
+- Notices with attachments: 209
+- Total attachment links: 579
+- Pre-solicitation: 85
+- Sources Sought: 145
 - Special Notice: 56
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 119
-- Sources Sought: 146
+- Pre-solicitation: 120
+- Sources Sought: 145
 - Special Notice: 56
 
 ## Top candidates
@@ -44,7 +44,6 @@ Posted range: 01/01/2026 -> 04/11/2026
 | 4 | Special Notice | Pre-solicitation, Special Notice | 2026-02-25 | 2026-03-02 | DEPT OF DEFENSE | [FA821726 CRC RRSVS TCRR Request for Information](https://sam.gov/opp/1a166e0fd28848299f7ecaeac858f918/view) |
 | 2 | Sources Sought | Sources Sought | 2026-02-03 | 2026-03-04 | DEPT OF DEFENSE | [C-40C (B700) Augmentation](https://sam.gov/opp/c336d8e9d45d4ef8acad3e6d970e4a5d/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-17 | 2026-03-04 | DEPT OF DEFENSE | [SVBU Regression Testing Targets](https://sam.gov/opp/f24f47ef48c243cc95caba938b20a116/view) |
-| 2 | Sources Sought | Sources Sought | 2026-02-25 | 2026-03-12 | DEPT OF DEFENSE | [REPAIR SERVICES REGULATOR ASSEMBLY](https://sam.gov/opp/f620e48362674b24a119ac6ec51b5ebb/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-02 | 2026-03-13 | DEPT OF DEFENSE | [RFI: GEO Refueling Vehicles for Sustained Space Maneuver](https://sam.gov/opp/c2b5972b42d14a95813316db9135b1d0/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-03 | 2026-03-18 | DEPT OF DEFENSE | [UH-1 Fire Extinguisher Cartridges](https://sam.gov/opp/911275fe85a44f2997b43c4da4941527/view) |
 | 4 | Pre-solicitation | Pre-solicitation | 2026-04-01 | 2026-03-19 | DEPT OF DEFENSE | [FA910126RB011 FARM III Draft RFP](https://sam.gov/opp/a6a60f0cd0e542a49f08f00953569d3c/view) |
@@ -220,6 +219,7 @@ Posted range: 01/01/2026 -> 04/11/2026
 | 2 | Special Notice | Special Notice | 2026-03-25 | 2026-04-25 | DEPT OF DEFENSE | [Local Telecommunications Services](https://sam.gov/opp/68138d7e80f44dab906c3813994a0723/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-27 | 2026-04-26 | DEPT OF DEFENSE | [Data Migration RFI](https://sam.gov/opp/6675d6fb274346a6a950eeb1e52a4704/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-26 | 2026-04-27 | DEPT OF DEFENSE | [Standardization of DAF Generators](https://sam.gov/opp/27bdc4873f104253934b443efae04826/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-04-13 | 2026-04-27 | DEPT OF DEFENSE | [VDATS Support Equipment (National Instrument Corp)](https://sam.gov/opp/e25359b6cc414064a34e5e11dcfb3a53/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-25 | 2026-04-28 | DEPT OF DEFENSE | [F-16 Circuit Card Assembly NSN: 5998-01-629-5711WF](https://sam.gov/opp/fc7dfa21b8b442dea473d4e2f6e65db2/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-28 | DEPT OF DEFENSE | [Lightweight Hardware Recovery System (LARS) Hardware Refresh](https://sam.gov/opp/f726b53f99b0405ababb4980bcb5bbf7/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-08 | 2026-04-28 | DEPT OF DEFENSE | [Cryovacuum Liner for Cryovacuum Chamber – Market Intelligence Request](https://sam.gov/opp/ecefcf13fb4d415d9e0c0e46e1449531/view) |

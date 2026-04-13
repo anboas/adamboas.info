@@ -1,0 +1,45 @@
+{
+  "id": "sam-a07f18a578af4969b3945368207449f9",
+  "title": "BEARING, TRUNNION",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a07f18a578af4969b3945368207449f9",
+  "opportunity_url": "https://sam.gov/opp/a07f18a578af4969b3945368207449f9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a07f18a578af4969b3945368207449f9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a07f18a578af4969b3945368207449f9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QAB56",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a07f18a578af4969b3945368207449f9",
+  "detail_text": "Bearing, Trunnion NAVSEA P/N: 5662994 (BEARING, TRUNNION) CAGE CODE (53711) DRAWING CALLS OUT P/N: MIL-S-5000 STEEL. MATERIAL MUST ADHERE TO THE REGS/SPECS WITHIN DRAWING 5662994. Qty. 2 EA",
+  "detail_text_length": 189,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2cae6586f7a4dafa11b462f3a1a0d12/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f2cae6586f7a4dafa11b462f3a1a0d12/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/edac3597f8b10bfd9d83dfdde22d3ec048e5c253f448aafefaeb5fa7c4fc8ede.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/edac3597f8b10bfd9d83dfdde22d3ec048e5c253f448aafefaeb5fa7c4fc8ede.pdf",
+      "file_id": "f2cae6586f7a4dafa11b462f3a1a0d12",
+      "file_name": "3.01_N0010426QAB56_26080-0004.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 422377,
+      "sha256": "edac3597f8b10bfd9d83dfdde22d3ec048e5c253f448aafefaeb5fa7c4fc8ede"
+    }
+  ],
+  "_mirror_hash": "d09f1584f198498d8bb24edde62e26d7421f42c9c01dc26ec9e831fe146b622c",
+  "_mirror_run_id": "20260413T134220Z",
+  "_mirror_recorded_at": "2026-04-13T13:43:36.310807+00:00"
+}

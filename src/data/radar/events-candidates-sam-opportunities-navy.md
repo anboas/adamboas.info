@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-11T13:46:44.180989+00:00
+Generated: 2026-04-13T13:44:29.202810+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/11/2026
+Posted range: 01/01/2026 -> 04/13/2026
 
 ## Counts
-- Total candidates: 103
-- Navy-related: 103
-- Full detail cached: 103
+- Total candidates: 102
+- Navy-related: 102
+- Full detail cached: 102
 - Notices with attachments: 46
 - Total attachment links: 161
 - Combined Synopsis/Solicitation: 26
-- Pre-solicitation: 32
+- Pre-solicitation: 31
 - Solicitation: 15
 - Sources Sought: 22
 - Special Notice: 8
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 33
+- Pre-solicitation: 32
 - Sources Sought: 23
 - Vendor Outreach: 1
 - Special Notice: 8
@@ -45,7 +45,6 @@ Posted range: 01/01/2026 -> 04/11/2026
 | 7 | Sources Sought | Sources Sought | 2026-02-26 | 2026-03-13 | DEPT OF DEFENSE | [Consolidated Gases](https://sam.gov/opp/a1d9a51872cb42739fef419e9318ece2/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-04 | 2026-03-16 | DEPT OF DEFENSE | [NUWC Keyport Propane Supply](https://sam.gov/opp/7b925a4a373e4a13915776502b9b0e25/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-20 | 2026-03-23 | DEPT OF DEFENSE | [Unmanned Common Controller (UCC) for the United States Marine Corps](https://sam.gov/opp/dd0c44c75b90428ab037c4780d5e6013/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-13 | 2026-03-28 | DEPT OF DEFENSE | [C-130J/T Sustaining Engineering and Logistics Support Services in Support of a C-130J Aircraft Additional Customer and Peculiar Spares](https://sam.gov/opp/888085a10fae407f8df9d3a101390609/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-19 | 2026-03-30 | DEPT OF DEFENSE | [Avian Waste Abatement and Removal Services at Building 1055, NUWC Keyport](https://sam.gov/opp/9accc3fb04d04d769eef6721db70fb05/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-25 | 2026-03-30 | DEPT OF DEFENSE | [Sole Source to Northrop Grumman Systems Corporation for VXS Static Crossbar Switch per attachments](https://sam.gov/opp/497e6644b20f44e6ba1cdd8110a5e0c2/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-25 | 2026-03-30 | DEPT OF DEFENSE | [Toxic Vapor Analyzer](https://sam.gov/opp/37675edcb6bd42908dd1917c4132d44d/view) |

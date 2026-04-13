@@ -1,0 +1,45 @@
+{
+  "id": "sam-abeaac4540e94bd9aad3e03b8262d729",
+  "title": "SEAT, VALVE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=abeaac4540e94bd9aad3e03b8262d729",
+  "opportunity_url": "https://sam.gov/opp/abeaac4540e94bd9aad3e03b8262d729/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/abeaac4540e94bd9aad3e03b8262d729/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "abeaac4540e94bd9aad3e03b8262d729",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD24",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-05-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=abeaac4540e94bd9aad3e03b8262d729",
+  "detail_text": "Seeking buy of NSN: 1HM 4820-01-068-4692 Q3, SEAT, VALVE, Quantity: 304 . See attached solicitation for more details.",
+  "detail_text_length": 117,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb8759fa7b8547d99d311a20a1dbcc71/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb8759fa7b8547d99d311a20a1dbcc71/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/351164efd2a9e3e64d5fda944961c5c716bbe2215cff3267f2722e2d2281d58c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/351164efd2a9e3e64d5fda944961c5c716bbe2215cff3267f2722e2d2281d58c.pdf",
+      "file_id": "cb8759fa7b8547d99d311a20a1dbcc71",
+      "file_name": "N0010426QFD24.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 915311,
+      "sha256": "351164efd2a9e3e64d5fda944961c5c716bbe2215cff3267f2722e2d2281d58c"
+    }
+  ],
+  "_mirror_hash": "a8df84fd27e210e06594c86097c8a7b2257d0a570d1c549581c03eb1ef46d9de",
+  "_mirror_run_id": "20260413T134220Z",
+  "_mirror_recorded_at": "2026-04-13T13:43:36.317847+00:00"
+}

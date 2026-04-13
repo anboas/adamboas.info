@@ -1,17 +1,17 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-11T13:46:51.172425+00:00
+Generated: 2026-04-13T13:44:36.613101+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/11/2026
+Posted range: 01/01/2026 -> 04/13/2026
 
 ## Counts
-- Total candidates: 443
-- Navy-related: 443
-- Full detail cached: 443
-- Notices with attachments: 256
-- Total attachment links: 690
-- Combined Synopsis/Solicitation: 170
+- Total candidates: 444
+- Navy-related: 444
+- Full detail cached: 444
+- Notices with attachments: 258
+- Total attachment links: 694
+- Combined Synopsis/Solicitation: 171
 - Pre-solicitation: 55
 - Solicitation: 100
 - Sources Sought: 70
@@ -61,7 +61,6 @@ Posted range: 01/01/2026 -> 04/11/2026
 | 6 | Solicitation | - | 2026-02-17 | 2026-02-23 | DEPT OF DEFENSE | [Naval Sea Logistics Center Readiness Based Sparing Services](https://sam.gov/opp/fe834c0b5507424783a981760a4d7984/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-13 | 2026-02-24 | DEPT OF DEFENSE | [Base Assemblies](https://sam.gov/opp/abcf191218124794a716ce06ad0f3619/view) |
 | 6 | Solicitation | - | 2026-02-24 | 2026-02-25 | DEPT OF DEFENSE | [N6449826Q5054](https://sam.gov/opp/32e704e53e6a4451a9e2c1dbc0977e47/view) |
-| 7 | Pre-solicitation | Pre-solicitation | 2026-01-27 | 2026-02-26 | DEPT OF DEFENSE | [Diminishing Manufacturing Sources & Material Shortages (DMSMS) Services](https://sam.gov/opp/7892a7ff5747437e8977fce751cd61c9/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-02-19 | 2026-02-27 | DEPT OF DEFENSE | [SOLE SOURCE – FLAT PANEL DISPLAY](https://sam.gov/opp/620d6570e09d4ab6bbf5dafe99c7ac4e/view) |
 | 6 | Solicitation | - | 2026-02-24 | 2026-02-27 | DEPT OF DEFENSE | [Man Overboard Indicator System (MOBI) Follow-On](https://sam.gov/opp/ce439a1b6cf1452b908b7098c437f099/view) |
 | 6 | Solicitation | - | 2026-02-03 | 2026-03-03 | DEPT OF DEFENSE | [Power Control Systems Propulsion Plant Control Systems Eng. Support](https://sam.gov/opp/2699d7bf751a4121af7ae6ce36fbcd6a/view) |
@@ -104,7 +103,6 @@ Posted range: 01/01/2026 -> 04/11/2026
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-20 | 2026-03-27 | DEPT OF DEFENSE | [SSTG PACKAGING](https://sam.gov/opp/fbf6d1dd186f438188a908f29e884ab7/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-03-24 | 2026-03-27 | DEPT OF DEFENSE | [Upper Sonar Dome Scuttle](https://sam.gov/opp/2f42d86e003e426e87beee5ae51dc26d/view) |
 | 5 | Special Notice | Special Notice | 2026-03-26 | 2026-03-27 | DEPT OF DEFENSE | [Touch Labor Support Services for Ultra High Pressure Operators](https://sam.gov/opp/0d9cfb2c5ba54bc2ae542b25241e4c1f/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-13 | 2026-03-28 | DEPT OF DEFENSE | [Hammerhead Program](https://sam.gov/opp/f123040747c94c719023baf7f0f13568/view) |
 | 7 | Special Notice | Special Notice | 2026-02-10 | 2026-03-30 | DEPT OF DEFENSE | [Autonomous Systems to Reduce Risk Warfighters Encounter](https://sam.gov/opp/824e30e5e65b40a88ca73f183f1bbc95/view) |
 | 7 | Sources Sought | Sources Sought | 2026-02-27 | 2026-03-30 | DEPT OF DEFENSE | [Kitting, acquisition, management,  warehousing/inventory management, and delivery of parts/materials used to overhaul multiple  radar antenna systems and fire control systems.](https://sam.gov/opp/e68d953fdc6e44dab12fa84c12b8bb7c/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-09 | 2026-03-30 | DEPT OF DEFENSE | [SOLE SOURCE – ENGINEERING/LOGISTIC SERVICES FOR THE AIRBORNE ELECTRONIC ATTACK FLEET SUPPORT TEAM, ORGANIC DEPOT, & LOGISTICS INFORMATION MANAGEMENT TEAM (LMIT)](https://sam.gov/opp/635121c8b9df4a1aa2c118f758440953/view) |
@@ -327,6 +325,8 @@ Posted range: 01/01/2026 -> 04/11/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-03-19 | 2026-04-17 | DEPT OF DEFENSE | [Media Blasting Systems - Manual Cabinet and Automated Cabinet](https://sam.gov/opp/605d90160db4470c8036858677b6bc56/view) |
 | 7 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-17 | DEPT OF DEFENSE | [Antisubmarine Warfare (ASW) Target](https://sam.gov/opp/a4bf8dd83bf545ffb90990d5b7461644/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-02 | 2026-04-17 | DEPT OF DEFENSE | [PROGRAM, ENGINEERING, AND LOGISTICS SERVICES TO SUPPORT THE EA-18G GROWLER AND F/A-18E/F SUPER HORNET AIRCRAFT PLATFORMS](https://sam.gov/opp/510ffc7dc08d4a6794bd68a808dd6e0f/view) |
+| 7 | Pre-solicitation | Pre-solicitation | 2026-04-02 | 2026-04-17 | DEPT OF DEFENSE | [Synopsis- Sole Source - Integrated Communication Systems (ICS)](https://sam.gov/opp/2d6f6edcbe544a06bfb59477245a8f3d/view) |
+| 4 | Combined Synopsis/Solicitation | - | 2026-04-07 | 2026-04-17 | DEPT OF DEFENSE | [Restore and upgrade the Secondary Propulsion Unit Rotary Deployment Mechanism (RDM)](https://sam.gov/opp/cf402735c8f7406ba7bdc7c427c5b421/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.
