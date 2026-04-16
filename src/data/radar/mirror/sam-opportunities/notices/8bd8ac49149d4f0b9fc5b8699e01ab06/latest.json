@@ -1,0 +1,46 @@
+{
+  "id": "sam-8bd8ac49149d4f0b9fc5b8699e01ab06",
+  "title": "Monitoring Services for Digital Platforms",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bd8ac49149d4f0b9fc5b8699e01ab06",
+  "opportunity_url": "https://sam.gov/opp/8bd8ac49149d4f0b9fc5b8699e01ab06/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8bd8ac49149d4f0b9fc5b8699e01ab06/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8bd8ac49149d4f0b9fc5b8699e01ab06",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.USEMBASSY GUATEMALA CITY",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bd8ac49149d4f0b9fc5b8699e01ab06",
+  "detail_text": "Award Synopsis",
+  "detail_text_length": 14,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71fe1791e4024511a5e875cda34bd770/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71fe1791e4024511a5e875cda34bd770/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a1dc49fa595bd9266352dd82b61e1eb3c9aacfd161801761b0235531605f557.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a1dc49fa595bd9266352dd82b61e1eb3c9aacfd161801761b0235531605f557.pdf",
+      "file_id": "71fe1791e4024511a5e875cda34bd770",
+      "file_name": "Award+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 86475,
+      "sha256": "4a1dc49fa595bd9266352dd82b61e1eb3c9aacfd161801761b0235531605f557"
+    }
+  ],
+  "_mirror_hash": "6ccc70a02d08980b404759314d16fc80dde1db10c8d7b69fb883e6b4fbf7e1b1",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.122182+00:00"
+}

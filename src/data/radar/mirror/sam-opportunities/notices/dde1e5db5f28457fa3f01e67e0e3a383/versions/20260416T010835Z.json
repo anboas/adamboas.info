@@ -1,0 +1,79 @@
+{
+  "id": "sam-dde1e5db5f28457fa3f01e67e0e3a383",
+  "title": "6515--Point of Care Premium Ultrasound System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dde1e5db5f28457fa3f01e67e0e3a383",
+  "opportunity_url": "https://sam.gov/opp/dde1e5db5f28457fa3f01e67e0e3a383/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dde1e5db5f28457fa3f01e67e0e3a383/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dde1e5db5f28457fa3f01e67e0e3a383",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0621",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dde1e5db5f28457fa3f01e67e0e3a383",
+  "detail_text": "See attached. Thank you.",
+  "detail_text_length": 24,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27a71cddd8164f12b305e3d597c74423/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75cb017b76664eae837db107dbba9fb4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76e68c776a3440338c94f066000cf2a4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c8da7a6244c54063a8b55e3b579247cc/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27a71cddd8164f12b305e3d597c74423/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fbd210635c350d2e9207c907d317739dbad0af2ef7220c88587bc992b20a9c86.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fbd210635c350d2e9207c907d317739dbad0af2ef7220c88587bc992b20a9c86.xlsx",
+      "file_id": "27a71cddd8164f12b305e3d597c74423",
+      "file_name": "Attachment+A+Point+of+Care+Premium+Ultrasound+System.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16046,
+      "sha256": "fbd210635c350d2e9207c907d317739dbad0af2ef7220c88587bc992b20a9c86"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75cb017b76664eae837db107dbba9fb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/061b074a916c312d71eca1d760809fede603010668733f7d9de8ca0610aef4f6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/061b074a916c312d71eca1d760809fede603010668733f7d9de8ca0610aef4f6.docx",
+      "file_id": "75cb017b76664eae837db107dbba9fb4",
+      "file_name": "36C26226Q0621.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14444,
+      "sha256": "061b074a916c312d71eca1d760809fede603010668733f7d9de8ca0610aef4f6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76e68c776a3440338c94f066000cf2a4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/716c083a8fec175b4df3b006cb5ce9aee7b71ee6bf679360f043444700d62b6f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/716c083a8fec175b4df3b006cb5ce9aee7b71ee6bf679360f043444700d62b6f.docx",
+      "file_id": "76e68c776a3440338c94f066000cf2a4",
+      "file_name": "ATTACHMENT+B+SOW+Point+of+Care+Premium+Ultrasound+System.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 33274,
+      "sha256": "716c083a8fec175b4df3b006cb5ce9aee7b71ee6bf679360f043444700d62b6f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c8da7a6244c54063a8b55e3b579247cc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6c5e3c1421c8358f081afe71ac36918f714afb0c7df4032e43606ee0a7f4471d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6c5e3c1421c8358f081afe71ac36918f714afb0c7df4032e43606ee0a7f4471d.docx",
+      "file_id": "c8da7a6244c54063a8b55e3b579247cc",
+      "file_name": "P02+RFI+36C262-26-AP-4120+Premium+Ultrasound+System.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26113,
+      "sha256": "6c5e3c1421c8358f081afe71ac36918f714afb0c7df4032e43606ee0a7f4471d"
+    }
+  ],
+  "_mirror_hash": "29b52e15b4da267a5e05806bd999955a4a54f728cb1947cafd2724445ccddf10",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.778782+00:00"
+}

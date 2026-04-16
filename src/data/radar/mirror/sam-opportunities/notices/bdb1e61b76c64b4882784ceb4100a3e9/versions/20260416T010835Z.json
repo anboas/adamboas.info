@@ -1,0 +1,56 @@
+{
+  "id": "sam-bdb1e61b76c64b4882784ceb4100a3e9",
+  "title": "STUD,PLAIN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdb1e61b76c64b4882784ceb4100a3e9",
+  "opportunity_url": "https://sam.gov/opp/bdb1e61b76c64b4882784ceb4100a3e9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bdb1e61b76c64b4882784ceb4100a3e9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bdb1e61b76c64b4882784ceb4100a3e9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QNC06",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdb1e61b76c64b4882784ceb4100a3e9",
+  "detail_text": "See Attached Solicitation and Amendment(s) Sole Source, Level 1 Requirement to Curtiss-Wright Electro-Mechanical Corporation AMC 3R: Acquire, for the second or subsequent time, directly from the actual manufacturer. The Government does not own the data or the rights to the data needed to purchase this part from additional sources. It has been determined to be uneconomical to buy the data or rights to the data. It is uneconomical to reverse engineer the part. This code is used when the Government did not initially purchase the data and/or rights.",
+  "detail_text_length": 551,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/238bbc2c3fbe4bce854db99d01e4669f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0f959fe486643ba935e3f3631ff1c10/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/238bbc2c3fbe4bce854db99d01e4669f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/71538ad7e45f5dd21395e824cec9c400cd5a44af56021177d24519f79efeccf7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/71538ad7e45f5dd21395e824cec9c400cd5a44af56021177d24519f79efeccf7.pdf",
+      "file_id": "238bbc2c3fbe4bce854db99d01e4669f",
+      "file_name": "N00104-26-Q-NC06.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 934076,
+      "sha256": "71538ad7e45f5dd21395e824cec9c400cd5a44af56021177d24519f79efeccf7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0f959fe486643ba935e3f3631ff1c10/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20b00ebe290bb3e2084cdc29ad4755e33f5e912e0df76d2632a42cf7ce52f9ed.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20b00ebe290bb3e2084cdc29ad4755e33f5e912e0df76d2632a42cf7ce52f9ed.pdf",
+      "file_id": "e0f959fe486643ba935e3f3631ff1c10",
+      "file_name": "N00104-26-Q-NC06+Amendment+0001.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 263012,
+      "sha256": "20b00ebe290bb3e2084cdc29ad4755e33f5e912e0df76d2632a42cf7ce52f9ed"
+    }
+  ],
+  "_mirror_hash": "ca0b1b571d8f9c62129103886899e2c7aeb6f6ffb03b5e6a58e94660e49c0641",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.565475+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-14919dc675854c95919c8bbef218a32f",
+  "title": "15B11826Q00000005 USP BIG SANDY AMMO FY 26",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14919dc675854c95919c8bbef218a32f",
+  "opportunity_url": "https://sam.gov/opp/14919dc675854c95919c8bbef218a32f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/14919dc675854c95919c8bbef218a32f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "14919dc675854c95919c8bbef218a32f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "15B11826Q00000005",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.USP BIG SANDY",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=14919dc675854c95919c8bbef218a32f",
+  "detail_text": "15B11826Q00000005 USP BIG SANDY AMMO FY 26",
+  "detail_text_length": 42,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef9089efce8547e38394f414a7288a40/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef9089efce8547e38394f414a7288a40/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e6bc9a290f97095bd63e9b5d3e16254c1b4310205ded76dc552aec0ed08df1e6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e6bc9a290f97095bd63e9b5d3e16254c1b4310205ded76dc552aec0ed08df1e6.pdf",
+      "file_id": "ef9089efce8547e38394f414a7288a40",
+      "file_name": "15B11826Q00000005++AMMO+PRE+SOL.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 310202,
+      "sha256": "e6bc9a290f97095bd63e9b5d3e16254c1b4310205ded76dc552aec0ed08df1e6"
+    }
+  ],
+  "_mirror_hash": "d8d24a8a8959770a0950361697ef55e97092168ae320871b4b49857f19e4946a",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.589345+00:00"
+}

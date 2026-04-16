@@ -1,0 +1,45 @@
+{
+  "id": "sam-ce83668b70f14b58b3fc1030f697cdf1",
+  "title": "MCP ASSEMBLY, MK 44",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce83668b70f14b58b3fc1030f697cdf1",
+  "opportunity_url": "https://sam.gov/opp/ce83668b70f14b58b3fc1030f697cdf1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ce83668b70f14b58b3fc1030f697cdf1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ce83668b70f14b58b3fc1030f697cdf1",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00104-26-Q-DA74",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce83668b70f14b58b3fc1030f697cdf1",
+  "detail_text": "NSN: 7HH 6110 016249295 ITEM NAME: MCP ASSEMBLY, MK 44 QTY: 1",
+  "detail_text_length": 61,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3fc65052c1464249a703fc419c80b253/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3fc65052c1464249a703fc419c80b253/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e2c3fbb995f4263aa77511abc55ce62e91a87111f4a812a05673a2ef8f7243b3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e2c3fbb995f4263aa77511abc55ce62e91a87111f4a812a05673a2ef8f7243b3.pdf",
+      "file_id": "3fc65052c1464249a703fc419c80b253",
+      "file_name": "3.02_N0010426QDA74_25158-0007.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 640372,
+      "sha256": "e2c3fbb995f4263aa77511abc55ce62e91a87111f4a812a05673a2ef8f7243b3"
+    }
+  ],
+  "_mirror_hash": "8a32945b71758493438159cd208904bf010b407bb2d0b27ca96fbef89d56abed",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.552587+00:00"
+}

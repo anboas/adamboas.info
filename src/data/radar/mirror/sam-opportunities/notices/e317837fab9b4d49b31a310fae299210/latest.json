@@ -1,0 +1,46 @@
+{
+  "id": "sam-e317837fab9b4d49b31a310fae299210",
+  "title": "TFSC AI Modernization Initiative",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e317837fab9b4d49b31a310fae299210",
+  "opportunity_url": "https://sam.gov/opp/e317837fab9b4d49b31a310fae299210/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e317837fab9b4d49b31a310fae299210/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e317837fab9b4d49b31a310fae299210",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FY26TFSC",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE DISTRICT OF WASHINGTON.FA7014  AFDW PK",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e317837fab9b4d49b31a310fae299210",
+  "detail_text": "This Request for Information (RFI) is issued solely for market research and acquisition planning purposes. This notice is not a solicitation, not a Request for Proposal (RFP), not a Request for Quotation (RFQ), and not a commitment by the Government to award a contract or otherwise pay for information received in response to this notice. ****See attached document for requested information. Seeking tailored capability statements**** The Government seeks information from industry to better understand commercially available capabilities, implementation considerations, security and compliance approaches, integration patterns, sustainment models, and rough-order-of-magnitude planning factors relevant to the modernization of customer service operations supporting the Total Force Service Center (TFSC). Responses to this RFI are for informational and planning purposes only. A response to this notice will not be considered an offer and will not be evaluated for contract award. The Government will not pay respondents for any information submitted or for any costs incurred in preparing a response. Any information submitted may be used by the Government in developing or refining requirements, acquisition strategy, and any future pre-solicitation or solicitation documentation. Participation in this RFI is voluntary. The Government reserves the right to use or not use any information provided and is under no obligation to acknowledge receipt of responses, provide feedback to respondents, or release the results of this market research effort.",
+  "detail_text_length": 1553,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecc5f1b742d84aaf901cbe368b3fbb3c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecc5f1b742d84aaf901cbe368b3fbb3c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/58f487a6c478ea890e58b81b1dd373a5a3feaf009e4886a6cb2b59e11e31de0a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/58f487a6c478ea890e58b81b1dd373a5a3feaf009e4886a6cb2b59e11e31de0a.docx",
+      "file_id": "ecc5f1b742d84aaf901cbe368b3fbb3c",
+      "file_name": "TFSC+AI+Modernization_RFI_Market+Research+Notice_2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 61032,
+      "sha256": "58f487a6c478ea890e58b81b1dd373a5a3feaf009e4886a6cb2b59e11e31de0a"
+    }
+  ],
+  "_mirror_hash": "7929609a91bae84dfb868e2a8170afa14cd375802df41026787d94ceff50e851",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.194669+00:00"
+}

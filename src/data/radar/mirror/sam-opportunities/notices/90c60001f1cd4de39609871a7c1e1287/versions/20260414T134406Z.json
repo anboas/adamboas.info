@@ -1,0 +1,45 @@
+{
+  "id": "sam-90c60001f1cd4de39609871a7c1e1287",
+  "title": "VALVE,REGULATING,FL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90c60001f1cd4de39609871a7c1e1287",
+  "opportunity_url": "https://sam.gov/opp/90c60001f1cd4de39609871a7c1e1287/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/90c60001f1cd4de39609871a7c1e1287/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "90c60001f1cd4de39609871a7c1e1287",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QZB13",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=90c60001f1cd4de39609871a7c1e1287",
+  "detail_text": "Sole Source requirement to 35795 LESLIE CONTROLS, INC. AMC 3R: Acquire, for the second or subsequent time, directly from the actual manufacturer. The Government does not own the data or the rights to the data needed to purchase this part from additional sources. It has been determined to be uneconomical to buy the data or rights to the data. It is uneconomical to reverse engineer the part. This code is used when the Government did not initially purchase the data and/or rights. NSN 3HD 4820-00-027-3583 L1 VALVE,REGULATING,FL SHELF LIFE 0-00 SEE TECHNICAL REQUIREMENTS IN SECTIONS C, D, E, AND ATTACHMENTS QTY 33 EA",
+  "detail_text_length": 619,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d865b85b03214cdba6ae8ce0500b1d92/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d865b85b03214cdba6ae8ce0500b1d92/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f6cec217f5a7fd6600e9aea556ad1f17e9c201d80980562b908d3346abe73649.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f6cec217f5a7fd6600e9aea556ad1f17e9c201d80980562b908d3346abe73649.pdf",
+      "file_id": "d865b85b03214cdba6ae8ce0500b1d92",
+      "file_name": "N00104-26-Q-ZB13.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 936383,
+      "sha256": "f6cec217f5a7fd6600e9aea556ad1f17e9c201d80980562b908d3346abe73649"
+    }
+  ],
+  "_mirror_hash": "2843fa8e9cb0b6e4d8bf87c8fe6181fcbb34c998c217fc37f5c0140add7f48c1",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.050497+00:00"
+}

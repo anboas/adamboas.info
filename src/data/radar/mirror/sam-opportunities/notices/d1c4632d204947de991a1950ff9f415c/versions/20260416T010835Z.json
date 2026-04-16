@@ -1,0 +1,57 @@
+{
+  "id": "sam-d1c4632d204947de991a1950ff9f415c",
+  "title": "U.S. Government Seeks to Lease Office and Related Space in Rapid City, South Dakota",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1c4632d204947de991a1950ff9f415c",
+  "opportunity_url": "https://sam.gov/opp/d1c4632d204947de991a1950ff9f415c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d1c4632d204947de991a1950ff9f415c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d1c4632d204947de991a1950ff9f415c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "1SD2083",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.PUBLIC BUILDINGS SERVICE.PBS OFFICE OF LEASING",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1c4632d204947de991a1950ff9f415c",
+  "detail_text": "***PLEASE NOTE THE PARKING CHANGES IN THE BELOW ADVERTISEMENT*** General Services Administration (GSA) seeks to lease the following space: State: South Dakota City: Rapid City Delineated Area: City Limits of Rapid City, South Dakota Minimum Sq. Ft. (ABOA): 7,717 Maximum Sq. Ft. (ABOA): 7,949 Space Type: Office Parking Spaces (Total): 40 Parking Spaces ( Reserved/Surface/Secured ): 20 Parking Spaces ( Reserved/Surface/Unsecured ): 20 Full Term: 120 months Firm Term: 60 months Option Term: Two 5-year options are required Additional Requirements: One (1) of the unreserved spaces must accommodate oversized vehicles of 10’ X 40’ Approximately 120 square feet (10-foot x 12-foot structure) of exterior storage must be provided at the premises. The structure must include a minimum 10-foot by 10-foot overhead door to accommodate UTV/ATVs with trailers. This structure may be a shed with a roll up door placed in parking lot or adjacent to the facility. Offered space must meet Government requirements for fire safety, accessibility, seismic, and sustainability standards per the terms of the Lease. A fully serviced lease is required. Offered space shall not be in the 1-percent-annual chance floodplain (formerly referred to as “100-year” floodplain). Entities are advised to familiarize themselves with the telecommunications prohibitions outlined under Section 889 of the FY19 National Defense Authorization Act (NDAA), as implemented by the Federal Acquisition Regulation (FAR). For more information, visit: https://acquisition.gov/FAR-Case-2019-009/889_Part_B . Expressions of Interest Due: 4/20/2026 Market Survey (Estimated): TBD Occupancy (Estimated): 1/27/2027 Send Expressions of Interest to: Name/Title: Dana McNeil Archer RECS, subcontracted by Cushman & Wakefield dana.mcneil@gsa.gov , (503) 383-1783 Government Contact Information Lease Contracting Officer: Yen Banh Broker: Dana McNeil",
+  "detail_text_length": 1902,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14ee291cdb6f4ba1a5cdde5954cc9599/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6eda6f76f8ca4870a894148ec7089229/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/14ee291cdb6f4ba1a5cdde5954cc9599/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f645774e2a7c676bf920ebca14b1aaf6835ef7b182978ef8eee1b3829ff6c7a7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f645774e2a7c676bf920ebca14b1aaf6835ef7b182978ef8eee1b3829ff6c7a7.pdf",
+      "file_id": "14ee291cdb6f4ba1a5cdde5954cc9599",
+      "file_name": "0SD2083+USDA+Rapid+City+Advertisement+V2+2.5.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 198318,
+      "sha256": "f645774e2a7c676bf920ebca14b1aaf6835ef7b182978ef8eee1b3829ff6c7a7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6eda6f76f8ca4870a894148ec7089229/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7b0ca43b93aed20048503d404d2f21c3a9372ca7235d87049f952b2a471db4a2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7b0ca43b93aed20048503d404d2f21c3a9372ca7235d87049f952b2a471db4a2.pdf",
+      "file_id": "6eda6f76f8ca4870a894148ec7089229",
+      "file_name": "Revised+Advertisement+-4-15-26-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 193566,
+      "sha256": "7b0ca43b93aed20048503d404d2f21c3a9372ca7235d87049f952b2a471db4a2"
+    }
+  ],
+  "_mirror_hash": "c02ffd45286744625fa92e8b219b87f288b7e5c7a016593868f9887d1a384620",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.631357+00:00"
+}

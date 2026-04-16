@@ -1,0 +1,45 @@
+{
+  "id": "sam-1962ce757c714389a92e8806b7b3817a",
+  "title": "FLANGE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1962ce757c714389a92e8806b7b3817a",
+  "opportunity_url": "https://sam.gov/opp/1962ce757c714389a92e8806b7b3817a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1962ce757c714389a92e8806b7b3817a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1962ce757c714389a92e8806b7b3817a",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD31",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1962ce757c714389a92e8806b7b3817a",
+  "detail_text": "Procurement of NSN: 1HM 4730 012186745 L1, FLANGE, Qty 13 EA. See attached solicitation for more details.",
+  "detail_text_length": 105,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9d721d1c7c14d26bfa30a5d908b993b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9d721d1c7c14d26bfa30a5d908b993b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba04ce76aa3590675471ad2e2b516775abdebd9fa2d77c3eeec293ce4e432743.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba04ce76aa3590675471ad2e2b516775abdebd9fa2d77c3eeec293ce4e432743.pdf",
+      "file_id": "a9d721d1c7c14d26bfa30a5d908b993b",
+      "file_name": "N0010426QFD31.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 932110,
+      "sha256": "ba04ce76aa3590675471ad2e2b516775abdebd9fa2d77c3eeec293ce4e432743"
+    }
+  ],
+  "_mirror_hash": "c53be08ef261e887964928b8697d39a58b2de56a7f2821dd61a764ed92f9eb1d",
+  "_mirror_run_id": "20260416T134225Z",
+  "_mirror_recorded_at": "2026-04-16T13:43:54.731559+00:00"
+}

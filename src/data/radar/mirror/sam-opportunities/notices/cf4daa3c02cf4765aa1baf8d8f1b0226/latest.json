@@ -1,0 +1,45 @@
+{
+  "id": "sam-cf4daa3c02cf4765aa1baf8d8f1b0226",
+  "title": "AMPLIFIER-POWER SUP",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cf4daa3c02cf4765aa1baf8d8f1b0226",
+  "opportunity_url": "https://sam.gov/opp/cf4daa3c02cf4765aa1baf8d8f1b0226/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cf4daa3c02cf4765aa1baf8d8f1b0226/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cf4daa3c02cf4765aa1baf8d8f1b0226",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QSC58",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cf4daa3c02cf4765aa1baf8d8f1b0226",
+  "detail_text": "See solicitation for details",
+  "detail_text_length": 28,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37cdc60d8b6648c3b631eced1a1bcbf4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37cdc60d8b6648c3b631eced1a1bcbf4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/32e32b98dc458565396ec4f7f915f8fd8d83178e9bf3de038fea815aa9b86cf3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/32e32b98dc458565396ec4f7f915f8fd8d83178e9bf3de038fea815aa9b86cf3.pdf",
+      "file_id": "37cdc60d8b6648c3b631eced1a1bcbf4",
+      "file_name": "3.01_Solicitation_26022-0047.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 457878,
+      "sha256": "32e32b98dc458565396ec4f7f915f8fd8d83178e9bf3de038fea815aa9b86cf3"
+    }
+  ],
+  "_mirror_hash": "ab513178751a1e3e5776f40f4b9182d5938e05ac506636886ca571a823d6fe9e",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.497520+00:00"
+}

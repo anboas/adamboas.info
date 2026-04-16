@@ -1,0 +1,45 @@
+{
+  "id": "sam-1d38f817f71a445dadc7c42c68d3531e",
+  "title": "PLUG,MACHINE THREAD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d38f817f71a445dadc7c42c68d3531e",
+  "opportunity_url": "https://sam.gov/opp/1d38f817f71a445dadc7c42c68d3531e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1d38f817f71a445dadc7c42c68d3531e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1d38f817f71a445dadc7c42c68d3531e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD23",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d38f817f71a445dadc7c42c68d3531e",
+  "detail_text": "Seeking buy of NSN: 1HM 5365 013113177 L1, PLUG,MACHINE THREAD, Quantity: 80 . See attached solicitation for more details.",
+  "detail_text_length": 122,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea53e6fcfcdd4d6abee1b0cff18397a0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea53e6fcfcdd4d6abee1b0cff18397a0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/48182bb79fe662c434e4c7bdc7ce1c34525247b6a4e5e4de9e909b9304032a96.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/48182bb79fe662c434e4c7bdc7ce1c34525247b6a4e5e4de9e909b9304032a96.pdf",
+      "file_id": "ea53e6fcfcdd4d6abee1b0cff18397a0",
+      "file_name": "3.01_RFQ_N00104-26-Q-FD23_19166-0029.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 919909,
+      "sha256": "48182bb79fe662c434e4c7bdc7ce1c34525247b6a4e5e4de9e909b9304032a96"
+    }
+  ],
+  "_mirror_hash": "e7df4b2a7f86b3b6cb72f7ca4865ced2ba5ea65ab32e6af6b86751e1c96eb6e4",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.027744+00:00"
+}

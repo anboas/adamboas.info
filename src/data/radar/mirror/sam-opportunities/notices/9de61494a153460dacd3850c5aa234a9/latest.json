@@ -1,0 +1,56 @@
+{
+  "id": "sam-9de61494a153460dacd3850c5aa234a9",
+  "title": "Magnetometers Martin State Airport",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9de61494a153460dacd3850c5aa234a9",
+  "opportunity_url": "https://sam.gov/opp/9de61494a153460dacd3850c5aa234a9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9de61494a153460dacd3850c5aa234a9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9de61494a153460dacd3850c5aa234a9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QL0850001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9de61494a153460dacd3850c5aa234a9",
+  "detail_text": "This requirement is to provide magnetometers for Fleet Week Baltimore. Reference Performance Work Statement for additional details.",
+  "detail_text_length": 131,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d02c654b7db149f8842afffdf17d2e65/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d20500cfb25f4187a176e6a5dde3e287/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d02c654b7db149f8842afffdf17d2e65/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/89f45f77d865e1c47c6ea5fdc0b6a8f9fbe2e347e76dd82d04df326e275697f4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/89f45f77d865e1c47c6ea5fdc0b6a8f9fbe2e347e76dd82d04df326e275697f4.pdf",
+      "file_id": "d02c654b7db149f8842afffdf17d2e65",
+      "file_name": "4.02+Solicitation+-+N0018926QL085.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1886226,
+      "sha256": "89f45f77d865e1c47c6ea5fdc0b6a8f9fbe2e347e76dd82d04df326e275697f4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d20500cfb25f4187a176e6a5dde3e287/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bd725cf4228cc64755576c359459f7acbe751ba4c2b315553c38237541886496.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bd725cf4228cc64755576c359459f7acbe751ba4c2b315553c38237541886496.pdf",
+      "file_id": "d20500cfb25f4187a176e6a5dde3e287",
+      "file_name": "Solicitation+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 636368,
+      "sha256": "bd725cf4228cc64755576c359459f7acbe751ba4c2b315553c38237541886496"
+    }
+  ],
+  "_mirror_hash": "4f4bf88116c92bcdde0526c4d2117b3ae69217841344ee3bce9a956135248cde",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.526254+00:00"
+}

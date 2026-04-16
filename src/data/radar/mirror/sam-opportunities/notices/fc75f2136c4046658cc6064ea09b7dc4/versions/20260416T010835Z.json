@@ -1,0 +1,56 @@
+{
+  "id": "sam-fc75f2136c4046658cc6064ea09b7dc4",
+  "title": "N0010426QBE08",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc75f2136c4046658cc6064ea09b7dc4",
+  "opportunity_url": "https://sam.gov/opp/fc75f2136c4046658cc6064ea09b7dc4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fc75f2136c4046658cc6064ea09b7dc4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fc75f2136c4046658cc6064ea09b7dc4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QBE080003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc75f2136c4046658cc6064ea09b7dc4",
+  "detail_text": "1/8 4 WAY VALVE/NSN: 1HD 4820 017325591 X5/Part Number: 5-1777-1/QTY: 147 EA",
+  "detail_text_length": 76,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9630916d2a694ad0bfe062d1932a39b7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e2eeb0b62d2146e3ade164062e18d489/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9630916d2a694ad0bfe062d1932a39b7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0f4ffd840c3f9f0dd44f145b50c57d8feba72cfbf6589dbc39af7a643d392826.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0f4ffd840c3f9f0dd44f145b50c57d8feba72cfbf6589dbc39af7a643d392826.pdf",
+      "file_id": "9630916d2a694ad0bfe062d1932a39b7",
+      "file_name": "3.02_-26QBE08-_Amend+3_25227-0227.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 299593,
+      "sha256": "0f4ffd840c3f9f0dd44f145b50c57d8feba72cfbf6589dbc39af7a643d392826"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e2eeb0b62d2146e3ade164062e18d489/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1d64f8ed3bf3ce803dd05a701209f5f804aa97fc9d1f2bce1d23996ae81fef46.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1d64f8ed3bf3ce803dd05a701209f5f804aa97fc9d1f2bce1d23996ae81fef46.pdf",
+      "file_id": "e2eeb0b62d2146e3ade164062e18d489",
+      "file_name": "3.01_Solicitation-26QBE08-_25227-0027.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 943222,
+      "sha256": "1d64f8ed3bf3ce803dd05a701209f5f804aa97fc9d1f2bce1d23996ae81fef46"
+    }
+  ],
+  "_mirror_hash": "659e96b71c843ceb4c386c981e3557a78d4b7b0cb13100c3af77c1550b62f4a4",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.518579+00:00"
+}

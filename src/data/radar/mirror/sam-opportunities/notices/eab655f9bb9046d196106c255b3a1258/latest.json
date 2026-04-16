@@ -1,0 +1,46 @@
+{
+  "id": "sam-eab655f9bb9046d196106c255b3a1258",
+  "title": "13-day Dry Cargo Time Charter",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eab655f9bb9046d196106c255b3a1258",
+  "opportunity_url": "https://sam.gov/opp/eab655f9bb9046d196106c255b3a1258/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/eab655f9bb9046d196106c255b3a1258/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "eab655f9bb9046d196106c255b3a1258",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N32205-SS-N321-26-094",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eab655f9bb9046d196106c255b3a1258",
+  "detail_text": "PLEASE SEE ATTACHED SOURCES SOUGHT NOTICE N32205-SS-N321-26-094.",
+  "detail_text_length": 64,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/423e8ae134c24b829e9ad715b2e13f93/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/423e8ae134c24b829e9ad715b2e13f93/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9198ad8009f1d86d8d0b7c2fb1a4d7ad570364b976a8abe21c2ea1f8bb101d62.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9198ad8009f1d86d8d0b7c2fb1a4d7ad570364b976a8abe21c2ea1f8bb101d62.pdf",
+      "file_id": "423e8ae134c24b829e9ad715b2e13f93",
+      "file_name": "N32205-SS-N321-26-094.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98801,
+      "sha256": "9198ad8009f1d86d8d0b7c2fb1a4d7ad570364b976a8abe21c2ea1f8bb101d62"
+    }
+  ],
+  "_mirror_hash": "747d079387875552bab850f972d63128821831bb0bb1679e1ce82d83232785fb",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.591464+00:00"
+}

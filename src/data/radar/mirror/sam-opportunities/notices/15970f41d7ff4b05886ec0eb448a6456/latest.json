@@ -1,0 +1,46 @@
+{
+  "id": "sam-15970f41d7ff4b05886ec0eb448a6456",
+  "title": "1550--Tools for Veteran VRE Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=15970f41d7ff4b05886ec0eb448a6456",
+  "opportunity_url": "https://sam.gov/opp/15970f41d7ff4b05886ec0eb448a6456/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/15970f41d7ff4b05886ec0eb448a6456/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "15970f41d7ff4b05886ec0eb448a6456",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C10D26Q0069",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.VETERANS BENEFITS ADMIN (36C10D)",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=15970f41d7ff4b05886ec0eb448a6456",
+  "detail_text": "The solicitation shall be posted immediately following this pre-solicitation notice.",
+  "detail_text_length": 84,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a293a816a984b78b1265c03e5af8ab3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a293a816a984b78b1265c03e5af8ab3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0dcebfc54cea52c0175e0e5e445cbc023641b378df7fe4c9458235bbd8e68fa0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0dcebfc54cea52c0175e0e5e445cbc023641b378df7fe4c9458235bbd8e68fa0.docx",
+      "file_id": "6a293a816a984b78b1265c03e5af8ab3",
+      "file_name": "36C10D26Q0069.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15320,
+      "sha256": "0dcebfc54cea52c0175e0e5e445cbc023641b378df7fe4c9458235bbd8e68fa0"
+    }
+  ],
+  "_mirror_hash": "3d06b2985777616da3dea50dd0afa964ff8ca41f9b732906c2eaf450df9035d0",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.802862+00:00"
+}

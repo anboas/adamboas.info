@@ -1,0 +1,46 @@
+{
+  "id": "sam-dad871d0ea1747e6b34025513f455c0c",
+  "title": "Service Contract for Hamilton STAR V Liquid Handler",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dad871d0ea1747e6b34025513f455c0c",
+  "opportunity_url": "https://sam.gov/opp/dad871d0ea1747e6b34025513f455c0c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dad871d0ea1747e6b34025513f455c0c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dad871d0ea1747e6b34025513f455c0c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "75N98026Q00213",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dad871d0ea1747e6b34025513f455c0c",
+  "detail_text": "The National Heart, Lung, and Blood Institute (NHLBI) intends to award a sole source contract to Hamilton Company for a service agreement supporting a Government-owned Hamilton STAR V liquid handler located at the NIH Clinical Center. This requirement includes preventive maintenance, repair services, technical support, and software/firmware updates necessary to ensure continued, reliable operation of the instrument. The Hamilton STAR V is a proprietary system, and the manufacturer is the only authorized provider of certified service, parts, and updates. This notice is not a request for competitive quotations; however, interested parties may submit capability statements for consideration by the Government.",
+  "detail_text_length": 714,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2305cefd8d8482a9213f24678db63c1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2305cefd8d8482a9213f24678db63c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c85641a8b42e41ea47e316f12511510727046c81c1f706f791d2a1233262331.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c85641a8b42e41ea47e316f12511510727046c81c1f706f791d2a1233262331.pdf",
+      "file_id": "a2305cefd8d8482a9213f24678db63c1",
+      "file_name": "NOI+PCA-NHLBI-03262+75N98026Q00213.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 156943,
+      "sha256": "0c85641a8b42e41ea47e316f12511510727046c81c1f706f791d2a1233262331"
+    }
+  ],
+  "_mirror_hash": "37be248a6a6d269d4b29fca61d22ffa9732e51bf472f29a28cbe17d4340ba370",
+  "_mirror_run_id": "20260416T134225Z",
+  "_mirror_recorded_at": "2026-04-16T13:43:54.801899+00:00"
+}

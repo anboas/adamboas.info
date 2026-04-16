@@ -1,0 +1,57 @@
+{
+  "id": "sam-84d37570cd5e47cebf5f5240281126bc",
+  "title": "Program Depot Management (PDM)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=84d37570cd5e47cebf5f5240281126bc",
+  "opportunity_url": "https://sam.gov/opp/84d37570cd5e47cebf5f5240281126bc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/84d37570cd5e47cebf5f5240281126bc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "84d37570cd5e47cebf5f5240281126bc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8575_F15_PDM",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FIGHTER AND ADVANCED AIRCRAFT.FA8575  AFLCMC WAQKA",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=84d37570cd5e47cebf5f5240281126bc",
+  "detail_text": "The purpose of this effort is to perform scheduled Program Depot Maintenance (PDM) and related inspections as per “Work Specification (WS) for The Royal Saudi Air Force (RSAF) F-15SA PDM Model, hereinafter referred to as F-15SA PDM WS, for F-15SA conversion jets with tail numbers. The draft Performance Work Statement (PWS) (attached) describes the services required to conduct F-15SA Program Depot Maintenance (PDM) for the Royal Saudi Airforce (RSAF). These services include the tasking for the contractor to inspect provided aircraft as per the F[1]15SA PDM WS. The services to accomplish these work specifications include but are not limited to 1) Perform nondestructive inspections of assets both on and off the aircraft, 2) install assets that pass the inspections back onto the aircraft , 3) install Government Furnished Property (GFP), 4) maintain GFP calibration dates and, 5) maintain GFP serviceability.",
+  "detail_text_length": 915,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab34f47c8bfa49b9aa4922d16e442e95/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b67852d7159f4829b147841b19acdfc8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab34f47c8bfa49b9aa4922d16e442e95/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fbb740b7eec76974ba6de456e4a207106a6552f03db1b6351a1f3eed11c12163.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fbb740b7eec76974ba6de456e4a207106a6552f03db1b6351a1f3eed11c12163.pdf",
+      "file_id": "ab34f47c8bfa49b9aa4922d16e442e95",
+      "file_name": "PDM+PWS+DRAFT+April+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 285080,
+      "sha256": "fbb740b7eec76974ba6de456e4a207106a6552f03db1b6351a1f3eed11c12163"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b67852d7159f4829b147841b19acdfc8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/de477f2cb99bbacb710c37e5e4a1d3251d300a70de481c1bc17f6ade51ad26ec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/de477f2cb99bbacb710c37e5e4a1d3251d300a70de481c1bc17f6ade51ad26ec.pdf",
+      "file_id": "b67852d7159f4829b147841b19acdfc8",
+      "file_name": "0+Draft+F-15SA+PDM+Work+Specification.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1945829,
+      "sha256": "de477f2cb99bbacb710c37e5e4a1d3251d300a70de481c1bc17f6ade51ad26ec"
+    }
+  ],
+  "_mirror_hash": "3080453b237cab4031c870c4f4f9d1f9a13674bb7fb7e1cd7e8ff0d63290dc45",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.886527+00:00"
+}

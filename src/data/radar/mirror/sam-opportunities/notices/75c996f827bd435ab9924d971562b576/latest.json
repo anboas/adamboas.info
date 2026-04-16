@@ -1,0 +1,48 @@
+{
+  "id": "sam-75c996f827bd435ab9924d971562b576",
+  "title": "NATO Request for Information: Support to Data Management Service – Transfer (DMS-T)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75c996f827bd435ab9924d971562b576",
+  "opportunity_url": "https://sam.gov/opp/75c996f827bd435ab9924d971562b576/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/75c996f827bd435ab9924d971562b576/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "75c996f827bd435ab9924d971562b576",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "RFI-187018-DMS-T",
+  "agency_path": "COMMERCE, DEPARTMENT OF.BUREAU OF INDUSTRY AND SECURITY",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75c996f827bd435ab9924d971562b576",
+  "detail_text": "The NATO Communications and Information Agency (NCIA) has issued a Request for Information (RFI) to identify qualified vendors and gather input on potential solutions to support the ability to transfer data on the unclassified network, classified network, and cross-domain. The RFI is intended to solicit feedback from capable and interested industry partners. This RFI is issued for planning purposes only and is not a request for bids. The RFI is part of NCIA’s effort to ensure it has a clear understanding of the marketplace, available capabilities, and potential acquisition strategies to deliver ACO capabilities under the ISR Functional Services Data Management Project. The ISR Functional Services program represents NATO's commitment to establish a common digital data platform to manage multi-source/domain data from ingest through to dissemination from an unclassified to a classified environment and the provision of reusable core services to manage linkages and dependencies for both the intelligence community and other Communities of Interest. Do NOT submit your RFI response to the Department of Commerce. Submission instructions and additional details can be found in the RFI (attached). The NCIA reference for this RFI is RFI-187018-DMS-T, and all correspondence concerning this matter should reference this number. The response deadline is 12:00 hours Central European Time (CET) on 07 May 2026. Your participation in this RFI is greatly appreciated.",
+  "detail_text_length": 1469,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5a486c515c84c509ea9b3a8c46d92fc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5a486c515c84c509ea9b3a8c46d92fc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c944758c99a76d76bfe71ae8428191d57397450ac514d672d6c0168e5bbacf17.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c944758c99a76d76bfe71ae8428191d57397450ac514d672d6c0168e5bbacf17.pdf",
+      "file_id": "c5a486c515c84c509ea9b3a8c46d92fc",
+      "file_name": "RFI-187018-DMS-T.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 533936,
+      "sha256": "c944758c99a76d76bfe71ae8428191d57397450ac514d672d6c0168e5bbacf17"
+    }
+  ],
+  "_mirror_hash": "3b8990932c5b5926834cd43629ca02918b427c1cc351f85f9734c038d5a3498f",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.049169+00:00"
+}

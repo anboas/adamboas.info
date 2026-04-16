@@ -1,0 +1,46 @@
+{
+  "id": "sam-afa706216a6142b0b15cb2413fce0435",
+  "title": "Notice of Intent to Issue a Funding Opportunity from U.S. Department of Energy’s (DOE) High Performance Computing for Energy Innovation (HPC4EI) Initiative",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=afa706216a6142b0b15cb2413fce0435",
+  "opportunity_url": "https://sam.gov/opp/afa706216a6142b0b15cb2413fce0435/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/afa706216a6142b0b15cb2413fce0435/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "afa706216a6142b0b15cb2413fce0435",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "HPC4EI25posting",
+  "agency_path": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.LLNS – DOE CONTRACTOR",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=afa706216a6142b0b15cb2413fce0435",
+  "detail_text": "The U.S. Department of Energy's (DOE) High Performance Computing for Energy Innovation (HPC4EI) initiative will issue a new solicitation. The upcoming solicitation will include the High-Performance Computing for Manufacturing (HPC4Mfg) program, which is supported by DOE’s Advanced Materials and Manufacturing Technologies Office (AMMTO, https://www.energy.gov/eere/ammto/advanced-materials-manufacturing-technologies-office) and the Office of Energy Efficiency and Renewable Energy’s (EERE) industrial office (https://www.energy.gov/eere/ito/industrial-technologies-office). HPC4EI is the umbrella program for the HPC4Mfg and the HPC4Mtls programs. The HPC4EI program provides U.S. manufacturers access to Department of Energy National Laboratory expertise and cutting-edge supercomputing resources. These collaborations allow companies to tackle complex challenges in energy and materials, reduce costs, improve efficiency and performance, strengthen supply chain resilience, and expand U.S. industrial competitiveness in global markets. The solicitation will target qualified industry partners to participate in short-term, collaborative projects with DOE national laboratories. Eligibility for the program is limited to entities that manufacture products or conduct operations in the United States for commercial applications, as well as to organizations that support these entities. This focus ensures the equitable use and benefits of HPC national laboratory resources and technologies. Selected projects will be awarded up to $400,000 to support computing cycles and work performed by DOE national laboratories, universities, and non-profit partners. All DOE national laboratories are eligible to participate. The industry partner must provide a participant contribution of at least 20% of the total project funding with either in-kind or cash contributions. Detailed topics of interest to the participating offices will be included in the upcoming solicitation. Learn more about the HPC4EI initiative (https://hpc4energyinnovation.llnl.gov/).",
+  "detail_text_length": 2050,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdc6052611454b34bf6ce275e4149c33/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdc6052611454b34bf6ce275e4149c33/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/551dfa3f0dd931a179596ed20a587b81b9c057d9ce0b1153102cb6dbca932894.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/551dfa3f0dd931a179596ed20a587b81b9c057d9ce0b1153102cb6dbca932894.pdf",
+      "file_id": "fdc6052611454b34bf6ce275e4149c33",
+      "file_name": "HPC4EI+NOI+2025_Rnd+N_LLNL-MI-2011772.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 127362,
+      "sha256": "551dfa3f0dd931a179596ed20a587b81b9c057d9ce0b1153102cb6dbca932894"
+    }
+  ],
+  "_mirror_hash": "48191f8c11121f134d85e906e419f5e56e6573e3bcd0de2e23bf08d9b1ea54e2",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.830327+00:00"
+}

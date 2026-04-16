@@ -1,0 +1,47 @@
+{
+  "id": "sam-24575187c1d242fbb1d252eb87de3c57",
+  "title": "FIRE SUPPRESSION SYSTEMS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24575187c1d242fbb1d252eb87de3c57",
+  "opportunity_url": "https://sam.gov/opp/24575187c1d242fbb1d252eb87de3c57/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/24575187c1d242fbb1d252eb87de3c57/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "24575187c1d242fbb1d252eb87de3c57",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4008526R0052",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC MID-ATLANTIC.NAVFACSYSCOM MID-ATLANTIC",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-08-30",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24575187c1d242fbb1d252eb87de3c57",
+  "detail_text": "Fire Suppression Systems: The work includes providing all labor, management, supervision, tools, material, and equipment required to perform provide preventative maintenance, inspection, testing, repairs, incidental engineering, and other items necessary to perform services for Fire Suppression Systems. The required North American Industry Classification System ( NAICS ) code for this requirement is 561621, Facilities Support Services with a size standard of $25M and will be verified. This procurement will be for a Total Small Business . The most recent applicable Service Contract Act (SCA) Wage Determination will apply. A complete copy of the wage determination can be found at https://sam.gov.",
+  "detail_text_length": 703,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/85cedeef2a6542a3bd71f8434ced7d17/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/85cedeef2a6542a3bd71f8434ced7d17/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3871be8263afddf82b8d096d89e665a1e55d29a126d3968e67120b933900637f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3871be8263afddf82b8d096d89e665a1e55d29a126d3968e67120b933900637f.pdf",
+      "file_id": "85cedeef2a6542a3bd71f8434ced7d17",
+      "file_name": "N4008526R0052+Fire+Suppression+Systems.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 100276,
+      "sha256": "3871be8263afddf82b8d096d89e665a1e55d29a126d3968e67120b933900637f"
+    }
+  ],
+  "_mirror_hash": "ca82e3badbbb07dadeb50e2723245ee5986700da7a3bbf0ea0f75d74548a9609",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.468076+00:00"
+}

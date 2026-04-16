@@ -1,0 +1,70 @@
+{
+  "id": "sam-eb7c63fb1578400daddd529485f9998d",
+  "title": "INDUSTRY DAY: NOAA'S Commercial Data Program 2026",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb7c63fb1578400daddd529485f9998d",
+  "opportunity_url": "https://sam.gov/opp/eb7c63fb1578400daddd529485f9998d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/eb7c63fb1578400daddd529485f9998d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "eb7c63fb1578400daddd529485f9998d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": "NOAA-CDP-SAE-INDUSTRY-DAY-2026",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION.DEPT OF COMMERCE NOAA",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-09",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=eb7c63fb1578400daddd529485f9998d",
+  "detail_text": "Updated 4/13/2026: This posting has been updated to include the Industry Day slide deck and responses to questions. --------------------------------------------------------------------------------- NESDIS Industry Day: Overview and Update on the NESDIS Commercial Data Program National Oceanic and Atmospheric Administration (NOAA’s) National Environmental Satellite, Data, and Information Service (NESDIS) Office of Systems Architecture and Engineering (SAE) will host an online Commercial Data Program (CDP) Industry Day 1:00-2:30pm Eastern, April 9, 2026 . Leaders from SAE and CDP will provide a status update to the community on future plans for the program. Presenters will offer information on CDP objectives to support NOAA’s observational requirements, including data pilot projects for microwave soundings and wildfire imagery and expanding operational data purchases. This will be a virtual event. Those interested can register using this link in the attachment. Questions from the community will be taken live and moderated. Sensitive personally identifiable information, such as account numbers and Social Security numbers, should not be included with the registration. Questions or comments unrelated to the NESDIS Commercial Data Purchase Community Day will not be accepted. Please be advised that the presentation slides from Industry Day will be posted once the event has concluded.",
+  "detail_text_length": 1399,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4354f38aab194337a33d9af500478257/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78ff2d1dc80b44eba188990f96883c5a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d7617cee78a4e998641b5a0b6aad319/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4354f38aab194337a33d9af500478257/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6603f14af2e4eb4443b64ad1576680e93617dee0b28fa5033eed2f0c539d5dad.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6603f14af2e4eb4443b64ad1576680e93617dee0b28fa5033eed2f0c539d5dad.pdf",
+      "file_id": "4354f38aab194337a33d9af500478257",
+      "file_name": "NESDIS+CDP+Industry+Day+2026_Q_A.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 159327,
+      "sha256": "6603f14af2e4eb4443b64ad1576680e93617dee0b28fa5033eed2f0c539d5dad"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/78ff2d1dc80b44eba188990f96883c5a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/faa4aae31d5ecd314bfef3d2e271c2c979f42f1a952b06934f7028ea8d7d4f8e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/faa4aae31d5ecd314bfef3d2e271c2c979f42f1a952b06934f7028ea8d7d4f8e.pdf",
+      "file_id": "78ff2d1dc80b44eba188990f96883c5a",
+      "file_name": "Industry+Day+April+2026+slides.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 6678127,
+      "sha256": "faa4aae31d5ecd314bfef3d2e271c2c979f42f1a952b06934f7028ea8d7d4f8e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d7617cee78a4e998641b5a0b6aad319/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7ca407e1ce750e0099e28079eb1a771638b9684144997f2d7c8c215f063bfc8f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7ca407e1ce750e0099e28079eb1a771638b9684144997f2d7c8c215f063bfc8f.docx",
+      "file_id": "8d7617cee78a4e998641b5a0b6aad319",
+      "file_name": "NESDIS+Industry+Day.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14596,
+      "sha256": "7ca407e1ce750e0099e28079eb1a771638b9684144997f2d7c8c215f063bfc8f"
+    }
+  ],
+  "_mirror_hash": "7412d557432be20b279cadf844323db166c8fb2200822e7655ec65802b44a7ed",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:42.996909+00:00"
+}

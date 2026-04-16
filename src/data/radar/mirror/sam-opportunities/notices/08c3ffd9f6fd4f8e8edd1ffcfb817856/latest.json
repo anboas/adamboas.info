@@ -1,0 +1,68 @@
+{
+  "id": "sam-08c3ffd9f6fd4f8e8edd1ffcfb817856",
+  "title": "Bottle Liquid Scanner (BLS) Qualified Products List (QPL)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=08c3ffd9f6fd4f8e8edd1ffcfb817856",
+  "opportunity_url": "https://sam.gov/opp/08c3ffd9f6fd4f8e8edd1ffcfb817856/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/08c3ffd9f6fd4f8e8edd1ffcfb817856/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "08c3ffd9f6fd4f8e8edd1ffcfb817856",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "70T04026QPL7672BLS001",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.TRANSPORTATION SECURITY ADMINISTRATION",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-09-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=08c3ffd9f6fd4f8e8edd1ffcfb817856",
+  "detail_text": "Amendment 00001: The purpose of Amendment 00001 is to post the vendor questions and answers. ------------------------------------------------------------------------------------------------------------------- TSA is establishing a Qualification Process in accordance with Revolutionary FAR Overhaul (RFO) Federal Acquisition Regulation (FAR) 9.202 to add vendors to the existing Bottle Liquid Scanner (BLS) Qualified Products List (QPL). The purpose of this notice is to provide industry with details on the TSA Qualification Process and how to submit products to be tested. Please see the attached documents for information regarding the qualification process and how to request access to the required documentation.",
+  "detail_text_length": 717,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a2e0a2c1c274ae9aa818ec3f656206e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d604a7a3245841a09b7e66f348a74f0b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe832eac6982430e9e21b182450d107a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a2e0a2c1c274ae9aa818ec3f656206e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7310f38775cd82c7e93c6fc57b3feaa1071c7e3ffc3bc52bc12d5fdb071e3006.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7310f38775cd82c7e93c6fc57b3feaa1071c7e3ffc3bc52bc12d5fdb071e3006.pdf",
+      "file_id": "4a2e0a2c1c274ae9aa818ec3f656206e",
+      "file_name": "BLS_QPL_Announcement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 375862,
+      "sha256": "7310f38775cd82c7e93c6fc57b3feaa1071c7e3ffc3bc52bc12d5fdb071e3006"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d604a7a3245841a09b7e66f348a74f0b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ecfd1fd90eb50ff3e57436d656b7792df4b8ad1047176a4707dc541fc28bdafe.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ecfd1fd90eb50ff3e57436d656b7792df4b8ad1047176a4707dc541fc28bdafe.pdf",
+      "file_id": "d604a7a3245841a09b7e66f348a74f0b",
+      "file_name": "TSA+Form+2815.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 757157,
+      "sha256": "ecfd1fd90eb50ff3e57436d656b7792df4b8ad1047176a4707dc541fc28bdafe"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe832eac6982430e9e21b182450d107a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/58d738343b4a4d36ff3c45f4157dd9629efbb0abbd4ec879b1246c5b7d0d82eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/58d738343b4a4d36ff3c45f4157dd9629efbb0abbd4ec879b1246c5b7d0d82eb.pdf",
+      "file_id": "fe832eac6982430e9e21b182450d107a",
+      "file_name": "Vendor+Q+and+A.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 434505,
+      "sha256": "58d738343b4a4d36ff3c45f4157dd9629efbb0abbd4ec879b1246c5b7d0d82eb"
+    }
+  ],
+  "_mirror_hash": "2a7e7db2634bf907a947693cee351e0336e25559e4bc73a57c504a5581b97f82",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.942202+00:00"
+}

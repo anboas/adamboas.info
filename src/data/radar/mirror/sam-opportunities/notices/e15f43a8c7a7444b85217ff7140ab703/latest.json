@@ -1,0 +1,57 @@
+{
+  "id": "sam-e15f43a8c7a7444b85217ff7140ab703",
+  "title": "Stuttgart Environmental Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e15f43a8c7a7444b85217ff7140ab703",
+  "opportunity_url": "https://sam.gov/opp/e15f43a8c7a7444b85217ff7140ab703/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e15f43a8c7a7444b85217ff7140ab703/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e15f43a8c7a7444b85217ff7140ab703",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PAN409-26-P-0000-026949",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.409TH CSB.0409 AQ HQ     CONTRACT",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e15f43a8c7a7444b85217ff7140ab703",
+  "detail_text": "Environmental Services for: National Environmental Protection Act (NEPA) consultation, services and habitat management. Environmental compliance, surveys, assessment, consultant services, inspections, trainings, advisory and lab services. See attached PWSs for further details. The Government intends to post a RFQ to establish two, separate hybrid (FFP & T&M) environmental service IDIQs. Request for Information Questions: Would you be willing to enter into an IDIQ contract for more than 5 years? If so, how many? Which services can you provide under these PWSs? Do you have experience within the past 5 years of performing these services within Europe on military installations? Please provide any comments or questions to the contact information listed.",
+  "detail_text_length": 758,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fe183b912af4b979e18c9f447ac99c5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91d40268462a458886a626b0bb2537e0/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fe183b912af4b979e18c9f447ac99c5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f9af9e138005022e2aac53f919a90198fa847c8bfc00e7da7a2e185c6db3fc64.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f9af9e138005022e2aac53f919a90198fa847c8bfc00e7da7a2e185c6db3fc64.docx",
+      "file_id": "1fe183b912af4b979e18c9f447ac99c5",
+      "file_name": "PWS_Compliance-Lab+Services+Support.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 166751,
+      "sha256": "f9af9e138005022e2aac53f919a90198fa847c8bfc00e7da7a2e185c6db3fc64"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91d40268462a458886a626b0bb2537e0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/886d538889ac30ab3eeeeb6ac7535f77a856d667e160eef48da83b706aea12b7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/886d538889ac30ab3eeeeb6ac7535f77a856d667e160eef48da83b706aea12b7.docx",
+      "file_id": "91d40268462a458886a626b0bb2537e0",
+      "file_name": "PWS+NEPA+conservation.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 119939,
+      "sha256": "886d538889ac30ab3eeeeb6ac7535f77a856d667e160eef48da83b706aea12b7"
+    }
+  ],
+  "_mirror_hash": "18bde5157b0bbf6850181215c8fa6e60979c700037b54299c1a7f999fe2a650e",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.144685+00:00"
+}

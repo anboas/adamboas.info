@@ -1,0 +1,69 @@
+{
+  "id": "sam-44c0bcf1d3ac4dd6b89065d58abb98bd",
+  "title": "J044--Sources Sought | Replace A307 Bolts",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=44c0bcf1d3ac4dd6b89065d58abb98bd",
+  "opportunity_url": "https://sam.gov/opp/44c0bcf1d3ac4dd6b89065d58abb98bd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/44c0bcf1d3ac4dd6b89065d58abb98bd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "44c0bcf1d3ac4dd6b89065d58abb98bd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24726Q0459",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.247-NETWORK CONTRACT OFFICE 7 (36C247)",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=44c0bcf1d3ac4dd6b89065d58abb98bd",
+  "detail_text": "See following attachments: Sources Sought _ Bolt Replacement Statement of Work _DRAFT",
+  "detail_text_length": 85,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/727c5d4eff0745ee83019b1977cb7cc5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc4f95a0c2514378bf6840dfd5864eb0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb8f2ebbc43e4e5caf9e10d493801930/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/727c5d4eff0745ee83019b1977cb7cc5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/95d970e05854809ab29ceb11b711189390a38d26c323c369334af357dad394e7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/95d970e05854809ab29ceb11b711189390a38d26c323c369334af357dad394e7.docx",
+      "file_id": "727c5d4eff0745ee83019b1977cb7cc5",
+      "file_name": "Statement+of+Work+_DRAFT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 33720,
+      "sha256": "95d970e05854809ab29ceb11b711189390a38d26c323c369334af357dad394e7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc4f95a0c2514378bf6840dfd5864eb0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/28eeb01339fc4dac3fa5dda9433f8eff167b46b5971dd18503b5107e056298b5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/28eeb01339fc4dac3fa5dda9433f8eff167b46b5971dd18503b5107e056298b5.docx",
+      "file_id": "bc4f95a0c2514378bf6840dfd5864eb0",
+      "file_name": "Sources+Sought_+Bolt+Replacement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22110,
+      "sha256": "28eeb01339fc4dac3fa5dda9433f8eff167b46b5971dd18503b5107e056298b5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb8f2ebbc43e4e5caf9e10d493801930/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/777bbb9d82912f235b548a4b43cb033d67236772a29460964011a6a5b3f7442c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/777bbb9d82912f235b548a4b43cb033d67236772a29460964011a6a5b3f7442c.docx",
+      "file_id": "cb8f2ebbc43e4e5caf9e10d493801930",
+      "file_name": "36C24726Q0459.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15324,
+      "sha256": "777bbb9d82912f235b548a4b43cb033d67236772a29460964011a6a5b3f7442c"
+    }
+  ],
+  "_mirror_hash": "8f02b6ef73a05f9daa586cdce122aaea7c249fcdfac3a1e52f6d8a2d56a2b72c",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.494107+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-478e437dfe184556a8395a136e921033",
+  "title": "Employee Recognition Service (VA-26-00052104)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=478e437dfe184556a8395a136e921033",
+  "opportunity_url": "https://sam.gov/opp/478e437dfe184556a8395a136e921033/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/478e437dfe184556a8395a136e921033/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "478e437dfe184556a8395a136e921033",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "VA2600052104",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=478e437dfe184556a8395a136e921033",
+  "detail_text": "The Department of Veterans Affairs (VA), Veterans Health Administration (VHA), Orlando Veterans Affairs Healthcare System (OVAHCS) has a requirement for a Healthcare driven digital, cloud‑based employee recognition platform that enables employees, patients, caregivers, and family members to recognize Orlando VA Health Care System (OVAHCS) clinical and non‑clinical staff for exemplary customer care and support. The platform shall utilize a push/pull technology approach to healthcare employee recognition by facilitating real‑time feedback from patients, peers, caregivers, and family members (pull), and by delivering personalized recognition and actionable data to staff (push). The platform shall include, at a minimum, the capability to: Generate detailed reports measuring patient satisfaction, patient safety, and staff recognition data. Capture real‑time, in‑the‑moment patient feedback. Provide prioritized, real‑time results and insights. Offer marketing and communication tools that support efforts to improve patient experience and employee engagement. The platform shall be accessible on any Android or Apple device. The system shall support unlimited data pulls by the organization and must accommodate up to 6,648 OVAHCS employees. The Contractor shall provide technical support services sufficient to ensure full and continuous functionality of the platform for all covered users. RESPONSE SUBMISSION Responses are limited to 10 pages . Marketing materials will not be reviewed. Please submit responses via email to: Allison Fulton, Contract Specialist — Allison.Fulton@va.gov Mina Awad, Contracting Officer — Mina.Awad@va.gov Responses are due no later than 2:00 PM EST, April 23, 2026 . Email file size must not exceed 5 MB . Mark submissions as “Proprietary Information” if applicable.",
+  "detail_text_length": 1806,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/240d9597d1394368b70eeab7d9c65d02/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d395ae652b0c484697bd6137fa7e8280/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/240d9597d1394368b70eeab7d9c65d02/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/81545e33e05c2f131c2de914d64a586ad848adf9f976a5c7fa2f30ff81386092.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/81545e33e05c2f131c2de914d64a586ad848adf9f976a5c7fa2f30ff81386092.pdf",
+      "file_id": "240d9597d1394368b70eeab7d9c65d02",
+      "file_name": "RFI_SAM.gov+Employee+Recognition+Service_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 147843,
+      "sha256": "81545e33e05c2f131c2de914d64a586ad848adf9f976a5c7fa2f30ff81386092"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d395ae652b0c484697bd6137fa7e8280/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3855a0981f083ddda39053acb98920f371f71f6c01849845f4b2cdebafc03ace.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3855a0981f083ddda39053acb98920f371f71f6c01849845f4b2cdebafc03ace.pdf",
+      "file_id": "d395ae652b0c484697bd6137fa7e8280",
+      "file_name": "Employee+Recognition+Service_Draft+PD.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 287260,
+      "sha256": "3855a0981f083ddda39053acb98920f371f71f6c01849845f4b2cdebafc03ace"
+    }
+  ],
+  "_mirror_hash": "0c03fedfd2efaa61eb3360ff7ff8558c2b8fe78fe2b9b1516a861eaa331c7a36",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.704163+00:00"
+}

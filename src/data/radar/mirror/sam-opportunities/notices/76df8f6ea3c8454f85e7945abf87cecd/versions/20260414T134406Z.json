@@ -1,0 +1,46 @@
+{
+  "id": "sam-76df8f6ea3c8454f85e7945abf87cecd",
+  "title": "Rynglok Tool Kit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76df8f6ea3c8454f85e7945abf87cecd",
+  "opportunity_url": "https://sam.gov/opp/76df8f6ea3c8454f85e7945abf87cecd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/76df8f6ea3c8454f85e7945abf87cecd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "76df8f6ea3c8454f85e7945abf87cecd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA301626Q0081",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=76df8f6ea3c8454f85e7945abf87cecd",
+  "detail_text": "The 12th Maintenance Squadron's Fabrication Flight (12MXS/MXMF) at Joint Base San Antonio-Randolph conducting Market Research for one (1) new RYNGLOK TOOL KIT, Part Number RTSK8-02-001 (NSN 5180-01-378-8873). This toolkit is essential for the installation and maintenance of Rynglok hydraulic tubing couplings on the T-7 RedHawk aircraft. As Eaton is the Original Equipment Manufacturer (OEM) with exclusive rights to the drawings, specifications, and manufacturing data for Rynglok systems, no other brand of tool kit can be substituted. The tool kit must have all the necessary tools to service the following tubing sizes: #3 (3/16\"), #4 (1/4\"), #5 (5/16\"), #6 (3/8\"), #8 (1/2\"), #10 (5/8\"), #12 (3/4\"), #14 (7/8\"), #16 (1\"), #20 (1 1/4\"), and #24 (1 1/2\"). Only authorized sellers / distributors shall apply for this requirement. The NAICS Code for this is 332912.",
+  "detail_text_length": 867,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9977c16896a94801b5bb6a8a9beb69f5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9977c16896a94801b5bb6a8a9beb69f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20ed30017c7a2212adc6b0e4de458fa38efa76eaef4d0869f50e34a69d80a5da.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20ed30017c7a2212adc6b0e4de458fa38efa76eaef4d0869f50e34a69d80a5da.docx",
+      "file_id": "9977c16896a94801b5bb6a8a9beb69f5",
+      "file_name": "DRAFT+Rynglok+Tool+Kit+Statement+of+Need.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25743,
+      "sha256": "20ed30017c7a2212adc6b0e4de458fa38efa76eaef4d0869f50e34a69d80a5da"
+    }
+  ],
+  "_mirror_hash": "0ca7eccc8dfeff729ad312a4341930c560377fad392b756ccf09d8783701b465",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.139681+00:00"
+}

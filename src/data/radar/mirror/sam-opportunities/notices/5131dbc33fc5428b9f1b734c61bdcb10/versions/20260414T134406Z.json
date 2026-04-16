@@ -1,0 +1,46 @@
+{
+  "id": "sam-5131dbc33fc5428b9f1b734c61bdcb10",
+  "title": "Apache_Priced_BOA_G0001",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5131dbc33fc5428b9f1b734c61bdcb10",
+  "opportunity_url": "https://sam.gov/opp/5131dbc33fc5428b9f1b734c61bdcb10/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5131dbc33fc5428b9f1b734c61bdcb10/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5131dbc33fc5428b9f1b734c61bdcb10",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPE4A526R0175",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5131dbc33fc5428b9f1b734c61bdcb10",
+  "detail_text": "This solicitation will contain 68 sole source National Stock Numbers (NSN) for the Apache. This award will be a firm fixed price purchase. The Original Equipment Manufacturer (OEM) is DBA Boeing Company, CAGE 0PXV4, Contract Number SPE4A1-25-G-0001, for Part Numbers on NSN list (attached). Any NSNs found to have another source, will be removed before award. FOB: Origin; Inspection/Acceptance: Origin. Specifications, plans, or drawings related to the procurement described are not available and cannot be furnished by the Government. It is the Government’s intent to use a letter solicitation format to the sole source OEM. The anticipated award date is on or around 30 April 2026. Conditions for evaluation and acceptance of offers for part numbered items cited in the Acquisition Item Description (AID): This agency has no data available for evaluating the acceptability of alternate products offered. In addition to the data required in subparagraph (c)(2) of FAR clause 52.217-9002, the offeror must furnish drawings and other data covering the design, materials, etc., of the exact product cited in the AID. In order to receive award, regardless of dollar value, you must be registered in System For Award Management (SAM). SAM registration is at https://www.sam.gov. If any non-OEM source is interested in any of the NSNs, please notify the Contracting Officer via e-mail prior to the synopsis closing date. Surplus Dealers are also invited to respond to this synopsis. The response should include a completed surplus certificate, DLAD 52.211-9000, Government Surplus Material or adequate traceability documentation to show that the product is acceptable. (Note: other Weapons Support sites will provide their equivalent surplus clause, as applicable). Responses to this announcement from other than the OEM should identify items of interest and include evidence of ability to supply the items for the contract period identified. In addition, respondents should identify the quantity available and price. A copy of the Letter of Interest should be forwarded to the Contracting Officer identified herein and to the SBA PCR. The Government may alter the acquisition strategy if purchase of existing surplus or newly manufactured inventory is in the best interest of the Government. Award will be made only if the offeror/manufacturer and the product/service meets qualification requirements at time of award, in accordance with FAR clause 52.209-1 or 52.209-2. Interested persons may identify to the Contracting Officer their interest and capability to satisfy the Government’s requirement with a commercial item within 15 days of this notice.",
+  "detail_text_length": 2650,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b555b76f2ca2492bb56b866f38b079bf/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b555b76f2ca2492bb56b866f38b079bf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7db231910c15b93431ebf201372634b57510f85195374584bc22684f576cab04.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7db231910c15b93431ebf201372634b57510f85195374584bc22684f576cab04.pdf",
+      "file_id": "b555b76f2ca2492bb56b866f38b079bf",
+      "file_name": "Apache+Tech+NIINs+List.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58549,
+      "sha256": "7db231910c15b93431ebf201372634b57510f85195374584bc22684f576cab04"
+    }
+  ],
+  "_mirror_hash": "b7452d7f347810e79f5ab55a03922ae90ae9d9f19b5ec8be7a78accbbb5c886f",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.198746+00:00"
+}

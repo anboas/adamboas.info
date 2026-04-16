@@ -1,0 +1,58 @@
+{
+  "id": "sam-0c5cc478130d4361b04d7ca34640d68f",
+  "title": "ONR Mission Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c5cc478130d4361b04d7ca34640d68f",
+  "opportunity_url": "https://sam.gov/opp/0c5cc478130d4361b04d7ca34640d68f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0c5cc478130d4361b04d7ca34640d68f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0c5cc478130d4361b04d7ca34640d68f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N0001426RFI7001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-15",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c5cc478130d4361b04d7ca34640d68f",
+  "detail_text": "ONR seeks to award a contract for Support Services for Mission Support and Front Office. ONR intends to solicit on GSA OASIS as a competitive SDVOSB set aside. The solicitation will be posted on GSA E-Buy and is anticipated to be posted by 4/28 or sooner. Responses are not requested to this notice.",
+  "detail_text_length": 299,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e5b91faa0524f829daa8560e4abcf52/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caccbbc6fd3e4c4bb6d779514807458e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e5b91faa0524f829daa8560e4abcf52/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/60b0599ca8679c79891edabb03b794b84994ecf8a66575df8a893afc83dd13cf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/60b0599ca8679c79891edabb03b794b84994ecf8a66575df8a893afc83dd13cf.pdf",
+      "file_id": "4e5b91faa0524f829daa8560e4abcf52",
+      "file_name": "RFI-MSO+Support+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 72722,
+      "sha256": "60b0599ca8679c79891edabb03b794b84994ecf8a66575df8a893afc83dd13cf"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caccbbc6fd3e4c4bb6d779514807458e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3e3e80ff1c5b5a798a38f5ad3d13698c32a1ee6a6e07bf49dd98271653152021.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3e3e80ff1c5b5a798a38f5ad3d13698c32a1ee6a6e07bf49dd98271653152021.pdf",
+      "file_id": "caccbbc6fd3e4c4bb6d779514807458e",
+      "file_name": "RFI+DRAFT+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 790647,
+      "sha256": "3e3e80ff1c5b5a798a38f5ad3d13698c32a1ee6a6e07bf49dd98271653152021"
+    }
+  ],
+  "_mirror_hash": "731ca318c6bb58308da0e33f2d435335ac37e9b4a125ac6ce61f0ef3128e3ae2",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.440735+00:00"
+}

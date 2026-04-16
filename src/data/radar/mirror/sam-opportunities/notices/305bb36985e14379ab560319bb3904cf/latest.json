@@ -1,0 +1,46 @@
+{
+  "id": "sam-305bb36985e14379ab560319bb3904cf",
+  "title": "59-RADIO FREQUENCY MAN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=305bb36985e14379ab560319bb3904cf",
+  "opportunity_url": "https://sam.gov/opp/305bb36985e14379ab560319bb3904cf/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/305bb36985e14379ab560319bb3904cf/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "305bb36985e14379ab560319bb3904cf",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM1-26-R-HC53",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=305bb36985e14379ab560319bb3904cf",
+  "detail_text": "DLA Maritime Mechanicsburg is seeking sources capable of supplying the following items: NSN 7HH 5996 016078996 NOM: RADIO FREQUENCY MAN P/N: 60083555-000 Approved Design Cage Code: L3 Technologies INC (CAGE 06401) Any source interested in supplying this item who is not the Original Equipment Manufacturer (OEM) must provide complete traceability information tracing material back to the OEM when offer is submitted. Failure to provide this information may render your offer as non-responsive. Sources capable of and interested in supplying this item should complete the attached market survey and return the completed copy via email to Anthony.Melenchek@dla.mil by 2:00 PM EST on 23 April 2026. DISCLAIMER: THIS SOURCES SOUGHT NOTICE IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUEST FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICITATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE GOVERNMENT. RESPONSES IN ANY FORM ARE NOT OFFERS AND THE GOVERNMENT IS UNDER NO OBLIGATION TO AWARD A CONTRACT AS A RESULT OF THIS ANNOUNCEMENT. NO FUNDS ARE AVAILABLE TO PAY FOR PREPARATION OF RESPONSES TO THIS ANNOUNCEMENT. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS TECHNICAL DESCRIPTION IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1214,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/868489af14804b74b7b9483260ec149e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/868489af14804b74b7b9483260ec149e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ebb380a4230b214d1201806fc613f35427d4dee00a1c2ccf6b06733d1f09914d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ebb380a4230b214d1201806fc613f35427d4dee00a1c2ccf6b06733d1f09914d.docx",
+      "file_id": "868489af14804b74b7b9483260ec149e",
+      "file_name": "1.08_MARKET_SURVEY_-SPRMM126RHC53-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49329,
+      "sha256": "ebb380a4230b214d1201806fc613f35427d4dee00a1c2ccf6b06733d1f09914d"
+    }
+  ],
+  "_mirror_hash": "817679da6abac42597b5f2185e8b2e3e3353ebc066736110818f05b3fdc8bc30",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.076672+00:00"
+}

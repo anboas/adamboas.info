@@ -1,0 +1,57 @@
+{
+  "id": "sam-5de03f9134424baf93bf0391a24c3652",
+  "title": "PAG H21 Kitchen Equipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5de03f9134424baf93bf0391a24c3652",
+  "opportunity_url": "https://sam.gov/opp/5de03f9134424baf93bf0391a24c3652/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5de03f9134424baf93bf0391a24c3652/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5de03f9134424baf93bf0391a24c3652",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA286026Q4010",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE DISTRICT OF WASHINGTON.FA2860  316 CONS PK",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5de03f9134424baf93bf0391a24c3652",
+  "detail_text": "The 316th Contracting Squadron (CONS) intends to make a sole source contract by the authority of RFO 6.103-1 (Only one responsible source and no other supplies or services will satisfy agency requirements) for the PAG Kitchen Equipment with The Electric Motor Repair Co. of 9100 Yellow Brick RD STE H Rosedale, Maryland 21237-4704. In accordance with RFO 6.302(c)(2)(ii), contracts awarded using this authority shall be supported by a written justification and approval described in RFO 6.303 and RFO 6.304. Commercial Acquisition Procedures will be used, and the resulting contract will be a firm-fixed price contract. The NAICS Code is 333241 and the Size Standard is 500 emp. This special notice serves as a notice of intent to award a sole source contract, is not a request for competitive proposals, and is not a solicitation or a request for offers. Any response to this notice must show clear and convincing evidence that a prospective offeror can fulfill the requirements of the solicitation and that competition would be advantageous to the Government. A determination by the Government not to compete this procurement is solely within the discretion of the Government. Interested parties should submit a capability statement to the Contract Specialist no later than 27 Apr 2026, 4:30 p.m. EDT. Contractors must be actively registered in the System for Award Management (SAM) at https://www.sam.gov.",
+  "detail_text_length": 1408,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf83769dc5084f6c8e38e50ee1185cd7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef045008202748d3838bfe7a97c66e1b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf83769dc5084f6c8e38e50ee1185cd7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d58a7275fb2fd31d56f3e2aa0a2860d1b7254bd12ea081234800975779c540dc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d58a7275fb2fd31d56f3e2aa0a2860d1b7254bd12ea081234800975779c540dc.pdf",
+      "file_id": "cf83769dc5084f6c8e38e50ee1185cd7",
+      "file_name": "PAG+Kitchen+SSJA+Public.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262280,
+      "sha256": "d58a7275fb2fd31d56f3e2aa0a2860d1b7254bd12ea081234800975779c540dc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef045008202748d3838bfe7a97c66e1b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3532acf3e5f72be73514af645ccc656a499114d73c5c77d48ae703db1502e6dd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3532acf3e5f72be73514af645ccc656a499114d73c5c77d48ae703db1502e6dd.pdf",
+      "file_id": "ef045008202748d3838bfe7a97c66e1b",
+      "file_name": "Salient+characterisitcs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1777206,
+      "sha256": "3532acf3e5f72be73514af645ccc656a499114d73c5c77d48ae703db1502e6dd"
+    }
+  ],
+  "_mirror_hash": "5b1b4b612fd5880bd304db8627891d6e8a346488bf4d171f65625f9cdda02a90",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.188623+00:00"
+}

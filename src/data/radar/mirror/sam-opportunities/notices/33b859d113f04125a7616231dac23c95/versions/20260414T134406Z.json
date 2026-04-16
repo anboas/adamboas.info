@@ -1,0 +1,57 @@
+{
+  "id": "sam-33b859d113f04125a7616231dac23c95",
+  "title": "Functional Flight Check Program (FCF)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33b859d113f04125a7616231dac23c95",
+  "opportunity_url": "https://sam.gov/opp/33b859d113f04125a7616231dac23c95/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/33b859d113f04125a7616231dac23c95/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "33b859d113f04125a7616231dac23c95",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA252126QB035",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA2521  45 CONS PK",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=33b859d113f04125a7616231dac23c95",
+  "detail_text": "The contractor flight crew personnel shall provide aircrew services to perform HH-60W Functional Check Flights (FCFs), maintenance flight tests, communication and mission equipment trouble shooting, Operational Check Flights (OCFs), and Acceptance Test Profiles (ATPs) to determine airworthiness and maintenance status of the aircraft. They will also perform aircraft engine rinses, recoveries, pick up or deliveries to and from CONUS locations to home base, and under special circumstances from multiple locations worldwide for the PR Helicopter Rescue Squadron (RQS). All flying operations will be conducted IAW all official publications, regulations, instructions, manuals, technical orders, and drawings from any of the following: Department of Defense (DoD), Defense Contract Management Agency (DCMA), Federal Aviation Administration (FAA), other official publications which apply to aircraft operations or associated with the processing of aircraft subsequent to their completion of depot modification. The requirements of these documents, and any additional governing documents issued by competent authority that are applicable to these operations, shall be followed. All support will be performed IAW the current DCMA Instruction 8210.1C Contractor’s Flight and Ground Operations Procedures in accordance with this PWS. Telephone responses will not be accepted.",
+  "detail_text_length": 1369,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3dbb4cad42b84f39a5298bccdeb10651/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c97d1971157e45b9b3b38968854c828b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3dbb4cad42b84f39a5298bccdeb10651/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd9aa4ed085e0762d48bc883f04546f74bb2398d6828234891617b127ca2d2f6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd9aa4ed085e0762d48bc883f04546f74bb2398d6828234891617b127ca2d2f6.pdf",
+      "file_id": "3dbb4cad42b84f39a5298bccdeb10651",
+      "file_name": "26QB035+Sources+Sought+SAM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 124138,
+      "sha256": "dd9aa4ed085e0762d48bc883f04546f74bb2398d6828234891617b127ca2d2f6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c97d1971157e45b9b3b38968854c828b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/43c0a43cc8ae72e33fadd8bcfdf502212e44390a0e78ac0e229b71d893688d07.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/43c0a43cc8ae72e33fadd8bcfdf502212e44390a0e78ac0e229b71d893688d07.docx",
+      "file_id": "c97d1971157e45b9b3b38968854c828b",
+      "file_name": "PWS+FCF+25MAR26+Draft+Final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70777,
+      "sha256": "43c0a43cc8ae72e33fadd8bcfdf502212e44390a0e78ac0e229b71d893688d07"
+    }
+  ],
+  "_mirror_hash": "c4472552e8ea59b7c956af4ce6b57cf3b8181a900fe08e8b58c5daeac7b8d6e3",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.074754+00:00"
+}

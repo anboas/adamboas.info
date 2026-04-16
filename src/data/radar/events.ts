@@ -16572,4 +16572,97 @@ export const radarEventsSeed: RadarEvent[] = [
 			}
 		}
 	},
+	{
+		id: 'radar-hot-topic-army-acquisitions-and-contracting',
+		title: 'Hot Topic - Army Acquisitions and Contracting',
+		description: 'AUSA sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-06-25',
+		branch: 'Army',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8907613,
+			lng: -77.0880681,
+			venue: 'General Gordon R. Sullivan Conference & Events Center'
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['topic', 'army', 'acquisitions', 'contracting'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'AUSA Event Page',
+				url: 'https://www.ausa.org/events/hot-topic/army-acquisitions-and-contracting',
+				type: 'official',
+				lastVerified: '2026-04-16',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.ausa.org/events/hot-topic/army-acquisitions-and-contracting',
+				registration: 'https://ausa.my.site.com/OnlineCommunity/s/community-event?id=a2VPn000003ijKfMAI',
+				hotelBlock: 'https://www.hyatt.com/en-US/hotel/virginia/hyatt-place-arlington-courthouse-plaza/wasza?corp_id=7376'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			acquisition: 
+			{
+				engagementKinds: ['Vendor Outreach'],
+				noticeType: 'Event Registration',
+				agency: 'Association of the United States Army (AUSA)',
+				registrationDeadline: '2026-06-23'
+			},
+			engagement: 
+			{
+				status: 'Not engaged',
+				contacts: [
+				{
+					name: 'Kevin Engler',
+					role: 'Deputy Director, Outreach and Programs',
+					organization: 'AUSA',
+					email: 'kengler@ausa.org',
+					phone: '703.907.2412'
+				},
+				{
+					name: 'Sophia Martin',
+					role: 'Registrar',
+					organization: 'AUSA',
+					email: 'smartin@ausa.org',
+					phone: '703.907.2692'
+				},
+				{
+					name: 'Emily Call',
+					role: 'Sponsorship Manager',
+					organization: 'AUSA',
+					email: 'ecall@ausa.org',
+					phone: '703.907.2606'
+				}]
+			},
+			notes: 'Source-backed enrichment: registration closes 2026-06-23 at 1700 EST; no solicitation number or response due date published on the event page.'
+		}
+	},
 ];

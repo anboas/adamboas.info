@@ -1,0 +1,57 @@
+{
+  "id": "sam-0c73e083400d4ae888a13c6d2b05326a",
+  "title": "Noun_Oxygen Monitor_Application_F-15_NSN_1660-01-473-3548_Part_Number_3270074-0201",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c73e083400d4ae888a13c6d2b05326a",
+  "opportunity_url": "https://sam.gov/opp/0c73e083400d4ae888a13c6d2b05326a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0c73e083400d4ae888a13c6d2b05326a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0c73e083400d4ae888a13c6d2b05326a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302600218",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c73e083400d4ae888a13c6d2b05326a",
+  "detail_text": "See attached document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24da9403db104ae58d88e07fe02d2079/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f6bbf8b83da485ba15ed2793542d40c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24da9403db104ae58d88e07fe02d2079/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/149edc0587b9624af1f5439c6f71b12529bc1a910e4b3450499a572b78a08da9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/149edc0587b9624af1f5439c6f71b12529bc1a910e4b3450499a572b78a08da9.pdf",
+      "file_id": "24da9403db104ae58d88e07fe02d2079",
+      "file_name": "FD20302600218.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 708743,
+      "sha256": "149edc0587b9624af1f5439c6f71b12529bc1a910e4b3450499a572b78a08da9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f6bbf8b83da485ba15ed2793542d40c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c4e2210b00f706d52eeed37d9d98251b02523a79d6a7e8b2bcf3d29f6caa6073.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c4e2210b00f706d52eeed37d9d98251b02523a79d6a7e8b2bcf3d29f6caa6073.pdf",
+      "file_id": "2f6bbf8b83da485ba15ed2793542d40c",
+      "file_name": "SSS_FD20302600218.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 722773,
+      "sha256": "c4e2210b00f706d52eeed37d9d98251b02523a79d6a7e8b2bcf3d29f6caa6073"
+    }
+  ],
+  "_mirror_hash": "9451100bb4847eab84460a9cf91fd9fc08e16a060817504dc256ad44d8cd2218",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.251247+00:00"
+}

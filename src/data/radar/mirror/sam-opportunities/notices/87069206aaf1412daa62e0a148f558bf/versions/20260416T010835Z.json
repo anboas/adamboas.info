@@ -1,0 +1,46 @@
+{
+  "id": "sam-87069206aaf1412daa62e0a148f558bf",
+  "title": "CIRCUIT CARD ASSEMB NSN:5998-01-522-3084 PN:012096-0001",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=87069206aaf1412daa62e0a148f558bf",
+  "opportunity_url": "https://sam.gov/opp/87069206aaf1412daa62e0a148f558bf/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/87069206aaf1412daa62e0a148f558bf/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "87069206aaf1412daa62e0a148f558bf",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FD2030-26-00996",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=87069206aaf1412daa62e0a148f558bf",
+  "detail_text": "See attached document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28803a572c224912b6bd17241849b11c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28803a572c224912b6bd17241849b11c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2ac1c9e2ac0f0a017be7d3f1f4ad450556af26c4f2df2f2bf6546a8ea7e769df.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2ac1c9e2ac0f0a017be7d3f1f4ad450556af26c4f2df2f2bf6546a8ea7e769df.pdf",
+      "file_id": "28803a572c224912b6bd17241849b11c",
+      "file_name": "26-00996-+Synopsis+Waiver.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 162349,
+      "sha256": "2ac1c9e2ac0f0a017be7d3f1f4ad450556af26c4f2df2f2bf6546a8ea7e769df"
+    }
+  ],
+  "_mirror_hash": "4c616e01c0508ae2cfb50b676d90c06d1ffb36a3d837d730c4b379fb12c8c0e8",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.771976+00:00"
+}

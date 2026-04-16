@@ -1,0 +1,57 @@
+{
+  "id": "sam-c900986b0efe47ca9fdedb790f484c82",
+  "title": "Tobyhanna Army Depot Asbestos Abatement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c900986b0efe47ca9fdedb790f484c82",
+  "opportunity_url": "https://sam.gov/opp/c900986b0efe47ca9fdedb790f484c82/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c900986b0efe47ca9fdedb790f484c82/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c900986b0efe47ca9fdedb790f484c82",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W51AA126",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG CONT CT TYAD OFC",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c900986b0efe47ca9fdedb790f484c82",
+  "detail_text": "Attached is a Draft Performance Work Statement for Asbestos Removal at Tobyhanna Army Depot.",
+  "detail_text_length": 92,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05b4a401413447b1822be01fd42c9747/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7a3a5f3345a4c8f97b48eb8e9a04614/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05b4a401413447b1822be01fd42c9747/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/912b8843226c315a838e8b94a165b4775b9bc4f10d51013b29e57c56aadd5442.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/912b8843226c315a838e8b94a165b4775b9bc4f10d51013b29e57c56aadd5442.docx",
+      "file_id": "05b4a401413447b1822be01fd42c9747",
+      "file_name": "PWS___Tobyhanna+Army+Depot+Asbestos+Abatement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 94363,
+      "sha256": "912b8843226c315a838e8b94a165b4775b9bc4f10d51013b29e57c56aadd5442"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7a3a5f3345a4c8f97b48eb8e9a04614/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7523c06d877ca9df7feb709c9c025e2105c393c8eebd09ddbeed896b8d35b0da.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7523c06d877ca9df7feb709c9c025e2105c393c8eebd09ddbeed896b8d35b0da.pdf",
+      "file_id": "a7a3a5f3345a4c8f97b48eb8e9a04614",
+      "file_name": "Sources+Sought+Asbestos+Abatement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169632,
+      "sha256": "7523c06d877ca9df7feb709c9c025e2105c393c8eebd09ddbeed896b8d35b0da"
+    }
+  ],
+  "_mirror_hash": "ff409dd2a60e6d2d32f6bca0edb70ff233ea22113dcec3620afe595de637bcab",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.692783+00:00"
+}

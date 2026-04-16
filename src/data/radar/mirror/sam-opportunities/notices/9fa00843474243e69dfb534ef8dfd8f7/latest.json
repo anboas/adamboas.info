@@ -1,0 +1,33 @@
+{
+  "id": "sam-9fa00843474243e69dfb534ef8dfd8f7",
+  "title": "Mathematical Gravity Modeling Advancement (MaGMA)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9fa00843474243e69dfb534ef8dfd8f7",
+  "opportunity_url": "https://sam.gov/opp/9fa00843474243e69dfb534ef8dfd8f7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9fa00843474243e69dfb534ef8dfd8f7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9fa00843474243e69dfb534ef8dfd8f7",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "HM0476_MaGMA",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).NATL GEOSPATIAL-INTELLIGENCE AGENCY",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9fa00843474243e69dfb534ef8dfd8f7",
+  "detail_text": "The vendor shall develop more realistic planetary models based on previous work provided by NGA. These models will be composed of layers, mass elements, and triangulations that allow for spatial and radial density variations. Furthermore, the planetary models will incorporate these components in such a way that they allow for finer resolution in regions of interest (i.e. irregular triangulations and inhomogeneous mass element distributions). While at least one of these models will be a model of the Earth the others may be fictitious planets for testing/research purposes and/or other planetary bodies of interest (e.g. the Moon and Bennu). Derived gravimetric quantities from the application of the NGSC to these models will be compared to other suitable modelling techniques (e.g. RTM, EGM08, etc.) or other data as available as a validation method for both the NGSC and models. The vendor shall implement and improve analytic continuation code; NGA will provide the code this is to be based off. This will be done by integrating the provided code into the main NGSC and developing and testing new methods for analytic continuation. All analytic continuation code will be evaluated to determine the applicability of parallel computation techniques in preparation for operational use. The vendor shall develop and explore the theoretical basis for new computational approaches to estimating the spherical harmonic expansion (SHE) model coefficients. This will involve “out-of-core” inverse techniques, such as stochastic gradient descent (SGD) based on mini-batches, which will lower the memory use associated with typical large scale matrix inversion. Furthermore, the vendor will also explore other methods to obtain the SHE model coefficients from forward modelling procedures. The vendor may conduct reviews of potential new avenues of research or development aligned with the previous topics and shall work with NGA Subject Matter Experts (SMEs) and the Principal Investigator (PI) to evaluate whether new techniques, methods, or algorithms will provide benefit to NGA. Approval from the PI is required for significant changes in resources or time applied to the development of the overall deliverables.",
+  "detail_text_length": 2214,
+  "resource_links": [],
+  "resource_count": 0,
+  "resource_items": null,
+  "_mirror_hash": "2c59225d97ce4a1c0f09584ff87611a28fa0096685c573d726c8257761b373b7",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.821977+00:00"
+}

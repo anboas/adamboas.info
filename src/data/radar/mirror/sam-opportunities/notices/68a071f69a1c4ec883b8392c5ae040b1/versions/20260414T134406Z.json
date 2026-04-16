@@ -1,0 +1,48 @@
+{
+  "id": "sam-68a071f69a1c4ec883b8392c5ae040b1",
+  "title": "Prometheus Flame - Request for Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68a071f69a1c4ec883b8392c5ae040b1",
+  "opportunity_url": "https://sam.gov/opp/68a071f69a1c4ec883b8392c5ae040b1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/68a071f69a1c4ec883b8392c5ae040b1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "68a071f69a1c4ec883b8392c5ae040b1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "FA8694-26-S-8888",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68a071f69a1c4ec883b8392c5ae040b1",
+  "detail_text": "Is your organization a leader in modern software development? Are you looking for opportunities to secure long-term, recurring funding for innovative open-source software solutions? Do you want to help shape the future of software development for the Department of War weapon systems and dual-use technologies? The Department of the Air Force (DAF) invites you to review and provide feedback on a DRAFT Request for Solutions for a new effort: The Prometheus Flame Challenge. This is a Request for Information (RFI). No proposals are requested at this time. Your expert feedback is critical to help us refine and improve this solicitation before its final release. The Vision: An Open, Modular, and Competitive Future The DAF is transforming how it develops and deploys software for Autonomy and Mission Systems. To break from the constraints of closed, proprietary systems, we are launching the Prometheus Flame Challenge to build a vibrant, open, and competitive ecosystem around Government-owned, open-source software standards. Around the June 2026 timeframe, the Air Force intends to publicly release two foundational Government Reference Architectures (GRAs) to guide this effort: Agile Mission Suite GRA (AMS GRA): For modular mission capabilities (sensors, communications, data fusion). Autonomy GRA (A-GRA): For standardized behaviors and teaming for autonomous platforms. The Opportunity: Prizes and Long-Term Strategic Partnerships The Prometheus Flame Challenge is more than a prize competition; it is a pathway to long-term strategic partnerships and recurring funding. We are seeking partners to build this new technology ecosystem with us. Continuous Challenge: The program uses flexible, 3-6 month competition phases, each culminating in a \"fly-off\" demonstration where top teams earn cash prizes. Open Entry: Offerors may enter the challenge at any phase. New ideas and existing prototypes are both welcome. Path to Production: Our primary goal is to identify long-term strategic partners. We intend to award follow-on Prototype and Production Other Transaction (OT) Agreements to teams whose solutions align with our long-term vision, providing a recurring funding stream to mature and proliferate this critical open-source foundation. Who Should Participate? We invite participation from the full spectrum of innovators, including: Open-source software developers and enthusiasts Non-traditional defense contractors and commercial software companies Start-ups specializing in autonomy, unmanned systems, and software architecture Academic institutions and research labs Traditional defense contractors interested in leading in an open-source environment This competition is open to both industry and academia with U.S. or U.S. ally-based headquarters and ownership. Your Feedback is Requested Please review the attached document, “(U) Prometheus Flame Challenge - Request for Solutions Draft.pdf”, for complete details on the proposed structure, goals, and evaluation criteria. Feedback should be submitted via email no later than 17 April 2026. The final solicitation is anticipated to be released on or around 1 June 2026.",
+  "detail_text_length": 3142,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1514731762c4e67b6c9473c2a743b7b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1514731762c4e67b6c9473c2a743b7b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/73dbe762e5f7e2c63d47a1a4b20ce49822d5aa0f5be2adbc184a4ee2d6585f42.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/73dbe762e5f7e2c63d47a1a4b20ce49822d5aa0f5be2adbc184a4ee2d6585f42.pdf",
+      "file_id": "e1514731762c4e67b6c9473c2a743b7b",
+      "file_name": "-U-+Prometheus+Flame+Challenge+-+Request+for+Solutions+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 374691,
+      "sha256": "73dbe762e5f7e2c63d47a1a4b20ce49822d5aa0f5be2adbc184a4ee2d6585f42"
+    }
+  ],
+  "_mirror_hash": "8aa3bb4515a45f7bb5a09f98ee0d63700c2c3d6326b380d6a2ccc4396beafd0e",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.005778+00:00"
+}

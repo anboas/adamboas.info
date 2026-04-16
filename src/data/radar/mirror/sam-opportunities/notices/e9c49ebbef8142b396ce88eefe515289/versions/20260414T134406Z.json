@@ -1,0 +1,45 @@
+{
+  "id": "sam-e9c49ebbef8142b396ce88eefe515289",
+  "title": "SCREW, CAP, SOCKET HE--1HM 5305 017243504 D4",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9c49ebbef8142b396ce88eefe515289",
+  "opportunity_url": "https://sam.gov/opp/e9c49ebbef8142b396ce88eefe515289/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e9c49ebbef8142b396ce88eefe515289/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e9c49ebbef8142b396ce88eefe515289",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD17",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9c49ebbef8142b396ce88eefe515289",
+  "detail_text": "SEE ATTACHED SOLICITATION FOR FULL DESCRIPTION",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ff034f2be0242d0b34c51e136a1d633/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0ff034f2be0242d0b34c51e136a1d633/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d8ce1f49be5917b3fbbde59e3de1249bf7b42f9c0df876ef1981a6e3cb3ba7c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d8ce1f49be5917b3fbbde59e3de1249bf7b42f9c0df876ef1981a6e3cb3ba7c1.pdf",
+      "file_id": "0ff034f2be0242d0b34c51e136a1d633",
+      "file_name": "N0010426QFD17.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 895638,
+      "sha256": "d8ce1f49be5917b3fbbde59e3de1249bf7b42f9c0df876ef1981a6e3cb3ba7c1"
+    }
+  ],
+  "_mirror_hash": "fd7a67b15270568cb617f2a3bd7704b725948103ef4089aa41d41cc6d267c43f",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.052360+00:00"
+}

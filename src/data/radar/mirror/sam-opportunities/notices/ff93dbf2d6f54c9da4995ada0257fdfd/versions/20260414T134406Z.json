@@ -1,0 +1,57 @@
+{
+  "id": "sam-ff93dbf2d6f54c9da4995ada0257fdfd",
+  "title": "SOLID WASTE REMOVAL - FCI LA TUNA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff93dbf2d6f54c9da4995ada0257fdfd",
+  "opportunity_url": "https://sam.gov/opp/ff93dbf2d6f54c9da4995ada0257fdfd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ff93dbf2d6f54c9da4995ada0257fdfd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ff93dbf2d6f54c9da4995ada0257fdfd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "15BGCS26N000000102",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.FAO",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff93dbf2d6f54c9da4995ada0257fdfd",
+  "detail_text": "**********THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY********** Solicitations are not available at this time. This notice does not constitute a commitment by the Government. The information gathered from the market research questionnaire will be vital in the formation and set aside status of the solicitation. The Federal Bureau of Prisons (FBOP), Field Acquisition Office (FAO), intends to make a single award of an Indefinite Delivery/Requirements type contract with firm-fixed prices for Solid Waste Removal Services as prescribed below for the Federal Correctional Institution (FCI), La Tuna, located in Anthony, TX. The contract period will consist of a base period from date of award through 12 months, with four (4) one-year option periods. The North American Industrial Classification (NAICS) code is 562111 – Solid Waste Collection, (Size Standard of $47 Million). General Information regarding the BOP is located at www.bop.gov. The contractor shall provide solid waste removal services according to the following schedule: Tuesday: Pickup of one (1) 34-yard compactor and one (1) 30-yard open-top roll-off dumpster. Thursday: Pickup of two (2) 30-yard open-top roll-off dumpsters. Every other Thursday: Pickup of one (1) 34-yard compactor and one (1) 30-yard open-top roll-off dumpster. The contractor will be fully responsible for the disposal of the materials in a lawful and proper manner. All contractors doing business with the Federal Government must be registered in the System for Award Management (SAM) database. The website for registration is www.sam.gov. If you have questions about the System for Award Management (SAM), Government procurements in general, or need assistance in the preparation of your quote, a local Procurement Technical Assistance Center (PTAC) may be able to help. The Procurement Technical Assistance was authorized by Congress in 1985 in an effort to expand the number of businesses capable of participating in the Government marketplace. To locate a PTAC near you, go to http://www.aptac-us.org.",
+  "detail_text_length": 2043,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f7d77f8b9ed472eb20f5da713470d11/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/706461c293b440ec80871d6acf81541c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f7d77f8b9ed472eb20f5da713470d11/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/13d167156746244389df0997a160b121c7be95b2568bfadfae57a2de9f57fdf0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/13d167156746244389df0997a160b121c7be95b2568bfadfae57a2de9f57fdf0.pdf",
+      "file_id": "6f7d77f8b9ed472eb20f5da713470d11",
+      "file_name": "STATEMENT+OF+WORK+2.0.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 105108,
+      "sha256": "13d167156746244389df0997a160b121c7be95b2568bfadfae57a2de9f57fdf0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/706461c293b440ec80871d6acf81541c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c28106ddff5b60e2cc339bdf2c4fdfc409fc057657d998c7e35535d4113f79eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c28106ddff5b60e2cc339bdf2c4fdfc409fc057657d998c7e35535d4113f79eb.pdf",
+      "file_id": "706461c293b440ec80871d6acf81541c",
+      "file_name": "Market+Research+Questionnaire+2.0.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 196488,
+      "sha256": "c28106ddff5b60e2cc339bdf2c4fdfc409fc057657d998c7e35535d4113f79eb"
+    }
+  ],
+  "_mirror_hash": "49c5dc177181d9601f160699f448b2069a491f30bec42399a047c638cb219a0d",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.232201+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-c09c6c4525fc40828a56bc09711817fd",
+  "title": "WWVH Government Property Relocation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c09c6c4525fc40828a56bc09711817fd",
+  "opportunity_url": "https://sam.gov/opp/c09c6c4525fc40828a56bc09711817fd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c09c6c4525fc40828a56bc09711817fd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c09c6c4525fc40828a56bc09711817fd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "NB194000-26-01241",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY.DEPT OF COMMERCE NIST",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c09c6c4525fc40828a56bc09711817fd",
+  "detail_text": "The National Institute of Standards and Technology (NIST) requires contractor support for the relocation and temporary storage of government property at the WWVH Radio Station located at PMRF, Kekaha, Hawaii. The project supports an ongoing facility renovation and includes furnishing, delivering, installing, and later removing storage containers, as well as relocating equipment and materials. The contractor shall provide two (2) 20-foot unconditioned storage containers and one (1) 40-foot conditioned storage container, including necessary site preparation, shelving installation, and a 208V electrical connection for the conditioned unit. The contractor will supply all labor, equipment, and coordination required to move government property from WWVH buildings and grounds into the containers and return it upon project completion. The period of performance is two (2) years from award, with optional six-month extensions. Work will be performed on-site at PMRF and must comply with all NIST, DoD, and site-specific safety, security, and access requirements.",
+  "detail_text_length": 1065,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c4c32af24904b35a7668f794be905fa/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df1fcf62879844c49e3d14bb5fc4443e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c4c32af24904b35a7668f794be905fa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39d57a71b8e2690eaa5d3649c31680fa264ce7875b68baf781a6efe7077589c2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39d57a71b8e2690eaa5d3649c31680fa264ce7875b68baf781a6efe7077589c2.docx",
+      "file_id": "1c4c32af24904b35a7668f794be905fa",
+      "file_name": "01+WWVH+Government+Property+Relocation+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49880,
+      "sha256": "39d57a71b8e2690eaa5d3649c31680fa264ce7875b68baf781a6efe7077589c2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df1fcf62879844c49e3d14bb5fc4443e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/711a11a258b6b19b111ed1474bdfe2be870949687baf253e07d9012669ff0f99.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/711a11a258b6b19b111ed1474bdfe2be870949687baf253e07d9012669ff0f99.pdf",
+      "file_id": "df1fcf62879844c49e3d14bb5fc4443e",
+      "file_name": "01C+WWVH+Site+Plans.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 340734,
+      "sha256": "711a11a258b6b19b111ed1474bdfe2be870949687baf253e07d9012669ff0f99"
+    }
+  ],
+  "_mirror_hash": "d8cd726c73e5477ef55caaf371451d042849f5443c3763b7a1f6ca82ec3f79a5",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.193588+00:00"
+}

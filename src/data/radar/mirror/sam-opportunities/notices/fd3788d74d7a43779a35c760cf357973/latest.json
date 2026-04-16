@@ -1,0 +1,46 @@
+{
+  "id": "sam-fd3788d74d7a43779a35c760cf357973",
+  "title": "ServiceNow ELA BPA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd3788d74d7a43779a35c760cf357973",
+  "opportunity_url": "https://sam.gov/opp/fd3788d74d7a43779a35c760cf357973/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fd3788d74d7a43779a35c760cf357973/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fd3788d74d7a43779a35c760cf357973",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "15JPPS-26-PR-0045",
+  "agency_path": "JUSTICE, DEPARTMENT OF.OFFICES, BOARDS AND DIVISIONS.JMD-PROCUREMENT SERVICES STAFF",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd3788d74d7a43779a35c760cf357973",
+  "detail_text": "The Justice Management Division Office of Acquisition Management Procurement Service Staff intends to limit competition to ‘items peculiar to one manufacturer’ software licenses, and software maintenance to the ServiceNow brand in accordance with DOJ Class Deviation from the Federal Acquisition Regulation (FAR) Part 8 in support of Executive Order (EO) 14275 on “Restoring Common Sense to Federal Procurement,” dated September 23, 2025, FAR 8.401(b) and General Services Acquisition Regulation (GSAR) 538.7104-4 and on a sole source basis pursuant to GSAR 538.7104-3(b)(1)(ii). In addition and IAW 15 U.S.C. 644(e) and FAR 7.107-2(a), the Department has determined that consolidation and bundling is necessary and justified for the ServiceNow Licenses requirements.",
+  "detail_text_length": 767,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c0c87f55915434c972dffd0a1681173/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c0c87f55915434c972dffd0a1681173/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31d360e42a8d99fe5ea80e2a416099bbe9f593d6b09aa2f2b7209a9580ea1b8d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31d360e42a8d99fe5ea80e2a416099bbe9f593d6b09aa2f2b7209a9580ea1b8d.pdf",
+      "file_id": "4c0c87f55915434c972dffd0a1681173",
+      "file_name": "SAM+Notice+of+Intent+to+Sole+Source+and+Bundling+of+ServiceNow+Requirements+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 224225,
+      "sha256": "31d360e42a8d99fe5ea80e2a416099bbe9f593d6b09aa2f2b7209a9580ea1b8d"
+    }
+  ],
+  "_mirror_hash": "f5612a64d80b18a285fede540e5eee020c2bdd63a782d22f344847678732676b",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.239099+00:00"
+}

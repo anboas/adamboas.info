@@ -1,0 +1,46 @@
+{
+  "id": "sam-6161c2334b0741f4a3f3ccf858be792a",
+  "title": "VANE PUMP ASSEMBLY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6161c2334b0741f4a3f3ccf858be792a",
+  "opportunity_url": "https://sam.gov/opp/6161c2334b0741f4a3f3ccf858be792a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6161c2334b0741f4a3f3ccf858be792a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6161c2334b0741f4a3f3ccf858be792a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601911",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6161c2334b0741f4a3f3ccf858be792a",
+  "detail_text": "See Attachment",
+  "detail_text_length": 14,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d01225221074464f8a74f392a843c676/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d01225221074464f8a74f392a843c676/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5e53afe246ddd73aa2a452915d548534e235c79b12652321c78665c6062fc4d4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5e53afe246ddd73aa2a452915d548534e235c79b12652321c78665c6062fc4d4.pdf",
+      "file_id": "d01225221074464f8a74f392a843c676",
+      "file_name": "FD20302601911.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 708107,
+      "sha256": "5e53afe246ddd73aa2a452915d548534e235c79b12652321c78665c6062fc4d4"
+    }
+  ],
+  "_mirror_hash": "39faf06e1939d734bc809388de79be7860b306bbd1a9056fa43719ebb6716bba",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.693859+00:00"
+}

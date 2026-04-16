@@ -1,0 +1,47 @@
+{
+  "id": "sam-4d05e3e70d43479289a0cd87a9f77653",
+  "title": "48--ACTUATOR,ELECTRO-ME",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d05e3e70d43479289a0cd87a9f77653",
+  "opportunity_url": "https://sam.gov/opp/4d05e3e70d43479289a0cd87a9f77653/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4d05e3e70d43479289a0cd87a9f77653/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4d05e3e70d43479289a0cd87a9f77653",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N0010426RNA51_AMENDMENT_0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4d05e3e70d43479289a0cd87a9f77653",
+  "detail_text": "Amendment 0001 is attached to increase quantity and extend close date on Solicitation.",
+  "detail_text_length": 86,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c792f293f2194b4f9a5c3cf93318cb99/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c792f293f2194b4f9a5c3cf93318cb99/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c4ecbf4b8372ccad4055cf26cc0d9e72d6a48608b1e56b04dda4d95665dcf4ba.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c4ecbf4b8372ccad4055cf26cc0d9e72d6a48608b1e56b04dda4d95665dcf4ba.pdf",
+      "file_id": "c792f293f2194b4f9a5c3cf93318cb99",
+      "file_name": "Amendment_0001_25105-0035.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 350472,
+      "sha256": "c4ecbf4b8372ccad4055cf26cc0d9e72d6a48608b1e56b04dda4d95665dcf4ba"
+    }
+  ],
+  "_mirror_hash": "fdd899079ad92cbafcff2fc9a25264382cca124cf5e57ceeeccbeae7404404fa",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:42.994486+00:00"
+}

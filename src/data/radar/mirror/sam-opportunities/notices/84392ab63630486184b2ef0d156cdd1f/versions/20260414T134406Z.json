@@ -1,0 +1,57 @@
+{
+  "id": "sam-84392ab63630486184b2ef0d156cdd1f",
+  "title": "CubeTec Inspection Scanner",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=84392ab63630486184b2ef0d156cdd1f",
+  "opportunity_url": "https://sam.gov/opp/84392ab63630486184b2ef0d156cdd1f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/84392ab63630486184b2ef0d156cdd1f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "84392ab63630486184b2ef0d156cdd1f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "LIBRARY OF CONGRESS.LIBRARY OF CONGRESS.CONTRACTS SERVICES",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=84392ab63630486184b2ef0d156cdd1f",
+  "detail_text": "This is a public notice prepared in accordance with Federal Acquisition Regulation (FAR) 5.2 – Synopsis of Proposed Contract Actions. The Library of Congress, Contracts and Grants Directorate, intends to award a sole-source firm fixed price contract to: Cube Tec North America, LLC (192 Edgewood Road, Asheville, NC 28804-3342). The work to be performed under the contract will be performed at the following location: Contractor's facility as well as the Library of Congress facility. The period of performance of the intended contract shall run as follows: 1-year with three 1-year option periods. It is valued at an amount below the simplified acquisition threshold (defined as $250,000 and below), but above $25,000 (the public notice threshold). The work shall consist of the following: The contractor shall provide an inspection scan system with the following additional modules: Quadriga QC View and Dynamic Report Generator. This announcement constitute the only public notice, proposals are not being requested from other parties and a written solicitation will not be issued. This public notice accomplishes the following: Notice of the LC’s intent to sole source this requirement to the business listed herein; Synopsizing the requirements in accordance with the FAR; and Publically posting the approved Justification and Approval (J&A) to the public in advance of the contract award rather than after award. As a result of this, a second posting of the J&A is not required after the award has been made. As a result of this public posting, this shall be the only notice issued. A separate award notice and a separate J&A posting shall not be performed, as all public information is being accomplished via this public notice. The following attachments are included in this notice: Attachment 1: Statement of Work Attachment 2: Sole Source Justification (Redacted for Public Release) No further notices shall be pursued at this time in regards to this contracting action.",
+  "detail_text_length": 1980,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1531afd14fef4762ad343aa03dc4fb45/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae39f9f88255480ca140e6dbcb35684e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1531afd14fef4762ad343aa03dc4fb45/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/590d745f55acbf3eaff7f1181495027a5ef8a9b103989b7529c707985bdb4bb8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/590d745f55acbf3eaff7f1181495027a5ef8a9b103989b7529c707985bdb4bb8.pdf",
+      "file_id": "1531afd14fef4762ad343aa03dc4fb45",
+      "file_name": "Justification-and-Approval-Form-TT+signed+4.9.26_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 360900,
+      "sha256": "590d745f55acbf3eaff7f1181495027a5ef8a9b103989b7529c707985bdb4bb8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae39f9f88255480ca140e6dbcb35684e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1cadec0ead747705d7b7526066e4ab44f024a79d33cf715b131aebc35db28f80.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1cadec0ead747705d7b7526066e4ab44f024a79d33cf715b131aebc35db28f80.docx",
+      "file_id": "ae39f9f88255480ca140e6dbcb35684e",
+      "file_name": "2026-LGR-0178+TT+3.10.26+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17434,
+      "sha256": "1cadec0ead747705d7b7526066e4ab44f024a79d33cf715b131aebc35db28f80"
+    }
+  ],
+  "_mirror_hash": "93e78e004f346fe0a39bb7fd46e0825f8806044e397f89ba1fab6f8ebbdff106",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.186453+00:00"
+}

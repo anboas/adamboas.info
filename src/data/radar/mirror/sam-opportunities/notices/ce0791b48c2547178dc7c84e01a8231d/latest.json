@@ -1,0 +1,57 @@
+{
+  "id": "sam-ce0791b48c2547178dc7c84e01a8231d",
+  "title": "Gulfstream Flight Attendant Egress Simulation Training (FY28-32)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce0791b48c2547178dc7c84e01a8231d",
+  "opportunity_url": "https://sam.gov/opp/ce0791b48c2547178dc7c84e01a8231d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ce0791b48c2547178dc7c84e01a8231d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ce0791b48c2547178dc7c84e01a8231d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "GulfstreamFAEST26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4452  763 ESS",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ce0791b48c2547178dc7c84e01a8231d",
+  "detail_text": "The 763rd ESS is seeking potential sources who can provide a training plan which offers professional in-depth aircraft classroom and egress simulator training (initial and refresher training) on USAF aircraft, Gulfstream V (C-37A) and Gulfstream 550 (C-37B), in accordance with the USAF Cabin Operating Manual (COM) with particular focus on the flight attendant emergency procedures and emergency equipment. The contractor must base the training plan and the requirements of all tasks in the Performance Work Statement (PWS) on the USAF COM for each aircraft Mission Designation Series (MDS). Flight attendant training shall provide a thorough understanding and ability to perform all required flight attendant tasks when confronted with emergency conditions. The primary tasks that will be taught through this training are Egress Aircrew Flight Equipment (AFE), Fire Fighting Procedures/Training, Ditching Procedures/Training, Emergency Procedures, Aircraft Systems Training, Hazardous Materials Training, In-flight Illness Training, and Water Survival Training. This support is necessary to assist the Operational Support Airlift and Executive Airlift (OSA/EA) division with transportation to high-level government employees and DoD officials.",
+  "detail_text_length": 1245,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68198bb4688b4aa3a12d37d336629a21/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6eb3cb55bcc84dc88bdccd3b7374d90e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/68198bb4688b4aa3a12d37d336629a21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8458b877f8b846f2dec8c927801f6b8fd84620c2812832ce005eb1cc6607f7f8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8458b877f8b846f2dec8c927801f6b8fd84620c2812832ce005eb1cc6607f7f8.docx",
+      "file_id": "68198bb4688b4aa3a12d37d336629a21",
+      "file_name": "DRAFT+Gulfstream+FAEST+PWS+for+Sources+Sought_4.2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 68289,
+      "sha256": "8458b877f8b846f2dec8c927801f6b8fd84620c2812832ce005eb1cc6607f7f8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6eb3cb55bcc84dc88bdccd3b7374d90e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/36ac2a65e4a2a658d249ed35ab2721ef4e7c235420c0d41405bdd5f9a0c5e381.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/36ac2a65e4a2a658d249ed35ab2721ef4e7c235420c0d41405bdd5f9a0c5e381.docx",
+      "file_id": "6eb3cb55bcc84dc88bdccd3b7374d90e",
+      "file_name": "Sources+Sought+for+Gulfstream+FAEST+FY28-32.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48304,
+      "sha256": "36ac2a65e4a2a658d249ed35ab2721ef4e7c235420c0d41405bdd5f9a0c5e381"
+    }
+  ],
+  "_mirror_hash": "93a71ec3a4af89e1b1afc848b17152937d004c2a689bcd5e44cc04ff6a06d758",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.885779+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-37207a93b3fd406a8a81462d10347ebd",
+  "title": "VISN 4 Hub Medicopia Software Specimen Collection System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37207a93b3fd406a8a81462d10347ebd",
+  "opportunity_url": "https://sam.gov/opp/37207a93b3fd406a8a81462d10347ebd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/37207a93b3fd406a8a81462d10347ebd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "37207a93b3fd406a8a81462d10347ebd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24426Q0247_1",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.244-NETWORK CONTRACT OFFICE 4 (36C244)",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37207a93b3fd406a8a81462d10347ebd",
+  "detail_text": "The following is a Sources Sought/Request for Information notice. This posted notice is not a Pre- Solicitation or Solicitation document. The government is not currently soliciting bids, quotes or proposals at this time; however, reserves the right to do so at a later date. The Veterans Integrated Service Network (VISN) 04 HUB, Pittsburgh, PA 15215 requires Lattice, Inc.’s Medicopia Specimen Collection Software. See the attached Statement of Work.",
+  "detail_text_length": 451,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0981067a643c4c89b2b4b06f000b8cbe/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fba0f5812e04180aab0ebbcb644ee27/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0981067a643c4c89b2b4b06f000b8cbe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/77764b6fcf267218884ddbaaa0e75555cd93d8e00e5d78c18f5322b5040e3cb9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/77764b6fcf267218884ddbaaa0e75555cd93d8e00e5d78c18f5322b5040e3cb9.pdf",
+      "file_id": "0981067a643c4c89b2b4b06f000b8cbe",
+      "file_name": "36C24426Q0247_1+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 100716,
+      "sha256": "77764b6fcf267218884ddbaaa0e75555cd93d8e00e5d78c18f5322b5040e3cb9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fba0f5812e04180aab0ebbcb644ee27/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d1164020be9676376b58af4abc0bc6d132ce3c4fa0aa8710de3f1f6581de483.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d1164020be9676376b58af4abc0bc6d132ce3c4fa0aa8710de3f1f6581de483.docx",
+      "file_id": "0fba0f5812e04180aab0ebbcb644ee27",
+      "file_name": "P08+-+SOW+-+Specimen+Collection+System.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 78367,
+      "sha256": "8d1164020be9676376b58af4abc0bc6d132ce3c4fa0aa8710de3f1f6581de483"
+    }
+  ],
+  "_mirror_hash": "a55e66515f359ee0b6247e5862546acf7c49de508541e2c6b4159af4be5c1156",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.694873+00:00"
+}

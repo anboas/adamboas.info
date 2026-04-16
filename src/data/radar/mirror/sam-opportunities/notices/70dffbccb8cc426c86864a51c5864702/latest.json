@@ -1,0 +1,45 @@
+{
+  "id": "sam-70dffbccb8cc426c86864a51c5864702",
+  "title": "CIRCUIT CARD ASSEMB",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70dffbccb8cc426c86864a51c5864702",
+  "opportunity_url": "https://sam.gov/opp/70dffbccb8cc426c86864a51c5864702/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/70dffbccb8cc426c86864a51c5864702/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "70dffbccb8cc426c86864a51c5864702",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QDA83",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70dffbccb8cc426c86864a51c5864702",
+  "detail_text": "EAF Repair Folder 26043-0001, Part Number B910, BOA N0010426GBE01, NSN: 7HH 5998015190789, CIRCUIT CARD ASSEMB, QTY. 14, 90 Day 100% Option",
+  "detail_text_length": 139,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aeef2afd6f684de493f22304e9074d47/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aeef2afd6f684de493f22304e9074d47/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2aabbb0a40053f85a85970213724de0ca8f3ed0fafcb9da3fe2c518ac716878c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2aabbb0a40053f85a85970213724de0ca8f3ed0fafcb9da3fe2c518ac716878c.pdf",
+      "file_id": "aeef2afd6f684de493f22304e9074d47",
+      "file_name": "3.01_RFQ_N0010426QDA83_26043-0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 455841,
+      "sha256": "2aabbb0a40053f85a85970213724de0ca8f3ed0fafcb9da3fe2c518ac716878c"
+    }
+  ],
+  "_mirror_hash": "e8b37b72e23b7814b9bf6fdb054b9bc60225290f2239eb9c0b121e4ad4728baf",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.528744+00:00"
+}

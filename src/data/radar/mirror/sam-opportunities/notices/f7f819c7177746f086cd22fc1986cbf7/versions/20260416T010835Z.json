@@ -1,0 +1,144 @@
+{
+  "id": "sam-f7f819c7177746f086cd22fc1986cbf7",
+  "title": "Bldg 417& 66 ADA Ramp",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f7f819c7177746f086cd22fc1986cbf7",
+  "opportunity_url": "https://sam.gov/opp/f7f819c7177746f086cd22fc1986cbf7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f7f819c7177746f086cd22fc1986cbf7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f7f819c7177746f086cd22fc1986cbf7",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4008526R9030",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC MID-ATLANTIC.NAVFACSYSCOM MID-ATLANTIC",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f7f819c7177746f086cd22fc1986cbf7",
+  "detail_text": "Only M&R MACC Contractors listed on the General Requirements cover page may submit a proposal for this ROICC Camp Lejeune area of responsibility project. See attached documents for scope of work and any applicable drawings.",
+  "detail_text_length": 223,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d5a0920b2534ea4bd187d6b3e1715a4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/290b93e140e94c0cbdfbf69af96cdd48/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30e3feeab1644944b7e8d232c21d3130/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d37ea7c50cb45ab8b5f908a951b147f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5c5dabc95ade4891b0d9041efacf5747/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/699cd3282b2d4bc88d7c9a856a23f516/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7ec055b356cb402484804d75cfb53128/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba1de9819798476582d4157c3d15f552/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f49507682571467ab56dc0b4b646846e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdfedbecddbd4e00b6ddfd612eb57ed6/download"
+  ],
+  "resource_count": 10,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d5a0920b2534ea4bd187d6b3e1715a4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d966440653f00e4b02d11410f9dac546ea80b357c5b066a0e711d02ff4e1956b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d966440653f00e4b02d11410f9dac546ea80b357c5b066a0e711d02ff4e1956b.pdf",
+      "file_id": "1d5a0920b2534ea4bd187d6b3e1715a4",
+      "file_name": "MACC+RFP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153478,
+      "sha256": "d966440653f00e4b02d11410f9dac546ea80b357c5b066a0e711d02ff4e1956b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/290b93e140e94c0cbdfbf69af96cdd48/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/85b9510567773ec34a91239500fea9513db4a9557fc1b56e69ea67f3a5074bb1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/85b9510567773ec34a91239500fea9513db4a9557fc1b56e69ea67f3a5074bb1.pdf",
+      "file_id": "290b93e140e94c0cbdfbf69af96cdd48",
+      "file_name": "Contractor+Environmental+Guide+Updated+Format_20231009+with+ESOP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4702540,
+      "sha256": "85b9510567773ec34a91239500fea9513db4a9557fc1b56e69ea67f3a5074bb1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30e3feeab1644944b7e8d232c21d3130/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1fe5ab3d1ba4286b0a178bcce8e25c96cc92bcc5bbc34311802e9b133c5de473.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1fe5ab3d1ba4286b0a178bcce8e25c96cc92bcc5bbc34311802e9b133c5de473.pdf",
+      "file_id": "30e3feeab1644944b7e8d232c21d3130",
+      "file_name": "25-0427+BLDG+66+ADA+RAMP+-+SUBMITTAL+REGISTER.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 63112,
+      "sha256": "1fe5ab3d1ba4286b0a178bcce8e25c96cc92bcc5bbc34311802e9b133c5de473"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d37ea7c50cb45ab8b5f908a951b147f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1eea4c146771db1abf799aef5adc89018029288a402d2b55657405b91721646d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1eea4c146771db1abf799aef5adc89018029288a402d2b55657405b91721646d.pdf",
+      "file_id": "4d37ea7c50cb45ab8b5f908a951b147f",
+      "file_name": "25-0427+BLDG+66+ADA+RAMP+-+PROJECT+DESCRIPTION.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46117,
+      "sha256": "1eea4c146771db1abf799aef5adc89018029288a402d2b55657405b91721646d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5c5dabc95ade4891b0d9041efacf5747/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/54d9f7d2f5a11f6a903cbf2b62952c2c6077aee2bb4548d1f8e8d99460257272.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/54d9f7d2f5a11f6a903cbf2b62952c2c6077aee2bb4548d1f8e8d99460257272.pdf",
+      "file_id": "5c5dabc95ade4891b0d9041efacf5747",
+      "file_name": "MAXIMO+Initial+Equipment+Inventory+and+Replacement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 97695,
+      "sha256": "54d9f7d2f5a11f6a903cbf2b62952c2c6077aee2bb4548d1f8e8d99460257272"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/699cd3282b2d4bc88d7c9a856a23f516/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c0683dd9e3b81fa6324bfc65cfbbaa3f9620ac307e49b2011b3cc543a6bce6a7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c0683dd9e3b81fa6324bfc65cfbbaa3f9620ac307e49b2011b3cc543a6bce6a7.pdf",
+      "file_id": "699cd3282b2d4bc88d7c9a856a23f516",
+      "file_name": "25-0426+BLDG+417+ADA+RAMP+-+PROJECT+DESCRIPTION.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46833,
+      "sha256": "c0683dd9e3b81fa6324bfc65cfbbaa3f9620ac307e49b2011b3cc543a6bce6a7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7ec055b356cb402484804d75cfb53128/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/703ce1a503a539fcf286178fc3f6eb701eb156d27e47245391840c4446ed7bfe.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/703ce1a503a539fcf286178fc3f6eb701eb156d27e47245391840c4446ed7bfe.pdf",
+      "file_id": "7ec055b356cb402484804d75cfb53128",
+      "file_name": "25-0426+BLDG+417+ADA+RAMP+-+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 852944,
+      "sha256": "703ce1a503a539fcf286178fc3f6eb701eb156d27e47245391840c4446ed7bfe"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba1de9819798476582d4157c3d15f552/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e60f1dcef37d190e5c6099c25c7a65f841a4f9dfbf19b78ff87d42ada37e5052.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e60f1dcef37d190e5c6099c25c7a65f841a4f9dfbf19b78ff87d42ada37e5052.pdf",
+      "file_id": "ba1de9819798476582d4157c3d15f552",
+      "file_name": "25-0426+BLDG+417+ADA+RAMP+-+SUBMITTAL+REGISTER.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 63112,
+      "sha256": "e60f1dcef37d190e5c6099c25c7a65f841a4f9dfbf19b78ff87d42ada37e5052"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f49507682571467ab56dc0b4b646846e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2c2a5557695317ada6dc2c443f8537c4aeaca871f5784ee624d9ea005c7c9bf6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2c2a5557695317ada6dc2c443f8537c4aeaca871f5784ee624d9ea005c7c9bf6.pdf",
+      "file_id": "f49507682571467ab56dc0b4b646846e",
+      "file_name": "25-0427+BLDG+66+ADA+RAMP+-+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1326835,
+      "sha256": "2c2a5557695317ada6dc2c443f8537c4aeaca871f5784ee624d9ea005c7c9bf6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdfedbecddbd4e00b6ddfd612eb57ed6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9535c98c06c6080312866a3b471dcb0b11cd542f70f91687efc16a56b5605633.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9535c98c06c6080312866a3b471dcb0b11cd542f70f91687efc16a56b5605633.pdf",
+      "file_id": "fdfedbecddbd4e00b6ddfd612eb57ed6",
+      "file_name": "Combined+DIV+01+specs+small+projects.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 568081,
+      "sha256": "9535c98c06c6080312866a3b471dcb0b11cd542f70f91687efc16a56b5605633"
+    }
+  ],
+  "_mirror_hash": "bdbea9906f14e80ce8a0932cda09f511ed278572d374d4b9b632faa2d784e6f2",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.558860+00:00"
+}

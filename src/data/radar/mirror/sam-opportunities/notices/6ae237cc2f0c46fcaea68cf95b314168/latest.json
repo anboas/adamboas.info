@@ -1,0 +1,45 @@
+{
+  "id": "sam-6ae237cc2f0c46fcaea68cf95b314168",
+  "title": "VALVE ASSEMBLY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ae237cc2f0c46fcaea68cf95b314168",
+  "opportunity_url": "https://sam.gov/opp/6ae237cc2f0c46fcaea68cf95b314168/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6ae237cc2f0c46fcaea68cf95b314168/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6ae237cc2f0c46fcaea68cf95b314168",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QDA81",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ae237cc2f0c46fcaea68cf95b314168",
+  "detail_text": "CASREP Folder 25312-0004, Part Number 285199-0003, NSN: 7HH 4820 017253030, VALVE ASSEMBLY, QTY 1, 100% 180 Day Option",
+  "detail_text_length": 118,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ce11901ae5f4f4788a3686b9b5810b3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ce11901ae5f4f4788a3686b9b5810b3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c822841d9ee3594c8cd2e8ccfc8e0a3d7c9c86c26a59b495c9146f25c58f2764.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c822841d9ee3594c8cd2e8ccfc8e0a3d7c9c86c26a59b495c9146f25c58f2764.pdf",
+      "file_id": "2ce11901ae5f4f4788a3686b9b5810b3",
+      "file_name": "3.01_RFQ_N0010426QDA81_25312-0004.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 456039,
+      "sha256": "c822841d9ee3594c8cd2e8ccfc8e0a3d7c9c86c26a59b495c9146f25c58f2764"
+    }
+  ],
+  "_mirror_hash": "befa30ebb44df0d6a822480b77ab90a88179bead365b81f3994c1dc26b75e9d3",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.532635+00:00"
+}

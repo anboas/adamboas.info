@@ -1,0 +1,46 @@
+{
+  "id": "sam-c2e9492c89d646cfb7b2fbae7c254a2c",
+  "title": "VA - Direct Internet Access Service or Broadband for Puerto Rico",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2e9492c89d646cfb7b2fbae7c254a2c",
+  "opportunity_url": "https://sam.gov/opp/c2e9492c89d646cfb7b2fbae7c254a2c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c2e9492c89d646cfb7b2fbae7c254a2c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c2e9492c89d646cfb7b2fbae7c254a2c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0351",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2025-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2e9492c89d646cfb7b2fbae7c254a2c",
+  "detail_text": "The Department of Veterans Affairs (VA), Office of Information & Technology (OIT), Connectivity & Collaboration Services (CCS) has a requirement for Direct Internet Access Service or Broadband services for the following locations in Puerto Rico. The effort includes installation, and maintenance including repair/replacement. Hato Rey VA Clinic (VA Heroes Domiciliary) 653 Munoz Rivera San Juan, PR 00918-3631 300M Direct Internet Access Service or Broadband equivalent Morovis National Cemetery 900 Road 137 Morovis, PR 00687 100M Direct Internet Access Service or Broadband equivalent RESPONSE SUBMISSION Please submit responses via email to TAC-AProcurementTeamE@va.gov by 2:00 PM EST, April 20, 2026.",
+  "detail_text_length": 704,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ff5665bf5bc4bbdb20b1276f42fe1ae/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1ff5665bf5bc4bbdb20b1276f42fe1ae/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf119a3b4508340eb01b5d666d15cbbf3b6a0c4d16f49881a683ae646fd0c83d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf119a3b4508340eb01b5d666d15cbbf3b6a0c4d16f49881a683ae646fd0c83d.docx",
+      "file_id": "1ff5665bf5bc4bbdb20b1276f42fe1ae",
+      "file_name": "RFI+BroadBand+for+Puerto+Rico.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27019,
+      "sha256": "bf119a3b4508340eb01b5d666d15cbbf3b6a0c4d16f49881a683ae646fd0c83d"
+    }
+  ],
+  "_mirror_hash": "c45b4feddc99adffd9e8b77ea122bfe225872750030f27a0d8871a315792e2d9",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.573481+00:00"
+}

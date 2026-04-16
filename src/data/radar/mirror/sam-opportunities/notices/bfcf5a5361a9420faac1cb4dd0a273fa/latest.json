@@ -1,0 +1,46 @@
+{
+  "id": "sam-bfcf5a5361a9420faac1cb4dd0a273fa",
+  "title": "Drone light Show",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfcf5a5361a9420faac1cb4dd0a273fa",
+  "opportunity_url": "https://sam.gov/opp/bfcf5a5361a9420faac1cb4dd0a273fa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bfcf5a5361a9420faac1cb4dd0a273fa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bfcf5a5361a9420faac1cb4dd0a273fa",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "191N6526Q0028-A0002",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US  EMBASSY NEW DELHI",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfcf5a5361a9420faac1cb4dd0a273fa",
+  "detail_text": "Solicitation is amended to respond queries raised at the time Prebid conference. Refer attached SF30 for details.",
+  "detail_text_length": 113,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb97c566c9494859b5194a419483be8e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb97c566c9494859b5194a419483be8e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6cad65dd20ccd5b872e4ae6de89a7e80157a1ea5d968bbf7c253690c6d77f54e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6cad65dd20ccd5b872e4ae6de89a7e80157a1ea5d968bbf7c253690c6d77f54e.pdf",
+      "file_id": "cb97c566c9494859b5194a419483be8e",
+      "file_name": "191N6526Q0028-A002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 506119,
+      "sha256": "6cad65dd20ccd5b872e4ae6de89a7e80157a1ea5d968bbf7c253690c6d77f54e"
+    }
+  ],
+  "_mirror_hash": "ba26d449184c0790f36b11b4ca9f4c38c5c3e0ea7cdec333e5df3e5863ca2fbb",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.101814+00:00"
+}

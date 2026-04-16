@@ -1,0 +1,68 @@
+{
+  "id": "sam-b0abc2cdc3174a89b945fb29ffe1762c",
+  "title": "Electrostatic Paint Guns",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b0abc2cdc3174a89b945fb29ffe1762c",
+  "opportunity_url": "https://sam.gov/opp/b0abc2cdc3174a89b945fb29ffe1762c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b0abc2cdc3174a89b945fb29ffe1762c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b0abc2cdc3174a89b945fb29ffe1762c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "A26-044",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8125  AFSC PZIMA",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b0abc2cdc3174a89b945fb29ffe1762c",
+  "detail_text": "\"Amendment 0001 posted on 14 April to increase the qty\" The 76th Aircraft Maintenance Group (AMXG) is requesting utilization of funds for thepurchase of twenty-four (24) Graco H85T10 ProXP85 Electrostatic air assisted airless manual PaintGuns with 613 tips. 1.The requested equipment item descriptions/specifications are outlined below. a.Paint guns shall be new Graco ProXP85 model H85T10 air assisted airless electrostaticmanual paint guns. •Model Number: H85T10 •Quantity: twenty-four (24) •Must be a high-pressure electrostatic spray gun rated for 85kV. •Must be 100% compatible with the facility's existing Graco paint systems. •Paint guns shall include an internal power supply rated for 85 kV and feature a StandardDisplay. •Paint guns shall be FM rated for use in Class I, Div. I Hazardous locations using group Dmaterials or be intrinsically safe. •Paint guns shall be compatible with high solid, epoxy, and polyurethane coatings,including MIL-PRF-23377 epoxy primers and MIL-PRF-85285 polyurethane topcoats. •Paint gun shall have 1/4 inch fluid and air inlets to connect to existing paint cart systems.The air inlet shall be left handed male NPSM and the fluid inlet shall be male NPSM. •Paint gun shall be provided with a 613 spray tip. •Paint gun fluid line shall have a 100 mesh inline fluid filter.",
+  "detail_text_length": 1312,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b36f6960eef4f2bb37a764db0ba35d9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b84969d537944d88818e26614827a407/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6a6cf1865cf496687dc857c62b19f5e/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b36f6960eef4f2bb37a764db0ba35d9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/51ac6bc814e247ab9f657b54a754136c1f0155261539f95a7ac3c75a6dab8ed0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/51ac6bc814e247ab9f657b54a754136c1f0155261539f95a7ac3c75a6dab8ed0.pdf",
+      "file_id": "6b36f6960eef4f2bb37a764db0ba35d9",
+      "file_name": "A26-044+FY26+Electrostatic+Paint+Guns++-+ID+-+04-14-26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 171224,
+      "sha256": "51ac6bc814e247ab9f657b54a754136c1f0155261539f95a7ac3c75a6dab8ed0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b84969d537944d88818e26614827a407/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d7b6a1640ad1296df7a77479a4393b0b6770f7971640c555e7f9b9069bba6dc5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d7b6a1640ad1296df7a77479a4393b0b6770f7971640c555e7f9b9069bba6dc5.pdf",
+      "file_id": "b84969d537944d88818e26614827a407",
+      "file_name": "Solicitation+Amendment+-+FA812526Q00400001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 617040,
+      "sha256": "d7b6a1640ad1296df7a77479a4393b0b6770f7971640c555e7f9b9069bba6dc5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6a6cf1865cf496687dc857c62b19f5e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dcfa6d8711cd0e2fb9be1ef8ddfdcfcc81c19f9f854ee90761b729254bff42cb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dcfa6d8711cd0e2fb9be1ef8ddfdcfcc81c19f9f854ee90761b729254bff42cb.pdf",
+      "file_id": "c6a6cf1865cf496687dc857c62b19f5e",
+      "file_name": "Solicitation+Amendment+FA812526Q00400001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 390793,
+      "sha256": "dcfa6d8711cd0e2fb9be1ef8ddfdcfcc81c19f9f854ee90761b729254bff42cb"
+    }
+  ],
+  "_mirror_hash": "e542e9227fbda2c147b30e09ad270209d3450678871d4df50ff1de63752f3fbe",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.733174+00:00"
+}

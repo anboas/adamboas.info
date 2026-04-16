@@ -1,0 +1,46 @@
+{
+  "id": "sam-f6e37839e4304751801ef29d9ac280a3",
+  "title": "J041--CW Coil Replacement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6e37839e4304751801ef29d9ac280a3",
+  "opportunity_url": "https://sam.gov/opp/f6e37839e4304751801ef29d9ac280a3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f6e37839e4304751801ef29d9ac280a3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f6e37839e4304751801ef29d9ac280a3",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24826Q0555",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6e37839e4304751801ef29d9ac280a3",
+  "detail_text": "The Department of Veterans Affairs (VA) is seeking a qualified contractor to provide all necessary labor, materials, tools, and equipment to procure and install four new coils at the Lake City VA Medical Center, located at 619 S. Marion Ave, Lake City, FL 32025. The contractor will also be responsible for the safe removal and disposal of the existing coils. Key requirements for the project include: The replacement of each coil must be performed while ensuring the Air Handling Unit (AHU) is returned online and fully functional before moving on to the next coil. The work must be conducted with minimal disruption to patient care and hospital operations. The contractor must adhere to all safety protocols and ensure timely and efficient completion of the project.",
+  "detail_text_length": 768,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f9c870eaefb43f08e435f146ab781a4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f9c870eaefb43f08e435f146ab781a4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0bce6df86822ad2c44cfe0de935615b5e27c439e0185487473e1a19de45001f8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0bce6df86822ad2c44cfe0de935615b5e27c439e0185487473e1a19de45001f8.docx",
+      "file_id": "9f9c870eaefb43f08e435f146ab781a4",
+      "file_name": "36C24826Q0555_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24756,
+      "sha256": "0bce6df86822ad2c44cfe0de935615b5e27c439e0185487473e1a19de45001f8"
+    }
+  ],
+  "_mirror_hash": "8faa23123a37ee5bc9c1442f1cf4da020d6b9d8b6df924e91a752fc12358c085",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.734138+00:00"
+}

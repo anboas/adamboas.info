@@ -1,0 +1,57 @@
+{
+  "id": "sam-680a58d37db34058b1a227c7494cd8cf",
+  "title": "J065--Award Notice for Omnicell Support IDIQ VISN23",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=680a58d37db34058b1a227c7494cd8cf",
+  "opportunity_url": "https://sam.gov/opp/680a58d37db34058b1a227c7494cd8cf/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/680a58d37db34058b1a227c7494cd8cf/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "680a58d37db34058b1a227c7494cd8cf",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C26326Q0378",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 23 (36C263)",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=680a58d37db34058b1a227c7494cd8cf",
+  "detail_text": "Award Description: 36C26326D0046 Omnicell Maintenance Support Services IDIQ for VISN23 Contracting office: Department of Veteran Affairs Network Contracting Office 23 1303 5TH STREET, SUITE 300 CORALVILLE IA 52241 Contractor receiving the award: OMNICELL, INC. 500 CRANBERRY WOODS DR CRANBERRY TOWNSHIP PA 16066 Contract award dollar amount: $2,355,943.50 Contract award date: 4/14/2026",
+  "detail_text_length": 386,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d895886f1f2a44749440132e332cde7d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f5d4cfe605ac4043a1f84264b0f8c812/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d895886f1f2a44749440132e332cde7d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fb429f66f4b24113db922ee3ca971fde5183f8e7eb8486e9b2cc8a5050e7c005.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fb429f66f4b24113db922ee3ca971fde5183f8e7eb8486e9b2cc8a5050e7c005.pdf",
+      "file_id": "d895886f1f2a44749440132e332cde7d",
+      "file_name": "Omnicell+JA_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1432403,
+      "sha256": "fb429f66f4b24113db922ee3ca971fde5183f8e7eb8486e9b2cc8a5050e7c005"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f5d4cfe605ac4043a1f84264b0f8c812/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2e8488e9920fab5919a84f6d61376ae01405598512af0ac60d9e6e8de4a192e7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2e8488e9920fab5919a84f6d61376ae01405598512af0ac60d9e6e8de4a192e7.docx",
+      "file_id": "f5d4cfe605ac4043a1f84264b0f8c812",
+      "file_name": "36C26326D0046_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14398,
+      "sha256": "2e8488e9920fab5919a84f6d61376ae01405598512af0ac60d9e6e8de4a192e7"
+    }
+  ],
+  "_mirror_hash": "3ae2e5530aad298b20b46a7a792b5186ea6f5045cba158d2360ecb7f7f379605",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.897292+00:00"
+}

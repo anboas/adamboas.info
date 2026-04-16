@@ -1,0 +1,57 @@
+{
+  "id": "sam-395cac04d914410bbac366ad9d8f809a",
+  "title": "SHROUD,INFLIGHT REFUELING",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=395cac04d914410bbac366ad9d8f809a",
+  "opportunity_url": "https://sam.gov/opp/395cac04d914410bbac366ad9d8f809a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/395cac04d914410bbac366ad9d8f809a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "395cac04d914410bbac366ad9d8f809a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601869",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=395cac04d914410bbac366ad9d8f809a",
+  "detail_text": "SEE ATTACHED",
+  "detail_text_length": 12,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75745de0da794236a5f6e2345e21f8cb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba0047691df94646aeac267276caec92/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75745de0da794236a5f6e2345e21f8cb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/674274f66db13e312c274e50f616fff33ac685ea3c398d859fdc95f0fd238605.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/674274f66db13e312c274e50f616fff33ac685ea3c398d859fdc95f0fd238605.pdf",
+      "file_id": "75745de0da794236a5f6e2345e21f8cb",
+      "file_name": "MRSSS+Form+FD20302601869.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 708156,
+      "sha256": "674274f66db13e312c274e50f616fff33ac685ea3c398d859fdc95f0fd238605"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba0047691df94646aeac267276caec92/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e41a9089c9277361eb8ad0fc02b0858c4e1fe7e22232932f6f935907433f85a8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e41a9089c9277361eb8ad0fc02b0858c4e1fe7e22232932f6f935907433f85a8.pdf",
+      "file_id": "ba0047691df94646aeac267276caec92",
+      "file_name": "FD20302601869.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 708166,
+      "sha256": "e41a9089c9277361eb8ad0fc02b0858c4e1fe7e22232932f6f935907433f85a8"
+    }
+  ],
+  "_mirror_hash": "eebe8be82b35224073d615568dc569016196601b931bb41b1538db0588b4f146",
+  "_mirror_run_id": "20260416T134225Z",
+  "_mirror_recorded_at": "2026-04-16T13:43:54.792998+00:00"
+}

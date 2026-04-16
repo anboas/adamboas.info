@@ -1,0 +1,57 @@
+{
+  "id": "sam-8d893aa133c64daf88a000611b01c855",
+  "title": "To build a plate for the KERMIT on the ISS.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d893aa133c64daf88a000611b01c855",
+  "opportunity_url": "https://sam.gov/opp/8d893aa133c64daf88a000611b01c855/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8d893aa133c64daf88a000611b01c855/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8d893aa133c64daf88a000611b01c855",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "80NSSC26929877Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8d893aa133c64daf88a000611b01c855",
+  "detail_text": "Please see the attached documents for details.",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05e3a65285554c15be7537d7fad55222/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1649e8607e474293ad2ca5c3a86d2bb4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05e3a65285554c15be7537d7fad55222/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bbd14f9d55ef1c92e4a0464e2714558af8a3edcd1868749919502f73c7c8230d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bbd14f9d55ef1c92e4a0464e2714558af8a3edcd1868749919502f73c7c8230d.pdf",
+      "file_id": "05e3a65285554c15be7537d7fad55222",
+      "file_name": "SATPC0040790+Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 261833,
+      "sha256": "bbd14f9d55ef1c92e4a0464e2714558af8a3edcd1868749919502f73c7c8230d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1649e8607e474293ad2ca5c3a86d2bb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3f10be3194421073362aeaae13c0038c7e5813de3d93b59d7744dc1066a1feb2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3f10be3194421073362aeaae13c0038c7e5813de3d93b59d7744dc1066a1feb2.pdf",
+      "file_id": "1649e8607e474293ad2ca5c3a86d2bb4",
+      "file_name": "SATPC0040790+Tab+04+4+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148987,
+      "sha256": "3f10be3194421073362aeaae13c0038c7e5813de3d93b59d7744dc1066a1feb2"
+    }
+  ],
+  "_mirror_hash": "32776229e3dd36a3d7a545be3c40256cf03a8f3352cc60f7d6ebded04277fa09",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.100783+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-8821c48e67644e45a08e2b8dd4d4cce8",
+  "title": "015 Power Converter Modernization BOA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8821c48e67644e45a08e2b8dd4d4cce8",
+  "opportunity_url": "https://sam.gov/opp/8821c48e67644e45a08e2b8dd4d4cce8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8821c48e67644e45a08e2b8dd4d4cce8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8821c48e67644e45a08e2b8dd4d4cce8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "P269",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.SSP.STRATEGIC SYSTEMS PROGRAMS",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8821c48e67644e45a08e2b8dd4d4cce8",
+  "detail_text": "See attached SSN and SOW",
+  "detail_text_length": 24,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0553f2838f454f33a202564afdbd55eb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2156c13bef0a463db7a383bb48261a1b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0553f2838f454f33a202564afdbd55eb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/862c1a80d0ec9d43faaf3c304ad90122d5ffbaa5e22190e012575973d6ace592.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/862c1a80d0ec9d43faaf3c304ad90122d5ffbaa5e22190e012575973d6ace592.docx",
+      "file_id": "0553f2838f454f33a202564afdbd55eb",
+      "file_name": "Encl+1_SOW+-FY26+015+Converter+Modernization+20260407.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 47075,
+      "sha256": "862c1a80d0ec9d43faaf3c304ad90122d5ffbaa5e22190e012575973d6ace592"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2156c13bef0a463db7a383bb48261a1b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d975108ab9e5eee06562fbadd222e237935e16c68fd775fa02963b3c0bf77fc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d975108ab9e5eee06562fbadd222e237935e16c68fd775fa02963b3c0bf77fc.docx",
+      "file_id": "2156c13bef0a463db7a383bb48261a1b",
+      "file_name": "Sources+Sought+Notice+-SSN-+FY26+015+Power+Converter+Modernization.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40382,
+      "sha256": "2d975108ab9e5eee06562fbadd222e237935e16c68fd775fa02963b3c0bf77fc"
+    }
+  ],
+  "_mirror_hash": "c1bf0d71a23efcc80cec124496d78bf64fddeddd96420166496d2177d26591ac",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.106868+00:00"
+}

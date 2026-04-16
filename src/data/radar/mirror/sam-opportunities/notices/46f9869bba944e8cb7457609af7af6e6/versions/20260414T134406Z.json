@@ -1,0 +1,58 @@
+{
+  "id": "sam-46f9869bba944e8cb7457609af7af6e6",
+  "title": "Sources Sought Code Blue Paging System Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=46f9869bba944e8cb7457609af7af6e6",
+  "opportunity_url": "https://sam.gov/opp/46f9869bba944e8cb7457609af7af6e6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/46f9869bba944e8cb7457609af7af6e6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "46f9869bba944e8cb7457609af7af6e6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "VA-26-00047249",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=46f9869bba944e8cb7457609af7af6e6",
+  "detail_text": "The Department of Veterans Affairs (VA), Office of Procurement Acquisition and Logistics, Technology Acquisition Center (TAC), is conducting market research to identify potential sources capable of providing Code Blue Paging System Maintenance. See specific requirements in the attached DRAFT Product Description.",
+  "detail_text_length": 313,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/01e8962107f4421499410d70b3151998/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/465cbb484b7941ff92c0f62f8a421f3c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/01e8962107f4421499410d70b3151998/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ca1a5437d0e4d2f1c18ff5b0d41481c93b7f982ee0424c675ace246aca51f356.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ca1a5437d0e4d2f1c18ff5b0d41481c93b7f982ee0424c675ace246aca51f356.pdf",
+      "file_id": "01e8962107f4421499410d70b3151998",
+      "file_name": "P02+-+MR+RFI+Contracting+Opportunities.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 130492,
+      "sha256": "ca1a5437d0e4d2f1c18ff5b0d41481c93b7f982ee0424c675ace246aca51f356"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/465cbb484b7941ff92c0f62f8a421f3c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bafa06d07f1f77f3b60e1a6e2f4094064640e2114c2e3019b69a0f2b2796a629.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bafa06d07f1f77f3b60e1a6e2f4094064640e2114c2e3019b69a0f2b2796a629.pdf",
+      "file_id": "465cbb484b7941ff92c0f62f8a421f3c",
+      "file_name": "P02+-+PD+Code+Blue+Paging+System+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 389291,
+      "sha256": "bafa06d07f1f77f3b60e1a6e2f4094064640e2114c2e3019b69a0f2b2796a629"
+    }
+  ],
+  "_mirror_hash": "251a497c5e8d82675e3df78a1437f4e54c56270a4e29f8b32722407e35f2e164",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.010402+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "sam-d3ee4eb8c6d246788033b10dcccc72fa",
+  "title": "Attritable ISR Aircraft Request for Information",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3ee4eb8c6d246788033b10dcccc72fa",
+  "opportunity_url": "https://sam.gov/opp/d3ee4eb8c6d246788033b10dcccc72fa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d3ee4eb8c6d246788033b10dcccc72fa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d3ee4eb8c6d246788033b10dcccc72fa",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "FA8629-26-RFI-4ISR",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3ee4eb8c6d246788033b10dcccc72fa",
+  "detail_text": "The Air Force Life Cycle Management Center (AFLCMC), Intelligence, Surveillance, and Reconnaissance (ISR) & Special Operations Forces (SOF) Directorate is seeking information from industry on capabilities to provide low-cost, attritable unmanned airborne platforms for Intelligence, Surveillance, and Reconnaissance (ISR) missions. The objective is to identify sources that can deliver ISR mass for operational utility and suitability in a rapid and affordable manner. The Government is open to all unmanned platform types and encourages innovative solutions. This Request for Information (RFI) is for market research only and will not result in a contract award. See the attached documents for a complete description of the desired performance characteristics and submission instructions.",
+  "detail_text_length": 789,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0dff6fd37e324dacb281a6a6fa4735e3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4749cb05f90246f7bbc78a6735f1b94b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e572731cd88471787dff5840f1174d6/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0dff6fd37e324dacb281a6a6fa4735e3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a5fcd6060b3b7f649bfa7af537f59bcd761f48fd62ad8023c77aca6e340da4a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a5fcd6060b3b7f649bfa7af537f59bcd761f48fd62ad8023c77aca6e340da4a.pdf",
+      "file_id": "0dff6fd37e324dacb281a6a6fa4735e3",
+      "file_name": "RFI+Instructions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 178953,
+      "sha256": "4a5fcd6060b3b7f649bfa7af537f59bcd761f48fd62ad8023c77aca6e340da4a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4749cb05f90246f7bbc78a6735f1b94b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd18da6266a57c473a960d2c7471ad3869655093352ecab6343466e81d3602d1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd18da6266a57c473a960d2c7471ad3869655093352ecab6343466e81d3602d1.pdf",
+      "file_id": "4749cb05f90246f7bbc78a6735f1b94b",
+      "file_name": "Attritable+ISR+Aircraft+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 352415,
+      "sha256": "cd18da6266a57c473a960d2c7471ad3869655093352ecab6343466e81d3602d1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e572731cd88471787dff5840f1174d6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1f086a2d0419dbf4e40e051eaecd49020b8df2ae4b2a62e74d8241c1bfea8ea9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1f086a2d0419dbf4e40e051eaecd49020b8df2ae4b2a62e74d8241c1bfea8ea9.pdf",
+      "file_id": "8e572731cd88471787dff5840f1174d6",
+      "file_name": "Respondent+Question+Sheet.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 112106,
+      "sha256": "1f086a2d0419dbf4e40e051eaecd49020b8df2ae4b2a62e74d8241c1bfea8ea9"
+    }
+  ],
+  "_mirror_hash": "2bf3a7a46dcc5b20c88bf60c055ac3e2484484e62e46784455ff32bb0f1ba4ee",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.536287+00:00"
+}

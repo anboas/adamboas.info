@@ -1,0 +1,57 @@
+{
+  "id": "sam-19292b4db4b1421faa9eba911d1262de",
+  "title": "Residential Reentry Services and Home Confinement Services located within the Hampton Roads, Virginia Metro Area to include the cities of Virginia Beach, Norfolk, Chesapeake, Newport News, Hampton, Portsmouth, Suffolk, Poquoson, and Williamsburg.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=19292b4db4b1421faa9eba911d1262de",
+  "opportunity_url": "https://sam.gov/opp/19292b4db4b1421faa9eba911d1262de/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/19292b4db4b1421faa9eba911d1262de/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "19292b4db4b1421faa9eba911d1262de",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "15BRRC26R00000002",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.RESIDENTIAL REENTRY - CO",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=19292b4db4b1421faa9eba911d1262de",
+  "detail_text": "This announcement is posted as a Request for Information (RFI) only for an intended upcoming solicitation that will be posted on SAM.gov. This RFI is being issued to determine whether or not there are qualified sources that will be able to meet the requirements of the upcoming solicitation (Request for Proposal) (RFP). The pending solicitation (RFP) will be for both Residential Reentry Center (RRC) services and Home Confinement (HC) services for male and female offenders located within the Hampton Roads, Virginia Metro Area to include the cities of Virginia Beach, Norfolk, Chesapeake, Newport News, Hampton, Portsmouth, Suffolk, Poquoson, and Williamsburg. The geographical radius for Home Confinement is within 100 miles of facility. 15BRRC26R00000002 will be available on or about May 30, 2026, it will be distributed solely through SAM.gov. Hard copies of the solicitation will not be available. SAM.gov provides downloading instructions. Future information about this acquisition will also be distributed through SAM.gov. Interested parties are responsible for monitoring SAM to ensure they have the most up-to-date information about the acquisition. The estimate closing date of the RFP will be 60 days after it is issued. Please see the attached RFI documents and RRC Statement of Work (SOW)",
+  "detail_text_length": 1304,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bd5863e1c7e4e16978254e901ab085e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/754c4751fcf544e882bcf13050bbd051/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0bd5863e1c7e4e16978254e901ab085e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5b5e140acb7896827a150553defa891174ad7c58d5f05532ae1841fd6de8a624.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5b5e140acb7896827a150553defa891174ad7c58d5f05532ae1841fd6de8a624.pdf",
+      "file_id": "0bd5863e1c7e4e16978254e901ab085e",
+      "file_name": "RFI+for+RRC+in+Hampton+Roads+VA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 312859,
+      "sha256": "5b5e140acb7896827a150553defa891174ad7c58d5f05532ae1841fd6de8a624"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/754c4751fcf544e882bcf13050bbd051/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/871d84d61829799f96a000694c9eba081cf6e5b5588ff1126bf5045afac365fa.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/871d84d61829799f96a000694c9eba081cf6e5b5588ff1126bf5045afac365fa.pdf",
+      "file_id": "754c4751fcf544e882bcf13050bbd051",
+      "file_name": "RRC+SOW+March+2022+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1307915,
+      "sha256": "871d84d61829799f96a000694c9eba081cf6e5b5588ff1126bf5045afac365fa"
+    }
+  ],
+  "_mirror_hash": "51fbdec63e4f4b1f98f2a311466da4b512a84906a3a4ec8bbe9f4a2344fda6f1",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.248083+00:00"
+}

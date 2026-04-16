@@ -1,0 +1,57 @@
+{
+  "id": "sam-3789313ce2ab4d13b4e4c4110c491a3f",
+  "title": "STARBASE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3789313ce2ab4d13b4e4c4110c491a3f",
+  "opportunity_url": "https://sam.gov/opp/3789313ce2ab4d13b4e4c4110c491a3f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3789313ce2ab4d13b4e4c4110c491a3f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3789313ce2ab4d13b4e4c4110c491a3f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA252126QB073",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA2521  45 CONS PK",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3789313ce2ab4d13b4e4c4110c491a3f",
+  "detail_text": "The purpose of this effort is to obtain the services and expertise necessary for the operation and management of the DoD STARBASE Program at Patrick Space Force Base (PSFB), Florida. The Contractor shall provide all services for the management and operation of the STARBASE program in accordance with the PWS",
+  "detail_text_length": 308,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8c8698c1c80b4811a728a9f12466b484/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfc3d575f6234fddaaeb6cb55b2d455d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8c8698c1c80b4811a728a9f12466b484/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/77a751d9bd033ae7d622d001d00d9c1097e3bf7f03dd09ee6a160b77ea30c5eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/77a751d9bd033ae7d622d001d00d9c1097e3bf7f03dd09ee6a160b77ea30c5eb.pdf",
+      "file_id": "8c8698c1c80b4811a728a9f12466b484",
+      "file_name": "STARBASEDraftPWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 334860,
+      "sha256": "77a751d9bd033ae7d622d001d00d9c1097e3bf7f03dd09ee6a160b77ea30c5eb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfc3d575f6234fddaaeb6cb55b2d455d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/973dda1330002317094c238f0f7670d762a884fef31b57894076b6081ae1b4bd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/973dda1330002317094c238f0f7670d762a884fef31b57894076b6081ae1b4bd.pdf",
+      "file_id": "cfc3d575f6234fddaaeb6cb55b2d455d",
+      "file_name": "SS_26QB073+STARBASE.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 106209,
+      "sha256": "973dda1330002317094c238f0f7670d762a884fef31b57894076b6081ae1b4bd"
+    }
+  ],
+  "_mirror_hash": "2d82d62a7c1b7ae2a17f32c2300b72b110267b6789d3d4e89c08bbc54ee8d2e3",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.236512+00:00"
+}

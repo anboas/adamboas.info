@@ -1,0 +1,46 @@
+{
+  "id": "sam-95eb0dbb710d49e4ad6db13b65cca651",
+  "title": "AFPSL Load Cell Exchange",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95eb0dbb710d49e4ad6db13b65cca651",
+  "opportunity_url": "https://sam.gov/opp/95eb0dbb710d49e4ad6db13b65cca651/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/95eb0dbb710d49e4ad6db13b65cca651/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "95eb0dbb710d49e4ad6db13b65cca651",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "26M-630ABCDEFG-FO",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMBAT READINESS.FA2263 AFLCMC ROMK AFMETCAL",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95eb0dbb710d49e4ad6db13b65cca651",
+  "detail_text": "AFMETCAL at Heath OH intends to solicit and award a Sole Source Firm Fixed Price (FFP) contract under Simplified Acquisition Procedures (SAP) in accordance with Revolutionary FAR Overhaul (RFO) Part 12 Acquisition of Commercial Products and Commercial Services and RFO 12.201-1 Simplified Procedures for the purchase of various load cells and indicators for the AFPSL Load Cell Exchange to Tovey Engineering, Inc. (Tovey) (Cage 1TY59). Tovey is the manufacturer of the original calibration system. Operating the calibration system involves proprietary technology and software which the manufacturer is unwilling to release to another company. For this requirement, there is no other action that can be accomplished to generate competition without a substantial duplication of costs. This procurement will provide the best value to the Government at this time. The Government envisions a Firm Fixed Price type contract. The anticipated quantity is 175 units over a 5 year period. The requirement is for various load cells and indicators for the AFPSL Load Cell Exchange in accordance with the Purchase Description, which is available for download at this site. A copy of the approved J&A is also posted with this notification. THIS NOTICE OF INTENT IS NOT A REQUEST FOR COMPETITIVE PROPOSALS OR QUOTATIONS. No solicitation package will be issued. A determination by the Government not to compete this action based on responses received is solely within the discretion of the Government. All responsible sources may submit a capability statement, proposal, or quotation which shall be considered by AFMETCAL. Interested sources must respond in writing with clear and convincing evidence to support their ability to provide the required item within fifteen (15) days of this publication. Interested parties should submit questions to Christine Patterson at christine.patterson.1@us.af.mil. Only electronic submissions will be reviewed.",
+  "detail_text_length": 1932,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5bf331bf55d4138b3be34eb89fa328d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5bf331bf55d4138b3be34eb89fa328d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c3a63738ba7422549469fe9985bdca7713c9c2de4f11d4749e91376ae9a7097.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c3a63738ba7422549469fe9985bdca7713c9c2de4f11d4749e91376ae9a7097.pdf",
+      "file_id": "a5bf331bf55d4138b3be34eb89fa328d",
+      "file_name": "JA_Rev0_26M-630A-FO+AFPSL+Load+Cell+Exchange.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 811784,
+      "sha256": "1c3a63738ba7422549469fe9985bdca7713c9c2de4f11d4749e91376ae9a7097"
+    }
+  ],
+  "_mirror_hash": "bbae4116e1ae88dd75f4af0433ec109cf8ec115fea3185825a250c0c8d888a2d",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.803732+00:00"
+}

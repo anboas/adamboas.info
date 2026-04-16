@@ -1,0 +1,59 @@
+{
+  "id": "sam-f4ac9892ff9841a8853cad6ed2b1a04e",
+  "title": "All-Terrain Vehicles (ATVs) - RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4ac9892ff9841a8853cad6ed2b1a04e",
+  "opportunity_url": "https://sam.gov/opp/f4ac9892ff9841a8853cad6ed2b1a04e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f4ac9892ff9841a8853cad6ed2b1a04e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f4ac9892ff9841a8853cad6ed2b1a04e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "ATVs_PR20157892",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.BORDER ENFORCEMENT CONTRACTING DIVISION",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4ac9892ff9841a8853cad6ed2b1a04e",
+  "detail_text": "U.S. Customs and Border Protection (CBP) is conducting market research to procure of a total of 285 All-Terrain Vehicle (ATV) units. This is Request for Information (RFI) released pursuant to the Revolutionary FAR Overhaul, Part 10 - Market Research. This RFI's purpose is to obtain market information on viable sources, answers to specific questions, and industry comments relating to the attached full RFI. ATTACHEMENTS: Request for Information (RFI) - All-Terrain Vehicles (ATVs) Draft Statement of Work (SOW) - All-Terrain Vehicles (ATVs)",
+  "detail_text_length": 542,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddfc4a780e7540cfa387115fe0f92b01/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e44ddce51e664a24a8d927dd430618ea/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddfc4a780e7540cfa387115fe0f92b01/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ee675d31a986e6c5132593cf60527090a75b060a3fd2a07ba8202c9f67191e58.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ee675d31a986e6c5132593cf60527090a75b060a3fd2a07ba8202c9f67191e58.pdf",
+      "file_id": "ddfc4a780e7540cfa387115fe0f92b01",
+      "file_name": "SOW-+All-Terrain+Vehicles+-ATVs-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 281812,
+      "sha256": "ee675d31a986e6c5132593cf60527090a75b060a3fd2a07ba8202c9f67191e58"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e44ddce51e664a24a8d927dd430618ea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/88e25b791a5612de88256146a4d224fe6b33b31bb7317d49477589bf415d1294.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/88e25b791a5612de88256146a4d224fe6b33b31bb7317d49477589bf415d1294.pdf",
+      "file_id": "e44ddce51e664a24a8d927dd430618ea",
+      "file_name": "REQUEST+FOR+INFORMATION+-+All-Terrain+Vehicles+-ATVs-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 138796,
+      "sha256": "88e25b791a5612de88256146a4d224fe6b33b31bb7317d49477589bf415d1294"
+    }
+  ],
+  "_mirror_hash": "0aa1c658f66a2765a3fa1fdd091b0513a0806dc614724545d01c512a4e7f20a4",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.496892+00:00"
+}

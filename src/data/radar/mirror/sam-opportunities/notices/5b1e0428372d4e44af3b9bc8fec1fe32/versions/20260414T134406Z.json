@@ -1,0 +1,46 @@
+{
+  "id": "sam-5b1e0428372d4e44af3b9bc8fec1fe32",
+  "title": "Annual Review SPE4A121G0022",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b1e0428372d4e44af3b9bc8fec1fe32",
+  "opportunity_url": "https://sam.gov/opp/5b1e0428372d4e44af3b9bc8fec1fe32/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5b1e0428372d4e44af3b9bc8fec1fe32/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5b1e0428372d4e44af3b9bc8fec1fe32",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "AnnualReviewSPE4A121G0022-2026",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b1e0428372d4e44af3b9bc8fec1fe32",
+  "detail_text": "This is an annual review of the NSNs that are part of the priced BOA SPE4A121G0022 with BELL (OEM) CAGE 97499. A list of NSNs is attached. All NSNs are sole source to BELL (OEM) CAGE 97499. Any NSNs found to be competitive will be removed.",
+  "detail_text_length": 239,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fae3028bfb804cbdb9fe0da08fff359f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fae3028bfb804cbdb9fe0da08fff359f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f4258e0faff206fdb2e690c10e8908f14258a249ae39646d13292f8347d73cc5.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f4258e0faff206fdb2e690c10e8908f14258a249ae39646d13292f8347d73cc5.xlsx",
+      "file_id": "fae3028bfb804cbdb9fe0da08fff359f",
+      "file_name": "2026_SYNOPSIS_NSN_LIST_G0022.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11428,
+      "sha256": "f4258e0faff206fdb2e690c10e8908f14258a249ae39646d13292f8347d73cc5"
+    }
+  ],
+  "_mirror_hash": "cb85774cec22152e7cad3145a629f5e0a5aebc59b102cf7c78a2b84324ed96fd",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.198148+00:00"
+}

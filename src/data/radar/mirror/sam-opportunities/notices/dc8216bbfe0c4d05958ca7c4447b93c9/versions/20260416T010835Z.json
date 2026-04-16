@@ -1,0 +1,46 @@
+{
+  "id": "sam-dc8216bbfe0c4d05958ca7c4447b93c9",
+  "title": "Request for Collaboration (RFC) 2028 Dress Rehearsal and 2030 Census Decennial as a Service (D-X)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc8216bbfe0c4d05958ca7c4447b93c9",
+  "opportunity_url": "https://sam.gov/opp/dc8216bbfe0c4d05958ca7c4447b93c9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dc8216bbfe0c4d05958ca7c4447b93c9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dc8216bbfe0c4d05958ca7c4447b93c9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "COMMERCE, DEPARTMENT OF.US CENSUS BUREAU",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc8216bbfe0c4d05958ca7c4447b93c9",
+  "detail_text": "Request for Collaboration (RFC) 2028 Dress Rehearsal and 2030 Census Decennial as a Service (D-X) April 14, 2026",
+  "detail_text_length": 112,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94b92d0b79e14539bf241343e2e76872/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94b92d0b79e14539bf241343e2e76872/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8a2c684c97abd81b92c3d3885b482697cdc7acb8a5d0c634e8b9c6c007db4e8f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8a2c684c97abd81b92c3d3885b482697cdc7acb8a5d0c634e8b9c6c007db4e8f.pdf",
+      "file_id": "94b92d0b79e14539bf241343e2e76872",
+      "file_name": "CENSUS+D-X+RFC+4.14.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 6592435,
+      "sha256": "8a2c684c97abd81b92c3d3885b482697cdc7acb8a5d0c634e8b9c6c007db4e8f"
+    }
+  ],
+  "_mirror_hash": "ee69a3d0486918c81043722619195ab2a7b43687d2901c7d411038fdf0966708",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.898992+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "20260416T010835Z",
+  "generated_at": "2026-04-16T01:16:20.967920+00:00",
+  "output_prefix": "sam-opportunities",
+  "profile": "all",
+  "posted_from": "01/01/2026",
+  "posted_to": "04/15/2026",
+  "ptypes": [
+    "p",
+    "r",
+    "s",
+    "o",
+    "k"
+  ],
+  "candidate_count": 695,
+  "request_count": 50,
+  "query_failures": 0,
+  "detail_api_fetches": 622,
+  "detail_cache_hits": 73,
+  "resource_downloads": 730,
+  "resource_cache_hits": 447,
+  "resource_errors": 0,
+  "changed_notices": 622,
+  "snapshot": "src/data/radar/mirror/sam-opportunities/snapshots/20260416T010835Z.json"
+}

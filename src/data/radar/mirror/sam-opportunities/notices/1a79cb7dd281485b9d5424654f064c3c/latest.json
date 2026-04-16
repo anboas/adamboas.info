@@ -1,0 +1,58 @@
+{
+  "id": "sam-1a79cb7dd281485b9d5424654f064c3c",
+  "title": "DON CIO – Information Technology Division (ITD) is seeking IT and IT-related support services, in classified and unclassified areas.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1a79cb7dd281485b9d5424654f064c3c",
+  "opportunity_url": "https://sam.gov/opp/1a79cb7dd281485b9d5424654f064c3c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1a79cb7dd281485b9d5424654f064c3c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1a79cb7dd281485b9d5424654f064c3c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N00189-26-CIO-ITD-SourcesSought",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1a79cb7dd281485b9d5424654f064c3c",
+  "detail_text": "CIO – Information Technology Division (ITD) is seeking database administration, software development, data center operational support, data center migration, advanced system and network administration, information assurance, portfolio management, customer services and helpdesk, Video Teleconferencing (VTC), telecommunications, NMCI tech refreshes, mobility and wireless equipment upgrades, inventory logs, maintenance of SharePoint server farms and sites, portal upgrades, and engineering/development/integration of DON CIO Claimancy/SECNAV Headquarters’ hardware, software, and related systems. The anticipated contract will include a five (5)-year ordering period.",
+  "detail_text_length": 668,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12bfeb5516ff477d9a1be167d1be8797/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/848beed04e574e258b61521e805cfff2/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12bfeb5516ff477d9a1be167d1be8797/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15a681f9fb510361bdf4fda8a4db11d472115139f8963534304e47d2b9d474bb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15a681f9fb510361bdf4fda8a4db11d472115139f8963534304e47d2b9d474bb.pdf",
+      "file_id": "12bfeb5516ff477d9a1be167d1be8797",
+      "file_name": "Sources+Sought-CIO+ITD+-+APR+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 93296,
+      "sha256": "15a681f9fb510361bdf4fda8a4db11d472115139f8963534304e47d2b9d474bb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/848beed04e574e258b61521e805cfff2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7e6643af06d538c4b546d3386aa4b9a663cea840c621307b09e7eb72519beb3d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7e6643af06d538c4b546d3386aa4b9a663cea840c621307b09e7eb72519beb3d.pdf",
+      "file_id": "848beed04e574e258b61521e805cfff2",
+      "file_name": "CIO+ITD+PWS-+APR2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 303692,
+      "sha256": "7e6643af06d538c4b546d3386aa4b9a663cea840c621307b09e7eb72519beb3d"
+    }
+  ],
+  "_mirror_hash": "cdcf8cdbe9fdda86241429a820978d3c20e4f5d867c7a386a28a4f12dcecba7a",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.449084+00:00"
+}

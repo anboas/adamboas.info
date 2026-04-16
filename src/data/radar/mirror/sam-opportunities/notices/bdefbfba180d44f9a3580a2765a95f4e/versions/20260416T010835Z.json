@@ -1,0 +1,57 @@
+{
+  "id": "sam-bdefbfba180d44f9a3580a2765a95f4e",
+  "title": "Collection & Waste Disposal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdefbfba180d44f9a3580a2765a95f4e",
+  "opportunity_url": "https://sam.gov/opp/bdefbfba180d44f9a3580a2765a95f4e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bdefbfba180d44f9a3580a2765a95f4e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bdefbfba180d44f9a3580a2765a95f4e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W51AA1GARBAGE2",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG CONT CT TYAD OFC",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bdefbfba180d44f9a3580a2765a95f4e",
+  "detail_text": "There will be a Pre-Solicitation meeting on Microsoft Teams on Monday, April 20 at 1:00 EST. Link and information below: https://dod.teams.microsoft.us/meet/993495478017?p=f02hvgfnIf2Vlrx5aD Meeting ID: 993 495 478 017 Passcode: qE66sZ3h Dial in by phone +1 571-616-7941,,4942490# United States, Engleside Find a local number Phone conference ID: 494 249 0# See attached Performance Work Statement and Pre-Solicitation. The contractor shall furnish all labor, tools, materials, equipment, transportation and supervision, to manage and perform all operations for the collection and off-post disposal of solid waste generated at Tobyhanna Army Depot (TYAD), Tobyhanna, Pennsylvania. Performance shall be according to the terms, conditions, specifications and standards contained in the Performance Work Statement (PWS) and the contractor shall comply with all laws, ordinances, statutes and regulations pertaining to the collection, transportation and disposal of refuse and shall obtain such permits, licenses or other authorizations as may be required. The contractor shall be bound by any and all laws which bind TYAD.",
+  "detail_text_length": 1119,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/261257c9b7364f088512be296d47699f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/434a25f8153b4a7fad8e575dae94063c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/261257c9b7364f088512be296d47699f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6c918b7b06e81d1db944640ec39baaf9924baa51548bfe4a51d79367eaea432e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6c918b7b06e81d1db944640ec39baaf9924baa51548bfe4a51d79367eaea432e.pdf",
+      "file_id": "261257c9b7364f088512be296d47699f",
+      "file_name": "DRAFT+PWS+GARBAGE+COLLECTION+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 899564,
+      "sha256": "6c918b7b06e81d1db944640ec39baaf9924baa51548bfe4a51d79367eaea432e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/434a25f8153b4a7fad8e575dae94063c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d0c0c8da0050a446151be1e640a68c3d89c63c6e26fa557e59928b1d87294652.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d0c0c8da0050a446151be1e640a68c3d89c63c6e26fa557e59928b1d87294652.pdf",
+      "file_id": "434a25f8153b4a7fad8e575dae94063c",
+      "file_name": "Pre-Solicitation+-+W51AA126QA043.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3281796,
+      "sha256": "d0c0c8da0050a446151be1e640a68c3d89c63c6e26fa557e59928b1d87294652"
+    }
+  ],
+  "_mirror_hash": "ee6628770bba41f39e93158547dce864a8e2c39af5cfebb92ae577e5f4067ac4",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.618026+00:00"
+}

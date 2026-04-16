@@ -1,0 +1,46 @@
+{
+  "id": "sam-401ba0c239674341a36716ac8614b8e7",
+  "title": "R--Appraisal services: 26-030_A-12E4_Anahonak, Sr, AVIS Project Number: E11-396-20",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=401ba0c239674341a36716ac8614b8e7",
+  "opportunity_url": "https://sam.gov/opp/401ba0c239674341a36716ac8614b8e7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/401ba0c239674341a36716ac8614b8e7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "401ba0c239674341a36716ac8614b8e7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140D0426Q0366",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-15",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=401ba0c239674341a36716ac8614b8e7",
+  "detail_text": "Appraisal services: 26-030_A-12E4_Anahonak, Sr, AVIS Project Number: E11-396-2026-00006, Agency Case 00231398.",
+  "detail_text_length": 110,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb0a9789c703405c9108be7603721ecf/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb0a9789c703405c9108be7603721ecf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ebdbb7eb0579d717ba3c46238854fb16e9e32ad6903515a0525d2fb8ccd0c37d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ebdbb7eb0579d717ba3c46238854fb16e9e32ad6903515a0525d2fb8ccd0c37d.pdf",
+      "file_id": "bb0a9789c703405c9108be7603721ecf",
+      "file_name": "B21_MISC_-_Sources_Sought_Notice_BIA_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 657874,
+      "sha256": "ebdbb7eb0579d717ba3c46238854fb16e9e32ad6903515a0525d2fb8ccd0c37d"
+    }
+  ],
+  "_mirror_hash": "5ff5ff5f9a258934c6cf174f31fd5470db07da7eb5f5501146a24ab19ea45dec",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.604347+00:00"
+}

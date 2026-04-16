@@ -1,0 +1,57 @@
+{
+  "id": "sam-28813d7da2694d699a195b9e5747a941",
+  "title": "X-RAY LEASE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28813d7da2694d699a195b9e5747a941",
+  "opportunity_url": "https://sam.gov/opp/28813d7da2694d699a195b9e5747a941/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/28813d7da2694d699a195b9e5747a941/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "28813d7da2694d699a195b9e5747a941",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "192126CMO000P0001",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.OFFICE OF PROCUREMENT OPERATIONS.FPS EAST CCG DIV 4 ACQ DIV",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28813d7da2694d699a195b9e5747a941",
+  "detail_text": "The U.S. Department Homeland Security, Federal Protective Services (FPS) Countermeasures Operations Division (CMOD), is conducting market research to identify contractors capable of fulfilling an upcoming requirement for a national X-Ray Detection Machines lease contract (CONUS/OCONUS). Please view the attachments, complete the Sources Sought, and email to danielle.dimedio@fps.dhs.gov.",
+  "detail_text_length": 388,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/013b4ecfd84a412b9a13ed6e4d6d539b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d6c3910238a423ea157887eb4b03238/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/013b4ecfd84a412b9a13ed6e4d6d539b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bbe876e77801b8b683aeabafb94f294ab622cb4eb922738642b289504851c7df.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bbe876e77801b8b683aeabafb94f294ab622cb4eb922738642b289504851c7df.docx",
+      "file_id": "013b4ecfd84a412b9a13ed6e4d6d539b",
+      "file_name": "SOURCES+SOUGHT+-X-ray+Lease-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45518,
+      "sha256": "bbe876e77801b8b683aeabafb94f294ab622cb4eb922738642b289504851c7df"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d6c3910238a423ea157887eb4b03238/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6a30ee1ecfca935565d370410de219a2fda6bd6f4d1e8dace2ac53124b8dfa23.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6a30ee1ecfca935565d370410de219a2fda6bd6f4d1e8dace2ac53124b8dfa23.docx",
+      "file_id": "6d6c3910238a423ea157887eb4b03238",
+      "file_name": "X-Ray+Statement+Of+Work-+DRAFT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 361784,
+      "sha256": "6a30ee1ecfca935565d370410de219a2fda6bd6f4d1e8dace2ac53124b8dfa23"
+    }
+  ],
+  "_mirror_hash": "116f15ca6b55d5505916386ea27d31c713b055473f2c8f0da60fdf470fcdd5ec",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.120475+00:00"
+}

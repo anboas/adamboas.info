@@ -1,0 +1,57 @@
+{
+  "id": "sam-cb8491e0c4944426b7a6ffd09d2d99af",
+  "title": "Financial Services Electronic Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb8491e0c4944426b7a6ffd09d2d99af",
+  "opportunity_url": "https://sam.gov/opp/cb8491e0c4944426b7a6ffd09d2d99af/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cb8491e0c4944426b7a6ffd09d2d99af/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cb8491e0c4944426b7a6ffd09d2d99af",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RCS-T-2026-00055",
+  "agency_path": "HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF.HOUSING AND URBAN DEVELOPMENT, DEPARTMENT OF.CPO : GNMA SUPPORT DIVISION",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb8491e0c4944426b7a6ffd09d2d99af",
+  "detail_text": "Provide financial content covering: financial news and analysis; reviews of domestic and global banks; financial industry data; annual and quarterly regulatory filings; bank performance and peer analytics; earnings reports; and announcements and investor presentations. The contractor also shall provide a U.S. Bank Regulatory Custom Data Feed. This content will be delivered on-line as an electronic financial subscription service.",
+  "detail_text_length": 432,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04245dbe726d4f68bcae72d35e04f173/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db01bb4ad2f34eb5aa5b8d876d137fd0/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04245dbe726d4f68bcae72d35e04f173/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5a187c62443755301f9daea699cb342e7c91300d2974e22d9f6511d55c5d7ca5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5a187c62443755301f9daea699cb342e7c91300d2974e22d9f6511d55c5d7ca5.pdf",
+      "file_id": "04245dbe726d4f68bcae72d35e04f173",
+      "file_name": "Source-Sought-Notice.RCS-T-2026-00055+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13195,
+      "sha256": "5a187c62443755301f9daea699cb342e7c91300d2974e22d9f6511d55c5d7ca5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db01bb4ad2f34eb5aa5b8d876d137fd0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/42bff04e067dd794c4de16e1a5b346baa23e577f28392dbe20455cb5fc87cb7a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/42bff04e067dd794c4de16e1a5b346baa23e577f28392dbe20455cb5fc87cb7a.pdf",
+      "file_id": "db01bb4ad2f34eb5aa5b8d876d137fd0",
+      "file_name": "RCS-T-2026-00055-Online+Financial+Services+Recompete-Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 226195,
+      "sha256": "42bff04e067dd794c4de16e1a5b346baa23e577f28392dbe20455cb5fc87cb7a"
+    }
+  ],
+  "_mirror_hash": "88d020826337bfcb1a969e251bbc60766195e3de28cfeb7d63ef54764fce7cb1",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.609694+00:00"
+}

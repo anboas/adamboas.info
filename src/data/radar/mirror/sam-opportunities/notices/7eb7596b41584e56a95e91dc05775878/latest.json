@@ -1,0 +1,47 @@
+{
+  "id": "sam-7eb7596b41584e56a95e91dc05775878",
+  "title": "Sources Sought-Market Survey",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7eb7596b41584e56a95e91dc05775878",
+  "opportunity_url": "https://sam.gov/opp/7eb7596b41584e56a95e91dc05775878/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7eb7596b41584e56a95e91dc05775878/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7eb7596b41584e56a95e91dc05775878",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE8E6-26-XXXXX",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-05-16",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7eb7596b41584e56a95e91dc05775878",
+  "detail_text": "This is a \"sources sought\" notice, not a Request for Quote (RFQ). No Solicitation Number has been assigned at this time. Reponses to this notice are not offers and cannot be accepted by the Government to form a binding contract. DLA Troop Support is seeking to identify possible sources that can supply the below NSN NSN 5660-00-921-5516 BARBED TAPE, CONCERTINA (BTC) RA001: THIS DOCUMENT INCORPORATES TECHNICAL AND/OR QUALITY REQUIREMENTS (IDENTIFIED BY AN 'R' OR AN 'I' NUMBER) SET FORTH IN FULL TEXT IN THE DLA MASTER LIST OF TECHNICAL AND QUALITY REQUIREMENTS FOUND ON THE WEB AT: http://www.dla.mil/HQ/Acquisition/Offers/eProcurement.aspx. FOR SIMPLIFIED ACQUISITIONS, THE REVISION OF THE MASTER IN EFFECT ON THE SOLICITATION ISSUE DATE OR THE AWARD DATE CONTROLS. FOR LARGE ACQUISITIONS, THE REVISION OF THE MASTER IN EFFECT ON THE RFP ISSUE DATE APPLIES UNLESS A SOLICITATION AMENDMENT INCORPORATES A FOLLOW-ON REVISION, IN WHICH CASE THE AMENDMENT DATE CONTROLS. RP001: DLA PACKAGING REQUIREMENTS FOR PROCUREMENT RQ011: REMOVAL OF GOVERNMENT IDENTIFICATION FROM NON-ACCEPTED SUPPLIES 1 RO = 50 FT MARKINGS: EACH ROLL SHALL HAVE A CORROSION RESISTANT METAL TAG CONTAINING WATERPROOF MIL STD 129 INFORMATION PACKAGE IAW AA-55522 AND ASTM D3951 The contractor will be required to manufacture these items and satisfy the Government's delivery requirements. Responses to this survey must include documentation citing the following: -Contractor's experience demonstrating the capability to meet the Government's requirements in producing products that meet all performance requirements, and that are physically and functionally interchangeable with presently identified item. -Quality Standard (Government or Industry) that shall be in place for this effort. -Past Performance for the same or similar items. The contractor shall submit their part numbers, NSN, or nomenclature and the date of the last manufacturing effort of the same or similar items for which they have production experience. Government contract numbers, if applicable, shall be provided. -The contractor must provide information to show it possesses, or shall possess, adequate production plant facilities (equipment, tooling, and space) to enable it, or its subcontractors, to meet production delivery requirements for these items. Reponses to this notice and Market Survey should be emailed to jennifer.roome@dla.mil no later than 4:30 PM EDT on May 16, 2026.",
+  "detail_text_length": 2433,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/927d64be6e264613b69f3820d8a447e8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/927d64be6e264613b69f3820d8a447e8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c217846bcec26c81b970403cd796b514d3248ed6cf34ea151c44760f6116509.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c217846bcec26c81b970403cd796b514d3248ed6cf34ea151c44760f6116509.docx",
+      "file_id": "927d64be6e264613b69f3820d8a447e8",
+      "file_name": "Market+Research+Survey+5660-00-921-5516.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29451,
+      "sha256": "1c217846bcec26c81b970403cd796b514d3248ed6cf34ea151c44760f6116509"
+    }
+  ],
+  "_mirror_hash": "f22b75bb62013793539c1c9ed5ceadda0300a802b644d80b297f0bf46ccaae71",
+  "_mirror_run_id": "20260416T134225Z",
+  "_mirror_recorded_at": "2026-04-16T13:43:54.754557+00:00"
+}

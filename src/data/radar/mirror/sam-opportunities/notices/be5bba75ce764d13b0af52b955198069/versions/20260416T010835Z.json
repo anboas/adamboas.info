@@ -1,0 +1,46 @@
+{
+  "id": "sam-be5bba75ce764d13b0af52b955198069",
+  "title": "Laundry Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=be5bba75ce764d13b0af52b955198069",
+  "opportunity_url": "https://sam.gov/opp/be5bba75ce764d13b0af52b955198069/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/be5bba75ce764d13b0af52b955198069/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "be5bba75ce764d13b0af52b955198069",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SP330026Q0122",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA DISTRIBUTION.DLA DISTRIBUTION",
+  "posted_date": "2026-04-14",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=be5bba75ce764d13b0af52b955198069",
+  "detail_text": "Laundry Services at DLA Distribution San Joaquin, CA See Sources Sought Attachment",
+  "detail_text_length": 82,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f81b65826389420d8da171bada9963a5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f81b65826389420d8da171bada9963a5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/90f8485c94ec3618058b428a9cca913d0b5dd634cf0fbdddd3debb2468ca68f2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/90f8485c94ec3618058b428a9cca913d0b5dd634cf0fbdddd3debb2468ca68f2.docx",
+      "file_id": "f81b65826389420d8da171bada9963a5",
+      "file_name": "Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16616,
+      "sha256": "90f8485c94ec3618058b428a9cca913d0b5dd634cf0fbdddd3debb2468ca68f2"
+    }
+  ],
+  "_mirror_hash": "76ec6691249dfa870ec82e7669f36cfbd4742636afc1a3dc83fcbea17781e17b",
+  "_mirror_run_id": "20260416T010835Z",
+  "_mirror_recorded_at": "2026-04-16T01:16:20.851819+00:00"
+}

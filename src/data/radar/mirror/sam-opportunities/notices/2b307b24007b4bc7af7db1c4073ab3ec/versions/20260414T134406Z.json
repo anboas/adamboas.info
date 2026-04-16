@@ -1,0 +1,59 @@
+{
+  "id": "sam-2b307b24007b4bc7af7db1c4073ab3ec",
+  "title": "Request for Information for General Operations Support Services (GOSS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b307b24007b4bc7af7db1c4073ab3ec",
+  "opportunity_url": "https://sam.gov/opp/2b307b24007b4bc7af7db1c4073ab3ec/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2b307b24007b4bc7af7db1c4073ab3ec/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2b307b24007b4bc7af7db1c4073ab3ec",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "HT001126RFI0241",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-04-13",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b307b24007b4bc7af7db1c4073ab3ec",
+  "detail_text": "THIS IS A REQUEST FOR INFORMATION (RFI) ONLY. This RFI is being issued solely for information and planning purposes. It does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. This request for information does not commit the Government to contract for any supply or service whatsoever. Further, the Defense Health Agency (DHA) is not at this time seeking quotes or proposals and will not accept unsolicited proposals. The DHA is seeking integrated headquarters support services for GOSS in accordance with the attached DRAFT Performance Work Statement (PWS) and describe the task and capabilities required to provide all personnel, equipment, supplies, facilities, transportation, tools, materials, supervisor and other items and non-personal services necessary to perform the requirement as defined in the DRAFT PWS except for those items specified as Government furnished property and services. Please be advised this is a DRAFT PWS and is subject to change based on the information received from this RFI. Capability Statements should be submitted in Microsoft Word or Portable Document Format (PDF) and are due no later than 24 April 2026 at 2:00PM EST . Responses shall be limited to ten (10) pages (8.5x 11 inches, one (1)-inch margins), single-spaced, twelve (12)-point-sized font and submitted via e-mail to Contract Analyst, latonya.s.jenkins.ctr@health.mil and Contracting Officer, linda.m.walker38.civ@health.mil. Please use the following title in your email subject line HT001126RFI0241 General Operations Support Services (GOSS) Program . Proprietary information, if any, should be minimized and MUST BE CLEARLY MARKED . To aid the Government, please segregate proprietary information. Please be advised that all submissions become Government property and will not be returned. See attachments for additional information.",
+  "detail_text_length": 1871,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d858489f89e444f93bc34934c02d54f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9156e5762c5499ea8ca8d0b8704e2c8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d858489f89e444f93bc34934c02d54f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/286c4666e246b3562ef64a74c90d9f8ab2c09d9ec303d650eb53bce7731b84f6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/286c4666e246b3562ef64a74c90d9f8ab2c09d9ec303d650eb53bce7731b84f6.pdf",
+      "file_id": "1d858489f89e444f93bc34934c02d54f",
+      "file_name": "RFI+-+General+Operations+Support+Services+-GOSS-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191692,
+      "sha256": "286c4666e246b3562ef64a74c90d9f8ab2c09d9ec303d650eb53bce7731b84f6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9156e5762c5499ea8ca8d0b8704e2c8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6631d67cdf759776ff337c07a477a5c759dfbed7e862153a0578e1af573ef268.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6631d67cdf759776ff337c07a477a5c759dfbed7e862153a0578e1af573ef268.pdf",
+      "file_id": "d9156e5762c5499ea8ca8d0b8704e2c8",
+      "file_name": "DRAFT+PWS+-+GenOpsSupport.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 620942,
+      "sha256": "6631d67cdf759776ff337c07a477a5c759dfbed7e862153a0578e1af573ef268"
+    }
+  ],
+  "_mirror_hash": "358d4289b618a5a119143ab14eace7dccf3b9bc40430600f87c36bbe11908162",
+  "_mirror_run_id": "20260414T134406Z",
+  "_mirror_recorded_at": "2026-04-14T13:48:43.021058+00:00"
+}
