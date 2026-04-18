@@ -212,12 +212,27 @@ That is the next layer.
 
 That is the work.
 
-## Working references to pin before publish
+## References
 
-- NIST AI Agent Standards Initiative announcement and associated materials.
-- NIST January 2025 AI agent security RFI text.
-- NIST AI 800-2, 800-3, and 800-4 publications.
-- NIST-GSA USAi MOU announcement.
-- OpenMined and NIST CRADA announcement.
-- DARPA AI Forward program announcement.
-- Air Force Prometheus Flame draft and associated contracting artifacts.
+1. NIST CAISI, *AI Agent Standards Initiative*. https://www.nist.gov/caisi/ai-agent-standards-initiative
+2. NIST CAISI, *CAISI Issues Request for Information About Securing AI Agent Systems*. https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems
+3. NCCoE, *New Concept Paper on Identity and Authority of Software Agents*. https://www.nccoe.nist.gov/news-insights/new-concept-paper-identity-and-authority-software-agents
+4. NCCoE, *Accelerating the Adoption of Software and AI Agent Identity and Authorization* (concept paper PDF). https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf
+5. NIST, *Towards Best Practices for Automated Benchmark Evaluations* (NIST AI 800-2). https://www.nist.gov/news-events/news/2026/01/towards-best-practices-automated-benchmark-evaluations
+6. NIST, *NIST AI 800-2 Initial Public Draft* (PDF). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf
+7. NIST, *New Report: Expanding the AI Evaluation Toolbox with Statistical Models* (NIST AI 800-3). https://www.nist.gov/news-events/news/2026/02/new-report-expanding-ai-evaluation-toolbox-statistical-models
+8. NIST, *NIST AI 800-3* (PDF). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-3.pdf
+9. NIST, *New Report: Challenges to the Monitoring of Deployed AI Systems* (NIST AI 800-4). https://www.nist.gov/news-events/news/2026/03/new-report-challenges-monitoring-deployed-ai-systems
+10. NIST, *NIST AI 800-4* (PDF). https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf
+11. NIST CAISI, *CAISI signs MOU with GSA to boost AI evaluation science in federal procurement through USAi*. https://www.nist.gov/news-events/news/2026/03/caisi-signs-mou-gsa-boost-ai-evaluation-science-federal-procurement-through
+12. NIST CAISI, *CAISI signs CRADA with OpenMined to Enable Secure AI Evaluations*. https://www.nist.gov/news-events/news/2026/03/announcement-caisi-signs-crada-openmined-enable-secure-ai-evaluations
+13. DARPA, *AI Forward*. https://www.darpa.mil/research/programs/ai-forward
+14. SAM.gov, *Prometheus Flame - Request for Information* (Special Notice, FA8694-26-S-8888). https://sam.gov/opp/68a071f69a1c4ec883b8392c5ae040b1/view
+15. SAM.gov API notice description (source for extracted draft text). https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68a071f69a1c4ec883b8392c5ae040b1
+
+## Related writing on this site
+
+- [Agent Control Plane Reference Architecture (ACP-RA)](/writing/acp-ra/)
+- [From AI Force Multiplication to Force Creation](/writing/agentic-force-creation/)
+- [Stand Up Delegated Autonomy Directorate (DAD) as a Joint Control Plane Authority](/writing/2026-02-12-stand-up-dad-joint-control-plane-authority/)
+- [From PDFs to Pull Requests](/writing/code-as-policy/)
