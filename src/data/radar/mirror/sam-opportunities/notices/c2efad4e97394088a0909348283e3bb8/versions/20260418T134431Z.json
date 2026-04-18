@@ -1,0 +1,68 @@
+{
+  "id": "sam-c2efad4e97394088a0909348283e3bb8",
+  "title": "Warehouse 3 HVAC Replacement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2efad4e97394088a0909348283e3bb8",
+  "opportunity_url": "https://sam.gov/opp/c2efad4e97394088a0909348283e3bb8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c2efad4e97394088a0909348283e3bb8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c2efad4e97394088a0909348283e3bb8",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION MISSISSIPPI VALLEY.ENDIST NEW ORLEANS.W07V ENDIST NEW ORLEANS",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c2efad4e97394088a0909348283e3bb8",
+  "detail_text": "NOTICE OF INTENT TO AWARD SOLE SOURCE: The US Army Corps of Engineers, New Orleans District intends to award a sole source contract award to Building Control Sysetms, L.L.C., CAGE: 31YX6, 818 Hickory Ave, Harahan, LA 70123 for Warehouse 3 HVAC Replacement. NAICS Code is 238220 - Plumbing, Heating, and Air-Conditioning Contractors with a Small Business Size Standard of $19.0M. The classification code is J041 - Maintenance, Repair and Rebuilding of Equipment: Refrigeration, Air Conditioning, and Air Circulating Equipment. THIS NOTICE IS NOT A REQUEST FOR COMPETITIVE QUOTES; however, any firm that believes it can meet the requirements above, may give written notification prior to the response due date and time. Supporting evidence must be furnished in sufficient detail to demonstrate the ability to perform the requirements. Responses received will be evaluated; however, a determination by the Government not to compete the proposed procurement based upon responses to this notice is solely within the discretion of the Government. If no responses are received, the Government will proceed with the award. Responses are due by 01 May 2026, at 11:00 AM, local time. Responses shall be submitted via email to Taylor.H.Brandon@usace.army.mil. Telephone requests or inquiries will not be accepted.",
+  "detail_text_length": 1302,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c4b36df65214737805a46c1aabc39cc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/688485d14d374e9299bacee864266e3d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76a8997bc52b416ea1cb254140afafc9/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c4b36df65214737805a46c1aabc39cc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f4a02439c99dfb47dd4c647cb6dbc5ad554cc14b0f6483717b16f5000d7f5bdd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f4a02439c99dfb47dd4c647cb6dbc5ad554cc14b0f6483717b16f5000d7f5bdd.pdf",
+      "file_id": "0c4b36df65214737805a46c1aabc39cc",
+      "file_name": "Market+Research.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 609840,
+      "sha256": "f4a02439c99dfb47dd4c647cb6dbc5ad554cc14b0f6483717b16f5000d7f5bdd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/688485d14d374e9299bacee864266e3d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9666618396909ee5f252d3790e06aef1f83362f95ccb84178008acdb0d8e53a4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9666618396909ee5f252d3790e06aef1f83362f95ccb84178008acdb0d8e53a4.pdf",
+      "file_id": "688485d14d374e9299bacee864266e3d",
+      "file_name": "MVN-26-0005+JA+Warehouse+3+HVAC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1150718,
+      "sha256": "9666618396909ee5f252d3790e06aef1f83362f95ccb84178008acdb0d8e53a4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76a8997bc52b416ea1cb254140afafc9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ed2ebe497b67c95e54b9568b050243f8f422ed190d0f87501c42df016fbbe950.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ed2ebe497b67c95e54b9568b050243f8f422ed190d0f87501c42df016fbbe950.pdf",
+      "file_id": "76a8997bc52b416ea1cb254140afafc9",
+      "file_name": "SOW+Warehouse+3+HVAC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 566987,
+      "sha256": "ed2ebe497b67c95e54b9568b050243f8f422ed190d0f87501c42df016fbbe950"
+    }
+  ],
+  "_mirror_hash": "53cac10426c582b8d07965338be5da17f6d8917fd199bdd37b7d92fcc804daf2",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.408489+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-37851fca73d54fa1ac42488014762a9a",
+  "title": "Serv A26-045 Electronic Ramp Gate",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37851fca73d54fa1ac42488014762a9a",
+  "opportunity_url": "https://sam.gov/opp/37851fca73d54fa1ac42488014762a9a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/37851fca73d54fa1ac42488014762a9a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "37851fca73d54fa1ac42488014762a9a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ServA26-045",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8125  AFSC PZIMA",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=37851fca73d54fa1ac42488014762a9a",
+  "detail_text": "This market survey is being conducted to identify potential sources that may possess the expertise, capabilities, and experience to meet the requirements for qualification and production of the Serv A26-045 Electronic Ramp Gate for use by United States Air Force (USAF) personnel. The level of security clearance and amount of foreign participation in this requirement has not been determined. Contractors/Institutions responding to this market research are placed on notice that participation in this survey may not ensure participation in future solicitations or contract awards. The government will not reimburse participants for any expenses associated with their participation in this survey. PURPOSE/DESCRIPTION The Government is conducting market research to identify potential sources that possess the production data/repair data, expertise, capabilities, and experience to meet qualification requirements for the We are seeking a vendor to provide comprehensive maintenance services for our Electronic Ramp Gate System. Can you confirm if your company has the capability to meet the following requirements? • Preventive Maintenance (PM): Perform scheduled maintenance four (4) times per machine, per year, on the systems detailed in the attached Appendix A. • Compliance: All maintenance activities must be conducted in strict accordance with the Original Equipment Manufacturer (OEM) specifications to ensure maximum performance. • Software Support: Provide necessary WINDSX software maintenance and updates for the 76th Aircraft Maintenance Group's (AMXG) Electronic Gate System for Ramp Areas during the scheduled PM visits. Please review these requirements and confirm your ability to fully support this scope of work.",
+  "detail_text_length": 1731,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76a5e93c7b6d4ebeb800793939464769/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b084a4a7ee524f72a4639ba4c4ddfa18/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/76a5e93c7b6d4ebeb800793939464769/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d5012ff6b6a25e11151a5b31e309d2223f6e2e21d80496b3b3d056b554b98e6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d5012ff6b6a25e11151a5b31e309d2223f6e2e21d80496b3b3d056b554b98e6.pdf",
+      "file_id": "76a5e93c7b6d4ebeb800793939464769",
+      "file_name": "Serv+A26-045RN+Electronic+Ramp+Gate+-+05+-+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 318848,
+      "sha256": "8d5012ff6b6a25e11151a5b31e309d2223f6e2e21d80496b3b3d056b554b98e6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b084a4a7ee524f72a4639ba4c4ddfa18/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4feba87a2ab515a31c0ddc90cbed975f52643e9a030427f84a8b3e3715d84b9a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4feba87a2ab515a31c0ddc90cbed975f52643e9a030427f84a8b3e3715d84b9a.pdf",
+      "file_id": "b084a4a7ee524f72a4639ba4c4ddfa18",
+      "file_name": "Serv+A26-045RN+Electronic+Ramp+Gate+-+12+-+Sources+Sought+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 258524,
+      "sha256": "4feba87a2ab515a31c0ddc90cbed975f52643e9a030427f84a8b3e3715d84b9a"
+    }
+  ],
+  "_mirror_hash": "f6932a519da77d358bdf4d561d5e7b05cb0daeb85eb763b685585f6b34aa6309",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.393620+00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "sam-476ac7a38eb44329bf3a63db3da8c9a3",
+  "title": "Request For Information Re:  Residential Reentry Services and Home Confinement Services within city limits of Pawtucket, Rhode Island.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=476ac7a38eb44329bf3a63db3da8c9a3",
+  "opportunity_url": "https://sam.gov/opp/476ac7a38eb44329bf3a63db3da8c9a3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/476ac7a38eb44329bf3a63db3da8c9a3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "476ac7a38eb44329bf3a63db3da8c9a3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "15BRRC26R00000009",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.RESIDENTIAL REENTRY - CO",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=476ac7a38eb44329bf3a63db3da8c9a3",
+  "detail_text": "This announcement is posted as a Request For Information (RFI) only for an intended upcoming solicitation that will be posted on the SAM.gov website. This RFI is being issued to determine whether or not there are qualified sources that will be able to meet the requirements of this intended upcoming solicitation. This upcoming solicitation will be for both Residential Reentry Center (RRC) services and Home Confinement (HC) services for male and female offenders located within city limits of Pawtucket, Rhode Island. Home Confinement radius is within 100 miles of the RRC facility. The solicitation is anticipated to be for an IDIQ contract with tiered pricing. There will be a guaranteed minimum and an estimated maximum number of placements, to include in-house, and home confinement residents. It is anticipated that all services will be solicited under a single procurement and will require that the successful offeror provide all services. The requirement is anticipated to be for an estimated maximum of 20 In-House placements (18 male and 2 Female) and 8 Home Confinement placements. The Bureau would like input from providers of services in the community as to the feasibility of providing these services in this geographical area.",
+  "detail_text_length": 1242,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b3f05a8e2a74463b92fd422f5a86d24/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d07eaf272c7d4b05b7222c74f37b7edc/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b3f05a8e2a74463b92fd422f5a86d24/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f294a1f88c546f4b64f88b229445089289ee5dfaeea1a80b607e895a925de63d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f294a1f88c546f4b64f88b229445089289ee5dfaeea1a80b607e895a925de63d.pdf",
+      "file_id": "6b3f05a8e2a74463b92fd422f5a86d24",
+      "file_name": "RRC+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1317998,
+      "sha256": "f294a1f88c546f4b64f88b229445089289ee5dfaeea1a80b607e895a925de63d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d07eaf272c7d4b05b7222c74f37b7edc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3c6887a2a2bd55f8c2ff4eb2440ae16776ad8cd0f4a130e78c4079389f4325ad.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3c6887a2a2bd55f8c2ff4eb2440ae16776ad8cd0f4a130e78c4079389f4325ad.pdf",
+      "file_id": "d07eaf272c7d4b05b7222c74f37b7edc",
+      "file_name": "RFI+for+Pawtucket+RI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 283501,
+      "sha256": "3c6887a2a2bd55f8c2ff4eb2440ae16776ad8cd0f4a130e78c4079389f4325ad"
+    }
+  ],
+  "_mirror_hash": "b21c9b09095a3f59d465a53e30e8584214dc99e6560b37c9d667813127d910cc",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.273096+00:00"
+}

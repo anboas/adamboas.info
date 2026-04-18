@@ -1,0 +1,46 @@
+{
+  "id": "sam-618f437e7e2c4895b6b12f179f0df6c1",
+  "title": "15--Sole SourceJustification Posting (Freefly UAS BPA)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=618f437e7e2c4895b6b12f179f0df6c1",
+  "opportunity_url": "https://sam.gov/opp/618f437e7e2c4895b6b12f179f0df6c1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/618f437e7e2c4895b6b12f179f0df6c1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "618f437e7e2c4895b6b12f179f0df6c1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DOIDFBO260043",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-17",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=618f437e7e2c4895b6b12f179f0df6c1",
+  "detail_text": "Post Redacted Sole Source Justification for Freefly Unmanned Aircraft System (UAS) BPA in accordance with RFO 6.301.",
+  "detail_text_length": 116,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1eba2fbdf4d4d279f7543db19254af7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1eba2fbdf4d4d279f7543db19254af7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba21ed9ec1e5a3368b48526a2560e714b6838177dd6278076c292cb9236b245f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba21ed9ec1e5a3368b48526a2560e714b6838177dd6278076c292cb9236b245f.pdf",
+      "file_id": "b1eba2fbdf4d4d279f7543db19254af7",
+      "file_name": "E53_BSR_JA_Freefly_1_27_2026_CA_Redacted_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 324191,
+      "sha256": "ba21ed9ec1e5a3368b48526a2560e714b6838177dd6278076c292cb9236b245f"
+    }
+  ],
+  "_mirror_hash": "15f2006d385168de5b25125a17fa2f7b495318c341dff8172552c54f646e5c7d",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.459940+00:00"
+}

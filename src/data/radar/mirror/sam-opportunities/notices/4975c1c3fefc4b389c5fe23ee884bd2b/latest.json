@@ -1,0 +1,58 @@
+{
+  "id": "sam-4975c1c3fefc4b389c5fe23ee884bd2b",
+  "title": "NADMT Initial Spares",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4975c1c3fefc4b389c5fe23ee884bd2b",
+  "opportunity_url": "https://sam.gov/opp/4975c1c3fefc4b389c5fe23ee884bd2b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4975c1c3fefc4b389c5fe23ee884bd2b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4975c1c3fefc4b389c5fe23ee884bd2b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N61340-26-Q-1008",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC TSD.NAWC TRAINING SYSTEMS DIV",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4975c1c3fefc4b389c5fe23ee884bd2b",
+  "detail_text": "NAWCTSD has a requirement to procure Spares for the Naval Aviation Distributed Training (NADMT) program, establishing a System Integration Lab to support the integration of Joint Simulation Environment (JSE) with CVW platforms. Components are for device upgrades to support advanced training. This effort involves upgrading computer hardware, and monitors with specific commercial-off-the-shelf (COTS) components to ensure compatibility and continuity with the existing training devices.",
+  "detail_text_length": 487,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1569dd6a523949a6bb434f280582ebba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a643a2a4565d478bb2c75a8ad7c2420f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1569dd6a523949a6bb434f280582ebba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1f5e73d2c39576ea315044e8861bfc3ad2f9e86f3e0355d5c17b27c8ab89ec0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1f5e73d2c39576ea315044e8861bfc3ad2f9e86f3e0355d5c17b27c8ab89ec0.pdf",
+      "file_id": "1569dd6a523949a6bb434f280582ebba",
+      "file_name": "NADMT+Initial+Spares+Material+List+-+N6134026Q1008.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31835,
+      "sha256": "b1f5e73d2c39576ea315044e8861bfc3ad2f9e86f3e0355d5c17b27c8ab89ec0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a643a2a4565d478bb2c75a8ad7c2420f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/400f29a7bce96154d7966ddd84ec19b283069b3cd466de4d84e5fdd44a5d1eed.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/400f29a7bce96154d7966ddd84ec19b283069b3cd466de4d84e5fdd44a5d1eed.pdf",
+      "file_id": "a643a2a4565d478bb2c75a8ad7c2420f",
+      "file_name": "Sources_Sought_NADMT+Initial+Spares+-+N6134026Q1008+-+04-17-2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174351,
+      "sha256": "400f29a7bce96154d7966ddd84ec19b283069b3cd466de4d84e5fdd44a5d1eed"
+    }
+  ],
+  "_mirror_hash": "554058e5a836e99f622bbebc439d6a21ff38b2e1586f1fcc3bcfc665b993c956",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.193741+00:00"
+}

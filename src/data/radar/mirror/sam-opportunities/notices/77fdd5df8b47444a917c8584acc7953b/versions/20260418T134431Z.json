@@ -1,0 +1,46 @@
+{
+  "id": "sam-77fdd5df8b47444a917c8584acc7953b",
+  "title": "ControlPowerManag_End_Item_F108_NSN_2915012865565PN_PN_7084M61G05",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77fdd5df8b47444a917c8584acc7953b",
+  "opportunity_url": "https://sam.gov/opp/77fdd5df8b47444a917c8584acc7953b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/77fdd5df8b47444a917c8584acc7953b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "77fdd5df8b47444a917c8584acc7953b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601760",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=77fdd5df8b47444a917c8584acc7953b",
+  "detail_text": "See Attached Document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de7c3d7fb2f449349c127536c9b58f29/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de7c3d7fb2f449349c127536c9b58f29/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ab1cf6a567f244aeb357536d365b62da134e2a2e0078aa8792b4b6ed7c44467b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ab1cf6a567f244aeb357536d365b62da134e2a2e0078aa8792b4b6ed7c44467b.pdf",
+      "file_id": "de7c3d7fb2f449349c127536c9b58f29",
+      "file_name": "MRSSS_FD20302601760.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2777607,
+      "sha256": "ab1cf6a567f244aeb357536d365b62da134e2a2e0078aa8792b4b6ed7c44467b"
+    }
+  ],
+  "_mirror_hash": "c791e9fd8df533622e9fc957459ff82621ffdc9fd557c5bd676ff40bdb4e124c",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.462682+00:00"
+}

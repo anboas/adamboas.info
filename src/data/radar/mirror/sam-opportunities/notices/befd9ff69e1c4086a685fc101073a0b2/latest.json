@@ -1,0 +1,46 @@
+{
+  "id": "sam-befd9ff69e1c4086a685fc101073a0b2",
+  "title": "Skyplate Detector",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=befd9ff69e1c4086a685fc101073a0b2",
+  "opportunity_url": "https://sam.gov/opp/befd9ff69e1c4086a685fc101073a0b2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/befd9ff69e1c4086a685fc101073a0b2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "befd9ff69e1c4086a685fc101073a0b2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25526Q0340_1",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-04-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=befd9ff69e1c4086a685fc101073a0b2",
+  "detail_text": "36C25526Q0340 - Skyplate Detector - St. Louis VAMC Jefferson Barracks",
+  "detail_text_length": 69,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b55d25c30559448b8c1ccd88f7de2fd0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b55d25c30559448b8c1ccd88f7de2fd0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/62ed48cb2e1bd76b0a6c3791a64eb0ee1d5ffb0b657e3ff9210afd9cfdc67f77.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/62ed48cb2e1bd76b0a6c3791a64eb0ee1d5ffb0b657e3ff9210afd9cfdc67f77.pdf",
+      "file_id": "b55d25c30559448b8c1ccd88f7de2fd0",
+      "file_name": "36C25526Q0340_1+-+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 286747,
+      "sha256": "62ed48cb2e1bd76b0a6c3791a64eb0ee1d5ffb0b657e3ff9210afd9cfdc67f77"
+    }
+  ],
+  "_mirror_hash": "e3a9759e0f04e42e566f5c90c50fb5b6a9dfcb36b4a56c9b5e56a05fa6d6b39c",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.280073+00:00"
+}

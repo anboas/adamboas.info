@@ -1,0 +1,79 @@
+{
+  "id": "sam-a487a3e927104cb6a4a68eebfdb7f91b",
+  "title": "34-Ton Breakbulk Trailers Acquisition Strategy",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a487a3e927104cb6a4a68eebfdb7f91b",
+  "opportunity_url": "https://sam.gov/opp/a487a3e927104cb6a4a68eebfdb7f91b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a487a3e927104cb6a4a68eebfdb7f91b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a487a3e927104cb6a4a68eebfdb7f91b",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "47QMCA26N0048",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a487a3e927104cb6a4a68eebfdb7f91b",
+  "detail_text": "This is a special statement from GSA requesting industry information concerning the acquisition strategy for 34-ton breakbulk trailers for the Department of Navy. This request for information is for approximately thirty-seven (37) each 34-ton break-bulk Trailers. GSA asks industry to review the Special Statement along with “Attachment 2 - PD FY25 Stake Breakbulk Trlr. 7 AUG 2025 FINAL” and provide the information requested in the Special Statement Document. Please submit information requested in the Special Statement via email to Ed Hodges at john.hodges@gsa.gov and Ted Croshore at kenneth.croushore@gsa.gov with “47QMCA26N0002 – 34-Ton Breakbulk Trailers Acquisition Strategy” listed in the subject line of the email.",
+  "detail_text_length": 725,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44d89cc4c0654bbfb908b8961bfe6af0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75093a91dd904d07a14648a0ff883c80/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98e7a7672c064a0e93e305a553fceb46/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caa85c572fcb4763872554e70a5a0a55/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44d89cc4c0654bbfb908b8961bfe6af0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d5e69768e95c35ea0d4bd1102c6ea1e7852c80c028a5e54ef9597ae2719fc6c0.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d5e69768e95c35ea0d4bd1102c6ea1e7852c80c028a5e54ef9597ae2719fc6c0.xlsx",
+      "file_id": "44d89cc4c0654bbfb908b8961bfe6af0",
+      "file_name": "Attachment+4+-+Technical+Exceptions+Worksheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84694,
+      "sha256": "d5e69768e95c35ea0d4bd1102c6ea1e7852c80c028a5e54ef9597ae2719fc6c0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75093a91dd904d07a14648a0ff883c80/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2ae65a6f9ba6c7b28bcc1314dd60ea3d4906752e7f302ea8e1bf77986b20d058.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2ae65a6f9ba6c7b28bcc1314dd60ea3d4906752e7f302ea8e1bf77986b20d058.xlsx",
+      "file_id": "75093a91dd904d07a14648a0ff883c80",
+      "file_name": "Attachment+5+-+Brand+Name+or+Equal+Worksheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 91667,
+      "sha256": "2ae65a6f9ba6c7b28bcc1314dd60ea3d4906752e7f302ea8e1bf77986b20d058"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98e7a7672c064a0e93e305a553fceb46/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68ab67ca47885873efcaae77ee742997a8932316c9a2d908a202c2809abc49a2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68ab67ca47885873efcaae77ee742997a8932316c9a2d908a202c2809abc49a2.pdf",
+      "file_id": "98e7a7672c064a0e93e305a553fceb46",
+      "file_name": "SPECIAL+NOTICE+47QMCA26N0048-+34T+Break+Bulk+Trailers.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125271,
+      "sha256": "68ab67ca47885873efcaae77ee742997a8932316c9a2d908a202c2809abc49a2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/caa85c572fcb4763872554e70a5a0a55/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/24637bd2d5148717c458f5bfe803b112eb2b3a65a0fcf59b3ab7c9fbc3da7f95.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/24637bd2d5148717c458f5bfe803b112eb2b3a65a0fcf59b3ab7c9fbc3da7f95.docx",
+      "file_id": "caa85c572fcb4763872554e70a5a0a55",
+      "file_name": "02+-+PD+FY25+Stake+Breakbulk+Trlr.+7+AUG+2025+FINAL.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2660051,
+      "sha256": "24637bd2d5148717c458f5bfe803b112eb2b3a65a0fcf59b3ab7c9fbc3da7f95"
+    }
+  ],
+  "_mirror_hash": "2218fda72acb167873412f6c58cc134d8b34f0a377ccd3606e7a114bfe8eb4ff",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.293391+00:00"
+}

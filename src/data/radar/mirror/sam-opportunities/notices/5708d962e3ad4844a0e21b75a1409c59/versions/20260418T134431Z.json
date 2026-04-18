@@ -1,0 +1,46 @@
+{
+  "id": "sam-5708d962e3ad4844a0e21b75a1409c59",
+  "title": "Antennas",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5708d962e3ad4844a0e21b75a1409c59",
+  "opportunity_url": "https://sam.gov/opp/5708d962e3ad4844a0e21b75a1409c59/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5708d962e3ad4844a0e21b75a1409c59/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5708d962e3ad4844a0e21b75a1409c59",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6660426Q0264",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5708d962e3ad4844a0e21b75a1409c59",
+  "detail_text": "This is a combined synopsis and solicitation for commercial items prepared in accordance with the format in FAR Subpart 12.6-Streamlined Procedures for Evaluation and Solicitation for Commercial Items, as supplemented with additional information included in this notice. This announcement constitutes the only solicitation; quotations are being requested and a written solicitation will not be issued. Request for Quote (RFQ) Number is N66604-26-Q-0264. In accordance with FAR 5.203(a)(2) this solicitation will be posted for less than fifteen (15) days. The Naval Undersea Warfare Center Division, Newport (NUWCDIVNPT) intends to award a firm fixed price (FFP) purchase order for Antennas developed in accordance with our drawing specifications that will be provided upon request and proof of Joint Certification Program (JCP) certification. Please note, shipping must be included and be shipped within the United States. The drawings/specifications/technical data package (TDP)/government furnished information (GFI) associated with this requirement are labeled Distribution D and export controlled, which means distribution is authorized to the DOD and US DOD contractors with a valid Joint Certification Program (JCP) certification. Only offerors with an active registration in JCP will be provided access to the drawings. Please visit http://www.dlis.dls.mil/jcp for further details on the program and registration. To obtain a copy of the drawings, the designated JCP Point of Contact must email the request to Kenneth Chaffey at kenneth.l.chaffey.civ@us.navy.mil with a copy of your JCP Certification and DD Form 2345. In addition, a Cybersecurity Maturity Model Certification (CMMC) level 2 third-party (C3PAO) certification is required at time of quote and the offeror must provide their CMMC Unique Identifier (UID) upon request for drawings. Please see the attached N6660426Q0264 for more information.",
+  "detail_text_length": 1912,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/653652840c454f21a2bde06827f46932/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/653652840c454f21a2bde06827f46932/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e7a02c21fe04d814e64b3b9b4c3630138d257b4251dfef453c207437a75f72ff.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e7a02c21fe04d814e64b3b9b4c3630138d257b4251dfef453c207437a75f72ff.pdf",
+      "file_id": "653652840c454f21a2bde06827f46932",
+      "file_name": "N6660426Q0264.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 168875,
+      "sha256": "e7a02c21fe04d814e64b3b9b4c3630138d257b4251dfef453c207437a75f72ff"
+    }
+  ],
+  "_mirror_hash": "06fe5da25dd197650b963a3d1411ffc047470975d62bdde34ec89b127e01bb94",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.179583+00:00"
+}

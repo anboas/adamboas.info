@@ -1,0 +1,46 @@
+{
+  "id": "sam-43d05fa5ee594935b144307475a09860",
+  "title": "NOI - Acquisition of a Sonication Device for Amyloid Seeding Experiments",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=43d05fa5ee594935b144307475a09860",
+  "opportunity_url": "https://sam.gov/opp/43d05fa5ee594935b144307475a09860/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/43d05fa5ee594935b144307475a09860/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "43d05fa5ee594935b144307475a09860",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "75N98026Q00221",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=43d05fa5ee594935b144307475a09860",
+  "detail_text": "The National Heart, Lung, and Blood Institute (NHLBI) intends to award a sole source purchase order to Hologic Sales and Service, LLC for the acquisition of a sonication device to support amyloid seeding experiments. The required system must provide highly controlled, reproducible sonication of small-volume biological samples to enable standardized preparation of pre-formed fibrils (PFFs), which are critical for ongoing research into neurodegenerative diseases. This notice of intent is not a request for competitive quotations; however, interested parties may submit a capability statement demonstrating their ability to meet all minimum technical requirements, including controlled cavitation, sealed-tube processing, continuous sample rotation, and validated reproducibility for PFF generation.",
+  "detail_text_length": 801,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9e5383395834051922b10d84babc226/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e9e5383395834051922b10d84babc226/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/19e0911645ed3eaae18a4681e5587ffee23a1a8c44296474eb9d000984c25472.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/19e0911645ed3eaae18a4681e5587ffee23a1a8c44296474eb9d000984c25472.pdf",
+      "file_id": "e9e5383395834051922b10d84babc226",
+      "file_name": "NOI+PCA-NHLBI-04724+75N98026Q00221.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 247361,
+      "sha256": "19e0911645ed3eaae18a4681e5587ffee23a1a8c44296474eb9d000984c25472"
+    }
+  ],
+  "_mirror_hash": "b4e28a148850fe69a47bd23a2033b93056acbdb78b8cb5548055cd62e66cac3d",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.364993+00:00"
+}

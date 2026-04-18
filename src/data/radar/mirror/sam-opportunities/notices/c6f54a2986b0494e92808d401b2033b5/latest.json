@@ -1,0 +1,46 @@
+{
+  "id": "sam-c6f54a2986b0494e92808d401b2033b5",
+  "title": "FF Porta Johns",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c6f54a2986b0494e92808d401b2033b5",
+  "opportunity_url": "https://sam.gov/opp/c6f54a2986b0494e92808d401b2033b5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c6f54a2986b0494e92808d401b2033b5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c6f54a2986b0494e92808d401b2033b5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA302226Q0315",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3022 14 CONS LGCA",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c6f54a2986b0494e92808d401b2033b5",
+  "detail_text": "The contractor shall provide all labor, materials, equipment, management, supervision, coordination and transportation required to accomplish this work. Workdays for this contract will be Friday 3 July 2026, through Sunday 5 July 2026 with the event taking place on 4 July 2026 between the hours of 1700 (5:00 PM) and 2200 (10.00 PM). The airfield will be available for the placement of units beginning at 0800 hours (08:00 AM) on Friday 3 July. The contractor shall have all units removed off the airfield prior to 2359 (1159 PM) on Sunday 5 July. The contractor shall not begin any work until he/she is 100% material complete, including all cleaning and sanitary supplies. Written permission from the Contracting Officer (CO) or Contracting Officer’s Representative (COR) must be obtained for any deviation from the approved schedule. The contractor shall provide one hundred (100) standard latrine units. The units shall be modern polyethylene non-flushing units with holding tank, separate urinal, and bathroom tissue dispensers. The contractor shall provide twelve (12) handicapped accessible latrine units. The units shall be ground level floor accessible, non-flushing units with holding tank and bathroom tissue dispenser. The contractor shall provide sixteen (16) hand-washing stations. The units shall be complete with soap, paper towel dispensers, and foot-pedal operation for the sink. Each station shall be able to serve two people simultaneously. The contractor shall provide one (1) VIP trailer. The unit shall have a flushing toilet, foot-pedal operated sink, mirror, interior light, bathroom tissue dispenser, paper towel dispenser, and soap dispenser. The unit shall support an estimated 550 VIP guests over the course of the event. The contractor shall provide sixteen (16) hand-sanitizing stations. The units shall be free-standing, touch free, and complete with sanitizer. Each station shall be able to serve four people simultaneously. This is a sources sought posting. No award will be made from this post.",
+  "detail_text_length": 2029,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59cc0c04ade147159a64c40a51033c26/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59cc0c04ade147159a64c40a51033c26/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6387d6fc8d2b1e55c00f6844c83b0759f7821ab467d6eed93bd620087948c513.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6387d6fc8d2b1e55c00f6844c83b0759f7821ab467d6eed93bd620087948c513.pdf",
+      "file_id": "59cc0c04ade147159a64c40a51033c26",
+      "file_name": "Statement+of+Need+-+TOC+Portable+Restrooms+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 66140,
+      "sha256": "6387d6fc8d2b1e55c00f6844c83b0759f7821ab467d6eed93bd620087948c513"
+    }
+  ],
+  "_mirror_hash": "91c21ceb7073806259022fab80bb9b4766dde4b952accb8c064363ab308b365d",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.363938+00:00"
+}

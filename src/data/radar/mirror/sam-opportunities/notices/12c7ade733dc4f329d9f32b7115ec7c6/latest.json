@@ -1,0 +1,58 @@
+{
+  "id": "sam-12c7ade733dc4f329d9f32b7115ec7c6",
+  "title": "NADMT End of Life Spares",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12c7ade733dc4f329d9f32b7115ec7c6",
+  "opportunity_url": "https://sam.gov/opp/12c7ade733dc4f329d9f32b7115ec7c6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/12c7ade733dc4f329d9f32b7115ec7c6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "12c7ade733dc4f329d9f32b7115ec7c6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N61340-26-Q-1007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC TSD.NAWC TRAINING SYSTEMS DIV",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12c7ade733dc4f329d9f32b7115ec7c6",
+  "detail_text": "NAWCTSD has a requirement to procure Spares for the Naval Aviation Distributed Training (NADMT) program, establishing a System Integration Lab to support the integration of Joint Simulation Environment (JSE) with CVW platforms. Components are for device upgrades to support advanced training. This effort involves upgrading computer hardware, and monitors with specific commercial-off-the-shelf (COTS) components to ensure compatibility and continuity with the existing training devices.",
+  "detail_text_length": 487,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1aed3441bb544c1eaf2c4f61bc124308/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b9f24e61fb04e8cb19bc56d164fe998/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1aed3441bb544c1eaf2c4f61bc124308/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3fa845d7fcc85359f67d3bde5018cd9ee5204bf954cfcdb761cae2868cd67eb6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3fa845d7fcc85359f67d3bde5018cd9ee5204bf954cfcdb761cae2868cd67eb6.pdf",
+      "file_id": "1aed3441bb544c1eaf2c4f61bc124308",
+      "file_name": "NADMT+End+of+Life+Spares+Material+List+-+N6134026Q1007.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 33201,
+      "sha256": "3fa845d7fcc85359f67d3bde5018cd9ee5204bf954cfcdb761cae2868cd67eb6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b9f24e61fb04e8cb19bc56d164fe998/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8dd8dd2dea555d28e03345ebb685208231a977e57e8832b5683f6ca0bb118d93.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8dd8dd2dea555d28e03345ebb685208231a977e57e8832b5683f6ca0bb118d93.pdf",
+      "file_id": "9b9f24e61fb04e8cb19bc56d164fe998",
+      "file_name": "Sources_Sought_NADMT+End+of+Life+-+N6134026Q1007+-+04-15-2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174230,
+      "sha256": "8dd8dd2dea555d28e03345ebb685208231a977e57e8832b5683f6ca0bb118d93"
+    }
+  ],
+  "_mirror_hash": "80cce2dbc2c4ef89118e11ba314ef0457e1fe64027a4ddd85af8038eefaf558e",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.193095+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-1eaff0f0ae8b4fc191662755a0d1b220",
+  "title": "RETICLE ASSEMBLY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1eaff0f0ae8b4fc191662755a0d1b220",
+  "opportunity_url": "https://sam.gov/opp/1eaff0f0ae8b4fc191662755a0d1b220/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1eaff0f0ae8b4fc191662755a0d1b220/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1eaff0f0ae8b4fc191662755a0d1b220",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CM26043003",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1eaff0f0ae8b4fc191662755a0d1b220",
+  "detail_text": "Please review the NSN below and provide us with any sources that are able to manufacture this item. Provide the location of the manufacturer (City, State or Country if applicable). Please provide the POC’s for these manufacturers if available. All this information can be submitted to Zachary Mullins at Zachary.mullins@dla.mil. Thank you in advance for your assistance. NSN ITEM NAME CAGE PART # 1240017012910 RETICLE ASSEMBLY,OP 0FL29 SCO-RP-006 A company wishing to be reviewed and qualified as an “Approved Source”, must submit an application package through the DLA Land and Maritime Alternate Offer/Source Approval Request (SAR) Program. A SAR package contains all technical data needed to demonstrate that the prospective contractor can competently manufacture the product to the same level of quality or better than the Original Equipment Manufacturer (OEM). The onus is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item which DLA Weapon Support is procuring. For further information on Alternate Offers/SAR, please reference the following DLA Land and Maritime web page https://www.dla.mil/LandandMaritime/Business/Selling/Alternate-Offers/. Detailed information on Alternate Offer and Source Approval Request, including technical data package submission can be found in the “Source Approval Request” information section, near the bottom of the Value Management Unit page. This section includes a detailed explanation of the information and format necessary for a SAR and for the SAR approval process. ----------------------------------------------------------------------------------------------------------- Please review the NSN listed above and provide any sources that may be able to manufacture these items. The approved source(s) for this NSN are currently listed above. All information may be submitted directly to the Contract Specialist listed above. This information must be provided by the response date indicated above. **Sources interested in providing an offer on this solicitation should complete the attached market survey and return the completed copy to the Contract Specialist listed above, by the response date indicated above. Thank you in advance for your assistance. Zachary Mullins DLA Contracting Officer Zachary.mullins@dla.mil",
+  "detail_text_length": 2330,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/069cdda893a640a78c9aca08206022c5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43124ed373a348d0bc5e3770e8e7fdb4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/069cdda893a640a78c9aca08206022c5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9defb7bde4c2d4caf757b9aa1b3373947018a0fdf57c966a35e1f07a9cdb10c0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9defb7bde4c2d4caf757b9aa1b3373947018a0fdf57c966a35e1f07a9cdb10c0.docx",
+      "file_id": "069cdda893a640a78c9aca08206022c5",
+      "file_name": "Market+Research+LTC+Questionnaire+CM26043003.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59093,
+      "sha256": "9defb7bde4c2d4caf757b9aa1b3373947018a0fdf57c966a35e1f07a9cdb10c0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43124ed373a348d0bc5e3770e8e7fdb4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0a95d97b881035e81a886cee66e593d9c556e4c23a5638957c9906a51087194.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0a95d97b881035e81a886cee66e593d9c556e4c23a5638957c9906a51087194.xlsx",
+      "file_id": "43124ed373a348d0bc5e3770e8e7fdb4",
+      "file_name": "Market+Research+LTC+Spreadsheet+CM26043003.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 197001,
+      "sha256": "b0a95d97b881035e81a886cee66e593d9c556e4c23a5638957c9906a51087194"
+    }
+  ],
+  "_mirror_hash": "7fa3c37d61e4ab7992a8497ff658dacc29e2312d20f08f5e14385bf3bb04f5dc",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.348098+00:00"
+}

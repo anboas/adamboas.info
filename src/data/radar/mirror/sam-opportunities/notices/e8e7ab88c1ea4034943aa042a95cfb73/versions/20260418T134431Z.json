@@ -1,0 +1,68 @@
+{
+  "id": "sam-e8e7ab88c1ea4034943aa042a95cfb73",
+  "title": "USCG TRACEN Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8e7ab88c1ea4034943aa042a95cfb73",
+  "opportunity_url": "https://sam.gov/opp/e8e7ab88c1ea4034943aa042a95cfb73/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e8e7ab88c1ea4034943aa042a95cfb73/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e8e7ab88c1ea4034943aa042a95cfb73",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "TRACENBirmingham-SupportServices-2026",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.LOG-9",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8e7ab88c1ea4034943aa042a95cfb73",
+  "detail_text": "This is a Request for Information (RFI) for the purpose of conducting market research, analysis, and screening of potential capable parties to provide base operations support services for a newly established training center located in Birmingham, Alabama. Services required will include housing maintenance, pest control, grounds maintenance, custodial, and other general support services. All information contained in this RFI is preliminary and is subject to change if, and when, a solicitation is issued. See attachments for additional details.",
+  "detail_text_length": 547,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29dfb1404f3a436787d7594b6e9951ab/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b986c3ff0ee4b4cbd01f01a070930e9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a29ff9e9ad7c49e786df14f639e56da6/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29dfb1404f3a436787d7594b6e9951ab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f9610af64763aebf967121e097a59686a9b1bb8ff8761499dbde37a091abdf42.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f9610af64763aebf967121e097a59686a9b1bb8ff8761499dbde37a091abdf42.docx",
+      "file_id": "29dfb1404f3a436787d7594b6e9951ab",
+      "file_name": "RFI-+TRACEN+Birmingham+04162026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 35079,
+      "sha256": "f9610af64763aebf967121e097a59686a9b1bb8ff8761499dbde37a091abdf42"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9b986c3ff0ee4b4cbd01f01a070930e9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4d17b3f06f11e8ed6226aa67e38fff8f227e0d67225b98cdad68751c0ad17986.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4d17b3f06f11e8ed6226aa67e38fff8f227e0d67225b98cdad68751c0ad17986.docx",
+      "file_id": "9b986c3ff0ee4b4cbd01f01a070930e9",
+      "file_name": "Draft+SOW-+TRACEN+Birmingham+04162026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 207259,
+      "sha256": "4d17b3f06f11e8ed6226aa67e38fff8f227e0d67225b98cdad68751c0ad17986"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a29ff9e9ad7c49e786df14f639e56da6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f5facd5eb884f4cd4493510056fa784f3548edd8a8f989773517726e0af2744f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f5facd5eb884f4cd4493510056fa784f3548edd8a8f989773517726e0af2744f.pdf",
+      "file_id": "a29ff9e9ad7c49e786df14f639e56da6",
+      "file_name": "SQ+FEET+BY+FUNCTION+AREA+FY24+07.23.24.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45173,
+      "sha256": "f5facd5eb884f4cd4493510056fa784f3548edd8a8f989773517726e0af2744f"
+    }
+  ],
+  "_mirror_hash": "445c00af92bf64282c6e4e91f9165dd318aaa8832f7af6147ba388d55b0f3b0d",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.465157+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-aa2c15a08dd14a2d85f9880c8d1bf9ff",
+  "title": "Portable Sanitation Unit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa2c15a08dd14a2d85f9880c8d1bf9ff",
+  "opportunity_url": "https://sam.gov/opp/aa2c15a08dd14a2d85f9880c8d1bf9ff/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aa2c15a08dd14a2d85f9880c8d1bf9ff/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aa2c15a08dd14a2d85f9880c8d1bf9ff",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": " M00264-RFI-0022 ",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MCINCR.COMMANDER",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa2c15a08dd14a2d85f9880c8d1bf9ff",
+  "detail_text": "The purpose of this acquisition is to provide portable sanitation units support services for the Materiel Support Branch (MSB), G-4 Logistics Division,, Officer Candidate School (OCS) and The Basic School (TBS) on board Marine Corps Base Quantico (MCBQ), VA. These services support daily operations at MCBQ ranges, training areas, and other designated locations requiring portable sanitation facilities. The contractor shall provide delivery, placement, servicing, maintenance, and removal of portable chemical toilet units as required to support recurring operational requirements across the installation. This is only a draft PWS. A final PWS will be issued with the solicitation.",
+  "detail_text_length": 682,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/088128054a664058b77c4b34b3733722/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48388db7b635496488ba37f4c221ce7d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/088128054a664058b77c4b34b3733722/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8fd059868977cf632eb572acb4a7f713f1858407e511a7c1c1a5f3b687ba6bf7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8fd059868977cf632eb572acb4a7f713f1858407e511a7c1c1a5f3b687ba6bf7.pdf",
+      "file_id": "088128054a664058b77c4b34b3733722",
+      "file_name": "26RFI0022_PSU_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 135314,
+      "sha256": "8fd059868977cf632eb572acb4a7f713f1858407e511a7c1c1a5f3b687ba6bf7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48388db7b635496488ba37f4c221ce7d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/67e80d4acacae4c9936a446f84df94cd34c2e4eecd0568089c92ef40ee549557.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/67e80d4acacae4c9936a446f84df94cd34c2e4eecd0568089c92ef40ee549557.pdf",
+      "file_id": "48388db7b635496488ba37f4c221ce7d",
+      "file_name": "Attachment+1_PWS_RFI_DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 187587,
+      "sha256": "67e80d4acacae4c9936a446f84df94cd34c2e4eecd0568089c92ef40ee549557"
+    }
+  ],
+  "_mirror_hash": "b3c0d24f927c73ce6c5a0907146e10a38e9283eed160d59c12299f7ed2be5580",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.449647+00:00"
+}

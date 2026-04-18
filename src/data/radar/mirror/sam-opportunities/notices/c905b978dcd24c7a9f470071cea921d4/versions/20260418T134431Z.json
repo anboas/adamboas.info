@@ -1,0 +1,46 @@
+{
+  "id": "sam-c905b978dcd24c7a9f470071cea921d4",
+  "title": "Perpetual SQLBI License",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c905b978dcd24c7a9f470071cea921d4",
+  "opportunity_url": "https://sam.gov/opp/c905b978dcd24c7a9f470071cea921d4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c905b978dcd24c7a9f470071cea921d4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c905b978dcd24c7a9f470071cea921d4",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "D-26-TC-0101",
+  "agency_path": "JUSTICE, DEPARTMENT OF.DRUG ENFORCEMENT ADMINISTRATION.HEADQUATERS",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c905b978dcd24c7a9f470071cea921d4",
+  "detail_text": "The U.S. Department of Justice, Drug Enforcement Administration intends to award a sole source purchase order to Chainbridge Technologies for Perpetual SQLDBI License used for the depot tracking system software. In accordance with FAR 5.207(c)(16)(ii), vendors that feel they can meet the Government’s requirement details in the attached justification may submit a capability statement which shall be considered by the Agency. The Government anticipates the award of a Firm Fixed Price (FFP) purchase order. A determination by the Government not to open the requirement to competition based on responses to this notice is solely within the discretion of the Government. In accordance with FAR 13.106-1(b)(2), the justification is attached with this notice. The acquisition will be conducted through the FAR Part 13 “Simplified Acquisition Procedures”. The North American Industry Classification System (NAICS) is 541519. This notice is not a request for competitive quotation. The closing date for submitting a capability statement is April 22,2026 at 10:00AM Eastern Standard Time (EST). All submissions should be submitted electronically to Denise.N.Scott@dea.gov.",
+  "detail_text_length": 1166,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecafc8bfbf0a4c2ca80b6d98ca1fe2b5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecafc8bfbf0a4c2ca80b6d98ca1fe2b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f29d534b952ca8c969586f26d486cf6a55149ccf4d8a86d5466928996a0d770f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f29d534b952ca8c969586f26d486cf6a55149ccf4d8a86d5466928996a0d770f.pdf",
+      "file_id": "ecafc8bfbf0a4c2ca80b6d98ca1fe2b5",
+      "file_name": "A15+Justification+and+Approval-np.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 73422,
+      "sha256": "f29d534b952ca8c969586f26d486cf6a55149ccf4d8a86d5466928996a0d770f"
+    }
+  ],
+  "_mirror_hash": "8d5b7bb836d61ae3fe8fbb0f549718b6e1ccd5e101357d130cefe611cc6dc3e5",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.315151+00:00"
+}

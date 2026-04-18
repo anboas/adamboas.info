@@ -1,0 +1,46 @@
+{
+  "id": "sam-d51fd796e2bb4de2b6d52d3a9e7964bc",
+  "title": "USACE National Dredging Meeting, 10-11 June 2026",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d51fd796e2bb4de2b6d52d3a9e7964bc",
+  "opportunity_url": "https://sam.gov/opp/d51fd796e2bb4de2b6d52d3a9e7964bc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d51fd796e2bb4de2b6d52d3a9e7964bc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d51fd796e2bb4de2b6d52d3a9e7964bc",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "USACE-2026-NATIONAL-DREDGING-MEETING",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-06-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d51fd796e2bb4de2b6d52d3a9e7964bc",
+  "detail_text": "The Corps of Engineers Headquarters invites you to attend this year’s National Dredging Meeting, held the 10th and 11th of June 2026. The meeting will be held at The Slover in Norfolk, VA. The Slover is located at 235 E. Plume Street, Norfolk, VA. On Wednesday June 10th representatives from both large and small business are encouraged to attend. In the afternoon there will be an opportunity to engage with USACE District representatives about upcoming dredging work for 2026 and 2027. Details on upcoming dredging contracts will be sent out prior to the meeting. On Thursday June 11 there will be the Industry Corps Hopper Dredge Management Group (ICHDMG) meeting. There will be a virtual option to listen into the meeting both days. A draft agenda is attached. All attendees must register at https://operations.erdc.dren.mil/nav/meet.cfm. Registration for in person attendees must be received by 29 May 2026.",
+  "detail_text_length": 912,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cd695b818364b12ac2ba51aee32dcb8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cd695b818364b12ac2ba51aee32dcb8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/391f4547e0d40501d22845b97030e893b3dc70f5fa0ad5ae4b03a047bade5f7b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/391f4547e0d40501d22845b97030e893b3dc70f5fa0ad5ae4b03a047bade5f7b.pdf",
+      "file_id": "1cd695b818364b12ac2ba51aee32dcb8",
+      "file_name": "2026+NDM+AGENDA+June+10-11.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 134039,
+      "sha256": "391f4547e0d40501d22845b97030e893b3dc70f5fa0ad5ae4b03a047bade5f7b"
+    }
+  ],
+  "_mirror_hash": "4695eb75a916d5e8a0556e459c190a841706556b2534996caf10ea99b2b73f1c",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.494846+00:00"
+}

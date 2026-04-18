@@ -1,0 +1,46 @@
+{
+  "id": "sam-ee445dd40b8b45b0bcf046ff4055716c",
+  "title": "Private Detention Facility Services District of Southern California",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee445dd40b8b45b0bcf046ff4055716c",
+  "opportunity_url": "https://sam.gov/opp/ee445dd40b8b45b0bcf046ff4055716c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ee445dd40b8b45b0bcf046ff4055716c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ee445dd40b8b45b0bcf046ff4055716c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SSPODSCA417206",
+  "agency_path": "JUSTICE, DEPARTMENT OF.US MARSHALS SERVICE.US DEPT OF JUSTICE, USMS",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee445dd40b8b45b0bcf046ff4055716c",
+  "detail_text": "The scope of the proposed contract will consist of a contractor providing and managing a secure detention facility located within the geographic boundaries of the USMS District of Southern California with a capacity up to 700 beds. The requirement includes secure transportation services for the district to include: USMS Justice Prisoner & Alien Transportation System airlifts, guard services (medical and non-medical), jail-to-jail transfers, and jail-to-court-to-jail transportation",
+  "detail_text_length": 485,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55044d61d3e8431aae628d0309b4e0e2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55044d61d3e8431aae628d0309b4e0e2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6ae01c968c18325a7696e1c21f2204ad83da1afa47edd5e0f936391ea458be55.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6ae01c968c18325a7696e1c21f2204ad83da1afa47edd5e0f936391ea458be55.pdf",
+      "file_id": "55044d61d3e8431aae628d0309b4e0e2",
+      "file_name": "Sources+Sought+Private+Detention+Facility+Services+SCA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 131900,
+      "sha256": "6ae01c968c18325a7696e1c21f2204ad83da1afa47edd5e0f936391ea458be55"
+    }
+  ],
+  "_mirror_hash": "077326fdc0aaa28988042410bf9498f55d8fdc359672818c64c69c3fc836c8d6",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.464153+00:00"
+}

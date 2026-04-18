@@ -1,0 +1,45 @@
+{
+  "id": "sam-6cf97b8e258e48769fa48c75ba0fc02e",
+  "title": "CONTROL,AUXILLARY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cf97b8e258e48769fa48c75ba0fc02e",
+  "opportunity_url": "https://sam.gov/opp/6cf97b8e258e48769fa48c75ba0fc02e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6cf97b8e258e48769fa48c75ba0fc02e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6cf97b8e258e48769fa48c75ba0fc02e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QDA87",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6cf97b8e258e48769fa48c75ba0fc02e",
+  "detail_text": "1. This solicitation is for the PROCUREMENT of 1 each NSN: 5930 LLCYC6309 in accordance with reference number 5699-4701.The Government does not own the drawings or data rights to this NSN. 2. The resultant award of this solicitation will be issued bilaterally, requiring the contractor’s written acceptance prior to execution. Please quote a firm fixed price for the item. Do NOT include the cost for shipping material. Freight is FOB Origin. DCMA source inspection and acceptance is required. Required shipping procedure is military packaging and bar coding. If you are not the manufacturer of the material you are offering, you MUST state who the OEM is (name and cage code) and the part number you are offering and provide traceability information requested. 3. Government-Source Inspection and Acceptance (G-S I&A) is required. If the G-S I&A will occur at a different CAGE from the Admin Award CAGE, please provide the procurement facility CAGE and/or packaging CAGE with the quote. 4. Please provide the following information in the procurement quote: Your CAGE (used as the awardee CAGE):___________________ the unit procurement price: $____________________________________ (And whether this price is firm-fixed price (FFP) _____; The procurement CAGE _____________ and packaging CAGE___________ (as described in #2). Procurement Acquisition Time, delivered in _____ days. Quote validity: _________ NOTE TO DISTRIBUTORS/DEALERS: IF YOU ARE A DISTRIBUTOR, YOUR QUOTATION MUST BEACCOMPANIED WITH A LETTER FROM THE ACTUAL MANUFACTURER INDICATING THAT YOU ARE AN \"AUTHORIZED\" DISTRIBUTOR. IF YOU ARE A DEALER, YOUR QUOTATION MUST BE ACCOMPANIED WITH A STATEMENT CLEARLY IDENTIFYING YOUR FIRM AS A DEALER ALONG WITH THE OEM’S NAME/CAGE CODE AND P/N THAT YOU INTEND ON PROVIDING. PLEASE ALSO NOTE THAT DUE TO BEING A FIRST TIME PROCUREMENT BY THE NAVY WE ARE REQUESTING AN INFORMAL COST BREAKDOWN AND/OR REDACTED SALES RECEIPT TO DETERMINE QUOTATION FAIR AND REASONABLE. This order will be issued pursuant to Emergency Acquisition Authority (EAA). INSPECTION AT ORIGIN ACCEPTANCE AT ORIGIN POC EMAIL: OLIVIA.A.SNYDER.CIV@US.NAVY.MIL",
+  "detail_text_length": 2133,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/144b102a87e04ec2b47749543c235072/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/144b102a87e04ec2b47749543c235072/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f6d54bc8ad11e3e2b5237de2ed51d2ad30c3379f0ad6a5fa43d78f6c57bbad8d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f6d54bc8ad11e3e2b5237de2ed51d2ad30c3379f0ad6a5fa43d78f6c57bbad8d.pdf",
+      "file_id": "144b102a87e04ec2b47749543c235072",
+      "file_name": "3.01_Solicitation_N0010426.QDA87_26036-0013.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 606964,
+      "sha256": "f6d54bc8ad11e3e2b5237de2ed51d2ad30c3379f0ad6a5fa43d78f6c57bbad8d"
+    }
+  ],
+  "_mirror_hash": "f5729a81f53f8e296655859a4678849f9af391ec6739de4193af4f6e3b99020f",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.239800+00:00"
+}

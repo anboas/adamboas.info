@@ -1,0 +1,58 @@
+{
+  "id": "sam-f98becbd1e674e1dae934e704fc37b2b",
+  "title": "Presolicitation Notice-General Construction Multiple Award Task Order Contract/MATOC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f98becbd1e674e1dae934e704fc37b2b",
+  "opportunity_url": "https://sam.gov/opp/f98becbd1e674e1dae934e704fc37b2b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f98becbd1e674e1dae934e704fc37b2b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f98becbd1e674e1dae934e704fc37b2b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "1333ND26QNB190168",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY.DEPT OF COMMERCE NIST",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f98becbd1e674e1dae934e704fc37b2b",
+  "detail_text": "The National Institute of Standards and Technology (NIST) has a requirement for a Multiple Award Indefinite-Delivery, Indefinite-Quantity (IDIQ) contract to provide general construction services for laboratory and administrative spaces to support the Office of Facilities and Property Management (OFPM) in order to renovate and modernize facilities at the NIST campus in Gaithersburg, Maryland. The solicitation will indicate that one or more awards will be made. Work shall be performed in accordance with task orders issued by the Contracting Officer. It is anticipated that most of the task orders issued under this contract will involve mechanical construction. See the attached DRAFT Statement of Work for the IDIQ. The DRAFT Statement of Work for the first task order is also attached to this notice. This acquisition is being conducted as a total small business set-aside. The total maximum quantity to be ordered is $9,900,000.00 for the length of the contract, not to exceed four (4) years. The maximum quantity is calculated as the sum of all orders issued, including modifications, to all contractors. Specific requirements will be identified in written task orders issued by the Contracting Officer. Task orders will range in value from $2,500.00 to $3,500,000.00. The North American Industry Classification System (NAICS) code is 238220, Commercial and Institutional Building Construction, the size standard for which is $19.0M. It is anticipated the solicitation will be posted to sam.gov on or about April 28, 2026. No hard copies will be available. Inquiries to this presolicitation notice WILL NOT be responded to . A question and answer period will take place once the final solicitation issued.",
+  "detail_text_length": 1713,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52e1ab239afe4b9f86e3e5cc10722580/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a72125065b645838f288272230877ee/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52e1ab239afe4b9f86e3e5cc10722580/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f8e681a054f4426180be7c0b3ea0c8bee90ccedc64dd8fa3c44a282382d15e69.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f8e681a054f4426180be7c0b3ea0c8bee90ccedc64dd8fa3c44a282382d15e69.pdf",
+      "file_id": "52e1ab239afe4b9f86e3e5cc10722580",
+      "file_name": "STATEMENT+OF+WORK-GC+IDIQ.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 223805,
+      "sha256": "f8e681a054f4426180be7c0b3ea0c8bee90ccedc64dd8fa3c44a282382d15e69"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a72125065b645838f288272230877ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/00ac7cfb1b8589ba76df69a629c997ab39e40c0d8cf8659c5c41798b69d98162.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/00ac7cfb1b8589ba76df69a629c997ab39e40c0d8cf8659c5c41798b69d98162.pdf",
+      "file_id": "6a72125065b645838f288272230877ee",
+      "file_name": "Task+Order+0001+SOW_B202+Facade+Repairs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 239623,
+      "sha256": "00ac7cfb1b8589ba76df69a629c997ab39e40c0d8cf8659c5c41798b69d98162"
+    }
+  ],
+  "_mirror_hash": "6c73aed27901bb846191c3838de3a8d374fefb2a5596a0a80f01c6da7a2b8219",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.247653+00:00"
+}

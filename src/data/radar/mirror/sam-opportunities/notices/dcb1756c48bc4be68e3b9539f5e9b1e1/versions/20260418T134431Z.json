@@ -1,0 +1,58 @@
+{
+  "id": "sam-dcb1756c48bc4be68e3b9539f5e9b1e1",
+  "title": "Adjunct Faculty Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dcb1756c48bc4be68e3b9539f5e9b1e1",
+  "opportunity_url": "https://sam.gov/opp/dcb1756c48bc4be68e3b9539f5e9b1e1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dcb1756c48bc4be68e3b9539f5e9b1e1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dcb1756c48bc4be68e3b9539f5e9b1e1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N0018926QA029884",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dcb1756c48bc4be68e3b9539f5e9b1e1",
+  "detail_text": "THIS IS A SOURCES SOUGHT NOTICE ONLY. This notice is issued solely for information and planning purposes – it does not constitute a Request for Proposal (RFP) or Request for Quote (RFQ) or a promise to issue an RFP or RFQ in the future. This notice does not commit the Government to contract for any supply or service whatsoever. Further, the Navy is not at this time seeking proposals and will not accept unsolicited proposals. Respondees are advised that the U.S. Government will not pay for any information or administrative costs incurred in response to this notice; all costs associated with responding to this notice will be solely at the interested party’s expense. Not responding to this notice does not preclude participation in any future RFP/RFQ, if any is issued. It is the responsibility of the potential offerors/quoters to monitor for additional information pertaining to this requirement.",
+  "detail_text_length": 904,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/252c9a79ed6a4bd495824f492c7ca6d7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29832107a76d483b9acbc8425325688b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/252c9a79ed6a4bd495824f492c7ca6d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1545284b52066542f90755589f0554a82a4da9c6cb679261b3a09ad8453f02a7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1545284b52066542f90755589f0554a82a4da9c6cb679261b3a09ad8453f02a7.pdf",
+      "file_id": "252c9a79ed6a4bd495824f492c7ca6d7",
+      "file_name": "Adjunct+Faculty+Support+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 309781,
+      "sha256": "1545284b52066542f90755589f0554a82a4da9c6cb679261b3a09ad8453f02a7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/29832107a76d483b9acbc8425325688b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4e53e74bbbd98065fd41910356af3b8c72bcaeba19766112516ceae24d766937.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4e53e74bbbd98065fd41910356af3b8c72bcaeba19766112516ceae24d766937.pdf",
+      "file_id": "29832107a76d483b9acbc8425325688b",
+      "file_name": "Request+for+Information.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 154752,
+      "sha256": "4e53e74bbbd98065fd41910356af3b8c72bcaeba19766112516ceae24d766937"
+    }
+  ],
+  "_mirror_hash": "9603ef8ab2eaf11cd63d5b9a07ea148f22ffc991526d69f36fc54a379524b459",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.189236+00:00"
+}

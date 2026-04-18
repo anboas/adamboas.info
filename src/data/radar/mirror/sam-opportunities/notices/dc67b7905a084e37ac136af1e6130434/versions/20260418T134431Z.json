@@ -1,0 +1,68 @@
+{
+  "id": "sam-dc67b7905a084e37ac136af1e6130434",
+  "title": "TIMS 2000 SP Speech Pathology",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc67b7905a084e37ac136af1e6130434",
+  "opportunity_url": "https://sam.gov/opp/dc67b7905a084e37ac136af1e6130434/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dc67b7905a084e37ac136af1e6130434/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dc67b7905a084e37ac136af1e6130434",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24826Q0473",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc67b7905a084e37ac136af1e6130434",
+  "detail_text": "TIMS 70009000 device and its operating system.",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3aa1635b283d4d8086c688dfa3856b68/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f01935f178f44c48a621b85e868f517/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5d54c7fa1594a22a5ab24f00c37c707/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3aa1635b283d4d8086c688dfa3856b68/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6951b7267830a78c3aa5731ae6a5191e086cbd6c39eb3a08348ecbb975b814d4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6951b7267830a78c3aa5731ae6a5191e086cbd6c39eb3a08348ecbb975b814d4.pdf",
+      "file_id": "3aa1635b283d4d8086c688dfa3856b68",
+      "file_name": "TIMS+9000+Series+Specs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 515630,
+      "sha256": "6951b7267830a78c3aa5731ae6a5191e086cbd6c39eb3a08348ecbb975b814d4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6f01935f178f44c48a621b85e868f517/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e8cda0e4f7c27af8f95d061f15d2a3b1070e071784948f60de68bfbd7bbba0b1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e8cda0e4f7c27af8f95d061f15d2a3b1070e071784948f60de68bfbd7bbba0b1.docx",
+      "file_id": "6f01935f178f44c48a621b85e868f517",
+      "file_name": "SOURCE+SOUGHT+TIMS+200+SP+Speech+Pathology.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20981,
+      "sha256": "e8cda0e4f7c27af8f95d061f15d2a3b1070e071784948f60de68bfbd7bbba0b1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b5d54c7fa1594a22a5ab24f00c37c707/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e94fe1bafebf7726c945cd6b6d0dcbdfa4fefe79fedf549548d661a73ba2413f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e94fe1bafebf7726c945cd6b6d0dcbdfa4fefe79fedf549548d661a73ba2413f.docx",
+      "file_id": "b5d54c7fa1594a22a5ab24f00c37c707",
+      "file_name": "Final+SON+-+TIMS+2000+SP.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30519,
+      "sha256": "e94fe1bafebf7726c945cd6b6d0dcbdfa4fefe79fedf549548d661a73ba2413f"
+    }
+  ],
+  "_mirror_hash": "703f42afc01b4a4ed4fd07e3c53fca957ee93a01e472de5191ead9286d269d04",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.330780+00:00"
+}

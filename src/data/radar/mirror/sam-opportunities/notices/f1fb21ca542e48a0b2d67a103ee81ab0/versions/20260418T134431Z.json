@@ -1,0 +1,57 @@
+{
+  "id": "sam-f1fb21ca542e48a0b2d67a103ee81ab0",
+  "title": "Drug Evidence Destruction Services (Non-Retrievable Disposal Methods)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f1fb21ca542e48a0b2d67a103ee81ab0",
+  "opportunity_url": "https://sam.gov/opp/f1fb21ca542e48a0b2d67a103ee81ab0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f1fb21ca542e48a0b2d67a103ee81ab0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f1fb21ca542e48a0b2d67a103ee81ab0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "26-R-0000205",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.DIVISION 1500",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f1fb21ca542e48a0b2d67a103ee81ab0",
+  "detail_text": "The Federal Bureau of Investigation (FBI), Finance and Facilities Division, is issuing this Request for Information (RFI) to identify qualified vendors capable of providing safe, compliant, and environmentally responsible destruction of narcotics evidence. Federal agencies are experiencing a significant increase in the volume of seized narcotics requiring destruction, while traditional incineration capacity—particularly on the West Coast—has declined. These conditions create operational, safety, and logistical challenges associated with transporting and destroying controlled substances. The Government is seeking information on innovative and scalable solutions for the destruction of controlled substances that meet the requirement for “non-retrievable” destruction in accordance with 21 CFR 1317.05 . Vendors may propose a range of disposal methods, including but not limited to incineration (fixed or mobile), pyrolysis, chemical digestion, encapsulation, alkaline hydrolysis, or other emerging technologies. The Government is particularly interested in solutions that: Reduce reliance on fixed incineration infrastructure Minimize transportation distances and associated risks Reduce personnel requirements for escorted and witnessed destruction Provide scalable capabilities for high-volume seizures Maintain safety for personnel, the public, and the environment Vendors must demonstrate the capability to safely and legally handle and destroy all categories of controlled substances, including both illicit drugs and legally possessed pharmaceuticals, in compliance with applicable federal, state, and local regulations. This RFI is issued for market research purposes only and does not constitute a solicitation. The Government is also seeking feedback on a draft Performance Work Statement (PWS) to inform potential future acquisition strategies. Interested vendors are encouraged to review the full RFI document for detailed submission requirements and requested information.",
+  "detail_text_length": 1991,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89cb41f594b8459e873aa024b1391703/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f00d862909d648608ef3ff1b30295202/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89cb41f594b8459e873aa024b1391703/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b152240810614a1447458ed3a963e4ad01bc413a6fb892237499acd525e92ead.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b152240810614a1447458ed3a963e4ad01bc413a6fb892237499acd525e92ead.pdf",
+      "file_id": "89cb41f594b8459e873aa024b1391703",
+      "file_name": "Dug+Evidence+Destruction+Services+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 247736,
+      "sha256": "b152240810614a1447458ed3a963e4ad01bc413a6fb892237499acd525e92ead"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f00d862909d648608ef3ff1b30295202/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c9421f3598c44859a30c82d9ca21a4fff55df43be33ecf24006a19c0b1156a26.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c9421f3598c44859a30c82d9ca21a4fff55df43be33ecf24006a19c0b1156a26.docx",
+      "file_id": "f00d862909d648608ef3ff1b30295202",
+      "file_name": "PWS+Drug+Evidence+Destruction+Services+-DRAFT-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145953,
+      "sha256": "c9421f3598c44859a30c82d9ca21a4fff55df43be33ecf24006a19c0b1156a26"
+    }
+  ],
+  "_mirror_hash": "872e94e690e02299f86939c3edc748c0f2685a71fbbc47e0f7536de4a7a5a248",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.446936+00:00"
+}

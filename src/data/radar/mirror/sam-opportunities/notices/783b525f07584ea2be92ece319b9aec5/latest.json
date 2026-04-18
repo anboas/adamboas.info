@@ -1,0 +1,59 @@
+{
+  "id": "sam-783b525f07584ea2be92ece319b9aec5",
+  "title": "Notice of Intent - Sole Source - Anderometers",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=783b525f07584ea2be92ece319b9aec5",
+  "opportunity_url": "https://sam.gov/opp/783b525f07584ea2be92ece319b9aec5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/783b525f07584ea2be92ece319b9aec5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "783b525f07584ea2be92ece319b9aec5",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N0016726Q1078",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC CARDEROCK",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=783b525f07584ea2be92ece319b9aec5",
+  "detail_text": "This is a combined synopsis/solicitation for commercial items prepared in accordance with Federal Acquisition Regulation (FAR) Subpart 12.6, as supplemented with additional information included in this notice. The Naval Surface Warfare Center Carderock Division (NSWCCD) intends to solicit only one source under the authority of FAR Part 13.106-1(b) the Contracting Officer has determined that circumstances of the contract action deem only one source reasonably available. The Government intends to solicit with Denkei Corporation Americas for calibrated Anderometer electronics including Anderon analyzer and Anderon Calibrator, with auxiliary components. The NAICS code is 334519 and the Business Standard is 600 . The provisions and clauses included and/or incorporated in this solicitation document are those in effect through the Federal Acquisition Circular. This RFQ incorporates all provisions and clauses in effect through Federal Acquisition Circular FAC 2026-01 and the Defense Federal Acquisition Regulation Supplement (DFARS) DPN 20251110. SEE ATTACHED SOLICITATION FOR CLAUSES AND PROVISIONS. Interested parties may identify their interest to this requirement by submitting a capabilities statement no later than 4/29/26, 12PM EST . This notice of intent is NOT a request for competitive quotes. However, all responses received by 4/29/26 will be considered by the Government. A determination by the Government not to compete this proposed purchase order based upon responses to this notice is solely within the discretion of the Government. Information received will normally be considered solely for the purpose of determining whether to conduct a competitive procurement. All responses shall include price(s), FOB point, a point of contact, name and phone number, GSA contract number (if applicable), business size, and payment terms. Each response must clearly indicate the capability of the quoter to meet all specifications and requirements. Responses to this notice are due on or before 12:00 PM ET 4/29/26 by email at steven.besanko@navy.mil .",
+  "detail_text_length": 2066,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cedcc9933fa04abb9c93c250a032b4c4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdefa333fc504ca891407d9f409da5d1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cedcc9933fa04abb9c93c250a032b4c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eb47944f82f0155ee20dd942f4ba5ba0d9c6cf0cc4fdec41beb3172a7508085b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eb47944f82f0155ee20dd942f4ba5ba0d9c6cf0cc4fdec41beb3172a7508085b.docx",
+      "file_id": "cedcc9933fa04abb9c93c250a032b4c4",
+      "file_name": "sole+source+justification+v1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 26825,
+      "sha256": "eb47944f82f0155ee20dd942f4ba5ba0d9c6cf0cc4fdec41beb3172a7508085b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdefa333fc504ca891407d9f409da5d1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20b902509921dafb4c567c2a0249ebdb5d9f720a5a4ed4c3ee367999d01fae50.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20b902509921dafb4c567c2a0249ebdb5d9f720a5a4ed4c3ee367999d01fae50.pdf",
+      "file_id": "fdefa333fc504ca891407d9f409da5d1",
+      "file_name": "Solicitation+-+N0016726Q1078.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1759804,
+      "sha256": "20b902509921dafb4c567c2a0249ebdb5d9f720a5a4ed4c3ee367999d01fae50"
+    }
+  ],
+  "_mirror_hash": "72c191469f95a1fc5760cb6c528f04633f916ddaee0db45d285c906a112dd47e",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.171565+00:00"
+}

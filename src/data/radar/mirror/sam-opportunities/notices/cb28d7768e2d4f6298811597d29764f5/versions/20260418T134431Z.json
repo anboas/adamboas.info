@@ -1,0 +1,136 @@
+{
+  "id": "sam-cb28d7768e2d4f6298811597d29764f5",
+  "title": "H30 Engineering Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb28d7768e2d4f6298811597d29764f5",
+  "opportunity_url": "https://sam.gov/opp/cb28d7768e2d4f6298811597d29764f5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cb28d7768e2d4f6298811597d29764f5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cb28d7768e2d4f6298811597d29764f5",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N0017826R3017",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC DAHLGREN",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb28d7768e2d4f6298811597d29764f5",
+  "detail_text": "Draft Request for Proposal (RFP) for H30 Engineering Services. The Naval Surface Warfare Center Dahlgren Division (NSWCDD) falls under the Naval Sea Systems Command (NAVSEA). NSWCDD is an engineering, software development, and system test and integration center for Research, Development, Test, and Evaluation (RDTE) components of the US Navy. Draft RFP to provide engineering services to the Weapons Control and Integration Department (H), Missile Systems, Threat Engineering, and Weapons Effectiveness Division (H30) for professional system engineering, mechanical engineering, electrical engineering, computer hardware and software engineering, design and technical direction agent engineering, configuration management (CM), logistics support services, mechanical and electrical engineering technician services, project management and project management support functions, accounting and business services, technical writing services, information assurance (IA) support services, and system administration services.",
+  "detail_text_length": 1019,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/153a6ce47953415e89f3c33f7257db8d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e6a9c3cacda4ffe957334cdc94e050a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53dc4c88ee494b899eb26f83fecb1242/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d06bec76cae47f7b114eb21701d57ea/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80d224ec523e497782a264e509f36a76/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8937b7ec0a5b451eba58bef6cc5b1204/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc7f2b905a0e4df4a52a3b392c3353ff/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1581c0e8cd146ac8578104cd2b6e094/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e84a559904564aa2a7e1c5f068110f11/download"
+  ],
+  "resource_count": 9,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/153a6ce47953415e89f3c33f7257db8d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/704d4ea53e1b221f6214600f9f29658c3964429096faa2de0643eb7133aceaf3.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/704d4ea53e1b221f6214600f9f29658c3964429096faa2de0643eb7133aceaf3.xlsx",
+      "file_id": "153a6ce47953415e89f3c33f7257db8d",
+      "file_name": "J.6+-+Cost+Proposal+Spreadsheet+-Example-.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27872,
+      "sha256": "704d4ea53e1b221f6214600f9f29658c3964429096faa2de0643eb7133aceaf3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e6a9c3cacda4ffe957334cdc94e050a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f36a879beff768619ac403d497e79307d5711d0ce03e6b3e562b3195ef2682ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f36a879beff768619ac403d497e79307d5711d0ce03e6b3e562b3195ef2682ca.pdf",
+      "file_id": "1e6a9c3cacda4ffe957334cdc94e050a",
+      "file_name": "J.2-Quality+Assurance+Surveillance+Plan+-QASP-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 832360,
+      "sha256": "f36a879beff768619ac403d497e79307d5711d0ce03e6b3e562b3195ef2682ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53dc4c88ee494b899eb26f83fecb1242/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/727a9edcb114bad87717ea9e8cb430d8e1b5eea0176d81f17ca3280a0cbfc032.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/727a9edcb114bad87717ea9e8cb430d8e1b5eea0176d81f17ca3280a0cbfc032.pdf",
+      "file_id": "53dc4c88ee494b899eb26f83fecb1242",
+      "file_name": "J.4-Personnel+Qualifications+Guide.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 861248,
+      "sha256": "727a9edcb114bad87717ea9e8cb430d8e1b5eea0176d81f17ca3280a0cbfc032"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5d06bec76cae47f7b114eb21701d57ea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/66ee6ef5fcb1136ef065cf23203b9fbef3f6013d4c14fb6f09487ce648210122.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/66ee6ef5fcb1136ef065cf23203b9fbef3f6013d4c14fb6f09487ce648210122.pdf",
+      "file_id": "5d06bec76cae47f7b114eb21701d57ea",
+      "file_name": "J.5-Past+Performance+Reference.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 523872,
+      "sha256": "66ee6ef5fcb1136ef065cf23203b9fbef3f6013d4c14fb6f09487ce648210122"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80d224ec523e497782a264e509f36a76/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/802ac4a03e876509f3e00e1220c59f5461d8c11e5076a14d57524d87f211f8fb.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/802ac4a03e876509f3e00e1220c59f5461d8c11e5076a14d57524d87f211f8fb.xlsx",
+      "file_id": "80d224ec523e497782a264e509f36a76",
+      "file_name": "J.1-+Government+Furnished+Property+Attachment+.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9710937,
+      "sha256": "802ac4a03e876509f3e00e1220c59f5461d8c11e5076a14d57524d87f211f8fb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8937b7ec0a5b451eba58bef6cc5b1204/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/287c219960cd2cf7b6304dc97e6b522da6ee75222c57d0d4d3022e72677bfef5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/287c219960cd2cf7b6304dc97e6b522da6ee75222c57d0d4d3022e72677bfef5.pdf",
+      "file_id": "8937b7ec0a5b451eba58bef6cc5b1204",
+      "file_name": "J.9-Contract+Data+Requirements+List.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3636823,
+      "sha256": "287c219960cd2cf7b6304dc97e6b522da6ee75222c57d0d4d3022e72677bfef5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc7f2b905a0e4df4a52a3b392c3353ff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1fd03f0fbc1d12ba6f53e0aa3dd5dec604b77cb14c9053227c1a51d1e2177741.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1fd03f0fbc1d12ba6f53e0aa3dd5dec604b77cb14c9053227c1a51d1e2177741.pdf",
+      "file_id": "cc7f2b905a0e4df4a52a3b392c3353ff",
+      "file_name": "J.8-++Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1443658,
+      "sha256": "1fd03f0fbc1d12ba6f53e0aa3dd5dec604b77cb14c9053227c1a51d1e2177741"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e1581c0e8cd146ac8578104cd2b6e094/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fdc387463b8f5fc720f296daf4a9be7ef519f34378c169ba9e105919c6d34cfd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fdc387463b8f5fc720f296daf4a9be7ef519f34378c169ba9e105919c6d34cfd.pdf",
+      "file_id": "e1581c0e8cd146ac8578104cd2b6e094",
+      "file_name": "Solicitation+-+N0017826R3017.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2715527,
+      "sha256": "fdc387463b8f5fc720f296daf4a9be7ef519f34378c169ba9e105919c6d34cfd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e84a559904564aa2a7e1c5f068110f11/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ff128cc552cee71ca02110a77a9138313a3dda57c02962780c0d480d6528c16b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ff128cc552cee71ca02110a77a9138313a3dda57c02962780c0d480d6528c16b.xlsx",
+      "file_id": "e84a559904564aa2a7e1c5f068110f11",
+      "file_name": "J.3-+Staffing+Plan+Example+.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24425,
+      "sha256": "ff128cc552cee71ca02110a77a9138313a3dda57c02962780c0d480d6528c16b"
+    }
+  ],
+  "_mirror_hash": "f1e7790f1fa7a71788e359e7d9cfb7734521108537b59153f3540e983fdaffb6",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.172748+00:00"
+}

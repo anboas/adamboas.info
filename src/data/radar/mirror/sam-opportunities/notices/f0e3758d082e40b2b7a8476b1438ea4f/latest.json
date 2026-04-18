@@ -1,0 +1,103 @@
+{
+  "id": "sam-f0e3758d082e40b2b7a8476b1438ea4f",
+  "title": "RFI for AMA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0e3758d082e40b2b7a8476b1438ea4f",
+  "opportunity_url": "https://sam.gov/opp/f0e3758d082e40b2b7a8476b1438ea4f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f0e3758d082e40b2b7a8476b1438ea4f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f0e3758d082e40b2b7a8476b1438ea4f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFIAMA2027",
+  "agency_path": "DEPT OF DEFENSE.NATIONAL GEOSPATIAL-INTELLIGENCE AGENCY (NGA).NATL GEOSPATIAL-INTELLIGENCE AGENCY",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0e3758d082e40b2b7a8476b1438ea4f",
+  "detail_text": "See the attached documents for more information about this request for information.",
+  "detail_text_length": 83,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a9629e68fa7466487fdcf91de283c80/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa12ec384fb041e98f55e1a61b130f4f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab1e34e4fdf94896b64ce1becce70063/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7fd486bb6294e3d99e47af39a576007/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f33f69613d1144ccb4e9560da1baa6ac/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8949aef0e6b45ac8cfe7661234e9950/download"
+  ],
+  "resource_count": 6,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a9629e68fa7466487fdcf91de283c80/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/49d8ba6c0261832cd98f8efa1681533e2334f164cf70fda6b09b07b40069013a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/49d8ba6c0261832cd98f8efa1681533e2334f164cf70fda6b09b07b40069013a.docx",
+      "file_id": "9a9629e68fa7466487fdcf91de283c80",
+      "file_name": "20260403_AMA+Questions+and+Answers.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46177,
+      "sha256": "49d8ba6c0261832cd98f8efa1681533e2334f164cf70fda6b09b07b40069013a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa12ec384fb041e98f55e1a61b130f4f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4157720c7fc16b441f657f7e976effbb24a7e495b3c0b1d6d6c18f93a645063c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4157720c7fc16b441f657f7e976effbb24a7e495b3c0b1d6d6c18f93a645063c.pdf",
+      "file_id": "aa12ec384fb041e98f55e1a61b130f4f",
+      "file_name": "AppendixB-NGA_Software_Way.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 726733,
+      "sha256": "4157720c7fc16b441f657f7e976effbb24a7e495b3c0b1d6d6c18f93a645063c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ab1e34e4fdf94896b64ce1becce70063/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/06f1f6d3d58bc5f45ceb0c0dc9787752e93e38b198a1c32763c1d1e33cd21a99.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/06f1f6d3d58bc5f45ceb0c0dc9787752e93e38b198a1c32763c1d1e33cd21a99.docx",
+      "file_id": "ab1e34e4fdf94896b64ce1becce70063",
+      "file_name": "20260403_AMA_RFI_Instructions.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 135823,
+      "sha256": "06f1f6d3d58bc5f45ceb0c0dc9787752e93e38b198a1c32763c1d1e33cd21a99"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7fd486bb6294e3d99e47af39a576007/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/01012d5a8de3bedb6184923ea55c33756e3dd9d28f0929f3b911939f92447619.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/01012d5a8de3bedb6184923ea55c33756e3dd9d28f0929f3b911939f92447619.xlsx",
+      "file_id": "d7fd486bb6294e3d99e47af39a576007",
+      "file_name": "20260403_AMA_RFI_Questions_Template.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18443,
+      "sha256": "01012d5a8de3bedb6184923ea55c33756e3dd9d28f0929f3b911939f92447619"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f33f69613d1144ccb4e9560da1baa6ac/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/972b54de3a4ea54e38c6de905c249e995658a5505f6fc864846cf695b7c159ea.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/972b54de3a4ea54e38c6de905c249e995658a5505f6fc864846cf695b7c159ea.pdf",
+      "file_id": "f33f69613d1144ccb4e9560da1baa6ac",
+      "file_name": "AppendixA-NGA_Data_Strategy.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 7148643,
+      "sha256": "972b54de3a4ea54e38c6de905c249e995658a5505f6fc864846cf695b7c159ea"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8949aef0e6b45ac8cfe7661234e9950/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7b14f299f496cc2fe014d4d44c3352030852a7c3631917bb873b0039e3d0cadf.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7b14f299f496cc2fe014d4d44c3352030852a7c3631917bb873b0039e3d0cadf.docx",
+      "file_id": "f8949aef0e6b45ac8cfe7661234e9950",
+      "file_name": "20260403_AMA_SOW_RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 357672,
+      "sha256": "7b14f299f496cc2fe014d4d44c3352030852a7c3631917bb873b0039e3d0cadf"
+    }
+  ],
+  "_mirror_hash": "8705e5b37e484665233f0ceab0e1fd660797080a97eee21252a15ceafb927a79",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.270809+00:00"
+}

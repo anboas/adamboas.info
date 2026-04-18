@@ -1,0 +1,67 @@
+{
+  "id": "sam-2e22dbc48bd040bea21c9bada02d0947",
+  "title": "GRID 20/20 data collections and monitoring services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e22dbc48bd040bea21c9bada02d0947",
+  "opportunity_url": "https://sam.gov/opp/2e22dbc48bd040bea21c9bada02d0947/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2e22dbc48bd040bea21c9bada02d0947/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2e22dbc48bd040bea21c9bada02d0947",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N3943026F5012",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.EXPEDITIONARY WARFARE CENTER.NAVFAC SYSTEMS AND EXP WARFARE CTR",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e22dbc48bd040bea21c9bada02d0947",
+  "detail_text": "Marine Corps Base Camp Pendleton’s Electrical and Gas Division expects to receive GRID 20/20 data collections and monitoring services through ATI HESS data collection software, Transformer data communications and services and provide onsite and virtual technical support. Tasks 1.1 Task 1 – Provide Data Collection and Analytics Provide annual service on data collection engine, monitoring, and management tool for device deployment, operation, and maintenance, and data analytics portal that delivers precise, timely Information from the center of the distribution grid. 1.2 Task 2 - Provide ATI Transformer data communications. Provide annual service on remote monitoring, real-time data transfer every 15 minutes, fault detection, and predictive maintenance to monitor transformers, and proactively prevent and identify faults. 1.3 Task 3 - Provide ATI notifications. Provide annual service for automated outages and restorations notifications. 1.4 Task 4 – Provide ATI GRID watchdog SaaS Annual recurring services. Provide annual of service for Automated Alerts; Load & Voltage heat maps, Feeder Voltage Profile Report 1.5 Task 5 – Provide onsite and virtual services (applies to option years 1-4 only). Provide up to 25 hours of virtual services annually during normal working hours. 1.6 Task 6 – Provide and maintain FedRAMP Cybersecurity Services at DoW Impact Level (IL) 4 to include the annual 3PAO Audit (applies to option years 1-4 only). Provide all necessary means to provide and maintain compliance with all requirements and regulations required by and attributed to cybersecurity at or above DoW IL 4. Provide all necessary services to accommodate and host the annual 3PAO audit to ensure compliance with all required DoW IL 4 cybersecurity requirement related to the Grid 20/20 ATI monitoring devices.",
+  "detail_text_length": 1817,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/806bcc853dae418e994104531c8474b4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82045809e1ff4fd189f2c180d5fe5a98/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8d3ba5d83d44f108737db538af3da3a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/806bcc853dae418e994104531c8474b4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a9b4b4842aa5ce85237ce063326702ec893235efcd5e02df0e7b30e6438ce50a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a9b4b4842aa5ce85237ce063326702ec893235efcd5e02df0e7b30e6438ce50a.pdf",
+      "file_id": "806bcc853dae418e994104531c8474b4",
+      "file_name": "SAP+Sole-Source+Justification_14APR2026_Grid2020+rev_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 250100,
+      "sha256": "a9b4b4842aa5ce85237ce063326702ec893235efcd5e02df0e7b30e6438ce50a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/82045809e1ff4fd189f2c180d5fe5a98/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4561552fa3da9a32debe3d00a6a0335d34dedc9f50f2ecd63954ee69598ed9b2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4561552fa3da9a32debe3d00a6a0335d34dedc9f50f2ecd63954ee69598ed9b2.pdf",
+      "file_id": "82045809e1ff4fd189f2c180d5fe5a98",
+      "file_name": "13.+SOW-GRID+2020+SERVICE.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 241848,
+      "sha256": "4561552fa3da9a32debe3d00a6a0335d34dedc9f50f2ecd63954ee69598ed9b2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8d3ba5d83d44f108737db538af3da3a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3b802eda2a7da5e2553cfc3eeb2270abcf9d3238c202f729aa2b278b84013d7f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3b802eda2a7da5e2553cfc3eeb2270abcf9d3238c202f729aa2b278b84013d7f.pdf",
+      "file_id": "d8d3ba5d83d44f108737db538af3da3a",
+      "file_name": "Grid+2020+Combined+Synopsis+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153226,
+      "sha256": "3b802eda2a7da5e2553cfc3eeb2270abcf9d3238c202f729aa2b278b84013d7f"
+    }
+  ],
+  "_mirror_hash": "ba375079c2a10469d7f1f521b51e64485445eb813c7d7874738a4a987f9f3161",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.231250+00:00"
+}

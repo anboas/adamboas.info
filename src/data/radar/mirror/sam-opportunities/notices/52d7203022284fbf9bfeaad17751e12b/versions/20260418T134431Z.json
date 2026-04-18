@@ -1,0 +1,46 @@
+{
+  "id": "sam-52d7203022284fbf9bfeaad17751e12b",
+  "title": "General Services Administration (GSA) seeks to lease the following space: Fort Worth,  Texas - 1TX2748 - Solicitation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52d7203022284fbf9bfeaad17751e12b",
+  "opportunity_url": "https://sam.gov/opp/52d7203022284fbf9bfeaad17751e12b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/52d7203022284fbf9bfeaad17751e12b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "52d7203022284fbf9bfeaad17751e12b",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "1TX2748",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.PUBLIC BUILDINGS SERVICE.PBS R7 OFFICE OF LEASING",
+  "posted_date": "2026-04-16",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=52d7203022284fbf9bfeaad17751e12b",
+  "detail_text": "Solicitation (RLP 1TX2748) attached.",
+  "detail_text_length": 36,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5672958fbc842439ea4cc16ae87ff74/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5672958fbc842439ea4cc16ae87ff74/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2fa89ba1e6e48a4f59761f49ba153f577541f3042c5dfead53c585f7dcca1216.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2fa89ba1e6e48a4f59761f49ba153f577541f3042c5dfead53c585f7dcca1216.pdf",
+      "file_id": "e5672958fbc842439ea4cc16ae87ff74",
+      "file_name": "1TX2748+-+Final+RLP+Package+with+Exhibits+04162026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2408438,
+      "sha256": "2fa89ba1e6e48a4f59761f49ba153f577541f3042c5dfead53c585f7dcca1216"
+    }
+  ],
+  "_mirror_hash": "30161808a1a53141d7845a939859e1c4f733ed2a853708bd4d6eb6aa9d58f6dc",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.455575+00:00"
+}

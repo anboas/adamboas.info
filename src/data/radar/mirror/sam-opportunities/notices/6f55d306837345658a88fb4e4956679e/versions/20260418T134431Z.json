@@ -1,0 +1,58 @@
+{
+  "id": "sam-6f55d306837345658a88fb4e4956679e",
+  "title": "Sources Sought - Keesler AFB Telecommunications Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f55d306837345658a88fb4e4956679e",
+  "opportunity_url": "https://sam.gov/opp/6f55d306837345658a88fb4e4956679e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6f55d306837345658a88fb4e4956679e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6f55d306837345658a88fb4e4956679e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "F2J3M21055AW09",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3010  81 CONS CC",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6f55d306837345658a88fb4e4956679e",
+  "detail_text": "Commercial local and long distance Telecommunications service for Keesler AFB customers is required to ensure all organization have the ability to make and receive commercial local and long distance calls to successfully accomplish their mission. If commercial local and long distance telecommunication service is not repurchased all base organization on Keesler AFB will loose the ability to make and receive commercial local and long distance calls, which will negatively impact organizations ability to accomplishing their mission. Please see attached Performance Work Statement for more details.",
+  "detail_text_length": 599,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7749a900e1cb4aacaad6b71342dfd0ea/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe9ef92e32734e23a9ae51fdb62366eb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7749a900e1cb4aacaad6b71342dfd0ea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/86e4478e84b935872a4427015040d8a303b73559a743dd38e83af3689e3d9ce6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/86e4478e84b935872a4427015040d8a303b73559a743dd38e83af3689e3d9ce6.pdf",
+      "file_id": "7749a900e1cb4aacaad6b71342dfd0ea",
+      "file_name": "Performance+Work+Statement-+TS+17Apr2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 546452,
+      "sha256": "86e4478e84b935872a4427015040d8a303b73559a743dd38e83af3689e3d9ce6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe9ef92e32734e23a9ae51fdb62366eb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cce20af430e3578bbdaebcfe3c1de57ebaef914a80248453a16a6e3524e2df36.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cce20af430e3578bbdaebcfe3c1de57ebaef914a80248453a16a6e3524e2df36.pdf",
+      "file_id": "fe9ef92e32734e23a9ae51fdb62366eb",
+      "file_name": "Sources+Sought+Synopsis+-+Telecommunication+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 197224,
+      "sha256": "cce20af430e3578bbdaebcfe3c1de57ebaef914a80248453a16a6e3524e2df36"
+    }
+  ],
+  "_mirror_hash": "7840689a48882bf0981215c00ca26917099ef8cbe76a9f72c186526896b3e3ef",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.234822+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-94458287afa74458a4c5575ba6e96eda",
+  "title": "29-DAY DRY CARGO TIME CHARTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94458287afa74458a4c5575ba6e96eda",
+  "opportunity_url": "https://sam.gov/opp/94458287afa74458a4c5575ba6e96eda/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/94458287afa74458a4c5575ba6e96eda/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "94458287afa74458a4c5575ba6e96eda",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N32205-SS-N321-26-096",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=94458287afa74458a4c5575ba6e96eda",
+  "detail_text": "Please see attached Sources Sought Notice N32205-SS-N321-22-096.",
+  "detail_text_length": 64,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e834234020454d0c9c9d7053256b7c77/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e834234020454d0c9c9d7053256b7c77/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/17ed2848c831d59cae2bc7a45d76440edd5e50c6402ee5e8eac9fca6022f4a5b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/17ed2848c831d59cae2bc7a45d76440edd5e50c6402ee5e8eac9fca6022f4a5b.pdf",
+      "file_id": "e834234020454d0c9c9d7053256b7c77",
+      "file_name": "SS-26-096.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98406,
+      "sha256": "17ed2848c831d59cae2bc7a45d76440edd5e50c6402ee5e8eac9fca6022f4a5b"
+    }
+  ],
+  "_mirror_hash": "f2480f82962079797545d32883620a0bfcb88a06dfa53b20bf9e28c28d857848",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.326098+00:00"
+}

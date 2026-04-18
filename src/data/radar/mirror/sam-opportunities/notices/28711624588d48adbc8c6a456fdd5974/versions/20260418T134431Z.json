@@ -1,0 +1,56 @@
+{
+  "id": "sam-28711624588d48adbc8c6a456fdd5974",
+  "title": "5315 QUICK RELEASE PIN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28711624588d48adbc8c6a456fdd5974",
+  "opportunity_url": "https://sam.gov/opp/28711624588d48adbc8c6a456fdd5974/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/28711624588d48adbc8c6a456fdd5974/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "28711624588d48adbc8c6a456fdd5974",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0118",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=28711624588d48adbc8c6a456fdd5974",
+  "detail_text": "Fleet Logistics Center Puget Sound (FLCPS) intends to solicit for clear & concise description of supplies: PIN, QUICK RELEASE part number BLC6BC66S PIN, QUICK RELEASE part number BLNC-8-10 PIN, QUICK RELEASE part number BLDC-4-25 Brand Name: This requirement is brand name for Avibank Mfg., Inc. Interested companies may identify their interest and capability to respond to the requirement, which will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination not to compete this action based upon responses received to this notice is solely within the discretion of the Government. The Government will evaluate the offeror’s price for reasonableness and past performance as part of the responsibility determination in accordance with RFO 12.203. Anticipated Award Date: May 2026 Contracting Officer: Lorraine Small Lorraine.m.small.civ@us.navy.mil",
+  "detail_text_length": 904,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e2a12e880a74bb4b3f509a26e4f2879/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e631972a43104236b616ac7c36a7c3cd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e2a12e880a74bb4b3f509a26e4f2879/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d29813728f42540ddc7478f7ee1a7ba9ca83a3548a58cd1c078cbe7260f3eee9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d29813728f42540ddc7478f7ee1a7ba9ca83a3548a58cd1c078cbe7260f3eee9.pdf",
+      "file_id": "8e2a12e880a74bb4b3f509a26e4f2879",
+      "file_name": "1.3.5+N6275860457580+BN_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 841379,
+      "sha256": "d29813728f42540ddc7478f7ee1a7ba9ca83a3548a58cd1c078cbe7260f3eee9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e631972a43104236b616ac7c36a7c3cd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d67cd91284c5a6c41f27a84f1171a0e183f8db5c76baf3f2e6092b8ebd414ae2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d67cd91284c5a6c41f27a84f1171a0e183f8db5c76baf3f2e6092b8ebd414ae2.pdf",
+      "file_id": "e631972a43104236b616ac7c36a7c3cd",
+      "file_name": "2.1.1+26Q0118+Sol.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1788722,
+      "sha256": "d67cd91284c5a6c41f27a84f1171a0e183f8db5c76baf3f2e6092b8ebd414ae2"
+    }
+  ],
+  "_mirror_hash": "f7d8116b931f32a8449018cfb8470db975705039c0a2fa0c15df356f7ad0df81",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.246102+00:00"
+}

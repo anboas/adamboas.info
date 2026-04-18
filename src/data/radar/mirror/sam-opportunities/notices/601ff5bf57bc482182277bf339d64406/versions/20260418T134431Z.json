@@ -1,0 +1,46 @@
+{
+  "id": "sam-601ff5bf57bc482182277bf339d64406",
+  "title": "NozzleFuelInjection_End_Item_F110_NSN_2915013085486PR_PN_9559M41G05",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=601ff5bf57bc482182277bf339d64406",
+  "opportunity_url": "https://sam.gov/opp/601ff5bf57bc482182277bf339d64406/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/601ff5bf57bc482182277bf339d64406/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "601ff5bf57bc482182277bf339d64406",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FD20302601923",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=601ff5bf57bc482182277bf339d64406",
+  "detail_text": "See Attached Document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27f397fa39f14177b2de8d21e51accf2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/27f397fa39f14177b2de8d21e51accf2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa2804454f1e21647c0ac0350c838b8d3a529c8c37f17b76c37ef9fc09e80700.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa2804454f1e21647c0ac0350c838b8d3a529c8c37f17b76c37ef9fc09e80700.pdf",
+      "file_id": "27f397fa39f14177b2de8d21e51accf2",
+      "file_name": "MRSSS_FD20302601923.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 709138,
+      "sha256": "fa2804454f1e21647c0ac0350c838b8d3a529c8c37f17b76c37ef9fc09e80700"
+    }
+  ],
+  "_mirror_hash": "7f386131e868cb71538f80a9e4cf86e8531e7b8c231e95a3ebaf9837d234b34a",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.345486+00:00"
+}

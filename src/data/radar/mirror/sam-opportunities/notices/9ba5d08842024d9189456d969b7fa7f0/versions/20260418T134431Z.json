@@ -1,0 +1,68 @@
+{
+  "id": "sam-9ba5d08842024d9189456d969b7fa7f0",
+  "title": "DSpace Software Upgrades, Configuration, Maintainance, Support at NPS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ba5d08842024d9189456d969b7fa7f0",
+  "opportunity_url": "https://sam.gov/opp/9ba5d08842024d9189456d969b7fa7f0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9ba5d08842024d9189456d969b7fa7f0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9ba5d08842024d9189456d969b7fa7f0",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "1301339273",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ba5d08842024d9189456d969b7fa7f0",
+  "detail_text": "THIS IS A NOTICE OF INTENT TO AWARD A BRAND NAME CONTRACT AND IS NOT A REQUEST FOR COMPETITIVE QUOTES Naval Supply Systems Command (NAVSUP) Fleet Logistics Center San Diego (FLCSD) intends to award a firm fixed price contract to a \"Registered Duraspace Service Provider.\" Only responsible sources and no other supplies or services will satisfy agency requirements. LYRASIS (merged with DSpace ) Address: 1438 West Peachtree Street NW, Suite 150, Atlanta, GA 30309 CAGE Code: 5A6J8 The Naval Postgraduate School's Dudley Knox Library (DKL) requires highly specialized services to maintain its DSpace-based institutional repository, \"Calhoun\" (https://calhoun.nps.edu). This repository is a mission-critical system, serving as the centralized archive for NPS's scholarly and institutional records, currently holding over 71,000 items. The required services, detailed in the Performance Work Statement (PWS), include planning and execution of major platform upgrades, configuration management, security patching, and technical support. Critically, the scope includes the ongoing maintenance, support, and adaptation of a large portfolio of existing, NPS-specific software customizations and modules that are essential to the library's operations.",
+  "detail_text_length": 1243,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8800724924d9413ab8d12afe8286ce9d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae4913d4baa94133bfe08e9ac87d1fcb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/efd0c965cf694605ba3c9b1d5adf107b/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8800724924d9413ab8d12afe8286ce9d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c7cd2474f88d11d8e0776be4ac5c0f786e0bcf150824fc6ea5e76afe8e5ba132.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c7cd2474f88d11d8e0776be4ac5c0f786e0bcf150824fc6ea5e76afe8e5ba132.docx",
+      "file_id": "8800724924d9413ab8d12afe8286ce9d",
+      "file_name": "1.02f+PWS+-+DSpace+Support.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 55534,
+      "sha256": "c7cd2474f88d11d8e0776be4ac5c0f786e0bcf150824fc6ea5e76afe8e5ba132"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae4913d4baa94133bfe08e9ac87d1fcb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8c65f61199167310986186830e5ba68162920acfe2b7b919e8ec05dc68b6fbda.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8c65f61199167310986186830e5ba68162920acfe2b7b919e8ec05dc68b6fbda.pdf",
+      "file_id": "ae4913d4baa94133bfe08e9ac87d1fcb",
+      "file_name": "1.02e+Brand+Name+Justification+-Draft-_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 736745,
+      "sha256": "8c65f61199167310986186830e5ba68162920acfe2b7b919e8ec05dc68b6fbda"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/efd0c965cf694605ba3c9b1d5adf107b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7401ece6a6d5f8284789a903201949282b5957c49a8c2221b3d1c8c394d2dd49.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7401ece6a6d5f8284789a903201949282b5957c49a8c2221b3d1c8c394d2dd49.docx",
+      "file_id": "efd0c965cf694605ba3c9b1d5adf107b",
+      "file_name": "4.01a+NOTICE+OF+INTENT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16655,
+      "sha256": "7401ece6a6d5f8284789a903201949282b5957c49a8c2221b3d1c8c394d2dd49"
+    }
+  ],
+  "_mirror_hash": "a778eb3cd29619913064131ec3f5bf435177ead76e1a758bd3a1c18f86ed6d85",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.339980+00:00"
+}

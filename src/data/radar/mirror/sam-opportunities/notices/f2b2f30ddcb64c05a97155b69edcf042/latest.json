@@ -1,0 +1,68 @@
+{
+  "id": "sam-f2b2f30ddcb64c05a97155b69edcf042",
+  "title": "Construction - Multiple Award Task Order Contract (MATOC)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2b2f30ddcb64c05a97155b69edcf042",
+  "opportunity_url": "https://sam.gov/opp/f2b2f30ddcb64c05a97155b69edcf042/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f2b2f30ddcb64c05a97155b69edcf042/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f2b2f30ddcb64c05a97155b69edcf042",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W519TC-25-Q-ATOC",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f2b2f30ddcb64c05a97155b69edcf042",
+  "detail_text": "EXTENED TO 1 May 2026, 10am(CT) ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- The U.S. Army Contracting Command, Rock Island is issuing this sources sought synopsis as a means of conducting market research to identify parties having an interest in and the resources to support the requirement for Multiple Award Task Order Contract for Construction services for Ammunition Pants and Depots under Joint Munitions Command (JMC). BASED ON THE RESPONSES TO THIS SOURCES SOUGHT NOTICE/MARKET RESEARCH, THIS REQUIREMENT MAY BE SET-ASIDE FOR SMALL BUSINESSES (IN FULL OR IN PART) OR PROCURED THROUGH FULL AND OPEN COMPETITION, and multiple awards MAY be made. All Small Business Set-Aside categories will be considered. Telephone inquiries will not be accepted or acknowledged, and no feedback or evaluations will be provided to companies regarding their submissions.",
+  "detail_text_length": 990,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05f63c5b1d5b4ecea008bf2a84ddac62/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/150fcfaafd864f17916c439bcec9815b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c85e6009630a4ce19eb7f1f166197ff1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05f63c5b1d5b4ecea008bf2a84ddac62/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aee2dff8ad765cd003b02b26fd0d3f9a891c01c7c6473af01ba13de6fb6624ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aee2dff8ad765cd003b02b26fd0d3f9a891c01c7c6473af01ba13de6fb6624ce.pdf",
+      "file_id": "05f63c5b1d5b4ecea008bf2a84ddac62",
+      "file_name": "Attachment+0001+--+Sources+Sought+W519TC-25-Q-ATOC_+WORKSHEET.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 110045,
+      "sha256": "aee2dff8ad765cd003b02b26fd0d3f9a891c01c7c6473af01ba13de6fb6624ce"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/150fcfaafd864f17916c439bcec9815b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b66cf8c070a2742385224905e3b60e28efcfe814d973435947a723729be7554a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b66cf8c070a2742385224905e3b60e28efcfe814d973435947a723729be7554a.pdf",
+      "file_id": "150fcfaafd864f17916c439bcec9815b",
+      "file_name": "Attachment+0002+-+Construction+MATOC+-+DRAFT+SOW+W519TC25QATOC_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 211906,
+      "sha256": "b66cf8c070a2742385224905e3b60e28efcfe814d973435947a723729be7554a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c85e6009630a4ce19eb7f1f166197ff1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2bf92e4477ed451bc2266b3fee98a58a3f288a76246bb0ce87b68f140039f6cb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2bf92e4477ed451bc2266b3fee98a58a3f288a76246bb0ce87b68f140039f6cb.pdf",
+      "file_id": "c85e6009630a4ce19eb7f1f166197ff1",
+      "file_name": "W519TC25QATOC_Sources_Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191279,
+      "sha256": "2bf92e4477ed451bc2266b3fee98a58a3f288a76246bb0ce87b68f140039f6cb"
+    }
+  ],
+  "_mirror_hash": "09f7c83e70fb1e11bc8b3dc0631371c74574205633a72536bfd81deeadb74f4f",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.413065+00:00"
+}

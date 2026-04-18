@@ -1,0 +1,45 @@
+{
+  "id": "sam-ee210a09ae47456ebf780a359f1c4038",
+  "title": "Procurement of NUT,HEX .62-11 UNC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee210a09ae47456ebf780a359f1c4038",
+  "opportunity_url": "https://sam.gov/opp/ee210a09ae47456ebf780a359f1c4038/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ee210a09ae47456ebf780a359f1c4038/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ee210a09ae47456ebf780a359f1c4038",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ee210a09ae47456ebf780a359f1c4038",
+  "detail_text": "Seeking procurement of NIIN: 016410096, NUT,HEX .62-11 UNC, quantity 161. See attached solicitation for more details.",
+  "detail_text_length": 117,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb63313e8a564a11bb720ead880e2cb1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cb63313e8a564a11bb720ead880e2cb1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cc24379964bc0cb36d456959eb1854ecf2b7c9c18fafe1896e37fa9dd6b0d650.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cc24379964bc0cb36d456959eb1854ecf2b7c9c18fafe1896e37fa9dd6b0d650.pdf",
+      "file_id": "cb63313e8a564a11bb720ead880e2cb1",
+      "file_name": "3.01_Solicitation_24299-0074.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 930838,
+      "sha256": "cc24379964bc0cb36d456959eb1854ecf2b7c9c18fafe1896e37fa9dd6b0d650"
+    }
+  ],
+  "_mirror_hash": "fae1207716aed28cfc646c0b61bfb8a71f07afcd36f0d04f56850f0ecf9626f7",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.259701+00:00"
+}

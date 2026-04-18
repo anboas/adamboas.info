@@ -1,0 +1,46 @@
+{
+  "id": "sam-e5d6f8fcf77b48ce8d94d3bc7de45a5e",
+  "title": "5 Year Indefinite Delivery, Indefinite Quantity Contract for Multimeters",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e5d6f8fcf77b48ce8d94d3bc7de45a5e",
+  "opportunity_url": "https://sam.gov/opp/e5d6f8fcf77b48ce8d94d3bc7de45a5e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e5d6f8fcf77b48ce8d94d3bc7de45a5e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e5d6f8fcf77b48ce8d94d3bc7de45a5e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRMM126RRA55",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME MECHANICSBURG.SPRMM1 DLA MECHANICSBURG",
+  "posted_date": "2026-04-17",
+  "response_deadline": "2026-04-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e5d6f8fcf77b48ce8d94d3bc7de45a5e",
+  "detail_text": "DLA WEAPONS SUPPORT - MECHANICSBURG is considering a solicitation and subsequent award of a 5-year IDIQ Contract for the item described below. DLA is seeking sources capable of supplying the following: 1) Item: MULTIMETER, NSN: 6625 013363372, PN: FLUKE 73 or PN: 77-4BN or PN: 73-3 AMC: 1 - Suitable for competitive acquisition for the second or subsequent time. AMSC: R - The Government does not own the data or the rights to the data needed to purchase this part from additional sources. It has been determined to be uneconomical to buy the data or rights to the data. It is uneconomical to reverse engineer the part. This code is used when the Government did not initially purchase the data and/or rights. THIS SOURCES SOUGHT IS FOR INFORMATIONAL PURPOSES ONLY. THIS IS NOT A REQUIREMENT FOR PROPOSAL. IT DOES NOT CONSTITUTE A SOLICIATION AND SHALL NOT BE CONSTRUED AS A COMMITMENT BY THE US GOVERNMENT. NO FUNDS ARE AVAILABLE TO PAY FOR THE PREPARATION OF RESPONSES TO THIS NOTICE. ANY INFORMATION SUBMITTED BY RESPONDENTS TO THIS NOTICE IS STRICTLY VOLUNTARY.",
+  "detail_text_length": 1065,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/70187ffdcddb42d5880b8eec3deae27a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/70187ffdcddb42d5880b8eec3deae27a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd6369cc285605e22bb5c58466366ccbb810597524c6f3be6f167e18c2ca3d59.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd6369cc285605e22bb5c58466366ccbb810597524c6f3be6f167e18c2ca3d59.pdf",
+      "file_id": "70187ffdcddb42d5880b8eec3deae27a",
+      "file_name": "1.08+Sources+Sought+Market+Survey-+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 396979,
+      "sha256": "dd6369cc285605e22bb5c58466366ccbb810597524c6f3be6f167e18c2ca3d59"
+    }
+  ],
+  "_mirror_hash": "34c7ae8d808f6e91e6381136998a12cbe82e2720dbd59150a5c54bb69f114dc2",
+  "_mirror_run_id": "20260418T134431Z",
+  "_mirror_recorded_at": "2026-04-18T13:51:35.298036+00:00"
+}
