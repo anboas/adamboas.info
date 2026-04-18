@@ -157,29 +157,29 @@ prohibited altogether.</p>
 <p>It should live in the control plane.</p>
 <p>At minimum, an Action Reversibility Profile should classify actions
 into four buckets:</p>
-<ol type="1">
-<li><strong>Reversible</strong>: actions that can be automatically
-undone with high confidence.</li>
-<li><strong>Compensable</strong>: actions that cannot be literally
+<ol>
+<li><p><strong>Reversible</strong>: actions that can be automatically
+undone with high confidence.</p></li>
+<li><p><strong>Compensable</strong>: actions that cannot be literally
 rolled back but can be corrected through a defined compensation
-path.</li>
-<li><strong>Irreversible</strong>: actions whose consequences cannot be
-practically reversed and therefore require tighter gating, stronger
-evidence, and usually explicit human authorization.</li>
-<li><strong>Prohibited</strong>: actions the system is never permitted
-to take.</li>
+path.</p></li>
+<li><p><strong>Irreversible</strong>: actions whose consequences cannot
+be practically reversed and therefore require tighter gating, stronger
+evidence, and usually explicit human authorization.</p></li>
+<li><p><strong>Prohibited</strong>: actions the system is never
+permitted to take.</p></li>
 </ol>
 <p>For each class, the profile should define:</p>
 <ul>
-<li>approval conditions</li>
-<li>allowed tools and environments</li>
-<li>evidence obligations</li>
-<li>logging and provenance requirements</li>
-<li>rollback or compensation mechanisms</li>
-<li>timeout behavior</li>
-<li>kill-switch behavior</li>
-<li>update-handling rules</li>
-<li>degraded-mode posture</li>
+<li><p>approval conditions</p></li>
+<li><p>allowed tools and environments</p></li>
+<li><p>evidence obligations</p></li>
+<li><p>logging and provenance requirements</p></li>
+<li><p>rollback or compensation mechanisms</p></li>
+<li><p>timeout behavior</p></li>
+<li><p>kill-switch behavior</p></li>
+<li><p>update-handling rules</p></li>
+<li><p>degraded-mode posture</p></li>
 </ul>
 <p>This is where recent NIST signal becomes especially useful. If
 government is already asking about deployment constraints, monitoring,
@@ -245,57 +245,57 @@ authority.</p>
 <p>That is the next layer.</p>
 <p>That is the work.</p>
 <h2 id="references">References</h2>
-<ol type="1">
-<li>NIST CAISI, <em>AI Agent Standards Initiative</em>.
-https://www.nist.gov/caisi/ai-agent-standards-initiative</li>
-<li>NIST CAISI, <em>CAISI Issues Request for Information About Securing
-AI Agent Systems</em>.
-https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems</li>
-<li>NCCoE, <em>New Concept Paper on Identity and Authority of Software
-Agents</em>.
-https://www.nccoe.nist.gov/news-insights/new-concept-paper-identity-and-authority-software-agents</li>
-<li>NCCoE, <em>Accelerating the Adoption of Software and AI Agent
+<ol>
+<li><p>NIST CAISI, <em>AI Agent Standards Initiative</em>.
+https://www.nist.gov/caisi/ai-agent-standards-initiative</p></li>
+<li><p>NIST CAISI, <em>CAISI Issues Request for Information About
+Securing AI Agent Systems</em>.
+https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems</p></li>
+<li><p>NCCoE, <em>New Concept Paper on Identity and Authority of
+Software Agents</em>.
+https://www.nccoe.nist.gov/news-insights/new-concept-paper-identity-and-authority-software-agents</p></li>
+<li><p>NCCoE, <em>Accelerating the Adoption of Software and AI Agent
 Identity and Authorization</em> (concept paper PDF).
-https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf</li>
-<li>NIST, <em>Towards Best Practices for Automated Benchmark
+https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf</p></li>
+<li><p>NIST, <em>Towards Best Practices for Automated Benchmark
 Evaluations</em> (NIST AI 800-2).
-https://www.nist.gov/news-events/news/2026/01/towards-best-practices-automated-benchmark-evaluations</li>
-<li>NIST, <em>NIST AI 800-2 Initial Public Draft</em> (PDF).
-https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf</li>
-<li>NIST, <em>New Report: Expanding the AI Evaluation Toolbox with
+https://www.nist.gov/news-events/news/2026/01/towards-best-practices-automated-benchmark-evaluations</p></li>
+<li><p>NIST, <em>NIST AI 800-2 Initial Public Draft</em> (PDF).
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf</p></li>
+<li><p>NIST, <em>New Report: Expanding the AI Evaluation Toolbox with
 Statistical Models</em> (NIST AI 800-3).
-https://www.nist.gov/news-events/news/2026/02/new-report-expanding-ai-evaluation-toolbox-statistical-models</li>
-<li>NIST, <em>NIST AI 800-3</em> (PDF).
-https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-3.pdf</li>
-<li>NIST, <em>New Report: Challenges to the Monitoring of Deployed AI
+https://www.nist.gov/news-events/news/2026/02/new-report-expanding-ai-evaluation-toolbox-statistical-models</p></li>
+<li><p>NIST, <em>NIST AI 800-3</em> (PDF).
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-3.pdf</p></li>
+<li><p>NIST, <em>New Report: Challenges to the Monitoring of Deployed AI
 Systems</em> (NIST AI 800-4).
-https://www.nist.gov/news-events/news/2026/03/new-report-challenges-monitoring-deployed-ai-systems</li>
-<li>NIST, <em>NIST AI 800-4</em> (PDF).
-https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf</li>
-<li>NIST CAISI, <em>CAISI signs MOU with GSA to boost AI evaluation
+https://www.nist.gov/news-events/news/2026/03/new-report-challenges-monitoring-deployed-ai-systems</p></li>
+<li><p>NIST, <em>NIST AI 800-4</em> (PDF).
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf</p></li>
+<li><p>NIST CAISI, <em>CAISI signs MOU with GSA to boost AI evaluation
 science in federal procurement through USAi</em>.
-https://www.nist.gov/news-events/news/2026/03/caisi-signs-mou-gsa-boost-ai-evaluation-science-federal-procurement-through</li>
-<li>NIST CAISI, <em>CAISI signs CRADA with OpenMined to Enable Secure AI
-Evaluations</em>.
-https://www.nist.gov/news-events/news/2026/03/announcement-caisi-signs-crada-openmined-enable-secure-ai-evaluations</li>
-<li>DARPA, <em>AI Forward</em>.
-https://www.darpa.mil/research/programs/ai-forward</li>
-<li>SAM.gov, <em>Prometheus Flame - Request for Information</em>
+https://www.nist.gov/news-events/news/2026/03/caisi-signs-mou-gsa-boost-ai-evaluation-science-federal-procurement-through</p></li>
+<li><p>NIST CAISI, <em>CAISI signs CRADA with OpenMined to Enable Secure
+AI Evaluations</em>.
+https://www.nist.gov/news-events/news/2026/03/announcement-caisi-signs-crada-openmined-enable-secure-ai-evaluations</p></li>
+<li><p>DARPA, <em>AI Forward</em>.
+https://www.darpa.mil/research/programs/ai-forward</p></li>
+<li><p>SAM.gov, <em>Prometheus Flame - Request for Information</em>
 (Special Notice, FA8694-26-S-8888).
-https://sam.gov/opp/68a071f69a1c4ec883b8392c5ae040b1/view</li>
-<li>SAM.gov API notice description (source for extracted draft text).
-https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68a071f69a1c4ec883b8392c5ae040b1</li>
+https://sam.gov/opp/68a071f69a1c4ec883b8392c5ae040b1/view</p></li>
+<li><p>SAM.gov API notice description (source for extracted draft text).
+https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68a071f69a1c4ec883b8392c5ae040b1</p></li>
 </ol>
 <h2 id="related-writing-on-this-site">Related writing on this site</h2>
 <ul>
-<li><a href="/writing/acp-ra/">Agent Control Plane Reference
-Architecture (ACP-RA)</a></li>
-<li><a href="/writing/agentic-force-creation/">From AI Force
-Multiplication to Force Creation</a></li>
-<li><a
+<li><p><a href="/writing/acp-ra/">Agent Control Plane Reference
+Architecture (ACP-RA)</a></p></li>
+<li><p><a href="/writing/agentic-force-creation/">From AI Force
+Multiplication to Force Creation</a></p></li>
+<li><p><a
 href="/writing/2026-02-12-stand-up-dad-joint-control-plane-authority/">Stand
 Up Delegated Autonomy Directorate (DAD) as a Joint Control Plane
-Authority</a></li>
-<li><a href="/writing/code-as-policy/">From PDFs to Pull
-Requests</a></li>
+Authority</a></p></li>
+<li><p><a href="/writing/code-as-policy/">From PDFs to Pull
+Requests</a></p></li>
 </ul>
