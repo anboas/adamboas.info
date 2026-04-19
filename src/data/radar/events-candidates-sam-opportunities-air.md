@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-18T13:52:27.279591+00:00
+Generated: 2026-04-19T13:44:57.984301+00:00
 Profile: air
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/18/2026
+Posted range: 01/01/2026 -> 04/19/2026
 
 ## Counts
-- Total candidates: 323
+- Total candidates: 314
 - Navy-related: 0
-- Full detail cached: 323
-- Notices with attachments: 239
-- Total attachment links: 674
-- Pre-solicitation: 91
-- Sources Sought: 163
-- Special Notice: 69
+- Full detail cached: 314
+- Notices with attachments: 233
+- Total attachment links: 659
+- Pre-solicitation: 89
+- Sources Sought: 159
+- Special Notice: 66
 
 ## Engagement signals
 - Industry Day: 3
-- Pre-solicitation: 133
-- Sources Sought: 163
-- Special Notice: 69
+- Pre-solicitation: 130
+- Sources Sought: 159
+- Special Notice: 66
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -55,15 +55,6 @@ Posted range: 01/01/2026 -> 04/18/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-09 | 2026-03-31 | DEPT OF DEFENSE | [Fairchild Air Force Base (AFB) Optimized Remediation Contract (ORC) Draft Request for Proposal (RFP) Questions and Government Answers/Responses](https://sam.gov/opp/89c4c7bdde4b40ef8ebeace203c202ed/view) |
 | 2 | Special Notice | Special Notice | 2026-03-27 | 2026-03-31 | DEPT OF DEFENSE | [Synopsis](https://sam.gov/opp/be9f1792c7bf4829b0687e44bfb58411/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-02-17 | 2026-04-02 | DEPT OF DEFENSE | [Repair Services for the JTE Program](https://sam.gov/opp/db5db8d3897f4648a0949b3bd64c69d1/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-06 | 2026-04-03 | DEPT OF DEFENSE | [Counter-small Unmanned Aircraft Systems (C-sUAS) Information Request](https://sam.gov/opp/d193ef3b26d1498296f6beef3beb365a/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-19 | 2026-04-03 | DEPT OF DEFENSE | [F-15 ARR Thruster Cart](https://sam.gov/opp/1ab73e1df18a48b8b2187ba366e0c4ce/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-03 | DEPT OF DEFENSE | [F-35 Radar and Das Support](https://sam.gov/opp/1a86acb84bf24e528d86c62c8ab2031d/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-03 | DEPT OF DEFENSE | [Repair of the B-2 Attitude Motion Sensor Set (AMSS) and Inertial Measurement Unit (IMU)](https://sam.gov/opp/c350e7159ec249ce82d004bfa6b7c620/view) |
-| 2 | Special Notice | Special Notice | 2026-03-26 | 2026-04-03 | DEPT OF DEFENSE | [Trace Gas Impurities Chromatography System](https://sam.gov/opp/c57c3260e21240b2a4a8df47bfe560e2/view) |
-| 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-27 | 2026-04-03 | DEPT OF DEFENSE | [Facility Support Services - Request For Information (RFI)](https://sam.gov/opp/dd22d313d23d43a199b7b29efc08f8d2/view) |
-| 2 | Special Notice | Special Notice | 2026-03-27 | 2026-04-03 | DEPT OF DEFENSE | [AS9100/AS9110 Certification](https://sam.gov/opp/1c0c0d2d8e5c4a0aae1940a78bcb5773/view) |
-| 2 | Sources Sought | Sources Sought | 2026-03-30 | 2026-04-03 | DEPT OF DEFENSE | [Mass Notification System Upgrade Project](https://sam.gov/opp/55637657ed624ef6876987027d908196/view) |
-| 2 | Special Notice | Special Notice | 2026-03-31 | 2026-04-03 | DEPT OF DEFENSE | [Inspection, Maintenance, and Repair of AC-9 Life Rafts](https://sam.gov/opp/ca06964f974f4b079d9293945b555b98/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-19 | 2026-04-04 | DEPT OF DEFENSE | [B-1B Power Take-Off (PTO) Shaft Remanufacture](https://sam.gov/opp/59bd3d9c7cb74229b01ff9fe5dfb0454/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-05 | 2026-04-05 | DEPT OF DEFENSE | [F-16 Upgraded Central Air Data Computer](https://sam.gov/opp/d49bfdd59d47446bae9d04da31b0da36/view) |
 | 2 | Sources Sought | Sources Sought | 2026-03-19 | 2026-04-06 | DEPT OF DEFENSE | [USAF Air Launch Cruise Missile (ALCM)](https://sam.gov/opp/65dfb7a8b3f34f2bac3f280c57ea3de3/view) |
@@ -324,6 +315,15 @@ Posted range: 01/01/2026 -> 04/18/2026
 | 2 | Sources Sought | Sources Sought | 2026-04-16 | 2027-04-16 | DEPT OF DEFENSE | [MULTI-AWARD REPAIR CONTRACT ?FLY FIX FIGHT? (MARC F3)](https://sam.gov/opp/728c751bc3764052bdde8a4b9ca5ef60/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-15 | 2027-05-12 | DEPT OF DEFENSE | [Kaiju](https://sam.gov/opp/1c5e4f9d0c9a473d8ed7b532a5ab2298/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-08 | 2027-07-13 | DEPT OF DEFENSE | [Multi-Spectrum Defensive Electronic Warfare (MSDEW) Advanced Research Announcement (ARA)](https://sam.gov/opp/4c3b792bc7ff4fc7a3dbaa28c89244a8/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-02-20 | 2027-09-30 | DEPT OF DEFENSE | [AERIAL LAYER NETWORKING & TRANSMISSION TECHNOLOGIES](https://sam.gov/opp/d51294ac2bf14bc3942e7d359e9a4f45/view) |
+| 2 | Sources Sought | Sources Sought | 2026-02-04 | 2027-12-01 | DEPT OF DEFENSE | [F16_AN_APG_Dual_Mode_Transmitter_NSN5998012428035_PN_762R117G01](https://sam.gov/opp/a91210f83e734902ba03ab876db82a0c/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-04 | 2027-12-01 | DEPT OF DEFENSE | [F16_AN_APG_68_Radar_Transmitter_NSN5998012478169_PN_762R923G01](https://sam.gov/opp/9cebbc63deed47b3bdcab50ce7e1dd7d/view) |
+| 2 | Sources Sought | Sources Sought | 2026-03-04 | 2027-12-01 | DEPT OF DEFENSE | [F16AN_APG68_RadarDualModeTransmitter_NSN5998014640421_PN_792R998G01](https://sam.gov/opp/a540e5ce112e43c28d0436790cf6cd4c/view) |
+| 2 | Sources Sought | Sources Sought | 2026-04-10 | 2027-12-01 | DEPT OF DEFENSE | [F16_AN_APG68_DualMonitor_NSN5998013035871_PN785R537G01](https://sam.gov/opp/95b77f4125dc43a6bfb1857b47179f53/view) |
+| 2 | Sources Sought | Sources Sought | 2026-04-10 | 2027-12-01 | DEPT OF DEFENSE | [F16_APG68_DualModeTransmitter_Monitor_5998012744648_PN772R023G01](https://sam.gov/opp/79d3277bceef47ee994b387b3b2daa00/view) |
+| 2 | Sources Sought | Sources Sought | 2026-01-09 | 2027-12-30 | DEPT OF DEFENSE | [F16_AN_APG_68_NSN_1270_01_396_3088_PN_783R300G01](https://sam.gov/opp/9eb23fc11272482b9a876071ebf853d2/view) |
+| 2 | Sources Sought | Sources Sought | 2026-02-04 | 2027-12-30 | DEPT OF DEFENSE | [F16AN_APG_68_Radar_NSN5998012885420_PN_762R656G01](https://sam.gov/opp/2f055b5a51d94423a819acd28f7f94e5/view) |
+| 2 | Sources Sought | Sources Sought | 2026-01-20 | 2027-12-31 | DEPT OF DEFENSE | [F16_AN_APG68_Radar_Dual_Transmitter_NSN5998012031936_PN77R025G01](https://sam.gov/opp/ab3d8ad91e2e4b188b584f3f7ccfc032/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

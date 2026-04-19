@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-18T13:52:37.874407+00:00
+Generated: 2026-04-19T13:45:10.496475+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/18/2026
+Posted range: 01/01/2026 -> 04/19/2026
 
 ## Counts
-- Total candidates: 112
-- Navy-related: 112
-- Full detail cached: 112
-- Notices with attachments: 47
-- Total attachment links: 157
-- Combined Synopsis/Solicitation: 24
-- Pre-solicitation: 33
+- Total candidates: 103
+- Navy-related: 103
+- Full detail cached: 103
+- Notices with attachments: 44
+- Total attachment links: 151
+- Combined Synopsis/Solicitation: 22
+- Pre-solicitation: 28
 - Solicitation: 16
-- Sources Sought: 31
+- Sources Sought: 29
 - Special Notice: 8
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 34
-- Sources Sought: 31
+- Pre-solicitation: 29
+- Sources Sought: 29
 - Vendor Outreach: 1
 - Special Notice: 8
 
@@ -51,14 +51,6 @@ Posted range: 01/01/2026 -> 04/18/2026
 | 6 | Solicitation | - | 2026-03-25 | 2026-04-01 | DEPT OF DEFENSE | [Precision Pressure Calibrators](https://sam.gov/opp/7fb92d43ce4e42babe5e23000e1f76f0/view) |
 | 4 | Solicitation | - | 2026-03-26 | 2026-04-01 | DEPT OF DEFENSE | [NAWCAD (WOLF) Ship and Air Integrated Warfare Division Small Unmanned Aircraft Systems (SUAS) Reusable Architecture (SRA)](https://sam.gov/opp/8fc07bff4f6745b59168bd6cf65ad4ae/view) |
 | 6 | Solicitation | - | 2026-03-26 | 2026-04-02 | DEPT OF DEFENSE | [Follow-On Administrative Support Services](https://sam.gov/opp/39d7e61b44a340caa1900f7360dddb89/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-04 | 2026-04-03 | DEPT OF DEFENSE | [High-Speed Anti-Radiation Missile (HARM) Engineering Support](https://sam.gov/opp/0d452bbd9d4c40f6b4139c4aa0d878be/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-03 | DEPT OF DEFENSE | [CH-53K Common Electronic Standby Indicator (CESI) Change  Production Incorporation](https://sam.gov/opp/bcc2a9d6379c41f2b4f47b0efa498e4b/view) |
-| 7 | Sources Sought | Sources Sought | 2026-03-20 | 2026-04-03 | DEPT OF DEFENSE | [Sources Sought for F/A-18 E/F ADVEW Flight Test Integration](https://sam.gov/opp/14334c1fbf0b416b8af2b8dd5be9f74a/view) |
-| 7 | Sources Sought | Sources Sought | 2026-03-20 | 2026-04-03 | DEPT OF DEFENSE | [Sources Sought for F/A-18 E/F ADVEW FTI Modification for Block III IncorporationSources Sought for F/A-18 E/F ADVEW FTI Modification for Block III Incorporation](https://sam.gov/opp/9d8f47d4d51a429eba472b496d02a666/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-20 | 2026-04-03 | DEPT OF DEFENSE | [Synopsis for F/A-18 E/F ADVEW Flight Test Integration](https://sam.gov/opp/e5569f63e8804e5a99fdd698e2463868/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-03-20 | 2026-04-03 | DEPT OF DEFENSE | [Synopsis for F/A-18 E/F ADVEW FTI Modification for Block III Incorporation](https://sam.gov/opp/e551619bc0f9443684dada23d5d7108a/view) |
-| 7 | Combined Synopsis/Solicitation | - | 2026-03-30 | 2026-04-03 | DEPT OF DEFENSE | [Total Small Business Set Aside for Various Quantities of Brand: Glenair Adapters and Amphenol Connectors](https://sam.gov/opp/fe22571a373144c18ec59f9a2ae72b58/view) |
-| 7 | Combined Synopsis/Solicitation | - | 2026-03-31 | 2026-04-03 | DEPT OF DEFENSE | [Small Business Set-Aside for Rosemount Inc X-STREAM Enhanced General Purpose Process Gas Analyzer (XEGP) Per Attachments](https://sam.gov/opp/fd7b299bb96c4feba670b4cc47ef0dc1/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-23 | 2026-04-06 | DEPT OF DEFENSE | [AECM RR-198 and RR-199 CHAFF](https://sam.gov/opp/7a7d97003098409d8a5b7a5a3785afd0/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-23 | 2026-04-06 | DEPT OF DEFENSE | [Supersonic Aerial Target (SSST) BQM 34S Update Statement of Work to add Part Procurement](https://sam.gov/opp/589d17f4e04d412785e16bfb1d46258d/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-03-24 | 2026-04-06 | DEPT OF DEFENSE | [Rollaway Container System Production](https://sam.gov/opp/1b77a083524f422c8091297b3d37e06b/view) |
@@ -93,7 +85,6 @@ Posted range: 01/01/2026 -> 04/18/2026
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-13 | 2026-04-16 | DEPT OF DEFENSE | [Total Small Business Set Aside for Brand Name: Snap-On Cordless Torque Multiplier (UID REQUIRED)](https://sam.gov/opp/6f5059f6d7d044e99dcdc56e8dab8114/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-16 | 2026-04-16 | DEPT OF DEFENSE | [Lot 4 SOW/CDRL Update Supply Chain BOM](https://sam.gov/opp/eaee91ecd16141749a7292d1435930ff/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-19 | 2026-04-17 | DEPT OF DEFENSE | [MQ-9A Detect and Avoid Systems (DAAS) and DAAS Ground Control Station (GCS) Production Procurements](https://sam.gov/opp/d7d3ceb3348b4e3fa7c2e2aacd9bbe3c/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-04-02 | 2026-04-17 | DEPT OF DEFENSE | [FedTribe LLC Canada RQ-21A MTD Support and NSP-5 Training](https://sam.gov/opp/719ee62e86cf43a0a415a0a196ff514d/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-03 | 2026-04-17 | DEPT OF DEFENSE | [Winch Controller Assembly Bumper Bean Isolator Obsolescence](https://sam.gov/opp/bf46640f776e4f7393a49c4cb02a4047/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-10 | 2026-04-17 | DEPT OF DEFENSE | [POST Hoist Platform Fiberglass Reinforced Polymer (FRP)](https://sam.gov/opp/b2df23261b364555954d1919b5c39be9/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-15 | 2026-04-17 | DEPT OF DEFENSE | [Sole Source to National Instruments (NI) Corp for Labview Enterprise Program Subscription with a Base plus two option years.  See Attachments](https://sam.gov/opp/e78f7d9d8a3c4acc8cc2cc9723e11a2d/view) |

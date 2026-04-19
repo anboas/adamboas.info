@@ -1,29 +1,28 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-18T13:52:14.359960+00:00
+Generated: 2026-04-19T13:44:46.740265+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/18/2026
+Posted range: 01/01/2026 -> 04/19/2026
 
 ## Counts
-- Total candidates: 17
+- Total candidates: 16
 - Navy-related: 0
-- Full detail cached: 17
+- Full detail cached: 16
 - Notices with attachments: 12
 - Total attachment links: 19
 - Pre-solicitation: 6
-- Sources Sought: 8
+- Sources Sought: 7
 - Special Notice: 3
 
 ## Engagement signals
 - Pre-solicitation: 7
-- Sources Sought: 8
+- Sources Sought: 7
 - Special Notice: 3
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
-| 2 | Sources Sought | Sources Sought | 2026-03-30 | 2026-04-03 | DEPT OF DEFENSE | [Preventative Maintenance for Sweeper and Scrubbers](https://sam.gov/opp/1a6b214a8d774fbb9db8207689a67538/view) |
 | 2 | Special Notice | Special Notice | 2026-04-08 | 2026-04-09 | DEPT OF DEFENSE | [Notice of Intent Sole Source Guest Artist "Michael Feinstein" for USMB Musical Performance](https://sam.gov/opp/1271d86389d04d2bb1642824b7eb1221/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-03-26 | 2026-04-10 | DEPT OF DEFENSE | [Personally Owned Vehicle (POV ) Storage](https://sam.gov/opp/16a613f6cacc4c688b36d7f43426a6ec/view) |
 | 2 | Special Notice | Special Notice | 2026-04-10 | 2026-04-14 | DEPT OF DEFENSE | [Notice of Sole Source- COX CATV](https://sam.gov/opp/7984fce573f44716821e513e0e2fc124/view) |

@@ -1,27 +1,27 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-18T13:52:10.808640+00:00
+Generated: 2026-04-19T13:44:43.261458+00:00
 Profile: joint
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/18/2026
+Posted range: 01/01/2026 -> 04/19/2026
 
 ## Counts
-- Total candidates: 558
+- Total candidates: 556
 - Navy-related: 15
-- Full detail cached: 558
-- Notices with attachments: 173
-- Total attachment links: 254
+- Full detail cached: 556
+- Notices with attachments: 171
+- Total attachment links: 252
 - Combined Synopsis/Solicitation: 2
 - Pre-solicitation: 210
 - Solicitation: 1
 - Sources Sought: 221
-- Special Notice: 124
+- Special Notice: 122
 
 ## Engagement signals
 - Industry Day: 1
 - Pre-solicitation: 222
 - Sources Sought: 221
-- Special Notice: 124
+- Special Notice: 122
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -37,9 +37,6 @@ Posted range: 01/01/2026 -> 04/18/2026
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-03-23 | 2026-04-01 | DEPT OF DEFENSE | [RFI: 2.5GB Intra SWA](https://sam.gov/opp/2c2a7eb49b634c87a130b80626d9c133/view) |
 | 2 | Special Notice | Special Notice | 2026-03-06 | 2026-04-02 | DEPT OF DEFENSE | [Amendment 0001  Clutch, Fan, Engine](https://sam.gov/opp/8b1ffa843be84158b1e3ce626fc5c9c6/view) |
 | 2 | Special Notice | Special Notice | 2026-03-06 | 2026-04-02 | DEPT OF DEFENSE | [Amendment 0001 Clutch Fan Engine](https://sam.gov/opp/87afd07768a04a468758145e511426b1/view) |
-| 2 | Special Notice | Special Notice | 2026-03-09 | 2026-04-03 | DEPT OF DEFENSE | [C-5 Engine Cowls](https://sam.gov/opp/7d311cb92d754e38b409ee20d8211c0c/view) |
-| 2 | Special Notice | Special Notice | 2026-03-27 | 2026-04-03 | DEPT OF DEFENSE | [Notice of Intent to Sole Source-SOCET GXP GeoAnalysis](https://sam.gov/opp/64076f2c48df4a74aa187712e6ad7583/view) |
-| 2 | Pre-solicitation | Pre-solicitation | 2026-03-31 | 2026-04-03 | DEPT OF DEFENSE | [HEAT EXCHANGER, AIRT](https://sam.gov/opp/ff93fcdbf0f14f17bab759aae07923b2/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-17 | 2026-04-04 | DEPT OF DEFENSE | [5977-00-464-8496; Z9N; AIRCRAFT, FA-18, A-D, E/F, G (GROWLER)](https://sam.gov/opp/4d274823940e4ee5a42d3414284626c8/view) |
 | 2 | Special Notice | Special Notice | 2026-03-23 | 2026-04-07 | DEPT OF DEFENSE | [B-52 Landing Gear Drag Link](https://sam.gov/opp/bba0f34e39d6472dad399dd7ac534d50/view) |
 | 2 | Special Notice | Special Notice | 2026-03-24 | 2026-04-07 | DEPT OF DEFENSE | [B-52 Hydraulic Brake Valve Assembly](https://sam.gov/opp/2045d7b85bba49a4b6788303e28c8b34/view) |
@@ -326,6 +323,9 @@ Posted range: 01/01/2026 -> 04/18/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-15 | 2026-04-30 | DEPT OF DEFENSE | [FAN,VANEAXIAL](https://sam.gov/opp/a7a7a3fd49dc4ac1afcd24b551ad3789/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-15 | 2026-04-30 | DEPT OF DEFENSE | [LINER,COMBUSTION CH](https://sam.gov/opp/a3d57879342747d0ba14ef61736d0b02/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-15 | 2026-04-30 | DEPT OF DEFENSE | [NSN 4320012075313, PN 56-210](https://sam.gov/opp/1316c960b9404951bda65948dfb2dd8f/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-04-15 | 2026-04-30 | DEPT OF DEFENSE | [NSN 5990010317599, PN 26V-08CT4C-J165](https://sam.gov/opp/2f3930a473b44113af33cae01f8d9e55/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-04-15 | 2026-04-30 | DEPT OF DEFENSE | [PLUG,MACHINE THREAD](https://sam.gov/opp/ced3d198333749388fa65bd9c1751cf6/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-04-16 | 2026-04-30 | DEPT OF DEFENSE | [SPE300-26-R-X016 - Fresh Bread & Bakery Products for DoW Troop Customers in the Alabama Zone](https://sam.gov/opp/beb507539851411fa9a2ad458bfe3b7a/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.
