@@ -10,7 +10,7 @@ interface Props {
 
 const { audioPath, title, slug, kind } = Astro.props as Props;
 const src = withBase(audioPath);
-const label = kind === 'paper' ? 'Paper audio excerpt' : 'Podcast excerpt';
+const label = kind === 'paper' ? 'Paper audio excerpt' : 'NotebookLM Generated Podcast';
 ---
 
 <section class="mt-6 rounded-none border border-slate-700 bg-slate-950/55 p-4 md:p-5" data-writing-audio>
