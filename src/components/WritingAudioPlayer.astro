@@ -1,0 +1,42 @@
+---
+import { withBase } from '../utils/withBase';
+
+interface Props {
+	audioPath: string;
+	title: string;
+	slug: string;
+	kind: 'note' | 'memo' | 'paper';
+}
+
+const { audioPath, title, slug, kind } = Astro.props as Props;
+const src = withBase(audioPath);
+const label = kind === 'paper' ? 'Paper audio excerpt' : 'Podcast excerpt';
+---
+
+<section class="mt-6 rounded-none border border-slate-700 bg-slate-950/55 p-4 md:p-5" data-writing-audio>
+	<div class="mb-3 flex items-center justify-between gap-3">
+		<div>
+			<p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400">{label}</p>
+			<p class="mt-1 text-sm font-medium text-slate-100">{title}</p>
+		</div>
+		<a
+			href={src}
+			download
+			class="shrink-0 rounded-none border border-slate-700 bg-slate-900/60 px-2.5 py-1.5 text-xs font-semibold text-slate-200 hover:bg-slate-800"
+			data-track="Writing: Download Audio"
+			data-track-props={JSON.stringify({ slug, kind })}
+		>
+			⬇︎ .m4a
+		</a>
+	</div>
+	<audio
+		class="w-full"
+		controls
+		preload="metadata"
+		data-track="Writing: Play Audio"
+		data-track-props={JSON.stringify({ slug, kind })}
+	>
+		<source src={src} type="audio/mp4" />
+		Your browser does not support audio playback.
+	</audio>
+</section>

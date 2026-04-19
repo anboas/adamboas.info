@@ -10,6 +10,7 @@ function navLink(label: string, item: NavItem | null) {
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import PageViewsChip from '../../components/PageViewsChip.astro';
+import WritingAudioPlayer from '../../components/WritingAudioPlayer.astro';
 import { withBase } from '../../utils/withBase';
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -257,6 +258,14 @@ const writingUrl = absoluteUrl('/writing/');
 							<PageViewsChip pathname={withBase(`/writing/${paper.id}/`)} />
 						</div>
 					)}
+					{paper.data.audioPath && (
+						<WritingAudioPlayer
+							audioPath={paper.data.audioPath}
+							title={paper.data.title}
+							slug={paper.id}
+							kind="paper"
+						/>
+					)}
 				</div>
 			</header>
 
@@ -350,6 +359,14 @@ const writingUrl = absoluteUrl('/writing/');
 							<span>{writingItem.data.date.toISOString().slice(0, 10)}</span>
 							<PageViewsChip pathname={withBase(`/writing/${writingItem.id.split('/').pop()}/`)} />
 						</div>
+					)}
+					{writingItem.data.audioPath && (
+						<WritingAudioPlayer
+							audioPath={writingItem.data.audioPath}
+							title={writingItem.data.title}
+							slug={writingItem.id.split('/').pop() ?? ''}
+							kind={writingItem.data.type}
+						/>
 					)}
 				</div>
 			</header>
