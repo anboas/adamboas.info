@@ -22,6 +22,7 @@ const POLICY = {
     'modelcontextprotocol.io',
     'venturebeat.com',
     'cyberbay.org',
+    'operations.erdc.dren.mil',
   ],
   ignoreDomains: [
     'adamboas.info',
