@@ -1,0 +1,56 @@
+{
+  "id": "sam-f1fec14d6f1d48c0af968c65b0411eb3",
+  "title": "SHIPALT LPD17-92168 COUNTERMEASURE WASHDOWN SYS MOD; ACCOMPLISH",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f1fec14d6f1d48c0af968c65b0411eb3",
+  "opportunity_url": "https://sam.gov/opp/f1fec14d6f1d48c0af968c65b0411eb3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f1fec14d6f1d48c0af968c65b0411eb3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f1fec14d6f1d48c0af968c65b0411eb3",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926Q0297",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-04-19",
+  "response_deadline": "2026-04-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f1fec14d6f1d48c0af968c65b0411eb3",
+  "detail_text": "The work is to be performed in SASEBO, JAPAN. This solicitation is intended only for sources duly authorized to operate and do business in “JAPAN”, as prescribed by DFARS 225.1103 (3), 252.225-7042. The NAVSUP Fleet Logistics Center (FLC) Yokosuka Site “ SASEBO ” intends to issue a competitive solicitation for the USS SAN DIEGO (LPD-22) SHIPALT LPD17-92168 COUNTERMEASURE WASHDOWN SYS MOD; ACCOMPLISH to Master Ship Repair Agreement (MSRA) and capable Agreement for Boat Repair (ABR) holders in “Japan”. Please ensure that your company meets these criteria and provides any necessary documentation to demonstrate your authorization to perform this work in “ Japan “ .",
+  "detail_text_length": 669,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b78dafb581dc44aeba2f9dc86f1e4386/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4ecc4d93c324d6fac72857cdfc3126c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b78dafb581dc44aeba2f9dc86f1e4386/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/48412ca49b7200bf2e16e3aa44a2a0b95f18e6698fa87d571aa506df32437cb0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/48412ca49b7200bf2e16e3aa44a2a0b95f18e6698fa87d571aa506df32437cb0.pdf",
+      "file_id": "b78dafb581dc44aeba2f9dc86f1e4386",
+      "file_name": "38DX258301_03_A04+SPEC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 393312,
+      "sha256": "48412ca49b7200bf2e16e3aa44a2a0b95f18e6698fa87d571aa506df32437cb0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4ecc4d93c324d6fac72857cdfc3126c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd9246a2a14fccbad020a165b6ece98478b21f57baba1aec05426e8ad84627f5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd9246a2a14fccbad020a165b6ece98478b21f57baba1aec05426e8ad84627f5.pdf",
+      "file_id": "d4ecc4d93c324d6fac72857cdfc3126c",
+      "file_name": "Solicitation+-+N6264926Q0297.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 684529,
+      "sha256": "dd9246a2a14fccbad020a165b6ece98478b21f57baba1aec05426e8ad84627f5"
+    }
+  ],
+  "_mirror_hash": "29f441eb741d5f7598ab17813e9318221abbc79b0c159e39de0619454e3397e4",
+  "_mirror_run_id": "20260420T140808Z",
+  "_mirror_recorded_at": "2026-04-20T14:10:23.685729+00:00"
+}

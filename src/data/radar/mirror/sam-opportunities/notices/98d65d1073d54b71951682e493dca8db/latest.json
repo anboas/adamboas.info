@@ -1,0 +1,58 @@
+{
+  "id": "sam-98d65d1073d54b71951682e493dca8db",
+  "title": "BAR ESR/VAR 2 1/2 INCH DIA-ROUND",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98d65d1073d54b71951682e493dca8db",
+  "opportunity_url": "https://sam.gov/opp/98d65d1073d54b71951682e493dca8db/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/98d65d1073d54b71951682e493dca8db/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "98d65d1073d54b71951682e493dca8db",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N0010426RX19775",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.PORTSMOUTH NAVAL SHIPYARD GF",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98d65d1073d54b71951682e493dca8db",
+  "detail_text": "This is a Pre-Solicitation notice for non-commercial products under Simplified Acquisition Procedures prepared in accordance with the format in FAR Subpart 13.105, as supplemented with additional information included in this notice. This announcement does not constitute a solicitation. A written/paper solicitation will be posted on sam.gov. The associated Request for Proposal (RFP) number will be posted when the solicitation is active. The solicitation will document and incorporate provisions and clauses in effect through FAC 2026-01 and DFARS Change 20251110. It is the responsibility of the contractor to be familiar with the applicable clauses and provisions. The clauses may be accessed in full text at these addresses: https://www.acquisition.gov/ The NAICS code is 331210 and the Small Business Standard is 1000 (# of employees). This will be solicited as a Total Small Business Set Aside. The Portsmouth Naval Shipyard will be seeking responses from sources capable of providing the following: 0001 BAR ESR/VAR 2 1/2 INCH DIA-ROUND NSN: 1H 9510-01-127-6727 X2 NIIN: 011276727 BAR ESR/VAR 2 1/2 INCH DIA-ROUND, manufactured in accordance with Attachment 1 . 0002 DATA REQUIREMENTS Data Requirements for ITEM 0001: Data Item A001 (Material Certification) Data Item A002 (Procedure Approvals) Data Item A003 (Procedure Approvals) Data Items A004 (Procedure Approvals) Data Items A005 (Procedure Approvals) All Data Requirements are to be in accordance with Exhibit A and Attachment 1 to Exhibit A . See attached Submission Instructions and Evaluation Criteria that will be applicable to the solicitation. • Delivery Point: Portsmouth Naval Shipyard, Kittery, ME. Requested Delivery Schedule: 50 weeks ARO This requirement will be solicited from the 4th of May, 2026 to the 8thth of May, 2026 at 8:00 AM EST Contact Ina Nason who can be reached by email ina.nason.civ@us.navy.mil . This announcement will be publicized from the 20th of April, 2026 to the 4th of May, 2026 at 8:00 AM EST. ******* END OF SYNOPSIS ********",
+  "detail_text_length": 2029,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/112401428de9417a877cc0ef3575d4ce/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50e4b4fa9978436abc501d72a3262ed5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/112401428de9417a877cc0ef3575d4ce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/14146346a396e74ef98c35985b17b95b91fd9419c315744d439668fd383bebbc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/14146346a396e74ef98c35985b17b95b91fd9419c315744d439668fd383bebbc.pdf",
+      "file_id": "112401428de9417a877cc0ef3575d4ce",
+      "file_name": "N0010426RX19775+Pre-Solicitation+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 212311,
+      "sha256": "14146346a396e74ef98c35985b17b95b91fd9419c315744d439668fd383bebbc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50e4b4fa9978436abc501d72a3262ed5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/499c72cc903ad66a95be185927a33735765835ce744f874570668d9df08c7f9a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/499c72cc903ad66a95be185927a33735765835ce744f874570668d9df08c7f9a.pdf",
+      "file_id": "50e4b4fa9978436abc501d72a3262ed5",
+      "file_name": "N0010426RX19775+Submission+Instructions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 136003,
+      "sha256": "499c72cc903ad66a95be185927a33735765835ce744f874570668d9df08c7f9a"
+    }
+  ],
+  "_mirror_hash": "1c6f20d9946f02f3842813e7bc218b713e4db4dfb806037285384d9a775792d0",
+  "_mirror_run_id": "20260420T140808Z",
+  "_mirror_recorded_at": "2026-04-20T14:10:23.670184+00:00"
+}

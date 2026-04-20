@@ -1,0 +1,45 @@
+{
+  "id": "sam-69e7e69536b848ec85a2a640b1c8235c",
+  "title": "48--VALVE, HULL/BACKUP",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=69e7e69536b848ec85a2a640b1c8235c",
+  "opportunity_url": "https://sam.gov/opp/69e7e69536b848ec85a2a640b1c8235c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/69e7e69536b848ec85a2a640b1c8235c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "69e7e69536b848ec85a2a640b1c8235c",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426RZA99",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-06-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=69e7e69536b848ec85a2a640b1c8235c",
+  "detail_text": "Competitive Procurement of VALVE, HULL/BACKUP EA QTY 8 NSN: 7HH 4820 016340212 L1 This is a Level 1 requirement",
+  "detail_text_length": 111,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c7aa194cd4b46388464dcc4045f0522/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c7aa194cd4b46388464dcc4045f0522/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c1c15196d0ae6af2a1c67924a835b7f7263276a632bb3298b4fe7602b30da058.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c1c15196d0ae6af2a1c67924a835b7f7263276a632bb3298b4fe7602b30da058.pdf",
+      "file_id": "0c7aa194cd4b46388464dcc4045f0522",
+      "file_name": "3.02_RFP_N0010426RZA99_26030-0111+-L1+OPN8-.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1187281,
+      "sha256": "c1c15196d0ae6af2a1c67924a835b7f7263276a632bb3298b4fe7602b30da058"
+    }
+  ],
+  "_mirror_hash": "f2561a5c12f903d51bac0123a4cf877dad29fd2e46c9e8de525085d06ff56a03",
+  "_mirror_run_id": "20260420T140808Z",
+  "_mirror_recorded_at": "2026-04-20T14:10:23.728807+00:00"
+}

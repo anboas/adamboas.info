@@ -1,22 +1,22 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-19T13:44:46.740265+00:00
+Generated: 2026-04-20T14:10:50.251627+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/19/2026
+Posted range: 01/01/2026 -> 04/20/2026
 
 ## Counts
-- Total candidates: 16
+- Total candidates: 17
 - Navy-related: 0
-- Full detail cached: 16
+- Full detail cached: 17
 - Notices with attachments: 12
 - Total attachment links: 19
-- Pre-solicitation: 6
+- Pre-solicitation: 7
 - Sources Sought: 7
 - Special Notice: 3
 
 ## Engagement signals
-- Pre-solicitation: 7
+- Pre-solicitation: 8
 - Sources Sought: 7
 - Special Notice: 3
 
@@ -39,6 +39,7 @@ Posted range: 01/01/2026 -> 04/19/2026
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-04-15 | 2026-05-06 | DEPT OF DEFENSE | [M00264-RFI-023- USMC Communication Directorate (CD)- Music and Sound Effects Licensing Package](https://sam.gov/opp/a4fe82aea2184003b7f8ff2940a3844e/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-10 | 2026-05-09 | DEPT OF DEFENSE | [USMC Tenant Satisfaction Survey (TSS) Support Services](https://sam.gov/opp/6e65381d430044d7b84e6bab70c703b4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-11 | DEPT OF DEFENSE | [Portable Sanitation Unit](https://sam.gov/opp/aa2c15a08dd14a2d85f9880c8d1bf9ff/view) |
+| 2 | Pre-solicitation | Pre-solicitation | 2026-04-19 | 2027-04-20 | DEPT OF DEFENSE | [Marine Corps University (MCU) Center for Distance Education (CDET) Distance Professional Military Education (DPME) program Academic Support Services.](https://sam.gov/opp/7655b2d0652b480c8ed155c4f932df60/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

@@ -1,0 +1,45 @@
+{
+  "id": "sam-485d7950500942cca3036c8d72d45c40",
+  "title": "Level 1 SUBSAFE NUT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=485d7950500942cca3036c8d72d45c40",
+  "opportunity_url": "https://sam.gov/opp/485d7950500942cca3036c8d72d45c40/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/485d7950500942cca3036c8d72d45c40/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "485d7950500942cca3036c8d72d45c40",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD40",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=485d7950500942cca3036c8d72d45c40",
+  "detail_text": "101 units of NSN: 1HM 5310 016419638 L1, Nut. Level 1, open competitive item. Must provide or have quality manual on file.",
+  "detail_text_length": 122,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea9d9aa073b14f4badbaf95482ef55c8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea9d9aa073b14f4badbaf95482ef55c8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e80212de49bf15678ab3bd745416dbba97973618e5d7739de72cd80e52b02059.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e80212de49bf15678ab3bd745416dbba97973618e5d7739de72cd80e52b02059.pdf",
+      "file_id": "ea9d9aa073b14f4badbaf95482ef55c8",
+      "file_name": "3.01_RFQ_N0010426QFD40_21054-0019.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 933785,
+      "sha256": "e80212de49bf15678ab3bd745416dbba97973618e5d7739de72cd80e52b02059"
+    }
+  ],
+  "_mirror_hash": "1dad62fdee4fd60d486b7d44e32248f98277c10fd9808b1b485c5bd089e777eb",
+  "_mirror_run_id": "20260420T140808Z",
+  "_mirror_recorded_at": "2026-04-20T14:10:23.720896+00:00"
+}

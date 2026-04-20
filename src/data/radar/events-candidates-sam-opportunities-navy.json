@@ -39,6 +39,40 @@
     ]
   },
   {
+    "id": "sam-47a9e112c70b400884c620c64a469c52",
+    "title": "Notice of Intent to Award a Sole Source Contract and Sources Sought for FMS Vertical Deployment Tube (VDT) Technical and Tooling Package",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47a9e112c70b400884c620c64a469c52",
+    "opportunity_url": "https://sam.gov/opp/47a9e112c70b400884c620c64a469c52/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/47a9e112c70b400884c620c64a469c52/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "47a9e112c70b400884c620c64a469c52",
+    "notice_type_code": "p",
+    "notice_type": "Pre-solicitation",
+    "engagement_kinds": [
+      "Pre-solicitation",
+      "Sources Sought"
+    ],
+    "solicitation_number": "N0025326R9001",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL UNDERSEA WARFARE CENTER",
+    "posted_date": "2026-04-20",
+    "response_deadline": "2026-04-27",
+    "place_of_performance": null,
+    "relevance_score": 9,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Pre-solicitation",
+      "Industry/sourcing signal keywords",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47a9e112c70b400884c620c64a469c52",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=47a9e112c70b400884c620c64a469c52",
+    "detail_text_length": 94,
+    "resource_links": [],
+    "resource_count": 0,
+    "resource_items": null
+  },
+  {
     "id": "sam-09f57a3411934ca2975e48616f821a78",
     "title": "RFI for CAD Model Conversion and Comment Adjudication Services",
     "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=09f57a3411934ca2975e48616f821a78",
@@ -859,6 +893,48 @@
     "resource_items": [
       {
         "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b391edcddc5247d5aa791824f8ca66da/download"
+      }
+    ]
+  },
+  {
+    "id": "sam-07f068281a5a49268c0f8092b2d01040",
+    "title": "BLDG ELECTRICAL UPGRADE",
+    "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=07f068281a5a49268c0f8092b2d01040",
+    "opportunity_url": "https://sam.gov/opp/07f068281a5a49268c0f8092b2d01040/view",
+    "ui_link": "https://sam.gov/workspace/contract/opp/07f068281a5a49268c0f8092b2d01040/view",
+    "source": "SAM.gov Get Opportunities Public API",
+    "notice_id": "07f068281a5a49268c0f8092b2d01040",
+    "notice_type_code": "r",
+    "notice_type": "Sources Sought",
+    "engagement_kinds": [
+      "Sources Sought"
+    ],
+    "solicitation_number": "RFISS-164",
+    "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL UNDERSEA WARFARE CENTER",
+    "posted_date": "2026-04-20",
+    "response_deadline": "2026-05-04",
+    "place_of_performance": null,
+    "relevance_score": 7,
+    "relevance_reasons": [
+      "Navy-linked organization or content",
+      "Signal notice type: Sources Sought",
+      "NSWC/NUWC signal"
+    ],
+    "navy_related": true,
+    "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=07f068281a5a49268c0f8092b2d01040",
+    "detail_text": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=07f068281a5a49268c0f8092b2d01040",
+    "detail_text_length": 94,
+    "resource_links": [
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/705a8bd68dd947a880830a8e3e04e1b6/download",
+      "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e52ef28e7754f548ed7e5aa4fc3bb31/download"
+    ],
+    "resource_count": 2,
+    "resource_items": [
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/705a8bd68dd947a880830a8e3e04e1b6/download"
+      },
+      {
+        "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8e52ef28e7754f548ed7e5aa4fc3bb31/download"
       }
     ]
   },

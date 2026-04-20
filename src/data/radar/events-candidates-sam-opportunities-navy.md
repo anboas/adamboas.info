@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-19T13:45:10.496475+00:00
+Generated: 2026-04-20T14:11:14.860164+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/19/2026
+Posted range: 01/01/2026 -> 04/20/2026
 
 ## Counts
-- Total candidates: 103
-- Navy-related: 103
-- Full detail cached: 103
-- Notices with attachments: 44
-- Total attachment links: 151
+- Total candidates: 105
+- Navy-related: 105
+- Full detail cached: 105
+- Notices with attachments: 45
+- Total attachment links: 153
 - Combined Synopsis/Solicitation: 22
-- Pre-solicitation: 28
+- Pre-solicitation: 29
 - Solicitation: 16
-- Sources Sought: 29
+- Sources Sought: 30
 - Special Notice: 8
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 29
-- Sources Sought: 29
+- Pre-solicitation: 30
+- Sources Sought: 31
 - Vendor Outreach: 1
 - Special Notice: 8
 
@@ -97,6 +97,7 @@ Posted range: 01/01/2026 -> 04/19/2026
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-09 | 2026-04-23 | DEPT OF DEFENSE | [F-35 Israel Operational Data Integrated Network (ODIN) Labor Support](https://sam.gov/opp/b7de74e3b8ea4a5f9496d622f01a89c6/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-09 | 2026-04-24 | DEPT OF DEFENSE | [Weaponeering and Stores Planning (WASP) Software Development](https://sam.gov/opp/72c9befb929b4a60a1106b21e3acaf97/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-10 | 2026-04-27 | DEPT OF DEFENSE | [P-8A MFDAU PCMCIA Card Elimination Demonstration and AirFASE Software](https://sam.gov/opp/a7c1a576b86d44d4b231e15dc5f768b3/view) |
+| 9 | Pre-solicitation | Pre-solicitation, Sources Sought | 2026-04-20 | 2026-04-27 | DEPT OF DEFENSE | [Notice of Intent to Award a Sole Source Contract and Sources Sought for FMS Vertical Deployment Tube (VDT) Technical and Tooling Package](https://sam.gov/opp/47a9e112c70b400884c620c64a469c52/view) |
 | 7 | Special Notice | Special Notice | 2026-04-14 | 2026-04-28 | DEPT OF DEFENSE | [NextGen UBA](https://sam.gov/opp/8f546f82f51e438a9992ba9dc5ff030e/view) |
 | 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-04-06 | 2026-04-29 | DEPT OF DEFENSE | [RFI for CAD Model Conversion and Comment Adjudication Services](https://sam.gov/opp/09f57a3411934ca2975e48616f821a78/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-14 | 2026-04-29 | DEPT OF DEFENSE | [Follow-on GEAE Support and Services Order](https://sam.gov/opp/afbebdea4e7b43538a5fb687e15b2ad6/view) |
@@ -115,6 +116,7 @@ Posted range: 01/01/2026 -> 04/19/2026
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-17 | 2026-05-02 | DEPT OF DEFENSE | [Limited Source Delivery Order for Unmanned Aircraft System (UAS) Intelligence, Surveillance and Reconnaissance (ISR) Services under existing Basic Ordering Agreements – Order 1](https://sam.gov/opp/41f19e62eca44743a6f3648acfa346f5/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-17 | 2026-05-02 | DEPT OF DEFENSE | [Limited Source Delivery Order for Unmanned Aircraft System (UAS) Intelligence, Surveillance and Reconnaissance (ISR) Services under existing Basic Ordering Agreements – Order 2](https://sam.gov/opp/959fbc44cc9544a6a835ccbd75dba10d/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-02 | DEPT OF DEFENSE | [Weaponeering and Stores Planning (WASP) Systems Engineering](https://sam.gov/opp/f4845708f90448cea5e41bea5a80fc74/view) |
+| 7 | Sources Sought | Sources Sought | 2026-04-20 | 2026-05-04 | DEPT OF DEFENSE | [BLDG ELECTRICAL UPGRADE](https://sam.gov/opp/07f068281a5a49268c0f8092b2d01040/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-08 | 2026-05-07 | DEPT OF DEFENSE | [Sources Sought for Cyber Warfare Engineering and Security Services](https://sam.gov/opp/f0b94fd1c2594a6b95b2e1404067c5d5/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-08 | 2026-05-08 | DEPT OF DEFENSE | [BQM-34S Engine Repair, Overhaul and Conversion](https://sam.gov/opp/a2f1ab138dd248e99171fdb746d17c09/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-09 | 2026-05-09 | DEPT OF DEFENSE | [CH-53K Fuel Shut Off Valve (FSOV) Kit Procurement](https://sam.gov/opp/f96efe2d0c8d4eebb82a2c7e582656ac/view) |

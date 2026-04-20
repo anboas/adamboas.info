@@ -1,0 +1,45 @@
+{
+  "id": "sam-9ddcd6aa9bcb4785a752880061109972",
+  "title": "FMS Spare, NIIN LLF02N258, QTY 1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ddcd6aa9bcb4785a752880061109972",
+  "opportunity_url": "https://sam.gov/opp/9ddcd6aa9bcb4785a752880061109972/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9ddcd6aa9bcb4785a752880061109972/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9ddcd6aa9bcb4785a752880061109972",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00383-26-Q-FA49",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9ddcd6aa9bcb4785a752880061109972",
+  "detail_text": "See attached",
+  "detail_text_length": 12,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a00db3e59946442ba70b1a2c4abf26da/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a00db3e59946442ba70b1a2c4abf26da/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93ccb1d8e791633047333bc80e6e292366192aaa479027efab358e84e03016ec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93ccb1d8e791633047333bc80e6e292366192aaa479027efab358e84e03016ec.pdf",
+      "file_id": "a00db3e59946442ba70b1a2c4abf26da",
+      "file_name": "3.01_RFQ_N00383-26-Q-FA49_26086-0049.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 398316,
+      "sha256": "93ccb1d8e791633047333bc80e6e292366192aaa479027efab358e84e03016ec"
+    }
+  ],
+  "_mirror_hash": "f1ae7d5faccc4d0f4851196c405e99dd1f3fee9ca7777a9a997c32f76260aec7",
+  "_mirror_run_id": "20260420T140808Z",
+  "_mirror_recorded_at": "2026-04-20T14:10:23.724602+00:00"
+}

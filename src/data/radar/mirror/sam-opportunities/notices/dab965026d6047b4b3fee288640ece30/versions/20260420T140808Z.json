@@ -1,0 +1,45 @@
+{
+  "id": "sam-dab965026d6047b4b3fee288640ece30",
+  "title": "47 -- HOSE,NONMETALLIC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dab965026d6047b4b3fee288640ece30",
+  "opportunity_url": "https://sam.gov/opp/dab965026d6047b4b3fee288640ece30/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dab965026d6047b4b3fee288640ece30/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dab965026d6047b4b3fee288640ece30",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QBS11",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dab965026d6047b4b3fee288640ece30",
+  "detail_text": "PLEASE SEE SOLICITATION FOR DESCRIPTION OF SUPPLIES BEING PROCURED.",
+  "detail_text_length": 67,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bdd9ff5efc54775b8022df4e9b9cfcc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bdd9ff5efc54775b8022df4e9b9cfcc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e331ca8bc6b69b8ca450e1fd4c06980d0b7e7c73ca6c474e2a9c05b4a6dedc58.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e331ca8bc6b69b8ca450e1fd4c06980d0b7e7c73ca6c474e2a9c05b4a6dedc58.pdf",
+      "file_id": "2bdd9ff5efc54775b8022df4e9b9cfcc",
+      "file_name": "3.01_Solicitation_26.QBS11_26092-0009.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 894569,
+      "sha256": "e331ca8bc6b69b8ca450e1fd4c06980d0b7e7c73ca6c474e2a9c05b4a6dedc58"
+    }
+  ],
+  "_mirror_hash": "6e6d554292d676e73324be55a1b62395dc14795e6853db99c424af19b35d1812",
+  "_mirror_run_id": "20260420T140808Z",
+  "_mirror_recorded_at": "2026-04-20T14:10:23.719325+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-1272975affa346f098838b939c741747",
+  "title": "R405--WAVE â€“ Workforce Analysis for VA OIT Excellence  (VA-26-00041415)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1272975affa346f098838b939c741747",
+  "opportunity_url": "https://sam.gov/opp/1272975affa346f098838b939c741747/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1272975affa346f098838b939c741747/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1272975affa346f098838b939c741747",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0198",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1272975affa346f098838b939c741747",
+  "detail_text": "At this time, an acquisition strategy has not been determined on RFI 36C10B26Q0198.Â Once a strategy has been determined an announcement will be made on sam.gov.Â Please continue monitoring the sam.gov posting for any updates or additional information.",
+  "detail_text_length": 252,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/426a7520a35946a0b9b23f7c454ee037/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e731d5e5f8f4cae9121c73ea263a0e6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e72149a849204c7aa95ab3be76010e25/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/426a7520a35946a0b9b23f7c454ee037/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5c2684322ed6a86a56bcf66f475dc5b10bf57c3f7a9853772799904e75abf1be.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5c2684322ed6a86a56bcf66f475dc5b10bf57c3f7a9853772799904e75abf1be.docx",
+      "file_id": "426a7520a35946a0b9b23f7c454ee037",
+      "file_name": "36C10B26Q0198_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14511,
+      "sha256": "5c2684322ed6a86a56bcf66f475dc5b10bf57c3f7a9853772799904e75abf1be"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e731d5e5f8f4cae9121c73ea263a0e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8f079d27ba0110aef582c8a7c27fe4ba03811e3c296896bbadb157bf3f83983a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8f079d27ba0110aef582c8a7c27fe4ba03811e3c296896bbadb157bf3f83983a.docx",
+      "file_id": "4e731d5e5f8f4cae9121c73ea263a0e6",
+      "file_name": "PWS+Enterprise+Workforce+Assessment+for+VA+OIT+Excellence+for+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 85512,
+      "sha256": "8f079d27ba0110aef582c8a7c27fe4ba03811e3c296896bbadb157bf3f83983a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e72149a849204c7aa95ab3be76010e25/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d921c60bdfca9b76dae34c0e34563335656c4303a978ac3af3b3a32def3e4c03.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d921c60bdfca9b76dae34c0e34563335656c4303a978ac3af3b3a32def3e4c03.docx",
+      "file_id": "e72149a849204c7aa95ab3be76010e25",
+      "file_name": "36C10B26Q0198.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19669,
+      "sha256": "d921c60bdfca9b76dae34c0e34563335656c4303a978ac3af3b3a32def3e4c03"
+    }
+  ],
+  "_mirror_hash": "717f411afb1f37207251f2a6f10c3ac079114a8c86c0ab9252761637c2b4aab7",
+  "_mirror_run_id": "20260420T140808Z",
+  "_mirror_recorded_at": "2026-04-20T14:10:23.742682+00:00"
+}
