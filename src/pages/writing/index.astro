@@ -23,6 +23,7 @@ const items = [
 			description: w.data.summary,
 			tags: w.data.tags ?? [],
 			date: w.data.date,
+			hasAudio: Boolean(w.data.audioPath),
 		};
 	}),
 	...papers.map((p) => ({
@@ -32,10 +33,22 @@ const items = [
 		description: p.data.description,
 		tags: p.data.tags ?? [],
 		date: p.data.date,
+		hasAudio: Boolean(p.data.audioPath),
 	})),
 ]
 	.filter((x) => !!x.slug)
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
+
+const byType = ['paper', 'memo', 'note'] as const;
+const audioStats = {
+	total: items.length,
+	withAudio: items.filter((i) => i.hasAudio).length,
+	byType: byType.map((type) => {
+		const subset = items.filter((i) => i.type === type);
+		const withAudio = subset.filter((i) => i.hasAudio).length;
+		return { type, total: subset.length, withAudio };
+	}),
+};
 ---
 
 <SiteLayout title="Writing | Adam Boas" description="Notes, memos, and papers." image="/og/writing.png">
@@ -59,6 +72,14 @@ const items = [
 			</div>
 
 			<div class="flex flex-wrap gap-2 text-xs" data-writing-chips></div>
+			<div class="mt-2 flex flex-wrap items-center gap-2 text-[11px] text-slate-300" aria-label="Audio coverage summary">
+				<span class="rounded-full border border-slate-700 bg-slate-950 px-2.5 py-1">🎧 Audio coverage: {audioStats.withAudio}/{audioStats.total}</span>
+				{audioStats.byType.map((s) => (
+					<span class="rounded-full border border-slate-800 bg-slate-950/60 px-2.5 py-1" title={`${s.withAudio} of ${s.total} ${s.type}s include audio`}>
+						{s.type}: {s.withAudio}/{s.total}
+					</span>
+				))}
+			</div>
 		</div>
 		<script type="module" set:html={writingIndexJs}></script>
 
@@ -97,7 +118,16 @@ const items = [
 								</ul>
 							) : null}
 						</div>
-						{w.date && <span class="shrink-0 text-xs text-slate-400">{w.date.toISOString().slice(0, 10)}</span>}
+						<div class="flex shrink-0 flex-col items-end gap-2 text-xs">
+							<span
+								class={`rounded-full border px-2 py-0.5 ${w.hasAudio ? 'border-emerald-700/70 bg-emerald-950/40 text-emerald-200' : 'border-slate-700 bg-slate-950/40 text-slate-300'}`}
+								title={w.hasAudio ? 'Audio or podcast available' : 'Audio or podcast not available yet'}
+								aria-label={w.hasAudio ? 'Audio available' : 'Audio not available yet'}
+							>
+								{w.hasAudio ? '🎧 audio' : '○ no audio'}
+							</span>
+							{w.date && <span class="text-slate-400">{w.date.toISOString().slice(0, 10)}</span>}
+						</div>
 					</div>
 				</a>
 			))}
