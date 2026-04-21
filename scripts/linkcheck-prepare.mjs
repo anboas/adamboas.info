@@ -39,6 +39,7 @@ const POLICY = {
   ],
   warnRegex: [
     /^https:\/\/github\.com\/anboas\/adamboas\.info\/blob\/main\//i,
+    /^https:\/\/github\.com\/anboas\/adamboas\.info\/actions\/workflows\/[^/]+\/badge\.svg(?:\?.*)?$/i,
   ],
   ignoreRegex: [
     /^mailto:/i,
