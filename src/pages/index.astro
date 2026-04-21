@@ -79,32 +79,20 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 	<a id="page-top" class="block" aria-hidden="true"></a>
 
 	<section class="card p-8">
-		<div class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
-			<div class="w-full max-w-3xl">
+		<div class="flex flex-col gap-6">
+			<div class="w-full max-w-4xl">
 				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">Adam Boas</h1>
 				<p class="mt-2 text-slate-400">Solutions Architect</p>
 				<p class="mt-4 text-lg leading-relaxed text-slate-300">
 					Warfighter lethality through trusted autonomy, control planes, and execution at tempo.
 				</p>
 				<div class="mt-5 flex flex-wrap gap-3">
-					<a
-						data-track="Contact: Intake Click"
-						href={withBase('/contact/?intent=consulting')}
-						class="rounded-none border border-teal-500/60 bg-teal-500/15 px-4 py-2 text-sm font-semibold text-teal-100 hover:bg-teal-500/25"
-					>
+					<a data-track="Contact: Intake Click" href={withBase('/contact/?intent=consulting')} class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold">
 						Start project
 					</a>
-					<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="rounded-none border border-slate-700 px-4 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900">Email direct</a>
+					<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="ui-link-btn px-4 text-sm font-semibold">Email direct</a>
 				</div>
 			</div>
-			<aside class="w-full border border-slate-800 bg-slate-950/60 p-4 lg:max-w-xs">
-				<p class="text-[11px] uppercase tracking-[0.12em] text-slate-500">Jump to</p>
-				<div class="mt-3 grid gap-2">
-					<a href="#writing" class="rounded-none border border-slate-700 bg-slate-900/50 px-3 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">Writing</a>
-					<a href="#experience" class="rounded-none border border-slate-700 bg-slate-950 px-3 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">Experience</a>
-					<a href="#education" class="rounded-none border border-slate-700 bg-slate-950 px-3 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">Education</a>
-				</div>
-			</aside>
 		</div>
 	</section>
 
@@ -153,9 +141,9 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 				<li><span class="text-slate-100">Proposal support</span> (whitepapers, technical volumes, RFI/RFP responses)</li>
 			</ul>
 			<div class="mt-5 flex flex-wrap gap-3">
-				<a href="#experience" class="rounded-none border border-slate-700 bg-slate-900/40 px-3 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">See experience</a>
-				<a data-track="Contact: Intake Click" href={withBase('/contact/?intent=consulting')} class="rounded-none border border-slate-700 px-3 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900">Open contact form</a>
-				<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="rounded-none border border-slate-700 px-3 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900">Email direct</a>
+				<a href="#experience" class="ui-link-btn bg-slate-900/40 px-3 text-sm font-semibold text-slate-100">See experience</a>
+				<a data-track="Contact: Intake Click" href={withBase('/contact/?intent=consulting')} class="ui-link-btn px-3 text-sm font-semibold">Open contact form</a>
+				<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="ui-link-btn px-3 text-sm font-semibold">Email direct</a>
 			</div>
 		</section>
 	</div>

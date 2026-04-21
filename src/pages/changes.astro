@@ -30,12 +30,45 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.77',
+		date: '2026-04-21',
+		title: 'Homepage declutter + shared UI primitives + overflow hardening',
+		summary: 'Removed the redundant home `Jump to` panel and standardized button/pill styling across contact, status, leads, and capability pages using shared global UI classes.',
+		impact: 'Cleaner homepage hierarchy, tighter cross-page visual consistency, and stronger resilience against long-text overflow on key status/capability surfaces.',
+		current: true,
+		tags: ['home', 'ux', 'consistency', 'responsive', 'overflow', 'status', 'capabilities', 'contact'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Removed the redundant home hero `Jump to` box and kept section navigation in global header/sticky navigation surfaces.',
+					'Normalized CTA/action controls to shared `.ui-link-btn` variants across home, contact, status, lead-funnel, and capability pages.',
+					'Replaced page-local pill styles with shared `.ui-pill` tokens for consistent card metadata treatment.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Added `.wrap-anywhere` utility and applied it to long labels/titles on capability and status-lead surfaces to avoid clipping and horizontal pressure.',
+					'Hardened lead-funnel table behavior by allowing first-column wrapping with a minimum readable width.',
+				],
+			},
+			{
+				kind: 'Fixed',
+				items: [
+					'Fixed duplicated/fragmented style definitions by consolidating repeated button/pill CSS into global shared primitives.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.76',
 		date: '2026-04-21',
 		title: 'Lead-funnel analytics view + capability landing pages',
 		summary: 'Shipped a lead-funnel status surface from Plausible event snapshots and launched SEO-first capability/topic pages that aggregate writing, events, and opportunities.',
 		impact: 'You can now monitor conversion health (`CTA -> submit -> success`) and rank for capability-intent queries with focused topic landing pages.',
-		current: true,
 		tags: ['analytics', 'conversion', 'status', 'seo', 'capabilities', 'events', 'opportunities', 'writing'],
 		groups: [
 			{
