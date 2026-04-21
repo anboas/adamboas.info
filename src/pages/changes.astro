@@ -30,12 +30,39 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.75',
+		date: '2026-04-21',
+		title: 'Homepage hero reorganized for cleaner navigation and better CTA placement',
+		summary: 'Refactored the homepage header/banner so Writing/Experience/Education live in a dedicated jump panel, while `Start project` is promoted as the primary action near the mission statement.',
+		impact: 'Top-of-page scan is cleaner: one clear conversion path and one clear navigation cluster, with less visual competition in the hero row.',
+		current: true,
+		tags: ['home', 'hero', 'navigation', 'conversion', 'contact', 'ux'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Restructured hero layout into a content/CTA column plus a right-side `Jump to` panel.',
+					'Moved `Start project` to the primary CTA row next to mission copy and moved section links into a dedicated navigation block.',
+					'Simplified Engagement section CTA wording from `Start project intake` to `Open contact form` to reduce repeated primary emphasis.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved hierarchy for home-banner actions by separating conversion intent from in-page section navigation.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.74',
 		date: '2026-04-20',
 		title: 'Contact intake + pipeline status surfaces shipped across core pages',
 		summary: 'Added a dedicated `/contact/` intake form, conversion CTAs on Home/Events/Opportunities, and pipeline freshness/status surfaces including a new `/status/` page.',
 		impact: 'Visitors can move from discovery to project intake faster, while events/opportunities users can verify deploy and data freshness without leaving the site.',
-		current: true,
 		tags: ['contact', 'conversion', 'events', 'opportunities', 'status', 'operations', 'ux'],
 		groups: [
 			{
