@@ -111,7 +111,10 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 	<section class="mt-6 card p-6">
 		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
 			<h2 class="section-title">Featured Reading</h2>
-			<a href={`${import.meta.env.BASE_URL}writing/`} class="text-sm font-semibold text-stone-100 hover:text-stone-50">All writing →</a>
+			<div class="flex flex-wrap items-center gap-3 text-sm font-semibold">
+				<a href={withBase('/capabilities/')} class="text-stone-100 hover:text-stone-50">Capability topics →</a>
+				<a href={`${import.meta.env.BASE_URL}writing/`} class="text-stone-100 hover:text-stone-50">All writing →</a>
+			</div>
 		</div>
 		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
 			{featuredReading.map((w) => (

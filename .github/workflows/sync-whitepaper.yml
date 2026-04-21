@@ -32,6 +32,13 @@ jobs:
           PLAUSIBLE_DATE_RANGE: 30d
         run: node scripts/fetch-plausible-pageviews.mjs
 
+      - name: Fetch Plausible lead-funnel events (optional)
+        env:
+          PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
+          PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
+          PLAUSIBLE_DATE_RANGE: 30d
+        run: node scripts/fetch-plausible-funnel.mjs
+
       - name: Fetch latest successful Whitepaper build run id
         env:
           # NOTE: Cross-repo API access requires a PAT if Whitepaper is private.
@@ -349,7 +356,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Include new (untracked) files too.
-          git add -A public/papers public/memos src/generated/papers src/generated/memos src/content/writing src/generated/plausible-pageviews.json
+          git add -A public/papers public/memos src/generated/papers src/generated/memos src/content/writing src/generated/plausible-pageviews.json src/generated/plausible-funnel.json
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit."

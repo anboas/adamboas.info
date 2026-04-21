@@ -30,12 +30,47 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.76',
+		date: '2026-04-21',
+		title: 'Lead-funnel analytics view + capability landing pages',
+		summary: 'Shipped a lead-funnel status surface from Plausible event snapshots and launched SEO-first capability/topic pages that aggregate writing, events, and opportunities.',
+		impact: 'You can now monitor conversion health (`CTA -> submit -> success`) and rank for capability-intent queries with focused topic landing pages.',
+		current: true,
+		tags: ['analytics', 'conversion', 'status', 'seo', 'capabilities', 'events', 'opportunities', 'writing'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `scripts/fetch-plausible-funnel.mjs` plus generated snapshot `src/generated/plausible-funnel.json` for contact-funnel event aggregation.',
+					'Added `/status/leads/` lead funnel page with stage metrics, conversion rates, and by-page event breakdown.',
+					'Added `/capabilities/` index and `/capabilities/[slug]/` landing pages for AI/autonomy, cyber, cloud, DevSecOps, data, and proposal/capture topics.',
+					'Added shared capability taxonomy in `src/data/capabilities.ts`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated deploy + sync workflows to fetch Plausible lead-funnel snapshots alongside pageviews.',
+					'Extended footer and sitemap navigation with capability and lead-funnel routes.',
+					'Added capability-topic discovery link on homepage featured-reading section and lead-funnel quick route in `/status/`.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved SEO internal-link graph by connecting core pages to capability/topic hubs and conversion telemetry surfaces.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.75',
 		date: '2026-04-21',
 		title: 'Homepage hero reorganized for cleaner navigation and better CTA placement',
 		summary: 'Refactored the homepage header/banner so Writing/Experience/Education live in a dedicated jump panel, while `Start project` is promoted as the primary action near the mission statement.',
 		impact: 'Top-of-page scan is cleaner: one clear conversion path and one clear navigation cluster, with less visual competition in the hero row.',
-		current: true,
 		tags: ['home', 'hero', 'navigation', 'conversion', 'contact', 'ux'],
 		groups: [
 			{
