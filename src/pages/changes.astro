@@ -27,13 +27,40 @@ type TopicGroup = {
 const releases: Release[] = [
 
 
+
+	{
+		version: 'v2.3.72',
+		date: '2026-04-20',
+		title: 'Writing index audio pill now appears only when available and moved into tag row',
+		summary: 'Updated `/writing/` cards so the audio pill renders only for entries with audio and is positioned first on the same line as tags.',
+		impact: 'Cards are cleaner (no negative no-audio marker), and audio availability stays obvious in the exact metadata row where people scan tags.',
+		current: true,
+		tags: ['writing', 'audio', 'ux', 'metadata-density'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Audio pill now renders only when `audioPath` is present (removed `no audio` pill).',
+					'Moved audio pill into the tag row and placed it first when present.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Reduced right-side card clutter by keeping date-only metadata in the trailing column.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.71',
 		date: '2026-04-20',
 		title: 'Writing index audio summary row removed for cleaner top-line scan',
 		summary: 'Removed the top audio-coverage summary pills from `/writing/` while keeping the per-item audio availability pill on each card.',
 		impact: 'The `/writing/` control row stays shorter and cleaner, while audio visibility remains available exactly where needed per item.',
-		current: true,
 		tags: ['writing', 'audio', 'ux', 'density'],
 		groups: [
 			{
