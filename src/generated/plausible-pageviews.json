@@ -1,14 +1,28 @@
 {
   "meta": {
-    "generatedAt": "2026-04-21T08:22:12.017Z",
+    "generatedAt": "2026-04-21T09:59:12.784Z",
     "siteId": "adamboas.com",
     "dateRange": "30d",
-    "note": "api errors: adamboas.com: 502 | www.adamboas.com: 504 | anboas.github.io/adamboas.info: 504",
+    "note": "ok (13 paths)",
     "triedSiteIds": [
       "adamboas.com",
       "www.adamboas.com",
       "anboas.github.io/adamboas.info"
     ]
   },
-  "pageviewsByPath": {}
+  "pageviewsByPath": {
+    "/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority": 22,
+    "/": 10,
+    "/writing": 7,
+    "/opportunities": 4,
+    "/events": 3,
+    "/experience/kbr-solutions-architect-2025": 3,
+    "/writing/caf-ra": 2,
+    "/experience": 2,
+    "/writing/acp-ra": 1,
+    "/education": 1,
+    "/writing/code-as-policy": 1,
+    "/\\nhttps://github.com/anboas/adamboas.info/actions/runs/24625625534": 1,
+    "/writing/agentic-force-creation": 1
+  }
 }

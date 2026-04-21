@@ -1,15 +1,23 @@
 {
   "meta": {
-    "generatedAt": "2026-04-21T08:26:19.008Z",
+    "generatedAt": "2026-04-21T09:59:13.507Z",
     "siteId": "adamboas.com",
     "dateRange": "30d",
-    "note": "api errors: adamboas.com: 504 | www.adamboas.com: 504 | anboas.github.io/adamboas.info: 502",
+    "note": "ok (0 events)",
     "triedSiteIds": [
       "adamboas.com",
       "www.adamboas.com",
       "anboas.github.io/adamboas.info"
     ]
   },
-  "eventTotals": {},
+  "eventTotals": {
+    "Contact: Intake Click": 0,
+    "Contact Form: View": 0,
+    "Contact Form: Start": 0,
+    "Contact Form: Submit": 0,
+    "Contact Form: Success": 0,
+    "Contact Form: Error": 0,
+    "Contact: Email Click": 0
+  },
   "byPage": {}
 }
