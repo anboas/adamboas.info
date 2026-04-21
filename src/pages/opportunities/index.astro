@@ -8,6 +8,7 @@ import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
 import opportunitiesDrift from '../../data/radar/events-candidates-sam-opportunities-drift-latest.json';
+import feedCrawlReport from '../../data/radar/feed-crawl-report-latest.json';
 
 type ResourceAsset = {
 	sourceUrl: string;
@@ -717,6 +718,9 @@ const driftLatest = (opportunitiesDrift ?? {}) as any;
 const driftDeltas = (driftLatest.deltas ?? {}) as Record<string, number>;
 const driftGeneratedAt = typeof driftLatest.generated_at === 'string' ? driftLatest.generated_at : null;
 
+const feedSummary = (feedCrawlReport?.summary ?? {}) as Record<string, number>;
+const feedGeneratedAt = typeof (feedCrawlReport as any)?.generatedAt === 'string' ? (feedCrawlReport as any).generatedAt : null;
+
 const opportunitiesJson = JSON.stringify(opportunities);
 ---
 
@@ -731,10 +735,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			</div>
 			<div class="opp-header-actions">
 				<a class="opp-link-btn" href={withBase('/events/')}>Open Events</a>
+				<a class="opp-link-btn" href={withBase('/status/')}>Open Status</a>
+				<a class="opp-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
 				<a class="opp-link-btn opp-link-btn-muted" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open Drift Report</a>
-				{lastCollectedAt ? <span class="opp-fresh">Last collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
-				{driftGeneratedAt ? <span class="opp-fresh">Drift refreshed: {new Date(driftGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
 			</div>
+		</div>
+		<div class="opp-status-row mt-3" aria-label="Pipeline freshness">
+			{lastCollectedAt ? <span class="opp-status-pill">SAM collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+			{driftGeneratedAt ? <span class="opp-status-pill">Drift refreshed: {new Date(driftGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+			{feedGeneratedAt ? <span class="opp-status-pill">Feed crawl: {new Date(feedGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+			<span class="opp-status-pill">Sources OK: {Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</span>
+			<span class="opp-status-pill">Blocked: {Number(feedSummary.blocked ?? 0)}</span>
 		</div>
 		<div id="opp-event-context" class="opp-event-context" hidden>
 			<div>
@@ -3117,6 +3128,22 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-size: 0.71rem;
 		color: rgba(148, 163, 184, 0.95);
 		white-space: nowrap;
+	}
+	.opp-status-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+	}
+	.opp-status-pill {
+		display: inline-flex;
+		align-items: center;
+		height: 1.55rem;
+		padding: 0 0.55rem;
+		border: 1px solid rgba(71, 85, 105, 0.8);
+		background: rgba(2, 6, 23, 0.78);
+		font-size: 0.67rem;
+		color: rgba(203, 213, 225, 0.96);
+		letter-spacing: 0.02em;
 	}
 	.opp-kpis {
 		display: grid;

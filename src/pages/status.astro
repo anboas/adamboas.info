@@ -1,0 +1,201 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../components/StickyBrowseBar.astro';
+import { withBase } from '../utils/withBase';
+import { radarEventsSeed } from '../data/radar/events';
+import sofweekIntel from '../data/radar/intel/sofweek-intel.json';
+import feedCrawlReport from '../data/radar/feed-crawl-report-latest.json';
+import opportunitiesDrift from '../data/radar/events-candidates-sam-opportunities-drift-latest.json';
+
+const samIntelOverrides: Record<string, any> = {
+	'radar-sofweek-2026': sofweekIntel,
+};
+
+function samIntel(event: (typeof radarEventsSeed)[number]) {
+	return samIntelOverrides[event.id] ?? event.ontology.acquisition?.samIntelligence ?? null;
+}
+
+const lastCollectedAt = radarEventsSeed
+	.map((event) => samIntel(event)?.collectedAt as string | undefined)
+	.filter(Boolean)
+	.sort()
+	.at(-1) ?? null;
+
+const feedSummary = (feedCrawlReport?.summary ?? {}) as Record<string, number>;
+const feedGeneratedAt = typeof (feedCrawlReport as any)?.generatedAt === 'string' ? (feedCrawlReport as any).generatedAt : null;
+
+const driftLatest = (opportunitiesDrift ?? {}) as any;
+const driftGeneratedAt = typeof driftLatest.generated_at === 'string' ? driftLatest.generated_at : null;
+const driftDeltas = (driftLatest.deltas ?? {}) as Record<string, number>;
+
+function fmtDate(value: string | null) {
+	if (!value) return '—';
+	const parsed = new Date(value);
+	if (Number.isNaN(parsed.getTime())) return '—';
+	return parsed.toLocaleString(undefined, {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+		hour: '2-digit',
+		minute: '2-digit',
+	});
+}
+
+function signed(value: number) {
+	if (!Number.isFinite(value)) return '0';
+	if (value > 0) return `+${Math.round(value)}`;
+	return String(Math.round(value));
+}
+---
+
+<SiteLayout title="Status | Adam Boas" description="Deployment + data pipeline status for adamboas.com">
+	<StickyBrowseBar active="home" />
+
+	<section class="card control-shell p-5">
+		<div class="flex flex-wrap items-start justify-between gap-3">
+			<div>
+				<h1 class="section-title">Operations Status</h1>
+				<p class="mt-2 text-sm text-slate-300">Live deployment signal and data-pipeline freshness for events/opportunities intelligence.</p>
+			</div>
+			<a class="status-link" href="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml" target="_blank" rel="noreferrer">Open deploy workflow</a>
+		</div>
+	</section>
+
+	<section class="mt-4 grid gap-4 lg:grid-cols-3">
+		<article class="card p-4 status-card lg:col-span-1">
+			<h2 class="status-title">Deploy</h2>
+			<p class="status-copy">Main branch GitHub Actions status.</p>
+			<a class="status-badge-wrap" href="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml" target="_blank" rel="noreferrer">
+				<img
+					src="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml/badge.svg?branch=main"
+					alt="Deploy status badge"
+					loading="lazy"
+					decoding="async"
+					class="h-5 w-auto"
+				/>
+			</a>
+		</article>
+
+		<article class="card p-4 status-card lg:col-span-2">
+			<h2 class="status-title">Feed crawl</h2>
+			<p class="status-copy">Last full source-crawl snapshot and source health counts.</p>
+			<div class="status-grid mt-3">
+				<div class="status-kpi"><span>Generated</span><strong>{fmtDate(feedGeneratedAt)}</strong></div>
+				<div class="status-kpi"><span>Sources ok</span><strong>{Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</strong></div>
+				<div class="status-kpi"><span>Blocked</span><strong>{Number(feedSummary.blocked ?? 0)}</strong></div>
+				<div class="status-kpi"><span>Failed</span><strong>{Number(feedSummary.failed ?? 0)}</strong></div>
+			</div>
+			<div class="mt-3 flex flex-wrap gap-2 text-xs">
+				<a class="status-link" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/feed-crawl-report-latest.md" target="_blank" rel="noreferrer">Open feed crawl report</a>
+			</div>
+		</article>
+	</section>
+
+	<section class="mt-4 grid gap-4 lg:grid-cols-2">
+		<article class="card p-4 status-card">
+			<h2 class="status-title">SAM opportunity intel</h2>
+			<p class="status-copy">Freshness of opportunity enrichment inputs.</p>
+			<div class="status-grid mt-3">
+				<div class="status-kpi"><span>Last collected</span><strong>{fmtDate(lastCollectedAt)}</strong></div>
+				<div class="status-kpi"><span>Drift refreshed</span><strong>{fmtDate(driftGeneratedAt)}</strong></div>
+				<div class="status-kpi"><span>Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong></div>
+				<div class="status-kpi"><span>Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong></div>
+			</div>
+			<div class="mt-3 flex flex-wrap gap-2 text-xs">
+				<a class="status-link" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open drift report</a>
+				<a class="status-link" href={withBase('/opportunities/')}>Open opportunities</a>
+			</div>
+		</article>
+
+		<article class="card p-4 status-card">
+			<h2 class="status-title">Quick routes</h2>
+			<p class="status-copy">Jump straight to the working surfaces.</p>
+			<ul class="status-list mt-3">
+				<li><a href={withBase('/events/')}>Events intelligence</a></li>
+				<li><a href={withBase('/opportunities/')}>Opportunity intelligence</a></li>
+				<li><a href={withBase('/changes/')}>Release changelog</a></li>
+				<li><a href={withBase('/contact/')}>Contact intake</a></li>
+			</ul>
+		</article>
+	</section>
+</SiteLayout>
+
+<style>
+	.status-card {
+		border: 1px solid rgba(51, 65, 85, 0.85);
+		background: rgba(2, 6, 23, 0.9);
+	}
+	.status-title {
+		font-size: 0.95rem;
+		font-weight: 700;
+		color: rgba(241, 245, 249, 0.98);
+	}
+	.status-copy {
+		margin-top: 0.25rem;
+		font-size: 0.8rem;
+		color: rgba(148, 163, 184, 0.98);
+	}
+	.status-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.5rem;
+	}
+	.status-kpi {
+		border: 1px solid rgba(51, 65, 85, 0.85);
+		background: rgba(2, 6, 23, 0.75);
+		padding: 0.5rem 0.55rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+	.status-kpi span {
+		font-size: 0.62rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(148, 163, 184, 0.94);
+	}
+	.status-kpi strong {
+		font-size: 0.85rem;
+		line-height: 1.25;
+		color: rgba(226, 232, 240, 0.98);
+	}
+	.status-link {
+		display: inline-flex;
+		align-items: center;
+		height: 1.8rem;
+		padding: 0 0.65rem;
+		border: 1px solid rgba(71, 85, 105, 0.8);
+		background: rgba(2, 6, 23, 0.82);
+		font-size: 0.72rem;
+		color: rgba(226, 232, 240, 0.95);
+		text-decoration: none;
+	}
+	.status-link:hover {
+		border-color: rgba(125, 211, 252, 0.68);
+	}
+	.status-badge-wrap {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 0.8rem;
+		border: 1px solid rgba(51, 65, 85, 0.84);
+		background: rgba(2, 6, 23, 0.72);
+		padding: 0.45rem 0.5rem;
+	}
+	.status-list {
+		display: grid;
+		gap: 0.45rem;
+		font-size: 0.86rem;
+	}
+	.status-list a {
+		color: rgba(191, 219, 254, 0.97);
+	}
+	.status-list a:hover {
+		color: rgba(224, 242, 254, 0.99);
+	}
+	@media (max-width: 760px) {
+		.status-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

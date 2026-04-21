@@ -5,6 +5,8 @@ import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
+import feedCrawlReport from '../../data/radar/feed-crawl-report-latest.json';
+import opportunitiesDrift from '../../data/radar/events-candidates-sam-opportunities-drift-latest.json';
 import type { RadarEngagementKind } from '../../data/radar/types';
 
 const DISALLOWED_SOURCE_HOSTS = new Set(['jbenton1.github.io']);
@@ -559,6 +561,10 @@ const summaryStats = {
 	nextInDays: nextUpcomingDays.length ? Math.min(...nextUpcomingDays) : null,
 };
 
+const feedSummary = (feedCrawlReport?.summary ?? {}) as Record<string, number>;
+const feedGeneratedAt = typeof (feedCrawlReport as any)?.generatedAt === 'string' ? (feedCrawlReport as any).generatedAt : null;
+const driftGeneratedAt = typeof (opportunitiesDrift as any)?.generated_at === 'string' ? (opportunitiesDrift as any).generated_at : null;
+
 function fmtDate(date: string | null) {
 	if (!date) return 'Date pending';
 	return new Date(date).toLocaleDateString(undefined, {
@@ -872,9 +878,17 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 					</p>
 				</div>
 				<div class="flex flex-wrap gap-1.5">
+					<a class="radar-btn radar-btn-tight" href={withBase('/status/')}>Status</a>
+					<a class="radar-btn radar-btn-tight" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
 					<button id="radar-toggle-map" class="radar-btn radar-btn-tight" type="button">Pin map above list</button>
 					<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
 				</div>
+			</div>
+			<div class="radar-status-row" aria-label="Pipeline freshness">
+				{feedGeneratedAt ? <span class="radar-status-pill">Feed crawl: {new Date(feedGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+				<span class="radar-status-pill">Sources OK: {Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</span>
+				<span class="radar-status-pill">Blocked: {Number(feedSummary.blocked ?? 0)}</span>
+				{driftGeneratedAt ? <span class="radar-status-pill">Opportunity drift: {new Date(driftGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
 			</div>
 			<div id="radar-opportunity-context" class="radar-opportunity-context hidden" aria-live="polite" hidden>
 				<div>
@@ -2929,6 +2943,23 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 	}
 	.radar-list-title {
 		white-space: nowrap;
+	}
+	.radar-status-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		margin-top: 0.5rem;
+	}
+	.radar-status-pill {
+		display: inline-flex;
+		align-items: center;
+		height: 1.45rem;
+		padding: 0 0.48rem;
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgba(2, 6, 23, 0.88);
+		font-size: 0.63rem;
+		color: rgba(203, 213, 225, 0.96);
+		letter-spacing: 0.02em;
 	}
 
 	.radar-stat {

@@ -95,6 +95,13 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 					Writing
 				</a>
 				<a
+					data-track="Contact: Intake Click"
+					href={withBase('/contact/?intent=consulting')}
+					class="rounded-none border border-teal-500/60 bg-teal-500/15 px-4 py-2 text-sm font-semibold text-teal-100 hover:bg-teal-500/25"
+				>
+					Start project
+				</a>
+				<a
 					href="#experience"
 					class="rounded-none border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900"
 				>
@@ -144,7 +151,7 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 
 		<section class="card p-6">
 			<h2 class="section-title">Engagement</h2>
-			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">Consulting and hands-on support for high-tempo delivery.</p>
+			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">Consulting and hands-on support for high-tempo delivery. If you need fast execution, use the intake form and include mission outcome + timeline.</p>
 			<ul class="mt-4 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
 				<li><span class="text-slate-100">Architecture &amp; modernization</span> (cloud platforms, control planes, migration plans)</li>
 				<li><span class="text-slate-100">Delivery systems</span> (paved roads, CI/CD, SLOs, observability, rollback)</li>
@@ -153,7 +160,8 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 			</ul>
 			<div class="mt-5 flex flex-wrap gap-3">
 				<a href="#experience" class="rounded-none border border-slate-700 bg-slate-900/40 px-3 py-2 text-sm font-semibold text-slate-100 hover:bg-slate-900">See experience</a>
-				<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="rounded-none border border-slate-700 px-3 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900">Email about a project</a>
+				<a data-track="Contact: Intake Click" href={withBase('/contact/?intent=consulting')} class="rounded-none border border-teal-500/60 bg-teal-500/15 px-3 py-2 text-sm font-semibold text-teal-100 hover:bg-teal-500/25">Start project intake</a>
+				<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="rounded-none border border-slate-700 px-3 py-2 text-sm font-semibold text-stone-100 hover:bg-slate-900">Email direct</a>
 			</div>
 		</section>
 	</div>
