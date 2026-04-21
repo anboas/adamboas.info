@@ -1,11 +1,23 @@
 {
   "meta": {
-    "generatedAt": "2026-04-21T05:22:24.659Z",
-    "siteId": null,
+    "generatedAt": "2026-04-21T06:20:30.528Z",
+    "siteId": "adamboas.com",
     "dateRange": "30d",
-    "note": "missing api key",
-    "triedSiteIds": []
+    "note": "ok (0 events)",
+    "triedSiteIds": [
+      "adamboas.com",
+      "www.adamboas.com",
+      "anboas.github.io/adamboas.info"
+    ]
   },
-  "eventTotals": {},
+  "eventTotals": {
+    "Contact: Intake Click": 0,
+    "Contact Form: View": 0,
+    "Contact Form: Start": 0,
+    "Contact Form: Submit": 0,
+    "Contact Form: Success": 0,
+    "Contact Form: Error": 0,
+    "Contact: Email Click": 0
+  },
   "byPage": {}
 }
