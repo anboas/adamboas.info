@@ -26,13 +26,39 @@ type TopicGroup = {
 
 const releases: Release[] = [
 
+
+	{
+		version: 'v2.3.71',
+		date: '2026-04-20',
+		title: 'Writing index audio summary row removed for cleaner top-line scan',
+		summary: 'Removed the top audio-coverage summary pills from `/writing/` while keeping the per-item audio availability pill on each card.',
+		impact: 'The `/writing/` control row stays shorter and cleaner, while audio visibility remains available exactly where needed per item.',
+		current: true,
+		tags: ['writing', 'audio', 'ux', 'density'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Removed the audio-coverage summary row from the writing index control shell.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Reduced top-of-page control-line clutter for faster scan and cleaner visual rhythm.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.70',
 		date: '2026-04-20',
 		title: 'Writing index now shows audio coverage + per-item audio status',
 		summary: 'Added a visual audio enumeration on `/writing/` with total and per-type coverage chips, plus explicit per-item audio availability badges on each card.',
 		impact: 'You can now scan instantly for which papers, memos, and notes include an audio/podcast component without opening each entry.',
-		current: true,
 		tags: ['writing', 'audio', 'podcast', 'ux', 'accessibility'],
 		groups: [
 			{

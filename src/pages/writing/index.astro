@@ -39,16 +39,6 @@ const items = [
 	.filter((x) => !!x.slug)
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
-const byType = ['paper', 'memo', 'note'] as const;
-const audioStats = {
-	total: items.length,
-	withAudio: items.filter((i) => i.hasAudio).length,
-	byType: byType.map((type) => {
-		const subset = items.filter((i) => i.type === type);
-		const withAudio = subset.filter((i) => i.hasAudio).length;
-		return { type, total: subset.length, withAudio };
-	}),
-};
 ---
 
 <SiteLayout title="Writing | Adam Boas" description="Notes, memos, and papers." image="/og/writing.png">
@@ -72,14 +62,6 @@ const audioStats = {
 			</div>
 
 			<div class="flex flex-wrap gap-2 text-xs" data-writing-chips></div>
-			<div class="mt-2 flex flex-wrap items-center gap-2 text-[11px] text-slate-300" aria-label="Audio coverage summary">
-				<span class="rounded-full border border-slate-700 bg-slate-950 px-2.5 py-1">🎧 Audio coverage: {audioStats.withAudio}/{audioStats.total}</span>
-				{audioStats.byType.map((s) => (
-					<span class="rounded-full border border-slate-800 bg-slate-950/60 px-2.5 py-1" title={`${s.withAudio} of ${s.total} ${s.type}s include audio`}>
-						{s.type}: {s.withAudio}/{s.total}
-					</span>
-				))}
-			</div>
 		</div>
 		<script type="module" set:html={writingIndexJs}></script>
 
