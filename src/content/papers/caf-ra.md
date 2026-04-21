@@ -4,6 +4,7 @@ description: "A reference architecture for governed, scalable continuous assuran
 date: 2026-02-23
 status: published
 pdfPath: /papers/caf-ra.pdf
+audioPath: /audio/writing/caf-ra.m4a
 # HTML is synced from Whitepaper into src/generated/papers/<slug>.html
 tags:
   - continuous-assurance
