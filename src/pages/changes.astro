@@ -28,13 +28,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.73',
+		date: '2026-04-20',
+		title: 'Footer now includes live deploy status badge from GitHub Actions',
+		summary: 'Added a sleek deploy-status indicator in the footer wired to the `deploy-dev-pages` workflow badge on the main branch.',
+		impact: 'Visitors can immediately see whether production deploys are passing, directly from the site footer.',
+		current: true,
+		tags: ['footer', 'deploy', 'github-actions', 'status', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added footer Deploy status link to the GitHub Actions workflow page (`deploy-dev-pages`).',
+					'Added live workflow badge image (`badge.svg?branch=main`) with lazy loading and accessible alt text.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Kept deploy visibility compact by styling the indicator as a small inline footer pill.',
+				],
+			},
+			{ kind: 'Changed', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.72',
 		date: '2026-04-20',
 		title: 'Writing index audio pill now appears only when available and moved into tag row',
 		summary: 'Updated `/writing/` cards so the audio pill renders only for entries with audio and is positioned first on the same line as tags.',
 		impact: 'Cards are cleaner (no negative no-audio marker), and audio availability stays obvious in the exact metadata row where people scan tags.',
-		current: true,
 		tags: ['writing', 'audio', 'ux', 'metadata-density'],
 		groups: [
 			{
