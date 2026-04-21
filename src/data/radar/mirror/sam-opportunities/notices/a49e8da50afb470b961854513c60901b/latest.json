@@ -1,0 +1,56 @@
+{
+  "id": "sam-a49e8da50afb470b961854513c60901b",
+  "title": "ALIDADE, TELESCOPIC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a49e8da50afb470b961854513c60901b",
+  "opportunity_url": "https://sam.gov/opp/a49e8da50afb470b961854513c60901b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a49e8da50afb470b961854513c60901b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a49e8da50afb470b961854513c60901b",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QX060",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-21",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a49e8da50afb470b961854513c60901b",
+  "detail_text": "ALIDADE, TELESCOPIC FMS Case NU: SR-P-P-MAK Quantity: 4 NSN: 6605-01-090-8292 Part Number: 803-5002390THRU5002398",
+  "detail_text_length": 113,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/592e131995f34a93a8339dadd0dc0164/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/692e6004c6354917ac08491a9987d312/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/592e131995f34a93a8339dadd0dc0164/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bd95a121ffee70f823e237b7b6a6829854791950c6c2ce9b691a9c43278fce53.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bd95a121ffee70f823e237b7b6a6829854791950c6c2ce9b691a9c43278fce53.pdf",
+      "file_id": "592e131995f34a93a8339dadd0dc0164",
+      "file_name": "3.03_Sol_Amendment_N0010425PR26422.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 586084,
+      "sha256": "bd95a121ffee70f823e237b7b6a6829854791950c6c2ce9b691a9c43278fce53"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/692e6004c6354917ac08491a9987d312/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/41fe97e5f4336e3e1ca31a12db31afd970c2d9f76ce54ed536af07fa3393d310.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/41fe97e5f4336e3e1ca31a12db31afd970c2d9f76ce54ed536af07fa3393d310.pdf",
+      "file_id": "692e6004c6354917ac08491a9987d312",
+      "file_name": "3.01_RFQ_N0010426QX060_N0010425PR26422.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1191434,
+      "sha256": "41fe97e5f4336e3e1ca31a12db31afd970c2d9f76ce54ed536af07fa3393d310"
+    }
+  ],
+  "_mirror_hash": "4164c73228a9c23a07a696d453af89ac729d422782c18e6869ce89afd3bcb947",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.869240+00:00"
+}

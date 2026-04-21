@@ -1,0 +1,46 @@
+{
+  "id": "sam-64a8b05446e448dbad0855792be980a7",
+  "title": "Therapeutic Apheresis Treatment Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64a8b05446e448dbad0855792be980a7",
+  "opportunity_url": "https://sam.gov/opp/64a8b05446e448dbad0855792be980a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/64a8b05446e448dbad0855792be980a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "64a8b05446e448dbad0855792be980a7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24526Q0458",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.245-NETWORK CONTRACT OFFICE 5 (36C245)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64a8b05446e448dbad0855792be980a7",
+  "detail_text": "The Department of Veterans Affairs Medical Center in Washington DC (DC VAMC) seeks a qualified vendor located in the tri state area, (DC, VA, MD), SDVOSB or otherwise, with prior government contract experience or any additonal related experience, for the following services: Therapeutic Apheresis Treatment.",
+  "detail_text_length": 307,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dda0eaa1b82f4035a482c0dc2e266002/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dda0eaa1b82f4035a482c0dc2e266002/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5b6970f9c35aa5a116b6b2228e038f543c3ef7e8d2308924cef8acc657edcc0d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5b6970f9c35aa5a116b6b2228e038f543c3ef7e8d2308924cef8acc657edcc0d.docx",
+      "file_id": "dda0eaa1b82f4035a482c0dc2e266002",
+      "file_name": "Performance+Work+Statement+-++DCVAMC.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58965,
+      "sha256": "5b6970f9c35aa5a116b6b2228e038f543c3ef7e8d2308924cef8acc657edcc0d"
+    }
+  ],
+  "_mirror_hash": "8901d0048d534199779c906adc42b0eb9901c6c2f02ccc29f0807e46ab9afd45",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.940027+00:00"
+}

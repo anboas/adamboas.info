@@ -1,24 +1,24 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-20T14:10:50.251627+00:00
+Generated: 2026-04-21T13:49:04.849241+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/20/2026
+Posted range: 01/01/2026 -> 04/21/2026
 
 ## Counts
-- Total candidates: 17
+- Total candidates: 18
 - Navy-related: 0
-- Full detail cached: 17
+- Full detail cached: 18
 - Notices with attachments: 12
 - Total attachment links: 19
 - Pre-solicitation: 7
 - Sources Sought: 7
-- Special Notice: 3
+- Special Notice: 4
 
 ## Engagement signals
 - Pre-solicitation: 8
 - Sources Sought: 7
-- Special Notice: 3
+- Special Notice: 4
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -34,6 +34,7 @@ Posted range: 01/01/2026 -> 04/20/2026
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-08 | 2026-04-22 | DEPT OF DEFENSE | [Base Telephone Parts](https://sam.gov/opp/4740ffbeca8743faae63ee51182b0daa/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-08 | 2026-04-22 | DEPT OF DEFENSE | [MCAS Beaufort Catholic Priest Services](https://sam.gov/opp/e5fdf57e7da448d58742fd90ea9eaf05/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-17 | 2026-04-22 | DEPT OF DEFENSE | [Parachute/ Airborne Boat and Dive Operations Services](https://sam.gov/opp/ab1549172f4b4082aced2aa6dd9f1fe8/view) |
+| 2 | Special Notice | Special Notice | 2026-04-20 | 2026-04-23 | DEPT OF DEFENSE | [Luau Dinner and Venue](https://sam.gov/opp/52d72d2214544bfb8e3f57b4b13b23f7/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-17 | 2026-04-24 | DEPT OF DEFENSE | [Marine Corps Base Camp Lejeune, North Carolina Life Support Activities in support of Resolute Strike/FLEET EX 26](https://sam.gov/opp/b00fa14ec730437a93fc74ae213f8bac/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-14 | 2026-05-01 | DEPT OF DEFENSE | [Foreign Adversary Air Support](https://sam.gov/opp/431b2d877e584f43a00341cf3710fdda/view) |
 | 4 | Sources Sought | Pre-solicitation, Sources Sought | 2026-04-15 | 2026-05-06 | DEPT OF DEFENSE | [M00264-RFI-023- USMC Communication Directorate (CD)- Music and Sound Effects Licensing Package](https://sam.gov/opp/a4fe82aea2184003b7f8ff2940a3844e/view) |

@@ -1,0 +1,57 @@
+{
+  "id": "sam-b166959ec49c4101a43789231e32905a",
+  "title": "Welding Machine",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b166959ec49c4101a43789231e32905a",
+  "opportunity_url": "https://sam.gov/opp/b166959ec49c4101a43789231e32905a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b166959ec49c4101a43789231e32905a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b166959ec49c4101a43789231e32905a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W50S7Z26SS0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO LA.USPFO LA PROCUREMENT.W7NB USPFO ACTIVITY LAANG 159",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b166959ec49c4101a43789231e32905a",
+  "detail_text": "The Louisiana Air National Guard is conducting market research to identify sources capable of providing one (1) Miller Dynasty 800 TIG Welder, 208-600V, single- or three-phase, with two (2) hand remotes and required accessories, for delivery to Bldg. 31, 400 Russell Ave., New Orleans, LA 70037. The welder is required for precision TIG welding of aerospace ground equipment, support equipment, and off-equipment aircraft components, and must be compatible with existing Miller equipment. Minimum salient characteristics include: 1-inch aluminum welding capability, AC frequency control, Quiet Pulse or Pulse capability, Lift-Arc capability, cooler power supply with Cooler-On-Demand auxiliary cooling system, Wireless Hand Control P/N 301582, RCC-14 Current Control, and program memory for multiple base metals. This notice is for market research only and does not constitute a solicitation.",
+  "detail_text_length": 892,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5499c4cce404b05a62a2353ff615cee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfe1488bf3b44234a87a76d7bf306312/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5499c4cce404b05a62a2353ff615cee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f18f5c61b8e918fef8da06c7f86aa1a46374dad8536280af6ffbf3879589e089.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f18f5c61b8e918fef8da06c7f86aa1a46374dad8536280af6ffbf3879589e089.pdf",
+      "file_id": "c5499c4cce404b05a62a2353ff615cee",
+      "file_name": "11_Supply+Product+Description_Miller+Dynasty+800+Tig+WelderFinal.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 212248,
+      "sha256": "f18f5c61b8e918fef8da06c7f86aa1a46374dad8536280af6ffbf3879589e089"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cfe1488bf3b44234a87a76d7bf306312/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ece05603b018ccf067e513c35a7379e72b71710ad60af9f5ccccb3095f748324.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ece05603b018ccf067e513c35a7379e72b71710ad60af9f5ccccb3095f748324.docx",
+      "file_id": "cfe1488bf3b44234a87a76d7bf306312",
+      "file_name": "Sources+Sought+Notice+-W50S7Z26SS0001-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 362168,
+      "sha256": "ece05603b018ccf067e513c35a7379e72b71710ad60af9f5ccccb3095f748324"
+    }
+  ],
+  "_mirror_hash": "5a430be21937e9ab0696e981d609a1a5b330809194a3825516b2c47c577586fb",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.940448+00:00"
+}

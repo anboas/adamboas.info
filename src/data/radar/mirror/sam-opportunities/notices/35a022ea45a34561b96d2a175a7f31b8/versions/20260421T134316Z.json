@@ -1,0 +1,68 @@
+{
+  "id": "sam-35a022ea45a34561b96d2a175a7f31b8",
+  "title": "Multispectral Camouflage Overgarment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35a022ea45a34561b96d2a175a7f31b8",
+  "opportunity_url": "https://sam.gov/opp/35a022ea45a34561b96d2a175a7f31b8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/35a022ea45a34561b96d2a175a7f31b8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "35a022ea45a34561b96d2a175a7f31b8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M6785426I5407",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35a022ea45a34561b96d2a175a7f31b8",
+  "detail_text": "This Sources Sought announcement is to assist the United States Marine Corps (USMC), Marine Corps Systems Command (MCSC), Program Manager Combat Support Systems (PM CSS), Product Manager Combat Service Support Equipment (PdM CSSE) to identify potential vendors capable of developing a Multispectral Camouflage Overgarment (MCO) to meet USMC requirements.",
+  "detail_text_length": 354,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f49b2c6de0a41748c0fa851ca2b8ad2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e764a3a9b5543d2bb6b75f67d5ebb1a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0d974693e9841319cf6a384649d586b/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f49b2c6de0a41748c0fa851ca2b8ad2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/005fb249fae772bbe7e785eb227a20c2b4e45441cd342c8419da7cdacc9b5349.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/005fb249fae772bbe7e785eb227a20c2b4e45441cd342c8419da7cdacc9b5349.pdf",
+      "file_id": "4f49b2c6de0a41748c0fa851ca2b8ad2",
+      "file_name": "Attachment+1+-+MCSC+Non-Disclosure+Agreement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 219276,
+      "sha256": "005fb249fae772bbe7e785eb227a20c2b4e45441cd342c8419da7cdacc9b5349"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e764a3a9b5543d2bb6b75f67d5ebb1a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/01db9ba8133348d258e15770adc996f7bc9b36396497842974b73b5e8af8e613.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/01db9ba8133348d258e15770adc996f7bc9b36396497842974b73b5e8af8e613.pdf",
+      "file_id": "5e764a3a9b5543d2bb6b75f67d5ebb1a",
+      "file_name": "Questions+and+Answers_M67854-26-I-5407.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49912,
+      "sha256": "01db9ba8133348d258e15770adc996f7bc9b36396497842974b73b5e8af8e613"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0d974693e9841319cf6a384649d586b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e734c605cdf0b05b5305b888e0fdcc65f867bacab14e395ffc7f5bb5c228f219.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e734c605cdf0b05b5305b888e0fdcc65f867bacab14e395ffc7f5bb5c228f219.pdf",
+      "file_id": "f0d974693e9841319cf6a384649d586b",
+      "file_name": "-Amended-+M67854-26-I-5407+Multispectral+Camouflage+Overgarment_20APRIL2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 134053,
+      "sha256": "e734c605cdf0b05b5305b888e0fdcc65f867bacab14e395ffc7f5bb5c228f219"
+    }
+  ],
+  "_mirror_hash": "a432cd50a00ff178f4a7d23e2cf006f28ca0d382d3c6ca30f637dfe9dffbed8e",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.917933+00:00"
+}

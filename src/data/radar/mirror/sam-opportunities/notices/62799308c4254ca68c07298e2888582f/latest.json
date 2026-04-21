@@ -1,0 +1,46 @@
+{
+  "id": "sam-62799308c4254ca68c07298e2888582f",
+  "title": "Equal Employment Office (EE0) Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62799308c4254ca68c07298e2888582f",
+  "opportunity_url": "https://sam.gov/opp/62799308c4254ca68c07298e2888582f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/62799308c4254ca68c07298e2888582f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "62799308c4254ca68c07298e2888582f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SH040920261456",
+  "agency_path": "DEPT OF DEFENSE.WASHINGTON HEADQUARTERS SERVICES (WHS).WASHINGTON HEADQUARTERS SERVICES",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62799308c4254ca68c07298e2888582f",
+  "detail_text": "The objective of this Notice is to obtain information to identify firms capable of providing EEO support services for DSCA. Please see attachment for more details.",
+  "detail_text_length": 163,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62b7e18f611f49c59a85bfcfe26a3819/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62b7e18f611f49c59a85bfcfe26a3819/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e084c0a184007bbfc575719d9654bc71a477af87f1628701439b73210c12c11c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e084c0a184007bbfc575719d9654bc71a477af87f1628701439b73210c12c11c.pdf",
+      "file_id": "62b7e18f611f49c59a85bfcfe26a3819",
+      "file_name": "EEO+Support+Services+RFI+Updated.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 186091,
+      "sha256": "e084c0a184007bbfc575719d9654bc71a477af87f1628701439b73210c12c11c"
+    }
+  ],
+  "_mirror_hash": "78f2df8359e44fdbfc81d2d3eb97408d4805454d0139ce513b47faf49ba067eb",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:39.015084+00:00"
+}

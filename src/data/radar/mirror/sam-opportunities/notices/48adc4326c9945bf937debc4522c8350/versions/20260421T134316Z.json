@@ -1,0 +1,47 @@
+{
+  "id": "sam-48adc4326c9945bf937debc4522c8350",
+  "title": "Ship Repair Furniture Requirement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48adc4326c9945bf937debc4522c8350",
+  "opportunity_url": "https://sam.gov/opp/48adc4326c9945bf937debc4522c8350/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/48adc4326c9945bf937debc4522c8350/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "48adc4326c9945bf937debc4522c8350",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6817126QN043",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SIGONELLA.NAVSUP FLC SIGONELLA NAPLES OFFICE",
+  "posted_date": "2026-04-21",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=48adc4326c9945bf937debc4522c8350",
+  "detail_text": "The NAVSUP FLC Sigonella has a requirement for the purchase, delivery, and installation of commercial furniture for the Code 200.",
+  "detail_text_length": 129,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22f544ee63e24633b853fe8796e41a4d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22f544ee63e24633b853fe8796e41a4d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/88dbc55f52a96a92d1e51cf74eea75215e0190039e9376ec08c7023ae5be392e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/88dbc55f52a96a92d1e51cf74eea75215e0190039e9376ec08c7023ae5be392e.pdf",
+      "file_id": "22f544ee63e24633b853fe8796e41a4d",
+      "file_name": "Presolicitation++Ship+Repair+furniture.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 760717,
+      "sha256": "88dbc55f52a96a92d1e51cf74eea75215e0190039e9376ec08c7023ae5be392e"
+    }
+  ],
+  "_mirror_hash": "28e94f932c50efb0a882b594276df1d2075f47d7be30b48a0c2484cbcc23e349",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.832950+00:00"
+}

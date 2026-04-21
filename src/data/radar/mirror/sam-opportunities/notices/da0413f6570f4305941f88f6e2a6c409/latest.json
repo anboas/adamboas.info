@@ -1,0 +1,59 @@
+{
+  "id": "sam-da0413f6570f4305941f88f6e2a6c409",
+  "title": "Request For Information Re:  Residential Reentry Services and Home Confinement Services within Wisconsin Counties of Rock, Dane, Green, Jefferson.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=da0413f6570f4305941f88f6e2a6c409",
+  "opportunity_url": "https://sam.gov/opp/da0413f6570f4305941f88f6e2a6c409/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/da0413f6570f4305941f88f6e2a6c409/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "da0413f6570f4305941f88f6e2a6c409",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "15BRRC26R00000010",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.RESIDENTIAL REENTRY - CO",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=da0413f6570f4305941f88f6e2a6c409",
+  "detail_text": "This announcement is posted as a Request For Information (RFI) only for an intended upcoming solicitation that will be posted on the SAM.gov website. This RFI is being issued to determine whether or not there are qualified sources that will be able to meet the requirements of this intended upcoming solicitation. This upcoming solicitation will be for both Residential Reentry Center (RRC) services and Home Confinement (HC) services for male and female offenders located within one of the following Wisconsin Counties: Rock, Dane, Green, Jefferson. Home Confinement radius is within 200 miles of the RRC facility. The solicitation is anticipated to be for an IDIQ contract with tiered pricing. There will be a guaranteed minimum and an estimated maximum number of placements, to include in-house, and home confinement residents. It is anticipated that all services will be solicited under a single procurement and will require that the successful offeror provide all services. The requirement is anticipated to be for an estimated maximum of 50 In-House placements and 30 Home Confinement placements. The Bureau would like input from providers of services in the community as to the feasibility of providing these services in this geographical area.",
+  "detail_text_length": 1251,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/143a52446f814a469cc6a51cf5d2d2f7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3c73f2de7cb4664b4b346f2cc5cf876/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/143a52446f814a469cc6a51cf5d2d2f7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f294a1f88c546f4b64f88b229445089289ee5dfaeea1a80b607e895a925de63d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f294a1f88c546f4b64f88b229445089289ee5dfaeea1a80b607e895a925de63d.pdf",
+      "file_id": "143a52446f814a469cc6a51cf5d2d2f7",
+      "file_name": "RRC+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1317998,
+      "sha256": "f294a1f88c546f4b64f88b229445089289ee5dfaeea1a80b607e895a925de63d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b3c73f2de7cb4664b4b346f2cc5cf876/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/886dca8fb80cf3fbe1f1d4b4a4b82e202b42066e6bfb13af64a396498439cf5c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/886dca8fb80cf3fbe1f1d4b4a4b82e202b42066e6bfb13af64a396498439cf5c.pdf",
+      "file_id": "b3c73f2de7cb4664b4b346f2cc5cf876",
+      "file_name": "RFI+for+Janesville+WI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 283556,
+      "sha256": "886dca8fb80cf3fbe1f1d4b4a4b82e202b42066e6bfb13af64a396498439cf5c"
+    }
+  ],
+  "_mirror_hash": "dca7bc9fccff4dc19c0375b9e34f76efa4cdcde8200e7ef1810918146318d7db",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.883629+00:00"
+}

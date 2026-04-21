@@ -1,0 +1,48 @@
+{
+  "id": "sam-ea2620641fc24f78aee63a91244c18cf",
+  "title": "Request for Information (RFI) on Biologically-Derived Materials for Transient Propulsion  Systems",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea2620641fc24f78aee63a91244c18cf",
+  "opportunity_url": "https://sam.gov/opp/ea2620641fc24f78aee63a91244c18cf/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ea2620641fc24f78aee63a91244c18cf/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ea2620641fc24f78aee63a91244c18cf",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "IARPA-RFI-26-01",
+  "agency_path": "OFFICE OF THE DIRECTOR OF NATIONAL INTELLIGENCE.INTELLIGENCE ADVANCED RESEARCH PROJECTS ACTIVITY",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea2620641fc24f78aee63a91244c18cf",
+  "detail_text": "The Intelligence Advanced Research Projects Activity (IARPA) seeks information regarding the current state of the art (SOTA) in biologically-derived materials suitable for controlled transience in propulsion systems for unmanned aerial vehicles (UAVs). IARPA is interested in understanding how controlled material degradation can be extended beyond structural components to include turbines, engines, motors, and associated propulsion elements. Of particular interest are approaches that move beyond ultraviolet (UV)-initiated or water (H2O)-initiated transience mechanisms and subsequently enable more diverse triggering modalities that are stable in a range of environmental conditions. This RFI is issued for planning purposes only and does not constitute a formal solicitation for proposals or suggest the procurement of any materials, components, or systems. The proliferation of UAV operations across military, intelligence, and civilian domains has raised growing concerns about the environmental footprint of aerospace materials, particularly in scenarios where systems may be lost. Conventional propulsion components, and their controls, fabricated from persistent materials—metal alloys, engineering plastics, and advanced composites—can remain in ecosystems for decades or centuries. DARPA's ICARUS (Inbound, Controlled, Air-Releasable, Unrecoverable Systems) program pioneered a solution for airframe structures by demonstrating transient materials that maintain operational performance before undergoing controlled degradation, thereby minimizing persistent environmental residue. The ICARUS approach employed primarily UV-triggered photopolymers that undergo programmable degradation of structural components, establishing proof-of-concept. However, extending these achievements beyond airframes to propulsion systems and their controls reveals critical limitations: propulsion components operate under extreme thermal, mechanical, and chemical stresses; contain a mixture of material types; must maintain structural integrity throughout dynamic mission profiles; require materials compatible with combustion environments or electromagnetic fields; and face significant challenges when UV initiation serves as the primary degradation trigger within enclosed or shielded propulsion assemblies where UV exposure may be limited or absent. Moreover, there may be operational parameters where natural UV exposure is present. Environmental conditions that naturally degrade materials—humidity, microbial activity, thermal cycling, oxidation—are often more readily available than UV exposure, suggesting opportunities for bio-derived materials that leverage natural decomposition pathways to control degradation of an airborne system. Responses to this RFI are due no later than 5:00 p.m. Eastern Time, May 15, 2026. All submissions must be electronically submitted as PDF documents to dni-iarpa-rfi-26-01@iarpa.gov. Inquiries must be submitted to the same address. Do not send questions with proprietary content. No telephone inquiries will be accepted.",
+  "detail_text_length": 3061,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee461be8aedf47b9a6d0377a6a2a97d6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee461be8aedf47b9a6d0377a6a2a97d6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/205a8b5c7e96de34f4ed61919c094ce6e65d0b6754774d50db5804b4fc2edb75.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/205a8b5c7e96de34f4ed61919c094ce6e65d0b6754774d50db5804b4fc2edb75.pdf",
+      "file_id": "ee461be8aedf47b9a6d0377a6a2a97d6",
+      "file_name": "CLEANED_IARPA_RFI_26_01.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 110434,
+      "sha256": "205a8b5c7e96de34f4ed61919c094ce6e65d0b6754774d50db5804b4fc2edb75"
+    }
+  ],
+  "_mirror_hash": "d6459fd1d3b6b2efceebc85d633611293b9db3c9c420591d3a4efb3acff7b507",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.878220+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-966695dc01f94c17a259ac23b65c46c1",
+  "title": "F18 RADIOPHARMACEUTICALS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=966695dc01f94c17a259ac23b65c46c1",
+  "opportunity_url": "https://sam.gov/opp/966695dc01f94c17a259ac23b65c46c1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/966695dc01f94c17a259ac23b65c46c1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "966695dc01f94c17a259ac23b65c46c1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24726Q0232",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.247-NETWORK CONTRACT OFFICE 7 (36C247)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-01-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=966695dc01f94c17a259ac23b65c46c1",
+  "detail_text": "The vendor shall provide all labor, supervision, and transportation necessary to provide daily delivery of F-18 FDG (fluorodeoxyglucose), NaF-F18 (sodium fluoride), F18- beta-amyloid imaging agent, F18-Axumin (fluciclovine), F18-Tauvid (Floracipir), F18-Cerianna (Fluoroestradiol), F18-Posluma (Flotufolastat), and F18-Pylarify (Piflufolastat) CAIX Radiopharmaceutical, choline PET radiopharmaceuticals and F18-FET to the NM Service, located in the Atlanta Veterans Affairs Medical Center (ATL VAMC), 1670 Clairmont Road, Decatur, GA 30033. The vendor shall be an established commercial radiopharmacy that has operated continuously for at least the past 10 years. The vendor shall have a system of order/shipment/delivery/return that includes procedures for return of spent (used) syringes that meets the Occupational Safety and Health Administration (OSHA) Biohazardous Waste Policy/Regulations. The system shall be needleless. The vendor shall be licensed by the US NRC and/or by an Agreement State to prepare and distribute radiopharmaceuticals. The vendor shall provide the ATL VA HCS a copy of the license and copies of applicable inspection reports The vendor shall provide documentation that the cyclotrons used by the vendor are FDA approved for commercial use. The vendor shall accept returns for full credit toward future orders with no order charges or return charges when any of the following conditions are valid: 1 .product ordered or shipped in error 2 . product delivered with visible damage received during shipment 3. product delivered with concealed damage received during shipment 4 . product that has been recalled 5 . product that is expired and in unopened, original container 6 . product that has any mutually agreed upon negative issues that are the result of routine vendor processing",
+  "detail_text_length": 1810,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94c096e48dfc4e6199283eb7f1539505/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/94c096e48dfc4e6199283eb7f1539505/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cfe8741c47fe71cc0e39367a5e68f1eb7be11066db7ccdb1703979d2b2efb70c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cfe8741c47fe71cc0e39367a5e68f1eb7be11066db7ccdb1703979d2b2efb70c.pdf",
+      "file_id": "94c096e48dfc4e6199283eb7f1539505",
+      "file_name": "RFI-36C24726Q0232-F18+Radiopharmaceuticals.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 113229,
+      "sha256": "cfe8741c47fe71cc0e39367a5e68f1eb7be11066db7ccdb1703979d2b2efb70c"
+    }
+  ],
+  "_mirror_hash": "e12ae94032811837eff79bf5c7ff0286536050d75eff1ee80c57cf3a4920ad0e",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.893856+00:00"
+}

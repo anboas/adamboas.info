@@ -1,0 +1,46 @@
+{
+  "id": "sam-11f57a9d1e8c4f7884fb4aab7691865f",
+  "title": "Medical Grade Shredder for Wilkes-Barre",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=11f57a9d1e8c4f7884fb4aab7691865f",
+  "opportunity_url": "https://sam.gov/opp/11f57a9d1e8c4f7884fb4aab7691865f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/11f57a9d1e8c4f7884fb4aab7691865f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "11f57a9d1e8c4f7884fb4aab7691865f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24426Q0502",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.244-NETWORK CONTRACT OFFICE 4 (36C244)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=11f57a9d1e8c4f7884fb4aab7691865f",
+  "detail_text": "This is a Sources Sought Notice for a brand name or equal dual shaft industrial style medical waste shredder. All reponses are due by Monday, May 4th, 2026 at 12:00 PM Eastern to the identified POC's email. Please carefully review the attachment for instructions and more details.",
+  "detail_text_length": 280,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d772601494a14e41b5405a30861eb016/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d772601494a14e41b5405a30861eb016/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f06affe25e784f93a6ac1c2f76f5bbb5354e0410454fa910cb5dec7bc8140273.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f06affe25e784f93a6ac1c2f76f5bbb5354e0410454fa910cb5dec7bc8140273.pdf",
+      "file_id": "d772601494a14e41b5405a30861eb016",
+      "file_name": "P02+SSN+36C24426Q0502+-+Medical+Grade+Shredder.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 385782,
+      "sha256": "f06affe25e784f93a6ac1c2f76f5bbb5354e0410454fa910cb5dec7bc8140273"
+    }
+  ],
+  "_mirror_hash": "edd744aa5331c240a27addf8bdb1ca80b2639130f3cb37e5e7ea7f66247231be",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.988416+00:00"
+}

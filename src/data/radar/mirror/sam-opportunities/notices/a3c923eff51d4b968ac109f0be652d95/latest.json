@@ -1,0 +1,46 @@
+{
+  "id": "sam-a3c923eff51d4b968ac109f0be652d95",
+  "title": "Software for GIS, Modeling, Statistical Analysis",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a3c923eff51d4b968ac109f0be652d95",
+  "opportunity_url": "https://sam.gov/opp/a3c923eff51d4b968ac109f0be652d95/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a3c923eff51d4b968ac109f0be652d95/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a3c923eff51d4b968ac109f0be652d95",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140G0226Q0037",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFC OF ACQUISITION  GRANTS-DENVER",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a3c923eff51d4b968ac109f0be652d95",
+  "detail_text": "SOURCES SOUGHT: This is a SOURCES SOUGHT NOTICE. The U.S. Geological Survey is conducting a MARKET SURVEY to determine the interest and capability of any firm eligible to compete under NAICS code 513210 with a Small Business Size Standard $47 million for an upcoming requirement to provide a variety of GIS, modeling, and statistical analysis for federal, state, and local partners. THIS IS NOT A SOLICITATION. ALL COST ASSOCIATED WITH PROVIDING INFORMATION AS REQUESTED BY THIS SOURCES SOUGHT NOTICE SHALL BE THE RESPONSIBILITY OF THE CONTRACTOR. Submission is voluntary. See attachment for full announcement.",
+  "detail_text_length": 610,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/627067b6101144419b98fc9abe6e339b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/627067b6101144419b98fc9abe6e339b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7688b2a5dfe3b132531f94756ab9c561b8123380a060425a12c0d484190573e7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7688b2a5dfe3b132531f94756ab9c561b8123380a060425a12c0d484190573e7.pdf",
+      "file_id": "627067b6101144419b98fc9abe6e339b",
+      "file_name": "A14__Sources_Sought_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67650,
+      "sha256": "7688b2a5dfe3b132531f94756ab9c561b8123380a060425a12c0d484190573e7"
+    }
+  ],
+  "_mirror_hash": "0f9e1753c014accf81839425e817526b0e6722ba80371ddf96df6519d4da2ba0",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.939143+00:00"
+}

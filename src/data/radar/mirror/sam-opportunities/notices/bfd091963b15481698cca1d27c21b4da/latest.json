@@ -1,0 +1,46 @@
+{
+  "id": "sam-bfd091963b15481698cca1d27c21b4da",
+  "title": "Utility Invoice Audit Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfd091963b15481698cca1d27c21b4da",
+  "opportunity_url": "https://sam.gov/opp/bfd091963b15481698cca1d27c21b4da/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bfd091963b15481698cca1d27c21b4da/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bfd091963b15481698cca1d27c21b4da",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI-Utility-Audit-Services-2026-04-20",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.PUBLIC BUILDINGS SERVICE.PBS RETAIL UTILITY PROCUREMENTS",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfd091963b15481698cca1d27c21b4da",
+  "detail_text": "In accordance with Federal Acquisition Regulation (FAR) Part 10, the Government must conduct market research prior to developing requirement documents for a new acquisition. The findings from this research are essential for identifying existing qualified sources and determining if alternative support strategies can satisfy the Government's needs. A Request for Information (RFI) is one of the methods the Government uses to conduct market research. This RFI, issued in accordance with FAR 52.215-3, Request for Information or Solicitation for Planning Purposes (Oct 1997), is exclusively for planning purposes. This is neither a Request for Quotes (RFQ), Request for Proposals (RFP), nor an Invitation for Bids (IFB), and it does not represent an obligation by the Government to acquire any services. Responses to this RFI are not considered offers and, therefore, cannot and will not be accepted by the Government to form a binding contract. The Government retains the right to determine its course of action based on this notice and does not guarantee feedback on submissions. All costs incurred in responding to this RFI must be borne solely by the responding party; the Government will not cover any such expenses. The information provided within this RFI is subject to change and is not binding on the Government. The General Services Administration (GSA) reserves the right to contact responders for additional information regarding their products or services. GSA is seeking information from interested and qualified contractors for providing audit support services related to Utility invoices, specifically for electricity, natural gas, and water. For additional details on requirements and submission instructions, please consult the attached document, \"RFI for Utility Invoice Audits 2026 04 20.\" Interested companies should submit their supporting narratives for this RFI via email to Contracting Officer Sharon McCreary at sharon.mccreary@gsa.gov by 3:00 PM Eastern Time on Monday, May 04, 2026.",
+  "detail_text_length": 2009,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fae26ac6ab9c4a80a86febb557323e81/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fae26ac6ab9c4a80a86febb557323e81/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8e55576b61ce1569a3f6f79845e2404888b7fcdf3d3965575746b8157ec15a96.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8e55576b61ce1569a3f6f79845e2404888b7fcdf3d3965575746b8157ec15a96.pdf",
+      "file_id": "fae26ac6ab9c4a80a86febb557323e81",
+      "file_name": "RFI+for+Utility+Invoice+Audits+2026+04+20.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142579,
+      "sha256": "8e55576b61ce1569a3f6f79845e2404888b7fcdf3d3965575746b8157ec15a96"
+    }
+  ],
+  "_mirror_hash": "8eb0d3cb55f5ad3ee913be75434c07233d78d770116724ebfb6496f602d3b444",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.993766+00:00"
+}

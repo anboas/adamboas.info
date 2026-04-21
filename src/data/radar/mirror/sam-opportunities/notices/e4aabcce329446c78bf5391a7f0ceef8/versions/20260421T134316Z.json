@@ -1,0 +1,56 @@
+{
+  "id": "sam-e4aabcce329446c78bf5391a7f0ceef8",
+  "title": "2040 BITT, HALF INCH",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e4aabcce329446c78bf5391a7f0ceef8",
+  "opportunity_url": "https://sam.gov/opp/e4aabcce329446c78bf5391a7f0ceef8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e4aabcce329446c78bf5391a7f0ceef8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e4aabcce329446c78bf5391a7f0ceef8",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626QS225",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e4aabcce329446c78bf5391a7f0ceef8",
+  "detail_text": "Fleet Logistics Center Puget Sound (FLCPS) intends to solicit for BITT, HALF INCH, part number ISO3913-S315C, Qty. 10 each. This requirement is Brand Name for Schoellhorn-Albrecht Machine Company, Inc. Interested companies may identify their interest and capability to respond to the requirement, which will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination not to compete this action based upon responses received to this notice is solely within the discretion of the Government. The Government will evaluate the offeror’s price for reasonableness and past performance as part of the responsibility determination in accordance with RFO 12.203. Drawing, references and TGIs will not be provided or furnished as part of this solicitation due to distribution restrictions. Drawings, references and TGIs are available to quoters listed on the Joint Certification Program (JCP) website. Quoters may request these by providing their CAGE code and DD-2345 for their data custodian. For instructions on how to register for JCP please go to https://www.dla.mil/Logistics-Operations/Services/JCP/ . Anticipated Award Date: April 2026 Contracting Officer: Lorraine Small / Lorraine.m.small.civ@us.navy.mil",
+  "detail_text_length": 1259,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a6b67bbe56f4ecdbc141c41977cb737/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9238eb958df44dec8d01c9a0bec1783e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a6b67bbe56f4ecdbc141c41977cb737/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0b8a15f0c8b1d63b69fec6b9573a3a034f38c926428562f8568341880f553b87.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0b8a15f0c8b1d63b69fec6b9573a3a034f38c926428562f8568341880f553b87.pdf",
+      "file_id": "4a6b67bbe56f4ecdbc141c41977cb737",
+      "file_name": "1.3.5+N627586028E502+BN_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 393787,
+      "sha256": "0b8a15f0c8b1d63b69fec6b9573a3a034f38c926428562f8568341880f553b87"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9238eb958df44dec8d01c9a0bec1783e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/58ca968c66adc6256bd5caf7c6c96846ab4ba26c2b8e26e9358fd6567336fa88.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/58ca968c66adc6256bd5caf7c6c96846ab4ba26c2b8e26e9358fd6567336fa88.pdf",
+      "file_id": "9238eb958df44dec8d01c9a0bec1783e",
+      "file_name": "2.1.1+26QS225+Sol.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1786345,
+      "sha256": "58ca968c66adc6256bd5caf7c6c96846ab4ba26c2b8e26e9358fd6567336fa88"
+    }
+  ],
+  "_mirror_hash": "185c8490681a85dbabe666fc8cd73e713a4262f3c2128946f85587c99aaa8317",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.845559+00:00"
+}

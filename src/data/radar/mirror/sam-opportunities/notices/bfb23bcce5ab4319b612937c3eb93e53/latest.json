@@ -1,0 +1,46 @@
+{
+  "id": "sam-bfb23bcce5ab4319b612937c3eb93e53",
+  "title": "AI Effects at the Edge Assessment Event",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfb23bcce5ab4319b612937c3eb93e53",
+  "opportunity_url": "https://sam.gov/opp/bfb23bcce5ab4319b612937c3eb93e53/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bfb23bcce5ab4319b612937c3eb93e53/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bfb23bcce5ab4319b612937c3eb93e53",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W519TC-26-AE-AEEA",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY",
+  "posted_date": "2026-04-21",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bfb23bcce5ab4319b612937c3eb93e53",
+  "detail_text": "The Cyber Fusion Innovation Center (CFIC), in collaboration with Army Cyber Command (ARCYBER) Technology and Innovation Center (ArCTIC) is in search of industry expertise for the development of an Artificial Intelligence (AI) / Machine Learning (ML) model embedded on a commercial platform. This platform will enable advanced capabilities for modular mission payload (MMP) development and seamless integration with connected sensors. This release documents ArCTIC’s methodology for pursuing, selecting, and assessing such solutions. Please see the attachment for more information.",
+  "detail_text_length": 580,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dde1e7d746bb41648938ad9dbf109e21/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dde1e7d746bb41648938ad9dbf109e21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b074165db99bca7efa8adb0e78affdd1592c720dd54f6712443c4ec25d640074.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b074165db99bca7efa8adb0e78affdd1592c720dd54f6712443c4ec25d640074.docx",
+      "file_id": "dde1e7d746bb41648938ad9dbf109e21",
+      "file_name": "AE+Release+-industry-+-+AI+Effects+at+the+Edge+-AI+for+MMP-+-+2026-06-09+thru+06-11+-SAM.GOV-+updated+date.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4978656,
+      "sha256": "b074165db99bca7efa8adb0e78affdd1592c720dd54f6712443c4ec25d640074"
+    }
+  ],
+  "_mirror_hash": "966f4b78a6428cfb202a69919211827144e81dab317fff26c4abaa8ca7694b50",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.942852+00:00"
+}

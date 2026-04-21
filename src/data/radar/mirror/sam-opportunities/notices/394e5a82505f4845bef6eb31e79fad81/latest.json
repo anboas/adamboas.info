@@ -1,0 +1,46 @@
+{
+  "id": "sam-394e5a82505f4845bef6eb31e79fad81",
+  "title": "USCGC STURGEON (WPB-(87336) DS FY27",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=394e5a82505f4845bef6eb31e79fad81",
+  "opportunity_url": "https://sam.gov/opp/394e5a82505f4845bef6eb31e79fad81/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/394e5a82505f4845bef6eb31e79fad81/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "394e5a82505f4845bef6eb31e79fad81",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70Z08027QSTURGEON",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 1(00080)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=394e5a82505f4845bef6eb31e79fad81",
+  "detail_text": "This SOURCES SOUGHT NOTICE is for market research purposes only and does not constitute a Request for Proposal or Quotation. It is not considered to be a commitment by the Government to award a contract nor will the Government pay for any information provided; no basis for claim against the Government shall arise as a result from a response to this Sources Sought Notice or Government use of any information provided.",
+  "detail_text_length": 419,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce6820fabf774cbe8db355d84c4a1b74/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ce6820fabf774cbe8db355d84c4a1b74/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3be6094e06e60af0ab376a305dc4c1b85f6647e3847a1a8427ce40838ff1fd41.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3be6094e06e60af0ab376a305dc4c1b85f6647e3847a1a8427ce40838ff1fd41.pdf",
+      "file_id": "ce6820fabf774cbe8db355d84c4a1b74",
+      "file_name": "70Z08027QSTURGEON_SourcesSought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 430148,
+      "sha256": "3be6094e06e60af0ab376a305dc4c1b85f6647e3847a1a8427ce40838ff1fd41"
+    }
+  ],
+  "_mirror_hash": "24107b3d09501f2dab2b1903de33b811bd6909f80dbbd29ee8caa09f543e759a",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:39.021036+00:00"
+}

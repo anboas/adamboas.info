@@ -1,0 +1,46 @@
+{
+  "id": "sam-347022a2e03141c79fa3876098ee3277",
+  "title": "Z2DA--Project 537-26-702  Chicago, IL.  EHRM DDPO Installation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=347022a2e03141c79fa3876098ee3277",
+  "opportunity_url": "https://sam.gov/opp/347022a2e03141c79fa3876098ee3277/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/347022a2e03141c79fa3876098ee3277/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "347022a2e03141c79fa3876098ee3277",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C77626Q0183",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.PCAC (36C776)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=347022a2e03141c79fa3876098ee3277",
+  "detail_text": "The Department of Veterans Affairs (VA), Veterans Health Administration (VHA), Program Contracting Activity Central (PCAC) anticipates soliciting proposals and subsequently awarding a single firm-fixed-price contract for the design-bid-build EHRM Install DDPO Construction Project at the Jesse Brown VA Medical Center (VAMC) located at 820 S. Damen Avenue in Chicago, IL. 60612. PROJECT DESCRIPTION The contractor shall furnish all labor, materials and equipment to prepare the site identified on the Jesse Brown VA campus for the installation of additional data drops, power outlets and equipment bracing for equipment deployment of the Electronic Health Record (EHR). The contractor shall provide and install normal and emergency power outlets, data drops, and required equipment bracing to support EHR equipment deployment on the Jesse Brown VA campus as shown and described in the project drawings and specifications. A list of data drops and power outlets is provided in the statement of work. ADMINISTRATIVE The solicitation will be potentially be issued as a Request for Proposals (RFP) conducted in accordance with FAR part 12 & 36 and will be evaluated in accordance with the evaluation procedures listed in the solicitation. The solicitation will be issued as a 100% Total Service-Disabled Veteran-Owned Small Business (SDVOSB) set-aside. Offers received from other than SDVOSB concerns will not be considered. The applicable North American Industry Classification System (NAICS) code is 236220 with a size standard of $45.0 million. The solicitation is anticipated to be issued in 3rd quarter of FY 26. The period of performance is approximately 60 calendar days from the issuance of the notice to proceed. In accordance with VAAR 836.204, the magnitude of construction is between $250,000 and $500,000. This notice is not a request for competitive offers. All questions must be submitted in writing to the issuing office via email to the Contract Specialist at Doniver.Hamilton@va.gov.",
+  "detail_text_length": 1997,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1bf0a0bea85944d89648db34a691cff2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1bf0a0bea85944d89648db34a691cff2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c3ef4c6f9bf767f052f6f332a70fb251732411817c454d49a6acff079bf1265a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c3ef4c6f9bf767f052f6f332a70fb251732411817c454d49a6acff079bf1265a.pdf",
+      "file_id": "1bf0a0bea85944d89648db34a691cff2",
+      "file_name": "S02-Presol+notice-36C77626Q0183_1-Chicago+DDPO.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 160059,
+      "sha256": "c3ef4c6f9bf767f052f6f332a70fb251732411817c454d49a6acff079bf1265a"
+    }
+  ],
+  "_mirror_hash": "c0504e52f33b3de59e840a9701a445ba56d24e8d39e042c1789e4787977db1f8",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.995137+00:00"
+}

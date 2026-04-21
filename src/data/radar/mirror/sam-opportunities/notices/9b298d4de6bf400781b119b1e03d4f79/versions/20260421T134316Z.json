@@ -1,0 +1,57 @@
+{
+  "id": "sam-9b298d4de6bf400781b119b1e03d4f79",
+  "title": "TRANSCOM Reference Data Management (TRDM)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9b298d4de6bf400781b119b1e03d4f79",
+  "opportunity_url": "https://sam.gov/opp/9b298d4de6bf400781b119b1e03d4f79/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9b298d4de6bf400781b119b1e03d4f79/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9b298d4de6bf400781b119b1e03d4f79",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "TRANSCOM26D003",
+  "agency_path": "DEPT OF DEFENSE.US TRANSPORTATION COMMAND (USTRANSCOM).USTRANSCOM-AQ",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9b298d4de6bf400781b119b1e03d4f79",
+  "detail_text": "TRDM provides a single distribution source of enterprise reference data for enhancing C2, transportation, logistics, deployment, and financial systems’ reference data management and functional data collection. The scope of TRDM requires the contractor to perform current technical & Cybersecurity operations, maintenance, and distribution of the TRDM system and data while modernizing the architecture. These tasks include but are not limited to requirement analysis, data collection, data management, interface and architecture validation, and data distribution. Requests and requirements fielded by TRDM require contractor expertise on implementation, fielding, planning, scheduling, interoperability testing, documentation, and other key tasks defined in the software development lifecycle.",
+  "detail_text_length": 793,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b25b1d2b07114310972054ba1ad8ae0b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7aa5fac4a544e698599f74aec0bf609/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b25b1d2b07114310972054ba1ad8ae0b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/45f7af4ed5ed522c51aaefdae3bcde549ec15065fb289d993e6952dcc80ec123.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/45f7af4ed5ed522c51aaefdae3bcde549ec15065fb289d993e6952dcc80ec123.pdf",
+      "file_id": "b25b1d2b07114310972054ba1ad8ae0b",
+      "file_name": "Atch+1+-TRDM+Condensed+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 208491,
+      "sha256": "45f7af4ed5ed522c51aaefdae3bcde549ec15065fb289d993e6952dcc80ec123"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7aa5fac4a544e698599f74aec0bf609/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/69f0f218a6aabee2ba8ce3c746dd7ce51c4348d98d07e6aaf57e0f002c255509.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/69f0f218a6aabee2ba8ce3c746dd7ce51c4348d98d07e6aaf57e0f002c255509.pdf",
+      "file_id": "b7aa5fac4a544e698599f74aec0bf609",
+      "file_name": "TRDM+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 219297,
+      "sha256": "69f0f218a6aabee2ba8ce3c746dd7ce51c4348d98d07e6aaf57e0f002c255509"
+    }
+  ],
+  "_mirror_hash": "d0d1ab0e265249dafa3f21813768cba861050dc10074d804cff8dc1da2978309",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.992240+00:00"
+}

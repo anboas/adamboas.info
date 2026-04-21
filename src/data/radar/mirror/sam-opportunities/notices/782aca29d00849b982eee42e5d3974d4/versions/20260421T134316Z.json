@@ -1,0 +1,68 @@
+{
+  "id": "sam-782aca29d00849b982eee42e5d3974d4",
+  "title": "Teleradiology Physician Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=782aca29d00849b982eee42e5d3974d4",
+  "opportunity_url": "https://sam.gov/opp/782aca29d00849b982eee42e5d3974d4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/782aca29d00849b982eee42e5d3974d4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "782aca29d00849b982eee42e5d3974d4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0678",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=782aca29d00849b982eee42e5d3974d4",
+  "detail_text": "The Contractor shall furnish all key personnel to provide services necessary to perform Teleradiology Physician Services to eligible beneficiaries of the Department of Veterans Affairs (VA) and the NMVAHCS. The VA Radiology Services follow the standards & guidelines set forth by American College of Radiology (ACR) Practice Parameters and Technical Standards | American College of Radiology (acr.org). A contractor providing tele-radiology services shall provide services consistent with the Joint Commission (TJC) and that meet or exceed the VA and the ACR Guidelines. SEE ATTACHED SUPPORTING DOCUMENTS.",
+  "detail_text_length": 605,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47da7171e862472a8cc159040ad23d25/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8877d6f1b315417ea3e29294523f9046/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7f84ac8a7d64aef914a96cfe50eb40c/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47da7171e862472a8cc159040ad23d25/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7dd68d9e5a8c5583a1f4e7ec36989eca8c364949a06b5b86e511a66450e03bb6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7dd68d9e5a8c5583a1f4e7ec36989eca8c364949a06b5b86e511a66450e03bb6.pdf",
+      "file_id": "47da7171e862472a8cc159040ad23d25",
+      "file_name": "PWS+-+Teleradiology+Physician+Services+-+NMVAHCS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 377216,
+      "sha256": "7dd68d9e5a8c5583a1f4e7ec36989eca8c364949a06b5b86e511a66450e03bb6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8877d6f1b315417ea3e29294523f9046/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7d94a125f63be73f4e660584bef96c46cb2482aded470bdf23ce2377eab360b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7d94a125f63be73f4e660584bef96c46cb2482aded470bdf23ce2377eab360b.pdf",
+      "file_id": "8877d6f1b315417ea3e29294523f9046",
+      "file_name": "RFI+36C26226Q0678+-+Teleradiology+Physician+Services+-+NMVAHCS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 298747,
+      "sha256": "f7d94a125f63be73f4e660584bef96c46cb2482aded470bdf23ce2377eab360b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7f84ac8a7d64aef914a96cfe50eb40c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3042b4dfc45f2789a546863116be2625b79aa838f35528fddb3a7421420c6a8a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3042b4dfc45f2789a546863116be2625b79aa838f35528fddb3a7421420c6a8a.xlsx",
+      "file_id": "c7f84ac8a7d64aef914a96cfe50eb40c",
+      "file_name": "Estimated+Number+of+CPT+Codes+-+NMVAHCS.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14681,
+      "sha256": "3042b4dfc45f2789a546863116be2625b79aa838f35528fddb3a7421420c6a8a"
+    }
+  ],
+  "_mirror_hash": "1bbadfcce752a172f136f651f208fa07dd3d68c9a02a83ca2401ecc72be6be57",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.969317+00:00"
+}

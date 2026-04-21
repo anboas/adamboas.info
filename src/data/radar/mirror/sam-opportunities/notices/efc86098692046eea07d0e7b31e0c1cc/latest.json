@@ -1,0 +1,46 @@
+{
+  "id": "sam-efc86098692046eea07d0e7b31e0c1cc",
+  "title": "7910--Floor / Vacuum  578-26-2-6969-0256",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efc86098692046eea07d0e7b31e0c1cc",
+  "opportunity_url": "https://sam.gov/opp/efc86098692046eea07d0e7b31e0c1cc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/efc86098692046eea07d0e7b31e0c1cc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "efc86098692046eea07d0e7b31e0c1cc",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C25226Q0407",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.252-NETWORK CONTRACT OFFICE 12 (36C252)",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efc86098692046eea07d0e7b31e0c1cc",
+  "detail_text": "This is a pre-solicitation notice for 36C25226Q407",
+  "detail_text_length": 50,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d00967adbcc4f8f8cad037d5975d3a3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d00967adbcc4f8f8cad037d5975d3a3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9a62358ce942a444d09dbee0578cd03f06ec716f6df75f8d841ac2ccb6a98a21.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9a62358ce942a444d09dbee0578cd03f06ec716f6df75f8d841ac2ccb6a98a21.docx",
+      "file_id": "1d00967adbcc4f8f8cad037d5975d3a3",
+      "file_name": "36C25226Q0407_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14390,
+      "sha256": "9a62358ce942a444d09dbee0578cd03f06ec716f6df75f8d841ac2ccb6a98a21"
+    }
+  ],
+  "_mirror_hash": "90952f280e75764c35cace1afc1baaa78506b14fd86d87e9d42a740d4eaa0c1b",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.897464+00:00"
+}

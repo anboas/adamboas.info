@@ -1,0 +1,46 @@
+{
+  "id": "sam-b98b2dfc43bf4a339dd72db32113bdef",
+  "title": "99--Notice Regarding Dept. of the Interior, IBC, AQD to close contracts utilizing R",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b98b2dfc43bf4a339dd72db32113bdef",
+  "opportunity_url": "https://sam.gov/opp/b98b2dfc43bf4a339dd72db32113bdef/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b98b2dfc43bf4a339dd72db32113bdef/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b98b2dfc43bf4a339dd72db32113bdef",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DOIDFBO260045",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-21",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b98b2dfc43bf4a339dd72db32113bdef",
+  "detail_text": "The Department of the Interior, Interior Business Center (IBC), Acquisition Services Directorate (AQD) plans to proceed with the closeout of contracts in accordance with FAR 4.308. The contracts listed in the attachment have an expired period of performance, are fully invoiced, and have a remaining balance of zero dollars. This notice serves as advance notification to the vendors identified in the attached contract list regarding the upcoming closeout action. Unilateral contract closeout will begin ten business days after the posting of this announcement. If you prefer a bilateral contract closeout modification or have a valid reason why we should not proceed with the closeout, please contact the point of contact (POC) listed in this announcement before the closing date",
+  "detail_text_length": 780,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d939ac196fd4066ad6d5b21df8bed8e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3d939ac196fd4066ad6d5b21df8bed8e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e035992d201de7ceb5eee361303701d55320160519bfddd5c938285493b9bae.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e035992d201de7ceb5eee361303701d55320160519bfddd5c938285493b9bae.pdf",
+      "file_id": "3d939ac196fd4066ad6d5b21df8bed8e",
+      "file_name": "Bot_to_Close_Complete_List_21_Apr_26_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98318,
+      "sha256": "9e035992d201de7ceb5eee361303701d55320160519bfddd5c938285493b9bae"
+    }
+  ],
+  "_mirror_hash": "4d66026e7411c1f899d88ba95afdfcd0415e94daea48a7b003f79e599e0053ab",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:39.005634+00:00"
+}

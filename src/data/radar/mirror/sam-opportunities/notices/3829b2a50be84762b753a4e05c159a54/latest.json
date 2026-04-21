@@ -1,0 +1,67 @@
+{
+  "id": "sam-3829b2a50be84762b753a4e05c159a54",
+  "title": "N0038326RH051",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3829b2a50be84762b753a4e05c159a54",
+  "opportunity_url": "https://sam.gov/opp/3829b2a50be84762b753a4e05c159a54/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3829b2a50be84762b753a4e05c159a54/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3829b2a50be84762b753a4e05c159a54",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326RH051",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-21",
+  "response_deadline": "2026-06-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3829b2a50be84762b753a4e05c159a54",
+  "detail_text": "This requirement is for the renewal of a five year repair Long term Contract (LTC). The LTC renewal will be for a term of five years and cover three NIINs listed below. NOMEN: REC-TRANS RADAR NIIN:015687044 QTY: 16 NOMEN: RECEIVER-TRANSMITTE NIIN: 014813659 QTY: 44 NOMEN: RA,AIRCRAFT,MATERIANIIN: 016465802 QTY: 96 NAVSUP WSS intends on awarding sole source to BAE (Cage 0D0D0), and that the lack of response from any other source will consider them to be not interested. All items listed are AMC 3C to sole source vendor under the authority of FAR 6.302-1. Government source approval is required for award. If you are not an approved source, you must submit, together with your proposal, the information detailed in the NAVSUP Source Approval Request (SAR) Brochure which can be obtained on the internet at: https://www.navsup.navy.mil/Business-Opportunities/Home/ Proposals received which fail to provide all of the data required by the SAR brochure will not be considered for award under this solicitation. Please note, if evaluation of a source approval request submitted hereunder cannot be processed in time and/or approval requirements preclude the ability to obtain subject items in time to meet Government requirements, award of requirement may be continued based on Fleet support needs.",
+  "detail_text_length": 1297,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d0e86baade94cc2bad735b6efed77a3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3021343b1bd346aba5e563782d0f7cb7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d572a8887f1c4f5fbc209607d6a4f972/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d0e86baade94cc2bad735b6efed77a3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a9d598045f48204a0687909706a9536a5faef84f0c8fe87ec30ab7a1424e4e7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a9d598045f48204a0687909706a9536a5faef84f0c8fe87ec30ab7a1424e4e7.pdf",
+      "file_id": "0d0e86baade94cc2bad735b6efed77a3",
+      "file_name": "Solicitation+-+N0038326RH051.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2763871,
+      "sha256": "4a9d598045f48204a0687909706a9536a5faef84f0c8fe87ec30ab7a1424e4e7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3021343b1bd346aba5e563782d0f7cb7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/53be0bd9a5b412aabf791b174195a5a07281f7c5be43cf4c86404cc23a84ffb9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/53be0bd9a5b412aabf791b174195a5a07281f7c5be43cf4c86404cc23a84ffb9.pdf",
+      "file_id": "3021343b1bd346aba5e563782d0f7cb7",
+      "file_name": "1106239256_PKG.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 407608,
+      "sha256": "53be0bd9a5b412aabf791b174195a5a07281f7c5be43cf4c86404cc23a84ffb9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d572a8887f1c4f5fbc209607d6a4f972/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/498a08da839f223828a44feca0768bcce666e24a7e5c03c160299906cad05ac6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/498a08da839f223828a44feca0768bcce666e24a7e5c03c160299906cad05ac6.pdf",
+      "file_id": "d572a8887f1c4f5fbc209607d6a4f972",
+      "file_name": "1106239256_EXHIBIT_A.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 402910,
+      "sha256": "498a08da839f223828a44feca0768bcce666e24a7e5c03c160299906cad05ac6"
+    }
+  ],
+  "_mirror_hash": "0bf62c3abc51718ff1e38a427993dc04f8a127f5969b475fe34567df27291832",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.888917+00:00"
+}

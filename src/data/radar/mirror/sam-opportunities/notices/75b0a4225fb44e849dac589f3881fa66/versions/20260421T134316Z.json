@@ -1,0 +1,57 @@
+{
+  "id": "sam-75b0a4225fb44e849dac589f3881fa66",
+  "title": "Elevator Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75b0a4225fb44e849dac589f3881fa66",
+  "opportunity_url": "https://sam.gov/opp/75b0a4225fb44e849dac589f3881fa66/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/75b0a4225fb44e849dac589f3881fa66/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "75b0a4225fb44e849dac589f3881fa66",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA462626ElevatorMaintenance",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4626  341 CONS  LGC",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=75b0a4225fb44e849dac589f3881fa66",
+  "detail_text": "The Contractor shall provide all management, tools, supplies, equipment, parts and labor necessary to maintain, repair, and inspect the real property vertical transportation equipment (VTE) at Malmstrom Air Force Base (MAFB), both on the main base and at remote Missile Alert Facilities (MAFs), in a manner that will ensure continuous and safe operation (full maintenance and repair with the exception of the exclusions listed in paragraph 2 below). NOTE: The term “VTE” in this Performance Work Statement (PWS) includes all equipment listed in Appendix B: freight and passenger elevators, escalators, and may include wheelchair/stair lifts, dock levelers, and dumbwaiters in accordance with the Performance Work Statement.",
+  "detail_text_length": 723,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e4cf68024d34c229445dee0664a1d99/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36b798620e5d4f4b8a6b61e434e7d414/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0e4cf68024d34c229445dee0664a1d99/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7d75eab874609faab5de015eaf04da959f6767390a812bea7c3e6335b8cfb53.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7d75eab874609faab5de015eaf04da959f6767390a812bea7c3e6335b8cfb53.pdf",
+      "file_id": "0e4cf68024d34c229445dee0664a1d99",
+      "file_name": "25D0007_atch1_PWS+Malmstrom+Elevators2025.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 702942,
+      "sha256": "f7d75eab874609faab5de015eaf04da959f6767390a812bea7c3e6335b8cfb53"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36b798620e5d4f4b8a6b61e434e7d414/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03ad55033ca5ee7e64618ec04a46a326e384c0074a8b46562f027594f2986cac.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03ad55033ca5ee7e64618ec04a46a326e384c0074a8b46562f027594f2986cac.docx",
+      "file_id": "36b798620e5d4f4b8a6b61e434e7d414",
+      "file_name": "Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29312,
+      "sha256": "03ad55033ca5ee7e64618ec04a46a326e384c0074a8b46562f027594f2986cac"
+    }
+  ],
+  "_mirror_hash": "e7d4cb35c1ec9d89c23378bce241c7e1a037fbdb0bb8b4d5f706fb588cb19ecd",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.916500+00:00"
+}

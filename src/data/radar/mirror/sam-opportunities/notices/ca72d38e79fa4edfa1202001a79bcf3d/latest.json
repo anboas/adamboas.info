@@ -1,0 +1,45 @@
+{
+  "id": "sam-ca72d38e79fa4edfa1202001a79bcf3d",
+  "title": "REDUCING TEE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca72d38e79fa4edfa1202001a79bcf3d",
+  "opportunity_url": "https://sam.gov/opp/ca72d38e79fa4edfa1202001a79bcf3d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ca72d38e79fa4edfa1202001a79bcf3d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ca72d38e79fa4edfa1202001a79bcf3d",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926QB042",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-04-21",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca72d38e79fa4edfa1202001a79bcf3d",
+  "detail_text": "Please see attached for details. This solicitation is intended only for sources duly authorized to operate and do business in Japan, as prescribed by DFARS 252.225-7042. Prime Contractors outside of Japan must submit documentation that unambiguously demonstrates the Offer's compliance with DFARS 252.225-7042 (e.g. proof of incorporation) as part of their offer.",
+  "detail_text_length": 363,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa74989e2f7b43698fb89898ddb4687b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa74989e2f7b43698fb89898ddb4687b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/895d6e0a5ad3a95d2ec285e3470cc604af7122106418c6e77c77575151acc203.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/895d6e0a5ad3a95d2ec285e3470cc604af7122106418c6e77c77575151acc203.pdf",
+      "file_id": "aa74989e2f7b43698fb89898ddb4687b",
+      "file_name": "Solicitation+-+N6264926QB042+for+Tee+Reducing.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 291531,
+      "sha256": "895d6e0a5ad3a95d2ec285e3470cc604af7122106418c6e77c77575151acc203"
+    }
+  ],
+  "_mirror_hash": "d72b0da7db7696385424418af75f40e8f789c062b78913b3b3ffdffaa1087808",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.857228+00:00"
+}

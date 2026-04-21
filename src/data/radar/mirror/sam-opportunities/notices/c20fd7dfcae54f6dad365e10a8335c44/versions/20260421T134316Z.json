@@ -1,0 +1,111 @@
+{
+  "id": "sam-c20fd7dfcae54f6dad365e10a8335c44",
+  "title": "Advance Cockpit System (ACS) LTC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c20fd7dfcae54f6dad365e10a8335c44",
+  "opportunity_url": "https://sam.gov/opp/c20fd7dfcae54f6dad365e10a8335c44/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c20fd7dfcae54f6dad365e10a8335c44/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c20fd7dfcae54f6dad365e10a8335c44",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038325RE050",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-20",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c20fd7dfcae54f6dad365e10a8335c44",
+  "detail_text": "This solicitation is for the repair of four items, two WRA's and two SRA's within the ACS for the F-18 for a three (3) year base with two (2), one (1) year options, reuqirements type contract. See attached solicitation for additional details.",
+  "detail_text_length": 242,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fa980074b584e798ea06b8447660a83/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28a0302b807c4f2b968e9e61993a3dcf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43ef5719fc7442ef96d76d3afbb83351/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/794980711246450dbecb5f2c1f629a25/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9e1fe680812437d89d55360574c5d39/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de75995db72443a9927254928ef97278/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0fcb49ac1dc43b8b2a63d05a5879bd0/download"
+  ],
+  "resource_count": 7,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fa980074b584e798ea06b8447660a83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f02f494e96c82d1f01fa2ea2b022acdb8d89ddcbb9b9138c1f5646dc86e312b3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f02f494e96c82d1f01fa2ea2b022acdb8d89ddcbb9b9138c1f5646dc86e312b3.pdf",
+      "file_id": "0fa980074b584e798ea06b8447660a83",
+      "file_name": "Att+1+-+Item+List+and+Forecast.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 504274,
+      "sha256": "f02f494e96c82d1f01fa2ea2b022acdb8d89ddcbb9b9138c1f5646dc86e312b3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28a0302b807c4f2b968e9e61993a3dcf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7778fa0528027019dbc59c60ea565cd68d19adbf9d7d118d14381afdf96f0f05.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7778fa0528027019dbc59c60ea565cd68d19adbf9d7d118d14381afdf96f0f05.pdf",
+      "file_id": "28a0302b807c4f2b968e9e61993a3dcf",
+      "file_name": "Att+2+-+Packaging.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 812177,
+      "sha256": "7778fa0528027019dbc59c60ea565cd68d19adbf9d7d118d14381afdf96f0f05"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43ef5719fc7442ef96d76d3afbb83351/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bbc9e9037a22eb35deeee09edba63e49f86e11d48eee017bedf167bae5d7805e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bbc9e9037a22eb35deeee09edba63e49f86e11d48eee017bedf167bae5d7805e.pdf",
+      "file_id": "43ef5719fc7442ef96d76d3afbb83351",
+      "file_name": "Solicitation+-+N0038326RE050.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2820023,
+      "sha256": "bbc9e9037a22eb35deeee09edba63e49f86e11d48eee017bedf167bae5d7805e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/794980711246450dbecb5f2c1f629a25/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f0c2db8a1426b27b28d6475e98683f0569e12e21f0a262da9b85fa706b8605d0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f0c2db8a1426b27b28d6475e98683f0569e12e21f0a262da9b85fa706b8605d0.pdf",
+      "file_id": "794980711246450dbecb5f2c1f629a25",
+      "file_name": "Att+4+-+CSDR+Plan+and+CDRLs+RFP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1009443,
+      "sha256": "f0c2db8a1426b27b28d6475e98683f0569e12e21f0a262da9b85fa706b8605d0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9e1fe680812437d89d55360574c5d39/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9bbfd69c4f6e5ac718f9b0ee15b7c4a780aeb408f30950e8d1bd3e1648357c96.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9bbfd69c4f6e5ac718f9b0ee15b7c4a780aeb408f30950e8d1bd3e1648357c96.pdf",
+      "file_id": "d9e1fe680812437d89d55360574c5d39",
+      "file_name": "3.04+Solicitation+Amendment+-+N0038326RE0500001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2805552,
+      "sha256": "9bbfd69c4f6e5ac718f9b0ee15b7c4a780aeb408f30950e8d1bd3e1648357c96"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/de75995db72443a9927254928ef97278/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/23042172d53dcf528c961f07bb5cabb0d3cbec080a7412463ac2e8e72cfb91cb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/23042172d53dcf528c961f07bb5cabb0d3cbec080a7412463ac2e8e72cfb91cb.pdf",
+      "file_id": "de75995db72443a9927254928ef97278",
+      "file_name": "Att+3+-+LAD-LPHUD+Repair+Definitions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 151233,
+      "sha256": "23042172d53dcf528c961f07bb5cabb0d3cbec080a7412463ac2e8e72cfb91cb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0fcb49ac1dc43b8b2a63d05a5879bd0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/10d286f07dc8a5748b44e85505520d26a425e12edf689daaa533a8f5c3248ab7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/10d286f07dc8a5748b44e85505520d26a425e12edf689daaa533a8f5c3248ab7.pdf",
+      "file_id": "f0fcb49ac1dc43b8b2a63d05a5879bd0",
+      "file_name": "3.04+Solicitation+Amendment+N0038326RE0500001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 875415,
+      "sha256": "10d286f07dc8a5748b44e85505520d26a425e12edf689daaa533a8f5c3248ab7"
+    }
+  ],
+  "_mirror_hash": "84dc809476c3c768e837db314c5a19a003f7a8aef935033892fdfcbe974b4396",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.874332+00:00"
+}

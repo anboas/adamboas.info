@@ -1,0 +1,78 @@
+{
+  "id": "sam-bde3d9c657db4d648335017aeaefdec9",
+  "title": "USS MIGUEL KEITH (ESB 5) MTA A0002",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bde3d9c657db4d648335017aeaefdec9",
+  "opportunity_url": "https://sam.gov/opp/bde3d9c657db4d648335017aeaefdec9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bde3d9c657db4d648335017aeaefdec9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bde3d9c657db4d648335017aeaefdec9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926RL004",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-04-21",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bde3d9c657db4d648335017aeaefdec9",
+  "detail_text": "USS MIGUEL KEITH (ESB 5) Mid-Term Availability (MTA). Place of Performance: Thailand or Singapore. Contractor must be MSRA/ABR holder. Please see attached solicitation. If interested in submitting a proposal, please contact via email at Hipolito.p.ferrer.civ@us.navy.mil for the solicitation attachments, including the specifications and references to be sent separately via DoDSafe email.",
+  "detail_text_length": 389,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a51f3c9f17f4171860f2fa7b81bd86d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5fff844611b147d997555da385e47f64/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/828c7a8cbe504983ad1f55e8c1ba16df/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc1f2b2de5574f5196c3e829ed320660/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a51f3c9f17f4171860f2fa7b81bd86d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ebdbe7f1e0101c8a7764a540cee0eebfaa899fb29f73f4bfca7c45e80044e318.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ebdbe7f1e0101c8a7764a540cee0eebfaa899fb29f73f4bfca7c45e80044e318.pdf",
+      "file_id": "5a51f3c9f17f4171860f2fa7b81bd86d",
+      "file_name": "Solicitation+Amendment+N6264926RL0040001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 582770,
+      "sha256": "ebdbe7f1e0101c8a7764a540cee0eebfaa899fb29f73f4bfca7c45e80044e318"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5fff844611b147d997555da385e47f64/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15794f12a50be2dc000f17ca76a8fbca28304896aa5656821ce63189344d63f9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15794f12a50be2dc000f17ca76a8fbca28304896aa5656821ce63189344d63f9.pdf",
+      "file_id": "5fff844611b147d997555da385e47f64",
+      "file_name": "Solicitation+Amendment+N6264926RL0040002+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 578954,
+      "sha256": "15794f12a50be2dc000f17ca76a8fbca28304896aa5656821ce63189344d63f9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/828c7a8cbe504983ad1f55e8c1ba16df/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c3cff4c06b5e7ef174b252a00fed388d09871ec3aef0d6c3a483788ac10b842d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c3cff4c06b5e7ef174b252a00fed388d09871ec3aef0d6c3a483788ac10b842d.pdf",
+      "file_id": "828c7a8cbe504983ad1f55e8c1ba16df",
+      "file_name": "N6264926RL004+A0001+MIGUEL+KEITH+Continuation+Sheet.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 136262,
+      "sha256": "c3cff4c06b5e7ef174b252a00fed388d09871ec3aef0d6c3a483788ac10b842d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dc1f2b2de5574f5196c3e829ed320660/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0d0481a7524abfc2a2e7d5a515f7d04a400352bfa49c5827e9615b410256cca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0d0481a7524abfc2a2e7d5a515f7d04a400352bfa49c5827e9615b410256cca.pdf",
+      "file_id": "dc1f2b2de5574f5196c3e829ed320660",
+      "file_name": "Solicitation+-+N6264926RL004.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2648579,
+      "sha256": "b0d0481a7524abfc2a2e7d5a515f7d04a400352bfa49c5827e9615b410256cca"
+    }
+  ],
+  "_mirror_hash": "7b063ad9fdc4c566e1ac08ba183b8b13769ff56e5646a33dacb2fc5e1dcbff54",
+  "_mirror_run_id": "20260421T134316Z",
+  "_mirror_recorded_at": "2026-04-21T13:48:38.875503+00:00"
+}
