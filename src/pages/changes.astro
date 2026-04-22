@@ -35,13 +35,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.89',
+		date: '2026-04-22',
+		title: 'Resume body regeneration: clearance + phone + bold writing titles now visible in PDF',
+		summary: 'Regenerated the canonical site resume PDF from source so requested updates are visible in the document body, not just surrounding site metadata.',
+		impact: 'The downloadable `adam-boas-resume.pdf` now visibly shows phone and clearance in the header, and writing entries render with bold titles.',
+		current: true,
+		tags: ['resume', 'pdf', 'metadata', 'writing', 'fix'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Regenerated `public/files/adam-boas-resume.pdf` from `Whitepaper/memos/adam-boas-resume/tex/memo.tex` with visible header updates: phone `(301) 904-2011` and `Clearance: Top Secret`.',
+					'Updated writing section styling in the generated resume to use bold writing titles.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Kept PDF document metadata aligned with request (`Subject: Top Secret`, `Keywords: Clearance: Top Secret`).',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.88',
 		date: '2026-04-22',
 		title: 'Resume metadata clearance + contact phone + bold writing titles',
 		summary: 'Updated resume-facing metadata language to include clearance context, added direct phone contact across key pages, and made writing card titles fully bold for stronger scan contrast.',
 		impact: 'Resume links now surface clearance status more explicitly, visitors can call directly from key contact surfaces, and writing lists are easier to scan at speed.',
-		current: true,
 		tags: ['resume', 'metadata', 'contact', 'writing', 'ux'],
 		groups: [
 			{
