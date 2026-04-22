@@ -39,13 +39,39 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.93',
+		date: '2026-04-22',
+		title: 'Removed public form-submission analytics surface from site',
+		summary: 'Removed the public lead-funnel status page and all site navigation links to form-submission analytics so this data is no longer exposed on the website.',
+		impact: 'Form-submission funnel analytics are no longer publicly available on adamboas.com.',
+		current: true,
+		tags: ['privacy', 'analytics', 'status', 'forms', 'cleanup'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `/status/leads/` route from published pages.',
+					'Removed `Lead funnel analytics` quick route from `/status/`.',
+					'Removed `Lead Funnel Status` link from `/sitemap/` utility links.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.92',
 		date: '2026-04-22',
 		title: 'Analytics representation upgrade: Pareto, heatmap, risk chart, and trend panel',
 		summary: 'Upgraded `/status/site-analytics/` with stronger decision-first visual representations while keeping the existing compact house style and detailed tables.',
 		impact: 'The dashboard now answers concentration, section coverage, off-sitemap risk, and momentum questions at a glance without sacrificing route-level drilldown.',
-		current: true,
 		tags: ['analytics', 'graphs', 'plausible', 'sitemap', 'design-language'],
 		groups: [
 			{
