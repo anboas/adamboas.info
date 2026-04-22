@@ -1,8 +1,25 @@
 const ALL_TYPES = ['paper', 'note', 'memo'];
 const PAGE_SIZE = 10;
+const SHOW_TAGS_STORAGE_KEY = 'writing:index:show-tags';
 
 function norm(s) {
 	return (s ?? '').toString().trim().toLowerCase();
+}
+
+function readShowTagsPref() {
+	try {
+		return window.localStorage.getItem(SHOW_TAGS_STORAGE_KEY) === '1';
+	} catch {
+		return false;
+	}
+}
+
+function writeShowTagsPref(value) {
+	try {
+		window.localStorage.setItem(SHOW_TAGS_STORAGE_KEY, value ? '1' : '0');
+	} catch {
+		// no-op
+	}
 }
 
 function getTypeToggles() {
@@ -65,6 +82,16 @@ if (!root) {
 
 	let currentPage = 1;
 	let currentTotalPages = 1;
+
+	function setTagVisibility(showTags, { persist = false } = {}) {
+		root.classList.toggle('writing-tags-hidden', !showTags);
+		const toggleBtn = root.querySelector('[data-writing-tags-toggle]');
+		if (toggleBtn) {
+			toggleBtn.setAttribute('aria-pressed', showTags ? 'true' : 'false');
+			toggleBtn.textContent = showTags ? 'Hide tags' : 'Show tags';
+		}
+		if (persist) writeShowTagsPref(showTags);
+	}
 
 	function syncFromUrl() {
 		const url = new URL(window.location.href);
@@ -212,6 +239,12 @@ if (!root) {
 	const clearBtn = document.querySelector('[data-writing-clear]');
 	if (clearBtn) clearBtn.addEventListener('click', () => clearFilters());
 
+	const tagsToggleBtn = root.querySelector('[data-writing-tags-toggle]');
+	tagsToggleBtn?.addEventListener('click', () => {
+		const showTags = tagsToggleBtn.getAttribute('aria-pressed') !== 'true';
+		setTagVisibility(showTags, { persist: true });
+	});
+
 	pageFirst?.addEventListener('click', () => {
 		if (currentPage <= 1) return;
 		currentPage = 1;
@@ -237,5 +270,6 @@ if (!root) {
 	});
 
 	syncFromUrl();
+	setTagVisibility(readShowTagsPref());
 	applyFilter({ preservePage: true });
 }

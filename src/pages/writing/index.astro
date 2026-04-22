@@ -39,11 +39,13 @@ const items = [
 	.filter((x) => !!x.slug)
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
+const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
+
 ---
 
 <SiteLayout title="Writing | Adam Boas" description="Notes, memos, and papers." image="/og/writing.png">
 	<StickyBrowseBar active="writing" />
-	<div data-writing-index>
+	<div data-writing-index class="writing-tags-hidden">
 		<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
 		<div class="writing-index-controls control-shell card mt-3 p-2.5 md:mt-4 md:p-3">
 			<div class="control-shell-row flex flex-wrap items-center gap-2 md:gap-3">
@@ -57,6 +59,9 @@ const items = [
 					<label class="sr-only" for="writing-search">Search writing</label>
 					<input id="writing-search" data-writing-search data-global-search class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
 					<button type="button" data-writing-clear class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
+					{hasAnyTagChips ? (
+						<button type="button" data-writing-tags-toggle aria-pressed="false" class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900">Show tags</button>
+					) : null}
 					<a class="shrink-0 inline-flex h-8 items-center text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
 				</div>
 			</div>
@@ -98,7 +103,7 @@ const items = [
 										</li>
 									) : null}
 									{w.tags?.map((t) => (
-										<li class="writing-mobile-hide-tags">
+										<li class="writing-tag-chip" data-writing-tag-chip>
 											<button
 												type="button"
 												data-writing-tag={t}
@@ -135,9 +140,7 @@ const items = [
 </SiteLayout>
 
 <style>
-	@media (max-width: 767px) {
-		.writing-mobile-hide-tags {
-			display: none;
-		}
+	[data-writing-index].writing-tags-hidden [data-writing-tag-chip] {
+		display: none;
 	}
 </style>
