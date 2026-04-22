@@ -37,13 +37,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.91',
+		date: '2026-04-22',
+		title: 'Site analytics graphs pass: visual bars for coverage and route traffic',
+		summary: 'Added graph-style visualizations to the sitemap analytics dashboard so key route and coverage signals can be scanned instantly without parsing only tables.',
+		impact: 'Faster readout of route performance and sitemap coverage at a glance, with direct visual emphasis on traffic concentration and off-sitemap drift.',
+		current: true,
+		tags: ['analytics', 'graphs', 'plausible', 'sitemap', 'status'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `Coverage graph` bars showing viewed vs zero-view sitemap route split.',
+					'Added `Top routes graph` horizontal bar visualization for top sitemap paths.',
+					'Added off-sitemap path mini-graph bars above the off-sitemap table for quick anomaly scanning.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `/status/site-analytics/` layout to pair KPI cards with visual graph sections while preserving detailed tables.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.90',
 		date: '2026-04-22',
 		title: 'Site analytics dashboard: Plausible traffic mapped to sitemap routes',
 		summary: 'Added a new status dashboard that maps Plausible route traffic against sitemap coverage, highlighting top routes, zero-view pages, and off-sitemap tracked paths.',
 		impact: 'Gives fast visibility into what content is actually being discovered/visited versus what is published in the sitemap, helping prioritize SEO and internal linking work.',
-		current: true,
 		tags: ['analytics', 'plausible', 'sitemap', 'status', 'seo'],
 		groups: [
 			{

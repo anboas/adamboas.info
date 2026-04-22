@@ -67,6 +67,37 @@ const topRows = Array.isArray(rows.topSitemap) ? rows.topSitemap.slice(0, 50) : 
 const zeroRows = Array.isArray(rows.zeroViewSitemap) ? rows.zeroViewSitemap.slice(0, 120) : [];
 const offRows = Array.isArray(rows.offSitemap) ? rows.offSitemap.slice(0, 80) : [];
 const invalidRows = Array.isArray(rows.invalidTrackedPaths) ? rows.invalidTrackedPaths.slice(0, 80) : [];
+
+const zeroViewCount = Math.max(kpi.totalSitemapPages - kpi.pagesWithViews, 0);
+const coverageRows = [
+	{ label: 'With views', value: kpi.pagesWithViews, tone: 'ok' },
+	{ label: 'Zero-view', value: zeroViewCount, tone: 'quiet' },
+].map((row) => ({
+	...row,
+	pct: kpi.totalSitemapPages ? Number(((row.value / kpi.totalSitemapPages) * 100).toFixed(1)) : 0,
+}));
+
+const topChartRows = topRows.slice(0, 12);
+const topChartMax = topChartRows.reduce((max, row) => Math.max(max, n(row.pageviews)), 0);
+const topChart = topChartRows.map((row) => {
+	const views = n(row.pageviews);
+	return {
+		path: row.path,
+		views,
+		pct: topChartMax ? Number(((views / topChartMax) * 100).toFixed(1)) : 0,
+	};
+});
+
+const offChartRows = offRows.slice(0, 8);
+const offChartMax = offChartRows.reduce((max, row) => Math.max(max, n(row.pageviews)), 0);
+const offChart = offChartRows.map((row) => {
+	const views = n(row.pageviews);
+	return {
+		path: row.path,
+		views,
+		pct: offChartMax ? Number(((views / offChartMax) * 100).toFixed(1)) : 0,
+	};
+});
 ---
 
 <SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots.">
@@ -125,6 +156,52 @@ const invalidRows = Array.isArray(rows.invalidTrackedPaths) ? rows.invalidTracke
 		</article>
 	</section>
 
+	<section class="mt-4 grid gap-4 lg:grid-cols-2">
+		<article class="card control-shell p-4">
+			<div class="flex flex-wrap items-end justify-between gap-2">
+				<h2 class="section-title">Coverage graph</h2>
+				<p class="text-xs text-slate-400">Sitemap visibility split</p>
+			</div>
+			<div class="coverage-stack mt-3">
+				{coverageRows.map((row) => (
+					<div class="coverage-row">
+						<div class="coverage-row-head">
+							<span>{row.label}</span>
+							<strong>{row.value.toLocaleString()} · {row.pct}%</strong>
+						</div>
+						<div class="coverage-track" aria-hidden="true">
+							<div class:list={['coverage-fill', row.tone === 'ok' ? 'coverage-fill-ok' : 'coverage-fill-quiet']} style={`width:${Math.max(row.pct, row.value > 0 ? 1 : 0)}%`}></div>
+						</div>
+					</div>
+				))}
+			</div>
+		</article>
+
+		<article class="card control-shell p-4">
+			<div class="flex flex-wrap items-end justify-between gap-2">
+				<h2 class="section-title">Top routes graph</h2>
+				<p class="text-xs text-slate-400">Top {topChart.length} vs highest route</p>
+			</div>
+			{topChart.length ? (
+				<div class="bar-stack mt-3">
+					{topChart.map((row) => (
+						<div class="bar-row">
+							<div class="bar-head">
+								<span>{row.path}</span>
+								<strong>{row.views.toLocaleString()}</strong>
+							</div>
+							<div class="bar-track" aria-hidden="true">
+								<div class="bar-fill" style={`width:${Math.max(row.pct, row.views > 0 ? 1 : 0)}%`}></div>
+							</div>
+						</div>
+					))}
+				</div>
+			) : (
+				<p class="mt-3 text-sm text-slate-300">No route graph data yet.</p>
+			)}
+		</article>
+	</section>
+
 	<section class="card control-shell mt-4 p-4">
 		<div class="flex flex-wrap items-end justify-between gap-2">
 			<h2 class="section-title">Top sitemap routes</h2>
@@ -177,24 +254,39 @@ const invalidRows = Array.isArray(rows.invalidTrackedPaths) ? rows.invalidTracke
 				<p class="text-xs text-slate-400">Top {offRows.length} by pageviews</p>
 			</div>
 			{offRows.length ? (
-				<div class="table-wrap mt-3">
-					<table class="status-table">
-						<thead>
-							<tr>
-								<th>Path</th>
-								<th>Pageviews</th>
-							</tr>
-						</thead>
-						<tbody>
-							{offRows.map((row) => (
+				<>
+					<div class="bar-stack mt-3">
+						{offChart.map((row) => (
+							<div class="bar-row">
+								<div class="bar-head">
+									<span>{row.path}</span>
+									<strong>{row.views.toLocaleString()}</strong>
+								</div>
+								<div class="bar-track" aria-hidden="true">
+									<div class="bar-fill bar-fill-warning" style={`width:${Math.max(row.pct, row.views > 0 ? 1 : 0)}%`}></div>
+								</div>
+							</div>
+						))}
+					</div>
+					<div class="table-wrap mt-3">
+						<table class="status-table">
+							<thead>
 								<tr>
-									<td>{row.path}</td>
-									<td>{n(row.pageviews).toLocaleString()}</td>
+									<th>Path</th>
+									<th>Pageviews</th>
 								</tr>
-							))}
-						</tbody>
-					</table>
-				</div>
+							</thead>
+							<tbody>
+								{offRows.map((row) => (
+									<tr>
+										<td>{row.path}</td>
+										<td>{n(row.pageviews).toLocaleString()}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+				</>
 			) : (
 				<p class="mt-3 text-sm text-slate-300">No off-sitemap paths in this snapshot.</p>
 			)}
@@ -256,6 +348,58 @@ const invalidRows = Array.isArray(rows.invalidTrackedPaths) ? rows.invalidTracke
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.42rem;
+	}
+	.coverage-stack,
+	.bar-stack {
+		display: grid;
+		gap: 0.5rem;
+	}
+	.coverage-row,
+	.bar-row {
+		display: grid;
+		gap: 0.22rem;
+	}
+	.coverage-row-head,
+	.bar-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 0.5rem;
+		font-size: 0.75rem;
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.coverage-row-head span,
+	.bar-head span {
+		overflow-wrap: anywhere;
+		color: rgba(203, 213, 225, 0.95);
+	}
+	.coverage-row-head strong,
+	.bar-head strong {
+		color: rgba(125, 211, 252, 0.96);
+		white-space: nowrap;
+		font-weight: 600;
+	}
+	.coverage-track,
+	.bar-track {
+		height: 0.52rem;
+		border-radius: 999px;
+		background: rgba(15, 23, 42, 0.96);
+		border: 1px solid rgba(51, 65, 85, 0.72);
+		overflow: hidden;
+	}
+	.coverage-fill,
+	.bar-fill {
+		height: 100%;
+		background: rgba(56, 189, 248, 0.95);
+	}
+	.coverage-fill-ok {
+		background: rgba(45, 212, 191, 0.95);
+	}
+	.coverage-fill-quiet {
+		background: rgba(71, 85, 105, 0.9);
+	}
+	.bar-fill-warning {
+		background: rgba(251, 191, 36, 0.95);
 	}
 	.table-wrap {
 		overflow: auto;
