@@ -13,6 +13,9 @@ export type EducationItem = {
 	year?: string;
 };
 
+export const CONTACT_PHONE = '(301) 904-2011';
+export const RESUME_CLEARANCE = 'Top Secret';
+
 // Keep these in one place so the homepage section + dedicated pages stay in sync.
 export const experience: ExperienceItem[] = [
 	{

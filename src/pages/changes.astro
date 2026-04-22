@@ -34,13 +34,47 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.88',
+		date: '2026-04-22',
+		title: 'Resume metadata clearance + contact phone + bold writing titles',
+		summary: 'Updated resume-facing metadata language to include clearance context, added direct phone contact across key pages, and made writing card titles fully bold for stronger scan contrast.',
+		impact: 'Resume links now surface clearance status more explicitly, visitors can call directly from key contact surfaces, and writing lists are easier to scan at speed.',
+		current: true,
+		tags: ['resume', 'metadata', 'contact', 'writing', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `CONTACT_PHONE` and `RESUME_CLEARANCE` shared resume constants for reuse across pages.',
+					'Added direct click-to-call actions (`tel:`) on homepage and contact page.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated resume metadata display in sitemap/download surfaces to include `Clearance: Top Secret`.',
+					'Added phone + clearance context on resume-adjacent homepage/experience surfaces.',
+					'Made writing list card titles bold on homepage, writing index, and sitemap writing entries.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Enhanced Person structured-data payload with direct telephone metadata.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.87',
 		date: '2026-04-22',
 		title: 'Writing controls pass 2: sticky active filters + keyboard shortcuts + regression coverage',
 		summary: 'Continued writing UX hardening with a sticky active-filter strip, built-in keyboard shortcuts for common actions, and dedicated Playwright regression tests for writing controls and URL sync behavior.',
 		impact: 'Faster power-user flow on `/writing/`, clearer active-filter state while browsing long lists, and stronger guardrails against regressions in quick filters/type toggles.',
-		current: true,
 		tags: ['writing', 'ux', 'shortcuts', 'testing', 'filters'],
 		groups: [
 			{

@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { withBase } from '../utils/withBase';
 import { getPdfMeta, type PdfMeta } from '../utils/pdfMeta';
+import { RESUME_CLEARANCE } from '../data/resume';
 
 type WritingItem = {
 	title: string;
@@ -56,7 +57,7 @@ const papers = await Promise.all(
 const publishedWriting = [...papers, ...writing].sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
 const resumePdfPath = '/files/adam-boas-resume.pdf';
-const resumePdfMetaText = formatPdfMeta(await getPdfMeta(resumePdfPath));
+const resumePdfMetaText = [formatPdfMeta(await getPdfMeta(resumePdfPath)), `Clearance: ${RESUME_CLEARANCE}`].filter(Boolean).join(' • ');
 ---
 
 <SiteLayout
@@ -118,7 +119,7 @@ const resumePdfMetaText = formatPdfMeta(await getPdfMeta(resumePdfPath));
 					<li class="border border-slate-800 bg-slate-950/40 p-3 sm:p-4">
 						<div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
 							<div class="min-w-0">
-								<p class="sitemap-item-title text-sm font-semibold text-slate-100">{item.title}</p>
+								<p class="sitemap-item-title text-sm font-bold text-slate-100">{item.title}</p>
 								<div class="mt-1 flex flex-wrap items-center gap-2 text-xs tracking-wide">
 									<span class:list={['writing-type-pill', `writing-type-${item.type}`, 'rounded-full', 'border', 'px-2', 'py-0.5', 'text-[10px]', 'uppercase', 'tracking-wide']}>
 										{item.type}

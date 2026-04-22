@@ -2,7 +2,7 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { getCollection } from 'astro:content';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
-import { education, experience } from '../data/resume';
+import { CONTACT_PHONE, RESUME_CLEARANCE, education, experience } from '../data/resume';
 import { withBase } from '../utils/withBase';
 import WritingCompactCard from '../components/WritingCompactCard.astro';
 
@@ -63,6 +63,7 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 			url: 'https://www.adamboas.com/',
 			sameAs: ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'],
 			jobTitle: 'Solutions Architect',
+			telephone: CONTACT_PHONE,
 			description: SITE_DESCRIPTION,
 		})}
 	/>
@@ -95,6 +96,7 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 						Start project
 					</a>
 					<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="ui-link-btn px-4 text-sm font-semibold">Email direct</a>
+					<a data-track="Contact: Phone Click" href="tel:+13019042011" class="ui-link-btn px-4 text-sm font-semibold">{CONTACT_PHONE}</a>
 				</div>
 				<div class="mt-3 flex flex-wrap items-center gap-2 text-xs text-slate-400">
 					<span class="uppercase tracking-wide text-slate-500">Quick intents</span>
@@ -173,9 +175,12 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 		<div class="card p-6">
 			<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
 				<h2 class="section-title">Experience</h2>
-				<div class="flex items-center gap-3 text-sm font-semibold">
-					<a href={withBase('/files/adam-boas-resume.pdf')} class="text-stone-100 hover:text-stone-50">Latest resume PDF →</a>
-					<a href={withBase('/experience/')} class="text-stone-100 hover:text-stone-50">Experience pages →</a>
+				<div class="flex flex-col items-start gap-1 text-sm font-semibold">
+					<div class="flex items-center gap-3">
+						<a href={withBase('/files/adam-boas-resume.pdf')} class="text-stone-100 hover:text-stone-50">Latest resume PDF →</a>
+						<a href={withBase('/experience/')} class="text-stone-100 hover:text-stone-50">Experience pages →</a>
+					</div>
+					<span class="text-[11px] font-normal uppercase tracking-wide text-slate-400">Clearance: {RESUME_CLEARANCE}</span>
 				</div>
 			</div>
 
