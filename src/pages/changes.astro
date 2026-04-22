@@ -30,12 +30,37 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.78',
+		date: '2026-04-21',
+		title: 'Mobile writing cards now hide tag chips',
+		summary: 'Adjusted `/writing/` card metadata on small screens so topic tags are hidden while the positive audio badge remains visible.',
+		impact: 'Cleaner mobile scan and less card crowding without removing the audio-availability signal.',
+		current: true,
+		tags: ['writing', 'mobile', 'ux', 'responsive'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Added mobile-only hiding for writing-card tag chips (`.writing-mobile-hide-tags`) at widths <= 767px.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Preserved the `🎧 audio` badge on mobile so audio availability remains explicit while tags are suppressed.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.77',
 		date: '2026-04-21',
 		title: 'Homepage declutter + shared UI primitives + overflow hardening',
 		summary: 'Removed the redundant home `Jump to` panel and standardized button/pill styling across contact, status, leads, and capability pages using shared global UI classes.',
 		impact: 'Cleaner homepage hierarchy, tighter cross-page visual consistency, and stronger resilience against long-text overflow on key status/capability surfaces.',
-		current: true,
 		tags: ['home', 'ux', 'consistency', 'responsive', 'overflow', 'status', 'capabilities', 'contact'],
 		groups: [
 			{

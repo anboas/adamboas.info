@@ -98,7 +98,7 @@ const items = [
 										</li>
 									) : null}
 									{w.tags?.map((t) => (
-										<li>
+										<li class="writing-mobile-hide-tags">
 											<button
 												type="button"
 												data-writing-tag={t}
@@ -133,3 +133,11 @@ const items = [
 		</p>
 	</div>
 </SiteLayout>
+
+<style>
+	@media (max-width: 767px) {
+		.writing-mobile-hide-tags {
+			display: none;
+		}
+	}
+</style>
