@@ -131,10 +131,6 @@ if (!root) {
 	let currentTotalPages = 1;
 	const quickState = { hasAudio: false, recent30: false };
 
-	function isPapersOnlySelected() {
-		const selected = getSelectedTypes().map(norm);
-		return selected.length === 1 && selected[0] === 'paper';
-	}
 
 	function setQuickBtn(name, value) {
 		const btn = root.querySelector(`[data-writing-quick="${name}"]`);
@@ -142,9 +138,6 @@ if (!root) {
 		btn.setAttribute('aria-pressed', value ? 'true' : 'false');
 	}
 
-	function syncPapersOnlyQuick() {
-		setQuickBtn('papers-only', isPapersOnlySelected());
-	}
 
 	function setDensityMode(mode) {
 		const normalized = mode === 'compact' ? 'compact' : 'comfortable';
@@ -188,7 +181,6 @@ if (!root) {
 			quick: {
 				hasAudio: quickState.hasAudio,
 				recent30: quickState.recent30,
-				papersOnly: isPapersOnlySelected(),
 			},
 		});
 	}
@@ -205,7 +197,7 @@ if (!root) {
 		const urlTypes = parseTypesFromUrl(url);
 		if (urlTypes?.length) {
 			setSelectedTypes(urlTypes);
-		} else if (prefs?.quick?.papersOnly) {
+		} else if (parseBoolFlag(url, 'papers') || prefs?.quick?.papersOnly) {
 			setSelectedTypes(['paper']);
 		} else if (Array.isArray(prefs.types) && prefs.types.length) {
 			setSelectedTypes(prefs.types.filter((x) => ALL_TYPES.includes(norm(x))));
@@ -219,7 +211,6 @@ if (!root) {
 		quickState.recent30 = parseBoolFlag(url, 'recent') ?? Boolean(prefs?.quick?.recent30);
 		setQuickBtn('has-audio', quickState.hasAudio);
 		setQuickBtn('recent-30', quickState.recent30);
-		syncPapersOnlyQuick();
 		currentPage = parsePageFromUrl(url);
 		setTagVisibility(readShowTagsPref());
 	}
@@ -230,7 +221,6 @@ if (!root) {
 		const selected = getSelectedTypes();
 		const sortMode = getSortMode();
 		const densityMode = getDensityMode();
-		const papersOnly = isPapersOnlySelected();
 
 		if (selected.length === ALL_TYPES.length) {
 			url.searchParams.delete('types');
@@ -257,8 +247,7 @@ if (!root) {
 		if (quickState.recent30) url.searchParams.set('recent', '1');
 		else url.searchParams.delete('recent');
 
-		if (papersOnly) url.searchParams.set('papers', '1');
-		else url.searchParams.delete('papers');
+		url.searchParams.delete('papers');
 
 		window.history.replaceState({}, '', url);
 	}
@@ -270,7 +259,6 @@ if (!root) {
 		quickState.recent30 = false;
 		setQuickBtn('has-audio', false);
 		setQuickBtn('recent-30', false);
-		syncPapersOnlyQuick();
 		setSortMode(DEFAULT_SORT);
 		setDensityMode(DEFAULT_DENSITY);
 		currentPage = 1;
@@ -284,7 +272,6 @@ if (!root) {
 		const q = norm(searchInput?.value);
 		const sortMode = getSortMode();
 		const densityMode = getDensityMode();
-		const papersOnly = isPapersOnlySelected();
 		chips.innerHTML = '';
 		const mk = (label, onClick) => {
 			const b = document.createElement('button');
@@ -303,13 +290,6 @@ if (!root) {
 			});
 		}
 
-		if (papersOnly) {
-			mk('Papers only', () => {
-				setSelectedTypes(ALL_TYPES);
-				currentPage = 1;
-				applyFilter({ preservePage: true });
-			});
-		}
 
 		if (quickState.hasAudio) {
 			mk('Has audio', () => {
@@ -380,7 +360,6 @@ if (!root) {
 	function applyFilter({ preservePage = false } = {}) {
 		const q = norm(searchInput?.value);
 		const selected = new Set(getSelectedTypes());
-		const papersOnly = isPapersOnlySelected();
 		if (!preservePage) currentPage = 1;
 
 		const now = Date.now();
@@ -398,7 +377,6 @@ if (!root) {
 			if (q && !(title.includes(q) || tags.includes(q))) return false;
 			if (quickState.hasAudio && !hasAudio) return false;
 			if (quickState.recent30 && (!dateMs || dateMs < recentThreshold)) return false;
-			if (papersOnly && elType !== 'paper') return false;
 			return true;
 		});
 
@@ -416,7 +394,6 @@ if (!root) {
 		}
 
 		if (empty) empty.classList.toggle('hidden', sortedMatches.length !== 0);
-		syncPapersOnlyQuick();
 		renderChips();
 		renderPagination(sortedMatches.length, pageStartIdx, pageEndIdx, totalPages);
 		persistViewState();
@@ -471,14 +448,6 @@ if (!root) {
 	for (const quickBtn of quickBtns) {
 		quickBtn.addEventListener('click', () => {
 			const key = norm(quickBtn.getAttribute('data-writing-quick'));
-			if (key === 'papers-only') {
-				if (isPapersOnlySelected()) setSelectedTypes(ALL_TYPES);
-				else setSelectedTypes(['paper']);
-				currentPage = 1;
-				applyFilter({ preservePage: true });
-				return;
-			}
-
 			if (key === 'has-audio') {
 				quickState.hasAudio = !quickState.hasAudio;
 				setQuickBtn('has-audio', quickState.hasAudio);

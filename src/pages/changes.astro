@@ -29,13 +29,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.83',
+		date: '2026-04-22',
+		title: 'Writing quick filters simplified by removing redundant `Papers only` pill',
+		summary: 'Removed the `Papers only` quick-filter pill from `/writing/` and simplified filter state logic to rely on the existing type toggles for paper-only views.',
+		impact: 'Cleaner controls with less duplicated filtering behavior, while preserving backward compatibility for existing `papers=1` links and saved preferences.',
+		current: true,
+		tags: ['writing', 'ux', 'filters', 'consolidation'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `Papers only` from quick filters since paper-only targeting already exists in the type toggle row.',
+					'Removed duplicate paper-only chip rendering and quick-filter state handling from `writing-index.js`.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Consolidated filter logic and URL normalization by stripping `papers` from rewritten query state while still honoring legacy `papers=1` on initial load.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.82',
 		date: '2026-04-22',
 		title: 'CI/CD fast path for deploys: lighter main-branch deploy workflow + PR-only full regression gate',
 		summary: 'Reduced deploy critical path by replacing heavy Playwright/linkcheck gates in `deploy-dev-pages` with a quick preview smoke check, and moved `build-site` full regression workflow to PR/manual triggers.',
 		impact: 'Main-branch deploys should land materially faster while preserving deep quality gates for pull requests and optional manual runs.',
-		current: true,
 		tags: ['ci', 'deploy', 'workflow', 'performance', 'consolidation'],
 		groups: [
 			{ kind: 'Added', items: [] },
