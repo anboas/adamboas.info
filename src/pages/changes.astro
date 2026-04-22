@@ -30,12 +30,38 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.80',
+		date: '2026-04-22',
+		title: 'Writing audio indicator compacted into the title row',
+		summary: 'Moved the audio indicator from the metadata chip row into a compact inline marker beside each writing title.',
+		impact: 'Audio availability remains visible while card metadata wraps less and no longer burns an entire line for audio-only entries.',
+		current: true,
+		tags: ['writing', 'audio', 'ux', 'density'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced the larger `🎧 audio` metadata pill with a compact inline `🎧` marker in the title row.',
+					'Removed audio from the tag/metadata chip line so tags can occupy that row without audio forcing standalone wrapping.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved card scan density on `/writing/`, especially for entries that previously rendered only an audio pill beneath the summary.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.79',
 		date: '2026-04-22',
 		title: 'Writing index upgraded with canonical tags, quick filters, density controls, and stronger related-reading recommendations',
 		summary: 'Delivered a full `/writing/` UX pass: canonicalized tag routing, added hidden-by-default tag previews with local preference toggles, introduced quick filters + sort + density controls, persisted view preferences in localStorage, and upgraded writing-detail related suggestions to use shared tags plus type-aware fallback logic.',
 		impact: 'Writing discovery is now faster and cleaner by default, tag pages no longer fork on formatting variants, personal browsing preferences persist, and detail pages surface more relevant follow-up reading.',
-		current: true,
 		tags: ['writing', 'tags', 'localstorage', 'ux', 'filters', 'navigation'],
 		groups: [
 			{
