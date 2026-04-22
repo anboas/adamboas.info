@@ -30,12 +30,46 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.79',
+		date: '2026-04-22',
+		title: 'Writing index upgraded with canonical tags, quick filters, density controls, and stronger related-reading recommendations',
+		summary: 'Delivered a full `/writing/` UX pass: canonicalized tag routing, added hidden-by-default tag previews with local preference toggles, introduced quick filters + sort + density controls, persisted view preferences in localStorage, and upgraded writing-detail related suggestions to use shared tags plus type-aware fallback logic.',
+		impact: 'Writing discovery is now faster and cleaner by default, tag pages no longer fork on formatting variants, personal browsing preferences persist, and detail pages surface more relevant follow-up reading.',
+		current: true,
+		tags: ['writing', 'tags', 'localstorage', 'ux', 'filters', 'navigation'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added writing quick filters (`Has audio`, `Papers only`, `Recent 30d`) and card density toggles (`Compact` / `Comfortable`).',
+					'Added per-card subtle `+N tags` preview chips that appear when tags are hidden.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Canonicalized writing tag routing so spacing/hyphen variants share one canonical slug page instead of forking.',
+					'Updated `/writing/tags/` aggregation to merge canonical tag counts and labels by normalized slug.',
+					'Extended related-reading ranking on writing detail pages to weight shared tags + same-type affinity with fallback fill to maintain 3-5 recommendations.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Persisted writing view preferences (type filters, sort, density, quick-filter state) in localStorage while preserving URL state for shareable views.',
+					'Kept controls aligned to existing control-shell/key-pill design language and compact scan rhythm.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.78',
 		date: '2026-04-21',
 		title: 'Mobile writing cards now hide tag chips',
 		summary: 'Adjusted `/writing/` card metadata on small screens so topic tags are hidden while the positive audio badge remains visible.',
 		impact: 'Cleaner mobile scan and less card crowding without removing the audio-availability signal.',
-		current: true,
 		tags: ['writing', 'mobile', 'ux', 'responsive'],
 		groups: [
 			{ kind: 'Added', items: [] },

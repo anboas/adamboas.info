@@ -1,26 +1,58 @@
-export function slugifyTag(tag: string): string {
+function normalizeTagText(tag: string): string {
 	return tag
 		.toLowerCase()
 		.trim()
 		.replace(/&/g, ' and ')
+		.replace(/[_/]+/g, ' ')
+		.replace(/[\u2013\u2014]/g, '-')
+		.replace(/\s+/g, ' ');
+}
+
+export function slugifyTag(tag: string): string {
+	return normalizeTagText(tag)
 		.replace(/[^a-z0-9]+/g, '-')
 		.replace(/-{2,}/g, '-')
 		.replace(/^-+|-+$/g, '');
 }
 
-export function buildTagSlugEntries(tags: Iterable<string>): Array<{ tag: string; slug: string }> {
-	const unique = [...new Set(Array.from(tags))].sort((a, b) => a.localeCompare(b));
-	const used = new Set<string>();
-	const out: Array<{ tag: string; slug: string }> = [];
+function preferTagLabel(current: string, candidate: string): string {
+	const currentHasSpace = /\s/.test(current);
+	const candidateHasSpace = /\s/.test(candidate);
+	if (candidateHasSpace && !currentHasSpace) return candidate;
+	if (candidateHasSpace === currentHasSpace && candidate.length < current.length) return candidate;
+	return current;
+}
 
-	for (const tag of unique) {
-		const base = slugifyTag(tag) || 'tag';
-		let slug = base;
-		let i = 2;
-		while (used.has(slug)) slug = `${base}-${i++}`;
-		used.add(slug);
-		out.push({ tag, slug });
+export type CanonicalTagGroup = {
+	slug: string;
+	label: string;
+	aliases: string[];
+};
+
+export function buildCanonicalTagGroups(tags: Iterable<string>): CanonicalTagGroup[] {
+	const unique = [...new Set(Array.from(tags).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+	const groups = new Map<string, CanonicalTagGroup>();
+
+	for (const rawTag of unique) {
+		const slug = slugifyTag(rawTag) || 'tag';
+		const existing = groups.get(slug);
+		if (!existing) {
+			groups.set(slug, { slug, label: rawTag, aliases: [rawTag] });
+			continue;
+		}
+		existing.label = preferTagLabel(existing.label, rawTag);
+		existing.aliases.push(rawTag);
 	}
 
-	return out;
+	for (const group of groups.values()) {
+		group.aliases = [...new Set(group.aliases)].sort((a, b) => a.localeCompare(b));
+	}
+
+	return [...groups.values()].sort((a, b) => a.label.localeCompare(b.label));
+}
+
+// Backward-compatible shape used in a few pages.
+export function buildTagSlugEntries(tags: Iterable<string>): Array<{ tag: string; slug: string }> {
+	const unique = [...new Set(Array.from(tags).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+	return unique.map((tag) => ({ tag, slug: slugifyTag(tag) || 'tag' }));
 }

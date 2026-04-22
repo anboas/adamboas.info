@@ -93,12 +93,26 @@ let memoGeneratedHtml: string | null = null;
 
 const publishedWriting = (await getCollection('writing'))
 	.filter((w) => w.data.status === 'published')
-	.map((w) => ({ slug: w.id.split('/').pop()!, id: w.id, title: w.data.title, tags: w.data.tags ?? [] }))
+	.map((w) => ({
+		slug: w.id.split('/').pop()!,
+		id: w.id,
+		title: w.data.title,
+		type: w.data.type,
+		tags: w.data.tags ?? [],
+		dateMs: w.data.date?.valueOf?.() ?? 0,
+	}))
 	.sort((a, b) => a.slug.localeCompare(b.slug));
 
 const publishedPapers = (await getCollection('papers'))
 	.filter((p) => p.data.status === 'published')
-	.map((p) => ({ slug: p.id, id: p.id, title: p.data.title, tags: p.data.tags ?? [] }))
+	.map((p) => ({
+		slug: p.id,
+		id: p.id,
+		title: p.data.title,
+		type: 'paper',
+		tags: p.data.tags ?? [],
+		dateMs: p.data.date?.valueOf?.() ?? 0,
+	}))
 	.sort((a, b) => a.slug.localeCompare(b.slug));
 
 const allNav = [...publishedWriting, ...publishedPapers];
@@ -110,19 +124,36 @@ function findNav(slug: string) {
 	return { prev, next };
 }
 
-function relatedByTags(slug: string, tags: string[]) {
-	const tset = new Set(tags);
-	const scored = allNav
+function relatedBySimilarity(slug: string, tags: string[], type: string) {
+	const tagSet = new Set(tags.map((t) => t.toLowerCase()));
+	const candidates = allNav
 		.filter((x) => x.slug !== slug)
-		.map((x) => ({
-			item: x,
-			score: (x.tags ?? []).reduce((n: number, t: string) => n + (tset.has(t) ? 1 : 0), 0),
-		}))
+		.map((x) => {
+			const sharedTags = (x.tags ?? []).reduce((n: number, t: string) => n + (tagSet.has(t.toLowerCase()) ? 1 : 0), 0);
+			const sameType = x.type === type;
+			const score = sharedTags * 10 + (sameType ? 2 : 0);
+			return { item: x, score, sharedTags, sameType };
+		})
 		.filter((x) => x.score > 0)
-		.sort((a, b) => b.score - a.score)
-		.slice(0, 5)
-		.map((x) => x.item);
-	return scored;
+		.sort((a, b) => b.score - a.score || b.item.dateMs - a.item.dateMs || a.item.title.localeCompare(b.item.title));
+
+	const primary = candidates.slice(0, 5).map((x) => x.item);
+	if (primary.length >= 3) return primary;
+
+	const used = new Set(primary.map((x) => x.slug));
+	const sameTypeFallback = allNav
+		.filter((x) => x.slug !== slug && x.type === type && !used.has(x.slug))
+		.sort((a, b) => b.dateMs - a.dateMs || a.title.localeCompare(b.title))
+		.slice(0, 5 - primary.length);
+
+	for (const entry of sameTypeFallback) used.add(entry.slug);
+
+	const genericFallback = allNav
+		.filter((x) => x.slug !== slug && !used.has(x.slug))
+		.sort((a, b) => b.dateMs - a.dateMs || a.title.localeCompare(b.title))
+		.slice(0, Math.max(0, 5 - primary.length - sameTypeFallback.length));
+
+	return [...primary, ...sameTypeFallback, ...genericFallback].slice(0, 5);
 }
 
 if (kind === 'paper') {
@@ -275,7 +306,7 @@ const writingUrl = absoluteUrl('/writing/');
 
 			{(() => {
 				const { prev, next } = findNav(paper.id);
-				const related = relatedByTags(paper.id, paper.data.tags ?? []);
+				const related = relatedBySimilarity(paper.id, paper.data.tags ?? [], 'paper');
 				return (
 					<>
 						<div class="mt-10 flex flex-col gap-3 pt-6 md:flex-row md:justify-between">
@@ -376,9 +407,9 @@ const writingUrl = absoluteUrl('/writing/');
 			</div>
 
 			{(() => {
-				const slug = writingItem.id.split('/').pop();
+				const slug = writingItem.id.split('/').pop() ?? '';
 				const { prev, next } = findNav(slug);
-				const related = relatedByTags(slug, writingItem.data.tags ?? []);
+				const related = relatedBySimilarity(slug, writingItem.data.tags ?? [], writingItem.data.type);
 				return (
 					<>
 						<div class="mt-10 flex flex-col gap-3 pt-6 md:flex-row md:justify-between">

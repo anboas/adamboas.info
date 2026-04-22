@@ -1,6 +1,9 @@
 const ALL_TYPES = ['paper', 'note', 'memo'];
 const PAGE_SIZE = 10;
 const SHOW_TAGS_STORAGE_KEY = 'writing:index:show-tags';
+const VIEW_PREFS_STORAGE_KEY = 'writing:index:view-prefs:v1';
+const DEFAULT_SORT = 'newest';
+const DEFAULT_DENSITY = 'comfortable';
 
 function norm(s) {
 	return (s ?? '').toString().trim().toLowerCase();
@@ -17,6 +20,26 @@ function readShowTagsPref() {
 function writeShowTagsPref(value) {
 	try {
 		window.localStorage.setItem(SHOW_TAGS_STORAGE_KEY, value ? '1' : '0');
+	} catch {
+		// no-op
+	}
+}
+
+function readViewPrefs() {
+	try {
+		const raw = window.localStorage.getItem(VIEW_PREFS_STORAGE_KEY);
+		if (!raw) return null;
+		const parsed = JSON.parse(raw);
+		if (!parsed || typeof parsed !== 'object') return null;
+		return parsed;
+	} catch {
+		return null;
+	}
+}
+
+function writeViewPrefs(prefs) {
+	try {
+		window.localStorage.setItem(VIEW_PREFS_STORAGE_KEY, JSON.stringify(prefs));
 	} catch {
 		// no-op
 	}
@@ -56,13 +79,31 @@ function parseTypesFromUrl(url) {
 		return [legacyType];
 	}
 
-	return [...ALL_TYPES];
+	return null;
 }
 
 function parsePageFromUrl(url) {
 	const raw = Number(url.searchParams.get('page') || '1');
 	if (!Number.isFinite(raw) || raw < 1) return 1;
 	return Math.floor(raw);
+}
+
+function parseSortFromUrl(url) {
+	const sort = norm(url.searchParams.get('sort'));
+	if (sort === 'oldest' || sort === 'title') return sort;
+	return sort === 'newest' ? 'newest' : null;
+}
+
+function parseDensityFromUrl(url) {
+	const density = norm(url.searchParams.get('density'));
+	if (density === 'compact' || density === 'comfortable') return density;
+	return null;
+}
+
+function parseBoolFlag(url, key) {
+	const raw = norm(url.searchParams.get(key));
+	if (!raw) return null;
+	return raw === '1' || raw === 'true' || raw === 'yes';
 }
 
 const root = document.querySelector('[data-writing-index]');
@@ -79,40 +120,123 @@ if (!root) {
 	const pageLast = root.querySelector('[data-writing-page-last]');
 	const pageLabel = root.querySelector('[data-writing-page-label]');
 	const pageStatus = root.querySelector('[data-writing-pagination-status]');
+	const searchInput = root.querySelector('[data-writing-search]');
+	const sortSelect = root.querySelector('[data-writing-sort]');
+	const clearBtn = root.querySelector('[data-writing-clear]');
+	const tagsToggleBtn = root.querySelector('[data-writing-tags-toggle]');
+	const quickBtns = [...root.querySelectorAll('[data-writing-quick]')];
+	const densityBtns = [...root.querySelectorAll('[data-writing-density-toggle]')];
 
 	let currentPage = 1;
 	let currentTotalPages = 1;
+	const quickState = { hasAudio: false, recent30: false };
+
+	function isPapersOnlySelected() {
+		const selected = getSelectedTypes().map(norm);
+		return selected.length === 1 && selected[0] === 'paper';
+	}
+
+	function setQuickBtn(name, value) {
+		const btn = root.querySelector(`[data-writing-quick="${name}"]`);
+		if (!btn) return;
+		btn.setAttribute('aria-pressed', value ? 'true' : 'false');
+	}
+
+	function syncPapersOnlyQuick() {
+		setQuickBtn('papers-only', isPapersOnlySelected());
+	}
+
+	function setDensityMode(mode) {
+		const normalized = mode === 'compact' ? 'compact' : 'comfortable';
+		root.classList.toggle('writing-density-compact', normalized === 'compact');
+		for (const btn of densityBtns) {
+			const btnMode = norm(btn.getAttribute('data-writing-density-toggle'));
+			btn.setAttribute('aria-pressed', btnMode === normalized ? 'true' : 'false');
+		}
+	}
+
+	function getDensityMode() {
+		const compactBtn = root.querySelector('[data-writing-density-toggle="compact"]');
+		return compactBtn?.getAttribute('aria-pressed') === 'true' ? 'compact' : 'comfortable';
+	}
 
 	function setTagVisibility(showTags, { persist = false } = {}) {
 		root.classList.toggle('writing-tags-hidden', !showTags);
-		const toggleBtn = root.querySelector('[data-writing-tags-toggle]');
-		if (toggleBtn) {
-			toggleBtn.setAttribute('aria-pressed', showTags ? 'true' : 'false');
-			toggleBtn.textContent = showTags ? 'Hide tags' : 'Show tags';
+		if (tagsToggleBtn) {
+			tagsToggleBtn.setAttribute('aria-pressed', showTags ? 'true' : 'false');
+			tagsToggleBtn.textContent = showTags ? 'Hide tags' : 'Show tags';
 		}
 		if (persist) writeShowTagsPref(showTags);
 	}
 
-	function syncFromUrl() {
+	function getSortMode() {
+		const value = norm(sortSelect?.value || DEFAULT_SORT);
+		if (value === 'oldest' || value === 'title') return value;
+		return 'newest';
+	}
+
+	function setSortMode(mode) {
+		const safe = mode === 'oldest' || mode === 'title' ? mode : 'newest';
+		if (sortSelect) sortSelect.value = safe;
+	}
+
+	function persistViewState() {
+		writeViewPrefs({
+			types: getSelectedTypes(),
+			sort: getSortMode(),
+			density: getDensityMode(),
+			quick: {
+				hasAudio: quickState.hasAudio,
+				recent30: quickState.recent30,
+				papersOnly: isPapersOnlySelected(),
+			},
+		});
+	}
+
+	function syncFromUrlAndPrefs() {
 		const url = new URL(window.location.href);
-		const q = url.searchParams.get('q');
-		const inp = document.querySelector('[data-writing-search]');
-		if (inp) inp.value = q || '';
-		setSelectedTypes(parseTypesFromUrl(url));
+		const prefs = readViewPrefs() || {};
+
+		if (searchInput) {
+			const query = url.searchParams.get('q') ?? prefs.query ?? '';
+			searchInput.value = query;
+		}
+
+		const urlTypes = parseTypesFromUrl(url);
+		if (urlTypes?.length) {
+			setSelectedTypes(urlTypes);
+		} else if (prefs?.quick?.papersOnly) {
+			setSelectedTypes(['paper']);
+		} else if (Array.isArray(prefs.types) && prefs.types.length) {
+			setSelectedTypes(prefs.types.filter((x) => ALL_TYPES.includes(norm(x))));
+		} else {
+			setSelectedTypes(ALL_TYPES);
+		}
+
+		setSortMode(parseSortFromUrl(url) ?? prefs.sort ?? DEFAULT_SORT);
+		setDensityMode(parseDensityFromUrl(url) ?? prefs.density ?? DEFAULT_DENSITY);
+		quickState.hasAudio = parseBoolFlag(url, 'audio') ?? Boolean(prefs?.quick?.hasAudio);
+		quickState.recent30 = parseBoolFlag(url, 'recent') ?? Boolean(prefs?.quick?.recent30);
+		setQuickBtn('has-audio', quickState.hasAudio);
+		setQuickBtn('recent-30', quickState.recent30);
+		syncPapersOnlyQuick();
 		currentPage = parsePageFromUrl(url);
+		setTagVisibility(readShowTagsPref());
 	}
 
 	function updateUrl() {
 		const url = new URL(window.location.href);
-		const q = norm(document.querySelector('[data-writing-search]')?.value);
+		const q = norm(searchInput?.value);
 		const selected = getSelectedTypes();
+		const sortMode = getSortMode();
+		const densityMode = getDensityMode();
+		const papersOnly = isPapersOnlySelected();
 
 		if (selected.length === ALL_TYPES.length) {
 			url.searchParams.delete('types');
 		} else {
 			url.searchParams.set('types', selected.join(','));
 		}
-
 		url.searchParams.delete('type');
 
 		if (q) url.searchParams.set('q', q);
@@ -121,13 +245,34 @@ if (!root) {
 		if (currentPage > 1) url.searchParams.set('page', String(currentPage));
 		else url.searchParams.delete('page');
 
+		if (sortMode !== DEFAULT_SORT) url.searchParams.set('sort', sortMode);
+		else url.searchParams.delete('sort');
+
+		if (densityMode !== DEFAULT_DENSITY) url.searchParams.set('density', densityMode);
+		else url.searchParams.delete('density');
+
+		if (quickState.hasAudio) url.searchParams.set('audio', '1');
+		else url.searchParams.delete('audio');
+
+		if (quickState.recent30) url.searchParams.set('recent', '1');
+		else url.searchParams.delete('recent');
+
+		if (papersOnly) url.searchParams.set('papers', '1');
+		else url.searchParams.delete('papers');
+
 		window.history.replaceState({}, '', url);
 	}
 
 	function clearFilters() {
-		const inp = document.querySelector('[data-writing-search]');
-		if (inp) inp.value = '';
+		if (searchInput) searchInput.value = '';
 		setSelectedTypes(ALL_TYPES);
+		quickState.hasAudio = false;
+		quickState.recent30 = false;
+		setQuickBtn('has-audio', false);
+		setQuickBtn('recent-30', false);
+		syncPapersOnlyQuick();
+		setSortMode(DEFAULT_SORT);
+		setDensityMode(DEFAULT_DENSITY);
 		currentPage = 1;
 		applyFilter({ preservePage: true });
 	}
@@ -136,7 +281,10 @@ if (!root) {
 		const chips = root.querySelector('[data-writing-chips]');
 		if (!chips) return;
 
-		const q = norm(document.querySelector('[data-writing-search]')?.value);
+		const q = norm(searchInput?.value);
+		const sortMode = getSortMode();
+		const densityMode = getDensityMode();
+		const papersOnly = isPapersOnlySelected();
 		chips.innerHTML = '';
 		const mk = (label, onClick) => {
 			const b = document.createElement('button');
@@ -149,9 +297,49 @@ if (!root) {
 
 		if (q) {
 			mk(`Query: ${q}`, () => {
-				const inp = document.querySelector('[data-writing-search]');
-				if (inp) inp.value = '';
+				if (searchInput) searchInput.value = '';
 				currentPage = 1;
+				applyFilter({ preservePage: true });
+			});
+		}
+
+		if (papersOnly) {
+			mk('Papers only', () => {
+				setSelectedTypes(ALL_TYPES);
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+			});
+		}
+
+		if (quickState.hasAudio) {
+			mk('Has audio', () => {
+				quickState.hasAudio = false;
+				setQuickBtn('has-audio', false);
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+			});
+		}
+
+		if (quickState.recent30) {
+			mk('Recent 30d', () => {
+				quickState.recent30 = false;
+				setQuickBtn('recent-30', false);
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+			});
+		}
+
+		if (sortMode !== DEFAULT_SORT) {
+			mk(`Sort: ${sortMode}`, () => {
+				setSortMode(DEFAULT_SORT);
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+			});
+		}
+
+		if (densityMode !== DEFAULT_DENSITY) {
+			mk(`Density: ${densityMode}`, () => {
+				setDensityMode(DEFAULT_DENSITY);
 				applyFilter({ preservePage: true });
 			});
 		}
@@ -174,26 +362,51 @@ if (!root) {
 		pageStatus.textContent = `${pageStartIdx + 1}-${pageEndIdx} of ${totalMatches}`;
 	}
 
+	function sortCards(matches) {
+		const sortMode = getSortMode();
+		const sorted = [...matches];
+		sorted.sort((a, b) => {
+			const aDate = Number(a.getAttribute('data-date-ms') || 0);
+			const bDate = Number(b.getAttribute('data-date-ms') || 0);
+			const aTitle = norm(a.getAttribute('data-title'));
+			const bTitle = norm(b.getAttribute('data-title'));
+			if (sortMode === 'oldest') return aDate - bDate || aTitle.localeCompare(bTitle);
+			if (sortMode === 'title') return aTitle.localeCompare(bTitle) || bDate - aDate;
+			return bDate - aDate || aTitle.localeCompare(bTitle);
+		});
+		return sorted;
+	}
+
 	function applyFilter({ preservePage = false } = {}) {
-		const q = norm(document.querySelector('[data-writing-search]')?.value);
+		const q = norm(searchInput?.value);
 		const selected = new Set(getSelectedTypes());
+		const papersOnly = isPapersOnlySelected();
 		if (!preservePage) currentPage = 1;
 
+		const now = Date.now();
+		const recentThreshold = now - 30 * 24 * 60 * 60 * 1000;
+
 		const matches = cards.filter((el) => {
-			const t = norm(el.getAttribute('data-title'));
+			const title = norm(el.getAttribute('data-title'));
 			const tags = norm(el.getAttribute('data-tags'));
 			const elType = norm(el.getAttribute('data-type'));
+			const hasAudio = el.getAttribute('data-has-audio') === '1';
+			const dateMs = Number(el.getAttribute('data-date-ms') || 0);
 
 			if (selected.size === 0) return false;
 			if (!selected.has(elType)) return false;
-			if (q && !(t.includes(q) || tags.includes(q))) return false;
+			if (q && !(title.includes(q) || tags.includes(q))) return false;
+			if (quickState.hasAudio && !hasAudio) return false;
+			if (quickState.recent30 && (!dateMs || dateMs < recentThreshold)) return false;
+			if (papersOnly && elType !== 'paper') return false;
 			return true;
 		});
 
-		const totalPages = Math.max(1, Math.ceil(matches.length / PAGE_SIZE));
+		const sortedMatches = sortCards(matches);
+		const totalPages = Math.max(1, Math.ceil(sortedMatches.length / PAGE_SIZE));
 		if (currentPage > totalPages) currentPage = totalPages;
 		const pageStartIdx = (currentPage - 1) * PAGE_SIZE;
-		const pageCards = matches.slice(pageStartIdx, pageStartIdx + PAGE_SIZE);
+		const pageCards = sortedMatches.slice(pageStartIdx, pageStartIdx + PAGE_SIZE);
 		const pageEndIdx = pageStartIdx + pageCards.length;
 
 		for (const el of cards) el.classList.add('hidden');
@@ -202,48 +415,95 @@ if (!root) {
 			if (list) list.appendChild(el);
 		}
 
-		if (empty) empty.classList.toggle('hidden', matches.length !== 0);
+		if (empty) empty.classList.toggle('hidden', sortedMatches.length !== 0);
+		syncPapersOnlyQuick();
 		renderChips();
-		renderPagination(matches.length, pageStartIdx, pageEndIdx, totalPages);
+		renderPagination(sortedMatches.length, pageStartIdx, pageEndIdx, totalPages);
+		persistViewState();
 		updateUrl();
 	}
 
 	function applyTag(tag) {
-		const inp = document.querySelector('[data-writing-search]');
-		if (inp) inp.value = tag;
+		if (searchInput) searchInput.value = tag;
 		currentPage = 1;
 		applyFilter({ preservePage: true });
 	}
 
-	const searchInput = document.querySelector('[data-writing-search]');
-	if (searchInput) {
-		searchInput.addEventListener('input', () => applyFilter());
-		searchInput.addEventListener('change', () => applyFilter());
-	}
+	searchInput?.addEventListener('input', () => applyFilter());
+	searchInput?.addEventListener('change', () => applyFilter());
 
 	for (const btn of getTypeToggles()) {
 		btn.addEventListener('click', () => {
 			const currentlyOn = btn.getAttribute('aria-pressed') !== 'false';
 			btn.setAttribute('aria-pressed', currentlyOn ? 'false' : 'true');
-			applyFilter();
+			currentPage = 1;
+			applyFilter({ preservePage: true });
 		});
 	}
 
 	root.addEventListener('click', (e) => {
-		const btn = e.target?.closest?.('[data-writing-tag]');
-		if (!btn) return;
-		e.preventDefault();
-		applyTag(btn.getAttribute('data-writing-tag') || '');
+		const target = e.target?.closest?.('[data-writing-tag]');
+		if (target) {
+			e.preventDefault();
+			applyTag(target.getAttribute('data-writing-tag') || '');
+			return;
+		}
+
+		const showTagsBtn = e.target?.closest?.('[data-writing-show-tags]');
+		if (showTagsBtn) {
+			e.preventDefault();
+			setTagVisibility(true, { persist: true });
+		}
 	});
 
-	const clearBtn = document.querySelector('[data-writing-clear]');
-	if (clearBtn) clearBtn.addEventListener('click', () => clearFilters());
+	clearBtn?.addEventListener('click', () => clearFilters());
 
-	const tagsToggleBtn = root.querySelector('[data-writing-tags-toggle]');
 	tagsToggleBtn?.addEventListener('click', () => {
 		const showTags = tagsToggleBtn.getAttribute('aria-pressed') !== 'true';
 		setTagVisibility(showTags, { persist: true });
 	});
+
+	sortSelect?.addEventListener('change', () => {
+		currentPage = 1;
+		applyFilter({ preservePage: true });
+	});
+
+	for (const quickBtn of quickBtns) {
+		quickBtn.addEventListener('click', () => {
+			const key = norm(quickBtn.getAttribute('data-writing-quick'));
+			if (key === 'papers-only') {
+				if (isPapersOnlySelected()) setSelectedTypes(ALL_TYPES);
+				else setSelectedTypes(['paper']);
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+				return;
+			}
+
+			if (key === 'has-audio') {
+				quickState.hasAudio = !quickState.hasAudio;
+				setQuickBtn('has-audio', quickState.hasAudio);
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+				return;
+			}
+
+			if (key === 'recent-30') {
+				quickState.recent30 = !quickState.recent30;
+				setQuickBtn('recent-30', quickState.recent30);
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+			}
+		});
+	}
+
+	for (const densityBtn of densityBtns) {
+		densityBtn.addEventListener('click', () => {
+			setDensityMode(densityBtn.getAttribute('data-writing-density-toggle'));
+			persistViewState();
+			updateUrl();
+			renderChips();
+		});
+	}
 
 	pageFirst?.addEventListener('click', () => {
 		if (currentPage <= 1) return;
@@ -269,7 +529,6 @@ if (!root) {
 		applyFilter({ preservePage: true });
 	});
 
-	syncFromUrl();
-	setTagVisibility(readShowTagsPref());
+	syncFromUrlAndPrefs();
 	applyFilter({ preservePage: true });
 }
