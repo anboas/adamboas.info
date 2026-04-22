@@ -321,6 +321,8 @@ if (!root) {
 				applyFilter({ preservePage: true });
 			});
 		}
+
+		chips.classList.toggle('hidden', chips.childElementCount === 0);
 	}
 
 	function renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages) {
@@ -495,6 +497,66 @@ if (!root) {
 		if (currentPage >= currentTotalPages) return;
 		currentPage = currentTotalPages;
 		applyFilter({ preservePage: true });
+	});
+
+	const isTypingTarget = (target) => {
+		if (!target) return false;
+		const tag = String(target.tagName || '').toLowerCase();
+		return tag === 'input' || tag === 'textarea' || tag === 'select' || Boolean(target.isContentEditable);
+	};
+
+	document.addEventListener('keydown', (event) => {
+		if (event.defaultPrevented) return;
+		const key = String(event.key || '').toLowerCase();
+		const typing = isTypingTarget(event.target);
+
+		if (event.key === '/' && !typing) {
+			event.preventDefault();
+			searchInput?.focus();
+			searchInput?.select?.();
+			return;
+		}
+
+		if (typing) return;
+
+		if (key === 'a') {
+			event.preventDefault();
+			quickState.hasAudio = !quickState.hasAudio;
+			setQuickBtn('has-audio', quickState.hasAudio);
+			currentPage = 1;
+			applyFilter({ preservePage: true });
+			return;
+		}
+
+		if (key === 'r') {
+			event.preventDefault();
+			quickState.recent30 = !quickState.recent30;
+			setQuickBtn('recent-30', quickState.recent30);
+			currentPage = 1;
+			applyFilter({ preservePage: true });
+			return;
+		}
+
+		if (key === 'd') {
+			event.preventDefault();
+			setDensityMode(getDensityMode() === 'compact' ? 'comfortable' : 'compact');
+			persistViewState();
+			updateUrl();
+			renderChips();
+			return;
+		}
+
+		if (key === 't' && tagsToggleBtn) {
+			event.preventDefault();
+			const showTags = tagsToggleBtn.getAttribute('aria-pressed') !== 'true';
+			setTagVisibility(showTags, { persist: true });
+			return;
+		}
+
+		if (key === 'x') {
+			event.preventDefault();
+			clearFilters();
+		}
 	});
 
 	syncFromUrlAndPrefs();

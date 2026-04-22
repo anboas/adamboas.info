@@ -85,7 +85,12 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 				</div>
 			</div>
 
-			<div class="flex flex-wrap gap-2 text-xs" data-writing-chips></div>
+			<details class="writing-shortcuts-help mt-2 text-[11px] text-slate-400">
+				<summary class="cursor-pointer select-none hover:text-slate-200">Shortcuts</summary>
+				<p class="mt-1">/ search · a audio · r recent · d density · t tags · x clear</p>
+			</details>
+
+			<div class="writing-active-strip mt-2 flex flex-wrap gap-2 text-xs" data-writing-chips aria-live="polite"></div>
 		</FilterShell>
 		<script type="module" set:html={writingIndexJs}></script>
 
@@ -160,6 +165,23 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 
 <style>
 	[data-writing-index].writing-tags-hidden [data-writing-card-meta] {
+		display: none;
+	}
+
+
+	.writing-active-strip {
+		position: sticky;
+		top: 0.5rem;
+		z-index: 12;
+		min-height: 0;
+		padding-top: 0.1rem;
+	}
+
+	.writing-shortcuts-help > summary {
+		list-style: none;
+	}
+
+	.writing-shortcuts-help > summary::-webkit-details-marker {
 		display: none;
 	}
 

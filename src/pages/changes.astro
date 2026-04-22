@@ -33,13 +33,46 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.87',
+		date: '2026-04-22',
+		title: 'Writing controls pass 2: sticky active filters + keyboard shortcuts + regression coverage',
+		summary: 'Continued writing UX hardening with a sticky active-filter strip, built-in keyboard shortcuts for common actions, and dedicated Playwright regression tests for writing controls and URL sync behavior.',
+		impact: 'Faster power-user flow on `/writing/`, clearer active-filter state while browsing long lists, and stronger guardrails against regressions in quick filters/type toggles.',
+		current: true,
+		tags: ['writing', 'ux', 'shortcuts', 'testing', 'filters'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added writing keyboard shortcuts: `/` search, `a` audio toggle, `r` recent toggle, `d` density toggle, `t` tags toggle, `x` clear filters.',
+					'Added dedicated Playwright suite `tests/writing-regression.spec.ts` covering tooltip metadata, hidden-tag behavior, URL-sync stability, shortcut handling, and type-toggle guardrails.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Promoted active filter chips into a sticky strip for better visibility while scrolling writing results.',
+					'Added inline shortcuts help disclosure in writing controls.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Updated CI Playwright regression command in `build-site` workflow to include writing-control regression coverage.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.86',
 		date: '2026-04-22',
 		title: 'Writing filter tooltip fix + hidden-tag UX cleanup',
 		summary: 'Fixed blank hover popups on writing key pills by requiring explicit tooltip metadata and added missing tooltip text for quick/density controls. Also removed the `+N tags` preview chip when tags are hidden.',
 		impact: 'Tooltips now render meaningful content instead of empty boxes, and hidden-tag mode is cleaner with less visual noise.',
-		current: true,
 		tags: ['writing', 'ux', 'tooltips', 'tags', 'consistency'],
 		groups: [
 			{ kind: 'Added', items: [] },
