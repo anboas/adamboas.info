@@ -34,7 +34,8 @@
     "events:feed-crawl": "python3 scripts/crawl-radar-feed-registry.py",
     "linkcheck:prepare": "node scripts/linkcheck-prepare.mjs",
     "linkcheck:warn": "node scripts/linkcheck-warn.mjs",
-    "linkcheck:suggest": "node scripts/linkcheck-stale-suggestions.mjs"
+    "linkcheck:suggest": "node scripts/linkcheck-stale-suggestions.mjs",
+    "analytics:plausible:sitemap": "node scripts/fetch-plausible-sitemap-analytics.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",

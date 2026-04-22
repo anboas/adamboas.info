@@ -36,13 +36,46 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.90',
+		date: '2026-04-22',
+		title: 'Site analytics dashboard: Plausible traffic mapped to sitemap routes',
+		summary: 'Added a new status dashboard that maps Plausible route traffic against sitemap coverage, highlighting top routes, zero-view pages, and off-sitemap tracked paths.',
+		impact: 'Gives fast visibility into what content is actually being discovered/visited versus what is published in the sitemap, helping prioritize SEO and internal linking work.',
+		current: true,
+		tags: ['analytics', 'plausible', 'sitemap', 'status', 'seo'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `/status/site-analytics/` dashboard with KPI cards and route-level tables for top sitemap traffic, zero-view sitemap pages, and tracked off-sitemap paths.',
+					'Added `scripts/fetch-plausible-sitemap-analytics.mjs` to generate `src/generated/plausible-sitemap-analytics.json` from Plausible pageview snapshots + live sitemap index.',
+					'Added npm task `analytics:plausible:sitemap` for snapshot refresh.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `/status/` quick routes with direct link to the new sitemap traffic analytics view.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Sitemap analytics snapshot now supports fallback generation from local Plausible pageview snapshots when API keys are unavailable in local/dev environments.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.89',
 		date: '2026-04-22',
 		title: 'Resume body regeneration: clearance + phone + bold writing titles now visible in PDF',
 		summary: 'Regenerated the canonical site resume PDF from source so requested updates are visible in the document body, not just surrounding site metadata.',
 		impact: 'The downloadable `adam-boas-resume.pdf` now visibly shows phone and clearance in the header, and writing entries render with bold titles.',
-		current: true,
 		tags: ['resume', 'pdf', 'metadata', 'writing', 'fix'],
 		groups: [
 			{ kind: 'Added', items: [] },

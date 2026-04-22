@@ -1,0 +1,305 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import { withBase } from '../../utils/withBase';
+import sitemapAnalytics from '../../generated/plausible-sitemap-analytics.json';
+
+type Snapshot = {
+	meta?: {
+		generatedAt?: string | null;
+		siteId?: string | null;
+		dateRange?: string | null;
+		note?: string | null;
+		triedSiteIds?: string[];
+		sitemapIndexUrl?: string | null;
+		sitemapLoadError?: string | null;
+		sitemapFiles?: string[];
+	};
+	summary?: {
+		totalSitemapPages?: number;
+		pagesWithViews?: number;
+		coveragePct?: number;
+		totalPageviewsOnSitemap?: number;
+		totalTrackedPaths?: number;
+		trackedOffSitemapCount?: number;
+	};
+	rows?: {
+		topSitemap?: Array<{ path: string; pageviews: number }>;
+		zeroViewSitemap?: Array<{ path: string; pageviews: number }>;
+		offSitemap?: Array<{ path: string; pageviews: number }>;
+		invalidTrackedPaths?: Array<{ path: string; pageviews: number }>;
+	};
+};
+
+const snapshot = (sitemapAnalytics ?? {}) as Snapshot;
+const meta = snapshot.meta ?? {};
+const summary = snapshot.summary ?? {};
+const rows = snapshot.rows ?? {};
+
+function n(value: unknown) {
+	const parsed = Number(value ?? 0);
+	return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function fmtDate(value?: string | null) {
+	if (!value) return '—';
+	const d = new Date(value);
+	if (Number.isNaN(d.getTime())) return '—';
+	return d.toLocaleString(undefined, {
+		year: 'numeric',
+		month: 'short',
+		day: 'numeric',
+		hour: '2-digit',
+		minute: '2-digit',
+	});
+}
+
+const kpi = {
+	totalSitemapPages: n(summary.totalSitemapPages),
+	pagesWithViews: n(summary.pagesWithViews),
+	coveragePct: n(summary.coveragePct),
+	totalPageviewsOnSitemap: n(summary.totalPageviewsOnSitemap),
+	totalTrackedPaths: n(summary.totalTrackedPaths),
+	trackedOffSitemapCount: n(summary.trackedOffSitemapCount),
+};
+
+const topRows = Array.isArray(rows.topSitemap) ? rows.topSitemap.slice(0, 50) : [];
+const zeroRows = Array.isArray(rows.zeroViewSitemap) ? rows.zeroViewSitemap.slice(0, 120) : [];
+const offRows = Array.isArray(rows.offSitemap) ? rows.offSitemap.slice(0, 80) : [];
+const invalidRows = Array.isArray(rows.invalidTrackedPaths) ? rows.invalidTrackedPaths.slice(0, 80) : [];
+---
+
+<SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots.">
+	<StickyBrowseBar active="home" />
+
+	<section class="card control-shell p-5">
+		<div class="flex flex-wrap items-start justify-between gap-3">
+			<div>
+				<h1 class="section-title">Site Analytics Dashboard</h1>
+				<p class="mt-2 text-sm text-slate-300">Plausible traffic mapped to sitemap routes for coverage and routing intelligence.</p>
+			</div>
+			<div class="flex flex-wrap gap-2">
+				<a class="ui-link-btn" href={withBase('/status/')}>Back to status</a>
+				<a class="ui-link-btn" href={meta.sitemapIndexUrl || 'https://www.adamboas.com/sitemap-index.xml'} target="_blank" rel="noreferrer">Open sitemap</a>
+				<a class="ui-link-btn" href="https://plausible.io/" target="_blank" rel="noreferrer">Open Plausible</a>
+			</div>
+		</div>
+
+		<div class="status-meta mt-3">
+			<span class="ui-pill wrap-anywhere">Site: {meta.siteId || '—'}</span>
+			<span class="ui-pill">Window: {meta.dateRange || '30d'}</span>
+			<span class="ui-pill wrap-anywhere">Generated: {fmtDate(meta.generatedAt)}</span>
+			<span class="ui-pill wrap-anywhere">Note: {meta.note || '—'}</span>
+		</div>
+		{meta.sitemapLoadError ? <p class="mt-2 text-xs text-amber-300">Sitemap load warning: {meta.sitemapLoadError}</p> : null}
+	</section>
+
+	<section class="mt-4 grid gap-4 lg:grid-cols-3">
+		<article class="card p-4 status-card">
+			<p class="status-kpi-label">Sitemap pages</p>
+			<p class="status-kpi-value">{kpi.totalSitemapPages}</p>
+		</article>
+		<article class="card p-4 status-card">
+			<p class="status-kpi-label">Pages with views</p>
+			<p class="status-kpi-value">{kpi.pagesWithViews}</p>
+			<p class="status-kpi-sub">Coverage: {kpi.coveragePct}%</p>
+		</article>
+		<article class="card p-4 status-card">
+			<p class="status-kpi-label">Views on sitemap routes</p>
+			<p class="status-kpi-value">{kpi.totalPageviewsOnSitemap.toLocaleString()}</p>
+		</article>
+	</section>
+
+	<section class="mt-4 grid gap-4 lg:grid-cols-3">
+		<article class="card p-4 status-card">
+			<p class="status-kpi-label">Tracked Plausible paths</p>
+			<p class="status-kpi-value">{kpi.totalTrackedPaths}</p>
+		</article>
+		<article class="card p-4 status-card">
+			<p class="status-kpi-label">Tracked off sitemap</p>
+			<p class="status-kpi-value">{kpi.trackedOffSitemapCount}</p>
+		</article>
+		<article class="card p-4 status-card">
+			<p class="status-kpi-label">Invalid tracked rows</p>
+			<p class="status-kpi-value">{invalidRows.length}</p>
+		</article>
+	</section>
+
+	<section class="card control-shell mt-4 p-4">
+		<div class="flex flex-wrap items-end justify-between gap-2">
+			<h2 class="section-title">Top sitemap routes</h2>
+			<p class="text-xs text-slate-400">Top {topRows.length} by pageviews</p>
+		</div>
+		{topRows.length ? (
+			<div class="table-wrap mt-3">
+				<table class="status-table">
+					<thead>
+						<tr>
+							<th>Route</th>
+							<th>Pageviews</th>
+						</tr>
+					</thead>
+					<tbody>
+						{topRows.map((row) => (
+							<tr>
+								<td>{row.path}</td>
+								<td>{n(row.pageviews).toLocaleString()}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		) : (
+			<p class="mt-3 text-sm text-slate-300">No sitemap pageview rows yet.</p>
+		)}
+	</section>
+
+	<section class="mt-4 grid gap-4 lg:grid-cols-2">
+		<article class="card control-shell p-4">
+			<div class="flex flex-wrap items-end justify-between gap-2">
+				<h2 class="section-title">Zero-view sitemap routes</h2>
+				<p class="text-xs text-slate-400">Showing first {zeroRows.length}</p>
+			</div>
+			{zeroRows.length ? (
+				<ul class="route-list mt-3">
+					{zeroRows.map((row) => (
+						<li>{row.path}</li>
+					))}
+				</ul>
+			) : (
+				<p class="mt-3 text-sm text-slate-300">No zero-view routes in this snapshot.</p>
+			)}
+		</article>
+
+		<article class="card control-shell p-4">
+			<div class="flex flex-wrap items-end justify-between gap-2">
+				<h2 class="section-title">Tracked off-sitemap paths</h2>
+				<p class="text-xs text-slate-400">Top {offRows.length} by pageviews</p>
+			</div>
+			{offRows.length ? (
+				<div class="table-wrap mt-3">
+					<table class="status-table">
+						<thead>
+							<tr>
+								<th>Path</th>
+								<th>Pageviews</th>
+							</tr>
+						</thead>
+						<tbody>
+							{offRows.map((row) => (
+								<tr>
+									<td>{row.path}</td>
+									<td>{n(row.pageviews).toLocaleString()}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+			) : (
+				<p class="mt-3 text-sm text-slate-300">No off-sitemap paths in this snapshot.</p>
+			)}
+		</article>
+	</section>
+
+	{invalidRows.length ? (
+		<section class="card control-shell mt-4 p-4">
+			<div class="flex flex-wrap items-end justify-between gap-2">
+				<h2 class="section-title">Invalid tracked paths</h2>
+				<p class="text-xs text-slate-400">Rows dropped during normalization</p>
+			</div>
+			<div class="table-wrap mt-3">
+				<table class="status-table">
+					<thead>
+						<tr>
+							<th>Raw path</th>
+							<th>Pageviews</th>
+						</tr>
+					</thead>
+					<tbody>
+						{invalidRows.map((row) => (
+							<tr>
+								<td>{row.path}</td>
+								<td>{n(row.pageviews).toLocaleString()}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		</section>
+	) : null}
+</SiteLayout>
+
+<style>
+	.status-card {
+		border: 1px solid rgba(51, 65, 85, 0.85);
+		background: rgba(2, 6, 23, 0.9);
+	}
+	.status-kpi-label {
+		font-size: 0.62rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(148, 163, 184, 0.94);
+	}
+	.status-kpi-value {
+		margin-top: 0.3rem;
+		font-size: 1.35rem;
+		line-height: 1.1;
+		font-weight: 700;
+		color: rgba(240, 253, 250, 0.98);
+	}
+	.status-kpi-sub {
+		margin-top: 0.3rem;
+		font-size: 0.74rem;
+		color: rgba(125, 211, 252, 0.95);
+	}
+	.status-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.42rem;
+	}
+	.table-wrap {
+		overflow: auto;
+		border: 1px solid rgba(51, 65, 85, 0.75);
+		background: rgba(2, 6, 23, 0.7);
+	}
+	.status-table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: 0.76rem;
+	}
+	.status-table th,
+	.status-table td {
+		padding: 0.42rem 0.45rem;
+		border-bottom: 1px solid rgba(51, 65, 85, 0.6);
+		text-align: left;
+		white-space: nowrap;
+	}
+	.status-table th:first-child,
+	.status-table td:first-child {
+		white-space: normal;
+		overflow-wrap: anywhere;
+		min-width: 14rem;
+	}
+	.status-table th {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background: rgba(15, 23, 42, 0.95);
+		color: rgba(226, 232, 240, 0.95);
+		font-size: 0.63rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+	}
+	.status-table td {
+		color: rgba(203, 213, 225, 0.96);
+	}
+	.route-list {
+		display: grid;
+		gap: 0.35rem;
+		font-size: 0.8rem;
+		color: rgba(203, 213, 225, 0.95);
+		max-height: 24rem;
+		overflow: auto;
+		padding-right: 0.25rem;
+	}
+</style>
