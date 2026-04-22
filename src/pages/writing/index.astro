@@ -57,7 +57,7 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 
 				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
 					<label class="sr-only" for="writing-search">Search writing</label>
-					<input id="writing-search" data-writing-search data-global-search class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
+					<input id="writing-search" type="search" data-writing-search data-global-search class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" autocomplete="off" spellcheck="false" />
 					<label class="sr-only" for="writing-sort">Sort writing</label>
 					<select id="writing-sort" data-writing-sort class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200">
 						<option value="newest">Newest</option>

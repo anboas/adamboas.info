@@ -131,13 +131,11 @@ if (!root) {
 	let currentTotalPages = 1;
 	const quickState = { hasAudio: false, recent30: false };
 
-
 	function setQuickBtn(name, value) {
 		const btn = root.querySelector(`[data-writing-quick="${name}"]`);
 		if (!btn) return;
 		btn.setAttribute('aria-pressed', value ? 'true' : 'false');
 	}
-
 
 	function setDensityMode(mode) {
 		const normalized = mode === 'compact' ? 'compact' : 'comfortable';
@@ -412,6 +410,7 @@ if (!root) {
 	for (const btn of getTypeToggles()) {
 		btn.addEventListener('click', () => {
 			const currentlyOn = btn.getAttribute('aria-pressed') !== 'false';
+			if (currentlyOn && getSelectedTypes().length === 1) return;
 			btn.setAttribute('aria-pressed', currentlyOn ? 'false' : 'true');
 			currentPage = 1;
 			applyFilter({ preservePage: true });

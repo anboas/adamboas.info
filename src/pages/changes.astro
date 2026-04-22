@@ -30,13 +30,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.84',
+		date: '2026-04-22',
+		title: 'UI/UX consistency coding pass: writing controls hardened + homepage style alignment',
+		summary: 'Applied a focused consistency pass across `/writing/` and homepage sections to tighten filter ergonomics, semantic form behavior, and shared visual language usage.',
+		impact: 'Filter interactions are less error-prone, controls are more accessible/consistent, and homepage section typography + intent chips align better with shared design tokens.',
+		current: true,
+		tags: ['ux', 'consistency', 'writing', 'home', 'accessibility'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Writing type-toggle behavior now prevents disabling the last active type, avoiding accidental zero-result states caused by all-off filters.',
+					'Updated writing search input semantics (`type=search`, `autocomplete=off`, `spellcheck=false`) for cleaner query UX and predictable control behavior.',
+					'Aligned homepage section headings (`Writing`, `Experience`, `Education`) to shared `.section-title` styling.',
+					'Normalized hero quick-intent chip styling to shared pill language (`.ui-pill`) for stronger cross-page consistency.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Cleaned minor homepage markup indentation inconsistencies in the Experience section for readability/maintainability.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.83',
 		date: '2026-04-22',
 		title: 'Writing quick filters simplified by removing redundant `Papers only` pill',
 		summary: 'Removed the `Papers only` quick-filter pill from `/writing/` and simplified filter state logic to rely on the existing type toggles for paper-only views.',
 		impact: 'Cleaner controls with less duplicated filtering behavior, while preserving backward compatibility for existing `papers=1` links and saved preferences.',
-		current: true,
 		tags: ['writing', 'ux', 'filters', 'consolidation'],
 		groups: [
 			{ kind: 'Added', items: [] },
