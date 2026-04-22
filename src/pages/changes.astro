@@ -30,12 +30,45 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.81',
+		date: '2026-04-22',
+		title: 'Homepage writing cards compacted and contact CTA lane consolidated',
+		summary: 'Applied compact writing-card styling to homepage reading sections, added quick-intent contact shortcuts, and consolidated duplicated homepage card markup into a shared component.',
+		impact: 'Homepage scan is denser and cleaner, contact routing is faster for high-intent visitors, and the page now has less duplicated UI code to maintain.',
+		current: true,
+		tags: ['home', 'writing', 'contact', 'ux', 'consolidation'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added hero `Quick intents` shortcuts for `Consulting` and `Proposal support` that prefill `/contact/` intent routing.',
+					'Added reusable `WritingCompactCard` component for homepage writing/featured-card rendering.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated homepage Featured Reading and Writing lists to use compact, title-row signal-first card presentation (inline audio marker, lighter metadata footprint).',
+					'Consolidated engagement CTA lane to reduce duplicated contact actions and keep one clear project-start path.',
+					'Replaced remaining `import.meta.env.BASE_URL` homepage links with `withBase(...)` for path consistency.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Improved homepage maintenance posture by removing duplicated writing-card markup blocks.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.80',
 		date: '2026-04-22',
 		title: 'Writing audio indicator compacted into the title row',
 		summary: 'Moved the audio indicator from the metadata chip row into a compact inline marker beside each writing title.',
 		impact: 'Audio availability remains visible while card metadata wraps less and no longer burns an entire line for audio-only entries.',
-		current: true,
 		tags: ['writing', 'audio', 'ux', 'density'],
 		groups: [
 			{ kind: 'Added', items: [] },
