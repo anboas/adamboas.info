@@ -30,12 +30,38 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.3.82',
+		date: '2026-04-22',
+		title: 'CI/CD fast path for deploys: lighter main-branch deploy workflow + PR-only full regression gate',
+		summary: 'Reduced deploy critical path by replacing heavy Playwright/linkcheck gates in `deploy-dev-pages` with a quick preview smoke check, and moved `build-site` full regression workflow to PR/manual triggers.',
+		impact: 'Main-branch deploys should land materially faster while preserving deep quality gates for pull requests and optional manual runs.',
+		current: true,
+		tags: ['ci', 'deploy', 'workflow', 'performance', 'consolidation'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced deploy-time Playwright regression + strict/warn linkcheck steps with a fast preview smoke check (`/`, `/writing/`, `/events/`).',
+					'Updated `build-site` workflow triggers to `pull_request` + `workflow_dispatch` so full regression gates run where they add the most value before merge.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Removed duplicate heavy checks from the deploy path to shorten push-to-live cycle time on `main`.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.3.81',
 		date: '2026-04-22',
 		title: 'Homepage writing cards compacted and contact CTA lane consolidated',
 		summary: 'Applied compact writing-card styling to homepage reading sections, added quick-intent contact shortcuts, and consolidated duplicated homepage card markup into a shared component.',
 		impact: 'Homepage scan is denser and cleaner, contact routing is faster for high-intent visitors, and the page now has less duplicated UI code to maintain.',
-		current: true,
 		tags: ['home', 'writing', 'contact', 'ux', 'consolidation'],
 		groups: [
 			{
