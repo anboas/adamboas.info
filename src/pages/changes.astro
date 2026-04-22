@@ -32,13 +32,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.86',
+		date: '2026-04-22',
+		title: 'Writing filter tooltip fix + hidden-tag UX cleanup',
+		summary: 'Fixed blank hover popups on writing key pills by requiring explicit tooltip metadata and added missing tooltip text for quick/density controls. Also removed the `+N tags` preview chip when tags are hidden.',
+		impact: 'Tooltips now render meaningful content instead of empty boxes, and hidden-tag mode is cleaner with less visual noise.',
+		current: true,
+		tags: ['writing', 'ux', 'tooltips', 'tags', 'consistency'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Added explicit tooltip copy (`data-tooltip` + `title`) for `Has audio`, `Recent 30d`, `Compact`, and `Comfortable` writing controls.',
+					'Removed per-card `+N tags` preview chips while tags are hidden; hidden mode now suppresses the tag metadata row entirely until tags are shown.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{
+				kind: 'Fixed',
+				items: [
+					'Prevented empty tooltip popovers by scoping tooltip pseudo-elements to `.writing-key-pill[data-tooltip]` only.',
+				],
+			},
+		],
+	},
+
 	{
 		version: 'v2.3.85',
 		date: '2026-04-22',
 		title: 'Pass 2 consistency sweep: events + opportunities filter UX and shared control tokens',
 		summary: 'Improved high-traffic `/events/` and `/opportunities/` surfaces with debounced search input handling, event-type-specific filter listeners, and replacement of page-local action/pill styles with shared global UI tokens.',
 		impact: 'Smoother filter interactions under rapid typing, lower accidental rerender churn, and stronger cross-page visual consistency with less page-specific CSS to maintain.',
-		current: true,
 		tags: ['events', 'opportunities', 'ux', 'consistency', 'performance'],
 		groups: [
 			{ kind: 'Added', items: [] },

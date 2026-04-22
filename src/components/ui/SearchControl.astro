@@ -1,0 +1,29 @@
+---
+interface Props {
+	id: string;
+	label: string;
+	placeholder?: string;
+	class?: string;
+}
+
+const {
+	id,
+	label,
+	placeholder = 'Search',
+	class: className = '',
+	...rest
+} = Astro.props as Props & Record<string, any>;
+---
+
+<label class="block" for={id}>
+	<span class="sr-only">{label}</span>
+	<input
+		id={id}
+		type="search"
+		placeholder={placeholder}
+		autocomplete="off"
+		spellcheck="false"
+		class={className}
+		{...rest}
+	/>
+</label>

@@ -918,7 +918,7 @@ button[data-writing-tag]:hover {
   background: rgba(15, 23, 42, 0.45) !important;
   color: rgba(148, 163, 184, 0.9) !important;
 }
-.writing-key-pill::after {
+.writing-key-pill[data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
   left: 50%;
@@ -937,7 +937,7 @@ button[data-writing-tag]:hover {
   transition: opacity 120ms ease;
   z-index: 20;
 }
-.writing-key-pill::before {
+.writing-key-pill[data-tooltip]::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -951,8 +951,8 @@ button[data-writing-tag]:hover {
   pointer-events: none;
   z-index: 20;
 }
-.writing-key-pill:is(:hover, :focus-visible)::after,
-.writing-key-pill:is(:hover, :focus-visible)::before {
+.writing-key-pill[data-tooltip]:is(:hover, :focus-visible)::after,
+.writing-key-pill[data-tooltip]:is(:hover, :focus-visible)::before {
   opacity: 1;
 }
 
