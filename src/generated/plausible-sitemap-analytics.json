@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-22T20:26:39.718Z",
+    "generatedAt": "2026-04-22T21:02:50.020Z",
     "siteId": "adamboas.com",
     "dateRange": "30d",
     "note": "local pageviews snapshot fallback (ok (19 paths))",
@@ -12,9 +12,9 @@
     ]
   },
   "summary": {
-    "totalSitemapPages": 93,
+    "totalSitemapPages": 94,
     "pagesWithViews": 18,
-    "coveragePct": 19.4,
+    "coveragePct": 19.1,
     "totalPageviewsOnSitemap": 85,
     "totalTrackedPaths": 19,
     "trackedOffSitemapCount": 1
@@ -228,6 +228,10 @@
         "pageviews": 0
       },
       {
+        "path": "/status/site-analytics",
+        "pageviews": 0
+      },
+      {
         "path": "/writing/2026-02-09-agent-tool-security-research",
         "pageviews": 0
       },
@@ -403,5 +407,330 @@
       }
     ],
     "invalidTrackedPaths": []
+  },
+  "insights": {
+    "paretoTop": [
+      {
+        "rank": 1,
+        "path": "/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority",
+        "pageviews": 23,
+        "sharePct": 27.1,
+        "cumulativePct": 27.1
+      },
+      {
+        "rank": 2,
+        "path": "/",
+        "pageviews": 21,
+        "sharePct": 24.7,
+        "cumulativePct": 51.8
+      },
+      {
+        "rank": 3,
+        "path": "/writing",
+        "pageviews": 9,
+        "sharePct": 10.6,
+        "cumulativePct": 62.4
+      },
+      {
+        "rank": 4,
+        "path": "/opportunities",
+        "pageviews": 6,
+        "sharePct": 7.1,
+        "cumulativePct": 69.4
+      },
+      {
+        "rank": 5,
+        "path": "/capabilities",
+        "pageviews": 4,
+        "sharePct": 4.7,
+        "cumulativePct": 74.1
+      },
+      {
+        "rank": 6,
+        "path": "/events",
+        "pageviews": 3,
+        "sharePct": 3.5,
+        "cumulativePct": 77.6
+      },
+      {
+        "rank": 7,
+        "path": "/experience/kbr-solutions-architect-2025",
+        "pageviews": 3,
+        "sharePct": 3.5,
+        "cumulativePct": 81.2
+      },
+      {
+        "rank": 8,
+        "path": "/status",
+        "pageviews": 3,
+        "sharePct": 3.5,
+        "cumulativePct": 84.7
+      },
+      {
+        "rank": 9,
+        "path": "/experience",
+        "pageviews": 2,
+        "sharePct": 2.4,
+        "cumulativePct": 87.1
+      },
+      {
+        "rank": 10,
+        "path": "/license",
+        "pageviews": 2,
+        "sharePct": 2.4,
+        "cumulativePct": 89.4
+      },
+      {
+        "rank": 11,
+        "path": "/writing/caf-ra",
+        "pageviews": 2,
+        "sharePct": 2.4,
+        "cumulativePct": 91.8
+      },
+      {
+        "rank": 12,
+        "path": "/capabilities/ai-autonomy",
+        "pageviews": 1,
+        "sharePct": 1.2,
+        "cumulativePct": 92.9
+      },
+      {
+        "rank": 13,
+        "path": "/capabilities/proposal-capture",
+        "pageviews": 1,
+        "sharePct": 1.2,
+        "cumulativePct": 94.1
+      },
+      {
+        "rank": 14,
+        "path": "/education",
+        "pageviews": 1,
+        "sharePct": 1.2,
+        "cumulativePct": 95.3
+      },
+      {
+        "rank": 15,
+        "path": "/sitemap",
+        "pageviews": 1,
+        "sharePct": 1.2,
+        "cumulativePct": 96.5
+      },
+      {
+        "rank": 16,
+        "path": "/writing/acp-ra",
+        "pageviews": 1,
+        "sharePct": 1.2,
+        "cumulativePct": 97.6
+      },
+      {
+        "rank": 17,
+        "path": "/writing/agentic-force-creation",
+        "pageviews": 1,
+        "sharePct": 1.2,
+        "cumulativePct": 98.8
+      },
+      {
+        "rank": 18,
+        "path": "/writing/code-as-policy",
+        "pageviews": 1,
+        "sharePct": 1.2,
+        "cumulativePct": 100
+      }
+    ],
+    "sectionHeatmap": [
+      {
+        "section": "writing",
+        "totalRoutes": 9,
+        "routesWithViews": 6,
+        "totalViews": 37,
+        "coveragePct": 66.7,
+        "viewsSharePct": 43.5,
+        "intensity": 100
+      },
+      {
+        "section": "home",
+        "totalRoutes": 1,
+        "routesWithViews": 1,
+        "totalViews": 21,
+        "coveragePct": 100,
+        "viewsSharePct": 24.7,
+        "intensity": 56.8
+      },
+      {
+        "section": "capabilities",
+        "totalRoutes": 7,
+        "routesWithViews": 3,
+        "totalViews": 6,
+        "coveragePct": 42.9,
+        "viewsSharePct": 7.1,
+        "intensity": 16.2
+      },
+      {
+        "section": "opportunities",
+        "totalRoutes": 1,
+        "routesWithViews": 1,
+        "totalViews": 6,
+        "coveragePct": 100,
+        "viewsSharePct": 7.1,
+        "intensity": 16.2
+      },
+      {
+        "section": "experience",
+        "totalRoutes": 11,
+        "routesWithViews": 2,
+        "totalViews": 5,
+        "coveragePct": 18.2,
+        "viewsSharePct": 5.9,
+        "intensity": 13.5
+      },
+      {
+        "section": "events",
+        "totalRoutes": 2,
+        "routesWithViews": 1,
+        "totalViews": 3,
+        "coveragePct": 50,
+        "viewsSharePct": 3.5,
+        "intensity": 8.1
+      },
+      {
+        "section": "status",
+        "totalRoutes": 3,
+        "routesWithViews": 1,
+        "totalViews": 3,
+        "coveragePct": 33.3,
+        "viewsSharePct": 3.5,
+        "intensity": 8.1
+      },
+      {
+        "section": "license",
+        "totalRoutes": 1,
+        "routesWithViews": 1,
+        "totalViews": 2,
+        "coveragePct": 100,
+        "viewsSharePct": 2.4,
+        "intensity": 5.4
+      },
+      {
+        "section": "education",
+        "totalRoutes": 9,
+        "routesWithViews": 1,
+        "totalViews": 1,
+        "coveragePct": 11.1,
+        "viewsSharePct": 1.2,
+        "intensity": 2.7
+      },
+      {
+        "section": "sitemap",
+        "totalRoutes": 1,
+        "routesWithViews": 1,
+        "totalViews": 1,
+        "coveragePct": 100,
+        "viewsSharePct": 1.2,
+        "intensity": 2.7
+      },
+      {
+        "section": "blog",
+        "totalRoutes": 1,
+        "routesWithViews": 0,
+        "totalViews": 0,
+        "coveragePct": 0,
+        "viewsSharePct": 0,
+        "intensity": 0
+      },
+      {
+        "section": "changes",
+        "totalRoutes": 1,
+        "routesWithViews": 0,
+        "totalViews": 0,
+        "coveragePct": 0,
+        "viewsSharePct": 0,
+        "intensity": 0
+      },
+      {
+        "section": "contact",
+        "totalRoutes": 1,
+        "routesWithViews": 0,
+        "totalViews": 0,
+        "coveragePct": 0,
+        "viewsSharePct": 0,
+        "intensity": 0
+      },
+      {
+        "section": "content-license",
+        "totalRoutes": 1,
+        "routesWithViews": 0,
+        "totalViews": 0,
+        "coveragePct": 0,
+        "viewsSharePct": 0,
+        "intensity": 0
+      },
+      {
+        "section": "credentials",
+        "totalRoutes": 1,
+        "routesWithViews": 0,
+        "totalViews": 0,
+        "coveragePct": 0,
+        "viewsSharePct": 0,
+        "intensity": 0
+      },
+      {
+        "section": "papers",
+        "totalRoutes": 5,
+        "routesWithViews": 0,
+        "totalViews": 0,
+        "coveragePct": 0,
+        "viewsSharePct": 0,
+        "intensity": 0
+      },
+      {
+        "section": "writing/tags",
+        "totalRoutes": 39,
+        "routesWithViews": 0,
+        "totalViews": 0,
+        "coveragePct": 0,
+        "viewsSharePct": 0,
+        "intensity": 0
+      }
+    ],
+    "offSitemapRisk": [
+      {
+        "path": "/anboas/adamboas.info/actions/runs/24625625534",
+        "pageviews": 1,
+        "sharePct": 100,
+        "riskScore": 100,
+        "tier": "high"
+      }
+    ]
+  },
+  "trends": {
+    "mode": "fallback",
+    "note": "Fallback from local snapshot: ok (19 paths)",
+    "windows": [
+      {
+        "range": "7d",
+        "label": "7d",
+        "pageviews": null,
+        "perDay": null,
+        "status": "missing"
+      },
+      {
+        "range": "30d",
+        "label": "30d",
+        "pageviews": 86,
+        "perDay": 2.87,
+        "status": "fallback"
+      },
+      {
+        "range": "90d",
+        "label": "90d",
+        "pageviews": null,
+        "perDay": null,
+        "status": "missing"
+      }
+    ],
+    "momentum": {
+      "last7vsPrev23Pct": null,
+      "last30vsPrev60Pct": null
+    }
   }
 }
