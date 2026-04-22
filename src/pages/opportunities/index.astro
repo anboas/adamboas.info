@@ -734,18 +734,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<p class="mt-3 text-sm text-slate-300">A live mirror of SAM opportunity intelligence, including broad SAM feed ingestion plus event-linked enrichment.</p>
 			</div>
 			<div class="opp-header-actions">
-				<a class="opp-link-btn" href={withBase('/events/')}>Open Events</a>
-				<a class="opp-link-btn" href={withBase('/status/')}>Open Status</a>
-				<a class="opp-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
-				<a class="opp-link-btn opp-link-btn-muted" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open Drift Report</a>
+				<a class="ui-link-btn" href={withBase('/events/')}>Open Events</a>
+				<a class="ui-link-btn" href={withBase('/status/')}>Open Status</a>
+				<a class="ui-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
+				<a class="ui-link-btn ui-link-btn-muted" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open Drift Report</a>
 			</div>
 		</div>
 		<div class="opp-status-row mt-3" aria-label="Pipeline freshness">
-			{lastCollectedAt ? <span class="opp-status-pill">SAM collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
-			{driftGeneratedAt ? <span class="opp-status-pill">Drift refreshed: {new Date(driftGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
-			{feedGeneratedAt ? <span class="opp-status-pill">Feed crawl: {new Date(feedGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
-			<span class="opp-status-pill">Sources OK: {Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</span>
-			<span class="opp-status-pill">Blocked: {Number(feedSummary.blocked ?? 0)}</span>
+			{lastCollectedAt ? <span class="ui-pill text-[11px]">SAM collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+			{driftGeneratedAt ? <span class="ui-pill text-[11px]">Drift refreshed: {new Date(driftGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+			{feedGeneratedAt ? <span class="ui-pill text-[11px]">Feed crawl: {new Date(feedGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
+			<span class="ui-pill text-[11px]">Sources OK: {Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</span>
+			<span class="ui-pill text-[11px]">Blocked: {Number(feedSummary.blocked ?? 0)}</span>
 		</div>
 		<div id="opp-event-context" class="opp-event-context" hidden>
 			<div>
@@ -753,8 +753,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<p id="opp-event-context-text" class="opp-event-context-text">Opened from events.</p>
 			</div>
 			<div class="opp-event-context-actions">
-				<a id="opp-event-context-back" class="opp-link-btn" href={withBase('/events/')}>Back to event</a>
-				<button id="opp-event-context-clear" class="opp-link-btn opp-link-btn-muted" type="button">Clear</button>
+				<a id="opp-event-context-back" class="ui-link-btn" href={withBase('/events/')}>Back to event</a>
+				<button id="opp-event-context-clear" class="ui-link-btn ui-link-btn-muted" type="button">Clear</button>
 			</div>
 		</div>
 
@@ -791,7 +791,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-controls-grid">
 				<label class="opp-field opp-field-search">
 					<span>Search</span>
-					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="title, agency, notice id, NAICS, solicitation..." />
+					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="title, agency, notice id, NAICS, solicitation..." autocomplete="off" spellcheck="false" />
 				</label>
 				<label class="opp-field">
 					<span>Notice type</span>
@@ -2889,10 +2889,26 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderTable(pagedRows);
 			};
 
-			[el.search, el.type, el.branch, el.client, el.work, el.due, el.weight, el.intel, el.confidenceFilter, el.thirdParty, el.fpds, el.decision, el.sort, el.focus, el.fastMode].forEach((node) => node?.addEventListener('input', () => {
+			const renderFromFilterInput = () => {
 				tableState.page = 1;
 				render();
-			}));
+			};
+
+			let searchRenderTimer = null;
+			el.search?.addEventListener('input', () => {
+				if (searchRenderTimer) clearTimeout(searchRenderTimer);
+				searchRenderTimer = setTimeout(() => {
+					searchRenderTimer = null;
+					renderFromFilterInput();
+				}, 120);
+			});
+			el.search?.addEventListener('change', renderFromFilterInput);
+
+			[el.type, el.branch, el.client, el.work, el.due, el.intel, el.confidenceFilter, el.thirdParty, el.fpds, el.decision, el.sort]
+				.forEach((node) => node?.addEventListener('change', renderFromFilterInput));
+			el.weight?.addEventListener('input', renderFromFilterInput);
+			[el.focus, el.fastMode]
+				.forEach((node) => node?.addEventListener('change', renderFromFilterInput));
 
 			el.pageSize?.addEventListener('change', () => {
 				tableState.pageSize = Number(el.pageSize?.value || 50);
@@ -3072,30 +3088,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		align-items: center;
 		flex-wrap: wrap;
 	}
-	.opp-link-btn {
-		display: inline-flex;
-		align-items: center;
-		height: 1.9rem;
-		padding: 0 0.75rem;
-		border: 1px solid rgba(45, 212, 191, 0.48);
-		background: rgba(45, 212, 191, 0.1);
-		color: rgba(240, 253, 250, 0.97);
-		text-decoration: none;
-		font-size: 0.73rem;
-		letter-spacing: 0.02em;
-		text-transform: uppercase;
-	}
-	.opp-link-btn:hover {
-		background: rgba(45, 212, 191, 0.18);
-	}
-	.opp-link-btn-muted {
-		border-color: rgba(100, 116, 139, 0.62);
-		background: rgba(15, 23, 42, 0.55);
-		color: rgba(226, 232, 240, 0.94);
-	}
-	.opp-link-btn-muted:hover {
-		background: rgba(30, 41, 59, 0.8);
-	}
 	.opp-event-context {
 		margin-top: 0.75rem;
 		border: 1px solid rgba(56, 189, 248, 0.44);
@@ -3133,17 +3125,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.45rem;
-	}
-	.opp-status-pill {
-		display: inline-flex;
-		align-items: center;
-		height: 1.55rem;
-		padding: 0 0.55rem;
-		border: 1px solid rgba(71, 85, 105, 0.8);
-		background: rgba(2, 6, 23, 0.78);
-		font-size: 0.67rem;
-		color: rgba(203, 213, 225, 0.96);
-		letter-spacing: 0.02em;
 	}
 	.opp-kpis {
 		display: grid;

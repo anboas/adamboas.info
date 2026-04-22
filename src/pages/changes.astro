@@ -31,13 +31,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.85',
+		date: '2026-04-22',
+		title: 'Pass 2 consistency sweep: events + opportunities filter UX and shared control tokens',
+		summary: 'Improved high-traffic `/events/` and `/opportunities/` surfaces with debounced search input handling, event-type-specific filter listeners, and replacement of page-local action/pill styles with shared global UI tokens.',
+		impact: 'Smoother filter interactions under rapid typing, lower accidental rerender churn, and stronger cross-page visual consistency with less page-specific CSS to maintain.',
+		current: true,
+		tags: ['events', 'opportunities', 'ux', 'consistency', 'performance'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Events filters now debounce free-text search and use `change` handlers for select controls instead of broad `input` wiring.',
+					'Opportunities filters now debounce search, use control-appropriate event bindings (`change` for selects/checkboxes), and keep numeric weight as immediate input.',
+					'Replaced opportunities page-local `opp-link-btn` and `opp-status-pill` usage with shared `ui-link-btn`/`ui-link-btn-muted` and `ui-pill` tokens.',
+					'Normalized search control semantics on both pages with `autocomplete=off` and `spellcheck=false`.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Removed redundant opportunities CSS blocks for button/pill variants now covered by shared global styles.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.84',
 		date: '2026-04-22',
 		title: 'UI/UX consistency coding pass: writing controls hardened + homepage style alignment',
 		summary: 'Applied a focused consistency pass across `/writing/` and homepage sections to tighten filter ergonomics, semantic form behavior, and shared visual language usage.',
 		impact: 'Filter interactions are less error-prone, controls are more accessible/consistent, and homepage section typography + intent chips align better with shared design tokens.',
-		current: true,
 		tags: ['ux', 'consistency', 'writing', 'home', 'accessibility'],
 		groups: [
 			{ kind: 'Added', items: [] },

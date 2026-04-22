@@ -927,7 +927,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			</details>
 			<div class="mt-2 border-t border-slate-800 pt-2 radar-filter-wrap control-shell-row">
 				<label class="block">
-					<input id="radar-q" aria-label="Search events" data-global-search class="radar-input" type="search" placeholder="Search events by title, agency, keyword, or location..." />
+					<input id="radar-q" aria-label="Search events" data-global-search class="radar-input" type="search" placeholder="Search events by title, agency, keyword, or location..." autocomplete="off" spellcheck="false" />
 				</label>
 				<details id="radar-filter-panel" class="radar-filter-panel mt-2">
 					<summary class="radar-summary radar-summary-primary">More filters</summary>
@@ -2700,9 +2700,19 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		render();
 	};
 
-	[controls.q, controls.branch, controls.type, controls.status, controls.sort]
+	let searchRenderTimer = null;
+	controls.q?.addEventListener('input', () => {
+		if (searchRenderTimer) clearTimeout(searchRenderTimer);
+		searchRenderTimer = setTimeout(() => {
+			searchRenderTimer = null;
+			renderFromFilterChange();
+		}, 120);
+	});
+	controls.q?.addEventListener('change', renderFromFilterChange);
+
+	[controls.branch, controls.type, controls.status, controls.sort]
 		.filter(Boolean)
-		.forEach((node) => node.addEventListener('input', renderFromFilterChange));
+		.forEach((node) => node.addEventListener('change', renderFromFilterChange));
 	[controls.upcomingOnly, controls.verifiedOnly, controls.newOnly, controls.showPast]
 		.filter(Boolean)
 		.forEach((node) => node.addEventListener('change', renderFromFilterChange));
