@@ -44,13 +44,39 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.98',
+		date: '2026-04-23',
+		title: 'Attached ACP-RA audio to the ACP-RA paper',
+		summary: 'Moved the provided `acp-ra.m4a` audio into the site audio library and linked it to the ACP-RA paper metadata.',
+		impact: 'The `Agent Control Plane Reference Architecture (ACP-RA)` paper now exposes audio via the standard writing/paper audio path.',
+		current: true,
+		tags: ['audio', 'papers', 'acp-ra', 'content', 'writing'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added paper audio metadata: `audioPath: /audio/writing/acp-ra.m4a` in `src/content/papers/acp-ra.md`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Moved source audio file into `public/audio/writing/acp-ra.m4a` for canonical static serving.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.97',
 		date: '2026-04-23',
 		title: 'Attached policy-as-code audio to “From PDFs to Pull Requests”',
 		summary: 'Moved the provided `policy-as-code.m4a` audio into the site audio library and linked it to the `code-as-policy` paper metadata.',
 		impact: 'The “From PDFs to Pull Requests” paper now has first-class audio availability via standard writing/paper audio surfaces.',
-		current: true,
 		tags: ['audio', 'papers', 'content', 'writing', 'code-as-policy'],
 		groups: [
 			{

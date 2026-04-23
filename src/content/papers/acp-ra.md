@@ -4,6 +4,7 @@ description: "A reference architecture for governed, scalable agentic autonomyâ€
 date: 2026-02-10
 status: published
 pdfPath: /papers/acp-ra.pdf
+audioPath: /audio/writing/acp-ra.m4a
 # HTML is synced from Whitepaper into src/generated/papers/acp-ra.html
 tags:
   - autonomy
