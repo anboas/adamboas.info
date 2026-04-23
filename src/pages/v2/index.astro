@@ -1,0 +1,150 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import UiVersionToggle from '../../components/UiVersionToggle.astro';
+import { withBase } from '../../utils/withBase';
+
+const writing = (await getCollection('writing'))
+	.filter((w) => w.data.status === 'published')
+	.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const papers = (await getCollection('papers'))
+	.filter((p) => p.data.status === 'published')
+	.sort((a, b) => (b.data.date?.valueOf?.() ?? 0) - (a.data.date?.valueOf?.() ?? 0));
+
+const cards = [
+	...writing.map((w) => ({
+		slug: w.id.split('/').pop(),
+		title: w.data.title,
+		kind: w.data.type,
+		desc: w.data.summary,
+		date: w.data.date,
+		href: withBase(`/writing/${w.id.split('/').pop()}/`),
+	})),
+	...papers.map((p) => ({
+		slug: p.id,
+		title: p.data.title,
+		kind: 'paper',
+		desc: p.data.description,
+		date: p.data.date,
+		href: withBase(`/writing/${p.id}/`),
+	})),
+]
+	.filter((x) => x.slug)
+	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0))
+	.slice(0, 6);
+---
+
+<SiteLayout title="Adam Boas - UI v2 Preview" description="Parallel v2 UI preview for adamboas.com upgrade path.">
+	<StickyBrowseBar active="v2" />
+
+	<section class="card v2-shell p-5">
+		<div class="flex flex-wrap items-center justify-between gap-3">
+			<div>
+				<p class="v2-kicker">Parallel release track</p>
+				<h1 class="section-title mt-1">adamboas.com UI v2 preview</h1>
+				<p class="mt-2 text-sm text-slate-300">Classic and v2 now run side-by-side. We can iterate this route live while classic remains stable.</p>
+			</div>
+			<UiVersionToggle current="v2" />
+		</div>
+	</section>
+
+	<section class="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+		<article class="card v2-hero p-6">
+			<p class="v2-kicker">Solutions Architect</p>
+			<h2 class="mt-2 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Warfighter lethality through trusted autonomy, control planes, and execution at tempo.</h2>
+			<p class="mt-3 text-sm leading-relaxed text-slate-300">This is the new visual lane: tokenized surfaces, interactive card borders, and scan-first hierarchy tuned for dense executive reading.</p>
+			<div class="mt-4 flex flex-wrap gap-2">
+				<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/')}>Start project</a>
+				<a class="ui-link-btn" href={withBase('/writing/')}>All writing</a>
+			</div>
+		</article>
+		<article class="card v2-rail p-6">
+			<h3 class="v2-rail-title">Build plan (phase 1)</h3>
+			<ul class="mt-3 v2-list">
+				<li>Keep classic as production default.</li>
+				<li>Ship new components on <code>/v2/</code>.</li>
+				<li>Add image-driven visual pass next.</li>
+				<li>Promote sections incrementally once approved.</li>
+			</ul>
+		</article>
+	</section>
+
+	<section class="mt-4 card v2-shell p-5">
+		<div class="flex flex-wrap items-end justify-between gap-2">
+			<h2 class="section-title">Featured cards (v2 interaction pattern)</h2>
+			<a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/')}>Open writing →</a>
+		</div>
+		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+			{cards.map((card) => (
+				<a class="v2-card" href={card.href}>
+					<div class="flex items-center justify-between gap-2">
+						<span class="v2-kind">{card.kind}</span>
+						<span class="v2-date">{card.date ? card.date.toISOString().slice(0, 10) : ''}</span>
+					</div>
+					<h3 class="mt-2 text-base font-semibold text-slate-50">{card.title}</h3>
+					<p class="mt-2 line-clamp-3 text-sm text-slate-300">{card.desc}</p>
+					<p class="mt-3 text-xs text-sky-300">Read →</p>
+				</a>
+			))}
+		</div>
+	</section>
+</SiteLayout>
+
+<style>
+	.v2-shell {
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		background: rgba(5, 7, 11, 0.95);
+	}
+	.v2-kicker {
+		font-size: 0.66rem;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: rgba(34, 211, 238, 0.95);
+	}
+	.v2-hero {
+		border: 1px solid rgba(47, 129, 247, 0.45);
+		background: rgba(10, 15, 26, 0.92);
+	}
+	.v2-rail {
+		border: 1px solid rgba(139, 92, 246, 0.4);
+		background: rgba(10, 15, 26, 0.88);
+	}
+	.v2-rail-title {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(196, 181, 253, 0.96);
+	}
+	.v2-list {
+		display: grid;
+		gap: 0.4rem;
+		font-size: 0.86rem;
+		color: rgba(196, 207, 221, 0.96);
+	}
+	.v2-card {
+		display: block;
+		border: 1px solid rgba(36, 50, 68, 0.95);
+		background: rgba(10, 15, 26, 0.72);
+		padding: 0.9rem;
+		transition: border-color 130ms ease, transform 130ms ease, box-shadow 130ms ease;
+	}
+	.v2-card:hover {
+		border-color: rgba(47, 129, 247, 0.74);
+		transform: translateY(-1px);
+		box-shadow: 0 0 0 1px rgba(47, 129, 247, 0.2) inset, 0 16px 38px rgba(47, 129, 247, 0.09);
+	}
+	.v2-kind {
+		font-size: 0.63rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		padding: 0.14rem 0.4rem;
+		color: rgba(148, 163, 184, 0.96);
+	}
+	.v2-date {
+		font-size: 0.72rem;
+		color: rgba(107, 114, 128, 0.96);
+	}
+</style>

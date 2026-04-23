@@ -45,13 +45,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.99',
+		date: '2026-04-23',
+		title: 'Parallel UI v2 preview lane launched (classic + v2 live together)',
+		summary: 'Started the adamboas.com redesign in a parallel route so classic and v2 can run simultaneously while we iterate the new interface live.',
+		impact: 'You can now navigate between stable classic UI and a live v2 preview (`/v2/`) without disrupting current production pages.',
+		current: true,
+		tags: ['ui', 'v2', 'preview', 'parallel-release', 'navigation'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added new `UiVersionToggle` component for switching between Classic UI and UI v2 preview.',
+					'Added live preview route: `/v2/` (`src/pages/v2/index.astro`) as the initial upgrade lane.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Added version-toggle control to homepage (`/`) for side-by-side navigation between UI versions.',
+					'Extended header and mobile sticky browse nav with direct `UI v2` entry.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.98',
 		date: '2026-04-23',
 		title: 'Attached ACP-RA audio to the ACP-RA paper',
 		summary: 'Moved the provided `acp-ra.m4a` audio into the site audio library and linked it to the ACP-RA paper metadata.',
 		impact: 'The `Agent Control Plane Reference Architecture (ACP-RA)` paper now exposes audio via the standard writing/paper audio path.',
-		current: true,
 		tags: ['audio', 'papers', 'acp-ra', 'content', 'writing'],
 		groups: [
 			{

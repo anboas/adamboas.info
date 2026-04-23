@@ -1,0 +1,45 @@
+---
+import { withBase } from '../utils/withBase';
+
+const { current = 'classic' } = Astro.props as { current?: 'classic' | 'v2' };
+
+const classicActive = current === 'classic';
+const v2Active = current === 'v2';
+---
+
+<div class="ui-version-toggle" role="group" aria-label="Site UI version toggle">
+	<a class:list={['ui-version-pill', classicActive ? 'ui-version-pill-active' : '']} href={withBase('/')}>Classic UI</a>
+	<a class:list={['ui-version-pill', v2Active ? 'ui-version-pill-active' : '']} href={withBase('/v2/')}>UI v2 preview</a>
+</div>
+
+<style>
+	.ui-version-toggle {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		padding: 0.3rem;
+		border: 1px solid rgba(51, 65, 85, 0.85);
+		background: rgba(2, 6, 23, 0.86);
+	}
+	.ui-version-pill {
+		display: inline-flex;
+		align-items: center;
+		height: 1.7rem;
+		padding: 0 0.65rem;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		border: 1px solid rgba(51, 65, 85, 0.86);
+		background: rgba(2, 6, 23, 0.74);
+		color: rgba(148, 163, 184, 0.96);
+	}
+	.ui-version-pill:hover {
+		color: rgba(226, 232, 240, 0.98);
+		border-color: rgba(71, 85, 105, 0.92);
+	}
+	.ui-version-pill-active {
+		border-color: rgba(45, 212, 191, 0.7);
+		background: rgba(6, 78, 59, 0.42);
+		color: rgba(204, 251, 241, 0.98);
+	}
+</style>
