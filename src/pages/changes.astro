@@ -46,13 +46,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.00',
+		date: '2026-04-23',
+		title: 'UI v2 visual direction pass from reference board image',
+		summary: 'Integrated the provided UI design-system image into the live `/v2/` preview lane and translated its visual language into the first token-driven surface update.',
+		impact: 'v2 now reflects your supplied board directly, with an on-page reference panel, matching color token chips, and clearer dark-neon interaction styling for iterative refinement.',
+		current: true,
+		tags: ['ui', 'v2', 'design-system', 'image-reference', 'visual-language'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added image asset to `public/images/v2/ui-system-reference-2026-04-23.jpg` and surfaced it directly on `/v2/`.',
+					'Added `Reference board integrated` panel with extracted token chips (`#05070B`, `#0A0F1A`, `#0F1626`, `#2F81F7`, `#8B5CF6`, `#22D3EE`).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `/v2/` build-plan copy to reflect active image-driven pass.',
+					'Extended v2 page styles with reference-frame and token-chip primitives tuned to the uploaded board aesthetic.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.99',
 		date: '2026-04-23',
 		title: 'Parallel UI v2 preview lane launched (classic + v2 live together)',
 		summary: 'Started the adamboas.com redesign in a parallel route so classic and v2 can run simultaneously while we iterate the new interface live.',
 		impact: 'You can now navigate between stable classic UI and a live v2 preview (`/v2/`) without disrupting current production pages.',
-		current: true,
 		tags: ['ui', 'v2', 'preview', 'parallel-release', 'navigation'],
 		groups: [
 			{

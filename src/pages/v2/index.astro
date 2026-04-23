@@ -50,6 +50,28 @@ const cards = [
 		</div>
 	</section>
 
+	<section class="mt-4 card v2-shell p-5">
+		<div class="flex flex-wrap items-start justify-between gap-4">
+			<div class="max-w-3xl">
+				<p class="v2-kicker">Image-driven direction</p>
+				<h2 class="section-title mt-1">Reference board integrated</h2>
+				<p class="mt-2 text-sm text-slate-300">Using your design board as source material: dark neutral foundations, electric accent rails, compact spacing, and hover-reactive card borders.</p>
+				<div class="mt-3 flex flex-wrap gap-2">
+					<span class="v2-token" style="--token:#05070B">#05070B</span>
+					<span class="v2-token" style="--token:#0A0F1A">#0A0F1A</span>
+					<span class="v2-token" style="--token:#0F1626">#0F1626</span>
+					<span class="v2-token" style="--token:#2F81F7">#2F81F7</span>
+					<span class="v2-token" style="--token:#8B5CF6">#8B5CF6</span>
+					<span class="v2-token" style="--token:#22D3EE">#22D3EE</span>
+				</div>
+			</div>
+			<a class="ui-link-btn" href={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} target="_blank" rel="noopener noreferrer">Open original image</a>
+		</div>
+		<figure class="mt-4 v2-reference">
+			<img src={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} alt="UI component library board with dark theme tokens, spacing system, cards, inputs, navigation, and data tables." loading="lazy" />
+		</figure>
+	</section>
+
 	<section class="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
 		<article class="card v2-hero p-6">
 			<p class="v2-kicker">Solutions Architect</p>
@@ -65,7 +87,7 @@ const cards = [
 			<ul class="mt-3 v2-list">
 				<li>Keep classic as production default.</li>
 				<li>Ship new components on <code>/v2/</code>.</li>
-				<li>Add image-driven visual pass next.</li>
+				<li>Apply image-driven visual pass (now in progress).</li>
 				<li>Promote sections incrementally once approved.</li>
 			</ul>
 		</article>
@@ -146,5 +168,38 @@ const cards = [
 	.v2-date {
 		font-size: 0.72rem;
 		color: rgba(107, 114, 128, 0.96);
+	}
+	.v2-token {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		height: 1.5rem;
+		padding: 0 0.55rem;
+		font-size: 0.63rem;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		color: rgba(148, 163, 184, 0.97);
+		background: rgba(10, 15, 26, 0.82);
+	}
+	.v2-token::before {
+		content: '';
+		display: inline-block;
+		width: 0.55rem;
+		height: 0.55rem;
+		border-radius: 999px;
+		background: var(--token);
+		box-shadow: 0 0 0 1px rgba(226, 232, 240, 0.22);
+	}
+	.v2-reference {
+		border: 1px solid rgba(51, 65, 85, 0.88);
+		background: rgba(10, 15, 26, 0.88);
+		overflow: hidden;
+	}
+	.v2-reference img {
+		display: block;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
 	}
 </style>
