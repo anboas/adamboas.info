@@ -40,13 +40,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.94',
+		date: '2026-04-23',
+		title: 'Site analytics simplification + true line chart trends',
+		summary: 'Simplified `/status/site-analytics/` by removing low-signal route dumps and converting the trend sparkline bars into an actual line chart.',
+		impact: 'Dashboard is cleaner and faster to scan, with trend movement represented as a real temporal line while noisy off-sitemap/zero-view tables are removed from the page.',
+		current: true,
+		tags: ['analytics', 'ux', 'line-chart', 'dashboard', 'simplification'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Replaced trend sparkline bars with an SVG line chart + point markers for 7d/30d/90d windows.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `Top sitemap routes (table)` from `/status/site-analytics/`.',
+					'Removed `Zero-view sitemap routes` section from `/status/site-analytics/`.',
+					'Removed off-sitemap sections from `/status/site-analytics/`, including tracked off-sitemap table/risk surface.',
+					'Reduced KPI strip by dropping off-sitemap counter card to match the simplified surface.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.93',
 		date: '2026-04-22',
 		title: 'Removed public form-submission analytics surface from site',
 		summary: 'Removed the public lead-funnel status page and all site navigation links to form-submission analytics so this data is no longer exposed on the website.',
 		impact: 'Form-submission funnel analytics are no longer publicly available on adamboas.com.',
-		current: true,
 		tags: ['privacy', 'analytics', 'status', 'forms', 'cleanup'],
 		groups: [
 			{

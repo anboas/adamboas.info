@@ -99,17 +99,12 @@ const kpi = {
 	coveragePct: n(summary.coveragePct),
 	totalPageviewsOnSitemap: n(summary.totalPageviewsOnSitemap),
 	totalTrackedPaths: n(summary.totalTrackedPaths),
-	trackedOffSitemapCount: n(summary.trackedOffSitemapCount),
 };
 
-const topRows = Array.isArray(rows.topSitemap) ? rows.topSitemap.slice(0, 80) : [];
-const zeroRows = Array.isArray(rows.zeroViewSitemap) ? rows.zeroViewSitemap.slice(0, 140) : [];
-const offRows = Array.isArray(rows.offSitemap) ? rows.offSitemap.slice(0, 100) : [];
 const invalidRows = Array.isArray(rows.invalidTrackedPaths) ? rows.invalidTrackedPaths.slice(0, 80) : [];
 
 const paretoRows = Array.isArray(insights.paretoTop) ? insights.paretoTop.slice(0, 20) : [];
 const sectionRows = Array.isArray(insights.sectionHeatmap) ? insights.sectionHeatmap.slice(0, 24) : [];
-const riskRows = Array.isArray(insights.offSitemapRisk) ? insights.offSitemapRisk.slice(0, 24) : [];
 
 const zeroViewCount = Math.max(kpi.totalSitemapPages - kpi.pagesWithViews, 0);
 const coverageRows = [
@@ -133,13 +128,20 @@ const trendWindows = ['7d', '30d', '90d'].map((range) => {
 });
 const trendValues = trendWindows.map((w) => (typeof w.pageviews === 'number' ? w.pageviews : 0));
 const trendMax = trendValues.reduce((max, value) => Math.max(max, value), 0);
-const trendBars = trendWindows.map((w) => ({
-	...w,
-	barPct: trendMax && typeof w.pageviews === 'number' ? Number(((w.pageviews / trendMax) * 100).toFixed(1)) : 0,
-}));
+const trendLine = trendWindows.map((w, idx) => {
+	const x = trendWindows.length > 1 ? (idx / (trendWindows.length - 1)) * 100 : 50;
+	const y = trendMax && typeof w.pageviews === 'number' ? 100 - (w.pageviews / trendMax) * 100 : 100;
+	return {
+		...w,
+		x: Number(x.toFixed(2)),
+		y: Number(y.toFixed(2)),
+	};
+});
+const trendPolyline = trendLine.map((p) => `${p.x},${p.y}`).join(' ');
+const trendHasData = trendLine.some((p) => typeof p.pageviews === 'number' && p.pageviews > 0);
+const trendArea = trendHasData ? `${trendPolyline} 100,100 0,100` : '';
 
 const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)), 0);
-const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0);
 ---
 
 <SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots.">
@@ -184,14 +186,10 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 		</article>
 	</section>
 
-	<section class="mt-4 grid gap-4 lg:grid-cols-3">
+	<section class="mt-4 grid gap-4 lg:grid-cols-2">
 		<article class="card p-4 status-card">
 			<p class="status-kpi-label">Tracked Plausible paths</p>
 			<p class="status-kpi-value">{kpi.totalTrackedPaths}</p>
-		</article>
-		<article class="card p-4 status-card">
-			<p class="status-kpi-label">Tracked off sitemap</p>
-			<p class="status-kpi-value">{kpi.trackedOffSitemapCount}</p>
 		</article>
 		<article class="card p-4 status-card">
 			<p class="status-kpi-label">Invalid tracked rows</p>
@@ -202,21 +200,28 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 	<section class="mt-4 grid gap-4 lg:grid-cols-2">
 		<article class="card control-shell p-4">
 			<div class="flex flex-wrap items-end justify-between gap-2">
-				<h2 class="section-title">Trend sparkline panel</h2>
+				<h2 class="section-title">Trend line chart</h2>
 				<p class="text-xs text-slate-400">7d / 30d / 90d totals</p>
 			</div>
-			<div class="sparkline mt-3" aria-hidden="true">
-				{trendBars.map((point) => (
-					<div class="spark-col">
-						<div class="spark-track">
-							<div class="spark-fill" style={`height:${Math.max(point.barPct, point.pageviews ? 8 : 2)}%`}></div>
-						</div>
+			<div class="trend-line-wrap mt-3" aria-hidden="true">
+				<svg viewBox="0 0 100 100" class="trend-line-svg" preserveAspectRatio="none">
+					<path d="M0,100 L100,100" class="trend-axis" />
+					<path d="M0,66 L100,66" class="trend-gridline" />
+					<path d="M0,33 L100,33" class="trend-gridline" />
+					{trendHasData ? <polygon points={trendArea} class="trend-area" /> : null}
+					{trendHasData ? <polyline points={trendPolyline} class="trend-line" /> : null}
+					{trendLine.map((point) => (
+						<circle cx={point.x} cy={point.y} r="1.8" class:list={['trend-dot', typeof point.pageviews === 'number' ? 'trend-dot-live' : 'trend-dot-empty']} />
+					))}
+				</svg>
+				<div class="trend-label-row">
+					{trendLine.map((point) => (
 						<span>{point.label}</span>
-					</div>
-				))}
+					))}
+				</div>
 			</div>
 			<div class="trend-grid mt-3">
-				{trendBars.map((w) => (
+				{trendLine.map((w) => (
 					<div class="trend-card">
 						<p class="trend-label">{w.label}</p>
 						<p class="trend-value">{typeof w.pageviews === 'number' ? w.pageviews.toLocaleString() : '—'}</p>
@@ -299,112 +304,6 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 		</article>
 	</section>
 
-	<section class="card control-shell mt-4 p-4">
-		<div class="flex flex-wrap items-end justify-between gap-2">
-			<h2 class="section-title">Off-sitemap risk chart</h2>
-			<p class="text-xs text-slate-400">Tracked traffic not represented in sitemap</p>
-		</div>
-		{riskRows.length ? (
-			<div class="risk-stack mt-3">
-				{riskRows.map((row) => (
-					<div class="risk-row">
-						<div class="risk-head">
-							<span>{row.path}</span>
-							<strong>{n(row.pageviews).toLocaleString()} views · score {n(row.riskScore)}</strong>
-						</div>
-						<div class="risk-track" aria-hidden="true">
-							<div
-								class:list={[
-									'risk-fill',
-									row.tier === 'high' ? 'risk-high' : row.tier === 'medium' ? 'risk-medium' : 'risk-low',
-								]}
-								style={`width:${riskMax ? Math.max((n(row.riskScore) / riskMax) * 100, 2) : 0}%`}
-							></div>
-						</div>
-						<p class="risk-meta">Share of off-sitemap traffic: {n(row.sharePct).toFixed(1)}%</p>
-					</div>
-				))}
-			</div>
-		) : (
-			<p class="mt-3 text-sm text-slate-300">No off-sitemap paths in this snapshot.</p>
-		)}
-	</section>
-
-	<section class="card control-shell mt-4 p-4">
-		<div class="flex flex-wrap items-end justify-between gap-2">
-			<h2 class="section-title">Top sitemap routes (table)</h2>
-			<p class="text-xs text-slate-400">Top {Math.min(topRows.length, 50)} by pageviews</p>
-		</div>
-		{topRows.length ? (
-			<div class="table-wrap mt-3">
-				<table class="status-table">
-					<thead>
-						<tr>
-							<th>Route</th>
-							<th>Pageviews</th>
-						</tr>
-					</thead>
-					<tbody>
-						{topRows.slice(0, 50).map((row) => (
-							<tr>
-								<td>{row.path}</td>
-								<td>{n(row.pageviews).toLocaleString()}</td>
-							</tr>
-						))}
-					</tbody>
-				</table>
-			</div>
-		) : (
-			<p class="mt-3 text-sm text-slate-300">No sitemap pageview rows yet.</p>
-		)}
-	</section>
-
-	<section class="mt-4 grid gap-4 lg:grid-cols-2">
-		<article class="card control-shell p-4">
-			<div class="flex flex-wrap items-end justify-between gap-2">
-				<h2 class="section-title">Zero-view sitemap routes</h2>
-				<p class="text-xs text-slate-400">Showing first {zeroRows.length}</p>
-			</div>
-			{zeroRows.length ? (
-				<ul class="route-list mt-3">
-					{zeroRows.map((row) => (
-						<li>{row.path}</li>
-					))}
-				</ul>
-			) : (
-				<p class="mt-3 text-sm text-slate-300">No zero-view routes in this snapshot.</p>
-			)}
-		</article>
-
-		<article class="card control-shell p-4">
-			<div class="flex flex-wrap items-end justify-between gap-2">
-				<h2 class="section-title">Tracked off-sitemap paths (table)</h2>
-				<p class="text-xs text-slate-400">Top {offRows.length} by pageviews</p>
-			</div>
-			{offRows.length ? (
-				<div class="table-wrap mt-3">
-					<table class="status-table">
-						<thead>
-							<tr>
-								<th>Path</th>
-								<th>Pageviews</th>
-							</tr>
-						</thead>
-						<tbody>
-							{offRows.map((row) => (
-								<tr>
-									<td>{row.path}</td>
-									<td>{n(row.pageviews).toLocaleString()}</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-				</div>
-			) : (
-				<p class="mt-3 text-sm text-slate-300">No off-sitemap paths in this snapshot.</p>
-			)}
-		</article>
-	</section>
 
 	{invalidRows.length ? (
 		<section class="card control-shell mt-4 p-4">
@@ -463,31 +362,55 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 		flex-wrap: wrap;
 		gap: 0.42rem;
 	}
-	.sparkline {
+	.trend-line-wrap {
+		border: 1px solid rgba(51, 65, 85, 0.72);
+		background: rgba(2, 6, 23, 0.82);
+		padding: 0.45rem 0.55rem 0.4rem;
+	}
+	.trend-line-svg {
+		display: block;
+		width: 100%;
+		height: 6.8rem;
+	}
+	.trend-axis {
+		stroke: rgba(71, 85, 105, 0.95);
+		stroke-width: 1;
+		fill: none;
+	}
+	.trend-gridline {
+		stroke: rgba(51, 65, 85, 0.9);
+		stroke-width: 0.8;
+		stroke-dasharray: 2 2;
+		fill: none;
+	}
+	.trend-area {
+		fill: rgba(59, 130, 246, 0.22);
+	}
+	.trend-line {
+		stroke: rgba(96, 165, 250, 0.98);
+		stroke-width: 2.2;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		fill: none;
+	}
+	.trend-dot {
+		stroke: rgba(2, 6, 23, 0.96);
+		stroke-width: 1;
+	}
+	.trend-dot-live {
+		fill: rgba(56, 189, 248, 0.98);
+	}
+	.trend-dot-empty {
+		fill: rgba(71, 85, 105, 0.92);
+	}
+	.trend-label-row {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 0.75rem;
-		height: 6rem;
-		align-items: end;
-	}
-	.spark-col {
-		display: grid;
-		gap: 0.3rem;
-		justify-items: center;
-		font-size: 0.66rem;
+		gap: 0.35rem;
+		margin-top: 0.2rem;
+		font-size: 0.64rem;
+		text-align: center;
 		color: rgba(148, 163, 184, 0.95);
-	}
-	.spark-track {
-		width: 100%;
-		height: 4.8rem;
-		display: flex;
-		align-items: end;
-		background: rgba(15, 23, 42, 0.96);
-		border: 1px solid rgba(51, 65, 85, 0.72);
-	}
-	.spark-fill {
-		width: 100%;
-		background: rgba(45, 212, 191, 0.95);
 	}
 	.trend-grid {
 		display: grid;
@@ -516,20 +439,17 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 		color: rgba(125, 211, 252, 0.95);
 	}
 	.coverage-stack,
-	.pareto-stack,
-	.risk-stack {
+	.pareto-stack {
 		display: grid;
 		gap: 0.5rem;
 	}
 	.coverage-row,
-	.pareto-row,
-	.risk-row {
+	.pareto-row {
 		display: grid;
 		gap: 0.22rem;
 	}
 	.coverage-row-head,
-	.pareto-head,
-	.risk-head {
+	.pareto-head {
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
@@ -538,21 +458,18 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 		color: rgba(226, 232, 240, 0.95);
 	}
 	.coverage-row-head span,
-	.pareto-head span,
-	.risk-head span {
+	.pareto-head span {
 		overflow-wrap: anywhere;
 		color: rgba(203, 213, 225, 0.95);
 	}
 	.coverage-row-head strong,
-	.pareto-head strong,
-	.risk-head strong {
+	.pareto-head strong {
 		color: rgba(125, 211, 252, 0.96);
 		white-space: nowrap;
 		font-weight: 600;
 	}
 	.coverage-track,
-	.pareto-track,
-	.risk-track {
+	.pareto-track {
 		height: 0.52rem;
 		border-radius: 999px;
 		background: rgba(15, 23, 42, 0.96);
@@ -561,8 +478,7 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 		position: relative;
 	}
 	.coverage-fill,
-	.pareto-fill,
-	.risk-fill {
+	.pareto-fill {
 		height: 100%;
 	}
 	.coverage-fill-ok {
@@ -581,19 +497,9 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 		width: 2px;
 		background: rgba(251, 191, 36, 0.95);
 	}
-	.pareto-meta,
-	.risk-meta {
+	.pareto-meta {
 		font-size: 0.68rem;
 		color: rgba(148, 163, 184, 0.95);
-	}
-	.risk-high {
-		background: rgba(248, 113, 113, 0.95);
-	}
-	.risk-medium {
-		background: rgba(251, 191, 36, 0.95);
-	}
-	.risk-low {
-		background: rgba(94, 234, 212, 0.95);
 	}
 	.heatmap-grid {
 		display: grid;
@@ -657,24 +563,11 @@ const riskMax = riskRows.reduce((max, row) => Math.max(max, n(row.riskScore)), 0
 	.status-table td {
 		color: rgba(203, 213, 225, 0.96);
 	}
-	.route-list {
-		display: grid;
-		gap: 0.35rem;
-		font-size: 0.8rem;
-		color: rgba(203, 213, 225, 0.95);
-		max-height: 24rem;
-		overflow: auto;
-		padding-right: 0.25rem;
-	}
 	@media (max-width: 940px) {
 		.heatmap-grid,
 		.trend-grid,
-		.sparkline {
+		.trend-label-row {
 			grid-template-columns: 1fr;
-			height: auto;
-		}
-		.spark-track {
-			height: 2.3rem;
 		}
 	}
 </style>
