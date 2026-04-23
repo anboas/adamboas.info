@@ -48,13 +48,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.02',
+		date: '2026-04-23',
+		title: 'UI v2 final board lock + layout adoption map',
+		summary: 'Integrated the final uploaded design board as canonical reference and translated it into concrete page-level v2 direction markers.',
+		impact: 'The `/v2/` lane now shows both source boards, adopts final messaging/visual framing, and includes a sectioned layout adoption map for homepage, writing article, and education table migration.',
+		current: true,
+		tags: ['ui', 'v2', 'final-board', 'layout', 'migration'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added final board asset: `public/images/v2/ui-system-reference-final-2026-04-23.jpg`.',
+					'Added `Layout adoption map` section on `/v2/` for homepage, writing article, and education/table migration targets.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated reference section to treat the latest board as canonical and display both final + previous boards side-by-side.',
+					'Updated v2 hero and phase plan copy to align with final board language (`Strategic technology • operational systems`).',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.01',
 		date: '2026-04-23',
 		title: 'UI v2 primitives section from design-system PDF',
 		summary: 'Translated the uploaded design-system PDF into concrete v2 primitives on the live preview page, including typography, spacing/radius, and control-state surfaces.',
 		impact: 'The `/v2/` lane now reflects the PDF system language with executable UI primitives instead of only reference imagery.',
-		current: true,
 		tags: ['ui', 'v2', 'primitives', 'typography', 'controls'],
 		groups: [
 			{

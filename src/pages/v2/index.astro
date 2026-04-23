@@ -54,8 +54,8 @@ const cards = [
 		<div class="flex flex-wrap items-start justify-between gap-4">
 			<div class="max-w-3xl">
 				<p class="v2-kicker">Image-driven direction</p>
-				<h2 class="section-title mt-1">Reference board integrated</h2>
-				<p class="mt-2 text-sm text-slate-300">Using your design board as source material: dark neutral foundations, electric accent rails, compact spacing, and hover-reactive card borders.</p>
+				<h2 class="section-title mt-1">Final reference board integrated</h2>
+				<p class="mt-2 text-sm text-slate-300">Using your final board as the canonical direction: strategic technology framing, compact component density, graph-first data surfaces, and operational UI language.</p>
 				<div class="mt-3 flex flex-wrap gap-2">
 					<span class="v2-token" style="--token:#05070B">#05070B</span>
 					<span class="v2-token" style="--token:#0A0F1A">#0A0F1A</span>
@@ -63,13 +63,22 @@ const cards = [
 					<span class="v2-token" style="--token:#2F81F7">#2F81F7</span>
 					<span class="v2-token" style="--token:#8B5CF6">#8B5CF6</span>
 					<span class="v2-token" style="--token:#22D3EE">#22D3EE</span>
+					<span class="v2-token" style="--token:#22C55E">#22C55E</span>
 				</div>
 			</div>
-			<a class="ui-link-btn" href={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} target="_blank" rel="noopener noreferrer">Open original image</a>
+			<div class="flex flex-wrap gap-2">
+				<a class="ui-link-btn" href={withBase('/images/v2/ui-system-reference-final-2026-04-23.jpg')} target="_blank" rel="noopener noreferrer">Open final board</a>
+				<a class="ui-link-btn" href={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} target="_blank" rel="noopener noreferrer">Open previous board</a>
+			</div>
 		</div>
-		<figure class="mt-4 v2-reference">
-			<img src={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} alt="UI component library board with dark theme tokens, spacing system, cards, inputs, navigation, and data tables." loading="lazy" />
-		</figure>
+		<div class="mt-4 grid gap-3 lg:grid-cols-2">
+			<figure class="v2-reference">
+				<img src={withBase('/images/v2/ui-system-reference-final-2026-04-23.jpg')} alt="Final dark operational design-system board with brand essence, component library, layouts, graph node system, and iconography." loading="lazy" />
+			</figure>
+			<figure class="v2-reference">
+				<img src={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} alt="Original UI component library board with tokens, spacing, cards, inputs, navigation, and tables." loading="lazy" />
+			</figure>
+		</div>
 	</section>
 
 	<section class="mt-4 grid gap-4 xl:grid-cols-3">
@@ -124,23 +133,56 @@ const cards = [
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
 		<article class="card v2-hero p-6">
-			<p class="v2-kicker">Solutions Architect</p>
-			<h2 class="mt-2 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Warfighter lethality through trusted autonomy, control planes, and execution at tempo.</h2>
-			<p class="mt-3 text-sm leading-relaxed text-slate-300">This is the new visual lane: tokenized surfaces, interactive card borders, and scan-first hierarchy tuned for dense executive reading.</p>
+			<p class="v2-kicker">Strategic technology • operational systems</p>
+			<h2 class="mt-2 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Turning complex problems into operational advantage.</h2>
+			<p class="mt-3 text-sm leading-relaxed text-slate-300">This lane now follows the final board language: graph-aware structure, concise metadata rails, and dense operational scanning.</p>
 			<div class="mt-4 flex flex-wrap gap-2">
 				<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/')}>Start project</a>
 				<a class="ui-link-btn" href={withBase('/writing/')}>All writing</a>
 			</div>
 		</article>
 		<article class="card v2-rail p-6">
-			<h3 class="v2-rail-title">Build plan (phase 1)</h3>
+			<h3 class="v2-rail-title">Build plan (phase 2)</h3>
 			<ul class="mt-3 v2-list">
 				<li>Keep classic as production default.</li>
-				<li>Ship new components on <code>/v2/</code>.</li>
-				<li>Apply image-driven visual pass (now in progress).</li>
+				<li>Treat the final board as canonical v2 visual direction.</li>
+				<li>Port homepage, writing article, and education table layouts next.</li>
 				<li>Promote sections incrementally once approved.</li>
 			</ul>
 		</article>
+	</section>
+
+	<section class="mt-4 card v2-shell p-5">
+		<div class="flex flex-wrap items-end justify-between gap-2">
+			<h2 class="section-title">Layout adoption map</h2>
+			<p class="text-xs uppercase tracking-[0.08em] text-slate-400">sourced from final board</p>
+		</div>
+		<div class="mt-3 grid gap-3 md:grid-cols-3">
+			<article class="v2-layout-card">
+				<p class="v2-layout-kicker">Homepage</p>
+				<h3>Operational ideas hero + graph node panel</h3>
+				<ul>
+					<li>Dual-column hero + graph panel</li>
+					<li>Path cards beneath primary narrative</li>
+				</ul>
+			</article>
+			<article class="v2-layout-card">
+				<p class="v2-layout-kicker">Writing article</p>
+				<h3>Structured rail with key takeaways</h3>
+				<ul>
+					<li>Left meta rail and right highlights</li>
+					<li>Center long-form body as primary artifact</li>
+				</ul>
+			</article>
+			<article class="v2-layout-card">
+				<p class="v2-layout-kicker">Education / table</p>
+				<h3>Dense data grid with category filters</h3>
+				<ul>
+					<li>Fast sort/filter controls on top</li>
+					<li>Compact rows with clear status/meta chips</li>
+				</ul>
+			</article>
+		</div>
 	</section>
 
 	<section class="mt-4 card v2-shell p-5">
@@ -344,5 +386,30 @@ const cards = [
 		padding: 0.42rem 0.5rem;
 		font-size: 0.72rem;
 		color: rgba(191, 219, 254, 0.97);
+	}
+	.v2-layout-card {
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(10, 15, 26, 0.8);
+		padding: 0.8rem;
+		display: grid;
+		gap: 0.35rem;
+	}
+	.v2-layout-kicker {
+		font-size: 0.62rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(34, 211, 238, 0.92);
+	}
+	.v2-layout-card h3 {
+		font-size: 0.84rem;
+		font-weight: 600;
+		color: rgba(226, 232, 240, 0.98);
+	}
+	.v2-layout-card ul {
+		display: grid;
+		gap: 0.26rem;
+		padding-left: 1rem;
+		font-size: 0.74rem;
+		color: rgba(148, 163, 184, 0.96);
 	}
 </style>
