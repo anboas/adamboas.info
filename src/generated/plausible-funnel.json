@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-04-23T03:54:06.437Z",
+    "generatedAt": "2026-04-23T06:25:18.158Z",
     "siteId": "adamboas.com",
     "dateRange": "30d",
-    "note": "ok (0 events)",
+    "note": "ok (13 events)",
     "triedSiteIds": [
       "adamboas.com",
       "www.adamboas.com",
@@ -11,13 +11,23 @@
     ]
   },
   "eventTotals": {
-    "Contact: Intake Click": 0,
-    "Contact Form: View": 0,
-    "Contact Form: Start": 0,
-    "Contact Form: Submit": 0,
-    "Contact Form: Success": 0,
+    "Contact: Intake Click": 2,
+    "Contact Form: View": 5,
+    "Contact Form: Start": 2,
+    "Contact Form: Submit": 2,
+    "Contact Form: Success": 2,
     "Contact Form: Error": 0,
     "Contact: Email Click": 0
   },
-  "byPage": {}
+  "byPage": {
+    "/contact": {
+      "Contact Form: View": 5,
+      "Contact Form: Success": 2,
+      "Contact Form: Submit": 2,
+      "Contact Form: Start": 2
+    },
+    "/": {
+      "Contact: Intake Click": 2
+    }
+  }
 }
