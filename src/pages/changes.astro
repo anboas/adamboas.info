@@ -49,13 +49,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.03',
+		date: '2026-04-23',
+		title: 'Independent full-site v2 namespace launched',
+		summary: 'Built a parallel v2 site namespace covering the full production route inventory so classic can stay production while v2 evolves independently.',
+		impact: 'You can now browse `/v2/*` across writing, events, opportunities, capabilities, experience, education, status, and supporting pages while the original site remains untouched for current readers.',
+		current: true,
+		tags: ['ui', 'v2', 'parallel-site', 'routing', 'production-safe'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added dedicated v2 shell components: `V2Layout`, `V2Header`, and `V2Footer` for independent navigation context.',
+					'Added `src/pages/v2/[...slug].astro` route inventory mirror to publish the full v2 namespace across static and content-driven routes.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `src/pages/v2/index.astro` to run on the new v2 layout and link to v2-prefixed route targets.',
+					'Expanded generated site output from 95 to 187 pages by publishing mirrored v2 routes.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.02',
 		date: '2026-04-23',
 		title: 'UI v2 final board lock + layout adoption map',
 		summary: 'Integrated the final uploaded design board as canonical reference and translated it into concrete page-level v2 direction markers.',
 		impact: 'The `/v2/` lane now shows both source boards, adopts final messaging/visual framing, and includes a sectioned layout adoption map for homepage, writing article, and education table migration.',
-		current: true,
 		tags: ['ui', 'v2', 'final-board', 'layout', 'migration'],
 		groups: [
 			{

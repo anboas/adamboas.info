@@ -1,0 +1,131 @@
+---
+import { getCollection } from 'astro:content';
+import V2Layout from '../../layouts/V2Layout.astro';
+import UiVersionToggle from '../../components/UiVersionToggle.astro';
+import { withBase } from '../../utils/withBase';
+import { capabilityTopics } from '../../data/capabilities';
+import { education, experience } from '../../data/resume';
+import { buildCanonicalTagGroups } from '../../utils/tags';
+
+function withTrailingSlash(pathname: string) {
+	if (!pathname) return '/';
+	return pathname.endsWith('/') ? pathname : `${pathname}/`;
+}
+
+export async function getStaticPaths() {
+	const normalizeRoute = (pathname: string) => pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+	const routes = new Set<string>();
+	const add = (route: string) => {
+		const normalized = normalizeRoute(route);
+		if (normalized) routes.add(normalized);
+	};
+
+	[
+		'writing',
+		'writing/tags',
+		'events',
+		'events/sources',
+		'opportunities',
+		'capabilities',
+		'experience',
+		'education',
+		'contact',
+		'changes',
+		'status',
+		'status/site-analytics',
+		'sitemap',
+		'credentials',
+		'content-license',
+		'license',
+		'papers',
+		'blog',
+	].forEach(add);
+
+	const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
+	const papers = (await getCollection('papers')).filter((p) => p.data.status === 'published');
+
+	for (const w of writing) {
+		const slug = w.id.split('/').pop();
+		if (slug) add(`writing/${slug}`);
+	}
+	for (const p of papers) {
+		add(`writing/${p.id}`);
+		add(`papers/${p.id}`);
+	}
+
+	const tags = new Set<string>();
+	for (const w of writing) for (const tag of w.data.tags ?? []) tags.add(tag);
+	for (const p of papers) for (const tag of p.data.tags ?? []) tags.add(tag);
+	for (const group of buildCanonicalTagGroups(tags)) add(`writing/tags/${group.slug}`);
+
+	for (const topic of capabilityTopics) add(`capabilities/${topic.slug}`);
+	for (const role of experience) add(`experience/${role.slug}`);
+	for (const cert of education) add(`education/${cert.slug}`);
+
+	return [...routes]
+		.sort((a, b) => a.localeCompare(b))
+		.map((slug) => ({ params: { slug }, props: { slug } }));
+}
+
+const normalizeCurrent = (pathname: string) => pathname.replace(/^\/+/, '').replace(/\/+$/, '');
+
+const slugFromProps = Astro.props.slug as string | undefined;
+const slugFromParams = Astro.params.slug as string | undefined;
+const rawSlug = slugFromProps ?? slugFromParams ?? '';
+const slug = normalizeCurrent(rawSlug);
+
+const segments = slug.split('/').filter(Boolean);
+const section = segments[0] ?? 'home';
+const active = ['writing', 'events', 'opportunities', 'capabilities', 'experience', 'education'].includes(section) ? section : 'home';
+
+const classicPath = withTrailingSlash(`/${slug}`);
+const prettyPath = `/${slug}/`;
+---
+
+<V2Layout title={`UI v2 Mirror • ${prettyPath}`} description={`Independent v2 mirror route for ${prettyPath}`} active={active}>
+	<section class="card v2-mirror-shell p-5">
+		<div class="flex flex-wrap items-start justify-between gap-3">
+			<div>
+				<p class="v2-kicker">Independent v2 site buildout</p>
+				<h1 class="section-title mt-1">{prettyPath}</h1>
+				<p class="mt-2 text-sm text-slate-300">This route is live under the v2 namespace so you can navigate the entire site independently while production remains untouched.</p>
+			</div>
+			<UiVersionToggle current="v2" />
+		</div>
+		<div class="mt-3 flex flex-wrap gap-2">
+			<a class="ui-link-btn ui-link-btn-primary" href={withBase(classicPath)} target="_blank" rel="noopener noreferrer">Open production route</a>
+			<a class="ui-link-btn" href={withBase('/v2/')}>Back to v2 home</a>
+		</div>
+	</section>
+
+	<section class="mt-4 card v2-mirror-shell p-2 sm:p-3">
+		<div class="v2-iframe-frame">
+			<iframe title={`Production mirror ${prettyPath}`} src={withBase(classicPath)} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+</V2Layout>
+
+<style>
+	.v2-mirror-shell {
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(5, 7, 11, 0.95);
+	}
+	.v2-kicker {
+		font-size: 0.66rem;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: rgba(34, 211, 238, 0.95);
+	}
+	.v2-iframe-frame {
+		border: 1px solid rgba(51, 65, 85, 0.88);
+		background: rgba(2, 6, 23, 0.9);
+		overflow: hidden;
+	}
+	.v2-iframe-frame iframe {
+		display: block;
+		width: 100%;
+		height: min(85vh, 1200px);
+		border: 0;
+		background: transparent;
+	}
+</style>

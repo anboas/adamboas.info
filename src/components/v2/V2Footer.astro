@@ -1,0 +1,23 @@
+---
+import { SITE_RELEASE_VERSION } from '../../consts';
+import { withBase } from '../../utils/withBase';
+
+const now = new Date();
+---
+
+<footer class="site-footer border-t border-slate-800 bg-slate-950">
+	<div class="container py-6 text-sm text-slate-400">
+		<div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+			<div>
+				<p>© {now.getFullYear()} Adam Boas · UI v2 preview lane</p>
+				<p class="text-xs text-slate-500">Version {SITE_RELEASE_VERSION}</p>
+			</div>
+			<div class="flex flex-wrap items-center gap-2 text-xs">
+				<a class="footer-link inline-flex h-8 items-center px-2.5" href={withBase('/v2/sitemap/')}>v2 Sitemap</a>
+				<a class="footer-link inline-flex h-8 items-center px-2.5" href={withBase('/v2/changes/')}>v2 Changes</a>
+				<a class="footer-link inline-flex h-8 items-center px-2.5" href={withBase('/v2/status/')}>v2 Status</a>
+				<a class="footer-link inline-flex h-8 items-center px-2.5" href={withBase('/')}>Production site</a>
+			</div>
+		</div>
+	</div>
+</footer>

@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import V2Layout from '../../layouts/V2Layout.astro';
 import UiVersionToggle from '../../components/UiVersionToggle.astro';
 import { withBase } from '../../utils/withBase';
 
@@ -20,7 +19,7 @@ const cards = [
 		kind: w.data.type,
 		desc: w.data.summary,
 		date: w.data.date,
-		href: withBase(`/writing/${w.id.split('/').pop()}/`),
+		href: withBase(`/v2/writing/${w.id.split('/').pop()}/`),
 	})),
 	...papers.map((p) => ({
 		slug: p.id,
@@ -28,7 +27,7 @@ const cards = [
 		kind: 'paper',
 		desc: p.data.description,
 		date: p.data.date,
-		href: withBase(`/writing/${p.id}/`),
+		href: withBase(`/v2/writing/${p.id}/`),
 	})),
 ]
 	.filter((x) => x.slug)
@@ -36,8 +35,7 @@ const cards = [
 	.slice(0, 6);
 ---
 
-<SiteLayout title="Adam Boas - UI v2 Preview" description="Parallel v2 UI preview for adamboas.com upgrade path.">
-	<StickyBrowseBar active="v2" />
+<V2Layout title="Adam Boas - UI v2 Preview" description="Parallel v2 UI preview for adamboas.com upgrade path." active="home">
 
 	<section class="card v2-shell p-5">
 		<div class="flex flex-wrap items-center justify-between gap-3">
@@ -47,6 +45,20 @@ const cards = [
 				<p class="mt-2 text-sm text-slate-300">Classic and v2 now run side-by-side. We can iterate this route live while classic remains stable.</p>
 			</div>
 			<UiVersionToggle current="v2" />
+		</div>
+	</section>
+
+	<section class="mt-4 card v2-shell p-4">
+		<div class="flex flex-wrap gap-2 text-xs">
+			<a class="ui-link-btn" href={withBase('/v2/writing/')}>Writing</a>
+			<a class="ui-link-btn" href={withBase('/v2/events/')}>Events</a>
+			<a class="ui-link-btn" href={withBase('/v2/opportunities/')}>Opportunities</a>
+			<a class="ui-link-btn" href={withBase('/v2/capabilities/')}>Capabilities</a>
+			<a class="ui-link-btn" href={withBase('/v2/experience/')}>Experience</a>
+			<a class="ui-link-btn" href={withBase('/v2/education/')}>Education</a>
+			<a class="ui-link-btn" href={withBase('/v2/contact/')}>Contact</a>
+			<a class="ui-link-btn" href={withBase('/v2/changes/')}>Changes</a>
+			<a class="ui-link-btn" href={withBase('/v2/status/')}>Status</a>
 		</div>
 	</section>
 
@@ -137,8 +149,8 @@ const cards = [
 			<h2 class="mt-2 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Turning complex problems into operational advantage.</h2>
 			<p class="mt-3 text-sm leading-relaxed text-slate-300">This lane now follows the final board language: graph-aware structure, concise metadata rails, and dense operational scanning.</p>
 			<div class="mt-4 flex flex-wrap gap-2">
-				<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/')}>Start project</a>
-				<a class="ui-link-btn" href={withBase('/writing/')}>All writing</a>
+				<a class="ui-link-btn ui-link-btn-primary" href={withBase('/v2/contact/')}>Start project</a>
+				<a class="ui-link-btn" href={withBase('/v2/writing/')}>All writing</a>
 			</div>
 		</article>
 		<article class="card v2-rail p-6">
@@ -188,7 +200,7 @@ const cards = [
 	<section class="mt-4 card v2-shell p-5">
 		<div class="flex flex-wrap items-end justify-between gap-2">
 			<h2 class="section-title">Featured cards (v2 interaction pattern)</h2>
-			<a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/')}>Open writing →</a>
+			<a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/v2/writing/')}>Open writing →</a>
 		</div>
 		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
 			{cards.map((card) => (
@@ -204,7 +216,7 @@ const cards = [
 			))}
 		</div>
 	</section>
-</SiteLayout>
+</V2Layout>
 
 <style>
 	.v2-shell {
