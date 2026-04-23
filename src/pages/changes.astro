@@ -42,13 +42,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.96',
+		date: '2026-04-23',
+		title: 'Writing pill row unification + homepage quick-intents removal',
+		summary: 'Moved all writing filter pills onto the same row as paper/note/memo and standardized active/inactive pill contrast; removed the homepage quick-intents strip.',
+		impact: 'Writing controls now read as one coherent pill system with clearer active state visibility, and homepage hero is cleaner without quick-intent clutter.',
+		current: true,
+		tags: ['writing', 'home', 'ux', 'controls', 'cleanup'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added explicit active color states for density pills (`Compact`, `Comfortable`) and aligned inactive treatment to dull gray.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Moved `Has audio`, `Recent 30d`, and density pills into the same control row as `paper/note/memo` on `/writing/`.',
+					'Removed `Quick intents` strip from homepage hero and tightened associated engagement copy.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.95',
 		date: '2026-04-23',
 		title: 'Writing quick-filter active states: Has audio + Recent 30d',
 		summary: 'Added explicit visual active states for writing quick filters so users can immediately see when `Has audio` or `Recent 30d` is turned on.',
 		impact: 'Filter intent is now obvious at a glance, reducing ambiguity while scanning the writing index controls.',
-		current: true,
 		tags: ['writing', 'filters', 'ux', 'states', 'visual-feedback'],
 		groups: [
 			{

@@ -51,10 +51,14 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 		<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
 		<FilterShell class="writing-index-controls mt-3 p-2.5 md:mt-4 md:p-3">
 			<div class="control-shell-row flex flex-wrap items-center gap-2 md:gap-3">
-				<div class="flex flex-wrap items-center gap-2 text-xs text-slate-300" role="group" aria-label="Filter writing by type">
+				<div class="flex flex-wrap items-center gap-2 text-xs text-slate-300" role="group" aria-label="Filter writing by type and quick state">
 					<button type="button" data-writing-type-toggle="paper" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-paper rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Long-form architecture + reference work" title="Long-form architecture + reference work">paper</button>
 					<button type="button" data-writing-type-toggle="note" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-note rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Short synthesis and research snapshots" title="Short synthesis and research snapshots">note</button>
 					<button type="button" data-writing-type-toggle="memo" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-memo rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Focused briefs and decision-ready analysis" title="Focused briefs and decision-ready analysis">memo</button>
+					<button type="button" data-writing-quick="has-audio" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show entries with audio available" title="Show entries with audio available">Has audio</button>
+					<button type="button" data-writing-quick="recent-30" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show items published in the last 30 days" title="Show items published in the last 30 days">Recent 30d</button>
+					<button type="button" data-writing-density-toggle="compact" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Tighter cards for faster scanning" title="Tighter cards for faster scanning">Compact</button>
+					<button type="button" data-writing-density-toggle="comfortable" aria-pressed="true" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Larger spacing for easier reading" title="Larger spacing for easier reading">Comfortable</button>
 				</div>
 
 				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
@@ -70,18 +74,6 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 						<button type="button" data-writing-tags-toggle aria-pressed="false" class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900">Show tags</button>
 					) : null}
 					<a class="shrink-0 inline-flex h-8 items-center text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
-				</div>
-			</div>
-
-			<div class="control-shell-row mt-2 flex flex-wrap items-center gap-2 text-xs text-slate-300 md:mt-3">
-				<div class="flex flex-wrap items-center gap-2" role="group" aria-label="Quick writing filters">
-					<button type="button" data-writing-quick="has-audio" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show entries with audio available" title="Show entries with audio available">Has audio</button>
-					<button type="button" data-writing-quick="recent-30" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show items published in the last 30 days" title="Show items published in the last 30 days">Recent 30d</button>
-				</div>
-				<div class="flex flex-wrap items-center gap-2 md:ml-auto" role="group" aria-label="Card density">
-					<span class="text-[10px] uppercase tracking-wide text-slate-500">Density</span>
-					<button type="button" data-writing-density-toggle="compact" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Tighter cards for faster scanning" title="Tighter cards for faster scanning">Compact</button>
-					<button type="button" data-writing-density-toggle="comfortable" aria-pressed="true" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Larger spacing for easier reading" title="Larger spacing for easier reading">Comfortable</button>
 				</div>
 			</div>
 
