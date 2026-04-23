@@ -918,6 +918,32 @@ button[data-writing-tag]:hover {
   background: rgba(15, 23, 42, 0.45) !important;
   color: rgba(148, 163, 184, 0.9) !important;
 }
+
+/* Writing quick filters (Has audio / Recent 30d): explicit active state */
+[data-writing-index] .writing-key-pill[data-writing-quick] {
+  transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
+}
+
+[data-writing-index] .writing-key-pill[data-writing-quick][aria-pressed="false"] {
+  border-color: rgba(51, 65, 85, 0.72);
+  background: rgba(2, 6, 23, 0.74);
+  color: rgba(148, 163, 184, 0.92);
+}
+
+[data-writing-index] .writing-key-pill[data-writing-quick="has-audio"][aria-pressed="true"] {
+  border-color: rgba(16, 185, 129, 0.68);
+  background: rgba(6, 78, 59, 0.44);
+  color: rgba(209, 250, 229, 0.98);
+  box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.2) inset;
+}
+
+[data-writing-index] .writing-key-pill[data-writing-quick="recent-30"][aria-pressed="true"] {
+  border-color: rgba(56, 189, 248, 0.66);
+  background: rgba(12, 74, 110, 0.42);
+  color: rgba(224, 242, 254, 0.98);
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.18) inset;
+}
+
 .writing-key-pill[data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;

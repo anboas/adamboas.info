@@ -41,13 +41,39 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.95',
+		date: '2026-04-23',
+		title: 'Writing quick-filter active states: Has audio + Recent 30d',
+		summary: 'Added explicit visual active states for writing quick filters so users can immediately see when `Has audio` or `Recent 30d` is turned on.',
+		impact: 'Filter intent is now obvious at a glance, reducing ambiguity while scanning the writing index controls.',
+		current: true,
+		tags: ['writing', 'filters', 'ux', 'states', 'visual-feedback'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added distinct active color treatments for `Has audio` and `Recent 30d` quick-filter pills when `aria-pressed="true"`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated default/inactive quick-filter pill styling for clearer on/off contrast on `/writing/`.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.94',
 		date: '2026-04-23',
 		title: 'Site analytics simplification + true line chart trends',
 		summary: 'Simplified `/status/site-analytics/` by removing low-signal route dumps and converting the trend sparkline bars into an actual line chart.',
 		impact: 'Dashboard is cleaner and faster to scan, with trend movement represented as a real temporal line while noisy off-sitemap/zero-view tables are removed from the page.',
-		current: true,
 		tags: ['analytics', 'ux', 'line-chart', 'dashboard', 'simplification'],
 		groups: [
 			{
