@@ -72,6 +72,56 @@ const cards = [
 		</figure>
 	</section>
 
+	<section class="mt-4 grid gap-4 xl:grid-cols-3">
+		<article class="card v2-shell p-5">
+			<p class="v2-kicker">System primitive</p>
+			<h3 class="mt-1 text-sm font-semibold uppercase tracking-[0.09em] text-slate-100">Typography scale</h3>
+			<ul class="mt-3 v2-type-list">
+				<li><span>H1</span><strong>48 / 56</strong><em>Inter SemiBold</em></li>
+				<li><span>H2</span><strong>36 / 44</strong><em>Inter SemiBold</em></li>
+				<li><span>H3</span><strong>28 / 36</strong><em>Inter SemiBold</em></li>
+				<li><span>Body</span><strong>16 / 26</strong><em>Inter Regular</em></li>
+				<li><span>Small</span><strong>14 / 22</strong><em>Inter Regular</em></li>
+			</ul>
+		</article>
+		<article class="card v2-shell p-5">
+			<p class="v2-kicker">System primitive</p>
+			<h3 class="mt-1 text-sm font-semibold uppercase tracking-[0.09em] text-slate-100">Spacing + radius</h3>
+			<div class="mt-3 flex flex-wrap gap-2">
+				<span class="v2-chip">4</span>
+				<span class="v2-chip">8</span>
+				<span class="v2-chip">12</span>
+				<span class="v2-chip">16</span>
+				<span class="v2-chip">24</span>
+				<span class="v2-chip">32</span>
+				<span class="v2-chip">48</span>
+				<span class="v2-chip">96</span>
+			</div>
+			<div class="mt-4 grid grid-cols-4 gap-2">
+				<div class="v2-radius" style="--r:4px"><small>4</small></div>
+				<div class="v2-radius" style="--r:8px"><small>8</small></div>
+				<div class="v2-radius" style="--r:12px"><small>12</small></div>
+				<div class="v2-radius" style="--r:16px"><small>16</small></div>
+			</div>
+		</article>
+		<article class="card v2-shell p-5">
+			<p class="v2-kicker">System primitive</p>
+			<h3 class="mt-1 text-sm font-semibold uppercase tracking-[0.09em] text-slate-100">Control states</h3>
+			<div class="mt-3 grid gap-2">
+				<div class="flex flex-wrap gap-2">
+					<button class="v2-btn v2-btn-primary" type="button">Default</button>
+					<button class="v2-btn v2-btn-secondary" type="button">Hover</button>
+					<button class="v2-btn v2-btn-ghost" type="button">Ghost</button>
+				</div>
+				<label class="v2-input-wrap">
+					<span>Search</span>
+					<input class="v2-input" type="text" value="Search anything..." readonly />
+				</label>
+				<div class="v2-alert">Informational message surface</div>
+			</div>
+		</article>
+	</section>
+
 	<section class="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
 		<article class="card v2-hero p-6">
 			<p class="v2-kicker">Solutions Architect</p>
@@ -201,5 +251,98 @@ const cards = [
 		width: 100%;
 		height: auto;
 		object-fit: contain;
+	}
+	.v2-type-list {
+		display: grid;
+		gap: 0.35rem;
+	}
+	.v2-type-list li {
+		display: grid;
+		grid-template-columns: 2.2rem 1fr 1fr;
+		gap: 0.55rem;
+		align-items: baseline;
+		font-size: 0.72rem;
+		padding: 0.32rem 0.4rem;
+		border: 1px solid rgba(30, 41, 59, 0.95);
+		background: rgba(10, 15, 26, 0.78);
+		color: rgba(148, 163, 184, 0.96);
+	}
+	.v2-type-list li strong {
+		font-size: 0.73rem;
+		font-weight: 600;
+		color: rgba(226, 232, 240, 0.97);
+	}
+	.v2-type-list li em {
+		font-style: normal;
+		text-align: right;
+		color: rgba(125, 211, 252, 0.92);
+	}
+	.v2-chip {
+		display: inline-flex;
+		align-items: center;
+		height: 1.35rem;
+		padding: 0 0.44rem;
+		font-size: 0.68rem;
+		border: 1px solid rgba(51, 65, 85, 0.93);
+		background: rgba(10, 15, 26, 0.78);
+		color: rgba(226, 232, 240, 0.96);
+	}
+	.v2-radius {
+		display: grid;
+		place-items: center;
+		height: 2rem;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		border-radius: var(--r);
+		background: rgba(15, 22, 38, 0.84);
+	}
+	.v2-radius small {
+		font-size: 0.62rem;
+		color: rgba(148, 163, 184, 0.96);
+	}
+	.v2-btn {
+		height: 1.7rem;
+		padding: 0 0.62rem;
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		border: 1px solid transparent;
+	}
+	.v2-btn-primary {
+		background: rgba(47, 129, 247, 0.92);
+		border-color: rgba(59, 130, 246, 0.95);
+		color: white;
+	}
+	.v2-btn-secondary {
+		background: rgba(15, 23, 42, 0.88);
+		border-color: rgba(71, 85, 105, 0.95);
+		color: rgba(226, 232, 240, 0.97);
+	}
+	.v2-btn-ghost {
+		background: transparent;
+		border-color: rgba(71, 85, 105, 0.88);
+		color: rgba(148, 163, 184, 0.97);
+	}
+	.v2-input-wrap {
+		display: grid;
+		gap: 0.35rem;
+		font-size: 0.66rem;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		color: rgba(148, 163, 184, 0.96);
+	}
+	.v2-input {
+		height: 1.8rem;
+		border: 1px solid rgba(51, 65, 85, 0.95);
+		background: rgba(10, 15, 26, 0.9);
+		padding: 0 0.5rem;
+		font-size: 0.76rem;
+		color: rgba(226, 232, 240, 0.96);
+	}
+	.v2-alert {
+		border: 1px solid rgba(37, 99, 235, 0.52);
+		background: rgba(30, 58, 138, 0.22);
+		padding: 0.42rem 0.5rem;
+		font-size: 0.72rem;
+		color: rgba(191, 219, 254, 0.97);
 	}
 </style>

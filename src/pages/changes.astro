@@ -47,13 +47,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.01',
+		date: '2026-04-23',
+		title: 'UI v2 primitives section from design-system PDF',
+		summary: 'Translated the uploaded design-system PDF into concrete v2 primitives on the live preview page, including typography, spacing/radius, and control-state surfaces.',
+		impact: 'The `/v2/` lane now reflects the PDF system language with executable UI primitives instead of only reference imagery.',
+		current: true,
+		tags: ['ui', 'v2', 'primitives', 'typography', 'controls'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added new `System primitive` trio on `/v2/`: Typography scale, Spacing + radius, and Control states.',
+					'Added visual primitives for token chips, radius blocks, typed scale rows, button variants, input style, and alert surface.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Promoted `/v2/` from static preview into a functioning design-system sandbox derived from uploaded source artifacts.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.00',
 		date: '2026-04-23',
 		title: 'UI v2 visual direction pass from reference board image',
 		summary: 'Integrated the provided UI design-system image into the live `/v2/` preview lane and translated its visual language into the first token-driven surface update.',
 		impact: 'v2 now reflects your supplied board directly, with an on-page reference panel, matching color token chips, and clearer dark-neon interaction styling for iterative refinement.',
-		current: true,
 		tags: ['ui', 'v2', 'design-system', 'image-reference', 'visual-language'],
 		groups: [
 			{
