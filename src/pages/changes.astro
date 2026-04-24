@@ -54,13 +54,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.08',
+		date: '2026-04-23',
+		title: 'v2 native completion pass: experience, education, and utility redirects',
+		summary: 'Completed the next native v2 conversion wave for profile/credential pages and utility redirects, reducing mirrored fallback to only residual routes.',
+		impact: 'v2 now includes native experience and education index/detail pages plus native credentials/license/content-license utility routes, with mirror catch-all further pruned.',
+		current: true,
+		tags: ['ui', 'v2', 'native-routes', 'experience', 'education', 'utility'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added native v2 experience routes: `src/pages/v2/experience/index.astro` and `src/pages/v2/experience/[slug].astro`.',
+					'Added native v2 education routes: `src/pages/v2/education/index.astro` and `src/pages/v2/education/[slug].astro`.',
+					'Added native v2 utility routes: `src/pages/v2/credentials.astro`, `src/pages/v2/license.astro`, and `src/pages/v2/content-license.astro`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Pruned `src/pages/v2/[...slug].astro` route inventory to remove newly native experience/education/utility routes.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.07',
 		date: '2026-04-23',
 		title: 'v2 native route expansion: writing detail + status + sitemap + changes',
 		summary: 'Continued native v2 conversion by replacing mirrored wrappers on writing detail and core utility/status surfaces.',
 		impact: 'v2 now has native writing detail pages plus native status, site analytics, sitemap, and changelog pages, reducing mirror dependency while preserving production stability.',
-		current: true,
 		tags: ['ui', 'v2', 'native-routes', 'writing-detail', 'status', 'sitemap', 'changes'],
 		groups: [
 			{

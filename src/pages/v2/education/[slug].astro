@@ -1,0 +1,23 @@
+---
+import V2Layout from '../../../layouts/V2Layout.astro';
+import { education } from '../../../data/resume';
+import { withBase } from '../../../utils/withBase';
+
+export async function getStaticPaths() {
+	return education.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+}
+
+const { c } = Astro.props;
+---
+
+<V2Layout title={`Education | ${c.name} (UI v2)`} description={`${c.issuer}${c.year ? ` (${c.year})` : ''}.`} active="education">
+	<article class="card p-8">
+		<header class="flex flex-col gap-3">
+			<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/v2/education/')}>← Education</a>
+			<div class="min-w-0">
+				<h1 class="text-2xl font-semibold text-slate-50">{c.name}</h1>
+				<p class="mt-2 text-slate-300">{c.issuer}{c.year ? ` • ${c.year}` : ''}</p>
+			</div>
+		</header>
+	</article>
+</V2Layout>

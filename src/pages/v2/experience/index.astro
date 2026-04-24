@@ -1,0 +1,52 @@
+---
+import V2Layout from '../../../layouts/V2Layout.astro';
+import { RESUME_CLEARANCE, experience } from '../../../data/resume';
+import { withBase } from '../../../utils/withBase';
+---
+
+<V2Layout title="Experience | Adam Boas (UI v2)" description="Companies and roles." active="experience">
+	<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+		<h1 class="text-2xl font-semibold text-slate-50">Experience</h1>
+		<div class="flex flex-col items-start gap-1">
+			<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Latest resume PDF →</a>
+			<span class="text-[11px] uppercase tracking-wide text-slate-400">Clearance: {RESUME_CLEARANCE}</span>
+		</div>
+	</div>
+
+	<!-- Mobile: stacked cards -->
+	<div class="mt-6 grid gap-3 md:mt-7 md:hidden" data-experience-mobile>
+		{experience.map((r) => (
+			<a class="card block w-full overflow-hidden p-4 hover:border-slate-700" href={withBase(`/v2/experience/${r.slug}/`)}>
+				<div class="flex min-w-0 items-baseline justify-between gap-3">
+					<h2 class="min-w-0 truncate text-base font-semibold text-slate-50">{r.company}</h2>
+					<span class="shrink-0 whitespace-nowrap text-xs text-slate-400">{r.period}</span>
+				</div>
+				<p class="mt-1 break-words text-sm text-slate-300">{r.title}</p>
+			</a>
+		))}
+	</div>
+
+	<!-- Desktop: table -->
+	<div class="card mt-6 hidden overflow-hidden p-0 md:mt-7 md:block">
+		<table class="w-full border-collapse text-sm">
+			<thead class="bg-slate-950/60">
+				<tr>
+					<th class="px-4 py-3 text-left font-semibold text-slate-200">Company</th>
+					<th class="px-4 py-3 text-left font-semibold text-slate-200">Role</th>
+					<th class="px-4 py-3 text-right font-semibold text-slate-200">Period</th>
+				</tr>
+			</thead>
+			<tbody>
+				{experience.map((r) => (
+					<tr class="border-t border-slate-800 even:bg-slate-950/20">
+						<td class="px-4 py-3 text-slate-100">
+							<a class="hover:underline" href={withBase(`/v2/experience/${r.slug}/`)}>{r.company}</a>
+						</td>
+						<td class="px-4 py-3 text-slate-300">{r.title}</td>
+						<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
+					</tr>
+				))}
+			</tbody>
+		</table>
+	</div>
+</V2Layout>

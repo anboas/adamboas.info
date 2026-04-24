@@ -1,0 +1,53 @@
+---
+import V2Layout from '../../layouts/V2Layout.astro';
+---
+
+<V2Layout active="home"
+	title="License | Adam Boas"
+	description="Code and content licensing terms for this site and repository."
+	canonicalHref="https://www.adamboas.com/v2/license/"
+>
+	<section class="mt-2 max-w-4xl">
+		<div class="card p-5 text-sm text-slate-300 license-shell">
+			<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">License</h1>
+
+			<div id="code" class="mt-4 border-t border-slate-800 pt-4 space-y-3">
+				<h2 class="license-subhead">Code</h2>
+				<p>
+					Software code in this repository is licensed under
+					<strong class="text-slate-100">GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)</strong>.
+				</p>
+				<p>
+					Full text:
+					<a href="https://github.com/anboas/adamboas.info/blob/main/LICENSE" target="_blank" rel="noreferrer">LICENSE</a>
+				</p>
+			</div>
+
+			<div id="content" class="mt-5 border-t border-slate-800 pt-4 space-y-3">
+				<h2 class="license-subhead">Writing and non-code content</h2>
+				<p>
+					Writing and non-code content are licensed under
+					<strong class="text-slate-100">CC BY-NC-ND 4.0</strong>, unless a file says otherwise.
+				</p>
+				<p>
+					Full terms:
+					<a href="https://github.com/anboas/adamboas.info/blob/main/CONTENT_LICENSE.md" target="_blank" rel="noreferrer">CONTENT_LICENSE.md</a>
+				</p>
+				<p>
+					Event-tracker entries compile references from public sources. Source owners retain rights to original third-party materials.
+				</p>
+			</div>
+		</div>
+	</section>
+</V2Layout>
+
+<style>
+	.license-subhead {
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.2;
+		color: rgb(248, 250, 252);
+		border-left: 3px solid rgba(0, 196, 196, 0.55);
+		padding-left: 0.65rem;
+	}
+</style>

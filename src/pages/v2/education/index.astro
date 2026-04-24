@@ -1,0 +1,22 @@
+---
+import V2Layout from '../../../layouts/V2Layout.astro';
+import { education } from '../../../data/resume';
+import { withBase } from '../../../utils/withBase';
+---
+
+<V2Layout title="Education | Adam Boas (UI v2)" description="Education and credentials." active="education">
+	<h1 class="text-2xl font-semibold text-slate-50">Education</h1>
+
+	<section class="card mt-6 bg-slate-950/40 p-6 md:mt-7">
+		<ul class="space-y-3 text-sm text-slate-300">
+			{education.map((c) => (
+				<li class="flex flex-col gap-1 border-b border-slate-800 pb-3 md:flex-row md:items-baseline md:justify-between">
+					<span class="text-slate-50">
+						<a class="hover:underline" href={withBase(`/v2/education/${c.slug}/`)}>{c.name}</a>
+					</span>
+					<span class="text-slate-400">{c.issuer}{c.year ? ` • ${c.year}` : ''}</span>
+				</li>
+			))}
+		</ul>
+	</section>
+</V2Layout>
