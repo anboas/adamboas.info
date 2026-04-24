@@ -1,0 +1,47 @@
+{
+  "id": "sam-a63481bc22d44294914857e27fdfa985",
+  "title": "Sources Sought Notice Optical Microscope",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a63481bc22d44294914857e27fdfa985",
+  "opportunity_url": "https://sam.gov/opp/a63481bc22d44294914857e27fdfa985/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a63481bc22d44294914857e27fdfa985/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a63481bc22d44294914857e27fdfa985",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CDRH-2026-134025",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.FOOD AND DRUG ADMINISTRATION.FDA OFFICE OF ACQ  GRANT SVCS",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a63481bc22d44294914857e27fdfa985",
+  "detail_text": "Refer to the attached SSN.",
+  "detail_text_length": 26,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3eac4a7562ba4ce98a6b6e4811a29a19/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3eac4a7562ba4ce98a6b6e4811a29a19/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/04e0be41972284b917d4052fd65af9f7fe05845b330058f6b5f701973727fad3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/04e0be41972284b917d4052fd65af9f7fe05845b330058f6b5f701973727fad3.docx",
+      "file_id": "3eac4a7562ba4ce98a6b6e4811a29a19",
+      "file_name": "Sources_Sought_Notice_Optical_Microscope_CDRH-2026-134025.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19721,
+      "sha256": "04e0be41972284b917d4052fd65af9f7fe05845b330058f6b5f701973727fad3"
+    }
+  ],
+  "_mirror_hash": "9c90ee38d1428702fa7d344ae7978736006718b6e4daeb52a501e5ec1dc09dd6",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.937913+00:00"
+}

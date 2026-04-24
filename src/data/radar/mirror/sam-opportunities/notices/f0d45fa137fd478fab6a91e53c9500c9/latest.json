@@ -1,0 +1,58 @@
+{
+  "id": "sam-f0d45fa137fd478fab6a91e53c9500c9",
+  "title": "Motorola APX 6000 Series Handheld Radios",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0d45fa137fd478fab6a91e53c9500c9",
+  "opportunity_url": "https://sam.gov/opp/f0d45fa137fd478fab6a91e53c9500c9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f0d45fa137fd478fab6a91e53c9500c9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f0d45fa137fd478fab6a91e53c9500c9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N4432626PR00008",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SAN DIEGO.NAVSUP FLT LOG CTR  SAN DIEGO",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0d45fa137fd478fab6a91e53c9500c9",
+  "detail_text": "HSM-78 requires reliable and mission-capable radio communications to support safe and effective flight line operations. Current handheld radio equipment used by flight line personnel, maintenance teams, and Squadron Duty Office personnel has reached end-of-life. Replacing these obsolete systems is mission-critical to ensure safe, effective, and interoperable fixed-base communications. Please review the Sources Sought document and the attachements before submitting your capability statements.",
+  "detail_text_length": 496,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a4622963c6149d59550e10bb1becad1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c70d848a9fbe4377ac5590582ddb8090/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4a4622963c6149d59550e10bb1becad1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2bd777cb08ed566e35c5e3889b1611ece97f24d09c94d3b3065170633791ce66.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2bd777cb08ed566e35c5e3889b1611ece97f24d09c94d3b3065170633791ce66.docx",
+      "file_id": "4a4622963c6149d59550e10bb1becad1",
+      "file_name": "HSM+SOR.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31087,
+      "sha256": "2bd777cb08ed566e35c5e3889b1611ece97f24d09c94d3b3065170633791ce66"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c70d848a9fbe4377ac5590582ddb8090/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/376ce465e0cff6fa583fe80ac6b060fced01539d34d37b255bd365377f3df0e9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/376ce465e0cff6fa583fe80ac6b060fced01539d34d37b255bd365377f3df0e9.docx",
+      "file_id": "c70d848a9fbe4377ac5590582ddb8090",
+      "file_name": "Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49773,
+      "sha256": "376ce465e0cff6fa583fe80ac6b060fced01539d34d37b255bd365377f3df0e9"
+    }
+  ],
+  "_mirror_hash": "2ac3883ab088db88690c132c150404048a186bab8621b4a8be04319ce008615a",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.890563+00:00"
+}

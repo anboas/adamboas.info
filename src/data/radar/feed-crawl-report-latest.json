@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-04-21T13:41:34.017713+00:00",
+  "generatedAt": "2026-04-24T13:43:31.440929+00:00",
   "summary": {
     "total": 19,
-    "ok": 11,
-    "blocked": 8,
-    "failed": 0
+    "ok": 10,
+    "blocked": 6,
+    "failed": 3
   },
   "results": [
     {
@@ -13,14 +13,14 @@
       "category": "official_api",
       "url": "https://api.sam.gov/opportunities/v2/search",
       "crawlEnabled": true,
-      "status": 200,
-      "finalUrl": "https://api.sam.gov/opportunities/v2/search",
-      "contentType": "text/html",
+      "status": null,
+      "finalUrl": null,
+      "contentType": null,
       "blocked": false,
       "yearHits": 0,
       "eventKeywordHits": 0,
-      "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "error": "fast_browser_fetch_not_found",
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "navsea-warfare-centers",
@@ -28,14 +28,14 @@
       "category": "official_pages",
       "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/",
       "crawlEnabled": true,
-      "status": 200,
-      "finalUrl": "https://www.navsea.navy.mil/Home/Warfare-Centers/",
-      "contentType": "text/html",
-      "blocked": true,
+      "status": null,
+      "finalUrl": null,
+      "contentType": null,
+      "blocked": false,
       "yearHits": 0,
       "eventKeywordHits": 0,
-      "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "error": "fast_browser_fetch_not_found",
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "ausa-events",
@@ -43,14 +43,14 @@
       "category": "official_calendar",
       "url": "https://www.ausa.org/meet",
       "crawlEnabled": true,
-      "status": 200,
-      "finalUrl": "https://www.ausa.org/meet",
-      "contentType": "text/html",
-      "blocked": true,
+      "status": null,
+      "finalUrl": null,
+      "contentType": null,
+      "blocked": false,
       "yearHits": 0,
       "eventKeywordHits": 0,
-      "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "error": "fast_browser_fetch_not_found",
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "afcea-events",
@@ -62,10 +62,10 @@
       "finalUrl": "https://www.afcea.org/events",
       "contentType": "text/html; charset=UTF-8",
       "blocked": false,
-      "yearHits": 27,
+      "yearHits": 31,
       "eventKeywordHits": 263,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "afa-events",
@@ -80,7 +80,7 @@
       "yearHits": 21,
       "eventKeywordHits": 30,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "navy-league-events",
@@ -95,7 +95,7 @@
       "yearHits": 6,
       "eventKeywordHits": 40,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "cto-innovation-events",
@@ -110,7 +110,7 @@
       "yearHits": 0,
       "eventKeywordHits": 29,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "same-events",
@@ -125,7 +125,7 @@
       "yearHits": 5,
       "eventKeywordHits": 7,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "asd-events-defense",
@@ -140,7 +140,7 @@
       "yearHits": 83,
       "eventKeywordHits": 179,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "military-expos",
@@ -155,7 +155,7 @@
       "yearHits": 154,
       "eventKeywordHits": 80,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "marine-military-expos",
@@ -167,10 +167,10 @@
       "finalUrl": "https://marinemilitaryexpos.com/",
       "contentType": "text/html; charset=UTF-8",
       "blocked": true,
-      "yearHits": 20,
-      "eventKeywordHits": 17,
+      "yearHits": 21,
+      "eventKeywordHits": 16,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "potomac-officers-club",
@@ -182,10 +182,10 @@
       "finalUrl": "https://www.potomacofficersclub.com/govcon-events/",
       "contentType": "text/html; charset=UTF-8",
       "blocked": true,
-      "yearHits": 122,
+      "yearHits": 121,
       "eventKeywordHits": 237,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "govcio-events",
@@ -200,7 +200,7 @@
       "yearHits": 31,
       "eventKeywordHits": 68,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "ndia-events",
@@ -215,7 +215,7 @@
       "yearHits": 0,
       "eventKeywordHits": 0,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "ndia-specialops26",
@@ -230,7 +230,7 @@
       "yearHits": 0,
       "eventKeywordHits": 0,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "ndia-special-ops-symposium-2026",
@@ -245,7 +245,7 @@
       "yearHits": 0,
       "eventKeywordHits": 0,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "govcio-federal-ai-forum-2026",
@@ -257,10 +257,10 @@
       "finalUrl": "https://govciomedia.com/federal-ai-forum/",
       "contentType": "text/html; charset=UTF-8",
       "blocked": false,
-      "yearHits": 48,
-      "eventKeywordHits": 18,
+      "yearHits": 54,
+      "eventKeywordHits": 19,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "govcio-ai-summit-2026",
@@ -272,10 +272,10 @@
       "finalUrl": "https://govciomedia.com/ai-summit-2026/",
       "contentType": "text/html; charset=UTF-8",
       "blocked": false,
-      "yearHits": 57,
-      "eventKeywordHits": 56,
+      "yearHits": 59,
+      "eventKeywordHits": 57,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     },
     {
       "id": "govevents-calendar",
@@ -290,7 +290,7 @@
       "yearHits": 0,
       "eventKeywordHits": 0,
       "error": null,
-      "fetchedAt": "2026-04-21T13:41:34.017713+00:00"
+      "fetchedAt": "2026-04-24T13:43:31.440929+00:00"
     }
   ]
 }

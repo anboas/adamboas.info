@@ -1,0 +1,45 @@
+{
+  "id": "sam-aa5f7350f9514aa49eadbe88cd0b76d2",
+  "title": "Captive Bolt",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa5f7350f9514aa49eadbe88cd0b76d2",
+  "opportunity_url": "https://sam.gov/opp/aa5f7350f9514aa49eadbe88cd0b76d2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aa5f7350f9514aa49eadbe88cd0b76d2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aa5f7350f9514aa49eadbe88cd0b76d2",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QAB59",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aa5f7350f9514aa49eadbe88cd0b76d2",
+  "detail_text": "0001 ACN 6XM 5306-LW-M04-2477 CAPTIVE BOLT SHELF LIFE 0-00 SEE TECHNICAL REQUIREMENTS IN SECTIONS C, D, E, AND ATTACHMENTS HM QUP ICQ PMT CD PM WM CUD CT UC LP IC UCL SP MK PACK UNIT PKWT UNIT PKCU OPI N 004 AAA 10 1 00 00 BG A A1 A ED O 24 EQQ 0.0 0.000 O PACKAGING IS IN ACCORDANCE WITH MIL-STD-2073 NAVSEA P/N: 5635372-102 (CAPTIVE BOLT) DRAWING CALLS OUT MIL-SPEC BOLT MS16997-144. MUST ADHERE TO THE REGS/SPECS WITHIN DRAWING 5635372 REV_B SHIP TO 0001AA M/F: NUK009-6040-4102 N68733 36 EA RECEIVING OFFICER TRIDENT REFIT FAC SEE CONSIGNMENT INSTRUCTIONS FOR ADDRESS TP: 3 PROJ: ZB7 RDD: 707 0002 ACN 6XM 5306-LW-M04-2478 CAPTIVE BOLT SHELF LIFE 0-00 SEE TECHNICAL REQUIREMENTS IN SECTIONS C, D, E, AND ATTACHMENTS HM QUP ICQ PMT CD PM WM CUD CT UC LP IC UCL SP MK PACK UNIT PKWT UNIT PKCU OPI N 004 AAA 10 1 00 EA 00 0 BS A ED O 00 EQQ 0.0 0.000 O PACKAGING IS IN ACCORDANCE WITH MIL-STD-2073 NAVSEA P/N: 5635372-101 (CAPTIVE BOLT) DRAWING CALLS FOR MIL-SPEC BOLT MS16997-142. MUST ADHERE TO THE REGS/SPECS WITHIN DRAWING 5635372 REV_B SHIP TO 0002AA M/F: NUK009-6040-4101 N68733 70 EA RECEIVING OFFICER TRIDENT REFIT FAC SEE CONSIGNMENT INSTRUCTIONS FOR ADDRESS TP: 3 PROJ: ZB7 RDD: 707",
+  "detail_text_length": 1193,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71b2005429174f7c896e0717a8327339/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71b2005429174f7c896e0717a8327339/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/acf1d2451eccf8ffa1b2748e47bbe578a04ed7b6d099f0719af014e8176bfce6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/acf1d2451eccf8ffa1b2748e47bbe578a04ed7b6d099f0719af014e8176bfce6.pdf",
+      "file_id": "71b2005429174f7c896e0717a8327339",
+      "file_name": "3.01_N0010426QAB59_26080-0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 429386,
+      "sha256": "acf1d2451eccf8ffa1b2748e47bbe578a04ed7b6d099f0719af014e8176bfce6"
+    }
+  ],
+  "_mirror_hash": "d94533c5421ad3d32932136eba4a75b7e04baaf42b19ba6d02560a839b738934",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.978761+00:00"
+}

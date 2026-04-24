@@ -1,0 +1,69 @@
+{
+  "id": "sam-b4a05399497944449227cff25acbcfe7",
+  "title": "R--Sources Sought Notice for FORT HALL_26_1 (12 Reque",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b4a05399497944449227cff25acbcfe7",
+  "opportunity_url": "https://sam.gov/opp/b4a05399497944449227cff25acbcfe7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b4a05399497944449227cff25acbcfe7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b4a05399497944449227cff25acbcfe7",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140D0426Q0348",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Solicitation notice type: Solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b4a05399497944449227cff25acbcfe7",
+  "detail_text": "Appraisal Services on Fort Hall Reservation, Idaho. Case Name: Fort Hall_26_1.",
+  "detail_text_length": 78,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2144dac991d24b86ac0fb92df492dca8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47b4763775a0424099436c37a15c4250/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a6ec9761d26471197c24050778e0ec2/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2144dac991d24b86ac0fb92df492dca8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/da1b4e7765c2580c6c8c090424216c71740cd723ed36e21b3e54bbf718a590ce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/da1b4e7765c2580c6c8c090424216c71740cd723ed36e21b3e54bbf718a590ce.pdf",
+      "file_id": "2144dac991d24b86ac0fb92df492dca8",
+      "file_name": "Sol_140D0426Q0348.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4590786,
+      "sha256": "da1b4e7765c2580c6c8c090424216c71740cd723ed36e21b3e54bbf718a590ce"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/47b4763775a0424099436c37a15c4250/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0df006f4b4a1d58a8fe5c6976fcf8e4548302bb09e04755f5ffb0dd306ff79a3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0df006f4b4a1d58a8fe5c6976fcf8e4548302bb09e04755f5ffb0dd306ff79a3.pdf",
+      "file_id": "47b4763775a0424099436c37a15c4250",
+      "file_name": "B09_SA_26Q0348-A1_-A1-CPs-_0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 454479,
+      "sha256": "0df006f4b4a1d58a8fe5c6976fcf8e4548302bb09e04755f5ffb0dd306ff79a3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a6ec9761d26471197c24050778e0ec2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9be2c3ca53c28e3bc6373567f603c13b0826222c8ae6cfed0ae7465714305c44.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9be2c3ca53c28e3bc6373567f603c13b0826222c8ae6cfed0ae7465714305c44.pdf",
+      "file_id": "8a6ec9761d26471197c24050778e0ec2",
+      "file_name": "Sol_140D0426Q0348_Amd_0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 207189,
+      "sha256": "9be2c3ca53c28e3bc6373567f603c13b0826222c8ae6cfed0ae7465714305c44"
+    }
+  ],
+  "_mirror_hash": "b0d8597ecfe5e4cd2be9689e20bc60667b5293b18a265085da2ba9ffed7dce34",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.014978+00:00"
+}

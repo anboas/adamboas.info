@@ -1,0 +1,47 @@
+{
+  "id": "sam-6b93169f36b844e59f823a2707bb684b",
+  "title": "Test and Evaluation Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6b93169f36b844e59f823a2707bb684b",
+  "opportunity_url": "https://sam.gov/opp/6b93169f36b844e59f823a2707bb684b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6b93169f36b844e59f823a2707bb684b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6b93169f36b844e59f823a2707bb684b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N0018926RW016",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6b93169f36b844e59f823a2707bb684b",
+  "detail_text": "Test and Evaluation Services.",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c910025a88dd41e28c48a854a67dc151/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c910025a88dd41e28c48a854a67dc151/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/246505efb45810d5cc65a42bc6e6189f3eb39622dc520d6a87b16a3de02b90db.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/246505efb45810d5cc65a42bc6e6189f3eb39622dc520d6a87b16a3de02b90db.pdf",
+      "file_id": "c910025a88dd41e28c48a854a67dc151",
+      "file_name": "OPTEVFOR+Synopsis.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 89970,
+      "sha256": "246505efb45810d5cc65a42bc6e6189f3eb39622dc520d6a87b16a3de02b90db"
+    }
+  ],
+  "_mirror_hash": "62b68775e74c71f780742ed4069fd987017610f48626218b6cbd10634ad83725",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.900074+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-c04a09adb79f4119aa43797f35a47e8d",
+  "title": "C--SOUTHEAST REGION IDIQ MULTI-DISCIPLINARY AE DESIGN SERVICES",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c04a09adb79f4119aa43797f35a47e8d",
+  "opportunity_url": "https://sam.gov/opp/c04a09adb79f4119aa43797f35a47e8d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c04a09adb79f4119aa43797f35a47e8d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c04a09adb79f4119aa43797f35a47e8d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140P2026R0055",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.DSC CONTRACTING SERVICES DIVISION",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c04a09adb79f4119aa43797f35a47e8d",
+  "detail_text": "SOUTHEAST REGION IDIQ MULTI-DISCIPLINARY AE DESIGN SERVICES - Phase 1, Request for Qualifications",
+  "detail_text_length": 97,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/311570bcc19145d2b7d2dee953a31ab4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71e4c1a8f6b1485abc3cd0bca830043f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee28022b2ba544da9c43f49d2afc3fa4/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/311570bcc19145d2b7d2dee953a31ab4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146.pdf",
+      "file_id": "311570bcc19145d2b7d2dee953a31ab4",
+      "file_name": "B08_Attch1_SF330-21a_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1073371,
+      "sha256": "18d2956aed7e65f48854dc806dccbc9ebb23147dbeeeb5d0227642c6e920e146"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71e4c1a8f6b1485abc3cd0bca830043f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5f0bd0ff95abcdda61353fbf33b6a83559be7c63ac2c0d40d852662e4eb4292c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5f0bd0ff95abcdda61353fbf33b6a83559be7c63ac2c0d40d852662e4eb4292c.docx",
+      "file_id": "71e4c1a8f6b1485abc3cd0bca830043f",
+      "file_name": "B08_Attch2_PPQ_RFQ_140P2026R0055_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 50370,
+      "sha256": "5f0bd0ff95abcdda61353fbf33b6a83559be7c63ac2c0d40d852662e4eb4292c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee28022b2ba544da9c43f49d2afc3fa4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c3e492dbf3f9663a12843db527f7b0c2005cc11205833e09ee203d83bfed4e27.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c3e492dbf3f9663a12843db527f7b0c2005cc11205833e09ee203d83bfed4e27.pdf",
+      "file_id": "ee28022b2ba544da9c43f49d2afc3fa4",
+      "file_name": "B08_Request_for_Qualifications_-_SER_SB_AE_IDIQ_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 332255,
+      "sha256": "c3e492dbf3f9663a12843db527f7b0c2005cc11205833e09ee203d83bfed4e27"
+    }
+  ],
+  "_mirror_hash": "1662a0379b4dd7cd6969e4b3bf1dfe4870c258badb26e283b0af625793b7ad6b",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.273220+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-86ca4f6ad16341c4aecd4095ba73dca9",
+  "title": "Specialty/Therapy beds",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=86ca4f6ad16341c4aecd4095ba73dca9",
+  "opportunity_url": "https://sam.gov/opp/86ca4f6ad16341c4aecd4095ba73dca9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/86ca4f6ad16341c4aecd4095ba73dca9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "86ca4f6ad16341c4aecd4095ba73dca9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PANHCA26P0000026638",
+  "agency_path": "DEPT OF DEFENSE",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=86ca4f6ad16341c4aecd4095ba73dca9",
+  "detail_text": "Notice of intent Medical Readiness Contracting Office -West, Brooke Army Medical Center intends to award a sole source contract with Arjo Huntleigh, Inc. for medical grade specialty/therapy beds with various accessories (e.g., side rails, grab bars, foot support, and bed alarms) at BAMC. The award will allow safer and more controlled way to handle critically ill ISR Burn patients. This notice is neither a request for quotes nor a solicitation of offers; however, all responsible sources may submit a capability statement, proposal, or quotation, which shall be considered by the agency for future requirements.",
+  "detail_text_length": 614,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f7e7aa907cd64a7d86c297f8cd91519a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f7e7aa907cd64a7d86c297f8cd91519a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa847064ee667970c5c0afe2cdd22497b64c382c54f7d594e7cee0521e167d13.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa847064ee667970c5c0afe2cdd22497b64c382c54f7d594e7cee0521e167d13.docx",
+      "file_id": "f7e7aa907cd64a7d86c297f8cd91519a",
+      "file_name": "Notice+of+intent.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13828,
+      "sha256": "fa847064ee667970c5c0afe2cdd22497b64c382c54f7d594e7cee0521e167d13"
+    }
+  ],
+  "_mirror_hash": "0ee8b3149b5c5eff58a12fd1e0036824d30430a58faccf62833e110f75ae1a91",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.058792+00:00"
+}

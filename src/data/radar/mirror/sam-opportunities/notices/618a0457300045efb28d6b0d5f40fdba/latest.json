@@ -1,0 +1,47 @@
+{
+  "id": "sam-618a0457300045efb28d6b0d5f40fdba",
+  "title": "JP-5 Tanker Trailer and Pump Rental",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=618a0457300045efb28d6b0d5f40fdba",
+  "opportunity_url": "https://sam.gov/opp/618a0457300045efb28d6b0d5f40fdba/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/618a0457300045efb28d6b0d5f40fdba/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "618a0457300045efb28d6b0d5f40fdba",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4215826Q0017",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-03",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=618a0457300045efb28d6b0d5f40fdba",
+  "detail_text": "Rental of JP-5 Tanker Trailer and Pump.",
+  "detail_text_length": 39,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b44e587166834684b44f231c141f481b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b44e587166834684b44f231c141f481b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7ab0c87ddc6f514d1824eaf4e8b24c3d7128d41e2f22713b7d893aa24d54d737.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7ab0c87ddc6f514d1824eaf4e8b24c3d7128d41e2f22713b7d893aa24d54d737.docx",
+      "file_id": "b44e587166834684b44f231c141f481b",
+      "file_name": "Synopsis.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19665,
+      "sha256": "7ab0c87ddc6f514d1824eaf4e8b24c3d7128d41e2f22713b7d893aa24d54d737"
+    }
+  ],
+  "_mirror_hash": "3841b53d67984e37208a4fe0f7c6dc88fa07cb5bf023836e337fcbce6e515f12",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.897234+00:00"
+}

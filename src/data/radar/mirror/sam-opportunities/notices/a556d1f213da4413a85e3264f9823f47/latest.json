@@ -1,0 +1,46 @@
+{
+  "id": "sam-a556d1f213da4413a85e3264f9823f47",
+  "title": "Notice of Intent to Sole Source",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a556d1f213da4413a85e3264f9823f47",
+  "opportunity_url": "https://sam.gov/opp/a556d1f213da4413a85e3264f9823f47/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a556d1f213da4413a85e3264f9823f47/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a556d1f213da4413a85e3264f9823f47",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO AL.USPFO AL PROCUREMENT.W7MT USPFO ACTIVITY ALANG 187",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a556d1f213da4413a85e3264f9823f47",
+  "detail_text": "This is a notice of intent to award a sole source, firm-fixed-price contract to DIRECTIONAL AD-VANTAGE HOLDINGS, LLC. This action is being processed in accordance with the guidance of the revolutionary FAR overhaul, which streamlines procurement for critical government needs. DIRECTIONAL AD-VANTAGE HOLDINGS, LLC is uniquely positioned to fulfill this requirement due to its exclusive advertising rights at the high-traffic locations specified in the scope of work. These locations are critical for reaching the target demographic and achieving the campaign's objectives. Market research indicates that no other vendor has access to these specific advertising spaces, making competition unfeasible. Interested parties who believe they can meet the requirements as stated in this notice may submit a capability statement, proposal, or quotation. This documentation must be submitted by the close of this notice's publication close out date. A determination by the Government not to compete this proposed contract based upon responses to this notice is solely within the discretion of the Government.",
+  "detail_text_length": 1099,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07c3ea0c4e6c4751932eb43a48a528d7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07c3ea0c4e6c4751932eb43a48a528d7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd9e392683efed0bdcae3dca7992d2c9313cb546f560ae6c3746360c38c03852.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd9e392683efed0bdcae3dca7992d2c9313cb546f560ae6c3746360c38c03852.pdf",
+      "file_id": "07c3ea0c4e6c4751932eb43a48a528d7",
+      "file_name": "Limited+Competition+Justification+-+Digital+Advertisement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 83199,
+      "sha256": "dd9e392683efed0bdcae3dca7992d2c9313cb546f560ae6c3746360c38c03852"
+    }
+  ],
+  "_mirror_hash": "3519863783144be9e01eac9fb7b9fdea5df11d9e40eb1dd96c40938a6422b669",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.120280+00:00"
+}

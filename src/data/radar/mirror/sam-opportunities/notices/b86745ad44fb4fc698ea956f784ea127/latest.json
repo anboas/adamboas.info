@@ -1,0 +1,68 @@
+{
+  "id": "sam-b86745ad44fb4fc698ea956f784ea127",
+  "title": "Z1DA--Renovate B26 for Mental Health - 538-23-102  Chillicothe VAMC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b86745ad44fb4fc698ea956f784ea127",
+  "opportunity_url": "https://sam.gov/opp/b86745ad44fb4fc698ea956f784ea127/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b86745ad44fb4fc698ea956f784ea127/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b86745ad44fb4fc698ea956f784ea127",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C25026B0009_Bid_Abstract",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.250-NETWORK CONTRACT OFFICE 10 (36C250)",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b86745ad44fb4fc698ea956f784ea127",
+  "detail_text": "Special Notice to post Bid Abstract and Bid Attendance",
+  "detail_text_length": 54,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c6ded38040f4b36960625753d21f80c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/64acf208435b47ea85f6c7623ff929ae/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cdda0e5ac82840b3af54f1e45efaa900/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c6ded38040f4b36960625753d21f80c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/30492ea3a0648624f01b6e2ab7456aa7ee6fb94b64ef718d830eca6917b8b54f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/30492ea3a0648624f01b6e2ab7456aa7ee6fb94b64ef718d830eca6917b8b54f.pdf",
+      "file_id": "3c6ded38040f4b36960625753d21f80c",
+      "file_name": "36C25026B0009+Bid+Abstract.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27636,
+      "sha256": "30492ea3a0648624f01b6e2ab7456aa7ee6fb94b64ef718d830eca6917b8b54f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/64acf208435b47ea85f6c7623ff929ae/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cb2850060b71378cac6a1025c73fd043cad982bcbc3e2b50966a743d1e0e16c4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cb2850060b71378cac6a1025c73fd043cad982bcbc3e2b50966a743d1e0e16c4.docx",
+      "file_id": "64acf208435b47ea85f6c7623ff929ae",
+      "file_name": "36C25026B0009+Bid+Abstract.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24413,
+      "sha256": "cb2850060b71378cac6a1025c73fd043cad982bcbc3e2b50966a743d1e0e16c4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cdda0e5ac82840b3af54f1e45efaa900/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/262aa0a21ba2747dc372c742023b1e8bc983a2eb6e7d13a4ea4770e05e90dc9c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/262aa0a21ba2747dc372c742023b1e8bc983a2eb6e7d13a4ea4770e05e90dc9c.pdf",
+      "file_id": "cdda0e5ac82840b3af54f1e45efaa900",
+      "file_name": "36C25026B0009+Bid+Attendance.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 206880,
+      "sha256": "262aa0a21ba2747dc372c742023b1e8bc983a2eb6e7d13a4ea4770e05e90dc9c"
+    }
+  ],
+  "_mirror_hash": "d6872919652ca9eb34d9aed294863251022d1e768d684bc9326ecb417c4446db",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.279580+00:00"
+}

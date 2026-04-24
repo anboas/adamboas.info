@@ -1,0 +1,68 @@
+{
+  "id": "sam-3a49bc9689b84f9b8ac993de4b79e560",
+  "title": "4420--Replace RO Water Heat Exchanger",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a49bc9689b84f9b8ac993de4b79e560",
+  "opportunity_url": "https://sam.gov/opp/3a49bc9689b84f9b8ac993de4b79e560/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3a49bc9689b84f9b8ac993de4b79e560/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3a49bc9689b84f9b8ac993de4b79e560",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25026Q0524",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.250-NETWORK CONTRACT OFFICE 10 (36C250)",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a49bc9689b84f9b8ac993de4b79e560",
+  "detail_text": "The purpose of these sources sought is to identify the competition pool for item of supply described in the two attachments. If you company is capable of and interested the work, please send an email to luke.turner@va.gov before the date/time of this notice. Please include the following information with your inquiry: Contact information, Socio-economic status (e.g. small business) and Unique Entity Identifier (UEI) Number. ***END OF SOURCES SOUGHT***",
+  "detail_text_length": 454,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09ecee95055f4f61b5123cd5888ca3de/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/684277e1c63b4b8bb0d5c6e0af087dfc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0e70db689b2496397c2c33c5d413f07/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09ecee95055f4f61b5123cd5888ca3de/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/08285192f6ad9075980b4b267cbb3d836109e06d3b873cda2e91ef5e28903287.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/08285192f6ad9075980b4b267cbb3d836109e06d3b873cda2e91ef5e28903287.docx",
+      "file_id": "09ecee95055f4f61b5123cd5888ca3de",
+      "file_name": "36C25026Q0524.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24577,
+      "sha256": "08285192f6ad9075980b4b267cbb3d836109e06d3b873cda2e91ef5e28903287"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/684277e1c63b4b8bb0d5c6e0af087dfc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f3a4dee3aa64901a8d39453a7de8be8c3602fbb173197e46222227a824af6da4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f3a4dee3aa64901a8d39453a7de8be8c3602fbb173197e46222227a824af6da4.pdf",
+      "file_id": "684277e1c63b4b8bb0d5c6e0af087dfc",
+      "file_name": "SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 135950,
+      "sha256": "f3a4dee3aa64901a8d39453a7de8be8c3602fbb173197e46222227a824af6da4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0e70db689b2496397c2c33c5d413f07/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/81811cf707f61c00007e9dc8c485f498c4c000658e5312e3d378aa325a34a828.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/81811cf707f61c00007e9dc8c485f498c4c000658e5312e3d378aa325a34a828.pdf",
+      "file_id": "e0e70db689b2496397c2c33c5d413f07",
+      "file_name": "Specs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 94037,
+      "sha256": "81811cf707f61c00007e9dc8c485f498c4c000658e5312e3d378aa325a34a828"
+    }
+  ],
+  "_mirror_hash": "3b59194fa9d8c413977b8016907ade3e5804fdf5e7499daa69bdf9927e81334b",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.131962+00:00"
+}

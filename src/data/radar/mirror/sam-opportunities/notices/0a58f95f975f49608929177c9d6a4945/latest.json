@@ -1,0 +1,46 @@
+{
+  "id": "sam-0a58f95f975f49608929177c9d6a4945",
+  "title": "T-38 Wingtips",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a58f95f975f49608929177c9d6a4945",
+  "opportunity_url": "https://sam.gov/opp/0a58f95f975f49608929177c9d6a4945/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0a58f95f975f49608929177c9d6a4945/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0a58f95f975f49608929177c9d6a4945",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA8212-26-R-0003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8212  AFSC OLH PZABA",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0a58f95f975f49608929177c9d6a4945",
+  "detail_text": "Requirement: Production contract for T-38 Wingtips Right-Hand (RH) NSN 1560-01-527-2195XE, 64EA and Left-Hand (LH) NSN 1560-01-527-2194XE, 66EA. Required delivery is 14EA/ month starting May 2027. Sole Source to the Northrup Grumman Corp. CAGE Code 79U29. For justificationm, see the attached Justification & Approval (J&A). for more All responsible sources may submit a quotation, bid, or proposal, as appropriate, which will be considered by the agency.",
+  "detail_text_length": 455,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0f9d1e69d8b426b9b043ba26fc539fc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0f9d1e69d8b426b9b043ba26fc539fc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d27fc24f02f7bd402e43cd28b959c9e581fd023f21ed1e1f4f51aa3ed7cec0f8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d27fc24f02f7bd402e43cd28b959c9e581fd023f21ed1e1f4f51aa3ed7cec0f8.pdf",
+      "file_id": "e0f9d1e69d8b426b9b043ba26fc539fc",
+      "file_name": "JA+T38+Wingtips_4Mar2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4080769,
+      "sha256": "d27fc24f02f7bd402e43cd28b959c9e581fd023f21ed1e1f4f51aa3ed7cec0f8"
+    }
+  ],
+  "_mirror_hash": "c0c0e22dd639fc623e9be15262a15a5cb60a9e24268b00b1eb886f3fbd566e15",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.200370+00:00"
+}

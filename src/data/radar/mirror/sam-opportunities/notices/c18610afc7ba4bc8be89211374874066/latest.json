@@ -1,0 +1,46 @@
+{
+  "id": "sam-c18610afc7ba4bc8be89211374874066",
+  "title": "Q403--EAP Service Contract",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18610afc7ba4bc8be89211374874066",
+  "opportunity_url": "https://sam.gov/opp/c18610afc7ba4bc8be89211374874066/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c18610afc7ba4bc8be89211374874066/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c18610afc7ba4bc8be89211374874066",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24726Q0483",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.247-NETWORK CONTRACT OFFICE 7 (36C247)",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c18610afc7ba4bc8be89211374874066",
+  "detail_text": "ON OR BEFORE APRIL 24, 2026 I WILL POST A SOLICITATION AS A SDVOSB SET ASIDE FOR EMPLOYEES ASSISTANCE PROGRAM. EAP services are extended to family members of employees with alcohol and/or drug problems, and to employees who have family members with alcohol and/or drug problems. For the purpose of the extended services, \"family member\" means the following relatives of the employee: (1) spouse, and spouse's parents; (2) children, including adopted/foster children, and their spouses; (3) parents; (4) brothers and sisters, and their spouses; and (5) any individual related by blood or affinity whose close association with employee is the equivalent of a family relationship. TO BE CONSIDERED FOR AWARD VENDOR MUST BE A VIP VERIFIED SDVOSB ON OR BEFORE THE CLOSING OF THIS SOLICITATION APRIL 28, 2026 12PM EST. PLEASE REVIEW THE SOW INSERTED IN THIS SOLICITATION TO GET A DETAILED DESCRIPTION OF WHAT S REQUIRED. ALL OFFERS ARE TO BE SBMITTED TO QUINCY.ALEXANDER@VA.GOV ON OR BEFORE TUESDAY, APRIL 28, 2026 12PM EST.",
+  "detail_text_length": 1018,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d47a5c5819c24a629718754301a81994/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d47a5c5819c24a629718754301a81994/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18c1323320736921f8db4026a9d10eb88baae65fab8cd283e7003d0aa2de8ed7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18c1323320736921f8db4026a9d10eb88baae65fab8cd283e7003d0aa2de8ed7.docx",
+      "file_id": "d47a5c5819c24a629718754301a81994",
+      "file_name": "36C24726Q0483_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16070,
+      "sha256": "18c1323320736921f8db4026a9d10eb88baae65fab8cd283e7003d0aa2de8ed7"
+    }
+  ],
+  "_mirror_hash": "0d1d07fa5ce1679ae5891e675b15c4a1b19783759c7a3caafacb11c5b2579f21",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.077467+00:00"
+}

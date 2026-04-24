@@ -1,0 +1,56 @@
+{
+  "id": "sam-63da2851461a45808fca4a2b9d5ad7c4",
+  "title": "BEARING, YOKE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63da2851461a45808fca4a2b9d5ad7c4",
+  "opportunity_url": "https://sam.gov/opp/63da2851461a45808fca4a2b9d5ad7c4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/63da2851461a45808fca4a2b9d5ad7c4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "63da2851461a45808fca4a2b9d5ad7c4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFC58",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63da2851461a45808fca4a2b9d5ad7c4",
+  "detail_text": "Procurement of Qty 1 EA, NSN: 1HM 3120-01-651-0757 D4, BEARING, YOKE. See attached solicitation for more details.",
+  "detail_text_length": 113,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/889cb1fe35c34dc4a0552d529c820af8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e84557ad9b764052aeefae5022ee92d1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/889cb1fe35c34dc4a0552d529c820af8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af3b93bcb27f1f03f3391b4aa1dbdfa550a26527e5a2169c80109204bf07d2e0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af3b93bcb27f1f03f3391b4aa1dbdfa550a26527e5a2169c80109204bf07d2e0.pdf",
+      "file_id": "889cb1fe35c34dc4a0552d529c820af8",
+      "file_name": "N0010426QFC580001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262736,
+      "sha256": "af3b93bcb27f1f03f3391b4aa1dbdfa550a26527e5a2169c80109204bf07d2e0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e84557ad9b764052aeefae5022ee92d1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6e7df256fd30b6aefc9f86c9f4f351ef6baf2d2c3f211206a5e991965b9160a0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6e7df256fd30b6aefc9f86c9f4f351ef6baf2d2c3f211206a5e991965b9160a0.pdf",
+      "file_id": "e84557ad9b764052aeefae5022ee92d1",
+      "file_name": "N0010426QFC58.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 943402,
+      "sha256": "6e7df256fd30b6aefc9f86c9f4f351ef6baf2d2c3f211206a5e991965b9160a0"
+    }
+  ],
+  "_mirror_hash": "f417ae54b4b918c96fb122d8a0396c787f6a42dbe6677a27b56229551655bb83",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.976956+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-95c7908884884a8c83b559ad8afc8ad8",
+  "title": "TEARDOWN, EVALUATE, REPAIR AND MODIFY POWER SUPPLY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95c7908884884a8c83b559ad8afc8ad8",
+  "opportunity_url": "https://sam.gov/opp/95c7908884884a8c83b559ad8afc8ad8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/95c7908884884a8c83b559ad8afc8ad8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "95c7908884884a8c83b559ad8afc8ad8",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00104-26-Q-QA99",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=95c7908884884a8c83b559ad8afc8ad8",
+  "detail_text": "SEE ATTACHMENTS",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/61ff494c73234d1e80a10498232bf8ca/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/61ff494c73234d1e80a10498232bf8ca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/55e6e2aa4b41ed17ed2acbfe54b238e733ae80e23c7e534213013b4e0597f66c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/55e6e2aa4b41ed17ed2acbfe54b238e733ae80e23c7e534213013b4e0597f66c.pdf",
+      "file_id": "61ff494c73234d1e80a10498232bf8ca",
+      "file_name": "ZAPPPED.N0010426.QQA99.A0000.M0113830.PDF.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 640952,
+      "sha256": "55e6e2aa4b41ed17ed2acbfe54b238e733ae80e23c7e534213013b4e0597f66c"
+    }
+  ],
+  "_mirror_hash": "c35d80bee6ff5f2cfe437e9852824e23ea5cfc91b9104e433349137faae6fc96",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.919511+00:00"
+}

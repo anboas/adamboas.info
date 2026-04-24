@@ -1,0 +1,46 @@
+{
+  "id": "sam-d00a08b09fb442ada481381e5bd854ea",
+  "title": "Repair MAF and Base Fire Alarms - DSN/CSN, IDIQ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d00a08b09fb442ada481381e5bd854ea",
+  "opportunity_url": "https://sam.gov/opp/d00a08b09fb442ada481381e5bd854ea/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d00a08b09fb442ada481381e5bd854ea/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d00a08b09fb442ada481381e5bd854ea",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA4626-26-R-0012",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4626  341 CONS  LGC",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d00a08b09fb442ada481381e5bd854ea",
+  "detail_text": "The purpose of this effort is to provide design/report documents, installation, programming, and certification to repair the fire protection systems at Malmstrom AFB facilities and Missile Alert Facilities to comply with current Air Force Design Guide, Global Strike/Materials Command Design Directives, Base Standards, and referenced publications. The intent is to provide an upgraded system that fully complies with current USAF design standards, Unified Facilities Criteria (UFC).",
+  "detail_text_length": 483,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9cd403762824d2da7fa20d8b2e4f1a8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c9cd403762824d2da7fa20d8b2e4f1a8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d117309d7593af853f7df0f2b572412363153436a29bad2e7e8218eb95ffa097.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d117309d7593af853f7df0f2b572412363153436a29bad2e7e8218eb95ffa097.pdf",
+      "file_id": "c9cd403762824d2da7fa20d8b2e4f1a8",
+      "file_name": "Sources+Sought_Repair+MAF+and+Base+Fire+Alarms.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 122091,
+      "sha256": "d117309d7593af853f7df0f2b572412363153436a29bad2e7e8218eb95ffa097"
+    }
+  ],
+  "_mirror_hash": "67470c36363691522dcb2cef9b162bda0ad5875d6cc1ad8bf5d56ceabecb5983",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.249336+00:00"
+}

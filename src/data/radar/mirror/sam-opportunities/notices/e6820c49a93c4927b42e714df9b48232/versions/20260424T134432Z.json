@@ -1,0 +1,45 @@
+{
+  "id": "sam-e6820c49a93c4927b42e714df9b48232",
+  "title": "SCREW,CAP,HEXAGON H",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e6820c49a93c4927b42e714df9b48232",
+  "opportunity_url": "https://sam.gov/opp/e6820c49a93c4927b42e714df9b48232/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e6820c49a93c4927b42e714df9b48232/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e6820c49a93c4927b42e714df9b48232",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFB12",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e6820c49a93c4927b42e714df9b48232",
+  "detail_text": "See attached Solicitation.",
+  "detail_text_length": 26,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c2d4bb7165f442ea696666dbbdce345/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c2d4bb7165f442ea696666dbbdce345/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3efae035e1867109e1462ac776eb203c3d0b78745dfa366d5edc66ac216def8d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3efae035e1867109e1462ac776eb203c3d0b78745dfa366d5edc66ac216def8d.pdf",
+      "file_id": "9c2d4bb7165f442ea696666dbbdce345",
+      "file_name": "N0010426QFB12.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 997750,
+      "sha256": "3efae035e1867109e1462ac776eb203c3d0b78745dfa366d5edc66ac216def8d"
+    }
+  ],
+  "_mirror_hash": "48eb4c9c0e3e2407d2c8eb6c929bf21a78bdd30f793763ec4a49d747cedd8e46",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.923127+00:00"
+}

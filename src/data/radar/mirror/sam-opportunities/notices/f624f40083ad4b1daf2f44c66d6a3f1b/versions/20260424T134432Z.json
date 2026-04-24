@@ -1,0 +1,46 @@
+{
+  "id": "sam-f624f40083ad4b1daf2f44c66d6a3f1b",
+  "title": "Starrett Optical Coordinate Measuring Machine",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f624f40083ad4b1daf2f44c66d6a3f1b",
+  "opportunity_url": "https://sam.gov/opp/f624f40083ad4b1daf2f44c66d6a3f1b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f624f40083ad4b1daf2f44c66d6a3f1b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f624f40083ad4b1daf2f44c66d6a3f1b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SP4706-26-Q-0XXX",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DCSO.DCSO ENERGY.DCSO-COLUMBUS-DIVISION-2",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f624f40083ad4b1daf2f44c66d6a3f1b",
+  "detail_text": "This is a pre-solicitation notice, a solicitation will be posted at a late date. The requirement is for (1) one Starrett brandname AVR300 optical coordinate measuring machine, with a workstation and one day of on-site training for the Product Test Center in Columbus, Ohio. Please see the attached Performance Work Statement for the full details. Interested parties do not need to submit a quote at this time, but are encouraged to acknowledge their interest to the POC listed within this pre-solicitation notification.",
+  "detail_text_length": 519,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f7c4ada093e421bbd0f49e399451c30/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f7c4ada093e421bbd0f49e399451c30/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0fc2a2b5e105bdf6f2d52283f64357d9c790de9cf8e4bca9036641d4814c59f7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0fc2a2b5e105bdf6f2d52283f64357d9c790de9cf8e4bca9036641d4814c59f7.pdf",
+      "file_id": "5f7c4ada093e421bbd0f49e399451c30",
+      "file_name": "PWS_OCMM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 193999,
+      "sha256": "0fc2a2b5e105bdf6f2d52283f64357d9c790de9cf8e4bca9036641d4814c59f7"
+    }
+  ],
+  "_mirror_hash": "e8351a8da66e81e77046521101fe943802b14fff0d97502ba6ff8ddc804c9b20",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.226266+00:00"
+}

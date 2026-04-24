@@ -1,0 +1,69 @@
+{
+  "id": "sam-71121a14fd514ad8ac7afab39de2cd00",
+  "title": "Naples FRCS 26",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71121a14fd514ad8ac7afab39de2cd00",
+  "opportunity_url": "https://sam.gov/opp/71121a14fd514ad8ac7afab39de2cd00/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/71121a14fd514ad8ac7afab39de2cd00/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "71121a14fd514ad8ac7afab39de2cd00",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "Naples_FRCS_26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC EUR SWA.NAVFACSYSCOM EUROPE AFRICA CENTRAL",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71121a14fd514ad8ac7afab39de2cd00",
+  "detail_text": "This is a sources sought notice issued with the intent of determining if there are commercially available programmable controllers capable of full functional interface with the existing Honeywell Enterprise Building Integrator (EBI) R700.2 Government licensed software as detailed in Attachment 2 – Technical Information. The attachment describes the required programmable building controller requirements FRCS for NSA Naples. This notice does NOT constitute a request for proposal, request for quote, or invitation for bid. There will not be a specification or drawings made available. The Naval Facilities Engineering Systems Command (NAVFAC) Europe, Africa, Central (EURAFCENT) Naples, Italy has a requirement for programmable and interoperable FRCS at Naval Support Activity (NSA) Naples, Italy and is considering renewal of a class J&A to permit continued standardization around Honeywell brand equipment and associated software in order to enhance the cybersecurity posture IAW NAVFACINST 11000.2. Based on internal Government research, the following factors were considered as the basis to permit other than full and open competition under the authority of 10, U.S.C. 3204(a)(1), Only One Responsible Source/Limited Number of Sources and No Other Type of Property or Services Will Satisfy the Needs of the Agency: 1. Standardization of FRCS is required per NAVFACINST 11000.2. Controller standardization is required principally to enhance the cybersecurity posture at the Installation. 2. The inclusion of controllers from other manufacturers that do not have full functional interface would degrade the functionality of the BCS network. 3. Maintaining multiple solutions is inefficient and creates unnecessary work and overhead that increases the total costs of ownership and labor costs.",
+  "detail_text_length": 1796,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51d108fa6cef460f98621370ebb8a60a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a0b9d1230b5841c584aaf8023849b32d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e38402cb4eeb4a26b7dafee4f9f60c41/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/51d108fa6cef460f98621370ebb8a60a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c3d02d8f312b83aa1bb283483b07de7956943523022f52782f59f82c6667d33.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c3d02d8f312b83aa1bb283483b07de7956943523022f52782f59f82c6667d33.pdf",
+      "file_id": "51d108fa6cef460f98621370ebb8a60a",
+      "file_name": "Sources_Sought_FRCS_Attachment2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 107352,
+      "sha256": "0c3d02d8f312b83aa1bb283483b07de7956943523022f52782f59f82c6667d33"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a0b9d1230b5841c584aaf8023849b32d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9fbb62f7186ce96264546727319018b0ff921f97b2b1563d13f2a3883a46f858.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9fbb62f7186ce96264546727319018b0ff921f97b2b1563d13f2a3883a46f858.pdf",
+      "file_id": "a0b9d1230b5841c584aaf8023849b32d",
+      "file_name": "Sources_Sought_FRCS_Attachment1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 213918,
+      "sha256": "9fbb62f7186ce96264546727319018b0ff921f97b2b1563d13f2a3883a46f858"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e38402cb4eeb4a26b7dafee4f9f60c41/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c74944e1b2b6511a219fb4cbcbd24660d5a30504a648681cf79bb2c7bfba9c46.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c74944e1b2b6511a219fb4cbcbd24660d5a30504a648681cf79bb2c7bfba9c46.pdf",
+      "file_id": "e38402cb4eeb4a26b7dafee4f9f60c41",
+      "file_name": "Sources+Sought+-+NAP+FRCS+26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 158115,
+      "sha256": "c74944e1b2b6511a219fb4cbcbd24660d5a30504a648681cf79bb2c7bfba9c46"
+    }
+  ],
+  "_mirror_hash": "555e2ccb8e4c25ff45d14859e38cc39d878edd90b440cb8a67eb96ec32a20740",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.911580+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-4251ca50c4694fadaa191419b771a4bc",
+  "title": "RESURFACE CAMPUS ROADS LEAVENWORTH",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4251ca50c4694fadaa191419b771a4bc",
+  "opportunity_url": "https://sam.gov/opp/4251ca50c4694fadaa191419b771a4bc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4251ca50c4694fadaa191419b771a4bc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4251ca50c4694fadaa191419b771a4bc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25526Q0354",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4251ca50c4694fadaa191419b771a4bc",
+  "detail_text": "PROMULGATE SOURCES SOUGHT FOR 589A6-26-449 RESURFACE CAMPUS ROADS AT LEAVENWORTH",
+  "detail_text_length": 80,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15a2de281d41470a9e884f271c25b32f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15a2de281d41470a9e884f271c25b32f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ae264c655d5722af093cb5181018d78abd9d0c166c95045a2c725dc4ee69318b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ae264c655d5722af093cb5181018d78abd9d0c166c95045a2c725dc4ee69318b.pdf",
+      "file_id": "15a2de281d41470a9e884f271c25b32f",
+      "file_name": "S02+SOURCES+SOUGHT+36C25526Q0354+589A6-24-449.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 214310,
+      "sha256": "ae264c655d5722af093cb5181018d78abd9d0c166c95045a2c725dc4ee69318b"
+    }
+  ],
+  "_mirror_hash": "694111dd7233610db034389dbf7892d71a8a89722823fb9f1126d2c65f696099",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.078378+00:00"
+}

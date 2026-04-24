@@ -1,0 +1,81 @@
+{
+  "id": "sam-1b619ff313ed4b5a884602fd406b86a8",
+  "title": "Request for Information (RFI) UTILITY CARTS MAINTENANCE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b619ff313ed4b5a884602fd406b86a8",
+  "opportunity_url": "https://sam.gov/opp/1b619ff313ed4b5a884602fd406b86a8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1b619ff313ed4b5a884602fd406b86a8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1b619ff313ed4b5a884602fd406b86a8",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "70Z07926WFD",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.C5I DIVISION 1 ALEXANDRIA",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1b619ff313ed4b5a884602fd406b86a8",
+  "detail_text": "This RFI is being issued by the U.S. Coast Guard (USCG).",
+  "detail_text_length": 56,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/312f0b7c78d643948beb17e876a4a692/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/64dd1a58f1f04609b2e39393431eb380/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86674ad41bd444f69b5c2212b9634180/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d67a0af5a45d4a25a72d38329cfa8ada/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/312f0b7c78d643948beb17e876a4a692/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d67ac5d00f444836f3664e55cefa26c6e2538becc57174db883086993b2f43e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d67ac5d00f444836f3664e55cefa26c6e2538becc57174db883086993b2f43e.pdf",
+      "file_id": "312f0b7c78d643948beb17e876a4a692",
+      "file_name": "RFI_USCG70Z07926WFD_Instructions_USCG_UCM.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137216,
+      "sha256": "8d67ac5d00f444836f3664e55cefa26c6e2538becc57174db883086993b2f43e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/64dd1a58f1f04609b2e39393431eb380/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8900af0418835709ad237ff7680636df51ae6c487eba2c39960c0f8fd80bfc4a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8900af0418835709ad237ff7680636df51ae6c487eba2c39960c0f8fd80bfc4a.docx",
+      "file_id": "64dd1a58f1f04609b2e39393431eb380",
+      "file_name": "RFI_Attach_1_Editable_Contractor_RFI_Survey_Response_Template.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56226,
+      "sha256": "8900af0418835709ad237ff7680636df51ae6c487eba2c39960c0f8fd80bfc4a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86674ad41bd444f69b5c2212b9634180/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7fd91ab6ecfe9a8cc6906393dbb7d68905bc2a10306dc0210b2f2260c5db0067.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7fd91ab6ecfe9a8cc6906393dbb7d68905bc2a10306dc0210b2f2260c5db0067.docx",
+      "file_id": "86674ad41bd444f69b5c2212b9634180",
+      "file_name": "RFI_Attach_2_Industry_Task_Area_Feedback_Template.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27896,
+      "sha256": "7fd91ab6ecfe9a8cc6906393dbb7d68905bc2a10306dc0210b2f2260c5db0067"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d67a0af5a45d4a25a72d38329cfa8ada/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5da3970d0d945ff96ca8f9d9dd0bd86ac68580b6bf6370c2dcb7c1f6ec5986bd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5da3970d0d945ff96ca8f9d9dd0bd86ac68580b6bf6370c2dcb7c1f6ec5986bd.docx",
+      "file_id": "d67a0af5a45d4a25a72d38329cfa8ada",
+      "file_name": "Attach_3_Draft_UCM_PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98813,
+      "sha256": "5da3970d0d945ff96ca8f9d9dd0bd86ac68580b6bf6370c2dcb7c1f6ec5986bd"
+    }
+  ],
+  "_mirror_hash": "8a2495e6c18b46a7a72198334f6985b66660befc3b7e3b019a8565acf0f24c7a",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.964789+00:00"
+}

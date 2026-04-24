@@ -1,0 +1,57 @@
+{
+  "id": "sam-efe43d5840d64cc1a7dfe0d0d4e4c12e",
+  "title": "Y--CUVA 224822 Riverbank Stabilization",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efe43d5840d64cc1a7dfe0d0d4e4c12e",
+  "opportunity_url": "https://sam.gov/opp/efe43d5840d64cc1a7dfe0d0d4e4c12e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/efe43d5840d64cc1a7dfe0d0d4e4c12e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "efe43d5840d64cc1a7dfe0d0d4e4c12e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P2026R0062",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.DSC CONTRACTING SERVICES DIVISION",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=efe43d5840d64cc1a7dfe0d0d4e4c12e",
+  "detail_text": "Riverbank Stabilization",
+  "detail_text_length": 23,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ee5f27ad8b9485f8ae667be3321bc04/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d1a9ee22ec24de1b48ae3f53d9ff5f2/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ee5f27ad8b9485f8ae667be3321bc04/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba241fd24c4a905ecfeb313ec91f864d749be227e76c504ac595daf07b88cf7f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba241fd24c4a905ecfeb313ec91f864d749be227e76c504ac595daf07b88cf7f.pdf",
+      "file_id": "3ee5f27ad8b9485f8ae667be3321bc04",
+      "file_name": "A14_SSN_RELEASED_4_23_26_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 211119,
+      "sha256": "ba241fd24c4a905ecfeb313ec91f864d749be227e76c504ac595daf07b88cf7f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d1a9ee22ec24de1b48ae3f53d9ff5f2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d662266a387cd1812b162251336badcd9043d6b93a3633a5c555809972a89758.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d662266a387cd1812b162251336badcd9043d6b93a3633a5c555809972a89758.docx",
+      "file_id": "8d1a9ee22ec24de1b48ae3f53d9ff5f2",
+      "file_name": "A14_SSN_Survey_Questionnaire_Attachment_1_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59152,
+      "sha256": "d662266a387cd1812b162251336badcd9043d6b93a3633a5c555809972a89758"
+    }
+  ],
+  "_mirror_hash": "12300f449e4009b819fa5de1d604d0fe379a04e5af9cf0c8cb968767e01aaf12",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.236915+00:00"
+}

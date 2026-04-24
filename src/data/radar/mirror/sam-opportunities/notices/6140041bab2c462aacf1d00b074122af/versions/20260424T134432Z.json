@@ -1,0 +1,46 @@
+{
+  "id": "sam-6140041bab2c462aacf1d00b074122af",
+  "title": "Intent to Sole Source Investigative Database Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6140041bab2c462aacf1d00b074122af",
+  "opportunity_url": "https://sam.gov/opp/6140041bab2c462aacf1d00b074122af/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6140041bab2c462aacf1d00b074122af/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6140041bab2c462aacf1d00b074122af",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "M6700126Q0060",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MCIEAST.COMMANDING GENERAL",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6140041bab2c462aacf1d00b074122af",
+  "detail_text": "Marine Corps Installation East (MCIEAST) Regional Contracting Office, Camp Lejeune, NC, hereby gives notice of their intent to award a firm fixed price purchase order to LeadsOnline, LLC (CAGE: 53GT4) on a sole source basis in accordance with the Federal Acquisition Regulation (FAR) Subpart 12.102(a), restricting competition. This procurement is to provide a web-based database service that allows criminal investigators to review local and national transaction histories, to include pawn shops, secondhand stores, scrap metal recycling, and eBay and other online marketplace content. Market research has revealed this contractor is the holder of the copyright for this type of service and the only source capable of providing the required services. Therefore, the Government intends to procure these services on a sole source basis from LeadsOnline, LLC, the copyright holder and only authorized source. THIS NOTICE OF INTENT IS NOT A REQUEST FOR COMPETITIVE QUOTES. However, all responsible sources may submit a capability statement, which if received within five (5) calendar days after the date of the publication of this notice will be considered. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination by the Government not to compete this proposed contract based upon responses received as a result of this notice is solely within the discretion of the Government.",
+  "detail_text_length": 1458,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91960202165f428fa6b3fdb72b84486c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91960202165f428fa6b3fdb72b84486c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc4be1a1d6dcd5cf3388eabf097d09e7e20d2204d4e82b6da5bbe97ee5d6a71f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc4be1a1d6dcd5cf3388eabf097d09e7e20d2204d4e82b6da5bbe97ee5d6a71f.pdf",
+      "file_id": "91960202165f428fa6b3fdb72b84486c",
+      "file_name": "M930516910218+Sole+Source+Determination.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 147058,
+      "sha256": "dc4be1a1d6dcd5cf3388eabf097d09e7e20d2204d4e82b6da5bbe97ee5d6a71f"
+    }
+  ],
+  "_mirror_hash": "ea4e26298ccee064e4659fc5d7b7ab98e7afcab89ea8e732a4da9b20f404dac4",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.154733+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-c73b0521c3d04e17ba3b2577967e75da",
+  "title": "15340 - Mezzanine & Modular Office",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c73b0521c3d04e17ba3b2577967e75da",
+  "opportunity_url": "https://sam.gov/opp/c73b0521c3d04e17ba3b2577967e75da/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c73b0521c3d04e17ba3b2577967e75da/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c73b0521c3d04e17ba3b2577967e75da",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8227-26-Q-1002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8227  AFSC OL H PZIM",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c73b0521c3d04e17ba3b2577967e75da",
+  "detail_text": "Please see attached statement of work (SOW). Please put the notice ID and company name in email subject line.",
+  "detail_text_length": 109,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc0b83b3b2048ac923ce23548012d74/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6666c92d32f4c738a6d866395022607/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bcc0b83b3b2048ac923ce23548012d74/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/eb8cdcfd15ff7d97c792410b6984ca0606052e6660f831d78ddcbd2fc984d1f4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/eb8cdcfd15ff7d97c792410b6984ca0606052e6660f831d78ddcbd2fc984d1f4.docx",
+      "file_id": "bcc0b83b3b2048ac923ce23548012d74",
+      "file_name": "15340+-+238+Mezzanine+and+Modular+Office+SOW.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48169,
+      "sha256": "eb8cdcfd15ff7d97c792410b6984ca0606052e6660f831d78ddcbd2fc984d1f4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6666c92d32f4c738a6d866395022607/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fc4b270a4b53dc2d28bfd2a35493ed5cf45e527cffb008c09a2a6b91ffd19f2c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fc4b270a4b53dc2d28bfd2a35493ed5cf45e527cffb008c09a2a6b91ffd19f2c.docx",
+      "file_id": "e6666c92d32f4c738a6d866395022607",
+      "file_name": "Sources+Sought+-+15340+-+Mezzanine+and+Modular+Office.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28981,
+      "sha256": "fc4b270a4b53dc2d28bfd2a35493ed5cf45e527cffb008c09a2a6b91ffd19f2c"
+    }
+  ],
+  "_mirror_hash": "ddc9cc3dbf3fa191f895b146b0cd3904144ac02fa45c69de3dd6c7352a36d0b7",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.152769+00:00"
+}

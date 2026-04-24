@@ -1,0 +1,67 @@
+{
+  "id": "sam-fc25b77ab04241619e322b29e07ce775",
+  "title": "CAC Readers and Installation Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc25b77ab04241619e322b29e07ce775",
+  "opportunity_url": "https://sam.gov/opp/fc25b77ab04241619e322b29e07ce775/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fc25b77ab04241619e322b29e07ce775/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fc25b77ab04241619e322b29e07ce775",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QL100",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc25b77ab04241619e322b29e07ce775",
+  "detail_text": "The NAICS code is 561621 and the Small Business Standard is 25 (millions of dollars). The proposed contract action is for contractor support for the addition of two access control readers in Mitscher Hall of the United States Naval Academy (USNA) for which the Government intends to solicit and negotiate a Firm, Fixed Price contract with only one source, Convergint Federal, under the authority of FAR 6.103-1. Please review attachments: Attachment I - Combined Synopsis Solicitation Attachment II- Sole Source Justification Attachment III- Wage Determination Quotes shall be submitted to Claudette Jones at claudette.j.jones.civ@us.navy.mil no later than 12:00PM EST 4 May 2026.",
+  "detail_text_length": 680,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22620b99600f4ffaa6790593e0ab570b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69e0a4a557c84e85aa47293a74f8f357/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8693fb8f4ac849c5a19106aa6ac86b80/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22620b99600f4ffaa6790593e0ab570b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e19444bb9fcf700925ce665094cc70db35d1238b999181bb18057284a3d9a61.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e19444bb9fcf700925ce665094cc70db35d1238b999181bb18057284a3d9a61.pdf",
+      "file_id": "22620b99600f4ffaa6790593e0ab570b",
+      "file_name": "Attachment+I+Combined+Synopsis+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1799584,
+      "sha256": "9e19444bb9fcf700925ce665094cc70db35d1238b999181bb18057284a3d9a61"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69e0a4a557c84e85aa47293a74f8f357/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/db9ecd0e308563a5653cbc6ad62b6a05e2768f528a747dd0b0447d532ef1861a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/db9ecd0e308563a5653cbc6ad62b6a05e2768f528a747dd0b0447d532ef1861a.pdf",
+      "file_id": "69e0a4a557c84e85aa47293a74f8f357",
+      "file_name": "Attachment+II+Sole+Source+Justification+redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 893152,
+      "sha256": "db9ecd0e308563a5653cbc6ad62b6a05e2768f528a747dd0b0447d532ef1861a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8693fb8f4ac849c5a19106aa6ac86b80/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ef556cb9930b261b33913f0f80f9f1d7f87aae143b0b561bf8f1ca2a468dea6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ef556cb9930b261b33913f0f80f9f1d7f87aae143b0b561bf8f1ca2a468dea6.pdf",
+      "file_id": "8693fb8f4ac849c5a19106aa6ac86b80",
+      "file_name": "Attachment+III+Wage+Determination+2015-4265.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4832413,
+      "sha256": "1ef556cb9930b261b33913f0f80f9f1d7f87aae143b0b561bf8f1ca2a468dea6"
+    }
+  ],
+  "_mirror_hash": "09753fe32d8cef481dbe1692cb724ec8c694f600dfe42558467b673e0ed3f689",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.949068+00:00"
+}

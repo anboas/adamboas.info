@@ -1,0 +1,45 @@
+{
+  "id": "sam-a15cfd183718407f9418e78eb2440c75",
+  "title": "Purchase of SBC CPCI DUAL CORE, ROFM6120026/1-R2",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a15cfd183718407f9418e78eb2440c75",
+  "opportunity_url": "https://sam.gov/opp/a15cfd183718407f9418e78eb2440c75/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a15cfd183718407f9418e78eb2440c75/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a15cfd183718407f9418e78eb2440c75",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QXB30",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a15cfd183718407f9418e78eb2440c75",
+  "detail_text": "Solicitation for quote and turnaround time for a CASREP Urgent Buy of NICN 7021-LL-H7E-8486, SBC CPCI DUAL CORE SHELF LIFE 0-00, Reference/Part # ROFM6120026/1-R2. Quantity 1 with a request for an option quantity of 1 additional post-award. Item is coded AMC 3R, restricted data rights. The government does not own or posses the data/design/drawings for the item. Any offeror must be a qualified source approved by a DOD-cognizant technical authority. See solicitation PDF for details.",
+  "detail_text_length": 485,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26f8bbf5295e43f29a071e87eb62902e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/26f8bbf5295e43f29a071e87eb62902e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a2a2503a4b5512eb8ccfb222955b4ebef063d8bd8b642cfc185e2139d5d78f5c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a2a2503a4b5512eb8ccfb222955b4ebef063d8bd8b642cfc185e2139d5d78f5c.pdf",
+      "file_id": "26f8bbf5295e43f29a071e87eb62902e",
+      "file_name": "N0010426QXB30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 440629,
+      "sha256": "a2a2503a4b5512eb8ccfb222955b4ebef063d8bd8b642cfc185e2139d5d78f5c"
+    }
+  ],
+  "_mirror_hash": "a7a7c21b8d3047a1e0866be73561a27e6f8fd6f53d6dce7ce05434c85cb29b5a",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.924163+00:00"
+}

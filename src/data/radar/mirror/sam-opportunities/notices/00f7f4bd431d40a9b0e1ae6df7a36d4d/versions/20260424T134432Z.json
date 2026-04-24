@@ -1,0 +1,46 @@
+{
+  "id": "sam-00f7f4bd431d40a9b0e1ae6df7a36d4d",
+  "title": "Phantom Landing Zone Lighting Kit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=00f7f4bd431d40a9b0e1ae6df7a36d4d",
+  "opportunity_url": "https://sam.gov/opp/00f7f4bd431d40a9b0e1ae6df7a36d4d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/00f7f4bd431d40a9b0e1ae6df7a36d4d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "00f7f4bd431d40a9b0e1ae6df7a36d4d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA224726ACF0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4427  60 CONS LGC",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=00f7f4bd431d40a9b0e1ae6df7a36d4d",
+  "detail_text": "THIS SOURCES SOUGHT IS FOR INFORMATIONAL PURPOSES ONLY This Sources Sought is for planning purposes only and shall not be considered as a Request for Quote (RFQ) or a Request for Proposal (RFP) or promise to use a future RFQ or RFP. This Sources Sought is to determine the availability of businesses to include small businesses (including the following subsets, Small Disadvantaged Businesses, HUBZone Firms, certified 8(a), Service-Disabled Veteran-Owned Small Businesses, and Woman Owned Small Businesses) to provide the required products. This does not commit the Government to contract for any supply or service. Responders are advised the Government will not pay for any information or administrative costs incurred in response to this Sources Sought. All costs associated with responding to this Sources Sought will be solely at the interested party's expense. Not responding to this Sources Sought does not preclude participation in any future RFQ, if issued. Respondents are requested to provide the following information to the listed Points of Contact: 1. Business name (official and 'doing business as') 2. Representative name and their contact information (email preferred) 3. Cage code/UEI number 4. Quote for three (3) complete Phantom Landing Zone Lighting Kits. Each kit must include 20 each AZL-15 lights and two (2) each compatible remote transmitters. Any questions regarding this Sources Sought shall be submitted in addition to the information above.",
+  "detail_text_length": 1471,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5c50199b4414027ba9673b338b863ff/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d5c50199b4414027ba9673b338b863ff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/36d8ac2fcc0b0d588bffa9003ccdebe4b22db23144acb83bb281583499689bef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/36d8ac2fcc0b0d588bffa9003ccdebe4b22db23144acb83bb281583499689bef.pdf",
+      "file_id": "d5c50199b4414027ba9673b338b863ff",
+      "file_name": "statement_of_work_landing_zone_lighting.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 84568,
+      "sha256": "36d8ac2fcc0b0d588bffa9003ccdebe4b22db23144acb83bb281583499689bef"
+    }
+  ],
+  "_mirror_hash": "6e0edb9ef67bfeae7c7b73587f43d92a7f3bef72abd945f989d5f11d2919dfd3",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.135408+00:00"
+}

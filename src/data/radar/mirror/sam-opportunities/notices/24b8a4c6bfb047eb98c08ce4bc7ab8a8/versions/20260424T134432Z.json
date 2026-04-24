@@ -1,0 +1,82 @@
+{
+  "id": "sam-24b8a4c6bfb047eb98c08ce4bc7ab8a8",
+  "title": "FSC4730_BPA_RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24b8a4c6bfb047eb98c08ce4bc7ab8a8",
+  "opportunity_url": "https://sam.gov/opp/24b8a4c6bfb047eb98c08ce4bc7ab8a8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/24b8a4c6bfb047eb98c08ce4bc7ab8a8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "24b8a4c6bfb047eb98c08ce4bc7ab8a8",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "FSC4730_BPA_RFI",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-26",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24b8a4c6bfb047eb98c08ce4bc7ab8a8",
+  "detail_text": "The Government, specifically the NAVSUP Weapons Systems Support (WSS) Nuclear Reactor Supply Chain Management Directorate, has an ongoing need for various competitively procured Hose, Pipe, Tube, Lubrication, and Railing Fittings used in the secondary system of the Navy’s nuclear reactors. The Federal Supply Class (FSC) Code for these items is 4730. The NAICS code is 332919. The size standard for this NAICS code is 750 employees. Subject Hose, Pipe, Tube, Lubrication, and Railing Fittings are currently purchased via competitively issued purchase orders. Based on historical data, the Directorate anticipates issuing approximately 772 delivery orders, totaling approximately $16.5 million during the upcoming 5 years. At this time the Government is seeking to issue new BPAs. It is in the best interest of the Government to establish BPAs with multiple suppliers in order to provide maximum practicable competition. No solicitation will be issued as a result of this notice; however, interested small business concerns can view the attached Request for Information (RFI) to determine if its capabilities meet the technical and quality requirements necessary for the manufacture of this complex and critically applied nuclear material.",
+  "detail_text_length": 1239,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d2c461374894b3591514ab6051e00a2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5438ab5ce90f46bfa35a04629f628ca3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eedb11d231144d1a79f38453274b695/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d2db5f1a3d2b4bd78a21aff849cea1ba/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0d2c461374894b3591514ab6051e00a2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b1d44897a78655d44572d1537c4cdce6ce82604143fb07dd16fa977801f31d37.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b1d44897a78655d44572d1537c4cdce6ce82604143fb07dd16fa977801f31d37.pdf",
+      "file_id": "0d2c461374894b3591514ab6051e00a2",
+      "file_name": "FSC4730_BPA_RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 305613,
+      "sha256": "b1d44897a78655d44572d1537c4cdce6ce82604143fb07dd16fa977801f31d37"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5438ab5ce90f46bfa35a04629f628ca3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b7749b892d438e83b8d2bffea66fba95180ab5900ef8380b8c788e57d653bb02.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b7749b892d438e83b8d2bffea66fba95180ab5900ef8380b8c788e57d653bb02.pdf",
+      "file_id": "5438ab5ce90f46bfa35a04629f628ca3",
+      "file_name": "SAMPLE+4730+IRPOD.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 51746,
+      "sha256": "b7749b892d438e83b8d2bffea66fba95180ab5900ef8380b8c788e57d653bb02"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9eedb11d231144d1a79f38453274b695/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/62e414e73e4463ccf3acecce5f4ab206f8e3a91881bf4cb3fd120016704a0fc7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/62e414e73e4463ccf3acecce5f4ab206f8e3a91881bf4cb3fd120016704a0fc7.pdf",
+      "file_id": "9eedb11d231144d1a79f38453274b695",
+      "file_name": "SAMPLE+4730+IRPOD+2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 50198,
+      "sha256": "62e414e73e4463ccf3acecce5f4ab206f8e3a91881bf4cb3fd120016704a0fc7"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d2db5f1a3d2b4bd78a21aff849cea1ba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/06868f29c28e8c7ab1b1c9cc3f99722aedbf5110aeb0b2566d1c2c64a8f1dfcc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/06868f29c28e8c7ab1b1c9cc3f99722aedbf5110aeb0b2566d1c2c64a8f1dfcc.pdf",
+      "file_id": "d2db5f1a3d2b4bd78a21aff849cea1ba",
+      "file_name": "SAMPLE+4730+IRPOD+3.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 46543,
+      "sha256": "06868f29c28e8c7ab1b1c9cc3f99722aedbf5110aeb0b2566d1c2c64a8f1dfcc"
+    }
+  ],
+  "_mirror_hash": "2aa1961c82c33b183d9e128debcbaad897c35a834baea04c7cc9cc39be26f3fa",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.877497+00:00"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "sam-0582d1a909bf433da884932c7122bb56",
+  "title": "Caisson Wagon - DRAFT RPP - Review and Feedback Request",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0582d1a909bf433da884932c7122bb56",
+  "opportunity_url": "https://sam.gov/opp/0582d1a909bf433da884932c7122bb56/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0582d1a909bf433da884932c7122bb56/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0582d1a909bf433da884932c7122bb56",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W51EW7-26-R-A010",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.W6QM MICC TSC",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0582d1a909bf433da884932c7122bb56",
+  "detail_text": "1. BACKGROUND & OBJECTIVE This announcement is a DRAFT Request for Prototype Proposal (RPP) issued by the Mission & Installation Contracting Command (MICC) Theater Support Center (TSC) on behalf of The Old Guard (TOG). In preparation for the upcoming formal release of the Caisson Wagon Request for Prototype Proposal (RPP) under 10 U.S.C. § 4022 (Other Transaction Authority), the Government is seeking industry input on the draft solicitation documents. The objective of this draft release is to ensure that the Government's requirements are clear, realistic, and structured to yield the best possible prototype solutions. Industry feedback on these draft documents is highly valuable and will be utilized to refine the final RPP prior to its formal publication. 2. DRAFT DOCUMENTS PROVIDED FOR REVIEW The following draft documents are attached to this notice for industry review: Industry_Review_Caisson_RPP_v23APR2026 Industry_Review_Caisson_Atch_001_Salient_Characteristics_v23APR2026 Industry_Review_Caisson_Atch_002_Terms_and_Conditions_v23APR2026 QA_DRAFT_RPP_Caisson_Wagons.xlsx 3. IMPORTANT DATES Feedback & Questions Due Wednesday, April 29, 2026, by 12:00 PM ET Anticipated Final RPP Release May 11, 2026 4. INSTRUCTIONS FOR SUBMISSION Interested parties are requested to review the attached documents and provide any questions, comments, or recommendations for improvement. Submission Method: Please submit all feedback via email to the MICC TSC Contracting Team at usarmy.jbsa.acc-micc.mbx.tsc-div1@army.mil. Formatting for Questions: All questions must be submitted using the provided QA_DRAFT_RPP_Caisson_Wagons.xlsx template. This will ensure all questions are properly tracked and addressed. Formatting for General Feedback: When providing specific edits or comments directly on the text of other documents, respondents are highly encouraged to use the \"Track Changes\" or commenting features within the provided draft documents. 5. DISCLAIMER Please note that this communication and posting is for market research and document refinement purposes only. It does not constitute a formal solicitation, Request for Prototype Proposal (RPP), or a promise to issue a contract or agreement. The Government will not reimburse any costs associated with reviewing these drafts, preparing a response, or providing feedback.",
+  "detail_text_length": 2330,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ea1e941bfab448483f084f35339e921/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e6fac4c8efe4195b09fd672076e66ce/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/adc610093a1c4069880725fdf774ab0c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6cf6c131dcc4b6fa206534bb9b0e4fe/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4ea1e941bfab448483f084f35339e921/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/78ec6d613774fba95c28585eead4dc798dffa9e0f675ba931f9187720250f977.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/78ec6d613774fba95c28585eead4dc798dffa9e0f675ba931f9187720250f977.docx",
+      "file_id": "4ea1e941bfab448483f084f35339e921",
+      "file_name": "Industry_Review_Caisson_Atch_002_Terms_and_Conditions_v23APR2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 92292,
+      "sha256": "78ec6d613774fba95c28585eead4dc798dffa9e0f675ba931f9187720250f977"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e6fac4c8efe4195b09fd672076e66ce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c79c2e857c286864ee7745232f4888ffe6b2631c829e2d6b3f13f85513c5e19c.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c79c2e857c286864ee7745232f4888ffe6b2631c829e2d6b3f13f85513c5e19c.xlsx",
+      "file_id": "6e6fac4c8efe4195b09fd672076e66ce",
+      "file_name": "QA_DRAFT_RPP_Caisson_Wagons.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24775,
+      "sha256": "c79c2e857c286864ee7745232f4888ffe6b2631c829e2d6b3f13f85513c5e19c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/adc610093a1c4069880725fdf774ab0c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a5da63349066bdc52aed38682ff72cf855f780ba3e5238f5f777d130ccdae62.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a5da63349066bdc52aed38682ff72cf855f780ba3e5238f5f777d130ccdae62.docx",
+      "file_id": "adc610093a1c4069880725fdf774ab0c",
+      "file_name": "Industry_Review_Caisson_Atch_001_Salient_Characteristics_v23APR2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 47642,
+      "sha256": "2a5da63349066bdc52aed38682ff72cf855f780ba3e5238f5f777d130ccdae62"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6cf6c131dcc4b6fa206534bb9b0e4fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd293841d03ebcad4554b4f4a12325d91a0addab5983c99c17112459e27023f5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd293841d03ebcad4554b4f4a12325d91a0addab5983c99c17112459e27023f5.docx",
+      "file_id": "b6cf6c131dcc4b6fa206534bb9b0e4fe",
+      "file_name": "Industry_Review_Caisson_RPP_v23APR2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 475118,
+      "sha256": "dd293841d03ebcad4554b4f4a12325d91a0addab5983c99c17112459e27023f5"
+    }
+  ],
+  "_mirror_hash": "6bdf406065c2566381ff4e8a5a8089397489630c621fc12305315d6534e499bf",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.095019+00:00"
+}

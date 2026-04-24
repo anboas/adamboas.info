@@ -1,0 +1,79 @@
+{
+  "id": "sam-e8dfb10b241e43ff95eb72783dbdbf88",
+  "title": "U012--OPS - Workforce Skills Assessments (VA-26-00057182)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8dfb10b241e43ff95eb72783dbdbf88",
+  "opportunity_url": "https://sam.gov/opp/e8dfb10b241e43ff95eb72783dbdbf88/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e8dfb10b241e43ff95eb72783dbdbf88/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e8dfb10b241e43ff95eb72783dbdbf88",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0371",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8dfb10b241e43ff95eb72783dbdbf88",
+  "detail_text": "See attached RFI and draft PWS.",
+  "detail_text_length": 31,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24d47462d267413bb827b9716ad8d6ee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6295d66b3db94139965fc4ce7ada1b28/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10a37f6524b43d8af236d98625549f5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dbd884833542491988c10be7cf98bbc2/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24d47462d267413bb827b9716ad8d6ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/005b55195439960bcae512852df0e2cedfc98e4f2f25c12cf60e3065e6f38f07.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/005b55195439960bcae512852df0e2cedfc98e4f2f25c12cf60e3065e6f38f07.docx",
+      "file_id": "24d47462d267413bb827b9716ad8d6ee",
+      "file_name": "Draft+PWS+-+OPS+Skills+Assessment.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18425,
+      "sha256": "005b55195439960bcae512852df0e2cedfc98e4f2f25c12cf60e3065e6f38f07"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6295d66b3db94139965fc4ce7ada1b28/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea1e44b7f1fce64f8768053cb38d367d1b5177ed7e7a989815fa60a06a810fd0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea1e44b7f1fce64f8768053cb38d367d1b5177ed7e7a989815fa60a06a810fd0.docx",
+      "file_id": "6295d66b3db94139965fc4ce7ada1b28",
+      "file_name": "36C10B26Q0371_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14290,
+      "sha256": "ea1e44b7f1fce64f8768053cb38d367d1b5177ed7e7a989815fa60a06a810fd0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d10a37f6524b43d8af236d98625549f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e3581d1c33d81163c6ee819eb246b473d581d99e2c7b3c4214ee08ab5f49bf7e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e3581d1c33d81163c6ee819eb246b473d581d99e2c7b3c4214ee08ab5f49bf7e.pdf",
+      "file_id": "d10a37f6524b43d8af236d98625549f5",
+      "file_name": "RFI+-+OPS+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 133498,
+      "sha256": "e3581d1c33d81163c6ee819eb246b473d581d99e2c7b3c4214ee08ab5f49bf7e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dbd884833542491988c10be7cf98bbc2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/27f00cd7d44b47302f62fb68246d478c65609c11fc46473b47c0030e55279c31.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/27f00cd7d44b47302f62fb68246d478c65609c11fc46473b47c0030e55279c31.docx",
+      "file_id": "dbd884833542491988c10be7cf98bbc2",
+      "file_name": "36C10B26Q0371.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14303,
+      "sha256": "27f00cd7d44b47302f62fb68246d478c65609c11fc46473b47c0030e55279c31"
+    }
+  ],
+  "_mirror_hash": "9b05732a153d95646dd6596cbc95dffd8b89fe6d5161234dd50b5a75cc2010a4",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.144564+00:00"
+}

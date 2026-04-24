@@ -1,0 +1,58 @@
+{
+  "id": "sam-23105125170c42688c52fa56babd45cc",
+  "title": "SOURCES SOUGHT - Soil Sample Analysis",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=23105125170c42688c52fa56babd45cc",
+  "opportunity_url": "https://sam.gov/opp/23105125170c42688c52fa56babd45cc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/23105125170c42688c52fa56babd45cc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "23105125170c42688c52fa56babd45cc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "1232SA26Q0499",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.AGRICULTURAL RESEARCH SERVICE.USDA ARS AFM APD",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=23105125170c42688c52fa56babd45cc",
+  "detail_text": "A market survey is being conducted to determine if there are adequate Small Business, contractors available for a proposed project who meet the specific criteria outlined below. All business sizes are invited to participate. This is not a solicitation Announcement or Request for Proposal. It does not constitute any commitment by the Government. No award will result from this notice. The purpose is to conduct market research to gain knowledge of potentially qualified sources. Responses to this Sources Sought Notice will be used by the Government to make an appropriate acquisition decision. The USDA Agricultural Research Service (ARS) will not award a contract on the basis of responses or pay for the preparation of any information submitted. Respondents will not be notified of the results of this notice. After completing an analysis of the responses, the Government will determine whether to limit competition small business firms, or to proceed with issuing an unrestricted solicitation, inviting full and open competition. SOIL SAMPLE ANALYSIS – COLUMBIA MO. SEE “Attachment 1 Performance Work Statement and QASP.pdf” and “1232SA26Q0499 Capability Survey.pdf” PLEASE SUBMIT, AT MINIMUM, THE COMPLETED “1232SA26Q0499 Capability Survey.pdf” document. Companies who have the experience, as well as an interest in doing business with ARS, should submit the completed 1232SA26Q0499 Capability Survey.pdf” document and any relevant short statements regarding the company’s ability to demonstrate their expertise and experience in relation to the areas specified in this notice. Responses should be submitted via email to christopher.c.turner@usda.gov only by THE DATE OFFERS DUE indicated in the sam.gov posting with “1232SA26Q0499 Sources Sought” in the Email Subject Line.",
+  "detail_text_length": 1780,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cdf508da5f0431d893eb8cc79e2cd1f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/34954a7496294da681e4825f030c2502/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1cdf508da5f0431d893eb8cc79e2cd1f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/55b5680d204d72977c63563191953840b35b80d8e57efd018826132533d41119.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/55b5680d204d72977c63563191953840b35b80d8e57efd018826132533d41119.pdf",
+      "file_id": "1cdf508da5f0431d893eb8cc79e2cd1f",
+      "file_name": "Attachment+1+Performance+Work+Statement+and+QASP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 251374,
+      "sha256": "55b5680d204d72977c63563191953840b35b80d8e57efd018826132533d41119"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/34954a7496294da681e4825f030c2502/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dfd3d8b98211df6996bd2b134da5def57af1fc81525fe3ee4e14f93457f0e443.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dfd3d8b98211df6996bd2b134da5def57af1fc81525fe3ee4e14f93457f0e443.pdf",
+      "file_id": "34954a7496294da681e4825f030c2502",
+      "file_name": "1232SA26Q0499+Capabilty+Survey.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 80855,
+      "sha256": "dfd3d8b98211df6996bd2b134da5def57af1fc81525fe3ee4e14f93457f0e443"
+    }
+  ],
+  "_mirror_hash": "3504ab3738736bacceee5690d07d9304a4f15642811c42623b79dffe8a182c5f",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.937395+00:00"
+}

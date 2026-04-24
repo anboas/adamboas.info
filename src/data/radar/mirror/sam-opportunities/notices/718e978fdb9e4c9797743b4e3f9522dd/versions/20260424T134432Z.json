@@ -1,0 +1,57 @@
+{
+  "id": "sam-718e978fdb9e4c9797743b4e3f9522dd",
+  "title": "4CAB Petroleum Oil and Lubricant Shelter Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=718e978fdb9e4c9797743b4e3f9522dd",
+  "opportunity_url": "https://sam.gov/opp/718e978fdb9e4c9797743b4e3f9522dd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/718e978fdb9e4c9797743b4e3f9522dd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "718e978fdb9e4c9797743b4e3f9522dd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC-26-P-0000043759",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT CARSON",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=718e978fdb9e4c9797743b4e3f9522dd",
+  "detail_text": "The contractor shall remove outdated heating and electrical components and install new, fully functional systems tailored to each shelter’s needs. Work includes replacing the existing 10kW, 34K BTU electric heaters in Shelters 1 and 2; installing new non‑explosion‑proof light and fan switch kits (two‑switch assemblies) in all applicable shelters; and providing new explosion‑proof interior light assemblies in Shelters 2 and 3. All repairs must ensure the shelters meet operational requirements for the safe storage of petroleum, oil, and lubricants and restore reliable environmental control across the facility.",
+  "detail_text_length": 615,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8fa71d840b1e44039b4c687d7cff0eba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f917c23145443ac8f0a627df387bfdd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8fa71d840b1e44039b4c687d7cff0eba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ce199a69156b297e245eda90b9811b515e867c60dc82886497379c43a64b12ea.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ce199a69156b297e245eda90b9811b515e867c60dc82886497379c43a64b12ea.docx",
+      "file_id": "8fa71d840b1e44039b4c687d7cff0eba",
+      "file_name": "INITIAL+-+POL+Shelter+PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 72347,
+      "sha256": "ce199a69156b297e245eda90b9811b515e867c60dc82886497379c43a64b12ea"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f917c23145443ac8f0a627df387bfdd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/47d9ee6f6eba51c138401c9b28a6661ffceb5e6293dedac00f38a5b0b7fbe8df.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/47d9ee6f6eba51c138401c9b28a6661ffceb5e6293dedac00f38a5b0b7fbe8df.docx",
+      "file_id": "9f917c23145443ac8f0a627df387bfdd",
+      "file_name": "Sources+Sought+Notice_+1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67376,
+      "sha256": "47d9ee6f6eba51c138401c9b28a6661ffceb5e6293dedac00f38a5b0b7fbe8df"
+    }
+  ],
+  "_mirror_hash": "6854ed95816407d113c2317e1891fa956fa4be3b309f9be92427c51ebfe7d5a4",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.109498+00:00"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "sam-f4aa0b26e176448abb991a9b06fb0145",
+  "title": "Servers",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4aa0b26e176448abb991a9b06fb0145",
+  "opportunity_url": "https://sam.gov/opp/f4aa0b26e176448abb991a9b06fb0145/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f4aa0b26e176448abb991a9b06fb0145/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f4aa0b26e176448abb991a9b06fb0145",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6883626Q0015",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC JACKSONVILLE.NAVSUP FLT LOG CTR JACKSONVILLE",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f4aa0b26e176448abb991a9b06fb0145",
+  "detail_text": "This solicitation has been canceled.",
+  "detail_text_length": 36,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0169f8d2d7b14bcdb62bb7d754d839f4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c0e64842c604deaad2376db9d0c9549/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a5b9879842a4717971307641dfe6c29/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/65c4c765827d4f7db8330ede9aae2d23/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0169f8d2d7b14bcdb62bb7d754d839f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ab708c8b613dc2d8889bf8035763cf7f8ff60a8455ca151fc16613f492f899d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ab708c8b613dc2d8889bf8035763cf7f8ff60a8455ca151fc16613f492f899d.pdf",
+      "file_id": "0169f8d2d7b14bcdb62bb7d754d839f4",
+      "file_name": "Solicitation+-+N6883626Q0015.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1879448,
+      "sha256": "1ab708c8b613dc2d8889bf8035763cf7f8ff60a8455ca151fc16613f492f899d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3c0e64842c604deaad2376db9d0c9549/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6c0e2e2646eee353eee93ea442226142bce8563e7c208f36e05dd281154c181e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6c0e2e2646eee353eee93ea442226142bce8563e7c208f36e05dd281154c181e.pdf",
+      "file_id": "3c0e64842c604deaad2376db9d0c9549",
+      "file_name": "2.05+Industry+Questions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 72574,
+      "sha256": "6c0e2e2646eee353eee93ea442226142bce8563e7c208f36e05dd281154c181e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5a5b9879842a4717971307641dfe6c29/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9fefd0a46935e3ee9d6e40d8f42ae180e1dda8ad71a33dbe0b6894b405b9b137.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9fefd0a46935e3ee9d6e40d8f42ae180e1dda8ad71a33dbe0b6894b405b9b137.pdf",
+      "file_id": "5a5b9879842a4717971307641dfe6c29",
+      "file_name": "2.04+Amendment.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 609364,
+      "sha256": "9fefd0a46935e3ee9d6e40d8f42ae180e1dda8ad71a33dbe0b6894b405b9b137"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/65c4c765827d4f7db8330ede9aae2d23/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7542dc0d98e046d864e571d1c011459da7eafc2ccbf96841bdf38f747c45b42c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7542dc0d98e046d864e571d1c011459da7eafc2ccbf96841bdf38f747c45b42c.pdf",
+      "file_id": "65c4c765827d4f7db8330ede9aae2d23",
+      "file_name": "Brand+Name+Justification_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 805637,
+      "sha256": "7542dc0d98e046d864e571d1c011459da7eafc2ccbf96841bdf38f747c45b42c"
+    }
+  ],
+  "_mirror_hash": "a7b9a30b6b4bf578cdb8fc3fb81fdf31e43b73c90e649905ceebef3f50c2f8af",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:43.925404+00:00"
+}

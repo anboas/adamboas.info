@@ -1,0 +1,57 @@
+{
+  "id": "sam-ab336c6b6a624391a4dae0bf8f4c8a6f",
+  "title": "Dental chairs",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab336c6b6a624391a4dae0bf8f4c8a6f",
+  "opportunity_url": "https://sam.gov/opp/ab336c6b6a624391a4dae0bf8f4c8a6f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ab336c6b6a624391a4dae0bf8f4c8a6f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ab336c6b6a624391a4dae0bf8f4c8a6f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1525567",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.PHOENIX AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab336c6b6a624391a4dae0bf8f4c8a6f",
+  "detail_text": "Dental chairs and accessories - See statement of work for complete details",
+  "detail_text_length": 74,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/08100cfc167646af8eca3b6a6079e1cf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15d743862c864beb8ee5c132ef0f319b/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/08100cfc167646af8eca3b6a6079e1cf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a23a12b6f8441cf68c83cc03abad051c969324d0139912122d4c81a5180275ff.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a23a12b6f8441cf68c83cc03abad051c969324d0139912122d4c81a5180275ff.pdf",
+      "file_id": "08100cfc167646af8eca3b6a6079e1cf",
+      "file_name": "Statement+of+Work-A-dec+Dental+Chairs.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 216428,
+      "sha256": "a23a12b6f8441cf68c83cc03abad051c969324d0139912122d4c81a5180275ff"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15d743862c864beb8ee5c132ef0f319b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b9bb931b73e3c43ea8a2166c3f34f9acc874b0a60523059b2943ca6e7a52e90.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b9bb931b73e3c43ea8a2166c3f34f9acc874b0a60523059b2943ca6e7a52e90.pdf",
+      "file_id": "15d743862c864beb8ee5c132ef0f319b",
+      "file_name": "ISBEE+FBO+Sources+Sought+FY26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 260408,
+      "sha256": "8b9bb931b73e3c43ea8a2166c3f34f9acc874b0a60523059b2943ca6e7a52e90"
+    }
+  ],
+  "_mirror_hash": "1084cfa80a17d3cec49e6931224cd37edf597896f8d38e2cb5ab6f6c79511549",
+  "_mirror_run_id": "20260424T134432Z",
+  "_mirror_recorded_at": "2026-04-24T13:49:44.095622+00:00"
+}
