@@ -3565,6 +3565,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		margin-top: 0.6rem;
 		max-height: 65vh;
 		overflow: auto;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		-webkit-overflow-scrolling: touch;
 		border: 1px solid rgba(51, 65, 85, 0.72);
 	}
 	.opp-table {
@@ -4192,6 +4195,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		}
 		.opp-table {
 			font-size: 0.67rem;
+			min-width: 64rem;
+		}
+		.opp-table-wrap.opp-table-mode-compact .opp-table {
+			min-width: 52rem;
+		}
+		.opp-table [data-col='sol'],
+		.opp-table [data-col='agency'],
+		.opp-table [data-col='events'],
+		.opp-table [data-col='signals'] {
+			display: none;
 		}
 		.opp-chart {
 			height: 10rem;

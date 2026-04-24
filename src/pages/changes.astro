@@ -55,13 +55,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.09',
+		date: '2026-04-24',
+		title: 'Responsive edge-case pass on mobile nav + opportunity table ergonomics',
+		summary: 'Continued report closure with responsive behavior hardening on mobile navigation overflow and dense opportunity-table handling.',
+		impact: 'Mobile browse tabs now avoid negative-margin overflow behavior, and the opportunities table now behaves more predictably on small screens with reduced default column density and improved horizontal-scroll containment.',
+		current: true,
+		tags: ['responsive', 'mobile', 'opportunities', 'ux', 'consistency'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added touch/contain scroll behavior on opportunities table wrapper (`overscroll-behavior-x: contain`, momentum scrolling) for cleaner small-screen horizontal navigation.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Removed negative-margin mobile browse-bar wrapper offsets in `StickyBrowseBar.astro` to reduce edge overflow artifacts.',
+					'Reduced mobile opportunities table minimum widths and hid low-priority columns on narrow screens (`Sol #`, `Agency`, `Events`, `Signals`) for better scanability.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.08',
 		date: '2026-04-24',
 		title: 'Report continuation: empty-state consistency + broader a11y route coverage',
 		summary: 'Extended the report pass with more consistent empty-state recovery actions, map-view labeling alignment, and expanded automated axe coverage to additional showcase routes.',
 		impact: 'Events now provides clear reset affordances in both list and calendar empty states, map language is consistent (`Map View`), live result counters are announced for assistive tech, and a11y CI now scans capabilities/opportunities surfaces too.',
-		current: true,
 		tags: ['ux', 'consistency', 'events', 'opportunities', 'a11y'],
 		groups: [
 			{
