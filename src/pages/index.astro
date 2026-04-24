@@ -86,10 +86,6 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 				<p class="mt-4 text-lg leading-relaxed text-slate-300">
 					Warfighter lethality through trusted autonomy, control planes, and execution at tempo.
 				</p>
-				<div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-300">
-					<span class="ui-pill">For customers + employers</span>
-					<span class="ui-pill">For readers + technical audiences</span>
-				</div>
 				<div class="mt-5 flex flex-wrap items-center gap-3">
 					<a data-track="Contact: Intake Click" href={withBase('/contact/?intent=consulting')} class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold">
 						Start project
@@ -115,41 +111,6 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 		</div>
 	</section>
 
-	<section class="mt-6 card p-6">
-		<h2 class="section-title">How to use this site</h2>
-		<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">
-			This homepage is a mission summary. Deeper pages are organized by intent: customer-facing capabilities, operational tools,
-			and background proof (experience, education, writing).
-		</p>
-		<div class="mt-4 grid gap-3 md:grid-cols-3">
-			<div class="card p-4">
-				<p class="text-sm font-semibold text-slate-100">Customer + employer lens</p>
-				<p class="mt-2 text-sm text-slate-300">Start with capabilities and engagement, then validate fit via experience and education.</p>
-				<div class="mt-3 flex flex-wrap gap-2 text-xs font-semibold">
-					<a href={withBase('/capabilities/')} class="ui-link-btn px-2.5">Capabilities</a>
-					<a href={withBase('/experience/')} class="ui-link-btn px-2.5">Experience</a>
-					<a href={withBase('/education/')} class="ui-link-btn px-2.5">Education</a>
-				</div>
-			</div>
-			<div class="card p-4">
-				<p class="text-sm font-semibold text-slate-100">Reader + background lens</p>
-				<p class="mt-2 text-sm text-slate-300">Use writing and papers for architecture, policy, and implementation viewpoints.</p>
-				<div class="mt-3 flex flex-wrap gap-2 text-xs font-semibold">
-					<a href={withBase('/writing/')} class="ui-link-btn px-2.5">Writing</a>
-					<a href={withBase('/papers/')} class="ui-link-btn px-2.5">Papers</a>
-					<a href={withBase('/files/adam-boas-resume.pdf')} class="ui-link-btn px-2.5">Resume PDF</a>
-				</div>
-			</div>
-			<div class="card p-4">
-				<p class="text-sm font-semibold text-slate-100">Operational tools</p>
-				<p class="mt-2 text-sm text-slate-300">Events and opportunities are internal capability surfaces built to support delivery and market awareness.</p>
-				<div class="mt-3 flex flex-wrap gap-2 text-xs font-semibold">
-					<a href={withBase('/events/')} class="ui-link-btn px-2.5">Events</a>
-					<a href={withBase('/opportunities/')} class="ui-link-btn px-2.5">Opportunities</a>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<div class="mt-10 grid gap-6 md:grid-cols-2">
 		<section class="card p-6">
