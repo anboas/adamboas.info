@@ -758,27 +758,47 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			</div>
 		</div>
 
-		<div class="opp-kpis mt-4">
-			<div class="opp-kpi"><span class="opp-kpi-label">Unique opportunities</span><strong id="opp-kpi-total">{opportunities.length}</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Displayed</span><strong id="opp-kpi-displayed">{opportunities.length}</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Gem candidates</span><strong id="opp-kpi-gems">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Events with SAM cache</span><strong>{eventsWithSam}</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">With deep text</span><strong id="opp-kpi-deep">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">With attachments</span><strong id="opp-kpi-files">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Pursue now</span><strong id="opp-kpi-pursue">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Rows with gov POCs</span><strong id="opp-kpi-govpoc">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">3P error rows</span><strong id="opp-kpi-third-party-errors">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Exact query matches</span><strong id="opp-kpi-exact">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Fallback query matches</span><strong id="opp-kpi-fallback">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Fresh 3P checks (≤3d)</span><strong id="opp-kpi-fresh">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">FPDS-aligned (Med+)</span><strong id="opp-kpi-fpds">0</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
-			<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
+		<div class="opp-kpi-groups mt-4">
+			<section class="opp-kpi-group" aria-label="Coverage metrics">
+				<p class="opp-kpi-group-title">Coverage</p>
+				<div class="opp-kpis">
+					<div class="opp-kpi"><span class="opp-kpi-label">Unique opportunities</span><strong id="opp-kpi-total">{opportunities.length}</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Displayed</span><strong id="opp-kpi-displayed">{opportunities.length}</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Events with SAM cache</span><strong>{eventsWithSam}</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
+				</div>
+			</section>
+			<section class="opp-kpi-group" aria-label="Enrichment metrics">
+				<p class="opp-kpi-group-title">Enrichment</p>
+				<div class="opp-kpis">
+					<div class="opp-kpi"><span class="opp-kpi-label">With deep text</span><strong id="opp-kpi-deep">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">With attachments</span><strong id="opp-kpi-files">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Rows with gov POCs</span><strong id="opp-kpi-govpoc">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">3P error rows</span><strong id="opp-kpi-third-party-errors">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Exact query matches</span><strong id="opp-kpi-exact">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Fallback query matches</span><strong id="opp-kpi-fallback">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Fresh 3P checks (≤3d)</span><strong id="opp-kpi-fresh">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">FPDS-aligned (Med+)</span><strong id="opp-kpi-fpds">0</strong></div>
+				</div>
+			</section>
+			<section class="opp-kpi-group" aria-label="Decision signal metrics">
+				<p class="opp-kpi-group-title">Decision Signals</p>
+				<div class="opp-kpis">
+					<div class="opp-kpi"><span class="opp-kpi-label">Gem candidates</span><strong id="opp-kpi-gems">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Pursue now</span><strong id="opp-kpi-pursue">0</strong></div>
+				</div>
+			</section>
+			<section class="opp-kpi-group" aria-label="System health metrics">
+				<p class="opp-kpi-group-title">System Health</p>
+				<div class="opp-kpis">
+					<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong></div>
+				</div>
+			</section>
 		</div>
 	</section>
 
@@ -791,7 +811,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-controls-grid">
 				<label class="opp-field opp-field-search">
 					<span>Search</span>
-					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="title, agency, notice id, NAICS, solicitation..." autocomplete="off" spellcheck="false" />
+					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="Search opportunities..." autocomplete="off" spellcheck="false" />
 				</label>
 				<label class="opp-field">
 					<span>Notice type</span>
@@ -2738,10 +2758,32 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}
 			};
 
-			const renderTable = (items) => {
+			const activeFilterCount = () => {
+				let count = 0;
+				if (state.search) count += 1;
+				if (state.type !== 'all') count += 1;
+				if (state.branch !== 'all') count += 1;
+				if (state.client !== 'all') count += 1;
+				if (state.work !== 'all') count += 1;
+				if (state.due !== 'all') count += 1;
+				if (state.minWeight > 0) count += 1;
+				if (state.intel !== 'all') count += 1;
+				if (state.confidence !== 'all') count += 1;
+				if (state.thirdParty !== 'all') count += 1;
+				if (state.fpds !== 'all') count += 1;
+				if (state.decision !== 'all') count += 1;
+				if (state.sort !== 'gem') count += 1;
+				if (state.focusOnly) count += 1;
+				if (state.fastMode) count += 1;
+				if (state.naicsFilter) count += 1;
+				return count;
+			};
+
+			const renderTable = (items, activeCount = 0) => {
 				if (!el.body) return;
 				if (!items.length) {
-					el.body.innerHTML = '<tr><td colspan="20" class="opp-empty">No opportunities match your current filters.</td></tr>';
+					el.body.innerHTML = `<tr><td colspan="20" class="opp-empty">No opportunities match your current filters.<br><span class="opp-empty-sub">${activeCount > 0 ? `${activeCount} filter${activeCount === 1 ? '' : 's'} active.` : 'No additional filters are active.'} Try broadening filters or clearing all.</span><br><button type="button" class="opp-empty-reset" data-opp-empty-reset>Clear filters</button></td></tr>`;
+					el.body.querySelector('[data-opp-empty-reset]')?.addEventListener('click', () => el.reset?.click());
 					return;
 				}
 
@@ -2886,7 +2928,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderVisuals(filtered);
 				renderInsights(filtered);
 				renderDatasetDelta();
-				renderTable(pagedRows);
+				renderTable(pagedRows, activeFilterCount());
 			};
 
 			const renderFromFilterInput = () => {
@@ -3125,6 +3167,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.45rem;
+	}
+	.opp-kpi-groups {
+		display: grid;
+		gap: 0.72rem;
+	}
+	.opp-kpi-group {
+		display: grid;
+		gap: 0.42rem;
+	}
+	.opp-kpi-group-title {
+		font-size: 0.63rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(125, 211, 252, 0.9);
 	}
 	.opp-kpis {
 		display: grid;
@@ -3837,6 +3893,26 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		text-align: center;
 		color: rgba(148, 163, 184, 0.95);
 		padding: 1.1rem 0.7rem !important;
+	}
+	.opp-empty-sub {
+		display: inline-block;
+		margin-top: 0.35rem;
+		font-size: 0.74rem;
+		color: rgba(148, 163, 184, 0.92);
+	}
+	.opp-empty-reset {
+		margin-top: 0.55rem;
+		height: 1.7rem;
+		padding: 0 0.65rem;
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgba(15, 23, 42, 0.72);
+		color: rgba(226, 232, 240, 0.96);
+		font-size: 0.7rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.opp-empty-reset:hover {
+		background: rgba(30, 41, 59, 0.9);
 	}
 	.opp-intel-open {
 		height: 1.45rem;

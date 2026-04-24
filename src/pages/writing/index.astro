@@ -43,15 +43,30 @@ const items = [
 
 const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 
+const fmtDate = (date: Date | undefined) =>
+	date
+		? date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+		: '';
+
 ---
 
 <SiteLayout title="Writing | Adam Boas" description="Notes, memos, and papers." image="/og/writing.png">
 	<StickyBrowseBar active="writing" />
 	<div data-writing-index class="writing-tags-hidden">
-		<h1 class="text-2xl font-semibold text-slate-50">Writing</h1>
-		<FilterShell class="writing-index-controls mt-3 p-2.5 md:mt-4 md:p-3">
+		<section class="card control-shell p-5">
+			<div class="flex flex-wrap items-start justify-between gap-3">
+				<div>
+					<h1 class="section-title">Writing</h1>
+					<p class="mt-2 text-sm text-slate-300">Long-form notes, papers, and memos on autonomy, assurance, software modernization, and defense technology.</p>
+				</div>
+				<a class="ui-link-btn" href={withBase('/writing/tags/')}>Browse tags</a>
+			</div>
+		</section>
+
+		<FilterShell class="writing-index-controls mt-4 p-2.5 md:mt-5 md:p-3">
 			<div class="control-shell-row flex flex-wrap items-center gap-2 md:gap-3">
 				<div class="flex flex-wrap items-center gap-2 text-xs text-slate-300" role="group" aria-label="Filter writing by type and quick state">
+					<button type="button" data-writing-set-all aria-pressed="true" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show all writing types" title="Show all writing types">all</button>
 					<button type="button" data-writing-type-toggle="paper" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-paper rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Long-form architecture + reference work" title="Long-form architecture + reference work">paper</button>
 					<button type="button" data-writing-type-toggle="note" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-note rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Short synthesis and research snapshots" title="Short synthesis and research snapshots">note</button>
 					<button type="button" data-writing-type-toggle="memo" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-memo rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Focused briefs and decision-ready analysis" title="Focused briefs and decision-ready analysis">memo</button>
@@ -62,7 +77,7 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 				</div>
 
 				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
-					<SearchControl id="writing-search" label="Search writing" data-writing-search data-global-search class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64" placeholder="Search title/tags" />
+					<SearchControl id="writing-search" label="Search writing" data-writing-search data-global-search class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64" placeholder="Search writing..." />
 					<label class="sr-only" for="writing-sort">Sort writing</label>
 					<select id="writing-sort" data-writing-sort class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200">
 						<option value="newest">Newest</option>
@@ -73,7 +88,6 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 					{hasAnyTagChips ? (
 						<button type="button" data-writing-tags-toggle aria-pressed="false" class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900">Show tags</button>
 					) : null}
-					<a class="shrink-0 inline-flex h-8 items-center text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>Browse tags →</a>
 				</div>
 			</div>
 
@@ -118,7 +132,7 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 							{w.description && <p data-writing-card-description class="clamp-3 mt-2 text-sm text-slate-300">{w.description}</p>}
 							{(w.tags?.length ?? 0) > 0 ? (
 								<ul data-writing-card-meta class="mt-3 flex flex-wrap gap-2">
-									{w.tags?.map((t) => (
+									{w.tags?.slice(0, 4).map((t) => (
 										<li class="writing-tag-chip" data-writing-tag-chip>
 											<button
 												type="button"
@@ -129,10 +143,15 @@ const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 											</button>
 										</li>
 									))}
+									{(w.tags?.length ?? 0) > 4 ? (
+										<li class="writing-tag-chip" data-writing-tag-chip>
+											<span class="rounded-full border border-slate-800 px-3 py-1 text-xs text-slate-500">+{(w.tags?.length ?? 0) - 4} more</span>
+										</li>
+									) : null}
 								</ul>
 							) : null}
 						</div>
-						{w.date && <span class="shrink-0 text-xs text-slate-400">{w.date.toISOString().slice(0, 10)}</span>}
+						{w.date && <span class="shrink-0 text-xs text-slate-400">{fmtDate(w.date)}</span>}
 					</div>
 				</a>
 			))}

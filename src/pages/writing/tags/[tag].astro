@@ -51,6 +51,11 @@ const items = [
 		})),
 ]
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
+
+const fmtDate = (date: Date | undefined) =>
+	date
+		? date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+		: '';
 ---
 
 <SiteLayout title={`Writing Tag: ${tag} | Adam Boas`} description={`Writing tagged ${tag}.`} canonicalHref={canonicalHref}>
@@ -90,7 +95,7 @@ const items = [
 						</div>
 						{w.description && <p class="mt-2 text-sm text-slate-300">{w.description}</p>}
 					</div>
-					{w.date && <span class="shrink-0 text-xs text-slate-400">{w.date.toISOString().slice(0, 10)}</span>}
+					{w.date && <span class="shrink-0 text-xs text-slate-400">{fmtDate(w.date)}</span>}
 				</div>
 			</a>
 		))}

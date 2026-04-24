@@ -52,13 +52,46 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.06',
+		date: '2026-04-24',
+		title: 'Exhaustive report pass: navigation semantics, writing UX, events/opportunities clarity',
+		summary: 'Applied a broad implementation pass against the styling/consistency report, including nav semantics, writing filter/card behavior, events empty-state clarity, and grouped opportunity metrics.',
+		impact: 'Primary flows are more consistent and actionable: header now exposes `aria-current`, writing supports explicit All mode + limited visible tags, events/opportunities zero states are clearer, and opportunity KPIs are grouped into Coverage/Enrichment/Decision/System Health.',
+		current: true,
+		tags: ['ux', 'navigation', 'writing', 'events', 'opportunities', 'consistency'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `aria-current="page"` behavior to primary nav links in `HeaderLink.astro`.',
+					'Added explicit `All` control for writing type filters and persisted all-on state handling (`src/scripts/writing-index.js`).',
+					'Added grouped opportunity KPI sections: `Coverage`, `Enrichment`, `Decision Signals`, `System Health`.',
+					'Added clear-action controls in empty states for Events and Opportunities views.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated writing search placeholder to `Search writing...` and event/opportunity placeholders to `Search events...` / `Search opportunities...`.',
+					'Normalized writing/date labels to human-readable format (e.g., `Apr 24, 2026`) across compact cards, writing index, and tag detail cards.',
+					'Limited visible writing card tags to 4 with `+N more` overflow indicator.',
+					'Normalized noisy participant-organization labels on Events (e.g., removed image-dimension suffix artifacts like `1024x607`).',
+					'Balanced capability-card layout by enforcing equal-height cards with metadata/actions anchored consistently.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.05',
 		date: '2026-04-24',
 		title: 'Cross-page formatting pass on headings and spacing rhythm',
 		summary: 'Applied a consistency pass across secondary pages to normalize header treatment, top spacing, and section rhythm.',
 		impact: 'Experience, education, writing-tag, and blog surfaces now use the same carded header pattern and tighter, consistent vertical spacing.',
-		current: true,
 		tags: ['formatting', 'ux', 'layout', 'consistency'],
 		groups: [
 			{

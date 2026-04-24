@@ -49,6 +49,10 @@ function getTypeToggles() {
 	return [...document.querySelectorAll('[data-writing-type-toggle]')];
 }
 
+function getAllTypesButton() {
+	return document.querySelector('[data-writing-set-all]');
+}
+
 function getSelectedTypes() {
 	return getTypeToggles()
 		.filter((btn) => btn.getAttribute('aria-pressed') !== 'false')
@@ -62,6 +66,15 @@ function setSelectedTypes(types) {
 		const type = norm(btn.getAttribute('data-writing-type-toggle'));
 		btn.setAttribute('aria-pressed', wanted.has(type) ? 'true' : 'false');
 	}
+	syncAllTypeButtonState();
+}
+
+function syncAllTypeButtonState() {
+	const allBtn = getAllTypesButton();
+	if (!allBtn) return;
+	const selected = getSelectedTypes();
+	const allSelected = selected.length === ALL_TYPES.length && ALL_TYPES.every((type) => selected.includes(type));
+	allBtn.setAttribute('aria-pressed', allSelected ? 'true' : 'false');
 }
 
 function parseTypesFromUrl(url) {
@@ -394,6 +407,7 @@ if (!root) {
 		}
 
 		if (empty) empty.classList.toggle('hidden', sortedMatches.length !== 0);
+		syncAllTypeButtonState();
 		renderChips();
 		renderPagination(sortedMatches.length, pageStartIdx, pageEndIdx, totalPages);
 		persistViewState();
@@ -408,6 +422,12 @@ if (!root) {
 
 	searchInput?.addEventListener('input', () => applyFilter());
 	searchInput?.addEventListener('change', () => applyFilter());
+
+	getAllTypesButton()?.addEventListener('click', () => {
+		setSelectedTypes(ALL_TYPES);
+		currentPage = 1;
+		applyFilter({ preservePage: true });
+	});
 
 	for (const btn of getTypeToggles()) {
 		btn.addEventListener('click', () => {

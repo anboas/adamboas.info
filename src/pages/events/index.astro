@@ -483,6 +483,14 @@ function noticeFocusTags(notice: SamNotice) {
 	return tags;
 }
 
+function normalizeOrgLabel(value: string) {
+	return String(value || '')
+		.replace(/\s+\d{2,4}\s*[x×]\s*\d{2,4}\s*$/i, '')
+		.replace(/\s+\d{2,4}\s*[x×]\s*\d{2,4}(?=\s)/gi, ' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+}
+
 function participantOrganizations(event: (typeof events)[number]) {
 	const sam = samIntel(event);
 	const participants = sam?.participants;
@@ -491,7 +499,10 @@ function participantOrganizations(event: (typeof events)[number]) {
 		...(participants.sponsors ?? []),
 		...(participants.mediaPartners ?? []),
 		...(participants.communityCorridor ?? []),
-	].filter((value): value is string => Boolean(value && value.trim()));
+	]
+		.filter((value): value is string => Boolean(value && value.trim()))
+		.map((value) => normalizeOrgLabel(value))
+		.filter(Boolean);
 	return [...new Set(merged)].sort((a, b) => a.localeCompare(b));
 }
 
@@ -927,7 +938,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			</details>
 			<div class="mt-2 border-t border-slate-800 pt-2 radar-filter-wrap control-shell-row">
 				<label class="block">
-					<input id="radar-q" aria-label="Search events" data-global-search class="radar-input" type="search" placeholder="Search events by title, agency, keyword, or location..." autocomplete="off" spellcheck="false" />
+					<input id="radar-q" aria-label="Search events" data-global-search class="radar-input" type="search" placeholder="Search events..." autocomplete="off" spellcheck="false" />
 				</label>
 				<details id="radar-filter-panel" class="radar-filter-panel mt-2">
 					<summary class="radar-summary radar-summary-primary">More filters</summary>
@@ -1003,7 +1014,9 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 					</select>
 				</div>
 				<div id="radar-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-4 text-sm text-slate-300">
-					No events match your current filters.
+					<p>No events match your current filters.</p>
+					<p class="mt-2 text-xs text-slate-400">Try broadening filters or clearing them.</p>
+					<button id="radar-empty-reset" class="mt-2 radar-btn radar-btn-tight" type="button">Clear filters</button>
 				</div>
 				<div id="radar-list" class="space-y-3 radar-list">
 					{events.map((event) => (
@@ -1404,6 +1417,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		opportunityContextText: document.getElementById('radar-opportunity-context-text'),
 		opportunityContextBack: document.getElementById('radar-opportunity-context-back'),
 		opportunityContextClear: document.getElementById('radar-opportunity-context-clear'),
+		emptyReset: document.getElementById('radar-empty-reset'),
 	};
 
 	const list = document.getElementById('radar-list');
@@ -2739,6 +2753,9 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, newOnly: false, showPast: false, topics: new Set(), windowDays: null });
 		currentPage = 1;
 		render();
+	});
+	controls.emptyReset?.addEventListener('click', () => {
+		controls.reset.click();
 	});
 	controls.toggleMap.addEventListener('click', () => {
 		mapPin = mapPin === 'above' ? 'below' : 'above';

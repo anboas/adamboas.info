@@ -14,7 +14,9 @@ type Item = {
 const { item, showTopicCount = true } = Astro.props as { item: Item; showTopicCount?: boolean };
 const href = withBase(`/writing/${item.slug}/`);
 const tagCount = item.tags?.length ?? 0;
-const dateLabel = item.date?.toISOString?.().slice(0, 10);
+const dateLabel = item.date
+	? item.date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
+	: null;
 ---
 
 <a class="card block overflow-hidden p-4 hover:border-slate-700" href={href}>
