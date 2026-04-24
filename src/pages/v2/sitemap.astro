@@ -1,0 +1,169 @@
+---
+import { getCollection } from 'astro:content';
+import V2Layout from '../../layouts/V2Layout.astro';
+import { withBase } from '../../utils/withBase';
+import { getPdfMeta, type PdfMeta } from '../../utils/pdfMeta';
+import { RESUME_CLEARANCE } from '../../data/resume';
+
+type WritingItem = {
+	title: string;
+	type: 'paper' | 'memo' | 'note';
+	date: Date | null;
+	pageHref: string;
+	pdfHref: string | null;
+	pdfMetaText: string | null;
+};
+
+function formatPdfMeta(meta: PdfMeta | null) {
+	if (!meta) return null;
+	const bits: string[] = [];
+	if (meta.pages) bits.push(`${meta.pages}p`);
+	if (meta.size) bits.push(meta.size);
+	return bits.length ? bits.join(' • ') : null;
+}
+
+const writing = await Promise.all(
+	(await getCollection('writing'))
+		.filter((w) => w.data.status === 'published')
+		.map(async (w) => {
+			const meta = w.data.pdfPath ? await getPdfMeta(w.data.pdfPath) : null;
+			return {
+				title: w.data.title,
+				type: w.data.type,
+				date: w.data.date ?? null,
+				pageHref: `/v2/writing/${w.id.split('/').pop()}/`,
+				pdfHref: w.data.pdfPath ?? null,
+				pdfMetaText: formatPdfMeta(meta),
+			} satisfies WritingItem;
+		}),
+);
+
+const papers = await Promise.all(
+	(await getCollection('papers'))
+		.filter((p) => p.data.status === 'published')
+		.map(async (p) => {
+			const meta = p.data.pdfPath ? await getPdfMeta(p.data.pdfPath) : null;
+			return {
+				title: p.data.title,
+				type: 'paper' as const,
+				date: p.data.date ?? null,
+				pageHref: `/v2/writing/${p.id}/`,
+				pdfHref: p.data.pdfPath ?? null,
+				pdfMetaText: formatPdfMeta(meta),
+			} satisfies WritingItem;
+		}),
+);
+
+const publishedWriting = [...papers, ...writing].sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
+
+const resumePdfPath = '/files/adam-boas-resume.pdf';
+const resumePdfMetaText = [formatPdfMeta(await getPdfMeta(resumePdfPath)), `Clearance: ${RESUME_CLEARANCE}`].filter(Boolean).join(' • ');
+---
+
+<V2Layout
+	title="Sitemap | Adam Boas"
+	description="Human-readable sitemap for adamboas.com pages and published writing."
+	canonicalHref="https://www.adamboas.com/v2/sitemap/"
+
+	active="home">
+	<section class="mt-2 space-y-4">
+		<div class="card control-shell p-4 sm:p-5 md:p-6">
+			<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Sitemap</h1>
+			<p class="mt-2 text-sm text-slate-300">Human-readable map of key pages, plus direct PDF links under published writing.</p>
+
+			<div class="mt-4 grid gap-4 md:grid-cols-2">
+				<div class="border border-slate-800 bg-slate-950/40 p-4">
+					<h2 class="section-title">Core</h2>
+					<ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+						<li><a class="hover:text-slate-100" href={withBase('/v2/')}>Home</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/writing/')}>Writing</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/events/')}>Events</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/opportunities/')}>Opportunities</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/capabilities/')}>Capabilities</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/radar/')}>Radar</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/events/sources/')}>Event Sources</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/changes/')}>Changes</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/status/')}>Status</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/contact/')}>Contact</a></li>
+					</ul>
+				</div>
+				<div class="border border-slate-800 bg-slate-950/40 p-4">
+					<h2 class="section-title">Utility</h2>
+					<ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+						<li><a class="hover:text-slate-100" href={withBase('/v2/license/')}>License</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/v2/content-license/')}>Content License</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/rss.xml')}>RSS</a></li>
+						<li><a class="hover:text-slate-100" href={withBase('/sitemap-index.xml')}>XML sitemap</a></li>
+					</ul>
+				</div>
+				<div class="border border-slate-800 bg-slate-950/40 p-4">
+					<h2 class="section-title">Downloads</h2>
+					<ul class="mt-3 space-y-1.5 text-sm text-slate-300">
+						<li>
+							<a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase(resumePdfPath)}>Adam Boas Resume (PDF) ↗</a>
+							{resumePdfMetaText && <span class="ml-2 text-xs text-slate-400">{resumePdfMetaText}</span>}
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="card control-shell p-4 sm:p-5 md:p-6">
+			<div class="flex flex-wrap items-end justify-between gap-3">
+				<h2 class="section-title">Published Writing</h2>
+				<p class="text-xs text-slate-400">{publishedWriting.length} items</p>
+			</div>
+
+			<ul class="mt-4 space-y-2">
+				{publishedWriting.map((item) => (
+					<li class="border border-slate-800 bg-slate-950/40 p-3 sm:p-4">
+						<div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+							<div class="min-w-0">
+								<p class="sitemap-item-title text-sm font-bold text-slate-100">{item.title}</p>
+								<div class="mt-1 flex flex-wrap items-center gap-2 text-xs tracking-wide">
+									<span class:list={['writing-type-pill', `writing-type-${item.type}`, 'rounded-full', 'border', 'px-2', 'py-0.5', 'text-[10px]', 'uppercase', 'tracking-wide']}>
+										{item.type}
+									</span>
+									{item.date && <span class="type-date">{item.date.toISOString().slice(0, 10)}</span>}
+								</div>
+							</div>
+							<div class="flex shrink-0 flex-wrap items-center gap-3 text-sm">
+								<a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase(item.pageHref)}>Page →</a>
+								{item.pdfHref && <a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase(item.pdfHref)}>PDF ↗</a>}
+								{item.pdfHref && item.pdfMetaText && <span class="pdf-meta text-xs text-slate-400">{item.pdfMetaText}</span>}
+							</div>
+						</div>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+</V2Layout>
+
+<style>
+	.section-title {
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.2;
+		color: rgb(248, 250, 252);
+		border-left: 3px solid rgba(0, 196, 196, 0.55);
+		padding-left: 0.65rem;
+	}
+
+	.sitemap-item-title {
+		overflow-wrap: anywhere;
+		word-break: break-word;
+	}
+
+	.pdf-meta {
+		white-space: nowrap;
+	}
+
+
+	.type-date {
+		color: rgb(148 163 184);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+</style>

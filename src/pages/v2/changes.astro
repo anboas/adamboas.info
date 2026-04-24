@@ -1,7 +1,7 @@
 ---
-import SiteLayout from '../layouts/SiteLayout.astro';
+import V2Layout from '../../layouts/V2Layout.astro';
 // sticky browse intentionally omitted on /changes (Changes link is footer-only)
-import changeNotesJs from '../scripts/change-notes.js?raw';
+import changeNotesJs from '../../scripts/change-notes.js?raw';
 
 type ChangeGroup = {
 	kind: 'Added' | 'Changed' | 'Improved' | 'Fixed';
@@ -53,42 +53,13 @@ const releases: Release[] = [
 
 
 
-
-	{
-		version: 'v2.4.07',
-		date: '2026-04-23',
-		title: 'v2 native route expansion: writing detail + status + sitemap + changes',
-		summary: 'Continued native v2 conversion by replacing mirrored wrappers on writing detail and core utility/status surfaces.',
-		impact: 'v2 now has native writing detail pages plus native status, site analytics, sitemap, and changelog pages, reducing mirror dependency while preserving production stability.',
-		current: true,
-		tags: ['ui', 'v2', 'native-routes', 'writing-detail', 'status', 'sitemap', 'changes'],
-		groups: [
-			{
-				kind: 'Added',
-				items: [
-					'Added native v2 writing detail route: `src/pages/v2/writing/[...slug].astro`.',
-					'Added native v2 status routes: `src/pages/v2/status.astro` and `src/pages/v2/status/site-analytics.astro`.',
-					'Added native v2 utility routes: `src/pages/v2/sitemap.astro` and `src/pages/v2/changes.astro`.',
-				],
-			},
-			{
-				kind: 'Changed',
-				items: [
-					'Updated v2 mirrored catch-all inventory (`src/pages/v2/[...slug].astro`) to exclude newly native v2 routes.',
-					'Aligned native v2 internal links and canonicals to `/v2/*` where applicable.',
-				],
-			},
-			{ kind: 'Improved', items: [] },
-			{ kind: 'Fixed', items: [] },
-		],
-	},
-
 	{
 		version: 'v2.4.06',
 		date: '2026-04-23',
 		title: 'v2 native route expansion: events, opportunities, capabilities',
 		summary: 'Continued native v2 buildout by replacing additional mirrored wrappers with first-class v2 pages for events, opportunities, and capabilities.',
 		impact: 'Core browsing paths in v2 now render natively (not mirrored) for events, opportunity intelligence, capabilities index, and capability detail pages while production remains unchanged.',
+		current: true,
 		tags: ['ui', 'v2', 'native-routes', 'events', 'opportunities', 'capabilities'],
 		groups: [
 			{
@@ -3770,11 +3741,12 @@ function releaseSearchText(release: Release) {
 }
 ---
 
-<SiteLayout
+<V2Layout
 	title="Change Notes | Adam Boas"
 	description="Public, versioned website capability updates for adamboas.com."
-	canonicalHref="https://www.adamboas.com/changes/"
->
+	canonicalHref="https://www.adamboas.com/v2/changes/"
+
+	active="home">
 	<!-- StickyBrowseBar omitted on this page by preference: Changes link should live in footer only. -->
 
 	<section data-change-notes class="space-y-4">
@@ -3936,4 +3908,4 @@ function releaseSearchText(release: Release) {
 	</section>
 
 	<script type="module" set:html={changeNotesJs}></script>
-</SiteLayout>
+</V2Layout>
