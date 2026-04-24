@@ -47,13 +47,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.01',
+		date: '2026-04-23',
+		title: 'Navigation priority reset + experience/education demoted to background surfaces',
+		summary: 'Updated primary navigation to prioritize Writing → Capabilities → Events/Opportunities and repositioned experience/education as lower-priority background proof surfaces.',
+		impact: 'Top-level wayfinding now matches the intended emphasis: writing and capability showcase first, operational tools second, and resume-depth pages available but demoted.',
+		current: true,
+		tags: ['navigation', 'home', 'prioritization', 'ux', 'background'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added homepage `Core Surfaces` section to frame `Writing` and `Capabilities` as showcases, with `Events` and `Opportunities` presented as operational features.',
+					'Added subtle `Background` links (Experience, Education, Resume PDF) under Engagement to keep proof surfaces accessible but secondary.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated desktop header priority/order to: `Writing`, `Capabilities`, `Events`, `Opportunities`.',
+					'Updated mobile sticky browse links to match the same priority and removed direct Experience/Education tabs from primary mobile nav.',
+					'Added Experience/Education links in footer navigation as secondary discovery paths.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.00',
 		date: '2026-04-23',
 		title: 'Removed homepage audience framing card language',
 		summary: 'Stripped fourth-wall audience labels and removed the `How to use this site` card from homepage to keep the landing page direct and content-first.',
 		impact: 'Homepage now avoids explicit audience/meta framing while retaining a concise summary structure through hero, featured reading, operating principles, and engagement.',
-		current: true,
 		tags: ['home', 'ux', 'cleanup', 'copy', 'summary'],
 		groups: [
 			{ kind: 'Added', items: [] },
