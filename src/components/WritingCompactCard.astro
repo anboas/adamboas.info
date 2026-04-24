@@ -11,7 +11,7 @@ type Item = {
 	date?: Date;
 };
 
-const { item } = Astro.props as { item: Item };
+const { item, showTopicCount = true } = Astro.props as { item: Item; showTopicCount?: boolean };
 const href = withBase(`/writing/${item.slug}/`);
 const tagCount = item.tags?.length ?? 0;
 const dateLabel = item.date?.toISOString?.().slice(0, 10);
@@ -36,7 +36,7 @@ const dateLabel = item.date?.toISOString?.().slice(0, 10);
 				) : null}
 			</div>
 			{item.description ? <p class="clamp-2 mt-1.5 break-words text-sm text-slate-300">{item.description}</p> : null}
-			{tagCount > 0 ? <p class="mt-1 text-[11px] text-slate-500">{tagCount} topic{tagCount === 1 ? '' : 's'}</p> : null}
+			{showTopicCount && tagCount > 0 ? <p class="mt-1 text-[11px] text-slate-500">{tagCount} topic{tagCount === 1 ? '' : 's'}</p> : null}
 		</div>
 		{dateLabel ? <span class="shrink-0 text-[11px] text-slate-500">{dateLabel}</span> : null}
 	</div>

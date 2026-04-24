@@ -45,13 +45,46 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.3.99',
+		date: '2026-04-23',
+		title: 'Homepage shifted to topical summary + audience routing',
+		summary: 'Removed long-form resume/writing blocks from the homepage and refocused the page on summary intent with explicit routing for customer/employer and reader audiences.',
+		impact: 'Homepage now acts as a concise mission overview: featured reading is cleaner (no topic counts), deep resume/background content moves to dedicated pages, and visitors get immediate guidance on where to go next.',
+		current: true,
+		tags: ['home', 'ux', 'navigation', 'audience', 'summary'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `How to use this site` summary card section on homepage with clear routing for customer/employer, reader/background, and operational-tool paths.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Removed homepage long-form sections for `Writing`, `Experience`, and `Education` in favor of topical summary navigation.',
+					'Removed topic-count (`# topics`) metadata from homepage featured reading cards.',
+					'Updated engagement CTA flow to emphasize `Capabilities` as the customer-facing summary surface.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Clarified homepage positioning as a dual-audience landing page (customers/employers and readers/background).',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.3.98',
 		date: '2026-04-23',
 		title: 'Attached ACP-RA audio to the ACP-RA paper',
 		summary: 'Moved the provided `acp-ra.m4a` audio into the site audio library and linked it to the ACP-RA paper metadata.',
 		impact: 'The `Agent Control Plane Reference Architecture (ACP-RA)` paper now exposes audio via the standard writing/paper audio path.',
-		current: true,
 		tags: ['audio', 'papers', 'acp-ra', 'content', 'writing'],
 		groups: [
 			{
