@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import V2Layout from '../../../../layouts/V2Layout.astro';
+import { withBase } from '../../../../utils/withBase';
+import { buildCanonicalTagGroups, slugifyTag } from '../../../../utils/tags';
+
+const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
+const papers = (await getCollection('papers')).filter((p) => p.data.status === 'published');
+
+const counts = new Map();
+for (const w of writing) {
+	for (const t of w.data.tags ?? []) counts.set(t, (counts.get(t) ?? 0) + 1);
+}
+for (const p of papers) {
+	for (const t of p.data.tags ?? []) counts.set(t, (counts.get(t) ?? 0) + 1);
+}
+
+const canonicalGroups = buildCanonicalTagGroups(counts.keys());
+const grouped = new Map(
+	canonicalGroups.map((group) => [group.slug, { tag: group.label, slug: group.slug, count: 0 }]),
+);
+
+for (const [rawTag, count] of counts.entries()) {
+	const slug = slugifyTag(rawTag) || 'tag';
+	const entry = grouped.get(slug);
+	if (entry) entry.count += count;
+}
+
+const tags = [...grouped.values()].sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag));
+---
+
+<V2Layout title="Writing Tags | Adam Boas (UI v2)" description="Topics across notes, memos, and papers." active="writing">
+	<h1 class="text-2xl font-semibold text-slate-50">Writing Tags</h1>
+	<p class="mt-2 text-slate-300">Topics across notes, memos, and papers.</p>
+
+	{tags.length ? (
+		<ul class="mt-8 flex flex-wrap gap-2">
+			{tags.map((t) => (
+				<li>
+					<a
+						class="rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase(`/v2/writing/tags/${t.slug}/`)}
+					>
+						{t.tag} <span class="text-slate-400">({t.count})</span>
+					</a>
+				</li>
+			))}
+		</ul>
+	) : (
+		<p class="mt-8 text-slate-300">No tags yet.</p>
+	)}
+</V2Layout>

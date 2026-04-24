@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import V2Layout from '../../../../layouts/V2Layout.astro';
+import { withBase } from '../../../../utils/withBase';
+import { buildCanonicalTagGroups, slugifyTag } from '../../../../utils/tags';
+
+export async function getStaticPaths() {
+	const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
+	const papers = (await getCollection('papers')).filter((p) => p.data.status === 'published');
+	const tags = new Set<string>();
+	for (const w of writing) for (const t of w.data.tags ?? []) tags.add(t);
+	for (const p of papers) for (const t of p.data.tags ?? []) tags.add(t);
+
+	const groups = buildCanonicalTagGroups(tags);
+	return groups.map((group) => ({
+		params: { tag: group.slug },
+		props: { tag: group.label, slug: group.slug, aliases: group.aliases },
+	}));
+}
+
+const { tag, slug, aliases } = Astro.props as { tag: string; slug: string; aliases: string[] };
+const canonicalHref = withBase(`/v2/writing/tags/${slug}/`);
+const homeUrl = new URL(withBase('/'), Astro.site).toString();
+const writingUrl = new URL(withBase('/v2/writing/'), Astro.site).toString();
+const tagUrl = new URL(canonicalHref, Astro.site).toString();
+
+const writing = (await getCollection('writing')).filter((w) => w.data.status === 'published');
+const papers = (await getCollection('papers')).filter((p) => p.data.status === 'published');
+
+const tagAliases = new Set(aliases);
+
+const items = [
+	...writing
+		.filter((w) => (w.data.tags ?? []).some((entry) => tagAliases.has(entry) || slugifyTag(entry) === slug))
+		.map((w) => ({
+			slug: w.id.split('/').pop(),
+			type: w.data.type,
+			title: w.data.title,
+			description: w.data.summary,
+			date: w.data.date,
+		})),
+	...papers
+		.filter((p) => (p.data.tags ?? []).some((entry) => tagAliases.has(entry) || slugifyTag(entry) === slug))
+		.map((p) => ({
+			slug: p.id,
+			type: 'paper',
+			title: p.data.title,
+			description: p.data.description,
+			date: p.data.date,
+		})),
+]
+	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
+---
+
+<V2Layout title={`Writing Tag: ${tag} | Adam Boas (UI v2)`} description={`Writing tagged ${tag}.`} canonicalHref={canonicalHref} active="writing">
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{ '@type': 'ListItem', position: 1, name: 'Home', item: homeUrl },
+				{ '@type': 'ListItem', position: 2, name: 'Writing', item: writingUrl },
+				{ '@type': 'ListItem', position: 3, name: `Tag: ${tag}`, item: tagUrl },
+			],
+		})}
+	/>
+	<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+		<div>
+			<h1 class="text-2xl font-semibold text-slate-50">Tag: {tag}</h1>
+			<p class="mt-2 text-slate-300">{items.length} item(s)</p>
+		</div>
+		<a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/v2/writing/tags/')}>All tags →</a>
+	</div>
+
+	<div class="mt-8 grid gap-4">
+		{items.map((w) => (
+			<a class="card block p-5 hover:border-slate-700" href={withBase(`/v2/writing/${w.slug}/`)}>
+				<div class="flex items-baseline justify-between gap-4">
+					<div class="min-w-0">
+						<div class="flex items-baseline gap-2">
+							<span class="rounded-none border border-slate-700 bg-slate-950/40 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">
+								{w.type}
+							</span>
+							<h2 class="truncate text-base font-semibold text-slate-50">{w.title}</h2>
+						</div>
+						{w.description && <p class="mt-2 text-sm text-slate-300">{w.description}</p>}
+					</div>
+					{w.date && <span class="shrink-0 text-xs text-slate-400">{w.date.toISOString().slice(0, 10)}</span>}
+				</div>
+			</a>
+		))}
+	</div>
+</V2Layout>

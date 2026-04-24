@@ -5,7 +5,6 @@ import UiVersionToggle from '../../components/UiVersionToggle.astro';
 import { withBase } from '../../utils/withBase';
 import { capabilityTopics } from '../../data/capabilities';
 import { education, experience } from '../../data/resume';
-import { buildCanonicalTagGroups } from '../../utils/tags';
 
 function withTrailingSlash(pathname: string) {
 	if (!pathname) return '/';
@@ -21,15 +20,12 @@ export async function getStaticPaths() {
 	};
 
 	[
-		'writing',
-		'writing/tags',
 		'events',
 		'events/sources',
 		'opportunities',
 		'capabilities',
 		'experience',
 		'education',
-		'contact',
 		'changes',
 		'status',
 		'status/site-analytics',
@@ -52,11 +48,6 @@ export async function getStaticPaths() {
 		add(`writing/${p.id}`);
 		add(`papers/${p.id}`);
 	}
-
-	const tags = new Set<string>();
-	for (const w of writing) for (const tag of w.data.tags ?? []) tags.add(tag);
-	for (const p of papers) for (const tag of p.data.tags ?? []) tags.add(tag);
-	for (const group of buildCanonicalTagGroups(tags)) add(`writing/tags/${group.slug}`);
 
 	for (const topic of capabilityTopics) add(`capabilities/${topic.slug}`);
 	for (const role of experience) add(`experience/${role.slug}`);
