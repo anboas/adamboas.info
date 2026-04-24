@@ -48,13 +48,36 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.02',
+		date: '2026-04-23',
+		title: 'Footer simplified; primary nav duplication removed',
+		summary: 'Cleaned footer to utility-only links and removed top-nav duplicates so homepage hierarchy remains clear.',
+		impact: 'Footer now acts as a compact utility rail (`Sitemap`, `Changes`, `Status`, `Contact`) while primary discovery remains in top navigation and sitemap.',
+		current: true,
+		tags: ['footer', 'navigation', 'ux', 'cleanup'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Removed redundant footer links that duplicated top navigation and secondary background routes.',
+					'Removed deploy badge/social/license/rss shortcut clutter from footer in favor of sitemap-based discovery.',
+					'Kept footer to four utility links: `Sitemap`, `Changes`, `Status`, `Contact`.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.01',
 		date: '2026-04-23',
 		title: 'Navigation priority reset + experience/education demoted to background surfaces',
 		summary: 'Updated primary navigation to prioritize Writing → Capabilities → Events/Opportunities and repositioned experience/education as lower-priority background proof surfaces.',
 		impact: 'Top-level wayfinding now matches the intended emphasis: writing and capability showcase first, operational tools second, and resume-depth pages available but demoted.',
-		current: true,
 		tags: ['navigation', 'home', 'prioritization', 'ux', 'background'],
 		groups: [
 			{
