@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-04-24T03:57:55.743Z",
+    "generatedAt": "2026-04-24T06:27:19.427Z",
     "siteId": "adamboas.com",
     "dateRange": "30d",
-    "note": "ok (25 paths)",
+    "note": "ok (28 paths)",
     "triedSiteIds": [
       "adamboas.com",
       "www.adamboas.com",
@@ -11,23 +11,25 @@
     ]
   },
   "pageviewsByPath": {
-    "/": 31,
-    "/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority": 23,
-    "/writing": 18,
+    "/": 36,
+    "/writing": 25,
+    "/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority": 24,
     "/opportunities": 7,
     "/status": 7,
     "/contact": 5,
     "/sitemap": 5,
     "/experience": 5,
     "/capabilities": 5,
+    "/v2/writing": 4,
     "/events": 4,
+    "/writing/caf-ra": 3,
     "/status/leads": 3,
+    "/v2": 3,
     "/status/site-analytics": 3,
     "/experience/kbr-solutions-architect-2025": 3,
     "/license": 2,
-    "/writing/caf-ra": 2,
+    "/writing/acp-ra": 2,
     "/education": 2,
-    "/writing/acp-ra": 1,
     "/changes": 1,
     "/writing/code-as-policy": 1,
     "/\\nhttps://github.com/anboas/adamboas.info/actions/runs/24625625534": 1,
@@ -35,6 +37,7 @@
     "/capabilities/ai-autonomy": 1,
     "/experience/fast-das-jr-rf-engineer-2015": 1,
     "/writing/agentic-force-creation": 1,
+    "/writing/agent-control-plane-reference-architecture-acp-ra": 1,
     "/writing/2026-02-09-agent-tool-security-research": 1
   }
 }
