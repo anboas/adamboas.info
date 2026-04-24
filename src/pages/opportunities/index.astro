@@ -811,7 +811,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div class="opp-controls-grid">
 				<label class="opp-field opp-field-search">
 					<span>Search</span>
-					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="Search opportunities..." autocomplete="off" spellcheck="false" />
+					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="Search opportunities..." aria-label="Search opportunities" autocomplete="off" spellcheck="false" />
 				</label>
 				<label class="opp-field">
 					<span>Notice type</span>
@@ -1034,7 +1034,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-table-head">
 			<h2 class="opp-subtitle">Opportunity Table</h2>
-			<span id="opp-table-count" class="opp-subcopy">0 rows</span>
+			<span id="opp-table-count" class="opp-subcopy" aria-live="polite">0 rows</span>
 		</div>
 		<div class="opp-table-controls">
 			<div class="opp-table-controls-left">

@@ -54,13 +54,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.08',
+		date: '2026-04-24',
+		title: 'Report continuation: empty-state consistency + broader a11y route coverage',
+		summary: 'Extended the report pass with more consistent empty-state recovery actions, map-view labeling alignment, and expanded automated axe coverage to additional showcase routes.',
+		impact: 'Events now provides clear reset affordances in both list and calendar empty states, map language is consistent (`Map View`), live result counters are announced for assistive tech, and a11y CI now scans capabilities/opportunities surfaces too.',
+		current: true,
+		tags: ['ux', 'consistency', 'events', 'opportunities', 'a11y'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `Clear filters` action + dynamic active-filter guidance inside Events calendar empty state (`#radar-cal-empty`).',
+					'Expanded `tests/a11y.spec.ts` route coverage to include `/capabilities/` and `/opportunities/`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Renamed Events map section heading from `Geographic View` to `Map View` for consistent route language.',
+					'Added live-region announcements on dynamic result counters (`#radar-count`, `#opp-table-count`).',
+					'Added explicit `aria-label="Search opportunities"` on opportunities global search input.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.07',
 		date: '2026-04-24',
 		title: 'A11y pipeline stability fix for report pass',
 		summary: 'Fixed flaky CI accessibility checks by removing `networkidle` dependency from Playwright a11y navigations.',
 		impact: 'A11y workflow now validates actual accessibility issues rather than timing out on long-lived network activity.',
-		current: true,
 		tags: ['a11y', 'ci', 'testing', 'stability'],
 		groups: [
 			{ kind: 'Added', items: [] },

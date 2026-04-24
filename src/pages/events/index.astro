@@ -969,7 +969,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			<div class="mt-2 border-t border-slate-800 pt-2">
 				<div class="flex flex-wrap items-end justify-between gap-3">
 					<div id="radar-filter-chips" class="radar-filter-chips"></div>
-					<p id="radar-count" class="radar-count text-xs text-slate-400"></p>
+					<p id="radar-count" class="radar-count text-xs text-slate-400" aria-live="polite"></p>
 				</div>
 			</div>
 		</section>
@@ -993,7 +993,9 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 					</div>
 				</div>
 				<div id="radar-cal-empty" class="hidden rounded-none border border-slate-800 bg-slate-950/60 p-3 text-xs text-slate-300">
-					No dated events match your current filters for this month.
+					<p>No dated events match your current filters for this month.</p>
+					<p id="radar-cal-empty-sub" class="mt-2 text-xs text-slate-400">Try broadening filters or clearing them.</p>
+					<button id="radar-cal-empty-reset" class="mt-2 radar-btn radar-btn-tight" type="button">Clear filters</button>
 				</div>
 				<div id="radar-calendar-grid" class="radar-calendar-grid" aria-label="Events calendar"></div>
 			</div>
@@ -1369,7 +1371,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 
 			<section id="radar-map-section" class="card p-5">
 				<div class="mb-3 flex items-center justify-between gap-2">
-					<h2 class="section-title">Geographic View</h2>
+					<h2 class="section-title">Map View</h2>
 					<div class="radar-map-tools">
 						<button id="radar-map-fit" class="radar-btn radar-btn-tight" type="button">Fit Results</button>
 						<button id="radar-map-reset" class="radar-btn radar-btn-tight" type="button">Reset</button>
@@ -1418,6 +1420,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		opportunityContextBack: document.getElementById('radar-opportunity-context-back'),
 		opportunityContextClear: document.getElementById('radar-opportunity-context-clear'),
 		emptyReset: document.getElementById('radar-empty-reset'),
+		calendarEmptyReset: document.getElementById('radar-cal-empty-reset'),
 	};
 
 	const list = document.getElementById('radar-list');
@@ -1435,6 +1438,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 	const calendarGrid = document.getElementById('radar-calendar-grid');
 	const calendarLabel = document.getElementById('radar-cal-label');
 	const calendarEmpty = document.getElementById('radar-cal-empty');
+	const calendarEmptySub = document.getElementById('radar-cal-empty-sub');
 	const calendarBody = document.getElementById('radar-cal-body');
 	const statusWrap = document.getElementById('radar-status-wrap');
 	const filterChips = document.getElementById('radar-filter-chips');
@@ -1821,7 +1825,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		return `${fmt.format(start)} to ${fmt.format(end)}`;
 	}
 
-	function renderCalendar(sourceCards) {
+	function renderCalendar(sourceCards, state) {
 		if (!calendarGrid) return;
 		const items = calendarItemsFromCards(sourceCards);
 		const monthStart = monthStartLocal(calendarMonth);
@@ -1832,6 +1836,12 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 
 		if (calendarLabel) calendarLabel.textContent = fmtCalendarMonth(monthStart);
 		if (calendarEmpty) calendarEmpty.classList.toggle('hidden', hasInMonth);
+		if (calendarEmptySub && !hasInMonth) {
+			const active = activeFilterCount(state);
+			calendarEmptySub.textContent = active > 0
+				? `${active} filter${active === 1 ? '' : 's'} active. Try broadening filters or clearing them.`
+				: 'No additional filters are active. Try another month or broadening the window.';
+		}
 		calendarGrid.innerHTML = '';
 
 		const weekdayRow = document.createElement('div');
@@ -2543,6 +2553,21 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		return { visible, state };
 	}
 
+	function activeFilterCount(state) {
+		let count = 0;
+		if (state.q) count += 1;
+		if (state.branch) count += 1;
+		if (state.type) count += 1;
+		if (state.status) count += 1;
+		if (state.topics?.size) count += 1;
+		if (state.windowDays) count += 1;
+		if (state.upcoming) count += 1;
+		if (state.verified) count += 1;
+		if (state.newOnly) count += 1;
+		if (state.showPast) count += 1;
+		return count;
+	}
+
 	function renderFilterChips(state) {
 		const chips = [];
 		if (state.q) chips.push(`Search: ${state.q}`);
@@ -2697,7 +2722,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		renderFilterChips(state);
 		renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages);
 		renderRecencyBadges(visible);
-		renderCalendar(visible);
+		renderCalendar(visible, state);
 		renderMap(visible);
 
 		const query = toQuery(state);
@@ -2755,6 +2780,9 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		render();
 	});
 	controls.emptyReset?.addEventListener('click', () => {
+		controls.reset.click();
+	});
+	controls.calendarEmptyReset?.addEventListener('click', () => {
 		controls.reset.click();
 	});
 	controls.toggleMap.addEventListener('click', () => {
