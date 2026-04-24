@@ -100,9 +100,136 @@ const prettyPath = `/${slug}/`;
 
 	<section class="mt-4 card v2-mirror-shell p-2 sm:p-3">
 		<div class="v2-iframe-frame">
-			<iframe title={`Production mirror ${prettyPath}`} src={withBase(classicPath)} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe id="v2-mirror-frame" title={`Production mirror ${prettyPath}`} src={withBase(classicPath)} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</section>
+
+	<script is:inline>
+		(() => {
+			const frame = document.getElementById('v2-mirror-frame');
+			if (!frame) return;
+
+			const v2Css = `
+				:root {
+					color-scheme: dark;
+				}
+				body {
+					background: #05070b !important;
+					color: #e6edf3 !important;
+				}
+				.site-header,
+				.site-footer {
+					background: #05070b !important;
+					border-color: #1e2b3e !important;
+				}
+				.card,
+				.control-shell,
+				.writing-detail-shell,
+				.writing-main-card,
+				.writing-right-rail,
+				.writing-left-rail,
+				.writing-content-card {
+					background: #0a0f1a !important;
+					border-color: #243244 !important;
+				}
+				a {
+					color: #b8d5ff;
+				}
+				a:hover {
+					color: #d8e8ff;
+				}
+				.ui-link-btn,
+				button,
+				.footer-link {
+					border-radius: 0 !important;
+					border-color: #2c3d54 !important;
+				}
+				.ui-link-btn-primary,
+				button.primary,
+				button[type='submit'] {
+					background: #2f81f7 !important;
+					border-color: #2f81f7 !important;
+					color: #f8fbff !important;
+				}
+				.ui-pill,
+				.badge,
+				.tag-chip,
+				[class*='pill'] {
+					background: #0f1626 !important;
+					border-color: #243244 !important;
+					color: #9da7b3 !important;
+				}
+				input,
+				select,
+				textarea {
+					background: #0f1626 !important;
+					border-color: #243244 !important;
+					color: #e6edf3 !important;
+				}
+				tr:hover td,
+				tbody tr:hover {
+					background: rgba(47, 129, 247, 0.08) !important;
+				}
+				.sticky-tab-active,
+				[aria-current='page'] {
+					background: rgba(34, 211, 238, 0.16) !important;
+					border-color: rgba(34, 211, 238, 0.45) !important;
+					color: #c7fbff !important;
+				}
+			`;
+
+			const basePath = document.body?.dataset?.siteBase || '/';
+			const stripBase = (path) => {
+				if (!path.startsWith(basePath)) return path;
+				return `/${path.slice(basePath.length).replace(/^\/+/, '')}`;
+			};
+
+			const toV2Href = (href) => {
+				try {
+					const parsed = new URL(href, window.location.origin);
+					if (parsed.origin !== window.location.origin) return null;
+					if (/\.(pdf|xml|png|jpg|jpeg|webp|gif|mp3|m4a)$/i.test(parsed.pathname)) return null;
+					const path = stripBase(parsed.pathname);
+					if (path.startsWith('/v2/')) return parsed.pathname + parsed.search + parsed.hash;
+					if (path === '/v2') return parsed.pathname + parsed.search + parsed.hash;
+					const next = `${basePath.replace(/\/$/, '')}/v2${path === '/' ? '/' : path}`;
+					return `${next}${parsed.search}${parsed.hash}`;
+				} catch {
+					return null;
+				}
+			};
+
+			const applyToFrame = () => {
+				const doc = frame.contentDocument;
+				if (!doc) return;
+
+				let style = doc.getElementById('v2-mirror-overrides');
+				if (!style) {
+					style = doc.createElement('style');
+					style.id = 'v2-mirror-overrides';
+					doc.head.appendChild(style);
+				}
+				style.textContent = v2Css;
+
+				doc.addEventListener('click', (event) => {
+					const target = event.target;
+					if (!(target instanceof Element)) return;
+					const anchor = target.closest('a[href]');
+					if (!anchor) return;
+					if (anchor.hasAttribute('download')) return;
+					const href = anchor.getAttribute('href');
+					if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+					const next = toV2Href(anchor.href);
+					if (!next) return;
+					event.preventDefault();
+					window.location.href = next;
+				}, { capture: true });
+			};
+
+			frame.addEventListener('load', applyToFrame);
+			applyToFrame();
+		})();
+	</script>
 </V2Layout>
 
 <style>
