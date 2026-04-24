@@ -1,0 +1,147 @@
+/* Dedicated visual system for /v2/* routes */
+
+:root {
+  --v2-accent: #22d3ee;
+  --v2-accent-2: #818cf8;
+  --v2-ink: #dbeafe;
+  --v2-muted: #93a4c3;
+  --v2-surface-0: #060b16;
+  --v2-surface-1: #0b1324;
+  --v2-surface-2: #111b31;
+  --v2-border: rgba(96, 133, 193, 0.28);
+  --v2-border-strong: rgba(129, 160, 218, 0.48);
+}
+
+body[data-ui='v2'] {
+  color: var(--v2-ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(1100px 700px at 15% -15%, rgba(56, 189, 248, 0.13), transparent 58%),
+    radial-gradient(1000px 640px at 85% -20%, rgba(129, 140, 248, 0.14), transparent 60%),
+    linear-gradient(180deg, #050a14 0%, #060c18 100%);
+  background-attachment: fixed;
+  letter-spacing: 0.002em;
+}
+
+body[data-ui='v2'] .site-main {
+  max-width: 90rem;
+  padding-top: 1.15rem;
+}
+
+body[data-ui='v2'] .site-header,
+body[data-ui='v2'] .site-footer {
+  background: rgba(7, 12, 24, 0.78);
+  border-color: var(--v2-border) !important;
+  backdrop-filter: blur(10px);
+}
+
+body[data-ui='v2'] .site-brand {
+  text-shadow: 0 0 0 transparent;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+body[data-ui='v2'] .card {
+  border-radius: 14px;
+  border: 1px solid var(--v2-border);
+  background: linear-gradient(180deg, rgba(11, 19, 36, 0.97) 0%, rgba(9, 15, 30, 0.98) 100%);
+  box-shadow: 0 14px 38px rgba(2, 7, 18, 0.42), inset 0 1px 0 rgba(148, 188, 255, 0.06);
+}
+
+body[data-ui='v2'] a.card:hover,
+body[data-ui='v2'] button.card:hover {
+  border-color: var(--v2-border-strong);
+  box-shadow: 0 18px 46px rgba(3, 9, 24, 0.5), inset 0 1px 0 rgba(148, 188, 255, 0.1);
+}
+
+body[data-ui='v2'] .section-title {
+  border-left: 0;
+  padding-left: 0;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+body[data-ui='v2'] .ui-link-btn,
+body[data-ui='v2'] .footer-link {
+  border-radius: 10px;
+  border: 1px solid var(--v2-border);
+  background: rgba(13, 22, 41, 0.72);
+  color: #d4e4ff;
+}
+
+body[data-ui='v2'] .ui-link-btn:hover,
+body[data-ui='v2'] .footer-link:hover {
+  border-color: var(--v2-border-strong);
+  background: rgba(20, 32, 57, 0.82);
+}
+
+body[data-ui='v2'] .ui-link-btn-primary {
+  border-color: rgba(34, 211, 238, 0.45);
+  background: linear-gradient(180deg, rgba(11, 138, 170, 0.34) 0%, rgba(10, 92, 139, 0.36) 100%);
+  color: #e6f9ff;
+}
+
+body[data-ui='v2'] :where(a, button, input, select, textarea):focus-visible {
+  outline-color: rgba(56, 189, 248, 0.95);
+  box-shadow: 0 0 0 3px rgba(5, 12, 24, 0.95), 0 0 0 5px rgba(56, 189, 248, 0.35);
+}
+
+body[data-ui='v2'] .control-shell {
+  border-radius: 12px;
+  border-color: var(--v2-border);
+  background: rgba(10, 17, 33, 0.92);
+}
+
+body[data-ui='v2'] .writing-key-pill,
+body[data-ui='v2'] .writing-tag-chip > button,
+body[data-ui='v2'] [data-writing-sort],
+body[data-ui='v2'] [data-writing-search],
+body[data-ui='v2'] [data-writing-clear],
+body[data-ui='v2'] [data-writing-tags-toggle],
+body[data-ui='v2'] [data-writing-page-first],
+body[data-ui='v2'] [data-writing-page-prev],
+body[data-ui='v2'] [data-writing-page-next],
+body[data-ui='v2'] [data-writing-page-last] {
+  border-radius: 999px !important;
+  border-color: var(--v2-border) !important;
+  background: rgba(12, 20, 37, 0.92) !important;
+}
+
+body[data-ui='v2'] [data-writing-card] {
+  border-radius: 14px;
+  border-color: var(--v2-border);
+  background: linear-gradient(180deg, rgba(12, 21, 39, 0.97) 0%, rgba(9, 16, 31, 0.98) 100%);
+}
+
+body[data-ui='v2'] [data-writing-card-title] {
+  font-size: 1.03rem;
+  letter-spacing: 0.002em;
+}
+
+body[data-ui='v2'] .writing-type-pill {
+  border-radius: 999px;
+  border-color: rgba(130, 160, 218, 0.45);
+  background: rgba(16, 28, 51, 0.66);
+}
+
+body[data-ui='v2'] .writing-type-paper {
+  border-color: rgba(67, 225, 255, 0.56);
+  color: #a5f3fc;
+}
+
+body[data-ui='v2'] .writing-type-note {
+  border-color: rgba(147, 197, 253, 0.56);
+  color: #bfdbfe;
+}
+
+body[data-ui='v2'] .writing-type-memo {
+  border-color: rgba(167, 139, 250, 0.52);
+  color: #ddd6fe;
+}
+
+body[data-ui='v2'] table {
+  border-color: var(--v2-border) !important;
+}
+
+body[data-ui='v2'] table :is(th, td) {
+  border-color: rgba(96, 133, 193, 0.2) !important;
+}

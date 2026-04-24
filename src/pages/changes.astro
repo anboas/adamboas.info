@@ -57,13 +57,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.11',
+		date: '2026-04-23',
+		title: 'Activated dedicated v2 visual system across /v2/* routes',
+		summary: 'Rolled out a v2-only stylesheet and shell-level theme scope so native v2 pages are visually distinct from production while keeping shared content intact.',
+		impact: 'v2 routes now render with a materially different presentation (typography, surfaces, cards, controls, focus treatment, and writing card styling) instead of appearing as production clones with only header changes.',
+		current: true,
+		tags: ['ui', 'v2', 'visual-system', 'writing', 'theming'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `src/styles/v2.css` with v2-scoped surface, typography, control, and writing-card overrides.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `src/layouts/V2Layout.astro` to import `v2.css` and mark v2 pages with `data-ui="v2"` scope.',
+					'Applied stronger v2 differentiation across shared primitives (`.card`, `.ui-link-btn`, `.section-title`, control shells, writing pills/cards, and table surfaces) without touching production routes.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.10',
 		date: '2026-04-23',
 		title: 'Removed v2 fourth-wall scaffolding and aligned two full design mirrors',
 		summary: 'Removed preview/toggle scaffolding and converted `/v2/` homepage to mirror the production homepage content with v2 styling and v2-native routing.',
 		impact: 'The site now presents two clean, full experiences: production (`/`) and v2 (`/v2/*`), with identical content architecture and no preview/meta framing in user-facing layout.',
-		current: true,
 		tags: ['ui', 'v2', 'cleanup', 'mirrors', 'homepage'],
 		groups: [
 			{
