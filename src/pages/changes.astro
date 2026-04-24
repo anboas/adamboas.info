@@ -56,13 +56,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.10',
+		date: '2026-04-24',
+		title: 'Navigation semantics + responsive table/focus refinement pass',
+		summary: 'Continued report closure with stronger mobile nav semantics and a more keyboard-friendly, responsive opportunities table container.',
+		impact: 'Mobile sticky browse now exposes explicit navigation semantics (`nav` landmark + `aria-current`), and opportunity-table interaction is cleaner on tablets/phones with focused horizontal scroll regions, reduced medium-screen column density, and explicit table guidance for assistive tech.',
+		current: true,
+		tags: ['a11y', 'responsive', 'navigation', 'opportunities', 'mobile'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added a dedicated `nav` landmark + `aria-current="page"` support in `src/components/StickyBrowseBar.astro`.',
+					'Added table region semantics on opportunities (`role="region"`, `aria-label`, keyboard focus via `tabindex="0"`, and an accessibility caption).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Added explicit reset control label (`aria-label="Reset all opportunity filters"`) for filter controls.',
+					'Improved opportunities table responsive behavior at medium/mobile breakpoints with narrower min-widths and hidden lower-priority columns at <=1023px and <=767px.',
+					'Hardened horizontal scroll behavior on opportunities table wrapper for touch/trackpad interactions.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.09',
 		date: '2026-04-24',
 		title: 'Responsive edge-case pass on mobile nav + opportunity table ergonomics',
 		summary: 'Continued report closure with responsive behavior hardening on mobile navigation overflow and dense opportunity-table handling.',
 		impact: 'Mobile browse tabs now avoid negative-margin overflow behavior, and the opportunities table now behaves more predictably on small screens with reduced default column density and improved horizontal-scroll containment.',
-		current: true,
 		tags: ['responsive', 'mobile', 'opportunities', 'ux', 'consistency'],
 		groups: [
 			{

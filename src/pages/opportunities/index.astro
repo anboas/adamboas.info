@@ -945,7 +945,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				</div>
 				<span id="opp-chart-filter-status" class="opp-chart-filter-status" aria-live="polite"></span>
 				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence · t 3P signal · p FPDS · v decision</span>
-				<button id="opp-filter-reset" class="opp-reset" type="button">Reset filters</button>
+				<button id="opp-filter-reset" class="opp-reset" type="button" aria-label="Reset all opportunity filters">Reset filters</button>
 			</div>
 		</div>
 	</section>
@@ -1062,8 +1062,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<button id="opp-table-last" class="opp-page-btn" type="button" aria-label="Last page">»</button>
 			</div>
 		</div>
-		<div id="opp-table-wrap" class="opp-table-wrap opp-table-mode-compact">
+		<div id="opp-table-wrap" class="opp-table-wrap opp-table-mode-compact" role="region" aria-label="Opportunity intelligence table" tabindex="0">
 			<table class="opp-table">
+				<caption class="sr-only">Opportunity intelligence table with sortable columns. On small screens, scroll horizontally to inspect additional columns.</caption>
 				<colgroup>
 					<col class="opp-col-intel-view" data-col="view" />
 					<col class="opp-col-gem" data-col="gem" />
@@ -4133,6 +4134,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		.opp-gem-list {
 			grid-template-columns: 1fr;
 			max-height: 18rem;
+		}
+	}
+
+	@media (max-width: 1023px) {
+		.opp-table {
+			min-width: 88rem;
+		}
+		.opp-table-wrap.opp-table-mode-compact .opp-table {
+			min-width: 72rem;
+		}
+		.opp-table [data-col='sol'],
+		.opp-table [data-col='events'] {
+			display: none;
 		}
 	}
 

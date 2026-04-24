@@ -8,16 +8,20 @@ function cls(key) {
 		? 'inline-flex h-8 items-center justify-center rounded-none border px-2 text-[11px] font-semibold text-slate-50 sm:px-3 sm:text-sm sticky-tab-active'
 		: 'inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm';
 }
+
+function ariaCurrent(key) {
+	return key === active ? 'page' : undefined;
+}
 ---
 
 <div class="sticky-browse md:hidden">
-	<div class="mx-auto w-full max-w-6xl px-4 py-1.5">
+	<nav class="mx-auto w-full max-w-6xl px-4 py-1.5" aria-label="Primary mobile navigation">
 		<div class="flex flex-nowrap gap-1.5 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-			<a class={cls('home')} href={withBase('/')}>Home</a>
-			<a class={cls('writing')} href={withBase('/writing/')}>Writing</a>
-			<a class={cls('capabilities')} href={withBase('/capabilities/')}>Capabilities</a>
-			<a class={cls('events')} href={withBase('/events/')}>Events</a>
-			<a class={cls('opportunities')} href={withBase('/opportunities/')}>Opportunities</a>
+			<a class={cls('home')} href={withBase('/')} aria-current={ariaCurrent('home')}>Home</a>
+			<a class={cls('writing')} href={withBase('/writing/')} aria-current={ariaCurrent('writing')}>Writing</a>
+			<a class={cls('capabilities')} href={withBase('/capabilities/')} aria-current={ariaCurrent('capabilities')}>Capabilities</a>
+			<a class={cls('events')} href={withBase('/events/')} aria-current={ariaCurrent('events')}>Events</a>
+			<a class={cls('opportunities')} href={withBase('/opportunities/')} aria-current={ariaCurrent('opportunities')}>Opportunities</a>
 		</div>
-	</div>
+	</nav>
 </div>
