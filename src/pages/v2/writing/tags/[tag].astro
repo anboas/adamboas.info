@@ -52,7 +52,7 @@ const items = [
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 ---
 
-<V2Layout title={`Writing Tag: ${tag} | Adam Boas (UI v2)`} description={`Writing tagged ${tag}.`} canonicalHref={canonicalHref} active="writing">
+<V2Layout title={`Writing Tag: ${tag} | Adam Boas`} description={`Writing tagged ${tag}.`} canonicalHref={canonicalHref} active="writing">
 	<script
 		type="application/ld+json"
 		set:html={JSON.stringify({

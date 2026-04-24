@@ -14,7 +14,7 @@ const prev = idx > 0 ? experience[idx - 1] : null;
 const next = idx >= 0 && idx + 1 < experience.length ? experience[idx + 1] : null;
 ---
 
-<V2Layout title={`Experience | ${r.company} (UI v2)`} description={`${r.title} (${r.period}).`} active="experience">
+<V2Layout title={`Experience | ${r.company}`} description={`${r.title} (${r.period}).`} active="experience">
 	<article class="card p-8">
 		<header class="flex flex-col gap-3">
 			<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/v2/experience/')}>← Experience</a>

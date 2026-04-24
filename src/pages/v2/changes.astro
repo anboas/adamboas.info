@@ -53,13 +53,126 @@ const releases: Release[] = [
 
 
 
+
+
+
+
+	{
+		version: 'v2.4.10',
+		date: '2026-04-23',
+		title: 'Removed v2 fourth-wall scaffolding and aligned two full design mirrors',
+		summary: 'Removed preview/toggle scaffolding and converted `/v2/` homepage to mirror the production homepage content with v2 styling and v2-native routing.',
+		impact: 'The site now presents two clean, full experiences: production (`/`) and v2 (`/v2/*`), with identical content architecture and no preview/meta framing in user-facing layout.',
+		current: true,
+		tags: ['ui', 'v2', 'cleanup', 'mirrors', 'homepage'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Rebuilt `src/pages/v2/index.astro` from production homepage content model with v2-native route links.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `UiVersionToggle` component and homepage toggle surface from production.',
+					'Removed residual mirrored fallback page (`src/pages/v2/[...slug].astro`) and dropped mirror-only framing text/controls.',
+					'Cleaned v2 shell labeling in header/footer and removed production-switch callout from v2 nav chrome.',
+					'Removed explicit `UI v2` link from production header/mobile sticky nav to keep production layout clean.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
+		version: 'v2.4.09',
+		date: '2026-04-23',
+		title: 'v2 residual routes completed: papers + blog native surfaces',
+		summary: 'Finished the residual v2 route set by replacing remaining mirrored papers/blog paths with native v2 pages and redirects.',
+		impact: 'v2 now has full native coverage for papers and blog surfaces; mirrored catch-all inventory no longer handles these routes.',
+		tags: ['ui', 'v2', 'native-routes', 'papers', 'blog', 'completion'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added native v2 paper back-compat routes: `src/pages/v2/papers/index.astro` and `src/pages/v2/papers/[...slug].astro` (redirecting to `/v2/writing/*`).',
+					'Added native v2 blog routes: `src/pages/v2/blog/index.astro` and `src/pages/v2/blog/[...slug].astro`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Pruned `src/pages/v2/[...slug].astro` to remove residual `papers/*` and `blog/*` mirrored route handling.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
+		version: 'v2.4.08',
+		date: '2026-04-23',
+		title: 'v2 native completion pass: experience, education, and utility redirects',
+		summary: 'Completed the next native v2 conversion wave for profile/credential pages and utility redirects, reducing mirrored fallback to only residual routes.',
+		impact: 'v2 now includes native experience and education index/detail pages plus native credentials/license/content-license utility routes, with mirror catch-all further pruned.',
+		tags: ['ui', 'v2', 'native-routes', 'experience', 'education', 'utility'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added native v2 experience routes: `src/pages/v2/experience/index.astro` and `src/pages/v2/experience/[slug].astro`.',
+					'Added native v2 education routes: `src/pages/v2/education/index.astro` and `src/pages/v2/education/[slug].astro`.',
+					'Added native v2 utility routes: `src/pages/v2/credentials.astro`, `src/pages/v2/license.astro`, and `src/pages/v2/content-license.astro`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Pruned `src/pages/v2/[...slug].astro` route inventory to remove newly native experience/education/utility routes.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
+		version: 'v2.4.07',
+		date: '2026-04-23',
+		title: 'v2 native route expansion: writing detail + status + sitemap + changes',
+		summary: 'Continued native v2 conversion by replacing mirrored wrappers on writing detail and core utility/status surfaces.',
+		impact: 'v2 now has native writing detail pages plus native status, site analytics, sitemap, and changelog pages, reducing mirror dependency while preserving production stability.',
+		tags: ['ui', 'v2', 'native-routes', 'writing-detail', 'status', 'sitemap', 'changes'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added native v2 writing detail route: `src/pages/v2/writing/[...slug].astro`.',
+					'Added native v2 status routes: `src/pages/v2/status.astro` and `src/pages/v2/status/site-analytics.astro`.',
+					'Added native v2 utility routes: `src/pages/v2/sitemap.astro` and `src/pages/v2/changes.astro`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated v2 mirrored catch-all inventory (`src/pages/v2/[...slug].astro`) to exclude newly native v2 routes.',
+					'Aligned native v2 internal links and canonicals to `/v2/*` where applicable.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.06',
 		date: '2026-04-23',
 		title: 'v2 native route expansion: events, opportunities, capabilities',
 		summary: 'Continued native v2 buildout by replacing additional mirrored wrappers with first-class v2 pages for events, opportunities, and capabilities.',
 		impact: 'Core browsing paths in v2 now render natively (not mirrored) for events, opportunity intelligence, capabilities index, and capability detail pages while production remains unchanged.',
-		current: true,
 		tags: ['ui', 'v2', 'native-routes', 'events', 'opportunities', 'capabilities'],
 		groups: [
 			{
@@ -3741,12 +3854,11 @@ function releaseSearchText(release: Release) {
 }
 ---
 
-<V2Layout
+<V2Layout active="home"
 	title="Change Notes | Adam Boas"
 	description="Public, versioned website capability updates for adamboas.com."
 	canonicalHref="https://www.adamboas.com/v2/changes/"
-
-	active="home">
+>
 	<!-- StickyBrowseBar omitted on this page by preference: Changes link should live in footer only. -->
 
 	<section data-change-notes class="space-y-4">

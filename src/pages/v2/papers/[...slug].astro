@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.props as { slug: string };
 ---
 
-<V2Layout title="Writing | Adam Boas (UI v2)" description="Redirecting…" canonicalHref={`/v2/writing/${slug}/`} active="writing">
+<V2Layout title="Writing | Adam Boas" description="Redirecting…" canonicalHref={`/v2/writing/${slug}/`} active="writing">
 	<meta http-equiv="refresh" content={`0; url=${withBase(`/v2/writing/${slug}/`)}`} />
 	<p class="text-slate-300">Redirecting to <a href={withBase(`/v2/writing/${slug}/`)}>{`/v2/writing/${slug}/`}</a>…</p>
 </V2Layout>

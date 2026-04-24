@@ -5,7 +5,6 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { CONTACT_PHONE, RESUME_CLEARANCE, education, experience } from '../data/resume';
 import { withBase } from '../utils/withBase';
 import WritingCompactCard from '../components/WritingCompactCard.astro';
-import UiVersionToggle from '../components/UiVersionToggle.astro';
 
 const roles = experience;
 const certs = education;
@@ -84,9 +83,6 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 	/>
 	<a id="page-top" class="block" aria-hidden="true"></a>
 
-	<div class="mb-3 flex items-center justify-end">
-		<UiVersionToggle current="classic" />
-	</div>
 
 	<section class="card p-8">
 		<div class="flex flex-col gap-6">

@@ -1,8 +1,13 @@
 ---
-import { getCollection } from 'astro:content';
 import V2Layout from '../../layouts/V2Layout.astro';
-import UiVersionToggle from '../../components/UiVersionToggle.astro';
+import { getCollection } from 'astro:content';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { CONTACT_PHONE, RESUME_CLEARANCE, education, experience } from '../../data/resume';
 import { withBase } from '../../utils/withBase';
+import WritingCompactCard from '../../components/WritingCompactCard.astro';
+
+const roles = experience;
+const certs = education;
 
 const writing = (await getCollection('writing'))
 	.filter((w) => w.data.status === 'published')
@@ -12,416 +17,219 @@ const papers = (await getCollection('papers'))
 	.filter((p) => p.data.status === 'published')
 	.sort((a, b) => (b.data.date?.valueOf?.() ?? 0) - (a.data.date?.valueOf?.() ?? 0));
 
-const cards = [
+// Show a small slice on the homepage.
+const homepageWriting = [
 	...writing.map((w) => ({
 		slug: w.id.split('/').pop(),
+		type: w.data.type,
 		title: w.data.title,
-		kind: w.data.type,
-		desc: w.data.summary,
+		description: w.data.summary,
+		tags: w.data.tags ?? [],
+		hasAudio: Boolean(w.data.audioPath),
 		date: w.data.date,
-		href: withBase(`/v2/writing/${w.id.split('/').pop()}/`),
 	})),
 	...papers.map((p) => ({
 		slug: p.id,
+		type: 'paper',
 		title: p.data.title,
-		kind: 'paper',
-		desc: p.data.description,
+		description: p.data.description,
+		tags: p.data.tags ?? [],
+		hasAudio: Boolean(p.data.audioPath),
 		date: p.data.date,
-		href: withBase(`/v2/writing/${p.id}/`),
 	})),
 ]
-	.filter((x) => x.slug)
+	.filter((x) => !!x.slug)
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0))
-	.slice(0, 6);
+	.slice(0, 8);
+
+const featuredOrder = ['acp-ra', 'agentic-force-creation', '2026-02-09-agent-tool-security-research'];
+const featuredFromOrder = featuredOrder
+	.map((slug) => homepageWriting.find((w) => w.slug === slug))
+	.filter(Boolean);
+const featuredFill = homepageWriting.filter((w) => !featuredOrder.includes(String(w.slug))).slice(0, Math.max(0, 3 - featuredFromOrder.length));
+const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
+
+const siteUrl = new URL(withBase('/v2/'), Astro.site).toString();
+const writingSearchTarget = new URL(withBase('/v2/writing/?q={search_term_string}'), Astro.site).toString();
 ---
 
-<V2Layout title="Adam Boas - UI v2 Preview" description="Parallel v2 UI preview for adamboas.com upgrade path." active="home">
+<V2Layout title={SITE_TITLE} description={SITE_DESCRIPTION} image="/og/home.png" active="home">
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'Person',
+			name: 'Adam Boas',
+			url: 'https://www.adamboas.com/',
+			sameAs: ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'],
+			jobTitle: 'Solutions Architect',
+			telephone: CONTACT_PHONE,
+			description: SITE_DESCRIPTION,
+		})}
+	/>
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'WebSite',
+			name: SITE_TITLE,
+			url: siteUrl,
+			potentialAction: {
+				'@type': 'SearchAction',
+				target: writingSearchTarget,
+				'query-input': 'required name=search_term_string',
+			},
+		})}
+	/>
+	<a id="page-top" class="block" aria-hidden="true"></a>
 
-	<section class="card v2-shell p-5">
-		<div class="flex flex-wrap items-center justify-between gap-3">
-			<div>
-				<p class="v2-kicker">Parallel release track</p>
-				<h1 class="section-title mt-1">adamboas.com UI v2 preview</h1>
-				<p class="mt-2 text-sm text-slate-300">Classic and v2 now run side-by-side. We can iterate this route live while classic remains stable.</p>
-			</div>
-			<UiVersionToggle current="v2" />
-		</div>
-	</section>
 
-	<section class="mt-4 card v2-shell p-4">
-		<div class="flex flex-wrap gap-2 text-xs">
-			<a class="ui-link-btn" href={withBase('/v2/writing/')}>Writing</a>
-			<a class="ui-link-btn" href={withBase('/v2/events/')}>Events</a>
-			<a class="ui-link-btn" href={withBase('/v2/opportunities/')}>Opportunities</a>
-			<a class="ui-link-btn" href={withBase('/v2/capabilities/')}>Capabilities</a>
-			<a class="ui-link-btn" href={withBase('/v2/experience/')}>Experience</a>
-			<a class="ui-link-btn" href={withBase('/v2/education/')}>Education</a>
-			<a class="ui-link-btn" href={withBase('/v2/contact/')}>Contact</a>
-			<a class="ui-link-btn" href={withBase('/v2/changes/')}>Changes</a>
-			<a class="ui-link-btn" href={withBase('/v2/status/')}>Status</a>
-		</div>
-	</section>
-
-	<section class="mt-4 card v2-shell p-5">
-		<div class="flex flex-wrap items-start justify-between gap-4">
-			<div class="max-w-3xl">
-				<p class="v2-kicker">Image-driven direction</p>
-				<h2 class="section-title mt-1">Final reference board integrated</h2>
-				<p class="mt-2 text-sm text-slate-300">Using your final board as the canonical direction: strategic technology framing, compact component density, graph-first data surfaces, and operational UI language.</p>
-				<div class="mt-3 flex flex-wrap gap-2">
-					<span class="v2-token" style="--token:#05070B">#05070B</span>
-					<span class="v2-token" style="--token:#0A0F1A">#0A0F1A</span>
-					<span class="v2-token" style="--token:#0F1626">#0F1626</span>
-					<span class="v2-token" style="--token:#2F81F7">#2F81F7</span>
-					<span class="v2-token" style="--token:#8B5CF6">#8B5CF6</span>
-					<span class="v2-token" style="--token:#22D3EE">#22D3EE</span>
-					<span class="v2-token" style="--token:#22C55E">#22C55E</span>
+	<section class="card p-8">
+		<div class="flex flex-col gap-6">
+			<div class="w-full max-w-4xl">
+				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">Adam Boas</h1>
+				<p class="mt-2 text-slate-400">Solutions Architect</p>
+				<p class="mt-4 text-lg leading-relaxed text-slate-300">
+					Warfighter lethality through trusted autonomy, control planes, and execution at tempo.
+				</p>
+				<div class="mt-5 flex flex-wrap items-center gap-3">
+					<a data-track="Contact: Intake Click" href={withBase('/v2/contact/?intent=consulting')} class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold">
+						Start project
+					</a>
+					<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="ui-link-btn px-4 text-sm font-semibold">Email direct</a>
+					<a data-track="Contact: Phone Click" href="tel:+13019042011" class="ui-link-btn px-4 text-sm font-semibold">{CONTACT_PHONE}</a>
 				</div>
 			</div>
-			<div class="flex flex-wrap gap-2">
-				<a class="ui-link-btn" href={withBase('/images/v2/ui-system-reference-final-2026-04-23.jpg')} target="_blank" rel="noopener noreferrer">Open final board</a>
-				<a class="ui-link-btn" href={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} target="_blank" rel="noopener noreferrer">Open previous board</a>
-			</div>
-		</div>
-		<div class="mt-4 grid gap-3 lg:grid-cols-2">
-			<figure class="v2-reference">
-				<img src={withBase('/images/v2/ui-system-reference-final-2026-04-23.jpg')} alt="Final dark operational design-system board with brand essence, component library, layouts, graph node system, and iconography." loading="lazy" />
-			</figure>
-			<figure class="v2-reference">
-				<img src={withBase('/images/v2/ui-system-reference-2026-04-23.jpg')} alt="Original UI component library board with tokens, spacing, cards, inputs, navigation, and tables." loading="lazy" />
-			</figure>
 		</div>
 	</section>
 
-	<section class="mt-4 grid gap-4 xl:grid-cols-3">
-		<article class="card v2-shell p-5">
-			<p class="v2-kicker">System primitive</p>
-			<h3 class="mt-1 text-sm font-semibold uppercase tracking-[0.09em] text-slate-100">Typography scale</h3>
-			<ul class="mt-3 v2-type-list">
-				<li><span>H1</span><strong>48 / 56</strong><em>Inter SemiBold</em></li>
-				<li><span>H2</span><strong>36 / 44</strong><em>Inter SemiBold</em></li>
-				<li><span>H3</span><strong>28 / 36</strong><em>Inter SemiBold</em></li>
-				<li><span>Body</span><strong>16 / 26</strong><em>Inter Regular</em></li>
-				<li><span>Small</span><strong>14 / 22</strong><em>Inter Regular</em></li>
-			</ul>
-		</article>
-		<article class="card v2-shell p-5">
-			<p class="v2-kicker">System primitive</p>
-			<h3 class="mt-1 text-sm font-semibold uppercase tracking-[0.09em] text-slate-100">Spacing + radius</h3>
-			<div class="mt-3 flex flex-wrap gap-2">
-				<span class="v2-chip">4</span>
-				<span class="v2-chip">8</span>
-				<span class="v2-chip">12</span>
-				<span class="v2-chip">16</span>
-				<span class="v2-chip">24</span>
-				<span class="v2-chip">32</span>
-				<span class="v2-chip">48</span>
-				<span class="v2-chip">96</span>
+	<section class="mt-6 card p-6">
+		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+			<h2 class="section-title">Featured Reading</h2>
+			<div class="flex flex-wrap items-center gap-3 text-sm font-semibold">
+				<a href={withBase('/v2/capabilities/')} class="text-stone-100 hover:text-stone-50">Capability topics →</a>
+				<a href={withBase('/v2/writing/')} class="text-stone-100 hover:text-stone-50">All writing →</a>
 			</div>
-			<div class="mt-4 grid grid-cols-4 gap-2">
-				<div class="v2-radius" style="--r:4px"><small>4</small></div>
-				<div class="v2-radius" style="--r:8px"><small>8</small></div>
-				<div class="v2-radius" style="--r:12px"><small>12</small></div>
-				<div class="v2-radius" style="--r:16px"><small>16</small></div>
-			</div>
-		</article>
-		<article class="card v2-shell p-5">
-			<p class="v2-kicker">System primitive</p>
-			<h3 class="mt-1 text-sm font-semibold uppercase tracking-[0.09em] text-slate-100">Control states</h3>
-			<div class="mt-3 grid gap-2">
-				<div class="flex flex-wrap gap-2">
-					<button class="v2-btn v2-btn-primary" type="button">Default</button>
-					<button class="v2-btn v2-btn-secondary" type="button">Hover</button>
-					<button class="v2-btn v2-btn-ghost" type="button">Ghost</button>
-				</div>
-				<label class="v2-input-wrap">
-					<span>Search</span>
-					<input class="v2-input" type="text" value="Search anything..." readonly />
-				</label>
-				<div class="v2-alert">Informational message surface</div>
-			</div>
-		</article>
-	</section>
-
-	<section class="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
-		<article class="card v2-hero p-6">
-			<p class="v2-kicker">Strategic technology • operational systems</p>
-			<h2 class="mt-2 text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Turning complex problems into operational advantage.</h2>
-			<p class="mt-3 text-sm leading-relaxed text-slate-300">This lane now follows the final board language: graph-aware structure, concise metadata rails, and dense operational scanning.</p>
-			<div class="mt-4 flex flex-wrap gap-2">
-				<a class="ui-link-btn ui-link-btn-primary" href={withBase('/v2/contact/')}>Start project</a>
-				<a class="ui-link-btn" href={withBase('/v2/writing/')}>All writing</a>
-			</div>
-		</article>
-		<article class="card v2-rail p-6">
-			<h3 class="v2-rail-title">Build plan (phase 2)</h3>
-			<ul class="mt-3 v2-list">
-				<li>Keep classic as production default.</li>
-				<li>Treat the final board as canonical v2 visual direction.</li>
-				<li>Port homepage, writing article, and education table layouts next.</li>
-				<li>Promote sections incrementally once approved.</li>
-			</ul>
-		</article>
-	</section>
-
-	<section class="mt-4 card v2-shell p-5">
-		<div class="flex flex-wrap items-end justify-between gap-2">
-			<h2 class="section-title">Layout adoption map</h2>
-			<p class="text-xs uppercase tracking-[0.08em] text-slate-400">sourced from final board</p>
-		</div>
-		<div class="mt-3 grid gap-3 md:grid-cols-3">
-			<article class="v2-layout-card">
-				<p class="v2-layout-kicker">Homepage</p>
-				<h3>Operational ideas hero + graph node panel</h3>
-				<ul>
-					<li>Dual-column hero + graph panel</li>
-					<li>Path cards beneath primary narrative</li>
-				</ul>
-			</article>
-			<article class="v2-layout-card">
-				<p class="v2-layout-kicker">Writing article</p>
-				<h3>Structured rail with key takeaways</h3>
-				<ul>
-					<li>Left meta rail and right highlights</li>
-					<li>Center long-form body as primary artifact</li>
-				</ul>
-			</article>
-			<article class="v2-layout-card">
-				<p class="v2-layout-kicker">Education / table</p>
-				<h3>Dense data grid with category filters</h3>
-				<ul>
-					<li>Fast sort/filter controls on top</li>
-					<li>Compact rows with clear status/meta chips</li>
-				</ul>
-			</article>
-		</div>
-	</section>
-
-	<section class="mt-4 card v2-shell p-5">
-		<div class="flex flex-wrap items-end justify-between gap-2">
-			<h2 class="section-title">Featured cards (v2 interaction pattern)</h2>
-			<a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/v2/writing/')}>Open writing →</a>
 		</div>
 		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-			{cards.map((card) => (
-				<a class="v2-card" href={card.href}>
-					<div class="flex items-center justify-between gap-2">
-						<span class="v2-kind">{card.kind}</span>
-						<span class="v2-date">{card.date ? card.date.toISOString().slice(0, 10) : ''}</span>
-					</div>
-					<h3 class="mt-2 text-base font-semibold text-slate-50">{card.title}</h3>
-					<p class="mt-2 line-clamp-3 text-sm text-slate-300">{card.desc}</p>
-					<p class="mt-3 text-xs text-sky-300">Read →</p>
-				</a>
+			{featuredReading.map((w) => (
+				<WritingCompactCard item={w} />
 			))}
 		</div>
 	</section>
-</V2Layout>
 
-<style>
-	.v2-shell {
-		border: 1px solid rgba(51, 65, 85, 0.9);
-		background: rgba(5, 7, 11, 0.95);
-	}
-	.v2-kicker {
-		font-size: 0.66rem;
-		letter-spacing: 0.16em;
-		text-transform: uppercase;
-		color: rgba(34, 211, 238, 0.95);
-	}
-	.v2-hero {
-		border: 1px solid rgba(47, 129, 247, 0.45);
-		background: rgba(10, 15, 26, 0.92);
-	}
-	.v2-rail {
-		border: 1px solid rgba(139, 92, 246, 0.4);
-		background: rgba(10, 15, 26, 0.88);
-	}
-	.v2-rail-title {
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: rgba(196, 181, 253, 0.96);
-	}
-	.v2-list {
-		display: grid;
-		gap: 0.4rem;
-		font-size: 0.86rem;
-		color: rgba(196, 207, 221, 0.96);
-	}
-	.v2-card {
-		display: block;
-		border: 1px solid rgba(36, 50, 68, 0.95);
-		background: rgba(10, 15, 26, 0.72);
-		padding: 0.9rem;
-		transition: border-color 130ms ease, transform 130ms ease, box-shadow 130ms ease;
-	}
-	.v2-card:hover {
-		border-color: rgba(47, 129, 247, 0.74);
-		transform: translateY(-1px);
-		box-shadow: 0 0 0 1px rgba(47, 129, 247, 0.2) inset, 0 16px 38px rgba(47, 129, 247, 0.09);
-	}
-	.v2-kind {
-		font-size: 0.63rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		border: 1px solid rgba(51, 65, 85, 0.92);
-		padding: 0.14rem 0.4rem;
-		color: rgba(148, 163, 184, 0.96);
-	}
-	.v2-date {
-		font-size: 0.72rem;
-		color: rgba(107, 114, 128, 0.96);
-	}
-	.v2-token {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.4rem;
-		height: 1.5rem;
-		padding: 0 0.55rem;
-		font-size: 0.63rem;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
-		border: 1px solid rgba(51, 65, 85, 0.92);
-		color: rgba(148, 163, 184, 0.97);
-		background: rgba(10, 15, 26, 0.82);
-	}
-	.v2-token::before {
-		content: '';
-		display: inline-block;
-		width: 0.55rem;
-		height: 0.55rem;
-		border-radius: 999px;
-		background: var(--token);
-		box-shadow: 0 0 0 1px rgba(226, 232, 240, 0.22);
-	}
-	.v2-reference {
-		border: 1px solid rgba(51, 65, 85, 0.88);
-		background: rgba(10, 15, 26, 0.88);
-		overflow: hidden;
-	}
-	.v2-reference img {
-		display: block;
-		width: 100%;
-		height: auto;
-		object-fit: contain;
-	}
-	.v2-type-list {
-		display: grid;
-		gap: 0.35rem;
-	}
-	.v2-type-list li {
-		display: grid;
-		grid-template-columns: 2.2rem 1fr 1fr;
-		gap: 0.55rem;
-		align-items: baseline;
-		font-size: 0.72rem;
-		padding: 0.32rem 0.4rem;
-		border: 1px solid rgba(30, 41, 59, 0.95);
-		background: rgba(10, 15, 26, 0.78);
-		color: rgba(148, 163, 184, 0.96);
-	}
-	.v2-type-list li strong {
-		font-size: 0.73rem;
-		font-weight: 600;
-		color: rgba(226, 232, 240, 0.97);
-	}
-	.v2-type-list li em {
-		font-style: normal;
-		text-align: right;
-		color: rgba(125, 211, 252, 0.92);
-	}
-	.v2-chip {
-		display: inline-flex;
-		align-items: center;
-		height: 1.35rem;
-		padding: 0 0.44rem;
-		font-size: 0.68rem;
-		border: 1px solid rgba(51, 65, 85, 0.93);
-		background: rgba(10, 15, 26, 0.78);
-		color: rgba(226, 232, 240, 0.96);
-	}
-	.v2-radius {
-		display: grid;
-		place-items: center;
-		height: 2rem;
-		border: 1px solid rgba(51, 65, 85, 0.92);
-		border-radius: var(--r);
-		background: rgba(15, 22, 38, 0.84);
-	}
-	.v2-radius small {
-		font-size: 0.62rem;
-		color: rgba(148, 163, 184, 0.96);
-	}
-	.v2-btn {
-		height: 1.7rem;
-		padding: 0 0.62rem;
-		font-size: 0.7rem;
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		border: 1px solid transparent;
-	}
-	.v2-btn-primary {
-		background: rgba(47, 129, 247, 0.92);
-		border-color: rgba(59, 130, 246, 0.95);
-		color: white;
-	}
-	.v2-btn-secondary {
-		background: rgba(15, 23, 42, 0.88);
-		border-color: rgba(71, 85, 105, 0.95);
-		color: rgba(226, 232, 240, 0.97);
-	}
-	.v2-btn-ghost {
-		background: transparent;
-		border-color: rgba(71, 85, 105, 0.88);
-		color: rgba(148, 163, 184, 0.97);
-	}
-	.v2-input-wrap {
-		display: grid;
-		gap: 0.35rem;
-		font-size: 0.66rem;
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		color: rgba(148, 163, 184, 0.96);
-	}
-	.v2-input {
-		height: 1.8rem;
-		border: 1px solid rgba(51, 65, 85, 0.95);
-		background: rgba(10, 15, 26, 0.9);
-		padding: 0 0.5rem;
-		font-size: 0.76rem;
-		color: rgba(226, 232, 240, 0.96);
-	}
-	.v2-alert {
-		border: 1px solid rgba(37, 99, 235, 0.52);
-		background: rgba(30, 58, 138, 0.22);
-		padding: 0.42rem 0.5rem;
-		font-size: 0.72rem;
-		color: rgba(191, 219, 254, 0.97);
-	}
-	.v2-layout-card {
-		border: 1px solid rgba(51, 65, 85, 0.92);
-		background: rgba(10, 15, 26, 0.8);
-		padding: 0.8rem;
-		display: grid;
-		gap: 0.35rem;
-	}
-	.v2-layout-kicker {
-		font-size: 0.62rem;
-		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: rgba(34, 211, 238, 0.92);
-	}
-	.v2-layout-card h3 {
-		font-size: 0.84rem;
-		font-weight: 600;
-		color: rgba(226, 232, 240, 0.98);
-	}
-	.v2-layout-card ul {
-		display: grid;
-		gap: 0.26rem;
-		padding-left: 1rem;
-		font-size: 0.74rem;
-		color: rgba(148, 163, 184, 0.96);
-	}
-</style>
+	<div class="mt-10 grid gap-6 md:grid-cols-2">
+		<section class="card p-6">
+			<h2 class="section-title">Operating Principles</h2>
+			<ul class="mt-3 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
+				<li><span class="text-slate-100">Mission assurance over novelty</span>: contested operations first, graceful degradation always</li>
+				<li><span class="text-slate-100">Governed autonomy by default</span>: trust scopes, policy gates, and operator override paths</li>
+				<li><span class="text-slate-100">Evidence before action</span>: signed traces, provenance, and auditable decisions</li>
+				<li><span class="text-slate-100">Control planes over point solutions</span>: PDP/PIP/PEP patterns with clean system boundaries</li>
+				<li><span class="text-slate-100">Continuous adversarial validation</span>: evals, red-teaming, and rollback as normal operations</li>
+			</ul>
+		</section>
+
+		<section class="card p-6">
+			<h2 class="section-title">Engagement</h2>
+			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">Consulting and hands-on support for high-tempo delivery. If you need fast execution, use the intake form and include mission outcome + timeline.</p>
+			<ul class="mt-4 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
+				<li><span class="text-slate-100">Architecture &amp; modernization</span> (cloud platforms, control planes, migration plans)</li>
+				<li><span class="text-slate-100">Delivery systems</span> (paved roads, CI/CD, SLOs, observability, rollback)</li>
+				<li><span class="text-slate-100">Governed autonomy</span> (evals, trust scopes, policy + audit trails)</li>
+				<li><span class="text-slate-100">Proposal support</span> (whitepapers, technical volumes, RFI/RFP responses)</li>
+			</ul>
+			<div class="mt-5 flex flex-wrap gap-3">
+				<a href="#experience" class="ui-link-btn bg-slate-900/40 px-3 text-sm font-semibold text-slate-100">See experience</a>
+				<a data-track="Contact: Intake Click" href={withBase('/v2/contact/?intent=consulting')} class="ui-link-btn px-3 text-sm font-semibold">Start project</a>
+			</div>
+		</section>
+	</div>
+
+	<section id="writing" class="mt-10" data-writing-home>
+		<div class="card p-6">
+			<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+				<h2 class="section-title">Writing</h2>
+				<a href={withBase('/v2/writing/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">
+					All writing →
+				</a>
+			</div>
+
+			<div class="mt-6 grid gap-3">
+				{homepageWriting.map((w) => (
+					<WritingCompactCard item={w} />
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section id="experience" class="mt-10">
+		<div class="card p-6">
+			<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+				<h2 class="section-title">Experience</h2>
+				<div class="flex flex-col items-start gap-1 text-sm font-semibold">
+					<div class="flex items-center gap-3">
+						<a href={withBase('/files/adam-boas-resume.pdf')} class="text-stone-100 hover:text-stone-50">Latest resume PDF →</a>
+						<a href={withBase('/v2/experience/')} class="text-stone-100 hover:text-stone-50">Experience pages →</a>
+					</div>
+					<span class="text-[11px] font-normal uppercase tracking-wide text-slate-400">Clearance: {RESUME_CLEARANCE}</span>
+				</div>
+			</div>
+
+			<div class="mt-6 grid gap-3 md:hidden">
+				{roles.map((r) => (
+						<div class="card w-full overflow-hidden p-4">
+							<div class="flex min-w-0 items-baseline justify-between gap-3">
+								<span class="min-w-0 truncate font-semibold text-slate-50">{r.company}</span>
+								<span class="shrink-0 whitespace-nowrap text-xs text-slate-400">{r.period}</span>
+							</div>
+							<p class="mt-1 break-words text-sm text-slate-300">{r.title}</p>
+						</div>
+				))}
+			</div>
+
+			<div class="mt-6 hidden overflow-hidden rounded-none border border-slate-800 md:block">
+				<table class="w-full border-collapse text-sm">
+					<thead class="bg-slate-950/60">
+						<tr>
+							<th class="px-4 py-3 text-left font-semibold text-slate-200">Company</th>
+							<th class="px-4 py-3 text-left font-semibold text-slate-200">Role</th>
+							<th class="px-4 py-3 text-right font-semibold text-slate-200">Period</th>
+						</tr>
+					</thead>
+					<tbody>
+						{roles.map((r) => (
+							<tr class="border-t border-slate-800">
+								<td class="px-4 py-3 text-slate-100">{r.company}</td>
+								<td class="px-4 py-3 text-slate-300">{r.title}</td>
+								<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section id="education" class="mt-10">
+		<div class="card p-6">
+			<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+				<h2 class="section-title">Education</h2>
+				<a href={withBase('/v2/education/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">
+					Education pages →
+				</a>
+			</div>
+
+			<ul class="mt-6 space-y-3 text-sm">
+				{certs.map((c) => (
+					<li class="flex flex-col gap-1 border-b border-slate-800 pb-3 md:flex-row md:items-baseline md:justify-between">
+						<span class="text-slate-50">{c.name}</span>
+						<span class="text-slate-400">{c.issuer}{c.year ? ` • ${c.year}` : ''}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
+
+	<!-- Blog section merged into Writing -->
+</V2Layout>

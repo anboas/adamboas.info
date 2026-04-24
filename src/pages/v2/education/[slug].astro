@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 const { c } = Astro.props;
 ---
 
-<V2Layout title={`Education | ${c.name} (UI v2)`} description={`${c.issuer}${c.year ? ` (${c.year})` : ''}.`} active="education">
+<V2Layout title={`Education | ${c.name}`} description={`${c.issuer}${c.year ? ` (${c.year})` : ''}.`} active="education">
 	<article class="card p-8">
 		<header class="flex flex-col gap-3">
 			<a class="text-sm text-slate-400 hover:text-slate-200" href={withBase('/v2/education/')}>← Education</a>
