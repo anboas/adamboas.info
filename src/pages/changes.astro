@@ -53,13 +53,39 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.07',
+		date: '2026-04-24',
+		title: 'A11y pipeline stability fix for report pass',
+		summary: 'Fixed flaky CI accessibility checks by removing `networkidle` dependency from Playwright a11y navigations.',
+		impact: 'A11y workflow now validates actual accessibility issues rather than timing out on long-lived network activity.',
+		current: true,
+		tags: ['a11y', 'ci', 'testing', 'stability'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `tests/a11y.spec.ts` to use `waitUntil: "domcontentloaded"` for page navigation before axe scans.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Local a11y suite now completes reliably across homepage + core routes during preview checks (7/7 passing).',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.06',
 		date: '2026-04-24',
 		title: 'Exhaustive report pass: navigation semantics, writing UX, events/opportunities clarity',
 		summary: 'Applied a broad implementation pass against the styling/consistency report, including nav semantics, writing filter/card behavior, events empty-state clarity, and grouped opportunity metrics.',
 		impact: 'Primary flows are more consistent and actionable: header now exposes `aria-current`, writing supports explicit All mode + limited visible tags, events/opportunities zero states are clearer, and opportunity KPIs are grouped into Coverage/Enrichment/Decision/System Health.',
-		current: true,
 		tags: ['ux', 'navigation', 'writing', 'events', 'opportunities', 'consistency'],
 		groups: [
 			{

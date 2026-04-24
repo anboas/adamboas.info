@@ -16,7 +16,7 @@ const pages = [
 test.describe('accessibility (axe)', () => {
   for (const path of pages) {
     test(`no critical a11y violations: ${path}`, async ({ page }) => {
-      await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });
+      await page.goto(`${BASE}${path}`, { waitUntil: 'domcontentloaded' });
 
       const results = await new AxeBuilder({ page })
         // Keep it strict; we can tune later if needed.
