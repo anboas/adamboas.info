@@ -49,13 +49,39 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.03',
+		date: '2026-04-23',
+		title: 'Removed homepage “Core Surfaces” explanatory card',
+		summary: 'Dropped the homepage `Core Surfaces` card to reduce fourth-wall/meta framing and keep the landing experience immersive.',
+		impact: 'Homepage remains focused and direct: hero + featured reading + operating principles + engagement, without explicit explanatory taxonomy cards.',
+		current: true,
+		tags: ['home', 'ux', 'cleanup', 'copy'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `Core Surfaces` section from homepage (`src/pages/index.astro`).',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Reduced immersion-breaking, explicit audience/taxonomy framing on home.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.02',
 		date: '2026-04-23',
 		title: 'Footer simplified; primary nav duplication removed',
 		summary: 'Cleaned footer to utility-only links and removed top-nav duplicates so homepage hierarchy remains clear.',
 		impact: 'Footer now acts as a compact utility rail (`Sitemap`, `Changes`, `Status`, `Contact`) while primary discovery remains in top navigation and sitemap.',
-		current: true,
 		tags: ['footer', 'navigation', 'ux', 'cleanup'],
 		groups: [
 			{ kind: 'Added', items: [] },
