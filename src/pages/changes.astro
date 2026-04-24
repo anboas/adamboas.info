@@ -50,13 +50,34 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.04',
+		date: '2026-04-24',
+		title: 'Homepage section spacing normalized',
+		summary: 'Aligned vertical spacing between homepage card groups so transitions feel consistent after recent section removals.',
+		impact: 'The gap between `Featured Reading` and the `Operating Principles/Engagement` row now matches the hero-to-featured spacing.',
+		current: true,
+		tags: ['home', 'ux', 'spacing', 'layout'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Changed homepage container spacing from `mt-10` to `mt-6` before the `Operating Principles` + `Engagement` row in `src/pages/index.astro`.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.03',
 		date: '2026-04-23',
 		title: 'Removed homepage “Core Surfaces” explanatory card',
 		summary: 'Dropped the homepage `Core Surfaces` card to reduce fourth-wall/meta framing and keep the landing experience immersive.',
 		impact: 'Homepage remains focused and direct: hero + featured reading + operating principles + engagement, without explicit explanatory taxonomy cards.',
-		current: true,
 		tags: ['home', 'ux', 'cleanup', 'copy'],
 		groups: [
 			{ kind: 'Added', items: [] },
