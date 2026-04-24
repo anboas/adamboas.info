@@ -52,13 +52,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.06',
+		date: '2026-04-23',
+		title: 'v2 native route expansion: events, opportunities, capabilities',
+		summary: 'Continued native v2 buildout by replacing additional mirrored wrappers with first-class v2 pages for events, opportunities, and capabilities.',
+		impact: 'Core browsing paths in v2 now render natively (not mirrored) for events, opportunity intelligence, capabilities index, and capability detail pages while production remains unchanged.',
+		current: true,
+		tags: ['ui', 'v2', 'native-routes', 'events', 'opportunities', 'capabilities'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added native v2 events routes: `src/pages/v2/events/index.astro` and `src/pages/v2/events/sources.astro`.',
+					'Added native v2 opportunities route: `src/pages/v2/opportunities/index.astro`.',
+					'Added native v2 capabilities routes: `src/pages/v2/capabilities/index.astro` and `src/pages/v2/capabilities/[slug].astro`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated v2 mirrored catch-all route inventory to avoid overlap with newly native pages.',
+					'Shifted internal links in these routes to v2 namespace targets (`/v2/*`).',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.05',
 		date: '2026-04-23',
 		title: 'v2 native route buildout: writing + tags + contact',
 		summary: 'Continued the independent v2 build by replacing mirror wrappers on key user paths with native v2-rendered pages.',
 		impact: 'v2 now has first-class native pages for writing index, writing tags, and contact, while keeping production v1 untouched for active readers.',
-		current: true,
 		tags: ['ui', 'v2', 'native-routes', 'writing', 'contact'],
 		groups: [
 			{

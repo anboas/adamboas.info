@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import V2Layout from '../../layouts/V2Layout.astro';
 import UiVersionToggle from '../../components/UiVersionToggle.astro';
 import { withBase } from '../../utils/withBase';
-import { capabilityTopics } from '../../data/capabilities';
 import { education, experience } from '../../data/resume';
 
 function withTrailingSlash(pathname: string) {
@@ -20,10 +19,6 @@ export async function getStaticPaths() {
 	};
 
 	[
-		'events',
-		'events/sources',
-		'opportunities',
-		'capabilities',
 		'experience',
 		'education',
 		'changes',
@@ -49,7 +44,6 @@ export async function getStaticPaths() {
 		add(`papers/${p.id}`);
 	}
 
-	for (const topic of capabilityTopics) add(`capabilities/${topic.slug}`);
 	for (const role of experience) add(`experience/${role.slug}`);
 	for (const cert of education) add(`education/${cert.slug}`);
 
