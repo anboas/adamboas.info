@@ -7,16 +7,18 @@ import { withBase } from '../../utils/withBase';
 
 <SiteLayout title="Experience | Adam Boas" description="Companies and roles.">
 	<StickyBrowseBar active="experience" />
-	<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-		<h1 class="text-2xl font-semibold text-slate-50">Experience</h1>
-		<div class="flex flex-col items-start gap-1">
-			<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Latest resume PDF →</a>
-			<span class="text-[11px] uppercase tracking-wide text-slate-400">Clearance: {RESUME_CLEARANCE}</span>
+	<section class="card control-shell p-5">
+		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+			<h1 class="section-title">Experience</h1>
+			<div class="flex flex-col items-start gap-1">
+				<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Latest resume PDF →</a>
+				<span class="text-[11px] uppercase tracking-wide text-slate-400">Clearance: {RESUME_CLEARANCE}</span>
+			</div>
 		</div>
-	</div>
+	</section>
 
 	<!-- Mobile: stacked cards -->
-	<div class="mt-6 grid gap-3 md:mt-7 md:hidden" data-experience-mobile>
+	<div class="mt-4 grid gap-3 md:mt-5 md:hidden" data-experience-mobile>
 		{experience.map((r) => (
 			<a class="card block w-full overflow-hidden p-4 hover:border-slate-700" href={withBase(`/experience/${r.slug}/`)}>
 				<div class="flex min-w-0 items-baseline justify-between gap-3">
@@ -29,7 +31,7 @@ import { withBase } from '../../utils/withBase';
 	</div>
 
 	<!-- Desktop: table -->
-	<div class="card mt-6 hidden overflow-hidden p-0 md:mt-7 md:block">
+	<div class="card mt-4 hidden overflow-hidden p-0 md:mt-5 md:block">
 		<table class="w-full border-collapse text-sm">
 			<thead class="bg-slate-950/60">
 				<tr>

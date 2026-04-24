@@ -32,11 +32,13 @@ const tags = [...grouped.values()].sort((a, b) => b.count - a.count || a.tag.loc
 
 <SiteLayout title="Writing Tags | Adam Boas" description="Topics across notes, memos, and papers.">
 	<StickyBrowseBar active="writing" />
-	<h1 class="text-2xl font-semibold text-slate-50">Writing Tags</h1>
-	<p class="mt-2 text-slate-300">Topics across notes, memos, and papers.</p>
+	<section class="card control-shell p-5">
+		<h1 class="section-title">Writing Tags</h1>
+		<p class="mt-2 text-sm text-slate-300">Topics across notes, memos, and papers.</p>
+	</section>
 
 	{tags.length ? (
-		<ul class="mt-8 flex flex-wrap gap-2">
+		<ul class="mt-4 flex flex-wrap gap-2 md:mt-5">
 			{tags.map((t) => (
 				<li>
 					<a
@@ -49,6 +51,6 @@ const tags = [...grouped.values()].sort((a, b) => b.count - a.count || a.tag.loc
 			))}
 		</ul>
 	) : (
-		<p class="mt-8 text-slate-300">No tags yet.</p>
+		<p class="mt-4 text-slate-300 md:mt-5">No tags yet.</p>
 	)}
 </SiteLayout>

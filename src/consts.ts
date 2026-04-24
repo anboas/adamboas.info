@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = 'Adam Boas';
 export const SITE_DESCRIPTION = 'Autonomy, governance, and system-level execution.';
-export const SITE_RELEASE_VERSION = 'v2.4.04';
+export const SITE_RELEASE_VERSION = 'v2.4.05';
 
 // Analytics (Plausible)
 // Domain is configured in Plausible; snippet is injected in BaseHead.
