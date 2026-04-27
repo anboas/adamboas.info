@@ -1,0 +1,46 @@
+{
+  "id": "sam-e00f9f43b861459c941b3947225437e7",
+  "title": "Thermal Camo Netting",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e00f9f43b861459c941b3947225437e7",
+  "opportunity_url": "https://sam.gov/opp/e00f9f43b861459c941b3947225437e7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e00f9f43b861459c941b3947225437e7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e00f9f43b861459c941b3947225437e7",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA560626QA029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5606  52 CONS DA LGC",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e00f9f43b861459c941b3947225437e7",
+  "detail_text": "Spangdahlem AB is anticipating the solicitation of the potential contract below. Be advised, this is NOT a solicitation, nor does it guarantee a solicitation for this requirement to be posted in the future. This is an official pre-solicitation, for an anticipated firm-fixed-price contract. This is only a pre-solicitation to notify prospective offerors. Quotes are not currently being requested. The potential contract is for the purchasing of 30 Thermal Camo Nets IAW Attachement 1 - Salient Characteristics - FA560626QA029 to be delivered to Spangdahlem Air Base, Germany. Note: Training on equipment is required.",
+  "detail_text_length": 616,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db73b61621334addb31afba22e9536ee/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db73b61621334addb31afba22e9536ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4d4871efb613f604639899309461d05dc35980a2ec6a10f1fd3f87a1ff6364eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4d4871efb613f604639899309461d05dc35980a2ec6a10f1fd3f87a1ff6364eb.pdf",
+      "file_id": "db73b61621334addb31afba22e9536ee",
+      "file_name": "Attachment+1+-+Salient+Characteristics+-+FA560626QA029.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 108450,
+      "sha256": "4d4871efb613f604639899309461d05dc35980a2ec6a10f1fd3f87a1ff6364eb"
+    }
+  ],
+  "_mirror_hash": "cff2b69bc57d196c60a59f41f7cb62e28c050165e6acf26b4f820e26ff1d2637",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.984253+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "sam-35faf6c28f644a62aca2df6ad95a6cac",
+  "title": "NextGen UBA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35faf6c28f644a62aca2df6ad95a6cac",
+  "opportunity_url": "https://sam.gov/opp/35faf6c28f644a62aca2df6ad95a6cac/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/35faf6c28f644a62aca2df6ad95a6cac/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "35faf6c28f644a62aca2df6ad95a6cac",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NAVAL SURFACE WARFARE CENTER",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-04-28",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=35faf6c28f644a62aca2df6ad95a6cac",
+  "detail_text": "NSWC PCD Single Area of Interest (AOI) Commercial Solutions Opening (CSO), per attached AOI and CSO Instrunctions. Closing date is 4/28/26 at 1600 CST.",
+  "detail_text_length": 151,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/20c0795e9743455a8c564a3996f41b7f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a5112f1eac343178d6617d9ad406b73/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a98e1bfd4fc34cb192772abf1e4f3754/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/20c0795e9743455a8c564a3996f41b7f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dcae9de6f2c00fada12abac98a48ce2ffaad1a31d7b72b3942e18add17f2b848.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dcae9de6f2c00fada12abac98a48ce2ffaad1a31d7b72b3942e18add17f2b848.pdf",
+      "file_id": "20c0795e9743455a8c564a3996f41b7f",
+      "file_name": "QandA_NextGen+UBA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 278305,
+      "sha256": "dcae9de6f2c00fada12abac98a48ce2ffaad1a31d7b72b3942e18add17f2b848"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a5112f1eac343178d6617d9ad406b73/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/072fba348b8d777a9e318d074639404cfb174c4d6c9e8000faac85ad8e935349.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/072fba348b8d777a9e318d074639404cfb174c4d6c9e8000faac85ad8e935349.pdf",
+      "file_id": "9a5112f1eac343178d6617d9ad406b73",
+      "file_name": "N61331-26-S-NQ17+CSO.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 377531,
+      "sha256": "072fba348b8d777a9e318d074639404cfb174c4d6c9e8000faac85ad8e935349"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a98e1bfd4fc34cb192772abf1e4f3754/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b35de146f6531b8b4b0d22195fde22e6d224d7bae764e2bc3b800427be965f4c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b35de146f6531b8b4b0d22195fde22e6d224d7bae764e2bc3b800427be965f4c.pdf",
+      "file_id": "a98e1bfd4fc34cb192772abf1e4f3754",
+      "file_name": "N61331-26-S-NQ17+Area+of+Interest.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 217029,
+      "sha256": "b35de146f6531b8b4b0d22195fde22e6d224d7bae764e2bc3b800427be965f4c"
+    }
+  ],
+  "_mirror_hash": "c59dd5df3f4fe5451709e81c610f57adf1d713717aa9da1e870c394cc6a059b0",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.691434+00:00"
+}

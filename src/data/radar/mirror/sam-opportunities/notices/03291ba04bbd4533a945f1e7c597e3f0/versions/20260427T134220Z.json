@@ -1,0 +1,67 @@
+{
+  "id": "sam-03291ba04bbd4533a945f1e7c597e3f0",
+  "title": "FRCE: Site Prep for Ultrasonic Degreaser B133",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03291ba04bbd4533a945f1e7c597e3f0",
+  "opportunity_url": "https://sam.gov/opp/03291ba04bbd4533a945f1e7c597e3f0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/03291ba04bbd4533a945f1e7c597e3f0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "03291ba04bbd4533a945f1e7c597e3f0",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4008526B0010",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC MID-ATLANTIC.NAVFACSYSCOM MID-ATLANTIC",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03291ba04bbd4533a945f1e7c597e3f0",
+  "detail_text": "The work includes furnishing and installation of an ultrasonic cleaning system and supporting chiller. Work will include concrete demolition, new concrete, electrical and plumbing utilities, and roof work. Chiller will be located on roof.",
+  "detail_text_length": 238,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07059afcd6054615839cacd33c2334fd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b41a9406b7c49b9af4b72cec4e57207/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1efb1f556224057a2b6f0dcee8752d4/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07059afcd6054615839cacd33c2334fd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9873cc8073d2e489f2b31a1bcfbaa5abb4b1d99bbf415936144d6f192aee2aef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9873cc8073d2e489f2b31a1bcfbaa5abb4b1d99bbf415936144d6f192aee2aef.pdf",
+      "file_id": "07059afcd6054615839cacd33c2334fd",
+      "file_name": "N4008526B0010.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 349116,
+      "sha256": "9873cc8073d2e489f2b31a1bcfbaa5abb4b1d99bbf415936144d6f192aee2aef"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b41a9406b7c49b9af4b72cec4e57207/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0feaf2327770290bf47fbe9fbd6e87a9d8e6d55ab66735167ae0154778cb1d38.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0feaf2327770290bf47fbe9fbd6e87a9d8e6d55ab66735167ae0154778cb1d38.pdf",
+      "file_id": "3b41a9406b7c49b9af4b72cec4e57207",
+      "file_name": "7357358+SpecsAsOne.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2520892,
+      "sha256": "0feaf2327770290bf47fbe9fbd6e87a9d8e6d55ab66735167ae0154778cb1d38"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1efb1f556224057a2b6f0dcee8752d4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f165205da4921bb09db8bd13cb13e709c0f830ea2d70f6ac93214ffca83b226c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f165205da4921bb09db8bd13cb13e709c0f830ea2d70f6ac93214ffca83b226c.pdf",
+      "file_id": "b1efb1f556224057a2b6f0dcee8752d4",
+      "file_name": "7357358+DrawingsAsOne.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 6537053,
+      "sha256": "f165205da4921bb09db8bd13cb13e709c0f830ea2d70f6ac93214ffca83b226c"
+    }
+  ],
+  "_mirror_hash": "261b869be6228a09000dfdef1ab5dd4c2924f1bc24f9bd7fbd78c5169bf11fe8",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.835258+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-8a9fe3e0650c4d6ca0b9da531977d085",
+  "title": "6515--Oral Surgery Hand Piece",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a9fe3e0650c4d6ca0b9da531977d085",
+  "opportunity_url": "https://sam.gov/opp/8a9fe3e0650c4d6ca0b9da531977d085/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8a9fe3e0650c4d6ca0b9da531977d085/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8a9fe3e0650c4d6ca0b9da531977d085",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26226Q0716",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a9fe3e0650c4d6ca0b9da531977d085",
+  "detail_text": "Please see the attached document for full details.",
+  "detail_text_length": 50,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a04b0ceab2c493b96beea0c493be2c9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf91a4ac03044943b433171acf46938f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8a04b0ceab2c493b96beea0c493be2c9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/04358494e6932d1d947e4ef687c304988e0bc0168e97864ff409b3f53065ba1b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/04358494e6932d1d947e4ef687c304988e0bc0168e97864ff409b3f53065ba1b.docx",
+      "file_id": "8a04b0ceab2c493b96beea0c493be2c9",
+      "file_name": "36C26226Q0716.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14518,
+      "sha256": "04358494e6932d1d947e4ef687c304988e0bc0168e97864ff409b3f53065ba1b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf91a4ac03044943b433171acf46938f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/18d6b95d6bec2c81e6b7663f1e8b92b2081955c3c217c1607fa50062242ba0cc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/18d6b95d6bec2c81e6b7663f1e8b92b2081955c3c217c1607fa50062242ba0cc.docx",
+      "file_id": "cf91a4ac03044943b433171acf46938f",
+      "file_name": "S05+RFI+Oral+Surgery+Hand+Piece.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 42220,
+      "sha256": "18d6b95d6bec2c81e6b7663f1e8b92b2081955c3c217c1607fa50062242ba0cc"
+    }
+  ],
+  "_mirror_hash": "02bcae9cee59897995a8498ed7b92f3fed73e24d2bc3ba668ee3f1b03f5e3cec",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.893952+00:00"
+}

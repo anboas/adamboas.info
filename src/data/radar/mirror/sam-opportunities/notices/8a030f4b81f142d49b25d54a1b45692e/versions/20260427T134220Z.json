@@ -1,0 +1,57 @@
+{
+  "id": "sam-8a030f4b81f142d49b25d54a1b45692e",
+  "title": "A/E Design Services – Building A, 8th Floor Modernization",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a030f4b81f142d49b25d54a1b45692e",
+  "opportunity_url": "https://sam.gov/opp/8a030f4b81f142d49b25d54a1b45692e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8a030f4b81f142d49b25d54a1b45692e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8a030f4b81f142d49b25d54a1b45692e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "UNITED STATES GOVERNMENT PUBLISHING OFFICE.UNITED STATES GOVERNMENT PUBLISHING OFFICE.Acquisition Services",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a030f4b81f142d49b25d54a1b45692e",
+  "detail_text": "All Prospective contractors, the purpose of this amendment is to provide additional site visit photos as Attachment 1 to aid in proposal writing and submission.",
+  "detail_text_length": 160,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7db754796a154016b5f1ab5f13eb73ff/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3b61c3e70dd4a17bd09c664a11b12c1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7db754796a154016b5f1ab5f13eb73ff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/00732837c5b7a46b7cfbfef72e836fa8af4d9349de2b8fc2a628ce30989162ca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/00732837c5b7a46b7cfbfef72e836fa8af4d9349de2b8fc2a628ce30989162ca.pdf",
+      "file_id": "7db754796a154016b5f1ab5f13eb73ff",
+      "file_name": "040ADV-26-R-0022-C0001+-Approval-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 569865,
+      "sha256": "00732837c5b7a46b7cfbfef72e836fa8af4d9349de2b8fc2a628ce30989162ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3b61c3e70dd4a17bd09c664a11b12c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1db745c4d90f12acd1cf7d2e1c27f397087e880d593217b8b8fe6405f2892a21.zip",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1db745c4d90f12acd1cf7d2e1c27f397087e880d593217b8b8fe6405f2892a21.zip",
+      "file_id": "f3b61c3e70dd4a17bd09c664a11b12c1",
+      "file_name": "Attachment+1-+Site+Visit+Pictures.zip",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58892903,
+      "sha256": "1db745c4d90f12acd1cf7d2e1c27f397087e880d593217b8b8fe6405f2892a21"
+    }
+  ],
+  "_mirror_hash": "2a5a97c801c4d258b046575674656da3e1413da277f26a896c529ca57159a80e",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.114914+00:00"
+}

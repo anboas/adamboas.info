@@ -1,0 +1,46 @@
+{
+  "id": "sam-edf521a1fc364f988fbe3c925b395c1e",
+  "title": "Replica BOMARC-CIM 10 Missile",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edf521a1fc364f988fbe3c925b395c1e",
+  "opportunity_url": "https://sam.gov/opp/edf521a1fc364f988fbe3c925b395c1e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/edf521a1fc364f988fbe3c925b395c1e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "edf521a1fc364f988fbe3c925b395c1e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA448426UFR0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4484  87 CONS PK",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edf521a1fc364f988fbe3c925b395c1e",
+  "detail_text": "This is for market research purposes only. See Statement of Work.",
+  "detail_text_length": 65,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fb34b31cb754425b787de5f1bc0fc92/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fb34b31cb754425b787de5f1bc0fc92/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a1e3081a18c0051879a2f5800d5e3a84f8d9c07fa35b113c53122abae94908eb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a1e3081a18c0051879a2f5800d5e3a84f8d9c07fa35b113c53122abae94908eb.pdf",
+      "file_id": "0fb34b31cb754425b787de5f1bc0fc92",
+      "file_name": "SOW+Replica+BOMARC+Missile+-+Updated.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145032,
+      "sha256": "a1e3081a18c0051879a2f5800d5e3a84f8d9c07fa35b113c53122abae94908eb"
+    }
+  ],
+  "_mirror_hash": "7f2f9a3e89e30d193c856012bacc5d2a251b99dbe1ab574cc00b69fb7c1e7fb4",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.087616+00:00"
+}

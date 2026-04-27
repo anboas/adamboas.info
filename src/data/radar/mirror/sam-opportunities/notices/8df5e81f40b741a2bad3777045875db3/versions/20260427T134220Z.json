@@ -1,0 +1,69 @@
+{
+  "id": "sam-8df5e81f40b741a2bad3777045875db3",
+  "title": "Governor Refurbishment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8df5e81f40b741a2bad3777045875db3",
+  "opportunity_url": "https://sam.gov/opp/8df5e81f40b741a2bad3777045875db3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8df5e81f40b741a2bad3777045875db3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8df5e81f40b741a2bad3777045875db3",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N6278926Q0018",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SUPSHIP.SUP OF SHIPBUILDING GROTON",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8df5e81f40b741a2bad3777045875db3",
+  "detail_text": "NOTICE OF INTENT TO SOLE SOURCE. This notice is being published in accordance with Federal Acquisition Regulation (FAR) Revolutionary FAR Overhaul (RFO) Part 5. This is a notice of intent to award a sole source contract and is not a request for competitive quotes/proposals. The statutory authority for this notice is 10 U.S.C. 3204(a)(1) and set forth in FAR 6.103-1, Only one responsible source and no other supplies or services will satisfy agency requirements. Supervisor of Shipbuilding, Conversion Repair, Groton (SSGR) intends to award a firm fixed price contract to Woodward, Inc, 1041 Woodward Way, FT. Collins, CO 80524-3468 for the Refurbishment of 4 Dial Governors. All other responsible sources may submit a capability statement clearly demonstrating the ability to provide the required training in accordance with the specification before 7:00 A.M. EST on 15 MAY 2026 , which may be considered by the Agency for a future award. Responses to this notice shall be submitted to stephanie.l.neale.civ@us.navy.mil and stephanie.m.brass.civ@us.navy.mil. The Government will not pay for any information received. A determination by the Government not to compete this proposed contract based on responses to this notice is solely within the discretion of the Government. No solicitation will be posted as a result of this notice. This special notice is issued for informational purposes only. The justification and approval for sole source is attached.",
+  "detail_text_length": 1458,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97f15acb4fee466a8002f0617b149590/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e344509ad89940c3b416fcd39681f979/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebd4ba7545b642078772a3ab2d718988/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/97f15acb4fee466a8002f0617b149590/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/968b2fcbfae4d05309cde603feb00d92c5901c15a7c21a7949ae09d0fc72b69a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/968b2fcbfae4d05309cde603feb00d92c5901c15a7c21a7949ae09d0fc72b69a.pdf",
+      "file_id": "97f15acb4fee466a8002f0617b149590",
+      "file_name": "N6278926Q0018_Governor_solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1014451,
+      "sha256": "968b2fcbfae4d05309cde603feb00d92c5901c15a7c21a7949ae09d0fc72b69a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e344509ad89940c3b416fcd39681f979/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/48f84333763b6d146dc9b29c88df8464b58906c494330d412e3bbdcd87b483d5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/48f84333763b6d146dc9b29c88df8464b58906c494330d412e3bbdcd87b483d5.pdf",
+      "file_id": "e344509ad89940c3b416fcd39681f979",
+      "file_name": "A3_ATT_B-Wage_Det.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4823188,
+      "sha256": "48f84333763b6d146dc9b29c88df8464b58906c494330d412e3bbdcd87b483d5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ebd4ba7545b642078772a3ab2d718988/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3d5dbe69a3a366da800b399556a2efccbbedfec6aa259422821b50e6f4df2ddf.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3d5dbe69a3a366da800b399556a2efccbbedfec6aa259422821b50e6f4df2ddf.pdf",
+      "file_id": "ebd4ba7545b642078772a3ab2d718988",
+      "file_name": "ATT_3_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 374011,
+      "sha256": "3d5dbe69a3a366da800b399556a2efccbbedfec6aa259422821b50e6f4df2ddf"
+    }
+  ],
+  "_mirror_hash": "9f9a7b45d020b49a4630dc51e349ede5f01641a728f73410fa92a8457fb0744f",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.724561+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-3e058aa52d6f40bcb3700133284c4f9b",
+  "title": "B1130 Annex HVAC Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e058aa52d6f40bcb3700133284c4f9b",
+  "opportunity_url": "https://sam.gov/opp/3e058aa52d6f40bcb3700133284c4f9b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3e058aa52d6f40bcb3700133284c4f9b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3e058aa52d6f40bcb3700133284c4f9b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326R0020",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3e058aa52d6f40bcb3700133284c4f9b",
+  "detail_text": "1. Synopsis This is a SOURCES SOUGHT NOTICE for market research purposes only. This is not a solicitation for proposals, a request for quotation, or a promise to issue a solicitation in the future. The purpose of this notice is to obtain information from qualified and interested parties regarding their capabilities to perform the work described herein. The Government does not intend to award a contract based on this notice or otherwise pay for the information solicited. Project Title: B1130 Annex HVAC Repair. Project Number: VLSB 26-0076. Location: Shaw Air Force Base, SC NAICS Code: 238220. The Government objective is to identify qualified Small Business sources for this requirement. Responses are sought from Small Businesses under the specified NAICS code. This information will be used to determine the appropriate acquisition strategy for a potential future procurement. 2. Project Description: This project is to make repairs to the existing heating, ventilation, air conditioning (HVAC) system in Building 1130 Annex. A retro commissioning by a third party was performed which revealed many issues with the system. The government has resolved many of the issues, but several critical items remain. This project will correct those outstanding items in accordance with the SOW. 3. Required Capabilities. Interested parties should provide a capability statement that demonstrates their ability to meet the requirements described in this post NLT, Monday 4 May to the Primary and Secondary Points of Contact. The statement should include: a. A brief description of how you will meet the requirement described in this post. b. Past Performance: Summaries of at least two (2), but no more than four (4), relevant projects completed within the last seven (7) years. c. A statement confirming your company is US-based and has the ability to gain access to military installations to perform work.",
+  "detail_text_length": 1903,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86a1e8ac0d1343c79850cda6d54bc234/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86a1e8ac0d1343c79850cda6d54bc234/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9d8a0bd298962be781e3651e50ec80db8d307255706b764f5c91a85ded2c1d4f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9d8a0bd298962be781e3651e50ec80db8d307255706b764f5c91a85ded2c1d4f.pdf",
+      "file_id": "86a1e8ac0d1343c79850cda6d54bc234",
+      "file_name": "Attachment+01+SOW+VLSB+26-0076+Repair+HVAC+B1130+03.09.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114898,
+      "sha256": "9d8a0bd298962be781e3651e50ec80db8d307255706b764f5c91a85ded2c1d4f"
+    }
+  ],
+  "_mirror_hash": "2a4d267059f7119fdfee5070111975c133bb2d6de04884328f58ed0d8cfb3e13",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.957010+00:00"
+}

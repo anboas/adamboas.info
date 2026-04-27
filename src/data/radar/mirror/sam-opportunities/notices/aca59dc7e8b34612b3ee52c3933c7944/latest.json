@@ -1,0 +1,46 @@
+{
+  "id": "sam-aca59dc7e8b34612b3ee52c3933c7944",
+  "title": "R614--Document Shredding-  WRJ- BASE plus 4 Options",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aca59dc7e8b34612b3ee52c3933c7944",
+  "opportunity_url": "https://sam.gov/opp/aca59dc7e8b34612b3ee52c3933c7944/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/aca59dc7e8b34612b3ee52c3933c7944/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "aca59dc7e8b34612b3ee52c3933c7944",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24126Q0447",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=aca59dc7e8b34612b3ee52c3933c7944",
+  "detail_text": "SOLICITATION NOTICE OF SMALL BUSINESS SET-ASIDE. This solicitation is being issued as a Small Business Set-Aside. The Department of Veterans Affairs, Veterans Health Administration, intends to solicit quotes from contractors to provide Document Shredding Services for Providence VAMC in Providence, RI and its associated CBOCS. NAICS Code is 561990 (All other Support Services) with a Small Business Size Standard of $16.5M. The product/service code is R614. Note this is a Pre-Solicitation Notice, and not a Solicitation, no quotations will be accepted via this notice. Copies of the solicitation will not be available for mailing all perspective contractors must be registered in System for Award Management (SAM) prior to award of the contract. Registration may be accomplished through the Contracting Opportunities website (HTTPS://Sam.Gov). Interested parties may contact Contracting Officer via email at Jeffrey.Fleming@va.gov for this requirement. The determination to conduct a competitive procurement based on responses to this notice is solely within the discretion of the Contracting Officer.",
+  "detail_text_length": 1103,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c669f24162243f390f9d9d5f3925568/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c669f24162243f390f9d9d5f3925568/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c9e868aaa9c5b37b24c30898ba45918ec7cf7bc161268d121773ca31d9bb1455.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c9e868aaa9c5b37b24c30898ba45918ec7cf7bc161268d121773ca31d9bb1455.docx",
+      "file_id": "1c669f24162243f390f9d9d5f3925568",
+      "file_name": "36C24126Q0447.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16345,
+      "sha256": "c9e868aaa9c5b37b24c30898ba45918ec7cf7bc161268d121773ca31d9bb1455"
+    }
+  ],
+  "_mirror_hash": "0ed2a78e4670aaaafbe2b62b3ef7bee362f0fd57ad54f050d602c575c1cedf0e",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.865096+00:00"
+}

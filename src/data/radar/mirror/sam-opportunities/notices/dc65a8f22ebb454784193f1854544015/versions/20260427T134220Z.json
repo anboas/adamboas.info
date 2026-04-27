@@ -1,0 +1,45 @@
+{
+  "id": "sam-dc65a8f22ebb454784193f1854544015",
+  "title": "47 -- CONNECTOR PORT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc65a8f22ebb454784193f1854544015",
+  "opportunity_url": "https://sam.gov/opp/dc65a8f22ebb454784193f1854544015/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dc65a8f22ebb454784193f1854544015/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dc65a8f22ebb454784193f1854544015",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QBS80",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc65a8f22ebb454784193f1854544015",
+  "detail_text": "PLEASE SEE SOLICITATION FOR DESCRIPTION OF SUPPLIES BEING PROCURED.",
+  "detail_text_length": 67,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ef520fa1d09454fbfb40afeae1578a6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3ef520fa1d09454fbfb40afeae1578a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f0cc30f4eb144c6633e9b6131e6890e12d3408b6865005f8b3362c6322aea0ac.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f0cc30f4eb144c6633e9b6131e6890e12d3408b6865005f8b3362c6322aea0ac.pdf",
+      "file_id": "3ef520fa1d09454fbfb40afeae1578a6",
+      "file_name": "3.01_SOL_26QBS80_26094-0016.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 611491,
+      "sha256": "f0cc30f4eb144c6633e9b6131e6890e12d3408b6865005f8b3362c6322aea0ac"
+    }
+  ],
+  "_mirror_hash": "e9bede046709b4602a1b7f189653dad82384012fdb6f89503490a1521e79a222",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.826709+00:00"
+}

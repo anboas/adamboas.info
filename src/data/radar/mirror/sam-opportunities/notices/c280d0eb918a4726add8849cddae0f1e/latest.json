@@ -1,0 +1,47 @@
+{
+  "id": "sam-c280d0eb918a4726add8849cddae0f1e",
+  "title": "Request for Information (RFI) - Mid‑energy electron beam (eBeam) systems",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c280d0eb918a4726add8849cddae0f1e",
+  "opportunity_url": "https://sam.gov/opp/c280d0eb918a4726add8849cddae0f1e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c280d0eb918a4726add8849cddae0f1e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c280d0eb918a4726add8849cddae0f1e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "42426-RD",
+  "agency_path": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.PNNL CONTRACTS - DOE CONTRACTOR",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c280d0eb918a4726add8849cddae0f1e",
+  "detail_text": "The Pacific Northwest National Laboratory (PNNL) is seeking information from qualified suppliers regarding mid‑energy electron beam (eBeam) systems intended to support medical device sterilization applications. The goal is to compile available technical approaches, configurations, safety/shielding concepts, footprint/integration constraints, validation-support capabilities, likely lead times, etc., to craft the appropriate RFP that will solicit proposals with final prices for a self‑shielded system deployable at end‑of‑line (EOL) with optional in‑line capability for terminal and adjunctive sterilization of medical products.",
+  "detail_text_length": 631,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6da10da5842e4812a3b91d8672cf41fb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6da10da5842e4812a3b91d8672cf41fb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f0f94c23797200affa727570eb83847e0b679ed74d71b676c3ec7d691cf2a26d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f0f94c23797200affa727570eb83847e0b679ed74d71b676c3ec7d691cf2a26d.pdf",
+      "file_id": "6da10da5842e4812a3b91d8672cf41fb",
+      "file_name": "RFI+No.+42426-RD+-+-Mid-Energy+Electron+Beam+-eBeam-+Systems-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 656634,
+      "sha256": "f0f94c23797200affa727570eb83847e0b679ed74d71b676c3ec7d691cf2a26d"
+    }
+  ],
+  "_mirror_hash": "b145fcbdc5e2f5be39d8b5071ec36392084fd58ecb64c1a600276605a08ff2e5",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.834030+00:00"
+}

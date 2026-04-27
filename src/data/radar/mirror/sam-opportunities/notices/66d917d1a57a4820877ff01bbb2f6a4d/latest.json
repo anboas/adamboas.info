@@ -1,0 +1,48 @@
+{
+  "id": "sam-66d917d1a57a4820877ff01bbb2f6a4d",
+  "title": "Request for Information-DoWEA PreK-12 Education Platform",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=66d917d1a57a4820877ff01bbb2f6a4d",
+  "opportunity_url": "https://sam.gov/opp/66d917d1a57a4820877ff01bbb2f6a4d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/66d917d1a57a4820877ff01bbb2f6a4d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "66d917d1a57a4820877ff01bbb2f6a4d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "HE125426EDUPLATFORM",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF DEFENSE EDUCATION ACTIVITY (DODEA).DOD EDUCATION ACTIVITY",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=66d917d1a57a4820877ff01bbb2f6a4d",
+  "detail_text": "The Department of War Education Activity (DoWEA) is issuing this Sources Sought / Request for Information (RFI) for market research purposes to identify industry capabilities for a unified, enterprise education platform supporting a global Pre-K–12 environment. The Government is seeking information on integrated Student Information Systems (SIS), Learning Management Systems (LMS), assessment tools, special education and student support services, and enterprise operational systems, including ERP, HR, facilities, transportation, and IT service management. Of particular interest are platforms that demonstrate strong data interoperability, open API architecture, near real-time analytics, and AI-enabled insights across instructional and operational domains. This RFI is intended to understand current industry approaches to system integration, data architecture, interoperability standards, reporting capabilities, and cloud-based platform delivery models. Responses will be used for market research and acquisition planning only and do not constitute a solicitation or commitment by the Government. Please note RFI responses are due May 22, 2026 at 12pm EST. Plesase send responses to contracting officer, Ms. ShaHannah Brown at Shahannah.Brown@dodea.edu. Industry is also invited to indicate interest in a potential Industry Day focused on demonstrations and architectural discussions. Additional Background: The Department of War Education Activity (DoWEA), one of two federally operated school systems, is responsible for planning, directing, coordinating, and managing pre-kindergarten through 12th-grade educational programs for the Department of War (DoW). Globally positioned, DoWEA operates 160+ accredited schools in 9 districts located in 11 foreign countries, 7 states, Guam, and Puerto Rico, serving over 67,000 students and employing approximately 15,000 staff.",
+  "detail_text_length": 1880,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9636967649134d9ca63d9fa14fae61e9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9636967649134d9ca63d9fa14fae61e9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93ca46bf0841726b71dec4d3193a38039390a96b60288cf34db1eeedb7edf575.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93ca46bf0841726b71dec4d3193a38039390a96b60288cf34db1eeedb7edf575.pdf",
+      "file_id": "9636967649134d9ca63d9fa14fae61e9",
+      "file_name": "DoWEA+Education+Platform+RFI_4.22.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262205,
+      "sha256": "93ca46bf0841726b71dec4d3193a38039390a96b60288cf34db1eeedb7edf575"
+    }
+  ],
+  "_mirror_hash": "00bde1b3ccfa1fd37fb76a3230b4a6c66d1e878df8b99c63c0c02d893facfbb8",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.816172+00:00"
+}

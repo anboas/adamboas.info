@@ -1,0 +1,57 @@
+{
+  "id": "sam-2ad124fe8a374d61b34ae6a5a6044784",
+  "title": "National Archives and Records Administration (NARA) 4TH FLOOR Renovation Project",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2ad124fe8a374d61b34ae6a5a6044784",
+  "opportunity_url": "https://sam.gov/opp/2ad124fe8a374d61b34ae6a5a6044784/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2ad124fe8a374d61b34ae6a5a6044784/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2ad124fe8a374d61b34ae6a5a6044784",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "040ADV-26-R-0016-C0002",
+  "agency_path": "UNITED STATES GOVERNMENT PUBLISHING OFFICE.UNITED STATES GOVERNMENT PUBLISHING OFFICE.Acquisition Services",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2ad124fe8a374d61b34ae6a5a6044784",
+  "detail_text": "The purpose of Amendment 040ADV-26-R-0016-C0002 is to: 1. Provide copy of the questions and answers. 2. Extend the proposal submission due date from 05/12/2026, 5:00PM EST. to 05/26/2026, 5:00PM EST.",
+  "detail_text_length": 199,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/216916a177014d64b3b242705f82c5b6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb3942d176c24279bcf3ecfccc1b929f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/216916a177014d64b3b242705f82c5b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3606fa01e11be91b949618987ddd1e94d0de79d05499bf6c2948bb2c3e3e7708.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3606fa01e11be91b949618987ddd1e94d0de79d05499bf6c2948bb2c3e3e7708.pdf",
+      "file_id": "216916a177014d64b3b242705f82c5b6",
+      "file_name": "QA+-+NARA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 258358,
+      "sha256": "3606fa01e11be91b949618987ddd1e94d0de79d05499bf6c2948bb2c3e3e7708"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb3942d176c24279bcf3ecfccc1b929f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/489484635da91c4f9f992d19ca69dcd5d753222c64dbc9b0d1b8f2bb24bf46fc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/489484635da91c4f9f992d19ca69dcd5d753222c64dbc9b0d1b8f2bb24bf46fc.pdf",
+      "file_id": "eb3942d176c24279bcf3ecfccc1b929f",
+      "file_name": "Amendment+040ADV-26-R-0016-C0002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 161693,
+      "sha256": "489484635da91c4f9f992d19ca69dcd5d753222c64dbc9b0d1b8f2bb24bf46fc"
+    }
+  ],
+  "_mirror_hash": "21c1bf80de899c4b46f485a4cab35bf9bdcc8e6e954076e126078eafcd61d2a4",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.123451+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-7b76d135837a4786901d50a37133df2a",
+  "title": "SEAL, PLAIN 6649",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b76d135837a4786901d50a37133df2a",
+  "opportunity_url": "https://sam.gov/opp/7b76d135837a4786901d50a37133df2a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7b76d135837a4786901d50a37133df2a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7b76d135837a4786901d50a37133df2a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CM26070010",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-26",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7b76d135837a4786901d50a37133df2a",
+  "detail_text": "DLA Land and Maritime is preparing to solicit a long-term contract (LTC) for the below NSN. The purpose of this notice is to identify qualified vendors capable of manufacturing or distributing the item in accordance with the listed requirements. Sources interested in submitting a proposal on the upcoming solicitation should complete the attached Market Research Questionnaire and Spreadsheet . National Stock Number (NSN): 5330-00-631-6649 Item Name: Seal, Plain AMC: 1 AMSC: Z NAICS: 339991 Unit of Measure: EA Estimated ADQ: 15,721 Approved Source: The Timken Corporation Cage: 60038 Part Number: 315158 Approved Source: Randall MFG CO INC Cage: 83790 Part Number: D11708-25-11 Approved Source: Basic Rubber and Plastics Co. Cage: 6K404 Part Number: 67A314C133 Approved Source: PDI Ground Support Systems, Inc. Cage: 0W357 Part Number: 315138 Part Number: 31518 Part Number: 6311 Part Number: 9-10-C-104 Part Number: AG7135E Part Number: AN10498 Manufacturers wishing to be reviewed and qualified as an “Approved Source”, must submit an application package through the DLA Land and Maritime Alternate Offer/Source Approval Request (SAR) Program. A SAR package contains all technical data needed to demonstrate the prospective contractor can competently manufacture the product to the same level of quality or better than the Original Equipment Manufacturer (OEM). The onus is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item which DLA Land and Maritime is procuring. For further information on Alternate Offers/SAR, please reference the following DLA Land and Maritime web page https://www.dla.mil/LandandMaritime/Business/Selling/Alternate-Offers/. Detailed information on Alternate Offer and Source Approval Request, including technical data package submission can be found in the “Source Approval Request” information section, near the bottom of the Value Management Unit page. This section includes a detailed explanation of the information and format necessary for a SAR and for the SAR approval process. Submit the Market Research Questionnaire and Spreadsheet to Kimberly Pozderac at kimberly.pozderac@dla.mil, by Friday May 1, 2026. Thank you in advance for your assistance, Kim Pozderac Contract Specialist Strategic Acquisition Programs Directorate, ZCB DLA Weapons Support (Columbus) kimberly.pozderac@dla.mil",
+  "detail_text_length": 2392,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4bc0b8c5e784ccfbede873fcf14edf0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffd7bb122ff247a68528bfb31de3d598/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d4bc0b8c5e784ccfbede873fcf14edf0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93f18ba11324c35b511a549083171e6e050fde7490dddcdc3b86bafda3dc42d2.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93f18ba11324c35b511a549083171e6e050fde7490dddcdc3b86bafda3dc42d2.xlsx",
+      "file_id": "d4bc0b8c5e784ccfbede873fcf14edf0",
+      "file_name": "Market+Research+LTC+Spreadsheet+TEMPLATE.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 96686,
+      "sha256": "93f18ba11324c35b511a549083171e6e050fde7490dddcdc3b86bafda3dc42d2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ffd7bb122ff247a68528bfb31de3d598/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/97515b5beb3c6e1dbcc64db5a16d16f7ae8140adda9c10656bac21fad77bc4ec.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/97515b5beb3c6e1dbcc64db5a16d16f7ae8140adda9c10656bac21fad77bc4ec.docx",
+      "file_id": "ffd7bb122ff247a68528bfb31de3d598",
+      "file_name": "Market+Research+LTC+Questionnaire+TEMPLATE.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59715,
+      "sha256": "97515b5beb3c6e1dbcc64db5a16d16f7ae8140adda9c10656bac21fad77bc4ec"
+    }
+  ],
+  "_mirror_hash": "a109ce0b61a580eb5bfd2e3a9fa98c5d797dd8096c19775da8f3fe07d07469b3",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.942007+00:00"
+}

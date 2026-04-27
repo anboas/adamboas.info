@@ -1,0 +1,45 @@
+{
+  "id": "sam-f6379f2f3fc2416fa51286e3adddbb90",
+  "title": "TAILPIECE,UNION",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6379f2f3fc2416fa51286e3adddbb90",
+  "opportunity_url": "https://sam.gov/opp/f6379f2f3fc2416fa51286e3adddbb90/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f6379f2f3fc2416fa51286e3adddbb90/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f6379f2f3fc2416fa51286e3adddbb90",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD43",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-25",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f6379f2f3fc2416fa51286e3adddbb90",
+  "detail_text": "ITEM NAME: TAILPIECE,UNION, NSN: 1HM 4730 011490139 L1, QTY 11 EA",
+  "detail_text_length": 65,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96d44a9a168c4014b18dc6b855bc18cb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/96d44a9a168c4014b18dc6b855bc18cb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/018746286ef9be2da88415e7277982a2dfeb645cee9966f46e8df9e592f80333.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/018746286ef9be2da88415e7277982a2dfeb645cee9966f46e8df9e592f80333.pdf",
+      "file_id": "96d44a9a168c4014b18dc6b855bc18cb",
+      "file_name": "3.01_N00104-26-Q-FD43_23201-0019.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 930011,
+      "sha256": "018746286ef9be2da88415e7277982a2dfeb645cee9966f46e8df9e592f80333"
+    }
+  ],
+  "_mirror_hash": "de6a8cd0d3ece5847e40fb6bddd37d5039074967d532a5e1a3d9a09608882e96",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.798635+00:00"
+}

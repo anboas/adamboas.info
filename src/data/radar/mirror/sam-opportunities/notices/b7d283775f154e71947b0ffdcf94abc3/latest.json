@@ -1,0 +1,57 @@
+{
+  "id": "sam-b7d283775f154e71947b0ffdcf94abc3",
+  "title": "Y--SIMON DRAW DIVERSIONS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b7d283775f154e71947b0ffdcf94abc3",
+  "opportunity_url": "https://sam.gov/opp/b7d283775f154e71947b0ffdcf94abc3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b7d283775f154e71947b0ffdcf94abc3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b7d283775f154e71947b0ffdcf94abc3",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140R4026Q0055",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.UPPER COLORADO REGIONAL OFFICE",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b7d283775f154e71947b0ffdcf94abc3",
+  "detail_text": "SIMON DRAW DIVERSIONS - Amendment 1 to update the NAICS from 237110 to 221310",
+  "detail_text_length": 77,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/309b9296d54a491d8793c31552081952/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b09f0f34404a459c8d7de65ef96adbd5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/309b9296d54a491d8793c31552081952/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/41bcdde9256376e97ecce6414d9f18cbad72ba8a8024a39cd8ead306ecf5bce0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/41bcdde9256376e97ecce6414d9f18cbad72ba8a8024a39cd8ead306ecf5bce0.pdf",
+      "file_id": "309b9296d54a491d8793c31552081952",
+      "file_name": "Pre-Solicitation_Notice_-_Intent_to_Sole_Source_Amendment_1_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 184892,
+      "sha256": "41bcdde9256376e97ecce6414d9f18cbad72ba8a8024a39cd8ead306ecf5bce0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b09f0f34404a459c8d7de65ef96adbd5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d67b9f7b8be81a8071affcdf8bb4a4b3d89770fb00f55ad72999389dad5a3c2d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d67b9f7b8be81a8071affcdf8bb4a4b3d89770fb00f55ad72999389dad5a3c2d.pdf",
+      "file_id": "b09f0f34404a459c8d7de65ef96adbd5",
+      "file_name": "Pre-Solicitation_Notice_-_Intent_to_Sole_Source_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 185344,
+      "sha256": "d67b9f7b8be81a8071affcdf8bb4a4b3d89770fb00f55ad72999389dad5a3c2d"
+    }
+  ],
+  "_mirror_hash": "ccb99aa5e738378dd6d130be05de1f4f47f6f457ae28d18edd2b4e7498ecfdab",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.938696+00:00"
+}

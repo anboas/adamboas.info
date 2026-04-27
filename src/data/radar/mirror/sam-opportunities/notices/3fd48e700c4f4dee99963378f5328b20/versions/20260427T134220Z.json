@@ -1,0 +1,46 @@
+{
+  "id": "sam-3fd48e700c4f4dee99963378f5328b20",
+  "title": "V--WMATA SmartBenefits",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3fd48e700c4f4dee99963378f5328b20",
+  "opportunity_url": "https://sam.gov/opp/3fd48e700c4f4dee99963378f5328b20/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3fd48e700c4f4dee99963378f5328b20/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3fd48e700c4f4dee99963378f5328b20",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140D0426Q0337",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3fd48e700c4f4dee99963378f5328b20",
+  "detail_text": "Notice of Intent Sole Source - Washington Metropolitan Area Transit Authority (WMATA) SmartBenefits",
+  "detail_text_length": 99,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fbb203c1ddc4cc88f5dfd5d0e5a1ccc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fbb203c1ddc4cc88f5dfd5d0e5a1ccc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0738713665052a35ad16d4c32e78e5ddfbb114aee2c5786c7c74eca042f200ba.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0738713665052a35ad16d4c32e78e5ddfbb114aee2c5786c7c74eca042f200ba.pdf",
+      "file_id": "0fbb203c1ddc4cc88f5dfd5d0e5a1ccc",
+      "file_name": "140D0426Q0337_Attachment_Public_Attachment_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 135159,
+      "sha256": "0738713665052a35ad16d4c32e78e5ddfbb114aee2c5786c7c74eca042f200ba"
+    }
+  ],
+  "_mirror_hash": "31fc7e3dc4af8d2b0a95bcce296f1cd88b55724b11c4084bd131a7f54c03c77d",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.058179+00:00"
+}

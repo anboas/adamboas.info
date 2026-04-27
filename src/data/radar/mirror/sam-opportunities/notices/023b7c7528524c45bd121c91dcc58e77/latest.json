@@ -1,0 +1,46 @@
+{
+  "id": "sam-023b7c7528524c45bd121c91dcc58e77",
+  "title": "UPS Preventive Maintenance Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=023b7c7528524c45bd121c91dcc58e77",
+  "opportunity_url": "https://sam.gov/opp/023b7c7528524c45bd121c91dcc58e77/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/023b7c7528524c45bd121c91dcc58e77/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "023b7c7528524c45bd121c91dcc58e77",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24126Q0455",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=023b7c7528524c45bd121c91dcc58e77",
+  "detail_text": "This is a Sources Sought notice only. This is not a request for quotes and no contract will be awarded from this announcement. The Government will not provide any reimbursement for responses submitted in response to this Source Sought notice. Respondents will not be notified of the results of the evaluation. The purpose of this announcement is to perform market research to gain knowledge of potential qualified sources and their size classification relative to NAICS 811310, (Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance) . The Department of Veterans Affairs (VA), Network Contracting Office 1 (NCO 1) is seeking to identify any vendor capable of providing Uninterrupted Power Supply Preventive Maintenance Services per the Statement of Work (SOW).",
+  "detail_text_length": 814,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef783a400cbb47d5afe99f5238f892d4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef783a400cbb47d5afe99f5238f892d4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bd57f36dc012f257df542b3c6797b979a6f1f880377bf902bfccc168632ae34c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bd57f36dc012f257df542b3c6797b979a6f1f880377bf902bfccc168632ae34c.pdf",
+      "file_id": "ef783a400cbb47d5afe99f5238f892d4",
+      "file_name": "36C24126Q0455.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 289857,
+      "sha256": "bd57f36dc012f257df542b3c6797b979a6f1f880377bf902bfccc168632ae34c"
+    }
+  ],
+  "_mirror_hash": "6c046d6538bb4511a7ae9fba46492a9dc8846a00248ff9bd134caf685626f31e",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.938179+00:00"
+}

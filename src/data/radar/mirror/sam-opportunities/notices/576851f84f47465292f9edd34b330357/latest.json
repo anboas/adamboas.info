@@ -1,0 +1,59 @@
+{
+  "id": "sam-576851f84f47465292f9edd34b330357",
+  "title": "RFI-Female Anatomy Medical Training Models",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=576851f84f47465292f9edd34b330357",
+  "opportunity_url": "https://sam.gov/opp/576851f84f47465292f9edd34b330357/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/576851f84f47465292f9edd34b330357/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "576851f84f47465292f9edd34b330357",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA3016-26-Q-0100",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=576851f84f47465292f9edd34b330357",
+  "detail_text": "This is a request for information (RFI) and a sources sought notice. The purpose of this notice is to conduct market research and determine commercial market availability of female anatomy medical training models, market factors that affect availability, cost and shipping of these medical training goods. Addtionally, the government is researching the commercial market for vendor availability and business size to determine a path forward to solicit and quote medical training markets identified in this notice. Businesses who are interested in participating in this market research are highly encouraged to read the RFI and salient characteristics in their entirety before filling out the attached survey and responding to this notice.",
+  "detail_text_length": 738,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/41bfc7e0b93147cfbdef0190cc4c9fca/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84aba6672521400ab342db8f3a55a445/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/41bfc7e0b93147cfbdef0190cc4c9fca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7518418fd67b25434b10e51ac0db367e2e69fc5b964cd955a3e4a268c65e70ff.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7518418fd67b25434b10e51ac0db367e2e69fc5b964cd955a3e4a268c65e70ff.pdf",
+      "file_id": "41bfc7e0b93147cfbdef0190cc4c9fca",
+      "file_name": "Attachment+1_Salient+Characteristics_FA301626Q0100.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 52530,
+      "sha256": "7518418fd67b25434b10e51ac0db367e2e69fc5b964cd955a3e4a268c65e70ff"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84aba6672521400ab342db8f3a55a445/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7cb4f60c55cbd2f9172dbf4e60682c7d91c3e41c6bd65a76e08ddacda48ccbc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7cb4f60c55cbd2f9172dbf4e60682c7d91c3e41c6bd65a76e08ddacda48ccbc.pdf",
+      "file_id": "84aba6672521400ab342db8f3a55a445",
+      "file_name": "RFI+FA301626Q0100_Medical+Training+Models_female+anatomy.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 128204,
+      "sha256": "f7cb4f60c55cbd2f9172dbf4e60682c7d91c3e41c6bd65a76e08ddacda48ccbc"
+    }
+  ],
+  "_mirror_hash": "a371865fdfa3f53b7e0bbbb40e569be1062537551413a15e8532b9e16c560985",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.775669+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "sam-c6480dd5ecbc4916b13b730647a22f6b",
+  "title": "FIRE SUPPRESSION SUPPORT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c6480dd5ecbc4916b13b730647a22f6b",
+  "opportunity_url": "https://sam.gov/opp/c6480dd5ecbc4916b13b730647a22f6b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c6480dd5ecbc4916b13b730647a22f6b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c6480dd5ecbc4916b13b730647a22f6b",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N40085-26-R-0052",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC MID-ATLANTIC.NAVFACSYSCOM MID-ATLANTIC",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c6480dd5ecbc4916b13b730647a22f6b",
+  "detail_text": "Fire Suppression Support Amendment 01 Proposal Pricing J-0200000-06 posted. The Contractor shall provide all labor, management, supervision, tools, material, and equipment required to perform fire suppression system inspections and maintenance.",
+  "detail_text_length": 244,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87b2d71f7aa3404587667c7b39f81899/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c30f7164c239403ab5330b257092d06d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/87b2d71f7aa3404587667c7b39f81899/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e2d3ee5ca85ddc9ca72db3baa1184a8efbdaf5db5b832cd52618d37bca1f8c37.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e2d3ee5ca85ddc9ca72db3baa1184a8efbdaf5db5b832cd52618d37bca1f8c37.pdf",
+      "file_id": "87b2d71f7aa3404587667c7b39f81899",
+      "file_name": "Amendment+01.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 551530,
+      "sha256": "e2d3ee5ca85ddc9ca72db3baa1184a8efbdaf5db5b832cd52618d37bca1f8c37"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c30f7164c239403ab5330b257092d06d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ffbc70c222cd39d4507c2e22477ffb8668282c2697e013d73557c1289b5036b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ffbc70c222cd39d4507c2e22477ffb8668282c2697e013d73557c1289b5036b.pdf",
+      "file_id": "c30f7164c239403ab5330b257092d06d",
+      "file_name": "Solicitation+N4008526R0052+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2156683,
+      "sha256": "1ffbc70c222cd39d4507c2e22477ffb8668282c2697e013d73557c1289b5036b"
+    }
+  ],
+  "_mirror_hash": "3315e8f463929c65eab892b0e37f210e842302e346dc2432c13dd5a76f11b58f",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.831416+00:00"
+}

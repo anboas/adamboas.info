@@ -1,0 +1,46 @@
+{
+  "id": "sam-e2e09753ad844fe09168b23a4288d519",
+  "title": "Other Aircraft Parts and Auxiliary Equipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2e09753ad844fe09168b23a4288d519",
+  "opportunity_url": "https://sam.gov/opp/e2e09753ad844fe09168b23a4288d519/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e2e09753ad844fe09168b23a4288d519/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e2e09753ad844fe09168b23a4288d519",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPE4AX-16-D-9412",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AV RICHMOND.DLA AVIATION",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2e09753ad844fe09168b23a4288d519",
+  "detail_text": "DLA Aviation intends to solicit 154 NSNs against the base contract SPE4AX-16-D9412. The intent of this solicitation is to execute a one-year bridge contract extension which will revise the base period end date of SPE4AX-16-D-9412 from July 5, 2026, to July 4, 2027. This is a sole source acquisition to Martin Baker America, CAGE 1Q842. Origin Inspection required. FOB at Origin. DLA does not own the technical data for these items. The solicitation open date is May 11, 2026 and will close on May 26, 2026 The solicitation will be issued as a letter solicitation.",
+  "detail_text_length": 564,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d09c427d05844c04817cf5ca3fc33d85/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d09c427d05844c04817cf5ca3fc33d85/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/495e068e6b1a76d733035cb8eb2478e23857cb93aa873f8c70cb565cb12f7348.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/495e068e6b1a76d733035cb8eb2478e23857cb93aa873f8c70cb565cb12f7348.xlsx",
+      "file_id": "d09c427d05844c04817cf5ca3fc33d85",
+      "file_name": "FBO+NSNs+POSTING+BRIDGE.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 115917,
+      "sha256": "495e068e6b1a76d733035cb8eb2478e23857cb93aa873f8c70cb565cb12f7348"
+    }
+  ],
+  "_mirror_hash": "fc4a114866e4a48e912181dee38d5aee7871df6427cf444fd51d8a676e307479",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.124366+00:00"
+}

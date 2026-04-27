@@ -1,28 +1,28 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-24T13:50:34.927836+00:00
+Generated: 2026-04-27T13:49:43.574707+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/24/2026
+Posted range: 01/01/2026 -> 04/27/2026
 
 ## Counts
-- Total candidates: 108
-- Navy-related: 108
-- Full detail cached: 108
-- Notices with attachments: 54
-- Total attachment links: 160
-- Combined Synopsis/Solicitation: 23
+- Total candidates: 107
+- Navy-related: 107
+- Full detail cached: 107
+- Notices with attachments: 52
+- Total attachment links: 157
+- Combined Synopsis/Solicitation: 21
 - Pre-solicitation: 24
 - Solicitation: 14
 - Sources Sought: 39
-- Special Notice: 8
+- Special Notice: 9
 
 ## Engagement signals
 - Industry Day: 2
 - Pre-solicitation: 26
 - Sources Sought: 40
 - Vendor Outreach: 1
-- Special Notice: 8
+- Special Notice: 9
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
@@ -51,9 +51,6 @@ Posted range: 01/01/2026 -> 04/24/2026
 | 6 | Solicitation | - | 2026-03-26 | 2026-04-02 | DEPT OF DEFENSE | [Follow-On Administrative Support Services](https://sam.gov/opp/39d7e61b44a340caa1900f7360dddb89/view) |
 | 4 | Solicitation | - | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [Contractor Logistics Support (CLS) Follow-On, FY 27-30](https://sam.gov/opp/c55cf82054104f70be0b21201692008b/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-04-09 | DEPT OF DEFENSE | [Low Pressure Gage Calibrators](https://sam.gov/opp/cec0318ca29d44b3b42ae08e09020e94/view) |
-| 6 | Combined Synopsis/Solicitation | - | 2026-04-07 | 2026-04-10 | DEPT OF DEFENSE | [Gage Block Comparator](https://sam.gov/opp/12a66bc1ad444168993b66ea8be2fddd/view) |
-| 5 | Sources Sought | Sources Sought | 2026-04-07 | 2026-04-10 | DEPT OF DEFENSE | [Installation and Maintenance of Electronic Security Systems](https://sam.gov/opp/040582fce65f49a680e5a94cd1c3cb48/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-27 | 2026-04-11 | DEPT OF DEFENSE | [Advanced Networking Infrastructure A Kits](https://sam.gov/opp/a5ad4649303c43c383e3dd826ca68e3f/view) |
 | 5 | Sources Sought | Sources Sought | 2026-03-27 | 2026-04-13 | DEPT OF DEFENSE | [ECP 6556 Gen2 LPHUD](https://sam.gov/opp/5c46a132305e45ba8f2d13e3688efb69/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-09 | 2026-04-13 | DEPT OF DEFENSE | [Small Business Set-Aside for Quickstrike Extended Range (QES) Parts Fabrication Per the attach Drawings and Statement of Work.  Request Access to the drawings through SAM only.](https://sam.gov/opp/df4b688f44674533ab93cce4e4f03a1c/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-09 | 2026-04-13 | DEPT OF DEFENSE | [Full and Open Competition for Authorized Resellers of Ultralife Brand Lithium Batteries Per Attachment](https://sam.gov/opp/34e8e8436db14cbc82e2abc7b2af12fb/view) |
@@ -81,8 +78,8 @@ Posted range: 01/01/2026 -> 04/24/2026
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-10 | 2026-04-27 | DEPT OF DEFENSE | [P-8A MFDAU PCMCIA Card Elimination Demonstration and AirFASE Software](https://sam.gov/opp/a7c1a576b86d44d4b231e15dc5f768b3/view) |
 | 9 | Pre-solicitation | Pre-solicitation, Sources Sought | 2026-04-20 | 2026-04-27 | DEPT OF DEFENSE | [Notice of Intent to Award a Sole Source Contract and Sources Sought for FMS Vertical Deployment Tube (VDT) Technical and Tooling Package](https://sam.gov/opp/47a9e112c70b400884c620c64a469c52/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-21 | 2026-04-27 | DEPT OF DEFENSE | [Total Small Business Set Aside for Environmental Waste & Sampling per Attachments - CMMC Level 1](https://sam.gov/opp/46007036660947869721b56f45446a98/view) |
-| 7 | Special Notice | Special Notice | 2026-04-14 | 2026-04-28 | DEPT OF DEFENSE | [NextGen UBA](https://sam.gov/opp/8f546f82f51e438a9992ba9dc5ff030e/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-22 | 2026-04-28 | DEPT OF DEFENSE | [90 EACH HONEYWELL BRAND PRESSURE TRANSDUCERS--SMALL BUSINESS SET ASIDE TO ONLY AUTHORIZED RESELLERS of HONEYWELL BRAND EQUIPMENT-- SEE ALL ATTACHMENTS.](https://sam.gov/opp/4489e6da9502463ba86e852b63ec53e8/view) |
+| 7 | Special Notice | Special Notice | 2026-04-27 | 2026-04-28 | DEPT OF DEFENSE | [NextGen UBA](https://sam.gov/opp/35faf6c28f644a62aca2df6ad95a6cac/view) |
 | 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-04-06 | 2026-04-29 | DEPT OF DEFENSE | [RFI for CAD Model Conversion and Comment Adjudication Services](https://sam.gov/opp/09f57a3411934ca2975e48616f821a78/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-14 | 2026-04-29 | DEPT OF DEFENSE | [Follow-on GEAE Support and Services Order](https://sam.gov/opp/afbebdea4e7b43538a5fb687e15b2ad6/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-14 | 2026-04-29 | DEPT OF DEFENSE | [X-Ray Computed Tomography Cabinet System (Revised Requirements)](https://sam.gov/opp/fff9c0f0037049d3b9bbcf3f4bd4f6ad/view) |
@@ -98,6 +95,7 @@ Posted range: 01/01/2026 -> 04/24/2026
 | 5 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-01 | DEPT OF DEFENSE | [Electromagnetic Aircraft Launch System (EMALS) and Advanced Arresting Gear (AAG) Joint Depot Standup](https://sam.gov/opp/670b801f6b34433d936318fc448972f5/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-20 | 2026-05-01 | DEPT OF DEFENSE | [Install Crane Rail Cross Bracing in a Building](https://sam.gov/opp/b7800c259fa8453bb837d77ab9535e65/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-20 | 2026-05-01 | DEPT OF DEFENSE | [REPLACE MAIN DRY VALVES](https://sam.gov/opp/b1092ba2d19b49aba3eb127effce02f5/view) |
+| 5 | Sources Sought | Sources Sought | 2026-04-24 | 2026-05-01 | DEPT OF DEFENSE | [A12 Circuit Cards supporting Multi-Mission Maritime Aircraft](https://sam.gov/opp/58fc1e44b84b4b7f9cb8fa8ea36766e1/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-17 | 2026-05-02 | DEPT OF DEFENSE | [Limited Source Delivery Order for Unmanned Aircraft System (UAS) Intelligence, Surveillance and Reconnaissance (ISR) Services under existing Basic Ordering Agreements – Order 1](https://sam.gov/opp/41f19e62eca44743a6f3648acfa346f5/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-17 | 2026-05-02 | DEPT OF DEFENSE | [Limited Source Delivery Order for Unmanned Aircraft System (UAS) Intelligence, Surveillance and Reconnaissance (ISR) Services under existing Basic Ordering Agreements – Order 2](https://sam.gov/opp/959fbc44cc9544a6a835ccbd75dba10d/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-02 | DEPT OF DEFENSE | [Weaponeering and Stores Planning (WASP) Systems Engineering](https://sam.gov/opp/f4845708f90448cea5e41bea5a80fc74/view) |
@@ -126,6 +124,7 @@ Posted range: 01/01/2026 -> 04/24/2026
 | 5 | Sources Sought | Sources Sought | 2026-04-22 | 2026-05-13 | DEPT OF DEFENSE | [P-8A Poseidon Manufacturing and Prototyping Support at Cecil Field, Jacksonville Florida](https://sam.gov/opp/d35f6bcc6e17408b92646d336afcf32b/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-23 | 2026-05-13 | DEPT OF DEFENSE | [CH-53 Depot Level Aircraft Modifications](https://sam.gov/opp/88e057fb927740a5a640d61280b6f0a1/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-23 | 2026-05-14 | DEPT OF DEFENSE | [41Px Kit A Modernized Electronic Warfare (EW) Modification](https://sam.gov/opp/aaeb91ee518d4a02a9178ea569e76354/view) |
+| 5 | Special Notice | Special Notice | 2026-04-24 | 2026-05-14 | DEPT OF DEFENSE | [NAVY Trident II D5 Rocket Motor Storage](https://sam.gov/opp/b488252eede743bab00db6ee4648d0aa/view) |
 | 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-04-20 | 2026-05-15 | DEPT OF DEFENSE | [Sources Sought Notice N6133126SNQ26 -- Request for Information (RFI) for LCAC Rugged Display Monitor](https://sam.gov/opp/de02010e758044f7944ecd32de521a79/view) |
 | 4 | Solicitation | - | 2026-04-15 | 2026-05-18 | DEPT OF DEFENSE | [LASER GUIDED TRAINING ROUND PIP FY 2026](https://sam.gov/opp/a3ee259655934d70a906f88a649b43cb/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-16 | 2026-05-18 | DEPT OF DEFENSE | [Littoral and Expeditionary Maneuver (EXMAN) Program](https://sam.gov/opp/ac28c06382394d89b308cea3f16c43ba/view) |

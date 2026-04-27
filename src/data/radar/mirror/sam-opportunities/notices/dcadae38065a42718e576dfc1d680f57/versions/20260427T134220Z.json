@@ -1,0 +1,68 @@
+{
+  "id": "sam-dcadae38065a42718e576dfc1d680f57",
+  "title": "DA10--Medicopia Software and Medical Supplies (VA-26-00045732)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dcadae38065a42718e576dfc1d680f57",
+  "opportunity_url": "https://sam.gov/opp/dcadae38065a42718e576dfc1d680f57/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dcadae38065a42718e576dfc1d680f57/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dcadae38065a42718e576dfc1d680f57",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0381",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dcadae38065a42718e576dfc1d680f57",
+  "detail_text": "See attached RFI and PD.",
+  "detail_text_length": 24,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/408417e5869149d2973bcd37373240ee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0ec7f503df6407e85bade69bedde260/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6ec0d852605416dbfa273923b8c3be8/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/408417e5869149d2973bcd37373240ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dac6eb15026632b3deb310e54e4fc85fd859a01680e17d4504a1c77b75f1108c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dac6eb15026632b3deb310e54e4fc85fd859a01680e17d4504a1c77b75f1108c.docx",
+      "file_id": "408417e5869149d2973bcd37373240ee",
+      "file_name": "36C10B26Q0381.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14289,
+      "sha256": "dac6eb15026632b3deb310e54e4fc85fd859a01680e17d4504a1c77b75f1108c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0ec7f503df6407e85bade69bedde260/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8364a57f152e26d461724a2b156e25148820cf52b05525fb85b174d7740bc62b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8364a57f152e26d461724a2b156e25148820cf52b05525fb85b174d7740bc62b.pdf",
+      "file_id": "c0ec7f503df6407e85bade69bedde260",
+      "file_name": "RFI+-+Medicopia+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 136529,
+      "sha256": "8364a57f152e26d461724a2b156e25148820cf52b05525fb85b174d7740bc62b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6ec0d852605416dbfa273923b8c3be8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/84cd27077bae6194c4d4540c405916c37583243d72a55d21373daad688fd8f2f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/84cd27077bae6194c4d4540c405916c37583243d72a55d21373daad688fd8f2f.pdf",
+      "file_id": "e6ec0d852605416dbfa273923b8c3be8",
+      "file_name": "P09+PD+-+Medicopia+Software+-+Zebra+Printers+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 462896,
+      "sha256": "84cd27077bae6194c4d4540c405916c37583243d72a55d21373daad688fd8f2f"
+    }
+  ],
+  "_mirror_hash": "2f3faf94df0c4f43114014c41861fc80620ad2775e1cbc2d214b61a8720bd527",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.953158+00:00"
+}

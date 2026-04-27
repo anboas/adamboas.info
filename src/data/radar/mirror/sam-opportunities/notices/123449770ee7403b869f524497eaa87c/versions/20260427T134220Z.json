@@ -1,0 +1,57 @@
+{
+  "id": "sam-123449770ee7403b869f524497eaa87c",
+  "title": "Dilution Refrigerator Magnet for Quantum Memory",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=123449770ee7403b869f524497eaa87c",
+  "opportunity_url": "https://sam.gov/opp/123449770ee7403b869f524497eaa87c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/123449770ee7403b869f524497eaa87c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "123449770ee7403b869f524497eaa87c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "AMDTCNOI2601351",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=123449770ee7403b869f524497eaa87c",
+  "detail_text": "See attached combined sources sought notice / notice of intent to sole source and supporting attachment.",
+  "detail_text_length": 104,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c321fc4b64c4e07a0935ddaa29a2444/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfeaa763509443afacf3d17f17e88d16/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0c321fc4b64c4e07a0935ddaa29a2444/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/676544525ff93b115cd34aaf9af164f221c30e47d7979d056198ec8b09260326.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/676544525ff93b115cd34aaf9af164f221c30e47d7979d056198ec8b09260326.pdf",
+      "file_id": "0c321fc4b64c4e07a0935ddaa29a2444",
+      "file_name": "Statement+of+Work_AMDTCNOI2601351.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 210625,
+      "sha256": "676544525ff93b115cd34aaf9af164f221c30e47d7979d056198ec8b09260326"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dfeaa763509443afacf3d17f17e88d16/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6bd3b4337e7ffb58e0e3015fd978baf3a2e2b88b387fc993dece8db386baaf90.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6bd3b4337e7ffb58e0e3015fd978baf3a2e2b88b387fc993dece8db386baaf90.pdf",
+      "file_id": "dfeaa763509443afacf3d17f17e88d16",
+      "file_name": "Combined+SSN_NOI+AMDTCNOI2601351.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 128213,
+      "sha256": "6bd3b4337e7ffb58e0e3015fd978baf3a2e2b88b387fc993dece8db386baaf90"
+    }
+  ],
+  "_mirror_hash": "ca49d4cdbc61e1a28fab66fef3085c5086599119222e1cc0a80695fdb2d4d95a",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.998001+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-2b77169ff76b47428f6021c434ebc926",
+  "title": "TubeWriter 400",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b77169ff76b47428f6021c434ebc926",
+  "opportunity_url": "https://sam.gov/opp/2b77169ff76b47428f6021c434ebc926/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2b77169ff76b47428f6021c434ebc926/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2b77169ff76b47428f6021c434ebc926",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "12639526Q0077A0001",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.ANIMAL AND PLANT HEALTH INSPECTION SERVICE.MRPBS MINNEAPOLIS MN",
+  "posted_date": "2026-04-22",
+  "response_deadline": "2026-04-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2b77169ff76b47428f6021c434ebc926",
+  "detail_text": "The purpose of this amendment is to: 1. Correct line item 0007 Trane-In: TubeWriter 360 quantity from 1 EA to 3 EA, highlighted in yellow. 2. Add Clause 52.222-90 Addressing DEI Discrimination by Federal Contractors, highlighted in yellow. 3. Extend quote due date to 3:00 pm CST 4/23/26. All other terms and conditions remain unchanged.",
+  "detail_text_length": 337,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae0bec533f03467990919caed5e92176/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae0bec533f03467990919caed5e92176/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f919a2b0df68ba07a8b917224ae535de475c961285c37ae2fcf95e2be7b5ce77.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f919a2b0df68ba07a8b917224ae535de475c961285c37ae2fcf95e2be7b5ce77.pdf",
+      "file_id": "ae0bec533f03467990919caed5e92176",
+      "file_name": "12639526Q0077+Amendment+1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 396686,
+      "sha256": "f919a2b0df68ba07a8b917224ae535de475c961285c37ae2fcf95e2be7b5ce77"
+    }
+  ],
+  "_mirror_hash": "bcde204f0fe0a9e14e72a985d76ae0fa0074a7bc40d7d84f3e5d9081bf8f68e7",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.849959+00:00"
+}

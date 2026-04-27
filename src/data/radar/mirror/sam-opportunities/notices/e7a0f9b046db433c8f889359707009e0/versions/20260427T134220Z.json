@@ -1,0 +1,59 @@
+{
+  "id": "sam-e7a0f9b046db433c8f889359707009e0",
+  "title": "Supply Chain Illumination RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7a0f9b046db433c8f889359707009e0",
+  "opportunity_url": "https://sam.gov/opp/e7a0f9b046db433c8f889359707009e0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e7a0f9b046db433c8f889359707009e0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e7a0f9b046db433c8f889359707009e0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FBI-OCIO-SCRM",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.FBI-JEH",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7a0f9b046db433c8f889359707009e0",
+  "detail_text": "The purpose of this RFI is to obtain industry input regarding commercially available technologies capable of supporting an enterprise Supply Chain Risk Management (SCRM) capability for illuminating information and communication technology (ICT) products, software, and services. The FBI seeks to identify SCRM illumination tools capable of providing detailed insights into the threats, risks, and vulnerabilities to commercially available ICT products as it relates to the supply chain. The FBI requires detailed insights to include micro component traceability, software bill of materials (SBOM) breakdowns, supply chain relationship mapping, and reliable product and vender information.",
+  "detail_text_length": 688,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5dbfbf1de1214862ac15391804a67ac6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/916d9bca03314cec8fa3b64d7e5eb9a6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5dbfbf1de1214862ac15391804a67ac6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b90d594bc29b04c6275e46c6e11973867193c31de5ddcc42344cec8bcca614f4.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b90d594bc29b04c6275e46c6e11973867193c31de5ddcc42344cec8bcca614f4.xlsx",
+      "file_id": "5dbfbf1de1214862ac15391804a67ac6",
+      "file_name": "SupplyChainIllumination+QnA+SCRM+Response.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16466,
+      "sha256": "b90d594bc29b04c6275e46c6e11973867193c31de5ddcc42344cec8bcca614f4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/916d9bca03314cec8fa3b64d7e5eb9a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/acbebf4a53e735b961a166224928cd93b24b6208b5e8c1223e98a850e42309d0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/acbebf4a53e735b961a166224928cd93b24b6208b5e8c1223e98a850e42309d0.pdf",
+      "file_id": "916d9bca03314cec8fa3b64d7e5eb9a6",
+      "file_name": "SCRM+Platform+-+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 477746,
+      "sha256": "acbebf4a53e735b961a166224928cd93b24b6208b5e8c1223e98a850e42309d0"
+    }
+  ],
+  "_mirror_hash": "f1fbc2bf26d4dcad46dd9736ab0c605e4fbb1e006954f960ec245d6c19926243",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.766195+00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "sam-85b1d79cd2714d5e83d24077e1f0ea41",
+  "title": "Request For Information (RFI) - Residential Reentry Services for Female ONLY Located Within the City Limits of Detroit, Michigan",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=85b1d79cd2714d5e83d24077e1f0ea41",
+  "opportunity_url": "https://sam.gov/opp/85b1d79cd2714d5e83d24077e1f0ea41/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/85b1d79cd2714d5e83d24077e1f0ea41/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "85b1d79cd2714d5e83d24077e1f0ea41",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "15BRRC26N00000008",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.RESIDENTIAL REENTRY - CO",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=85b1d79cd2714d5e83d24077e1f0ea41",
+  "detail_text": "Request For Information: Residential Reentry Services for FEMALE ONLY geographical located with the city limits of Detroit, Michigan. Home Confinement radius within 150 miles of the RRC facility. - 12 In-House Beds (estimated maximum). - 7 Home Confinement Placements (estimated maximum). See and download the detailed RFI and SOW.",
+  "detail_text_length": 331,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/031748be406648088637d0b40fbab9b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44244541e414433e8a8ca65a9a141083/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/031748be406648088637d0b40fbab9b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/56e3538ac3d702a02c9114256d4b70f7b2a4c4a563923c44f6ded0cf1748b582.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/56e3538ac3d702a02c9114256d4b70f7b2a4c4a563923c44f6ded0cf1748b582.pdf",
+      "file_id": "031748be406648088637d0b40fbab9b1",
+      "file_name": "RFI+for+RRC+FEMALE+Detroit+MI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 275169,
+      "sha256": "56e3538ac3d702a02c9114256d4b70f7b2a4c4a563923c44f6ded0cf1748b582"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/44244541e414433e8a8ca65a9a141083/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/871d84d61829799f96a000694c9eba081cf6e5b5588ff1126bf5045afac365fa.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/871d84d61829799f96a000694c9eba081cf6e5b5588ff1126bf5045afac365fa.pdf",
+      "file_id": "44244541e414433e8a8ca65a9a141083",
+      "file_name": "Section+J+Attach+01+RRC+SOW+March+2022+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1307915,
+      "sha256": "871d84d61829799f96a000694c9eba081cf6e5b5588ff1126bf5045afac365fa"
+    }
+  ],
+  "_mirror_hash": "dd1a2c6fdcc33aec268859e0574ce27136bd4366e62c6ed0b04a5b5a76ddba7a",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.831958+00:00"
+}

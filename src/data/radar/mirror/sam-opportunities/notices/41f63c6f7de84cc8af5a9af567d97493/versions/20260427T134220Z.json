@@ -1,0 +1,45 @@
+{
+  "id": "sam-41f63c6f7de84cc8af5a9af567d97493",
+  "title": "RFQ N0010426QNC42 -RELAY ASSEMBLY -PWB ASSY DIG DISCR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=41f63c6f7de84cc8af5a9af567d97493",
+  "opportunity_url": "https://sam.gov/opp/41f63c6f7de84cc8af5a9af567d97493/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/41f63c6f7de84cc8af5a9af567d97493/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "41f63c6f7de84cc8af5a9af567d97493",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QNC42",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-26",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=41f63c6f7de84cc8af5a9af567d97493",
+  "detail_text": "Please see full RFQ attached.",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/829e0d1e049b459b9e3fbf53d8f01097/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/829e0d1e049b459b9e3fbf53d8f01097/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ed8cb2a0d64461b5536ac118eae82ca172c6a17d6966e8e5f9d0aa48c92c9001.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ed8cb2a0d64461b5536ac118eae82ca172c6a17d6966e8e5f9d0aa48c92c9001.pdf",
+      "file_id": "829e0d1e049b459b9e3fbf53d8f01097",
+      "file_name": "3.01_SOL_N0010426QNC42_26112-0094.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 721517,
+      "sha256": "ed8cb2a0d64461b5536ac118eae82ca172c6a17d6966e8e5f9d0aa48c92c9001"
+    }
+  ],
+  "_mirror_hash": "874ac389053beb13331afdf05df99eedf0221be359bb695cf617a07bc33f8b23",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.830984+00:00"
+}

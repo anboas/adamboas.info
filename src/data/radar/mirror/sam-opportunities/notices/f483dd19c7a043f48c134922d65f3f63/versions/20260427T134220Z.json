@@ -1,0 +1,56 @@
+{
+  "id": "sam-f483dd19c7a043f48c134922d65f3f63",
+  "title": "SETA JIAMDO Re-Compete",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f483dd19c7a043f48c134922d65f3f63",
+  "opportunity_url": "https://sam.gov/opp/f483dd19c7a043f48c134922d65f3f63/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f483dd19c7a043f48c134922d65f3f63/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f483dd19c7a043f48c134922d65f3f63",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "H91269629500",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-24",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f483dd19c7a043f48c134922d65f3f63",
+  "detail_text": "This solicitation N0018926RD009 is a re-compete of Systems Engineering Technical Assistance (SETA) support to the Joint Integrated Air and Missile Defense Organization (JIAMDO) of the Joint Staff, J8 in the Pentagon, Washington, DC. Integrated Air and Missile Defense (IAMD) is the capability to detect, classify, intercept, and destroy or negate the effectiveness of enemy aircraft and missiles prior to launch or while in flight to protect the U.S., deployed forces, our friends, Allies, selected assets, and population centers. The contractor shall serve as a subject matter expert in the mission area of IAMD and provide advice to the Government based on that expertise. The acquisition is to be procured through full and open competition under the Seaport NxG MAC N0017819D7693 and only MAC holders may submit a quote. Please see the attached soliciation N0018926RD009 for more information.",
+  "detail_text_length": 895,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bcf3d71254f44fab72e40f113098493/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bafb27d072c24cc288d2796132a25094/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2bcf3d71254f44fab72e40f113098493/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e5124560a4def75d499aca8c5149381d700a20451e281ff379119f1d21205d44.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e5124560a4def75d499aca8c5149381d700a20451e281ff379119f1d21205d44.pdf",
+      "file_id": "2bcf3d71254f44fab72e40f113098493",
+      "file_name": "Solicitation+-+N0018926RD009.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2589472,
+      "sha256": "e5124560a4def75d499aca8c5149381d700a20451e281ff379119f1d21205d44"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bafb27d072c24cc288d2796132a25094/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5beda8c439990ad4fad947cdf3934a10c7327fe93b136b1ee94c56be3a859a0b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5beda8c439990ad4fad947cdf3934a10c7327fe93b136b1ee94c56be3a859a0b.docx",
+      "file_id": "bafb27d072c24cc288d2796132a25094",
+      "file_name": "Past+Performance+Information+Form.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30899,
+      "sha256": "5beda8c439990ad4fad947cdf3934a10c7327fe93b136b1ee94c56be3a859a0b"
+    }
+  ],
+  "_mirror_hash": "068a2619bf7a2265d7901b8a698a5760c1fd24d7f7515dfb5ef29453ed64f54e",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.818580+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-e1acede117244000b90cbc0ce0eea844",
+  "title": "Updated  27 April 2026 - Mobile Welding Machines/Trailers",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1acede117244000b90cbc0ce0eea844",
+  "opportunity_url": "https://sam.gov/opp/e1acede117244000b90cbc0ce0eea844/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e1acede117244000b90cbc0ce0eea844/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e1acede117244000b90cbc0ce0eea844",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "F3N0426061A001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1acede117244000b90cbc0ce0eea844",
+  "detail_text": "Three (3) Mobile Welding Machines and Three (3) Trailers The requirement consists of 3 welding machines and 3 trailers. The requirement consists of a mobile, engine driven welding system with true DC constant current/constant voltage (CC/CV) output across all welding processes, enabling immediate transition between Stick, MIG, flux-cored, and DC TIG welding without external modules, manual reconfiguration, or performance degradation. The required system must provide simultaneous, independent weld output and high-capacity generator power without derating, allowing welding operations to continue uninterrupted while supporting auxiliary equipment. The welder must also support air carbon arc gouging with 3/16- inch electrodes and provide high open- circuit voltage for reliable arc starts over extended lead lengths. Generator output required 12,000 peak watts/10,000 watts continuous with 1-phase, 120/240VA & 50hz capability. Additionally, the welder must be diesel powered.",
+  "detail_text_length": 982,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b2439bf2d88421bbb614eca6cdb56e4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9c1545c8d7c4403b47b97569e2fc5fb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b2439bf2d88421bbb614eca6cdb56e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c5a54aa26eca6197ca263c5e67155f48de88529275a7b09a129a1c449451737.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c5a54aa26eca6197ca263c5e67155f48de88529275a7b09a129a1c449451737.pdf",
+      "file_id": "5b2439bf2d88421bbb614eca6cdb56e4",
+      "file_name": "Presolicitation+Notice+Mobile+Welding+Machines.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 156899,
+      "sha256": "0c5a54aa26eca6197ca263c5e67155f48de88529275a7b09a129a1c449451737"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a9c1545c8d7c4403b47b97569e2fc5fb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/503f5166c053a4f2648b2725e49826c572766e323db0a6fe90e9390f53717295.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/503f5166c053a4f2648b2725e49826c572766e323db0a6fe90e9390f53717295.pdf",
+      "file_id": "a9c1545c8d7c4403b47b97569e2fc5fb",
+      "file_name": "Q++A+Welding+Machines.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 75307,
+      "sha256": "503f5166c053a4f2648b2725e49826c572766e323db0a6fe90e9390f53717295"
+    }
+  ],
+  "_mirror_hash": "0fb990aa3e1b0e31de83468057e7d29e5eadea307c230061e968560890ec4e7d",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.943768+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-6e09e8e20062428bb2451a27e5185eb3",
+  "title": "VALVE, LINEAR, DIRECT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e09e8e20062428bb2451a27e5185eb3",
+  "opportunity_url": "https://sam.gov/opp/6e09e8e20062428bb2451a27e5185eb3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6e09e8e20062428bb2451a27e5185eb3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6e09e8e20062428bb2451a27e5185eb3",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "70Z08526N40100B00",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 2(00085)",
+  "posted_date": "2026-04-22",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e09e8e20062428bb2451a27e5185eb3",
+  "detail_text": "4810 01-543-3252 VALVE, LINEAR DIR., CONTROL Qty. 14 ea. 3950 01-631-0771 BUSHING, SHAFT Qty. 21 ea. 5935 01-640-6747 CONNECTOR, PLUG, ELECTRICAL Qty. 43 ea. See-Attachments",
+  "detail_text_length": 173,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e758f4a55c444722920c51d227640efa/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e758f4a55c444722920c51d227640efa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/82e276e37769b5e313762af73765c1558c1c387636a9c669e55b801cd95c570c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/82e276e37769b5e313762af73765c1558c1c387636a9c669e55b801cd95c570c.docx",
+      "file_id": "e758f4a55c444722920c51d227640efa",
+      "file_name": "TAB+12+SOLE+SOURCE+SUPPLY+SPECIAL+NOTICE_70Z08526N40100B00.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 39438,
+      "sha256": "82e276e37769b5e313762af73765c1558c1c387636a9c669e55b801cd95c570c"
+    }
+  ],
+  "_mirror_hash": "51e70e66eb87a31eb52cc57c4676612c7a7e38a121cfba504c7dca7f14530d86",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.863596+00:00"
+}

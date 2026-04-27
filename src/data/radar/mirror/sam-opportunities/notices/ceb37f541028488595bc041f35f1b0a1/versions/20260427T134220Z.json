@@ -1,0 +1,57 @@
+{
+  "id": "sam-ceb37f541028488595bc041f35f1b0a1",
+  "title": "6.2L diesel engine components",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ceb37f541028488595bc041f35f1b0a1",
+  "opportunity_url": "https://sam.gov/opp/ceb37f541028488595bc041f35f1b0a1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ceb37f541028488595bc041f35f1b0a1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ceb37f541028488595bc041f35f1b0a1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL26071012",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-23",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ceb37f541028488595bc041f35f1b0a1",
+  "detail_text": "Please review the Market Research Spreadsheet (which is included in this posting) for the NSNs required and provide any sources that may be able to manufacture the items. DLA Land & Maritime does not have any drawings/specifications associated with these items. Sources interested in becoming approved sources for these NSNs must submit the appropriate information as outlined in Procurement Note L04, Offers for Part Numbered Items. Should a company wish to be reviewed and qualified as an “Approved Source”, they may submit an application package through the DLA Land and Maritime Alternate Offer/Source Approval Request (SAR) Program. A SAR package contains all technical data needed to demonstrate that the prospective contractor can competently manufacture the product to the same level of quality or better than the Original Equipment Manufacturer (OEM). The onus is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item which DLA Land and Maritime is procuring. For further information, please reference the DLA Land Maritime web page shown below and click on the highlight: Alternate Offer/Source Approval Program for detailed explanation for the information and format necessary for a SAR and for the SAR approval process. http://www.dla.mil/LandandMaritime/Business/Selling/Alternate-Offers/ Sources interested in offering on any resulting solicitation should complete the attached market survey and return the completed copy to Aric Allen at aric.allen@dla.mil. The only sources currently approved for the NSNs are listed on the attached Market Research Spreadsheet. All information may be submitted directly to the Contract Specialist, Aric Allen at aric.allen@dla.mil. This information must be provided by the response date of this synopsis.",
+  "detail_text_length": 1817,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/134194b9021642c1968166834e93cbbc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7961e7c2b0254b3292b93a70fc8821a4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/134194b9021642c1968166834e93cbbc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea1b510b79b612bda1a89c46788e297994fc3b7f74d35e2bc5b84c1e85d4c053.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea1b510b79b612bda1a89c46788e297994fc3b7f74d35e2bc5b84c1e85d4c053.docx",
+      "file_id": "134194b9021642c1968166834e93cbbc",
+      "file_name": "Market+Research+Questionnaire+-+CL26071012.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43582,
+      "sha256": "ea1b510b79b612bda1a89c46788e297994fc3b7f74d35e2bc5b84c1e85d4c053"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7961e7c2b0254b3292b93a70fc8821a4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f97850f7a205f9486f66306f7aab85122f71be2c22b0b3502f6b89720c4f9023.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f97850f7a205f9486f66306f7aab85122f71be2c22b0b3502f6b89720c4f9023.xlsx",
+      "file_id": "7961e7c2b0254b3292b93a70fc8821a4",
+      "file_name": "Market+Research+Spreadsheet+-+CL26071012.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16738,
+      "sha256": "f97850f7a205f9486f66306f7aab85122f71be2c22b0b3502f6b89720c4f9023"
+    }
+  ],
+  "_mirror_hash": "44c731c528c63c778f0a958215c1780640762bf7a3263c560ab4281b8b01c7f1",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.887466+00:00"
+}

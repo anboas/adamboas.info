@@ -1,0 +1,57 @@
+{
+  "id": "sam-3446be75c25641418e1992ad3b86caa7",
+  "title": "Material Laboratory Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3446be75c25641418e1992ad3b86caa7",
+  "opportunity_url": "https://sam.gov/opp/3446be75c25641418e1992ad3b86caa7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3446be75c25641418e1992ad3b86caa7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3446be75c25641418e1992ad3b86caa7",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W911KF25SC002-AoI0006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC ANAD",
+  "posted_date": "2026-04-22",
+  "response_deadline": "2026-05-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3446be75c25641418e1992ad3b86caa7",
+  "detail_text": "The Government has a need for materials testing and analysis services to be provided by a qualified contractor to the Anniston Army Depot (ANAD). ANAD requires independent laboratory services to support maintenance, repair, overhaul, and modernization efforts. PERIOD OF PERFORMANCE: One (1) year from date of award date. Interested parties should review the attachments and the full CSO (W911KF25SC002) posting on SAM.gov for submission and evaluation procedures. ACC-ANAD is not obligated to extend a request for proposal or make an award as a result of this CSO AoI; all awards are subject to the availability of funds and successful negotiations. This CSO AoI is not an authorization to begin performance, and in no way obligates the Government for any costs incurred by the Offeror associated with developing a Response. Prior to commencement of any activities associated with performance under this CSO AoI, the Government will issue a written directive or contractual document signed by the Contracting Officer with appropriate consideration established. ACC-ANAD reserves the right to modify the requirements of this CSO AoI.",
+  "detail_text_length": 1133,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b51be9481d67444698e3ead871d4fcfb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdd4629a296e42ee8fe2c065b226d42d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b51be9481d67444698e3ead871d4fcfb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/493933cc3d056f194e59d87c3bba59794ab1b9af6be502763fc955c74c7bb468.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/493933cc3d056f194e59d87c3bba59794ab1b9af6be502763fc955c74c7bb468.pdf",
+      "file_id": "b51be9481d67444698e3ead871d4fcfb",
+      "file_name": "W911KF-25-S-C002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 191795,
+      "sha256": "493933cc3d056f194e59d87c3bba59794ab1b9af6be502763fc955c74c7bb468"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fdd4629a296e42ee8fe2c065b226d42d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4687024e30809af524d09b2219f23c0762547dce6b5de13b6374e6d6d2841ded.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4687024e30809af524d09b2219f23c0762547dce6b5de13b6374e6d6d2841ded.pdf",
+      "file_id": "fdd4629a296e42ee8fe2c065b226d42d",
+      "file_name": "AoI+0006+-+Material+Laboratory+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76578,
+      "sha256": "4687024e30809af524d09b2219f23c0762547dce6b5de13b6374e6d6d2841ded"
+    }
+  ],
+  "_mirror_hash": "13e15d432895397d66df12f9e98bb0e2d53e4240776736e3c6d240e2a2beba54",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.097998+00:00"
+}

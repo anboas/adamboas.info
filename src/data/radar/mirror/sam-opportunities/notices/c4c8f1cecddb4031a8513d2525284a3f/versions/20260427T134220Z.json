@@ -1,0 +1,56 @@
+{
+  "id": "sam-c4c8f1cecddb4031a8513d2525284a3f",
+  "title": "Temporary Fire and Flood Detection System Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c4c8f1cecddb4031a8513d2525284a3f",
+  "opportunity_url": "https://sam.gov/opp/c4c8f1cecddb4031a8513d2525284a3f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c4c8f1cecddb4031a8513d2525284a3f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c4c8f1cecddb4031a8513d2525284a3f",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6264926QB029",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC YOKOSUKA.NAVSUP FLT LOG CTR  YOKOSUKA",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c4c8f1cecddb4031a8513d2525284a3f",
+  "detail_text": "Solicitation Amendment 0001 dated 27 APR 2026 This solicitation amendment is issued to: 1) Revise the Period of Performance to reflect the removal of all Option Periods. 2) Update Performance Work Statement paragraph 4.2.1 to change inspection frequency to weekly. As a result, the solicitation closing date has been extended to 7 May 2026, 1100 JST. ----------------------------------- BREAK ----------------------------------- Temporary Fire and Flood Detection System Services. This requirement is in support of USS BLUE RIDGE (LCC-19), which requires Original Equipment Manufacturer (OEM)- authorized Technician(s) from Kingfisher to provide system programming, testing, and maintenance of the Government installed Temporary Fire and Flood Detection System. This is a competitive, unrestricted action among sources duly authorized to operate and do business in JAPAN as prescribed by DFARS 225.1103(3). Quoters may be required to submit additional documentation demonstrating their ability to perform in Japan prior to award.",
+  "detail_text_length": 1029,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e97f620047746908fb855425b877481/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63cc962c1bfd498b89b8f326ad27a335/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5e97f620047746908fb855425b877481/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/db2c0d264df0c6993ac7f651da0a7bd1c9daf534c7d3f6eda71d270fcbe9a870.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/db2c0d264df0c6993ac7f651da0a7bd1c9daf534c7d3f6eda71d270fcbe9a870.pdf",
+      "file_id": "5e97f620047746908fb855425b877481",
+      "file_name": "N6264926QB0290001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 217900,
+      "sha256": "db2c0d264df0c6993ac7f651da0a7bd1c9daf534c7d3f6eda71d270fcbe9a870"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63cc962c1bfd498b89b8f326ad27a335/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d4462a07a2076fe71377c4c2f2a206b4f494d21d32a1c884276daa5eaea56b79.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d4462a07a2076fe71377c4c2f2a206b4f494d21d32a1c884276daa5eaea56b79.pdf",
+      "file_id": "63cc962c1bfd498b89b8f326ad27a335",
+      "file_name": "N6264926QB029.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 305126,
+      "sha256": "d4462a07a2076fe71377c4c2f2a206b4f494d21d32a1c884276daa5eaea56b79"
+    }
+  ],
+  "_mirror_hash": "6bae8f931c5bfd63b29499d2542c72ac030b0ab9a8e6c41c200210df0a8c7b90",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.776600+00:00"
+}

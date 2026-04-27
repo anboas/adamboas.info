@@ -1,0 +1,46 @@
+{
+  "id": "sam-85559b4ad90f41c7abad0cb8264459a3",
+  "title": "G4 - CGWY DFAC IDIQ",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=85559b4ad90f41c7abad0cb8264459a3",
+  "opportunity_url": "https://sam.gov/opp/85559b4ad90f41c7abad0cb8264459a3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/85559b4ad90f41c7abad0cb8264459a3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "85559b4ad90f41c7abad0cb8264459a3",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W912L326RA001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO WY.USPFO WY PROCUREMENT.W7N9 USPFO ACTIVITY WY ARNG",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-24",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=85559b4ad90f41c7abad0cb8264459a3",
+  "detail_text": "The Wyoming National Guard is looking to award an IDIQ to provide meals upon order at Camp Guernsey, WY.",
+  "detail_text_length": 104,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/19df65421f2645b781df9c31828acb40/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/19df65421f2645b781df9c31828acb40/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/889b982af7a6379f899623547f008a1556aedba570b0fa3da454b7c523c6f086.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/889b982af7a6379f899623547f008a1556aedba570b0fa3da454b7c523c6f086.pdf",
+      "file_id": "19df65421f2645b781df9c31828acb40",
+      "file_name": "A.02+DRAFT+PWS+-26RA001-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 438675,
+      "sha256": "889b982af7a6379f899623547f008a1556aedba570b0fa3da454b7c523c6f086"
+    }
+  ],
+  "_mirror_hash": "b3a69645aa38ceeedec4beca38b7e6ffe0945a64fbe9dea4b260296e3dad4967",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.109840+00:00"
+}

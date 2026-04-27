@@ -1,0 +1,45 @@
+{
+  "id": "sam-ab925eb477624f4c9a6a4d848ac7b455",
+  "title": "V-22 LTC Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab925eb477624f4c9a6a4d848ac7b455",
+  "opportunity_url": "https://sam.gov/opp/ab925eb477624f4c9a6a4d848ac7b455/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ab925eb477624f4c9a6a4d848ac7b455/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ab925eb477624f4c9a6a4d848ac7b455",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326RL056",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-25",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ab925eb477624f4c9a6a4d848ac7b455",
+  "detail_text": "V-22 LTC Renewal. Please see the attached solicitation.",
+  "detail_text_length": 55,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e42f5cfac4944a995618313dedb5aa5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6e42f5cfac4944a995618313dedb5aa5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/850a695663bd862aa045e623f61cb048a8675d7cb8100560ebb0033da9951b44.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/850a695663bd862aa045e623f61cb048a8675d7cb8100560ebb0033da9951b44.pdf",
+      "file_id": "6e42f5cfac4944a995618313dedb5aa5",
+      "file_name": "Solicitation+-+N0038326RL056.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2306111,
+      "sha256": "850a695663bd862aa045e623f61cb048a8675d7cb8100560ebb0033da9951b44"
+    }
+  ],
+  "_mirror_hash": "86f66f38336943e0d18bbde05b2cf8094cfe54781c1ba8630a3ba329ae938a54",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.819896+00:00"
+}

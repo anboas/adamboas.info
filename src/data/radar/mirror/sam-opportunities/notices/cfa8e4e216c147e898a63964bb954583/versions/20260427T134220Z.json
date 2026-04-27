@@ -1,0 +1,46 @@
+{
+  "id": "sam-cfa8e4e216c147e898a63964bb954583",
+  "title": "Filter, Radio Freq",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cfa8e4e216c147e898a63964bb954583",
+  "opportunity_url": "https://sam.gov/opp/cfa8e4e216c147e898a63964bb954583/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cfa8e4e216c147e898a63964bb954583/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cfa8e4e216c147e898a63964bb954583",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE7M526R0014",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cfa8e4e216c147e898a63964bb954583",
+  "detail_text": "This is not a request for either a quote or proposal. This announcement is considered market research in accordance with FAR Part 10. No solicitation is being issued at this time. DLA Weapons Support-Columbus is issuing this Sources Sought as a means of conducting Market Research to identify parties having an interest in, and the resources to support the following requirements: ITEM: Filter, Radio Freq NSN: 5915-01-692-1222 This item is to be procured in accordance with approved source(s): Meggitt North Hollywood (79318) P/N 152189 Once the solicitation is issued, interested sources must submit the appropriate information outlined in DLAD Procurement Notes L04-Offers for Part Numbered Items and M06-Evaluation of Offers for Part Numbered Items. The current quantity to be procured is 69 EA. Quantity pricing will be requested from 60 to 80 EA. The items will be shipped to a DLA stocking location. The Purpose of this synopsis is to locate sources interested in becoming approved sources. Submission Instructions: Responses to this Request for Information (RFI) must be sent to Christopher Wallace via email at Christopher.Wallace@dla.mil by the response date listed in this synopsis and should include in their submission, information on their products/services, company, CAGE code, capability, company size/profile, and any other supportive information. Respondents will be placed on the solicitation mailing list. This RFI is for market research purposes only. Any information submitted is at the company's own expense. The Government will not reimburse respondents for any costs associated with submission of capability statements in connection with the market survey. Any information provided is voluntary.",
+  "detail_text_length": 1720,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/629b075c6ad34ed9a7b7e67b7646b227/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/629b075c6ad34ed9a7b7e67b7646b227/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9f108f5542e2e8ec8d92863e05edb038a4ae676c72151f008f08fd1210c6eb85.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9f108f5542e2e8ec8d92863e05edb038a4ae676c72151f008f08fd1210c6eb85.docx",
+      "file_id": "629b075c6ad34ed9a7b7e67b7646b227",
+      "file_name": "Market+Survey+7015892630.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36160,
+      "sha256": "9f108f5542e2e8ec8d92863e05edb038a4ae676c72151f008f08fd1210c6eb85"
+    }
+  ],
+  "_mirror_hash": "c28edc9df6fb209069e2e56f7751143feebc7105e4f47c8edb3f5fe6ce421e5a",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.008857+00:00"
+}

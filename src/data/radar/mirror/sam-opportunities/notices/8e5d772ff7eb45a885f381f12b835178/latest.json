@@ -1,0 +1,57 @@
+{
+  "id": "sam-8e5d772ff7eb45a885f381f12b835178",
+  "title": "Electrical Outlets",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e5d772ff7eb45a885f381f12b835178",
+  "opportunity_url": "https://sam.gov/opp/8e5d772ff7eb45a885f381f12b835178/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8e5d772ff7eb45a885f381f12b835178/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8e5d772ff7eb45a885f381f12b835178",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "F3N0616023A006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e5d772ff7eb45a885f381f12b835178",
+  "detail_text": "***SEE ATTACHED PERFORMANCE WORK STATEMENT AND SALIENT CHARACTERISTICS*** The proposed contract action is anticipated to be full and open compitition it requires installation of electrical outlets inside the two Large Area Maintenance Shelter (LAMS) to support Cargo. Deployment Function (CDF) operations. Each tent requires six 230-volt outlets, for a total of twelve outlets. The requirements include all parts and labor necessary to complete the electrical outlets installation. All electrical installations must comply with the National Electrical Code (NEC/NFPA 70) for U.S. requirements and Verband der Elektrotechnik (VDE) standards for German Electrical Installations, and all applicable civil engineering regulations. IAW RFO 5.101(c)(2): Set asides are not applicable in Germany. IAW RFO 5.101(c)(4): (iii) Is not applicable to this requirement (vi) All responsible sources are invited to submit a response to show interest which will be considered by the agency. Please note that this not a Request for Quotation but rather a pre-solicitation notice, and no quotes will be accepted in response at this time. (viii) Installation Specifications for Electrical Outlets Quantity: 12 total outlets ( 6 per tent across two tents) Power rating: 230V, 50Hz (standard European system) Materials: Commercial grade receptacle, wiring, conduit, distribution board components, fasteners, and mounting hardware. Features: supports laptops, radios, fans, and administrative equipment. Qualification requirement: (NEC/NFPA 70) or (VDE) as mentioned above.",
+  "detail_text_length": 1550,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da616bbdf30e4676933385e88ad4e40e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e457999207c44e2c9ef4e2861fb2a1bb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da616bbdf30e4676933385e88ad4e40e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b2e1a80a90448c4a3e77e75ce19aaffe5ebee562a199ce2fcf869afd09cfeff0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b2e1a80a90448c4a3e77e75ce19aaffe5ebee562a199ce2fcf869afd09cfeff0.pdf",
+      "file_id": "da616bbdf30e4676933385e88ad4e40e",
+      "file_name": "Salient-Characteristics+LAMS+Outlets.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 251024,
+      "sha256": "b2e1a80a90448c4a3e77e75ce19aaffe5ebee562a199ce2fcf869afd09cfeff0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e457999207c44e2c9ef4e2861fb2a1bb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/76f100ce7b3148130f756bf578bdcbb41c51edb23b9c35feec702cc9ca3592ed.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/76f100ce7b3148130f756bf578bdcbb41c51edb23b9c35feec702cc9ca3592ed.pdf",
+      "file_id": "e457999207c44e2c9ef4e2861fb2a1bb",
+      "file_name": "Performance+Work+Statement+-+LAMS+Electrical+Outlets_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 169961,
+      "sha256": "76f100ce7b3148130f756bf578bdcbb41c51edb23b9c35feec702cc9ca3592ed"
+    }
+  ],
+  "_mirror_hash": "b0b7d55e31a9bb0ca934892b1a5156a5d40b54a092d4373820e5c96d088b6d95",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.035822+00:00"
+}

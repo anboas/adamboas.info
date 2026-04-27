@@ -1,0 +1,57 @@
+{
+  "id": "sam-cfcf077a2d9b496a95d49b35c6c333a7",
+  "title": "S222--436 Hazardous Waste Removal  (VA-26-00059378)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cfcf077a2d9b496a95d49b35c6c333a7",
+  "opportunity_url": "https://sam.gov/opp/cfcf077a2d9b496a95d49b35c6c333a7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cfcf077a2d9b496a95d49b35c6c333a7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cfcf077a2d9b496a95d49b35c6c333a7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25926Q0445",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cfcf077a2d9b496a95d49b35c6c333a7",
+  "detail_text": "Montana Hazardous Waste Treatment and Disposal",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/572f0ee9fdeb44dbb458ab80c3234d3b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fdd6ffe236a4da3ae6564f613c9bd63/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/572f0ee9fdeb44dbb458ab80c3234d3b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/494878ec2a3925711d3b76b17b9a128fb7abfc03842cc5b6629a1c0f297a7ccc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/494878ec2a3925711d3b76b17b9a128fb7abfc03842cc5b6629a1c0f297a7ccc.docx",
+      "file_id": "572f0ee9fdeb44dbb458ab80c3234d3b",
+      "file_name": "36C25926Q0445.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31877,
+      "sha256": "494878ec2a3925711d3b76b17b9a128fb7abfc03842cc5b6629a1c0f297a7ccc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7fdd6ffe236a4da3ae6564f613c9bd63/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/30dce798f228e10866cbfb1a3cdee803c4c3f922118739adf6c2394cf02b1d4a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/30dce798f228e10866cbfb1a3cdee803c4c3f922118739adf6c2394cf02b1d4a.docx",
+      "file_id": "7fdd6ffe236a4da3ae6564f613c9bd63",
+      "file_name": "Attachment+1+-+PWS+-+Montana+Hazardous+Waste+Treatment+and+Disposal.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64696,
+      "sha256": "30dce798f228e10866cbfb1a3cdee803c4c3f922118739adf6c2394cf02b1d4a"
+    }
+  ],
+  "_mirror_hash": "6d3656262503249664c5221370a0de5beeaf84bb209227575c4782f7c17a2787",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.965568+00:00"
+}

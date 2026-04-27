@@ -1,0 +1,46 @@
+{
+  "id": "sam-98ef37ffbfc3402db8e748a003b0d6db",
+  "title": "WMATA Sole Source",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98ef37ffbfc3402db8e748a003b0d6db",
+  "opportunity_url": "https://sam.gov/opp/98ef37ffbfc3402db8e748a003b0d6db/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/98ef37ffbfc3402db8e748a003b0d6db/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "98ef37ffbfc3402db8e748a003b0d6db",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "6200-OSSS-26-42",
+  "agency_path": "INTERNATIONAL TRADE COMMISSION, UNITED STATES (DUNS # 02-1877998)",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-04-27",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98ef37ffbfc3402db8e748a003b0d6db",
+  "detail_text": "The U. S. International Trade Commission (USITC) intends to award a Purchase Order on a sole source basis to the Washington Metropolitan Area Transit Authority (WMATA), 300 7th Street, S.W., Washington, D.C., under the authority of FAR Subpart 6.302-1, Only one responsible source and no other supplies or services will satisfy agency requirements. Attached to this Notice is a Justification and Approval for Other than Full and Open Competition. Executive Order (EO) 13150, Federal Workforce Transportation dated April 21, 2000, mandated that all Federal agencies in the National Capital Region implement a transportation subsidy program. This EO’s effective date was not later than October 1, 2000. The Washington Metropolitan Area Transit Authority is the only contract provider of authorized fare media products for those eligible USITC employees commuting within the Washington, DC metro area. WMATA will support the USITC’s requirement for providing its qualified and eligible employees a transit subsidy through WMATA’s Smart Benefits® program. Smart Benefits® provide a monthly benefit allowance to eligible employees for their public mass transit commute to and from work. WMATA will provide those qualified/eligible employees of the USITC a transit subsidy funded by the USITC which will be used by those employees commuting on mass transit in the National Capital Region. The period of performance is anticipated to be twelve months: June 1st , 2026 through May 31st 2027. This announcement is not a request for competitive quotations. A solicitation will not be available for this requirement. The intent of this announcement is for informational purposes only. However, any information received by May 27th, 2026, 5 PM ET, will be considered by the Government. Information may be sent to Sumit Rana, Contracting Officer, at Sumit.rana@usitc.gov. A determination by the Government not to compete this action is solely within the discretion of the Government. Telephonic questions or requests are strongly discouraged.",
+  "detail_text_length": 2029,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d995a8038b0a4606ae6cecb1ce8818eb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d995a8038b0a4606ae6cecb1ce8818eb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba36b2a49176afe90992e6d928e4fa5e38cf8e20dd9aecc7acc365d5b4385b1d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba36b2a49176afe90992e6d928e4fa5e38cf8e20dd9aecc7acc365d5b4385b1d.pdf",
+      "file_id": "d995a8038b0a4606ae6cecb1ce8818eb",
+      "file_name": "WMATA+JA+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 421818,
+      "sha256": "ba36b2a49176afe90992e6d928e4fa5e38cf8e20dd9aecc7acc365d5b4385b1d"
+    }
+  ],
+  "_mirror_hash": "f89c22091bd827f2e752652978f714701198d66900b9cb897c688d81de3ab3c6",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:57.870017+00:00"
+}

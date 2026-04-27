@@ -1,0 +1,57 @@
+{
+  "id": "sam-70ccdfa70fa0451aa23ed66e4f988675",
+  "title": "Y--Ennis NFH MT Replace Insulation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70ccdfa70fa0451aa23ed66e4f988675",
+  "opportunity_url": "https://sam.gov/opp/70ccdfa70fa0451aa23ed66e4f988675/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/70ccdfa70fa0451aa23ed66e4f988675/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "70ccdfa70fa0451aa23ed66e4f988675",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140FGA26R0019",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US FISH AND WILDLIFE SERVICE.FWS, GAOA",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-06-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70ccdfa70fa0451aa23ed66e4f988675",
+  "detail_text": "Ennis National Fish Hatchery Montana Replace Insulation on Lower Raceway Building. July 1, 2026 - August 31, 2026",
+  "detail_text_length": 113,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af0b056edd8a476fa05b8f2442332ae7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/baad7f01c7fe44d9b60c287607686640/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/af0b056edd8a476fa05b8f2442332ae7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03e48ac5c4c99f099c570901d23e2e91e485dbf71fcd5ce0178fac694fffefca.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03e48ac5c4c99f099c570901d23e2e91e485dbf71fcd5ce0178fac694fffefca.pdf",
+      "file_id": "af0b056edd8a476fa05b8f2442332ae7",
+      "file_name": "B03_Wage_Determination_MT20260042_Ennis_Insulation_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 289996,
+      "sha256": "03e48ac5c4c99f099c570901d23e2e91e485dbf71fcd5ce0178fac694fffefca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/baad7f01c7fe44d9b60c287607686640/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ca29fa21fba9759971a5a2265334aedf0899b289a825778050f8437bd09eb0f4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ca29fa21fba9759971a5a2265334aedf0899b289a825778050f8437bd09eb0f4.pdf",
+      "file_id": "baad7f01c7fe44d9b60c287607686640",
+      "file_name": "A04_SOW_Ennis_NFH_Insulation_Replacement_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 239470,
+      "sha256": "ca29fa21fba9759971a5a2265334aedf0899b289a825778050f8437bd09eb0f4"
+    }
+  ],
+  "_mirror_hash": "db037c772be8c8ce2bb63cc54e1906241c3317a7ca06bd417c6446f5bcd8de1a",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.134525+00:00"
+}

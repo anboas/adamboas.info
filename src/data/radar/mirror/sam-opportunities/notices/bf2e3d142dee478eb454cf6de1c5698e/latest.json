@@ -1,0 +1,57 @@
+{
+  "id": "sam-bf2e3d142dee478eb454cf6de1c5698e",
+  "title": "SPE8E326R0001 Amendment 0001",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf2e3d142dee478eb454cf6de1c5698e",
+  "opportunity_url": "https://sam.gov/opp/bf2e3d142dee478eb454cf6de1c5698e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bf2e3d142dee478eb454cf6de1c5698e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bf2e3d142dee478eb454cf6de1c5698e",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT CONSTRUCTION & EQUIPMENT.DLA TROOP SUPPORT",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-06-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf2e3d142dee478eb454cf6de1c5698e",
+  "detail_text": "This amendment is issued to provide a corrected copy of Attachment D. This amendment does not extend the solicitation closing date.",
+  "detail_text_length": 131,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d42a7c04ce0f45a8bf84b91dbdfd5785/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fddb5830df8f4d4c9e3d0b0bb90ff887/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d42a7c04ce0f45a8bf84b91dbdfd5785/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1de7252ae9412a000d20c8c22e91cec1aa408b3fc0f0f097bbb60d1fb775b070.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1de7252ae9412a000d20c8c22e91cec1aa408b3fc0f0f097bbb60d1fb775b070.pdf",
+      "file_id": "d42a7c04ce0f45a8bf84b91dbdfd5785",
+      "file_name": "SF30_SPE8E326R00010001.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20355,
+      "sha256": "1de7252ae9412a000d20c8c22e91cec1aa408b3fc0f0f097bbb60d1fb775b070"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fddb5830df8f4d4c9e3d0b0bb90ff887/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/69d42a91f1a224ed7795cf2bd75eb35279dea4d5175d5bc5b63267952cd64f8c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/69d42a91f1a224ed7795cf2bd75eb35279dea4d5175d5bc5b63267952cd64f8c.pdf",
+      "file_id": "fddb5830df8f4d4c9e3d0b0bb90ff887",
+      "file_name": "SPE8E326R0001-+Attachment+D-+Data+specification+document+-revised-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 334082,
+      "sha256": "69d42a91f1a224ed7795cf2bd75eb35279dea4d5175d5bc5b63267952cd64f8c"
+    }
+  ],
+  "_mirror_hash": "a6155d3b8b67084bc85cbe6ab3218c50eea3b7c1adf4da878aba97bd608e4b4c",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.136797+00:00"
+}

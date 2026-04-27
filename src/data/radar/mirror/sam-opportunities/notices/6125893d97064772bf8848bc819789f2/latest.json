@@ -1,0 +1,46 @@
+{
+  "id": "sam-6125893d97064772bf8848bc819789f2",
+  "title": "Translation services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6125893d97064772bf8848bc819789f2",
+  "opportunity_url": "https://sam.gov/opp/6125893d97064772bf8848bc819789f2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6125893d97064772bf8848bc819789f2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6125893d97064772bf8848bc819789f2",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "19FR6326Q0068",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY PARIS",
+  "posted_date": "2026-04-24",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6125893d97064772bf8848bc819789f2",
+  "detail_text": "The Embassy of the United States in France, is releasing a solicitation for the provision of translation services for the US Mission in Paris, France. The Government intends to award the contract resulting from this solicitation to the lowest prices technically acceptable offer without discussion.The resultant contract will be an IDIQ (indefinite delivery indefinite quantity) contract under which will be issued task orders. The contract will be for a Base year with two One-year Options if exercised by the Government. All contractors have to be registered in the SAM (System for Award Management) Database https://www.sam.gov prior to submitting an offer pursuant to FAR provisions 52.404-7. Therefore, prospective offerors are encouraged to register prior to the submittal of quotations/proposals. The guidelines for registration in SAM are available at https://www.sam.gov ELECTRONIC SUBMISSIONS/RESPONSES: This opportunity allows for electronic reponses. Please submit your offer to the ParisContracting@state.gov address prior to the response date and time.",
+  "detail_text_length": 1066,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12755a1582c24172aa7df97591d524b7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12755a1582c24172aa7df97591d524b7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f5785c0ba9c9464a7ce42be2ab30ede52d55af2a74956cd9027b9d3c34be59f3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f5785c0ba9c9464a7ce42be2ab30ede52d55af2a74956cd9027b9d3c34be59f3.pdf",
+      "file_id": "12755a1582c24172aa7df97591d524b7",
+      "file_name": "RFQ+19FR6326Q0068+-+Translation+services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 696921,
+      "sha256": "f5785c0ba9c9464a7ce42be2ab30ede52d55af2a74956cd9027b9d3c34be59f3"
+    }
+  ],
+  "_mirror_hash": "c8124c0d95a71aa6336b6bab79ac744700383b98551c99e83d22d881af5ed791",
+  "_mirror_run_id": "20260427T134220Z",
+  "_mirror_recorded_at": "2026-04-27T13:48:58.056452+00:00"
+}
