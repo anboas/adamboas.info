@@ -1,0 +1,48 @@
+{
+  "id": "sam-bc8f348fd4264e5b85d27e62d1773ea2",
+  "title": "Request for Information: Materials for Physical Compute in Untethered Robotics",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bc8f348fd4264e5b85d27e62d1773ea2",
+  "opportunity_url": "https://sam.gov/opp/bc8f348fd4264e5b85d27e62d1773ea2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bc8f348fd4264e5b85d27e62d1773ea2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bc8f348fd4264e5b85d27e62d1773ea2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-76",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bc8f348fd4264e5b85d27e62d1773ea2",
+  "detail_text": "The Defense Advanced Research Projects Agency (DARPA) Microsystems Technology Office (MTO) seeks information on physical intelligence applied to untethered autonomous robotic technologies with dynamic and low-latency adaptive functionality in unconstrained environments. The DoW typically operates in environments with limited communication or human intervention, where autonomy coupled with rapid maneuverability and adaptive reflexes dictate mission completion. Robotics possessing physical intelligence—the encoding of sensing, actuation, control, learning, adaptation, and decision-making directly into the body—offers a promising path towards advancing the DoW’s mission. Progress in today’s autonomous robotics focuses on two paths, increasing sensor density and increasing data transfer volume, to enhance artificial decision-making. Both paths come at the cost of reduced energy efficiency, speed, and information security, for which current progress occurs orthogonal to the DoW mission. DARPA is interested in disruptive concepts at the material, component, and kernel level that represent significant advances beyond current practice for fielding robust robotics.",
+  "detail_text_length": 1174,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4567210b37f24043bb515a95eaa6bdaa/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4567210b37f24043bb515a95eaa6bdaa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5b5b3459695fd8a34c6756fa46e30e00cc4de0be2a39842baa6af511f1f13e6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5b5b3459695fd8a34c6756fa46e30e00cc4de0be2a39842baa6af511f1f13e6f.pdf",
+      "file_id": "4567210b37f24043bb515a95eaa6bdaa",
+      "file_name": "DARPA-SN-26-76.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 144477,
+      "sha256": "5b5b3459695fd8a34c6756fa46e30e00cc4de0be2a39842baa6af511f1f13e6f"
+    }
+  ],
+  "_mirror_hash": "dfb6f3bd8500920f5f04881ff8e8a6db1cebb86e906216f09b2d36f74cca5831",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.132196+00:00"
+}

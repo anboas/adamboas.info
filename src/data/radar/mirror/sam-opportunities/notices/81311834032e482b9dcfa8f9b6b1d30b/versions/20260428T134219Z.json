@@ -1,0 +1,46 @@
+{
+  "id": "sam-81311834032e482b9dcfa8f9b6b1d30b",
+  "title": "Lodging for CGC Hamilton DDFY26",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=81311834032e482b9dcfa8f9b6b1d30b",
+  "opportunity_url": "https://sam.gov/opp/81311834032e482b9dcfa8f9b6b1d30b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/81311834032e482b9dcfa8f9b6b1d30b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "81311834032e482b9dcfa8f9b6b1d30b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "Lodging_for_CGC_Hamilton_DDFY26",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.SFLC PROCUREMENT BRANCH 2(00085)",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=81311834032e482b9dcfa8f9b6b1d30b",
+  "detail_text": "This is a SOURCES SOUGHT NOTICE / REQUEST FOR INFORMATION not a pre-solicitation notice or solicitation for proposals/quotations. Pursuant to FAR Part 10 (Market Research), the purpose of this notice is to determine if sources capable of satisfying the agency's requirements exist. Please use the Specifications attachment for description of the agency needs. This notice in no way obligates the Government to any furthur action.",
+  "detail_text_length": 429,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb403245ea564d9dbe1254e93967b267/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb403245ea564d9dbe1254e93967b267/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d0a2b0da2bd7ca1f6a6dd469b9629e820377a5eee0f49ebec594f99f4ed1a899.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d0a2b0da2bd7ca1f6a6dd469b9629e820377a5eee0f49ebec594f99f4ed1a899.docx",
+      "file_id": "bb403245ea564d9dbe1254e93967b267",
+      "file_name": "HAMILTON+-WMSL_418-_DD_MNH_26_CREW+PERSTEMPO+MITIGATION.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 86930,
+      "sha256": "d0a2b0da2bd7ca1f6a6dd469b9629e820377a5eee0f49ebec594f99f4ed1a899"
+    }
+  ],
+  "_mirror_hash": "c9726f0df05850927f01b60b38f022f98b433f83e5c10b9bae7a7c32d8246064",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.374848+00:00"
+}

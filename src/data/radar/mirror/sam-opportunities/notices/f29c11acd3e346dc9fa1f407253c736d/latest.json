@@ -1,0 +1,46 @@
+{
+  "id": "sam-f29c11acd3e346dc9fa1f407253c736d",
+  "title": "805 CTS Offsec Learn Enterprise Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f29c11acd3e346dc9fa1f407253c736d",
+  "opportunity_url": "https://sam.gov/opp/f29c11acd3e346dc9fa1f407253c736d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f29c11acd3e346dc9fa1f407253c736d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f29c11acd3e346dc9fa1f407253c736d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "F2FT576021A001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4861  99 CONS LGC",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f29c11acd3e346dc9fa1f407253c736d",
+  "detail_text": "The United States Air Force, 99 CONS, Nellis AFB, NV is seeking capabilities packages of potential sources, including small business (SB), 8(a), HUBZone, and Service-Disabled Veteran-Owned (SDVO) small businesses that are capable of providing an Offensive Security Enterprise Training platform and Penetration Testing with Kali Linux course (PEN-200) for six users for one year. Please reference the attached Sources Sought for more information.",
+  "detail_text_length": 445,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/74b229981c9849ec8d11dde628c615fb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/74b229981c9849ec8d11dde628c615fb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/aaaec1ce8fe0e3c6891ef645a7993c006f9c68e6ffeefe9682cf4cb14c5d514c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/aaaec1ce8fe0e3c6891ef645a7993c006f9c68e6ffeefe9682cf4cb14c5d514c.pdf",
+      "file_id": "74b229981c9849ec8d11dde628c615fb",
+      "file_name": "Sources+Sought+-+Offsec+Learn+Enterprise+Subscription.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 124012,
+      "sha256": "aaaec1ce8fe0e3c6891ef645a7993c006f9c68e6ffeefe9682cf4cb14c5d514c"
+    }
+  ],
+  "_mirror_hash": "89abb1a5c788fce6f1051397d31ff9eeb78eeffd46145f6517fceaef49b2bc43",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.200748+00:00"
+}

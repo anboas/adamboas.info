@@ -1,0 +1,57 @@
+{
+  "id": "sam-7e45a005d18c4d839c330204fb82d9b8",
+  "title": "Y1BG--EHRM Infrastructure Upgrades Construction -  American Lake - Project 663A4-24-703",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e45a005d18c4d839c330204fb82d9b8",
+  "opportunity_url": "https://sam.gov/opp/7e45a005d18c4d839c330204fb82d9b8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7e45a005d18c4d839c330204fb82d9b8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7e45a005d18c4d839c330204fb82d9b8",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C77626B0013",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.PCAC (36C776)",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e45a005d18c4d839c330204fb82d9b8",
+  "detail_text": "Bid Log - AM Lake EHRM - Public",
+  "detail_text_length": 31,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4189c1ad37874b15936cbf41a1569561/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da2b545ca43b4ee49fb081c2cb56c6f4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4189c1ad37874b15936cbf41a1569561/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6afc09c2f8b1bae539d16ef4cc628373b5de54f4a057d86e58b28472ac88116c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6afc09c2f8b1bae539d16ef4cc628373b5de54f4a057d86e58b28472ac88116c.pdf",
+      "file_id": "4189c1ad37874b15936cbf41a1569561",
+      "file_name": "36C77626B0013_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 249012,
+      "sha256": "6afc09c2f8b1bae539d16ef4cc628373b5de54f4a057d86e58b28472ac88116c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/da2b545ca43b4ee49fb081c2cb56c6f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f47a44d2ef9cf24bdbdcc650b12de9e7e51cb0b8f8edf10b7b90122da449868e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f47a44d2ef9cf24bdbdcc650b12de9e7e51cb0b8f8edf10b7b90122da449868e.pdf",
+      "file_id": "da2b545ca43b4ee49fb081c2cb56c6f4",
+      "file_name": "Bid+Log+-+AM+Lake+EHRM+-+Public.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 185407,
+      "sha256": "f47a44d2ef9cf24bdbdcc650b12de9e7e51cb0b8f8edf10b7b90122da449868e"
+    }
+  ],
+  "_mirror_hash": "8ad71697d39ed32783e8298cbcd99cf3bb6f0a780249630dd7aea581e92fab24",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.453931+00:00"
+}

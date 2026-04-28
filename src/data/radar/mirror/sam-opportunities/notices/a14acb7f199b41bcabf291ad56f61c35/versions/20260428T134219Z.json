@@ -1,0 +1,68 @@
+{
+  "id": "sam-a14acb7f199b41bcabf291ad56f61c35",
+  "title": "RFI_TVC__ Treasury Vault Cafe Food Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a14acb7f199b41bcabf291ad56f61c35",
+  "opportunity_url": "https://sam.gov/opp/a14acb7f199b41bcabf291ad56f61c35/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a14acb7f199b41bcabf291ad56f61c35/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a14acb7f199b41bcabf291ad56f61c35",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "RFI_TVC",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.TREASURY OPERATIONS",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a14acb7f199b41bcabf291ad56f61c35",
+  "detail_text": "This is a Request for Information. Plese review the RFI and Associated Attachments as part of this notice.",
+  "detail_text_length": 106,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57870882ad7a497bb77fe2394ccafcc4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d131bf16744fed843e33c508b635b2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7b16d196439459895cf16ee36788ec7/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57870882ad7a497bb77fe2394ccafcc4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a58763e92700692b387303bd5f827f7fe7ad4224d603463b8e221b130de64219.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a58763e92700692b387303bd5f827f7fe7ad4224d603463b8e221b130de64219.pdf",
+      "file_id": "57870882ad7a497bb77fe2394ccafcc4",
+      "file_name": "Notice_Request+for+Information_RFI_TVC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 88825,
+      "sha256": "a58763e92700692b387303bd5f827f7fe7ad4224d603463b8e221b130de64219"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d131bf16744fed843e33c508b635b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31076a734ace6325610373848f7db757b6b107f205767967711c039b00fdee3d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31076a734ace6325610373848f7db757b6b107f205767967711c039b00fdee3d.pdf",
+      "file_id": "77d131bf16744fed843e33c508b635b2",
+      "file_name": "Attachment+1_PWS_RFI_TVC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 829600,
+      "sha256": "31076a734ace6325610373848f7db757b6b107f205767967711c039b00fdee3d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7b16d196439459895cf16ee36788ec7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e241f3e29fb0377fa045111373c2c173af876bd83ac6b9580127995225bd38ec.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e241f3e29fb0377fa045111373c2c173af876bd83ac6b9580127995225bd38ec.xlsx",
+      "file_id": "a7b16d196439459895cf16ee36788ec7",
+      "file_name": "Attachment+2_Sample+PL+Statement.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15446,
+      "sha256": "e241f3e29fb0377fa045111373c2c173af876bd83ac6b9580127995225bd38ec"
+    }
+  ],
+  "_mirror_hash": "42016e1f876853857a969621e8ca5f0614e4156aa1d32c993857a3b7ba21eef3",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.293138+00:00"
+}

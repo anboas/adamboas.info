@@ -1,0 +1,57 @@
+{
+  "id": "sam-7fdcc1bd49fe4efaa179c9050d4084dc",
+  "title": "USAR Analyst Support Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7fdcc1bd49fe4efaa179c9050d4084dc",
+  "opportunity_url": "https://sam.gov/opp/7fdcc1bd49fe4efaa179c9050d4084dc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7fdcc1bd49fe4efaa179c9050d4084dc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7fdcc1bd49fe4efaa179c9050d4084dc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC-26-P-0000045081",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.419TH CSB.W6QM MICC FDO FT BRAGG",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7fdcc1bd49fe4efaa179c9050d4084dc",
+  "detail_text": "This is a RFI for non-personal services to provide Analyst Support Services for the United States Army Reserve (USAR). Please see attached Sources Sought Notice for response instructions and Performance Work Statement for description of services and full list of locations. All responses should be sent in email to rebecca.h.bowdren.civ@army.mil and casey.n.cambrin.civ@army.mil.",
+  "detail_text_length": 379,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69478ccc5fc3415c9f0d27a619cdb139/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cedc55b96a7a43d9a226628a626d6953/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/69478ccc5fc3415c9f0d27a619cdb139/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/447936a2d95c86307aa6d53e950ddab738e870b6ddd0620cd530a48ffafa0f36.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/447936a2d95c86307aa6d53e950ddab738e870b6ddd0620cd530a48ffafa0f36.pdf",
+      "file_id": "69478ccc5fc3415c9f0d27a619cdb139",
+      "file_name": "Sources+Sought+Notice+-+USAR+Analyst+Support.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 123622,
+      "sha256": "447936a2d95c86307aa6d53e950ddab738e870b6ddd0620cd530a48ffafa0f36"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cedc55b96a7a43d9a226628a626d6953/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a119cf6320f08cab14ae07e4bb85e00479539ac770f3e00929d0126e7f918b06.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a119cf6320f08cab14ae07e4bb85e00479539ac770f3e00929d0126e7f918b06.pdf",
+      "file_id": "cedc55b96a7a43d9a226628a626d6953",
+      "file_name": "04.+Performance+Work+Statement+-draft-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 555549,
+      "sha256": "a119cf6320f08cab14ae07e4bb85e00479539ac770f3e00929d0126e7f918b06"
+    }
+  ],
+  "_mirror_hash": "956d735bc455d37a954993fc3c481e51476c0976461624509ee803e8e9e10d5f",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.359232+00:00"
+}

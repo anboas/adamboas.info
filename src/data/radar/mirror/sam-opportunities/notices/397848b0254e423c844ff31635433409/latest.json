@@ -1,0 +1,57 @@
+{
+  "id": "sam-397848b0254e423c844ff31635433409",
+  "title": "S208--Facility Pressure Washing",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=397848b0254e423c844ff31635433409",
+  "opportunity_url": "https://sam.gov/opp/397848b0254e423c844ff31635433409/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/397848b0254e423c844ff31635433409/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "397848b0254e423c844ff31635433409",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24826Q0599",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=397848b0254e423c844ff31635433409",
+  "detail_text": "The Bay Pines VA Healthcare System, at 10000 Bay Pines Blvd, Bay Pines, FL 33744, has a requirement for Facility Pressure Washing. All vendors must be properly registered in the System Award Management database (SAM) and SBA Small Business Search (SBS). Price quotes shall include the Unique Entity Identifier (UEI) Number, SBA Small Business Search (SBS) SDVOSB certification, any other supporting information for the price submitted, and any items identified in ADDENDUM to FAR 52.212-1 Instructions to Offerors. The associated North American Industrial Classification System (NAICS) code for this procurement is 561790 (Other Services to Buildings and Dwellings) with a small business size standard of $9.0 Million. The solicitation will be available on or about April 27, 2026 and will be distributed solely through the SAMs website (www.SAM.gov). The anticipated date for receipt of quotes is on or about May 7, 2026 with responses due to William Sean Penhallegon at william.penhallegon@va.gov.",
+  "detail_text_length": 999,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/013ddf5d1f0b4b05853b8d9388abea17/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22924a15c8ff400988eccd69049327be/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/013ddf5d1f0b4b05853b8d9388abea17/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/23a5a91f8fda94b129105f265e64364f795eceb500f0445a6f7af63664223a42.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/23a5a91f8fda94b129105f265e64364f795eceb500f0445a6f7af63664223a42.docx",
+      "file_id": "013ddf5d1f0b4b05853b8d9388abea17",
+      "file_name": "36C24826Q0599_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14943,
+      "sha256": "23a5a91f8fda94b129105f265e64364f795eceb500f0445a6f7af63664223a42"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22924a15c8ff400988eccd69049327be/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b78a411989193ba5c2187a418db42dfbc8889c77d9ca2fd1418bbbfd181e6ff1.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b78a411989193ba5c2187a418db42dfbc8889c77d9ca2fd1418bbbfd181e6ff1.docx",
+      "file_id": "22924a15c8ff400988eccd69049327be",
+      "file_name": "36C24826Q0599_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16048,
+      "sha256": "b78a411989193ba5c2187a418db42dfbc8889c77d9ca2fd1418bbbfd181e6ff1"
+    }
+  ],
+  "_mirror_hash": "d80bd7907e993cda56a21a0f8c84c54e467c956e24176ed998271f365a4289f9",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.311842+00:00"
+}

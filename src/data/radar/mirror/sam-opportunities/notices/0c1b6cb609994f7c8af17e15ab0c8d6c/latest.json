@@ -1,0 +1,57 @@
+{
+  "id": "sam-0c1b6cb609994f7c8af17e15ab0c8d6c",
+  "title": "Service Maintenance for 250-Ton Hydra-Set.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c1b6cb609994f7c8af17e15ab0c8d6c",
+  "opportunity_url": "https://sam.gov/opp/0c1b6cb609994f7c8af17e15ab0c8d6c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0c1b6cb609994f7c8af17e15ab0c8d6c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0c1b6cb609994f7c8af17e15ab0c8d6c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "80NSSC26931285Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0c1b6cb609994f7c8af17e15ab0c8d6c",
+  "detail_text": "NASA/NSSC has a requirement for Service Maintenance for 250-Ton Hydra-Set. See the attached SOW and request for capability statements. All correspondence should reference ID 80NSSC26931285Q to ensure visibility. PLEASE NOTE* THIS IS NOT A REQUEST FOR QUOTES. ANY PRICE OFFERS RECIEVED WILL NOT BE REVIEWED/ACCEPTED AT THIS TIME.",
+  "detail_text_length": 328,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d762d6c240041d9825b23d18f366bae/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d84c2c6de65a4dada30f8ee16fdcbee3/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1d762d6c240041d9825b23d18f366bae/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a457d65283e2c558c21e359f9e23ee93168768fdb77b8288962e7d032abcee84.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a457d65283e2c558c21e359f9e23ee93168768fdb77b8288962e7d032abcee84.pdf",
+      "file_id": "1d762d6c240041d9825b23d18f366bae",
+      "file_name": "Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 177380,
+      "sha256": "a457d65283e2c558c21e359f9e23ee93168768fdb77b8288962e7d032abcee84"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d84c2c6de65a4dada30f8ee16fdcbee3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ce22d22d20ed1633399dc8f8e5c5eddd5c226652ec7e78837be5b8caf7d95d4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ce22d22d20ed1633399dc8f8e5c5eddd5c226652ec7e78837be5b8caf7d95d4.pdf",
+      "file_id": "d84c2c6de65a4dada30f8ee16fdcbee3",
+      "file_name": "Tab+04+SOW+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 105035,
+      "sha256": "0ce22d22d20ed1633399dc8f8e5c5eddd5c226652ec7e78837be5b8caf7d95d4"
+    }
+  ],
+  "_mirror_hash": "cf2f3122eb959732d8d625e301fb4eb96e16e4ce85c712fea8e1a310b3cc98f5",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.214627+00:00"
+}

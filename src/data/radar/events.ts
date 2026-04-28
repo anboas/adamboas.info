@@ -16955,4 +16955,59 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'No public government point of contact, solicitation identifier, or response/registration cutoff was posted on the source page at import time; opportunity-intelligence fields intentionally left blank pending verified government sources.'
 		}
 	},
+	{
+		id: 'radar-arctic-security-summit-2026',
+		title: 'Arctic Security Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-07-01',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'High',
+		location: 
+		{
+			city: 'Stockholm',
+			country: 'Sweden',
+			lat: 39.5,
+			lng: -98.35
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['arctic', 'security', 'summit', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25918'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 1200,
+					max: 4500
+				},
+				travelBurdenFromDc: 'High'
+			}
+		}
+	},
 ];

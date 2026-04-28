@@ -1,0 +1,57 @@
+{
+  "id": "sam-56a32e99dce04aae9071ad543d116aac",
+  "title": "Filter Element, Fluid",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=56a32e99dce04aae9071ad543d116aac",
+  "opportunity_url": "https://sam.gov/opp/56a32e99dce04aae9071ad543d116aac/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/56a32e99dce04aae9071ad543d116aac/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "56a32e99dce04aae9071ad543d116aac",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CM26068005",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=56a32e99dce04aae9071ad543d116aac",
+  "detail_text": "SOURCES SOUGHT ---------------------------------------------------------------------------------------------------------- REQUIRED RESPONSE DATE: 3:00 pm EST on 5/5/2026 Contract Specialist: Kimberly Pozderac Email: kimberly.pozderac@dla.mil ---------------------------------------------------------------------------------------------------------- DLA Land and Maritime is preparing to solicit the following Long-Term Contract: NSN 2910-00-287-1912 ITEM NAME FILTER ELEMENT, FLUID UNIT OF ISSUE EA ---------------------------------------------------------------------------------------------------------- The AMC/AMSC for the NSN listed above is “1/G” AMC \"1\" Suitable for competitive acquisition for the second or subsequent time. AMSC \"G\" The Government has rights to the technical data, the data package is complete, and there are no technical data, engineering, tooling or manufacturing restrictions. (This is the only AMSC that implies that parts are candidates for full and open competition. Other AMSCs such as K, M, N, Q, and S may imply limited competition when two or more independent sources exist, yet the technical data package is inadequate for full and open competition.) ---------------------------------------------------------------------------------------------------------- NOTE: This project contains Drawings/Specifications. Vendors may access the applicable drawings/specifications by querying MR26068005 within the solicitation field at the following cfolders link: https://pcf1.bsm.dla.mil/cfolders. Drawings cannot be accessed through DIBBS at this time. The applicable North American Classification System (NAICS) code is 336390 with Small Business size standard of 1,000 employees. This SOURCES SOUGHT notice is for informational and planning purposes only and shall not be construed as a solicitation or as an obligation or commitment by the Government. This notice is strictly for market research. This is NOT a solicitation for proposals, proposal abstracts, or quotations. The purpose of this notice is to obtain information regarding the capability and availability of qualified businesses that are capable of executing this potential contract. The Government is not obligated and will not pay for any information received from potential sources as a result of this notice. Your response to the information requested will assist the Government in determining the appropriate acquisition method. ---------------------------------------------------------------------------------------------------------- Thank you in advance for your assistance. Kimberly Pozderac DLA Contract Specialist kimberly.pozderac@dla.mil",
+  "detail_text_length": 2645,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f7a7ccbbd754e22b4b9732b331e8c1b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95c219c61fa64d3c94cfa8da4c5c1983/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f7a7ccbbd754e22b4b9732b331e8c1b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a74c6fe738b868eecab812441876f8964193fa0c97177d95f57b53018d9c55f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a74c6fe738b868eecab812441876f8964193fa0c97177d95f57b53018d9c55f.docx",
+      "file_id": "5f7a7ccbbd754e22b4b9732b331e8c1b",
+      "file_name": "Market+Research+LTC+Questionnaire+Filter+Element+Fluid.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 59761,
+      "sha256": "4a74c6fe738b868eecab812441876f8964193fa0c97177d95f57b53018d9c55f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95c219c61fa64d3c94cfa8da4c5c1983/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa886d8796fc7aaf58191a98f8b35be02e8b3073c11a346a811502c14ffa6393.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa886d8796fc7aaf58191a98f8b35be02e8b3073c11a346a811502c14ffa6393.xlsx",
+      "file_id": "95c219c61fa64d3c94cfa8da4c5c1983",
+      "file_name": "Market+Research+LTC+Spreadsheet+Filter+Element+Fluid.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 95705,
+      "sha256": "fa886d8796fc7aaf58191a98f8b35be02e8b3073c11a346a811502c14ffa6393"
+    }
+  ],
+  "_mirror_hash": "488da7bf12048a810fb05c557fedbda62d3e3cae151e75f2aa8aa2bb3ab1fdf1",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.284754+00:00"
+}

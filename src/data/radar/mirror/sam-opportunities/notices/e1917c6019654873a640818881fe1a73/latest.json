@@ -1,0 +1,46 @@
+{
+  "id": "sam-e1917c6019654873a640818881fe1a73",
+  "title": "Notice of Intent to Sole Source - Key Solutions, Inc. - eProtocol and Lab Animal Resource System (LARS) Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1917c6019654873a640818881fe1a73",
+  "opportunity_url": "https://sam.gov/opp/e1917c6019654873a640818881fe1a73/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e1917c6019654873a640818881fe1a73/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e1917c6019654873a640818881fe1a73",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "98048",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.CENTERS FOR DISEASE CONTROL AND PREVENTION.CDC OFFICE OF ACQUISITION SERVICES",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e1917c6019654873a640818881fe1a73",
+  "detail_text": "The Centers for Disease Control and Prevention (CDC) utilizes the Key Solutions’ eProtocol modules to manage their animal care program. It currently supports the entire agency in the area of animal procurement and ordering; animal record keeping; data collection; reporting tools; and billing information. The Institutional Animal Care and Use Committee (IACUC) protocol compliance module ensures consistent protocol review, maintains full traceability, simplifies role-based access, and strengthens compliance oversight. The Lab Animal Resource System (LARS) module streamlines end-to-end activities, from animal requisition to daily management.",
+  "detail_text_length": 646,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7143d2e40c004e05b0912235dece7290/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7143d2e40c004e05b0912235dece7290/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0fd56c7a6a3fb729419826827da05be6de013a4b17d4fc8af56f0a6e626b2791.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0fd56c7a6a3fb729419826827da05be6de013a4b17d4fc8af56f0a6e626b2791.pdf",
+      "file_id": "7143d2e40c004e05b0912235dece7290",
+      "file_name": "NOI_SAM.gov_Key+Solutions+Inc_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 63611,
+      "sha256": "0fd56c7a6a3fb729419826827da05be6de013a4b17d4fc8af56f0a6e626b2791"
+    }
+  ],
+  "_mirror_hash": "691315e02686b97c963524b9b526a493d696bd0c98d8e30fca07b5eeeb84404f",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.377471+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-43e7589e16e74f9680a72345683dfc37",
+  "title": "REPAIR SERV ICES FOR THE UMTE PROGRAM",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=43e7589e16e74f9680a72345683dfc37",
+  "opportunity_url": "https://sam.gov/opp/43e7589e16e74f9680a72345683dfc37/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/43e7589e16e74f9680a72345683dfc37/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "43e7589e16e74f9680a72345683dfc37",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA8250-26-Q-0009",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE SUSTAINMENT CENTER.FA8250  AFSC PZAAA",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=43e7589e16e74f9680a72345683dfc37",
+  "detail_text": "This requirement is for repair services for the UMTE program, 1 each, Electron Tube, NSN: 5960-01-507-9112FD, PN: VKX-7809M. This is the Pre-solicitation will be posted for 15 days followed by the Soliciation. This requirement is Sole Source to Microwave Power Products, Inc (Cage Code 99313).",
+  "detail_text_length": 293,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/73b91a3558be4dc2a9df046b574b8b6c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/73b91a3558be4dc2a9df046b574b8b6c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/471b64cf5903c3e3d43301661b5ef9cff47b6e0a2a4b1811239b44b32825ed98.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/471b64cf5903c3e3d43301661b5ef9cff47b6e0a2a4b1811239b44b32825ed98.pdf",
+      "file_id": "73b91a3558be4dc2a9df046b574b8b6c",
+      "file_name": "Synopsis+FA825026Q0009.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 264720,
+      "sha256": "471b64cf5903c3e3d43301661b5ef9cff47b6e0a2a4b1811239b44b32825ed98"
+    }
+  ],
+  "_mirror_hash": "d2902b8e890dd19ba70d739aad05207ef3b4d21f3cc792b178b79fbdd011b507",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.381698+00:00"
+}

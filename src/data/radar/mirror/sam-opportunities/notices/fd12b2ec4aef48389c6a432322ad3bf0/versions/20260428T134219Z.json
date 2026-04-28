@@ -1,0 +1,46 @@
+{
+  "id": "sam-fd12b2ec4aef48389c6a432322ad3bf0",
+  "title": "Program Manager Wargaming Capabilities - Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd12b2ec4aef48389c6a432322ad3bf0",
+  "opportunity_url": "https://sam.gov/opp/fd12b2ec4aef48389c6a432322ad3bf0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fd12b2ec4aef48389c6a432322ad3bf0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fd12b2ec4aef48389c6a432322ad3bf0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M6785426I2600",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCOR SYSCOM.COMMANDER",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd12b2ec4aef48389c6a432322ad3bf0",
+  "detail_text": "*** Updated 04/27/2026 to add information on upcoming prize challenge and industry engagement event*** **Updated to add vendor registration information for conference on 12/3/2025** The U.S. Marine Corps (USMC) Program Manager Wargaming Capability (PM WGC) is responsible for developing and fielding an advanced suite of software tools and simulations to the General Robert B. Neller Center for Wargaming and Analysis in Quantico, VA. The intended use cases for the software include Concept Development, Capability Development, and Operational Plan Assessment. The wargames considered are comprehensive across all levels of war (Strategic, Operational, Tactical), all warfighting domains (Land, Air, Sea, Space, Cyber), and all warfighting functions (Maneuver, Fires, Intel, Force Protection, Logistics, Command and Control, Information). The collective software requirements are applicable to all levels of war, with commensurate adjustments to the resolution of models and associated metrics. PM WGC is seeking software solutions that leverage an incremental and agile approach to developing a wargaming software capability. The initial capability sought is a wargaming system capable of running the end-to-end wargaming workflow (plan, design, execute, capture data, analyze, report) in a secure Azure cloud environment. The emphasis is on providing all the required end-to-end functions for the wargaming software with as much simulation domain technical depth as possible across warfighting domains, levels of war, and warfighting functions. It must be built with a modular, open architecture to support future agile and incremental expansion and enhancement to build out the missing capabilities of the initial product.",
+  "detail_text_length": 1725,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05d6504577f64e9899c9ba0cc0717028/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/05d6504577f64e9899c9ba0cc0717028/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/31af6ae4353865bfb470c2b7ca0a71d8a2ae97672c1dfc791aaa238265abfdf9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/31af6ae4353865bfb470c2b7ca0a71d8a2ae97672c1dfc791aaa238265abfdf9.docx",
+      "file_id": "05d6504577f64e9899c9ba0cc0717028",
+      "file_name": "M6785426I2600+-+Amendment+00002+-+Wargaming+Software+RFI.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 56751,
+      "sha256": "31af6ae4353865bfb470c2b7ca0a71d8a2ae97672c1dfc791aaa238265abfdf9"
+    }
+  ],
+  "_mirror_hash": "36860d8f239578837342b2f50fdcefcd8d8e310a2361f00c38abcca405630f0b",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.356559+00:00"
+}

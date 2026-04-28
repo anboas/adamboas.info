@@ -1,0 +1,46 @@
+{
+  "id": "sam-d62bbea8d735442a94a49c8b242b4d00",
+  "title": "Mission-Wide Learning Management System (LMS)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d62bbea8d735442a94a49c8b242b4d00",
+  "opportunity_url": "https://sam.gov/opp/d62bbea8d735442a94a49c8b242b4d00/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d62bbea8d735442a94a49c8b242b4d00/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d62bbea8d735442a94a49c8b242b4d00",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI-ATISLMS-2026-01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d62bbea8d735442a94a49c8b242b4d00",
+  "detail_text": "The Product Manager Army Training Information System (ATIS) requires a comprehensive Learning Management System (LMS) to deliver, track, and manage all mandatory, mission-essential, and professional development training for approximately 1.5 million personnel to include users from all Army Components, Civilians, and contractors. Additionally, there are separate and distinct educational needs for the 88+ Centers of Excellence and Schools that must be integrated into the LMS. The LMS must be able to support instructor-led, traditional classroom training and education, as well as asynchronous independent learning The LMS must be able to support a centrally accessible course catalog as well as sub-organizations or tenant level management. Each sub-organization requires its own designated administrators who require data isolation to allow for content, users, course catalogs, and reporting management. Suborganization administrators should not have access to the personnel data or training records of other sub-organizations. The LMS must simultaneously support central control allowing for Headquarters- type training to be accessible outside of the sub-organizations and retain visibility and governance across all sub‑organizations. Additionally, scalability is a required functionality for the LMS. Please see attachment for complete details.",
+  "detail_text_length": 1353,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/013a1c4be6c54cffae6a189213d185fa/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/013a1c4be6c54cffae6a189213d185fa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0dcde2b0f93c8c310ee27be262cd4aa20ce326cb9bacef1ac08873d7cb174b2b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0dcde2b0f93c8c310ee27be262cd4aa20ce326cb9bacef1ac08873d7cb174b2b.pdf",
+      "file_id": "013a1c4be6c54cffae6a189213d185fa",
+      "file_name": "Request+for+Information+-RFI-+-+ATIS+LMS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137627,
+      "sha256": "0dcde2b0f93c8c310ee27be262cd4aa20ce326cb9bacef1ac08873d7cb174b2b"
+    }
+  ],
+  "_mirror_hash": "ccaf9b0cecfc77ce318ca3d9c20fbb6c24f7cb06fb30e6fd9ff6da63f4b5ff59",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.376305+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-92afa38e67b040b2b1f224611dc771e8",
+  "title": "PN: 143A3213-92 / NIIN: LLF02O059 / Door Assy-Airstair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92afa38e67b040b2b1f224611dc771e8",
+  "opportunity_url": "https://sam.gov/opp/92afa38e67b040b2b1f224611dc771e8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/92afa38e67b040b2b1f224611dc771e8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "92afa38e67b040b2b1f224611dc771e8",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QTB38",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-28",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92afa38e67b040b2b1f224611dc771e8",
+  "detail_text": "This solicitation is for the purchase of a commercial item for the P8 aircraft. PN: 143A3213-92 / NIIN: LLF02O059 / Door Assy-Airstair",
+  "detail_text_length": 134,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15c0a62e095e40ee83fe3845fb5660a3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/15c0a62e095e40ee83fe3845fb5660a3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/352591fd8eea2cadfcd8b0caf1949726dbc5a86347ee41bc27e490ba27185685.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/352591fd8eea2cadfcd8b0caf1949726dbc5a86347ee41bc27e490ba27185685.pdf",
+      "file_id": "15c0a62e095e40ee83fe3845fb5660a3",
+      "file_name": "3.01_Solicitation_N00383-26-Q-TB38_26083-0007.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 604734,
+      "sha256": "352591fd8eea2cadfcd8b0caf1949726dbc5a86347ee41bc27e490ba27185685"
+    }
+  ],
+  "_mirror_hash": "29eb36571f3fd01129d9f7814ad03484f40bfbb476d4a34b7f754785850f0191",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.141622+00:00"
+}

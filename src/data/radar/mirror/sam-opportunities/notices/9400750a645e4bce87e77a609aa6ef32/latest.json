@@ -1,0 +1,46 @@
+{
+  "id": "sam-9400750a645e4bce87e77a609aa6ef32",
+  "title": "Notice of Intent to Purchase Accenture Federal Services StartingPoint Common Technical Documnet (CTD) Templates",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9400750a645e4bce87e77a609aa6ef32",
+  "opportunity_url": "https://sam.gov/opp/9400750a645e4bce87e77a609aa6ef32/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9400750a645e4bce87e77a609aa6ef32/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9400750a645e4bce87e77a609aa6ef32",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PANDHA26P0000037567",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9400750a645e4bce87e77a609aa6ef32",
+  "detail_text": "The Defense Health Agency and the Defense Health Agency Contracting Activity (DHACA) located at Fort Detrick, MD, intends to negotiate solely (as prescribed in FAR 13.106-1(b)(1)(i) with Accenture Federal Services LLC, 800 North Glebe RD # 300, Arlington, VA, 22203-1807. The required services entail an annual maintenance agreement, which includes technical support and product updates for the “Accenture StartingPoint” CTD templates. The Defense Health Agency, Office of Regulated Activities (ORA) purchased proprietary, macro-based, Microsoft Word electronic Common Technical Document (CTD) \"StartingPoint\" templates from Octagon Research Solutions, Inc., now Accenture, in February 2009. Accenture Federal Services LLC “StartingPoint” CTD Templates enable rapid deployment of regulatory authoring standards across functional areas to facilitate efficient authoring of all components of the CTD along with submissions to the U.S. Food and Drug Administration. This requirement will allow for continuation of product updates, and support for use of the existing templates. Templates include instructional text from the International Council for Harmonization (ICH) guidance documents as well as automation of frequently used authoring functions. The content templates and the associated administration files that govern their automation require updates frequently. Updates consist of new or updated content templates, and issue resolutions. In addition, new functions may require additional technical support regarding how the templates work and how to use the templates, beyond that which can be read in a user guide. The anticipated period of performance of this contract is five (5) years (base plus four (4) option years). The North American Industry Classification System (NAICS) for this requirement is 518210 Data Processing, Hosting, and Related Services and the size standard of $40,000,000.00. PSC DA10 IT and Telecom—Business Application/Application Development Software as a Service After the publication of this notice, the purchase will be awarded without further remarks. All questions and responses concerning this notice shall be emailed to Kevin T Jandovitz at Kevin.t.jandovitz.civ@health.mil Interested concerns must identify their capability in writing to the above e-mail address or by mail to the address listed below no later than three (3) days after the publication of this notice 01 May 2026 at 1000 Eastern Standard Time (EST).",
+  "detail_text_length": 2457,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36d90dedc99c4eb4b57b3a2354b817f3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/36d90dedc99c4eb4b57b3a2354b817f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/66a0db9170759112b0a70aad6eb2b3c3f8e13d53c7a0837900e9b75b9b08544a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/66a0db9170759112b0a70aad6eb2b3c3f8e13d53c7a0837900e9b75b9b08544a.docx",
+      "file_id": "36d90dedc99c4eb4b57b3a2354b817f3",
+      "file_name": "B08+Notice+of+intent+PANDHA-26-P-0000+037567_CTD.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15529,
+      "sha256": "66a0db9170759112b0a70aad6eb2b3c3f8e13d53c7a0837900e9b75b9b08544a"
+    }
+  ],
+  "_mirror_hash": "4cbec38c47f1b0c9ca6567da5b03eedd5e8d21f3d88cddefe2b817cac30c30a6",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.241032+00:00"
+}

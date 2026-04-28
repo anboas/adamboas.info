@@ -1,0 +1,57 @@
+{
+  "id": "sam-1d70d7068fb54f9c9621782dd109007e",
+  "title": "Repair Deep Well 051 for Closure",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d70d7068fb54f9c9621782dd109007e",
+  "opportunity_url": "https://sam.gov/opp/1d70d7068fb54f9c9621782dd109007e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1d70d7068fb54f9c9621782dd109007e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1d70d7068fb54f9c9621782dd109007e",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W519TC26R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC RI.W6QK ACC-RI",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1d70d7068fb54f9c9621782dd109007e",
+  "detail_text": "This is a notice that a solicitation is anticipated to be forthcoming and will have all the necessary documents. Please see the attached Scope of Work (SOW) PR-2026-0214 for detailed project requirements. IAW FAR 36.204(d), the magnitude of this project is between $100,000.00 and $500,000.00. Performance and Payment Bonds are required. The scope of this project is to seal an approximately 380ft deep, disused water well. The Contractor is required to employ the necessary equipment, instruments, and materials to accomplish eh task of sealing this old well in accordance with Illinois Administrative Code Title 77 Chapter I Section 920.120. The Contractor shall complete the necessary reporting to the County of Rock Island Public Health Department including paying fees. 27 APR 2026: SITE VISIT HAS BEEN CANCELLED",
+  "detail_text_length": 817,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2484e7b678804e4ebb93aa89096cbdf9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e086fcd1a05a48669dd5161c21992016/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2484e7b678804e4ebb93aa89096cbdf9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f4dd5d6e4e913d0b44bceb46aa4db2d9b825500530f6dcbf264102dc6ff5c2d2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f4dd5d6e4e913d0b44bceb46aa4db2d9b825500530f6dcbf264102dc6ff5c2d2.pdf",
+      "file_id": "2484e7b678804e4ebb93aa89096cbdf9",
+      "file_name": "Deep+Well+51+Site+Visit+Map.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 273113,
+      "sha256": "f4dd5d6e4e913d0b44bceb46aa4db2d9b825500530f6dcbf264102dc6ff5c2d2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e086fcd1a05a48669dd5161c21992016/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/15eea773a14471f926ea2c6b95b50c950d895dcd47d2bfc327fd9b815ee80d80.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/15eea773a14471f926ea2c6b95b50c950d895dcd47d2bfc327fd9b815ee80d80.pdf",
+      "file_id": "e086fcd1a05a48669dd5161c21992016",
+      "file_name": "Statement+of+Work+-SOW-+PR-2026-0214_Repair+Deep+Well+051+-18MAR2026-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 187755,
+      "sha256": "15eea773a14471f926ea2c6b95b50c950d895dcd47d2bfc327fd9b815ee80d80"
+    }
+  ],
+  "_mirror_hash": "fcec43a12878ab848013edfc66158e5cd666f58383b181eadc39a65ba1951bdd",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.292430+00:00"
+}

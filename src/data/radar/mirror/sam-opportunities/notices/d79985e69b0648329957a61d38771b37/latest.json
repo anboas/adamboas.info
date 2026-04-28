@@ -1,0 +1,57 @@
+{
+  "id": "sam-d79985e69b0648329957a61d38771b37",
+  "title": "local vendor to host the 2026 NASA TFAWS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d79985e69b0648329957a61d38771b37",
+  "opportunity_url": "https://sam.gov/opp/d79985e69b0648329957a61d38771b37/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d79985e69b0648329957a61d38771b37/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d79985e69b0648329957a61d38771b37",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "80NSSC26931526Q",
+  "agency_path": "NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NATIONAL AERONAUTICS AND SPACE ADMINISTRATION.NASA SHARED SERVICES CENTER",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d79985e69b0648329957a61d38771b37",
+  "detail_text": "NASA/MSFC has a requirement for local vendor to host the 2026 NASA TFAWS. See the attached SOW and request for capability statements. All correspondence should reference ID 80NSSC26931526Q to ensure visibility. PLEASE NOTE* THIS IS NOT A REQUEST FOR QUOTES. ANY PRICE OFFERS RECIEVED WILL NOT BE REVIEWED/ACCEPTED AT THIS TIME.",
+  "detail_text_length": 327,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e39f08ba515a4683bd5c9c36be2774c1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f765a88b35dd4347a84b9a9e1984a6e7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e39f08ba515a4683bd5c9c36be2774c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9dc9fc7742e994a982ad3a6fe90a67a9e87ed8c8d76451cfeb0d877e95397399.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9dc9fc7742e994a982ad3a6fe90a67a9e87ed8c8d76451cfeb0d877e95397399.pdf",
+      "file_id": "e39f08ba515a4683bd5c9c36be2774c1",
+      "file_name": "Tab+04+SOW+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 140184,
+      "sha256": "9dc9fc7742e994a982ad3a6fe90a67a9e87ed8c8d76451cfeb0d877e95397399"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f765a88b35dd4347a84b9a9e1984a6e7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/588b1aecd7fe562581d07fa32df60920093143f6ba286444092644b883add98b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/588b1aecd7fe562581d07fa32df60920093143f6ba286444092644b883add98b.pdf",
+      "file_id": "f765a88b35dd4347a84b9a9e1984a6e7",
+      "file_name": "Tab+07+Capability+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 133304,
+      "sha256": "588b1aecd7fe562581d07fa32df60920093143f6ba286444092644b883add98b"
+    }
+  ],
+  "_mirror_hash": "982035f1747e6f841244646f774cb50f816863fb883cf116a3f7c0863b596457",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.212974+00:00"
+}

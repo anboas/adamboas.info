@@ -1,0 +1,45 @@
+{
+  "id": "sam-69478d6a9975404eba2585b689bafdd4",
+  "title": "26084-0096_SPARE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=69478d6a9975404eba2585b689bafdd4",
+  "opportunity_url": "https://sam.gov/opp/69478d6a9975404eba2585b689bafdd4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/69478d6a9975404eba2585b689bafdd4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "69478d6a9975404eba2585b689bafdd4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QXB35",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=69478d6a9975404eba2585b689bafdd4",
+  "detail_text": "Spare_NSN 1HM 6810-01-578-2043 SODASORB POUCH QTY 20",
+  "detail_text_length": 52,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b654758871fb4f7a94f9039a142dba04/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b654758871fb4f7a94f9039a142dba04/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ef2860dec6390cd3a44d3a366c1185fe21532ca4c76e7c2b5f57d0e07f98d348.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ef2860dec6390cd3a44d3a366c1185fe21532ca4c76e7c2b5f57d0e07f98d348.pdf",
+      "file_id": "b654758871fb4f7a94f9039a142dba04",
+      "file_name": "3.01_RFQ_N0010426QXB35_26084-0096.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 574203,
+      "sha256": "ef2860dec6390cd3a44d3a366c1185fe21532ca4c76e7c2b5f57d0e07f98d348"
+    }
+  ],
+  "_mirror_hash": "2b0ae38a096de8074708af21d0215143a2dafd2cd52a19974ec29715e74fa78e",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.120630+00:00"
+}

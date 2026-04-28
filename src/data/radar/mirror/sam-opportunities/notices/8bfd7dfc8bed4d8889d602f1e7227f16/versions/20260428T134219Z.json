@@ -1,0 +1,57 @@
+{
+  "id": "sam-8bfd7dfc8bed4d8889d602f1e7227f16",
+  "title": "HDCSO Analytical Laboratory Systems (ALS) Course Instruction Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bfd7dfc8bed4d8889d602f1e7227f16",
+  "opportunity_url": "https://sam.gov/opp/8bfd7dfc8bed4d8889d602f1e7227f16/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8bfd7dfc8bed4d8889d602f1e7227f16/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8bfd7dfc8bed4d8889d602f1e7227f16",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC25P0000018946",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-FT LEONARD WOOD",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8bfd7dfc8bed4d8889d602f1e7227f16",
+  "detail_text": "The Government requires a contractor to provide instructional support to the Analytical Laboratory Systems (ALS) Operator’s Course which instructs Civil Support Teams (military). The performance requirement that must be met includes instruction of four iterations of the ALS Operator course. The course has an annual throughput of 32 students. The maximum number of students is 8 per course and the instructor to student ratio is one to four (1:4). This instructional support is necessary for Soldiers to maintain a high state of domestic readiness for Continental United States (CONUS) Consequence Management (CM). Tasks performed shall be directly related to the ALS educational and training concepts developed at the HDCSO. All work shall be accomplished according to the current Training and Doctrine Command (TRADOC) Regulation 350-70, Systems Approach to Training Management, Processes, and Products (JUL 2017).",
+  "detail_text_length": 917,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/99ee761ad87a48ffbd9e99849622242a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba5ea83d934245d9862576903ce6127e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/99ee761ad87a48ffbd9e99849622242a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1a16fd9326d7177a6edd2db391d5b6b85d60ca4d727a389e952d625f45273672.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1a16fd9326d7177a6edd2db391d5b6b85d60ca4d727a389e952d625f45273672.docx",
+      "file_id": "99ee761ad87a48ffbd9e99849622242a",
+      "file_name": "ALS+PWS+AMO-26-7630_HDCSO+Revised+15APR26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67858,
+      "sha256": "1a16fd9326d7177a6edd2db391d5b6b85d60ca4d727a389e952d625f45273672"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ba5ea83d934245d9862576903ce6127e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/60c13c4dc8453defd636e8dea286e43ebae7f280d20c0eb90dbe9544b4f364b8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/60c13c4dc8453defd636e8dea286e43ebae7f280d20c0eb90dbe9544b4f364b8.docx",
+      "file_id": "ba5ea83d934245d9862576903ce6127e",
+      "file_name": "Sources+Sought+Notice+ALS+Instruction.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 66848,
+      "sha256": "60c13c4dc8453defd636e8dea286e43ebae7f280d20c0eb90dbe9544b4f364b8"
+    }
+  ],
+  "_mirror_hash": "1a815e35eb7d65c20b80f7bdd6c8b2a66622024e324bccb4aed7d6f737f46f1b",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.302093+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-1325aa9067684e208b3e51b154401ae0",
+  "title": "Advanced Communications Experiment – Cross-border Autonomous Vehicle Session Persistence Experiment and Research",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1325aa9067684e208b3e51b154401ae0",
+  "opportunity_url": "https://sam.gov/opp/1325aa9067684e208b3e51b154401ae0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1325aa9067684e208b3e51b154401ae0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1325aa9067684e208b3e51b154401ae0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70RSAT26RFI000017",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.OFFICE OF PROCUREMENT OPERATIONS.SCI  TECH ACQ DIV",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1325aa9067684e208b3e51b154401ae0",
+  "detail_text": "The U.S. Department of Homeland Security (DHS) Science and Technology Directorate’s (S&T), in collaboration with Defence Research and Development Canada, Centre for Security Science (DRDC CSS), is hosting the 2026 Advanced Communications Experiment Cross-border Autonomous Vehicle Session Persistence Experiment and Research (ACE-CASPER). This multi-day experiment will take place along the U.S.-Canada border and will simulate a national emergency response scenario, evaluating how autonomous vehicles (AV), unmanned aerial systems (UAS), and 5G-enabled technologies can support persistent cross-border communications, enhance situational awareness, and improve coordination between U.S. and Canadian response teams. During the experiment, UAS and AV will move across both sides of the border streaming live video to a bi-national command and control center (C2), deploy sensor-based payloads to assess the situation, relay that data back to C2, and use that data to inform decision making and response. The experiment will demonstrate: • Secure, resilient 5G session persistence, with connectivity across U.S. and Canadian border networks; • Seamless command and control (C2) handoff, and real-time data interoperability; • Operational readiness validation for DHS components and DRDC with State, Provincial, and Local players in cross-border coordination; and • Bi-national response coordination using enhanced, real-time situational awareness tools. Vehicle autonomy level is secondary to the experiment’s primary objective of demonstrating resilient, persistent 5G communications across U.S. and Canadian networks. Objective The ACE-CASPER Experiment aims to evaluate the operational readiness and technological capabilities of 5G Session Persistence and 5G connectivity with UAS and AV systems in a cross-border emergency scenario. Vendors are expected to demonstrate solutions that ensure secure, resilient 5G connectivity, real-time situational awareness, and seamless interoperability between U.S. and Canadian networks. The experiment does not require autonomous decision-making or AI-driven navigation; the primary focus is validating reliable 5G connectivity, session persistence, and command-and-control performance. Please see the details in the attached ACE-CASPER Experiment 2026 for UAS and AV operational capabilities, participation requirements, and submission form. 4/27 Update: Revised RFI documents with corrected typographical error.",
+  "detail_text_length": 2456,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16501ae64684497ea3bfc48eab90adab/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7866a440356491d93fa5cdd683309d3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cd0cf844f5c04bb9bfd1945c078f38a4/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/16501ae64684497ea3bfc48eab90adab/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ff4a80f8849bdc09bc30fac97c0b7793aff69a5499a8c2ecf1683f4b13955b45.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ff4a80f8849bdc09bc30fac97c0b7793aff69a5499a8c2ecf1683f4b13955b45.pdf",
+      "file_id": "16501ae64684497ea3bfc48eab90adab",
+      "file_name": "ACE-CASPER+Experiment+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 442127,
+      "sha256": "ff4a80f8849bdc09bc30fac97c0b7793aff69a5499a8c2ecf1683f4b13955b45"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7866a440356491d93fa5cdd683309d3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fb3c6addd44c891653f65fe15587355be980675891dd50c2bcd3e5c974371e3f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fb3c6addd44c891653f65fe15587355be980675891dd50c2bcd3e5c974371e3f.docx",
+      "file_id": "b7866a440356491d93fa5cdd683309d3",
+      "file_name": "Attachment+1+ACE-CASPER+Submission+Form.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1013175,
+      "sha256": "fb3c6addd44c891653f65fe15587355be980675891dd50c2bcd3e5c974371e3f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cd0cf844f5c04bb9bfd1945c078f38a4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7f24a2ea72619d383fc248f29c162fd1a92a0d4539607f44703c4c41f40976e7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7f24a2ea72619d383fc248f29c162fd1a92a0d4539607f44703c4c41f40976e7.pdf",
+      "file_id": "cd0cf844f5c04bb9bfd1945c078f38a4",
+      "file_name": "RFI+70RSAT26RFI000017+ACE+Experiment.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 158530,
+      "sha256": "7f24a2ea72619d383fc248f29c162fd1a92a0d4539607f44703c4c41f40976e7"
+    }
+  ],
+  "_mirror_hash": "492a12dc9c1ca737d34b31c01b2b1af748e2e37768ddd6d8bcf03331ef0bdecd",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.321091+00:00"
+}

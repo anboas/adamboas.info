@@ -1,0 +1,45 @@
+{
+  "id": "sam-f7d5c908d38d4eb891d34a0cb0ba5532",
+  "title": "N0010426QQB45",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f7d5c908d38d4eb891d34a0cb0ba5532",
+  "opportunity_url": "https://sam.gov/opp/f7d5c908d38d4eb891d34a0cb0ba5532/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f7d5c908d38d4eb891d34a0cb0ba5532/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f7d5c908d38d4eb891d34a0cb0ba5532",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QQB45",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f7d5c908d38d4eb891d34a0cb0ba5532",
+  "detail_text": "See attachment for solicitation and any applicable amendment(s).",
+  "detail_text_length": 64,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1485122dd4264503b52456f1303478b8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1485122dd4264503b52456f1303478b8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79d6b27cde9b84655b074734b8c599c7fb83cf995c3767394bf0022f027d2b64.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79d6b27cde9b84655b074734b8c599c7fb83cf995c3767394bf0022f027d2b64.pdf",
+      "file_id": "1485122dd4264503b52456f1303478b8",
+      "file_name": "3.01_Solicitation_25267-0275.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 640906,
+      "sha256": "79d6b27cde9b84655b074734b8c599c7fb83cf995c3767394bf0022f027d2b64"
+    }
+  ],
+  "_mirror_hash": "414a04470abc16c9cef8d734ca062e03eaefd25dc3a4092e0c7499144746f066",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.118045+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "sam-3998c3e44d134f4e9db59d893bfe1260",
+  "title": "Request for Information Gulf Barge Recompete",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3998c3e44d134f4e9db59d893bfe1260",
+  "opportunity_url": "https://sam.gov/opp/3998c3e44d134f4e9db59d893bfe1260/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3998c3e44d134f4e9db59d893bfe1260/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3998c3e44d134f4e9db59d893bfe1260",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "TRANSCOM26W002",
+  "agency_path": "DEPT OF DEFENSE.US TRANSPORTATION COMMAND (USTRANSCOM).USTRANSCOM-AQ",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3998c3e44d134f4e9db59d893bfe1260",
+  "detail_text": "27 April UPDATE: Question and Answers doucment has been posted in the attachments. -------------------------------------------------------------------------------------- USTRANSCOM is seeking sources that possess the availability and capability to provide scheduled fuel barge transportation services in the Gulf Region, information about what solutions currently exist in the market, and is interested in learning more about what information industry may need to scope a logical roadmap to succeed. This announcement constitutes an RFI for informational and planning purposes only. THIS IS NOT A REQUEST FOR PROPOSAL (RFP), nor is it to be constructed as a commitment by the Government. No contract will be awarded as a result. Industry's response to the RFI-or lack thereof- will have no impact on the evaluation of responses to any subsequent RFP or Request for Quote (RFQ) released. The information requested will be used within USTRANSCOM as market research to facilitation decision making (e.g. determining acquisition strategy, small business concerns) and will not be disclosed outside the Government.",
+  "detail_text_length": 1109,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/408e08bbb77e4ec593a1fe1e68395c1a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9811b995ea39451b9bb2945d0e47980d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7bc06aae85845efaa924a1f62369df2/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/408e08bbb77e4ec593a1fe1e68395c1a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/10e1878be333550e55cfff566dfb0ea15a0f503848ba97fbe36fcca8e456d8d6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/10e1878be333550e55cfff566dfb0ea15a0f503848ba97fbe36fcca8e456d8d6.pdf",
+      "file_id": "408e08bbb77e4ec593a1fe1e68395c1a",
+      "file_name": "Request+for+Information+-RFI-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 219657,
+      "sha256": "10e1878be333550e55cfff566dfb0ea15a0f503848ba97fbe36fcca8e456d8d6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9811b995ea39451b9bb2945d0e47980d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3d0f1269358caf693029739cd0b7065ce86e1f86e592fe8205a90beb6b757dfe.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3d0f1269358caf693029739cd0b7065ce86e1f86e592fe8205a90beb6b757dfe.pdf",
+      "file_id": "9811b995ea39451b9bb2945d0e47980d",
+      "file_name": "2026.04.09_GB-Re-compete_+RFI+Worksheet+v2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 326430,
+      "sha256": "3d0f1269358caf693029739cd0b7065ce86e1f86e592fe8205a90beb6b757dfe"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b7bc06aae85845efaa924a1f62369df2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dee5fb029817ee9e3554699dec665c95cec8e735394776653200229a7b1dd467.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dee5fb029817ee9e3554699dec665c95cec8e735394776653200229a7b1dd467.pdf",
+      "file_id": "b7bc06aae85845efaa924a1f62369df2",
+      "file_name": "RFI+Questions_QA_4.27.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 181999,
+      "sha256": "dee5fb029817ee9e3554699dec665c95cec8e735394776653200229a7b1dd467"
+    }
+  ],
+  "_mirror_hash": "b00b184fdb880937377412845581dae6f5ac481dc759eb1d5bf957759f8fbacc",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.086672+00:00"
+}

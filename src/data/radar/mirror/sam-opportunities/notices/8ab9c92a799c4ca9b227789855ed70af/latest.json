@@ -1,0 +1,47 @@
+{
+  "id": "sam-8ab9c92a799c4ca9b227789855ed70af",
+  "title": "Lynx MOSA.ic (Modular Open Systems Approach) software license",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ab9c92a799c4ca9b227789855ed70af",
+  "opportunity_url": "https://sam.gov/opp/8ab9c92a799c4ca9b227789855ed70af/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8ab9c92a799c4ca9b227789855ed70af/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8ab9c92a799c4ca9b227789855ed70af",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N0017326SNTS08",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR NRL.NAVAL RESEARCH LABORATORY",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ab9c92a799c4ca9b227789855ed70af",
+  "detail_text": "This Notice of Intent is not a request for competitive proposals. This is not a solicitation or request for offers. No solicitation package is available and telephone requests will not be honored. Only one source is reasonably available to satisfy agency requirements. The U.S. Department of Navy, Naval Research Laboratory (NRL) Contracting Division intends to enter into a sole source firm fixed price contract with Lynx Software Technologies Inc., in accordance with FAR 13.106-1(b)(1) and 41 USC 1901, for a one-year Lynx MOSA.ic software license. The license is only available from Lynx, the Original Equipment Manufacturer, and is required to meet precise compatibility with previously developed code and security certification. (See redacted J&A attached.) This notice is being posted to meet the requirements of FAR Subpart 5.2. A solicitation will not be posted; however, any firm that believes it can meet this requirement may give written notification to the Contract Specialist within seven days of publication of this announcement. Supporting evidence must be in sufficient detail to demonstrate the ability to provide the required items. All responsible sources may submit a capability statement, proposal, or quotation, which shall be considered. However, a determination by the Government to compete the proposed procurement based on the responses to this notice is solely within the discretion of the Government.",
+  "detail_text_length": 1429,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33a89b7baf894f419d63ea6c3e5f9c31/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33a89b7baf894f419d63ea6c3e5f9c31/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/24f738e4c3ca816d263989cdfd90304e38b641d91efc568553dc383982c7ed17.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/24f738e4c3ca816d263989cdfd90304e38b641d91efc568553dc383982c7ed17.pdf",
+      "file_id": "33a89b7baf894f419d63ea6c3e5f9c31",
+      "file_name": "Lynx+JA+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 269845,
+      "sha256": "24f738e4c3ca816d263989cdfd90304e38b641d91efc568553dc383982c7ed17"
+    }
+  ],
+  "_mirror_hash": "ac402b0c336131dab0e173f61c8275b7c816203e2b23fc6593dca1798d510173",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.029494+00:00"
+}

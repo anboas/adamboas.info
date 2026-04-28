@@ -1,0 +1,45 @@
+{
+  "id": "sam-2a081b57b9044a5db6de9bf93064f73b",
+  "title": "NEW BUY/SPARES PROCUREMENT - SWITCH",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a081b57b9044a5db6de9bf93064f73b",
+  "opportunity_url": "https://sam.gov/opp/2a081b57b9044a5db6de9bf93064f73b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2a081b57b9044a5db6de9bf93064f73b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2a081b57b9044a5db6de9bf93064f73b",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QTB23",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2a081b57b9044a5db6de9bf93064f73b",
+  "detail_text": "SEE ATTACHED",
+  "detail_text_length": 12,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59f6ec25a2a04e70bb290ae6caf9e337/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/59f6ec25a2a04e70bb290ae6caf9e337/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ff86762a69f57beb605af3438496fc117527093bfa55c96645928f9f4b25dd6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ff86762a69f57beb605af3438496fc117527093bfa55c96645928f9f4b25dd6.pdf",
+      "file_id": "59f6ec25a2a04e70bb290ae6caf9e337",
+      "file_name": "3.01_RFQ_N0010426QTB23_26112-0133.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 605871,
+      "sha256": "0ff86762a69f57beb605af3438496fc117527093bfa55c96645928f9f4b25dd6"
+    }
+  ],
+  "_mirror_hash": "c91309e10cba5d747a6c51e50413b280ff7165894a8b6de255926eb075191d43",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.076341+00:00"
+}

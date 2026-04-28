@@ -1,0 +1,46 @@
+{
+  "id": "sam-66b8321b75e64023b067acabaebe22b6",
+  "title": "Generator Maintenance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=66b8321b75e64023b067acabaebe22b6",
+  "opportunity_url": "https://sam.gov/opp/66b8321b75e64023b067acabaebe22b6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/66b8321b75e64023b067acabaebe22b6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "66b8321b75e64023b067acabaebe22b6",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "1166254",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.ANIMAL AND PLANT HEALTH INSPECTION SERVICE.MRPBS AAMD CONTRACTING",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=66b8321b75e64023b067acabaebe22b6",
+  "detail_text": "This is a presolicitation notice issued in accordance with FAR Overhaul subpart 5.101, Presolicitation. (1) Point of contact: Margaux Nenichka, Contracting Officer USDA Animal and Plant Health Inspection Service (APHIS) Email: Margaux.g.Nenichka@usda.gov Telephonic inquiries will not be honored. (2) Set-asides Total small business set-aside (3) Codes for services or supplies: PSC- H930 Other QC/Test/Inspect- Mechanical Power Transmission Equipment; NAICS- 811310 Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance (4) Description . (i) See the attached Statement of Work which is provided to allow prospective quoters to make an informed business judgement about requesting a copy of the solicitation directly from the Contracting Officer. Requests must be submitted no later than May 12th at 12:00 PM. Quotes will be solicited directly from suppliers in accordance with FAR Overhaul subpart 12.201-1(c)(2). (ii). This acquisition will be conducted using simplified procedures for commercial products and commercial services in accordance with Revolutionary FAR Overhaul (RFO) Part 12. Award will be made to the responsible vendor that best satisfies the Evaluation Criteria of this presolicitation. (iii) All responsible sources may submit a quotation, which will be considered by the agency.",
+  "detail_text_length": 1354,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0d942fb38c749ec8b67b1c3776ad9a9/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e0d942fb38c749ec8b67b1c3776ad9a9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03fa29cf37cca2d96318170faf14b0f4e3c3d6db5fcaa6d791fdb8035542605a.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03fa29cf37cca2d96318170faf14b0f4e3c3d6db5fcaa6d791fdb8035542605a.doc",
+      "file_id": "e0d942fb38c749ec8b67b1c3776ad9a9",
+      "file_name": "A1_SOW+Generator+2026.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 36864,
+      "sha256": "03fa29cf37cca2d96318170faf14b0f4e3c3d6db5fcaa6d791fdb8035542605a"
+    }
+  ],
+  "_mirror_hash": "5959bf9097f1978bc72bca5389a09a1fd191ba7883065d32c5f20ce2cc2c27c9",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.372403+00:00"
+}

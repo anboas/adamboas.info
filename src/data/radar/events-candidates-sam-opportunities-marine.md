@@ -1,9 +1,9 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-27T13:49:20.737615+00:00
+Generated: 2026-04-28T13:48:20.455060+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/27/2026
+Posted range: 01/01/2026 -> 04/28/2026
 
 ## Counts
 - Total candidates: 21

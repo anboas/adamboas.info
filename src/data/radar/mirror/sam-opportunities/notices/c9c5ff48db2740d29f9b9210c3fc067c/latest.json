@@ -1,0 +1,46 @@
+{
+  "id": "sam-c9c5ff48db2740d29f9b9210c3fc067c",
+  "title": "D--StarWind HCA Support Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c9c5ff48db2740d29f9b9210c3fc067c",
+  "opportunity_url": "https://sam.gov/opp/c9c5ff48db2740d29f9b9210c3fc067c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c9c5ff48db2740d29f9b9210c3fc067c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c9c5ff48db2740d29f9b9210c3fc067c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140G0326Q0103",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFFICE OF ACQUISITON  GRANTS",
+  "posted_date": "2026-04-27",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c9c5ff48db2740d29f9b9210c3fc067c",
+  "detail_text": "Third-party hardware and software maintenance support renewal of the existing StarWind HyperConverged Appliance (HCA) for a two-year period to maintain operational continuity through end-of-life constraints. Reference attachment for additional information.",
+  "detail_text_length": 256,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d856574f78484d709bb73c18be41c027/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d856574f78484d709bb73c18be41c027/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d78829a2176eaed76b959bd2f98ed4d59465d24471ef63320ff46cb1f7e5e296.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d78829a2176eaed76b959bd2f98ed4d59465d24471ef63320ff46cb1f7e5e296.pdf",
+      "file_id": "d856574f78484d709bb73c18be41c027",
+      "file_name": "Sources_Sought_Notice_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 119613,
+      "sha256": "d78829a2176eaed76b959bd2f98ed4d59465d24471ef63320ff46cb1f7e5e296"
+    }
+  ],
+  "_mirror_hash": "5d9c22a67f9d778de1cf36d136725470ed603c0db8d699350b2f03efb9fa368b",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.250971+00:00"
+}

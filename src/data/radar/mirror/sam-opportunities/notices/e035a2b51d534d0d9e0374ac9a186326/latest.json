@@ -1,0 +1,46 @@
+{
+  "id": "sam-e035a2b51d534d0d9e0374ac9a186326",
+  "title": "Food Service Equipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e035a2b51d534d0d9e0374ac9a186326",
+  "opportunity_url": "https://sam.gov/opp/e035a2b51d534d0d9e0374ac9a186326/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e035a2b51d534d0d9e0374ac9a186326/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e035a2b51d534d0d9e0374ac9a186326",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE3SE26Q0251",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.TROOP SUPPORT SUBSISTENCE.DLA TROOP SUPPORT",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e035a2b51d534d0d9e0374ac9a186326",
+  "detail_text": "This is a Sources Sought notice for Food Service Equipment needed for Camp Humphreys, South Korea. Please respond to the DLA POC if you have the capability of providing the equipment and shipping FOB Origin. Installation services are required. Response to this notice will determine how the requirement is solicited. See attachment for equipment required.",
+  "detail_text_length": 355,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c13bb098c0047b2836b98052323875e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c13bb098c0047b2836b98052323875e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bae80763b48a0991ba74c15edf27dce28bedc7cacc0799df71103911bf387a0d.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bae80763b48a0991ba74c15edf27dce28bedc7cacc0799df71103911bf387a0d.xlsx",
+      "file_id": "9c13bb098c0047b2836b98052323875e",
+      "file_name": "Equipment+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 9421,
+      "sha256": "bae80763b48a0991ba74c15edf27dce28bedc7cacc0799df71103911bf387a0d"
+    }
+  ],
+  "_mirror_hash": "eb9f493fd66a33baf3a3c5d1dc0392220746a0052b333edc56029aa720181973",
+  "_mirror_run_id": "20260428T134219Z",
+  "_mirror_recorded_at": "2026-04-28T13:47:55.286153+00:00"
+}
