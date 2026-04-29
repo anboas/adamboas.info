@@ -57,13 +57,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.11',
+		date: '2026-04-29',
+		title: 'Navigation architecture split into Profile + Capability hubs',
+		summary: 'Reorganized navigation into two clear discovery hubs so speaking and other profile surfaces are no longer forced into experience/education buckets.',
+		impact: 'Desktop and mobile navigation now present two top-level groups: `Profile` (Writing, Speaking, Experience, Education) and `Capability` (Capabilities, Events, Opportunities). Added a dedicated `/speaking/` surface.',
+		current: true,
+		tags: ['navigation', 'information-architecture', 'profile', 'speaking', 'mobile'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added new page route `src/pages/speaking/index.astro` as a dedicated home for speaking engagements.',
+					'Added `speaking` active-state support to `StickyBrowseBar` props and links.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated desktop header navigation in `Header.astro` to grouped hubs: `Profile` and `Capability`.',
+					'Updated mobile sticky navigation in `StickyBrowseBar.astro` to the same two-hub structure with grouped horizontal rails.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.10',
 		date: '2026-04-24',
 		title: 'Navigation semantics + responsive table/focus refinement pass',
 		summary: 'Continued report closure with stronger mobile nav semantics and a more keyboard-friendly, responsive opportunities table container.',
 		impact: 'Mobile sticky browse now exposes explicit navigation semantics (`nav` landmark + `aria-current`), and opportunity-table interaction is cleaner on tablets/phones with focused horizontal scroll regions, reduced medium-screen column density, and explicit table guidance for assistive tech.',
-		current: true,
 		tags: ['a11y', 'responsive', 'navigation', 'opportunities', 'mobile'],
 		groups: [
 			{

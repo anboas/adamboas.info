@@ -12,11 +12,20 @@ import { withBase } from '../utils/withBase';
 			</a>
 		</div>
 
-		<div class="hidden items-center gap-1 md:flex">
-			<HeaderLink href={withBase('/writing/')} aria-keyshortcuts="g w">Writing</HeaderLink>
-			<HeaderLink href={withBase('/capabilities/')} aria-keyshortcuts="g c">Capabilities</HeaderLink>
-			<HeaderLink href={withBase('/events/')} aria-keyshortcuts="g e">Events</HeaderLink>
-			<HeaderLink href={withBase('/opportunities/')} aria-keyshortcuts="g o">Opportunities</HeaderLink>
+		<div class="hidden items-center gap-4 md:flex">
+			<div class="flex items-center gap-1.5">
+				<span class="text-[10px] uppercase tracking-[0.14em] text-slate-500">Profile</span>
+				<HeaderLink href={withBase('/writing/')} aria-keyshortcuts="g w">Writing</HeaderLink>
+				<HeaderLink href={withBase('/speaking/')} aria-keyshortcuts="g s">Speaking</HeaderLink>
+				<HeaderLink href={withBase('/profile/')} aria-keyshortcuts="g p">Profile</HeaderLink>
+			</div>
+			<span class="h-5 w-px bg-slate-800" aria-hidden="true"></span>
+			<div class="flex items-center gap-1.5">
+				<span class="text-[10px] uppercase tracking-[0.14em] text-slate-500">Capability</span>
+				<HeaderLink href={withBase('/capabilities/')} aria-keyshortcuts="g c">Capabilities</HeaderLink>
+				<HeaderLink href={withBase('/events/')} aria-keyshortcuts="g e">Events</HeaderLink>
+				<HeaderLink href={withBase('/opportunities/')} aria-keyshortcuts="g o">Opportunities</HeaderLink>
+			</div>
 		</div>
 
 		<!-- links moved to footer -->
