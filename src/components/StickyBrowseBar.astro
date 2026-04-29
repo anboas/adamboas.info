@@ -1,7 +1,7 @@
 ---
 import { withBase } from '../utils/withBase';
 
-const { active = 'writing' } = Astro.props as { active?: 'home' | 'writing' | 'speaking' | 'profile' | 'events' | 'opportunities' | 'capabilities' | 'experience' | 'education' };
+const { active = 'writing' } = Astro.props as { active?: 'home' | 'writing' | 'profile' | 'speaking' | 'events' | 'opportunities' | 'capabilities' | 'experience' | 'education' };
 
 function cls(key) {
 	return key === active
@@ -21,7 +21,6 @@ function ariaCurrent(key) {
 				<p class="mb-1 text-[10px] uppercase tracking-[0.14em] text-slate-500">Profile</p>
 				<div class="flex flex-nowrap gap-1.5 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 					<a class={cls('writing')} href={withBase('/writing/')} aria-current={ariaCurrent('writing')}>Writing</a>
-					<a class={cls('speaking')} href={withBase('/speaking/')} aria-current={ariaCurrent('speaking')}>Speaking</a>
 					<a class={cls('profile')} href={withBase('/profile/')} aria-current={ariaCurrent('profile')}>Profile</a>
 				</div>
 			</div>
