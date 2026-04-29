@@ -8,6 +8,7 @@ const pages = [
   '/writing/',
   '/writing/agentic-force-creation/',
   '/speaking/',
+  '/profile/',
   '/capabilities/',
   '/events/',
   '/opportunities/',

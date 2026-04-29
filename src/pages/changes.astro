@@ -63,7 +63,7 @@ const releases: Release[] = [
 		date: '2026-04-29',
 		title: 'Navigation architecture split into Profile + Capability hubs',
 		summary: 'Reorganized navigation into two clear discovery hubs so speaking and other profile surfaces are no longer forced into experience/education buckets.',
-		impact: 'Desktop and mobile navigation now present two top-level groups: `Profile` (Writing, Speaking, Experience, Education) and `Capability` (Capabilities, Events, Opportunities). Added a dedicated `/speaking/` surface.',
+		impact: 'Desktop and mobile navigation now present two top-level groups: `Profile` (Writing, Speaking, Profile) and `Capability` (Capabilities, Events, Opportunities). Experience and education are collapsed into a single new `/profile/` page, while speaking has its own dedicated `/speaking/` route.',
 		current: true,
 		tags: ['navigation', 'information-architecture', 'profile', 'speaking', 'mobile'],
 		groups: [
@@ -71,7 +71,8 @@ const releases: Release[] = [
 				kind: 'Added',
 				items: [
 					'Added new page route `src/pages/speaking/index.astro` as a dedicated home for speaking engagements.',
-					'Added `speaking` active-state support to `StickyBrowseBar` props and links.',
+					'Added new consolidated route `src/pages/profile/index.astro` that combines experience and education into one page.',
+					'Added `speaking` and `profile` active-state support to `StickyBrowseBar` props and links.',
 				],
 			},
 			{
