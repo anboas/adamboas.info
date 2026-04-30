@@ -16,22 +16,13 @@ function ariaCurrent(key) {
 
 <div class="sticky-browse md:hidden">
 	<nav class="mx-auto w-full max-w-6xl px-4 py-1.5" aria-label="Primary mobile navigation">
-		<div class="space-y-1.5">
-			<div>
-				<p class="mb-1 text-[10px] uppercase tracking-[0.14em] text-slate-500">Profile</p>
-				<div class="flex flex-nowrap gap-1.5 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-					<a class={cls('writing')} href={withBase('/writing/')} aria-current={ariaCurrent('writing')}>Writing</a>
-					<a class={cls('profile')} href={withBase('/profile/')} aria-current={ariaCurrent('profile')}>Profile</a>
-				</div>
-			</div>
-			<div>
-				<p class="mb-1 text-[10px] uppercase tracking-[0.14em] text-slate-500">Capability</p>
-				<div class="flex flex-nowrap gap-1.5 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-					<a class={cls('capabilities')} href={withBase('/capabilities/')} aria-current={ariaCurrent('capabilities')}>Capabilities</a>
-					<a class={cls('events')} href={withBase('/events/')} aria-current={ariaCurrent('events')}>Events</a>
-					<a class={cls('opportunities')} href={withBase('/opportunities/')} aria-current={ariaCurrent('opportunities')}>Opportunities</a>
-				</div>
-			</div>
+		<div class="flex flex-nowrap items-center gap-1.5 overflow-x-auto pb-0.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+			<a class={cls('writing')} href={withBase('/writing/')} aria-current={ariaCurrent('writing')}>Writing</a>
+			<a class={cls('profile')} href={withBase('/profile/')} aria-current={ariaCurrent('profile')}>Profile</a>
+			<span class="mx-0.5 h-5 w-px bg-slate-800" aria-hidden="true"></span>
+			<a class={cls('capabilities')} href={withBase('/capabilities/')} aria-current={ariaCurrent('capabilities')}>Capabilities</a>
+			<a class={cls('events')} href={withBase('/events/')} aria-current={ariaCurrent('events')}>Events</a>
+			<a class={cls('opportunities')} href={withBase('/opportunities/')} aria-current={ariaCurrent('opportunities')}>Opportunities</a>
 		</div>
 	</nav>
 </div>

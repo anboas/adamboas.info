@@ -59,13 +59,38 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.13',
+		date: '2026-04-29',
+		title: 'Nav label cleanup: remove hub captions from header and mobile rail',
+		summary: 'Dropped the explicit `Profile` and `Capability` hub labels in favor of a cleaner direct-link navigation model.',
+		impact: 'Top navigation now reads as direct links in priority order: `Writing`, `Profile` | `Capabilities`, `Events`, `Opportunities` across desktop and mobile.',
+		current: true,
+		tags: ['navigation', 'ux', 'header', 'mobile'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `Profile`/`Capability` text labels from desktop header nav in `src/components/Header.astro`.',
+					'Flattened mobile sticky nav into one horizontal rail with a visual separator after `Profile` in `src/components/StickyBrowseBar.astro`.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.12',
 		date: '2026-04-29',
 		title: 'Header simplification: Speaking folded into unified Profile surface',
 		summary: 'Finalized top-nav strategy by removing a standalone speaking slot and consolidating speaking, experience, and education under one Profile destination.',
 		impact: 'Header now follows a tighter two-hub model (`Profile`: Writing + Profile, `Capability`: Capabilities + Events + Opportunities). The Profile page now includes a full Speaking section, while `/speaking/` remains as a compatibility pointer to `Profile → Speaking`.',
-		current: true,
 		tags: ['navigation', 'profile', 'speaking', 'information-architecture'],
 		groups: [
 			{
