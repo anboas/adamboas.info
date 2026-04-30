@@ -1,18 +1,19 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import SpeakingEventsSection from '../../components/SpeakingEventsSection.astro';
 ---
 
 <SiteLayout title="Speaking | Adam Boas" description="Speaking engagements organized by event with topic tags.">
 	<StickyBrowseBar active="profile" />
-	<section class="card control-shell p-5">
-		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-			<h1 class="section-title">Speaking</h1>
-			<span class="text-xs uppercase tracking-wide text-slate-400">Event-indexed engagements</span>
-		</div>
-		<p class="mt-2 text-sm text-slate-300">Talks and panels are organized as event entries with reusable topic tags and sponsorship metadata.</p>
-	</section>
+	<SurfaceHeader
+		eyebrow="Public engagements"
+		title="Speaking"
+		description="Talks and panels are organized as event entries with reusable topic tags and sponsorship metadata."
+	>
+		<span slot="actions" class="text-xs uppercase tracking-wide text-slate-400">Event-indexed engagements</span>
+	</SurfaceHeader>
 
 	<SpeakingEventsSection showHeader={false} />
 </SiteLayout>

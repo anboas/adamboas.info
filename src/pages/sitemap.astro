@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../layouts/SiteLayout.astro';
+import SurfaceHeader from '../components/SurfaceHeader.astro';
 import { withBase } from '../utils/withBase';
 import { getPdfMeta, type PdfMeta } from '../utils/pdfMeta';
 import { RESUME_CLEARANCE } from '../data/resume';
@@ -67,11 +68,12 @@ const resumePdfMetaText = [formatPdfMeta(await getPdfMeta(resumePdfPath)), `Clea
 	noindex={true}
 >
 	<section class="mt-2 space-y-4">
-		<div class="card control-shell p-4 sm:p-5 md:p-6">
-			<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">Sitemap</h1>
-			<p class="mt-2 text-sm text-slate-300">Human-readable map of key pages, plus direct PDF links under published writing.</p>
-
-			<div class="mt-4 grid gap-4 md:grid-cols-2">
+		<SurfaceHeader
+			eyebrow="Index"
+			title="Sitemap"
+			description="Human-readable map of key pages, plus direct PDF links under published writing."
+		>
+			<div class="mt-2 grid gap-4 md:grid-cols-2">
 				<div class="border border-slate-800 bg-slate-950/40 p-4">
 					<h2 class="section-title">Core</h2>
 					<ul class="mt-3 space-y-1.5 text-sm text-slate-300">
@@ -108,7 +110,7 @@ const resumePdfMetaText = [formatPdfMeta(await getPdfMeta(resumePdfPath)), `Clea
 					</ul>
 				</div>
 			</div>
-		</div>
+		</SurfaceHeader>
 
 		<div class="card control-shell p-4 sm:p-5 md:p-6">
 			<div class="flex flex-wrap items-end justify-between gap-3">

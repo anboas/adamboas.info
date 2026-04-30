@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { withBase } from '../../utils/withBase';
 import sitemapAnalytics from '../../generated/plausible-sitemap-analytics.json';
 
@@ -147,20 +148,17 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 <SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots." noindex={true}>
 	<StickyBrowseBar active="home" />
 
-	<section class="card control-shell p-5">
-		<div class="flex flex-wrap items-start justify-between gap-3">
-			<div>
-				<h1 class="section-title">Site Analytics Dashboard</h1>
-				<p class="mt-2 text-sm text-slate-300">Plausible traffic mapped to sitemap routes for coverage and routing intelligence.</p>
-			</div>
-			<div class="flex flex-wrap gap-2">
-				<a class="ui-link-btn" href={withBase('/status/')}>Back to status</a>
-				<a class="ui-link-btn" href={meta.sitemapIndexUrl || 'https://www.adamboas.com/sitemap-index.xml'} target="_blank" rel="noreferrer">Open sitemap</a>
-				<a class="ui-link-btn" href="https://plausible.io/" target="_blank" rel="noreferrer">Open Plausible</a>
-			</div>
+	<SurfaceHeader
+		eyebrow="Traffic intelligence"
+		title="Site Analytics Dashboard"
+		description="Plausible traffic mapped to sitemap routes for coverage and routing intelligence."
+	>
+		<div slot="actions" class="flex flex-wrap gap-2">
+			<a class="ui-link-btn" href={withBase('/status/')}>Back to status</a>
+			<a class="ui-link-btn" href={meta.sitemapIndexUrl || 'https://www.adamboas.com/sitemap-index.xml'} target="_blank" rel="noreferrer">Open sitemap</a>
+			<a class="ui-link-btn" href="https://plausible.io/" target="_blank" rel="noreferrer">Open Plausible</a>
 		</div>
-
-		<div class="status-meta mt-3">
+		<div class="status-meta mt-1">
 			<span class="ui-pill wrap-anywhere">Site: {meta.siteId || '—'}</span>
 			<span class="ui-pill">Window: {meta.dateRange || '30d'}</span>
 			<span class="ui-pill wrap-anywhere">Generated: {fmtDate(meta.generatedAt)}</span>
@@ -168,7 +166,7 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 		</div>
 		<p class="mt-2 text-xs text-slate-400">{trends.note || meta.note || '—'}</p>
 		{meta.sitemapLoadError ? <p class="mt-2 text-xs text-amber-300">Sitemap load warning: {meta.sitemapLoadError}</p> : null}
-	</section>
+	</SurfaceHeader>
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-3">
 		<article class="card p-4 status-card">

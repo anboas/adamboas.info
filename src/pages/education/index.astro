@@ -1,16 +1,18 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { education } from '../../data/resume';
 import { withBase } from '../../utils/withBase';
 ---
 
 <SiteLayout title="Education | Adam Boas" description="Education and credentials." noindex={true}>
 	<StickyBrowseBar active="education" />
-	<section class="card control-shell p-5">
-		<h1 class="section-title">Education</h1>
-		<p class="mt-2 text-sm text-slate-300">Credentials and formal education.</p>
-	</section>
+	<SurfaceHeader
+		eyebrow="Background"
+		title="Education"
+		description="Credentials and formal education."
+	/>
 
 	<section class="card mt-4 bg-slate-950/40 p-6 md:mt-5">
 		<ul class="space-y-3 text-sm text-slate-300">

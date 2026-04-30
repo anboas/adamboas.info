@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../components/SurfaceHeader.astro';
 import { withBase } from '../utils/withBase';
 import { CONTACT_PHONE } from '../data/resume';
 ---
@@ -12,21 +13,17 @@ import { CONTACT_PHONE } from '../data/resume';
 >
 	<StickyBrowseBar active="home" />
 
-	<section class="card control-shell p-5">
-		<div class="flex flex-wrap items-start justify-between gap-3">
-			<div class="max-w-3xl">
-				<h1 class="section-title">Start a project</h1>
-				<p class="mt-2 text-sm text-slate-300">
-					Tell me what you need, what timeline you are working against, and where execution is blocked. I read every request.
-				</p>
-			</div>
-			<div class="flex flex-wrap items-center gap-2">
-				<a class="ui-link-btn" data-track="Contact: Email Click" href="mailto:anboas@gmail.com">Email direct</a>
-				<a class="ui-link-btn" data-track="Contact: Phone Click" href="tel:+13019042011">Call {CONTACT_PHONE}</a>
-				<a class="ui-link-btn ui-link-btn-muted" href={withBase('/writing/')}>Read work</a>
-			</div>
+	<SurfaceHeader
+		eyebrow="Engage"
+		title="Start a project"
+		description="Tell me what you need, what timeline you are working against, and where execution is blocked. I read every request."
+	>
+		<div slot="actions" class="flex flex-wrap items-center gap-2">
+			<a class="ui-link-btn" data-track="Contact: Email Click" href="mailto:anboas@gmail.com">Email direct</a>
+			<a class="ui-link-btn" data-track="Contact: Phone Click" href="tel:+13019042011">Call {CONTACT_PHONE}</a>
+			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/writing/')}>Read work</a>
 		</div>
-	</section>
+	</SurfaceHeader>
 
 	<section class="card control-shell mt-4 p-5">
 		<form data-contact-form class="contact-form" novalidate>

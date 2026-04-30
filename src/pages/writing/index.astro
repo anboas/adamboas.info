@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { withBase } from '../../utils/withBase';
 import FilterShell from '../../components/ui/FilterShell.astro';
 import SearchControl from '../../components/ui/SearchControl.astro';
@@ -53,15 +54,13 @@ const fmtDate = (date: Date | undefined) =>
 <SiteLayout title="Writing | Adam Boas" description="Technical notes, memos, and papers on autonomy, governance, and software modernization." image="/og/writing.png">
 	<StickyBrowseBar active="writing" />
 	<div data-writing-index class="writing-tags-hidden">
-		<section class="card control-shell p-5">
-			<div class="flex flex-wrap items-start justify-between gap-3">
-				<div>
-					<h1 class="section-title">Writing</h1>
-					<p class="mt-2 text-sm text-slate-300">Long-form notes, papers, and memos on autonomy, assurance, software modernization, and defense technology.</p>
-				</div>
-				<a class="ui-link-btn" href={withBase('/writing/tags/')}>Browse tags</a>
-			</div>
-		</section>
+		<SurfaceHeader
+			eyebrow="Published work"
+			title="Writing"
+			description="Long-form notes, papers, and memos on autonomy, assurance, software modernization, and defense technology."
+		>
+			<a slot="actions" class="ui-link-btn" href={withBase('/writing/tags/')}>Browse tags</a>
+		</SurfaceHeader>
 
 		<FilterShell class="writing-index-controls mt-4 p-2.5 md:mt-5 md:p-3">
 			<div class="control-shell-row flex flex-wrap items-center gap-2 md:gap-3">

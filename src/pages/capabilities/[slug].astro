@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { capabilityTopics, capabilityBySlug } from '../../data/capabilities';
 import { radarEventsSeed } from '../../data/radar/events';
@@ -183,24 +184,21 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 		})}
 	/>
 
-	<section class="card control-shell p-5">
-		<div class="flex flex-wrap items-start justify-between gap-3">
-			<div class="max-w-3xl">
-				<p class="cap-kicker">Capability topic</p>
-				<h1 class="section-title mt-1 wrap-anywhere">{capability.title}</h1>
-				<p class="mt-2 text-sm text-slate-300 wrap-anywhere">{capability.description}</p>
-			</div>
-			<div class="flex flex-wrap gap-2">
-				<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
-				<a class="ui-link-btn ui-link-btn-muted" href={withBase('/capabilities/')}>All topics</a>
-			</div>
+	<SurfaceHeader
+		eyebrow="Capability topic"
+		title={capability.title}
+		description={capability.description}
+	>
+		<div slot="actions" class="flex flex-wrap gap-2">
+			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
+			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/capabilities/')}>All topics</a>
 		</div>
-		<div class="mt-3 flex flex-wrap gap-2">
+		<div class="flex flex-wrap gap-2">
 			<span class="ui-pill">Writing: {writingItems.length}</span>
 			<span class="ui-pill">Upcoming events: {eventItems.length}</span>
 			<span class="ui-pill">Opportunities: {opportunityItems.length}</span>
 		</div>
-	</section>
+	</SurfaceHeader>
 
 	<section class="mt-4 grid gap-4 xl:grid-cols-3">
 		<article class="card p-4 capability-card xl:col-span-1">

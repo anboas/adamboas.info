@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
@@ -727,18 +728,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 <SiteLayout title="Opportunity Intelligence | Adam Boas" description="Opportunity intelligence mirror from cached SAM opportunity pulls and event-enrichment runs." noindex={true}>
 	<StickyBrowseBar active="opportunities" />
 
-	<section class="card control-shell p-5">
-		<div class="opp-header-row">
-			<div>
-				<h1 class="section-title">Opportunity Intelligence</h1>
-				<p class="mt-3 text-sm text-slate-300">A live mirror of SAM opportunity intelligence, including broad SAM feed ingestion plus event-linked enrichment.</p>
-			</div>
-			<div class="opp-header-actions">
-				<a class="ui-link-btn" href={withBase('/events/')}>Open Events</a>
-				<a class="ui-link-btn" href={withBase('/status/')}>Open Status</a>
-				<a class="ui-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
-				<a class="ui-link-btn ui-link-btn-muted" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open Drift Report</a>
-			</div>
+	<SurfaceHeader
+		eyebrow="Acquisition radar"
+		title="Opportunity Intelligence"
+		description="A live mirror of SAM opportunity intelligence, including broad SAM feed ingestion plus event-linked enrichment."
+	>
+		<div slot="actions" class="opp-header-actions">
+			<a class="ui-link-btn" href={withBase('/events/')}>Open Events</a>
+			<a class="ui-link-btn" href={withBase('/status/')}>Open Status</a>
+			<a class="ui-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
+			<a class="ui-link-btn ui-link-btn-muted" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open Drift Report</a>
 		</div>
 		<div class="opp-status-row mt-3" aria-label="Pipeline freshness">
 			{lastCollectedAt ? <span class="ui-pill text-[11px]">SAM collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
@@ -800,7 +799,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				</div>
 			</section>
 		</div>
-	</section>
+	</SurfaceHeader>
 
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-controls-shell">

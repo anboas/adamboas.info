@@ -1,0 +1,98 @@
+---
+interface Props {
+	eyebrow?: string;
+	title: string;
+	description?: string;
+	class?: string;
+}
+
+const { eyebrow, title, description, class: className = '' } = Astro.props;
+const hasActions = Astro.slots.has('actions');
+const hasExtra = Astro.slots.has('default');
+---
+
+<section class={`surface-header ${className}`.trim()}>
+	<div class="surface-header-row">
+		<div class="surface-header-main">
+			{eyebrow ? <p class="surface-header-eyebrow">{eyebrow}</p> : null}
+			<h1 class="surface-header-title">{title}</h1>
+			{description ? <p class="surface-header-description">{description}</p> : null}
+		</div>
+		{hasActions ? (
+			<div class="surface-header-actions">
+				<slot name="actions" />
+			</div>
+		) : null}
+	</div>
+	{hasExtra ? <div class="surface-header-extra"><slot /></div> : null}
+</section>
+
+<style>
+	.surface-header {
+		padding-top: 0.25rem;
+		padding-bottom: 0.75rem;
+	}
+	.surface-header-row {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		padding-bottom: 0.75rem;
+		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
+	}
+	.surface-header-main {
+		max-width: 60rem;
+	}
+	.surface-header-eyebrow {
+		font-size: 0.68rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.surface-header-title {
+		margin-top: 0.3rem;
+		font-size: 1.5rem;
+		line-height: 1.2;
+		font-weight: 600;
+		letter-spacing: -0.01em;
+		color: rgb(248, 250, 252);
+		text-wrap: balance;
+	}
+	.surface-header-description {
+		margin-top: 0.45rem;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		color: rgba(203, 213, 225, 0.96);
+		max-width: 66ch;
+	}
+	.surface-header-actions {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.surface-header-extra {
+		margin-top: 0.65rem;
+	}
+	@media (min-width: 768px) {
+		.surface-header {
+			padding-bottom: 1rem;
+		}
+		.surface-header-row {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			gap: 1rem;
+			padding-bottom: 1rem;
+		}
+		.surface-header-title {
+			font-size: 1.9rem;
+		}
+		.surface-header-description {
+			font-size: 0.94rem;
+		}
+		.surface-header-actions {
+			justify-content: flex-end;
+		}
+	}
+</style>

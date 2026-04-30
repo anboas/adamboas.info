@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { capabilityTopics } from '../../data/capabilities';
 import { radarEventsSeed } from '../../data/radar/events';
@@ -111,15 +112,13 @@ const rows = capabilityTopics.map((capability) => {
 >
 	<StickyBrowseBar active="capabilities" />
 
-	<section class="card control-shell p-5">
-		<div class="flex flex-wrap items-start justify-between gap-3">
-			<div>
-				<h1 class="section-title">Capabilities & Topics</h1>
-				<p class="mt-2 text-sm text-slate-300 wrap-anywhere">Explore focus areas across published writing, upcoming events, and opportunity intelligence.</p>
-			</div>
-			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
-		</div>
-	</section>
+	<SurfaceHeader
+		eyebrow="Capability map"
+		title="Capabilities & Topics"
+		description="Explore focus areas across published writing, upcoming events, and opportunity intelligence."
+	>
+		<a slot="actions" class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
+	</SurfaceHeader>
 
 	<section class="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 		{rows.map((capability) => (

@@ -1,21 +1,22 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { RESUME_CLEARANCE, experience } from '../../data/resume';
 import { withBase } from '../../utils/withBase';
 ---
 
 <SiteLayout title="Experience | Adam Boas" description="Companies and roles." noindex={true}>
 	<StickyBrowseBar active="experience" />
-	<section class="card control-shell p-5">
-		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-			<h1 class="section-title">Experience</h1>
-			<div class="flex flex-col items-start gap-1">
-				<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Latest resume PDF →</a>
-				<span class="text-[11px] uppercase tracking-wide text-slate-400">Clearance: {RESUME_CLEARANCE}</span>
-			</div>
+	<SurfaceHeader
+		eyebrow="Background"
+		title="Experience"
+	>
+		<div slot="actions" class="flex flex-col items-start gap-1 md:items-end">
+			<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Latest resume PDF ↗</a>
+			<span class="text-[11px] uppercase tracking-wide text-slate-400">Clearance: {RESUME_CLEARANCE}</span>
 		</div>
-	</section>
+	</SurfaceHeader>
 
 	<!-- Mobile: stacked cards -->
 	<div class="mt-4 grid gap-3 md:mt-5 md:hidden" data-experience-mobile>

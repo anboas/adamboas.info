@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
@@ -879,23 +880,24 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 
 
 	<section class="mt-2 space-y-4">
-		<section class="card p-3 radar-control-shell control-shell">
-			<div class="flex flex-wrap items-start justify-between gap-2">
-				<div class="max-w-3xl">
-					<h1 class="text-xl font-semibold tracking-tight text-slate-50 sm:text-2xl">DoW Events Intelligence</h1>
-					<p class="mt-0.5 text-xs text-slate-400">
-						<a href={withBase('/events/sources/')}>Source feeds</a>
-						<span class="text-slate-600"> · </span>
-						<a href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/feed-registry.json" target="_blank" rel="noreferrer">Feed registry PR target</a>
-					</p>
-				</div>
+		<SurfaceHeader
+			class="radar-surface-header"
+			eyebrow="Acquisition radar"
+			title="DoW Events Intelligence"
+			description="Upcoming DoW events with validated links, source transparency, and layered opportunity intelligence."
+		>
+			<div slot="actions" class="flex flex-wrap gap-1.5">
+				<a class="radar-btn radar-btn-tight" href={withBase('/events/sources/')}>Source feeds</a>
+				<a class="radar-btn radar-btn-tight" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/feed-registry.json" target="_blank" rel="noreferrer">Feed registry PR target</a>
+				<a class="radar-btn radar-btn-tight" href={withBase('/status/')}>Status</a>
+				<a class="radar-btn radar-btn-tight" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
+			</div>
+
+			<section class="card p-3 radar-control-shell control-shell">
 				<div class="flex flex-wrap gap-1.5">
-					<a class="radar-btn radar-btn-tight" href={withBase('/status/')}>Status</a>
-					<a class="radar-btn radar-btn-tight" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
 					<button id="radar-toggle-map" class="radar-btn radar-btn-tight" type="button">Pin map above list</button>
 					<button id="radar-toggle-compact" class="radar-btn radar-btn-tight" type="button">Compact mode</button>
 				</div>
-			</div>
 			<div class="radar-status-row" aria-label="Pipeline freshness">
 				{feedGeneratedAt ? <span class="radar-status-pill">Feed crawl: {new Date(feedGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
 				<span class="radar-status-pill">Sources OK: {Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</span>
@@ -973,7 +975,8 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 					<p id="radar-count" class="radar-count text-xs text-slate-400" aria-live="polite"></p>
 				</div>
 			</div>
-		</section>
+			</section>
+		</SurfaceHeader>
 
 		<section id="radar-calendar-section" class="card p-5">
 			<div class="mb-3 flex flex-wrap items-center justify-between gap-2">

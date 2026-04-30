@@ -1,5 +1,6 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import SurfaceHeader from '../components/SurfaceHeader.astro';
 // sticky browse intentionally omitted on /changes (Changes link is footer-only)
 import changeNotesJs from '../scripts/change-notes.js?raw';
 
@@ -66,13 +67,36 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.20',
+		date: '2026-04-30',
+		title: 'Unified surface header system across writing, capability, ops, and utility pages',
+		summary: 'Replaced boxed control-shell title blocks with the cleaner Profile-style header treatment across major site surfaces.',
+		impact: 'Top-level surfaces now share a consistent, less-boxed visual rhythm with eyebrow/title/description hierarchy and right-rail actions, improving scan flow and cross-page cohesion.',
+		current: true,
+		tags: ['ux', 'styling', 'consistency', 'navigation'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added reusable `src/components/SurfaceHeader.astro` component with support for eyebrow labels, action slots, and supplemental metadata rows.',
+			]},
+			{ kind: 'Changed', items: [
+				'Adopted the new surface header style on `/writing/`, `/writing/tags/`, `/writing/tags/[tag]/`, `/capabilities/`, `/capabilities/[slug]/`, `/opportunities/`, `/status/`, `/status/site-analytics/`, `/contact/`, `/speaking/`, `/experience/`, `/education/`, `/blog/`, `/events/sources/`, `/sitemap/`, and `/changes/`.',
+				'Updated `/events/` to use a Profile-style top header while retaining radar controls and filters in the existing control shell below.',
+			]},
+			{ kind: 'Improved', items: [
+				'Normalized top-of-page hierarchy and spacing so surface headers feel consistent regardless of route function (content, operations, or utility).',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.19',
 		date: '2026-04-29',
 		title: 'Writing readability pass: expanded note paragraph spacing',
 		summary: 'Improved readability for note-style writing entries by increasing paragraph spacing in the main content block.',
 		impact: 'Long and medium-length notes now scan more comfortably with clearer visual separation between ideas, including the new CVEAgentNet note.',
-		current: true,
 		tags: ['writing', 'typography', 'ux'],
 		groups: [
 			{ kind: 'Added', items: [] },
@@ -4084,25 +4108,21 @@ function releaseSearchText(release: Release) {
 	<!-- StickyBrowseBar omitted on this page by preference: Changes link should live in footer only. -->
 
 	<section data-change-notes class="space-y-4">
-		<header class="card p-5">
-			<div class="flex flex-wrap items-start justify-between gap-3">
-				<div>
-					<h1 class="text-2xl font-semibold text-slate-50 sm:text-3xl">Change Notes</h1>
-					<p class="mt-2 text-sm text-slate-300">
-						Public release tracker focused on shipped website capabilities and user-facing outcomes.
-					</p>
-				</div>
-				<div class="flex flex-wrap gap-2 text-xs">
-					<span class="rounded-none border border-emerald-700/70 bg-emerald-900/20 px-2 py-1 text-emerald-200">Current: {current.version}</span>
-					<span class="rounded-none border border-slate-700 px-2 py-1 text-slate-300">Released {current.date}</span>
-				</div>
+		<SurfaceHeader
+			eyebrow="Release ledger"
+			title="Change Notes"
+			description="Public release tracker focused on shipped website capabilities and user-facing outcomes."
+		>
+			<div slot="actions" class="flex flex-wrap gap-2 text-xs">
+				<span class="rounded-none border border-emerald-700/70 bg-emerald-900/20 px-2 py-1 text-emerald-200">Current: {current.version}</span>
+				<span class="rounded-none border border-slate-700 px-2 py-1 text-slate-300">Released {current.date}</span>
 			</div>
-			<div class="mt-3 flex flex-wrap items-center gap-2 text-xs text-slate-300">
+			<div class="mt-1 flex flex-wrap items-center gap-2 text-xs text-slate-300">
 				<span class="kbd">/</span><span>search</span>
 				<span class="kbd">g</span><span>then</span><span class="kbd">c</span><span>changes</span>
 				<span class="kbd">?</span><span>shortcuts</span>
 			</div>
-		</header>
+		</SurfaceHeader>
 
 		<section class="card control-shell changes-filter-bar p-3" data-change-filter-bar>
 			<div class="control-shell-row flex flex-wrap items-center gap-2">

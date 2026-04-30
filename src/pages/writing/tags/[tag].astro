@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../../components/SurfaceHeader.astro';
 import { withBase } from '../../../utils/withBase';
 import { buildCanonicalTagGroups, slugifyTag } from '../../../utils/tags';
 
@@ -72,15 +73,13 @@ const fmtDate = (date: Date | undefined) =>
 			],
 		})}
 	/>
-	<section class="card control-shell p-5">
-		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-			<div>
-				<h1 class="section-title">Tag: {tag}</h1>
-				<p class="mt-2 text-sm text-slate-300">{items.length} item(s)</p>
-			</div>
-			<a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>All tags →</a>
-		</div>
-	</section>
+	<SurfaceHeader
+		eyebrow="Tag view"
+		title={`Tag: ${tag}`}
+		description={`${items.length} item(s)`}
+	>
+		<a slot="actions" class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>All tags ↗</a>
+	</SurfaceHeader>
 
 	<div class="mt-4 grid gap-4 md:mt-5">
 		{items.map((w) => (
