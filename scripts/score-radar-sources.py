@@ -16,6 +16,7 @@ OUT_JSON = ROOT / 'src/data/radar/source-priority-2026-02-13.json'
 OUT_MD = ROOT / 'src/data/radar/source-priority-2026-02-13.md'
 FAST_BROWSER_FETCH = Path('/home/anboas/clawd/scripts/fast_browser_fetch.sh')
 BROWSER_FETCH_TIMEOUT = int(os.environ.get('RADAR_BROWSER_FETCH_TIMEOUT', '20'))
+UA_CONTACT_URL = os.environ.get('RADAR_UA_CONTACT_URL', 'https://www.adamboas.com').strip()
 
 SOURCES = [
     ('CTO Innovation Industry Outreach Calendar', 'https://www.ctoinnovation.mil/events/'),
@@ -91,7 +92,7 @@ def fetch(url: str):
     req = Request(
         url,
         headers={
-            'User-Agent': 'Mozilla/5.0 (compatible; RadarSourceScorer/1.0; +https://www.adamboas.com)',
+            'User-Agent': f'Mozilla/5.0 (compatible; RadarSourceScorer/1.0; +{UA_CONTACT_URL})',
             'Accept': 'text/html,application/xhtml+xml',
         },
     )

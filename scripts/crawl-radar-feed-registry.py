@@ -23,7 +23,8 @@ REGISTRY_PATH = ROOT / "src/data/radar/feed-registry.json"
 OUT_JSON = ROOT / "src/data/radar/feed-crawl-report-latest.json"
 OUT_MD = ROOT / "src/data/radar/feed-crawl-report-latest.md"
 
-UA = "Mozilla/5.0 (compatible; RadarFeedCrawler/1.0; +https://www.adamboas.com/events/sources/)"
+UA_CONTACT_URL = os.environ.get("RADAR_UA_CONTACT_URL", "https://www.adamboas.com/events/sources/").strip()
+UA = f"Mozilla/5.0 (compatible; RadarFeedCrawler/1.0; +{UA_CONTACT_URL})"
 MAX_READ = 350_000
 FAST_BROWSER_FETCH = Path(
     os.environ.get(

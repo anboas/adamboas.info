@@ -3,7 +3,22 @@ import path from 'node:path';
 
 const OUT_PATH = path.join(process.cwd(), 'src', 'generated', 'plausible-sitemap-analytics.json');
 const PAGEVIEWS_SNAPSHOT_PATH = path.join(process.cwd(), 'src', 'generated', 'plausible-pageviews.json');
-const DEFAULT_SITEMAP_INDEX_URL = 'https://www.adamboas.com/sitemap-index.xml';
+
+function normalizeOrigin(value) {
+	const raw = String(value || '').trim();
+	if (!raw) return null;
+	try {
+		return new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`).origin;
+	} catch {
+		return null;
+	}
+}
+
+const DEFAULT_SITE_ORIGIN =
+	normalizeOrigin(process.env.PUBLIC_SITE_URL) ||
+	normalizeOrigin(process.env.PLAUSIBLE_SITE_ID) ||
+	'https://www.adamboas.com';
+const DEFAULT_SITEMAP_INDEX_URL = `${DEFAULT_SITE_ORIGIN}/sitemap-index.xml`;
 
 function normalizePath(input) {
 	if (!input) return null;
@@ -476,7 +491,17 @@ function buildFallbackTrends({ dateRange, totalViews, note }) {
 }
 
 function getSiteCandidates(configuredSiteId) {
-	return [configuredSiteId, 'www.adamboas.com', 'adamboas.com', 'anboas.github.io/adamboas.info']
+	const envSite = String(process.env.PUBLIC_SITE_URL || '').trim();
+	let envHost = '';
+	if (envSite) {
+		try {
+			envHost = new URL(/^https?:\/\//i.test(envSite) ? envSite : `https://${envSite}`).host;
+		} catch {
+			envHost = envSite;
+		}
+	}
+
+	return [configuredSiteId, envHost, 'www.adamboas.com', 'adamboas.com', 'anboas.github.io/adamboas.info']
 		.map((s) => String(s || '').trim())
 		.filter(Boolean)
 		.filter((s, i, arr) => arr.indexOf(s) === i);

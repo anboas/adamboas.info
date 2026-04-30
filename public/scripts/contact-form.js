@@ -4,6 +4,8 @@
 
 	const statusEl = form.querySelector('[data-contact-status]');
 	const errorsEl = form.querySelector('[data-contact-errors]');
+	const submitEndpoint = String(form.dataset.contactEndpoint || '').trim();
+	const subjectPrefix = String(form.dataset.contactSubject || 'contact form').trim();
 	const submitBtn = form.querySelector('[data-contact-submit]');
 	const intentSelect = form.querySelector('select[name="intent"]');
 	const hp = form.querySelector('input[name="website"]');
@@ -99,12 +101,20 @@
 		setStatus('Sending request…', 'neutral');
 		track('Contact Form: Submit', { intent });
 
-		data.set('_subject', `adamboas.com lead: ${intent}`);
+		data.set('_subject', `${subjectPrefix} lead: ${intent}`);
 		data.set('_captcha', 'false');
 		data.set('_template', 'table');
 
+		if (!submitEndpoint) {
+			setStatus('Contact endpoint is not configured. Use direct email below.', 'error');
+			setErrors(['Missing contact endpoint configuration.']);
+			track('Contact Form: Error', { intent, reason: 'misconfigured-endpoint' });
+			setSubmitting(false);
+			return;
+		}
+
 		try {
-			const response = await fetch('https://formsubmit.co/ajax/anboas@gmail.com', {
+			const response = await fetch(submitEndpoint, {
 				method: 'POST',
 				headers: { Accept: 'application/json' },
 				body: data,

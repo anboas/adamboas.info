@@ -3,7 +3,9 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { withBase } from '../utils/withBase';
 import { CONTACT_PHONE } from '../data/resume';
-import { absoluteUrl, CONTACT_EMAIL, CONTACT_PHONE_E164, contactMailto } from '../config/site';
+import { absoluteUrl, CONTACT_EMAIL, CONTACT_FORM_ENDPOINT, CONTACT_PHONE_E164, contactMailto } from '../config/site';
+
+const contactFormSubject = `${new URL(absoluteUrl('/')).hostname} contact form`;
 ---
 
 <SiteLayout
@@ -27,8 +29,14 @@ import { absoluteUrl, CONTACT_EMAIL, CONTACT_PHONE_E164, contactMailto } from '.
 	</SurfacePageHeader>
 
 	<section class="card control-shell mt-4 p-5">
-		<form data-contact-form class="contact-form" novalidate>
-			<input type="hidden" name="_subject" value="adamboas.com contact form" />
+		<form
+			data-contact-form
+			data-contact-endpoint={CONTACT_FORM_ENDPOINT}
+			data-contact-subject={contactFormSubject}
+			class="contact-form"
+			novalidate
+		>
+			<input type="hidden" name="_subject" value={contactFormSubject} />
 			<input type="hidden" name="_template" value="table" />
 			<input type="hidden" name="_captcha" value="false" />
 			<input type="text" name="website" class="contact-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />

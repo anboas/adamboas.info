@@ -25,9 +25,10 @@ cp .env.example .env
 
 Key app vars:
 
-- `PUBLIC_SITE_URL` canonical site origin
+- `PUBLIC_SITE_URL` canonical site origin (also drives generated `robots.txt` sitemap URL)
 - `PUBLIC_CONTACT_EMAIL` contact mailto target
 - `PUBLIC_CONTACT_PHONE_E164` contact tel target
+- `PUBLIC_CONTACT_FORM_ENDPOINT` optional contact form submit endpoint override
 - `PUBLIC_MEDIA_BASE_URL` optional external media/CDN base URL
 
 Analytics data scripts use:
@@ -36,6 +37,11 @@ Analytics data scripts use:
 - `PLAUSIBLE_SITE_ID`
 - `PLAUSIBLE_DATE_RANGE`
 - `PLAUSIBLE_SITEMAP_INDEX_URL`
+
+Optional radar crawler vars:
+
+- `RADAR_UA_CONTACT_URL`
+- `RADAR_BROWSER_FETCH_TIMEOUT`
 
 ## Offline viewing
 

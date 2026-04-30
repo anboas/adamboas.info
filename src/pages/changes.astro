@@ -87,13 +87,45 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.39',
+		date: '2026-04-30',
+		title: '12-factor continuation: env-driven robots + contact submit endpoint',
+		summary: 'Moved robots sitemap origin and contact form submit routing behind environment-backed configuration and reduced hardcoded domain coupling in support scripts.',
+		impact: 'Deploy portability improved again: environment/domain moves no longer require editing robots or contact submit code paths, and crawler/plausible defaults now respect environment context.',
+		current: true,
+		tags: ['architecture', '12-factor', 'config', 'ops'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added env-backed contact form endpoint support (`PUBLIC_CONTACT_FORM_ENDPOINT`) via shared site config.',
+					'Added generated `src/pages/robots.txt.ts` that derives sitemap URL from configured site origin.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated contact form page/script wiring to use dataset-provided submit endpoint + subject prefix instead of hardcoded values.',
+					'Replaced static `public/robots.txt` with generated route to keep sitemap origin environment-consistent.',
+					'Updated Plausible sitemap analytics defaults and radar crawler user-agent contact URLs to honor environment variables.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: ['Reduced source edits required when moving across domains/environments and tightened 12-factor operational hygiene.'],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.38',
 		date: '2026-04-30',
 		title: '12-factor config pass: centralized site/contact env wiring',
 		summary: 'Moved key site identity and contact wiring to environment-driven config, removed hardcoded public URLs/emails from page surfaces, and documented runtime/build config contract.',
 		impact: 'UI and metadata are now easier to deploy across domains/environments without source edits, improving portability and preferred-practice configuration hygiene.',
-		current: true,
 		tags: ['architecture', '12-factor', 'config', 'quality'],
 		groups: [
 			{ kind: 'Added', items: [
