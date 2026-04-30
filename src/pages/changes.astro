@@ -69,13 +69,34 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.22',
+		date: '2026-04-30',
+		title: 'Writing header aligned to Profile formatting',
+		summary: 'Adjusted `/writing/` top header to match the visual hierarchy and spacing rhythm used on `/profile/`.',
+		impact: 'Writing now uses the same cleaner border-bottom header structure as Profile, removing the subtle formatting mismatch between the two key surfaces.',
+		current: true,
+		tags: ['writing', 'header', 'ux', 'consistency'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Replaced `/writing/` `SurfaceHeader` usage with the same `pb/pt + border-b + title stack` pattern used on `/profile/`.',
+				'Kept Writing actions (`Browse tags`) while aligning typography, label casing, spacing, and right-rail alignment to Profile style.',
+			]},
+			{ kind: 'Improved', items: [
+				'Reduced cross-surface visual drift between the two most frequently compared navigation surfaces.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.21',
 		date: '2026-04-30',
 		title: 'Profile modal interaction + CVEAgentNet note restoration',
 		summary: 'Moved profile experience and education detail expansion into click-to-open modals and restored the CVEAgentNet note path that had fallen out after Whitepaper sync.',
 		impact: 'Profile scanning is now cleaner with on-demand detail views, and the CVEAgentNet note URL is restored and durable through upstream Whitepaper source sync.',
-		current: true,
 		tags: ['profile', 'ux', 'writing', 'sync'],
 		groups: [
 			{ kind: 'Added', items: [
