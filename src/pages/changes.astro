@@ -78,13 +78,36 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.31',
+		date: '2026-04-30',
+		title: 'Surface-header consistency pass across core pages',
+		summary: 'Normalized page-header structure so secondary surfaces match the same visual rhythm as Writing/Profile, and migrated Writing/Profile to shared header framing for cross-site consistency.',
+		impact: 'Top-of-page formatting is now more uniform across primary and secondary surfaces, reducing header drift while preserving page-specific actions.',
+		current: true,
+		tags: ['ux', 'consistency', 'headers', 'layout'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Migrated `/writing/` and `/profile/` top sections to the shared `SurfaceHeader` component with existing actions preserved.',
+				'Aligned `SurfaceHeader` typography, spacing, border treatment, and action styling to match the established Writing/Profile framing pattern.',
+			]},
+			{ kind: 'Improved', items: [
+				'Reduced cross-page visual variance in eyebrow/title/description/action alignment.',
+			]},
+			{ kind: 'Fixed', items: [
+				'Addressed inconsistent header/page framing across non-Writing/Profile surfaces.',
+			]},
+		],
+	},
+
 	{
 		version: 'v2.4.30',
 		date: '2026-04-30',
 		title: 'Speaking title affordance pass (link clarity)',
 		summary: 'Made speaking engagement titles look unmistakably clickable by switching to accent link styling with underline and external-link cue.',
 		impact: 'Users can now immediately recognize speaking titles as interactive controls that open detailed modal context.',
-		current: true,
 		tags: ['speaking', 'ux', 'interaction'],
 		groups: [
 			{ kind: 'Added', items: [] },

@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
+import SurfaceHeader from '../../components/SurfaceHeader.astro';
 import { RESUME_CLEARANCE, experience, education } from '../../data/resume';
 import SpeakingEventsSection from '../../components/SpeakingEventsSection.astro';
 import { withBase } from '../../utils/withBase';
@@ -40,18 +41,12 @@ const profileModalData = {
 		})}
 	/>
 	<StickyBrowseBar active="profile" />
-	<section class="pb-3 pt-1 md:pb-4">
-		<div class="flex flex-col gap-2 border-b border-slate-800 pb-3 md:flex-row md:items-end md:justify-between md:pb-4">
-			<div>
-				<p class="text-[11px] uppercase tracking-[0.14em] text-slate-500">Background</p>
-				<h1 class="mt-1 text-2xl font-semibold tracking-tight text-slate-50 md:text-3xl">Profile</h1>
-			</div>
-			<div class="flex flex-col items-start gap-1 text-xs text-slate-400 md:items-end">
-				<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Resume PDF ↗</a>
-				<span class="uppercase tracking-wide">Clearance: {RESUME_CLEARANCE}</span>
-			</div>
+	<SurfaceHeader eyebrow="Background" title="Profile">
+		<div slot="actions" class="flex flex-col items-start gap-1 text-xs text-slate-400 md:items-end">
+			<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Resume PDF ↗</a>
+			<span class="uppercase tracking-wide">Clearance: {RESUME_CLEARANCE}</span>
 		</div>
-	</section>
+	</SurfaceHeader>
 
 	<div id="speaking">
 		<SpeakingEventsSection title="Speaking" showHeader={true} />
