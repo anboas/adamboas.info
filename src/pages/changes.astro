@@ -91,13 +91,29 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.43',
+		date: '2026-04-30',
+		title: 'Header description wrap tuning to avoid awkward mid-phrase breaks',
+		summary: 'Increased shared header description line-width ceiling so short operational summaries do not wrap prematurely into awkward two-line splits.',
+		impact: 'Status and other surface headers keep description copy on one line more often at desktop widths while preserving responsive wrap behavior.',
+		current: true,
+		tags: ['ux', 'typography', 'consistency'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: ['Updated `SurfaceHeader` description max width from fixed `66ch` to tokenized `--surface-header-description-max-width` with wider default `84ch`.'] },
+			{ kind: 'Improved', items: ['Reduced awkward phrase-splitting wraps such as the reported `/status/` operations description break.'] },
+			{ kind: 'Fixed', items: ['Addressed user-reported line break between “for” and “events” in status header description.'] },
+		],
+	},
+
 	{
 		version: 'v2.4.42',
 		date: '2026-04-30',
 		title: 'Header spacing uniformity pass across Writing/Profile/Capabilities surfaces',
 		summary: 'Standardized shared header description rail spacing and aligned first-section top offsets to remove page-to-page header rhythm drift.',
 		impact: 'Writing, Profile, Capabilities, and other `SurfaceHeader` pages now present more uniform top-shell spacing and action-rail alignment.',
-		current: true,
 		tags: ['ux', 'consistency', 'headers', 'typography'],
 		groups: [
 			{ kind: 'Added', items: [] },

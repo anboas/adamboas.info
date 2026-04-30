@@ -75,7 +75,7 @@ const hasDescription = Boolean(descriptionText);
 		font-size: 0.875rem;
 		line-height: 1.5;
 		color: rgb(203 213 225);
-		max-width: 66ch;
+		max-width: var(--surface-header-description-max-width, 84ch);
 		min-height: var(--surface-header-description-min-height-mobile, 0);
 	}
 	.surface-header-description-placeholder {
