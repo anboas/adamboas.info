@@ -328,8 +328,7 @@ jobs:
           if [ ${#missing_published_notes[@]} -gt 0 ]; then
             echo "Published notes missing after sync: ${missing_published_notes[*]}" >&2
             mkdir -p tmp/sync
-            printf "%s
-" "${missing_published_notes[@]}" > tmp/sync/missing-published-notes.txt
+            printf "%s\n" "${missing_published_notes[@]}" > tmp/sync/missing-published-notes.txt
             if [ "${SYNC_ALLOW_REMOVED_NOTES:-false}" != "true" ]; then
               echo "Set SYNC_ALLOW_REMOVED_NOTES=true to allow intentional removals." >&2
               exit 1
