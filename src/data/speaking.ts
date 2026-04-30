@@ -58,6 +58,25 @@ export const speakingEvents: SpeakingEvent[] = [
 			'Contributed cloud and software expertise from the KBR perspective, focused on how organizations realize measurable value during cloud migration and software modernization programs.',
 		sourceUrl: 'https://do.dlt.com/DONRedHatQ12024PAXRiverLandingPage-342414_TDSynnexPublicSector.html',
 	},
+	{
+		slug: 'navalx-scrum-for-leaders-2022-agile-cyber-software',
+		title: 'Agile Leadership in Cybersecurity and Software Development',
+		eventName: 'NavalX Scrum for Leaders',
+		eventUrl: 'https://www.navalx.navy.mil/',
+		eventDateRange: 'Jun 9, 2022',
+		sessionDateTime: 'Thu, Jun 9, 2022 · exact session time not publicly listed',
+		stage: 'Guest Speaker Session',
+		track: 'Agile Leadership',
+		role: 'Guest Speaker',
+		speakerTitle: 'Outreach, Onboarding, and Planning Lead',
+		speakerOrganization: 'Black Pearl (Booz Allen Hamilton support contractor to PEO Digital PAS Software Practice & Automation)',
+		sponsorType: 'employer',
+		sponsorName: 'Booz Allen Hamilton',
+		topicTags: ['Agile Leadership', 'Cybersecurity', 'Software Development', 'DevSecOps', 'Outreach', 'Onboarding', 'Planning', 'Black Pearl', 'PEO Digital'],
+		summary:
+			'Invited as a guest speaker while supporting PEO Digital, Platform Application Services, Software Practice and Automation at Black Pearl. Focused on agile leadership patterns for cyber and software teams, including onboarding pipelines, outreach-driven adoption, and planning rhythms that support mission-paced DevSecOps delivery.',
+		sourceUrl: 'https://blackpearl.navy.mil/',
+	},
 ];
 
 export const allSpeakingTopicTags = Array.from(new Set(speakingEvents.flatMap((e) => e.topicTags))).sort((a, b) => a.localeCompare(b));

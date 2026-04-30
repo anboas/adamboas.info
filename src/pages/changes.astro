@@ -74,13 +74,57 @@ const releases: Release[] = [
 
 
 
+
+
+	{
+		version: 'v2.4.28',
+		date: '2026-04-30',
+		title: 'Speaking date correction for NavalX Scrum for Leaders entry',
+		summary: 'Updated the newly added NavalX speaking engagement date from provisional May 7 to confirmed June 9, 2022.',
+		impact: 'Speaking timeline now reflects the corrected event date while keeping the same role and context details.',
+		current: true,
+		tags: ['speaking', 'content', 'correction'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Updated `eventDateRange` to `Jun 9, 2022` for `navalx-scrum-for-leaders-2022-agile-cyber-software`.',
+				'Updated session text to `Thu, Jun 9, 2022 · exact session time not publicly listed`.',
+			]},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [
+				'Corrected prior fallback date based on user-provided confirmation.',
+			]},
+		],
+	},
+
+	{
+		version: 'v2.4.27',
+		date: '2026-04-30',
+		title: 'Speaking entry added for NavalX Scrum for Leaders (2022)',
+		summary: 'Added a new speaking engagement covering agile leadership in cybersecurity and software development during Black Pearl support to PEO Digital PAS Software Practice & Automation.',
+		impact: 'Speaking timeline now includes the 2022 NavalX guest session with role/context details and topic tags aligned to cyber + software leadership themes.',
+		tags: ['speaking', 'profile', 'content', 'agile', 'cybersecurity'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added speaking event `navalx-scrum-for-leaders-2022-agile-cyber-software` in `src/data/speaking.ts`.',
+			]},
+			{ kind: 'Changed', items: [
+				'Set event date fallback to `May 7, 2022` pending publicly verifiable exact session timestamp.',
+				'Included augmented context in event summary (Black Pearl outreach/onboarding/planning leadership + PEO Digital PAS support scope).',
+			]},
+			{ kind: 'Improved', items: [
+				'Expanded topic taxonomy coverage with agile-leadership and DevSecOps-adjacent tags for speaking filter discoverability.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.26',
 		date: '2026-04-30',
 		title: 'Modal close-button anchoring fix for mobile',
 		summary: 'Stabilized modal close-button placement so the `✕` remains pinned at top-right regardless of content length or wrap.',
 		impact: 'Profile and speaking modals no longer shift close-control position as title/meta content changes on smaller screens.',
-		current: true,
 		tags: ['profile', 'speaking', 'mobile', 'ux'],
 		groups: [
 			{ kind: 'Added', items: [] },
