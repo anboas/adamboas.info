@@ -71,13 +71,37 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.24',
+		date: '2026-04-30',
+		title: 'Speaking UX pass: clickable tags + modalized detail + simplified links',
+		summary: 'Refined speaking cards to prioritize scan clarity by moving dense metadata into a click-open modal and making topic tags interactive filters.',
+		impact: 'Speaking entries now show cleaner summaries by default, with one clear outbound event link and fast in-section tag filtering for topic exploration.',
+		current: true,
+		tags: ['speaking', 'ux', 'profile', 'interaction'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added interactive topic-tag filtering controls (including Clear) in `SpeakingEventsSection`.',
+				'Added speaking-detail modal opened by clicking engagement titles, with keyboard focus trap + close affordances.',
+			]},
+			{ kind: 'Changed', items: [
+				'Moved extraneous speaking metadata (When/Stage/Track/Role/Speaker profile/Sponsorship) from inline cards into the modal.',
+				'Kept a single external URL per engagement (`Event Name ↗`) and removed the trailing source URL row.',
+			]},
+			{ kind: 'Improved', items: [
+				'Unified tag interaction model across top-level topic chips and per-card tag chips for faster browsing.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.23',
 		date: '2026-04-30',
 		title: 'SEO hardening phase 2 + writing UX/polish + sync guardrails',
 		summary: 'Shipped a broad second-phase SEO and UX batch: stronger writing schema/metadata, CI SEO linting, profile modal hardening, edge-header normalization, and whitepaper sync safety checks.',
 		impact: 'Search metadata and schema coverage are more resilient, writing pages gained better share/citation affordances and read-time context, profile modals now behave more accessibly, and sync pipelines now guard against silent published-note loss.',
-		current: true,
 		tags: ['seo', 'writing', 'ux', 'sync', 'ci'],
 		groups: [
 			{ kind: 'Added', items: [
