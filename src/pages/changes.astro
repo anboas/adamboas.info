@@ -77,13 +77,33 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.30',
+		date: '2026-04-30',
+		title: 'Speaking title affordance pass (link clarity)',
+		summary: 'Made speaking engagement titles look unmistakably clickable by switching to accent link styling with underline and external-link cue.',
+		impact: 'Users can now immediately recognize speaking titles as interactive controls that open detailed modal context.',
+		current: true,
+		tags: ['speaking', 'ux', 'interaction'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Updated speaking title button style to use link-color treatment, underline, and a small `↗` cue on card titles.',
+			]},
+			{ kind: 'Improved', items: [
+				'Increased visual affordance for modal-open interactions on speaking cards.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.29',
 		date: '2026-04-30',
 		title: 'Speaking updates: NavalX title correction + OPNAV N7 C2C24 engagement added',
 		summary: 'Updated the NavalX event naming and added a 2020 OPNAV N7 MyNavy HR cybersecurity off-site opening presentation entry focused on C2C24.',
 		impact: 'Speaking history now reflects corrected NavalX event naming and includes the newly added OPNAV N7 leadership talk context with RDML Danelle Barrett reference.',
-		current: true,
 		tags: ['speaking', 'content', 'correction', 'cybersecurity', 'agile'],
 		groups: [
 			{ kind: 'Added', items: [
