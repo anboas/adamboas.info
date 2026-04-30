@@ -46,6 +46,7 @@ const hasExtra = Astro.slots.has('default');
 		gap: var(--surface-header-gap, 0.5rem);
 		padding-bottom: var(--surface-header-row-pb, 0.75rem);
 		border-bottom: 1px solid var(--surface-header-border, rgb(30 41 59));
+		min-height: var(--surface-header-row-min-height-mobile, auto);
 	}
 	.surface-header-main {
 		max-width: 60rem;
@@ -80,6 +81,7 @@ const hasExtra = Astro.slots.has('default');
 		gap: 0.5rem;
 		font-size: 0.75rem;
 		color: rgb(148 163 184);
+		min-height: var(--surface-header-actions-min-height-mobile, auto);
 	}
 	.surface-header-extra {
 		margin-top: 0.65rem;
@@ -94,12 +96,15 @@ const hasExtra = Astro.slots.has('default');
 			align-items: flex-end;
 			gap: 1rem;
 			padding-bottom: 1rem;
+			min-height: var(--surface-header-row-min-height, 5.25rem);
 		}
 		.surface-header-title {
 			font-size: 1.875rem;
 		}
 		.surface-header-actions {
 			justify-content: flex-end;
+			align-items: flex-end;
+			min-height: var(--surface-header-actions-min-height, 2.25rem);
 		}
 	}
 </style>

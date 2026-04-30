@@ -83,13 +83,34 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.36',
+		date: '2026-04-30',
+		title: 'Sterling pass: header baseline lock + remaining index-surface unification',
+		summary: 'Locked shared header baseline metrics to reduce micro-jitter across page switches and migrated remaining background index pages to the shared page-header wrapper.',
+		impact: 'Header position and action-rail alignment are more stable across desktop transitions; experience/education indexes now use the same shared top-shell framing as other surfaces.',
+		current: true,
+		tags: ['ux', 'consistency', 'headers', 'quality'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Updated `SurfaceHeader` with shared row/action min-height baseline tokens to reduce subtle cross-page header shift on larger breakpoints.',
+				'Migrated `/experience/` index and `/education/` index to `SurfacePageHeader` for consistent sticky-nav + header composition.',
+			]},
+			{ kind: 'Improved', items: [
+				'Reduced visual jitter when switching between pages with different header action payloads.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.35',
 		date: '2026-04-30',
 		title: 'Header-frame stabilization across core navigation surfaces',
 		summary: 'Unified top-of-page scaffolding on core pages to reduce subtle cross-page header drift when switching between main surfaces.',
 		impact: 'Writing, Profile, Events, Opportunities, capability-topic pages, and writing-tag detail pages now share one header wrapper pattern with consistent sticky-nav + header alignment behavior.',
-		current: true,
 		tags: ['ux', 'consistency', 'headers', 'refactor'],
 		groups: [
 			{ kind: 'Added', items: [] },
