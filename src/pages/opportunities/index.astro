@@ -2,8 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
@@ -68,7 +67,13 @@ function noticeKey(notice: any) {
 	if (noticeId) return `notice:${noticeId.toLowerCase()}`;
 	const solicitation = String(notice.solicitationNumber ?? '').trim();
 	if (solicitation) return `sol:${solicitation.toLowerCase()}`;
-	return `title:${String(notice.title ?? '').trim().toLowerCase()}::${String(notice.noticeType ?? '').trim().toLowerCase()}::${String(notice.postedDate ?? '').trim().toLowerCase()}`;
+	return `title:${String(notice.title ?? '')
+		.trim()
+		.toLowerCase()}::${String(notice.noticeType ?? '')
+		.trim()
+		.toLowerCase()}::${String(notice.postedDate ?? '')
+		.trim()
+		.toLowerCase()}`;
 }
 
 function toArray(set: Set<string>) {
@@ -87,7 +92,9 @@ function isGovernmentContact(contact: any) {
 	const email = String(contact?.email ?? '').toLowerCase();
 	const blob = `${org} ${role} ${email}`;
 	if (email.endsWith('.gov') || email.endsWith('.mil')) return true;
-	return /(department|agency|command|office|district|federal|government|dod|defense|army|navy|air force|marine|usace|disa|uscybercom|cio)/.test(blob);
+	return /(department|agency|command|office|district|federal|government|dod|defense|army|navy|air force|marine|usace|disa|uscybercom|cio)/.test(
+		blob,
+	);
 }
 
 function eventEngagementContacts(event: (typeof radarEventsSeed)[number] | undefined | null) {
@@ -131,8 +138,11 @@ function loadMirrorResourceIndex() {
 				const sourceUrl = String(payload.source_url ?? '').trim();
 				if (!sourceUrl) continue;
 				const mirrorBlobPath = String(payload.mirror_blob_path ?? '').trim() || null;
-				const mirrorDownloadUrl = String(payload.mirror_download_url ?? '').trim()
-					|| (mirrorBlobPath ? `https://raw.githubusercontent.com/anboas/adamboas.info/main/${mirrorBlobPath.replace(/^\/+/, '')}` : null);
+				const mirrorDownloadUrl =
+					String(payload.mirror_download_url ?? '').trim() ||
+					(mirrorBlobPath
+						? `https://raw.githubusercontent.com/anboas/adamboas.info/main/${mirrorBlobPath.replace(/^\/+/, '')}`
+						: null);
 				index.set(sourceUrl, {
 					sourceUrl,
 					mirrorDownloadUrl,
@@ -154,7 +164,9 @@ const mirrorResourceIndex = loadMirrorResourceIndex();
 
 function normalizeResourceAssets(notice: any): ResourceAsset[] {
 	const out = new Map<string, ResourceAsset>();
-	const items = Array.isArray(notice?.resourceItems ?? notice?.resource_items) ? (notice.resourceItems ?? notice.resource_items) : [];
+	const items = Array.isArray(notice?.resourceItems ?? notice?.resource_items)
+		? (notice.resourceItems ?? notice.resource_items)
+		: [];
 	for (const item of items) {
 		if (!item) continue;
 		if (typeof item === 'string') {
@@ -174,8 +186,11 @@ function normalizeResourceAssets(notice: any): ResourceAsset[] {
 		const sourceUrl = String(item.sourceUrl ?? item.source_url ?? item.url ?? item.link ?? '').trim();
 		if (!sourceUrl) continue;
 		const mirrorBlobPath = String(item.mirrorBlobPath ?? item.mirror_blob_path ?? '').trim() || null;
-		const mirrorDownloadUrl = String(item.mirrorDownloadUrl ?? item.mirror_download_url ?? '').trim()
-			|| (mirrorBlobPath ? `https://raw.githubusercontent.com/anboas/adamboas.info/main/${mirrorBlobPath.replace(/^\/+/, '')}` : null);
+		const mirrorDownloadUrl =
+			String(item.mirrorDownloadUrl ?? item.mirror_download_url ?? '').trim() ||
+			(mirrorBlobPath
+				? `https://raw.githubusercontent.com/anboas/adamboas.info/main/${mirrorBlobPath.replace(/^\/+/, '')}`
+				: null);
 		out.set(sourceUrl, {
 			sourceUrl,
 			mirrorDownloadUrl,
@@ -187,7 +202,9 @@ function normalizeResourceAssets(notice: any): ResourceAsset[] {
 		});
 	}
 
-	const fallbackLinks = Array.isArray(notice?.resourceLinks ?? notice?.resource_links) ? (notice.resourceLinks ?? notice.resource_links) : [];
+	const fallbackLinks = Array.isArray(notice?.resourceLinks ?? notice?.resource_links)
+		? (notice.resourceLinks ?? notice.resource_links)
+		: [];
 	for (const link of fallbackLinks) {
 		const sourceUrl = String(link ?? '').trim();
 		if (!sourceUrl || out.has(sourceUrl)) continue;
@@ -224,77 +241,114 @@ function addResourceAssets(target: Map<string, ResourceAsset>, assets: ResourceA
 }
 
 function awardSignalCount(notice: any) {
-	return Number(notice?.contractAwardsSignal?.matchedAwardCount
-		?? notice?.contractAwardsSignal?.matched_award_count
-		?? notice?.contract_awards_signal?.matched_award_count
-		?? notice?.contract_awards_signal?.matchedAwardCount
-		?? notice?.awardSignalCount
-		?? notice?.award_signal_count
-		?? 0);
+	return Number(
+		notice?.contractAwardsSignal?.matchedAwardCount ??
+			notice?.contractAwardsSignal?.matched_award_count ??
+			notice?.contract_awards_signal?.matched_award_count ??
+			notice?.contract_awards_signal?.matchedAwardCount ??
+			notice?.awardSignalCount ??
+			notice?.award_signal_count ??
+			0,
+	);
 }
 
 function awardSignalSampleDate(notice: any) {
-	return notice?.contract_awards_signal?.sample_award?.dateSigned
-		?? notice?.contractAwardsSignal?.sampleAward?.dateSigned
-		?? notice?.contractAwardsSignal?.sampleAward?.date_signed
-		?? null;
+	return (
+		notice?.contract_awards_signal?.sample_award?.dateSigned ??
+		notice?.contractAwardsSignal?.sampleAward?.dateSigned ??
+		notice?.contractAwardsSignal?.sampleAward?.date_signed ??
+		null
+	);
 }
 
 function usaspendingSignal(notice: any) {
-	return notice?.usaspendingSignal
-		?? notice?.usaspending_signal
-		?? null;
+	return notice?.usaspendingSignal ?? notice?.usaspending_signal ?? null;
 }
 
 function usaspendingMatchCount(notice: any) {
 	const signal = usaspendingSignal(notice);
-	return Number(signal?.matched_award_count
-		?? signal?.matchedAwardCount
-		?? notice?.usaspendingMatchCount
-		?? notice?.usaspending_match_count
-		?? 0);
+	return Number(
+		signal?.matched_award_count ??
+			signal?.matchedAwardCount ??
+			notice?.usaspendingMatchCount ??
+			notice?.usaspending_match_count ??
+			0,
+	);
 }
 
 function usaspendingAmount(notice: any) {
 	const signal = usaspendingSignal(notice);
-	return Number(signal?.total_award_amount
-		?? signal?.totalAwardAmount
-		?? notice?.usaspendingAmount
-		?? notice?.usaspending_amount
-		?? 0);
+	return Number(
+		signal?.total_award_amount ??
+			signal?.totalAwardAmount ??
+			notice?.usaspendingAmount ??
+			notice?.usaspending_amount ??
+			0,
+	);
 }
 
 function crossDataSignal(notice: any) {
-	return notice?.crossDataSignal
-		?? notice?.cross_data_signal
-		?? null;
+	return notice?.crossDataSignal ?? notice?.cross_data_signal ?? null;
 }
 
 function crossDataScore(notice: any) {
 	const signal = crossDataSignal(notice);
-	return Number(signal?.score
-		?? notice?.crossDataScore
-		?? notice?.cross_data_score
-		?? 0);
+	return Number(signal?.score ?? notice?.crossDataScore ?? notice?.cross_data_score ?? 0);
 }
 
 function crossDataLevel(notice: any) {
 	const signal = crossDataSignal(notice);
-	return String(signal?.level
-		?? notice?.crossDataLevel
-		?? notice?.cross_data_level
-		?? 'None');
+	return String(signal?.level ?? notice?.crossDataLevel ?? notice?.cross_data_level ?? 'None');
 }
 
 const DETAIL_PREVIEW_MAX_CHARS = 8000;
 const TOKEN_STOPWORDS = new Set([
-	'and', 'the', 'for', 'with', 'from', 'that', 'this', 'into', 'your', 'our', 'their', 'about', 'through', 'under', 'over', 'between',
-	'contract', 'opportunity', 'notice', 'sources', 'sought', 'solicitation', 'combined', 'special', 'pre', 'rfi', 'rfp', 'sam', 'gov',
-	'dept', 'department', 'defense', 'command', 'office', 'support', 'services', 'systems', 'program', 'project', 'task',
+	'and',
+	'the',
+	'for',
+	'with',
+	'from',
+	'that',
+	'this',
+	'into',
+	'your',
+	'our',
+	'their',
+	'about',
+	'through',
+	'under',
+	'over',
+	'between',
+	'contract',
+	'opportunity',
+	'notice',
+	'sources',
+	'sought',
+	'solicitation',
+	'combined',
+	'special',
+	'pre',
+	'rfi',
+	'rfp',
+	'sam',
+	'gov',
+	'dept',
+	'department',
+	'defense',
+	'command',
+	'office',
+	'support',
+	'services',
+	'systems',
+	'program',
+	'project',
+	'task',
 ]);
 
 function normalizeIdentifier(value: any) {
-	return String(value ?? '').trim().toLowerCase();
+	return String(value ?? '')
+		.trim()
+		.toLowerCase();
 }
 
 function toDayEpoch(value: any) {
@@ -322,7 +376,8 @@ function overlapCount(a: Set<string>, b: Set<string>) {
 
 function branchKeywordMatch(branch: string, blob: string) {
 	const normalized = String(blob ?? '').toLowerCase();
-	if (branch === 'Army') return /\barmy\b|army contracting command|army futures|usace|corps of engineers/.test(normalized);
+	if (branch === 'Army')
+		return /\barmy\b|army contracting command|army futures|usace|corps of engineers/.test(normalized);
 	if (branch === 'Navy') return /\bnavy\b|navsea|navair|navsup|navfac|nswc|nuwc|naval/.test(normalized);
 	if (branch === 'Air Force') return /\bair force\b|usaf|afrl|afmc|space force|space systems command/.test(normalized);
 	if (branch === 'Marine Corps') return /\bmarine\b|marsoc|marine corps/.test(normalized);
@@ -444,10 +499,18 @@ for (const event of radarEventsSeed) {
 		row.uiLink = row.uiLink ?? notice.uiLink ?? null;
 		row.detailUrl = row.detailUrl ?? notice.detailUrl ?? notice.detail_url ?? notice.uiLink ?? null;
 		const noticePreview = toDetailPreview(notice.detailText ?? notice.detail_text ?? null);
-		if (!row.detailPreview || (noticePreview && noticePreview.length > row.detailPreview.length)) row.detailPreview = noticePreview;
-		row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? notice.detail_text_length ?? (noticePreview?.length ?? 0)));
+		if (!row.detailPreview || (noticePreview && noticePreview.length > row.detailPreview.length))
+			row.detailPreview = noticePreview;
+		row.detailTextLength = Math.max(
+			row.detailTextLength,
+			Number(notice.detailTextLength ?? notice.detail_text_length ?? noticePreview?.length ?? 0),
+		);
 		addResourceAssets(row.resourceAssets, normalizeResourceAssets(notice));
-		row.resourceCount = Math.max(row.resourceCount, Number(notice.resourceCount ?? notice.resource_count ?? row.resourceAssets.size ?? 0), row.resourceAssets.size);
+		row.resourceCount = Math.max(
+			row.resourceCount,
+			Number(notice.resourceCount ?? notice.resource_count ?? row.resourceAssets.size ?? 0),
+			row.resourceAssets.size,
+		);
 		const nextAwardCount = awardSignalCount(notice);
 		if (nextAwardCount >= row.awardSignalCount) {
 			row.awardSignalCount = nextAwardCount;
@@ -473,7 +536,7 @@ for (const event of radarEventsSeed) {
 	}
 }
 
-for (const candidate of (samOpportunitiesFeed as any[])) {
+for (const candidate of samOpportunitiesFeed as any[]) {
 	samGlobalRawNotices += 1;
 	const notice = {
 		noticeId: candidate.notice_id ?? null,
@@ -489,7 +552,9 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 		score: Number(candidate.relevance_score ?? 0),
 		detailUrl: candidate.detail_url ?? null,
 		detailPreview: toDetailPreview(candidate.detail_text ?? candidate.description ?? null),
-		detailTextLength: Number(candidate.detail_text_length ?? candidate.detail_text?.length ?? candidate.description?.length ?? 0),
+		detailTextLength: Number(
+			candidate.detail_text_length ?? candidate.detail_text?.length ?? candidate.description?.length ?? 0,
+		),
 		resourceAssets: normalizeResourceAssets(candidate),
 		resourceCount: Number(candidate.resource_count ?? 0),
 		awardSignalCount: awardSignalCount(candidate),
@@ -545,10 +610,18 @@ for (const candidate of (samOpportunitiesFeed as any[])) {
 	row.agencyPath = row.agencyPath ?? notice.agencyPath;
 	row.uiLink = row.uiLink ?? notice.uiLink;
 	row.detailUrl = row.detailUrl ?? notice.detailUrl ?? notice.uiLink ?? null;
-	if (!row.detailPreview || ((notice.detailPreview ?? '').length > row.detailPreview.length)) row.detailPreview = notice.detailPreview ?? row.detailPreview;
-	row.detailTextLength = Math.max(row.detailTextLength, Number(notice.detailTextLength ?? (notice.detailPreview?.length ?? 0)));
+	if (!row.detailPreview || (notice.detailPreview ?? '').length > row.detailPreview.length)
+		row.detailPreview = notice.detailPreview ?? row.detailPreview;
+	row.detailTextLength = Math.max(
+		row.detailTextLength,
+		Number(notice.detailTextLength ?? notice.detailPreview?.length ?? 0),
+	);
 	addResourceAssets(row.resourceAssets, notice.resourceAssets ?? []);
-	row.resourceCount = Math.max(row.resourceCount, Number(notice.resourceCount ?? row.resourceAssets.size), row.resourceAssets.size);
+	row.resourceCount = Math.max(
+		row.resourceCount,
+		Number(notice.resourceCount ?? row.resourceAssets.size),
+		row.resourceAssets.size,
+	);
 	if (Number(notice.awardSignalCount ?? 0) >= row.awardSignalCount) {
 		row.awardSignalCount = Number(notice.awardSignalCount ?? 0);
 		row.awardSignalSampleDate = notice.awardSignalSampleDate ?? row.awardSignalSampleDate;
@@ -601,7 +674,8 @@ for (const row of opportunityMap.values()) {
 				if (rowDueDay >= event.startDay - 120 * 86_400_000 && rowDueDay <= eventEnd + 45 * 86_400_000) score += 2;
 			}
 			if (rowPostedDay !== null && event.startDay !== null) {
-				if (rowPostedDay >= event.startDay - 220 * 86_400_000 && rowPostedDay <= event.startDay + 40 * 86_400_000) score += 1;
+				if (rowPostedDay >= event.startDay - 220 * 86_400_000 && rowPostedDay <= event.startDay + 40 * 86_400_000)
+					score += 1;
 			}
 
 			return { eventId: event.id, score };
@@ -637,7 +711,9 @@ const opportunities = [...opportunityMap.values()]
 		detailUrl: row.detailUrl,
 		detailPreview: row.detailPreview,
 		detailTextLength: row.detailTextLength,
-		resourceAssets: [...row.resourceAssets.values()].sort((a, b) => String(a.fileName ?? a.sourceUrl).localeCompare(String(b.fileName ?? b.sourceUrl))),
+		resourceAssets: [...row.resourceAssets.values()].sort((a, b) =>
+			String(a.fileName ?? a.sourceUrl).localeCompare(String(b.fileName ?? b.sourceUrl)),
+		),
 		resourceCount: Math.max(row.resourceCount, row.resourceAssets.size),
 		awardSignalCount: Number(row.awardSignalCount ?? 0),
 		awardSignalSampleDate: row.awardSignalSampleDate ?? null,
@@ -697,38 +773,52 @@ const opportunities = [...opportunityMap.values()]
 						.filter((contact) => contact.isGovernment)
 						.map((contact) => String(contact.email ?? contact.name ?? `${id}:${contact.role ?? ''}`).toLowerCase());
 				})
-				.filter(Boolean)
+				.filter(Boolean),
 		).size,
 		branches: toArray(row.branches),
 		capabilityAreas: toArray(row.capabilityAreas),
 		missionThreads: toArray(row.missionThreads),
 		eventCount: row.eventIds.size,
 	}))
-	.sort((a, b) => b.weight - a.weight || (a.responseDueDate ?? '').localeCompare(b.responseDueDate ?? '') || a.title.localeCompare(b.title));
+	.sort(
+		(a, b) =>
+			b.weight - a.weight ||
+			(a.responseDueDate ?? '').localeCompare(b.responseDueDate ?? '') ||
+			a.title.localeCompare(b.title),
+	);
 
-const noticeTypes = [...new Set(opportunities.map((o) => o.noticeType).filter(Boolean))].sort((a, b) => a.localeCompare(b));
-const branches = [...new Set(opportunities.flatMap((o) => o.branches).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+const noticeTypes = [...new Set(opportunities.map((o) => o.noticeType).filter(Boolean))].sort((a, b) =>
+	a.localeCompare(b),
+);
+const branches = [...new Set(opportunities.flatMap((o) => o.branches).filter(Boolean))].sort((a, b) =>
+	a.localeCompare(b),
+);
 
-const lastCollectedAt = radarEventsSeed
-	.map((event) => samIntel(event)?.collectedAt as string | undefined)
-	.filter(Boolean)
-	.sort()
-	.at(-1) ?? null;
+const lastCollectedAt =
+	radarEventsSeed
+		.map((event) => samIntel(event)?.collectedAt as string | undefined)
+		.filter(Boolean)
+		.sort()
+		.at(-1) ?? null;
 
 const driftLatest = (opportunitiesDrift ?? {}) as any;
 const driftDeltas = (driftLatest.deltas ?? {}) as Record<string, number>;
 const driftGeneratedAt = typeof driftLatest.generated_at === 'string' ? driftLatest.generated_at : null;
 
 const feedSummary = (feedCrawlReport?.summary ?? {}) as Record<string, number>;
-const feedGeneratedAt = typeof (feedCrawlReport as any)?.generatedAt === 'string' ? (feedCrawlReport as any).generatedAt : null;
+const feedGeneratedAt =
+	typeof (feedCrawlReport as any)?.generatedAt === 'string' ? (feedCrawlReport as any).generatedAt : null;
 
 const opportunitiesJson = JSON.stringify(opportunities);
 ---
 
-<SiteLayout title="Opportunity Intelligence | Adam Boas" description="Opportunity intelligence mirror from cached SAM opportunity pulls and event-enrichment runs." noindex={true}>
-	<StickyBrowseBar active="opportunities" />
-
-	<SurfaceHeader
+<SiteLayout
+	title="Opportunity Intelligence | Adam Boas"
+	description="Opportunity intelligence mirror from cached SAM opportunity pulls and event-enrichment runs."
+	noindex={true}
+>
+	<SurfacePageHeader
+		stickyActive="opportunities"
 		eyebrow="Acquisition radar"
 		title="Opportunity Intelligence"
 		description="A live mirror of SAM opportunity intelligence, including broad SAM feed ingestion plus event-linked enrichment."
@@ -736,14 +826,56 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		<div slot="actions" class="opp-header-actions">
 			<a class="ui-link-btn" href={withBase('/events/')}>Open Events</a>
 			<a class="ui-link-btn" href={withBase('/status/')}>Open Status</a>
-			<a class="ui-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}>Start project</a>
-			<a class="ui-link-btn ui-link-btn-muted" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open Drift Report</a>
+			<a class="ui-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}
+				>Start project</a
+			>
+			<a
+				class="ui-link-btn ui-link-btn-muted"
+				href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md"
+				target="_blank"
+				rel="noreferrer">Open Drift Report</a
+			>
 		</div>
 		<div class="opp-status-row mt-3" aria-label="Pipeline freshness">
-			{lastCollectedAt ? <span class="ui-pill text-[11px]">SAM collected: {new Date(lastCollectedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
-			{driftGeneratedAt ? <span class="ui-pill text-[11px]">Drift refreshed: {new Date(driftGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
-			{feedGeneratedAt ? <span class="ui-pill text-[11px]">Feed crawl: {new Date(feedGeneratedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span> : null}
-			<span class="ui-pill text-[11px]">Sources OK: {Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</span>
+			{
+				lastCollectedAt ? (
+					<span class="ui-pill text-[11px]">
+						SAM collected:{' '}
+						{new Date(lastCollectedAt).toLocaleDateString(undefined, {
+							year: 'numeric',
+							month: 'short',
+							day: 'numeric',
+						})}
+					</span>
+				) : null
+			}
+			{
+				driftGeneratedAt ? (
+					<span class="ui-pill text-[11px]">
+						Drift refreshed:{' '}
+						{new Date(driftGeneratedAt).toLocaleDateString(undefined, {
+							year: 'numeric',
+							month: 'short',
+							day: 'numeric',
+						})}
+					</span>
+				) : null
+			}
+			{
+				feedGeneratedAt ? (
+					<span class="ui-pill text-[11px]">
+						Feed crawl:{' '}
+						{new Date(feedGeneratedAt).toLocaleDateString(undefined, {
+							year: 'numeric',
+							month: 'short',
+							day: 'numeric',
+						})}
+					</span>
+				) : null
+			}
+			<span class="ui-pill text-[11px]"
+				>Sources OK: {Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</span
+			>
 			<span class="ui-pill text-[11px]">Blocked: {Number(feedSummary.blocked ?? 0)}</span>
 		</div>
 		<div id="opp-event-context" class="opp-event-context" hidden>
@@ -761,56 +893,109 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<section class="opp-kpi-group" aria-label="Coverage metrics">
 				<p class="opp-kpi-group-title">Coverage</p>
 				<div class="opp-kpis">
-					<div class="opp-kpi"><span class="opp-kpi-label">Unique opportunities</span><strong id="opp-kpi-total">{opportunities.length}</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Displayed</span><strong id="opp-kpi-displayed">{opportunities.length}</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Events with SAM cache</span><strong>{eventsWithSam}</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Raw notices ingested</span><strong>{totalRawNotices + samGlobalRawNotices}</strong></div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Unique opportunities</span><strong id="opp-kpi-total"
+							>{opportunities.length}</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Displayed</span><strong id="opp-kpi-displayed">{opportunities.length}</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Events with SAM cache</span><strong>{eventsWithSam}</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">SAM global feed rows</span><strong>{samGlobalRawNotices}</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Raw notices ingested</span><strong
+							>{totalRawNotices + samGlobalRawNotices}</strong>
+					</div>
 				</div>
 			</section>
 			<section class="opp-kpi-group" aria-label="Enrichment metrics">
 				<p class="opp-kpi-group-title">Enrichment</p>
 				<div class="opp-kpis">
-					<div class="opp-kpi"><span class="opp-kpi-label">With deep text</span><strong id="opp-kpi-deep">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">With attachments</span><strong id="opp-kpi-files">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Rows with gov POCs</span><strong id="opp-kpi-govpoc">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">3P error rows</span><strong id="opp-kpi-third-party-errors">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Exact query matches</span><strong id="opp-kpi-exact">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Fallback query matches</span><strong id="opp-kpi-fallback">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Fresh 3P checks (≤3d)</span><strong id="opp-kpi-fresh">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">FPDS-aligned (Med+)</span><strong id="opp-kpi-fpds">0</strong></div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">With deep text</span><strong id="opp-kpi-deep">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">With attachments</span><strong id="opp-kpi-files">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">With award history</span><strong id="opp-kpi-awards">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Rows with gov POCs</span><strong id="opp-kpi-govpoc">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">3P error rows</span><strong id="opp-kpi-third-party-errors">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Exact query matches</span><strong id="opp-kpi-exact">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Fallback query matches</span><strong id="opp-kpi-fallback">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Fresh 3P checks (≤3d)</span><strong id="opp-kpi-fresh">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">FPDS-aligned (Med+)</span><strong id="opp-kpi-fpds">0</strong>
+					</div>
 				</div>
 			</section>
 			<section class="opp-kpi-group" aria-label="Decision signal metrics">
 				<p class="opp-kpi-group-title">Decision Signals</p>
 				<div class="opp-kpis">
-					<div class="opp-kpi"><span class="opp-kpi-label">Gem candidates</span><strong id="opp-kpi-gems">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong></div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Gem candidates</span><strong id="opp-kpi-gems">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Strong corroboration</span><strong id="opp-kpi-corroborated">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">High confidence</span><strong id="opp-kpi-confidence">0</strong>
+					</div>
 					<div class="opp-kpi"><span class="opp-kpi-label">Pursue now</span><strong id="opp-kpi-pursue">0</strong></div>
 				</div>
 			</section>
 			<section class="opp-kpi-group" aria-label="System health metrics">
 				<p class="opp-kpi-group-title">System Health</p>
 				<div class="opp-kpis">
-					<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Drift Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong></div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Drift Δ high confidence</span><strong
+							>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Drift Δ 3P errors</span><strong
+							>{signed(Number(driftDeltas.us_errors ?? 0))}</strong>
+					</div>
 				</div>
 			</section>
 		</div>
-	</SurfaceHeader>
+	</SurfacePageHeader>
 
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-controls-shell">
 			<div class="opp-controls-head">
 				<h2 class="opp-subtitle">Filter opportunity intelligence</h2>
-				<p class="opp-subcopy">Use WHO + WHAT controls to target buyer organizations and capability lanes, then inspect gem candidates.</p>
+				<p class="opp-subcopy">
+					Use WHO + WHAT controls to target buyer organizations and capability lanes, then inspect gem candidates.
+				</p>
 			</div>
 			<div class="opp-controls-grid">
 				<label class="opp-field opp-field-search">
 					<span>Search</span>
-					<input id="opp-filter-search" data-global-search class="opp-input" type="search" placeholder="Search opportunities..." aria-label="Search opportunities" autocomplete="off" spellcheck="false" />
+					<input
+						id="opp-filter-search"
+						data-global-search
+						class="opp-input"
+						type="search"
+						placeholder="Search opportunities..."
+						aria-label="Search opportunities"
+						autocomplete="off"
+						spellcheck="false"
+					/>
 				</label>
 				<label class="opp-field">
 					<span>Notice type</span>
@@ -943,8 +1128,12 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</label>
 				</div>
 				<span id="opp-chart-filter-status" class="opp-chart-filter-status" aria-live="polite"></span>
-				<span class="opp-shortcuts-hint">Shortcuts: / search · f fast · g gem · c confidence · t 3P signal · p FPDS · v decision</span>
-				<button id="opp-filter-reset" class="opp-reset" type="button" aria-label="Reset all opportunity filters">Reset filters</button>
+				<span class="opp-shortcuts-hint"
+					>Shortcuts: / search · f fast · g gem · c confidence · t 3P signal · p FPDS · v decision</span
+				>
+				<button id="opp-filter-reset" class="opp-reset" type="button" aria-label="Reset all opportunity filters"
+					>Reset filters</button
+				>
 			</div>
 		</div>
 	</section>
@@ -952,7 +1141,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	<section class="opp-grid mt-4">
 		<article class="card p-4 opp-viz-card opp-viz-card-gems">
 			<h2 class="opp-subtitle">Gem picks (ranked)</h2>
-			<p class="opp-subcopy">Highest combined score from weight, due urgency, focus fit, and repeat signal across events.</p>
+			<p class="opp-subcopy">
+				Highest combined score from weight, due urgency, focus fit, and repeat signal across events.
+			</p>
 			<ol id="opp-gem-list" class="opp-gem-list"></ol>
 		</article>
 
@@ -988,7 +1179,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 		<article class="card p-4 opp-viz-card">
 			<h2 class="opp-subtitle">Source coverage</h2>
-			<p class="opp-subcopy">Tracks deep intel, attachments, SAM awards, USA matches, published gov POCs, and upstream errors.</p>
+			<p class="opp-subcopy">
+				Tracks deep intel, attachments, SAM awards, USA matches, published gov POCs, and upstream errors.
+			</p>
 			<div id="opp-viz-sources" class="opp-chart"></div>
 		</article>
 
@@ -1027,7 +1220,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<p class="opp-subcopy">Trend deltas from the last saved dataset snapshot on this browser.</p>
 			<ul id="opp-delta-list" class="opp-insights-list"></ul>
 		</article>
-
 	</section>
 
 	<section class="card control-shell mt-4 p-4">
@@ -1061,9 +1253,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<button id="opp-table-last" class="opp-page-btn" type="button" aria-label="Last page">»</button>
 			</div>
 		</div>
-		<div id="opp-table-wrap" class="opp-table-wrap opp-table-mode-compact" role="region" aria-label="Opportunity intelligence table" tabindex="0">
+		<div
+			id="opp-table-wrap"
+			class="opp-table-wrap opp-table-mode-compact"
+			role="region"
+			aria-label="Opportunity intelligence table"
+			tabindex="0"
+		>
 			<table class="opp-table">
-				<caption class="sr-only">Opportunity intelligence table with sortable columns. On small screens, scroll horizontally to inspect additional columns.</caption>
+				<caption class="sr-only"
+					>Opportunity intelligence table with sortable columns. On small screens, scroll horizontally to inspect
+					additional columns.</caption
+				>
 				<colgroup>
 					<col class="opp-col-intel-view" data-col="view" />
 					<col class="opp-col-gem" data-col="gem" />
@@ -1089,25 +1290,57 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<thead>
 					<tr>
 						<th data-col="view" title="Open intel modal">View</th>
-						<th data-col="gem"><button class="opp-sort-btn is-active" data-sort="gemScore" data-dir="desc" type="button" title="Gem score">Gem</button></th>
-						<th data-col="weight"><button class="opp-sort-btn" data-sort="weight" type="button" title="Source weight">W</button></th>
-						<th data-col="due"><button class="opp-sort-btn" data-sort="dueDate" type="button" title="Response due date">Due</button></th>
+						<th data-col="gem"
+							><button
+								class="opp-sort-btn is-active"
+								data-sort="gemScore"
+								data-dir="desc"
+								type="button"
+								title="Gem score">Gem</button
+							></th
+						>
+						<th data-col="weight"
+							><button class="opp-sort-btn" data-sort="weight" type="button" title="Source weight">W</button></th
+						>
+						<th data-col="due"
+							><button class="opp-sort-btn" data-sort="dueDate" type="button" title="Response due date">Due</button></th
+						>
 						<th data-col="timing" title="Due + posting age">Time</th>
-						<th data-col="days"><button class="opp-sort-btn" data-sort="dueDays" type="button" title="Days until due">D</button></th>
-						<th data-col="posted"><button class="opp-sort-btn" data-sort="postedDays" type="button" title="Days since posted">Since</button></th>
-						<th data-col="intel"><button class="opp-sort-btn" data-sort="detailLen" type="button" title="Intel depth">I</button></th>
-						<th data-col="files"><button class="opp-sort-btn" data-sort="files" type="button" title="Attachment count">F</button></th>
-						<th data-col="awards"><button class="opp-sort-btn" data-sort="awardSignal" type="button" title="Award history count">A</button></th>
-						<th data-col="corrob"><button class="opp-sort-btn" data-sort="crossData" type="button" title="Cross-data corroboration">Cor</button></th>
+						<th data-col="days"
+							><button class="opp-sort-btn" data-sort="dueDays" type="button" title="Days until due">D</button></th
+						>
+						<th data-col="posted"
+							><button class="opp-sort-btn" data-sort="postedDays" type="button" title="Days since posted">Since</button
+							></th
+						>
+						<th data-col="intel"
+							><button class="opp-sort-btn" data-sort="detailLen" type="button" title="Intel depth">I</button></th
+						>
+						<th data-col="files"
+							><button class="opp-sort-btn" data-sort="files" type="button" title="Attachment count">F</button></th
+						>
+						<th data-col="awards"
+							><button class="opp-sort-btn" data-sort="awardSignal" type="button" title="Award history count">A</button
+							></th
+						>
+						<th data-col="corrob"
+							><button class="opp-sort-btn" data-sort="crossData" type="button" title="Cross-data corroboration"
+								>Cor</button
+							></th
+						>
 						<th data-col="signals" title="I/F/A/U/C/Cf combined">Signals</th>
 						<th data-col="notice"><button class="opp-sort-btn" data-sort="noticeType" type="button">Type</button></th>
 						<th data-col="title"><button class="opp-sort-btn" data-sort="title" type="button">Title</button></th>
-						<th data-col="sol"><button class="opp-sort-btn" data-sort="solicitationNumber" type="button">Sol #</button></th>
+						<th data-col="sol"
+							><button class="opp-sort-btn" data-sort="solicitationNumber" type="button">Sol #</button></th
+						>
 						<th data-col="client"><button class="opp-sort-btn" data-sort="client" type="button">Client</button></th>
 						<th data-col="agency"><button class="opp-sort-btn" data-sort="agency" type="button">Agency</button></th>
 						<th data-col="work"><button class="opp-sort-btn" data-sort="workType" type="button">Work</button></th>
 						<th data-col="naics"><button class="opp-sort-btn" data-sort="naics" type="button">NAICS</button></th>
-						<th data-col="events"><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Events</button></th>
+						<th data-col="events"
+							><button class="opp-sort-btn" data-sort="mappedEvents" type="button">Events</button></th
+						>
 					</tr>
 				</thead>
 				<tbody id="opp-table-body"></tbody>
@@ -1152,7 +1385,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<p class="opp-modal-section-title mt-3">Government POCs</p>
 					<ul id="opp-modal-gov-pocs" class="opp-modal-events"></ul>
 					<p class="opp-modal-section-title mt-3">Event drilldown</p>
-					<div id="opp-modal-event-detail" class="opp-modal-event-detail">Select a mapped event to inspect the event context without leaving this view.</div>
+					<div id="opp-modal-event-detail" class="opp-modal-event-detail">
+						Select a mapped event to inspect the event context without leaving this view.
+					</div>
 					<p class="opp-modal-section-title mt-3">USAspending corroboration</p>
 					<ul id="opp-modal-usaspending-list" class="opp-modal-events"></ul>
 					<p class="opp-modal-section-title mt-3">Evidence provenance</p>
@@ -1162,12 +1397,22 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		</div>
 	</div>
 
-	<script id="opp-data" type="application/json" set:html={opportunitiesJson}></script>
+	<script id="opp-data" type="application/json" set:html={opportunitiesJson} />
 	<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 	<script is:inline>
 		(() => {
 			const raw = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
-			const focusTerms = ['software', 'cloud', 'ai', 'machine learning', 'cyber', 'data', 'analytics', 'devsecops', 'zero trust'];
+			const focusTerms = [
+				'software',
+				'cloud',
+				'ai',
+				'machine learning',
+				'cyber',
+				'data',
+				'analytics',
+				'devsecops',
+				'zero trust',
+			];
 
 			const el = {
 				search: document.getElementById('opp-filter-search'),
@@ -1303,12 +1548,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
 			};
 
-			const escapeHtml = (value) => String(value ?? '')
-				.replaceAll('&', '&amp;')
-				.replaceAll('<', '&lt;')
-				.replaceAll('>', '&gt;')
-				.replaceAll('"', '&quot;')
-				.replaceAll("'", '&#39;');
+			const escapeHtml = (value) =>
+				String(value ?? '')
+					.replaceAll('&', '&amp;')
+					.replaceAll('<', '&lt;')
+					.replaceAll('>', '&gt;')
+					.replaceAll('"', '&quot;')
+					.replaceAll("'", '&#39;');
 
 			const contextualEventHref = (href, row) => {
 				const rawHref = String(href || '').trim();
@@ -1328,24 +1574,37 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			};
 
 			const formatDetailPreviewHtml = (value) => {
-				const text = String(value || '').replace(/\r\n?/g, '\n').trim();
+				const text = String(value || '')
+					.replace(/\r\n?/g, '\n')
+					.trim();
 				if (!text) return '';
-				const blocks = text.split(/\n{2,}/).map((block) => block.trim()).filter(Boolean);
-				return blocks.map((block) => {
-					const lines = block.split('\n').map((line) => line.trim()).filter(Boolean);
-					if (!lines.length) return '';
-					const ordered = lines.every((line) => /^\d+[.)]\s+/.test(line));
-					const bulleted = lines.every((line) => /^[-*•]\s+/.test(line) || /^\d+[.)]\s+/.test(line));
-					if (ordered || bulleted) {
-						const tag = ordered ? 'ol' : 'ul';
-						const items = lines.map((line) => line.replace(/^([-*•]|\d+[.)])\s+/, '').trim()).map((line) => `<li>${escapeHtml(line)}</li>`).join('');
-						return `<${tag} class="opp-detail-list">${items}</${tag}>`;
-					}
-					if (lines.length === 1 && lines[0].length <= 90 && /:$/.test(lines[0])) {
-						return `<h4 class="opp-detail-subhead">${escapeHtml(lines[0].replace(/:$/, ''))}</h4>`;
-					}
-					return `<p>${lines.map((line) => escapeHtml(line)).join('<br>')}</p>`;
-				}).join('');
+				const blocks = text
+					.split(/\n{2,}/)
+					.map((block) => block.trim())
+					.filter(Boolean);
+				return blocks
+					.map((block) => {
+						const lines = block
+							.split('\n')
+							.map((line) => line.trim())
+							.filter(Boolean);
+						if (!lines.length) return '';
+						const ordered = lines.every((line) => /^\d+[.)]\s+/.test(line));
+						const bulleted = lines.every((line) => /^[-*•]\s+/.test(line) || /^\d+[.)]\s+/.test(line));
+						if (ordered || bulleted) {
+							const tag = ordered ? 'ol' : 'ul';
+							const items = lines
+								.map((line) => line.replace(/^([-*•]|\d+[.)])\s+/, '').trim())
+								.map((line) => `<li>${escapeHtml(line)}</li>`)
+								.join('');
+							return `<${tag} class="opp-detail-list">${items}</${tag}>`;
+						}
+						if (lines.length === 1 && lines[0].length <= 90 && /:$/.test(lines[0])) {
+							return `<h4 class="opp-detail-subhead">${escapeHtml(lines[0].replace(/:$/, ''))}</h4>`;
+						}
+						return `<p>${lines.map((line) => escapeHtml(line)).join('<br>')}</p>`;
+					})
+					.join('');
 			};
 
 			const attachmentLabel = (value) => {
@@ -1375,17 +1634,65 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			};
 
 			const workTypeRules = [
-				{ key: 'software', label: 'Software Delivery', terms: ['software', 'application', 'app dev', 'devsecops', 'code', 'platform engineering'] },
-				{ key: 'cloud', label: 'Cloud Infrastructure', terms: ['cloud', 'aws', 'azure', 'kubernetes', 'container', 'hosting'] },
-				{ key: 'ai', label: 'AI/ML & Autonomy', terms: ['artificial intelligence', 'machine learning', ' ai ', 'autonomy', 'autonomous', 'llm', 'model training'] },
-				{ key: 'cyber', label: 'Cybersecurity', terms: ['cyber', 'zero trust', 'rmf', 'iam', 'security', 'soc', 'defensive cyber'] },
+				{
+					key: 'software',
+					label: 'Software Delivery',
+					terms: ['software', 'application', 'app dev', 'devsecops', 'code', 'platform engineering'],
+				},
+				{
+					key: 'cloud',
+					label: 'Cloud Infrastructure',
+					terms: ['cloud', 'aws', 'azure', 'kubernetes', 'container', 'hosting'],
+				},
+				{
+					key: 'ai',
+					label: 'AI/ML & Autonomy',
+					terms: [
+						'artificial intelligence',
+						'machine learning',
+						' ai ',
+						'autonomy',
+						'autonomous',
+						'llm',
+						'model training',
+					],
+				},
+				{
+					key: 'cyber',
+					label: 'Cybersecurity',
+					terms: ['cyber', 'zero trust', 'rmf', 'iam', 'security', 'soc', 'defensive cyber'],
+				},
 				{ key: 'data', label: 'Data & Analytics', terms: ['data', 'analytics', 'bi', 'etl', 'database', 'data lake'] },
-				{ key: 'engineering', label: 'Engineering/SETA', terms: ['engineering', 'seta', 'technical assistance', 'systems engineering'] },
-				{ key: 'hardware', label: 'Hardware/Platforms', terms: ['hardware', 'sensor', 'payload', 'platform', 'c5isr', 'integration'] },
-				{ key: 'logistics', label: 'Logistics/Sustainment', terms: ['logistics', 'sustainment', 'maintenance', 'lifecycle support', 'fielding'] },
-				{ key: 'training', label: 'Training/Exercise', terms: ['training', 'exercise', 'instruction', 'courseware', 'simulation'] },
-				{ key: 'services', label: 'Professional Services', terms: ['advisory', 'consulting', 'program management', 'support services', 'staff augmentation'] },
-				{ key: 'research', label: 'R&D/Prototype', terms: ['research', 'r&d', 'prototype', 'sbir', 'innovation', 'proof of concept'] },
+				{
+					key: 'engineering',
+					label: 'Engineering/SETA',
+					terms: ['engineering', 'seta', 'technical assistance', 'systems engineering'],
+				},
+				{
+					key: 'hardware',
+					label: 'Hardware/Platforms',
+					terms: ['hardware', 'sensor', 'payload', 'platform', 'c5isr', 'integration'],
+				},
+				{
+					key: 'logistics',
+					label: 'Logistics/Sustainment',
+					terms: ['logistics', 'sustainment', 'maintenance', 'lifecycle support', 'fielding'],
+				},
+				{
+					key: 'training',
+					label: 'Training/Exercise',
+					terms: ['training', 'exercise', 'instruction', 'courseware', 'simulation'],
+				},
+				{
+					key: 'services',
+					label: 'Professional Services',
+					terms: ['advisory', 'consulting', 'program management', 'support services', 'staff augmentation'],
+				},
+				{
+					key: 'research',
+					label: 'R&D/Prototype',
+					terms: ['research', 'r&d', 'prototype', 'sbir', 'innovation', 'proof of concept'],
+				},
 			];
 			const workTypeLabel = Object.fromEntries(workTypeRules.map((rule) => [rule.key, rule.label]));
 			workTypeLabel.general = 'General/Other';
@@ -1394,7 +1701,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const normalizedBlob = ` ${String(blob || '').toLowerCase()} `;
 				const matched = [];
 				for (const rule of workTypeRules) {
-					if (rule.terms.some((term) => normalizedBlob.includes(` ${String(term).toLowerCase()} `) || normalizedBlob.includes(String(term).toLowerCase()))) {
+					if (
+						rule.terms.some(
+							(term) =>
+								normalizedBlob.includes(` ${String(term).toLowerCase()} `) ||
+								normalizedBlob.includes(String(term).toLowerCase()),
+						)
+					) {
 						matched.push(rule.key);
 					}
 				}
@@ -1421,7 +1734,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					...(row.branches || []),
 					...(row.capabilityAreas || []),
 					...(row.missionThreads || []),
-				].join(' ').toLowerCase();
+				]
+					.join(' ')
+					.toLowerCase();
 				const workTypes = inferWorkTypes(row, blob);
 				const primaryWorkType = workTypes[0] || 'general';
 
@@ -1431,20 +1746,44 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const resourceCount = Number(row.resourceCount || 0);
 				const awardSignalCount = Number(row.awardSignalCount || 0);
 				const usaspendingSignal = row.usaspendingSignal || {};
-				const usaspendingMatchCount = Number(usaspendingSignal.matched_award_count ?? usaspendingSignal.matchedAwardCount ?? row.usaspendingMatchCount ?? 0);
-				const usaspendingAmount = Number(usaspendingSignal.total_award_amount ?? usaspendingSignal.totalAwardAmount ?? row.usaspendingAmount ?? 0);
+				const usaspendingMatchCount = Number(
+					usaspendingSignal.matched_award_count ??
+						usaspendingSignal.matchedAwardCount ??
+						row.usaspendingMatchCount ??
+						0,
+				);
+				const usaspendingAmount = Number(
+					usaspendingSignal.total_award_amount ?? usaspendingSignal.totalAwardAmount ?? row.usaspendingAmount ?? 0,
+				);
 				const crossDataSignal = row.crossDataSignal || {};
 				const corroborationScore = Number(crossDataSignal.score || 0);
 				const corroborationLevel = String(crossDataSignal.level || 'None');
 				const fpdsSignal = row.fpdsSignal || row.fpds_signal || {};
-				const fpdsAlignmentScore = Number(fpdsSignal.alignment_score ?? fpdsSignal.alignmentScore ?? row.fpdsAlignmentScore ?? 0);
-				const fpdsAlignmentLevel = String(fpdsSignal.alignment_level ?? fpdsSignal.alignmentLevel ?? row.fpdsAlignmentLevel ?? 'None');
-				const fpdsCanonicalPiid = String(fpdsSignal.canonical_piid ?? fpdsSignal.canonicalPiid ?? row.fpdsCanonicalPiid ?? '').trim() || null;
-				const usaspendingQueryType = String(usaspendingSignal.query_type || usaspendingSignal.queryType || '').toLowerCase();
-				const usaspendingQueryConfidence = String(usaspendingSignal.query_confidence || usaspendingSignal.queryConfidence || row.usaspendingQueryConfidence || '').trim() || 'Low';
-				const usaspendingCheckedAt = String(usaspendingSignal.checked_at || usaspendingSignal.checkedAt || '').trim() || null;
+				const fpdsAlignmentScore = Number(
+					fpdsSignal.alignment_score ?? fpdsSignal.alignmentScore ?? row.fpdsAlignmentScore ?? 0,
+				);
+				const fpdsAlignmentLevel = String(
+					fpdsSignal.alignment_level ?? fpdsSignal.alignmentLevel ?? row.fpdsAlignmentLevel ?? 'None',
+				);
+				const fpdsCanonicalPiid =
+					String(fpdsSignal.canonical_piid ?? fpdsSignal.canonicalPiid ?? row.fpdsCanonicalPiid ?? '').trim() || null;
+				const usaspendingQueryType = String(
+					usaspendingSignal.query_type || usaspendingSignal.queryType || '',
+				).toLowerCase();
+				const usaspendingQueryConfidence =
+					String(
+						usaspendingSignal.query_confidence ||
+							usaspendingSignal.queryConfidence ||
+							row.usaspendingQueryConfidence ||
+							'',
+					).trim() || 'Low';
+				const usaspendingCheckedAt =
+					String(usaspendingSignal.checked_at || usaspendingSignal.checkedAt || '').trim() || null;
 				const usaspendingCheckedEpoch = toDayEpoch(usaspendingCheckedAt);
-				const usaspendingAgeDays = usaspendingCheckedEpoch === null ? null : Math.max(0, Math.round((todayDay - usaspendingCheckedEpoch) / dayMs));
+				const usaspendingAgeDays =
+					usaspendingCheckedEpoch === null
+						? null
+						: Math.max(0, Math.round((todayDay - usaspendingCheckedEpoch) / dayMs));
 				const usaspendingError = String(usaspendingSignal.error || '').trim();
 				const governmentPocRefs = Array.isArray(row.governmentPocRefs) ? row.governmentPocRefs : [];
 				const governmentPocCount = Number(row.governmentPocCount || governmentPocRefs.length || 0);
@@ -1468,7 +1807,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				else if (usaspendingAgeDays !== null && usaspendingAgeDays > 7) confidenceScore -= 4;
 				if (usaspendingError) confidenceScore -= 22;
 				confidenceScore = Math.max(0, Math.min(100, Math.round(confidenceScore)));
-				const confidenceLevel = confidenceScore >= 70 ? 'High' : (confidenceScore >= 45 ? 'Medium' : 'Low');
+				const confidenceLevel = confidenceScore >= 70 ? 'High' : confidenceScore >= 45 ? 'Medium' : 'Low';
 				let intelDepthScore = 0;
 				if (detailTextLength > 0) intelDepthScore += Math.min(18, Math.max(2, Math.round(detailTextLength / 1400)));
 				if (resourceCount > 0) intelDepthScore += Math.min(10, resourceCount * 2);
@@ -1501,36 +1840,57 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (usaspendingAmount >= 5_000_000) gemScore += 2;
 				if (row.uiLink) gemScore += 2;
 
-				const freshnessSignal = usaspendingMatchCount <= 0
-					? 35
-					: (usaspendingAgeDays === null ? 55 : usaspendingAgeDays <= 3 ? 100 : usaspendingAgeDays <= 7 ? 75 : usaspendingAgeDays <= 14 ? 50 : 25);
+				const freshnessSignal =
+					usaspendingMatchCount <= 0
+						? 35
+						: usaspendingAgeDays === null
+							? 55
+							: usaspendingAgeDays <= 3
+								? 100
+								: usaspendingAgeDays <= 7
+									? 75
+									: usaspendingAgeDays <= 14
+										? 50
+										: 25;
 				let eventLeverageScore = 0;
 				eventLeverageScore += Math.min(34, eventCount * 10);
 				eventLeverageScore += Math.min(36, governmentPocCount * 12);
 				if (eventCount > 0 && dueDays !== null && dueDays >= 0 && dueDays <= 60) eventLeverageScore += 16;
 				if (eventCount > 0 && dueDays !== null && dueDays < 0) eventLeverageScore -= 16;
 				eventLeverageScore = Math.max(0, Math.min(100, Math.round(eventLeverageScore)));
-				const eventPriority = eventLeverageScore >= 70 ? 'Attend' : (eventLeverageScore >= 45 ? 'Selective' : (eventLeverageScore > 0 ? 'Monitor' : 'None'));
+				const eventPriority =
+					eventLeverageScore >= 70
+						? 'Attend'
+						: eventLeverageScore >= 45
+							? 'Selective'
+							: eventLeverageScore > 0
+								? 'Monitor'
+								: 'None';
 
 				let responseWorthinessScore = Math.round(
-					(Math.min(100, gemScore * 2) * 0.32)
-					+ (confidenceScore * 0.28)
-					+ (Math.min(100, Math.round(corroborationScore * 1.25)) * 0.2)
-					+ (Math.min(100, fpdsAlignmentScore) * 0.12)
-					+ (freshnessSignal * 0.08)
+					Math.min(100, gemScore * 2) * 0.32 +
+						confidenceScore * 0.28 +
+						Math.min(100, Math.round(corroborationScore * 1.25)) * 0.2 +
+						Math.min(100, fpdsAlignmentScore) * 0.12 +
+						freshnessSignal * 0.08,
 				);
 				if (dueDays !== null && dueDays < 0) responseWorthinessScore -= 30;
 				if (usaspendingError) responseWorthinessScore -= 8;
 				if (eventLeverageScore >= 70) responseWorthinessScore += 5;
 				responseWorthinessScore = Math.max(0, Math.min(100, Math.round(responseWorthinessScore)));
-				const responseDecision = responseWorthinessScore >= 70
-					? 'Pursue now'
-					: (responseWorthinessScore >= 45 ? 'Watch / qualify' : 'Skip for now');
-				const decisionClass = responseWorthinessScore >= 70 ? 'pursue' : (responseWorthinessScore >= 45 ? 'watch' : 'skip');
+				const responseDecision =
+					responseWorthinessScore >= 70
+						? 'Pursue now'
+						: responseWorthinessScore >= 45
+							? 'Watch / qualify'
+							: 'Skip for now';
+				const decisionClass =
+					responseWorthinessScore >= 70 ? 'pursue' : responseWorthinessScore >= 45 ? 'watch' : 'skip';
 				const decisionReasons = [];
 				if (confidenceScore >= 70) decisionReasons.push('High confidence corroboration');
 				if (fpdsAlignmentScore >= 45) decisionReasons.push('Identifier continuity present');
-				if (governmentPocCount > 0) decisionReasons.push(`${governmentPocCount} government POC${governmentPocCount === 1 ? '' : 's'} published`);
+				if (governmentPocCount > 0)
+					decisionReasons.push(`${governmentPocCount} government POC${governmentPocCount === 1 ? '' : 's'} published`);
 				if (dueDays !== null && dueDays >= 0 && dueDays <= 30) decisionReasons.push('Near-term response window');
 				if (usaspendingError) decisionReasons.push('3P signal fetch error');
 				if (usaspendingAgeDays !== null && usaspendingAgeDays > 14) decisionReasons.push('3P corroboration is stale');
@@ -1573,7 +1933,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					responseDecision,
 					decisionClass,
 					decisionReasons,
-					searchBlob: `${blob} ${workTypes.map((key) => workTypeLabel[key] || key).join(' ').toLowerCase()}`,
+					searchBlob: `${blob} ${workTypes
+						.map((key) => workTypeLabel[key] || key)
+						.join(' ')
+						.toLowerCase()}`,
 					focusMatches,
 					gemScore,
 					agencyLabel: agencyLabelText,
@@ -1621,10 +1984,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				pursueNow: items.filter((row) => String(row.decisionClass || '') === 'pursue').length,
 				govPocRows: items.filter((row) => safeNum(row.governmentPocCount) > 0).length,
 				thirdPartyErrors: items.filter((row) => String(row.usaspendingError || '').trim()).length,
-				exactMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && safeNum(row.usaspendingMatchCount) > 0).length,
-				fallbackMatches: items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && safeNum(row.usaspendingMatchCount) > 0).length,
-				freshChecks: items.filter((row) => safeNum(row.usaspendingMatchCount) > 0 && safeNum(row.usaspendingAgeDays) <= 3).length,
-				staleChecks: items.filter((row) => safeNum(row.usaspendingMatchCount) > 0 && safeNum(row.usaspendingAgeDays) > 14).length,
+				exactMatches: items.filter(
+					(row) =>
+						String(row.usaspendingQueryType || '').includes('solicitation') && safeNum(row.usaspendingMatchCount) > 0,
+				).length,
+				fallbackMatches: items.filter(
+					(row) =>
+						String(row.usaspendingQueryType || '').includes('fallback') && safeNum(row.usaspendingMatchCount) > 0,
+				).length,
+				freshChecks: items.filter(
+					(row) => safeNum(row.usaspendingMatchCount) > 0 && safeNum(row.usaspendingAgeDays) <= 3,
+				).length,
+				staleChecks: items.filter(
+					(row) => safeNum(row.usaspendingMatchCount) > 0 && safeNum(row.usaspendingAgeDays) > 14,
+				).length,
 				ts: Date.now(),
 			});
 			const readSnapshot = () => {
@@ -1656,9 +2029,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			};
 			let pendingAutoOpenNoticeId = incomingContext.open ? incomingContext.opp : '';
 
-			const normalizeNoticeId = (value) => String(value || '')
-				.toLowerCase()
-				.replace(/[^a-z0-9]/g, '');
+			const normalizeNoticeId = (value) =>
+				String(value || '')
+					.toLowerCase()
+					.replace(/[^a-z0-9]/g, '');
 
 			const findRowByNoticeId = (noticeId) => {
 				const target = normalizeNoticeId(noticeId);
@@ -1680,7 +2054,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						el.eventContextText.textContent = label;
 					}
 					if (el.eventContextBack) {
-						const baseHref = el.eventContextBack.dataset.baseHref || el.eventContextBack.getAttribute('href') || '/events/';
+						const baseHref =
+							el.eventContextBack.dataset.baseHref || el.eventContextBack.getAttribute('href') || '/events/';
 						if (!el.eventContextBack.dataset.baseHref) el.eventContextBack.dataset.baseHref = baseHref;
 						const [basePath] = String(baseHref).split('#');
 						el.eventContextBack.setAttribute('href', `${basePath}#${encodeURIComponent(incomingContext.eventId)}`);
@@ -1780,12 +2155,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const compareRows = (a, b) => {
 				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
 				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
-				if (state.sort === 'response') return (b.responseWorthinessScore || 0) - (a.responseWorthinessScore || 0) || b.gemScore - a.gemScore;
-				if (state.sort === 'event') return (b.eventLeverageScore || 0) - (a.eventLeverageScore || 0) || b.gemScore - a.gemScore;
-				if (state.sort === 'intel') return (b.intelDepthScore || 0) - (a.intelDepthScore || 0) || b.gemScore - a.gemScore;
-				if (state.sort === 'awards') return (b.awardSignalCount || 0) - (a.awardSignalCount || 0) || b.gemScore - a.gemScore;
-				if (state.sort === 'corroboration') return (b.corroborationScore || 0) - (a.corroborationScore || 0) || b.gemScore - a.gemScore;
-				if (state.sort === 'confidence') return (b.confidenceScore || 0) - (a.confidenceScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'response')
+					return (b.responseWorthinessScore || 0) - (a.responseWorthinessScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'event')
+					return (b.eventLeverageScore || 0) - (a.eventLeverageScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'intel')
+					return (b.intelDepthScore || 0) - (a.intelDepthScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'awards')
+					return (b.awardSignalCount || 0) - (a.awardSignalCount || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'corroboration')
+					return (b.corroborationScore || 0) - (a.corroborationScore || 0) || b.gemScore - a.gemScore;
+				if (state.sort === 'confidence')
+					return (b.confidenceScore || 0) - (a.confidenceScore || 0) || b.gemScore - a.gemScore;
 				if (state.sort === 'client') return a.clientLabel.localeCompare(b.clientLabel) || b.gemScore - a.gemScore;
 				if (state.sort === 'work') return a.workTypeLabel.localeCompare(b.workTypeLabel) || b.gemScore - a.gemScore;
 				if (state.sort === 'posted') return (b.postedEpoch || 0) - (a.postedEpoch || 0) || b.gemScore - a.gemScore;
@@ -1797,30 +2178,31 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return b.gemScore - a.gemScore || b.weight - a.weight;
 			};
 
-			const filterRows = () => rows
-				.filter((row) => {
-					if (state.search && !row.searchBlob.includes(state.search)) return false;
-					if (state.type !== 'all' && row.noticeType !== state.type) return false;
-					if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
-					if (state.client !== 'all' && row.clientLabel !== state.client) return false;
-					if (state.work !== 'all' && !(row.workTypes || []).includes(state.work)) return false;
-					if (state.naicsFilter && String(row.naicsCode || '') !== String(state.naicsFilter || '')) return false;
-					if (!inDueWindow(row)) return false;
-					if (!intelFilterMatch(row)) return false;
-					if (!confidenceFilterMatch(row)) return false;
-					if (!thirdPartyFilterMatch(row)) return false;
-					if (!fpdsFilterMatch(row)) return false;
-					if (!decisionFilterMatch(row)) return false;
-					if (Number(row.weight || 0) < state.minWeight) return false;
-					if (state.focusOnly && row.focusMatches < 1) return false;
-					if (state.fastMode) {
-						if (Number(row.confidenceScore || 0) < 70) return false;
-						if (row.dueDays === null || row.dueDays < 0) return false;
-						if (row.focusMatches < 1) return false;
-					}
-					return true;
-				})
-				.sort(compareRows);
+			const filterRows = () =>
+				rows
+					.filter((row) => {
+						if (state.search && !row.searchBlob.includes(state.search)) return false;
+						if (state.type !== 'all' && row.noticeType !== state.type) return false;
+						if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
+						if (state.client !== 'all' && row.clientLabel !== state.client) return false;
+						if (state.work !== 'all' && !(row.workTypes || []).includes(state.work)) return false;
+						if (state.naicsFilter && String(row.naicsCode || '') !== String(state.naicsFilter || '')) return false;
+						if (!inDueWindow(row)) return false;
+						if (!intelFilterMatch(row)) return false;
+						if (!confidenceFilterMatch(row)) return false;
+						if (!thirdPartyFilterMatch(row)) return false;
+						if (!fpdsFilterMatch(row)) return false;
+						if (!decisionFilterMatch(row)) return false;
+						if (Number(row.weight || 0) < state.minWeight) return false;
+						if (state.focusOnly && row.focusMatches < 1) return false;
+						if (state.fastMode) {
+							if (Number(row.confidenceScore || 0) < 70) return false;
+							if (row.dueDays === null || row.dueDays < 0) return false;
+							if (row.focusMatches < 1) return false;
+						}
+						return true;
+					})
+					.sort(compareRows);
 
 			const countBy = (items, getKey) => {
 				const map = new Map();
@@ -1851,12 +2233,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}
 				const top = entries.slice(0, 12);
 				const max = Math.max(...top.map(([, value]) => Number(value || 0)), 1);
-				container.innerHTML = top.map(([label, value], idx) => {
-					const pct = Math.max(4, Math.round((Number(value) / max) * 100));
-					const interactiveClass = onClick ? ' is-clickable' : '';
-					const interactiveAttrs = onClick ? ' role="button" tabindex="0"' : '';
-					return `<div class="opp-bar-row${interactiveClass}" data-idx="${idx}"${interactiveAttrs}><span class="opp-bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</span><span class="opp-bar-track"><span class="opp-bar-fill" style="width:${pct}%"></span></span><span class="opp-bar-value">${value}</span></div>`;
-				}).join('');
+				container.innerHTML = top
+					.map(([label, value], idx) => {
+						const pct = Math.max(4, Math.round((Number(value) / max) * 100));
+						const interactiveClass = onClick ? ' is-clickable' : '';
+						const interactiveAttrs = onClick ? ' role="button" tabindex="0"' : '';
+						return `<div class="opp-bar-row${interactiveClass}" data-idx="${idx}"${interactiveAttrs}><span class="opp-bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</span><span class="opp-bar-track"><span class="opp-bar-fill" style="width:${pct}%"></span></span><span class="opp-bar-value">${value}</span></div>`;
+					})
+					.join('');
 
 				if (onClick) {
 					for (const row of container.querySelectorAll('.opp-bar-row.is-clickable')) {
@@ -1891,9 +2275,24 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					urgencyChart.setOption({
 						animationDuration: 220,
 						grid: { top: 8, right: 12, bottom: 16, left: 74 },
-						xAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						yAxis: { type: 'category', data: urgency.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 10 } },
-						series: [{ type: 'bar', data: urgency.map(([, value]) => value), itemStyle: { color: '#2dd4bf', borderRadius: [0, 2, 2, 0] }, barWidth: '62%' }],
+						xAxis: {
+							type: 'value',
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						yAxis: {
+							type: 'category',
+							data: urgency.map(([label]) => label),
+							axisLabel: { color: '#cbd5e1', fontSize: 10 },
+						},
+						series: [
+							{
+								type: 'bar',
+								data: urgency.map(([, value]) => value),
+								itemStyle: { color: '#2dd4bf', borderRadius: [0, 2, 2, 0] },
+								barWidth: '62%',
+							},
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!urgencyChart.__boundClick) {
@@ -1939,8 +2338,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						animationDuration: 220,
 						grid: { top: 8, right: 12, bottom: 38, left: 36 },
 						xAxis: { type: 'category', data: labels, axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 20 } },
-						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{ type: 'bar', data: values, itemStyle: { color: '#14b8a6', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 28 }],
+						yAxis: {
+							type: 'value',
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						series: [
+							{
+								type: 'bar',
+								data: values,
+								itemStyle: { color: '#14b8a6', borderRadius: [2, 2, 0, 0] },
+								barMaxWidth: 28,
+							},
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!typesChart.__boundClick) {
@@ -1967,9 +2377,24 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					agencyChart.setOption({
 						animationDuration: 220,
 						grid: { top: 8, right: 12, bottom: 12, left: 132 },
-						xAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						yAxis: { type: 'category', data: byClient.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9, overflow: 'truncate', width: 124 } },
-						series: [{ type: 'bar', data: byClient.map(([, value]) => value), itemStyle: { color: '#0ea5e9', borderRadius: [0, 2, 2, 0] }, barWidth: '56%' }],
+						xAxis: {
+							type: 'value',
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						yAxis: {
+							type: 'category',
+							data: byClient.map(([label]) => label),
+							axisLabel: { color: '#cbd5e1', fontSize: 9, overflow: 'truncate', width: 124 },
+						},
+						series: [
+							{
+								type: 'bar',
+								data: byClient.map(([, value]) => value),
+								itemStyle: { color: '#0ea5e9', borderRadius: [0, 2, 2, 0] },
+								barWidth: '56%',
+							},
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!agencyChart.__boundClick) {
@@ -1998,9 +2423,24 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					workChart.setOption({
 						animationDuration: 220,
 						grid: { top: 10, right: 12, bottom: 44, left: 28 },
-						xAxis: { type: 'category', data: byWork.map(([key]) => workTypeLabel[key] || key), axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 22 } },
-						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{ type: 'bar', data: byWork.map(([, value]) => value), itemStyle: { color: '#38bdf8', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 28 }],
+						xAxis: {
+							type: 'category',
+							data: byWork.map(([key]) => workTypeLabel[key] || key),
+							axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 22 },
+						},
+						yAxis: {
+							type: 'value',
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						series: [
+							{
+								type: 'bar',
+								data: byWork.map(([, value]) => value),
+								itemStyle: { color: '#38bdf8', borderRadius: [2, 2, 0, 0] },
+								barMaxWidth: 28,
+							},
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!workChart.__boundClick) {
@@ -2015,14 +2455,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						workChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.workmix, byWork.map(([key, count]) => [workTypeLabel[key] || key, count]), 'No work profile data', (label, value) => {
-						if (Number(value || 0) <= 0) return;
-						const key = byWork.find(([ruleKey]) => (workTypeLabel[ruleKey] || ruleKey) === label)?.[0] || 'all';
-						state.work = state.work === key ? 'all' : key;
-						if (el.work) el.work.value = state.work;
-						tableState.page = 1;
-						render();
-					});
+					renderBars(
+						el.workmix,
+						byWork.map(([key, count]) => [workTypeLabel[key] || key, count]),
+						'No work profile data',
+						(label, value) => {
+							if (Number(value || 0) <= 0) return;
+							const key = byWork.find(([ruleKey]) => (workTypeLabel[ruleKey] || ruleKey) === label)?.[0] || 'all';
+							state.work = state.work === key ? 'all' : key;
+							if (el.work) el.work.value = state.work;
+							tableState.page = 1;
+							render();
+						},
+					);
 				}
 
 				const byNaics = countBy(items, (r) => r.naicsCode || null).slice(0, 10);
@@ -2031,9 +2476,24 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					naicsChart.setOption({
 						animationDuration: 220,
 						grid: { top: 10, right: 10, bottom: 38, left: 28 },
-						xAxis: { type: 'category', data: byNaics.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 18 } },
-						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{ type: 'bar', data: byNaics.map(([, value]) => value), itemStyle: { color: '#a78bfa', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 26 }],
+						xAxis: {
+							type: 'category',
+							data: byNaics.map(([label]) => label),
+							axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 18 },
+						},
+						yAxis: {
+							type: 'value',
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						series: [
+							{
+								type: 'bar',
+								data: byNaics.map(([, value]) => value),
+								itemStyle: { color: '#a78bfa', borderRadius: [2, 2, 0, 0] },
+								barMaxWidth: 26,
+							},
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!naicsChart.__boundClick) {
@@ -2062,17 +2522,45 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					['FPDS Med+', items.filter((r) => Number(r.fpdsAlignmentScore || 0) >= 45).length],
 					['Gov POC rows', items.filter((r) => Number(r.governmentPocCount || 0) > 0).length],
 					['3P errors', items.filter((r) => String(r.usaspendingError || '').trim()).length],
-					['Exact query', items.filter((r) => String(r.usaspendingQueryType || '').includes('solicitation') && Number(r.usaspendingMatchCount || 0) > 0).length],
-					['Fallback query', items.filter((r) => String(r.usaspendingQueryType || '').includes('fallback') && Number(r.usaspendingMatchCount || 0) > 0).length],
+					[
+						'Exact query',
+						items.filter(
+							(r) =>
+								String(r.usaspendingQueryType || '').includes('solicitation') &&
+								Number(r.usaspendingMatchCount || 0) > 0,
+						).length,
+					],
+					[
+						'Fallback query',
+						items.filter(
+							(r) =>
+								String(r.usaspendingQueryType || '').includes('fallback') && Number(r.usaspendingMatchCount || 0) > 0,
+						).length,
+					],
 				];
 				const sourcesChart = initChart('sources', el.sources);
 				if (sourcesChart) {
 					sourcesChart.setOption({
 						animationDuration: 220,
 						grid: { top: 8, right: 10, bottom: 42, left: 28 },
-						xAxis: { type: 'category', data: sourceBuckets.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 20 } },
-						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{ type: 'bar', data: sourceBuckets.map(([, value]) => value), itemStyle: { color: '#0ea5e9', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 28 }],
+						xAxis: {
+							type: 'category',
+							data: sourceBuckets.map(([label]) => label),
+							axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 20 },
+						},
+						yAxis: {
+							type: 'value',
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						series: [
+							{
+								type: 'bar',
+								data: sourceBuckets.map(([, value]) => value),
+								itemStyle: { color: '#0ea5e9', borderRadius: [2, 2, 0, 0] },
+								barMaxWidth: 28,
+							},
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!sourcesChart.__boundClick) {
@@ -2119,20 +2607,67 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}
 
 				const freshnessBuckets = [
-					['0-1d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) <= 1).length],
-					['2-3d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) >= 2 && Number(r.usaspendingAgeDays || 9999) <= 3).length],
-					['4-7d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) >= 4 && Number(r.usaspendingAgeDays || 9999) <= 7).length],
-					['8-14d', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) >= 8 && Number(r.usaspendingAgeDays || 9999) <= 14).length],
-					['15d+', items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) > 14).length],
+					[
+						'0-1d',
+						items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) <= 1)
+							.length,
+					],
+					[
+						'2-3d',
+						items.filter(
+							(r) =>
+								Number(r.usaspendingMatchCount || 0) > 0 &&
+								Number(r.usaspendingAgeDays || 9999) >= 2 &&
+								Number(r.usaspendingAgeDays || 9999) <= 3,
+						).length,
+					],
+					[
+						'4-7d',
+						items.filter(
+							(r) =>
+								Number(r.usaspendingMatchCount || 0) > 0 &&
+								Number(r.usaspendingAgeDays || 9999) >= 4 &&
+								Number(r.usaspendingAgeDays || 9999) <= 7,
+						).length,
+					],
+					[
+						'8-14d',
+						items.filter(
+							(r) =>
+								Number(r.usaspendingMatchCount || 0) > 0 &&
+								Number(r.usaspendingAgeDays || 9999) >= 8 &&
+								Number(r.usaspendingAgeDays || 9999) <= 14,
+						).length,
+					],
+					[
+						'15d+',
+						items.filter((r) => Number(r.usaspendingMatchCount || 0) > 0 && Number(r.usaspendingAgeDays || 9999) > 14)
+							.length,
+					],
 				];
 				const freshnessChart = initChart('freshness', el.freshness);
 				if (freshnessChart) {
 					freshnessChart.setOption({
 						animationDuration: 220,
 						grid: { top: 10, right: 10, bottom: 38, left: 28 },
-						xAxis: { type: 'category', data: freshnessBuckets.map(([label]) => label), axisLabel: { color: '#cbd5e1', fontSize: 9 } },
-						yAxis: { type: 'value', axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{ type: 'bar', data: freshnessBuckets.map(([, value]) => value), itemStyle: { color: '#14b8a6', borderRadius: [2, 2, 0, 0] }, barMaxWidth: 28 }],
+						xAxis: {
+							type: 'category',
+							data: freshnessBuckets.map(([label]) => label),
+							axisLabel: { color: '#cbd5e1', fontSize: 9 },
+						},
+						yAxis: {
+							type: 'value',
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						series: [
+							{
+								type: 'bar',
+								data: freshnessBuckets.map(([, value]) => value),
+								itemStyle: { color: '#14b8a6', borderRadius: [2, 2, 0, 0] },
+								barMaxWidth: 28,
+							},
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 				} else {
@@ -2141,7 +2676,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 				const confidenceBuckets = [
 					['High', items.filter((r) => Number(r.confidenceScore || 0) >= 70).length],
-					['Medium', items.filter((r) => Number(r.confidenceScore || 0) >= 45 && Number(r.confidenceScore || 0) < 70).length],
+					[
+						'Medium',
+						items.filter((r) => Number(r.confidenceScore || 0) >= 45 && Number(r.confidenceScore || 0) < 70).length,
+					],
 					['Low', items.filter((r) => Number(r.confidenceScore || 0) < 45).length],
 				];
 				const confidenceChart = initChart('confidence', el.confidenceViz);
@@ -2149,16 +2687,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					confidenceChart.setOption({
 						animationDuration: 220,
 						legend: { bottom: 2, textStyle: { color: '#94a3b8', fontSize: 10 } },
-						series: [{
-							type: 'pie',
-							radius: ['44%', '72%'],
-							center: ['50%', '44%'],
-							label: { color: '#cbd5e1', fontSize: 10, formatter: '{b}: {c}' },
-							data: confidenceBuckets.map(([name, value]) => ({ name, value })),
-							itemStyle: {
-								color: (params) => ({ High: '#22c55e', Medium: '#38bdf8', Low: '#94a3b8' }[params.name] || '#64748b'),
+						series: [
+							{
+								type: 'pie',
+								radius: ['44%', '72%'],
+								center: ['50%', '44%'],
+								label: { color: '#cbd5e1', fontSize: 10, formatter: '{b}: {c}' },
+								data: confidenceBuckets.map(([name, value]) => ({ name, value })),
+								itemStyle: {
+									color: (params) => ({ High: '#22c55e', Medium: '#38bdf8', Low: '#94a3b8' })[params.name] || '#64748b',
+								},
 							},
-						}],
+						],
 						tooltip: { trigger: 'item', formatter: (p) => `${p.name}: ${p.value}` },
 					});
 					if (!confidenceChart.__boundClick) {
@@ -2174,42 +2714,55 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				} else {
 					renderBars(el.confidenceViz, confidenceBuckets, 'No confidence data', (label, value) => {
 						if (Number(value || 0) <= 0) return;
-						if (el.confidenceFilter) el.confidenceFilter.value = ({ High: 'high', Medium: 'medium', Low: 'low' }[label] || 'all');
+						if (el.confidenceFilter)
+							el.confidenceFilter.value = { High: 'high', Medium: 'medium', Low: 'low' }[label] || 'all';
 						tableState.page = 1;
 						render();
 					});
 				}
 
-				const scatterRows = [...items]
-					.sort((a, b) => Number(b.gemScore || 0) - Number(a.gemScore || 0))
-					.slice(0, 180);
+				const scatterRows = [...items].sort((a, b) => Number(b.gemScore || 0) - Number(a.gemScore || 0)).slice(0, 180);
 				const scatterChart = initChart('scatter', el.scatter);
 				if (scatterChart) {
 					scatterChart.setOption({
 						animationDuration: 220,
 						grid: { top: 18, right: 14, bottom: 34, left: 42 },
-						xAxis: { type: 'value', name: 'Cor', nameTextStyle: { color: '#94a3b8' }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						yAxis: { type: 'value', name: 'Gem', nameTextStyle: { color: '#94a3b8' }, axisLabel: { color: '#94a3b8', fontSize: 10 }, splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } } },
-						series: [{
-							type: 'scatter',
-							symbolSize: (val) => Math.max(7, Math.min(18, Math.round(Number(val[2] || 0) / 8) + 6)),
-							data: scatterRows.map((row) => [
-								Number(row.corroborationScore || 0),
-								Number(row.gemScore || 0),
-								Number(row.confidenceScore || 0),
-								row.title,
-								row.noticeId || row.solicitationNumber || '',
-							]),
-							itemStyle: {
-								color: (params) => {
-									const c = Number((params.value || [])[2] || 0);
-									if (c >= 70) return '#22c55e';
-									if (c >= 45) return '#38bdf8';
-									return '#94a3b8';
+						xAxis: {
+							type: 'value',
+							name: 'Cor',
+							nameTextStyle: { color: '#94a3b8' },
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						yAxis: {
+							type: 'value',
+							name: 'Gem',
+							nameTextStyle: { color: '#94a3b8' },
+							axisLabel: { color: '#94a3b8', fontSize: 10 },
+							splitLine: { lineStyle: { color: 'rgba(71,85,105,0.3)' } },
+						},
+						series: [
+							{
+								type: 'scatter',
+								symbolSize: (val) => Math.max(7, Math.min(18, Math.round(Number(val[2] || 0) / 8) + 6)),
+								data: scatterRows.map((row) => [
+									Number(row.corroborationScore || 0),
+									Number(row.gemScore || 0),
+									Number(row.confidenceScore || 0),
+									row.title,
+									row.noticeId || row.solicitationNumber || '',
+								]),
+								itemStyle: {
+									color: (params) => {
+										const c = Number((params.value || [])[2] || 0);
+										if (c >= 70) return '#22c55e';
+										if (c >= 45) return '#38bdf8';
+										return '#94a3b8';
+									},
+									opacity: 0.88,
 								},
-								opacity: 0.88,
 							},
-						}],
+						],
 						tooltip: {
 							trigger: 'item',
 							formatter: (p) => {
@@ -2229,20 +2782,32 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						scatterChart.__boundClick = true;
 					}
 				} else {
-					renderBars(el.scatter, scatterRows.slice(0, 10).map((row) => [
-						`${Math.round(row.corroborationScore || 0)}/${Math.round(row.gemScore || 0)} ${String(row.title || '').slice(0, 44)}`,
-						Number(row.confidenceScore || 0),
-					]), 'No scatter data');
+					renderBars(
+						el.scatter,
+						scatterRows
+							.slice(0, 10)
+							.map((row) => [
+								`${Math.round(row.corroborationScore || 0)}/${Math.round(row.gemScore || 0)} ${String(row.title || '').slice(0, 44)}`,
+								Number(row.confidenceScore || 0),
+							]),
+						'No scatter data',
+					);
 				}
 
-				const heatClients = countBy(items, (r) => r.clientLabel).slice(0, 8).map(([label]) => label);
-				const heatWork = countBy(items, (r) => r.primaryWorkType || 'general').slice(0, 6).map(([label]) => label);
+				const heatClients = countBy(items, (r) => r.clientLabel)
+					.slice(0, 8)
+					.map(([label]) => label);
+				const heatWork = countBy(items, (r) => r.primaryWorkType || 'general')
+					.slice(0, 6)
+					.map(([label]) => label);
 				const heatData = [];
 				for (let x = 0; x < heatWork.length; x += 1) {
 					for (let y = 0; y < heatClients.length; y += 1) {
 						const workKey = heatWork[x];
 						const clientKey = heatClients[y];
-						const value = items.filter((row) => row.primaryWorkType === workKey && row.clientLabel === clientKey).length;
+						const value = items.filter(
+							(row) => row.primaryWorkType === workKey && row.clientLabel === clientKey,
+						).length;
 						heatData.push([x, y, value]);
 					}
 				}
@@ -2252,8 +2817,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					clientWorkChart.setOption({
 						animationDuration: 220,
 						grid: { top: 18, right: 12, bottom: 64, left: 132 },
-						xAxis: { type: 'category', data: heatWork.map((key) => workTypeLabel[key] || key), axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 24 } },
-						yAxis: { type: 'category', data: heatClients, axisLabel: { color: '#cbd5e1', fontSize: 9, width: 124, overflow: 'truncate' } },
+						xAxis: {
+							type: 'category',
+							data: heatWork.map((key) => workTypeLabel[key] || key),
+							axisLabel: { color: '#cbd5e1', fontSize: 9, rotate: 24 },
+						},
+						yAxis: {
+							type: 'category',
+							data: heatClients,
+							axisLabel: { color: '#cbd5e1', fontSize: 9, width: 124, overflow: 'truncate' },
+						},
 						visualMap: {
 							min: 0,
 							max: Math.max(1, ...heatData.map((cell) => Number(cell[2] || 0))),
@@ -2261,8 +2834,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							show: false,
 							inRange: { color: ['#0f172a', '#1d4ed8', '#22c55e'] },
 						},
-						series: [{ type: 'heatmap', data: heatData, label: { show: true, fontSize: 9, color: '#e2e8f0' }, itemStyle: { borderColor: 'rgba(100,116,139,0.4)', borderWidth: 1 } }],
-						tooltip: { trigger: 'item', formatter: (p) => `${heatClients[p.value[1]] || 'Client'} · ${workTypeLabel[heatWork[p.value[0]]] || heatWork[p.value[0]]}: ${p.value[2]}` },
+						series: [
+							{
+								type: 'heatmap',
+								data: heatData,
+								label: { show: true, fontSize: 9, color: '#e2e8f0' },
+								itemStyle: { borderColor: 'rgba(100,116,139,0.4)', borderWidth: 1 },
+							},
+						],
+						tooltip: {
+							trigger: 'item',
+							formatter: (p) =>
+								`${heatClients[p.value[1]] || 'Client'} · ${workTypeLabel[heatWork[p.value[0]]] || heatWork[p.value[0]]}: ${p.value[2]}`,
+						},
 					});
 					if (!clientWorkChart.__boundClick) {
 						clientWorkChart.on('click', (params) => {
@@ -2282,14 +2866,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					} else {
 						const maxCell = Math.max(1, ...heatData.map((cell) => Number(cell[2] || 0)));
 						const rowHead = `<div class="opp-matrix-row opp-matrix-row-head" style="--opp-matrix-cols:${heatWork.length}"><span></span>${heatWork.map((key) => `<span class="opp-matrix-head">${escapeHtml(workTypeLabel[key] || key)}</span>`).join('')}</div>`;
-						const body = heatClients.map((client, y) => {
-							const cells = heatWork.map((_, x) => {
-								const value = heatData.find((cell) => cell[0] === x && cell[1] === y)?.[2] || 0;
-								const alpha = value <= 0 ? 0.08 : Math.max(0.16, Math.min(0.78, value / maxCell));
-								return `<button class="opp-matrix-cell" type="button" data-client="${escapeHtml(client)}" data-work="${escapeHtml(heatWork[x])}" style="background: rgba(34,197,94,${alpha});">${value || '·'}</button>`;
-							}).join('');
-							return `<div class="opp-matrix-row" style="--opp-matrix-cols:${heatWork.length}"><span class="opp-matrix-label" title="${escapeHtml(client)}">${escapeHtml(client)}</span>${cells}</div>`;
-						}).join('');
+						const body = heatClients
+							.map((client, y) => {
+								const cells = heatWork
+									.map((_, x) => {
+										const value = heatData.find((cell) => cell[0] === x && cell[1] === y)?.[2] || 0;
+										const alpha = value <= 0 ? 0.08 : Math.max(0.16, Math.min(0.78, value / maxCell));
+										return `<button class="opp-matrix-cell" type="button" data-client="${escapeHtml(client)}" data-work="${escapeHtml(heatWork[x])}" style="background: rgba(34,197,94,${alpha});">${value || '·'}</button>`;
+									})
+									.join('');
+								return `<div class="opp-matrix-row" style="--opp-matrix-cols:${heatWork.length}"><span class="opp-matrix-label" title="${escapeHtml(client)}">${escapeHtml(client)}</span>${cells}</div>`;
+							})
+							.join('');
 						el.clientWork.innerHTML = `<div class="opp-matrix"><div class="opp-matrix-grid">${rowHead}${body}</div></div>`;
 						for (const btn of el.clientWork.querySelectorAll('.opp-matrix-cell')) {
 							btn.addEventListener('click', () => {
@@ -2323,7 +2911,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					return;
 				}
 				const avgGem = Math.round(items.reduce((sum, row) => sum + Number(row.gemScore || 0), 0) / items.length);
-				const avgCor = Math.round(items.reduce((sum, row) => sum + Number(row.corroborationScore || 0), 0) / items.length);
+				const avgCor = Math.round(
+					items.reduce((sum, row) => sum + Number(row.corroborationScore || 0), 0) / items.length,
+				);
 				const highConf = items.filter((row) => Number(row.confidenceScore || 0) >= 70).length;
 				const byClient = countBy(items, (row) => row.clientLabel);
 				const topClient = byClient[0];
@@ -2331,18 +2921,33 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					.filter((row) => row.dueDays !== null && row.dueDays >= 0)
 					.sort((a, b) => Number(a.dueDays || 9999) - Number(b.dueDays || 9999))[0];
 				const strong = items.filter((row) => Number(row.corroborationScore || 0) >= 70).length;
-				const moderate = items.filter((row) => Number(row.corroborationScore || 0) >= 45 && Number(row.corroborationScore || 0) < 70).length;
+				const moderate = items.filter(
+					(row) => Number(row.corroborationScore || 0) >= 45 && Number(row.corroborationScore || 0) < 70,
+				).length;
 				const usErrors = items.filter((row) => String(row.usaspendingError || '').trim()).length;
-				const exactMatches = items.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && Number(row.usaspendingMatchCount || 0) > 0).length;
-				const fallbackMatches = items.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
-				const staleChecks = items.filter((row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) > 14).length;
+				const exactMatches = items.filter(
+					(row) =>
+						String(row.usaspendingQueryType || '').includes('solicitation') &&
+						Number(row.usaspendingMatchCount || 0) > 0,
+				).length;
+				const fallbackMatches = items.filter(
+					(row) =>
+						String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0,
+				).length;
+				const staleChecks = items.filter(
+					(row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) > 14,
+				).length;
 				const fpdsMed = items.filter((row) => Number(row.fpdsAlignmentScore || 0) >= 45).length;
 				const pursueNow = items.filter((row) => String(row.decisionClass || '') === 'pursue').length;
 				const withGovPoc = items.filter((row) => Number(row.governmentPocCount || 0) > 0).length;
 				const lines = [
 					`Slice average: Gem ${avgGem} · Corroboration ${avgCor} · High-confidence ${highConf}/${items.length}.`,
-					topClient ? `Top buyer family: ${topClient[0]} (${topClient[1]} opportunities).` : 'Top buyer family: no data.',
-					soon ? `Nearest due: ${soon.title} (${soon.dueDays}d, ${soon.noticeType || 'notice'}).` : 'No upcoming due dates in this slice.',
+					topClient
+						? `Top buyer family: ${topClient[0]} (${topClient[1]} opportunities).`
+						: 'Top buyer family: no data.',
+					soon
+						? `Nearest due: ${soon.title} (${soon.dueDays}d, ${soon.noticeType || 'notice'}).`
+						: 'No upcoming due dates in this slice.',
 					`Corroboration mix: ${strong} Strong · ${moderate} Moderate · ${Math.max(0, items.length - strong - moderate)} Weak/None.`,
 					`Decision support: ${pursueNow} pursue-now candidates · ${withGovPoc} rows with published government POCs.`,
 					`3P quality: ${exactMatches} exact matches · ${fallbackMatches} fallback matches · ${usErrors} upstream-error rows · ${staleChecks} stale checks (>14d).`,
@@ -2365,9 +2970,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					return;
 				}
 				const previousTime = Number(previousDatasetSnapshot.ts || 0);
-				const prevLabel = Number.isFinite(previousTime) && previousTime > 0
-					? new Date(previousTime).toLocaleString()
-					: 'unknown time';
+				const prevLabel =
+					Number.isFinite(previousTime) && previousTime > 0 ? new Date(previousTime).toLocaleString() : 'unknown time';
 				const lines = [
 					`Compared to ${prevLabel}: total ${deltaSigned(datasetSnapshot.total, previousDatasetSnapshot.total)}.`,
 					`High-confidence ${deltaSigned(datasetSnapshot.highConfidence, previousDatasetSnapshot.highConfidence)} · Strong corroboration ${deltaSigned(datasetSnapshot.strongCorroboration, previousDatasetSnapshot.strongCorroboration)}.`,
@@ -2399,16 +3003,20 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.modalAgency) el.modalAgency.textContent = row.agencyLabel || 'Unknown';
 				if (el.modalType) el.modalType.textContent = row.noticeType || '—';
 				if (el.modalDue) el.modalDue.textContent = fmtDate(row.responseDueDate);
-				if (el.modalIntel) el.modalIntel.textContent = `${Number(row.detailTextLength || 0).toLocaleString()} chars · ${Number(row.resourceCount || 0)} file links`;
-				if (el.modalAwards) el.modalAwards.textContent = Number(row.awardSignalCount || 0) > 0
-					? `${Number(row.awardSignalCount || 0).toLocaleString()} related awards`
-					: 'No matched awards';
+				if (el.modalIntel)
+					el.modalIntel.textContent = `${Number(row.detailTextLength || 0).toLocaleString()} chars · ${Number(row.resourceCount || 0)} file links`;
+				if (el.modalAwards)
+					el.modalAwards.textContent =
+						Number(row.awardSignalCount || 0) > 0
+							? `${Number(row.awardSignalCount || 0).toLocaleString()} related awards`
+							: 'No matched awards';
 				if (el.modalUsaspending) {
 					const usCount = Number(row.usaspendingMatchCount || 0);
 					const usAmount = Number(row.usaspendingAmount || 0);
-					el.modalUsaspending.textContent = usCount > 0
-						? `${usCount.toLocaleString()} awards · $${Math.round(usAmount).toLocaleString()}`
-						: 'No third-party matches';
+					el.modalUsaspending.textContent =
+						usCount > 0
+							? `${usCount.toLocaleString()} awards · $${Math.round(usAmount).toLocaleString()}`
+							: 'No third-party matches';
 				}
 				if (el.modalCorroboration) {
 					const level = String(row.corroborationLevel || 'None');
@@ -2463,30 +3071,41 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}
 
 				if (el.modalFiles) {
-					const assets = Array.isArray(row.resourceAssets) ? row.resourceAssets.filter((asset) => asset && asset.sourceUrl) : [];
+					const assets = Array.isArray(row.resourceAssets)
+						? row.resourceAssets.filter((asset) => asset && asset.sourceUrl)
+						: [];
 					if (!assets.length) {
-						el.modalFiles.innerHTML = '<li class="opp-subcopy">No attachments/resource links captured for this notice.</li>';
+						el.modalFiles.innerHTML =
+							'<li class="opp-subcopy">No attachments/resource links captured for this notice.</li>';
 					} else {
-						el.modalFiles.innerHTML = assets.slice(0, 60).map((asset) => {
-							const sourceUrl = String(asset.sourceUrl || '').trim();
-							const mirrorUrl = String(asset.mirrorDownloadUrl || '').trim();
-							const sourceMeta = attachmentLabel(sourceUrl);
-							const mirrorMeta = mirrorUrl ? attachmentLabel(mirrorUrl) : null;
-							const fileName = String(asset.fileName || '').trim() || sourceMeta.fileName;
-							const hostMeta = sourceMeta.host ? `<span class="opp-file-host">${escapeHtml(sourceMeta.host)}</span>` : '';
-							const mirrorLink = mirrorUrl
-								? `<a href="${escapeHtml(mirrorUrl)}" target="_blank" rel="noreferrer">Mirror download</a>`
-								: '';
-							const sourceLink = sourceUrl
-								? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">SAM.gov source</a>`
-								: '';
-							const links = [mirrorLink, sourceLink].filter(Boolean).join('<span aria-hidden="true"> · </span>');
-							const size = Number(asset.sizeBytes || 0) > 0
-								? `<span class="opp-file-size">${Number(asset.sizeBytes).toLocaleString()} bytes</span>`
-								: '';
-							const mirrorHost = mirrorMeta?.host ? `<span class="opp-file-host">${escapeHtml(mirrorMeta.host)}</span>` : '';
-							return `<li><span class="opp-file-name">${escapeHtml(fileName)}</span><span class="opp-file-links">${links}</span>${hostMeta}${mirrorHost}${size}</li>`;
-						}).join('');
+						el.modalFiles.innerHTML = assets
+							.slice(0, 60)
+							.map((asset) => {
+								const sourceUrl = String(asset.sourceUrl || '').trim();
+								const mirrorUrl = String(asset.mirrorDownloadUrl || '').trim();
+								const sourceMeta = attachmentLabel(sourceUrl);
+								const mirrorMeta = mirrorUrl ? attachmentLabel(mirrorUrl) : null;
+								const fileName = String(asset.fileName || '').trim() || sourceMeta.fileName;
+								const hostMeta = sourceMeta.host
+									? `<span class="opp-file-host">${escapeHtml(sourceMeta.host)}</span>`
+									: '';
+								const mirrorLink = mirrorUrl
+									? `<a href="${escapeHtml(mirrorUrl)}" target="_blank" rel="noreferrer">Mirror download</a>`
+									: '';
+								const sourceLink = sourceUrl
+									? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noreferrer">SAM.gov source</a>`
+									: '';
+								const links = [mirrorLink, sourceLink].filter(Boolean).join('<span aria-hidden="true"> · </span>');
+								const size =
+									Number(asset.sizeBytes || 0) > 0
+										? `<span class="opp-file-size">${Number(asset.sizeBytes).toLocaleString()} bytes</span>`
+										: '';
+								const mirrorHost = mirrorMeta?.host
+									? `<span class="opp-file-host">${escapeHtml(mirrorMeta.host)}</span>`
+									: '';
+								return `<li><span class="opp-file-name">${escapeHtml(fileName)}</span><span class="opp-file-links">${links}</span>${hostMeta}${mirrorHost}${size}</li>`;
+							})
+							.join('');
 					}
 				}
 
@@ -2494,18 +3113,26 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const signal = row.usaspendingSignal || {};
 					const awards = Array.isArray(signal.top_awards)
 						? signal.top_awards
-						: (Array.isArray(signal.topAwards) ? signal.topAwards : []);
+						: Array.isArray(signal.topAwards)
+							? signal.topAwards
+							: [];
 					if (!awards.length) {
-						el.modalUsaspendingList.innerHTML = '<li class="opp-subcopy">No USAspending award rows captured for this solicitation yet.</li>';
+						el.modalUsaspendingList.innerHTML =
+							'<li class="opp-subcopy">No USAspending award rows captured for this solicitation yet.</li>';
 					} else {
-						el.modalUsaspendingList.innerHTML = awards.slice(0, 6).map((award) => {
-							const awardId = String(award.award_id || '').trim() || 'Award';
-							const recipient = String(award.recipient_name || '').trim();
-							const amount = Number(award.award_amount || 0);
-							const agency = [award.awarding_agency, award.awarding_sub_agency].filter(Boolean).join(' · ');
-							const meta = [recipient, agency, amount > 0 ? `$${Math.round(amount).toLocaleString()}` : ''].filter(Boolean).join(' · ');
-							return `<li><span class="opp-file-name">${escapeHtml(awardId)}</span>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
-						}).join('');
+						el.modalUsaspendingList.innerHTML = awards
+							.slice(0, 6)
+							.map((award) => {
+								const awardId = String(award.award_id || '').trim() || 'Award';
+								const recipient = String(award.recipient_name || '').trim();
+								const amount = Number(award.award_amount || 0);
+								const agency = [award.awarding_agency, award.awarding_sub_agency].filter(Boolean).join(' · ');
+								const meta = [recipient, agency, amount > 0 ? `$${Math.round(amount).toLocaleString()}` : '']
+									.filter(Boolean)
+									.join(' · ');
+								return `<li><span class="opp-file-name">${escapeHtml(awardId)}</span>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
+							})
+							.join('');
 					}
 				}
 
@@ -2513,7 +3140,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const entries = [];
 					entries.push({
 						label: 'SAM detail capture',
-						meta: Number(row.detailTextLength || 0) > 0 ? `${Number(row.detailTextLength || 0).toLocaleString()} chars` : 'No deep text',
+						meta:
+							Number(row.detailTextLength || 0) > 0
+								? `${Number(row.detailTextLength || 0).toLocaleString()} chars`
+								: 'No deep text',
 					});
 					entries.push({
 						label: 'SAM attachments',
@@ -2521,7 +3151,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 					entries.push({
 						label: 'SAM award continuity',
-						meta: Number(row.awardSignalCount || 0) > 0 ? `${Number(row.awardSignalCount || 0)} related awards` : 'No SAM award links',
+						meta:
+							Number(row.awardSignalCount || 0) > 0
+								? `${Number(row.awardSignalCount || 0)} related awards`
+								: 'No SAM award links',
 					});
 					entries.push({
 						label: 'USAspending query mode',
@@ -2534,7 +3167,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (String(row.usaspendingError || '').trim()) {
 						entries.push({
 							label: 'USAspending error',
-							meta: String(row.usaspendingError || '').trim().slice(0, 220),
+							meta: String(row.usaspendingError || '')
+								.trim()
+								.slice(0, 220),
 						});
 					}
 					entries.push({
@@ -2554,7 +3189,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						meta: `${row.eventPriority || 'None'} (${Math.round(Number(row.eventLeverageScore || 0))}) · ${Math.round(Number(row.governmentPocCount || 0))} gov POCs`,
 					});
 					el.modalProvenance.innerHTML = entries
-						.map((entry) => `<li><span class="opp-file-name">${escapeHtml(entry.label)}</span><span class="opp-file-host">${escapeHtml(entry.meta)}</span></li>`)
+						.map(
+							(entry) =>
+								`<li><span class="opp-file-name">${escapeHtml(entry.label)}</span><span class="opp-file-host">${escapeHtml(entry.meta)}</span></li>`,
+						)
 						.join('');
 				}
 
@@ -2562,19 +3200,31 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					const refs = Array.isArray(row.eventRefs) ? row.eventRefs.filter((ref) => ref && ref.id) : [];
 					const govPocs = Array.isArray(row.governmentPocRefs)
 						? row.governmentPocRefs.filter((entry) => entry && (entry.name || entry.email || entry.phone))
-						: refs.flatMap((ref) => (Array.isArray(ref.governmentContacts) ? ref.governmentContacts.map((contact) => ({ ...contact, eventTitle: ref.title, eventHref: ref.href })) : []));
+						: refs.flatMap((ref) =>
+								Array.isArray(ref.governmentContacts)
+									? ref.governmentContacts.map((contact) => ({
+											...contact,
+											eventTitle: ref.title,
+											eventHref: ref.href,
+										}))
+									: [],
+							);
 
 					const renderEventDetail = (ref) => {
 						if (!el.modalEventDetail) return;
 						if (!ref) {
-							el.modalEventDetail.innerHTML = 'Select a mapped event to inspect the event context without leaving this view.';
+							el.modalEventDetail.innerHTML =
+								'Select a mapped event to inspect the event context without leaving this view.';
 							return;
 						}
-						const href = contextualEventHref(String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`), row);
+						const href = contextualEventHref(
+							String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`),
+							row,
+						);
 						const official = String(ref.officialLink || '').trim();
 						const start = fmtDate(ref.startDate || null);
 						const end = fmtDate(ref.endDate || null);
-						const when = start === '—' ? '—' : (end !== '—' && end !== start ? `${start} → ${end}` : start);
+						const when = start === '—' ? '—' : end !== '—' && end !== start ? `${start} → ${end}` : start;
 						const description = String(ref.description || '').trim();
 						const shortDesc = description.length > 280 ? `${description.slice(0, 277)}...` : description;
 						const govPocCount = Number(ref.governmentContactCount || 0);
@@ -2594,42 +3244,62 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 					if (el.modalGovPocs) {
 						if (!govPocs.length) {
-							el.modalGovPocs.innerHTML = '<li class="opp-subcopy">No published government POCs found for mapped events in this slice yet.</li>';
+							el.modalGovPocs.innerHTML =
+								'<li class="opp-subcopy">No published government POCs found for mapped events in this slice yet.</li>';
 						} else {
 							const unique = [];
 							const seen = new Set();
 							for (const entry of govPocs) {
-								const key = String(entry.email || entry.name || `${entry.eventTitle || ''}:${entry.role || ''}`).toLowerCase();
+								const key = String(
+									entry.email || entry.name || `${entry.eventTitle || ''}:${entry.role || ''}`,
+								).toLowerCase();
 								if (!key || seen.has(key)) continue;
 								seen.add(key);
 								unique.push(entry);
 								if (unique.length >= 12) break;
 							}
-							el.modalGovPocs.innerHTML = unique.map((entry) => {
-								const eventHref = contextualEventHref(String(entry.eventHref || `/events/#${encodeURIComponent(String(entry.eventId || ''))}`), row);
-								const name = String(entry.name || 'Unnamed contact');
-								const role = String(entry.role || '').trim();
-								const org = String(entry.organization || '').trim();
-								const mail = String(entry.email || '').trim();
-								const phone = String(entry.phone || '').trim();
-								const meta = [role, org, mail, phone].filter(Boolean).join(' · ');
-								return `<li><span class="opp-file-name">${escapeHtml(name)}</span>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}<div class="opp-file-links"><a href="${escapeHtml(eventHref)}">${escapeHtml(String(entry.eventTitle || 'Event'))} ↗</a></div></li>`;
-							}).join('');
+							el.modalGovPocs.innerHTML = unique
+								.map((entry) => {
+									const eventHref = contextualEventHref(
+										String(entry.eventHref || `/events/#${encodeURIComponent(String(entry.eventId || ''))}`),
+										row,
+									);
+									const name = String(entry.name || 'Unnamed contact');
+									const role = String(entry.role || '').trim();
+									const org = String(entry.organization || '').trim();
+									const mail = String(entry.email || '').trim();
+									const phone = String(entry.phone || '').trim();
+									const meta = [role, org, mail, phone].filter(Boolean).join(' · ');
+									return `<li><span class="opp-file-name">${escapeHtml(name)}</span>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}<div class="opp-file-links"><a href="${escapeHtml(eventHref)}">${escapeHtml(String(entry.eventTitle || 'Event'))} ↗</a></div></li>`;
+								})
+								.join('');
 						}
 					}
 
 					if (!refs.length) {
-						if (el.modalEvents) el.modalEvents.innerHTML = '<li class="opp-subcopy">No mapped events for this opportunity yet.</li>';
+						if (el.modalEvents)
+							el.modalEvents.innerHTML = '<li class="opp-subcopy">No mapped events for this opportunity yet.</li>';
 						renderEventDetail(null);
 					} else {
 						if (el.modalEvents) {
-							el.modalEvents.innerHTML = refs.slice(0, 8).map((ref, idx) => {
-								const href = contextualEventHref(String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`), row);
-								const start = fmtDate(ref.startDate || null);
-								const govPocMeta = Number(ref.governmentContactCount || 0) > 0 ? `${Number(ref.governmentContactCount || 0)} gov POCs` : '';
-								const meta = [ref.branch, ref.status, start !== '—' ? start : '', govPocMeta].filter(Boolean).join(' · ');
-								return `<li><button class="opp-event-select ${idx === 0 ? 'is-active' : ''}" type="button" data-event-idx="${idx}">${escapeHtml(ref.title || ref.id)}</button><div class="opp-file-links"><a href="${escapeHtml(href)}">Open ↗</a></div>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
-							}).join('');
+							el.modalEvents.innerHTML = refs
+								.slice(0, 8)
+								.map((ref, idx) => {
+									const href = contextualEventHref(
+										String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`),
+										row,
+									);
+									const start = fmtDate(ref.startDate || null);
+									const govPocMeta =
+										Number(ref.governmentContactCount || 0) > 0
+											? `${Number(ref.governmentContactCount || 0)} gov POCs`
+											: '';
+									const meta = [ref.branch, ref.status, start !== '—' ? start : '', govPocMeta]
+										.filter(Boolean)
+										.join(' · ');
+									return `<li><button class="opp-event-select ${idx === 0 ? 'is-active' : ''}" type="button" data-event-idx="${idx}">${escapeHtml(ref.title || ref.id)}</button><div class="opp-file-links"><a href="${escapeHtml(href)}">Open ↗</a></div>${meta ? `<span class="opp-file-host">${escapeHtml(meta)}</span>` : ''}</li>`;
+								})
+								.join('');
 
 							for (const button of el.modalEvents.querySelectorAll('.opp-event-select')) {
 								button.addEventListener('click', () => {
@@ -2667,11 +3337,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					return;
 				}
 
-				el.gemList.innerHTML = gems.map((row) => {
-					const days = row.dueDays === null ? 'No due date' : (row.dueDays < 0 ? 'Past due' : `${row.dueDays}d`);
-					const link = row.uiLink ? `<a href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>` : escapeHtml(row.title);
-					return `<li><span class="opp-gem-tier opp-gem-tier-${gemTier(row.gemScore).toLowerCase()}">${gemTier(row.gemScore)}</span>${link}<span class="opp-gem-meta">${escapeHtml(String(row.responseDecision || 'Watch / qualify'))} (${Math.round(Number(row.responseWorthinessScore || 0))}) · event ${Math.round(Number(row.eventLeverageScore || 0))} · gov POC ${Math.round(Number(row.governmentPocCount || 0))} · ${days}</span></li>`;
-				}).join('');
+				el.gemList.innerHTML = gems
+					.map((row) => {
+						const days = row.dueDays === null ? 'No due date' : row.dueDays < 0 ? 'Past due' : `${row.dueDays}d`;
+						const link = row.uiLink
+							? `<a href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
+							: escapeHtml(row.title);
+						return `<li><span class="opp-gem-tier opp-gem-tier-${gemTier(row.gemScore).toLowerCase()}">${gemTier(row.gemScore)}</span>${link}<span class="opp-gem-meta">${escapeHtml(String(row.responseDecision || 'Watch / qualify'))} (${Math.round(Number(row.responseWorthinessScore || 0))}) · event ${Math.round(Number(row.eventLeverageScore || 0))} · gov POC ${Math.round(Number(row.governmentPocCount || 0))} · ${days}</span></li>`;
+					})
+					.join('');
 			};
 
 			const compareText = (a, b) => String(a ?? '').localeCompare(String(b ?? ''), undefined, { sensitivity: 'base' });
@@ -2787,57 +3461,106 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					return;
 				}
 
-				const metric = (value) => Number(value || 0) > 0 ? String(Math.round(Number(value || 0))) : '·';
-				el.body.innerHTML = items.map((row, idx) => {
-					const days = row.dueDays === null ? '—' : String(row.dueDays);
-					const daysSinceRelease = row.postedDays === null ? '—' : String(row.postedDays);
-					const intelDepth = metric(row.intelDepthScore);
-					const files = metric(row.resourceCount);
-					const awards = metric(row.awardSignalCount);
-					const usCount = metric(row.usaspendingMatchCount);
-					const corrobScore = Number(row.corroborationScore || 0);
-					const corrobLevel = String(row.corroborationLevel || 'None');
-					const confidence = Number(row.confidenceScore || 0);
-					const confidenceLevel = String(row.confidenceLevel || 'Low');
-					const corrobClass = corrobLevel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'none';
-					const confidenceClass = confidenceLevel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'low';
-					const corrob = `<span class="opp-corroboration-chip opp-corroboration-${escapeHtml(corrobClass)}" title="Cross-data score ${Math.round(corrobScore)}">${escapeHtml(corrobLevel)} · ${Math.round(corrobScore)}</span>`;
-					const due = fmtDate(row.responseDueDate);
-					const timingDue = row.dueDays === null ? 'D:—' : (row.dueDays < 0 ? `D:${row.dueDays}` : `D:+${row.dueDays}`);
-					const timingPosted = row.postedDays === null ? 'P:—' : `P:+${row.postedDays}`;
-					const timing = `<span class="opp-signal-stack"><span>${timingDue}</span><span>${timingPosted}</span></span>`;
-					const signalBadges = [];
-					if (row.decisionClass === 'pursue') signalBadges.push('<span class="opp-signal-badge opp-signal-badge-pursue" title="Recommended immediate qualification and response path">Pursue</span>');
-					else if (row.decisionClass === 'watch') signalBadges.push('<span class="opp-signal-badge opp-signal-badge-watch" title="Worth qualification or monitoring before bid/no-bid">Watch</span>');
-					else signalBadges.push('<span class="opp-signal-badge opp-signal-badge-skip" title="Low current return signal">Skip</span>');
-					if (Number(row.governmentPocCount || 0) > 0) signalBadges.push(`<span class="opp-signal-badge opp-signal-badge-govpoc" title="Government points of contact published across mapped events">Gov POC ${Number(row.governmentPocCount || 0)}</span>`);
-					if (row.usaspendingError) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-error" title="USAspending fetch error on latest check">3P error</span>');
-					else if (Number(row.usaspendingMatchCount || 0) > 0 && row.usaspendingAgeDays !== null) {
-						if (Number(row.usaspendingAgeDays || 0) <= 3) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fresh" title="USAspending corroboration checked in last 3 days">Fresh</span>');
-						else if (Number(row.usaspendingAgeDays || 0) > 14) signalBadges.push(`<span class="opp-signal-badge opp-signal-badge-stale" title="USAspending corroboration older than 14 days">Stale ${Number(row.usaspendingAgeDays || 0)}d</span>`);
-					}
-					if (Number(row.fpdsAlignmentScore || 0) >= 70) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fpds-high" title="High identifier continuity (FPDS-aligned)">FPDS High</span>');
-					else if (Number(row.fpdsAlignmentScore || 0) >= 45) signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fpds" title="Medium identifier continuity (FPDS-aligned)">FPDS Med</span>');
-					if (String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0) {
-						signalBadges.push('<span class="opp-signal-badge opp-signal-badge-fallback" title="USAspending corroboration used fallback keyword path">Fallback</span>');
-					}
-					const badgeLine = signalBadges.length ? `<span class="opp-signal-badge-line">${signalBadges.join('')}</span>` : '';
-					const signals = `<span class="opp-signal-stack"><span>I${intelDepth} F${files} A${awards} U${usCount}</span><span>C${Math.round(corrobScore)} Cf${confidence}</span><span>Resp${Math.round(Number(row.responseWorthinessScore || 0))} Ev${Math.round(Number(row.eventLeverageScore || 0))}</span>${badgeLine}</span>`;
-					const title = row.uiLink
-						? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
-						: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
-					const mappedRefs = Array.isArray(row.eventRefs) ? row.eventRefs : [];
-					const mapped = mappedRefs.slice(0, 2).map((ref) => {
-						const href = contextualEventHref(String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`), row);
-						const branch = String(ref.branch || '').trim();
-						const when = fmtDate(ref.startDate || null);
-						const titleText = String(ref.title || 'Mapped event');
-						const shortLabel = `${branch ? `${branch} · ` : ''}${titleText}`;
-						const fullTitle = `${titleText}${branch ? `\nBranch: ${branch}` : ''}${when !== '—' ? `\nStarts: ${when}` : ''}${ref.status ? `\nStatus: ${ref.status}` : ''}`;
-						return `<a class="opp-pill opp-pill-link" href="${escapeHtml(href)}" title="${escapeHtml(fullTitle)}">${escapeHtml(shortLabel)}</a>`;
-					}).join('')
-						+ (mappedRefs.length > 2 ? `<span class="opp-pill">+${mappedRefs.length - 2}</span>` : '');
-					return `<tr>
+				const metric = (value) => (Number(value || 0) > 0 ? String(Math.round(Number(value || 0))) : '·');
+				el.body.innerHTML = items
+					.map((row, idx) => {
+						const days = row.dueDays === null ? '—' : String(row.dueDays);
+						const daysSinceRelease = row.postedDays === null ? '—' : String(row.postedDays);
+						const intelDepth = metric(row.intelDepthScore);
+						const files = metric(row.resourceCount);
+						const awards = metric(row.awardSignalCount);
+						const usCount = metric(row.usaspendingMatchCount);
+						const corrobScore = Number(row.corroborationScore || 0);
+						const corrobLevel = String(row.corroborationLevel || 'None');
+						const confidence = Number(row.confidenceScore || 0);
+						const confidenceLevel = String(row.confidenceLevel || 'Low');
+						const corrobClass =
+							corrobLevel
+								.toLowerCase()
+								.replace(/[^a-z0-9]+/g, '-')
+								.replace(/^-+|-+$/g, '') || 'none';
+						const confidenceClass =
+							confidenceLevel
+								.toLowerCase()
+								.replace(/[^a-z0-9]+/g, '-')
+								.replace(/^-+|-+$/g, '') || 'low';
+						const corrob = `<span class="opp-corroboration-chip opp-corroboration-${escapeHtml(corrobClass)}" title="Cross-data score ${Math.round(corrobScore)}">${escapeHtml(corrobLevel)} · ${Math.round(corrobScore)}</span>`;
+						const due = fmtDate(row.responseDueDate);
+						const timingDue = row.dueDays === null ? 'D:—' : row.dueDays < 0 ? `D:${row.dueDays}` : `D:+${row.dueDays}`;
+						const timingPosted = row.postedDays === null ? 'P:—' : `P:+${row.postedDays}`;
+						const timing = `<span class="opp-signal-stack"><span>${timingDue}</span><span>${timingPosted}</span></span>`;
+						const signalBadges = [];
+						if (row.decisionClass === 'pursue')
+							signalBadges.push(
+								'<span class="opp-signal-badge opp-signal-badge-pursue" title="Recommended immediate qualification and response path">Pursue</span>',
+							);
+						else if (row.decisionClass === 'watch')
+							signalBadges.push(
+								'<span class="opp-signal-badge opp-signal-badge-watch" title="Worth qualification or monitoring before bid/no-bid">Watch</span>',
+							);
+						else
+							signalBadges.push(
+								'<span class="opp-signal-badge opp-signal-badge-skip" title="Low current return signal">Skip</span>',
+							);
+						if (Number(row.governmentPocCount || 0) > 0)
+							signalBadges.push(
+								`<span class="opp-signal-badge opp-signal-badge-govpoc" title="Government points of contact published across mapped events">Gov POC ${Number(row.governmentPocCount || 0)}</span>`,
+							);
+						if (row.usaspendingError)
+							signalBadges.push(
+								'<span class="opp-signal-badge opp-signal-badge-error" title="USAspending fetch error on latest check">3P error</span>',
+							);
+						else if (Number(row.usaspendingMatchCount || 0) > 0 && row.usaspendingAgeDays !== null) {
+							if (Number(row.usaspendingAgeDays || 0) <= 3)
+								signalBadges.push(
+									'<span class="opp-signal-badge opp-signal-badge-fresh" title="USAspending corroboration checked in last 3 days">Fresh</span>',
+								);
+							else if (Number(row.usaspendingAgeDays || 0) > 14)
+								signalBadges.push(
+									`<span class="opp-signal-badge opp-signal-badge-stale" title="USAspending corroboration older than 14 days">Stale ${Number(row.usaspendingAgeDays || 0)}d</span>`,
+								);
+						}
+						if (Number(row.fpdsAlignmentScore || 0) >= 70)
+							signalBadges.push(
+								'<span class="opp-signal-badge opp-signal-badge-fpds-high" title="High identifier continuity (FPDS-aligned)">FPDS High</span>',
+							);
+						else if (Number(row.fpdsAlignmentScore || 0) >= 45)
+							signalBadges.push(
+								'<span class="opp-signal-badge opp-signal-badge-fpds" title="Medium identifier continuity (FPDS-aligned)">FPDS Med</span>',
+							);
+						if (
+							String(row.usaspendingQueryType || '').includes('fallback') &&
+							Number(row.usaspendingMatchCount || 0) > 0
+						) {
+							signalBadges.push(
+								'<span class="opp-signal-badge opp-signal-badge-fallback" title="USAspending corroboration used fallback keyword path">Fallback</span>',
+							);
+						}
+						const badgeLine = signalBadges.length
+							? `<span class="opp-signal-badge-line">${signalBadges.join('')}</span>`
+							: '';
+						const signals = `<span class="opp-signal-stack"><span>I${intelDepth} F${files} A${awards} U${usCount}</span><span>C${Math.round(corrobScore)} Cf${confidence}</span><span>Resp${Math.round(Number(row.responseWorthinessScore || 0))} Ev${Math.round(Number(row.eventLeverageScore || 0))}</span>${badgeLine}</span>`;
+						const title = row.uiLink
+							? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
+							: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
+						const mappedRefs = Array.isArray(row.eventRefs) ? row.eventRefs : [];
+						const mapped =
+							mappedRefs
+								.slice(0, 2)
+								.map((ref) => {
+									const href = contextualEventHref(
+										String(ref.href || `/events/#${encodeURIComponent(String(ref.id || ''))}`),
+										row,
+									);
+									const branch = String(ref.branch || '').trim();
+									const when = fmtDate(ref.startDate || null);
+									const titleText = String(ref.title || 'Mapped event');
+									const shortLabel = `${branch ? `${branch} · ` : ''}${titleText}`;
+									const fullTitle = `${titleText}${branch ? `\nBranch: ${branch}` : ''}${when !== '—' ? `\nStarts: ${when}` : ''}${ref.status ? `\nStatus: ${ref.status}` : ''}`;
+									return `<a class="opp-pill opp-pill-link" href="${escapeHtml(href)}" title="${escapeHtml(fullTitle)}">${escapeHtml(shortLabel)}</a>`;
+								})
+								.join('') + (mappedRefs.length > 2 ? `<span class="opp-pill">+${mappedRefs.length - 2}</span>` : '');
+						return `<tr>
 						<td data-col="view" class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
 						<td data-col="gem" class="opp-num"><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
 						<td data-col="weight" class="opp-num">${row.weight}</td>
@@ -2859,7 +3582,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<td data-col="naics" class="opp-num">${escapeHtml(row.naicsCode || '—')}</td>
 						<td data-col="events"><div class="opp-pill-wrap">${mapped || '—'}</div></td>
 					</tr>`;
-				}).join('');
+					})
+					.join('');
 
 				for (const button of el.body.querySelectorAll('.opp-intel-open')) {
 					button.addEventListener('click', () => {
@@ -2882,9 +3606,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				const pursueCount = filtered.filter((row) => String(row.decisionClass || '') === 'pursue').length;
 				const govPocCount = filtered.filter((row) => Number(row.governmentPocCount || 0) > 0).length;
 				const thirdPartyErrorCount = filtered.filter((row) => String(row.usaspendingError || '').trim()).length;
-				const exactCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('solicitation') && Number(row.usaspendingMatchCount || 0) > 0).length;
-				const fallbackCount = filtered.filter((row) => String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0).length;
-				const freshCount = filtered.filter((row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) <= 3).length;
+				const exactCount = filtered.filter(
+					(row) =>
+						String(row.usaspendingQueryType || '').includes('solicitation') &&
+						Number(row.usaspendingMatchCount || 0) > 0,
+				).length;
+				const fallbackCount = filtered.filter(
+					(row) =>
+						String(row.usaspendingQueryType || '').includes('fallback') && Number(row.usaspendingMatchCount || 0) > 0,
+				).length;
+				const freshCount = filtered.filter(
+					(row) => Number(row.usaspendingMatchCount || 0) > 0 && Number(row.usaspendingAgeDays || 0) <= 3,
+				).length;
 				const fpdsCount = filtered.filter((row) => Number(row.fpdsAlignmentScore || 0) >= 45).length;
 				const { rows: pagedRows, totalRows, totalPages } = getPagedRows(filtered);
 
@@ -2946,11 +3679,21 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			});
 			el.search?.addEventListener('change', renderFromFilterInput);
 
-			[el.type, el.branch, el.client, el.work, el.due, el.intel, el.confidenceFilter, el.thirdParty, el.fpds, el.decision, el.sort]
-				.forEach((node) => node?.addEventListener('change', renderFromFilterInput));
+			[
+				el.type,
+				el.branch,
+				el.client,
+				el.work,
+				el.due,
+				el.intel,
+				el.confidenceFilter,
+				el.thirdParty,
+				el.fpds,
+				el.decision,
+				el.sort,
+			].forEach((node) => node?.addEventListener('change', renderFromFilterInput));
 			el.weight?.addEventListener('input', renderFromFilterInput);
-			[el.focus, el.fastMode]
-				.forEach((node) => node?.addEventListener('change', renderFromFilterInput));
+			[el.focus, el.fastMode].forEach((node) => node?.addEventListener('change', renderFromFilterInput));
 
 			el.pageSize?.addEventListener('change', () => {
 				tableState.pageSize = Number(el.pageSize?.value || 50);
@@ -2987,7 +3730,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						tableState.sortDir = tableState.sortDir === 'asc' ? 'desc' : 'asc';
 					} else {
 						tableState.sortKey = key;
-						tableState.sortDir = ['noticeType', 'title', 'solicitationNumber', 'client', 'agency', 'workType', 'naics'].includes(key) ? 'asc' : 'desc';
+						tableState.sortDir = [
+							'noticeType',
+							'title',
+							'solicitationNumber',
+							'client',
+							'agency',
+							'workType',
+							'naics',
+						].includes(key)
+							? 'asc'
+							: 'desc';
 					}
 					tableState.page = 1;
 					render();
@@ -3580,26 +4333,66 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-table-wrap.opp-table-mode-compact .opp-table {
 		min-width: 96rem;
 	}
-	.opp-col-gem { width: 3.4rem; }
-	.opp-col-weight { width: 3.6rem; }
-	.opp-col-due { width: 6.1rem; }
-	.opp-col-timing { width: 6.2rem; }
-	.opp-col-days { width: 3.7rem; }
-	.opp-col-posted { width: 4.2rem; }
-	.opp-col-intel { width: 3.2rem; }
-	.opp-col-files { width: 3.2rem; }
-	.opp-col-awards { width: 3.4rem; }
-	.opp-col-corrob { width: 6.3rem; }
-	.opp-col-signals { width: 8.2rem; }
-	.opp-col-notice { width: 8rem; }
-	.opp-col-title { width: 20rem; }
-	.opp-col-sol { width: 9.2rem; }
-	.opp-col-client { width: 9.4rem; }
-	.opp-col-agency { width: 12rem; }
-	.opp-col-work { width: 8.6rem; }
-	.opp-col-naics { width: 4.8rem; }
-	.opp-col-events { width: 10rem; }
-	.opp-col-intel-view { width: 4.4rem; }
+	.opp-col-gem {
+		width: 3.4rem;
+	}
+	.opp-col-weight {
+		width: 3.6rem;
+	}
+	.opp-col-due {
+		width: 6.1rem;
+	}
+	.opp-col-timing {
+		width: 6.2rem;
+	}
+	.opp-col-days {
+		width: 3.7rem;
+	}
+	.opp-col-posted {
+		width: 4.2rem;
+	}
+	.opp-col-intel {
+		width: 3.2rem;
+	}
+	.opp-col-files {
+		width: 3.2rem;
+	}
+	.opp-col-awards {
+		width: 3.4rem;
+	}
+	.opp-col-corrob {
+		width: 6.3rem;
+	}
+	.opp-col-signals {
+		width: 8.2rem;
+	}
+	.opp-col-notice {
+		width: 8rem;
+	}
+	.opp-col-title {
+		width: 20rem;
+	}
+	.opp-col-sol {
+		width: 9.2rem;
+	}
+	.opp-col-client {
+		width: 9.4rem;
+	}
+	.opp-col-agency {
+		width: 12rem;
+	}
+	.opp-col-work {
+		width: 8.6rem;
+	}
+	.opp-col-naics {
+		width: 4.8rem;
+	}
+	.opp-col-events {
+		width: 10rem;
+	}
+	.opp-col-intel-view {
+		width: 4.4rem;
+	}
 	.opp-table-wrap.opp-table-mode-full [data-col='timing'],
 	.opp-table-wrap.opp-table-mode-full [data-col='signals'] {
 		display: none;
@@ -3745,14 +4538,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		gap: 0.04rem;
 		line-height: 1.08;
 		font-size: 0.58rem;
-		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 		white-space: nowrap;
 	}
 	.opp-signal-badge-line {
 		display: inline-flex;
 		gap: 0.18rem;
 		flex-wrap: wrap;
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+		font-family:
+			system-ui,
+			-apple-system,
+			BlinkMacSystemFont,
+			'Segoe UI',
+			sans-serif;
 	}
 	.opp-signal-badge {
 		display: inline-flex;

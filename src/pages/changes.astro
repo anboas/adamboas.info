@@ -82,13 +82,40 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.35',
+		date: '2026-04-30',
+		title: 'Header-frame stabilization across core navigation surfaces',
+		summary: 'Unified top-of-page scaffolding on core pages to reduce subtle cross-page header drift when switching between main surfaces.',
+		impact: 'Writing, Profile, Events, Opportunities, capability-topic pages, and writing-tag detail pages now share one header wrapper pattern with consistent sticky-nav + header alignment behavior.',
+		current: true,
+		tags: ['ux', 'consistency', 'headers', 'refactor'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Migrated `/profile/` header framing to `SurfacePageHeader`.',
+				'Migrated `/writing/` header framing to `SurfacePageHeader`.',
+				'Migrated `/writing/tags/[tag]/` header framing to `SurfacePageHeader`.',
+				'Migrated `/capabilities/[slug]/` header framing to `SurfacePageHeader`.',
+				'Migrated `/opportunities/` header framing to `SurfacePageHeader`.',
+				'Migrated `/events/` header framing to `SurfacePageHeader` and removed extra top-margin wrapper offset (`mt-2`) causing subtle page-to-page shift.',
+			]},
+			{ kind: 'Improved', items: [
+				'Reduced top-shell alignment variance across core nav destinations when toggling between pages.',
+			]},
+			{ kind: 'Fixed', items: [
+				'Addressed reported subtle header position shifting across primary surfaces.',
+			]},
+		],
+	},
+
 	{
 		version: 'v2.4.34',
 		date: '2026-04-30',
 		title: 'Pretty-code foundation + broader shared header adoption',
 		summary: 'Added first-class Prettier tooling and migrated additional surfaces to the shared page-header wrapper for cleaner, more reusable page framing.',
 		impact: 'Code style is now enforceable with one formatter command, and more pages use shared top-of-page composition instead of duplicating sticky/header boilerplate.',
-		current: true,
 		tags: ['refactor', 'formatting', 'reuse', 'quality'],
 		groups: [
 			{ kind: 'Added', items: [

@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
 import FilterShell from '../../components/ui/FilterShell.astro';
 import SearchControl from '../../components/ui/SearchControl.astro';
@@ -45,16 +44,17 @@ const items = [
 const hasAnyTagChips = items.some((w) => (w.tags?.length ?? 0) > 0);
 
 const fmtDate = (date: Date | undefined) =>
-	date
-		? date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
-		: '';
-
+	date ? date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) : '';
 ---
 
-<SiteLayout title="Writing on AI Autonomy, Governance, and Modernization | Adam Boas" description="Published notes, memos, and papers by Adam Boas on AI autonomy, governance, cybersecurity, DevSecOps, and software modernization." image="/og/writing.png">
-	<StickyBrowseBar active="writing" />
+<SiteLayout
+	title="Writing on AI Autonomy, Governance, and Modernization | Adam Boas"
+	description="Published notes, memos, and papers by Adam Boas on AI autonomy, governance, cybersecurity, DevSecOps, and software modernization."
+	image="/og/writing.png"
+>
 	<div data-writing-index class="writing-tags-hidden">
-		<SurfaceHeader
+		<SurfacePageHeader
+			stickyActive="writing"
 			eyebrow="Published Work"
 			title="Writing"
 			description="Long-form notes, papers, and memos on autonomy, assurance, software modernization, and defense technology."
@@ -62,33 +62,118 @@ const fmtDate = (date: Date | undefined) =>
 			<div slot="actions" class="flex flex-col items-start gap-1 text-xs text-slate-400 md:items-end">
 				<a class="ui-link-btn" href={withBase('/writing/tags/')}>Browse tags</a>
 			</div>
-		</SurfaceHeader>
+		</SurfacePageHeader>
 
 		<FilterShell class="writing-index-controls mt-4 p-2.5 md:mt-5 md:p-3">
 			<div class="control-shell-row flex flex-wrap items-center gap-2 md:gap-3">
-				<div class="flex flex-wrap items-center gap-2 text-xs text-slate-300" role="group" aria-label="Filter writing by type and quick state">
-					<button type="button" data-writing-set-all aria-pressed="true" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show all writing types" title="Show all writing types">all</button>
-					<button type="button" data-writing-type-toggle="paper" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-paper rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Long-form architecture + reference work" title="Long-form architecture + reference work">paper</button>
-					<button type="button" data-writing-type-toggle="note" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-note rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Short synthesis and research snapshots" title="Short synthesis and research snapshots">note</button>
-					<button type="button" data-writing-type-toggle="memo" aria-pressed="true" class="writing-key-pill writing-type-toggle writing-type-pill writing-type-memo rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Focused briefs and decision-ready analysis" title="Focused briefs and decision-ready analysis">memo</button>
-					<button type="button" data-writing-quick="has-audio" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show entries with audio available" title="Show entries with audio available">Has audio</button>
-					<button type="button" data-writing-quick="recent-30" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Show items published in the last 30 days" title="Show items published in the last 30 days">Recent 30d</button>
-					<button type="button" data-writing-density-toggle="compact" aria-pressed="false" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Tighter cards for faster scanning" title="Tighter cards for faster scanning">Compact</button>
-					<button type="button" data-writing-density-toggle="comfortable" aria-pressed="true" class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide" data-tooltip="Larger spacing for easier reading" title="Larger spacing for easier reading">Comfortable</button>
+				<div
+					class="flex flex-wrap items-center gap-2 text-xs text-slate-300"
+					role="group"
+					aria-label="Filter writing by type and quick state"
+				>
+					<button
+						type="button"
+						data-writing-set-all
+						aria-pressed="true"
+						class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Show all writing types"
+						title="Show all writing types">all</button
+					>
+					<button
+						type="button"
+						data-writing-type-toggle="paper"
+						aria-pressed="true"
+						class="writing-key-pill writing-type-toggle writing-type-pill writing-type-paper rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Long-form architecture + reference work"
+						title="Long-form architecture + reference work">paper</button
+					>
+					<button
+						type="button"
+						data-writing-type-toggle="note"
+						aria-pressed="true"
+						class="writing-key-pill writing-type-toggle writing-type-pill writing-type-note rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Short synthesis and research snapshots"
+						title="Short synthesis and research snapshots">note</button
+					>
+					<button
+						type="button"
+						data-writing-type-toggle="memo"
+						aria-pressed="true"
+						class="writing-key-pill writing-type-toggle writing-type-pill writing-type-memo rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Focused briefs and decision-ready analysis"
+						title="Focused briefs and decision-ready analysis">memo</button
+					>
+					<button
+						type="button"
+						data-writing-quick="has-audio"
+						aria-pressed="false"
+						class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Show entries with audio available"
+						title="Show entries with audio available">Has audio</button
+					>
+					<button
+						type="button"
+						data-writing-quick="recent-30"
+						aria-pressed="false"
+						class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Show items published in the last 30 days"
+						title="Show items published in the last 30 days">Recent 30d</button
+					>
+					<button
+						type="button"
+						data-writing-density-toggle="compact"
+						aria-pressed="false"
+						class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Tighter cards for faster scanning"
+						title="Tighter cards for faster scanning">Compact</button
+					>
+					<button
+						type="button"
+						data-writing-density-toggle="comfortable"
+						aria-pressed="true"
+						class="writing-key-pill rounded-full border px-3 py-0 text-[10px] uppercase tracking-wide"
+						data-tooltip="Larger spacing for easier reading"
+						title="Larger spacing for easier reading">Comfortable</button
+					>
 				</div>
 
 				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
-					<SearchControl id="writing-search" label="Search writing" data-writing-search data-global-search class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64" placeholder="Search writing..." />
+					<SearchControl
+						id="writing-search"
+						label="Search writing"
+						data-writing-search
+						data-global-search
+						class="h-8 w-full rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 sm:w-64"
+						placeholder="Search writing..."
+					/>
 					<label class="sr-only" for="writing-sort">Sort writing</label>
-					<select id="writing-sort" data-writing-sort class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200">
+					<select
+						id="writing-sort"
+						data-writing-sort
+						class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200"
+					>
 						<option value="newest">Newest</option>
 						<option value="oldest">Oldest</option>
 						<option value="title">Title A-Z</option>
 					</select>
-					<button type="button" data-writing-clear class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900">Clear</button>
-					{hasAnyTagChips ? (
-						<button type="button" data-writing-tags-toggle aria-pressed="false" class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900">Show tags</button>
-					) : null}
+					<button
+						type="button"
+						data-writing-clear
+						class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900"
+						>Clear</button
+					>
+					{
+						hasAnyTagChips ? (
+							<button
+								type="button"
+								data-writing-tags-toggle
+								aria-pressed="false"
+								class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900"
+							>
+								Show tags
+							</button>
+						) : null
+					}
 				</div>
 			</div>
 
@@ -99,79 +184,109 @@ const fmtDate = (date: Date | undefined) =>
 
 			<div class="writing-active-strip mt-2 flex flex-wrap gap-2 text-xs" data-writing-chips aria-live="polite"></div>
 		</FilterShell>
-		<script type="module" set:html={writingIndexJs}></script>
+		<script type="module" set:html={writingIndexJs} />
 
 		<div class="mt-6 grid gap-4 md:mt-7" data-writing-list>
-			{items.map((w) => (
-				<a
-					data-writing-card
-					data-type={w.type}
-					data-title={w.title}
-					data-tags={w.tags.join(' ')}
-					data-date-ms={w.date?.valueOf?.() ?? 0}
-					data-has-audio={w.hasAudio ? '1' : '0'}
-					class="card block overflow-hidden p-5 hover:border-slate-700"
-					href={withBase(`/writing/${w.slug}/`)}
-				>
-					<div class="flex items-baseline justify-between gap-4">
-						<div class="min-w-0">
-							<div class="flex min-w-0 items-baseline gap-2">
-								<span class={`writing-type-pill writing-type-${w.type} rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}>
-									{w.type}
-								</span>
-								<h2 data-writing-card-title class="min-w-0 truncate text-base font-bold text-slate-50">{w.title}</h2>
-								{w.hasAudio ? (
+			{
+				items.map((w) => (
+					<a
+						data-writing-card
+						data-type={w.type}
+						data-title={w.title}
+						data-tags={w.tags.join(' ')}
+						data-date-ms={w.date?.valueOf?.() ?? 0}
+						data-has-audio={w.hasAudio ? '1' : '0'}
+						class="card block overflow-hidden p-5 hover:border-slate-700"
+						href={withBase(`/writing/${w.slug}/`)}
+					>
+						<div class="flex items-baseline justify-between gap-4">
+							<div class="min-w-0">
+								<div class="flex min-w-0 items-baseline gap-2">
 									<span
-										class="shrink-0 rounded-full border border-emerald-700/70 bg-emerald-950/40 px-1.5 py-0 text-[10px] text-emerald-200"
-										title="Audio or podcast available"
-										aria-label="Audio available"
+										class={`writing-type-pill writing-type-${w.type} rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}
 									>
-										🎧
+										{w.type}
 									</span>
+									<h2 data-writing-card-title class="min-w-0 truncate text-base font-bold text-slate-50">
+										{w.title}
+									</h2>
+									{w.hasAudio ? (
+										<span
+											class="shrink-0 rounded-full border border-emerald-700/70 bg-emerald-950/40 px-1.5 py-0 text-[10px] text-emerald-200"
+											title="Audio or podcast available"
+											aria-label="Audio available"
+										>
+											🎧
+										</span>
+									) : null}
+								</div>
+								{w.description && (
+									<p data-writing-card-description class="clamp-3 mt-2 text-sm text-slate-300">
+										{w.description}
+									</p>
+								)}
+								{(w.tags?.length ?? 0) > 0 ? (
+									<ul data-writing-card-meta class="mt-3 flex flex-wrap gap-2">
+										{w.tags?.slice(0, 4).map((t) => (
+											<li class="writing-tag-chip" data-writing-tag-chip>
+												<button
+													type="button"
+													data-writing-tag={t}
+													class="rounded-full border border-slate-800 px-3 py-1 text-xs text-slate-300 hover:bg-slate-900"
+												>
+													{t}
+												</button>
+											</li>
+										))}
+										{(w.tags?.length ?? 0) > 4 ? (
+											<li class="writing-tag-chip" data-writing-tag-chip>
+												<span class="rounded-full border border-slate-800 px-3 py-1 text-xs text-slate-500">
+													+{(w.tags?.length ?? 0) - 4} more
+												</span>
+											</li>
+										) : null}
+									</ul>
 								) : null}
 							</div>
-							{w.description && <p data-writing-card-description class="clamp-3 mt-2 text-sm text-slate-300">{w.description}</p>}
-							{(w.tags?.length ?? 0) > 0 ? (
-								<ul data-writing-card-meta class="mt-3 flex flex-wrap gap-2">
-									{w.tags?.slice(0, 4).map((t) => (
-										<li class="writing-tag-chip" data-writing-tag-chip>
-											<button
-												type="button"
-												data-writing-tag={t}
-												class="rounded-full border border-slate-800 px-3 py-1 text-xs text-slate-300 hover:bg-slate-900"
-											>
-												{t}
-											</button>
-										</li>
-									))}
-									{(w.tags?.length ?? 0) > 4 ? (
-										<li class="writing-tag-chip" data-writing-tag-chip>
-											<span class="rounded-full border border-slate-800 px-3 py-1 text-xs text-slate-500">+{(w.tags?.length ?? 0) - 4} more</span>
-										</li>
-									) : null}
-								</ul>
-							) : null}
+							{w.date && <span class="shrink-0 text-xs text-slate-400">{fmtDate(w.date)}</span>}
 						</div>
-						{w.date && <span class="shrink-0 text-xs text-slate-400">{fmtDate(w.date)}</span>}
-					</div>
-				</a>
-			))}
+					</a>
+				))
+			}
 		</div>
 
 		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-writing-pagination>
 			<p class="text-xs text-slate-400" data-writing-pagination-status></p>
 			<div class="flex items-center gap-2">
-				<button type="button" data-writing-page-first class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">First</button>
-				<button type="button" data-writing-page-prev class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Prev</button>
+				<button
+					type="button"
+					data-writing-page-first
+					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					>First</button
+				>
+				<button
+					type="button"
+					data-writing-page-prev
+					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					>Prev</button
+				>
 				<span class="text-xs text-slate-300" data-writing-page-label>Page 1 of 1</span>
-				<button type="button" data-writing-page-next class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Next</button>
-				<button type="button" data-writing-page-last class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950">Last</button>
+				<button
+					type="button"
+					data-writing-page-next
+					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					>Next</button
+				>
+				<button
+					type="button"
+					data-writing-page-last
+					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					>Last</button
+				>
 			</div>
 		</div>
 
-		<p class="mt-6 hidden text-sm text-slate-400" data-writing-empty>
-			No results. Try clearing filters.
-		</p>
+		<p class="mt-6 hidden text-sm text-slate-400" data-writing-empty>No results. Try clearing filters.</p>
 	</div>
 </SiteLayout>
 
@@ -179,7 +294,6 @@ const fmtDate = (date: Date | undefined) =>
 	[data-writing-index].writing-tags-hidden [data-writing-card-meta] {
 		display: none;
 	}
-
 
 	.writing-active-strip {
 		position: sticky;

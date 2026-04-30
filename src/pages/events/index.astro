@@ -1,7 +1,6 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { radarEventsSeed } from '../../data/radar/events';
 import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
@@ -876,12 +875,10 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 	image="/og/events.png"
 	noindex={true}
 >
-	<StickyBrowseBar active="events" />
-
-
-	<section class="mt-2 space-y-4">
-		<SurfaceHeader
-			class="radar-surface-header"
+	<section class="space-y-4">
+		<SurfacePageHeader
+			stickyActive="events"
+			headerClass="radar-surface-header"
 			eyebrow="Acquisition radar"
 			title="DoW Events Intelligence"
 			description="Upcoming DoW events with validated links, source transparency, and layered opportunity intelligence."
@@ -976,7 +973,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 				</div>
 			</div>
 			</section>
-		</SurfaceHeader>
+		</SurfacePageHeader>
 
 		<section id="radar-calendar-section" class="card p-5">
 			<div class="mb-3 flex flex-wrap items-center justify-between gap-2">

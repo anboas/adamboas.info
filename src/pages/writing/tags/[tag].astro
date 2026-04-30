@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../../components/SurfacePageHeader.astro';
 import { withBase } from '../../../utils/withBase';
 import { buildCanonicalTagGroups, slugifyTag } from '../../../utils/tags';
 
@@ -61,7 +60,6 @@ const fmtDate = (date: Date | undefined) =>
 	description={`Writing tagged ${tag}.`}
 	canonicalHref={canonicalHref}
 >
-	<StickyBrowseBar active="writing" />
 	<script
 		type="application/ld+json"
 		set:html={JSON.stringify({
@@ -74,11 +72,16 @@ const fmtDate = (date: Date | undefined) =>
 			],
 		})}
 	/>
-	<SurfaceHeader eyebrow="Tag view" title={`Tag: ${tag}`} description={`${items.length} item(s)`}>
+	<SurfacePageHeader
+		stickyActive="writing"
+		eyebrow="Tag view"
+		title={`Tag: ${tag}`}
+		description={`${items.length} item(s)`}
+	>
 		<a slot="actions" class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}
 			>All tags ↗</a
 		>
-	</SurfaceHeader>
+	</SurfacePageHeader>
 
 	<div class="mt-4 grid gap-4 md:mt-5">
 		{

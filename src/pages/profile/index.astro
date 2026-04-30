@@ -1,30 +1,38 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { RESUME_CLEARANCE, experience, education } from '../../data/resume';
 import SpeakingEventsSection from '../../components/SpeakingEventsSection.astro';
 import { withBase } from '../../utils/withBase';
 
 const profileModalData = {
 	experience: Object.fromEntries(
-		experience.map((item) => [item.slug, {
-			title: `${item.company} · ${item.title}`,
-			meta: item.period,
-			body: item.summary,
-		}]),
+		experience.map((item) => [
+			item.slug,
+			{
+				title: `${item.company} · ${item.title}`,
+				meta: item.period,
+				body: item.summary,
+			},
+		]),
 	),
 	education: Object.fromEntries(
-		education.map((item) => [item.slug, {
-			title: item.name,
-			meta: `${item.issuer}${item.year ? ` · ${item.year}` : ''}`,
-			body: item.issuer,
-		}]),
+		education.map((item) => [
+			item.slug,
+			{
+				title: item.name,
+				meta: `${item.issuer}${item.year ? ` · ${item.year}` : ''}`,
+				body: item.issuer,
+			},
+		]),
 	),
 };
 ---
 
-<SiteLayout title="Profile | Adam Boas" description="Career background, speaking engagements, and credentials for Adam Boas.">
+<SiteLayout
+	title="Profile | Adam Boas"
+	description="Career background, speaking engagements, and credentials for Adam Boas."
+>
 	<script
 		type="application/ld+json"
 		set:html={JSON.stringify({
@@ -40,13 +48,14 @@ const profileModalData = {
 			},
 		})}
 	/>
-	<StickyBrowseBar active="profile" />
-	<SurfaceHeader eyebrow="Background" title="Profile">
+	<SurfacePageHeader stickyActive="profile" eyebrow="Background" title="Profile">
 		<div slot="actions" class="flex flex-col items-start gap-1 text-xs text-slate-400 md:items-end">
-			<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">Resume PDF ↗</a>
+			<a href={withBase('/files/adam-boas-resume.pdf')} class="text-sm font-semibold text-stone-100 hover:text-stone-50"
+				>Resume PDF ↗</a
+			>
 			<span class="uppercase tracking-wide">Clearance: {RESUME_CLEARANCE}</span>
 		</div>
-	</SurfaceHeader>
+	</SurfacePageHeader>
 
 	<div id="speaking">
 		<SpeakingEventsSection title="Speaking" showHeader={true} />
@@ -66,36 +75,56 @@ const profileModalData = {
 					</tr>
 				</thead>
 				<tbody>
-					{experience.map((r) => (
-						<tr class="border-t border-slate-800 even:bg-slate-950/20">
-							<td class="px-4 py-3 text-slate-100">
-								<button type="button" class="profile-modal-trigger hover:underline" data-profile-modal-open data-profile-modal-kind="experience" data-profile-modal-id={r.slug}>{r.company}</button>
-							</td>
-							<td class="px-4 py-3 text-slate-300">
-								<button type="button" class="profile-modal-trigger text-left hover:underline" data-profile-modal-open data-profile-modal-kind="experience" data-profile-modal-id={r.slug}>{r.title}</button>
-							</td>
-							<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
-						</tr>
-					))}
+					{
+						experience.map((r) => (
+							<tr class="border-t border-slate-800 even:bg-slate-950/20">
+								<td class="px-4 py-3 text-slate-100">
+									<button
+										type="button"
+										class="profile-modal-trigger hover:underline"
+										data-profile-modal-open
+										data-profile-modal-kind="experience"
+										data-profile-modal-id={r.slug}
+									>
+										{r.company}
+									</button>
+								</td>
+								<td class="px-4 py-3 text-slate-300">
+									<button
+										type="button"
+										class="profile-modal-trigger text-left hover:underline"
+										data-profile-modal-open
+										data-profile-modal-kind="experience"
+										data-profile-modal-id={r.slug}
+									>
+										{r.title}
+									</button>
+								</td>
+								<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
+							</tr>
+						))
+					}
 				</tbody>
 			</table>
 		</div>
 		<div class="grid gap-3 md:hidden">
-			{experience.map((r) => (
-				<button
-					type="button"
-					class="min-w-0 border border-slate-800 bg-slate-950/40 p-3 text-left hover:border-slate-700"
-					data-profile-modal-open
-					data-profile-modal-kind="experience"
-					data-profile-modal-id={r.slug}
-				>
-					<div class="flex min-w-0 items-baseline justify-between gap-3">
-						<h3 class="min-w-0 truncate text-sm font-semibold text-slate-100">{r.company}</h3>
-						<span class="shrink-0 text-xs text-slate-400">{r.period}</span>
-					</div>
-					<p class="mt-1 break-words text-sm text-slate-300 [overflow-wrap:anywhere]">{r.title}</p>
-				</button>
-			))}
+			{
+				experience.map((r) => (
+					<button
+						type="button"
+						class="min-w-0 border border-slate-800 bg-slate-950/40 p-3 text-left hover:border-slate-700"
+						data-profile-modal-open
+						data-profile-modal-kind="experience"
+						data-profile-modal-id={r.slug}
+					>
+						<div class="flex min-w-0 items-baseline justify-between gap-3">
+							<h3 class="min-w-0 truncate text-sm font-semibold text-slate-100">{r.company}</h3>
+							<span class="shrink-0 text-xs text-slate-400">{r.period}</span>
+						</div>
+						<p class="mt-1 break-words text-sm text-slate-300 [overflow-wrap:anywhere]">{r.title}</p>
+					</button>
+				))
+			}
 		</div>
 	</section>
 
@@ -113,41 +142,62 @@ const profileModalData = {
 					</tr>
 				</thead>
 				<tbody>
-					{education.map((e) => (
-						<tr class="border-t border-slate-800 even:bg-slate-950/20">
-							<td class="px-4 py-3 text-slate-100">
-								<button type="button" class="profile-modal-trigger hover:underline" data-profile-modal-open data-profile-modal-kind="education" data-profile-modal-id={e.slug}>{e.issuer}</button>
-							</td>
-							<td class="px-4 py-3 text-slate-300">
-								<button type="button" class="profile-modal-trigger text-left hover:underline" data-profile-modal-open data-profile-modal-kind="education" data-profile-modal-id={e.slug}>{e.name}</button>
-							</td>
-							<td class="px-4 py-3 text-right text-slate-400">{e.year ?? '—'}</td>
-						</tr>
-					))}
+					{
+						education.map((e) => (
+							<tr class="border-t border-slate-800 even:bg-slate-950/20">
+								<td class="px-4 py-3 text-slate-100">
+									<button
+										type="button"
+										class="profile-modal-trigger hover:underline"
+										data-profile-modal-open
+										data-profile-modal-kind="education"
+										data-profile-modal-id={e.slug}
+									>
+										{e.issuer}
+									</button>
+								</td>
+								<td class="px-4 py-3 text-slate-300">
+									<button
+										type="button"
+										class="profile-modal-trigger text-left hover:underline"
+										data-profile-modal-open
+										data-profile-modal-kind="education"
+										data-profile-modal-id={e.slug}
+									>
+										{e.name}
+									</button>
+								</td>
+								<td class="px-4 py-3 text-right text-slate-400">{e.year ?? '—'}</td>
+							</tr>
+						))
+					}
 				</tbody>
 			</table>
 		</div>
 		<div class="grid gap-3 md:hidden">
-			{education.map((e) => (
-				<button
-					type="button"
-					class="min-w-0 border border-slate-800 bg-slate-950/40 p-3 text-left hover:border-slate-700"
-					data-profile-modal-open
-					data-profile-modal-kind="education"
-					data-profile-modal-id={e.slug}
-				>
-					<div class="flex min-w-0 items-baseline justify-between gap-3">
-						<h3 class="min-w-0 truncate text-sm font-semibold text-slate-100">{e.issuer}</h3>
-						<span class="shrink-0 text-xs text-slate-400">{e.year ?? '—'}</span>
-					</div>
-					<p class="mt-1 break-words text-sm text-slate-300 [overflow-wrap:anywhere]">{e.name}</p>
-				</button>
-			))}
+			{
+				education.map((e) => (
+					<button
+						type="button"
+						class="min-w-0 border border-slate-800 bg-slate-950/40 p-3 text-left hover:border-slate-700"
+						data-profile-modal-open
+						data-profile-modal-kind="education"
+						data-profile-modal-id={e.slug}
+					>
+						<div class="flex min-w-0 items-baseline justify-between gap-3">
+							<h3 class="min-w-0 truncate text-sm font-semibold text-slate-100">{e.issuer}</h3>
+							<span class="shrink-0 text-xs text-slate-400">{e.year ?? '—'}</span>
+						</div>
+						<p class="mt-1 break-words text-sm text-slate-300 [overflow-wrap:anywhere]">{e.name}</p>
+					</button>
+				))
+			}
 		</div>
 	</section>
 
 	<div id="profile-modal" class="profile-modal" hidden>
-		<button type="button" class="profile-modal-overlay" data-profile-modal-close aria-label="Close detail modal"></button>
+		<button type="button" class="profile-modal-overlay" data-profile-modal-close aria-label="Close detail modal"
+		></button>
 		<article class="profile-modal-panel" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
 			<div class="profile-modal-head">
 				<p id="profile-modal-meta" class="profile-modal-meta"></p>
@@ -158,11 +208,7 @@ const profileModalData = {
 		</article>
 	</div>
 
-	<script
-		type="application/json"
-		id="profile-modal-data"
-		set:html={JSON.stringify(profileModalData)}
-	/>
+	<script type="application/json" id="profile-modal-data" set:html={JSON.stringify(profileModalData)} />
 	<script>
 		import { createModalController } from '../../scripts/ui/modal-controller';
 
@@ -242,7 +288,9 @@ const profileModalData = {
 		box-shadow: 0 24px 80px rgba(2, 6, 23, 0.55);
 		opacity: 0;
 		transform: translateY(6px) scale(0.992);
-		transition: opacity 140ms ease, transform 170ms ease;
+		transition:
+			opacity 140ms ease,
+			transform 170ms ease;
 	}
 	.profile-modal.is-open .profile-modal-overlay {
 		opacity: 1;

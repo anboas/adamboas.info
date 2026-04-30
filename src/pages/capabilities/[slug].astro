@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { capabilityTopics, capabilityBySlug } from '../../data/capabilities';
 import { radarEventsSeed } from '../../data/radar/events';
@@ -178,7 +177,6 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 	description={capabilitySeoDescription}
 	canonicalHref={canonicalHref}
 >
-	<StickyBrowseBar active="capabilities" />
 	<script
 		type="application/ld+json"
 		set:html={JSON.stringify({
@@ -192,7 +190,12 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 		})}
 	/>
 
-	<SurfaceHeader eyebrow="Capability topic" title={capability.title} description={capability.description}>
+	<SurfacePageHeader
+		stickyActive="capabilities"
+		eyebrow="Capability topic"
+		title={capability.title}
+		description={capability.description}
+	>
 		<div slot="actions" class="flex flex-wrap gap-2">
 			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
 			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/capabilities/')}>All topics</a>
@@ -202,7 +205,7 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 			<span class="ui-pill">Upcoming events: {eventItems.length}</span>
 			<span class="ui-pill">Opportunities: {opportunityItems.length}</span>
 		</div>
-	</SurfaceHeader>
+	</SurfacePageHeader>
 
 	<section class="mt-4 grid gap-4 xl:grid-cols-3">
 		<article class="card p-4 capability-card xl:col-span-1">
