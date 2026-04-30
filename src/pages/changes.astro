@@ -89,13 +89,29 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.41',
+		date: '2026-04-30',
+		title: 'UX cleanup: remove forced line-break balancing from surface headers',
+		summary: 'Removed CSS-driven forced title balancing in shared surface headers to prevent awkward line breaks like the reported /status/ “Operations Status” split.',
+		impact: 'Status and all other pages using `SurfaceHeader` now render header titles with natural wrapping instead of forced balancing behavior.',
+		current: true,
+		tags: ['ux', 'consistency', 'typography'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: ['Removed `text-wrap: balance` from `src/components/SurfaceHeader.astro` title styling so line breaks are no longer forced by balancing logic.'] },
+			{ kind: 'Improved', items: ['Eliminated the forced-break pattern across all shared surface headers, including `/status/`.'] },
+			{ kind: 'Fixed', items: ['Resolved reported /status/ header description/title wrapping annoyance caused by balanced wrapping behavior.'] },
+		],
+	},
+
 	{
 		version: 'v2.4.40',
 		date: '2026-04-30',
 		title: '12-factor hardening: config contract lint + env-aware analytics candidates',
 		summary: 'Added a deterministic environment/config lint gate, wired it into core CI workflows, and removed more hardcoded domain assumptions in analytics/OG generation scripts.',
 		impact: 'Build/deploy safety improves with earlier config failures, while analytics and OG tooling now adapts more cleanly to domain/environment changes.',
-		current: true,
 		tags: ['architecture', '12-factor', 'ci', 'ops'],
 		groups: [
 			{
