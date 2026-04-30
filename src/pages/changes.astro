@@ -72,13 +72,36 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.25',
+		date: '2026-04-30',
+		title: 'Profile mobile overflow fix for education/experience cards',
+		summary: 'Fixed horizontal text overflow in profile mobile cards by hardening width constraints and word wrapping.',
+		impact: 'Long credential and role text now wraps cleanly on narrow screens without clipping or side-scroll artifacts.',
+		current: true,
+		tags: ['profile', 'mobile', 'ux', 'layout'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Updated mobile experience and education card wrappers in `/profile/` with `min-w-0` on button and flex rows.',
+				'Applied explicit text wrapping (`break-words` + `overflow-wrap:anywhere`) to role/credential lines to prevent overflow.',
+			]},
+			{ kind: 'Improved', items: [
+				'Improved consistency of mobile profile card rendering under long institution and certification names.',
+			]},
+			{ kind: 'Fixed', items: [
+				'Resolved reported mobile overflow in Education & Certifications cards.',
+			]},
+		],
+	},
+
 	{
 		version: 'v2.4.24',
 		date: '2026-04-30',
 		title: 'Speaking UX pass: clickable tags + modalized detail + simplified links',
 		summary: 'Refined speaking cards to prioritize scan clarity by moving dense metadata into a click-open modal and making topic tags interactive filters.',
 		impact: 'Speaking entries now show cleaner summaries by default, with one clear outbound event link and fast in-section tag filtering for topic exploration.',
-		current: true,
 		tags: ['speaking', 'ux', 'profile', 'interaction'],
 		groups: [
 			{ kind: 'Added', items: [
