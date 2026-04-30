@@ -76,11 +76,7 @@ function defaultTrends(note = null) {
 	return {
 		mode: 'none',
 		note,
-		windows: [
-			emptyTrendWindow('7d', '7d'),
-			emptyTrendWindow('30d', '30d'),
-			emptyTrendWindow('90d', '90d'),
-		],
+		windows: [emptyTrendWindow('7d', '7d'), emptyTrendWindow('30d', '30d'), emptyTrendWindow('90d', '90d')],
 		momentum: {
 			last7vsPrev23Pct: null,
 			last30vsPrev60Pct: null,
@@ -165,10 +161,10 @@ function parsePathRows(data) {
 	for (const row of rows) {
 		const rawPath = Array.isArray(row?.dimensions)
 			? row.dimensions[0]
-			: row?.dimensions?.['event:page'] ?? row?.dimensions?.event?.page ?? row?.dimensions?.page ?? null;
+			: (row?.dimensions?.['event:page'] ?? row?.dimensions?.event?.page ?? row?.dimensions?.page ?? null);
 		const pv = Array.isArray(row?.metrics)
 			? row.metrics[0]
-			: row?.metrics?.pageviews ?? row?.metrics?.['pageviews'] ?? null;
+			: (row?.metrics?.pageviews ?? row?.metrics?.['pageviews'] ?? null);
 		if (typeof pv !== 'number') continue;
 
 		const key = normalizePath(rawPath);
@@ -312,7 +308,10 @@ function buildModel({ sitemapPaths, pageviewsByPath, invalidRows }) {
 	const totalPageviewsOnSitemap = sitemapRows.reduce((sum, row) => sum + row.pageviews, 0);
 	const coveragePct = totalSitemapPages ? Number(((pagesWithViews / totalSitemapPages) * 100).toFixed(1)) : 0;
 
-	const viewedSitemap = rankByViews(sitemapRows.filter((row) => row.pageviews > 0), 500);
+	const viewedSitemap = rankByViews(
+		sitemapRows.filter((row) => row.pageviews > 0),
+		500,
+	);
 	const paretoTop = [];
 	let running = 0;
 	for (const [idx, row] of viewedSitemap.slice(0, 24).entries()) {
@@ -349,8 +348,12 @@ function buildModel({ sitemapPaths, pageviewsByPath, invalidRows }) {
 	const maxSectionViews = sectionRows.reduce((max, row) => Math.max(max, row.totalViews), 0);
 	const sectionHeatmap = sectionRows
 		.map((row) => {
-			const coveragePctSection = row.totalRoutes ? Number(((row.routesWithViews / row.totalRoutes) * 100).toFixed(1)) : 0;
-			const viewsSharePct = totalPageviewsOnSitemap ? Number(((row.totalViews / totalPageviewsOnSitemap) * 100).toFixed(1)) : 0;
+			const coveragePctSection = row.totalRoutes
+				? Number(((row.routesWithViews / row.totalRoutes) * 100).toFixed(1))
+				: 0;
+			const viewsSharePct = totalPageviewsOnSitemap
+				? Number(((row.totalViews / totalPageviewsOnSitemap) * 100).toFixed(1))
+				: 0;
 			const intensity = maxSectionViews ? Number(((row.totalViews / maxSectionViews) * 100).toFixed(1)) : 0;
 			return {
 				section: row.section,
@@ -391,7 +394,10 @@ function buildModel({ sitemapPaths, pageviewsByPath, invalidRows }) {
 			trackedOffSitemapCount: offSitemap.length,
 		},
 		rows: {
-			topSitemap: rankByViews(sitemapRows.filter((row) => row.pageviews > 0), 80),
+			topSitemap: rankByViews(
+				sitemapRows.filter((row) => row.pageviews > 0),
+				80,
+			),
 			zeroViewSitemap: sitemapRows.filter((row) => row.pageviews === 0).slice(0, 300),
 			offSitemap: rankByViews(offSitemap, 120),
 			invalidTrackedPaths: (invalidRows || []).slice(0, 80),
@@ -451,7 +457,9 @@ async function buildLiveTrends({ apiKey, siteId }) {
 
 function buildFallbackTrends({ dateRange, totalViews, note }) {
 	const trends = defaultTrends(`Fallback from local snapshot: ${note || 'no note'}`);
-	const range = String(dateRange || '').trim().toLowerCase();
+	const range = String(dateRange || '')
+		.trim()
+		.toLowerCase();
 	const idx = trends.windows.findIndex((w) => w.range === range);
 	const days = dayCountFromRange(range);
 	if (idx >= 0 && Number.isFinite(totalViews) && days) {
@@ -571,7 +579,9 @@ async function main() {
 		};
 
 		await writeSnapshot(payload);
-		console.log(`Plausible sitemap analytics: fallback snapshot ${model.summary.pagesWithViews}/${model.summary.totalSitemapPages}.`);
+		console.log(
+			`Plausible sitemap analytics: fallback snapshot ${model.summary.pagesWithViews}/${model.summary.totalSitemapPages}.`,
+		);
 		return;
 	}
 
@@ -651,7 +661,9 @@ async function main() {
 	};
 
 	await writeSnapshot(payload);
-	console.log(`Plausible sitemap analytics: ${best.siteId}, ${model.summary.pagesWithViews}/${model.summary.totalSitemapPages} sitemap pages with views.`);
+	console.log(
+		`Plausible sitemap analytics: ${best.siteId}, ${model.summary.pagesWithViews}/${model.summary.totalSitemapPages} sitemap pages with views.`,
+	);
 }
 
 main();

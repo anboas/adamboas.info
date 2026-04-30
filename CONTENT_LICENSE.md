@@ -5,11 +5,13 @@ This license applies to non-code content in this repository unless a file says o
 ## Scope
 
 Covered content includes:
+
 - Writing and editorial text (papers, notes, memos, pages)
 - Images and graphics created for this site
 - Site copy and documentation text
 
 Not covered by this file:
+
 - Software source code, build scripts, and configuration files (see `LICENSE`)
 - Third-party content, trademarks, logos, and linked-source materials
 
@@ -27,14 +29,17 @@ Legal code: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 ## Plain-language summary
 
 You may:
+
 - Share and redistribute the covered content in any medium
 
 You must:
+
 - Provide attribution to Adam Boas
 - Link to the CC BY-NC-ND 4.0 license
 - Indicate if changes were made (if applicable)
 
 You may not:
+
 - Use the content for commercial purposes
 - Distribute modified/adapted versions without separate permission
 

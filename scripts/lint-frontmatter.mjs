@@ -40,15 +40,18 @@ function checkWriting(file, data) {
 	checkCommon(file, data);
 	if (!['note', 'memo'].includes(data.type)) fail(`${file}: writing.type must be note|memo`);
 	if (!isValidDate(data.date)) fail(`${file}: missing/invalid date`);
-	if (data.status === 'published' && !isNonEmptyString(data.summary)) fail(`${file}: published writing must have summary`);
+	if (data.status === 'published' && !isNonEmptyString(data.summary))
+		fail(`${file}: published writing must have summary`);
 }
 
 function checkPaper(file, data) {
 	checkCommon(file, data);
 	// papers allow optional date in schema, but require it when published for SEO.
 	if (data.status === 'published' && !isValidDate(data.date)) fail(`${file}: published papers must have date`);
-	if (data.status === 'published' && !isNonEmptyString(data.description)) fail(`${file}: published papers must have description`);
-	if (data.status === 'published' && !isNonEmptyString(data.pdfPath)) fail(`${file}: published papers must have pdfPath`);
+	if (data.status === 'published' && !isNonEmptyString(data.description))
+		fail(`${file}: published papers must have description`);
+	if (data.status === 'published' && !isNonEmptyString(data.pdfPath))
+		fail(`${file}: published papers must have pdfPath`);
 }
 
 async function listMd(dir) {

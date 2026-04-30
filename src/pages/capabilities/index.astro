@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
 import { capabilityTopics } from '../../data/capabilities';
 import { radarEventsSeed } from '../../data/radar/events';
@@ -62,7 +61,8 @@ const rows = capabilityTopics.map((capability) => {
 			return tagHit || matches(blob, capability.keywords);
 		}),
 		...papers.filter((entry) => {
-			const blob = `${entry.data.title} ${entry.data.description ?? ''} ${(entry.data.tags ?? []).join(' ')}`.toLowerCase();
+			const blob =
+				`${entry.data.title} ${entry.data.description ?? ''} ${(entry.data.tags ?? []).join(' ')}`.toLowerCase();
 			const tagHit = (entry.data.tags ?? []).some((tag) => capability.writingTags.includes(tag));
 			return tagHit || matches(blob, capability.keywords);
 		}),
@@ -110,32 +110,42 @@ const rows = capabilityTopics.map((capability) => {
 	description="Capability map for AI autonomy, cloud platforms, DevSecOps delivery, cybersecurity, analytics, and proposal support, with linked writing and market intelligence surfaces."
 	canonicalHref="https://www.adamboas.com/capabilities/"
 >
-	<StickyBrowseBar active="capabilities" />
-
-	<SurfaceHeader
+	<SurfacePageHeader
+		stickyActive="capabilities"
 		eyebrow="Capability map"
 		title="Capabilities & Topics"
 		description="Explore focus areas across published writing, upcoming events, and opportunity intelligence."
 	>
-		<a slot="actions" class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
-	</SurfaceHeader>
+		<a slot="actions" class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}
+			>Start project</a
+		>
+	</SurfacePageHeader>
 
 	<section class="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-		{rows.map((capability) => (
-			<article class="card p-4 capability-card flex h-full flex-col">
-				<h2 class="text-base font-semibold text-slate-50 wrap-anywhere">{capability.title}</h2>
-				<p class="mt-2 text-sm text-slate-300 wrap-anywhere">{capability.summary}</p>
-				<div class="mt-3 flex flex-wrap gap-2">
-					<span class="ui-pill">Writing: {capability.writingCount}</span>
-					<span class="ui-pill">Events: {capability.eventCount}</span>
-					<span class="ui-pill">Opps: {capability.opportunityCount}</span>
-				</div>
-				<div class="mt-auto flex flex-wrap gap-2 pt-4">
-					<a class="ui-link-btn ui-link-btn-primary" href={withBase(`/capabilities/${capability.slug}/`)}>Open topic</a>
-					<a class="ui-link-btn ui-link-btn-muted" href={withBase(`/opportunities/?q=${encodeURIComponent(capability.opportunityQuery)}`)}>Open opportunities</a>
-				</div>
-			</article>
-		))}
+		{
+			rows.map((capability) => (
+				<article class="card p-4 capability-card flex h-full flex-col">
+					<h2 class="text-base font-semibold text-slate-50 wrap-anywhere">{capability.title}</h2>
+					<p class="mt-2 text-sm text-slate-300 wrap-anywhere">{capability.summary}</p>
+					<div class="mt-3 flex flex-wrap gap-2">
+						<span class="ui-pill">Writing: {capability.writingCount}</span>
+						<span class="ui-pill">Events: {capability.eventCount}</span>
+						<span class="ui-pill">Opps: {capability.opportunityCount}</span>
+					</div>
+					<div class="mt-auto flex flex-wrap gap-2 pt-4">
+						<a class="ui-link-btn ui-link-btn-primary" href={withBase(`/capabilities/${capability.slug}/`)}>
+							Open topic
+						</a>
+						<a
+							class="ui-link-btn ui-link-btn-muted"
+							href={withBase(`/opportunities/?q=${encodeURIComponent(capability.opportunityQuery)}`)}
+						>
+							Open opportunities
+						</a>
+					</div>
+				</article>
+			))
+		}
 	</section>
 </SiteLayout>
 

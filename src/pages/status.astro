@@ -15,14 +15,16 @@ function samIntel(event: (typeof radarEventsSeed)[number]) {
 	return samIntelOverrides[event.id] ?? event.ontology.acquisition?.samIntelligence ?? null;
 }
 
-const lastCollectedAt = radarEventsSeed
-	.map((event) => samIntel(event)?.collectedAt as string | undefined)
-	.filter(Boolean)
-	.sort()
-	.at(-1) ?? null;
+const lastCollectedAt =
+	radarEventsSeed
+		.map((event) => samIntel(event)?.collectedAt as string | undefined)
+		.filter(Boolean)
+		.sort()
+		.at(-1) ?? null;
 
 const feedSummary = (feedCrawlReport?.summary ?? {}) as Record<string, number>;
-const feedGeneratedAt = typeof (feedCrawlReport as any)?.generatedAt === 'string' ? (feedCrawlReport as any).generatedAt : null;
+const feedGeneratedAt =
+	typeof (feedCrawlReport as any)?.generatedAt === 'string' ? (feedCrawlReport as any).generatedAt : null;
 
 const driftLatest = (opportunitiesDrift ?? {}) as any;
 const driftGeneratedAt = typeof driftLatest.generated_at === 'string' ? driftLatest.generated_at : null;
@@ -55,14 +57,25 @@ function signed(value: number) {
 		title="Operations Status"
 		description="Live deployment signal and data-pipeline freshness for events/opportunities intelligence."
 	>
-		<a slot="actions" class="ui-link-btn" href="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml" target="_blank" rel="noreferrer">Open deploy workflow</a>
+		<a
+			slot="actions"
+			class="ui-link-btn"
+			href="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml"
+			target="_blank"
+			rel="noreferrer">Open deploy workflow</a
+		>
 	</SurfacePageHeader>
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-3">
 		<article class="card p-4 status-card lg:col-span-1">
 			<h2 class="status-title">Deploy</h2>
 			<p class="status-copy">Main branch GitHub Actions status.</p>
-			<a class="status-badge-wrap" href="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml" target="_blank" rel="noreferrer">
+			<a
+				class="status-badge-wrap"
+				href="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml"
+				target="_blank"
+				rel="noreferrer"
+			>
 				<img
 					src="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml/badge.svg?branch=main"
 					alt="Deploy status badge"
@@ -78,12 +91,19 @@ function signed(value: number) {
 			<p class="status-copy">Last full source-crawl snapshot and source health counts.</p>
 			<div class="status-grid mt-3">
 				<div class="status-kpi"><span>Generated</span><strong>{fmtDate(feedGeneratedAt)}</strong></div>
-				<div class="status-kpi"><span>Sources ok</span><strong>{Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</strong></div>
+				<div class="status-kpi">
+					<span>Sources ok</span><strong>{Number(feedSummary.ok ?? 0)} / {Number(feedSummary.total ?? 0)}</strong>
+				</div>
 				<div class="status-kpi"><span>Blocked</span><strong>{Number(feedSummary.blocked ?? 0)}</strong></div>
 				<div class="status-kpi"><span>Failed</span><strong>{Number(feedSummary.failed ?? 0)}</strong></div>
 			</div>
 			<div class="mt-3 flex flex-wrap gap-2 text-xs">
-				<a class="ui-link-btn" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/feed-crawl-report-latest.md" target="_blank" rel="noreferrer">Open feed crawl report</a>
+				<a
+					class="ui-link-btn"
+					href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/feed-crawl-report-latest.md"
+					target="_blank"
+					rel="noreferrer">Open feed crawl report</a
+				>
 			</div>
 		</article>
 	</section>
@@ -95,11 +115,20 @@ function signed(value: number) {
 			<div class="status-grid mt-3">
 				<div class="status-kpi"><span>Last collected</span><strong>{fmtDate(lastCollectedAt)}</strong></div>
 				<div class="status-kpi"><span>Drift refreshed</span><strong>{fmtDate(driftGeneratedAt)}</strong></div>
-				<div class="status-kpi"><span>Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong></div>
-				<div class="status-kpi"><span>Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong></div>
+				<div class="status-kpi">
+					<span>Δ high confidence</span><strong>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong>
+				</div>
+				<div class="status-kpi">
+					<span>Δ 3P errors</span><strong>{signed(Number(driftDeltas.us_errors ?? 0))}</strong>
+				</div>
 			</div>
 			<div class="mt-3 flex flex-wrap gap-2 text-xs">
-				<a class="ui-link-btn" href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md" target="_blank" rel="noreferrer">Open drift report</a>
+				<a
+					class="ui-link-btn"
+					href="https://github.com/anboas/adamboas.info/blob/main/src/data/radar/events-candidates-sam-opportunities-drift-latest.md"
+					target="_blank"
+					rel="noreferrer">Open drift report</a
+				>
 				<a class="ui-link-btn" href={withBase('/opportunities/')}>Open opportunities</a>
 			</div>
 		</article>

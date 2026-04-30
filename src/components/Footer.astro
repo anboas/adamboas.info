@@ -23,10 +23,26 @@ const lastUpdatedLabel = new Intl.DateTimeFormat('en-US', {
 				<p class="text-xs text-slate-500">Version {SITE_RELEASE_VERSION} · Last updated {lastUpdatedLabel}</p>
 			</div>
 			<ul class="flex flex-wrap items-center gap-x-2 gap-y-2">
-				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}sitemap/`}>Sitemap</a></li>
-				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}changes/`}>Changes</a></li>
-				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}status/`}>Status</a></li>
-				<li><a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}contact/`}>Contact</a></li>
+				<li>
+					<a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}sitemap/`}
+						>Sitemap</a
+					>
+				</li>
+				<li>
+					<a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}changes/`}
+						>Changes</a
+					>
+				</li>
+				<li>
+					<a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}status/`}
+						>Status</a
+					>
+				</li>
+				<li>
+					<a class="footer-link inline-flex h-8 items-center px-2.5" href={`${import.meta.env.BASE_URL}contact/`}
+						>Contact</a
+					>
+				</li>
 			</ul>
 		</div>
 	</div>

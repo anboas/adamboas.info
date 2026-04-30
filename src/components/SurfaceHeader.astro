@@ -18,13 +18,21 @@ const hasExtra = Astro.slots.has('default');
 			<h1 class="surface-header-title">{title}</h1>
 			{description ? <p class="surface-header-description">{description}</p> : null}
 		</div>
-		{hasActions ? (
-			<div class="surface-header-actions">
-				<slot name="actions" />
-			</div>
-		) : null}
+		{
+			hasActions ? (
+				<div class="surface-header-actions">
+					<slot name="actions" />
+				</div>
+			) : null
+		}
 	</div>
-	{hasExtra ? <div class="surface-header-extra"><slot /></div> : null}
+	{
+		hasExtra ? (
+			<div class="surface-header-extra">
+				<slot />
+			</div>
+		) : null
+	}
 </section>
 
 <style>

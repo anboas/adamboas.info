@@ -144,7 +144,11 @@ const trendArea = trendHasData ? `${trendPolyline} 100,100 0,100` : '';
 const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)), 0);
 ---
 
-<SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots." noindex={true}>
+<SiteLayout
+	title="Site Analytics | Status | Adam Boas"
+	description="Sitemap coverage and route-level traffic analytics from Plausible snapshots."
+	noindex={true}
+>
 	<SurfacePageHeader
 		stickyActive="home"
 		eyebrow="Traffic intelligence"
@@ -153,7 +157,12 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 	>
 		<div slot="actions" class="flex flex-wrap gap-2">
 			<a class="ui-link-btn" href={withBase('/status/')}>Back to status</a>
-			<a class="ui-link-btn" href={meta.sitemapIndexUrl || 'https://www.adamboas.com/sitemap-index.xml'} target="_blank" rel="noreferrer">Open sitemap</a>
+			<a
+				class="ui-link-btn"
+				href={meta.sitemapIndexUrl || 'https://www.adamboas.com/sitemap-index.xml'}
+				target="_blank"
+				rel="noreferrer">Open sitemap</a
+			>
 			<a class="ui-link-btn" href="https://plausible.io/" target="_blank" rel="noreferrer">Open Plausible</a>
 		</div>
 		<div class="status-meta mt-1">
@@ -163,7 +172,11 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 			<span class="ui-pill wrap-anywhere">Mode: {trends.mode || 'snapshot'}</span>
 		</div>
 		<p class="mt-2 text-xs text-slate-400">{trends.note || meta.note || '—'}</p>
-		{meta.sitemapLoadError ? <p class="mt-2 text-xs text-amber-300">Sitemap load warning: {meta.sitemapLoadError}</p> : null}
+		{
+			meta.sitemapLoadError ? (
+				<p class="mt-2 text-xs text-amber-300">Sitemap load warning: {meta.sitemapLoadError}</p>
+			) : null
+		}
 	</SurfacePageHeader>
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-3">
@@ -201,29 +214,36 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 			</div>
 			<div class="trend-line-wrap mt-3" aria-hidden="true">
 				<svg viewBox="0 0 100 100" class="trend-line-svg" preserveAspectRatio="none">
-					<path d="M0,100 L100,100" class="trend-axis" />
-					<path d="M0,66 L100,66" class="trend-gridline" />
-					<path d="M0,33 L100,33" class="trend-gridline" />
+					<path d="M0,100 L100,100" class="trend-axis"></path>
+					<path d="M0,66 L100,66" class="trend-gridline"></path>
+					<path d="M0,33 L100,33" class="trend-gridline"></path>
 					{trendHasData ? <polygon points={trendArea} class="trend-area" /> : null}
 					{trendHasData ? <polyline points={trendPolyline} class="trend-line" /> : null}
-					{trendLine.map((point) => (
-						<circle cx={point.x} cy={point.y} r="1.8" class:list={['trend-dot', typeof point.pageviews === 'number' ? 'trend-dot-live' : 'trend-dot-empty']} />
-					))}
+					{
+						trendLine.map((point) => (
+							<circle
+								cx={point.x}
+								cy={point.y}
+								r="1.8"
+								class:list={['trend-dot', typeof point.pageviews === 'number' ? 'trend-dot-live' : 'trend-dot-empty']}
+							/>
+						))
+					}
 				</svg>
 				<div class="trend-label-row">
-					{trendLine.map((point) => (
-						<span>{point.label}</span>
-					))}
+					{trendLine.map((point) => <span>{point.label}</span>)}
 				</div>
 			</div>
 			<div class="trend-grid mt-3">
-				{trendLine.map((w) => (
-					<div class="trend-card">
-						<p class="trend-label">{w.label}</p>
-						<p class="trend-value">{typeof w.pageviews === 'number' ? w.pageviews.toLocaleString() : '—'}</p>
-						<p class="trend-sub">{typeof w.perDay === 'number' ? `${w.perDay.toFixed(2)}/day` : 'n/a'}</p>
-					</div>
-				))}
+				{
+					trendLine.map((w) => (
+						<div class="trend-card">
+							<p class="trend-label">{w.label}</p>
+							<p class="trend-value">{typeof w.pageviews === 'number' ? w.pageviews.toLocaleString() : '—'}</p>
+							<p class="trend-sub">{typeof w.perDay === 'number' ? `${w.perDay.toFixed(2)}/day` : 'n/a'}</p>
+						</div>
+					))
+				}
 			</div>
 			<div class="trend-momentum mt-3">
 				<span class="ui-pill wrap-anywhere">7d momentum: {fmtPct(trends.momentum?.last7vsPrev23Pct)}</span>
@@ -237,17 +257,24 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 				<p class="text-xs text-slate-400">Viewed vs zero-view split</p>
 			</div>
 			<div class="coverage-stack mt-3">
-				{coverageRows.map((row) => (
-					<div class="coverage-row">
-						<div class="coverage-row-head">
-							<span>{row.label}</span>
-							<strong>{row.value.toLocaleString()} · {row.pct}%</strong>
+				{
+					coverageRows.map((row) => (
+						<div class="coverage-row">
+							<div class="coverage-row-head">
+								<span>{row.label}</span>
+								<strong>
+									{row.value.toLocaleString()} · {row.pct}%
+								</strong>
+							</div>
+							<div class="coverage-track" aria-hidden="true">
+								<div
+									class:list={['coverage-fill', row.tone === 'ok' ? 'coverage-fill-ok' : 'coverage-fill-quiet']}
+									style={`width:${Math.max(row.pct, row.value > 0 ? 1 : 0)}%`}
+								/>
+							</div>
 						</div>
-						<div class="coverage-track" aria-hidden="true">
-							<div class:list={['coverage-fill', row.tone === 'ok' ? 'coverage-fill-ok' : 'coverage-fill-quiet']} style={`width:${Math.max(row.pct, row.value > 0 ? 1 : 0)}%`}></div>
-						</div>
-					</div>
-				))}
+					))
+				}
 			</div>
 		</article>
 	</section>
@@ -258,25 +285,32 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 				<h2 class="section-title">Pareto chart (top routes)</h2>
 				<p class="text-xs text-slate-400">Share + cumulative contribution</p>
 			</div>
-			{paretoRows.length ? (
-				<div class="pareto-stack mt-3">
-					{paretoRows.map((row) => (
-						<div class="pareto-row">
-							<div class="pareto-head">
-								<span>{row.path}</span>
-								<strong>{n(row.pageviews).toLocaleString()} · {n(row.sharePct).toFixed(1)}%</strong>
+			{
+				paretoRows.length ? (
+					<div class="pareto-stack mt-3">
+						{paretoRows.map((row) => (
+							<div class="pareto-row">
+								<div class="pareto-head">
+									<span>{row.path}</span>
+									<strong>
+										{n(row.pageviews).toLocaleString()} · {n(row.sharePct).toFixed(1)}%
+									</strong>
+								</div>
+								<div class="pareto-track" aria-hidden="true">
+									<div
+										class="pareto-fill"
+										style={`width:${paretoMax ? Math.max((n(row.pageviews) / paretoMax) * 100, 1) : 0}%`}
+									/>
+									<div class="pareto-marker" style={`left:${Math.min(Math.max(n(row.cumulativePct), 1), 100)}%`} />
+								</div>
+								<p class="pareto-meta">Cumulative: {n(row.cumulativePct).toFixed(1)}%</p>
 							</div>
-							<div class="pareto-track" aria-hidden="true">
-								<div class="pareto-fill" style={`width:${paretoMax ? Math.max((n(row.pageviews) / paretoMax) * 100, 1) : 0}%`}></div>
-								<div class="pareto-marker" style={`left:${Math.min(Math.max(n(row.cumulativePct), 1), 100)}%`}></div>
-							</div>
-							<p class="pareto-meta">Cumulative: {n(row.cumulativePct).toFixed(1)}%</p>
-						</div>
-					))}
-				</div>
-			) : (
-				<p class="mt-3 text-sm text-slate-300">No Pareto rows available in this snapshot.</p>
-			)}
+						))}
+					</div>
+				) : (
+					<p class="mt-3 text-sm text-slate-300">No Pareto rows available in this snapshot.</p>
+				)
+			}
 		</article>
 
 		<article class="card control-shell p-4">
@@ -284,49 +318,54 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 				<h2 class="section-title">Section heatmap</h2>
 				<p class="text-xs text-slate-400">Coverage + traffic by route family</p>
 			</div>
-			{sectionRows.length ? (
-				<div class="heatmap-grid mt-3">
-					{sectionRows.map((row) => (
-						<article class="heat-cell" style={`--heat:${Math.max(n(row.intensity), 0)};`}>
-							<p class="heat-title">/{row.section}</p>
-							<p class="heat-kpi">{n(row.totalViews).toLocaleString()} views</p>
-							<p class="heat-sub">{n(row.routesWithViews)}/{n(row.totalRoutes)} routes active · {n(row.coveragePct).toFixed(1)}%</p>
-						</article>
-					))}
-				</div>
-			) : (
-				<p class="mt-3 text-sm text-slate-300">No section heatmap data yet.</p>
-			)}
+			{
+				sectionRows.length ? (
+					<div class="heatmap-grid mt-3">
+						{sectionRows.map((row) => (
+							<article class="heat-cell" style={`--heat:${Math.max(n(row.intensity), 0)};`}>
+								<p class="heat-title">/{row.section}</p>
+								<p class="heat-kpi">{n(row.totalViews).toLocaleString()} views</p>
+								<p class="heat-sub">
+									{n(row.routesWithViews)}/{n(row.totalRoutes)} routes active · {n(row.coveragePct).toFixed(1)}%
+								</p>
+							</article>
+						))}
+					</div>
+				) : (
+					<p class="mt-3 text-sm text-slate-300">No section heatmap data yet.</p>
+				)
+			}
 		</article>
 	</section>
 
-
-	{invalidRows.length ? (
-		<section class="card control-shell mt-4 p-4">
-			<div class="flex flex-wrap items-end justify-between gap-2">
-				<h2 class="section-title">Invalid tracked paths</h2>
-				<p class="text-xs text-slate-400">Rows dropped during normalization</p>
-			</div>
-			<div class="table-wrap mt-3">
-				<table class="status-table">
-					<thead>
-						<tr>
-							<th>Raw path</th>
-							<th>Pageviews</th>
-						</tr>
-					</thead>
-					<tbody>
-						{invalidRows.map((row) => (
+	{
+		invalidRows.length ? (
+			<section class="card control-shell mt-4 p-4">
+				<div class="flex flex-wrap items-end justify-between gap-2">
+					<h2 class="section-title">Invalid tracked paths</h2>
+					<p class="text-xs text-slate-400">Rows dropped during normalization</p>
+				</div>
+				<div class="table-wrap mt-3">
+					<table class="status-table">
+						<thead>
 							<tr>
-								<td>{row.path}</td>
-								<td>{n(row.pageviews).toLocaleString()}</td>
+								<th>Raw path</th>
+								<th>Pageviews</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
-			</div>
-		</section>
-	) : null}
+						</thead>
+						<tbody>
+							{invalidRows.map((row) => (
+								<tr>
+									<td>{row.path}</td>
+									<td>{n(row.pageviews).toLocaleString()}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+			</section>
+		) : null
+	}
 </SiteLayout>
 
 <style>

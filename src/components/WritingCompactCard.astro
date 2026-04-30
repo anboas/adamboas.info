@@ -23,22 +23,32 @@ const dateLabel = item.date
 	<div class="flex items-start justify-between gap-3">
 		<div class="min-w-0">
 			<div class="flex min-w-0 items-baseline gap-2">
-				<span class={`writing-type-pill writing-type-${item.type} shrink-0 rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}>
+				<span
+					class={`writing-type-pill writing-type-${item.type} shrink-0 rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}
+				>
 					{item.type}
 				</span>
 				<h3 class="clamp-2 min-w-0 break-words text-sm font-bold leading-snug text-slate-50">{item.title}</h3>
-				{item.hasAudio ? (
-					<span
-						class="shrink-0 rounded-full border border-emerald-700/70 bg-emerald-950/40 px-1.5 py-0 text-[10px] text-emerald-200"
-						title="Audio or podcast available"
-						aria-label="Audio available"
-					>
-						🎧
-					</span>
-				) : null}
+				{
+					item.hasAudio ? (
+						<span
+							class="shrink-0 rounded-full border border-emerald-700/70 bg-emerald-950/40 px-1.5 py-0 text-[10px] text-emerald-200"
+							title="Audio or podcast available"
+							aria-label="Audio available"
+						>
+							🎧
+						</span>
+					) : null
+				}
 			</div>
 			{item.description ? <p class="clamp-2 mt-1.5 break-words text-sm text-slate-300">{item.description}</p> : null}
-			{showTopicCount && tagCount > 0 ? <p class="mt-1 text-[11px] text-slate-500">{tagCount} topic{tagCount === 1 ? '' : 's'}</p> : null}
+			{
+				showTopicCount && tagCount > 0 ? (
+					<p class="mt-1 text-[11px] text-slate-500">
+						{tagCount} topic{tagCount === 1 ? '' : 's'}
+					</p>
+				) : null
+			}
 		</div>
 		{dateLabel ? <span class="shrink-0 text-[11px] text-slate-500">{dateLabel}</span> : null}
 	</div>

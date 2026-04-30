@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../../components/SurfacePageHeader.astro';
 import { withBase } from '../../../utils/withBase';
 import { buildCanonicalTagGroups, slugifyTag } from '../../../utils/tags';
 
@@ -18,9 +17,7 @@ for (const p of papers) {
 }
 
 const canonicalGroups = buildCanonicalTagGroups(counts.keys());
-const grouped = new Map(
-	canonicalGroups.map((group) => [group.slug, { tag: group.label, slug: group.slug, count: 0 }]),
-);
+const grouped = new Map(canonicalGroups.map((group) => [group.slug, { tag: group.label, slug: group.slug, count: 0 }]));
 
 for (const [rawTag, count] of counts.entries()) {
 	const slug = slugifyTag(rawTag) || 'tag';
@@ -32,27 +29,29 @@ const tags = [...grouped.values()].sort((a, b) => b.count - a.count || a.tag.loc
 ---
 
 <SiteLayout title="Writing Tags | Adam Boas" description="Topics across notes, memos, and papers.">
-	<StickyBrowseBar active="writing" />
-	<SurfaceHeader
+	<SurfacePageHeader
+		stickyActive="writing"
 		eyebrow="Browse"
 		title="Writing Tags"
 		description="Topics across notes, memos, and papers."
 	/>
 
-	{tags.length ? (
-		<ul class="mt-4 flex flex-wrap gap-2 md:mt-5">
-			{tags.map((t) => (
-				<li>
-					<a
-						class="rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase(`/writing/tags/${t.slug}/`)}
-					>
-						{t.tag} <span class="text-slate-400">({t.count})</span>
-					</a>
-				</li>
-			))}
-		</ul>
-	) : (
-		<p class="mt-4 text-slate-300 md:mt-5">No tags yet.</p>
-	)}
+	{
+		tags.length ? (
+			<ul class="mt-4 flex flex-wrap gap-2 md:mt-5">
+				{tags.map((t) => (
+					<li>
+						<a
+							class="rounded-full border border-slate-800 bg-slate-950/40 px-3 py-1 text-sm text-slate-200 hover:bg-slate-900"
+							href={withBase(`/writing/tags/${t.slug}/`)}
+						>
+							{t.tag} <span class="text-slate-400">({t.count})</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		) : (
+			<p class="mt-4 text-slate-300 md:mt-5">No tags yet.</p>
+		)
+	}
 </SiteLayout>

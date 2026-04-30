@@ -138,12 +138,7 @@ async function main() {
 		return;
 	}
 
-	const siteCandidates = [
-		configuredSiteId,
-		'www.adamboas.com',
-		'adamboas.com',
-		'anboas.github.io/adamboas.info',
-	]
+	const siteCandidates = [configuredSiteId, 'www.adamboas.com', 'adamboas.com', 'anboas.github.io/adamboas.info']
 		.map((s) => (s || '').trim())
 		.filter(Boolean)
 		.filter((s, i, arr) => arr.indexOf(s) === i);
@@ -164,7 +159,10 @@ async function main() {
 			continue;
 		}
 
-		const totalEvents = Object.values(result.eventTotals).reduce((sum, n) => sum + (Number.isFinite(n) ? Number(n) : 0), 0);
+		const totalEvents = Object.values(result.eventTotals).reduce(
+			(sum, n) => sum + (Number.isFinite(n) ? Number(n) : 0),
+			0,
+		);
 		const eventKinds = Object.values(result.eventTotals).filter((n) => Number(n) > 0).length;
 
 		if (!best || totalEvents > best.totalEvents || (totalEvents === best.totalEvents && eventKinds > best.eventKinds)) {
@@ -180,14 +178,19 @@ async function main() {
 
 	if (!best) {
 		const note = failures.length ? `api errors: ${failures.join(' | ')}` : 'no successful responses';
-		await writeSnapshot({ siteId: configuredSiteId || siteCandidates[0], dateRange, note, triedSiteIds: siteCandidates });
+		await writeSnapshot({
+			siteId: configuredSiteId || siteCandidates[0],
+			dateRange,
+			note,
+			triedSiteIds: siteCandidates,
+		});
 		return;
 	}
 
 	await writeSnapshot({
 		siteId: best.siteId,
 		dateRange,
-		note: `ok (${best.totalEvents} events)` ,
+		note: `ok (${best.totalEvents} events)`,
 		eventTotals: best.eventTotals,
 		byPage: best.byPage,
 		triedSiteIds: siteCandidates,

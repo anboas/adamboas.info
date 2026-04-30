@@ -16,17 +16,23 @@ const trackerEvents = Function(`return [${blockMatch[1]}];`)();
 const locations = JSON.parse(fs.readFileSync(locationsPath, 'utf8')).locations || {};
 const existingTs = fs.readFileSync(eventsTsPath, 'utf8');
 
-const normalize = (s) => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const normalize = (s) =>
+	(s || '')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, ' ')
+		.trim();
 
 const existingTitleSet = new Set(
-	[...existingTs.matchAll(/title:\s*'((?:\\'|[^'])*)'/g)].map((m) => normalize(m[1].replace(/\\'/g, "'")))
+	[...existingTs.matchAll(/title:\s*'((?:\\'|[^'])*)'/g)].map((m) => normalize(m[1].replace(/\\'/g, "'"))),
 );
 const existingIdSet = new Set([...existingTs.matchAll(/id:\s*'([^']+)'/g)].map((m) => m[1]));
 
 const statusPriority = { Upcoming: 3, Projected: 2, 'Needs Date': 1, Past: 0 };
 
 function normalizeStatus(status) {
-	const s = String(status || '').toLowerCase().trim();
+	const s = String(status || '')
+		.toLowerCase()
+		.trim();
 	if (s.includes('upcoming')) return 'Upcoming';
 	if (s.includes('projected')) return 'Projected';
 	if (s.includes('needs')) return 'Needs Date';
@@ -260,9 +266,7 @@ function toTs(value, depth = 0) {
 	}
 	const entries = Object.entries(value).filter(([, v]) => v !== undefined);
 	if (!entries.length) return '{}';
-	return `\n${pad}{\n${entries
-		.map(([k, v]) => `${pad}\t${k}: ${toTs(v, depth + 1)}`)
-		.join(',\n')}\n${pad}}`;
+	return `\n${pad}{\n${entries.map(([k, v]) => `${pad}\t${k}: ${toTs(v, depth + 1)}`).join(',\n')}\n${pad}}`;
 }
 
 function createEventObject(e) {
@@ -301,7 +305,7 @@ function createEventObject(e) {
 						.toLowerCase()
 						.split(/[^a-z0-9]+/)
 						.filter((w) => w.length > 3)
-						.slice(0, 4)
+						.slice(0, 4),
 				),
 			],
 			relatedPrograms: ['Radar expansion'],
@@ -330,7 +334,9 @@ function createEventObject(e) {
 	};
 }
 
-const trackerCandidatePool = trackerEvents.filter((e) => Number(e.year || 0) >= 2026 && normalizeStatus(e.status) !== 'Past');
+const trackerCandidatePool = trackerEvents.filter(
+	(e) => Number(e.year || 0) >= 2026 && normalizeStatus(e.status) !== 'Past',
+);
 
 const dedupedByTitle = new Map();
 for (const e of trackerCandidatePool) {
@@ -387,7 +393,7 @@ const md = [
 	'',
 	...imported.map(
 		(e) =>
-			`- ${e.title} | ${e.status} | ${e.startDate ?? 'TBD'}${e.endDate ? ` to ${e.endDate}` : ''} | ${e.location.city}${e.location.state ? `, ${e.location.state}` : ''}`
+			`- ${e.title} | ${e.status} | ${e.startDate ?? 'TBD'}${e.endDate ? ` to ${e.endDate}` : ''} | ${e.location.city}${e.location.state ? `, ${e.location.state}` : ''}`,
 	),
 	'',
 	'Source: https://jbenton1.github.io/government-guide/conference-tracker/',
@@ -395,11 +401,17 @@ const md = [
 ].join('\n');
 fs.writeFileSync(outMdPath, md);
 
-console.log(JSON.stringify({
-	trackerEvents: trackerEvents.length,
-	candidatePool: trackerCandidatePool.length,
-	imported: imported.length,
-	outJsonPath,
-	outMdPath,
-	eventsTsPath,
-}, null, 2));
+console.log(
+	JSON.stringify(
+		{
+			trackerEvents: trackerEvents.length,
+			candidatePool: trackerCandidatePool.length,
+			imported: imported.length,
+			outJsonPath,
+			outMdPath,
+			eventsTsPath,
+		},
+		null,
+		2,
+	),
+);

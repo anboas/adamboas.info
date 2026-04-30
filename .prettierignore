@@ -1,0 +1,12 @@
+dist
+.astro
+node_modules
+public/og
+coverage
+playwright-report
+test-results
+src/data/radar/mirror/**
+src/data/radar/*.json
+src/data/radar/**/*.json
+src/pages/changes.astro
+src/components/BaseHead.astro

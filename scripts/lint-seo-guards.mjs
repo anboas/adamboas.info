@@ -17,7 +17,8 @@ function exists(file) {
 function listMarkdownFiles(dir) {
 	const abs = path.join(repoRoot, dir);
 	if (!fs.existsSync(abs)) return [];
-	return fs.readdirSync(abs)
+	return fs
+		.readdirSync(abs)
 		.filter((name) => name.endsWith('.md'))
 		.map((name) => path.join(dir, name));
 }
@@ -28,7 +29,9 @@ function assert(condition, message) {
 
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-const writingFiles = listMarkdownFiles('src/content/writing/notes').concat(listMarkdownFiles('src/content/writing/memos'));
+const writingFiles = listMarkdownFiles('src/content/writing/notes').concat(
+	listMarkdownFiles('src/content/writing/memos'),
+);
 for (const rel of writingFiles) {
 	const raw = read(rel);
 	const parsed = matter(raw);
@@ -37,7 +40,10 @@ for (const rel of writingFiles) {
 	const slug = path.basename(rel, '.md');
 	assert(slugPattern.test(slug), `Invalid writing slug: ${slug}`);
 	const summary = String(data.summary ?? '').trim();
-	assert(summary.length >= 90 && summary.length <= 280, `Summary length out of range (90-280) for ${slug}: ${summary.length}`);
+	assert(
+		summary.length >= 90 && summary.length <= 280,
+		`Summary length out of range (90-280) for ${slug}: ${summary.length}`,
+	);
 	assert(exists(`public/og/writing/${slug}.png`), `Missing OG image for writing slug: ${slug}`);
 }
 
@@ -50,12 +56,18 @@ for (const rel of paperFiles) {
 	const slug = path.basename(rel, '.md');
 	assert(slugPattern.test(slug), `Invalid paper slug: ${slug}`);
 	const description = String(data.description ?? '').trim();
-	assert(description.length >= 80 && description.length <= 280, `Description length out of range (80-280) for paper ${slug}: ${description.length}`);
+	assert(
+		description.length >= 80 && description.length <= 280,
+		`Description length out of range (80-280) for paper ${slug}: ${description.length}`,
+	);
 	assert(exists(`public/og/writing/${slug}.png`), `Missing OG image for paper slug: ${slug}`);
 }
 
 const writingDetailPage = read('src/pages/writing/[...slug].astro');
-assert(/'@type':\s*currentSchemaType/.test(writingDetailPage) || /'@type':\s*'Article'/.test(writingDetailPage), 'Writing detail JSON-LD must include Article schema mapping.');
+assert(
+	/'@type':\s*currentSchemaType/.test(writingDetailPage) || /'@type':\s*'Article'/.test(writingDetailPage),
+	'Writing detail JSON-LD must include Article schema mapping.',
+);
 assert(/BreadcrumbList/.test(writingDetailPage), 'Writing detail page must include BreadcrumbList schema.');
 
 const mustNoindex = [

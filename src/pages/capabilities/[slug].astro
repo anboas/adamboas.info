@@ -71,7 +71,8 @@ const writingItems = [
 		})),
 	...papers
 		.filter((entry) => {
-			const blob = `${entry.data.title} ${entry.data.description ?? ''} ${(entry.data.tags ?? []).join(' ')}`.toLowerCase();
+			const blob =
+				`${entry.data.title} ${entry.data.description ?? ''} ${(entry.data.tags ?? []).join(' ')}`.toLowerCase();
 			const tagHit = (entry.data.tags ?? []).some((tag) => capability.writingTags.includes(tag));
 			return tagHit || matches(blob, capability.keywords);
 		})
@@ -142,8 +143,10 @@ const opportunityItems = [...opportunitiesByKey.values()]
 		return matches(blob, capability.keywords);
 	})
 	.sort((a, b) => {
-		const aDue = safeDate(String(a.responseDueDate ?? a.response_due_date ?? ''))?.getTime() ?? Number.POSITIVE_INFINITY;
-		const bDue = safeDate(String(b.responseDueDate ?? b.response_due_date ?? ''))?.getTime() ?? Number.POSITIVE_INFINITY;
+		const aDue =
+			safeDate(String(a.responseDueDate ?? a.response_due_date ?? ''))?.getTime() ?? Number.POSITIVE_INFINITY;
+		const bDue =
+			safeDate(String(b.responseDueDate ?? b.response_due_date ?? ''))?.getTime() ?? Number.POSITIVE_INFINITY;
 		if (aDue !== bDue) return aDue - bDue;
 		const aPosted = safeDate(String(a.postedDate ?? a.posted_date ?? ''))?.getTime() ?? 0;
 		const bPosted = safeDate(String(b.postedDate ?? b.posted_date ?? ''))?.getTime() ?? 0;
@@ -170,7 +173,11 @@ const capabilitiesUrl = new URL(withBase('/capabilities/'), Astro.site).toString
 const pageUrl = new URL(canonicalHref, Astro.site).toString();
 ---
 
-<SiteLayout title={`${capability.title} Capability | Adam Boas`} description={capabilitySeoDescription} canonicalHref={canonicalHref}>
+<SiteLayout
+	title={`${capability.title} Capability | Adam Boas`}
+	description={capabilitySeoDescription}
+	canonicalHref={canonicalHref}
+>
 	<StickyBrowseBar active="capabilities" />
 	<script
 		type="application/ld+json"
@@ -185,11 +192,7 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 		})}
 	/>
 
-	<SurfaceHeader
-		eyebrow="Capability topic"
-		title={capability.title}
-		description={capability.description}
-	>
+	<SurfaceHeader eyebrow="Capability topic" title={capability.title} description={capability.description}>
 		<div slot="actions" class="flex flex-wrap gap-2">
 			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
 			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/capabilities/')}>All topics</a>
@@ -205,51 +208,78 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 		<article class="card p-4 capability-card xl:col-span-1">
 			<h2 class="section-title">Writing</h2>
 			<ul class="mt-3 space-y-2">
-				{writingItems.length ? writingItems.map((item) => (
-					<li class="cap-item">
-						<a href={item.href} class="cap-item-link">
-							<span class="cap-item-type">{item.type}</span>
-							<span class="cap-item-title wrap-anywhere">{item.title}</span>
-						</a>
-						{item.description ? <p class="cap-item-copy wrap-anywhere">{item.description}</p> : null}
-					</li>
-				)) : <li class="text-sm text-slate-300">No matched writing yet.</li>}
+				{
+					writingItems.length ? (
+						writingItems.map((item) => (
+							<li class="cap-item">
+								<a href={item.href} class="cap-item-link">
+									<span class="cap-item-type">{item.type}</span>
+									<span class="cap-item-title wrap-anywhere">{item.title}</span>
+								</a>
+								{item.description ? <p class="cap-item-copy wrap-anywhere">{item.description}</p> : null}
+							</li>
+						))
+					) : (
+						<li class="text-sm text-slate-300">No matched writing yet.</li>
+					)
+				}
 			</ul>
 		</article>
 
 		<article class="card p-4 capability-card xl:col-span-1">
 			<h2 class="section-title">Upcoming events</h2>
 			<ul class="mt-3 space-y-2">
-				{eventItems.length ? eventItems.map((item) => (
-					<li class="cap-item">
-						<a href={item.href} class="cap-item-link">
-							<span class="cap-item-title wrap-anywhere">{item.title}</span>
-						</a>
-						<p class="cap-item-copy wrap-anywhere">{item.branch} · {item.type}{item.startDate ? ` · ${item.startDate}` : ''}</p>
-					</li>
-				)) : <li class="text-sm text-slate-300">No matched upcoming events.</li>}
+				{
+					eventItems.length ? (
+						eventItems.map((item) => (
+							<li class="cap-item">
+								<a href={item.href} class="cap-item-link">
+									<span class="cap-item-title wrap-anywhere">{item.title}</span>
+								</a>
+								<p class="cap-item-copy wrap-anywhere">
+									{item.branch} · {item.type}
+									{item.startDate ? ` · ${item.startDate}` : ''}
+								</p>
+							</li>
+						))
+					) : (
+						<li class="text-sm text-slate-300">No matched upcoming events.</li>
+					)
+				}
 			</ul>
 		</article>
 
 		<article class="card p-4 capability-card xl:col-span-1">
 			<h2 class="section-title">Opportunities</h2>
 			<ul class="mt-3 space-y-2">
-				{opportunityItems.length ? opportunityItems.map((item) => (
-					<li class="cap-item">
-						<a href={item.openHref} class="cap-item-link">
-							<span class="cap-item-title wrap-anywhere">{item.title}</span>
-						</a>
-						<p class="cap-item-copy wrap-anywhere">
-							{item.noticeType ?? 'Notice'}
-							{item.agency ? ` · ${item.agency}` : ''}
-							{item.due ? ` · Due ${item.due}` : ''}
-						</p>
-						<div class="mt-1 flex flex-wrap gap-1.5">
-							<a class="cap-mini-link" href={item.openHref}>Open in opportunities</a>
-							{item.sourceHref ? <a class="cap-mini-link" href={item.sourceHref} target="_blank" rel="noreferrer">Source</a> : null}
-						</div>
-					</li>
-				)) : <li class="text-sm text-slate-300">No matched opportunities yet.</li>}
+				{
+					opportunityItems.length ? (
+						opportunityItems.map((item) => (
+							<li class="cap-item">
+								<a href={item.openHref} class="cap-item-link">
+									<span class="cap-item-title wrap-anywhere">{item.title}</span>
+								</a>
+								<p class="cap-item-copy wrap-anywhere">
+									{item.noticeType ?? 'Notice'}
+									{item.agency ? ` · ${item.agency}` : ''}
+									{item.due ? ` · Due ${item.due}` : ''}
+								</p>
+								<div class="mt-1 flex flex-wrap gap-1.5">
+									<a class="cap-mini-link" href={item.openHref}>
+										Open in opportunities
+									</a>
+									{item.sourceHref ? (
+										<a class="cap-mini-link" href={item.sourceHref} target="_blank" rel="noreferrer">
+											Source
+										</a>
+									) : null}
+								</div>
+							</li>
+						))
+					) : (
+						<li class="text-sm text-slate-300">No matched opportunities yet.</li>
+					)
+				}
 			</ul>
 		</article>
 	</section>

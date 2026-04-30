@@ -1,7 +1,6 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../utils/withBase';
 
@@ -30,9 +29,8 @@ const latest = [...writing, ...papers]
 ---
 
 <SiteLayout title="404 | Adam Boas" description="Page not found.">
-	<StickyBrowseBar active="home" />
-
-	<SurfaceHeader
+	<SurfacePageHeader
+		stickyActive="home"
 		eyebrow="404"
 		title="Page not found"
 		description="That URL doesn’t exist here. Use one of the paths below to get back on track."
@@ -43,23 +41,29 @@ const latest = [...writing, ...papers]
 			<a href={withBase('/profile/')} class="ui-link-btn">Profile</a>
 			<a href={withBase('/capabilities/')} class="ui-link-btn">Capabilities</a>
 		</div>
-	</SurfaceHeader>
+	</SurfacePageHeader>
 
 	<section class="mt-6 card p-6">
 		<h2 class="section-title">Latest Writing</h2>
-		{latest.length ? (
-			<ul class="mt-4 space-y-3">
-				{latest.map((item) => (
-					<li>
-						<a class="text-sm text-slate-100 hover:text-stone-100" href={withBase(`/writing/${item.slug}/`)}>
-							<span class={`writing-type-pill writing-type-${item.type} mr-2 rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}>{item.type}</span>
-							{item.title}
-						</a>
-					</li>
-				))}
-			</ul>
-		) : (
-			<p class="mt-4 text-sm text-slate-300">No published writing items yet.</p>
-		)}
+		{
+			latest.length ? (
+				<ul class="mt-4 space-y-3">
+					{latest.map((item) => (
+						<li>
+							<a class="text-sm text-slate-100 hover:text-stone-100" href={withBase(`/writing/${item.slug}/`)}>
+								<span
+									class={`writing-type-pill writing-type-${item.type} mr-2 rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}
+								>
+									{item.type}
+								</span>
+								{item.title}
+							</a>
+						</li>
+					))}
+				</ul>
+			) : (
+				<p class="mt-4 text-sm text-slate-300">No published writing items yet.</p>
+			)
+		}
 	</section>
 </SiteLayout>

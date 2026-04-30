@@ -17,9 +17,7 @@ const pv = (plausible as any)?.pageviewsByPath?.[key];
 const altNoBase = key.replace(/^\/adamboas\.info\b/, '') || '/';
 const pvAltNoBase = (plausible as any)?.pageviewsByPath?.[altNoBase];
 
-const altWithBase = key.startsWith('/adamboas.info')
-	? key
-	: `/adamboas.info${key === '/' ? '' : key}`;
+const altWithBase = key.startsWith('/adamboas.info') ? key : `/adamboas.info${key === '/' ? '' : key}`;
 const pvAltWithBase = (plausible as any)?.pageviewsByPath?.[altWithBase];
 
 const pageviews =
@@ -36,8 +34,10 @@ const unavailable = /(api error|api errors|missing|unexpected|no successful)/i.t
 const hasPlausibleSnapshot = !!(plausible as any)?.meta;
 ---
 
-{hasPlausibleSnapshot ? (
-	<span class="pageviews-chip rounded-full border px-2 py-1 text-xs">
-		{unavailable ? `views unavailable (${dateRange})` : `${(pageviews ?? 0).toLocaleString()} views (${dateRange})`}
-	</span>
-) : null}
+{
+	hasPlausibleSnapshot ? (
+		<span class="pageviews-chip rounded-full border px-2 py-1 text-xs">
+			{unavailable ? `views unavailable (${dateRange})` : `${(pageviews ?? 0).toLocaleString()} views (${dateRange})`}
+		</span>
+	) : null
+}

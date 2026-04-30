@@ -50,16 +50,17 @@ const items = [
 			description: p.data.description,
 			date: p.data.date,
 		})),
-]
-	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
+].sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
 const fmtDate = (date: Date | undefined) =>
-	date
-		? date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })
-		: '';
+	date ? date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) : '';
 ---
 
-<SiteLayout title={`Writing Tag: ${tag} | Adam Boas`} description={`Writing tagged ${tag}.`} canonicalHref={canonicalHref}>
+<SiteLayout
+	title={`Writing Tag: ${tag} | Adam Boas`}
+	description={`Writing tagged ${tag}.`}
+	canonicalHref={canonicalHref}
+>
 	<StickyBrowseBar active="writing" />
 	<script
 		type="application/ld+json"
@@ -73,30 +74,30 @@ const fmtDate = (date: Date | undefined) =>
 			],
 		})}
 	/>
-	<SurfaceHeader
-		eyebrow="Tag view"
-		title={`Tag: ${tag}`}
-		description={`${items.length} item(s)`}
-	>
-		<a slot="actions" class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}>All tags ↗</a>
+	<SurfaceHeader eyebrow="Tag view" title={`Tag: ${tag}`} description={`${items.length} item(s)`}>
+		<a slot="actions" class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={withBase('/writing/tags/')}
+			>All tags ↗</a
+		>
 	</SurfaceHeader>
 
 	<div class="mt-4 grid gap-4 md:mt-5">
-		{items.map((w) => (
-			<a class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${w.slug}/`)}>
-				<div class="flex items-baseline justify-between gap-4">
-					<div class="min-w-0">
-						<div class="flex items-baseline gap-2">
-							<span class="rounded-none border border-slate-700 bg-slate-950/40 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">
-								{w.type}
-							</span>
-							<h2 class="truncate text-base font-semibold text-slate-50">{w.title}</h2>
+		{
+			items.map((w) => (
+				<a class="card block p-5 hover:border-slate-700" href={withBase(`/writing/${w.slug}/`)}>
+					<div class="flex items-baseline justify-between gap-4">
+						<div class="min-w-0">
+							<div class="flex items-baseline gap-2">
+								<span class="rounded-none border border-slate-700 bg-slate-950/40 px-2 py-0.5 text-[10px] uppercase tracking-wide text-slate-300">
+									{w.type}
+								</span>
+								<h2 class="truncate text-base font-semibold text-slate-50">{w.title}</h2>
+							</div>
+							{w.description && <p class="mt-2 text-sm text-slate-300">{w.description}</p>}
 						</div>
-						{w.description && <p class="mt-2 text-sm text-slate-300">{w.description}</p>}
+						{w.date && <span class="shrink-0 text-xs text-slate-400">{fmtDate(w.date)}</span>}
 					</div>
-					{w.date && <span class="shrink-0 text-xs text-slate-400">{fmtDate(w.date)}</span>}
-				</div>
-			</a>
-		))}
+				</a>
+			))
+		}
 	</div>
 </SiteLayout>

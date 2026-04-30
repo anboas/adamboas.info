@@ -1,7 +1,18 @@
 ---
 import { withBase } from '../utils/withBase';
 
-const { active = 'writing' } = Astro.props as { active?: 'home' | 'writing' | 'profile' | 'speaking' | 'events' | 'opportunities' | 'capabilities' | 'experience' | 'education' };
+const { active = 'writing' } = Astro.props as {
+	active?:
+		| 'home'
+		| 'writing'
+		| 'profile'
+		| 'speaking'
+		| 'events'
+		| 'opportunities'
+		| 'capabilities'
+		| 'experience'
+		| 'education';
+};
 const toolsActive = active === 'events' || active === 'opportunities';
 
 function cls(key) {
@@ -20,19 +31,29 @@ function ariaCurrent(key) {
 		<div class="flex flex-wrap items-center gap-1.5">
 			<a class={cls('writing')} href={withBase('/writing/')} aria-current={ariaCurrent('writing')}>Writing</a>
 			<a class={cls('profile')} href={withBase('/profile/')} aria-current={ariaCurrent('profile')}>Profile</a>
-			<a class={cls('capabilities')} href={withBase('/capabilities/')} aria-current={ariaCurrent('capabilities')}>Capabilities</a>
+			<a class={cls('capabilities')} href={withBase('/capabilities/')} aria-current={ariaCurrent('capabilities')}
+				>Capabilities</a
+			>
 			<details class="group relative">
-				<summary class:list={[
-					'inline-flex h-8 cursor-pointer list-none items-center justify-center rounded-none border px-2 text-[11px] sm:px-3 sm:text-sm',
-					toolsActive
-						? 'sticky-tab-active font-semibold text-slate-50'
-						: 'border-slate-800 bg-slate-950 text-slate-200 hover:bg-slate-900',
-				]}>
+				<summary
+					class:list={[
+						'inline-flex h-8 cursor-pointer list-none items-center justify-center rounded-none border px-2 text-[11px] sm:px-3 sm:text-sm',
+						toolsActive
+							? 'sticky-tab-active font-semibold text-slate-50'
+							: 'border-slate-800 bg-slate-950 text-slate-200 hover:bg-slate-900',
+					]}
+				>
 					Tools <span class="ml-1 text-[10px]">▾</span>
 				</summary>
 				<div class="absolute right-0 z-40 mt-1 w-44 border border-slate-700 bg-slate-950/98 p-1 shadow-xl">
-					<a class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href={withBase('/events/')}>Events</a>
-					<a class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href={withBase('/opportunities/')}>Opportunities</a>
+					<a
+						class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/events/')}>Events</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/opportunities/')}>Opportunities</a
+					>
 				</div>
 			</details>
 		</div>

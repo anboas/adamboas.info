@@ -32,10 +32,8 @@ function parseResults(data) {
 	for (const r of rows) {
 		const rawPath = Array.isArray(r?.dimensions)
 			? r.dimensions[0]
-			: r?.dimensions?.['event:page'] ?? r?.dimensions?.event?.page ?? r?.dimensions?.page ?? null;
-		const pv = Array.isArray(r?.metrics)
-			? r.metrics[0]
-			: r?.metrics?.pageviews ?? r?.metrics?.['pageviews'] ?? null;
+			: (r?.dimensions?.['event:page'] ?? r?.dimensions?.event?.page ?? r?.dimensions?.page ?? null);
+		const pv = Array.isArray(r?.metrics) ? r.metrics[0] : (r?.metrics?.pageviews ?? r?.metrics?.['pageviews'] ?? null);
 		const key = normalizePath(rawPath);
 		if (!key || typeof pv !== 'number') continue;
 		pageviewsByPath[key] = pv;
@@ -93,12 +91,7 @@ async function main() {
 		return;
 	}
 
-	const siteCandidates = [
-		configuredSiteId,
-		'www.adamboas.com',
-		'adamboas.com',
-		'anboas.github.io/adamboas.info',
-	]
+	const siteCandidates = [configuredSiteId, 'www.adamboas.com', 'adamboas.com', 'anboas.github.io/adamboas.info']
 		.map((s) => (s || '').trim())
 		.filter(Boolean)
 		.filter((s, i, arr) => arr.indexOf(s) === i);
@@ -120,7 +113,10 @@ async function main() {
 		}
 
 		const rowCount = Object.keys(result.pageviewsByPath).length;
-		const totalViews = Object.values(result.pageviewsByPath).reduce((acc, n) => acc + (typeof n === 'number' ? n : 0), 0);
+		const totalViews = Object.values(result.pageviewsByPath).reduce(
+			(acc, n) => acc + (typeof n === 'number' ? n : 0),
+			0,
+		);
 
 		if (!best || rowCount > best.rowCount || (rowCount === best.rowCount && totalViews > best.totalViews)) {
 			best = {
@@ -134,14 +130,19 @@ async function main() {
 
 	if (!best) {
 		const note = failures.length ? `api errors: ${failures.join(' | ')}` : 'no successful responses';
-		await writeSnapshot({ siteId: configuredSiteId || siteCandidates[0], dateRange, note, triedSiteIds: siteCandidates });
+		await writeSnapshot({
+			siteId: configuredSiteId || siteCandidates[0],
+			dateRange,
+			note,
+			triedSiteIds: siteCandidates,
+		});
 		return;
 	}
 
 	await writeSnapshot({
 		siteId: best.siteId,
 		dateRange,
-		note: `ok (${best.rowCount} paths)`, 
+		note: `ok (${best.rowCount} paths)`,
 		pageviewsByPath: best.pageviewsByPath,
 		triedSiteIds: siteCandidates,
 	});
