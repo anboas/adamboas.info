@@ -41,7 +41,7 @@ import { withBase } from '../../utils/withBase';
 				<tbody>
 					{experience.map((r) => (
 						<tr class="border-t border-slate-800 even:bg-slate-950/20">
-							<td class="px-4 py-3 text-slate-100">{r.company}</td>
+							<td class="px-4 py-3 text-slate-100"><a class="hover:underline" href={`#exp-${r.slug}`}>{r.company}</a></td>
 							<td class="px-4 py-3 text-slate-300">{r.title}</td>
 							<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
 						</tr>
@@ -51,13 +51,23 @@ import { withBase } from '../../utils/withBase';
 		</div>
 		<div class="grid gap-3 md:hidden">
 			{experience.map((r) => (
-				<div class="border border-slate-800 bg-slate-950/40 p-3">
+				<a class="border border-slate-800 bg-slate-950/40 p-3 hover:border-slate-700" href={`#exp-${r.slug}`}>
 					<div class="flex items-baseline justify-between gap-3">
 						<h3 class="truncate text-sm font-semibold text-slate-100">{r.company}</h3>
 						<span class="shrink-0 text-xs text-slate-400">{r.period}</span>
 					</div>
 					<p class="mt-1 text-sm text-slate-300">{r.title}</p>
-				</div>
+				</a>
+			))}
+		</div>
+
+		<div class="mt-4 space-y-2">
+			{experience.map((r) => (
+				<article id={`exp-${r.slug}`} class="border border-slate-800 bg-slate-950/40 p-3 scroll-mt-24">
+					<p class="text-sm font-semibold text-slate-100">{r.company} · {r.title}</p>
+					<p class="mt-1 text-xs uppercase tracking-wide text-slate-400">{r.period}</p>
+					<p class="mt-2 text-sm text-slate-300">{r.summary}</p>
+				</article>
 			))}
 		</div>
 	</section>
@@ -78,7 +88,7 @@ import { withBase } from '../../utils/withBase';
 				<tbody>
 					{education.map((e) => (
 						<tr class="border-t border-slate-800 even:bg-slate-950/20">
-							<td class="px-4 py-3 text-slate-100">{e.issuer}</td>
+							<td class="px-4 py-3 text-slate-100"><a class="hover:underline" href={`#edu-${e.slug}`}>{e.issuer}</a></td>
 							<td class="px-4 py-3 text-slate-300">{e.name}</td>
 							<td class="px-4 py-3 text-right text-slate-400">{e.year ?? '—'}</td>
 						</tr>
@@ -88,13 +98,23 @@ import { withBase } from '../../utils/withBase';
 		</div>
 		<div class="grid gap-3 md:hidden">
 			{education.map((e) => (
-				<div class="border border-slate-800 bg-slate-950/40 p-3">
+				<a class="border border-slate-800 bg-slate-950/40 p-3 hover:border-slate-700" href={`#edu-${e.slug}`}>
 					<div class="flex items-baseline justify-between gap-3">
 						<h3 class="truncate text-sm font-semibold text-slate-100">{e.issuer}</h3>
 						<span class="shrink-0 text-xs text-slate-400">{e.year ?? '—'}</span>
 					</div>
 					<p class="mt-1 text-sm text-slate-300">{e.name}</p>
-				</div>
+				</a>
+			))}
+		</div>
+
+		<div class="mt-4 space-y-2">
+			{education.map((e) => (
+				<article id={`edu-${e.slug}`} class="border border-slate-800 bg-slate-950/40 p-3 scroll-mt-24">
+					<p class="text-sm font-semibold text-slate-100">{e.issuer}</p>
+					<p class="mt-1 text-sm text-slate-300">{e.name}</p>
+					{e.year && <p class="mt-1 text-xs uppercase tracking-wide text-slate-400">{e.year}</p>}
+				</article>
 			))}
 		</div>
 	</section>

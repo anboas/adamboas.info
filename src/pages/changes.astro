@@ -63,13 +63,33 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.17',
+		date: '2026-04-29',
+		title: 'Profile row-level links restored as in-page anchors',
+		summary: 'Restored row-level link behavior for experience and education while keeping all navigation inside `/profile/`.',
+		impact: 'Clicking rows/cards now jumps to detailed in-page anchor blocks (`#exp-*`, `#edu-*`) on `/profile/` instead of navigating to separate pages.',
+		current: true,
+		tags: ['profile', 'ux', 'navigation'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added in-page detail anchor sections for each experience and education record within `/profile/`.',
+			]},
+			{ kind: 'Changed', items: [
+				'Restored row-level links in desktop tables and mobile cards to target profile-local anchors.',
+			]},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.16',
 		date: '2026-04-29',
 		title: 'Profile-first consolidation + tools dropdown + second speaking engagement',
 		summary: 'Removed profile-page detours, promoted a cleaner profile header, demoted Events/Opportunities under Tools navigation, and added another speaking panel entry.',
 		impact: '`/profile/` is now the primary background surface without "full page" escape links. Nav now prioritizes `Writing`, `Profile`, and `Capabilities`, with `Events` and `Opportunities` grouped under `Tools`. Speaking entries now include both Modern Day Marine 2026 and DON Red Hat PAX River 2024 panel participation.',
-		current: true,
 		tags: ['profile', 'navigation', 'speaking', 'ux'],
 		groups: [
 			{
