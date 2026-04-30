@@ -144,7 +144,7 @@ const trendArea = trendHasData ? `${trendPolyline} 100,100 0,100` : '';
 const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)), 0);
 ---
 
-<SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots.">
+<SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots." noindex={true}>
 	<StickyBrowseBar active="home" />
 
 	<section class="card control-shell p-5">

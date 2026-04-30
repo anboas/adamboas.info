@@ -64,13 +64,35 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.18',
+		date: '2026-04-29',
+		title: 'SEO hardening pass: snippet quality + index hygiene',
+		summary: 'Strengthened branded-search quality by improving top-surface metadata and noindexing utility/duplicate surfaces that were diluting SERP results.',
+		impact: 'Home/profile/capabilities/writing descriptions are more specific, profile now includes ProfilePage schema, and low-priority operational pages are explicitly marked `noindex,follow` to concentrate index authority on core surfaces.',
+		current: true,
+		tags: ['seo', 'metadata', 'indexing', 'schema'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added `noindex` support in `BaseHead`/`SiteLayout` (`robots` + `googlebot` tags).',
+				'Added `ProfilePage` JSON-LD on `/profile/`.',
+			]},
+			{ kind: 'Changed', items: [
+				'Updated core descriptions for stronger branded snippets (`SITE_DESCRIPTION`, `/profile/`, `/capabilities/`, `/writing/`).',
+				'Applied `noindex={true}` to utility and duplicate surfaces: `/opportunities/`, `/events/`, `/events/sources/`, `/status/*`, `/changes/`, `/sitemap/`, `/blog/`, `/credentials/`, `/experience/*`, `/education/*`.',
+			]},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.17',
 		date: '2026-04-29',
 		title: 'Profile row-level links restored as in-page anchors',
 		summary: 'Restored row-level link behavior for experience and education while keeping all navigation inside `/profile/`.',
 		impact: 'Clicking rows/cards now jumps to detailed in-page anchor blocks (`#exp-*`, `#edu-*`) on `/profile/` instead of navigating to separate pages.',
-		current: true,
 		tags: ['profile', 'ux', 'navigation'],
 		groups: [
 			{ kind: 'Added', items: [
@@ -4039,6 +4061,7 @@ function releaseSearchText(release: Release) {
 	title="Change Notes | Adam Boas"
 	description="Public, versioned website capability updates for adamboas.com."
 	canonicalHref="https://www.adamboas.com/changes/"
+	noindex={true}
 >
 	<!-- StickyBrowseBar omitted on this page by preference: Changes link should live in footer only. -->
 
