@@ -60,13 +60,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.14',
+		date: '2026-04-29',
+		title: 'Speaking restructured by event with topic tags and sponsorship metadata',
+		summary: 'Replaced placeholder speaking layout with an event-indexed format and seeded the first engagement entry from Modern Day Marine 2026.',
+		impact: '`/speaking/` is now a real destination (no redirect language) with event cards, topic tags, and reusable sponsorship modeling (`employer` / `external` / `self`). Profile now reuses the same speaking event block so content stays synchronized.',
+		current: true,
+		tags: ['speaking', 'content-model', 'events', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `src/data/speaking.ts` with normalized speaking-event schema, topic-tag derivation, and sponsor labeling helpers.',
+					'Added reusable `src/components/SpeakingEventsSection.astro` for event-card rendering and tag display.',
+					'Added first speaking entry: Modern Day Marine 2026 (MBSE talk, Acquisition Stage, Apr 28, 2026).',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Converted `/speaking/` into an event-based speaking page with topic tags and metadata, removing redirect-only behavior.',
+					'Updated `/profile/` speaking section to use the shared event-based component and removed legacy/upcoming-past placeholder framing.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.13',
 		date: '2026-04-29',
 		title: 'Nav label cleanup: remove hub captions from header and mobile rail',
 		summary: 'Dropped the explicit `Profile` and `Capability` hub labels in favor of a cleaner direct-link navigation model.',
 		impact: 'Top navigation now reads as direct links in priority order: `Writing`, `Profile` | `Capabilities`, `Events`, `Opportunities` across desktop and mobile.',
-		current: true,
 		tags: ['navigation', 'ux', 'header', 'mobile'],
 		groups: [
 			{
