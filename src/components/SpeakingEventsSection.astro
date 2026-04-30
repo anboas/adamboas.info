@@ -122,6 +122,8 @@ const { title = 'Speaking', showHeader = true } = Astro.props as Props;
 	/>
 
 	<script>
+		import { createModalController } from '../scripts/ui/modal-controller';
+
 		(() => {
 			const shell = document.querySelector('[data-speaking-shell]');
 			if (!shell) return;
@@ -182,53 +184,13 @@ const { title = 'Speaking', showHeader = true } = Astro.props as Props;
 			const detailsEl = document.getElementById('speaking-modal-details');
 			const dataEl = document.getElementById('speaking-modal-data');
 			const modalData = dataEl ? JSON.parse(dataEl.textContent || '{}') : {};
-			let previousFocus = null;
-			let scrollY = 0;
-
 			if (!modal || !panel || !titleEl || !metaEl || !summaryEl || !detailsEl) return;
 
-			const lockScroll = () => {
-				scrollY = window.scrollY || window.pageYOffset || 0;
-				document.body.style.position = 'fixed';
-				document.body.style.top = `-${scrollY}px`;
-				document.body.style.left = '0';
-				document.body.style.right = '0';
-				document.body.style.width = '100%';
-			};
-			const unlockScroll = () => {
-				document.body.style.position = '';
-				document.body.style.top = '';
-				document.body.style.left = '';
-				document.body.style.right = '';
-				document.body.style.width = '';
-				window.scrollTo(0, scrollY);
-			};
-
-			const focusables = () => Array.from(modal.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'));
-			const trapFocus = (event) => {
-				if (event.key !== 'Tab' || modal.hidden) return;
-				const nodes = focusables();
-				if (!nodes.length) return;
-				const first = nodes[0];
-				const last = nodes[nodes.length - 1];
-				if (event.shiftKey && document.activeElement === first) {
-					event.preventDefault();
-					last.focus();
-				} else if (!event.shiftKey && document.activeElement === last) {
-					event.preventDefault();
-					first.focus();
-				}
-			};
-
-			const closeModal = () => {
-				if (modal.hidden) return;
-				modal.classList.remove('is-open');
-				window.setTimeout(() => {
-					modal.hidden = true;
-					unlockScroll();
-					if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
-				}, 120);
-			};
+			const modalController = createModalController({
+				root: modal,
+				panel,
+				closeNodes,
+			});
 
 			const openModal = (slug, source) => {
 				const entry = modalData?.[slug];
@@ -249,22 +211,13 @@ const { title = 'Speaking', showHeader = true } = Astro.props as Props;
 					p.appendChild(v);
 					detailsEl.appendChild(p);
 				});
-				previousFocus = source;
-				lockScroll();
-				modal.hidden = false;
-				window.requestAnimationFrame(() => modal.classList.add('is-open'));
-				modal.querySelector('.speaking-modal-close')?.focus();
+				modalController.open(source, modal.querySelector('.speaking-modal-close'));
 			};
 
 			openNodes.forEach((node) => {
 				node.addEventListener('click', () => {
 					openModal(node.dataset.speakingSlug || '', node);
 				});
-			});
-			closeNodes.forEach((node) => node.addEventListener('click', closeModal));
-			document.addEventListener('keydown', (event) => {
-				if (event.key === 'Escape' && !modal.hidden) closeModal();
-				trapFocus(event);
 			});
 		})();
 	</script>
