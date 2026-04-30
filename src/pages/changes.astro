@@ -62,13 +62,41 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.16',
+		date: '2026-04-29',
+		title: 'Profile-first consolidation + tools dropdown + second speaking engagement',
+		summary: 'Removed profile-page detours, promoted a cleaner profile header, demoted Events/Opportunities under Tools navigation, and added another speaking panel entry.',
+		impact: '`/profile/` is now the primary background surface without "full page" escape links. Nav now prioritizes `Writing`, `Profile`, and `Capabilities`, with `Events` and `Opportunities` grouped under `Tools`. Speaking entries now include both Modern Day Marine 2026 and DON Red Hat PAX River 2024 panel participation.',
+		current: true,
+		tags: ['profile', 'navigation', 'speaking', 'ux'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added speaking engagement: DON Red Hat PAX River Tech Day (Partner Lunch Panel featuring AWS, KBR, Confluent, Colossal), with topic tags and KBR panel contribution summary.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Replaced header hub labels with a `Tools` dropdown that groups `Events` and `Opportunities` on desktop and mobile.',
+					'Reworked `/profile/` top header section into a cleaner, non-boxed layout with stronger hierarchy.',
+					'Removed `Full experience page` and `Full education page` links and in-section deep-link wrappers so background content is fully consumed within `/profile/`.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.15',
 		date: '2026-04-29',
 		title: 'CI/deploy loop acceleration baseline + external media toggle',
 		summary: 'Reduced wasted CI runtime by canceling superseded runs and prepared deploy pipeline to drop heavy audio payloads when external media hosting is configured.',
 		impact: 'a11y/linkcheck/lighthouse now auto-cancel older runs on the same ref. Deploy workflow no longer runs paper/memo lint gates and can omit `dist/audio` from Pages artifacts when `PUBLIC_MEDIA_BASE_URL` is set, enabling a much faster deploy loop once media is externalized.',
-		current: true,
 		tags: ['ci', 'deploy', 'performance', 'media'],
 		groups: [
 			{

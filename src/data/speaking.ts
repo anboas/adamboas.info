@@ -39,6 +39,25 @@ export const speakingEvents: SpeakingEvent[] = [
 			'MBSE framed as a speed enabler for rapid-prototyping programs, using architecture baselines and model-driven decision support to reduce integration and sustainment risk as capabilities transition into operations.',
 		sourceUrl: 'https://marinemilitaryexpos.com/session-speakers/',
 	},
+	{
+		slug: 'don-redhat-pax-river-2024-partner-lunch-panel',
+		title: 'Partner Lunch Panel Featuring AWS, KBR, Confluent and Colossal',
+		eventName: 'DON Red Hat PAX River Tech Day',
+		eventUrl: 'https://do.dlt.com/DONRedHatQ12024PAXRiverLandingPage-342414_TDSynnexPublicSector.html',
+		eventDateRange: 'Mar 28, 2024',
+		sessionDateTime: 'Thu, Mar 28, 2024 · 12:00 PM-1:00 PM ET',
+		stage: 'Partner Lunch Panel',
+		track: 'Panel Discussion',
+		role: 'Panelist (KBR)',
+		speakerTitle: 'KBR participant',
+		speakerOrganization: 'KBR',
+		sponsorType: 'employer',
+		sponsorName: 'KBR',
+		topicTags: ['Cloud Migration', 'Software Modernization', 'Value Realization', 'Enterprise Cloud', 'Platform Delivery'],
+		summary:
+			'Contributed cloud and software expertise from the KBR perspective, focused on how organizations realize measurable value during cloud migration and software modernization programs.',
+		sourceUrl: 'https://do.dlt.com/DONRedHatQ12024PAXRiverLandingPage-342414_TDSynnexPublicSector.html',
+	},
 ];
 
 export const allSpeakingTopicTags = Array.from(new Set(speakingEvents.flatMap((e) => e.topicTags))).sort((a, b) => a.localeCompare(b));
