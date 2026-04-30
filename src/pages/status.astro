@@ -1,7 +1,6 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { withBase } from '../utils/withBase';
 import { radarEventsSeed } from '../data/radar/events';
 import sofweekIntel from '../data/radar/intel/sofweek-intel.json';
@@ -50,15 +49,14 @@ function signed(value: number) {
 ---
 
 <SiteLayout title="Status | Adam Boas" description="Deployment + data pipeline status for adamboas.com" noindex={true}>
-	<StickyBrowseBar active="home" />
-
-	<SurfaceHeader
+	<SurfacePageHeader
+		stickyActive="home"
 		eyebrow="Operations"
 		title="Operations Status"
 		description="Live deployment signal and data-pipeline freshness for events/opportunities intelligence."
 	>
 		<a slot="actions" class="ui-link-btn" href="https://github.com/anboas/adamboas.info/actions/workflows/deploy-dev-pages.yml" target="_blank" rel="noreferrer">Open deploy workflow</a>
-	</SurfaceHeader>
+	</SurfacePageHeader>
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-3">
 		<article class="card p-4 status-card lg:col-span-1">

@@ -1,0 +1,30 @@
+---
+import StickyBrowseBar from './StickyBrowseBar.astro';
+import SurfaceHeader from './SurfaceHeader.astro';
+
+interface Props {
+	stickyActive?: 'home' | 'profile' | 'writing' | 'none';
+	eyebrow?: string;
+	title: string;
+	description?: string;
+	headerClass?: string;
+}
+
+const {
+	stickyActive = 'none',
+	eyebrow,
+	title,
+	description,
+	headerClass = '',
+} = Astro.props;
+
+const showSticky = stickyActive !== 'none';
+const hasActions = Astro.slots.has('actions');
+const hasExtra = Astro.slots.has('default');
+---
+
+{showSticky ? <StickyBrowseBar active={stickyActive} /> : null}
+<SurfaceHeader eyebrow={eyebrow} title={title} description={description} class={headerClass}>
+	{hasActions ? <div slot="actions"><slot name="actions" /></div> : null}
+	{hasExtra ? <slot /> : null}
+</SurfaceHeader>

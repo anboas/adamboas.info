@@ -1,7 +1,6 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
-import SurfaceHeader from '../../components/SurfaceHeader.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
 import sitemapAnalytics from '../../generated/plausible-sitemap-analytics.json';
 
@@ -146,9 +145,8 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 ---
 
 <SiteLayout title="Site Analytics | Status | Adam Boas" description="Sitemap coverage and route-level traffic analytics from Plausible snapshots." noindex={true}>
-	<StickyBrowseBar active="home" />
-
-	<SurfaceHeader
+	<SurfacePageHeader
+		stickyActive="home"
 		eyebrow="Traffic intelligence"
 		title="Site Analytics Dashboard"
 		description="Plausible traffic mapped to sitemap routes for coverage and routing intelligence."
@@ -166,7 +164,7 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 		</div>
 		<p class="mt-2 text-xs text-slate-400">{trends.note || meta.note || '—'}</p>
 		{meta.sitemapLoadError ? <p class="mt-2 text-xs text-amber-300">Sitemap load warning: {meta.sitemapLoadError}</p> : null}
-	</SurfaceHeader>
+	</SurfacePageHeader>
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-3">
 		<article class="card p-4 status-card">
