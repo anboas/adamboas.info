@@ -2,7 +2,7 @@ name: deploy-dev-pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -48,6 +48,9 @@ jobs:
 
       - name: Lint SEO guards
         run: npm run lint:seo
+
+      - name: Lint config/env contracts
+        run: npm run lint:config
 
       - name: Build (custom domain root)
         env:

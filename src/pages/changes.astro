@@ -88,13 +88,45 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.40',
+		date: '2026-04-30',
+		title: '12-factor hardening: config contract lint + env-aware analytics candidates',
+		summary: 'Added a deterministic environment/config lint gate, wired it into core CI workflows, and removed more hardcoded domain assumptions in analytics/OG generation scripts.',
+		impact: 'Build/deploy safety improves with earlier config failures, while analytics and OG tooling now adapts more cleanly to domain/environment changes.',
+		current: true,
+		tags: ['architecture', '12-factor', 'ci', 'ops'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `scripts/lint-config-env.mjs` to validate `.env.example` key presence and URL/email/E.164 formatting contracts.',
+					'Added `npm run lint:config` script in `package.json`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Integrated config/env lint into CI workflows: a11y, lighthouse, linkcheck, and deploy-dev-pages.',
+					'Updated Plausible pageviews/funnel candidate resolution to include host derived from `PUBLIC_SITE_URL` before legacy fallbacks.',
+					'Updated OG image generator kicker text to derive from configured `PUBLIC_SITE_URL` host instead of fixed domain literals.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: ['Reduced configuration drift risk and tightened preferred-practice CI guardrails for environment portability.'],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.39',
 		date: '2026-04-30',
 		title: '12-factor continuation: env-driven robots + contact submit endpoint',
 		summary: 'Moved robots sitemap origin and contact form submit routing behind environment-backed configuration and reduced hardcoded domain coupling in support scripts.',
 		impact: 'Deploy portability improved again: environment/domain moves no longer require editing robots or contact submit code paths, and crawler/plausible defaults now respect environment context.',
-		current: true,
 		tags: ['architecture', '12-factor', 'config', 'ops'],
 		groups: [
 			{

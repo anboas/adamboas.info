@@ -3,6 +3,24 @@ import path from 'node:path';
 
 const OUT_PATH = path.join(process.cwd(), 'src', 'generated', 'plausible-pageviews.json');
 
+function parseHostLike(value) {
+	const raw = String(value || '').trim();
+	if (!raw) return '';
+	try {
+		return new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`).host;
+	} catch {
+		return raw;
+	}
+}
+
+function getSiteCandidates(configuredSiteId) {
+	const envHost = parseHostLike(process.env.PUBLIC_SITE_URL);
+	return [configuredSiteId, envHost, 'www.adamboas.com', 'adamboas.com', 'anboas.github.io/adamboas.info']
+		.map((s) => String(s || '').trim())
+		.filter(Boolean)
+		.filter((s, i, arr) => arr.indexOf(s) === i);
+}
+
 function normalizePath(p) {
 	if (!p) return null;
 	let s = String(p).trim();
@@ -91,10 +109,7 @@ async function main() {
 		return;
 	}
 
-	const siteCandidates = [configuredSiteId, 'www.adamboas.com', 'adamboas.com', 'anboas.github.io/adamboas.info']
-		.map((s) => (s || '').trim())
-		.filter(Boolean)
-		.filter((s, i, arr) => arr.indexOf(s) === i);
+	const siteCandidates = getSiteCandidates(configuredSiteId);
 
 	if (!siteCandidates.length) {
 		console.log('Plausible pageviews: no site candidates, writing empty snapshot.');

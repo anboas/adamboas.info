@@ -8,6 +8,18 @@ const HEIGHT = 630;
 const ROOT = process.cwd();
 const OUT_DIR = path.join(ROOT, 'public', 'og');
 
+function resolveBrandKicker() {
+	const raw = String(process.env.PUBLIC_SITE_URL || '').trim();
+	if (!raw) return 'adamboas.com';
+	try {
+		return new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`).host;
+	} catch {
+		return raw.replace(/^https?:\/\//i, '').replace(/\/$/, '') || 'adamboas.com';
+	}
+}
+
+const BRAND_KICKER = resolveBrandKicker();
+
 const accentByType = {
 	paper: '#d4a574',
 	note: '#00a6a6',
@@ -20,21 +32,21 @@ const cards = [
 		accent: '#00a6a6',
 		title: 'Adam Boas',
 		subtitle: 'Trusted autonomy, control planes, and execution at tempo',
-		kicker: 'adamboas.com',
+		kicker: BRAND_KICKER,
 	},
 	{
 		file: 'home.png',
 		accent: '#00a6a6',
 		title: 'Adam Boas',
 		subtitle: 'Solutions Architect · Writing · Experience · Education',
-		kicker: 'adamboas.com',
+		kicker: BRAND_KICKER,
 	},
 	{
 		file: 'writing.png',
 		accent: '#00a6a6',
 		title: 'Writing',
 		subtitle: 'Notes, memos, and papers on AI systems and governance',
-		kicker: 'adamboas.com',
+		kicker: BRAND_KICKER,
 	},
 	{
 		file: 'events.png',
@@ -42,7 +54,7 @@ const cards = [
 		title: 'DoW Events',
 		subtitle:
 			'Built to track upcoming DoW events with trusted links, source transparency, public government contacts, and practical acquisition context in one place.',
-		kicker: 'adamboas.com',
+		kicker: BRAND_KICKER,
 		subtitleSize: 24,
 		subtitleLineGap: 30,
 		subtitleMaxWidthPx: 1020,
@@ -53,21 +65,21 @@ const cards = [
 		accent: '#d4a574',
 		title: 'Paper',
 		subtitle: 'Long-form technical architecture and reference work',
-		kicker: 'adamboas.com',
+		kicker: BRAND_KICKER,
 	},
 	{
 		file: 'note.png',
 		accent: '#00a6a6',
 		title: 'Note',
 		subtitle: 'Short-form insights, experiments, and synthesis',
-		kicker: 'adamboas.com',
+		kicker: BRAND_KICKER,
 	},
 	{
 		file: 'memo.png',
 		accent: '#3b82f6',
 		title: 'Memo',
 		subtitle: 'Focused briefs and decision-ready technical analysis',
-		kicker: 'adamboas.com',
+		kicker: BRAND_KICKER,
 	},
 ];
 
@@ -159,7 +171,7 @@ function svgTemplate({
 	accent,
 	title,
 	subtitle,
-	kicker = 'adamboas.com',
+	kicker = BRAND_KICKER,
 	titleSize = 66,
 	titleY = 294,
 	titleLineGap = Math.round(66 * 1.12),
@@ -267,7 +279,7 @@ async function collectWritingCards() {
 			accent: accentByType[type],
 			title,
 			subtitle,
-			kicker: `adamboas.com · ${type.toUpperCase()}${date ? ` · ${date}` : ''}`,
+			kicker: `${BRAND_KICKER} · ${type.toUpperCase()}${date ? ` · ${date}` : ''}`,
 			titleSize: 52,
 			titleY: 252,
 			titleLineGap: 58,
@@ -300,7 +312,7 @@ async function collectWritingCards() {
 			accent: accentByType.paper,
 			title,
 			subtitle,
-			kicker: `adamboas.com · PAPER${date ? ` · ${date}` : ''}`,
+			kicker: `${BRAND_KICKER} · PAPER${date ? ` · ${date}` : ''}`,
 			titleSize: 52,
 			titleY: 252,
 			titleLineGap: 58,

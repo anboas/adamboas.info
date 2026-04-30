@@ -2,7 +2,7 @@ name: a11y
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
   schedule:
     - cron: '23 7 * * *'
@@ -35,6 +35,9 @@ jobs:
 
       - name: Lint SEO guards
         run: npm run lint:seo
+
+      - name: Lint config/env contracts
+        run: npm run lint:config
 
       - name: Build
         run: npm run build

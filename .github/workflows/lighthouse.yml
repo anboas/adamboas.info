@@ -2,7 +2,7 @@ name: lighthouse
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
   schedule:
     - cron: '11 7 * * *'
@@ -35,6 +35,9 @@ jobs:
 
       - name: Lint SEO guards
         run: npm run lint:seo
+
+      - name: Lint config/env contracts
+        run: npm run lint:config
 
       - name: Install Playwright browsers (needed for Lighthouse)
         run: npx playwright install --with-deps chromium

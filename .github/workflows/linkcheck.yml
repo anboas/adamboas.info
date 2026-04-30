@@ -2,7 +2,7 @@ name: linkcheck
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
   schedule:
     - cron: '33 6 * * *'
@@ -35,6 +35,9 @@ jobs:
 
       - name: Lint SEO guards
         run: npm run lint:seo
+
+      - name: Lint config/env contracts
+        run: npm run lint:config
 
       - name: Verify paper artifacts (PDF + generated HTML)
         run: npm run lint:papers

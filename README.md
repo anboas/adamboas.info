@@ -43,6 +43,12 @@ Optional radar crawler vars:
 - `RADAR_UA_CONTACT_URL`
 - `RADAR_BROWSER_FETCH_TIMEOUT`
 
+You can validate config contracts locally with:
+
+```bash
+npm run lint:config
+```
+
 ## Offline viewing
 
 If you open `dist/index.html` directly via `file://`, your browser may block module scripts/assets.
