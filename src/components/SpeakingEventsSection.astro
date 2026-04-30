@@ -316,11 +316,8 @@ const { title = 'Speaking', showHeader = true } = Astro.props as Props;
 		transform: translateY(0) scale(1);
 	}
 	.speaking-modal-head {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 0.6rem;
+		position: relative;
+		padding-right: 2.45rem;
 	}
 	.speaking-modal-meta {
 		font-size: 0.68rem;
@@ -328,16 +325,18 @@ const { title = 'Speaking', showHeader = true } = Astro.props as Props;
 		text-transform: uppercase;
 		letter-spacing: 0.09em;
 		color: rgba(148, 163, 184, 0.96);
-		width: 100%;
 	}
 	.speaking-modal-title {
+		margin-top: 0.45rem;
 		font-size: 1.05rem;
 		line-height: 1.35;
 		font-weight: 600;
 		color: rgba(248, 250, 252, 0.99);
-		max-width: 90%;
 	}
 	.speaking-modal-close {
+		position: absolute;
+		top: 0;
+		right: 0;
 		border: 1px solid rgba(71, 85, 105, 0.88);
 		background: rgb(2, 6, 23);
 		color: rgba(226, 232, 240, 0.98);
