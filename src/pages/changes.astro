@@ -90,13 +90,36 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.42',
+		date: '2026-04-30',
+		title: 'Header spacing uniformity pass across Writing/Profile/Capabilities surfaces',
+		summary: 'Standardized shared header description rail spacing and aligned first-section top offsets to remove page-to-page header rhythm drift.',
+		impact: 'Writing, Profile, Capabilities, and other `SurfaceHeader` pages now present more uniform top-shell spacing and action-rail alignment.',
+		current: true,
+		tags: ['ux', 'consistency', 'headers', 'typography'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `SurfaceHeader` to always reserve description-rail space (with a hidden placeholder when description is absent) so title/action rows keep consistent vertical rhythm.',
+					'Added shared description min-height tokens in `SurfaceHeader` for desktop/mobile spacing uniformity.',
+					'Aligned `/capabilities/` first content section offset to `md:mt-5` to match Writing/Profile top-gap behavior.',
+				],
+			},
+			{ kind: 'Improved', items: ['Reduced visible spacing drift across the pages highlighted by user screenshots.'] },
+			{ kind: 'Fixed', items: ['Resolved inconsistent top-header spacing and forced-variance feel between Writing, Profile, and Capabilities pages.'] },
+		],
+	},
+
 	{
 		version: 'v2.4.41',
 		date: '2026-04-30',
 		title: 'UX cleanup: remove forced line-break balancing from surface headers',
 		summary: 'Removed CSS-driven forced title balancing in shared surface headers to prevent awkward line breaks like the reported /status/ “Operations Status” split.',
 		impact: 'Status and all other pages using `SurfaceHeader` now render header titles with natural wrapping instead of forced balancing behavior.',
-		current: true,
 		tags: ['ux', 'consistency', 'typography'],
 		groups: [
 			{ kind: 'Added', items: [] },

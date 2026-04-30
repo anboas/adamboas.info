@@ -9,6 +9,8 @@ interface Props {
 const { eyebrow, title, description, class: className = '' } = Astro.props;
 const hasActions = Astro.slots.has('actions');
 const hasExtra = Astro.slots.has('default');
+const descriptionText = typeof description === 'string' ? description.trim() : '';
+const hasDescription = Boolean(descriptionText);
 ---
 
 <section class={`surface-header ${className}`.trim()}>
@@ -16,7 +18,9 @@ const hasExtra = Astro.slots.has('default');
 		<div class="surface-header-main">
 			{eyebrow ? <p class="surface-header-eyebrow">{eyebrow}</p> : null}
 			<h1 class="surface-header-title">{title}</h1>
-			{description ? <p class="surface-header-description">{description}</p> : null}
+			<p class:list={['surface-header-description', !hasDescription && 'surface-header-description-placeholder']}>
+				{hasDescription ? descriptionText : '\u00A0'}
+			</p>
 		</div>
 		{
 			hasActions ? (
@@ -72,6 +76,10 @@ const hasExtra = Astro.slots.has('default');
 		line-height: 1.5;
 		color: rgb(203 213 225);
 		max-width: 66ch;
+		min-height: var(--surface-header-description-min-height-mobile, 0);
+	}
+	.surface-header-description-placeholder {
+		visibility: hidden;
 	}
 	.surface-header-actions {
 		display: flex;
@@ -99,6 +107,9 @@ const hasExtra = Astro.slots.has('default');
 		}
 		.surface-header-title {
 			font-size: 1.875rem;
+		}
+		.surface-header-description {
+			min-height: var(--surface-header-description-min-height, 3rem);
 		}
 		.surface-header-actions {
 			justify-content: flex-end;
