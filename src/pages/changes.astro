@@ -61,13 +61,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.15',
+		date: '2026-04-29',
+		title: 'CI/deploy loop acceleration baseline + external media toggle',
+		summary: 'Reduced wasted CI runtime by canceling superseded runs and prepared deploy pipeline to drop heavy audio payloads when external media hosting is configured.',
+		impact: 'a11y/linkcheck/lighthouse now auto-cancel older runs on the same ref. Deploy workflow no longer runs paper/memo lint gates and can omit `dist/audio` from Pages artifacts when `PUBLIC_MEDIA_BASE_URL` is set, enabling a much faster deploy loop once media is externalized.',
+		current: true,
+		tags: ['ci', 'deploy', 'performance', 'media'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `src/utils/mediaUrl.ts` to resolve audio URLs via optional `PUBLIC_MEDIA_BASE_URL`.',
+					'Added deploy step to trim `dist/audio` from artifact when external media base URL is configured.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated `WritingAudioPlayer` to use media URL resolver (supports external media hosting without content-schema changes).',
+					'Added `concurrency` + `cancel-in-progress` for `a11y`, `linkcheck`, and `lighthouse` workflows.',
+					'Removed `lint:papers` and `lint:memos` steps from `deploy-dev-pages` to keep deploy focused on build + smoke + publish.',
+				],
+			},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.14',
 		date: '2026-04-29',
 		title: 'Speaking restructured by event with topic tags and sponsorship metadata',
 		summary: 'Replaced placeholder speaking layout with an event-indexed format and seeded the first engagement entry from Modern Day Marine 2026.',
 		impact: '`/speaking/` is now a real destination (no redirect language) with event cards, topic tags, and reusable sponsorship modeling (`employer` / `external` / `self`). Profile now reuses the same speaking event block so content stays synchronized.',
-		current: true,
 		tags: ['speaking', 'content-model', 'events', 'ux'],
 		groups: [
 			{

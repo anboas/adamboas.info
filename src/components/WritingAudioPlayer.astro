@@ -1,5 +1,5 @@
 ---
-import { withBase } from '../utils/withBase';
+import { resolveMediaUrl } from '../utils/mediaUrl';
 
 interface Props {
 	audioPath: string;
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { audioPath, title, slug, kind } = Astro.props as Props;
-const src = withBase(audioPath);
+const src = resolveMediaUrl(audioPath);
 const label = 'NotebookLM Generated Podcast';
 ---
 

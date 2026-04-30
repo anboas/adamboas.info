@@ -11,6 +11,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: a11y-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   axe:
     runs-on: ubuntu-latest

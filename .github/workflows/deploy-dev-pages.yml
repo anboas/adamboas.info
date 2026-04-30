@@ -46,15 +46,10 @@ jobs:
       - name: Lint content frontmatter
         run: npm run lint:content
 
-      - name: Verify paper artifacts (PDF + generated HTML)
-        run: npm run lint:papers
-
-      - name: Verify memo artifacts (PDF + generated HTML)
-        run: npm run lint:memos
-
       - name: Build (custom domain root)
         env:
           ASTRO_BASE: /
+          PUBLIC_MEDIA_BASE_URL: ${{ vars.PUBLIC_MEDIA_BASE_URL }}
         run: npm run build
 
       - name: Quick deploy smoke check
@@ -74,6 +69,19 @@ jobs:
           curl -fsS http://127.0.0.1:4321/ >/dev/null
           curl -fsS http://127.0.0.1:4321/writing/ >/dev/null
           curl -fsS http://127.0.0.1:4321/events/ >/dev/null
+
+      - name: Trim deploy artifact when external media base is configured
+        env:
+          PUBLIC_MEDIA_BASE_URL: ${{ vars.PUBLIC_MEDIA_BASE_URL }}
+        run: |
+          set -euo pipefail
+          if [ -n "${PUBLIC_MEDIA_BASE_URL:-}" ]; then
+            echo "External media base detected: ${PUBLIC_MEDIA_BASE_URL}"
+            echo "Removing dist/audio from Pages artifact to speed deploy"
+            rm -rf dist/audio
+          else
+            echo "PUBLIC_MEDIA_BASE_URL not set; keeping dist/audio in artifact"
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
