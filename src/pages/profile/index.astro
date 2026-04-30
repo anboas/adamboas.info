@@ -4,6 +4,23 @@ import StickyBrowseBar from '../../components/StickyBrowseBar.astro';
 import { RESUME_CLEARANCE, experience, education } from '../../data/resume';
 import SpeakingEventsSection from '../../components/SpeakingEventsSection.astro';
 import { withBase } from '../../utils/withBase';
+
+const profileModalData = {
+	experience: Object.fromEntries(
+		experience.map((item) => [item.slug, {
+			title: `${item.company} · ${item.title}`,
+			meta: item.period,
+			body: item.summary,
+		}]),
+	),
+	education: Object.fromEntries(
+		education.map((item) => [item.slug, {
+			title: item.name,
+			meta: `${item.issuer}${item.year ? ` · ${item.year}` : ''}`,
+			body: item.issuer,
+		}]),
+	),
+};
 ---
 
 <SiteLayout title="Profile | Adam Boas" description="Career background, speaking engagements, and credentials for Adam Boas.">
@@ -56,8 +73,12 @@ import { withBase } from '../../utils/withBase';
 				<tbody>
 					{experience.map((r) => (
 						<tr class="border-t border-slate-800 even:bg-slate-950/20">
-							<td class="px-4 py-3 text-slate-100"><a class="hover:underline" href={`#exp-${r.slug}`}>{r.company}</a></td>
-							<td class="px-4 py-3 text-slate-300">{r.title}</td>
+							<td class="px-4 py-3 text-slate-100">
+								<button type="button" class="profile-modal-trigger hover:underline" data-profile-modal-open data-profile-modal-kind="experience" data-profile-modal-id={r.slug}>{r.company}</button>
+							</td>
+							<td class="px-4 py-3 text-slate-300">
+								<button type="button" class="profile-modal-trigger text-left hover:underline" data-profile-modal-open data-profile-modal-kind="experience" data-profile-modal-id={r.slug}>{r.title}</button>
+							</td>
 							<td class="px-4 py-3 text-right text-slate-400">{r.period}</td>
 						</tr>
 					))}
@@ -66,23 +87,19 @@ import { withBase } from '../../utils/withBase';
 		</div>
 		<div class="grid gap-3 md:hidden">
 			{experience.map((r) => (
-				<a class="border border-slate-800 bg-slate-950/40 p-3 hover:border-slate-700" href={`#exp-${r.slug}`}>
+				<button
+					type="button"
+					class="border border-slate-800 bg-slate-950/40 p-3 text-left hover:border-slate-700"
+					data-profile-modal-open
+					data-profile-modal-kind="experience"
+					data-profile-modal-id={r.slug}
+				>
 					<div class="flex items-baseline justify-between gap-3">
 						<h3 class="truncate text-sm font-semibold text-slate-100">{r.company}</h3>
 						<span class="shrink-0 text-xs text-slate-400">{r.period}</span>
 					</div>
 					<p class="mt-1 text-sm text-slate-300">{r.title}</p>
-				</a>
-			))}
-		</div>
-
-		<div class="mt-4 space-y-2">
-			{experience.map((r) => (
-				<article id={`exp-${r.slug}`} class="border border-slate-800 bg-slate-950/40 p-3 scroll-mt-24">
-					<p class="text-sm font-semibold text-slate-100">{r.company} · {r.title}</p>
-					<p class="mt-1 text-xs uppercase tracking-wide text-slate-400">{r.period}</p>
-					<p class="mt-2 text-sm text-slate-300">{r.summary}</p>
-				</article>
+				</button>
 			))}
 		</div>
 	</section>
@@ -103,8 +120,12 @@ import { withBase } from '../../utils/withBase';
 				<tbody>
 					{education.map((e) => (
 						<tr class="border-t border-slate-800 even:bg-slate-950/20">
-							<td class="px-4 py-3 text-slate-100"><a class="hover:underline" href={`#edu-${e.slug}`}>{e.issuer}</a></td>
-							<td class="px-4 py-3 text-slate-300">{e.name}</td>
+							<td class="px-4 py-3 text-slate-100">
+								<button type="button" class="profile-modal-trigger hover:underline" data-profile-modal-open data-profile-modal-kind="education" data-profile-modal-id={e.slug}>{e.issuer}</button>
+							</td>
+							<td class="px-4 py-3 text-slate-300">
+								<button type="button" class="profile-modal-trigger text-left hover:underline" data-profile-modal-open data-profile-modal-kind="education" data-profile-modal-id={e.slug}>{e.name}</button>
+							</td>
 							<td class="px-4 py-3 text-right text-slate-400">{e.year ?? '—'}</td>
 						</tr>
 					))}
@@ -113,24 +134,155 @@ import { withBase } from '../../utils/withBase';
 		</div>
 		<div class="grid gap-3 md:hidden">
 			{education.map((e) => (
-				<a class="border border-slate-800 bg-slate-950/40 p-3 hover:border-slate-700" href={`#edu-${e.slug}`}>
+				<button
+					type="button"
+					class="border border-slate-800 bg-slate-950/40 p-3 text-left hover:border-slate-700"
+					data-profile-modal-open
+					data-profile-modal-kind="education"
+					data-profile-modal-id={e.slug}
+				>
 					<div class="flex items-baseline justify-between gap-3">
 						<h3 class="truncate text-sm font-semibold text-slate-100">{e.issuer}</h3>
 						<span class="shrink-0 text-xs text-slate-400">{e.year ?? '—'}</span>
 					</div>
 					<p class="mt-1 text-sm text-slate-300">{e.name}</p>
-				</a>
-			))}
-		</div>
-
-		<div class="mt-4 space-y-2">
-			{education.map((e) => (
-				<article id={`edu-${e.slug}`} class="border border-slate-800 bg-slate-950/40 p-3 scroll-mt-24">
-					<p class="text-sm font-semibold text-slate-100">{e.issuer}</p>
-					<p class="mt-1 text-sm text-slate-300">{e.name}</p>
-					{e.year && <p class="mt-1 text-xs uppercase tracking-wide text-slate-400">{e.year}</p>}
-				</article>
+				</button>
 			))}
 		</div>
 	</section>
+
+	<div id="profile-modal" class="profile-modal" hidden>
+		<button type="button" class="profile-modal-overlay" data-profile-modal-close aria-label="Close detail modal"></button>
+		<article class="profile-modal-panel" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
+			<div class="profile-modal-head">
+				<p id="profile-modal-meta" class="profile-modal-meta"></p>
+				<h3 id="profile-modal-title" class="profile-modal-title"></h3>
+				<button type="button" class="profile-modal-close" data-profile-modal-close aria-label="Close">✕</button>
+			</div>
+			<p id="profile-modal-body" class="profile-modal-body"></p>
+		</article>
+	</div>
+
+	<script
+		type="application/json"
+		id="profile-modal-data"
+		set:html={JSON.stringify(profileModalData)}
+	/>
+	<script>
+		(() => {
+			const root = document.getElementById('profile-modal');
+			if (!root) return;
+			const dataEl = document.getElementById('profile-modal-data');
+			if (!dataEl) return;
+			const dataset = JSON.parse(dataEl.textContent || '{}');
+			const titleEl = document.getElementById('profile-modal-title');
+			const metaEl = document.getElementById('profile-modal-meta');
+			const bodyEl = document.getElementById('profile-modal-body');
+			const closeNodes = root.querySelectorAll('[data-profile-modal-close]');
+			const openNodes = document.querySelectorAll('[data-profile-modal-open]');
+			let previousFocus: HTMLElement | null = null;
+
+			const openModal = (kind: string, id: string, source: HTMLElement) => {
+				const group = dataset?.[kind];
+				const entry = group?.[id];
+				if (!entry || !titleEl || !metaEl || !bodyEl) return;
+				titleEl.textContent = entry.title || '';
+				metaEl.textContent = entry.meta || '';
+				bodyEl.textContent = entry.body || '';
+				previousFocus = source;
+				root.hidden = false;
+				document.body.style.overflow = 'hidden';
+				(root.querySelector('.profile-modal-close') as HTMLElement | null)?.focus();
+			};
+
+			const closeModal = () => {
+				root.hidden = true;
+				document.body.style.overflow = '';
+				previousFocus?.focus();
+			};
+
+			openNodes.forEach((node) => {
+				node.addEventListener('click', () => {
+					const trigger = node as HTMLElement;
+					const kind = trigger.dataset.profileModalKind || '';
+					const id = trigger.dataset.profileModalId || '';
+					openModal(kind, id, trigger);
+				});
+			});
+
+			closeNodes.forEach((node) => node.addEventListener('click', closeModal));
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && !root.hidden) closeModal();
+			});
+		})();
+	</script>
 </SiteLayout>
+
+<style>
+	.profile-modal-trigger {
+		background: transparent;
+		border: 0;
+		padding: 0;
+		color: inherit;
+		cursor: pointer;
+		font: inherit;
+	}
+	.profile-modal {
+		position: fixed;
+		inset: 0;
+		z-index: 70;
+		display: grid;
+		place-items: center;
+		padding: 1rem;
+	}
+	.profile-modal-overlay {
+		position: absolute;
+		inset: 0;
+		border: 0;
+		background: rgba(2, 6, 23, 0.78);
+	}
+	.profile-modal-panel {
+		position: relative;
+		width: min(42rem, 100%);
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgb(2, 6, 23);
+		padding: 1rem;
+		box-shadow: 0 24px 80px rgba(2, 6, 23, 0.55);
+	}
+	.profile-modal-head {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 0.6rem;
+	}
+	.profile-modal-meta {
+		font-size: 0.68rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(148, 163, 184, 0.96);
+		width: 100%;
+	}
+	.profile-modal-title {
+		font-size: 1.05rem;
+		line-height: 1.35;
+		font-weight: 600;
+		color: rgba(248, 250, 252, 0.99);
+		max-width: 90%;
+	}
+	.profile-modal-close {
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgb(2, 6, 23);
+		color: rgba(226, 232, 240, 0.98);
+		width: 2rem;
+		height: 2rem;
+		cursor: pointer;
+	}
+	.profile-modal-body {
+		margin-top: 0.75rem;
+		font-size: 0.92rem;
+		line-height: 1.62;
+		color: rgba(203, 213, 225, 0.97);
+	}
+</style>

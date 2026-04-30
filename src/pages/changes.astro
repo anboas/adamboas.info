@@ -68,13 +68,38 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.21',
+		date: '2026-04-30',
+		title: 'Profile modal interaction + CVEAgentNet note restoration',
+		summary: 'Moved profile experience and education detail expansion into click-to-open modals and restored the CVEAgentNet note path that had fallen out after Whitepaper sync.',
+		impact: 'Profile scanning is now cleaner with on-demand detail views, and the CVEAgentNet note URL is restored and durable through upstream Whitepaper source sync.',
+		current: true,
+		tags: ['profile', 'ux', 'writing', 'sync'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added profile detail modal system on `/profile/` with keyboard-close support (`Esc`) and reusable trigger wiring for table and mobile card views.',
+			]},
+			{ kind: 'Changed', items: [
+				'Replaced in-page experience and education expansion blocks with modal-driven detail presentation when company/role or credential rows are clicked.',
+				'Restored `src/content/writing/notes/2026-04-29-cveagentnet-next-control-plane-vulnerability-management.md` after upstream sync removed it from site content.',
+			]},
+			{ kind: 'Improved', items: [
+				'Kept CVEAgentNet note durable by adding the same note into the Whitepaper source repository so scheduled sync no longer deletes it.',
+			]},
+			{ kind: 'Fixed', items: [
+				'Fixed `/writing/2026-04-29-cveagentnet-next-control-plane-vulnerability-management/` returning 404 after sync.',
+			]},
+		],
+	},
+
 	{
 		version: 'v2.4.20',
 		date: '2026-04-30',
 		title: 'Unified surface header system across writing, capability, ops, and utility pages',
 		summary: 'Replaced boxed control-shell title blocks with the cleaner Profile-style header treatment across major site surfaces.',
 		impact: 'Top-level surfaces now share a consistent, less-boxed visual rhythm with eyebrow/title/description hierarchy and right-rail actions, improving scan flow and cross-page cohesion.',
-		current: true,
 		tags: ['ux', 'styling', 'consistency', 'navigation'],
 		groups: [
 			{ kind: 'Added', items: [
