@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint:content": "node scripts/lint-frontmatter.mjs",
+    "lint:seo": "node scripts/lint-seo-guards.mjs",
     "lint:papers": "node scripts/verify-papers.mjs",
     "lint:memos": "node scripts/verify-memos.mjs",
     "og:generate": "node scripts/generate-og-images.mjs",

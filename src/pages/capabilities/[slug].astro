@@ -164,12 +164,13 @@ const opportunityItems = [...opportunitiesByKey.values()]
 	});
 
 const canonicalHref = withBase(`/capabilities/${capability.slug}/`);
+const capabilitySeoDescription = `${capability.description} Includes linked writing, events, and opportunity intelligence for ${capability.title}.`;
 const homeUrl = new URL(withBase('/'), Astro.site).toString();
 const capabilitiesUrl = new URL(withBase('/capabilities/'), Astro.site).toString();
 const pageUrl = new URL(canonicalHref, Astro.site).toString();
 ---
 
-<SiteLayout title={`${capability.title} | Capabilities | Adam Boas`} description={capability.description} canonicalHref={canonicalHref}>
+<SiteLayout title={`${capability.title} Capability | Adam Boas`} description={capabilitySeoDescription} canonicalHref={canonicalHref}>
 	<StickyBrowseBar active="capabilities" />
 	<script
 		type="application/ld+json"

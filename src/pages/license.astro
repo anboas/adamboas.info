@@ -1,5 +1,6 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import SurfaceHeader from '../components/SurfaceHeader.astro';
 ---
 
 <SiteLayout
@@ -9,7 +10,11 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 >
 	<section class="mt-2 max-w-4xl">
 		<div class="card p-5 text-sm text-slate-300 license-shell">
-			<h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">License</h1>
+			<SurfaceHeader
+				eyebrow="Legal"
+				title="License"
+				description="Code and writing license terms for this site and repository."
+			/>
 
 			<div id="code" class="mt-4 border-t border-slate-800 pt-4 space-y-3">
 				<h2 class="license-subhead">Code</h2>

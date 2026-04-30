@@ -236,6 +236,18 @@ jobs:
             fi
           done
 
+          # Snapshot current published note stems before sync so we can detect accidental drops.
+          previous_published_note_stems=()
+          shopt -s nullglob
+          for f in src/content/writing/notes/*.md; do
+            base=$(basename "$f")
+            [ "$base" = "README.md" ] && continue
+            if awk 'BEGIN{s=0} /^---[[:space:]]*$/{s++; next} s==1{print} s>1{exit}' "$f" | grep -Eq '^status:[[:space:]]*draft[[:space:]]*$'; then
+              continue
+            fi
+            previous_published_note_stems+=("${base%.md}")
+          done
+
           # Start clean so deletions in Whitepaper propagate.
           rm -rf src/content/writing
           mkdir -p src/content/writing/notes src/content/writing/memos
@@ -306,6 +318,24 @@ jobs:
             published_memo_stems+=("${base%.md}")
           done
 
+          # Guardrail: fail when previously published notes disappear after sync unless explicitly allowed.
+          missing_published_notes=()
+          for slug in "${previous_published_note_stems[@]}"; do
+            if [ ! -f "src/content/writing/notes/${slug}.md" ]; then
+              missing_published_notes+=("$slug")
+            fi
+          done
+          if [ ${#missing_published_notes[@]} -gt 0 ]; then
+            echo "Published notes missing after sync: ${missing_published_notes[*]}" >&2
+            mkdir -p tmp/sync
+            printf "%s
+" "${missing_published_notes[@]}" > tmp/sync/missing-published-notes.txt
+            if [ "${SYNC_ALLOW_REMOVED_NOTES:-false}" != "true" ]; then
+              echo "Set SYNC_ALLOW_REMOVED_NOTES=true to allow intentional removals." >&2
+              exit 1
+            fi
+          fi
+
           missing_memo_artifacts=0
 
           # Copy generated memo artifacts (PDF + HTML + manifest) for published memos only.
@@ -346,6 +376,14 @@ jobs:
             echo "Memo artifact sync failed" >&2
             exit 1
           fi
+
+      - name: Upload sync diagnostics (optional)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sync-whitepaper-diagnostics
+          path: tmp/sync
+          if-no-files-found: ignore
 
       - name: Commit changes
         id: commit

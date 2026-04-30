@@ -29,15 +29,15 @@ const hasExtra = Astro.slots.has('default');
 
 <style>
 	.surface-header {
-		padding-top: 0.25rem;
-		padding-bottom: 0.75rem;
+		padding-top: var(--surface-header-pt, 0.25rem);
+		padding-bottom: var(--surface-header-pb, 0.75rem);
 	}
 	.surface-header-row {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
-		padding-bottom: 0.75rem;
-		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
+		gap: var(--surface-header-gap, 0.5rem);
+		padding-bottom: var(--surface-header-row-pb, 0.75rem);
+		border-bottom: 1px solid var(--surface-header-border, rgba(30, 41, 59, 0.95));
 	}
 	.surface-header-main {
 		max-width: 60rem;

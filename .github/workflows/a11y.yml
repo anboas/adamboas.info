@@ -33,6 +33,9 @@ jobs:
       - name: Lint content frontmatter
         run: npm run lint:content
 
+      - name: Lint SEO guards
+        run: npm run lint:seo
+
       - name: Build
         run: npm run build
 

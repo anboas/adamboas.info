@@ -172,17 +172,67 @@ const profileModalData = {
 		(() => {
 			const root = document.getElementById('profile-modal');
 			if (!root) return;
+			const panel = root.querySelector('.profile-modal-panel');
 			const dataEl = document.getElementById('profile-modal-data');
-			if (!dataEl) return;
+			if (!dataEl || !panel) return;
 			const dataset = JSON.parse(dataEl.textContent || '{}');
 			const titleEl = document.getElementById('profile-modal-title');
 			const metaEl = document.getElementById('profile-modal-meta');
 			const bodyEl = document.getElementById('profile-modal-body');
 			const closeNodes = root.querySelectorAll('[data-profile-modal-close]');
 			const openNodes = document.querySelectorAll('[data-profile-modal-open]');
-			let previousFocus: HTMLElement | null = null;
+			let previousFocus = null;
+			let scrollY = 0;
+			let touchStartY = null;
 
-			const openModal = (kind: string, id: string, source: HTMLElement) => {
+			const lockScroll = () => {
+				scrollY = window.scrollY || window.pageYOffset || 0;
+				document.body.style.position = 'fixed';
+				document.body.style.top = `-${scrollY}px`;
+				document.body.style.left = '0';
+				document.body.style.right = '0';
+				document.body.style.width = '100%';
+			};
+
+			const unlockScroll = () => {
+				document.body.style.position = '';
+				document.body.style.top = '';
+				document.body.style.left = '';
+				document.body.style.right = '';
+				document.body.style.width = '';
+				window.scrollTo(0, scrollY);
+			};
+
+			const focusables = () => {
+				return Array.from(root.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'));
+			};
+
+			const trapFocus = (event) => {
+				if (event.key !== 'Tab' || root.hidden) return;
+				const nodes = focusables();
+				if (!nodes.length) return;
+				const first = nodes[0];
+				const last = nodes[nodes.length - 1];
+				if (event.shiftKey && document.activeElement === first) {
+					event.preventDefault();
+					last.focus();
+				} else if (!event.shiftKey && document.activeElement === last) {
+					event.preventDefault();
+					first.focus();
+				}
+			};
+
+			const closeModal = () => {
+				if (root.hidden) return;
+				root.classList.remove('is-open');
+				window.setTimeout(() => {
+					root.hidden = true;
+					unlockScroll();
+					if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
+				}, 120);
+			};
+
+			const openModal = (kind, id, source) => {
 				const group = dataset?.[kind];
 				const entry = group?.[id];
 				if (!entry || !titleEl || !metaEl || !bodyEl) return;
@@ -190,20 +240,15 @@ const profileModalData = {
 				metaEl.textContent = entry.meta || '';
 				bodyEl.textContent = entry.body || '';
 				previousFocus = source;
+				lockScroll();
 				root.hidden = false;
-				document.body.style.overflow = 'hidden';
-				(root.querySelector('.profile-modal-close') as HTMLElement | null)?.focus();
-			};
-
-			const closeModal = () => {
-				root.hidden = true;
-				document.body.style.overflow = '';
-				previousFocus?.focus();
+				window.requestAnimationFrame(() => root.classList.add('is-open'));
+				(root.querySelector('.profile-modal-close'))?.focus();
 			};
 
 			openNodes.forEach((node) => {
 				node.addEventListener('click', () => {
-					const trigger = node as HTMLElement;
+					const trigger = node;
 					const kind = trigger.dataset.profileModalKind || '';
 					const id = trigger.dataset.profileModalId || '';
 					openModal(kind, id, trigger);
@@ -211,8 +256,19 @@ const profileModalData = {
 			});
 
 			closeNodes.forEach((node) => node.addEventListener('click', closeModal));
+			panel.addEventListener('touchstart', (event) => {
+				touchStartY = event.touches?.[0]?.clientY ?? null;
+			}, { passive: true });
+			panel.addEventListener('touchend', (event) => {
+				if (touchStartY === null) return;
+				const endY = event.changedTouches?.[0]?.clientY ?? touchStartY;
+				if (endY - touchStartY > 96) closeModal();
+				touchStartY = null;
+			}, { passive: true });
+
 			document.addEventListener('keydown', (event) => {
 				if (event.key === 'Escape' && !root.hidden) closeModal();
+				trapFocus(event);
 			});
 		})();
 	</script>
@@ -240,6 +296,8 @@ const profileModalData = {
 		inset: 0;
 		border: 0;
 		background: rgba(2, 6, 23, 0.78);
+		opacity: 0;
+		transition: opacity 140ms ease;
 	}
 	.profile-modal-panel {
 		position: relative;
@@ -248,6 +306,16 @@ const profileModalData = {
 		background: rgb(2, 6, 23);
 		padding: 1rem;
 		box-shadow: 0 24px 80px rgba(2, 6, 23, 0.55);
+		opacity: 0;
+		transform: translateY(6px) scale(0.992);
+		transition: opacity 140ms ease, transform 170ms ease;
+	}
+	.profile-modal.is-open .profile-modal-overlay {
+		opacity: 1;
+	}
+	.profile-modal.is-open .profile-modal-panel {
+		opacity: 1;
+		transform: translateY(0) scale(1);
 	}
 	.profile-modal-head {
 		display: flex;

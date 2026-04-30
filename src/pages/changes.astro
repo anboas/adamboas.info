@@ -70,13 +70,42 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.23',
+		date: '2026-04-30',
+		title: 'SEO hardening phase 2 + writing UX/polish + sync guardrails',
+		summary: 'Shipped a broad second-phase SEO and UX batch: stronger writing schema/metadata, CI SEO linting, profile modal hardening, edge-header normalization, and whitepaper sync safety checks.',
+		impact: 'Search metadata and schema coverage are more resilient, writing pages gained better share/citation affordances and read-time context, profile modals now behave more accessibly, and sync pipelines now guard against silent published-note loss.',
+		current: true,
+		tags: ['seo', 'writing', 'ux', 'sync', 'ci'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added `scripts/lint-seo-guards.mjs` and wired it into `a11y`, `deploy-dev-pages`, `linkcheck`, and `lighthouse` workflows.',
+				'Added Whitepaper sync protection in `.github/workflows/sync-whitepaper.yml` to detect missing previously published notes and fail unless explicitly allowed (`SYNC_ALLOW_REMOVED_NOTES=true`).',
+				'Added sync diagnostics artifact upload (`sync-whitepaper-diagnostics`) for removal debugging.',
+			]},
+			{ kind: 'Changed', items: [
+				'Upgraded writing detail schema to consistent `Article` JSON-LD coverage across notes, memos, and papers (papers include `additionalType: Report`).',
+				'Enhanced writing detail UX with citation-copy action (`📚 Cite`), canonical link strip, related-label clarity, and estimated read-time display.',
+				'Tightened writing/capabilities SEO metadata copy for stronger intent-aligned snippets.',
+				'Extended sticky TOC visibility from `2xl` to `xl` and tuned TOC/right-rail spacing for earlier availability on large screens.',
+				'Normalized edge surface headers and semantics on `/404/`, `/license/`, and `/content-license/` to reduce style drift and improve index hygiene.',
+				'Hardened profile detail modals with focus trapping, return-focus behavior, iOS-safe body scroll locking, transition polish, and swipe-down close gesture support.',
+			]},
+			{ kind: 'Improved', items: [
+				'`SurfaceHeader` now supports tokenized CSS variables for consistent eyebrow/title/description/action spacing control.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.22',
 		date: '2026-04-30',
 		title: 'Writing header aligned to Profile formatting',
 		summary: 'Adjusted `/writing/` top header to match the visual hierarchy and spacing rhythm used on `/profile/`.',
 		impact: 'Writing now uses the same cleaner border-bottom header structure as Profile, removing the subtle formatting mismatch between the two key surfaces.',
-		current: true,
 		tags: ['writing', 'header', 'ux', 'consistency'],
 		groups: [
 			{ kind: 'Added', items: [] },

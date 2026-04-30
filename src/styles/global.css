@@ -657,6 +657,11 @@ article[data-writing-type="note"] .paper-content p {
   }
 }
 
+.writing-cite-strip {
+  margin: 0.45rem 0 0.55rem;
+  overflow-wrap: anywhere;
+}
+
 .writing-mobile-progress {
   display: none;
 }
@@ -680,26 +685,26 @@ article[data-writing-type="note"] .paper-content p {
   background: rgba(2, 6, 23, 0.94);
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1280px) {
   .writing-detail-shell {
     /* Reserve a right rail so sticky action controls and article card never clip under TOC. */
-    margin-right: clamp(11rem, 14vw, 15rem);
+    margin-right: clamp(10rem, 13vw, 14rem);
     padding-right: 0;
   }
 
   .writing-actions-bar {
-    margin-right: clamp(11rem, 14vw, 15rem);
+    margin-right: clamp(10rem, 13vw, 14rem);
   }
 
   .writing-toc {
     position: fixed;
-    right: 0.75rem;
+    right: 0.65rem;
     left: auto;
-    top: calc(5.2rem + env(safe-area-inset-top));
+    top: calc(5rem + env(safe-area-inset-top));
     width: auto;
-    min-width: 10.8rem;
-    max-width: clamp(10.8rem, 16vw, 15rem);
-    max-height: calc(100vh - 6rem);
+    min-width: 9.8rem;
+    max-width: clamp(9.8rem, 15vw, 13.5rem);
+    max-height: calc(100vh - 5.8rem);
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 22;
