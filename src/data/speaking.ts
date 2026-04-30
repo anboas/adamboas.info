@@ -62,7 +62,7 @@ export const speakingEvents: SpeakingEvent[] = [
 		slug: 'navalx-scrum-for-leaders-2022-agile-cyber-software',
 		title: 'Agile Leadership in Cybersecurity and Software Development',
 		eventName: 'NavalX Center for Adaptive Warfighting Scrum for Leaders',
-		eventUrl: 'https://www.navalx.navy.mil/',
+		eventUrl: 'https://blackpearl.navy.mil/',
 		eventDateRange: 'Jun 9, 2022',
 		sessionDateTime: 'Thu, Jun 9, 2022 · exact session time not publicly listed',
 		stage: 'Guest Speaker Session',

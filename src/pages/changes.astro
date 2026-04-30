@@ -84,13 +84,33 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.37',
+		date: '2026-04-30',
+		title: 'Link-check reliability hardening for NavalX speaking entry',
+		summary: 'Replaced an intermittently unresolved NavalX host URL in speaking data with a stable authoritative Black Pearl URL to reduce strict-linkcheck flakes.',
+		impact: 'Speaking data remains accurate while avoiding DNS-related CI failures during strict external-link validation.',
+		current: true,
+		tags: ['speaking', 'ci', 'linkcheck', 'reliability'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Updated NavalX speaking event `eventUrl` from `https://www.navalx.navy.mil/` to `https://blackpearl.navy.mil/`.',
+			]},
+			{ kind: 'Improved', items: [
+				'Reduced recurring strict-linkcheck instability caused by intermittent DNS resolution failures.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.36',
 		date: '2026-04-30',
 		title: 'Sterling pass: header baseline lock + remaining index-surface unification',
 		summary: 'Locked shared header baseline metrics to reduce micro-jitter across page switches and migrated remaining background index pages to the shared page-header wrapper.',
 		impact: 'Header position and action-rail alignment are more stable across desktop transitions; experience/education indexes now use the same shared top-shell framing as other surfaces.',
-		current: true,
 		tags: ['ux', 'consistency', 'headers', 'quality'],
 		groups: [
 			{ kind: 'Added', items: [] },
@@ -101,7 +121,9 @@ const releases: Release[] = [
 			{ kind: 'Improved', items: [
 				'Reduced visual jitter when switching between pages with different header action payloads.',
 			]},
-			{ kind: 'Fixed', items: [] },
+			{ kind: 'Fixed', items: [
+				'Updated NavalX speaking event URL to `https://blackpearl.navy.mil/` to avoid intermittent DNS failures on `www.navalx.navy.mil` in strict link checks.',
+			]}, 
 		],
 	},
 
