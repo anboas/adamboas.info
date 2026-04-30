@@ -1,6 +1,7 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
+import { absoluteUrl } from '../../config/site';
 import { withBase } from '../../utils/withBase';
 import sitemapAnalytics from '../../generated/plausible-sitemap-analytics.json';
 
@@ -159,7 +160,7 @@ const paretoMax = paretoRows.reduce((max, row) => Math.max(max, n(row.pageviews)
 			<a class="ui-link-btn" href={withBase('/status/')}>Back to status</a>
 			<a
 				class="ui-link-btn"
-				href={meta.sitemapIndexUrl || 'https://www.adamboas.com/sitemap-index.xml'}
+				href={meta.sitemapIndexUrl || absoluteUrl('/sitemap-index.xml')}
 				target="_blank"
 				rel="noreferrer">Open sitemap</a
 			>

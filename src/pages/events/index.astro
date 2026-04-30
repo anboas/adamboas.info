@@ -7,6 +7,7 @@ import sofweekIntel from '../../data/radar/intel/sofweek-intel.json';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
 import feedCrawlReport from '../../data/radar/feed-crawl-report-latest.json';
 import opportunitiesDrift from '../../data/radar/events-candidates-sam-opportunities-drift-latest.json';
+import { absoluteUrl } from '../../config/site';
 import type { RadarEngagementKind } from '../../data/radar/types';
 
 const DISALLOWED_SOURCE_HOSTS = new Set(['jbenton1.github.io']);
@@ -871,7 +872,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 <SiteLayout
 	title="DoW Events Intelligence | Adam Boas"
 	description="Upcoming DoW events with validated links, source transparency, and layered opportunity intelligence."
-	canonicalHref="https://www.adamboas.com/events/"
+	canonicalHref={absoluteUrl('/events/')}
 	image="/og/events.png"
 	noindex={true}
 >

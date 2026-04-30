@@ -5,6 +5,7 @@ import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { withBase } from '../utils/withBase';
 import { getPdfMeta, type PdfMeta } from '../utils/pdfMeta';
 import { RESUME_CLEARANCE } from '../data/resume';
+import { absoluteUrl } from '../config/site';
 
 type WritingItem = {
 	title: string;
@@ -68,7 +69,7 @@ const resumePdfMetaText = [formatPdfMeta(await getPdfMeta(resumePdfPath)), `Clea
 <SiteLayout
 	title="Sitemap | Adam Boas"
 	description="Human-readable sitemap for adamboas.com pages and published writing."
-	canonicalHref="https://www.adamboas.com/sitemap/"
+	canonicalHref={absoluteUrl('/sitemap/')}
 	noindex={true}
 >
 	<section class="mt-2 space-y-4">

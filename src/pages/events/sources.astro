@@ -3,6 +3,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import feedRegistry from '../../data/radar/feed-registry.json';
 import crawlReport from '../../data/radar/feed-crawl-report-latest.json';
+import { absoluteUrl } from '../../config/site';
 
 type Feed = {
 	id: string;
@@ -30,7 +31,7 @@ const generatedAt = crawlReport.generatedAt ?? null;
 <SiteLayout
 	title="Event Source Feeds | Adam Boas"
 	description="Public registry of event feeds and one-off URLs used to power DoW Events Intelligence."
-	canonicalHref="https://www.adamboas.com/events/sources/"
+	canonicalHref={absoluteUrl('/events/sources/')}
 	image="/og/events.png"
 	noindex={true}
 >

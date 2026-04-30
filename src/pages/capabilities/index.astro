@@ -6,6 +6,7 @@ import { withBase } from '../../utils/withBase';
 import { capabilityTopics } from '../../data/capabilities';
 import { radarEventsSeed } from '../../data/radar/events';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
+import { absoluteUrl } from '../../config/site';
 
 type OpportunityRow = {
 	notice_id?: string;
@@ -108,7 +109,7 @@ const rows = capabilityTopics.map((capability) => {
 <SiteLayout
 	title="Capabilities: AI, Cloud, DevSecOps, Cybersecurity | Adam Boas"
 	description="Capability map for AI autonomy, cloud platforms, DevSecOps delivery, cybersecurity, analytics, and proposal support, with linked writing and market intelligence surfaces."
-	canonicalHref="https://www.adamboas.com/capabilities/"
+	canonicalHref={absoluteUrl('/capabilities/')}
 >
 	<SurfacePageHeader
 		stickyActive="capabilities"

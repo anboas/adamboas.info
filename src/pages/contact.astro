@@ -3,12 +3,13 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { withBase } from '../utils/withBase';
 import { CONTACT_PHONE } from '../data/resume';
+import { absoluteUrl, CONTACT_EMAIL, CONTACT_PHONE_E164, contactMailto } from '../config/site';
 ---
 
 <SiteLayout
 	title="Contact | Adam Boas"
 	description="Start a project conversation with Adam Boas. Share mission, timeline, and scope."
-	canonicalHref="https://www.adamboas.com/contact/"
+	canonicalHref={absoluteUrl('/contact/')}
 >
 	<SurfacePageHeader
 		stickyActive="home"
@@ -17,8 +18,10 @@ import { CONTACT_PHONE } from '../data/resume';
 		description="Tell me what you need, what timeline you are working against, and where execution is blocked. I read every request."
 	>
 		<div slot="actions" class="flex flex-wrap items-center gap-2">
-			<a class="ui-link-btn" data-track="Contact: Email Click" href="mailto:anboas@gmail.com">Email direct</a>
-			<a class="ui-link-btn" data-track="Contact: Phone Click" href="tel:+13019042011">Call {CONTACT_PHONE}</a>
+			<a class="ui-link-btn" data-track="Contact: Email Click" href={contactMailto()}>Email direct</a>
+			<a class="ui-link-btn" data-track="Contact: Phone Click" href={`tel:${CONTACT_PHONE_E164}`}
+				>Call {CONTACT_PHONE}</a
+			>
 			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/writing/')}>Read work</a>
 		</div>
 	</SurfacePageHeader>
@@ -89,10 +92,10 @@ import { CONTACT_PHONE } from '../data/resume';
 				<p class="text-xs text-slate-400">
 					Or email <a
 						class="underline decoration-slate-600 underline-offset-2 hover:decoration-slate-400"
-						href="mailto:anboas@gmail.com">anboas@gmail.com</a
+						href={contactMailto()}>{CONTACT_EMAIL}</a
 					> or call <a
 						class="underline decoration-slate-600 underline-offset-2 hover:decoration-slate-400"
-						href="tel:+13019042011">{CONTACT_PHONE}</a
+						href={`tel:${CONTACT_PHONE_E164}`}>{CONTACT_PHONE}</a
 					>.
 				</p>
 			</div>

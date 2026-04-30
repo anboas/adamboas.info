@@ -1,12 +1,13 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import SurfaceHeader from '../components/SurfaceHeader.astro';
+import { absoluteUrl } from '../config/site';
 ---
 
 <SiteLayout
 	title="License | Adam Boas"
 	description="Code and content licensing terms for this site and repository."
-	canonicalHref="https://www.adamboas.com/license/"
+	canonicalHref={absoluteUrl('/license/')}
 >
 	<section class="mt-2 max-w-4xl">
 		<div class="card p-5 text-sm text-slate-300 license-shell">
@@ -24,7 +25,9 @@ import SurfaceHeader from '../components/SurfaceHeader.astro';
 				</p>
 				<p>
 					Full text:
-					<a href="https://github.com/anboas/adamboas.info/blob/main/LICENSE" target="_blank" rel="noreferrer">LICENSE</a>
+					<a href="https://github.com/anboas/adamboas.info/blob/main/LICENSE" target="_blank" rel="noreferrer"
+						>LICENSE</a
+					>
 				</p>
 			</div>
 
@@ -36,10 +39,15 @@ import SurfaceHeader from '../components/SurfaceHeader.astro';
 				</p>
 				<p>
 					Full terms:
-					<a href="https://github.com/anboas/adamboas.info/blob/main/CONTENT_LICENSE.md" target="_blank" rel="noreferrer">CONTENT_LICENSE.md</a>
+					<a
+						href="https://github.com/anboas/adamboas.info/blob/main/CONTENT_LICENSE.md"
+						target="_blank"
+						rel="noreferrer">CONTENT_LICENSE.md</a
+					>
 				</p>
 				<p>
-					Event-tracker entries compile references from public sources. Source owners retain rights to original third-party materials.
+					Event-tracker entries compile references from public sources. Source owners retain rights to original
+					third-party materials.
 				</p>
 			</div>
 		</div>

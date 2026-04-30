@@ -3,6 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import SurfaceHeader from '../components/SurfaceHeader.astro';
 // sticky browse intentionally omitted on /changes (Changes link is footer-only)
 import changeNotesJs from '../scripts/change-notes.js?raw';
+import { absoluteUrl } from '../config/site';
 
 type ChangeGroup = {
 	kind: 'Added' | 'Changed' | 'Improved' | 'Fixed';
@@ -85,13 +86,38 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.38',
+		date: '2026-04-30',
+		title: '12-factor config pass: centralized site/contact env wiring',
+		summary: 'Moved key site identity and contact wiring to environment-driven config, removed hardcoded public URLs/emails from page surfaces, and documented runtime/build config contract.',
+		impact: 'UI and metadata are now easier to deploy across domains/environments without source edits, improving portability and preferred-practice configuration hygiene.',
+		current: true,
+		tags: ['architecture', '12-factor', 'config', 'quality'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added `src/config/site.ts` with centralized `PUBLIC_SITE_URL`, `PUBLIC_CONTACT_EMAIL`, and `PUBLIC_CONTACT_PHONE_E164` handling plus helper builders (`absoluteUrl`, `contactMailto`).',
+				'Added `.env.example` documenting public runtime and build-time analytics variables.',
+			]},
+			{ kind: 'Changed', items: [
+				'Replaced hardcoded canonical origins in core pages (`/contact/`, `/sitemap/`, `/changes/`, `/license/`, `/events/`, `/events/sources/`, `/capabilities/`) with env-driven `absoluteUrl(...)` calls.',
+				'Replaced hardcoded contact links in homepage/contact/writing-detail surfaces with `contactMailto(...)` and env-backed E.164 tel wiring.',
+				'Updated profile JSON-LD page URL and status analytics sitemap fallback URL to derive from shared site config.',
+			]},
+			{ kind: 'Improved', items: [
+				'Improved deployment portability and reduced source-level edits required for environment/domain changes.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.37',
 		date: '2026-04-30',
 		title: 'Link-check reliability hardening for NavalX speaking entry',
 		summary: 'Replaced an intermittently unresolved NavalX host URL in speaking data with a stable authoritative Black Pearl URL to reduce strict-linkcheck flakes.',
 		impact: 'Speaking data remains accurate while avoiding DNS-related CI failures during strict external-link validation.',
-		current: true,
 		tags: ['speaking', 'ci', 'linkcheck', 'reliability'],
 		groups: [
 			{ kind: 'Added', items: [] },
@@ -4499,7 +4525,7 @@ function releaseSearchText(release: Release) {
 <SiteLayout
 	title="Change Notes | Adam Boas"
 	description="Public, versioned website capability updates for adamboas.com."
-	canonicalHref="https://www.adamboas.com/changes/"
+	canonicalHref={absoluteUrl('/changes/')}
 	noindex={true}
 >
 	<!-- StickyBrowseBar omitted on this page by preference: Changes link should live in footer only. -->

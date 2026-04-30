@@ -3,6 +3,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { RESUME_CLEARANCE, experience, education } from '../../data/resume';
 import SpeakingEventsSection from '../../components/SpeakingEventsSection.astro';
+import { absoluteUrl } from '../../config/site';
 import { withBase } from '../../utils/withBase';
 
 const profileModalData = {
@@ -39,7 +40,7 @@ const profileModalData = {
 			'@context': 'https://schema.org',
 			'@type': 'ProfilePage',
 			name: 'Adam Boas Profile',
-			url: 'https://www.adamboas.com/profile/',
+			url: absoluteUrl('/profile/'),
 			description: 'Career background, speaking engagements, and credentials for Adam Boas.',
 			mainEntity: {
 				'@type': 'Person',

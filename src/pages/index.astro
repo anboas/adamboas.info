@@ -3,6 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import { getCollection } from 'astro:content';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { CONTACT_PHONE } from '../data/resume';
+import { absoluteUrl, CONTACT_PHONE_E164, contactMailto } from '../config/site';
 import { withBase } from '../utils/withBase';
 import WritingCompactCard from '../components/WritingCompactCard.astro';
 
@@ -38,13 +39,13 @@ const homepageWriting = [
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
 const featuredOrder = ['acp-ra', 'agentic-force-creation', '2026-02-09-agent-tool-security-research'];
-const featuredFromOrder = featuredOrder
-	.map((slug) => homepageWriting.find((w) => w.slug === slug))
-	.filter(Boolean);
-const featuredFill = homepageWriting.filter((w) => !featuredOrder.includes(String(w.slug))).slice(0, Math.max(0, 3 - featuredFromOrder.length));
+const featuredFromOrder = featuredOrder.map((slug) => homepageWriting.find((w) => w.slug === slug)).filter(Boolean);
+const featuredFill = homepageWriting
+	.filter((w) => !featuredOrder.includes(String(w.slug)))
+	.slice(0, Math.max(0, 3 - featuredFromOrder.length));
 const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
 
-const siteUrl = new URL(withBase('/'), Astro.site).toString();
+const siteUrl = absoluteUrl('/');
 const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}'), Astro.site).toString();
 ---
 
@@ -55,7 +56,7 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 			'@context': 'https://schema.org',
 			'@type': 'Person',
 			name: 'Adam Boas',
-			url: 'https://www.adamboas.com/',
+			url: siteUrl,
 			sameAs: ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'],
 			jobTitle: 'Solutions Architect',
 			telephone: CONTACT_PHONE,
@@ -87,11 +88,21 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 					Warfighter lethality through trusted autonomy, control planes, and execution at tempo.
 				</p>
 				<div class="mt-5 flex flex-wrap items-center gap-3">
-					<a data-track="Contact: Intake Click" href={withBase('/contact/?intent=consulting')} class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold">
+					<a
+						data-track="Contact: Intake Click"
+						href={withBase('/contact/?intent=consulting')}
+						class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold"
+					>
 						Start project
 					</a>
-					<a data-track="Contact: Email Click" href="mailto:anboas@gmail.com" class="ui-link-btn px-4 text-sm font-semibold">Email direct</a>
-					<a data-track="Contact: Phone Click" href="tel:+13019042011" class="ui-link-btn px-4 text-sm font-semibold">{CONTACT_PHONE}</a>
+					<a data-track="Contact: Email Click" href={contactMailto()} class="ui-link-btn px-4 text-sm font-semibold"
+						>Email direct</a
+					>
+					<a
+						data-track="Contact: Phone Click"
+						href={`tel:${CONTACT_PHONE_E164}`}
+						class="ui-link-btn px-4 text-sm font-semibold">{CONTACT_PHONE}</a
+					>
 				</div>
 			</div>
 		</div>
@@ -105,39 +116,71 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 			</div>
 		</div>
 		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-			{featuredReading.map((w) => (
-				<WritingCompactCard item={w} showTopicCount={false} />
-			))}
+			{featuredReading.map((w) => <WritingCompactCard item={w} showTopicCount={false} />)}
 		</div>
 	</section>
-
 
 	<div class="mt-6 grid gap-6 md:grid-cols-2">
 		<section class="card p-6">
 			<h2 class="section-title">Operating Principles</h2>
 			<ul class="mt-3 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
-				<li><span class="text-slate-100">Mission assurance over novelty</span>: contested operations first, graceful degradation always</li>
-				<li><span class="text-slate-100">Governed autonomy by default</span>: trust scopes, policy gates, and operator override paths</li>
-				<li><span class="text-slate-100">Evidence before action</span>: signed traces, provenance, and auditable decisions</li>
-				<li><span class="text-slate-100">Control planes over point solutions</span>: PDP/PIP/PEP patterns with clean system boundaries</li>
-				<li><span class="text-slate-100">Continuous adversarial validation</span>: evals, red-teaming, and rollback as normal operations</li>
+				<li>
+					<span class="text-slate-100">Mission assurance over novelty</span>: contested operations first, graceful
+					degradation always
+				</li>
+				<li>
+					<span class="text-slate-100">Governed autonomy by default</span>: trust scopes, policy gates, and operator
+					override paths
+				</li>
+				<li>
+					<span class="text-slate-100">Evidence before action</span>: signed traces, provenance, and auditable decisions
+				</li>
+				<li>
+					<span class="text-slate-100">Control planes over point solutions</span>: PDP/PIP/PEP patterns with clean
+					system boundaries
+				</li>
+				<li>
+					<span class="text-slate-100">Continuous adversarial validation</span>: evals, red-teaming, and rollback as
+					normal operations
+				</li>
 			</ul>
 		</section>
 
 		<section class="card p-6">
 			<h2 class="section-title">Engagement</h2>
-			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">Consulting and hands-on support for high-tempo delivery. Include mission outcome and timeline in your intake.</p>
+			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">
+				Consulting and hands-on support for high-tempo delivery. Include mission outcome and timeline in your intake.
+			</p>
 			<ul class="mt-4 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
-				<li><span class="text-slate-100">Architecture &amp; modernization</span> (cloud platforms, control planes, migration plans)</li>
-				<li><span class="text-slate-100">Delivery systems</span> (paved roads, CI/CD, SLOs, observability, rollback)</li>
+				<li>
+					<span class="text-slate-100">Architecture &amp; modernization</span> (cloud platforms, control planes, migration
+					plans)
+				</li>
+				<li>
+					<span class="text-slate-100">Delivery systems</span> (paved roads, CI/CD, SLOs, observability, rollback)
+				</li>
 				<li><span class="text-slate-100">Governed autonomy</span> (evals, trust scopes, policy + audit trails)</li>
-				<li><span class="text-slate-100">Proposal support</span> (whitepapers, technical volumes, RFI/RFP responses)</li>
+				<li>
+					<span class="text-slate-100">Proposal support</span> (whitepapers, technical volumes, RFI/RFP responses)
+				</li>
 			</ul>
 			<div class="mt-5 flex flex-wrap gap-3">
-				<a href={withBase('/capabilities/')} class="ui-link-btn bg-slate-900/40 px-3 text-sm font-semibold text-slate-100">Capability summary</a>
-				<a data-track="Contact: Intake Click" href={withBase('/contact/?intent=consulting')} class="ui-link-btn px-3 text-sm font-semibold">Start project</a>
+				<a
+					href={withBase('/capabilities/')}
+					class="ui-link-btn bg-slate-900/40 px-3 text-sm font-semibold text-slate-100">Capability summary</a
+				>
+				<a
+					data-track="Contact: Intake Click"
+					href={withBase('/contact/?intent=consulting')}
+					class="ui-link-btn px-3 text-sm font-semibold">Start project</a
+				>
 			</div>
-			<p class="mt-3 text-xs text-slate-400">Background: <a href={withBase('/profile/')} class="text-slate-300 hover:text-slate-100">Profile</a> · <a href={withBase('/speaking/')} class="text-slate-300 hover:text-slate-100">Speaking</a> · <a href={withBase('/files/adam-boas-resume.pdf')} class="text-slate-300 hover:text-slate-100">Resume PDF</a></p>
+			<p class="mt-3 text-xs text-slate-400">
+				Background: <a href={withBase('/profile/')} class="text-slate-300 hover:text-slate-100">Profile</a> · <a
+					href={withBase('/speaking/')}
+					class="text-slate-300 hover:text-slate-100">Speaking</a
+				> · <a href={withBase('/files/adam-boas-resume.pdf')} class="text-slate-300 hover:text-slate-100">Resume PDF</a>
+			</p>
 		</section>
 	</div>
 
