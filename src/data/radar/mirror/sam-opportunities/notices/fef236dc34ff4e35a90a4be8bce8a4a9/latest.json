@@ -1,0 +1,48 @@
+{
+  "id": "sam-fef236dc34ff4e35a90a4be8bce8a4a9",
+  "title": "Centralized Evaluation System Platform RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fef236dc34ff4e35a90a4be8bce8a4a9",
+  "opportunity_url": "https://sam.gov/opp/fef236dc34ff4e35a90a4be8bce8a4a9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fef236dc34ff4e35a90a4be8bce8a4a9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fef236dc34ff4e35a90a4be8bce8a4a9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "1019266190",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fef236dc34ff4e35a90a4be8bce8a4a9",
+  "detail_text": "The U.S. Department of State (DOS) is conducting market research in accordance with Federal Acquisition Regulation (FAR) Part 10 to identify commercially available solutions capable of supporting a centralized survey and evaluation system across the Department. The Department currently utilizes Qualtrics and seeks information on comparable or alternative solutions available in the marketplace, including the extent to which small businesses can independently provide such capabilities. This RFI is issued for information and planning purposes only and does not constitute a solicitation. Responses will not be considered as proposals or offers. The Government does not intend to award a contract based on this RFI or reimburse any costs associated with the preparation of responses.",
+  "detail_text_length": 785,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9757747d88494d07a260a71c92ea1198/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9757747d88494d07a260a71c92ea1198/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/95e0acd5c4fbd849740e8ac424f62cb942989bf2afe6ae3bd6a4b07815b57dc4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/95e0acd5c4fbd849740e8ac424f62cb942989bf2afe6ae3bd6a4b07815b57dc4.pdf",
+      "file_id": "9757747d88494d07a260a71c92ea1198",
+      "file_name": "Centralized+Evaluation+System+Platform+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 212146,
+      "sha256": "95e0acd5c4fbd849740e8ac424f62cb942989bf2afe6ae3bd6a4b07815b57dc4"
+    }
+  ],
+  "_mirror_hash": "6784dc387bde954e62b673acc68f4f65b18adb8a0eab293c1d86daf5f66d773d",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.265017+00:00"
+}

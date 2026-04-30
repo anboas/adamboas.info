@@ -1,0 +1,57 @@
+{
+  "id": "sam-c1ffef9fa9f84057bbae43497f0a8d57",
+  "title": "Area of Interest (AoI) – Test Track Camera System (CSO-W911KF25SC002)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1ffef9fa9f84057bbae43497f0a8d57",
+  "opportunity_url": "https://sam.gov/opp/c1ffef9fa9f84057bbae43497f0a8d57/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c1ffef9fa9f84057bbae43497f0a8d57/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c1ffef9fa9f84057bbae43497f0a8d57",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W911KF25SC002-AoI0008",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC ANAD",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c1ffef9fa9f84057bbae43497f0a8d57",
+  "detail_text": "This announcement is for a camera system for the ANAD Test Track (AoI) under the ACC-ANAD Commercial Solutions Opening W911KF-25-S-C0001-0008. Interested Parties should review the attachments and the full CSO posting on SAM.gov for submissions and evaluation procedures. ACC-ANAD is not obligated to extend a request for proposal or make an award as a result of this CSO AoI; all awards are subject to the availability of funds and successful negotiations. This CSO AoI is not an authorization to begin performance, and in no way obligates the Government for any costs incurred by the Offeror associated with developing a Response. Prior to commencement of any activities associated with performance under this CSO AoI, the Government will issue a written directive or contractual document signed by the Contracting Officer with appropriate consideration established. ACC-ANAD reserves the right to modify the requirements of this CSO AoI.",
+  "detail_text_length": 939,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/944da0c070264cdd80d913a049e21b12/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cec976bf419f4a45a1e9de767028a1c4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/944da0c070264cdd80d913a049e21b12/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f076928417d45f73930f0152f35da340c25f72e1cc794b57f8cf00e1fb822674.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f076928417d45f73930f0152f35da340c25f72e1cc794b57f8cf00e1fb822674.pdf",
+      "file_id": "944da0c070264cdd80d913a049e21b12",
+      "file_name": "Area+of+Interest+W911KF25CS002-AOI0008.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 142522,
+      "sha256": "f076928417d45f73930f0152f35da340c25f72e1cc794b57f8cf00e1fb822674"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cec976bf419f4a45a1e9de767028a1c4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9082189b722b6f08c124c7711bce92a495f391e80f3243acbe00b5be7e5147c0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9082189b722b6f08c124c7711bce92a495f391e80f3243acbe00b5be7e5147c0.pdf",
+      "file_id": "cec976bf419f4a45a1e9de767028a1c4",
+      "file_name": "CSO-Anniston+Army+Depot+4.15.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 193019,
+      "sha256": "9082189b722b6f08c124c7711bce92a495f391e80f3243acbe00b5be7e5147c0"
+    }
+  ],
+  "_mirror_hash": "56d6317348032f028d2155af8fd8a3874b96f758d4fddc141fe71b6e90380c7d",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.576476+00:00"
+}

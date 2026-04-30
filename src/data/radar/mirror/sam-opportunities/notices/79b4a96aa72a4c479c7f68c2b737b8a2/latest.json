@@ -1,0 +1,45 @@
+{
+  "id": "sam-79b4a96aa72a4c479c7f68c2b737b8a2",
+  "title": "N0038326QH059 (NSN: 1650011435655)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=79b4a96aa72a4c479c7f68c2b737b8a2",
+  "opportunity_url": "https://sam.gov/opp/79b4a96aa72a4c479c7f68c2b737b8a2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/79b4a96aa72a4c479c7f68c2b737b8a2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "79b4a96aa72a4c479c7f68c2b737b8a2",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QH059",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-28",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=79b4a96aa72a4c479c7f68c2b737b8a2",
+  "detail_text": "Case: KU-P-GHY Cage: C59211 NSN: 1650011435655 Nomenclature: VALVE ASSEMBLY,FAIL PN: 287870-1001 RMC: 3C Mark for MAPAC: DKUA00 SUPPAD: DA5GHY 0001AA - PKUAE41340087R - SN: 5671 0001AB - PKUAE43122163R - SN: 525 0001AC - PKUAE43155005R - SN: 563 0001AD - PKUAE43191022R - SN: 5630 0001AE - PKUAE43191023R - SN: 5218",
+  "detail_text_length": 315,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b65fb0bd48c400f961240ce1004aa47/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b65fb0bd48c400f961240ce1004aa47/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e0cd1f40eb2ba33bf78b007eb5252fcfdc2b541c4826047603ea6d07d1a80937.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e0cd1f40eb2ba33bf78b007eb5252fcfdc2b541c4826047603ea6d07d1a80937.pdf",
+      "file_id": "5b65fb0bd48c400f961240ce1004aa47",
+      "file_name": "Solicitation+-+N0038326QH059.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1147262,
+      "sha256": "e0cd1f40eb2ba33bf78b007eb5252fcfdc2b541c4826047603ea6d07d1a80937"
+    }
+  ],
+  "_mirror_hash": "1b0f5f1a9794d2a7c61ae5e7ddbfe83a0e25826c8b94bb021b24dba71cb61e4c",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.328217+00:00"
+}

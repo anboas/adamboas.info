@@ -1,0 +1,57 @@
+{
+  "id": "sam-41977dd3ca1d4a0194bb030827dc9a2b",
+  "title": "Unidirectional Hydrant Flushing and Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=41977dd3ca1d4a0194bb030827dc9a2b",
+  "opportunity_url": "https://sam.gov/opp/41977dd3ca1d4a0194bb030827dc9a2b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/41977dd3ca1d4a0194bb030827dc9a2b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "41977dd3ca1d4a0194bb030827dc9a2b",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PANAPG26P000003345",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG DIR",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=41977dd3ca1d4a0194bb030827dc9a2b",
+  "detail_text": "Updates: 04/28/2026 - Please see the attached site visit information and Performance Work Statement (PWS) for your reference. Note that no questions will be permitted during the site visit. 04/29/2026 - Changed back to correct NAICS code 237110.",
+  "detail_text_length": 245,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c1146dde3bf4a4591244782129842e6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff3c4ad1b34f434a8925da8d5d838e47/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9c1146dde3bf4a4591244782129842e6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/36aa7dd23ca541a57bee06d65ac221c9799d7ff1e686f515589b78e843b95834.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/36aa7dd23ca541a57bee06d65ac221c9799d7ff1e686f515589b78e843b95834.pdf",
+      "file_id": "9c1146dde3bf4a4591244782129842e6",
+      "file_name": "Site+visit+request+form+Undirectional+Flushing+28+April+2026+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 196140,
+      "sha256": "36aa7dd23ca541a57bee06d65ac221c9799d7ff1e686f515589b78e843b95834"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ff3c4ad1b34f434a8925da8d5d838e47/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68cf5c43b6741409f4cdb3eb7164024118b0cf37b7ab8f2d444d993c731e8f5e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68cf5c43b6741409f4cdb3eb7164024118b0cf37b7ab8f2d444d993c731e8f5e.pdf",
+      "file_id": "ff3c4ad1b34f434a8925da8d5d838e47",
+      "file_name": "Performmance+Work+Statement+PWS++Undirectional+Flushing++28+April+2026+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 400526,
+      "sha256": "68cf5c43b6741409f4cdb3eb7164024118b0cf37b7ab8f2d444d993c731e8f5e"
+    }
+  ],
+  "_mirror_hash": "a6a6aede1b54b15882fba94a2f6c9f8b8ac045e3629f5ebefeefcdf1abe0f271",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.500863+00:00"
+}

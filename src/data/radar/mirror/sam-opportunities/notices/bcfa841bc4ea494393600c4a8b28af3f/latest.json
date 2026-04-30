@@ -1,0 +1,59 @@
+{
+  "id": "sam-bcfa841bc4ea494393600c4a8b28af3f",
+  "title": "Request for Information - RnD Borne Disease Agent Surveillance",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bcfa841bc4ea494393600c4a8b28af3f",
+  "opportunity_url": "https://sam.gov/opp/bcfa841bc4ea494393600c4a8b28af3f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bcfa841bc4ea494393600c4a8b28af3f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bcfa841bc4ea494393600c4a8b28af3f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANDHA-26-P-0000-037542",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bcfa841bc4ea494393600c4a8b28af3f",
+  "detail_text": "Please see the attached Request for Information and Draft Performance Work Statement. The official place of performance is intended to be at the contractor's facility (CONUS).",
+  "detail_text_length": 175,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/640bbe493dbc47debb7b7f88198c7b32/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9164833c77ad495393f07cea2e15cd43/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/640bbe493dbc47debb7b7f88198c7b32/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0d032d3b4f12bdddab010a95f844ab8d53f9f5fe7e91609db5b4bcd18eb40694.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0d032d3b4f12bdddab010a95f844ab8d53f9f5fe7e91609db5b4bcd18eb40694.docx",
+      "file_id": "640bbe493dbc47debb7b7f88198c7b32",
+      "file_name": "Draft+PWS.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 124294,
+      "sha256": "0d032d3b4f12bdddab010a95f844ab8d53f9f5fe7e91609db5b4bcd18eb40694"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9164833c77ad495393f07cea2e15cd43/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1448b9df88758ace617403aa855b245245b3a076c4e6767ee1942f804ef074d8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1448b9df88758ace617403aa855b245245b3a076c4e6767ee1942f804ef074d8.pdf",
+      "file_id": "9164833c77ad495393f07cea2e15cd43",
+      "file_name": "Request+for+Information.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 125431,
+      "sha256": "1448b9df88758ace617403aa855b245245b3a076c4e6767ee1942f804ef074d8"
+    }
+  ],
+  "_mirror_hash": "06d3af68f970b2d45578e73539d2d2da900db93d49703a582aaadaf79216c2e9",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.312400+00:00"
+}

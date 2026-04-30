@@ -1,0 +1,46 @@
+{
+  "id": "sam-f77c720804e9467290c50d779e729796",
+  "title": "Swagelok Brand Name Parts",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f77c720804e9467290c50d779e729796",
+  "opportunity_url": "https://sam.gov/opp/f77c720804e9467290c50d779e729796/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f77c720804e9467290c50d779e729796/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f77c720804e9467290c50d779e729796",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANMCC26P0000044989",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-DUGWAY PROV GRD",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f77c720804e9467290c50d779e729796",
+  "detail_text": "Must provide proof of being an authorized Swagelok Brand Name Distrubutor. Must be able to provide all parts on the attached parts list. Email proof of being an authorized distributor to benjamin.l.bass2.civ@army.mil",
+  "detail_text_length": 216,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/741c0e30e3b54761a231487f67ad5343/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/741c0e30e3b54761a231487f67ad5343/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/287ceccc80b3ceb7dfadc3a5cc8e47245b306b960ee1b44aefd4b985785a6e21.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/287ceccc80b3ceb7dfadc3a5cc8e47245b306b960ee1b44aefd4b985785a6e21.xlsx",
+      "file_id": "741c0e30e3b54761a231487f67ad5343",
+      "file_name": "Agency_Commodity_List_for_Benjamin.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30101,
+      "sha256": "287ceccc80b3ceb7dfadc3a5cc8e47245b306b960ee1b44aefd4b985785a6e21"
+    }
+  ],
+  "_mirror_hash": "601217cad70f00e5bd3160fc93ffed75b952180959702c8b638cba1924d2026a",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.407768+00:00"
+}

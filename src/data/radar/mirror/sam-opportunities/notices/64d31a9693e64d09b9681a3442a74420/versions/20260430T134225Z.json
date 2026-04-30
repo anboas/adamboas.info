@@ -1,0 +1,68 @@
+{
+  "id": "sam-64d31a9693e64d09b9681a3442a74420",
+  "title": "766-26-2-400-0703 -Charleston CMOP FEEDING SET, GRAVITY MEDLINE -(VA-26-00058437)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64d31a9693e64d09b9681a3442a74420",
+  "opportunity_url": "https://sam.gov/opp/64d31a9693e64d09b9681a3442a74420/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/64d31a9693e64d09b9681a3442a74420/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "64d31a9693e64d09b9681a3442a74420",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C77026Q0132",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=64d31a9693e64d09b9681a3442a74420",
+  "detail_text": "FEEDING SET, GRAVITY MEDLINE -(VA-26-00058437)",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/177630d1778e4f47aa736bf117c4d669/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac02cf0fce1b459e94cfe97d4aab5814/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd7254691fed4f54bb02c468d55b906b/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/177630d1778e4f47aa736bf117c4d669/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8c14e885496a62e65d4a13f83c2c5924ecf1fda695322658c42430cca7f1d781.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8c14e885496a62e65d4a13f83c2c5924ecf1fda695322658c42430cca7f1d781.xlsx",
+      "file_id": "177630d1778e4f47aa736bf117c4d669",
+      "file_name": "P02+Sources+Sought+Exel+Gravity.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 11570,
+      "sha256": "8c14e885496a62e65d4a13f83c2c5924ecf1fda695322658c42430cca7f1d781"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ac02cf0fce1b459e94cfe97d4aab5814/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e9ec8fb47b38caf9b196787b84f1dcfa95d5842e261e51601d9670e3bf350c39.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e9ec8fb47b38caf9b196787b84f1dcfa95d5842e261e51601d9670e3bf350c39.pdf",
+      "file_id": "ac02cf0fce1b459e94cfe97d4aab5814",
+      "file_name": "P02+Sources+Sought+Final+36C77026Q0132.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 210015,
+      "sha256": "e9ec8fb47b38caf9b196787b84f1dcfa95d5842e261e51601d9670e3bf350c39"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dd7254691fed4f54bb02c468d55b906b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/673a383a226574d90c15534da071c4d0298cd731317e0910272d197e6b364d6e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/673a383a226574d90c15534da071c4d0298cd731317e0910272d197e6b364d6e.docx",
+      "file_id": "dd7254691fed4f54bb02c468d55b906b",
+      "file_name": "P09+SOR+FINAL+Pharmaceuticals+SOR+Supplement.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 40639,
+      "sha256": "673a383a226574d90c15534da071c4d0298cd731317e0910272d197e6b364d6e"
+    }
+  ],
+  "_mirror_hash": "93605ce581774f86039037ec4f3140ad73e49a4ced5deba4034bdd35cb83af27",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.436760+00:00"
+}

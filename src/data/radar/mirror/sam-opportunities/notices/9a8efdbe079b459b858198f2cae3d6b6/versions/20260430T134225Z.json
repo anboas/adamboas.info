@@ -1,0 +1,56 @@
+{
+  "id": "sam-9a8efdbe079b459b858198f2cae3d6b6",
+  "title": "JOINER DOORS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9a8efdbe079b459b858198f2cae3d6b6",
+  "opportunity_url": "https://sam.gov/opp/9a8efdbe079b459b858198f2cae3d6b6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9a8efdbe079b459b858198f2cae3d6b6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9a8efdbe079b459b858198f2cae3d6b6",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0091",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9a8efdbe079b459b858198f2cae3d6b6",
+  "detail_text": "4/30/26 - Amendment 0001 issued to add clause 52.222-90 and extend solicitation due date to Monday 5/4/26 at 12:00PM EDT. See amendment in attachments. NAVSUP Fleet Logistics Center Puget Sound (FLCPS) intends to solicit for various joiner doors. This requirement is sole sourced to OEM Trident Maritime Systems due to the only responsible source able to provide direct replacements in terms of form, fit, and function with existing equipment and configurations compliant with ABS and SOLAS regulations. Interested companies may identify their interest and capability to respond to the requirement, which will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination not to compete this action based upon responses received to this notice is solely within the discretion of the Government. The Government will evaluate the offeror’s price for reasonableness and past performance as part of the responsibility determination in accordance with RFO 12.203. Anticipated Award Date: May 2026 Contracting Officer: Nicole Eygnor, nicole.m.eygnor.civ@us.navy.mil",
+  "detail_text_length": 1111,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86d23d31968a457a810f542f1c379961/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a24dc5a9c45340dab0b6142067a5cd5d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/86d23d31968a457a810f542f1c379961/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f6c12e1c5b20351e11f8f4e6f6de19eac56084c29d51e83f2c1a5413d4937505.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f6c12e1c5b20351e11f8f4e6f6de19eac56084c29d51e83f2c1a5413d4937505.pdf",
+      "file_id": "86d23d31968a457a810f542f1c379961",
+      "file_name": "N0040626Q0091+AMENDMENT+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 587929,
+      "sha256": "f6c12e1c5b20351e11f8f4e6f6de19eac56084c29d51e83f2c1a5413d4937505"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a24dc5a9c45340dab0b6142067a5cd5d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93aea52c701ffca62a9231e41559377c7abdfe6bf01b306bc4f1f7818408dac9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93aea52c701ffca62a9231e41559377c7abdfe6bf01b306bc4f1f7818408dac9.pdf",
+      "file_id": "a24dc5a9c45340dab0b6142067a5cd5d",
+      "file_name": "Solicitation+-+N0040626Q0091.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1861963,
+      "sha256": "93aea52c701ffca62a9231e41559377c7abdfe6bf01b306bc4f1f7818408dac9"
+    }
+  ],
+  "_mirror_hash": "9da5507a16ace135cc5732aadab86f8235fbbfed65514313f3e756f1a88371bd",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.269164+00:00"
+}

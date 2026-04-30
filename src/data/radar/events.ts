@@ -17010,4 +17010,5 @@ export const radarEventsSeed: RadarEvent[] = [
 			}
 		}
 	},
+
 ];

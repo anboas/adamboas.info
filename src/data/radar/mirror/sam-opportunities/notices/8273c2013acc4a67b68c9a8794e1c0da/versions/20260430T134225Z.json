@@ -1,0 +1,57 @@
+{
+  "id": "sam-8273c2013acc4a67b68c9a8794e1c0da",
+  "title": "V--WMATA SmartBenefits",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8273c2013acc4a67b68c9a8794e1c0da",
+  "opportunity_url": "https://sam.gov/opp/8273c2013acc4a67b68c9a8794e1c0da/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8273c2013acc4a67b68c9a8794e1c0da/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8273c2013acc4a67b68c9a8794e1c0da",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "140D0426Q0337",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8273c2013acc4a67b68c9a8794e1c0da",
+  "detail_text": "Notice of Intent Sole Source - Washington Metropolitan Area Transit Authority (WMATA) SmartBenefits",
+  "detail_text_length": 99,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fbb203c1ddc4cc88f5dfd5d0e5a1ccc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8ac1070265614370b50f166fc81b4d37/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fbb203c1ddc4cc88f5dfd5d0e5a1ccc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0738713665052a35ad16d4c32e78e5ddfbb114aee2c5786c7c74eca042f200ba.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0738713665052a35ad16d4c32e78e5ddfbb114aee2c5786c7c74eca042f200ba.pdf",
+      "file_id": "0fbb203c1ddc4cc88f5dfd5d0e5a1ccc",
+      "file_name": "140D0426Q0337_Attachment_Public_Attachment_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 135159,
+      "sha256": "0738713665052a35ad16d4c32e78e5ddfbb114aee2c5786c7c74eca042f200ba"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8ac1070265614370b50f166fc81b4d37/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/885b4c4774d3156ecf98fe5785ce6be3ed212cfc206eebb2700d053a55e24965.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/885b4c4774d3156ecf98fe5785ce6be3ed212cfc206eebb2700d053a55e24965.pdf",
+      "file_id": "8ac1070265614370b50f166fc81b4d37",
+      "file_name": "140D0426Q0337_Attachment_Public_Attachment_Revised_4-30-2026_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 137048,
+      "sha256": "885b4c4774d3156ecf98fe5785ce6be3ed212cfc206eebb2700d053a55e24965"
+    }
+  ],
+  "_mirror_hash": "73d7ae1fcd2df62317556a628333984ceeb7945d3ab222208da9c990dcd804eb",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.488601+00:00"
+}

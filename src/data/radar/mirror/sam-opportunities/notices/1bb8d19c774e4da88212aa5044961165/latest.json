@@ -1,0 +1,48 @@
+{
+  "id": "sam-1bb8d19c774e4da88212aa5044961165",
+  "title": "RFI - FOIA and eDiscovery Management System and Supporting Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1bb8d19c774e4da88212aa5044961165",
+  "opportunity_url": "https://sam.gov/opp/1bb8d19c774e4da88212aa5044961165/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1bb8d19c774e4da88212aa5044961165/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1bb8d19c774e4da88212aa5044961165",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "2032L226N00007",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.DEPARTMENTAL OFFICES",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1bb8d19c774e4da88212aa5044961165",
+  "detail_text": "FOIA and eDiscovery Management Systems and Supporting Services Draft Performance Work Statement TABLE OF CONTENTS 1.0 GENERAL INFORMATION 2.0 SCOPE AND OBJECTIVES 3.0 E-DISCOVERY/FOIA TASK DESCRIPTIONS 4.0 INSPECTION AND ACCEPTANCE 5.0 PERIOD OF PERFORMANCE 6.0 CLIN DETAIL 7.0 PLACE OF PERFORMANCE 8.0 HOURS OF OPERATION 9.0 PERSONNEL STAFFING 10.0 SECURITY 11.0 CONTRACT ADMINISTRATION *See attached PWS for complete requirements.",
+  "detail_text_length": 432,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37405c72ab8543e681fc4b602bb92bbd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/37405c72ab8543e681fc4b602bb92bbd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/de418c9100c80840b132d81f076bffe8d7aa17fa537cf8ccafd91340e1335f5e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/de418c9100c80840b132d81f076bffe8d7aa17fa537cf8ccafd91340e1335f5e.docx",
+      "file_id": "37405c72ab8543e681fc4b602bb92bbd",
+      "file_name": "RFI+Draft+PWS+eDiscovery-FOIA+04+30+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 239013,
+      "sha256": "de418c9100c80840b132d81f076bffe8d7aa17fa537cf8ccafd91340e1335f5e"
+    }
+  ],
+  "_mirror_hash": "ac38f762474fd592187bd8a7d665e08bcc48aa711606049e2d6a8de9c80c0494",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.304976+00:00"
+}

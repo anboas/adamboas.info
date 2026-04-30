@@ -1,0 +1,57 @@
+{
+  "id": "sam-d2c68c60fe714a6db722b58c727cbf91",
+  "title": "Notice of Intent Sinclair Miniature Swine",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d2c68c60fe714a6db722b58c727cbf91",
+  "opportunity_url": "https://sam.gov/opp/d2c68c60fe714a6db722b58c727cbf91/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d2c68c60fe714a6db722b58c727cbf91/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d2c68c60fe714a6db722b58c727cbf91",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d2c68c60fe714a6db722b58c727cbf91",
+  "detail_text": "See attached Documents",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2035cd757a54f5f92ac0ac4b6f836ba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1df4e5522314973ade57851ffcf9fc2/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a2035cd757a54f5f92ac0ac4b6f836ba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd7c04bd2538a2ff57c58442372a79edd4b177f0692700d5efb272ab32363b8c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd7c04bd2538a2ff57c58442372a79edd4b177f0692700d5efb272ab32363b8c.pdf",
+      "file_id": "a2035cd757a54f5f92ac0ac4b6f836ba",
+      "file_name": "Sinclair+JA++Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 157526,
+      "sha256": "cd7c04bd2538a2ff57c58442372a79edd4b177f0692700d5efb272ab32363b8c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1df4e5522314973ade57851ffcf9fc2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b64b3694122ad90e20fb42510766e15d51fdcb8d47fa0621047e86a9a4dcb92.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b64b3694122ad90e20fb42510766e15d51fdcb8d47fa0621047e86a9a4dcb92.docx",
+      "file_id": "b1df4e5522314973ade57851ffcf9fc2",
+      "file_name": "B01+-+NOI_Sinclair.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15700,
+      "sha256": "8b64b3694122ad90e20fb42510766e15d51fdcb8d47fa0621047e86a9a4dcb92"
+    }
+  ],
+  "_mirror_hash": "48f1b0eb6886f8b97726b6d851f447fc4661bc2c210bbd280c6a7125e475e22f",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.495061+00:00"
+}

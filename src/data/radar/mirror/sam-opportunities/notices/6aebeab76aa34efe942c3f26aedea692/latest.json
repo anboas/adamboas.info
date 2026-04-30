@@ -1,0 +1,47 @@
+{
+  "id": "sam-6aebeab76aa34efe942c3f26aedea692",
+  "title": "Special Notice of Sole Source Procurement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6aebeab76aa34efe942c3f26aedea692",
+  "opportunity_url": "https://sam.gov/opp/6aebeab76aa34efe942c3f26aedea692/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6aebeab76aa34efe942c3f26aedea692/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6aebeab76aa34efe942c3f26aedea692",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6aebeab76aa34efe942c3f26aedea692",
+  "detail_text": "The Fleet Logistics Center Norfolk, Contracting Department Groton office, Groton, CT intends to award a Sole Source Purchase Order to Southwestern Industries for TRAK Knee Mill Computer Upgrade. This purchase will be procured using Simplified Acquisition Procedures, FAR Part 13 and Other Than Full and Open Competition as authorized under FAR 6.302-1. The anticipated award date is 01 May 2026. This notice is not a request for proposals or quotations. However, any challenges to this sole source must be received in writing and sent to sarah.p.schultz.civ@us.navy.mil to be considered by the Government for the purpose of determining whether or not to compete this requirement. Challenges must include information sufficient to enable the Government to make a determination that an equivalent supply/service exists that would meet the Government’s needs as stated herein. A determination not to compete this procurement based on response to this notice is solely within the discretion of the government.",
+  "detail_text_length": 1005,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/736d8697f16f4963903a14f08ea4a136/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/736d8697f16f4963903a14f08ea4a136/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9beca17c0492b4ae99b4051029cefe64718d086ba32b51802b04da76ac8dbebe.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9beca17c0492b4ae99b4051029cefe64718d086ba32b51802b04da76ac8dbebe.pdf",
+      "file_id": "736d8697f16f4963903a14f08ea4a136",
+      "file_name": "SSJ+TRAK+Knee+mill+screen_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 281215,
+      "sha256": "9beca17c0492b4ae99b4051029cefe64718d086ba32b51802b04da76ac8dbebe"
+    }
+  ],
+  "_mirror_hash": "e15a0c50c5df948043e94d8c6779caf3cd9f4641e6ea7b25f0774e386117a035",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.235721+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-451ca663bbac4680b140b79c8ce2516c",
+  "title": "Yokohama, Japan S&RTS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=451ca663bbac4680b140b79c8ce2516c",
+  "opportunity_url": "https://sam.gov/opp/451ca663bbac4680b140b79c8ce2516c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/451ca663bbac4680b140b79c8ce2516c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "451ca663bbac4680b140b79c8ce2516c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "TRANSCOM26R008",
+  "agency_path": "DEPT OF DEFENSE.US TRANSPORTATION COMMAND (USTRANSCOM).USTRANSCOM-AQ",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=451ca663bbac4680b140b79c8ce2516c",
+  "detail_text": "1. The sources sought is for informational purposes only in conducting market research. USTRANSCOM Acquisition Directorate anticipates issuance of a solicitation for Stevedoring and Related Terminal Services (S&RTS) in Yokohama, Japan. The Government anticipates issuing an Indefinite-Delivery Indefinite-Quantity (IDIQ) contract with a base period of performance of 01 April 2027 through 31 March 2032, with an optional six-month extension. . Refer to the attached RFI - TRANSCOM26R008 for additional information. 2. The Government does not intend to award a contract on the basis of this sources sought or reimburse any costs associated with the preparation of responses. This sources sought is issued solely for information and planning purposes and does not constitute a solicitation. 3. If interested, please review the attached RFI - TRANSCOM26R008 and the three (3) attachments. Complete the attached information sheet (Attachment 1) and survey (Attachment 2). Submissions must be returned no later than 6:00 A.M. (CDT) on 25 May 2026. Responses must be submitted via email to: Cassandra Range, Contracting Officer, email: cassandra.a.range.civ@mail.mil, and Connor Breyer, Contract Specialist, email: connor.n.breyer.civ@mail.mil.",
+  "detail_text_length": 1238,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4dcda7355b0d496fa4dbdfc147cb19db/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f9bf9468122499eb5efb1dc5b89f524/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f33ae36016a84d42bf2493106f49722f/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4dcda7355b0d496fa4dbdfc147cb19db/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7f5373f2d618c04eaae8ecf272efa29ee3ca5ce96e857d16012428adadc7880c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7f5373f2d618c04eaae8ecf272efa29ee3ca5ce96e857d16012428adadc7880c.docx",
+      "file_id": "4dcda7355b0d496fa4dbdfc147cb19db",
+      "file_name": "RFI_Attch+2_Survey_TRANSCOM26R008.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29086,
+      "sha256": "7f5373f2d618c04eaae8ecf272efa29ee3ca5ce96e857d16012428adadc7880c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4f9bf9468122499eb5efb1dc5b89f524/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d07f2e1e730f6b986124ff9e88844cef171ff8f5bf7cef590674c676bbe721cb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d07f2e1e730f6b986124ff9e88844cef171ff8f5bf7cef590674c676bbe721cb.pdf",
+      "file_id": "4f9bf9468122499eb5efb1dc5b89f524",
+      "file_name": "Request+for+Information+-RFI-+Yokohama.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 341300,
+      "sha256": "d07f2e1e730f6b986124ff9e88844cef171ff8f5bf7cef590674c676bbe721cb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f33ae36016a84d42bf2493106f49722f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/47a24b12310538e24de6b630699ec37785e4df6fa6fad8ae90ed2b98176676b2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/47a24b12310538e24de6b630699ec37785e4df6fa6fad8ae90ed2b98176676b2.docx",
+      "file_id": "f33ae36016a84d42bf2493106f49722f",
+      "file_name": "RFI_Attch+1_Information+Sheet_TRANSCOM26R008.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27455,
+      "sha256": "47a24b12310538e24de6b630699ec37785e4df6fa6fad8ae90ed2b98176676b2"
+    }
+  ],
+  "_mirror_hash": "5cb970c19f2b4e28cdfbba2a46d2485950a77d6a42da2aa1a0270b5f4346142b",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.573030+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-a1e703b679724649a94c02c80e750fb6",
+  "title": "Pest Control Management Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1e703b679724649a94c02c80e750fb6",
+  "opportunity_url": "https://sam.gov/opp/a1e703b679724649a94c02c80e750fb6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a1e703b679724649a94c02c80e750fb6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a1e703b679724649a94c02c80e750fb6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PestControl_PR20154627",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.BORDER ENFORCEMENT CONTRACTING DIVISION",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1e703b679724649a94c02c80e750fb6",
+  "detail_text": "The U.S. Customs and Border Protection (CBP), U.S. Border Patrol Headquarters (USBP) is conducting market research into industry’s ability to provide CBP with commercial Pest Control Management Services. This is a Request for Information (RFI) released pursuant to the Revolutionary FAR Overhaul, Part 10 – Market Research. The purpose of this RFI is to obtain market information on viable sources, industry practices, answers to specific questions, and industry comments. All RFI submissions become Government property and will not be returned. It is the intent of CBP to establish a 12-months base contract plus up to 4 option years, for an environmentally sound and effective Pest Control Management service to inspect, treat and prevent general arthropod, vertebrate pests, and disease vectors from adversely affecting San Diego Sector installation operations. SEE ATTACHED STATEMENT OF WORK (SOW) FOR COMPLETE SERVICE DETAILS. ATTACHMENTS: 1. SOW 2. RFI",
+  "detail_text_length": 958,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50532111c6954c48a32bf71aa151c528/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f173f42bab0e41a7be75568ecf95e48d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50532111c6954c48a32bf71aa151c528/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/23138a92b8154fe49f0f84546fcb7ba904d53a5a2cccb97e3161d8de8b322797.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/23138a92b8154fe49f0f84546fcb7ba904d53a5a2cccb97e3161d8de8b322797.pdf",
+      "file_id": "50532111c6954c48a32bf71aa151c528",
+      "file_name": "REQUEST+FOR+INFORMATION_Pest+Control.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 139385,
+      "sha256": "23138a92b8154fe49f0f84546fcb7ba904d53a5a2cccb97e3161d8de8b322797"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f173f42bab0e41a7be75568ecf95e48d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2b41fd03a2b0bf37a923af0cf28faebc5e838545f52034e37901bb4ee3fed677.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2b41fd03a2b0bf37a923af0cf28faebc5e838545f52034e37901bb4ee3fed677.pdf",
+      "file_id": "f173f42bab0e41a7be75568ecf95e48d",
+      "file_name": "SOW_PestControl.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 187410,
+      "sha256": "2b41fd03a2b0bf37a923af0cf28faebc5e838545f52034e37901bb4ee3fed677"
+    }
+  ],
+  "_mirror_hash": "2984d6bc60ddebab8d68e4902d9b45befeecb106e374fa2b2d749fe727b56e43",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.496031+00:00"
+}

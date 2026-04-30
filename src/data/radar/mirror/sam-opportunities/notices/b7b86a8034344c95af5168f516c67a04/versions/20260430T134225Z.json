@@ -1,0 +1,57 @@
+{
+  "id": "sam-b7b86a8034344c95af5168f516c67a04",
+  "title": "Performance Based Logistics (PBL) for Secondary and Ground-Based Auxiliary Power Systems",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b7b86a8034344c95af5168f516c67a04",
+  "opportunity_url": "https://sam.gov/opp/b7b86a8034344c95af5168f516c67a04/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b7b86a8034344c95af5168f516c67a04/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b7b86a8034344c95af5168f516c67a04",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRHA1-26-R-SPARC",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OGDEN.DLA  AVIATION AT OGDEN, UT",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-31",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b7b86a8034344c95af5168f516c67a04",
+  "detail_text": "Download \"SPARC SS\" file in Attachment/Links section for description of this Sources Sought notice.",
+  "detail_text_length": 99,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b0062f196d04693a5e4dc7cecec303e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad289b0f74094ed0919b6c8a254400af/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b0062f196d04693a5e4dc7cecec303e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/54a56418e1415e0037ad7f7cd3d3c34406bfdb6c6106a50c08c1b02000283519.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/54a56418e1415e0037ad7f7cd3d3c34406bfdb6c6106a50c08c1b02000283519.pdf",
+      "file_id": "1b0062f196d04693a5e4dc7cecec303e",
+      "file_name": "SPARC+SS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67234,
+      "sha256": "54a56418e1415e0037ad7f7cd3d3c34406bfdb6c6106a50c08c1b02000283519"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad289b0f74094ed0919b6c8a254400af/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/784ce97d8a26afa61e2d3375d0c6664a597e9f9b0218991fed2a387ad9212205.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/784ce97d8a26afa61e2d3375d0c6664a597e9f9b0218991fed2a387ad9212205.xlsx",
+      "file_id": "ad289b0f74094ed0919b6c8a254400af",
+      "file_name": "SPARC+NSN+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 384961,
+      "sha256": "784ce97d8a26afa61e2d3375d0c6664a597e9f9b0218991fed2a387ad9212205"
+    }
+  ],
+  "_mirror_hash": "9cc4a6ebae84e1f45cf54fd289add93d7e73e29a6b975fdf4488c6b76b490f9c",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.588354+00:00"
+}

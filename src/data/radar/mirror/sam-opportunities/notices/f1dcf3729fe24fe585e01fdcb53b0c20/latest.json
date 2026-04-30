@@ -1,0 +1,58 @@
+{
+  "id": "sam-f1dcf3729fe24fe585e01fdcb53b0c20",
+  "title": "Sources Sought for One (1) Helium Leak Checker and Associated Parts.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f1dcf3729fe24fe585e01fdcb53b0c20",
+  "opportunity_url": "https://sam.gov/opp/f1dcf3729fe24fe585e01fdcb53b0c20/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f1dcf3729fe24fe585e01fdcb53b0c20/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f1dcf3729fe24fe585e01fdcb53b0c20",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W911QX-26-Q-A070",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG ADELPHI",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f1dcf3729fe24fe585e01fdcb53b0c20",
+  "detail_text": "See attached: 1. Sources Sought document 2. Slient Characteristics document (Redacted)",
+  "detail_text_length": 86,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e46aa7b791f4231a20f7e1d4a0e3ee7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e302b875b74843c4824e4f34f20e5cf1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e46aa7b791f4231a20f7e1d4a0e3ee7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5ee94072016642dd94df435bf23de78f9aa0c3977e563aa7739c121255044ed3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5ee94072016642dd94df435bf23de78f9aa0c3977e563aa7739c121255044ed3.docx",
+      "file_id": "9e46aa7b791f4231a20f7e1d4a0e3ee7",
+      "file_name": "Salient+Characteristics+-Redacted-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19754,
+      "sha256": "5ee94072016642dd94df435bf23de78f9aa0c3977e563aa7739c121255044ed3"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e302b875b74843c4824e4f34f20e5cf1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1ef480ec477b69c8e73866639d4960948b56b4136986b199ec4de9e4db99c7a2.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1ef480ec477b69c8e73866639d4960948b56b4136986b199ec4de9e4db99c7a2.doc",
+      "file_id": "e302b875b74843c4824e4f34f20e5cf1",
+      "file_name": "Sources+Sought.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 89088,
+      "sha256": "1ef480ec477b69c8e73866639d4960948b56b4136986b199ec4de9e4db99c7a2"
+    }
+  ],
+  "_mirror_hash": "04cb98c0e07e22be5e8bda121ef9294a3c0266ecddac32f161d6656cf2952c42",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.278110+00:00"
+}

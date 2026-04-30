@@ -1,0 +1,57 @@
+{
+  "id": "sam-551609ccf9ff4fcdad8f49a2c8a5c4b2",
+  "title": "Pave and Modify Loop and Parking Phase 2 Construction",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=551609ccf9ff4fcdad8f49a2c8a5c4b2",
+  "opportunity_url": "https://sam.gov/opp/551609ccf9ff4fcdad8f49a2c8a5c4b2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/551609ccf9ff4fcdad8f49a2c8a5c4b2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "551609ccf9ff4fcdad8f49a2c8a5c4b2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.244-NETWORK CONTRACT OFFICE 4 (36C244)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=551609ccf9ff4fcdad8f49a2c8a5c4b2",
+  "detail_text": "This oppurtuntiy is only for the Lebanon-Altoona MATOC holders. Please see attached document for drawings and specifications for Pave and Modify Loop and Parking Phase 2 Construction.",
+  "detail_text_length": 183,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b8432c65e6f4e15aa0451d961fe4178/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc36b9aa7c3842349e604009e52dee47/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b8432c65e6f4e15aa0451d961fe4178/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1402939160221434a282d98e09d853cd0f97ba0fc31a4b9f12d09f233829884d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1402939160221434a282d98e09d853cd0f97ba0fc31a4b9f12d09f233829884d.pdf",
+      "file_id": "1b8432c65e6f4e15aa0451d961fe4178",
+      "file_name": "595-23-602+Bid+Plans.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 76781929,
+      "sha256": "1402939160221434a282d98e09d853cd0f97ba0fc31a4b9f12d09f233829884d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc36b9aa7c3842349e604009e52dee47/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7a702e860a2cb044e7460dc87696aa0c3f7eadc3dd09305254f2eda995f29807.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7a702e860a2cb044e7460dc87696aa0c3f7eadc3dd09305254f2eda995f29807.pdf",
+      "file_id": "bc36b9aa7c3842349e604009e52dee47",
+      "file_name": "595-23-602+Bid+Specifications.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 4544157,
+      "sha256": "7a702e860a2cb044e7460dc87696aa0c3f7eadc3dd09305254f2eda995f29807"
+    }
+  ],
+  "_mirror_hash": "95d591f9b4f7c9759dcb659f3296adbd3a81bbf89728bad6b09b76f6c12328ab",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.590728+00:00"
+}

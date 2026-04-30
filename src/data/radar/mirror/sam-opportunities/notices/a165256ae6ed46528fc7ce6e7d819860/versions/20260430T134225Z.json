@@ -1,0 +1,47 @@
+{
+  "id": "sam-a165256ae6ed46528fc7ce6e7d819860",
+  "title": "Sources Sought Notice for OS5_26_3 Nez Perce, ID.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a165256ae6ed46528fc7ce6e7d819860",
+  "opportunity_url": "https://sam.gov/opp/a165256ae6ed46528fc7ce6e7d819860/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a165256ae6ed46528fc7ce6e7d819860/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a165256ae6ed46528fc7ce6e7d819860",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140D0426Q0365",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Solicitation notice type: Solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a165256ae6ed46528fc7ce6e7d819860",
+  "detail_text": "The subject will be appraised as a vacant parcel on the Nez Perce Reservation in Idaho. It is a Native Allotment held in trust status by the United States of America for the landowners as per the BIA Title Status Report.",
+  "detail_text_length": 220,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/21e83b7a7e0644a78e16dc54bbb084a6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/21e83b7a7e0644a78e16dc54bbb084a6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/089daf46c71d6cb63c9d7999049bff0157b0e7ba8c96ec7341a322c6c327a3f0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/089daf46c71d6cb63c9d7999049bff0157b0e7ba8c96ec7341a322c6c327a3f0.pdf",
+      "file_id": "21e83b7a7e0644a78e16dc54bbb084a6",
+      "file_name": "Sol_140D0426Q0365.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1106043,
+      "sha256": "089daf46c71d6cb63c9d7999049bff0157b0e7ba8c96ec7341a322c6c327a3f0"
+    }
+  ],
+  "_mirror_hash": "cde093f5eee494f763d7f145657051695c7ec1e3350650cf7ad33da46e6a0006",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.342000+00:00"
+}

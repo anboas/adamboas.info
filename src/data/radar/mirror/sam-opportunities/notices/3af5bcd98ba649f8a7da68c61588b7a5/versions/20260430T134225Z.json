@@ -1,0 +1,45 @@
+{
+  "id": "sam-3af5bcd98ba649f8a7da68c61588b7a5",
+  "title": "UNIVERSAL PRINTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3af5bcd98ba649f8a7da68c61588b7a5",
+  "opportunity_url": "https://sam.gov/opp/3af5bcd98ba649f8a7da68c61588b7a5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3af5bcd98ba649f8a7da68c61588b7a5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3af5bcd98ba649f8a7da68c61588b7a5",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426RXB08",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-09-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3af5bcd98ba649f8a7da68c61588b7a5",
+  "detail_text": "UNIVERSAL PRINTER",
+  "detail_text_length": 17,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e95f24b48b8f4ab99c1fcdaced3e5d56/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e95f24b48b8f4ab99c1fcdaced3e5d56/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ba5eb7ea7d21bb3e7e99c4bb71095835f9e869ffe508cd688fc726bf3b9bae58.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ba5eb7ea7d21bb3e7e99c4bb71095835f9e869ffe508cd688fc726bf3b9bae58.pdf",
+      "file_id": "e95f24b48b8f4ab99c1fcdaced3e5d56",
+      "file_name": "SOL+N0010426RXB08.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 816114,
+      "sha256": "ba5eb7ea7d21bb3e7e99c4bb71095835f9e869ffe508cd688fc726bf3b9bae58"
+    }
+  ],
+  "_mirror_hash": "439c8557816646e0c8fe572715f9d9a000381034f015de95fad304bf3b6ed8bd",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.338306+00:00"
+}

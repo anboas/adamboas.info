@@ -1,0 +1,57 @@
+{
+  "id": "sam-121d0418fda54a9bad72edfd68425ac8",
+  "title": "C1DA--589-26-133, Replace  Roofs for Building 1, Phase 1 l KCVA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=121d0418fda54a9bad72edfd68425ac8",
+  "opportunity_url": "https://sam.gov/opp/121d0418fda54a9bad72edfd68425ac8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/121d0418fda54a9bad72edfd68425ac8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "121d0418fda54a9bad72edfd68425ac8",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C25526R0116",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=121d0418fda54a9bad72edfd68425ac8",
+  "detail_text": "Presolicitation Notice PRESOLICITATION NOTICE MODIFICATION Request for Architectural and Engineer (A/E) 330 submission Solicitation: Replace Roofs of Bldg 1, Project No. 589-26-133 The purpose of this modification is: Increase page limitation of SF330s. 65 pages are allowed. Title pages and tables of contents, if applicable, are excluded from the page count limitation Extend SF330 submission due date until 5/20/26 at 2:00pm CT. Clarify project title is Replace Roofs of Bldg 1.",
+  "detail_text_length": 481,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24ad812482884e5c96616abcc79d0fe4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f1001f6a8914348a40d30b87d78f6f9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24ad812482884e5c96616abcc79d0fe4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/386ba2ac859c97bf90a97c86d64302da4ffea5971e71e5fee8e972a996a00319.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/386ba2ac859c97bf90a97c86d64302da4ffea5971e71e5fee8e972a996a00319.docx",
+      "file_id": "24ad812482884e5c96616abcc79d0fe4",
+      "file_name": "36C25526R0116.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31249,
+      "sha256": "386ba2ac859c97bf90a97c86d64302da4ffea5971e71e5fee8e972a996a00319"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f1001f6a8914348a40d30b87d78f6f9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c25ac8c03f49acccaf1a84692ea38978e47877bed458613c682b1ce452991f2b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c25ac8c03f49acccaf1a84692ea38978e47877bed458613c682b1ce452991f2b.docx",
+      "file_id": "2f1001f6a8914348a40d30b87d78f6f9",
+      "file_name": "36C25526R0116_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18505,
+      "sha256": "c25ac8c03f49acccaf1a84692ea38978e47877bed458613c682b1ce452991f2b"
+    }
+  ],
+  "_mirror_hash": "ff2a49b88fd3638687390d68cf0a29882be37cb8620f0092394ba5a1e0e72375",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.569502+00:00"
+}

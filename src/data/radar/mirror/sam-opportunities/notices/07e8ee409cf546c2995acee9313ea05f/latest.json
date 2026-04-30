@@ -1,0 +1,57 @@
+{
+  "id": "sam-07e8ee409cf546c2995acee9313ea05f",
+  "title": "G099--San Francisco Low Demand Safe Haven Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=07e8ee409cf546c2995acee9313ea05f",
+  "opportunity_url": "https://sam.gov/opp/07e8ee409cf546c2995acee9313ea05f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/07e8ee409cf546c2995acee9313ea05f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "07e8ee409cf546c2995acee9313ea05f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26126Q0666",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=07e8ee409cf546c2995acee9313ea05f",
+  "detail_text": "Sources Sought Synopsis The purpose of this Sources Sought Synopsis is to assist in our decision-making process for a service procurement. This is not a solicitation, nor a request for quotes or proposals. Responses to this sources sought synopsis will be used by the Government to make appropriate acquisition decisions. The Government is not obligated to nor will it pay for or reimburse any costs associated with responding to this sources sought synopsis request. This notice shall not be construed as a commitment by the Government to issue a solicitation or ultimately award of a contract, nor does it restrict the Government to a particular acquisition approach. The Department of Veterans Affairs, Network Contracting Office (NCO) 21, is conducting market research to identify potential vendors with economic status of Service-Disabled Veteran-Owned, Veteran-Owned, and other Small Businesses that can provide the general requirements below. GENERAL REQUIREMENTS Contractor will provide low demand safe haven emergency residential services for beneficiaries of San Francsico VA Health Care System. Health Care for Homeless Veterans (HCHV) Low Demand Safe Haven (LDSH) programs are 24-hour staffed short-term residences with private or semi-private accommodations that target the population of hard-to-reach, chronically homeless Veterans with mental illness, with substance use disorder (SUD), and/or when traditional residential treatment programs do not meet a Veteran s needs. The low-demand or non-intrusive environment is designed to establish trust and motivate homeless Veterans to seek needed treatment services and transitional and permanent housing options. Lengths of stay in LDSH programs typically range between 4 to 6 months with the option to extend based on clinical need. Place of Performance: San Francisco, CA Period of Performance: The intended period of performance will be for five years, which may approximately begin around March 1, 2027. RESPONSE METHOD Please complete the attached 36C26126Q0666 sources sought notice and send to Emily.Trinh@va.gov by May 26, 2026 12:00 PM PST.",
+  "detail_text_length": 2112,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d030fbc83964226bf346cdeaaf0da3a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f7056b60b4c6448fa007e812c8957b78/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4d030fbc83964226bf346cdeaaf0da3a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8f0f5199d315195fcd36adadc66b26d4820b034473c84d5bd4243ad7d0d65d6a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8f0f5199d315195fcd36adadc66b26d4820b034473c84d5bd4243ad7d0d65d6a.pdf",
+      "file_id": "4d030fbc83964226bf346cdeaaf0da3a",
+      "file_name": "DRAFT+Performance+Work+Statement+-+LDSH.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 806182,
+      "sha256": "8f0f5199d315195fcd36adadc66b26d4820b034473c84d5bd4243ad7d0d65d6a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f7056b60b4c6448fa007e812c8957b78/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e1dc0bd5d8dcfb6e58dad343d2c5da350ba24740526136dfa725560cb0f48a13.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e1dc0bd5d8dcfb6e58dad343d2c5da350ba24740526136dfa725560cb0f48a13.docx",
+      "file_id": "f7056b60b4c6448fa007e812c8957b78",
+      "file_name": "36C26126Q0666.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28784,
+      "sha256": "e1dc0bd5d8dcfb6e58dad343d2c5da350ba24740526136dfa725560cb0f48a13"
+    }
+  ],
+  "_mirror_hash": "40d3aa0b8989b3ee16ec8c544f99648c8e0da1f888e52c4b05d5cd0a0e9e7d51",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.574904+00:00"
+}

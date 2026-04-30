@@ -1,0 +1,46 @@
+{
+  "id": "sam-fdbea6a731ad43729f18470186da8624",
+  "title": "Q301--STAT and Back Up Lab Referral Testing",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdbea6a731ad43729f18470186da8624",
+  "opportunity_url": "https://sam.gov/opp/fdbea6a731ad43729f18470186da8624/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fdbea6a731ad43729f18470186da8624/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fdbea6a731ad43729f18470186da8624",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C25926Q0452",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 19 (36C259)",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fdbea6a731ad43729f18470186da8624",
+  "detail_text": "NOTICE OF INTENT TO SOLE SOURCE Please respond by the date listed in the attached document.",
+  "detail_text_length": 91,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53cf44ea96de44fdac1bf9349fdb17a3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/53cf44ea96de44fdac1bf9349fdb17a3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5acab8f3f6c1803e3b02819f7273b5e0b23b8c46fc131ad4452811eb6c1b4391.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5acab8f3f6c1803e3b02819f7273b5e0b23b8c46fc131ad4452811eb6c1b4391.docx",
+      "file_id": "53cf44ea96de44fdac1bf9349fdb17a3",
+      "file_name": "36C25926Q0452.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 30795,
+      "sha256": "5acab8f3f6c1803e3b02819f7273b5e0b23b8c46fc131ad4452811eb6c1b4391"
+    }
+  ],
+  "_mirror_hash": "c6af9ea1eb7a293294894ba123eb051090c09a8a4f88286d7a64c86c7501c8c0",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.368335+00:00"
+}

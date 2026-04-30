@@ -1,0 +1,46 @@
+{
+  "id": "sam-e64f251998c64d4baa2e7c2f3217600d",
+  "title": "Spokane VA Asbestos Inspection/Abatement Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e64f251998c64d4baa2e7c2f3217600d",
+  "opportunity_url": "https://sam.gov/opp/e64f251998c64d4baa2e7c2f3217600d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e64f251998c64d4baa2e7c2f3217600d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e64f251998c64d4baa2e7c2f3217600d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C260-26-AP-3112",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.260-NETWORK CONTRACT OFFICE 20 (36C260)",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e64f251998c64d4baa2e7c2f3217600d",
+  "detail_text": "Spokane VAMC requires Asbestos Management Services, to include semi annual surveillance and triennial reinspections of asbestos containing materials, independent oversight of asbestos abatement projects, and pre-construction asbestos surveys for renovation and small scale projects.",
+  "detail_text_length": 282,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fa188d0a8b944c06a5cdde28a43b4399/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fa188d0a8b944c06a5cdde28a43b4399/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4723f0d0f30acd28d92866110376bd08ed272ce7dce480f1c8055f10633baf04.doc",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4723f0d0f30acd28d92866110376bd08ed272ce7dce480f1c8055f10633baf04.doc",
+      "file_id": "fa188d0a8b944c06a5cdde28a43b4399",
+      "file_name": "Statement+of+Work.doc",
+      "content_type": "application/octet-stream",
+      "size_bytes": 69120,
+      "sha256": "4723f0d0f30acd28d92866110376bd08ed272ce7dce480f1c8055f10633baf04"
+    }
+  ],
+  "_mirror_hash": "6c55a3186ee80f40dfd0a572e35185bee2376c3b9c0113467844f4f9dd5d07d4",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.497066+00:00"
+}

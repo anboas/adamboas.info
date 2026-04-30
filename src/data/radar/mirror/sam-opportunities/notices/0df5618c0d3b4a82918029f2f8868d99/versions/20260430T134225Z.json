@@ -1,0 +1,46 @@
+{
+  "id": "sam-0df5618c0d3b4a82918029f2f8868d99",
+  "title": "DUCT,COMPRESSOR,AIR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0df5618c0d3b4a82918029f2f8868d99",
+  "opportunity_url": "https://sam.gov/opp/0df5618c0d3b4a82918029f2f8868d99/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0df5618c0d3b4a82918029f2f8868d99/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0df5618c0d3b4a82918029f2f8868d99",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPRTA126Q0094",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION OKLAHOMA CITY.DLA AVIATION AT OKLAHOMA CITY, OK",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-04-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0df5618c0d3b4a82918029f2f8868d99",
+  "detail_text": "No synopsis is required for this solicitation. See attached memo.",
+  "detail_text_length": 65,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3f5e6411b2c44a7b16c733379f3d2ca/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3f5e6411b2c44a7b16c733379f3d2ca/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5f214ba5d39825caf4b131456be9fe48f8fa7e49c80cf898c0975de7e26baa9a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5f214ba5d39825caf4b131456be9fe48f8fa7e49c80cf898c0975de7e26baa9a.pdf",
+      "file_id": "c3f5e6411b2c44a7b16c733379f3d2ca",
+      "file_name": "25-00825+No+Synopsis+Memo.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 149875,
+      "sha256": "5f214ba5d39825caf4b131456be9fe48f8fa7e49c80cf898c0975de7e26baa9a"
+    }
+  ],
+  "_mirror_hash": "bb00f7e0bbeca4ec7bd29b919dd8d4f9455ee7a9c2d386cd8c13774b0c4f180e",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.361254+00:00"
+}

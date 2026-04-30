@@ -1,0 +1,70 @@
+{
+  "id": "sam-434ad64943e046e4a9673f03ed5d8d42",
+  "title": "DK10--NEW: RFI - VISN 23 Consolidated Document Control  (VA-27-00000616)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=434ad64943e046e4a9673f03ed5d8d42",
+  "opportunity_url": "https://sam.gov/opp/434ad64943e046e4a9673f03ed5d8d42/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/434ad64943e046e4a9673f03ed5d8d42/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "434ad64943e046e4a9673f03ed5d8d42",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10B26Q0340",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=434ad64943e046e4a9673f03ed5d8d42",
+  "detail_text": "The Department of Veterans Affairs is conducting market research to identify capable vendors who can provide MediaLab Federal Document Control System Brand Name or Equal SaaS Solution. This is a Request for Information (RFI) for planning purposes only and does not constitute a solicitation. Responses will be used to inform the Government s acquisition strategy. Please refer to the attached Request for Information documents.",
+  "detail_text_length": 427,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35c1732d8054498697720589923db3a3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62462f18ca68420f8238f49a72d7052c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf6a7429c4a04f3db2e6fd32f7ed6081/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35c1732d8054498697720589923db3a3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9046535b55e9461fd1819c5beb85d433f2943c2d6c8bf0b1ac8567098f1ca297.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9046535b55e9461fd1819c5beb85d433f2943c2d6c8bf0b1ac8567098f1ca297.docx",
+      "file_id": "35c1732d8054498697720589923db3a3",
+      "file_name": "36C10B26Q0340.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23652,
+      "sha256": "9046535b55e9461fd1819c5beb85d433f2943c2d6c8bf0b1ac8567098f1ca297"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/62462f18ca68420f8238f49a72d7052c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa0793e650d2f616ee973641e8eca3a063e44461fd9a5214af4ef177567891a8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa0793e650d2f616ee973641e8eca3a063e44461fd9a5214af4ef177567891a8.pdf",
+      "file_id": "62462f18ca68420f8238f49a72d7052c",
+      "file_name": "RFI+Coversheet+-+VISN+23+Consol+Doc+Ctrl+v.2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 256945,
+      "sha256": "fa0793e650d2f616ee973641e8eca3a063e44461fd9a5214af4ef177567891a8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf6a7429c4a04f3db2e6fd32f7ed6081/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cbb6ef99f012c0a1cedbb80a51c38b7b199cbf8c73c15e9897ec33efbc756f58.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cbb6ef99f012c0a1cedbb80a51c38b7b199cbf8c73c15e9897ec33efbc756f58.pdf",
+      "file_id": "cf6a7429c4a04f3db2e6fd32f7ed6081",
+      "file_name": "Draft+PD+V23+Consol+Doc+Ctrl_MediaLab+Federal_4-29-26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 465404,
+      "sha256": "cbb6ef99f012c0a1cedbb80a51c38b7b199cbf8c73c15e9897ec33efbc756f58"
+    }
+  ],
+  "_mirror_hash": "4f092268030467ab27f34a99304d74262d81b4e2a25859f09dd5ff8ebf7e4132",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.293126+00:00"
+}

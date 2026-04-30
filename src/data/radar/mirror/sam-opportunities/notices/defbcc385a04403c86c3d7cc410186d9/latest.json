@@ -1,0 +1,70 @@
+{
+  "id": "sam-defbcc385a04403c86c3d7cc410186d9",
+  "title": "Q601--RFI â€“ Information Sought: Code Sets",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=defbcc385a04403c86c3d7cc410186d9",
+  "opportunity_url": "https://sam.gov/opp/defbcc385a04403c86c3d7cc410186d9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/defbcc385a04403c86c3d7cc410186d9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "defbcc385a04403c86c3d7cc410186d9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C10G26Q0063",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.STRATEGIC ACQUISITION CENTER FREDERICKSBURG (36C10G)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=defbcc385a04403c86c3d7cc410186d9",
+  "detail_text": "Purpose In accordance with the FAR 15.201(e) this is a Request for Information (RFI) to determine the availability and technical capabilities of qualified sources capable of developing, maintaining, and regularly delivering comprehensive billing code sets. VA is not, at this time, seeking proposals and will not accept unsolicited proposals. All responses shall be solely in the form of information. Responses to this notice are not offers and cannot be accepted by the Government to form a binding contract. The Government is under no obligation to issue a solicitation or to award any contract on the basis of this RFI. All costs associated with responding to this RFI will be the sole responsibility of the respondent. All submissions will be treated as business confidential materials, become Government property, and will not be returned. Point of Contact Contracting Officer: Jeffery Fithen, VA Office of Acquisitions and Logistics (OAL), Email: Jeffery.Fithen@va.gov Contract Specialist: Justin Sink, VA Office of Acquisitions and Logistics (OAL), Email: Justin.Sink@va.gov Responses It is requested that the above information be provided no later than May 14, 2026 by 3PM Eastern. Responses must be emailed to Jeffery Fithen@va.gov and Justin.Sink@va.gov. All email correspondence for this project must reference the RFI Number, Project Identifier and Project Title in the subject line of the email. Example: RFI 36C10G26Q0063, Code Sets. Disclaimer The purpose of this RFI is for to determine the availability and technical capabilities of qualified sources. This RFI is issued for information and planning purposes only. This does not constitute a solicitation, nor does it bind the government to produce a solicitation or restrict as to the ultimate acquisition approach should a solicitation result from this RFI. In accordance with FAR 15.201(e), responses to this notice are not offers and cannot be accepted by the Government to form a binding contract.",
+  "detail_text_length": 1969,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57d7720fe6ca405fbac4ad7aa24c4652/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63a76bb901204115be5d86e6553cb0c7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b40defe0c5d4f6e8dd1afc5e06a7b32/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/57d7720fe6ca405fbac4ad7aa24c4652/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0d145c9e196b87007fa4f969f758ead5670a41ca4220cc95d9e8e26628a1eba4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0d145c9e196b87007fa4f969f758ead5670a41ca4220cc95d9e8e26628a1eba4.docx",
+      "file_id": "57d7720fe6ca405fbac4ad7aa24c4652",
+      "file_name": "Attachment+2+-.Code+Set+Example.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15962,
+      "sha256": "0d145c9e196b87007fa4f969f758ead5670a41ca4220cc95d9e8e26628a1eba4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/63a76bb901204115be5d86e6553cb0c7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f8153865b96877cef833232baa6f7848914cb6b7b1c42ccdf26560805bd229ee.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f8153865b96877cef833232baa6f7848914cb6b7b1c42ccdf26560805bd229ee.docx",
+      "file_id": "63a76bb901204115be5d86e6553cb0c7",
+      "file_name": "Attachment+1+-+RFI+Questions.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29516,
+      "sha256": "f8153865b96877cef833232baa6f7848914cb6b7b1c42ccdf26560805bd229ee"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b40defe0c5d4f6e8dd1afc5e06a7b32/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ab7d3a775ebbfefa764a2f5deaba8289b6520925b26577ef1f77cc349dbac9ed.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ab7d3a775ebbfefa764a2f5deaba8289b6520925b26577ef1f77cc349dbac9ed.docx",
+      "file_id": "7b40defe0c5d4f6e8dd1afc5e06a7b32",
+      "file_name": "36C10G26Q0063.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24926,
+      "sha256": "ab7d3a775ebbfefa764a2f5deaba8289b6520925b26577ef1f77cc349dbac9ed"
+    }
+  ],
+  "_mirror_hash": "9c97eaf37b20b2cb697d82bdaade5fbcba6b11b77e25e415cea1bc8769414881",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.302758+00:00"
+}

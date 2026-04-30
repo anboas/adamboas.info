@@ -1,0 +1,46 @@
+{
+  "id": "sam-4dce2aa2d48d42d086a7521e0d0f69c6",
+  "title": "Exhaust Troubleshooting",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4dce2aa2d48d42d086a7521e0d0f69c6",
+  "opportunity_url": "https://sam.gov/opp/4dce2aa2d48d42d086a7521e0d0f69c6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4dce2aa2d48d42d086a7521e0d0f69c6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4dce2aa2d48d42d086a7521e0d0f69c6",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI1026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE SPECIAL OPERATIONS COMMAND.FA4855  27 SOCONS LGC",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4dce2aa2d48d42d086a7521e0d0f69c6",
+  "detail_text": "This is a sources sought for a service to test and troubleshoot communications BUS to all controllers and terminal equipment. Communication BUS wiring minor repairs such as re-terminating controllers and devices is included. Major repairs such as high bay/ceiling (over 10' in height) wire replacement & device terminations or long runs (over 25') are not included. Test network and field controllers I/O control and monitoring points and equipment responses. Work with remote software engineer to verify points and equipment in graphic utility interface systems included - paint booth air handler unit's, exhaust fan's, breathing air system, chilled water system, heating water system, machine shop air handler and terminal units, and office air handler and variable air volume's. All pumps, valves and actuators. Remote software engineer to operate and monitor automation system to verify sequence of operation with on-site technician. Please see the attached PWS for more details. Interested vendors are encouraged to respond to this notice with their capability and contact information by 1 May 2026, at 1:00PM MST to be considered for the upcoming solicitation. At this time, we are only conducting market research, and no contract will result from this RFI.",
+  "detail_text_length": 1263,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d84a2a5e1c9e43c0b9f2a5ef53d31b2c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d84a2a5e1c9e43c0b9f2a5ef53d31b2c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9397e74c2a0c2e9a3d832e4599fb28d36e057e520c394631ee1d2c9eeb4f3b04.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9397e74c2a0c2e9a3d832e4599fb28d36e057e520c394631ee1d2c9eeb4f3b04.pdf",
+      "file_id": "d84a2a5e1c9e43c0b9f2a5ef53d31b2c",
+      "file_name": "Attachment+1+-+Performance+Work+Statement+-PWS-+Building+4607.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 316690,
+      "sha256": "9397e74c2a0c2e9a3d832e4599fb28d36e057e520c394631ee1d2c9eeb4f3b04"
+    }
+  ],
+  "_mirror_hash": "6daaa1f4658c664baf10810ea2705f56f201e1d78a88bce05e16508a20ab603a",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.401584+00:00"
+}

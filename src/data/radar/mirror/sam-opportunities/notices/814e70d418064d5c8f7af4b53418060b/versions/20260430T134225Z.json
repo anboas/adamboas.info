@@ -1,0 +1,78 @@
+{
+  "id": "sam-814e70d418064d5c8f7af4b53418060b",
+  "title": "STUD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=814e70d418064d5c8f7af4b53418060b",
+  "opportunity_url": "https://sam.gov/opp/814e70d418064d5c8f7af4b53418060b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/814e70d418064d5c8f7af4b53418060b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "814e70d418064d5c8f7af4b53418060b",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QNB95",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=814e70d418064d5c8f7af4b53418060b",
+  "detail_text": "See Attached Solicitation and Amendment(s)",
+  "detail_text_length": 42,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/062380869cb54152b088120919d49782/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a0b1f0b894a4a28ac879d2c687b9790/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a23abfdf28b4f8994f6d023acbfbfce/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7dacbe2a2c649c0a8549ff8447e5bda/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/062380869cb54152b088120919d49782/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bda474a654d546ca7539f81ea6f2274b9179554d54ea574efed7ddf2b1a33001.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bda474a654d546ca7539f81ea6f2274b9179554d54ea574efed7ddf2b1a33001.pdf",
+      "file_id": "062380869cb54152b088120919d49782",
+      "file_name": "N00104-26-Q-NB95+Amendment+0002.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262892,
+      "sha256": "bda474a654d546ca7539f81ea6f2274b9179554d54ea574efed7ddf2b1a33001"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0a0b1f0b894a4a28ac879d2c687b9790/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f23d732f553417aa0f10f07a08118ed7c2c519e64158dcbeb4f1b3034977522d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f23d732f553417aa0f10f07a08118ed7c2c519e64158dcbeb4f1b3034977522d.pdf",
+      "file_id": "0a0b1f0b894a4a28ac879d2c687b9790",
+      "file_name": "N00104-26-Q-NB95.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 932056,
+      "sha256": "f23d732f553417aa0f10f07a08118ed7c2c519e64158dcbeb4f1b3034977522d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a23abfdf28b4f8994f6d023acbfbfce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc8ceda0fbb1d0a2952050db86e3e8695310c8518aa6b5ec787a0a152d03f95c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc8ceda0fbb1d0a2952050db86e3e8695310c8518aa6b5ec787a0a152d03f95c.pdf",
+      "file_id": "9a23abfdf28b4f8994f6d023acbfbfce",
+      "file_name": "N00104-26-Q-NB95+Amendment+0003.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 263115,
+      "sha256": "dc8ceda0fbb1d0a2952050db86e3e8695310c8518aa6b5ec787a0a152d03f95c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d7dacbe2a2c649c0a8549ff8447e5bda/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a3d057cee280f32598d637f2982ac21a92f06c1a0e29a6e4f8eb7d1e530c53d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a3d057cee280f32598d637f2982ac21a92f06c1a0e29a6e4f8eb7d1e530c53d.pdf",
+      "file_id": "d7dacbe2a2c649c0a8549ff8447e5bda",
+      "file_name": "N00104-26-Q-NB95+Amendment+0001.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 263012,
+      "sha256": "4a3d057cee280f32598d637f2982ac21a92f06c1a0e29a6e4f8eb7d1e530c53d"
+    }
+  ],
+  "_mirror_hash": "c773248079fb113f815adbeb6211b084f15abb86910e8c604139bdd8870fc6f0",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.312965+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-15f4f2ae5ecb477c8f0787b97954cf6b",
+  "title": "Luminex LX200 IVD System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=15f4f2ae5ecb477c8f0787b97954cf6b",
+  "opportunity_url": "https://sam.gov/opp/15f4f2ae5ecb477c8f0787b97954cf6b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/15f4f2ae5ecb477c8f0787b97954cf6b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "15f4f2ae5ecb477c8f0787b97954cf6b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "75N98026Q00289",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-09",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=15f4f2ae5ecb477c8f0787b97954cf6b",
+  "detail_text": "Attachment: Notice of Intent",
+  "detail_text_length": 28,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6ac74a618fa492197df7ab55766060f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6ac74a618fa492197df7ab55766060f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/92905fa82a441daca088c9bc1eaa90dcf39cc4266d3fe97863d733253ecba619.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/92905fa82a441daca088c9bc1eaa90dcf39cc4266d3fe97863d733253ecba619.pdf",
+      "file_id": "b6ac74a618fa492197df7ab55766060f",
+      "file_name": "Notice+of+Intent.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28994,
+      "sha256": "92905fa82a441daca088c9bc1eaa90dcf39cc4266d3fe97863d733253ecba619"
+    }
+  ],
+  "_mirror_hash": "5630ea1da8b6f2e6a6f8685bed086fc2bdbfd6f33b6b86153288d65223147f1a",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.478452+00:00"
+}

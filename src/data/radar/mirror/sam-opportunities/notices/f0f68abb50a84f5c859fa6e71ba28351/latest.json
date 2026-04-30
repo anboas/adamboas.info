@@ -1,0 +1,46 @@
+{
+  "id": "sam-f0f68abb50a84f5c859fa6e71ba28351",
+  "title": "Quantum Sensors Millimeter- Wave Vector Network Analyzer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0f68abb50a84f5c859fa6e71ba28351",
+  "opportunity_url": "https://sam.gov/opp/f0f68abb50a84f5c859fa6e71ba28351/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f0f68abb50a84f5c859fa6e71ba28351/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f0f68abb50a84f5c859fa6e71ba28351",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "NB687000-26-01055",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY.DEPT OF COMMERCE NIST",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0f68abb50a84f5c859fa6e71ba28351",
+  "detail_text": "The National Institute of Standards and Technology (NIST) Acquisition Management Division intends to negotiate with Keysight Technologies, Inc., located in Boulder, CO, on a sole source basis under the authority of FAR Subpart 13.106-1(b), soliciting from a single source, for physical property measurement system services. Specific Requirements are as follows: NIST-Boulder conducts state-of-the-art development and characterization of millimeter-wave quantum sensors and support the most sensitive millimeter-wave research done at NIST and the world. Direct, coherent millimeter-wave measurements require a low-noise vector network analyzer (VNA) capable of operation up to 20 GHz with the appropriate ports to operate and measure frequencies up to 1.1 THz using frequency extenders (often called VNA Extenders). NIST’s associated VNA is nearing its end of life and requires replacement. NIST already has over $1M invested in such millimeter-wave extenders, so a drop-in replacement is required to avoid significant additional costs and delays. NAICS Code is 334516 –Analytical Laboratory Instrument Manufacturing, with a Size Standard of 1,000 employees. NIST anticipates negotiating and awarding a firm-fixed-price purchase order to Quantum Design, Inc.for this requirement. Interested parties that can demonstrate they could satisfy the requirement listed above for NIST must clearly and unambiguously identify their capability to do so in writing on or before the response date for this notice. This notice of intent is not a solicitation. Information submitted in response to this notice will be used solely to determine whether competitive procedures could be used for this acquisition. If competitive procedures are not used it is estimated that an award will be issued by May 11, 2026. Any questions regarding this notice must be submitted in writing via email to deionne.jones@nist.gov. All responses to this notice of intent must be submitted to deionne.jones@nist.gov no later than the date and time provided herein this posting. JUSTIFICATION FOR OTHER THAN FULL AN OPEN COMPETITION: The Government’s existing hardware and software are explicitly compatible with Keysight VNAs. NIST already has over $1M invested in millimeter-wave extenders, as well as associated hardware and software, for these measurements. A drop-in replacement of the VNA is required to avoid significant additional costs and delays. Only the Keysight Technologies Inc. VNA with option “020” offers a demonstrated drop-in replacement. We estimate that to accomplish our goals with alternative VNAs would cause several months of delays and an estimated $200,000 in extra costs in labor, hardware, and software development and thus does not represent best value to the Government. It is also possible that the alternative VNAs do not work at all with the NIST existing hardware, as has not been previously demonstrated. Critically, the identified alternative VNAs do not meet our performance specs. Only the Keysight Technologies Inc. N5222B-419 with the “UNY” (Enhanced low phase noise option) meets our critical phase-noise requirements when using the internal VNA source as outlined in the SOR.",
+  "detail_text_length": 3182,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22325761acdc48b09b2e4ca1d22ed081/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/22325761acdc48b09b2e4ca1d22ed081/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/74dc97760c889ccc6563e8890f67b286626e9991c66c8ea5fffcdf7885480e1e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/74dc97760c889ccc6563e8890f67b286626e9991c66c8ea5fffcdf7885480e1e.pdf",
+      "file_id": "22325761acdc48b09b2e4ca1d22ed081",
+      "file_name": "NB687000-26-01055+-SOR.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 232084,
+      "sha256": "74dc97760c889ccc6563e8890f67b286626e9991c66c8ea5fffcdf7885480e1e"
+    }
+  ],
+  "_mirror_hash": "8d2af0ac2fe30e36259fd7c26e7e754cb63f411998fa2a1692a4071f77d5d75c",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.456746+00:00"
+}

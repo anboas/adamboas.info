@@ -1,0 +1,67 @@
+{
+  "id": "sam-e379cc47b6a8405891fab4c0def2cfa2",
+  "title": "Procurement of BOLT,SHOULDER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e379cc47b6a8405891fab4c0def2cfa2",
+  "opportunity_url": "https://sam.gov/opp/e379cc47b6a8405891fab4c0def2cfa2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e379cc47b6a8405891fab4c0def2cfa2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e379cc47b6a8405891fab4c0def2cfa2",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD38",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e379cc47b6a8405891fab4c0def2cfa2",
+  "detail_text": "Seeking procurement of NIIN: 013481723, BOLT,SHOULDER, quantity 50. See attached solicitation for more details.",
+  "detail_text_length": 111,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ed63874125f49fdbfa133e3ee4481fc/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3174b507e144f289ce960c0a4ea9e59/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db77205f880b43709492c571775cd64a/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ed63874125f49fdbfa133e3ee4481fc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf3dbee49b3ecd4b4f51e6024f9ed723d767775c7ecd00070274dc8663c3d897.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf3dbee49b3ecd4b4f51e6024f9ed723d767775c7ecd00070274dc8663c3d897.pdf",
+      "file_id": "6ed63874125f49fdbfa133e3ee4481fc",
+      "file_name": "ZAPPPED.N0010425.QFD38.A0002.M0115010.PDF.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 295861,
+      "sha256": "bf3dbee49b3ecd4b4f51e6024f9ed723d767775c7ecd00070274dc8663c3d897"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3174b507e144f289ce960c0a4ea9e59/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/80084c059a1c461831675ff52598942af4a2a14bcab54056684e49f2f85ecd9a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/80084c059a1c461831675ff52598942af4a2a14bcab54056684e49f2f85ecd9a.pdf",
+      "file_id": "a3174b507e144f289ce960c0a4ea9e59",
+      "file_name": "3.01_Solicitation26-Q-FD38_23255-0004.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 931323,
+      "sha256": "80084c059a1c461831675ff52598942af4a2a14bcab54056684e49f2f85ecd9a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/db77205f880b43709492c571775cd64a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9a7745211b88c6456fbab2032af32392a2f6ffe590d510c48bf7f03b269bb8c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9a7745211b88c6456fbab2032af32392a2f6ffe590d510c48bf7f03b269bb8c1.pdf",
+      "file_id": "db77205f880b43709492c571775cd64a",
+      "file_name": "3.02_Amendment+-1-_20279-0051.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262940,
+      "sha256": "9a7745211b88c6456fbab2032af32392a2f6ffe590d510c48bf7f03b269bb8c1"
+    }
+  ],
+  "_mirror_hash": "290a2acaef13cf19f0873c2fe1a349b9298e4ff2efc3024a93a44bbdab736073",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.269812+00:00"
+}

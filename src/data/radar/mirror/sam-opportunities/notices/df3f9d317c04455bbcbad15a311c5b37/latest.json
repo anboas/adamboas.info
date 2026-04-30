@@ -1,0 +1,45 @@
+{
+  "id": "sam-df3f9d317c04455bbcbad15a311c5b37",
+  "title": "U099 - SOLE SOURCE - Columbia University Executive Development Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=df3f9d317c04455bbcbad15a311c5b37",
+  "opportunity_url": "https://sam.gov/opp/df3f9d317c04455bbcbad15a311c5b37/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/df3f9d317c04455bbcbad15a311c5b37/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "df3f9d317c04455bbcbad15a311c5b37",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QW145",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=df3f9d317c04455bbcbad15a311c5b37",
+  "detail_text": "IAW FAR Part 12, Acquisition of Commercial Products and Commercial Services, NAVSUP Fleet Logistics Center Norfolk, Mechanicsburg Office, intends to award a Sole Source Firm Fixed Price contract to The Trustees of Columbia University in the City of New York for four (4) Captains to attend the university's Executive Development Program. This action is justified to be sole source. As the executive education programs are run and scheduled by the schools, the DON has little to no input on when and where they occur. Captains are provided with a list of EDP training opportunities so that they may select the session which meets their needs regarding factors including location and schedule. These Captains, who, as Captains, are among the busiest people in the organization, selected the session at Columbia University as the session that meets their needs. Any challenges to this sole source must be received in writing and sent to kaitlin.n.obrien.civ@us.navy.mil. To be considered by the Government, challenges must include information sufficient to enable the Government to make a determination that an equivalent service exists which would meet the Government's needs as stated herein. A determination by the Government not to compete this proposed requirement based on responses to this notice is solely within the discretion of the Government .",
+  "detail_text_length": 1352,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11d6ccc89ea64bd9980a1fb832b4596f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11d6ccc89ea64bd9980a1fb832b4596f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8bcda797159e8980e1da6fab302394f9c55d50b810ec6a5eb8fb1bd74c0dffdb.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8bcda797159e8980e1da6fab302394f9c55d50b810ec6a5eb8fb1bd74c0dffdb.pdf",
+      "file_id": "11d6ccc89ea64bd9980a1fb832b4596f",
+      "file_name": "N0018926QW145.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1853065,
+      "sha256": "8bcda797159e8980e1da6fab302394f9c55d50b810ec6a5eb8fb1bd74c0dffdb"
+    }
+  ],
+  "_mirror_hash": "f374175ebc5389ecf101c077c8ad7cb280719e7d6f209cb6f390b01450adee48",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.263976+00:00"
+}

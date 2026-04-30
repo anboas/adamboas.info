@@ -1,0 +1,57 @@
+{
+  "id": "sam-1f7d485504594365b7b09648fb198b39",
+  "title": "X1DB--SEEKING EXPRESSIONS OF INTEREST FOR POTENTIAL LEASE PROCUREMENT (SEE ATTACHMENT)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f7d485504594365b7b09648fb198b39",
+  "opportunity_url": "https://sam.gov/opp/1f7d485504594365b7b09648fb198b39/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1f7d485504594365b7b09648fb198b39/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1f7d485504594365b7b09648fb198b39",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24W26Q0096",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO WEST (36C24W)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1f7d485504594365b7b09648fb198b39",
+  "detail_text": "PLEASE SEE ATTACHMENT",
+  "detail_text_length": 21,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b2a92201bb04ff6a5a684d61e728926/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b18d28ad4bd4c8eb87b61d04b92c8bb/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b2a92201bb04ff6a5a684d61e728926/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2a79a5f116e0890ed2cf993ebb95bff6d138cb797cd1195d5feaddcd7e8940bd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2a79a5f116e0890ed2cf993ebb95bff6d138cb797cd1195d5feaddcd7e8940bd.pdf",
+      "file_id": "2b2a92201bb04ff6a5a684d61e728926",
+      "file_name": "Santa+Cruz+CA+SAM+Ad+03062026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 247950,
+      "sha256": "2a79a5f116e0890ed2cf993ebb95bff6d138cb797cd1195d5feaddcd7e8940bd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4b18d28ad4bd4c8eb87b61d04b92c8bb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/20b8cd4f54f36986362f66ed7e5e5e6d901e37a299578a6a9ef80cc492ee5cdc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/20b8cd4f54f36986362f66ed7e5e5e6d901e37a299578a6a9ef80cc492ee5cdc.docx",
+      "file_id": "4b18d28ad4bd4c8eb87b61d04b92c8bb",
+      "file_name": "36C24W26Q0096.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14457,
+      "sha256": "20b8cd4f54f36986362f66ed7e5e5e6d901e37a299578a6a9ef80cc492ee5cdc"
+    }
+  ],
+  "_mirror_hash": "9ba98afc4314ee37d66c0bbe88aa4110471487c629845dab44b7385932a9c261",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.501873+00:00"
+}

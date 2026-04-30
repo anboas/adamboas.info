@@ -1,30 +1,29 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-04-28T13:48:20.455060+00:00
+Generated: 2026-04-30T13:51:49.381927+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 04/28/2026
+Posted range: 01/01/2026 -> 04/30/2026
 
 ## Counts
-- Total candidates: 21
+- Total candidates: 20
 - Navy-related: 0
-- Full detail cached: 21
-- Notices with attachments: 15
-- Total attachment links: 26
+- Full detail cached: 20
+- Notices with attachments: 14
+- Total attachment links: 24
 - Pre-solicitation: 6
 - Sources Sought: 8
-- Special Notice: 7
+- Special Notice: 6
 
 ## Engagement signals
 - Pre-solicitation: 7
 - Sources Sought: 8
-- Special Notice: 7
+- Special Notice: 6
 
 ## Top candidates
 | Score | Notice | Engagement | Posted | Due | Agency | Title |
 |---:|---|---|---|---|---|---|
 | 2 | Sources Sought | Sources Sought | 2026-04-23 | 2025-02-18 | DEPT OF DEFENSE | [Regional Garrison Food Services IV](https://sam.gov/opp/41ac7145ccd1452bb24ee8c38382e7aa/view) |
-| 2 | Special Notice | Special Notice | 2026-04-10 | 2026-04-14 | DEPT OF DEFENSE | [Notice of Sole Source- COX CATV](https://sam.gov/opp/7984fce573f44716821e513e0e2fc124/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-10 | 2026-04-15 | DEPT OF DEFENSE | [Chapel Music Director - MCAS Beaufort, SC](https://sam.gov/opp/bd510fd10cbc4077aa75b4e584c12d0d/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-06 | 2026-04-17 | DEPT OF DEFENSE | [Investigative Database Services](https://sam.gov/opp/0bbf287a6c2043eb93c2ac8209e64bfb/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-09 | 2026-04-17 | DEPT OF DEFENSE | [Non-Tactical Vehicles](https://sam.gov/opp/e6cd9b95b7ec4caa80df5fd2d2a97914/view) |

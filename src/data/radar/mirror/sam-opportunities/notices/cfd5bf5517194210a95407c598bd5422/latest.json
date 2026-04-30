@@ -1,0 +1,58 @@
+{
+  "id": "sam-cfd5bf5517194210a95407c598bd5422",
+  "title": "USS SHIP FY27 MID-TERM AVAILABILITY",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cfd5bf5517194210a95407c598bd5422",
+  "opportunity_url": "https://sam.gov/opp/cfd5bf5517194210a95407c598bd5422/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cfd5bf5517194210a95407c598bd5422/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cfd5bf5517194210a95407c598bd5422",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6817126RN006",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SIGONELLA.NAVSUP FLC SIGONELLA NAPLES OFFICE",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cfd5bf5517194210a95407c598bd5422",
+  "detail_text": "USS SHIP FY2027 MID-TERM AVAILABILITY (MTA)",
+  "detail_text_length": 43,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/179465e490894214ad8fa26814dff0b5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72b25f911d7d43abab1278908854ce4c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/179465e490894214ad8fa26814dff0b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4dae1ad9d02bc161c8dcde329b2af9efb1d0c84c8317bb0339a7730d4208de5d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4dae1ad9d02bc161c8dcde329b2af9efb1d0c84c8317bb0339a7730d4208de5d.docx",
+      "file_id": "179465e490894214ad8fa26814dff0b5",
+      "file_name": "Work+Item+Index+Report+-1-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 112105,
+      "sha256": "4dae1ad9d02bc161c8dcde329b2af9efb1d0c84c8317bb0339a7730d4208de5d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72b25f911d7d43abab1278908854ce4c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c9ebd94621e0cc9f0c3fad2b5aa2515c7d09298b552fce622454f9d403cf9bb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c9ebd94621e0cc9f0c3fad2b5aa2515c7d09298b552fce622454f9d403cf9bb.docx",
+      "file_id": "72b25f911d7d43abab1278908854ce4c",
+      "file_name": "Presolicitation+Notice-Synopsis.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49124,
+      "sha256": "1c9ebd94621e0cc9f0c3fad2b5aa2515c7d09298b552fce622454f9d403cf9bb"
+    }
+  ],
+  "_mirror_hash": "0a2123ec33fd1fb22f0dc01816eda7faf80c411906bdbfdb202204612bdc7930",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.239600+00:00"
+}

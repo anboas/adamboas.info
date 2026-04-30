@@ -1,0 +1,57 @@
+{
+  "id": "sam-62fad20c442c47e6969094bfb213f711",
+  "title": "Peak Scientific Intura H2 1500 Gas Generator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62fad20c442c47e6969094bfb213f711",
+  "opportunity_url": "https://sam.gov/opp/62fad20c442c47e6969094bfb213f711/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/62fad20c442c47e6969094bfb213f711/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "62fad20c442c47e6969094bfb213f711",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "D-26-SS-0029",
+  "agency_path": "JUSTICE, DEPARTMENT OF.DRUG ENFORCEMENT ADMINISTRATION.HEADQUATERS",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=62fad20c442c47e6969094bfb213f711",
+  "detail_text": "Amendment 0001 - See A23 - RFI_Sources Sought Notice_Questions and Answers- Amendment 0001 See attached Sources Sought.",
+  "detail_text_length": 119,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1712422672db4400a91f58e546f4983d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d64fad268bc44109b380c46e2365927/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1712422672db4400a91f58e546f4983d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b4204fda9b8b9d7a50ae7588e733470963e678ad29b46acdd9273a80379d1846.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b4204fda9b8b9d7a50ae7588e733470963e678ad29b46acdd9273a80379d1846.pdf",
+      "file_id": "1712422672db4400a91f58e546f4983d",
+      "file_name": "A24+-+RFI_Sources+Sought+Notice_D-26-SS-0029.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 203737,
+      "sha256": "b4204fda9b8b9d7a50ae7588e733470963e678ad29b46acdd9273a80379d1846"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6d64fad268bc44109b380c46e2365927/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/69016323436788d5dd19a1090d003f0e8ca2e78c2bcbd26154b2a7f034e7cd50.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/69016323436788d5dd19a1090d003f0e8ca2e78c2bcbd26154b2a7f034e7cd50.pdf",
+      "file_id": "6d64fad268bc44109b380c46e2365927",
+      "file_name": "A23+-+RFI_Sources+Sought+Notice_Questions+and+Answers-+Amendment+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114792,
+      "sha256": "69016323436788d5dd19a1090d003f0e8ca2e78c2bcbd26154b2a7f034e7cd50"
+    }
+  ],
+  "_mirror_hash": "7dbfa2cf77956d4668c62c7318cff5bc8979600314b3c5fa8f29fa885b59ff8f",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.373360+00:00"
+}

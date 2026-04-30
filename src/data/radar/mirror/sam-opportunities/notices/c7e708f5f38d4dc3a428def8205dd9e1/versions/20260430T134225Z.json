@@ -1,0 +1,59 @@
+{
+  "id": "sam-c7e708f5f38d4dc3a428def8205dd9e1",
+  "title": "Sources Sought for Port Security Barrier (PSB) Operations in Gaeta, Italy",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c7e708f5f38d4dc3a428def8205dd9e1",
+  "opportunity_url": "https://sam.gov/opp/c7e708f5f38d4dc3a428def8205dd9e1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c7e708f5f38d4dc3a428def8205dd9e1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c7e708f5f38d4dc3a428def8205dd9e1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "20260003671",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SIGONELLA.NAVSUP FLC SIGONELLA NAPLES OFFICE",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-10",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c7e708f5f38d4dc3a428def8205dd9e1",
+  "detail_text": "See attached Sources Sought and Draft PWS for information.",
+  "detail_text_length": 58,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3f00a892ffdb45ce8712ae988acd1715/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0ce9db0fd4447c9aaffa45af4e67da9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3f00a892ffdb45ce8712ae988acd1715/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f1523eb86bc901c9d68be7e1a97f21ed18c54c759057102aca0a453a9fdb15ac.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f1523eb86bc901c9d68be7e1a97f21ed18c54c759057102aca0a453a9fdb15ac.pdf",
+      "file_id": "3f00a892ffdb45ce8712ae988acd1715",
+      "file_name": "Sourcs+Sought-PSB+GAETA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 266551,
+      "sha256": "f1523eb86bc901c9d68be7e1a97f21ed18c54c759057102aca0a453a9fdb15ac"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f0ce9db0fd4447c9aaffa45af4e67da9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/64a61aa5d942f90d8ac5fbe65f1b20fb25397d7da55fde6f7e43292e7bc23466.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/64a61aa5d942f90d8ac5fbe65f1b20fb25397d7da55fde6f7e43292e7bc23466.pdf",
+      "file_id": "f0ce9db0fd4447c9aaffa45af4e67da9",
+      "file_name": "1.03+PWS-PSB+Gaeta.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2143080,
+      "sha256": "64a61aa5d942f90d8ac5fbe65f1b20fb25397d7da55fde6f7e43292e7bc23466"
+    }
+  ],
+  "_mirror_hash": "4b9c1956df845e82e6bfc36f788ed8b66f69d5caa9a604215d2457929c746a65",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.226632+00:00"
+}

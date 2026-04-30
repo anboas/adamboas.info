@@ -1,0 +1,59 @@
+{
+  "id": "sam-98c97b17d2b54850bbf0104213bc663e",
+  "title": "RFI - JBSA FSH Bunkable Bed Frames",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98c97b17d2b54850bbf0104213bc663e",
+  "opportunity_url": "https://sam.gov/opp/98c97b17d2b54850bbf0104213bc663e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/98c97b17d2b54850bbf0104213bc663e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "98c97b17d2b54850bbf0104213bc663e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA301626Q0428",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98c97b17d2b54850bbf0104213bc663e",
+  "detail_text": "Procure, deliver, and install 786 lift beds, 357 bunkable beds, 438 wardrobes, and 357 stacking kits for US Navy dormitories at JBSA Buildings 1475 and 1479. The contractor is responsible for the delivery, installation, and removal of furniture within the secured military installation. In each dormitory room, the contractor must install one standalone lift bed and one bunked unit—consisting of a stacked lift bed and bunkable bed—while ensuring the configuration does not compromise standard mattress sizes. All work must adhere to industry standards and the government-provided breakout.",
+  "detail_text_length": 591,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95ced1674ed2462399597cc1b99c8ca3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6d86a5a82624520a196d091c24cc3f7/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95ced1674ed2462399597cc1b99c8ca3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cb0a2b1e44e591a179709a9ffdf136c2850bc67eb8aa22c3db56d188b19a2f24.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cb0a2b1e44e591a179709a9ffdf136c2850bc67eb8aa22c3db56d188b19a2f24.docx",
+      "file_id": "95ced1674ed2462399597cc1b99c8ca3",
+      "file_name": "DRAFT+SOW+FOR++FSH+NAVY+DORMS+BLDG.+1475+and+1479+-1-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45122,
+      "sha256": "cb0a2b1e44e591a179709a9ffdf136c2850bc67eb8aa22c3db56d188b19a2f24"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6d86a5a82624520a196d091c24cc3f7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/325a928cfef51ce385e9d87aa3de94774c1954730db9153ae52b2b3a649a9552.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/325a928cfef51ce385e9d87aa3de94774c1954730db9153ae52b2b3a649a9552.docx",
+      "file_id": "a6d86a5a82624520a196d091c24cc3f7",
+      "file_name": "Sources+Sought+Notice+JBSA+FSH+Bunk+Beds.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 138227,
+      "sha256": "325a928cfef51ce385e9d87aa3de94774c1954730db9153ae52b2b3a649a9552"
+    }
+  ],
+  "_mirror_hash": "6d84993e353d369cd67a90bce4802b6804ff627159514d48f85e440e44e4117a",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.280185+00:00"
+}

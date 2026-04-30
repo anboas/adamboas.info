@@ -1,0 +1,46 @@
+{
+  "id": "sam-993a9d98cd9444c3bfcfd6856eca90a1",
+  "title": "Decentralized Artificial Intelligence through Controlled Emergence (DICE) Proposers Day",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=993a9d98cd9444c3bfcfd6856eca90a1",
+  "opportunity_url": "https://sam.gov/opp/993a9d98cd9444c3bfcfd6856eca90a1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/993a9d98cd9444c3bfcfd6856eca90a1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "993a9d98cd9444c3bfcfd6856eca90a1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-72",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=993a9d98cd9444c3bfcfd6856eca90a1",
+  "detail_text": "The DICE program seeks to develop the theory and algorithms for decentralized coordination and local inference control to enable a scalable, adaptive, and resilient collective of heterogeneous AI agents that can autonomously execute sustained long-time-horizon missions in contested environments while remaining under human control. In contrast to small-scale, rigid, and fragile centralized orchestration or the high-risk unpredictable nature of ad hoc compositions of AI agents, DICE aims to harness the scalability and adaptability of self-organizing systems while minimizing risks and ensuring that the collective behavior remains predictable and aligned with intended outcomes. This approach mirrors the principles of decentralized self-organization that underpin the internet's own scalability and resilience, where robust global behavior emerges from simple, local rules.",
+  "detail_text_length": 878,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5164c0e9bf8d4387b49de9112e1e9f6c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5164c0e9bf8d4387b49de9112e1e9f6c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cc4a215bc1210aea4ed39428deab28e3cb503c672b0bce6c0c0870549ebd485c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cc4a215bc1210aea4ed39428deab28e3cb503c672b0bce6c0c0870549ebd485c.pdf",
+      "file_id": "5164c0e9bf8d4387b49de9112e1e9f6c",
+      "file_name": "DARPA-SN-26-72.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 188037,
+      "sha256": "cc4a215bc1210aea4ed39428deab28e3cb503c672b0bce6c0c0870549ebd485c"
+    }
+  ],
+  "_mirror_hash": "89d30e79b4f72cfda24dd6d2884ae2b32616f81d1fbfbe9b5b957e67810dc7a1",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.563742+00:00"
+}

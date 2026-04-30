@@ -1,0 +1,46 @@
+{
+  "id": "sam-ea17cf2c7f824e62909d0dff9d07c118",
+  "title": "760-26-2-060-0423 SHAWNEE SAP MAILERS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea17cf2c7f824e62909d0dff9d07c118",
+  "opportunity_url": "https://sam.gov/opp/ea17cf2c7f824e62909d0dff9d07c118/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ea17cf2c7f824e62909d0dff9d07c118/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ea17cf2c7f824e62909d0dff9d07c118",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C77026Q0133",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-25",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea17cf2c7f824e62909d0dff9d07c118",
+  "detail_text": "See attached",
+  "detail_text_length": 12,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aed1895e9b7b43129eac40e9b5e212c1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aed1895e9b7b43129eac40e9b5e212c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b54256c2c045b86ef3464bc435dae647ad0a2bb2fb6c684e2dd0e38834ce8329.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b54256c2c045b86ef3464bc435dae647ad0a2bb2fb6c684e2dd0e38834ce8329.docx",
+      "file_id": "aed1895e9b7b43129eac40e9b5e212c1",
+      "file_name": "P02_Sources+Sought+Notice_.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27234,
+      "sha256": "b54256c2c045b86ef3464bc435dae647ad0a2bb2fb6c684e2dd0e38834ce8329"
+    }
+  ],
+  "_mirror_hash": "00cd8a4119d08f71e0deca80fe4605ac94ed8a9644ad4d72636325b4582515fd",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.573868+00:00"
+}

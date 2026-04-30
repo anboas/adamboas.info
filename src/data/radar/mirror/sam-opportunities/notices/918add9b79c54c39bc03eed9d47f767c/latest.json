@@ -1,0 +1,46 @@
+{
+  "id": "sam-918add9b79c54c39bc03eed9d47f767c",
+  "title": "R--Appraisal services: AQD_NAV_2026_01",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=918add9b79c54c39bc03eed9d47f767c",
+  "opportunity_url": "https://sam.gov/opp/918add9b79c54c39bc03eed9d47f767c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/918add9b79c54c39bc03eed9d47f767c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "918add9b79c54c39bc03eed9d47f767c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140D0426Q0404",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-04-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=918add9b79c54c39bc03eed9d47f767c",
+  "detail_text": "Appraisal services: AQD_NAV_2026_01",
+  "detail_text_length": 35,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cde734a969fa4065832c32b172cd6338/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cde734a969fa4065832c32b172cd6338/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc90910492015b038e84083d2bbe7c8ba443ee06418b393aa930d7e1ddbfd744.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc90910492015b038e84083d2bbe7c8ba443ee06418b393aa930d7e1ddbfd744.pdf",
+      "file_id": "cde734a969fa4065832c32b172cd6338",
+      "file_name": "A21_MISC_-_Sources_Sought_Notice_BIA_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13659842,
+      "sha256": "dc90910492015b038e84083d2bbe7c8ba443ee06418b393aa930d7e1ddbfd744"
+    }
+  ],
+  "_mirror_hash": "dcf4139cb29b93c35cbf1c57739550d03c4ed2db844e2f78ddb02fb5b0d91949",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.368822+00:00"
+}

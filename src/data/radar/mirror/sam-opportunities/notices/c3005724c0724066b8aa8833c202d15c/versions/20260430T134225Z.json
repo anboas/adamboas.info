@@ -1,0 +1,68 @@
+{
+  "id": "sam-c3005724c0724066b8aa8833c202d15c",
+  "title": "CIL Radioactive Sources",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3005724c0724066b8aa8833c202d15c",
+  "opportunity_url": "https://sam.gov/opp/c3005724c0724066b8aa8833c202d15c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c3005724c0724066b8aa8833c202d15c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c3005724c0724066b8aa8833c202d15c",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA252126QB069",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.SPACE SYSTEMS COMMAND.FA2521  45 CONS PK",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c3005724c0724066b8aa8833c202d15c",
+  "detail_text": "SEE ATTACHMENTS",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b78f113b56e426ba0e9377832ff93fa/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cda0d6d8c4e4075afcb7c0319eee816/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e10bb73a5514431a98e37545ad95711e/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b78f113b56e426ba0e9377832ff93fa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4bff3b77dae9c78d8142db1b5e1753a05cb3f653f336e50d2c4b82825c9befaa.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4bff3b77dae9c78d8142db1b5e1753a05cb3f653f336e50d2c4b82825c9befaa.pdf",
+      "file_id": "5b78f113b56e426ba0e9377832ff93fa",
+      "file_name": "FA252126QB069+J+A+Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 446068,
+      "sha256": "4bff3b77dae9c78d8142db1b5e1753a05cb3f653f336e50d2c4b82825c9befaa"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5cda0d6d8c4e4075afcb7c0319eee816/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/058dbc85ecbf6da6f521ddacb1f97fac2a4d43a2f15a3468e9788e1ccd42e482.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/058dbc85ecbf6da6f521ddacb1f97fac2a4d43a2f15a3468e9788e1ccd42e482.pdf",
+      "file_id": "5cda0d6d8c4e4075afcb7c0319eee816",
+      "file_name": "FA252126QB069+CIL+Radioactive+Calibration+Sources.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 121924,
+      "sha256": "058dbc85ecbf6da6f521ddacb1f97fac2a4d43a2f15a3468e9788e1ccd42e482"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e10bb73a5514431a98e37545ad95711e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/89f91fe2717cd9160c53334fff729e29f29f76660e094bed58c41f7724a2e2d7.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/89f91fe2717cd9160c53334fff729e29f29f76660e094bed58c41f7724a2e2d7.pdf",
+      "file_id": "e10bb73a5514431a98e37545ad95711e",
+      "file_name": "SOO+CIL+Radioactive+Sources+9Feb26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 192178,
+      "sha256": "89f91fe2717cd9160c53334fff729e29f29f76660e094bed58c41f7724a2e2d7"
+    }
+  ],
+  "_mirror_hash": "168723efbaf159c0744640076493a9024d458b349f46a0e5baa2d00132b1c25a",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.429879+00:00"
+}

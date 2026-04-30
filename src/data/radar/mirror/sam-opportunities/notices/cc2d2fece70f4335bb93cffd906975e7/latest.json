@@ -1,0 +1,67 @@
+{
+  "id": "sam-cc2d2fece70f4335bb93cffd906975e7",
+  "title": "STUD,CONTINUOUS THR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc2d2fece70f4335bb93cffd906975e7",
+  "opportunity_url": "https://sam.gov/opp/cc2d2fece70f4335bb93cffd906975e7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cc2d2fece70f4335bb93cffd906975e7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cc2d2fece70f4335bb93cffd906975e7",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QNC19",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cc2d2fece70f4335bb93cffd906975e7",
+  "detail_text": "See Attached Solicitation and Amendment(s)",
+  "detail_text_length": 42,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/081f7df487604ee7bb6f62b5ab6fd9a1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8d11afee294499baa825a434356e104/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f269cc0653be4686ad26c571b6f3dcbe/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/081f7df487604ee7bb6f62b5ab6fd9a1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c78f182edcc111153c8c06636007edbdd182e9b4b194638a07feda15000c7f62.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c78f182edcc111153c8c06636007edbdd182e9b4b194638a07feda15000c7f62.pdf",
+      "file_id": "081f7df487604ee7bb6f62b5ab6fd9a1",
+      "file_name": "N00104-26-Q-NC19+Amendment+0001.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262737,
+      "sha256": "c78f182edcc111153c8c06636007edbdd182e9b4b194638a07feda15000c7f62"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d8d11afee294499baa825a434356e104/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/272d35087a3c4c3b6d2a9d11f5b17747db300253518e9cc480a9b67a0e60b6e6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/272d35087a3c4c3b6d2a9d11f5b17747db300253518e9cc480a9b67a0e60b6e6.pdf",
+      "file_id": "d8d11afee294499baa825a434356e104",
+      "file_name": "N00104-26-Q-NC19.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 933916,
+      "sha256": "272d35087a3c4c3b6d2a9d11f5b17747db300253518e9cc480a9b67a0e60b6e6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f269cc0653be4686ad26c571b6f3dcbe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c5b3a54150efeca330ccca471c25458841a580c95f344d153edda82637ed6ea2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c5b3a54150efeca330ccca471c25458841a580c95f344d153edda82637ed6ea2.pdf",
+      "file_id": "f269cc0653be4686ad26c571b6f3dcbe",
+      "file_name": "N00104-26-Q-NC19+Amendment+0002.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 263111,
+      "sha256": "c5b3a54150efeca330ccca471c25458841a580c95f344d153edda82637ed6ea2"
+    }
+  ],
+  "_mirror_hash": "cf70775bb550d5007fe3d0a3590ddf4e2e9e4402940eb3881e88c0d4cfadc3f1",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.315886+00:00"
+}

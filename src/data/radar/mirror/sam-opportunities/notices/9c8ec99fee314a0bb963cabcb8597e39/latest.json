@@ -1,0 +1,46 @@
+{
+  "id": "sam-9c8ec99fee314a0bb963cabcb8597e39",
+  "title": "JLTV SIMULATOR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c8ec99fee314a0bb963cabcb8597e39",
+  "opportunity_url": "https://sam.gov/opp/9c8ec99fee314a0bb963cabcb8597e39/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9c8ec99fee314a0bb963cabcb8597e39/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9c8ec99fee314a0bb963cabcb8597e39",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "A062306",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4626  341 CONS  LGC",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9c8ec99fee314a0bb963cabcb8597e39",
+  "detail_text": "Vendor must provide one (1) JLTV Vehicle Simulator in accordance with the Statement of Work.",
+  "detail_text_length": 92,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28c03bd288714af3bc2bd98a6ed9d6b1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/28c03bd288714af3bc2bd98a6ed9d6b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6b48f9be7a5901f89d3e447032d135715106cd2eef893c16b3a3fc4008bfc32d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6b48f9be7a5901f89d3e447032d135715106cd2eef893c16b3a3fc4008bfc32d.pdf",
+      "file_id": "28c03bd288714af3bc2bd98a6ed9d6b1",
+      "file_name": "Statement+of+Work+-+JLTV+Sim.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 82268,
+      "sha256": "6b48f9be7a5901f89d3e447032d135715106cd2eef893c16b3a3fc4008bfc32d"
+    }
+  ],
+  "_mirror_hash": "4e8f8ad16a7666e0ee670bf2573a5716fdc08c5d7be75f4c9e3b5d041ea84d1a",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.460703+00:00"
+}

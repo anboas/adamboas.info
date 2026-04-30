@@ -1,0 +1,46 @@
+{
+  "id": "sam-bebde0fabf5e4e8d87076b7742b4aead",
+  "title": "DA10--Alternative to BigFix Endpoint Management  (VA-26-00012805)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bebde0fabf5e4e8d87076b7742b4aead",
+  "opportunity_url": "https://sam.gov/opp/bebde0fabf5e4e8d87076b7742b4aead/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bebde0fabf5e4e8d87076b7742b4aead/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bebde0fabf5e4e8d87076b7742b4aead",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C10B26Q0019",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bebde0fabf5e4e8d87076b7742b4aead",
+  "detail_text": "This is to notify interested parties that the acquisition strategy regarding RFI 36C10B26Q0019 (Alternative to BigFix Endpoint Management (VA-26-00012805) is as follows: Based on the market research, the Government intends to issue Request for Quotation (RFQ) 36C10B26Q0308 on National Aeronautics and Space Administration (NASA) Solutions for Enterprise-Wide Procurement (SEWP) Government-Wide Acquisition Contract (GWAC). NASA SEWP is a dynamic GWAC in which products can be added on a daily basis to vendor catalogs based on customer requests as long as the required information technology product is within scope of NASA SEWP. The requirement discussed herein has been found to be within scope of NASA SEWP. It was determined that there is multiple, to include two or more SDVOSBs, prospective resellers of the capable products under NASA SEWP. As a result of the aforementioned market research, VA intends to issue RFQ 36C10B26Q0308 as an SDVOSB set aside on NASA SEWP. The Government is currently targeting posting the solicitation in the week of May 11, 2026.",
+  "detail_text_length": 1066,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b572eff62dc949e08093759ef4393287/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b572eff62dc949e08093759ef4393287/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e38118beaaa7686f50d134b4f47819c10d981e955ae9742998973614c2a4d81a.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e38118beaaa7686f50d134b4f47819c10d981e955ae9742998973614c2a4d81a.docx",
+      "file_id": "b572eff62dc949e08093759ef4393287",
+      "file_name": "36C10B26Q0019_3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15064,
+      "sha256": "e38118beaaa7686f50d134b4f47819c10d981e955ae9742998973614c2a4d81a"
+    }
+  ],
+  "_mirror_hash": "05b5df77e1cf2fddb4bc83cdf6903b6ed3b5a0f7756918017fa1ab6244b7cf77",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.446863+00:00"
+}

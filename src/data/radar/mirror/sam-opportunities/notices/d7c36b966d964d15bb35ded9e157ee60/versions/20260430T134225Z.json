@@ -1,0 +1,68 @@
+{
+  "id": "sam-d7c36b966d964d15bb35ded9e157ee60",
+  "title": "Communication Services Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7c36b966d964d15bb35ded9e157ee60",
+  "opportunity_url": "https://sam.gov/opp/d7c36b966d964d15bb35ded9e157ee60/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d7c36b966d964d15bb35ded9e157ee60/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d7c36b966d964d15bb35ded9e157ee60",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ACQ-26-1014",
+  "agency_path": "COMMERCE, DEPARTMENT OF.US PATENT AND TRADEMARK OFFICE.DEPT OF COMMERCE PTO",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d7c36b966d964d15bb35ded9e157ee60",
+  "detail_text": "The USPTO is performing market research for professional media communication services which may include, but are not limited: Drafting media strategies and communications plans for USPTO; Drafting press releases and media advisories; Supporting media relations and coordinating interviews, when applicable; Monitoring media coverage and providing reports; Producing content for social media, USPTO staff communications, and USPTO internet postings; Training for USPTO staff on social media, communication strategies, and other related topics; and Assessing USPTO’s communication skillsets and performing a gap analysis to determine needed skillsets.",
+  "detail_text_length": 649,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3295e94d2cbb4c03af96160963f4a0b9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/983645bbb20e4382a4874eaf44bc4e0b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7532876e3ac40ab99e3adcbd3907655/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3295e94d2cbb4c03af96160963f4a0b9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c7817281c7e329b396713e326fcc60e268315321c780f1fc50becbf4147963a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c7817281c7e329b396713e326fcc60e268315321c780f1fc50becbf4147963a.pdf",
+      "file_id": "3295e94d2cbb4c03af96160963f4a0b9",
+      "file_name": "Form+USPTO-OP-113+Non-Disclosure+Agreement+Contractor.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 330980,
+      "sha256": "0c7817281c7e329b396713e326fcc60e268315321c780f1fc50becbf4147963a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/983645bbb20e4382a4874eaf44bc4e0b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f467a22780d88e0029ac31a5458dfb4aea271492dc72a161cc3fc3f0592fe239.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f467a22780d88e0029ac31a5458dfb4aea271492dc72a161cc3fc3f0592fe239.xlsx",
+      "file_id": "983645bbb20e4382a4874eaf44bc4e0b",
+      "file_name": "Questions_Final.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17021,
+      "sha256": "f467a22780d88e0029ac31a5458dfb4aea271492dc72a161cc3fc3f0592fe239"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c7532876e3ac40ab99e3adcbd3907655/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/555e52969630b2d8b295916bff9924f209b5ee5b7b67b787793a1f64e5eeada2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/555e52969630b2d8b295916bff9924f209b5ee5b7b67b787793a1f64e5eeada2.pdf",
+      "file_id": "c7532876e3ac40ab99e3adcbd3907655",
+      "file_name": "ACQ-26-1014_RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 355449,
+      "sha256": "555e52969630b2d8b295916bff9924f209b5ee5b7b67b787793a1f64e5eeada2"
+    }
+  ],
+  "_mirror_hash": "9225d09618962b4b73bf4ec996d4fa6a0bccf2a8f691f7654baa7bf16d38a91f",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.518323+00:00"
+}

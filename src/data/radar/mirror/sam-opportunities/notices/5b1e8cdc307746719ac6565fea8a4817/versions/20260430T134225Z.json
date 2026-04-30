@@ -1,0 +1,57 @@
+{
+  "id": "sam-5b1e8cdc307746719ac6565fea8a4817",
+  "title": "Innovative Solutions for System Safety Evaluation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b1e8cdc307746719ac6565fea8a4817",
+  "opportunity_url": "https://sam.gov/opp/5b1e8cdc307746719ac6565fea8a4817/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5b1e8cdc307746719ac6565fea8a4817/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5b1e8cdc307746719ac6565fea8a4817",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "ATEC_26_01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5b1e8cdc307746719ac6565fea8a4817",
+  "detail_text": "29 April 2026 - Update Response document, Response-CFS ATEC_26_01 - Questions and Answers, to questions received is added to the CFS posting. 20 April 2026 - Call for Solutions (CFS) The Army Contracting Command - Aberdeen Proving Ground (ACC-APG), Division D, on behalf of the Army Test and Evaluation Command (ATEC) is seeking innovative solutions to accelerate ATEC’s system safety evaluation processes. The CFS PDF document outlines the problem, required attributes, instructions, submission requirements, and evaluation criteria. The deadline to submit questions is 28 April 2026 at 1200 EDT . All emails related to this CFS must have the Subject Line: \" Call for Solution - ATEC_26_01 \" Whitepaper submission deadline is 08 May 2026 at 1300 EDT . This Call for Solutions is issued in accordance with the Army Open Solicitation (AOS); “W9128Z-25-S-A002” the link to the AOS posting can be found in this CFS post’s link section. Please review the AOS posting and associated attachments, in addition to this call for solutions posting, for further information on how the AOS is structured.",
+  "detail_text_length": 1092,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/441331fc0fc94e8cbfe9fac2edb04548/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9800423ca8d4b758bea02c7262dfe22/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/441331fc0fc94e8cbfe9fac2edb04548/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/782e951899b2bb7b39e33547cacc9ab1c47cccea0ecb32e09de16379cc664f0d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/782e951899b2bb7b39e33547cacc9ab1c47cccea0ecb32e09de16379cc664f0d.pdf",
+      "file_id": "441331fc0fc94e8cbfe9fac2edb04548",
+      "file_name": "Response-CFS+ATEC_26_01+-+Questions+and+Answers.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 172752,
+      "sha256": "782e951899b2bb7b39e33547cacc9ab1c47cccea0ecb32e09de16379cc664f0d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d9800423ca8d4b758bea02c7262dfe22/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f7196b3c8c643695692374207b0a9146a05c707657fbd9ca067a4d6bbf8b8058.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f7196b3c8c643695692374207b0a9146a05c707657fbd9ca067a4d6bbf8b8058.pdf",
+      "file_id": "d9800423ca8d4b758bea02c7262dfe22",
+      "file_name": "Innovative+Solutions+for+System+Safety+Evaluation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 194383,
+      "sha256": "f7196b3c8c643695692374207b0a9146a05c707657fbd9ca067a4d6bbf8b8058"
+    }
+  ],
+  "_mirror_hash": "35698ac7a5e62b86b2808b176502a3ef6442d569361e789844350586e3ca5749",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.468000+00:00"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "sam-e7a920bd2605471eb7baee35859b655d",
+  "title": "REQUEST FOR INFORMATION - Next Generation Command and Control (NGC2) Software Application Storefront, Pipeline and Tailorable Warfighting Applications",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7a920bd2605471eb7baee35859b655d",
+  "opportunity_url": "https://sam.gov/opp/e7a920bd2605471eb7baee35859b655d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e7a920bd2605471eb7baee35859b655d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e7a920bd2605471eb7baee35859b655d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "C2APPSRFI-1",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "posted_date": "2026-04-28",
+  "response_deadline": "2026-05-27",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7a920bd2605471eb7baee35859b655d",
+  "detail_text": "Synopsis The following Request for Information (RFI) is to gain an understanding from Industry on the capabilities offered to support Project Manager for Command and Control Applications (PM C2 Apps) entire portfolio. The Government is considering an acquisition strategy that uses a \"teaming\" model to consolidate the PM C2 Apps portfolio under a singular lead, tasked with managing a unified development pipeline and application storefront. This approach mirrors the Next Generation Command and Control (NGC2) \"clean-slate\" methodology, which emphasizes Agile and Development, Security and Operations (DevSecOps) environments to rapidly deliver and iterate on mission-focused software. By partnering with a lead entity to integrate a mix of Government-Off-The-Shelf (GOTS), Commercial-Off-The-Shelf (COTS), and tactical solutions, the strategy aims to provide the Warfighter with a flexible, modular, and interoperable suite of applications that can be updated at the \"speed of relevance\". The Government is particularly interested in solutions offered by entities with direct control over the capability's development and innovation. Respondents should clearly describe whether they are the original capability provider or an intermediary (reseller/integrator), and demonstrate their ability to drive innovation, influence product roadmaps, and provide direct technical support. The government envisions mission success by establishing group collaboration among all industry partners for the overall success of the program to include the application development/oversight from various partners (GOTS/COTS/etc) through pipeline/DSO to the storefront for User Access. The government intends to conduct an industry day to provide an overview to further support and enhance market research. Understanding this is a new concept, the Government welcomes feedback on the feasibility of this approach from Industry as well as the specific questions detailed in later sections of this RFI. PLEASE SEE ATTACHED RFI DOCUMENT FOR ADDITIONAL DESCRIPTION AND RFI SECTIONS",
+  "detail_text_length": 2060,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c28667130454ec5bb570886de291b05/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8ecf90cd7ff34343b60943a7f8bf6664/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6c28667130454ec5bb570886de291b05/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bd50f4f7dc4ab34af72d95b78918e872b759876f1f81f17e37332ca9d165cf77.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bd50f4f7dc4ab34af72d95b78918e872b759876f1f81f17e37332ca9d165cf77.pdf",
+      "file_id": "6c28667130454ec5bb570886de291b05",
+      "file_name": "THE+FULL+RFI+TEXT+AND+ADDITIONAL+SECTIONS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 163768,
+      "sha256": "bd50f4f7dc4ab34af72d95b78918e872b759876f1f81f17e37332ca9d165cf77"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8ecf90cd7ff34343b60943a7f8bf6664/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1846e9c4141822d8d5efbf97bfd2180434af427373821292d516df0fa718523c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1846e9c4141822d8d5efbf97bfd2180434af427373821292d516df0fa718523c.docx",
+      "file_id": "8ecf90cd7ff34343b60943a7f8bf6664",
+      "file_name": "Attachment+1_Response+Form+1-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 124831,
+      "sha256": "1846e9c4141822d8d5efbf97bfd2180434af427373821292d516df0fa718523c"
+    }
+  ],
+  "_mirror_hash": "224d8b3d19b1002e3b38427e78018f18fcc55de07ce62f56d4edea9b82a1baec",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.326400+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-d8b978bae9e14ad7b5fe745e8a0db5a4",
+  "title": "Notice of Intent to Sole Source - Global Content Delivery Service (GCDS) III to Akamai Technologies, Inc.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d8b978bae9e14ad7b5fe745e8a0db5a4",
+  "opportunity_url": "https://sam.gov/opp/d8b978bae9e14ad7b5fe745e8a0db5a4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d8b978bae9e14ad7b5fe745e8a0db5a4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d8b978bae9e14ad7b5fe745e8a0db5a4",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "842673947",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).IT CONTRACTING DIVISION - PL84",
+  "posted_date": "2026-04-29",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d8b978bae9e14ad7b5fe745e8a0db5a4",
+  "detail_text": "The Defense Information Systems Agency (DISA) intends to award a sole source contract to Akamai Technologies, Inc., for the Global Content Delivery Service (GCDS) III requirement. GCDS is a critical enterprise-level content delivery network (CDN) that provides secure, reliable, and globally distributed services to accelerate, secure, and monitor web content, applications, and data across DoD networks. Akamai is uniquely positioned to fulfill this requirement due to its proprietary infrastructure, deep integration with DISA systems, and proven ability to meet mission-critical needs without operational disruption or increased costs. Businesses capable of fulfilling this requirement are invited to submit detailed capability statements within 15 calendar days of this notice. A solicitation will not be issued due to the sole source nature of the requirement.",
+  "detail_text_length": 865,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b867fc27be7483ba0287b3888390f2c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0b867fc27be7483ba0287b3888390f2c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7d161be180d5ecc7be947a8be3bda2ade44c3106ef1ddba13b1bc351a2440e20.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7d161be180d5ecc7be947a8be3bda2ade44c3106ef1ddba13b1bc351a2440e20.pdf",
+      "file_id": "0b867fc27be7483ba0287b3888390f2c",
+      "file_name": "Sole_Source_Notice_of_Intent_Sources_Sought+842673947_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 133197,
+      "sha256": "7d161be180d5ecc7be947a8be3bda2ade44c3106ef1ddba13b1bc351a2440e20"
+    }
+  ],
+  "_mirror_hash": "7e06896090d6f58a9205f31efcd432cac73d41345006102fb60ae1043b583dd2",
+  "_mirror_run_id": "20260430T134225Z",
+  "_mirror_recorded_at": "2026-04-30T13:51:17.524284+00:00"
+}
