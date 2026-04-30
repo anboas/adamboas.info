@@ -608,6 +608,11 @@ article[data-paper-style="dossier"] .paper-content pre::-webkit-scrollbar-track 
   @apply text-slate-200/90;
 }
 
+article[data-writing-type="note"] .paper-content p {
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
 .paper-content hr {
   @apply my-6 border-slate-800;
 }

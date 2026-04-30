@@ -65,13 +65,31 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.19',
+		date: '2026-04-29',
+		title: 'Writing readability pass: expanded note paragraph spacing',
+		summary: 'Improved readability for note-style writing entries by increasing paragraph spacing in the main content block.',
+		impact: 'Long and medium-length notes now scan more comfortably with clearer visual separation between ideas, including the new CVEAgentNet note.',
+		current: true,
+		tags: ['writing', 'typography', 'ux'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Adjusted note-page paragraph spacing via `article[data-writing-type="note"] .paper-content p` in `src/styles/global.css`.',
+			]},
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.18',
 		date: '2026-04-29',
 		title: 'SEO hardening pass: snippet quality + index hygiene',
 		summary: 'Strengthened branded-search quality by improving top-surface metadata and noindexing utility/duplicate surfaces that were diluting SERP results.',
 		impact: 'Home/profile/capabilities/writing descriptions are more specific, profile now includes ProfilePage schema, and low-priority operational pages are explicitly marked `noindex,follow` to concentrate index authority on core surfaces.',
-		current: true,
 		tags: ['seo', 'metadata', 'indexing', 'schema'],
 		groups: [
 			{ kind: 'Added', items: [
