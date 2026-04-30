@@ -76,13 +76,36 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.29',
+		date: '2026-04-30',
+		title: 'Speaking updates: NavalX title correction + OPNAV N7 C2C24 engagement added',
+		summary: 'Updated the NavalX event naming and added a 2020 OPNAV N7 MyNavy HR cybersecurity off-site opening presentation entry focused on C2C24.',
+		impact: 'Speaking history now reflects corrected NavalX event naming and includes the newly added OPNAV N7 leadership talk context with RDML Danelle Barrett reference.',
+		current: true,
+		tags: ['speaking', 'content', 'correction', 'cybersecurity', 'agile'],
+		groups: [
+			{ kind: 'Added', items: [
+				'Added speaking event `opnav-n7-mynavyhr-cybersecurity-offsite-c2c24-2020` with C2C24 opening-presenter context in `src/data/speaking.ts`.',
+			]},
+			{ kind: 'Changed', items: [
+				'Renamed NavalX event display title to `NavalX Center for Adaptive Warfighting Scrum for Leaders` per user correction.',
+				'Used `2020 (exact date not publicly listed)` for the new OPNAV N7 entry where exact date is unavailable.',
+			]},
+			{ kind: 'Improved', items: [
+				'Expanded speaking taxonomy with C2C24/MyNavy HR/OPNAV N7 tags for filter discoverability.',
+			]},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.28',
 		date: '2026-04-30',
 		title: 'Speaking date correction for NavalX Scrum for Leaders entry',
 		summary: 'Updated the newly added NavalX speaking engagement date from provisional May 7 to confirmed June 9, 2022.',
 		impact: 'Speaking timeline now reflects the corrected event date while keeping the same role and context details.',
-		current: true,
 		tags: ['speaking', 'content', 'correction'],
 		groups: [
 			{ kind: 'Added', items: [] },

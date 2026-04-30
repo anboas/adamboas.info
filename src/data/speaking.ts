@@ -61,7 +61,7 @@ export const speakingEvents: SpeakingEvent[] = [
 	{
 		slug: 'navalx-scrum-for-leaders-2022-agile-cyber-software',
 		title: 'Agile Leadership in Cybersecurity and Software Development',
-		eventName: 'NavalX Scrum for Leaders',
+		eventName: 'NavalX Center for Adaptive Warfighting Scrum for Leaders',
 		eventUrl: 'https://www.navalx.navy.mil/',
 		eventDateRange: 'Jun 9, 2022',
 		sessionDateTime: 'Thu, Jun 9, 2022 · exact session time not publicly listed',
@@ -76,6 +76,26 @@ export const speakingEvents: SpeakingEvent[] = [
 		summary:
 			'Invited as a guest speaker while supporting PEO Digital, Platform Application Services, Software Practice and Automation at Black Pearl. Focused on agile leadership patterns for cyber and software teams, including onboarding pipelines, outreach-driven adoption, and planning rhythms that support mission-paced DevSecOps delivery.',
 		sourceUrl: 'https://blackpearl.navy.mil/',
+	},
+
+	{
+		slug: 'opnav-n7-mynavyhr-cybersecurity-offsite-c2c24-2020',
+		title: 'OPNAV N7 MyNavy HR Cybersecurity Off-Site',
+		eventName: 'OPNAV N7 MyNavy HR Cybersecurity Off-Site',
+		eventUrl: 'https://www.navy.mil/DesktopModules/ArticleCS/Print.aspx?PortalId=1&ModuleId=2652&Article=2959448',
+		eventDateRange: '2020 (exact date not publicly listed)',
+		sessionDateTime: '2020 · exact session time not publicly listed',
+		stage: 'Opening Presentation',
+		track: 'Cybersecurity Leadership',
+		role: 'Opening Presenter',
+		speakerTitle: 'Opening presenter on Compile-to-Combat in 24 hours (C2C24)',
+		speakerOrganization: 'Booz Allen Hamilton support contractor to PEO Digital PAS Software Practice & Automation',
+		sponsorType: 'employer',
+		sponsorName: 'Booz Allen Hamilton',
+		topicTags: ['Compile-to-Combat', 'C2C24', 'MyNavy HR', 'OPNAV N7', 'Cybersecurity', 'Software Development', 'Agile Leadership', 'DevSecOps'],
+		summary:
+			'Opened for RDML Danelle Barrett by laying the foundation for Compile-to-Combat in 24 hours (C2C24), framing its purpose and operational value for mission-paced cybersecurity and software delivery. Session context aligned with MyNavy HR cyber modernization priorities and agile leadership execution.',
+		sourceUrl: 'https://www.navy.mil/DesktopModules/ArticleCS/Print.aspx?PortalId=1&ModuleId=2652&Article=2959448',
 	},
 ];
 
