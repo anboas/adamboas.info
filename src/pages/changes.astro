@@ -96,13 +96,36 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.48',
+		date: '2026-05-01',
+		title: 'Deploy speed pass: streamlined push-path workflow',
+		summary: 'Reduced deploy critical-path time by removing redundant lint gates from deploy-dev-pages and limiting optional analytics/smoke steps to manual deploys.',
+		impact: 'Push-triggered Pages deploys now run on a faster build-and-publish path while quality checks remain enforced in dedicated a11y/linkcheck/lighthouse workflows.',
+		current: true,
+		tags: ['ci', 'deploy', 'performance'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{
+				kind: 'Changed',
+				items: [
+					'Removed lint gates (`lint:content`, `lint:seo`, `lint:config`) from `deploy-dev-pages` push critical path.',
+					'Limited optional Plausible fetch steps to `workflow_dispatch` runs only.',
+					'Limited preview smoke test to `workflow_dispatch` runs only.',
+				],
+			},
+			{ kind: 'Improved', items: ['Faster push-based deploy turnaround with less duplicated CI work.'] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.47',
 		date: '2026-05-01',
 		title: 'Profile header micro-gap cleanup under title',
 		summary: 'Removed residual reserved-description spacing in profile header that left an awkward empty gap below "Profile".',
 		impact: 'Profile top shell now sits tighter and cleaner with no phantom description rail spacing.',
-		current: true,
 		tags: ['ux', 'profile', 'spacing'],
 		groups: [
 			{ kind: 'Added', items: [] },

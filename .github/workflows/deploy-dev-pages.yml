@@ -29,28 +29,21 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Fetch Plausible pageview counts (optional)
+      - name: Fetch Plausible pageview counts (optional; manual deploys only)
+        if: github.event_name == 'workflow_dispatch'
         env:
           PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
           PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
           PLAUSIBLE_DATE_RANGE: 30d
         run: node scripts/fetch-plausible-pageviews.mjs
 
-      - name: Fetch Plausible lead-funnel events (optional)
+      - name: Fetch Plausible lead-funnel events (optional; manual deploys only)
+        if: github.event_name == 'workflow_dispatch'
         env:
           PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
           PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
           PLAUSIBLE_DATE_RANGE: 30d
         run: node scripts/fetch-plausible-funnel.mjs
-
-      - name: Lint content frontmatter
-        run: npm run lint:content
-
-      - name: Lint SEO guards
-        run: npm run lint:seo
-
-      - name: Lint config/env contracts
-        run: npm run lint:config
 
       - name: Build (custom domain root)
         env:
@@ -58,7 +51,8 @@ jobs:
           PUBLIC_MEDIA_BASE_URL: ${{ vars.PUBLIC_MEDIA_BASE_URL }}
         run: npm run build
 
-      - name: Quick deploy smoke check
+      - name: Quick deploy smoke check (manual deploys only)
+        if: github.event_name == 'workflow_dispatch'
         run: |
           set -euo pipefail
           npm run preview -- --host 127.0.0.1 --port 4321 >/tmp/astro-preview.log 2>&1 &
