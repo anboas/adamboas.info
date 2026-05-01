@@ -93,13 +93,29 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.45',
+		date: '2026-04-30',
+		title: 'Profile header rail hard-lock: single-line resume + clearance',
+		summary: 'Converted profile header actions into one non-wrapping inline rail (resume link + separator + clearance) to prevent any stacked rendering.',
+		impact: 'Profile header now preserves one-line action presentation consistently at desktop widths.',
+		current: true,
+		tags: ['ux', 'profile', 'typography', 'consistency'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: ['Refactored `/profile/` action slot to a single `inline-flex` + `whitespace-nowrap` line containing `Resume PDF ↗` and `Clearance: ...`.'] },
+			{ kind: 'Improved', items: ['Eliminated residual action-rail stacking behavior reported after prior fix.'] },
+			{ kind: 'Fixed', items: ['Addressed follow-up user report that profile header actions were still not on one line.'] },
+		],
+	},
+
 	{
 		version: 'v2.4.44',
 		date: '2026-04-30',
 		title: 'Profile header action rail: inline resume + clearance alignment',
 		summary: 'Updated profile top-header actions so resume link and clearance metadata render on one line instead of stacked rows.',
 		impact: 'Profile header right rail now matches expected single-line action layout at desktop widths.',
-		current: true,
 		tags: ['ux', 'consistency', 'profile'],
 		groups: [
 			{ kind: 'Added', items: [] },
