@@ -95,13 +95,29 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.47',
+		date: '2026-05-01',
+		title: 'Profile header micro-gap cleanup under title',
+		summary: 'Removed residual reserved-description spacing in profile header that left an awkward empty gap below "Profile".',
+		impact: 'Profile top shell now sits tighter and cleaner with no phantom description rail spacing.',
+		current: true,
+		tags: ['ux', 'profile', 'spacing'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: ['Profile-only header override now suppresses hidden description placeholder and zeroes description margin/line-height.'] },
+			{ kind: 'Improved', items: ['Eliminated visual dead-space under profile title while preserving right-rail alignment.'] },
+			{ kind: 'Fixed', items: ['Resolved user-reported weird gap/spacing under profile header words.'] },
+		],
+	},
+
 	{
 		version: 'v2.4.46',
 		date: '2026-05-01',
 		title: 'Profile header rail alignment correction (single-line + vertical centering)',
 		summary: 'Adjusted profile header compact overrides so the resume/clearance rail stays single-line and vertically aligned with the header title region instead of dropping to the lower border.',
 		impact: 'Profile top shell now presents the right rail in a cleaner, intentional position while preserving no-wrap behavior.',
-		current: true,
 		tags: ['ux', 'profile', 'headers', 'consistency'],
 		groups: [
 			{ kind: 'Added', items: [] },

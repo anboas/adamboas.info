@@ -272,6 +272,14 @@ const profileModalData = {
 		--surface-header-row-min-height: 0;
 		--surface-header-actions-min-height: 0;
 	}
+	:global(.profile-header-compact .surface-header-description) {
+		margin-top: 0;
+		min-height: 0;
+		line-height: 0;
+	}
+	:global(.profile-header-compact .surface-header-description-placeholder) {
+		display: none;
+	}
 	@media (min-width: 768px) {
 		:global(.profile-header-compact .surface-header-row) {
 			align-items: center;
