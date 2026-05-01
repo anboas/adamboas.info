@@ -49,8 +49,13 @@ const profileModalData = {
 			},
 		})}
 	/>
-	<SurfacePageHeader stickyActive="profile" eyebrow="Background" title="Profile">
-		<div slot="actions" class="flex items-center text-xs text-slate-400">
+	<SurfacePageHeader
+		stickyActive="profile"
+		eyebrow="Background"
+		title="Profile"
+		headerClass="profile-header-compact"
+	>
+		<div slot="actions" class="profile-header-rail text-xs text-slate-400">
 			<p class="inline-flex flex-nowrap items-center gap-2 whitespace-nowrap">
 				<a
 					href={withBase('/files/adam-boas-resume.pdf')}
@@ -58,7 +63,7 @@ const profileModalData = {
 					>Resume PDF ↗</a
 				>
 				<span aria-hidden="true" class="text-slate-600">•</span>
-				<span class="whitespace-nowrap uppercase tracking-wide">Clearance: {RESUME_CLEARANCE}</span>
+				<span class="whitespace-nowrap tracking-wide">Clearance: {RESUME_CLEARANCE}</span>
 			</p>
 		</div>
 	</SurfacePageHeader>
@@ -261,6 +266,21 @@ const profileModalData = {
 </SiteLayout>
 
 <style>
+	:global(.profile-header-compact.surface-header) {
+		--surface-header-description-min-height-mobile: 0;
+		--surface-header-description-min-height: 0;
+		--surface-header-row-min-height: 0;
+		--surface-header-actions-min-height: 0;
+	}
+	@media (min-width: 768px) {
+		:global(.profile-header-compact .surface-header-row) {
+			align-items: center;
+		}
+		:global(.profile-header-compact .surface-header-actions) {
+			align-items: center;
+		}
+	}
+
 	.profile-modal-trigger {
 		background: transparent;
 		border: 0;

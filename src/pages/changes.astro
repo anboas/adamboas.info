@@ -94,13 +94,29 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.46',
+		date: '2026-05-01',
+		title: 'Profile header rail alignment correction (single-line + vertical centering)',
+		summary: 'Adjusted profile header compact overrides so the resume/clearance rail stays single-line and vertically aligned with the header title region instead of dropping to the lower border.',
+		impact: 'Profile top shell now presents the right rail in a cleaner, intentional position while preserving no-wrap behavior.',
+		current: true,
+		tags: ['ux', 'profile', 'headers', 'consistency'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: ['Added profile-specific `SurfaceHeader` token overrides and md+ vertical-centering rules for the header/action row via `profile-header-compact` class.'] },
+			{ kind: 'Improved', items: ['Eliminated low-slung action rail presentation shown in screenshot while keeping one-line rail requirement.'] },
+			{ kind: 'Fixed', items: ['Resolved follow-up profile header layout issue after initial one-line rail hard-lock.'] },
+		],
+	},
+
 	{
 		version: 'v2.4.45',
 		date: '2026-04-30',
 		title: 'Profile header rail hard-lock: single-line resume + clearance',
 		summary: 'Converted profile header actions into one non-wrapping inline rail (resume link + separator + clearance) to prevent any stacked rendering.',
 		impact: 'Profile header now preserves one-line action presentation consistently at desktop widths.',
-		current: true,
 		tags: ['ux', 'profile', 'typography', 'consistency'],
 		groups: [
 			{ kind: 'Added', items: [] },
