@@ -42,18 +42,19 @@ const hasDescription = Boolean(descriptionText);
 <style>
 	.surface-header {
 		padding-top: var(--surface-header-pt, 0.25rem);
-		padding-bottom: var(--surface-header-pb, 0.75rem);
+		padding-bottom: var(--surface-header-pb, 0.55rem);
 	}
 	.surface-header-row {
 		display: flex;
 		flex-direction: column;
 		gap: var(--surface-header-gap, 0.5rem);
-		padding-bottom: var(--surface-header-row-pb, 0.75rem);
+		padding-bottom: var(--surface-header-row-pb, 0.55rem);
 		border-bottom: 1px solid var(--surface-header-border, rgb(30 41 59));
 		min-height: var(--surface-header-row-min-height-mobile, auto);
 	}
 	.surface-header-main {
-		max-width: 60rem;
+		max-width: var(--surface-header-main-max-width, 72rem);
+		min-width: 0;
 	}
 	.surface-header-eyebrow {
 		font-size: 11px;
@@ -71,11 +72,11 @@ const hasDescription = Boolean(descriptionText);
 		color: rgb(248 250 252);
 	}
 	.surface-header-description {
-		margin-top: 0.5rem;
+		margin-top: 0.4rem;
 		font-size: 0.875rem;
 		line-height: 1.5;
 		color: rgb(203 213 225);
-		max-width: var(--surface-header-description-max-width, 84ch);
+		max-width: var(--surface-header-description-max-width, 120ch);
 		min-height: var(--surface-header-description-min-height-mobile, 0);
 	}
 	.surface-header-description-placeholder {
@@ -95,26 +96,27 @@ const hasDescription = Boolean(descriptionText);
 	}
 	@media (min-width: 768px) {
 		.surface-header {
-			padding-bottom: 1rem;
+			padding-bottom: 0.75rem;
 		}
 		.surface-header-row {
 			flex-direction: row;
 			justify-content: space-between;
-			align-items: flex-end;
-			gap: 1rem;
-			padding-bottom: 1rem;
-			min-height: var(--surface-header-row-min-height, 5.25rem);
+			align-items: flex-start;
+			gap: 0.85rem;
+			padding-bottom: 0.7rem;
+			min-height: var(--surface-header-row-min-height, auto);
 		}
 		.surface-header-title {
 			font-size: 1.875rem;
 		}
 		.surface-header-description {
-			min-height: var(--surface-header-description-min-height, 3rem);
+			min-height: var(--surface-header-description-min-height, 0);
 		}
 		.surface-header-actions {
 			justify-content: flex-end;
-			align-items: flex-end;
-			min-height: var(--surface-header-actions-min-height, 2.25rem);
+			align-items: flex-start;
+			align-self: flex-start;
+			min-height: var(--surface-header-actions-min-height, 0);
 		}
 	}
 </style>

@@ -97,13 +97,35 @@ const releases: Release[] = [
 
 
 
+
+	{
+		version: 'v2.4.49',
+		date: '2026-05-01',
+		title: 'Header action top-align + tighter divider spacing across shared surfaces',
+		summary: 'Updated shared header layout so action rails anchor to the top-right and tightened divider spacing; also widened description rail to avoid awkward writing-summary wraps.',
+		impact: 'Header buttons now consistently sit at the top, divider feels closer to content, and writing summary wraps less aggressively.',
+		current: true,
+		tags: ['ux', 'headers', 'consistency', 'typography'],
+		groups: [
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [
+				'Updated `SurfaceHeader` desktop alignment from bottom-anchored to top-anchored actions (`align-items:flex-start` on row/actions).',
+				'Tightened shared header bottom spacing (`surface-header` and row padding/gap tokens) to bring divider line closer to content.',
+				'Expanded default description width ceiling and main max width to reduce premature wrapping in writing header summary.',
+				'Updated writing and experience header action wrappers to top alignment (`md:items-start`).',
+				'Updated profile compact header override to top-align with shared behavior while keeping description rail suppressed.',
+			] },
+			{ kind: 'Improved', items: ['Resolved repeated user-reported header action vertical misalignment and awkward writing line breaks.'] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
 	{
 		version: 'v2.4.48',
 		date: '2026-05-01',
 		title: 'Deploy speed pass: streamlined push-path workflow',
 		summary: 'Reduced deploy critical-path time by removing redundant lint gates from deploy-dev-pages and limiting optional analytics/smoke steps to manual deploys.',
 		impact: 'Push-triggered Pages deploys now run on a faster build-and-publish path while quality checks remain enforced in dedicated a11y/linkcheck/lighthouse workflows.',
-		current: true,
 		tags: ['ci', 'deploy', 'performance'],
 		groups: [
 			{ kind: 'Added', items: [] },
