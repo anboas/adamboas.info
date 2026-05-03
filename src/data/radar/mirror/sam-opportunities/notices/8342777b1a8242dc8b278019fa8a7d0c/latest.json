@@ -1,0 +1,46 @@
+{
+  "id": "sam-8342777b1a8242dc8b278019fa8a7d0c",
+  "title": "Crash Investigation Sampling System (CISS) – Quality Control Center (QCC)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8342777b1a8242dc8b278019fa8a7d0c",
+  "opportunity_url": "https://sam.gov/opp/8342777b1a8242dc8b278019fa8a7d0c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8342777b1a8242dc8b278019fa8a7d0c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8342777b1a8242dc8b278019fa8a7d0c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "693JJ926R000031",
+  "agency_path": "TRANSPORTATION, DEPARTMENT OF.NATIONAL HIGHWAY TRAFFIC SAFETY ADMINISTRATION.693JJ9 NHTSA OFFICE OF ACQUISTION",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8342777b1a8242dc8b278019fa8a7d0c",
+  "detail_text": "The objective of this Contract is to provide support for the Quality Control Center (QCC) for NHTSA’s Crash Investigation Sampling System (CISS). This includes establishment and operation of a data and performance quality control center; quality control review of CISS cases for up to seventy-three (73) PSUs (sixty-five (65) currently operational and eight (8) anticipated to be added during contract performance); sampling review of PCRs entered by PSUs; participation in training, technical meetings, and workshops; and conducting quality control site visits to PSU locations.",
+  "detail_text_length": 579,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9406245721a84458936f9991c6e87d24/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9406245721a84458936f9991c6e87d24/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2de79e32f4d7e52068138a331d584d48d1708c01baf0e998df0fa4dec8d808de.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2de79e32f4d7e52068138a331d584d48d1708c01baf0e998df0fa4dec8d808de.pdf",
+      "file_id": "9406245721a84458936f9991c6e87d24",
+      "file_name": "SAM+Post+-+Synopsis+CISS+PSU+Quality+Control+Center+693JJ926R000031+-+30+Apr+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 188572,
+      "sha256": "2de79e32f4d7e52068138a331d584d48d1708c01baf0e998df0fa4dec8d808de"
+    }
+  ],
+  "_mirror_hash": "166d2d7f18d26242aee6b38c9f47dcf49defccca1899540717116c576a0abfc6",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.521308+00:00"
+}

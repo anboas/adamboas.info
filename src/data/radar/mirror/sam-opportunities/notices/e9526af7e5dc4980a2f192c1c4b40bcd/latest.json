@@ -1,0 +1,57 @@
+{
+  "id": "sam-e9526af7e5dc4980a2f192c1c4b40bcd",
+  "title": "Translation Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9526af7e5dc4980a2f192c1c4b40bcd",
+  "opportunity_url": "https://sam.gov/opp/e9526af7e5dc4980a2f192c1c4b40bcd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e9526af7e5dc4980a2f192c1c4b40bcd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e9526af7e5dc4980a2f192c1c4b40bcd",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SP330026Q0138",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA DISTRIBUTION.DLA DISTRIBUTION",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e9526af7e5dc4980a2f192c1c4b40bcd",
+  "detail_text": "DLA Distribution New Cumberland, PA has a requirement for the translation of government documents into a designated language for use by government employees in the performance of their duties. Delivery of the products in conformance to the established timeline is a key objective. The services include: (1) Translate documents into a language designated by the Government. Languages include, but are not limited to, Japanese and Arabic (2) Prepare electronic copies of the translated document to the Government in a format or formats as directed by the Government. Format examples include, but are not limited to, Microsoft Word or Adobe pdf. (3) Proofread and quality check documents to ensure grammatical correctness, correct spelling, and adherence to format. (4) Transmit electronic copies of the translated documents to the government.",
+  "detail_text_length": 840,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0657c4f27904c5faeb33b34bfb6cd21/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3feab1a0fa343ac9cc0515b1e6fbd50/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0657c4f27904c5faeb33b34bfb6cd21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b95dba9f4428673f760253763701ca588aa1f535b35388d114dd7807bc610d0d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b95dba9f4428673f760253763701ca588aa1f535b35388d114dd7807bc610d0d.docx",
+      "file_id": "b0657c4f27904c5faeb33b34bfb6cd21",
+      "file_name": "Synopsis.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16670,
+      "sha256": "b95dba9f4428673f760253763701ca588aa1f535b35388d114dd7807bc610d0d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d3feab1a0fa343ac9cc0515b1e6fbd50/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3341b6344b3cfdb20ae4be64399e8f629d8df393da95fd7fddf95042403f2be7.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3341b6344b3cfdb20ae4be64399e8f629d8df393da95fd7fddf95042403f2be7.docx",
+      "file_id": "d3feab1a0fa343ac9cc0515b1e6fbd50",
+      "file_name": "SOW+Translation+Services.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16939,
+      "sha256": "3341b6344b3cfdb20ae4be64399e8f629d8df393da95fd7fddf95042403f2be7"
+    }
+  ],
+  "_mirror_hash": "0438ee813472f3f151069796a248f13c22f195bdc35cc32e14a0b4416d85d2aa",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.354132+00:00"
+}

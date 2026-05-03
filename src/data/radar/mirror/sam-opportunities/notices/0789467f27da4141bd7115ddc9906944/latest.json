@@ -1,0 +1,46 @@
+{
+  "id": "sam-0789467f27da4141bd7115ddc9906944",
+  "title": "FY26 Construction Forecast: Jefferson Barracks ANGS, St. Louis MO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0789467f27da4141bd7115ddc9906944",
+  "opportunity_url": "https://sam.gov/opp/0789467f27da4141bd7115ddc9906944/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0789467f27da4141bd7115ddc9906944/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0789467f27da4141bd7115ddc9906944",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "JB2601",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO MO.USPFO MO PROCUREMENT.W7NJ USPFO ACTIVITY MOANG 131",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0789467f27da4141bd7115ddc9906944",
+  "detail_text": "This special notice is being posted by the 131st Mission Support Group Contracting Office to provide small businesses a forecast of upcoming construction/repair contract opportunities at Jefferson Barracks Air National Guard Station (ANGS), St. Louis MO 63125. This notice will be updated periodically throughout the fiscal year as projected requirements change. Please follow this notice and add your firm to the interested vendors list to receive updates. If your firm is interested in submitting a response to any projected procurement, please send the following information to the POC(s) via email. There is no deadline for submitting information. - SAM UEI Number - Single Project & Aggregate Bonding Capacity - Summary of In-House Capabilities All projected procurements are subject to revision or cancellation. This notice is for informational purposes only and doesn’t take the place of pre-solicitation or solicitation notices for individual projects nor does it commit the Government to purchase the services described. Final decisions on the extent of competition, small business participation, estimated value, or any aspect of the procurement are made if/when a solicitation is posted to SAM.gov. Update 10 February 2026: Project list updated noting which projects have been awarded so far this FY. No new projects added. Planned execution methods updated to new RFO FAR procedures (e.g., using commercial services RFQ instead of sealed bidding). Update 1 May 2026: Solicitation numbers and set-asides updated.",
+  "detail_text_length": 1523,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc35923a73a840ada3a64f1d99141371/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cc35923a73a840ada3a64f1d99141371/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dcd5815d6f77490d55a57fa58f1cc0ceb39dd378597a0dca360de432df128fbf.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dcd5815d6f77490d55a57fa58f1cc0ceb39dd378597a0dca360de432df128fbf.xlsx",
+      "file_id": "cc35923a73a840ada3a64f1d99141371",
+      "file_name": "JB2601+Project+List+cao20260501.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19560,
+      "sha256": "dcd5815d6f77490d55a57fa58f1cc0ceb39dd378597a0dca360de432df128fbf"
+    }
+  ],
+  "_mirror_hash": "c1797bd6a04319d6315a47d4f16bdbeb5be8bbd160cc6dce1c89f48413bc5e0f",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.552880+00:00"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "sam-3a3be425be23451a81e7d4d88b4ada06",
+  "title": "Sources Sought Notice - Petrophysical Software Mai",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a3be425be23451a81e7d4d88b4ada06",
+  "opportunity_url": "https://sam.gov/opp/3a3be425be23451a81e7d4d88b4ada06/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3a3be425be23451a81e7d4d88b4ada06/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3a3be425be23451a81e7d4d88b4ada06",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "DOIGFBO260014",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFC OF ACQUISITION  GRANTS-DENVER",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Solicitation notice type: Solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a3be425be23451a81e7d4d88b4ada06",
+  "detail_text": "Sources Sought Notice - Petrophysical Software Maintenance Agreement",
+  "detail_text_length": 68,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd7a534338004635859abf74a2e59a4f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe38b78f8f77453ab5e9fdea7d1bcbb5/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fd7a534338004635859abf74a2e59a4f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/592f04aa7e4a2b29659a68b624d69df7ba94bb4af6840a2844dcde5a47caeb6e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/592f04aa7e4a2b29659a68b624d69df7ba94bb4af6840a2844dcde5a47caeb6e.pdf",
+      "file_id": "fd7a534338004635859abf74a2e59a4f",
+      "file_name": "Sol_DOIGFBO260014.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 141628,
+      "sha256": "592f04aa7e4a2b29659a68b624d69df7ba94bb4af6840a2844dcde5a47caeb6e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fe38b78f8f77453ab5e9fdea7d1bcbb5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/59f805df61069d4b328af8b4871112083985b7746d49a037ea1844bfd249fb0e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/59f805df61069d4b328af8b4871112083985b7746d49a037ea1844bfd249fb0e.pdf",
+      "file_id": "fe38b78f8f77453ab5e9fdea7d1bcbb5",
+      "file_name": "A14_SOURCES_SOUGHT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 69444,
+      "sha256": "59f805df61069d4b328af8b4871112083985b7746d49a037ea1844bfd249fb0e"
+    }
+  ],
+  "_mirror_hash": "fb4bf26e3edf5ce0e6e5ba4c569c15cb1c9fead678a50444079319f989dbd14b",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.261950+00:00"
+}

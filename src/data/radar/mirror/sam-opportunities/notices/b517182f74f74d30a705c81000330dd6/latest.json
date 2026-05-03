@@ -1,0 +1,57 @@
+{
+  "id": "sam-b517182f74f74d30a705c81000330dd6",
+  "title": "Sole Source  Award to Petterson Pope Inc.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b517182f74f74d30a705c81000330dd6",
+  "opportunity_url": "https://sam.gov/opp/b517182f74f74d30a705c81000330dd6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b517182f74f74d30a705c81000330dd6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b517182f74f74d30a705c81000330dd6",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "M6700425Q0056",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.COMMANDER",
+  "posted_date": "2026-05-02",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b517182f74f74d30a705c81000330dd6",
+  "detail_text": "The Marine Corps Logistics Command, Contracts Department (CONT) intends to solicit and contract with Patterson Pope Inc. (CAGE 1H7V5) of Charlotte, North Carolina on a sole-source basis for the purchase of maintenance and repir parts for the ActivRac P30 system with option years. The North American Industry Classification Standard (NAICS) code assigned is 811310 - Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance. No solicitation will be posted on this website for this requirement. A Justification and Approval document is attached to this notice. Any potential source may contact the persons indicated above to discuss their ability to offer the required services for future acquisitions",
+  "detail_text_length": 751,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31bcb940397146728e648d92989a7f61/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8cec921864441f287015f4dd66d114e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31bcb940397146728e648d92989a7f61/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/812275c15c7184c725a56f062cb362ebcb18b0aacec0c17133b7974bfb46dd78.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/812275c15c7184c725a56f062cb362ebcb18b0aacec0c17133b7974bfb46dd78.pdf",
+      "file_id": "31bcb940397146728e648d92989a7f61",
+      "file_name": "A3_+JA+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 274164,
+      "sha256": "812275c15c7184c725a56f062cb362ebcb18b0aacec0c17133b7974bfb46dd78"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8cec921864441f287015f4dd66d114e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3d932fd0a0dc19d78814fc4daee548528a051b944a0367e5eea16a6530af952b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3d932fd0a0dc19d78814fc4daee548528a051b944a0367e5eea16a6530af952b.pdf",
+      "file_id": "f8cec921864441f287015f4dd66d114e",
+      "file_name": "D01_Notice+of+Intent+Active+Rac+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 109851,
+      "sha256": "3d932fd0a0dc19d78814fc4daee548528a051b944a0367e5eea16a6530af952b"
+    }
+  ],
+  "_mirror_hash": "d4a9f2803acc9acc2d6e93411b4a079b233875a693795c37fde90bf104559db8",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.385984+00:00"
+}

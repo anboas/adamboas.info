@@ -1,0 +1,46 @@
+{
+  "id": "sam-967466a370b447e9aca38a7de7954e6a",
+  "title": "Supervisory Control and Data Acquisition (SCADA) System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=967466a370b447e9aca38a7de7954e6a",
+  "opportunity_url": "https://sam.gov/opp/967466a370b447e9aca38a7de7954e6a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/967466a370b447e9aca38a7de7954e6a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "967466a370b447e9aca38a7de7954e6a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA462526Q1017",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4625  509 CONS CC",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=967466a370b447e9aca38a7de7954e6a",
+  "detail_text": "NOTICE OF INTENT TO SOLE SOURCE Name: Supervisory Control and Data Acquisition (SCADA) Service Reference: FA462526Q1017 Whiteman AFB intends to award a sole source contract to HSQ Technology (CAGE 3S480) as authorized by RFO 6.103-1, \"Only one responsible source and no other supplies or services will satisfy agency requirements.\" This notice contains the Sole Source Justification. THIS NOTICE IS NOT A SOLICITATION. The solicitation will not be made available through the GPE. In order to obtain the solicitation, a responsible source must email the primary point of contact identified in this notice No Later Than 08 May 2026, 11:00AM Central Time. IAW RFO 5.101(c)(4)(vi), all responsible sources may submit a a quotation, bid, or proposal, as appropriate, which will be considered by the agency. An interested party must certify with the submission of its offer that its proposed services and products integrate seamlessly with HSQ's software and hardware. An offer whose services and products lack compatibility with Whiteman AFB's exisiting SCADA system will be deemed nonconforming; thus, ineligible for award.",
+  "detail_text_length": 1119,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d79f3b602b44725a299767aa4961fc6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8d79f3b602b44725a299767aa4961fc6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/44762a0cacc79a52daf98dc0282c8c36976b860866de110ff8491f2195f28a17.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/44762a0cacc79a52daf98dc0282c8c36976b860866de110ff8491f2195f28a17.pdf",
+      "file_id": "8d79f3b602b44725a299767aa4961fc6",
+      "file_name": "26Q1017+Sole+Source+Justification_SCADA+Mx_17Mar26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2541329,
+      "sha256": "44762a0cacc79a52daf98dc0282c8c36976b860866de110ff8491f2195f28a17"
+    }
+  ],
+  "_mirror_hash": "3870cec64118d947c7b4e7855559198b5ace13a36cb4a93f67c791f7f4f1e559",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.381625+00:00"
+}

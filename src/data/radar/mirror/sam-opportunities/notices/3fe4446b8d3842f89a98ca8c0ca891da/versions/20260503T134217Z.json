@@ -1,0 +1,47 @@
+{
+  "id": "sam-3fe4446b8d3842f89a98ca8c0ca891da",
+  "title": "Sources Sought_Breech Lock",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3fe4446b8d3842f89a98ca8c0ca891da",
+  "opportunity_url": "https://sam.gov/opp/3fe4446b8d3842f89a98ca8c0ca891da/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3fe4446b8d3842f89a98ca8c0ca891da/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3fe4446b8d3842f89a98ca8c0ca891da",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANDTA-26-P-0000_029546",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC- DTA",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3fe4446b8d3842f89a98ca8c0ca891da",
+  "detail_text": "Army Contracting Command - Detroit Arsenal (ACC-DTA) is conducting a Market Survey to determine the level of interest among qualified Contractors for the production of the Breech Lock, NSN: 1005-01-536-5640 and 1005-01-536-5643. The Government intends to solicit these items through the BOAST Program . If a contractor is currently not approved under BOAST, please refer to W912CH-26-R-0001 on SAM.gov for more information. Suppliers capable of manufacturing this item must indicate so in response, by email, to Ryan Nawrocki, ryan.d.nawrocki.civ@army.mil . The purpose of this market survey is to identify potential offerors and gather information for planning purposes about capabilities of each industry source as defined in Federal Acquisition Regulation 15.201(e). The input will help ACC-DTA ascertain the interest, capability, and capacity of all potential offerors. The market survey does not constitute a solicitation and shall not be construed as commitment by the Government. No telephone responses will be accepted.",
+  "detail_text_length": 1027,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9a9617979574435b9cb558ea185557a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9a9617979574435b9cb558ea185557a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/909779662ab815421e94dbf132aad1bee05576e50e621d493b037ae27ac839ad.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/909779662ab815421e94dbf132aad1bee05576e50e621d493b037ae27ac839ad.docx",
+      "file_id": "b9a9617979574435b9cb558ea185557a",
+      "file_name": "Sources+Sought_Questionnaire_029546.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31386,
+      "sha256": "909779662ab815421e94dbf132aad1bee05576e50e621d493b037ae27ac839ad"
+    }
+  ],
+  "_mirror_hash": "694c84a849d3af4f6588d3b4a133733d03cd022a19c02dffa0f09b5144112973",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.237545+00:00"
+}

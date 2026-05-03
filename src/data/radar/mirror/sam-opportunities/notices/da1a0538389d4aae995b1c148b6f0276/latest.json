@@ -1,0 +1,57 @@
+{
+  "id": "sam-da1a0538389d4aae995b1c148b6f0276",
+  "title": "Bureau of Prisons - Outsourcing Health Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=da1a0538389d4aae995b1c148b6f0276",
+  "opportunity_url": "https://sam.gov/opp/da1a0538389d4aae995b1c148b6f0276/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/da1a0538389d4aae995b1c148b6f0276/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "da1a0538389d4aae995b1c148b6f0276",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "BOP-2026-Outsourcing_Health_Services",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.FAO",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=da1a0538389d4aae995b1c148b6f0276",
+  "detail_text": "The purpose of this notice is to obtain information from qualified sources regarding the capability, capacity, and commercial practices associated with providing comprehensive healthcare services for the inmate population of the FBOP.",
+  "detail_text_length": 234,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/375a5c8cfb344e8d9b645c990320075b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/840e668438d346789e7347c59afbb52c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/375a5c8cfb344e8d9b645c990320075b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/96fe5cea72f2cd94f02389b6a6b8baf76c12497e86c2e659e9237d71aeb69b28.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/96fe5cea72f2cd94f02389b6a6b8baf76c12497e86c2e659e9237d71aeb69b28.pdf",
+      "file_id": "375a5c8cfb344e8d9b645c990320075b",
+      "file_name": "Outsourcing+Health+Services+RFI+v5.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 399406,
+      "sha256": "96fe5cea72f2cd94f02389b6a6b8baf76c12497e86c2e659e9237d71aeb69b28"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/840e668438d346789e7347c59afbb52c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf72e70a08e5d8d7fdaa02f7ddbbae740ceacfc003753cc6eeab97280920ac9a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf72e70a08e5d8d7fdaa02f7ddbbae740ceacfc003753cc6eeab97280920ac9a.pdf",
+      "file_id": "840e668438d346789e7347c59afbb52c",
+      "file_name": "Institution+Medical+and+Mental+Health+Care+Level.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 65385,
+      "sha256": "cf72e70a08e5d8d7fdaa02f7ddbbae740ceacfc003753cc6eeab97280920ac9a"
+    }
+  ],
+  "_mirror_hash": "8acc0d7d2c760ddbc6fee12ed11cc4b177c76ea43281c5158f51a6d9169f91be",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.463048+00:00"
+}

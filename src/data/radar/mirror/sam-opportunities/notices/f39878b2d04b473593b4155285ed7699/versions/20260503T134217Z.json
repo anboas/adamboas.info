@@ -1,0 +1,57 @@
+{
+  "id": "sam-f39878b2d04b473593b4155285ed7699",
+  "title": "Sole Source Award to Comet Technologies USA, INC.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f39878b2d04b473593b4155285ed7699",
+  "opportunity_url": "https://sam.gov/opp/f39878b2d04b473593b4155285ed7699/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f39878b2d04b473593b4155285ed7699/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f39878b2d04b473593b4155285ed7699",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "M6700426Q0002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.COMMANDER",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-03",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f39878b2d04b473593b4155285ed7699",
+  "detail_text": "The Marine Corps Logistics Command, Contracts Department (CONT) intends to solicit and contract with Comet Technologies USA Inc DBA YXLON International (CAGE 6XWP3) of Shelton, Connecticut on a sole-source basis for Preventative Manintenance and Service for YXLON International X-Ray-System Modle MG452. The North American Industry Classification Standard (NAICS) code assigned is 811310- Maint/Repair/Rebuild Of Equipment- Special Industry Machinery. No solicitation will be posted on this website for this requirement. A Justification and Approval document is attached to this notice. Any potential source may contact the persons indicated above to discuss their ability to offer the required services for future acquisitions.",
+  "detail_text_length": 728,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11788806767a468da34af7a19a221f24/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/661f239462e74db7b798f4419c7aea0d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/11788806767a468da34af7a19a221f24/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cf813b81fa6c192abc7adab9b2e5ab06e91149ed04e36ca66cc0736ed03d253c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cf813b81fa6c192abc7adab9b2e5ab06e91149ed04e36ca66cc0736ed03d253c.pdf",
+      "file_id": "11788806767a468da34af7a19a221f24",
+      "file_name": "D01_Notice+of+Intent+Comet.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 173546,
+      "sha256": "cf813b81fa6c192abc7adab9b2e5ab06e91149ed04e36ca66cc0736ed03d253c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/661f239462e74db7b798f4419c7aea0d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/000830aef1485c82cb610f663d05895fad47e74a49c9cc7c8846c64b443e7fa8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/000830aef1485c82cb610f663d05895fad47e74a49c9cc7c8846c64b443e7fa8.pdf",
+      "file_id": "661f239462e74db7b798f4419c7aea0d",
+      "file_name": "A3-Revised+JA+RA+SIGNED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 136353,
+      "sha256": "000830aef1485c82cb610f663d05895fad47e74a49c9cc7c8846c64b443e7fa8"
+    }
+  ],
+  "_mirror_hash": "c5b723bdf00342920b65fabda7ada2d5bc18009e1eabe739e74cc740209963b0",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.278893+00:00"
+}

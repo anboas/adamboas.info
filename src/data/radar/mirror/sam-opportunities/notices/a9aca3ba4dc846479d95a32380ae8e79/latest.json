@@ -1,0 +1,112 @@
+{
+  "id": "sam-a9aca3ba4dc846479d95a32380ae8e79",
+  "title": "Dilution Refrigerator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9aca3ba4dc846479d95a32380ae8e79",
+  "opportunity_url": "https://sam.gov/opp/a9aca3ba4dc846479d95a32380ae8e79/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a9aca3ba4dc846479d95a32380ae8e79/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a9aca3ba4dc846479d95a32380ae8e79",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "BSA476517",
+  "agency_path": "ENERGY, DEPARTMENT OF.ENERGY, DEPARTMENT OF.BROOKHAVEN NATL LAB -DOE CONTRACTOR",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a9aca3ba4dc846479d95a32380ae8e79",
+  "detail_text": "This is a pre-solicitation notice for Dilution Rerigerator an ultralow temperature quantum materials/devices measurement system (UTQMD) for the Center for Functional Nanomaterials (CFN) & the Codesign Center for Quantum Advantage (C2QA) at Brookhaven National Laboratory. The UTQMD instrument, hereafter referred to as “Instrument” shall be designed as a cryostat with an integrated high-field magnet, providing an ultralow base temperature. The system uses a helium-4 pulse tube to precool to 4K and a helium-3/helium-4 mixture to reach <10 mK temperature. The low temperature helps to minimize thermal fluctuations and thus improve the quantum coherence of the qubits/enable to observe quantum phenomena such as superconductor, exciton condensate physics. It shall support (1) electronic transport and optical spectroscopy of two-dimensional heterostructure devices and (2) RF dielectric-loss characterization using high-Q microwave resonators for superconducting qubit materials – both at temperatures < 10 mK, with expected cooling power of (typical 14 μW) on the experimental flange at 20 mK. The UTQMD should be a cryogen-free (“dry”) dilution refrigerator system and should include two separate vacuum and radiation shield set to support these two measurements. As an instrument offered to general users in a NSRC, the Instrument shall be engineered for safe, user-friendly operation (hardware and control software) and demonstrate a proven track record of low-maintenance, low-downtime operation.",
+  "detail_text_length": 1504,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0844a9f3f9f348f786762e6785fc466d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d69aa5f3bd4936b881022ba425e5e4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a70d25f474d4ff3b69117aa8c777cff/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae03c64259e44c498e5c5ca26411f7f3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b83f17dc223c47fbb7d0c2a4f7213412/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9d58d89304a4b46ba20f1eececd4aeb/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f4e49dfd1b9648849f32163e4d893898/download"
+  ],
+  "resource_count": 7,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0844a9f3f9f348f786762e6785fc466d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d67fc5abae5af11df5d6168a60f7a7e7f27044efa63f660cb76c0e47a241ef6e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d67fc5abae5af11df5d6168a60f7a7e7f27044efa63f660cb76c0e47a241ef6e.pdf",
+      "file_id": "0844a9f3f9f348f786762e6785fc466d",
+      "file_name": "B1+Enclosure+F_W8+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 314634,
+      "sha256": "d67fc5abae5af11df5d6168a60f7a7e7f27044efa63f660cb76c0e47a241ef6e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d69aa5f3bd4936b881022ba425e5e4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c972ad7783fef199e00cee1c41ff49efe4a90197561ae18f78056a7ce4123867.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c972ad7783fef199e00cee1c41ff49efe4a90197561ae18f78056a7ce4123867.pdf",
+      "file_id": "77d69aa5f3bd4936b881022ba425e5e4",
+      "file_name": "B1+Enclosure+A+Draft+Contract+476517+with+attachments.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2336269,
+      "sha256": "c972ad7783fef199e00cee1c41ff49efe4a90197561ae18f78056a7ce4123867"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9a70d25f474d4ff3b69117aa8c777cff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53.pdf",
+      "file_id": "9a70d25f474d4ff3b69117aa8c777cff",
+      "file_name": "B1+Enclosure+E_W9+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 140815,
+      "sha256": "2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae03c64259e44c498e5c5ca26411f7f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8e2ef4f45328779e851855f7ed11c2cbebeb969afbfec82a683d17ec579e0df.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8e2ef4f45328779e851855f7ed11c2cbebeb969afbfec82a683d17ec579e0df.pdf",
+      "file_id": "ae03c64259e44c498e5c5ca26411f7f3",
+      "file_name": "B1+Enclosure+B+AMS-FORM-050.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 922844,
+      "sha256": "a8e2ef4f45328779e851855f7ed11c2cbebeb969afbfec82a683d17ec579e0df"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b83f17dc223c47fbb7d0c2a4f7213412/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a483a15985866217e929c9c8e3607317e4e30370c1356cee53c5dbd92439df1c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a483a15985866217e929c9c8e3607317e4e30370c1356cee53c5dbd92439df1c.docx",
+      "file_id": "b83f17dc223c47fbb7d0c2a4f7213412",
+      "file_name": "B1+Enclosure+C+Quotation+Pricing+Sheet.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27885,
+      "sha256": "a483a15985866217e929c9c8e3607317e4e30370c1356cee53c5dbd92439df1c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b9d58d89304a4b46ba20f1eececd4aeb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/39163ce6b0bfb67a0bc0130cfc380cb7be9baefabb27f55bd0ea56014b1f8bf6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/39163ce6b0bfb67a0bc0130cfc380cb7be9baefabb27f55bd0ea56014b1f8bf6.pdf",
+      "file_id": "b9d58d89304a4b46ba20f1eececd4aeb",
+      "file_name": "B1+Enclosure+D+ACH+Authorization+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 116597,
+      "sha256": "39163ce6b0bfb67a0bc0130cfc380cb7be9baefabb27f55bd0ea56014b1f8bf6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f4e49dfd1b9648849f32163e4d893898/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/99011a09043820c42ef8a9f00d79be4feff13ad128759515051833cd96a9b619.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/99011a09043820c42ef8a9f00d79be4feff13ad128759515051833cd96a9b619.pdf",
+      "file_id": "f4e49dfd1b9648849f32163e4d893898",
+      "file_name": "B1+476517+RFQ.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 649737,
+      "sha256": "99011a09043820c42ef8a9f00d79be4feff13ad128759515051833cd96a9b619"
+    }
+  ],
+  "_mirror_hash": "a7f1de71de89e5f181605f159b71acbab7d5a159ce3efc04d051e23f678513f7",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.527409+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-7a7636f1c96a4263b8fe32709a098f58",
+  "title": "Crash Investigation Sampling System (CISS) – Primary Sampling Units (PSU) Operations Center",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7a7636f1c96a4263b8fe32709a098f58",
+  "opportunity_url": "https://sam.gov/opp/7a7636f1c96a4263b8fe32709a098f58/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7a7636f1c96a4263b8fe32709a098f58/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7a7636f1c96a4263b8fe32709a098f58",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "693JJ926R000032",
+  "agency_path": "TRANSPORTATION, DEPARTMENT OF.NATIONAL HIGHWAY TRAFFIC SAFETY ADMINISTRATION.693JJ9 NHTSA OFFICE OF ACQUISTION",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7a7636f1c96a4263b8fe32709a098f58",
+  "detail_text": "The objective of this contract is to provide support for the for the PSU Operations Center (PSUOC) for NHTSA’s Crash Investigation Sampling System (CISS). This includes operational oversight of personnel at the seventy-three (73) CISS PSUs, administrative management of work locations, and execution of the standardized crash data collection activities using CISS Data Systems. The seventy-three (73) PSUs include sixty-five (65) currently operational and eight (8) additional units anticipated to be added in 2027.",
+  "detail_text_length": 515,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad70af357a7c4507ac251e45583acaf2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad70af357a7c4507ac251e45583acaf2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c34bbbd434ad431daeadbdae43f0979ee6bc23ee3fbe9c739870d7f47f2216a0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c34bbbd434ad431daeadbdae43f0979ee6bc23ee3fbe9c739870d7f47f2216a0.pdf",
+      "file_id": "ad70af357a7c4507ac251e45583acaf2",
+      "file_name": "Synopsis+CISS+PSU+Operations+Center+693JJ926R000032+-+29+Apr+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 168808,
+      "sha256": "c34bbbd434ad431daeadbdae43f0979ee6bc23ee3fbe9c739870d7f47f2216a0"
+    }
+  ],
+  "_mirror_hash": "166d5a6d47b1854fa555a7abfaeb0beac37352caa21d01c21226dce100beae43",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.520730+00:00"
+}

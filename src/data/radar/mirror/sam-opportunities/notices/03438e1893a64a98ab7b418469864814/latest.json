@@ -1,0 +1,46 @@
+{
+  "id": "sam-03438e1893a64a98ab7b418469864814",
+  "title": "2026 National Death Index",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03438e1893a64a98ab7b418469864814",
+  "opportunity_url": "https://sam.gov/opp/03438e1893a64a98ab7b418469864814/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/03438e1893a64a98ab7b418469864814/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "03438e1893a64a98ab7b418469864814",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.CENTERS FOR DISEASE CONTROL AND PREVENTION",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=03438e1893a64a98ab7b418469864814",
+  "detail_text": "The Centers for Disease Control and Prevention, National Center of Health Statistics (NCHS), Division of Vital Statistics, intends to award fifty-seven separate sole source firm fixed price awards to the fifty states, the District of Columbia, New York City, American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the Virgin Islands to continue collection of information data to establish, maintain, and operate the National Death Index and to assure the qualitative reliability and timely availablity of those data for the upcoming performance period. The National Death Index (NDI) is operated by the National Center for Health Statistics (NCHS) to fulfill its legislatively mandated mission to procure national vital statistics based on data from the Nation's birth, fetal death, marriage, and divorce records. Each State or Territory has, by law, the sole and exclusive authority to collect and record birth, death, and fetal death events occuring within its borders. As the sole entity authorized to and engaged in the collection of vital statistics information, each State or Territory is uniquely and solely capable of providing requisite services. This contract action is for supplies or services for which the Government intends to solicit and negotiate with only one source under the authority of FAR FAR 6.103-1. Interested persons may identify their interest and capability to respond to the requirement or submit proposals. This notice of intent, referencing number 2026 NDI Data is NOT a request for competitive quotations; however, all quotations/responses received within fifteen (15) days of the issuance of this notice will be considered by the government. A determination by the government not to compete this proposed contract based upon responses to this notice is solely within the discretion of the government. Information received will normally be considered solely for the purpose of determining whether to conduct a competitive procurement. Any quotation/response should be emailed to contract specialist at dal3@cdc.gov by COB 15 May 2026.",
+  "detail_text_length": 2076,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b499f9924d944ec6bb4aa6d4f50df612/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b499f9924d944ec6bb4aa6d4f50df612/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2d21ca54d05386994a3df35485c9cbffbb5443e91342cc14c3553d2e0278ae3f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2d21ca54d05386994a3df35485c9cbffbb5443e91342cc14c3553d2e0278ae3f.pdf",
+      "file_id": "b499f9924d944ec6bb4aa6d4f50df612",
+      "file_name": "SSJ+for+2026+NDI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 202493,
+      "sha256": "2d21ca54d05386994a3df35485c9cbffbb5443e91342cc14c3553d2e0278ae3f"
+    }
+  ],
+  "_mirror_hash": "8d923232158a8b4450fa92f4ec03b00c8c5cf02bfa45551db8038643e79a6c25",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.438437+00:00"
+}

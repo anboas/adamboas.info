@@ -1,0 +1,46 @@
+{
+  "id": "sam-24929377b1634274bd454dc4a35de741",
+  "title": "FARO Arm Proprietary Maintenance, Calibration, and Repair Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24929377b1634274bd454dc4a35de741",
+  "opportunity_url": "https://sam.gov/opp/24929377b1634274bd454dc4a35de741/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/24929377b1634274bd454dc4a35de741/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "24929377b1634274bd454dc4a35de741",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W91CRB26QA007",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=24929377b1634274bd454dc4a35de741",
+  "detail_text": "NOTICE OF INTENT TO AWARD A SOLE SOURCE CONTRACT 1. Requirement: The Army Contracting Command - Aberdeen Proving Ground (ACC-APG) intends to award a Firm-Fixed-Price (FFP) contract to FARO Technologies, Inc. (CAGE: 0VGY2) for OEM-certified maintenance, calibration, and repair services for 26 FARO measurement instruments. 2. Authority: This action is conducted under 10 U.S.C. 3204(a)(1) as implemented by RFO FAR 6.103-1. The acquisition uses RFO FAR Part 12 commercial services procedures. 3. Rationale: FARO Technologies, Inc. is the Original Equipment Manufacturer (OEM) and sole owner of the proprietary technical data and firmware required for factory-level calibration. No other source is authorized to perform these services without voiding existing warranties. 4. Response Instructions: This is not a Request for Proposal (RFP). Interested parties must submit a written capability statement within fifteen (15) calendar days of this notice. Statements must demonstrate OEM-authorized status and access to proprietary data. 5. Point of Contact: Submit inquiries to Jennifer Langrehr at jennifer.b.langrehr.civ@army.mil and Tanya D. Buttner at tanya.d.buttner.civ@army.mil",
+  "detail_text_length": 1180,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2619dd1c69894d2a98323875f41f7f5e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2619dd1c69894d2a98323875f41f7f5e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7035907d3d896cc7fc96d9ec8e86239bb6fd57b556bb002810c323c4c52950b8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7035907d3d896cc7fc96d9ec8e86239bb6fd57b556bb002810c323c4c52950b8.pdf",
+      "file_id": "2619dd1c69894d2a98323875f41f7f5e",
+      "file_name": "Notice+of+Intent+to+Sole+Source+FARO+Arm+Maintenance+Calibration+and+Repair+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98981,
+      "sha256": "7035907d3d896cc7fc96d9ec8e86239bb6fd57b556bb002810c323c4c52950b8"
+    }
+  ],
+  "_mirror_hash": "91242fbbe7a55494d37ab05406fae494c84126d84f4f1b346b8d8047b6a91c56",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.400448+00:00"
+}

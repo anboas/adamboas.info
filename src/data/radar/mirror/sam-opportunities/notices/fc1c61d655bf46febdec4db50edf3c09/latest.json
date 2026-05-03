@@ -1,0 +1,59 @@
+{
+  "id": "sam-fc1c61d655bf46febdec4db50edf3c09",
+  "title": "Request for Information-DoWEA PreK-12 Education Platform",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc1c61d655bf46febdec4db50edf3c09",
+  "opportunity_url": "https://sam.gov/opp/fc1c61d655bf46febdec4db50edf3c09/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fc1c61d655bf46febdec4db50edf3c09/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fc1c61d655bf46febdec4db50edf3c09",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "HE125426EDUPLATFORM",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF DEFENSE EDUCATION ACTIVITY (DODEA).DOD EDUCATION ACTIVITY",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fc1c61d655bf46febdec4db50edf3c09",
+  "detail_text": "The Department of War Education Activity (DoWEA) is issuing this Sources Sought / Request for Information (RFI) for market research purposes to identify industry capabilities for a unified, enterprise education platform supporting a global Pre-K–12 environment. The Government is seeking information on integrated Student Information Systems (SIS), Learning Management Systems (LMS), assessment tools, special education and student support services, and enterprise operational systems, including ERP, HR, facilities, transportation, and IT service management. Of particular interest are platforms that demonstrate strong data interoperability, open API architecture, near real-time analytics, and AI-enabled insights across instructional and operational domains. This RFI is intended to understand current industry approaches to system integration, data architecture, interoperability standards, reporting capabilities, and cloud-based platform delivery models. Responses will be used for market research and acquisition planning only and do not constitute a solicitation or commitment by the Government. Please note RFI responses are due May 22, 2026 at 12pm EST. Plesase send responses to contracting officer, Ms. ShaHannah Brown at Shahannah.Brown@dodea.edu. Industry is also invited to indicate interest in a potential Industry Day focused on demonstrations and architectural discussions. Additional Background: The Department of War Education Activity (DoWEA), one of two federally operated school systems, is responsible for planning, directing, coordinating, and managing pre-kindergarten through 12th-grade educational programs for the Department of War (DoW). Globally positioned, DoWEA operates 160+ accredited schools in 9 districts located in 11 foreign countries, 7 states, Guam, and Puerto Rico, serving over 67,000 students and employing approximately 15,000 staff. April 30, 2026- RFI updated to increase the page count.",
+  "detail_text_length": 1936,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cab8a67004f402da85a8e8dec1d8ef7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9636967649134d9ca63d9fa14fae61e9/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3cab8a67004f402da85a8e8dec1d8ef7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f85f2053084365a32e5e5ab3ed020d5a6a575eac1aaebf4fe42072a6e939547e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f85f2053084365a32e5e5ab3ed020d5a6a575eac1aaebf4fe42072a6e939547e.pdf",
+      "file_id": "3cab8a67004f402da85a8e8dec1d8ef7",
+      "file_name": "DoWEA+Education+Platform+RFI_4.30.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 335192,
+      "sha256": "f85f2053084365a32e5e5ab3ed020d5a6a575eac1aaebf4fe42072a6e939547e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9636967649134d9ca63d9fa14fae61e9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93ca46bf0841726b71dec4d3193a38039390a96b60288cf34db1eeedb7edf575.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93ca46bf0841726b71dec4d3193a38039390a96b60288cf34db1eeedb7edf575.pdf",
+      "file_id": "9636967649134d9ca63d9fa14fae61e9",
+      "file_name": "DoWEA+Education+Platform+RFI_4.22.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262205,
+      "sha256": "93ca46bf0841726b71dec4d3193a38039390a96b60288cf34db1eeedb7edf575"
+    }
+  ],
+  "_mirror_hash": "2d9256413749f2bba1d1dd80c8a99b2db1e01441e43c2da3029da14ea5ce8e80",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.240931+00:00"
+}

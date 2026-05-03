@@ -1,0 +1,46 @@
+{
+  "id": "sam-12d4e31186b5420da04e46b18c24d433",
+  "title": "Container Forklift",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12d4e31186b5420da04e46b18c24d433",
+  "opportunity_url": "https://sam.gov/opp/12d4e31186b5420da04e46b18c24d433/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/12d4e31186b5420da04e46b18c24d433/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "12d4e31186b5420da04e46b18c24d433",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA5613PSAG01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12d4e31186b5420da04e46b18c24d433",
+  "detail_text": "This is a pre-solicitation notice for One Container Forklift. Please see attachment for description.",
+  "detail_text_length": 100,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f7795a5743f475a8f5f55c64cfeebe6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9f7795a5743f475a8f5f55c64cfeebe6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2b28f43288794610577bf7b2547d9e0d766543b65a800c2ce22bd665e15ddebd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2b28f43288794610577bf7b2547d9e0d766543b65a800c2ce22bd665e15ddebd.pdf",
+      "file_id": "9f7795a5743f475a8f5f55c64cfeebe6",
+      "file_name": "Presolicitation+Notice+Container+Forklift+MFH.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118115,
+      "sha256": "2b28f43288794610577bf7b2547d9e0d766543b65a800c2ce22bd665e15ddebd"
+    }
+  ],
+  "_mirror_hash": "19a5d53c9baa6afdb1fad9698111dcb0a4b35ae6edeb05dcd18c864459dcc3f3",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.277678+00:00"
+}

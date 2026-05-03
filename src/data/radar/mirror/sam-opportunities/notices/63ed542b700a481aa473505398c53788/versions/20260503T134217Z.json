@@ -1,0 +1,89 @@
+{
+  "id": "sam-63ed542b700a481aa473505398c53788",
+  "title": "Liquid Carbon Dioxide Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63ed542b700a481aa473505398c53788",
+  "opportunity_url": "https://sam.gov/opp/63ed542b700a481aa473505398c53788/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/63ed542b700a481aa473505398c53788/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "63ed542b700a481aa473505398c53788",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N4215826QE042",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA SHIPYARD.NORFOLK NAVAL SHIPYARD GF",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=63ed542b700a481aa473505398c53788",
+  "detail_text": "SEE ATTACHED SOLICITATION AND RELATED DOCUMENTS.",
+  "detail_text_length": 48,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b0ba9f953ad440a95f23310bcc32b93/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89609d6672e240f6b122caed2d0adae8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b2a4736e891428498f1eb9efea5652e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d185fbdedb8e4ad79df629a1697b5034/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e8bc5bd8d36c4a43b70acddf82903a7d/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1b0ba9f953ad440a95f23310bcc32b93/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5787c54738bb7f55e325dee35a24f30038bb67a5e25ab29d900b785f5d44d13a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5787c54738bb7f55e325dee35a24f30038bb67a5e25ab29d900b785f5d44d13a.pdf",
+      "file_id": "1b0ba9f953ad440a95f23310bcc32b93",
+      "file_name": "FAR+52.212-2+Attachment+-A-+-+Technical+Capabilities+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 228638,
+      "sha256": "5787c54738bb7f55e325dee35a24f30038bb67a5e25ab29d900b785f5d44d13a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89609d6672e240f6b122caed2d0adae8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b553dec09a0febd8499de9a7df893060e38de6b81757b56dd38b8ed2949245a9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b553dec09a0febd8499de9a7df893060e38de6b81757b56dd38b8ed2949245a9.pdf",
+      "file_id": "89609d6672e240f6b122caed2d0adae8",
+      "file_name": "Solicitation+Amendment+N4215826QE0420001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 148167,
+      "sha256": "b553dec09a0febd8499de9a7df893060e38de6b81757b56dd38b8ed2949245a9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b2a4736e891428498f1eb9efea5652e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e5c6557404e092a989a74bdac74889c404e05d18a684aadc4414cd6a55d9df26.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e5c6557404e092a989a74bdac74889c404e05d18a684aadc4414cd6a55d9df26.pdf",
+      "file_id": "8b2a4736e891428498f1eb9efea5652e",
+      "file_name": "Solicitation+N4215826QE042.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2911024,
+      "sha256": "e5c6557404e092a989a74bdac74889c404e05d18a684aadc4414cd6a55d9df26"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d185fbdedb8e4ad79df629a1697b5034/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df3d96e441b723780dd42d1f1297b2721d7021ee5622d749849f02d78ef82a1b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df3d96e441b723780dd42d1f1297b2721d7021ee5622d749849f02d78ef82a1b.pdf",
+      "file_id": "d185fbdedb8e4ad79df629a1697b5034",
+      "file_name": "Attachment+-A-+SOW+for+Solicitation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 167484,
+      "sha256": "df3d96e441b723780dd42d1f1297b2721d7021ee5622d749849f02d78ef82a1b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e8bc5bd8d36c4a43b70acddf82903a7d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/65bf3201e31444746cd9b4453fb20b534065182417d7229243c0c4fc9a60cd8d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/65bf3201e31444746cd9b4453fb20b534065182417d7229243c0c4fc9a60cd8d.pdf",
+      "file_id": "e8bc5bd8d36c4a43b70acddf82903a7d",
+      "file_name": "FAR+52.212-1+Addendum.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 113052,
+      "sha256": "65bf3201e31444746cd9b4453fb20b534065182417d7229243c0c4fc9a60cd8d"
+    }
+  ],
+  "_mirror_hash": "3afbe274cf98830409c1df5d7e1950403a19a7f637e2cd19c9759fc0f48a92c7",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.193299+00:00"
+}

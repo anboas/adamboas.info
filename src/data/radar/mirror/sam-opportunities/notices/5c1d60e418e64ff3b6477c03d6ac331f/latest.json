@@ -1,0 +1,57 @@
+{
+  "id": "sam-5c1d60e418e64ff3b6477c03d6ac331f",
+  "title": "Operation and Interpretation of Mill Springs Mill - Kentucky",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5c1d60e418e64ff3b6477c03d6ac331f",
+  "opportunity_url": "https://sam.gov/opp/5c1d60e418e64ff3b6477c03d6ac331f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5c1d60e418e64ff3b6477c03d6ac331f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5c1d60e418e64ff3b6477c03d6ac331f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W912P526Q1BN3",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION GREAT LAKES AND OHIO.ENDIST NASHVILLE.W072 ENDIST NASHVILLE",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5c1d60e418e64ff3b6477c03d6ac331f",
+  "detail_text": "The existing Mill Springs Mill was constructed in the 1830’s and consists of a mill structure, milling machinery, French burr stones for grinding corn, and many control mechanisms for operation of the waterwheel, stone adjustments, and corn meal production. The entirety of the structure is listed in the Register of Historic Places. Each item is of historic significance to the Mill Springs Park, and shall be interpreted, operated, and maintained with the utmost care and precision. The U.S. Army Corps of Engineers reserves the right to order a milling stoppage order if Corps employees deem the mill is being operated in an unsafe manner or in a manner which would cause harm to the public or the mill. There is no reimbursement or change in pay whether the mill is physically operated. PERFORMANCE WORK STATEMENT ATTACHED.",
+  "detail_text_length": 827,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/725b3352d2ef4081a606769fb122ef0b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/813c1473fc9f4bbe92cba1c620593806/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/725b3352d2ef4081a606769fb122ef0b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9eae53952e9da7e0fb55e90679ad861542077752f7636ad66ed6495304e38bf8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9eae53952e9da7e0fb55e90679ad861542077752f7636ad66ed6495304e38bf8.docx",
+      "file_id": "725b3352d2ef4081a606769fb122ef0b",
+      "file_name": "PWS+Mill+Springs+Mill+miller+Rec+Season+2026_update+edit+CPyles+29APR2026+edit+jf.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29382,
+      "sha256": "9eae53952e9da7e0fb55e90679ad861542077752f7636ad66ed6495304e38bf8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/813c1473fc9f4bbe92cba1c620593806/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ec06d64cf3e980bb119a130f211567d5efd8a73dbc688308a82fa3d4bb9ae14d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ec06d64cf3e980bb119a130f211567d5efd8a73dbc688308a82fa3d4bb9ae14d.docx",
+      "file_id": "813c1473fc9f4bbe92cba1c620593806",
+      "file_name": "Request+for+Information+-+Operation+and+Interpretation+of+Mill+Springs+Mill+in+Monticello+Kentucky.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18353,
+      "sha256": "ec06d64cf3e980bb119a130f211567d5efd8a73dbc688308a82fa3d4bb9ae14d"
+    }
+  ],
+  "_mirror_hash": "777248772615ee467d441a314d6f443e496eca905608a20e3c6945254b7fdd12",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.301219+00:00"
+}

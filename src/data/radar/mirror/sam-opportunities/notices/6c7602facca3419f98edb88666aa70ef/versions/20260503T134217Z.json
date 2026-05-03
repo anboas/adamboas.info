@@ -1,0 +1,57 @@
+{
+  "id": "sam-6c7602facca3419f98edb88666aa70ef",
+  "title": "Transportation Services in Auckland, New Zealand",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c7602facca3419f98edb88666aa70ef",
+  "opportunity_url": "https://sam.gov/opp/6c7602facca3419f98edb88666aa70ef/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6c7602facca3419f98edb88666aa70ef/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6c7602facca3419f98edb88666aa70ef",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "W91QVP-26-P-4001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.413TH CSB.0413 AQ HQ     CONTRACT AUG",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6c7602facca3419f98edb88666aa70ef",
+  "detail_text": "This is Pre-solicitaiton purpose ony. We don't accept any quote at this time. US Government plans to have Transportation Services wtih details below. Requiring transportation for 200 personnel in and around the Auckland, New Zealand area to include airport to hotel transportation and hotel to event site transportation utilizing various vehicles on multiple days from 16-26 September 2026. Please see more detail in attachement. If you are interested in participating, contact POC for this requirment.",
+  "detail_text_length": 502,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c31a2b4ed5b743fcb0400dc0bae73550/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e60935f0110846ab99802e50d723edb1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c31a2b4ed5b743fcb0400dc0bae73550/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c96672d55613944a8dfe5f3bf25d3735b017de76b993dc80d28c1fe1c67befcb.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c96672d55613944a8dfe5f3bf25d3735b017de76b993dc80d28c1fe1c67befcb.xlsx",
+      "file_id": "c31a2b4ed5b743fcb0400dc0bae73550",
+      "file_name": "A02+Ordering+Sheet+Transportation+IPAMS+2026.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22112,
+      "sha256": "c96672d55613944a8dfe5f3bf25d3735b017de76b993dc80d28c1fe1c67befcb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e60935f0110846ab99802e50d723edb1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/059358e360e43e472167114010d65f2ca8edc98c9b7275b043b4cb3ee2bd825f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/059358e360e43e472167114010d65f2ca8edc98c9b7275b043b4cb3ee2bd825f.pdf",
+      "file_id": "e60935f0110846ab99802e50d723edb1",
+      "file_name": "A02+PWS+for+IPAMS+26+Transportation.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 340287,
+      "sha256": "059358e360e43e472167114010d65f2ca8edc98c9b7275b043b4cb3ee2bd825f"
+    }
+  ],
+  "_mirror_hash": "000591732c9c95a024b045124577e9923db7bb65edbd36868ebdbe3f729a1f3f",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.453329+00:00"
+}

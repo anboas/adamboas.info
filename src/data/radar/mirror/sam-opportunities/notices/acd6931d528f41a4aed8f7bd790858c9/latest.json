@@ -1,0 +1,67 @@
+{
+  "id": "sam-acd6931d528f41a4aed8f7bd790858c9",
+  "title": "1377 -01-244-2678, MJ98, Initiator Cartridge Actuated",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=acd6931d528f41a4aed8f7bd790858c9",
+  "opportunity_url": "https://sam.gov/opp/acd6931d528f41a4aed8f7bd790858c9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/acd6931d528f41a4aed8f7bd790858c9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "acd6931d528f41a4aed8f7bd790858c9",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QK062",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=acd6931d528f41a4aed8f7bd790858c9",
+  "detail_text": "Paper copies will not be provided. Procurement is restricted to Chemring Energetic Devices, Inc. A limited drawing package is available. Drawings are NOT available on CD. Items are explosive. A Safety Survey will be required. See solicitation for explosive weight and class.",
+  "detail_text_length": 274,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b3ef2ddfd8e48d88584c38e95fec7b5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93970a32104d4bf590b9792c9351b1e3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d60cd49c06fb4af3b62a574ca966b7ec/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6b3ef2ddfd8e48d88584c38e95fec7b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9973a3e1a7c111c08f18831827652b5f8d7de7f5056b804cadb338cabe714296.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9973a3e1a7c111c08f18831827652b5f8d7de7f5056b804cadb338cabe714296.pdf",
+      "file_id": "6b3ef2ddfd8e48d88584c38e95fec7b5",
+      "file_name": "COMBINED+FY26+PR+ATTACHMENTS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 3111142,
+      "sha256": "9973a3e1a7c111c08f18831827652b5f8d7de7f5056b804cadb338cabe714296"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/93970a32104d4bf590b9792c9351b1e3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8f810f7ef304defdaaf7b27f3d0e93cdd2f5fa9c8a4606309f2d3c40e3547b5a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8f810f7ef304defdaaf7b27f3d0e93cdd2f5fa9c8a4606309f2d3c40e3547b5a.pdf",
+      "file_id": "93970a32104d4bf590b9792c9351b1e3",
+      "file_name": "PR+26NB071+MJ98+CDRLs-REDACTED.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 356548,
+      "sha256": "8f810f7ef304defdaaf7b27f3d0e93cdd2f5fa9c8a4606309f2d3c40e3547b5a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d60cd49c06fb4af3b62a574ca966b7ec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ac485956b30a6c6b52cf4d69d544625832257b7d8748019c39370a74e9272868.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ac485956b30a6c6b52cf4d69d544625832257b7d8748019c39370a74e9272868.pdf",
+      "file_id": "d60cd49c06fb4af3b62a574ca966b7ec",
+      "file_name": "Solicitation+-+N0010426QK062.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1307915,
+      "sha256": "ac485956b30a6c6b52cf4d69d544625832257b7d8748019c39370a74e9272868"
+    }
+  ],
+  "_mirror_hash": "850325862944f754d5db43cef4b4980ecd7507471070a0d97adeb221285e6da6",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.249878+00:00"
+}

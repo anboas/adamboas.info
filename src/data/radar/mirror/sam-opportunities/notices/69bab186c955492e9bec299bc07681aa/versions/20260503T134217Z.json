@@ -1,0 +1,57 @@
+{
+  "id": "sam-69bab186c955492e9bec299bc07681aa",
+  "title": "Escrow Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=69bab186c955492e9bec299bc07681aa",
+  "opportunity_url": "https://sam.gov/opp/69bab186c955492e9bec299bc07681aa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/69bab186c955492e9bec299bc07681aa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "69bab186c955492e9bec299bc07681aa",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "12C0BA26R0002",
+  "agency_path": "AGRICULTURE, DEPARTMENT OF.RURAL HOUSING SERVICE.PROCUREMENT MANAGEMENT OFFICE",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=69bab186c955492e9bec299bc07681aa",
+  "detail_text": "The U.S. Department of Agriculture, Rural Development (RD), is issuing this Sources Sought Notice (SSN) to improve RD’s understanding of market capabilities and identify qualified vendors capable of providing nationwide escrow service. This SSN is being used as a Market Research tool for informational purposes and for preliminary planning purposes to identify potential sources that can provide comprehensive escrow services to RD’s Direct Single-Family Housing (Section 502 Direct) loan portfolio. As of January 2026, RD services approximately 132,000 Direct Single-Family Housing loans representing approximately 105,600 borrowers, with approximately 96% of the portfolio escrowed for real estate taxes and insurance. The portfolio is geographically dispersed across all 50 states and U.S. territories. All interested and qualified businesses (i.e., Small Business, Other than Small) are encouraged to respond to this notice in accordance with the instructions.",
+  "detail_text_length": 965,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c1c49e43ad7403ea06b7a01521dec57/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f514152317f14ecc847175f9049c13a0/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4c1c49e43ad7403ea06b7a01521dec57/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0ff665f75d3182b13b52c81bd920ec19d6126a8a38a17b372a6a63c8ee09220a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0ff665f75d3182b13b52c81bd920ec19d6126a8a38a17b372a6a63c8ee09220a.pdf",
+      "file_id": "4c1c49e43ad7403ea06b7a01521dec57",
+      "file_name": "A02+Escrow+Services+SSN_30APR2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 225508,
+      "sha256": "0ff665f75d3182b13b52c81bd920ec19d6126a8a38a17b372a6a63c8ee09220a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f514152317f14ecc847175f9049c13a0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9789e4912e2d10e308dc22ec1b1baa20db4aa11ea72b1317f44eaa30bdea1cfe.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9789e4912e2d10e308dc22ec1b1baa20db4aa11ea72b1317f44eaa30bdea1cfe.docx",
+      "file_id": "f514152317f14ecc847175f9049c13a0",
+      "file_name": "Draft+Escrow+Services+PWS_30APR2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 49915,
+      "sha256": "9789e4912e2d10e308dc22ec1b1baa20db4aa11ea72b1317f44eaa30bdea1cfe"
+    }
+  ],
+  "_mirror_hash": "c70098decb1e6d5f8cb0d5d109449e38fa57205cb7775ffb66080c9681c9f36d",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.318782+00:00"
+}

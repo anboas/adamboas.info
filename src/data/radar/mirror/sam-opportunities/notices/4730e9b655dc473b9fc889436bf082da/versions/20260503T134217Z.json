@@ -1,0 +1,68 @@
+{
+  "id": "sam-4730e9b655dc473b9fc889436bf082da",
+  "title": "Replacement of four HySecurity gate operators",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4730e9b655dc473b9fc889436bf082da",
+  "opportunity_url": "https://sam.gov/opp/4730e9b655dc473b9fc889436bf082da/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4730e9b655dc473b9fc889436bf082da/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4730e9b655dc473b9fc889436bf082da",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "PR15869820",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY ADDIS ABABA",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4730e9b655dc473b9fc889436bf082da",
+  "detail_text": "Contractor professional services are required for the replacement of HySecurity slide gate controllers in accordance with the attached Statement of Work and applicable industry standards. The existing installed units consist of four (4) SlideDriver 50VF2‑EFO models. The U.S. Government will provide four (4) new replacement units, model SlideDriver 50VF2/3. The scope of work includes site inspection and deficiency assessment, removal of existing controllers, installation of new controllers, testing, commissioning, training for local maintenance staff, and submission of a detailed work completion report. DBA insurance is required for all contractor personnel.",
+  "detail_text_length": 665,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bb3d1069ab24894b7dc3e72279d0f83/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7e6a91b8eac4dac99e1f9ae09a43f4c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae6bd445e7f7442da1d68f9bf38fe94e/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6bb3d1069ab24894b7dc3e72279d0f83/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/19968ad19d910c75b019b58a99f9b8df1eb517efa048797f675266911ca4ff4a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/19968ad19d910c75b019b58a99f9b8df1eb517efa048797f675266911ca4ff4a.pdf",
+      "file_id": "6bb3d1069ab24894b7dc3e72279d0f83",
+      "file_name": "PR15869820+_Statement+of+Work+_+HySecurity+SlideGate+controller.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 266674,
+      "sha256": "19968ad19d910c75b019b58a99f9b8df1eb517efa048797f675266911ca4ff4a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a7e6a91b8eac4dac99e1f9ae09a43f4c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a0c30412816f0234b66cdbc0dc26ee8bd3cf680235cdc6d8b10fdd67c89f1692.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a0c30412816f0234b66cdbc0dc26ee8bd3cf680235cdc6d8b10fdd67c89f1692.pdf",
+      "file_id": "a7e6a91b8eac4dac99e1f9ae09a43f4c",
+      "file_name": "Express+NDAA+Certification.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 527899,
+      "sha256": "a0c30412816f0234b66cdbc0dc26ee8bd3cf680235cdc6d8b10fdd67c89f1692"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ae6bd445e7f7442da1d68f9bf38fe94e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/beaf88fd7141654de2db073a5601c04fa0c11983e53134af29974370007b163c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/beaf88fd7141654de2db073a5601c04fa0c11983e53134af29974370007b163c.pdf",
+      "file_id": "ae6bd445e7f7442da1d68f9bf38fe94e",
+      "file_name": "Invitation+to+Bid+_+PR15869820+_Replacement+of+four+HySecurity+gate+operators.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174808,
+      "sha256": "beaf88fd7141654de2db073a5601c04fa0c11983e53134af29974370007b163c"
+    }
+  ],
+  "_mirror_hash": "c18f260119c3556e87f110bba7f22fce1417884a8e8a611f99fa5c76b8882064",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.450537+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-2afa43f38f6e42c4906ba0a4dfb51e11",
+  "title": "COUPLER, RADAR RECEIVER REPAIR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2afa43f38f6e42c4906ba0a4dfb51e11",
+  "opportunity_url": "https://sam.gov/opp/2afa43f38f6e42c4906ba0a4dfb51e11/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2afa43f38f6e42c4906ba0a4dfb51e11/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2afa43f38f6e42c4906ba0a4dfb51e11",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010424QCD770004",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2afa43f38f6e42c4906ba0a4dfb51e11",
+  "detail_text": "This solicitation amendment has been posted to update the QTY from 15 to 6 and call out S/N needing repaired to include; 204, 233, 1083, 10540916, 1064 and 209. All for the repair of NIIN 012432792.",
+  "detail_text_length": 198,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e013c9f0fc1a41dcaa186fd186ed91dc/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e013c9f0fc1a41dcaa186fd186ed91dc/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c0e67742dd69587243c3b253c416fa4648eb29743a5210581a00e86af35cdc18.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c0e67742dd69587243c3b253c416fa4648eb29743a5210581a00e86af35cdc18.pdf",
+      "file_id": "e013c9f0fc1a41dcaa186fd186ed91dc",
+      "file_name": "3.03_Amendment-4-_24202-0100.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 327743,
+      "sha256": "c0e67742dd69587243c3b253c416fa4648eb29743a5210581a00e86af35cdc18"
+    }
+  ],
+  "_mirror_hash": "c6b04d11f9cda71b345501816e7a34c0b6d7c047a8e7a4b16ad533fa758b0145",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.189172+00:00"
+}

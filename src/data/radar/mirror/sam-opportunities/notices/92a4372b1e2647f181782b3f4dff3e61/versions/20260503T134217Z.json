@@ -1,0 +1,46 @@
+{
+  "id": "sam-92a4372b1e2647f181782b3f4dff3e61",
+  "title": "Water Quality Management ASHRAE Plans",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92a4372b1e2647f181782b3f4dff3e61",
+  "opportunity_url": "https://sam.gov/opp/92a4372b1e2647f181782b3f4dff3e61/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/92a4372b1e2647f181782b3f4dff3e61/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "92a4372b1e2647f181782b3f4dff3e61",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "47PH5326N0002",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.PUBLIC BUILDINGS SERVICE.PBS CENTRALIZED ACQUISITION SERVICES - CUSTOMER CONTRACTING BRANCH A",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=92a4372b1e2647f181782b3f4dff3e61",
+  "detail_text": "Develop a Water Management Plan (WMP) that meets the minimum legionellosis risk management requirements outlined in the ASHRAE Standard 188 and Guideline 12 to manage building water systems, maintain water safety, and prevent stagnation-related issues. The WMP should focus on monitoring, testing, and maintenance of water systems such as testing chlorine levels and temperature at point of use outlets, cleaning and changing aerators and showerheads, and validation testing of equipment and point of use outlets. Remedial actions, such as flushing, shall not be utilized as routine water safety tasks. This WMP shall be prepared in accordance with applicable publications, organizations, guidance and policy, including but not limited to: GSA Order PBS 1000.7B and Desk Guide for Water Quality Management, AIHA Recognition, Evaluation, and Control of Legionella in Building Water Systems, current edition ASHRAE 188, Legionellosis: Risk Management for Building Water Systems, current edition ASHRAE Guideline 12, Managing the Risk of Legionellosis Associated with Building Water Systems, current edition, CDC, Controlling Legionella in Potable Water Systems",
+  "detail_text_length": 1158,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cd6b41bf0e05498fae53ae6a3e738c15/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cd6b41bf0e05498fae53ae6a3e738c15/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9170e20d1440c5330fc5f2e3a3f3cc0867262d57fcb417ebd4806583753e5c95.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9170e20d1440c5330fc5f2e3a3f3cc0867262d57fcb417ebd4806583753e5c95.pdf",
+      "file_id": "cd6b41bf0e05498fae53ae6a3e738c15",
+      "file_name": "ASHRAE+Request+for+Information+2026+04+30.docx.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 90411,
+      "sha256": "9170e20d1440c5330fc5f2e3a3f3cc0867262d57fcb417ebd4806583753e5c95"
+    }
+  ],
+  "_mirror_hash": "7d6c2dcd09d114daf9322481e1320e81c1eda8fff43033e551ced94b356fe28a",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.396394+00:00"
+}

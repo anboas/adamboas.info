@@ -1,0 +1,48 @@
+{
+  "id": "sam-bf91d24f873b4502a4eb6b3f034d34c1",
+  "title": "Industry Day Announcement: Looking Glass-Next",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf91d24f873b4502a4eb6b3f034d34c1",
+  "opportunity_url": "https://sam.gov/opp/bf91d24f873b4502a4eb6b3f034d34c1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/bf91d24f873b4502a4eb6b3f034d34c1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "bf91d24f873b4502a4eb6b3f034d34c1",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": "FA283426G0002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=bf91d24f873b4502a4eb6b3f034d34c1",
+  "detail_text": "This announcement is for a classified Industry Day to discuss upcoming acquisition opportunities for the LG-N mission. There will be opportunity for one-on-one sessions with the USG team, please indicate your interest during registration. The event will be held at the SECRET level. This is an opportunity for industry partners to learn about future requirements and to engage with LG-N program leadership. This Industry Day event is for market research purposes only in accordance with Revolutionary Federal Acquisition Regulation Overhaul (RFO) Part 10 – Market Research. Date: 03 June 2026",
+  "detail_text_length": 592,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1c356a9c364400785b6a11eea3318b3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f1c356a9c364400785b6a11eea3318b3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6c97da3cbbcbdea3ab49083b2f817043af103327db802af43d7bdcc6bfa845ed.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6c97da3cbbcbdea3ab49083b2f817043af103327db802af43d7bdcc6bfa845ed.pdf",
+      "file_id": "f1c356a9c364400785b6a11eea3318b3",
+      "file_name": "Initial+SAM+Industry+Day+2+Announcement+LG-N.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 73709,
+      "sha256": "6c97da3cbbcbdea3ab49083b2f817043af103327db802af43d7bdcc6bfa845ed"
+    }
+  ],
+  "_mirror_hash": "c3a5a30af18c02204c4d535c85e6d2c25d6c73b98fc6a18a42cb6d70ba09ab17",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.239003+00:00"
+}

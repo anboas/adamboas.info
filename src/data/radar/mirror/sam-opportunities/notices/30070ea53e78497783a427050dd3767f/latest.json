@@ -1,0 +1,57 @@
+{
+  "id": "sam-30070ea53e78497783a427050dd3767f",
+  "title": "Low Background Infrared (LBIR) Service Contract",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30070ea53e78497783a427050dd3767f",
+  "opportunity_url": "https://sam.gov/opp/30070ea53e78497783a427050dd3767f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/30070ea53e78497783a427050dd3767f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "30070ea53e78497783a427050dd3767f",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA226326R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMBAT READINESS.FA2263 AFLCMC ROMK AFMETCAL",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30070ea53e78497783a427050dd3767f",
+  "detail_text": "AFMETCAL at Heath OH intends to solicit and award a Sole Source Cost Plus Fixed Fee contract under FAR Part 15 Procedures for the purchase of Low Background Infrared Facility Services to Jung Research and Development Corp. (Cage 3JES1). Jung Research and Development Corp was the only company identified as capable of meeting this requirement without substantial duplication of cost that could not be expected to be recovered through competition. Further, there would be unacceptable delays in fulfilling its requirements to the MDA and its mission if another contractor other than JRAD was used. The Government envisions a Cost Plus Fixed Fee services contract with a basic year and 3 option CLINs (one-year base period, one-year option, one three month option, and one six-month option (FAR52.217-8)) and could extend through 31 March 2026 (if all options are exercised). There is no guarantee that an option will be exercised. The requirement is in accordance with the Statement of Work which is available for download at this site. THIS NOTICE OF INTENT IS NOT A REQUEST FOR COMPETITIVE PROPOSALS OR QUOTATIONS. No solicitation package will be issued. A determination by the Government not to compete this action based on responses received is solely within the discretion of the Government. All responsible sources may submit a capability statement, proposal, or quotation which shall be considered by AFMETCAL. Interested sources must respond in writing with clear and convincing evidence to support their ability to provide the required items and services within fifteen (15) days of this publication. Interested parties should submit questions to Allen Kurella at allen.kurella@us.af.mil. Only electronic submissions will be reviewed.",
+  "detail_text_length": 1742,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c3e379d497f47c7aee9a9cf2978d2ea/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aafb57187b854fc79178be2cbe634a1f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c3e379d497f47c7aee9a9cf2978d2ea/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9b821869397ee47240f66cf19c8ec852652b6983750332cb6fff80ebb29cad46.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9b821869397ee47240f66cf19c8ec852652b6983750332cb6fff80ebb29cad46.pdf",
+      "file_id": "7c3e379d497f47c7aee9a9cf2978d2ea",
+      "file_name": "JA_+Low+Background+Infrared+-LBIR-+Facility_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 104614,
+      "sha256": "9b821869397ee47240f66cf19c8ec852652b6983750332cb6fff80ebb29cad46"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aafb57187b854fc79178be2cbe634a1f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4b7b99bf00e6461038fa7f100f4342d168ae7bc48a7f21a23fbfdeec764231c1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4b7b99bf00e6461038fa7f100f4342d168ae7bc48a7f21a23fbfdeec764231c1.pdf",
+      "file_id": "aafb57187b854fc79178be2cbe634a1f",
+      "file_name": "LBIR+Service+Contract+SOW.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 275831,
+      "sha256": "4b7b99bf00e6461038fa7f100f4342d168ae7bc48a7f21a23fbfdeec764231c1"
+    }
+  ],
+  "_mirror_hash": "faf7ce495334db00759105ea7889426c5b0f8408d95d1e6c87fdc83fccf3779c",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.471716+00:00"
+}

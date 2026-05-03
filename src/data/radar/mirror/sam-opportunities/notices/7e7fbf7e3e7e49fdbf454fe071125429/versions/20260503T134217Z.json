@@ -1,0 +1,56 @@
+{
+  "id": "sam-7e7fbf7e3e7e49fdbf454fe071125429",
+  "title": "1377-00-403-4827 M758 JAU-8/A25 Initiator",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e7fbf7e3e7e49fdbf454fe071125429",
+  "opportunity_url": "https://sam.gov/opp/7e7fbf7e3e7e49fdbf454fe071125429/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7e7fbf7e3e7e49fdbf454fe071125429/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7e7fbf7e3e7e49fdbf454fe071125429",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426RK009",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7e7fbf7e3e7e49fdbf454fe071125429",
+  "detail_text": "Paper copies will not be provided. Competitive, 100 percent Small Business Set-a-Side. Drawings are available. Drawings are NOT available on CD. Item is explosive. A Safety Survey will be required. See solicitation for explosive weight and class.",
+  "detail_text_length": 246,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f8c9649e57b4c218e1d5b8964df8bb0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8843f65a1c604d03afbaefbb954fc970/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f8c9649e57b4c218e1d5b8964df8bb0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f9d8b651be9ad9587b7c8a94fb3372874596f6bc953d709aead98a84610f6bb1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f9d8b651be9ad9587b7c8a94fb3372874596f6bc953d709aead98a84610f6bb1.pdf",
+      "file_id": "7f8c9649e57b4c218e1d5b8964df8bb0",
+      "file_name": "3.04_Amendment0001_N0010426RK009.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 654066,
+      "sha256": "f9d8b651be9ad9587b7c8a94fb3372874596f6bc953d709aead98a84610f6bb1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8843f65a1c604d03afbaefbb954fc970/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/edf2bcb9532099e40cc22c731c6167e95412d47001bc7778b7082d6ed18af532.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/edf2bcb9532099e40cc22c731c6167e95412d47001bc7778b7082d6ed18af532.pdf",
+      "file_id": "8843f65a1c604d03afbaefbb954fc970",
+      "file_name": "3.04_Amendment0002_N0010426RK009.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 668711,
+      "sha256": "edf2bcb9532099e40cc22c731c6167e95412d47001bc7778b7082d6ed18af532"
+    }
+  ],
+  "_mirror_hash": "e4972bfeac11e95192cffc674f415105d03bf336d9e0faace703175d1f3e4467",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.225225+00:00"
+}

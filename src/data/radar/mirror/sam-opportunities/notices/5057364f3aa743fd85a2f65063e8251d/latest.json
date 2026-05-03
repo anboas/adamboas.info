@@ -1,0 +1,48 @@
+{
+  "id": "sam-5057364f3aa743fd85a2f65063e8251d",
+  "title": "J--Pre-solicitation Notice for Equipment Harvesting",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5057364f3aa743fd85a2f65063e8251d",
+  "opportunity_url": "https://sam.gov/opp/5057364f3aa743fd85a2f65063e8251d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5057364f3aa743fd85a2f65063e8251d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5057364f3aa743fd85a2f65063e8251d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "140D0426Q0249",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.IBC ACQ SVCS DIRECTORATE (00004)",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5057364f3aa743fd85a2f65063e8251d",
+  "detail_text": "Obtain equipment harvesting services for the non-retention vessels Ex-Whidbey Island (LSD 41) and Ex-Fort McHenry (LSD 43).",
+  "detail_text_length": 123,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/377b08775b0d43fa9a879b30e86a692c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/377b08775b0d43fa9a879b30e86a692c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/313222fa891262764d3750805c6006cc69cb0f77461e9003e76c632678798c92.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/313222fa891262764d3750805c6006cc69cb0f77461e9003e76c632678798c92.pdf",
+      "file_id": "377b08775b0d43fa9a879b30e86a692c",
+      "file_name": "B01_SPCA_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 207898,
+      "sha256": "313222fa891262764d3750805c6006cc69cb0f77461e9003e76c632678798c92"
+    }
+  ],
+  "_mirror_hash": "8198dd40b912b8b7406e0b042173fedc93fbbdd5810600eeb3e48a05b18545be",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.230680+00:00"
+}

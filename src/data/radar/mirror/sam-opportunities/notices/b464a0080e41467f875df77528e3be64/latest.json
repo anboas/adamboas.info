@@ -1,0 +1,68 @@
+{
+  "id": "sam-b464a0080e41467f875df77528e3be64",
+  "title": "Audit Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b464a0080e41467f875df77528e3be64",
+  "opportunity_url": "https://sam.gov/opp/b464a0080e41467f875df77528e3be64/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b464a0080e41467f875df77528e3be64/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b464a0080e41467f875df77528e3be64",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CentralAudit0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA9000  AF NAF PO",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b464a0080e41467f875df77528e3be64",
+  "detail_text": "THIS IS A SOURCES SOUGHT / REQUEST FOR INFORMATION (RFI) – FOR PLANNING PURPOSES ONLY Notice Type: Market Research Status: Draft Documents Attached Responses to this notice will be used for informational and planning purposes only and shall not be construed as a solicitation or as an obligation or commitment by the Government. This notice is intended strictly for market research. The Government does not intend to award a contract based on responses to this notice. The Government is not obligated to, and will not, pay for information received as a result of this announcement. Mission Overview The Air Force is seeking expert services from a qualified firm to support the Air Force Central Nonappropriated Funds (NAFs) for their annual independent audits. The primary objective of this engagement is to provide expert guidance and hands-on support to ensure the NAF financial statements are “audit ready.” These services are preparatory and advisory in nature; they do not constitute the performance of the audit itself, nor do they replace the professional judgment of the eventual independent auditor. Review of Draft Statement of Objectives (SOO) Attached to this posting is a Draft Statement of Objectives (SOO). This document is explicitly marked as a Draft and is subject to change. The Government is providing this draft to solicit industry feedback to improve the final solicitation requirements package. Required Response Information Interested sources are requested to provide the following information in their response to ensure a standardized evaluation of the market: Company Identity: Full Vendor Name and the specific NAICS code(s) assigned to your company. Contract Vehicles : Identify if you hold a GSA schedule or any other existing government contract vehicle(s) for these services. Labor Categorization : Provide the Department of Labor (DOL) Bureau of Labor Statistics (BLS) Standard Occupational Classification (SOC) codes for each labor category you would utilize. Cost Estimates : Provide the estimated Labor Hour Cost associated with each SOC category identified. SOO Feedback : Provide technical questions, comments, or recommendations to improve the Draft SOO. Submission Instructions Please submit all responses via email to the following points of contact: Mark Ramirez: mark.ramirez.7@us.af.mil Fay Cameron: fay.cameron@us.af.mil Submission Deadline: No later than 2:00 PM CDT on Friday, 8 May 2026. Answers to questions (Q&A) provided by industry will be consolidated and released with the official solicitation, anticipated within the next 30 days.",
+  "detail_text_length": 2586,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04722f521ebe4a628de6105d615ca679/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c866c0e34d2c49268a671043b614aa73/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecae5f2eb20f4c2bbb68a68a0bee79a1/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04722f521ebe4a628de6105d615ca679/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/02b025e5c4508f2f49d96ec2ccbb5220042005ced5189cc57680453f4bc5b7a9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/02b025e5c4508f2f49d96ec2ccbb5220042005ced5189cc57680453f4bc5b7a9.pdf",
+      "file_id": "04722f521ebe4a628de6105d615ca679",
+      "file_name": "Instructions+to+Contractors+29+Apr+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 706818,
+      "sha256": "02b025e5c4508f2f49d96ec2ccbb5220042005ced5189cc57680453f4bc5b7a9"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c866c0e34d2c49268a671043b614aa73/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1d88c252fce0890520401ca3856448b9d36dda21edc0e7a9f2abc42ddfcd6cf8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1d88c252fce0890520401ca3856448b9d36dda21edc0e7a9f2abc42ddfcd6cf8.pdf",
+      "file_id": "c866c0e34d2c49268a671043b614aa73",
+      "file_name": "SOO-+Audit+Services+29+Apr+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1425882,
+      "sha256": "1d88c252fce0890520401ca3856448b9d36dda21edc0e7a9f2abc42ddfcd6cf8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ecae5f2eb20f4c2bbb68a68a0bee79a1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/347ca491dfa99b24e219c0a0d837edc568a2a0dc6c0486b3dfb22077e65a458c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/347ca491dfa99b24e219c0a0d837edc568a2a0dc6c0486b3dfb22077e65a458c.pdf",
+      "file_id": "ecae5f2eb20f4c2bbb68a68a0bee79a1",
+      "file_name": "Deliveries+or+Performances+29+Apr+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 728193,
+      "sha256": "347ca491dfa99b24e219c0a0d837edc568a2a0dc6c0486b3dfb22077e65a458c"
+    }
+  ],
+  "_mirror_hash": "0f1a8ab3204abc9033369829b10c1c3c6a10cca3a22046826e59b63255d4563c",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.362391+00:00"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "sam-e2315cae538e489f9176561afe3531ba",
+  "title": "Notice of Intent to Sole Source",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2315cae538e489f9176561afe3531ba",
+  "opportunity_url": "https://sam.gov/opp/e2315cae538e489f9176561afe3531ba/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e2315cae538e489f9176561afe3531ba/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e2315cae538e489f9176561afe3531ba",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "N0024426Q0023",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC SAN DIEGO.NAVSUP FLT LOG CTR  SAN DIEGO",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-03",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e2315cae538e489f9176561afe3531ba",
+  "detail_text": "THIS IS A NOTICE OF INTENT TO AWARD A SOLE SOURCE CONTRACT AND IS NOT A REQUEST FOR COMPETITIVE QUOTES Naval Supply Systems Command (NAVSUP) Fleet Logistics Center San Diego (FLCSD) intends to award a firm fixed price contract to Welin Lambie Limited – Britannia House, Old Bush St, Brierley Hill, DY5 1UB GBR. Under the authority of FAR part 12.102(a) Restricting competition for acquisitions valued at or below the simplified acquisition threshold. The requirement is to inspect, repair or replace, install, and op test the ATF Winch Inverter on the port davit. This work restores the ability to power on the control panel, support the center breaker that supplies the davit, and enable the launch of small boats onboard.This requirement is for USS Makin Island (LHD-8). The anticipated award date of this action is on or before 6 May 2026. The applicable NAICS code is 336611. This notice of intent is not a request for competitive proposals and no solicitation document exists for the requirement. Sources interested in responding to this notice are required to submit a capability statement that includes management and technical data and cost information, in sufficient detail and with convincing evidence that clearly demonstrates the capability to provide the licenses and proof as being an authorized distributor of the product. Capability statements shall not exceed 6 (8.5 x 11 inch) pages using a font size no smaller than 10-point. All capability statements received by the due date of this notice will be considered by the Government. A request for documentation or additional information or submissions that only ask questions will not be considered as an affirmative response. A determination by the Government not to compete based on responses to this notice is solely within the discretion of the Government. Information received will be considered solely for the purpose of determining whether to conduct a competitive procurement or to proceed with a sole source purchase order. Capability statements are due by 11:00 AM Pacific Standard Time (PST), May 3, 2026. Capability statements shall be submitted by e-mail ONLY as a Microsoft Word or Adobe PDF attachment to Dionte Grays at the following email address: dionte.l.grays.civ@us.navy.mil NO TELEPHONE REQUESTS/OFFERS WILL BE HONORED",
+  "detail_text_length": 2306,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2a82735c64d4d4cb5a9990800bdae21/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2a82735c64d4d4cb5a9990800bdae21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6700251600604a12e50f78b14b18d39a122e0995c977f3c717d35c6b896eba88.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6700251600604a12e50f78b14b18d39a122e0995c977f3c717d35c6b896eba88.pdf",
+      "file_id": "b2a82735c64d4d4cb5a9990800bdae21",
+      "file_name": "SOW+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 219235,
+      "sha256": "6700251600604a12e50f78b14b18d39a122e0995c977f3c717d35c6b896eba88"
+    }
+  ],
+  "_mirror_hash": "647b7f06a9dbd9298f023981cef4bc9809e4af7032378ebf1efda1e32a0f0466",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.154123+00:00"
+}

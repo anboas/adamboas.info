@@ -1,0 +1,59 @@
+{
+  "id": "sam-ad947e841ecc4db89de9371ec4e483f3",
+  "title": "Virtualization Enterprise Software Solutions RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ad947e841ecc4db89de9371ec4e483f3",
+  "opportunity_url": "https://sam.gov/opp/ad947e841ecc4db89de9371ec4e483f3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ad947e841ecc4db89de9371ec4e483f3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ad947e841ecc4db89de9371ec4e483f3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "842674441",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).IT CONTRACTING DIVISION - PL84",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ad947e841ecc4db89de9371ec4e483f3",
+  "detail_text": "The Defense Information Systems Agency (DISA), on behalf of the Department of War (DoW), is issuing this Request for Information (RFI) to conduct market research. The purpose of this RFI is to identify qualified sources capable of providing a standardized, enterprise-scalable virtualization software solution, to include all associated software sustainment, upgrades, and technical support services under an enterprise-wide agreement within the next 12 months. The objective is to establish a centralized, efficient, and cost-effective procurement vehicle. Please see the attached RFI Document for additional details. Please note Section 3.4 that was added to the RFI from the previous version. The response due date is also extended.",
+  "detail_text_length": 735,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/588553d55da34629b3bb6572f88ac45c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9810b8ceed5427986c59f928ad5841d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/588553d55da34629b3bb6572f88ac45c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f1d36012e702074409e82ea3df2c1aab72d259781e3031b48d185509bec8cd26.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f1d36012e702074409e82ea3df2c1aab72d259781e3031b48d185509bec8cd26.docx",
+      "file_id": "588553d55da34629b3bb6572f88ac45c",
+      "file_name": "Vitualization+RFI+Final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25358,
+      "sha256": "f1d36012e702074409e82ea3df2c1aab72d259781e3031b48d185509bec8cd26"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9810b8ceed5427986c59f928ad5841d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e5fba690c85af2a7575ec26a516c45ac469ac9282ce6a93a14073692f3fb7cb.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e5fba690c85af2a7575ec26a516c45ac469ac9282ce6a93a14073692f3fb7cb.xlsx",
+      "file_id": "f9810b8ceed5427986c59f928ad5841d",
+      "file_name": "Template+Virtualization+ROM.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14020,
+      "sha256": "9e5fba690c85af2a7575ec26a516c45ac469ac9282ce6a93a14073692f3fb7cb"
+    }
+  ],
+  "_mirror_hash": "fcfc52203e471720e5d35f97c988b165453e0b236efa37ac6bc5ef84ef73efdb",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.218254+00:00"
+}

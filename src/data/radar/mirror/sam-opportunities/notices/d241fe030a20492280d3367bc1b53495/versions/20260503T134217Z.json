@@ -1,0 +1,46 @@
+{
+  "id": "sam-d241fe030a20492280d3367bc1b53495",
+  "title": "Pest Control Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d241fe030a20492280d3367bc1b53495",
+  "opportunity_url": "https://sam.gov/opp/d241fe030a20492280d3367bc1b53495/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d241fe030a20492280d3367bc1b53495/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d241fe030a20492280d3367bc1b53495",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "OC-2026-133017",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.FOOD AND DRUG ADMINISTRATION.FDA OFFICE OF ACQ  GRANT SVCS",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d241fe030a20492280d3367bc1b53495",
+  "detail_text": "Please refer to the attached SSN. Please specify your business size and your socio ecnomic status.",
+  "detail_text_length": 98,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/087535d2e1464654b258a423821552f3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/087535d2e1464654b258a423821552f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8831e057ddfab3ad5c34f85f86c24ccf4f2a01e3f78e90d363a6bacb2bc2f108.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8831e057ddfab3ad5c34f85f86c24ccf4f2a01e3f78e90d363a6bacb2bc2f108.docx",
+      "file_id": "087535d2e1464654b258a423821552f3",
+      "file_name": "Sources_Sought_OC-2026-133017_MRC_Pest_Control.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18543,
+      "sha256": "8831e057ddfab3ad5c34f85f86c24ccf4f2a01e3f78e90d363a6bacb2bc2f108"
+    }
+  ],
+  "_mirror_hash": "084d9b390ec9c3af71034937ffb01574197fcac11331ec3fede538107d50575b",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.326153+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "sam-e8b3be511127468e9880eb944e463f3d",
+  "title": "Program Manager Counterproliferation (PMCP) Service Support",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8b3be511127468e9880eb944e463f3d",
+  "opportunity_url": "https://sam.gov/opp/e8b3be511127468e9880eb944e463f3d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e8b3be511127468e9880eb944e463f3d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e8b3be511127468e9880eb944e463f3d",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "PMCPSS_Draft_RFP",
+  "agency_path": "DEPT OF DEFENSE.US SPECIAL OPERATIONS COMMAND (USSOCOM).HQ USSOCOM",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e8b3be511127468e9880eb944e463f3d",
+  "detail_text": "Draft Request for Proposal (RFP) for H9240226RE003, Program Manager Counterproliferation (PMCP) Service Support Contract The Special Operations Forces Acquisition, Technology and Logistics (SOF AT&L) core mission is to provide rapid and focused acquisition, technology, and logistics support to SOF Warfighters. Under SOF AT&L, the Program Manager for Counterproliferation (PMCP) is chartered with the procurement, development, testing, training, fielding, and sustainment of technologies in support of Electronic Warfare (EW), advanced Counter Improvised Explosive Device (C-IED) operations and Explosive Ordnance Disposal (EOD) for improvised explosive device threats and Counter-Unmanned System (C-UxS) threats. Interested industry partners are encouraged to submit a request, including company name and CAGE code to the below Points of Contact (POCs). This information will be used to verify in the System for Award management (SAM) and the Supplier Performance Risk System (SPRS) that the offeror can receive CUI documents. After successful verification, the documents will be provided for review and submission of questions, comments, or suggestions. We are particularly interested in feedback regarding the clarity of evaluation criteria, pricing structure, and feasibility of the past performance relevancy measures. Please submit your feedback using the RFP Q&A Template provided with this RFP Letter to the POCs listed below no later than 1300 hours ET on 1 June 2026.",
+  "detail_text_length": 1478,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/319ba2bdce784964a46d55d0d9804dde/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40f0d857ffa04b70ae0935ff4839047e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea79fd185a16477a8dae69874793f7d3/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/319ba2bdce784964a46d55d0d9804dde/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b16b4c8e5c7f440b09cb6b55ad3849426d0c7066abd26fd866b01c168426afda.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b16b4c8e5c7f440b09cb6b55ad3849426d0c7066abd26fd866b01c168426afda.pdf",
+      "file_id": "319ba2bdce784964a46d55d0d9804dde",
+      "file_name": "PMCP+SS+Draft+RFP+Letter.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 383732,
+      "sha256": "b16b4c8e5c7f440b09cb6b55ad3849426d0c7066abd26fd866b01c168426afda"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/40f0d857ffa04b70ae0935ff4839047e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9ff1152733b2e530f5165b4b0c5aaf35a7c48e46f4352b81ec00251d35cb454d.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9ff1152733b2e530f5165b4b0c5aaf35a7c48e46f4352b81ec00251d35cb454d.xlsx",
+      "file_id": "40f0d857ffa04b70ae0935ff4839047e",
+      "file_name": "RFP+QA+Template.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 22774,
+      "sha256": "9ff1152733b2e530f5165b4b0c5aaf35a7c48e46f4352b81ec00251d35cb454d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea79fd185a16477a8dae69874793f7d3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/48bc7677a673e1766fdb78d0f624065eae4bf85d68f9aa046af9f1e2fdd4b0dc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/48bc7677a673e1766fdb78d0f624065eae4bf85d68f9aa046af9f1e2fdd4b0dc.pdf",
+      "file_id": "ea79fd185a16477a8dae69874793f7d3",
+      "file_name": "PMCP-SS_Draft_RFP_NDA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 264305,
+      "sha256": "48bc7677a673e1766fdb78d0f624065eae4bf85d68f9aa046af9f1e2fdd4b0dc"
+    }
+  ],
+  "_mirror_hash": "e04bc4ddf04f7cee51629d4ec4695735b674e7c79f45bf9a20db15f210c0dea4",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.525881+00:00"
+}

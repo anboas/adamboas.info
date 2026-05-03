@@ -1,0 +1,57 @@
+{
+  "id": "sam-fd074a52d5be4e388b22b9490c19a842",
+  "title": "Blood Sample Protein Measurement Analysis",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd074a52d5be4e388b22b9490c19a842",
+  "opportunity_url": "https://sam.gov/opp/fd074a52d5be4e388b22b9490c19a842/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/fd074a52d5be4e388b22b9490c19a842/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "fd074a52d5be4e388b22b9490c19a842",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C24526Q0481",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.245-NETWORK CONTRACT OFFICE 5 (36C245)",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=fd074a52d5be4e388b22b9490c19a842",
+  "detail_text": "The Washington DC VA Medical Center (DC VAMC) is conducting a prospective biospecimen collection and clinical data repository study. Advanced prostate cancer remains a leading cause of cancer morbidity and mortality among Veterans, yet validated circulating biomarkers that predict treatment response or early disease progression are lacking. Current clinical decision-making relies primarily on PSA kinetics and radiographic imaging, which have well-recognized limitations in sensitivity and lead time. The goal of the research study is to generate reproducible, high-quality proteomic data from the study’s longitudinal plasma specimens so that the VA study team can conduct exploratory analyses linking circulating proteomic changes to clinical outcomes, ultimately informing future biomarker validation studies and precision oncology strategies for Veterans with advanced prostate cancer.",
+  "detail_text_length": 892,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/795946f2222a4c499c95a39ceafd4893/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5e3235584404fbfba8fecb869b68894/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/795946f2222a4c499c95a39ceafd4893/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/177bf0795301098ba8d3f51f6e2ea147c3cdf6472630ea6225ba9645e6ba9587.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/177bf0795301098ba8d3f51f6e2ea147c3cdf6472630ea6225ba9645e6ba9587.pdf",
+      "file_id": "795946f2222a4c499c95a39ceafd4893",
+      "file_name": "STATEMENT+OF+WORK.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 117507,
+      "sha256": "177bf0795301098ba8d3f51f6e2ea147c3cdf6472630ea6225ba9645e6ba9587"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e5e3235584404fbfba8fecb869b68894/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5c4d2732dd76dc20ab1e4b13b17a17ca49097d88b39ca94cf47ac7de2f4a5a12.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5c4d2732dd76dc20ab1e4b13b17a17ca49097d88b39ca94cf47ac7de2f4a5a12.pdf",
+      "file_id": "e5e3235584404fbfba8fecb869b68894",
+      "file_name": "36C24526Q0481.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 162800,
+      "sha256": "5c4d2732dd76dc20ab1e4b13b17a17ca49097d88b39ca94cf47ac7de2f4a5a12"
+    }
+  ],
+  "_mirror_hash": "edad62c29eba67473897291baed6e09868aa93666b19a4d3b6978224f2feeec8",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.460346+00:00"
+}

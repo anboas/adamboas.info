@@ -1,0 +1,57 @@
+{
+  "id": "sam-8a4411315ac5414781d65c1400e1f7c4",
+  "title": "DAFITC Education and Training Event",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a4411315ac5414781d65c1400e1f7c4",
+  "opportunity_url": "https://sam.gov/opp/8a4411315ac5414781d65c1400e1f7c4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8a4411315ac5414781d65c1400e1f7c4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8a4411315ac5414781d65c1400e1f7c4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA330026Q9875",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3300  42 CONS CC",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a4411315ac5414781d65c1400e1f7c4",
+  "detail_text": "The 42d Contracting Squadron, Maxwell AFB, AL is seeking sources that can provide non-personal services on behalf of Air University. The Contractor shall prepare a (No-Cost) technical approach that will plan, organize, market and execute the DAFITC Event. Each year, the DAFITC Event focuses on themes that address cyberpower, IT acquisition reforms, initiatives and technical solutions. The annual event will encompass keynote speakers, seminar sessions, and an exhibition hall. Please see attached Statement of Work (SOW) for further information. All feedback and information received may be used to determine the appropriate acquisition strategy.",
+  "detail_text_length": 649,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b71e84f8a356429e9c21b4a834e8de66/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3d0bc8898984b1fa29c25678b80e236/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b71e84f8a356429e9c21b4a834e8de66/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c19bf4b9a5f1f74c712d0cadb17db1bfe6ab245ddc52cc6d83472142aceab2a6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c19bf4b9a5f1f74c712d0cadb17db1bfe6ab245ddc52cc6d83472142aceab2a6.docx",
+      "file_id": "b71e84f8a356429e9c21b4a834e8de66",
+      "file_name": "Sources+Sought+SAM+DAFITC+Education+and+Training+Event+.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 19719,
+      "sha256": "c19bf4b9a5f1f74c712d0cadb17db1bfe6ab245ddc52cc6d83472142aceab2a6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f3d0bc8898984b1fa29c25678b80e236/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5f3d8354521f151addcb9a0a532d9f21d309986d4503245b7c2343765828b641.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5f3d8354521f151addcb9a0a532d9f21d309986d4503245b7c2343765828b641.docx",
+      "file_id": "f3d0bc8898984b1fa29c25678b80e236",
+      "file_name": "Attachment+1+-+DAFITC+Ed+and+Trng+Event+Support+SOW+16+April+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48129,
+      "sha256": "5f3d8354521f151addcb9a0a532d9f21d309986d4503245b7c2343765828b641"
+    }
+  ],
+  "_mirror_hash": "9df4d073c2ccbe53a948c4c8b9f5e3e0fbcb48f7a11aa3c3e440799d9475ecc3",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.317754+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "sam-f0da5edb5d1c4f71850585f895957c99",
+  "title": "THERMAL IMAGING SYS",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0da5edb5d1c4f71850585f895957c99",
+  "opportunity_url": "https://sam.gov/opp/f0da5edb5d1c4f71850585f895957c99/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f0da5edb5d1c4f71850585f895957c99/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f0da5edb5d1c4f71850585f895957c99",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00104-24-R-X030",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f0da5edb5d1c4f71850585f895957c99",
+  "detail_text": "This is a requirement for an FMS repair. The ultimate awardee of the proposed contract action must be a certified repair depot in accordance with the NAVSEA DSOR approval process. Award of the proposed contract action will not be delayed while an uncertified source seeks to obtain certification.",
+  "detail_text_length": 296,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33a896baccd14006ad6871ce3f3fb803/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56ad7f16ac8545a2ab85547f0a1179b1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/33a896baccd14006ad6871ce3f3fb803/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9825ce962eeb57501fe7e02a619fe73bec8554870a9112cd158c284b44ae7601.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9825ce962eeb57501fe7e02a619fe73bec8554870a9112cd158c284b44ae7601.pdf",
+      "file_id": "33a896baccd14006ad6871ce3f3fb803",
+      "file_name": "3.04_Sol_Amendment_N00104-24-R-X030.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1301941,
+      "sha256": "9825ce962eeb57501fe7e02a619fe73bec8554870a9112cd158c284b44ae7601"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/56ad7f16ac8545a2ab85547f0a1179b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f9b7ec1750dbcda55ff97df35fb94460271daa1c2d9c390f0286868dec92140c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f9b7ec1750dbcda55ff97df35fb94460271daa1c2d9c390f0286868dec92140c.pdf",
+      "file_id": "56ad7f16ac8545a2ab85547f0a1179b1",
+      "file_name": "3.02_N00104-24-R-X030_N0010424PR26320.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 706796,
+      "sha256": "f9b7ec1750dbcda55ff97df35fb94460271daa1c2d9c390f0286868dec92140c"
+    }
+  ],
+  "_mirror_hash": "6e6207ac89ef90efec94cb8a40929e5f0ee7f546a4086f0cc3236e3443a7984b",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.256408+00:00"
+}

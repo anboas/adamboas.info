@@ -1,0 +1,81 @@
+{
+  "id": "sam-c125da98aaad41329f19cb8fde714f0d",
+  "title": "Request for Information (RFI)/Sources Sought (SS) Program and Budget Enterprise System (PBES)_2026",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c125da98aaad41329f19cb8fde714f0d",
+  "opportunity_url": "https://sam.gov/opp/c125da98aaad41329f19cb8fde714f0d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c125da98aaad41329f19cb8fde714f0d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c125da98aaad41329f19cb8fde714f0d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA8770-26-PBES_SS_RFI",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.BUSINESS AND ENTERPRISE SYSTEMS.FA8770 AFLCMC GBK",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c125da98aaad41329f19cb8fde714f0d",
+  "detail_text": "THIS IS A REQUEST FOR INFORMATION (RFI) ONLY. THERE IS NO SOLICITATION AVAILABLE AT THIS TIME. REQUESTS FOR A SOLICITATION WILL NOT RECEIVE A RESPONSE. The Air Force Materiel Command (AFMC), Air Force Life Cycle Management Center (AFLCMC) Business and Enterprise Systems Directorate (BES) Financial Systems Division (GBG) Contracting Division (GBK), Wright-Patterson Air Force Base (WPAFB), Ohio is conducting market research seeking vendor configuration and capabilities for support, operation, maintenance and enhancement of the Program and Budget Enterprise System (PBES). This RFI is for planning purposes only and shall not be considered as an invitation for bid, request for quotation, request for proposal (RFP), or as an obligation on the part of the Government to acquire any products or services. Your response to this RFI will be treated as information only. No entitlement to payment of direct or indirect costs or charges by the Government will arise as a result of contractor submission of responses to this announcement or the Government use of such information. This request does not constitute a solicitation for proposals or the authority to enter into negotiations to award a contract. No funds have been authorized, appropriated, or received for this effort. The information provided is considered market research and may be used by the Department Air Force (DAF) in developing its acquisition strategy, Statement of Objectives (SOO) or Performance Work Statement (PWS), and performance specifications. Interested parties are responsible for adequately marking proprietary or competition sensitive information contained in their response. The Government reserves the right to contact the submitting parties, on an as-required basis, for further clarification on material provided. The Government reserves the right to contact additional customers to obtain information that will be used to evaluate the offeror’s interest. PBES subsumed/replaced the DAF’s four legacy Planning, Programming, Budgeting and Execution (PPBE) budget formulation systems, ABIDES, RAPIDS, FSDM, and ETT, and fully deployed in December 2021. PBES provides capabilities for comprehensive, transparent, accurate, and timely financial information in support of program budget and resource allocation decisions. Electronic reporting for the planning, programming, and budgeting (PPB) process makes PBES a vital component of the Air Force community’s effort to provide timely and accurate budget information to make Congressional decisions. Please see attached PBES RFI Letter and Questions for additional information. Please read all attachments and review all instructions carefully when responding to this SS/RFI.",
+  "detail_text_length": 2707,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04b551e132394f9695dd3a6d151e013b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04dc58192b8f411d9cfaf97921693f9c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b3c888ebda74590bb7d0c8f211b4bac/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cff728948d87494e9fda963a6b4456b9/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04b551e132394f9695dd3a6d151e013b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1b96b2e220fb9b252e35cd5bdfdbcb29813d6861bbd4310631a71eb998350771.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1b96b2e220fb9b252e35cd5bdfdbcb29813d6861bbd4310631a71eb998350771.xlsx",
+      "file_id": "04b551e132394f9695dd3a6d151e013b",
+      "file_name": "PBES+RFI+Questions_Final.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16355,
+      "sha256": "1b96b2e220fb9b252e35cd5bdfdbcb29813d6861bbd4310631a71eb998350771"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/04dc58192b8f411d9cfaf97921693f9c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/556f4e5eddf6d8d1109fab162ce07f6e217b2a34008de9655918508b025540ab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/556f4e5eddf6d8d1109fab162ce07f6e217b2a34008de9655918508b025540ab.pdf",
+      "file_id": "04dc58192b8f411d9cfaf97921693f9c",
+      "file_name": "PBES+RFI_2026_Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 173397,
+      "sha256": "556f4e5eddf6d8d1109fab162ce07f6e217b2a34008de9655918508b025540ab"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3b3c888ebda74590bb7d0c8f211b4bac/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/04c16898c62f8e184347312d0dbdb047108de13059b076d5469f69759f540e6e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/04c16898c62f8e184347312d0dbdb047108de13059b076d5469f69759f540e6e.pdf",
+      "file_id": "3b3c888ebda74590bb7d0c8f211b4bac",
+      "file_name": "PBES+RFI_2026_Final_Amend1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 270917,
+      "sha256": "04c16898c62f8e184347312d0dbdb047108de13059b076d5469f69759f540e6e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cff728948d87494e9fda963a6b4456b9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b3d976a7f50d85b121b2f42c0de7cee2d8cdc052042795919f15133766e9a6ab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b3d976a7f50d85b121b2f42c0de7cee2d8cdc052042795919f15133766e9a6ab.pdf",
+      "file_id": "cff728948d87494e9fda963a6b4456b9",
+      "file_name": "PBES+RFI+QAs_2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 618307,
+      "sha256": "b3d976a7f50d85b121b2f42c0de7cee2d8cdc052042795919f15133766e9a6ab"
+    }
+  ],
+  "_mirror_hash": "91ce2dbab43d1b3928eca385c822380ea98312250eac767c141d5e029ab34c23",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.219842+00:00"
+}

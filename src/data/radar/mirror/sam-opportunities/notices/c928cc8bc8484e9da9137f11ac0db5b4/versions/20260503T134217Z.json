@@ -1,0 +1,45 @@
+{
+  "id": "sam-c928cc8bc8484e9da9137f11ac0db5b4",
+  "title": "Circuit Card Assembly",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c928cc8bc8484e9da9137f11ac0db5b4",
+  "opportunity_url": "https://sam.gov/opp/c928cc8bc8484e9da9137f11ac0db5b4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c928cc8bc8484e9da9137f11ac0db5b4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c928cc8bc8484e9da9137f11ac0db5b4",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00104-26-Q-X080",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-09-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c928cc8bc8484e9da9137f11ac0db5b4",
+  "detail_text": "CIRCUIT CARD ASSEMB NIIN: 015323946; repair",
+  "detail_text_length": 43,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/145bc414b6114b068679efccd1be3b8f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/145bc414b6114b068679efccd1be3b8f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/be3c84bd3858e347e6d88aadcaff5fb9a6c16ef3b2b32e2bcaf3d7866836e582.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/be3c84bd3858e347e6d88aadcaff5fb9a6c16ef3b2b32e2bcaf3d7866836e582.pdf",
+      "file_id": "145bc414b6114b068679efccd1be3b8f",
+      "file_name": "3.01_Solicitation_N0010425PR26423.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 319875,
+      "sha256": "be3c84bd3858e347e6d88aadcaff5fb9a6c16ef3b2b32e2bcaf3d7866836e582"
+    }
+  ],
+  "_mirror_hash": "5b4bbccd80427f9bcc01bb2d2bbda60942912d96f2a88913f4caa252f1965c00",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.260875+00:00"
+}

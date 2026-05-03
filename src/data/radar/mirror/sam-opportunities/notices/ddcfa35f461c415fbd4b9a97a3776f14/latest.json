@@ -1,0 +1,45 @@
+{
+  "id": "sam-ddcfa35f461c415fbd4b9a97a3776f14",
+  "title": "COUPLER, RADAR RECEIVER REPAIR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ddcfa35f461c415fbd4b9a97a3776f14",
+  "opportunity_url": "https://sam.gov/opp/ddcfa35f461c415fbd4b9a97a3776f14/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ddcfa35f461c415fbd4b9a97a3776f14/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ddcfa35f461c415fbd4b9a97a3776f14",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010424QCD770005",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ddcfa35f461c415fbd4b9a97a3776f14",
+  "detail_text": "This solicitation amendment has been created to decrease the qty down to 5 and remove S/N 01540916 from the prior posted S/N list.",
+  "detail_text_length": 130,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e2df174c87e341fc84b0300888c51328/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e2df174c87e341fc84b0300888c51328/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d531e4c9878f06696a0479a5b5e799d6e423c9e3936fa77792ff40279b51149a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d531e4c9878f06696a0479a5b5e799d6e423c9e3936fa77792ff40279b51149a.pdf",
+      "file_id": "e2df174c87e341fc84b0300888c51328",
+      "file_name": "3.03_Amendment-5-_24202-0100.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 350397,
+      "sha256": "d531e4c9878f06696a0479a5b5e799d6e423c9e3936fa77792ff40279b51149a"
+    }
+  ],
+  "_mirror_hash": "be6e1732baac4ad265fa075a31631b532a079c9fa1e65540683027ba52e159f5",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.188569+00:00"
+}

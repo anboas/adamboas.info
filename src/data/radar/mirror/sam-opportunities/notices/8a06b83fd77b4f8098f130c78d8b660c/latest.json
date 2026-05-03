@@ -1,0 +1,46 @@
+{
+  "id": "sam-8a06b83fd77b4f8098f130c78d8b660c",
+  "title": "Electronic Forklift MFH",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a06b83fd77b4f8098f130c78d8b660c",
+  "opportunity_url": "https://sam.gov/opp/8a06b83fd77b4f8098f130c78d8b660c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8a06b83fd77b4f8098f130c78d8b660c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8a06b83fd77b4f8098f130c78d8b660c",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FA561326PSAG01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5613  700 CONS PK",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-02",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a06b83fd77b4f8098f130c78d8b660c",
+  "detail_text": "This is a pre-solicitation notice for One Electronic Forklift. Please see the attached description.",
+  "detail_text_length": 99,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c803023b57e849a6a298916a86bcf877/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c803023b57e849a6a298916a86bcf877/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5f16dacb6b5d0ff8b589e58c72a5ee59ddab992651ffb78048d4376a697de4cc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5f16dacb6b5d0ff8b589e58c72a5ee59ddab992651ffb78048d4376a697de4cc.pdf",
+      "file_id": "c803023b57e849a6a298916a86bcf877",
+      "file_name": "Presolicitation+Notice+Forklift+MFH.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118065,
+      "sha256": "5f16dacb6b5d0ff8b589e58c72a5ee59ddab992651ffb78048d4376a697de4cc"
+    }
+  ],
+  "_mirror_hash": "62a0349892699d6fd5bd9e47ad086720efc6d2818c97002a8c52874c2a7a393d",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.278150+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sam-2d528e99521a48fe8f8ae586881c0c33",
+  "title": "1HM 9150 016517256 D7, MARINE GREASE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d528e99521a48fe8f8ae586881c0c33",
+  "opportunity_url": "https://sam.gov/opp/2d528e99521a48fe8f8ae586881c0c33/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2d528e99521a48fe8f8ae586881c0c33/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2d528e99521a48fe8f8ae586881c0c33",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00104-26-Q-FD66",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-02",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d528e99521a48fe8f8ae586881c0c33",
+  "detail_text": "SEE ATTACHED SOLICITATION",
+  "detail_text_length": 25,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7596b1e1e16b4e1e95db6a793c2a16b1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7596b1e1e16b4e1e95db6a793c2a16b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2448e2f7cab6023dec8e9ca2003c6af4a493fc3693cd411050d3540bfe96affe.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2448e2f7cab6023dec8e9ca2003c6af4a493fc3693cd411050d3540bfe96affe.pdf",
+      "file_id": "7596b1e1e16b4e1e95db6a793c2a16b1",
+      "file_name": "N00104-26-Q-FD66.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 859873,
+      "sha256": "2448e2f7cab6023dec8e9ca2003c6af4a493fc3693cd411050d3540bfe96affe"
+    }
+  ],
+  "_mirror_hash": "40a8066c667927c793ebd19d5026592b2f6658921decace26ea04d8abe8fa649",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.229278+00:00"
+}

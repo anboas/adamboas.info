@@ -1,0 +1,45 @@
+{
+  "id": "sam-5aa60c2c664d49459d5f1f78d47cab21",
+  "title": "CAM",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5aa60c2c664d49459d5f1f78d47cab21",
+  "opportunity_url": "https://sam.gov/opp/5aa60c2c664d49459d5f1f78d47cab21/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5aa60c2c664d49459d5f1f78d47cab21/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5aa60c2c664d49459d5f1f78d47cab21",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QFD64",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-06-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5aa60c2c664d49459d5f1f78d47cab21",
+  "detail_text": "Procurement of NSN 1HM 3040 016429654 D4, CAM, Qty 2 EA. See attached solicitation for more details.",
+  "detail_text_length": 100,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83426e8515994c7f95b97bdd07b3cacd/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/83426e8515994c7f95b97bdd07b3cacd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ce325148a3e8623da383650314504b490eb03750afdfecd638b07078ebe02283.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ce325148a3e8623da383650314504b490eb03750afdfecd638b07078ebe02283.pdf",
+      "file_id": "83426e8515994c7f95b97bdd07b3cacd",
+      "file_name": "N0010426QFD64.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 883876,
+      "sha256": "ce325148a3e8623da383650314504b490eb03750afdfecd638b07078ebe02283"
+    }
+  ],
+  "_mirror_hash": "605cf0af28324d0820d0c14fab6bc287417206286e048f0389638d7103d36a6f",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.259702+00:00"
+}

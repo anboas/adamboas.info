@@ -1,0 +1,46 @@
+{
+  "id": "sam-04a800ca3f0845a5a55b6765ded95d70",
+  "title": "W074--Metered Mail (Bay Pines and Cape Coral)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04a800ca3f0845a5a55b6765ded95d70",
+  "opportunity_url": "https://sam.gov/opp/04a800ca3f0845a5a55b6765ded95d70/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/04a800ca3f0845a5a55b6765ded95d70/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "04a800ca3f0845a5a55b6765ded95d70",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24826Q0475",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=04a800ca3f0845a5a55b6765ded95d70",
+  "detail_text": "This will be an FSS unrestricted solicitation on GSA marketplace posted on or about 05/01/2026 Reference 36C24826Q0656. GENERAL: C. W. Bill Young Veterans Medical Center located at 10000 Bay Pines Blvd, Bay Pines FL. 33744 and Lee County Veterans Healthcare Center located at 2489 Diplomat Pkwy E Cape Coral, FL 33909 is seeking to acquire a new lease and cost-saving Mailing System equipment under GSA-Pricing, with Supplies, Updates and Service contract, including all required hardware, software, services, and training necessary to manage mail operations at this location and to meet all USPS, Federal and VA mail processing requirements. BACKGROUND: The C. W. Bill Young VA Medical Center mail facility is responsible for processing all incoming and outgoing letters, parcels, and packages. The facility is seeking a comprehensive method of managing and processing mail as well as the ability to track packages. The requirement is for necessary components to include folding/inserting equipment, mail metering capability, inbound/outbound mail tracking, software, and maintenance.",
+  "detail_text_length": 1085,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09a2da3123884e0ebe18f40b2937cc01/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/09a2da3123884e0ebe18f40b2937cc01/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f4e43e4618aa4542023698a5d7b391e91da7c227dac2ec36535b57ccc6681c41.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f4e43e4618aa4542023698a5d7b391e91da7c227dac2ec36535b57ccc6681c41.docx",
+      "file_id": "09a2da3123884e0ebe18f40b2937cc01",
+      "file_name": "36C24826Q0475_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25684,
+      "sha256": "f4e43e4618aa4542023698a5d7b391e91da7c227dac2ec36535b57ccc6681c41"
+    }
+  ],
+  "_mirror_hash": "3dcbaf7c370e1b52d0a8e1ff3654e806412c62ad31e6c7763a3adf21d12cbff3",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.477390+00:00"
+}

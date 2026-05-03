@@ -1,0 +1,57 @@
+{
+  "id": "sam-e7c525252d42451986e5f321e021365a",
+  "title": "IBML Scanner Maintenance Support Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7c525252d42451986e5f321e021365a",
+  "opportunity_url": "https://sam.gov/opp/e7c525252d42451986e5f321e021365a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e7c525252d42451986e5f321e021365a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e7c525252d42451986e5f321e021365a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA3300AFHRA26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3300  42 CONS CC",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e7c525252d42451986e5f321e021365a",
+  "detail_text": "The 42d Contracting Squadron, Maxwell AFB, AL, is conducting market research to identify sources capable of providing annual hardware and software maintenance support for two (2) Imaging Business Machines LLC (IBML) ImageTrac 6 Lite high-speed document scanners, located at the Air Force Historical Research Agency (AFHRA). The Government has identified Imaging Business Machines LLC (IBML) as the only known source capable of providing the required proprietary support. This notice is to determine if any other sources are capable of meeting the Government's requirement. The required services include annual post-warranty hardware and software support, telephone and on-site technical assistance with a 4-hour response time (13x5), Defective Media Retention (DMR), and a one-time maintenance reinstatement inspection for both scanners. The full details of the requirement are included in the attached draft Statement of Work (SOW).",
+  "detail_text_length": 933,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/58ff9595fc7e44c6b00effc15310c6e8/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84e8dc5250db4c989c03cf224a4dff66/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/58ff9595fc7e44c6b00effc15310c6e8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/13f42fe8e15309763d9a5e1cc4909463637fab887b360f9a60a457a1a3a6decb.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/13f42fe8e15309763d9a5e1cc4909463637fab887b360f9a60a457a1a3a6decb.docx",
+      "file_id": "58ff9595fc7e44c6b00effc15310c6e8",
+      "file_name": "Attachment+1.+SOW+IBML+Maintenance+Support+Renewal.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43875,
+      "sha256": "13f42fe8e15309763d9a5e1cc4909463637fab887b360f9a60a457a1a3a6decb"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/84e8dc5250db4c989c03cf224a4dff66/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/775a9dec1b44a2b8857aa8dd287f4945f124e19171896fb8dfd71d54f6cede99.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/775a9dec1b44a2b8857aa8dd287f4945f124e19171896fb8dfd71d54f6cede99.docx",
+      "file_id": "84e8dc5250db4c989c03cf224a4dff66",
+      "file_name": "Attachment+2.+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20073,
+      "sha256": "775a9dec1b44a2b8857aa8dd287f4945f124e19171896fb8dfd71d54f6cede99"
+    }
+  ],
+  "_mirror_hash": "f5e5b394c08595b82fd2f67f51d2492ff04a60f4207f73d14fe0d958dceafebe",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.322225+00:00"
+}

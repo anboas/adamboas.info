@@ -1,0 +1,57 @@
+{
+  "id": "sam-96b5f1b2db6b42c9a998d08757e1f1dd",
+  "title": "Tower Climbing Training & Equipment",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=96b5f1b2db6b42c9a998d08757e1f1dd",
+  "opportunity_url": "https://sam.gov/opp/96b5f1b2db6b42c9a998d08757e1f1dd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/96b5f1b2db6b42c9a998d08757e1f1dd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "96b5f1b2db6b42c9a998d08757e1f1dd",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "20156930",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.MISSION SUPPORT CONTRACTING DIVISION",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=96b5f1b2db6b42c9a998d08757e1f1dd",
+  "detail_text": "U.S. Customs and Border Protection (CBP) is conducting market research for Tower Climbing Training & Equipment. This is a Request for Information (RFI) released pursuant to Revolutionary FAR Overhaul (RFO) Part 10 - Market Research. This RFI's purpose is to obtain market information on viable sources, industry practices, answers to specific questions, and industry comments relating to the attached full RFI. Attached: Request for Information Draft - Statement of Work",
+  "detail_text_length": 470,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/175b0ed7620c4be0b3c013c846b3c82b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a97544e7782c4849adda120de626c179/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/175b0ed7620c4be0b3c013c846b3c82b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e73fd733261007a6af939dd0a25457ff4f52d17f3d681cc3d58531601a4ceb60.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e73fd733261007a6af939dd0a25457ff4f52d17f3d681cc3d58531601a4ceb60.pdf",
+      "file_id": "175b0ed7620c4be0b3c013c846b3c82b",
+      "file_name": "Draft+-+Statement+of+Work+-+Tower+Climbing.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 394588,
+      "sha256": "e73fd733261007a6af939dd0a25457ff4f52d17f3d681cc3d58531601a4ceb60"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a97544e7782c4849adda120de626c179/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc02b8d98bebe6439bb34f226e213316b6138d38c140ad1401f28c8c97619298.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc02b8d98bebe6439bb34f226e213316b6138d38c140ad1401f28c8c97619298.pdf",
+      "file_id": "a97544e7782c4849adda120de626c179",
+      "file_name": "REQUEST+FOR+INFORMATION.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 121590,
+      "sha256": "dc02b8d98bebe6439bb34f226e213316b6138d38c140ad1401f28c8c97619298"
+    }
+  ],
+  "_mirror_hash": "8992c4c72459295ab434ef0e604fa1bf042957e7b7fa0a5a543262ec67469713",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.412693+00:00"
+}

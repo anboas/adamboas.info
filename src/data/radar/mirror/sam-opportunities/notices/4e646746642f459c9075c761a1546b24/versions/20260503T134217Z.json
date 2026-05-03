@@ -1,0 +1,47 @@
+{
+  "id": "sam-4e646746642f459c9075c761a1546b24",
+  "title": "647 CES A&E Pre-Solicitation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4e646746642f459c9075c761a1546b24",
+  "opportunity_url": "https://sam.gov/opp/4e646746642f459c9075c761a1546b24/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4e646746642f459c9075c761a1546b24/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4e646746642f459c9075c761a1546b24",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "647_CES_AE_0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.PACIFIC AIR FORCES.FA5215 766 ESS PKP",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4e646746642f459c9075c761a1546b24",
+  "detail_text": "This notice is NOT an Request for Quote or Request for Proposal. This is a Pre-Solicitation notice and a full Solicitation will be posted at a later time. The Department of the Air Force intends to issue a solicitation for Architect-Engineer (A-E) services for 647 A-E Projects: KNMD 250006 Ni-CAD Battery Shop and KNMD 260001 Joint Mission Planning Facility at Joint Base Pearl Harbor-Hickam (JBPHH), Hawaii. This acquisition is for non-personal A-E services to prepare a complete and usable set of 100 percent construction documents, including drawings, specifications, supporting calculations, basis of design narratives, cost estimates, and other required deliverables suitable for bidding and construction. The acquisition will be conducted in accordance with RFO Subpart 36. Project 1: Ni-CAD Battery Shop (KNMD 250006) A-E services for Project Number KNMD 250006, Renovate Ni-CAD Battery Shop B2131H, located at Building 2131H, Room 128, JBPHH, Hawaii. The selected firm shall prepare a complete 100 percent design package for renovation of approximately 671 square feet of interior space. The design must address hazardous ventilation and exhaust, hydrogen gas detection and interlocks, electrical classification requirements as applicable, emergency response fixtures, industrial safety requirements, and related building system interfaces. Project 2: Joint Mission Planning Facility (KNMD 260001) A-E services for Project Number KNMD 260001, Modernize Joint Mission Planning Facility B2155H, located at Building 2155H, JBPHH, Hawaii. The selected firm shall prepare a complete 100 percent design package for full renovation of approximately 21,672 square feet, including an approximately 3,000 square foot SCIF compliant with ICD/ICS 705 and applicable Government security guidance, together with supporting architectural, structural, mechanical, electrical, fire protection, and communications/ICT design.",
+  "detail_text_length": 1916,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4488991ddbe249a692428c70f06aea1c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4488991ddbe249a692428c70f06aea1c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c646d09a65b0ab492429d48e10ccc889ebef6407b9f0cad826c055aa056dcd95.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c646d09a65b0ab492429d48e10ccc889ebef6407b9f0cad826c055aa056dcd95.pdf",
+      "file_id": "4488991ddbe249a692428c70f06aea1c",
+      "file_name": "647_CES_AE_Presolicitation_Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 109348,
+      "sha256": "c646d09a65b0ab492429d48e10ccc889ebef6407b9f0cad826c055aa056dcd95"
+    }
+  ],
+  "_mirror_hash": "5a9444f6aae20146551a2b6ac2813dc36e2c4c8b04888c7ab22d386eb8e52503",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.233569+00:00"
+}

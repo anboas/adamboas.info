@@ -1,0 +1,58 @@
+{
+  "id": "sam-dd9b259d558a4ad89ef607786168ebdd",
+  "title": "Fluke Networks Cable Analyzer Accessory Kit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd9b259d558a4ad89ef607786168ebdd",
+  "opportunity_url": "https://sam.gov/opp/dd9b259d558a4ad89ef607786168ebdd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dd9b259d558a4ad89ef607786168ebdd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dd9b259d558a4ad89ef607786168ebdd",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "FlukeFY26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVAIR.NAVAIR NAWC TSD.NAWC TRAINING SYSTEMS DIV",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dd9b259d558a4ad89ef607786168ebdd",
+  "detail_text": "See attached Presolicitation Notice and Redacted Fluke Brand Name Determination",
+  "detail_text_length": 79,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a34eb4886c642879e6244e4ac0c793c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89c5eb85f64c4f678943254de7d90edf/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6a34eb4886c642879e6244e4ac0c793c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/52d27b0684ea2b625ea15f4ebf04058c9229b34c72c9fcaac78eeaa4b4176953.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/52d27b0684ea2b625ea15f4ebf04058c9229b34c72c9fcaac78eeaa4b4176953.pdf",
+      "file_id": "6a34eb4886c642879e6244e4ac0c793c",
+      "file_name": "Redacted+Fluke+Brand+Name+Determination.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 97397,
+      "sha256": "52d27b0684ea2b625ea15f4ebf04058c9229b34c72c9fcaac78eeaa4b4176953"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89c5eb85f64c4f678943254de7d90edf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e3d1c76d8a0fc2e2386b84bc99172dfde1d6eeef0eb85e4752e82a1a0c3acf0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e3d1c76d8a0fc2e2386b84bc99172dfde1d6eeef0eb85e4752e82a1a0c3acf0.docx",
+      "file_id": "89c5eb85f64c4f678943254de7d90edf",
+      "file_name": "A9+Fluke+Presolicitation+Notice.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27614,
+      "sha256": "9e3d1c76d8a0fc2e2386b84bc99172dfde1d6eeef0eb85e4752e82a1a0c3acf0"
+    }
+  ],
+  "_mirror_hash": "6a6f72439b1d15ee5346f5e16ff56de3661d9fdbf53b8f331a03c42d593c4a4f",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.175006+00:00"
+}

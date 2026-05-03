@@ -1,0 +1,89 @@
+{
+  "id": "sam-ae8d2716cb1c488da71aaeecb0b185fc",
+  "title": "Test & Evaluation",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ae8d2716cb1c488da71aaeecb0b185fc",
+  "opportunity_url": "https://sam.gov/opp/ae8d2716cb1c488da71aaeecb0b185fc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ae8d2716cb1c488da71aaeecb0b185fc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ae8d2716cb1c488da71aaeecb0b185fc",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926RW0160002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ae8d2716cb1c488da71aaeecb0b185fc",
+  "detail_text": "Test & Eval services- see attached PWS",
+  "detail_text_length": 38,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/022d024b6f284b9d93c7a1e3349da51d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10d4b73d629347d788190391b972efdf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75e2df239729473080f88f20d9fa2386/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f2f0982a06649c293860eb18339ebc9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d01c55ff66f641cf99f4932e51faa0b0/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/022d024b6f284b9d93c7a1e3349da51d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b0ea606668ebf2885cdcc49aab726fa34fc3c48d711211f483778cc5fc187e96.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b0ea606668ebf2885cdcc49aab726fa34fc3c48d711211f483778cc5fc187e96.docx",
+      "file_id": "022d024b6f284b9d93c7a1e3349da51d",
+      "file_name": "Past_Performance_Information_Form.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27074,
+      "sha256": "b0ea606668ebf2885cdcc49aab726fa34fc3c48d711211f483778cc5fc187e96"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/10d4b73d629347d788190391b972efdf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/51bc3197dfd94d782e67df5e4c498db297ea850a7e0008480f2ca7c95b22fdce.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/51bc3197dfd94d782e67df5e4c498db297ea850a7e0008480f2ca7c95b22fdce.pdf",
+      "file_id": "10d4b73d629347d788190391b972efdf",
+      "file_name": "Solicitation+Amendment+N0018926RW0160002+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 632712,
+      "sha256": "51bc3197dfd94d782e67df5e4c498db297ea850a7e0008480f2ca7c95b22fdce"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/75e2df239729473080f88f20d9fa2386/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1bed9d7e08e1805bc608267ea12f3e0583a1d73976eb6fa77046472ddb682994.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1bed9d7e08e1805bc608267ea12f3e0583a1d73976eb6fa77046472ddb682994.pdf",
+      "file_id": "75e2df239729473080f88f20d9fa2386",
+      "file_name": "Test+Eval_PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 322854,
+      "sha256": "1bed9d7e08e1805bc608267ea12f3e0583a1d73976eb6fa77046472ddb682994"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f2f0982a06649c293860eb18339ebc9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/02aefa4c5672eac9e7e356bf5ec7c6fd643196b25da7537f4947ad8dda2bb128.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/02aefa4c5672eac9e7e356bf5ec7c6fd643196b25da7537f4947ad8dda2bb128.docx",
+      "file_id": "8f2f0982a06649c293860eb18339ebc9",
+      "file_name": "PAST_PERFORMANCE_REPORT_FORM.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43711,
+      "sha256": "02aefa4c5672eac9e7e356bf5ec7c6fd643196b25da7537f4947ad8dda2bb128"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d01c55ff66f641cf99f4932e51faa0b0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/34b9fbfe89195c752aa526a7471bf382ea4b771b5a5e43c9357436a66ae1755b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/34b9fbfe89195c752aa526a7471bf382ea4b771b5a5e43c9357436a66ae1755b.pdf",
+      "file_id": "d01c55ff66f641cf99f4932e51faa0b0",
+      "file_name": "DD254+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2911812,
+      "sha256": "34b9fbfe89195c752aa526a7471bf382ea4b771b5a5e43c9357436a66ae1755b"
+    }
+  ],
+  "_mirror_hash": "38ef8b2fdfa55bda1ff989205a06588c7a07bad28fb1270aae4669b8cb426caf",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.217660+00:00"
+}

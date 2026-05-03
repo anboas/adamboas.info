@@ -1,0 +1,57 @@
+{
+  "id": "sam-be8b12d326d74c0fa8a8b67de3e449a8",
+  "title": "Praia - Cash Transportation Service Contract",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=be8b12d326d74c0fa8a8b67de3e449a8",
+  "opportunity_url": "https://sam.gov/opp/be8b12d326d74c0fa8a8b67de3e449a8/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/be8b12d326d74c0fa8a8b67de3e449a8/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "be8b12d326d74c0fa8a8b67de3e449a8",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "19CV1026Q0002",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY PRAIA",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-06-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=be8b12d326d74c0fa8a8b67de3e449a8",
+  "detail_text": "Dears, The U.S. Department of State intends to award a contract for cash transportation services. This procurement is being conducted as a sole-source acquisition under the authority of FAR 13.106-1(b)(1) and FAR 11.105. A Justification and Approval (J&A) supporting this sole-source procurement has been prepared in accordance with FAR 6.303 and FAR 6.305. The J&A, which details the rationale for restricting this acquisition to a single source, is posted with this notice for public review.\"",
+  "detail_text_length": 494,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/796f9ee17698425cae2984b3117ff913/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf01738246094a238e9cae2038e10cdd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/796f9ee17698425cae2984b3117ff913/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/87ff394923c82a38bb18ce8f760e39e4b63013449cb5c9984e807d3e944c0885.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/87ff394923c82a38bb18ce8f760e39e4b63013449cb5c9984e807d3e944c0885.pdf",
+      "file_id": "796f9ee17698425cae2984b3117ff913",
+      "file_name": "A+-+Cash+Transportation+Services+-+Solicitation+Package+19CV1026Q0002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 475402,
+      "sha256": "87ff394923c82a38bb18ce8f760e39e4b63013449cb5c9984e807d3e944c0885"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cf01738246094a238e9cae2038e10cdd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/370cba5790796a77e455d42c5e1d735a549a56224b754c3d2518d4f2c74b5b76.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/370cba5790796a77e455d42c5e1d735a549a56224b754c3d2518d4f2c74b5b76.pdf",
+      "file_id": "cf01738246094a238e9cae2038e10cdd",
+      "file_name": "F+-+Single+Source+Justification+Under+SAT+Template+-+Cash+Transportation+-+Fully+Signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 434627,
+      "sha256": "370cba5790796a77e455d42c5e1d735a549a56224b754c3d2518d4f2c74b5b76"
+    }
+  ],
+  "_mirror_hash": "c013066c5e9e6e994da038acec895009af5a2f83bd0bde9edc12fab65fe0e0e8",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.538261+00:00"
+}

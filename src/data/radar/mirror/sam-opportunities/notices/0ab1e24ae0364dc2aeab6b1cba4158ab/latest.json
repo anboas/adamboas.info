@@ -1,0 +1,57 @@
+{
+  "id": "sam-0ab1e24ae0364dc2aeab6b1cba4158ab",
+  "title": "16th Air Force Commercial Solutions Opening",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ab1e24ae0364dc2aeab6b1cba4158ab",
+  "opportunity_url": "https://sam.gov/opp/0ab1e24ae0364dc2aeab6b1cba4158ab/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0ab1e24ae0364dc2aeab6b1cba4158ab/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0ab1e24ae0364dc2aeab6b1cba4158ab",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA7037-23-S-C0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.AMIC.AMICDET2",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-09-30",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ab1e24ae0364dc2aeab6b1cba4158ab",
+  "detail_text": "The 16th Air Force is offering a CSO authorized by 10 USC 3458 and DFARS 212.70 Defense Commercial Solutions Opening. Under a CSO, the USAF may competitively award contracts to proposals received in response to a general solicitation, similar to a Broad Agency Announcement (BAA), to acquire innovative commercial items, technologies, and services, based on a review of proposals by scientific, technological, or other subject-matter expert peers within the USAF. Under this CSO, all items, technologies, and services shall be treated as commercial items. The USAF intends to obtain \"innovative\" solutions or potential new capabilities that fulfill requirements, close capability gaps, or provide potential technology advancements. Solutions may include existing technologies or procedures, not currently in use by the USAF, that would enhance or streamline USAF mission capabilities. \"Innovative\" is defined as any technology, process or method that is new as of the date of submission of a proposal. It also includes any new application of an existing technology, process, or method. Call 0001 (Topic 0007, MRT-C Automation) is now closed for submissions. Call 0002 (Topic 0006, CTIOS) is now closed for submissions. Call 0003 (Topic 0007, Modernization of Joint Command Language Program Manager Database) is now closed for submissions Call 0004 (Topic 0007, WAPS Scheduling Tool) is now closed for submissions. Call 0005 (Topics 0007 & 0016 OSCARS) is now closed for submissions. Call 0006 (Topics 001 & 006 - FMS Threat Data Support) is now closed for submissions. Call 0007 (Topic 007 AFIN - Premise Wiring Architectural Design (PWAD)) is now closed for submissions. Call 0008 (Topics 007 & 016 - AI-ENABLED ENTERPRISE SECURITY OPERATIONS CENTER (AI-ESOC)) is now closed for submissions. Call 0009 (Topic 006 - Operational Manning Support (OMS) is now closed for submissions. Call 0010 (Topic 007 AFIN - Long Haul Communications - Integrated Support (LHC-IS)) is Open for Submissions until 18 May 2026",
+  "detail_text_length": 2006,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c09da071a0940d6ab7693f12e45508b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3181b63f64b14c91bd10e0ce82bb988e/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2c09da071a0940d6ab7693f12e45508b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e541b4595df621993b9a5b482b7a3c8df27b59974be87dbe2192456feb197500.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e541b4595df621993b9a5b482b7a3c8df27b59974be87dbe2192456feb197500.pdf",
+      "file_id": "2c09da071a0940d6ab7693f12e45508b",
+      "file_name": "16TH+AF+CSO_Updated+26+March+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 431890,
+      "sha256": "e541b4595df621993b9a5b482b7a3c8df27b59974be87dbe2192456feb197500"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3181b63f64b14c91bd10e0ce82bb988e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3dc301c10ce4801e80e30494dcd8a1b978bf0f9e5ff3ec9445c51d54da455499.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3dc301c10ce4801e80e30494dcd8a1b978bf0f9e5ff3ec9445c51d54da455499.pdf",
+      "file_id": "3181b63f64b14c91bd10e0ce82bb988e",
+      "file_name": "CSO+Call+0010_LHC-IS_1+May+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 319356,
+      "sha256": "3dc301c10ce4801e80e30494dcd8a1b978bf0f9e5ff3ec9445c51d54da455499"
+    }
+  ],
+  "_mirror_hash": "cc3f41b846895d9f1397a9d0892e67302eb7e274bf9df24233caf1cbf8db7353",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.551671+00:00"
+}

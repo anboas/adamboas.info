@@ -1,0 +1,57 @@
+{
+  "id": "sam-73ab8be101c54f5eb9eed3a343d3155b",
+  "title": "Dell Wyse Clients",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=73ab8be101c54f5eb9eed3a343d3155b",
+  "opportunity_url": "https://sam.gov/opp/73ab8be101c54f5eb9eed3a343d3155b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/73ab8be101c54f5eb9eed3a343d3155b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "73ab8be101c54f5eb9eed3a343d3155b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA251726SS0065",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2517  21 CONS BLDG 350",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=73ab8be101c54f5eb9eed3a343d3155b",
+  "detail_text": "SOURCES SOUGHT – Dell Wyse Clients The Peterson Space Force Base (PSFB) 21st Contracting Squadron is requesting information from vendors that provide the subject list of parts. The North American Industry Classification System (NAICS) code is 334111 Electronic Computer Manufacturing, and the small business size standard is 1,250 Employees.",
+  "detail_text_length": 341,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6fbd02abc8164de3886b66017e925b02/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c6d89a9f0aa4939b918cd172b8fe182/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6fbd02abc8164de3886b66017e925b02/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fe77cfd93f3f657b2a1aac54d5aa04ae7dadec4d7ecbf602317f2463109e4e6b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fe77cfd93f3f657b2a1aac54d5aa04ae7dadec4d7ecbf602317f2463109e4e6b.pdf",
+      "file_id": "6fbd02abc8164de3886b66017e925b02",
+      "file_name": "Sources+Sought+-+Dell+Wyse+Clients.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 159309,
+      "sha256": "fe77cfd93f3f657b2a1aac54d5aa04ae7dadec4d7ecbf602317f2463109e4e6b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7c6d89a9f0aa4939b918cd172b8fe182/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c56adcd4f71bcbfe9f72653f5cfc835f8f0b8407b05564cedd74edf7eb6e1d9a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c56adcd4f71bcbfe9f72653f5cfc835f8f0b8407b05564cedd74edf7eb6e1d9a.xlsx",
+      "file_id": "7c6d89a9f0aa4939b918cd172b8fe182",
+      "file_name": "Attachment+1+-+Dell+Wyse+Clients+Parts+List.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12803,
+      "sha256": "c56adcd4f71bcbfe9f72653f5cfc835f8f0b8407b05564cedd74edf7eb6e1d9a"
+    }
+  ],
+  "_mirror_hash": "829375392242f06176f024bb42f1abc07faab39fc6a16e4631f063c0545579fe",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.305487+00:00"
+}

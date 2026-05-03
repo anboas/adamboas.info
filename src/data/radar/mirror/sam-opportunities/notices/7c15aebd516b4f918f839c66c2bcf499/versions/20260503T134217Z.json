@@ -1,0 +1,57 @@
+{
+  "id": "sam-7c15aebd516b4f918f839c66c2bcf499",
+  "title": "Z--FOLS, Replace Alarm System & Electrical Panel",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c15aebd516b4f918f839c66c2bcf499",
+  "opportunity_url": "https://sam.gov/opp/7c15aebd516b4f918f839c66c2bcf499/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7c15aebd516b4f918f839c66c2bcf499/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7c15aebd516b4f918f839c66c2bcf499",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140P6026Q0042",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.NATIONAL PARK SERVICE.MWR MIDWEST REGION(60000)",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7c15aebd516b4f918f839c66c2bcf499",
+  "detail_text": "FOLS, Replace Alarm System & Electrical Panel The purpose of this amendment is to attached the correct Sources Sought Survey Market Survey titled \"Sources Sought Survey Market Survey\"",
+  "detail_text_length": 183,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12a03599caee46bda27f5fd206fb7e17/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cef4a09815004fb0aa1e04ed504b4f03/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12a03599caee46bda27f5fd206fb7e17/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3ebee28132d9889b926d4b6bd744fc88ae84055723794b058902502d43e4cc6f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3ebee28132d9889b926d4b6bd744fc88ae84055723794b058902502d43e4cc6f.pdf",
+      "file_id": "12a03599caee46bda27f5fd206fb7e17",
+      "file_name": "Sources_Sought_Survey_Market_Survey_140P6026Q0042_2.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 266762,
+      "sha256": "3ebee28132d9889b926d4b6bd744fc88ae84055723794b058902502d43e4cc6f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/cef4a09815004fb0aa1e04ed504b4f03/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c30852cb82fa441691e766e798407596ffecbd8a72f60bc7e2816dd6adf42c1c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c30852cb82fa441691e766e798407596ffecbd8a72f60bc7e2816dd6adf42c1c.pdf",
+      "file_id": "cef4a09815004fb0aa1e04ed504b4f03",
+      "file_name": "Sources_Sought_Survey_Market_Survey_140P6026Q0042_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 206676,
+      "sha256": "c30852cb82fa441691e766e798407596ffecbd8a72f60bc7e2816dd6adf42c1c"
+    }
+  ],
+  "_mirror_hash": "89403691fdda0c6b7a30d352a388876c1a585c3f229e7fe841ac6cdf8e0668f5",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.397394+00:00"
+}

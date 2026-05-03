@@ -1,0 +1,58 @@
+{
+  "id": "sam-ffb1763358b74503a89f5d50ef755658",
+  "title": "PRE-SOLICITATION/DRAFT REQUEST FOR PROPOSAL (RFP) DATA SCIENCE, OPERATIONS, REQUIREMENTS, EXPLOITATION, AND ENHANCED ENGINEERING (DORE3)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffb1763358b74503a89f5d50ef755658",
+  "opportunity_url": "https://sam.gov/opp/ffb1763358b74503a89f5d50ef755658/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ffb1763358b74503a89f5d50ef755658/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ffb1763358b74503a89f5d50ef755658",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "HHM40226R0007",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INTELLIGENCE AGENCY (DIA).VIRGINIA CONTRACTING ACTIVITY",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ffb1763358b74503a89f5d50ef755658",
+  "detail_text": "This is a Pre-Solicitation notice that includes a DRAFT Request for Proposal (RFP) for Data Science, Operations, Requirements, Exploitation, and Enhanced Engineering (DORE3).",
+  "detail_text_length": 174,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24df5c29165d4213bfec6bc998e3b038/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2190ece34f642e3bdee76c33fd1581d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/24df5c29165d4213bfec6bc998e3b038/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d6b7548cdd05a711e0b5c532cd9c06fd2eb84d613d9693a784118b5d234e0ea4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d6b7548cdd05a711e0b5c532cd9c06fd2eb84d613d9693a784118b5d234e0ea4.pdf",
+      "file_id": "24df5c29165d4213bfec6bc998e3b038",
+      "file_name": "DORE3+DRAFT+Solicitation+HHM40226R0007d.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 6971513,
+      "sha256": "d6b7548cdd05a711e0b5c532cd9c06fd2eb84d613d9693a784118b5d234e0ea4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b2190ece34f642e3bdee76c33fd1581d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/720041fc30f9f54ca0f2c06d2aaea1e8a87743c43a96371ae36594301973a1f9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/720041fc30f9f54ca0f2c06d2aaea1e8a87743c43a96371ae36594301973a1f9.pdf",
+      "file_id": "b2190ece34f642e3bdee76c33fd1581d",
+      "file_name": "DORE3+Presol_Notice+HHM40226R0007.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 403741,
+      "sha256": "720041fc30f9f54ca0f2c06d2aaea1e8a87743c43a96371ae36594301973a1f9"
+    }
+  ],
+  "_mirror_hash": "530785dfc1cc6d4227b66dfe50a833c5509d450c38ee7d4352305a79cbda7953",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.223850+00:00"
+}

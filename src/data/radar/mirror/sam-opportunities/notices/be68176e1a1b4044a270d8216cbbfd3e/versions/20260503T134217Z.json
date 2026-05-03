@@ -1,0 +1,68 @@
+{
+  "id": "sam-be68176e1a1b4044a270d8216cbbfd3e",
+  "title": "Learning & Professional Education Program Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=be68176e1a1b4044a270d8216cbbfd3e",
+  "opportunity_url": "https://sam.gov/opp/be68176e1a1b4044a270d8216cbbfd3e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/be68176e1a1b4044a270d8216cbbfd3e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "be68176e1a1b4044a270d8216cbbfd3e",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "26_31_APMO",
+  "agency_path": "TREASURY, DEPARTMENT OF THE.INTERNAL REVENUE SERVICE.IRS - WASHINGTON DC",
+  "posted_date": "2026-04-30",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=be68176e1a1b4044a270d8216cbbfd3e",
+  "detail_text": "At a summary level, the Government has interest in and is seeking information regarding the capability of firms who can provide services pertaining to training. LB&I requires unlimited access to a training subscription with a centralized digital library of accredited continuing education programs, course materials, and technical publications designed to support a minimum of 3,500 compliance employees.",
+  "detail_text_length": 404,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a2583c2b58743c6a8fdb408e3e7833f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e872ab03cb82404cbf9cec29b7853da2/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fee13c38833d49ba97efa4edbcf5e903/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3a2583c2b58743c6a8fdb408e3e7833f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/14c1f998f82c232dc3086bb92df5f41a74350dc820a7aae8e8f74a3a4c81772e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/14c1f998f82c232dc3086bb92df5f41a74350dc820a7aae8e8f74a3a4c81772e.xlsx",
+      "file_id": "3a2583c2b58743c6a8fdb408e3e7833f",
+      "file_name": "Attachment+2+-+Vendor+Response+Form.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 143004,
+      "sha256": "14c1f998f82c232dc3086bb92df5f41a74350dc820a7aae8e8f74a3a4c81772e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e872ab03cb82404cbf9cec29b7853da2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/863a502f43f49bed82aee8a675e503c0f61da333187e84746e56a462755c2d3a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/863a502f43f49bed82aee8a675e503c0f61da333187e84746e56a462755c2d3a.pdf",
+      "file_id": "e872ab03cb82404cbf9cec29b7853da2",
+      "file_name": "Attachment+1+-+Requirements+Document+-+LPEPS+4.28.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 183711,
+      "sha256": "863a502f43f49bed82aee8a675e503c0f61da333187e84746e56a462755c2d3a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fee13c38833d49ba97efa4edbcf5e903/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/379b817a1c734f23dc7cb8afaaeddc2156241f09a6e37c0cc877cfb5bf232814.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/379b817a1c734f23dc7cb8afaaeddc2156241f09a6e37c0cc877cfb5bf232814.pdf",
+      "file_id": "fee13c38833d49ba97efa4edbcf5e903",
+      "file_name": "SSN+-+LPEP+Subscription+4.7.26+Final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 151187,
+      "sha256": "379b817a1c734f23dc7cb8afaaeddc2156241f09a6e37c0cc877cfb5bf232814"
+    }
+  ],
+  "_mirror_hash": "68ccc8c5bfe2a818f5ae35792f0cb35647f2d546b0518c063bcedfd953058177",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.348417+00:00"
+}

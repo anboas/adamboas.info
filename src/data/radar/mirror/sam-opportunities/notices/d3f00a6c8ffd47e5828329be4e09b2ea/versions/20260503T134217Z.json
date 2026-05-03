@@ -1,0 +1,56 @@
+{
+  "id": "sam-d3f00a6c8ffd47e5828329be4e09b2ea",
+  "title": "Aviation-Grade American Flag with Rigging and Hardware",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3f00a6c8ffd47e5828329be4e09b2ea",
+  "opportunity_url": "https://sam.gov/opp/d3f00a6c8ffd47e5828329be4e09b2ea/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d3f00a6c8ffd47e5828329be4e09b2ea/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d3f00a6c8ffd47e5828329be4e09b2ea",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926QL1250001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-05-01",
+  "response_deadline": "2026-05-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d3f00a6c8ffd47e5828329be4e09b2ea",
+  "detail_text": "The Department of the Navy requires a custom-manufactured, aviation-grade United States Flag to set the tone for the opening of the International Aerial Review (IAR) in commemoration of the Nations 250th birthday. This flag will be the largest known flag to fly over New York City.",
+  "detail_text_length": 281,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b772ad77b424f6b97c62b0226ad08f4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e736566ffe034899bb5e96c4ac4115b6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7b772ad77b424f6b97c62b0226ad08f4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/24ab4ebba5a89e00620f0a835e73b48b688bb00a2fd2e5d7b5429fab4f028282.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/24ab4ebba5a89e00620f0a835e73b48b688bb00a2fd2e5d7b5429fab4f028282.pdf",
+      "file_id": "7b772ad77b424f6b97c62b0226ad08f4",
+      "file_name": "Solicitation+Amendment+N0018926QL1250001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 590534,
+      "sha256": "24ab4ebba5a89e00620f0a835e73b48b688bb00a2fd2e5d7b5429fab4f028282"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e736566ffe034899bb5e96c4ac4115b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2387bc80ae4934552d45d39b188f79d767d638c66c397d162383497319f43bab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2387bc80ae4934552d45d39b188f79d767d638c66c397d162383497319f43bab.pdf",
+      "file_id": "e736566ffe034899bb5e96c4ac4115b6",
+      "file_name": "Solicitation+Amendment+-+N0018926QL1250001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1883402,
+      "sha256": "2387bc80ae4934552d45d39b188f79d767d638c66c397d162383497319f43bab"
+    }
+  ],
+  "_mirror_hash": "50c4eec3ba0e4ebd45274f441431106f51b06d66e7160dee1c46773efca438af",
+  "_mirror_run_id": "20260503T134217Z",
+  "_mirror_recorded_at": "2026-05-03T13:49:54.191462+00:00"
+}
