@@ -1,0 +1,57 @@
+{
+  "id": "sam-785f0c0cb4404df7869911576eea44d2",
+  "title": "AF EAD_IA/MA-PLMF",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=785f0c0cb4404df7869911576eea44d2",
+  "opportunity_url": "https://sam.gov/opp/785f0c0cb4404df7869911576eea44d2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/785f0c0cb4404df7869911576eea44d2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "785f0c0cb4404df7869911576eea44d2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI_R7DFW5YAFNSF",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE.GSA FAS AAS ARMY (QFB)",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=785f0c0cb4404df7869911576eea44d2",
+  "detail_text": "Sources Sought / Request for Information Information Assurance/Mission Assurance and Program Lifecycle Management Framework (PLMF) System Administration for the Air Force Executive Aircraft Division (EDA). Response required by or before 5:00 p.m. (EDT) May 15, 2026 NOTICE FOR SOURCES SOUGHT and REQUEST FOR INFORMATION (RFI). This is not a Request for Proposal (RFP). The Government is requesting information regarding the feasibility of vendors to perform the efforts described briefly herein. This is a Sources Sought notice/RFI only. This is not a solicitation for proposals, quotes, or bids. Information received as a result of this RFI will be used solely for market research purposes. The Government shall use this market research in determining the best method of procurement, which is part of the acquisition planning process. This RFI is for information purposes only and no award will result from the RFI at this time. A RESPONSE IS REQUESTD FROM ALL INTERESTED VENDORS REGARDLESS OF BUSINESS SIZE. Requested responses should include: A complete Sources Sought Response Form-AF EAD (attached to this RFI) PLEASE NOTE: YOUR RESPONSE TO THIS RFI DOES NOT CONSTITUTE A QUOTE OR PROPOSAL Failure to provide the information as requested by the due date will result in the Government’s continuance of the acquisition planning phase, without giving consideration to the capabilities of the contractors who do not respond timely. Please refer to the Draft Performance Work Statement (PWS) – AF EAD (attached to this RFI).",
+  "detail_text_length": 1524,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31b5894885a7427386ab9f5195cc2aba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48724ce5fc8e4f6a9a86ff921c4761d6/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/31b5894885a7427386ab9f5195cc2aba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9984f0dd7c4b93836a53b0aa78ee30d4111446ffa0734970868169761fb0d600.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9984f0dd7c4b93836a53b0aa78ee30d4111446ffa0734970868169761fb0d600.pdf",
+      "file_id": "31b5894885a7427386ab9f5195cc2aba",
+      "file_name": "AFLCMC-WVV+EAD_RFI_PWS_Draft_R1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 900916,
+      "sha256": "9984f0dd7c4b93836a53b0aa78ee30d4111446ffa0734970868169761fb0d600"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/48724ce5fc8e4f6a9a86ff921c4761d6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/36d65125d665c12954416b100a07e09781a1b85c1d397b6e9eb329564e4b6e04.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/36d65125d665c12954416b100a07e09781a1b85c1d397b6e9eb329564e4b6e04.xlsx",
+      "file_id": "48724ce5fc8e4f6a9a86ff921c4761d6",
+      "file_name": "RFI-Sources+Sought+Response+Form.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17690,
+      "sha256": "36d65125d665c12954416b100a07e09781a1b85c1d397b6e9eb329564e4b6e04"
+    }
+  ],
+  "_mirror_hash": "26d95d2cc9fa073c17b60a562329c57d9a56227a4c718ff2eb82747e32a7acec",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.726218+00:00"
+}

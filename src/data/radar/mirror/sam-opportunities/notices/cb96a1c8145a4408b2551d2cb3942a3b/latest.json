@@ -1,0 +1,46 @@
+{
+  "id": "sam-cb96a1c8145a4408b2551d2cb3942a3b",
+  "title": "Shawnee CMOP 14 Pharmaceuticals",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb96a1c8145a4408b2551d2cb3942a3b",
+  "opportunity_url": "https://sam.gov/opp/cb96a1c8145a4408b2551d2cb3942a3b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cb96a1c8145a4408b2551d2cb3942a3b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cb96a1c8145a4408b2551d2cb3942a3b",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C77026Q0130",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cb96a1c8145a4408b2551d2cb3942a3b",
+  "detail_text": "Presolicitation 36C77026Q0130",
+  "detail_text_length": 29,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/729aa3f863184e07af65a6dc7438a546/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/729aa3f863184e07af65a6dc7438a546/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/32affddcda03f6e2b96ff036989e9d9df8484451f02456d9a92efe9a22eebbe3.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/32affddcda03f6e2b96ff036989e9d9df8484451f02456d9a92efe9a22eebbe3.pdf",
+      "file_id": "729aa3f863184e07af65a6dc7438a546",
+      "file_name": "S03_PRE_SOL_Q0130.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 112093,
+      "sha256": "32affddcda03f6e2b96ff036989e9d9df8484451f02456d9a92efe9a22eebbe3"
+    }
+  ],
+  "_mirror_hash": "5ea4bb520f391c8110c726ef794dcc3959482a5da78b7de427ffaaad53caa14a",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.656276+00:00"
+}

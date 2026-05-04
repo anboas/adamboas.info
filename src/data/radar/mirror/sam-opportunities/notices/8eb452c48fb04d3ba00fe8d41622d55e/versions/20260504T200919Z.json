@@ -1,0 +1,45 @@
+{
+  "id": "sam-8eb452c48fb04d3ba00fe8d41622d55e",
+  "title": "MOTOR,DIRECT CURREN",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8eb452c48fb04d3ba00fe8d41622d55e",
+  "opportunity_url": "https://sam.gov/opp/8eb452c48fb04d3ba00fe8d41622d55e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8eb452c48fb04d3ba00fe8d41622d55e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8eb452c48fb04d3ba00fe8d41622d55e",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0010426QX085",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8eb452c48fb04d3ba00fe8d41622d55e",
+  "detail_text": "MOTOR,DIRECT CURREN NIIN: 012740617",
+  "detail_text_length": 35,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/34e94d423249431e97bc6e8e6c1d8221/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/34e94d423249431e97bc6e8e6c1d8221/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/79fe096b023fcb3e43fb513c922aecab2f4aa9c3ec913f6517187f89ca62f322.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/79fe096b023fcb3e43fb513c922aecab2f4aa9c3ec913f6517187f89ca62f322.pdf",
+      "file_id": "34e94d423249431e97bc6e8e6c1d8221",
+      "file_name": "3.01_Solicitation_N0010426PR26323.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 744830,
+      "sha256": "79fe096b023fcb3e43fb513c922aecab2f4aa9c3ec913f6517187f89ca62f322"
+    }
+  ],
+  "_mirror_hash": "665f2c269faeb3cf253ef02ce276e65f750aa13421a31b507eebc42856c55d6e",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.377300+00:00"
+}

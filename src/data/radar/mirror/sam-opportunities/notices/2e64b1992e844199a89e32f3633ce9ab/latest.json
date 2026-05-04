@@ -1,0 +1,46 @@
+{
+  "id": "sam-2e64b1992e844199a89e32f3633ce9ab",
+  "title": "IHS Instructions For Use Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e64b1992e844199a89e32f3633ce9ab",
+  "opportunity_url": "https://sam.gov/opp/2e64b1992e844199a89e32f3633ce9ab/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2e64b1992e844199a89e32f3633ce9ab/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2e64b1992e844199a89e32f3633ce9ab",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1527711",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.DIVISION OF ACQUISITIONS POLICY HQ",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e64b1992e844199a89e32f3633ce9ab",
+  "detail_text": "This Sources Sought Notice (SSN) is for market research and planning purposes only and shall not be construed as a solicitation or an obligation or commitment to issue a solicitation by the Indian Health Service (IHS). The scope of this requirement is for the contractor to provide a commercial off-the-shelf (COTS), automated, web-based Instructions for Use (IFU) and Safety Data Sheet (SDS) repository system for use by federal Indian Health Service (IHS) healthcare facilities. The software must provide online access to all required Instructions for Use, service manuals, safety data sheets, and other manufacturer guidelines, and resources for instruments, equipment, and supplies related to dental, medical/surgical and biomedical instruments and equipment, and consumables, tissues and implants, and chemicals that are in use at each IHS federal facility. See attached Sources Sought FY26 for further details and submission requirements.",
+  "detail_text_length": 944,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67d944b8e4384f8a801f808f4c169823/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/67d944b8e4384f8a801f808f4c169823/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/24a4958cdb1877b4b11c8dfa6470c405d31be5d8ccb5c0ddd9b4b8807e28173f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/24a4958cdb1877b4b11c8dfa6470c405d31be5d8ccb5c0ddd9b4b8807e28173f.pdf",
+      "file_id": "67d944b8e4384f8a801f808f4c169823",
+      "file_name": "Sources+Sought_FY26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 216174,
+      "sha256": "24a4958cdb1877b4b11c8dfa6470c405d31be5d8ccb5c0ddd9b4b8807e28173f"
+    }
+  ],
+  "_mirror_hash": "671eb441b51a93b340015ba8a41d5de66a1a8bd23fe2120825745ebdf546aa26",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.731058+00:00"
+}

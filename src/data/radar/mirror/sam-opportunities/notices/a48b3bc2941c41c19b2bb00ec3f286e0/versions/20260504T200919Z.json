@@ -1,0 +1,46 @@
+{
+  "id": "sam-a48b3bc2941c41c19b2bb00ec3f286e0",
+  "title": "HOUSING ASSY,ACTUAT NSN:1680-01-137-3534 P/N:70410-02501-045",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a48b3bc2941c41c19b2bb00ec3f286e0",
+  "opportunity_url": "https://sam.gov/opp/a48b3bc2941c41c19b2bb00ec3f286e0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a48b3bc2941c41c19b2bb00ec3f286e0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a48b3bc2941c41c19b2bb00ec3f286e0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPRRA126R0056",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION HUNTSVILLE.DLA AVIATION AT HUNTSVILLE, AL",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a48b3bc2941c41c19b2bb00ec3f286e0",
+  "detail_text": "See Attachment.",
+  "detail_text_length": 15,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00ee66b9d39a4acb969a6e05fdc30f53/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/00ee66b9d39a4acb969a6e05fdc30f53/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1c7a327ac5e8b8bba5e52a38f12d0507b1a5e2b08760f2ddf6b01b7f98d84a13.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1c7a327ac5e8b8bba5e52a38f12d0507b1a5e2b08760f2ddf6b01b7f98d84a13.pdf",
+      "file_id": "00ee66b9d39a4acb969a6e05fdc30f53",
+      "file_name": "AX6F2482AX+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 89957,
+      "sha256": "1c7a327ac5e8b8bba5e52a38f12d0507b1a5e2b08760f2ddf6b01b7f98d84a13"
+    }
+  ],
+  "_mirror_hash": "ddf8284017ea6d09815318de28669faa3c4f0e4619e0706e923a737cb80a723c",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.559033+00:00"
+}

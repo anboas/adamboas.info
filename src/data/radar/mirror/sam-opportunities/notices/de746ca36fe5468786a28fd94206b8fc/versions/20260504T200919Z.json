@@ -1,0 +1,57 @@
+{
+  "id": "sam-de746ca36fe5468786a28fd94206b8fc",
+  "title": "733 CES Fort Eustis 544H Loader Repair",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de746ca36fe5468786a28fd94206b8fc",
+  "opportunity_url": "https://sam.gov/opp/de746ca36fe5468786a28fd94206b8fc/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/de746ca36fe5468786a28fd94206b8fc/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "de746ca36fe5468786a28fd94206b8fc",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "05042026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4800  633 CONS PKP",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de746ca36fe5468786a28fd94206b8fc",
+  "detail_text": "The service requirement is to provide full repair and restoration of a John Deere 544H Loader that supports refuse and recycling yard operations for the 733d Civil Engineer Squadron at Fort Eustis. The contractor must supply all labor, tools, equipment, transportation, and OEM or OEM‑equivalent parts needed to return the loader to safe, fully functional condition. Required work includes replacement of major assemblies, hydraulic components, bushings, pins, seals, and associated hardware, as well as line boring, cylinder resealing, and structural component replacement, along with removal and installation of the bucket and boom frame, line boring of top frame holes, replacement of Z‑bar bushings and bucket link, resealing of the bucket cylinder, and replacement of the broken boom cylinder. The contractor shall provide all labor, materials, tools, equipment, transportation, and technical expertise necessary to fully restore the John Deere 544H Loader to safe, OEM‑compliant operating condition in support of refuse and recycling yard operations. Performance requirements include procuring and delivering all OEM or OEM‑equivalent parts and completing repairs such as “replacement of major assemblies, hydraulic components, bushings, pins, seals, and associated hardware, as well as lineboring, cylinder resealing, and structural component replacement” (Statement of Requirement, Section 2.0). The contractor must perform tasks including removal and installation of the bucket and boom frame, lineboring of top frame holes, replacement of Z‑bar bushings and bucket link, resealing of the bucket cylinder, and replacement of the broken boom cylinder (SOR, Section 4.3). All work must meet OEM specifications, pass government inspection, and be completed within 30 days after receipt of all materials to ensure the loader is returned to full operational capability. Period of Performance: 30 day ARO Attachments: 1. Parts Breakdown.xlsx 2. Statement of Requirement - Fort Eustis 544H Loader Repair.pdf",
+  "detail_text_length": 2009,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/652d69ea142f43f381d451cd7e9cc7ef/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb4899ec186741ae9fd57f7f6c1584c1/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/652d69ea142f43f381d451cd7e9cc7ef/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0186d8a62667ca085490932bed15d0129900a632101eaf57cbcf7605b9d164ef.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0186d8a62667ca085490932bed15d0129900a632101eaf57cbcf7605b9d164ef.pdf",
+      "file_id": "652d69ea142f43f381d451cd7e9cc7ef",
+      "file_name": "Statement+of+Requirement+-+Fort+Eustis+544H+Loader+Repair.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 146609,
+      "sha256": "0186d8a62667ca085490932bed15d0129900a632101eaf57cbcf7605b9d164ef"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb4899ec186741ae9fd57f7f6c1584c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/08fd30003c4aee78f78a9cd3030a14159d1729cbf1d8a3cc4e74e560e6313056.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/08fd30003c4aee78f78a9cd3030a14159d1729cbf1d8a3cc4e74e560e6313056.xlsx",
+      "file_id": "eb4899ec186741ae9fd57f7f6c1584c1",
+      "file_name": "Parts+Breakdown+.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 13222,
+      "sha256": "08fd30003c4aee78f78a9cd3030a14159d1729cbf1d8a3cc4e74e560e6313056"
+    }
+  ],
+  "_mirror_hash": "715963ae9c579cacdfd627174ce7d439d4d103f4cfe68470f6dcb365896c51e1",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.627549+00:00"
+}

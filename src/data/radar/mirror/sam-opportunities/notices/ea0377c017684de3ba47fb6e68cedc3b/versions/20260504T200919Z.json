@@ -1,0 +1,46 @@
+{
+  "id": "sam-ea0377c017684de3ba47fb6e68cedc3b",
+  "title": "International Asset Recovery (IAR)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea0377c017684de3ba47fb6e68cedc3b",
+  "opportunity_url": "https://sam.gov/opp/ea0377c017684de3ba47fb6e68cedc3b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ea0377c017684de3ba47fb6e68cedc3b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ea0377c017684de3ba47fb6e68cedc3b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "15JPSS26N00000063",
+  "agency_path": "JUSTICE, DEPARTMENT OF.OFFICES, BOARDS AND DIVISIONS.JMD-PROCUREMENT SERVICES STAFF",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ea0377c017684de3ba47fb6e68cedc3b",
+  "detail_text": "See Statement OF Work (SOW)",
+  "detail_text_length": 27,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/06153494f976440b8426a859658e714b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/06153494f976440b8426a859658e714b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d51367321e148672036a809e7f3dcf7bb4669ee7b9d4514c527c80c169336c1d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d51367321e148672036a809e7f3dcf7bb4669ee7b9d4514c527c80c169336c1d.pdf",
+      "file_id": "06153494f976440b8426a859658e714b",
+      "file_name": "Sources+Sought+Notice+IAR+5.4.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 5620654,
+      "sha256": "d51367321e148672036a809e7f3dcf7bb4669ee7b9d4514c527c80c169336c1d"
+    }
+  ],
+  "_mirror_hash": "bc740e03b1a08d104719c1da4f96356b3f1306a11d78894d7fae12abc6b2d478",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.696048+00:00"
+}

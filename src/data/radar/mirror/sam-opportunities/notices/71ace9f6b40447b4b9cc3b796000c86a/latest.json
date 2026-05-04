@@ -1,0 +1,59 @@
+{
+  "id": "sam-71ace9f6b40447b4b9cc3b796000c86a",
+  "title": "31-0045; Database & Software Development Seaport",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71ace9f6b40447b4b9cc3b796000c86a",
+  "opportunity_url": "https://sam.gov/opp/71ace9f6b40447b4b9cc3b796000c86a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/71ace9f6b40447b4b9cc3b796000c86a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "71ace9f6b40447b4b9cc3b796000c86a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N64498-26-RFPREQ-PD-31-0045",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71ace9f6b40447b4b9cc3b796000c86a",
+  "detail_text": "This Sources Sought notice is being issued by the Naval Surface Warfare Center, Philadelphia Division (NSWCPD). The Government is seeking information regarding the procurement of NAVLOG TD C/312 Logistics Data Management Support in accordance with the attached DRAFT Statement of Work (SOW) and DRAFT Level of Effort. SUBMISSION OF RESPONSES: Respondents shall provide capability statements with specific information regarding their ability to provide the required materials described in the Sources Sought Attachment and SOW. NSWCPD will only accept unclassified, electronic submissions. Responses shall be submitted via email to jenny.e.tomeo.civ@us.navy.mil by 04:00PM EST, 21 May 2026. Responses shall list \" N64498-26-RFPREQ-PD-31-0045\" in the subject line. No phone calls shall be accepted. This notice is for market research purposes only and does NOT constitute a Request for Proposal. This notice shall not be construed as a contract, a promise to contract, or as a commitment of any kind by the Government. The Government is NOT seeking or accepting unsolicited proposals. This notice is issued solely for conducting market research in accordance with FAR Part 10 and gathering information for planning purposes. Government WILL NOT PAY for any information received, and the Government will not compensate the respondent for any cost incurred in developing the response to this notice. The Government will not release any information marked with a proprietary legend received in response to this notice to any firms, agencies or individuals outside the Government without written permission in accordance with the legend. Please be advised that all submissions become Government property and will not be returned.",
+  "detail_text_length": 1723,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/459dc4a980dc490591b32969c74f7753/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f5b65f226505455a972f3d7f732e7288/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/459dc4a980dc490591b32969c74f7753/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/07b43a0a9c1eb21ebf482a580dd391b565ab39dddee0cee34b3e36ae05214238.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/07b43a0a9c1eb21ebf482a580dd391b565ab39dddee0cee34b3e36ae05214238.docx",
+      "file_id": "459dc4a980dc490591b32969c74f7753",
+      "file_name": "NAVLOGTD+SOW+Draft.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64561,
+      "sha256": "07b43a0a9c1eb21ebf482a580dd391b565ab39dddee0cee34b3e36ae05214238"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f5b65f226505455a972f3d7f732e7288/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3549b5279679696820fa22b41ecc58498f83dd5351b610c48d6f8de63811dce9.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3549b5279679696820fa22b41ecc58498f83dd5351b610c48d6f8de63811dce9.docx",
+      "file_id": "f5b65f226505455a972f3d7f732e7288",
+      "file_name": "Sources+Sought_2025_NAVLOG.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21064,
+      "sha256": "3549b5279679696820fa22b41ecc58498f83dd5351b610c48d6f8de63811dce9"
+    }
+  ],
+  "_mirror_hash": "a71b242c8ea0ec4165562b47084470768710375fa44fb891867bce9a505c6edb",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.107274+00:00"
+}

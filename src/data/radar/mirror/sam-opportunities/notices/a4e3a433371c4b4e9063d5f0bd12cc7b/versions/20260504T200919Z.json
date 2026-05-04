@@ -1,0 +1,46 @@
+{
+  "id": "sam-a4e3a433371c4b4e9063d5f0bd12cc7b",
+  "title": "Seal, Plain Encased  5330-01-480-7046",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4e3a433371c4b4e9063d5f0bd12cc7b",
+  "opportunity_url": "https://sam.gov/opp/a4e3a433371c4b4e9063d5f0bd12cc7b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a4e3a433371c4b4e9063d5f0bd12cc7b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a4e3a433371c4b4e9063d5f0bd12cc7b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL25345015",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4e3a433371c4b4e9063d5f0bd12cc7b",
+  "detail_text": "This notice was posted to identify sources that can manufacture NSN 5330-01-480-7046 and are interested in quoting a long-term contract solicitation. This notice was posted for the purpose of market research only and is not a Request for Proposal (RFP) . Please review the NSN below and provide any sources that may be able to manufacture the item. The sources that are currently approved to manufacture this Seal, Plain Encased are listed below. If you are interested in this requirement, please complete the attached Market Research Questionnaire. All information should be submitted to the Contract Specialist, Derek Hixenbaugh, at Derek.J.Hixenbaugh@dla.mil no later than May 11, 2026. The approved sources and part numbers are listed below: NSN: 5330-01-480-7046 Description: Seal, Plain Encased Approved Source and Part Number: FEDERAL MOGUL CORP GOVERNMENT SALES DEPT(CAGE 01212) P/N 100640BXR AMC: 3 AMSC: B",
+  "detail_text_length": 915,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/616bf1e614c342de87fb5ae9d676537b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/616bf1e614c342de87fb5ae9d676537b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/87400157b389d7cfb605174e1325db67fd4e1f7ef844891fd53f6411a2c531be.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/87400157b389d7cfb605174e1325db67fd4e1f7ef844891fd53f6411a2c531be.docx",
+      "file_id": "616bf1e614c342de87fb5ae9d676537b",
+      "file_name": "CL25345015+Market+Research+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 57311,
+      "sha256": "87400157b389d7cfb605174e1325db67fd4e1f7ef844891fd53f6411a2c531be"
+    }
+  ],
+  "_mirror_hash": "98322c43e2206e1fef3b2190d02906e8da463bae041a1d9813396a8400149b4f",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.655332+00:00"
+}

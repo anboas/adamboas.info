@@ -1,0 +1,46 @@
+{
+  "id": "sam-157f8d355bfe4983800843a212b2b229",
+  "title": "FILTER, FLUID  2940-12-391-5954",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=157f8d355bfe4983800843a212b2b229",
+  "opportunity_url": "https://sam.gov/opp/157f8d355bfe4983800843a212b2b229/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/157f8d355bfe4983800843a212b2b229/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "157f8d355bfe4983800843a212b2b229",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL25346003",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=157f8d355bfe4983800843a212b2b229",
+  "detail_text": "This notice was posted to identify sources that can manufacture NSN 2940-12-391-5954and are interested in quoting a long-term contract solicitation. This notice was posted for the purpose of market research only and is not a Request for Proposal (RFP) . Please review the NSN below and provide any sources that may be able to manufacture the item. The sources that are currently approved to manufacture this FILTER, FLUID are listed below. If you are interested in this requirement, please complete the attached Market Research Questionnaire. All information should be submitted to the Contract Specialist, Regina Collette at regina.collette@dla.mil no later than May 11, 2026. The approved sources and part numbers are listed below: NSN: 2940-12-391-5954 Description: FILTER, FLUID Approved Source and Part Number: GOLDHOFER AIRPORT TECHNOLOGY GMBH CAGE C2489 P/N 74868 AMC: 3 AMSC: D",
+  "detail_text_length": 885,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fbe9ee8c6ce4614b9ee95bc13e19ffa/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fbe9ee8c6ce4614b9ee95bc13e19ffa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9b84fbe171d11f3720caedff0d275def2a508dc66383feec620dd7b6abf773ab.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9b84fbe171d11f3720caedff0d275def2a508dc66383feec620dd7b6abf773ab.docx",
+      "file_id": "1fbe9ee8c6ce4614b9ee95bc13e19ffa",
+      "file_name": "CL25346003++Market+Research+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 57410,
+      "sha256": "9b84fbe171d11f3720caedff0d275def2a508dc66383feec620dd7b6abf773ab"
+    }
+  ],
+  "_mirror_hash": "823004e156a6ec029ad2ad5a09d3997ad191264cb9df516f43a76f92e182028e",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.636763+00:00"
+}

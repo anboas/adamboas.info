@@ -1,25 +1,25 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-05-03T13:50:42.070530+00:00
+Generated: 2026-05-04T20:14:02.557329+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 05/03/2026
+Posted range: 01/01/2026 -> 05/04/2026
 
 ## Counts
-- Total candidates: 114
-- Navy-related: 114
-- Full detail cached: 114
-- Notices with attachments: 58
-- Total attachment links: 177
+- Total candidates: 115
+- Navy-related: 115
+- Full detail cached: 115
+- Notices with attachments: 59
+- Total attachment links: 179
 - Combined Synopsis/Solicitation: 27
-- Pre-solicitation: 25
+- Pre-solicitation: 26
 - Solicitation: 14
 - Sources Sought: 39
 - Special Notice: 9
 
 ## Engagement signals
 - Industry Day: 2
-- Pre-solicitation: 28
+- Pre-solicitation: 29
 - Sources Sought: 39
 - Vendor Outreach: 1
 - Special Notice: 9
@@ -52,7 +52,7 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 4 | Solicitation | - | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [Contractor Logistics Support (CLS) Follow-On, FY 27-30](https://sam.gov/opp/c55cf82054104f70be0b21201692008b/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-04-09 | DEPT OF DEFENSE | [Low Pressure Gage Calibrators](https://sam.gov/opp/cec0318ca29d44b3b42ae08e09020e94/view) |
 | 7 | Special Notice | Special Notice | 2026-03-30 | 2026-04-14 | DEPT OF DEFENSE | [MINE HUNTING IN CHALLENGING ENVIRONMENTS PARTICIPATION AGREEMENT (MHCE PA) ACOUSTIC COMMUNICATIONS (ACOMMS) EXP](https://sam.gov/opp/aa3d6bdcb7bd40d7a13fc0f91e0b7d50/view) |
-| 4 | Combined Synopsis/Solicitation | - | 2026-03-19 | 2026-04-18 | DEPT OF DEFENSE | [FMS Country Initial Studies Case](https://sam.gov/opp/544cd98cccfc41d3835459a4877d774c/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-05-04 | 2026-04-14 | DEPT OF DEFENSE | [Tomahawk Cruise Missiles Recertification & Depot Operations](https://sam.gov/opp/7e30f81d435f4d5589e7812e61a3d79b/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-16 | 2026-04-21 | DEPT OF DEFENSE | [Sole Source to TacMed Solutions LLC for  Inspection and Repair (4) Free Diver Heating System (FDHS)](https://sam.gov/opp/ed1de4f794ac46718884eed608375fcc/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-20 | 2026-04-22 | DEPT OF DEFENSE | [Small Business Set Aside for STIDD Brand Replacement Parts per attachments](https://sam.gov/opp/0c59b4a8b54a4ebb8b9b386e7a4253e6/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-20 | 2026-04-22 | DEPT OF DEFENSE | [Small Business Set-Aside for SubConn Brand Stainless Steel Connectors  (Review All Attachments)](https://sam.gov/opp/d8ed7d8248b24735b3d2c9ead0ab2a44/view) |
@@ -76,6 +76,7 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-23 | 2026-04-30 | DEPT OF DEFENSE | [Building 304 Door and Installation](https://sam.gov/opp/6b2900fe15df4a7b96dc0ab3e3eaba5b/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-27 | 2026-04-30 | DEPT OF DEFENSE | [Small Business Set-Aside for Tandemloc Brand Shock Isolators per attachments](https://sam.gov/opp/060998ae9ead4a27a4b6178700347093/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-29 | 2026-04-30 | DEPT OF DEFENSE | [TACAN Shore Based Antenna](https://sam.gov/opp/9b782370cfb9451ea6bcb2f542674391/view) |
+| 7 | Combined Synopsis/Solicitation | - | 2026-05-04 | 2026-04-30 | DEPT OF DEFENSE | [Small Business Set-Aside for TDK-LAMBDA Americas Inc. Brand Hardware (Review All Attachments)](https://sam.gov/opp/666702fd76d44d43807baaf614ee5a09/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-01 | DEPT OF DEFENSE | [Dual Band Decoy (DBD) Full Rate Production 1](https://sam.gov/opp/488b128641fb4e7f9ca39309ec1d3789/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-01 | DEPT OF DEFENSE | [Electromagnetic Aircraft Launch System (EMALS) and Advanced Arresting Gear (AAG) Joint Depot Standup](https://sam.gov/opp/670b801f6b34433d936318fc448972f5/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-20 | 2026-05-01 | DEPT OF DEFENSE | [Install Crane Rail Cross Bracing in a Building](https://sam.gov/opp/b7800c259fa8453bb837d77ab9535e65/view) |
@@ -108,6 +109,7 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 7 | Sources Sought | Sources Sought | 2026-04-08 | 2026-05-07 | DEPT OF DEFENSE | [Sources Sought for Cyber Warfare Engineering and Security Services](https://sam.gov/opp/f0b94fd1c2594a6b95b2e1404067c5d5/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-22 | 2026-05-07 | DEPT OF DEFENSE | [Mission Module Engineering and Technical Support.](https://sam.gov/opp/b6f1ae4c66a14a8db60fff13aebe1991/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-05-01 | 2026-05-07 | DEPT OF DEFENSE | [Total Small Business Set Aside for Brand Name: Hydraulics International - Electric Driven Booster Pumps](https://sam.gov/opp/ec8ac35458ee4c0bafcd89954d68267e/view) |
+| 6 | Combined Synopsis/Solicitation | - | 2026-05-04 | 2026-05-07 | DEPT OF DEFENSE | [Sole Source to Teledyne Instruments Inc. for MK11 Cable Assembly per attachments](https://sam.gov/opp/ec090e959903498797336962483806eb/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-08 | 2026-05-08 | DEPT OF DEFENSE | [BQM-34S Engine Repair, Overhaul and Conversion](https://sam.gov/opp/a2f1ab138dd248e99171fdb746d17c09/view) |
 | 9 | Sources Sought | Sources Sought | 2026-04-23 | 2026-05-08 | DEPT OF DEFENSE | [Sources Sought: Mine Warfare (MIW) and Surface Mine Countermeasures (SMCM) Design Agent (DA), Technical Direction Agent (TDA), In-Service Engineering Agent (ISEA), and Foreign Military Sales (FMS) Support](https://sam.gov/opp/61a40d6d3c8442f998df103041a325aa/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-30 | 2026-05-08 | DEPT OF DEFENSE | [NVIDIA RTX PRO 6000](https://sam.gov/opp/087a873ed7f341438ed70c03595aa989/view) |
@@ -115,7 +117,6 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 7 | Sources Sought | Sources Sought | 2026-04-08 | 2026-05-11 | DEPT OF DEFENSE | [N00019-26-RFPREQ-TPM265-0560: Main Line Contactors Sources Sought](https://sam.gov/opp/03ad935a02604605920a09d154a74ff4/view) |
 | 6 | Solicitation | - | 2026-04-09 | 2026-05-11 | DEPT OF DEFENSE | [N6426726R3008](https://sam.gov/opp/44582724cec34558a91f43a0589d7766/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-04-07 | 2026-05-13 | DEPT OF DEFENSE | [MSCPAC GSR IDIQ Rolling Admissions](https://sam.gov/opp/f042c3dbeec04e428c66f0bb168af1a9/view) |
-| 5 | Sources Sought | Sources Sought | 2026-04-22 | 2026-05-13 | DEPT OF DEFENSE | [P-8A Poseidon Manufacturing and Prototyping Support at Cecil Field, Jacksonville Florida](https://sam.gov/opp/d35f6bcc6e17408b92646d336afcf32b/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-27 | 2026-05-13 | DEPT OF DEFENSE | [Strike ALE-55/ Repair and Field Services FY27 New Contract](https://sam.gov/opp/2261706584fa43bb841c5547caf974f0/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-28 | 2026-05-13 | DEPT OF DEFENSE | [CH-53 Depot Level Aircraft Modifications](https://sam.gov/opp/b46982ea69794ca99546983a1ca9fa83/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-04-28 | 2026-05-13 | DEPT OF DEFENSE | [FedTribe LLC Delivery Order for RQ-21A V3 PMUs and Spares](https://sam.gov/opp/b607584d258646f298e4c2a6b9b96b7c/view) |
@@ -133,6 +134,7 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 7 | Sources Sought | Sources Sought | 2026-04-16 | 2026-05-18 | DEPT OF DEFENSE | [Littoral and Expeditionary Maneuver (EXMAN) Program](https://sam.gov/opp/ac28c06382394d89b308cea3f16c43ba/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-18 | DEPT OF DEFENSE | [ACV Crew, SEAOPS Program, FMS Program and Future Connectors Program Support](https://sam.gov/opp/08334dd6f67e4195915256cad249c92b/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-28 | 2026-05-29 | DEPT OF DEFENSE | [Groundskeeping Services at Building 977 Campbell Industrial Park, NUWC DETPAC, Kapolei, Hawaii](https://sam.gov/opp/f74863a57faf4dff9b8a75f3ce4e61be/view) |
+| 5 | Sources Sought | Sources Sought | 2026-05-04 | 2026-05-29 | DEPT OF DEFENSE | [P-8A Poseidon Manufacturing and Prototyping Support at Cecil Field, Jacksonville Florida](https://sam.gov/opp/9fcd5f4b1a09465c99a871510b4daa4a/view) |
 | 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-05-01 | 2026-05-31 | DEPT OF DEFENSE | [Request for Information LCAC Alarm and Monitoring System](https://sam.gov/opp/af08d1268353423eaf5cdc1009dc7bfb/view) |
 | 5 | Sources Sought | Sources Sought | 2026-05-01 | 2026-06-01 | DEPT OF DEFENSE | [Commercially-Based Supersonic Aerial Target Solutions](https://sam.gov/opp/6de91f1232344dbbb4bc342720d2bdc9/view) |
 | 4 | Solicitation | - | 2026-04-30 | 2026-06-29 | DEPT OF DEFENSE | [REQUEST FOR PROPOSAL (RFP) Undergraduate Jet Training System (UJTS)](https://sam.gov/opp/672c41b4287a40f5b6af7531e0ef54f5/view) |
@@ -140,7 +142,6 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 9 | Special Notice | Industry Day, Special Notice | 2026-03-02 | 2026-12-15 | DEPT OF DEFENSE | [INDUSTRY DAY 2026](https://sam.gov/opp/7d06e46d373b41378cfd5e9d8e54c6ab/view) |
 | 8 | Special Notice | Vendor Outreach, Special Notice | 2026-04-23 | 2026-12-16 | DEPT OF DEFENSE | [NUWC Division Keyport Industry Engagement -  Wednesday with the Deputy for Small Business](https://sam.gov/opp/47ba458adb064ff0bdfddca0312cdf8b/view) |
 | 7 | Special Notice | Special Notice | 2026-04-17 | 2026-12-31 | DEPT OF DEFENSE | [NUWC Division, Keyport and NSLC Mechanicsburg SeaPort/Service Contract Forecast](https://sam.gov/opp/b15154a0404b4cfdaee5c2316845a6b3/view) |
-| 7 | Combined Synopsis/Solicitation | - | 2026-04-28 | 2029-04-30 | DEPT OF DEFENSE | [Small Business Set-Aside for TDK-LAMBDA Americas Inc. Brand Hardware (Review All Attachments)](https://sam.gov/opp/f0b5638045534e83bf0b034f9b7c42f6/view) |
 
 ## Notes
 - Candidate feed for Events tracker enrichment.

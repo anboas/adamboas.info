@@ -1,0 +1,59 @@
+{
+  "id": "sam-12d4c72c840b4aa9b5d00289a7936e6b",
+  "title": "RFI - AI Installation Lodging Optimization",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12d4c72c840b4aa9b5d00289a7936e6b",
+  "opportunity_url": "https://sam.gov/opp/12d4c72c840b4aa9b5d00289a7936e6b/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/12d4c72c840b4aa9b5d00289a7936e6b/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "12d4c72c840b4aa9b5d00289a7936e6b",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA805226X0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AF INSTALLATION & MISSION SUPPORT CENTER.FA8052  773 ESS",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=12d4c72c840b4aa9b5d00289a7936e6b",
+  "detail_text": "Please see attached Request for Information (RFI) and Performance Work Statement (PWS) for details. Reach out to both of the Points of Contacts listed in the RFI document for any questions if your company has any.",
+  "detail_text_length": 213,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a7f0e05408048248bbb9f0b52a46380/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d4ecca2d10438086fca448ef1d6b2d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2a7f0e05408048248bbb9f0b52a46380/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/38f4027f5ace74fcefb981f5e769f4b59bb5557a7b2d1358510efb738f2f35b1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/38f4027f5ace74fcefb981f5e769f4b59bb5557a7b2d1358510efb738f2f35b1.pdf",
+      "file_id": "2a7f0e05408048248bbb9f0b52a46380",
+      "file_name": "Request+for+Information+-+AI+Installation+Lodging+Optimization.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 164765,
+      "sha256": "38f4027f5ace74fcefb981f5e769f4b59bb5557a7b2d1358510efb738f2f35b1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/77d4ecca2d10438086fca448ef1d6b2d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1267aca03abfa8a0b76645153e919de6f936ecd478f964058af81016c2e1fe8b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1267aca03abfa8a0b76645153e919de6f936ecd478f964058af81016c2e1fe8b.pdf",
+      "file_id": "77d4ecca2d10438086fca448ef1d6b2d",
+      "file_name": "PWS+-+Lodging+Optimization+Initiative.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 282860,
+      "sha256": "1267aca03abfa8a0b76645153e919de6f936ecd478f964058af81016c2e1fe8b"
+    }
+  ],
+  "_mirror_hash": "2a2480323b8919e62a910239786af3ade34ff6c2280c4b5adee57e2d82729959",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.301751+00:00"
+}

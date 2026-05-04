@@ -1,0 +1,46 @@
+{
+  "id": "sam-ca41d9c22ffe4e10ac475bc9b7e6a6a9",
+  "title": "CAFDEx Flying Hours and Fuel Management Program Integrated Solution",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca41d9c22ffe4e10ac475bc9b7e6a6a9",
+  "opportunity_url": "https://sam.gov/opp/ca41d9c22ffe4e10ac475bc9b7e6a6a9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ca41d9c22ffe4e10ac475bc9b7e6a6a9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ca41d9c22ffe4e10ac475bc9b7e6a6a9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA4600_FY26_CAFDEx",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4600  55 CONS  PKP",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ca41d9c22ffe4e10ac475bc9b7e6a6a9",
+  "detail_text": "This sources sought notice contains all the applicable required information specified in RFO 5.101(c). Therefore, this sources sought fulfills the presolicitaiton notice requirement in accordance with RFO 5.101. The 55th Contracting Squadron (Offutt AFB, NE) has an ongoing requirement to acquire a software license solution that integrates both a flying hours management program and a fuel management transaction program. The provided solution shall meet the needs of the 55th Operations Support Squadron outlined in the attached Statement of Need. The 55th Contracting Squadron intends to award a sole source contract to Infinite Technologies Inc (CAGE: 1HRW0). The CAFDEx Flying Hours Management Program (FHPM) is believed to be the only solution available that meets the unique mission needs of the 55th Wing. The CAFDEx Fuel Transaction Management Program (FTPM) is believed to be the only aviation fuel management pragram that utilizes a web-based .MIL cloud environment that has the authority to operate and Department of War indentified authoritative data source. CAFDEx program solutions are proprietary only to Infinite Technologies Inc. They are are the sole developer, provider, and small business distributor of all CAFDEx software. They have no authorized resellers/distributors. With the Government's intent to award a sole source contract, this will not be set aside for small businesses under NAICS 541519, as the Government will be restricting competition in accordance with RFO 12.102(a). Although the Government intends to award a sole source contract to Infinite Technologies Inc, all responsible entites are able to submit a capabilities statement in response to this sources sought. In addition, entities must also provide a detailed description of their alternative solution. Entities will be considered resonsible if there solution is deemed to meet the Government's need (Statement of Need) by the Governemnt subject matter expert. Please submit all applicable documents to the listed point(s) of contact via email.",
+  "detail_text_length": 2041,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/095c0333edd047d795c441632a546548/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/095c0333edd047d795c441632a546548/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bf9cfccbb581eb8a361bbc714673eb260e3fb94b3de71348b561ec896df77fe6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bf9cfccbb581eb8a361bbc714673eb260e3fb94b3de71348b561ec896df77fe6.pdf",
+      "file_id": "095c0333edd047d795c441632a546548",
+      "file_name": "Statement+of+Need+-+1+May+2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 100631,
+      "sha256": "bf9cfccbb581eb8a361bbc714673eb260e3fb94b3de71348b561ec896df77fe6"
+    }
+  ],
+  "_mirror_hash": "a2e8c06ac81a521c043a51f1fdc453f30a851c96ff07e859401b619ad0c4b7f7",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.782198+00:00"
+}

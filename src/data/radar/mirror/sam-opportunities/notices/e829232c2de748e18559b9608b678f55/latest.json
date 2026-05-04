@@ -1,0 +1,45 @@
+{
+  "id": "sam-e829232c2de748e18559b9608b678f55",
+  "title": "3HD 3040 017330673 D5, SHAFT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e829232c2de748e18559b9608b678f55",
+  "opportunity_url": "https://sam.gov/opp/e829232c2de748e18559b9608b678f55/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e829232c2de748e18559b9608b678f55/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e829232c2de748e18559b9608b678f55",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00104-26-Q-FD63",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-28",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e829232c2de748e18559b9608b678f55",
+  "detail_text": "SEE ATTACHED SOLICITATION",
+  "detail_text_length": 25,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eff5c1b3a3c64601b95da02ab151c1b7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eff5c1b3a3c64601b95da02ab151c1b7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/93bf2198577a8d9ea33fef2740fbbfc4f56d1942324fa21e47ee3a05ec31ef72.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/93bf2198577a8d9ea33fef2740fbbfc4f56d1942324fa21e47ee3a05ec31ef72.pdf",
+      "file_id": "eff5c1b3a3c64601b95da02ab151c1b7",
+      "file_name": "N00104-26-Q-FD63.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 914982,
+      "sha256": "93bf2198577a8d9ea33fef2740fbbfc4f56d1942324fa21e47ee3a05ec31ef72"
+    }
+  ],
+  "_mirror_hash": "048f151d7193c75ff24313b5c6d8ec564c92f2f47e84aa3b5fd4c35bb518b8e1",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.423201+00:00"
+}

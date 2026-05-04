@@ -1,0 +1,69 @@
+{
+  "id": "sam-1a9a3a56f2bd410e8a3855883b21e2ca",
+  "title": "Sources Sought - Sterilization Equipment PM and Repair Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1a9a3a56f2bd410e8a3855883b21e2ca",
+  "opportunity_url": "https://sam.gov/opp/1a9a3a56f2bd410e8a3855883b21e2ca/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1a9a3a56f2bd410e8a3855883b21e2ca/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1a9a3a56f2bd410e8a3855883b21e2ca",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1526435",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.PHOENIX AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1a9a3a56f2bd410e8a3855883b21e2ca",
+  "detail_text": "This is a Sources Sought notice issued by the Indian Health Service (IHS) to identify qualified and capable small business vendors interested in providing preventive maintenance and repair services for sterilization and related equipment at the Phoenix Indian Medical Center (PIMC). The contractor shall be responsible for furnishing all labor, parts, tools, equipment, technical expertise, and travel necessary to perform comprehensive preventive maintenance, calibration verification, and onsite repair services for a variety of sterilizers, washers/disinfectors, ultrasonic cleaners, boilers, and water systems. All services must be performed in accordance with original equipment manufacturer (OEM) recommendations and in compliance with Centers for Medicare and Medicaid Services (CMS) requirements. The contractor must demonstrate the ability to provide timely service, including next business day onsite response, utilize certified field service engineers, maintain equipment in operational condition, and provide required documentation and reporting. This notice is for market research purposes only and does not constitute a solicitation.",
+  "detail_text_length": 1147,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b2246eccaec435d852314e29fe345bd/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55632321282643eb8d172dabb9b384b1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f939bcc1d46e479f887723ce57dbb103/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2b2246eccaec435d852314e29fe345bd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "file_id": "2b2246eccaec435d852314e29fe345bd",
+      "file_name": "Attachment+1+-+IHS+Indian+Economic+Enterprise+Representation+form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132270,
+      "sha256": "e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55632321282643eb8d172dabb9b384b1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f23a14017938785621a3af21b85cf803876a3820e06bedd1a943f4363903f74f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f23a14017938785621a3af21b85cf803876a3820e06bedd1a943f4363903f74f.pdf",
+      "file_id": "55632321282643eb8d172dabb9b384b1",
+      "file_name": "Attachment+2+-+Statement+of+Work+-+Sterilization+Equipment+PM+and+Repair+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 249624,
+      "sha256": "f23a14017938785621a3af21b85cf803876a3820e06bedd1a943f4363903f74f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f939bcc1d46e479f887723ce57dbb103/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b869ed2cfc99749b820ac8e7da7658873c7c39f7608f990bddff864f54fb6362.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b869ed2cfc99749b820ac8e7da7658873c7c39f7608f990bddff864f54fb6362.pdf",
+      "file_id": "f939bcc1d46e479f887723ce57dbb103",
+      "file_name": "IEE+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 180721,
+      "sha256": "b869ed2cfc99749b820ac8e7da7658873c7c39f7608f990bddff864f54fb6362"
+    }
+  ],
+  "_mirror_hash": "17f8bea466d713c567eb625fd594511b22e2ba1272ba9780665a79b99a6885c6",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.321880+00:00"
+}

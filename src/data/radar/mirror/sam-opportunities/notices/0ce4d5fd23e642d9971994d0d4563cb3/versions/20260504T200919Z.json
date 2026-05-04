@@ -1,0 +1,57 @@
+{
+  "id": "sam-0ce4d5fd23e642d9971994d0d4563cb3",
+  "title": "Additive Mfg 450mc 3D Printer",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ce4d5fd23e642d9971994d0d4563cb3",
+  "opportunity_url": "https://sam.gov/opp/0ce4d5fd23e642d9971994d0d4563cb3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0ce4d5fd23e642d9971994d0d4563cb3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0ce4d5fd23e642d9971994d0d4563cb3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326Q0071",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0ce4d5fd23e642d9971994d0d4563cb3",
+  "detail_text": "THIS IS A SOURCES SOUGHT ONLY – The Government is requesting information to provide Additive Mfg 450mc 3D Printer according to the Salient Characteristics. At this time the Government is only requesting to know if your company can provide these items, IF YES, please provide a copy of your capability statement to Mar Rodriguez at maria_del_mar.rodriguez_martinez@us.af.mil DO NOT SUBMIT ANY QUESTIONS OR AN OFFER AT THIS TIME.",
+  "detail_text_length": 427,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a429bb37a084a38a12b078629d88b9d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ceaec9830b374402b6151b9cc8c96738/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1a429bb37a084a38a12b078629d88b9d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/29b8be78521029f2ada9cacac98b38131cfbc2b049e55ffc351e18bf7a7cb09d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/29b8be78521029f2ada9cacac98b38131cfbc2b049e55ffc351e18bf7a7cb09d.pdf",
+      "file_id": "1a429bb37a084a38a12b078629d88b9d",
+      "file_name": "Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 134412,
+      "sha256": "29b8be78521029f2ada9cacac98b38131cfbc2b049e55ffc351e18bf7a7cb09d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ceaec9830b374402b6151b9cc8c96738/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8cb0369348cd877d96f0c94f5e8e28e413586dcbcba1fce468ab30e4bf164c2a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8cb0369348cd877d96f0c94f5e8e28e413586dcbcba1fce468ab30e4bf164c2a.pdf",
+      "file_id": "ceaec9830b374402b6151b9cc8c96738",
+      "file_name": "SAM+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 283190,
+      "sha256": "8cb0369348cd877d96f0c94f5e8e28e413586dcbcba1fce468ab30e4bf164c2a"
+    }
+  ],
+  "_mirror_hash": "b42765d8e63a1bc45ef95a2d073ab3e47ac5e8c1a4df7d312f249945f3a6c125",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.665378+00:00"
+}

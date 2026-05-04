@@ -1,26 +1,26 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-05-03T13:50:48.536019+00:00
+Generated: 2026-05-04T20:14:09.304382+00:00
 Profile: nswc
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 05/03/2026
+Posted range: 01/01/2026 -> 05/04/2026
 
 ## Counts
-- Total candidates: 511
-- Navy-related: 511
-- Full detail cached: 511
-- Notices with attachments: 302
-- Total attachment links: 829
-- Combined Synopsis/Solicitation: 175
-- Pre-solicitation: 79
-- Solicitation: 129
-- Sources Sought: 75
+- Total candidates: 532
+- Navy-related: 532
+- Full detail cached: 532
+- Notices with attachments: 318
+- Total attachment links: 888
+- Combined Synopsis/Solicitation: 181
+- Pre-solicitation: 80
+- Solicitation: 136
+- Sources Sought: 82
 - Special Notice: 53
 
 ## Engagement signals
 - Industry Day: 4
-- Pre-solicitation: 87
-- Sources Sought: 77
+- Pre-solicitation: 88
+- Sources Sought: 84
 - Vendor Outreach: 1
 - Special Notice: 53
 
@@ -122,7 +122,6 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 7 | Sources Sought | Sources Sought | 2026-04-13 | 2026-04-16 | DEPT OF DEFENSE | [Systems Engineering Support (A Dept)](https://sam.gov/opp/906e52520a744e3cbe9bd79e7fe124ef/view) |
 | 4 | Combined Synopsis/Solicitation | - | 2026-04-13 | 2026-04-16 | DEPT OF DEFENSE | [Compressor Repairs](https://sam.gov/opp/63a5d3c146ec458b9806b8fbf40b0be6/view) |
 | 4 | Solicitation | - | 2026-04-08 | 2026-04-17 | DEPT OF DEFENSE | [LPD 30-31 FOA PSA](https://sam.gov/opp/819424119ec049659a678f30d0c4d1d1/view) |
-| 7 | Special Notice | Special Notice | 2026-04-02 | 2026-04-18 | DEPT OF DEFENSE | [150-Gallon Vertical Mixer Parts](https://sam.gov/opp/d34aa6966661441897fcf37baaf987e0/view) |
 | 7 | Special Notice | Special Notice | 2026-04-14 | 2026-04-19 | DEPT OF DEFENSE | [Strand Burn Improvement](https://sam.gov/opp/c268ac9023c94bb5a796afde0bf5c588/view) |
 | 6 | Solicitation | - | 2026-03-23 | 2026-04-20 | DEPT OF DEFENSE | [REQUEST FOR PROPOSALS – Test, Evaluation, Repair, Modification & Upgrade of Electronic Warfare Systems](https://sam.gov/opp/0f31b1d475fe458cb1f40a1acec159f3/view) |
 | 7 | Special Notice | Special Notice | 2026-04-07 | 2026-04-20 | DEPT OF DEFENSE | [Ordnance, Storage and Shipping Building Loading Dock Hydraulic Levelers for Dock Repair](https://sam.gov/opp/540e53a2582440d0b061dc68536db17d/view) |
@@ -303,6 +302,7 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 6 | Solicitation | - | 2026-04-29 | 2026-04-30 | DEPT OF DEFENSE | [Evaluation and Repair Services for NOVA Weapon Power Converters (WPCs)](https://sam.gov/opp/58b3c645a1be44069e67cbda3fe08874/view) |
 | 5 | Special Notice | Special Notice | 2026-04-30 | 2026-04-30 | DEPT OF DEFENSE | [USS O'KANE FY26 DSRA RCC 13N](https://sam.gov/opp/f540de1b7498449fa5146b454610f406/view) |
 | 7 | Pre-solicitation | Pre-solicitation | 2026-05-01 | 2026-04-30 | DEPT OF DEFENSE | [H30 Engineering Services](https://sam.gov/opp/d282961258854fd89017712d89aa9033/view) |
+| 7 | Combined Synopsis/Solicitation | - | 2026-05-04 | 2026-04-30 | DEPT OF DEFENSE | [Small Business Set-Aside for TDK-LAMBDA Americas Inc. Brand Hardware (Review All Attachments)](https://sam.gov/opp/666702fd76d44d43807baaf614ee5a09/view) |
 | 4 | Solicitation | - | 2026-03-02 | 2026-05-01 | DEPT OF DEFENSE | [Virginia Class SSTG](https://sam.gov/opp/a7772e6ff60e4144ad52638b5bbd7368/view) |
 | 5 | Pre-solicitation | Pre-solicitation | 2026-03-17 | 2026-05-01 | DEPT OF DEFENSE | [Preservation, Hull, Mechanical, and Electrical/Electronic Repairs - VBSS 11MRX1101 and 11MRX1102](https://sam.gov/opp/5ada04252cf345fb87042d6ad228735e/view) |
 | 5 | Sources Sought | Sources Sought | 2026-04-09 | 2026-05-01 | DEPT OF DEFENSE | [NONSKID FOR NAVAL SHIPS/VESSELS](https://sam.gov/opp/43204fe199ea4eb0941580d9860b8aac/view) |

@@ -1,0 +1,60 @@
+{
+  "id": "sam-d409164df0f042178f530e19730abb03",
+  "title": "REQUEST FOR INFORMATION- FASTENER BPA FY 26",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d409164df0f042178f530e19730abb03",
+  "opportunity_url": "https://sam.gov/opp/d409164df0f042178f530e19730abb03/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d409164df0f042178f530e19730abb03/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d409164df0f042178f530e19730abb03",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "FASTENER_26",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-06-04",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d409164df0f042178f530e19730abb03",
+  "detail_text": "The Naval Supply Weapons System Support (NAVSUP WSS) Nuclear Directorate is dedicated solely to providing logistics and sustainment support to the Naval Nuclear Propulsion Program. We are responsible for the provisioning, procurement, and quality assurance of all components within the secondary system of the Navy's Nuclear Propulsion plants, also, known as Nuclear Reactors. See section 1.3 below for a brief overview of which is known for the nuclear reactors. Also, see section 1.3 below for a brief overview of a Nuclear Propulsion Plant. This Request for Information (RFI) is being used as a market research tool to identify small business concerns interested in being considered for a Blanket Purchase Agreement (BPA) for competitively procured nuclear reactor Fastener products with Federal Supply Class Codes (FSC) 5307, 5306, 5307, and 5310. The attached Request for Information contains a deatiled overview of the NAVSUP WSS Nuclear Program and is used as a market research tool to identify small business concerns interested in becoming a valued NAVSUP WSS Supplier.",
+  "detail_text_length": 1078,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/174eeb33a5644ffdb25fae8f61d293d6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/982bbfb95a4a4ac887e303ef1c6440f3/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/174eeb33a5644ffdb25fae8f61d293d6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e89400c66cb71f972b3bb311d1ab8dd66fb8c441bb1e0c14dcf296f297bf9545.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e89400c66cb71f972b3bb311d1ab8dd66fb8c441bb1e0c14dcf296f297bf9545.docx",
+      "file_id": "174eeb33a5644ffdb25fae8f61d293d6",
+      "file_name": "RFI+Fasteners+Renewal+2026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 265841,
+      "sha256": "e89400c66cb71f972b3bb311d1ab8dd66fb8c441bb1e0c14dcf296f297bf9545"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/982bbfb95a4a4ac887e303ef1c6440f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e681aa0fadda75aa5c50479bf4e67c61fe697e3ceba20b6ab65498b8920325f0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e681aa0fadda75aa5c50479bf4e67c61fe697e3ceba20b6ab65498b8920325f0.pdf",
+      "file_id": "982bbfb95a4a4ac887e303ef1c6440f3",
+      "file_name": "1.04_IRPOD_LI0001_26050-0008.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1413466,
+      "sha256": "e681aa0fadda75aa5c50479bf4e67c61fe697e3ceba20b6ab65498b8920325f0"
+    }
+  ],
+  "_mirror_hash": "5aed28104e378cb538ad80269025aac2233d7ef5543195f4649d70306a7509c6",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.111675+00:00"
+}

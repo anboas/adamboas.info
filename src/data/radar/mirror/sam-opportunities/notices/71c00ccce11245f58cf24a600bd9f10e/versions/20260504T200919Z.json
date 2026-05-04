@@ -1,0 +1,57 @@
+{
+  "id": "sam-71c00ccce11245f58cf24a600bd9f10e",
+  "title": "Dell R470 Servers",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71c00ccce11245f58cf24a600bd9f10e",
+  "opportunity_url": "https://sam.gov/opp/71c00ccce11245f58cf24a600bd9f10e/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/71c00ccce11245f58cf24a600bd9f10e/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "71c00ccce11245f58cf24a600bd9f10e",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6449826Q0033",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=71c00ccce11245f58cf24a600bd9f10e",
+  "detail_text": "NSWCPD has a requirement to purchase (5) Dell R470 servers on a small business set aside basis. This is a brand name requirement. The brand is Dell and no other equivalents will be accepted. Please see the specs sheet that has been attached. Please see the RFQ for more details. All part numbers are provided in the description section of each line. All quotes must have all items referrenced in section B. If the quote does not provide what is being asked for in the RFQ, your quote will be disqualified. If your quote does not match the Line item description in the RFQ, your quote will not be considered or accepted. Authorized reseller letter is required MUST BE AUTHORIZED RESELLER. DO NOT QUOTE IF YOU AREN\"T. If you are not an authorized reseller your quote will not be accepted. . All pricing should include the cost of shipping, as this order will be FFP utilizing FAR part 13 - Simplified Acquisition Procedures. Please include with your Quotation at least one of the following: -Published Price List -Past Navy Invoices with the Same or similar Items -Past Industry Invoices with the same or Similar Items All responses are due by Wednesday May 6th, 2026 2:00 PM EST All responses/ inquiries must be provided by email to william.h.morton39.civ@us.navy.mil",
+  "detail_text_length": 1266,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3bc84aa9b154530bbbd97b7e4cec7ba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b18a0d96bbf54766b033768f176d9195/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a3bc84aa9b154530bbbd97b7e4cec7ba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4fafa44e1a879e59636b9f77217c4b57e9f941841a65af203cd3f417737e877e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4fafa44e1a879e59636b9f77217c4b57e9f941841a65af203cd3f417737e877e.xlsx",
+      "file_id": "a3bc84aa9b154530bbbd97b7e4cec7ba",
+      "file_name": "Supporting+Documentation+-+Dell+R470+Server+Specifications+R1+-2-.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 17166,
+      "sha256": "4fafa44e1a879e59636b9f77217c4b57e9f941841a65af203cd3f417737e877e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b18a0d96bbf54766b033768f176d9195/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ea6682d01cf8e8fdad9b9364a276df6e32a03adbd52c591bcd327d7752f861e6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ea6682d01cf8e8fdad9b9364a276df6e32a03adbd52c591bcd327d7752f861e6.pdf",
+      "file_id": "b18a0d96bbf54766b033768f176d9195",
+      "file_name": "Solicitation+-+N6449826Q0033.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1982550,
+      "sha256": "ea6682d01cf8e8fdad9b9364a276df6e32a03adbd52c591bcd327d7752f861e6"
+    }
+  ],
+  "_mirror_hash": "0a97b61d945ff3469ccc858056e6dcc4a0ed25438d26f5c8b2e952dd3423c27e",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.116232+00:00"
+}

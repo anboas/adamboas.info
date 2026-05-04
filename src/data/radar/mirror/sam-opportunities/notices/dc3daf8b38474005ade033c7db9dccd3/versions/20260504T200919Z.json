@@ -1,0 +1,46 @@
+{
+  "id": "sam-dc3daf8b38474005ade033c7db9dccd3",
+  "title": "Fluent Pro System – Brand name or Equal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc3daf8b38474005ade033c7db9dccd3",
+  "opportunity_url": "https://sam.gov/opp/dc3daf8b38474005ade033c7db9dccd3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dc3daf8b38474005ade033c7db9dccd3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dc3daf8b38474005ade033c7db9dccd3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25226Q0447",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.252-NETWORK CONTRACT OFFICE 12 (36C252)",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dc3daf8b38474005ade033c7db9dccd3",
+  "detail_text": "The Department of Veteran Affairs, Oscar G. Johnson VA Medical Center: 325 East H Street Iron Mountain, MI 49801-4760 has the need or requirement for a Fluent Pro System – Brand name or Equal. The Government is requesting that Other Than Small Businesses and Small Businesses, including VIP-Verified VOSB or SDVOSB sources respond if it can provide the requested information. For more detailed information, please see the attached document file called: P02_ Market Research_Sources Sought Notice on Fluent Pro System – Brand name or Equal_Responses due NLT 05.06.2026, 3PM CST. If you have any questions, or concerns, please contact the Contracting POC at: arneil.genus@va.gov",
+  "detail_text_length": 676,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c998dba9b514546bd7a6cd9eca44141/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1c998dba9b514546bd7a6cd9eca44141/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/46b0ea21d31d443a3d17305e7e8fd39fb05315cb7690ac5b648e9ba632f9a21b.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/46b0ea21d31d443a3d17305e7e8fd39fb05315cb7690ac5b648e9ba632f9a21b.docx",
+      "file_id": "1c998dba9b514546bd7a6cd9eca44141",
+      "file_name": "P02_+Market+Research+Sources+Sought+Notice+on+Fluent+Pro+System_Brand+name+or+Equal_Responses+due+NLT+05.06.2026_3PM+CT.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20843,
+      "sha256": "46b0ea21d31d443a3d17305e7e8fd39fb05315cb7690ac5b648e9ba632f9a21b"
+    }
+  ],
+  "_mirror_hash": "8fb26c266ad0646b737c648e2efb7dfb9def61d3437f0dd0e47c8d79470f8afe",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.534296+00:00"
+}

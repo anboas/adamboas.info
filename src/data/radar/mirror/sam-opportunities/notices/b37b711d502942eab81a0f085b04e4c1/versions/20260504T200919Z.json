@@ -1,0 +1,57 @@
+{
+  "id": "sam-b37b711d502942eab81a0f085b04e4c1",
+  "title": "MK66 HUTT Units",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b37b711d502942eab81a0f085b04e4c1",
+  "opportunity_url": "https://sam.gov/opp/b37b711d502942eab81a0f085b04e4c1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b37b711d502942eab81a0f085b04e4c1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b37b711d502942eab81a0f085b04e4c1",
+  "notice_type_code": "k",
+  "notice_type": "Combined Synopsis/Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6660426R0186",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NUWC DIV NEWPORT",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 6,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Combined Synopsis/Solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b37b711d502942eab81a0f085b04e4c1",
+  "detail_text": "This is a combined synopsis/solicitation for commercial products prepared in accordance with FAR Parts 12 and 15, as supplemented with the attached solicitation number N66604-26-R-0186. The Naval Undersea Warfare Center, Division Newport (NUWCDIVNPT), Code 85 Undersea Weapons and Defensive Systems Department requires the procurement of four (4) MK66 Heavyweight Undersea Training Target (HUTT) units from Saab, Inc. on a sole source basis, as concurred with by the Small Business Administration. The statutory authority permitting other than full and open competition is 10 U.S.C. 3402(a)(1), only one responsible source and no other supplies (or services) will satisfy the needs of the agency. The North American Industry Classification System (NAICS) Code for this acquisition is 334511, search, detection, navigation, guidance, aeronautical, and nautical system and instrument manufacturing. The size standard is 1,350 employees. The Product Supply Code (PSC) is 6920, armament training devices. NUWCDIVNPT intends to award a Firm Fixed Price C-type contract, with delivery by 30 November 2027. See attached solicitation and GFP document for further details. Questions and Proposal shall be submitted via email to Kristin Amarant at kristin.d.amarant.civ@us.navy.mil.",
+  "detail_text_length": 1272,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2903f0ce67a146819c3e7bfb94588167/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d74d335ed8f94226af64b3cb81438eb8/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2903f0ce67a146819c3e7bfb94588167/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3df5c0ba2537e52b6ecb8c896a8a1d96a053e060934be490ca8f1418b609953c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3df5c0ba2537e52b6ecb8c896a8a1d96a053e060934be490ca8f1418b609953c.pdf",
+      "file_id": "2903f0ce67a146819c3e7bfb94588167",
+      "file_name": "Solicitation+-+N6660426R0186.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1969808,
+      "sha256": "3df5c0ba2537e52b6ecb8c896a8a1d96a053e060934be490ca8f1418b609953c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d74d335ed8f94226af64b3cb81438eb8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/22f38ff05239b52bf3176400849411b5414d6cd5e615763f193d7b7b0bb9645e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/22f38ff05239b52bf3176400849411b5414d6cd5e615763f193d7b7b0bb9645e.pdf",
+      "file_id": "d74d335ed8f94226af64b3cb81438eb8",
+      "file_name": "GFPN6660426R0186_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2281,
+      "sha256": "22f38ff05239b52bf3176400849411b5414d6cd5e615763f193d7b7b0bb9645e"
+    }
+  ],
+  "_mirror_hash": "0ba5005d663ef8c82929eb5abc716e951c03b4e0a886f87c92e407f2815a6005",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.121716+00:00"
+}

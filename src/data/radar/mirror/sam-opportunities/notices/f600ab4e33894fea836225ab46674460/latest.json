@@ -1,0 +1,46 @@
+{
+  "id": "sam-f600ab4e33894fea836225ab46674460",
+  "title": "Mortuary Services - FMC Devens",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f600ab4e33894fea836225ab46674460",
+  "opportunity_url": "https://sam.gov/opp/f600ab4e33894fea836225ab46674460/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f600ab4e33894fea836225ab46674460/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f600ab4e33894fea836225ab46674460",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "15BGCS26N00000072",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.FAO",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f600ab4e33894fea836225ab46674460",
+  "detail_text": "THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY - Solicitations are not available at this time THIS IS NOT A NEW REQUIREMENT – Services are currently in place for this requirement. The current incumbent is Lehman Reen Funeral Home, Inc. The contract was awarded in March 2022, in the amount of $572,050.00 for a base year and four (4) one-year options. This contract is set to end on March 05, 2027. REFER TO THE ATTACHED MARKET RESEARCH QUESTIONNAIRE AND DRAFT STATEMENT OF WORK Should you be interested in assisting with our market research for this requirement, please complete and return the questionnaire to sburke@bop.gov.",
+  "detail_text_length": 623,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30838c2e5a1e453b9de6999537f6cff4/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30838c2e5a1e453b9de6999537f6cff4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/82e66f931ced78611f1dd2ebf52b71b858a2297e651dfc1c9c7a27e213140fd5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/82e66f931ced78611f1dd2ebf52b71b858a2297e651dfc1c9c7a27e213140fd5.pdf",
+      "file_id": "30838c2e5a1e453b9de6999537f6cff4",
+      "file_name": "MRQ_FMC+Devens_Mortuary+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 452592,
+      "sha256": "82e66f931ced78611f1dd2ebf52b71b858a2297e651dfc1c9c7a27e213140fd5"
+    }
+  ],
+  "_mirror_hash": "c7b5710b3152a07297fdfea63b834b765fd872eb49f4d814936e7de1814339ce",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.828343+00:00"
+}

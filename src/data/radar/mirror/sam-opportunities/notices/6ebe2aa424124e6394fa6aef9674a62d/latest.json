@@ -1,0 +1,69 @@
+{
+  "id": "sam-6ebe2aa424124e6394fa6aef9674a62d",
+  "title": "Sources Sought - Refuse Collection and Disposal Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ebe2aa424124e6394fa6aef9674a62d",
+  "opportunity_url": "https://sam.gov/opp/6ebe2aa424124e6394fa6aef9674a62d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6ebe2aa424124e6394fa6aef9674a62d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6ebe2aa424124e6394fa6aef9674a62d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IHS1525623",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.PHOENIX AREA INDIAN HEALTH SVC",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6ebe2aa424124e6394fa6aef9674a62d",
+  "detail_text": "This is a Sources Sought notice issued by the Indian Health Service (IHS) to identify qualified and capable small business vendors interested in providing comprehensive solid waste and recycling management services for the Phoenix Indian Medical Center (PIMC). The contractor shall be responsible for furnishing all labor, equipment, materials, and personnel necessary to perform the storage, collection, transportation, and disposal of solid waste and recyclable materials, including scheduled and on-demand services such as roll-off container support. Services must be performed in compliance with all applicable federal, state, and local regulations, including EPA, State of Arizona, and City of Phoenix solid waste requirements. The contractor must demonstrate the capability to provide reliable, continuous operations, maintain equipment, support recycling efforts, and ensure environmentally responsible disposal at approved facilities. This notice is for market research purposes only and does not constitute a solicitation.",
+  "detail_text_length": 1031,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0509c32dfb52410ca3e8e3674a4b1fb0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79686f272bda4955b61ecf21eb197b87/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d62e8b7a637e4c66b62b8f850a04eea0/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0509c32dfb52410ca3e8e3674a4b1fb0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/922f899404d3e8738f746cea93421ba2764a1e274985bfd6b979ed54b02127e2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/922f899404d3e8738f746cea93421ba2764a1e274985bfd6b979ed54b02127e2.pdf",
+      "file_id": "0509c32dfb52410ca3e8e3674a4b1fb0",
+      "file_name": "IEE+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 180729,
+      "sha256": "922f899404d3e8738f746cea93421ba2764a1e274985bfd6b979ed54b02127e2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/79686f272bda4955b61ecf21eb197b87/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1e165bdb14997dc940181d6146b1120a9b1453c76acb8f87716993cc850a476e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1e165bdb14997dc940181d6146b1120a9b1453c76acb8f87716993cc850a476e.pdf",
+      "file_id": "79686f272bda4955b61ecf21eb197b87",
+      "file_name": "Attachment+2+-+Statement+of+Work+-+Refuse+collection+and+disposal+services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 214583,
+      "sha256": "1e165bdb14997dc940181d6146b1120a9b1453c76acb8f87716993cc850a476e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d62e8b7a637e4c66b62b8f850a04eea0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700.pdf",
+      "file_id": "d62e8b7a637e4c66b62b8f850a04eea0",
+      "file_name": "Attachment+1+-+IHS+Indian+Economic+Enterprise+Representation+form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132270,
+      "sha256": "e447c1e855446a28f1959d6dd56b5cda3358732c590fab6473bc601077847700"
+    }
+  ],
+  "_mirror_hash": "22997848c72c3e2aeb7253facf26dbdeb7e980ed3b19159987e57b5aa0261239",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.357076+00:00"
+}

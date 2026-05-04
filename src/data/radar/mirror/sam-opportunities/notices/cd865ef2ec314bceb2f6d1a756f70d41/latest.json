@@ -1,0 +1,57 @@
+{
+  "id": "sam-cd865ef2ec314bceb2f6d1a756f70d41",
+  "title": "Maxwell 42CS Virtual Core Server Sustainment (Warranty)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd865ef2ec314bceb2f6d1a756f70d41",
+  "opportunity_url": "https://sam.gov/opp/cd865ef2ec314bceb2f6d1a756f70d41/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/cd865ef2ec314bceb2f6d1a756f70d41/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "cd865ef2ec314bceb2f6d1a756f70d41",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "MAX-RFI42CS0526",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3300  42 CONS CC",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=cd865ef2ec314bceb2f6d1a756f70d41",
+  "detail_text": "The 42nd Communications Squadron at Maxwell AFB, AL has a requirement for Warranty and Sustainment Support for its SIPR/NIPR Virtual Core Server Equipment which is approaching the end of the manufacturer's original warranty period for support. The equipment provides the SIPR/NIPR Virtual Environment for Core Services (File, Print, & Web) for restoration after local Tier I through Tier III efforts have been documented. Please be aware that this is just a Request for Information and no contract will result from this inquiry. Please see the attached Sources Sought and draft SOR for all information regarding this requirement and how to submit a capabilities statement.",
+  "detail_text_length": 672,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f7f79cbe2994575b792d2885f8b35f5/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea096fbbfafe488b958caa75d2195604/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f7f79cbe2994575b792d2885f8b35f5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/018a360d883f90928198769fe9a939e3ca29db5bdb2e9be4b6743332d11e80d4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/018a360d883f90928198769fe9a939e3ca29db5bdb2e9be4b6743332d11e80d4.docx",
+      "file_id": "7f7f79cbe2994575b792d2885f8b35f5",
+      "file_name": "SOR+Maxwell+42CS+Virtual+Core+Server+Sustainment+-+Warranty.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 31394,
+      "sha256": "018a360d883f90928198769fe9a939e3ca29db5bdb2e9be4b6743332d11e80d4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ea096fbbfafe488b958caa75d2195604/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c21e0ddefeb467299b8b7d52ea12da01154afeeefcc716eaae5ca34853171f1c.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c21e0ddefeb467299b8b7d52ea12da01154afeeefcc716eaae5ca34853171f1c.docx",
+      "file_id": "ea096fbbfafe488b958caa75d2195604",
+      "file_name": "Sources+Sought+-+SAM.GOV+-+42CS+Warranty+and+Server+Support.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 29193,
+      "sha256": "c21e0ddefeb467299b8b7d52ea12da01154afeeefcc716eaae5ca34853171f1c"
+    }
+  ],
+  "_mirror_hash": "f65b84d457b2972d80380901aa0822870961d8df7e3b9814a4a902c35be46c77",
+  "_mirror_run_id": "20260504T200919Z",
+  "_mirror_recorded_at": "2026-05-04T20:13:15.643617+00:00"
+}

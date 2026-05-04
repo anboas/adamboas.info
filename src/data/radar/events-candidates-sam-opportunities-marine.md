@@ -1,23 +1,23 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-05-03T13:50:18.345569+00:00
+Generated: 2026-05-04T20:13:40.340788+00:00
 Profile: marine
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 05/03/2026
+Posted range: 01/01/2026 -> 05/04/2026
 
 ## Counts
-- Total candidates: 19
+- Total candidates: 20
 - Navy-related: 0
-- Full detail cached: 19
-- Notices with attachments: 13
-- Total attachment links: 21
+- Full detail cached: 20
+- Notices with attachments: 14
+- Total attachment links: 22
 - Pre-solicitation: 5
-- Sources Sought: 7
+- Sources Sought: 8
 - Special Notice: 7
 
 ## Engagement signals
 - Pre-solicitation: 6
-- Sources Sought: 7
+- Sources Sought: 8
 - Special Notice: 7
 
 ## Top candidates
@@ -39,6 +39,7 @@ Posted range: 01/01/2026 -> 05/03/2026
 | 2 | Special Notice | Special Notice | 2026-04-30 | 2026-05-08 | DEPT OF DEFENSE | [Garmin Worldwide Standard PilotPak Subscriptions](https://sam.gov/opp/09bada2bc2114e759e118d3c87196d05/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-10 | 2026-05-09 | DEPT OF DEFENSE | [USMC Tenant Satisfaction Survey (TSS) Support Services](https://sam.gov/opp/6e65381d430044d7b84e6bab70c703b4/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-11 | DEPT OF DEFENSE | [Portable Sanitation Unit](https://sam.gov/opp/aa2c15a08dd14a2d85f9880c8d1bf9ff/view) |
+| 4 | Sources Sought | Sources Sought | 2026-05-04 | 2026-05-13 | DEPT OF DEFENSE | [II MSB Substance Abuse Control Officer Administrative Support Services Sources Sought](https://sam.gov/opp/7372ea1cfa594391806207c6e5dba22a/view) |
 | 2 | Special Notice | Special Notice | 2026-04-23 | 2026-05-14 | DEPT OF DEFENSE | [National Museum of the United States Marine Corps (NMMC) Exhibit Preservation and Fabrication Services Follow-On](https://sam.gov/opp/892705f2efe544e2886a3ef2e545fd17/view) |
 | 2 | Sources Sought | Sources Sought | 2026-04-30 | 2026-05-14 | DEPT OF DEFENSE | [NMMC Sherman Tank Transportation & Salvage](https://sam.gov/opp/70eff96f376c4272923a25ff41e7031a/view) |
 | 2 | Pre-solicitation | Pre-solicitation | 2026-04-19 | 2027-04-20 | DEPT OF DEFENSE | [Marine Corps University (MCU) Center for Distance Education (CDET) Distance Professional Military Education (DPME) program Academic Support Services.](https://sam.gov/opp/7655b2d0652b480c8ed155c4f932df60/view) |
