@@ -1,9 +1,9 @@
 # SAM.gov Opportunity Signal Candidates
 
-Generated: 2026-05-04T20:14:02.557329+00:00
+Generated: 2026-05-05T13:47:49.176963+00:00
 Profile: navy
 Notice types: p, r, s, o, k
-Posted range: 01/01/2026 -> 05/04/2026
+Posted range: 01/01/2026 -> 05/05/2026
 
 ## Counts
 - Total candidates: 115
@@ -52,7 +52,6 @@ Posted range: 01/01/2026 -> 05/04/2026
 | 4 | Solicitation | - | 2026-03-30 | 2026-04-06 | DEPT OF DEFENSE | [Contractor Logistics Support (CLS) Follow-On, FY 27-30](https://sam.gov/opp/c55cf82054104f70be0b21201692008b/view) |
 | 6 | Solicitation | - | 2026-03-09 | 2026-04-09 | DEPT OF DEFENSE | [Low Pressure Gage Calibrators](https://sam.gov/opp/cec0318ca29d44b3b42ae08e09020e94/view) |
 | 7 | Special Notice | Special Notice | 2026-03-30 | 2026-04-14 | DEPT OF DEFENSE | [MINE HUNTING IN CHALLENGING ENVIRONMENTS PARTICIPATION AGREEMENT (MHCE PA) ACOUSTIC COMMUNICATIONS (ACOMMS) EXP](https://sam.gov/opp/aa3d6bdcb7bd40d7a13fc0f91e0b7d50/view) |
-| 5 | Pre-solicitation | Pre-solicitation | 2026-05-04 | 2026-04-14 | DEPT OF DEFENSE | [Tomahawk Cruise Missiles Recertification & Depot Operations](https://sam.gov/opp/7e30f81d435f4d5589e7812e61a3d79b/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-16 | 2026-04-21 | DEPT OF DEFENSE | [Sole Source to TacMed Solutions LLC for  Inspection and Repair (4) Free Diver Heating System (FDHS)](https://sam.gov/opp/ed1de4f794ac46718884eed608375fcc/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-20 | 2026-04-22 | DEPT OF DEFENSE | [Small Business Set Aside for STIDD Brand Replacement Parts per attachments](https://sam.gov/opp/0c59b4a8b54a4ebb8b9b386e7a4253e6/view) |
 | 7 | Combined Synopsis/Solicitation | - | 2026-04-20 | 2026-04-22 | DEPT OF DEFENSE | [Small Business Set-Aside for SubConn Brand Stainless Steel Connectors  (Review All Attachments)](https://sam.gov/opp/d8ed7d8248b24735b3d2c9ead0ab2a44/view) |
@@ -133,6 +132,7 @@ Posted range: 01/01/2026 -> 05/04/2026
 | 4 | Solicitation | - | 2026-04-15 | 2026-05-18 | DEPT OF DEFENSE | [LASER GUIDED TRAINING ROUND PIP FY 2026](https://sam.gov/opp/a3ee259655934d70a906f88a649b43cb/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-16 | 2026-05-18 | DEPT OF DEFENSE | [Littoral and Expeditionary Maneuver (EXMAN) Program](https://sam.gov/opp/ac28c06382394d89b308cea3f16c43ba/view) |
 | 7 | Sources Sought | Sources Sought | 2026-04-17 | 2026-05-18 | DEPT OF DEFENSE | [ACV Crew, SEAOPS Program, FMS Program and Future Connectors Program Support](https://sam.gov/opp/08334dd6f67e4195915256cad249c92b/view) |
+| 5 | Pre-solicitation | Pre-solicitation | 2026-05-04 | 2026-05-20 | DEPT OF DEFENSE | [H-1 Engineering and Logistics Sustainment Support CY27-31](https://sam.gov/opp/7b0c53854a944502b92f18d0567ec23e/view) |
 | 6 | Combined Synopsis/Solicitation | - | 2026-04-28 | 2026-05-29 | DEPT OF DEFENSE | [Groundskeeping Services at Building 977 Campbell Industrial Park, NUWC DETPAC, Kapolei, Hawaii](https://sam.gov/opp/f74863a57faf4dff9b8a75f3ce4e61be/view) |
 | 5 | Sources Sought | Sources Sought | 2026-05-04 | 2026-05-29 | DEPT OF DEFENSE | [P-8A Poseidon Manufacturing and Prototyping Support at Cecil Field, Jacksonville Florida](https://sam.gov/opp/9fcd5f4b1a09465c99a871510b4daa4a/view) |
 | 9 | Sources Sought | Pre-solicitation, Sources Sought | 2026-05-01 | 2026-05-31 | DEPT OF DEFENSE | [Request for Information LCAC Alarm and Monitoring System](https://sam.gov/opp/af08d1268353423eaf5cdc1009dc7bfb/view) |

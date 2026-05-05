@@ -1,0 +1,48 @@
+{
+  "id": "sam-a21d3437a49642398a694bd67c6c023a",
+  "title": "SIEMENS XCARE Service Agreement",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a21d3437a49642398a694bd67c6c023a",
+  "opportunity_url": "https://sam.gov/opp/a21d3437a49642398a694bd67c6c023a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a21d3437a49642398a694bd67c6c023a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a21d3437a49642398a694bd67c6c023a",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N6449826Q5134",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSEA.NAVSEA WARFARE CENTER.NSWC PHILADELPHIA DIV",
+  "posted_date": "2026-05-05",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 7,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation",
+    "NSWC/NUWC signal"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a21d3437a49642398a694bd67c6c023a",
+  "detail_text": "The Naval Surface Warfare Center Philadelphia Division (NSWCPD) is a Department of Defense entity responsible for research and development, test and evaluation, engineering and fleet support organization for the Navy’s ships, submarines, military watercraft and unmanned vehicles. This requirement is for NSWCPD Code 1410.2, which is responsible for manufacturing naval propulsors and related components. The Naval Foundry & Propeller Center utilizes Siemens’ equipment on eleven (11) machines, all of which were installed over the last ten (10) years. Currently NFPC requires a supplemental technical service agreement for Siemens equipment including computer, controller, electronic equipment, motors, drives, and electro-mechanical devices to allow eleven (11) machines to run at optimal levels and mitigate the risk of unplanned downtime.",
+  "detail_text_length": 842,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/baa5140a8bbb4c2d8491d7e4b9741258/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/baa5140a8bbb4c2d8491d7e4b9741258/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c823e5138d5a1cc866d65d4e0dfb16c9f3f21da5a4a4fce41dc169045ddbfcc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c823e5138d5a1cc866d65d4e0dfb16c9f3f21da5a4a4fce41dc169045ddbfcc.docx",
+      "file_id": "baa5140a8bbb4c2d8491d7e4b9741258",
+      "file_name": "B2+N6449826Q5134+Synopsis+summary.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15916,
+      "sha256": "0c823e5138d5a1cc866d65d4e0dfb16c9f3f21da5a4a4fce41dc169045ddbfcc"
+    }
+  ],
+  "_mirror_hash": "6e394bd6b12c718fde7d24c5fe7f28b2583db5bf2249cb684311100118525c45",
+  "_mirror_run_id": "20260505T134359Z",
+  "_mirror_recorded_at": "2026-05-05T13:47:00.608177+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-2e570c6b513143408a3ec5b8ac2911da",
+  "title": "7A--POSPac MMS Complete",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e570c6b513143408a3ec5b8ac2911da",
+  "opportunity_url": "https://sam.gov/opp/2e570c6b513143408a3ec5b8ac2911da/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2e570c6b513143408a3ec5b8ac2911da/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2e570c6b513143408a3ec5b8ac2911da",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "140G0326Q0110",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.US GEOLOGICAL SURVEY.OFFICE OF ACQUISITON  GRANTS",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2e570c6b513143408a3ec5b8ac2911da",
+  "detail_text": "Sources Sought The U.S. Geological Survey (USGS) is conducting market research to determine the availability of qualified businesses capable of supplying Pospac Mobile Mapping Suite complete software licenses. This source sought announcement is not a request for quote or proposal and the Government is not committed to award of a purchase order or contract pursuant to this announcement. The information resulting from this market research is simply for planning purposes to assist the Government in determining its acquisition strategy. The Government will not pay for any costs incurred in the preparation of information for responding to this notice. NAICS code: 513210 – Software Publishers All responsible sources may submit technical brochures and/or capability statements detailing the ability of their product to meet the salient characteristics included with this announcement. Responses to this announcement shall only be accepted through electronic mail addressed to amberry@ios.doi.gov and must be uploaded and received in their entirety no later than May 11th, 2026, at 8AM Pacific time.",
+  "detail_text_length": 1101,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/126e7354036541ab8a87b1cf1cc10775/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/126e7354036541ab8a87b1cf1cc10775/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4df30097d64146c5e10ff90f010f302fa630102b1eb364b9d7419f21791d514e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4df30097d64146c5e10ff90f010f302fa630102b1eb364b9d7419f21791d514e.docx",
+      "file_id": "126e7354036541ab8a87b1cf1cc10775",
+      "file_name": "0044046287_Sources_Sought_salient_characteristics_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 27854,
+      "sha256": "4df30097d64146c5e10ff90f010f302fa630102b1eb364b9d7419f21791d514e"
+    }
+  ],
+  "_mirror_hash": "521f8a793b23c6a360c4a7f133a62103a6066e66852c83f9618403191085146c",
+  "_mirror_run_id": "20260505T134359Z",
+  "_mirror_recorded_at": "2026-05-05T13:47:00.895456+00:00"
+}

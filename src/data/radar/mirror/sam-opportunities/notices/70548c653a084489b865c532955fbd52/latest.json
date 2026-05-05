@@ -1,0 +1,46 @@
+{
+  "id": "sam-70548c653a084489b865c532955fbd52",
+  "title": "B529--Services - Central Institutional Review Board - VACO",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70548c653a084489b865c532955fbd52",
+  "opportunity_url": "https://sam.gov/opp/70548c653a084489b865c532955fbd52/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/70548c653a084489b865c532955fbd52/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "70548c653a084489b865c532955fbd52",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "36C24E26R0007",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.RPO EAST (36C24E)",
+  "posted_date": "2026-05-04",
+  "response_deadline": "2026-05-06",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=70548c653a084489b865c532955fbd52",
+  "detail_text": "Notice of pending RFP for Central IRB Services. Set-aside for SDVOSB. See RFP instructions.",
+  "detail_text_length": 91,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddfc8fbaae6f4862a0cd91154a9ee0b2/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ddfc8fbaae6f4862a0cd91154a9ee0b2/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/205a19272cd97dba355b21ce0bc83a323ff206486d089dc738a919eb7e562b2e.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/205a19272cd97dba355b21ce0bc83a323ff206486d089dc738a919eb7e562b2e.docx",
+      "file_id": "ddfc8fbaae6f4862a0cd91154a9ee0b2",
+      "file_name": "36C24E26R0007_2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14378,
+      "sha256": "205a19272cd97dba355b21ce0bc83a323ff206486d089dc738a919eb7e562b2e"
+    }
+  ],
+  "_mirror_hash": "6738fc762c0b6b03ba0ef1813895686dabfa017f2dc2323f0213605c43d40000",
+  "_mirror_run_id": "20260505T134359Z",
+  "_mirror_recorded_at": "2026-05-05T13:47:00.865347+00:00"
+}

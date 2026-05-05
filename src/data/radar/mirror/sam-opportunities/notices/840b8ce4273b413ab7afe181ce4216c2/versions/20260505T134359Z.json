@@ -1,0 +1,70 @@
+{
+  "id": "sam-840b8ce4273b413ab7afe181ce4216c2",
+  "title": "Virtualization Enterprise Software Solutions RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=840b8ce4273b413ab7afe181ce4216c2",
+  "opportunity_url": "https://sam.gov/opp/840b8ce4273b413ab7afe181ce4216c2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/840b8ce4273b413ab7afe181ce4216c2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "840b8ce4273b413ab7afe181ce4216c2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "842674441",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE INFORMATION SYSTEMS AGENCY (DISA).IT CONTRACTING DIVISION - PL84",
+  "posted_date": "2026-05-05",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=840b8ce4273b413ab7afe181ce4216c2",
+  "detail_text": "The Defense Information Systems Agency (DISA), on behalf of the Department of War (DoW), is issuing this Request for Information (RFI) to conduct market research. The purpose of this RFI is to identify qualified sources capable of providing a standardized, enterprise-scalable virtualization software solution, to include all associated software sustainment, upgrades, and technical support services under an enterprise-wide agreement within the next 12 months. The objective is to establish a centralized, efficient, and cost-effective procurement vehicle. Please see the attached RFI Document for additional details. Please note Section 3.4 that was added to the RFI from the previous version. The response due date is also extended.",
+  "detail_text_length": 735,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1363300da65642759750b0f0e23ad3d3/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/588553d55da34629b3bb6572f88ac45c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9810b8ceed5427986c59f928ad5841d/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1363300da65642759750b0f0e23ad3d3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6bbf248df73a0f96666be436629313c846544b772f6ea57f76cdff927ba779c6.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6bbf248df73a0f96666be436629313c846544b772f6ea57f76cdff927ba779c6.docx",
+      "file_id": "1363300da65642759750b0f0e23ad3d3",
+      "file_name": "Questions+and+Answers.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15642,
+      "sha256": "6bbf248df73a0f96666be436629313c846544b772f6ea57f76cdff927ba779c6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/588553d55da34629b3bb6572f88ac45c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f1d36012e702074409e82ea3df2c1aab72d259781e3031b48d185509bec8cd26.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f1d36012e702074409e82ea3df2c1aab72d259781e3031b48d185509bec8cd26.docx",
+      "file_id": "588553d55da34629b3bb6572f88ac45c",
+      "file_name": "Vitualization+RFI+Final.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 25358,
+      "sha256": "f1d36012e702074409e82ea3df2c1aab72d259781e3031b48d185509bec8cd26"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f9810b8ceed5427986c59f928ad5841d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e5fba690c85af2a7575ec26a516c45ac469ac9282ce6a93a14073692f3fb7cb.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e5fba690c85af2a7575ec26a516c45ac469ac9282ce6a93a14073692f3fb7cb.xlsx",
+      "file_id": "f9810b8ceed5427986c59f928ad5841d",
+      "file_name": "Template+Virtualization+ROM.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14020,
+      "sha256": "9e5fba690c85af2a7575ec26a516c45ac469ac9282ce6a93a14073692f3fb7cb"
+    }
+  ],
+  "_mirror_hash": "f6aa1c5fdd2e2f15d619ec96267a6ca26820c5b1bbdd5857e56a0ef02dd7a9fe",
+  "_mirror_run_id": "20260505T134359Z",
+  "_mirror_recorded_at": "2026-05-05T13:47:00.808265+00:00"
+}

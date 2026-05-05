@@ -1,0 +1,46 @@
+{
+  "id": "sam-7d3dc97028f049de9198ae5fb13483c7",
+  "title": "SPRRA1-26-R-0042: 4130-01-597-1317; 6110-01-597-1482; 4130-01-597-1300",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d3dc97028f049de9198ae5fb13483c7",
+  "opportunity_url": "https://sam.gov/opp/7d3dc97028f049de9198ae5fb13483c7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7d3dc97028f049de9198ae5fb13483c7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7d3dc97028f049de9198ae5fb13483c7",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "SPRRA1-26-R-0042",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION HUNTSVILLE.DLA AVIATION AT HUNTSVILLE, AL",
+  "posted_date": "2026-05-05",
+  "response_deadline": "2026-04-19",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7d3dc97028f049de9198ae5fb13483c7",
+  "detail_text": "Please see attached: Multi NSN Synopsis SPRRA1-26-R-0042. Pdf",
+  "detail_text_length": 61,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/117ed132816b42b68c58b5ae10a2e6c1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/117ed132816b42b68c58b5ae10a2e6c1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/af78f1a548480e9510612eb0e10e35badc47aa6f65e938ed8eee6ff2a54ff64f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/af78f1a548480e9510612eb0e10e35badc47aa6f65e938ed8eee6ff2a54ff64f.pdf",
+      "file_id": "117ed132816b42b68c58b5ae10a2e6c1",
+      "file_name": "AX6F2475_6F2492_6F2472AX_+Synopsis+Multi+NSN+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 114139,
+      "sha256": "af78f1a548480e9510612eb0e10e35badc47aa6f65e938ed8eee6ff2a54ff64f"
+    }
+  ],
+  "_mirror_hash": "ed6edd4d87c9428bb11fac4df2dae6e9b120ad3acda908211a569db4ebba4e79",
+  "_mirror_run_id": "20260505T134359Z",
+  "_mirror_recorded_at": "2026-05-05T13:47:00.851928+00:00"
+}

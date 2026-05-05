@@ -17011,4 +17011,94 @@ export const radarEventsSeed: RadarEvent[] = [
 		}
 	},
 
+	{
+		id: 'radar-military-robotics-and-autonomous-systems-usa-conference-2026',
+		title: 'Military Robotics and Autonomous Systems USA Conference 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-07-08',
+		endDate: '2026-07-09',
+		branch: 'Joint',
+		type: 'Conference',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Arlington',
+			state: 'VA',
+			country: 'USA',
+			lat: 38.8769326,
+			lng: -77.0893094
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['military', 'robotics', 'autonomous', 'systems', 'conference'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/event.asp?id=25904',
+				type: 'official',
+				lastVerified: '2026-05-05',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25904',
+				registration: 'https://www.asdevents.com/event.asp?id=25904'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			},
+			acquisition: 
+			{
+				engagementKinds: ['Vendor Outreach'],
+				noticeType: 'Conference'
+			},
+			engagement: 
+			{
+				status: 'Not engaged',
+				contacts: [
+				{
+					name: 'Melissa Johnson',
+					role: 'Acquisition Executive',
+					organization: 'US SOCOM'
+				},
+				{
+					name: 'Colonel Ken Bernier',
+					role: 'Project Manager, Autonomous Robotic Capabilities',
+					organization: 'US Army'
+				},
+				{
+					name: 'Lieutenant Colonel Samuel Butler',
+					role: 'Program Manager, Special Programs',
+					organization: 'US SOCOM'
+				},
+				{
+					name: 'Dr Priya Narayanan',
+					role: 'Chief, Autonomous Systems Branch',
+					organization: 'DEVCOM Army Research Laboratory'
+				}
+				]
+			},
+			notes: 'Source-verified on 2026-05-05 from ASD event page. Public speaker roster captured as government contacts. No solicitation number, response due date, or registration deadline was published on the source page.'
+		}
+	},
 ];
