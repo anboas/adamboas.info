@@ -1006,15 +1006,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="sbir">SBIR/STTR</option>
 					</select>
 				</label>
-				<label id="opp-field-sbir-mode" class="opp-field" hidden>
-					<span>SBIR lane</span>
-					<select id="opp-filter-sbir-mode" class="opp-input">
-						<option value="all">All</option>
-						<option value="both">CAF+ACP</option>
-						<option value="caf">CAF</option>
-						<option value="acp">ACP</option>
-					</select>
-				</label>
+				<!-- SBIR-specific lane filter removed; use general capability/assessment filters -->
 				<label class="opp-field">
 					<span>Notice type</span>
 					<select id="opp-filter-type" class="opp-input">
@@ -1421,39 +1413,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		(async () => {
 			const rawSam = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
 			const sbirTopicsUrl = 'https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/topics.json';
-			const sbirBoth = new Set([
-				'DAF26BX02-NV501',
-				'DAF26BZ01-NV500',
-				'OSW26BZ02-DV003',
-				'DLA26BZ02-NV005',
-				'DLA26BZ02-NV006',
-				'DAF26BZ01-NV008',
-				'SF254-D1204',
-				'DON26BZ01-DV042',
-				'DAF26BX02-NV502',
-				'DON26BZ01-NV023',
-				'OSW26BZ02-DV004',
-			]);
-			const sbirCaf = new Set([
-				'DAF26BZ01-NV006',
-				'DAF26BZ01-DV007',
-				'DAF26BZ01-DV005',
-				'DON26BZ01-NV010',
-				'DON26BZ01-NV013',
-				'DON26BZ01-NV025',
-				'DON26BZ01-NV030',
-				'HR0011SB20254XL-01',
-				'SF254-D1201',
-				'SF25D-T1201',
-			]);
-			const sbirAcp = new Set([
-				'HR0011SB20254-12',
-				'OSW26BZ01-DV001',
-				'DLA26BZ02-NV010',
-				'DON26BX01-NP001',
-				'DAF26BX02-NV502',
-				'OSW26BZ02-DV003',
-			]);
 			const searchParams = new URLSearchParams(window.location.search);
 			const requestedSource = String(searchParams.get('source') || 'sam').toLowerCase();
 			let activeSource = requestedSource === 'sbir' ? 'sbir' : 'sam';
@@ -1595,8 +1554,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const el = {
 				search: document.getElementById('opp-filter-search'),
 				source: document.getElementById('opp-filter-source'),
-				sbirMode: document.getElementById('opp-filter-sbir-mode'),
-				sbirModeField: document.getElementById('opp-field-sbir-mode'),
 				sourceLinkSam: document.getElementById('opp-source-link-sam'),
 				sourceLinkSbir: document.getElementById('opp-source-link-sbir'),
 				type: document.getElementById('opp-filter-type'),
@@ -2133,7 +2090,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 			const state = {
 				source: activeSource,
-				sbirMode: 'all',
 				search: '',
 				type: 'all',
 				branch: 'all',
@@ -2260,7 +2216,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 			const updateStateFromInputs = () => {
 				state.source = el.source?.value === 'sbir' ? 'sbir' : 'sam';
-				state.sbirMode = el.sbirMode?.value || 'all';
 				state.search = (el.search?.value || '').trim().toLowerCase();
 				state.type = el.type?.value || 'all';
 				state.branch = el.branch?.value || 'all';
@@ -2340,15 +2295,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return true;
 			};
 
-			const sbirModeMatch = (row) => {
-				if (state.source !== 'sbir') return true;
-				const code = String(row.noticeId || '').trim();
-				if (!code) return state.sbirMode === 'all';
-				if (state.sbirMode === 'both') return sbirBoth.has(code);
-				if (state.sbirMode === 'caf') return sbirCaf.has(code) || sbirBoth.has(code);
-				if (state.sbirMode === 'acp') return sbirAcp.has(code) || sbirBoth.has(code);
-				return true;
-			};
+			// rows are source-scoped at load time (SAM or SBIR/STTR)
 
 			const compareRows = (a, b) => {
 				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
@@ -2379,7 +2326,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const filterRows = () =>
 				rows
 					.filter((row) => {
-						if (!sbirModeMatch(row)) return false;
 						if (state.search && !row.searchBlob.includes(state.search)) return false;
 						if (state.type !== 'all' && row.noticeType !== state.type) return false;
 						if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
@@ -2424,10 +2370,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 			const applySourceChrome = () => {
 				if (el.source) el.source.value = state.source;
-				if (el.sbirModeField) {
-					if (state.source === 'sbir') el.sbirModeField.removeAttribute('hidden');
-					else el.sbirModeField.setAttribute('hidden', '');
-				}
 				if (el.statusRow) {
 					if (state.source === 'sbir') el.statusRow.setAttribute('hidden', '');
 					else el.statusRow.removeAttribute('hidden');
@@ -3930,7 +3872,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				el.fpds,
 				el.decision,
 				el.sort,
-				el.sbirMode,
 			].forEach((node) => node?.addEventListener('change', renderFromFilterInput));
 			el.weight?.addEventListener('input', renderFromFilterInput);
 			[el.focus, el.fastMode].forEach((node) => node?.addEventListener('change', renderFromFilterInput));
@@ -4006,7 +3947,6 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.thirdParty) el.thirdParty.value = 'all';
 				if (el.fpds) el.fpds.value = 'all';
 				if (el.decision) el.decision.value = 'all';
-				if (el.sbirMode) el.sbirMode.value = 'all';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
 				if (el.fastMode) el.fastMode.checked = false;
