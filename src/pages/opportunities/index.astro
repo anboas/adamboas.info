@@ -824,6 +824,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		description="A live mirror of SAM opportunity intelligence, including broad SAM feed ingestion plus event-linked enrichment."
 	>
 		<div slot="actions" class="opp-header-actions">
+			<a class="ui-link-btn ui-link-btn-active" href={withBase('/opportunities/')}>SAM.gov view</a>
+			<a class="ui-link-btn" href={withBase('/opportunities/sbir-sttr/')}>SBIR/STTR view</a>
 			<a class="ui-link-btn" href={withBase('/events/')}>Open Events</a>
 			<a class="ui-link-btn" href={withBase('/status/')}>Open Status</a>
 			<a class="ui-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}
