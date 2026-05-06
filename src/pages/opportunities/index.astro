@@ -814,18 +814,18 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 <SiteLayout
 	title="Opportunity Intelligence | Adam Boas"
-	description="Opportunity intelligence mirror from cached SAM opportunity pulls and event-enrichment runs."
+	description="Unified opportunity intelligence interface for SAM.gov and DoD SBIR/STTR datasets."
 	noindex={true}
 >
 	<SurfacePageHeader
 		stickyActive="opportunities"
 		eyebrow="Acquisition radar"
 		title="Opportunity Intelligence"
-		description="A live mirror of SAM opportunity intelligence, including broad SAM feed ingestion plus event-linked enrichment."
+		description="Unified opportunity interface with a shared UX for SAM.gov and DoD SBIR/STTR data sources."
 	>
 		<div slot="actions" class="opp-header-actions">
-			<a class="ui-link-btn ui-link-btn-active" href={withBase('/opportunities/')}>SAM.gov view</a>
-			<a class="ui-link-btn" href={withBase('/opportunities/sbir-sttr/')}>SBIR/STTR view</a>
+			<a id="opp-source-link-sam" class="ui-link-btn" href={withBase('/opportunities/?source=sam')}>SAM.gov data</a>
+			<a id="opp-source-link-sbir" class="ui-link-btn" href={withBase('/opportunities/?source=sbir')}>SBIR/STTR data</a>
 			<a class="ui-link-btn" href={withBase('/events/')}>Open Events</a>
 			<a class="ui-link-btn" href={withBase('/status/')}>Open Status</a>
 			<a class="ui-link-btn" data-track="Contact: Intake Click" href={withBase('/contact/?intent=proposal')}
@@ -838,7 +838,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				rel="noreferrer">Open Drift Report</a
 			>
 		</div>
-		<div class="opp-status-row mt-3" aria-label="Pipeline freshness">
+		<div id="opp-status-row" class="opp-status-row mt-3" aria-label="Pipeline freshness">
 			{
 				lastCollectedAt ? (
 					<span class="ui-pill text-[11px]">
@@ -998,6 +998,22 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						autocomplete="off"
 						spellcheck="false"
 					/>
+				</label>
+				<label class="opp-field">
+					<span>Data source</span>
+					<select id="opp-filter-source" class="opp-input">
+						<option value="sam">SAM.gov</option>
+						<option value="sbir">SBIR/STTR</option>
+					</select>
+				</label>
+				<label id="opp-field-sbir-mode" class="opp-field" hidden>
+					<span>SBIR lane</span>
+					<select id="opp-filter-sbir-mode" class="opp-input">
+						<option value="all">All</option>
+						<option value="both">CAF+ACP</option>
+						<option value="caf">CAF</option>
+						<option value="acp">ACP</option>
+					</select>
 				</label>
 				<label class="opp-field">
 					<span>Notice type</span>
@@ -1402,8 +1418,168 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	<script id="opp-data" type="application/json" set:html={opportunitiesJson} />
 	<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 	<script is:inline>
-		(() => {
-			const raw = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
+		(async () => {
+			const rawSam = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
+			const sbirTopicsUrl = 'https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/topics.json';
+			const sbirBoth = new Set([
+				'DAF26BX02-NV501',
+				'DAF26BZ01-NV500',
+				'OSW26BZ02-DV003',
+				'DLA26BZ02-NV005',
+				'DLA26BZ02-NV006',
+				'DAF26BZ01-NV008',
+				'SF254-D1204',
+				'DON26BZ01-DV042',
+				'DAF26BX02-NV502',
+				'DON26BZ01-NV023',
+				'OSW26BZ02-DV004',
+			]);
+			const sbirCaf = new Set([
+				'DAF26BZ01-NV006',
+				'DAF26BZ01-DV007',
+				'DAF26BZ01-DV005',
+				'DON26BZ01-NV010',
+				'DON26BZ01-NV013',
+				'DON26BZ01-NV025',
+				'DON26BZ01-NV030',
+				'HR0011SB20254XL-01',
+				'SF254-D1201',
+				'SF25D-T1201',
+			]);
+			const sbirAcp = new Set([
+				'HR0011SB20254-12',
+				'OSW26BZ01-DV001',
+				'DLA26BZ02-NV010',
+				'DON26BX01-NP001',
+				'DAF26BX02-NV502',
+				'OSW26BZ02-DV003',
+			]);
+			const searchParams = new URLSearchParams(window.location.search);
+			const requestedSource = String(searchParams.get('source') || 'sam').toLowerCase();
+			let activeSource = requestedSource === 'sbir' ? 'sbir' : 'sam';
+			let sbirRawCache = null;
+
+			const normalizeComponent = (value) => {
+				const key = String(value || '').trim().toLowerCase();
+				if (!key) return 'Unknown';
+				if (key.includes('air force') || key === 'daf') return 'Air Force';
+				if (key.includes('army')) return 'Army';
+				if (key.includes('navy') || key.includes('don')) return 'Navy';
+				if (key.includes('space force')) return 'Space Force';
+				if (key.includes('darpa')) return 'DARPA';
+				if (key.includes('dla')) return 'DLA';
+				if (key.includes('osd') || key.includes('osw')) return 'OSD';
+				return String(value || 'Unknown').trim() || 'Unknown';
+			};
+			const stripHtml = (value) => {
+				const d = document.createElement('div');
+				d.innerHTML = String(value || '');
+				return (d.textContent || d.innerText || '').trim();
+			};
+			const sbirTopicToRaw = (topic) => {
+				const topicCode = String(topic?.topicCode || '').trim();
+				const topicId = String(topic?.topicId || topicCode || '').trim();
+				const title = String(topic?.topicTitle || topicCode || 'SBIR/STTR Topic').trim();
+				const component = normalizeComponent(topic?.component);
+				const program = String(topic?.program || 'SBIR/STTR').trim();
+				const status = String(topic?.topicStatus || '').trim();
+				const objective = String(topic?.objective || '').trim();
+				const description = String(topic?.description || '').trim();
+				const phase1 = String(topic?.phase1Description || '').trim();
+				const phase2 = String(topic?.phase2Description || '').trim();
+				const phase3 = String(topic?.phase3Description || '').trim();
+				const keywords = String(topic?.keywords || '').trim();
+				const technologyAreas = Array.isArray(topic?.technologyAreas) ? topic.technologyAreas : [];
+				const focusAreas = Array.isArray(topic?.focusAreas) ? topic.focusAreas : [];
+				const questions = Array.isArray(topic?.questions) ? topic.questions : [];
+				const detailPreview = [
+					`Program: ${program}${status ? ` · ${status}` : ''}`,
+					objective ? `Objective:\n${stripHtml(objective)}` : '',
+					description ? `Description:\n${stripHtml(description)}` : '',
+					phase1 ? `Phase I:\n${stripHtml(phase1)}` : '',
+					phase2 ? `Phase II:\n${stripHtml(phase2)}` : '',
+					phase3 ? `Phase III:\n${stripHtml(phase3)}` : '',
+					keywords ? `Keywords: ${keywords}` : '',
+					technologyAreas.length ? `Tech areas: ${technologyAreas.join(', ')}` : '',
+					focusAreas.length ? `Focus areas: ${focusAreas.join(', ')}` : '',
+					questions.length ? `Q&A published: ${questions.length}` : '',
+				]
+					.filter(Boolean)
+					.join('\n\n')
+					.trim();
+				const references = Array.isArray(topic?.referenceDocuments) ? topic.referenceDocuments : [];
+				const resourceItems = references
+					.map((ref) => String(ref?.referenceTitle || '').trim())
+					.filter(Boolean)
+					.map((titleText, idx) => ({
+						sourceUrl: '',
+						mirrorDownloadUrl: null,
+						mirrorBlobPath: null,
+						fileName: `${titleText}${references[idx]?.uploadId ? ` (${references[idx].uploadId})` : ''}`,
+						fileId: references[idx]?.uploadId ? String(references[idx].uploadId) : null,
+						contentType: null,
+						sizeBytes: null,
+					}));
+				return {
+					key: `sbir:${topicId || topicCode}`,
+					noticeId: topicCode || topicId,
+					title: `${topicCode ? `${topicCode} — ` : ''}${title}`,
+					noticeType: `${program} Topic`,
+					postedDate: null,
+					responseDueDate: null,
+					solicitationNumber: String(topic?.solicitationNumber || topic?.releaseNumber || '').trim() || null,
+					agencyPath: `DoD.${component}`,
+					naicsCode: null,
+					classificationCode: null,
+					uiLink: topicCode
+						? `https://www.dodsbirsttr.mil/topics-app/#/topics/${encodeURIComponent(topicCode)}`
+						: 'https://www.dodsbirsttr.mil/topics-app/',
+					detailUrl: topic?.topicId
+						? `https://www.dodsbirsttr.mil/topics/api/public/topics/${encodeURIComponent(String(topic.topicId))}/details`
+						: null,
+					detailPreview,
+					detailTextLength: detailPreview.length,
+					resourceAssets: resourceItems,
+					resourceCount: resourceItems.length,
+					awardSignalCount: 0,
+					awardSignalSampleDate: null,
+					usaspendingSignal: null,
+					usaspendingMatchCount: 0,
+					usaspendingAmount: 0,
+					crossDataSignal: { score: 0, level: 'None' },
+					corroborationScore: 0,
+					corroborationLevel: 'None',
+					weight: Math.max(8, Math.min(30, 10 + questions.length * 2 + (status.toLowerCase() === 'open' ? 8 : 0))),
+					eventIds: [],
+					eventTitles: [],
+					eventRefs: [],
+					governmentPocRefs: [],
+					governmentPocCount: 0,
+					branches: [component],
+					capabilityAreas: technologyAreas,
+					missionThreads: focusAreas,
+					eventCount: 0,
+				};
+			};
+			const loadSbirRaw = async () => {
+				if (sbirRawCache) return sbirRawCache;
+				const resp = await fetch(sbirTopicsUrl, { credentials: 'omit' });
+				if (!resp.ok) throw new Error(`SBIR topics fetch failed (${resp.status})`);
+				const topics = await resp.json();
+				sbirRawCache = Array.isArray(topics) ? topics.map(sbirTopicToRaw) : [];
+				return sbirRawCache;
+			};
+			let raw = rawSam;
+			if (activeSource === 'sbir') {
+				try {
+					raw = await loadSbirRaw();
+				} catch (error) {
+					console.error(error);
+					activeSource = 'sam';
+					raw = rawSam;
+				}
+			}
+
 			const focusTerms = [
 				'software',
 				'cloud',
@@ -1418,6 +1594,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 			const el = {
 				search: document.getElementById('opp-filter-search'),
+				source: document.getElementById('opp-filter-source'),
+				sbirMode: document.getElementById('opp-filter-sbir-mode'),
+				sbirModeField: document.getElementById('opp-field-sbir-mode'),
+				sourceLinkSam: document.getElementById('opp-source-link-sam'),
+				sourceLinkSbir: document.getElementById('opp-source-link-sbir'),
 				type: document.getElementById('opp-filter-type'),
 				branch: document.getElementById('opp-filter-branch'),
 				client: document.getElementById('opp-filter-client'),
@@ -1434,6 +1615,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				fastMode: document.getElementById('opp-filter-fast'),
 				reset: document.getElementById('opp-filter-reset'),
 				chartFilterStatus: document.getElementById('opp-chart-filter-status'),
+				statusRow: document.getElementById('opp-status-row'),
 				total: document.getElementById('opp-kpi-total'),
 				displayed: document.getElementById('opp-kpi-displayed'),
 				gems: document.getElementById('opp-kpi-gems'),
@@ -1717,7 +1899,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return [...new Set(matched)].slice(0, 3);
 			};
 
-			const rows = raw.map((row) => {
+			let rows = raw.map((row) => {
 				const dueDays = daysUntil(row.responseDueDate);
 				const postedEpoch = toDayEpoch(row.postedDate);
 				const dueEpoch = toDayEpoch(row.responseDueDate);
@@ -1950,6 +2132,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			});
 
 			const state = {
+				source: activeSource,
+				sbirMode: 'all',
 				search: '',
 				type: 'all',
 				branch: 'all',
@@ -2075,6 +2259,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			};
 
 			const updateStateFromInputs = () => {
+				state.source = el.source?.value === 'sbir' ? 'sbir' : 'sam';
+				state.sbirMode = el.sbirMode?.value || 'all';
 				state.search = (el.search?.value || '').trim().toLowerCase();
 				state.type = el.type?.value || 'all';
 				state.branch = el.branch?.value || 'all';
@@ -2154,6 +2340,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return true;
 			};
 
+			const sbirModeMatch = (row) => {
+				if (state.source !== 'sbir') return true;
+				const code = String(row.noticeId || '').trim();
+				if (!code) return state.sbirMode === 'all';
+				if (state.sbirMode === 'both') return sbirBoth.has(code);
+				if (state.sbirMode === 'caf') return sbirCaf.has(code) || sbirBoth.has(code);
+				if (state.sbirMode === 'acp') return sbirAcp.has(code) || sbirBoth.has(code);
+				return true;
+			};
+
 			const compareRows = (a, b) => {
 				if (state.sort === 'title') return a.title.localeCompare(b.title) || b.gemScore - a.gemScore;
 				if (state.sort === 'weight') return b.weight - a.weight || b.gemScore - a.gemScore;
@@ -2183,6 +2379,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const filterRows = () =>
 				rows
 					.filter((row) => {
+						if (!sbirModeMatch(row)) return false;
 						if (state.search && !row.searchBlob.includes(state.search)) return false;
 						if (state.type !== 'all' && row.noticeType !== state.type) return false;
 						if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
@@ -2216,14 +2413,53 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return [...map.entries()].sort((a, b) => b[1] - a[1]);
 			};
 
-			const hydrateClientFilterOptions = () => {
-				if (!el.client) return;
-				const counts = countBy(rows, (row) => row.clientLabel);
-				for (const [label, count] of counts.slice(0, 80)) {
+			const resetSelect = (node, placeholder = 'All') => {
+				if (!node) return;
+				node.innerHTML = '';
+				const option = document.createElement('option');
+				option.value = 'all';
+				option.textContent = placeholder;
+				node.appendChild(option);
+			};
+
+			const applySourceChrome = () => {
+				if (el.source) el.source.value = state.source;
+				if (el.sbirModeField) {
+					if (state.source === 'sbir') el.sbirModeField.removeAttribute('hidden');
+					else el.sbirModeField.setAttribute('hidden', '');
+				}
+				if (el.statusRow) {
+					if (state.source === 'sbir') el.statusRow.setAttribute('hidden', '');
+					else el.statusRow.removeAttribute('hidden');
+				}
+				if (el.sourceLinkSam) el.sourceLinkSam.classList.toggle('ui-link-btn-active', state.source === 'sam');
+				if (el.sourceLinkSbir) el.sourceLinkSbir.classList.toggle('ui-link-btn-active', state.source === 'sbir');
+			};
+
+			const hydrateDatasetFilterOptions = () => {
+				resetSelect(el.type, 'All');
+				resetSelect(el.branch, 'All');
+				resetSelect(el.client, 'All');
+				const typeCounts = countBy(rows, (row) => row.noticeType || 'Unknown');
+				for (const [label, count] of typeCounts.slice(0, 80)) {
 					const option = document.createElement('option');
 					option.value = label;
 					option.textContent = `${label} (${count})`;
-					el.client.appendChild(option);
+					el.type?.appendChild(option);
+				}
+				const branchCounts = countBy(rows, (row) => (Array.isArray(row.branches) && row.branches.length ? row.branches[0] : 'Unknown'));
+				for (const [label, count] of branchCounts.slice(0, 80)) {
+					const option = document.createElement('option');
+					option.value = label;
+					option.textContent = `${label} (${count})`;
+					el.branch?.appendChild(option);
+				}
+				const clientCounts = countBy(rows, (row) => row.clientLabel);
+				for (const [label, count] of clientCounts.slice(0, 80)) {
+					const option = document.createElement('option');
+					option.value = label;
+					option.textContent = `${label} (${count})`;
+					el.client?.appendChild(option);
 				}
 			};
 
@@ -3598,6 +3834,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 			const render = () => {
 				updateStateFromInputs();
+				applySourceChrome();
 				const filtered = filterRows();
 				const gems = filtered.filter((row) => row.gemScore >= 26 && (row.dueDays === null || row.dueDays >= 0));
 				const deepCount = filtered.filter((row) => Number(row.detailTextLength || 0) > 0).length;
@@ -3693,9 +3930,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				el.fpds,
 				el.decision,
 				el.sort,
+				el.sbirMode,
 			].forEach((node) => node?.addEventListener('change', renderFromFilterInput));
 			el.weight?.addEventListener('input', renderFromFilterInput);
 			[el.focus, el.fastMode].forEach((node) => node?.addEventListener('change', renderFromFilterInput));
+			el.source?.addEventListener('change', () => {
+				const next = el.source?.value === 'sbir' ? 'sbir' : 'sam';
+				const params = new URLSearchParams(window.location.search);
+				params.set('source', next);
+				window.location.search = params.toString();
+			});
 
 			el.pageSize?.addEventListener('change', () => {
 				tableState.pageSize = Number(el.pageSize?.value || 50);
@@ -3762,6 +4006,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.thirdParty) el.thirdParty.value = 'all';
 				if (el.fpds) el.fpds.value = 'all';
 				if (el.decision) el.decision.value = 'all';
+				if (el.sbirMode) el.sbirMode.value = 'all';
 				if (el.sort) el.sort.value = 'gem';
 				if (el.focus) el.focus.checked = false;
 				if (el.fastMode) el.fastMode.checked = false;
@@ -3860,7 +4105,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			});
 
 			applyIncomingContext();
-			hydrateClientFilterOptions();
+			hydrateDatasetFilterOptions();
+			applySourceChrome();
 			render();
 			if (pendingAutoOpenNoticeId) {
 				const match = findRowByNoticeId(pendingAutoOpenNoticeId);
