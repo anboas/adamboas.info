@@ -892,7 +892,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		</div>
 
 		<div class="opp-kpi-groups mt-4">
-			<section class="opp-kpi-group" aria-label="Coverage metrics">
+			<section class="opp-kpi-group" aria-label="Coverage metrics" data-source-only="sam">
 				<p class="opp-kpi-group-title">Coverage</p>
 				<div class="opp-kpis">
 					<div class="opp-kpi">
@@ -914,7 +914,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</div>
 				</div>
 			</section>
-			<section class="opp-kpi-group" aria-label="Enrichment metrics">
+			<section class="opp-kpi-group" aria-label="Enrichment metrics" data-source-only="sam">
 				<p class="opp-kpi-group-title">Enrichment</p>
 				<div class="opp-kpis">
 					<div class="opp-kpi">
@@ -946,7 +946,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</div>
 				</div>
 			</section>
-			<section class="opp-kpi-group" aria-label="Decision signal metrics">
+			<section class="opp-kpi-group" aria-label="Decision signal metrics" data-source-only="sam">
 				<p class="opp-kpi-group-title">Decision Signals</p>
 				<div class="opp-kpis">
 					<div class="opp-kpi">
@@ -961,7 +961,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<div class="opp-kpi"><span class="opp-kpi-label">Pursue now</span><strong id="opp-kpi-pursue">0</strong></div>
 				</div>
 			</section>
-			<section class="opp-kpi-group" aria-label="System health metrics">
+			<section class="opp-kpi-group" aria-label="System health metrics" data-source-only="sam">
 				<p class="opp-kpi-group-title">System Health</p>
 				<div class="opp-kpis">
 					<div class="opp-kpi">
@@ -972,6 +972,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<span class="opp-kpi-label">Drift Δ 3P errors</span><strong
 							>{signed(Number(driftDeltas.us_errors ?? 0))}</strong>
 					</div>
+				</div>
+			</section>
+			<section class="opp-kpi-group" aria-label="SBIR/STTR metrics" data-source-only="sbir" hidden>
+				<p class="opp-kpi-group-title">SBIR/STTR Overview</p>
+				<div class="opp-kpis">
+					<div class="opp-kpi"><span class="opp-kpi-label">Topics</span><strong id="opp-kpi-sbir-topics">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Open topics</span><strong id="opp-kpi-sbir-open">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">With Q&A</span><strong id="opp-kpi-sbir-withqa">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Total Q&A</span><strong id="opp-kpi-sbir-totalqa">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Components</span><strong id="opp-kpi-sbir-components">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Programs</span><strong id="opp-kpi-sbir-programs">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Tech areas tagged</span><strong id="opp-kpi-sbir-techareas">0</strong></div>
+					<div class="opp-kpi"><span class="opp-kpi-label">Focus areas tagged</span><strong id="opp-kpi-sbir-focusareas">0</strong></div>
 				</div>
 			</section>
 		</div>
@@ -1008,27 +1021,27 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				</label>
 				<!-- SBIR-specific lane filter removed; use general capability/assessment filters -->
 				<label class="opp-field">
-					<span>Notice type</span>
+					<span id="opp-label-type">Notice type</span>
 					<select id="opp-filter-type" class="opp-input">
 						<option value="all">All</option>
 						{noticeTypes.map((type) => <option value={type}>{type}</option>)}
 					</select>
 				</label>
 				<label class="opp-field">
-					<span>Branch</span>
+					<span id="opp-label-branch">Branch</span>
 					<select id="opp-filter-branch" class="opp-input">
 						<option value="all">All</option>
 						{branches.map((branch) => <option value={branch}>{branch}</option>)}
 					</select>
 				</label>
 				<label class="opp-field">
-					<span>Who (client)</span>
+					<span id="opp-label-client">Who (client)</span>
 					<select id="opp-filter-client" class="opp-input">
 						<option value="all">All</option>
 					</select>
 				</label>
 				<label class="opp-field">
-					<span>What (work type)</span>
+					<span id="opp-label-work">What (work type)</span>
 					<select id="opp-filter-work" class="opp-input">
 						<option value="all">All</option>
 						<option value="software">Software Delivery</option>
@@ -1045,7 +1058,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="general">General/Other</option>
 					</select>
 				</label>
-				<label class="opp-field">
+				<label class="opp-field" data-source-only="sam">
 					<span>Due window</span>
 					<select id="opp-filter-due" class="opp-input">
 						<option value="all">All</option>
@@ -1056,7 +1069,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="no-due">No due date</option>
 					</select>
 				</label>
-				<label class="opp-field">
+				<label class="opp-field" data-source-only="sam">
 					<span>Min weight</span>
 					<input id="opp-filter-weight" class="opp-input" type="number" min="0" max="100" step="1" value="0" />
 				</label>
@@ -1069,7 +1082,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="both">Deep + attachments</option>
 					</select>
 				</label>
-				<label class="opp-field">
+				<label class="opp-field" data-source-only="sam">
 					<span>Confidence</span>
 					<select id="opp-filter-confidence" class="opp-input">
 						<option value="all">All</option>
@@ -1078,7 +1091,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="low">Low (&lt;45)</option>
 					</select>
 				</label>
-				<label class="opp-field">
+				<label class="opp-field" data-source-only="sam">
 					<span>3P signal</span>
 					<select id="opp-filter-third-party" class="opp-input">
 						<option value="all">All</option>
@@ -1089,7 +1102,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="none">No USAspending match</option>
 					</select>
 				</label>
-				<label class="opp-field">
+				<label class="opp-field" data-source-only="sam">
 					<span>ID continuity</span>
 					<select id="opp-filter-fpds" class="opp-input">
 						<option value="all">All</option>
@@ -1098,7 +1111,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="none">No FPDS signal</option>
 					</select>
 				</label>
-				<label class="opp-field">
+				<label class="opp-field" data-source-only="sam">
 					<span>Decision</span>
 					<select id="opp-filter-decision" class="opp-input">
 						<option value="all">All</option>
@@ -1127,7 +1140,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				</label>
 			</div>
 			<div class="opp-controls-actions">
-				<div class="opp-controls-checks">
+				<div class="opp-controls-checks" data-source-only="sam">
 					<label class="opp-check">
 						<input id="opp-filter-focus" type="checkbox" />
 						<span>My focus only (Software/Cloud/AI/Cyber/Data)</span>
@@ -1149,7 +1162,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	</section>
 
 	<section class="opp-grid mt-4">
-		<article class="card p-4 opp-viz-card opp-viz-card-gems">
+		<article class="card p-4 opp-viz-card opp-viz-card-gems" data-source-only="sam">
 			<h2 class="opp-subtitle">Gem picks (ranked)</h2>
 			<p class="opp-subcopy">
 				Highest combined score from weight, due urgency, focus fit, and repeat signal across events.
@@ -1157,7 +1170,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<ol id="opp-gem-list" class="opp-gem-list"></ol>
 		</article>
 
-		<article class="card p-4 opp-viz-card">
+		<article class="card p-4 opp-viz-card" data-source-only="sam">
 			<h2 class="opp-subtitle">Urgency distribution</h2>
 			<p class="opp-subcopy">Click a bar to filter by due window.</p>
 			<div id="opp-viz-urgency" class="opp-chart"></div>
@@ -1181,13 +1194,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div id="opp-viz-workmix" class="opp-chart"></div>
 		</article>
 
-		<article class="card p-4 opp-viz-card">
+		<article class="card p-4 opp-viz-card" data-source-only="sam">
 			<h2 class="opp-subtitle">Top NAICS</h2>
 			<p class="opp-subcopy">Click a bar to focus that NAICS code.</p>
 			<div id="opp-viz-naics" class="opp-chart"></div>
 		</article>
 
-		<article class="card p-4 opp-viz-card">
+		<article class="card p-4 opp-viz-card" data-source-only="sam">
 			<h2 class="opp-subtitle">Source coverage</h2>
 			<p class="opp-subcopy">
 				Tracks deep intel, attachments, SAM awards, USA matches, published gov POCs, and upstream errors.
@@ -1195,25 +1208,25 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<div id="opp-viz-sources" class="opp-chart"></div>
 		</article>
 
-		<article class="card p-4 opp-viz-card">
+		<article class="card p-4 opp-viz-card" data-source-only="sam">
 			<h2 class="opp-subtitle">Source freshness</h2>
 			<p class="opp-subcopy">Age of USAspending checks for matched opportunities.</p>
 			<div id="opp-viz-freshness" class="opp-chart"></div>
 		</article>
 
-		<article class="card p-4 opp-viz-card">
+		<article class="card p-4 opp-viz-card" data-source-only="sam">
 			<h2 class="opp-subtitle">Confidence profile</h2>
 			<p class="opp-subcopy">High confidence favors exact query matches + multi-source corroboration.</p>
 			<div id="opp-viz-confidence" class="opp-chart"></div>
 		</article>
 
-		<article class="card p-4 opp-viz-card">
+		<article class="card p-4 opp-viz-card" data-source-only="sam">
 			<h2 class="opp-subtitle">Corroboration vs gem</h2>
 			<p class="opp-subcopy">Top-right = high potential and high cross-data support.</p>
 			<div id="opp-viz-scatter" class="opp-chart"></div>
 		</article>
 
-		<article class="card p-4 opp-viz-card opp-viz-card-wide">
+		<article class="card p-4 opp-viz-card opp-viz-card-wide" data-source-only="sam">
 			<h2 class="opp-subtitle">Client × work heatmap</h2>
 			<p class="opp-subcopy">Cross-demand hotspots by buyer family and work lane. Click cell to filter.</p>
 			<div id="opp-viz-client-work" class="opp-chart opp-matrix"></div>
@@ -1225,7 +1238,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			<ul id="opp-insights-list" class="opp-insights-list"></ul>
 		</article>
 
-		<article class="card p-4 opp-viz-card opp-viz-card-wide">
+		<article class="card p-4 opp-viz-card opp-viz-card-wide" data-source-only="sam">
 			<h2 class="opp-subtitle">Snapshot delta (vs previous visit)</h2>
 			<p class="opp-subcopy">Trend deltas from the last saved dataset snapshot on this browser.</p>
 			<ul id="opp-delta-list" class="opp-insights-list"></ul>
@@ -1234,7 +1247,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-table-head">
-			<h2 class="opp-subtitle">Opportunity Table</h2>
+			<h2 id="opp-table-title" class="opp-subtitle">Opportunity Table</h2>
 			<span id="opp-table-count" class="opp-subcopy" aria-live="polite">0 rows</span>
 		</div>
 		<div class="opp-table-controls">
@@ -1372,13 +1385,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<span><strong>Type:</strong> <span id="opp-modal-type">—</span></span>
 				<span><strong>Due:</strong> <span id="opp-modal-due">—</span></span>
 				<span><strong>Intel:</strong> <span id="opp-modal-intel">—</span></span>
-				<span><strong>Awards:</strong> <span id="opp-modal-awards">—</span></span>
-				<span><strong>USAspending:</strong> <span id="opp-modal-usaspending">—</span></span>
-				<span><strong>Corroboration:</strong> <span id="opp-modal-corroboration">—</span></span>
-				<span><strong>Confidence:</strong> <span id="opp-modal-confidence">—</span></span>
+				<span id="opp-modal-meta-awards"><strong>Awards:</strong> <span id="opp-modal-awards">—</span></span>
+				<span id="opp-modal-meta-usasp"><strong>USAspending:</strong> <span id="opp-modal-usaspending">—</span></span>
+				<span id="opp-modal-meta-corrob"><strong>Corroboration:</strong> <span id="opp-modal-corroboration">—</span></span>
+				<span id="opp-modal-meta-confidence"><strong>Confidence:</strong> <span id="opp-modal-confidence">—</span></span>
 			</div>
 			<div class="opp-modal-links">
-				<a id="opp-modal-link" href="#" target="_blank" rel="noreferrer" hidden>Open SAM notice ↗</a>
+				<a id="opp-modal-link" href="#" target="_blank" rel="noreferrer" hidden>Open source notice ↗</a>
 				<a id="opp-modal-detail-link" href="#" target="_blank" rel="noreferrer" hidden>Open detail endpoint ↗</a>
 				<a id="opp-modal-event-link" href="#" hidden>Back to source event ↗</a>
 			</div>
@@ -1390,17 +1403,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<div>
 					<p class="opp-modal-section-title">Attachments / resource links</p>
 					<ul id="opp-modal-files" class="opp-modal-files"></ul>
-					<p class="opp-modal-section-title mt-3">Mapped events</p>
+					<p id="opp-modal-section-events-title" class="opp-modal-section-title mt-3">Mapped events</p>
 					<ul id="opp-modal-events" class="opp-modal-events"></ul>
-					<p class="opp-modal-section-title mt-3">Government POCs</p>
+					<p id="opp-modal-section-govpoc-title" class="opp-modal-section-title mt-3">Government POCs</p>
 					<ul id="opp-modal-gov-pocs" class="opp-modal-events"></ul>
-					<p class="opp-modal-section-title mt-3">Event drilldown</p>
+					<p id="opp-modal-section-eventdrill-title" class="opp-modal-section-title mt-3">Event drilldown</p>
 					<div id="opp-modal-event-detail" class="opp-modal-event-detail">
 						Select a mapped event to inspect the event context without leaving this view.
 					</div>
-					<p class="opp-modal-section-title mt-3">USAspending corroboration</p>
+					<p id="opp-modal-section-usasp-title" class="opp-modal-section-title mt-3">USAspending corroboration</p>
 					<ul id="opp-modal-usaspending-list" class="opp-modal-events"></ul>
-					<p class="opp-modal-section-title mt-3">Evidence provenance</p>
+					<p id="opp-modal-section-provenance-title" class="opp-modal-section-title mt-3">Evidence provenance</p>
 					<ul id="opp-modal-provenance" class="opp-modal-events"></ul>
 				</div>
 			</div>
@@ -1480,6 +1493,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						sizeBytes: null,
 					}));
 				return {
+					sourceType: 'sbir',
+					sbirProgram: program,
+					sbirStatus: status || 'Unknown',
+					sbirQuestionCount: questions.length,
+					sbirTechnologyAreas: technologyAreas,
+					sbirFocusAreas: focusAreas,
+					sbirKeywords: keywords,
 					key: `sbir:${topicId || topicCode}`,
 					noticeId: topicCode || topicId,
 					title: `${topicCode ? `${topicCode} — ` : ''}${title}`,
@@ -1553,6 +1573,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 			const el = {
 				search: document.getElementById('opp-filter-search'),
+				labelType: document.getElementById('opp-label-type'),
+				labelBranch: document.getElementById('opp-label-branch'),
+				labelClient: document.getElementById('opp-label-client'),
+				labelWork: document.getElementById('opp-label-work'),
 				source: document.getElementById('opp-filter-source'),
 				sourceLinkSam: document.getElementById('opp-source-link-sam'),
 				sourceLinkSbir: document.getElementById('opp-source-link-sbir'),
@@ -1574,6 +1598,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				chartFilterStatus: document.getElementById('opp-chart-filter-status'),
 				statusRow: document.getElementById('opp-status-row'),
 				total: document.getElementById('opp-kpi-total'),
+				sbirTopicsKpi: document.getElementById('opp-kpi-sbir-topics'),
+				sbirOpenKpi: document.getElementById('opp-kpi-sbir-open'),
+				sbirWithQaKpi: document.getElementById('opp-kpi-sbir-withqa'),
+				sbirTotalQaKpi: document.getElementById('opp-kpi-sbir-totalqa'),
+				sbirComponentsKpi: document.getElementById('opp-kpi-sbir-components'),
+				sbirProgramsKpi: document.getElementById('opp-kpi-sbir-programs'),
+				sbirTechAreasKpi: document.getElementById('opp-kpi-sbir-techareas'),
+				sbirFocusAreasKpi: document.getElementById('opp-kpi-sbir-focusareas'),
 				displayed: document.getElementById('opp-kpi-displayed'),
 				gems: document.getElementById('opp-kpi-gems'),
 				deep: document.getElementById('opp-kpi-deep'),
@@ -1588,9 +1620,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				fallbackKpi: document.getElementById('opp-kpi-fallback'),
 				freshKpi: document.getElementById('opp-kpi-fresh'),
 				fpdsKpi: document.getElementById('opp-kpi-fpds'),
+				tableTitle: document.getElementById('opp-table-title'),
 				count: document.getElementById('opp-table-count'),
 				body: document.getElementById('opp-table-body'),
 				tableWrap: document.getElementById('opp-table-wrap'),
+				tableHead: document.querySelector('#opp-table-wrap thead'),
 				pageSize: document.getElementById('opp-table-page-size'),
 				tableDensity: document.getElementById('opp-table-density'),
 				pageLabel: document.getElementById('opp-table-page'),
@@ -1627,19 +1661,28 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				modalDue: document.getElementById('opp-modal-due'),
 				modalIntel: document.getElementById('opp-modal-intel'),
 				modalAwards: document.getElementById('opp-modal-awards'),
+				modalMetaAwards: document.getElementById('opp-modal-meta-awards'),
 				modalUsaspending: document.getElementById('opp-modal-usaspending'),
+				modalMetaUsasp: document.getElementById('opp-modal-meta-usasp'),
 				modalCorroboration: document.getElementById('opp-modal-corroboration'),
+				modalMetaCorrob: document.getElementById('opp-modal-meta-corrob'),
 				modalConfidence: document.getElementById('opp-modal-confidence'),
+				modalMetaConfidence: document.getElementById('opp-modal-meta-confidence'),
 				modalLink: document.getElementById('opp-modal-link'),
 				modalDetailLink: document.getElementById('opp-modal-detail-link'),
 				modalEventLink: document.getElementById('opp-modal-event-link'),
 				modalDetail: document.getElementById('opp-modal-detail'),
 				modalFiles: document.getElementById('opp-modal-files'),
 				modalEvents: document.getElementById('opp-modal-events'),
+				modalEventsTitle: document.getElementById('opp-modal-section-events-title'),
 				modalGovPocs: document.getElementById('opp-modal-gov-pocs'),
+				modalGovPocsTitle: document.getElementById('opp-modal-section-govpoc-title'),
 				modalEventDetail: document.getElementById('opp-modal-event-detail'),
+				modalEventDrillTitle: document.getElementById('opp-modal-section-eventdrill-title'),
 				modalUsaspendingList: document.getElementById('opp-modal-usaspending-list'),
+				modalUsaspTitle: document.getElementById('opp-modal-section-usasp-title'),
 				modalProvenance: document.getElementById('opp-modal-provenance'),
+				modalProvenanceTitle: document.getElementById('opp-modal-section-provenance-title'),
 			};
 
 			const charts = {
@@ -2039,6 +2082,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 
 				return {
 					...row,
+					sourceType: String(row.sourceType || 'sam'),
+					sbirProgram: String(row.sbirProgram || row.noticeType || '').trim() || null,
+					sbirStatus: String(row.sbirStatus || '').trim() || null,
+					sbirQuestionCount: Number(row.sbirQuestionCount ?? 0),
+					sbirTechnologyAreas: Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas : [],
+					sbirFocusAreas: Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas : [],
+					sbirKeywords: String(row.sbirKeywords || '').trim(),
 					dueDays,
 					postedEpoch,
 					dueEpoch,
@@ -2231,6 +2281,28 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				state.sort = el.sort?.value || 'gem';
 				state.focusOnly = Boolean(el.focus?.checked);
 				state.fastMode = Boolean(el.fastMode?.checked);
+				if (state.source === 'sbir') {
+					state.due = 'all';
+					state.minWeight = 0;
+					state.confidence = 'all';
+					state.thirdParty = 'all';
+					state.fpds = 'all';
+					state.decision = 'all';
+					state.focusOnly = false;
+					state.fastMode = false;
+					if (
+						state.sort === 'gem' ||
+						state.sort === 'due' ||
+						state.sort === 'awards' ||
+						state.sort === 'corroboration' ||
+						state.sort === 'confidence' ||
+						state.sort === 'response' ||
+						state.sort === 'event'
+					) {
+						state.sort = 'title';
+						if (el.sort) el.sort.value = 'title';
+					}
+				}
 				tableState.mode = el.tableDensity?.value === 'full' ? 'full' : 'compact';
 			};
 
@@ -2329,7 +2401,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						if (state.search && !row.searchBlob.includes(state.search)) return false;
 						if (state.type !== 'all' && row.noticeType !== state.type) return false;
 						if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
-						if (state.client !== 'all' && row.clientLabel !== state.client) return false;
+						if (state.client !== 'all' && (state.source === 'sbir' ? (row.sbirStatus || 'Unknown') : row.clientLabel) !== state.client)
+							return false;
 						if (state.work !== 'all' && !(row.workTypes || []).includes(state.work)) return false;
 						if (state.naicsFilter && String(row.naicsCode || '') !== String(state.naicsFilter || '')) return false;
 						if (!inDueWindow(row)) return false;
@@ -2374,6 +2447,21 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					if (state.source === 'sbir') el.statusRow.setAttribute('hidden', '');
 					else el.statusRow.removeAttribute('hidden');
 				}
+				for (const node of document.querySelectorAll('[data-source-only]')) {
+					const only = String(node.getAttribute('data-source-only') || '').trim();
+					if (!only) continue;
+					if (only === state.source) node.removeAttribute('hidden');
+					else node.setAttribute('hidden', '');
+				}
+				if (el.tableWrap) {
+					el.tableWrap.classList.toggle('opp-table-source-sbir', state.source === 'sbir');
+					el.tableWrap.classList.toggle('opp-table-source-sam', state.source !== 'sbir');
+				}
+				if (el.labelType) el.labelType.textContent = state.source === 'sbir' ? 'Program' : 'Notice type';
+				if (el.labelBranch) el.labelBranch.textContent = state.source === 'sbir' ? 'Component' : 'Branch';
+				if (el.labelClient) el.labelClient.textContent = state.source === 'sbir' ? 'Topic status' : 'Who (client)';
+				if (el.labelWork) el.labelWork.textContent = state.source === 'sbir' ? 'Capability lane' : 'What (work type)';
+				if (el.tableTitle) el.tableTitle.textContent = state.source === 'sbir' ? 'SBIR/STTR Topic Table' : 'Opportunity Table';
 				if (el.sourceLinkSam) el.sourceLinkSam.classList.toggle('ui-link-btn-active', state.source === 'sam');
 				if (el.sourceLinkSbir) el.sourceLinkSbir.classList.toggle('ui-link-btn-active', state.source === 'sbir');
 			};
@@ -2382,7 +2470,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				resetSelect(el.type, 'All');
 				resetSelect(el.branch, 'All');
 				resetSelect(el.client, 'All');
-				const typeCounts = countBy(rows, (row) => row.noticeType || 'Unknown');
+				const typeCounts = countBy(rows, (row) =>
+					state.source === 'sbir' ? row.sbirProgram || row.noticeType || 'Unknown' : row.noticeType || 'Unknown',
+				);
 				for (const [label, count] of typeCounts.slice(0, 80)) {
 					const option = document.createElement('option');
 					option.value = label;
@@ -2396,7 +2486,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					option.textContent = `${label} (${count})`;
 					el.branch?.appendChild(option);
 				}
-				const clientCounts = countBy(rows, (row) => row.clientLabel);
+				const clientCounts = countBy(rows, (row) =>
+					state.source === 'sbir' ? row.sbirStatus || 'Unknown' : row.clientLabel,
+				);
 				for (const [label, count] of clientCounts.slice(0, 80)) {
 					const option = document.createElement('option');
 					option.value = label;
@@ -2509,7 +2601,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 				}
 
-				const byType = countBy(items, (r) => r.noticeType);
+				const byType = countBy(items, (r) => (state.source === 'sbir' ? r.sbirProgram || r.noticeType : r.noticeType));
 				const typesChart = initChart('types', el.types);
 				if (typesChart) {
 					const labels = byType.slice(0, 10).map(([label]) => label);
@@ -2551,7 +2643,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 				}
 
-				const byClient = countBy(items, (r) => r.clientLabel).slice(0, 12);
+				const byClient = countBy(items, (r) => (state.source === 'sbir' ? r.sbirStatus || 'Unknown' : r.clientLabel)).slice(0, 12);
 				const agencyChart = initChart('agencies', el.agencies);
 				if (agencyChart) {
 					agencyChart.setOption({
@@ -3210,6 +3302,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				}
 
 				if (el.modalLink) {
+					el.modalLink.textContent = state.source === 'sbir' ? 'Open SBIR topic ↗' : 'Open SAM notice ↗';
 					if (row.uiLink) {
 						el.modalLink.removeAttribute('hidden');
 						el.modalLink.setAttribute('href', row.uiLink);
@@ -3228,13 +3321,34 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					}
 				}
 				if (el.modalEventLink) {
-					if (incomingContext.from === 'events' && incomingContext.eventId) {
+					if (state.source === 'sam' && incomingContext.from === 'events' && incomingContext.eventId) {
 						el.modalEventLink.removeAttribute('hidden');
 						el.modalEventLink.setAttribute('href', `/events/#${encodeURIComponent(incomingContext.eventId)}`);
 					} else {
 						el.modalEventLink.setAttribute('hidden', '');
 						el.modalEventLink.setAttribute('href', '#');
 					}
+				}
+				const samModalNodes = [
+					el.modalMetaAwards,
+					el.modalMetaUsasp,
+					el.modalMetaCorrob,
+					el.modalMetaConfidence,
+					el.modalEventsTitle,
+					el.modalEvents,
+					el.modalGovPocsTitle,
+					el.modalGovPocs,
+					el.modalEventDrillTitle,
+					el.modalEventDetail,
+					el.modalUsaspTitle,
+					el.modalUsaspendingList,
+					el.modalProvenanceTitle,
+					el.modalProvenance,
+				];
+				for (const node of samModalNodes) {
+					if (!node) continue;
+					if (state.source === 'sam') node.removeAttribute('hidden');
+					else node.setAttribute('hidden', '');
 				}
 
 				if (el.modalDetail) {
@@ -3641,6 +3755,76 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					return;
 				}
 
+				if (state.source === 'sbir') {
+					el.body.innerHTML = items
+						.map((row, idx) => {
+							const status = String(row.sbirStatus || row.noticeType || 'Unknown');
+							const program = String(row.sbirProgram || row.noticeType || 'SBIR/STTR');
+							const qaCount = Number(row.sbirQuestionCount ?? row.usaspendingMatchCount ?? 0);
+							const tech = Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas.slice(0, 4) : [];
+							const focus = Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas.slice(0, 4) : [];
+							const tags = [
+								`<span class="opp-pill">${escapeHtml(row.branches?.[0] || 'Component unknown')}</span>`,
+								`<span class="opp-pill">${escapeHtml(program)}</span>`,
+								`<span class="opp-pill">${escapeHtml(status)}</span>`,
+								`<span class="opp-pill">Q&A ${qaCount}</span>`,
+							].join('');
+							const techLine = tech.length ? `<div class="opp-sbir-line"><strong>Tech:</strong> ${escapeHtml(tech.join(', '))}</div>` : '';
+							const focusLine = focus.length ? `<div class="opp-sbir-line"><strong>Focus:</strong> ${escapeHtml(focus.join(', '))}</div>` : '';
+							const kw = String(row.sbirKeywords || '').trim();
+							const kwLine = kw ? `<div class="opp-sbir-line"><strong>Keywords:</strong> ${escapeHtml(kw)}</div>` : '';
+							const title = row.uiLink
+								? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
+								: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
+							return `<tr class="opp-sbir-row"><td colspan="20"><div class="opp-sbir-card"><div class="opp-sbir-head"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button>${title}</div><div class="opp-pill-wrap">${tags}</div>${techLine}${focusLine}${kwLine}</div></td></tr>`;
+						})
+						.join('');
+					for (const button of el.body.querySelectorAll('.opp-intel-open')) {
+						button.addEventListener('click', () => {
+							const idx = Number(button.getAttribute('data-row-idx') || -1);
+							if (idx < 0 || idx >= items.length) return;
+							openIntelModal(items[idx], button);
+						});
+					}
+					return;
+				}
+				if (state.source === 'sbir') {
+					el.body.innerHTML = items
+						.map((row, idx) => {
+							const qaCount = Number(row.sbirQuestionCount || 0);
+							const tech = Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas : [];
+							const focus = Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas : [];
+							const tags = [
+								row.clientLabel ? `<span class="opp-pill">${escapeHtml(String(row.clientLabel))}</span>` : '',
+								row.sbirProgram ? `<span class="opp-pill">${escapeHtml(String(row.sbirProgram))}</span>` : '',
+								row.sbirStatus ? `<span class="opp-pill">${escapeHtml(String(row.sbirStatus))}</span>` : '',
+								`<span class="opp-pill">Q&A ${qaCount}</span>`,
+							]
+								.filter(Boolean)
+								.join('');
+							const meta = [
+								tech.length ? `Tech: ${escapeHtml(tech.slice(0, 5).join(', '))}` : '',
+								focus.length ? `Focus: ${escapeHtml(focus.slice(0, 5).join(', '))}` : '',
+								row.sbirKeywords ? `Keywords: ${escapeHtml(String(row.sbirKeywords).slice(0, 220))}` : '',
+							]
+								.filter(Boolean)
+								.join(' · ');
+							const title = row.uiLink
+								? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
+								: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
+							return `<tr class="opp-sbir-row"><td colspan="20" data-col="sbir-card"><div class="opp-sbir-card"><div class="opp-sbir-card-head"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button><div>${title}<div class="opp-pill-wrap">${tags}</div></div></div><p class="opp-sbir-meta">${meta || 'No additional SBIR topic metadata captured.'}</p></div></td></tr>`;
+						})
+						.join('');
+					for (const button of el.body.querySelectorAll('.opp-intel-open')) {
+						button.addEventListener('click', () => {
+							const idx = Number(button.getAttribute('data-row-idx') || -1);
+							if (idx < 0 || idx >= items.length) return;
+							openIntelModal(items[idx], button);
+						});
+					}
+					return;
+				}
+
 				const metric = (value) => (Number(value || 0) > 0 ? String(Math.round(Number(value || 0))) : '·');
 				el.body.innerHTML = items
 					.map((row, idx) => {
@@ -3817,7 +4001,25 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.fallbackKpi) el.fallbackKpi.textContent = String(fallbackCount);
 				if (el.freshKpi) el.freshKpi.textContent = String(freshCount);
 				if (el.fpdsKpi) el.fpdsKpi.textContent = String(fpdsCount);
-				if (el.count) el.count.textContent = `${totalRows.toLocaleString()} row${totalRows === 1 ? '' : 's'}`;
+				if (state.source === 'sbir') {
+					const openCount = filtered.filter((row) => String(row.sbirStatus || '').toLowerCase().includes('open')).length;
+					const withQaCount = filtered.filter((row) => Number(row.sbirQuestionCount || 0) > 0).length;
+					const totalQa = filtered.reduce((acc, row) => acc + Number(row.sbirQuestionCount || 0), 0);
+					const componentCount = new Set(filtered.map((row) => String(row.branches?.[0] || '').trim()).filter(Boolean)).size;
+					const programCount = new Set(filtered.map((row) => String(row.sbirProgram || '').trim()).filter(Boolean)).size;
+					const techAreas = filtered.reduce((acc, row) => acc + (Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas.length : 0), 0);
+					const focusAreas = filtered.reduce((acc, row) => acc + (Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas.length : 0), 0);
+					if (el.sbirTopicsKpi) el.sbirTopicsKpi.textContent = String(filtered.length);
+					if (el.sbirOpenKpi) el.sbirOpenKpi.textContent = String(openCount);
+					if (el.sbirWithQaKpi) el.sbirWithQaKpi.textContent = String(withQaCount);
+					if (el.sbirTotalQaKpi) el.sbirTotalQaKpi.textContent = String(totalQa);
+					if (el.sbirComponentsKpi) el.sbirComponentsKpi.textContent = String(componentCount);
+					if (el.sbirProgramsKpi) el.sbirProgramsKpi.textContent = String(programCount);
+					if (el.sbirTechAreasKpi) el.sbirTechAreasKpi.textContent = String(techAreas);
+					if (el.sbirFocusAreasKpi) el.sbirFocusAreasKpi.textContent = String(focusAreas);
+				}
+				if (el.count)
+					el.count.textContent = `${totalRows.toLocaleString()} ${state.source === 'sbir' ? 'topic' : 'row'}${totalRows === 1 ? '' : 's'}`;
 				if (el.pageLabel) el.pageLabel.textContent = `Page ${tableState.page} / ${totalPages}`;
 				if (el.pageFirst) el.pageFirst.disabled = tableState.page <= 1;
 				if (el.pagePrev) el.pagePrev.disabled = tableState.page <= 1;
@@ -3825,14 +4027,19 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.pageLast) el.pageLast.disabled = tableState.page >= totalPages;
 				if (el.chartFilterStatus) {
 					const chips = [];
-					if (state.client !== 'all') chips.push(`Who: ${state.client}`);
+					if (state.client !== 'all') chips.push(state.source === 'sbir' ? `Status: ${state.client}` : `Who: ${state.client}`);
 					if (state.work !== 'all') chips.push(`What: ${workTypeLabel[state.work] || state.work}`);
-					if (state.confidence !== 'all') chips.push(`Confidence: ${state.confidence}`);
-					if (state.thirdParty !== 'all') chips.push(`3P: ${state.thirdParty}`);
-					if (state.fpds !== 'all') chips.push(`FPDS: ${state.fpds}`);
-					if (state.decision !== 'all') chips.push(`Decision: ${state.decision}`);
-					if (state.fastMode) chips.push('Fast mode: on');
-					if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
+					if (state.source === 'sam') {
+						if (state.confidence !== 'all') chips.push(`Confidence: ${state.confidence}`);
+						if (state.thirdParty !== 'all') chips.push(`3P: ${state.thirdParty}`);
+						if (state.fpds !== 'all') chips.push(`FPDS: ${state.fpds}`);
+						if (state.decision !== 'all') chips.push(`Decision: ${state.decision}`);
+						if (state.fastMode) chips.push('Fast mode: on');
+						if (state.naicsFilter) chips.push(`NAICS: ${state.naicsFilter}`);
+					} else {
+						if (state.type !== 'all') chips.push(`Program: ${state.type}`);
+						if (state.branch !== 'all') chips.push(`Component: ${state.branch}`);
+					}
 					el.chartFilterStatus.textContent = chips.length ? chips.join(' · ') : '';
 				}
 
@@ -4521,6 +4728,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	.opp-table-wrap.opp-table-mode-compact .opp-table {
 		min-width: 96rem;
 	}
+	.opp-table-wrap.opp-table-source-sbir .opp-table {
+		min-width: 100%;
+		table-layout: auto;
+	}
+	.opp-table-wrap.opp-table-source-sbir thead,
+	.opp-table-wrap.opp-table-source-sbir colgroup {
+		display: none;
+	}
 	.opp-col-gem {
 		width: 3.4rem;
 	}
@@ -4667,6 +4882,33 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-table td {
 		color: rgba(203, 213, 225, 0.96);
+	}
+	.opp-table-wrap.opp-table-source-sbir .opp-table {
+		min-width: 0;
+	}
+	.opp-table-wrap.opp-table-source-sbir thead,
+	.opp-table-wrap.opp-table-source-sbir colgroup {
+		display: none;
+	}
+	.opp-sbir-row td {
+		padding: 0.45rem 0.2rem;
+	}
+	.opp-sbir-card {
+		display: grid;
+		gap: 0.45rem;
+		border: 1px solid rgba(148, 163, 184, 0.35);
+		border-radius: 10px;
+		padding: 0.65rem;
+		background: rgba(15, 23, 42, 0.42);
+	}
+	.opp-sbir-head {
+		display: flex;
+		align-items: center;
+		gap: 0.55rem;
+	}
+	.opp-sbir-line {
+		font-size: 0.76rem;
+		color: rgba(148, 163, 184, 0.95);
 	}
 	.opp-cell-truncate {
 		white-space: nowrap;
@@ -4902,6 +5144,26 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-empty-reset:hover {
 		background: rgba(30, 41, 59, 0.9);
+	}
+	.opp-sbir-row td {
+		border-top: 1px solid rgba(51, 65, 85, 0.55);
+		padding: 0.8rem;
+	}
+	.opp-sbir-card {
+		display: grid;
+		gap: 0.55rem;
+	}
+	.opp-sbir-card-head {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 0.7rem;
+		align-items: start;
+	}
+	.opp-sbir-meta {
+		margin: 0;
+		font-size: 0.78rem;
+		line-height: 1.45;
+		color: rgba(226, 232, 240, 0.88);
 	}
 	.opp-intel-open {
 		height: 1.45rem;
