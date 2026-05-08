@@ -1,0 +1,70 @@
+{
+  "id": "sam-654bd6448f86429d84406bc420f25e32",
+  "title": "Industry Day - Program Depot Management (PDM)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=654bd6448f86429d84406bc420f25e32",
+  "opportunity_url": "https://sam.gov/opp/654bd6448f86429d84406bc420f25e32/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/654bd6448f86429d84406bc420f25e32/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "654bd6448f86429d84406bc420f25e32",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": "FA8575",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FIGHTER AND ADVANCED AIRCRAFT.FA8575  AFLCMC WAQKA",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=654bd6448f86429d84406bc420f25e32",
+  "detail_text": "The AFLCMC/WAK Program Depot Maintenance (PDM) office is hosting a virtual industry day on Tuesday, May 26, 2026, via Microsoft Teams to discuss F-15 aircraft maintenance strategies. Event Details & Focus Areas Format: Private 45-minute virtual sessions. Purpose: To engage with industry vendors on Program Depot Maintenance (PDM) and related inspections, particularly concerning F-15SA conversion jets. Capabilities Sought: Nondestructive inspections (on/off aircraft), asset installation, and Government Furnished Property (GFP) management (including calibration and serviceability). The event aims to gather input on maintenance, modification, functional testing, and delivery of F-15 aircraft, as detailed in the Draft Performance Work Statement referenced in Sources Sought FA8575_F15_PDM - Program Depot Management (PDM). Action Required: Please RSVP to chantel.cummings@us.af.mil no later than 12:00 PM on 5/21/2026 . Please review the attached instructions to select your time slot.",
+  "detail_text_length": 990,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2831a5d7bc3c481faecd2d82dd07c673/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0077a54caf1448f8d16842295afbe19/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d63b92167ef84208bb468767b22b059e/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2831a5d7bc3c481faecd2d82dd07c673/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bea37060f555e1c9e3f88063d3bac113080835e8f4a6c4da131b3250138e63ee.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bea37060f555e1c9e3f88063d3bac113080835e8f4a6c4da131b3250138e63ee.pdf",
+      "file_id": "2831a5d7bc3c481faecd2d82dd07c673",
+      "file_name": "Industry+Day+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 141314,
+      "sha256": "bea37060f555e1c9e3f88063d3bac113080835e8f4a6c4da131b3250138e63ee"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b0077a54caf1448f8d16842295afbe19/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f656c8676ae5e331a1bd07b5da718fb0be5c3190d03e970e227a3ceaa530ef15.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f656c8676ae5e331a1bd07b5da718fb0be5c3190d03e970e227a3ceaa530ef15.pdf",
+      "file_id": "b0077a54caf1448f8d16842295afbe19",
+      "file_name": "PDM+PWS_DRAFT_April2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 285120,
+      "sha256": "f656c8676ae5e331a1bd07b5da718fb0be5c3190d03e970e227a3ceaa530ef15"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d63b92167ef84208bb468767b22b059e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/658953045f21fc3b36ba20ef1df979ef94ea1311d6b4f3d24b285333c9b821df.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/658953045f21fc3b36ba20ef1df979ef94ea1311d6b4f3d24b285333c9b821df.xlsx",
+      "file_id": "d63b92167ef84208bb468767b22b059e",
+      "file_name": "Industry+Day+sign+up+sheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 33690,
+      "sha256": "658953045f21fc3b36ba20ef1df979ef94ea1311d6b4f3d24b285333c9b821df"
+    }
+  ],
+  "_mirror_hash": "ed97839233c58af885f19aae1342aa369c57bf94f622932fcb1985bd4ca1abde",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.678345+00:00"
+}

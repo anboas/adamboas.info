@@ -1,0 +1,46 @@
+{
+  "id": "sam-edd64955ff974a449bdb1cc6d0fdbce1",
+  "title": "POLARIS Militarized RZR (MRZR) - Alpha 4 XPs.",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edd64955ff974a449bdb1cc6d0fdbce1",
+  "opportunity_url": "https://sam.gov/opp/edd64955ff974a449bdb1cc6d0fdbce1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/edd64955ff974a449bdb1cc6d0fdbce1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "edd64955ff974a449bdb1cc6d0fdbce1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "MRZRAlph4",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4484  87 CONS PK",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=edd64955ff974a449bdb1cc6d0fdbce1",
+  "detail_text": "The contractor shall be responsible for the sell and delivery of 12 MRZR Alpha 4’s accompanied with accessories as identified in the attached SOW. This posting is not for quotes, it is for market research purposes and capabilities only.",
+  "detail_text_length": 236,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/801009c320bc41ba819e5b47196fcfa0/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/801009c320bc41ba819e5b47196fcfa0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4e5fa0cd8d44ae581e55b30caf84fd300dd431c300ebdd9103c435293b48feae.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4e5fa0cd8d44ae581e55b30caf84fd300dd431c300ebdd9103c435293b48feae.docx",
+      "file_id": "801009c320bc41ba819e5b47196fcfa0",
+      "file_name": "MRZR+Statement+of+Work..docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18399,
+      "sha256": "4e5fa0cd8d44ae581e55b30caf84fd300dd431c300ebdd9103c435293b48feae"
+    }
+  ],
+  "_mirror_hash": "a758b67c03e92a402240b675bb5ab96a02134ccafcb7730fe5bac158c1bb9e51",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.873877+00:00"
+}

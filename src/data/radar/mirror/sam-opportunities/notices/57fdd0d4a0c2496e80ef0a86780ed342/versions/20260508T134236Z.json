@@ -1,0 +1,46 @@
+{
+  "id": "sam-57fdd0d4a0c2496e80ef0a86780ed342",
+  "title": "Clinical Assessment Testing Materials",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57fdd0d4a0c2496e80ef0a86780ed342",
+  "opportunity_url": "https://sam.gov/opp/57fdd0d4a0c2496e80ef0a86780ed342/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/57fdd0d4a0c2496e80ef0a86780ed342/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "57fdd0d4a0c2496e80ef0a86780ed342",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "HT001426PAR",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=57fdd0d4a0c2496e80ef0a86780ed342",
+  "detail_text": "The Defense Health Agency (DHA), Healthcare Contracting Division – Northeast (HCD-NE), Walter Reed National Military Medical Center, Directorate of Mental Health, intends to award a firm fixed price contract on a sole source basis to Psychological Assessment Resources Inc (Cage: 8S525). The anticipated award will be made under the statutory authority permitting Other than Full and Open Competition pursuant to FAR 6.302-1 “Only one responsible source and no other supplies or services will satisfy agency requirements”. The contract is intended to procure Clinical Psychological Assessments exclusively published by Psychological Assessment Resources Inc (Cage: 8S525). This notice of intent is NOT a request for competitive proposals or quotations. Requests for copies of a solicitation in response to this notice will not be honored or acknowledged. Phone calls will not be accepted. A determination by the Government to not compete this proposed action based upon response to this notice is solely within the discretion of the Government. Information received will be considered solely for the purpose of determining whether conducting a competitive procurement is in the best interest of the Government. Interested parties may identify their interest and capabilities by responding to this notice no later than 5pm on May 18, 2026 by email to claudia.a.febresmormontoy.ctr@health.mil. All information submitted should support the offeror’s capability to provide the training required and shall be furnished at no cost or obligation to the Government.",
+  "detail_text_length": 1557,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b57ba795e8d7498fa422f728266486e1/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b57ba795e8d7498fa422f728266486e1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/84dfd5cb02b29a0cb92d1c3d417bce91cf7da771ee185f2b4748f35cf9f090cd.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/84dfd5cb02b29a0cb92d1c3d417bce91cf7da771ee185f2b4748f35cf9f090cd.docx",
+      "file_id": "b57ba795e8d7498fa422f728266486e1",
+      "file_name": "Psychological+assessments+list.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 16784,
+      "sha256": "84dfd5cb02b29a0cb92d1c3d417bce91cf7da771ee185f2b4748f35cf9f090cd"
+    }
+  ],
+  "_mirror_hash": "c5b5c6fefba561327369a5fe9eb06ba9b445cfd0bf6e635a3f99e69ebe4a96be",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.870835+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-c918b364514949e4a35a566ccfa5f871",
+  "title": "National Quality Forum Membership",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c918b364514949e4a35a566ccfa5f871",
+  "opportunity_url": "https://sam.gov/opp/c918b364514949e4a35a566ccfa5f871/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/c918b364514949e4a35a566ccfa5f871/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "c918b364514949e4a35a566ccfa5f871",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "HT001126QE017",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).DEFENSE HEALTH AGENCY",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=c918b364514949e4a35a566ccfa5f871",
+  "detail_text": "DHA seeks to award a sole source contract with National Quality Forum (NQF) to provide access to membership which provides for endorsement of standards for performance measurement and providing a framework for evaluating healthcare practices as part of a consensus-based entity that convenes diverse stakeholders to develop and endorse measures widely accepted across the healthcare industry and aligned with national priorities that enhance the health and readiness of service members and their families while ensuring the readiness of military forces. NQF is the only nationally recognized consensus-based healthcare organization as defined by the Office of Management and Budget (OMB). This unique status allows the federal government to rely on NQF-defined measures or healthcare practices as the best, evidence-based approaches to improving care. The federal government, states, and private-sector organizations use NQF’s endorsed measures, which must meet rigorous criteria, to evaluate performance and share information with patients and their families. (SEE ATTACHMENT FOR DETAILS)",
+  "detail_text_length": 1089,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef303857a60848a28f3852c512a8794b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef303857a60848a28f3852c512a8794b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0c74d7fc23048d24f0e7fee79abdd792d4f120848ee870e3c535b28c0ef51e78.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0c74d7fc23048d24f0e7fee79abdd792d4f120848ee870e3c535b28c0ef51e78.pdf",
+      "file_id": "ef303857a60848a28f3852c512a8794b",
+      "file_name": "NOI+Information.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 51447,
+      "sha256": "0c74d7fc23048d24f0e7fee79abdd792d4f120848ee870e3c535b28c0ef51e78"
+    }
+  ],
+  "_mirror_hash": "c7b4794bb4f7d7d421d7c163dbc469d403be0344cd2f56992998ffa14e46ab0e",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.917859+00:00"
+}

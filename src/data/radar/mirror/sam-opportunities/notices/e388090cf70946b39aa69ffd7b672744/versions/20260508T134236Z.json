@@ -1,0 +1,56 @@
+{
+  "id": "sam-e388090cf70946b39aa69ffd7b672744",
+  "title": "ACTUATOR,HYDRAULIC-",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e388090cf70946b39aa69ffd7b672744",
+  "opportunity_url": "https://sam.gov/opp/e388090cf70946b39aa69ffd7b672744/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e388090cf70946b39aa69ffd7b672744/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e388090cf70946b39aa69ffd7b672744",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N00104-26-Q-LB60",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS MECHANICSBURG.NAVSUP WEAPON SYSTEMS SUPPORT MECH",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-10-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e388090cf70946b39aa69ffd7b672744",
+  "detail_text": "CONTACT INFORMATION|4|N713.23|GHC|(771)229-0566|cody.s.smith26.civ@us.navy.mil|ITEM UNIQUE IDENTIFICATION AND VALUATION (JAN 2023)|19|||||||||||||||||||| INSPECTION OF SUPPLIES--FIXED-PRICE (AUG 1996)|2|||WIDE AREA WORKFLOW PAYMENT INSTRUCTIONS (JAN 2023)|16|COMBO INVOICE & RECEIVING||TBD|N00104|TBD|TBD|SEE SCHEDULE|TBD|||TBD|||||| NAVY USE OF ABILITYONE SUPPORT CONTRACTOR - RELEASE OF OFFEROR INFORMATION (3-18))|1|WSS| MANDATORY USE OF WORKFLOW PRO (WFP) MOD ASSIST MODULE|1|| BUY AMERICAN-FREE TRADE AGREEMENTS-BALANCE OF PAYMENTS PROGRAM-BASIC (FEB 2024)|11|||||||||||| NOTICE OF CYBERSECURITY MATURITY MODEL CERTIFICATION LEVEL REQUIREMENTS (NOV 2025))|1|| SMALL BUSINESS SUBCONTRACTING PLAN (DOD CONTRACTS)-BASIC (DEV 2026-O0037)(FEB 2026))|2||| CONTRACTOR PURCHASING SYSTEM ADMINISTRATION-BASIC (DEVIATION 2026-O0015)|1|| SECURITY PROHIBITIONS AND EXCLUSIONS (CLASS DEVIATION 2026-O0025)(FEB 2026)|7|||||||| BUY AMERICAN-FREE TRADE AGREEMENTS-BALANCE OF PAYMENTS PROGRAM CERTIFICATE-BASIC (FEB 2024))|5|||||| BUY AMERICAN-BALANCE OF PAYMENTS PROGRAM CERTIFICATE-BASIC (FEB 2024)|1|| ALTERNATE A, ANNUAL REPRESENTATIONS AND CERTIFICATIONS (DEVIATION 2026-O0043)(FEB 2026))|13|||||||||||||| NOTICE OF PRIORITY RATING FOR NATIONAL DEFENSE, EMERGENCY PERPARDENESS, AND ENRGY PROGAM USE (APRIL 2008))|2||X|",
+  "detail_text_length": 1311,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/662704cbc3664b73aead5d08ca9381d6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/727aa05c1c234492bc0bb2d6f426278d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/662704cbc3664b73aead5d08ca9381d6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f0e0689db00319c79ac584e63ae33539fd454fcebafb5e1c87551dfb13eb0905.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f0e0689db00319c79ac584e63ae33539fd454fcebafb5e1c87551dfb13eb0905.pdf",
+      "file_id": "662704cbc3664b73aead5d08ca9381d6",
+      "file_name": "3.01_N0010426QLB60_25353-0075.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 659501,
+      "sha256": "f0e0689db00319c79ac584e63ae33539fd454fcebafb5e1c87551dfb13eb0905"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/727aa05c1c234492bc0bb2d6f426278d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/049214cb74d0e890dd8df00457402004099b47c8a14ad28f4235ff564849c3dd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/049214cb74d0e890dd8df00457402004099b47c8a14ad28f4235ff564849c3dd.pdf",
+      "file_id": "727aa05c1c234492bc0bb2d6f426278d",
+      "file_name": "3.03_Amendment-1-_25353-0075.PDF",
+      "content_type": "application/octet-stream",
+      "size_bytes": 262697,
+      "sha256": "049214cb74d0e890dd8df00457402004099b47c8a14ad28f4235ff564849c3dd"
+    }
+  ],
+  "_mirror_hash": "4d3eb731b4b5add3c5a3402043245f6549ac0f30dce0b25b60ab2af97b2210cc",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.740042+00:00"
+}

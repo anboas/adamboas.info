@@ -1,0 +1,46 @@
+{
+  "id": "sam-7785a18799734a0aadc0fc1b2a8d8fd2",
+  "title": "Packing, Crating, and Local Drayage",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7785a18799734a0aadc0fc1b2a8d8fd2",
+  "opportunity_url": "https://sam.gov/opp/7785a18799734a0aadc0fc1b2a8d8fd2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/7785a18799734a0aadc0fc1b2a8d8fd2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "7785a18799734a0aadc0fc1b2a8d8fd2",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA452826S0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE GLOBAL STRIKE COMMAND.FA4528  5 CONS",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=7785a18799734a0aadc0fc1b2a8d8fd2",
+  "detail_text": "This is a special notice, not a request for either a quote, proposal, or an invitation for bid. The intent of this notice is to obtain industry comments and knowledge only for the purpose of assessing the availability of qualified sources. The 5th Contracting Squadron, Minot AFB, North Dakota, is seeking a 5 year Packing, Crating, and Drayage Services contract. The NAICS code is 488991 (Packing and Crating). This procurement may be unrestricted or set aside for small businesses. Responses to this Sources Sought Notice will be used by the Government to make appropriate acquisition decisions. After review of the responses, the Government, if it chooses, may proceed with the acquisition by posting a Request for Quote on SAM.gov. It is the potential vendor’s responsibility to monitor this site for a future opportunity as they will not be notified. The work will consist of furnishing all personnel, equipment, facilities, supplies, services, and materials, except as specified as government-furnished, for the preparation of the personal property (including servicing of appliances) of Department of Defense (DoD) personnel for shipment, drayage and/or storage and related services through the Direct Procurement Method (DPM). Additionally, the contractor shall furnish all materials except Government-Owned Containers (GOC [Federal Specification PPP-B-580]), all equipment, plant and labor; and perform all work in accomplishing containerization of personal property for overseas or domestic movement or storage, including stenciling, cooperage, drayage of personal property in connection with other services, decontainerization of inbound shipments of personal property; and the handling of shipments into and out of the Contractor's facility. This notice is to assist the Government in determining potential sources only. No basis for claim against the Government shall arise as a result of a response to this notice. RESPONSES SHOULD INCLUDE: company name, address, point of contact, phone number, and email address. If there are additional questions or concerns, please contact the undersigned at 701-723-7499 or scott.stauffer@us.af.mil or Lt Raeqwon Brown at 701-723-3948 or raeqwon.brown@us.af.mil.",
+  "detail_text_length": 2214,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abaf7b420a0a4f718f07dc80dd18c5bf/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/abaf7b420a0a4f718f07dc80dd18c5bf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9c2d2f1298e4e175a09b29346c8ee3926eba7da219e7840e15d2cbb4c5d55546.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9c2d2f1298e4e175a09b29346c8ee3926eba7da219e7840e15d2cbb4c5d55546.pdf",
+      "file_id": "abaf7b420a0a4f718f07dc80dd18c5bf",
+      "file_name": "PWS+SS+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 641422,
+      "sha256": "9c2d2f1298e4e175a09b29346c8ee3926eba7da219e7840e15d2cbb4c5d55546"
+    }
+  ],
+  "_mirror_hash": "51f719164e60c913e736f0c0ee91adc6a22b73fd9fbacc51e204286a0803a7df",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.939889+00:00"
+}

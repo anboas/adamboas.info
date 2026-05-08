@@ -1,0 +1,79 @@
+{
+  "id": "sam-e74b823b12c44e14b4a34a278cd6f03f",
+  "title": "JIATF 401 Commercial Solutions Opening (CSO)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e74b823b12c44e14b4a34a278cd6f03f",
+  "opportunity_url": "https://sam.gov/opp/e74b823b12c44e14b4a34a278cd6f03f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e74b823b12c44e14b4a34a278cd6f03f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e74b823b12c44e14b4a34a278cd6f03f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "W912CH-26-S-X001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-DTA.W6QK ACC- DTA",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2029-02-26",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e74b823b12c44e14b4a34a278cd6f03f",
+  "detail_text": "Authorized under DFARS Subpart 212-70, this CSO enables the DoW and Interagency Partners to competitively procure solutions through a streamlined acquisition process, allowing for rapid award decisions. This approach underscores our mission to expedite the award and delivery of critical technologies, ensuring that JIATF 401 can leverage advancements in manufacturing swiftly and efficiently. By prioritizing speed in our contracting efforts, we aim to support the timely integration of cutting-edge technologies that enhance operational readiness. Contracts or agreements awarded under this authority will be structured as fixed-price, including fixed-price incentive fee contracts. Through this initiative, JIATF 401 reaffirms its commitment to fostering innovation and enhancing manufacturing operations, ultimately delivering superior capabilities to our warfighters. JIATF 401 seeks to award the following, but is not limited to: FAR contracts under FAR Part 12, Commercial Procedures; or non-FAR agreements such as transaction agreements under 10 U.S.C 4022; and Cooperative Agreements under 31 U.S.C. 6305 for JIATF 401 and/or partners within the DoW or Interagency that are directly relevant to enhancing the effectiveness of developing, implementing, and advancing cutting-edge technology and strategies to defeat Unmanned Aerial Systems (UAS) threats from adversaries at home and abroad. This CSO may result in awards to proposals for commercial products, commercial services, and non-developmental items through multi-phased, competitive processes through 31 December 2028. The Government reserves the right to extend this CSO beyond the “open until” date by amendment if the authority is extended. This CSO may include awards for, but are not limited to, commercially available technologies immediately available, commercially available technologies fueled by commercial or strategic investment, concept demonstrations, pilots, and agile development activities that can incrementally improve commercial technologies, existing government- owned capabilities, or concepts for broad defense application.",
+  "detail_text_length": 2113,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66f5652cdb714fa8bd0151c3d02d867f/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89e4173c6e414dfa81a1f3246a934b86/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e85248544d84e318c33ca3e9134bfe0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e90acf466d6a47c298ffece12a721a98/download"
+  ],
+  "resource_count": 4,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/66f5652cdb714fa8bd0151c3d02d867f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f76c7aea71c501454186203bb776c393856a94f1fdc99ab61d753d2727e60c5e.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f76c7aea71c501454186203bb776c393856a94f1fdc99ab61d753d2727e60c5e.xlsx",
+      "file_id": "66f5652cdb714fa8bd0151c3d02d867f",
+      "file_name": "AoI+26-004+Attachment+001+-+Task+Force+East+Requirements+.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20234,
+      "sha256": "f76c7aea71c501454186203bb776c393856a94f1fdc99ab61d753d2727e60c5e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/89e4173c6e414dfa81a1f3246a934b86/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/41dfa5908940e55a4375df828e9ee7db14b08f4f2e61df5ea8623dc6139d2ca5.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/41dfa5908940e55a4375df828e9ee7db14b08f4f2e61df5ea8623dc6139d2ca5.docx",
+      "file_id": "89e4173c6e414dfa81a1f3246a934b86",
+      "file_name": "JIATF+401+CSO_Final_26FEB26.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 68394,
+      "sha256": "41dfa5908940e55a4375df828e9ee7db14b08f4f2e61df5ea8623dc6139d2ca5"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9e85248544d84e318c33ca3e9134bfe0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/69d5f07975da1e96cd96ab10382ea7941aca3a52d88fabfb965482eeee4ffdde.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/69d5f07975da1e96cd96ab10382ea7941aca3a52d88fabfb965482eeee4ffdde.docx",
+      "file_id": "9e85248544d84e318c33ca3e9134bfe0",
+      "file_name": "JIATF+401+CSO_Amendment+02.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67048,
+      "sha256": "69d5f07975da1e96cd96ab10382ea7941aca3a52d88fabfb965482eeee4ffdde"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e90acf466d6a47c298ffece12a721a98/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6a39f07a29e305dd174731fff42fa9b50885a6522b6618ef925b8ba016d73a4f.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6a39f07a29e305dd174731fff42fa9b50885a6522b6618ef925b8ba016d73a4f.docx",
+      "file_id": "e90acf466d6a47c298ffece12a721a98",
+      "file_name": "JIATF+401+CSO_Amendment+01.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 67214,
+      "sha256": "6a39f07a29e305dd174731fff42fa9b50885a6522b6618ef925b8ba016d73a4f"
+    }
+  ],
+  "_mirror_hash": "3724fa526e75a17414db509ee8526faf3a6783434d815ef0bedbdc7847924e53",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.979885+00:00"
+}

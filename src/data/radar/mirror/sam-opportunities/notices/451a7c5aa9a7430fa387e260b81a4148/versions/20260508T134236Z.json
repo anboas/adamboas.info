@@ -1,0 +1,57 @@
+{
+  "id": "sam-451a7c5aa9a7430fa387e260b81a4148",
+  "title": "Program for International Student Assessment (PISA)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=451a7c5aa9a7430fa387e260b81a4148",
+  "opportunity_url": "https://sam.gov/opp/451a7c5aa9a7430fa387e260b81a4148/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/451a7c5aa9a7430fa387e260b81a4148/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "451a7c5aa9a7430fa387e260b81a4148",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "IES26SS00002",
+  "agency_path": "EDUCATION, DEPARTMENT OF.EDUCATION, DEPARTMENT OF.CONTRACTS AND ACQUISTIONS MANAGEMEN",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=451a7c5aa9a7430fa387e260b81a4148",
+  "detail_text": "Please see attached Request for Information and DRAFT Performance Work Statement.",
+  "detail_text_length": 81,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/45f7dda882e44daa9b15a2753aaa2cee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b64e480c408a4266a2af27a194068c27/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/45f7dda882e44daa9b15a2753aaa2cee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7340abf11aabee59647fb0b58691c88b3065505ba66cf803711de4a9bfc7a13d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7340abf11aabee59647fb0b58691c88b3065505ba66cf803711de4a9bfc7a13d.pdf",
+      "file_id": "45f7dda882e44daa9b15a2753aaa2cee",
+      "file_name": "PWS+PISA+2029+-+DRAFT.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1342098,
+      "sha256": "7340abf11aabee59647fb0b58691c88b3065505ba66cf803711de4a9bfc7a13d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b64e480c408a4266a2af27a194068c27/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0511d8838dfbc9654818cee573a329f66434dba67b1857a76cda8645b2ba2f0e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0511d8838dfbc9654818cee573a329f66434dba67b1857a76cda8645b2ba2f0e.pdf",
+      "file_id": "b64e480c408a4266a2af27a194068c27",
+      "file_name": "Request+for+Information+-+PISA+2029.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 153333,
+      "sha256": "0511d8838dfbc9654818cee573a329f66434dba67b1857a76cda8645b2ba2f0e"
+    }
+  ],
+  "_mirror_hash": "ea29c86535ef0e9a36abdb97accb103d75a9895debb46e75ad3a18d5edb448bc",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.906809+00:00"
+}

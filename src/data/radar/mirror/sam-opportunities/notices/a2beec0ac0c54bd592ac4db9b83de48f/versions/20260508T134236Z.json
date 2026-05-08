@@ -1,0 +1,46 @@
+{
+  "id": "sam-a2beec0ac0c54bd592ac4db9b83de48f",
+  "title": "60-DAY TANKER TIME CHARTER",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2beec0ac0c54bd592ac4db9b83de48f",
+  "opportunity_url": "https://sam.gov/opp/a2beec0ac0c54bd592ac4db9b83de48f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a2beec0ac0c54bd592ac4db9b83de48f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a2beec0ac0c54bd592ac4db9b83de48f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "N32205-SS-N35C-26-109",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.MSC.MSC HQS.MSCHQ NORFOLK",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a2beec0ac0c54bd592ac4db9b83de48f",
+  "detail_text": "Please see attached Sources Sought Notice N32205-SS-N35C-26-109.",
+  "detail_text_length": 64,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5e5de0eb8ee4a63aad2c27074142f3e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a5e5de0eb8ee4a63aad2c27074142f3e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d3a845e18a4163c0cf8ce70141bd40baf6be928f81b33fd605e195357e790cd6.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d3a845e18a4163c0cf8ce70141bd40baf6be928f81b33fd605e195357e790cd6.pdf",
+      "file_id": "a5e5de0eb8ee4a63aad2c27074142f3e",
+      "file_name": "SS-26-109+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 112223,
+      "sha256": "d3a845e18a4163c0cf8ce70141bd40baf6be928f81b33fd605e195357e790cd6"
+    }
+  ],
+  "_mirror_hash": "f185e14e800b2d8d590ba3a4472e4c5f6edcb4a7926ec2bfc458028dcf4664fe",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.803582+00:00"
+}

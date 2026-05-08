@@ -1,0 +1,48 @@
+{
+  "id": "sam-a5390e0462ad4dd7944b0ff20449cade",
+  "title": "NATO Request for Information: Governance, Risk, and Compliance Tool",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5390e0462ad4dd7944b0ff20449cade",
+  "opportunity_url": "https://sam.gov/opp/a5390e0462ad4dd7944b0ff20449cade/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a5390e0462ad4dd7944b0ff20449cade/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a5390e0462ad4dd7944b0ff20449cade",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "RFI-07119-GRC",
+  "agency_path": "COMMERCE, DEPARTMENT OF.BUREAU OF INDUSTRY AND SECURITY",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a5390e0462ad4dd7944b0ff20449cade",
+  "detail_text": "The NATO Communications and Information Agency (NCIA) has issued a Request for Information (RFI) to identify qualified vendors and gather input on potential solutions to support the upcoming acquisition for a Commercial-Off-The-Shelf (COTS) Governance, Risk, and Compliance (GRC) tool. This RFI is issued for planning purposes only and is not a request for bids. It is part of NCIA’s effort to ensure it has a clear understanding of the marketplace, available capabilities, and potential acquisition strategies. NCIA invites industry to 1) share relevant corporate capabilities and experience; 2) review and comment on its draft requirements with a view to providing recommendations for improving performance outcomes, competition, and efficiency; and 3) identify any risks or concerns that should be considered during planning. Do NOT submit your RFI response to the Department of Commerce. Submission instructions and additional details can be found in the RFI (attached). The NCIA reference for this RFI is RFI-07119-GRC, and all correspondence concerning this matter should reference this number. The response deadline is NLT 12:00 hours Central European Time (CET) on 29 May 2026. Your participation in this RFI is greatly appreciated.",
+  "detail_text_length": 1240,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5977c01049284d7a89e94ee43f4db903/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5977c01049284d7a89e94ee43f4db903/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9bc1a4d7ba3b508471d392a81e1eaf3f6b72ac76c006454a20f6d6f16f1fc954.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9bc1a4d7ba3b508471d392a81e1eaf3f6b72ac76c006454a20f6d6f16f1fc954.pdf",
+      "file_id": "5977c01049284d7a89e94ee43f4db903",
+      "file_name": "RFI-07119-GRC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 639551,
+      "sha256": "9bc1a4d7ba3b508471d392a81e1eaf3f6b72ac76c006454a20f6d6f16f1fc954"
+    }
+  ],
+  "_mirror_hash": "cc30a2a4d1d3c25b9b14f4c68862575c9d799bc68cb62c580c5c4dc6a222d10f",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.695158+00:00"
+}

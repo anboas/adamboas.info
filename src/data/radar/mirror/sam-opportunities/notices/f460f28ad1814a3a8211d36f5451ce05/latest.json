@@ -1,0 +1,45 @@
+{
+  "id": "sam-f460f28ad1814a3a8211d36f5451ce05",
+  "title": "N0038326QA081",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f460f28ad1814a3a8211d36f5451ce05",
+  "opportunity_url": "https://sam.gov/opp/f460f28ad1814a3a8211d36f5451ce05/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f460f28ad1814a3a8211d36f5451ce05/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f460f28ad1814a3a8211d36f5451ce05",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QA081",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-06-02",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f460f28ad1814a3a8211d36f5451ce05",
+  "detail_text": "RFQ N0038326QA081 for NSN 7R5895015163875.",
+  "detail_text_length": 42,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf21e0ae01164021bdbbe5bdabd7f7fe/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bf21e0ae01164021bdbbe5bdabd7f7fe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df56e28c90bd23da5824e34bce755c68c3d62801f0c083b2a4b69fa3fbc8505b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df56e28c90bd23da5824e34bce755c68c3d62801f0c083b2a4b69fa3fbc8505b.pdf",
+      "file_id": "bf21e0ae01164021bdbbe5bdabd7f7fe",
+      "file_name": "3.01_RFQ_Solicitation-N0038326QA081_PR-N0038326PR0R447.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1283262,
+      "sha256": "df56e28c90bd23da5824e34bce755c68c3d62801f0c083b2a4b69fa3fbc8505b"
+    }
+  ],
+  "_mirror_hash": "bfa283812bce730ecc167327409d184f4d1d97da36977f08cbb8051bb79ad414",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.704392+00:00"
+}

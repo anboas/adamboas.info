@@ -1,0 +1,56 @@
+{
+  "id": "sam-d80dd12fd5d94368b2fcf21e1d0e3f34",
+  "title": "FMS REPAIR REQUIREMENT FOR THE COUNTRY OF KUWAIT NIIN: 200118711 I P/N: 152505-1",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d80dd12fd5d94368b2fcf21e1d0e3f34",
+  "opportunity_url": "https://sam.gov/opp/d80dd12fd5d94368b2fcf21e1d0e3f34/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d80dd12fd5d94368b2fcf21e1d0e3f34/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d80dd12fd5d94368b2fcf21e1d0e3f34",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0038326QA079",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP WEAPON SYSTEMS SUPPORT.NAVSUP WSS PHILADELPHIA.NAVSUP WEAPON SYSTEMS SUPPORT",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-06-04",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d80dd12fd5d94368b2fcf21e1d0e3f34",
+  "detail_text": "NAVSUP Weapon Systems Support (NAVSUP WSS) Philadelphia is issuing this solicitation as a means of conducting market research to identify eligible parties having an interest in and the resources to support and furnish effort including labor, material, and facilities as may be required to provide repairs for NSN: 5821-20-011-8711, P/N: 152505-1, for the F-18. The Government intends to solicit and negotiate with only one source under the authority of Revolutionary FAR Overhaul 6.103-1. Government intends to solicit for the repairs of the attached items. All responsible sources may identify their interest and provide capability statements in response to this notice. This notice of intent is not a request for competitive proposals. However, all proposals received by 2:00 PM Eastern Time on June 04, 2026 will be considered by the Government. A determination by the Government not to compete with this proposed contract based upon responses to this notice is solely within the discretion of the Government. Source Approval is required. WSS will not delay award while Source Approval is pending. The time required for approval of a new source is normally such that an award cannot be delayed pending approval of a new source. If you are not an approved source you must submit, together with your proposal, the information detailed in the NAVSUP-WSS Source Approval Information Brochure for Repair. Additional information for submitting a Source Approval Request package can be obtained at: https://www.navsup.navy.mil/NAVSUP-Enterprise/NAVSUP-Weapon-Systems-Support/Business-Opps/",
+  "detail_text_length": 1585,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0803226d8b7e41c8b18114e09be9795a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a0a694ff5d3e49f4a5270910d12cac28/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0803226d8b7e41c8b18114e09be9795a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7cb1e2fc010b4ee531881867aa0351e3586f21be83b2fc65b516e4fcdd1c627b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7cb1e2fc010b4ee531881867aa0351e3586f21be83b2fc65b516e4fcdd1c627b.pdf",
+      "file_id": "0803226d8b7e41c8b18114e09be9795a",
+      "file_name": "Solicitation+Amendment+-+N0038326QA0790001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 747102,
+      "sha256": "7cb1e2fc010b4ee531881867aa0351e3586f21be83b2fc65b516e4fcdd1c627b"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a0a694ff5d3e49f4a5270910d12cac28/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1df5ad8093a80402561a22de39cdb48943fdfcfeb3e99cd68ea1b2e0e0020e99.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1df5ad8093a80402561a22de39cdb48943fdfcfeb3e99cd68ea1b2e0e0020e99.pdf",
+      "file_id": "a0a694ff5d3e49f4a5270910d12cac28",
+      "file_name": "Solicitation+N00383-26-Q-A079.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1283856,
+      "sha256": "1df5ad8093a80402561a22de39cdb48943fdfcfeb3e99cd68ea1b2e0e0020e99"
+    }
+  ],
+  "_mirror_hash": "30029a9a41aa6e047f1c253b70b8d0eec551dbf82bc413d673a0953b3ea9d628",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.708205+00:00"
+}

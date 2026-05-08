@@ -1,0 +1,57 @@
+{
+  "id": "sam-936333d7f2764f0eb95ae4588f4691d1",
+  "title": "6515--Pass Through Racks",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=936333d7f2764f0eb95ae4588f4691d1",
+  "opportunity_url": "https://sam.gov/opp/936333d7f2764f0eb95ae4588f4691d1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/936333d7f2764f0eb95ae4588f4691d1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "936333d7f2764f0eb95ae4588f4691d1",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26326Q0656",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 23 (36C263)",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-07",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=936333d7f2764f0eb95ae4588f4691d1",
+  "detail_text": "The objective of this project is to procure and install an AMSCO Rack Return system to enhance the efficiency and effectiveness of the Sterile Processing Services (SPS) at the VA of Central Iowa Health Care System. This is also to establish a negative pressure split between the decontamination area and sterile handling area of SPS. The VA of Central Iowa Health Care System's Sterile Processing Services requires a reliable and efficient rack return system to ensure seamless operations and maintain high standards of sterilization. The AMSCO Rack Return system, with its advanced features, is intended to meet these needs and improve operational workflow.",
+  "detail_text_length": 658,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9bdbbbf531754c3e8770d47bdffc73df/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdab0d11b672473585880b2783579117/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9bdbbbf531754c3e8770d47bdffc73df/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/722cbc5a742b9f1458680e5c3fa666a1bc35f4c626814ae0acc3e183aea1b2c8.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/722cbc5a742b9f1458680e5c3fa666a1bc35f4c626814ae0acc3e183aea1b2c8.docx",
+      "file_id": "9bdbbbf531754c3e8770d47bdffc73df",
+      "file_name": "36C26326Q0656_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 14715,
+      "sha256": "722cbc5a742b9f1458680e5c3fa666a1bc35f4c626814ae0acc3e183aea1b2c8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bdab0d11b672473585880b2783579117/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8c8a3616121e1d24b412c4e5d59050fb512e7c44b437b6c7d06207182d77faba.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8c8a3616121e1d24b412c4e5d59050fb512e7c44b437b6c7d06207182d77faba.docx",
+      "file_id": "bdab0d11b672473585880b2783579117",
+      "file_name": "RFI+36C26326Q0656.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20323,
+      "sha256": "8c8a3616121e1d24b412c4e5d59050fb512e7c44b437b6c7d06207182d77faba"
+    }
+  ],
+  "_mirror_hash": "fe1fce2b995edb61e1898726e8f5b23210b05b51924d3934a2e6ac326beb645c",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.759833+00:00"
+}

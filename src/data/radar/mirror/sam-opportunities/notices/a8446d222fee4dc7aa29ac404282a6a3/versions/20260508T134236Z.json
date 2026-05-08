@@ -1,0 +1,58 @@
+{
+  "id": "sam-a8446d222fee4dc7aa29ac404282a6a3",
+  "title": "G099--Sources Sought: SFVAHCS HCHV CERS Program",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a8446d222fee4dc7aa29ac404282a6a3",
+  "opportunity_url": "https://sam.gov/opp/a8446d222fee4dc7aa29ac404282a6a3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a8446d222fee4dc7aa29ac404282a6a3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a8446d222fee4dc7aa29ac404282a6a3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26126Q0694",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-22",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a8446d222fee4dc7aa29ac404282a6a3",
+  "detail_text": "This is a Sources Sought only. The purpose of this Sources Sought Notice is to assist in our decision-making process for a service procurement. This is not a solicitation, nor a request for quotes or proposals. Responses to this Sources Sought Notice will be used by the Government to make appropriate acquisition decisions. Please see attached Sources Sought Notice for response instructions.",
+  "detail_text_length": 393,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/388d57aa75a948e9b5cbc9197f1070b6/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f06cd42e5ec4a95b57157de172c5986/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/388d57aa75a948e9b5cbc9197f1070b6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a3fef2e5a594acb350fdf972a3d51acf892f71bffcbd226dc03b29f80ddddcf4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a3fef2e5a594acb350fdf972a3d51acf892f71bffcbd226dc03b29f80ddddcf4.pdf",
+      "file_id": "388d57aa75a948e9b5cbc9197f1070b6",
+      "file_name": "36C26126Q0694+Sources+Sought+Notice+HCHV+SF.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 381057,
+      "sha256": "a3fef2e5a594acb350fdf972a3d51acf892f71bffcbd226dc03b29f80ddddcf4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7f06cd42e5ec4a95b57157de172c5986/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4a1acf0d8d604e77ac2cb8745e53fc87f97bbf6ccd1c608eba925d528e387981.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4a1acf0d8d604e77ac2cb8745e53fc87f97bbf6ccd1c608eba925d528e387981.pdf",
+      "file_id": "7f06cd42e5ec4a95b57157de172c5986",
+      "file_name": "36C26126Q0694+DRAFT+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 740882,
+      "sha256": "4a1acf0d8d604e77ac2cb8745e53fc87f97bbf6ccd1c608eba925d528e387981"
+    }
+  ],
+  "_mirror_hash": "86aff5407fb304aed4d6d19f896b6c846bede184dc9a19f3d050766f813fd81b",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.682665+00:00"
+}

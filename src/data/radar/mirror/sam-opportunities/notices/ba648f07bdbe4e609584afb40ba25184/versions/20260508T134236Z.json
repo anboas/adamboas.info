@@ -1,0 +1,46 @@
+{
+  "id": "sam-ba648f07bdbe4e609584afb40ba25184",
+  "title": "Sterile Processing Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba648f07bdbe4e609584afb40ba25184",
+  "opportunity_url": "https://sam.gov/opp/ba648f07bdbe4e609584afb40ba25184/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ba648f07bdbe4e609584afb40ba25184/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ba648f07bdbe4e609584afb40ba25184",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W81K0426QA053",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY MEDICAL COMMAND.US ARMY HEALTH CONTRACTING ACTIVITY.W40M USA HCA",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba648f07bdbe4e609584afb40ba25184",
+  "detail_text": "This is a Request for Information (RFI) – Sought Notice Only. This notice is issued solely for information and planning purposes only. 1. The US Government will not pay for any information or administrative costs incurred in response to this notice. Submittals will not be returned to the responder; not responding to this notice does not preclude participation in any further RFQ; IFB or RFP if issued. 2. The associated North American Industry Classification System (NAICS) is 811210. The business size standard is $34.0 million. All contractors doing business with the Department of Defense shall be registered and approved through the System for Award Management (SAM). This is the Official U.S. Government system that consolidates the capabilities of CCR/FedReg, and EPLS. There is no fee to register for this site. Entities may register at no cost directly from this page. The proposed performance start date will be on or about 15 June 2026. The Solicitation number is W81K0426QA053. 3. Note – Prior to award your company shall reflect the NAICS Code 811210 identified on your SAM. If your company is interested in competing on this project, and have services, please submit the following documentation no later than 14 May 2026, 10:00 AM EST, to Cynthia A. Richardson-Rhone at cynthia.a.richardson-rhone.civ@health.mil . and Jason Holck. All questions need to be submitted NLT 12 May 2026 by 10:00 AM EST. Your email response shall provide the following: Can you provide the following service: Please see the attached Performance Work Statement. Please ensure to address the below: Name of Company Point of contact Phone number Email address Identify Your Small Business Socio-Economic Group DUNS number and CAGE Code 4. This requirement No telephonic inquiries will be responded to. A solicitation will be posted within 2-3 weeks www.Sam.gov.",
+  "detail_text_length": 1851,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc301c99559a47c7aa0a7210057d50b5/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc301c99559a47c7aa0a7210057d50b5/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/607621f8db192cafff34c0094a847a8445e3481b40ddd3c98c314b0f939e664d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/607621f8db192cafff34c0094a847a8445e3481b40ddd3c98c314b0f939e664d.pdf",
+      "file_id": "bc301c99559a47c7aa0a7210057d50b5",
+      "file_name": "Performance+Work+Statement+-PWS-+-+Sterilization+Services.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 206025,
+      "sha256": "607621f8db192cafff34c0094a847a8445e3481b40ddd3c98c314b0f939e664d"
+    }
+  ],
+  "_mirror_hash": "abae5e2ffbe3c82acf7f04052e64d999ad56d1d1ee2afc4d5fc0d135ed52aeb1",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.829706+00:00"
+}

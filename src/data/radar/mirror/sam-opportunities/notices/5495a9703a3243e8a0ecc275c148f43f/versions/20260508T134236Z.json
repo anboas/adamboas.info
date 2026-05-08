@@ -1,0 +1,46 @@
+{
+  "id": "sam-5495a9703a3243e8a0ecc275c148f43f",
+  "title": "DAFL Overdrive",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5495a9703a3243e8a0ecc275c148f43f",
+  "opportunity_url": "https://sam.gov/opp/5495a9703a3243e8a0ecc275c148f43f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5495a9703a3243e8a0ecc275c148f43f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5495a9703a3243e8a0ecc275c148f43f",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA805205072025",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AF INSTALLATION & MISSION SUPPORT CENTER.FA8052  773 ESS",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5495a9703a3243e8a0ecc275c148f43f",
+  "detail_text": "The Department of the Air Force Library Program has the following requirement: Overdrive offers downloadable e-books, e-audio books, and movies for checkout through their online system. These materials include current fiction, non-fiction, language learning materials, reference and recreation materials. Must provide a large and growing catalog of books and audio books in digital format to add to existing DAFL collection on the OverDrive platfrom. DAFL VCL wants to add content to the existing 5 million worth of content already on the platform we have a contract for with DoD Libraries.",
+  "detail_text_length": 590,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1b99f95c8524269a510cdfa6ea58efb/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b1b99f95c8524269a510cdfa6ea58efb/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/30ea537efee4f57fac3436ee3f88fa93214915c943d0783afae6e5965a69f08f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/30ea537efee4f57fac3436ee3f88fa93214915c943d0783afae6e5965a69f08f.pdf",
+      "file_id": "b1b99f95c8524269a510cdfa6ea58efb",
+      "file_name": "Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 98823,
+      "sha256": "30ea537efee4f57fac3436ee3f88fa93214915c943d0783afae6e5965a69f08f"
+    }
+  ],
+  "_mirror_hash": "5b85b40673567df2f50b1f8a542d4e3f98bcdd356f11926827e7c1d04fa828bf",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.806064+00:00"
+}

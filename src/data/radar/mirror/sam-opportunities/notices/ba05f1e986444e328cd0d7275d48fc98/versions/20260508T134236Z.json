@@ -1,0 +1,46 @@
+{
+  "id": "sam-ba05f1e986444e328cd0d7275d48fc98",
+  "title": "NSN: 2995-01-079-9316 / PN: 70651-03210-101 / AX6F2493AX",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba05f1e986444e328cd0d7275d48fc98",
+  "opportunity_url": "https://sam.gov/opp/ba05f1e986444e328cd0d7275d48fc98/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/ba05f1e986444e328cd0d7275d48fc98/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "ba05f1e986444e328cd0d7275d48fc98",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "AX6F2493AX",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA AVIATION.DLA AVIATION HUNTSVILLE.DLA AVIATION AT HUNTSVILLE, AL",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ba05f1e986444e328cd0d7275d48fc98",
+  "detail_text": "See attached.",
+  "detail_text_length": 13,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/90b7cc2d17db4edd8cf808cfefa2fcff/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/90b7cc2d17db4edd8cf808cfefa2fcff/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b3e066180135f1e7b19a495381a2d0727212148ea41702fdc8a4c1d14978d2ab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b3e066180135f1e7b19a495381a2d0727212148ea41702fdc8a4c1d14978d2ab.pdf",
+      "file_id": "90b7cc2d17db4edd8cf808cfefa2fcff",
+      "file_name": "AX6F2493AX+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 86042,
+      "sha256": "b3e066180135f1e7b19a495381a2d0727212148ea41702fdc8a4c1d14978d2ab"
+    }
+  ],
+  "_mirror_hash": "802ee82062eee8a5e3696f44ff9679330c2b83fc21e5002f289652517e103c0f",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.787201+00:00"
+}

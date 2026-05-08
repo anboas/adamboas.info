@@ -1,0 +1,57 @@
+{
+  "id": "sam-b1e43bff5c0244d6bbfedc383113e7c5",
+  "title": "Burial and Memorialization Electronic Directory (BMeD) Commercial Off-the-Shelf Platforms",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1e43bff5c0244d6bbfedc383113e7c5",
+  "opportunity_url": "https://sam.gov/opp/b1e43bff5c0244d6bbfedc383113e7c5/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b1e43bff5c0244d6bbfedc383113e7c5/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b1e43bff5c0244d6bbfedc383113e7c5",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "ABMCFY27_BMeD_COTS_RFI",
+  "agency_path": "AMERICAN BATTLE MONUMENTS COMMISSION.AMERICAN BATTLE MONUMENTS COMMISSION.ABMC",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b1e43bff5c0244d6bbfedc383113e7c5",
+  "detail_text": "American Battle Monuments Commission (ABMC) is issuing this Request for Information (RFI) for market research purposes. ABMC seeks industry input on secure cloud-based commercial off-the-shelf (COTS) platforms and implementation approaches that can replace or significantly improve the current WeRemember.ABMC.gov environment. ABMC requires a modern, stable, secure, and easy-to-use platform that supports both public research and internal staff operations for authoritative burial and memorialization records of approximately 250,000 burial records. ABMC is seeking information on mature COTS alternatives that can better support mission needs with strong usability, reliability, maintainability, and overall performance, stronger vendor and integrator support, and greater long-term flexibility. Responses should be limited to 20 pages, excluding product literature. Please include company information, product overview, technical approach, implementation approach, relevant experience, support model, and rough order of magnitude pricing. See the attached RFI for full details. Please submit your responses to Jessica Young at youngj.ctr@abmc.gov by May 8, 2026.",
+  "detail_text_length": 1165,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98fb9bdf6ccf46ee8c412213123ef166/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0e60474f1ea4366bfe2579da0b1314f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/98fb9bdf6ccf46ee8c412213123ef166/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fa346c53c3005e0378cdbe313451557986afeda6a0ff1b306988ac1f57a025d6.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fa346c53c3005e0378cdbe313451557986afeda6a0ff1b306988ac1f57a025d6.xlsx",
+      "file_id": "98fb9bdf6ccf46ee8c412213123ef166",
+      "file_name": "Questions+and+Answers+Template.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23389,
+      "sha256": "fa346c53c3005e0378cdbe313451557986afeda6a0ff1b306988ac1f57a025d6"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c0e60474f1ea4366bfe2579da0b1314f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/fad1acec82460a28a3e07fe599355164ef1160f731aed106c19de23b5b3de05f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/fad1acec82460a28a3e07fe599355164ef1160f731aed106c19de23b5b3de05f.pdf",
+      "file_id": "c0e60474f1ea4366bfe2579da0b1314f",
+      "file_name": "ABMCFY27_BMeD_COTS_RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 234947,
+      "sha256": "fad1acec82460a28a3e07fe599355164ef1160f731aed106c19de23b5b3de05f"
+    }
+  ],
+  "_mirror_hash": "8a438492baba066e4ff293c5fd3b6f8581f487d6136736ce007b56de4f8ec037",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.852687+00:00"
+}

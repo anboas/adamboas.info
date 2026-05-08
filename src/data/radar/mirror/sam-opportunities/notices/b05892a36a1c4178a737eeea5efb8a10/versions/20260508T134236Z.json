@@ -1,0 +1,68 @@
+{
+  "id": "sam-b05892a36a1c4178a737eeea5efb8a10",
+  "title": "Aircraft Rescue and Fire Fighting (ARFF) Commercial Training Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b05892a36a1c4178a737eeea5efb8a10",
+  "opportunity_url": "https://sam.gov/opp/b05892a36a1c4178a737eeea5efb8a10/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b05892a36a1c4178a737eeea5efb8a10/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b05892a36a1c4178a737eeea5efb8a10",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "M9549426MR018",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.USMC.MARCORP I&L.MARINE CORPS INSTALLATIONS COMMAND.MARINE CORPS INSTALLATIONS COMMAND HQ.COMMANDING OFFICER",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b05892a36a1c4178a737eeea5efb8a10",
+  "detail_text": "See attached Sources Sought Notice (and Attachments) for futher details.",
+  "detail_text_length": 72,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52e857e20e36482192964fd80ca5471b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71471586faa04b739d14f905758cedba/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa184124587b4b3c9c95d457dc870d55/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/52e857e20e36482192964fd80ca5471b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0289d557a2a4e5bce7ace8a083af78a5e91f245d07276850af4b2224bbbf6709.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0289d557a2a4e5bce7ace8a083af78a5e91f245d07276850af4b2224bbbf6709.pdf",
+      "file_id": "52e857e20e36482192964fd80ca5471b",
+      "file_name": "Attch+2_NAVMC+3500.114+Live+Fire.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 72497,
+      "sha256": "0289d557a2a4e5bce7ace8a083af78a5e91f245d07276850af4b2224bbbf6709"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/71471586faa04b739d14f905758cedba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/89ef5d996245f94d88360eae2c7f95136ebf4fff9ae5e53cfb44175caf5f261e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/89ef5d996245f94d88360eae2c7f95136ebf4fff9ae5e53cfb44175caf5f261e.pdf",
+      "file_id": "71471586faa04b739d14f905758cedba",
+      "file_name": "SSN_M95494-26-MR-018.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 186640,
+      "sha256": "89ef5d996245f94d88360eae2c7f95136ebf4fff9ae5e53cfb44175caf5f261e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aa184124587b4b3c9c95d457dc870d55/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/352b6517d0bfaf672c47034454b41cb884c995670ffc57d88c974b9b5faefeae.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/352b6517d0bfaf672c47034454b41cb884c995670ffc57d88c974b9b5faefeae.pdf",
+      "file_id": "aa184124587b4b3c9c95d457dc870d55",
+      "file_name": "Attch+1_DRAFT+PWS_ARFF_Commercial_Training.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 213266,
+      "sha256": "352b6517d0bfaf672c47034454b41cb884c995670ffc57d88c974b9b5faefeae"
+    }
+  ],
+  "_mirror_hash": "d6ad9aef0f21ca805acc33adab226a69db1944354bc2f651a805a68fe19f4eb8",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.887983+00:00"
+}

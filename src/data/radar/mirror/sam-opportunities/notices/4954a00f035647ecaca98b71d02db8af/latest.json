@@ -1,0 +1,46 @@
+{
+  "id": "sam-4954a00f035647ecaca98b71d02db8af",
+  "title": "Vertical Lift Module",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4954a00f035647ecaca98b71d02db8af",
+  "opportunity_url": "https://sam.gov/opp/4954a00f035647ecaca98b71d02db8af/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4954a00f035647ecaca98b71d02db8af/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4954a00f035647ecaca98b71d02db8af",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SAM040893",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG CONT CT TYAD OFC",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4954a00f035647ecaca98b71d02db8af",
+  "detail_text": "Requirement to provide and install a Vertical Lift Module at Tobyhanna Army Depot. See attached Sources Sought document for more details.",
+  "detail_text_length": 137,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/249d15d95b424ba0a1041ecfbb30405e/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/249d15d95b424ba0a1041ecfbb30405e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7519635797aba6258f1686cd0953e6876ef50027d5067290f6718f4337da3e39.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7519635797aba6258f1686cd0953e6876ef50027d5067290f6718f4337da3e39.docx",
+      "file_id": "249d15d95b424ba0a1041ecfbb30405e",
+      "file_name": "Sources-Sought-VLM.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 62576,
+      "sha256": "7519635797aba6258f1686cd0953e6876ef50027d5067290f6718f4337da3e39"
+    }
+  ],
+  "_mirror_hash": "1595c4e54aba638c971576afcaea46a56c80cc200af519750761adb2d92affbe",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.845302+00:00"
+}

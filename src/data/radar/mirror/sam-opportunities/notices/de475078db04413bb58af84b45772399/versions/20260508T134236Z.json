@@ -1,0 +1,68 @@
+{
+  "id": "sam-de475078db04413bb58af84b45772399",
+  "title": "Schriever SFB 3TES Furniture",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de475078db04413bb58af84b45772399",
+  "opportunity_url": "https://sam.gov/opp/de475078db04413bb58af84b45772399/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/de475078db04413bb58af84b45772399/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "de475078db04413bb58af84b45772399",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "3TESFurniture",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.FA2550  50 CONS PKP",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de475078db04413bb58af84b45772399",
+  "detail_text": "This is a sources sought for a new requirement, 3TES Room 308 Furniture. This will include removal of the current furniture and installation of new furniture. This will be a small businesss set-aside. The contractor must adhere to the non-manufacturer rule. Please see attached SOW, salient characteristics, and layout for more details. If intereested and able to meet the requirement, please email danielle.hunziker@spaceforece.mil and tatum.kiley@spaceforce.mil.",
+  "detail_text_length": 464,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f3ed6e9cbe941d3b5d5df77e0290061/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7ce16a1ee2244c3d9f92bedb80d5966c/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e043cdb6fbed4d70953d1c28e958e583/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1f3ed6e9cbe941d3b5d5df77e0290061/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2487889355a3d324fca80faf8bc43e568c209331b3fad1a3ed077eafb00b64ab.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2487889355a3d324fca80faf8bc43e568c209331b3fad1a3ed077eafb00b64ab.pdf",
+      "file_id": "1f3ed6e9cbe941d3b5d5df77e0290061",
+      "file_name": "3+TES+RM+308+Floor+Plan.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 225577,
+      "sha256": "2487889355a3d324fca80faf8bc43e568c209331b3fad1a3ed077eafb00b64ab"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7ce16a1ee2244c3d9f92bedb80d5966c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/88fc08fd2b514e5880117f0a339d0f4365663a626a5039d25f9b5991505b0f34.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/88fc08fd2b514e5880117f0a339d0f4365663a626a5039d25f9b5991505b0f34.pdf",
+      "file_id": "7ce16a1ee2244c3d9f92bedb80d5966c",
+      "file_name": "3+TES+Room+308+Furniture+Statement+of+Work.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 116620,
+      "sha256": "88fc08fd2b514e5880117f0a339d0f4365663a626a5039d25f9b5991505b0f34"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e043cdb6fbed4d70953d1c28e958e583/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/36cf6984dcde91d8dc992b55f2b6254fcf684aca69f386bd9a9692e0d040461a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/36cf6984dcde91d8dc992b55f2b6254fcf684aca69f386bd9a9692e0d040461a.pdf",
+      "file_id": "e043cdb6fbed4d70953d1c28e958e583",
+      "file_name": "3+TES+Room+308+Salient+Characteristics.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43428,
+      "sha256": "36cf6984dcde91d8dc992b55f2b6254fcf684aca69f386bd9a9692e0d040461a"
+    }
+  ],
+  "_mirror_hash": "1e420e796982d79232802ffdcaf9753dcff095282ead1487917a418e0c7a7c4f",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.808877+00:00"
+}

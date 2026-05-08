@@ -1,0 +1,48 @@
+{
+  "id": "sam-a31b2125d1484369b4444c94ebbdcc8f",
+  "title": "ROUNDTOP RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a31b2125d1484369b4444c94ebbdcc8f",
+  "opportunity_url": "https://sam.gov/opp/a31b2125d1484369b4444c94ebbdcc8f/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a31b2125d1484369b4444c94ebbdcc8f/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a31b2125d1484369b4444c94ebbdcc8f",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "DARPA-SN-26-43",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE ADVANCED RESEARCH PROJECTS AGENCY  (DARPA).DEF ADVANCED RESEARCH PROJECTS AGCY",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-06-01",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a31b2125d1484369b4444c94ebbdcc8f",
+  "detail_text": "The Biological Technologies Office (BTO) of the Defense Advanced Research Projects Agency (DARPA) seeks to solicit input from industry, academia, government laboratories, and non-traditional performers regarding the most advanced methods to rapidly mitigate and re-purpose large volumes of spilled Petroleum, Oils, and Lubricants (POLs).",
+  "detail_text_length": 337,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35ad6ba97bad40068d4b4dd560fb097f/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/35ad6ba97bad40068d4b4dd560fb097f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/30392cf8ef4b33b013ad13c5f7724be04d0ec32209151a91a49e237cac176242.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/30392cf8ef4b33b013ad13c5f7724be04d0ec32209151a91a49e237cac176242.pdf",
+      "file_id": "35ad6ba97bad40068d4b4dd560fb097f",
+      "file_name": "DARPA-SN-26-43.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 109916,
+      "sha256": "30392cf8ef4b33b013ad13c5f7724be04d0ec32209151a91a49e237cac176242"
+    }
+  ],
+  "_mirror_hash": "8ac99fdb3466cc9f1906e95aa3df7f3e4a2c655be0d5624fe6d034568512e865",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.698784+00:00"
+}

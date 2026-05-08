@@ -1,0 +1,46 @@
+{
+  "id": "sam-de588397592a4ad493b98d1867429097",
+  "title": "ARM,WINDSHIELD WIPER; 2540-01-377-3125",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de588397592a4ad493b98d1867429097",
+  "opportunity_url": "https://sam.gov/opp/de588397592a4ad493b98d1867429097/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/de588397592a4ad493b98d1867429097/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "de588397592a4ad493b98d1867429097",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL25345002",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=de588397592a4ad493b98d1867429097",
+  "detail_text": "This is a sources sought notice only. No synopsis or solicitation are being issued at this time. The amount of information available for publication is currently limited. This notice is also for the purpose of market research in accordance with Federal Acquisition Regulation (FAR) Part 10. Please provide any sources that may be able to manufacture the NSN listed below. All of the item’s technical data can be accessed in the cFolders (https://pcf1x.bsm.dla.mil/cfolders/) using project number “CL25345002”. All information may be submitted to Kelly Nicklaus by email at Kelly.nicklaus@dla.mil. All deliveries will be made to DLA Depots. Any information must be provided by the response date on this notification. NSN 2540-01-377-3125 1G item ARM,WINDSHIELD WIPER The drawings are available directly from cFolders by doing a query for CL25345002 and/or MR013773125 in the Solicitation field.",
+  "detail_text_length": 893,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f62e61ca08a4e238b05176f3e36ebc8/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8f62e61ca08a4e238b05176f3e36ebc8/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b28e14326f994ca5aa102c3ef7abf368c58ba4e77f04fa2399655ddf8c797949.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b28e14326f994ca5aa102c3ef7abf368c58ba4e77f04fa2399655ddf8c797949.docx",
+      "file_id": "8f62e61ca08a4e238b05176f3e36ebc8",
+      "file_name": "CL25345002+Market+Research+LTC+Questionnaire_BLANK.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 57870,
+      "sha256": "b28e14326f994ca5aa102c3ef7abf368c58ba4e77f04fa2399655ddf8c797949"
+    }
+  ],
+  "_mirror_hash": "dfd0684cd95fab20b98c9f2e8d02982b4ae0ca735d80e23c36c515e3e50d3afd",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.814425+00:00"
+}

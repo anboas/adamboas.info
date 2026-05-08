@@ -1,0 +1,47 @@
+{
+  "id": "sam-acf0f55aec1c4487b08d98f243a63550",
+  "title": "DHRA Mission Connect Small Business Summit",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=acf0f55aec1c4487b08d98f243a63550",
+  "opportunity_url": "https://sam.gov/opp/acf0f55aec1c4487b08d98f243a63550/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/acf0f55aec1c4487b08d98f243a63550/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "acf0f55aec1c4487b08d98f243a63550",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HUMAN RESOURCES ACTIVITY",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-06-03",
+  "place_of_performance": null,
+  "relevance_score": 3,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Vendor engagement keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=acf0f55aec1c4487b08d98f243a63550",
+  "detail_text": "DHRA Mission Connect Small Business Summit",
+  "detail_text_length": 42,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b4fba8ae3f64ee0800a34aa9580ee75/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5b4fba8ae3f64ee0800a34aa9580ee75/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d2744614198ac6b4ee5b0e98e4dc5fde75f70d25ef2eb0b91d910f52379bef2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d2744614198ac6b4ee5b0e98e4dc5fde75f70d25ef2eb0b91d910f52379bef2.docx",
+      "file_id": "5b4fba8ae3f64ee0800a34aa9580ee75",
+      "file_name": "DHRA+Mission+Connect+Small+Business+Summit.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 734830,
+      "sha256": "8d2744614198ac6b4ee5b0e98e4dc5fde75f70d25ef2eb0b91d910f52379bef2"
+    }
+  ],
+  "_mirror_hash": "e612d56bb842d87fd1cf75bcff1e60472e6dc746631b34d3f0ee5406dc99a44d",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.744567+00:00"
+}

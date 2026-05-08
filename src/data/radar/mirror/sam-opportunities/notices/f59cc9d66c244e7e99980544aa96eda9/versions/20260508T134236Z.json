@@ -1,0 +1,46 @@
+{
+  "id": "sam-f59cc9d66c244e7e99980544aa96eda9",
+  "title": "Lift Station and Grease Trap Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f59cc9d66c244e7e99980544aa96eda9",
+  "opportunity_url": "https://sam.gov/opp/f59cc9d66c244e7e99980544aa96eda9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f59cc9d66c244e7e99980544aa96eda9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f59cc9d66c244e7e99980544aa96eda9",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25526Q0386",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.255-NETWORK CONTRACT OFFICE 15 (36C255)",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-16",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f59cc9d66c244e7e99980544aa96eda9",
+  "detail_text": "See attached document.",
+  "detail_text_length": 22,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fa232283d9b4721afe4d0d471eb211d/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0fa232283d9b4721afe4d0d471eb211d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dc95af907f87007f533dcef3094dca24638ed65a1caf884463487a0a19e9c7e5.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dc95af907f87007f533dcef3094dca24638ed65a1caf884463487a0a19e9c7e5.pdf",
+      "file_id": "0fa232283d9b4721afe4d0d471eb211d",
+      "file_name": "Sources+Sought+Notice+36C25526Q0386.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 127037,
+      "sha256": "dc95af907f87007f533dcef3094dca24638ed65a1caf884463487a0a19e9c7e5"
+    }
+  ],
+  "_mirror_hash": "09d61d08abe3e7ab63ffc498468e14217dfd54d3378581b5162bef8c736948c6",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.861007+00:00"
+}

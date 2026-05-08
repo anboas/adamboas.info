@@ -1,0 +1,57 @@
+{
+  "id": "sam-e48c7fda3bae4774a9ebb70c03afdeb4",
+  "title": "Blanket Purchase Agreement for Medical Gasses and Dry Ice",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e48c7fda3bae4774a9ebb70c03afdeb4",
+  "opportunity_url": "https://sam.gov/opp/e48c7fda3bae4774a9ebb70c03afdeb4/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e48c7fda3bae4774a9ebb70c03afdeb4/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e48c7fda3bae4774a9ebb70c03afdeb4",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "PANDHA25P0000026955C",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE HEALTH AGENCY (DHA).ARMY MED RES ACQ ACTIVITY",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e48c7fda3bae4774a9ebb70c03afdeb4",
+  "detail_text": "SUBJECT: Blanket Purchase Agreement for Medical Gasses and Dry Ice REQUIRING ACTIVITY NAME: Walter Reed Army Institute of Research (WRAIR), Logistics Branch THIS IS NOT A REQUEST FOR PROPOSALS (RFP) OR A REQUEST FOR QUOTATIONS (RFQ); IT IS STRICTLY A REQUEST FOR INFORMATION (RFI). NEITHER UNSOLICITED PROPOSALS NOR ANY OTHER KINDS OF OFFERS WILL BE CONSIDERED IN RESPONSE TO THIS REQUEST FOR INFORMATION (RFI). NO CONTRACT WILL BE AWARDED PURSUANT TO THIS ANNOUNCEMENT. DISCLAIMER: This RFI is issued solely for information and planning purposes and does not constitute a solicitation. Responses to this notice are not offers and will not be accepted by the Government to form a binding contract. Responders are solely responsible for all expenses associated with responding to this RFI. All information received in response to this RFI that is marked Proprietary will be handled accordingly. Responses to the RFI will not be returned. At this time, questions concerning the composition and requirements for a future RFP will not be entertained. PLEASE CAREFULLY READ THE ATTACHMENTS AND RESPOND ACCORDING TO THE INSTRUCTIONS. This is due no later than 14 May 2026 at 11:00 am ET.",
+  "detail_text_length": 1181,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25e436b23e0342b8934b00037af99d67/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c2b715c395ca41bb9a89de9f1125600c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/25e436b23e0342b8934b00037af99d67/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/948abcc1f497622dae31392c1a90ec7eb2582c2b7f05c3b320f4f4f40bf1da1c.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/948abcc1f497622dae31392c1a90ec7eb2582c2b7f05c3b320f4f4f40bf1da1c.xlsx",
+      "file_id": "25e436b23e0342b8934b00037af99d67",
+      "file_name": "Attachment+1+-+List+of+Medical+Gasses.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 34469,
+      "sha256": "948abcc1f497622dae31392c1a90ec7eb2582c2b7f05c3b320f4f4f40bf1da1c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c2b715c395ca41bb9a89de9f1125600c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/38bc516a70f9a6291c2e6adb3876cae5c04004f55d3a401334d564f70883e92d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/38bc516a70f9a6291c2e6adb3876cae5c04004f55d3a401334d564f70883e92d.pdf",
+      "file_id": "c2b715c395ca41bb9a89de9f1125600c",
+      "file_name": "RFI+_+for+Medical+Gases+and+Dry+Ice+BPA.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 132719,
+      "sha256": "38bc516a70f9a6291c2e6adb3876cae5c04004f55d3a401334d564f70883e92d"
+    }
+  ],
+  "_mirror_hash": "5096f844967f5271c5e1d107db0daf17aacb189fc4071f863a1420124db567bb",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.828658+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-f19c6173ad9e4f6fb8a1111944969bcb",
+  "title": "DA10--DSS PREFERENCE CARDS (New Requirement)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f19c6173ad9e4f6fb8a1111944969bcb",
+  "opportunity_url": "https://sam.gov/opp/f19c6173ad9e4f6fb8a1111944969bcb/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/f19c6173ad9e4f6fb8a1111944969bcb/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "f19c6173ad9e4f6fb8a1111944969bcb",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C10B26Q0223",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.TECHNOLOGY ACQUISITION CENTER NJ (36C10B)",
+  "posted_date": "2026-05-05",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=f19c6173ad9e4f6fb8a1111944969bcb",
+  "detail_text": "This amendment is issued to notify all potential vendors of the Government s acquisition strategy. In accordance with FAR 7.102(a)(4) Agencies shall perform acquisition planning and conduct market research for all acquisitions in order to promote and provide for Appropriate consideration of the use of pre-existing contracts, including interagency and intra-agency contracts, to fulfill the requirement, before awarding new contracts. The Government will solicit as a small business set-aside under the National Aeronautics and Space Administration (NASA) Solutions for Enterprise-Wide Procurement (SEWP) V Government-Wide Acquisition Contract (GWAC).to procure the products listed in this sources sought as our acquisition strategy.",
+  "detail_text_length": 734,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6304960609947a7b7ae938d1b3e8703/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f6304960609947a7b7ae938d1b3e8703/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a4678408e5062f75a997242bee0ecb1a568d35bbe4750065b06cfec2ce0f8b90.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a4678408e5062f75a997242bee0ecb1a568d35bbe4750065b06cfec2ce0f8b90.docx",
+      "file_id": "f6304960609947a7b7ae938d1b3e8703",
+      "file_name": "36C10B26Q0223_3.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 18992,
+      "sha256": "a4678408e5062f75a997242bee0ecb1a568d35bbe4750065b06cfec2ce0f8b90"
+    }
+  ],
+  "_mirror_hash": "e225dbaf31b4c3afaee08ebabd8a0c64e0d9b7313b6dd3c313e2de244f26e17f",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.889819+00:00"
+}

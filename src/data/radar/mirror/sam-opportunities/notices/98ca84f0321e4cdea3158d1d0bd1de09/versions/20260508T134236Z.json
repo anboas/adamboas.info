@@ -1,0 +1,58 @@
+{
+  "id": "sam-98ca84f0321e4cdea3158d1d0bd1de09",
+  "title": "Construct Headquarters and Operations Building, Baucau, Timor-Leste",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98ca84f0321e4cdea3158d1d0bd1de09",
+  "opportunity_url": "https://sam.gov/opp/98ca84f0321e4cdea3158d1d0bd1de09/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/98ca84f0321e4cdea3158d1d0bd1de09/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "98ca84f0321e4cdea3158d1d0bd1de09",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4008426R4998",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC PACIFIC CMD.NAVFAC FAR EAST.NAVFACSYSCOM FAR EAST",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98ca84f0321e4cdea3158d1d0bd1de09",
+  "detail_text": "No telephone calls will be accepted requesting a bid package or solicitation. There is no bid package or solicitation currently available. In order to protect the integrity of any future procurement that may arise from this announcement, information regarding the technical point of contact will not be provided and no appointments for presentations will be made.Notice Type: Pre-Solicitation NoticeResponse Date: May 21, 2026, 11:00 a.m. Thailand TimeThis notice serves to inform the public about an upcoming project at Baucau Airfield, Baucau, Timor Leste. The Government anticipates issuing a solicitation around May and June 2026. This notice also seeks contractors interested in attending the site visit for the Base Access Request BAR facilitated by the United States Government. Access to the site visit is only available through submission of the BAR. Requests received after the response date will not be considered. For more details, please see the attached files.",
+  "detail_text_length": 974,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/19b0bab218614b0e9a0550ccf1cb0b87/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbe7d625dd204f42b4df0be31f430688/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/19b0bab218614b0e9a0550ccf1cb0b87/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9e1acc7cf16c1656b6f7c55584b144d7700c355ee8986b090651062c23fc8866.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9e1acc7cf16c1656b6f7c55584b144d7700c355ee8986b090651062c23fc8866.pdf",
+      "file_id": "19b0bab218614b0e9a0550ccf1cb0b87",
+      "file_name": "PreSolNotice_26R4998.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 334832,
+      "sha256": "9e1acc7cf16c1656b6f7c55584b144d7700c355ee8986b090651062c23fc8866"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/fbe7d625dd204f42b4df0be31f430688/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/049fdde9fb4b7efab3894d27689c3e3378d98e1dbda367c20a2cddcae8e0586b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/049fdde9fb4b7efab3894d27689c3e3378d98e1dbda367c20a2cddcae8e0586b.xlsx",
+      "file_id": "fbe7d625dd204f42b4df0be31f430688",
+      "file_name": "SiteAccessRequest_26R4998.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 853091,
+      "sha256": "049fdde9fb4b7efab3894d27689c3e3378d98e1dbda367c20a2cddcae8e0586b"
+    }
+  ],
+  "_mirror_hash": "20a95f5dd1e0e2d7a63667d3307d47760a54fb68368563fb6285590ce8f268a5",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.597805+00:00"
+}

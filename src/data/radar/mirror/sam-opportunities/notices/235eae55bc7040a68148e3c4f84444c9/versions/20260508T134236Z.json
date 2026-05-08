@@ -1,0 +1,57 @@
+{
+  "id": "sam-235eae55bc7040a68148e3c4f84444c9",
+  "title": "J065--646-26-4-068-0093 | SEA 51734 | NEW Teleflex IABP Full  Service | NCO4 Services 3 (VA-26-00066000)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=235eae55bc7040a68148e3c4f84444c9",
+  "opportunity_url": "https://sam.gov/opp/235eae55bc7040a68148e3c4f84444c9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/235eae55bc7040a68148e3c4f84444c9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "235eae55bc7040a68148e3c4f84444c9",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C24426P0303",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.244-NETWORK CONTRACT OFFICE 4 (36C244)",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=235eae55bc7040a68148e3c4f84444c9",
+  "detail_text": "NOTICE OF INTENT TO AWARD SOLE SOURCE: IAW FAR 5.101 this notice is to advise the public that the Department of Veterans Affairs (VA) Regional Procurement Office East (RPOE), Network Contracting Office 4 (NCO 4) intends to award a sole source firm fixed price contract pursuant to FAR 6.103-1 Only One Responsible Source and No Other Supplies or Services will Satisfy Agency Requirements, using the commercial procedures of FAR Part 12, with Teleflex LLC, located at 3015 Carrinton Mill Blvd. Morrisville, NC 27560 for a one-time firm fixed price contract. The Pittsburgh VA Medical Center has a need for preventative maintenance and repairs to four (4) Teleflex AC3 Series Intra-Aortic Balloon Pumps. These pumps provide a microprocessor-controlled cardiac support, delivering counter-pulsation therapy to stabilize patients with impaired left ventricular function.",
+  "detail_text_length": 866,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a688bae06b7d4c718c7aa73326b50f98/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df35b5914d404415bfcf65b752c356a3/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a688bae06b7d4c718c7aa73326b50f98/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d9c282fb4fa10b360b5631c521274089091ebf26a1c7af1670a3f1b289031516.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d9c282fb4fa10b360b5631c521274089091ebf26a1c7af1670a3f1b289031516.docx",
+      "file_id": "a688bae06b7d4c718c7aa73326b50f98",
+      "file_name": "36C24426P0303.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15116,
+      "sha256": "d9c282fb4fa10b360b5631c521274089091ebf26a1c7af1670a3f1b289031516"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/df35b5914d404415bfcf65b752c356a3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7e16f869f8fa8c09cc75e1b4962d5734f2185e74b7e04143a055591f827a9174.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7e16f869f8fa8c09cc75e1b4962d5734f2185e74b7e04143a055591f827a9174.pdf",
+      "file_id": "df35b5914d404415bfcf65b752c356a3",
+      "file_name": "Teleflex+Intent+to+Sole+Source+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 433769,
+      "sha256": "7e16f869f8fa8c09cc75e1b4962d5734f2185e74b7e04143a055591f827a9174"
+    }
+  ],
+  "_mirror_hash": "888a6ea98f222e596422738f28424dff3a11d6f253a6f4c9a4cf6a9c62a113ad",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.799332+00:00"
+}

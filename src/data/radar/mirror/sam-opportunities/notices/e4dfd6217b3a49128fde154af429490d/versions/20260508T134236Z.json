@@ -1,0 +1,57 @@
+{
+  "id": "sam-e4dfd6217b3a49128fde154af429490d",
+  "title": "6515--Patient Transfer Lifts",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e4dfd6217b3a49128fde154af429490d",
+  "opportunity_url": "https://sam.gov/opp/e4dfd6217b3a49128fde154af429490d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/e4dfd6217b3a49128fde154af429490d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "e4dfd6217b3a49128fde154af429490d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C26326Q0659",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 23 (36C263)",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=e4dfd6217b3a49128fde154af429490d",
+  "detail_text": "The Des Moines, IA VA Health Care System has a requirement for name brand or equal additional Ez Way smart stand with scale/S500PS1-03 floor-based patient lifts and charger assembly to replace current Ez Way lifts that are at end of life, to be used for patient care throughout facility.",
+  "detail_text_length": 287,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/45edba2e554f4493b83a83991ab438ec/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/775d6cdfcea54bb8af908d36ddcb2079/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/45edba2e554f4493b83a83991ab438ec/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/83b627cca57be64b99140873f0cea0d153f96d6ea23684633aef75a3527238ac.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/83b627cca57be64b99140873f0cea0d153f96d6ea23684633aef75a3527238ac.docx",
+      "file_id": "45edba2e554f4493b83a83991ab438ec",
+      "file_name": "36C26326Q0659_1.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 15576,
+      "sha256": "83b627cca57be64b99140873f0cea0d153f96d6ea23684633aef75a3527238ac"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/775d6cdfcea54bb8af908d36ddcb2079/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5c2f246d2a0ee7c423fbd7e591f62515834e94f1f046889b847bad930bd62f82.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5c2f246d2a0ee7c423fbd7e591f62515834e94f1f046889b847bad930bd62f82.docx",
+      "file_id": "775d6cdfcea54bb8af908d36ddcb2079",
+      "file_name": "RFI+36C26326Q0659.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20848,
+      "sha256": "5c2f246d2a0ee7c423fbd7e591f62515834e94f1f046889b847bad930bd62f82"
+    }
+  ],
+  "_mirror_hash": "621be407efb8f77118fb6c866d79e1ccc5e3138cd57cb87a35b9495b299bf073",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.867541+00:00"
+}

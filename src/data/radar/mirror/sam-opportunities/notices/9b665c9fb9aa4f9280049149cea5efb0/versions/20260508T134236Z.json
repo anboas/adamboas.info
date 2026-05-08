@@ -1,0 +1,46 @@
+{
+  "id": "sam-9b665c9fb9aa4f9280049149cea5efb0",
+  "title": "FCI Leavenworth FY27 Natural Gas Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9b665c9fb9aa4f9280049149cea5efb0",
+  "opportunity_url": "https://sam.gov/opp/9b665c9fb9aa4f9280049149cea5efb0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/9b665c9fb9aa4f9280049149cea5efb0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "9b665c9fb9aa4f9280049149cea5efb0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "15B40827Q0000001",
+  "agency_path": "JUSTICE, DEPARTMENT OF.FEDERAL PRISON SYSTEM / BUREAU OF PRISONS.FCI LEAVENWORTH",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=9b665c9fb9aa4f9280049149cea5efb0",
+  "detail_text": "THIS IS A SOURCES SOUGHT ANNOUNCEMENT ONLY- SOLICITATION IS NOT AVAILABLE AT THIS TIME The Bureau of Prisons has a requirement for the provision of natural gas services for the Federal Correctional Institution (FCI) located at 1300 Metropolitan Ave. Leavenworth, KS 66048. The period of service will be from October 1, 2026 - September 30, 2027. The North American Industry Classification System (NAICS) Code is 221210. Attached is the market research questionnaire that must be comleted and returned by 3:00pm central time on May 14, 2026 to Kathleen Wood at kwoodl@bop.gov. FAR 52.204-7, System for Award Management (SAM); provision requires all contractors doing business with the federal government to be registered in the SAM database at www.sam.gov. Contractors shall include their Unique Entity Identification Number (UEI) number in their offers. The Contracting Officer will verify registration in the System for Award Management (SAM) database prior to award by entering the potential awardees UEI number into the SAM database. Failure to complete the registration procedures outlined in provision may result in elimination from consideration for award.",
+  "detail_text_length": 1162,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a86c9834dce446b896801f59f296676/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a86c9834dce446b896801f59f296676/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/abfbec80410c95059f5fb47a9d445489d6fa4348570873b00510f1e9a4141037.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/abfbec80410c95059f5fb47a9d445489d6fa4348570873b00510f1e9a4141037.pdf",
+      "file_id": "7a86c9834dce446b896801f59f296676",
+      "file_name": "Market+Research+Questionnaire.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 79432,
+      "sha256": "abfbec80410c95059f5fb47a9d445489d6fa4348570873b00510f1e9a4141037"
+    }
+  ],
+  "_mirror_hash": "3bc67699be8a9c7a0272fca7bb40a774abed6ab7d80e8ddc87ed16115c6a0060",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.837216+00:00"
+}

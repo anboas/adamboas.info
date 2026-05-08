@@ -1,0 +1,57 @@
+{
+  "id": "sam-30bdeca19177484db73567a828ba6880",
+  "title": "BASEOPS- Ft. Carson",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30bdeca19177484db73567a828ba6880",
+  "opportunity_url": "https://sam.gov/opp/30bdeca19177484db73567a828ba6880/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/30bdeca19177484db73567a828ba6880/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "30bdeca19177484db73567a828ba6880",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W911RZ19C0002",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT CARSON",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=30bdeca19177484db73567a828ba6880",
+  "detail_text": "THIS IS A Sources Sought Notice ONLY. The U.S. Government intends to extend the existing Base Operation Support Services (BASEOPS) at Fort Carson for two months, on a sole source basis. The U.S. Government is seeking vendors that may be able to perform this requirement in order to support a competitive procurement. The contract extension is being executed to ensure continuity of services while the ongoing reacquisition is being awarded and a Phase-In/Phase Out transition occurs. Accordingly, the U.S.Government highly encourages all interested businesses (large and small) to respond to this sources sought notice. In addition, small businesses, in all socioeconomic categories (including, 8(a) Business Development Program, Small Disadvantage Business, Historically Underutilized Business Zone, Service-Disabled Veteran-Owned, Women-Owned Small Business concerns), must describe their identifying capabilities in meeting the requirements at a fair market price, i.e., information which may help support a set-aside. This proposed sole source Cost Plus Fixed Fee (CPFF) extension to T&H Services LLC for BASEOPS at Fort Carson is being posted under the statutory authority of 6.302-1, Only one responsible source and no other supplies or services will satisfy agency requirements. Attached is the Performance Work Statement (PWS).",
+  "detail_text_length": 1335,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72c352eb1240454582a7d16491833b06/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80f38dc391474f449f1136f10186b539/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/72c352eb1240454582a7d16491833b06/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8b9a32c1ee8887345fb755457c8bcdb81633bff9a2f08e53576c674d5b70ae8e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8b9a32c1ee8887345fb755457c8bcdb81633bff9a2f08e53576c674d5b70ae8e.pdf",
+      "file_id": "72c352eb1240454582a7d16491833b06",
+      "file_name": "BASEOPS+-+PWS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1452413,
+      "sha256": "8b9a32c1ee8887345fb755457c8bcdb81633bff9a2f08e53576c674d5b70ae8e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/80f38dc391474f449f1136f10186b539/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a23838ec330f8c656d1a384da4376a8ba04cc3b3617b29e73159306c0a989473.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a23838ec330f8c656d1a384da4376a8ba04cc3b3617b29e73159306c0a989473.pdf",
+      "file_id": "80f38dc391474f449f1136f10186b539",
+      "file_name": "Sources+Sought+Notice+-+BASEOPS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99100,
+      "sha256": "a23838ec330f8c656d1a384da4376a8ba04cc3b3617b29e73159306c0a989473"
+    }
+  ],
+  "_mirror_hash": "ab65aea688c9b36cd549bd592c29207abc4d587f7d524b870a38b9e9bf2a8431",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.785392+00:00"
+}

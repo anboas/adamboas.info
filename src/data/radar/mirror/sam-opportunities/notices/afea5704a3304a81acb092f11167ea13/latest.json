@@ -1,0 +1,46 @@
+{
+  "id": "sam-afea5704a3304a81acb092f11167ea13",
+  "title": "B-2 Supply Chain Velocity Initiative",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=afea5704a3304a81acb092f11167ea13",
+  "opportunity_url": "https://sam.gov/opp/afea5704a3304a81acb092f11167ea13/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/afea5704a3304a81acb092f11167ea13/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "afea5704a3304a81acb092f11167ea13",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SSS6MAY2026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.BOMBER AIRCRAFT.FA8110 AFLCMC WBK-2 B-2",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=afea5704a3304a81acb092f11167ea13",
+  "detail_text": "The Air Force Life Cycle Management Center (AFLCMC) is conducting market research to identify sources capable of serving as a neutral, program-controlled integrator to address parts obsolescence and regenerate the B-2 Spirit bomber supply chain through reverse engineering and technical data package (TDP) development. Viable respondents must be established defense contractors possessing demonstrated integration experience for low-density strategic aircraft fleets, extensive in-house reverse engineering expertise, and specialized SAP-cleared facilities capable of accommodating multiple large-body aircraft. Due to inherent Organizational Conflicts of Interest (OCI) with this specific effort, the B-2 Original Equipment Manufacturers (OEMs) and their primary mission-system affiliates shall not be considered for award and should NOT respond to this notice. Potential vendors should review the attached document and submit a capability statement if, and only if, they possess verifiable evidence of meeting every mandatory qualification and the infrastructure requirements outlined in the synopsis.",
+  "detail_text_length": 1103,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55ad747484de4b2a89411090704a4cba/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55ad747484de4b2a89411090704a4cba/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8cf0bd0dcd58322b398c15c01c64ba5342ffa61b9d36d5b735a2a0055b375ba2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8cf0bd0dcd58322b398c15c01c64ba5342ffa61b9d36d5b735a2a0055b375ba2.pdf",
+      "file_id": "55ad747484de4b2a89411090704a4cba",
+      "file_name": "Sources+Sought+Synopsis+for+B-2+Supply+Chain+Regeneration.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 179098,
+      "sha256": "8cf0bd0dcd58322b398c15c01c64ba5342ffa61b9d36d5b735a2a0055b375ba2"
+    }
+  ],
+  "_mirror_hash": "c810a4bf93649175f78eebd1f4083eb57ac7b629f827bfd42a9dce9aeb02337c",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.784885+00:00"
+}

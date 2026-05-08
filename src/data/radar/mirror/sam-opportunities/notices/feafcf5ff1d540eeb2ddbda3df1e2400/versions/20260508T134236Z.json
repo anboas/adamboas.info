@@ -1,0 +1,58 @@
+{
+  "id": "sam-feafcf5ff1d540eeb2ddbda3df1e2400",
+  "title": "Sources Sought 1 NSN LTC CM26034006",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=feafcf5ff1d540eeb2ddbda3df1e2400",
+  "opportunity_url": "https://sam.gov/opp/feafcf5ff1d540eeb2ddbda3df1e2400/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/feafcf5ff1d540eeb2ddbda3df1e2400/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "feafcf5ff1d540eeb2ddbda3df1e2400",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CM26034006",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=feafcf5ff1d540eeb2ddbda3df1e2400",
+  "detail_text": "NSN 5930015931045, UCOM, INC. (CAGE 0ZSM8), PART NUMBER 05400 Please review the NSN listed above and provide any sources that may be able to manufacture this item. Please also provide the location of the manufacturer (City and State OR country if applicable) and any POCs for these manufacturers, if available. The only approved source for this item is listed above. Should a company wish to be reviewed and qualified as an \"Approved Source,\" they may submit an application package through the DLA Weapons Support Alternate Offer / Source Approval Request (SAR) Program. A SAR package contains all technical data needed to demonstrate that the prospective contractor can competently manufacture the product to the same level of quality or better than the Original Equipment Manufacturer (OEM). The onus is on the contractor to document and demonstrate their product is equal to, or better, than the currently approved item which DLA Weapons Support is procuring. For further information, please reference the DLA Weapons Support web page shown below and click on the highlight: Alternate Offer/Source Approval Program for a detailed explanation for the information and format necessary for a SAR and for the SAR approval process: http://www.dla.mil/LandandMaritime/Business/Selling/Alternate-Offers/ For further information, please refer to CFolders and search MR015931045 to review the drawing package. All information may be submitted directly to Sarah Schaff, Contract Specialist, at Sarah.Schaff@dla.mil. This information must be provided by the response date of this notice.",
+  "detail_text_length": 1579,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43ac808ab4184c0890b8294b412ac4e1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5eabccf5aea9455bbaa9b468733daddd/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43ac808ab4184c0890b8294b412ac4e1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/66da495546c4f48dfdeb8d51b1bc8610d6ec1e1a8aa71b79d10bb474f304a379.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/66da495546c4f48dfdeb8d51b1bc8610d6ec1e1a8aa71b79d10bb474f304a379.docx",
+      "file_id": "43ac808ab4184c0890b8294b412ac4e1",
+      "file_name": "CM26034006+Market+Research+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 61143,
+      "sha256": "66da495546c4f48dfdeb8d51b1bc8610d6ec1e1a8aa71b79d10bb474f304a379"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5eabccf5aea9455bbaa9b468733daddd/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8d974e99038985ddc4f02e5887d3f9a896e8cd5f9dd516aa46f58644c145b324.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8d974e99038985ddc4f02e5887d3f9a896e8cd5f9dd516aa46f58644c145b324.xlsx",
+      "file_id": "5eabccf5aea9455bbaa9b468733daddd",
+      "file_name": "CM26034006+Market+Research+LTC+Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 199872,
+      "sha256": "8d974e99038985ddc4f02e5887d3f9a896e8cd5f9dd516aa46f58644c145b324"
+    }
+  ],
+  "_mirror_hash": "e6c747d1830031e74c1765a41c0bd40c59b3fa85ff7516cd2e0d6038974409ef",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.664075+00:00"
+}

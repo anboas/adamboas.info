@@ -1,0 +1,46 @@
+{
+  "id": "sam-a4079da9e7c14c85bb5a14d716aef2b7",
+  "title": "Paramedic Services - Joint Base Cape Cod, MA",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4079da9e7c14c85bb5a14d716aef2b7",
+  "opportunity_url": "https://sam.gov/opp/a4079da9e7c14c85bb5a14d716aef2b7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a4079da9e7c14c85bb5a14d716aef2b7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a4079da9e7c14c85bb5a14d716aef2b7",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "70Z08426SCCOD0001 ",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.LOG-9",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-22",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a4079da9e7c14c85bb5a14d716aef2b7",
+  "detail_text": "This is a Request for Information (RFI) only pursuant to FAR Part 10, Market Research. It does not constitute a Request for Proposal (RFP), Request for Quote (RFQ), or Invitation for Bid (IFB), nor does it restrict the Government as to the ultimate acquisition approach. Responses to this notice are not offers and cannot be accepted by the Government to form a binding contract. Submission of any information in response to this request is purely voluntary; the Government will not pay for any costs incurred nor is it obligated to respond. The purpose of this RFI is to gain knowledge of commercially available services that may be of interest to the United States Coast Guard (USCG) as described in this notice. Responses will assist the Government in determining the appropriate acquisition strategy, including whether a set-aside is appropriate. Requirement: The USCG has a requirement for Paramedic Services located at Joint Base Cape Cod (JBCC), MA. JBCC is comprised of over 22,000 acres that are not accessible to members of the public. The size of the installation and its limited access to the public creates an inherent risk for anyone working and living there, as timely lifesaving medical care is not available in the case of medical emergencies. To ensure the continuous provision of lifesaving medical care on JBCC, this requirement seeks to provide a fully qualified paramedic staff capable of sustaining uninterrupted operational coverage twenty-four (24) hours a day, seven (7) days a week, fifty-two (52) weeks per year. The Contractor shall be responsible for the management, recruitment, hiring, retention, and termination of all paramedic personnel operating under this requirement. All Contractor Paramedics shall possess and maintain a current certificate in the state of Massachusetts as a Paramedic, a current certification in Basic Life Support (BLS), a current certification in Advanced Cardiac Life Support (ALCS), authorization to practice for the Cape and Island EMS system (set up upon award), and no adverse information on file with the National Practitioners Data Bank (NPDB). Please see the attached document for additional details .",
+  "detail_text_length": 2169,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcfecdac36b946b1b0529efb21b9a2e7/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/dcfecdac36b946b1b0529efb21b9a2e7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/bcf0109870c63ed5aacecfe3ec8702b20c9587d52d213d50a7100fab73b29e44.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/bcf0109870c63ed5aacecfe3ec8702b20c9587d52d213d50a7100fab73b29e44.pdf",
+      "file_id": "dcfecdac36b946b1b0529efb21b9a2e7",
+      "file_name": "Request+for+Information_Paramedic+Services_JBCC.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 385153,
+      "sha256": "bcf0109870c63ed5aacecfe3ec8702b20c9587d52d213d50a7100fab73b29e44"
+    }
+  ],
+  "_mirror_hash": "da39c30d8458aafea39305dff54c358cc7bd9c33770cde549b5f82f8870d3326",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.920520+00:00"
+}

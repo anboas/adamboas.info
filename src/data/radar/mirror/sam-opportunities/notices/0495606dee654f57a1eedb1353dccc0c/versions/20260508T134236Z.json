@@ -1,0 +1,69 @@
+{
+  "id": "sam-0495606dee654f57a1eedb1353dccc0c",
+  "title": "NIWDC EWD",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0495606dee654f57a1eedb1353dccc0c",
+  "opportunity_url": "https://sam.gov/opp/0495606dee654f57a1eedb1353dccc0c/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0495606dee654f57a1eedb1353dccc0c/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0495606dee654f57a1eedb1353dccc0c",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "NIWDCEWDSSN",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0495606dee654f57a1eedb1353dccc0c",
+  "detail_text": "NIWDC EWD technical, professional, and administrative support for the cybersecurity operations within the current Amazon Web Services (AWS) Information Level 6 (IL6) certified environment comprised of two Elastic Cloud Compute instances and one integrated cloud-based Development Operations (DEVOPS) environment.",
+  "detail_text_length": 312,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07559812508a4b1bb2e706fdf838dc71/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/23f9bc2c3ece4ebb956eccd4dc8f8b66/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef9f4774418643fe8dac4925b117c02b/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/07559812508a4b1bb2e706fdf838dc71/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/11be719313b84bbd48ccc1d35eca8546d4e6d896b96384980720bf8ad8bba896.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/11be719313b84bbd48ccc1d35eca8546d4e6d896b96384980720bf8ad8bba896.pdf",
+      "file_id": "07559812508a4b1bb2e706fdf838dc71",
+      "file_name": "Sources+Sought+NIWDC+EWD_Amended.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 180485,
+      "sha256": "11be719313b84bbd48ccc1d35eca8546d4e6d896b96384980720bf8ad8bba896"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/23f9bc2c3ece4ebb956eccd4dc8f8b66/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dd1cb6ee8c91d3b55b526b27556792d5f4900d9065c914dafc461b69b7c602a8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dd1cb6ee8c91d3b55b526b27556792d5f4900d9065c914dafc461b69b7c602a8.pdf",
+      "file_id": "23f9bc2c3ece4ebb956eccd4dc8f8b66",
+      "file_name": "Sources+Sought+NIWDC+EWD.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 131390,
+      "sha256": "dd1cb6ee8c91d3b55b526b27556792d5f4900d9065c914dafc461b69b7c602a8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ef9f4774418643fe8dac4925b117c02b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/ebe5bd69f4d5221887f4fb4dc72ac9d203ca4d10b00820d9b8cf3c19b3735678.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/ebe5bd69f4d5221887f4fb4dc72ac9d203ca4d10b00820d9b8cf3c19b3735678.pdf",
+      "file_id": "ef9f4774418643fe8dac4925b117c02b",
+      "file_name": "PWS-NIWDCEWD-SSN-Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 255120,
+      "sha256": "ebe5bd69f4d5221887f4fb4dc72ac9d203ca4d10b00820d9b8cf3c19b3735678"
+    }
+  ],
+  "_mirror_hash": "1eda94ff818a8ed34dd26eda748b7874e03c76b0522bda4cb19c26c19eb398b8",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.580172+00:00"
+}

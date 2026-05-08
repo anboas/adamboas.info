@@ -1,0 +1,57 @@
+{
+  "id": "sam-0b90e35994694a51a29352a033e03348",
+  "title": "Notice of Intent to Sole Source - Forensic Certification Training",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0b90e35994694a51a29352a033e03348",
+  "opportunity_url": "https://sam.gov/opp/0b90e35994694a51a29352a033e03348/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0b90e35994694a51a29352a033e03348/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0b90e35994694a51a29352a033e03348",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "192126VHQ6CCC00X4",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US IMMIGRATION AND CUSTOMS ENFORCEMENT.INVESTIGATIONS AND OPERATIONS SUPPORT DALLAS",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0b90e35994694a51a29352a033e03348",
+  "detail_text": "The U.S. Department of Homeland Security (DHS), Homeland Security Investigations (HSI) Office of Acquisition (OAQ) intends to solicit from a single source under the authority of FAR 12.102, FAR Class Deviation 25-21, Rev. 1 for FAR Part 12 to Cellebrite Inc. in McLean, VA for forensic analyst certification training. This procurement is being conducted under RFO FAR Part 12, Acquisition of Commercial Products and Commercial Services. The Contracting Officer has determined that the circumstances of the contract action deem only one source reasonably available based on the capabilities of the source. This notice is for information purposes only and is not a Request for Quote (RFQ). A determination not to compete this proposed contract based on this notice is within the discretion of the Government Contracting Officer. Any questions or concerns should be sent to the Contracting Officer: Michelle Levine Email: Michelle.Levine@ice.dhs.gov Phone Number: (682) 308-7625 U.S. Immigration and Customs Enforcement 8222 N. Belt Line Road, Suite 2200 Irving, TX 75063",
+  "detail_text_length": 1068,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b269087a54644dabac8982799fddbb11/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3c1d9b8f4cc4c9686b4296888b3c12a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b269087a54644dabac8982799fddbb11/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c8a02e9d339e5897e88cdc7686b4fff1515fa34d92c02d6c60d50162381bf74d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c8a02e9d339e5897e88cdc7686b4fff1515fa34d92c02d6c60d50162381bf74d.pdf",
+      "file_id": "b269087a54644dabac8982799fddbb11",
+      "file_name": "1.2.1-NOI+to+Solicit+from+a+Single+Source.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1544172,
+      "sha256": "c8a02e9d339e5897e88cdc7686b4fff1515fa34d92c02d6c60d50162381bf74d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c3c1d9b8f4cc4c9686b4296888b3c12a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/68f3f85cd918b92e888ec75097bfc4d1d4f96de6c492ed62244f9a97208e636e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/68f3f85cd918b92e888ec75097bfc4d1d4f96de6c492ed62244f9a97208e636e.pdf",
+      "file_id": "c3c1d9b8f4cc4c9686b4296888b3c12a",
+      "file_name": "1.1.4-SON.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 145632,
+      "sha256": "68f3f85cd918b92e888ec75097bfc4d1d4f96de6c492ed62244f9a97208e636e"
+    }
+  ],
+  "_mirror_hash": "b2b6626a5d96687e233bab7a52162e622c9369a8124208d95c5c04ac8ca91bb1",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.816923+00:00"
+}

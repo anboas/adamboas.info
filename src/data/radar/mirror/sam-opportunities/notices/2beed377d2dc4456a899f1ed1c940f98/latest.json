@@ -1,0 +1,92 @@
+{
+  "id": "sam-2beed377d2dc4456a899f1ed1c940f98",
+  "title": "Request for Information (RFI) - Large-Scale Fixed Systems - Multi-Energy Portal and Low-Energy Portal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2beed377d2dc4456a899f1ed1c940f98",
+  "opportunity_url": "https://sam.gov/opp/2beed377d2dc4456a899f1ed1c940f98/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2beed377d2dc4456a899f1ed1c940f98/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2beed377d2dc4456a899f1ed1c940f98",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "70B03C26R00000089",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.BORDER ENFORCEMENT CONTRACTING DIVISION",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2beed377d2dc4456a899f1ed1c940f98",
+  "detail_text": "THIS IS A REQUEST FOR INFORMATION (RFI) ONLY REGARDING A DRAFT REQUEST FOR PROPOSALS (RFP). PLEASE SEE THE ATTACHED DOCUMENTS CONTAINING THE REQUIREMENT AND SUBMISSION DETAILS REGARDING QUESTIONS.",
+  "detail_text_length": 196,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d0131ebbf9b4280a264ff32482f6095/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5110a92bbbb143bc87ccd679ddb77ddf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad7f59b248104a1cb98442444069552b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aeb3fe05ada44d28815723fbec2edafa/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6adc9e8c47b4cc192d73063e5a157f3/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2d0131ebbf9b4280a264ff32482f6095/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c5d56f733f9cc56cdfce1335b02b18f751732241df79e2caeb97b4aec7335fed.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c5d56f733f9cc56cdfce1335b02b18f751732241df79e2caeb97b4aec7335fed.pdf",
+      "file_id": "2d0131ebbf9b4280a264ff32482f6095",
+      "file_name": "DRAFT+-+RFP+70B03C26R00000089+-+NII+MEP+LEP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1587217,
+      "sha256": "c5d56f733f9cc56cdfce1335b02b18f751732241df79e2caeb97b4aec7335fed"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5110a92bbbb143bc87ccd679ddb77ddf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a8f3fe686db9d856bc4dada11bfeb095520a6791c718c0df444b5daa2af7bf9f.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a8f3fe686db9d856bc4dada11bfeb095520a6791c718c0df444b5daa2af7bf9f.pdf",
+      "file_id": "5110a92bbbb143bc87ccd679ddb77ddf",
+      "file_name": "DRAFT+-+Attachment+01b+-+FRD+-+LEP+System.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 775660,
+      "sha256": "a8f3fe686db9d856bc4dada11bfeb095520a6791c718c0df444b5daa2af7bf9f"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad7f59b248104a1cb98442444069552b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/80f50912d1d28151d4d551fa971dfb00713472e2759d8e112c9e66e7d89eb58d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/80f50912d1d28151d4d551fa971dfb00713472e2759d8e112c9e66e7d89eb58d.pdf",
+      "file_id": "ad7f59b248104a1cb98442444069552b",
+      "file_name": "DRAFT+-+Statement+of+Work+-+NII+-+MEP+LEP.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 382416,
+      "sha256": "80f50912d1d28151d4d551fa971dfb00713472e2759d8e112c9e66e7d89eb58d"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/aeb3fe05ada44d28815723fbec2edafa/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4fdeea972f467cc6d720c61640ca4cc0aeb52bab3f11bb2e23428c0649e39a8a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4fdeea972f467cc6d720c61640ca4cc0aeb52bab3f11bb2e23428c0649e39a8a.pdf",
+      "file_id": "aeb3fe05ada44d28815723fbec2edafa",
+      "file_name": "DRAFT+-+Attachment+01a+-+FRD+-+MEP+System.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 720063,
+      "sha256": "4fdeea972f467cc6d720c61640ca4cc0aeb52bab3f11bb2e23428c0649e39a8a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/b6adc9e8c47b4cc192d73063e5a157f3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/96924f4bffebc01388c7af28c6b882b6d11546afa8a04031e5e266aaae2d970b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/96924f4bffebc01388c7af28c6b882b6d11546afa8a04031e5e266aaae2d970b.xlsx",
+      "file_id": "b6adc9e8c47b4cc192d73063e5a157f3",
+      "file_name": "DRAFT+-+IDIQ+Pricing+Table+-+NII+-+MEP+LEP.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 101355,
+      "sha256": "96924f4bffebc01388c7af28c6b882b6d11546afa8a04031e5e266aaae2d970b"
+    }
+  ],
+  "_mirror_hash": "c081c1d131383048cef0e74a8c8f24fe19e440ca53f6a1137f824c04d17413d0",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.679663+00:00"
+}

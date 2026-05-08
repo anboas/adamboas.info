@@ -1,0 +1,59 @@
+{
+  "id": "sam-8e2ab0d05811426594ca0eb1c00f52e7",
+  "title": "Request for Information - ITSS Recompete - Enterprise IT - Market Research",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e2ab0d05811426594ca0eb1c00f52e7",
+  "opportunity_url": "https://sam.gov/opp/8e2ab0d05811426594ca0eb1c00f52e7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8e2ab0d05811426594ca0eb1c00f52e7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8e2ab0d05811426594ca0eb1c00f52e7",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": null,
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-CTRS.ACC-APG.W6QK ACC-APG",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8e2ab0d05811426594ca0eb1c00f52e7",
+  "detail_text": "THIS ANNOUNCEMENT IS A REQUEST FOR INFORMATION (RFI) FOR PLANNING PURPOSES ONLY. UNITED STATES ARMY TEST AND EVALUATION COMMAND (ATEC) POTENTIAL INFORMATION TECHNOLOGY SUPPORT SERVICES CONSOLIDATION This Request for Information (RFI) is issued for market research purposes in accordance with Revolutionary FAR Overhaul (RFO) Federal Acquisition Regulation (FAR) 15.101(c). The Army Test and Evaluation Command (ATEC) is seeking industry feedback and interest regarding the further enterprise-level consolidation of two (2) existing Information Technology (IT) support contracts. This effort will specifically integrate the White Sands Missile Range (WSMR) Information Systems Operations Service Support (ISOSS) mission into the ATEC Enterprise footprint, resulting in a single award supporting ATEC Headquarters (HQ) and four (4) Subordinate Organizations (SOs). The Government anticipates a single, seven (7) year contract vehicle consisting of a two-year base period and five (5) one-year options. This RFI is intended to gauge industry capability and gather feedback to refine the final acquisition strategy and approach. NOTE: Provisions and Clauses will be updated according to the latest updates in the Revolutionary FAR Overhaul (RFO): https://www.acquisition.gov/far-overhaul/far-part-deviation-guide",
+  "detail_text_length": 1308,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/210cc893fce0472aba66ad3c4262cb9d/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/916bc925d36f496ca2c742dd2035b21d/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/210cc893fce0472aba66ad3c4262cb9d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0812615d81148c8b31a8f742ff205879885d36929ae55512e9aafd5002df9891.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0812615d81148c8b31a8f742ff205879885d36929ae55512e9aafd5002df9891.pdf",
+      "file_id": "210cc893fce0472aba66ad3c4262cb9d",
+      "file_name": "ITSS+Recompete+-+Enterprise+IT_DRAFT+PWS_RFI+.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1604104,
+      "sha256": "0812615d81148c8b31a8f742ff205879885d36929ae55512e9aafd5002df9891"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/916bc925d36f496ca2c742dd2035b21d/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e06b486d1f1813ee4c705fbf678924cffd023348e51073ce67cee392fea236d0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e06b486d1f1813ee4c705fbf678924cffd023348e51073ce67cee392fea236d0.pdf",
+      "file_id": "916bc925d36f496ca2c742dd2035b21d",
+      "file_name": "RFI+-+ATEC+ITSS.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 225298,
+      "sha256": "e06b486d1f1813ee4c705fbf678924cffd023348e51073ce67cee392fea236d0"
+    }
+  ],
+  "_mirror_hash": "1a9a5a7cd8e1ff9907bee3e31f4418132921722211bb951412112f456fdff2ec",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.680384+00:00"
+}

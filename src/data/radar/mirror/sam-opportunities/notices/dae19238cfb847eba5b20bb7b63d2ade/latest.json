@@ -1,0 +1,46 @@
+{
+  "id": "sam-dae19238cfb847eba5b20bb7b63d2ade",
+  "title": "Digital Badging and Micro-credentialing Solution",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dae19238cfb847eba5b20bb7b63d2ade",
+  "opportunity_url": "https://sam.gov/opp/dae19238cfb847eba5b20bb7b63d2ade/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/dae19238cfb847eba5b20bb7b63d2ade/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "dae19238cfb847eba5b20bb7b63d2ade",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA330026Q0731",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.FA3300  42 CONS CC",
+  "posted_date": "2026-05-06",
+  "response_deadline": "2026-05-08",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=dae19238cfb847eba5b20bb7b63d2ade",
+  "detail_text": "The 42d Contracting Squadron, Maxwell AFB, AL is seeking sources that can provide for commercial digital badging and micro-credentialing solution to support enterprise-wide faculty and student development. The system will provide a scalable automated capability to issue, manage, and verify digital credentials aligned with modernizing learning, incentivizing faculty development and enhancing recognition of competency-based achievement IAW the Statement of Requirement (SOR).",
+  "detail_text_length": 477,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee22a5ae62c34d95bdc9fdf3a7b8dc5c/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ee22a5ae62c34d95bdc9fdf3a7b8dc5c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/52cecf01365f6d2a27acd825c261d5996466a69d2e15aaf690650e203e30330a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/52cecf01365f6d2a27acd825c261d5996466a69d2e15aaf690650e203e30330a.pdf",
+      "file_id": "ee22a5ae62c34d95bdc9fdf3a7b8dc5c",
+      "file_name": "Statement+of+Requirement+-+Digital+Badging+and+Micro-Credentialing+Solution.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 45718,
+      "sha256": "52cecf01365f6d2a27acd825c261d5996466a69d2e15aaf690650e203e30330a"
+    }
+  ],
+  "_mirror_hash": "9d43a534259231505c517672900165c2402694d11ab202b48e37420fd9d36bd5",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.766456+00:00"
+}

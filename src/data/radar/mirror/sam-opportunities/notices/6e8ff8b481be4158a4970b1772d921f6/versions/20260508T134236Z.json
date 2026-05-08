@@ -1,0 +1,59 @@
+{
+  "id": "sam-6e8ff8b481be4158a4970b1772d921f6",
+  "title": "Industry Day - Manpower Personnel Testing Analysis Recompete",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e8ff8b481be4158a4970b1772d921f6",
+  "opportunity_url": "https://sam.gov/opp/6e8ff8b481be4158a4970b1772d921f6/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6e8ff8b481be4158a4970b1772d921f6/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6e8ff8b481be4158a4970b1772d921f6",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Industry Day",
+    "Special Notice"
+  ],
+  "solicitation_number": "47QFPA26KXXXX",
+  "agency_path": "GENERAL SERVICES ADMINISTRATION.FEDERAL ACQUISITION SERVICE",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6e8ff8b481be4158a4970b1772d921f6",
+  "detail_text": "The purpose of the MPTA is to conduct comprehensive analysis on how policy or environmental changes will affect the performance or composition of the defense workforce.",
+  "detail_text_length": 168,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30bf6ed6d30044d5b6ed3e8882c2b30b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb8b0ddf62fc44689bfcc7b9f005c43c/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/30bf6ed6d30044d5b6ed3e8882c2b30b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a81022c7e2bc48f7d8a1beed3a9dc408194fedce3f07610f9f78fef20db5ad8c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a81022c7e2bc48f7d8a1beed3a9dc408194fedce3f07610f9f78fef20db5ad8c.pdf",
+      "file_id": "30bf6ed6d30044d5b6ed3e8882c2b30b",
+      "file_name": "MPTA+Advance+Notice+-+Virtual+Industry+Day+Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 199959,
+      "sha256": "a81022c7e2bc48f7d8a1beed3a9dc408194fedce3f07610f9f78fef20db5ad8c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bb8b0ddf62fc44689bfcc7b9f005c43c/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/782fdd4f5dc51d0fdefbabfd6d58e7cb3efa63735f26633275ee9795b590bda1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/782fdd4f5dc51d0fdefbabfd6d58e7cb3efa63735f26633275ee9795b590bda1.pdf",
+      "file_id": "bb8b0ddf62fc44689bfcc7b9f005c43c",
+      "file_name": "MPTA+IDIQ+Recompete+-+Performance+Work+Statement-20260122.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1202371,
+      "sha256": "782fdd4f5dc51d0fdefbabfd6d58e7cb3efa63735f26633275ee9795b590bda1"
+    }
+  ],
+  "_mirror_hash": "a15bf3e4809ffda0f1e9098a4d36c105e626360c2c8d3a45a60c56283723eab8",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.651450+00:00"
+}

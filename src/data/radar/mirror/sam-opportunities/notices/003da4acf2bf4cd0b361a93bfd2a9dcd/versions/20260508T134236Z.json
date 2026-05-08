@@ -1,0 +1,69 @@
+{
+  "id": "sam-003da4acf2bf4cd0b361a93bfd2a9dcd",
+  "title": "DBB UFC Repair Aboveground Fuel Storage, ABAB, PHL",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=003da4acf2bf4cd0b361a93bfd2a9dcd",
+  "opportunity_url": "https://sam.gov/opp/003da4acf2bf4cd0b361a93bfd2a9dcd/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/003da4acf2bf4cd0b361a93bfd2a9dcd/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "003da4acf2bf4cd0b361a93bfd2a9dcd",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "N4008426T7502",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC PACIFIC CMD.NAVFAC FAR EAST.NAVFACSYSCOM FAR EAST",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-20",
+  "place_of_performance": null,
+  "relevance_score": 5,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=003da4acf2bf4cd0b361a93bfd2a9dcd",
+  "detail_text": "No telephone calls will be accepted requesting a bid package or solicitation. There is no bid package or solicitation currently available. In order to protect the integrity of any future procurement that may arise from this announcement, information regarding the technical point of contact will not be given and no appointments for presentations will be made. Notice Type: Pre-Solicitation Notice Response Date: May 20, 2026, 11:00 am Thailand Time This notice serves to inform the public about an upcoming project at Antonio Bautista Air Base, San Miguel, Puerto Princesa City, Palawan, Philippines. The government anticipates issuing a solicitation around June-July 2026. Additionally, this notice seeks to gather names of contractors interested in attending the site visit for the Base Access Request (BAR), which will be facilitated by the US Government. Due to host nation security requirements, the only way to access the site visit is the BAR submitted by the US Government. Any requests for site access after the response date will not be considered. For more details, please see the attached files of this notice.",
+  "detail_text_length": 1123,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1683885925ea465eb5ecb88a5156d8b7/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f627e1d3768498ab84f0f0f6ec1adcf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad6ba66e1b704eb0aa24cae82b33b408/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1683885925ea465eb5ecb88a5156d8b7/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/1da80123cbc4fea9634cb158c05ed3acc3a141312a00355606b01c0918a4c653.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/1da80123cbc4fea9634cb158c05ed3acc3a141312a00355606b01c0918a4c653.xlsx",
+      "file_id": "1683885925ea465eb5ecb88a5156d8b7",
+      "file_name": "Encl1_BAR_Personnel_Roster.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 23983,
+      "sha256": "1da80123cbc4fea9634cb158c05ed3acc3a141312a00355606b01c0918a4c653"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5f627e1d3768498ab84f0f0f6ec1adcf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9d044dd33f5093fdb5d195c508c949fa6d2d13d0b8a92112464c1d59b4b4a5c2.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9d044dd33f5093fdb5d195c508c949fa6d2d13d0b8a92112464c1d59b4b4a5c2.docx",
+      "file_id": "5f627e1d3768498ab84f0f0f6ec1adcf",
+      "file_name": "Combined_ID.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 39838,
+      "sha256": "9d044dd33f5093fdb5d195c508c949fa6d2d13d0b8a92112464c1d59b4b4a5c2"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/ad6ba66e1b704eb0aa24cae82b33b408/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2be75144ed64a3c3e02cc7e70624e7c5a0724eb2d3c02828a2d7551bef47f235.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2be75144ed64a3c3e02cc7e70624e7c5a0724eb2d3c02828a2d7551bef47f235.pdf",
+      "file_id": "ad6ba66e1b704eb0aa24cae82b33b408",
+      "file_name": "26T7502PreSolNotice_ABAB_final.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 261995,
+      "sha256": "2be75144ed64a3c3e02cc7e70624e7c5a0724eb2d3c02828a2d7551bef47f235"
+    }
+  ],
+  "_mirror_hash": "12decea76ae68b4f218a661c8f5dd557cc643ab32fc5970e55b78ce465609b9a",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.595177+00:00"
+}

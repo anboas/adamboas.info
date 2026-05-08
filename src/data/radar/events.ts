@@ -17101,4 +17101,61 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Source-verified on 2026-05-05 from ASD event page. Public speaker roster captured as government contacts. No solicitation number, response due date, or registration deadline was published on the source page.'
 		}
 	},
+	{
+		id: 'radar-dow-energy-power-summit-2026',
+		title: 'DoW Energy & Power Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-07-08',
+		endDate: '2026-07-09',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['energy', 'power', 'summit', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=26064'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
 ];

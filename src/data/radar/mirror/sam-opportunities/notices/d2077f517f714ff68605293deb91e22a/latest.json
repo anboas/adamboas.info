@@ -1,0 +1,58 @@
+{
+  "id": "sam-d2077f517f714ff68605293deb91e22a",
+  "title": "Sources Sought Notice, HUBZone Certified Businesses for Construction Work",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d2077f517f714ff68605293deb91e22a",
+  "opportunity_url": "https://sam.gov/opp/d2077f517f714ff68605293deb91e22a/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d2077f517f714ff68605293deb91e22a/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d2077f517f714ff68605293deb91e22a",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W9124926P0021",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO EUSTIS.W6QM MICC-FT GORDON",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d2077f517f714ff68605293deb91e22a",
+  "detail_text": "SEE ATTACHED NOTICE AND GENERAL SOW FOR DETAILS. All information submitted in response to this announcement is voluntary; the United States Government will not pay for information requested nor will it compensate any respondent for any cost incurred in developing information provided to the United States Government. All information received in response to this Sources Sought Notice (SSN) that is marked proprietary will be handled accordingly. Responses to this SSN that indicate that the information therein is proprietary, or represents confidential business information, will be received, and held in confidence. Not responding to this SSN does not preclude participation in any future RFP, if any is issued. Please note, if a solicitation or multiple solicitations are posted in the future, they will be issued by a separate solicitation.",
+  "detail_text_length": 845,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1836e9057eb42c6ae410b5a4d9dd5ee/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8cf0fb44a4c464b9d7c1aa9de3fd084/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d1836e9057eb42c6ae410b5a4d9dd5ee/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/563867b2df7c3c5477bbe8b35e5e6ed7c9cfe2cc968b737d44e4810c47c4a922.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/563867b2df7c3c5477bbe8b35e5e6ed7c9cfe2cc968b737d44e4810c47c4a922.docx",
+      "file_id": "d1836e9057eb42c6ae410b5a4d9dd5ee",
+      "file_name": "General+SOW+for+Sources+Sought.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 62384,
+      "sha256": "563867b2df7c3c5477bbe8b35e5e6ed7c9cfe2cc968b737d44e4810c47c4a922"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8cf0fb44a4c464b9d7c1aa9de3fd084/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/263fbf1119672b29aede91aa480286a330daa01735315e4940c4759a1b8acf66.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/263fbf1119672b29aede91aa480286a330daa01735315e4940c4759a1b8acf66.pdf",
+      "file_id": "f8cf0fb44a4c464b9d7c1aa9de3fd084",
+      "file_name": "Sources+Sought+Notice+-SSN-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28907,
+      "sha256": "263fbf1119672b29aede91aa480286a330daa01735315e4940c4759a1b8acf66"
+    }
+  ],
+  "_mirror_hash": "c60a325635e72ebfe61d630636500664952d46de257bed0688c07b94b94ff861",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.696205+00:00"
+}

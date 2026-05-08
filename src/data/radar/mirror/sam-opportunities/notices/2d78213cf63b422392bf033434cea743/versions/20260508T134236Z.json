@@ -1,0 +1,33 @@
+{
+  "id": "sam-2d78213cf63b422392bf033434cea743",
+  "title": "Combined SSN/NOI: Flexible Laser Stabilization System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d78213cf63b422392bf033434cea743",
+  "opportunity_url": "https://sam.gov/opp/2d78213cf63b422392bf033434cea743/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/2d78213cf63b422392bf033434cea743/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "2d78213cf63b422392bf033434cea743",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "NIST-SS26-117",
+  "agency_path": "COMMERCE, DEPARTMENT OF.NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY",
+  "posted_date": "2026-05-07",
+  "response_deadline": "2026-05-21",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=2d78213cf63b422392bf033434cea743",
+  "detail_text": "Announcement Type : Special Notice Classification Code: 6695 Announcement Number: NIST-SS26-117 Subject: Notice of Intent to Noncompetitively Acquire Flexible Laser Stabilization System The NIST Quantum Measurement Division, Mass Force Group in the Physical Measurement Laboratory (PML) has recently begun a collaboration with other NIST groups developing primary thermometers based on measurements of the Doppler effect in atomic gases, specifically cesium and ytterbium. Accurately extracting the thermodynamic temperature from the Doppler absorption spectrum of a gas requires a laser-based optical frequency comb system with very low intensity, frequency, and phase noise. NIST requires a flexible digital laser servo to actively stabilize the laser system intensity, frequency, and phase noise using lock-in demodulation and proportional-integral-differential control. The digital laser servo must also provide instrumentation to test and characterize the intensity and frequency stabilization performance to ensure rigorous uncertainty analysis of the Doppler thermometer. This procurement is essential for meeting the goals of an IMS project. NIST intends to award a non-competitive contract to Liquid Instruments (UEI: MS6AHD4EF8D7) for a Flexible Laser Stabilization. This notice is not a request for a quotation. A solicitation document will not be issued, and quotations will not be requested. This acquisition is being conducted under the authority of RFO 12.102(a). The North American Industry Classification System (NAICS) code for this acquisition is 334516, Analytical Laboratory Instrument Manufacturing. NIST requires a solution that meets the following minimum requirements: Description: Flexible Laser Stabilization System Quantity: One (1) Technical Specifications At least 4 analog inputs with a bandwidth of at least 300 MHz and a sampling rate of at least 1 GSa/s per channel. ADC resolution of at least 16 bits. A switchable input impedance of 50 Ω or 1 MΩ. An input voltage range of at least 40 V peak-to-peak into 1 MOhm and at least 4 V peak-to-peak into 50 Ohm. Input coupling AC or DC. An input voltage noise less than 50 nV/√Hz at 100 Hz. At least 4 analog output channels with bandwidth at least 100 MHz. An output voltage range of at least 10 V peak-to-peak. An output sampling rate of at least 1 GSa/s per channel. An output DAC resolution of at least 16-bit. Must be capable of operating in the following configurations: Arbitrary waveform generator. Data logger. Digital filter box. Frequency response analyzer. Laser lock box. Lock-in amplifier. Oscilloscope. Phasemeter. PID controller. Spectrum analyzer. Waveform generator. FIR filter builder. Logic analyzer/pattern generator. Time & frequency analyzer. Neural Network Must be capable of operating up to 4 configurations (specified above) at a time. Software control via USB or WiFi. Lockable to a 10 MHz reference. After thorough evaluation, it has been determined that the Flexible Laser Stabilization System, from manufacturer, Liquid Instruments, is essential for several reasons: Many companies offer proportional-integral-differential control and lock-in amplifier solutions. However, only Liquid Instruments offers a solution with the flexibility, noise-performance, and bandwidth to meet the needs of the Deployable Doppler thermometry IMS project. To be technically acceptable, the flexible laser stabilization system must meet the following salient characteristics: 1) At least 4 analog inputs with a bandwidth of at least 300 MHz and a sampling rate of at least 1 GSa/s per channel; 2) 16-bit resolution for analog inputs and outputs with input voltage noise less than 50 nV/√Hz at 100 Hz; and 3) Must be capable of operating 4 instrument configurations in parallel. The most important configurations are lock-in amplifier, laser lock box, PID controller, spectrum analyzer, and time & frequency analyzer. Liquid Instruments is the only company that can provide the required flexible laser stabilization in accordance with the minimum listed above and therefore is the sole source. NIST conducted market research from March 2026 – May 2026 by conducting online searches and discussions with sources. The results of that market research revealed that only Liquid Instruments, 12526 High Bluff Dr Ste 150, San Diego, CA 92130 USA, UEI: MS6AHD4EF8D7 appears to be capable of meeting NIST’s requirements. The Government intends to issue a Sole Source Award to Liquid Instruments, under the authority of FAR 12.102(a). The North American Industry Classification System (NAICS) code for this acquisition is 334516. However, any sources that believe they are capable of meeting NIST’s minimum requirements are encouraged to respond to this notice by the response date to provide the following information at a minimum: Company Unique Entity Identifier number in https://sam.gov; details about what your company is capable of providing that meets or exceeds NIST’s minimum requirements; whether your company is an authorized reseller of the product or service being cited and evidence of such authorization; and any other information that can help NIST determine whether this requirement may be competitively satisfied.",
+  "detail_text_length": 5213,
+  "resource_links": [],
+  "resource_count": 0,
+  "resource_items": null,
+  "_mirror_hash": "77e73a04f9741792dc277988b1fa032290cd265353b402f3bea81d45231ae781",
+  "_mirror_run_id": "20260508T134236Z",
+  "_mirror_recorded_at": "2026-05-08T13:50:39.900203+00:00"
+}
