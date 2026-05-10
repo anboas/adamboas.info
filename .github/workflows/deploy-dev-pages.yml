@@ -3,9 +3,17 @@ name: deploy-dev-pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - src/generated/plausible-pageviews.json
-      - src/generated/plausible-funnel.json
+    paths:
+      - 'src/**'
+      - '!src/generated/plausible-pageviews.json'
+      - '!src/generated/plausible-funnel.json'
+      - 'public/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'astro.config.mjs'
+      - 'tsconfig.json'
+      - '.github/workflows/deploy-dev-pages.yml'
   workflow_dispatch:
 
 permissions:

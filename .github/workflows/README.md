@@ -12,9 +12,8 @@ This repo runs a mix of CI, ingest, and publishing workflows. This file captures
 
 - Whitepaper sync schedule is every 6 hours (`17 */6 * * *`) instead of hourly.
 - Plausible JSON fetch in `sync-whitepaper.yml` runs only on `workflow_dispatch` (manual) to avoid scheduled analytics churn.
-- `deploy-dev-pages.yml` ignores push events where only these files changed:
-  - `src/generated/plausible-pageviews.json`
-  - `src/generated/plausible-funnel.json`
+- `deploy-dev-pages.yml` is path-scoped to site-affecting files (`src/**`, `public/**`, scripts/config/package lockfiles) and excludes Plausible generated JSON deltas.
+- Quality workflows (`a11y`, `linkcheck`, `lighthouse`) are path-scoped on push/PR to run only when site/runtime/test/workflow inputs change.
 
 ## Permission model
 

@@ -3,7 +3,29 @@ name: lighthouse
 on:
   push:
     branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'lighthouserc.json'
+      - 'playwright.config.ts'
+      - 'astro.config.mjs'
+      - '.github/workflows/lighthouse.yml'
   pull_request:
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'lighthouserc.json'
+      - 'playwright.config.ts'
+      - 'astro.config.mjs'
+      - '.github/workflows/lighthouse.yml'
   schedule:
     - cron: '11 7 * * *'
   workflow_dispatch:
