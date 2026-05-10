@@ -40,6 +40,8 @@ export const GET: APIRoute = () => {
 			events_surface: absoluteUrl('/events/agent.json'),
 			opportunities_surface: absoluteUrl('/opportunities/agent.json'),
 			opportunities_export: absoluteUrl('/opportunities/export.json'),
+			opportunities_export_sam: absoluteUrl('/opportunities/export-sam.json'),
+			opportunities_export_sbir: absoluteUrl('/opportunities/export-sbir.json'),
 			rss: absoluteUrl('/rss.xml'),
 			sitemap: absoluteUrl('/sitemap-index.xml'),
 		},

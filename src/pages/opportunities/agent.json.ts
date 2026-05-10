@@ -20,6 +20,11 @@ export const GET: APIRoute = () => {
 				`${absoluteUrl('/opportunities/')}?source=sam&view=agent`,
 				`${absoluteUrl('/opportunities/')}?source=sbir&view=agent`,
 			],
+			export_endpoints: {
+				combined: absoluteUrl('/opportunities/export.json'),
+				sam: absoluteUrl('/opportunities/export-sam.json'),
+				sbir: absoluteUrl('/opportunities/export-sbir.json'),
+			},
 		},
 		crawl_hints: {
 			refresh_hint: 'every-4h',

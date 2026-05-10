@@ -36,6 +36,8 @@ export const GET: APIRoute = () => {
 		`- events surface map: ${absoluteUrl('/events/agent.json')}`,
 		`- opportunities surface map: ${absoluteUrl('/opportunities/agent.json')}`,
 		`- opportunities export: ${absoluteUrl('/opportunities/export.json')}`,
+		`- opportunities export (sam): ${absoluteUrl('/opportunities/export-sam.json')}`,
+		`- opportunities export (sbir): ${absoluteUrl('/opportunities/export-sbir.json')}`,
 		`- integrity manifest: ${absoluteUrl('/integrity.json')}`,
 		`- agent priority: ${absoluteUrl('/agent-priority.json')}`,
 		`- well-known manifest: ${absoluteUrl('/.well-known/agent-manifest.json')}`,

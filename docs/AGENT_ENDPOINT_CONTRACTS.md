@@ -38,8 +38,17 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
 
 - `/opportunities/export.json`
   - normalized opportunities export contract
+  - includes `exports.sam` and `exports.sbir` links
   - `sources.sam.mode = "embedded"` with `count` and normalized `rows`
   - `sources.sbir.mode` + remote artifact links (`topics_url`, `summary_url`, `report_url`)
+
+- `/opportunities/export-sam.json`
+  - deterministic SAM-only export
+  - includes `count` and normalized `rows` with `source = "sam"`
+
+- `/opportunities/export-sbir.json`
+  - deterministic SBIR-only artifact pointer export
+  - includes `mode = "remote-artifact"` and `artifacts.*` URLs with `source = "sbir"`
 
 ## Change stream contracts
 

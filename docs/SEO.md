@@ -47,6 +47,7 @@ Machine-facing endpoints now available:
 - `/writing/manifest.json` (structured writing corpus index)
 - `/writing/agent.json`, `/events/agent.json`, `/opportunities/agent.json` (surface-specific extraction + refresh hints)
 - `/opportunities/export.json` (normalized opportunity export for source-aware downstream ingestion)
+- `/opportunities/export-sam.json` and `/opportunities/export-sbir.json` (deterministic source-specific exports for agent pipelines)
 - `/integrity.json` (source integrity/provenance hashes for machine endpoints)
 - `/agent-priority.json` (crawl/ingestion tiers + refresh hints)
 - `/for-agents/` (human-readable hub for agent endpoints)

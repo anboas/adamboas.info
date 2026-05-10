@@ -4,7 +4,7 @@ const base = process.env.SITE_BASE || 'http://127.0.0.1:4321';
 
 const checks = [
 	{ path: '/llms.txt', type: 'text', mustContain: ['/agents.json', '/writing/manifest.json'] },
-	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json', '/writing/agent.json', '/opportunities/export.json'] },
+	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json', '/writing/agent.json', '/opportunities/export.json', '/opportunities/export-sam.json', '/opportunities/export-sbir.json'] },
 	{ path: '/agents.json', type: 'json', requiredKeys: ['schema_version', 'resources', 'preferred_ingestion_order'], validate: validateAgents },
 	{ path: '/agent-priority.json', type: 'json', requiredKeys: ['schema_version', 'ingestion_tiers', 'crawler_hints'], validate: validatePriority },
 	{ path: '/changes.json', type: 'json', requiredKeys: ['release_version', 'event_log', 'discovery_endpoints'], validate: validateChanges },
@@ -13,7 +13,9 @@ const checks = [
 	{ path: '/writing/agent.json', type: 'json', requiredKeys: ['surface', 'primary_manifest', 'crawl_hints'], validate: validateWritingSurface },
 	{ path: '/events/agent.json', type: 'json', requiredKeys: ['surface', 'related_routes', 'crawl_hints'], validate: validateEventsSurface },
 	{ path: '/opportunities/agent.json', type: 'json', requiredKeys: ['surface', 'source_routes', 'crawl_hints'], validate: validateOpportunitiesSurface },
-	{ path: '/opportunities/export.json', type: 'json', requiredKeys: ['schema_version', 'sources'], validate: validateOpportunitiesExport },
+	{ path: '/opportunities/export.json', type: 'json', requiredKeys: ['schema_version', 'sources', 'exports'], validate: validateOpportunitiesExport },
+	{ path: '/opportunities/export-sam.json', type: 'json', requiredKeys: ['schema_version', 'source', 'count', 'rows'], validate: validateOpportunitiesExportSam },
+	{ path: '/opportunities/export-sbir.json', type: 'json', requiredKeys: ['schema_version', 'source', 'mode', 'artifacts'], validate: validateOpportunitiesExportSbir },
 	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'] },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
 	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'], validate: validateWellKnownManifest },
@@ -45,6 +47,9 @@ function validateAgents(data) {
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/writing/agent.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/events/agent.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/agent.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sam.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sbir.json', '/agents.json preferred_ingestion_order');
 
 	assert(Array.isArray(data.resources) && data.resources.length >= 5, '/agents.json resources must be non-empty array');
 	const ids = new Set();
@@ -88,6 +93,8 @@ function validateChanges(data) {
 		'events_surface',
 		'opportunities_surface',
 		'opportunities_export',
+		'opportunities_export_sam',
+		'opportunities_export_sbir',
 	];
 	for (const key of requiredEndpoints) {
 		assertAbsUrl(data.discovery_endpoints?.[key], `/changes.json discovery_endpoints.${key}`);
@@ -140,8 +147,10 @@ function validateOpportunitiesSurface(data) {
 }
 
 function validateOpportunitiesExport(data) {
-	assert(data.schema_version === '1.0', '/opportunities/export.json schema_version must be 1.0');
+	assert(data.schema_version === '1.1', '/opportunities/export.json schema_version must be 1.1');
 	assertAbsUrl(data.canonical, '/opportunities/export.json canonical');
+	assertAbsUrl(data.exports?.sam, '/opportunities/export.json exports.sam');
+	assertAbsUrl(data.exports?.sbir, '/opportunities/export.json exports.sbir');
 	assert(data.sources?.sam?.mode === 'embedded', '/opportunities/export.json sources.sam.mode should be embedded');
 	assert(typeof data.sources?.sam?.count === 'number' && data.sources.sam.count >= 1, '/opportunities/export.json sam count invalid');
 	assert(Array.isArray(data.sources?.sam?.rows), '/opportunities/export.json sam rows must be array');
@@ -153,6 +162,26 @@ function validateOpportunitiesExport(data) {
 	assertAbsUrl(data.sources?.sbir?.ui_url, '/opportunities/export.json sbir ui_url');
 }
 
+function validateOpportunitiesExportSam(data) {
+	assert(data.schema_version === '1.0', '/opportunities/export-sam.json schema_version must be 1.0');
+	assert(data.source === 'sam', '/opportunities/export-sam.json source must be sam');
+	assertAbsUrl(data.canonical, '/opportunities/export-sam.json canonical');
+	assert(typeof data.count === 'number' && data.count >= 1, '/opportunities/export-sam.json count invalid');
+	assert(Array.isArray(data.rows), '/opportunities/export-sam.json rows must be array');
+	assert(data.rows.length === data.count, '/opportunities/export-sam.json count mismatch');
+}
+
+function validateOpportunitiesExportSbir(data) {
+	assert(data.schema_version === '1.0', '/opportunities/export-sbir.json schema_version must be 1.0');
+	assert(data.source === 'sbir', '/opportunities/export-sbir.json source must be sbir');
+	assert(data.mode === 'remote-artifact', '/opportunities/export-sbir.json mode must be remote-artifact');
+	assertAbsUrl(data.canonical, '/opportunities/export-sbir.json canonical');
+	assertAbsUrl(data.artifacts?.topics_url, '/opportunities/export-sbir.json artifacts.topics_url');
+	assertAbsUrl(data.artifacts?.summary_url, '/opportunities/export-sbir.json artifacts.summary_url');
+	assertAbsUrl(data.artifacts?.report_url, '/opportunities/export-sbir.json artifacts.report_url');
+	assertAbsUrl(data.artifacts?.manifest_url, '/opportunities/export-sbir.json artifacts.manifest_url');
+}
+
 function validateWellKnownManifest(data) {
 	assertAbsUrl(data.canonical_manifest, '/.well-known/agent-manifest.json canonical_manifest');
 	assertAbsUrl(data.discovery?.llms, '/.well-known/agent-manifest.json discovery.llms');
@@ -162,6 +191,9 @@ function validateWellKnownManifest(data) {
 	for (const mapUrl of data.discovery.surface_maps) assertAbsUrl(mapUrl, '/.well-known/agent-manifest.json discovery.surface_maps entry');
 	assert(Array.isArray(data.discovery?.exports), '/.well-known/agent-manifest.json discovery.exports must be array');
 	for (const exportUrl of data.discovery.exports) assertAbsUrl(exportUrl, '/.well-known/agent-manifest.json discovery.exports entry');
+	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export.json', '/.well-known/agent-manifest.json discovery.exports');
+	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sam.json', '/.well-known/agent-manifest.json discovery.exports');
+	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sbir.json', '/.well-known/agent-manifest.json discovery.exports');
 }
 
 async function get(path) {
