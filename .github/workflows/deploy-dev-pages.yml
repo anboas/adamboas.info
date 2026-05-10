@@ -3,6 +3,9 @@ name: deploy-dev-pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - src/generated/plausible-pageviews.json
+      - src/generated/plausible-funnel.json
   workflow_dispatch:
 
 permissions:
