@@ -19,10 +19,12 @@ on:
       - 'src/pages/opportunities/export-sam.json.ts'
       - 'src/pages/opportunities/export-sbir.json.ts'
       - 'src/pages/.well-known/**'
+      - 'src/pages/schemas/*.ts'
       - 'src/data/discovery-events.json'
       - 'src/components/BaseHead.astro'
       - 'src/layouts/SiteLayout.astro'
       - 'scripts/check-agent-endpoints.mjs'
+      - 'scripts/check-agent-crawl.mjs'
       - 'scripts/lint-discovery-events.mjs'
       - '.github/workflows/agent-discovery.yml'
       - 'package.json'
@@ -43,10 +45,12 @@ on:
       - 'src/pages/opportunities/export-sam.json.ts'
       - 'src/pages/opportunities/export-sbir.json.ts'
       - 'src/pages/.well-known/**'
+      - 'src/pages/schemas/*.ts'
       - 'src/data/discovery-events.json'
       - 'src/components/BaseHead.astro'
       - 'src/layouts/SiteLayout.astro'
       - 'scripts/check-agent-endpoints.mjs'
+      - 'scripts/check-agent-crawl.mjs'
       - 'scripts/lint-discovery-events.mjs'
       - '.github/workflows/agent-discovery.yml'
       - 'package.json'
@@ -81,7 +85,7 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Validate machine endpoints
+      - name: Validate machine endpoints + crawl path
         run: |
           set -euo pipefail
           npm run preview -- --host 127.0.0.1 --port 4321 >/tmp/astro-preview.log 2>&1 &
@@ -96,3 +100,4 @@ jobs:
           done
 
           SITE_BASE=http://127.0.0.1:4321 npm run check:agent-endpoints
+          SITE_BASE=http://127.0.0.1:4321 npm run check:agent-crawl

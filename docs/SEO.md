@@ -52,6 +52,7 @@ Machine-facing endpoints now available:
 - `/agent-priority.json` (crawl/ingestion tiers + refresh hints)
 - `/for-agents/` (human-readable hub for agent endpoints)
 - `/.well-known/agent-manifest.json` and `/.well-known/llms.txt` aliases for well-known discovery patterns
+- `/schemas/*.schema.json` contract documents for agent-facing endpoint formats
 
 These are linked from page head metadata and surfaced in `robots.txt` comments plus the human sitemap.
 

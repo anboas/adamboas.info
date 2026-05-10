@@ -1,0 +1,39 @@
+import type { APIRoute } from 'astro';
+import { absoluteUrl } from '../../config/site';
+
+export const prerender = true;
+
+export const GET: APIRoute = () => {
+	const schema = {
+		$schema: 'https://json-schema.org/draft/2020-12/schema',
+		$id: absoluteUrl('/schemas/agent-priority.schema.json'),
+		title: 'Agent Priority Map',
+		type: 'object',
+		required: ['schema_version', 'ingestion_tiers', 'crawler_hints'],
+		properties: {
+			schema_version: { type: 'string' },
+			ingestion_tiers: {
+				type: 'array',
+				minItems: 1,
+				items: {
+					type: 'object',
+					required: ['tier', 'reason', 'endpoints', 'refresh_hint'],
+					properties: {
+						tier: { type: 'number' },
+						reason: { type: 'string' },
+						endpoints: { type: 'array', items: { type: 'string', format: 'uri' }, minItems: 1 },
+						refresh_hint: { type: 'string' },
+					},
+				},
+			},
+			crawler_hints: {
+				type: 'object',
+				required: ['prefer_canonical', 'respect_noindex', 'agent_view_query'],
+			},
+		},
+	};
+
+	return new Response(JSON.stringify(schema, null, 2), {
+		headers: { 'Content-Type': 'application/schema+json; charset=utf-8' },
+	});
+};

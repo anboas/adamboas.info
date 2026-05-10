@@ -20,6 +20,10 @@ const checks = [
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
 	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'], validate: validateWellKnownManifest },
 	{ path: '/.well-known/llms.txt', type: 'text', mustContain: ['/llms.txt'] },
+	{ path: '/schemas/agents.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
+	{ path: '/schemas/agent-priority.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
+	{ path: '/schemas/changes.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
+	{ path: '/schemas/opportunities-export.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 ];
 
 function assert(condition, message) {
@@ -95,6 +99,10 @@ function validateChanges(data) {
 		'opportunities_export',
 		'opportunities_export_sam',
 		'opportunities_export_sbir',
+		'schema_agents',
+		'schema_priority',
+		'schema_changes',
+		'schema_opportunities_export',
 	];
 	for (const key of requiredEndpoints) {
 		assertAbsUrl(data.discovery_endpoints?.[key], `/changes.json discovery_endpoints.${key}`);
@@ -194,6 +202,18 @@ function validateWellKnownManifest(data) {
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sam.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sbir.json', '/.well-known/agent-manifest.json discovery.exports');
+	assert(Array.isArray(data.discovery?.schemas), '/.well-known/agent-manifest.json discovery.schemas must be array');
+	for (const schemaUrl of data.discovery.schemas) assertAbsUrl(schemaUrl, '/.well-known/agent-manifest.json discovery.schemas entry');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/agents.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/agent-priority.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/changes.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+}
+
+function validateSchemaDoc(data) {
+	assert(typeof data.$schema === 'string' && data.$schema.includes('json-schema.org'), 'schema doc missing valid $schema');
+	assert(typeof data.$id === 'string' && data.$id.length > 0, 'schema doc missing $id');
+	assert(data.type === 'object', 'schema doc top-level type must be object');
 }
 
 function validateIntegrity(data) {

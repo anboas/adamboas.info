@@ -1,0 +1,49 @@
+import type { APIRoute } from 'astro';
+import { absoluteUrl } from '../../config/site';
+
+export const prerender = true;
+
+export const GET: APIRoute = () => {
+	const schema = {
+		$schema: 'https://json-schema.org/draft/2020-12/schema',
+		$id: absoluteUrl('/schemas/agents.schema.json'),
+		title: 'Agent Manifest',
+		type: 'object',
+		required: ['schema_version', 'site', 'discovery', 'resources', 'preferred_ingestion_order'],
+		properties: {
+			schema_version: { type: 'string' },
+			site: { type: 'string', format: 'uri' },
+			discovery: {
+				type: 'object',
+				required: ['llms', 'llms_full', 'sitemap', 'rss'],
+				properties: {
+					llms: { type: 'string', format: 'uri' },
+					llms_full: { type: 'string', format: 'uri' },
+					sitemap: { type: 'string', format: 'uri' },
+					rss: { type: 'string', format: 'uri' },
+				},
+			},
+			resources: {
+				type: 'array',
+				items: {
+					type: 'object',
+					required: ['id', 'type', 'url'],
+					properties: {
+						id: { type: 'string' },
+						type: { type: 'string' },
+						url: { type: 'string', format: 'uri' },
+					},
+				},
+			},
+			preferred_ingestion_order: {
+				type: 'array',
+				items: { type: 'string', format: 'uri' },
+				minItems: 1,
+			},
+		},
+	};
+
+	return new Response(JSON.stringify(schema, null, 2), {
+		headers: { 'Content-Type': 'application/schema+json; charset=utf-8' },
+	});
+};

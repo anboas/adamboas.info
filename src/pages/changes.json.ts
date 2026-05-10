@@ -44,6 +44,10 @@ export const GET: APIRoute = () => {
 			opportunities_export_sbir: absoluteUrl('/opportunities/export-sbir.json'),
 			rss: absoluteUrl('/rss.xml'),
 			sitemap: absoluteUrl('/sitemap-index.xml'),
+			schema_agents: absoluteUrl('/schemas/agents.schema.json'),
+			schema_priority: absoluteUrl('/schemas/agent-priority.schema.json'),
+			schema_changes: absoluteUrl('/schemas/changes.schema.json'),
+			schema_opportunities_export: absoluteUrl('/schemas/opportunities-export.schema.json'),
 		},
 	};
 

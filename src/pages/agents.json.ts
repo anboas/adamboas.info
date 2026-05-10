@@ -55,6 +55,10 @@ export const GET: APIRoute = () => {
 			{ id: 'opportunities', type: 'surface', url: absoluteUrl('/opportunities/') },
 			{ id: 'integrity', type: 'integrity', url: absoluteUrl('/integrity.json') },
 			{ id: 'priority', type: 'priority', url: absoluteUrl('/agent-priority.json') },
+			{ id: 'schema-agents', type: 'schema', url: absoluteUrl('/schemas/agents.schema.json') },
+			{ id: 'schema-priority', type: 'schema', url: absoluteUrl('/schemas/agent-priority.schema.json') },
+			{ id: 'schema-changes', type: 'schema', url: absoluteUrl('/schemas/changes.schema.json') },
+			{ id: 'schema-opportunities-export', type: 'schema', url: absoluteUrl('/schemas/opportunities-export.schema.json') },
 		],
 		agent_view_query: {
 			param: 'view',

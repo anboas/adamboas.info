@@ -10,6 +10,13 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
 - `/.well-known/agent-manifest.json`
 - `/.well-known/llms.txt`
 
+## Schema contracts
+
+- `/schemas/agents.schema.json`
+- `/schemas/agent-priority.schema.json`
+- `/schemas/changes.schema.json`
+- `/schemas/opportunities-export.schema.json`
+
 ## Priority + trust
 
 - `/agent-priority.json`
