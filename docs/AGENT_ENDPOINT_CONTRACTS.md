@@ -17,6 +17,7 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
   - each tier must include non-empty absolute URL `endpoints`
 - `/integrity.json`
   - must include `tracked_source_integrity`
+  - must cover all core discovery sources (llms, manifests, priority, changes, surface maps, opportunities exports, well-known aliases, and discovery event source)
 
 ## Surface maps
 

@@ -16,7 +16,7 @@ const checks = [
 	{ path: '/opportunities/export.json', type: 'json', requiredKeys: ['schema_version', 'sources', 'exports'], validate: validateOpportunitiesExport },
 	{ path: '/opportunities/export-sam.json', type: 'json', requiredKeys: ['schema_version', 'source', 'count', 'rows'], validate: validateOpportunitiesExportSam },
 	{ path: '/opportunities/export-sbir.json', type: 'json', requiredKeys: ['schema_version', 'source', 'mode', 'artifacts'], validate: validateOpportunitiesExportSbir },
-	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'] },
+	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'], validate: validateIntegrity },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
 	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'], validate: validateWellKnownManifest },
 	{ path: '/.well-known/llms.txt', type: 'text', mustContain: ['/llms.txt'] },
@@ -194,6 +194,38 @@ function validateWellKnownManifest(data) {
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sam.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sbir.json', '/.well-known/agent-manifest.json discovery.exports');
+}
+
+function validateIntegrity(data) {
+	assert(Array.isArray(data.tracked_source_integrity), '/integrity.json tracked_source_integrity must be array');
+	const expectedPaths = [
+		'src/pages/llms.txt.ts',
+		'src/pages/llms-full.txt.ts',
+		'src/pages/agents.json.ts',
+		'src/pages/agent-priority.json.ts',
+		'src/pages/changes.json.ts',
+		'src/pages/changes.jsonl.ts',
+		'src/pages/writing/manifest.json.ts',
+		'src/pages/writing/agent.json.ts',
+		'src/pages/events/agent.json.ts',
+		'src/pages/opportunities/agent.json.ts',
+		'src/pages/opportunities/export.json.ts',
+		'src/pages/opportunities/export-sam.json.ts',
+		'src/pages/opportunities/export-sbir.json.ts',
+		'src/pages/.well-known/agent-manifest.json.ts',
+		'src/pages/.well-known/llms.txt.ts',
+		'src/pages/for-agents/index.astro',
+		'src/data/discovery-events.json',
+	];
+	const pathSet = new Set(data.tracked_source_integrity.map((item) => item.path));
+	for (const expected of expectedPaths) {
+		assert(pathSet.has(expected), `/integrity.json missing tracked file: ${expected}`);
+	}
+	for (const item of data.tracked_source_integrity) {
+		assert(typeof item.path === 'string' && item.path.length > 0, '/integrity.json item.path missing');
+		assert(typeof item.sha256 === 'string' && /^[a-f0-9]{64}$/.test(item.sha256), `/integrity.json invalid sha256 for ${item.path}`);
+		assert(typeof item.bytes === 'number' && item.bytes > 0, `/integrity.json invalid bytes for ${item.path}`);
+	}
 }
 
 async function get(path) {

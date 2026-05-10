@@ -62,5 +62,13 @@
     "release": "2026.05",
     "summary": "Added deterministic per-source opportunities exports for SAM and SBIR pipelines",
     "links": ["/opportunities/export-sam.json", "/opportunities/export-sbir.json", "/opportunities/export.json"]
+  },
+  {
+    "id": "integrity-coverage-expansion",
+    "ts": "2026-05-10T22:18:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Expanded integrity coverage to include priority, well-known aliases, surface maps, exports, and discovery-event source",
+    "links": ["/integrity.json", "/agent-priority.json", "/.well-known/agent-manifest.json", "/opportunities/export.json"]
   }
 ]

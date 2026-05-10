@@ -11,10 +11,21 @@ const trackedFiles = [
 	'src/pages/llms.txt.ts',
 	'src/pages/llms-full.txt.ts',
 	'src/pages/agents.json.ts',
+	'src/pages/agent-priority.json.ts',
 	'src/pages/changes.json.ts',
 	'src/pages/changes.jsonl.ts',
+	'src/pages/integrity.json.ts',
 	'src/pages/writing/manifest.json.ts',
+	'src/pages/writing/agent.json.ts',
+	'src/pages/events/agent.json.ts',
+	'src/pages/opportunities/agent.json.ts',
+	'src/pages/opportunities/export.json.ts',
+	'src/pages/opportunities/export-sam.json.ts',
+	'src/pages/opportunities/export-sbir.json.ts',
+	'src/pages/.well-known/agent-manifest.json.ts',
+	'src/pages/.well-known/llms.txt.ts',
 	'src/pages/for-agents/index.astro',
+	'src/data/discovery-events.json',
 ];
 
 async function hashFile(relativePath: string) {
