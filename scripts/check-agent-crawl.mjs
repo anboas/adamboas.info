@@ -44,6 +44,7 @@ async function run() {
 		'/opportunities/export-sam-core.json',
 		'/opportunities/export-sbir.json',
 		'/opportunities/freshness.json',
+		'/opportunities/lineage.json',
 		'/schemas/agents.schema.json',
 		'/schemas/agent-priority.schema.json',
 		'/schemas/changes.schema.json',
@@ -51,6 +52,7 @@ async function run() {
 		'/schemas/opportunities-export-sam.schema.json',
 		'/schemas/opportunities-export-sbir.schema.json',
 		'/schemas/opportunities-freshness.schema.json',
+		'/schemas/opportunities-lineage.schema.json',
 	];
 
 	for (const path of mustReach) {

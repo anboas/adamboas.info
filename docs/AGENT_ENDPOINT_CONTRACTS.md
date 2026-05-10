@@ -19,6 +19,7 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
 - `/schemas/opportunities-export-sam.schema.json`
 - `/schemas/opportunities-export-sbir.schema.json`
 - `/schemas/opportunities-freshness.schema.json`
+- `/schemas/opportunities-lineage.schema.json`
 
 ## Priority + trust
 
@@ -69,6 +70,10 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
 - `/opportunities/freshness.json`
   - lightweight freshness/lineage metadata for poll-first clients
   - includes source-level recency pointers and export links
+
+- `/opportunities/lineage.json`
+  - deterministic snapshot IDs + provenance pointers for export variants
+  - supports cache/replay/diff workflows without pulling full payloads
 
 ## Change stream contracts
 

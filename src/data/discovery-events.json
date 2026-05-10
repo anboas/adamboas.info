@@ -94,5 +94,13 @@
     "release": "2026.05",
     "summary": "Added lightweight opportunities freshness endpoint for poll-first agent workflows",
     "links": ["/opportunities/freshness.json", "/opportunities/export-sam.json", "/opportunities/export-sbir.json"]
+  },
+  {
+    "id": "opportunities-lineage-endpoint",
+    "ts": "2026-05-10T23:10:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Added dedicated opportunities lineage endpoint and schema for deterministic cache/replay decisions",
+    "links": ["/opportunities/lineage.json", "/schemas/opportunities-lineage.schema.json", "/opportunities/freshness.json"]
   }
 ]

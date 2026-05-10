@@ -24,6 +24,7 @@ const trackedFiles = [
 	'src/pages/opportunities/export-sam-core.json.ts',
 	'src/pages/opportunities/export-sbir.json.ts',
 	'src/pages/opportunities/freshness.json.ts',
+	'src/pages/opportunities/lineage.json.ts',
 	'src/pages/.well-known/agent-manifest.json.ts',
 	'src/pages/.well-known/llms.txt.ts',
 	'src/pages/schemas/agents.schema.json.ts',
@@ -33,6 +34,7 @@ const trackedFiles = [
 	'src/pages/schemas/opportunities-export-sam.schema.json.ts',
 	'src/pages/schemas/opportunities-export-sbir.schema.json.ts',
 	'src/pages/schemas/opportunities-freshness.schema.json.ts',
+	'src/pages/schemas/opportunities-lineage.schema.json.ts',
 	'src/pages/for-agents/index.astro',
 	'src/data/discovery-events.json',
 ];

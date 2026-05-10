@@ -37,6 +37,7 @@ export const GET: APIRoute = () => {
 			absoluteUrl('/opportunities/export-sam-core.json'),
 			absoluteUrl('/opportunities/export-sbir.json'),
 			absoluteUrl('/opportunities/freshness.json'),
+			absoluteUrl('/opportunities/lineage.json'),
 			absoluteUrl('/writing/'),
 			absoluteUrl('/capabilities/'),
 			absoluteUrl('/events/'),
@@ -53,6 +54,7 @@ export const GET: APIRoute = () => {
 			{ id: 'opportunities-export-sam-core', type: 'export', url: absoluteUrl('/opportunities/export-sam-core.json') },
 			{ id: 'opportunities-export-sbir', type: 'export', url: absoluteUrl('/opportunities/export-sbir.json') },
 			{ id: 'opportunities-freshness', type: 'metadata', url: absoluteUrl('/opportunities/freshness.json') },
+			{ id: 'opportunities-lineage', type: 'metadata', url: absoluteUrl('/opportunities/lineage.json') },
 			{ id: 'changes-json', type: 'changelog', url: absoluteUrl('/changes.json') },
 			{ id: 'changes-jsonl', type: 'stream', url: absoluteUrl('/changes.jsonl') },
 			{ id: 'events', type: 'surface', url: absoluteUrl('/events/') },
@@ -66,6 +68,7 @@ export const GET: APIRoute = () => {
 			{ id: 'schema-opportunities-export-sam', type: 'schema', url: absoluteUrl('/schemas/opportunities-export-sam.schema.json') },
 			{ id: 'schema-opportunities-export-sbir', type: 'schema', url: absoluteUrl('/schemas/opportunities-export-sbir.schema.json') },
 			{ id: 'schema-opportunities-freshness', type: 'schema', url: absoluteUrl('/schemas/opportunities-freshness.schema.json') },
+			{ id: 'schema-opportunities-lineage', type: 'schema', url: absoluteUrl('/schemas/opportunities-lineage.schema.json') },
 		],
 		agent_view_query: {
 			param: 'view',

@@ -18,6 +18,7 @@ const checks = [
 	{ path: '/opportunities/export-sam-core.json', type: 'json', requiredKeys: ['schema_version', 'source', 'profile', 'rows'], validate: validateOpportunitiesExportSamCore },
 	{ path: '/opportunities/export-sbir.json', type: 'json', requiredKeys: ['schema_version', 'source', 'mode', 'artifacts'], validate: validateOpportunitiesExportSbir },
 	{ path: '/opportunities/freshness.json', type: 'json', requiredKeys: ['schema_version', 'sources'], validate: validateOpportunitiesFreshness },
+	{ path: '/opportunities/lineage.json', type: 'json', requiredKeys: ['schema_version', 'lineage'], validate: validateOpportunitiesLineage },
 	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'], validate: validateIntegrity },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
 	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'], validate: validateWellKnownManifest },
@@ -29,6 +30,7 @@ const checks = [
 	{ path: '/schemas/opportunities-export-sam.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 	{ path: '/schemas/opportunities-export-sbir.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 	{ path: '/schemas/opportunities-freshness.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
+	{ path: '/schemas/opportunities-lineage.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 ];
 
 function assert(condition, message) {
@@ -61,6 +63,7 @@ function validateAgents(data) {
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sam-core.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sbir.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/freshness.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/lineage.json', '/agents.json preferred_ingestion_order');
 
 	assert(Array.isArray(data.resources) && data.resources.length >= 5, '/agents.json resources must be non-empty array');
 	const ids = new Set();
@@ -108,6 +111,7 @@ function validateChanges(data) {
 		'opportunities_export_sam_core',
 		'opportunities_export_sbir',
 		'opportunities_freshness',
+		'opportunities_lineage',
 		'schema_agents',
 		'schema_priority',
 		'schema_changes',
@@ -115,6 +119,7 @@ function validateChanges(data) {
 		'schema_opportunities_export_sam',
 		'schema_opportunities_export_sbir',
 		'schema_opportunities_freshness',
+		'schema_opportunities_lineage',
 	];
 	for (const key of requiredEndpoints) {
 		assertAbsUrl(data.discovery_endpoints?.[key], `/changes.json discovery_endpoints.${key}`);
@@ -222,6 +227,16 @@ function validateOpportunitiesFreshness(data) {
 	assertAbsUrl(data.sources?.sbir?.export, '/opportunities/freshness.json sbir export');
 }
 
+function validateOpportunitiesLineage(data) {
+	assert(data.schema_version === '1.0', '/opportunities/lineage.json schema_version must be 1.0');
+	assert(typeof data.lineage?.sam?.full_snapshot_id === 'string' && /^[a-f0-9]{64}$/.test(data.lineage.sam.full_snapshot_id), '/opportunities/lineage.json sam full_snapshot_id invalid');
+	assert(typeof data.lineage?.sam?.core_snapshot_id === 'string' && /^[a-f0-9]{64}$/.test(data.lineage.sam.core_snapshot_id), '/opportunities/lineage.json sam core_snapshot_id invalid');
+	assertAbsUrl(data.lineage?.sam?.export_full, '/opportunities/lineage.json sam export_full');
+	assertAbsUrl(data.lineage?.sam?.export_core, '/opportunities/lineage.json sam export_core');
+	assertAbsUrl(data.lineage?.sbir?.manifest_url, '/opportunities/lineage.json sbir manifest_url');
+	assertAbsUrl(data.lineage?.sbir?.export, '/opportunities/lineage.json sbir export');
+}
+
 function validateOpportunitiesExportSbir(data) {
 	assert(data.schema_version === '1.1', '/opportunities/export-sbir.json schema_version must be 1.1');
 	assert(data.source === 'sbir', '/opportunities/export-sbir.json source must be sbir');
@@ -251,6 +266,7 @@ function validateWellKnownManifest(data) {
 	assert(Array.isArray(data.discovery?.metadata), '/.well-known/agent-manifest.json discovery.metadata must be array');
 	for (const metadataUrl of data.discovery.metadata) assertAbsUrl(metadataUrl, '/.well-known/agent-manifest.json discovery.metadata entry');
 	assertHasEndpointWithPath(data.discovery.metadata, '/opportunities/freshness.json', '/.well-known/agent-manifest.json discovery.metadata');
+	assertHasEndpointWithPath(data.discovery.metadata, '/opportunities/lineage.json', '/.well-known/agent-manifest.json discovery.metadata');
 	assert(Array.isArray(data.discovery?.schemas), '/.well-known/agent-manifest.json discovery.schemas must be array');
 	for (const schemaUrl of data.discovery.schemas) assertAbsUrl(schemaUrl, '/.well-known/agent-manifest.json discovery.schemas entry');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/agents.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
@@ -260,6 +276,7 @@ function validateWellKnownManifest(data) {
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export-sam.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export-sbir.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-freshness.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-lineage.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 }
 
 function validateSchemaDoc(data) {
@@ -286,6 +303,7 @@ function validateIntegrity(data) {
 		'src/pages/opportunities/export-sam-core.json.ts',
 		'src/pages/opportunities/export-sbir.json.ts',
 		'src/pages/opportunities/freshness.json.ts',
+		'src/pages/opportunities/lineage.json.ts',
 		'src/pages/.well-known/agent-manifest.json.ts',
 		'src/pages/.well-known/llms.txt.ts',
 		'src/pages/schemas/agents.schema.json.ts',
@@ -295,6 +313,7 @@ function validateIntegrity(data) {
 		'src/pages/schemas/opportunities-export-sam.schema.json.ts',
 		'src/pages/schemas/opportunities-export-sbir.schema.json.ts',
 		'src/pages/schemas/opportunities-freshness.schema.json.ts',
+		'src/pages/schemas/opportunities-lineage.schema.json.ts',
 		'src/pages/for-agents/index.astro',
 		'src/data/discovery-events.json',
 	];
