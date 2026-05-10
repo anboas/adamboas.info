@@ -30,7 +30,7 @@ jobs:
         run: python3 scripts/enrich-opportunities-fpds-alignment.py
 
       - name: Upload FPDS alignment artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: opportunities-fpds-alignment
           path: |

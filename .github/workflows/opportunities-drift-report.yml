@@ -30,7 +30,7 @@ jobs:
         run: python3 scripts/generate-opportunities-drift-report.py
 
       - name: Upload drift artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: opportunities-drift-report
           path: |
