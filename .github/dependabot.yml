@@ -18,7 +18,11 @@ updates:
       day: "monday"
       time: "09:15"
       timezone: "America/New_York"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 6
+    ignore:
+      - dependency-name: "astro"
+        update-types:
+          - "version-update:semver-major"
     labels:
       - "dependencies"
       - "npm"
