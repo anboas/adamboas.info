@@ -45,7 +45,7 @@
 		"check:agent-crawl": "node scripts/check-agent-crawl.mjs"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^4.3.13",
+		"@astrojs/mdx": "^5.0.4",
 		"@astrojs/rss": "^4.0.15",
 		"@astrojs/sitemap": "^3.7.0",
 		"@tailwindcss/vite": "^4.1.18",
