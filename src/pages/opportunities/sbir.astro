@@ -1,0 +1,26 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { withBase } from '../../utils/withBase';
+import { absoluteUrl } from '../../config/site';
+
+const target = withBase('/opportunities/?source=sbir');
+---
+
+<SiteLayout
+	title="Opportunity Intelligence (SBIR/STTR) | Adam Boas"
+	description="Open the SBIR/STTR source view in Opportunity Intelligence."
+	image="/og/opportunities-sbir.png"
+	canonicalHref={absoluteUrl('/opportunities/sbir/')}
+	noindex={true}
+>
+	<meta http-equiv="refresh" content={`0;url=${target}`} />
+	<section class="card mt-6 p-5 text-sm text-slate-300">
+		<p>Redirecting to the SBIR/STTR source view…</p>
+		<p class="mt-2">
+			If you are not redirected, <a class="text-stone-100 underline" href={target}>open SBIR source view</a>.
+		</p>
+	</section>
+	<script is:inline>
+		window.location.replace({JSON.stringify(target)});
+	</script>
+</SiteLayout>

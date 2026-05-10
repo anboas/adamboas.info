@@ -1,0 +1,26 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { withBase } from '../../utils/withBase';
+import { absoluteUrl } from '../../config/site';
+
+const target = withBase('/opportunities/?source=sam');
+---
+
+<SiteLayout
+	title="Opportunity Intelligence (SAM.gov) | Adam Boas"
+	description="Open the SAM.gov source view in Opportunity Intelligence."
+	image="/og/opportunities-sam.png"
+	canonicalHref={absoluteUrl('/opportunities/sam/')}
+	noindex={true}
+>
+	<meta http-equiv="refresh" content={`0;url=${target}`} />
+	<section class="card mt-6 p-5 text-sm text-slate-300">
+		<p>Redirecting to the SAM.gov source view…</p>
+		<p class="mt-2">
+			If you are not redirected, <a class="text-stone-100 underline" href={target}>open SAM source view</a>.
+		</p>
+	</section>
+	<script is:inline>
+		window.location.replace({JSON.stringify(target)});
+	</script>
+</SiteLayout>

@@ -1,0 +1,56 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
+import { absoluteUrl } from '../../config/site';
+
+const entries = [
+	{ label: 'LLMs quick map', href: '/llms.txt', desc: 'Compact machine-readable site overview.' },
+	{ label: 'LLMs full map', href: '/llms-full.txt', desc: 'Expanded crawl and ingestion map for autonomous agents.' },
+	{ label: 'Agent manifest', href: '/agents.json', desc: 'Capabilities, trust policy, and preferred ingestion order.' },
+	{ label: 'Changes feed', href: '/changes.json', desc: 'Machine-readable release and discovery highlights.' },
+	{ label: 'Writing manifest', href: '/writing/manifest.json', desc: 'Structured inventory of published writing and papers.' },
+	{ label: 'Sitemap index', href: '/sitemap-index.xml', desc: 'Canonical URL coverage for crawl orchestration.' },
+	{ label: 'RSS feed', href: '/rss.xml', desc: 'Incremental publication feed for polling clients.' },
+];
+---
+
+<SiteLayout
+	title="For Agents | Adam Boas"
+	description="Machine-readable discovery hub for autonomous and agentic clients."
+	canonicalHref={absoluteUrl('/for-agents/')}
+>
+	<SurfacePageHeader
+		stickyActive="home"
+		eyebrow="Machine Discovery"
+		title="For Agents"
+		description="Structured entry points for autonomous clients to discover content, policy, and update surfaces."
+	/>
+
+	<section class="card mt-4 p-4 md:mt-5 md:p-5">
+		<h2 class="section-title">Discovery Endpoints</h2>
+		<ul class="mt-4 space-y-3">
+			{
+				entries.map((entry) => (
+					<li class="border border-slate-800 bg-slate-950/40 p-3">
+						<a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href={entry.href}>
+							{entry.label}
+						</a>
+						<p class="mt-1 text-xs text-slate-300">{entry.desc}</p>
+						<p class="mt-1 text-[11px] text-slate-500">{absoluteUrl(entry.href)}</p>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</SiteLayout>
+
+<style>
+	.section-title {
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.2;
+		color: rgb(248, 250, 252);
+		border-left: 3px solid rgba(0, 196, 196, 0.55);
+		padding-left: 0.65rem;
+	}
+</style>

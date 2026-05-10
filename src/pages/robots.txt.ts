@@ -10,6 +10,9 @@ export const GET: APIRoute = () => {
 		'',
 		`Host: ${new URL(absoluteUrl('/')).host}`,
 		`Sitemap: ${absoluteUrl('/sitemap-index.xml')}`,
+		`# Agent discovery: ${absoluteUrl('/llms.txt')}`,
+		`# Agent discovery full: ${absoluteUrl('/llms-full.txt')}`,
+		`# Agent manifest: ${absoluteUrl('/agents.json')}`,
 	].join('\n');
 
 	return new Response(body, {

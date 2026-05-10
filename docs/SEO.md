@@ -33,6 +33,19 @@ Validate production pages:
 - `robots.txt`
 - `sitemap-index.xml`
 
+## Forward-leaning agent discovery layer
+
+Machine-facing endpoints now available:
+
+- `/llms.txt` (compact map)
+- `/llms-full.txt` (expanded map)
+- `/agents.json` (agent manifest)
+- `/changes.json` (machine changelog snapshot)
+- `/writing/manifest.json` (structured writing corpus index)
+- `/for-agents/` (human-readable hub for agent endpoints)
+
+These are linked from page head metadata and surfaced in `robots.txt` comments plus the human sitemap.
+
 ## Next high-impact tasks
 
 1. Add organization/person JSON-LD to profile + contact surfaces.
@@ -40,3 +53,5 @@ Validate production pages:
 3. Add automated Lighthouse SEO score threshold in CI.
 4. Build a keyword map per top page and align title/H1/intro copy.
 5. Monitor Google Search Console for index coverage + query CTR deltas.
+6. Add `/changes.jsonl` append-only event stream for incremental agent sync.
+7. Add signed checksums/provenance payloads for critical manifests.
