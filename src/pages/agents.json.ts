@@ -40,6 +40,7 @@ export const GET: APIRoute = () => {
 			{ id: 'changes-jsonl', type: 'stream', url: absoluteUrl('/changes.jsonl') },
 			{ id: 'events', type: 'surface', url: absoluteUrl('/events/') },
 			{ id: 'opportunities', type: 'surface', url: absoluteUrl('/opportunities/') },
+			{ id: 'integrity', type: 'integrity', url: absoluteUrl('/integrity.json') },
 		],
 		agent_view_query: {
 			param: 'view',

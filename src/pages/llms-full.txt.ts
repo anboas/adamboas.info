@@ -32,6 +32,7 @@ export const GET: APIRoute = () => {
 		`- changes.json: ${absoluteUrl('/changes.json')}`,
 		`- changes.jsonl: ${absoluteUrl('/changes.jsonl')}`,
 		`- writing manifest: ${absoluteUrl('/writing/manifest.json')}`,
+		`- integrity manifest: ${absoluteUrl('/integrity.json')}`,
 		`- rss: ${absoluteUrl('/rss.xml')}`,
 		`- sitemap: ${absoluteUrl('/sitemap-index.xml')}`,
 		'',
