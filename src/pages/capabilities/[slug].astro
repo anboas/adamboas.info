@@ -176,7 +176,7 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 	title={`${capability.title} Capability | Adam Boas`}
 	description={capabilitySeoDescription}
 	canonicalHref={canonicalHref}
-	image="/og/capabilities.png"
+	image={`/og/capabilities/${capability.slug}.png`}
 >
 	<script
 		type="application/ld+json"

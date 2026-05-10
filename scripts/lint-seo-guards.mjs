@@ -108,16 +108,35 @@ const coreSharePages = {
 	'src/pages/index.astro': '/og/home.png',
 	'src/pages/profile/index.astro': '/og/profile.png',
 	'src/pages/capabilities/index.astro': '/og/capabilities.png',
-	'src/pages/capabilities/[slug].astro': '/og/capabilities.png',
 	'src/pages/speaking/index.astro': '/og/speaking.png',
 	'src/pages/events/index.astro': '/og/events.png',
 	'src/pages/opportunities/index.astro': '/og/opportunities.png',
+	'src/pages/opportunities/sam.astro': '/og/opportunities-sam.png',
+	'src/pages/opportunities/sbir.astro': '/og/opportunities-sbir.png',
 };
 
 for (const [file, imagePath] of Object.entries(coreSharePages)) {
 	const src = read(file);
 	assert(src.includes(`image="${imagePath}"`), `Expected explicit OG image on ${file}: ${imagePath}`);
 	assert(exists(`public${imagePath}`), `Missing OG image asset ${imagePath} required by ${file}`);
+}
+
+const capabilityDetailSrc = read('src/pages/capabilities/[slug].astro');
+assert(
+	capabilityDetailSrc.includes('image={`/og/capabilities/${capability.slug}.png`}'),
+	'Capability detail page must use per-capability OG image path.',
+);
+
+const capabilityOgSlugs = [
+	'ai-autonomy',
+	'cybersecurity',
+	'cloud-platforms',
+	'devsecops-delivery',
+	'data-analytics',
+	'proposal-capture',
+];
+for (const slug of capabilityOgSlugs) {
+	assert(exists(`public/og/capabilities/${slug}.png`), `Missing capability OG image: ${slug}`);
 }
 
 if (errors.length) {

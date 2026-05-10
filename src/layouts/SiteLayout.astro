@@ -28,11 +28,40 @@ const noindex = Astro.props.noindex ?? false;
 		<BaseHead title={title} description={description} canonicalHref={canonicalHref} image={image} noindex={noindex} />
 	</head>
 	<body data-site-base={import.meta.env.BASE_URL || '/'}>
+		<script is:inline>
+			(() => {
+				const params = new URLSearchParams(window.location.search);
+				if (params.get('view') === 'agent') {
+					document.documentElement.classList.add('agent-view');
+					document.body.classList.add('agent-view');
+				}
+			})();
+		</script>
 		<Header />
 		<main class="site-main mx-auto w-full min-w-0 max-w-7xl flex-1 px-4 pt-3 pb-10 sm:px-6 sm:pt-4">
 			<slot />
 		</main>
 		<Footer />
+
+		<style is:global>
+			html.agent-view body.agent-view header,
+			html.agent-view body.agent-view footer,
+			html.agent-view body.agent-view #global-shortcuts-overlay,
+			html.agent-view body.agent-view #global-shortcuts-fab,
+			html.agent-view body.agent-view #global-shortcut-leader {
+				display: none !important;
+			}
+
+			html.agent-view body.agent-view .site-main {
+				max-width: 92rem;
+				padding-top: 0.75rem;
+			}
+
+			html.agent-view body.agent-view .card,
+			html.agent-view body.agent-view .control-shell {
+				box-shadow: none !important;
+			}
+		</style>
 
 		<div id="global-shortcuts-overlay" class="shortcuts-overlay" hidden>
 			<button type="button" class="shortcuts-backdrop" data-shortcuts-close aria-label="Close keyboard shortcuts"

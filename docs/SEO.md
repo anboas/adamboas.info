@@ -41,6 +41,7 @@ Machine-facing endpoints now available:
 - `/llms-full.txt` (expanded map)
 - `/agents.json` (agent manifest)
 - `/changes.json` (machine changelog snapshot)
+- `/changes.jsonl` (incremental event stream)
 - `/writing/manifest.json` (structured writing corpus index)
 - `/for-agents/` (human-readable hub for agent endpoints)
 

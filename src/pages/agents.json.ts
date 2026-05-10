@@ -37,9 +37,15 @@ export const GET: APIRoute = () => {
 		resources: [
 			{ id: 'writing-manifest', type: 'manifest', url: absoluteUrl('/writing/manifest.json') },
 			{ id: 'changes-json', type: 'changelog', url: absoluteUrl('/changes.json') },
+			{ id: 'changes-jsonl', type: 'stream', url: absoluteUrl('/changes.jsonl') },
 			{ id: 'events', type: 'surface', url: absoluteUrl('/events/') },
 			{ id: 'opportunities', type: 'surface', url: absoluteUrl('/opportunities/') },
 		],
+		agent_view_query: {
+			param: 'view',
+			value: 'agent',
+			example: `${absoluteUrl('/writing/')}?view=agent`,
+		},
 		trust_and_policy: {
 			respect_noindex: true,
 			prefer_canonical: true,

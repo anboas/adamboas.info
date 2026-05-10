@@ -26,6 +26,15 @@ const accentByType = {
 	memo: '#3b82f6',
 };
 
+const capabilityCards = [
+	{ slug: 'ai-autonomy', title: 'AI & Trusted Autonomy' },
+	{ slug: 'cybersecurity', title: 'Cybersecurity & Zero Trust' },
+	{ slug: 'cloud-platforms', title: 'Cloud Platforms & Modernization' },
+	{ slug: 'devsecops-delivery', title: 'DevSecOps & Delivery Systems' },
+	{ slug: 'data-analytics', title: 'Data & Analytics' },
+	{ slug: 'proposal-capture', title: 'Proposal & Capture Engineering' },
+];
+
 const cards = [
 	{
 		file: 'default.png',
@@ -147,6 +156,22 @@ const cards = [
 		subtitle: 'Focused briefs and decision-ready technical analysis',
 		kicker: BRAND_KICKER,
 	},
+	...capabilityCards.map((capability) => ({
+		file: `capabilities/${capability.slug}.png`,
+		accent: '#00a6a6',
+		title: capability.title,
+		subtitle: 'Capability deep-dive with linked writing, events, and opportunity intelligence',
+		kicker: `${BRAND_KICKER} · CAPABILITY`,
+		titleSize: 56,
+		titleY: 248,
+		titleLineGap: 62,
+		maxTitleWidthPx: 980,
+		maxTitleLines: 3,
+		subtitleSize: 24,
+		subtitleLineGap: 30,
+		subtitleMaxWidthPx: 1020,
+		subtitleMaxLines: 3,
+	})),
 ];
 
 function escapeXml(value = '') {

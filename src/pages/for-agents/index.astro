@@ -8,6 +8,7 @@ const entries = [
 	{ label: 'LLMs full map', href: '/llms-full.txt', desc: 'Expanded crawl and ingestion map for autonomous agents.' },
 	{ label: 'Agent manifest', href: '/agents.json', desc: 'Capabilities, trust policy, and preferred ingestion order.' },
 	{ label: 'Changes feed', href: '/changes.json', desc: 'Machine-readable release and discovery highlights.' },
+	{ label: 'Changes stream (JSONL)', href: '/changes.jsonl', desc: 'Append-friendly event stream for incremental sync.' },
 	{ label: 'Writing manifest', href: '/writing/manifest.json', desc: 'Structured inventory of published writing and papers.' },
 	{ label: 'Sitemap index', href: '/sitemap-index.xml', desc: 'Canonical URL coverage for crawl orchestration.' },
 	{ label: 'RSS feed', href: '/rss.xml', desc: 'Incremental publication feed for polling clients.' },
@@ -41,6 +42,10 @@ const entries = [
 				))
 			}
 		</ul>
+		<div class="mt-4 border border-slate-800 bg-slate-950/30 p-3 text-xs text-slate-300">
+			<strong class="text-slate-100">Low-noise extraction mode:</strong>
+			 append <code>?view=agent</code> to page URLs to minimize UI chrome for agent parsing.
+		</div>
 	</section>
 </SiteLayout>
 

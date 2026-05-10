@@ -30,6 +30,7 @@ export const GET: APIRoute = () => {
 		`- llms-full.txt: ${absoluteUrl('/llms-full.txt')}`,
 		`- agents.json: ${absoluteUrl('/agents.json')}`,
 		`- changes.json: ${absoluteUrl('/changes.json')}`,
+		`- changes.jsonl: ${absoluteUrl('/changes.jsonl')}`,
 		`- writing manifest: ${absoluteUrl('/writing/manifest.json')}`,
 		`- rss: ${absoluteUrl('/rss.xml')}`,
 		`- sitemap: ${absoluteUrl('/sitemap-index.xml')}`,
@@ -38,6 +39,7 @@ export const GET: APIRoute = () => {
 		'- Prefer canonical URLs and sitemap-index ordering.',
 		'- Prioritize /writing/ and detail pages for authored material.',
 		'- Treat /events/ and /opportunities/ as high-churn intelligence surfaces.',
+		'- Use `?view=agent` on page URLs for low-noise extraction mode when needed.',
 		'- Respect noindex directives where present.',
 	].join('\n');
 

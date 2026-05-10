@@ -24,6 +24,7 @@ export const GET: APIRoute = () => {
 		`- RSS: ${absoluteUrl('/rss.xml')}`,
 		`- Agent manifest: ${absoluteUrl('/agents.json')}`,
 		`- Writing manifest: ${absoluteUrl('/writing/manifest.json')}`,
+		`- Changes stream: ${absoluteUrl('/changes.jsonl')}`,
 		`- Full map: ${absoluteUrl('/llms-full.txt')}`,
 		'',
 		'## Notes',
