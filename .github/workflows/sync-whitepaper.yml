@@ -150,12 +150,12 @@ jobs:
 
             echo "Syncing (published): $slug"
 
-            pdf=$(ls -1 "$d"/*.pdf 2>/dev/null | head -n 1 || true)
-            manifest=$(ls -1 "$d"/manifest.json 2>/dev/null | head -n 1 || true)
+            pdf=$(find "$d" -maxdepth 1 -type f -name '*.pdf' -print | head -n 1 || true)
+            manifest=$(find "$d" -maxdepth 1 -type f -name 'manifest.json' -print | head -n 1 || true)
             # Prefer pre-extracted fragment HTML if present.
-            html=$(ls -1 "$d"/paper.html 2>/dev/null | head -n 1 || true)
+            html=$(find "$d" -maxdepth 1 -type f -name 'paper.html' -print | head -n 1 || true)
             if [ -z "$html" ]; then
-              html=$(ls -1 "$d"/*.html 2>/dev/null | head -n 1 || true)
+              html=$(find "$d" -maxdepth 1 -type f -name '*.html' -print | head -n 1 || true)
             fi
 
             if [ -n "$pdf" ]; then

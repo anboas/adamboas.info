@@ -23,6 +23,9 @@ updates:
       - dependency-name: "astro"
         update-types:
           - "version-update:semver-major"
+      - dependency-name: "@astrojs/mdx"
+        update-types:
+          - "version-update:semver-major"
     labels:
       - "dependencies"
       - "npm"
