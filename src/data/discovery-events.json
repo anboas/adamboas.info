@@ -1,0 +1,50 @@
+[
+  {
+    "id": "discovery-pack-v1",
+    "ts": "2026-05-09T00:00:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Agent discovery pack published (llms-full, agents manifest, writing manifest, discovery hub)",
+    "links": ["/for-agents/", "/llms.txt", "/llms-full.txt", "/agents.json", "/writing/manifest.json"]
+  },
+  {
+    "id": "integrity-manifest",
+    "ts": "2026-05-10T20:10:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Integrity manifest added for discovery surface provenance",
+    "links": ["/integrity.json", "/llms.txt", "/llms-full.txt", "/agents.json"]
+  },
+  {
+    "id": "priority-map",
+    "ts": "2026-05-10T20:26:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Priority ingest map and page-level agent extraction hints added",
+    "links": ["/agent-priority.json", "/writing/?view=agent", "/events/?view=agent", "/opportunities/?view=agent"]
+  },
+  {
+    "id": "well-known-aliases",
+    "ts": "2026-05-10T20:38:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Well-known aliases added for agent discovery clients",
+    "links": ["/.well-known/agent-manifest.json", "/.well-known/llms.txt"]
+  },
+  {
+    "id": "surface-maps",
+    "ts": "2026-05-10T21:39:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Per-surface machine maps added for writing, events, and opportunities",
+    "links": ["/writing/agent.json", "/events/agent.json", "/opportunities/agent.json"]
+  },
+  {
+    "id": "ci-noise-controls",
+    "ts": "2026-05-10T21:55:00.000Z",
+    "type": "ci",
+    "release": "2026.05",
+    "summary": "Path-scoped quality/deploy workflows and dependency-noise controls applied",
+    "links": ["/.github/workflows/deploy-dev-pages.yml", "/.github/workflows/a11y.yml", "/.github/workflows/linkcheck.yml", "/.github/workflows/lighthouse.yml"]
+  }
+]

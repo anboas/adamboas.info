@@ -41,7 +41,7 @@ Machine-facing endpoints now available:
 - `/llms-full.txt` (expanded map)
 - `/agents.json` (agent manifest)
 - `/changes.json` (machine changelog snapshot)
-- `/changes.jsonl` (incremental event stream)
+- `/changes.jsonl` (incremental event stream; backed by append-only source `src/data/discovery-events.json`)
 - `/writing/manifest.json` (structured writing corpus index)
 - `/writing/agent.json`, `/events/agent.json`, `/opportunities/agent.json` (surface-specific extraction + refresh hints)
 - `/integrity.json` (source integrity/provenance hashes for machine endpoints)
@@ -58,5 +58,5 @@ These are linked from page head metadata and surfaced in `robots.txt` comments p
 3. Add automated Lighthouse SEO score threshold in CI.
 4. Build a keyword map per top page and align title/H1/intro copy.
 5. Monitor Google Search Console for index coverage + query CTR deltas.
-6. Add `/changes.jsonl` append-only event stream for incremental agent sync.
-7. Add signed checksums/provenance payloads for critical manifests.
+6. Add signed checksums/provenance payloads for critical manifests.
+7. Add schema docs + validation gates for machine endpoints (`agent-priority`, per-surface maps, well-known aliases).

@@ -1,10 +1,11 @@
 import type { APIRoute } from 'astro';
-import { SITE_RELEASE_VERSION } from '../consts';
 import { absoluteUrl } from '../config/site';
+import discoveryEvents from '../data/discovery-events.json';
 
 export const prerender = true;
 
 type ChangeEvent = {
+	id: string;
 	ts: string;
 	type: 'release' | 'seo' | 'agentic' | 'ci';
 	release: string;
@@ -12,41 +13,24 @@ type ChangeEvent = {
 	links?: string[];
 };
 
+function toAbsolute(link: string) {
+	if (link.startsWith('http://') || link.startsWith('https://')) return link;
+	return absoluteUrl(link);
+}
+
 function toJsonl(events: ChangeEvent[]) {
-	return `${events.map((event) => JSON.stringify(event)).join('\n')}\n`;
+	return `${events
+		.map((event) =>
+			JSON.stringify({
+				...event,
+				links: event.links?.map(toAbsolute),
+			})
+		)
+		.join('\n')}\n`;
 }
 
 export const GET: APIRoute = () => {
-	const nowIso = new Date().toISOString();
-	const events: ChangeEvent[] = [
-		{
-			ts: nowIso,
-			type: 'release',
-			release: SITE_RELEASE_VERSION,
-			summary: 'Current site release marker',
-			links: [absoluteUrl('/changes/'), absoluteUrl('/changes.json')],
-		},
-		{
-			ts: nowIso,
-			type: 'agentic',
-			release: SITE_RELEASE_VERSION,
-			summary: 'Agent discovery pack published (llms-full, agents manifest, writing manifest, discovery hub)',
-			links: [
-				absoluteUrl('/for-agents/'),
-				absoluteUrl('/llms.txt'),
-				absoluteUrl('/llms-full.txt'),
-				absoluteUrl('/agents.json'),
-				absoluteUrl('/writing/manifest.json'),
-			],
-		},
-		{
-			ts: nowIso,
-			type: 'seo',
-			release: SITE_RELEASE_VERSION,
-			summary: 'Expanded OG card coverage and source-specific opportunities social routes',
-			links: [absoluteUrl('/opportunities/sam/'), absoluteUrl('/opportunities/sbir/')],
-		},
-	];
+	const events = discoveryEvents as ChangeEvent[];
 
 	return new Response(toJsonl(events), {
 		headers: {

@@ -16,9 +16,11 @@ on:
       - 'src/pages/events/agent.json.ts'
       - 'src/pages/opportunities/agent.json.ts'
       - 'src/pages/.well-known/**'
+      - 'src/data/discovery-events.json'
       - 'src/components/BaseHead.astro'
       - 'src/layouts/SiteLayout.astro'
       - 'scripts/check-agent-endpoints.mjs'
+      - 'scripts/lint-discovery-events.mjs'
       - '.github/workflows/agent-discovery.yml'
       - 'package.json'
   pull_request:
@@ -35,9 +37,11 @@ on:
       - 'src/pages/events/agent.json.ts'
       - 'src/pages/opportunities/agent.json.ts'
       - 'src/pages/.well-known/**'
+      - 'src/data/discovery-events.json'
       - 'src/components/BaseHead.astro'
       - 'src/layouts/SiteLayout.astro'
       - 'scripts/check-agent-endpoints.mjs'
+      - 'scripts/lint-discovery-events.mjs'
       - '.github/workflows/agent-discovery.yml'
       - 'package.json'
   workflow_dispatch:
@@ -64,6 +68,9 @@ jobs:
 
       - name: Install deps
         run: npm ci
+
+      - name: Lint discovery event log
+        run: npm run lint:discovery-events
 
       - name: Build site
         run: npm run build

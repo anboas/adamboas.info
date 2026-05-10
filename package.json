@@ -14,6 +14,7 @@
 		"lint:config": "node scripts/lint-config-env.mjs",
 		"lint:papers": "node scripts/verify-papers.mjs",
 		"lint:memos": "node scripts/verify-memos.mjs",
+		"lint:discovery-events": "node scripts/lint-discovery-events.mjs",
 		"og:generate": "node scripts/generate-og-images.mjs",
 		"events:sam-import": "python3 scripts/import-radar-events-from-sam-opportunities.py",
 		"events:sam-import:deep": "python3 scripts/import-radar-events-from-sam-opportunities.py --enrich-detail-text",
