@@ -4,23 +4,146 @@ const base = process.env.SITE_BASE || 'http://127.0.0.1:4321';
 
 const checks = [
 	{ path: '/llms.txt', type: 'text', mustContain: ['/agents.json', '/writing/manifest.json'] },
-	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json'] },
-	{ path: '/agents.json', type: 'json', requiredKeys: ['schema_version', 'resources', 'preferred_ingestion_order'] },
-	{ path: '/agent-priority.json', type: 'json', requiredKeys: ['schema_version', 'ingestion_tiers', 'crawler_hints'] },
-	{ path: '/changes.json', type: 'json', requiredKeys: ['release_version', 'discovery_endpoints'] },
-	{ path: '/changes.jsonl', type: 'jsonl', minLines: 1 },
+	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json', '/writing/agent.json'] },
+	{ path: '/agents.json', type: 'json', requiredKeys: ['schema_version', 'resources', 'preferred_ingestion_order'], validate: validateAgents },
+	{ path: '/agent-priority.json', type: 'json', requiredKeys: ['schema_version', 'ingestion_tiers', 'crawler_hints'], validate: validatePriority },
+	{ path: '/changes.json', type: 'json', requiredKeys: ['release_version', 'event_log', 'discovery_endpoints'], validate: validateChanges },
+	{ path: '/changes.jsonl', type: 'jsonl', minLines: 1, validate: validateChangesJsonl },
 	{ path: '/writing/manifest.json', type: 'json', requiredKeys: ['schema_version', 'entries', 'count'] },
-	{ path: '/writing/agent.json', type: 'json', requiredKeys: ['surface', 'primary_manifest', 'crawl_hints'] },
-	{ path: '/events/agent.json', type: 'json', requiredKeys: ['surface', 'related_routes', 'crawl_hints'] },
-	{ path: '/opportunities/agent.json', type: 'json', requiredKeys: ['surface', 'source_routes', 'crawl_hints'] },
+	{ path: '/writing/agent.json', type: 'json', requiredKeys: ['surface', 'primary_manifest', 'crawl_hints'], validate: validateWritingSurface },
+	{ path: '/events/agent.json', type: 'json', requiredKeys: ['surface', 'related_routes', 'crawl_hints'], validate: validateEventsSurface },
+	{ path: '/opportunities/agent.json', type: 'json', requiredKeys: ['surface', 'source_routes', 'crawl_hints'], validate: validateOpportunitiesSurface },
 	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'] },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
-	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'] },
+	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'], validate: validateWellKnownManifest },
 	{ path: '/.well-known/llms.txt', type: 'text', mustContain: ['/llms.txt'] },
 ];
 
 function assert(condition, message) {
 	if (!condition) throw new Error(message);
+}
+
+function isAbsUrl(value) {
+	if (typeof value !== 'string') return false;
+	return /^https?:\/\//.test(value);
+}
+
+function assertAbsUrl(value, label) {
+	assert(isAbsUrl(value), `${label} must be an absolute URL`);
+}
+
+function assertHasEndpointWithPath(urls, path, label) {
+	assert(Array.isArray(urls), `${label} must be an array`);
+	assert(urls.some((url) => typeof url === 'string' && url.includes(path)), `${label} missing endpoint containing: ${path}`);
+}
+
+function validateAgents(data) {
+	assert(data.schema_version === '1.0', '/agents.json schema_version must be 1.0');
+	assert(Array.isArray(data.preferred_ingestion_order), '/agents.json preferred_ingestion_order must be array');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/agent-priority.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/writing/agent.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/events/agent.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/agent.json', '/agents.json preferred_ingestion_order');
+
+	assert(Array.isArray(data.resources) && data.resources.length >= 5, '/agents.json resources must be non-empty array');
+	const ids = new Set();
+	for (const resource of data.resources) {
+		assert(typeof resource.id === 'string' && resource.id.length > 0, '/agents.json resource.id missing');
+		assert(!ids.has(resource.id), `/agents.json duplicate resource id: ${resource.id}`);
+		ids.add(resource.id);
+		assert(typeof resource.type === 'string' && resource.type.length > 0, `/agents.json resource type missing: ${resource.id}`);
+		assertAbsUrl(resource.url, `/agents.json resource url (${resource.id})`);
+	}
+}
+
+function validatePriority(data) {
+	assert(Array.isArray(data.ingestion_tiers) && data.ingestion_tiers.length >= 3, '/agent-priority.json ingestion_tiers invalid');
+	let lastTier = 0;
+	for (const tier of data.ingestion_tiers) {
+		assert(typeof tier.tier === 'number', '/agent-priority.json tier.tier must be number');
+		assert(tier.tier > lastTier, '/agent-priority.json tiers must be strictly ascending');
+		lastTier = tier.tier;
+		assert(Array.isArray(tier.endpoints) && tier.endpoints.length > 0, `/agent-priority tier ${tier.tier} endpoints missing`);
+		for (const endpoint of tier.endpoints) assertAbsUrl(endpoint, `/agent-priority tier ${tier.tier} endpoint`);
+		assert(typeof tier.refresh_hint === 'string' && tier.refresh_hint.length > 0, `/agent-priority tier ${tier.tier} refresh_hint missing`);
+	}
+	assert(typeof data.crawler_hints?.agent_view_query === 'string', '/agent-priority crawler_hints.agent_view_query missing');
+}
+
+function validateChanges(data) {
+	assert(data.event_log?.format === 'jsonl', '/changes.json event_log.format must be jsonl');
+	assertAbsUrl(data.event_log?.url, '/changes.json event_log.url');
+	assert(typeof data.event_log?.count === 'number' && data.event_log.count >= 1, '/changes.json event_log.count invalid');
+	assert(typeof data.event_log?.latest_event_id === 'string' && data.event_log.latest_event_id.length > 0, '/changes.json latest_event_id missing');
+	assert(typeof data.event_log?.latest_event_ts === 'string' && data.event_log.latest_event_ts.length > 0, '/changes.json latest_event_ts missing');
+
+	const requiredEndpoints = [
+		'llms',
+		'llms_full',
+		'agents',
+		'priority',
+		'writing_manifest',
+		'writing_surface',
+		'events_surface',
+		'opportunities_surface',
+	];
+	for (const key of requiredEndpoints) {
+		assertAbsUrl(data.discovery_endpoints?.[key], `/changes.json discovery_endpoints.${key}`);
+	}
+}
+
+function validateChangesJsonl(lines) {
+	const ids = new Set();
+	let lastTs = 0;
+	for (const [idx, event] of lines.entries()) {
+		const prefix = `/changes.jsonl line ${idx + 1}`;
+		assert(typeof event.id === 'string' && event.id.length > 0, `${prefix} missing id`);
+		assert(!ids.has(event.id), `${prefix} duplicate id: ${event.id}`);
+		ids.add(event.id);
+		assert(['release', 'seo', 'agentic', 'ci'].includes(event.type), `${prefix} invalid type: ${event.type}`);
+		assert(typeof event.summary === 'string' && event.summary.length > 0, `${prefix} missing summary`);
+		const ts = Date.parse(event.ts);
+		assert(Number.isFinite(ts), `${prefix} invalid ts`);
+		assert(ts >= lastTs, `${prefix} timestamps must be ascending`);
+		lastTs = ts;
+		if (event.links) {
+			assert(Array.isArray(event.links), `${prefix} links must be array when present`);
+			for (const link of event.links) assertAbsUrl(link, `${prefix} link`);
+		}
+	}
+}
+
+function validateWritingSurface(data) {
+	assert(data.surface === 'writing', '/writing/agent.json surface must be writing');
+	assertAbsUrl(data.primary_manifest, '/writing/agent.json primary_manifest');
+	assertHasEndpointWithPath(data.related_endpoints, '/changes.jsonl', '/writing/agent.json related_endpoints');
+	assert(data.crawl_hints?.refresh_hint === 'daily', '/writing/agent.json refresh_hint should be daily');
+}
+
+function validateEventsSurface(data) {
+	assert(data.surface === 'events', '/events/agent.json surface must be events');
+	assertAbsUrl(data.related_routes?.sources, '/events/agent.json related_routes.sources');
+	assertAbsUrl(data.related_routes?.changes_stream, '/events/agent.json related_routes.changes_stream');
+	assert(data.crawl_hints?.refresh_hint === 'every-4h', '/events/agent.json refresh_hint should be every-4h');
+}
+
+function validateOpportunitiesSurface(data) {
+	assert(data.surface === 'opportunities', '/opportunities/agent.json surface must be opportunities');
+	assertAbsUrl(data.source_routes?.unified, '/opportunities/agent.json source_routes.unified');
+	assertAbsUrl(data.source_routes?.sam, '/opportunities/agent.json source_routes.sam');
+	assertAbsUrl(data.source_routes?.sbir, '/opportunities/agent.json source_routes.sbir');
+	assert(Array.isArray(data.query_hints?.source_param), '/opportunities/agent.json query_hints.source_param must be array');
+	assert(data.query_hints.source_param.includes('sam'), '/opportunities/agent.json missing sam source param');
+	assert(data.query_hints.source_param.includes('sbir'), '/opportunities/agent.json missing sbir source param');
+}
+
+function validateWellKnownManifest(data) {
+	assertAbsUrl(data.canonical_manifest, '/.well-known/agent-manifest.json canonical_manifest');
+	assertAbsUrl(data.discovery?.llms, '/.well-known/agent-manifest.json discovery.llms');
+	assertAbsUrl(data.discovery?.llms_full, '/.well-known/agent-manifest.json discovery.llms_full');
+	assert(Array.isArray(data.discovery?.surface_maps), '/.well-known/agent-manifest.json discovery.surface_maps must be array');
+	assert(data.discovery.surface_maps.length >= 3, '/.well-known/agent-manifest.json discovery.surface_maps expected >= 3');
+	for (const mapUrl of data.discovery.surface_maps) assertAbsUrl(mapUrl, '/.well-known/agent-manifest.json discovery.surface_maps entry');
 }
 
 async function get(path) {
@@ -42,6 +165,7 @@ async function run() {
 			for (const key of check.requiredKeys || []) {
 				assert(Object.hasOwn(data, key), `${check.path} missing key: ${key}`);
 			}
+			check.validate?.(data);
 		}
 
 		if (check.type === 'jsonl') {
@@ -50,13 +174,15 @@ async function run() {
 				.map((line) => line.trim())
 				.filter(Boolean);
 			assert(lines.length >= (check.minLines || 1), `${check.path} has no JSONL rows`);
+			const parsed = [];
 			for (const [idx, line] of lines.entries()) {
 				try {
-					JSON.parse(line);
+					parsed.push(JSON.parse(line));
 				} catch {
 					throw new Error(`${check.path} invalid JSON on line ${idx + 1}`);
 				}
 			}
+			check.validate?.(parsed);
 		}
 
 		if (check.type === 'text' || check.type === 'html') {

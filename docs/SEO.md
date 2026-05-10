@@ -35,6 +35,8 @@ Validate production pages:
 
 ## Forward-leaning agent discovery layer
 
+Contract reference: `docs/AGENT_ENDPOINT_CONTRACTS.md`
+
 Machine-facing endpoints now available:
 
 - `/llms.txt` (compact map)
