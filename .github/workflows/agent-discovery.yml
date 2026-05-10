@@ -1,0 +1,77 @@
+name: agent-discovery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/pages/llms*.ts'
+      - 'src/pages/agents.json.ts'
+      - 'src/pages/agent-priority.json.ts'
+      - 'src/pages/changes.json.ts'
+      - 'src/pages/changes.jsonl.ts'
+      - 'src/pages/integrity.json.ts'
+      - 'src/pages/for-agents/**'
+      - 'src/pages/writing/manifest.json.ts'
+      - 'src/components/BaseHead.astro'
+      - 'src/layouts/SiteLayout.astro'
+      - 'scripts/check-agent-endpoints.mjs'
+      - '.github/workflows/agent-discovery.yml'
+      - 'package.json'
+  pull_request:
+    paths:
+      - 'src/pages/llms*.ts'
+      - 'src/pages/agents.json.ts'
+      - 'src/pages/agent-priority.json.ts'
+      - 'src/pages/changes.json.ts'
+      - 'src/pages/changes.jsonl.ts'
+      - 'src/pages/integrity.json.ts'
+      - 'src/pages/for-agents/**'
+      - 'src/pages/writing/manifest.json.ts'
+      - 'src/components/BaseHead.astro'
+      - 'src/layouts/SiteLayout.astro'
+      - 'scripts/check-agent-endpoints.mjs'
+      - '.github/workflows/agent-discovery.yml'
+      - 'package.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Validate machine endpoints
+        run: |
+          set -euo pipefail
+          npm run preview -- --host 127.0.0.1 --port 4321 >/tmp/astro-preview.log 2>&1 &
+          PREVIEW_PID=$!
+          trap 'kill ${PREVIEW_PID} >/dev/null 2>&1 || true' EXIT
+
+          for i in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:4321/ >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+
+          SITE_BASE=http://127.0.0.1:4321 npm run check:agent-endpoints

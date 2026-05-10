@@ -39,7 +39,8 @@
 		"linkcheck:prepare": "node scripts/linkcheck-prepare.mjs",
 		"linkcheck:warn": "node scripts/linkcheck-warn.mjs",
 		"linkcheck:suggest": "node scripts/linkcheck-stale-suggestions.mjs",
-		"analytics:plausible:sitemap": "node scripts/fetch-plausible-sitemap-analytics.mjs"
+		"analytics:plausible:sitemap": "node scripts/fetch-plausible-sitemap-analytics.mjs",
+		"check:agent-endpoints": "node scripts/check-agent-endpoints.mjs"
 	},
 	"dependencies": {
 		"@astrojs/mdx": "^4.3.13",
