@@ -30,6 +30,7 @@ export const GET: APIRoute = () => {
 					absoluteUrl('/schemas/opportunities-export.schema.json'),
 					absoluteUrl('/schemas/opportunities-export-sam.schema.json'),
 					absoluteUrl('/schemas/opportunities-export-sbir.schema.json'),
+					absoluteUrl('/schemas/opportunities-freshness.schema.json'),
 				],
 				refresh_hint: 'hourly',
 			},

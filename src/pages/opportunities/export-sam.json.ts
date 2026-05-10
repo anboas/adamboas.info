@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { createHash } from 'node:crypto';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
 import { absoluteUrl } from '../../config/site';
 
@@ -62,8 +63,10 @@ export const GET: APIRoute = () => {
 		.map((row) => row.posted_date as string)
 		.sort((a, b) => Date.parse(b) - Date.parse(a))[0] ?? null;
 
+	const snapshotId = createHash('sha256').update(JSON.stringify(rows)).digest('hex');
+
 	const payload = {
-		schema_version: '1.2',
+		schema_version: '1.3',
 		source: 'sam',
 		generated_at: new Date().toISOString(),
 		canonical: absoluteUrl('/opportunities/?source=sam'),
@@ -77,6 +80,7 @@ export const GET: APIRoute = () => {
 		lineage: {
 			source_dataset_path: 'src/data/radar/events-candidates-sam-opportunities.json',
 			source_updated_at: lastPostedDate,
+			snapshot_id: snapshotId,
 		},
 		rows,
 	};

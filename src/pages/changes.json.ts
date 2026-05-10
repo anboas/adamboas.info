@@ -52,6 +52,7 @@ export const GET: APIRoute = () => {
 			schema_opportunities_export: absoluteUrl('/schemas/opportunities-export.schema.json'),
 			schema_opportunities_export_sam: absoluteUrl('/schemas/opportunities-export-sam.schema.json'),
 			schema_opportunities_export_sbir: absoluteUrl('/schemas/opportunities-export-sbir.schema.json'),
+			schema_opportunities_freshness: absoluteUrl('/schemas/opportunities-freshness.schema.json'),
 		},
 	};
 

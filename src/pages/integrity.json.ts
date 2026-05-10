@@ -32,6 +32,7 @@ const trackedFiles = [
 	'src/pages/schemas/opportunities-export.schema.json.ts',
 	'src/pages/schemas/opportunities-export-sam.schema.json.ts',
 	'src/pages/schemas/opportunities-export-sbir.schema.json.ts',
+	'src/pages/schemas/opportunities-freshness.schema.json.ts',
 	'src/pages/for-agents/index.astro',
 	'src/data/discovery-events.json',
 ];

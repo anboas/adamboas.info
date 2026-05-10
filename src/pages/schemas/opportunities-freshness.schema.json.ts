@@ -6,18 +6,21 @@ export const prerender = true;
 export const GET: APIRoute = () => {
 	const schema = {
 		$schema: 'https://json-schema.org/draft/2020-12/schema',
-		$id: absoluteUrl('/schemas/opportunities-export-sam.schema.json'),
-		title: 'Opportunities Export (SAM)',
+		$id: absoluteUrl('/schemas/opportunities-freshness.schema.json'),
+		title: 'Opportunities Freshness Metadata',
 		type: 'object',
-		required: ['schema_version', 'source', 'count', 'returned_count', 'rows', 'variants', 'lineage'],
+		required: ['schema_version', 'generated_at', 'sources'],
 		properties: {
 			schema_version: { type: 'string' },
-			source: { const: 'sam' },
-			count: { type: 'number' },
-			returned_count: { type: 'number' },
-			rows: { type: 'array' },
-			variants: { type: 'object' },
-			lineage: { type: 'object' },
+			generated_at: { type: 'string', format: 'date-time' },
+			sources: {
+				type: 'object',
+				required: ['sam', 'sbir'],
+				properties: {
+					sam: { type: 'object' },
+					sbir: { type: 'object' },
+				},
+			},
 		},
 	};
 

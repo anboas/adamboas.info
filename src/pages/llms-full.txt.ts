@@ -51,6 +51,7 @@ export const GET: APIRoute = () => {
 		`- schema (opportunities export): ${absoluteUrl('/schemas/opportunities-export.schema.json')}`,
 		`- schema (opportunities export sam): ${absoluteUrl('/schemas/opportunities-export-sam.schema.json')}`,
 		`- schema (opportunities export sbir): ${absoluteUrl('/schemas/opportunities-export-sbir.schema.json')}`,
+		`- schema (opportunities freshness): ${absoluteUrl('/schemas/opportunities-freshness.schema.json')}`,
 		'',
 		'## Crawl policy notes',
 		'- Prefer canonical URLs and sitemap-index ordering.',

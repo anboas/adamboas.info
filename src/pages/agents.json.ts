@@ -65,6 +65,7 @@ export const GET: APIRoute = () => {
 			{ id: 'schema-opportunities-export', type: 'schema', url: absoluteUrl('/schemas/opportunities-export.schema.json') },
 			{ id: 'schema-opportunities-export-sam', type: 'schema', url: absoluteUrl('/schemas/opportunities-export-sam.schema.json') },
 			{ id: 'schema-opportunities-export-sbir', type: 'schema', url: absoluteUrl('/schemas/opportunities-export-sbir.schema.json') },
+			{ id: 'schema-opportunities-freshness', type: 'schema', url: absoluteUrl('/schemas/opportunities-freshness.schema.json') },
 		],
 		agent_view_query: {
 			param: 'view',

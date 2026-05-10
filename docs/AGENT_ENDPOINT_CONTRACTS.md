@@ -18,6 +18,7 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
 - `/schemas/opportunities-export.schema.json`
 - `/schemas/opportunities-export-sam.schema.json`
 - `/schemas/opportunities-export-sbir.schema.json`
+- `/schemas/opportunities-freshness.schema.json`
 
 ## Priority + trust
 

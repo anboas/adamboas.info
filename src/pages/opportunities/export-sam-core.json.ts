@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { createHash } from 'node:crypto';
 import samOpportunitiesFeed from '../../data/radar/events-candidates-sam-opportunities.json';
 import { absoluteUrl } from '../../config/site';
 
@@ -38,13 +39,19 @@ function normalizeCoreRow(row: SamRaw) {
 
 export const GET: APIRoute = () => {
 	const rows = (samOpportunitiesFeed as SamRaw[]).map(normalizeCoreRow);
+	const snapshotId = createHash('sha256').update(JSON.stringify(rows)).digest('hex');
+
 	const payload = {
-		schema_version: '1.0',
+		schema_version: '1.1',
 		source: 'sam',
 		profile: 'core',
 		generated_at: new Date().toISOString(),
 		canonical: absoluteUrl('/opportunities/?source=sam'),
 		count: rows.length,
+		lineage: {
+			derived_from: absoluteUrl('/opportunities/export-sam.json'),
+			snapshot_id: snapshotId,
+		},
 		rows,
 	};
 

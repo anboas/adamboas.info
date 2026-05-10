@@ -50,6 +50,7 @@ async function run() {
 		'/schemas/opportunities-export.schema.json',
 		'/schemas/opportunities-export-sam.schema.json',
 		'/schemas/opportunities-export-sbir.schema.json',
+		'/schemas/opportunities-freshness.schema.json',
 	];
 
 	for (const path of mustReach) {

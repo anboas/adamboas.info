@@ -28,6 +28,7 @@ const checks = [
 	{ path: '/schemas/opportunities-export.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 	{ path: '/schemas/opportunities-export-sam.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 	{ path: '/schemas/opportunities-export-sbir.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
+	{ path: '/schemas/opportunities-freshness.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 ];
 
 function assert(condition, message) {
@@ -113,6 +114,7 @@ function validateChanges(data) {
 		'schema_opportunities_export',
 		'schema_opportunities_export_sam',
 		'schema_opportunities_export_sbir',
+		'schema_opportunities_freshness',
 	];
 	for (const key of requiredEndpoints) {
 		assertAbsUrl(data.discovery_endpoints?.[key], `/changes.json discovery_endpoints.${key}`);
@@ -165,13 +167,14 @@ function validateOpportunitiesSurface(data) {
 }
 
 function validateOpportunitiesExport(data) {
-	assert(data.schema_version === '1.2', '/opportunities/export.json schema_version must be 1.2');
+	assert(data.schema_version === '1.3', '/opportunities/export.json schema_version must be 1.3');
 	assertAbsUrl(data.canonical, '/opportunities/export.json canonical');
 	assertAbsUrl(data.exports?.sam, '/opportunities/export.json exports.sam');
 	assertAbsUrl(data.exports?.sam_core, '/opportunities/export.json exports.sam_core');
 	assertAbsUrl(data.exports?.sbir, '/opportunities/export.json exports.sbir');
 	assert(data.sources?.sam?.mode === 'embedded', '/opportunities/export.json sources.sam.mode should be embedded');
 	assert(typeof data.sources?.sam?.count === 'number' && data.sources.sam.count >= 1, '/opportunities/export.json sam count invalid');
+	assert(typeof data.sources?.sam?.snapshot_id === 'string' && /^[a-f0-9]{64}$/.test(data.sources.sam.snapshot_id), '/opportunities/export.json sam snapshot_id invalid');
 	assert(Array.isArray(data.sources?.sam?.rows), '/opportunities/export.json sam rows must be array');
 	assert(data.sources.sam.rows.length === data.sources.sam.count, '/opportunities/export.json sam count mismatch');
 	assert(typeof data.sources?.sbir?.mode === 'string' && data.sources.sbir.mode.length > 0, '/opportunities/export.json sbir mode missing');
@@ -182,7 +185,7 @@ function validateOpportunitiesExport(data) {
 }
 
 function validateOpportunitiesExportSam(data) {
-	assert(data.schema_version === '1.2', '/opportunities/export-sam.json schema_version must be 1.2');
+	assert(data.schema_version === '1.3', '/opportunities/export-sam.json schema_version must be 1.3');
 	assert(data.source === 'sam', '/opportunities/export-sam.json source must be sam');
 	assertAbsUrl(data.canonical, '/opportunities/export-sam.json canonical');
 	assert(typeof data.count === 'number' && data.count >= 1, '/opportunities/export-sam.json count invalid');
@@ -193,13 +196,15 @@ function validateOpportunitiesExportSam(data) {
 	assertAbsUrl(data.variants?.full, '/opportunities/export-sam.json variants.full');
 	assertAbsUrl(data.variants?.core, '/opportunities/export-sam.json variants.core');
 	assert(typeof data.lineage?.source_dataset_path === 'string', '/opportunities/export-sam.json lineage.source_dataset_path missing');
+	assert(typeof data.lineage?.snapshot_id === 'string' && /^[a-f0-9]{64}$/.test(data.lineage.snapshot_id), '/opportunities/export-sam.json lineage.snapshot_id invalid');
 }
 
 function validateOpportunitiesExportSamCore(data) {
-	assert(data.schema_version === '1.0', '/opportunities/export-sam-core.json schema_version must be 1.0');
+	assert(data.schema_version === '1.1', '/opportunities/export-sam-core.json schema_version must be 1.1');
 	assert(data.source === 'sam', '/opportunities/export-sam-core.json source must be sam');
 	assert(data.profile === 'core', '/opportunities/export-sam-core.json profile must be core');
 	assert(Array.isArray(data.rows), '/opportunities/export-sam-core.json rows must be array');
+	assert(typeof data.lineage?.snapshot_id === 'string' && /^[a-f0-9]{64}$/.test(data.lineage.snapshot_id), '/opportunities/export-sam-core.json lineage.snapshot_id invalid');
 	if (data.rows.length > 0) {
 		const row = data.rows[0];
 		assert(Object.hasOwn(row, 'id') && Object.hasOwn(row, 'title'), '/opportunities/export-sam-core.json row missing required fields');
@@ -208,8 +213,9 @@ function validateOpportunitiesExportSamCore(data) {
 }
 
 function validateOpportunitiesFreshness(data) {
-	assert(data.schema_version === '1.0', '/opportunities/freshness.json schema_version must be 1.0');
+	assert(data.schema_version === '1.1', '/opportunities/freshness.json schema_version must be 1.1');
 	assert(typeof data.sources?.sam?.count === 'number', '/opportunities/freshness.json sources.sam.count missing');
+	assert(typeof data.sources?.sam?.snapshot_id === 'string' && /^[a-f0-9]{64}$/.test(data.sources.sam.snapshot_id), '/opportunities/freshness.json sam snapshot_id invalid');
 	assertAbsUrl(data.sources?.sam?.export_full, '/opportunities/freshness.json sam export_full');
 	assertAbsUrl(data.sources?.sam?.export_core, '/opportunities/freshness.json sam export_core');
 	assertAbsUrl(data.sources?.sbir?.manifest_url, '/opportunities/freshness.json sbir manifest_url');
@@ -253,6 +259,7 @@ function validateWellKnownManifest(data) {
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export-sam.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export-sbir.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-freshness.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 }
 
 function validateSchemaDoc(data) {
@@ -287,6 +294,7 @@ function validateIntegrity(data) {
 		'src/pages/schemas/opportunities-export.schema.json.ts',
 		'src/pages/schemas/opportunities-export-sam.schema.json.ts',
 		'src/pages/schemas/opportunities-export-sbir.schema.json.ts',
+		'src/pages/schemas/opportunities-freshness.schema.json.ts',
 		'src/pages/for-agents/index.astro',
 		'src/data/discovery-events.json',
 	];
