@@ -46,6 +46,7 @@ Machine-facing endpoints now available:
 - `/integrity.json` (source integrity/provenance hashes for machine endpoints)
 - `/agent-priority.json` (crawl/ingestion tiers + refresh hints)
 - `/for-agents/` (human-readable hub for agent endpoints)
+- `/.well-known/agent-manifest.json` and `/.well-known/llms.txt` aliases for well-known discovery patterns
 
 These are linked from page head metadata and surfaced in `robots.txt` comments plus the human sitemap.
 

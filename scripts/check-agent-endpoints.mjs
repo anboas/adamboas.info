@@ -12,6 +12,8 @@ const checks = [
 	{ path: '/writing/manifest.json', type: 'json', requiredKeys: ['schema_version', 'entries', 'count'] },
 	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'] },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
+	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'] },
+	{ path: '/.well-known/llms.txt', type: 'text', mustContain: ['/llms.txt'] },
 ];
 
 function assert(condition, message) {
