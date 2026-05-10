@@ -23,6 +23,7 @@ const trackedFiles = [
 	'src/pages/opportunities/export-sam.json.ts',
 	'src/pages/opportunities/export-sam-core.json.ts',
 	'src/pages/opportunities/export-sbir.json.ts',
+	'src/pages/opportunities/freshness.json.ts',
 	'src/pages/.well-known/agent-manifest.json.ts',
 	'src/pages/.well-known/llms.txt.ts',
 	'src/pages/schemas/agents.schema.json.ts',

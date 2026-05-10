@@ -24,6 +24,7 @@ export const GET: APIRoute = () => {
 				absoluteUrl('/opportunities/export-sam-core.json'),
 				absoluteUrl('/opportunities/export-sbir.json'),
 			],
+			metadata: [absoluteUrl('/opportunities/freshness.json')],
 			schemas: [
 				absoluteUrl('/schemas/agents.schema.json'),
 				absoluteUrl('/schemas/agent-priority.schema.json'),

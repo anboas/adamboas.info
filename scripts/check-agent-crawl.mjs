@@ -43,6 +43,7 @@ async function run() {
 		'/opportunities/export-sam.json',
 		'/opportunities/export-sam-core.json',
 		'/opportunities/export-sbir.json',
+		'/opportunities/freshness.json',
 		'/schemas/agents.schema.json',
 		'/schemas/agent-priority.schema.json',
 		'/schemas/changes.schema.json',

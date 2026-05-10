@@ -84,7 +84,15 @@
     "ts": "2026-05-10T22:30:00.000Z",
     "type": "agentic",
     "release": "2026.05",
-    "summary": "Added SAM core/limit query mode, provenance metadata, and source-specific export schemas",
-    "links": ["/opportunities/export-sam.json", "/opportunities/export-sbir.json", "/schemas/opportunities-export-sam.schema.json", "/schemas/opportunities-export-sbir.schema.json"]
+    "summary": "Added SAM core export profile, provenance metadata, and source-specific export schemas",
+    "links": ["/opportunities/export-sam.json", "/opportunities/export-sam-core.json", "/opportunities/export-sbir.json", "/schemas/opportunities-export-sam.schema.json", "/schemas/opportunities-export-sbir.schema.json"]
+  },
+  {
+    "id": "opportunities-freshness-metadata",
+    "ts": "2026-05-10T22:35:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Added lightweight opportunities freshness endpoint for poll-first agent workflows",
+    "links": ["/opportunities/freshness.json", "/opportunities/export-sam.json", "/opportunities/export-sbir.json"]
   }
 ]

@@ -9,7 +9,7 @@ export const GET: APIRoute = () => {
 		$id: absoluteUrl('/schemas/opportunities-export-sam.schema.json'),
 		title: 'Opportunities Export (SAM)',
 		type: 'object',
-		required: ['schema_version', 'source', 'count', 'returned_count', 'rows', 'query_support', 'lineage'],
+		required: ['schema_version', 'source', 'count', 'returned_count', 'rows', 'variants', 'lineage'],
 		properties: {
 			schema_version: { type: 'string' },
 			source: { const: 'sam' },

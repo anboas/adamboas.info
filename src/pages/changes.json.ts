@@ -43,6 +43,7 @@ export const GET: APIRoute = () => {
 			opportunities_export_sam: absoluteUrl('/opportunities/export-sam.json'),
 			opportunities_export_sam_core: absoluteUrl('/opportunities/export-sam-core.json'),
 			opportunities_export_sbir: absoluteUrl('/opportunities/export-sbir.json'),
+			opportunities_freshness: absoluteUrl('/opportunities/freshness.json'),
 			rss: absoluteUrl('/rss.xml'),
 			sitemap: absoluteUrl('/sitemap-index.xml'),
 			schema_agents: absoluteUrl('/schemas/agents.schema.json'),

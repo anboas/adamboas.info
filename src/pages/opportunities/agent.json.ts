@@ -25,6 +25,7 @@ export const GET: APIRoute = () => {
 				sam: absoluteUrl('/opportunities/export-sam.json'),
 				sam_core: absoluteUrl('/opportunities/export-sam-core.json'),
 				sbir: absoluteUrl('/opportunities/export-sbir.json'),
+				freshness: absoluteUrl('/opportunities/freshness.json'),
 			},
 		},
 		crawl_hints: {

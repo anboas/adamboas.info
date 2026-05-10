@@ -39,6 +39,7 @@ export const GET: APIRoute = () => {
 		`- opportunities export (sam): ${absoluteUrl('/opportunities/export-sam.json')}`,
 		`- opportunities export (sam core): ${absoluteUrl('/opportunities/export-sam-core.json')}`,
 		`- opportunities export (sbir): ${absoluteUrl('/opportunities/export-sbir.json')}`,
+		`- opportunities freshness: ${absoluteUrl('/opportunities/freshness.json')}`,
 		`- integrity manifest: ${absoluteUrl('/integrity.json')}`,
 		`- agent priority: ${absoluteUrl('/agent-priority.json')}`,
 		`- well-known manifest: ${absoluteUrl('/.well-known/agent-manifest.json')}`,

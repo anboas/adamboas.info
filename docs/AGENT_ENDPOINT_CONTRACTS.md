@@ -65,6 +65,10 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
   - deterministic SBIR-only artifact pointer export
   - includes `mode = "remote-artifact"` and `artifacts.*` URLs with `source = "sbir"`
 
+- `/opportunities/freshness.json`
+  - lightweight freshness/lineage metadata for poll-first clients
+  - includes source-level recency pointers and export links
+
 ## Change stream contracts
 
 - Source of truth: `src/data/discovery-events.json` (append-only, ascending timestamps)

@@ -17,6 +17,7 @@ const checks = [
 	{ path: '/opportunities/export-sam.json', type: 'json', requiredKeys: ['schema_version', 'source', 'count', 'rows', 'variants'], validate: validateOpportunitiesExportSam },
 	{ path: '/opportunities/export-sam-core.json', type: 'json', requiredKeys: ['schema_version', 'source', 'profile', 'rows'], validate: validateOpportunitiesExportSamCore },
 	{ path: '/opportunities/export-sbir.json', type: 'json', requiredKeys: ['schema_version', 'source', 'mode', 'artifacts'], validate: validateOpportunitiesExportSbir },
+	{ path: '/opportunities/freshness.json', type: 'json', requiredKeys: ['schema_version', 'sources'], validate: validateOpportunitiesFreshness },
 	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'], validate: validateIntegrity },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
 	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'], validate: validateWellKnownManifest },
@@ -58,6 +59,7 @@ function validateAgents(data) {
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sam.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sam-core.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sbir.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/freshness.json', '/agents.json preferred_ingestion_order');
 
 	assert(Array.isArray(data.resources) && data.resources.length >= 5, '/agents.json resources must be non-empty array');
 	const ids = new Set();
@@ -104,6 +106,7 @@ function validateChanges(data) {
 		'opportunities_export_sam',
 		'opportunities_export_sam_core',
 		'opportunities_export_sbir',
+		'opportunities_freshness',
 		'schema_agents',
 		'schema_priority',
 		'schema_changes',
@@ -204,6 +207,15 @@ function validateOpportunitiesExportSamCore(data) {
 	}
 }
 
+function validateOpportunitiesFreshness(data) {
+	assert(data.schema_version === '1.0', '/opportunities/freshness.json schema_version must be 1.0');
+	assert(typeof data.sources?.sam?.count === 'number', '/opportunities/freshness.json sources.sam.count missing');
+	assertAbsUrl(data.sources?.sam?.export_full, '/opportunities/freshness.json sam export_full');
+	assertAbsUrl(data.sources?.sam?.export_core, '/opportunities/freshness.json sam export_core');
+	assertAbsUrl(data.sources?.sbir?.manifest_url, '/opportunities/freshness.json sbir manifest_url');
+	assertAbsUrl(data.sources?.sbir?.export, '/opportunities/freshness.json sbir export');
+}
+
 function validateOpportunitiesExportSbir(data) {
 	assert(data.schema_version === '1.1', '/opportunities/export-sbir.json schema_version must be 1.1');
 	assert(data.source === 'sbir', '/opportunities/export-sbir.json source must be sbir');
@@ -230,6 +242,9 @@ function validateWellKnownManifest(data) {
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sam.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sam-core.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sbir.json', '/.well-known/agent-manifest.json discovery.exports');
+	assert(Array.isArray(data.discovery?.metadata), '/.well-known/agent-manifest.json discovery.metadata must be array');
+	for (const metadataUrl of data.discovery.metadata) assertAbsUrl(metadataUrl, '/.well-known/agent-manifest.json discovery.metadata entry');
+	assertHasEndpointWithPath(data.discovery.metadata, '/opportunities/freshness.json', '/.well-known/agent-manifest.json discovery.metadata');
 	assert(Array.isArray(data.discovery?.schemas), '/.well-known/agent-manifest.json discovery.schemas must be array');
 	for (const schemaUrl of data.discovery.schemas) assertAbsUrl(schemaUrl, '/.well-known/agent-manifest.json discovery.schemas entry');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/agents.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
@@ -263,6 +278,7 @@ function validateIntegrity(data) {
 		'src/pages/opportunities/export-sam.json.ts',
 		'src/pages/opportunities/export-sam-core.json.ts',
 		'src/pages/opportunities/export-sbir.json.ts',
+		'src/pages/opportunities/freshness.json.ts',
 		'src/pages/.well-known/agent-manifest.json.ts',
 		'src/pages/.well-known/llms.txt.ts',
 		'src/pages/schemas/agents.schema.json.ts',
