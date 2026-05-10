@@ -104,6 +104,22 @@ for (const file of coreIndexable) {
 	assert(!/noindex=\{true\}/.test(src), `Core page should remain indexable (remove noindex): ${file}`);
 }
 
+const coreSharePages = {
+	'src/pages/index.astro': '/og/home.png',
+	'src/pages/profile/index.astro': '/og/profile.png',
+	'src/pages/capabilities/index.astro': '/og/capabilities.png',
+	'src/pages/capabilities/[slug].astro': '/og/capabilities.png',
+	'src/pages/speaking/index.astro': '/og/speaking.png',
+	'src/pages/events/index.astro': '/og/events.png',
+	'src/pages/opportunities/index.astro': '/og/opportunities.png',
+};
+
+for (const [file, imagePath] of Object.entries(coreSharePages)) {
+	const src = read(file);
+	assert(src.includes(`image="${imagePath}"`), `Expected explicit OG image on ${file}: ${imagePath}`);
+	assert(exists(`public${imagePath}`), `Missing OG image asset ${imagePath} required by ${file}`);
+}
+
 if (errors.length) {
 	console.error('seo guard lint failed:\n');
 	for (const err of errors) console.error(`- ${err}`);
