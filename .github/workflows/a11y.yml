@@ -76,7 +76,7 @@ jobs:
           PREVIEW_PID=$!
           trap 'kill $PREVIEW_PID' EXIT
           # Wait for server
-          for i in {1..30}; do
+          for _ in {1..30}; do
             curl -sSf http://127.0.0.1:4321/ >/dev/null && break
             sleep 1
           done

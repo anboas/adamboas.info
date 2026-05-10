@@ -63,7 +63,7 @@ jobs:
             exit 1
           fi
 
-          echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
+          echo "RUN_ID=$RUN_ID" >> "$GITHUB_ENV"
           echo "Using Whitepaper run $RUN_ID"
 
       - name: Fetch latest successful Whitepaper memo run id
@@ -82,7 +82,7 @@ jobs:
             exit 1
           fi
 
-          echo "MEMO_RUN_ID=$MEMO_RUN_ID" >> $GITHUB_ENV
+          echo "MEMO_RUN_ID=$MEMO_RUN_ID" >> "$GITHUB_ENV"
           echo "Using Whitepaper memo run $MEMO_RUN_ID"
 
       - name: Download Whitepaper paper artifacts
@@ -93,7 +93,7 @@ jobs:
           mkdir -p /tmp/wp
           cd /tmp/wp
           gh run download "$RUN_ID" -R anboas/Whitepaper
-          ls -la
+          find . -maxdepth 2 -mindepth 1 -print
 
       - name: Download Whitepaper memo artifacts
         env:
@@ -103,7 +103,7 @@ jobs:
           mkdir -p /tmp/wm
           cd /tmp/wm
           gh run download "$MEMO_RUN_ID" -R anboas/Whitepaper
-          ls -la
+          find . -maxdepth 2 -mindepth 1 -print
 
       - name: Sync PDFs + HTML into this repo
         run: |
@@ -398,13 +398,13 @@ jobs:
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit."
-            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
           git commit -m "Sync Whitepaper outputs (PDF + HTML)"
           git push
-          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Deploy note
         if: steps.commit.outputs.changed == 'true'
