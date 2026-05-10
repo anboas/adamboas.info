@@ -1,0 +1,45 @@
+{
+  "id": "sam-5eff9b9932dd4a1f9421c750318a2850",
+  "title": "Facility Maintenance Management and Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5eff9b9932dd4a1f9421c750318a2850",
+  "opportunity_url": "https://sam.gov/opp/5eff9b9932dd4a1f9421c750318a2850/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5eff9b9932dd4a1f9421c750318a2850/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5eff9b9932dd4a1f9421c750318a2850",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N6247326R0039",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC PACIFIC CMD.NAVFAC SOUTHWEST SW.NAVFACSYSCOM SOUTHWEST",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5eff9b9932dd4a1f9421c750318a2850",
+  "detail_text": "Multi-Function Multiple Award Service Contract (MASC) at various locations in the NAVFAC SW Area of Responsibility (AOR) in Arizona, California, Colorado, Nevada, New Mexico, Utah and other locations as approved.",
+  "detail_text_length": 212,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43d413d0c4f44852843c447b72b45ee3/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/43d413d0c4f44852843c447b72b45ee3/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/998ed8b285c7ef379bec2766f6a24790daa539c669fe01aecf9cd9ea740617fd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/998ed8b285c7ef379bec2766f6a24790daa539c669fe01aecf9cd9ea740617fd.pdf",
+      "file_id": "43d413d0c4f44852843c447b72b45ee3",
+      "file_name": "Amendment_N6247326R0039+0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 167568,
+      "sha256": "998ed8b285c7ef379bec2766f6a24790daa539c669fe01aecf9cd9ea740617fd"
+    }
+  ],
+  "_mirror_hash": "ddb7624a95b948e4e8ee6e7d01a40955d3dc4e89d230c56d9443ccda27bae3fd",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.892536+00:00"
+}

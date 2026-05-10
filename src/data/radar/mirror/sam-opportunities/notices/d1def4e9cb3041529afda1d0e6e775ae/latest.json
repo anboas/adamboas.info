@@ -1,0 +1,58 @@
+{
+  "id": "sam-d1def4e9cb3041529afda1d0e6e775ae",
+  "title": "Q509-Sources Sought for Medical Officer of the Day Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1def4e9cb3041529afda1d0e6e775ae",
+  "opportunity_url": "https://sam.gov/opp/d1def4e9cb3041529afda1d0e6e775ae/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d1def4e9cb3041529afda1d0e6e775ae/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d1def4e9cb3041529afda1d0e6e775ae",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "36C25026Q0241",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.249-NETWORK CONTRACT OFFICE 9 (36C249)",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d1def4e9cb3041529afda1d0e6e775ae",
+  "detail_text": "This is a Sources Sought Notice for Medical Officer of the Day Services for the Battle Creek VA Medical Center in Battle Creek, Michigan. The draft Performance Work Statement is attached and subject to changes. Please see attached Sources Sought Notice for more information. Network Contracting Office (NCO) 10 is 36C250.",
+  "detail_text_length": 321,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/647bb4263e3a48f6b67b247f07089634/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6b79f6000a749a4b3a83f5b9c20da6a/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/647bb4263e3a48f6b67b247f07089634/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/4e8e4f34ce2341097a32576b55378e973556259c33cbdd784c39cbeb614a2b80.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/4e8e4f34ce2341097a32576b55378e973556259c33cbdd784c39cbeb614a2b80.docx",
+      "file_id": "647bb4263e3a48f6b67b247f07089634",
+      "file_name": "Performance+Work+Statement_MOD.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 99710,
+      "sha256": "4e8e4f34ce2341097a32576b55378e973556259c33cbdd784c39cbeb614a2b80"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c6b79f6000a749a4b3a83f5b9c20da6a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/6ba0e719d9596ce93b5700f6f925378ef9b7bb54c2ac643d48983a809d97ca9d.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/6ba0e719d9596ce93b5700f6f925378ef9b7bb54c2ac643d48983a809d97ca9d.docx",
+      "file_id": "c6b79f6000a749a4b3a83f5b9c20da6a",
+      "file_name": "Sources+Sought+Notice.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 43032,
+      "sha256": "6ba0e719d9596ce93b5700f6f925378ef9b7bb54c2ac643d48983a809d97ca9d"
+    }
+  ],
+  "_mirror_hash": "a799a1dcf9336747a4bd9cb5caec1f2fba89b25813a09cfc67934e7e4b909862",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.913506+00:00"
+}

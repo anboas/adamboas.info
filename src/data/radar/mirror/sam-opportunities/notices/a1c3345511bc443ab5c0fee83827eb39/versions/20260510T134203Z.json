@@ -1,0 +1,68 @@
+{
+  "id": "sam-a1c3345511bc443ab5c0fee83827eb39",
+  "title": "Project CL26071008, V Belt",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1c3345511bc443ab5c0fee83827eb39",
+  "opportunity_url": "https://sam.gov/opp/a1c3345511bc443ab5c0fee83827eb39/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a1c3345511bc443ab5c0fee83827eb39/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a1c3345511bc443ab5c0fee83827eb39",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL26071008",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a1c3345511bc443ab5c0fee83827eb39",
+  "detail_text": "Project ID: CL26071008 The Defense Logistics Agency (DLA) is looking for potential sources to enter into a Long-Term Contract (LTC) for the National Stock Number (NSN) listed below and on the attached Market Research documents. V Belt, NSN 3030014885606, AMC/AMSC 1/G This NSN has an AMC/AMSC of 1/G. All 1/G coded NSNs have drawings that can be found in the cFolder. Review the attached Product Identification Description (PID), Market Research Questionnaire, and Market Research Spreadsheet. If interested in supplying this NSN, please fill-out and email the Market Research Questionnaire and Spreadsheet to Camerson Siebeneck at camerson.siebeneck@dla.mil by the response date of 5/18/2025 by EOD/11:59PM EST. ***NOTE: This project contains Drawings/Specifications for 1/G items. Vendors may access the applicable drawings/specifications by querying {MR014885606} within the solicitation field at the following link: https://pcf1x.bsm.dla.mil/cfolders/",
+  "detail_text_length": 955,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5983a98500ce48e4a61d68f2d1b63275/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6db386763aa4928b4685ea6db4c9669/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb3d6cbd342d42f08c414a5fc0d4a879/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5983a98500ce48e4a61d68f2d1b63275/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cc54c17ec71b5ce1cf2435b2a23b21196b96972aec7a706abef3ce23c90e3aee.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cc54c17ec71b5ce1cf2435b2a23b21196b96972aec7a706abef3ce23c90e3aee.xlsx",
+      "file_id": "5983a98500ce48e4a61d68f2d1b63275",
+      "file_name": "CL26071008+MR+LTC+Spreadsheet+NSN+info.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 176683,
+      "sha256": "cc54c17ec71b5ce1cf2435b2a23b21196b96972aec7a706abef3ce23c90e3aee"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e6db386763aa4928b4685ea6db4c9669/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2df5d99f10ff0dc109b69b7f157fd45cdf2afed166f950bf3350f87f856c33a4.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2df5d99f10ff0dc109b69b7f157fd45cdf2afed166f950bf3350f87f856c33a4.docx",
+      "file_id": "e6db386763aa4928b4685ea6db4c9669",
+      "file_name": "CL26071008+MR+LTC+Question.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 57847,
+      "sha256": "2df5d99f10ff0dc109b69b7f157fd45cdf2afed166f950bf3350f87f856c33a4"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eb3d6cbd342d42f08c414a5fc0d4a879/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0d97bdc775eed8e7e7f499e2037f29a5aa8b2ec7550e65e3e570bd872dc31d27.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0d97bdc775eed8e7e7f499e2037f29a5aa8b2ec7550e65e3e570bd872dc31d27.pdf",
+      "file_id": "eb3d6cbd342d42f08c414a5fc0d4a879",
+      "file_name": "CL26071008+PID-PACK.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 64702,
+      "sha256": "0d97bdc775eed8e7e7f499e2037f29a5aa8b2ec7550e65e3e570bd872dc31d27"
+    }
+  ],
+  "_mirror_hash": "0f7a4566a081a2cbc54eb782e61698730128f0ebfb3f313009a9b9cdbf8d627a",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:46.013448+00:00"
+}

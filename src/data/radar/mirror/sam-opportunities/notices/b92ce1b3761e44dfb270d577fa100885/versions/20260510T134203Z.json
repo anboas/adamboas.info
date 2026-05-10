@@ -1,0 +1,57 @@
+{
+  "id": "sam-b92ce1b3761e44dfb270d577fa100885",
+  "title": "NOI to Sole Source to VaLogic, LLC",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b92ce1b3761e44dfb270d577fa100885",
+  "opportunity_url": "https://sam.gov/opp/b92ce1b3761e44dfb270d577fa100885/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/b92ce1b3761e44dfb270d577fa100885/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "b92ce1b3761e44dfb270d577fa100885",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "NOI-OD-26-000344",
+  "agency_path": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.NATIONAL INSTITUTES OF HEALTH.NATIONAL INSTITUTES OF HEALTH OLAO",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=b92ce1b3761e44dfb270d577fa100885",
+  "detail_text": "The purpose is to purchase of the VaLogic, LLC IQ/OQ/PQ Qualification Services of Cold Temperature Units (CTU) for the Pharmacy Department. Justification: The selected source is based on current service coverage by Valogic Bio, Inc. via the Office of Research Services and Compliance (ORSC) contract with VaLogic (Contract #75N90021D00025, Task Order #75N90021F00001). VaLogic Bio, Inc. will perform IOQ/PQ/RQ testing, calibration, and validation of pharmacy cold temperature units that will require qualification testing. The sole source is also based on the availability to provide GMP/GLP qualifications to all new and existing Pharmacy Department Cold Temperature Unit (CTU) with the capacity to service various manufacturer cold temperature units from Follet, Panasonic, ThermoFisher, and Stirling. Because of the existing VaLogic contract with ORSC as well as the specific IOQ/PQ/RQ validation training and expertise, only one (1) source will be solicited. All other sources have been exhausted due to the service technician specific training, certification, database access, and knowledgebase of manufacturer refrigerator, freezer, and sub-zero equipment as well as the software/firmware that are directly applicable to the operation and management of each CTU. The certified training of VaLogic Bio, Inc. technicians on Follet, Panasonic, Helmer, ThermoFisher, K2 Scientific, and Stirling model cold temperature units which includes specific cold temperature unit manufacturer training, service certification and access to the latest technical developments, repair procedures knowledge base access, updated instrument schematics database access, software & firmware updates, and planned maintenance procedures of multiple manufacturer refrigerator, freezer, and sub-zero units compels the solicitation of only one (1) source. Additionally, since VaLogic has provided qualification, validation, and certification services for various Pharmacy department biomedical equipment and aseptic facilities for the past eight (2) years and currently holds the existing service contract through ORSC, no other solicitations will be made. These specific requirements will not permit competition to the maximum extent possible. Competition will be sought by oral solicitation procedures and no resultant synopsis in FBO will be published. (FAR 5.202 (a) (2))",
+  "detail_text_length": 2353,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/297c6094662245b2843bc2f109de3e0e/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/debf5037944748eebf113500d58faf24/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/297c6094662245b2843bc2f109de3e0e/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/323e4c2de766920731daec6ffb035090dbc538b6bb9122ede065a4e9c4efa7cc.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/323e4c2de766920731daec6ffb035090dbc538b6bb9122ede065a4e9c4efa7cc.docx",
+      "file_id": "297c6094662245b2843bc2f109de3e0e",
+      "file_name": "Sole+Source+Memo+VaLogic.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 48904,
+      "sha256": "323e4c2de766920731daec6ffb035090dbc538b6bb9122ede065a4e9c4efa7cc"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/debf5037944748eebf113500d58faf24/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/d6d93a91eba5a6120549c7b677abad547582919b2007d31ee4a8b8596c1b12ea.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/d6d93a91eba5a6120549c7b677abad547582919b2007d31ee4a8b8596c1b12ea.docx",
+      "file_id": "debf5037944748eebf113500d58faf24",
+      "file_name": "Statement+of+Work+for+VaLogic+IQOQ+Testing+-3-.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 21609,
+      "sha256": "d6d93a91eba5a6120549c7b677abad547582919b2007d31ee4a8b8596c1b12ea"
+    }
+  ],
+  "_mirror_hash": "7cfbd39e2b63740b76435472e9be4eb1079d39c542c2439218c6b0e3df96087e",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.962482+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "sam-8a5b9ac2da6841bfa819fdc1fbed92f9",
+  "title": "IMPLEMENTATION OF A REGIONAL VETTING CENTER IN GUAYAQUIL, ECUADOR",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a5b9ac2da6841bfa819fdc1fbed92f9",
+  "opportunity_url": "https://sam.gov/opp/8a5b9ac2da6841bfa819fdc1fbed92f9/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8a5b9ac2da6841bfa819fdc1fbed92f9/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8a5b9ac2da6841bfa819fdc1fbed92f9",
+  "notice_type_code": "p",
+  "notice_type": "Pre-solicitation",
+  "engagement_kinds": [
+    "Pre-solicitation"
+  ],
+  "solicitation_number": "19GE5026R0064",
+  "agency_path": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.ACQUISITIONS - RPSO FRANKFURT",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-11",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Pre-solicitation"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a5b9ac2da6841bfa819fdc1fbed92f9",
+  "detail_text": "Please see attached Pre-Solicitation Notice.",
+  "detail_text_length": 44,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b10ab8efd024c8a943950896b161a43/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/8b10ab8efd024c8a943950896b161a43/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/5a0dda8353fbafd873888ce76612777dd1091fb7f241f1ceacbaad805dcabd76.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/5a0dda8353fbafd873888ce76612777dd1091fb7f241f1ceacbaad805dcabd76.pdf",
+      "file_id": "8b10ab8efd024c8a943950896b161a43",
+      "file_name": "19GE5026R0064_PreSol-Notice.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 165740,
+      "sha256": "5a0dda8353fbafd873888ce76612777dd1091fb7f241f1ceacbaad805dcabd76"
+    }
+  ],
+  "_mirror_hash": "853a9f330cd14df040d04f57b67cadf98d992315bb71c62c2b49e9576d788e0f",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.945828+00:00"
+}

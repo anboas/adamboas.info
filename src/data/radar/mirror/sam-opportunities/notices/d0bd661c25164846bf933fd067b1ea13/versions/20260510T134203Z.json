@@ -1,0 +1,46 @@
+{
+  "id": "sam-d0bd661c25164846bf933fd067b1ea13",
+  "title": "Commercial cloud-based Weather Intelligence Service",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0bd661c25164846bf933fd067b1ea13",
+  "opportunity_url": "https://sam.gov/opp/d0bd661c25164846bf933fd067b1ea13/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/d0bd661c25164846bf933fd067b1ea13/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "d0bd661c25164846bf933fd067b1ea13",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA480326BL01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR COMBAT COMMAND.FA4803  20 CONS LGCA",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=d0bd661c25164846bf933fd067b1ea13",
+  "detail_text": "ADMINISTRATIVE UPDATE: SHORTENED RESPONSE DEADLINE Please be advised that the response deadline for this Sources Sought Notice has been shortened. All capability statements and responses are now due no later than 13 MAY 2026 at 12:00PM EST . 1. Purpose and Disclaimer T his Sources Sought Notice is issued solely for information and market research planning purposes. It does not constitute a Request for Proposal (RFP), Request for Quote (RFQ), or a promise to issue a solicitation in the future. This notice does not commit the Government to contract for any supply or service whatsoever. All information submitted in response to this announcement is voluntary; the Government will not pay for information requested nor will it compensate any respondent for any cost incurred in developing information provided to the Government. Not responding to this Sources Sought does not preclude participation in any future RFP/RFQ, if any is issued. This post is for Market Research Purposes only. 2. Requirements Description The Government is seeking information for a commercial cloud-based weather intelligence service with API and platform access. The required solution must be capable of delivering the following below, including associated technical support as required: a.) Advanced Forecasting: AI-native global probabilistic atmospheric prediction and regional ensemble modeling. b.)System Integration: Custom vector events designed for direct, seamless data ingest into specified Government systems. c.) Operational Alerting: Automated, threshold-driven environmental alerting. d.) AOR Assessments: Mission- and asset-based environmental assessments tailored for designated overseas Areas of Responsibility (AORs). 3. Submission Instructions Interested and capable vendors are requested to submit a brief Capability Statement demonstrating their ability to meet all requirements listed in Section 2 and must include: a.) Company Name, CAGE Code, and UEI Number. b.) Point of Contact (Name, Title, Email, and Phone Number). c.) Business Size/Socio-economic Status under NAICS Code 513210. d.) A brief technical description of how your platform meets the strict forecasting, integration, and AOR assessment requirements listed above. Responses are due no later than 13 MAY 2026, 1200H EST. Please submit all responses via email to river.samelin.1@us.af.mil",
+  "detail_text_length": 2357,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5abc1c01ecf47fab763742d964c090a/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c5abc1c01ecf47fab763742d964c090a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/87761d30a1a1c0ec005f5aac9579f510a4f24c33355f4a9b63ab96438a6f37e9.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/87761d30a1a1c0ec005f5aac9579f510a4f24c33355f4a9b63ab96438a6f37e9.pdf",
+      "file_id": "c5abc1c01ecf47fab763742d964c090a",
+      "file_name": "QA+-+FA480326BL01+-+Weather+Intelligence+Service.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 74083,
+      "sha256": "87761d30a1a1c0ec005f5aac9579f510a4f24c33355f4a9b63ab96438a6f37e9"
+    }
+  ],
+  "_mirror_hash": "6c077609bbc4d21f9f01be270d201b75d38d7fd67761712559e182fa0c065f0a",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.973905+00:00"
+}

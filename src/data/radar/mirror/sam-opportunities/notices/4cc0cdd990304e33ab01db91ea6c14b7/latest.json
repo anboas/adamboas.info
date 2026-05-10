@@ -1,0 +1,67 @@
+{
+  "id": "sam-4cc0cdd990304e33ab01db91ea6c14b7",
+  "title": "N0001426R0001",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4cc0cdd990304e33ab01db91ea6c14b7",
+  "opportunity_url": "https://sam.gov/opp/4cc0cdd990304e33ab01db91ea6c14b7/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/4cc0cdd990304e33ab01db91ea6c14b7/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "4cc0cdd990304e33ab01db91ea6c14b7",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0001426R0001",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.ONR.ONR HQS.OFFICE OF NAVAL RESEARCH",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-19",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=4cc0cdd990304e33ab01db91ea6c14b7",
+  "detail_text": "ONR Internships, Outreach, and Website Support",
+  "detail_text_length": 46,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f946b99ad4c49a9b87e0aa5dd02416a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55de41c455814baea792bb1192a69bc1/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc54faebc98a48b798158b30587c4319/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2f946b99ad4c49a9b87e0aa5dd02416a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cdb7dee7f8a24a3902fdc78a9e779fbd12bf983819b280ec92aa5850dbfaa8ca.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cdb7dee7f8a24a3902fdc78a9e779fbd12bf983819b280ec92aa5850dbfaa8ca.xlsx",
+      "file_id": "2f946b99ad4c49a9b87e0aa5dd02416a",
+      "file_name": "RFP+Attachment+10+KTR+QA+as+of+Amendment+0001.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 20638,
+      "sha256": "cdb7dee7f8a24a3902fdc78a9e779fbd12bf983819b280ec92aa5850dbfaa8ca"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/55de41c455814baea792bb1192a69bc1/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/2f82a2901066508dd20d966279527c60c33e266cac24a81d7054eb33682ffb34.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/2f82a2901066508dd20d966279527c60c33e266cac24a81d7054eb33682ffb34.pdf",
+      "file_id": "55de41c455814baea792bb1192a69bc1",
+      "file_name": "DRAFT+Solicitation+Amendment+N0001426R00010001+SF+30.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 615225,
+      "sha256": "2f82a2901066508dd20d966279527c60c33e266cac24a81d7054eb33682ffb34"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/bc54faebc98a48b798158b30587c4319/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/27e4162963f26d645a971bbc9fb1f634baaac675342146205c7f9f631fe269c3.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/27e4162963f26d645a971bbc9fb1f634baaac675342146205c7f9f631fe269c3.docx",
+      "file_id": "bc54faebc98a48b798158b30587c4319",
+      "file_name": "RFP+Attachment+2+First+TO+PWS+Amendment+0001.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 28911,
+      "sha256": "27e4162963f26d645a971bbc9fb1f634baaac675342146205c7f9f631fe269c3"
+    }
+  ],
+  "_mirror_hash": "61963afd082d0d87801a5d3a3a97fc85a8135e4c635c03af41eeabf5b427180c",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.901058+00:00"
+}

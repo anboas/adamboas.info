@@ -1,0 +1,46 @@
+{
+  "id": "sam-5a316b7e4e9845cc98ba74b15ca04ed3",
+  "title": "FY26 OG EFB Sanitization",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5a316b7e4e9845cc98ba74b15ca04ed3",
+  "opportunity_url": "https://sam.gov/opp/5a316b7e4e9845cc98ba74b15ca04ed3/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/5a316b7e4e9845cc98ba74b15ca04ed3/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "5a316b7e4e9845cc98ba74b15ca04ed3",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "F2Z1116114AG01",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4621  22 CONS PK",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5a316b7e4e9845cc98ba74b15ca04ed3",
+  "detail_text": "THIS IS A REQUEST FOR INFORMATION (RFI) ANNOUNCEMENT ONLY. This notice does not constitute a commitment by the Government. All information submitted in response to this announcement is voluntary, and the Government will not pay for information requested nor will it compensate any respondent for any cost incurred in developing information provided to the Government. The 22nd Contracting Squadron is searching for qualified vendors who can provide: 1. Physical Hardware Sanitization of Government-Owned iPad Air M3 Devices (30 each) Requirement includes the permanent physical removal or disabling of Wi-Fi, Bluetooth, cellular chips, and microphone capabilities for use in sensitive environments. 2. Physical Docking Infrastructure Purpose-built dock infrastructure to exclusively deliver iOS and publication updates via a physical connection, as devices will have zero wireless capabilities. 3. Centralized Device Management Services / Support Support for an EFB Program Manager office to manage these devices for sensitive 801x exercise and real-world operational needs. Devices will have no wireless connectivity, no ForeFlight, no email, no Teams, and no certificates loaded. As part of its market research, 22 CONS/PKA is issuing this RFI to determine if there exist an adequate number of qualified interested contractors capable of providing the requirement. The Government may use the responses to this RFI for information and planning purposes. This RFI is only for the purpose of identifying potential sources as part of 22 CONS/PKA market research. No Solicitation exists; therefore, do not request a copy. Responses to this RFI are not quotes on which the 22 CONS/PKA can issue any contract. This RFI is issued for information and planning purposes only and does not itself constitute a Solicitation. The Government does not intend to award a contract based only on responses to this RFI. All information received in response to this RFI marked \"Proprietary\" will be protected and handled accordingly. Interested parties are responsible for adequately marking proprietary or competition sensitive information contained in their response. Responses to the RFI will not be returned. Responders are solely responsible for all expenses associated with responding to this Sources Sought. 22 CONS/PKA will not pay for information received in response to this RFI. Do not submit pricing information in response to this RFI. Responses are due no later than 15 July 2026 at 1200 CDT (12:00pm CDT). If your company is capable and interested, please send responses/capability statements with the subject heading F2Z1116114AG01 - FY26 OG EFB Sanitization RFI to A1C Mohammed Diallo, 22 CONS/PKA; McConnell AFB email address: mohammed.diallo@us.af.mil with TSgt Brian Brammer, 22 CONS/PKA; McConnell AFB email address: brian.brammer@us.af.mil copied along with SSgt Leroy Beeman, 22 CONS/PKA; McConnell AFB email address: leroy.beeman@us.af.mil.",
+  "detail_text_length": 2945,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a93ae48550a403285bb792c23131391/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/7a93ae48550a403285bb792c23131391/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/dbedee42b294d93dc1300d38e9e087694ec773f40eae32583b539025274c4c27.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/dbedee42b294d93dc1300d38e9e087694ec773f40eae32583b539025274c4c27.pdf",
+      "file_id": "7a93ae48550a403285bb792c23131391",
+      "file_name": "Performance+Work+Statement+EFB+Sanitization.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 155459,
+      "sha256": "dbedee42b294d93dc1300d38e9e087694ec773f40eae32583b539025274c4c27"
+    }
+  ],
+  "_mirror_hash": "ab5bf79ec446066ff8f83bc16f7e90120413e59cf493e79d236948f2d1ce96d6",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.988805+00:00"
+}

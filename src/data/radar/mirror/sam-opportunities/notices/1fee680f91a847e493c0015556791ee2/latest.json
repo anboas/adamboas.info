@@ -1,0 +1,46 @@
+{
+  "id": "sam-1fee680f91a847e493c0015556791ee2",
+  "title": "6550--DNA Extraction Reagents  Minneapolis VA Health Care System",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1fee680f91a847e493c0015556791ee2",
+  "opportunity_url": "https://sam.gov/opp/1fee680f91a847e493c0015556791ee2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/1fee680f91a847e493c0015556791ee2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "1fee680f91a847e493c0015556791ee2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C26326R0054_0002",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 23 (36C263)",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=1fee680f91a847e493c0015556791ee2",
+  "detail_text": "This is amendment 2 to the RFQ.",
+  "detail_text_length": 31,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ca3faf1919f4d8d879bfb6bc83a4314/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2ca3faf1919f4d8d879bfb6bc83a4314/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/b552c34bf2dd03361fcefb0970b198f7e8f62557580d302524bcedff2923c9d2.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/b552c34bf2dd03361fcefb0970b198f7e8f62557580d302524bcedff2923c9d2.pdf",
+      "file_id": "2ca3faf1919f4d8d879bfb6bc83a4314",
+      "file_name": "36C26326R0054+0002.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 152229,
+      "sha256": "b552c34bf2dd03361fcefb0970b198f7e8f62557580d302524bcedff2923c9d2"
+    }
+  ],
+  "_mirror_hash": "2a05fd356d514539df98cce70bb111bcfd858a1b81df884c32c5cebb92c84544",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.982753+00:00"
+}

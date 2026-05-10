@@ -1,0 +1,56 @@
+{
+  "id": "sam-98cdcb5bb79f49e8b160e64d5fb817d1",
+  "title": "6650 VIDEO SCOPE PROBE",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98cdcb5bb79f49e8b160e64d5fb817d1",
+  "opportunity_url": "https://sam.gov/opp/98cdcb5bb79f49e8b160e64d5fb817d1/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/98cdcb5bb79f49e8b160e64d5fb817d1/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "98cdcb5bb79f49e8b160e64d5fb817d1",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0040626Q0172",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC PUGET SOUND.NAVSUP FLT LOG CTR PUGET SOUND",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-19",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=98cdcb5bb79f49e8b160e64d5fb817d1",
+  "detail_text": "Fleet Logistics Center Puget Sound (FLCPS) intends to solicit for VIDEO SCOPE PROBE supplies: VIDEO SCOPE PROBE part number MFLAS4030N-CO, FLEX POD PACKAGE part number MFL-POD, MOUNT KIT, MAGIC ARM part number MFLAMAGICARM, FORWARD VIEW BLACK part number T40115FN, SIDE VIEW RED TIP part number T40115SN, and SIDE VIEW BLUE TIP part number T40120SF. This requirement is Brand Name for WAYGATE TECHNOLOGIES USA, LP. Interested companies may identify their interest and capability to respond to the requirement, which will be considered solely for the purpose of determining whether to conduct a competitive procurement. A determination not to compete this action based upon responses received to this notice is solely within the discretion of the Government. The Government will evaluate the offeror’s price for reasonableness and past performance as part of the responsibility determination in accordance with RFO 12.203. Quotes will be evaluated in accordance with RFO 12.203, the Government will select the most advantageous offer based on the following evaluation factors: technical including delivery date, price, and past performance in no order of relative importance. Anticipated Award Date: May 2026 Contracting Officer: Lorraine Small / Lorraine.m.small.civ@us.navy.mil",
+  "detail_text_length": 1278,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e203afc25204c96bf4a664af126f994/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e4c1d80b73d482286c9075687e1d20f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e203afc25204c96bf4a664af126f994/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/55a32583af22416b0b2ef5f278529563151a090ceaf9dad5c0c48396bfa872ec.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/55a32583af22416b0b2ef5f278529563151a090ceaf9dad5c0c48396bfa872ec.pdf",
+      "file_id": "1e203afc25204c96bf4a664af126f994",
+      "file_name": "1.3.5+N6275860577459+Brand+Name_Redacted.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 213852,
+      "sha256": "55a32583af22416b0b2ef5f278529563151a090ceaf9dad5c0c48396bfa872ec"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/4e4c1d80b73d482286c9075687e1d20f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/0a0515f29f43c8161cd29e6c48eaad7dcdef45b99c64942bddae55520d02a0dc.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/0a0515f29f43c8161cd29e6c48eaad7dcdef45b99c64942bddae55520d02a0dc.pdf",
+      "file_id": "4e4c1d80b73d482286c9075687e1d20f",
+      "file_name": "2.1.1+26Q0172+Sol.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 1792883,
+      "sha256": "0a0515f29f43c8161cd29e6c48eaad7dcdef45b99c64942bddae55520d02a0dc"
+    }
+  ],
+  "_mirror_hash": "ea0c082be5cd2d0b1fce11ac2b2ca3029cd9ace38fb22925ac087091c1b5951e",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.899521+00:00"
+}

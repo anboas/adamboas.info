@@ -1,0 +1,90 @@
+{
+  "id": "sam-60ce496ed3954e149156836967854ed2",
+  "title": "U.S. Senate Oracle eProcurement Renewal",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=60ce496ed3954e149156836967854ed2",
+  "opportunity_url": "https://sam.gov/opp/60ce496ed3954e149156836967854ed2/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/60ce496ed3954e149156836967854ed2/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "60ce496ed3954e149156836967854ed2",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "2026-R-059",
+  "agency_path": "SENATE, THE.THE UNITED STATES SENATE SERGEANT AT ARMS.SECRETARY OF THE SENATE",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=60ce496ed3954e149156836967854ed2",
+  "detail_text": "Please review and complete the attachments to ensure your submission for the U.S. Senate Oracle eProcurement Renewal.",
+  "detail_text_length": 117,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f61d1e281a243f3bd6c04ec165e29ce/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12b8992311834d75b49ee24d30d27ebe/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e98424246e34627bfb14a516adc2ccf/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fbe17c8dba947ac8efbd8827346b58b/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91f4437240b843b78aa66555e50fefa0/download"
+  ],
+  "resource_count": 5,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/0f61d1e281a243f3bd6c04ec165e29ce/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e7daa03962cc68d829df2104552293c23ea338e02399a50a1ff980102908013a.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e7daa03962cc68d829df2104552293c23ea338e02399a50a1ff980102908013a.xlsx",
+      "file_id": "0f61d1e281a243f3bd6c04ec165e29ce",
+      "file_name": "2026-R-059+Pricing+Table.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 24574,
+      "sha256": "e7daa03962cc68d829df2104552293c23ea338e02399a50a1ff980102908013a"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/12b8992311834d75b49ee24d30d27ebe/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/cd75ab2b51fcaab01dd9e5d3f66af02e991d3b4f4cb176ee799056e4d7b0b841.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/cd75ab2b51fcaab01dd9e5d3f66af02e991d3b4f4cb176ee799056e4d7b0b841.pdf",
+      "file_id": "12b8992311834d75b49ee24d30d27ebe",
+      "file_name": "2026-R-059+Addendum+to+Commercial+Agreements.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 182609,
+      "sha256": "cd75ab2b51fcaab01dd9e5d3f66af02e991d3b4f4cb176ee799056e4d7b0b841"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1e98424246e34627bfb14a516adc2ccf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/c0edc5913ca2328bede2bedb52d589557a90b0d6ce1730ef97f2e7571eeffde8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/c0edc5913ca2328bede2bedb52d589557a90b0d6ce1730ef97f2e7571eeffde8.pdf",
+      "file_id": "1e98424246e34627bfb14a516adc2ccf",
+      "file_name": "2026-R-059+Section+208+Compliance+Certificate.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118000,
+      "sha256": "c0edc5913ca2328bede2bedb52d589557a90b0d6ce1730ef97f2e7571eeffde8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/1fbe17c8dba947ac8efbd8827346b58b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7b63a10698742581dacd8e3d760b47a4a156190016311fd85d97ab6cb3c126b8.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7b63a10698742581dacd8e3d760b47a4a156190016311fd85d97ab6cb3c126b8.pdf",
+      "file_id": "1fbe17c8dba947ac8efbd8827346b58b",
+      "file_name": "2026-R-059+Purchase+Order+Clauses.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 230411,
+      "sha256": "7b63a10698742581dacd8e3d760b47a4a156190016311fd85d97ab6cb3c126b8"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/91f4437240b843b78aa66555e50fefa0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/efc937dbb8fdcee13d94acfedb1e64daba7bf06f8ebb018c4c569af53c202d5d.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/efc937dbb8fdcee13d94acfedb1e64daba7bf06f8ebb018c4c569af53c202d5d.pdf",
+      "file_id": "91f4437240b843b78aa66555e50fefa0",
+      "file_name": "2026-R-059+Instructions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 155037,
+      "sha256": "efc937dbb8fdcee13d94acfedb1e64daba7bf06f8ebb018c4c569af53c202d5d"
+    }
+  ],
+  "_mirror_hash": "79a732d52c99c55761365538079caebf10ecd6ef75be5ff24ea9507f5b74e90f",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.996886+00:00"
+}

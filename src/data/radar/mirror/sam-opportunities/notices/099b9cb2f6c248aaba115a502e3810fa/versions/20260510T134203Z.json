@@ -1,0 +1,57 @@
+{
+  "id": "sam-099b9cb2f6c248aaba115a502e3810fa",
+  "title": "RegScale Alternative Sources/Solutions",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=099b9cb2f6c248aaba115a502e3810fa",
+  "opportunity_url": "https://sam.gov/opp/099b9cb2f6c248aaba115a502e3810fa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/099b9cb2f6c248aaba115a502e3810fa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "099b9cb2f6c248aaba115a502e3810fa",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "RFI_HNC_Regscale_FA830726RB028",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.COMMAND, CONTROL, COMMUNICATIONS & BATTLE MANAGEMENT.FA8307  AFLCMC HNCK C3IN",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=099b9cb2f6c248aaba115a502e3810fa",
+  "detail_text": "The Government is conducting market research to identify and assess commercially available alternatives to RegScale in support of Platform One (P1) mission requirements. This Request for Information (RFI) is issued for market research and acquisition planning purposes to evaluate industry capabilities and available solutions that provide Governance, Risk, and Compliance (GRC) automation, continuous compliance monitoring, security control management, risk assessment tracking, audit readiness, and authorization support within a Government security-compliant environment. The Government seeks to identify solutions capable of supporting enterprise compliance operations, Risk Management Framework (RMF) activities, continuous Authority to Operate (cATO) sustainment, control inheritance management, evidence collection automation, policy mapping, and security documentation management across Platform One’s DevSecOps ecosystem. Responses to this RFI will assist the Government in identifying qualified sources, evaluating alternative capabilities, and informing future acquisition strategy decisions. This RFI is for informational purposes only and does not constitute a solicitation, request for proposal, or a commitment by the Government to award a contract. The Government encourages responses from all capable vendors and seeks to promote maximum practicable competition while assessing solutions that meet or exceed the operational, technical, and security requirements necessary to support Platform One mission execution.",
+  "detail_text_length": 1531,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5063bf2b992840da92b50a9e07823440/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/912f33c7a1a54661ba3c1435f06cd701/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5063bf2b992840da92b50a9e07823440/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f33ef3730850eda93d43e1966314450f02f10f111cbb6fdebc87c3d1df4130d0.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f33ef3730850eda93d43e1966314450f02f10f111cbb6fdebc87c3d1df4130d0.pdf",
+      "file_id": "5063bf2b992840da92b50a9e07823440",
+      "file_name": "26RB028+SOO+RegScale+FY26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 228884,
+      "sha256": "f33ef3730850eda93d43e1966314450f02f10f111cbb6fdebc87c3d1df4130d0"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/912f33c7a1a54661ba3c1435f06cd701/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/df77d9288d42796e6384fe0369a22e384b42184d9fde2fd5a1d914b26f5aa611.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/df77d9288d42796e6384fe0369a22e384b42184d9fde2fd5a1d914b26f5aa611.pdf",
+      "file_id": "912f33c7a1a54661ba3c1435f06cd701",
+      "file_name": "RegScale_RFI_Vendor_Questions.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 88592,
+      "sha256": "df77d9288d42796e6384fe0369a22e384b42184d9fde2fd5a1d914b26f5aa611"
+    }
+  ],
+  "_mirror_hash": "1440934275a6a6a5861c3b39ca53cfa39fae25895f2edb83b02e3b9f30bf5456",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.995219+00:00"
+}

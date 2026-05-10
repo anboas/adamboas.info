@@ -1,0 +1,57 @@
+{
+  "id": "sam-457c928843224880b5e9b3122d50f237",
+  "title": "Automated Smoke Point Instrument",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=457c928843224880b5e9b3122d50f237",
+  "opportunity_url": "https://sam.gov/opp/457c928843224880b5e9b3122d50f237/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/457c928843224880b5e9b3122d50f237/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "457c928843224880b5e9b3122d50f237",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "FA860126P0028",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AIR FORCE LIFE CYCLE MANAGEMENT CENTER.FA8601  AFLCMC PZIO",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=457c928843224880b5e9b3122d50f237",
+  "detail_text": "The Air Force Life Cycle Management Center, Base Support Branch (AFLCMC/PZIBB) at Wright-Patterson Air Force Base (WPAFB), OH intends to award a sole source contract to: DC SCIENTIFIC, INC.12692 Sandy DR 6750 Mclean WAY STE D Glen Burnie, Maryland 21060-6409, United States This requirement is for one (1) Automated Smoke Point Instrument in accordance with the attached Statement of Work (SOW). The contract will be a Firm Fixed Price (FFP) Commercial Purchase Order and carried out as a sole source action (not competitively awarded). This authority is supported by an approved Single Source Justification. The applicable NAICS code is 334516 - Analytical Laboratory Instrument Manufacturing. This NAICS code has a small business size standard of 1,000 employees. The Aerospace Fuels Laboratory (AFPET/PTPLE) has a requirement for one Automated Smoke Point instrument to perform specification testing on Aviation Turbine Fuel, Kerosene-based. Instrument must meet the requirements set forth in ASTM D1322. This is a requirement to support the launch and fuels management mission of Vandenberg Space Force Base. Without the Automated Smoke Point instrument, the laboratory will be unable to complete specification testing requirements for Aviation Turbine Fuels (Jet A, JP-8, JP-4, JP-5, JPTS). AD Systems manufactures the ASTM D1322 Automated Smoke Point instrument, but they do not distribute in the USA however, DC Scientific, Inc. is their exclusive authorized representative in the USA. Therefore, DC Scientific is the only vendor that meets the requirement specifications. THIS NOTICE OF INTENT IS NOT A REQUEST FOR PROPOSALS OR QUOTATIONS. No solicitation package will be issued. Requests for copies of a solicitation in response to this notice will not be honored or acknowledged. A determination by the Government not to compete this proposed action based upon responses to this notice is solely within the discretion of the Government. Information received will be considered solely for the purpose of determining whether conducting a competitive procurement is in the best interest of the Government. All responses received by 18 May 2026 @ 1300 Eastern Time will be considered by the Government. This notice is not a request for competitive proposals/quotes. Responses and questions shall be submitted via email to jennifer.blackford@us.af.mil and eve.aden@us.af.mil.",
+  "detail_text_length": 2380,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5543da85aec84459b5aaa3837f4163f0/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c881194255b94fbaa98fe3a729e18fe4/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/5543da85aec84459b5aaa3837f4163f0/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9f8cc26115f71a48f8eef7b67ae3757be16db1b28f07feb5d0d5b8480595abf1.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9f8cc26115f71a48f8eef7b67ae3757be16db1b28f07feb5d0d5b8480595abf1.pdf",
+      "file_id": "5543da85aec84459b5aaa3837f4163f0",
+      "file_name": "Atch+2+-+SSJ+-+Smoke+Point+Instrument+-Signed.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 88983,
+      "sha256": "9f8cc26115f71a48f8eef7b67ae3757be16db1b28f07feb5d0d5b8480595abf1"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/c881194255b94fbaa98fe3a729e18fe4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e410ccbe53132ebeae18c9b12bc7b67b4b7bd3be866615b75d26eb35d1a0282e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e410ccbe53132ebeae18c9b12bc7b67b4b7bd3be866615b75d26eb35d1a0282e.pdf",
+      "file_id": "c881194255b94fbaa98fe3a729e18fe4",
+      "file_name": "Atch+1+-+SOW+-+Automated+Smoke+Point+Instrument+dated+05Mar26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 239035,
+      "sha256": "e410ccbe53132ebeae18c9b12bc7b67b4b7bd3be866615b75d26eb35d1a0282e"
+    }
+  ],
+  "_mirror_hash": "4687a78e2556ef70a29d8725547a7d9cd3ca4b0f4d336382e4a9d7f929a3c223",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:46.006562+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "sam-8ccfac97ab694b01a0e5049784ab7193",
+  "title": "DHA OCONUS DMLSS RFI",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ccfac97ab694b01a0e5049784ab7193",
+  "opportunity_url": "https://sam.gov/opp/8ccfac97ab694b01a0e5049784ab7193/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8ccfac97ab694b01a0e5049784ab7193/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8ccfac97ab694b01a0e5049784ab7193",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Sources Sought"
+  ],
+  "solicitation_number": "028957",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.SCO ALEXANDRIA.SUPPORT CENTER HUNTSVILLE.W2V6 USA ENG SPT CTR HUNTSVIL",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-15",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8ccfac97ab694b01a0e5049784ab7193",
+  "detail_text": "REQUEST FOR INFORMATION SUBJECT: Request for Information (RFI) Defense Health Agency (DHA), Outside Continental U.S. (OCONUS) DMLSS/LogiCole Facility Management (FM) Support Services The purpose of this RFI is to perform market research to identify Korean Firms that have technical capabilities and expertise to provide services to successfully conduct service support for the DHA OCONUS DMLSS/LogiCole FM. The OCONUS locations include South Korea. The objective of this contract is to provide all personnel, equipment, supplies, transportation, tools, materials, supervision, and other items and non-personal services necessary to perform DMLSS facility logistics support services at OCONUS military medical treatment facilities (MTFs). This requirement provides support for the DMLSS Automated Information System (AIS), which is the primary system for medical logistics management in the DoD. This enables DHA-FE to perform the duties assigned by the Assistant Office of the Secretary of Defense. This contract will provide day-to-day support in the technical areas of Program Management, Project Management, Training, Database Sustainment, and Analytics. The market research uncovered by this SOURCES SOUGHT ANNOUNCEMENT will be used for information only for preliminary planning purposes on an upcoming solicitation(s). No proposals are being requested or accepted at this time, NO CONTRACT SHALL BE AWARDED AT THIS TIME, and no reimbursement will be made (for any costs associated with providing information) in response to this synopsis or any follow up information requests. Interested vendors may provide the requested information to support the Government’s market research. See attached RFI for more information.",
+  "detail_text_length": 1722,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a824c400cb3e404da79770d8def1b559/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a824c400cb3e404da79770d8def1b559/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/7c46192d79f5752d570986855182fc2f78a5a6fc99c896af16c701d6455ec4b4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/7c46192d79f5752d570986855182fc2f78a5a6fc99c896af16c701d6455ec4b4.pdf",
+      "file_id": "a824c400cb3e404da79770d8def1b559",
+      "file_name": "DHA+OCONUS+DMLSS+RFI_5.8.2026.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 154351,
+      "sha256": "7c46192d79f5752d570986855182fc2f78a5a6fc99c896af16c701d6455ec4b4"
+    }
+  ],
+  "_mirror_hash": "df776ef6fd01913da78f9066b58ff43f1af22389da1be51ca348a3ebfc877e5c",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.891949+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-3a6ea03fa2684b479c6a478e4c4bc733",
+  "title": "36C78626Q50131 -- S206",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a6ea03fa2684b479c6a478e4c4bc733",
+  "opportunity_url": "https://sam.gov/opp/3a6ea03fa2684b479c6a478e4c4bc733/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/3a6ea03fa2684b479c6a478e4c4bc733/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "3a6ea03fa2684b479c6a478e4c4bc733",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "36C78626Q50131",
+  "agency_path": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CEMETERY ADMIN (36C786)",
+  "posted_date": "2026-05-09",
+  "response_deadline": "2026-05-29",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=3a6ea03fa2684b479c6a478e4c4bc733",
+  "detail_text": "Unarmed Security Guard services with patrol vehicle at the National Memorial Cemetery of Arizona. Purpose of this amendment is to correct the submission deadline for quotes on the Instructions to offerors_Evaluations to the reflect the correct deadline of 3PM CST on 05/29/2026.",
+  "detail_text_length": 278,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/73171c9afb654e339b0504c9be0267a9/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be69d9e22afe4348a5bac66db5a0ee01/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/73171c9afb654e339b0504c9be0267a9/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e0139735d6cd3a552ba473efbc4391a6fe90f9397a98bae808715c90fbc26d92.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e0139735d6cd3a552ba473efbc4391a6fe90f9397a98bae808715c90fbc26d92.docx",
+      "file_id": "73171c9afb654e339b0504c9be0267a9",
+      "file_name": "S02+PAST+PERFORMANCE+QUESTIONNAIRE+04122026.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 53251,
+      "sha256": "e0139735d6cd3a552ba473efbc4391a6fe90f9397a98bae808715c90fbc26d92"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/be69d9e22afe4348a5bac66db5a0ee01/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/706af4279a04ee48390a55c0c0616040496fd8f6a563f864201f04470f31f102.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/706af4279a04ee48390a55c0c0616040496fd8f6a563f864201f04470f31f102.pdf",
+      "file_id": "be69d9e22afe4348a5bac66db5a0ee01",
+      "file_name": "S06_36C78626Q50131_0001.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 421851,
+      "sha256": "706af4279a04ee48390a55c0c0616040496fd8f6a563f864201f04470f31f102"
+    }
+  ],
+  "_mirror_hash": "cb023ac855983eb6fa3656d5e42e375eb67771009e2aca7db3c562182497900d",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:46.063440+00:00"
+}

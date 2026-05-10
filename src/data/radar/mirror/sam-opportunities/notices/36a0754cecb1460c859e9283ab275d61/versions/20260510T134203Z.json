@@ -1,0 +1,46 @@
+{
+  "id": "sam-36a0754cecb1460c859e9283ab275d61",
+  "title": "DoD National Geographic & Chilton Subscription",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=36a0754cecb1460c859e9283ab275d61",
+  "opportunity_url": "https://sam.gov/opp/36a0754cecb1460c859e9283ab275d61/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/36a0754cecb1460c859e9283ab275d61/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "36a0754cecb1460c859e9283ab275d61",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "FA805205082026",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR FORCE MATERIEL COMMAND.AF INSTALLATION & MISSION SUPPORT CENTER.FA8052  773 ESS",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-12",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=36a0754cecb1460c859e9283ab275d61",
+  "detail_text": "The Department of War (DoW) Library Program requires DoWL needs Chilton’s Auto Repair Manuals and National Geographic (Magazine, Kids, People, Animal, World and various media formats) package subscription. Chilton’s Auto Repair manuals database provides information on repairing over 2,600 latest to vintage vehicle makes and models with comprehensive automotive expertise. The car repair database must be directed toward DIY repair. Information must include information in full text, diagrams, specification tables, troubleshooting guides, photos, illustrations, multimedia (videos and animation), and ASE test prep. National Geographic Kids, National Geographic People, Animals, World, & National Geographic issues/content that is from Current date to back issues from 1888. Content including full-text books, magazines, videos, maps and National Geographic images. National Geographic Kids includes the complete run of the magazine from the first issue in 2009 to the present and provides authoritative, age-appropriate digital content suitable for younger students in subjects like English Language Arts, social studies, and science.",
+  "detail_text_length": 1137,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a63df179ce8b4be09506152004b0ff21/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a63df179ce8b4be09506152004b0ff21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3f66517dc38d1e0c7a4fc9539f186d8a18ec8a7d44405ac7b111eeb215666ab4.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3f66517dc38d1e0c7a4fc9539f186d8a18ec8a7d44405ac7b111eeb215666ab4.pdf",
+      "file_id": "a63df179ce8b4be09506152004b0ff21",
+      "file_name": "Chiltons+and+Nat+Geo+Sources+Sought.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 100976,
+      "sha256": "3f66517dc38d1e0c7a4fc9539f186d8a18ec8a7d44405ac7b111eeb215666ab4"
+    }
+  ],
+  "_mirror_hash": "5d94ffe823e67b27f0c03b2d3b8fff172ef6b652f921c8416365b13bcfe5d04c",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.953381+00:00"
+}

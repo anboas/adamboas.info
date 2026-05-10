@@ -1,0 +1,46 @@
+{
+  "id": "sam-6368f097ad8e469bbf67ee754b95c113",
+  "title": "F--VEGA SP WFM PROJECT",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6368f097ad8e469bbf67ee754b95c113",
+  "opportunity_url": "https://sam.gov/opp/6368f097ad8e469bbf67ee754b95c113/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/6368f097ad8e469bbf67ee754b95c113/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "6368f097ad8e469bbf67ee754b95c113",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Special Notice"
+  ],
+  "solicitation_number": "140R4026Q0068",
+  "agency_path": "INTERIOR, DEPARTMENT OF THE.BUREAU OF RECLAMATION.UPPER COLORADO REGIONAL OFFICE",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-23",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=6368f097ad8e469bbf67ee754b95c113",
+  "detail_text": "VEGA SP WFM PROJECT",
+  "detail_text_length": 19,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6a5dfaffae741e4a65b23a4875b77f6/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/d6a5dfaffae741e4a65b23a4875b77f6/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/28c0d26a5e8d1ad268efc5e3e2537fb2d2169ae8ba6757f2d85a6a1bd62f8028.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/28c0d26a5e8d1ad268efc5e3e2537fb2d2169ae8ba6757f2d85a6a1bd62f8028.pdf",
+      "file_id": "d6a5dfaffae741e4a65b23a4875b77f6",
+      "file_name": "Intent_to_Award_Sole_Source_Contract_1_-1-_1.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 118189,
+      "sha256": "28c0d26a5e8d1ad268efc5e3e2537fb2d2169ae8ba6757f2d85a6a1bd62f8028"
+    }
+  ],
+  "_mirror_hash": "dd8b87b8633e8f9ec947c2eb61af986d0c644ec6aebd5c2edbe85982509bff77",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:46.047204+00:00"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "sam-951d998abc5040308f3c32dbde7b2b45",
+  "title": "Ceremonial Blue Service Caps",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=951d998abc5040308f3c32dbde7b2b45",
+  "opportunity_url": "https://sam.gov/opp/951d998abc5040308f3c32dbde7b2b45/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/951d998abc5040308f3c32dbde7b2b45/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "951d998abc5040308f3c32dbde7b2b45",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "W91QV1-26-Q-A013",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.FDO SAM HOUSTON.W6QM MICC-FT BELVOIR",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-28",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=951d998abc5040308f3c32dbde7b2b45",
+  "detail_text": "The 3d Infantry Regiment (The Old Guard) has a continuing need for Ceremonial Blue Service Caps for mission requirements in support of various ceremonies and special events in the Military District of Washington and surrounding areas.",
+  "detail_text_length": 234,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3769cf9b212a47b6ae0bc0f811d85b52/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/412d5c97391a464dacef6a87f23c787f/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3769cf9b212a47b6ae0bc0f811d85b52/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/a2e4834b8b1743edc1a3b11b8473debf3b72ea90869198ca8faba4c545d68f23.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/a2e4834b8b1743edc1a3b11b8473debf3b72ea90869198ca8faba4c545d68f23.docx",
+      "file_id": "3769cf9b212a47b6ae0bc0f811d85b52",
+      "file_name": "Sources+Sought+Synopsis+-+TOG_Dress+Caps_v+7+May.2.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 70353,
+      "sha256": "a2e4834b8b1743edc1a3b11b8473debf3b72ea90869198ca8faba4c545d68f23"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/412d5c97391a464dacef6a87f23c787f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/010ef8d59106c812451722cb4435919a2c5e051893258d9de7cc541765ec304a.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/010ef8d59106c812451722cb4435919a2c5e051893258d9de7cc541765ec304a.pdf",
+      "file_id": "412d5c97391a464dacef6a87f23c787f",
+      "file_name": "SOW+Army+Dress+Service+Caps+-2-.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 212682,
+      "sha256": "010ef8d59106c812451722cb4435919a2c5e051893258d9de7cc541765ec304a"
+    }
+  ],
+  "_mirror_hash": "6365cf83d32ea1535092c8762a17feba78250bea848f0a38306dff5ea094d50a",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:46.060406+00:00"
+}

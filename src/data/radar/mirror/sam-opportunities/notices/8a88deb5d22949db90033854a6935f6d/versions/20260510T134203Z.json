@@ -1,0 +1,57 @@
+{
+  "id": "sam-8a88deb5d22949db90033854a6935f6d",
+  "title": "NSN 5998014943115 (ELECTRONIC COMPONENT)",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a88deb5d22949db90033854a6935f6d",
+  "opportunity_url": "https://sam.gov/opp/8a88deb5d22949db90033854a6935f6d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/8a88deb5d22949db90033854a6935f6d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "8a88deb5d22949db90033854a6935f6d",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "SPE7MX26RX042",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA MARITIME.DLA MARITIME COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-14",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=8a88deb5d22949db90033854a6935f6d",
+  "detail_text": "Sources Sought Notice: This acquisition is for supplies for which the Government does not possess complete unrestrictive technical data. This is a sources sought notice required when using only approved sources under the authority of 10 U.S.C. 3204(a) (1). NSN ITEM 5998014943115 ELECTRONIC COMPONENT Approved sources: CAGE/MANUFACTURER/PART_NUMBER 076M6 AMZ ALABAMA INC.12422207-001 0FW39 BAE SYSTEMS TACTICAL VEHICLE SYSTEMS LP12422207-001 78500 MERITOR HEAVY VEHICLE SYSTEMS, LLC4008601020 SEE ATTACHMENTS: MARKET QUESTIONAIRRE AND MARKET RESEARCH SPREADSHEET WITH NSN INFO. Send to Brandy.Warner@dla.mil. NO DATA IS AVAILABLE. AN ALTERNATE OFFEROR IS REQUIRED TO PROVIDE A COMPLETE DATA PACKAGE INCLUDING DATA FOR THE APPROVED AND ALTERNATE PART FOR EVALUATION. DLA Land and Maritime is considering a future solicitation(s), and subsequent award, of an Indefinite Quantity Contract (IQC/LTC) for the item(s) on the market research spreadsheet. The resultant IQC/LTC could potentially range from 3 to 5 years in length. Please provide any adddtional sources that may be able to manufacture these items.",
+  "detail_text_length": 1105,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/03c4f855cba74faa9fa8394ffcd66090/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3dcc2ae95cb949e1ba0c890187bda329/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/03c4f855cba74faa9fa8394ffcd66090/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e636f5d567c1fba8d62ea6ff455c8066ad4e5a434a4e262afc7c6c851742b524.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e636f5d567c1fba8d62ea6ff455c8066ad4e5a434a4e262afc7c6c851742b524.docx",
+      "file_id": "03c4f855cba74faa9fa8394ffcd66090",
+      "file_name": "MR+LTC+Questionnaire.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 58564,
+      "sha256": "e636f5d567c1fba8d62ea6ff455c8066ad4e5a434a4e262afc7c6c851742b524"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/3dcc2ae95cb949e1ba0c890187bda329/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f64341570522e5a61e0a08bb6942c44c4a8e9453373809e0c3ce96b4f36b9f7b.xlsx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f64341570522e5a61e0a08bb6942c44c4a8e9453373809e0c3ce96b4f36b9f7b.xlsx",
+      "file_id": "3dcc2ae95cb949e1ba0c890187bda329",
+      "file_name": "MR+Spreadsheet.xlsx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 12360,
+      "sha256": "f64341570522e5a61e0a08bb6942c44c4a8e9453373809e0c3ce96b4f36b9f7b"
+    }
+  ],
+  "_mirror_hash": "7c6bfc6341809c81907228cb22ce58ce3b9593b23c7e60becebe0e362d4d348e",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.975182+00:00"
+}

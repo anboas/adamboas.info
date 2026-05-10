@@ -1,0 +1,46 @@
+{
+  "id": "sam-a08e5af69e274b2ca1e7de8f7d2cd1c0",
+  "title": "Seal, Nonmetallic SP 5330-01-560-4055",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a08e5af69e274b2ca1e7de8f7d2cd1c0",
+  "opportunity_url": "https://sam.gov/opp/a08e5af69e274b2ca1e7de8f7d2cd1c0/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/a08e5af69e274b2ca1e7de8f7d2cd1c0/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "a08e5af69e274b2ca1e7de8f7d2cd1c0",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CL25344005",
+  "agency_path": "DEPT OF DEFENSE.DEFENSE LOGISTICS AGENCY.DLA LAND.DLA LAND COLUMBUS.DLA LAND AND MARITIME",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-18",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=a08e5af69e274b2ca1e7de8f7d2cd1c0",
+  "detail_text": "This is a sources sought notice only. No synopsis or solicitation are being issued at this time. The amount of information available for publication at this time is limited. This notice is also for the purpose of market research in accordance with Federal Acquisition Regulation (FAR) Part 10. Please provide any sources that may be able to manufacture the NSN listed below. All information may be submitted to Tracy Assenheimer by email at tracy.assenheimer@dla.mil. All deliveries will be made to DLA Depots. Any information must be provided by the response date of this notification. NSN: 5330-01-560-4055 Description: Seal, Nonmetallic SP Approved Source and Part Number: AMZ Alabama Inc. (CAGE 076M6) P/N 6432706-01M1 Inspection and Acceptance: Destination AMC: 3 AMSC: D",
+  "detail_text_length": 776,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ac5173c48a84d08974e074cd5edb54b/download"
+  ],
+  "resource_count": 1,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/6ac5173c48a84d08974e074cd5edb54b/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/21e0c83901acf4a8896ef64bf4a80d49e4c3f47edf3af4b4b1e45f3a48a333a0.docx",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/21e0c83901acf4a8896ef64bf4a80d49e4c3f47edf3af4b4b1e45f3a48a333a0.docx",
+      "file_id": "6ac5173c48a84d08974e074cd5edb54b",
+      "file_name": "CL25344005+Market+Research+LTC+Questionnaire+Blank.docx",
+      "content_type": "application/octet-stream",
+      "size_bytes": 57437,
+      "sha256": "21e0c83901acf4a8896ef64bf4a80d49e4c3f47edf3af4b4b1e45f3a48a333a0"
+    }
+  ],
+  "_mirror_hash": "538f5ffe6645b4cb4fc295f9dd958bd998f68e3c6d9b2d9ba8f5a5d534860002",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:46.013967+00:00"
+}

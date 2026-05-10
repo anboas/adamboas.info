@@ -1,0 +1,68 @@
+{
+  "id": "sam-0fe07f69dac6436da6c6d8984a80fe14",
+  "title": "Body-Worn Cameras and Associated Hardware and Software",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0fe07f69dac6436da6c6d8984a80fe14",
+  "opportunity_url": "https://sam.gov/opp/0fe07f69dac6436da6c6d8984a80fe14/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/0fe07f69dac6436da6c6d8984a80fe14/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "0fe07f69dac6436da6c6d8984a80fe14",
+  "notice_type_code": "r",
+  "notice_type": "Sources Sought",
+  "engagement_kinds": [
+    "Sources Sought"
+  ],
+  "solicitation_number": "CBP-0003",
+  "agency_path": "HOMELAND SECURITY, DEPARTMENT OF.US CUSTOMS AND BORDER PROTECTION.AIR AND MARINE CONTRACTING DIVISION",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-13",
+  "place_of_performance": null,
+  "relevance_score": 2,
+  "relevance_reasons": [
+    "Signal notice type: Sources Sought"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=0fe07f69dac6436da6c6d8984a80fe14",
+  "detail_text": "05.08.26: CBP posted the IDVRS RFI Questions and Government Answers. See responses within the attachment section. This RFI seeks to obtain information regarding the current status of industry capabilities related to body-worn cameras (BWC) and their supporting technologies, vehicle-mounted cameras/vessel-mounted cameras, digital evidence management software (DEMS) licenses, cloud storage, and additional technologies to support the operational needs of various DHS components.",
+  "detail_text_length": 479,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50724dd020444f0ebc4169224ed35480/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/892a19ac100c48beba894c2224d8ff21/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eec5d159d35143149f489b967aa00c0f/download"
+  ],
+  "resource_count": 3,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/50724dd020444f0ebc4169224ed35480/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/63c362be42e5b2bddb1a791f8233f2bf63959480f20403385773abc023d46cff.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/63c362be42e5b2bddb1a791f8233f2bf63959480f20403385773abc023d46cff.pdf",
+      "file_id": "50724dd020444f0ebc4169224ed35480",
+      "file_name": "IDVRS+May+2026+RFI+Questions+and+Answers.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 35688,
+      "sha256": "63c362be42e5b2bddb1a791f8233f2bf63959480f20403385773abc023d46cff"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/892a19ac100c48beba894c2224d8ff21/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/3b57fcd5e4f7eac0a4a796cd435bdcfb480bf93aa08c322a03d4a74692eea732.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/3b57fcd5e4f7eac0a4a796cd435bdcfb480bf93aa08c322a03d4a74692eea732.pdf",
+      "file_id": "892a19ac100c48beba894c2224d8ff21",
+      "file_name": "IDVRS+SOW+Draft+04.30.26.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 667364,
+      "sha256": "3b57fcd5e4f7eac0a4a796cd435bdcfb480bf93aa08c322a03d4a74692eea732"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/eec5d159d35143149f489b967aa00c0f/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e510d2c2a7c81eb68793dd71a7eb726e2b60ce30644863ecea9e4af5e5135e6b.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e510d2c2a7c81eb68793dd71a7eb726e2b60ce30644863ecea9e4af5e5135e6b.pdf",
+      "file_id": "eec5d159d35143149f489b967aa00c0f",
+      "file_name": "IDVRS+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 232517,
+      "sha256": "e510d2c2a7c81eb68793dd71a7eb726e2b60ce30644863ecea9e4af5e5135e6b"
+    }
+  ],
+  "_mirror_hash": "d5c1d438b78c39b7a4cb914406cd42b2f31d534bd001c0f41ac206d04179c6cc",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.959800+00:00"
+}

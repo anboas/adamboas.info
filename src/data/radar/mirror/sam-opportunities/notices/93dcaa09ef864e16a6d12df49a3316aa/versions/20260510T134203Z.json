@@ -1,0 +1,100 @@
+{
+  "id": "sam-93dcaa09ef864e16a6d12df49a3316aa",
+  "title": "DUSN (M) ITD IT Related Services",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93dcaa09ef864e16a6d12df49a3316aa",
+  "opportunity_url": "https://sam.gov/opp/93dcaa09ef864e16a6d12df49a3316aa/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/93dcaa09ef864e16a6d12df49a3316aa/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "93dcaa09ef864e16a6d12df49a3316aa",
+  "notice_type_code": "o",
+  "notice_type": "Solicitation",
+  "engagement_kinds": [],
+  "solicitation_number": "N0018926RB003",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVSUP.NAVSUP GLOBAL LOGISTICS SUPPORT.NAVSUP FLC NORFOLK.NAVSUP FLT LOG CTR NORFOLK",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-05-29",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Navy-linked organization or content",
+    "Solicitation notice type: Solicitation"
+  ],
+  "navy_related": true,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=93dcaa09ef864e16a6d12df49a3316aa",
+  "detail_text": "Deputy Under Secretary of the Navy (Management) - Information Technology Division - DUSN (M) ITD requires requires IT and IT-related support services in the following classified and unclassified areas: database administration, software development, data center operational support, data center migration, advanced system and network administration, information assurance, portfolio management, customer services and helpdesk, Video Teleconferencing (VTC), telecommunications, NMCI tech refreshes, mobility and wireless equipment upgrades, inventory logs, maintenance of SharePoint server farms and sites, portal upgrades, and engineering/development/integration of DUSN (M) ITD Claimancy/SECNAV Headquarters’ hardware, software, and related systems.",
+  "detail_text_length": 749,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2db12b49241d47b7bae34f2a45e4c080/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95eb2a97e125443aac7513c76ad08791/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9cabf285c0df4649bd556144aa143bd4/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9fc2fc408fd84054975fc5faf9ba0787/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6d9813d018e4fb6b950ed15ccab5f06/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8c6ea9282b043079a53de19aba21420/download"
+  ],
+  "resource_count": 6,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/2db12b49241d47b7bae34f2a45e4c080/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/848727e31d7ebe2da8d8de0c22a407c5eb1473b7825635cd3d43745dbc2da3cd.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/848727e31d7ebe2da8d8de0c22a407c5eb1473b7825635cd3d43745dbc2da3cd.pdf",
+      "file_id": "2db12b49241d47b7bae34f2a45e4c080",
+      "file_name": "03+-+QUALITY+ASSURANCE+SURVEILLANCE+PLAN.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 174149,
+      "sha256": "848727e31d7ebe2da8d8de0c22a407c5eb1473b7825635cd3d43745dbc2da3cd"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/95eb2a97e125443aac7513c76ad08791/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/01305d5bf7ef650953f2f603968e9a04548e676a2f1688d7de05ed897090d37e.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/01305d5bf7ef650953f2f603968e9a04548e676a2f1688d7de05ed897090d37e.pdf",
+      "file_id": "95eb2a97e125443aac7513c76ad08791",
+      "file_name": "02+-+CONTRACT+ADMINISTRATION+PLAN+-CAP-+FOR+INDEFINITE+DELIVER.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 108113,
+      "sha256": "01305d5bf7ef650953f2f603968e9a04548e676a2f1688d7de05ed897090d37e"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9cabf285c0df4649bd556144aa143bd4/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/8e0d0ff6f2a252fbe63896105750cb113c6b90be51c63b967aa59dc9de76ed6c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/8e0d0ff6f2a252fbe63896105750cb113c6b90be51c63b967aa59dc9de76ed6c.pdf",
+      "file_id": "9cabf285c0df4649bd556144aa143bd4",
+      "file_name": "01+-+Performance+Work+Statement.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 364792,
+      "sha256": "8e0d0ff6f2a252fbe63896105750cb113c6b90be51c63b967aa59dc9de76ed6c"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/9fc2fc408fd84054975fc5faf9ba0787/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/03335dc76ef0730f86b7586a0b1ef935b48ed2f2844699fc3910ab3eb40ce221.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/03335dc76ef0730f86b7586a0b1ef935b48ed2f2844699fc3910ab3eb40ce221.pdf",
+      "file_id": "9fc2fc408fd84054975fc5faf9ba0787",
+      "file_name": "05+-+Past+Performance+Form.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 66175,
+      "sha256": "03335dc76ef0730f86b7586a0b1ef935b48ed2f2844699fc3910ab3eb40ce221"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/a6d9813d018e4fb6b950ed15ccab5f06/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/f04283e31b47959c1609565afd69f92b0a0cd974100c6eb5543b5473165d1696.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/f04283e31b47959c1609565afd69f92b0a0cd974100c6eb5543b5473165d1696.pdf",
+      "file_id": "a6d9813d018e4fb6b950ed15ccab5f06",
+      "file_name": "Solicitation+-+N0018926RB003.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 2529949,
+      "sha256": "f04283e31b47959c1609565afd69f92b0a0cd974100c6eb5543b5473165d1696"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/f8c6ea9282b043079a53de19aba21420/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/96673c4a5d3eda6f17e0604e87dcc1dd28eee3aee73cdbdb54affb633046b06c.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/96673c4a5d3eda6f17e0604e87dcc1dd28eee3aee73cdbdb54affb633046b06c.pdf",
+      "file_id": "f8c6ea9282b043079a53de19aba21420",
+      "file_name": "04+-+DD-254.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 68252,
+      "sha256": "96673c4a5d3eda6f17e0604e87dcc1dd28eee3aee73cdbdb54affb633046b06c"
+    }
+  ],
+  "_mirror_hash": "13b7103d3d2755676aa70c0c93e8604599ef21a87d5c330dda0145009216507d",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.912380+00:00"
+}

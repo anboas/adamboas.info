@@ -1,0 +1,59 @@
+{
+  "id": "sam-942bbc0e380c422c9401ebee3f867a0d",
+  "title": "Request For Information (RFI) U.S. Army Combat Capabilities Development Command  Chemical Biological Center (DEVCOM CBC) High-Hazard Waste Management",
+  "description": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=942bbc0e380c422c9401ebee3f867a0d",
+  "opportunity_url": "https://sam.gov/opp/942bbc0e380c422c9401ebee3f867a0d/view",
+  "ui_link": "https://sam.gov/workspace/contract/opp/942bbc0e380c422c9401ebee3f867a0d/view",
+  "source": "SAM.gov Get Opportunities Public API",
+  "notice_id": "942bbc0e380c422c9401ebee3f867a0d",
+  "notice_type_code": "s",
+  "notice_type": "Special Notice",
+  "engagement_kinds": [
+    "Pre-solicitation",
+    "Special Notice"
+  ],
+  "solicitation_number": "PANAPG26P0000043420",
+  "agency_path": "DEPT OF DEFENSE.DEPT OF THE ARMY",
+  "posted_date": "2026-05-08",
+  "response_deadline": "2026-06-05",
+  "place_of_performance": null,
+  "relevance_score": 4,
+  "relevance_reasons": [
+    "Signal notice type: Special Notice",
+    "Industry/sourcing signal keywords"
+  ],
+  "navy_related": false,
+  "detail_url": "https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=942bbc0e380c422c9401ebee3f867a0d",
+  "detail_text": "THIS IS A REQUEST FOR INFORMATION (RFI) ONLY : This RFI is issued solely for information and planning purposes – it does not constitute a Request for Proposal (RFP) or a promise to issue an RFP in the future. Solicitations are not available at this time. Requests for solicitation will not receive a response and documents submitted in response to this RFI will not be returned. This notice does not constitute a commitment by the United States Government to contract for any supply or service whatsoever. All information submitted in response to this announcement is voluntary; the United States Government will not pay for information requested nor will it compensate any respondent for any cost incurred in developing information provided to the United States Government. Not responding to this RFI does not preclude participation in any future RFP. If a solicitation is released, it will be announced separately through System for Award Management (SAM) at SAM.gov. For more details, please see attached RFI and draft Performance Work Statement (PWS).",
+  "detail_text_length": 1055,
+  "resource_links": [
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/236d84b4365f4cb4bdc5ef91e1ece65a/download",
+    "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7b7103092c04bf39273aded358640cf/download"
+  ],
+  "resource_count": 2,
+  "resource_items": [
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/236d84b4365f4cb4bdc5ef91e1ece65a/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/e7fde3a0e77313f213bc47c7a90d33e101575f3a8246bbb67d7fb44d9f072618.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/e7fde3a0e77313f213bc47c7a90d33e101575f3a8246bbb67d7fb44d9f072618.pdf",
+      "file_id": "236d84b4365f4cb4bdc5ef91e1ece65a",
+      "file_name": "High+Hazard+Waste+Management+PWS+Draft.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 254856,
+      "sha256": "e7fde3a0e77313f213bc47c7a90d33e101575f3a8246bbb67d7fb44d9f072618"
+    },
+    {
+      "source_url": "https://sam.gov/api/prod/opps/v3/opportunities/resources/files/e7b7103092c04bf39273aded358640cf/download",
+      "mirror_download_url": "https://raw.githubusercontent.com/anboas/adamboas.info/main/src/data/radar/mirror/sam-opportunities/resources/blobs/9bbe7ab10f315328bc91f87c870a40e8fd84fef4e1eaea6fce271218b7e04e41.pdf",
+      "mirror_blob_path": "src/data/radar/mirror/sam-opportunities/resources/blobs/9bbe7ab10f315328bc91f87c870a40e8fd84fef4e1eaea6fce271218b7e04e41.pdf",
+      "file_id": "e7b7103092c04bf39273aded358640cf",
+      "file_name": "High+Hazard+Waste+Management+RFI.pdf",
+      "content_type": "application/octet-stream",
+      "size_bytes": 189100,
+      "sha256": "9bbe7ab10f315328bc91f87c870a40e8fd84fef4e1eaea6fce271218b7e04e41"
+    }
+  ],
+  "_mirror_hash": "c50f3672da456eaa01a96fccabce54feed2ac1d0227fd73a0039a5d021fe4a76",
+  "_mirror_run_id": "20260510T134203Z",
+  "_mirror_recorded_at": "2026-05-10T13:45:45.918796+00:00"
+}
