@@ -23,6 +23,7 @@ export const GET: APIRoute = () => {
 			export_endpoints: {
 				combined: absoluteUrl('/opportunities/export.json'),
 				sam: absoluteUrl('/opportunities/export-sam.json'),
+				sam_core: absoluteUrl('/opportunities/export-sam-core.json'),
 				sbir: absoluteUrl('/opportunities/export-sbir.json'),
 			},
 		},

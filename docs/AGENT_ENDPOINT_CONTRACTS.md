@@ -16,6 +16,8 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
 - `/schemas/agent-priority.schema.json`
 - `/schemas/changes.schema.json`
 - `/schemas/opportunities-export.schema.json`
+- `/schemas/opportunities-export-sam.schema.json`
+- `/schemas/opportunities-export-sbir.schema.json`
 
 ## Priority + trust
 
@@ -52,7 +54,12 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
 
 - `/opportunities/export-sam.json`
   - deterministic SAM-only export
-  - includes `count` and normalized `rows` with `source = "sam"`
+  - includes `count`, `returned_count`, and normalized `rows` with `source = "sam"`
+  - includes `variants.full` and `variants.core` links
+
+- `/opportunities/export-sam-core.json`
+  - lower-noise SAM core profile for lightweight agent ingest
+  - includes `profile = "core"`
 
 - `/opportunities/export-sbir.json`
   - deterministic SBIR-only artifact pointer export

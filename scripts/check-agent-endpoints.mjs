@@ -4,7 +4,7 @@ const base = process.env.SITE_BASE || 'http://127.0.0.1:4321';
 
 const checks = [
 	{ path: '/llms.txt', type: 'text', mustContain: ['/agents.json', '/writing/manifest.json'] },
-	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json', '/writing/agent.json', '/opportunities/export.json', '/opportunities/export-sam.json', '/opportunities/export-sbir.json'] },
+	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json', '/writing/agent.json', '/opportunities/export.json', '/opportunities/export-sam.json', '/opportunities/export-sam-core.json', '/opportunities/export-sbir.json'] },
 	{ path: '/agents.json', type: 'json', requiredKeys: ['schema_version', 'resources', 'preferred_ingestion_order'], validate: validateAgents },
 	{ path: '/agent-priority.json', type: 'json', requiredKeys: ['schema_version', 'ingestion_tiers', 'crawler_hints'], validate: validatePriority },
 	{ path: '/changes.json', type: 'json', requiredKeys: ['release_version', 'event_log', 'discovery_endpoints'], validate: validateChanges },
@@ -14,7 +14,8 @@ const checks = [
 	{ path: '/events/agent.json', type: 'json', requiredKeys: ['surface', 'related_routes', 'crawl_hints'], validate: validateEventsSurface },
 	{ path: '/opportunities/agent.json', type: 'json', requiredKeys: ['surface', 'source_routes', 'crawl_hints'], validate: validateOpportunitiesSurface },
 	{ path: '/opportunities/export.json', type: 'json', requiredKeys: ['schema_version', 'sources', 'exports'], validate: validateOpportunitiesExport },
-	{ path: '/opportunities/export-sam.json', type: 'json', requiredKeys: ['schema_version', 'source', 'count', 'rows'], validate: validateOpportunitiesExportSam },
+	{ path: '/opportunities/export-sam.json', type: 'json', requiredKeys: ['schema_version', 'source', 'count', 'rows', 'variants'], validate: validateOpportunitiesExportSam },
+	{ path: '/opportunities/export-sam-core.json', type: 'json', requiredKeys: ['schema_version', 'source', 'profile', 'rows'], validate: validateOpportunitiesExportSamCore },
 	{ path: '/opportunities/export-sbir.json', type: 'json', requiredKeys: ['schema_version', 'source', 'mode', 'artifacts'], validate: validateOpportunitiesExportSbir },
 	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'], validate: validateIntegrity },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
@@ -24,6 +25,8 @@ const checks = [
 	{ path: '/schemas/agent-priority.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 	{ path: '/schemas/changes.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 	{ path: '/schemas/opportunities-export.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
+	{ path: '/schemas/opportunities-export-sam.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
+	{ path: '/schemas/opportunities-export-sbir.schema.json', type: 'json', requiredKeys: ['$schema', '$id', 'type'], validate: validateSchemaDoc },
 ];
 
 function assert(condition, message) {
@@ -53,6 +56,7 @@ function validateAgents(data) {
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/agent.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sam.json', '/agents.json preferred_ingestion_order');
+	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sam-core.json', '/agents.json preferred_ingestion_order');
 	assertHasEndpointWithPath(data.preferred_ingestion_order, '/opportunities/export-sbir.json', '/agents.json preferred_ingestion_order');
 
 	assert(Array.isArray(data.resources) && data.resources.length >= 5, '/agents.json resources must be non-empty array');
@@ -98,11 +102,14 @@ function validateChanges(data) {
 		'opportunities_surface',
 		'opportunities_export',
 		'opportunities_export_sam',
+		'opportunities_export_sam_core',
 		'opportunities_export_sbir',
 		'schema_agents',
 		'schema_priority',
 		'schema_changes',
 		'schema_opportunities_export',
+		'schema_opportunities_export_sam',
+		'schema_opportunities_export_sbir',
 	];
 	for (const key of requiredEndpoints) {
 		assertAbsUrl(data.discovery_endpoints?.[key], `/changes.json discovery_endpoints.${key}`);
@@ -155,9 +162,10 @@ function validateOpportunitiesSurface(data) {
 }
 
 function validateOpportunitiesExport(data) {
-	assert(data.schema_version === '1.1', '/opportunities/export.json schema_version must be 1.1');
+	assert(data.schema_version === '1.2', '/opportunities/export.json schema_version must be 1.2');
 	assertAbsUrl(data.canonical, '/opportunities/export.json canonical');
 	assertAbsUrl(data.exports?.sam, '/opportunities/export.json exports.sam');
+	assertAbsUrl(data.exports?.sam_core, '/opportunities/export.json exports.sam_core');
 	assertAbsUrl(data.exports?.sbir, '/opportunities/export.json exports.sbir');
 	assert(data.sources?.sam?.mode === 'embedded', '/opportunities/export.json sources.sam.mode should be embedded');
 	assert(typeof data.sources?.sam?.count === 'number' && data.sources.sam.count >= 1, '/opportunities/export.json sam count invalid');
@@ -171,16 +179,33 @@ function validateOpportunitiesExport(data) {
 }
 
 function validateOpportunitiesExportSam(data) {
-	assert(data.schema_version === '1.0', '/opportunities/export-sam.json schema_version must be 1.0');
+	assert(data.schema_version === '1.2', '/opportunities/export-sam.json schema_version must be 1.2');
 	assert(data.source === 'sam', '/opportunities/export-sam.json source must be sam');
 	assertAbsUrl(data.canonical, '/opportunities/export-sam.json canonical');
 	assert(typeof data.count === 'number' && data.count >= 1, '/opportunities/export-sam.json count invalid');
+	assert(typeof data.returned_count === 'number' && data.returned_count >= 1, '/opportunities/export-sam.json returned_count invalid');
 	assert(Array.isArray(data.rows), '/opportunities/export-sam.json rows must be array');
-	assert(data.rows.length === data.count, '/opportunities/export-sam.json count mismatch');
+	assert(data.rows.length === data.returned_count, '/opportunities/export-sam.json returned_count mismatch');
+	assert(data.returned_count <= data.count, '/opportunities/export-sam.json returned_count cannot exceed count');
+	assertAbsUrl(data.variants?.full, '/opportunities/export-sam.json variants.full');
+	assertAbsUrl(data.variants?.core, '/opportunities/export-sam.json variants.core');
+	assert(typeof data.lineage?.source_dataset_path === 'string', '/opportunities/export-sam.json lineage.source_dataset_path missing');
+}
+
+function validateOpportunitiesExportSamCore(data) {
+	assert(data.schema_version === '1.0', '/opportunities/export-sam-core.json schema_version must be 1.0');
+	assert(data.source === 'sam', '/opportunities/export-sam-core.json source must be sam');
+	assert(data.profile === 'core', '/opportunities/export-sam-core.json profile must be core');
+	assert(Array.isArray(data.rows), '/opportunities/export-sam-core.json rows must be array');
+	if (data.rows.length > 0) {
+		const row = data.rows[0];
+		assert(Object.hasOwn(row, 'id') && Object.hasOwn(row, 'title'), '/opportunities/export-sam-core.json row missing required fields');
+		assert(!Object.hasOwn(row, 'solicitation_number'), '/opportunities/export-sam-core.json row should omit solicitation_number');
+	}
 }
 
 function validateOpportunitiesExportSbir(data) {
-	assert(data.schema_version === '1.0', '/opportunities/export-sbir.json schema_version must be 1.0');
+	assert(data.schema_version === '1.1', '/opportunities/export-sbir.json schema_version must be 1.1');
 	assert(data.source === 'sbir', '/opportunities/export-sbir.json source must be sbir');
 	assert(data.mode === 'remote-artifact', '/opportunities/export-sbir.json mode must be remote-artifact');
 	assertAbsUrl(data.canonical, '/opportunities/export-sbir.json canonical');
@@ -188,6 +213,8 @@ function validateOpportunitiesExportSbir(data) {
 	assertAbsUrl(data.artifacts?.summary_url, '/opportunities/export-sbir.json artifacts.summary_url');
 	assertAbsUrl(data.artifacts?.report_url, '/opportunities/export-sbir.json artifacts.report_url');
 	assertAbsUrl(data.artifacts?.manifest_url, '/opportunities/export-sbir.json artifacts.manifest_url');
+	assert(typeof data.lineage?.artifact_repo === 'string' && data.lineage.artifact_repo.length > 0, '/opportunities/export-sbir.json lineage.artifact_repo missing');
+	assert(typeof data.lineage?.artifact_path === 'string' && data.lineage.artifact_path.length > 0, '/opportunities/export-sbir.json lineage.artifact_path missing');
 }
 
 function validateWellKnownManifest(data) {
@@ -201,6 +228,7 @@ function validateWellKnownManifest(data) {
 	for (const exportUrl of data.discovery.exports) assertAbsUrl(exportUrl, '/.well-known/agent-manifest.json discovery.exports entry');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sam.json', '/.well-known/agent-manifest.json discovery.exports');
+	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sam-core.json', '/.well-known/agent-manifest.json discovery.exports');
 	assertHasEndpointWithPath(data.discovery.exports, '/opportunities/export-sbir.json', '/.well-known/agent-manifest.json discovery.exports');
 	assert(Array.isArray(data.discovery?.schemas), '/.well-known/agent-manifest.json discovery.schemas must be array');
 	for (const schemaUrl of data.discovery.schemas) assertAbsUrl(schemaUrl, '/.well-known/agent-manifest.json discovery.schemas entry');
@@ -208,6 +236,8 @@ function validateWellKnownManifest(data) {
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/agent-priority.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/changes.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export-sam.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
+	assertHasEndpointWithPath(data.discovery.schemas, '/schemas/opportunities-export-sbir.schema.json', '/.well-known/agent-manifest.json discovery.schemas');
 }
 
 function validateSchemaDoc(data) {
@@ -231,9 +261,16 @@ function validateIntegrity(data) {
 		'src/pages/opportunities/agent.json.ts',
 		'src/pages/opportunities/export.json.ts',
 		'src/pages/opportunities/export-sam.json.ts',
+		'src/pages/opportunities/export-sam-core.json.ts',
 		'src/pages/opportunities/export-sbir.json.ts',
 		'src/pages/.well-known/agent-manifest.json.ts',
 		'src/pages/.well-known/llms.txt.ts',
+		'src/pages/schemas/agents.schema.json.ts',
+		'src/pages/schemas/agent-priority.schema.json.ts',
+		'src/pages/schemas/changes.schema.json.ts',
+		'src/pages/schemas/opportunities-export.schema.json.ts',
+		'src/pages/schemas/opportunities-export-sam.schema.json.ts',
+		'src/pages/schemas/opportunities-export-sbir.schema.json.ts',
 		'src/pages/for-agents/index.astro',
 		'src/data/discovery-events.json',
 	];

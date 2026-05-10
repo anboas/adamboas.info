@@ -14,7 +14,7 @@ const MANIFEST_URL =
 
 export const GET: APIRoute = () => {
 	const payload = {
-		schema_version: '1.0',
+		schema_version: '1.1',
 		source: 'sbir',
 		generated_at: new Date().toISOString(),
 		canonical: absoluteUrl('/opportunities/?source=sbir'),
@@ -25,9 +25,15 @@ export const GET: APIRoute = () => {
 			report_url: REPORT_URL,
 			manifest_url: MANIFEST_URL,
 		},
+		lineage: {
+			artifact_repo: 'anboas/adamboas-media',
+			artifact_path: 'opportunities/sbir-sttr/latest/*',
+			source_updated_at: null,
+		},
 		details: {
 			surface_map: absoluteUrl('/opportunities/agent.json'),
 			source_route: absoluteUrl('/opportunities/sbir/'),
+			recommended_refresh: 'every-4h',
 		},
 	};
 

@@ -41,6 +41,7 @@ export const GET: APIRoute = () => {
 			opportunities_surface: absoluteUrl('/opportunities/agent.json'),
 			opportunities_export: absoluteUrl('/opportunities/export.json'),
 			opportunities_export_sam: absoluteUrl('/opportunities/export-sam.json'),
+			opportunities_export_sam_core: absoluteUrl('/opportunities/export-sam-core.json'),
 			opportunities_export_sbir: absoluteUrl('/opportunities/export-sbir.json'),
 			rss: absoluteUrl('/rss.xml'),
 			sitemap: absoluteUrl('/sitemap-index.xml'),
@@ -48,6 +49,8 @@ export const GET: APIRoute = () => {
 			schema_priority: absoluteUrl('/schemas/agent-priority.schema.json'),
 			schema_changes: absoluteUrl('/schemas/changes.schema.json'),
 			schema_opportunities_export: absoluteUrl('/schemas/opportunities-export.schema.json'),
+			schema_opportunities_export_sam: absoluteUrl('/schemas/opportunities-export-sam.schema.json'),
+			schema_opportunities_export_sbir: absoluteUrl('/schemas/opportunities-export-sbir.schema.json'),
 		},
 	};
 

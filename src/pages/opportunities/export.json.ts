@@ -57,11 +57,12 @@ export const GET: APIRoute = () => {
 		.sort((a, b) => Date.parse(b) - Date.parse(a))[0] ?? null;
 
 	const payload = {
-		schema_version: '1.1',
+		schema_version: '1.2',
 		generated_at: new Date().toISOString(),
 		canonical: absoluteUrl('/opportunities/'),
 		exports: {
 			sam: absoluteUrl('/opportunities/export-sam.json'),
+			sam_core: absoluteUrl('/opportunities/export-sam-core.json'),
 			sbir: absoluteUrl('/opportunities/export-sbir.json'),
 		},
 		sources: {

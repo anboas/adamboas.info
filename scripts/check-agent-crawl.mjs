@@ -41,11 +41,14 @@ async function run() {
 		'/opportunities/agent.json',
 		'/opportunities/export.json',
 		'/opportunities/export-sam.json',
+		'/opportunities/export-sam-core.json',
 		'/opportunities/export-sbir.json',
 		'/schemas/agents.schema.json',
 		'/schemas/agent-priority.schema.json',
 		'/schemas/changes.schema.json',
 		'/schemas/opportunities-export.schema.json',
+		'/schemas/opportunities-export-sam.schema.json',
+		'/schemas/opportunities-export-sbir.schema.json',
 	];
 
 	for (const path of mustReach) {
@@ -56,8 +59,9 @@ async function run() {
 	}
 
 	const combined = await getJson('/opportunities/export.json');
-	assert(combined.exports?.sam && combined.exports?.sbir, 'combined export missing per-source links');
+	assert(combined.exports?.sam && combined.exports?.sam_core && combined.exports?.sbir, 'combined export missing per-source links');
 	await getJson(asPath(combined.exports.sam));
+	await getJson(asPath(combined.exports.sam_core));
 	await getJson(asPath(combined.exports.sbir));
 	console.log('ok crawl opportunities combined -> per-source exports');
 

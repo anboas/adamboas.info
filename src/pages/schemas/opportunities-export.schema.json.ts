@@ -15,9 +15,10 @@ export const GET: APIRoute = () => {
 			canonical: { type: 'string', format: 'uri' },
 			exports: {
 				type: 'object',
-				required: ['sam', 'sbir'],
+				required: ['sam', 'sam_core', 'sbir'],
 				properties: {
 					sam: { type: 'string', format: 'uri' },
+					sam_core: { type: 'string', format: 'uri' },
 					sbir: { type: 'string', format: 'uri' },
 				},
 			},

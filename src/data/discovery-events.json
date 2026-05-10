@@ -78,5 +78,13 @@
     "release": "2026.05",
     "summary": "Added schema endpoints and end-to-end agent crawl contract checks in CI",
     "links": ["/schemas/agents.schema.json", "/schemas/agent-priority.schema.json", "/schemas/changes.schema.json", "/schemas/opportunities-export.schema.json"]
+  },
+  {
+    "id": "opportunities-lineage-and-core-query",
+    "ts": "2026-05-10T22:30:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Added SAM core/limit query mode, provenance metadata, and source-specific export schemas",
+    "links": ["/opportunities/export-sam.json", "/opportunities/export-sbir.json", "/schemas/opportunities-export-sam.schema.json", "/schemas/opportunities-export-sbir.schema.json"]
   }
 ]

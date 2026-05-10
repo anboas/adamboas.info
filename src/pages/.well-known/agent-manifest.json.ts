@@ -21,6 +21,7 @@ export const GET: APIRoute = () => {
 			exports: [
 				absoluteUrl('/opportunities/export.json'),
 				absoluteUrl('/opportunities/export-sam.json'),
+				absoluteUrl('/opportunities/export-sam-core.json'),
 				absoluteUrl('/opportunities/export-sbir.json'),
 			],
 			schemas: [
@@ -28,6 +29,8 @@ export const GET: APIRoute = () => {
 				absoluteUrl('/schemas/agent-priority.schema.json'),
 				absoluteUrl('/schemas/changes.schema.json'),
 				absoluteUrl('/schemas/opportunities-export.schema.json'),
+				absoluteUrl('/schemas/opportunities-export-sam.schema.json'),
+				absoluteUrl('/schemas/opportunities-export-sbir.schema.json'),
 			],
 		},
 	};
