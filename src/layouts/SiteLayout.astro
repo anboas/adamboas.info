@@ -44,6 +44,14 @@ const noindex = Astro.props.noindex ?? false;
 		<Footer />
 
 		<style is:global>
+			.agent-only {
+				display: none;
+			}
+
+			html.agent-view body.agent-view .agent-only {
+				display: block;
+			}
+
 			html.agent-view body.agent-view header,
 			html.agent-view body.agent-view footer,
 			html.agent-view body.agent-view #global-shortcuts-overlay,
@@ -60,6 +68,12 @@ const noindex = Astro.props.noindex ?? false;
 			html.agent-view body.agent-view .card,
 			html.agent-view body.agent-view .control-shell {
 				box-shadow: none !important;
+			}
+
+			html.agent-view body.agent-view h1,
+			html.agent-view body.agent-view h2,
+			html.agent-view body.agent-view h3 {
+				letter-spacing: 0;
 			}
 		</style>
 

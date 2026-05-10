@@ -26,6 +26,7 @@ export const GET: APIRoute = () => {
 		`- Writing manifest: ${absoluteUrl('/writing/manifest.json')}`,
 		`- Changes stream: ${absoluteUrl('/changes.jsonl')}`,
 		`- Integrity: ${absoluteUrl('/integrity.json')}`,
+		`- Agent priority: ${absoluteUrl('/agent-priority.json')}`,
 		`- Full map: ${absoluteUrl('/llms-full.txt')}`,
 		'',
 		'## Notes',

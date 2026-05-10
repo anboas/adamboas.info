@@ -64,6 +64,15 @@ const fmtDate = (date: Date | undefined) =>
 			</div>
 		</SurfacePageHeader>
 
+		<section class="agent-only card mt-3 p-3 text-xs text-slate-300" aria-label="Agent extraction hints">
+			<p class="font-semibold text-slate-100">Agent extraction mode active</p>
+			<ul class="mt-2 space-y-1">
+				<li>Canonical corpus endpoint: <a class="underline" href={withBase('/writing/manifest.json')}>/writing/manifest.json</a></li>
+				<li>Use <code>?view=agent</code> on detail pages for lower-noise parsing.</li>
+				<li>Prefer publication timestamps from manifest over DOM ordering.</li>
+			</ul>
+		</section>
+
 		<FilterShell class="writing-index-controls mt-4 p-2.5 md:mt-5 md:p-3">
 			<div class="control-shell-row flex flex-wrap items-center gap-2 md:gap-3">
 				<div

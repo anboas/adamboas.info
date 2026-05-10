@@ -976,6 +976,15 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			</section>
 		</SurfacePageHeader>
 
+		<section class="agent-only card mt-2 p-3 text-xs text-slate-300" aria-label="Agent extraction hints">
+			<p class="font-semibold text-slate-100">Agent extraction mode active</p>
+			<ul class="mt-2 space-y-1">
+				<li>High-churn surface. Re-check frequently and diff against <a class="underline" href={withBase('/changes.jsonl')}>/changes.jsonl</a>.</li>
+				<li>Use source transparency links and feed freshness pills as confidence signals.</li>
+				<li>Prefer canonical URLs and keep event context when pivoting to opportunities.</li>
+			</ul>
+		</section>
+
 		<section id="radar-calendar-section" class="card p-5">
 			<div class="mb-3 flex flex-wrap items-center justify-between gap-2">
 				<h2 class="section-title">Calendar View</h2>

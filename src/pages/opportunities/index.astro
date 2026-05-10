@@ -991,6 +991,15 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		</div>
 	</SurfacePageHeader>
 
+	<section class="agent-only card mt-2 p-3 text-xs text-slate-300" aria-label="Agent extraction hints">
+		<p class="font-semibold text-slate-100">Agent extraction mode active</p>
+		<ul class="mt-2 space-y-1">
+			<li>Use explicit source routes for deterministic previews: <a class="underline" href={withBase('/opportunities/sam/')}>/opportunities/sam/</a> and <a class="underline" href={withBase('/opportunities/sbir/')}>/opportunities/sbir/</a>.</li>
+			<li>Cross-reference with <a class="underline" href={withBase('/events/')}>/events/</a> when context pivots from event-derived opportunities.</li>
+			<li>For crawl planning, prioritize discovery endpoints from <a class="underline" href={withBase('/agent-priority.json')}>/agent-priority.json</a>.</li>
+		</ul>
+	</section>
+
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-controls-shell">
 			<div class="opp-controls-head">

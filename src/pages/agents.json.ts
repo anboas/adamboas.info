@@ -27,6 +27,7 @@ export const GET: APIRoute = () => {
 		],
 		preferred_ingestion_order: [
 			absoluteUrl('/llms.txt'),
+			absoluteUrl('/agent-priority.json'),
 			absoluteUrl('/writing/manifest.json'),
 			absoluteUrl('/writing/'),
 			absoluteUrl('/capabilities/'),
@@ -41,6 +42,7 @@ export const GET: APIRoute = () => {
 			{ id: 'events', type: 'surface', url: absoluteUrl('/events/') },
 			{ id: 'opportunities', type: 'surface', url: absoluteUrl('/opportunities/') },
 			{ id: 'integrity', type: 'integrity', url: absoluteUrl('/integrity.json') },
+			{ id: 'priority', type: 'priority', url: absoluteUrl('/agent-priority.json') },
 		],
 		agent_view_query: {
 			param: 'view',
