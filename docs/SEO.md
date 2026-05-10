@@ -43,6 +43,7 @@ Machine-facing endpoints now available:
 - `/changes.json` (machine changelog snapshot)
 - `/changes.jsonl` (incremental event stream)
 - `/writing/manifest.json` (structured writing corpus index)
+- `/writing/agent.json`, `/events/agent.json`, `/opportunities/agent.json` (surface-specific extraction + refresh hints)
 - `/integrity.json` (source integrity/provenance hashes for machine endpoints)
 - `/agent-priority.json` (crawl/ingestion tiers + refresh hints)
 - `/for-agents/` (human-readable hub for agent endpoints)
