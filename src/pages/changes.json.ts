@@ -39,6 +39,7 @@ export const GET: APIRoute = () => {
 			writing_surface: absoluteUrl('/writing/agent.json'),
 			events_surface: absoluteUrl('/events/agent.json'),
 			opportunities_surface: absoluteUrl('/opportunities/agent.json'),
+			opportunities_export: absoluteUrl('/opportunities/export.json'),
 			rss: absoluteUrl('/rss.xml'),
 			sitemap: absoluteUrl('/sitemap-index.xml'),
 		},

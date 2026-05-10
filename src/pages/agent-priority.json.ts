@@ -19,6 +19,7 @@ export const GET: APIRoute = () => {
 					absoluteUrl('/writing/agent.json'),
 					absoluteUrl('/events/agent.json'),
 					absoluteUrl('/opportunities/agent.json'),
+					absoluteUrl('/opportunities/export.json'),
 				],
 				refresh_hint: 'hourly',
 			},

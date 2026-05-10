@@ -46,5 +46,13 @@
     "release": "2026.05",
     "summary": "Path-scoped quality/deploy workflows and dependency-noise controls applied",
     "links": ["/.github/workflows/deploy-dev-pages.yml", "/.github/workflows/a11y.yml", "/.github/workflows/linkcheck.yml", "/.github/workflows/lighthouse.yml"]
+  },
+  {
+    "id": "opportunities-export",
+    "ts": "2026-05-10T22:00:00.000Z",
+    "type": "agentic",
+    "release": "2026.05",
+    "summary": "Normalized opportunities export endpoint published for source-aware agent ingestion",
+    "links": ["/opportunities/export.json", "/opportunities/agent.json", "/for-agents/", "/llms-full.txt"]
   }
 ]

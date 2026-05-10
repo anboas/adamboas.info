@@ -4,7 +4,7 @@ const base = process.env.SITE_BASE || 'http://127.0.0.1:4321';
 
 const checks = [
 	{ path: '/llms.txt', type: 'text', mustContain: ['/agents.json', '/writing/manifest.json'] },
-	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json', '/writing/agent.json'] },
+	{ path: '/llms-full.txt', type: 'text', mustContain: ['/agent-priority.json', '/integrity.json', '/writing/agent.json', '/opportunities/export.json'] },
 	{ path: '/agents.json', type: 'json', requiredKeys: ['schema_version', 'resources', 'preferred_ingestion_order'], validate: validateAgents },
 	{ path: '/agent-priority.json', type: 'json', requiredKeys: ['schema_version', 'ingestion_tiers', 'crawler_hints'], validate: validatePriority },
 	{ path: '/changes.json', type: 'json', requiredKeys: ['release_version', 'event_log', 'discovery_endpoints'], validate: validateChanges },
@@ -13,6 +13,7 @@ const checks = [
 	{ path: '/writing/agent.json', type: 'json', requiredKeys: ['surface', 'primary_manifest', 'crawl_hints'], validate: validateWritingSurface },
 	{ path: '/events/agent.json', type: 'json', requiredKeys: ['surface', 'related_routes', 'crawl_hints'], validate: validateEventsSurface },
 	{ path: '/opportunities/agent.json', type: 'json', requiredKeys: ['surface', 'source_routes', 'crawl_hints'], validate: validateOpportunitiesSurface },
+	{ path: '/opportunities/export.json', type: 'json', requiredKeys: ['schema_version', 'sources'], validate: validateOpportunitiesExport },
 	{ path: '/integrity.json', type: 'json', requiredKeys: ['schema_version', 'tracked_source_integrity'] },
 	{ path: '/for-agents/', type: 'html', mustContain: ['For Agents', 'Discovery Endpoints'] },
 	{ path: '/.well-known/agent-manifest.json', type: 'json', requiredKeys: ['canonical_manifest', 'discovery'], validate: validateWellKnownManifest },
@@ -86,6 +87,7 @@ function validateChanges(data) {
 		'writing_surface',
 		'events_surface',
 		'opportunities_surface',
+		'opportunities_export',
 	];
 	for (const key of requiredEndpoints) {
 		assertAbsUrl(data.discovery_endpoints?.[key], `/changes.json discovery_endpoints.${key}`);
@@ -137,6 +139,20 @@ function validateOpportunitiesSurface(data) {
 	assert(data.query_hints.source_param.includes('sbir'), '/opportunities/agent.json missing sbir source param');
 }
 
+function validateOpportunitiesExport(data) {
+	assert(data.schema_version === '1.0', '/opportunities/export.json schema_version must be 1.0');
+	assertAbsUrl(data.canonical, '/opportunities/export.json canonical');
+	assert(data.sources?.sam?.mode === 'embedded', '/opportunities/export.json sources.sam.mode should be embedded');
+	assert(typeof data.sources?.sam?.count === 'number' && data.sources.sam.count >= 1, '/opportunities/export.json sam count invalid');
+	assert(Array.isArray(data.sources?.sam?.rows), '/opportunities/export.json sam rows must be array');
+	assert(data.sources.sam.rows.length === data.sources.sam.count, '/opportunities/export.json sam count mismatch');
+	assert(typeof data.sources?.sbir?.mode === 'string' && data.sources.sbir.mode.length > 0, '/opportunities/export.json sbir mode missing');
+	assertAbsUrl(data.sources?.sbir?.topics_url, '/opportunities/export.json sbir topics_url');
+	assertAbsUrl(data.sources?.sbir?.summary_url, '/opportunities/export.json sbir summary_url');
+	assertAbsUrl(data.sources?.sbir?.report_url, '/opportunities/export.json sbir report_url');
+	assertAbsUrl(data.sources?.sbir?.ui_url, '/opportunities/export.json sbir ui_url');
+}
+
 function validateWellKnownManifest(data) {
 	assertAbsUrl(data.canonical_manifest, '/.well-known/agent-manifest.json canonical_manifest');
 	assertAbsUrl(data.discovery?.llms, '/.well-known/agent-manifest.json discovery.llms');
@@ -144,6 +160,8 @@ function validateWellKnownManifest(data) {
 	assert(Array.isArray(data.discovery?.surface_maps), '/.well-known/agent-manifest.json discovery.surface_maps must be array');
 	assert(data.discovery.surface_maps.length >= 3, '/.well-known/agent-manifest.json discovery.surface_maps expected >= 3');
 	for (const mapUrl of data.discovery.surface_maps) assertAbsUrl(mapUrl, '/.well-known/agent-manifest.json discovery.surface_maps entry');
+	assert(Array.isArray(data.discovery?.exports), '/.well-known/agent-manifest.json discovery.exports must be array');
+	for (const exportUrl of data.discovery.exports) assertAbsUrl(exportUrl, '/.well-known/agent-manifest.json discovery.exports entry');
 }
 
 async function get(path) {

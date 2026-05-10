@@ -36,6 +36,11 @@ This repo publishes machine-facing discovery endpoints. These contracts are enfo
   - includes `source_routes.unified|sam|sbir`
   - includes `query_hints.source_param` with `sam` and `sbir`
 
+- `/opportunities/export.json`
+  - normalized opportunities export contract
+  - `sources.sam.mode = "embedded"` with `count` and normalized `rows`
+  - `sources.sbir.mode` + remote artifact links (`topics_url`, `summary_url`, `report_url`)
+
 ## Change stream contracts
 
 - Source of truth: `src/data/discovery-events.json` (append-only, ascending timestamps)
