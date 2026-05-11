@@ -30,6 +30,44 @@ const driftLatest = (opportunitiesDrift ?? {}) as any;
 const driftGeneratedAt = typeof driftLatest.generated_at === 'string' ? driftLatest.generated_at : null;
 const driftDeltas = (driftLatest.deltas ?? {}) as Record<string, number>;
 
+const nowMs = Date.now();
+
+type FreshnessTone = 'ok' | 'warn' | 'bad' | 'muted';
+type FreshnessState = {
+	label: 'Fresh' | 'Lagging' | 'Stale' | 'Unknown';
+	tone: FreshnessTone;
+	detail: string;
+};
+
+function ageHours(value: string | null) {
+	if (!value) return null;
+	const parsed = new Date(value);
+	if (Number.isNaN(parsed.getTime())) return null;
+	return Math.max(0, (nowMs - parsed.getTime()) / (1000 * 60 * 60));
+}
+
+function relativeAgeLabel(hours: number | null) {
+	if (hours === null) return 'age unavailable';
+	if (hours < 1) return 'updated <1h ago';
+	if (hours < 24) return `updated ${Math.round(hours)}h ago`;
+	const days = Math.round((hours / 24) * 10) / 10;
+	return `updated ${days}d ago`;
+}
+
+function freshnessState(hours: number | null, warnHours: number, staleHours: number): FreshnessState {
+	if (hours === null) return { label: 'Unknown', tone: 'muted', detail: 'missing timestamp' };
+	if (hours <= warnHours) return { label: 'Fresh', tone: 'ok', detail: relativeAgeLabel(hours) };
+	if (hours <= staleHours) return { label: 'Lagging', tone: 'warn', detail: relativeAgeLabel(hours) };
+	return { label: 'Stale', tone: 'bad', detail: relativeAgeLabel(hours) };
+}
+
+const feedFreshness = freshnessState(ageHours(feedGeneratedAt), 18, 36);
+const samFreshness = freshnessState(ageHours(lastCollectedAt), 24, 48);
+const driftFreshness = freshnessState(ageHours(driftGeneratedAt), 24, 48);
+
+const staleSignals = [feedFreshness, samFreshness, driftFreshness].filter((x) => x.label === 'Stale').length;
+const laggingSignals = [feedFreshness, samFreshness, driftFreshness].filter((x) => x.label === 'Lagging').length;
+
 function fmtDate(value: string | null) {
 	if (!value) return '—';
 	const parsed = new Date(value);
@@ -66,6 +104,21 @@ function signed(value: number) {
 		>
 	</SurfacePageHeader>
 
+	<section class="mt-3">
+		<div class="status-health-banner" data-state={staleSignals > 0 ? 'bad' : laggingSignals > 0 ? 'warn' : 'ok'}>
+			<p class="status-health-banner-title">Pipeline health</p>
+			<p class="status-health-banner-copy">
+				{
+					staleSignals > 0
+						? `${staleSignals} stale signal${staleSignals > 1 ? 's' : ''} detected. Priority: refresh pipeline runs.`
+						: laggingSignals > 0
+							? `${laggingSignals} signal${laggingSignals > 1 ? 's are' : ' is'} lagging. Monitor next scheduled runs.`
+							: 'All monitored signals are fresh.'
+				}
+			</p>
+		</div>
+	</section>
+
 	<section class="mt-4 grid gap-4 lg:grid-cols-3">
 		<article class="card p-4 status-card lg:col-span-1">
 			<h2 class="status-title">Deploy</h2>
@@ -89,6 +142,10 @@ function signed(value: number) {
 		<article class="card p-4 status-card lg:col-span-2">
 			<h2 class="status-title">Feed crawl</h2>
 			<p class="status-copy">Last full source-crawl snapshot and source health counts.</p>
+			<div class="status-health-row">
+				<span class="status-pill" data-tone={feedFreshness.tone}>{feedFreshness.label}</span>
+				<span class="status-health-detail">{feedFreshness.detail}</span>
+			</div>
 			<div class="status-grid mt-3">
 				<div class="status-kpi"><span>Generated</span><strong>{fmtDate(feedGeneratedAt)}</strong></div>
 				<div class="status-kpi">
@@ -112,6 +169,14 @@ function signed(value: number) {
 		<article class="card p-4 status-card">
 			<h2 class="status-title">SAM opportunity intel</h2>
 			<p class="status-copy">Freshness of opportunity enrichment inputs.</p>
+			<div class="status-health-row">
+				<span class="status-pill" data-tone={samFreshness.tone}>Intel {samFreshness.label}</span>
+				<span class="status-health-detail">{samFreshness.detail}</span>
+			</div>
+			<div class="status-health-row mt-1">
+				<span class="status-pill" data-tone={driftFreshness.tone}>Drift {driftFreshness.label}</span>
+				<span class="status-health-detail">{driftFreshness.detail}</span>
+			</div>
 			<div class="status-grid mt-3">
 				<div class="status-kpi"><span>Last collected</span><strong>{fmtDate(lastCollectedAt)}</strong></div>
 				<div class="status-kpi"><span>Drift refreshed</span><strong>{fmtDate(driftGeneratedAt)}</strong></div>
@@ -152,6 +217,36 @@ function signed(value: number) {
 		border: 1px solid rgba(51, 65, 85, 0.85);
 		background: rgba(2, 6, 23, 0.9);
 	}
+	.status-health-banner {
+		display: grid;
+		gap: 0.25rem;
+		border: 1px solid rgba(51, 65, 85, 0.85);
+		padding: 0.7rem 0.8rem;
+		background: rgba(2, 6, 23, 0.84);
+	}
+	.status-health-banner[data-state='ok'] {
+		border-color: rgba(16, 185, 129, 0.4);
+		background: rgba(2, 32, 24, 0.4);
+	}
+	.status-health-banner[data-state='warn'] {
+		border-color: rgba(245, 158, 11, 0.45);
+		background: rgba(52, 34, 2, 0.38);
+	}
+	.status-health-banner[data-state='bad'] {
+		border-color: rgba(244, 63, 94, 0.45);
+		background: rgba(55, 12, 20, 0.42);
+	}
+	.status-health-banner-title {
+		font-size: 0.72rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(203, 213, 225, 0.95);
+		font-weight: 600;
+	}
+	.status-health-banner-copy {
+		font-size: 0.86rem;
+		color: rgba(226, 232, 240, 0.98);
+	}
 	.status-title {
 		font-size: 0.95rem;
 		font-weight: 700;
@@ -161,6 +256,49 @@ function signed(value: number) {
 		margin-top: 0.25rem;
 		font-size: 0.8rem;
 		color: rgba(148, 163, 184, 0.98);
+	}
+	.status-health-row {
+		margin-top: 0.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.45rem;
+	}
+	.status-pill {
+		display: inline-flex;
+		align-items: center;
+		border: 1px solid rgba(71, 85, 105, 0.9);
+		padding: 0.15rem 0.5rem;
+		font-size: 0.62rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: rgba(226, 232, 240, 0.96);
+		background: rgba(15, 23, 42, 0.72);
+	}
+	.status-pill[data-tone='ok'] {
+		border-color: rgba(16, 185, 129, 0.5);
+		background: rgba(4, 120, 87, 0.18);
+		color: rgba(167, 243, 208, 0.98);
+	}
+	.status-pill[data-tone='warn'] {
+		border-color: rgba(245, 158, 11, 0.5);
+		background: rgba(120, 53, 15, 0.22);
+		color: rgba(253, 230, 138, 0.98);
+	}
+	.status-pill[data-tone='bad'] {
+		border-color: rgba(244, 63, 94, 0.52);
+		background: rgba(159, 18, 57, 0.24);
+		color: rgba(254, 205, 211, 0.98);
+	}
+	.status-pill[data-tone='muted'] {
+		border-color: rgba(71, 85, 105, 0.9);
+		background: rgba(15, 23, 42, 0.72);
+		color: rgba(203, 213, 225, 0.95);
+	}
+	.status-health-detail {
+		font-size: 0.74rem;
+		color: rgba(148, 163, 184, 0.95);
 	}
 	.status-grid {
 		display: grid;
