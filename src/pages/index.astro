@@ -6,7 +6,14 @@ import { CONTACT_PHONE } from '../data/resume';
 import { absoluteUrl, CONTACT_PHONE_E164, contactMailto } from '../config/site';
 import { withBase } from '../utils/withBase';
 import WritingCompactCard from '../components/WritingCompactCard.astro';
-import { PERSON_DESCRIPTION, PERSON_JOB_TITLE, PERSON_KNOWS_ABOUT, PERSON_NAME, PERSON_SAME_AS } from '../data/entity';
+import {
+	PERSON_DESCRIPTION,
+	PERSON_IMAGE_PATH,
+	PERSON_JOB_TITLE,
+	PERSON_KNOWS_ABOUT,
+	PERSON_NAME,
+	PERSON_SAME_AS,
+} from '../data/entity';
 
 const writing = (await getCollection('writing'))
 	.filter((w) => w.data.status === 'published')
@@ -65,6 +72,7 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 			jobTitle: PERSON_JOB_TITLE,
 			telephone: CONTACT_PHONE,
 			description: HOME_DESCRIPTION,
+			image: absoluteUrl(PERSON_IMAGE_PATH),
 			knowsAbout: PERSON_KNOWS_ABOUT,
 		})}
 	/>

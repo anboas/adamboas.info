@@ -4,7 +4,7 @@ import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { withBase } from '../utils/withBase';
 import { CONTACT_PHONE } from '../data/resume';
 import { absoluteUrl, CONTACT_EMAIL, CONTACT_FORM_ENDPOINT, CONTACT_PHONE_E164, contactMailto } from '../config/site';
-import { PERSON_ID, PERSON_NAME, PERSON_SAME_AS } from '../data/entity';
+import { PERSON_ID, PERSON_IMAGE_PATH, PERSON_NAME, PERSON_SAME_AS } from '../data/entity';
 
 const contactFormSubject = `${new URL(absoluteUrl('/')).hostname} contact form`;
 const contactUrl = absoluteUrl('/contact/');
@@ -26,6 +26,7 @@ const personContactSchema = {
 	'@id': PERSON_ID,
 	name: PERSON_NAME,
 	url: absoluteUrl('/'),
+	image: absoluteUrl(PERSON_IMAGE_PATH),
 	sameAs: PERSON_SAME_AS,
 	contactPoint: [
 		{

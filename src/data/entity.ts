@@ -17,3 +17,5 @@ export const PERSON_KNOWS_ABOUT = [
 	'DevSecOps',
 	'Mission assurance',
 ];
+
+export const PERSON_IMAGE_PATH = '/images/adam-boas-headshot-2026-square.jpg';
