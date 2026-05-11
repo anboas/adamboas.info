@@ -6,6 +6,7 @@ import { CONTACT_PHONE } from '../data/resume';
 import { absoluteUrl, CONTACT_PHONE_E164, contactMailto } from '../config/site';
 import { withBase } from '../utils/withBase';
 import WritingCompactCard from '../components/WritingCompactCard.astro';
+import { PERSON_DESCRIPTION, PERSON_JOB_TITLE, PERSON_KNOWS_ABOUT, PERSON_NAME, PERSON_SAME_AS } from '../data/entity';
 
 const writing = (await getCollection('writing'))
 	.filter((w) => w.data.status === 'published')
@@ -48,9 +49,8 @@ const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
 const siteUrl = absoluteUrl('/');
 const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}'), Astro.site).toString();
 
-const HOME_TITLE = 'Adam Boas | Defense AI & Autonomy Solutions Architect';
-const HOME_DESCRIPTION =
-	'Adam Boas is a defense-focused solutions architect helping mission teams deploy trusted AI autonomy, control planes, and resilient delivery systems.';
+const HOME_TITLE = `${PERSON_NAME} | ${PERSON_JOB_TITLE}`;
+const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 ---
 
 <SiteLayout title={HOME_TITLE} description={HOME_DESCRIPTION} image="/og/home.png">
@@ -59,19 +59,13 @@ const HOME_DESCRIPTION =
 		set:html={JSON.stringify({
 			'@context': 'https://schema.org',
 			'@type': 'Person',
-			name: 'Adam Boas',
+			name: PERSON_NAME,
 			url: siteUrl,
-			sameAs: ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'],
-			jobTitle: 'Defense AI & Autonomy Solutions Architect',
+			sameAs: PERSON_SAME_AS,
+			jobTitle: PERSON_JOB_TITLE,
 			telephone: CONTACT_PHONE,
 			description: HOME_DESCRIPTION,
-			knowsAbout: [
-				'Defense AI',
-				'Trusted autonomy',
-				'Control planes',
-				'AI governance',
-				'DevSecOps',
-			],
+			knowsAbout: PERSON_KNOWS_ABOUT,
 		})}
 	/>
 	<script
@@ -93,8 +87,8 @@ const HOME_DESCRIPTION =
 	<section class="card p-8">
 		<div class="flex flex-col gap-6">
 			<div class="w-full max-w-4xl">
-				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">Adam Boas</h1>
-				<p class="mt-2 text-slate-400">Solutions Architect</p>
+				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">{PERSON_NAME}</h1>
+				<p class="mt-2 text-slate-400">{PERSON_JOB_TITLE}</p>
 				<p class="mt-4 text-lg leading-relaxed text-slate-300">
 					Adam Boas advances warfighter lethality through trusted autonomy, control planes, and execution at tempo.
 				</p>

@@ -5,6 +5,15 @@ import { RESUME_CLEARANCE, experience, education } from '../../data/resume';
 import SpeakingEventsSection from '../../components/SpeakingEventsSection.astro';
 import { absoluteUrl } from '../../config/site';
 import { withBase } from '../../utils/withBase';
+import {
+	PERSON_DESCRIPTION,
+	PERSON_ID,
+	PERSON_JOB_TITLE,
+	PERSON_KNOWS_ABOUT,
+	PERSON_NAME,
+	PERSON_PROFILE_URL,
+	PERSON_SAME_AS,
+} from '../../data/entity';
 
 const profileModalData = {
 	experience: Object.fromEntries(
@@ -29,17 +38,15 @@ const profileModalData = {
 	),
 };
 
-const profileUrl = absoluteUrl('/profile/');
-const personId = `${absoluteUrl('/')}#person`;
-const personDescription =
-	'Defense-focused solutions architect specializing in trusted autonomy, control planes, AI governance, and resilient high-tempo delivery systems.';
+const profileUrl = PERSON_PROFILE_URL;
+const personId = PERSON_ID;
 
 const profilePageSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'ProfilePage',
-	name: 'Adam Boas Profile',
+	name: `${PERSON_NAME} Profile`,
 	url: profileUrl,
-	description: 'Career background, speaking engagements, and credentials for Adam Boas.',
+	description: `Career background, speaking engagements, and credentials for ${PERSON_NAME}.`,
 	mainEntity: {
 		'@id': personId,
 	},
@@ -49,12 +56,12 @@ const personSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Person',
 	'@id': personId,
-	name: 'Adam Boas',
+	name: PERSON_NAME,
 	url: absoluteUrl('/'),
 	mainEntityOfPage: profileUrl,
-	jobTitle: 'Defense AI & Autonomy Solutions Architect',
-	description: personDescription,
-	sameAs: ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'],
+	jobTitle: PERSON_JOB_TITLE,
+	description: PERSON_DESCRIPTION,
+	sameAs: PERSON_SAME_AS,
 	worksFor: {
 		'@type': 'Organization',
 		name: experience[0]?.company ?? 'KBR',
@@ -65,14 +72,7 @@ const personSchema = {
 			'@type': 'EducationalOrganization',
 			name: item.issuer,
 		})),
-	knowsAbout: [
-		'Defense AI',
-		'Trusted autonomy',
-		'Control planes',
-		'AI governance',
-		'DevSecOps',
-		'Mission assurance',
-	],
+	knowsAbout: PERSON_KNOWS_ABOUT,
 	hasCredential: education.map((item) => ({
 		'@type': 'EducationalOccupationalCredential',
 		name: item.name,

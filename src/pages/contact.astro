@@ -4,8 +4,49 @@ import SurfacePageHeader from '../components/SurfacePageHeader.astro';
 import { withBase } from '../utils/withBase';
 import { CONTACT_PHONE } from '../data/resume';
 import { absoluteUrl, CONTACT_EMAIL, CONTACT_FORM_ENDPOINT, CONTACT_PHONE_E164, contactMailto } from '../config/site';
+import { PERSON_ID, PERSON_NAME, PERSON_SAME_AS } from '../data/entity';
 
 const contactFormSubject = `${new URL(absoluteUrl('/')).hostname} contact form`;
+const contactUrl = absoluteUrl('/contact/');
+
+const contactPageSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'ContactPage',
+	name: `Contact ${PERSON_NAME}`,
+	url: contactUrl,
+	description: `Start a project conversation with ${PERSON_NAME}. Share mission, timeline, and scope.`,
+	mainEntity: {
+		'@id': PERSON_ID,
+	},
+};
+
+const personContactSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	'@id': PERSON_ID,
+	name: PERSON_NAME,
+	url: absoluteUrl('/'),
+	sameAs: PERSON_SAME_AS,
+	contactPoint: [
+		{
+			'@type': 'ContactPoint',
+			contactType: 'business inquiries',
+			email: CONTACT_EMAIL,
+			telephone: CONTACT_PHONE_E164,
+			url: contactUrl,
+			availableLanguage: ['English'],
+		},
+	],
+};
+
+const contactBreadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: absoluteUrl('/') },
+		{ '@type': 'ListItem', position: 2, name: 'Contact', item: contactUrl },
+	],
+};
 ---
 
 <SiteLayout
@@ -13,6 +54,9 @@ const contactFormSubject = `${new URL(absoluteUrl('/')).hostname} contact form`;
 	description="Start a project conversation with Adam Boas. Share mission, timeline, and scope."
 	canonicalHref={absoluteUrl('/contact/')}
 >
+	<script type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(personContactSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(contactBreadcrumbSchema)} />
 	<SurfacePageHeader
 		stickyActive="home"
 		eyebrow="Engage"
