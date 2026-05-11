@@ -32,6 +32,20 @@ test.describe('writing controls regression', () => {
 		await expect.poll(() => page.url()).not.toContain('recent=1');
 	});
 
+	test('view toggle switches between cards and timeline with URL sync', async ({ page }) => {
+		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
+
+		await page.click('[data-writing-view-toggle="timeline"]');
+		await expect(page.locator('[data-writing-view-toggle="timeline"]')).toHaveAttribute('aria-pressed', 'true');
+		await expect(page.locator('[data-writing-timeline]')).toBeVisible();
+		await expect(page.locator('[data-writing-timeline-year]').first()).toBeVisible();
+		await expect.poll(() => page.url()).toContain('view=timeline');
+
+		await page.click('[data-writing-clear]');
+		await expect(page.locator('[data-writing-view-toggle="cards"]')).toHaveAttribute('aria-pressed', 'true');
+		await expect.poll(() => page.url()).not.toContain('view=timeline');
+	});
+
 	test('keyboard shortcuts toggle filters and never allow all type pills off', async ({ page }) => {
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 		const body = page.locator('body');
@@ -46,6 +60,9 @@ test.describe('writing controls regression', () => {
 		await page.keyboard.press('d');
 		await expect(page.locator('[data-writing-density-toggle="compact"]')).toHaveAttribute('aria-pressed', 'true');
 
+		await page.keyboard.press('v');
+		await expect(page.locator('[data-writing-view-toggle="timeline"]')).toHaveAttribute('aria-pressed', 'true');
+
 		const paper = page.locator('[data-writing-type-toggle="paper"]');
 		const note = page.locator('[data-writing-type-toggle="note"]');
 		const memo = page.locator('[data-writing-type-toggle="memo"]');
@@ -58,5 +75,6 @@ test.describe('writing controls regression', () => {
 		await page.keyboard.press('x');
 		await expect(page.locator('[data-writing-quick="has-audio"]')).toHaveAttribute('aria-pressed', 'false');
 		await expect(page.locator('[data-writing-quick="recent-30"]')).toHaveAttribute('aria-pressed', 'false');
+		await expect(page.locator('[data-writing-view-toggle="cards"]')).toHaveAttribute('aria-pressed', 'true');
 	});
 });

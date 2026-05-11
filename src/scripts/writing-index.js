@@ -4,6 +4,7 @@ const SHOW_TAGS_STORAGE_KEY = 'writing:index:show-tags';
 const VIEW_PREFS_STORAGE_KEY = 'writing:index:view-prefs:v1';
 const DEFAULT_SORT = 'newest';
 const DEFAULT_DENSITY = 'comfortable';
+const DEFAULT_VIEW = 'cards';
 
 function norm(s) {
 	return (s ?? '').toString().trim().toLowerCase();
@@ -113,6 +114,12 @@ function parseDensityFromUrl(url) {
 	return null;
 }
 
+function parseViewFromUrl(url) {
+	const view = norm(url.searchParams.get('view'));
+	if (view === 'timeline' || view === 'cards') return view;
+	return null;
+}
+
 function parseBoolFlag(url, key) {
 	const raw = norm(url.searchParams.get(key));
 	if (!raw) return null;
@@ -125,6 +132,8 @@ if (!root) {
 } else {
 	const list = root.querySelector('[data-writing-list]');
 	const cards = [...root.querySelectorAll('[data-writing-card]')];
+	const timeline = root.querySelector('[data-writing-timeline]');
+	const viewBtns = [...root.querySelectorAll('[data-writing-view-toggle]')];
 	const empty = root.querySelector('[data-writing-empty]');
 	const pagination = root.querySelector('[data-writing-pagination]');
 	const pageFirst = root.querySelector('[data-writing-page-first]');
@@ -142,7 +151,9 @@ if (!root) {
 
 	let currentPage = 1;
 	let currentTotalPages = 1;
+	let currentView = DEFAULT_VIEW;
 	const quickState = { hasAudio: false, recent30: false };
+	const dateFormatter = new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
 
 	function setQuickBtn(name, value) {
 		const btn = root.querySelector(`[data-writing-quick="${name}"]`);
@@ -162,6 +173,20 @@ if (!root) {
 	function getDensityMode() {
 		const compactBtn = root.querySelector('[data-writing-density-toggle="compact"]');
 		return compactBtn?.getAttribute('aria-pressed') === 'true' ? 'compact' : 'comfortable';
+	}
+
+	function setViewMode(mode) {
+		currentView = mode === 'timeline' ? 'timeline' : 'cards';
+		for (const btn of viewBtns) {
+			const btnMode = norm(btn.getAttribute('data-writing-view-toggle'));
+			btn.setAttribute('aria-pressed', btnMode === currentView ? 'true' : 'false');
+		}
+		list?.classList.toggle('hidden', currentView !== 'cards');
+		timeline?.classList.toggle('hidden', currentView !== 'timeline');
+	}
+
+	function getViewMode() {
+		return currentView;
 	}
 
 	function setTagVisibility(showTags, { persist = false } = {}) {
@@ -189,6 +214,7 @@ if (!root) {
 			types: getSelectedTypes(),
 			sort: getSortMode(),
 			density: getDensityMode(),
+			view: getViewMode(),
 			quick: {
 				hasAudio: quickState.hasAudio,
 				recent30: quickState.recent30,
@@ -218,6 +244,7 @@ if (!root) {
 
 		setSortMode(parseSortFromUrl(url) ?? prefs.sort ?? DEFAULT_SORT);
 		setDensityMode(parseDensityFromUrl(url) ?? prefs.density ?? DEFAULT_DENSITY);
+		setViewMode(parseViewFromUrl(url) ?? prefs.view ?? DEFAULT_VIEW);
 		quickState.hasAudio = parseBoolFlag(url, 'audio') ?? Boolean(prefs?.quick?.hasAudio);
 		quickState.recent30 = parseBoolFlag(url, 'recent') ?? Boolean(prefs?.quick?.recent30);
 		setQuickBtn('has-audio', quickState.hasAudio);
@@ -232,6 +259,7 @@ if (!root) {
 		const selected = getSelectedTypes();
 		const sortMode = getSortMode();
 		const densityMode = getDensityMode();
+		const viewMode = getViewMode();
 
 		if (selected.length === ALL_TYPES.length) {
 			url.searchParams.delete('types');
@@ -251,6 +279,9 @@ if (!root) {
 
 		if (densityMode !== DEFAULT_DENSITY) url.searchParams.set('density', densityMode);
 		else url.searchParams.delete('density');
+
+		if (viewMode !== DEFAULT_VIEW) url.searchParams.set('view', viewMode);
+		else url.searchParams.delete('view');
 
 		if (quickState.hasAudio) url.searchParams.set('audio', '1');
 		else url.searchParams.delete('audio');
@@ -272,6 +303,7 @@ if (!root) {
 		setQuickBtn('recent-30', false);
 		setSortMode(DEFAULT_SORT);
 		setDensityMode(DEFAULT_DENSITY);
+		setViewMode(DEFAULT_VIEW);
 		currentPage = 1;
 		applyFilter({ preservePage: true });
 	}
@@ -287,7 +319,8 @@ if (!root) {
 		const mk = (label, onClick) => {
 			const b = document.createElement('button');
 			b.type = 'button';
-			b.className = 'rounded-full border border-slate-800 bg-slate-950 px-2 py-1 text-xs text-slate-200 hover:bg-slate-900';
+			b.className =
+				'rounded-full border border-slate-800 bg-slate-950 px-2 py-1 text-xs text-slate-200 hover:bg-slate-900';
 			b.textContent = `${label} ×`;
 			b.addEventListener('click', onClick);
 			chips.appendChild(b);
@@ -300,7 +333,6 @@ if (!root) {
 				applyFilter({ preservePage: true });
 			});
 		}
-
 
 		if (quickState.hasAudio) {
 			mk('Has audio', () => {
@@ -335,13 +367,20 @@ if (!root) {
 			});
 		}
 
+		if (getViewMode() !== DEFAULT_VIEW) {
+			mk(`View: ${getViewMode()}`, () => {
+				setViewMode(DEFAULT_VIEW);
+				applyFilter({ preservePage: true });
+			});
+		}
+
 		chips.classList.toggle('hidden', chips.childElementCount === 0);
 	}
 
 	function renderPagination(totalMatches, pageStartIdx, pageEndIdx, totalPages) {
 		if (!pagination || !pagePrev || !pageNext || !pageLabel || !pageStatus) return;
 		currentTotalPages = totalPages;
-		const show = totalMatches > PAGE_SIZE;
+		const show = getViewMode() === 'cards' && totalMatches > PAGE_SIZE;
 		pagination.classList.toggle('hidden', !show);
 		if (!show) return;
 
@@ -368,6 +407,101 @@ if (!root) {
 			return bDate - aDate || aTitle.localeCompare(bTitle);
 		});
 		return sorted;
+	}
+
+	function renderTimeline(matches) {
+		if (!timeline) return;
+		timeline.innerHTML = '';
+		if (matches.length === 0) return;
+
+		const years = new Map();
+		for (const el of matches) {
+			const dateMs = Number(el.getAttribute('data-date-ms') || 0);
+			const year = Number.isFinite(dateMs) && dateMs > 0 ? String(new Date(dateMs).getFullYear()) : 'Undated';
+			const rawTheme = (el.getAttribute('data-theme') || el.getAttribute('data-type') || 'uncategorized').trim();
+			const theme = rawTheme || 'uncategorized';
+			if (!years.has(year)) years.set(year, new Map());
+			const themes = years.get(year);
+			if (!themes.has(theme)) themes.set(theme, []);
+			themes.get(theme).push(el);
+		}
+
+		const yearKeys = [...years.keys()].sort((a, b) => {
+			const aNum = Number(a);
+			const bNum = Number(b);
+			if (Number.isFinite(aNum) && Number.isFinite(bNum)) return bNum - aNum;
+			if (Number.isFinite(aNum)) return -1;
+			if (Number.isFinite(bNum)) return 1;
+			return a.localeCompare(b);
+		});
+		for (const year of yearKeys) {
+			const yearBlock = document.createElement('section');
+			yearBlock.className = 'card p-4';
+			yearBlock.setAttribute('data-writing-timeline-year', '1');
+
+			const headingRow = document.createElement('div');
+			headingRow.className = 'mb-3 flex items-center justify-between gap-3';
+			const yearTitle = document.createElement('h2');
+			yearTitle.className = 'text-lg font-semibold text-slate-100';
+			yearTitle.textContent = year;
+
+			const themes = years.get(year);
+			const totalInYear = [...themes.values()].reduce((sum, entries) => sum + entries.length, 0);
+			const count = document.createElement('span');
+			count.className = 'text-xs text-slate-400';
+			count.textContent = `${totalInYear} ${totalInYear === 1 ? 'entry' : 'entries'}`;
+			headingRow.append(yearTitle, count);
+			yearBlock.appendChild(headingRow);
+
+			const themesWrap = document.createElement('div');
+			themesWrap.className = 'flex flex-wrap gap-2';
+			const themeKeys = [...themes.keys()].sort((a, b) => a.localeCompare(b));
+			for (const theme of themeKeys) {
+				const entries = themes.get(theme) || [];
+				const group = document.createElement('div');
+				group.className = 'w-full rounded-none border border-slate-800/80 bg-slate-950/50 p-3';
+
+				const themeHeader = document.createElement('div');
+				themeHeader.className = 'mb-2 flex items-center justify-between gap-2';
+				const themeLabel = document.createElement('span');
+				themeLabel.className =
+					'rounded-full border border-slate-700 px-2 py-0.5 text-[11px] uppercase tracking-wide text-slate-200';
+				themeLabel.textContent = theme;
+				const themeCount = document.createElement('span');
+				themeCount.className = 'text-[11px] text-slate-400';
+				themeCount.textContent = `${entries.length} ${entries.length === 1 ? 'post' : 'posts'}`;
+				themeHeader.append(themeLabel, themeCount);
+
+				const entryList = document.createElement('ul');
+				entryList.className = 'space-y-2';
+				for (const entryCard of entries) {
+					const item = document.createElement('li');
+					item.setAttribute('data-writing-timeline-entry', '1');
+					const link = document.createElement('a');
+					link.href = entryCard.getAttribute('href') || '#';
+					link.className = 'text-sm font-medium text-slate-100 hover:text-blue-300';
+					link.textContent = entryCard.getAttribute('data-title') || 'Untitled';
+
+					const meta = document.createElement('p');
+					meta.className = 'text-xs text-slate-400';
+					const type = entryCard.getAttribute('data-type') || 'entry';
+					const dateMsEntry = Number(entryCard.getAttribute('data-date-ms') || 0);
+					const dateLabel =
+						Number.isFinite(dateMsEntry) && dateMsEntry > 0 ? dateFormatter.format(new Date(dateMsEntry)) : 'Date TBD';
+					const audio = entryCard.getAttribute('data-has-audio') === '1' ? ' · Audio' : '';
+					meta.textContent = `${type.toUpperCase()} · ${dateLabel}${audio}`;
+
+					item.append(link, meta);
+					entryList.appendChild(item);
+				}
+
+				group.append(themeHeader, entryList);
+				themesWrap.appendChild(group);
+			}
+
+			yearBlock.appendChild(themesWrap);
+			timeline.appendChild(yearBlock);
+		}
 	}
 
 	function applyFilter({ preservePage = false } = {}) {
@@ -399,12 +533,16 @@ if (!root) {
 		const pageStartIdx = (currentPage - 1) * PAGE_SIZE;
 		const pageCards = sortedMatches.slice(pageStartIdx, pageStartIdx + PAGE_SIZE);
 		const pageEndIdx = pageStartIdx + pageCards.length;
+		const timelineMode = getViewMode() === 'timeline';
 
 		for (const el of cards) el.classList.add('hidden');
-		for (const el of pageCards) {
-			el.classList.remove('hidden');
-			if (list) list.appendChild(el);
+		if (!timelineMode) {
+			for (const el of pageCards) {
+				el.classList.remove('hidden');
+				if (list) list.appendChild(el);
+			}
 		}
+		renderTimeline(timelineMode ? sortedMatches : []);
 
 		if (empty) empty.classList.toggle('hidden', sortedMatches.length !== 0);
 		syncAllTypeButtonState();
@@ -495,6 +633,14 @@ if (!root) {
 		});
 	}
 
+	for (const viewBtn of viewBtns) {
+		viewBtn.addEventListener('click', () => {
+			setViewMode(viewBtn.getAttribute('data-writing-view-toggle'));
+			currentPage = 1;
+			applyFilter({ preservePage: true });
+		});
+	}
+
 	pageFirst?.addEventListener('click', () => {
 		if (currentPage <= 1) return;
 		currentPage = 1;
@@ -563,6 +709,14 @@ if (!root) {
 			persistViewState();
 			updateUrl();
 			renderChips();
+			return;
+		}
+
+		if (key === 'v') {
+			event.preventDefault();
+			setViewMode(getViewMode() === 'timeline' ? 'cards' : 'timeline');
+			currentPage = 1;
+			applyFilter({ preservePage: true });
 			return;
 		}
 

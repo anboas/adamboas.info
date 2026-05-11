@@ -67,7 +67,10 @@ const fmtDate = (date: Date | undefined) =>
 		<section class="agent-only card mt-3 p-3 text-xs text-slate-300" aria-label="Agent extraction hints">
 			<p class="font-semibold text-slate-100">Agent extraction mode active</p>
 			<ul class="mt-2 space-y-1">
-				<li>Canonical corpus endpoint: <a class="underline" href={withBase('/writing/manifest.json')}>/writing/manifest.json</a></li>
+				<li>
+					Canonical corpus endpoint: <a class="underline" href={withBase('/writing/manifest.json')}
+						>/writing/manifest.json</a>
+				</li>
 				<li>Use <code>?view=agent</code> on detail pages for lower-noise parsing.</li>
 				<li>Prefer publication timestamps from manifest over DOM ordering.</li>
 			</ul>
@@ -147,6 +150,28 @@ const fmtDate = (date: Date | undefined) =>
 				</div>
 
 				<div class="flex flex-wrap items-center gap-2 md:ml-auto">
+					<div
+						class="inline-flex overflow-hidden rounded-none border border-slate-800"
+						role="group"
+						aria-label="Switch writing view"
+					>
+						<button
+							type="button"
+							data-writing-view-toggle="cards"
+							aria-pressed="true"
+							class="writing-view-toggle h-8 shrink-0 border-r border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900"
+						>
+							Cards
+						</button>
+						<button
+							type="button"
+							data-writing-view-toggle="timeline"
+							aria-pressed="false"
+							class="writing-view-toggle h-8 shrink-0 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900"
+						>
+							Timeline
+						</button>
+					</div>
 					<SearchControl
 						id="writing-search"
 						label="Search writing"
@@ -188,7 +213,7 @@ const fmtDate = (date: Date | undefined) =>
 
 			<details class="writing-shortcuts-help mt-2 text-[11px] text-slate-400">
 				<summary class="cursor-pointer select-none hover:text-slate-200">Shortcuts</summary>
-				<p class="mt-1">/ search · a audio · r recent · d density · t tags · x clear</p>
+				<p class="mt-1">/ search · a audio · r recent · d density · t tags · v view · x clear</p>
 			</details>
 
 			<div class="writing-active-strip mt-2 flex flex-wrap gap-2 text-xs" data-writing-chips aria-live="polite"></div>
@@ -203,6 +228,7 @@ const fmtDate = (date: Date | undefined) =>
 						data-type={w.type}
 						data-title={w.title}
 						data-tags={w.tags.join(' ')}
+						data-theme={w.tags?.[0] ?? w.type}
 						data-date-ms={w.date?.valueOf?.() ?? 0}
 						data-has-audio={w.hasAudio ? '1' : '0'}
 						class="card block overflow-hidden p-5 hover:border-slate-700"
@@ -263,6 +289,8 @@ const fmtDate = (date: Date | undefined) =>
 				))
 			}
 		</div>
+
+		<div class="mt-6 hidden space-y-4" data-writing-timeline aria-live="polite"></div>
 
 		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-writing-pagination>
 			<p class="text-xs text-slate-400" data-writing-pagination-status></p>
@@ -338,5 +366,23 @@ const fmtDate = (date: Date | undefined) =>
 	[data-writing-index].writing-density-compact [data-writing-card-meta] {
 		margin-top: 0.5rem;
 		gap: 0.35rem;
+	}
+
+	.writing-view-toggle[aria-pressed='true'] {
+		background: rgb(15 23 42);
+	}
+
+	[data-writing-timeline-year] {
+		border-left: 2px solid rgb(30 41 59);
+		padding-left: 0.9rem;
+	}
+
+	[data-writing-timeline-entry] {
+		display: grid;
+		gap: 0.15rem;
+	}
+
+	[data-writing-index].writing-density-compact [data-writing-timeline-entry] {
+		gap: 0.05rem;
 	}
 </style>
