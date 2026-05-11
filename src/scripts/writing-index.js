@@ -5,9 +5,36 @@ const VIEW_PREFS_STORAGE_KEY = 'writing:index:view-prefs:v1';
 const DEFAULT_SORT = 'newest';
 const DEFAULT_DENSITY = 'comfortable';
 const DEFAULT_VIEW = 'cards';
+const TIMELINE_YEAR_PREFIX = 'timeline-year-';
+const TIMELINE_THEME_PREFIX = 'timeline-theme-';
 
 function norm(s) {
 	return (s ?? '').toString().trim().toLowerCase();
+}
+
+function slugToken(value) {
+	const compact = (value ?? '')
+		.toString()
+		.trim()
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '-')
+		.replace(/^-+|-+$/g, '');
+	return compact || 'na';
+}
+
+function yearAnchorId(year) {
+	return `${TIMELINE_YEAR_PREFIX}${slugToken(year)}`;
+}
+
+function themeAnchorId(year, theme) {
+	return `${TIMELINE_THEME_PREFIX}${slugToken(year)}-${slugToken(theme)}`;
+}
+
+function getHashId(rawHash) {
+	const clean = (rawHash ?? '').toString().replace(/^#/, '').trim();
+	if (!clean) return null;
+	if (clean.startsWith(TIMELINE_YEAR_PREFIX) || clean.startsWith(TIMELINE_THEME_PREFIX)) return clean;
+	return null;
 }
 
 function readShowTagsPref() {
@@ -152,6 +179,7 @@ if (!root) {
 	let currentPage = 1;
 	let currentTotalPages = 1;
 	let currentView = DEFAULT_VIEW;
+	let pendingTimelineHash = null;
 	const quickState = { hasAudio: false, recent30: false };
 	const dateFormatter = new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
 
@@ -187,6 +215,35 @@ if (!root) {
 
 	function getViewMode() {
 		return currentView;
+	}
+
+	function buildShareUrl(hashId) {
+		const url = new URL(window.location.href);
+		url.hash = hashId ? `#${hashId}` : '';
+		return url.toString();
+	}
+
+	async function copySectionUrl(hashId) {
+		const shareUrl = buildShareUrl(hashId);
+		try {
+			if (navigator?.clipboard?.writeText) {
+				await navigator.clipboard.writeText(shareUrl);
+			}
+		} catch {
+			// clipboard may be blocked by browser settings
+		}
+		window.location.hash = hashId;
+	}
+
+	function focusTimelineAnchorFromHash() {
+		const hashId = getHashId(window.location.hash) || pendingTimelineHash;
+		if (!hashId || getViewMode() !== 'timeline') return;
+		const anchorTarget = document.getElementById(hashId);
+		if (!anchorTarget) return;
+		pendingTimelineHash = null;
+		anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		anchorTarget.classList.add('timeline-anchor-hit');
+		window.setTimeout(() => anchorTarget.classList.remove('timeline-anchor-hit'), 1400);
 	}
 
 	function setTagVisibility(showTags, { persist = false } = {}) {
@@ -244,7 +301,9 @@ if (!root) {
 
 		setSortMode(parseSortFromUrl(url) ?? prefs.sort ?? DEFAULT_SORT);
 		setDensityMode(parseDensityFromUrl(url) ?? prefs.density ?? DEFAULT_DENSITY);
-		setViewMode(parseViewFromUrl(url) ?? prefs.view ?? DEFAULT_VIEW);
+		pendingTimelineHash = getHashId(url.hash);
+		const requestedView = parseViewFromUrl(url) ?? prefs.view ?? DEFAULT_VIEW;
+		setViewMode(pendingTimelineHash ? 'timeline' : requestedView);
 		quickState.hasAudio = parseBoolFlag(url, 'audio') ?? Boolean(prefs?.quick?.hasAudio);
 		quickState.recent30 = parseBoolFlag(url, 'recent') ?? Boolean(prefs?.quick?.recent30);
 		setQuickBtn('has-audio', quickState.hasAudio);
@@ -438,6 +497,8 @@ if (!root) {
 			const yearBlock = document.createElement('section');
 			yearBlock.className = 'card p-4';
 			yearBlock.setAttribute('data-writing-timeline-year', '1');
+			const yearHashId = yearAnchorId(year);
+			yearBlock.id = yearHashId;
 
 			const headingRow = document.createElement('div');
 			headingRow.className = 'mb-3 flex items-center justify-between gap-3';
@@ -447,10 +508,19 @@ if (!root) {
 
 			const themes = years.get(year);
 			const totalInYear = [...themes.values()].reduce((sum, entries) => sum + entries.length, 0);
+			const yearMeta = document.createElement('div');
+			yearMeta.className = 'flex items-center gap-2';
 			const count = document.createElement('span');
 			count.className = 'text-xs text-slate-400';
 			count.textContent = `${totalInYear} ${totalInYear === 1 ? 'entry' : 'entries'}`;
-			headingRow.append(yearTitle, count);
+			const yearLink = document.createElement('button');
+			yearLink.type = 'button';
+			yearLink.className =
+				'rounded-none border border-slate-800 bg-slate-950 px-2 py-1 text-[11px] text-slate-300 hover:bg-slate-900';
+			yearLink.setAttribute('data-writing-timeline-copy-link', yearHashId);
+			yearLink.textContent = 'Copy year link';
+			yearMeta.append(count, yearLink);
+			headingRow.append(yearTitle, yearMeta);
 			yearBlock.appendChild(headingRow);
 
 			const themesWrap = document.createElement('div');
@@ -460,6 +530,8 @@ if (!root) {
 				const entries = themes.get(theme) || [];
 				const group = document.createElement('div');
 				group.className = 'w-full rounded-none border border-slate-800/80 bg-slate-950/50 p-3';
+				const themeHashId = themeAnchorId(year, theme);
+				group.id = themeHashId;
 
 				const themeHeader = document.createElement('div');
 				themeHeader.className = 'mb-2 flex items-center justify-between gap-2';
@@ -467,10 +539,19 @@ if (!root) {
 				themeLabel.className =
 					'rounded-full border border-slate-700 px-2 py-0.5 text-[11px] uppercase tracking-wide text-slate-200';
 				themeLabel.textContent = theme;
+				const themeMeta = document.createElement('div');
+				themeMeta.className = 'flex items-center gap-2';
 				const themeCount = document.createElement('span');
 				themeCount.className = 'text-[11px] text-slate-400';
 				themeCount.textContent = `${entries.length} ${entries.length === 1 ? 'post' : 'posts'}`;
-				themeHeader.append(themeLabel, themeCount);
+				const themeLink = document.createElement('button');
+				themeLink.type = 'button';
+				themeLink.className =
+					'rounded-none border border-slate-800 bg-slate-950 px-2 py-1 text-[11px] text-slate-300 hover:bg-slate-900';
+				themeLink.setAttribute('data-writing-timeline-copy-link', themeHashId);
+				themeLink.textContent = 'Copy theme link';
+				themeMeta.append(themeCount, themeLink);
+				themeHeader.append(themeLabel, themeMeta);
 
 				const entryList = document.createElement('ul');
 				entryList.className = 'space-y-2';
@@ -543,6 +624,7 @@ if (!root) {
 			}
 		}
 		renderTimeline(timelineMode ? sortedMatches : []);
+		focusTimelineAnchorFromHash();
 
 		if (empty) empty.classList.toggle('hidden', sortedMatches.length !== 0);
 		syncAllTypeButtonState();
@@ -578,6 +660,14 @@ if (!root) {
 	}
 
 	root.addEventListener('click', (e) => {
+		const timelineLinkBtn = e.target?.closest?.('[data-writing-timeline-copy-link]');
+		if (timelineLinkBtn) {
+			e.preventDefault();
+			const hashId = timelineLinkBtn.getAttribute('data-writing-timeline-copy-link');
+			if (hashId) void copySectionUrl(hashId);
+			return;
+		}
+
 		const target = e.target?.closest?.('[data-writing-tag]');
 		if (target) {
 			e.preventDefault();
@@ -670,6 +760,19 @@ if (!root) {
 		const tag = String(target.tagName || '').toLowerCase();
 		return tag === 'input' || tag === 'textarea' || tag === 'select' || Boolean(target.isContentEditable);
 	};
+
+	window.addEventListener('hashchange', () => {
+		const hashId = getHashId(window.location.hash);
+		if (!hashId) return;
+		pendingTimelineHash = hashId;
+		if (getViewMode() !== 'timeline') {
+			setViewMode('timeline');
+			currentPage = 1;
+			applyFilter({ preservePage: true });
+			return;
+		}
+		focusTimelineAnchorFromHash();
+	});
 
 	document.addEventListener('keydown', (event) => {
 		if (event.defaultPrevented) return;

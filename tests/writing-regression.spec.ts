@@ -77,4 +77,19 @@ test.describe('writing controls regression', () => {
 		await expect(page.locator('[data-writing-quick="recent-30"]')).toHaveAttribute('aria-pressed', 'false');
 		await expect(page.locator('[data-writing-view-toggle="cards"]')).toHaveAttribute('aria-pressed', 'true');
 	});
+
+	test('timeline section links copy hash and auto-open timeline from shared URL', async ({ page }) => {
+		await page.goto(`${BASE}/writing/?view=timeline&types=paper,note,memo&audio=0&recent=0`, { waitUntil: 'networkidle' });
+
+		const yearCopy = page.locator('[data-writing-timeline-copy-link^="timeline-year-"]').first();
+		const hashId = await yearCopy.getAttribute('data-writing-timeline-copy-link');
+		expect(hashId).toBeTruthy();
+
+		await yearCopy.click();
+		await expect.poll(() => page.url()).toContain(`#${hashId}`);
+
+		await page.goto(`${BASE}/writing/#${hashId}`, { waitUntil: 'networkidle' });
+		await expect(page.locator('[data-writing-view-toggle="timeline"]')).toHaveAttribute('aria-pressed', 'true');
+		await expect(page.locator(`#${hashId}`)).toBeVisible();
+	});
 });

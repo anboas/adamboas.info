@@ -214,6 +214,7 @@ const fmtDate = (date: Date | undefined) =>
 			<details class="writing-shortcuts-help mt-2 text-[11px] text-slate-400">
 				<summary class="cursor-pointer select-none hover:text-slate-200">Shortcuts</summary>
 				<p class="mt-1">/ search · a audio · r recent · d density · t tags · v view · x clear</p>
+				<p class="mt-1">Timeline mode adds Copy year link and Copy theme link buttons for shareable anchors.</p>
 			</details>
 
 			<div class="writing-active-strip mt-2 flex flex-wrap gap-2 text-xs" data-writing-chips aria-live="polite"></div>
@@ -375,6 +376,16 @@ const fmtDate = (date: Date | undefined) =>
 	[data-writing-timeline-year] {
 		border-left: 2px solid rgb(30 41 59);
 		padding-left: 0.9rem;
+		scroll-margin-top: 6rem;
+	}
+
+	[data-writing-timeline-year] > div[id^='timeline-theme-'] {
+		scroll-margin-top: 6rem;
+	}
+
+	.timeline-anchor-hit {
+		outline: 1px solid rgba(148, 163, 184, 0.65);
+		outline-offset: 2px;
 	}
 
 	[data-writing-timeline-entry] {
