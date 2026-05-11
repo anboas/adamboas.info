@@ -8,6 +8,7 @@ import { withBase } from '../utils/withBase';
 import WritingCompactCard from '../components/WritingCompactCard.astro';
 import {
 	PERSON_DESCRIPTION,
+	PERSON_ID,
 	PERSON_IMAGE_PATH,
 	PERSON_JOB_TITLE,
 	PERSON_KNOWS_ABOUT,
@@ -66,6 +67,7 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 		set:html={JSON.stringify({
 			'@context': 'https://schema.org',
 			'@type': 'Person',
+			'@id': PERSON_ID,
 			name: PERSON_NAME,
 			url: siteUrl,
 			sameAs: PERSON_SAME_AS,
@@ -73,6 +75,7 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 			telephone: CONTACT_PHONE,
 			description: HOME_DESCRIPTION,
 			image: absoluteUrl(PERSON_IMAGE_PATH),
+			mainEntityOfPage: siteUrl,
 			knowsAbout: PERSON_KNOWS_ABOUT,
 		})}
 	/>

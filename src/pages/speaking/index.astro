@@ -2,13 +2,74 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import SpeakingEventsSection from '../../components/SpeakingEventsSection.astro';
+import { speakingEvents } from '../../data/speaking';
+import { absoluteUrl } from '../../config/site';
+import { PERSON_ID, PERSON_NAME } from '../../data/entity';
+
+const speakingPageSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'CollectionPage',
+	name: `${PERSON_NAME} Speaking Engagements`,
+	url: absoluteUrl('/speaking/'),
+	description: 'Talks, panels, and briefings by Adam Boas on defense AI, trusted autonomy, control planes, and AI governance.',
+	mainEntity: {
+		'@id': PERSON_ID,
+	},
+};
+
+const speakingItemListSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'ItemList',
+	name: `${PERSON_NAME} Speaking Engagements`,
+	itemListElement: speakingEvents.map((event, idx) => ({
+		'@type': 'ListItem',
+		position: idx + 1,
+		name: event.title,
+		url: absoluteUrl(`/speaking/#${event.slug}`),
+		item: {
+			'@type': 'Event',
+			name: event.title,
+			description: event.summary,
+			url: event.eventUrl,
+			performer: {
+				'@id': PERSON_ID,
+			},
+			organizer: {
+				'@type': 'Organization',
+				name: event.eventName,
+			},
+		},
+	})),
+};
+
+const speakingBreadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{ '@type': 'ListItem', position: 1, name: 'Home', item: absoluteUrl('/') },
+		{ '@type': 'ListItem', position: 2, name: 'Speaking', item: absoluteUrl('/speaking/') },
+	],
+};
 ---
 
 <SiteLayout
-	title="Speaking | Adam Boas"
-	description="Speaking engagements organized by event with topic tags."
+	title="Speaking Engagements | Adam Boas"
+	description="Talks, panels, and briefings by Adam Boas on defense AI, trusted autonomy, control planes, and AI governance."
 	image="/og/speaking.png"
 >
+	<script type="application/ld+json" set:html={JSON.stringify(speakingPageSchema)} />
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'Person',
+			'@id': PERSON_ID,
+			name: PERSON_NAME,
+			url: absoluteUrl('/'),
+		})}
+	/>
+	<script type="application/ld+json" set:html={JSON.stringify(speakingItemListSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(speakingBreadcrumbSchema)} />
 	<SurfacePageHeader
 		stickyActive="profile"
 		eyebrow="Public engagements"
