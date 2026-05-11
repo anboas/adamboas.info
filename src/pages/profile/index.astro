@@ -28,6 +28,92 @@ const profileModalData = {
 		]),
 	),
 };
+
+const profileUrl = absoluteUrl('/profile/');
+const personId = `${absoluteUrl('/')}#person`;
+const personDescription =
+	'Defense-focused solutions architect specializing in trusted autonomy, control planes, AI governance, and resilient high-tempo delivery systems.';
+
+const profilePageSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'ProfilePage',
+	name: 'Adam Boas Profile',
+	url: profileUrl,
+	description: 'Career background, speaking engagements, and credentials for Adam Boas.',
+	mainEntity: {
+		'@id': personId,
+	},
+};
+
+const personSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	'@id': personId,
+	name: 'Adam Boas',
+	url: absoluteUrl('/'),
+	mainEntityOfPage: profileUrl,
+	jobTitle: 'Defense AI & Autonomy Solutions Architect',
+	description: personDescription,
+	sameAs: ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'],
+	worksFor: {
+		'@type': 'Organization',
+		name: experience[0]?.company ?? 'KBR',
+	},
+	alumniOf: education
+		.filter((item) => item.issuer.includes('University') || item.issuer.includes('College'))
+		.map((item) => ({
+			'@type': 'EducationalOrganization',
+			name: item.issuer,
+		})),
+	knowsAbout: [
+		'Defense AI',
+		'Trusted autonomy',
+		'Control planes',
+		'AI governance',
+		'DevSecOps',
+		'Mission assurance',
+	],
+	hasCredential: education.map((item) => ({
+		'@type': 'EducationalOccupationalCredential',
+		name: item.name,
+		credentialCategory: 'degree-or-certification',
+		recognizedBy: {
+			'@type': 'Organization',
+			name: item.issuer,
+		},
+	})),
+};
+
+const experienceListSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'ItemList',
+	name: 'Adam Boas Experience',
+	itemListElement: experience.map((item, idx) => ({
+		'@type': 'ListItem',
+		position: idx + 1,
+		url: absoluteUrl(`/experience/${item.slug}/`),
+		name: `${item.company} — ${item.title}`,
+	})),
+};
+
+const profileBreadcrumbSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BreadcrumbList',
+	itemListElement: [
+		{
+			'@type': 'ListItem',
+			position: 1,
+			name: 'Home',
+			item: absoluteUrl('/'),
+		},
+		{
+			'@type': 'ListItem',
+			position: 2,
+			name: 'Profile',
+			item: profileUrl,
+		},
+	],
+};
 ---
 
 <SiteLayout
@@ -35,21 +121,10 @@ const profileModalData = {
 	description="Career background, speaking engagements, and credentials for Adam Boas."
 	image="/og/profile.png"
 >
-	<script
-		type="application/ld+json"
-		set:html={JSON.stringify({
-			'@context': 'https://schema.org',
-			'@type': 'ProfilePage',
-			name: 'Adam Boas Profile',
-			url: absoluteUrl('/profile/'),
-			description: 'Career background, speaking engagements, and credentials for Adam Boas.',
-			mainEntity: {
-				'@type': 'Person',
-				name: 'Adam Boas',
-				jobTitle: 'Solutions Architect',
-			},
-		})}
-	/>
+	<script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(experienceListSchema)} />
+	<script type="application/ld+json" set:html={JSON.stringify(profileBreadcrumbSchema)} />
 	<SurfacePageHeader
 		stickyActive="profile"
 		eyebrow="Background"
