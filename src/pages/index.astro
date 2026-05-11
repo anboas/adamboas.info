@@ -1,7 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { getCollection } from 'astro:content';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { SITE_TITLE } from '../consts';
 import { CONTACT_PHONE } from '../data/resume';
 import { absoluteUrl, CONTACT_PHONE_E164, contactMailto } from '../config/site';
 import { withBase } from '../utils/withBase';
@@ -47,9 +47,13 @@ const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
 
 const siteUrl = absoluteUrl('/');
 const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}'), Astro.site).toString();
+
+const HOME_TITLE = 'Adam Boas | Defense AI & Autonomy Solutions Architect';
+const HOME_DESCRIPTION =
+	'Adam Boas is a defense-focused solutions architect helping mission teams deploy trusted AI autonomy, control planes, and resilient delivery systems.';
 ---
 
-<SiteLayout title={SITE_TITLE} description={SITE_DESCRIPTION} image="/og/home.png">
+<SiteLayout title={HOME_TITLE} description={HOME_DESCRIPTION} image="/og/home.png">
 	<script
 		type="application/ld+json"
 		set:html={JSON.stringify({
@@ -58,9 +62,16 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 			name: 'Adam Boas',
 			url: siteUrl,
 			sameAs: ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'],
-			jobTitle: 'Solutions Architect',
+			jobTitle: 'Defense AI & Autonomy Solutions Architect',
 			telephone: CONTACT_PHONE,
-			description: SITE_DESCRIPTION,
+			description: HOME_DESCRIPTION,
+			knowsAbout: [
+				'Defense AI',
+				'Trusted autonomy',
+				'Control planes',
+				'AI governance',
+				'DevSecOps',
+			],
 		})}
 	/>
 	<script
@@ -85,7 +96,7 @@ const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}')
 				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">Adam Boas</h1>
 				<p class="mt-2 text-slate-400">Solutions Architect</p>
 				<p class="mt-4 text-lg leading-relaxed text-slate-300">
-					Warfighter lethality through trusted autonomy, control planes, and execution at tempo.
+					Adam Boas advances warfighter lethality through trusted autonomy, control planes, and execution at tempo.
 				</p>
 				<div class="mt-5 flex flex-wrap items-center gap-3">
 					<a
