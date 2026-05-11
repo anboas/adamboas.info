@@ -10,7 +10,7 @@
 
 ## Shipped (date, area, commit)
 
-- 2026-05-11 — Opportunities UX — Added an interactive comparison tray on `/opportunities/` with row-level Pin/Pinned actions, persistent 4-item local tray state, and a side-by-side decision matrix (due window, decision/confidence/corroboration, gov POCs, and signal depth). Commit: `COMMIT_PENDING`
+- 2026-05-11 — Opportunities UX — Added an interactive comparison tray on `/opportunities/` with row-level Pin/Pinned actions, persistent 4-item local tray state, and a side-by-side decision matrix (due window, decision/confidence/corroboration, gov POCs, and signal depth). Commit: `c9c4e16c9`
 - 2026-05-11 — Speaking UX — Added multi-dimensional discovery controls (search, sponsorship, year, and sort) with live result counts and stronger filter clarity on `/speaking/`. Commit: `6de241c02`
 - 2026-05-11 — Operations UX / Status telemetry — Added pipeline health banner on `/status` with fresh/lagging/stale signal summary and freshness pills for Feed Crawl + SAM Intel/Drift. Commit: `fb892fafc`
 
