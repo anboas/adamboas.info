@@ -10,7 +10,7 @@
 
 ## Shipped (date, area, commit)
 
-- 2026-05-11 — Contact conversion UX — Added intent-adaptive intake prompts on `/contact/` that reveal request-specific guidance, tailored follow-up fields, dynamic brief labels/placeholders, and auto-seeded brief templates when request type is selected. Commit: `967c498de`
+- 2026-05-11 — Contact conversion UX — Added intent-adaptive intake prompts on `/contact/` that reveal request-specific guidance, tailored follow-up fields, dynamic brief labels/placeholders, and auto-seeded brief templates when request type is selected. Commit: `8bc7c7bc6`
 - 2026-05-11 — Writing UX — Added a new Cards/Timeline view toggle on `/writing/` with year + theme clustering, URL/persistence state sync, keyboard shortcut (`v`), and local regression coverage for the timeline control flow. Commit: `946fb63b2`
 - 2026-05-11 — Opportunities UX — Added an interactive comparison tray on `/opportunities/` with row-level Pin/Pinned actions, persistent 4-item local tray state, and a side-by-side decision matrix (due window, decision/confidence/corroboration, gov POCs, and signal depth). Commit: `c9c4e16c9`
 - 2026-05-11 — Speaking UX — Added multi-dimensional discovery controls (search, sponsorship, year, and sort) with live result counts and stronger filter clarity on `/speaking/`. Commit: `6de241c02`
