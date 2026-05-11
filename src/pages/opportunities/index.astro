@@ -898,7 +898,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<div class="opp-kpis">
 					<div class="opp-kpi">
 						<span class="opp-kpi-label">Unique opportunities</span><strong id="opp-kpi-total"
-							>{opportunities.length}</strong>
+							>{opportunities.length}</strong
+						>
 					</div>
 					<div class="opp-kpi">
 						<span class="opp-kpi-label">Displayed</span><strong id="opp-kpi-displayed">{opportunities.length}</strong>
@@ -911,7 +912,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					</div>
 					<div class="opp-kpi">
 						<span class="opp-kpi-label">Raw notices ingested</span><strong
-							>{totalRawNotices + samGlobalRawNotices}</strong>
+							>{totalRawNotices + samGlobalRawNotices}</strong
+						>
 					</div>
 				</div>
 			</section>
@@ -967,25 +969,43 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<div class="opp-kpis">
 					<div class="opp-kpi">
 						<span class="opp-kpi-label">Drift Δ high confidence</span><strong
-							>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong>
+							>{signed(Number(driftDeltas.high_confidence ?? 0))}</strong
+						>
 					</div>
 					<div class="opp-kpi">
 						<span class="opp-kpi-label">Drift Δ 3P errors</span><strong
-							>{signed(Number(driftDeltas.us_errors ?? 0))}</strong>
+							>{signed(Number(driftDeltas.us_errors ?? 0))}</strong
+						>
 					</div>
 				</div>
 			</section>
 			<section class="opp-kpi-group" aria-label="SBIR/STTR metrics" data-source-only="sbir" hidden>
 				<p class="opp-kpi-group-title">SBIR/STTR Overview</p>
 				<div class="opp-kpis">
-					<div class="opp-kpi"><span class="opp-kpi-label">Topics</span><strong id="opp-kpi-sbir-topics">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Open topics</span><strong id="opp-kpi-sbir-open">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">With Q&A</span><strong id="opp-kpi-sbir-withqa">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Total Q&A</span><strong id="opp-kpi-sbir-totalqa">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Components</span><strong id="opp-kpi-sbir-components">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Programs</span><strong id="opp-kpi-sbir-programs">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Tech areas tagged</span><strong id="opp-kpi-sbir-techareas">0</strong></div>
-					<div class="opp-kpi"><span class="opp-kpi-label">Focus areas tagged</span><strong id="opp-kpi-sbir-focusareas">0</strong></div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Topics</span><strong id="opp-kpi-sbir-topics">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Open topics</span><strong id="opp-kpi-sbir-open">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">With Q&A</span><strong id="opp-kpi-sbir-withqa">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Total Q&A</span><strong id="opp-kpi-sbir-totalqa">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Components</span><strong id="opp-kpi-sbir-components">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Programs</span><strong id="opp-kpi-sbir-programs">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Tech areas tagged</span><strong id="opp-kpi-sbir-techareas">0</strong>
+					</div>
+					<div class="opp-kpi">
+						<span class="opp-kpi-label">Focus areas tagged</span><strong id="opp-kpi-sbir-focusareas">0</strong>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -994,9 +1014,22 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	<section class="agent-only card mt-2 p-3 text-xs text-slate-300" aria-label="Agent extraction hints">
 		<p class="font-semibold text-slate-100">Agent extraction mode active</p>
 		<ul class="mt-2 space-y-1">
-			<li>Use explicit source routes for deterministic previews: <a class="underline" href={withBase('/opportunities/sam/')}>/opportunities/sam/</a> and <a class="underline" href={withBase('/opportunities/sbir/')}>/opportunities/sbir/</a>.</li>
-			<li>Cross-reference with <a class="underline" href={withBase('/events/')}>/events/</a> when context pivots from event-derived opportunities.</li>
-			<li>For crawl planning, prioritize discovery endpoints from <a class="underline" href={withBase('/agent-priority.json')}>/agent-priority.json</a>.</li>
+			<li>
+				Use explicit source routes for deterministic previews: <a
+					class="underline"
+					href={withBase('/opportunities/sam/')}>/opportunities/sam/</a
+				> and <a class="underline" href={withBase('/opportunities/sbir/')}>/opportunities/sbir/</a>.
+			</li>
+			<li>
+				Cross-reference with <a class="underline" href={withBase('/events/')}>/events/</a> when context pivots from event-derived
+				opportunities.
+			</li>
+			<li>
+				For crawl planning, prioritize discovery endpoints from <a
+					class="underline"
+					href={withBase('/agent-priority.json')}>/agent-priority.json</a
+				>.
+			</li>
 		</ul>
 	</section>
 
@@ -1286,6 +1319,33 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<button id="opp-table-last" class="opp-page-btn" type="button" aria-label="Last page">»</button>
 			</div>
 		</div>
+		<div id="opp-compare-tray" class="opp-compare-tray" hidden>
+			<div class="opp-compare-head">
+				<div>
+					<h3 class="opp-subtitle">Comparison tray</h3>
+					<p class="opp-subcopy">Pin 2-4 opportunities to compare key fields side-by-side.</p>
+				</div>
+				<div class="opp-compare-head-actions">
+					<span id="opp-compare-count" class="opp-compare-count" aria-live="polite">0 pinned</span>
+					<button id="opp-compare-clear" class="opp-page-btn" type="button">Clear tray</button>
+				</div>
+			</div>
+			<div id="opp-compare-status" class="opp-compare-status" aria-live="polite"></div>
+			<div class="opp-compare-wrap" role="region" aria-label="Opportunity comparison tray" tabindex="0">
+				<table class="opp-compare-table">
+					<thead>
+						<tr>
+							<th scope="col">Field</th>
+							<th scope="col">Opportunity 1</th>
+							<th scope="col">Opportunity 2</th>
+							<th scope="col">Opportunity 3</th>
+							<th scope="col">Opportunity 4</th>
+						</tr>
+					</thead>
+					<tbody id="opp-compare-body"></tbody>
+				</table>
+			</div>
+		</div>
 		<div
 			id="opp-table-wrap"
 			class="opp-table-wrap opp-table-mode-compact"
@@ -1397,8 +1457,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<span><strong>Intel:</strong> <span id="opp-modal-intel">—</span></span>
 				<span id="opp-modal-meta-awards"><strong>Awards:</strong> <span id="opp-modal-awards">—</span></span>
 				<span id="opp-modal-meta-usasp"><strong>USAspending:</strong> <span id="opp-modal-usaspending">—</span></span>
-				<span id="opp-modal-meta-corrob"><strong>Corroboration:</strong> <span id="opp-modal-corroboration">—</span></span>
-				<span id="opp-modal-meta-confidence"><strong>Confidence:</strong> <span id="opp-modal-confidence">—</span></span>
+				<span id="opp-modal-meta-corrob"
+					><strong>Corroboration:</strong> <span id="opp-modal-corroboration">—</span></span
+				>
+				<span id="opp-modal-meta-confidence"><strong>Confidence:</strong> <span id="opp-modal-confidence">—</span></span
+				>
 			</div>
 			<div class="opp-modal-links">
 				<a id="opp-modal-link" href="#" target="_blank" rel="noreferrer" hidden>Open source notice ↗</a>
@@ -1435,14 +1498,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	<script is:inline>
 		(async () => {
 			const rawSam = JSON.parse(document.getElementById('opp-data')?.textContent || '[]');
-			const sbirTopicsUrl = 'https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/topics.json';
+			const sbirTopicsUrl =
+				'https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/topics.json';
 			const searchParams = new URLSearchParams(window.location.search);
 			const requestedSource = String(searchParams.get('source') || 'sam').toLowerCase();
 			let activeSource = requestedSource === 'sbir' ? 'sbir' : 'sam';
 			let sbirRawCache = null;
 
 			const normalizeComponent = (value) => {
-				const key = String(value || '').trim().toLowerCase();
+				const key = String(value || '')
+					.trim()
+					.toLowerCase();
 				if (!key) return 'Unknown';
 				if (key.includes('air force') || key === 'daf') return 'Air Force';
 				if (key.includes('army')) return 'Army';
@@ -1633,6 +1699,11 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				tableTitle: document.getElementById('opp-table-title'),
 				count: document.getElementById('opp-table-count'),
 				body: document.getElementById('opp-table-body'),
+				compareTray: document.getElementById('opp-compare-tray'),
+				compareBody: document.getElementById('opp-compare-body'),
+				compareCount: document.getElementById('opp-compare-count'),
+				compareStatus: document.getElementById('opp-compare-status'),
+				compareClear: document.getElementById('opp-compare-clear'),
 				tableWrap: document.getElementById('opp-table-wrap'),
 				tableHead: document.querySelector('#opp-table-wrap thead'),
 				pageSize: document.getElementById('opp-table-page-size'),
@@ -2176,6 +2247,36 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				mode: el.tableDensity?.value === 'full' ? 'full' : 'compact',
 			};
 
+			const compareStorageKey = `adamboas.opportunities.compare-tray.${activeSource}`;
+			const compareLimit = 4;
+			const compareState = {
+				keys: [],
+				message: '',
+			};
+
+			const readCompareTray = () => {
+				try {
+					const rawValue = localStorage.getItem(compareStorageKey);
+					if (!rawValue) return [];
+					const parsed = JSON.parse(rawValue);
+					if (!Array.isArray(parsed)) return [];
+					return parsed
+						.map((value) => String(value || '').trim())
+						.filter(Boolean)
+						.slice(0, compareLimit);
+				} catch {
+					return [];
+				}
+			};
+
+			const writeCompareTray = () => {
+				try {
+					localStorage.setItem(compareStorageKey, JSON.stringify(compareState.keys));
+				} catch {}
+			};
+
+			compareState.keys = readCompareTray();
+
 			const snapshotStorageKey = 'adamboas.opportunities.dataset-snapshot.v1';
 			const safeNum = (value) => (Number.isFinite(Number(value)) ? Number(value) : 0);
 			const buildDatasetSnapshot = (items) => ({
@@ -2411,7 +2512,10 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						if (state.search && !row.searchBlob.includes(state.search)) return false;
 						if (state.type !== 'all' && row.noticeType !== state.type) return false;
 						if (state.branch !== 'all' && !(row.branches || []).includes(state.branch)) return false;
-						if (state.client !== 'all' && (state.source === 'sbir' ? (row.sbirStatus || 'Unknown') : row.clientLabel) !== state.client)
+						if (
+							state.client !== 'all' &&
+							(state.source === 'sbir' ? row.sbirStatus || 'Unknown' : row.clientLabel) !== state.client
+						)
 							return false;
 						if (state.work !== 'all' && !(row.workTypes || []).includes(state.work)) return false;
 						if (state.naicsFilter && String(row.naicsCode || '') !== String(state.naicsFilter || '')) return false;
@@ -2471,7 +2575,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.labelBranch) el.labelBranch.textContent = state.source === 'sbir' ? 'Component' : 'Branch';
 				if (el.labelClient) el.labelClient.textContent = state.source === 'sbir' ? 'Topic status' : 'Who (client)';
 				if (el.labelWork) el.labelWork.textContent = state.source === 'sbir' ? 'Capability lane' : 'What (work type)';
-				if (el.tableTitle) el.tableTitle.textContent = state.source === 'sbir' ? 'SBIR/STTR Topic Table' : 'Opportunity Table';
+				if (el.tableTitle)
+					el.tableTitle.textContent = state.source === 'sbir' ? 'SBIR/STTR Topic Table' : 'Opportunity Table';
 				if (el.sourceLinkSam) el.sourceLinkSam.classList.toggle('ui-link-btn-active', state.source === 'sam');
 				if (el.sourceLinkSbir) el.sourceLinkSbir.classList.toggle('ui-link-btn-active', state.source === 'sbir');
 			};
@@ -2489,7 +2594,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					option.textContent = `${label} (${count})`;
 					el.type?.appendChild(option);
 				}
-				const branchCounts = countBy(rows, (row) => (Array.isArray(row.branches) && row.branches.length ? row.branches[0] : 'Unknown'));
+				const branchCounts = countBy(rows, (row) =>
+					Array.isArray(row.branches) && row.branches.length ? row.branches[0] : 'Unknown',
+				);
 				for (const [label, count] of branchCounts.slice(0, 80)) {
 					const option = document.createElement('option');
 					option.value = label;
@@ -2653,7 +2760,9 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					});
 				}
 
-				const byClient = countBy(items, (r) => (state.source === 'sbir' ? r.sbirStatus || 'Unknown' : r.clientLabel)).slice(0, 12);
+				const byClient = countBy(items, (r) =>
+					state.source === 'sbir' ? r.sbirStatus || 'Unknown' : r.clientLabel,
+				).slice(0, 12);
 				const agencyChart = initChart('agencies', el.agencies);
 				if (agencyChart) {
 					agencyChart.setOption({
@@ -3652,6 +3761,156 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					.join('');
 			};
 
+			const rowByKey = new Map(rows.map((row) => [String(row.key), row]));
+
+			const normalizeCompareKeys = (keys) => {
+				const out = [];
+				for (const value of keys || []) {
+					const key = String(value || '').trim();
+					if (!key || out.includes(key) || !rowByKey.has(key)) continue;
+					out.push(key);
+					if (out.length >= compareLimit) break;
+				}
+				return out;
+			};
+
+			compareState.keys = normalizeCompareKeys(compareState.keys);
+			writeCompareTray();
+
+			const formatDueLabel = (row) => {
+				if (row.dueDays === null) return 'No due date';
+				if (row.dueDays < 0) return `Past due (${Math.abs(row.dueDays)}d ago)`;
+				if (row.dueDays === 0) return 'Due today';
+				return `${row.dueDays}d`;
+			};
+
+			const formatMoney = (value) => {
+				const amount = Number(value || 0);
+				if (!Number.isFinite(amount) || amount <= 0) return '—';
+				return `$${Math.round(amount).toLocaleString()}`;
+			};
+
+			const renderCompareTray = () => {
+				if (!el.compareTray || !el.compareBody || !el.compareCount || !el.compareStatus) return;
+				compareState.keys = normalizeCompareKeys(compareState.keys);
+				writeCompareTray();
+				const pinnedRows = compareState.keys.map((key) => rowByKey.get(key)).filter(Boolean);
+				el.compareCount.textContent = `${pinnedRows.length} pinned`;
+				if (compareState.message) {
+					el.compareStatus.textContent = compareState.message;
+					compareState.message = '';
+				} else {
+					el.compareStatus.textContent =
+						pinnedRows.length >= 2
+							? 'Use this tray for faster bid/no-bid calls across finalists.'
+							: 'Pin at least two opportunities to unlock side-by-side comparison.';
+				}
+
+				if (!pinnedRows.length) {
+					el.compareTray.setAttribute('hidden', '');
+					el.compareBody.innerHTML = '';
+					return;
+				}
+				el.compareTray.removeAttribute('hidden');
+
+				const makeRow = (label, values) => {
+					const cells = [];
+					for (let i = 0; i < compareLimit; i += 1) {
+						cells.push(`<td>${values[i] || '<span class="opp-compare-empty">—</span>'}</td>`);
+					}
+					return `<tr><th scope="row">${escapeHtml(label)}</th>${cells.join('')}</tr>`;
+				};
+
+				const col = pinnedRows.map((row) => ({
+					title: row.uiLink
+						? `<a href="${escapeHtml(String(row.uiLink || ''))}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
+						: escapeHtml(row.title),
+					notice: escapeHtml(String(row.noticeType || '—')),
+					client: escapeHtml(String(row.clientLabel || 'Unknown')),
+					work: escapeHtml(String(row.workTypeLabel || 'General/Other')),
+					due: escapeHtml(formatDueLabel(row)),
+					decision: escapeHtml(
+						`${String(row.responseDecision || 'Unrated')} (${Math.round(Number(row.responseWorthinessScore || 0))})`,
+					),
+					confidence: escapeHtml(
+						`${String(row.confidenceLevel || 'Low')} (${Math.round(Number(row.confidenceScore || 0))})`,
+					),
+					corroboration: escapeHtml(
+						`${String(row.corroborationLevel || 'None')} (${Math.round(Number(row.corroborationScore || 0))})`,
+					),
+					govPoc: escapeHtml(String(Number(row.governmentPocCount || 0))),
+					intel: escapeHtml(
+						`I${Math.round(Number(row.intelDepthScore || 0))} · F${Math.round(Number(row.resourceCount || 0))} · A${Math.round(Number(row.awardSignalCount || 0))}`,
+					),
+					usasp: escapeHtml(
+						`${Math.round(Number(row.usaspendingMatchCount || 0))} awards · ${formatMoney(row.usaspendingAmount)}`,
+					),
+				}));
+
+				el.compareBody.innerHTML = [
+					makeRow(
+						'Title',
+						col.map((entry) => `<strong>${entry.title}</strong>`),
+					),
+					makeRow(
+						'Notice type',
+						col.map((entry) => entry.notice),
+					),
+					makeRow(
+						'Client',
+						col.map((entry) => entry.client),
+					),
+					makeRow(
+						'Work type',
+						col.map((entry) => entry.work),
+					),
+					makeRow(
+						'Due window',
+						col.map((entry) => entry.due),
+					),
+					makeRow(
+						'Decision score',
+						col.map((entry) => entry.decision),
+					),
+					makeRow(
+						'Confidence',
+						col.map((entry) => entry.confidence),
+					),
+					makeRow(
+						'Corroboration',
+						col.map((entry) => entry.corroboration),
+					),
+					makeRow(
+						'Gov POCs',
+						col.map((entry) => entry.govPoc),
+					),
+					makeRow(
+						'Intel depth',
+						col.map((entry) => entry.intel),
+					),
+					makeRow(
+						'3P award signal',
+						col.map((entry) => entry.usasp),
+					),
+				].join('');
+			};
+
+			const toggleCompareKey = (key) => {
+				const normalizedKey = String(key || '').trim();
+				if (!normalizedKey) return;
+				const existingIndex = compareState.keys.indexOf(normalizedKey);
+				if (existingIndex >= 0) {
+					compareState.keys.splice(existingIndex, 1);
+					compareState.message = 'Removed from comparison tray.';
+				} else if (compareState.keys.length >= compareLimit) {
+					compareState.message = 'Comparison tray limit reached (max 4). Remove one to add another.';
+				} else {
+					compareState.keys.push(normalizedKey);
+					compareState.message = 'Added to comparison tray.';
+				}
+				writeCompareTray();
+			};
+
 			const compareText = (a, b) => String(a ?? '').localeCompare(String(b ?? ''), undefined, { sensitivity: 'base' });
 			const compareNum = (a, b, nullValue = Number.POSITIVE_INFINITY) => (a ?? nullValue) - (b ?? nullValue);
 
@@ -3757,6 +4016,25 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				return count;
 			};
 
+			const bindRenderedRowActions = (items) => {
+				if (!el.body) return;
+				for (const button of el.body.querySelectorAll('.opp-intel-open')) {
+					button.addEventListener('click', () => {
+						const idx = Number(button.getAttribute('data-row-idx') || -1);
+						if (idx < 0 || idx >= items.length) return;
+						openIntelModal(items[idx], button);
+					});
+				}
+				for (const button of el.body.querySelectorAll('.opp-compare-toggle')) {
+					button.addEventListener('click', () => {
+						const key = String(button.getAttribute('data-row-key') || '').trim();
+						if (!key) return;
+						toggleCompareKey(key);
+						render();
+					});
+				}
+			};
+
 			const renderTable = (items, activeCount = 0) => {
 				if (!el.body) return;
 				if (!items.length) {
@@ -3773,29 +4051,28 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							const qaCount = Number(row.sbirQuestionCount ?? row.usaspendingMatchCount ?? 0);
 							const tech = Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas.slice(0, 4) : [];
 							const focus = Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas.slice(0, 4) : [];
+							const isPinned = compareState.keys.includes(String(row.key));
 							const tags = [
 								`<span class="opp-pill">${escapeHtml(row.branches?.[0] || 'Component unknown')}</span>`,
 								`<span class="opp-pill">${escapeHtml(program)}</span>`,
 								`<span class="opp-pill">${escapeHtml(status)}</span>`,
 								`<span class="opp-pill">Q&A ${qaCount}</span>`,
 							].join('');
-							const techLine = tech.length ? `<div class="opp-sbir-line"><strong>Tech:</strong> ${escapeHtml(tech.join(', '))}</div>` : '';
-							const focusLine = focus.length ? `<div class="opp-sbir-line"><strong>Focus:</strong> ${escapeHtml(focus.join(', '))}</div>` : '';
+							const techLine = tech.length
+								? `<div class="opp-sbir-line"><strong>Tech:</strong> ${escapeHtml(tech.join(', '))}</div>`
+								: '';
+							const focusLine = focus.length
+								? `<div class="opp-sbir-line"><strong>Focus:</strong> ${escapeHtml(focus.join(', '))}</div>`
+								: '';
 							const kw = String(row.sbirKeywords || '').trim();
 							const kwLine = kw ? `<div class="opp-sbir-line"><strong>Keywords:</strong> ${escapeHtml(kw)}</div>` : '';
 							const title = row.uiLink
 								? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
 								: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
-							return `<tr class="opp-sbir-row"><td colspan="20"><div class="opp-sbir-card"><div class="opp-sbir-head"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button>${title}</div><div class="opp-pill-wrap">${tags}</div>${techLine}${focusLine}${kwLine}</div></td></tr>`;
+							return `<tr class="opp-sbir-row"><td colspan="20"><div class="opp-sbir-card"><div class="opp-sbir-head"><span class="opp-row-actions"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button><button class="opp-compare-toggle ${isPinned ? 'is-active' : ''}" type="button" data-row-key="${escapeHtml(String(row.key || ''))}">${isPinned ? 'Pinned' : 'Pin'}</button></span>${title}</div><div class="opp-pill-wrap">${tags}</div>${techLine}${focusLine}${kwLine}</div></td></tr>`;
 						})
 						.join('');
-					for (const button of el.body.querySelectorAll('.opp-intel-open')) {
-						button.addEventListener('click', () => {
-							const idx = Number(button.getAttribute('data-row-idx') || -1);
-							if (idx < 0 || idx >= items.length) return;
-							openIntelModal(items[idx], button);
-						});
-					}
+					bindRenderedRowActions(items);
 					return;
 				}
 				if (state.source === 'sbir') {
@@ -3804,6 +4081,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							const qaCount = Number(row.sbirQuestionCount || 0);
 							const tech = Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas : [];
 							const focus = Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas : [];
+							const isPinned = compareState.keys.includes(String(row.key));
 							const tags = [
 								row.clientLabel ? `<span class="opp-pill">${escapeHtml(String(row.clientLabel))}</span>` : '',
 								row.sbirProgram ? `<span class="opp-pill">${escapeHtml(String(row.sbirProgram))}</span>` : '',
@@ -3822,22 +4100,17 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							const title = row.uiLink
 								? `<a class="opp-title-link" href="${escapeHtml(row.uiLink)}" target="_blank" rel="noreferrer">${escapeHtml(row.title)}</a>`
 								: `<span class="opp-title-text">${escapeHtml(row.title)}</span>`;
-							return `<tr class="opp-sbir-row"><td colspan="20" data-col="sbir-card"><div class="opp-sbir-card"><div class="opp-sbir-card-head"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button><div>${title}<div class="opp-pill-wrap">${tags}</div></div></div><p class="opp-sbir-meta">${meta || 'No additional SBIR topic metadata captured.'}</p></div></td></tr>`;
+							return `<tr class="opp-sbir-row"><td colspan="20" data-col="sbir-card"><div class="opp-sbir-card"><div class="opp-sbir-card-head"><span class="opp-row-actions"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button><button class="opp-compare-toggle ${isPinned ? 'is-active' : ''}" type="button" data-row-key="${escapeHtml(String(row.key || ''))}">${isPinned ? 'Pinned' : 'Pin'}</button></span><div>${title}<div class="opp-pill-wrap">${tags}</div></div></div><p class="opp-sbir-meta">${meta || 'No additional SBIR topic metadata captured.'}</p></div></td></tr>`;
 						})
 						.join('');
-					for (const button of el.body.querySelectorAll('.opp-intel-open')) {
-						button.addEventListener('click', () => {
-							const idx = Number(button.getAttribute('data-row-idx') || -1);
-							if (idx < 0 || idx >= items.length) return;
-							openIntelModal(items[idx], button);
-						});
-					}
+					bindRenderedRowActions(items);
 					return;
 				}
 
 				const metric = (value) => (Number(value || 0) > 0 ? String(Math.round(Number(value || 0))) : '·');
 				el.body.innerHTML = items
 					.map((row, idx) => {
+						const isPinned = compareState.keys.includes(String(row.key));
 						const days = row.dueDays === null ? '—' : String(row.dueDays);
 						const daysSinceRelease = row.postedDays === null ? '—' : String(row.postedDays);
 						const intelDepth = metric(row.intelDepthScore);
@@ -3935,7 +4208,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 								})
 								.join('') + (mappedRefs.length > 2 ? `<span class="opp-pill">+${mappedRefs.length - 2}</span>` : '');
 						return `<tr>
-						<td data-col="view" class="opp-num"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button></td>
+						<td data-col="view" class="opp-num"><span class="opp-row-actions"><button class="opp-intel-open" type="button" data-row-idx="${idx}">Open</button><button class="opp-compare-toggle ${isPinned ? 'is-active' : ''}" type="button" data-row-key="${escapeHtml(String(row.key || ''))}">${isPinned ? 'Pinned' : 'Pin'}</button></span></td>
 						<td data-col="gem" class="opp-num"><span class="opp-gem-chip">${Math.round(row.gemScore)}</span></td>
 						<td data-col="weight" class="opp-num">${row.weight}</td>
 						<td data-col="due" class="opp-date ${dueClass(row)}">${due}</td>
@@ -3959,13 +4232,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					})
 					.join('');
 
-				for (const button of el.body.querySelectorAll('.opp-intel-open')) {
-					button.addEventListener('click', () => {
-						const idx = Number(button.getAttribute('data-row-idx') || -1);
-						if (idx < 0 || idx >= items.length) return;
-						openIntelModal(items[idx], button);
-					});
-				}
+				bindRenderedRowActions(items);
 			};
 
 			const render = () => {
@@ -4012,13 +4279,25 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.freshKpi) el.freshKpi.textContent = String(freshCount);
 				if (el.fpdsKpi) el.fpdsKpi.textContent = String(fpdsCount);
 				if (state.source === 'sbir') {
-					const openCount = filtered.filter((row) => String(row.sbirStatus || '').toLowerCase().includes('open')).length;
+					const openCount = filtered.filter((row) =>
+						String(row.sbirStatus || '')
+							.toLowerCase()
+							.includes('open'),
+					).length;
 					const withQaCount = filtered.filter((row) => Number(row.sbirQuestionCount || 0) > 0).length;
 					const totalQa = filtered.reduce((acc, row) => acc + Number(row.sbirQuestionCount || 0), 0);
-					const componentCount = new Set(filtered.map((row) => String(row.branches?.[0] || '').trim()).filter(Boolean)).size;
-					const programCount = new Set(filtered.map((row) => String(row.sbirProgram || '').trim()).filter(Boolean)).size;
-					const techAreas = filtered.reduce((acc, row) => acc + (Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas.length : 0), 0);
-					const focusAreas = filtered.reduce((acc, row) => acc + (Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas.length : 0), 0);
+					const componentCount = new Set(filtered.map((row) => String(row.branches?.[0] || '').trim()).filter(Boolean))
+						.size;
+					const programCount = new Set(filtered.map((row) => String(row.sbirProgram || '').trim()).filter(Boolean))
+						.size;
+					const techAreas = filtered.reduce(
+						(acc, row) => acc + (Array.isArray(row.sbirTechnologyAreas) ? row.sbirTechnologyAreas.length : 0),
+						0,
+					);
+					const focusAreas = filtered.reduce(
+						(acc, row) => acc + (Array.isArray(row.sbirFocusAreas) ? row.sbirFocusAreas.length : 0),
+						0,
+					);
 					if (el.sbirTopicsKpi) el.sbirTopicsKpi.textContent = String(filtered.length);
 					if (el.sbirOpenKpi) el.sbirOpenKpi.textContent = String(openCount);
 					if (el.sbirWithQaKpi) el.sbirWithQaKpi.textContent = String(withQaCount);
@@ -4037,7 +4316,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				if (el.pageLast) el.pageLast.disabled = tableState.page >= totalPages;
 				if (el.chartFilterStatus) {
 					const chips = [];
-					if (state.client !== 'all') chips.push(state.source === 'sbir' ? `Status: ${state.client}` : `Who: ${state.client}`);
+					if (state.client !== 'all')
+						chips.push(state.source === 'sbir' ? `Status: ${state.client}` : `Who: ${state.client}`);
 					if (state.work !== 'all') chips.push(`What: ${workTypeLabel[state.work] || state.work}`);
 					if (state.source === 'sam') {
 						if (state.confidence !== 'all') chips.push(`Confidence: ${state.confidence}`);
@@ -4059,6 +4339,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				renderVisuals(filtered);
 				renderInsights(filtered);
 				renderDatasetDelta();
+				renderCompareTray();
 				renderTable(pagedRows, activeFilterCount());
 			};
 
@@ -4173,6 +4454,14 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				tableState.sortDir = 'desc';
 				tableState.mode = 'compact';
 				if (el.tableDensity) el.tableDensity.value = 'compact';
+				render();
+			});
+
+			el.compareClear?.addEventListener('click', () => {
+				if (!compareState.keys.length) return;
+				compareState.keys = [];
+				compareState.message = 'Comparison tray cleared.';
+				writeCompareTray();
 				render();
 			});
 
@@ -4719,6 +5008,70 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		font-size: 0.69rem;
 		color: rgba(148, 163, 184, 0.95);
 	}
+	.opp-compare-tray {
+		margin-top: 0.62rem;
+		border: 1px solid rgba(51, 65, 85, 0.72);
+		background: rgba(15, 23, 42, 0.52);
+		padding: 0.58rem;
+		display: grid;
+		gap: 0.5rem;
+	}
+	.opp-compare-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0.55rem;
+		flex-wrap: wrap;
+	}
+	.opp-compare-head-actions {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.42rem;
+	}
+	.opp-compare-count {
+		font-size: 0.68rem;
+		color: rgba(125, 211, 252, 0.95);
+	}
+	.opp-compare-status {
+		font-size: 0.66rem;
+		color: rgba(148, 163, 184, 0.95);
+	}
+	.opp-compare-wrap {
+		overflow-x: auto;
+	}
+	.opp-compare-table {
+		width: 100%;
+		min-width: 52rem;
+		border-collapse: collapse;
+		font-size: 0.69rem;
+	}
+	.opp-compare-table th,
+	.opp-compare-table td {
+		border: 1px solid rgba(51, 65, 85, 0.5);
+		padding: 0.32rem 0.4rem;
+		vertical-align: top;
+	}
+	.opp-compare-table thead th {
+		background: rgba(15, 23, 42, 0.88);
+		color: rgba(226, 232, 240, 0.96);
+		font-size: 0.63rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+	.opp-compare-table tbody th {
+		background: rgba(15, 23, 42, 0.82);
+		color: rgba(148, 163, 184, 0.96);
+		font-size: 0.62rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+	.opp-compare-table td {
+		color: rgba(203, 213, 225, 0.96);
+	}
+	.opp-compare-empty {
+		color: rgba(100, 116, 139, 0.9);
+	}
 	.opp-table-wrap {
 		margin-top: 0.6rem;
 		max-height: 65vh;
@@ -4913,7 +5266,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	}
 	.opp-sbir-head {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 0.55rem;
 	}
 	.opp-sbir-line {
@@ -5175,18 +5528,39 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		line-height: 1.45;
 		color: rgba(226, 232, 240, 0.88);
 	}
-	.opp-intel-open {
+	.opp-row-actions {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+	.opp-intel-open,
+	.opp-compare-toggle {
 		height: 1.45rem;
 		padding: 0 0.5rem;
-		border: 1px solid rgba(56, 189, 248, 0.7);
-		background: rgba(14, 165, 233, 0.18);
-		color: rgba(224, 242, 254, 0.98);
 		font-size: 0.63rem;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 	}
+	.opp-intel-open {
+		border: 1px solid rgba(56, 189, 248, 0.7);
+		background: rgba(14, 165, 233, 0.18);
+		color: rgba(224, 242, 254, 0.98);
+	}
 	.opp-intel-open:hover {
 		background: rgba(14, 165, 233, 0.28);
+	}
+	.opp-compare-toggle {
+		border: 1px solid rgba(148, 163, 184, 0.66);
+		background: rgba(51, 65, 85, 0.34);
+		color: rgba(226, 232, 240, 0.95);
+	}
+	.opp-compare-toggle:hover {
+		background: rgba(71, 85, 105, 0.42);
+	}
+	.opp-compare-toggle.is-active {
+		border-color: rgba(34, 197, 94, 0.72);
+		background: rgba(22, 163, 74, 0.26);
+		color: rgba(220, 252, 231, 0.99);
 	}
 
 	.opp-modal {
@@ -5463,6 +5837,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		}
 		.opp-page-indicator {
 			min-width: auto;
+		}
+		.opp-compare-head-actions {
+			width: 100%;
+			justify-content: space-between;
+		}
+		.opp-compare-table {
+			min-width: 34rem;
 		}
 		.opp-table {
 			font-size: 0.67rem;
