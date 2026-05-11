@@ -2,14 +2,15 @@
 
 ## Backlog (ranked)
 
-1. Contact conversion: add intent-specific follow-up prompts after request type selection.
-2. SEO: add Organization and Person JSON-LD to profile and contact surfaces.
-3. Performance: reduce opportunities page hydration cost with deferred non-critical controls.
-4. Opportunities UX: add saved comparison presets (named trays) for recurring bid/no-bid workflows.
-5. Writing UX: add timeline deep-links (year/theme anchors) for shareable scans.
+1. SEO: add Organization and Person JSON-LD to profile and contact surfaces.
+2. Performance: reduce opportunities page hydration cost with deferred non-critical controls.
+3. Opportunities UX: add saved comparison presets (named trays) for recurring bid/no-bid workflows.
+4. Writing UX: add timeline deep-links (year/theme anchors) for shareable scans.
+5. Contact conversion: add urgency qualifier + preferred follow-up channel selector to improve reply precision.
 
 ## Shipped (date, area, commit)
 
+- 2026-05-11 — Contact conversion UX — Added intent-adaptive intake prompts on `/contact/` that reveal request-specific guidance, tailored follow-up fields, dynamic brief labels/placeholders, and auto-seeded brief templates when request type is selected. Commit: `967c498de`
 - 2026-05-11 — Writing UX — Added a new Cards/Timeline view toggle on `/writing/` with year + theme clustering, URL/persistence state sync, keyboard shortcut (`v`), and local regression coverage for the timeline control flow. Commit: `946fb63b2`
 - 2026-05-11 — Opportunities UX — Added an interactive comparison tray on `/opportunities/` with row-level Pin/Pinned actions, persistent 4-item local tray state, and a side-by-side decision matrix (due window, decision/confidence/corroboration, gov POCs, and signal depth). Commit: `c9c4e16c9`
 - 2026-05-11 — Speaking UX — Added multi-dimensional discovery controls (search, sponsorship, year, and sort) with live result counts and stronger filter clarity on `/speaking/`. Commit: `6de241c02`
@@ -17,7 +18,7 @@
 
 ## Next focus
 
-- Contact conversion: add intent-specific follow-up prompts on `/contact/` that adapt fields/questions to hiring, speaking, advisory, and media requests.
+- SEO: add Organization schema and stronger Person↔Organization linkage on `/profile/` and `/contact/` for richer entity understanding in search surfaces.
 
 ## Anti-repeat rule
 

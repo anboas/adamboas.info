@@ -128,12 +128,44 @@ const contactBreadcrumbSchema = {
 				</label>
 			</div>
 
+			<div class="contact-intent-brief mt-3" data-intent-brief hidden>
+				<p class="contact-intent-title" data-intent-brief-title></p>
+				<ul class="contact-intent-points" data-intent-brief-points></ul>
+			</div>
+
+			<div class="contact-grid mt-3" data-intent-followups hidden>
+				<label class="contact-field">
+					<span data-intent-focus-label>Primary objective</span>
+					<input
+						class="contact-input"
+						name="focus"
+						type="text"
+						autocomplete="off"
+						data-intent-focus-input
+						placeholder="What outcome do you need most?"
+					/>
+				</label>
+
+				<label class="contact-field">
+					<span data-intent-window-label>Decision window</span>
+					<input
+						class="contact-input"
+						name="timeline"
+						type="text"
+						autocomplete="off"
+						data-intent-window-input
+						placeholder="When do you need this moving?"
+					/>
+				</label>
+			</div>
+
 			<label class="contact-field mt-3">
-				<span>Project brief</span>
+				<span data-intent-message-label>Project brief</span>
 				<textarea
 					class="contact-input contact-textarea"
 					name="message"
 					rows="7"
+					data-intent-message-input
 					placeholder="Context, mission outcome, timeline, constraints, and what success looks like."
 					required></textarea>
 			</label>
@@ -201,6 +233,26 @@ const contactBreadcrumbSchema = {
 		line-height: 1.45;
 		resize: vertical;
 		min-height: 9rem;
+	}
+	.contact-intent-brief {
+		border: 1px solid rgba(71, 85, 105, 0.8);
+		background: rgba(15, 23, 42, 0.75);
+		padding: 0.75rem;
+	}
+	.contact-intent-title {
+		font-size: 0.72rem;
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		color: rgba(148, 163, 184, 0.98);
+	}
+	.contact-intent-points {
+		margin: 0.45rem 0 0;
+		padding-left: 1rem;
+		display: grid;
+		gap: 0.25rem;
+		font-size: 0.8rem;
+		line-height: 1.45;
+		color: rgba(226, 232, 240, 0.96);
 	}
 	.contact-submit {
 		min-height: 2.15rem;

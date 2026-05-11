@@ -9,8 +9,111 @@
 	const submitBtn = form.querySelector('[data-contact-submit]');
 	const intentSelect = form.querySelector('select[name="intent"]');
 	const hp = form.querySelector('input[name="website"]');
+	const focusLabelEl = form.querySelector('[data-intent-focus-label]');
+	const focusInputEl = form.querySelector('[data-intent-focus-input]');
+	const windowLabelEl = form.querySelector('[data-intent-window-label]');
+	const windowInputEl = form.querySelector('[data-intent-window-input]');
+	const messageLabelEl = form.querySelector('[data-intent-message-label]');
+	const messageInputEl = form.querySelector('[data-intent-message-input]');
+	const briefPanelEl = form.querySelector('[data-intent-brief]');
+	const briefTitleEl = form.querySelector('[data-intent-brief-title]');
+	const briefPointsEl = form.querySelector('[data-intent-brief-points]');
+	const followupPanelEl = form.querySelector('[data-intent-followups]');
+
 	const loadedAt = Date.now();
 	let started = false;
+	let messageEdited = false;
+	let currentIntent = '';
+
+	const defaultFieldCopy = {
+		focusLabel: 'Primary objective',
+		focusPlaceholder: 'What outcome do you need most?',
+		windowLabel: 'Decision window',
+		windowPlaceholder: 'When do you need this moving?',
+		messageLabel: 'Project brief',
+		messagePlaceholder: 'Context, mission outcome, timeline, constraints, and what success looks like.',
+		submitLabel: 'Send request',
+	};
+
+	const intentProfiles = {
+		consulting: {
+			briefTitle: 'For consulting engagements, include:',
+			briefPoints: [
+				'Mission or delivery blocker',
+				'Who owns the decision',
+				'What outcome must move in the next 30-60 days',
+			],
+			focusLabel: 'Blocked decision or mission outcome',
+			focusPlaceholder: 'e.g., Program launch blocked by fragmented delivery ownership',
+			windowLabel: 'Desired kickoff window',
+			windowPlaceholder: 'e.g., Discovery sprint within 2 weeks',
+			messageLabel: 'Engagement brief',
+			messagePlaceholder:
+				'Current state, key stakeholders, constraints, and what a successful first 30 days looks like.',
+			template: 'Current state:\n\nPriority outcome:\n\nStakeholders:\n\nConstraints:\n\nSuccess signal in 30 days:\n',
+			submitLabel: 'Send consulting request',
+		},
+		architecture: {
+			briefTitle: 'For architecture reviews, include:',
+			briefPoints: [
+				'System scope and boundaries',
+				'Primary risk or failure mode',
+				'Decision that needs an external architecture read',
+			],
+			focusLabel: 'Architecture pressure point',
+			focusPlaceholder: 'e.g., IL5 workload scaling bottleneck between data and platform layers',
+			windowLabel: 'Review decision deadline',
+			windowPlaceholder: 'e.g., Need architecture recommendation before design review on June 10',
+			messageLabel: 'Architecture brief',
+			messagePlaceholder:
+				'Platform context, current design, known constraints, and where you want an outside architecture judgment.',
+			template:
+				'System context:\n\nPrimary bottleneck:\n\nConstraints (security/compliance/operational):\n\nDecision required:\n\nArtifacts available:\n',
+			submitLabel: 'Send architecture request',
+		},
+		proposal: {
+			briefTitle: 'For proposal or capture support, include:',
+			briefPoints: [
+				'Opportunity identifier and customer',
+				'Current capture/proposal phase',
+				'Specific section, artifact, or strategy support needed',
+			],
+			focusLabel: 'Opportunity / bid identifier',
+			focusPlaceholder: 'e.g., SAM.gov notice ID or internal pursuit code',
+			windowLabel: 'Submission or gate deadline',
+			windowPlaceholder: 'e.g., Pink team in 10 days, final due June 1',
+			messageLabel: 'Capture/proposal brief',
+			messagePlaceholder: 'Opportunity context, win theme pressure points, timeline, and exact support needed.',
+			template:
+				'Opportunity + customer:\n\nCurrent phase:\n\nSupport needed (narrative, compliance, pricing strategy, etc.):\n\nDeadlines:\n\nWin risks:\n',
+			submitLabel: 'Send proposal request',
+		},
+		speaking: {
+			briefTitle: 'For speaking or briefings, include:',
+			briefPoints: ['Audience profile and size', 'Venue/date/time constraints', 'Desired takeaways and desired tone'],
+			focusLabel: 'Audience and forum',
+			focusPlaceholder: 'e.g., Senior gov digital leaders, 45-minute executive forum',
+			windowLabel: 'Event date or planning window',
+			windowPlaceholder: 'e.g., Event on Sep 14, prep call by Aug 20',
+			messageLabel: 'Speaking brief',
+			messagePlaceholder:
+				'Audience context, session format, non-negotiables, and what the audience should walk away with.',
+			template: 'Audience:\n\nEvent format:\n\nCore topic:\n\nDesired takeaway:\n\nDate + logistics:\n',
+			submitLabel: 'Send speaking request',
+		},
+		other: {
+			briefTitle: 'Helpful context for custom requests:',
+			briefPoints: ['What outcome you need', 'Timeline pressure', 'Best next step for coordination'],
+			focusLabel: 'Primary objective',
+			focusPlaceholder: 'What are you trying to accomplish?',
+			windowLabel: 'Timeline pressure',
+			windowPlaceholder: 'When does this matter most?',
+			messageLabel: 'Request brief',
+			messagePlaceholder: 'Share context, constraints, and what success looks like.',
+			template: 'Objective:\n\nContext:\n\nTimeline:\n\nConstraints:\n\nWhat success looks like:\n',
+			submitLabel: 'Send request',
+		},
+	};
 
 	const track = (name, props) => {
 		try {
@@ -35,24 +138,86 @@
 		errorsEl.innerHTML = `<ul class="space-y-1">${errors.map((e) => `<li>• ${e}</li>`).join('')}</ul>`;
 	};
 
+	const getIntentProfile = (intent) => intentProfiles[(intent || '').toLowerCase()] || null;
+
+	const getSubmitLabel = () => {
+		const profile = getIntentProfile(currentIntent);
+		return profile?.submitLabel || defaultFieldCopy.submitLabel;
+	};
+
 	const setSubmitting = (busy) => {
 		if (!submitBtn) return;
 		submitBtn.disabled = busy;
 		submitBtn.setAttribute('aria-busy', busy ? 'true' : 'false');
-		submitBtn.textContent = busy ? 'Sending…' : 'Send request';
+		submitBtn.textContent = busy ? 'Sending…' : getSubmitLabel();
+	};
+
+	const applyIntentProfile = (intent, { prefillTemplate = false } = {}) => {
+		currentIntent = String(intent || '')
+			.trim()
+			.toLowerCase();
+		const profile = getIntentProfile(currentIntent);
+
+		if (!profile) {
+			if (briefPanelEl) briefPanelEl.hidden = true;
+			if (followupPanelEl) followupPanelEl.hidden = true;
+			if (focusLabelEl) focusLabelEl.textContent = defaultFieldCopy.focusLabel;
+			if (focusInputEl) focusInputEl.placeholder = defaultFieldCopy.focusPlaceholder;
+			if (windowLabelEl) windowLabelEl.textContent = defaultFieldCopy.windowLabel;
+			if (windowInputEl) windowInputEl.placeholder = defaultFieldCopy.windowPlaceholder;
+			if (messageLabelEl) messageLabelEl.textContent = defaultFieldCopy.messageLabel;
+			if (messageInputEl) messageInputEl.placeholder = defaultFieldCopy.messagePlaceholder;
+			if (!submitBtn?.disabled) submitBtn.textContent = defaultFieldCopy.submitLabel;
+			return;
+		}
+
+		if (briefPanelEl) briefPanelEl.hidden = false;
+		if (followupPanelEl) followupPanelEl.hidden = false;
+		if (briefTitleEl) briefTitleEl.textContent = profile.briefTitle;
+		if (briefPointsEl) {
+			briefPointsEl.innerHTML = profile.briefPoints.map((item) => `<li>${item}</li>`).join('');
+		}
+		if (focusLabelEl) focusLabelEl.textContent = profile.focusLabel;
+		if (focusInputEl) focusInputEl.placeholder = profile.focusPlaceholder;
+		if (windowLabelEl) windowLabelEl.textContent = profile.windowLabel;
+		if (windowInputEl) windowInputEl.placeholder = profile.windowPlaceholder;
+		if (messageLabelEl) messageLabelEl.textContent = profile.messageLabel;
+		if (messageInputEl) messageInputEl.placeholder = profile.messagePlaceholder;
+		if (!submitBtn?.disabled) submitBtn.textContent = profile.submitLabel;
+
+		if (prefillTemplate && messageInputEl && !messageEdited && !String(messageInputEl.value || '').trim()) {
+			messageInputEl.value = profile.template;
+		}
 	};
 
 	const prefillIntentFromQuery = () => {
-		if (!intentSelect) return;
+		if (!intentSelect) return '';
 		const params = new URLSearchParams(window.location.search);
 		const intent = (params.get('intent') || '').trim().toLowerCase();
-		if (!intent) return;
+		if (!intent) return '';
 		const match = [...intentSelect.options].find((opt) => opt.value.toLowerCase() === intent);
-		if (match) intentSelect.value = match.value;
+		if (!match) return '';
+		intentSelect.value = match.value;
+		return match.value;
 	};
 
-	prefillIntentFromQuery();
+	const initialIntent = prefillIntentFromQuery();
+	applyIntentProfile(initialIntent, { prefillTemplate: Boolean(initialIntent) });
 	track('Contact Form: View');
+
+	if (messageInputEl) {
+		messageInputEl.addEventListener('input', () => {
+			if (String(messageInputEl.value || '').trim()) messageEdited = true;
+		});
+	}
+
+	if (intentSelect) {
+		intentSelect.addEventListener('change', () => {
+			const nextIntent = String(intentSelect.value || '').trim();
+			applyIntentProfile(nextIntent, { prefillTemplate: true });
+			if (nextIntent) track('Contact Form: Intent Selected', { intent: nextIntent });
+		});
+	}
 
 	form.addEventListener('focusin', () => {
 		if (started) return;
@@ -79,6 +244,8 @@
 			track('Contact Form: Spam Trap');
 			setStatus('Thanks. Your request was received.', 'success');
 			form.reset();
+			applyIntentProfile('');
+			messageEdited = false;
 			return;
 		}
 
@@ -128,7 +295,9 @@
 			setStatus('Request sent. You should hear back shortly.', 'success');
 			track('Contact Form: Success', { intent });
 			form.reset();
-			prefillIntentFromQuery();
+			const resetIntent = prefillIntentFromQuery();
+			applyIntentProfile(resetIntent, { prefillTemplate: Boolean(resetIntent) });
+			messageEdited = false;
 		} catch (error) {
 			setStatus('Could not send automatically. Use the email link below.', 'error');
 			setErrors(['Automatic submit failed. Please use direct email below.']);
