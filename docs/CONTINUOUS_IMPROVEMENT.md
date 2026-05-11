@@ -10,7 +10,7 @@
 
 ## Shipped (date, area, commit)
 
-- 2026-05-11 — **Operations UX / Status telemetry** — `TBD`
+- 2026-05-11 — **Operations UX / Status telemetry** — `fb892fafc`
   - Added pipeline health banner on `/status` with fresh/lagging/stale signal summary.
   - Added freshness pills + relative age labels for Feed Crawl and SAM Intel/Drift signals.
   - Added visual severity states to make stale data immediately visible without parsing timestamps.
