@@ -61,7 +61,6 @@ function isUsableExternalUrl(url: string | null | undefined) {
 }
 
 const events = radarEventsSeed.filter((event) => {
-	if (!isFutureEventDate(event.startDate)) return false;
 	const candidateLinks = [
 		event.ontology.links.official,
 		event.ontology.links.registration,
@@ -1820,7 +1819,12 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 				endsInWeek: item.end <= weekEnd,
 			});
 		}
-		segments.sort((a, b) => a.startCol - b.startCol || b.endCol - a.endCol || a.item.title.localeCompare(b.item.title));
+		segments.sort((a, b) =>
+			a.startCol - b.startCol ||
+			(Number(b.item.attending) - Number(a.item.attending)) ||
+			b.endCol - a.endCol ||
+			a.item.title.localeCompare(b.item.title)
+		);
 		const laneEnds = [];
 		for (const segment of segments) {
 			let lane = laneEnds.findIndex((endCol) => segment.startCol > endCol);
@@ -2512,7 +2516,11 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		if (da === null && db === null) return (a.dataset.title || '').localeCompare(b.dataset.title || '');
 		if (da === null) return 1;
 		if (db === null) return -1;
-		return da - db;
+		const dateDiff = da - db;
+		if (dateDiff !== 0) return dateDiff;
+		const attendingDiff = Number(b.dataset.attending === '1') - Number(a.dataset.attending === '1');
+		if (attendingDiff !== 0) return attendingDiff;
+		return (a.dataset.title || '').localeCompare(b.dataset.title || '');
 	}
 
 	function getVisibleCards() {
