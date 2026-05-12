@@ -34,7 +34,7 @@
 		"test:smoke": "SITE_BASE=http://127.0.0.1:4321 playwright test tests/smoke.spec.ts",
 		"test:overflow": "SITE_BASE=https://www.adamboas.com playwright test tests/overflow.spec.ts",
 		"test:a11y": "SITE_BASE=http://localhost:4321 playwright test tests/a11y.spec.ts",
-		"test:site": "SITE_BASE=http://127.0.0.1:4321 playwright test tests/smoke.spec.ts tests/overflow.spec.ts tests/a11y.spec.ts tests/opportunities-events-regression.spec.ts tests/writing-regression.spec.ts",
+		"test:site": "SITE_BASE=http://127.0.0.1:4321 playwright test tests/smoke.spec.ts tests/overflow.spec.ts tests/a11y.spec.ts tests/opportunities-events-regression.spec.ts tests/writing-regression.spec.ts tests/contact-regression.spec.ts",
 		"lhci": "npm run build && lhci autorun",
 		"events:feed-crawl": "python3 scripts/crawl-radar-feed-registry.py",
 		"linkcheck:prepare": "node scripts/linkcheck-prepare.mjs",

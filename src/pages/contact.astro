@@ -126,7 +126,31 @@ const contactBreadcrumbSchema = {
 						<option value="other">Other</option>
 					</select>
 				</label>
+
+				<label class="contact-field">
+					<span>Urgency</span>
+					<select class="contact-input" name="urgency" data-contact-urgency required>
+						<option value="">Select urgency</option>
+						<option value="critical">Critical (same-day response needed)</option>
+						<option value="urgent">Urgent (within 24 hours)</option>
+						<option value="planned">Planned (1-3 business days)</option>
+						<option value="exploratory">Exploratory (no immediate deadline)</option>
+					</select>
+				</label>
+
+				<label class="contact-field">
+					<span>Preferred follow-up channel</span>
+					<select class="contact-input" name="follow_up_channel" data-followup-channel>
+						<option value="">No preference</option>
+						<option value="email">Email</option>
+						<option value="phone">Phone call</option>
+						<option value="signal-whatsapp">Signal / WhatsApp</option>
+						<option value="video">Video call</option>
+					</select>
+				</label>
 			</div>
+
+			<p class="contact-urgency-note mt-3" data-urgency-note>Select urgency to set response expectations.</p>
 
 			<div class="contact-intent-brief mt-3" data-intent-brief hidden>
 				<p class="contact-intent-title" data-intent-brief-title></p>
@@ -155,6 +179,32 @@ const contactBreadcrumbSchema = {
 						autocomplete="off"
 						data-intent-window-input
 						placeholder="When do you need this moving?"
+					/>
+				</label>
+			</div>
+
+			<div class="contact-grid mt-3" data-followup-details>
+				<label class="contact-field">
+					<span data-followup-detail-label>Best follow-up detail</span>
+					<input
+						class="contact-input"
+						name="follow_up_details"
+						type="text"
+						autocomplete="off"
+						data-followup-detail-input
+						placeholder="Phone number, handle, or preferred email alias"
+					/>
+				</label>
+
+				<label class="contact-field">
+					<span data-followup-availability-label>Availability window</span>
+					<input
+						class="contact-input"
+						name="availability"
+						type="text"
+						autocomplete="off"
+						data-followup-availability-input
+						placeholder="Best times and timezone for follow-up"
 					/>
 				</label>
 			</div>
@@ -253,6 +303,15 @@ const contactBreadcrumbSchema = {
 		font-size: 0.8rem;
 		line-height: 1.45;
 		color: rgba(226, 232, 240, 0.96);
+	}
+	.contact-urgency-note {
+		margin: 0;
+		padding: 0.58rem 0.65rem;
+		border: 1px solid rgba(71, 85, 105, 0.75);
+		background: rgba(15, 23, 42, 0.58);
+		font-size: 0.78rem;
+		line-height: 1.35;
+		color: rgba(186, 200, 220, 0.95);
 	}
 	.contact-submit {
 		min-height: 2.15rem;

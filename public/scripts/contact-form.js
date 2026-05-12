@@ -19,6 +19,13 @@
 	const briefTitleEl = form.querySelector('[data-intent-brief-title]');
 	const briefPointsEl = form.querySelector('[data-intent-brief-points]');
 	const followupPanelEl = form.querySelector('[data-intent-followups]');
+	const urgencySelect = form.querySelector('[data-contact-urgency]');
+	const urgencyNoteEl = form.querySelector('[data-urgency-note]');
+	const followupChannelSelect = form.querySelector('[data-followup-channel]');
+	const followupDetailLabelEl = form.querySelector('[data-followup-detail-label]');
+	const followupDetailInputEl = form.querySelector('[data-followup-detail-input]');
+	const followupAvailabilityLabelEl = form.querySelector('[data-followup-availability-label]');
+	const followupAvailabilityInputEl = form.querySelector('[data-followup-availability-input]');
 
 	const loadedAt = Date.now();
 	let started = false;
@@ -33,6 +40,11 @@
 		messageLabel: 'Project brief',
 		messagePlaceholder: 'Context, mission outcome, timeline, constraints, and what success looks like.',
 		submitLabel: 'Send request',
+		urgencyNote: 'Select urgency to set response expectations.',
+		followupDetailLabel: 'Best follow-up detail',
+		followupDetailPlaceholder: 'Phone number, handle, or preferred email alias',
+		followupAvailabilityLabel: 'Availability window',
+		followupAvailabilityPlaceholder: 'Best times and timezone for follow-up',
 	};
 
 	const intentProfiles = {
@@ -115,6 +127,52 @@
 		},
 	};
 
+	const urgencyProfiles = {
+		critical: {
+			note: 'Critical requests are triaged first. Include blocker, decision owner, and a direct callback route.',
+			subjectTag: 'critical',
+		},
+		urgent: {
+			note: 'Urgent requests target a response within 24 hours. Include your hard deadline and next decision point.',
+			subjectTag: 'urgent',
+		},
+		planned: {
+			note: 'Planned requests are usually handled in 1-3 business days with a scoped next-step recommendation.',
+			subjectTag: 'planned',
+		},
+		exploratory: {
+			note: 'Exploratory requests are ideal for roadmap shaping. Share mission context and timing flexibility.',
+			subjectTag: 'exploratory',
+		},
+	};
+
+	const followupChannelProfiles = {
+		email: {
+			detailLabel: 'Best email address',
+			detailPlaceholder: 'you@company.com',
+			availabilityLabel: 'Reply window',
+			availabilityPlaceholder: 'Any constraints on when email follow-up is best?',
+		},
+		phone: {
+			detailLabel: 'Best callback number',
+			detailPlaceholder: '+1 (###) ###-####',
+			availabilityLabel: 'Best call window',
+			availabilityPlaceholder: 'e.g., Weekdays 13:00-16:00 ET',
+		},
+		'signal-whatsapp': {
+			detailLabel: 'Signal / WhatsApp number',
+			detailPlaceholder: '+1 (###) ###-#### or handle',
+			availabilityLabel: 'Preferred message window',
+			availabilityPlaceholder: 'e.g., Text anytime before 21:00 ET',
+		},
+		video: {
+			detailLabel: 'Preferred meeting email',
+			detailPlaceholder: 'Address to receive calendar invite',
+			availabilityLabel: 'Preferred meeting windows',
+			availabilityPlaceholder: 'e.g., Tue/Thu mornings ET',
+		},
+	};
+
 	const track = (name, props) => {
 		try {
 			if (typeof window.__track === 'function') window.__track(name, props);
@@ -139,6 +197,37 @@
 	};
 
 	const getIntentProfile = (intent) => intentProfiles[(intent || '').toLowerCase()] || null;
+	const getUrgencyProfile = (urgency) => urgencyProfiles[(urgency || '').toLowerCase()] || null;
+	const getFollowupChannelProfile = (channel) => followupChannelProfiles[(channel || '').toLowerCase()] || null;
+
+	const applyUrgencyProfile = (urgency) => {
+		const profile = getUrgencyProfile(urgency);
+		if (!urgencyNoteEl) return;
+		urgencyNoteEl.textContent = profile?.note || defaultFieldCopy.urgencyNote;
+	};
+
+	const applyFollowupChannelProfile = (channel) => {
+		const profile = getFollowupChannelProfile(channel);
+		if (followupDetailLabelEl) {
+			followupDetailLabelEl.textContent = profile?.detailLabel || defaultFieldCopy.followupDetailLabel;
+		}
+		if (followupDetailInputEl) {
+			followupDetailInputEl.placeholder = profile?.detailPlaceholder || defaultFieldCopy.followupDetailPlaceholder;
+		}
+		if (followupAvailabilityLabelEl) {
+			followupAvailabilityLabelEl.textContent =
+				profile?.availabilityLabel || defaultFieldCopy.followupAvailabilityLabel;
+		}
+		if (followupAvailabilityInputEl) {
+			followupAvailabilityInputEl.placeholder =
+				profile?.availabilityPlaceholder || defaultFieldCopy.followupAvailabilityPlaceholder;
+		}
+	};
+
+	const getUrgencySubjectTag = (urgency) => {
+		const profile = getUrgencyProfile(urgency);
+		return profile?.subjectTag ? `[${profile.subjectTag}] ` : '';
+	};
 
 	const getSubmitLabel = () => {
 		const profile = getIntentProfile(currentIntent);
@@ -203,6 +292,8 @@
 
 	const initialIntent = prefillIntentFromQuery();
 	applyIntentProfile(initialIntent, { prefillTemplate: Boolean(initialIntent) });
+	applyUrgencyProfile(String(urgencySelect?.value || ''));
+	applyFollowupChannelProfile(String(followupChannelSelect?.value || ''));
 	track('Contact Form: View');
 
 	if (messageInputEl) {
@@ -216,6 +307,22 @@
 			const nextIntent = String(intentSelect.value || '').trim();
 			applyIntentProfile(nextIntent, { prefillTemplate: true });
 			if (nextIntent) track('Contact Form: Intent Selected', { intent: nextIntent });
+		});
+	}
+
+	if (urgencySelect) {
+		urgencySelect.addEventListener('change', () => {
+			const urgency = String(urgencySelect.value || '').trim();
+			applyUrgencyProfile(urgency);
+			if (urgency) track('Contact Form: Urgency Selected', { urgency });
+		});
+	}
+
+	if (followupChannelSelect) {
+		followupChannelSelect.addEventListener('change', () => {
+			const channel = String(followupChannelSelect.value || '').trim();
+			applyFollowupChannelProfile(channel);
+			track('Contact Form: Follow-up Channel Selected', { channel: channel || 'none' });
 		});
 	}
 
@@ -236,6 +343,8 @@
 		const name = String(data.get('name') || '').trim();
 		const email = String(data.get('email') || '').trim();
 		const intent = String(data.get('intent') || '').trim();
+		const urgency = String(data.get('urgency') || '').trim();
+		const followUpChannel = String(data.get('follow_up_channel') || '').trim();
 		const message = String(data.get('message') || '').trim();
 		const spamTrap = String(data.get('website') || '').trim();
 		const elapsedMs = Date.now() - loadedAt;
@@ -245,6 +354,8 @@
 			setStatus('Thanks. Your request was received.', 'success');
 			form.reset();
 			applyIntentProfile('');
+			applyUrgencyProfile('');
+			applyFollowupChannelProfile('');
 			messageEdited = false;
 			return;
 		}
@@ -255,6 +366,7 @@
 		if (name.length < 2) errors.push('Please enter your name.');
 		if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errors.push('Please enter a valid email address.');
 		if (!intent) errors.push('Please choose the request type.');
+		if (!urgency) errors.push('Please choose urgency so I can triage correctly.');
 		if (message.length < 20) errors.push('Please provide at least a short project brief (20+ characters).');
 
 		if (errors.length) {
@@ -266,16 +378,20 @@
 
 		setSubmitting(true);
 		setStatus('Sending request…', 'neutral');
-		track('Contact Form: Submit', { intent });
+		track('Contact Form: Submit', {
+			intent,
+			urgency: urgency || 'unspecified',
+			followUpChannel: followUpChannel || 'none',
+		});
 
-		data.set('_subject', `${subjectPrefix} lead: ${intent}`);
+		data.set('_subject', `${subjectPrefix} ${getUrgencySubjectTag(urgency)}lead: ${intent}`.trim());
 		data.set('_captcha', 'false');
 		data.set('_template', 'table');
 
 		if (!submitEndpoint) {
 			setStatus('Contact endpoint is not configured. Use direct email below.', 'error');
 			setErrors(['Missing contact endpoint configuration.']);
-			track('Contact Form: Error', { intent, reason: 'misconfigured-endpoint' });
+			track('Contact Form: Error', { intent, urgency, reason: 'misconfigured-endpoint' });
 			setSubmitting(false);
 			return;
 		}
@@ -293,15 +409,17 @@
 			}
 
 			setStatus('Request sent. You should hear back shortly.', 'success');
-			track('Contact Form: Success', { intent });
+			track('Contact Form: Success', { intent, urgency, followUpChannel: followUpChannel || 'none' });
 			form.reset();
 			const resetIntent = prefillIntentFromQuery();
 			applyIntentProfile(resetIntent, { prefillTemplate: Boolean(resetIntent) });
+			applyUrgencyProfile('');
+			applyFollowupChannelProfile('');
 			messageEdited = false;
 		} catch (error) {
 			setStatus('Could not send automatically. Use the email link below.', 'error');
 			setErrors(['Automatic submit failed. Please use direct email below.']);
-			track('Contact Form: Error', { intent, reason: 'network' });
+			track('Contact Form: Error', { intent, urgency, reason: 'network' });
 		} finally {
 			setSubmitting(false);
 		}
