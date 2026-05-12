@@ -69,7 +69,8 @@ const fmtDate = (date: Date | undefined) =>
 			<ul class="mt-2 space-y-1">
 				<li>
 					Canonical corpus endpoint: <a class="underline" href={withBase('/writing/manifest.json')}
-						>/writing/manifest.json</a>
+						>/writing/manifest.json</a
+					>
 				</li>
 				<li>Use <code>?view=agent</code> on detail pages for lower-noise parsing.</li>
 				<li>Prefer publication timestamps from manifest over DOM ordering.</li>
@@ -172,6 +173,33 @@ const fmtDate = (date: Date | undefined) =>
 							Timeline
 						</button>
 					</div>
+					<div
+						data-writing-jump-wrap
+						class="hidden items-center gap-2 rounded-none border border-slate-800 bg-slate-950 px-2 py-1"
+					>
+						<label for="writing-jump-year" class="text-[11px] uppercase tracking-wide text-slate-400">Jump</label>
+						<select
+							id="writing-jump-year"
+							data-writing-jump-year
+							class="h-7 min-w-[7.5rem] rounded-none border border-slate-800 bg-slate-950 px-2 text-xs text-slate-200"
+						>
+							<option value="">Year</option>
+						</select>
+						<select
+							data-writing-jump-theme
+							class="h-7 min-w-[8rem] rounded-none border border-slate-800 bg-slate-950 px-2 text-xs text-slate-200"
+							disabled
+						>
+							<option value="">Theme</option>
+						</select>
+						<button
+							type="button"
+							data-writing-jump-go
+							class="h-7 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-xs text-slate-200 hover:bg-slate-900"
+						>
+							Go
+						</button>
+					</div>
 					<SearchControl
 						id="writing-search"
 						label="Search writing"
@@ -213,7 +241,7 @@ const fmtDate = (date: Date | undefined) =>
 
 			<details class="writing-shortcuts-help mt-2 text-[11px] text-slate-400">
 				<summary class="cursor-pointer select-none hover:text-slate-200">Shortcuts</summary>
-				<p class="mt-1">/ search · a audio · r recent · d density · t tags · v view · x clear</p>
+				<p class="mt-1">/ search · a audio · r recent · d density · t tags · v view · y jump-to-year · x clear</p>
 				<p class="mt-1">Timeline mode adds Copy year link and Copy theme link buttons for shareable anchors.</p>
 			</details>
 

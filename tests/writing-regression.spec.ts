@@ -79,7 +79,9 @@ test.describe('writing controls regression', () => {
 	});
 
 	test('timeline section links copy hash and auto-open timeline from shared URL', async ({ page }) => {
-		await page.goto(`${BASE}/writing/?view=timeline&types=paper,note,memo&audio=0&recent=0`, { waitUntil: 'networkidle' });
+		await page.goto(`${BASE}/writing/?view=timeline&types=paper,note,memo&audio=0&recent=0`, {
+			waitUntil: 'networkidle',
+		});
 
 		const yearCopy = page.locator('[data-writing-timeline-copy-link^="timeline-year-"]').first();
 		const hashId = await yearCopy.getAttribute('data-writing-timeline-copy-link');
@@ -91,5 +93,30 @@ test.describe('writing controls regression', () => {
 		await page.goto(`${BASE}/writing/#${hashId}`, { waitUntil: 'networkidle' });
 		await expect(page.locator('[data-writing-view-toggle="timeline"]')).toHaveAttribute('aria-pressed', 'true');
 		await expect(page.locator(`#${hashId}`)).toBeVisible();
+	});
+
+	test('timeline jump controls navigate to year and theme anchors', async ({ page }) => {
+		await page.goto(`${BASE}/writing/?view=timeline`, { waitUntil: 'networkidle' });
+
+		const jumpWrap = page.locator('[data-writing-jump-wrap]');
+		await expect(jumpWrap).toBeVisible();
+
+		const yearSelect = page.locator('[data-writing-jump-year]');
+		const themeSelect = page.locator('[data-writing-jump-theme]');
+		const goBtn = page.locator('[data-writing-jump-go]');
+
+		const yearHash = await yearSelect.inputValue();
+		expect(yearHash).toContain('timeline-year-');
+		await goBtn.click();
+		await expect.poll(() => page.url()).toContain(`#${yearHash}`);
+
+		const themeCount = await themeSelect.locator('option').count();
+		if (themeCount > 1) {
+			await themeSelect.selectOption({ index: 1 });
+			const themeHash = await themeSelect.inputValue();
+			expect(themeHash).toContain('timeline-theme-');
+			await goBtn.click();
+			await expect.poll(() => page.url()).toContain(`#${themeHash}`);
+		}
 	});
 });

@@ -175,11 +175,16 @@ if (!root) {
 	const tagsToggleBtn = root.querySelector('[data-writing-tags-toggle]');
 	const quickBtns = [...root.querySelectorAll('[data-writing-quick]')];
 	const densityBtns = [...root.querySelectorAll('[data-writing-density-toggle]')];
+	const jumpWrap = root.querySelector('[data-writing-jump-wrap]');
+	const jumpYearSelect = root.querySelector('[data-writing-jump-year]');
+	const jumpThemeSelect = root.querySelector('[data-writing-jump-theme]');
+	const jumpGoBtn = root.querySelector('[data-writing-jump-go]');
 
 	let currentPage = 1;
 	let currentTotalPages = 1;
 	let currentView = DEFAULT_VIEW;
 	let pendingTimelineHash = null;
+	let timelineJumpIndex = [];
 	const quickState = { hasAudio: false, recent30: false };
 	const dateFormatter = new Intl.DateTimeFormat(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
 
@@ -211,6 +216,7 @@ if (!root) {
 		}
 		list?.classList.toggle('hidden', currentView !== 'cards');
 		timeline?.classList.toggle('hidden', currentView !== 'timeline');
+		renderTimelineJumpControls();
 	}
 
 	function getViewMode() {
@@ -223,6 +229,57 @@ if (!root) {
 		return url.toString();
 	}
 
+	function updateJumpThemeOptions(selectedYearHash, preferredHash = null) {
+		if (!jumpThemeSelect) return;
+		jumpThemeSelect.innerHTML = '';
+		const placeholder = document.createElement('option');
+		placeholder.value = '';
+		placeholder.textContent = 'Theme';
+		jumpThemeSelect.appendChild(placeholder);
+
+		const yearEntry = timelineJumpIndex.find((entry) => entry.yearHashId === selectedYearHash);
+		if (!yearEntry || !yearEntry.themes.length) {
+			jumpThemeSelect.disabled = true;
+			jumpThemeSelect.value = '';
+			return;
+		}
+
+		for (const themeEntry of yearEntry.themes) {
+			const option = document.createElement('option');
+			option.value = themeEntry.hashId;
+			option.textContent = `${themeEntry.theme} (${themeEntry.count})`;
+			jumpThemeSelect.appendChild(option);
+		}
+		jumpThemeSelect.disabled = false;
+		if (preferredHash && yearEntry.themes.some((theme) => theme.hashId === preferredHash)) {
+			jumpThemeSelect.value = preferredHash;
+		}
+	}
+
+	function syncJumpControlsFromHash(hashId) {
+		if (!jumpYearSelect || !hashId) return;
+		const yearEntry = timelineJumpIndex.find(
+			(entry) => entry.yearHashId === hashId || entry.themes.some((theme) => theme.hashId === hashId),
+		);
+		if (!yearEntry) return;
+		jumpYearSelect.value = yearEntry.yearHashId;
+		updateJumpThemeOptions(yearEntry.yearHashId, hashId.startsWith(TIMELINE_THEME_PREFIX) ? hashId : null);
+	}
+
+	function scrollToTimelineHash(hashId, { smooth = true } = {}) {
+		if (!hashId || getViewMode() !== 'timeline') return false;
+		const anchorTarget = document.getElementById(hashId);
+		if (!anchorTarget) return false;
+		anchorTarget.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+		anchorTarget.classList.add('timeline-anchor-hit');
+		window.setTimeout(() => anchorTarget.classList.remove('timeline-anchor-hit'), 1400);
+		if (window.location.hash !== `#${hashId}`) {
+			window.location.hash = hashId;
+		}
+		syncJumpControlsFromHash(hashId);
+		return true;
+	}
+
 	async function copySectionUrl(hashId) {
 		const shareUrl = buildShareUrl(hashId);
 		try {
@@ -232,18 +289,51 @@ if (!root) {
 		} catch {
 			// clipboard may be blocked by browser settings
 		}
-		window.location.hash = hashId;
+		scrollToTimelineHash(hashId);
 	}
 
 	function focusTimelineAnchorFromHash() {
 		const hashId = getHashId(window.location.hash) || pendingTimelineHash;
 		if (!hashId || getViewMode() !== 'timeline') return;
-		const anchorTarget = document.getElementById(hashId);
-		if (!anchorTarget) return;
+		if (!scrollToTimelineHash(hashId)) return;
 		pendingTimelineHash = null;
-		anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
-		anchorTarget.classList.add('timeline-anchor-hit');
-		window.setTimeout(() => anchorTarget.classList.remove('timeline-anchor-hit'), 1400);
+	}
+
+	function renderTimelineJumpControls(preferredHash = null) {
+		if (!jumpWrap || !jumpYearSelect) return;
+		const canShow = getViewMode() === 'timeline' && timelineJumpIndex.length > 0;
+		jumpWrap.classList.toggle('hidden', !canShow);
+		jumpWrap.classList.toggle('inline-flex', canShow);
+		if (!canShow) {
+			if (jumpYearSelect) jumpYearSelect.innerHTML = '<option value="">Year</option>';
+			if (jumpThemeSelect) {
+				jumpThemeSelect.innerHTML = '<option value="">Theme</option>';
+				jumpThemeSelect.disabled = true;
+			}
+			return;
+		}
+
+		const priorYear = jumpYearSelect.value;
+		jumpYearSelect.innerHTML = '';
+		for (const entry of timelineJumpIndex) {
+			const option = document.createElement('option');
+			option.value = entry.yearHashId;
+			option.textContent = `${entry.yearLabel} (${entry.count})`;
+			jumpYearSelect.appendChild(option);
+		}
+
+		const targetHash = preferredHash || getHashId(window.location.hash) || pendingTimelineHash;
+		if (targetHash) {
+			syncJumpControlsFromHash(targetHash);
+			return;
+		}
+
+		const fallbackYear = timelineJumpIndex.some((entry) => entry.yearHashId === priorYear)
+			? priorYear
+			: timelineJumpIndex[0]?.yearHashId;
+		if (!fallbackYear) return;
+		jumpYearSelect.value = fallbackYear;
+		updateJumpThemeOptions(fallbackYear);
 	}
 
 	function setTagVisibility(showTags, { persist = false } = {}) {
@@ -471,7 +561,11 @@ if (!root) {
 	function renderTimeline(matches) {
 		if (!timeline) return;
 		timeline.innerHTML = '';
-		if (matches.length === 0) return;
+		timelineJumpIndex = [];
+		if (matches.length === 0) {
+			renderTimelineJumpControls();
+			return;
+		}
 
 		const years = new Map();
 		for (const el of matches) {
@@ -526,6 +620,7 @@ if (!root) {
 			const themesWrap = document.createElement('div');
 			themesWrap.className = 'flex flex-wrap gap-2';
 			const themeKeys = [...themes.keys()].sort((a, b) => a.localeCompare(b));
+			const themeEntries = [];
 			for (const theme of themeKeys) {
 				const entries = themes.get(theme) || [];
 				const group = document.createElement('div');
@@ -578,11 +673,24 @@ if (!root) {
 
 				group.append(themeHeader, entryList);
 				themesWrap.appendChild(group);
+				themeEntries.push({
+					theme,
+					hashId: themeHashId,
+					count: entries.length,
+				});
 			}
 
 			yearBlock.appendChild(themesWrap);
 			timeline.appendChild(yearBlock);
+			timelineJumpIndex.push({
+				yearLabel: year,
+				yearHashId,
+				count: totalInYear,
+				themes: themeEntries,
+			});
 		}
+
+		renderTimelineJumpControls();
 	}
 
 	function applyFilter({ preservePage = false } = {}) {
@@ -731,6 +839,22 @@ if (!root) {
 		});
 	}
 
+	jumpYearSelect?.addEventListener('change', () => {
+		const yearHash = jumpYearSelect.value;
+		updateJumpThemeOptions(yearHash);
+	});
+
+	jumpGoBtn?.addEventListener('click', () => {
+		if (getViewMode() !== 'timeline') {
+			setViewMode('timeline');
+			currentPage = 1;
+			applyFilter({ preservePage: true });
+		}
+		const targetHash = jumpThemeSelect?.value || jumpYearSelect?.value;
+		if (!targetHash) return;
+		scrollToTimelineHash(targetHash);
+	});
+
 	pageFirst?.addEventListener('click', () => {
 		if (currentPage <= 1) return;
 		currentPage = 1;
@@ -827,6 +951,17 @@ if (!root) {
 			event.preventDefault();
 			const showTags = tagsToggleBtn.getAttribute('aria-pressed') !== 'true';
 			setTagVisibility(showTags, { persist: true });
+			return;
+		}
+
+		if (key === 'y' && jumpYearSelect) {
+			event.preventDefault();
+			if (getViewMode() !== 'timeline') {
+				setViewMode('timeline');
+				currentPage = 1;
+				applyFilter({ preservePage: true });
+			}
+			jumpYearSelect.focus();
 			return;
 		}
 
