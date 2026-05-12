@@ -10,7 +10,7 @@
 
 ## Shipped (date, area, commit)
 
-- 2026-05-12 — Writing UX — Added timeline jump controls on `/writing/` with year/theme quick navigation, `Go` anchor routing, hash-synced timeline focus, keyboard shortcut (`y`) for jump targeting, and Playwright regression coverage for year/theme anchor navigation. Commit: `this commit`
+- 2026-05-12 — Writing UX — Added timeline jump controls on `/writing/` with year/theme quick navigation, `Go` anchor routing, hash-synced timeline focus, keyboard shortcut (`y`) for jump targeting, and Playwright regression coverage for year/theme anchor navigation. Commit: `98fb49ac0`
 - 2026-05-12 — Contact conversion UX — Added urgency-qualified intake on `/contact/` with response-expectation guidance, preferred follow-up channel routing (email/phone/Signal-WhatsApp/video), adaptive follow-up detail/availability prompts, urgency-aware lead subjects, and Playwright regression coverage for adaptive field behavior + required urgency validation. Commit: `95ab3b189`
 - 2026-05-11 — Writing UX — Added shareable timeline deep-links on `/writing/` with `Copy year link` + `Copy theme link` actions, deterministic year/theme anchor IDs, hash-driven auto-switch to Timeline view, smooth anchor focusing, and regression coverage for shared URL opens. Commit: `3ad7f1a7d`
 - 2026-05-11 — Contact conversion UX — Added intent-adaptive intake prompts on `/contact/` that reveal request-specific guidance, tailored follow-up fields, dynamic brief labels/placeholders, and auto-seeded brief templates when request type is selected. Commit: `8bc7c7bc6`
