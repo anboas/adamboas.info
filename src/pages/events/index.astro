@@ -31,14 +31,23 @@ function isDisallowedSourceUrl(url: string | null | undefined) {
 	return Boolean(host && DISALLOWED_SOURCE_HOSTS.has(host));
 }
 
+function parseEventDate(value: string | null | undefined) {
+	if (!value) return null;
+	if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+		const [year, month, day] = value.split('-').map((part) => Number(part));
+		return new Date(year, month - 1, day);
+	}
+	const parsed = new Date(value);
+	return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
 function isFutureEventDate(date: string | null | undefined) {
-	if (!date) return false;
-	const parsed = new Date(date);
-	if (Number.isNaN(parsed.getTime())) return false;
+	const parsed = parseEventDate(date);
+	if (!parsed) return false;
 	const targetDay = Date.UTC(parsed.getFullYear(), parsed.getMonth(), parsed.getDate());
 	const now = new Date();
 	const todayDay = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
-	return targetDay > todayDay;
+	return targetDay >= todayDay;
 }
 
 function isUsableExternalUrl(url: string | null | undefined) {
@@ -67,6 +76,7 @@ const events = radarEventsSeed.filter((event) => {
 
 const attendingEventIds = new Set<string>([
 	'radar-sofweek-2026',
+	'radar-intelligence-edge-navair-2026',
 	// Add event ids here to mark attendance in the calendar.
 	// Example: 'radar-defense-it-summit-2026',
 ]);
@@ -117,9 +127,8 @@ const types = [...new Set(events.map((e) => e.type))].sort();
 const statuses = ['Upcoming', 'Projected', 'Needs Date', 'Past'] as const;
 
 function daysUntilValue(date: string | null) {
-	if (!date) return null;
-	const target = new Date(date);
-	if (Number.isNaN(target.getTime())) return null;
+	const target = parseEventDate(date);
+	if (!target) return null;
 	const now = new Date();
 	const targetDay = Date.UTC(target.getFullYear(), target.getMonth(), target.getDate());
 	const nowDay = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
@@ -578,8 +587,9 @@ const feedGeneratedAt = typeof (feedCrawlReport as any)?.generatedAt === 'string
 const driftGeneratedAt = typeof (opportunitiesDrift as any)?.generated_at === 'string' ? (opportunitiesDrift as any).generated_at : null;
 
 function fmtDate(date: string | null) {
-	if (!date) return 'Date pending';
-	return new Date(date).toLocaleDateString(undefined, {
+	const parsed = parseEventDate(date);
+	if (!parsed) return 'Date pending';
+	return parsed.toLocaleDateString(undefined, {
 		year: 'numeric',
 		month: 'short',
 		day: 'numeric',
@@ -962,7 +972,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 						<label class="radar-check"><input id="radar-upcoming-only" type="checkbox" /><span>Upcoming only</span></label>
 						<label class="radar-check"><input id="radar-verified-only" type="checkbox" /><span>High-confidence only</span></label>
 						<label class="radar-check"><input id="radar-new-only" type="checkbox" /><span>New only</span></label>
-						<label class="radar-check"><input id="radar-show-past" type="checkbox" /><span>Show past</span></label>
+						<label class="radar-check"><input id="radar-show-past" type="checkbox" checked /><span>Show past</span></label>
 					</div>
 				</details>
 			</div>
@@ -2131,7 +2141,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		let { visible } = getVisibleCards();
 		let index = visible.findIndex((card) => card.dataset.id === id);
 		if (index < 0) {
-			applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, newOnly: false, showPast: false, topics: new Set(), windowDays: null });
+			applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, newOnly: false, showPast: true, topics: new Set(), windowDays: null });
 			currentPage = 1;
 			render();
 			visible = getVisibleCards().visible;
@@ -2433,7 +2443,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		if (state.upcoming) params.set('upcoming', '1');
 		if (state.verified) params.set('verified', '1');
 		if (state.newOnly) params.set('new', '1');
-		if (state.showPast) params.set('past', '1');
+		if (!state.showPast) params.set('past', '0');
 		if (state.topics?.size) params.set('topics', topicStateToValue(state.topics));
 		if (state.windowDays) params.set('window', String(state.windowDays));
 		if (currentPage > 1) params.set('page', String(currentPage));
@@ -2465,7 +2475,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			state.upcoming ||
 			state.verified ||
 			state.newOnly ||
-			state.showPast ||
+			!state.showPast ||
 			(state.topics && state.topics.size) ||
 			state.windowDays ||
 			(state.sort && state.sort !== 'soonest')
@@ -2486,7 +2496,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			upcoming: params.get('upcoming') === '1',
 			verified: params.get('verified') === '1',
 			newOnly: params.get('new') === '1',
-			showPast: params.get('past') === '1',
+			showPast: params.get('past') !== '0',
 			topics: new Set(parseTopics(params.get('topics') || '')),
 			windowDays: parseWindowDays(params.get('window')),
 		};
@@ -2575,7 +2585,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		if (state.upcoming) count += 1;
 		if (state.verified) count += 1;
 		if (state.newOnly) count += 1;
-		if (state.showPast) count += 1;
+		if (!state.showPast) count += 1;
 		return count;
 	}
 
@@ -2590,7 +2600,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		if (state.upcoming) chips.push('Upcoming only');
 		if (state.verified) chips.push('High-confidence only');
 		if (state.newOnly) chips.push('New only');
-		if (state.showPast) chips.push('Including past');
+		if (!state.showPast) chips.push('Hiding past');
 		if (!chips.length) chips.push('No active filters');
 		filterChips.innerHTML = chips.map((chip) => `<span class="radar-chip">${chip}</span>`).join('');
 	}
@@ -2786,7 +2796,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 		});
 	}
 	controls.reset.addEventListener('click', () => {
-		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, newOnly: false, showPast: false, topics: new Set(), windowDays: null });
+		applyState({ q: '', branch: '', type: '', status: '', sort: 'soonest', upcoming: false, verified: false, newOnly: false, showPast: true, topics: new Set(), windowDays: null });
 		currentPage = 1;
 		render();
 	});
