@@ -17158,4 +17158,118 @@ export const radarEventsSeed: RadarEvent[] = [
 			}
 		}
 	},
+	{
+		id: 'radar-maritime-security-summit-2026',
+		title: 'Maritime Security Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-07-15',
+		endDate: '2026-07-16',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'Washington',
+			state: 'DC',
+			country: 'USA',
+			lat: 38.8950368,
+			lng: -77.0365427
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['maritime', 'security', 'summit', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=26025'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
+	{
+		id: 'radar-veterans-healthcare-summit-2026',
+		title: 'Veterans Healthcare Summit 2026',
+		description: 'ASD Events sourced event for defense ecosystem tracking and engagement planning.',
+		startDate: '2026-07-28',
+		endDate: '2026-07-29',
+		branch: 'Joint',
+		type: 'Summit',
+		status: 'Upcoming',
+		signal: 'Medium',
+		effort: 'Low',
+		location: 
+		{
+			city: 'National Harbor',
+			state: 'MD',
+			country: 'USA',
+			lat: 38.783342,
+			lng: -77.0148285
+		},
+		ontology: 
+		{
+			themes: ['Defense conference monitoring', 'Opportunity timing', 'Ecosystem engagement'],
+			capabilityAreas: ['Acquisition', 'Mission systems', 'Digital modernization'],
+			missionThreads: ['Partnership development', 'Program sensing'],
+			stakeholders: ['Joint stakeholders', 'Program offices', 'Industry partners'],
+			keywords: ['veterans', 'healthcare', 'summit', '2026'],
+			relatedPrograms: ['Radar expansion'],
+			decisionWindows: 
+			{
+				discovery: 'Now to T-90 days',
+				prep: 'T-60 to T-14 days',
+				execution: 'Event window + 14-day follow-up'
+			},
+			provenance: [
+			{
+				name: 'ASD Events',
+				url: 'https://www.asdevents.com/defense-security',
+				type: 'aggregator',
+				lastVerified: '2026-02-13',
+				confidence: 'High'
+			}],
+			links: 
+			{
+				official: 'https://www.asdevents.com/event.asp?id=25977'
+			},
+			logistics: 
+			{
+				format: 'In-person',
+				estimatedCostUsd: 
+				{
+					min: 100,
+					max: 900
+				},
+				travelBurdenFromDc: 'Low'
+			}
+		}
+	},
 ];
