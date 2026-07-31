@@ -107,20 +107,36 @@ const rows = capabilityTopics.map((capability) => {
 ---
 
 <SiteLayout
-	title="Capabilities: AI, Cloud, DevSecOps, Cybersecurity | Adam Boas"
-	description="Capability map for AI autonomy, cloud platforms, DevSecOps delivery, cybersecurity, analytics, and proposal support, with linked writing and market intelligence surfaces."
+	title="Capabilities: Defense Technology Strategy & Modernization | Adam Boas"
+	description="Executive capability map for defense technology strategy, mission and digital engineering, software modernization, governed AI, transition, capture, and enterprise governance."
 	canonicalHref={absoluteUrl('/capabilities/')}
 	image="/og/capabilities.png"
 >
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'ItemList',
+			name: 'Adam Boas Capability Map',
+			itemListElement: rows.map((capability, idx) => ({
+				'@type': 'ListItem',
+				position: idx + 1,
+				url: absoluteUrl(`/capabilities/${capability.slug}/`),
+				name: capability.title,
+				description: capability.valueProposition,
+			})),
+		})}
+	/>
 	<SurfacePageHeader
 		stickyActive="capabilities"
 		eyebrow="Capability map"
-		title="Capabilities & Topics"
-		description="Explore focus areas across published writing, upcoming events, and opportunity intelligence."
+		title="Capabilities"
+		description="Outcome-oriented capability areas across strategy, mission systems, digital engineering, modernization, governed AI, transition, capture, and enterprise policy."
 	>
-		<a slot="actions" class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}
-			>Start project</a
-		>
+		<div slot="actions" class="flex flex-wrap gap-2">
+			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/strategic-work/')}>View strategic work</a>
+			<a class="ui-link-btn" href={withBase('/contact/')}>Contact</a>
+		</div>
 	</SurfacePageHeader>
 
 	<section class="mt-4 grid gap-4 md:mt-5 md:grid-cols-2 xl:grid-cols-3">
@@ -129,14 +145,33 @@ const rows = capabilityTopics.map((capability) => {
 				<article class="card p-4 capability-card flex h-full flex-col">
 					<h2 class="text-base font-semibold text-slate-50 wrap-anywhere">{capability.title}</h2>
 					<p class="mt-2 text-sm text-slate-300 wrap-anywhere">{capability.summary}</p>
-					<div class="mt-3 flex flex-wrap gap-2">
+					<p class="mt-3 text-sm leading-relaxed text-slate-200 wrap-anywhere">{capability.valueProposition}</p>
+					<div class="mt-4 grid gap-3 text-sm md:grid-cols-2 xl:grid-cols-1">
+						<div>
+							<p class="cap-kicker">Representative activities</p>
+							<ul class="mt-2 space-y-1.5 text-slate-300">
+								{capability.activities.slice(0, 3).map((item) => (
+									<li class="leading-snug wrap-anywhere">{item}</li>
+								))}
+							</ul>
+						</div>
+						<div>
+							<p class="cap-kicker">Relevant evidence</p>
+							<ul class="mt-2 space-y-1.5 text-slate-300">
+								{capability.evidence.slice(0, 2).map((item) => (
+									<li class="leading-snug wrap-anywhere">{item}</li>
+								))}
+							</ul>
+						</div>
+					</div>
+					<div class="mt-4 flex flex-wrap gap-2">
 						<span class="ui-pill">Writing: {capability.writingCount}</span>
 						<span class="ui-pill">Events: {capability.eventCount}</span>
 						<span class="ui-pill">Opps: {capability.opportunityCount}</span>
 					</div>
 					<div class="mt-auto flex flex-wrap gap-2 pt-4">
 						<a class="ui-link-btn ui-link-btn-primary" href={withBase(`/capabilities/${capability.slug}/`)}>
-							Open topic
+							Open capability
 						</a>
 						<a
 							class="ui-link-btn ui-link-btn-muted"
@@ -155,6 +190,12 @@ const rows = capabilityTopics.map((capability) => {
 	.capability-card {
 		border: 1px solid rgba(51, 65, 85, 0.86);
 		background: rgba(2, 6, 23, 0.86);
+	}
+	.cap-kicker {
+		font-size: 0.62rem;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(148, 163, 184, 0.94);
 	}
 	/* shared pills/buttons use global .ui-pill and .ui-link-btn */
 </style>

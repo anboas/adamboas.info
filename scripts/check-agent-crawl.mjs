@@ -29,11 +29,15 @@ async function run() {
 	const agents = await getJson(agentsPath);
 	assert(Array.isArray(agents.preferred_ingestion_order), 'agents missing preferred_ingestion_order');
 
-	const priorityPath = asPath(agents.preferred_ingestion_order.find((u) => String(u).includes('/agent-priority.json')) || '/agent-priority.json');
+	const priorityPath = asPath(
+		agents.preferred_ingestion_order.find((u) => String(u).includes('/agent-priority.json')) || '/agent-priority.json',
+	);
 	const priority = await getJson(priorityPath);
 	assert(Array.isArray(priority.ingestion_tiers) && priority.ingestion_tiers.length > 0, 'priority tiers missing');
 
-	const tieredEndpoints = new Set(priority.ingestion_tiers.flatMap((t) => Array.isArray(t.endpoints) ? t.endpoints : []));
+	const tieredEndpoints = new Set(
+		priority.ingestion_tiers.flatMap((t) => (Array.isArray(t.endpoints) ? t.endpoints : [])),
+	);
 
 	const mustReach = [
 		'/writing/agent.json',
@@ -63,7 +67,10 @@ async function run() {
 	}
 
 	const combined = await getJson('/opportunities/export.json');
-	assert(combined.exports?.sam && combined.exports?.sam_core && combined.exports?.sbir, 'combined export missing per-source links');
+	assert(
+		combined.exports?.sam && combined.exports?.sam_core && combined.exports?.sbir,
+		'combined export missing per-source links',
+	);
 	await getJson(asPath(combined.exports.sam));
 	await getJson(asPath(combined.exports.sam_core));
 	await getJson(asPath(combined.exports.sbir));

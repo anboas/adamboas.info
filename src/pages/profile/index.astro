@@ -47,7 +47,7 @@ const profilePageSchema = {
 	'@type': 'ProfilePage',
 	name: `${PERSON_NAME} Profile`,
 	url: profileUrl,
-	description: `Career background, speaking engagements, and credentials for ${PERSON_NAME}.`,
+	description: `Defense technology strategy, software modernization, technical capture, mission systems, speaking, and credentials for ${PERSON_NAME}.`,
 	mainEntity: {
 		'@id': personId,
 	},
@@ -119,8 +119,8 @@ const profileBreadcrumbSchema = {
 ---
 
 <SiteLayout
-	title="Profile | Adam Boas"
-	description="Career background, speaking engagements, and credentials for Adam Boas."
+	title="Defense Technology Strategy Profile | Adam Boas"
+	description="Career background for Adam Boas across defense technology strategy, DoD software policy, Navy modernization, technical capture, mission systems, governed AI, speaking, and credentials."
 	image="/og/profile.png"
 >
 	<script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />
@@ -158,6 +158,59 @@ const profileBreadcrumbSchema = {
 			<p class="text-sm leading-relaxed text-slate-300">
 				{PERSON_DESCRIPTION}
 			</p>
+		</div>
+	</section>
+
+	<section class="card mt-4 p-4 md:mt-5">
+		<h2 class="section-title">Strategic Profile</h2>
+		<div class="mt-3 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+			<article class="profile-proof-cell">
+				<p class="profile-proof-kicker">Current focus</p>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					KBR Solutions Architect and senior technical strategist supporting enterprise strategy, solution
+					architecture, capture, technical proposals, emerging-technology assessment, and modernization initiatives.
+				</p>
+			</article>
+			<article class="profile-proof-cell">
+				<p class="profile-proof-kicker">Enterprise policy</p>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Previous DoD CIO Information Enterprise support spanning software modernization policy, DevSecOps guidance,
+					AI4SDLC governance, cloud, acquisition, and enterprise stakeholder coordination.
+				</p>
+			</article>
+			<article class="profile-proof-cell">
+				<p class="profile-proof-kicker">Mission systems</p>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Navy and Marine Corps experience across PEO Digital, NAVAIR, mission engineering, systems engineering,
+					cloud, software, data, and modernization.
+				</p>
+			</article>
+			<article class="profile-proof-cell">
+				<p class="profile-proof-kicker">Growth and capture</p>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Technical capture, proposal solutioning, white-paper development, strategic opportunity shaping, partner
+					alignment, and differentiated solution architecture.
+				</p>
+			</article>
+			<article class="profile-proof-cell">
+				<p class="profile-proof-kicker">Governed AI</p>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Public architecture and writing on agent control planes, delegated authority, continuous assurance, governed
+					autonomy, and contested or degraded operations.
+				</p>
+			</article>
+			<article class="profile-proof-cell">
+				<p class="profile-proof-kicker">Public voice</p>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Public speaking and thought leadership on software modernization, AI governance, cyber, DevSecOps, and
+					defense technology implementation.
+				</p>
+			</article>
+		</div>
+		<div class="mt-4 flex flex-wrap gap-2">
+			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/strategic-work/')}>Selected strategic work</a>
+			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/capabilities/')}>Capabilities</a>
+			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/writing/')}>Writing</a>
 		</div>
 	</section>
 
@@ -390,6 +443,20 @@ const profileBreadcrumbSchema = {
 		border: 1px solid rgba(71, 85, 105, 0.9);
 		background: rgba(2, 6, 23, 0.85);
 		flex: 0 0 auto;
+	}
+
+	.profile-proof-cell {
+		border: 1px solid rgba(51, 65, 85, 0.78);
+		background: rgba(2, 6, 23, 0.72);
+		padding: 0.85rem;
+	}
+
+	.profile-proof-kicker {
+		font-size: 0.62rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(148, 163, 184, 0.94);
 	}
 
 	.profile-modal-trigger {

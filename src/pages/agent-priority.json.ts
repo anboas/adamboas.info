@@ -40,6 +40,7 @@ export const GET: APIRoute = () => {
 				tier: 2,
 				reason: 'High-value authored and profile surfaces',
 				endpoints: [
+					absoluteUrl('/strategic-work/'),
 					absoluteUrl('/writing/'),
 					absoluteUrl('/profile/'),
 					absoluteUrl('/capabilities/'),

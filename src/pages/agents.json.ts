@@ -20,6 +20,7 @@ export const GET: APIRoute = () => {
 		},
 		capabilities: [
 			'profile-intel',
+			'strategic-work-evidence',
 			'writing-corpus',
 			'event-intelligence',
 			'opportunity-intelligence',
@@ -39,6 +40,7 @@ export const GET: APIRoute = () => {
 			absoluteUrl('/opportunities/freshness.json'),
 			absoluteUrl('/opportunities/lineage.json'),
 			absoluteUrl('/writing/'),
+			absoluteUrl('/strategic-work/'),
 			absoluteUrl('/capabilities/'),
 			absoluteUrl('/events/'),
 			absoluteUrl('/opportunities/'),
@@ -46,6 +48,7 @@ export const GET: APIRoute = () => {
 		],
 		resources: [
 			{ id: 'writing-manifest', type: 'manifest', url: absoluteUrl('/writing/manifest.json') },
+			{ id: 'strategic-work', type: 'surface', url: absoluteUrl('/strategic-work/') },
 			{ id: 'writing-surface-map', type: 'surface-map', url: absoluteUrl('/writing/agent.json') },
 			{ id: 'events-surface-map', type: 'surface-map', url: absoluteUrl('/events/agent.json') },
 			{ id: 'opportunities-surface-map', type: 'surface-map', url: absoluteUrl('/opportunities/agent.json') },

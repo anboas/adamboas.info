@@ -4,9 +4,11 @@ const BASE = process.env.SITE_BASE ?? 'https://www.adamboas.com';
 
 const paths = [
 	'/',
+	'/strategic-work/',
 	'/writing/',
 	'/writing/agentic-force-creation/',
 	'/writing/acp-ra/',
+	'/capabilities/defense-technology-strategy/',
 	'/events/',
 	'/changes/',
 	'/experience/',
