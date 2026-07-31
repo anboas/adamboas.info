@@ -12,6 +12,8 @@ const trackedFiles = [
 	'src/pages/llms-full.txt.ts',
 	'src/pages/agents.json.ts',
 	'src/pages/agent-priority.json.ts',
+	'src/pages/strategic-work/index.astro',
+	'src/data/strategicWork.ts',
 	'src/pages/changes.json.ts',
 	'src/pages/changes.jsonl.ts',
 	'src/pages/integrity.json.ts',

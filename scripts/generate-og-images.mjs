@@ -27,12 +27,13 @@ const accentByType = {
 };
 
 const capabilityCards = [
-	{ slug: 'ai-autonomy', title: 'AI & Trusted Autonomy' },
-	{ slug: 'cybersecurity', title: 'Cybersecurity & Zero Trust' },
-	{ slug: 'cloud-platforms', title: 'Cloud Platforms & Modernization' },
-	{ slug: 'devsecops-delivery', title: 'DevSecOps & Delivery Systems' },
-	{ slug: 'data-analytics', title: 'Data & Analytics' },
-	{ slug: 'proposal-capture', title: 'Proposal & Capture Engineering' },
+	{ slug: 'defense-technology-strategy', title: 'Defense Technology Strategy' },
+	{ slug: 'mission-digital-engineering', title: 'Mission & Digital Engineering' },
+	{ slug: 'software-modernization-devsecops', title: 'Software Modernization & DevSecOps' },
+	{ slug: 'data-ai-governed-autonomy', title: 'Data, AI & Governed Autonomy' },
+	{ slug: 'technology-insertion-transition', title: 'Technology Insertion & Transition' },
+	{ slug: 'technical-capture-proposal-strategy', title: 'Technical Capture & Proposal Strategy' },
+	{ slug: 'enterprise-policy-governance', title: 'Enterprise Policy & Governance' },
 ];
 
 const cards = [
@@ -47,8 +48,23 @@ const cards = [
 		file: 'home.png',
 		accent: '#00a6a6',
 		title: 'Adam Boas',
-		subtitle: 'Solutions Architect · Writing · Experience · Education',
+		subtitle: 'Defense technology strategy, mission systems, modernization, and transition',
 		kicker: BRAND_KICKER,
+		subtitleSize: 24,
+		subtitleLineGap: 30,
+		subtitleMaxWidthPx: 1020,
+		subtitleMaxLines: 3,
+	},
+	{
+		file: 'strategic-work.png',
+		accent: '#d4a574',
+		title: 'Selected Strategic Work',
+		subtitle: 'Defense technology strategy, mission systems, modernization, capture, transition, and governed AI',
+		kicker: BRAND_KICKER,
+		subtitleSize: 24,
+		subtitleLineGap: 30,
+		subtitleMaxWidthPx: 1020,
+		subtitleMaxLines: 3,
 	},
 	{
 		file: 'writing.png',
@@ -106,7 +122,7 @@ const cards = [
 		file: 'capabilities.png',
 		accent: '#00a6a6',
 		title: 'Capabilities',
-		subtitle: 'AI autonomy, cloud platforms, DevSecOps, cyber, and mission delivery focus areas',
+		subtitle: 'Strategy, mission engineering, software modernization, governed AI, transition, capture, and policy',
 		kicker: BRAND_KICKER,
 		subtitleSize: 24,
 		subtitleLineGap: 30,

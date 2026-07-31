@@ -19,6 +19,7 @@ const isToolsActive = pathname.startsWith('/events') || pathname.startsWith('/op
 		</div>
 
 		<div class="hidden items-center gap-1.5 md:flex">
+			<HeaderLink href={withBase('/strategic-work/')} aria-keyshortcuts="g s">Strategic Work</HeaderLink>
 			<HeaderLink href={withBase('/writing/')} aria-keyshortcuts="g w">Writing</HeaderLink>
 			<HeaderLink href={withBase('/profile/')} aria-keyshortcuts="g p">Profile</HeaderLink>
 			<HeaderLink href={withBase('/capabilities/')} aria-keyshortcuts="g c">Capabilities</HeaderLink>
@@ -50,16 +51,37 @@ const isToolsActive = pathname.startsWith('/events') || pathname.startsWith('/op
 
 		<div class="md:hidden">
 			<details class="group relative">
-				<summary class="inline-flex h-8 list-none items-center rounded-none border border-slate-700 bg-slate-900/80 px-2.5 text-sm font-medium text-slate-100 cursor-pointer">
+				<summary
+					class="inline-flex h-8 list-none items-center rounded-none border border-slate-700 bg-slate-900/80 px-2.5 text-sm font-medium text-slate-100 cursor-pointer"
+				>
 					Navigation
 					<span class="ml-1 text-xs">▾</span>
 				</summary>
 				<div class="absolute right-0 z-40 mt-1 w-52 border border-slate-700 bg-slate-950/98 p-1 shadow-xl">
-					<a class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href={withBase('/writing/')}>Writing</a>
-					<a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href={withBase('/profile/')}>Profile</a>
-					<a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href={withBase('/capabilities/')}>Capabilities</a>
-					<a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href={withBase('/events/')}>Events</a>
-					<a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href={withBase('/opportunities/')}>Opportunities</a>
+					<a
+						class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/strategic-work/')}>Strategic Work</a
+					>
+					<a
+						class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/writing/')}>Writing</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/profile/')}>Profile</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/capabilities/')}>Capabilities</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/events/')}>Events</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/opportunities/')}>Opportunities</a
+					>
 				</div>
 			</details>
 		</div>

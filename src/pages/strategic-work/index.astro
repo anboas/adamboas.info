@@ -1,0 +1,113 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
+import { strategicWorkItems } from '../../data/strategicWork';
+import { absoluteUrl } from '../../config/site';
+import { withBase } from '../../utils/withBase';
+
+const pageTitle = 'Selected Strategic Work | Adam Boas';
+const pageDescription =
+	'Selected strategic work by Adam Boas across defense technology strategy, enterprise policy, mission and digital engineering, technical capture, technology insertion, and governed AI.';
+const pageUrl = absoluteUrl('/strategic-work/');
+---
+
+<SiteLayout title={pageTitle} description={pageDescription} canonicalHref={pageUrl} image="/og/strategic-work.png">
+	<script
+		type="application/ld+json"
+		set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'WebPage',
+			name: pageTitle,
+			description: pageDescription,
+			url: pageUrl,
+			mainEntity: {
+				'@type': 'ItemList',
+				name: 'Selected Strategic Work',
+				itemListElement: strategicWorkItems.map((item, idx) => ({
+					'@type': 'ListItem',
+					position: idx + 1,
+					url: `${pageUrl}#${item.slug}`,
+					name: item.title,
+					description: item.practicalValue,
+				})),
+			},
+		})}
+	/>
+	<SurfacePageHeader
+		stickyActive="strategic-work"
+		eyebrow="Selected work"
+		title="Selected Strategic Work"
+		description="Sanitized public evidence across defense technology strategy, mission systems, modernization, capture, transition, and governed autonomy."
+	>
+		<div slot="actions" class="flex flex-wrap gap-2">
+			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/capabilities/')}>Explore capabilities</a>
+			<a class="ui-link-btn" href={withBase('/profile/')}>Profile</a>
+		</div>
+	</SurfacePageHeader>
+
+	<section class="mt-4 grid gap-4 md:mt-5">
+		{
+			strategicWorkItems.map((item) => (
+				<article id={item.slug} class="card strategic-work-card p-4 md:p-5">
+					<div class="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+						<div class="min-w-0">
+							<p class="strategic-kicker">{item.theme}</p>
+							<h2 class="mt-2 text-lg font-semibold text-slate-50 wrap-anywhere">{item.title}</h2>
+						</div>
+						<div class="flex shrink-0 flex-wrap gap-2">
+							{item.relatedEvidence.map((link) => (
+								<a class="ui-link-btn ui-link-btn-muted" href={withBase(link.href)}>
+									{link.label}
+								</a>
+							))}
+						</div>
+					</div>
+
+					<div class="mt-4 grid gap-4 lg:grid-cols-[1.1fr_1fr_1fr]">
+						<section>
+							<h3 class="strategic-section-label">Mission problem</h3>
+							<p class="mt-2 text-sm leading-relaxed text-slate-300 wrap-anywhere">{item.missionProblem}</p>
+						</section>
+						<section>
+							<h3 class="strategic-section-label">Adam's role</h3>
+							<p class="mt-2 text-sm leading-relaxed text-slate-300 wrap-anywhere">{item.role}</p>
+						</section>
+						<section>
+							<h3 class="strategic-section-label">Practical value</h3>
+							<p class="mt-2 text-sm leading-relaxed text-slate-300 wrap-anywhere">{item.practicalValue}</p>
+						</section>
+					</div>
+
+					<section class="mt-4 border-t border-slate-800 pt-4">
+						<h3 class="strategic-section-label">Approach</h3>
+						<ul class="mt-2 grid gap-2 text-sm text-slate-300 md:grid-cols-3">
+							{item.approach.map((step) => (
+								<li class="border border-slate-800 bg-slate-950/40 p-3 leading-relaxed wrap-anywhere">{step}</li>
+							))}
+						</ul>
+					</section>
+				</article>
+			))
+		}
+	</section>
+</SiteLayout>
+
+<style>
+	.strategic-work-card {
+		border: 1px solid rgba(51, 65, 85, 0.86);
+		background: rgba(2, 6, 23, 0.86);
+	}
+
+	.strategic-kicker,
+	.strategic-section-label {
+		font-size: 0.62rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(148, 163, 184, 0.94);
+	}
+
+	.strategic-section-label {
+		color: rgba(226, 232, 240, 0.92);
+	}
+</style>

@@ -5,11 +5,13 @@ const BASE = process.env.SITE_BASE || 'http://localhost:4321';
 
 const pages = [
 	'/',
+	'/strategic-work/',
 	'/writing/',
 	'/writing/agentic-force-creation/',
 	'/speaking/',
 	'/profile/',
 	'/capabilities/',
+	'/capabilities/defense-technology-strategy/',
 	'/events/',
 	'/opportunities/',
 	'/changes/',

@@ -24,7 +24,7 @@ export const experience: ExperienceItem[] = [
 		title: 'Solutions Architect',
 		period: '2025 - present',
 		summary:
-			"Lead enterprise technology strategy and AI adoption pathways aligned to mission objectives, advising senior leadership on how emerging capabilities transition from experimentation to operational integration. Conduct strategic assessments of legacy environments and architect modernization roadmaps suitable for autonomy-enabled mission ecosystems.",
+			'Support enterprise technology strategy, solution architecture, technical capture, proposal solutioning, emerging-technology assessment, and modernization initiatives. Connect mission demand, stakeholder priorities, architecture, acquisition context, and delivery evidence so technical access can become sustained growth and operational capability.',
 	},
 	{
 		slug: 'booz-allen-solutions-architect-2024',
@@ -32,7 +32,7 @@ export const experience: ExperienceItem[] = [
 		title: 'Solutions Architect',
 		period: '2024 - 2025',
 		summary:
-			"Primary author of Department of Defense Instruction on \"Modern Software Development\" (yet to be published), shaping how AI capabilities are governed, secured, and operationalized across the DoD. Led cross-Service alignment among CIOs, DevSecOps Platforms, and Software Factories to translate modernization strategy into executable enterprise architectures.",
+			'Supported DoD CIO for the Information Enterprise as a solutions architect and senior technical strategist. Primary author of the forthcoming DoD Instruction on Modern Software Development, co-led the AI for Software Development Lifecycle working group, and helped coordinate software modernization, cloud, DevSecOps, policy, acquisition, and enterprise-governance stakeholders.',
 	},
 	{
 		slug: 'kbr-solutions-architect-2022',
@@ -40,7 +40,7 @@ export const experience: ExperienceItem[] = [
 		title: 'Solutions Architect',
 		period: '2022 - 2024',
 		summary:
-			"Led IL5 cloud architecture and modernization of aviation mission systems, aligning DevSecOps practices and secure cloud integration to support scalable, cyber-resilient operations. Positioned legacy logistics platforms for transition into modern, cloud-native environments capable of supporting future AI-enabled workflows and decision-support capabilities.",
+			'Supported Navy aviation mission-system modernization, IL5 cloud architecture, DevSecOps alignment, software/data modernization, and secure cloud integration. Helped connect mission engineering, systems engineering, technical architecture, and delivery teams across modernization paths for aviation and logistics environments.',
 	},
 	{
 		slug: 'booz-allen-solutions-architect-2019',
@@ -48,7 +48,7 @@ export const experience: ExperienceItem[] = [
 		title: 'Solutions Architect',
 		period: '2019 - 2022',
 		summary:
-			"Trusted advisor to senior Information Warfare leadership on DevSecOps, secure cloud architecture, and rapid Compile-to-Combat initiatives within IL5/IL6 environments. Drove mission system modernization strategies that balanced operational speed, accreditation rigor, and scalable delivery pipelines suitable for high-consequence environments.",
+			'Advised senior Information Warfare stakeholders on DevSecOps, secure cloud architecture, modernization strategy, and rapid Compile-to-Combat initiatives within IL5/IL6 environments. Authored the DevSecOps definition used in relevant DoD fundamentals guidance and helped align technical communities around delivery systems suitable for high-consequence environments.',
 	},
 	{
 		slug: 'kbrwyle-cloud-architect-sre-2018',

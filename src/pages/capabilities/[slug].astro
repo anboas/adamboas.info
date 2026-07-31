@@ -166,7 +166,7 @@ const opportunityItems = [...opportunitiesByKey.values()]
 	});
 
 const canonicalHref = withBase(`/capabilities/${capability.slug}/`);
-const capabilitySeoDescription = `${capability.description} Includes linked writing, events, and opportunity intelligence for ${capability.title}.`;
+const capabilitySeoDescription = `${capability.valueProposition} Includes representative activities, evidence, writing, events, and opportunity intelligence.`;
 const homeUrl = new URL(withBase('/'), Astro.site).toString();
 const capabilitiesUrl = new URL(withBase('/capabilities/'), Astro.site).toString();
 const pageUrl = new URL(canonicalHref, Astro.site).toString();
@@ -193,12 +193,12 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 
 	<SurfacePageHeader
 		stickyActive="capabilities"
-		eyebrow="Capability topic"
+		eyebrow="Capability"
 		title={capability.title}
-		description={capability.description}
+		description={capability.valueProposition}
 	>
 		<div slot="actions" class="flex flex-wrap gap-2">
-			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/contact/?intent=consulting')}>Start project</a>
+			<a class="ui-link-btn ui-link-btn-primary" href={withBase('/strategic-work/')}>Strategic work</a>
 			<a class="ui-link-btn ui-link-btn-muted" href={withBase('/capabilities/')}>All topics</a>
 		</div>
 		<div class="flex flex-wrap gap-2">
@@ -207,6 +207,36 @@ const pageUrl = new URL(canonicalHref, Astro.site).toString();
 			<span class="ui-pill">Opportunities: {opportunityItems.length}</span>
 		</div>
 	</SurfacePageHeader>
+
+	<section class="card mt-4 p-4 capability-card md:mt-5">
+		<div class="grid gap-4 lg:grid-cols-3">
+			<div>
+				<p class="cap-kicker">Value proposition</p>
+				<p class="mt-2 text-sm leading-relaxed text-slate-200">{capability.valueProposition}</p>
+			</div>
+			<div>
+				<p class="cap-kicker">Representative activities</p>
+				<ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+					{capability.activities.map((item) => <li class="wrap-anywhere">{item}</li>)}
+				</ul>
+			</div>
+			<div>
+				<p class="cap-kicker">Evidence</p>
+				<ul class="mt-2 space-y-1.5 text-sm text-slate-300">
+					{capability.evidence.map((item) => <li class="wrap-anywhere">{item}</li>)}
+				</ul>
+			</div>
+		</div>
+		<div class="mt-4 flex flex-wrap gap-2">
+			{
+				capability.links.map((link) => (
+					<a class="ui-link-btn ui-link-btn-muted" href={withBase(link.href)}>
+						{link.label}
+					</a>
+				))
+			}
+		</div>
+	</section>
 
 	<section class="mt-4 grid gap-4 xl:grid-cols-3">
 		<article class="card p-4 capability-card xl:col-span-1">

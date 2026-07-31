@@ -94,6 +94,7 @@ for (const file of mustNoindex) {
 
 const coreIndexable = [
 	'src/pages/index.astro',
+	'src/pages/strategic-work/index.astro',
 	'src/pages/profile/index.astro',
 	'src/pages/writing/index.astro',
 	'src/pages/capabilities/index.astro',
@@ -106,6 +107,7 @@ for (const file of coreIndexable) {
 
 const coreSharePages = {
 	'src/pages/index.astro': '/og/home.png',
+	'src/pages/strategic-work/index.astro': '/og/strategic-work.png',
 	'src/pages/profile/index.astro': '/og/profile.png',
 	'src/pages/capabilities/index.astro': '/og/capabilities.png',
 	'src/pages/speaking/index.astro': '/og/speaking.png',
@@ -128,12 +130,13 @@ assert(
 );
 
 const capabilityOgSlugs = [
-	'ai-autonomy',
-	'cybersecurity',
-	'cloud-platforms',
-	'devsecops-delivery',
-	'data-analytics',
-	'proposal-capture',
+	'defense-technology-strategy',
+	'mission-digital-engineering',
+	'software-modernization-devsecops',
+	'data-ai-governed-autonomy',
+	'technology-insertion-transition',
+	'technical-capture-proposal-strategy',
+	'enterprise-policy-governance',
 ];
 for (const slug of capabilityOgSlugs) {
 	assert(exists(`public/og/capabilities/${slug}.png`), `Missing capability OG image: ${slug}`);

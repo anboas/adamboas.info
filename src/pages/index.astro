@@ -2,8 +2,7 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { getCollection } from 'astro:content';
 import { SITE_TITLE } from '../consts';
-import { CONTACT_PHONE } from '../data/resume';
-import { absoluteUrl, CONTACT_PHONE_E164, contactMailto } from '../config/site';
+import { absoluteUrl, contactMailto } from '../config/site';
 import { withBase } from '../utils/withBase';
 import WritingCompactCard from '../components/WritingCompactCard.astro';
 import {
@@ -47,7 +46,7 @@ const homepageWriting = [
 	.filter((x) => !!x.slug)
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
-const featuredOrder = ['acp-ra', 'agentic-force-creation', '2026-02-09-agent-tool-security-research'];
+const featuredOrder = ['code-as-policy', 'acp-ra', 'caf-ra'];
 const featuredFromOrder = featuredOrder.map((slug) => homepageWriting.find((w) => w.slug === slug)).filter(Boolean);
 const featuredFill = homepageWriting
 	.filter((w) => !featuredOrder.includes(String(w.slug)))
@@ -57,7 +56,7 @@ const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
 const siteUrl = absoluteUrl('/');
 const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}'), Astro.site).toString();
 
-const HOME_TITLE = `${PERSON_NAME} | ${PERSON_JOB_TITLE}`;
+const HOME_TITLE = `${PERSON_NAME} | Defense Technology Strategy, Mission Systems & Modernization`;
 const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 ---
 
@@ -72,7 +71,6 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 			url: siteUrl,
 			sameAs: PERSON_SAME_AS,
 			jobTitle: PERSON_JOB_TITLE,
-			telephone: CONTACT_PHONE,
 			description: HOME_DESCRIPTION,
 			image: absoluteUrl(PERSON_IMAGE_PATH),
 			mainEntityOfPage: siteUrl,
@@ -101,26 +99,62 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">{PERSON_NAME}</h1>
 				<p class="mt-2 text-slate-400">{PERSON_JOB_TITLE}</p>
 				<p class="mt-4 text-lg leading-relaxed text-slate-300">
-					Adam Boas advances warfighter lethality through trusted autonomy, control planes, and execution at tempo.
+					Adam Boas connects policy, mission engineering, software, data, AI, and acquisition to move defense
+					capabilities from strategic intent to operational use.
+				</p>
+				<p class="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
+					His work spans enterprise modernization, technical capture, technology insertion, governed autonomy, and
+					the operating systems required to identify, shape, deliver, and scale mission capability.
 				</p>
 				<div class="mt-5 flex flex-wrap items-center gap-3">
-					<a
-						data-track="Contact: Intake Click"
-						href={withBase('/contact/?intent=consulting')}
-						class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold"
-					>
-						Start project
+					<a href={withBase('/strategic-work/')} class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold">
+						View strategic work
 					</a>
+					<a href={withBase('/capabilities/')} class="ui-link-btn px-4 text-sm font-semibold">Explore capabilities</a>
 					<a data-track="Contact: Email Click" href={contactMailto()} class="ui-link-btn px-4 text-sm font-semibold"
-						>Email direct</a
-					>
-					<a
-						data-track="Contact: Phone Click"
-						href={`tel:${CONTACT_PHONE_E164}`}
-						class="ui-link-btn px-4 text-sm font-semibold">{CONTACT_PHONE}</a
+						>Contact</a
 					>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section class="mt-6 card p-6">
+		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+			<h2 class="section-title">Selected Strategic Work</h2>
+			<a href={withBase('/strategic-work/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">
+				View all →
+			</a>
+		</div>
+		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+			<article class="border border-slate-800 bg-slate-950/40 p-4">
+				<p class="home-kicker">Growth strategy</p>
+				<h3 class="mt-2 text-sm font-bold text-slate-50">Defense growth and technical capture</h3>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Opportunity sensing, solution shaping, proposal architecture, discriminators, and stakeholder alignment.
+				</p>
+			</article>
+			<article class="border border-slate-800 bg-slate-950/40 p-4">
+				<p class="home-kicker">Technology transition</p>
+				<h3 class="mt-2 text-sm font-bold text-slate-50">Technology insertion and mission discovery</h3>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Program immersion, operational problem framing, integration constraints, and scale/stop evidence.
+				</p>
+			</article>
+			<article class="border border-slate-800 bg-slate-950/40 p-4">
+				<p class="home-kicker">Policy modernization</p>
+				<h3 class="mt-2 text-sm font-bold text-slate-50">From PDFs to Pull Requests</h3>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					A public architecture for turning policy into governed, testable, executable delivery constraints.
+				</p>
+			</article>
+			<article class="border border-slate-800 bg-slate-950/40 p-4">
+				<p class="home-kicker">Technical architecture</p>
+				<h3 class="mt-2 text-sm font-bold text-slate-50">Agent Control Plane Reference Architecture</h3>
+				<p class="mt-2 text-sm leading-relaxed text-slate-300">
+					Bounded autonomy, trust scopes, evidence, and continuous assurance for high-consequence operations.
+				</p>
+			</article>
 		</div>
 	</section>
 
@@ -141,54 +175,59 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 			<h2 class="section-title">Operating Principles</h2>
 			<ul class="mt-3 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
 				<li>
-					<span class="text-slate-100">Mission assurance over novelty</span>: contested operations first, graceful
-					degradation always
+					<span class="text-slate-100">Mission outcomes over technology novelty</span>: the operational problem sets
+					the architecture
 				</li>
 				<li>
-					<span class="text-slate-100">Governed autonomy by default</span>: trust scopes, policy gates, and operator
-					override paths
+					<span class="text-slate-100">Operational truth before executive narrative</span>: no story without program
+					immersion and evidence
 				</li>
 				<li>
-					<span class="text-slate-100">Evidence before action</span>: signed traces, provenance, and auditable decisions
+					<span class="text-slate-100">Transition pathways before isolated demonstrations</span>: ownership, funding,
+					integration, and acceptance criteria matter early
 				</li>
 				<li>
-					<span class="text-slate-100">Control planes over point solutions</span>: PDP/PIP/PEP patterns with clean
-					system boundaries
+					<span class="text-slate-100">Control planes over disconnected point solutions</span>: authority, policy,
+					data, and telemetry need system boundaries
 				</li>
 				<li>
-					<span class="text-slate-100">Continuous adversarial validation</span>: evals, red-teaming, and rollback as
-					normal operations
+					<span class="text-slate-100">Evidence-based capture and delivery</span>: claims should survive proposal,
+					transition, and execution
+				</li>
+				<li>
+					<span class="text-slate-100">Repeatable systems over heroic intervention</span>: useful organizations learn
+					across programs
 				</li>
 			</ul>
 		</section>
 
 		<section class="card p-6">
-			<h2 class="section-title">Engagement</h2>
+			<h2 class="section-title">Work With Adam</h2>
 			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">
-				Consulting and hands-on support for high-tempo delivery. Include mission outcome and timeline in your intake.
+				Support for defense executives and technical teams that need to connect mission demand, technical architecture,
+				acquisition realities, and delivery evidence.
 			</p>
 			<ul class="mt-4 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
 				<li>
-					<span class="text-slate-100">Architecture &amp; modernization</span> (cloud platforms, control planes, migration
-					plans)
+					<span class="text-slate-100">Strategy and solutioning</span> (opportunity framing, architecture, win themes)
 				</li>
 				<li>
-					<span class="text-slate-100">Delivery systems</span> (paved roads, CI/CD, SLOs, observability, rollback)
+					<span class="text-slate-100">Modernization and transition</span> (software, cloud, data, digital engineering)
 				</li>
-				<li><span class="text-slate-100">Governed autonomy</span> (evals, trust scopes, policy + audit trails)</li>
+				<li><span class="text-slate-100">Governed AI and autonomy</span> (trust scopes, policy gates, evidence)</li>
 				<li>
-					<span class="text-slate-100">Proposal support</span> (whitepapers, technical volumes, RFI/RFP responses)
+					<span class="text-slate-100">Capture and proposals</span> (technical volumes, white papers, discriminators)
 				</li>
 			</ul>
 			<div class="mt-5 flex flex-wrap gap-3">
 				<a
 					href={withBase('/capabilities/')}
-					class="ui-link-btn bg-slate-900/40 px-3 text-sm font-semibold text-slate-100">Capability summary</a
+					class="ui-link-btn bg-slate-900/40 px-3 text-sm font-semibold text-slate-100">Explore capabilities</a
 				>
 				<a
 					data-track="Contact: Intake Click"
-					href={withBase('/contact/?intent=consulting')}
-					class="ui-link-btn px-3 text-sm font-semibold">Start project</a
+					href={withBase('/contact/')}
+					class="ui-link-btn px-3 text-sm font-semibold">Contact</a
 				>
 			</div>
 			<p class="mt-3 text-xs text-slate-400">
@@ -202,3 +241,13 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 
 	<!-- Blog section merged into Writing -->
 </SiteLayout>
+
+<style>
+	.home-kicker {
+		font-size: 0.62rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: rgba(148, 163, 184, 0.94);
+	}
+</style>

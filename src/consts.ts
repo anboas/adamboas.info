@@ -2,8 +2,9 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Adam Boas';
-export const SITE_DESCRIPTION = 'Adam Boas: autonomy, AI governance, and system-level execution.';
-export const SITE_RELEASE_VERSION = 'v2.4.49';
+export const SITE_DESCRIPTION =
+	'Adam Boas: defense technology strategy, mission systems, modernization, AI governance, and operational transition.';
+export const SITE_RELEASE_VERSION = 'v2.4.50';
 
 // Analytics (Plausible)
 // Domain is configured in Plausible; snippet is injected in BaseHead.

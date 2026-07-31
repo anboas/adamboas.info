@@ -102,5 +102,13 @@
     "release": "2026.05",
     "summary": "Added dedicated opportunities lineage endpoint and schema for deterministic cache/replay decisions",
     "links": ["/opportunities/lineage.json", "/schemas/opportunities-lineage.schema.json", "/opportunities/freshness.json"]
+  },
+  {
+    "id": "defense-technology-strategy-reposition",
+    "ts": "2026-07-30T16:45:00.000Z",
+    "type": "seo",
+    "release": "v2.4.50",
+    "summary": "Repositioned the public site around defense technology strategy, mission systems, modernization, selected strategic work, and executive capability evidence",
+    "links": ["/", "/strategic-work/", "/capabilities/", "/profile/", "/writing/manifest.json"]
   }
 ]

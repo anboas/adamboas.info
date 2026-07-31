@@ -4,11 +4,13 @@ const BASE = process.env.SITE_BASE ?? 'https://www.adamboas.com';
 
 const smokeRoutes = [
 	'/',
+	'/strategic-work/',
 	'/writing/',
 	'/writing/agentic-force-creation/',
 	'/writing/acp-ra/',
 	'/events/',
 	'/events/sources/',
+	'/capabilities/defense-technology-strategy/',
 	'/changes/',
 	'/experience/',
 	'/education/',

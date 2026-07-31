@@ -99,12 +99,45 @@ const releases: Release[] = [
 
 
 	{
+		version: 'v2.4.50',
+		date: '2026-07-30',
+		title: 'Defense technology strategy repositioning',
+		summary: 'Repositioned the site around defense technology strategy, mission systems, modernization, selected strategic work, technical capture, transition, and enterprise governance.',
+		impact: 'The homepage, profile, capabilities, strategic-work surface, metadata, OG generation, and agent-readable discovery endpoints now support a broader enterprise defense technology strategist position while new long-form articles remain draft-only.',
+		current: true,
+		tags: ['seo', 'positioning', 'profile', 'capabilities', 'writing'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added `/strategic-work/` as a public selected-work surface organized by mission problem, role, approach, practical value, and related evidence.',
+					'Added draft-only writing entries for defense growth, technology insertion, and digital engineering pending editorial approval.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated homepage title, descriptor, hero copy, CTAs, operating principles, and featured evidence range.',
+					'Reorganized capabilities around executive-relevant strategy, engineering, modernization, governed AI, transition, capture, and policy areas.',
+					'Expanded profile evidence around DoD policy, Navy modernization, technical strategy, capture, and stakeholder leadership.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Updated OG generation, SEO guardrails, sitemap links, llms files, agent manifest, priority map, and integrity coverage for the new strategic-work surface.',
+				],
+			},
+			{ kind: 'Fixed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.4.49',
 		date: '2026-05-01',
 		title: 'Header action top-align + tighter divider spacing across shared surfaces',
 		summary: 'Updated shared header layout so action rails anchor to the top-right and tightened divider spacing; also widened description rail to avoid awkward writing-summary wraps.',
 		impact: 'Header buttons now consistently sit at the top, divider feels closer to content, and writing summary wraps less aggressively.',
-		current: true,
 		tags: ['ux', 'headers', 'consistency', 'typography'],
 		groups: [
 			{ kind: 'Added', items: [] },
