@@ -14,7 +14,7 @@ const contactPageSchema = {
 	'@type': 'ContactPage',
 	name: `Contact ${PERSON_NAME}`,
 	url: contactUrl,
-	description: `Start a project conversation with ${PERSON_NAME}. Share mission, timeline, and scope.`,
+	description: 'Start a project conversation. Share mission, timeline, and scope.',
 	mainEntity: {
 		'@id': PERSON_ID,
 	},
@@ -52,7 +52,7 @@ const contactBreadcrumbSchema = {
 
 <SiteLayout
 	title="Contact | Adam Boas"
-	description="Start a project conversation with Adam Boas. Share mission, timeline, and scope."
+	description="Start a project conversation. Share mission, timeline, and scope."
 	canonicalHref={absoluteUrl('/contact/')}
 >
 	<script type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />

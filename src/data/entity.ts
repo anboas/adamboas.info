@@ -5,7 +5,7 @@ export const PERSON_PROFILE_URL = 'https://www.adamboas.com/profile/';
 export const PERSON_JOB_TITLE = 'Defense Technology Strategist & Solutions Architect';
 
 export const PERSON_DESCRIPTION =
-	'Defense technology strategist connecting policy, mission engineering, software, data, AI, acquisition, and delivery systems to move mission capability from strategic intent to operational use.';
+	'I connect policy, mission engineering, software, data, AI, acquisition, and delivery systems to move mission capability from strategic intent to operational use.';
 
 export const PERSON_SAME_AS = ['https://github.com/anboas', 'https://www.linkedin.com/in/adamnboas/'];
 

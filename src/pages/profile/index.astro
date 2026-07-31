@@ -47,7 +47,8 @@ const profilePageSchema = {
 	'@type': 'ProfilePage',
 	name: `${PERSON_NAME} Profile`,
 	url: profileUrl,
-	description: `Defense technology strategy, software modernization, technical capture, mission systems, speaking, and credentials for ${PERSON_NAME}.`,
+	description:
+		'Defense technology strategy, software modernization, technical capture, mission systems, speaking, and credentials.',
 	mainEntity: {
 		'@id': personId,
 	},
@@ -120,25 +121,19 @@ const profileBreadcrumbSchema = {
 
 <SiteLayout
 	title="Defense Technology Strategy Profile | Adam Boas"
-	description="Career background for Adam Boas across defense technology strategy, DoD software policy, Navy modernization, technical capture, mission systems, governed AI, speaking, and credentials."
+	description="Career background across defense technology strategy, DoD software policy, Navy modernization, technical capture, mission systems, governed AI, speaking, and credentials."
 	image="/og/profile.png"
 >
 	<script type="application/ld+json" set:html={JSON.stringify(profilePageSchema)} />
 	<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 	<script type="application/ld+json" set:html={JSON.stringify(experienceListSchema)} />
 	<script type="application/ld+json" set:html={JSON.stringify(profileBreadcrumbSchema)} />
-	<SurfacePageHeader
-		stickyActive="profile"
-		eyebrow="Background"
-		title="Profile"
-		headerClass="profile-header-compact"
-	>
+	<SurfacePageHeader stickyActive="profile" eyebrow="Background" title="Profile" headerClass="profile-header-compact">
 		<div slot="actions" class="profile-header-rail text-xs text-slate-400">
 			<p class="inline-flex flex-nowrap items-center gap-2 whitespace-nowrap">
 				<a
 					href={withBase('/files/adam-boas-resume.pdf')}
-					class="whitespace-nowrap text-sm font-semibold text-stone-100 hover:text-stone-50"
-					>Resume PDF ↗</a
+					class="whitespace-nowrap text-sm font-semibold text-stone-100 hover:text-stone-50">Resume PDF ↗</a
 				>
 				<span aria-hidden="true" class="text-slate-600">•</span>
 				<span class="whitespace-nowrap tracking-wide">Clearance: {RESUME_CLEARANCE}</span>
@@ -167,8 +162,8 @@ const profileBreadcrumbSchema = {
 			<article class="profile-proof-cell">
 				<p class="profile-proof-kicker">Current focus</p>
 				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					KBR Solutions Architect and senior technical strategist supporting enterprise strategy, solution
-					architecture, capture, technical proposals, emerging-technology assessment, and modernization initiatives.
+					KBR Solutions Architect and senior technical strategist supporting enterprise strategy, solution architecture,
+					capture, technical proposals, emerging-technology assessment, and modernization initiatives.
 				</p>
 			</article>
 			<article class="profile-proof-cell">
@@ -181,8 +176,8 @@ const profileBreadcrumbSchema = {
 			<article class="profile-proof-cell">
 				<p class="profile-proof-kicker">Mission systems</p>
 				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					Navy and Marine Corps experience across PEO Digital, NAVAIR, mission engineering, systems engineering,
-					cloud, software, data, and modernization.
+					Navy and Marine Corps experience across PEO Digital, NAVAIR, mission engineering, systems engineering, cloud,
+					software, data, and modernization.
 				</p>
 			</article>
 			<article class="profile-proof-cell">
@@ -202,8 +197,8 @@ const profileBreadcrumbSchema = {
 			<article class="profile-proof-cell">
 				<p class="profile-proof-kicker">Public voice</p>
 				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					Public speaking and thought leadership on software modernization, AI governance, cyber, DevSecOps, and
-					defense technology implementation.
+					Public speaking and thought leadership on software modernization, AI governance, cyber, DevSecOps, and defense
+					technology implementation.
 				</p>
 			</article>
 		</div>

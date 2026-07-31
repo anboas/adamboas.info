@@ -11,8 +11,7 @@ const speakingPageSchema = {
 	'@type': 'CollectionPage',
 	name: `${PERSON_NAME} Speaking Engagements`,
 	url: absoluteUrl('/speaking/'),
-	description:
-		'Talks, panels, and briefings by Adam Boas on defense AI, trusted autonomy, control planes, and AI governance.',
+	description: 'Talks, panels, and briefings on defense AI, trusted autonomy, control planes, and AI governance.',
 	mainEntity: {
 		'@id': PERSON_ID,
 	},
@@ -55,7 +54,7 @@ const speakingBreadcrumbSchema = {
 
 <SiteLayout
 	title="Speaking Engagements | Adam Boas"
-	description="Talks, panels, and briefings by Adam Boas on defense AI, trusted autonomy, control planes, and AI governance."
+	description="Talks, panels, and briefings on defense AI, trusted autonomy, control planes, and AI governance."
 	image="/og/speaking.png"
 >
 	<script type="application/ld+json" set:html={JSON.stringify(speakingPageSchema)} />

@@ -3,7 +3,7 @@
 
 export const SITE_TITLE = 'Adam Boas';
 export const SITE_DESCRIPTION =
-	'Adam Boas: defense technology strategy, mission systems, modernization, AI governance, and operational transition.';
+	'Defense technology strategy, mission systems, modernization, AI governance, and operational transition.';
 export const SITE_RELEASE_VERSION = 'v2.4.50';
 
 // Analytics (Plausible)
