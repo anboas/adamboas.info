@@ -1,8 +1,8 @@
 ---
 title: 'Technology Insertion Is a Management System, Not a Demo Day'
 date: 2026-07-30T12:00:00-04:00
-summary: 'A draft argument for treating technology insertion as a governed transition system with mission ownership, evidence, acquisition paths, integration constraints, feedback, and scale or stop decisions.'
-status: draft
+summary: 'An argument for treating technology insertion as a governed transition system with mission ownership, evidence, acquisition paths, integration constraints, feedback, and scale or stop decisions.'
+status: published
 type: note
 tags:
   - technology-insertion
