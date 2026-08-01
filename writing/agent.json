@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "surface": "writing",
+  "canonical": "https://www.adamboas.com/writing/",
+  "agent_view": "https://www.adamboas.com/writing/?view=agent",
+  "primary_manifest": "https://www.adamboas.com/writing/manifest.json",
+  "related_endpoints": [
+    "https://www.adamboas.com/llms.txt",
+    "https://www.adamboas.com/llms-full.txt",
+    "https://www.adamboas.com/agents.json",
+    "https://www.adamboas.com/changes.jsonl"
+  ],
+  "crawl_hints": {
+    "refresh_hint": "daily",
+    "prefer_manifest_ordering": true,
+    "prefer_canonical": true
+  }
+}

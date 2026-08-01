@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.adamboas.com/schemas/changes.schema.json",
+  "title": "Changes Snapshot",
+  "type": "object",
+  "required": [
+    "release_version",
+    "event_log",
+    "discovery_endpoints"
+  ],
+  "properties": {
+    "release_version": {
+      "type": "string"
+    },
+    "event_log": {
+      "type": "object",
+      "required": [
+        "format",
+        "url",
+        "count",
+        "latest_event_id",
+        "latest_event_ts"
+      ]
+    },
+    "discovery_endpoints": {
+      "type": "object"
+    }
+  }
+}

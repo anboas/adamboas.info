@@ -1,0 +1,586 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" href="https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/" hreflang="en"><link rel="alternate" href="https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/" hreflang="x-default"><link rel="alternate" type="text/plain" title="Adam Boas LLMs.txt" href="/llms.txt"><link rel="alternate" type="text/plain" title="Adam Boas LLMs Full" href="/llms-full.txt"><link rel="alternate" type="application/json" title="Adam Boas Agent Manifest" href="/agents.json"><link rel="alternate" type="application/json" title="Adam Boas Writing Manifest" href="/writing/manifest.json"><link rel="alternate" type="application/json" title="Adam Boas Changes JSON" href="/changes.json"><link rel="alternate" type="application/x-ndjson" title="Adam Boas Changes JSONL" href="/changes.jsonl"><link rel="alternate" type="application/json" title="Adam Boas Integrity Manifest" href="/integrity.json"><link rel="alternate" type="application/json" title="Adam Boas Agent Priority" href="/agent-priority.json"><link rel="alternate" type="application/rss+xml" title="Adam Boas" href="/rss.xml"><meta name="generator" content="Astro v5.17.1"><meta name="author" content="Adam Boas"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"><!-- Primary Meta Tags --><title>The Next AI Bottleneck Is Delegated Authority | Adam Boas</title><meta name="title" content="The Next AI Bottleneck Is Delegated Authority | Adam Boas"><meta name="description" content="NIST is starting to standardize it. DARPA is starting to research it. Defense acquisition is starting to buy for it. The missing layer is the control plane."><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:site_name" content="Adam Boas"><meta property="og:locale" content="en_US"><meta property="og:url" content="https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"><meta property="og:title" content="The Next AI Bottleneck Is Delegated Authority | Adam Boas"><meta property="og:description" content="NIST is starting to standardize it. DARPA is starting to research it. Defense acquisition is starting to buy for it. The missing layer is the control plane."><meta property="og:image" content="https://www.adamboas.com/og/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.png"><meta property="og:image:alt" content="The Next AI Bottleneck Is Delegated Authority | Adam Boas"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"><meta property="twitter:title" content="The Next AI Bottleneck Is Delegated Authority | Adam Boas"><meta property="twitter:description" content="NIST is starting to standardize it. DARPA is starting to research it. Defense acquisition is starting to buy for it. The missing layer is the control plane."><meta property="twitter:image" content="https://www.adamboas.com/og/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.png"><meta property="twitter:image:alt" content="The Next AI Bottleneck Is Delegated Authority | Adam Boas"><meta name="twitter:dnt" content="on"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The Next AI Bottleneck Is Delegated Authority | Adam Boas","description":"NIST is starting to standardize it. DARPA is starting to research it. Defense acquisition is starting to buy for it. The missing layer is the control plane.","url":"https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/","isPartOf":{"@type":"WebSite","name":"Adam Boas","url":"https://www.adamboas.com/"}}</script><!-- Analytics --><script type="module">window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)};window.plausible.init=window.plausible.init||function(i){window.plausible.o=i||{}};window.plausible.init();</script><script async src="https://plausible.io/js/pa-toLIAZJrZKYjT-OBbvECd.js"></script><script type="module" src="/scripts/analytics-events.js"></script><!-- Page-specific UX helpers are loaded where needed (e.g., writing detail pages). --><link rel="stylesheet" href="/_astro/index.Cc55gZ78.css"></head> <body data-site-base="/"> <script>
+			(() => {
+				const params = new URLSearchParams(window.location.search);
+				if (params.get('view') === 'agent') {
+					document.documentElement.classList.add('agent-view');
+					document.body.classList.add('agent-view');
+				}
+			})();
+		</script> <header class="site-header border-b border-slate-800 bg-slate-950"> <nav class="container flex items-center justify-between py-2 md:py-3.5" aria-label="Primary navigation"> <div class="flex items-center gap-3"> <a href="/" class="site-brand text-base font-semibold tracking-tight text-slate-50 hover:text-slate-50"> Adam Boas </a> </div> <div class="hidden items-center gap-1.5 md:flex"> <a href="/strategic-work/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g s"> Strategic Work </a> <a href="/writing/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g w"> Writing </a> <a href="/profile/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g p"> Profile </a> <a href="/capabilities/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g c"> Capabilities </a> <details class="group relative"> <summary class="inline-flex h-8 list-none items-center rounded-none border px-2.5 text-sm font-medium cursor-pointer border-transparent text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50">
+Tools
+<span class="ml-1 text-xs">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-44 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> <div class="md:hidden"> <details class="group relative"> <summary class="inline-flex h-8 list-none items-center rounded-none border border-slate-700 bg-slate-900/80 px-2.5 text-sm font-medium text-slate-100 cursor-pointer">
+Navigation
+<span class="ml-1 text-xs">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-52 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/strategic-work/">Strategic Work</a> <a class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/writing/">Writing</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/profile/">Profile</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/capabilities/">Capabilities</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> <!-- links moved to footer --> </nav> </header> <main class="site-main mx-auto w-full min-w-0 max-w-7xl flex-1 px-4 pt-3 pb-10 sm:px-6 sm:pt-4">  <div class="sticky-browse md:hidden"> <nav class="mx-auto w-full max-w-6xl px-4 py-1.5" aria-label="Primary mobile navigation"> <div class="flex flex-wrap items-center gap-1.5"> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/strategic-work/">Work</a> <a class="inline-flex h-8 items-center justify-center rounded-none border px-2 text-[11px] font-semibold text-slate-50 sm:px-3 sm:text-sm sticky-tab-active" href="/writing/" aria-current="page">Writing</a> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/profile/">Profile</a> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/capabilities/">Capabilities</a> <details class="group relative"> <summary class="inline-flex h-8 cursor-pointer list-none items-center justify-center rounded-none border px-2 text-[11px] sm:px-3 sm:text-sm border-slate-800 bg-slate-950 text-slate-200 hover:bg-slate-900">
+Tools <span class="ml-1 text-[10px]">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-44 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> </nav> </div> <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"The Next AI Bottleneck Is Delegated Authority","url":"https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"},"datePublished":"2026-04-18T00:00:00.000Z","dateModified":"2026-04-18T00:00:00.000Z","author":{"@type":"Person","name":"Adam Boas"},"publisher":{"@type":"Organization","name":"Adam Boas"},"keywords":["autonomy","agents","control-plane","governance","defense","standards"],"description":"NIST is starting to standardize it. DARPA is starting to research it. Defense acquisition is starting to buy for it. The missing layer is the control plane.","image":"https://www.adamboas.com/og/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.png","timeRequired":"PT9M"}</script> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.adamboas.com/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://www.adamboas.com/writing/"},{"@type":"ListItem","position":3,"name":"The Next AI Bottleneck Is Delegated Authority","item":"https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"}]}</script>  <div class="writing-actions-bar mb-2 flex items-center gap-2 overflow-x-auto whitespace-nowrap md:mb-3 md:flex-row md:items-center md:justify-between md:overflow-visible md:whitespace-normal"> <a class="shrink-0 text-xs text-slate-400 hover:text-slate-200 md:text-sm" href="/writing/">
+← Writing
+</a> <div class="flex flex-nowrap items-center gap-2 md:flex-wrap"> <a class="group rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href="/memos/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.pdf" target="_blank" rel="noreferrer" data-track="Writing: Open PDF" data-track-props="{&#34;slug&#34;:&#34;2026-04-18-the-next-ai-bottleneck-is-delegated-authority&#34;,&#34;kind&#34;:&#34;memo&#34;}"> <span>📄 PDF</span> <span class="ml-2 hidden text-xs font-normal text-slate-300 group-hover:text-slate-200 sm:inline"> 6p  •  191 KB </span> </a> <button type="button" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" data-copy-link data-track="Writing: Copy Link">
+🔗 Copy
+</button> <button type="button" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" data-copy-cite>
+📚 Cite
+</button> <a data-track="Contact: Writing CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href="mailto:anboas@gmail.com?subject=MEMO%20discussion%3A%20The%20Next%20AI%20Bottleneck%20Is%20Delegated%20Authority">
+💬 Discuss
+</a> <span class="hidden items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 md:inline-flex md:px-3 md:text-sm" data-writing-progress-label>
+0% read
+</span> </div> </div> <p class="writing-cite-strip text-xs text-slate-400">
+Canonical:  <a class="underline decoration-slate-700 underline-offset-2 hover:text-slate-200" href="https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"> https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/ </a> </p> <div class="writing-mobile-progress"> <span class="inline-flex items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100" data-writing-progress-label>
+0% read
+</span> </div> <div class="writing-detail-shell"> <article class="card p-5 md:p-8" data-writing-type="memo" data-paper-style="dossier"> <header> <div class="mt-4 min-w-0"> <h1 class="text-2xl font-semibold text-slate-50">The Next AI Bottleneck Is Delegated Authority</h1> <p class="mt-2 text-slate-300">NIST is starting to standardize it. DARPA is starting to research it. Defense acquisition is starting to buy for it. The missing layer is the control plane.</p> <div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-400"> <span>Apr 17, 2026</span> <span>· 9 min read</span> <span class="pageviews-chip rounded-full border px-2 py-1 text-xs">26 views (30d)</span> </div> <section class="mt-6 rounded-none border border-slate-700 bg-slate-950/55 p-4 md:p-5" data-writing-audio> <div class="mb-3 flex items-center justify-between gap-3"> <div> <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400">NotebookLM Generated Podcast</p> <p class="mt-1 text-sm font-medium text-slate-100">The Next AI Bottleneck Is Delegated Authority</p> </div> <a href="/audio/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.m4a" download class="shrink-0 rounded-none border border-slate-700 bg-slate-900/60 px-2.5 py-1.5 text-xs font-semibold text-slate-200 hover:bg-slate-800" data-track="Writing: Download Audio" data-track-props="{&#34;slug&#34;:&#34;2026-04-18-the-next-ai-bottleneck-is-delegated-authority&#34;,&#34;kind&#34;:&#34;memo&#34;}">
+⬇︎ .m4a
+</a> </div> <audio class="w-full" controls preload="metadata" data-track="Writing: Play Audio" data-track-props="{&#34;slug&#34;:&#34;2026-04-18-the-next-ai-bottleneck-is-delegated-authority&#34;,&#34;kind&#34;:&#34;memo&#34;}"> <source src="/audio/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.m4a" type="audio/mp4">
+Your browser does not support audio playback.
+</audio> </section> </div> </header> <div class="paper-content prose prose-invert mt-8 max-w-none"> <div><p>Everyone is still arguing about models.</p>
+<p>Government is starting to ask a harder question: what does it take to
+trust software that can act?</p>
+<p>That is the real signal in the current stack. NIST is pushing on
+agent standards, agent security, identity and authorization, evaluation,
+monitoring, and procurement-facing measurement. DARPA is pushing on
+trustworthy systems, AI engineering, and human-AI teaming. Defense
+acquisition is starting to ask for open implementations, public
+documentation, conformance artifacts, and software that other teams can
+inherit.</p>
+<p>These are not the same effort.</p>
+<p>They are, however, circling the same missing layer.</p>
+<p>The next bottleneck in AI is not generation.</p>
+<p>It is governed delegated authority.</p>
+<p>That has been the through-line of the argument on this site for a
+while now.</p>
+<p><em>From AI Force Multiplication to Force Creation</em> argued that
+the strategic shift is not from no AI to some AI. It is from human-hours
+amplified to agent-hours delegated. <em>ACP-RA</em> argued that this
+transition is not fieldable without a control plane: explicit identities
+for agents, explicit trust scopes, mediated tool use, evidence, replay,
+rollback, and degraded-mode survivability. <em>DAD</em> argued that the
+problem is institutional as much as technical: machine-executed
+authority needs a joint control-plane authority, not just another
+software program. <em>From PDFs to Pull Requests</em> made the adjacent
+point that governance cannot remain static prose. At machine tempo,
+policy has to become executable, versioned, testable, and continuously
+verified.</p>
+<p>Recent NIST, DARPA, and Prometheus Flame signals do not replace that
+argument.</p>
+<p>They validate it.</p>
+<h2 id="agents-are-not-apps">Agents are not apps</h2>
+<p>This is the center of gravity.</p>
+<p>Agents are not apps. They are delegated-authority systems.</p>
+<p>An app usually executes inside a relatively fixed envelope. It takes
+user input, processes it, and returns an output. An agent is different.
+It plans. It selects actions. It uses tools. It traverses systems. It
+can modify external state. It can continue operating after the initial
+prompt. It can collaborate with other agents. It can create consequences
+that outlive the interaction that started them.</p>
+<p>Once that is true, the core problem changes.</p>
+<p>The interesting question is no longer whether the model is
+impressive.</p>
+<p>The question is whether the delegation is governable.</p>
+<p>That requires a different architecture.</p>
+<p>It requires identity for agents and sub-agents. It requires explicit
+trust scopes rather than implied permission. It requires policy decision
+points and policy enforcement points at the actual doing boundary:
+runtime admission, retrieval, tool invocation, inter-agent messaging,
+work-unit transitions, and release. It requires budgets, containment,
+and revocation. It requires signed traces, provenance, replay, and
+rollback. It requires environments that can be constrained and modified
+rather than treated as an unbounded execution surface.</p>
+<p>In other words, it requires a control plane.</p>
+<p>That is the argument here. Not “AI, but safer.” Not “better evals.”
+Not “more standards.”</p>
+<p>A control plane for delegated authority.</p>
+<h2 id="nist-is-starting-to-define-the-operational-surface">NIST is
+starting to define the operational surface</h2>
+<p>The most important thing in NIST’s recent work is not any single
+document. It is the shape of the portfolio.</p>
+<p>The AI Agent Standards Initiative is explicitly about agents that can
+act autonomously, function securely on behalf of users, and interoperate
+through standards and open protocols. That is already a meaningful
+shift. The target is no longer only model quality in isolation. The
+target is trustworthy action in an ecosystem.</p>
+<p>The January RFI on AI agent security makes the shift even clearer. It
+is scoped to agent systems capable of affecting external state. It asks
+about deployment environments, tool restrictions, continuous monitoring,
+patching across the lifecycle, human oversight for consequential
+actions, and the current state of “undoes, rollbacks, or negations” for
+unwanted trajectories. That is the right class of question. It means the
+conversation is moving from “is the model safe?” to “how do we govern a
+system that can do things?”</p>
+<p>The identity and authority concept work points in the same direction.
+Identification, authorization, auditing, non-repudiation, and
+prompt-injection controls are not accessory concerns. They are the
+skeleton of accountable delegation.</p>
+<p>The evaluation portfolio matters for the same reason. NIST AI 800-2
+pushes toward validity, transparency, and reproducibility in automated
+benchmark evaluations. NIST AI 800-3 pushes evaluators to formalize
+assumptions and measurement targets statistically. NIST AI 800-4 shifts
+attention from lab scoring to post-deployment monitoring. The MOU with
+GSA ties evaluation more directly to procurement through USAi. The
+OpenMined CRADA pushes on secure evaluation methods for settings where
+data, models, or benchmarks cannot be openly shared.</p>
+<p>Put differently, NIST is starting to build measurement science for
+trust in operation.</p>
+<p>That is good.</p>
+<p>But measurement alone is not the answer.</p>
+<p>Measurement needs a governed execution surface to measure.</p>
+<h2 id="darpa-is-pushing-research-toward-the-same-problem">DARPA is
+pushing research toward the same problem</h2>
+<p>DARPA’s AI Forward initiative lands in the same neighborhood from the
+research side.</p>
+<p>It frames the objective as trustworthy systems for national security
+missions. It explicitly centers three thrusts: foundational theory, AI
+engineering, and human-AI teaming. It says the point is to build systems
+that work as intended in the real world, not just in the lab.</p>
+<p>That is more important than it sounds.</p>
+<p>For years, the AI discourse drifted toward a shallow equation: better
+benchmark performance equals progress. DARPA is naming a deeper
+requirement. Real systems have to operate reliably, interact
+appropriately with people, and hold up in contested, messy
+environments.</p>
+<p>Still, trustworthiness only becomes real when it has an engineering
+surface.</p>
+<p>A trustworthy system is not one that scores well on an eval card and
+then disappears into runtime darkness. A trustworthy system is one whose
+authority is bounded, whose actions are mediated, whose evidence is
+retained, whose permissions can be reduced or revoked, whose behavior
+can be supervised as a portfolio, and whose failure does not
+automatically become a mission-scale event.</p>
+<p>That is why trustworthy AI eventually becomes control-plane
+engineering.</p>
+<h2
+id="prometheus-flame-matters-because-acquisition-is-starting-to-buy-for-inheritance">Prometheus
+Flame matters because acquisition is starting to buy for
+inheritance</h2>
+<p>The Prometheus Flame draft matters less because of the deadline and
+more because of what it revealed.</p>
+<p>The Air Force did not frame the early phases as a competition for
+another closed demo stack. The draft points instead toward open-source
+AMS GRA and A-GRA implementations, permissive licensing, public
+repositories and documentation, turn-key projects, CI/CD artifacts,
+compliance reporting, and follow-on prototype and production OT
+pathways. It also places real weight on usability, onboarding, standards
+compliance, and risk rather than treating them as proposal garnish.</p>
+<p>That is not normal demo procurement.</p>
+<p>That is ecosystem formation.</p>
+<p>The most important artifact in that kind of acquisition is not the
+thing that flies once.</p>
+<p>It is the thing other people can inherit.</p>
+<p>A reference implementation. A starter kit. A conformance harness. A
+public repo. A paved road. An example project that works out of the box.
+A delivery system that others can extend without privileged access to
+the original builder.</p>
+<p>That logic sits naturally beside the argument in <em>From PDFs to
+Pull Requests</em>. If government wants an open, durable autonomy
+ecosystem, standards cannot remain prose-only and compliance cannot
+remain narrative-only. The substrate has to be executable: code, tests,
+schemas, policy objects, evaluation gates, evidence events, reproducible
+pipelines, and release discipline.</p>
+<p>That is what it means to buy for inheritance.</p>
+<h2 id="the-next-object-we-need-an-action-reversibility-profile">The
+next object we need: an Action Reversibility Profile</h2>
+<p>Previous writing on this site already argued for trust scopes,
+control planes, policy gates, evidence, and rollback.</p>
+<p>The extension I would add now is this: every serious agent deployment
+should carry an <strong>Action Reversibility Profile</strong>.</p>
+<p>The point is simple. Not all actions are equal, and our architectures
+should stop pretending they are.</p>
+<p>Some actions are safely reversible. Some are compensable but not
+literally undoable. Some are effectively irreversible. Some should be
+prohibited altogether.</p>
+<p>That classification should not live in a policy memo on a shelf.</p>
+<p>It should live in the control plane.</p>
+<p>At minimum, an Action Reversibility Profile should classify actions
+into four buckets:</p>
+<ol>
+<li><p><strong>Reversible</strong>: actions that can be automatically
+undone with high confidence.</p></li>
+<li><p><strong>Compensable</strong>: actions that cannot be literally
+rolled back but can be corrected through a defined compensation
+path.</p></li>
+<li><p><strong>Irreversible</strong>: actions whose consequences cannot
+be practically reversed and therefore require tighter gating, stronger
+evidence, and usually explicit human authorization.</p></li>
+<li><p><strong>Prohibited</strong>: actions the system is never
+permitted to take.</p></li>
+</ol>
+<p>For each class, the profile should define:</p>
+<ul>
+<li><p>approval conditions</p></li>
+<li><p>allowed tools and environments</p></li>
+<li><p>evidence obligations</p></li>
+<li><p>logging and provenance requirements</p></li>
+<li><p>rollback or compensation mechanisms</p></li>
+<li><p>timeout behavior</p></li>
+<li><p>kill-switch behavior</p></li>
+<li><p>update-handling rules</p></li>
+<li><p>degraded-mode posture</p></li>
+</ul>
+<p>This is where recent NIST signal becomes especially useful. If
+government is already asking about deployment constraints, monitoring,
+patching, human oversight, and the state of practice for undoes or
+rollbacks, reversibility should become a first-class design property
+rather than a hopeful runtime feature.</p>
+<p>Reversibility is not just a safety pattern.</p>
+<p>It is an operational tempo pattern.</p>
+<p>The faster a system can act, the faster it must be able to stop,
+contain, and recover.</p>
+<h2 id="what-should-happen-next">What should happen next</h2>
+<p>If the current direction is real, the next moves should be
+concrete.</p>
+<h3 id="standardize-authority-not-just-interfaces">1) Standardize
+authority, not just interfaces</h3>
+<p>Message schemas are not enough. The next standards layer has to carry
+identity, trust scope, delegated permissions, policy hooks, and evidence
+events.</p>
+<h3 id="make-conformance-machine-checkable">2) Make conformance
+machine-checkable</h3>
+<p>If a standard cannot be tested, it will eventually be narrated
+instead of implemented. Conformance needs harnesses, reference
+scenarios, negative tests, and machine-readable outputs.</p>
+<h3 id="treat-rollback-as-a-first-class-design-property">3) Treat
+rollback as a first-class design property</h3>
+<p>Rollback should shape action design, decomposition, and environment
+mediation from the beginning, not appear as an afterthought after
+deployment.</p>
+<h3
+id="collapse-procurement-evaluation-and-operations-into-one-evidence-loop">4)
+Collapse procurement, evaluation, and operations into one evidence
+loop</h3>
+<p>Procurement should not buy one thing, evaluation should not measure a
+second thing, and operations should not trust a third thing. The same
+evidence model should flow from source to test to deployment to
+sustainment.</p>
+<h3 id="fund-open-substrates-and-maintainers">5) Fund open substrates
+and maintainers</h3>
+<p>If the goal is a real ecosystem, government cannot only reward edge
+demos. It has to fund the center: reference implementations, conformance
+tooling, public starter kits, maintainers, and the delivery systems that
+keep the whole thing governable over time.</p>
+<h2 id="the-real-advantage">The real advantage</h2>
+<p>The strategic advantage is not “having AI.”</p>
+<p>It is being able to field governed autonomy at mission tempo.</p>
+<p>That means being able to delegate without surrendering authority. It
+means being able to move faster without severing provenance. It means
+being able to exploit open ecosystems without accepting open-ended risk.
+It means many builders can contribute while identity, policy, evidence,
+rollback, and containment remain coherent across the whole system.</p>
+<p>That is the job of the control plane.</p>
+<p>And that is why this moment matters.</p>
+<p>NIST is starting to standardize toward the operational surface. DARPA
+is starting to research toward trustworthy systems that work in the real
+world. Defense acquisition is beginning to buy for open, inheritable
+substrates rather than only polished integration theater.</p>
+<p>Good.</p>
+<p>Now the missing piece needs to be stated plainly.</p>
+<p>The future will not be won by institutions with the most impressive
+demos.</p>
+<p>It will be won by institutions that learn how to govern delegated
+authority.</p>
+<p>That is the next layer.</p>
+<p>That is the work.</p>
+<h2 id="references">References</h2>
+<ol>
+<li><p>NIST CAISI, <em>AI Agent Standards Initiative</em>.
+https://www.nist.gov/caisi/ai-agent-standards-initiative</p></li>
+<li><p>NIST CAISI, <em>CAISI Issues Request for Information About
+Securing AI Agent Systems</em>.
+https://www.nist.gov/news-events/news/2026/01/caisi-issues-request-information-about-securing-ai-agent-systems</p></li>
+<li><p>NCCoE, <em>New Concept Paper on Identity and Authority of
+Software Agents</em>.
+https://www.nccoe.nist.gov/news-insights/new-concept-paper-identity-and-authority-software-agents</p></li>
+<li><p>NCCoE, <em>Accelerating the Adoption of Software and AI Agent
+Identity and Authorization</em> (concept paper PDF).
+https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf</p></li>
+<li><p>NIST, <em>Towards Best Practices for Automated Benchmark
+Evaluations</em> (NIST AI 800-2).
+https://www.nist.gov/news-events/news/2026/01/towards-best-practices-automated-benchmark-evaluations</p></li>
+<li><p>NIST, <em>NIST AI 800-2 Initial Public Draft</em> (PDF).
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf</p></li>
+<li><p>NIST, <em>New Report: Expanding the AI Evaluation Toolbox with
+Statistical Models</em> (NIST AI 800-3).
+https://www.nist.gov/news-events/news/2026/02/new-report-expanding-ai-evaluation-toolbox-statistical-models</p></li>
+<li><p>NIST, <em>NIST AI 800-3</em> (PDF).
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-3.pdf</p></li>
+<li><p>NIST, <em>New Report: Challenges to the Monitoring of Deployed AI
+Systems</em> (NIST AI 800-4).
+https://www.nist.gov/news-events/news/2026/03/new-report-challenges-monitoring-deployed-ai-systems</p></li>
+<li><p>NIST, <em>NIST AI 800-4</em> (PDF).
+https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf</p></li>
+<li><p>NIST CAISI, <em>CAISI signs MOU with GSA to boost AI evaluation
+science in federal procurement through USAi</em>.
+https://www.nist.gov/news-events/news/2026/03/caisi-signs-mou-gsa-boost-ai-evaluation-science-federal-procurement-through</p></li>
+<li><p>NIST CAISI, <em>CAISI signs CRADA with OpenMined to Enable Secure
+AI Evaluations</em>.
+https://www.nist.gov/news-events/news/2026/03/announcement-caisi-signs-crada-openmined-enable-secure-ai-evaluations</p></li>
+<li><p>DARPA, <em>AI Forward</em>.
+https://www.darpa.mil/research/programs/ai-forward</p></li>
+<li><p>SAM.gov, <em>Prometheus Flame - Request for Information</em>
+(Special Notice, FA8694-26-S-8888).
+https://sam.gov/opp/68a071f69a1c4ec883b8392c5ae040b1/view</p></li>
+<li><p>SAM.gov API notice description (source for extracted draft text).
+https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=68a071f69a1c4ec883b8392c5ae040b1</p></li>
+</ol>
+</div> </div>  <div class="mt-10 flex flex-col gap-3 pt-6 md:flex-row md:justify-between"> <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href="/writing/2026-02-17-dont-put-frontier-ai-under-itar/">
+← Don&#39;t Put Frontier AI Under ITAR: A Blunt Instrument for a Dual-Use Reality </a> <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href="/writing/2026-04-29-cveagentnet-next-control-plane-vulnerability-management/"> CVEAgentNet and the Next Control Plane for Vulnerability Management →
+</a> </div> <div class="mt-8"> <h2 class="text-sm font-semibold text-slate-50">Related by tags and type</h2> <ul class="mt-3 space-y-2 text-sm text-slate-300"> <li> <a class="hover:underline" href="/writing/2026-02-12-stand-up-dad-joint-control-plane-authority/"> Stand Up Delegated Autonomy Directorate (DAD) as a Joint Control Plane Authority </a> </li><li> <a class="hover:underline" href="/writing/caf-ra/"> Continuous Assurance Fabric Reference Architecture (CAF-RA) </a> </li><li> <a class="hover:underline" href="/writing/acp-ra/"> Agent Control Plane Reference Architecture (ACP-RA) </a> </li><li> <a class="hover:underline" href="/writing/agentic-force-creation/"> From AI Force Multiplication to Force Creation </a> </li><li> <a class="hover:underline" href="/writing/2026-02-17-dont-put-frontier-ai-under-itar/"> Don&#39;t Put Frontier AI Under ITAR: A Blunt Instrument for a Dual-Use Reality </a> </li> </ul> </div> </article> <aside class="writing-toc card hidden xl:block" data-writing-toc hidden> <div class="writing-toc-inner"> <div class="writing-toc-title">On this page</div> <nav aria-label="On this page"> <ul data-writing-toc-list></ul> </nav> </div> </aside> </div> <script type="application/json" id="writing-runtime-meta">{"title":"The Next AI Bottleneck Is Delegated Authority","siteTitle":"Adam Boas","url":"https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/","published":"2026-04-18T00:00:00.000Z"}</script> <script>
+		(() => {
+			const content = document.querySelector('.paper-content');
+			if (!content) return;
+
+			const runtimeMetaEl = document.getElementById('writing-runtime-meta');
+			const runtimeMeta = runtimeMetaEl ? JSON.parse(runtimeMetaEl.textContent || '{}') : {};
+			const citeText =
+				`${runtimeMeta.title || ''}. ${runtimeMeta.siteTitle || ''}. ${runtimeMeta.url || ''}${runtimeMeta.published ? ` (published ${String(runtimeMeta.published).slice(0, 10)})` : ''}`.trim();
+			const citeButtons = Array.from(document.querySelectorAll('[data-copy-cite]'));
+			for (const btn of citeButtons) {
+				btn.addEventListener('click', async () => {
+					try {
+						await navigator.clipboard.writeText(citeText);
+						const prev = btn.textContent;
+						btn.textContent = '✅ Copied';
+						setTimeout(() => {
+							btn.textContent = prev;
+						}, 1200);
+					} catch {
+						window.prompt('Copy citation text:', citeText);
+					}
+				});
+			}
+
+			const progressLabels = Array.from(document.querySelectorAll('[data-writing-progress-label]'));
+			if (progressLabels.length) {
+				const getScrollTop = () =>
+					Math.max(window.scrollY || 0, document.documentElement?.scrollTop || 0, document.body?.scrollTop || 0);
+
+				let lastPct = -1;
+				const updateReadingProgress = () => {
+					const scrollTop = getScrollTop();
+					const contentRect = content.getBoundingClientRect();
+					const contentTop = scrollTop + contentRect.top;
+					const contentHeight = content.scrollHeight;
+					const viewportHeight = Math.max(1, window.innerHeight || 1);
+					const numerator = scrollTop - contentTop + viewportHeight * 0.2;
+					const denominator = Math.max(1, contentHeight - viewportHeight * 0.45);
+					const ratio = Math.max(0, Math.min(1, numerator / denominator));
+					const pct = Math.round(ratio * 100);
+					if (pct === lastPct) return;
+					lastPct = pct;
+					for (const progressLabel of progressLabels) {
+						progressLabel.textContent = `${pct}% read`;
+					}
+				};
+
+				let progressTicking = false;
+				const onProgressScroll = () => {
+					if (progressTicking) return;
+					progressTicking = true;
+					window.requestAnimationFrame(() => {
+						updateReadingProgress();
+						progressTicking = false;
+					});
+				};
+
+				updateReadingProgress();
+				window.addEventListener('scroll', onProgressScroll, { passive: true });
+				document.addEventListener('scroll', onProgressScroll, { passive: true, capture: true });
+				window.addEventListener('resize', onProgressScroll, { passive: true });
+			}
+
+			for (const table of content.querySelectorAll('table')) {
+				if (table.closest('.table-wrap')) continue;
+				const wrap = document.createElement('div');
+				wrap.className = 'table-wrap';
+				table.parentNode?.insertBefore(wrap, table);
+				wrap.appendChild(table);
+			}
+
+			const lightbox = document.createElement('div');
+			lightbox.className = 'image-lightbox';
+			lightbox.setAttribute('hidden', '');
+			lightbox.innerHTML = `
+				<button type="button" class="image-lightbox-close" aria-label="Close image preview">×</button>
+				<img alt="" class="image-lightbox-img" />
+				<p class="image-lightbox-caption"></p>
+			`;
+			document.body.appendChild(lightbox);
+			const lightboxImg = lightbox.querySelector('.image-lightbox-img');
+			const lightboxCaption = lightbox.querySelector('.image-lightbox-caption');
+			const closeBtn = lightbox.querySelector('.image-lightbox-close');
+
+			const closeLightbox = () => {
+				lightbox.setAttribute('hidden', '');
+				document.body.classList.remove('lightbox-open');
+			};
+			const openLightbox = (src, alt) => {
+				if (!src || !lightboxImg) return;
+				lightboxImg.src = src;
+				lightboxImg.alt = alt || '';
+				if (lightboxCaption) lightboxCaption.textContent = alt || '';
+				lightbox.removeAttribute('hidden');
+				document.body.classList.add('lightbox-open');
+			};
+
+			closeBtn?.addEventListener('click', closeLightbox);
+			lightbox.addEventListener('click', (event) => {
+				if (event.target === lightbox) closeLightbox();
+			});
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && !lightbox.hasAttribute('hidden')) closeLightbox();
+			});
+
+			for (const img of content.querySelectorAll('figure img, p > img')) {
+				const src = img.getAttribute('src') || img.currentSrc;
+				if (!src) continue;
+				img.classList.add('zoomable-image');
+				img.setAttribute('tabindex', '0');
+				img.setAttribute('role', 'button');
+				img.setAttribute('aria-label', 'Open image preview');
+				img.addEventListener('click', () => openLightbox(src, img.getAttribute('alt') || ''));
+				img.addEventListener('keydown', (event) => {
+					if (event.key === 'Enter' || event.key === ' ') {
+						event.preventDefault();
+						openLightbox(src, img.getAttribute('alt') || '');
+					}
+				});
+
+				const figure = img.closest('figure');
+				if (figure && !figure.querySelector('.figure-open-link')) {
+					const link = document.createElement('a');
+					link.className = 'figure-open-link';
+					link.href = src;
+					link.target = '_blank';
+					link.rel = 'noreferrer';
+					link.textContent = 'Open full image';
+					figure.appendChild(link);
+				}
+			}
+
+			const toc = document.querySelector('[data-writing-toc]');
+			const tocList = toc?.querySelector('[data-writing-toc-list]');
+			if (!toc || !tocList) return;
+
+			const slugify = (text) =>
+				text
+					.toLowerCase()
+					.replace(/[^a-z0-9\s-]/g, '')
+					.trim()
+					.replace(/\s+/g, '-')
+					.replace(/-+/g, '-');
+
+			const idCounts = new Map();
+			const headings = [...content.querySelectorAll('h2, h3')].filter((h) => h.textContent?.trim());
+			for (const h of headings) {
+				if (!h.id) {
+					const base = slugify(h.textContent || 'section') || 'section';
+					const n = (idCounts.get(base) || 0) + 1;
+					idCounts.set(base, n);
+					h.id = n === 1 ? base : `${base}-${n}`;
+				}
+			}
+
+			if (headings.length < 3) {
+				toc.setAttribute('hidden', '');
+				return;
+			}
+
+			const links = [];
+			for (const h of headings) {
+				const li = document.createElement('li');
+				li.className = h.tagName === 'H3' ? 'toc-level-3' : 'toc-level-2';
+				const a = document.createElement('a');
+				a.href = `#${h.id}`;
+				a.textContent = h.textContent?.trim() || '';
+				li.appendChild(a);
+				tocList.appendChild(li);
+				links.push({ heading: h, link: a });
+			}
+
+			toc.removeAttribute('hidden');
+
+			const positionTocRail = () => {
+				const article = content.closest('.writing-detail-shell')?.querySelector('article.card');
+				if (!article) return;
+				const articleRect = article.getBoundingClientRect();
+				const gap = 18;
+				const rightInset = 22;
+				const minWidth = 172;
+				const desiredLeft = articleRect.right + gap;
+				const maxLeft = window.innerWidth - rightInset - minWidth;
+				const left = Math.max(8, Math.min(desiredLeft, maxLeft));
+				toc.style.left = `${Math.round(left)}px`;
+				toc.style.right = `${rightInset}px`;
+				toc.style.width = 'auto';
+			};
+
+			positionTocRail();
+
+			let activeHeading = null;
+			let activeLink = null;
+
+			const setActive = (heading) => {
+				if (!heading) return;
+				if (activeHeading === heading) return;
+				activeHeading = heading;
+				for (const { heading: h, link } of links) {
+					if (h === heading) {
+						link.setAttribute('data-active', 'true');
+						activeLink = link;
+					} else {
+						link.removeAttribute('data-active');
+					}
+				}
+
+				if (activeLink && toc) {
+					const targetTop = activeLink.offsetTop - toc.clientHeight * 0.34;
+					const maxTop = Math.max(0, toc.scrollHeight - toc.clientHeight);
+					const clampedTop = Math.max(0, Math.min(maxTop, targetTop));
+					if (Math.abs(toc.scrollTop - clampedTop) > 8) {
+						toc.scrollTo({ top: clampedTop, behavior: 'auto' });
+					}
+				}
+			};
+
+			const findCurrentByPosition = () => {
+				const actionBar = document.querySelector('.writing-actions-bar');
+				const actionOffset = actionBar ? actionBar.getBoundingClientRect().height : 0;
+				const threshold = Math.max(90, actionOffset + 28);
+				let current = links[0]?.heading || null;
+				for (const { heading } of links) {
+					if (heading.getBoundingClientRect().top <= threshold) current = heading;
+					else break;
+				}
+				return current;
+			};
+
+			let ticking = false;
+			const onScroll = () => {
+				if (ticking) return;
+				ticking = true;
+				window.requestAnimationFrame(() => {
+					setActive(findCurrentByPosition());
+					ticking = false;
+				});
+			};
+
+			if ('IntersectionObserver' in window) {
+				const observer = new IntersectionObserver(
+					(entries) => {
+						const visible = entries
+							.filter((e) => e.isIntersecting)
+							.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+						if (visible.length) setActive(visible[0].target);
+					},
+					{ root: null, rootMargin: '-18% 0px -70% 0px', threshold: [0, 0.2, 0.6] },
+				);
+				for (const { heading } of links) observer.observe(heading);
+			}
+
+			setActive(findCurrentByPosition());
+			window.addEventListener('scroll', onScroll, { passive: true });
+			window.addEventListener(
+				'resize',
+				() => {
+					positionTocRail();
+					onScroll();
+				},
+				{ passive: true },
+			);
+		})();
+	</script> <script type="module" src="/scripts/codeblock-tools.js"></script> <script type="module" src="/scripts/copy-link.js"></script>  </main> <footer class="site-footer border-t border-slate-800 bg-slate-950"> <div class="container py-7 text-sm text-slate-400 md:py-8"> <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"> <div class="space-y-1"> <p>© 2026 Adam Boas</p> <p class="text-xs text-slate-500">Version v2.4.50 · Last updated Fri, Jul 31, 2026, 21:52 EDT</p> </div> <ul class="flex flex-wrap items-center gap-x-2 gap-y-2"> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/sitemap/">Sitemap</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/changes/">Changes</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/status/">Status</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/contact/">Contact</a> </li> </ul> </div> </div> </footer>  <div id="global-shortcuts-overlay" class="shortcuts-overlay" hidden> <button type="button" class="shortcuts-backdrop" data-shortcuts-close aria-label="Close keyboard shortcuts"></button> <section class="shortcuts-panel card" role="dialog" aria-modal="true" aria-labelledby="shortcuts-title"> <div class="flex items-start justify-between gap-3 border-b border-slate-800 px-4 py-3"> <div> <h2 id="shortcuts-title" class="text-base font-semibold text-slate-50">Keyboard Shortcuts</h2> <p class="mt-1 text-xs text-slate-400">Fast nav and search across the site.</p> </div> <button type="button" class="shortcut-close-btn" data-shortcuts-close aria-label="Close keyboard shortcuts">×</button> </div> <div class="grid gap-4 px-4 py-4 text-sm text-slate-200 md:grid-cols-2"> <section> <h3 class="shortcut-group-heading">Global</h3> <ul class="mt-2 space-y-2"> <li><span class="kbd">/</span> focus page search</li> <li><span class="kbd">?</span> open/close this panel</li> <li><span class="kbd">Esc</span> close panel</li> </ul> </section> <section> <h3 class="shortcut-group-heading">Go to</h3> <ul class="mt-2 space-y-2"> <li><span class="kbd">g</span> then <span class="kbd">h</span> Home</li> <li><span class="kbd">g</span> then <span class="kbd">w</span> Writing</li> <li><span class="kbd">g</span> then <span class="kbd">e</span> Events</li> <li><span class="kbd">g</span> then <span class="kbd">o</span> Opportunities</li> <li><span class="kbd">g</span> then <span class="kbd">c</span> Changes</li> </ul> </section> </div> <div class="border-t border-slate-800 px-4 py-3"> <div class="flex flex-wrap gap-2 text-xs"> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="h">Home</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="w">Writing</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="e">Events</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="o">Opportunities</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="c">Changes</button> </div> </div> </section> </div> <div id="global-shortcut-leader" class="shortcut-leader-pill" aria-hidden="true">
+Go to: <span class="kbd">h</span> <span class="kbd">w</span> <span class="kbd">e</span> <span class="kbd">o</span> <span class="kbd">c</span> </div> <button id="global-shortcuts-fab" class="shortcut-fab" type="button" aria-label="Open keyboard shortcuts (?)" aria-controls="global-shortcuts-overlay" aria-haspopup="dialog">?</button> <script type="module" src="/_astro/global-shortcuts.Bll5pRal.js"></script> </body> </html>

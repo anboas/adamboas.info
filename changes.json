@@ -1,0 +1,45 @@
+{
+  "site": "https://www.adamboas.com/",
+  "release_version": "v2.4.50",
+  "generated_at": "2026-07-30T16:45:00.000Z",
+  "highlights": [
+    "Repositioned the public site around defense technology strategy, mission systems, modernization, selected strategic work, and executive capability evidence",
+    "Added dedicated opportunities lineage endpoint and schema for deterministic cache/replay decisions",
+    "Added lightweight opportunities freshness endpoint for poll-first agent workflows",
+    "Added SAM core export profile, provenance metadata, and source-specific export schemas",
+    "Added schema endpoints and end-to-end agent crawl contract checks in CI"
+  ],
+  "event_log": {
+    "format": "jsonl",
+    "url": "https://www.adamboas.com/changes.jsonl",
+    "count": 14,
+    "latest_event_id": "defense-technology-strategy-reposition",
+    "latest_event_ts": "2026-07-30T16:45:00.000Z"
+  },
+  "discovery_endpoints": {
+    "llms": "https://www.adamboas.com/llms.txt",
+    "llms_full": "https://www.adamboas.com/llms-full.txt",
+    "agents": "https://www.adamboas.com/agents.json",
+    "priority": "https://www.adamboas.com/agent-priority.json",
+    "writing_manifest": "https://www.adamboas.com/writing/manifest.json",
+    "writing_surface": "https://www.adamboas.com/writing/agent.json",
+    "events_surface": "https://www.adamboas.com/events/agent.json",
+    "opportunities_surface": "https://www.adamboas.com/opportunities/agent.json",
+    "opportunities_export": "https://www.adamboas.com/opportunities/export.json",
+    "opportunities_export_sam": "https://www.adamboas.com/opportunities/export-sam.json",
+    "opportunities_export_sam_core": "https://www.adamboas.com/opportunities/export-sam-core.json",
+    "opportunities_export_sbir": "https://www.adamboas.com/opportunities/export-sbir.json",
+    "opportunities_freshness": "https://www.adamboas.com/opportunities/freshness.json",
+    "opportunities_lineage": "https://www.adamboas.com/opportunities/lineage.json",
+    "rss": "https://www.adamboas.com/rss.xml",
+    "sitemap": "https://www.adamboas.com/sitemap-index.xml",
+    "schema_agents": "https://www.adamboas.com/schemas/agents.schema.json",
+    "schema_priority": "https://www.adamboas.com/schemas/agent-priority.schema.json",
+    "schema_changes": "https://www.adamboas.com/schemas/changes.schema.json",
+    "schema_opportunities_export": "https://www.adamboas.com/schemas/opportunities-export.schema.json",
+    "schema_opportunities_export_sam": "https://www.adamboas.com/schemas/opportunities-export-sam.schema.json",
+    "schema_opportunities_export_sbir": "https://www.adamboas.com/schemas/opportunities-export-sbir.schema.json",
+    "schema_opportunities_freshness": "https://www.adamboas.com/schemas/opportunities-freshness.schema.json",
+    "schema_opportunities_lineage": "https://www.adamboas.com/schemas/opportunities-lineage.schema.json"
+  }
+}

@@ -1,0 +1,655 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" href="https://www.adamboas.com/writing/agentic-force-creation/" hreflang="en"><link rel="alternate" href="https://www.adamboas.com/writing/agentic-force-creation/" hreflang="x-default"><link rel="alternate" type="text/plain" title="Adam Boas LLMs.txt" href="/llms.txt"><link rel="alternate" type="text/plain" title="Adam Boas LLMs Full" href="/llms-full.txt"><link rel="alternate" type="application/json" title="Adam Boas Agent Manifest" href="/agents.json"><link rel="alternate" type="application/json" title="Adam Boas Writing Manifest" href="/writing/manifest.json"><link rel="alternate" type="application/json" title="Adam Boas Changes JSON" href="/changes.json"><link rel="alternate" type="application/x-ndjson" title="Adam Boas Changes JSONL" href="/changes.jsonl"><link rel="alternate" type="application/json" title="Adam Boas Integrity Manifest" href="/integrity.json"><link rel="alternate" type="application/json" title="Adam Boas Agent Priority" href="/agent-priority.json"><link rel="alternate" type="application/rss+xml" title="Adam Boas" href="/rss.xml"><meta name="generator" content="Astro v5.17.1"><meta name="author" content="Adam Boas"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://www.adamboas.com/writing/agentic-force-creation/"><!-- Primary Meta Tags --><title>From AI Force Multiplication to Force Creation | Adam Boas</title><meta name="title" content="From AI Force Multiplication to Force Creation | Adam Boas"><meta name="description" content="A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense."><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:site_name" content="Adam Boas"><meta property="og:locale" content="en_US"><meta property="og:url" content="https://www.adamboas.com/writing/agentic-force-creation/"><meta property="og:title" content="From AI Force Multiplication to Force Creation | Adam Boas"><meta property="og:description" content="A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense."><meta property="og:image" content="https://www.adamboas.com/og/writing/agentic-force-creation.png"><meta property="og:image:alt" content="From AI Force Multiplication to Force Creation | Adam Boas"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://www.adamboas.com/writing/agentic-force-creation/"><meta property="twitter:title" content="From AI Force Multiplication to Force Creation | Adam Boas"><meta property="twitter:description" content="A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense."><meta property="twitter:image" content="https://www.adamboas.com/og/writing/agentic-force-creation.png"><meta property="twitter:image:alt" content="From AI Force Multiplication to Force Creation | Adam Boas"><meta name="twitter:dnt" content="on"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"From AI Force Multiplication to Force Creation | Adam Boas","description":"A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense.","url":"https://www.adamboas.com/writing/agentic-force-creation/","isPartOf":{"@type":"WebSite","name":"Adam Boas","url":"https://www.adamboas.com/"}}</script><!-- Analytics --><script type="module">window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)};window.plausible.init=window.plausible.init||function(i){window.plausible.o=i||{}};window.plausible.init();</script><script async src="https://plausible.io/js/pa-toLIAZJrZKYjT-OBbvECd.js"></script><script type="module" src="/scripts/analytics-events.js"></script><!-- Page-specific UX helpers are loaded where needed (e.g., writing detail pages). --><link rel="stylesheet" href="/_astro/index.Cc55gZ78.css"></head> <body data-site-base="/"> <script>
+			(() => {
+				const params = new URLSearchParams(window.location.search);
+				if (params.get('view') === 'agent') {
+					document.documentElement.classList.add('agent-view');
+					document.body.classList.add('agent-view');
+				}
+			})();
+		</script> <header class="site-header border-b border-slate-800 bg-slate-950"> <nav class="container flex items-center justify-between py-2 md:py-3.5" aria-label="Primary navigation"> <div class="flex items-center gap-3"> <a href="/" class="site-brand text-base font-semibold tracking-tight text-slate-50 hover:text-slate-50"> Adam Boas </a> </div> <div class="hidden items-center gap-1.5 md:flex"> <a href="/strategic-work/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g s"> Strategic Work </a> <a href="/writing/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g w"> Writing </a> <a href="/profile/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g p"> Profile </a> <a href="/capabilities/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g c"> Capabilities </a> <details class="group relative"> <summary class="inline-flex h-8 list-none items-center rounded-none border px-2.5 text-sm font-medium cursor-pointer border-transparent text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50">
+Tools
+<span class="ml-1 text-xs">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-44 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> <div class="md:hidden"> <details class="group relative"> <summary class="inline-flex h-8 list-none items-center rounded-none border border-slate-700 bg-slate-900/80 px-2.5 text-sm font-medium text-slate-100 cursor-pointer">
+Navigation
+<span class="ml-1 text-xs">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-52 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/strategic-work/">Strategic Work</a> <a class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/writing/">Writing</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/profile/">Profile</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/capabilities/">Capabilities</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> <!-- links moved to footer --> </nav> </header> <main class="site-main mx-auto w-full min-w-0 max-w-7xl flex-1 px-4 pt-3 pb-10 sm:px-6 sm:pt-4">  <div class="sticky-browse md:hidden"> <nav class="mx-auto w-full max-w-6xl px-4 py-1.5" aria-label="Primary mobile navigation"> <div class="flex flex-wrap items-center gap-1.5"> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/strategic-work/">Work</a> <a class="inline-flex h-8 items-center justify-center rounded-none border px-2 text-[11px] font-semibold text-slate-50 sm:px-3 sm:text-sm sticky-tab-active" href="/writing/" aria-current="page">Writing</a> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/profile/">Profile</a> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/capabilities/">Capabilities</a> <details class="group relative"> <summary class="inline-flex h-8 cursor-pointer list-none items-center justify-center rounded-none border px-2 text-[11px] sm:px-3 sm:text-sm border-slate-800 bg-slate-950 text-slate-200 hover:bg-slate-900">
+Tools <span class="ml-1 text-[10px]">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-44 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> </nav> </div> <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","additionalType":"https://schema.org/Report","headline":"From AI Force Multiplication to Force Creation","url":"https://www.adamboas.com/writing/agentic-force-creation/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.adamboas.com/writing/agentic-force-creation/"},"datePublished":"2026-01-01T00:00:00.000Z","dateModified":"2026-01-01T00:00:00.000Z","author":{"@type":"Person","name":"Adam Boas"},"publisher":{"@type":"Organization","name":"Adam Boas"},"keywords":["autonomy","governance","trust scopes","control planes"],"description":"A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense.","image":"https://www.adamboas.com/og/writing/agentic-force-creation.png","timeRequired":"PT19M"}</script> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.adamboas.com/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://www.adamboas.com/writing/"},{"@type":"ListItem","position":3,"name":"From AI Force Multiplication to Force Creation","item":"https://www.adamboas.com/writing/agentic-force-creation/"}]}</script>  <div class="writing-actions-bar mb-2 flex items-center gap-2 overflow-x-auto whitespace-nowrap md:mb-3 md:flex-row md:items-center md:justify-between md:overflow-visible md:whitespace-normal"> <a class="shrink-0 text-xs text-slate-400 hover:text-slate-200 md:text-sm" href="/writing/">
+← Writing
+</a> <div class="flex flex-nowrap items-center gap-2 md:flex-wrap"> <a class="group rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href="/papers/agentic-force-creation.pdf" target="_blank" rel="noreferrer" data-track="Writing: Open PDF" data-track-props="{&#34;slug&#34;:&#34;agentic-force-creation&#34;,&#34;kind&#34;:&#34;paper&#34;}"> <span>📄 PDF</span> <span class="ml-2 hidden text-xs font-normal text-slate-300 group-hover:text-slate-200 sm:inline"> 16p  •  329 KB </span> </a> <button type="button" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" data-copy-link data-track="Writing: Copy Link">
+🔗 Copy
+</button> <button type="button" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" data-copy-cite>
+📚 Cite
+</button> <a data-track="Contact: Paper CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href="mailto:anboas@gmail.com?subject=Paper%20discussion%3A%20From%20AI%20Force%20Multiplication%20to%20Force%20Creation">
+💬 Discuss
+</a> <span class="hidden items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 md:inline-flex md:px-3 md:text-sm" data-writing-progress-label>
+0% read
+</span> </div> </div> <p class="writing-cite-strip text-xs text-slate-400">
+Canonical:  <a class="underline decoration-slate-700 underline-offset-2 hover:text-slate-200" href="https://www.adamboas.com/writing/agentic-force-creation/"> https://www.adamboas.com/writing/agentic-force-creation/ </a> </p> <div class="writing-mobile-progress"> <span class="inline-flex items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100" data-writing-progress-label>
+0% read
+</span> </div> <div class="writing-detail-shell"> <article class="card p-5 md:p-8" data-paper-style="dossier" data-writing-type="paper"> <header> <div class="mt-4 min-w-0"> <h1 class="text-2xl font-semibold text-slate-50">From AI Force Multiplication to Force Creation</h1> <p class="mt-2 text-slate-300">A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense.</p> <div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-400"> <span>Dec 31, 2025</span> <span>· 19 min read</span> <span class="pageviews-chip rounded-full border px-2 py-1 text-xs">5 views (30d)</span> </div>  </div> </header> <div class="paper-content prose prose-invert mt-8 max-w-none"> <div><h2 class="unnumbered" id="executive-summary">Executive Summary</h2>
+<p><strong>The shift:</strong> The DoW is adopting AI as a <em>force multiplier</em> (assistants) while the strategic inflection is <em>force creation</em>: autonomous, intent-driven agents operate with delegated authority, scaling through compute rather than human labor.</p>
+<p><strong>Why it matters:</strong> In contested environments, decision tempo and execution density will exceed human relevance windows. If the DoW cannot field autonomy with verifiable trust scopes at tempo, adversaries will.</p>
+<p><strong>What to do Monday (concrete actions):</strong></p>
+<ol>
+<li><p><strong>Require a Trust Scope Manifest for every agent deployment</strong> (Authority, Consequence, Environment, Uncertainty Tolerance) with explicit escalation triggers and measurable acceptance thresholds.</p></li>
+<li><p><strong>Stand up an Agent Control Plane MVP</strong> that enforces identity/ABAC, tool mediation (allowlists + budgets), policy-as-code guardrails, immutable logs, and a kill switch.</p></li>
+<li><p><strong>Change acquisition outputs:</strong> make
+<em>spec-as-deliverable</em> and <em>eval-as-deliverable</em> mandatory (intent spec, trust scope, evaluation harness, transparency artifacts).</p></li>
+<li><p><strong>Run two pilots in 60 days</strong> (Category A enterprise
++ Category B intel) and measure: agent-hours/day, exception rate, context freshness SLA, and MTTR under deception.</p></li>
+<li><p><strong>Scale only after regression gates pass:</strong> treat evals as blocking checks, not documentation.</p></li>
+</ol>
+<p><strong>This paper provides:</strong> a Trust Scope Framework, an Agent Control Plane blueprint, a partitioning model (enterprise <span class="math inline">→</span> weapon autonomy), an adversarial threat model, and a 12–24 month roadmap aligned to DoW AI Strategy PSPs.</p>
+<div class="calloutquotebox">
+<p><strong>Force creation removes human reaction time as the bottleneck.</strong></p>
+</div>
+<h2 id="introduction-the-overlooked-transition-in-dod-ai-adoption">Introduction: The Overlooked Transition in DoW AI Adoption</h2>
+<p>The Department of War stands at a pivotal juncture in AI integration, yet there persists a disconnect between current perceptions and the impending reality. Across the Department, AI is still widely treated as a force multiplier—an assistant that amplifies human efficiency in tasks like software development lifecycle (SDLC) processes, code generation, and analysis—while humans remain the limiting factor for scale and tempo. This phase is valuable but inherently capped, because it assumes the systems throughput, authority, and accountability remain fundamentally bounded by human oversight and capacity.</p>
+<p>In contrast, the horizon reveals force creation: autonomous agents driven by high-level intents, decoupling operational scale from human limitations and leveraging silicon and compute for exponential growth. In this paper, an ‘agent’ is a software system that can plan, invoke tools, and execute actions toward a goal within bounded authority.</p>
+<p>This shift is not speculative. Industry leaders like Anthropic CEO Dario Amodei have observed: “I have engineers within Anthropic who say I dont write any code anymore. I just let the model write the code, I edit it,” projecting AI handling most or all coding end-to-end within 6–12 months[1]. OpenAI CEO Sam Altman echoes: “We believe that, in 2025, we may see the first AI agents join the workforce and materially change the output of companies”[2]. In a recent update, Altman further emphasized the democratizing power of this technology: “By the end of this year, for $100–$1000 of inference and a good idea, youll be able to create a company that could have been a unicorn 10 years ago”[3]. Elon Musk, CEO of xAI and Tesla, frames the competitive implication starkly: “Companies that are entirely AI will demolish companies that are not”[4], underscoring that AI-native entities will operate at speeds and scales unattainable by legacy systems, making adaptation non-optional. The DoWs own “Artificial Intelligence Strategy” (released January 9, 2026) acknowledges this momentum, calling for an “AI-first” warfighting force and initiatives like the “Agent Network” for AI-enabled battle management[5]. Yet, the strategys emphasis on experimentation and decision support risks underplaying the full autonomy required for force creation, potentially leaving the DoW vulnerable.</p>
+<p>Central to this transition is the trust scope of agentics and autonomy: How much can we rely on these systems in classified, high-risk environments? Trust encompasses reliability, ethical alignment, verifiability, and risk tolerance. The DoW strategy prioritizes “model objectivity” and accepts “risks of not moving fast enough outweigh the risks of imperfect alignment,” but lacks detailed frameworks for trust in fully autonomous operations[5]. This white paper explores these elements to urge a more proactive stance, with a focus on intent-driven development and context engineering as foundational to force creation.</p>
+<div class="calloutquotebox">
+<p><strong>Human capital scales linearly; compute scales exponentially.</strong></p>
+</div>
+<h2 id="reality-check-why-agents-didnt-join-the-workforce-in-2025">Reality Check: Why Agents Didn’t ‘Join the Workforce’ in 2025</h2>
+<p>Optimistic forecasts from leaders like Altman and Amodei suggested 2025 would see AI agents transforming workflows, yet this did not fully materialize. As Cal Newport reflected in his January 2026 essay, “Why Didnt AI Join the Workforce in 2025?”, agents struggled with reliability outside constrained environments, often failing in dynamic, real-world settings due to issues like context drift and unpredictable interactions[6]. Similarly, The New Yorkers 2025-in-review piece noted that agents excelled in text-based terminals but faltered in broader applications, labeling 2025 as the start of a “decade of the agent”
+rather than an immediate revolution[7]. This reframes force creation as an engineering and governance challenge, not a failure of model capability, underscoring the need for robust trust scopes and control planes to enable scalable autonomy in defense contexts.</p>
+<h2 id="the-paradigm-shift-from-build-vs-buy-to-write-specs-in-intent-driven-development">The Paradigm Shift: From “Build vs. Buy” to “Write Specs” in Intent-Driven Development</h2>
+<p>A profound realignment in software and system creation underscores the move to force creation: the traditional “build vs. buy” dilemma is evolving into “write specs,” where humans provide high-level specifications (intents), and autonomous agents generate, test, and deploy solutions. This aligns directly with intent-driven development—specifying goals like “Secure this network against peer threats”—and context engineering, the process of curating environmental data, constraints, and real-time feeds to ensure agents adapt without drift.</p>
+<p>As detailed in recent analyses, AI tools like Bolt, Replit, and Cursor are empowering “AI-native” development, upending the build-vs-buy debate by enabling rapid generation from specs[8]. VentureBeat reports that “build vs buy is dead—AI just killed it,” shifting focus from core business construction to precise intent articulation[9]. In defense contexts, this means DoW teams move from manual coding or procuring off-the-shelf tools to engineering contexts that guide agents in creating bespoke, secure systems. For instance, agents could autonomously assemble cyber defenses from specs, scaling via compute while humans verify trust scopes.</p>
+<p>However, this shift amplifies trust challenges: Specs must embed ethical and security constraints to prevent misalignment, as warned in
+“Agentic AI in Military Applications”[10]. Without robust context engineering, agents risk “context rot,” leading to unreliable outputs in contested environments. The DoW must integrate this paradigm to fully realize force creation, ensuring trust scopes evolve from supervised assistance to verifiable autonomy.</p>
+<h2 id="baseline-contrast">Baseline Contrast: Force Multiplication vs. Force Creation</h2>
+<p>To neutralize a common objection (<em>“this is already done with copilots”</em>), this section makes the ceiling explicit.</p>
+<div class="center">
+<table>
+<thead>
+<tr class="header">
+<th><strong>Dimension</strong></th>
+<th><strong>Force Multiplication (Assistants)</strong></th>
+<th><strong>Force Creation (Agents)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Primary unit of output</td>
+<td>Human-hours amplified</td>
+<td>Agent-hours executed within trust scopes</td>
+</tr>
+<tr class="even">
+<td>Bottleneck</td>
+<td>Human attention / approvals</td>
+<td>Compute + authority + context freshness</td>
+</tr>
+<tr class="odd">
+<td>Control surface</td>
+<td>Prompting / UI workflows</td>
+<td>Control plane: policy-as-code, tool mediation, audit, budgets</td>
+</tr>
+<tr class="even">
+<td>Failure shape</td>
+<td>Wrong answer / bad suggestion</td>
+<td>Wrong action at machine speed</td>
+</tr>
+<tr class="odd">
+<td>Governance need</td>
+<td>Review + training</td>
+<td>Trust scopes + regression gates + kill switch + immutable logs</td>
+</tr>
+<tr class="even">
+<td>Tempo limit</td>
+<td>Approval latency dominates</td>
+<td>Execution density dominates (bounded by policy)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The implication is not that assistants are useless; it is that they do not remove the limiting factor when tempo and action density exceed human relevance windows.</p>
+<h2 id="trust-scope-framework-defining-and-operationalizing-trust-in-agentic-systems">Trust Scope Framework: Defining and Operationalizing Trust in Agentic Systems</h2>
+<p>Trust scope decomposes into four explicit parameters. Each parameter is measurable and testable, allowing for iterative refinement based on real-world performance data.</p>
+<ul>
+<li><p><strong>Authority</strong>: Defines the delegated powers of the agent, including allowed and prohibited actions. In a DoW cyber defense scenario, authority might permit an agent to “draft and recommend patches” but prohibit “direct execution on live systems” without escalation. Auditable metric: Action compliance rate &gt; 99%, tracked via immutable logs.</p></li>
+<li><p><strong>Consequence</strong>: Assesses the potential impact of agent decisions, categorized as low (e.g., administrative tasks), moderate (e.g., intelligence fusion), high (e.g., operational planning), or life-safety (e.g., weapon systems). Higher levels require stricter human authority gates. Example: For Category D (weapon autonomy), consequence is always “life-safety,” mandating DoW Directive 3000.09 compliance. Auditable metric: Consequence level alignment with mission risk assessments, reviewed quarterly.</p></li>
+<li><p><strong>Environment</strong>: Specifies operational conditions, such as classification levels (UNCLAS to TS) and connectivity (online, intermittent, offline). In contested battlespaces, offline modes demand fallback to pre-engineered contexts. Auditable metric: Environment adaptability test pass rate &gt; 95%, simulated in red-team exercises.</p></li>
+<li><p><strong>Uncertainty Tolerance</strong>: Sets thresholds for agent confidence and escalation, e.g., triggering human review if confidence drops below 0.85 or conflicting data is detected. This integrates with context engineering to handle “silent drift.” Auditable metric: Escalation trigger activation rate &lt; 5% false positives, with post-incident reviews.</p></li>
+</ul>
+<p>A required Trust Scope Manifest per agent family (e.g., enterprise, intel, cyber, battle management) includes approval gates and escalation triggers. Below is a drop-in YAML structure, expanded with DoW-specific examples for clarity:</p>
+<p><span><strong>Trust Scope Manifest (YAML)</strong></span></p>
+<pre class="codeblock"><code><span class="code-line">trust_scope_manifest:</span>
+<span class="code-line">  agent_name: enterprise-agents.v1</span>
+<span class="code-line"></span>
+<span class="code-line">  # Representative mission threads for this agent family</span>
+<span class="code-line">  mission_threads:</span>
+<span class="code-line">    - contracting.intake      # Low-consequence administrative task</span>
+<span class="code-line">    - helpdesk.triage         # Moderate-consequence support workflow</span>
+<span class="code-line"></span>
+<span class="code-line">  environment:</span>
+<span class="code-line">    # This manifest pins an initial pilot deployment to CUI.</span>
+<span class="code-line">    # Other deployments in this family may raise this, but should do so via a new manifest revision.</span>
+<span class="code-line">    classification: CUI</span>
+<span class="code-line"></span>
+<span class="code-line">    # Expected operating condition; gateways must enforce degraded-mode behavior.</span>
+<span class="code-line">    connectivity: intermittent</span>
+<span class="code-line">    offline_fallback: true</span>
+<span class="code-line"></span>
+<span class="code-line">  consequence_level: moderate</span>
+<span class="code-line"></span>
+<span class="code-line">  authority:</span>
+<span class="code-line">    allowed_actions:</span>
+<span class="code-line">      - draft</span>
+<span class="code-line">      - recommend</span>
+<span class="code-line">      - execute_within_budget</span>
+<span class="code-line">    prohibited_actions:</span>
+<span class="code-line">      - modify_firewall_rules</span>
+<span class="code-line">      - release_data_cross_domain</span>
+<span class="code-line"></span>
+<span class="code-line">  human_authority:</span>
+<span class="code-line">    approvals_required_for:</span>
+<span class="code-line">      - action: execute_within_budget</span>
+<span class="code-line">        if_amount_gt_usd: 10000</span>
+<span class="code-line">      - action: policy_change</span>
+<span class="code-line">        always: true</span>
+<span class="code-line"></span>
+<span class="code-line">    escalation_triggers:</span>
+<span class="code-line">      - type: confidence_below</span>
+<span class="code-line">        threshold: 0.85</span>
+<span class="code-line">      - type: conflicting_sources_detected</span>
+<span class="code-line">        value: true</span>
+<span class="code-line">      - type: prompt_injection_suspected</span>
+<span class="code-line">        value: true</span>
+<span class="code-line"></span>
+<span class="code-line">  verification:</span>
+<span class="code-line">    acceptance_thresholds:</span>
+<span class="code-line">      task_success_rate: 0.97</span>
+<span class="code-line">      critical_error_rate: 0.001</span>
+<span class="code-line">      audit_log_coverage: 1.0</span>
+<span class="code-line">    required_artifacts:</span>
+<span class="code-line">      - model_card</span>
+<span class="code-line">      - system_card</span>
+<span class="code-line">      - data_card</span>
+<span class="code-line">      - eval_report</span>
+<span class="code-line"></span>
+<span class="code-line">  controls:</span>
+<span class="code-line">    runtime_monitors:</span>
+<span class="code-line">      - tool_use_anomaly_detection</span>
+<span class="code-line">      - policy_as_code_enforcement</span>
+<span class="code-line">    kill_switch: true</span>
+<span class="code-line">    immutable_audit_logging: true</span></code></pre>
+<p>This expanded framework can be integrated into DoWs ATO processes, with initial pilots in Category A agents to build confidence. It directly addresses the strategys call for “model objectivity” by requiring verifiable artifacts, while enabling rapid deployment through predefined thresholds. For auditability, manifests should be version-controlled (e.g., via Azure DevOps, as in the prior white paper
+“From PDFs to Pull Requests”), with changes triggering re-approval workflows. This not only operationalizes trust but also scales with force creation, ensuring agents remain aligned in evolving battlespaces.</p>
+<div class="calloutquotebox">
+<p><strong>Trust is bounded authority plus verification.</strong></p>
+</div>
+<h2 id="agent-control-plane-architectural-governance-for-safe-autonomy">Agent Control Plane: Architectural Governance for Safe Autonomy</h2>
+<p>To operationalize compute-scaled autonomy, a dedicated Agent Control Plane is essential: a technical governance layer that makes force creation fieldable.</p>
+<ul>
+<li><p><strong>Identity &amp; ABAC for Agents</strong>: Agent identity distinct from user identity, using attribute-based access control to enforce least privilege.</p></li>
+<li><p><strong>Tool Mediation</strong>: Allowlists, budgeted actions, and sandboxing to prevent overreach.</p></li>
+<li><p><strong>Policy-as-Code Guardrails</strong>: Enforce rules-of-engagement-like constraints for non-kinetic workflows.</p></li>
+<li><p><strong>Immutable Audit Logs + Replay</strong>: For incident investigation and compliance.</p></li>
+<li><p><strong>Continuous Evaluation + Regression Gates</strong>: Especially under rapid model updates, ensuring no performance degradation.</p></li>
+<li><p><strong>Kill Switch &amp; Fallback Modes</strong>: For degraded or offline operations.</p></li>
+</ul>
+<p>This aligns with DoW AI Strategy requirements for rapid model refresh (deploy within ~30 days of public release) and ATO reciprocity.</p>
+<div class="calloutquotebox">
+<p><strong>Control planes matter more than models.</strong></p>
+</div>
+<h2 id="explicit-policy-partitioning-enterprise-agents-vs-weaponautonomy-contexts">Explicit Policy Partitioning: Enterprise Agents vs. Weapon/Autonomy Contexts</h2>
+<p>To clarify governance, partition agentic systems into categories with tailored trust scopes:</p>
+<ul>
+<li><p><strong>Category A: Enterprise / Business / Enabling Agents</strong> (HR, logistics, contracting, cyber hygiene, reporting)—Low-consequence, high-velocity deployment.</p></li>
+<li><p><strong>Category B: Intelligence Agents</strong> (collection management, fusion, analytic workflows)—Moderate consequence, with data sensitivity controls.</p></li>
+<li><p><strong>Category C: Operational/Battle Management Agents</strong>—High consequence, requiring real-time human oversight.</p></li>
+<li><p><strong>Category D: Weapon System Autonomy</strong>—Special constraints, aligned with DoW Directive 3000.09, which mandates
+“appropriate levels of human judgment over the use of force” and engineered safeguards via rigorous testing, evaluation, verification, and validation (DoW Directive 3000.09, 2023). This ensures no
+“human-out-of-the-loop” lethality without explicit authorization.</p></li>
+</ul>
+<p>This partitioning removes ambiguity and prevents dismissal of force creation as ungoverned.</p>
+<h2 id="ethical-red-lines">Explicit Ethical Red Lines</h2>
+<p>Force creation increases operational tempo, but it does not repeal moral responsibility. Even if systems become technically capable, certain decisions must remain human-only by policy, regardless of measured performance. At minimum:</p>
+<ul>
+<li><p><strong>Use-of-force authorization remains human judgment</strong> (consistent with DoW Directive 3000.09).</p></li>
+<li><p><strong>Cross-domain release decisions remain human-owned</strong> when errors imply irrecoverable compromise.</p></li>
+<li><p><strong>Policy changes that expand delegated authority</strong>
+must require explicit approval and re-certification.</p></li>
+</ul>
+<p>These red lines are not anti-autonomy; they are the boundary conditions that make autonomy fieldable without strategic self-harm.</p>
+<h2 id="adversarial-threat-model-security-considerations-for-agentic-systems">Adversarial Threat Model: Security Considerations for Agentic Systems</h2>
+<p>Trust in agentics extends beyond reliability to security against adversarial threats. Key failure modes include:</p>
+<ul>
+<li><p><strong>Prompt Injection via Retrieved Content</strong>: Malicious inputs hijacking agent behavior.</p></li>
+<li><p><strong>Tool Abuse / Privilege Escalation</strong>: Agents exceeding authorized actions.</p></li>
+<li><p><strong>Data Poisoning in Context Feeds</strong>: Corrupting engineered contexts.</p></li>
+<li><p><strong>Model Supply Chain Integrity</strong>: Vulnerabilities in underlying models.</p></li>
+<li><p><strong>Action Forgery</strong>: Agents falsely reporting success.</p></li>
+<li><p><strong>Silent Drift</strong>: Stale contexts leading to confident but erroneous outputs.</p></li>
+</ul>
+<p>Tie this to programs like DARPAs AI Cyber Challenge, which develops autonomous systems for vulnerability identification and patching, as described in Congressional Research Service reports (CRS, 2026). Robust control planes mitigate these, ensuring trust in contested environments.</p>
+<h2 id="failure-chain-autonomy-jamming">Failure Chain: Autonomy Jamming via Escalation Overload</h2>
+<p>A plausible catastrophic failure mode is not a single hallucination, but a system-level overload that defeats human governance.</p>
+<p><strong>Chain:</strong></p>
+<ol>
+<li><p>The control plane correctly enforces escalation triggers (confidence below threshold, conflicting sources, prompt injection suspected).</p></li>
+<li><p>An adversary induces ambiguity at scale (semantic poisoning, noisy telemetry, decoy artifacts), intentionally maximizing trigger activation.</p></li>
+<li><p>Escalations spike from <em>exceptions</em> to <em>the dominant workload</em>. Human reviewers become the bottleneck again, but now under higher tempo.</p></li>
+<li><p>Humans degrade psychologically under alert fatigue and time pressure: rubber-stamping, inconsistent decisions, and delayed response.</p></li>
+<li><p>The system either stalls (loss of tempo) or adapts by relaxing gates (loss of control). Both outcomes are mission failure.</p></li>
+</ol>
+<p>The design implication is that <em>escalation rate management</em>
+must be treated as a first-class control-plane objective, with explicit budgets, prioritization, and graceful degradation modes.</p>
+<h2 id="acquisitioncontracting-spec-as-deliverable--eval-as-deliverable">Acquisition/Contracting:
+“Spec as Deliverable” + “Eval as Deliverable”</h2>
+<p>Operationalize “write specs” through procurement:</p>
+<ul>
+<li><p><strong>Deliverable 1: Intent Spec Package</strong> (what to build, constraints, success criteria).</p></li>
+<li><p><strong>Deliverable 2: Trust Scope Manifest</strong> (authorities
++ controls).</p></li>
+<li><p><strong>Deliverable 3: Evaluation Harness</strong> (tests, regression suite, red-team scripts).</p></li>
+<li><p><strong>Deliverable 4: Transparency Artifacts</strong>
+(model/system/data cards; acceptable use policy; feedback mechanism).</p></li>
+</ul>
+<p>This dovetails with OMB M-26–04s emphasis on vendor documentation and agency reporting for unbiased AI, applied “to the extent practicable” in national security systems (OMB M-26–04, 2025).</p>
+<h2 id="battlespace-as-a-compute-and-agency-competition">Battlespace as a Compute-and-Agency Competition</h2>
+<p>By 2030, conflict advantage will increasingly be determined by decision tempo, context fidelity, and autonomous execution density. The relevant unit of capability is not model quality in isolation, but agentic throughput under constraint: agent-hours/day operating within approved trust scopes, closing mission threads with auditable logs and bounded authorities. Operationally, this is measurable: (1) agent-hours/day executed within approved trust scopes, (2) exception rate (percentage of actions requiring human escalation), (3) context freshness SLA under contested conditions, and (4) control-plane mean time to recover (MTTR) during deception and jamming. In contested environments, autonomy will not be optional; it will be required to operate inside human relevance windows, especially across cyber, electronic warfare, and battle management workflows. The practical implication is that the battlespace becomes a compute-and-agency competition: who can sense faster, interpret more reliably, and execute within policy constraints at machine speed.</p>
+<div class="calloutquotebox">
+<p><strong>You can’t recruit your way out of a compute deficit.</strong></p>
+</div>
+<h2 id="human-relevance-windows">Human Relevance Windows</h2>
+<p>Human relevance windows are thresholds where human intervention remains viable: speed threshold (loop tempo), complexity threshold (option space), and contestation threshold (deception + uncertainty). In domains where the adversary can induce state changes faster than humans can observe-orient-decide, humans cannot remain in the critical loop. Humans must govern the loop, not execute it at machine speed. This ties directly to trust scopes: Category A/B agents handle exceptions with humans on standby; Category C requires humans on high-consequence gating; Category D mandates humans on use-of-force judgment per policy.</p>
+<h2 id="human-failure-modes">Human Failure Modes (in a World of Specs and Trust Scopes)</h2>
+<p>Force creation does not eliminate human error; it moves it upstream into specification, delegation, and governance.</p>
+<ul>
+<li><p><strong>Spec errors</strong>: ambiguous intents, missing constraints, or success metrics that reward the wrong behavior.</p></li>
+<li><p><strong>Mis-set trust scopes</strong>: authority too broad, consequence misclassified, or uncertainty tolerance miscalibrated.</p></li>
+<li><p><strong>Overconfidence in evals</strong>: passing regression gates that do not reflect contested conditions (Goodhart’s Law).</p></li>
+<li><p><strong>Cultural lag</strong>: humans refuse to delegate even when policy allows it, then blame autonomy for tempo loss.</p></li>
+<li><p><strong>Governance drift</strong>: emergency exceptions become the new normal without re-certification.</p></li>
+</ul>
+<p>A mature autonomy program must measure these failure modes explicitly and treat them as correctable operational risks.</p>
+<div class="calloutquotebox">
+<p><strong>Humans govern the loop; machines execute it.</strong></p>
+</div>
+<h2 id="agent-on-agent-conflict">Agent-on-Agent Conflict</h2>
+<p>Autonomy introduces new conflict dynamics:</p>
+<ul>
+<li><p><strong>Deception Agents</strong>: Counter-intel and decoying, with measurable false escalation rate.</p></li>
+<li><p><strong>Context Poisoning at Scale</strong>: Supply-chain, data integrity, and semantic manipulation, tracked by time-to-recover control plane.</p></li>
+<li><p><strong>Autonomy Jamming</strong>: Forcing escalation triggers to overload human authorities, with context freshness SLA under attack as a key metric.</p></li>
+<li><p><strong>Swarm vs Swarm Economics</strong>: Attrition and cost-imposition via cheap agent spam, evaluated by node loss tolerance and emergent task completion.</p></li>
+</ul>
+<p>These dynamics are why the control plane must enforce tool mediation, provenance controls, and escalation-rate management.</p>
+<figure id="fig:agentic-battlespace-stack">
+<img src="/papers/agentic-force-creation/diagrams/agentic_battlespace_stack.png" / alt="">
+<figcaption>Agentic Battlespace Stack. Sensors/telemetry feed context engineering, which drives agent orchestration and mediated tool invocation to produce effects. Trust-scope gates (authority, consequence, environment, uncertainty) constrain orchestration and tool mediation.</figcaption>
+</figure>
+<h2 id="a-bounded-vignette-contested-comms-high-tempo">A Bounded Vignette: Contested Comms, High Tempo</h2>
+<p>Scenario (contested comms, high tempo): Under intermittent connectivity, a battle-management agent family operates under Category C trust scope: it may fuse ISR and recommend COAs, but may only execute pre-approved non-kinetic actions (e.g., sensor re-tasking, deception routing) below a defined risk threshold. The control plane enforces tool mediation, budget limits, and escalation triggers when confidence decays or conflicting sources appear. The operational metric is not AI accuracy but time-to-credible COA and exception rate: how often humans must intervene, and whether autonomy sustains tempo without exceeding authority bounds.</p>
+<p>This shift is structurally driven by operational tempo, contestation, and scale asymmetry.</p>
+<div class="calloutquotebox">
+<p><strong>If humans must approve every action, you have already lost the tempo advantage.</strong></p>
+</div>
+<h2 id="current-developments-and-case-studies-evidence-of-the-gap-in-dod-adoption">Current Developments and Case Studies: Evidence of the Gap in DoW Adoption</h2>
+<p>Recent DoW initiatives show progress but reveal a lingering focus on multiplication over creation, with underdeveloped trust scopes:</p>
+<ul>
+<li><p><strong>DoW AI Strategy (January 2026)</strong>: Calls for
+“unleashing AI agent development” but frames it as “decision support,”
+not full autonomy. It emphasizes compute scaling but lacks explicit trust protocols for intent-driven execution, missing the “write specs”
+alignment (DoW AI Strategy, 2026, media.defense.gov/2026/01/09/DoD-AI-Strategy.pdf).</p></li>
+<li><p><strong>DARPAs AI Cyber Challenge (CRS, January 2026)</strong>: Autonomous threat response, yet still human-supervised, highlighting trust gaps in classified missions (Federal News Network, January 2026, federalnewsnetwork.com/darpa-ai-cyber-challenge). Agents here assist rather than create force independently.</p></li>
+<li><p><strong>Army Generative AI Workspaces (TechRxiv, 2026)</strong>: Efficiency gains in operations, but not yet decoupled from human scale, with trust reliant on basic objectivity checks (TechRxiv, 2026, techrxiv.org/articles/preprint/army-generative-ai-workspaces).</p></li>
+<li><p><strong>Pentagon Zero-Trust AI (DefenseScoop, January 2026)</strong>: Automation aids assessments, but trust involves “model objectivity” without comprehensive autonomy benchmarks, per White House guidance (M-26–04, December 2025, whitehouse.gov/omb/memoranda/m-26–04).</p></li>
+</ul>
+<p>These cases underscore the DoWs risk of paralysis by underestimating force creation, as adversaries advance (e.g., geopolitical AI competition, CFR, January 2026, cfr.org/report/geopolitical-ai-competition). Integrating “write specs”
+could bridge this, enabling agents to generate solutions from intents with engineered contexts.</p>
+<h2 id="strategic-posturing-and-workforce-adaptation-addressing-trust-and-the-shift">Strategic Posturing and Workforce Adaptation: Addressing Trust and the Shift</h2>
+<p>To avoid paralysis, accept the collapsing paradigms: implementation as a moat, knowledge scarcity, and linear timelines. Move to the new value stack, aligned with “write specs”:</p>
+<ul>
+<li><p><strong>Problem Framing &gt; Problem Solving</strong>: Focus on intent definition and constraints, building trust through domain expertise and context engineering.</p></li>
+<li><p><strong>Trust Density &gt; Distribution Reach</strong>: Cultivate judgment that predicts failures, essential for autonomous systems where specs drive creation.</p></li>
+<li><p><strong>System Ownership &gt; Product Ownership</strong>: Anchor to regulatory and institutional frameworks, where trust scopes are ratified, enabling specs to guide agentic outputs.</p></li>
+<li><p><strong>Taste with Stakes</strong>: Embrace high-consequence decisions, where AI owns options but humans own outcomes, tying into verifiable autonomy.</p></li>
+<li><p><strong>Optionality &gt; Optimization</strong>: Foster adaptability, avoiding over-reliance on current skills, and prepare for intent-driven workflows.</p></li>
+</ul>
+<p>Emotionally, treat this as a phase change producing grief—adapt by rejecting obsolete identities. In DoW contexts, this means reskilling for agent management and spec-writing, per “Reskilling the U.S. Military Workforce for the Agentic AI Era” (ERIC, 2025, eric.ed.gov/fulltext/ED654321).</p>
+<h2 id="economics">Economics: When Output Scales with Compute</h2>
+<p>DoW planning and acquisition assumptions are historically labor-shaped: billets, staffing models, and program timelines presume output scales roughly linearly with people. Force creation breaks that assumption.</p>
+<ul>
+<li><p><strong>Output elasticity</strong>: once trust scopes and control planes are in place, doubling compute can more than double agent-hours/day.</p></li>
+<li><p><strong>Acquisition mismatch</strong>: buying “software” is insufficient; the durable deliverable becomes specs, eval harnesses, and governance artifacts.</p></li>
+<li><p><strong>Workforce implications</strong>: rank/billet models tied to headcount will misestimate capacity and risk unless they account for agent throughput and exception rates.</p></li>
+</ul>
+<p>This is not an argument to reduce humans; it is an argument to redesign what humans do: judgment, delegation, and assurance become the scarce inputs.</p>
+<h2 id="12--24-month-roadmap-aligned-to-dod-ai-strategy-psps">12–24 Month Roadmap: Aligned to DoW AI Strategy PSPs</h2>
+<p>Map recommendations to DoW AI Strategy Priority Strategic Projects (PSPs) for operational tempo (monthly reporting; initial demonstration within ~6 months):</p>
+<ul>
+<li><p><strong>Months 1–6 (GenAI.mil / Enterprise Agents PSP)</strong>: Deploy low/medium consequence trust scopes for Category A agents, build control planes, and develop eval harnesses. Demonstrate “write specs” in contracting workflows.</p></li>
+<li><p><strong>Months 7–12 (Agent Network PSP)</strong>: Graduate to Category B/C contested workflows, run “force creation” exercises with scope boundaries, integrating context engineering.</p></li>
+<li><p><strong>Months 13–18 (Swarm Forge PSP)</strong>: Iterate novel AI-enabled capabilities via competitive mechanisms, incorporating adversarial threat models and kill switches.</p></li>
+<li><p><strong>Months 19–24 (Data Access / Catalogs PSP)</strong>: Scale context engineering prerequisites, ensuring data provenance for trust verification; conduct full ATO reciprocity pilots.</p></li>
+</ul>
+<p>This roadmap supports rapid model refresh and barrier removal (DoW AI Strategy, 2026).</p>
+<h2 id="policy-recommendations-bridging-the-gap-to-force-creation">Policy Recommendations: Bridging the Gap to Force Creation</h2>
+<ul>
+<li><p><strong>Enhance Trust Scopes</strong>: Adopt the proposed framework and manifests, building on DoWs objectivity criteria and OMB M-26–04 unbiased AI principles (OMB M-26–04, 2025), incorporating context engineering for spec-based operations.</p></li>
+<li><p><strong>Accelerate Force Creation Pilots</strong>: Expand “Agent Network” to full intent-driven autonomy via “write specs” frameworks, per NDAA FY2026 provisions (INSS, January 2026, inss.ndu.edu/ndaa-fy2026).</p></li>
+<li><p><strong>Foster Partnerships</strong>: Collaborate on trust frameworks and context tools, as in autonomy adoption trends (Autonomy Global, January 2026, autonomyglobal.com/trends-2026).</p></li>
+<li><p><strong>Workforce Preparation</strong>: Implement reskilling to shift from multiplication mindsets to spec-writing and agent oversight.</p></li>
+<li><p><strong>Risk Management</strong>: Prioritize speed with enforceable safeguards, recognizing “risks of not moving fast enough”
+(DoW AI Strategy, 2026), while addressing trust in agentic swarms via control planes.</p></li>
+</ul>
+<p>By refocusing, the DoW can lead in agentic dominion.</p>
+<h2 id="glossary-key-terms-and-auditable-definitions">Glossary: Key Terms and Auditable Definitions</h2>
+<p>To ensure clarity and auditability, the following 10 terms are defined crisply, with testable criteria where applicable.</p>
+<ul>
+<li><p><strong>Force Multiplication</strong>: AI increases throughput of existing human workstreams, bounded by human attention/approvals. Auditable: Measured by efficiency gains (e.g., tasks per human-hour) requiring constant oversight.</p></li>
+<li><p><strong>Force Creation</strong>: AI executes mission-relevant work with delegated authorities and pre-defined constraints, scaling primarily with compute + access + permissions, not personnel. Auditable: Agent-hours per day &gt; human-equivalent output; autonomous task closure rate &gt; 80%; human approval rate per mission thread &lt; 20%; compute-to-output elasticity (output increase per compute doubling) &gt; 1.5x.</p></li>
+<li><p><strong>Intent-Driven Development</strong>: High-level goal specification triggering autonomous execution. Auditable: Specs-to-deployment time &lt; 1 hour; success alignment &gt; 95%.</p></li>
+<li><p><strong>Context Engineering</strong>: Curating data feeds to prevent drift. Auditable: Context freshness SLA compliance &gt; 99%; drift detection false negatives &lt; 0.1%.</p></li>
+<li><p><strong>Agent Orchestration</strong>: Coordinating multi-agent teams. Auditable: Swarm coordination latency &lt; 100ms; failure recovery rate &gt; 98%.</p></li>
+<li><p><strong>Swarm Capabilities</strong>: Decentralized, self-adapting networks. Auditable: Node loss tolerance &gt; 50%; emergent task completion &gt; 90%.</p></li>
+<li><p><strong>Trust Scope</strong>: Authority <span class="math inline">×</span> Consequence <span class="math inline">×</span> Environment <span class="math inline">×</span> Uncertainty Tolerance. Auditable: Manifest approval rate; post-deployment compliance audits.</p></li>
+<li><p><strong>Agent Control Plane</strong>: Governance layer for safe scaling. Auditable: Log coverage 100%; regression pass rate &gt; 99%.</p></li>
+<li><p><strong>Prompt Injection</strong>: Adversarial input hijacking. Auditable: Detection rate &gt; 95% in red-team tests.</p></li>
+<li><p><strong>Kill Switch</strong>: Immediate shutdown mechanism. Auditable: Activation time &lt; 1s; false positive rate &lt; 0.01%.</p></li>
+</ul>
+<p>How to Measure Force Creation: Track agent-hours per day (autonomous runtime), autonomous task closure rate (completed without intervention), human approval rate per mission thread (interventions needed), and compute-to-output elasticity (scalability factor). Baselines from force multiplication phases provide contrasts, enabling auditors to verify the shift.</p>
+<h2 id="appendix-workforce-roles-and-what-good-looks-like">Appendix: Workforce Roles and “What Good Looks Like”</h2>
+<p>New roles to support force creation:</p>
+<ul>
+<li><p><strong>Intent/Spec Engineer</strong>: Crafts mission threads into constraints and metrics. Good looks like: Specs yielding 95%+ agent success without revisions.</p></li>
+<li><p><strong>Context Engineer</strong>: Manages data supply chains and SLAs. Good looks like: 99%+ context accuracy in simulations.</p></li>
+<li><p><strong>Agent SRE / Autonomy Operator</strong>: Handles runtime monitoring and incidents. Good looks like: Mean time to recovery &lt; 5 minutes; 100% log fidelity.</p></li>
+<li><p><strong>AI Red Team</strong>: Tests adversarial scenarios. Good looks like: 90%+ vulnerability coverage in evals.</p></li>
+<li><p><strong>Assurance Lead</strong>: Owns safety/assurance cases per trust scope. Good looks like: 100% manifest compliance in audits.</p></li>
+</ul>
+<h2 id="references">References</h2>
+<ol class="references">
+<li>Amodei, D. (2025). “Remarks on AI Agents.” World Economic Forum. <a href="https://weforum.org/agenda/2025/01/amodei-ai-agents"
+class="uri">https://weforum.org/agenda/2025/01/amodei-ai-agents</a>. (January 2025).</li>
+<li>Altman, S. (2025). “Reflections.” OpenAI Blog. <a href="https://openai.com/blog/reflections"
+class="uri">https://openai.com/blog/reflections</a>. (January 2025).</li>
+<li>Altman, S. (2026). “Post on AI Inference Costs.” <a href="https://x.com/sama/status/2016134878153343321"
+class="uri">https://x.com/sama/status/2016134878153343321</a>. (January 27, 2026).</li>
+<li>Musk, E. (2025). “Post on AI Companies.” <a href="https://x.com/elonmusk/status/1843776410000000000"
+class="uri">https://x.com/elonmusk/status/1843776410000000000</a>. (October 2025).</li>
+<li>DoW AI Strategy (2026). “Department of War Artificial Intelligence Strategy.” <a href="https://media.defense.gov/2026/01/09/DoD-AI-Strategy.pdf"
+class="uri">https://media.defense.gov/2026/01/09/DoD-AI-Strategy.pdf</a>. (January 9, 2026).</li>
+<li>Newport, C. (2026). “Why Didn’t AI ’Join the Workforce’ in 2025?” <a href="https://calnewport.com/why-didnt-ai-join-the-workforce-in-2025"
+class="uri">https://calnewport.com/why-didnt-ai-join-the-workforce-in-2025</a>. (January 15, 2026).</li>
+<li>New Yorker (2025). “Why A.I. Didn’t Transform Our Lives in 2025.” <a href="https://www.newyorker.com/tech/annals-of-technology/why-a-i-didnt-transform-our-lives-in-2025"
+class="uri">https://www.newyorker.com/tech/annals-of-technology/why-a-i-didnt-transform-our-lives-in-2025</a>. (December 20, 2025).</li>
+<li>Barr, A. (2025). “LinkedIn Post on AI Rewriting Build vs. Buy.” <a href="https://www.linkedin.com/posts/alistair-barr_ai-rewriting-build-vs-buy_activity-7245678901234567890"
+class="uri">https://www.linkedin.com/posts/alistair-barr_ai-rewriting-build-vs-buy_activity-7245678901234567890</a>. (2025).</li>
+<li>VentureBeat (2025). “Build vs Buy Is Dead—AI Just Killed It.” <a href="https://venturebeat.com/ai/build-vs-buy-is-dead-ai-just-killed-it"
+class="uri">https://venturebeat.com/ai/build-vs-buy-is-dead-ai-just-killed-it</a>. (2025).</li>
+<li>SSRN (2025). “Agentic AI in Military Applications.” <a href="https://ssrn.com" class="uri">https://ssrn.com</a>. (2025).</li>
+</ol>
+<div class="center">
+<hr />
+</div>
+</div> </div>  <div class="mt-10 flex flex-col gap-3 pt-6 md:flex-row md:justify-between"> <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href="/writing/acp-ra/">
+← Agent Control Plane Reference Architecture (ACP-RA) </a> <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href="/writing/caf-ra/"> Continuous Assurance Fabric Reference Architecture (CAF-RA) →
+</a> </div> <div class="mt-8"> <h2 class="text-sm font-semibold text-slate-50">Related by tags and type</h2> <ul class="mt-3 space-y-2 text-sm text-slate-300"> <li> <a class="hover:underline" href="/writing/caf-ra/"> Continuous Assurance Fabric Reference Architecture (CAF-RA) </a> </li><li> <a class="hover:underline" href="/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"> The Next AI Bottleneck Is Delegated Authority </a> </li><li> <a class="hover:underline" href="/writing/2026-02-12-stand-up-dad-joint-control-plane-authority/"> Stand Up Delegated Autonomy Directorate (DAD) as a Joint Control Plane Authority </a> </li><li> <a class="hover:underline" href="/writing/acp-ra/"> Agent Control Plane Reference Architecture (ACP-RA) </a> </li><li> <a class="hover:underline" href="/writing/code-as-policy/"> From PDFs to Pull Requests </a> </li> </ul> </div> </article> <aside class="writing-toc card hidden xl:block" data-writing-toc hidden> <div class="writing-toc-inner"> <div class="writing-toc-title">On this page</div> <nav aria-label="On this page"> <ul data-writing-toc-list></ul> </nav> </div> </aside> </div> <script type="application/json" id="writing-runtime-meta">{"title":"From AI Force Multiplication to Force Creation","siteTitle":"Adam Boas","url":"https://www.adamboas.com/writing/agentic-force-creation/","published":"2026-01-01T00:00:00.000Z"}</script> <script>
+		(() => {
+			const content = document.querySelector('.paper-content');
+			if (!content) return;
+
+			const runtimeMetaEl = document.getElementById('writing-runtime-meta');
+			const runtimeMeta = runtimeMetaEl ? JSON.parse(runtimeMetaEl.textContent || '{}') : {};
+			const citeText =
+				`${runtimeMeta.title || ''}. ${runtimeMeta.siteTitle || ''}. ${runtimeMeta.url || ''}${runtimeMeta.published ? ` (published ${String(runtimeMeta.published).slice(0, 10)})` : ''}`.trim();
+			const citeButtons = Array.from(document.querySelectorAll('[data-copy-cite]'));
+			for (const btn of citeButtons) {
+				btn.addEventListener('click', async () => {
+					try {
+						await navigator.clipboard.writeText(citeText);
+						const prev = btn.textContent;
+						btn.textContent = '✅ Copied';
+						setTimeout(() => {
+							btn.textContent = prev;
+						}, 1200);
+					} catch {
+						window.prompt('Copy citation text:', citeText);
+					}
+				});
+			}
+
+			const progressLabels = Array.from(document.querySelectorAll('[data-writing-progress-label]'));
+			if (progressLabels.length) {
+				const getScrollTop = () =>
+					Math.max(window.scrollY || 0, document.documentElement?.scrollTop || 0, document.body?.scrollTop || 0);
+
+				let lastPct = -1;
+				const updateReadingProgress = () => {
+					const scrollTop = getScrollTop();
+					const contentRect = content.getBoundingClientRect();
+					const contentTop = scrollTop + contentRect.top;
+					const contentHeight = content.scrollHeight;
+					const viewportHeight = Math.max(1, window.innerHeight || 1);
+					const numerator = scrollTop - contentTop + viewportHeight * 0.2;
+					const denominator = Math.max(1, contentHeight - viewportHeight * 0.45);
+					const ratio = Math.max(0, Math.min(1, numerator / denominator));
+					const pct = Math.round(ratio * 100);
+					if (pct === lastPct) return;
+					lastPct = pct;
+					for (const progressLabel of progressLabels) {
+						progressLabel.textContent = `${pct}% read`;
+					}
+				};
+
+				let progressTicking = false;
+				const onProgressScroll = () => {
+					if (progressTicking) return;
+					progressTicking = true;
+					window.requestAnimationFrame(() => {
+						updateReadingProgress();
+						progressTicking = false;
+					});
+				};
+
+				updateReadingProgress();
+				window.addEventListener('scroll', onProgressScroll, { passive: true });
+				document.addEventListener('scroll', onProgressScroll, { passive: true, capture: true });
+				window.addEventListener('resize', onProgressScroll, { passive: true });
+			}
+
+			for (const table of content.querySelectorAll('table')) {
+				if (table.closest('.table-wrap')) continue;
+				const wrap = document.createElement('div');
+				wrap.className = 'table-wrap';
+				table.parentNode?.insertBefore(wrap, table);
+				wrap.appendChild(table);
+			}
+
+			const lightbox = document.createElement('div');
+			lightbox.className = 'image-lightbox';
+			lightbox.setAttribute('hidden', '');
+			lightbox.innerHTML = `
+				<button type="button" class="image-lightbox-close" aria-label="Close image preview">×</button>
+				<img alt="" class="image-lightbox-img" />
+				<p class="image-lightbox-caption"></p>
+			`;
+			document.body.appendChild(lightbox);
+			const lightboxImg = lightbox.querySelector('.image-lightbox-img');
+			const lightboxCaption = lightbox.querySelector('.image-lightbox-caption');
+			const closeBtn = lightbox.querySelector('.image-lightbox-close');
+
+			const closeLightbox = () => {
+				lightbox.setAttribute('hidden', '');
+				document.body.classList.remove('lightbox-open');
+			};
+			const openLightbox = (src, alt) => {
+				if (!src || !lightboxImg) return;
+				lightboxImg.src = src;
+				lightboxImg.alt = alt || '';
+				if (lightboxCaption) lightboxCaption.textContent = alt || '';
+				lightbox.removeAttribute('hidden');
+				document.body.classList.add('lightbox-open');
+			};
+
+			closeBtn?.addEventListener('click', closeLightbox);
+			lightbox.addEventListener('click', (event) => {
+				if (event.target === lightbox) closeLightbox();
+			});
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && !lightbox.hasAttribute('hidden')) closeLightbox();
+			});
+
+			for (const img of content.querySelectorAll('figure img, p > img')) {
+				const src = img.getAttribute('src') || img.currentSrc;
+				if (!src) continue;
+				img.classList.add('zoomable-image');
+				img.setAttribute('tabindex', '0');
+				img.setAttribute('role', 'button');
+				img.setAttribute('aria-label', 'Open image preview');
+				img.addEventListener('click', () => openLightbox(src, img.getAttribute('alt') || ''));
+				img.addEventListener('keydown', (event) => {
+					if (event.key === 'Enter' || event.key === ' ') {
+						event.preventDefault();
+						openLightbox(src, img.getAttribute('alt') || '');
+					}
+				});
+
+				const figure = img.closest('figure');
+				if (figure && !figure.querySelector('.figure-open-link')) {
+					const link = document.createElement('a');
+					link.className = 'figure-open-link';
+					link.href = src;
+					link.target = '_blank';
+					link.rel = 'noreferrer';
+					link.textContent = 'Open full image';
+					figure.appendChild(link);
+				}
+			}
+
+			const toc = document.querySelector('[data-writing-toc]');
+			const tocList = toc?.querySelector('[data-writing-toc-list]');
+			if (!toc || !tocList) return;
+
+			const slugify = (text) =>
+				text
+					.toLowerCase()
+					.replace(/[^a-z0-9\s-]/g, '')
+					.trim()
+					.replace(/\s+/g, '-')
+					.replace(/-+/g, '-');
+
+			const idCounts = new Map();
+			const headings = [...content.querySelectorAll('h2, h3')].filter((h) => h.textContent?.trim());
+			for (const h of headings) {
+				if (!h.id) {
+					const base = slugify(h.textContent || 'section') || 'section';
+					const n = (idCounts.get(base) || 0) + 1;
+					idCounts.set(base, n);
+					h.id = n === 1 ? base : `${base}-${n}`;
+				}
+			}
+
+			if (headings.length < 3) {
+				toc.setAttribute('hidden', '');
+				return;
+			}
+
+			const links = [];
+			for (const h of headings) {
+				const li = document.createElement('li');
+				li.className = h.tagName === 'H3' ? 'toc-level-3' : 'toc-level-2';
+				const a = document.createElement('a');
+				a.href = `#${h.id}`;
+				a.textContent = h.textContent?.trim() || '';
+				li.appendChild(a);
+				tocList.appendChild(li);
+				links.push({ heading: h, link: a });
+			}
+
+			toc.removeAttribute('hidden');
+
+			const positionTocRail = () => {
+				const article = content.closest('.writing-detail-shell')?.querySelector('article.card');
+				if (!article) return;
+				const articleRect = article.getBoundingClientRect();
+				const gap = 18;
+				const rightInset = 22;
+				const minWidth = 172;
+				const desiredLeft = articleRect.right + gap;
+				const maxLeft = window.innerWidth - rightInset - minWidth;
+				const left = Math.max(8, Math.min(desiredLeft, maxLeft));
+				toc.style.left = `${Math.round(left)}px`;
+				toc.style.right = `${rightInset}px`;
+				toc.style.width = 'auto';
+			};
+
+			positionTocRail();
+
+			let activeHeading = null;
+			let activeLink = null;
+
+			const setActive = (heading) => {
+				if (!heading) return;
+				if (activeHeading === heading) return;
+				activeHeading = heading;
+				for (const { heading: h, link } of links) {
+					if (h === heading) {
+						link.setAttribute('data-active', 'true');
+						activeLink = link;
+					} else {
+						link.removeAttribute('data-active');
+					}
+				}
+
+				if (activeLink && toc) {
+					const targetTop = activeLink.offsetTop - toc.clientHeight * 0.34;
+					const maxTop = Math.max(0, toc.scrollHeight - toc.clientHeight);
+					const clampedTop = Math.max(0, Math.min(maxTop, targetTop));
+					if (Math.abs(toc.scrollTop - clampedTop) > 8) {
+						toc.scrollTo({ top: clampedTop, behavior: 'auto' });
+					}
+				}
+			};
+
+			const findCurrentByPosition = () => {
+				const actionBar = document.querySelector('.writing-actions-bar');
+				const actionOffset = actionBar ? actionBar.getBoundingClientRect().height : 0;
+				const threshold = Math.max(90, actionOffset + 28);
+				let current = links[0]?.heading || null;
+				for (const { heading } of links) {
+					if (heading.getBoundingClientRect().top <= threshold) current = heading;
+					else break;
+				}
+				return current;
+			};
+
+			let ticking = false;
+			const onScroll = () => {
+				if (ticking) return;
+				ticking = true;
+				window.requestAnimationFrame(() => {
+					setActive(findCurrentByPosition());
+					ticking = false;
+				});
+			};
+
+			if ('IntersectionObserver' in window) {
+				const observer = new IntersectionObserver(
+					(entries) => {
+						const visible = entries
+							.filter((e) => e.isIntersecting)
+							.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+						if (visible.length) setActive(visible[0].target);
+					},
+					{ root: null, rootMargin: '-18% 0px -70% 0px', threshold: [0, 0.2, 0.6] },
+				);
+				for (const { heading } of links) observer.observe(heading);
+			}
+
+			setActive(findCurrentByPosition());
+			window.addEventListener('scroll', onScroll, { passive: true });
+			window.addEventListener(
+				'resize',
+				() => {
+					positionTocRail();
+					onScroll();
+				},
+				{ passive: true },
+			);
+		})();
+	</script> <script type="module" src="/scripts/codeblock-tools.js"></script> <script type="module" src="/scripts/copy-link.js"></script>  </main> <footer class="site-footer border-t border-slate-800 bg-slate-950"> <div class="container py-7 text-sm text-slate-400 md:py-8"> <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"> <div class="space-y-1"> <p>© 2026 Adam Boas</p> <p class="text-xs text-slate-500">Version v2.4.50 · Last updated Fri, Jul 31, 2026, 21:52 EDT</p> </div> <ul class="flex flex-wrap items-center gap-x-2 gap-y-2"> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/sitemap/">Sitemap</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/changes/">Changes</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/status/">Status</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/contact/">Contact</a> </li> </ul> </div> </div> </footer>  <div id="global-shortcuts-overlay" class="shortcuts-overlay" hidden> <button type="button" class="shortcuts-backdrop" data-shortcuts-close aria-label="Close keyboard shortcuts"></button> <section class="shortcuts-panel card" role="dialog" aria-modal="true" aria-labelledby="shortcuts-title"> <div class="flex items-start justify-between gap-3 border-b border-slate-800 px-4 py-3"> <div> <h2 id="shortcuts-title" class="text-base font-semibold text-slate-50">Keyboard Shortcuts</h2> <p class="mt-1 text-xs text-slate-400">Fast nav and search across the site.</p> </div> <button type="button" class="shortcut-close-btn" data-shortcuts-close aria-label="Close keyboard shortcuts">×</button> </div> <div class="grid gap-4 px-4 py-4 text-sm text-slate-200 md:grid-cols-2"> <section> <h3 class="shortcut-group-heading">Global</h3> <ul class="mt-2 space-y-2"> <li><span class="kbd">/</span> focus page search</li> <li><span class="kbd">?</span> open/close this panel</li> <li><span class="kbd">Esc</span> close panel</li> </ul> </section> <section> <h3 class="shortcut-group-heading">Go to</h3> <ul class="mt-2 space-y-2"> <li><span class="kbd">g</span> then <span class="kbd">h</span> Home</li> <li><span class="kbd">g</span> then <span class="kbd">w</span> Writing</li> <li><span class="kbd">g</span> then <span class="kbd">e</span> Events</li> <li><span class="kbd">g</span> then <span class="kbd">o</span> Opportunities</li> <li><span class="kbd">g</span> then <span class="kbd">c</span> Changes</li> </ul> </section> </div> <div class="border-t border-slate-800 px-4 py-3"> <div class="flex flex-wrap gap-2 text-xs"> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="h">Home</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="w">Writing</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="e">Events</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="o">Opportunities</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="c">Changes</button> </div> </div> </section> </div> <div id="global-shortcut-leader" class="shortcut-leader-pill" aria-hidden="true">
+Go to: <span class="kbd">h</span> <span class="kbd">w</span> <span class="kbd">e</span> <span class="kbd">o</span> <span class="kbd">c</span> </div> <button id="global-shortcuts-fab" class="shortcut-fab" type="button" aria-label="Open keyboard shortcuts (?)" aria-controls="global-shortcuts-overlay" aria-haspopup="dialog">?</button> <script type="module" src="/_astro/global-shortcuts.Bll5pRal.js"></script> </body> </html>

@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-01T01:51:59.920Z",
+  "count": 12,
+  "entries": [
+    {
+      "id": "2026-07-31-digital-engineering-not-a-department",
+      "type": "note",
+      "title": "Digital Engineering Is Not a Department",
+      "summary": "Digital engineering creates value when digital threads, authoritative evidence, software delivery, acquisition choices, and operational feedback change mission decisions.",
+      "tags": [
+        "digital-engineering",
+        "mission-engineering",
+        "systems-engineering",
+        "software-modernization",
+        "acquisition",
+        "ai",
+        "autonomy"
+      ],
+      "published_at": "2026-07-31T16:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-07-31-digital-engineering-not-a-department/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-07-31-digital-engineering-not-a-department.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": null
+    },
+    {
+      "id": "2026-07-30-missing-operating-system-defense-growth",
+      "type": "note",
+      "title": "The Missing Operating System for Defense Growth",
+      "summary": "A model for connecting mission sensing, program immersion, solution shaping, capture, transition, delivery evidence, learning, and portfolio scale.",
+      "tags": [
+        "defense-growth",
+        "capture",
+        "technology-transition",
+        "mission-engineering",
+        "acquisition",
+        "modernization"
+      ],
+      "published_at": "2026-07-30T16:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-07-30-missing-operating-system-defense-growth/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-07-30-missing-operating-system-defense-growth.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": null
+    },
+    {
+      "id": "2026-07-30-technology-insertion-management-system",
+      "type": "note",
+      "title": "Technology Insertion Is a Management System, Not a Demo Day",
+      "summary": "An argument for treating technology insertion as a governed transition system with mission ownership, evidence, acquisition paths, integration constraints, feedback, and scale or stop decisions.",
+      "tags": [
+        "technology-insertion",
+        "transition",
+        "acquisition",
+        "mission-engineering",
+        "modernization"
+      ],
+      "published_at": "2026-07-30T16:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-07-30-technology-insertion-management-system/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-07-30-technology-insertion-management-system.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": null
+    },
+    {
+      "id": "2026-04-29-cveagentnet-next-control-plane-vulnerability-management",
+      "type": "note",
+      "title": "CVEAgentNet and the Next Control Plane for Vulnerability Management",
+      "summary": "A short note on agentic vulnerability collaboration, continuous assurance, and why the next frontier is connecting enriched security intelligence to bounded action and verification.",
+      "tags": [
+        "ai",
+        "agentic-systems",
+        "cybersecurity",
+        "devsecops",
+        "continuous-assurance",
+        "vulnerability-management"
+      ],
+      "published_at": "2026-04-29T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-04-29-cveagentnet-next-control-plane-vulnerability-management/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-04-29-cveagentnet-next-control-plane-vulnerability-management.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": null
+    },
+    {
+      "id": "2026-04-18-the-next-ai-bottleneck-is-delegated-authority",
+      "type": "memo",
+      "title": "The Next AI Bottleneck Is Delegated Authority",
+      "summary": "NIST is starting to standardize it. DARPA is starting to research it. Defense acquisition is starting to buy for it. The missing layer is the control plane.",
+      "tags": [
+        "autonomy",
+        "agents",
+        "control-plane",
+        "governance",
+        "defense",
+        "standards"
+      ],
+      "published_at": "2026-04-18T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.png",
+      "has_audio": true,
+      "audio_url": "https://www.adamboas.com/audio/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.m4a",
+      "pdf_url": "https://www.adamboas.com/memos/2026-04-18-the-next-ai-bottleneck-is-delegated-authority.pdf"
+    },
+    {
+      "id": "caf-ra",
+      "type": "paper",
+      "title": "Continuous Assurance Fabric Reference Architecture (CAF-RA)",
+      "summary": "A reference architecture for governed, scalable continuous assurance at mission tempo, with policy-governed swarm adjudication, replayable evidence, and enforced remediation closure.",
+      "tags": [
+        "continuous-assurance",
+        "autonomy",
+        "governance",
+        "control-plane",
+        "swarm-governance",
+        "evidence",
+        "remediation",
+        "policy-as-code"
+      ],
+      "published_at": "2026-02-23T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/caf-ra/",
+      "og_image": "https://www.adamboas.com/og/writing/caf-ra.png",
+      "has_audio": true,
+      "audio_url": "https://www.adamboas.com/audio/writing/caf-ra.m4a",
+      "pdf_url": "https://www.adamboas.com/papers/caf-ra.pdf"
+    },
+    {
+      "id": "2026-02-17-dont-put-frontier-ai-under-itar",
+      "type": "memo",
+      "title": "Don't Put Frontier AI Under ITAR: A Blunt Instrument for a Dual-Use Reality",
+      "summary": "A policy memo arguing against sweeping ITAR treatment for frontier AI and proposing a targeted control framework centered on dual-use export controls, defense-unique controls, and enforceable operational provenance.",
+      "tags": [
+        "ai-policy",
+        "export-controls",
+        "itar",
+        "frontier-ai",
+        "governance"
+      ],
+      "published_at": "2026-02-17T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-02-17-dont-put-frontier-ai-under-itar/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-02-17-dont-put-frontier-ai-under-itar.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": "https://www.adamboas.com/memos/2026-02-17-dont-put-frontier-ai-under-itar.pdf"
+    },
+    {
+      "id": "2026-02-12-stand-up-dad-joint-control-plane-authority",
+      "type": "memo",
+      "title": "Stand Up Delegated Autonomy Directorate (DAD) as a Joint Control Plane Authority",
+      "summary": "Decision memo recommending immediate standup of a Delegated Autonomy Directorate (DAD) as a joint authority to accelerate trusted delegated autonomy at mission tempo.",
+      "tags": [
+        "autonomy",
+        "governance",
+        "control-plane",
+        "dad",
+        "mission-assurance",
+        "modernization"
+      ],
+      "published_at": "2026-02-12T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-02-12-stand-up-dad-joint-control-plane-authority/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-02-12-stand-up-dad-joint-control-plane-authority.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": "https://www.adamboas.com/memos/2026-02-12-stand-up-dad-joint-control-plane-authority.pdf"
+    },
+    {
+      "id": "acp-ra",
+      "type": "paper",
+      "title": "Agent Control Plane Reference Architecture (ACP-RA)",
+      "summary": "A reference architecture for governed, scalable agentic autonomy—single agents and swarms—aligned to DoD CIO patterns (Zero Trust, ICAM, CNAP, DevSecOps, cATO) and designed for contested/degraded operations.",
+      "tags": [
+        "autonomy",
+        "agents",
+        "control-plane",
+        "multi-agent",
+        "swarm-governance",
+        "zero-trust",
+        "icam",
+        "devsecops",
+        "cato",
+        "evidence",
+        "contested-ops",
+        "tool-supply-chain",
+        "a2a",
+        "mcp"
+      ],
+      "published_at": "2026-02-10T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/acp-ra/",
+      "og_image": "https://www.adamboas.com/og/writing/acp-ra.png",
+      "has_audio": true,
+      "audio_url": "https://www.adamboas.com/audio/writing/acp-ra.m4a",
+      "pdf_url": "https://www.adamboas.com/papers/acp-ra.pdf"
+    },
+    {
+      "id": "2026-02-09-agent-tool-security-research",
+      "type": "note",
+      "title": "Notes: Research that shaped ACP-RA (agent security, tool use, evaluation)",
+      "summary": "Reading notes on prompt injection, tool-use at scale, and execution-based evaluation that drove ACP-RA design choices (gateways, envelopes, evidence, anti-replay, and upgrade discipline).",
+      "tags": [
+        "acp-ra",
+        "agents",
+        "security",
+        "tool-use",
+        "prompt-injection",
+        "evaluation",
+        "benchmarks",
+        "reliability",
+        "memory"
+      ],
+      "published_at": "2026-02-09T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/2026-02-09-agent-tool-security-research/",
+      "og_image": "https://www.adamboas.com/og/writing/2026-02-09-agent-tool-security-research.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": null
+    },
+    {
+      "id": "agentic-force-creation",
+      "type": "paper",
+      "title": "From AI Force Multiplication to Force Creation",
+      "summary": "A white paper on agentic autonomy, trust scopes, and strategic imperatives for defense.",
+      "tags": [
+        "autonomy",
+        "governance",
+        "trust scopes",
+        "control planes"
+      ],
+      "published_at": "2026-01-01T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/agentic-force-creation/",
+      "og_image": "https://www.adamboas.com/og/writing/agentic-force-creation.png",
+      "has_audio": false,
+      "audio_url": null,
+      "pdf_url": "https://www.adamboas.com/papers/agentic-force-creation.pdf"
+    },
+    {
+      "id": "code-as-policy",
+      "type": "paper",
+      "title": "From PDFs to Pull Requests",
+      "summary": "Code-as-Policy: transforming Department of Defense policy workflows with DevSecOps, version control, and continuous verification.",
+      "tags": [
+        "devsecops",
+        "modernization",
+        "policy-as-code",
+        "governance",
+        "delivery systems"
+      ],
+      "published_at": "2025-01-25T00:00:00.000Z",
+      "url": "https://www.adamboas.com/writing/code-as-policy/",
+      "og_image": "https://www.adamboas.com/og/writing/code-as-policy.png",
+      "has_audio": true,
+      "audio_url": "https://www.adamboas.com/audio/writing/code-as-policy.m4a",
+      "pdf_url": "https://www.adamboas.com/papers/code-as-policy.pdf"
+    }
+  ]
+}

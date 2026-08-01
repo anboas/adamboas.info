@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "surface": "events",
+  "canonical": "https://www.adamboas.com/events/",
+  "agent_view": "https://www.adamboas.com/events/?view=agent",
+  "related_routes": {
+    "sources": "https://www.adamboas.com/events/sources/",
+    "changes_stream": "https://www.adamboas.com/changes.jsonl",
+    "priority_map": "https://www.adamboas.com/agent-priority.json"
+  },
+  "crawl_hints": {
+    "refresh_hint": "every-4h",
+    "high_churn_surface": true,
+    "prefer_canonical": true
+  }
+}

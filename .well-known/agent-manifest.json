@@ -1,0 +1,37 @@
+{
+  "name": "Adam Boas Agent Manifest (Well-Known)",
+  "canonical_manifest": "https://www.adamboas.com/agents.json",
+  "discovery": {
+    "llms": "https://www.adamboas.com/llms.txt",
+    "llms_full": "https://www.adamboas.com/llms-full.txt",
+    "priority": "https://www.adamboas.com/agent-priority.json",
+    "integrity": "https://www.adamboas.com/integrity.json",
+    "for_agents": "https://www.adamboas.com/for-agents/",
+    "strategic_work": "https://www.adamboas.com/strategic-work/",
+    "surface_maps": [
+      "https://www.adamboas.com/writing/agent.json",
+      "https://www.adamboas.com/events/agent.json",
+      "https://www.adamboas.com/opportunities/agent.json"
+    ],
+    "exports": [
+      "https://www.adamboas.com/opportunities/export.json",
+      "https://www.adamboas.com/opportunities/export-sam.json",
+      "https://www.adamboas.com/opportunities/export-sam-core.json",
+      "https://www.adamboas.com/opportunities/export-sbir.json"
+    ],
+    "metadata": [
+      "https://www.adamboas.com/opportunities/freshness.json",
+      "https://www.adamboas.com/opportunities/lineage.json"
+    ],
+    "schemas": [
+      "https://www.adamboas.com/schemas/agents.schema.json",
+      "https://www.adamboas.com/schemas/agent-priority.schema.json",
+      "https://www.adamboas.com/schemas/changes.schema.json",
+      "https://www.adamboas.com/schemas/opportunities-export.schema.json",
+      "https://www.adamboas.com/schemas/opportunities-export-sam.schema.json",
+      "https://www.adamboas.com/schemas/opportunities-export-sbir.schema.json",
+      "https://www.adamboas.com/schemas/opportunities-freshness.schema.json",
+      "https://www.adamboas.com/schemas/opportunities-lineage.schema.json"
+    ]
+  }
+}

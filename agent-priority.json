@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-01T01:51:58.378Z",
+  "ingestion_tiers": [
+    {
+      "tier": 1,
+      "reason": "Core authored corpus and discovery manifests",
+      "endpoints": [
+        "https://www.adamboas.com/llms.txt",
+        "https://www.adamboas.com/llms-full.txt",
+        "https://www.adamboas.com/agents.json",
+        "https://www.adamboas.com/writing/manifest.json",
+        "https://www.adamboas.com/writing/agent.json",
+        "https://www.adamboas.com/events/agent.json",
+        "https://www.adamboas.com/opportunities/agent.json",
+        "https://www.adamboas.com/opportunities/export.json",
+        "https://www.adamboas.com/opportunities/export-sam.json",
+        "https://www.adamboas.com/opportunities/export-sam-core.json",
+        "https://www.adamboas.com/opportunities/export-sbir.json",
+        "https://www.adamboas.com/opportunities/freshness.json",
+        "https://www.adamboas.com/opportunities/lineage.json",
+        "https://www.adamboas.com/schemas/agents.schema.json",
+        "https://www.adamboas.com/schemas/agent-priority.schema.json",
+        "https://www.adamboas.com/schemas/changes.schema.json",
+        "https://www.adamboas.com/schemas/opportunities-export.schema.json",
+        "https://www.adamboas.com/schemas/opportunities-export-sam.schema.json",
+        "https://www.adamboas.com/schemas/opportunities-export-sbir.schema.json",
+        "https://www.adamboas.com/schemas/opportunities-freshness.schema.json",
+        "https://www.adamboas.com/schemas/opportunities-lineage.schema.json"
+      ],
+      "refresh_hint": "hourly"
+    },
+    {
+      "tier": 2,
+      "reason": "High-value authored and profile surfaces",
+      "endpoints": [
+        "https://www.adamboas.com/strategic-work/",
+        "https://www.adamboas.com/writing/",
+        "https://www.adamboas.com/profile/",
+        "https://www.adamboas.com/capabilities/"
+      ],
+      "refresh_hint": "daily"
+    },
+    {
+      "tier": 3,
+      "reason": "Operational intelligence surfaces",
+      "endpoints": [
+        "https://www.adamboas.com/events/",
+        "https://www.adamboas.com/opportunities/",
+        "https://www.adamboas.com/changes.jsonl"
+      ],
+      "refresh_hint": "every-4h"
+    }
+  ],
+  "crawler_hints": {
+    "prefer_canonical": true,
+    "respect_noindex": true,
+    "agent_view_query": "view=agent"
+  }
+}

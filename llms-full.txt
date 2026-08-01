@@ -1,0 +1,58 @@
+# Adam Boas - LLM Full Discovery Map
+
+Canonical: https://www.adamboas.com/
+Generated: 2026-08-01T01:51:58.967Z
+
+## Primary surfaces (indexable)
+- Home: https://www.adamboas.com/
+- Selected strategic work: https://www.adamboas.com/strategic-work/
+- Writing index: https://www.adamboas.com/writing/
+- Writing tag index: https://www.adamboas.com/writing/tags/
+- Profile: https://www.adamboas.com/profile/
+- Capabilities: https://www.adamboas.com/capabilities/
+- Speaking: https://www.adamboas.com/speaking/
+
+## Operational surfaces (some may be noindex by design)
+- Events: https://www.adamboas.com/events/
+- Opportunities: https://www.adamboas.com/opportunities/
+- Event sources: https://www.adamboas.com/events/sources/
+- Status: https://www.adamboas.com/status/
+- Changes: https://www.adamboas.com/changes/
+
+## Machine endpoints
+- llms.txt: https://www.adamboas.com/llms.txt
+- llms-full.txt: https://www.adamboas.com/llms-full.txt
+- agents.json: https://www.adamboas.com/agents.json
+- changes.json: https://www.adamboas.com/changes.json
+- changes.jsonl: https://www.adamboas.com/changes.jsonl
+- writing manifest: https://www.adamboas.com/writing/manifest.json
+- writing surface map: https://www.adamboas.com/writing/agent.json
+- events surface map: https://www.adamboas.com/events/agent.json
+- opportunities surface map: https://www.adamboas.com/opportunities/agent.json
+- opportunities export: https://www.adamboas.com/opportunities/export.json
+- opportunities export (sam): https://www.adamboas.com/opportunities/export-sam.json
+- opportunities export (sam core): https://www.adamboas.com/opportunities/export-sam-core.json
+- opportunities export (sbir): https://www.adamboas.com/opportunities/export-sbir.json
+- opportunities freshness: https://www.adamboas.com/opportunities/freshness.json
+- opportunities lineage: https://www.adamboas.com/opportunities/lineage.json
+- integrity manifest: https://www.adamboas.com/integrity.json
+- agent priority: https://www.adamboas.com/agent-priority.json
+- well-known manifest: https://www.adamboas.com/.well-known/agent-manifest.json
+- rss: https://www.adamboas.com/rss.xml
+- sitemap: https://www.adamboas.com/sitemap-index.xml
+- schema (agents): https://www.adamboas.com/schemas/agents.schema.json
+- schema (priority): https://www.adamboas.com/schemas/agent-priority.schema.json
+- schema (changes): https://www.adamboas.com/schemas/changes.schema.json
+- schema (opportunities export): https://www.adamboas.com/schemas/opportunities-export.schema.json
+- schema (opportunities export sam): https://www.adamboas.com/schemas/opportunities-export-sam.schema.json
+- schema (opportunities export sbir): https://www.adamboas.com/schemas/opportunities-export-sbir.schema.json
+- schema (opportunities freshness): https://www.adamboas.com/schemas/opportunities-freshness.schema.json
+- schema (opportunities lineage): https://www.adamboas.com/schemas/opportunities-lineage.schema.json
+
+## Crawl policy notes
+- Prefer canonical URLs and sitemap-index ordering.
+- Prioritize /writing/ and detail pages for authored material.
+- Use /strategic-work/ for sanitized public evidence of strategy, capture, transition, and governance work.
+- Treat /events/ and /opportunities/ as high-churn intelligence surfaces.
+- Use `?view=agent` on page URLs for low-noise extraction mode when needed.
+- Respect noindex directives where present.

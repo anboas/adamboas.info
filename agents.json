@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "name": "Adam Boas Public Site Agent Manifest",
+  "site": "https://www.adamboas.com/",
+  "release_version": "v2.4.50",
+  "generated_at": "2026-08-01T01:51:58.382Z",
+  "discovery": {
+    "start": "https://www.adamboas.com/for-agents/",
+    "llms": "https://www.adamboas.com/llms.txt",
+    "llms_full": "https://www.adamboas.com/llms-full.txt",
+    "sitemap": "https://www.adamboas.com/sitemap-index.xml",
+    "rss": "https://www.adamboas.com/rss.xml"
+  },
+  "capabilities": [
+    "profile-intel",
+    "strategic-work-evidence",
+    "writing-corpus",
+    "event-intelligence",
+    "opportunity-intelligence",
+    "capability-mapping"
+  ],
+  "preferred_ingestion_order": [
+    "https://www.adamboas.com/llms.txt",
+    "https://www.adamboas.com/agent-priority.json",
+    "https://www.adamboas.com/writing/manifest.json",
+    "https://www.adamboas.com/writing/agent.json",
+    "https://www.adamboas.com/events/agent.json",
+    "https://www.adamboas.com/opportunities/agent.json",
+    "https://www.adamboas.com/opportunities/export.json",
+    "https://www.adamboas.com/opportunities/export-sam.json",
+    "https://www.adamboas.com/opportunities/export-sam-core.json",
+    "https://www.adamboas.com/opportunities/export-sbir.json",
+    "https://www.adamboas.com/opportunities/freshness.json",
+    "https://www.adamboas.com/opportunities/lineage.json",
+    "https://www.adamboas.com/writing/",
+    "https://www.adamboas.com/strategic-work/",
+    "https://www.adamboas.com/capabilities/",
+    "https://www.adamboas.com/events/",
+    "https://www.adamboas.com/opportunities/",
+    "https://www.adamboas.com/changes.json"
+  ],
+  "resources": [
+    {
+      "id": "writing-manifest",
+      "type": "manifest",
+      "url": "https://www.adamboas.com/writing/manifest.json"
+    },
+    {
+      "id": "strategic-work",
+      "type": "surface",
+      "url": "https://www.adamboas.com/strategic-work/"
+    },
+    {
+      "id": "writing-surface-map",
+      "type": "surface-map",
+      "url": "https://www.adamboas.com/writing/agent.json"
+    },
+    {
+      "id": "events-surface-map",
+      "type": "surface-map",
+      "url": "https://www.adamboas.com/events/agent.json"
+    },
+    {
+      "id": "opportunities-surface-map",
+      "type": "surface-map",
+      "url": "https://www.adamboas.com/opportunities/agent.json"
+    },
+    {
+      "id": "opportunities-export",
+      "type": "export",
+      "url": "https://www.adamboas.com/opportunities/export.json"
+    },
+    {
+      "id": "opportunities-export-sam",
+      "type": "export",
+      "url": "https://www.adamboas.com/opportunities/export-sam.json"
+    },
+    {
+      "id": "opportunities-export-sam-core",
+      "type": "export",
+      "url": "https://www.adamboas.com/opportunities/export-sam-core.json"
+    },
+    {
+      "id": "opportunities-export-sbir",
+      "type": "export",
+      "url": "https://www.adamboas.com/opportunities/export-sbir.json"
+    },
+    {
+      "id": "opportunities-freshness",
+      "type": "metadata",
+      "url": "https://www.adamboas.com/opportunities/freshness.json"
+    },
+    {
+      "id": "opportunities-lineage",
+      "type": "metadata",
+      "url": "https://www.adamboas.com/opportunities/lineage.json"
+    },
+    {
+      "id": "changes-json",
+      "type": "changelog",
+      "url": "https://www.adamboas.com/changes.json"
+    },
+    {
+      "id": "changes-jsonl",
+      "type": "stream",
+      "url": "https://www.adamboas.com/changes.jsonl"
+    },
+    {
+      "id": "events",
+      "type": "surface",
+      "url": "https://www.adamboas.com/events/"
+    },
+    {
+      "id": "opportunities",
+      "type": "surface",
+      "url": "https://www.adamboas.com/opportunities/"
+    },
+    {
+      "id": "integrity",
+      "type": "integrity",
+      "url": "https://www.adamboas.com/integrity.json"
+    },
+    {
+      "id": "priority",
+      "type": "priority",
+      "url": "https://www.adamboas.com/agent-priority.json"
+    },
+    {
+      "id": "schema-agents",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/agents.schema.json"
+    },
+    {
+      "id": "schema-priority",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/agent-priority.schema.json"
+    },
+    {
+      "id": "schema-changes",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/changes.schema.json"
+    },
+    {
+      "id": "schema-opportunities-export",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/opportunities-export.schema.json"
+    },
+    {
+      "id": "schema-opportunities-export-sam",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/opportunities-export-sam.schema.json"
+    },
+    {
+      "id": "schema-opportunities-export-sbir",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/opportunities-export-sbir.schema.json"
+    },
+    {
+      "id": "schema-opportunities-freshness",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/opportunities-freshness.schema.json"
+    },
+    {
+      "id": "schema-opportunities-lineage",
+      "type": "schema",
+      "url": "https://www.adamboas.com/schemas/opportunities-lineage.schema.json"
+    }
+  ],
+  "agent_view_query": {
+    "param": "view",
+    "value": "agent",
+    "example": "https://www.adamboas.com/writing/?view=agent"
+  },
+  "trust_and_policy": {
+    "respect_noindex": true,
+    "prefer_canonical": true,
+    "content_license": "https://www.adamboas.com/content-license/"
+  }
+}

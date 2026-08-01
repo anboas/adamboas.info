@@ -1,0 +1,1621 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" href="https://www.adamboas.com/writing/acp-ra/" hreflang="en"><link rel="alternate" href="https://www.adamboas.com/writing/acp-ra/" hreflang="x-default"><link rel="alternate" type="text/plain" title="Adam Boas LLMs.txt" href="/llms.txt"><link rel="alternate" type="text/plain" title="Adam Boas LLMs Full" href="/llms-full.txt"><link rel="alternate" type="application/json" title="Adam Boas Agent Manifest" href="/agents.json"><link rel="alternate" type="application/json" title="Adam Boas Writing Manifest" href="/writing/manifest.json"><link rel="alternate" type="application/json" title="Adam Boas Changes JSON" href="/changes.json"><link rel="alternate" type="application/x-ndjson" title="Adam Boas Changes JSONL" href="/changes.jsonl"><link rel="alternate" type="application/json" title="Adam Boas Integrity Manifest" href="/integrity.json"><link rel="alternate" type="application/json" title="Adam Boas Agent Priority" href="/agent-priority.json"><link rel="alternate" type="application/rss+xml" title="Adam Boas" href="/rss.xml"><meta name="generator" content="Astro v5.17.1"><meta name="author" content="Adam Boas"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://www.adamboas.com/writing/acp-ra/"><!-- Primary Meta Tags --><title>Agent Control Plane Reference Architecture (ACP-RA) | Adam Boas</title><meta name="title" content="Agent Control Plane Reference Architecture (ACP-RA) | Adam Boas"><meta name="description" content="A reference architecture for governed, scalable agentic autonomy—single agents and swarms—aligned to DoD CIO patterns (Zero Trust, ICAM, CNAP, DevSecOps, cATO) and designed for contested/degraded operations."><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:site_name" content="Adam Boas"><meta property="og:locale" content="en_US"><meta property="og:url" content="https://www.adamboas.com/writing/acp-ra/"><meta property="og:title" content="Agent Control Plane Reference Architecture (ACP-RA) | Adam Boas"><meta property="og:description" content="A reference architecture for governed, scalable agentic autonomy—single agents and swarms—aligned to DoD CIO patterns (Zero Trust, ICAM, CNAP, DevSecOps, cATO) and designed for contested/degraded operations."><meta property="og:image" content="https://www.adamboas.com/og/writing/acp-ra.png"><meta property="og:image:alt" content="Agent Control Plane Reference Architecture (ACP-RA) | Adam Boas"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://www.adamboas.com/writing/acp-ra/"><meta property="twitter:title" content="Agent Control Plane Reference Architecture (ACP-RA) | Adam Boas"><meta property="twitter:description" content="A reference architecture for governed, scalable agentic autonomy—single agents and swarms—aligned to DoD CIO patterns (Zero Trust, ICAM, CNAP, DevSecOps, cATO) and designed for contested/degraded operations."><meta property="twitter:image" content="https://www.adamboas.com/og/writing/acp-ra.png"><meta property="twitter:image:alt" content="Agent Control Plane Reference Architecture (ACP-RA) | Adam Boas"><meta name="twitter:dnt" content="on"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Agent Control Plane Reference Architecture (ACP-RA) | Adam Boas","description":"A reference architecture for governed, scalable agentic autonomy—single agents and swarms—aligned to DoD CIO patterns (Zero Trust, ICAM, CNAP, DevSecOps, cATO) and designed for contested/degraded operations.","url":"https://www.adamboas.com/writing/acp-ra/","isPartOf":{"@type":"WebSite","name":"Adam Boas","url":"https://www.adamboas.com/"}}</script><!-- Analytics --><script type="module">window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)};window.plausible.init=window.plausible.init||function(i){window.plausible.o=i||{}};window.plausible.init();</script><script async src="https://plausible.io/js/pa-toLIAZJrZKYjT-OBbvECd.js"></script><script type="module" src="/scripts/analytics-events.js"></script><!-- Page-specific UX helpers are loaded where needed (e.g., writing detail pages). --><link rel="stylesheet" href="/_astro/index.Cc55gZ78.css"></head> <body data-site-base="/"> <script>
+			(() => {
+				const params = new URLSearchParams(window.location.search);
+				if (params.get('view') === 'agent') {
+					document.documentElement.classList.add('agent-view');
+					document.body.classList.add('agent-view');
+				}
+			})();
+		</script> <header class="site-header border-b border-slate-800 bg-slate-950"> <nav class="container flex items-center justify-between py-2 md:py-3.5" aria-label="Primary navigation"> <div class="flex items-center gap-3"> <a href="/" class="site-brand text-base font-semibold tracking-tight text-slate-50 hover:text-slate-50"> Adam Boas </a> </div> <div class="hidden items-center gap-1.5 md:flex"> <a href="/strategic-work/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g s"> Strategic Work </a> <a href="/writing/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g w"> Writing </a> <a href="/profile/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g p"> Profile </a> <a href="/capabilities/" class="inline-flex h-8 items-center rounded-none border border-transparent px-2.5 text-sm font-medium text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50" aria-keyshortcuts="g c"> Capabilities </a> <details class="group relative"> <summary class="inline-flex h-8 list-none items-center rounded-none border px-2.5 text-sm font-medium cursor-pointer border-transparent text-slate-300 hover:border-slate-700 hover:bg-slate-900/60 hover:text-slate-50">
+Tools
+<span class="ml-1 text-xs">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-44 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> <div class="md:hidden"> <details class="group relative"> <summary class="inline-flex h-8 list-none items-center rounded-none border border-slate-700 bg-slate-900/80 px-2.5 text-sm font-medium text-slate-100 cursor-pointer">
+Navigation
+<span class="ml-1 text-xs">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-52 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/strategic-work/">Strategic Work</a> <a class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/writing/">Writing</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/profile/">Profile</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/capabilities/">Capabilities</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> <!-- links moved to footer --> </nav> </header> <main class="site-main mx-auto w-full min-w-0 max-w-7xl flex-1 px-4 pt-3 pb-10 sm:px-6 sm:pt-4">  <div class="sticky-browse md:hidden"> <nav class="mx-auto w-full max-w-6xl px-4 py-1.5" aria-label="Primary mobile navigation"> <div class="flex flex-wrap items-center gap-1.5"> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/strategic-work/">Work</a> <a class="inline-flex h-8 items-center justify-center rounded-none border px-2 text-[11px] font-semibold text-slate-50 sm:px-3 sm:text-sm sticky-tab-active" href="/writing/" aria-current="page">Writing</a> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/profile/">Profile</a> <a class="inline-flex h-8 items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2 text-[11px] text-slate-200 hover:bg-slate-900 sm:px-3 sm:text-sm" href="/capabilities/">Capabilities</a> <details class="group relative"> <summary class="inline-flex h-8 cursor-pointer list-none items-center justify-center rounded-none border px-2 text-[11px] sm:px-3 sm:text-sm border-slate-800 bg-slate-950 text-slate-200 hover:bg-slate-900">
+Tools <span class="ml-1 text-[10px]">▾</span> </summary> <div class="absolute right-0 z-40 mt-1 w-44 border border-slate-700 bg-slate-950/98 p-1 shadow-xl"> <a class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/events/">Events</a> <a class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900" href="/opportunities/">Opportunities</a> </div> </details> </div> </nav> </div> <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","additionalType":"https://schema.org/Report","headline":"Agent Control Plane Reference Architecture (ACP-RA)","url":"https://www.adamboas.com/writing/acp-ra/","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.adamboas.com/writing/acp-ra/"},"datePublished":"2026-02-10T00:00:00.000Z","dateModified":"2026-02-10T00:00:00.000Z","author":{"@type":"Person","name":"Adam Boas"},"publisher":{"@type":"Organization","name":"Adam Boas"},"keywords":["autonomy","agents","control-plane","multi-agent","swarm-governance","zero-trust","icam","devsecops","cato","evidence","contested-ops","tool-supply-chain","a2a","mcp"],"description":"A reference architecture for governed, scalable agentic autonomy—single agents and swarms—aligned to DoD CIO patterns (Zero Trust, ICAM, CNAP, DevSecOps, cATO) and designed for contested/degraded operations.","image":"https://www.adamboas.com/og/writing/acp-ra.png","timeRequired":"PT41M"}</script> <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.adamboas.com/"},{"@type":"ListItem","position":2,"name":"Writing","item":"https://www.adamboas.com/writing/"},{"@type":"ListItem","position":3,"name":"Agent Control Plane Reference Architecture (ACP-RA)","item":"https://www.adamboas.com/writing/acp-ra/"}]}</script>  <div class="writing-actions-bar mb-2 flex items-center gap-2 overflow-x-auto whitespace-nowrap md:mb-3 md:flex-row md:items-center md:justify-between md:overflow-visible md:whitespace-normal"> <a class="shrink-0 text-xs text-slate-400 hover:text-slate-200 md:text-sm" href="/writing/">
+← Writing
+</a> <div class="flex flex-nowrap items-center gap-2 md:flex-wrap"> <a class="group rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href="/papers/acp-ra.pdf" target="_blank" rel="noreferrer" data-track="Writing: Open PDF" data-track-props="{&#34;slug&#34;:&#34;acp-ra&#34;,&#34;kind&#34;:&#34;paper&#34;}"> <span>📄 PDF</span> <span class="ml-2 hidden text-xs font-normal text-slate-300 group-hover:text-slate-200 sm:inline"> 46p  •  576 KB </span> </a> <button type="button" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" data-copy-link data-track="Writing: Copy Link">
+🔗 Copy
+</button> <button type="button" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" data-copy-cite>
+📚 Cite
+</button> <a data-track="Contact: Paper CTA" class="rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 hover:bg-slate-900 md:px-3 md:text-sm" href="mailto:anboas@gmail.com?subject=Paper%20discussion%3A%20Agent%20Control%20Plane%20Reference%20Architecture%20(ACP-RA)">
+💬 Discuss
+</a> <span class="hidden items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100 md:inline-flex md:px-3 md:text-sm" data-writing-progress-label>
+0% read
+</span> </div> </div> <p class="writing-cite-strip text-xs text-slate-400">
+Canonical:  <a class="underline decoration-slate-700 underline-offset-2 hover:text-slate-200" href="https://www.adamboas.com/writing/acp-ra/"> https://www.adamboas.com/writing/acp-ra/ </a> </p> <div class="writing-mobile-progress"> <span class="inline-flex items-center rounded-none border border-slate-700 bg-slate-950/40 px-2.5 py-1.5 text-xs font-semibold text-stone-100" data-writing-progress-label>
+0% read
+</span> </div> <div class="writing-detail-shell"> <article class="card p-5 md:p-8" data-paper-style="dossier" data-writing-type="paper"> <header> <div class="mt-4 min-w-0"> <h1 class="text-2xl font-semibold text-slate-50">Agent Control Plane Reference Architecture (ACP-RA)</h1> <p class="mt-2 text-slate-300">A reference architecture for governed, scalable agentic autonomy—single agents and swarms—aligned to DoD CIO patterns (Zero Trust, ICAM, CNAP, DevSecOps, cATO) and designed for contested/degraded operations.</p> <div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-slate-400"> <span>Feb 9, 2026</span> <span>· 41 min read</span> <span class="pageviews-chip rounded-full border px-2 py-1 text-xs">21 views (30d)</span> </div> <section class="mt-6 rounded-none border border-slate-700 bg-slate-950/55 p-4 md:p-5" data-writing-audio> <div class="mb-3 flex items-center justify-between gap-3"> <div> <p class="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400">NotebookLM Generated Podcast</p> <p class="mt-1 text-sm font-medium text-slate-100">Agent Control Plane Reference Architecture (ACP-RA)</p> </div> <a href="/audio/writing/acp-ra.m4a" download class="shrink-0 rounded-none border border-slate-700 bg-slate-900/60 px-2.5 py-1.5 text-xs font-semibold text-slate-200 hover:bg-slate-800" data-track="Writing: Download Audio" data-track-props="{&#34;slug&#34;:&#34;acp-ra&#34;,&#34;kind&#34;:&#34;paper&#34;}">
+⬇︎ .m4a
+</a> </div> <audio class="w-full" controls preload="metadata" data-track="Writing: Play Audio" data-track-props="{&#34;slug&#34;:&#34;acp-ra&#34;,&#34;kind&#34;:&#34;paper&#34;}"> <source src="/audio/writing/acp-ra.m4a" type="audio/mp4">
+Your browser does not support audio playback.
+</audio> </section> </div> </header> <div class="paper-content prose prose-invert mt-8 max-w-none"> <div><h2 id="agent-control-plane-reference-architecture-acpra">Agent Control Plane Reference Architecture (ACP‑RA)</h2>
+<p>This section defines ACP‑RA at a glance: what it covers, why it exists, and the baseline principles it enforces. The goal is to establish a shared frame before diving into specific control surfaces and patterns.</p>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>Agentic autonomy is shifting the unit of output from
+<em>human-hours</em> to <em>agent-hours</em>. That is the transition from “force multiplication” to “force creation”: intent-driven systems executing within delegated authority, scaling through silicon rather than staffing. In practical terms, decision tempo and execution density can exceed human relevance windows—especially in contested environments where connectivity is intermittent and deception is routine.</p>
+<p>The Agent Control Plane (ACP) exists to make this transition
+<strong>fieldable</strong>.</p>
+<p>It is the mechanism that lets the Department move faster
+<strong>without</strong> turning speed into unmanaged risk. It does this by standardizing and enforcing:</p>
+<ul>
+<li><p><strong>Identity</strong> for agents as non-person entities (NPEs)</p></li>
+<li><p><strong>Delegated authority</strong> as explicit trust scopes</p></li>
+<li><p><strong>Work units</strong> as the supervised unit of long-running and parallel agent execution</p></li>
+<li><p><strong>Mediated action</strong> through tool and inter-agent gateways</p></li>
+<li><p><strong>Governance as code</strong> with continuous evaluation and promotion gates</p></li>
+<li><p><strong>Evidence and replay</strong> sufficient for continuous authorization and after-action reconstruction</p></li>
+<li><p><strong>Swarm/ensemble governance</strong> so multi-agent coordination remains bounded, attributable, and containable</p></li>
+<li><p><strong>Degraded-mode survivability</strong> so autonomy degrades safely when networks, models, or services are denied</p></li>
+</ul>
+<p>This document is written as a DoW CIO–style reference architecture: strategic purpose, principles, technical positions, patterns, and vocabulary. It is intended to guide and constrain downstream solution architectures rather than prescribe a single implementation.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="scope-and-non-goals">Scope and Non-Goals</h2>
+<p>Before debating design details, we bound the problem. ACP‑RA focuses on the control-plane mechanisms that make agent execution governable at scale. It does not attempt to prescribe mission tactics, weapon employment, or policy beyond the control plane.</p>
+<h3 id="in-scope">In Scope</h3>
+<ul>
+<li><p>Enterprise, intelligence, and operational-support agents that plan, coordinate, and invoke tools/actions within bounded authority</p></li>
+<li><p>Multi-agent ensembles (swarms) and their coordination, messaging, shared state, budgets, observability, and containment</p></li>
+<li><p>Work-unit management for long-running and parallel agent execution (checkpointing, dependencies, cancellation, supervision)</p></li>
+<li><p>Policy-as-code, evaluation-as-gate, and evidence generation for continuous authorization</p></li>
+<li><p>Cross-enclave federation and cross-domain handoffs (identity, context, and evidence)</p></li>
+</ul>
+<h3 id="out-of-scope">Out of Scope</h3>
+<ul>
+<li><p>Tactical employment guidance for autonomous weapons</p></li>
+<li><p>Authorization of use-of-force decisions</p></li>
+<li><p>Any design that bypasses applicable weapon system autonomy policy (see DoDD 3000.09)</p></li>
+</ul>
+<p>Where agents integrate into systems adjacent to use-of-force or mission-critical safety, additional governance, testing, and policy applies. DoDD 3000.09 remains the governing policy for autonomy in weapon systems.<br />
+(References: DoDD 3000.09; see Appendix “References.”)</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="strategic-drivers">Strategic Drivers</h2>
+<p>The drivers below describe why the Department needs an ACP now. They are constraints that shape requirements: speed without loss of governance, supervision at scale, resilience under denial, and interoperability across federated enclaves.</p>
+<h3 id="a-posture-of-acceleration">A Posture of Acceleration</h3>
+<p>Recent Department strategy and senior-leadership messaging emphasize acceleration in AI adoption, experimentation, compute access, and rapid iteration. This architecture treats that posture as a constraint: platforms must support rapid onboarding and change while staying governable and reversible.</p>
+<h3 id="the-core-problem-is-shifting-from-can-agents-do-x-to-can-people-supervise-agents-at-scale">The Core Problem Is Shifting from “Can Agents Do X?” to “Can People Supervise Agents at Scale?”</h3>
+<p>Commercial agent systems are converging on a command-center model: many tasks in parallel, long-running execution, and human supervision as a portfolio function rather than a per-action bottleneck. For the Department, this shift is not cosmetic—it drives requirements for work-unit identity, evidence indexing, pause/resume semantics, and escalation controls that remain enforceable at machine tempo.</p>
+<h3 id="contested-and-degraded-environments-are-the-baseline-not-the-exception">Contested and Degraded Environments Are the Baseline, Not the Exception</h3>
+<p>Agentic systems fail differently than traditional software. They are vulnerable to deception, poisoning, and cascade failures—especially when they coordinate as ensembles. The control plane must survive partial connectivity, intermittent access to centralized services, and adversary attempts to subvert policy and evidence mechanisms themselves.</p>
+<h3 id="interoperability-and-federation-are-unavoidable">Interoperability and Federation Are Unavoidable</h3>
+<p>DoW reality is federated: Services, agencies, mission partners, and multiple classification enclaves. Interoperability is also plural: agent-to-agent messaging and agent-to-tool/data connectors are both being standardized in industry. The ACP must be
+<strong>protocol-neutral</strong> while enforcing a consistent policy surface across whichever interop protocols are in use.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="architectural-principles">Architectural Principles</h2>
+<h3 id="p1-agents-are-non-person-entities-npes-not-apps">P1 — Agents Are Non-Person Entities (NPEs), Not “Apps”</h3>
+<p>Agents must have identity, credentials, lifecycle controls, and attributes consistent with enterprise identity patterns. Treat them as first-class actors with accountability.</p>
+<h3 id="p2-centralize-policy-decisions-distribute-enforcement">P2 —
+Centralize Policy Decisions; Distribute Enforcement</h3>
+<p>The ACP uses a policy decision point (PDP) with multiple policy enforcement points (PEPs): at runtime admission, model routing, context retrieval, tool invocation, inter-agent messaging, and work-unit state transitions.</p>
+<h3 id="p3-default-deny-allow-by-explicit-trust-scope">P3 — Default Deny; Allow by Explicit Trust Scope</h3>
+<p>Agents do not gain authority because a prompt implies it. Authority is granted by a signed, versioned trust scope manifest and enforced by gateways.</p>
+<h3 id="p4-the-doing-boundary-is-explicit">P4 — The “Doing Boundary” Is Explicit</h3>
+<p>Tool calls and other side effects are mediated. Every action is a policy event. “It can think” is not the same as “it can do.”</p>
+<h3 id="p5-evidence-is-first-class">P5 — Evidence Is First-Class</h3>
+<p>Evidence is produced at the same tempo as actions. Continuous authorization and credible after-action review require deterministic, replayable artifacts.</p>
+<h3 id="p6-rollback-and-containment-are-capabilities">P6 — Rollback and Containment Are Capabilities</h3>
+<p>Speed wins only if rollback is instant and scoped. Containment must isolate a single agent without collapsing an ensemble.</p>
+<h3 id="p7-context-engineering-is-governed-data-movement">P7 — Context Engineering Is Governed Data Movement</h3>
+<p>Context is not a prompt trick; it is a data plane. Provenance, minimization, freshness, and labeling are mandatory.</p>
+<h3 id="p8-evals-and-monitoring-are-gates">P8 — Evals and Monitoring Are Gates</h3>
+<p>Continuous evaluation, red-teaming, drift detection, and anomaly response are not documentation—they are release and runtime gates.</p>
+<h3 id="p9-budgets-are-policy-not-accounting">P9 — Budgets Are Policy, Not Accounting</h3>
+<p>Compute, bandwidth, tool calls, and power are operational constraints. Autonomy must operate within explicit budgets—especially in contested logistics.</p>
+<h3 id="p10-toolsskills-are-a-supply-chain">P10 — Tools/Skills Are a Supply Chain</h3>
+<p>Agent capability expansion via tools, connectors, and “skills” is unavoidable. Tool ecosystems become attack surfaces. Therefore: tools are onboarded, signed, scanned, evaluated, and attested like software packages; execution is sandboxed and governed by trust scope.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="reference-architecture-structure">Reference Architecture Structure</h2>
+<p>DoW CIO reference architectures guide and constrain downstream architectures by providing: <strong>strategic purpose, principles, technical positions, patterns, and vocabulary</strong>. ACP‑RA uses that same structure.</p>
+<ul>
+<li><p><strong>Strategic purpose:</strong> why ACP exists</p></li>
+<li><p><strong>Principles:</strong> non-negotiable engineering behavior</p></li>
+<li><p><strong>Technical positions:</strong> required control surfaces and boundary points</p></li>
+<li><p><strong>Patterns:</strong> reusable implementation guidance</p></li>
+<li><p><strong>Vocabulary:</strong> consistent terms that prevent “same word, different meaning” failures</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="conceptual-view-ov1">Conceptual View (OV‑1)</h2>
+<figure>
+<img src="/papers/acp-ra/diagrams/acp_ov1_simplified.png" / alt="">
+<figcaption>ACP OV-1</figcaption>
+</figure>
+<p>The conceptual model is a control system with two planes:</p>
+<ul>
+<li><p><strong>Runtime plane:</strong> agent runtimes executing plans and invoking tools (K8s, edge nodes, mission systems)</p></li>
+<li><p><strong>Control plane:</strong> identity, trust scopes, work units, policy, gateways, evaluation, evidence, observability, and containment</p></li>
+</ul>
+<p>The ACP does not “run the mission.” It constrains, mediates, and proves mission execution.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="core-vocabulary">Core Vocabulary</h2>
+<p>This section defines primitives that remain stable even as frameworks change.</p>
+<h2 id="agent">Agent</h2>
+<p>A software actor that can plan, retrieve context, communicate, invoke tools, and execute actions toward a goal within bounded authority.</p>
+<h2 id="persona">Persona</h2>
+<p>A controlled mission role for an agent (e.g., enterprise drafting, logistics planner, intel triage, policy checker). Persona is an attribute used by policy.</p>
+<h2 id="principal">Principal</h2>
+<p>A security subject that can hold permissions and be audited. A principal may be a human identity (ICAM subject) or a non-person entity (NPE) such as an agent runtime, tool runtime, or service.</p>
+<h2 id="delegation-chain">Delegation Chain</h2>
+<p>A signed binding that captures the principals involved in an execution step:</p>
+<ul>
+<li><p><code>ownerPrincipal</code>: the human or organization principal that created/owns the agent configuration.</p></li>
+<li><p><code>agentServicePrincipal</code>: the service principal under which the agent executor runs.</p></li>
+<li><p><code>onBehalfOfPrincipal</code>: the human principal whose authority is being exercised at a particular point in time (optional; required for delegated-user semantics).</p></li>
+</ul>
+<p>Delegation does not create authority. It selects whose authority is being exercised under the constraints of the trust scope and policy bundle. Effective authority composes by intersection across the trust scope and all principals present in the chain.</p>
+<h2 id="trust-boundaries-authority-sources-vs-data-sources">Trust Boundaries: Authority Sources vs Data Sources</h2>
+<h3 id="authority-sources-may-authorize-actions">Authority Sources (May Authorize Actions)</h3>
+<ol>
+<li><p>Authenticated human principals and authenticated service principals.</p></li>
+<li><p>Signed trust scope manifests and signed policy bundles valid for the target environment.</p></li>
+<li><p>Policy decisions produced by authorized PDP/PEP enforcement at runtime.</p></li>
+</ol>
+<p>Delegation context is an authority <em>input</em>, not an authority
+<em>source</em>. Prompts, documents, or tool outputs MUST NOT be allowed to assert “on behalf of” execution. If an agent is acting on behalf of a human principal, that binding MUST be derived from an authenticated session and recorded as evidence; otherwise, the agent operates only as its own NPE identity under its trust scope.</p>
+<p>Declared intent is not an authority source. It is a claim recorded for accountability and policy evaluation; authorization still derives from authenticated principals, trust scope constraints, and policy decisions.</p>
+<h3 id="data-sources-inform-decisions-never-grant-authority">Data Sources (Inform Decisions, Never Grant Authority)</h3>
+<ul>
+<li><p>Prompts, retrieved documents, tool outputs, and model-generated text are data inputs only.</p></li>
+<li><p>Data can influence prioritization and recommendation, but cannot grant privileges or delegation rights.</p></li>
+</ul>
+<h2 id="trust-scope-manifest-tsm">Trust Scope Manifest (TSM)</h2>
+<p>A signed, versioned contract defining an agent’s delegated authority and constraints:</p>
+<ul>
+<li><p>allowed/prohibited actions and tools</p></li>
+<li><p>consequence tier</p></li>
+<li><p>operating environment (enclave/classification/connectivity)</p></li>
+<li><p>uncertainty thresholds and escalation triggers</p></li>
+<li><p>budgets (compute/tokens/tool calls/egress/power/time)</p></li>
+<li><p>evidence requirements (fields, redactions, retention)</p></li>
+<li><p>approved model profiles (MAP allowlist) and model usage modes by tier</p></li>
+<li><p>policy trust anchors: accepted signing authorities (keys/certs) and allowlisted policy bundle and trust scope hashes per environment</p></li>
+<li><p>degraded-mode behaviors and containment semantics</p></li>
+</ul>
+<h2 id="work-unit">Work Unit</h2>
+<p>A durable, supervised task thread for long-running and parallel agent execution.</p>
+<p>A work unit binds:</p>
+<ul>
+<li><p>a <strong>scope context</strong> (trust scope hash + policy bundle hash)</p></li>
+<li><p><strong>budgets</strong> (initial allocation + delegated allowances)</p></li>
+<li><p><strong>dependencies</strong> (work-unit DAG and blocking conditions)</p></li>
+<li><p><strong>checkpoint policy</strong> (what is persisted, when, and how to resume)</p></li>
+<li><p><strong>sandbox provenance</strong> (execution environment identifiers / attestations where available)</p></li>
+<li><p><strong>evidence root</strong> (represented as
+<code>evidenceRootHash</code>; the stable anchor used to query all actions/messages/artifacts for this work unit, anchored in the Evidence Ledger)</p></li>
+</ul>
+<p>Work units are how the Department supervises autonomy at scale: humans do not “watch every tool call,” they supervise work units, review diffs, and intervene on escalation triggers.</p>
+<h2 id="policy-bundle">Policy Bundle</h2>
+<p>A signed, versioned set of policy rules consumed by enforcement points:</p>
+<ul>
+<li><p>ABAC rules</p></li>
+<li><p>escalation rules</p></li>
+<li><p>budget policies</p></li>
+<li><p>inter-agent messaging policies</p></li>
+<li><p>safety interlocks (quarantine/kill/rollback)</p></li>
+<li><p>work-unit transition constraints (pause/resume/cancel)</p></li>
+</ul>
+<p>Policy authoring methods vary (boards, working groups, automated review pipelines, or hybrid workflows). ACP is agnostic to how policy is deliberated; it is strict about how policy becomes enforceable. Only signed, versioned policy bundles and trust scopes grant authority at runtime. Deliberation transcripts, discussions, and draft
+“constitutions” are procedural artifacts and MAY be recorded as evidence or procedural memory, but they MUST NOT be treated as executable authorization.</p>
+<h2 id="model-assurance-profile-map">Model Assurance Profile (MAP)</h2>
+<p>A signed, versioned artifact that describes the assurances and constraints of a model endpoint. A MAP is referenced by immutable hash and used by the model gateway for routing and enforcement.</p>
+<p>A MAP SHOULD include:</p>
+<ul>
+<li><p>model identifier and version (or immutable build hash)</p></li>
+<li><p>hosting boundary (enclave/region) and allowed deployment environments</p></li>
+<li><p>data handling constraints (prompt/completion retention, training use, telemetry content)</p></li>
+<li><p>security posture requirements (encryption, network boundary, authentication)</p></li>
+<li><p>approved usage modes (interactive assistance vs autonomous agent execution)</p></li>
+<li><p>eval coverage references (required eval packs, red-team suites, canary criteria)</p></li>
+<li><p>rollback and deprecation signals (upgrade windows, kill-switch semantics)</p></li>
+</ul>
+<h2 id="evidence-export-profile-eep">Evidence Export Profile (EEP)</h2>
+<p>A signed, versioned configuration that defines how canonical ACP evidence is transformed into derived event records for external consumers (for example SIEM pipelines or analytics systems). EEPs do not change what ACP records; they standardize how evidence is represented for downstream systems. If an implementation exports derived evidence, it MUST do so via an EEP; otherwise EEPs are not required.</p>
+<p>An EEP MUST define:</p>
+<ul>
+<li><p>target schema and profile identifier (when applicable)</p></li>
+<li><p>required linkage fields (<code>envelopeHash</code>,
+<code>evidenceRootHash</code>, <code>workUnitId</code>,
+<code>trustScopeRef</code>, <code>policyBundleRef</code>)</p></li>
+<li><p>field-level minimization and redaction rules</p></li>
+<li><p>label propagation and access constraints for exported records</p></li>
+<li><p>export destinations as governed sinks (export is an action, not a background task)</p></li>
+</ul>
+<h2 id="context-bundle">Context Bundle</h2>
+<p>A replayable artifact representing retrieved/used context:</p>
+<ul>
+<li><p>source pointers, timestamps, labels/tags</p></li>
+<li><p>provenance and integrity metadata</p></li>
+<li><p>minimization decisions</p></li>
+<li><p>freshness/rot signals</p></li>
+<li><p>a stable hash identifier (so later evidence can reference it)</p></li>
+</ul>
+<h2 id="action-envelope-minimum-schema">Action Envelope (Minimum Required Fields + Extension Blocks)</h2>
+<p>A signed record of an attempted tool/action. Example (minimum required fields + optional extension blocks):</p>
+<p>The “Minimum required properties” list defines what is mandatory; any other blocks shown in the example are optional extensions unless required by policy/trust scope.</p>
+<pre class="codeblock"><code><span class="code-line">actionEnvelope: envelopeVersion: &quot;v1&quot; actionId:</span>
+<span class="code-line">&quot;act-...&quot; workUnitId: &quot;wu-...&quot; actor: principalRef: &quot;principal://npe/service/...&quot; persona:</span>
+<span class="code-line">&quot;ops-planner&quot; delegation: ownerPrincipal:</span>
+<span class="code-line">&quot;principal://icam/subject/...&quot; agentServicePrincipal:</span>
+<span class="code-line">&quot;principal://npe/service/...&quot; onBehalfOfPrincipal:</span>
+<span class="code-line">&quot;principal://icam/subject/...&quot; # optional; required for delegated-user semantics sessionRef: &quot;session://sha256:...&quot;</span>
+<span class="code-line"># binds onBehalfOfPrincipal to an authenticated session delegationHash:</span>
+<span class="code-line">&quot;sha256:...&quot; # canonical hash of delegation fields excluding delegationHash intent: declaredPurpose: &quot;Create a pull request to remediate CVE-2026-XXXX in repository X&quot;</span>
+<span class="code-line">expectedEffects: - &quot;modify:repo://X/path/to/file&quot;</span>
+<span class="code-line">- &quot;create:repo://X/pull-request&quot;</span>
+<span class="code-line">consequenceTier: &quot;t2&quot; intentHash: &quot;sha256:...&quot; # canonical hash of intent fields excluding intentHash scope: trustScopeRef:</span>
+<span class="code-line">&quot;trustscope://...@sha256:...&quot; policyBundleRef: &quot;policy://...@sha256:...&quot;</span>
+<span class="code-line">context: bundleRefs: - &quot;context://...@sha256:...&quot; lineage: model: modelId: &quot;model:...&quot; modelVersion: &quot;sha256:...&quot; mapRef:</span>
+<span class="code-line">&quot;map://sha256:...&quot; tool: toolId: &quot;tool:github.pull_request.create&quot;</span>
+<span class="code-line">toolVersion: &quot;1.3.2&quot; outputs: - artifactHash: &quot;sha256:...&quot;</span>
+<span class="code-line">artifactRef: &quot;evidence://artifact/sha256:...&quot; labels: [&quot;artifact:pr&quot;,</span>
+<span class="code-line">&quot;tier:t1&quot;] evidence: envelopeHash: &quot;sha256:...&quot; evidenceRootHash:</span>
+<span class="code-line">&quot;sha256:...&quot; traceId: &quot;trace://...&quot; transport: # optional; only for tool-invocation actions protocol: &quot;&lt;string&gt;&quot; # e.g.,</span>
+<span class="code-line">&quot;mcp&quot;, &quot;grpc&quot;, &quot;https&quot; serverId: &quot;tool-server://...&quot;</span>
+<span class="code-line">clientId: &quot;agent-client://...&quot; connectionMode:</span>
+<span class="code-line">&quot;&lt;string&gt;&quot; # e.g., &quot;stdio&quot;, &quot;http&quot;, &quot;sse&quot; decision: verdict:</span>
+<span class="code-line">&quot;allow&quot; decisionRef: &quot;decision://...&quot; outcome: status: &quot;success&quot;</span>
+<span class="code-line">completedAt: &quot;2026-02-16T00:00:00Z&quot; signature: signer: &quot;principal://npe/service/...&quot; signatureAlgorithm: &quot;ed25519&quot;</span>
+<span class="code-line">signatureValue: &quot;base64:...&quot;</span></code></pre>
+<p>Minimum required properties (non-exhaustive):</p>
+<ul>
+<li><p><code>workUnitId</code>, <code>trustScopeRef</code>,
+<code>policyBundleRef</code>, and policy decision references.</p></li>
+<li><p>Delegation binding: <code>delegationHash</code> and signature-covered delegation fields; <code>onBehalfOfPrincipal</code>
+MUST be tied to an authenticated <code>sessionRef</code> when present.</p></li>
+<li><p>Intent is an evidence-bearing claim. It is OPTIONAL for low-consequence reversible operations, but MUST be present (with
+<code>intentHash</code>) for irreversible actions and/or consequence tiers T2+ (as defined by the policy bundle / trust scope).</p></li>
+<li><p>Lineage binding: <code>toolId</code>/<code>toolVersion</code>,
+<code>modelId</code>/<code>modelVersion</code> (or build hash) when applicable, and produced artifact hashes MUST be present and signature-covered to support trace-to-version replay.</p></li>
+</ul>
+<p>Additional normative rules:</p>
+<ul>
+<li><p><code>delegation</code> is OPTIONAL.</p></li>
+<li><p>If <code>onBehalfOfPrincipal</code> is present,
+<code>sessionRef</code> MUST be present.</p></li>
+<li><p><code>delegationHash</code> MUST be computed over canonicalized delegation fields and covered by the envelope signature (not agent-supplied).</p></li>
+<li><p><code>intentHash</code> MUST be computed over canonicalized intent fields and MUST be signature-covered in the action envelope.</p></li>
+<li><p><code>envelopeHash</code> and <code>evidenceRootHash</code> MUST be computed by the gateway/evidence-ledger writer (not supplied by the agent).</p></li>
+<li><p><code>traceId</code> MUST be generated by the platform/gateway and propagated consistently across exports and observability.</p></li>
+</ul>
+<p>Canonicalization and hash computation rules: Hashes MUST be computed over a deterministic canonical serialization of the input object (e.g., RFC 8785 JSON Canonicalization Scheme). <code>delegationHash</code> MUST be computed over the <code>delegation</code> object excluding the
+<code>delegationHash</code> field itself. <code>intentHash</code> MUST be computed over the <code>intent</code> object excluding the
+<code>intentHash</code> field itself. <code>envelopeHash</code> MUST be computed over the entire envelope excluding the <code>signature</code>
+block and excluding <code>evidence.envelopeHash</code> (to avoid self-reference). <code>evidenceRootHash</code> MUST refer to the work unit’s evidence-root anchor maintained by the Evidence Ledger (keyed by
+<code>workUnitId</code>), not a per-envelope Merkle root.</p>
+<h2 id="inter-agent-message-envelope-minimum-schema">Inter-Agent Message Envelope (Minimum Schema)</h2>
+<p>A signed record of a message between agents (or ensembles). Minimum schema example:</p>
+<pre class="codeblock"><code><span class="code-line">messageEnvelope: envelopeVersion: &quot;v1&quot; messageId:</span>
+<span class="code-line">&quot;msg-...&quot; sender: principalRef:</span>
+<span class="code-line">&quot;principal://npe/service/...&quot; persona: &quot;ops-planner&quot;</span>
+<span class="code-line">recipients: - &quot;principal://npe/service/...&quot; sequenceNumber: 14 ttlSeconds: 120 payloadHash: &quot;sha256:...&quot; scope: workUnitId:</span>
+<span class="code-line">&quot;wu-...&quot; trustScopeRef: &quot;trustscope://...@sha256:...&quot;</span>
+<span class="code-line">policyBundleRef: &quot;policy://...@sha256:...&quot; delegation: ownerPrincipal:</span>
+<span class="code-line">&quot;principal://icam/subject/...&quot; agentServicePrincipal:</span>
+<span class="code-line">&quot;principal://npe/service/...&quot; onBehalfOfPrincipal:</span>
+<span class="code-line">&quot;principal://icam/subject/...&quot; # optional sessionRef:</span>
+<span class="code-line">&quot;session://sha256:...&quot; delegationHash: &quot;sha256:...&quot; signature: signer:</span>
+<span class="code-line">&quot;principal://npe/service/...&quot; signatureAlgorithm: &quot;ed25519&quot;</span>
+<span class="code-line">signatureValue: &quot;base64:...&quot;</span></code></pre>
+<p>Replay protection and signature coverage:</p>
+<ul>
+<li><p>Signature coverage: the sender signature MUST cover recipients, sequenceNumber, TTL, payloadHash, workUnitId, trustScopeRef, policyBundleRef, and delegationHash (when present).</p></li>
+</ul>
+<h2 id="ensemble-swarm">Ensemble (Swarm)</h2>
+<p>A first-class multi-agent object with explicit governance:</p>
+<ul>
+<li><p>membership and roles</p></li>
+<li><p>coordination pattern and arbitration rules</p></li>
+<li><p>shared-state rules and boundaries</p></li>
+<li><p>ensemble budgets and allocation policy</p></li>
+<li><p>inter-agent communication policy</p></li>
+<li><p>containment semantics (isolate member vs freeze ensemble)</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="consequence-tiers-and-required-controls">Consequence Tiers and Required Controls</h2>
+<p>Trust scopes and ensembles reference consequence tiers explicitly. Consequence is the most effective way to translate “mission impact” into enforceable controls.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Tier</td>
+<td>Representative activities (non-exhaustive)</td>
+<td>Minimum required controls</td>
+</tr>
+<tr class="even">
+<td><strong>T0 — Low</strong></td>
+<td>drafting, summarization, analysis with read-only context</td>
+<td>NPE identity; data/tag controls; basic evidence logging; deny-by-default tool use</td>
+</tr>
+<tr class="odd">
+<td><strong>T1 — Moderate</strong></td>
+<td>PR creation, ticket automation, config recommendations (no direct apply)</td>
+<td>tool mediation; budgets (tokens/tool calls/egress); baseline eval pack; drift monitoring</td>
+</tr>
+<tr class="even">
+<td><strong>T2 — High</strong></td>
+<td>executing changes in production, account/permission changes, external comms; GUI-based operations in controlled environments</td>
+<td>human-on-the-loop approvals; dual-control for sensitive actions; enhanced evidence; rollback rehearsal</td>
+</tr>
+<tr class="odd">
+<td><strong>T3 — Life/Safety /
+Mission-Critical</strong></td>
+<td>actions affecting safety, critical infrastructure, or kinetic-adjacent effects</td>
+<td>strict deny-by-default; quorum approvals; constrained degraded modes; full-fidelity evidence on trigger; mandatory after-action review</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Composition rule:</strong> when scopes combine (agent→agent, agent→ensemble, cross-enclave), authority composes by
+<strong>intersection</strong>, not union. The effective authority is the overlap of allowed actions, data, and environments—never the sum.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="technical-positions-required-control-surfaces">Technical Positions (Required Control Surfaces)</h2>
+<p>ACP‑RA constrains solution architectures through required control surfaces and boundary points.</p>
+<h2 id="tp1-agent-identity-as-npe-icam-aligned">TP1 — Agent Identity as NPE (ICAM-aligned)</h2>
+<p>Every agent and tool-runtime has an identity, attributes, and lifecycle controls. Sponsorship and ownership are attributable.</p>
+<h2 id="tp2-trust-scopes-are-signed-versioned-and-enforceable">TP2 —
+Trust Scopes Are Signed, Versioned, and Enforceable</h2>
+<p>Trust scopes are artifacts. Enforcement points validate and cache them. Scope changes require promotion gates.</p>
+<h2 id="tp3-work-units-are-first-class-governance-objects">TP3 — Work Units Are First-Class Governance Objects</h2>
+<p>Every long-running agent effort is a work unit with:</p>
+<ul>
+<li><p>bounded scope and budgets</p></li>
+<li><p>explicit dependencies and cancellation semantics</p></li>
+<li><p>checkpoint and resume behavior</p></li>
+<li><p>evidence anchoring for replay</p></li>
+</ul>
+<h2 id="tp4-toolaction-gateway-mediates-all-doing">TP4 — Tool/Action Gateway Mediates All “Doing”</h2>
+<p>No direct access from model runtime to privileged tools. Tool calls are policy checked, budgeted, sandboxed, and logged.</p>
+<h2 id="tp5-toolsskills-are-onboarded-through-supply-chain-controls">TP5
+— Tools/Skills Are Onboarded Through Supply-Chain Controls</h2>
+<p>Tools, connectors, and skills are:</p>
+<ul>
+<li><p>registered</p></li>
+<li><p>signed</p></li>
+<li><p>scanned (static + dependency + behavior checks)</p></li>
+<li><p>evaluated with tool-specific eval packs</p></li>
+<li><p>attested at runtime (hashes, signatures, scanner verdicts)</p></li>
+</ul>
+<h2 id="tp6-inter-agent-gateway-governs-agent-to-agent-communication">TP6 —
+Inter-Agent Gateway Governs Agent-to-Agent Communication</h2>
+<p>Agent-to-agent messaging is authenticated, authorized, schema-validated, rate-limited, and attributable. It has circuit breakers to prevent cascades.</p>
+<h2 id="tp7-contextdata-gateway-governs-context-engineering">TP7 —
+Context/Data Gateway Governs Context Engineering</h2>
+<p>Context retrieval is policy checked, tag-aware, provenance-preserving, and freshness-aware. Context becomes a replayable bundle.</p>
+<h2 id="tp8-model-gateway-governs-model-routing-and-upgrades">TP8 —
+Model Gateway Governs Model Routing and Upgrades</h2>
+<p>Model usage is controlled by allowlists, routing policies, canary/rollback, and evidence capture. The ACP never assumes a single model or vendor.</p>
+<h2 id="tp9-evaluation-harness-gates-promotion-monitoring-gates-runtime">TP9
+— Evaluation Harness Gates Promotion; Monitoring Gates Runtime</h2>
+<p>Evals are blocking checks (functional + policy conformance +
+adversarial tests). Runtime monitors detect drift and trigger containment.</p>
+<h2 id="tp10-evidence-ledger-is-tamper-evident-and-queryable">TP10 —
+Evidence Ledger Is Tamper-Evident and Queryable</h2>
+<p>Actions, context bundles, policy decisions, approvals, inter-agent envelopes, and containment events generate structured evidence sufficient for replay and continuous authorization.</p>
+<h2 id="tp11-degraded-mode-behaviors-are-declared-and-enforced">TP11 —
+Degraded-Mode Behaviors Are Declared and Enforced</h2>
+<p>When connectivity, model access, or centralized policy is denied, the system transitions to a defined degraded mode with tightened authority.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="architecture-components">Architecture Components</h2>
+<p>The ACP is best understood as a set of “bulkheads” and “gates.”
+Bulkheads contain failures. Gates enforce policy.</p>
+<h2 id="agent-registry-and-persona-issuance">Agent Registry and Persona Issuance</h2>
+<p>This component issues and manages agent identities and personas:</p>
+<ul>
+<li><p>NPE identifiers and credentials</p></li>
+<li><p>ownership/sponsorship binding</p></li>
+<li><p>attribute issuance for ABAC (mission, enclave, tier, approved tools)</p></li>
+<li><p>lifecycle: onboarding, rotation, revocation</p></li>
+</ul>
+<h2 id="trust-scope-service">Trust Scope Service</h2>
+<p>The trust scope service stores and signs manifests, enforces schema, and supports delegation:</p>
+<ul>
+<li><p>scope templates by tier and mission thread</p></li>
+<li><p>scope inheritance and delegation (budgets, tool subsets)</p></li>
+<li><p>scope translation and intersection rules for federation</p></li>
+</ul>
+<h2 id="work-unit-service-wus">Work Unit Service (WUS)</h2>
+<p>This service creates and tracks work units as supervised objects:</p>
+<ul>
+<li><p>issues work_unit_id and binds it to trust scope + policy bundle hashes</p></li>
+<li><p>tracks work-unit state (queued/running/paused/blocked/canceled/completed)</p></li>
+<li><p>tracks dependencies (work-unit DAG) and deadlock timeouts</p></li>
+<li><p>manages checkpointing and resume policies (including degraded modes)</p></li>
+<li><p>allocates and reclaims budgets (and delegated allowances) for sub-agents</p></li>
+<li><p>provides a stable evidence anchor for querying actions/messages/artifacts at scale</p></li>
+</ul>
+<h2 id="supervision-console-human-direction-and-oversight-surface">Supervision Console (Human Direction and Oversight Surface)</h2>
+<p>This is not “a UI.” It is an operational control surface that enables humans to supervise autonomy at scale without becoming the throughput bottleneck.</p>
+<p>Minimum capabilities:</p>
+<ul>
+<li><p>work-unit dashboard (status, dependencies, budget burn-down, anomaly flags)</p></li>
+<li><p>review surfaces for outputs (diff review for code/config; artifact review for plans)</p></li>
+<li><p>approval queue (human-on-the-loop and quorum workflows)</p></li>
+<li><p>intervention controls (pause/resume/cancel; quarantine/kill; tighten scope)</p></li>
+<li><p>evidence drill-down by work_unit_id (macro→meso→micro replay tiers)</p></li>
+<li><p>after-action review workflow that generates new eval cases and policy refinements</p></li>
+</ul>
+<h2 id="policy-engine-pdp-and-distributed-enforcement-peps">Policy Engine (PDP) and Distributed Enforcement (PEPs)</h2>
+<p>The policy engine evaluates requests using:</p>
+<ul>
+<li><p>agent identity attributes + persona</p></li>
+<li><p>trust scope claims</p></li>
+<li><p>work-unit state and constraints</p></li>
+<li><p>environment signals (enclave, connectivity mode, posture)</p></li>
+<li><p>resource tags (data labels, tool categories)</p></li>
+<li><p>delegation context (<code>ownerPrincipal</code>,
+<code>agentServicePrincipal</code>, and <code>onBehalfOfPrincipal</code>
+where applicable), bound to an authenticated session claim</p></li>
+<li><p>declared intent (<code>intentHash</code> and structured intent fields), treated as an evidence-bearing claim and validated against trust scope, policy, and observed actions</p></li>
+<li><p>current budgets and risk posture</p></li>
+</ul>
+<p>PEPs exist at:</p>
+<ul>
+<li><p>runtime admission control</p></li>
+<li><p>tool/action gateway</p></li>
+<li><p>context/data gateway</p></li>
+<li><p>inter-agent gateway</p></li>
+<li><p>model gateway</p></li>
+<li><p>work-unit transitions (pause/resume/cancel)</p></li>
+<li><p>CI/CD promotion gates</p></li>
+</ul>
+<h2 id="runtime-admission-control-executor-substrate">Runtime Admission Control (Executor Substrate)</h2>
+<p>Agent orchestration depends on a compute substrate that is resilient, observable, and insulated. ACP treats executor placement as a policy-enforced admission problem, not an implementation detail.</p>
+<p>Runtime admission control enforces:</p>
+<ul>
+<li><p>identity and scope validity: agent identity, persona, trust scope hash, and policy bundle hash MUST be validated before an executor can run.</p></li>
+<li><p>delegated execution validity: if <code>onBehalfOfPrincipal</code>
+is asserted, it MUST be bound to a current authenticated
+<code>sessionRef</code> and included in the policy decision input.</p></li>
+<li><p>sandbox profile selection: executors MUST run within a policy-selected sandbox profile aligned to consequence tier (isolation, filesystem controls, network egress, device access, and allowed tool classes).</p></li>
+<li><p>ephemeral-by-default execution: agent executors SHOULD run on short-lived compute instances (containers/VMs) with immutable images and rapid rotation. Long-lived executors require explicit justification in policy and tighter monitoring.</p></li>
+<li><p>secrets and credentials boundaries: executors MUST NOT hold long-lived credentials. Secrets are brokered per action via the secrets broker; models never receive credential material.</p></li>
+<li><p>attestation hooks: where available, runtime posture and attestation identifiers SHOULD be produced and referenced (<code>attest://…</code>) so actions and messages can be tied to verified runtime state.</p></li>
+</ul>
+<p>The executor substrate is a bulkhead. It constrains the blast radius of compromised tools, poisoned context, and runaway coordination loops while preserving throughput under contested conditions.</p>
+<h2 id="model-gateway">Model Gateway</h2>
+<p>The model gateway enforces:</p>
+<ul>
+<li><p>model allowlists by enclave and trust scope</p></li>
+<li><p>routing by consequence tier and degraded mode</p></li>
+<li><p>budget limits (tokens/compute/time)</p></li>
+<li><p>metadata capture for replay and auditing</p></li>
+</ul>
+<p>The model gateway is also the upgrade discipline:</p>
+<ul>
+<li><p>shadow → canary → promote → rollback</p></li>
+<li><p>policy-hash and eval-pack gating</p></li>
+</ul>
+<p>Model routing is not only a performance decision; it is an assurance decision. Minimum additional requirements:</p>
+<ul>
+<li><p>MAP allowlists: every routed model MUST resolve to an approved Model Assurance Profile (MAP) for the enclave and trust scope. Model routing policies reference MAP hashes, not informal names.</p></li>
+<li><p>segmented permissions: permission to use a model for general interactive assistance MUST be separable from permission to use that model in autonomous agent workflows. Agent-building and agent-execution are distinct privileges.</p></li>
+<li><p>evidence-grade metadata: model gateway events MUST stamp
+<code>modelId</code>/<code>modelVersion</code> (or build hash), MAP hash, route decision, and token/compute consumption so replay can reconstitute the exact reasoning core used.</p></li>
+<li><p>assurance-preserving upgrades: model upgrades are promoted only if eval-pack gates pass for the applicable trust scopes. MAP changes (including data handling constraints or hosting boundary changes) are treated as upgrades and MUST be gated and rollbackable.</p></li>
+</ul>
+<h2 id="contextdata-gateway">Context/Data Gateway</h2>
+<p>This gateway turns “context engineering” into a governed plane:</p>
+<ul>
+<li><p>tag-aware access controls</p></li>
+<li><p>provenance capture (source/time/label/custody pointer)</p></li>
+<li><p>minimization and redaction</p></li>
+<li><p>freshness SLAs and “context rot” warnings</p></li>
+<li><p>production of stable context bundles referenced by action envelopes</p></li>
+</ul>
+<h3 id="memory-governance-memory-is-data-not-prompts">Memory Governance (Memory Is Data, Not Prompts)</h3>
+<p>Agent “memory” is data movement and state mutation and MUST be governed like any other enterprise information flow.</p>
+<p>Minimum requirements:</p>
+<ul>
+<li><p>uniform policy mediation: reads and writes MUST be mediated by the same tag-aware policy surface (ABAC + trust scope + environment posture), regardless of storage type (object, vector, stream, geospatial, media)</p></li>
+<li><p>writes are side effects: every write to persistent stores MUST be treated as a governed action (policy decision, budgets, and evidence event)</p></li>
+<li><p>provenance and labels: memory writes MUST inherit labels from sources unless policy explicitly redacts or downgrades, and MUST record provenance (for example source context bundle hashes)</p></li>
+<li><p>poisoning response: memory poisoning is assumed. The gateway MUST support quarantine, re-index, and selective rollback of compromised knowledge nodes and embeddings</p></li>
+</ul>
+<h2 id="toolaction-gateway">Tool/Action Gateway</h2>
+<p>This is the most important boundary: it mediates side effects.</p>
+<ul>
+<li><p>allowlists/denylists by scope and tier</p></li>
+<li><p>approvals and quorum requirements for high consequence</p></li>
+<li><p>secrets brokerage (tools get secrets; models do not)</p></li>
+<li><p>sandboxed execution environments</p></li>
+<li><p>idempotency keys and retry control to prevent amplification</p></li>
+<li><p>action envelopes emitted to evidence ledger</p></li>
+<li><p>tool provenance and attestation stamped into every action envelope</p></li>
+</ul>
+<p>Tool transports are not trust boundaries. When a transport protocol is used to connect an agent to tools and resources (for example persistent sessions for tool discovery and invocation), the Tool/Action Gateway MUST treat the transport as a conduit and MUST still enforce policy at the gateway. For provenance, the gateway SHOULD capture transport metadata (server identity, client identity, connection mode) as evidence attributes on each tool invocation so that downstream exports and dashboards can correlate actions to the concrete execution channel.</p>
+<h3 id="toolskill-supply-chain-governance-registry-provenance-tiers">Tool/Skill Supply Chain Governance (Registry + Provenance Tiers)</h3>
+<p>Agent ecosystems expand by attaching tools, connectors, and “skills.”
+Open marketplaces make that expansion fast—and create a predictable attack surface.</p>
+<p>The ACP therefore treats tools and skills as a governed supply chain:</p>
+<ul>
+<li><p><strong>Provenance tiers</strong></p>
+<ul>
+<li><p><em>Tier A:</em> first-party tools (Department-owned) with full pipeline attestation</p></li>
+<li><p><em>Tier B:</em> vetted third-party tools (signed + scanned +
+evaluated + constrained)</p></li>
+<li><p><em>Tier C:</em> untrusted/community tools (denied by default; allowed only in isolated sandboxes and low-tier scopes, if allowed at all)</p></li>
+</ul></li>
+<li><p><strong>Onboarding pipeline (minimum)</strong></p>
+<ul>
+<li><p>manifest + schema validation</p></li>
+<li><p>dependency analysis + SBOM generation</p></li>
+<li><p>static analysis and policy linting</p></li>
+<li><p>sandbox behavior tests and tool eval packs</p></li>
+<li><p>signing and publishing to a controlled registry</p></li>
+<li><p>runtime attestation (hash/signature match) enforced by the gateway</p></li>
+</ul></li>
+<li><p><strong>Operational controls</strong></p>
+<ul>
+<li><p>quarantine workflows for tools with anomalous behavior</p></li>
+<li><p>revocation and emergency denylist distribution</p></li>
+<li><p>registry reputation signals (usage history, incident linkage)</p></li>
+</ul></li>
+</ul>
+<p>The goal is simple: adding tools expands capability
+<strong>without</strong> expanding unbounded risk.</p>
+<h3 id="computer-use-gui-actuation-tools-os-level-and-rpa-class">Computer-Use
+/ GUI Actuation Tools (OS-level and RPA Class)</h3>
+<p>A special class of tools exists where the “tool” is a computer: mouse/keyboard control, screenshots, UI navigation, and OS-level actions. This class is powerful and fragile, and it is high-risk by default.</p>
+<p>Policy requirements for computer-use tools:</p>
+<ul>
+<li><p>run inside isolated desktop environments (VDI/sandbox) with governed network egress</p></li>
+<li><p>restrict accessible applications and UI surfaces by scope</p></li>
+<li><p>capture structured evidence: screenshots and/or session capture at policy-defined sampling rates</p></li>
+<li><p>enforce per-step budgets (clicks/keystrokes/time) and fan-out limits</p></li>
+<li><p>treat this class as <strong>T2 by default</strong> unless explicitly lowered by risk assessment and controls</p></li>
+<li><p>require veto windows or approvals for irreversible actions (credential changes, external communications, destructive operations)</p></li>
+</ul>
+<p>These constraints turn “computer use” from a hidden capability into a governed actuation surface.</p>
+<h2 id="inter-agent-gateway-iag">Inter-Agent Gateway (IAG)</h2>
+<p>Multi-agent systems only scale safely if agent-to-agent communication is treated like a governed mesh.</p>
+<p>The IAG is intentionally <strong>protocol-neutral</strong>. It can front interoperable protocols such as the Agent2Agent (A2A) protocol or the Model Context Protocol (MCP)—or successor protocols that provide similar semantics.</p>
+<p>The ACP does not bet on a single wire protocol; it standardizes the policy surface required no matter what carries the message.</p>
+<p><strong>Required policy surface (independent of protocol):</strong></p>
+<ul>
+<li><p>mutual authentication of sender/receiver identities and runtime provenance</p></li>
+<li><p>authorization of message types and peer relationships by trust scope + persona + environment</p></li>
+<li><p>schema validation (typed envelopes; no arbitrary prompt blobs as transport)</p></li>
+<li><p>rate limits + TTLs + fan-out caps to prevent cascades</p></li>
+<li><p>provenance: message hashes, policy hash, sender/receiver ids</p></li>
+<li><p>circuit breakers: cascade detection and automatic throttling/quarantine triggers</p></li>
+<li><p>evidence emission: ensemble graph metadata sufficient for replay and triage</p></li>
+</ul>
+<p>Agents joining a swarm MUST verify the <code>trustScopeRef</code> and
+<code>policyBundleRef</code> hashes before accepting tasks or messages. Unknown or unverified policy artifacts result in refusal, quarantine, or escalation per policy.</p>
+<h3 id="a2a-mcp-crosswalk-how-both-map-to-acp-boundaries">A2A &lt;-&gt; MCP Crosswalk (How Both Map to ACP Boundaries)</h3>
+<p>A2A and MCP address different interoperability surfaces. The ACP governs both by applying the same policy primitives—identity, trust scope, budgets, and evidence—at the appropriate gateway.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Interop surface</td>
+<td>Typical protocol family</td>
+<td>ACP enforcement boundary</td>
+<td>Governance focus</td>
+</tr>
+<tr class="even">
+<td>Agent &lt;-&gt; Agent (delegation, coordination, swarm messaging)</td>
+<td>A2A or equivalent</td>
+<td>Inter-Agent Gateway (IAG)</td>
+<td>peer allowlists, message-type schemas, fan-out limits, cascade breakers, message provenance, ensemble graph evidence</td>
+</tr>
+<tr class="odd">
+<td>Agent &lt;-&gt; Tool/Data connectors (capabilities, resources, data access)</td>
+<td>MCP or equivalent</td>
+<td>Tool/Action Gateway + Context/Data Gateway</td>
+<td>tool allowlists, connector provenance tiers, consent/permissions, sampling controls, connector attestation, context provenance</td>
+</tr>
+<tr class="even">
+<td>Tool/Connector requests model sampling</td>
+<td>MCP sampling flows or equivalents</td>
+<td>Model Gateway (with policy hooks)</td>
+<td>model selection control, budget enforcement, evidence capture, deny-by-default for server-initiated sampling when prohibited</td>
+</tr>
+<tr class="odd">
+<td>Agent output becomes executable action</td>
+<td>N/A</td>
+<td>Tool/Action Gateway</td>
+<td>approvals/quorums, sandboxing, secrets brokerage, action envelopes, rollback/replay</td>
+</tr>
+</tbody>
+</table>
+<p>The design goal is not to predict which protocol dominates. The goal is to ensure that whichever protocols are used, they terminate at governed boundaries with consistent controls.</p>
+<h3 id="standards-touchpoints-non-normative">Standards Touchpoints (Non-Normative)</h3>
+<p>ACP is compatible with multiple standards-based identity and authorization approaches. Implementations MAY select one or more of the following patterns:</p>
+<ul>
+<li><p>OAuth 2.x and OpenID Connect for delegated access and session-bound “on behalf of” semantics</p></li>
+<li><p>workload identity and attestation frameworks (for example SPIFFE/SPIRE) for executor and tool runtime identities</p></li>
+<li><p>SCIM for provisioning, lifecycle management, and deprovisioning of agent and tool identities where enterprise IAM systems require standard interfaces</p></li>
+<li><p>attribute-centric authorization approaches (for example NGAC-style models) for fine-grained ABAC graphs and delegation semantics</p></li>
+</ul>
+<p>Selection of standards does not change ACP’s normative requirements: enforcement occurs at gateways using policy decisions, and evidence is signature-covered and replayable.</p>
+<h2 id="evaluation-harness-functional-adversarial-and-tool-eval-packs">Evaluation Harness (Functional + Adversarial) and Tool Eval Packs</h2>
+<p>The evaluation harness provides:</p>
+<ul>
+<li><p>baseline functional tests (“golden tasks”)</p></li>
+<li><p>policy conformance tests (permission boundaries, tool misuse attempts)</p></li>
+<li><p>adversarial tests (retrieval injection, poisoning simulations, inter-agent influence scenarios)</p></li>
+<li><p>regression gates against last-known-good</p></li>
+<li><p>rollback/containment rehearsal checks</p></li>
+</ul>
+<h3 id="tool-contract-design-tools-as-contracts-for-non-deterministic-callers">Tool Contract Design (Tools as Contracts for Non-Deterministic Callers)</h3>
+<p>Agents call tools differently than deterministic software. Tool APIs must be designed as contracts for a non-deterministic caller:</p>
+<ul>
+<li><p>typed inputs and outputs (schema-first)</p></li>
+<li><p>explicit preconditions and failure modes (deterministic error taxonomy)</p></li>
+<li><p>bounded side effects (idempotent operations where possible)</p></li>
+<li><p>small, verifiable outputs (avoid mixing commentary with data payloads)</p></li>
+<li><p>safe defaults (read-only by default; explicit “apply” actions separated and tiered)</p></li>
+<li><p>strict secrets boundaries (no credential material in tool outputs)</p></li>
+</ul>
+<h3 id="tool-eval-packs-gating-tool-onboarding-and-tool-changes">Tool Eval Packs (Gating Tool Onboarding and Tool Changes)</h3>
+<p>New tools and tool changes require tool-specific eval packs, including:</p>
+<ul>
+<li><p>misuse probes (attempted actions out of scope)</p></li>
+<li><p>output-injection probes (tool outputs crafted to steer agents)</p></li>
+<li><p>retry amplification tests (error storms and idempotency validation)</p></li>
+<li><p>performance/latency tests (avoid tool DoS cascades)</p></li>
+<li><p>“computer use” class tests (UI ambiguity, evidence capture, step budgets)</p></li>
+</ul>
+<h2 id="evidence-ledger-and-replay-service">Evidence Ledger and Replay Service</h2>
+<p>Evidence is a structured event stream supporting:</p>
+<ul>
+<li><p>attribution: who/what/under which scope/policy</p></li>
+<li><p>replay: reconstructing intent → context → decision → action →
+outcome</p></li>
+<li><p>continuous authorization: evidence inside the system boundary</p></li>
+</ul>
+<h3 id="lineage-graph-data-logic-action-artifact">Lineage Graph (Data →
+Logic → Action → Artifact)</h3>
+<p>Replay is only useful if the system can answer “what changed because of what.” ACP therefore requires a lineage graph that ties together data, logic, actions, and produced artifacts.</p>
+<p>Minimum lineage requirements:</p>
+<ul>
+<li><p>every action envelope MUST be linkable to:</p>
+<ul>
+<li><p>the context bundles it relied on (hashes)</p></li>
+<li><p>the tool identity and version it invoked</p></li>
+<li><p>the model identity/version (or build hash) used for reasoning steps (when applicable)</p></li>
+<li><p>the policy bundle hash and decision record</p></li>
+<li><p>the produced artifact identifiers (content hashes and references)</p></li>
+</ul></li>
+<li><p>lineage MUST be queryable across time for blast-radius analysis:</p>
+<ul>
+<li><p>“show all artifacts produced under trustScopeRef X”</p></li>
+<li><p>“show all actions that used toolVersion Y”</p></li>
+<li><p>“show all outputs derived from a given context bundle hash”</p></li>
+<li><p>“show all actions executed with MAP hash Z”</p></li>
+</ul></li>
+</ul>
+<p>Lineage is a control-plane capability. It enables fast containment, surgical rollback, and defensible audits without relying on informal operator reconstruction.</p>
+<h3 id="evidence-interchange-formats-derived-non-authoritative">Evidence Interchange Formats (Derived, Non-Authoritative)</h3>
+<p>ACP evidence is recorded canonically as signature-covered action and message envelopes and persisted in the evidence ledger. Implementations MAY additionally produce derived event records in external schemas to support visualization, analytics, training oversight, and integration with existing observability and audit platforms.</p>
+<p>Derived records MUST be treated as non-authoritative representations:</p>
+<ul>
+<li><p>canonical truth: the signature-covered ACP envelope and its evidence root remain the canonical record of what was requested, what was authorized, and what occurred</p></li>
+<li><p>required linkage: every derived record MUST include an immutable pointer to its originating ACP envelope(s) (for example
+<code>envelopeHash</code> and <code>evidenceRootHash</code>) so any consumer can resolve back to the canonical record</p></li>
+<li><p>immutable binding: derived records MUST carry canonical linkage fields as non-optional extensions (at minimum <code>envelopeHash</code>
+and <code>evidenceRootHash</code>)</p></li>
+<li><p>no bypass: derived exports MUST NOT become the sole source of auditability. If export fails or is suppressed by policy, canonical evidence capture still occurs</p></li>
+<li><p>policy-bound export: exporting evidence to external systems is a governed action. The export path MUST enforce labeling, minimization, redaction, and access constraints consistent with the trust scope and policy bundle (see Observability and SOC/CSSP integration)</p></li>
+</ul>
+<p>Non-normative examples of derived schemas include xAPI, common SIEM event shapes, and internal analytics schemas. Derived formats do not change ACP’s canonical evidence model.</p>
+<h3 id="swarm-scale-evidence-hierarchical-aggregation-for-practical-replay">Swarm-Scale Evidence: Hierarchical Aggregation for Practical Replay</h3>
+<p>Swarm replay can be prohibitively expensive if every message and trace is retained at full fidelity. ACP uses hierarchical evidence aggregation:</p>
+<p><strong>Per-agent evidence (always-on):</strong></p>
+<ul>
+<li><p>action envelopes</p></li>
+<li><p>inter-agent message envelopes (metadata always; payload by tier/trigger)</p></li>
+<li><p>context bundle hashes + provenance pointers (payload capture by tier/trigger)</p></li>
+<li><p>policy decisions (inputs/outputs + policy hash)</p></li>
+<li><p>drift/anomaly signals (summaries)</p></li>
+</ul>
+<p><strong>Ensemble evidence (always-on, lightweight):</strong></p>
+<ul>
+<li><p>coordination graph metadata (A2A edges by type and time)</p></li>
+<li><p>arbitration outcomes (conflicts, quorums, deadlocks/timeouts)</p></li>
+<li><p>budget burn-down time series (aggregate and per-role)</p></li>
+<li><p>work-unit DAG summaries (dependencies, blocks, cancellations)</p></li>
+</ul>
+<p><strong>Selective enrichment (triggered):</strong></p>
+<ul>
+<li><p>full message bodies, full context payloads, and detailed planning traces captured on:</p>
+<ul>
+<li><p>anomaly thresholds,</p></li>
+<li><p>high-consequence actions,</p></li>
+<li><p>investigation holds.</p></li>
+</ul></li>
+</ul>
+<p>This yields three replay tiers:</p>
+<ol>
+<li><p>macro replay (graph + budgets + key decisions) for fast SOC/CSSP triage</p></li>
+<li><p>meso replay (selected agents/intervals) for root-cause on a suspected subgraph</p></li>
+<li><p>micro replay (full payloads) for high-consequence or legal/incident requirements</p></li>
+</ol>
+<h2 id="observability-and-soccssp-integration">Observability and SOC/CSSP Integration</h2>
+<p>ACP emits telemetry so operations teams can see:</p>
+<ul>
+<li><p>allow/deny rates by scope/tool/data tag</p></li>
+<li><p>tool-call distributions and anomaly signals</p></li>
+<li><p>model routing changes and regression alerts</p></li>
+<li><p>work-unit status and stall signals (blocked, deadlocked, retry storms)</p></li>
+<li><p>containment events (quarantine/kill/rollback) with evidence pointers</p></li>
+</ul>
+<p>Telemetry and evidence are often more sensitive than the outputs they describe. ACP therefore treats logs, traces, and evidence as governed resources:</p>
+<ul>
+<li><p>label-bound access: access to telemetry and evidence MUST be controlled by the same labeling and ABAC mechanisms used for data and artifacts. If evidence references labeled context, evidence access MUST not bypass those constraints</p></li>
+<li><p>export is an action: exporting telemetry/evidence to external systems (including SIEM/SOAR) MUST be mediated as a governed tool/action with explicit policy, budgets, and evidence of the export itself</p></li>
+<li><p>mutation audit: changes to policy bundles, trust scopes, model routes, tool registries, memory policies, and labeling rules MUST generate audit evidence with before/after hashes, actor identity,
+<code>delegationHash</code> (when present), and a reason code. Policy mutation is a first-class event stream, not an administrative footnote</p></li>
+</ul>
+<p>Exporting telemetry supports monitoring and visualization, but it does not replace canonical evidence capture. Auditability and non-repudiation derive from signature-covered envelopes persisted in the evidence ledger; exports are derived products that MUST link back to canonical hashes.</p>
+<h3 id="swarm-observability-soccssp-views">Swarm Observability: SOC/CSSP Views</h3>
+<ul>
+<li><p>Identity and delegation: actions grouped by principal chain (owner, agent service principal, on-behalf-of principal), including session binding and denied/approved rates.</p></li>
+<li><p>Tool utilization: tool invocations by
+<code>toolId</code>/<code>toolVersion</code>, by trust scope, and by consequence tier; include egress-denied and policy-blocked events.</p></li>
+<li><p>Data and memory operations: read/write activity by label, by store type (working, episodic, semantic, procedural), including quarantine and rollback events.</p></li>
+<li><p>Model usage: <code>modelId</code>/<code>modelVersion</code> and assurance profile (when used), token/latency/cost budgets, and anomaly triggers.</p></li>
+<li><p>Policy mutation: before/after hashes, approvers, and effective-time changes for policy bundles, trust scopes, tool registries, and model routes.</p></li>
+<li><p>Trace-to-version replay: drill-down from an output artifact to the exact context hashes, tool versions, model identifiers, and policy decision records that produced it.</p></li>
+</ul>
+<p>Dashboards are consumers of evidence, not sources of authority. Any dashboard view MUST be reconstructible from the evidence ledger.</p>
+<h2 id="containment-and-revocation">Containment and Revocation</h2>
+<p>Containment operates at multiple levels:</p>
+<ul>
+<li><p><strong>agent kill:</strong> stop runtime, revoke credentials, invalidate scopes</p></li>
+<li><p><strong>agent quarantine:</strong> keep runtime alive but tool-isolated for triage</p></li>
+<li><p><strong>ensemble freeze:</strong> pause coordination, preserve state for replay</p></li>
+<li><p><strong>ensemble degrade:</strong> force safe mode (local models only; read-only tools)</p></li>
+<li><p><strong>policy lockdown:</strong> tighten scopes rapidly across the ensemble</p></li>
+<li><p><strong>work-unit freeze:</strong> pause one work unit while allowing others to continue</p></li>
+</ul>
+<p>Containment must be fast (seconds), attributable, logged, and—when safe—reversible.</p>
+<h2 id="resource-governance-budget-engine">Resource Governance (Budget Engine)</h2>
+<p>Budgets are policy-enforced constraints:</p>
+<ul>
+<li><p>compute (GPU seconds, CPU time)</p></li>
+<li><p>tokens and inference cost</p></li>
+<li><p>tool calls by category</p></li>
+<li><p>data egress/bandwidth</p></li>
+<li><p>time</p></li>
+<li><p>power (watt-hours) in edge deployments</p></li>
+<li><p>risk budget (number of high-consequence actions per window)</p></li>
+<li><p>unified token accounting: token usage MUST be attributable by work unit, trust scope, principal chain (<code>delegationHash</code>), and model MAP; budgets can be enforced and trended at each level</p></li>
+</ul>
+<p>Budget allocation can be static by tier or dynamic by mission priority (see “Patterns”).</p>
+<h2 id="federation-and-cross-domain-transfer">Federation and Cross-Domain Transfer</h2>
+<p>ACP supports federation by treating identity, scopes, context, and evidence as portable artifacts:</p>
+<ul>
+<li><p>identity federation aligned to ICAM patterns</p></li>
+<li><p>scope translation gates across enclaves (intersection + local caveats)</p></li>
+<li><p>cross-domain context transfer as sanitized context bundles (hashes/pointers when payload transfer is forbidden)</p></li>
+<li><p>evidence bridging: prove linkage without leaking content</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="control-loops-how-the-system-behaves">Control Loops (How the System Behaves)</h2>
+<h2 id="action-loop-intent-policy-mediated-action-evidence">Action Loop: Intent → Policy → Mediated Action → Evidence</h2>
+<figure>
+<img src="/papers/acp-ra/diagrams/acp_action_flow.png" / alt="">
+<figcaption>Action Loop</figcaption>
+</figure>
+<p>Narrative flow:</p>
+<ol>
+<li><p>A work unit is created and bound to a trust scope and budget allocation.</p></li>
+<li><p>An agent forms an intent (“open PR,” “update config,” “provision account”).</p></li>
+<li><p>The agent requests action via the Tool/Action Gateway (not direct tool access).</p></li>
+<li><p>The gateway calls the Policy Engine (PDP) with scope + work-unit constraints + attributes + environment signals.</p></li>
+<li><p>The policy decision returns allow/deny + required approvals +
+budget impacts.</p></li>
+<li><p>Execution runs in a sandbox with brokered secrets and governed egress.</p></li>
+<li><p>The outcome is sealed as an action envelope and written to the evidence ledger.</p></li>
+</ol>
+<h2 id="governance-loop-artifacts-tests-promotion-enforcement">Governance Loop: Artifacts → Tests → Promotion → Enforcement</h2>
+<figure>
+<img src="/papers/acp-ra/diagrams/acp_governance_lifecycle_compact.png" / alt="">
+<figcaption>Governance Lifecycle</figcaption>
+</figure>
+<p>ACP governance is GitOps-oriented:</p>
+<ul>
+<li><p>trust scopes, tool catalogs, interop policies, model routes, and eval packs are versioned artifacts</p></li>
+<li><p>CI validates schemas, runs evals, runs adversarial tests</p></li>
+<li><p>signed bundles are promoted to enforcement points</p></li>
+<li><p>telemetry and evidence feed continuous monitoring and after-action improvement</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="multi-agent-governance-ensembles-and-swarms">Multi-Agent Governance (Ensembles and Swarms)</h2>
+<p>Multi-agent behavior is where risk and value both amplify. Without explicit ensemble governance, emergent behavior becomes an incident generator: cascading retries, deadlocks, adversarial influence via compromised peers, and “collective hallucination” reinforced through shared memory.</p>
+<p>ACP treats ensembles as first-class objects.</p>
+<h2 id="coordination-patterns-policy-selectable">Coordination Patterns (Policy-Selectable)</h2>
+<p>Common patterns are supported as declared coordination policies:</p>
+<ul>
+<li><p><strong>Hierarchical (orchestrator → workers):</strong>
+orchestrator decomposes tasks, workers execute narrow scopes. Strong accountability and containment.</p></li>
+<li><p><strong>Peer-to-peer:</strong> distributed planning with explicit arbitration and shared-state controls.</p></li>
+<li><p><strong>Market/auction scheduling:</strong> useful when missions compete for scarce compute/power/bandwidth; requires anti-gaming and auditability.</p></li>
+<li><p><strong>Leader election/rotating coordinator:</strong> avoids single points of failure; requires signed leases and fast failover.</p></li>
+</ul>
+<h2 id="trust-scope-composition-and-delegation">Trust Scope Composition and Delegation</h2>
+<ul>
+<li><p>Worker scopes are strict subsets of orchestrator scope (intersection).</p></li>
+<li><p>Orchestrators delegate budgets as allowances; allowances are reclaimable and time-bounded.</p></li>
+<li><p>Ensembles inherit the maximum consequence tier they are capable of initiating unless explicitly forbidden by contract.</p></li>
+</ul>
+<h2 id="shared-state-governance">Shared State Governance</h2>
+<p>Shared state is governed by:</p>
+<ul>
+<li><p>tag-based access controls and minimization rules</p></li>
+<li><p>concurrency semantics (leases, idempotency, OCC)</p></li>
+<li><p>replayability (state changes reference evidence)</p></li>
+<li><p>“memory hygiene” policies (retention, poisoning mitigation, periodic pruning)</p></li>
+</ul>
+<p>Shared state is also shared memory. To prevent “collective hallucination” becoming durable enterprise state, ACP requires:</p>
+<ul>
+<li><p>memory typing: shared state stores MUST declare what type(s) of memory they contain (for example transient vs persistent; episodic vs semantic) or explicitly partition them</p></li>
+<li><p>write constraints: writes MUST be scoped (by work unit, trust scope, and tags) and lease-controlled; long-lived shared writes require tighter tiers or explicit approvals</p></li>
+<li><p>provenance-on-write: every mutation MUST reference evidence (policy decision, source context bundle hashes, and actor
+<code>delegationHash</code> when present)</p></li>
+<li><p>hygiene as policy: retention windows, pruning cadence, and re-validation triggers MUST be declared in policy bundles and enforced automatically (not left to operator convention)</p></li>
+</ul>
+<h2 id="arbitration-and-deadlock-prevention">Arbitration and Deadlock Prevention</h2>
+<p>Ensembles declare:</p>
+<ul>
+<li><p>conflict policies (who wins, quorum rules, tie-breakers)</p></li>
+<li><p>TTLs for tasks/messages</p></li>
+<li><p>backoff and retry semantics</p></li>
+<li><p>escalation rules for unresolved conflicts</p></li>
+</ul>
+<p>Deadlocks and retry storms are both reliability incidents and security risks.</p>
+<h2 id="swarm-budgets-and-dynamic-allocation">Swarm Budgets and Dynamic Allocation</h2>
+<p>Budgets exist at ensemble and member levels:</p>
+<ul>
+<li><p>ensemble aggregate budgets bound overall effect</p></li>
+<li><p>per-member budgets prevent a single agent from exhausting resources</p></li>
+<li><p>dynamic reallocation supports mission priorities under constraint</p></li>
+</ul>
+<p>Allocation mechanisms can include:</p>
+<ul>
+<li><p>priority queues (mission tiered)</p></li>
+<li><p>budget auctions for scarce resources</p></li>
+<li><p>throttling policies during degraded modes</p></li>
+</ul>
+<h2 id="swarm-containment-without-collapse">Swarm Containment without Collapse</h2>
+<p>Containment must be able to isolate one misbehaving member without collapsing collective behavior:</p>
+<ul>
+<li><p>quarantine one agent (tool isolation) while the ensemble continues</p></li>
+<li><p>freeze coordination while preserving state for replay</p></li>
+<li><p>degrade ensemble mode (local models only; read-only tools) when attack indicators rise</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="adversarial-robustness-and-contesteddegraded-operation">Adversarial Robustness and Contested/Degraded Operation</h2>
+<p>ACP assumes sophisticated adversaries and treats “benign” inputs as untrusted until proven otherwise.</p>
+<h2 id="threat-classes">Threat Classes</h2>
+<ul>
+<li><p>context and data poisoning (including retrieval hijacking and shared-memory poisoning)</p></li>
+<li><p>tool output deception and supply chain compromise</p></li>
+<li><p>model extraction/inversion via repeated calls</p></li>
+<li><p>goal drift and reward hacking (where feedback loops exist)</p></li>
+<li><p>control plane subversion (policy engine, evidence ledger, revocation channels)</p></li>
+<li><p>inter-agent adversarial influence (compromised peers or malicious interop payloads)</p></li>
+</ul>
+<h2 id="defenses-engineered-into-acp">Defenses Engineered into ACP</h2>
+<ul>
+<li><p>provenance everywhere (context bundles, message hashes, action envelopes)</p></li>
+<li><p>sandboxed execution and secrets brokerage</p></li>
+<li><p>strict egress control and budget enforcement</p></li>
+<li><p>runtime drift detection (behavior distribution shifts vs baselines)</p></li>
+<li><p>circuit breakers at the inter-agent gateway and tool gateway</p></li>
+<li><p>continuous adversarial eval packs as promotion gates</p></li>
+<li><p>distributed enforcement with cached signed policy bundles to survive PDP outages</p></li>
+<li><p>tamper-evident evidence with integrity checks and separate control-plane segmentation</p></li>
+</ul>
+<h2 id="degraded-modes-policy-driven-safe-behavior">Degraded Modes (Policy-Driven Safe Behavior)</h2>
+<p>Degraded operation is a declared policy mode, not a surprise outage.</p>
+<p>Examples:</p>
+<ul>
+<li><p><strong>Disconnected:</strong> no external model gateway; local inference only; strict tool denylist; increased escalation.</p></li>
+<li><p><strong>Intermittent:</strong> queue actions; delayed approvals; increase evidence capture for later sync.</p></li>
+<li><p><strong>Denied-model:</strong> forced fallback to smaller/local models; reduced autonomy; tightened budgets.</p></li>
+<li><p><strong>Human-handover:</strong> if confidence drops or novelty rises beyond threshold, shift to human decision authority.</p></li>
+</ul>
+<p>Trust scopes declare which degraded modes are allowed and what behaviors change per mode.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="human-oversight-escalation-and-responsible-ai-alignment">Human Oversight, Escalation, and Responsible AI Alignment</h2>
+<p>Human involvement is not binary. It is engineered as governed transitions based on confidence, novelty, consequence, and ethical constraints.</p>
+<h2 id="escalation-taxonomy-what-triggers-humans">Escalation Taxonomy (What Triggers Humans)</h2>
+<p>Escalation triggers include:</p>
+<ul>
+<li><p><strong>Confidence:</strong> low calibration, conflicting sources, high uncertainty in plan selection</p></li>
+<li><p><strong>Novelty:</strong> new tool, new data domain, new environment/enclave, unusual dependencies</p></li>
+<li><p><strong>Consequence:</strong> irreversible actions, high-impact changes, public/external communications</p></li>
+<li><p><strong>Ethical/policy flags:</strong> restricted categories, high-impact decision domains, questionable provenance</p></li>
+<li><p><strong>Behavioral anomalies:</strong> drift signals, cascade patterns, tool-use distribution shifts</p></li>
+</ul>
+<p>Trust scopes declare which triggers are binding and what approvals/quorums apply.</p>
+<h2 id="override-surfaces-are-governed">Override Surfaces Are Governed</h2>
+<p>Human override is a privileged act:</p>
+<ul>
+<li><p>role-limited, time-bounded, and scoped to specific actions</p></li>
+<li><p>dual-control for high-consequence overrides</p></li>
+<li><p>recorded as evidence with justification</p></li>
+<li><p>auditable and replayable</p></li>
+</ul>
+<h2 id="hybrid-teaming-patterns">Hybrid Teaming Patterns</h2>
+<p>ACP supports multiple teaming modes by tier:</p>
+<ul>
+<li><p>agent proposes, human decides</p></li>
+<li><p>agent executes with human veto window</p></li>
+<li><p>agent executes under policy with post-hoc review (low-tier only)</p></li>
+</ul>
+<h2 id="responsible-ai-alignment-operationalized-as-controls">Responsible AI Alignment (Operationalized as Controls)</h2>
+<p>DoW AI ethical principles are implemented as control-plane behaviors:</p>
+<ul>
+<li><p><strong>Responsible:</strong> attributable ownership; governed overrides; audit trails.</p></li>
+<li><p><strong>Equitable:</strong> eval packs include bias/disparate-impact checks where relevant; drift monitoring watches for performance skews.</p></li>
+<li><p><strong>Traceable:</strong> context bundles, action envelopes, and policy decisions enable replay; provenance is mandatory for higher tiers.</p></li>
+<li><p><strong>Reliable:</strong> regression gates and continuous monitoring enforce stability; degraded-mode policies avoid brittle failure.</p></li>
+<li><p><strong>Governable:</strong> kill/quarantine/rollback are first-class; scopes can be tightened centrally and enforced at distributed PEPs.</p></li>
+</ul>
+<p>After-action review loops feed back into trust scope refinement, eval pack expansion, and policy updates.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="composability-federation-and-cross-enclave-interoperability">Composability, Federation, and Cross-Enclave Interoperability</h2>
+<p>ACP is designed to operate in federated DoW reality.</p>
+<h2 id="federation-patterns">Federation Patterns</h2>
+<ul>
+<li><p>identity federation aligned to ICAM patterns for mission partners and NPEs</p></li>
+<li><p>portable trust scopes as signed artifacts with issuer claims and validity windows</p></li>
+<li><p>translation gates when importing scopes into a new enclave:</p>
+<ul>
+<li><p>intersect capabilities (never union)</p></li>
+<li><p>map vocabulary and tool catalogs to local enforcement points</p></li>
+<li><p>attach local caveats and retention requirements</p></li>
+<li><p>record translation as evidence</p></li>
+</ul></li>
+</ul>
+<h2 id="cross-domain-context-transfer">Cross-Domain Context Transfer</h2>
+<p>Cross-domain handoffs use context bundles:</p>
+<ul>
+<li><p>sanitize payloads per policy</p></li>
+<li><p>export hashes/pointers when payload transfer is forbidden</p></li>
+<li><p>maintain evidence linkage across domains without leaking content</p></li>
+</ul>
+<h2 id="portability-across-clouds-on-prem-and-edge">Portability Across Clouds, on-Prem, and Edge</h2>
+<p>ACP achieves portability by standardizing:</p>
+<ul>
+<li><p>artifact schemas (scope/policy/interop/eval/evidence/work-units)</p></li>
+<li><p>gateway behaviors (tool, model, context, inter-agent)</p></li>
+<li><p>evidence event formats</p></li>
+</ul>
+<p>This allows consistent enforcement whether workloads run behind CNAP patterns, on K8s factories, or on disconnected edge nodes.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="lifecycle-of-the-acp-itself">Lifecycle of the ACP Itself</h2>
+<p>The ACP will evolve at the same tempo it enables. Control plane upgrades must not break enforcement.</p>
+<h2 id="safe-upgrades-and-migrations">Safe Upgrades and Migrations</h2>
+<ul>
+<li><p>policy bundles are versioned and signed; PEPs support dual policy versions during transitions</p></li>
+<li><p>trust scope schema versioning with migration tooling and CI validation</p></li>
+<li><p>tool/skill registry schema migrations preserve provenance and scanner evidence</p></li>
+<li><p>rollback by switching bundle pointers to last-known-good</p></li>
+<li><p>compatibility tests and adversarial eval packs required for ACP changes</p></li>
+</ul>
+<h2 id="load-chaos-and-attack-simulation">Load, Chaos, and Attack Simulation</h2>
+<p>ACP is tested like a mission system:</p>
+<ul>
+<li><p>load tests with large ensembles, high A2A chatter, and many concurrent work units</p></li>
+<li><p>chaos experiments (PDP outage, model gateway denial, degraded network)</p></li>
+<li><p>red-team simulations targeting policy, ledger, registry, and revocation channels</p></li>
+<li><p>replay drills: reconstruct ensemble failures using macro→meso→micro evidence tiers</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="patterns-reusable-implementation-guidance">Patterns (Reusable Implementation Guidance)</h2>
+<h2 id="pattern-work-units-as-the-unit-of-supervision">Pattern: “Work Units as the Unit of Supervision”</h2>
+<p>Humans supervise work units, not tool calls:</p>
+<ul>
+<li><p>each work unit is bounded by scope and budgets</p></li>
+<li><p>outputs are reviewed at artifact/diff level</p></li>
+<li><p>escalation triggers bring humans into the loop at the right time</p></li>
+</ul>
+<h2 id="pattern-policy-centered-mesh">Pattern: “Policy-Centered Mesh”</h2>
+<p>Central policy decisions, distributed enforcement at every boundary (tool, context, model, inter-agent, work-unit transitions).</p>
+<h2 id="pattern-bulkhead-gateways">Pattern: “Bulkhead Gateways”</h2>
+<p>Gateways as bulkheads: tool sandboxing, context controls, inter-agent circuit breakers, and supply-chain attestation.</p>
+<h2 id="pattern-budgeted-autonomy">Pattern: “Budgeted Autonomy”</h2>
+<p>Budgets treated as policy and enforced at runtime; budgets drive safe degradation and allocation under scarcity.</p>
+<h2 id="pattern-tool-supply-chain-governance">Pattern: “Tool Supply Chain Governance”</h2>
+<p>Tools and skills are onboarded and operated like software supply chains: signing, scanning, eval packs, attestation, and quarantine.</p>
+<h2 id="pattern-evidence-first-releases">Pattern: “Evidence-First Releases”</h2>
+<p>No promotion without evidence: eval packs, policy hashes, scope signatures, and replayability proofs.</p>
+<h2 id="pattern-ensemble-contract">Pattern: “Ensemble Contract”</h2>
+<p>Multi-agent deployments ship with an ensemble contract defining orchestration, arbitration, shared state, budgets, and containment.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="metrics-success-criteria-and-a-transition-roadmap">Metrics, Success Criteria, and a Transition Roadmap</h2>
+<h2 id="success-metrics">Success Metrics</h2>
+<p><strong>Tempo and delivery</strong></p>
+<ul>
+<li><p>time from scope/policy PR to deployable signed bundle</p></li>
+<li><p>work-unit completion time distributions by tier and mission thread</p></li>
+<li><p>model/tool update cycle time (shadow → canary → promote →
+rollback)</p></li>
+<li><p>mean time to quarantine/revoke (MTTQ / MTTR-Q)</p></li>
+</ul>
+<p><strong>Safety and governance</strong></p>
+<ul>
+<li><p>policy violation attempts per tool/data category</p></li>
+<li><p>approval compliance rate for high-tier actions</p></li>
+<li><p>evidence completeness rate (required fields present per action)</p></li>
+<li><p>replay success rate (can reconstruct runs to acceptable fidelity)</p></li>
+</ul>
+<p><strong>Swarm reliability</strong></p>
+<ul>
+<li><p>deadlock/livelock frequency</p></li>
+<li><p>cascade containment time (detect → throttle → isolate)</p></li>
+<li><p>ensemble success rate on golden scenarios</p></li>
+</ul>
+<p><strong>Tool supply chain</strong></p>
+<ul>
+<li><p>% of tool executions with verified signatures/attestation</p></li>
+<li><p>time-to-revoke malicious or unstable tools</p></li>
+<li><p>incidence rates by provenance tier (Tier A/B/C)</p></li>
+</ul>
+<p><strong>Adversarial robustness</strong></p>
+<ul>
+<li><p>red-team pass rate by attack class</p></li>
+<li><p>drift detection sensitivity/precision</p></li>
+<li><p>anomaly response time (detect → contain)</p></li>
+</ul>
+<p><strong>Resources</strong></p>
+<ul>
+<li><p>compute and power per unit effect (task completion per watt-hour)</p></li>
+<li><p>egress per mission outcome</p></li>
+<li><p>budget overrun frequency and root causes</p></li>
+</ul>
+<h2 id="maturity-levels-acp-conformance">Maturity Levels (ACP-conformance)</h2>
+<ul>
+<li><p><strong>Level 0:</strong> copilot sprawl; no mediated tools; ad-hoc prompts; minimal evidence</p></li>
+<li><p><strong>Level 1:</strong> identified agents (NPE), basic logging, manual controls</p></li>
+<li><p><strong>Level 2:</strong> governed actions (trust scopes + tool gateway + evidence ledger)</p></li>
+<li><p><strong>Level 3:</strong> supervised autonomy (work units + eval gates + drift monitoring + rehearsed rollback/containment)</p></li>
+<li><p><strong>Level 4:</strong> swarm governance (ensemble contracts +
+inter-agent gateway + arbitration + swarm budgets + swarm dashboards)</p></li>
+<li><p><strong>Level 5:</strong> federated &amp; contested (cross-enclave scope translation + degraded modes + control-plane survivability drills + registry hardening)</p></li>
+</ul>
+<h2 id="transition-roadmap-copilots-governed-agents-supervised-autonomy-governed-swarms">Transition Roadmap (Copilots → Governed Agents → Supervised Autonomy → Governed Swarms)</h2>
+<ol>
+<li><p><strong>Instrument first:</strong> standard evidence schema; onboard agents as NPEs.</p></li>
+<li><p><strong>Mediate doing:</strong> enforce tool gateway; budgets; sandboxing; secrets brokerage; registry onboarding for tools.</p></li>
+<li><p><strong>Codify scopes:</strong> require trust scope manifests; signatures; policy bundle enforcement.</p></li>
+<li><p><strong>Introduce work units:</strong> supervise long-running tasks; bind outputs to work_unit_id; integrate approvals and evidence drill-down.</p></li>
+<li><p><strong>Gate releases:</strong> eval packs as promotion gates; canary/rollback for tools/models/policies.</p></li>
+<li><p><strong>Scale to ensembles:</strong> ensemble contracts; inter-agent gateway; arbitration rules; swarm observability.</p></li>
+<li><p><strong>Federate:</strong> scope translation; cross-domain context/evidence bridging; portability across environments.</p></li>
+</ol>
+<div class="center">
+<hr />
+</div>
+<h2 id="recommendations">Recommendations</h2>
+<ul>
+<li><p>Treat every agent as a non-person entity with enterprise identity attributes and lifecycle controls.</p></li>
+<li><p>Require a signed trust scope manifest for every agent and ensemble, and compose authority by intersection.</p></li>
+<li><p>Make work units the unit of supervision: budgets, dependencies, checkpoints, and evidence roots.</p></li>
+<li><p>Mediate all side effects through gateways (tool, context, model, inter-agent) with policy enforcement and audit.</p></li>
+<li><p>Gate promotions with eval packs and adversarial tests; require rollback and containment rehearsal.</p></li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>ACP-RA treats autonomy as an engineered control system. It separates planning from doing, centralizes policy decisions while distributing enforcement, and makes evidence and containment first-class. This enables faster iteration without turning speed into unmanaged risk, including for multi-agent ensembles operating in contested and degraded environments.</p>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-minimal-artifact-set-gitops-ready">Appendix: Minimal Artifact Set (GitOps-ready)</h2>
+<p>At minimum, version-control the following:</p>
+<ul>
+<li><p><code>trust-scope/*.yaml</code></p></li>
+<li><p><code>ensemble/*.yaml</code></p></li>
+<li><p><code>work-units/*.yaml</code> (or work-unit schemas and templates)</p></li>
+<li><p><code>tool-catalog.yaml</code></p></li>
+<li><p><code>tool-registry/*.yaml</code> (tool manifests, provenance tier, signatures, SBOM pointers)</p></li>
+<li><p><code>inter-agent-policy.yaml</code></p></li>
+<li><p><code>connectors/*.yaml</code> (MCP or equivalent tool transports: servers/resources/prompts allowlists, if used)</p></li>
+<li><p><code>model-routing.yaml</code></p></li>
+<li><p><code>model-assurance/*.yaml</code> (Model Assurance Profiles; hosting + data handling + eval references)</p></li>
+<li><p><code>sandbox-profiles/*.yaml</code> (executor and tool sandbox profiles by tier and enclave)</p></li>
+<li><p><code>lineage-schema/*.json</code> (required lineage fields and query keys)</p></li>
+<li><p><code>delegation-schema/*.json</code> (delegation chain fields and signature coverage requirements)</p></li>
+<li><p><code>memory-policies/*.yaml</code> (retention, write rules, poisoning mitigation, pruning cadence)</p></li>
+<li><p><code>policy-trust-anchors/*.yaml</code> (accepted signing authorities and hash allowlists for policy bundles and trust scopes)</p></li>
+<li><p><code>context-sources.yaml</code></p></li>
+<li><p><code>eval-packs/*.yaml</code></p></li>
+<li><p><code>tool-evals/*.yaml</code></p></li>
+<li><p><code>evidence-schema/*.json</code></p></li>
+<li><p><code>evidence-export-profiles/*.yaml</code> (REQUIRED if exporting derived evidence: minimization, linkage requirements, and governed sinks)</p></li>
+<li><p><code>dashboards/*.json</code> (SIEM/SOAR/SOC views)</p></li>
+<li><p><code>dashboard-queries/*.yaml</code> (optional: saved lineage/governance queries derived from evidence)</p></li>
+<li><p><code>runbooks/*.md</code> (containment, rollback, degraded-mode transitions)</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-example-ensemble-contract-illustrative">Appendix: Example Ensemble Contract (Illustrative)</h2>
+<pre class="codeblock"><code><span class="code-line">apiVersion: acp.dod/v1 kind: Ensemble metadata: name: ops-planning-ensemble-alpha spec: consequenceTier: T2 orchestratorRef:</span>
+<span class="code-line">&quot;npe:agent/orchestrator-77c9&quot; members: - ref:</span>
+<span class="code-line">&quot;npe:agent/geo-analyst-112a&quot; role: analysis</span>
+<span class="code-line">- ref: &quot;npe:agent/logistics-55bd&quot; role: planning - ref:</span>
+<span class="code-line">&quot;npe:agent/policy-checker-9ef1&quot; role: safety coordination: pattern: hierarchical arbitration: conflictPolicy: orchestrator-final quorumRules: - actionType: irreversible quorum: &quot;2-of-3&quot; timeouts: taskTTLSeconds: 900 messageTTLSeconds: 120 budgets: aggregate: gpuSeconds: 7200 toolCallsPerHour: 300 egressMBPerHour: 50 perRole: analysis: toolCallsPerHour: 80 safety: toolCallsPerHour: 30 interAgentPolicy: requireSignedMessages: true allowedMessageTypes:</span>
+<span class="code-line">- task.assign - task.result -</span>
+<span class="code-line">artifact.share rateLimits: maxMessagesPerMinutePerMember: 120 fanOutCaps: maxRecipientsPerMessage: 8 safety: quarantineOn:</span>
+<span class="code-line">- signal: drift.high - signal: iag.cascade degradedModesAllowed: - intermittent -</span>
+<span class="code-line">denied-model</span></code></pre>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-example-work-unit-template-illustrative">Appendix: Example Work Unit Template (Illustrative)</h2>
+<pre class="codeblock"><code><span class="code-line">apiVersion: acp.dod/v1 kind: WorkUnit metadata: name:</span>
+<span class="code-line">&quot;wu-opsplan-2026-02-10-0007&quot;</span>
+<span class="code-line">spec: trustScopeRef:</span>
+<span class="code-line">&quot;trustscope://ops-planning/T2@sha256:...&quot; policyBundleRef:</span>
+<span class="code-line">&quot;policy://bundle/2026-02@sha256:...&quot; budgets: gpuSeconds: 900 toolCalls: 50 egressMB: 10 wallClockSeconds: 1800 dependencies: requires: -</span>
+<span class="code-line">&quot;wu-opsplan-2026-02-10-0002&quot;</span>
+<span class="code-line">checkpoints: frequencySeconds: 180 artifacts: - type:</span>
+<span class="code-line">&quot;plan&quot; - type: &quot;diff&quot; - type:</span>
+<span class="code-line">&quot;evidence-summary&quot; escalation: onBlockedSeconds: 300 onNovelToolUse: true</span></code></pre>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-example-model-assurance-profile-illustrative-non-normative">Appendix: Example Model Assurance Profile (Illustrative, Non-Normative)</h2>
+<pre class="codeblock"><code><span class="code-line">apiVersion: acp.dod/v1 kind: ModelAssuranceProfile metadata: name:</span>
+<span class="code-line">&quot;map-commercial-no-retention&quot;</span>
+<span class="code-line">spec: modelId: &quot;model:frontier-x&quot; modelVersion:</span>
+<span class="code-line">&quot;sha256:&lt;immutable-build-hash&gt;&quot; hosting: enclave: &quot;npe-il5&quot; region: &quot;us-gov&quot;</span>
+<span class="code-line">dataHandling: promptRetention: &quot;none&quot; completionRetention: &quot;none&quot;</span>
+<span class="code-line">trainingUse: &quot;prohibited&quot; telemetryContent: &quot;metadata-only&quot;</span>
+<span class="code-line">usageModesAllowed: - &quot;interactive-assist&quot;</span>
+<span class="code-line">- &quot;agent-execution&quot; evalRequirements: evalPackRefs: -</span>
+<span class="code-line">&quot;eval://pack/agentic-baseline@sha256:...&quot; -</span>
+<span class="code-line">&quot;eval://pack/adversarial-injection@sha256:...&quot; lifecycle: canaryPolicy: &quot;shadow-then-canary&quot; rollback:</span>
+<span class="code-line">&quot;enabled&quot;</span></code></pre>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-example-sandbox-profile-illustrative-non-normative">Appendix: Example Sandbox Profile (Illustrative, Non-Normative)</h2>
+<pre class="codeblock"><code><span class="code-line">apiVersion: acp.dod/v1 kind: SandboxProfile metadata: name:</span>
+<span class="code-line">&quot;sandbox:t2&quot; spec: isolation: mode: &quot;container&quot; ephemeral: true filesystem: &quot;read-only-root&quot; network: egressPolicyRef: &quot;egress:t2-restricted&quot; allowDns: true allowOutboundDomains: - &quot;internal.gov.service&quot; secrets: brokerRef: &quot;secrets://broker/v1&quot; allowDirectSecretRead: false observability: sessionCapture: &quot;enabled&quot; evidenceSampling: &quot;high&quot;</span>
+<span class="code-line">toolClassesAllowed: - &quot;data.read&quot; -</span>
+<span class="code-line">&quot;repo.pr.create&quot; - &quot;ticket.update&quot;</span></code></pre>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-alignment-to-nist-software-and-ai-agent-identity-and-authorization-focus-areas-draft-as-of-2026-02-16">Appendix: Alignment to NIST “Software and AI Agent Identity and Authorization”
+Focus Areas (Draft, as of 2026-02-16)</h2>
+<p>This appendix maps ACP control surfaces to the identity and authorization considerations currently being explored by NIST NCCoE for software and AI agents. This is alignment context, not a dependency and not a normative requirement source.</p>
+<ol>
+<li><p>Identification</p>
+<ul>
+<li><p>ACP principals include human subjects and non-person entities (NPEs) and support stable identities (service principals) and ephemeral identities (run/session identifiers) bound to evidence.</p></li>
+<li><p>Trust scopes bind allowed actions to explicit principals and environments.</p></li>
+</ul></li>
+<li><p>Authentication</p>
+<ul>
+<li><p>ACP requires authenticated service identity for agent executors and authenticated human identity for delegated (“on behalf of”) execution.</p></li>
+<li><p>Key lifecycle (issuance/rotation/revocation) is an implementation requirement for executor and tool identities.</p></li>
+</ul></li>
+<li><p>Authorization</p>
+<ul>
+<li><p>ACP authorization is evaluated continuously using PDP/PEP enforcement at model, data/context, tool/action, and inter-agent gateways.</p></li>
+<li><p>Least privilege is enforced by trust scope constraints, policy bundles, environment posture, budgets, and consequence tiers.</p></li>
+<li><p>Delegation is explicit, session-bound, and intersected across owner, agent service principal, and on-behalf-of principal when present.</p></li>
+</ul></li>
+<li><p>Auditing and non-repudiation</p>
+<ul>
+<li><p>ACP emits signature-covered envelopes for all governed actions and messages and persists these into an evidence ledger sufficient for replay, attribution, and forensic reconstruction.</p></li>
+<li><p>Derived exports remain non-authoritative and MUST link back to canonical envelope hashes.</p></li>
+</ul></li>
+<li><p>Prompt injection prevention and mitigation</p>
+<ul>
+<li><p>ACP treats retrieved content and tool outputs as data, not authority.</p></li>
+<li><p>Context ingestion and tool outputs are label-scoped, provenance-tracked, and subject to quarantine, rollback, and minimization.</p></li>
+</ul></li>
+</ol>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-memory-modalities-illustrative">Appendix: Memory Modalities (Illustrative)</h2>
+<p>These modalities are implementation mental models. They do not create authority and do not change ACP’s trust boundaries.</p>
+<ul>
+<li><p>Working memory: the information at the disposal of the agent during the current control loop (prompt inputs, intermediate variables, scratchpads). Working memory is transient by default and MUST NOT be persisted unless policy explicitly allows it.</p></li>
+<li><p>Episodic memory: information retained across execution sessions that is primarily temporal (what happened, when, under which scope). Episodic memory SHOULD be implemented as structured, queryable records tied to work units and evidence roots.</p></li>
+<li><p>Semantic memory: durable knowledge organized for retrieval (knowledge nodes, vector indexes, curated references). Semantic memory MUST be governed as a knowledge base: controlled ingestion, labeling, provenance, and periodic re-validation.</p></li>
+<li><p>Procedural memory: durable instructions and routines that shape behavior (prompt templates, policies-as-code, workflow logic, tool schemas, agent “skills”). Procedural memory MUST be treated as a supply chain artifact: versioned, signed, evaluated, and promoted through gates.</p></li>
+</ul>
+<div class="center">
+<hr />
+</div>
+<h2 id="appendix-references-authoritative-and-industry-sources">Appendix: References (Authoritative and Industry Sources)</h2>
+<blockquote>
+<p>URLs are listed for traceability; downstream repositories should pin to specific versions/hashes where possible.</p>
+</blockquote>
+<h2 id="dow-dow-cio">DoW / DoW CIO</h2>
+<ul>
+<li><p>DoW CIO, <em>Reference Architecture Description</em> (June 2010):
+<a href="https://dodcio.defense.gov/Portals/0/Documents/Ref_Archi_Description_Final_v1_18Jun10.pdf"
+class="uri">https://dodcio.defense.gov/Portals/0/Documents/Ref_Archi_Description_Final_v1_18Jun10.pdf</a><br />
+</p></li>
+<li><p>DoW CIO, <em>DoW Zero Trust Reference Architecture v2.0</em>
+(2022): <a href="https://dodcio.defense.gov/Portals/0/Documents/Library/%28U%29ZT_RA_v2.0%28U%29_Sep22.pdf"
+class="uri">https://dodcio.defense.gov/Portals/0/Documents/Library/%28U%29ZT_RA_v2.0%28U%29_Sep22.pdf</a><br />
+</p></li>
+<li><p>DoW CIO, <em>ICAM Federation Framework</em> (2024): <a href="https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM-FederationFramework.pdf"
+class="uri">https://dodcio.defense.gov/Portals/0/Documents/Cyber/ICAM-FederationFramework.pdf</a><br />
+</p></li>
+<li><p>DoW CIO, <em>Cloud Native Access Point (CNAP) Reference Design v1.0</em> (2021): <a href="https://dodcio.defense.gov/Portals/0/Documents/Library/CNAP_RefDesign_v1.0.pdf"
+class="uri">https://dodcio.defense.gov/Portals/0/Documents/Library/CNAP_RefDesign_v1.0.pdf</a><br />
+</p></li>
+<li><p>DoW CIO, <em>DevSecOps Continuous Authorization Implementation Guide</em> (2024): <a href="https://dodcio.defense.gov/Portals/0/Documents/Library/DoDCIO-ContinuousAuthorizationImplementationGuide.pdf"
+class="uri">https://dodcio.defense.gov/Portals/0/Documents/Library/DoDCIO-ContinuousAuthorizationImplementationGuide.pdf</a><br />
+</p></li>
+<li><p>DoW CIO, <em>cATO Evaluation Criteria</em> (2024): <a href="https://dodcio.defense.gov/Portals/0/Documents/Library/cATO-EvaluationCriteria.pdf"
+class="uri">https://dodcio.defense.gov/Portals/0/Documents/Library/cATO-EvaluationCriteria.pdf</a><br />
+</p></li>
+<li><p>DoW CIO, <em>Continuous Authorization to Operate (cATO) memo</em>
+(2022): <a href="https://media.defense.gov/2022/Feb/03/2002932852/-1/-1/0/CONTINUOUS-AUTHORIZATION-TO-OPERATE.PDF"
+class="uri">https://media.defense.gov/2022/Feb/03/2002932852/-1/-1/0/CONTINUOUS-AUTHORIZATION-TO-OPERATE.PDF</a><br />
+</p></li>
+<li><p>DoW CIO, <em>AI Cybersecurity Risk Management Tailoring Guide</em> (2025): <a href="https://dodcio.defense.gov/Portals/0/Documents/Library/AI-CybersecurityRMTailoringGuide.pdf"
+class="uri">https://dodcio.defense.gov/Portals/0/Documents/Library/AI-CybersecurityRMTailoringGuide.pdf</a><br />
+</p></li>
+<li><p>DoW, <em>Implementing Responsible AI in the DoW</em> (May 2021):
+<a href="https://media.defense.gov/2021/May/27/2002730593/-1/-1/0/IMPLEMENTING-RESPONSIBLE-ARTIFICIAL-INTELLIGENCE-IN-THE-DEPARTMENT-OF-DEFENSE.PDF"
+class="uri">https://media.defense.gov/2021/May/27/2002730593/-1/-1/0/IMPLEMENTING-RESPONSIBLE-ARTIFICIAL-INTELLIGENCE-IN-THE-DEPARTMENT-OF-DEFENSE.PDF</a><br />
+</p></li>
+<li><p>DoW, <em>Responsible AI Strategy and Implementation Pathway</em>
+(June 2022): <a href="https://media.defense.gov/2022/Jun/22/2003022604/-1/-1/0/Department-of-Defense-Responsible-Artificial-Intelligence-Strategy-and-Implementation-Pathway.PDF"
+class="uri">https://media.defense.gov/2022/Jun/22/2003022604/-1/-1/0/Department-of-Defense-Responsible-Artificial-Intelligence-Strategy-and-Implementation-Pathway.PDF</a><br />
+</p></li>
+<li><p>DoDD 3000.09, <em>Autonomy in Weapon Systems</em> (Jan 2023): <a href="https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf"
+class="uri">https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf</a></p></li>
+</ul>
+<h2 id="industry-protocols-and-agent-platform-patterns">Industry Protocols and Agent Platform Patterns</h2>
+<ul>
+<li><p>OpenAI, <em>Introducing Codex</em> (2025): <a href="https://openai.com/index/introducing-codex/"
+class="uri">https://openai.com/index/introducing-codex/</a><br />
+</p></li>
+<li><p>OpenAI, <em>Introducing the Codex app</em> (2026): <a href="https://openai.com/index/introducing-the-codex-app/"
+class="uri">https://openai.com/index/introducing-the-codex-app/</a><br />
+</p></li>
+<li><p>Anthropic, <em>Writing effective tools for agents — with agents</em> (2025): <a href="https://www.anthropic.com/engineering/writing-tools-for-agents"
+class="uri">https://www.anthropic.com/engineering/writing-tools-for-agents</a><br />
+</p></li>
+<li><p>Anthropic Claude Docs, <em>Computer use tool</em> (2025/2026): <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool"
+class="uri">https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool</a><br />
+</p></li>
+<li><p>Google Developers Blog, <em>A2A: a new era of agent interoperability</em> (2025): <a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/"
+class="uri">https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/</a><br />
+</p></li>
+<li><p>Google Developers Blog, <em>Google Cloud donates A2A to Linux Foundation</em> (2025): <a href="https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/"
+class="uri">https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/</a><br />
+</p></li>
+<li><p>Linux Foundation, <em>Agent2Agent Protocol Project launch</em>
+(2025): <a href="https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents"
+class="uri">https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents</a><br />
+</p></li>
+<li><p>Model Context Protocol, <em>Specification (2025-06-18)</em>: <a href="https://modelcontextprotocol.io/specification/2025-06-18"
+class="uri">https://modelcontextprotocol.io/specification/2025-06-18</a><br />
+</p></li>
+<li><p>Model Context Protocol, <em>Sampling</em> (2025-06-18): <a href="https://modelcontextprotocol.io/specification/2025-06-18/client/sampling"
+class="uri">https://modelcontextprotocol.io/specification/2025-06-18/client/sampling</a></p></li>
+</ul>
+<h2 id="toolskill-ecosystem-risk-signals-supply-chain-lessons">Tool/Skill Ecosystem Risk Signals (Supply Chain Lessons)</h2>
+<ul>
+<li><p>The Verge, <em>OpenClaw’s AI ‘skill’ extensions are a security nightmare</em> (2026): <a href="https://www.theverge.com/news/874011/openclaw-ai-skill-clawhub-extensions-security-nightmare"
+class="uri">https://www.theverge.com/news/874011/openclaw-ai-skill-clawhub-extensions-security-nightmare</a><br />
+</p></li>
+<li><p>Reuters, <em>China warns of security risks linked to OpenClaw open-source AI agent</em> (2026): <a href="https://www.reuters.com/world/china/china-warns-security-risks-linked-openclaw-open-source-ai-agent-2026-02-05/"
+class="uri">https://www.reuters.com/world/china/china-warns-security-risks-linked-openclaw-open-source-ai-agent-2026-02-05/</a><br />
+</p></li>
+<li><p>Cisco, <em>Personal AI Agents like OpenClaw Are a Security Nightmare</em> (2026): <a href="https://blogs.cisco.com/ai/personal-ai-agents-like-openclaw-are-a-security-nightmare"
+class="uri">https://blogs.cisco.com/ai/personal-ai-agents-like-openclaw-are-a-security-nightmare</a></p></li>
+</ul>
+<h2 id="prior-papers-conceptual-anchors">Prior Papers (Conceptual Anchors)</h2>
+<ul>
+<li><p>Adam Boas, <em>From AI Force Multiplication to Force Creation</em>: <a href="https://anboas.github.io/adamboas.info/writing/agentic-force-creation/"
+class="uri">https://anboas.github.io/adamboas.info/writing/agentic-force-creation/</a><br />
+</p></li>
+<li><p>Adam Boas, <em>From PDFs to Pull Requests (Code-as-Policy)</em>:
+<a href="https://anboas.github.io/adamboas.info/writing/code-as-policy/"
+class="uri">https://anboas.github.io/adamboas.info/writing/code-as-policy/</a></p></li>
+</ul>
+</div> </div>  <div class="mt-10 flex flex-col gap-3 pt-6 md:flex-row md:justify-between"> <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href="/writing/2026-07-31-digital-engineering-not-a-department/">
+← Digital Engineering Is Not a Department </a> <a class="text-sm font-semibold text-stone-100 hover:text-stone-50" href="/writing/agentic-force-creation/"> From AI Force Multiplication to Force Creation →
+</a> </div> <div class="mt-8"> <h2 class="text-sm font-semibold text-slate-50">Related by tags and type</h2> <ul class="mt-3 space-y-2 text-sm text-slate-300"> <li> <a class="hover:underline" href="/writing/caf-ra/"> Continuous Assurance Fabric Reference Architecture (CAF-RA) </a> </li><li> <a class="hover:underline" href="/writing/2026-04-18-the-next-ai-bottleneck-is-delegated-authority/"> The Next AI Bottleneck Is Delegated Authority </a> </li><li> <a class="hover:underline" href="/writing/2026-02-12-stand-up-dad-joint-control-plane-authority/"> Stand Up Delegated Autonomy Directorate (DAD) as a Joint Control Plane Authority </a> </li><li> <a class="hover:underline" href="/writing/agentic-force-creation/"> From AI Force Multiplication to Force Creation </a> </li><li> <a class="hover:underline" href="/writing/code-as-policy/"> From PDFs to Pull Requests </a> </li> </ul> </div> </article> <aside class="writing-toc card hidden xl:block" data-writing-toc hidden> <div class="writing-toc-inner"> <div class="writing-toc-title">On this page</div> <nav aria-label="On this page"> <ul data-writing-toc-list></ul> </nav> </div> </aside> </div> <script type="application/json" id="writing-runtime-meta">{"title":"Agent Control Plane Reference Architecture (ACP-RA)","siteTitle":"Adam Boas","url":"https://www.adamboas.com/writing/acp-ra/","published":"2026-02-10T00:00:00.000Z"}</script> <script>
+		(() => {
+			const content = document.querySelector('.paper-content');
+			if (!content) return;
+
+			const runtimeMetaEl = document.getElementById('writing-runtime-meta');
+			const runtimeMeta = runtimeMetaEl ? JSON.parse(runtimeMetaEl.textContent || '{}') : {};
+			const citeText =
+				`${runtimeMeta.title || ''}. ${runtimeMeta.siteTitle || ''}. ${runtimeMeta.url || ''}${runtimeMeta.published ? ` (published ${String(runtimeMeta.published).slice(0, 10)})` : ''}`.trim();
+			const citeButtons = Array.from(document.querySelectorAll('[data-copy-cite]'));
+			for (const btn of citeButtons) {
+				btn.addEventListener('click', async () => {
+					try {
+						await navigator.clipboard.writeText(citeText);
+						const prev = btn.textContent;
+						btn.textContent = '✅ Copied';
+						setTimeout(() => {
+							btn.textContent = prev;
+						}, 1200);
+					} catch {
+						window.prompt('Copy citation text:', citeText);
+					}
+				});
+			}
+
+			const progressLabels = Array.from(document.querySelectorAll('[data-writing-progress-label]'));
+			if (progressLabels.length) {
+				const getScrollTop = () =>
+					Math.max(window.scrollY || 0, document.documentElement?.scrollTop || 0, document.body?.scrollTop || 0);
+
+				let lastPct = -1;
+				const updateReadingProgress = () => {
+					const scrollTop = getScrollTop();
+					const contentRect = content.getBoundingClientRect();
+					const contentTop = scrollTop + contentRect.top;
+					const contentHeight = content.scrollHeight;
+					const viewportHeight = Math.max(1, window.innerHeight || 1);
+					const numerator = scrollTop - contentTop + viewportHeight * 0.2;
+					const denominator = Math.max(1, contentHeight - viewportHeight * 0.45);
+					const ratio = Math.max(0, Math.min(1, numerator / denominator));
+					const pct = Math.round(ratio * 100);
+					if (pct === lastPct) return;
+					lastPct = pct;
+					for (const progressLabel of progressLabels) {
+						progressLabel.textContent = `${pct}% read`;
+					}
+				};
+
+				let progressTicking = false;
+				const onProgressScroll = () => {
+					if (progressTicking) return;
+					progressTicking = true;
+					window.requestAnimationFrame(() => {
+						updateReadingProgress();
+						progressTicking = false;
+					});
+				};
+
+				updateReadingProgress();
+				window.addEventListener('scroll', onProgressScroll, { passive: true });
+				document.addEventListener('scroll', onProgressScroll, { passive: true, capture: true });
+				window.addEventListener('resize', onProgressScroll, { passive: true });
+			}
+
+			for (const table of content.querySelectorAll('table')) {
+				if (table.closest('.table-wrap')) continue;
+				const wrap = document.createElement('div');
+				wrap.className = 'table-wrap';
+				table.parentNode?.insertBefore(wrap, table);
+				wrap.appendChild(table);
+			}
+
+			const lightbox = document.createElement('div');
+			lightbox.className = 'image-lightbox';
+			lightbox.setAttribute('hidden', '');
+			lightbox.innerHTML = `
+				<button type="button" class="image-lightbox-close" aria-label="Close image preview">×</button>
+				<img alt="" class="image-lightbox-img" />
+				<p class="image-lightbox-caption"></p>
+			`;
+			document.body.appendChild(lightbox);
+			const lightboxImg = lightbox.querySelector('.image-lightbox-img');
+			const lightboxCaption = lightbox.querySelector('.image-lightbox-caption');
+			const closeBtn = lightbox.querySelector('.image-lightbox-close');
+
+			const closeLightbox = () => {
+				lightbox.setAttribute('hidden', '');
+				document.body.classList.remove('lightbox-open');
+			};
+			const openLightbox = (src, alt) => {
+				if (!src || !lightboxImg) return;
+				lightboxImg.src = src;
+				lightboxImg.alt = alt || '';
+				if (lightboxCaption) lightboxCaption.textContent = alt || '';
+				lightbox.removeAttribute('hidden');
+				document.body.classList.add('lightbox-open');
+			};
+
+			closeBtn?.addEventListener('click', closeLightbox);
+			lightbox.addEventListener('click', (event) => {
+				if (event.target === lightbox) closeLightbox();
+			});
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape' && !lightbox.hasAttribute('hidden')) closeLightbox();
+			});
+
+			for (const img of content.querySelectorAll('figure img, p > img')) {
+				const src = img.getAttribute('src') || img.currentSrc;
+				if (!src) continue;
+				img.classList.add('zoomable-image');
+				img.setAttribute('tabindex', '0');
+				img.setAttribute('role', 'button');
+				img.setAttribute('aria-label', 'Open image preview');
+				img.addEventListener('click', () => openLightbox(src, img.getAttribute('alt') || ''));
+				img.addEventListener('keydown', (event) => {
+					if (event.key === 'Enter' || event.key === ' ') {
+						event.preventDefault();
+						openLightbox(src, img.getAttribute('alt') || '');
+					}
+				});
+
+				const figure = img.closest('figure');
+				if (figure && !figure.querySelector('.figure-open-link')) {
+					const link = document.createElement('a');
+					link.className = 'figure-open-link';
+					link.href = src;
+					link.target = '_blank';
+					link.rel = 'noreferrer';
+					link.textContent = 'Open full image';
+					figure.appendChild(link);
+				}
+			}
+
+			const toc = document.querySelector('[data-writing-toc]');
+			const tocList = toc?.querySelector('[data-writing-toc-list]');
+			if (!toc || !tocList) return;
+
+			const slugify = (text) =>
+				text
+					.toLowerCase()
+					.replace(/[^a-z0-9\s-]/g, '')
+					.trim()
+					.replace(/\s+/g, '-')
+					.replace(/-+/g, '-');
+
+			const idCounts = new Map();
+			const headings = [...content.querySelectorAll('h2, h3')].filter((h) => h.textContent?.trim());
+			for (const h of headings) {
+				if (!h.id) {
+					const base = slugify(h.textContent || 'section') || 'section';
+					const n = (idCounts.get(base) || 0) + 1;
+					idCounts.set(base, n);
+					h.id = n === 1 ? base : `${base}-${n}`;
+				}
+			}
+
+			if (headings.length < 3) {
+				toc.setAttribute('hidden', '');
+				return;
+			}
+
+			const links = [];
+			for (const h of headings) {
+				const li = document.createElement('li');
+				li.className = h.tagName === 'H3' ? 'toc-level-3' : 'toc-level-2';
+				const a = document.createElement('a');
+				a.href = `#${h.id}`;
+				a.textContent = h.textContent?.trim() || '';
+				li.appendChild(a);
+				tocList.appendChild(li);
+				links.push({ heading: h, link: a });
+			}
+
+			toc.removeAttribute('hidden');
+
+			const positionTocRail = () => {
+				const article = content.closest('.writing-detail-shell')?.querySelector('article.card');
+				if (!article) return;
+				const articleRect = article.getBoundingClientRect();
+				const gap = 18;
+				const rightInset = 22;
+				const minWidth = 172;
+				const desiredLeft = articleRect.right + gap;
+				const maxLeft = window.innerWidth - rightInset - minWidth;
+				const left = Math.max(8, Math.min(desiredLeft, maxLeft));
+				toc.style.left = `${Math.round(left)}px`;
+				toc.style.right = `${rightInset}px`;
+				toc.style.width = 'auto';
+			};
+
+			positionTocRail();
+
+			let activeHeading = null;
+			let activeLink = null;
+
+			const setActive = (heading) => {
+				if (!heading) return;
+				if (activeHeading === heading) return;
+				activeHeading = heading;
+				for (const { heading: h, link } of links) {
+					if (h === heading) {
+						link.setAttribute('data-active', 'true');
+						activeLink = link;
+					} else {
+						link.removeAttribute('data-active');
+					}
+				}
+
+				if (activeLink && toc) {
+					const targetTop = activeLink.offsetTop - toc.clientHeight * 0.34;
+					const maxTop = Math.max(0, toc.scrollHeight - toc.clientHeight);
+					const clampedTop = Math.max(0, Math.min(maxTop, targetTop));
+					if (Math.abs(toc.scrollTop - clampedTop) > 8) {
+						toc.scrollTo({ top: clampedTop, behavior: 'auto' });
+					}
+				}
+			};
+
+			const findCurrentByPosition = () => {
+				const actionBar = document.querySelector('.writing-actions-bar');
+				const actionOffset = actionBar ? actionBar.getBoundingClientRect().height : 0;
+				const threshold = Math.max(90, actionOffset + 28);
+				let current = links[0]?.heading || null;
+				for (const { heading } of links) {
+					if (heading.getBoundingClientRect().top <= threshold) current = heading;
+					else break;
+				}
+				return current;
+			};
+
+			let ticking = false;
+			const onScroll = () => {
+				if (ticking) return;
+				ticking = true;
+				window.requestAnimationFrame(() => {
+					setActive(findCurrentByPosition());
+					ticking = false;
+				});
+			};
+
+			if ('IntersectionObserver' in window) {
+				const observer = new IntersectionObserver(
+					(entries) => {
+						const visible = entries
+							.filter((e) => e.isIntersecting)
+							.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+						if (visible.length) setActive(visible[0].target);
+					},
+					{ root: null, rootMargin: '-18% 0px -70% 0px', threshold: [0, 0.2, 0.6] },
+				);
+				for (const { heading } of links) observer.observe(heading);
+			}
+
+			setActive(findCurrentByPosition());
+			window.addEventListener('scroll', onScroll, { passive: true });
+			window.addEventListener(
+				'resize',
+				() => {
+					positionTocRail();
+					onScroll();
+				},
+				{ passive: true },
+			);
+		})();
+	</script> <script type="module" src="/scripts/codeblock-tools.js"></script> <script type="module" src="/scripts/copy-link.js"></script>  </main> <footer class="site-footer border-t border-slate-800 bg-slate-950"> <div class="container py-7 text-sm text-slate-400 md:py-8"> <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between"> <div class="space-y-1"> <p>© 2026 Adam Boas</p> <p class="text-xs text-slate-500">Version v2.4.50 · Last updated Fri, Jul 31, 2026, 21:52 EDT</p> </div> <ul class="flex flex-wrap items-center gap-x-2 gap-y-2"> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/sitemap/">Sitemap</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/changes/">Changes</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/status/">Status</a> </li> <li> <a class="footer-link inline-flex h-8 items-center px-2.5" href="/contact/">Contact</a> </li> </ul> </div> </div> </footer>  <div id="global-shortcuts-overlay" class="shortcuts-overlay" hidden> <button type="button" class="shortcuts-backdrop" data-shortcuts-close aria-label="Close keyboard shortcuts"></button> <section class="shortcuts-panel card" role="dialog" aria-modal="true" aria-labelledby="shortcuts-title"> <div class="flex items-start justify-between gap-3 border-b border-slate-800 px-4 py-3"> <div> <h2 id="shortcuts-title" class="text-base font-semibold text-slate-50">Keyboard Shortcuts</h2> <p class="mt-1 text-xs text-slate-400">Fast nav and search across the site.</p> </div> <button type="button" class="shortcut-close-btn" data-shortcuts-close aria-label="Close keyboard shortcuts">×</button> </div> <div class="grid gap-4 px-4 py-4 text-sm text-slate-200 md:grid-cols-2"> <section> <h3 class="shortcut-group-heading">Global</h3> <ul class="mt-2 space-y-2"> <li><span class="kbd">/</span> focus page search</li> <li><span class="kbd">?</span> open/close this panel</li> <li><span class="kbd">Esc</span> close panel</li> </ul> </section> <section> <h3 class="shortcut-group-heading">Go to</h3> <ul class="mt-2 space-y-2"> <li><span class="kbd">g</span> then <span class="kbd">h</span> Home</li> <li><span class="kbd">g</span> then <span class="kbd">w</span> Writing</li> <li><span class="kbd">g</span> then <span class="kbd">e</span> Events</li> <li><span class="kbd">g</span> then <span class="kbd">o</span> Opportunities</li> <li><span class="kbd">g</span> then <span class="kbd">c</span> Changes</li> </ul> </section> </div> <div class="border-t border-slate-800 px-4 py-3"> <div class="flex flex-wrap gap-2 text-xs"> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="h">Home</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="w">Writing</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="e">Events</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="o">Opportunities</button> <button type="button" class="shortcut-nav-btn" data-shortcut-nav="c">Changes</button> </div> </div> </section> </div> <div id="global-shortcut-leader" class="shortcut-leader-pill" aria-hidden="true">
+Go to: <span class="kbd">h</span> <span class="kbd">w</span> <span class="kbd">e</span> <span class="kbd">o</span> <span class="kbd">c</span> </div> <button id="global-shortcuts-fab" class="shortcut-fab" type="button" aria-label="Open keyboard shortcuts (?)" aria-controls="global-shortcuts-overlay" aria-haspopup="dialog">?</button> <script type="module" src="/_astro/global-shortcuts.Bll5pRal.js"></script> </body> </html>

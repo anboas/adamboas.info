@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.adamboas.com/schemas/opportunities-export-sbir.schema.json",
+  "title": "Opportunities Export (SBIR)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "source",
+    "mode",
+    "artifacts",
+    "lineage"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "source": {
+      "const": "sbir"
+    },
+    "mode": {
+      "const": "remote-artifact"
+    },
+    "artifacts": {
+      "type": "object"
+    },
+    "lineage": {
+      "type": "object"
+    }
+  }
+}

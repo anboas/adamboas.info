@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-08-01T01:51:59.041Z",
+  "canonical": "https://www.adamboas.com/opportunities/",
+  "sources": {
+    "sam": {
+      "count": 677,
+      "last_posted_date": "2026-05-09",
+      "last_response_deadline": "2035-04-30",
+      "snapshot_id": "65cc423f06344d8e74eb923fa39ba0ba6c5f6d2135b09a4e68228f1b8d9c4e0c",
+      "export_full": "https://www.adamboas.com/opportunities/export-sam.json",
+      "export_core": "https://www.adamboas.com/opportunities/export-sam-core.json"
+    },
+    "sbir": {
+      "manifest_url": "https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/manifest.json",
+      "export": "https://www.adamboas.com/opportunities/export-sbir.json",
+      "source_updated_at": null
+    }
+  }
+}

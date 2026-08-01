@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "site": "https://www.adamboas.com/",
+  "release_version": "v2.4.50",
+  "generated_at": "2026-08-01T01:51:58.960Z",
+  "tracked_source_integrity": [
+    {
+      "path": "src/pages/llms.txt.ts",
+      "sha256": "1897e4f9e38cc79f427f3e5e1a082cf8361bfa55c26975fbc25f73346eacaf6c",
+      "bytes": 1367
+    },
+    {
+      "path": "src/pages/llms-full.txt.ts",
+      "sha256": "565d001a0e2f74423c57427ba8ae0c5a8337e98c367a4227986133f31e7439ae",
+      "bytes": 3693
+    },
+    {
+      "path": "src/pages/agents.json.ts",
+      "sha256": "8a616f4bd40bbddf8909a332cf7db6619e14695499d000698298c54889c1be45",
+      "bytes": 4489
+    },
+    {
+      "path": "src/pages/agent-priority.json.ts",
+      "sha256": "6366fb27591330dba41b72571a4a1690db40b243df18a8b60f3e211ebaea4e4b",
+      "bytes": 2278
+    },
+    {
+      "path": "src/pages/strategic-work/index.astro",
+      "sha256": "9519b84b40dc252e3f128fb8840da7a5aebc0baa5f1960645bdf8d92c794072c",
+      "bytes": 3885
+    },
+    {
+      "path": "src/data/strategicWork.ts",
+      "sha256": "2ce5f58bf872444896e1ba8dcd1ab28effe0024c57e2fc51593975413e987942",
+      "bytes": 6119
+    },
+    {
+      "path": "src/pages/changes.json.ts",
+      "sha256": "ad28901cc5f3a9b31e77662dcfff833e3e66502fd125516614afcfc46f135cf2",
+      "bytes": 2790
+    },
+    {
+      "path": "src/pages/changes.jsonl.ts",
+      "sha256": "9e099cd4d342fc35fc876c95d3c676ec3266436a681346bdcb9482be3e078ea5",
+      "bytes": 927
+    },
+    {
+      "path": "src/pages/integrity.json.ts",
+      "sha256": "38864ff221c5cb0c8c966d34cc2b022910ae71d0d928aee96ecde44e84b67314",
+      "bytes": 2415
+    },
+    {
+      "path": "src/pages/writing/manifest.json.ts",
+      "sha256": "e7dfb2b8e0c0fa370c2890a4e6c1064d38d8aa480f8e32947b318c1fc9bc3e2e",
+      "bytes": 2082
+    },
+    {
+      "path": "src/pages/writing/agent.json.ts",
+      "sha256": "debf6a3a03f13b38e467a4a202f463aa1b5b12e7294d5783046211d1a4e41591",
+      "bytes": 844
+    },
+    {
+      "path": "src/pages/events/agent.json.ts",
+      "sha256": "3f5833b3f76ecae2bcaaa17b74b954a27797ebb624b857f0dda0b38daebc6494",
+      "bytes": 796
+    },
+    {
+      "path": "src/pages/opportunities/agent.json.ts",
+      "sha256": "112668708bf09b910e0514a2b332bc944854c43065508eb274623ddec26b8b6a",
+      "bytes": 1412
+    },
+    {
+      "path": "src/pages/opportunities/export.json.ts",
+      "sha256": "557348afa69692eeb85d10d8fa3d0bd3d8e44cbed35e57b9495d7be54297ef77",
+      "bytes": 3307
+    },
+    {
+      "path": "src/pages/opportunities/export-sam.json.ts",
+      "sha256": "846361cdb37932a767608b8275916015b8aa42e19b148fd4303dc894ae618ef2",
+      "bytes": 3054
+    },
+    {
+      "path": "src/pages/opportunities/export-sam-core.json.ts",
+      "sha256": "d406f20cb3ea564d2f2fa78685c19933e2419847ac7bdde09b687a86a3af47bc",
+      "bytes": 1994
+    },
+    {
+      "path": "src/pages/opportunities/export-sbir.json.ts",
+      "sha256": "bf66b39d5323c5ccf34c453b829d6fd9c4bc5c27397ec9a81253dde94f2bec2a",
+      "bytes": 1501
+    },
+    {
+      "path": "src/pages/opportunities/freshness.json.ts",
+      "sha256": "d8f779db2626952fb83a0dac6e1a38fc72ddf905f410afb48206d3b41649f38a",
+      "bytes": 1803
+    },
+    {
+      "path": "src/pages/opportunities/lineage.json.ts",
+      "sha256": "2f914cfe7f32c82e720c913a82b980f3e680e358a5093f81c3a449c235b10a90",
+      "bytes": 2954
+    },
+    {
+      "path": "src/pages/.well-known/agent-manifest.json.ts",
+      "sha256": "dbbe541cbe316ae3bae09c45fd6895641aa72007d844c4b0df83d3e0dd9f5b5d",
+      "bytes": 1688
+    },
+    {
+      "path": "src/pages/.well-known/llms.txt.ts",
+      "sha256": "1083c32f1c32790e54af30ce48ff966e7140c49d1ae7e7b9b4ee3b7f0ac67ec5",
+      "bytes": 406
+    },
+    {
+      "path": "src/pages/schemas/agents.schema.json.ts",
+      "sha256": "8d9f6899eb09767de3e398a4319ec5fb411e03353893321991c5d00c389a1751",
+      "bytes": 1360
+    },
+    {
+      "path": "src/pages/schemas/agent-priority.schema.json.ts",
+      "sha256": "eba2d618c165c0117f1aa3ce8e7028ff87d9b87235870018e70ce4f0a5128e3e",
+      "bytes": 1127
+    },
+    {
+      "path": "src/pages/schemas/changes.schema.json.ts",
+      "sha256": "0ce7264bb1bdb449023efbfc3dbb53dc99844ec338151372c208096f2a266ffd",
+      "bytes": 772
+    },
+    {
+      "path": "src/pages/schemas/opportunities-export.schema.json.ts",
+      "sha256": "29b3180234b84205f7d49dd6ed5f6287fa37e2b02b2bd23c13f9ccf50b36b6a2",
+      "bytes": 961
+    },
+    {
+      "path": "src/pages/schemas/opportunities-export-sam.schema.json.ts",
+      "sha256": "9eed11cee6c58da15e523bccadc8a23f71de62ce774d58507fe3a78a69e9d228",
+      "bytes": 854
+    },
+    {
+      "path": "src/pages/schemas/opportunities-export-sbir.schema.json.ts",
+      "sha256": "295ad2c81edb3662ce51f3a7b18c54638bff6970feef8cb0be66dede3683b8a9",
+      "bytes": 774
+    },
+    {
+      "path": "src/pages/schemas/opportunities-freshness.schema.json.ts",
+      "sha256": "48ea46cdf9bae4c6a877ebec2a305f860e8909a083a26eaf249abdeacb987b31",
+      "bytes": 842
+    },
+    {
+      "path": "src/pages/schemas/opportunities-lineage.schema.json.ts",
+      "sha256": "dba5d69f9e1058991de76c7554eb2e26cc156c8243098556ea92326fa9d3185e",
+      "bytes": 678
+    },
+    {
+      "path": "src/pages/for-agents/index.astro",
+      "sha256": "6ea8f4e1de292a731809c1d6cf841e3b02a835556dafcc07272b7a2f18f41918",
+      "bytes": 5610
+    },
+    {
+      "path": "src/data/discovery-events.json",
+      "sha256": "39b7af953ef789e332eacf06deefd261fab27822632555892c7ad5542b2be0e9",
+      "bytes": 4988
+    }
+  ]
+}

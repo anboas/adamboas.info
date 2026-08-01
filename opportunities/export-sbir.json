@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.1",
+  "source": "sbir",
+  "generated_at": "2026-08-01T01:51:58.995Z",
+  "canonical": "https://www.adamboas.com/opportunities/?source=sbir",
+  "mode": "remote-artifact",
+  "artifacts": {
+    "topics_url": "https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/topics.json",
+    "summary_url": "https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/summary.json",
+    "report_url": "https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/report.md",
+    "manifest_url": "https://raw.githubusercontent.com/anboas/adamboas-media/main/opportunities/sbir-sttr/latest/manifest.json"
+  },
+  "lineage": {
+    "artifact_repo": "anboas/adamboas-media",
+    "artifact_path": "opportunities/sbir-sttr/latest/*",
+    "source_updated_at": null
+  },
+  "details": {
+    "surface_map": "https://www.adamboas.com/opportunities/agent.json",
+    "source_route": "https://www.adamboas.com/opportunities/sbir/",
+    "recommended_refresh": "every-4h"
+  }
+}

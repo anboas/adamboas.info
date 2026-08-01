@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.adamboas.com/schemas/opportunities-freshness.schema.json",
+  "title": "Opportunities Freshness Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "sources"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sources": {
+      "type": "object",
+      "required": [
+        "sam",
+        "sbir"
+      ],
+      "properties": {
+        "sam": {
+          "type": "object"
+        },
+        "sbir": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

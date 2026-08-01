@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "surface": "opportunities",
+  "canonical": "https://www.adamboas.com/opportunities/",
+  "agent_view": "https://www.adamboas.com/opportunities/?view=agent",
+  "source_routes": {
+    "unified": "https://www.adamboas.com/opportunities/",
+    "sam": "https://www.adamboas.com/opportunities/sam/",
+    "sbir": "https://www.adamboas.com/opportunities/sbir/"
+  },
+  "query_hints": {
+    "source_param": [
+      "sam",
+      "sbir"
+    ],
+    "recommended_examples": [
+      "https://www.adamboas.com/opportunities/?source=sam&view=agent",
+      "https://www.adamboas.com/opportunities/?source=sbir&view=agent"
+    ],
+    "export_endpoints": {
+      "combined": "https://www.adamboas.com/opportunities/export.json",
+      "sam": "https://www.adamboas.com/opportunities/export-sam.json",
+      "sam_core": "https://www.adamboas.com/opportunities/export-sam-core.json",
+      "sbir": "https://www.adamboas.com/opportunities/export-sbir.json",
+      "freshness": "https://www.adamboas.com/opportunities/freshness.json",
+      "lineage": "https://www.adamboas.com/opportunities/lineage.json"
+    }
+  },
+  "crawl_hints": {
+    "refresh_hint": "every-4h",
+    "prefer_source_specific_routes": true,
+    "prefer_canonical": true
+  }
+}

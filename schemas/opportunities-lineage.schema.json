@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.adamboas.com/schemas/opportunities-lineage.schema.json",
+  "title": "Opportunities Lineage Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "lineage"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "lineage": {
+      "type": "object",
+      "required": [
+        "sam",
+        "sbir"
+      ]
+    }
+  }
+}
