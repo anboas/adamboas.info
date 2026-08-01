@@ -44,8 +44,11 @@ export const strategicWorkItems: StrategicWorkItem[] = [
 		practicalValue:
 			'Turns technical access into transition discipline so promising capability has a path from discovery to funded operational use.',
 		relatedEvidence: [
+			{
+				label: 'Technology insertion note',
+				href: '/writing/2026-07-30-technology-insertion-management-system/',
+			},
 			{ label: 'Capability: Technology Insertion', href: '/capabilities/technology-insertion-transition/' },
-			{ label: 'Writing', href: '/writing/' },
 		],
 	},
 	{
@@ -63,8 +66,11 @@ export const strategicWorkItems: StrategicWorkItem[] = [
 		practicalValue:
 			'Improves the path from opportunity identification to capture strategy, proposal architecture, and executable delivery posture.',
 		relatedEvidence: [
+			{
+				label: 'Defense growth note',
+				href: '/writing/2026-07-30-missing-operating-system-defense-growth/',
+			},
 			{ label: 'Capability: Technical Capture', href: '/capabilities/technical-capture-proposal-strategy/' },
-			{ label: 'Opportunities', href: '/opportunities/' },
 		],
 	},
 	{
@@ -82,8 +88,11 @@ export const strategicWorkItems: StrategicWorkItem[] = [
 		practicalValue:
 			'Creates a shared decision system for technical teams, mission owners, and acquisition stakeholders.',
 		relatedEvidence: [
+			{
+				label: 'Digital engineering note',
+				href: '/writing/2026-07-31-digital-engineering-not-a-department/',
+			},
 			{ label: 'Capability: Mission & Digital Engineering', href: '/capabilities/mission-digital-engineering/' },
-			{ label: 'Profile', href: '/profile/' },
 		],
 	},
 	{

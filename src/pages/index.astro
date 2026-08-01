@@ -46,7 +46,11 @@ const homepageWriting = [
 	.filter((x) => !!x.slug)
 	.sort((a, b) => (b.date?.valueOf?.() ?? 0) - (a.date?.valueOf?.() ?? 0));
 
-const featuredOrder = ['code-as-policy', 'acp-ra', 'caf-ra'];
+const featuredOrder = [
+	'2026-07-31-digital-engineering-not-a-department',
+	'2026-07-30-missing-operating-system-defense-growth',
+	'2026-07-30-technology-insertion-management-system',
+];
 const featuredFromOrder = featuredOrder.map((slug) => homepageWriting.find((w) => w.slug === slug)).filter(Boolean);
 const featuredFill = homepageWriting
 	.filter((w) => !featuredOrder.includes(String(w.slug)))
