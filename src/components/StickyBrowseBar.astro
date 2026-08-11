@@ -12,7 +12,8 @@ const { active = 'writing' } = Astro.props as {
 		| 'capabilities'
 		| 'strategic-work'
 		| 'experience'
-		| 'education';
+		| 'education'
+		| 'contact';
 };
 const toolsActive = active === 'events' || active === 'opportunities';
 
@@ -30,14 +31,7 @@ function ariaCurrent(key) {
 <div class="sticky-browse md:hidden">
 	<nav class="mx-auto w-full max-w-6xl px-4 py-1.5" aria-label="Primary mobile navigation">
 		<div class="flex flex-wrap items-center gap-1.5">
-			<a class={cls('strategic-work')} href={withBase('/strategic-work/')} aria-current={ariaCurrent('strategic-work')}
-				>Work</a
-			>
 			<a class={cls('writing')} href={withBase('/writing/')} aria-current={ariaCurrent('writing')}>Writing</a>
-			<a class={cls('profile')} href={withBase('/profile/')} aria-current={ariaCurrent('profile')}>Profile</a>
-			<a class={cls('capabilities')} href={withBase('/capabilities/')} aria-current={ariaCurrent('capabilities')}
-				>Capabilities</a
-			>
 			<details class="group relative">
 				<summary
 					class:list={[
@@ -52,11 +46,9 @@ function ariaCurrent(key) {
 				<div class="absolute right-0 z-40 mt-1 w-56 border border-slate-700 bg-slate-950/98 p-1 shadow-xl">
 					<a
 						class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/events/')}>Events</a
-					>
-					<a
-						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/opportunities/')}>Opportunities</a
+						href="https://policy-intelligence-full.pages.dev/"
+						target="_blank"
+						rel="noopener noreferrer">Policy Intelligence</a
 					>
 					<a
 						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
@@ -66,12 +58,16 @@ function ariaCurrent(key) {
 					>
 					<a
 						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
-						href="https://policy-intelligence-full.pages.dev/"
-						target="_blank"
-						rel="noopener noreferrer">Policy Intelligence</a
+						href={withBase('/opportunities/')}>Opportunities</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/events/')}>Events</a
 					>
 				</div>
 			</details>
+			<a class={cls('profile')} href={withBase('/profile/')} aria-current={ariaCurrent('profile')}>About</a>
+			<a class={cls('contact')} href={withBase('/contact/')} aria-current={ariaCurrent('contact')}>Contact</a>
 		</div>
 	</nav>
 </div>

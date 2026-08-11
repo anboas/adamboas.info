@@ -56,11 +56,12 @@ const featuredFill = homepageWriting
 	.filter((w) => !featuredOrder.includes(String(w.slug)))
 	.slice(0, Math.max(0, 3 - featuredFromOrder.length));
 const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
+const recentWriting = homepageWriting.filter((w) => !featuredReading.includes(w)).slice(0, 8);
 
 const siteUrl = absoluteUrl('/');
 const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}'), Astro.site).toString();
 
-const HOME_TITLE = `${PERSON_NAME} | Defense Technology Strategy, Mission Systems & Modernization`;
+const HOME_TITLE = `${PERSON_NAME} | Defense Technology Strategy and Writing`;
 const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 ---
 
@@ -97,153 +98,114 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 	/>
 	<a id="page-top" class="block" aria-hidden="true"></a>
 
-	<section class="card p-8">
-		<div class="flex flex-col gap-6">
-			<div class="w-full max-w-4xl">
-				<h1 class="text-3xl font-semibold tracking-tight text-slate-50">{PERSON_NAME}</h1>
-				<p class="mt-2 text-slate-400">{PERSON_JOB_TITLE}</p>
-				<p class="mt-4 text-lg leading-relaxed text-slate-300">
-					I connect policy, mission engineering, software, data, AI, and acquisition to move defense capabilities from
-					strategic intent to operational use.
+	<section class="card p-6 sm:p-8">
+		<div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_16rem] lg:items-start">
+			<div class="max-w-4xl">
+				<p class="home-kicker">Defense technology strategy</p>
+				<h1 class="mt-3 text-3xl font-semibold tracking-tight text-slate-50 sm:text-4xl">{PERSON_NAME}</h1>
+				<p class="mt-2 text-base text-slate-400">{PERSON_JOB_TITLE}</p>
+				<p class="mt-5 text-lg leading-relaxed text-slate-200">
+					I write and work where mission needs, software, AI, policy, acquisition, and delivery have to become one
+					operational system.
 				</p>
 				<p class="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
-					My work spans enterprise modernization, technical capture, technology insertion, governed autonomy, and the
-					operating systems required to identify, shape, deliver, and scale mission capability.
+					My focus is practical defense modernization: understanding the real program problem, shaping credible
+					technical paths, and moving useful capability from idea to adoption.
 				</p>
 				<div class="mt-5 flex flex-wrap items-center gap-3">
-					<a href={withBase('/strategic-work/')} class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold">
-						View strategic work
+					<a href={withBase('/writing/')} class="ui-link-btn ui-link-btn-primary px-4 text-sm font-semibold">
+						Read writing
 					</a>
-					<a href={withBase('/capabilities/')} class="ui-link-btn px-4 text-sm font-semibold">Explore capabilities</a>
-					<a data-track="Contact: Email Click" href={contactMailto()} class="ui-link-btn px-4 text-sm font-semibold"
-						>Contact</a
-					>
+					<a href={withBase('/profile/')} class="ui-link-btn px-4 text-sm font-semibold">Profile and resume</a>
+					<a data-track="Contact: Email Click" href={contactMailto()} class="ui-link-btn px-4 text-sm font-semibold">
+						Contact
+					</a>
 				</div>
 			</div>
-		</div>
-	</section>
-
-	<section class="mt-6 card p-6">
-		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-			<h2 class="section-title">Selected Strategic Work</h2>
-			<a href={withBase('/strategic-work/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">
-				View all →
-			</a>
-		</div>
-		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-			<article class="border border-slate-800 bg-slate-950/40 p-4">
-				<p class="home-kicker">Growth strategy</p>
-				<h3 class="mt-2 text-sm font-bold text-slate-50">Defense growth and technical capture</h3>
-				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					Opportunity sensing, solution shaping, proposal architecture, discriminators, and stakeholder alignment.
-				</p>
-			</article>
-			<article class="border border-slate-800 bg-slate-950/40 p-4">
-				<p class="home-kicker">Technology transition</p>
-				<h3 class="mt-2 text-sm font-bold text-slate-50">Technology insertion and mission discovery</h3>
-				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					Program immersion, operational problem framing, integration constraints, and scale/stop evidence.
-				</p>
-			</article>
-			<article class="border border-slate-800 bg-slate-950/40 p-4">
-				<p class="home-kicker">Policy modernization</p>
-				<h3 class="mt-2 text-sm font-bold text-slate-50">From PDFs to Pull Requests</h3>
-				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					A public architecture for turning policy into governed, testable, executable delivery constraints.
-				</p>
-			</article>
-			<article class="border border-slate-800 bg-slate-950/40 p-4">
-				<p class="home-kicker">Technical architecture</p>
-				<h3 class="mt-2 text-sm font-bold text-slate-50">Agent Control Plane Reference Architecture</h3>
-				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					Bounded autonomy, trust scopes, evidence, and continuous assurance for high-consequence operations.
-				</p>
-			</article>
-		</div>
-	</section>
-
-	<section class="mt-6 card p-6">
-		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-			<h2 class="section-title">Featured Reading</h2>
-			<div class="flex flex-wrap items-center gap-3 text-sm font-semibold">
-				<a href={withBase('/writing/')} class="text-stone-100 hover:text-stone-50">All writing →</a>
+			<div class="border border-slate-800 bg-slate-950/40 p-4">
+				<h2 class="section-title">Focus</h2>
+				<ul class="mt-3 space-y-2 text-sm leading-relaxed text-slate-300">
+					<li>Defense growth and technical capture</li>
+					<li>Technology transition and mission discovery</li>
+					<li>Governed AI, software, data, and modernization</li>
+				</ul>
 			</div>
+		</div>
+	</section>
+
+	<section class="mt-6 card p-6">
+		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+			<h2 class="section-title">Featured Writing</h2>
+			<a href={withBase('/writing/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">All writing -></a
+			>
 		</div>
 		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
 			{featuredReading.map((w) => <WritingCompactCard item={w} showTopicCount={false} />)}
 		</div>
 	</section>
 
-	<div class="mt-6 grid gap-6 md:grid-cols-2">
-		<section class="card p-6">
-			<h2 class="section-title">Operating Principles</h2>
-			<ul class="mt-3 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
-				<li>
-					<span class="text-slate-100">Mission outcomes over technology novelty</span>: the operational problem sets the
-					architecture
-				</li>
-				<li>
-					<span class="text-slate-100">Operational truth before executive narrative</span>: no story without program
-					immersion and evidence
-				</li>
-				<li>
-					<span class="text-slate-100">Transition pathways before isolated demonstrations</span>: ownership, funding,
-					integration, and acceptance criteria matter early
-				</li>
-				<li>
-					<span class="text-slate-100">Control planes over disconnected point solutions</span>: authority, policy, data,
-					and telemetry need system boundaries
-				</li>
-				<li>
-					<span class="text-slate-100">Evidence-based capture and delivery</span>: claims should survive proposal,
-					transition, and execution
-				</li>
-				<li>
-					<span class="text-slate-100">Repeatable systems over heroic intervention</span>: useful organizations learn
-					across programs
-				</li>
-			</ul>
-		</section>
+	<section class="mt-6 card p-6">
+		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
+			<h2 class="section-title">Recent Writing</h2>
+			<a href={withBase('/writing/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50"
+				>Browse archive -></a
+			>
+		</div>
+		<ul class="mt-4 divide-y divide-slate-800 border-y border-slate-800">
+			{
+				recentWriting.map((w) => (
+					<li>
+						<a
+							href={withBase(`/writing/${w.slug}/`)}
+							class="grid gap-2 py-3 text-sm hover:bg-slate-950/50 sm:grid-cols-[7rem_minmax(0,1fr)] sm:px-2"
+						>
+							<span class="text-xs uppercase tracking-wide text-slate-500">
+								{w.date ? w.date.toISOString().slice(0, 10) : w.type}
+							</span>
+							<span class="font-semibold text-slate-100">{w.title}</span>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
 
-		<section class="card p-6">
-			<h2 class="section-title">Work With Me</h2>
-			<p class="mt-3 text-[0.94rem] leading-relaxed text-slate-300">
-				Support for defense executives and technical teams that need to connect mission demand, technical architecture,
-				acquisition realities, and delivery evidence.
-			</p>
-			<ul class="mt-4 space-y-2 text-[0.94rem] leading-relaxed text-slate-300">
-				<li>
-					<span class="text-slate-100">Strategy and solutioning</span> (opportunity framing, architecture, win themes)
-				</li>
-				<li>
-					<span class="text-slate-100">Modernization and transition</span> (software, cloud, data, digital engineering)
-				</li>
-				<li><span class="text-slate-100">Governed AI and autonomy</span> (trust scopes, policy gates, evidence)</li>
-				<li>
-					<span class="text-slate-100">Capture and proposals</span> (technical volumes, white papers, discriminators)
-				</li>
-			</ul>
-			<div class="mt-5 flex flex-wrap gap-3">
-				<a
-					href={withBase('/capabilities/')}
-					class="ui-link-btn bg-slate-900/40 px-3 text-sm font-semibold text-slate-100">Explore capabilities</a
-				>
-				<a
-					data-track="Contact: Intake Click"
-					href={withBase('/contact/')}
-					class="ui-link-btn px-3 text-sm font-semibold">Contact</a
-				>
+	<section class="mt-6 card p-6">
+		<div class="grid gap-5 md:grid-cols-2">
+			<div>
+				<h2 class="section-title">Tools</h2>
+				<ul class="mt-3 space-y-2 text-sm text-slate-300">
+					<li>
+						<a
+							class="font-semibold text-stone-100 hover:text-stone-50"
+							href="https://policy-intelligence-full.pages.dev/">Policy Intelligence</a>
+					</li>
+					<li>
+						<a
+							class="font-semibold text-stone-100 hover:text-stone-50"
+							href="https://opportunity-intelligence-full.pages.dev/">Opportunity Intelligence</a>
+					</li>
+					<li>
+						<a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase('/opportunities/')}
+							>Opportunities</a>
+					</li>
+					<li><a class="font-semibold text-stone-100 hover:text-stone-50" href={withBase('/events/')}>Events</a></li>
+				</ul>
 			</div>
-			<p class="mt-3 text-xs text-slate-400">
-				Background: <a href={withBase('/profile/')} class="text-slate-300 hover:text-slate-100">Profile</a> · <a
-					href={withBase('/speaking/')}
-					class="text-slate-300 hover:text-slate-100">Speaking</a
-				> · <a href={withBase('/files/adam-boas-resume.pdf')} class="text-slate-300 hover:text-slate-100">Resume PDF</a>
-			</p>
-		</section>
-	</div>
-
-	<!-- Blog section merged into Writing -->
+			<div>
+				<h2 class="section-title">Profile</h2>
+				<p class="mt-3 text-sm leading-relaxed text-slate-300">
+					Background, selected experience, credentials, speaking, and resume.
+				</p>
+				<div class="mt-4 flex flex-wrap gap-3">
+					<a href={withBase('/profile/')} class="ui-link-btn px-3 text-sm font-semibold">Open profile</a>
+					<a href={withBase('/files/adam-boas-resume.pdf')} class="ui-link-btn px-3 text-sm font-semibold">
+						Resume PDF
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 </SiteLayout>
 
 <style>

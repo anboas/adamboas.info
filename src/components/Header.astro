@@ -19,10 +19,7 @@ const isToolsActive = pathname.startsWith('/events') || pathname.startsWith('/op
 		</div>
 
 		<div class="hidden items-center gap-1.5 md:flex">
-			<HeaderLink href={withBase('/strategic-work/')} aria-keyshortcuts="g s">Strategic Work</HeaderLink>
 			<HeaderLink href={withBase('/writing/')} aria-keyshortcuts="g w">Writing</HeaderLink>
-			<HeaderLink href={withBase('/profile/')} aria-keyshortcuts="g p">Profile</HeaderLink>
-			<HeaderLink href={withBase('/capabilities/')} aria-keyshortcuts="g c">Capabilities</HeaderLink>
 
 			<details class="group relative">
 				<summary
@@ -39,11 +36,9 @@ const isToolsActive = pathname.startsWith('/events') || pathname.startsWith('/op
 				<div class="absolute right-0 z-40 mt-1 w-56 border border-slate-700 bg-slate-950/98 p-1 shadow-xl">
 					<a
 						class="block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/events/')}>Events</a
-					>
-					<a
-						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/opportunities/')}>Opportunities</a
+						href="https://policy-intelligence-full.pages.dev/"
+						target="_blank"
+						rel="noopener noreferrer">Policy Intelligence</a
 					>
 					<a
 						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
@@ -53,12 +48,16 @@ const isToolsActive = pathname.startsWith('/events') || pathname.startsWith('/op
 					>
 					<a
 						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
-						href="https://policy-intelligence-full.pages.dev/"
-						target="_blank"
-						rel="noopener noreferrer">Policy Intelligence</a
+						href={withBase('/opportunities/')}>Opportunities</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-1.5 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/events/')}>Events</a
 					>
 				</div>
 			</details>
+			<HeaderLink href={withBase('/profile/')} aria-keyshortcuts="g p">About</HeaderLink>
+			<HeaderLink href={withBase('/contact/')} aria-keyshortcuts="g c">Contact</HeaderLink>
 		</div>
 
 		<div class="md:hidden">
@@ -72,27 +71,13 @@ const isToolsActive = pathname.startsWith('/events') || pathname.startsWith('/op
 				<div class="absolute right-0 z-40 mt-1 w-52 border border-slate-700 bg-slate-950/98 p-1 shadow-xl">
 					<a
 						class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/strategic-work/')}>Strategic Work</a
-					>
-					<a
-						class="block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
 						href={withBase('/writing/')}>Writing</a
 					>
 					<a
 						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/profile/')}>Profile</a
-					>
-					<a
-						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/capabilities/')}>Capabilities</a
-					>
-					<a
-						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/events/')}>Events</a
-					>
-					<a
-						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
-						href={withBase('/opportunities/')}>Opportunities</a
+						href="https://policy-intelligence-full.pages.dev/"
+						target="_blank"
+						rel="noopener noreferrer">Policy Intelligence</a
 					>
 					<a
 						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
@@ -102,9 +87,19 @@ const isToolsActive = pathname.startsWith('/events') || pathname.startsWith('/op
 					>
 					<a
 						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
-						href="https://policy-intelligence-full.pages.dev/"
-						target="_blank"
-						rel="noopener noreferrer">Policy Intelligence</a
+						href={withBase('/opportunities/')}>Opportunities</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/events/')}>Events</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/profile/')}>About</a
+					>
+					<a
+						class="mt-0.5 block rounded-none px-2.5 py-2 text-sm text-slate-200 hover:bg-slate-900"
+						href={withBase('/contact/')}>Contact</a
 					>
 				</div>
 			</details>
