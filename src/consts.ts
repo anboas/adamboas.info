@@ -4,7 +4,7 @@
 export const SITE_TITLE = 'Adam Boas';
 export const SITE_DESCRIPTION =
 	'Defense technology strategy, mission systems, modernization, AI governance, and operational transition.';
-export const SITE_RELEASE_VERSION = 'v2.5.0';
+export const SITE_RELEASE_VERSION = 'v2.5.1';
 
 // Analytics (Plausible)
 // Domain is configured in Plausible; snippet is injected in BaseHead.

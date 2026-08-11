@@ -28,6 +28,28 @@ type TopicGroup = {
 
 const releases: Release[] = [
 
+	{
+		version: 'v2.5.1',
+		date: '2026-08-11',
+		title: 'Homepage writing showcase tightened',
+		summary: 'Removed the redundant Recent Writing section from the homepage.',
+		impact:
+			'The homepage now presents one curated writing section with a direct path to the full writing archive, reducing repetition on the landing page.',
+		current: true,
+		tags: ['homepage', 'writing', 'ux', 'simplification'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Removed `Recent Writing` from the homepage so `Featured Writing` is the single writing showcase.',
+					'Renamed the homepage writing CTA to `Browse all writing` for clearer archive access.',
+				],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Improved', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
 
 
 	{
@@ -37,13 +59,13 @@ const releases: Release[] = [
 		summary: 'Reduced the public reading surfaces and rebuilt the site around Adam, his writing, his tools, and his profile.',
 		impact:
 			'Visitors now get a clearer introduction, a writing-first homepage, simpler navigation, a quieter writing archive, and a cleaner sitemap without losing existing routes.',
-		current: true,
+		current: false,
 		tags: ['information-architecture', 'homepage', 'writing', 'navigation', 'sitemap'],
 		groups: [
 			{
 				kind: 'Added',
 				items: [
-					'Added a focused homepage structure: introduction, focus areas, featured writing, recent writing, tools, and profile/resume links.',
+					'Added a focused homepage structure: introduction, focus areas, writing, tools, and profile/resume links.',
 				],
 			},
 			{

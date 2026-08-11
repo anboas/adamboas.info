@@ -56,7 +56,6 @@ const featuredFill = homepageWriting
 	.filter((w) => !featuredOrder.includes(String(w.slug)))
 	.slice(0, Math.max(0, 3 - featuredFromOrder.length));
 const featuredReading = [...featuredFromOrder, ...featuredFill].slice(0, 3);
-const recentWriting = homepageWriting.filter((w) => !featuredReading.includes(w)).slice(0, 8);
 
 const siteUrl = absoluteUrl('/');
 const writingSearchTarget = new URL(withBase('/writing/?q={search_term_string}'), Astro.site).toString();
@@ -136,38 +135,13 @@ const HOME_DESCRIPTION = PERSON_DESCRIPTION;
 	<section class="mt-6 card p-6">
 		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
 			<h2 class="section-title">Featured Writing</h2>
-			<a href={withBase('/writing/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50">All writing -></a
+			<a href={withBase('/writing/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50"
+				>Browse all writing -></a
 			>
 		</div>
 		<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
 			{featuredReading.map((w) => <WritingCompactCard item={w} showTopicCount={false} />)}
 		</div>
-	</section>
-
-	<section class="mt-6 card p-6">
-		<div class="flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between">
-			<h2 class="section-title">Recent Writing</h2>
-			<a href={withBase('/writing/')} class="text-sm font-semibold text-stone-100 hover:text-stone-50"
-				>Browse archive -></a
-			>
-		</div>
-		<ul class="mt-4 divide-y divide-slate-800 border-y border-slate-800">
-			{
-				recentWriting.map((w) => (
-					<li>
-						<a
-							href={withBase(`/writing/${w.slug}/`)}
-							class="grid gap-2 py-3 text-sm hover:bg-slate-950/50 sm:grid-cols-[7rem_minmax(0,1fr)] sm:px-2"
-						>
-							<span class="text-xs uppercase tracking-wide text-slate-500">
-								{w.date ? w.date.toISOString().slice(0, 10) : w.type}
-							</span>
-							<span class="font-semibold text-slate-100">{w.title}</span>
-						</a>
-					</li>
-				))
-			}
-		</ul>
 	</section>
 
 	<section class="mt-6 card p-6">
