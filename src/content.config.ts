@@ -25,7 +25,7 @@ const writing = defineCollection({
 				summary: z.string().optional(),
 				status: z.enum(['draft', 'published']).default('published'),
 				type: z.enum(['note', 'memo']),
-				pdfPath: z.string().optional(), // e.g. /memos/example.pdf
+				pdfPath: z.string().optional(), // e.g. /notes/example.pdf or /memos/example.pdf
 				audioPath: z.string().optional(), // e.g. /audio/writing/example.m4a
 				tags: z.array(z.string()).default([]),
 			})

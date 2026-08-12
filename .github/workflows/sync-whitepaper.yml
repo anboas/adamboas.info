@@ -85,6 +85,25 @@ jobs:
           echo "MEMO_RUN_ID=$MEMO_RUN_ID" >> "$GITHUB_ENV"
           echo "Using Whitepaper memo run $MEMO_RUN_ID"
 
+      - name: Fetch latest successful Whitepaper note run id
+        env:
+          GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          NOTE_RUN_ID=$(gh api \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/anboas/Whitepaper/actions/workflows/build-notes.yml/runs?branch=main&status=success&per_page=1" \
+            --jq '.workflow_runs[0].id')
+
+          if [ -z "$NOTE_RUN_ID" ] || [ "$NOTE_RUN_ID" = "null" ]; then
+            echo "No successful note runs found" >&2
+            exit 1
+          fi
+
+          echo "NOTE_RUN_ID=$NOTE_RUN_ID" >> "$GITHUB_ENV"
+          echo "Using Whitepaper note run $NOTE_RUN_ID"
+
       - name: Download Whitepaper paper artifacts
         env:
           GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
@@ -103,6 +122,16 @@ jobs:
           mkdir -p /tmp/wm
           cd /tmp/wm
           gh run download "$MEMO_RUN_ID" -R anboas/Whitepaper
+          find . -maxdepth 2 -mindepth 1 -print
+
+      - name: Download Whitepaper note artifacts
+        env:
+          GH_TOKEN: ${{ secrets.WHITEPAPER_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/wn
+          cd /tmp/wn
+          gh run download "$NOTE_RUN_ID" -R anboas/Whitepaper
           find . -maxdepth 2 -mindepth 1 -print
 
       - name: Sync PDFs + HTML into this repo
@@ -256,6 +285,8 @@ jobs:
           # Memo artifacts are synced from Whitepaper build-memos outputs.
           rm -rf public/memos src/generated/memos
           mkdir -p public/memos src/generated/memos
+          rm -rf public/notes src/generated/notes
+          mkdir -p public/notes src/generated/notes
 
           # Copy published notes + memos markdown (ignore README.md). Preserve folders to avoid slug collisions.
           # status frontmatter defaults to published when omitted.
@@ -291,6 +322,7 @@ jobs:
           }
 
           published_memo_stems=()
+          published_note_stems=()
 
           for f in /tmp/wp-repo/writing/notes/**/*.md; do
             base=$(basename "$f")
@@ -303,6 +335,7 @@ jobs:
               continue
             fi
             cp "$f" "src/content/writing/notes/${base}"
+            published_note_stems+=("${base%.md}")
           done
 
           for f in /tmp/wp-repo/writing/memos/**/*.md; do
@@ -337,6 +370,46 @@ jobs:
           fi
 
           missing_memo_artifacts=0
+          missing_note_artifacts=0
+
+          # Copy generated note artifacts (PDF + HTML + manifest) for published notes only.
+          for d in /tmp/wn/note-*; do
+            [ -d "$d" ] || continue
+            slug=${d##*/note-}
+
+            if ! in_list "$slug" "${published_note_stems[@]}"; then
+              echo "Skipping note artifacts (not published): $slug"
+              continue
+            fi
+
+            pdf="$d/note.pdf"
+            html="$d/note.html"
+            manifest="$d/manifest.json"
+
+            if [ ! -f "$pdf" ] || [ ! -f "$html" ] || [ ! -f "$manifest" ]; then
+              echo "ERROR: missing note artifacts for published note: $slug" >&2
+              missing_note_artifacts=1
+              continue
+            fi
+
+            cp "$pdf" "public/notes/${slug}.pdf"
+            cp "$html" "src/generated/notes/${slug}.raw.html"
+            python3 scripts/extract_pandoc_body.py "src/generated/notes/${slug}.raw.html" "src/generated/notes/${slug}.html"
+            cp "$manifest" "src/generated/notes/${slug}.manifest.json"
+          done
+
+          # Ensure every published note has artifact outputs.
+          for slug in "${published_note_stems[@]}"; do
+            if [ ! -f "public/notes/${slug}.pdf" ] || [ ! -f "src/generated/notes/${slug}.html" ] || [ ! -f "src/generated/notes/${slug}.manifest.json" ]; then
+              echo "ERROR: published note missing synced artifacts: $slug" >&2
+              missing_note_artifacts=1
+            fi
+          done
+
+          if [ "$missing_note_artifacts" -ne 0 ]; then
+            echo "Note artifact sync failed" >&2
+            exit 1
+          fi
 
           # Copy generated memo artifacts (PDF + HTML + manifest) for published memos only.
           for d in /tmp/wm/memo-*; do
@@ -394,7 +467,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           # Include new (untracked) files too.
-          git add -A public/papers public/memos src/generated/papers src/generated/memos src/content/writing src/generated/plausible-pageviews.json src/generated/plausible-funnel.json
+          git add -A public/papers public/memos public/notes src/generated/papers src/generated/memos src/generated/notes src/content/writing src/generated/plausible-pageviews.json src/generated/plausible-funnel.json
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to commit."

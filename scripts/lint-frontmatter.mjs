@@ -42,6 +42,10 @@ function checkWriting(file, data) {
 	if (!isValidDate(data.date)) fail(`${file}: missing/invalid date`);
 	if (data.status === 'published' && !isNonEmptyString(data.summary))
 		fail(`${file}: published writing must have summary`);
+	if (data.status === 'published' && data.type === 'note' && !isNonEmptyString(data.pdfPath))
+		fail(`${file}: published notes must have pdfPath`);
+	if (data.status === 'published' && data.type === 'note' && !String(data.pdfPath).startsWith('/notes/'))
+		fail(`${file}: published note pdfPath must start with /notes/`);
 }
 
 function checkPaper(file, data) {

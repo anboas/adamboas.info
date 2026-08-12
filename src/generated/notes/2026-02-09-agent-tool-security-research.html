@@ -1,0 +1,265 @@
+<p>These notes capture the research thread that informed
+<strong>ACP-RA</strong> before publication (paper date: 2026-02-10). The theme is consistent across everything reviewed: once an agent can call tools, the system’s real risks and real failures are rarely “bad text”; they are <strong>authority leakage</strong>, <strong>untrusted data becoming control</strong>, and <strong>execution mistakes</strong> at the tool boundary.</p>
+<h2 id="master-list-papers-links">Master list (papers + links)</h2>
+<table>
+<colgroup>
+<col />
+<col />
+<col />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Paper</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Design Patterns for Securing LLM Agents against Prompt Injections</td>
+<td><a href="https://arxiv.org/abs/2506.08837">arXiv</a></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows</td>
+<td><a href="https://arxiv.org/abs/2506.23260">arXiv</a></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Prompt Injection 2.0: Hybrid AI Threats</td>
+<td><a href="https://arxiv.org/abs/2507.13169">arXiv</a></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents</td>
+<td><a href="https://arxiv.org/abs/2406.13352">arXiv</a></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Toolformer: Language Models Can Teach Themselves to Use Tools</td>
+<td><a href="https://arxiv.org/abs/2302.04761">arXiv</a></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>ToolLLM: Facilitating Large Language Models to Master Thousands of Real-World APIs</td>
+<td><a href="https://arxiv.org/abs/2307.16789">arXiv</a></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>MRKL Systems: A modular, neuro-symbolic architecture that combines large language models, external knowledge sources and discrete reasoning</td>
+<td><a href="https://arxiv.org/abs/2205.00445">arXiv</a></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>ReAct: Synergizing Reasoning and Acting in Language Models</td>
+<td><a href="https://arxiv.org/abs/2210.03629">arXiv</a></td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Reflexion: Language Agents with Verbal Reinforcement Learning</td>
+<td><a href="https://arxiv.org/abs/2303.11366">arXiv</a></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>SWE-bench: Can Language Models Resolve Real-World GitHub Issues?</td>
+<td><a href="https://arxiv.org/abs/2310.06770">arXiv</a></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>AgentBench: Evaluating LLMs as Agents</td>
+<td><a href="https://arxiv.org/abs/2308.03688">arXiv</a></td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>WebArena: A Realistic Web Environment for Building Autonomous Agents</td>
+<td><a href="https://arxiv.org/abs/2307.13854">arXiv</a></td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Generative Agents: Interactive Simulacra of Human Behavior</td>
+<td><a href="https://arxiv.org/abs/2304.03442">arXiv</a></td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Voyager: An Open-Ended Embodied Agent with Large Language Models</td>
+<td><a href="https://arxiv.org/abs/2305.16291">arXiv</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="research-map-categorized">Research map (categorized)</h2>
+<ul>
+<li><strong>Prompt injection + workflow/hybrid attacks:</strong> #1, #2,
+#3, #4</li>
+<li><strong>Tool use at scale + modular tool routing:</strong> #5, #6,
+#7</li>
+<li><strong>Evaluation in real environments (end-to-end):</strong> #10,
+#11, #12</li>
+<li><strong>Reliability loops (act/observe + self-critique):</strong>
+#8, #9</li>
+<li><strong>Long-lived agents + memory/lifecycle:</strong> #13, #14</li>
+</ul>
+<h2 id="how-this-shaped-acp-ra-directly-integrated">How this shaped ACP-RA (directly integrated)</h2>
+<p>The research above is why ACP-RA emphasizes:</p>
+<ul>
+<li><strong>Distinct gateways by plane</strong> (tool/action, context/data, model, inter-agent) with explicit policy surfaces.</li>
+<li><strong>Typed envelopes</strong> instead of prompt blobs for anything that crosses trust boundaries or causes side effects.</li>
+<li><strong>Evidence-by-default</strong> (request + result) sufficient for replay, investigation, and continuous authorization.</li>
+<li><strong>Anti-replay + integrity</strong> for agent-to-agent messaging, because ensembles make messaging an adversarial channel by default.</li>
+<li><strong>Upgrade discipline</strong> (evaluation-as-gate, regression suites) so changes remain governable and reversible.</li>
+</ul>
+<h2 id="notes-by-topic-with-acp-ra-takeaways">Notes by topic (with ACP-RA takeaways)</h2>
+<h2 id="a.-prompt-injection-workflow-attacks-and-hybrid-threats">A. Prompt injection, workflow attacks, and hybrid threats</h2>
+<hr />
+<h4 id="design-patterns-for-securing-llm-agents-against-prompt-injections-1">Design Patterns for Securing LLM Agents against Prompt Injections (#1)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2506.08837">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Untrusted inputs can smuggle instructions that hijack a tool-using agent.</li>
+<li><strong>Key idea:</strong> Prompt injection is a systems security problem; the fix is architecture + constraints, not “better prompting.”</li>
+<li><strong>ACP-RA takeaway:</strong> Treat the data plane as untrusted; mediate side effects; make policy enforcement unavoidable.</li>
+</ul>
+<hr />
+<h4 id="from-prompt-injections-to-protocol-exploits-2">From Prompt Injections to Protocol Exploits (#2)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2506.23260">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Attacks scale from strings to workflows: tool schemas, connectors, retries, permissions, state machines.</li>
+<li><strong>Key idea:</strong> The threat surface is the workflow graph; defense must be layered across the whole pipeline.</li>
+<li><strong>ACP-RA takeaway:</strong> Separate planes and stop confused-deputy chains with explicit scopes, gateways, and evidence.</li>
+</ul>
+<hr />
+<h4 id="prompt-injection-2.0-hybrid-ai-threats-3">Prompt Injection 2.0: Hybrid AI Threats (#3)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2507.13169">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Prompt injection composes with traditional appsec bugs (web flows, auth flows, data flows) into hybrid attacks.</li>
+<li><strong>Key idea:</strong> The agent becomes a new execution substrate; classical controls (intent boundaries, request integrity, least privilege) still apply.</li>
+<li><strong>ACP-RA takeaway:</strong> Connector onboarding and gateway enforcement should treat web-style attack classes (CSRF/SSRF-like effects, exfil channels) as first-class.</li>
+</ul>
+<hr />
+<h4 id="agentdojo-dynamic-prompt-injection-benchmark-4">AgentDojo: Dynamic prompt injection benchmark (#4)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2406.13352">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Security claims are meaningless without adversarial, execution-grounded testing.</li>
+<li><strong>Key idea:</strong> Evaluate attacks/defenses in dynamic environments using formal checks over environment state.</li>
+<li><strong>ACP-RA takeaway:</strong> “Security regression suites”
+should exist alongside functional eval; prompt injection is something to continuously test, not merely warn about.</li>
+</ul>
+<h2 id="b.-tool-use-at-scale-and-modular-tool-routing">B. Tool use at scale and modular tool routing</h2>
+<hr />
+<h4 id="toolformer-5">Toolformer (#5)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2302.04761">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Tool calling does not reliably emerge from next-token training.</li>
+<li><strong>Key idea:</strong> Generate tool-use supervision by executing tool calls and learning from outcomes.</li>
+<li><strong>ACP-RA takeaway:</strong> Schemas and execution receipts matter; evaluation must be tied to real tool behavior.</li>
+</ul>
+<hr />
+<h4 id="toolllm-6">ToolLLM (#6)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2307.16789">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Large tool catalogs make endpoint selection and argument fidelity the hard part.</li>
+<li><strong>Key idea:</strong> Scale training and evaluation around doc-grounded APIs and execution-valid calls.</li>
+<li><strong>ACP-RA takeaway:</strong> Tool discovery/ranking, schema validation, retries, and observability are control-plane requirements, not “nice to haves.”</li>
+</ul>
+<hr />
+<h4 id="mrkl-systems-7">MRKL Systems (#7)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2205.00445">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Monolithic models are a poor abstraction for combining capability, policy, and execution.</li>
+<li><strong>Key idea:</strong> Route to specialized tools/experts; keep the LLM as coordinator.</li>
+<li><strong>ACP-RA takeaway:</strong> Capability should be explicitly brokered via registries/scopes and mediated gateways, not implicitly granted by “smartness.”</li>
+</ul>
+<h2 id="c.-evaluation-in-real-environments-end-to-end">C. Evaluation in real environments (end-to-end)</h2>
+<hr />
+<h4 id="swe-bench-10">SWE-bench (#10)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2310.06770">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> “Looks right” is not “works.”</li>
+<li><strong>Key idea:</strong> Measure end-to-end success on real issues with verifiable correctness.</li>
+<li><strong>ACP-RA takeaway:</strong> Upgrades should be gated on execution-based regression suites, not subjective review.</li>
+</ul>
+<hr />
+<h4 id="agentbench-11">AgentBench (#11)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2308.03688">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Agent capability is multi-dimensional and environment-specific.</li>
+<li><strong>Key idea:</strong> Benchmark across diverse interactive environments to measure decision quality and robustness.</li>
+<li><strong>ACP-RA takeaway:</strong> Evaluation should be portfolio-based (multiple suites) and treated as a governance artifact.</li>
+</ul>
+<hr />
+<h4 id="webarena-12">WebArena (#12)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2307.13854">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Web tasks are realistic, brittle, and adversarial; success rates are low even for strong models.</li>
+<li><strong>Key idea:</strong> Use realistic, self-hostable web environments to test autonomy under real constraints.</li>
+<li><strong>ACP-RA takeaway:</strong> Web connectors are high-risk tools; they demand strong mediation, audit, and “safe browsing”
+controls.</li>
+</ul>
+<h2 id="d.-reliability-loops-and-self-critique">D. Reliability loops and self-critique</h2>
+<hr />
+<h4 id="react-8">ReAct (#8)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2210.03629">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Agents drift without structured action/observation grounding.</li>
+<li><strong>Key idea:</strong> Interleave reasoning with actions and observations.</li>
+<li><strong>ACP-RA takeaway:</strong> The loop is an interface: actions must be mediated; observations should be treated as untrusted data unless proven otherwise.</li>
+</ul>
+<hr />
+<h4 id="reflexion-9">Reflexion (#9)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2303.11366">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Agents repeat mistakes unless there is a disciplined feedback loop.</li>
+<li><strong>Key idea:</strong> Use self-reflection to improve task performance over trials.</li>
+<li><strong>ACP-RA takeaway:</strong> “Self-improvement” needs governance: evidence capture, rollback, and constraints on what can be updated automatically.</li>
+</ul>
+<h2 id="e.-long-lived-agents-memory-and-lifecycle">E. Long-lived agents, memory, and lifecycle</h2>
+<hr />
+<h4 id="generative-agents-13">Generative Agents (#13)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2304.03442">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Long-lived agents accumulate memory, and memory becomes behavior.</li>
+<li><strong>Key idea:</strong> Memory retrieval + summarization drives long-horizon coherence.</li>
+<li><strong>ACP-RA takeaway:</strong> Memory is a privileged substrate; it needs provenance, TTL/retention, and “memory is not authority”
+controls.</li>
+</ul>
+<hr />
+<h4 id="voyager-14">Voyager (#14)</h4>
+<p><strong>Link:</strong> <a href="https://arxiv.org/abs/2305.16291">arXiv</a></p>
+<ul>
+<li><strong>Core problem:</strong> Open-ended autonomy requires skill acquisition, not one-shot prompting.</li>
+<li><strong>Key idea:</strong> Continual learning/curriculum with an explicit skill library.</li>
+<li><strong>ACP-RA takeaway:</strong> At higher autonomy tiers, the control plane must govern skill onboarding, evaluation gates, and rollback for learned behaviors.</li>
+</ul>
+<h2 id="backlog-lessons-not-integrated-into-acp-ra-yet">Backlog (lessons not integrated into ACP-RA yet)</h2>
+<p>This is the explicit backlog of research-derived lessons to fold into ACP-RA (or companion documents), categorized for implementation planning.</p>
+<h3 id="security-hardening-data-plane-connectors">Security hardening (data plane + connectors)</h3>
+<ul>
+<li><strong>Named prompt-injection defense pattern set:</strong>
+instruction/data separation, provenance/taint, safe rendering, allowlisted tool intents.</li>
+<li><strong>Hybrid threat model for web-style agents:</strong> treat CSRF/SSRF-like effects, exfil channels, and injection into structured tool arguments as first-class.</li>
+<li><strong>Connector onboarding checklist:</strong> attestation, scopes, safe defaults, logging, kill-switches, and isolation for high-risk connectors (browser/email/ticketing).</li>
+</ul>
+<h3 id="evaluation-and-continuous-assurance">Evaluation and continuous assurance</h3>
+<ul>
+<li><strong>Security regression suites (AgentDojo-style):</strong>
+integrate adversarial tests into CI/CD alongside functional tests.</li>
+<li><strong>Interactive environment eval (WebArena-style):</strong>
+require at least one “realistic environment” suite for connectors and autonomy.</li>
+<li><strong>Portfolio eval (AgentBench-style):</strong> define multiple eval suites mapped to autonomy tiers (not one benchmark to rule them all).</li>
+</ul>
+<h3 id="tool-catalogs-and-disambiguation-at-scale">Tool catalogs and disambiguation at scale</h3>
+<ul>
+<li><strong>Tool discovery/ranking as a governed surface:</strong>
+specify retrieval/disambiguation policy (deny-by-default unless work unit requires it).</li>
+<li><strong>Execution receipts as evidence:</strong> standardize “tool call receipts” (inputs/outputs/errors) and connect them to upgrade gates.</li>
+</ul>
+<h3 id="memory-lifecycle-and-long-lived-autonomy">Memory lifecycle and long-lived autonomy</h3>
+<ul>
+<li><strong>Memory provenance + retention policy:</strong> TTLs, tiered retention, redaction, and explicit “memory is not authority.”</li>
+<li><strong>Skill library governance (Voyager-like):</strong>
+onboarding, evaluation, rollback, and drift monitoring for learned tools/skills.</li>
+</ul>
+<h3 id="self-improvement-loops-safely">Self-improvement loops (safely)</h3>
+<ul>
+<li><strong>Bounded self-modification:</strong> when reflection updates prompts/policies/configs, require evidence and staged rollout.</li>
+<li><strong>Post-incident learning pipeline:</strong> after failures, extract learnings into policy updates and regression tests.</li>
+</ul>

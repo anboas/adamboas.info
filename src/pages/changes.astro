@@ -29,13 +29,48 @@ type TopicGroup = {
 const releases: Release[] = [
 
 	{
+		version: 'v2.5.3',
+		date: '2026-08-12',
+		title: 'Printable Notes artifacts',
+		summary: 'Extended the writing artifact pipeline so published Notes can ship memo-styled PDFs and generated HTML.',
+		impact:
+			'Notes now behave like the other writing types: each published Note can expose a stable PDF link, site-rendered generated HTML, sitemap metadata, and artifact verification after Whitepaper sync.',
+		current: true,
+		tags: ['writing', 'notes', 'pdf', 'pipeline', 'sync'],
+		groups: [
+			{
+				kind: 'Added',
+				items: [
+					'Added a Whitepaper `build-notes` workflow that builds published Notes into memo-styled PDF, HTML, and manifest artifacts.',
+					'Added `/notes/<slug>.pdf` frontmatter paths for all currently published Notes.',
+					'Added site-side note artifact verification via `npm run lint:notes`.',
+				],
+			},
+			{
+				kind: 'Changed',
+				items: [
+					'Updated Whitepaper sync to fetch Note artifacts and publish them into `public/notes` plus `src/generated/notes`.',
+					'Updated writing detail pages to prefer generated Note HTML fragments when present, matching memo behavior.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: [
+					'Migrated site-only published Notes back into the Whitepaper source tree so future source syncs preserve them.',
+				],
+			},
+			{ kind: 'Fixed', items: ['Bumped the shared site release constant back in sync with the changelog.'] },
+		],
+	},
+
+	{
 		version: 'v2.5.2',
 		date: '2026-08-11',
 		title: 'Opportunities naming cleanup',
 		summary: 'Reserved Opportunity Intelligence naming for the standalone app and cleaned internal Opportunities labels.',
 		impact:
 			'Visitors now see the public-site `/opportunities/` surface as Opportunities, while Opportunity Intelligence remains the standalone app link in Tools.',
-		current: true,
+		current: false,
 		tags: ['navigation', 'tools', 'opportunities', 'consistency'],
 		groups: [
 			{

@@ -1,0 +1,86 @@
+<p><em>Connecting systems engineering, software, data, acquisition, and operations around mission decisions.</em></p>
+<p>Digital engineering is easy to misunderstand.</p>
+<p>It can look like a new organization. A new tool stack. A model repository. A systems engineering modernization office. A better way to produce artifacts before the “real” acquisition and delivery decisions happen somewhere else.</p>
+<p>That version will disappoint people.</p>
+<p>Digital engineering creates value only when it becomes part of the mission decision system. Models, software, data, architecture, technical reviews, acquisition choices, test evidence, cyber constraints, and operational feedback have to reinforce each other. If they remain separate lanes, digital engineering becomes another department with better diagrams.</p>
+<p>The point is not to digitize engineering artifacts.</p>
+<p>The point is to improve mission decisions.</p>
+<h2 id="the-artifact-trap.">The Artifact Trap.</h2>
+<p>Every engineering transformation has an artifact trap.</p>
+<p>The organization starts measuring whether the new artifacts exist instead of whether they change decisions. The model exists. The architecture view exists. The data standard exists. The dashboard exists. The repository exists. The review package exists.</p>
+<p>But the program still makes decisions the old way.</p>
+<p>The model is not trusted. The software team is not connected to it. The acquisition team does not use it. The cyber team reviews late. Operators give feedback through informal channels. Test evidence arrives after major choices are already locked. The architecture becomes documentation after the fact.</p>
+<p>That is not digital engineering. That is digital paperwork.</p>
+<p>DoD Instruction 5000.97 establishes digital engineering policy and responsibilities across acquisition lifecycle activities [1]. The important word is lifecycle. Digital engineering cannot sit in one box because the decisions it should improve happen across the lifecycle.</p>
+<p>A simple failure pattern makes this clear: a program builds a model-based architecture repository, but the release backlog, cyber authorization evidence, test plan, and sustainment tradeoffs still live in separate review channels. At the next milestone, leaders receive model views in one briefing and software delivery risk in another. The decision does not change because the evidence never became one decision environment.</p>
+<h2 id="what-changes-in-a-mission-decision-system.">What Changes in a Mission Decision System.</h2>
+<p>A useful digital engineering system starts with the decisions that matter.</p>
+<p>What operational outcome is under pressure? What mission thread matters? What decision has to get faster, safer, more resilient, or more accurate? What systems, software, data, people, interfaces, constraints, and authorities shape that decision?</p>
+<p>Once those questions are clear, the model has a job.</p>
+<p>It should expose dependencies. It should show where software changes affect mission performance. It should identify integration risk. It should connect data quality to operational confidence. It should make test evidence easier to interpret. It should help acquisition leaders understand what is mature, what is uncertain, and what must be funded next.</p>
+<p>The decision system is not abstract. It changes who is in the room, what evidence is required, and when a program is allowed to move.</p>
+<p>If an interface change affects mission latency, the model should show the operational consequence before the change becomes a late integration surprise. If a software release changes system behavior, the digital thread should connect that change to cyber posture, test coverage, user feedback, and sustainment risk. If a program wants to scale a prototype, the authoritative evidence should show whether the capability has a transition owner, realistic data access, validated performance, and a path through acquisition.</p>
+<p>That is the difference between a model that illustrates the system and a model that changes the decision.</p>
+<h2 id="digital-thread-is-not-a-translation-layer.">Digital Thread Is Not a Translation Layer.</h2>
+<p>DoD digital engineering language puts real weight on the digital thread and the authoritative source of truth. That is right, but the words can hide a failure mode.</p>
+<p>Many implementations build a digital thread that still functions as a translation layer. The model translates for systems engineers. The backlog translates for software teams. The acquisition package translates for leadership. The test report translates for verification. The risk register translates for governance.</p>
+<p>The result is a better-documented version of the old stovepipes.</p>
+<p>An authoritative source of truth has to be authoritative for decisions, not merely authoritative for storage. It should reduce hand-carried interpretation between engineering, software, cyber, test, acquisition, and operations. It should make assumptions inspectable. It should make conflicts visible before they become program surprises.</p>
+<p>If the digital thread cannot show where a mission requirement, interface, data dependency, software change, test result, cyber finding, and operational observation touch each other, it is not yet a decision system. It is a record system.</p>
+<p>Records matter. Decisions matter more.</p>
+<h2 id="systems-engineering-and-software-have-to-share-a-loop.">Systems Engineering and Software Have to Share a Loop.</h2>
+<p>Defense programs often treat systems engineering and software delivery as different worlds.</p>
+<p>Systems engineering manages requirements, architecture, interfaces, reviews, and technical baselines. Software teams work in backlogs, pipelines, releases, user stories, test automation, observability, and incident response.</p>
+<p>Both worlds are necessary. The problem is the gap between them.</p>
+<p>Software is now a major path by which mission capability changes after fielding. The DoD Software Modernization Strategy recognizes software as central to resilient capability delivery and emphasizes cloud, DevSecOps, cybersecurity, and workforce as major enablers [2]. That means digital engineering cannot only model the system at acquisition milestones. It has to connect to how software actually evolves.</p>
+<p>If a model cannot see software change, it cannot see the mission system.</p>
+<p>If a software team cannot see mission-thread, interface, safety, cyber, and acquisition context, it will optimize locally.</p>
+<p>The loop has to be shared.</p>
+<p>In practice, that means software delivery evidence should update the engineering picture, and engineering constraints should shape the software backlog. Release telemetry, defect patterns, integration failures, cyber findings, and operator feedback should not remain after-action material. They should become engineering evidence.</p>
+<h2 id="data-ai-and-autonomy-belong-in-the-same-evidence-environment.">Data, AI, and Autonomy Belong in the Same Evidence Environment.</h2>
+<p>Digital engineering also fails when data strategy is treated as a side channel.</p>
+<p>Mission decisions depend on data: source quality, latency, lineage, access controls, semantics, telemetry, test results, operational feedback, and authoritative references. A model that cannot connect to the data used by software teams, operators, and acquisition stakeholders will become stale.</p>
+<p>This matters even more for AI and autonomy.</p>
+<p>The NIST AI Risk Management Framework treats AI risk management as a lifecycle discipline across govern, map, measure, and manage functions
+[3]. Digital engineering should make those lifecycle questions visible inside the same mission decision system. What is the operational context? What data is used? What assumptions are embedded in the model?
+What performance evidence exists? What risks are mapped? What changes after deployment? What monitoring shows drift, misuse, or degraded confidence?</p>
+<p>AI assurance and digital engineering should not become parallel governance rituals. They should meet in the same evidence environment.</p>
+<p>For autonomy, that evidence environment also has to show authority. What can be delegated? Under what conditions? What human judgment remains required? What override path exists? What telemetry proves the system stayed inside its authority boundary? What happens under degraded connectivity?</p>
+<p>If digital engineering cannot answer those questions, autonomy governance becomes a policy overlay instead of an engineering discipline.</p>
+<h2 id="acquisition-needs-evidence-earlier-and-incentives-have-to-change.">Acquisition Needs Evidence Earlier, and Incentives Have to Change.</h2>
+<p>Acquisition decisions are engineering decisions with money and authority attached.</p>
+<p>That means digital engineering has to support acquisition, not merely report to it.</p>
+<p>Technology maturity, integration risk, software cadence, cyber posture, test evidence, sustainment assumptions, and transition pathways should be visible before a program is forced into a late binary choice. The GAO Technology Readiness Assessment Guide is valuable because it pushes organizations toward evidence-based maturity assessment [4]. Digital engineering should make that evidence easier to create, inspect, and update.</p>
+<p>The Software Acquisition Pathway also matters here. DoD Instruction 5000.87 provides a pathway for software-intensive capability that emphasizes iterative development, user engagement, cybersecurity, and continuous delivery practices [5]. If digital engineering cannot support that rhythm, it will become too slow for software-heavy systems.</p>
+<p>But this is not only a tooling problem. Programs often keep producing artifacts because artifacts are politically safer than changed decisions. Milestone reviews reward polished packages. Funding lines separate work that should be integrated. Model trust is uneven. Cyber, test, acquisition, and engineering communities carry different incentives. Workforce skill gaps make translation layers feel safer than shared execution.</p>
+<p>Digital engineering that matters changes those incentives. It rewards evidence reuse, earlier risk surfacing, shared ownership of assumptions, and decision traceability. It makes the cost of hiding uncertainty higher than the cost of exposing it early.</p>
+<h2 id="operational-feedback-closes-the-loop.">Operational Feedback Closes the Loop.</h2>
+<p>The most important digital engineering input often arrives after the system touches reality.</p>
+<p>Operators find workarounds. Maintainers see failure patterns. Cyber teams see new attack paths. Software teams see telemetry. Test teams see edge cases. Program offices see where governance slows delivery. Users reveal that the modeled workflow was not the actual workflow.</p>
+<p>If that feedback does not enter the engineering system, the model becomes a museum.</p>
+<p>Digital engineering should shorten the distance between operational truth and technical decision. That means the system needs feedback mechanisms, not just baseline control. It needs a way to distinguish a local issue from a portfolio pattern. It needs a way to update assumptions without destroying configuration discipline. It needs a way to make evidence reusable across programs.</p>
+<p>This is where digital engineering connects to growth and modernization. A company or program that learns across delivery efforts compounds advantage. It stops recreating the same integration analysis. It sees transition barriers earlier. It turns operational evidence into better capture, better architecture, and better investment decisions.</p>
+<h2 id="what-good-looks-like.">What Good Looks Like.</h2>
+<p>Good digital engineering has a few recognizable properties.</p>
+<p>It starts with mission decisions, not tool adoption.</p>
+<p>It makes the digital thread useful for authority, funding, test, cyber, software, sustainment, and operational choices.</p>
+<p>It treats the authoritative source of truth as decision evidence, not just a shared repository.</p>
+<p>It connects systems engineering and software delivery in one loop.</p>
+<p>It treats data lineage, telemetry, and AI assurance as first-class engineering concerns.</p>
+<p>It informs acquisition decisions before commitments harden.</p>
+<p>It supports iterative software delivery without abandoning system discipline.</p>
+<p>It makes cyber, test, safety, and sustainment constraints visible early.</p>
+<p>It allows operational feedback to update architecture and investment choices.</p>
+<p>It produces artifacts because the artifacts serve decisions, not because the transformation needs artifacts.</p>
+<p>Digital engineering is not a department.</p>
+<p>It is a way to make mission systems understandable enough to change responsibly.</p>
+<p>When it works, models, software, data, acquisition, and operations stop speaking through translation layers. They become parts of the same decision system.</p>
+<p>That is where the value is.</p>
+<h2 id="sources">Sources</h2>
+<ol type="1">
+<li>U.S. Department of Defense, <a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500097p.pdf">DoD Instruction 5000.97, Digital Engineering</a>.</li>
+<li>U.S. Department of Defense, <a href="https://media.defense.gov/2022/Feb/03/2002932833/-1/-1/1/DOD-SOFTWARE-MODERNIZATION-STRATEGY.PDF">DoD Software Modernization Strategy</a>, 2022.</li>
+<li>National Institute of Standards and Technology, <a href="https://www.nist.gov/itl/ai-risk-management-framework">AI Risk Management Framework</a>.</li>
+<li>U.S. Government Accountability Office, <a href="https://www.gao.gov/products/gao-20-48g">Technology Readiness Assessment Guide</a>, GAO-20-48G.</li>
+<li>U.S. Department of Defense, <a href="https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500087p.pdf">DoD Instruction 5000.87, Operation of the Software Acquisition Pathway</a>.</li>
+</ol>

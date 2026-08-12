@@ -13,6 +13,7 @@
 		"lint:seo": "node scripts/lint-seo-guards.mjs",
 		"lint:config": "node scripts/lint-config-env.mjs",
 		"lint:papers": "node scripts/verify-papers.mjs",
+		"lint:notes": "node scripts/verify-notes.mjs",
 		"lint:memos": "node scripts/verify-memos.mjs",
 		"lint:discovery-events": "node scripts/lint-discovery-events.mjs",
 		"og:generate": "node scripts/generate-og-images.mjs",

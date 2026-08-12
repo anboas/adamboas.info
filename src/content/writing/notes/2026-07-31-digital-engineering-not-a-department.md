@@ -4,6 +4,7 @@ date: 2026-07-31T12:00:00-04:00
 summary: 'Digital engineering creates value when digital threads, authoritative evidence, software delivery, acquisition choices, and operational feedback change mission decisions.'
 status: published
 type: note
+pdfPath: "/notes/2026-07-31-digital-engineering-not-a-department.pdf"
 tags:
   - digital-engineering
   - mission-engineering

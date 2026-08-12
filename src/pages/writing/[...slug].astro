@@ -18,7 +18,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { getPdfMeta } from '../../utils/pdfMeta';
 
-async function tryReadGeneratedHtml(kind: 'papers' | 'memos', slug: string) {
+async function tryReadGeneratedHtml(kind: 'papers' | 'memos' | 'notes', slug: string) {
 	try {
 		const p = path.join(process.cwd(), 'src', 'generated', kind, `${slug}.html`);
 		return await fs.readFile(p, 'utf-8');
@@ -48,11 +48,11 @@ function applyBaseToGeneratedPaperHtml(html: string) {
 	return normalized;
 }
 
-function applyBaseToGeneratedMemoHtml(html: string) {
-	const memosBase = withBase('/memos/');
+function applyBaseToGeneratedWritingHtml(html: string, kind: 'memos' | 'notes') {
+	const artifactBase = withBase(`/${kind}/`);
 	let normalized = html
-		.replaceAll('href="/memos/', `href="${memosBase}`)
-		.replaceAll('src="/memos/', `src="${memosBase}`)
+		.replaceAll(`href="/${kind}/`, `href="${artifactBase}`)
+		.replaceAll(`src="/${kind}/`, `src="${artifactBase}`)
 		// Defensive cleanup for standalone-pandoc leftovers in legacy artifacts.
 		.replace(/^\s*<h1[^>]*class="title"[^>]*>[\s\S]*?<\/h1>\s*<\/header>\s*/i, '');
 	return normalized;
@@ -118,7 +118,7 @@ let PaperContent: any = null;
 let writingPdfInfo: { size: string | null; pages: number | null } | null = null;
 let writingItem: any = null;
 let WritingContent: any = null;
-let memoGeneratedHtml: string | null = null;
+let writingGeneratedHtml: string | null = null;
 
 const publishedWriting = (await getCollection('writing'))
 	.filter((w) => w.data.status === 'published')
@@ -222,11 +222,12 @@ if (kind === 'paper') {
 	currentPublishedIso = toIsoIfDate(writingItem.data.date);
 	currentModifiedIso = currentPublishedIso;
 	currentAdditionalSchemaType = null;
-	if (writingItem.data.type === 'memo') {
-		memoGeneratedHtml = await tryReadGeneratedHtml('memos', currentSlugForSchema);
-		if (memoGeneratedHtml) memoGeneratedHtml = applyBaseToGeneratedMemoHtml(memoGeneratedHtml);
+	if (writingItem.data.type === 'memo' || writingItem.data.type === 'note') {
+		const artifactKind = writingItem.data.type === 'memo' ? 'memos' : 'notes';
+		writingGeneratedHtml = await tryReadGeneratedHtml(artifactKind, currentSlugForSchema);
+		if (writingGeneratedHtml) writingGeneratedHtml = applyBaseToGeneratedWritingHtml(writingGeneratedHtml, artifactKind);
 	}
-	const writingTextSource = memoGeneratedHtml ? stripHtml(memoGeneratedHtml) : String(writingItem.body ?? '');
+	const writingTextSource = writingGeneratedHtml ? stripHtml(writingGeneratedHtml) : String(writingItem.body ?? '');
 	currentReadMinutes = estimateReadMinutes(writingTextSource);
 	if (writingItem.data.pdfPath) writingPdfInfo = await getPdfMeta(writingItem.data.pdfPath);
 }
@@ -525,7 +526,7 @@ const writingUrl = absoluteUrl('/writing/');
 						</header>
 
 						<div class="paper-content prose prose-invert mt-8 max-w-none">
-							{memoGeneratedHtml ? <div set:html={memoGeneratedHtml} /> : <WritingContent />}
+							{writingGeneratedHtml ? <div set:html={writingGeneratedHtml} /> : <WritingContent />}
 						</div>
 
 						{(() => {

@@ -4,6 +4,7 @@ date: 2026-07-30T12:00:00-04:00
 summary: 'An argument for treating technology insertion as a governed transition system with mission ownership, evidence, acquisition paths, integration constraints, feedback, and scale or stop decisions.'
 status: published
 type: note
+pdfPath: "/notes/2026-07-30-technology-insertion-management-system.pdf"
 tags:
   - technology-insertion
   - transition

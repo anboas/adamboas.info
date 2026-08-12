@@ -4,6 +4,7 @@ date: 2026-07-30T12:00:00-04:00
 summary: 'A model for connecting mission sensing, program immersion, solution shaping, capture, transition, delivery evidence, learning, and portfolio scale.'
 status: published
 type: note
+pdfPath: "/notes/2026-07-30-missing-operating-system-defense-growth.pdf"
 tags:
   - defense-growth
   - capture
