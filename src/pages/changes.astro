@@ -27,6 +27,32 @@ type TopicGroup = {
 };
 
 const releases: Release[] = [
+	{
+		version: 'v2.5.4',
+		date: '2026-08-12',
+		title: 'Resume PDF export tightened',
+		summary: 'Regenerated the downloadable resume PDF with one-line experience entries, a Papers section, and a compact Speaking section.',
+		impact:
+			'The resume export now scans faster: experience no longer carries paragraph summaries, publications are limited to paper-class work, and speaking appears alongside writing-style proof points.',
+		current: true,
+		tags: ['resume', 'pdf', 'writing', 'speaking', 'profile'],
+		groups: [
+			{
+				kind: 'Changed',
+				items: [
+					'Condensed the resume PDF Experience section to one line per role.',
+					'Replaced the previous mixed Writing list with a Papers section featuring ACP-RA, CAF-RA, and From PDFs to Pull Requests.',
+					'Added a compact Speaking section with Modern Day Marine, DON Red Hat PAX River Tech Day, NavalX Scrum for Leaders, and OPNAV N7 engagement entries.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: ['Regenerated `public/files/adam-boas-resume.pdf` from the Whitepaper resume source.'],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Fixed', items: [] },
+		],
+	},
 
 	{
 		version: 'v2.5.3',
@@ -35,7 +61,7 @@ const releases: Release[] = [
 		summary: 'Extended the writing artifact pipeline so published Notes can ship memo-styled PDFs and generated HTML.',
 		impact:
 			'Notes now behave like the other writing types: each published Note can expose a stable PDF link, site-rendered generated HTML, sitemap metadata, and artifact verification after Whitepaper sync.',
-		current: true,
+		current: false,
 		tags: ['writing', 'notes', 'pdf', 'pipeline', 'sync'],
 		groups: [
 			{
