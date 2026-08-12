@@ -28,13 +28,39 @@ type TopicGroup = {
 
 const releases: Release[] = [
 	{
+		version: 'v2.5.5',
+		date: '2026-08-12',
+		title: 'Resume role descriptions restored',
+		summary: 'Restored one concise sentence below each resume experience entry and regenerated Notes PDFs from the memo-style LaTeX path.',
+		impact:
+			'The resume keeps its compact one-page scan while each role has enough context, and Note PDFs no longer include browser print headers that cut into the memo-style document header.',
+		current: true,
+		tags: ['resume', 'pdf', 'writing', 'notes', 'fix'],
+		groups: [
+			{
+				kind: 'Fixed',
+				items: [
+					'Added a one-sentence role description under each Experience entry in `public/files/adam-boas-resume.pdf`.',
+					'Regenerated published Note PDFs with the memo-style LaTeX pipeline so browser timestamp/title headers no longer appear.',
+				],
+			},
+			{
+				kind: 'Improved',
+				items: ['Added a note-PDF verification guard against Chrome/Skia browser-print exports.'],
+			},
+			{ kind: 'Added', items: [] },
+			{ kind: 'Changed', items: [] },
+		],
+	},
+
+	{
 		version: 'v2.5.4',
 		date: '2026-08-12',
 		title: 'Resume PDF export tightened',
 		summary: 'Regenerated the downloadable resume PDF with one-line experience entries, a Papers section, and a compact Speaking section.',
 		impact:
 			'The resume export now scans faster: experience no longer carries paragraph summaries, publications are limited to paper-class work, and speaking appears alongside writing-style proof points.',
-		current: true,
+		current: false,
 		tags: ['resume', 'pdf', 'writing', 'speaking', 'profile'],
 		groups: [
 			{

@@ -76,6 +76,11 @@ for (const file of mdFiles) {
 	if (!exists(pdfPath)) die(`${slug}: missing PDF at ${path.relative(repoRoot, pdfPath)} (from pdfPath ${fm.pdfPath})`);
 	if (!exists(htmlPath)) die(`${slug}: missing generated HTML at ${path.relative(repoRoot, htmlPath)}`);
 
+	const pdfBytes = fs.readFileSync(pdfPath);
+	if (pdfBytes.includes(Buffer.from('Skia/PDF')) || pdfBytes.includes(Buffer.from('HeadlessChrome'))) {
+		die(`${slug}: PDF looks like a browser print export; notes must use the memo-style LaTeX artifact pipeline`);
+	}
+
 	if (exists(manifestPath)) {
 		let manifest;
 		try {
