@@ -93,7 +93,7 @@ function signed(value: number) {
 		stickyActive="home"
 		eyebrow="Operations"
 		title="Operations Status"
-		description="Live deployment signal and data-pipeline freshness for events/opportunities intelligence."
+		description="Live deployment signal and data-pipeline freshness for events and opportunities."
 	>
 		<a
 			slot="actions"
@@ -167,10 +167,10 @@ function signed(value: number) {
 
 	<section class="mt-4 grid gap-4 lg:grid-cols-2">
 		<article class="card p-4 status-card">
-			<h2 class="status-title">SAM opportunity intel</h2>
+			<h2 class="status-title">SAM opportunities</h2>
 			<p class="status-copy">Freshness of opportunity enrichment inputs.</p>
 			<div class="status-health-row">
-				<span class="status-pill" data-tone={samFreshness.tone}>Intel {samFreshness.label}</span>
+				<span class="status-pill" data-tone={samFreshness.tone}>SAM {samFreshness.label}</span>
 				<span class="status-health-detail">{samFreshness.detail}</span>
 			</div>
 			<div class="status-health-row mt-1">
@@ -202,8 +202,8 @@ function signed(value: number) {
 			<h2 class="status-title">Quick routes</h2>
 			<p class="status-copy">Jump straight to the working surfaces.</p>
 			<ul class="status-list mt-3">
-				<li><a href={withBase('/events/')}>Events intelligence</a></li>
-				<li><a href={withBase('/opportunities/')}>Opportunity intelligence</a></li>
+				<li><a href={withBase('/events/')}>Events</a></li>
+				<li><a href={withBase('/opportunities/')}>Opportunities</a></li>
 				<li><a href={withBase('/status/site-analytics/')}>Sitemap traffic analytics</a></li>
 				<li><a href={withBase('/changes/')}>Release changelog</a></li>
 				<li><a href={withBase('/contact/')}>Contact intake</a></li>

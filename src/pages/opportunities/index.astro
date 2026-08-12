@@ -813,16 +813,16 @@ const opportunitiesJson = JSON.stringify(opportunities);
 ---
 
 <SiteLayout
-	title="Opportunity Intelligence | Adam Boas"
-	description="Unified opportunity intelligence interface for SAM.gov and DoD SBIR/STTR datasets."
+	title="Opportunities | Adam Boas"
+	description="Unified opportunities interface for SAM.gov and DoD SBIR/STTR datasets."
 	image="/og/opportunities.png"
 	noindex={true}
 >
 	<SurfacePageHeader
 		stickyActive="opportunities"
 		eyebrow="Acquisition radar"
-		title="Opportunity Intelligence"
-		description="Unified opportunity interface with a shared UX for SAM.gov and DoD SBIR/STTR data sources."
+		title="Opportunities"
+		description="Unified opportunity discovery surface with a shared UX for SAM.gov and DoD SBIR/STTR data sources."
 	>
 		<div slot="actions" class="opp-header-actions">
 			<a id="opp-source-link-sam" class="ui-link-btn" href={withBase('/opportunities/?source=sam')}>SAM.gov data</a>
@@ -1036,7 +1036,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 	<section class="card control-shell mt-4 p-4">
 		<div class="opp-controls-shell">
 			<div class="opp-controls-head">
-				<h2 class="opp-subtitle">Filter opportunity intelligence</h2>
+				<h2 class="opp-subtitle">Filter opportunities</h2>
 				<p class="opp-subcopy">
 					Use WHO + WHAT controls to target buyer organizations and capability lanes, then inspect gem candidates.
 				</p>
@@ -1117,7 +1117,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 					<input id="opp-filter-weight" class="opp-input" type="number" min="0" max="100" step="1" value="0" />
 				</label>
 				<label class="opp-field">
-					<span>Intel depth</span>
+					<span>Evidence depth</span>
 					<select id="opp-filter-intel" class="opp-input">
 						<option value="all">All</option>
 						<option value="deep">Deep text only</option>
@@ -1169,7 +1169,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						<option value="gem">Gem score</option>
 						<option value="response">Response worthiness</option>
 						<option value="event">Event leverage</option>
-						<option value="intel">Intel depth</option>
+						<option value="intel">Evidence depth</option>
 						<option value="awards">Award history</option>
 						<option value="corroboration">Cross-data corroboration</option>
 						<option value="confidence">Signal confidence</option>
@@ -1246,7 +1246,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		<article class="card p-4 opp-viz-card" data-source-only="sam">
 			<h2 class="opp-subtitle">Source coverage</h2>
 			<p class="opp-subcopy">
-				Tracks deep intel, attachments, SAM awards, USA matches, published gov POCs, and upstream errors.
+				Tracks deep detail, attachments, SAM awards, USA matches, published gov POCs, and upstream errors.
 			</p>
 			<div id="opp-viz-sources" class="opp-chart"></div>
 		</article>
@@ -1350,13 +1350,13 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			id="opp-table-wrap"
 			class="opp-table-wrap opp-table-mode-compact"
 			role="region"
-			aria-label="Opportunity intelligence table"
+			aria-label="Opportunities table"
 			tabindex="0"
 		>
 			<table class="opp-table">
 				<caption class="sr-only"
-					>Opportunity intelligence table with sortable columns. On small screens, scroll horizontally to inspect
-					additional columns.</caption
+					>Opportunities table with sortable columns. On small screens, scroll horizontally to inspect additional
+					columns.</caption
 				>
 				<colgroup>
 					<col class="opp-col-intel-view" data-col="view" />
@@ -1382,7 +1382,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				</colgroup>
 				<thead>
 					<tr>
-						<th data-col="view" title="Open intel modal">View</th>
+						<th data-col="view" title="Open details modal">View</th>
 						<th data-col="gem"
 							><button
 								class="opp-sort-btn is-active"
@@ -1407,7 +1407,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 							></th
 						>
 						<th data-col="intel"
-							><button class="opp-sort-btn" data-sort="detailLen" type="button" title="Intel depth">I</button></th
+							><button class="opp-sort-btn" data-sort="detailLen" type="button" title="Evidence depth">I</button></th
 						>
 						<th data-col="files"
 							><button class="opp-sort-btn" data-sort="files" type="button" title="Attachment count">F</button></th
@@ -1445,8 +1445,8 @@ const opportunitiesJson = JSON.stringify(opportunities);
 		<div class="opp-modal-backdrop" data-opp-modal-close></div>
 		<div class="opp-modal-panel" role="dialog" aria-modal="true" aria-labelledby="opp-modal-title">
 			<div class="opp-modal-head">
-				<h3 id="opp-modal-title" class="opp-modal-title">Opportunity intel</h3>
-				<button id="opp-modal-close" class="opp-modal-close" type="button" aria-label="Close intel modal">✕</button>
+				<h3 id="opp-modal-title" class="opp-modal-title">Opportunity details</h3>
+				<button id="opp-modal-close" class="opp-modal-close" type="button" aria-label="Close details modal">✕</button>
 			</div>
 			<div class="opp-modal-meta">
 				<span><strong>Client:</strong> <span id="opp-modal-client">—</span></span>
@@ -1454,7 +1454,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 				<span><strong>Agency:</strong> <span id="opp-modal-agency">—</span></span>
 				<span><strong>Type:</strong> <span id="opp-modal-type">—</span></span>
 				<span><strong>Due:</strong> <span id="opp-modal-due">—</span></span>
-				<span><strong>Intel:</strong> <span id="opp-modal-intel">—</span></span>
+				<span><strong>Evidence:</strong> <span id="opp-modal-intel">—</span></span>
 				<span id="opp-modal-meta-awards"><strong>Awards:</strong> <span id="opp-modal-awards">—</span></span>
 				<span id="opp-modal-meta-usasp"><strong>USAspending:</strong> <span id="opp-modal-usaspending">—</span></span>
 				<span id="opp-modal-meta-corrob"
@@ -3388,7 +3388,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 			const openIntelModal = (row, triggerNode = null) => {
 				if (!el.modal) return;
 				modalLastFocus = triggerNode;
-				if (el.modalTitle) el.modalTitle.textContent = row.title || 'Opportunity intel';
+				if (el.modalTitle) el.modalTitle.textContent = row.title || 'Opportunity details';
 				if (el.modalClient) el.modalClient.textContent = row.clientLabel || 'Unknown';
 				if (el.modalWork) el.modalWork.textContent = row.workTypeLabel || 'General/Other';
 				if (el.modalAgency) el.modalAgency.textContent = row.agencyLabel || 'Unknown';
@@ -3885,7 +3885,7 @@ const opportunitiesJson = JSON.stringify(opportunities);
 						col.map((entry) => entry.govPoc),
 					),
 					makeRow(
-						'Intel depth',
+						'Evidence depth',
 						col.map((entry) => entry.intel),
 					),
 					makeRow(

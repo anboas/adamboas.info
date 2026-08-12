@@ -880,7 +880,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 
 <SiteLayout
 	title="DoW Events Intelligence | Adam Boas"
-	description="Upcoming DoW events with validated links, source transparency, and layered opportunity intelligence."
+	description="Upcoming DoW events with validated links, source transparency, and layered opportunity context."
 	canonicalHref={absoluteUrl('/events/')}
 	image="/og/events.png"
 	noindex={true}
@@ -891,7 +891,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 			headerClass="radar-surface-header"
 			eyebrow="Acquisition radar"
 			title="DoW Events Intelligence"
-			description="Upcoming DoW events with validated links, source transparency, and layered opportunity intelligence."
+			description="Upcoming DoW events with validated links, source transparency, and layered opportunity context."
 		>
 			<div slot="actions" class="flex flex-wrap gap-1.5">
 				<a class="radar-btn radar-btn-tight" href={withBase('/events/sources/')}>Source feeds</a>
@@ -1100,7 +1100,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 													{eventOutlookIcsLink(event) ? <a class="radar-calendar-chip radar-calendar-chip-outlook" href={eventOutlookIcsLink(event)!} download={eventIcsFilename(event)} aria-label="Outlook calendar (.ics)" title="Outlook calendar (.ics)"><span class="radar-calendar-chip-icon" aria-hidden="true">📘</span><span class="radar-calendar-chip-label">Outlook (.ics)</span></a> : null}
 												</span>
 											) : null}
-											<a class="radar-pin-btn radar-link-btn-opps" href={opportunitiesSliceHref(event)}>Opp intel</a>
+											<a class="radar-pin-btn radar-link-btn-opps" href={opportunitiesSliceHref(event)}>Opportunities</a>
 											<button class="radar-pin-btn radar-inline-tool" type="button" data-map-focus data-id={event.id}>Map</button>
 											<button class="radar-pin-btn radar-inline-tool" type="button" data-calendar-focus data-id={event.id}>Calendar</button>
 										</div>
@@ -1272,7 +1272,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 												<label class="text-[11px] text-slate-400">View
 													<select class="radar-input radar-input-sort radar-inline-select" data-sam-sort data-event-id={event.id}>
 														<option value="score">Ranked (weight)</option>
-														<option value="intel-depth">Intel depth</option>
+														<option value="intel-depth">Evidence depth</option>
 														<option value="attachment-count">Attachment count</option>
 														<option value="due">Nearest due date</option>
 														<option value="posted">Newest posted</option>
@@ -1326,7 +1326,7 @@ function opportunitiesSliceHref(event: (typeof events)[number]) {
 															<tr data-score={notice.score ?? 0} data-posted={notice.postedDate ?? ''} data-due={notice.responseDueDate ?? ''} data-title={notice.title.toLowerCase()} data-tags={noticeFocusTags(notice).map((tag) => tag.key).join(',')} data-detail={samDeepTextLength(notice)} data-files={samAttachmentCount(notice)}>
 															<td class="radar-col-weight">{notice.score ?? 0}</td>
 															<td>{notice.uiLink ? <a href={notice.uiLink} target="_blank" rel="noreferrer">{notice.title}</a> : <span>{notice.title}</span>}</td>
-															<td><a class="radar-intel-open-link" href={opportunitiesIntelHref(notice, event.id)}>Open intel</a></td>
+															<td><a class="radar-intel-open-link" href={opportunitiesIntelHref(notice, event.id)}>Open opportunity</a></td>
 															<td>{notice.noticeType}</td>
 															<td>{notice.postedDate ?? '—'}</td>
 															<td class={dueDateClass(notice.responseDueDate)}>{notice.responseDueDate ? fmtDate(notice.responseDueDate) : '—'}</td>

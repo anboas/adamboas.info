@@ -166,7 +166,7 @@ const opportunityItems = [...opportunitiesByKey.values()]
 	});
 
 const canonicalHref = withBase(`/capabilities/${capability.slug}/`);
-const capabilitySeoDescription = `${capability.valueProposition} Includes representative activities, evidence, writing, events, and opportunity intelligence.`;
+const capabilitySeoDescription = `${capability.valueProposition} Includes representative activities, evidence, writing, events, and opportunity context.`;
 const homeUrl = new URL(withBase('/'), Astro.site).toString();
 const capabilitiesUrl = new URL(withBase('/capabilities/'), Astro.site).toString();
 const pageUrl = new URL(canonicalHref, Astro.site).toString();
