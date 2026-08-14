@@ -28,13 +28,11 @@ export const sabreResumeProfile = {
 export const sabreResumeSummary = [
 	'Growth-oriented solutions architect and senior technical strategist who helps defense firms turn customer mission friction into funded task orders, qualified captures, technical architectures, and delivery transitions.',
 	'Operates between business development and operations: discovery, mission problem, architecture, contract path, capture package, and execution handoff.',
-	'Direct fit for Sabre growth across Systems Engineering Department and NAVAIR Digital Department work, connecting PMA-level engineering needs with enterprise data, cloud, software, cyber, AI, and governed automation capabilities.',
 ];
 
 export const sabreResumeFocusAreas = [
 	'Business-development-to-operations growth strategy',
 	'Contract-aware discovery, scope, funding, and OCI screening',
-	'SED-to-NDD digital growth bridge',
 	'Technical capture, proposal strategy, and transition planning',
 	'WDP, data platforms, digital thread, DevSecOps, and cloud authorization',
 	'AI, GenAI, agentic workflows, automation, and mission analytics',
@@ -52,10 +50,6 @@ export const sabreResumeValueProposition: SabreResumeValueItem[] = [
 	{
 		title: 'NDD offering activation',
 		body: 'Shape repeatable packages for program data-to-WDP, software modernization, DevSecOps, digital thread, AI-for-test, cloud authorization, workflow automation, and portfolio analytics.',
-	},
-	{
-		title: '90-day practical outcome',
-		body: 'Build the SED/NDD adjacency map, run two focused discovery engagements, produce two technical-insertion packages, and advance one opportunity toward a funded or qualified action.',
 	},
 ];
 
