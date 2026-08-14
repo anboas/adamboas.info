@@ -30,14 +30,6 @@ export const sabreResumeSummary = [
 	'Operates between business development and operations: discovery, mission problem, architecture, contract path, capture package, and execution handoff.',
 ];
 
-export const sabreResumeFocusAreas = [
-	'Business-development-to-operations growth strategy',
-	'Contract-aware discovery, scope, funding, and OCI screening',
-	'Technical capture, proposal strategy, and transition planning',
-	'WDP, data platforms, digital thread, DevSecOps, and cloud authorization',
-	'AI, GenAI, agentic workflows, automation, and mission analytics',
-];
-
 export const sabreResumeValueProposition: SabreResumeValueItem[] = [
 	{
 		title: 'Enterprise capture accelerator',
@@ -94,15 +86,24 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 					'Aligned initiatives with Deputy Secretary goals in the Fulcrum IT Advancement Strategy to modernize digital infrastructure and improve interoperability.',
 					'Directed strategic and technical modernization of CODE.mil and CLOUD.mil, including ownership transition support from Defense Digital Service and strengthened software sharing posture.',
 					'Created the Digital Arsenal catalog of DevSecOps platforms and software factories for DoD-wide visibility and reuse.',
-					'Developed AI-enabled frameworks for quantitative and qualitative policy analysis, enabling scalable, repeatable evaluation of policy issuances.',
+					'Built out the DoD CIO Library as a more robust suite of policy, strategy, and technical guidance, developing reference architectures, fundamentals documents, and preferred practices with mission owners and organizations including DISA HaCC.',
+					'Developed AI-enabled frameworks for quantitative and qualitative policy analysis, enabling scalable evaluation of policy issuances and cross-document alignment.',
+					'Worked directly with the Chief Digital and Artificial Intelligence Office on cross-functional initiatives, including AI-enabled policy assessment aligned to EO 14110 and OMB M-24-10 AI governance expectations, plus DOGE portfolio assessment support.',
+					'Reviewed and provided recommendations on industry, standards, and Service-aligned policy and technical materials, including NIST publications, Military Department CIO policy inputs, Service strategies, and international standards-body drafts.',
+					'Engaged Military Department and Service CIO stakeholders across Army, Navy, Air Force, Marine Corps, Space Force, and Fourth Estate communities, helping align software, cloud, data, AI, and cybersecurity guidance across Department priorities.',
+					'Assessed RMF policy and implementation friction to inform the DoD CIO Cybersecurity Risk Management Construct, translating authorization pain points into recommendations for risk-based, continuous cyber governance.',
+					'Worked closely with A&S, R&E, DOT&E, and DoD CIO leadership on strategy and policy development, functioning as a software modernization, DevSecOps, cloud, and AI policy subject-matter expert.',
+					'Provided technical review and input to the DoD CIO FinOps Strategy, connecting cloud financial management, engineering governance, and mission-owner accountability.',
+					'Reviewed material for the DoD Weapon Systems Software Summit and served as a panel member, contributing software modernization and policy expertise for senior defense stakeholders.',
 					'Co-led the AI for Software Development Lifecycle work group; authored AI integration policies and guidance under a tri-chaired SES-level Senior Steering Group.',
 				],
 			},
 			{
 				title: 'Booz Allen Market Growth Support',
 				bullets: [
-					'Provided executive-level guidance on Global Defense-aligned, AWS-focused marketing initiatives for market leadership.',
+					'Provided executive-level guidance on Global Defense-aligned, AWS-focused marketing initiatives for defense market leadership.',
 					'Performed growth activities for Senior Associates, Principals, and Vice Presidents across the organization, including customer discovery, capture shaping, proposal strategy, solution architecture, technical lead support, color-team review, and executive-ready narratives.',
+					'Supported proposal initiatives at every level of involvement, serving as solutions architect, technical lead, reviewer, writer, and executive narrative contributor across local, market, and enterprise pursuits.',
 					'Advised VP/SVP stakeholders on strategic alignment, opportunity tracking, and GenAI applications to improve contract value delivery.',
 					'Provided domain guidance for localized opportunity pursuits to strengthen competitive positioning and client value.',
 				],
@@ -135,6 +136,7 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 			{
 				title: 'KBR Capture, Proposal, and Technical Writing',
 				bullets: [
+					'Supported numerous capture and proposal initiatives as solutions architect, technical lead, volume lead, reviewer, writer, and compliance translator, helping convert operational credibility into evaluator-ready technical solutions and win themes.',
 					'Section Lead for IAC MAC proposal work to modernize legacy logistics systems; shaped integration and efficiency approaches.',
 					'Performed technical review and strategic input for LOG IT portfolio integration work, aligning response material to cloud integration and long-term infrastructure objectives.',
 					'Led technical writing for operational support strategy, aviation logistics modernization, and cloud value-delivery narratives.',
@@ -153,6 +155,7 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 				title: 'PEO Digital, PEO Submarines, and NAVAIR Cloud Broker',
 				bullets: [
 					'Trusted advisor to the Service Family Owner for Software Practice and Automation; provided cloud and cybersecurity guidance to shape strategy and operating model.',
+					'Cross-functionally supported Platform One through Booz Allen contract channels, providing strategy, guidance, technical recommendations, and platform-direction input across software factory, DevSecOps, cloud, and enterprise adoption considerations.',
 					'Led mission-owner outreach and onboarding for Black Pearl, aligning platform adoption, training, and support to mission objectives.',
 					'Provided DevSecOps, software factory, and cloud SME support to improve cybersecurity posture and operational efficiency.',
 					'Led architecture assessments for custom and COTS applications; developed modernization and cloud migration strategies with scope, cost analysis, and technical advisories.',

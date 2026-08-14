@@ -7,7 +7,6 @@ import { withBase } from '../../utils/withBase';
 import {
 	sabreResumeEducation,
 	sabreResumeExperience,
-	sabreResumeFocusAreas,
 	sabreResumeProfile,
 	sabreResumeSpeaking,
 	sabreResumeSummary,
@@ -92,13 +91,6 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 								<h2 id="resume-summary-title">Professional Summary</h2>
 								<ul class="summary-list">
 									{sabreResumeSummary.map((item) => <li>{item}</li>)}
-								</ul>
-							</section>
-
-							<section class="resume-section" aria-labelledby="resume-focus-title">
-								<h2 id="resume-focus-title">Core Focus</h2>
-								<ul class="focus-list">
-									{sabreResumeFocusAreas.map((item) => <li>{item}</li>)}
 								</ul>
 							</section>
 
@@ -287,7 +279,6 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 	}
 
 	.summary-list li::before,
-	.focus-list li::before,
 	.role-group li::before,
 	.compact-list li::before {
 		position: absolute;
@@ -304,28 +295,6 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		font-size: 0.88rem;
 		line-height: 1.6;
 		color: rgba(203, 213, 225, 0.96);
-	}
-
-	.focus-list {
-		margin-top: 0.7rem;
-		display: grid;
-		gap: 0.5rem;
-		padding: 0;
-		list-style: none;
-	}
-
-	.focus-list li {
-		position: relative;
-		border: 1px solid rgba(51, 65, 85, 0.78);
-		background: rgba(15, 23, 42, 0.62);
-		padding: 0.6rem 0.7rem 0.6rem 1.75rem;
-		font-size: 0.8rem;
-		line-height: 1.35;
-		color: rgba(226, 232, 240, 0.98);
-	}
-
-	.focus-list li::before {
-		left: 0.7rem;
 	}
 
 	.value-grid {
@@ -510,15 +479,11 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		}
 
 		.summary-list {
-			grid-template-columns: repeat(3, minmax(0, 1fr));
-		}
-
-		.focus-list {
-			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
 		.value-grid {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 
 		.writing-library {
@@ -678,8 +643,21 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		}
 
 		.summary-list,
-		.focus-list,
-		.value-grid,
+		.value-grid {
+			display: grid;
+			margin-top: 6pt;
+			column-gap: 0.16in;
+			row-gap: 4pt;
+		}
+
+		.summary-list {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.value-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
 		.role-stack {
 			display: block;
 			margin-top: 6pt;
@@ -703,23 +681,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		}
 
 		.summary-list li {
-			margin: 0 0 4pt;
-		}
-
-		.focus-list {
-			padding-left: 0;
-			list-style: none;
-		}
-
-		.focus-list li {
-			position: relative;
-			margin-top: 3pt;
-			border: 0;
-			background: transparent;
-			padding: 0 0 0 0.13in;
-			font-size: 8.45pt;
-			line-height: 1.34;
-			color: #111827;
+			margin: 0;
 		}
 
 		.summary-list li,
@@ -729,7 +691,6 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		}
 
 		.summary-list li::before,
-		.focus-list li::before,
 		.role-group li::before,
 		.compact-list li::before {
 			top: 0.42em;
@@ -741,7 +702,6 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 
 		.value-item {
 			break-inside: avoid;
-			margin-top: 4pt;
 			border-left: 0;
 			background: transparent;
 			padding: 0;
