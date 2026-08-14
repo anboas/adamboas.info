@@ -13,6 +13,7 @@ type Props = {
 	canonicalHref?: string;
 	image?: string;
 	noindex?: boolean;
+	nofollow?: boolean;
 };
 
 const { title } = Astro.props;
@@ -20,12 +21,20 @@ const description = Astro.props.description ?? SITE_DESCRIPTION;
 const canonicalHref = Astro.props.canonicalHref;
 const image = Astro.props.image;
 const noindex = Astro.props.noindex ?? false;
+const nofollow = Astro.props.nofollow ?? false;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} canonicalHref={canonicalHref} image={image} noindex={noindex} />
+		<BaseHead
+			title={title}
+			description={description}
+			canonicalHref={canonicalHref}
+			image={image}
+			noindex={noindex}
+			nofollow={nofollow}
+		/>
 	</head>
 	<body data-site-base={import.meta.env.BASE_URL || '/'}>
 		<script is:inline>

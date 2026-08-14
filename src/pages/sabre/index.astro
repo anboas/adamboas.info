@@ -1,0 +1,627 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
+import { absoluteUrl } from '../../config/site';
+import { withBase } from '../../utils/withBase';
+import {
+	sabreResumeEducation,
+	sabreResumeExperience,
+	sabreResumeFocusAreas,
+	sabreResumeProfile,
+	sabreResumeSpeaking,
+	sabreResumeSummary,
+	sabreResumeWriting,
+} from '../../data/sabreResume';
+
+const pageTitle = 'Sabre Resume | Adam Boas';
+const pageDescription =
+	'Sabre-focused expanded resume for Adam Boas, aligned to defense technology strategy, technical capture, mission engineering, data modernization, and growth-focused solution architecture.';
+const printable = Astro.url.searchParams.get('print') === '1';
+const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} | ${sabreResumeProfile.url}`;
+---
+
+<SiteLayout
+	title={pageTitle}
+	description={pageDescription}
+	canonicalHref={absoluteUrl('/sabre/')}
+	noindex={true}
+	nofollow={true}
+>
+	<SurfacePageHeader
+		stickyActive="none"
+		eyebrow="Private Resume"
+		title="Sabre Resume"
+		description="Focused version for growth-facing solutions architecture, capture strategy, mission engineering, and defense modernization."
+		headerClass="sabre-screen-only"
+	>
+		<div slot="actions" class="flex flex-col items-start gap-1 md:items-end">
+			<a
+				href={withBase(sabreResumeProfile.pdfPath)}
+				class="ui-link-btn ui-link-btn-primary"
+				download="adam-boas-sabre-resume.pdf">Download PDF</a
+			>
+			<span class="text-[11px] uppercase tracking-wide text-slate-400">Private hidden page</span>
+		</div>
+	</SurfacePageHeader>
+
+	<article class:list={['resume-shell', printable && 'is-print-preview']}>
+		<table class="resume-print-table">
+			<thead class="resume-print-header">
+				<tr>
+					<th scope="col">
+						<div class="resume-print-header-inner">
+							<h1>{sabreResumeProfile.name}</h1>
+							<p>{contactLine}</p>
+							<p>Clearance: {sabreResumeProfile.clearance}</p>
+						</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="resume-body">
+							<header class="resume-header">
+								<h1>{sabreResumeProfile.name}</h1>
+								<p>{contactLine}</p>
+								<p>Clearance: {sabreResumeProfile.clearance}</p>
+							</header>
+
+							<section class="resume-section resume-summary" aria-labelledby="resume-summary-title">
+								<h2 id="resume-summary-title">Professional Summary</h2>
+								<div class="summary-grid">
+									{sabreResumeSummary.map((item) => <p>{item}</p>)}
+								</div>
+							</section>
+
+							<section class="resume-section" aria-labelledby="resume-focus-title">
+								<h2 id="resume-focus-title">Core Focus</h2>
+								<ul class="focus-list">
+									{sabreResumeFocusAreas.map((item) => <li>{item}</li>)}
+								</ul>
+							</section>
+
+							<section class="resume-section" aria-labelledby="resume-experience-title">
+								<h2 id="resume-experience-title">Experience</h2>
+								<div class="role-stack">
+									{
+										sabreResumeExperience.map((role) => (
+											<section class="resume-role">
+												<div class="role-heading">
+													<h3>
+														{role.company} <span>{role.title}</span>
+													</h3>
+													<p>{role.period}</p>
+												</div>
+												<p class="role-summary">{role.summary}</p>
+												{role.groups?.map((group) => (
+													<div class="role-group">
+														<h4>{group.title}</h4>
+														<ul>
+															{group.bullets.map((bullet) => (
+																<li>{bullet}</li>
+															))}
+														</ul>
+													</div>
+												))}
+											</section>
+										))
+									}
+								</div>
+							</section>
+
+							<section class="resume-section compact-section" aria-labelledby="resume-education-title">
+								<h2 id="resume-education-title">Education & Certifications</h2>
+								<ul class="compact-list">
+									{sabreResumeEducation.map((item) => <li>{item}</li>)}
+								</ul>
+							</section>
+
+							<section class="resume-section compact-section" aria-labelledby="resume-writing-title">
+								<h2 id="resume-writing-title">Writing</h2>
+								<ul class="compact-list">
+									{
+										sabreResumeWriting.map((item) => (
+											<li>
+												<span>
+													{item.title} ({item.year}).{' '}
+												</span>
+												<a href={withBase(item.url)}>{absoluteUrl(item.url)}</a>
+											</li>
+										))
+									}
+								</ul>
+							</section>
+
+							<section class="resume-section compact-section" aria-labelledby="resume-speaking-title">
+								<h2 id="resume-speaking-title">Speaking</h2>
+								<ul class="compact-list">
+									{
+										sabreResumeSpeaking.map((item) => (
+											<li>
+												{item}. {absoluteUrl('/speaking/')}
+											</li>
+										))
+									}
+								</ul>
+							</section>
+
+							<p class="resume-note">
+								Private expanded resume draft. Home address and earlier roles intentionally omitted.
+							</p>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</article>
+</SiteLayout>
+
+<style>
+	:global(.sabre-screen-only.surface-header) {
+		margin-top: 1rem;
+	}
+
+	.resume-shell {
+		margin-top: 1rem;
+		border: 1px solid rgba(51, 65, 85, 0.82);
+		background: rgb(2, 6, 23);
+		box-shadow:
+			0 0 0 1px rgba(15, 23, 42, 0.72) inset,
+			0 10px 28px rgba(2, 6, 23, 0.28);
+	}
+
+	.resume-body {
+		padding: 1.15rem;
+	}
+
+	.resume-print-header {
+		display: none;
+	}
+
+	.resume-print-table,
+	.resume-print-table tbody,
+	.resume-print-table tr,
+	.resume-print-table td {
+		display: block;
+		width: 100%;
+		border: 0;
+		border-collapse: collapse;
+		padding: 0;
+	}
+
+	.resume-header {
+		border-bottom: 1px solid rgba(212, 165, 116, 0.82);
+		padding-bottom: 0.85rem;
+		text-align: center;
+	}
+
+	.resume-header h1 {
+		font-size: clamp(1.75rem, 3vw, 2.25rem);
+		line-height: 1.08;
+		font-weight: 700;
+		color: rgba(248, 250, 252, 0.99);
+		letter-spacing: 0;
+	}
+
+	.resume-header p {
+		margin-top: 0.35rem;
+		font-size: 0.82rem;
+		line-height: 1.45;
+		color: rgba(203, 213, 225, 0.96);
+		overflow-wrap: anywhere;
+	}
+
+	.resume-section {
+		margin-top: 1.15rem;
+	}
+
+	.resume-section h2 {
+		border-bottom: 1px solid rgba(212, 165, 116, 0.76);
+		padding-bottom: 0.26rem;
+		font-size: 0.82rem;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: rgba(245, 222, 179, 0.98);
+	}
+
+	.summary-grid {
+		margin-top: 0.7rem;
+		display: grid;
+		gap: 0.6rem;
+	}
+
+	.summary-grid p,
+	.role-summary,
+	.resume-note {
+		font-size: 0.88rem;
+		line-height: 1.6;
+		color: rgba(203, 213, 225, 0.96);
+	}
+
+	.focus-list {
+		margin-top: 0.7rem;
+		display: grid;
+		gap: 0.5rem;
+		padding: 0;
+		list-style: none;
+	}
+
+	.focus-list li {
+		border: 1px solid rgba(51, 65, 85, 0.78);
+		background: rgba(15, 23, 42, 0.62);
+		padding: 0.6rem 0.7rem;
+		font-size: 0.8rem;
+		line-height: 1.35;
+		color: rgba(226, 232, 240, 0.98);
+	}
+
+	.role-stack {
+		margin-top: 0.8rem;
+		display: grid;
+		gap: 1.05rem;
+	}
+
+	.resume-role {
+		border-top: 1px solid rgba(51, 65, 85, 0.78);
+		padding-top: 0.85rem;
+	}
+
+	.resume-role:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	.role-heading {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+
+	.role-heading h3 {
+		font-size: 0.98rem;
+		line-height: 1.32;
+		font-weight: 700;
+		color: rgba(248, 250, 252, 0.99);
+	}
+
+	.role-heading h3 span {
+		display: block;
+		margin-top: 0.1rem;
+		font-weight: 500;
+		color: rgba(203, 213, 225, 0.98);
+	}
+
+	.role-heading p {
+		font-size: 0.76rem;
+		line-height: 1.3;
+		color: rgba(148, 163, 184, 0.96);
+	}
+
+	.role-summary {
+		margin-top: 0.45rem;
+	}
+
+	.role-group {
+		margin-top: 0.7rem;
+	}
+
+	.role-group h4 {
+		font-size: 0.72rem;
+		line-height: 1.25;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.07em;
+		color: rgba(148, 163, 184, 0.98);
+	}
+
+	.role-group ul,
+	.compact-list {
+		margin-top: 0.42rem;
+		padding-left: 1.05rem;
+	}
+
+	.role-group li,
+	.compact-list li {
+		margin-top: 0.34rem;
+		font-size: 0.83rem;
+		line-height: 1.52;
+		color: rgba(203, 213, 225, 0.96);
+	}
+
+	.compact-list a {
+		overflow-wrap: anywhere;
+	}
+
+	.resume-note {
+		margin-top: 1rem;
+		border-top: 1px solid rgba(51, 65, 85, 0.78);
+		padding-top: 0.7rem;
+		font-size: 0.74rem;
+		color: rgba(148, 163, 184, 0.96);
+	}
+
+	@media (min-width: 720px) {
+		.resume-body {
+			padding: 1.6rem;
+		}
+
+		.summary-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.focus-list {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.role-heading {
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 1rem;
+		}
+
+		.role-heading h3 span {
+			display: inline;
+			margin-top: 0;
+		}
+
+		.role-heading h3 span::before {
+			content: ' - ';
+			color: rgba(148, 163, 184, 0.72);
+		}
+
+		.role-heading p {
+			flex: 0 0 auto;
+			text-align: right;
+		}
+	}
+
+	@media print {
+		@page {
+			size: letter;
+			margin: 0.72in 0.62in 0.76in;
+		}
+
+		:global(html),
+		:global(body) {
+			width: auto !important;
+			height: auto !important;
+			overflow: visible !important;
+			background: white !important;
+			color: #111827 !important;
+			font-family: Arial, Helvetica, sans-serif !important;
+		}
+
+		:global(body) {
+			display: block !important;
+			min-height: auto !important;
+		}
+
+		:global(.site-header),
+		:global(.site-footer),
+		:global(.sabre-screen-only),
+		:global(#global-shortcuts-overlay),
+		:global(#global-shortcuts-fab),
+		:global(#global-shortcut-leader) {
+			display: none !important;
+		}
+
+		:global(.site-main) {
+			display: block !important;
+			max-width: none !important;
+			min-width: 0 !important;
+			width: auto !important;
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+
+		.resume-shell,
+		.resume-body {
+			margin: 0 !important;
+			border: 0 !important;
+			background: transparent !important;
+			box-shadow: none !important;
+		}
+
+		.resume-body {
+			padding: 0.1in 0 0 !important;
+		}
+
+		.resume-print-table {
+			display: table;
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		.resume-print-table tbody {
+			display: table-row-group;
+		}
+
+		.resume-print-table tr {
+			display: table-row;
+		}
+
+		.resume-print-table th,
+		.resume-print-table td {
+			display: table-cell;
+			width: 100%;
+			padding: 0;
+			border: 0;
+			vertical-align: top;
+		}
+
+		.resume-print-header {
+			display: table-header-group;
+		}
+
+		.resume-print-header th {
+			border-bottom: 1px solid #c49a6c;
+			padding: 0 0 0.12in;
+			font-weight: 400;
+		}
+
+		.resume-print-header-inner {
+			border-bottom: 1px solid #c49a6c;
+			padding-bottom: 0.08in;
+			text-align: center;
+			background: white;
+		}
+
+		.resume-print-header h1 {
+			margin: 0;
+			font-size: 15pt;
+			line-height: 1.1;
+			color: #111827;
+		}
+
+		.resume-print-header p {
+			margin: 2pt 0 0;
+			font-size: 8.5pt;
+			line-height: 1.2;
+			color: #374151;
+		}
+
+		.resume-header {
+			display: none;
+		}
+
+		.resume-section {
+			margin-top: 0.17in;
+		}
+
+		.resume-section h2 {
+			break-after: avoid;
+			border-bottom: 1px solid #c49a6c;
+			padding-bottom: 3pt;
+			font-size: 9.5pt;
+			line-height: 1.15;
+			color: #111827;
+			letter-spacing: 0.04em;
+		}
+
+		.summary-grid,
+		.focus-list,
+		.role-stack {
+			display: block;
+			margin-top: 6pt;
+		}
+
+		.summary-grid p,
+		.role-summary,
+		.resume-note,
+		.role-group li,
+		.compact-list li {
+			font-size: 8.45pt;
+			line-height: 1.36;
+			color: #111827;
+		}
+
+		.summary-grid p {
+			margin: 0 0 4pt;
+		}
+
+		.focus-list {
+			padding-left: 1rem;
+			list-style: disc;
+		}
+
+		.focus-list li {
+			margin-top: 3pt;
+			border: 0;
+			background: transparent;
+			padding: 0;
+			font-size: 8.45pt;
+			line-height: 1.34;
+			color: #111827;
+		}
+
+		.resume-role {
+			break-inside: auto;
+			border-top: 0;
+			padding-top: 0;
+			margin-top: 0.13in;
+		}
+
+		.role-heading {
+			break-after: avoid;
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: space-between;
+			gap: 0.25in;
+		}
+
+		.role-heading h3 {
+			margin: 0;
+			font-size: 9.5pt;
+			line-height: 1.2;
+			color: #111827;
+		}
+
+		.role-heading h3 span {
+			display: inline;
+			color: #111827;
+			font-weight: 400;
+		}
+
+		.role-heading h3 span::before {
+			content: ' - ';
+			color: #111827;
+		}
+
+		.role-heading p {
+			margin: 0;
+			flex: 0 0 auto;
+			font-size: 8.5pt;
+			color: #374151;
+		}
+
+		.role-summary {
+			margin: 3pt 0 0;
+		}
+
+		.role-group {
+			margin-top: 5pt;
+		}
+
+		.role-group h4 {
+			break-after: avoid;
+			margin: 0;
+			font-size: 8.1pt;
+			line-height: 1.18;
+			color: #374151;
+			letter-spacing: 0.03em;
+		}
+
+		.role-group ul,
+		.compact-list {
+			margin: 3pt 0 0;
+			padding-left: 0.16in;
+		}
+
+		.role-group li,
+		.compact-list li {
+			margin-top: 2.6pt;
+		}
+
+		.compact-section {
+			break-inside: avoid;
+		}
+
+		.resume-note {
+			border-top: 1px solid #d1d5db;
+			margin-top: 8pt;
+			padding-top: 5pt;
+			font-size: 7.8pt;
+			color: #4b5563;
+		}
+
+		a {
+			color: #111827 !important;
+			text-decoration: none !important;
+		}
+	}
+</style>
