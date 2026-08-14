@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { absoluteUrl } from '../../config/site';
@@ -11,7 +12,6 @@ import {
 	sabreResumeSpeaking,
 	sabreResumeSummary,
 	sabreResumeValueProposition,
-	sabreResumeWriting,
 } from '../../data/sabreResume';
 
 const pageTitle = 'Sabre Resume | Adam Boas';
@@ -19,6 +19,27 @@ const pageDescription =
 	'Sabre-focused expanded resume for Adam Boas, aligned to defense technology strategy, technical capture, mission engineering, data modernization, and growth-focused solution architecture.';
 const printable = Astro.url.searchParams.get('print') === '1';
 const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} | ${sabreResumeProfile.url}`;
+const publishedWriting = (await getCollection('writing')).filter((item) => item.data.status === 'published');
+const publishedPapers = (await getCollection('papers')).filter((item) => item.data.status === 'published');
+const sabreWritingItems = [
+	...publishedPapers.map((item) => ({
+		slug: item.id,
+		type: 'paper',
+		title: item.data.title,
+		description: item.data.description,
+		date: item.data.date,
+	})),
+	...publishedWriting.map((item) => ({
+		slug: item.id.split('/').pop(),
+		type: item.data.type,
+		title: item.data.title,
+		description: item.data.summary,
+		date: item.data.date,
+	})),
+]
+	.filter((item) => item.slug && item.date)
+	.sort((a, b) => b.date.valueOf() - a.date.valueOf());
+const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
 ---
 
 <SiteLayout
@@ -131,20 +152,24 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 								</ul>
 							</section>
 
-							<section class="resume-section compact-section" aria-labelledby="resume-writing-title">
-								<h2 id="resume-writing-title">Writing</h2>
-								<ul class="compact-list">
+							<section class="resume-section compact-section writing-section" aria-labelledby="resume-writing-title">
+								<h2 id="resume-writing-title">Writing, Memos & Notes</h2>
+								<div class="writing-library" aria-label="Published writing">
 									{
-										sabreResumeWriting.map((item) => (
-											<li>
-												<span>
-													{item.title} ({item.year}).{' '}
+										sabreWritingItems.map((item) => (
+											<a class={`writing-item writing-item-${item.type}`} href={withBase(`/writing/${item.slug}/`)}>
+												<div>
+													<span class="writing-type">{item.type}</span>
+													<h3>{item.title}</h3>
+												</div>
+												<p>{item.description}</p>
+												<span class="writing-meta">
+													{formatWritingDate(item.date)} | {absoluteUrl(`/writing/${item.slug}/`)}
 												</span>
-												<a href={withBase(item.url)}>{absoluteUrl(item.url)}</a>
-											</li>
+											</a>
 										))
 									}
-								</ul>
+								</div>
 							</section>
 
 							<section class="resume-section compact-section" aria-labelledby="resume-speaking-title">
@@ -409,6 +434,68 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 		overflow-wrap: anywhere;
 	}
 
+	.writing-library {
+		margin-top: 0.7rem;
+		display: grid;
+		gap: 0.65rem;
+	}
+
+	.writing-item {
+		display: block;
+		border: 1px solid rgba(51, 65, 85, 0.78);
+		background: rgba(15, 23, 42, 0.5);
+		padding: 0.7rem;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.writing-item:hover {
+		border-color: rgba(100, 116, 139, 0.95);
+		background: rgba(15, 23, 42, 0.72);
+	}
+
+	.writing-item div {
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+
+	.writing-type {
+		flex: 0 0 auto;
+		border: 1px solid rgba(212, 165, 116, 0.62);
+		padding: 0.1rem 0.35rem;
+		font-size: 0.62rem;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: rgba(245, 222, 179, 0.98);
+	}
+
+	.writing-item h3 {
+		min-width: 0;
+		font-size: 0.86rem;
+		line-height: 1.28;
+		font-weight: 700;
+		color: rgba(248, 250, 252, 0.99);
+	}
+
+	.writing-item p {
+		margin-top: 0.35rem;
+		font-size: 0.8rem;
+		line-height: 1.45;
+		color: rgba(203, 213, 225, 0.96);
+	}
+
+	.writing-meta {
+		display: block;
+		margin-top: 0.38rem;
+		font-size: 0.72rem;
+		line-height: 1.35;
+		color: rgba(148, 163, 184, 0.96);
+		overflow-wrap: anywhere;
+	}
+
 	.resume-note {
 		margin-top: 1rem;
 		border-top: 1px solid rgba(51, 65, 85, 0.78);
@@ -431,6 +518,10 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 		}
 
 		.value-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.writing-library {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
@@ -742,6 +833,70 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 
 		.compact-section {
 			break-inside: avoid;
+		}
+
+		.writing-section {
+			break-inside: auto;
+		}
+
+		.writing-library {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 3pt 12pt;
+			margin-top: 5pt;
+		}
+
+		.writing-item {
+			break-inside: avoid;
+			position: relative;
+			border: 0;
+			background: transparent;
+			padding: 0 0 0 0.13in;
+			color: #111827;
+			text-decoration: none;
+		}
+
+		.writing-item::before {
+			position: absolute;
+			top: 0.42em;
+			left: 0;
+			width: 3.2pt;
+			height: 3.2pt;
+			border-radius: 999px;
+			background: #c49a6c;
+			content: '';
+		}
+
+		.writing-item div {
+			display: block;
+		}
+
+		.writing-type {
+			border: 0;
+			padding: 0;
+			font-size: 6.9pt;
+			line-height: 1.15;
+			color: #4b5563;
+			letter-spacing: 0.03em;
+		}
+
+		.writing-item h3 {
+			display: inline;
+			margin: 0;
+			font-size: 8.2pt;
+			line-height: 1.24;
+			color: #111827;
+		}
+
+		.writing-item p {
+			display: none;
+		}
+
+		.writing-meta {
+			margin-top: 1pt;
+			font-size: 6.9pt;
+			line-height: 1.2;
+			color: #4b5563;
 		}
 
 		.resume-note {
