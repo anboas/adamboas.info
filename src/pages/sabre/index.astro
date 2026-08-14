@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { absoluteUrl } from '../../config/site';
 import { withBase } from '../../utils/withBase';
 import {
@@ -49,22 +48,6 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 	noindex={true}
 	nofollow={true}
 >
-	<SurfacePageHeader
-		stickyActive="none"
-		eyebrow="Tailored Resume"
-		title="Sabre Resume"
-		description="Focused version for growth-facing solutions architecture, capture strategy, mission engineering, and defense modernization."
-		headerClass="sabre-screen-only"
-	>
-		<div slot="actions" class="flex flex-col items-start gap-1 md:items-end">
-			<a
-				href={withBase(sabreResumeProfile.pdfPath)}
-				class="ui-link-btn ui-link-btn-primary"
-				download="adam-boas-sabre-resume.pdf">Download PDF</a
-			>
-		</div>
-	</SurfacePageHeader>
-
 	<article class:list={['resume-shell', printable && 'is-print-preview']}>
 		<table class="resume-print-table">
 			<thead class="resume-print-header">
