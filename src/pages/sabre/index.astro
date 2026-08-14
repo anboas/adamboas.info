@@ -382,7 +382,7 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 	@media print {
 		@page {
 			size: letter;
-			margin: 0.72in 0.62in 0.76in;
+			margin: 0;
 		}
 
 		:global(html),
@@ -427,7 +427,7 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 		}
 
 		.resume-body {
-			padding: 0.1in 0 0 !important;
+			padding: 0.1in 0 0.62in !important;
 		}
 
 		.resume-print-table {
@@ -459,8 +459,13 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 
 		.resume-print-header th {
 			border-bottom: 1px solid #c49a6c;
-			padding: 0 0 0.12in;
+			padding: 0.56in 0.62in 0.12in;
 			font-weight: 400;
+		}
+
+		.resume-print-table td {
+			padding-right: 0.62in;
+			padding-left: 0.62in;
 		}
 
 		.resume-print-header-inner {
