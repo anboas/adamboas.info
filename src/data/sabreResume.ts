@@ -136,10 +136,8 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 			{
 				title: 'KBR Capture, Proposal, and Technical Writing',
 				bullets: [
-					'Supported numerous capture and proposal initiatives as solutions architect, technical lead, volume lead, reviewer, writer, and compliance translator, helping convert operational credibility into evaluator-ready technical solutions and win themes.',
-					'Section Lead for IAC MAC proposal work to modernize legacy logistics systems; shaped integration and efficiency approaches.',
-					'Performed technical review and strategic input for LOG IT portfolio integration work, aligning response material to cloud integration and long-term infrastructure objectives.',
-					'Led technical writing for operational support strategy, aviation logistics modernization, and cloud value-delivery narratives.',
+					'Supported capture and proposal initiatives as solutions architect, technical lead, volume lead, reviewer, writer, and compliance translator, converting operational credibility into evaluator-ready technical solutions, discriminators, and win themes.',
+					'Led and reviewed response material for IAC MAC, LOG IT portfolio integration, operational support strategy, aviation logistics modernization, and cloud value-delivery efforts, aligning modernization narratives to integration, efficiency, and long-term infrastructure objectives.',
 				],
 			},
 		],
