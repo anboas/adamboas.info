@@ -10,6 +10,7 @@ import {
 	sabreResumeProfile,
 	sabreResumeSpeaking,
 	sabreResumeSummary,
+	sabreResumeValueProposition,
 	sabreResumeWriting,
 } from '../../data/sabreResume';
 
@@ -79,6 +80,20 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 								<ul class="focus-list">
 									{sabreResumeFocusAreas.map((item) => <li>{item}</li>)}
 								</ul>
+							</section>
+
+							<section class="resume-section" aria-labelledby="resume-value-title">
+								<h2 id="resume-value-title">Sabre Value Proposition</h2>
+								<div class="value-grid">
+									{
+										sabreResumeValueProposition.map((item) => (
+											<section class="value-item">
+												<h3>{item.title}</h3>
+												<p>{item.body}</p>
+											</section>
+										))
+									}
+								</div>
 							</section>
 
 							<section class="resume-section" aria-labelledby="resume-experience-title">
@@ -258,6 +273,34 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 		color: rgba(226, 232, 240, 0.98);
 	}
 
+	.value-grid {
+		margin-top: 0.7rem;
+		display: grid;
+		gap: 0.65rem;
+	}
+
+	.value-item {
+		border-left: 2px solid rgba(212, 165, 116, 0.82);
+		background: rgba(15, 23, 42, 0.46);
+		padding: 0.58rem 0.7rem;
+	}
+
+	.value-item h3 {
+		font-size: 0.78rem;
+		line-height: 1.25;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: rgba(245, 222, 179, 0.98);
+	}
+
+	.value-item p {
+		margin-top: 0.25rem;
+		font-size: 0.82rem;
+		line-height: 1.45;
+		color: rgba(203, 213, 225, 0.96);
+	}
+
 	.role-stack {
 		margin-top: 0.8rem;
 		display: grid;
@@ -354,6 +397,10 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 
 		.focus-list {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.value-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
 		.role-heading {
@@ -509,6 +556,7 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 
 		.summary-grid,
 		.focus-list,
+		.value-grid,
 		.role-stack {
 			display: block;
 			margin-top: 6pt;
@@ -538,6 +586,29 @@ const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} |
 			border: 0;
 			background: transparent;
 			padding: 0;
+			font-size: 8.45pt;
+			line-height: 1.34;
+			color: #111827;
+		}
+
+		.value-item {
+			break-inside: avoid;
+			margin-top: 4pt;
+			border-left: 0;
+			background: transparent;
+			padding: 0;
+		}
+
+		.value-item h3 {
+			margin: 0;
+			font-size: 8.1pt;
+			line-height: 1.18;
+			color: #374151;
+			letter-spacing: 0.03em;
+		}
+
+		.value-item p {
+			margin: 2pt 0 0;
 			font-size: 8.45pt;
 			line-height: 1.34;
 			color: #111827;

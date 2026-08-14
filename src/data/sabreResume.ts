@@ -11,6 +11,11 @@ export type SabreResumeRole = {
 	groups?: SabreResumeBulletGroup[];
 };
 
+export type SabreResumeValueItem = {
+	title: string;
+	body: string;
+};
+
 export const sabreResumeProfile = {
 	name: 'Adam Boas',
 	email: 'anboas@gmail.com',
@@ -21,18 +26,37 @@ export const sabreResumeProfile = {
 };
 
 export const sabreResumeSummary = [
-	'Growth-oriented solutions architect and senior technical strategist who converts complex defense missions, acquisition requirements, and emerging technologies into actionable capture strategies and differentiated technical solutions.',
-	'Advises business-development and operational leadership across Navy and federal markets, with emphasis on mission engineering, data modernization, DevSecOps, digital engineering, generative AI, agentic systems, and governed cloud environments.',
-	'Builds reusable customer-immersion and technology-insertion frameworks that protect existing work, expand customer relationships, identify adjacencies, and accelerate qualified growth.',
+	'Growth-oriented solutions architect and senior technical strategist who helps defense firms turn customer mission friction into funded task orders, qualified captures, technical architectures, and delivery transitions.',
+	'Operates between business development and operations: discovery, mission problem, architecture, contract path, capture package, and execution handoff.',
+	'Direct fit for Sabre growth across Systems Engineering Department and NAVAIR Digital Department work, connecting PMA-level engineering needs with enterprise data, cloud, software, cyber, AI, and governed automation capabilities.',
 ];
 
 export const sabreResumeFocusAreas = [
-	'Technical capture and proposal strategy',
-	'Mission engineering and systems integration',
-	'Defense data platforms and War Data Platform alignment',
-	'GovCloud, JWCC, IL5/IL6, DevSecOps, and continuous authorization',
-	'AI, GenAI, agentic workflows, and secure automation',
-	'Customer discovery, adjacency mapping, and growth frameworks',
+	'Business-development-to-operations growth strategy',
+	'Contract-aware discovery, scope, funding, and OCI screening',
+	'SED-to-NDD digital growth bridge',
+	'Technical capture, proposal strategy, and transition planning',
+	'WDP, data platforms, digital thread, DevSecOps, and cloud authorization',
+	'AI, GenAI, agentic workflows, automation, and mission analytics',
+];
+
+export const sabreResumeValueProposition: SabreResumeValueItem[] = [
+	{
+		title: 'Enterprise capture accelerator',
+		body: 'Establish the customer problem, stakeholder map, acquisition drivers, solution baseline, discriminators, partner gaps, proof points, narrative, and delivery model.',
+	},
+	{
+		title: 'Portfolio-to-opportunity map',
+		body: 'Convert delivery knowledge into a register of mission friction, fundable demand, task-order paths, delivery constraints, data rights, security assumptions, and next customer engagements.',
+	},
+	{
+		title: 'NDD offering activation',
+		body: 'Shape repeatable packages for program data-to-WDP, software modernization, DevSecOps, digital thread, AI-for-test, cloud authorization, workflow automation, and portfolio analytics.',
+	},
+	{
+		title: '90-day practical outcome',
+		body: 'Build the SED/NDD adjacency map, run two focused discovery engagements, produce two technical-insertion packages, and advance one opportunity toward a funded or qualified action.',
+	},
 ];
 
 export const sabreResumeExperience: SabreResumeRole[] = [
@@ -46,17 +70,17 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 			{
 				title: 'Growth, capture, and mission discovery',
 				bullets: [
-					"Developed KBR's Program Immersion Visit and Technology Insertion Frameworks to uncover customer requirements, preserve mission knowledge, identify technical insertions, strengthen recompete posture, and convert operational insight into qualified growth opportunities.",
+					'Built lightweight program-discovery and technology-insertion methods to uncover customer requirements, preserve mission knowledge, identify technical insertions, strengthen recompete posture, and convert operational insight into qualified growth opportunities.',
 					'Shaped the Mission Engineering Technical Operations operating model across sustainment, discovery, and enablement activities, tying customer expansion, capability development, internal research, partner ecosystems, and early-stage capture support into one repeatable growth motion.',
 					'Led broad technical solutioning, capture intelligence, competitive analysis, compliance mapping, win-theme development, and proposal narrative work across Navy, DoD, and federal opportunity spaces while maintaining the connection between evaluator expectations and executable delivery.',
-					'Mapped KBR capabilities, past performance, intellectual property, partners, digital-engineering assets, and subject-matter expertise to adjacent customers and markets, improving positioning for recompetes, extensions, and new-business growth.',
+					'Mapped capabilities, past performance, partners, digital-engineering assets, and subject-matter expertise to adjacent customers and markets, improving positioning for recompetes, extensions, and new-business growth.',
 				],
 			},
 			{
 				title: 'Modernization architecture',
 				bullets: [
 					'Advanced Navy data modernization and War Data Platform strategies through approaches for authoritative data onboarding, cross-domain exchange, governance, access control, analytics, and AI-enabled decision support.',
-					'Produced reusable reference architectures and executive artifacts spanning GovCloud, JWCC, DevSecOps, data fabrics, lakehouse platforms, digital engineering, continuous authorization, generative AI, and agentic workflows, connecting modern technology patterns to operational outcomes and acquisition constraints.',
+					'Produced reusable reference architectures and executive artifacts across GovCloud, JWCC, DevSecOps, data fabrics, digital engineering, continuous authorization, generative AI, and agentic workflows.',
 				],
 			},
 		],
