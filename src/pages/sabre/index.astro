@@ -8,6 +8,7 @@ import {
 	sabreResumeEducation,
 	sabreResumeExperience,
 	sabreResumeProfile,
+	sabreResumeSideProjects,
 	sabreResumeSpeaking,
 	sabreResumeSummary,
 	sabreResumeValueProposition,
@@ -131,6 +132,27 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 														</ul>
 													</div>
 												))}
+											</section>
+										))
+									}
+								</div>
+							</section>
+
+							<section class="resume-section projects-section" aria-labelledby="resume-projects-title">
+								<h2 id="resume-projects-title">Side Projects</h2>
+								<div class="project-library">
+									{
+										sabreResumeSideProjects.map((project) => (
+											<section class="project-item">
+												<div class="project-heading">
+													<h3>{project.title}</h3>
+													{project.url && (
+														<a href={project.url} rel="noopener noreferrer">
+															{project.label ?? project.url}
+														</a>
+													)}
+												</div>
+												<p>{project.description}</p>
 											</section>
 										))
 									}
@@ -409,6 +431,50 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		gap: 0.65rem;
 	}
 
+	.project-library {
+		margin-top: 0.7rem;
+		display: grid;
+		gap: 0.65rem;
+	}
+
+	.project-item {
+		border: 1px solid rgba(51, 65, 85, 0.78);
+		background: rgba(15, 23, 42, 0.5);
+		padding: 0.7rem;
+	}
+
+	.project-heading {
+		display: flex;
+		flex-direction: column;
+		gap: 0.22rem;
+	}
+
+	.project-heading h3 {
+		font-size: 0.86rem;
+		line-height: 1.28;
+		font-weight: 700;
+		color: rgba(248, 250, 252, 0.99);
+	}
+
+	.project-heading a {
+		font-size: 0.72rem;
+		line-height: 1.35;
+		color: rgba(245, 222, 179, 0.98);
+		overflow-wrap: anywhere;
+		text-decoration: none;
+	}
+
+	.project-heading a:hover {
+		color: rgba(248, 250, 252, 0.99);
+	}
+
+	.project-item p {
+		margin-top: 0.38rem;
+		font-size: 0.82rem;
+		line-height: 1.48;
+		color: rgba(203, 213, 225, 0.96);
+	}
+
 	.writing-item {
 		display: block;
 		border: 1px solid rgba(51, 65, 85, 0.78);
@@ -487,6 +553,10 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		}
 
 		.writing-library {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.project-library {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
@@ -797,6 +867,63 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 
 		.writing-section {
 			break-inside: auto;
+		}
+
+		.projects-section {
+			break-inside: auto;
+		}
+
+		.project-library {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 6pt 10pt;
+			margin-top: 4pt;
+		}
+
+		.project-item {
+			break-inside: avoid;
+			position: relative;
+			border: 0;
+			background: transparent;
+			padding: 0 0 0 0.13in;
+		}
+
+		.project-item::before {
+			position: absolute;
+			top: 0.42em;
+			left: 0;
+			width: 3.2pt;
+			height: 3.2pt;
+			border-radius: 999px;
+			background: #c49a6c;
+			content: '';
+		}
+
+		.project-heading {
+			display: block;
+		}
+
+		.project-heading h3 {
+			display: inline;
+			margin: 0;
+			font-size: 8.1pt;
+			line-height: 1.18;
+			color: #111827;
+		}
+
+		.project-heading a {
+			display: block;
+			margin-top: 1pt;
+			font-size: 6.8pt;
+			line-height: 1.12;
+			color: #4b5563;
+		}
+
+		.project-item p {
+			margin: 2pt 0 0;
+			font-size: 7.75pt;
+			line-height: 1.24;
+			color: #111827;
 		}
 
 		.writing-library {

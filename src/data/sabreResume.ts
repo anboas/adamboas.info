@@ -16,6 +16,13 @@ export type SabreResumeValueItem = {
 	body: string;
 };
 
+export type SabreResumeSideProject = {
+	title: string;
+	url?: string;
+	label?: string;
+	description: string;
+};
+
 export const sabreResumeProfile = {
 	name: 'Adam Boas',
 	email: 'anboas@gmail.com',
@@ -40,8 +47,8 @@ export const sabreResumeValueProposition: SabreResumeValueItem[] = [
 		body: 'Convert delivery knowledge into a register of mission friction, fundable demand, task-order paths, delivery constraints, data rights, security assumptions, and next customer engagements.',
 	},
 	{
-		title: 'NDD offering activation',
-		body: 'Shape repeatable packages for program data-to-WDP, software modernization, DevSecOps, digital thread, AI-for-test, cloud authorization, workflow automation, and portfolio analytics.',
+		title: 'Growth-to-delivery packages',
+		body: 'Shape repeatable packages for program data modernization, software factory uplift, DevSecOps, digital thread, AI-enabled engineering workflows, cloud authorization, workflow automation, and portfolio analytics.',
 	},
 ];
 
@@ -101,7 +108,7 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 			{
 				title: 'Booz Allen Market Growth Support',
 				bullets: [
-					'Served as cloud/software SME to Navy/Marine Corps VP/SVP leadership on the Booz Allen/AWS master services agreement, translating partnership priorities into Global Defense marketing and executive positioning across Booz Allen\'s $10.7B federal technology business.',
+					"Served as cloud/software SME to Navy/Marine Corps VP/SVP leadership on the Booz Allen/AWS master services agreement, translating partnership priorities into Global Defense marketing and executive positioning across Booz Allen's $10.7B federal technology business.",
 					'Performed growth activities for Senior Associates, Principals, and Vice Presidents across the organization, including customer discovery, capture shaping, proposal strategy, solution architecture, technical lead support, color-team review, and executive-ready narratives.',
 					'Supported proposal initiatives at every level of involvement, serving as solutions architect, technical lead, reviewer, writer, and executive narrative contributor across local, market, and enterprise pursuits.',
 					'Advised VP/SVP stakeholders on strategic alignment, opportunity tracking, and GenAI applications to improve contract value delivery.',
@@ -147,10 +154,10 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 		title: 'Solutions Architect',
 		period: '2019 - 2022',
 		summary:
-			'Advised Information Warfare, NAVAIR, PEO Digital, PEO Submarines, OPNAV, and NECC stakeholders on DevSecOps, secure cloud architecture, modernization strategy, and Compile-to-Combat initiatives.',
+			'Advised Navy, Air Force, and joint mission owners on DevSecOps, secure cloud architecture, modernization strategy, and rapid Compile-to-Combat initiatives.',
 		groups: [
 			{
-				title: 'PEO Digital, PEO Submarines, and NAVAIR Cloud Broker',
+				title: 'Mission Owner Cloud and Software Modernization',
 				bullets: [
 					'Trusted advisor to the Service Family Owner for Software Practice and Automation; provided cloud and cybersecurity guidance to shape strategy and operating model.',
 					'Cross-functionally supported Platform One through Booz Allen contract channels, providing strategy, guidance, technical recommendations, and platform-direction input across software factory, DevSecOps, cloud, and enterprise adoption considerations.',
@@ -234,6 +241,35 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 				],
 			},
 		],
+	},
+];
+
+export const sabreResumeSideProjects: SabreResumeSideProject[] = [
+	{
+		title: 'Opportunity Intelligence',
+		url: 'https://opportunity-intelligence-full.pages.dev/',
+		label: 'opportunity-intelligence-full.pages.dev',
+		description:
+			'AI-enabled capture intelligence environment that turns public solicitations, SBIR/STTR topics, event signals, agency activity, and source evidence into opportunity dossiers, qualification logic, customer-discovery questions, adjacency maps, and response positioning. Built to make BD leadership faster and more credible while giving delivery leaders enough technical, contractual, and mission context to trust the pursuit.',
+	},
+	{
+		title: 'Policy Intelligence',
+		url: 'https://policy-intelligence-full.pages.dev/',
+		label: 'policy-intelligence-full.pages.dev',
+		description:
+			'AI-enabled policy analysis workbench for mapping authorities, extracting obligations, comparing issuances, identifying governance gaps, and producing executive-ready recommendations. Designed to bridge capture, mission support, and digital engineering concerns by connecting customer priorities to policy basis, law basis, implementation risk, and actionable delivery artifacts.',
+	},
+	{
+		title: 'Opportunities / Events',
+		url: 'https://www.adamboas.com/opportunities/',
+		label: 'adamboas.com/opportunities',
+		description:
+			'Lower-sophistication but operationally useful tracking surface for government opportunities and events, including source lists, dates, relevance tags, attendance signals, map/list views, and triage notes. It keeps BD timing, conferences, market signals, and follow-up actions visible without requiring a full intelligence workflow.',
+	},
+	{
+		title: 'Executive Order Tracker',
+		description:
+			'Personally built, unsolicited tool for an executive DoD CIO stakeholder during the early-2025 executive-order surge. It actively monitored the White House website for new publications, logged changes, analyzed executive orders through stakeholder-relevant policy, legal, strategic, and operational lenses, and generated actionable recommendations tied back to law basis and mission impact.',
 	},
 ];
 
