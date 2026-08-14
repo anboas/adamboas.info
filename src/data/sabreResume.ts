@@ -11,11 +11,6 @@ export type SabreResumeRole = {
 	groups?: SabreResumeBulletGroup[];
 };
 
-export type SabreResumeValueItem = {
-	title: string;
-	body: string;
-};
-
 export type SabreResumeSideProject = {
 	title: string;
 	url?: string;
@@ -35,21 +30,6 @@ export const sabreResumeProfile = {
 export const sabreResumeSummary = [
 	'Growth-oriented solutions architect and senior technical strategist who helps defense firms turn customer mission friction into funded task orders, qualified captures, technical architectures, and delivery transitions.',
 	'Operates between business development and operations: discovery, mission problem, architecture, contract path, capture package, and execution handoff.',
-];
-
-export const sabreResumeValueProposition: SabreResumeValueItem[] = [
-	{
-		title: 'Enterprise capture accelerator',
-		body: 'Establish the customer problem, stakeholder map, acquisition drivers, solution baseline, discriminators, partner gaps, proof points, narrative, and delivery model.',
-	},
-	{
-		title: 'Portfolio-to-opportunity map',
-		body: 'Convert delivery knowledge into a register of mission friction, fundable demand, task-order paths, delivery constraints, data rights, security assumptions, and next customer engagements.',
-	},
-	{
-		title: 'Growth-to-delivery packages',
-		body: 'Shape repeatable packages for program data modernization, software factory uplift, DevSecOps, digital thread, AI-enabled engineering workflows, cloud authorization, workflow automation, and portfolio analytics.',
-	},
 ];
 
 export const sabreResumeExperience: SabreResumeRole[] = [
@@ -250,26 +230,26 @@ export const sabreResumeSideProjects: SabreResumeSideProject[] = [
 		url: 'https://opportunity-intelligence-full.pages.dev/',
 		label: 'opportunity-intelligence-full.pages.dev',
 		description:
-			'AI-enabled capture intelligence environment that turns public solicitations, SBIR/STTR topics, event signals, agency activity, and source evidence into opportunity dossiers, qualification logic, customer-discovery questions, adjacency maps, and response positioning. Built to make BD leadership faster and more credible while giving delivery leaders enough technical, contractual, and mission context to trust the pursuit.',
+			'AI-enabled capture intelligence environment that turns solicitations, SBIR/STTR topics, events, agency activity, and source evidence into opportunity dossiers, qualification logic, discovery questions, adjacency maps, and response positioning. Built for Jackie-speed BD decisions while giving delivery leaders the mission, technical, and contract context to trust the pursuit.',
 	},
 	{
 		title: 'Policy Intelligence',
 		url: 'https://policy-intelligence-full.pages.dev/',
 		label: 'policy-intelligence-full.pages.dev',
 		description:
-			'AI-enabled policy analysis workbench for mapping authorities, extracting obligations, comparing issuances, identifying governance gaps, and producing executive-ready recommendations. Designed to bridge capture, mission support, and digital engineering concerns by connecting customer priorities to policy basis, law basis, implementation risk, and actionable delivery artifacts.',
+			'AI-enabled policy workbench for mapping authorities, extracting obligations, comparing issuances, finding governance gaps, and producing executive-ready recommendations. It bridges Jackie growth needs, Dennis delivery credibility, and Brian technical concerns by tying customer priorities to policy basis, law basis, implementation risk, and usable delivery artifacts.',
 	},
 	{
 		title: 'Opportunities / Events',
 		url: 'https://www.adamboas.com/opportunities/',
 		label: 'adamboas.com/opportunities',
 		description:
-			'Lower-sophistication but operationally useful tracking surface for government opportunities and events, including source lists, dates, relevance tags, attendance signals, map/list views, and triage notes. It keeps BD timing, conferences, market signals, and follow-up actions visible without requiring a full intelligence workflow.',
+			'Operational tracking surface for government opportunities and events: sources, dates, relevance tags, attendance signals, map/list views, and triage notes. It keeps BD timing, conferences, market signals, and follow-up actions visible without the heavier intelligence workflow.',
 	},
 	{
 		title: 'Executive Order Tracker',
 		description:
-			'Personally built, unsolicited tool for an executive DoD CIO stakeholder during the early-2025 executive-order surge. It actively monitored the White House website for new publications, logged changes, analyzed executive orders through stakeholder-relevant policy, legal, strategic, and operational lenses, and generated actionable recommendations tied back to law basis and mission impact.',
+			'Personally built, unsolicited tool for an executive DoD CIO stakeholder during the early-2025 executive-order surge. It monitored the White House website, logged new publications, analyzed executive orders through policy, legal, strategic, and operational lenses, and generated stakeholder-ready recommendations tied to law basis and mission impact.',
 	},
 ];
 
