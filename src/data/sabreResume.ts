@@ -51,22 +51,22 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 		title: 'Senior Technical Strategist / Solutions Architect',
 		period: '2025 - present',
 		summary:
-			'Serve as a growth-focused solutions architect for Mission Engineering Technical Operations, connecting business development, capture, operations, and engineering across Navy, DoD, and federal markets.',
+			'Serve as a growth-focused solutions architect for Mission Engineering Technical Operations, converting mission-owner friction into capture strategy, technical artifacts, differentiated value propositions, and executable delivery paths across Navy, DoD, and federal markets.',
 		groups: [
 			{
 				title: 'Growth, capture, and mission discovery',
 				bullets: [
-					'Built lightweight program-discovery and technology-insertion methods to uncover customer requirements, preserve mission knowledge, identify technical insertions, strengthen recompete posture, and convert operational insight into qualified growth opportunities.',
-					'Shaped the Mission Engineering Technical Operations operating model across sustainment, discovery, and enablement activities, tying customer expansion, capability development, internal research, partner ecosystems, and early-stage capture support into one repeatable growth motion.',
-					'Led broad technical solutioning, capture intelligence, competitive analysis, compliance mapping, win-theme development, and proposal narrative work across Navy, DoD, and federal opportunity spaces while maintaining the connection between evaluator expectations and executable delivery.',
-					'Mapped capabilities, past performance, partners, digital-engineering assets, and subject-matter expertise to adjacent customers and markets, improving positioning for recompetes, extensions, and new-business growth.',
+					'Built lightweight mission-discovery and technology-insertion frameworks, including Program Immersion Visits, to surface customer pain, stakeholder influence, acquisition paths, technical insertions, and follow-on growth candidates without separating business development from delivery reality.',
+					'Converted scattered customer and program context into capture artifacts including capability statements, white papers, solution briefs, Q&A inputs, compliance traces, and proposal narratives across aviation, cyber, AI, data, facility-support, and science-and-engineering markets.',
+					'Provided strategic DOE/NASA Ames facility-support positioning by connecting mission owners, their leadership, and CIO-aligned resources to articulate a KBR-specific value proposition grounded in mission understanding, enterprise technical credibility, and executable support models.',
+					'Served across pursuit lifecycles as solutions architect, technical lead, volume and section lead, author, reviewer, recovery lead, and color-team evaluator, keeping responses compelling for capture leadership and credible for delivery executives.',
 				],
 			},
 			{
 				title: 'Modernization architecture',
 				bullets: [
 					'Advanced Navy data modernization and War Data Platform strategies through approaches for authoritative data onboarding, cross-domain exchange, governance, access control, analytics, and AI-enabled decision support.',
-					'Produced reusable reference architectures and executive artifacts across GovCloud, JWCC, DevSecOps, data fabrics, digital engineering, continuous authorization, generative AI, and agentic workflows.',
+					'Produced reusable reference architectures and executive artifacts across GovCloud, JWCC, DevSecOps, data fabrics, digital engineering, continuous authorization, generative AI, and agentic workflows, giving capture teams technical material that could survive solution review and transition into delivery.',
 				],
 			},
 		],
@@ -101,7 +101,7 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 			{
 				title: 'Booz Allen Market Growth Support',
 				bullets: [
-					'Provided executive-level guidance on Global Defense-aligned, AWS-focused marketing initiatives for defense market leadership.',
+					'Served as cloud/software SME to Navy/Marine Corps VP/SVP leadership on the Booz Allen/AWS master services agreement, translating partnership priorities into Global Defense marketing and executive positioning across Booz Allen\'s $10.7B federal technology business.',
 					'Performed growth activities for Senior Associates, Principals, and Vice Presidents across the organization, including customer discovery, capture shaping, proposal strategy, solution architecture, technical lead support, color-team review, and executive-ready narratives.',
 					'Supported proposal initiatives at every level of involvement, serving as solutions architect, technical lead, reviewer, writer, and executive narrative contributor across local, market, and enterprise pursuits.',
 					'Advised VP/SVP stakeholders on strategic alignment, opportunity tracking, and GenAI applications to improve contract value delivery.',
