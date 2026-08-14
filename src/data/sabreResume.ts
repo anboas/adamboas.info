@@ -84,7 +84,7 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 		title: 'Solutions Architect',
 		period: '2024 - 2025',
 		summary:
-			'Supported DoD CIO Information Enterprise across software modernization policy, AI4SDLC governance, cloud, DevSecOps, acquisition coordination, and Navy Market growth support.',
+			'Supported DoD CIO Information Enterprise across software modernization policy, AI4SDLC governance, cloud, DevSecOps, acquisition coordination, and market growth support.',
 		groups: [
 			{
 				title: 'DoD CIO Information Enterprise - Software Modernization and Cloud Directorate',
@@ -99,9 +99,10 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 				],
 			},
 			{
-				title: 'Booz Allen Navy Market Support',
+				title: 'Booz Allen Market Growth Support',
 				bullets: [
-					'Provided executive-level guidance on Global Defense-aligned, AWS-focused marketing initiatives for Navy Market leadership.',
+					'Provided executive-level guidance on Global Defense-aligned, AWS-focused marketing initiatives for market leadership.',
+					'Performed growth activities for Senior Associates, Principals, and Vice Presidents across the organization, including customer discovery, capture shaping, proposal strategy, solution architecture, technical lead support, color-team review, and executive-ready narratives.',
 					'Advised VP/SVP stakeholders on strategic alignment, opportunity tracking, and GenAI applications to improve contract value delivery.',
 					'Provided domain guidance for localized opportunity pursuits to strengthen competitive positioning and client value.',
 				],
