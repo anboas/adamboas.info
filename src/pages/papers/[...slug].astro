@@ -5,7 +5,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import { withBase } from '../../utils/withBase';
 
 export async function getStaticPaths() {
-	const papers = await getCollection('papers');
+	const papers = (await getCollection('papers')).filter((paper) => paper.data.status === 'published');
 	return papers.map((paper) => ({
 		params: { slug: paper.id },
 		props: { slug: paper.id },
