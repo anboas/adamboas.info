@@ -1,38 +1,38 @@
-export type SabreResumeBulletGroup = {
+export type FullResumeBulletGroup = {
 	title: string;
 	bullets: string[];
 };
 
-export type SabreResumeRole = {
+export type FullResumeRole = {
 	company: string;
 	title: string;
 	period: string;
 	summary: string;
-	groups?: SabreResumeBulletGroup[];
+	groups?: FullResumeBulletGroup[];
 };
 
-export type SabreResumeSideProject = {
+export type FullResumeSideProject = {
 	title: string;
 	url?: string;
 	label?: string;
 	description: string;
 };
 
-export const sabreResumeProfile = {
+export const fullResumeProfile = {
 	name: 'Adam Boas',
 	email: 'anboas@gmail.com',
 	phone: '(301) 904-2011',
 	url: 'www.adamboas.com',
 	clearance: 'Top Secret',
-	pdfPath: '/files/adam-boas-sabre-resume.pdf',
+	pdfPath: '/files/adam-boas-full-resume.pdf',
 };
 
-export const sabreResumeSummary = [
+export const fullResumeSummary = [
 	'Growth-oriented solutions architect and senior technical strategist who helps defense firms turn customer mission friction into funded task orders, qualified captures, technical architectures, and delivery transitions.',
 	'Operates between business development and operations: discovery, mission problem, architecture, contract path, capture package, and execution handoff.',
 ];
 
-export const sabreResumeExperience: SabreResumeRole[] = [
+export const fullResumeExperience: FullResumeRole[] = [
 	{
 		company: 'KBR',
 		title: 'Senior Technical Strategist / Solutions Architect',
@@ -224,20 +224,20 @@ export const sabreResumeExperience: SabreResumeRole[] = [
 	},
 ];
 
-export const sabreResumeSideProjects: SabreResumeSideProject[] = [
+export const fullResumeSideProjects: FullResumeSideProject[] = [
 	{
 		title: 'Opportunity Intelligence',
 		url: 'https://opportunity-intelligence-full.pages.dev/',
 		label: 'opportunity-intelligence-full.pages.dev',
 		description:
-			'AI-enabled capture intelligence environment that turns solicitations, SBIR/STTR topics, events, agency activity, and source evidence into opportunity dossiers, qualification logic, discovery questions, adjacency maps, and response positioning. Built for Jackie-speed BD decisions while giving delivery leaders the mission, technical, and contract context to trust the pursuit.',
+			'AI-enabled capture intelligence environment that turns solicitations, SBIR/STTR topics, events, agency activity, and source evidence into opportunity dossiers, qualification logic, discovery questions, adjacency maps, and response positioning. Built for rapid BD decisions while giving delivery leaders the mission, technical, and contract context to trust the pursuit.',
 	},
 	{
 		title: 'Policy Intelligence',
 		url: 'https://policy-intelligence-full.pages.dev/',
 		label: 'policy-intelligence-full.pages.dev',
 		description:
-			'AI-enabled policy workbench for mapping authorities, extracting obligations, comparing issuances, finding governance gaps, and producing executive-ready recommendations. It bridges Jackie growth needs, Dennis delivery credibility, and Brian technical concerns by tying customer priorities to policy basis, law basis, implementation risk, and usable delivery artifacts.',
+			'AI-enabled policy workbench for mapping authorities, extracting obligations, comparing issuances, finding governance gaps, and producing executive-ready recommendations. It bridges growth, delivery, and technical concerns by tying customer priorities to policy basis, law basis, implementation risk, and usable delivery artifacts.',
 	},
 	{
 		title: 'Opportunities / Events',
@@ -253,7 +253,7 @@ export const sabreResumeSideProjects: SabreResumeSideProject[] = [
 	},
 ];
 
-export const sabreResumeEducation = [
+export const fullResumeEducation = [
 	'University of Maryland Global Campus - B.S., Cybersecurity Management and Policy (2023)',
 	'CompTIA Security+ (SY0-601) (2023)',
 	'AWS Certified Cloud Practitioner (2019)',
@@ -264,7 +264,7 @@ export const sabreResumeEducation = [
 	'James A. Forest Career and Technology Center - Cisco Accredited Computer Networking Academy (2012)',
 ];
 
-export const sabreResumeWriting = [
+export const fullResumeWriting = [
 	{
 		title: 'Agent Control Plane Reference Architecture (ACP-RA)',
 		year: '2026',
@@ -282,7 +282,7 @@ export const sabreResumeWriting = [
 	},
 ];
 
-export const sabreResumeSpeaking = [
+export const fullResumeSpeaking = [
 	'Modern Day Marine - Model-Based Systems Engineering (2026)',
 	'DON Red Hat PAX River Tech Day - Partner Lunch Panel (2024)',
 	'NavalX Scrum for Leaders - Agile Leadership (2022)',

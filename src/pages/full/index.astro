@@ -4,22 +4,22 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import { absoluteUrl } from '../../config/site';
 import { withBase } from '../../utils/withBase';
 import {
-	sabreResumeEducation,
-	sabreResumeExperience,
-	sabreResumeProfile,
-	sabreResumeSideProjects,
-	sabreResumeSpeaking,
-	sabreResumeSummary,
-} from '../../data/sabreResume';
+	fullResumeEducation,
+	fullResumeExperience,
+	fullResumeProfile,
+	fullResumeSideProjects,
+	fullResumeSpeaking,
+	fullResumeSummary,
+} from '../../data/fullResume';
 
-const pageTitle = 'Sabre Resume | Adam Boas';
+const pageTitle = 'Expanded Resume | Adam Boas';
 const pageDescription =
-	'Sabre-focused expanded resume for Adam Boas, aligned to defense technology strategy, technical capture, mission engineering, data modernization, and growth-focused solution architecture.';
+	'Expanded resume for Adam Boas, aligned to defense technology strategy, technical capture, mission engineering, data modernization, and growth-focused solution architecture.';
 const printable = Astro.url.searchParams.get('print') === '1';
-const contactLine = `${sabreResumeProfile.email} | ${sabreResumeProfile.phone} | ${sabreResumeProfile.url}`;
+const contactLine = `${fullResumeProfile.email} | ${fullResumeProfile.phone} | ${fullResumeProfile.url}`;
 const publishedWriting = (await getCollection('writing')).filter((item) => item.data.status === 'published');
 const publishedPapers = (await getCollection('papers')).filter((item) => item.data.status === 'published');
-const sabreWritingItems = [
+const fullWritingItems = [
 	...publishedPapers.map((item) => ({
 		slug: item.id,
 		type: 'paper',
@@ -43,7 +43,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 <SiteLayout
 	title={pageTitle}
 	description={pageDescription}
-	canonicalHref={absoluteUrl('/sabre/')}
+	canonicalHref={absoluteUrl('/full/')}
 	noindex={true}
 	nofollow={true}
 >
@@ -53,9 +53,9 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 				<tr>
 					<th scope="col">
 						<div class="resume-print-header-inner">
-							<h1>{sabreResumeProfile.name}</h1>
+							<h1>{fullResumeProfile.name}</h1>
 							<p>{contactLine}</p>
-							<p>Clearance: {sabreResumeProfile.clearance}</p>
+							<p>Clearance: {fullResumeProfile.clearance}</p>
 						</div>
 					</th>
 				</tr>
@@ -65,18 +65,16 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 					<td>
 						<div class="resume-body">
 							<header class="resume-header">
-								<h1>{sabreResumeProfile.name}</h1>
+								<h1>{fullResumeProfile.name}</h1>
 								<p>{contactLine}</p>
-								<p>Clearance: {sabreResumeProfile.clearance}</p>
-								<a class="resume-download sabre-screen-only" href={sabreResumeProfile.pdfPath} download>
-									Download PDF
-								</a>
+								<p>Clearance: {fullResumeProfile.clearance}</p>
+								<a class="resume-download full-screen-only" href={fullResumeProfile.pdfPath} download> Download PDF </a>
 							</header>
 
 							<section class="resume-section resume-summary" aria-labelledby="resume-summary-title">
 								<h2 id="resume-summary-title">Professional Summary</h2>
 								<ul class="summary-list">
-									{sabreResumeSummary.map((item) => <li>{item}</li>)}
+									{fullResumeSummary.map((item) => <li>{item}</li>)}
 								</ul>
 							</section>
 
@@ -84,7 +82,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 								<h2 id="resume-experience-title">Experience</h2>
 								<div class="role-stack">
 									{
-										sabreResumeExperience.map((role) => (
+										fullResumeExperience.map((role) => (
 											<section class="resume-role">
 												<div class="role-heading">
 													<h3>
@@ -113,7 +111,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 								<h2 id="resume-projects-title">Side Projects</h2>
 								<div class="project-library">
 									{
-										sabreResumeSideProjects.map((project) => (
+										fullResumeSideProjects.map((project) => (
 											<section class="project-item">
 												<div class="project-heading">
 													<h3>{project.title}</h3>
@@ -133,7 +131,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 							<section class="resume-section compact-section" aria-labelledby="resume-education-title">
 								<h2 id="resume-education-title">Education & Certifications</h2>
 								<ul class="compact-list">
-									{sabreResumeEducation.map((item) => <li>{item}</li>)}
+									{fullResumeEducation.map((item) => <li>{item}</li>)}
 								</ul>
 							</section>
 
@@ -141,7 +139,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 								<h2 id="resume-writing-title">Writing, Memos & Notes</h2>
 								<div class="writing-library" aria-label="Published writing">
 									{
-										sabreWritingItems.map((item) => (
+										fullWritingItems.map((item) => (
 											<a class={`writing-item writing-item-${item.type}`} href={withBase(`/writing/${item.slug}/`)}>
 												<div>
 													<span class="writing-type">{item.type}</span>
@@ -161,7 +159,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 								<h2 id="resume-speaking-title">Speaking</h2>
 								<ul class="compact-list">
 									{
-										sabreResumeSpeaking.map((item) => (
+										fullResumeSpeaking.map((item) => (
 											<li>
 												{item}. {absoluteUrl('/speaking/')}
 											</li>
@@ -180,7 +178,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 </SiteLayout>
 
 <style>
-	:global(.sabre-screen-only.surface-header) {
+	:global(.full-screen-only.surface-header) {
 		margin-top: 1rem;
 	}
 
@@ -567,7 +565,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 
 		:global(.site-header),
 		:global(.site-footer),
-		:global(.sabre-screen-only),
+		:global(.full-screen-only),
 		:global(#global-shortcuts-overlay),
 		:global(#global-shortcuts-fab),
 		:global(#global-shortcut-leader) {

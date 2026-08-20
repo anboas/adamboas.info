@@ -1,9 +1,9 @@
 import { spawn } from 'node:child_process';
 import { chromium } from '@playwright/test';
 
-const port = process.env.SABRE_PDF_PORT ?? '4327';
+const port = process.env.FULL_RESUME_PDF_PORT ?? '4327';
 const baseUrl = `http://127.0.0.1:${port}`;
-const outputPath = 'public/files/adam-boas-sabre-resume.pdf';
+const outputPath = 'public/files/adam-boas-full-resume.pdf';
 const astroCli = 'node_modules/astro/astro.js';
 
 function wait(ms) {
@@ -54,11 +54,11 @@ for (const stream of [server.stdout, server.stderr]) {
 }
 
 try {
-	await waitForServer(`${baseUrl}/sabre/?print=1`);
+	await waitForServer(`${baseUrl}/full/?print=1`);
 
 	const browser = await chromium.launch({ headless: true });
 	const page = await browser.newPage({ viewport: { width: 816, height: 1056 } });
-	await page.goto(`${baseUrl}/sabre/?print=1`, { waitUntil: 'domcontentloaded', timeout: 45000 });
+	await page.goto(`${baseUrl}/full/?print=1`, { waitUntil: 'domcontentloaded', timeout: 45000 });
 	await page.emulateMedia({ media: 'print' });
 	await page.pdf({
 		path: outputPath,

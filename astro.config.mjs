@@ -18,7 +18,7 @@ export default defineConfig({
 		return b.endsWith('/') ? b : `${b}/`;
 	})(),
 
-	integrations: [mdx(), sitemap({ filter: (page) => !page.includes('/sabre/') })],
+	integrations: [mdx(), sitemap({ filter: (page) => !page.includes('/full/') })],
 
 	vite: {
 		plugins: [tailwindcss()],
