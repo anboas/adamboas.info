@@ -17,65 +17,15 @@ tags:
 
 ## Executive Argument
 
-The next serious phase of AI adoption is not a better chatbot, a smarter copilot, or another productivity feature in office software. It is the entrance of agentic systems into the workforce as managed non-person work capacity.
+Agent Workforce Integration is the organizational counterpart to the Agent Control Plane Reference Architecture. ACP-RA defines the primitives for governed agentic autonomy; this paper translates those primitives into institutional operating rules for adding non-person agents to staff work. The central claim is that agentic rollout should be treated as workforce force creation, not only workforce force multiplication. AI tools make existing workers faster. Governed agents create additional assignable, measurable, supervised work capacity.
 
-That distinction matters. A worker using AI remains the unit of action. The AI helps draft, summarize, search, compare, and accelerate. The worker still owns the task, the context, the decision, and the record. Agentic rollout changes the operating model. A non-person entity can be assigned work, given credentials, operate across tools, maintain state, retrieve records, route decisions, draft products, monitor obligations, escalate exceptions, and produce evidence. It can do work that looks less like tool use and more like staff action.
+The policy question is not whether agents are employees. They are not. It is also not whether agents are ordinary tools. They are not that either once they receive tasking, credentials, tools, memory, approval paths, and the ability to act across systems. The fieldable category is a governed digital work entity: a non-person agent authorized to perform bounded Work Units under accountable human ownership and explicit Trust Scope constraints.
 
-The policy question is not whether agents are employees. They are not. The question is how organizations govern non-person agents when they begin to perform work inside systems built for human labor, software applications, contractors, service accounts, and records schedules that never anticipated digital work entities with delegated task authority.
-
-My argument is direct: agentic rollout should be treated as workforce force creation, not merely workforce force multiplication. AI as a productivity tool makes people faster. Agents as governed digital work entities create additional capacity. They add persistent, assignable, measurable, supervised work units to the operating model. That can be a strategic advantage, but only if the organization binds agents to the same primitives required for governed autonomy: non-person entity identity, Trust Scope Manifests, Work Units, Action Envelopes, Evidence Ledgers, Model Assurance Profiles, delegation chains, and enforceable control-plane policy.
-
-This paper proposes an Agent Workforce Integration Model. It is not a chatbot governance model. It is not an information technology modernization plan. It is not a claim that agents should replace people. It is the organizational counterpart to the Agent Control Plane: a practical model for safely adding non-person agents to staff work as governed contributors with identity, trust scopes, permissions, ownership, records obligations, performance expectations, lifecycle controls, and workforce legitimacy protections.
-
-The center of the paper is workforce integration. CIO work is a useful example because it is policy-heavy, evidence-heavy, coordination-heavy, and full of repeatable staff work. But the point is larger than CIO. The same pattern applies across cyber, acquisition, finance, human capital, legal, program management, engineering, operations, and mission support. In a Department of War context, the early value is likely to appear in policy interpretation, cyber evidence packages, continuous authorization support, acquisition package review, requirements traceability, digital engineering evidence, and mission support workflows where staff work is the rate limiter.
+In a Department of War context, the first useful edge is not speculative autonomy. It is evidence-heavy staff work: policy interpretation, cyber evidence packages, continuous authorization support, acquisition package review, requirements traceability, digital engineering evidence, vulnerability closure, and mission support coordination. These are reversible, reviewable, tempo-constrained workflows where agents can create capacity without displacing human decision authority.
 
 The choice is not whether agents will enter the workforce. They already are. The choice is whether they enter as governed capacity or unmanaged workarounds.
 
-## The Shift From Tool Use To Workforce Capacity
-
-Most organizations still frame AI adoption around individual productivity. The familiar story is simple: a person uses AI to draft an email, summarize a meeting, generate code, prepare a briefing, or analyze a document. That story is real, but it is incomplete.
-
-The more consequential pattern is emerging around assigned agentic work. An agent is not merely a text interface. It can be configured around a role, a task queue, a toolset, a data boundary, a memory context, a policy constraint, and an escalation rule. It can be asked to monitor a domain, produce routine work products, maintain a record of actions, coordinate with other systems, and return when something needs human judgment.
-
-That changes the basic workforce equation.
-
-In the tool-use model, AI improves the marginal productivity of a human worker. In the agent-workforce model, the organization creates additional capacity that can be directed, measured, constrained, and improved. The agent does not become a person, but it does become part of the work system.
-
-This is why the phrase "non-person entity" is useful. It is not a philosophical claim. It is an operating category. Organizations already manage non-person identities in the form of service accounts, bots, applications, devices, workloads, and machine identities. Agents are different because they can exercise task judgment, compose actions, generate work products, interact with knowledge, and operate over time. They need the rigor of non-person entity identity plus the supervision and accountability expectations of workforce management.
-
-The missing category is the governed digital work entity: a non-person agent authorized to perform bounded Work Units under accountable human ownership and explicit Trust Scope constraints.
-
-## Why This Matters Now
-
-Three forces are converging.
-
-First, industry is moving from model access to agent platforms. The market is no longer only selling language models. It is selling agent builders, workflow agents, coding agents, customer-service agents, data agents, security agents, procurement agents, and enterprise orchestration layers. Vendors are packaging autonomy as business process acceleration. The center of gravity is moving from "generate an answer" to "complete a task."
-
-Second, the architecture conversation is maturing from AI applications to control planes. Agent Control Plane thinking emerged because delegated authority cannot be managed one prompt at a time. As agents gain tools, memory, permissions, and the ability to act across systems, they need policy enforcement, identity boundaries, auditability, risk tiers, model and tool supply-chain controls, human approval patterns, and revocation. ACP began as a way to govern agentic autonomy. The next step is to connect that control plane to workforce integration.
-
-Third, department priorities are already pointing in this direction. The Department of War, Military Departments, and federal agencies are pushing toward software modernization, zero trust, continuous authorization, ICAM, cloud adoption, data readiness, DevSecOps, cyber resilience, acquisition speed, artificial intelligence adoption, mission engineering, and digital transformation. These priorities all assume more work, more evidence, faster cycles, better traceability, and tighter governance under mission-tempo pressure. Human staff cannot absorb that load through productivity tools alone. Agentic capacity will be attractive because it promises tempo without waiting for linear staffing growth.
-
-The risk is that the demand for tempo outruns the governance model. If an organization needs more policy analysis, more cyber evidence, more acquisition traceability, more compliance mapping, more knowledge management, more operational monitoring, and more decision support, agents will be brought in to help. If there is no workforce integration model, the organization will get unmanaged agents embedded in workflows through local experiments, vendor features, browser automation, shadow IT, and individual workarounds.
-
-That is not a future problem. It is the normal adoption pattern for useful technology. People do not wait for perfect governance when the work is piling up.
-
-## The Core Policy Problem
-
-Current policy categories are not sufficient.
-
-Agents can look like software because they are implemented in software. They can look like bots because they automate tasks. They can look like service accounts because they need credentials. They can look like contractors because they perform work bought from vendors. They can look like employees because they receive tasking, create outputs, and interact with enterprise systems. They fit none of those categories cleanly.
-
-That mismatch creates gaps in identity, accountability, records, cybersecurity, procurement, human capital, equity, and mission governance.
-
-The wrong answer is to pretend agents are just tools. A tool does not usually maintain an operating memory, decide which source to retrieve, call another tool, draft a work product, route it, check a policy constraint, update a tracker, and return when a deadline is near. The wrong answer is also to anthropomorphize agents into employees. That blurs accountability and creates legal, ethical, and managerial confusion.
-
-The better answer is to establish a specific policy category for agentic work systems:
-
-An agent is a non-person digital work entity that performs bounded tasks using delegated access, assigned tools, configured policies, and accountable human supervision.
-
-That definition creates the basis for governance. It says agents are not people, but they are not ordinary passive tools. They are governed contributors to work execution.
-
-## Relationship To ACP-RA
+## ACP-RA Translation Layer
 
 The Agent Workforce Integration Model should not create a parallel vocabulary. It should bind organizational rollout to the artifacts already required for governed autonomy.
 
@@ -95,6 +45,24 @@ ACP-RA treats agents as non-person entities with identities, personas, trust sco
 This mapping is the key move. A workforce policy that says "agents need owners and logs" is too thin. The fieldable requirement is sharper: no production agent should receive a Work Unit unless it has a registered NPE identity, a persona, an approved Trust Scope Manifest, an allowed Model Assurance Profile, a policy bundle, Action Envelope logging, Evidence Ledger anchoring, and a named accountable owner.
 
 That is how the control-plane thesis becomes workforce governance.
+
+## Relation To CAF-RA
+
+CAF-RA matters because workforce integration is not complete when an agent is authorized. It is complete only when the organization can continuously assure agent behavior after authorization.
+
+The Evidence Ledger and Action Envelope requirements in this paper are the workforce-facing expression of the continuous assurance fabric. ACP governs who or what may act, under what trust scope, through which tools, and with what delegation. CAF closes the loop by making agent work replayable, inspectable, scored, surfaced, and corrected. For staff-work agents, that means a policy comparison, acquisition review, cyber evidence package, or continuous ATO check should leave enough evidence for a supervisor, records officer, auditor, or mission owner to reconstruct the Work Unit and decide whether the agent should continue, be constrained, or be retired.
+
+In short: ACP mediates authority; CAF verifies behavior; workforce integration assigns ownership and operating responsibility.
+
+## Scope Discipline
+
+This paper deliberately does not define the technical ACP components, replace ACP-RA, prescribe a vendor product, or claim agents should hold independent decision authority. It does not argue that agents are employees. It argues that once agents perform assigned work, organizations need an institutional operating model for registering them, supervising them, measuring them, and retiring them.
+
+## Why This Matters Now
+
+Industry is moving from model access to task-completing agent platforms at the same time Department of War priorities are increasing evidence, traceability, authorization, cyber, acquisition, and modernization workload. Software modernization, zero trust, ICAM, continuous authorization, DevSecOps, data readiness, cyber resilience, mission engineering, and AI adoption all create more staff work under tighter tempo constraints. Human staff cannot absorb that load through productivity tools alone.
+
+Without a workforce integration model, agentic capacity will still arrive, but through local experiments, vendor features, browser automation, shadow IT, and urgent workarounds. The result will be a shadow workforce: non-person agents operating through unclear identity, unclear authority, unclear records, unclear supervision, and unclear worker impact.
 
 ## Policy Basis
 
@@ -122,6 +90,16 @@ The organization should be able to answer a simple question: if this agent does 
 
 Agentic work creates records. Tasking, prompts, retrieved sources, context bundles, tool calls, Action Envelopes, approvals, outputs, edits, exceptions, and final products may all matter. Records policy must decide what gets retained, how long it is retained, who can discover it, what is privileged or sensitive, and how provenance is represented.
 
+At minimum, production staff-work agents should retain:
+
+- Work Unit assignment, owner, purpose, and closure state.
+- Trust Scope Manifest, policy bundle, MAP references, and hash values used at execution time.
+- Context bundles, source references, retrieval timestamps, and freshness indicators.
+- Action Envelopes for attempted tool use, routing, notifications, submissions, and system updates.
+- Human approvals, rejections, edits, override reasons, and escalation outcomes.
+- Final outputs and records disposition.
+- Suspension, rollback, incident, and retirement decisions.
+
 Without records rules, agents will produce useful work that cannot be audited, defended, learned from, or corrected.
 
 ### Cybersecurity
@@ -135,6 +113,16 @@ Cyber policy should require zero-trust assumptions, least privilege, tool allowl
 Agents are often acquired through software contracts that were not written for delegated digital work. Procurement policy should require vendors to disclose agent capabilities, data flows, model dependencies, audit features, retention behavior, subcontractor dependencies, human review controls, export and data-rights implications, and security limitations.
 
 Contracts should specify what agent logs the organization owns, what model improvements vendors may make from organizational data, how agents are disabled, how outputs are traced, and what happens when a vendor feature changes autonomy level.
+
+Minimum contract clauses should require:
+
+- Autonomy disclosure: vendor must identify task-completion, tool-use, memory, routing, and external-action capabilities.
+- ACP compatibility: vendor must support NPE identity, persona, trust scope, Work Unit, Action Envelope, Evidence Ledger, and MAP references or provide exportable equivalents.
+- Data rights: organization owns prompts, retrieved context, logs, evidence traces, outputs, approval records, and evaluation results.
+- Model/data-use limits: organizational data may not be used for vendor training, telemetry, or product improvement without explicit authorization.
+- Audit and replay: vendor must provide traceability sufficient to reconstruct agent work and support records, incident response, and legal review.
+- Shutdown and containment: organization can suspend agents, revoke credentials, freeze Work Units, export evidence, and disable changed autonomy features.
+- Change notice: vendor must disclose material changes to model, tool, routing, memory, retention, or autonomy behavior before production use.
 
 ### Workforce Governance
 
@@ -169,15 +157,7 @@ Bad initial domains include high-consequence adjudication, personnel discipline,
 
 Agentic workforce integration has to be a legitimacy and equity issue from the beginning. Defense organizations will not sustain agentic capacity if workers experience it as opaque surveillance, hidden displacement, or a quiet ratchet on output expectations. The goal is mission capacity that people can trust, supervise, challenge, and learn to operate.
 
-The first equity risk is uneven access. If only senior staff, technical teams, or well-funded offices receive capable agents, the benefits will flow to those already best positioned. Workers in administrative, operational, compliance, and support roles may continue carrying the heaviest routine burden while other groups gain leverage.
-
-The second risk is hidden displacement. Organizations may avoid saying that agents replace labor while quietly reducing billets, delaying hiring, increasing workload expectations, or treating agent-accelerated output as the new baseline. That can harm workers without a formal decision ever being made.
-
-The third risk is unequal surveillance. If agents are used to monitor productivity, summarize worker behavior, or evaluate performance without transparency and guardrails, they can become a quiet management-control layer rather than an augmentation layer.
-
-The fourth risk is biased task allocation. The tedious work agents can relieve is not distributed evenly today. If rollout follows power rather than need, the workers who most need relief may receive it last.
-
-The fifth risk is skill stratification. Some workers will become agent supervisors, workflow designers, policy interpreters, and quality reviewers. Others may be left as downstream validators of machine-generated work without meaningful development pathways.
+The main risks are concrete: uneven access to agent support, hidden displacement through hiring delay or billet pressure, surveillance creep, biased allocation of workload relief, and skill stratification between agent supervisors and downstream validators.
 
 Workforce legitimacy requires explicit design choices:
 
@@ -188,7 +168,7 @@ Workforce legitimacy requires explicit design choices:
 - Require transparency when agent outputs influence human performance, workload, assignment, or opportunity.
 - Measure whether agent capacity reduces low-value burden for frontline, administrative, technical, and mission-support staff, not only whether leadership receives faster products.
 
-The equity case is not anti-automation. It is pro-legitimacy. Agentic rollout will be more durable if workers can see how it helps them, what it changes, who is accountable, how it preserves human judgment, and how they can participate in the new operating model.
+This is not anti-automation. It is pro-legitimacy. Agentic rollout will be more durable if workers can see how it helps them, what it changes, who is accountable, how it preserves human judgment, and how they can participate in the new operating model.
 
 ## Gap Inventory
 
@@ -265,6 +245,8 @@ The organization should distinguish at least five autonomy levels and bind each 
 | 3. Coordinating | Routes tasks, monitors status, requests inputs, and tracks obligations. | Trust Scope Manifest, policy bundle, Action Envelopes for routing and notifications. |
 | 4. Executing | Performs bounded system actions after approval or within strict rules. | Tool gateway mediation, MAP allowlist, approval gates, rollback and revocation procedures. |
 | 5. Adaptive | Plans multi-step work across tools and adjusts execution based on context. | Work-unit DAG, drift monitoring, escalation thresholds, eval gates, rehearsed containment. |
+
+The key boundary is between coordination and execution. Level 3 agents may request inputs, route status, and surface exceptions under approved notification rules; Level 4 agents attempt bounded system actions, so human approval gates are mandatory for high-consequence, external, irreversible, financial, legal, personnel, cross-domain, or authoritative-system actions. Exception-only approval should be allowed only when the Trust Scope Manifest defines low consequence, reversibility, evidence requirements, rollback behavior, and escalation thresholds.
 
 Higher levels require stronger identity, logging, review, cyber, and workforce controls.
 
@@ -369,8 +351,8 @@ Each agent should have force-creation, control-plane, mission, and workforce met
 
 | Measurement class | Metrics |
 | --- | --- |
-| Force creation | Agent-hours/day; autonomous task closure rate; human approval rate per mission thread; compute-to-output elasticity; output per approved trust scope. |
-| Control-plane performance | Action Envelope coverage; Evidence Ledger completeness; trust scope violation rate; escalation trigger precision; revocation time; rollback success rate. |
+| Force creation | Agent-hours/day greater than human-equivalent output; autonomous task closure rate greater than 80 percent for approved low/moderate-consequence Work Units; human approval rate per mission thread below 20 percent where exception-only supervision is authorized; compute-to-output elasticity above 1.5x after trust scopes and control-plane mediation are in place. |
+| Control-plane performance | Action Envelope coverage at 100 percent for production tool actions; Evidence Ledger completeness at 100 percent for production Work Units; trust scope violation rate; escalation trigger precision; revocation time; rollback success rate. |
 | Mission performance | Cycle time reduction; evidence package completeness; rework rate; exception backlog; decision latency; operational continuity during surge or degraded conditions. |
 | Workforce legitimacy | Low-value burden reduced; skill pathway participation; supervisor workload; worker trust and challenge-rate data; transparency complaints; silent-baseline ratcheting indicators. |
 | Cost and sustainment | Cost per closed Work Unit; model/tool spend; supervisor time; incident cost; retirement and renewal decisions. |
@@ -408,17 +390,9 @@ These are not agents replacing commanders, contracting officers, authorizing off
 
 ## CIO Work As A Vignette
 
-CIO work is not the center of this argument, but it is a strong example of where agents can help.
+CIO work is not the center of the argument, but it is a clean example. CIO organizations sit at the intersection of policy interpretation, software modernization, cloud adoption, zero trust, DevSecOps, continuous authorization, data governance, portfolio visibility, vendor assessment, and executive reporting. Much of that work is staff work: collecting inputs, comparing documents, mapping requirements, checking evidence, routing decisions, and surfacing exceptions.
 
-A CIO organization is often responsible for policy interpretation, software modernization guidance, cloud adoption, cyber alignment, data governance, portfolio visibility, architecture review, DevSecOps enablement, zero trust coordination, continuous authorization, vendor assessment, and executive reporting. Much of that work is staff work: collecting inputs, comparing documents, mapping requirements, maintaining trackers, drafting briefings, checking evidence, routing decisions, and surfacing exceptions.
-
-Agents can augment that workforce without pretending to be senior decision-makers.
-
-For example, an agent could monitor new policy releases, compare them to existing guidance, identify affected systems, draft an impact summary, and route it to a human policy owner as a Work Unit with source-linked evidence. Another agent could review an authorization package for missing evidence, outdated references, inconsistent control mappings, and unresolved findings before a human review board sees it. Another could maintain a live map of modernization initiatives against cloud, data, cyber, and acquisition priorities, with every update recorded through Action Envelopes and the Evidence Ledger.
-
-In each case, the agent is not making policy. It is creating staff capacity. It is reducing the burden of evidence assembly, comparison, monitoring, and coordination. The human retains judgment, decision authority, and accountability.
-
-That is the model worth generalizing.
+A policy-impact agent, authorization-package agent, or modernization-portfolio agent should not make policy or approve risk. It should open Work Units, retrieve sources, draft comparisons, check packages, route exceptions, and leave Action Envelope and Evidence Ledger traces for human review. That is the staff-capacity model worth generalizing.
 
 ## Realistic Action Agenda
 
@@ -436,9 +410,9 @@ Evidence that it is real:
 
 - A written agent definition exists.
 - Existing bots, agents, automations, and AI workflows are inventoried.
-- High-risk unmanaged expansion is paused pending review.
-- Executive sponsors are named.
-- A draft risk-tier model is created and mapped to autonomy level, consequence tier, data sensitivity, and trust scope requirements.
+- High-risk unmanaged expansion is paused by written directive or equivalent governance action.
+- Executive sponsors and accountable offices are named.
+- The draft risk-tier model maps autonomy level, consequence tier, data sensitivity, tool access, reversibility, and trust scope requirements.
 
 ### First 60 Days: Build Minimum Governance Machinery
 
@@ -454,7 +428,8 @@ Evidence that it is real:
 - Registry fields are approved, including NPE identity, persona, owner, trust scope reference, policy bundle reference, MAP allowlist, and retirement date.
 - Risk tiers map to autonomy level, data sensitivity, tool access, and consequence.
 - Minimum logging and records requirements are documented as Action Envelope, Work Unit, and Evidence Ledger requirements.
-- Procurement begins adding agent disclosure requirements to relevant buys.
+- A standard agent contract clause set exists for relevant buys.
+- No pilot receives production credentials without a registry entry, owner, TSM, MAP allowlist, and evidence profile.
 
 ### First 90 Days: Run Bounded Pilots
 
@@ -477,7 +452,8 @@ Evidence that it is real:
 - Each pilot has a registered NPE identity and persona.
 - Each pilot has a human owner and supervisor.
 - Each pilot has documented tool access, data boundaries, Trust Scope Manifest, policy bundle, and MAP allowlist.
-- Outputs are reviewed before operational use.
+- Each pilot opens and closes Work Units with Evidence Ledger anchoring.
+- Outputs are reviewed before operational use unless exception-only approval is explicitly authorized by trust scope.
 - Metrics are collected on agent-hours/day, autonomous task closure rate, human approval rate, cycle time, rework, quality, burden reduction, and worker impact.
 
 ### First 180 Days: Integrate With Enterprise Systems
@@ -492,8 +468,8 @@ Evidence that it is real:
 
 - No production agent can access enterprise systems without registry entry, approved credentials, trust scope, and policy bundle.
 - Agent logs are reviewable as Work Units, Action Envelopes, and Evidence Ledger records.
-- Records disposition is defined.
-- Procurement language is used in relevant contracts.
+- Records disposition is defined for Work Units, context bundles, Action Envelopes, approvals, outputs, exceptions, incidents, and retirement decisions.
+- Procurement language is inserted into relevant solicitations, orders, and renewals.
 - Workforce training exists for agent supervisors and affected employees.
 - Pilot results inform scale, modification, or retirement decisions.
 
@@ -508,8 +484,8 @@ Mechanism: establish a standing Agent Workforce Governance Board and incorporate
 Evidence that it is real:
 
 - Agent capacity is represented in workforce planning using agent-hours/day, Work Unit closure, human approval rate, and supervisor-load metrics.
-- Agent supervisor roles exist.
-- Workforce legitimacy and equity reviews are routine.
+- Agent supervisor and control-plane operator roles exist in position descriptions, training plans, or role catalogs.
+- Workforce legitimacy and equity reviews are required before scaling affected functions.
 - Mission owners can show where agents improved capacity and where they did not.
 - Agents are retired when they lose purpose, ownership, or performance justification.
 
