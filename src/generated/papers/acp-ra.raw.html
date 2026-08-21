@@ -587,10 +587,12 @@ after-action review</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Composition rule:</strong> when scopes combine (agent→agent,
-agent→ensemble, cross-enclave), authority composes by
-<strong>intersection</strong>, not union. The effective authority is the
-overlap of allowed actions, data, and environments—never the sum.</p>
+<p><strong>Composition rule:</strong> when scopes combine (agent<span
+class="math inline">→</span>agent, agent<span
+class="math inline">→</span>ensemble, cross-enclave), authority composes
+by <strong>intersection</strong>, not union. The effective authority is
+the overlap of allowed actions, data, and environments—never the
+sum.</p>
 <div class="center">
 <hr />
 </div>
@@ -717,8 +719,9 @@ artifact review for plans)</p></li>
 <li><p>approval queue (human-on-the-loop and quorum workflows)</p></li>
 <li><p>intervention controls (pause/resume/cancel; quarantine/kill;
 tighten scope)</p></li>
-<li><p>evidence drill-down by work_unit_id (macro→meso→micro replay
-tiers)</p></li>
+<li><p>evidence drill-down by work_unit_id (macro<span
+class="math inline">→</span>meso<span class="math inline">→</span>micro
+replay tiers)</p></li>
 <li><p>after-action review workflow that generates new eval cases and
 policy refinements</p></li>
 </ul>
@@ -793,7 +796,9 @@ while preserving throughput under contested conditions.</p>
 </ul>
 <p>The model gateway is also the upgrade discipline:</p>
 <ul>
-<li><p>shadow → canary → promote → rollback</p></li>
+<li><p>shadow <span class="math inline">→</span> canary <span
+class="math inline">→</span> promote <span class="math inline">→</span>
+rollback</p></li>
 <li><p>policy-hash and eval-pack gating</p></li>
 </ul>
 <p>Model routing is not only a performance decision; it is an assurance
@@ -1085,13 +1090,17 @@ Service</h2>
 <p>Evidence is a structured event stream supporting:</p>
 <ul>
 <li><p>attribution: who/what/under which scope/policy</p></li>
-<li><p>replay: reconstructing intent → context → decision → action →
+<li><p>replay: reconstructing intent <span class="math inline">→</span>
+context <span class="math inline">→</span> decision <span
+class="math inline">→</span> action <span class="math inline">→</span>
 outcome</p></li>
 <li><p>continuous authorization: evidence inside the system
 boundary</p></li>
 </ul>
-<h3 id="lineage-graph-data-logic-action-artifact">Lineage Graph (Data →
-Logic → Action → Artifact)</h3>
+<h3 id="lineage-graph-data-logic-action-artifact">Lineage Graph (Data
+<span class="math inline">→</span> Logic <span
+class="math inline">→</span> Action <span class="math inline">→</span>
+Artifact)</h3>
 <p>Replay is only useful if the system can answer “what changed because
 of what.” ACP therefore requires a lineage graph that ties together
 data, logic, actions, and produced artifacts.</p>
@@ -1311,7 +1320,9 @@ caveats)</p></li>
 <h1 id="control-loops-how-the-system-behaves">Control Loops (How the
 System Behaves)</h1>
 <h2 id="action-loop-intent-policy-mediated-action-evidence">Action Loop:
-Intent → Policy → Mediated Action → Evidence</h2>
+Intent <span class="math inline">→</span> Policy <span
+class="math inline">→</span> Mediated Action <span
+class="math inline">→</span> Evidence</h2>
 <figure>
 <img src="papers/acp-ra/diagrams/acp_action_flow.png" />
 <figcaption>Action Loop</figcaption>
@@ -1335,7 +1346,9 @@ evidence ledger.</p></li>
 </ol>
 <h2
 id="governance-loop-artifacts-tests-promotion-enforcement">Governance
-Loop: Artifacts → Tests → Promotion → Enforcement</h2>
+Loop: Artifacts <span class="math inline">→</span> Tests <span
+class="math inline">→</span> Promotion <span
+class="math inline">→</span> Enforcement</h2>
 <figure>
 <img
 src="papers/acp-ra/diagrams/acp_governance_lifecycle_compact.png" />
@@ -1365,9 +1378,10 @@ shared memory.</p>
 (Policy-Selectable)</h2>
 <p>Common patterns are supported as declared coordination policies:</p>
 <ul>
-<li><p><strong>Hierarchical (orchestrator → workers):</strong>
-orchestrator decomposes tasks, workers execute narrow scopes. Strong
-accountability and containment.</p></li>
+<li><p><strong>Hierarchical (orchestrator <span
+class="math inline">→</span> workers):</strong> orchestrator decomposes
+tasks, workers execute narrow scopes. Strong accountability and
+containment.</p></li>
 <li><p><strong>Peer-to-peer:</strong> distributed planning with explicit
 arbitration and shared-state controls.</p></li>
 <li><p><strong>Market/auction scheduling:</strong> useful when missions
@@ -1641,8 +1655,9 @@ concurrent work units</p></li>
 network)</p></li>
 <li><p>red-team simulations targeting policy, ledger, registry, and
 revocation channels</p></li>
-<li><p>replay drills: reconstruct ensemble failures using
-macro→meso→micro evidence tiers</p></li>
+<li><p>replay drills: reconstruct ensemble failures using macro<span
+class="math inline">→</span>meso<span class="math inline">→</span>micro
+evidence tiers</p></li>
 </ul>
 <div class="center">
 <hr />
@@ -1690,8 +1705,9 @@ Success Criteria, and a Transition Roadmap</h1>
 <li><p>time from scope/policy PR to deployable signed bundle</p></li>
 <li><p>work-unit completion time distributions by tier and mission
 thread</p></li>
-<li><p>model/tool update cycle time (shadow → canary → promote →
-rollback)</p></li>
+<li><p>model/tool update cycle time (shadow <span
+class="math inline">→</span> canary <span class="math inline">→</span>
+promote <span class="math inline">→</span> rollback)</p></li>
 <li><p>mean time to quarantine/revoke (MTTQ / MTTR-Q)</p></li>
 </ul>
 <p><strong>Safety and governance</strong></p>
@@ -1706,7 +1722,9 @@ fidelity)</p></li>
 <p><strong>Swarm reliability</strong></p>
 <ul>
 <li><p>deadlock/livelock frequency</p></li>
-<li><p>cascade containment time (detect → throttle → isolate)</p></li>
+<li><p>cascade containment time (detect <span
+class="math inline">→</span> throttle <span class="math inline">→</span>
+isolate)</p></li>
 <li><p>ensemble success rate on golden scenarios</p></li>
 </ul>
 <p><strong>Tool supply chain</strong></p>
@@ -1720,7 +1738,8 @@ signatures/attestation</p></li>
 <ul>
 <li><p>red-team pass rate by attack class</p></li>
 <li><p>drift detection sensitivity/precision</p></li>
-<li><p>anomaly response time (detect → contain)</p></li>
+<li><p>anomaly response time (detect <span class="math inline">→</span>
+contain)</p></li>
 </ul>
 <p><strong>Resources</strong></p>
 <ul>
@@ -1749,8 +1768,9 @@ survivability drills + registry hardening)</p></li>
 </ul>
 <h2
 id="transition-roadmap-copilots-governed-agents-supervised-autonomy-governed-swarms">Transition
-Roadmap (Copilots → Governed Agents → Supervised Autonomy → Governed
-Swarms)</h2>
+Roadmap (Copilots <span class="math inline">→</span> Governed Agents
+<span class="math inline">→</span> Supervised Autonomy <span
+class="math inline">→</span> Governed Swarms)</h2>
 <ol>
 <li><p><strong>Instrument first:</strong> standard evidence schema;
 onboard agents as NPEs.</p></li>
