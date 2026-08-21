@@ -1,10 +1,11 @@
 ---
-title: 'The Agentic Information Enterprise: A DoW CIO Operating Concept for Governed Workforce Creation'
-description: 'An operating concept for assigning, supervising, assuring, measuring, and scaling non-person agent capacity across the DoD Information Enterprise.'
-date: 2026-08-20
-status: draft
+title: "The Agentic Information Enterprise: A DoW CIO Operating Concept for Governed Workforce Creation"
+description: "A DoW CIO operating concept for assigning, supervising, assuring, measuring, and scaling governed non-person agent capacity across the DoD Information Enterprise."
+date: 2026-08-21T12:00:00-04:00
+status: published
+pdfPath: /papers/agentic-information-enterprise.pdf
 tags:
-  - agents
+  - agentic-ai
   - workforce
   - force-creation
   - dod-cio
@@ -12,6 +13,9 @@ tags:
   - governance
   - control-plane
   - assurance
+  - acp-ra
+  - caf-ra
+  - non-person-entities
 ---
 
 ## Executive Argument
@@ -29,6 +33,8 @@ The model rests on three constructs:
 - A **Workforce Employment Profile** defines the mission function, eligible Work Units, identity, sponsor, tools, data, supervision, reserved human decisions, resource budget, evidence, and retirement conditions for an agent.
 - An **Authority and Responsibility Graph** preserves the traceable chain from governing authority to accountable official, delegated work, agent action, evidence, and human acceptance.
 - A **Capacity Ledger** determines whether the deployment created useful throughput after supervision, assurance, rework, platform, and sustainment burdens are counted.
+
+![Agentic information enterprise operating model](/papers/agentic-information-enterprise/diagrams/aie_operating_model.svg)
 
 DoW CIO is the correct proving ground. Its responsibilities for enterprise architecture, cybersecurity, identity, records, IT investment, policy, and the digital workforce contain evidence-heavy staff work that is consequential but decomposable, reviewable, and largely reversible. Agents can trace policy impacts, evaluate architecture conformance, prepare continuous-monitoring and authorization evidence, analyze portfolio data, and surface exceptions. Humans retain issuance, waiver, certification, authorization, investment, and risk decisions.
 
@@ -93,6 +99,8 @@ The mission map identifies eligible demand. The workforce operating model conver
 
 The operating model does not create a parallel technical architecture. It binds mission employment to ACP and CAF through three institutional artifacts and a supporting registry.
 
+![Agent workforce operating artifacts](/papers/agentic-information-enterprise/diagrams/aie_workforce_artifacts.svg)
+
 ### 4.1 Workforce Employment Profile
 
 The **Workforce Employment Profile (WEP)** is the authoritative management description of employment, not an independent source of authority. It defines work, ownership, technical boundaries, acceptance, economics, and lifecycle.
@@ -112,16 +120,7 @@ The WEP references rather than reproduces technical artifacts: ACP enforces the 
 
 The **Authority and Responsibility Graph (ARG)** makes the source, delegation, execution, and acceptance of agent work queryable. It prevents authority from disappearing into a prompt, service account, orchestration script, or vendor configuration.
 
-```mermaid
-flowchart TD
- A["Authority source"] --> B["Accountable official"]
- B --> C["Approved WEP"]
- C --> D["Delegable work class"]
- D --> E["Assigned Work Unit"]
- E --> F["Agent NPE and ACP-mediated action"]
- F --> G["Evidence and outcome"]
- G --> H["Human acceptance or reserved decision"]
-```
+![Authority and responsibility graph](/papers/agentic-information-enterprise/diagrams/aie_authority_graph.svg)
 
 For every production Work Unit, the ARG should answer:
 
@@ -157,6 +156,8 @@ The CONOPS follows work from demand through acceptance and retirement. It does n
 5. **Measure and review change.** Record mission, burden, cost, control, workforce, and capacity outcomes. Changes to mission, work, models, tools, data, effects, supervision, authority, or permissions enter applicable change control.
 6. **Suspend or retire.** Stop tasking, revoke action credentials, freeze or transfer open work, preserve required evidence, complete records and closeout obligations, and archive the employment decision.
 
+![Agent employment lifecycle](/papers/agentic-information-enterprise/diagrams/aie_lifecycle.svg)
+
 ### 5.2 Operating States
 
 The registry separates lifecycle status from runtime operating state. Fielding gates authorize lifecycle transitions; operating conditions trigger normal, degraded, suspended, or incident-contained states.
@@ -170,19 +171,7 @@ The registry separates lifecycle status from runtime operating state. Fielding g
 
 An exception pauses and routes the affected action without necessarily changing deployment state. Every state transition records its trigger, authority, affected work, changed access, preserved evidence, and restoration conditions. Without a safe degraded profile, degradation becomes suspension; queued actions do not replay automatically.
 
-```mermaid
-stateDiagram-v2
- [*] --> Normal
- Normal --> Degraded: Dependency loss
- Degraded --> Normal: Controls restored
- Normal --> Suspended: Authority or ownership lapse
- Degraded --> Suspended: Minimum controls unavailable
- Normal --> Incident: Suspected compromise
- Degraded --> Incident: Unauthorized effect
- Incident --> Suspended: Containment complete
- Suspended --> Normal: Reauthorized
- Suspended --> [*]: Retired
-```
+![Agent operating states](/papers/agentic-information-enterprise/diagrams/aie_operating_states.svg)
 
 ### 5.3 Worked Mission Thread: Policy-Impact Agent
 
