@@ -17,19 +17,19 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -94,20 +94,29 @@ jobs:
             echo "PUBLIC_MEDIA_BASE_URL not set; keeping dist/audio in artifact"
           fi
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
+      - name: Deploy to gh-pages branch
+        run: |
+          set -euo pipefail
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          deploy_dir="$(mktemp -d)"
+
+          git fetch origin gh-pages --depth=1
+          git worktree add "$deploy_dir" FETCH_HEAD
+
+          rsync -a --delete --exclude .git dist/ "$deploy_dir/"
+
+          cd "$deploy_dir"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No gh-pages changes to deploy."
+            exit 0
+          fi
+
+          git commit -m "Deploy site"
+          git push origin HEAD:gh-pages
 
       - name: Notify Telegram on success/failure (optional)
         if: always()
@@ -116,7 +125,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           RESULT: ${{ job.status }}
-          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          PAGE_URL: https://www.adamboas.com/
         run: |
           set -euo pipefail
           if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
