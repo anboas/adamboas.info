@@ -465,6 +465,272 @@ export const conversationTargets = [
 	},
 ];
 
+export const financialLifecycle = [
+	{
+		stage: 'Strategy and Budget Build',
+		artifacts: ['National Defense Strategy', 'service POM builds', 'FYDP', 'President Budget request'],
+		sabreMove:
+			'Find the program office pain before it becomes a requirement. Shape language, metrics, pilots, and partner demos early.',
+		watch:
+			'Budget issue papers, POM trades, RDT&E starts, unfunded priority lists, posture statements, and service modernization themes.',
+	},
+	{
+		stage: 'Authorization',
+		artifacts: ['NDAA marks', 'committee reports', 'policy direction', 'program restrictions'],
+		sabreMove:
+			'Track what Congress authorizes, restricts, accelerates, or asks to be reported. Convert direction into capture narratives.',
+		watch:
+			'New starts, plus-ups, reporting requirements, pilots, acquisition authorities, and industrial-base language.',
+	},
+	{
+		stage: 'Appropriation',
+		artifacts: ['defense appropriations', 'explanatory statements', 'reprogramming lanes', 'color-of-money totals'],
+		sabreMove:
+			'Separate interest from obligable money. Match each opportunity to RDT&E, procurement, O&M, MILCON, or working capital.',
+		watch:
+			'Line-item plus-ups, reductions, congressional special-interest items, marks against software/data/AI lines, and execution clocks.',
+	},
+	{
+		stage: 'Allocation and Execution',
+		artifacts: ['apportionment', 'allotment', 'spend plans', 'MIPRs', 'program office execution plans'],
+		sabreMove:
+			'Find who controls the spend plan and who can release funding to a vehicle. Build task-order-ready packages.',
+		watch:
+			'Spend-plan owners, contracting office workload, MIPR recipients, expiring funds, and end-of-year unfunded requirement movement.',
+	},
+	{
+		stage: 'Acquisition Channel',
+		artifacts: [
+			'IDIQ task order',
+			'GWAC/BPA order',
+			'OTA prototype',
+			'SBIR/STTR',
+			'BAA/CSO',
+			'marketplace award',
+			'direct award',
+		],
+		sabreMove: 'Pick the path that matches urgency, maturity, competition, partner access, and compliance burden.',
+		watch:
+			'Scope fit, fair opportunity, protest risk, OTA membership, marketplace eligibility, security requirements, and evaluation path.',
+	},
+	{
+		stage: 'Obligation to Renewal',
+		artifacts: ['award', 'obligation', 'modification', 'CPARS', 'follow-on production', 'option exercise'],
+		sabreMove:
+			'Turn delivery into the next opportunity. Capture evidence, expand scope, and create repeatable offerings from successful pilots.',
+		watch:
+			'Obligation burn, ceiling remaining, option timing, performance ratings, adjacent offices, and production/follow-on authority.',
+	},
+];
+
+export const workSources = [
+	{
+		name: 'Program Vehicles and Task Orders',
+		type: 'FAR / IDIQ',
+		speed: 'medium',
+		bestFor:
+			'known services, systems engineering, software modernization, cyber, data, and sustainment where Sabre already has vehicle access',
+		whereToWatch: ['Sabre prime vehicles', 'EWAAC', 'SED/NDD', 'SAM.gov notices', 'incumbent task-order mods'],
+		sabreAction:
+			'Build task-order-ready solution packages with scope language, labor categories, transition plan, and proof artifacts.',
+		risk: 'Ceiling is not revenue. Scope and customer ownership matter more than vehicle logo.',
+	},
+	{
+		name: 'GWACs, BPAs, and IT Marketplaces',
+		type: 'GSA / NASA SEWP / agency stores',
+		speed: 'medium-fast',
+		bestFor:
+			'enterprise IT, cloud, software, cybersecurity, platforms, data products, hardware/software bundles, and commercial services',
+		whereToWatch: [
+			'GSA Alliant / Polaris / STARS / VETS',
+			'NASA SEWP',
+			'agency BPAs',
+			'eBuy-style RFQs',
+			'reseller channels',
+		],
+		sabreAction:
+			'Map which partners already hold the right spot, then package Sabre as implementation, integration, security, and mission adoption lead.',
+		risk: 'Easy to buy does not mean easy to win. Partner position and socioeconomic strategy can dominate.',
+	},
+	{
+		name: 'OTAs and Consortia',
+		type: 'prototype / production pathway',
+		speed: 'fast when sponsor is real',
+		bestFor:
+			'nontraditional tech, prototypes, mission demonstrations, microelectronics, cyber, autonomy, hypersonics, C5ISR, and rapid transition',
+		whereToWatch: ['NSTXL', 'ATI-managed consortia', 'SOSSEC', 'Space Enterprise Consortium', 'TReX', 'C5 Consortium'],
+		sabreAction:
+			'Join, partner, or become the federal integration wrapper for commercial tech that needs mission engineering, test, RMF, and transition.',
+		risk: 'Prototype awards are not automatically durable revenue. Follow-on production strategy must be designed on day one.',
+	},
+	{
+		name: 'Commercial Solution Openings and BAAs',
+		type: 'CSO / BAA / R&D',
+		speed: 'fast-to-medium',
+		bestFor:
+			'RDT&E, demonstrations, applied research, new capability areas, AI/data prototypes, and mission experiments',
+		whereToWatch: ['DIU solicitations', 'AFWERX', 'DARPA/ARPA-style BAAs', 'service labs', 'CDAO mission challenges'],
+		sabreAction:
+			'Pair a technology partner with Sabre delivery credibility, then propose a measurable mission experiment with transition owner.',
+		risk: 'Can produce impressive pilots that die without a program office, budget line, or transition vehicle.',
+	},
+	{
+		name: 'Tradewinds and AI Marketplaces',
+		type: 'CDAO / marketplace',
+		speed: 'fast discovery, variable award path',
+		bestFor: 'AI, data, analytics, model operations, governance, evaluation, and software-enabled mission tools',
+		whereToWatch: [
+			'Tradewinds Solutions Marketplace',
+			'CDAO channels',
+			'AI/data challenge calls',
+			'platform partner listings',
+		],
+		sabreAction:
+			'Use marketplace visibility to make Devin/Sabre and data/AI offers discoverable, then drive buyer-specific pilots.',
+		risk: 'Marketplace presence is lead generation, not capture. You still need buyer, funding, authority, and delivery path.',
+	},
+	{
+		name: 'SBIR/STTR and Phase III',
+		type: 'small business transition',
+		speed: 'medium',
+		bestFor:
+			'commercial innovation, non-dilutive R&D, Phase III transition, and teaming with small firms that hold technical rights',
+		whereToWatch: [
+			'DoD SBIR/STTR',
+			'AFWERX open topics',
+			'Navy/Army topics',
+			'Phase III sole-source paths',
+			'portfolio companies',
+		],
+		sabreAction:
+			'Become transition/integration partner for small firms: mission fit, systems engineering, cyber, deployment, and sustainment.',
+		risk: 'Small business owns the core path. Sabre has to add transition power without smothering the innovator.',
+	},
+	{
+		name: 'Strategic Capital and Industrial Base Finance',
+		type: 'loans / fund leverage / supply-chain finance',
+		speed: 'slow strategic',
+		bestFor:
+			'manufacturing scale, critical technology supply chains, munitions, microelectronics, energy, space, autonomy, and industrial capacity',
+		whereToWatch: [
+			'Office of Strategic Capital',
+			'Title III / IBAS',
+			'critical technology funds',
+			'loan programs',
+			'partner cap tables',
+		],
+		sabreAction:
+			'Track where capital-backed companies need federal demand, integration, certification, test, and program access.',
+		risk: 'Not a contract substitute. Treat as partner intelligence and industrial-base shaping.',
+	},
+	{
+		name: 'Subcontracts and Prime Ecosystems',
+		type: 'partner channel',
+		speed: 'variable',
+		bestFor: 'large programs where access, clearance, incumbency, or contract position is controlled by a major prime',
+		whereToWatch: [
+			'prime supplier portals',
+			'teammate pipelines',
+			'industry days',
+			'mentor-protege channels',
+			'capture partner calls',
+		],
+		sabreAction:
+			'Be the differentiated technical growth partner: agentic software, digital engineering, data, cyber, and mission integration.',
+		risk: 'Prime-led work can trap Sabre in low-margin labor unless the technical wedge and customer visibility are explicit.',
+	},
+];
+
+export const opportunityAssessment = {
+	gates: [
+		{
+			name: 'Mission Pain',
+			question: 'Is there a named mission, program, or enterprise workflow with measurable friction?',
+			evidence: ['cycle time', 'readiness gap', 'test delay', 'ATO delay', 'data-access problem', 'sustainment burden'],
+		},
+		{
+			name: 'Money Path',
+			question: 'Which appropriation, budget line, spend plan, or MIPR can actually pay for it?',
+			evidence: ['R-1/P-1/O-1 line', 'FYDP signal', 'plus-up', 'expiring O&M', 'program-office spend owner'],
+		},
+		{
+			name: 'Authority and Channel',
+			question:
+				'What lets the buyer move: task order, GWAC, OTA, CSO, BAA, SBIR Phase III, marketplace, or subcontract?',
+			evidence: [
+				'vehicle scope',
+				'ordering office',
+				'consortium sponsor',
+				'marketplace listing',
+				'contracting strategy',
+			],
+		},
+		{
+			name: 'Sabre Right To Win',
+			question: 'Why Sabre instead of the incumbent, prime, boutique, or product vendor?',
+			evidence: [
+				'past performance',
+				'customer access',
+				'mission engineering',
+				'clearances',
+				'delivery team',
+				'partner leverage',
+			],
+		},
+		{
+			name: 'Partner Leverage',
+			question: 'Which company makes the offer sharper or faster, and what can Sabre do that partner cannot?',
+			evidence: [
+				'product wedge',
+				'reseller path',
+				'exclusive angle',
+				'security wrapper',
+				'integration burden',
+				'support model',
+			],
+		},
+		{
+			name: 'Conversion Path',
+			question: 'Can a pilot become durable work within 6-18 months?',
+			evidence: [
+				'production authority',
+				'option/mod path',
+				'follow-on task order',
+				'budget owner',
+				'CPARS path',
+				'repeatable offer',
+			],
+		},
+	],
+	scoring: [
+		{ factor: 'Buyer pain clarity', weight: 20 },
+		{ factor: 'Funding traceability', weight: 20 },
+		{ factor: 'Contract channel readiness', weight: 15 },
+		{ factor: 'Sabre differentiator', weight: 15 },
+		{ factor: 'Partner leverage', weight: 10 },
+		{ factor: 'Speed to pilot', weight: 10 },
+		{ factor: 'Follow-on scale', weight: 10 },
+	],
+	decisionBands: [
+		{
+			range: '85-100',
+			label: 'Pursue now',
+			action: 'assign owner, schedule customer call, build capture artifact this week',
+		},
+		{
+			range: '70-84',
+			label: 'Shape hard',
+			action: 'resolve missing buyer, funding, or channel evidence before committing resources',
+		},
+		{
+			range: '50-69',
+			label: 'Watch / partner',
+			action: 'track source, build relationship, wait for clearer money or access',
+		},
+		{ range: '<50', label: 'Do not chase', action: 'archive unless leadership has a strategic reason to invest' },
+	],
+};
+
 export const sources = [
 	{
 		label: 'DoW FY2027 budget release',
@@ -518,4 +784,19 @@ export const sources = [
 	},
 	{ label: 'Cognition / Devin', url: 'https://cognition.com/' },
 	{ label: 'Introducing Devin', url: 'https://cognition.com/blog/introducing-devin' },
+	{ label: 'SAM.gov contract opportunities', url: 'https://sam.gov/content/opportunities' },
+	{ label: 'DIU commercial / CSO path', url: 'https://www.diu.mil/work-with-us/companies' },
+	{ label: 'Tradewinds Solutions Marketplace', url: 'https://www.tradewindsai.com/solutions-marketplace' },
+	{ label: 'NSTXL OTA opportunities', url: 'https://nstxl.org/nstxl-opportunities/' },
+	{ label: 'Advanced Technology International', url: 'https://www.ati.org/' },
+	{ label: 'SOSSEC consortium management', url: 'https://sossecinc.com/' },
+	{
+		label: 'GSA Governmentwide Acquisition Contracts',
+		url: 'https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/gwacs',
+	},
+	{ label: 'NASA SEWP', url: 'https://www.sewp.nasa.gov/' },
+	{ label: 'FAR Part 16 contract types / IDIQ orders', url: 'https://www.acquisition.gov/far/part-16' },
+	{ label: 'FAR Part 35 R&D contracting', url: 'https://www.acquisition.gov/far/part-35' },
+	{ label: 'FAR Part 12 commercial products and services', url: 'https://www.acquisition.gov/far/part-12' },
+	{ label: 'Office of Strategic Capital', url: 'https://www.cto.mil/osc/' },
 ];

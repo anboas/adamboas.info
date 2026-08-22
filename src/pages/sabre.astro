@@ -4,11 +4,14 @@ import { withBase } from '../utils/withBase';
 import {
 	budgetRollup,
 	conversationTargets,
+	financialLifecycle,
 	firstThirtyDays,
 	growthPlays,
+	opportunityAssessment,
 	sabreUpdatedAt,
 	serviceLanes,
 	sources,
+	workSources,
 } from '../data/sabre';
 
 const title = 'Sabre Growth Intelligence | Adam Boas';
@@ -16,6 +19,7 @@ const description =
 	'A source-backed growth command center for Sabre Systems: service strategy, Fourth Estate targets, partner ecosystem, budget flow, and first-30-days operating plan.';
 const maxBook = Math.max(...budgetRollup.books.map((book) => book.valueB));
 const maxOrg = Math.max(...budgetRollup.orgs.map((org) => org.valueB));
+const maxScoreWeight = Math.max(...opportunityAssessment.scoring.map((factor) => factor.weight));
 const heatmapMax = Math.max(
 	...budgetRollup.heatmap.flatMap((row) => [row.oAndM, row.procurement, row.rdte, row.milpers, row.milcon]),
 );
@@ -59,6 +63,9 @@ const heatKeys = [
 	<nav class="sabre-nav" aria-label="Sabre page sections">
 		<a href="#thesis">Thesis</a>
 		<a href="#budget">Budget Flow</a>
+		<a href="#finance">Financial Layers</a>
+		<a href="#work-sources">Work Sources</a>
+		<a href="#assessment">Opportunity Assessment</a>
 		<a href="#services">Services</a>
 		<a href="#plays">Growth Plays</a>
 		<a href="#network">Who To Talk To</a>
@@ -82,11 +89,13 @@ const heatKeys = [
 			</div>
 			<div>
 				<strong>Avoid</strong><span
-					>Being boxed into NAVAIR, generic AI pitches, or unfunded internal strategy work.</span>
+					>Being boxed into NAVAIR, generic AI pitches, or unfunded internal strategy work.</span
+				>
 			</div>
 			<div>
 				<strong>Measure</strong><span
-					>Task-order activation, partner leverage, first pilot, customer meetings, and funded pipeline.</span>
+					>Task-order activation, partner leverage, first pilot, customer meetings, and funded pipeline.</span
+				>
 			</div>
 			<div><strong>Lead With</strong><span>Mission systems + software/data/AI/cyber + acquisition realism.</span></div>
 		</div>
@@ -200,6 +209,130 @@ const heatKeys = [
 					</article>
 				))
 			}
+		</div>
+	</section>
+
+	<section id="finance" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Financial stack</p>
+				<h2>Follow the money until it becomes an obligable action</h2>
+			</div>
+			<p>
+				The growth question is not whether a priority exists. The question is whether priority, authority, color of
+				money, acquisition channel, and buyer ownership line up.
+			</p>
+		</div>
+		<div class="finance-chain" aria-label="Financial lifecycle from budget strategy to renewal">
+			{
+				financialLifecycle.map((stage, index) => (
+					<article>
+						<div class="chain-index">{String(index + 1).padStart(2, '0')}</div>
+						<h3>{stage.stage}</h3>
+						<div class="chip-cloud">
+							{stage.artifacts.map((artifact) => (
+								<span>{artifact}</span>
+							))}
+						</div>
+						<div class="first-action">{stage.sabreMove}</div>
+						<p>{stage.watch}</p>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="work-sources" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Sources of work</p>
+				<h2>Where funded work appears before it looks like a normal RFP</h2>
+			</div>
+			<p>
+				Do not watch SAM.gov alone. Growth comes from combining formal notices, vehicle access, OT consortia,
+				marketplaces, labs, product partners, and prime ecosystems.
+			</p>
+		</div>
+		<div class="source-grid">
+			{
+				workSources.map((source) => (
+					<article class="source-card">
+						<div class="source-title">
+							<div>
+								<p>{source.type}</p>
+								<h3>{source.name}</h3>
+							</div>
+							<span>{source.speed}</span>
+						</div>
+						<h4>Best for</h4>
+						<p>{source.bestFor}</p>
+						<h4>Watch</h4>
+						<div class="chip-cloud">
+							{source.whereToWatch.map((item) => (
+								<span>{item}</span>
+							))}
+						</div>
+						<div class="first-action">{source.sabreAction}</div>
+						<div class="risk-note">{source.risk}</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="assessment" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Pursuit discipline</p>
+				<h2>Opportunity assessment model</h2>
+			</div>
+			<p>
+				Every promising signal should be scored against mission, money, authority, Sabre fit, partner leverage, and
+				conversion path.
+			</p>
+		</div>
+		<div class="assessment-layout">
+			<div class="gate-grid">
+				{
+					opportunityAssessment.gates.map((gate, index) => (
+						<article>
+							<div class="chain-index">{String(index + 1).padStart(2, '0')}</div>
+							<h3>{gate.name}</h3>
+							<p>{gate.question}</p>
+							<div class="chip-cloud muted">
+								{gate.evidence.map((item) => (
+									<span>{item}</span>
+								))}
+							</div>
+						</article>
+					))
+				}
+			</div>
+			<div class="score-panel">
+				<h3>Weighted Score</h3>
+				{
+					opportunityAssessment.scoring.map((factor) => (
+						<div class="score-row">
+							<span>{factor.factor}</span>
+							<div>
+								<i style={`width:${(factor.weight / maxScoreWeight) * 100}%`} />
+							</div>
+							<strong>{factor.weight}</strong>
+						</div>
+					))
+				}
+				<div class="decision-bands">
+					{
+						opportunityAssessment.decisionBands.map((band) => (
+							<div>
+								<strong>{band.range}</strong>
+								<span>{band.label}</span>
+								<p>{band.action}</p>
+							</div>
+						))
+					}
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -418,6 +551,10 @@ const heatKeys = [
 	.budget-card,
 	.heatmap-card,
 	.line-grid article,
+	.finance-chain article,
+	.source-card,
+	.gate-grid article,
+	.score-panel,
 	.service-card,
 	.play-card,
 	.network-map article,
@@ -687,6 +824,9 @@ const heatKeys = [
 	}
 
 	.line-grid,
+	.finance-chain,
+	.source-grid,
+	.gate-grid,
 	.service-grid,
 	.play-grid,
 	.sources-grid {
@@ -695,6 +835,10 @@ const heatKeys = [
 	}
 
 	.line-grid article,
+	.finance-chain article,
+	.source-card,
+	.gate-grid article,
+	.score-panel,
 	.service-card,
 	.play-card,
 	.network-map article,
@@ -704,6 +848,8 @@ const heatKeys = [
 	}
 
 	.line-grid p,
+	.source-title p,
+	.chain-index,
 	.service-title p,
 	.play-index,
 	.mini-label,
@@ -729,6 +875,149 @@ const heatKeys = [
 		color: rgb(203, 213, 225);
 		font-size: 0.78rem;
 		line-height: 1.5;
+	}
+
+	.finance-chain article,
+	.source-card,
+	.gate-grid article,
+	.score-panel {
+		position: relative;
+	}
+
+	.finance-chain article::before {
+		content: '';
+		position: absolute;
+		top: 0.9rem;
+		right: 0.9rem;
+		width: 0.55rem;
+		height: 0.55rem;
+		border: 1px solid rgba(45, 212, 191, 0.8);
+		background: rgb(2, 6, 23);
+	}
+
+	.finance-chain h3,
+	.source-card h3,
+	.gate-grid h3,
+	.score-panel h3 {
+		margin-top: 0.35rem;
+		color: rgb(248, 250, 252);
+		font-size: 0.98rem;
+		font-weight: 800;
+		letter-spacing: 0;
+	}
+
+	.finance-chain p,
+	.source-card p,
+	.gate-grid p {
+		margin-top: 0.65rem;
+		color: rgb(203, 213, 225);
+		font-size: 0.78rem;
+		line-height: 1.55;
+	}
+
+	.source-title {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 0.75rem;
+	}
+
+	.source-title > span {
+		border: 1px solid rgba(45, 212, 191, 0.55);
+		padding: 0.25rem 0.45rem;
+		color: rgb(204, 251, 241);
+		font-size: 0.66rem;
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	.source-card h4 {
+		margin-top: 0.85rem;
+		color: rgb(248, 250, 252);
+		font-size: 0.72rem;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.risk-note {
+		margin-top: 0.65rem;
+		border: 1px solid rgba(148, 163, 184, 0.22);
+		padding: 0.55rem;
+		background: rgba(2, 6, 23, 0.7);
+		color: rgb(148, 163, 184);
+		font-size: 0.72rem;
+		line-height: 1.45;
+	}
+
+	.assessment-layout {
+		display: grid;
+		gap: 0.75rem;
+	}
+
+	.score-row {
+		display: grid;
+		grid-template-columns: minmax(8rem, 1fr) minmax(0, 1fr) 2rem;
+		align-items: center;
+		gap: 0.55rem;
+		border-top: 1px solid rgba(51, 65, 85, 0.7);
+		padding: 0.55rem 0;
+		font-size: 0.72rem;
+	}
+
+	.score-row span {
+		color: rgb(226, 232, 240);
+	}
+
+	.score-row div {
+		height: 0.5rem;
+		background: rgb(30, 41, 59);
+	}
+
+	.score-row i {
+		display: block;
+		height: 100%;
+		background: rgb(212, 165, 116);
+	}
+
+	.score-row strong {
+		color: rgb(212, 165, 116);
+		text-align: right;
+	}
+
+	.decision-bands {
+		display: grid;
+		gap: 0.45rem;
+		margin-top: 0.9rem;
+	}
+
+	.decision-bands div {
+		border: 1px solid rgba(51, 65, 85, 0.8);
+		padding: 0.65rem;
+		background: rgb(2, 6, 23);
+	}
+
+	.decision-bands strong,
+	.decision-bands span {
+		display: inline-block;
+	}
+
+	.decision-bands strong {
+		color: rgb(45, 212, 191);
+		font-size: 0.72rem;
+		min-width: 3.75rem;
+	}
+
+	.decision-bands span {
+		color: rgb(248, 250, 252);
+		font-size: 0.78rem;
+		font-weight: 800;
+	}
+
+	.decision-bands p {
+		margin-top: 0.35rem;
+		color: rgb(148, 163, 184);
+		font-size: 0.72rem;
+		line-height: 1.4;
 	}
 
 	.service-title {
@@ -884,9 +1173,19 @@ const heatKeys = [
 
 		.thesis-grid,
 		.line-grid,
+		.source-grid,
+		.gate-grid,
 		.play-grid,
 		.sources-grid {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.finance-chain {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.assessment-layout {
+			grid-template-columns: minmax(0, 1.35fr) minmax(20rem, 0.65fr);
 		}
 
 		.budget-layout {
@@ -912,6 +1211,10 @@ const heatKeys = [
 	}
 
 	@media (min-width: 1180px) {
+		.source-grid {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+
 		.play-grid {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
@@ -924,7 +1227,8 @@ const heatKeys = [
 	@media (max-width: 640px) {
 		.hero-metrics,
 		.bar-row,
-		.org-row {
+		.org-row,
+		.score-row {
 			grid-template-columns: 1fr;
 		}
 
