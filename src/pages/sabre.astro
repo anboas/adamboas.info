@@ -1,0 +1,939 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { withBase } from '../utils/withBase';
+import {
+	budgetRollup,
+	conversationTargets,
+	firstThirtyDays,
+	growthPlays,
+	sabreUpdatedAt,
+	serviceLanes,
+	sources,
+} from '../data/sabre';
+
+const title = 'Sabre Growth Intelligence | Adam Boas';
+const description =
+	'A source-backed growth command center for Sabre Systems: service strategy, Fourth Estate targets, partner ecosystem, budget flow, and first-30-days operating plan.';
+const maxBook = Math.max(...budgetRollup.books.map((book) => book.valueB));
+const maxOrg = Math.max(...budgetRollup.orgs.map((org) => org.valueB));
+const heatmapMax = Math.max(
+	...budgetRollup.heatmap.flatMap((row) => [row.oAndM, row.procurement, row.rdte, row.milpers, row.milcon]),
+);
+const heatKeys = [
+	{ key: 'oAndM', label: 'O&M' },
+	{ key: 'procurement', label: 'Procurement' },
+	{ key: 'rdte', label: 'RDT&E' },
+	{ key: 'milpers', label: 'MILPERS' },
+	{ key: 'milcon', label: 'MILCON' },
+] as const;
+---
+
+<SiteLayout title={title} description={description}>
+	<a id="page-top" class="block" aria-hidden="true"></a>
+
+	<section class="sabre-hero">
+		<div>
+			<p class="sabre-kicker">Sabre Systems growth command center</p>
+			<h1>All-service and Fourth Estate growth map</h1>
+			<p class="sabre-lede">
+				A live intelligence surface for turning Sabre's mission-systems credibility into repeatable growth across Air
+				Force, Space Force, Army, Navy, Marine Corps, and Defense-Wide buyers.
+			</p>
+		</div>
+		<div class="hero-metrics" aria-label="FY2027 budget signals">
+			<div>
+				<span>${budgetRollup.totalFy2027B.toLocaleString()}B</span>
+				<p>FY2027 extracted major-book signal</p>
+			</div>
+			<div>
+				<span>{budgetRollup.books.length}</span>
+				<p>appropriation views parsed</p>
+			</div>
+			<div>
+				<span>{serviceLanes.length}</span>
+				<p>growth theaters</p>
+			</div>
+		</div>
+	</section>
+
+	<nav class="sabre-nav" aria-label="Sabre page sections">
+		<a href="#thesis">Thesis</a>
+		<a href="#budget">Budget Flow</a>
+		<a href="#services">Services</a>
+		<a href="#plays">Growth Plays</a>
+		<a href="#network">Who To Talk To</a>
+		<a href="#first30">First 30 Days</a>
+		<a href="#sources">Sources</a>
+	</nav>
+
+	<section id="thesis" class="sabre-section two-col">
+		<div>
+			<p class="section-eyebrow">Operating thesis</p>
+			<h2>Sabre should become the integrator that converts mission friction into funded modernization.</h2>
+			<p>
+				The growth role should sit between business development and delivery: find real pain, map it to budget and
+				contract paths, shape the technical offer, bring the right partner, and keep the solution credible enough to
+				deliver.
+			</p>
+		</div>
+		<div class="thesis-grid">
+			<div>
+				<strong>Do</strong><span>Use NAVAIR as proof, Air Force as wedge, Fourth Estate as enterprise scale.</span>
+			</div>
+			<div>
+				<strong>Avoid</strong><span
+					>Being boxed into NAVAIR, generic AI pitches, or unfunded internal strategy work.</span>
+			</div>
+			<div>
+				<strong>Measure</strong><span
+					>Task-order activation, partner leverage, first pilot, customer meetings, and funded pipeline.</span>
+			</div>
+			<div><strong>Lead With</strong><span>Mission systems + software/data/AI/cyber + acquisition realism.</span></div>
+		</div>
+	</section>
+
+	<section id="budget" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Financial terrain</p>
+				<h2>FY2027 budget flow: from appropriation to growth lane</h2>
+			</div>
+			<p>Updated {sabreUpdatedAt}. Extracted from official FY2027 O-1, P-1, R-1, M-1, RF-1, and C-1 display files.</p>
+		</div>
+
+		<div class="budget-flow" aria-label="Budget flow diagram">
+			<div class="flow-column">
+				<h3>Presidential Budget</h3>
+				<div class="flow-node primary">$1.5T DoW FY2027 request</div>
+				<div class="flow-note">Authorization and appropriation shape what becomes obligable dollars.</div>
+			</div>
+			<div class="flow-column">
+				<h3>Appropriation Books</h3>
+				{
+					budgetRollup.books.map((book) => (
+						<div class="flow-bar">
+							<span>{book.code}</span>
+							<div style={`width:${Math.max(8, (book.valueB / maxBook) * 100)}%`} />
+							<strong>${book.valueB.toFixed(1)}B</strong>
+						</div>
+					))
+				}
+			</div>
+			<div class="flow-column">
+				<h3>Growth Translation</h3>
+				{growthPlays.slice(0, 6).map((play) => <div class="flow-node">{play.short}</div>)}
+			</div>
+		</div>
+
+		<div class="budget-layout">
+			<div class="budget-card">
+				<h3>Appropriation Weight</h3>
+				<div class="bar-stack">
+					{
+						budgetRollup.books.map((book) => (
+							<div class="bar-row">
+								<div class="bar-label">
+									<span>{book.code}</span>
+									<small>{book.name}</small>
+								</div>
+								<div class="bar-track">
+									<div style={`width:${(book.valueB / maxBook) * 100}%`} />
+								</div>
+								<strong>${book.valueB.toFixed(1)}B</strong>
+								<p>{book.signal}</p>
+							</div>
+						))
+					}
+				</div>
+			</div>
+			<div class="budget-card">
+				<h3>Buyer Mass</h3>
+				<div class="org-list">
+					{
+						budgetRollup.orgs.map((org) => (
+							<div class="org-row">
+								<span>{org.name}</span>
+								<div>
+									<i style={`width:${(org.valueB / maxOrg) * 100}%`} />
+								</div>
+								<strong>${org.valueB.toFixed(1)}B</strong>
+							</div>
+						))
+					}
+				</div>
+			</div>
+		</div>
+
+		<div class="heatmap-card">
+			<h3>Service x Appropriation Heatmap</h3>
+			<div class="heatmap">
+				<div class="heat-head"></div>
+				{heatKeys.map((key) => <div class="heat-head">{key.label}</div>)}
+				{
+					budgetRollup.heatmap.map((row) => (
+						<>
+							<div class="heat-lane">{row.lane}</div>
+							{heatKeys.map((key) => {
+								const value = row[key.key];
+								const level = Math.max(0.08, value / heatmapMax);
+								return (
+									<div class="heat-cell" style={`--level:${level}`}>
+										<span>${value.toFixed(1)}B</span>
+									</div>
+								);
+							})}
+						</>
+					))
+				}
+			</div>
+		</div>
+
+		<div class="line-grid">
+			{
+				budgetRollup.topLines.map((line) => (
+					<article>
+						<p>{line.book}</p>
+						<h3>{line.buyer}</h3>
+						<strong>${line.valueB.toFixed(1)}B</strong>
+						<span>{line.line}</span>
+						<small>{line.growth}</small>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="services" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Service strategy</p>
+				<h2>What to focus on by theater</h2>
+			</div>
+			<p>Each lane ties focus, buyers, companies, and first-month action into one growth posture.</p>
+		</div>
+		<div class="service-grid">
+			{
+				serviceLanes.map((lane) => (
+					<article class="service-card">
+						<div class="service-title">
+							<div>
+								<p>{lane.tag}</p>
+								<h3>{lane.name}</h3>
+							</div>
+							<span>{lane.opportunities.length} plays</span>
+						</div>
+						<div class="budget-signal">{lane.budgetSignal}</div>
+						<h4>Focus</h4>
+						<ul>
+							{lane.focus.map((item) => (
+								<li>{item}</li>
+							))}
+						</ul>
+						<h4>Who to talk to</h4>
+						<div class="chip-cloud">
+							{lane.who.map((item) => (
+								<span>{item}</span>
+							))}
+						</div>
+						<h4>Companies to engage</h4>
+						<div class="chip-cloud muted">
+							{lane.companies.map((item) => (
+								<span>{item}</span>
+							))}
+						</div>
+						<h4>Opportunity queue</h4>
+						<ol>
+							{lane.opportunities.map((item) => (
+								<li>{item}</li>
+							))}
+						</ol>
+						<div class="first-action">{lane.first30}</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="plays" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Productized growth</p>
+				<h2>Six offers to make Sabre easier to buy</h2>
+			</div>
+			<p>Stop selling broad capability. Sell named, measurable modernization plays.</p>
+		</div>
+		<div class="play-grid">
+			{
+				growthPlays.map((play, index) => (
+					<article class="play-card">
+						<div class="play-index">{String(index + 1).padStart(2, '0')}</div>
+						<h3>{play.name}</h3>
+						<p>{play.fit}</p>
+						<div class="mini-label">Likely buyers</div>
+						<div class="chip-cloud">
+							{play.buyers.map((buyer) => (
+								<span>{buyer}</span>
+							))}
+						</div>
+						<div class="proof">
+							<strong>First proof:</strong> {play.firstProof}
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="network" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Relationship graph</p>
+				<h2>Who to talk to and why</h2>
+			</div>
+			<p>Every conversation should produce account intelligence, funding insight, partner leverage, or a pilot path.</p>
+		</div>
+		<div class="network-map" aria-label="Conversation target network">
+			<div class="center-node">Growth Architecture</div>
+			{
+				conversationTargets.map((target) => (
+					<article>
+						<h3>{target.group}</h3>
+						<p>{target.ask}</p>
+						<div class="chip-cloud">
+							{target.people.map((person) => (
+								<span>{person}</span>
+							))}
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="first30" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Execution</p>
+				<h2>First 30 days at Sabre</h2>
+			</div>
+			<p>The outcome is not a deck. The outcome is a qualified growth machine with three lighthouse pursuits.</p>
+		</div>
+		<div class="timeline">
+			{
+				firstThirtyDays.map((phase) => (
+					<article>
+						<span>{phase.window}</span>
+						<h3>{phase.name}</h3>
+						<ul>
+							{phase.actions.map((action) => (
+								<li>{action}</li>
+							))}
+						</ul>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="sources" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Source trail</p>
+				<h2>Primary source anchors</h2>
+			</div>
+			<p>Budget numbers on this page are derived from official FY2027 display files and rounded to billions.</p>
+		</div>
+		<div class="sources-grid">
+			{
+				sources.map((source) => (
+					<a href={source.url} target="_blank" rel="noreferrer">
+						<span>{source.label}</span>
+						<small>{source.url.replace('https://', '')}</small>
+					</a>
+				))
+			}
+		</div>
+		<div class="mt-5">
+			<a class="ui-link-btn" href={withBase('/')}>&lt;- Back to Adam Boas</a>
+		</div>
+	</section>
+</SiteLayout>
+
+<style>
+	.sabre-hero,
+	.sabre-section,
+	.sabre-nav {
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		background: rgb(2, 6, 23);
+	}
+
+	.sabre-hero {
+		display: grid;
+		gap: 1.25rem;
+		padding: 1.5rem;
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.sabre-kicker,
+	.section-eyebrow {
+		color: rgb(45, 212, 191);
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		line-height: 1.2;
+		text-transform: uppercase;
+	}
+
+	.sabre-hero h1,
+	.sabre-section h2 {
+		margin-top: 0.45rem;
+		color: rgb(248, 250, 252);
+		font-size: clamp(1.8rem, 3vw, 3.8rem);
+		font-weight: 800;
+		letter-spacing: 0;
+		line-height: 1.02;
+	}
+
+	.sabre-lede,
+	.sabre-section p,
+	.section-heading > p {
+		color: rgb(203, 213, 225);
+		line-height: 1.65;
+	}
+
+	.sabre-lede {
+		margin-top: 1rem;
+		max-width: 62rem;
+		font-size: 1rem;
+	}
+
+	.hero-metrics {
+		display: grid;
+		gap: 0.65rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.hero-metrics div,
+	.thesis-grid div,
+	.budget-card,
+	.heatmap-card,
+	.line-grid article,
+	.service-card,
+	.play-card,
+	.network-map article,
+	.timeline article,
+	.sources-grid a {
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		background: rgb(15, 23, 42);
+	}
+
+	.hero-metrics div {
+		min-height: 7rem;
+		padding: 0.85rem;
+	}
+
+	.hero-metrics span {
+		display: block;
+		color: rgb(212, 165, 116);
+		font-size: 1.55rem;
+		font-weight: 800;
+		line-height: 1;
+	}
+
+	.hero-metrics p {
+		margin-top: 0.65rem;
+		color: rgb(148, 163, 184);
+		font-size: 0.72rem;
+		line-height: 1.35;
+	}
+
+	.sabre-nav {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+		margin-top: 0.75rem;
+		padding: 0.65rem;
+	}
+
+	.sabre-nav a {
+		border: 1px solid rgba(71, 85, 105, 0.8);
+		padding: 0.42rem 0.6rem;
+		color: rgb(226, 232, 240);
+		font-size: 0.72rem;
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.sabre-section {
+		margin-top: 0.75rem;
+		padding: 1rem;
+	}
+
+	.two-col,
+	.budget-layout {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.thesis-grid {
+		display: grid;
+		gap: 0.65rem;
+	}
+
+	.thesis-grid div {
+		padding: 0.85rem;
+	}
+
+	.thesis-grid strong {
+		display: block;
+		color: rgb(212, 165, 116);
+		font-size: 0.72rem;
+		text-transform: uppercase;
+	}
+
+	.thesis-grid span {
+		display: block;
+		margin-top: 0.4rem;
+		color: rgb(226, 232, 240);
+		font-size: 0.84rem;
+		line-height: 1.5;
+	}
+
+	.section-heading {
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+		margin-bottom: 1rem;
+	}
+
+	.section-heading h2 {
+		font-size: clamp(1.35rem, 2vw, 2.25rem);
+	}
+
+	.section-heading > p {
+		max-width: 36rem;
+		font-size: 0.82rem;
+	}
+
+	.budget-flow {
+		display: grid;
+		gap: 0.75rem;
+		margin-bottom: 1rem;
+	}
+
+	.flow-column {
+		border: 1px solid rgba(51, 65, 85, 0.9);
+		padding: 0.8rem;
+		background: rgb(8, 13, 27);
+	}
+
+	.flow-column h3,
+	.budget-card h3,
+	.heatmap-card h3,
+	.service-card h3,
+	.play-card h3,
+	.network-map h3,
+	.timeline h3 {
+		color: rgb(248, 250, 252);
+		font-size: 0.98rem;
+		font-weight: 800;
+		letter-spacing: 0;
+	}
+
+	.flow-node {
+		margin-top: 0.5rem;
+		border: 1px solid rgba(45, 212, 191, 0.45);
+		padding: 0.55rem;
+		background: rgba(20, 184, 166, 0.12);
+		color: rgb(204, 251, 241);
+		font-size: 0.78rem;
+		font-weight: 700;
+	}
+
+	.flow-node.primary {
+		border-color: rgba(212, 165, 116, 0.7);
+		background: rgba(212, 165, 116, 0.13);
+		color: rgb(254, 243, 199);
+	}
+
+	.flow-note {
+		margin-top: 0.6rem;
+		color: rgb(148, 163, 184);
+		font-size: 0.76rem;
+		line-height: 1.45;
+	}
+
+	.flow-bar {
+		display: grid;
+		grid-template-columns: 3rem minmax(0, 1fr) 4.2rem;
+		align-items: center;
+		gap: 0.45rem;
+		margin-top: 0.5rem;
+		color: rgb(226, 232, 240);
+		font-size: 0.72rem;
+	}
+
+	.flow-bar div,
+	.bar-track,
+	.org-row div {
+		height: 0.5rem;
+		background: rgb(30, 41, 59);
+	}
+
+	.flow-bar div div,
+	.flow-bar > div,
+	.bar-track div,
+	.org-row i {
+		display: block;
+		height: 100%;
+		background: rgb(45, 212, 191);
+	}
+
+	.flow-bar strong,
+	.bar-row strong,
+	.org-row strong {
+		color: rgb(212, 165, 116);
+		font-size: 0.72rem;
+		text-align: right;
+	}
+
+	.budget-card,
+	.heatmap-card {
+		padding: 0.9rem;
+	}
+
+	.bar-stack,
+	.org-list {
+		margin-top: 0.75rem;
+	}
+
+	.bar-row {
+		display: grid;
+		grid-template-columns: 8.5rem minmax(0, 1fr) 4.5rem;
+		gap: 0.55rem;
+		align-items: center;
+		border-top: 1px solid rgba(51, 65, 85, 0.7);
+		padding: 0.65rem 0;
+	}
+
+	.bar-label span {
+		display: block;
+		color: rgb(45, 212, 191);
+		font-weight: 800;
+	}
+
+	.bar-label small,
+	.bar-row p {
+		color: rgb(148, 163, 184);
+		font-size: 0.68rem;
+		line-height: 1.35;
+	}
+
+	.bar-row p {
+		grid-column: 1 / -1;
+		margin: 0;
+	}
+
+	.org-row {
+		display: grid;
+		grid-template-columns: minmax(7rem, 1fr) minmax(0, 1fr) 4.5rem;
+		align-items: center;
+		gap: 0.55rem;
+		border-top: 1px solid rgba(51, 65, 85, 0.7);
+		padding: 0.45rem 0;
+		font-size: 0.73rem;
+	}
+
+	.org-row span {
+		color: rgb(226, 232, 240);
+	}
+
+	.heatmap {
+		display: grid;
+		grid-template-columns: minmax(7rem, 1.4fr) repeat(5, minmax(4.6rem, 1fr));
+		gap: 0.35rem;
+		margin-top: 0.75rem;
+		overflow-x: auto;
+	}
+
+	.heat-head,
+	.heat-lane,
+	.heat-cell {
+		min-width: 4.6rem;
+		padding: 0.55rem;
+		font-size: 0.72rem;
+	}
+
+	.heat-head {
+		color: rgb(148, 163, 184);
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.heat-lane {
+		border: 1px solid rgba(51, 65, 85, 0.8);
+		color: rgb(226, 232, 240);
+		font-weight: 800;
+	}
+
+	.heat-cell {
+		border: 1px solid rgba(51, 65, 85, 0.8);
+		background: rgba(20, 184, 166, calc(0.08 + var(--level) * 0.5));
+		color: rgb(236, 253, 245);
+		text-align: right;
+	}
+
+	.line-grid,
+	.service-grid,
+	.play-grid,
+	.sources-grid {
+		display: grid;
+		gap: 0.75rem;
+	}
+
+	.line-grid article,
+	.service-card,
+	.play-card,
+	.network-map article,
+	.timeline article,
+	.sources-grid a {
+		padding: 0.9rem;
+	}
+
+	.line-grid p,
+	.service-title p,
+	.play-index,
+	.mini-label,
+	.timeline span {
+		color: rgb(45, 212, 191);
+		font-size: 0.68rem;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.line-grid strong {
+		display: block;
+		margin-top: 0.55rem;
+		color: rgb(212, 165, 116);
+		font-size: 1.45rem;
+		line-height: 1;
+	}
+
+	.line-grid span,
+	.line-grid small {
+		display: block;
+		margin-top: 0.5rem;
+		color: rgb(203, 213, 225);
+		font-size: 0.78rem;
+		line-height: 1.5;
+	}
+
+	.service-title {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	.service-title > span {
+		border: 1px solid rgba(212, 165, 116, 0.55);
+		padding: 0.25rem 0.45rem;
+		color: rgb(254, 243, 199);
+		font-size: 0.68rem;
+		white-space: nowrap;
+	}
+
+	.budget-signal,
+	.first-action,
+	.proof {
+		margin-top: 0.75rem;
+		border-left: 3px solid rgb(212, 165, 116);
+		padding: 0.65rem 0.75rem;
+		background: rgba(212, 165, 116, 0.08);
+		color: rgb(226, 232, 240);
+		font-size: 0.78rem;
+		line-height: 1.55;
+	}
+
+	.service-card h4 {
+		margin-top: 0.9rem;
+		color: rgb(248, 250, 252);
+		font-size: 0.76rem;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.service-card ul,
+	.service-card ol,
+	.timeline ul {
+		margin-top: 0.55rem;
+		padding-left: 1.1rem;
+		color: rgb(203, 213, 225);
+		font-size: 0.79rem;
+		line-height: 1.55;
+	}
+
+	.chip-cloud {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+		margin-top: 0.5rem;
+	}
+
+	.chip-cloud span {
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		padding: 0.25rem 0.42rem;
+		background: rgb(2, 6, 23);
+		color: rgb(226, 232, 240);
+		font-size: 0.68rem;
+		line-height: 1.3;
+	}
+
+	.chip-cloud.muted span {
+		color: rgb(203, 213, 225);
+	}
+
+	.play-card {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.play-card p,
+	.network-map p {
+		margin-top: 0.6rem;
+		color: rgb(203, 213, 225);
+		font-size: 0.8rem;
+		line-height: 1.55;
+	}
+
+	.mini-label {
+		margin-top: 0.9rem;
+	}
+
+	.network-map {
+		display: grid;
+		gap: 0.75rem;
+	}
+
+	.center-node {
+		display: flex;
+		min-height: 8rem;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid rgba(45, 212, 191, 0.8);
+		background: rgba(20, 184, 166, 0.13);
+		color: rgb(204, 251, 241);
+		font-size: 1.1rem;
+		font-weight: 900;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.timeline {
+		display: grid;
+		gap: 0.75rem;
+	}
+
+	.sources-grid a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.sources-grid span,
+	.sources-grid small {
+		display: block;
+		overflow-wrap: anywhere;
+	}
+
+	.sources-grid span {
+		color: rgb(248, 250, 252);
+		font-size: 0.82rem;
+		font-weight: 800;
+	}
+
+	.sources-grid small {
+		margin-top: 0.35rem;
+		color: rgb(148, 163, 184);
+		font-size: 0.68rem;
+		line-height: 1.35;
+	}
+
+	@media (min-width: 760px) {
+		.sabre-hero {
+			grid-template-columns: minmax(0, 1fr) 26rem;
+			align-items: end;
+			padding: 2rem;
+		}
+
+		.sabre-section {
+			padding: 1.35rem;
+		}
+
+		.two-col,
+		.budget-layout,
+		.budget-flow {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.two-col {
+			grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+		}
+
+		.thesis-grid,
+		.line-grid,
+		.play-grid,
+		.sources-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.budget-layout {
+			grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+		}
+
+		.service-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.network-map {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			align-items: stretch;
+		}
+
+		.center-node {
+			grid-row: span 2;
+		}
+
+		.timeline {
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+		}
+	}
+
+	@media (min-width: 1180px) {
+		.play-grid {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.sources-grid {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 640px) {
+		.hero-metrics,
+		.bar-row,
+		.org-row {
+			grid-template-columns: 1fr;
+		}
+
+		.flow-bar {
+			grid-template-columns: 2.5rem minmax(0, 1fr) 3.8rem;
+		}
+
+		.sabre-nav {
+			position: static;
+		}
+	}
+</style>
