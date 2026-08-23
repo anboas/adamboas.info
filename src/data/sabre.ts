@@ -742,8 +742,8 @@ export const sources = [
 		url: 'https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2027/FY2027_Budget_Request_Overview_Book.pdf',
 	},
 	{
-		label: 'FY2027 financial summary tables',
-		url: 'https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2027/FY2027_Financial_Summary_Tables.pdf',
+		label: 'FY2027 full budget request',
+		url: 'https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2027/FY2027_Budget_Request.pdf',
 	},
 	{
 		label: 'FY2027 O-1 display',
