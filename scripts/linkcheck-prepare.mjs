@@ -26,6 +26,7 @@ const POLICY = {
 		'deps.org',
 		'navyleague.org',
 		'ndiacg.com',
+		'ndia.org',
 		'ntsa.org',
 		'satshow.com',
 		'servicenow.com',
