@@ -65,6 +65,7 @@ jobs:
             --timeout 20
             --max-retries 2
             "tmp/linkcheck/strict-links.txt"
+          output: tmp/linkcheck/strict-results.md
 
       - name: Link check (warn-only domains, non-blocking)
         if: always()

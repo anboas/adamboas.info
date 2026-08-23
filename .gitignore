@@ -9,6 +9,9 @@ dist/
 # lighthouse ci output
 /.lighthouseci/
 
+# local workflow artifacts
+tmp/
+
 # accidental lighthouse/Chrome profile artifacts (can appear on WSL paths)
 \\wsl.localhost*
 ./undefined:

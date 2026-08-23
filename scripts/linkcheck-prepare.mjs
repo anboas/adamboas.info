@@ -23,6 +23,12 @@ const POLICY = {
 		'venturebeat.com',
 		'cyberbay.org',
 		'operations.erdc.dren.mil',
+		'deps.org',
+		'navyleague.org',
+		'ntsa.org',
+		'satshow.com',
+		'servicenow.com',
+		'x.com',
 	],
 	ignoreDomains: [
 		'adamboas.info',
@@ -40,6 +46,7 @@ const POLICY = {
 	warnRegex: [
 		/^https:\/\/github\.com\/anboas\/adamboas\.info\/blob\/main\//i,
 		/^https:\/\/github\.com\/anboas\/adamboas\.info\/actions\/workflows\/[^/]+\/badge\.svg(?:\?.*)?$/i,
+		/^https:\/\/sam\.gov\/api\/prod\/opps\/v3\/opportunities\/resources\/files\/[^/]+\/download(?:\?.*)?$/i,
 	],
 	ignoreRegex: [
 		/^mailto:/i,
