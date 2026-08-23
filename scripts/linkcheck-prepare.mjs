@@ -25,9 +25,11 @@ const POLICY = {
 		'operations.erdc.dren.mil',
 		'deps.org',
 		'navyleague.org',
+		'ndiacg.com',
 		'ntsa.org',
 		'satshow.com',
 		'servicenow.com',
+		'sofweek.org',
 		'x.com',
 	],
 	ignoreDomains: [
