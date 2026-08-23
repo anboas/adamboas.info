@@ -10,6 +10,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/src/data/radar/mirror/sam-opportunities/notice-desc-cache/
+            !/src/data/radar/mirror/sam-opportunities/notices/
+            !/src/data/radar/mirror/sam-opportunities/queries/
+            !/src/data/radar/mirror/sam-opportunities/resources/blobs/
+            !/src/data/radar/mirror/sam-opportunities/runs/
+            !/src/data/radar/mirror/sam-opportunities/snapshots/
 
       - name: Use Node.js
         uses: actions/setup-node@v4
