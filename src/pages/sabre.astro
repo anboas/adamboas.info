@@ -3,8 +3,6 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import { withBase } from '../utils/withBase';
 import {
 	budgetRollup,
-	conversationTargets,
-	financialLifecycle,
 	firstThirtyDays,
 	growthPlays,
 	opportunityAssessment,
@@ -16,10 +14,9 @@ import {
 
 const title = 'Sabre Growth Intelligence | Adam Boas';
 const description =
-	'A source-backed growth command center for Sabre Systems: service strategy, Fourth Estate targets, partner ecosystem, budget flow, and first-30-days operating plan.';
+	'A concise, action-forward growth strategy brief for Sabre Systems: market terrain, priority customers, Sabre fit, productized offers, and first-30-days operating plan.';
 const maxBook = Math.max(...budgetRollup.books.map((book) => book.valueB));
 const maxOrg = Math.max(...budgetRollup.orgs.map((org) => org.valueB));
-const maxScoreWeight = Math.max(...opportunityAssessment.scoring.map((factor) => factor.weight));
 const heatmapMax = Math.max(
 	...budgetRollup.heatmap.flatMap((row) => [row.oAndM, row.procurement, row.rdte, row.milpers, row.milcon]),
 );
@@ -30,6 +27,123 @@ const heatKeys = [
 	{ key: 'milpers', label: 'MILPERS' },
 	{ key: 'milcon', label: 'MILCON' },
 ] as const;
+
+const strategyCards = [
+	{
+		label: 'Strategy',
+		title: 'Build a growth architecture function',
+		body: 'Operate between account insight, technical solutioning, partner leverage, contract path, and delivery feedback. Do not become a deck factory.',
+	},
+	{
+		label: 'Market',
+		title: 'Prioritize buyers with pain, money, and channel',
+		body: 'The best targets have a named mission friction, budget owner, buying path, and a reason Sabre can credibly move faster than incumbents.',
+	},
+	{
+		label: 'Offer',
+		title: 'Productize the Sabre + partner wedge',
+		body: 'Turn broad capability into named modernization plays: agentic software, digital engineering, cATO evidence, test acceleration, and workflow modernization.',
+	},
+	{
+		label: 'Proof',
+		title: 'Use delivery evidence to create the next pursuit',
+		body: 'Every pilot should produce metrics, artifacts, CPARS-quality proof, a follow-on path, and reusable language for the next customer.',
+	},
+];
+
+const marketRealities = [
+	{
+		title: 'Demand is broad. Buyer-ready demand is narrow.',
+		meaning:
+			'Every service says AI, software, data, cyber, autonomy, and digital engineering matter. Strategy means finding the few places where pain, authority, and funding align.',
+		move: 'Score signals by mission pain, money path, vehicle, Sabre right-to-win, partner leverage, and follow-on scale.',
+	},
+	{
+		title: 'The money is split across experiments, operations, and programs.',
+		meaning:
+			'RDT&E starts experiments, O&M scales enterprise services and sustainment, and procurement turns modernization into durable platform spend.',
+		move: 'Match each offer to the color of money before shaping the capture story.',
+	},
+	{
+		title: 'AI only matters when attached to a hard workflow.',
+		meaning:
+			'Customers will buy outcomes: backlog burn-down, test evidence, ATO speed, data products, readiness insight, and lower integration drag.',
+		move: 'Lead with measurable cycle-time or decision-quality improvement, then explain the AI.',
+	},
+	{
+		title: 'Product companies need a federal integration wrapper.',
+		meaning:
+			'Vendors bring tools; Sabre can bring mission context, secure adoption, RMF evidence, test, sustainment, and customer trust.',
+		move: 'Make Cognition/Devin the first partner proof, then repeat the pattern with data, cloud, cyber, and mission-tech firms.',
+	},
+];
+
+const customerPriorities = [
+	{
+		lane: serviceLanes[0],
+		priority: '1',
+		strategy: 'Primary wedge',
+		why: 'EWAAC gives Sabre a concrete Air Force foothold, and the DAF modernization agenda is rich in weapons integration, digital engineering, test, software, and data needs.',
+		firstQuestion: 'Which Eglin or DAF workflows are painful, funded, and measurable enough for a 60-90 day pilot?',
+		firstMove:
+			'Take three offers to Denver: EWAAC digital engineering acceleration, Devin-backed software throughput, and test/evidence automation.',
+	},
+	{
+		lane: serviceLanes[3],
+		priority: '2',
+		strategy: 'Scale field',
+		why: 'DISA, DLA, DHA, CDAO, MDA, and other Defense-Wide buyers sit on enterprise pain where software, data, cyber, workflow, and compliance converge.',
+		firstQuestion:
+			'Where does an enterprise buyer have a slow workflow, a data bottleneck, or an authorization drag that Sabre can shrink quickly?',
+		firstMove:
+			'Pick one Fourth Estate lighthouse account and shape a pilot around secure modernization plus measurable cycle-time reduction.',
+	},
+	{
+		lane: serviceLanes[2],
+		priority: '3',
+		strategy: 'Proof base',
+		why: 'NAVAIR and Navy work prove Sabre can perform in mission systems, but the growth move is to turn that proof into reusable Navy/Marine digital-thread and sustainment offers.',
+		firstQuestion:
+			'Which NAVAIR lessons can open NAVSEA, NIWC, PEO Digital, unmanned, shipyard, or Marine Corps conversations?',
+		firstMove: 'Harvest NAVAIR/NDD patterns into portable offer language and account-specific proof artifacts.',
+	},
+	{
+		lane: serviceLanes[1],
+		priority: '4',
+		strategy: 'APG expansion',
+		why: 'Army C5ISR, tactical network, EW, cyber, lab, and depot modernization are natural extensions if Sabre avoids generic staffing language.',
+		firstQuestion:
+			'Where do APG/C5ISR relationships expose modernization friction that can be shaped into funded technical work?',
+		firstMove:
+			'Map existing Sabre access at APG, then select two pursuits with buyer, vehicle, partner, and first proof defined.',
+	},
+];
+
+const proofMoves = [
+	{
+		proof: '$499M NAWCAD SED award',
+		means: 'Sabre has mission-systems credibility in complex Navy aviation environments.',
+		strategy:
+			'Translate that into digital-thread, test, data, software, and cyber offers for adjacent Navy/Marine buyers.',
+	},
+	{
+		proof: 'Prime position on EWAAC',
+		means: 'Sabre has a practical entry point into Air Force armament and rapid acquisition work.',
+		strategy: 'Use EWAAC as the first Air Force growth operating lane, not just a contract logo.',
+	},
+	{
+		proof: 'APG / C5ISR presence',
+		means:
+			'Sabre can credibly enter Army technical conversations around communications, cyber, integration, and lab modernization.',
+		strategy: 'Package APG access into C5ISR modernization pursuits with clear technical discriminators.',
+	},
+	{
+		proof: 'Cognition / Devin relationship',
+		means: 'Adam can bring a live commercial wedge into Sabre, but only if it is wrapped for federal adoption.',
+		strategy:
+			'Make Sabre the SI wrapper: security, RMF evidence, evaluation, human review, deployment, and sustainment.',
+	},
+];
 ---
 
 <SiteLayout title={title} description={description}>
@@ -37,14 +151,223 @@ const heatKeys = [
 
 	<section class="sabre-hero">
 		<div>
-			<p class="sabre-kicker">Sabre Systems growth command center</p>
-			<h1>All-service and Fourth Estate growth map</h1>
+			<p class="sabre-kicker">Sabre Systems growth strategy</p>
+			<h1>Where to play, who matters, and what to sell first</h1>
 			<p class="sabre-lede">
-				A live intelligence surface for turning Sabre's mission-systems credibility into repeatable growth across Air
-				Force, Space Force, Army, Navy, Marine Corps, and Defense-Wide buyers.
+				The growth strategy is to turn Sabre's mission-systems credibility into a repeatable modernization operating
+				model: identify funded friction, shape a practical technical offer, bring the right partner, and convert early
+				proof into durable pipeline.
 			</p>
 		</div>
-		<div class="hero-metrics" aria-label="FY2027 budget signals">
+		<div class="hero-metrics" aria-label="Strategic priorities">
+			<div>
+				<span>DAF</span>
+				<p>Primary wedge through EWAAC, Eglin, weapons, test, software, and data modernization.</p>
+			</div>
+			<div>
+				<span>4E</span>
+				<p>Enterprise scale through DISA, DLA, DHA, CDAO, MDA, cyber, data, and workflow pain.</p>
+			</div>
+			<div>
+				<span>NAVAIR</span>
+				<p>Proof base to translate into adjacent Navy, Marine Corps, Army, and joint modernization plays.</p>
+			</div>
+		</div>
+	</section>
+
+	<nav class="sabre-nav" aria-label="Sabre page sections">
+		<a href="#strategy">Strategy</a>
+		<a href="#market">Market</a>
+		<a href="#customers">Customers</a>
+		<a href="#fit">Sabre Fit</a>
+		<a href="#offers">Offers</a>
+		<a href="#first30">First 30 Days</a>
+		<a href="#evidence">Evidence</a>
+		<a href="#sources">Sources</a>
+	</nav>
+
+	<section id="strategy" class="sabre-section two-col">
+		<div>
+			<p class="section-eyebrow">Operating thesis</p>
+			<h2>Sabre should become the integrator that converts mission friction into funded modernization.</h2>
+			<p>
+				Adam's role should not be "AI guy" or generic business development. It should be growth architecture:
+				translating customer pain into a technical, contractual, and partner-backed path that Sabre can win and deliver.
+			</p>
+			<div class="strategy-callout">
+				<strong>Strategy in one sentence:</strong> use NAVAIR and APG as proof, Air Force as the near-term wedge, Fourth Estate
+				as the scale field, and Cognition/Devin as the first partner-led modernization offer.
+			</div>
+		</div>
+		<div class="thesis-grid">
+			{
+				strategyCards.map((card) => (
+					<div>
+						<strong>{card.label}</strong>
+						<h3>{card.title}</h3>
+						<span>{card.body}</span>
+					</div>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="market" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Industry and market</p>
+				<h2>The market is not short on priorities. It is short on conversion paths.</h2>
+			</div>
+			<p>
+				The defense market is saturated with modernization language. The edge is finding where customer urgency, budget
+				authority, acquisition channel, and Sabre delivery credibility overlap.
+			</p>
+		</div>
+		<div class="market-grid">
+			{
+				marketRealities.map((reality) => (
+					<article>
+						<h3>{reality.title}</h3>
+						<p>{reality.meaning}</p>
+						<div class="first-action">{reality.move}</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="customers" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Clients and customers</p>
+				<h2>Priority account strategy</h2>
+			</div>
+			<p>
+				Start with the accounts where Sabre has access or a credible wedge. Expand only when the pain, money, and
+				contract path are visible.
+			</p>
+		</div>
+		<div class="priority-list">
+			{
+				customerPriorities.map((target) => (
+					<article class="priority-card">
+						<div class="priority-rank">{target.priority}</div>
+						<div>
+							<p>{target.strategy}</p>
+							<h3>{target.lane.name}</h3>
+						</div>
+						<div>
+							<h4>Why it matters</h4>
+							<p>{target.why}</p>
+						</div>
+						<div>
+							<h4>First question</h4>
+							<p>{target.firstQuestion}</p>
+						</div>
+						<div class="first-action">{target.firstMove}</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="fit" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Sabre alignment</p>
+				<h2>Turn current proof into the next growth motion</h2>
+			</div>
+			<p>
+				Sabre's advantage is not one capability label. It is the ability to combine mission engineering, secure
+				software, data, cyber, contracts, and delivery in environments where pure product companies struggle.
+			</p>
+		</div>
+		<div class="proof-grid">
+			{
+				proofMoves.map((item) => (
+					<article>
+						<h3>{item.proof}</h3>
+						<p>{item.means}</p>
+						<div class="first-action">{item.strategy}</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="offers" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Value-forward offers</p>
+				<h2>Six plays to make Sabre easier to buy</h2>
+			</div>
+			<p>
+				Lead with named outcomes. Customers should understand what improves, who owns it, and how the first proof works.
+			</p>
+		</div>
+		<div class="play-grid">
+			{
+				growthPlays.map((play, index) => (
+					<article class="play-card compact">
+						<div class="play-index">{String(index + 1).padStart(2, '0')}</div>
+						<h3>{play.name}</h3>
+						<p>{play.fit}</p>
+						<div class="proof">
+							<strong>First proof:</strong> {play.firstProof}
+						</div>
+						<div class="mini-label">Likely buyers</div>
+						<div class="chip-cloud">
+							{play.buyers.slice(0, 5).map((buyer) => (
+								<span>{buyer}</span>
+							))}
+						</div>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="first30" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Execution</p>
+				<h2>First 30 days at Sabre</h2>
+			</div>
+			<p>
+				The outcome is not a deck. The outcome is a qualified growth machine with one Air Force lighthouse, one Fourth
+				Estate lighthouse, and one Devin-backed pilot path.
+			</p>
+		</div>
+		<div class="timeline">
+			{
+				firstThirtyDays.map((phase) => (
+					<article>
+						<span>{phase.window}</span>
+						<h3>{phase.name}</h3>
+						<ul>
+							{phase.actions.map((action) => (
+								<li>{action}</li>
+							))}
+						</ul>
+					</article>
+				))
+			}
+		</div>
+	</section>
+
+	<section id="evidence" class="sabre-section">
+		<div class="section-heading">
+			<div>
+				<p class="section-eyebrow">Supporting evidence</p>
+				<h2>Budget, work sources, and pursuit discipline</h2>
+			</div>
+			<p>
+				Updated {sabreUpdatedAt}. Budget figures are extracted from official FY2027 display files and rounded to
+				billions.
+			</p>
+		</div>
+
+		<div class="evidence-summary">
 			<div>
 				<span>${budgetRollup.totalFy2027B.toLocaleString()}B</span>
 				<p>FY2027 extracted major-book signal</p>
@@ -58,85 +381,10 @@ const heatKeys = [
 				<p>growth theaters</p>
 			</div>
 		</div>
-	</section>
-
-	<nav class="sabre-nav" aria-label="Sabre page sections">
-		<a href="#thesis">Thesis</a>
-		<a href="#budget">Budget Flow</a>
-		<a href="#finance">Financial Layers</a>
-		<a href="#work-sources">Work Sources</a>
-		<a href="#assessment">Opportunity Assessment</a>
-		<a href="#services">Services</a>
-		<a href="#plays">Growth Plays</a>
-		<a href="#network">Who To Talk To</a>
-		<a href="#first30">First 30 Days</a>
-		<a href="#sources">Sources</a>
-	</nav>
-
-	<section id="thesis" class="sabre-section two-col">
-		<div>
-			<p class="section-eyebrow">Operating thesis</p>
-			<h2>Sabre should become the integrator that converts mission friction into funded modernization.</h2>
-			<p>
-				The growth role should sit between business development and delivery: find real pain, map it to budget and
-				contract paths, shape the technical offer, bring the right partner, and keep the solution credible enough to
-				deliver.
-			</p>
-		</div>
-		<div class="thesis-grid">
-			<div>
-				<strong>Do</strong><span>Use NAVAIR as proof, Air Force as wedge, Fourth Estate as enterprise scale.</span>
-			</div>
-			<div>
-				<strong>Avoid</strong><span
-					>Being boxed into NAVAIR, generic AI pitches, or unfunded internal strategy work.</span
-				>
-			</div>
-			<div>
-				<strong>Measure</strong><span
-					>Task-order activation, partner leverage, first pilot, customer meetings, and funded pipeline.</span
-				>
-			</div>
-			<div><strong>Lead With</strong><span>Mission systems + software/data/AI/cyber + acquisition realism.</span></div>
-		</div>
-	</section>
-
-	<section id="budget" class="sabre-section">
-		<div class="section-heading">
-			<div>
-				<p class="section-eyebrow">Financial terrain</p>
-				<h2>FY2027 budget flow: from appropriation to growth lane</h2>
-			</div>
-			<p>Updated {sabreUpdatedAt}. Extracted from official FY2027 O-1, P-1, R-1, M-1, RF-1, and C-1 display files.</p>
-		</div>
-
-		<div class="budget-flow" aria-label="Budget flow diagram">
-			<div class="flow-column">
-				<h3>Presidential Budget</h3>
-				<div class="flow-node primary">$1.5T DoW FY2027 request</div>
-				<div class="flow-note">Authorization and appropriation shape what becomes obligable dollars.</div>
-			</div>
-			<div class="flow-column">
-				<h3>Appropriation Books</h3>
-				{
-					budgetRollup.books.map((book) => (
-						<div class="flow-bar">
-							<span>{book.code}</span>
-							<div style={`width:${Math.max(8, (book.valueB / maxBook) * 100)}%`} />
-							<strong>${book.valueB.toFixed(1)}B</strong>
-						</div>
-					))
-				}
-			</div>
-			<div class="flow-column">
-				<h3>Growth Translation</h3>
-				{growthPlays.slice(0, 6).map((play) => <div class="flow-node">{play.short}</div>)}
-			</div>
-		</div>
 
 		<div class="budget-layout">
 			<div class="budget-card">
-				<h3>Appropriation Weight</h3>
+				<h3>Color of Money</h3>
 				<div class="bar-stack">
 					{
 						budgetRollup.books.map((book) => (
@@ -210,52 +458,17 @@ const heatKeys = [
 				))
 			}
 		</div>
-	</section>
 
-	<section id="finance" class="sabre-section">
-		<div class="section-heading">
-			<div>
-				<p class="section-eyebrow">Financial stack</p>
-				<h2>Follow the money until it becomes an obligable action</h2>
-			</div>
-			<p>
-				The growth question is not whether a priority exists. The question is whether priority, authority, color of
-				money, acquisition channel, and buyer ownership line up.
-			</p>
-		</div>
-		<div class="finance-chain" aria-label="Financial lifecycle from budget strategy to renewal">
-			{
-				financialLifecycle.map((stage, index) => (
-					<article>
-						<div class="chain-index">{String(index + 1).padStart(2, '0')}</div>
-						<h3>{stage.stage}</h3>
-						<div class="chip-cloud">
-							{stage.artifacts.map((artifact) => (
-								<span>{artifact}</span>
-							))}
-						</div>
-						<div class="first-action">{stage.sabreMove}</div>
-						<p>{stage.watch}</p>
-					</article>
-				))
-			}
-		</div>
-	</section>
-
-	<section id="work-sources" class="sabre-section">
-		<div class="section-heading">
+		<div class="section-heading evidence-heading">
 			<div>
 				<p class="section-eyebrow">Sources of work</p>
-				<h2>Where funded work appears before it looks like a normal RFP</h2>
+				<h2>Where work appears before it looks like a normal RFP</h2>
 			</div>
-			<p>
-				Do not watch SAM.gov alone. Growth comes from combining formal notices, vehicle access, OT consortia,
-				marketplaces, labs, product partners, and prime ecosystems.
-			</p>
+			<p>Use these channels to test whether an attractive idea has a real buying path.</p>
 		</div>
 		<div class="source-grid">
 			{
-				workSources.map((source) => (
+				workSources.slice(0, 4).map((source) => (
 					<article class="source-card">
 						<div class="source-title">
 							<div>
@@ -278,190 +491,26 @@ const heatKeys = [
 				))
 			}
 		</div>
-	</section>
 
-	<section id="assessment" class="sabre-section">
-		<div class="section-heading">
+		<div class="section-heading evidence-heading">
 			<div>
 				<p class="section-eyebrow">Pursuit discipline</p>
-				<h2>Opportunity assessment model</h2>
+				<h2>Questions every pursuit must answer</h2>
 			</div>
-			<p>
-				Every promising signal should be scored against mission, money, authority, Sabre fit, partner leverage, and
-				conversion path.
-			</p>
+			<p>Good strategy is mostly saying no until the evidence is strong enough to say yes.</p>
 		</div>
-		<div class="assessment-layout">
-			<div class="gate-grid">
-				{
-					opportunityAssessment.gates.map((gate, index) => (
-						<article>
-							<div class="chain-index">{String(index + 1).padStart(2, '0')}</div>
-							<h3>{gate.name}</h3>
-							<p>{gate.question}</p>
-							<div class="chip-cloud muted">
-								{gate.evidence.map((item) => (
-									<span>{item}</span>
-								))}
-							</div>
-						</article>
-					))
-				}
-			</div>
-			<div class="score-panel">
-				<h3>Weighted Score</h3>
-				{
-					opportunityAssessment.scoring.map((factor) => (
-						<div class="score-row">
-							<span>{factor.factor}</span>
-							<div>
-								<i style={`width:${(factor.weight / maxScoreWeight) * 100}%`} />
-							</div>
-							<strong>{factor.weight}</strong>
-						</div>
-					))
-				}
-				<div class="decision-bands">
-					{
-						opportunityAssessment.decisionBands.map((band) => (
-							<div>
-								<strong>{band.range}</strong>
-								<span>{band.label}</span>
-								<p>{band.action}</p>
-							</div>
-						))
-					}
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="services" class="sabre-section">
-		<div class="section-heading">
-			<div>
-				<p class="section-eyebrow">Service strategy</p>
-				<h2>What to focus on by theater</h2>
-			</div>
-			<p>Each lane ties focus, buyers, companies, and first-month action into one growth posture.</p>
-		</div>
-		<div class="service-grid">
+		<div class="gate-grid">
 			{
-				serviceLanes.map((lane) => (
-					<article class="service-card">
-						<div class="service-title">
-							<div>
-								<p>{lane.tag}</p>
-								<h3>{lane.name}</h3>
-							</div>
-							<span>{lane.opportunities.length} plays</span>
-						</div>
-						<div class="budget-signal">{lane.budgetSignal}</div>
-						<h4>Focus</h4>
-						<ul>
-							{lane.focus.map((item) => (
-								<li>{item}</li>
-							))}
-						</ul>
-						<h4>Who to talk to</h4>
-						<div class="chip-cloud">
-							{lane.who.map((item) => (
-								<span>{item}</span>
-							))}
-						</div>
-						<h4>Companies to engage</h4>
+				opportunityAssessment.gates.map((gate, index) => (
+					<article>
+						<div class="chain-index">{String(index + 1).padStart(2, '0')}</div>
+						<h3>{gate.name}</h3>
+						<p>{gate.question}</p>
 						<div class="chip-cloud muted">
-							{lane.companies.map((item) => (
+							{gate.evidence.map((item) => (
 								<span>{item}</span>
 							))}
 						</div>
-						<h4>Opportunity queue</h4>
-						<ol>
-							{lane.opportunities.map((item) => (
-								<li>{item}</li>
-							))}
-						</ol>
-						<div class="first-action">{lane.first30}</div>
-					</article>
-				))
-			}
-		</div>
-	</section>
-
-	<section id="plays" class="sabre-section">
-		<div class="section-heading">
-			<div>
-				<p class="section-eyebrow">Productized growth</p>
-				<h2>Six offers to make Sabre easier to buy</h2>
-			</div>
-			<p>Stop selling broad capability. Sell named, measurable modernization plays.</p>
-		</div>
-		<div class="play-grid">
-			{
-				growthPlays.map((play, index) => (
-					<article class="play-card">
-						<div class="play-index">{String(index + 1).padStart(2, '0')}</div>
-						<h3>{play.name}</h3>
-						<p>{play.fit}</p>
-						<div class="mini-label">Likely buyers</div>
-						<div class="chip-cloud">
-							{play.buyers.map((buyer) => (
-								<span>{buyer}</span>
-							))}
-						</div>
-						<div class="proof">
-							<strong>First proof:</strong> {play.firstProof}
-						</div>
-					</article>
-				))
-			}
-		</div>
-	</section>
-
-	<section id="network" class="sabre-section">
-		<div class="section-heading">
-			<div>
-				<p class="section-eyebrow">Relationship graph</p>
-				<h2>Who to talk to and why</h2>
-			</div>
-			<p>Every conversation should produce account intelligence, funding insight, partner leverage, or a pilot path.</p>
-		</div>
-		<div class="network-map" aria-label="Conversation target network">
-			<div class="center-node">Growth Architecture</div>
-			{
-				conversationTargets.map((target) => (
-					<article>
-						<h3>{target.group}</h3>
-						<p>{target.ask}</p>
-						<div class="chip-cloud">
-							{target.people.map((person) => (
-								<span>{person}</span>
-							))}
-						</div>
-					</article>
-				))
-			}
-		</div>
-	</section>
-
-	<section id="first30" class="sabre-section">
-		<div class="section-heading">
-			<div>
-				<p class="section-eyebrow">Execution</p>
-				<h2>First 30 days at Sabre</h2>
-			</div>
-			<p>The outcome is not a deck. The outcome is a qualified growth machine with three lighthouse pursuits.</p>
-		</div>
-		<div class="timeline">
-			{
-				firstThirtyDays.map((phase) => (
-					<article>
-						<span>{phase.window}</span>
-						<h3>{phase.name}</h3>
-						<ul>
-							{phase.actions.map((action) => (
-								<li>{action}</li>
-							))}
-						</ul>
 					</article>
 				))
 			}
@@ -548,6 +597,10 @@ const heatKeys = [
 
 	.hero-metrics div,
 	.thesis-grid div,
+	.market-grid article,
+	.priority-card,
+	.proof-grid article,
+	.evidence-summary div,
 	.budget-card,
 	.heatmap-card,
 	.line-grid article,
@@ -639,6 +692,32 @@ const heatKeys = [
 		line-height: 1.5;
 	}
 
+	.thesis-grid h3,
+	.market-grid h3,
+	.priority-card h3,
+	.proof-grid h3 {
+		margin-top: 0.45rem;
+		color: rgb(248, 250, 252);
+		font-size: 0.96rem;
+		font-weight: 800;
+		letter-spacing: 0;
+		line-height: 1.2;
+	}
+
+	.strategy-callout {
+		margin-top: 1rem;
+		border-left: 3px solid rgb(45, 212, 191);
+		padding: 0.8rem 0.9rem;
+		background: rgba(20, 184, 166, 0.1);
+		color: rgb(226, 232, 240);
+		font-size: 0.86rem;
+		line-height: 1.6;
+	}
+
+	.strategy-callout strong {
+		color: rgb(204, 251, 241);
+	}
+
 	.section-heading {
 		display: flex;
 		flex-direction: column;
@@ -653,6 +732,86 @@ const heatKeys = [
 	.section-heading > p {
 		max-width: 36rem;
 		font-size: 0.82rem;
+	}
+
+	.market-grid,
+	.priority-list,
+	.proof-grid,
+	.evidence-summary {
+		display: grid;
+		gap: 0.75rem;
+	}
+
+	.market-grid article,
+	.proof-grid article,
+	.evidence-summary div {
+		padding: 0.9rem;
+	}
+
+	.market-grid p,
+	.priority-card p,
+	.proof-grid p {
+		margin-top: 0.6rem;
+		color: rgb(203, 213, 225);
+		font-size: 0.8rem;
+		line-height: 1.55;
+	}
+
+	.priority-card {
+		display: grid;
+		gap: 0.85rem;
+		padding: 0.9rem;
+	}
+
+	.priority-rank {
+		display: flex;
+		width: 2.35rem;
+		height: 2.35rem;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid rgba(45, 212, 191, 0.65);
+		background: rgb(2, 6, 23);
+		color: rgb(204, 251, 241);
+		font-size: 1rem;
+		font-weight: 900;
+	}
+
+	.priority-card h4 {
+		color: rgb(248, 250, 252);
+		font-size: 0.7rem;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.priority-card > div:nth-child(2) p {
+		margin: 0;
+		color: rgb(45, 212, 191);
+		font-size: 0.68rem;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+
+	.evidence-summary {
+		margin-bottom: 1rem;
+	}
+
+	.evidence-summary span {
+		display: block;
+		color: rgb(212, 165, 116);
+		font-size: 1.35rem;
+		font-weight: 800;
+		line-height: 1;
+	}
+
+	.evidence-summary p {
+		margin-top: 0.5rem;
+		color: rgb(148, 163, 184);
+		font-size: 0.72rem;
+		line-height: 1.35;
+	}
+
+	.evidence-heading {
+		margin-top: 1.2rem;
 	}
 
 	.budget-flow {
@@ -1172,6 +1331,9 @@ const heatKeys = [
 		}
 
 		.thesis-grid,
+		.market-grid,
+		.proof-grid,
+		.evidence-summary,
 		.line-grid,
 		.source-grid,
 		.gate-grid,
@@ -1196,6 +1358,16 @@ const heatKeys = [
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
+		.priority-card {
+			grid-template-columns: auto minmax(10rem, 0.7fr) minmax(0, 1fr) minmax(0, 1fr);
+			align-items: start;
+		}
+
+		.priority-card .first-action {
+			grid-column: 3 / -1;
+			margin-top: 0;
+		}
+
 		.network-map {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 			align-items: stretch;
@@ -1212,6 +1384,11 @@ const heatKeys = [
 
 	@media (min-width: 1180px) {
 		.source-grid {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+
+		.market-grid,
+		.proof-grid {
 			grid-template-columns: repeat(4, minmax(0, 1fr));
 		}
 
