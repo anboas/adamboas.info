@@ -34,7 +34,7 @@ jobs:
             src/data/radar/feed-crawl-report-latest.md
 
       - name: Create/update pull request for crawl report
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: bot/radar-feed-crawl-report
           delete-branch: true
