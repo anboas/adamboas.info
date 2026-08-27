@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import { absoluteUrl } from '../../config/site';
-import { withBase } from '../../utils/withBase';
 import {
 	fullResumeEducation,
 	fullResumeExperience,
@@ -19,6 +18,7 @@ const printable = Astro.url.searchParams.get('print') === '1';
 const contactLine = `${fullResumeProfile.email} | ${fullResumeProfile.phone} | ${fullResumeProfile.url}`;
 const publishedWriting = (await getCollection('writing')).filter((item) => item.data.status === 'published');
 const publishedPapers = (await getCollection('papers')).filter((item) => item.data.status === 'published');
+const writingUrlForSlug = (slug: string) => absoluteUrl(`/writing/${slug}/`);
 const fullWritingItems = [
 	...publishedPapers.map((item) => ({
 		slug: item.id,
@@ -36,7 +36,15 @@ const fullWritingItems = [
 	})),
 ]
 	.filter((item) => item.slug && item.date)
-	.sort((a, b) => b.date.valueOf() - a.date.valueOf());
+	.sort((a, b) => b.date.valueOf() - a.date.valueOf())
+	.map((item) => {
+		const href = writingUrlForSlug(item.slug);
+		return {
+			...item,
+			href,
+			displayUrl: href.replace(/^https?:\/\//, ''),
+		};
+	});
 const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
 ---
 
@@ -140,14 +148,15 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 								<div class="writing-library" aria-label="Published writing">
 									{
 										fullWritingItems.map((item) => (
-											<a class={`writing-item writing-item-${item.type}`} href={withBase(`/writing/${item.slug}/`)}>
-												<div>
+											<a class={`writing-item writing-item-${item.type}`} href={item.href}>
+												<div class="writing-title-row">
 													<span class="writing-type">{item.type}</span>
 													<h3>{item.title}</h3>
 												</div>
 												<p>{item.description}</p>
 												<span class="writing-meta">
-													{formatWritingDate(item.date)} | {absoluteUrl(`/writing/${item.slug}/`)}
+													<span>{formatWritingDate(item.date)}</span>
+													<span>{item.displayUrl}</span>
 												</span>
 											</a>
 										))
@@ -451,7 +460,7 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		background: rgba(15, 23, 42, 0.72);
 	}
 
-	.writing-item div {
+	.writing-title-row {
 		display: flex;
 		align-items: baseline;
 		gap: 0.5rem;
@@ -485,12 +494,20 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 	}
 
 	.writing-meta {
-		display: block;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.2rem 0.45rem;
 		margin-top: 0.38rem;
 		font-size: 0.72rem;
 		line-height: 1.35;
 		color: rgba(148, 163, 184, 0.96);
 		overflow-wrap: anywhere;
+	}
+
+	.writing-meta span + span::before {
+		content: '|';
+		margin-right: 0.45rem;
+		color: rgba(100, 116, 139, 0.88);
 	}
 
 	.resume-note {
@@ -885,21 +902,23 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 			content: '';
 		}
 
-		.writing-item div {
-			display: block;
+		.writing-title-row {
+			display: grid;
+			grid-template-columns: auto minmax(0, 1fr);
+			column-gap: 4pt;
+			align-items: baseline;
 		}
 
 		.writing-type {
 			border: 0;
 			padding: 0;
-			font-size: 6.9pt;
+			font-size: 6.4pt;
 			line-height: 1.15;
 			color: #4b5563;
 			letter-spacing: 0.03em;
 		}
 
 		.writing-item h3 {
-			display: inline;
 			margin: 0;
 			font-size: 7.9pt;
 			line-height: 1.18;
@@ -911,10 +930,17 @@ const formatWritingDate = (date: Date) => date.toLocaleDateString(undefined, { y
 		}
 
 		.writing-meta {
+			display: grid;
+			grid-template-columns: auto minmax(0, 1fr);
+			column-gap: 4pt;
 			margin-top: 0;
 			font-size: 6.6pt;
 			line-height: 1.12;
 			color: #4b5563;
+		}
+
+		.writing-meta span + span::before {
+			content: none;
 		}
 
 		.resume-note {
