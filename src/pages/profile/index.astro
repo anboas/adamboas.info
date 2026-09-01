@@ -67,7 +67,7 @@ const personSchema = {
 	sameAs: PERSON_SAME_AS,
 	worksFor: {
 		'@type': 'Organization',
-		name: experience[0]?.company ?? 'KBR',
+		name: experience[0]?.company ?? 'Sabre Systems',
 	},
 	alumniOf: education
 		.filter((item) => item.issuer.includes('University') || item.issuer.includes('College'))
@@ -162,8 +162,8 @@ const profileBreadcrumbSchema = {
 			<article class="profile-proof-cell">
 				<p class="profile-proof-kicker">Current focus</p>
 				<p class="mt-2 text-sm leading-relaxed text-slate-300">
-					KBR Solutions Architect and senior technical strategist supporting enterprise strategy, solution architecture,
-					capture, technical proposals, emerging-technology assessment, and modernization initiatives.
+					Sabre Systems senior technical strategist and solutions architect supporting defense growth, customer discovery,
+					solution architecture, secure technology adoption, capture, and modernization initiatives.
 				</p>
 			</article>
 			<article class="profile-proof-cell">

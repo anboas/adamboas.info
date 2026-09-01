@@ -28,7 +28,7 @@ export const capabilityTopics: CapabilityTopic[] = [
 			'Strategy-to-solution translation',
 		],
 		evidence: [
-			'KBR enterprise solution architecture and emerging-technology assessment',
+			'Sabre and KBR enterprise solution architecture and emerging-technology assessment',
 			'DoD CIO software modernization and policy support',
 			'Public writing on control planes, policy modernization, and delegated authority',
 		],
@@ -138,7 +138,7 @@ export const capabilityTopics: CapabilityTopic[] = [
 			'Scale, stop, and portfolio reuse decisions',
 		],
 		evidence: [
-			'KBR and Navy modernization work across mission systems, cloud, software, and data',
+			'Sabre/KBR and Navy modernization work across mission systems, cloud, software, and data',
 			'Transition framing across owners, funding paths, integration constraints, and acceptance criteria',
 			'Public writing on delegated authority, assurance, and control planes',
 		],
@@ -165,7 +165,7 @@ export const capabilityTopics: CapabilityTopic[] = [
 			'Partner and stakeholder alignment',
 		],
 		evidence: [
-			'Current KBR support for capture, solution architecture, technical proposals, and emerging-technology assessment',
+			'Current Sabre and prior KBR support for capture, solution architecture, technical proposals, and emerging-technology assessment',
 			'Opportunity intelligence surfaces maintained on this site',
 			'Public writing on policy modernization, delegated authority, and control-plane architecture',
 		],

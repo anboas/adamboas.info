@@ -34,11 +34,28 @@ export const fullResumeSummary = [
 
 export const fullResumeExperience: FullResumeRole[] = [
 	{
+		company: 'Sabre Systems',
+		title: 'Senior Technical Strategist / Solutions Architect',
+		period: '2026 - present',
+		summary:
+			'Focus on defense growth, mission modernization, and technical strategy by translating mission-owner friction into customer discovery, capture strategy, systems/software engineering approaches, data and AI opportunities, secure adoption paths, and executable delivery models.',
+		groups: [
+			{
+				title: 'Growth, mission discovery, and modernization strategy',
+				bullets: [
+					'Connect Sabre mission access, customer pain, acquisition paths, technical partners, and delivery credibility into practical modernization opportunities that can be shaped, won, and executed.',
+					'Develop capture and technical artifacts that turn systems engineering, software modernization, data, AI, cyber, and mission-support needs into customer-ready solution narratives.',
+					'Translate product and partner capabilities into federal adoption paths with security, evaluation, integration, sustainment, and transition evidence built into the offer.',
+				],
+			},
+		],
+	},
+	{
 		company: 'KBR',
 		title: 'Senior Technical Strategist / Solutions Architect',
-		period: '2025 - present',
+		period: '2025 - 2026',
 		summary:
-			'Serve as a growth-focused solutions architect for Mission Engineering Technical Operations, converting mission-owner friction into capture strategy, technical artifacts, differentiated value propositions, and executable delivery paths across Navy, DoD, and federal markets.',
+			'Served as a growth-focused solutions architect for Mission Engineering Technical Operations, converting mission-owner friction into capture strategy, technical artifacts, differentiated value propositions, and executable delivery paths across Navy, DoD, and federal markets.',
 		groups: [
 			{
 				title: 'Growth, capture, and mission discovery',
