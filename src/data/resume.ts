@@ -19,12 +19,12 @@ export const RESUME_CLEARANCE = 'Top Secret';
 // Keep these in one place so the homepage section + dedicated pages stay in sync.
 export const experience: ExperienceItem[] = [
 	{
-		slug: 'sabre-systems-senior-technical-strategist-2026',
+		slug: 'sabre-systems-solutions-architect-2026',
 		company: 'Sabre Systems',
-		title: 'Senior Technical Strategist / Solutions Architect',
+		title: 'Solutions Architect',
 		period: '2026 - present',
 		summary:
-			'Support defense growth, mission modernization, and technical strategy by connecting customer discovery, systems and software engineering, data/AI opportunities, secure adoption, capture strategy, and executable delivery paths across Sabre mission portfolios.',
+			'Support defense growth, mission modernization, and solution architecture by connecting customer discovery, systems and software engineering, data/AI opportunities, secure adoption, capture strategy, and executable delivery paths across Sabre mission portfolios.',
 	},
 	{
 		slug: 'kbr-solutions-architect-2025',

@@ -28,17 +28,17 @@ export const fullResumeProfile = {
 };
 
 export const fullResumeSummary = [
-	'Growth-oriented solutions architect and senior technical strategist who helps defense firms turn customer mission friction into funded task orders, qualified captures, technical architectures, and delivery transitions.',
+	'Growth-oriented solutions architect who helps defense firms turn customer mission friction into funded task orders, qualified captures, technical architectures, and delivery transitions.',
 	'Operates between business development and operations: discovery, mission problem, architecture, contract path, capture package, and execution handoff.',
 ];
 
 export const fullResumeExperience: FullResumeRole[] = [
 	{
 		company: 'Sabre Systems',
-		title: 'Senior Technical Strategist / Solutions Architect',
+		title: 'Solutions Architect',
 		period: '2026 - present',
 		summary:
-			'Focus on defense growth, mission modernization, and technical strategy by translating mission-owner friction into customer discovery, capture strategy, systems/software engineering approaches, data and AI opportunities, secure adoption paths, and executable delivery models.',
+			'Focus on defense growth, mission modernization, and solution architecture by translating mission-owner friction into customer discovery, capture strategy, systems/software engineering approaches, data and AI opportunities, secure adoption paths, and executable delivery models.',
 		groups: [
 			{
 				title: 'Growth, mission discovery, and modernization strategy',

@@ -25,8 +25,8 @@ test.describe('career state', () => {
 		);
 
 		expect(personSchema?.worksFor?.name).toBe('Sabre Systems');
-		expect(experienceSchema?.itemListElement?.[0]?.name).toContain('Sabre Systems');
-		await expect(page.locator('p').filter({ hasText: 'Sabre Systems senior technical strategist' })).toBeVisible();
+		expect(experienceSchema?.itemListElement?.[0]?.name).toBe('Sabre Systems — Solutions Architect');
+		await expect(page.locator('p').filter({ hasText: 'Sabre Systems Solutions Architect' })).toBeVisible();
 		await expect(page.getByRole('cell', { name: 'Sabre Systems' })).toBeVisible();
 		await expect(page.getByRole('cell', { name: '2026 - present' })).toBeVisible();
 		await expect(page.getByRole('cell', { name: '2025 - 2026' }).first()).toBeVisible();
@@ -36,10 +36,11 @@ test.describe('career state', () => {
 		await expect(page.getByRole('cell', { name: '2026 - present' })).toBeVisible();
 		await expect(page.getByRole('cell', { name: '2025 - present' })).toHaveCount(0);
 
-		await page.goto(`${BASE}/experience/sabre-systems-senior-technical-strategist-2026/`, {
+		await page.goto(`${BASE}/experience/sabre-systems-solutions-architect-2026/`, {
 			waitUntil: 'domcontentloaded',
 		});
 		await expect(page.getByRole('heading', { name: 'Sabre Systems' })).toBeVisible();
-		await expect(page.getByText('Senior Technical Strategist / Solutions Architect')).toBeVisible();
+		await expect(page.locator('p').filter({ hasText: /^Solutions Architect$/ })).toBeVisible();
+		await expect(page.getByText('Senior Technical Strategist / Solutions Architect')).toHaveCount(0);
 	});
 });
