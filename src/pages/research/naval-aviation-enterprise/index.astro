@@ -1,0 +1,743 @@
+---
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import SurfacePageHeader from '../../../components/SurfacePageHeader.astro';
+import { withBase } from '../../../utils/withBase';
+import researchScriptUrl from '../../../scripts/research-cgcyber-iom.js?url';
+
+const assetBase = '/research/naval-aviation-enterprise/';
+const charts = [
+	{
+		id: 'structure',
+		label: 'Enterprise Structure',
+		src: withBase(`${assetBase}naval-aviation-enterprise-structure.svg`),
+		description:
+			'NAVAIR command, competencies, PEOs, NAWCAD, NAWCWD, COMFRC, test wings, FRC sites, and fleet/acquisition interfaces.',
+		focusX: 0.5,
+		focusY: 0.19,
+	},
+	{
+		id: 'opportunities',
+		label: 'Opportunity Map',
+		src: withBase(`${assetBase}naval-aviation-opportunity-map.svg`),
+		description:
+			'NAWCAD FY26/FY27 forecast rows grouped by C5I, software/data/cyber, PMA support, training, aircraft sustainment, and small-business seams.',
+		focusX: 0.42,
+		focusY: 0.2,
+	},
+	{
+		id: 'companies',
+		label: 'Company Ecosystem',
+		src: withBase(`${assetBase}naval-aviation-company-ecosystem.svg`),
+		description:
+			'Publicly named incumbents from the NAWCAD FY26 Q3 LRAF grouped by C5I/C4I, software, PMA support, sustainment, cyber, M&S, and innovation seams.',
+		focusX: 0.43,
+		focusY: 0.2,
+	},
+];
+
+const tableSections = [
+	{
+		id: 'org',
+		title: 'NAE Org And Public PCO Roster',
+		description:
+			'Public-source NAVAIR / Naval Aviation Enterprise structure, competencies, PEOs, warfare centers, FRC interfaces, and public PCO names pulled from the NAWCAD LRAF.',
+		countAttr: 'data-org-count',
+		searchAttr: 'data-org-search',
+		searchPlaceholder: 'Name, role, code, office, source...',
+		filterAttr: 'data-org-filter',
+		filters: [
+			['Domain', 'All domains'],
+			['Status', 'All statuses'],
+			['IOM Relevance', 'All NAE relevance'],
+			['Confidence', 'All confidence'],
+		],
+		tableAttr: 'data-org-table',
+		bodyAttr: 'data-org-body',
+		sortAttr: 'data-org-sort-key',
+		headers: [
+			['ID', 'ID'],
+			['Node', 'Name / Node'],
+			['Role', 'Role'],
+			['Status', 'Status'],
+			['IOM Relevance', 'NAE relation'],
+			['Code', 'Code / office'],
+			['Domain', 'Domain'],
+			['Type', 'Type'],
+			['Evidence', 'Evidence'],
+			['Confidence', 'Confidence'],
+			['Source Refs', 'Refs'],
+			['Source URL', 'Source'],
+		],
+	},
+	{
+		id: 'contracts',
+		title: 'Forecast Opportunity Rows',
+		description:
+			'Starter opportunity watchlist from the NAWCAD FY26 Q3 Long Range Acquisition Forecast: values, strategies, incumbents, customers, and capture relevance.',
+		countAttr: 'data-contracts-count',
+		searchAttr: 'data-contracts-search',
+		searchPlaceholder: 'Program, prime, award ID, scope...',
+		filterAttr: 'data-contracts-filter',
+		filters: [
+			['Prime', 'All primes'],
+			['Status', 'All statuses'],
+			['IOM Seam / Relevance', 'All opportunity seams'],
+			['Confidence', 'All confidence'],
+		],
+		tableAttr: 'data-contracts-table',
+		bodyAttr: 'data-contracts-body',
+		sortAttr: 'data-contracts-sort-key',
+		headers: [
+			['ID', 'ID'],
+			['Program', 'Program'],
+			['Prime', 'Incumbent'],
+			['Status', 'Status'],
+			['IOM Seam / Relevance', 'NAE seam'],
+			['Award / Forecast ID', 'Award / forecast'],
+			['Value / Term', 'Value / term'],
+			['Scope', 'Scope'],
+			['Confidence', 'Confidence'],
+			['Source Refs', 'Refs'],
+			['Source URL', 'Source'],
+		],
+	},
+	{
+		id: 'competitors',
+		title: 'Incumbent And Company Connections',
+		description:
+			'Companies publicly named in the NAWCAD LRAF, grouped by relevant capability footprint. This is an incumbent/contact ecosystem, not a bidder list.',
+		countAttr: 'data-competitors-count',
+		searchAttr: 'data-competitors-search',
+		searchPlaceholder: 'Company, incumbent role, capability seam...',
+		filterAttr: 'data-competitors-filter',
+		filters: [
+			['Tier', 'All tiers'],
+			['Vehicle', 'All vehicles'],
+			['Confidence', 'All confidence'],
+		],
+		tableAttr: 'data-competitors-table',
+		bodyAttr: 'data-competitors-body',
+		sortAttr: 'data-competitors-sort-key',
+		headers: [
+			['ID', 'ID'],
+			['Entity', 'Entity'],
+			['Tier', 'Tier'],
+			['Recommended Posture', 'Posture'],
+			['Power Base', 'Power base'],
+			['Gap / Vulnerability', 'Gap / risk'],
+			['Vehicle', 'Vehicle'],
+			['Confidence', 'Confidence'],
+			['Source Refs', 'Refs'],
+			['Source URL', 'Source'],
+		],
+	},
+	{
+		id: 'sources',
+		title: 'Source Register',
+		description:
+			'Public-source anchors for this first NAE block. NAVAIR pages that are Cloudflare-blocked locally are retained as source URLs, but extracted facts come from accessible pages/PDFs.',
+		countAttr: 'data-sources-count',
+		searchAttr: 'data-sources-search',
+		searchPlaceholder: 'Source title, use, URL...',
+		filterAttr: 'data-sources-filter',
+		filters: [],
+		tableAttr: 'data-sources-table',
+		bodyAttr: 'data-sources-body',
+		sortAttr: 'data-sources-sort-key',
+		headers: [
+			['ID', 'ID'],
+			['Title', 'Title'],
+			['Use', 'Use'],
+			['URL', 'Source'],
+		],
+	},
+];
+---
+
+<SiteLayout
+	title="Naval Aviation Enterprise Research Atlas"
+	description="Private public-source Naval Aviation Enterprise opportunity and org research atlas."
+	noindex={true}
+	nofollow={true}
+>
+	<section
+		class="research-app"
+		data-cgcyber-research
+		data-org-csv-url={withBase(`${assetBase}naval-aviation-enterprise-org-roster.csv`)}
+		data-contracts-csv-url={withBase(`${assetBase}naval-aviation-enterprise-opportunities.csv`)}
+		data-competitors-csv-url={withBase(`${assetBase}naval-aviation-enterprise-companies.csv`)}
+		data-sources-csv-url={withBase(`${assetBase}naval-aviation-enterprise-source-register.csv`)}
+	>
+		<SurfacePageHeader
+			stickyActive="none"
+			eyebrowLinks={[{ label: 'Research', href: withBase('/research/') }, { label: 'Naval Aviation Enterprise' }]}
+			title="Naval Aviation Enterprise Public-Source Research Atlas"
+			description="Starter capture workspace for the Naval Aviation Enterprise: NAVAIR command structure, PEO/PMA interfaces, NAWCAD opportunity seams, named public PCOs, incumbents, and source register."
+		>
+			<div slot="actions" class="flex flex-wrap gap-2">
+				<a
+					class="ui-link-btn ui-link-btn-primary"
+					href={withBase(`${assetBase}naval-aviation-enterprise-org-roster.csv`)}>Org CSV</a
+				>
+				<a
+					class="ui-link-btn ui-link-btn-muted"
+					href={withBase(`${assetBase}naval-aviation-enterprise-opportunities.csv`)}>Opportunities CSV</a
+				>
+				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}naval-aviation-enterprise-companies.csv`)}
+					>Companies CSV</a
+				>
+			</div>
+		</SurfacePageHeader>
+
+		<div class="research-banner mt-3 border border-teal-400/20 bg-teal-950/20 p-3 text-xs leading-5 text-slate-300">
+			<span class="font-semibold text-teal-100">Noindex research surface.</span>
+			This page is excluded from sitemap/robots and is not linked from the public navigation. It is still a public URL if
+			shared.
+		</div>
+
+		<nav class="research-jump mt-3" aria-label="Research section navigation">
+			<a href={withBase('/research/')}>Research Index</a>
+			<a href="#chart-title">Charts</a>
+			<a href="#org-title">Org / POCs</a>
+			<a href="#contracts-title">Opportunities</a>
+			<a href="#competitors-title">Companies</a>
+			<a href="#sources-title">Sources</a>
+			<a href={withBase('/research/niwc-pac/')}>NIWC PAC</a>
+			<a href={withBase('/research/cgcyber-iom/')}>CGCYBER IOM</a>
+		</nav>
+
+		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5" aria-label="Research summary">
+			<div class="metric-panel">
+				<b>28</b>
+				<span>Org / PCO rows</span>
+			</div>
+			<div class="metric-panel">
+				<b>15</b>
+				<span>Opportunity rows</span>
+			</div>
+			<div class="metric-panel">
+				<b>15</b>
+				<span>Company rows</span>
+			</div>
+			<div class="metric-panel">
+				<b>3</b>
+				<span>SVG charts</span>
+			</div>
+			<div class="metric-panel">
+				<b>9</b>
+				<span>Source records</span>
+			</div>
+			<div class="metric-panel">
+				<b>$500M-$1B</b>
+				<span>Largest LRAF value band</span>
+			</div>
+		</section>
+
+		<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby="chart-title">
+			<div class="flex flex-col gap-3 border-b border-slate-800 p-3 lg:flex-row lg:items-start lg:justify-between">
+				<div class="min-w-0">
+					<h2 id="chart-title" class="text-base font-semibold text-slate-50">Structure Charts</h2>
+					<p class="mt-1 max-w-5xl text-xs leading-5 text-slate-400" data-chart-description>
+						{charts[0].description}
+					</p>
+				</div>
+				<div class="flex flex-wrap gap-2 text-xs" aria-label="Chart view controls">
+					{
+						charts.map((chart, index) => (
+							<button
+								class:list={['chart-tab', index === 0 && 'chart-tab-active']}
+								type="button"
+								data-chart-tab={chart.id}
+								data-chart-src={chart.src}
+								data-chart-tab-description={chart.description}
+								data-chart-focus-x={chart.focusX}
+								data-chart-focus-y={chart.focusY}
+							>
+								{chart.label}
+							</button>
+						))
+					}
+				</div>
+			</div>
+
+			<div class="chart-toolbar border-b border-slate-800 p-3">
+				<div class="flex flex-wrap items-center gap-2">
+					<button type="button" class="control-btn" data-chart-action="zoom-out">Zoom -</button>
+					<button type="button" class="control-btn" data-chart-action="zoom-in">Zoom +</button>
+					<button type="button" class="control-btn" data-chart-action="fit">Fit</button>
+					<button type="button" class="control-btn" data-chart-action="reset">100%</button>
+					<a class="control-btn no-underline" data-chart-download href={charts[0].src}>Open SVG</a>
+					<span class="ui-pill" data-chart-zoom>100%</span>
+				</div>
+			</div>
+
+			<div class="chart-stage" data-chart-stage>
+				<img
+					src={charts[0].src}
+					alt="Naval Aviation Enterprise public research chart"
+					class="chart-image"
+					data-chart-image
+					draggable="false"
+				/>
+			</div>
+		</section>
+
+		{
+			tableSections.map((section) => (
+				<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby={`${section.id}-title`}>
+					<div class="border-b border-slate-800 p-3">
+						<div class="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
+							<div class="min-w-0">
+								<h2 id={`${section.id}-title`} class="text-base font-semibold text-slate-50">
+									{section.title}
+								</h2>
+								<p class="mt-1 max-w-4xl text-xs leading-5 text-slate-400">{section.description}</p>
+							</div>
+							<div class="text-xs text-slate-400">
+								<span {...{ [section.countAttr]: true }}>Loading...</span>
+							</div>
+						</div>
+
+						<div class="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-5">
+							<label class="filter-field md:col-span-2 xl:col-span-1">
+								<span>Search</span>
+								<input type="search" {...{ [section.searchAttr]: true }} placeholder={section.searchPlaceholder} />
+							</label>
+							{section.filters.map(([key, label]) => (
+								<label class="filter-field">
+									<span>{key}</span>
+									<select {...{ [section.filterAttr]: key }}>
+										<option value="">{label}</option>
+									</select>
+								</label>
+							))}
+						</div>
+					</div>
+
+					<div class:list={['roster-table-wrap', `${section.id}-table-wrap`]}>
+						<table class="roster-table" {...{ [section.tableAttr]: true }}>
+							<thead>
+								<tr>
+									{section.headers.map(([key, label]) => (
+										<th>
+											<button type="button" {...{ [section.sortAttr]: key }}>
+												{label}
+											</button>
+										</th>
+									))}
+								</tr>
+							</thead>
+							<tbody {...{ [section.bodyAttr]: true }}>
+								<tr>
+									<td colspan={section.headers.length} class="px-3 py-6 text-center text-sm text-slate-400">
+										Loading...
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
+			))
+		}
+	</section>
+
+	<script type="module" src={researchScriptUrl}></script>
+</SiteLayout>
+
+<style>
+	.research-app {
+		--research-border: rgba(51, 65, 85, 0.92);
+		--research-muted: rgb(148 163 184);
+	}
+
+	.research-banner,
+	.metric-panel,
+	.chart-tab,
+	.control-btn,
+	.filter-field input,
+	.filter-field select {
+		border-radius: 0;
+	}
+
+	.research-jump {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(2, 6, 23, 0.86);
+		padding: 0.65rem;
+	}
+
+	.research-jump a {
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		padding: 0.35rem 0.65rem;
+		color: rgb(203 213 225);
+		font-size: 0.75rem;
+		line-height: 1.2;
+		text-decoration: none;
+	}
+
+	.research-jump a:hover,
+	.research-jump a:focus-visible {
+		border-color: rgba(45, 212, 191, 0.65);
+		color: rgb(240 253 250);
+	}
+
+	.metric-panel {
+		border: 1px solid var(--research-border);
+		background: rgb(2 6 23);
+		padding: 0.85rem;
+	}
+
+	.metric-panel b {
+		display: block;
+		font-size: 1.42rem;
+		line-height: 1.1;
+		color: rgb(248 250 252);
+	}
+
+	.metric-panel span {
+		margin-top: 0.25rem;
+		display: block;
+		font-size: 0.7rem;
+		line-height: 1.25;
+		color: var(--research-muted);
+		text-transform: uppercase;
+	}
+
+	.chart-tab,
+	.control-btn {
+		min-height: 2rem;
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgba(2, 6, 23, 0.88);
+		padding: 0.35rem 0.65rem;
+		color: rgb(203 213 225);
+		line-height: 1.2;
+	}
+
+	.chart-tab:hover,
+	.control-btn:hover {
+		border-color: rgba(45, 212, 191, 0.65);
+		color: rgb(240 253 250);
+	}
+
+	.chart-tab-active {
+		border-color: rgba(45, 212, 191, 0.78);
+		background: rgba(20, 184, 166, 0.2);
+		color: rgb(240 253 250);
+	}
+
+	.chart-stage {
+		position: relative;
+		height: min(72vh, 760px);
+		min-height: 420px;
+		overflow: hidden;
+		background: rgb(248 250 252);
+		cursor: grab;
+		touch-action: none;
+	}
+
+	.chart-stage:active {
+		cursor: grabbing;
+	}
+
+	.chart-image {
+		display: block;
+		max-width: none;
+		transform-origin: 0 0;
+		user-select: none;
+		will-change: transform;
+	}
+
+	.filter-field {
+		display: flex;
+		min-width: 0;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.filter-field span {
+		font-size: 0.68rem;
+		line-height: 1.2;
+		color: var(--research-muted);
+		text-transform: uppercase;
+	}
+
+	.filter-field input,
+	.filter-field select {
+		width: 100%;
+		min-height: 2.35rem;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgba(2, 6, 23, 0.86);
+		padding: 0.45rem 0.6rem;
+		color: rgb(226 232 240);
+		font-size: 0.82rem;
+		line-height: 1.25;
+	}
+
+	.roster-table-wrap {
+		max-height: 72vh;
+		overflow: auto;
+		background:
+			linear-gradient(90deg, rgb(2 6 23), transparent 1.25rem) left/1.25rem 100% no-repeat,
+			rgb(2 6 23);
+		scrollbar-color: rgba(45, 212, 191, 0.48) rgba(15, 23, 42, 0.92);
+	}
+
+	.roster-table {
+		--id-col-width: 4.25rem;
+		--name-col-width: 18rem;
+		width: 100%;
+		min-width: 1560px;
+		border-collapse: separate;
+		border-spacing: 0;
+		font-size: 0.78rem;
+		line-height: 1.42;
+	}
+
+	.sources-table-wrap .roster-table {
+		min-width: 980px;
+	}
+
+	.roster-table th,
+	.research-app :global(.roster-table td) {
+		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
+		padding: 0.62rem 0.7rem;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	.roster-table th {
+		position: sticky;
+		top: 0;
+		z-index: 4;
+		border-bottom-color: rgba(45, 212, 191, 0.28);
+		background: rgb(15 23 42);
+		box-shadow: inset 0 -1px 0 rgba(45, 212, 191, 0.24);
+	}
+
+	.roster-table th button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		color: rgb(226 232 240);
+		font-weight: 600;
+		text-align: left;
+	}
+
+	.roster-table th button::after {
+		content: '';
+		width: 0.36rem;
+		height: 0.36rem;
+		border-right: 1px solid rgba(148, 163, 184, 0.65);
+		border-bottom: 1px solid rgba(148, 163, 184, 0.65);
+		opacity: 0.45;
+		transform: rotate(45deg) translateY(-0.08rem);
+	}
+
+	.roster-table th button[data-sort-state='asc']::after {
+		border-color: rgb(94 234 212);
+		opacity: 1;
+		transform: rotate(225deg) translateY(-0.08rem);
+	}
+
+	.roster-table th button[data-sort-state='desc']::after {
+		border-color: rgb(94 234 212);
+		opacity: 1;
+	}
+
+	.research-app :global(.roster-row) {
+		--row-bg: rgb(2 6 23);
+		--row-accent: rgba(100, 116, 139, 0.75);
+		background: var(--row-bg);
+		color: rgb(203 213 225);
+		outline: none;
+	}
+
+	.research-app :global(.roster-table tbody tr:nth-child(odd)) {
+		--row-bg: rgb(5 13 30);
+	}
+
+	.research-app :global(.roster-table tbody tr:nth-child(even)) {
+		--row-bg: rgb(10 18 36);
+	}
+
+	.research-app :global(.roster-row-current),
+	.research-app :global(.roster-row-official) {
+		--row-accent: rgb(20 184 166);
+	}
+
+	.research-app :global(.roster-row-gap) {
+		--row-accent: rgb(251 146 60);
+	}
+
+	.research-app :global(.roster-row-forecast) {
+		--row-accent: rgb(245 158 11);
+	}
+
+	.research-app :global(.roster-row-historical) {
+		--row-accent: rgb(148 163 184);
+	}
+
+	.research-app :global(.roster-row-unverified) {
+		--row-accent: rgb(248 113 113);
+	}
+
+	.research-app :global(.roster-table tbody tr:hover),
+	.research-app :global(.roster-table tbody tr:focus-visible),
+	.research-app :global(.roster-row-selected) {
+		--row-bg: rgb(20 32 55);
+		box-shadow: inset 0 0 0 1px rgba(45, 212, 191, 0.2);
+		color: rgb(241 245 249);
+	}
+
+	.roster-table th:nth-child(1),
+	.roster-table th:nth-child(2),
+	.research-app :global(.cell-id),
+	.research-app :global(.cell-name) {
+		position: sticky;
+		background: inherit;
+	}
+
+	.roster-table th:nth-child(1),
+	.roster-table th:nth-child(2) {
+		z-index: 5;
+		background: rgb(15 23 42);
+	}
+
+	.roster-table th:nth-child(1),
+	.research-app :global(.cell-id) {
+		left: 0;
+		width: var(--id-col-width);
+		min-width: var(--id-col-width);
+		max-width: var(--id-col-width);
+	}
+
+	.roster-table th:nth-child(2),
+	.research-app :global(.cell-name) {
+		left: var(--id-col-width);
+		width: var(--name-col-width);
+		min-width: var(--name-col-width);
+		max-width: var(--name-col-width);
+		box-shadow: 1px 0 0 rgba(45, 212, 191, 0.12);
+	}
+
+	.research-app :global(.cell-id) {
+		border-left: 3px solid var(--row-accent);
+		color: rgb(148 163 184);
+		font-variant-numeric: tabular-nums;
+	}
+
+	.research-app :global(.cell-name strong) {
+		display: block;
+		color: rgb(248 250 252);
+		font-size: 0.84rem;
+		line-height: 1.35;
+		overflow-wrap: anywhere;
+	}
+
+	.research-app :global(.cell-role),
+	.research-app :global(.cell-evidence) {
+		min-width: 22rem;
+		color: rgb(226 232 240);
+	}
+
+	.research-app :global(.cell-entity),
+	.research-app :global(.cell-type),
+	.research-app :global(.cell-relation) {
+		min-width: 13rem;
+		color: rgb(204 251 241);
+	}
+
+	.research-app :global(.cell-domain),
+	.research-app :global(.cell-confidence),
+	.research-app :global(.cell-source-ref),
+	.research-app :global(.cell-date),
+	.research-app :global(.cell-code),
+	.research-app :global(.cell-id) {
+		color: rgb(148 163 184);
+	}
+
+	.research-app :global(.cell-code) {
+		min-width: 9rem;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.research-app :global(.cell-confidence),
+	.research-app :global(.cell-source-ref) {
+		min-width: 8rem;
+	}
+
+	.research-app :global(.cell-source) {
+		min-width: 9rem;
+		white-space: nowrap;
+	}
+
+	.research-app :global(.status-badge) {
+		display: inline-flex;
+		align-items: center;
+		min-height: 1.35rem;
+		border: 1px solid rgba(148, 163, 184, 0.3);
+		padding: 0.15rem 0.45rem;
+		font-size: 0.68rem;
+		line-height: 1.2;
+		white-space: nowrap;
+	}
+
+	.research-app :global(.status-current),
+	.research-app :global(.status-official) {
+		border-color: rgba(45, 212, 191, 0.45);
+		background: rgba(20, 184, 166, 0.16);
+		color: rgb(204 251 241);
+	}
+
+	.research-app :global(.status-gap) {
+		border-color: rgba(251, 146, 60, 0.45);
+		background: rgba(154, 52, 18, 0.24);
+		color: rgb(255 237 213);
+	}
+
+	.research-app :global(.status-forecast) {
+		border-color: rgba(245, 158, 11, 0.38);
+		background: rgba(120, 53, 15, 0.18);
+		color: rgb(254 243 199);
+	}
+
+	.research-app :global(.status-historical) {
+		border-color: rgba(148, 163, 184, 0.3);
+		background: rgba(71, 85, 105, 0.22);
+		color: rgb(226 232 240);
+	}
+
+	.research-app :global(.status-unverified) {
+		border-color: rgba(248, 113, 113, 0.45);
+		background: rgba(127, 29, 29, 0.22);
+		color: rgb(254 226 226);
+	}
+
+	.source-link {
+		color: rgb(153 246 228);
+		font-weight: 700;
+		text-decoration: underline;
+		text-decoration-color: rgba(45, 212, 191, 0.38);
+		text-underline-offset: 0.18rem;
+	}
+
+	@media (max-width: 720px) {
+		.chart-stage {
+			height: 68vh;
+			min-height: 360px;
+		}
+
+		.roster-table {
+			--name-col-width: 13.5rem;
+			min-width: 1260px;
+			font-size: 0.72rem;
+		}
+
+		.roster-table th,
+		.roster-table td {
+			padding: 0.55rem 0.58rem;
+		}
+	}
+</style>

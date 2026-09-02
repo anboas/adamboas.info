@@ -10,10 +10,14 @@ test.describe('private research surface', () => {
 		await expect(page.getByRole('heading', { name: 'Research' })).toBeVisible();
 		await expect(page.getByRole('link', { name: /NIWC PAC/ })).toHaveAttribute('href', /\/research\/niwc-pac\/$/);
 		await expect(page.getByRole('link', { name: /CGCYBER IOM/ })).toHaveAttribute('href', /\/research\/cgcyber-iom\/$/);
+		await expect(page.getByRole('link', { name: /Naval Aviation Enterprise/ })).toHaveAttribute(
+			'href',
+			/\/research\/naval-aviation-enterprise\/$/,
+		);
 	});
 
 	test('research detail breadcrumbs link back to the hidden index', async ({ page }) => {
-		for (const path of ['/research/niwc-pac/', '/research/cgcyber-iom/']) {
+		for (const path of ['/research/niwc-pac/', '/research/cgcyber-iom/', '/research/naval-aviation-enterprise/']) {
 			await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });
 			const breadcrumb = page.locator('nav[aria-label="Breadcrumb"]').getByRole('link', { name: 'Research' });
 			await expect(breadcrumb).toHaveAttribute('href', /\/research\/$/);
@@ -105,5 +109,36 @@ test.describe('private research surface', () => {
 		await expect(page.locator('[data-competitors-body]')).toContainText('Pursue as prime conditionally');
 		await page.locator('[data-sources-search]').fill('DHS APFS');
 		await expect(page.locator('[data-sources-body]')).toContainText('CGCYBER Integrated Operations Management');
+	});
+
+	test('Naval Aviation Enterprise atlas exposes starter opportunity research', async ({ page }) => {
+		const response = await page.goto(`${BASE}/research/naval-aviation-enterprise/`, { waitUntil: 'networkidle' });
+		expect(response?.status()).toBeLessThan(400);
+		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
+		await expect(
+			page.getByRole('heading', { name: 'Naval Aviation Enterprise Public-Source Research Atlas' }),
+		).toBeVisible();
+		await expect(page.locator('[data-chart-image]')).toBeVisible();
+		await page.getByRole('button', { name: 'Opportunity Map' }).click();
+		await expect(page.locator('[data-chart-description]')).toContainText('NAWCAD FY26/FY27 forecast rows');
+		await expect(page.locator('[data-chart-download]')).toHaveAttribute('href', /naval-aviation-opportunity-map\.svg$/);
+
+		await expect(page.locator('[data-org-count]')).toContainText('28');
+		await expect(page.locator('[data-contracts-count]')).toContainText('15');
+		await expect(page.locator('[data-competitors-count]')).toContainText('15');
+		await expect(page.locator('[data-sources-count]')).toContainText('9');
+
+		await page.locator('[data-org-search]').fill('Lauren Farmer');
+		await expect(page.locator('[data-org-body]')).toContainText('Cyber Warfare Services IDIQ');
+		await page.locator('[data-org-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('TARCES');
+		await expect(page.locator('[data-contracts-body]')).toContainText('SMARTRONIX');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('T-6/T-34');
+		await expect(page.locator('[data-contracts-body]')).toContainText('$500M - $1B');
+		await page.locator('[data-competitors-search]').fill('BAE Systems');
+		await expect(page.locator('[data-competitors-body]')).toContainText('C5ISR integration');
+		await page.locator('[data-sources-search]').fill('NAWCAD FY26 Q3');
+		await expect(page.locator('[data-sources-body]')).toContainText('Long Range Acquisition Forecast');
 	});
 });
