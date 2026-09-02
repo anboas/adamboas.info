@@ -12,6 +12,16 @@ test.describe('private research surface', () => {
 		await expect(page.getByRole('link', { name: /CGCYBER IOM/ })).toHaveAttribute('href', /\/research\/cgcyber-iom\/$/);
 	});
 
+	test('research detail breadcrumbs link back to the hidden index', async ({ page }) => {
+		for (const path of ['/research/niwc-pac/', '/research/cgcyber-iom/']) {
+			await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });
+			const breadcrumb = page.locator('nav[aria-label="Breadcrumb"]').getByRole('link', { name: 'Research' });
+			await expect(breadcrumb).toHaveAttribute('href', /\/research\/$/);
+			await breadcrumb.click();
+			await expect(page).toHaveURL(/\/research\/$/);
+		}
+	});
+
 	test('NIWC PAC atlas exposes chart controls and filterable roster', async ({ page }) => {
 		const response = await page.goto(`${BASE}/research/niwc-pac/`, { waitUntil: 'networkidle' });
 		expect(response?.status()).toBeLessThan(400);
@@ -69,13 +79,22 @@ test.describe('private research surface', () => {
 		await expect(page.getByRole('heading', { name: 'Ten-Day Capture Sprint' })).toHaveCount(0);
 		await expect(page.getByRole('link', { name: 'Source PDF' })).toHaveCount(0);
 
-		await expect(page.locator('[data-org-count]')).toContainText('39');
+		await expect(page.locator('[data-org-count]')).toContainText('46');
 		await expect(page.locator('[data-contracts-count]')).toContainText('18');
 		await expect(page.locator('[data-competitors-count]')).toContainText('11');
-		await expect(page.locator('[data-sources-count]')).toContainText('46');
+		await expect(page.locator('[data-sources-count]')).toContainText('47');
 
 		await page.locator('[data-org-search]').fill('Shantia Allen');
-		await expect(page.locator('[data-org-body]')).toContainText('IOM acquisition POC');
+		await expect(page.locator('[data-org-body]')).toContainText('Shantia.A.Allen@uscg.mil');
+		await page.locator('[data-org-search]').fill('');
+		await page.locator('[data-org-search]').fill('Francis G. Tatu');
+		await expect(page.locator('[data-org-body]')).toContainText('Command Master Chief');
+		await page.locator('[data-org-search]').fill('');
+		await page.locator('[data-org-search]').fill('CG-914');
+		await expect(page.locator('[data-org-body]')).toContainText('C5I Contracting and Procurement');
+		await page.locator('[data-org-search]').fill('');
+		await page.locator('[data-org-search]').fill('Ben Greene');
+		await expect(page.locator('[data-org-body]')).toContainText('Cyber Protection Team');
 		await page.locator('[data-org-search]').fill('');
 		await page.locator('[data-org-filter="IOM Relevance"]').selectOption('Direct IOM / CuOps core');
 		await expect(page.locator('[data-org-body]')).toContainText('CGCC-33 Current Operations');

@@ -19,12 +19,13 @@ type StickyKey =
 interface Props {
 	stickyActive?: StickyKey;
 	eyebrow?: string;
+	eyebrowLinks?: { label: string; href?: string }[];
 	title: string;
 	description?: string;
 	headerClass?: string;
 }
 
-const { stickyActive = 'none', eyebrow, title, description, headerClass = '' } = Astro.props;
+const { stickyActive = 'none', eyebrow, eyebrowLinks = [], title, description, headerClass = '' } = Astro.props;
 
 const showSticky = stickyActive !== 'none';
 const hasActions = Astro.slots.has('actions');
@@ -32,7 +33,13 @@ const hasExtra = Astro.slots.has('default');
 ---
 
 {showSticky ? <StickyBrowseBar active={stickyActive} /> : null}
-<SurfaceHeader eyebrow={eyebrow} title={title} description={description} class={headerClass}>
+<SurfaceHeader
+	eyebrow={eyebrow}
+	eyebrowLinks={eyebrowLinks}
+	title={title}
+	description={description}
+	class={headerClass}
+>
 	{
 		hasActions ? (
 			<div slot="actions">

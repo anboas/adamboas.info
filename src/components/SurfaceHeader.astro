@@ -1,22 +1,37 @@
 ---
 interface Props {
 	eyebrow?: string;
+	eyebrowLinks?: { label: string; href?: string }[];
 	title: string;
 	description?: string;
 	class?: string;
 }
 
-const { eyebrow, title, description, class: className = '' } = Astro.props;
+const { eyebrow, eyebrowLinks = [], title, description, class: className = '' } = Astro.props;
 const hasActions = Astro.slots.has('actions');
 const hasExtra = Astro.slots.has('default');
 const descriptionText = typeof description === 'string' ? description.trim() : '';
 const hasDescription = Boolean(descriptionText);
+const hasBreadcrumb = eyebrowLinks.length > 0;
 ---
 
 <section class={`surface-header ${className}`.trim()}>
 	<div class="surface-header-row">
 		<div class="surface-header-main">
-			{eyebrow ? <p class="surface-header-eyebrow">{eyebrow}</p> : null}
+			{
+				hasBreadcrumb ? (
+					<nav class="surface-header-eyebrow surface-header-breadcrumb" aria-label="Breadcrumb">
+						{eyebrowLinks.map((item, index) => (
+							<>
+								{index > 0 ? <span aria-hidden="true">/</span> : null}
+								{item.href ? <a href={item.href}>{item.label}</a> : <span>{item.label}</span>}
+							</>
+						))}
+					</nav>
+				) : eyebrow ? (
+					<p class="surface-header-eyebrow">{eyebrow}</p>
+				) : null
+			}
 			<h1 class="surface-header-title">{title}</h1>
 			<p class:list={['surface-header-description', !hasDescription && 'surface-header-description-placeholder']}>
 				{hasDescription ? descriptionText : '\u00A0'}
@@ -62,6 +77,22 @@ const hasDescription = Boolean(descriptionText);
 		text-transform: uppercase;
 		letter-spacing: 0.14em;
 		color: rgb(100 116 139);
+	}
+	.surface-header-breadcrumb {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.45rem;
+	}
+	.surface-header-breadcrumb a {
+		color: rgb(125 211 252);
+		text-decoration: none;
+		text-underline-offset: 0.2em;
+	}
+	.surface-header-breadcrumb a:hover,
+	.surface-header-breadcrumb a:focus-visible {
+		color: rgb(204 251 241);
+		text-decoration: underline;
 	}
 	.surface-header-title {
 		margin-top: 0.25rem;

@@ -10,7 +10,8 @@ const charts = [
 		id: 'authority',
 		label: 'Authority / Customer',
 		src: withBase(`${assetBase}cgcyber-authority-org.svg`),
-		description: 'DHS, Coast Guard, CGCYBER, DCS, PEO C5I/Cyber, C5ISC, acquisition, and technology interfaces.',
+		description:
+			'DHS, Coast Guard, CG-C5I, CGCYBER, DCS, PEO C5I/Cyber, C5ISC, acquisition, contracting, and technology interfaces.',
 		focusX: 0.49,
 		focusY: 0.19,
 	},
@@ -18,7 +19,8 @@ const charts = [
 		id: 'operations',
 		label: 'Operations / C5ISC',
 		src: withBase(`${assetBase}cgcyber-operations-structure.svg`),
-		description: 'CGCC-2/3/33/35/36/37/AA operating structure with the highest C5ISC interface seams.',
+		description:
+			'CGCC-2/3/33/35/36/37/AA operating structure, senior workforce signals, exercise readiness, and the highest C5ISC interface seams.',
 		focusX: 0.43,
 		focusY: 0.2,
 	},
@@ -27,7 +29,7 @@ const charts = [
 		label: 'Contract Ecosystem',
 		src: withBase(`${assetBase}cgcyber-contract-ecosystem.svg`),
 		description:
-			'IOM target opportunity, legacy NOSC/CND lineage, IARMS, IMS/IPSS, C5I apps, C5ISR, VIA, BLMSS, and OEM/training seams.',
+			'IOM target opportunity, APFS/CG-914 buyer metadata, legacy NOSC/CND lineage, IARMS, IMS/IPSS, C5I apps, C5ISR, VIA, BLMSS, and OEM/training seams.',
 		focusX: 0.43,
 		focusY: 0.2,
 	},
@@ -38,7 +40,7 @@ const tableSections = [
 		id: 'org',
 		title: 'Government POC And Org Roster',
 		description:
-			'Public-source CGCYBER, acquisition, systems, C5ISC, and technology roles. Offices remain offices where no public incumbent is known.',
+			'Public-source CGCYBER, acquisition, systems, C5ISC, contracting, workforce, exercise, and technology roles. Offices remain offices where no public incumbent is known.',
 		countAttr: 'data-org-count',
 		searchAttr: 'data-org-search',
 		searchPlaceholder: 'Name, role, code, office, source...',
@@ -132,7 +134,7 @@ const tableSections = [
 	{
 		id: 'sources',
 		title: 'Source Register',
-		description: 'All public-source anchors carried over from the PDF package.',
+		description: 'Public-source anchors carried over from the PDF package plus this follow-on contact pass.',
 		countAttr: 'data-sources-count',
 		searchAttr: 'data-sources-search',
 		searchPlaceholder: 'Source title, use, URL...',
@@ -167,9 +169,9 @@ const tableSections = [
 	>
 		<SurfacePageHeader
 			stickyActive="none"
-			eyebrow="Research / CGCYBER IOM"
+			eyebrowLinks={[{ label: 'Research', href: withBase('/research/') }, { label: 'CGCYBER IOM' }]}
 			title="CGCYBER IOM Public-Source Research Atlas"
-			description="Interactive capture workspace for the Coast Guard Cyber Command Integrated Operations Management forecast: org structure, government POCs, contract ecosystem, competitor field, and source register."
+			description="Interactive capture workspace for the Coast Guard Cyber Command Integrated Operations Management forecast: org structure, government POCs, contracting/workforce interfaces, contract ecosystem, competitor field, and source register."
 		>
 			<div slot="actions" class="flex flex-wrap gap-2">
 				<a class="ui-link-btn ui-link-btn-primary" href={withBase(`${assetBase}cgcyber-iom-org-roster.csv`)}>Org CSV</a>
@@ -208,7 +210,7 @@ const tableSections = [
 				<span>Forecast RFQ</span>
 			</div>
 			<div class="metric-panel">
-				<b>39</b>
+				<b>46</b>
 				<span>Org / POC rows</span>
 			</div>
 			<div class="metric-panel">
@@ -220,7 +222,7 @@ const tableSections = [
 				<span>Competitor rows</span>
 			</div>
 			<div class="metric-panel">
-				<b>46</b>
+				<b>47</b>
 				<span>Source records</span>
 			</div>
 		</section>
