@@ -655,8 +655,8 @@ const orgRows = [
 		'PCO listed on PMA support rows',
 		'Public PCO',
 		'PEO(A) / PEO(T)',
-		'PMA-275, PMA-276, PMA-273 support',
-		'PCO for PMA-275, PMA-276, and PMA-273 program-management support forecast rows.',
+		'PMA-275, PMA-272, PMA-276, PMA-273 support',
+		'PCO for PMA-275, PMA-272, PMA-276, and PMA-273 program-management support forecast rows.',
 		'High',
 		'S4',
 		sourceUrl.nawcadLraf,
@@ -1472,6 +1472,22 @@ const opportunityRows = [
 		'S4',
 		sourceUrl.nawcadLraf,
 	],
+	[
+		'44',
+		'PMA-272 Program Management Contractor Support Services',
+		'PEO(T) / PMA-272 Advanced Tactical Aircraft Protection Systems',
+		'$50M - $100M',
+		'SeaPort',
+		'FY27 QTR1',
+		'FY28 QTR1',
+		'StraCon Services Group',
+		'N00421-18-D-0054',
+		'Aircraft protection systems PM support',
+		'Program-management contractor-support services for Advanced Tactical Aircraft Protection Systems.',
+		'Forecast / small business',
+		'S4',
+		sourceUrl.nawcadLraf,
+	],
 ];
 
 const companyRows = [
@@ -1511,10 +1527,10 @@ const companyRows = [
 	[
 		'4',
 		'StraCon',
-		'Current incumbent listed for PMA-275 support',
-		'V-22 program support',
-		'$50M - $100M PMA-275 forecast',
-		'Current support footprint around V-22/Osprey PMA.',
+		'Current incumbent listed for PMA-275, PMA-272, and PMA-273 support',
+		'V-22, tactical aircraft protection, and training aircraft program support',
+		'Multiple $10M - $100M PMA support forecast rows',
+		'Current support footprint around V-22/Osprey, Advanced Tactical Aircraft Protection Systems, and Naval Undergraduate Flight Training Systems PMAs.',
 		'High',
 		'S4',
 		sourceUrl.nawcadLraf,
@@ -1801,7 +1817,12 @@ function box(x, y, width, height, title, subtitle, tone = 'node') {
 }
 
 function line(x1, y1, x2, y2, dashed = false) {
-	return `<path d="M ${x1} ${y1} C ${(x1 + x2) / 2} ${y1}, ${(x1 + x2) / 2} ${y2}, ${x2} ${y2}" class="connector${dashed ? ' dashed' : ''}"/>`;
+	const midX = Math.round((x1 + x2) / 2);
+	return `<path d="M ${x1} ${y1} H ${midX} V ${y2} H ${x2}" class="connector${dashed ? ' dashed' : ''}"/>`;
+}
+
+function branch(x1, y1, x2, y2, busY, dashed = false) {
+	return `<path d="M ${x1} ${y1} V ${busY} H ${x2} V ${y2}" class="connector${dashed ? ' dashed' : ''}"/>`;
 }
 
 function svgShell(width, height, title, subtitle, content) {
@@ -1812,8 +1833,8 @@ function svgShell(width, height, title, subtitle, content) {
 svg{background:#f8fafc;color:#0f172a;font-family:Arial,Helvetica,sans-serif}
 .title{font-size:26px;font-weight:700;fill:#0f172a}
 .subtitle{font-size:13px;fill:#475569}
-.connector{fill:none;stroke:#64748b;stroke-width:2;marker-end:url(#arrow)}
-.dashed{stroke-dasharray:7 6}
+.connector{fill:none;stroke:#475569;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow);opacity:.74}
+.dashed{stroke-dasharray:7 7;opacity:.52}
 .box rect{fill:#fff;stroke:#cbd5e1;stroke-width:1.4}
 .box .accent{stroke:#64748b;stroke-width:5}
 .authority rect{fill:#ecfeff}.authority .accent{stroke:#0891b2}
@@ -1826,7 +1847,7 @@ svg{background:#f8fafc;color:#0f172a;font-family:Arial,Helvetica,sans-serif}
 .box-subtitle{font-size:11px;fill:#475569}
 .legend{font-size:12px;fill:#475569}
 </style>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/></marker></defs>
 <text x="28" y="38" class="title">${esc(title)}</text>
 <text x="28" y="60" class="subtitle">${esc(subtitle)}</text>
 ${content}
@@ -1858,24 +1879,18 @@ const structureSvg = svgShell(
 		box(870, 300, 220, 92, 'Test & Evaluation', 'Chief Tester', 'delivery'),
 		box(1120, 300, 220, 92, 'Logistics & Industrial Ops', 'Chief Material Readiness', 'delivery'),
 		box(1370, 300, 220, 92, 'Comptroller / Counsel / Ops', 'Staff and governance', 'delivery'),
-		...[230, 480, 730, 980, 1230, 1480].map((x) => line(880, 204, x, 300)),
+		...[230, 480, 730, 980, 1230, 1480].map((x) => branch(880, 204, x, 300, 260)),
 		box(160, 520, 240, 92, 'PEO(A)', 'BGen David Walsh / 10 offices', 'peo'),
 		box(440, 520, 240, 92, 'PEO(T)', 'Tactical Aircraft / 12 offices', 'peo'),
 		box(720, 520, 240, 92, 'PEO(U&W)', 'RADM Tony Rossi / 12-office portfolio', 'peo'),
 		box(1000, 520, 240, 92, 'PEO(F-35)', 'Joint Strike Fighter JPO', 'peo'),
-		line(880, 204, 280, 520),
-		line(880, 204, 560, 520),
-		line(880, 204, 840, 520),
-		line(880, 204, 1120, 520),
+		...[280, 560, 840, 1120].map((x) => branch(880, 204, x, 520, 480)),
 		box(220, 760, 270, 104, 'NAWCAD', 'Patuxent River / Lakehurst / Orlando', 'delivery'),
 		box(550, 760, 260, 104, 'NAWCWD', 'China Lake / Point Mugu', 'delivery'),
 		box(870, 760, 270, 104, 'COMFRC', 'CAPT Joseph Hidalgo / FRC sites', 'delivery'),
 		box(1200, 760, 260, 104, 'Test Wings / NAWCTSD', 'Atlantic, Pacific, training systems', 'delivery'),
 		box(1510, 760, 220, 104, 'FRC sites', 'East, SE, SW, WP, West, NW, MA, Reserve', 'delivery'),
-		line(880, 204, 355, 760),
-		line(880, 204, 680, 760),
-		line(880, 204, 1005, 760),
-		line(880, 204, 1330, 760),
+		...[355, 680, 1005, 1330].map((x) => branch(880, 204, x, 760, 720)),
 		line(1005, 864, 1510, 812, true),
 		'<text x="60" y="1018" class="legend">Solid lines: public org / authority relationships. Dashed lines: operational, industry, OSBP, or subordinate interfaces. Named leaders are public-source current/historical where labeled.</text>',
 	].join('\n'),
@@ -1885,7 +1900,7 @@ const opportunitySvg = svgShell(
 	1900,
 	1120,
 	'NAWCAD FY26-FY28 opportunity map',
-	'Forty-three forecast rows grouped by likely opportunity seam from the FY26 Q3 Long Range Acquisition Forecast.',
+	'Forty-four forecast rows grouped by likely opportunity seam from the FY26 Q3 Long Range Acquisition Forecast.',
 	[
 		box(70, 120, 270, 90, 'LRAF / SAM route', 'Planning source; official notices in SAM', 'authority'),
 		box(450, 90, 300, 118, 'NAWCAD WOLF C5I / oLSI', 'TARCES, EXCOMM, Aegis, ICS, MSI', 'opportunity'),
@@ -1898,7 +1913,7 @@ const opportunitySvg = svgShell(
 			'Apps, NBO ERP, BES, M&S, Cyber, software engineering',
 			'opportunity',
 		),
-		box(450, 450, 300, 118, 'PEO / PMA support', 'PMA-209, 231, 261, 265, 273, 274, 276, 290', 'opportunity'),
+		box(450, 450, 300, 118, 'PEO / PMA support', 'PMA-209, 231, 261, 265, 272, 273, 274, 276, 290', 'opportunity'),
 		box(
 			450,
 			630,
@@ -1930,7 +1945,7 @@ const opportunitySvg = svgShell(
 		box(1400, 660, 360, 110, 'Timing lane', 'FY26 Q4 through FY28 Q3 release wave', 'command'),
 		box(1400, 840, 360, 110, 'Proof lane', 'Aircraft readiness, cyber, software and mission outcomes', 'command'),
 		...[175, 355, 535, 715, 895].map((y) => line(1220, y, 1400, y, true)),
-		'<text x="70" y="1065" class="legend">Values and timing are planning signals from LRAF, not guaranteed solicitations. Forty-three rows are grouped for capture triage, not ranked as opportunities.</text>',
+		'<text x="70" y="1065" class="legend">Values and timing are planning signals from LRAF, not guaranteed solicitations. Forty-four rows are grouped for capture triage, not ranked as opportunities.</text>',
 	].join('\n'),
 );
 
@@ -1991,7 +2006,7 @@ const companySvg = svgShell(
 			280,
 			150,
 			'Expanded evidence pass',
-			'Leadership, OSBP routes, 43 LRAF rows, 25 incumbents, 14 sources.',
+			'Leadership, OSBP routes, 44 LRAF rows, 25 incumbents, 15 sources.',
 			'authority',
 		),
 		line(1320, 132, 1450, 360, true),

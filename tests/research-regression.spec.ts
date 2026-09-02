@@ -120,11 +120,11 @@ test.describe('private research surface', () => {
 		).toBeVisible();
 		await expect(page.locator('[data-chart-image]')).toBeVisible();
 		await page.getByRole('button', { name: 'Opportunity Map' }).click();
-		await expect(page.locator('[data-chart-description]')).toContainText('Forty-three NAWCAD FY26-FY28');
+		await expect(page.locator('[data-chart-description]')).toContainText('Forty-four NAWCAD FY26-FY28');
 		await expect(page.locator('[data-chart-download]')).toHaveAttribute('href', /naval-aviation-opportunity-map\.svg$/);
 
 		await expect(page.locator('[data-org-count]')).toContainText('55');
-		await expect(page.locator('[data-contracts-count]')).toContainText('43');
+		await expect(page.locator('[data-contracts-count]')).toContainText('44');
 		await expect(page.locator('[data-competitors-count]')).toContainText('25');
 		await expect(page.locator('[data-sources-count]')).toContainText('15');
 
@@ -142,6 +142,9 @@ test.describe('private research surface', () => {
 		await page.locator('[data-contracts-search]').fill('');
 		await page.locator('[data-contracts-search]').fill('PMA-290');
 		await expect(page.locator('[data-contracts-body]')).toContainText('$200M - $500M');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('PMA-272');
+		await expect(page.locator('[data-contracts-body]')).toContainText('Advanced Tactical Aircraft Protection');
 		await page.locator('[data-contracts-search]').fill('');
 		await page.locator('[data-contracts-search]').fill('AIRWorks');
 		await expect(page.locator('[data-contracts-body]')).toContainText('$250M - $500M');
