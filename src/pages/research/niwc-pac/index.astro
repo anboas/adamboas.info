@@ -30,6 +30,15 @@ const charts = [
 		focusX: 0.45,
 		focusY: 0.15,
 	},
+	{
+		id: 'forward-slope',
+		label: 'Forward Slope Lineage',
+		src: withBase(`${assetBase}forward-slope-lineage.svg`),
+		description:
+			'Forward Slope / Accelint / Lyntris ownership lineage, Application Arsenal award trail, and NIWC C2 adjacency.',
+		focusX: 0.5,
+		focusY: 0.2,
+	},
 ];
 ---
 
@@ -39,18 +48,26 @@ const charts = [
 	noindex={true}
 	nofollow={true}
 >
-	<section class="research-app" data-niwc-research data-csv-url={withBase(`${assetBase}niwc-pacific-org-roster.csv`)}>
+	<section
+		class="research-app"
+		data-niwc-research
+		data-csv-url={withBase(`${assetBase}niwc-pacific-org-roster.csv`)}
+		data-connections-csv-url={withBase(`${assetBase}forward-slope-connections.csv`)}
+	>
 		<SurfacePageHeader
 			stickyActive="none"
 			eyebrow="Research / NIWC PAC"
 			title="NIWC Pacific Public Org Atlas"
-			description="Interactive public-source structure map for NIWC Pacific, Code 53 / Code 532, Application Arsenal, and adjacent program/acquisition interfaces."
+			description="Interactive public-source structure map for NIWC Pacific, Code 53 / Code 532, Application Arsenal, adjacent program/acquisition interfaces, and the Forward Slope / Accelint / Lyntris lineage behind the AA support trail."
 		>
 			<div slot="actions" class="flex flex-wrap gap-2">
 				<a class="ui-link-btn ui-link-btn-primary" href={withBase(`${assetBase}niwc-pacific-org-roster.csv`)}>CSV</a>
 				<a
 					class="ui-link-btn ui-link-btn-muted"
 					href={withBase(`${assetBase}niwc-pacific-application-arsenal-poc-matrix-augmented.xlsx`)}>Workbook</a
+				>
+				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}forward-slope-connections.csv`)}
+					>Lineage CSV</a
 				>
 				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}full-report-export.png`)}>PNG</a>
 			</div>
@@ -126,11 +143,83 @@ const charts = [
 			<div class="chart-stage" data-chart-stage>
 				<img
 					src={charts[0].src}
-					alt="NIWC Pacific internal public structure chart"
+					alt="NIWC Pacific public research chart"
 					class="chart-image"
 					data-chart-image
 					draggable="false"
 				/>
+			</div>
+		</section>
+
+		<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby="connections-title">
+			<div class="border-b border-slate-800 p-3">
+				<div class="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
+					<div class="min-w-0">
+						<h2 id="connections-title" class="text-base font-semibold text-slate-50">
+							Forward Slope Lineage Connections
+						</h2>
+						<p class="mt-1 max-w-4xl text-xs leading-5 text-slate-400">
+							Public corporate lineage, award trail, executives, contract contacts, and NIWC / Application Arsenal
+							relevance. Direct AA evidence is separated from broader C2 or corporate context.
+						</p>
+					</div>
+					<div class="text-xs text-slate-400">
+						<span data-connections-count>Loading connections...</span>
+					</div>
+				</div>
+
+				<div class="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-5">
+					<label class="filter-field md:col-span-2 xl:col-span-1">
+						<span>Search</span>
+						<input type="search" data-connections-search placeholder="Company, person, award, source..." />
+					</label>
+					<label class="filter-field">
+						<span>Entity</span>
+						<select data-connections-filter="Entity"><option value="">All entities</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Type</span>
+						<select data-connections-filter="Type"><option value="">All types</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Relevance</span>
+						<select data-connections-filter="AA / NIWC PAC Relevance"><option value="">All relevance</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Confidence</span>
+						<select data-connections-filter="Confidence"><option value="">All confidence</option></select>
+					</label>
+				</div>
+			</div>
+
+			<div class="roster-table-wrap connections-table-wrap">
+				<table class="roster-table connections-table" data-connections-table>
+					<thead>
+						<tr>
+							<th><button type="button" data-connections-sort-key="ID">ID</button></th>
+							<th><button type="button" data-connections-sort-key="Person / Node">Person / Node</button></th>
+							<th><button type="button" data-connections-sort-key="Entity">Entity</button></th>
+							<th><button type="button" data-connections-sort-key="Type">Type</button></th>
+							<th>
+								<button type="button" data-connections-sort-key="Public Role / Relationship">Role / relationship</button
+								>
+							</th>
+							<th><button type="button" data-connections-sort-key="Connection / Evidence">Evidence</button></th>
+							<th
+								><button type="button" data-connections-sort-key="AA / NIWC PAC Relevance">AA / NIWC relevance</button
+								></th
+							>
+							<th><button type="button" data-connections-sort-key="Confidence">Confidence</button></th>
+							<th><button type="button" data-connections-sort-key="Source Date">Source date</button></th>
+							<th>Source</th>
+						</tr>
+					</thead>
+					<tbody data-connections-body>
+						<tr>
+							<td colspan="10" class="px-3 py-6 text-center text-sm text-slate-400"> Loading connections... </td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</section>
 
@@ -330,6 +419,10 @@ const charts = [
 		line-height: 1.42;
 	}
 
+	.connections-table {
+		min-width: 1680px;
+	}
+
 	.roster-table th,
 	.research-app :global(.roster-table td) {
 		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
@@ -473,6 +566,17 @@ const charts = [
 		color: rgb(226 232 240);
 	}
 
+	.research-app :global(.cell-entity),
+	.research-app :global(.cell-type) {
+		min-width: 12rem;
+		color: rgb(203 213 225);
+	}
+
+	.research-app :global(.cell-evidence) {
+		min-width: 24rem;
+		color: rgb(226 232 240);
+	}
+
 	.research-app :global(.cell-relation) {
 		min-width: 13rem;
 		color: rgb(204 251 241);
@@ -495,6 +599,11 @@ const charts = [
 
 	.research-app :global(.cell-confidence) {
 		min-width: 10rem;
+	}
+
+	.research-app :global(.cell-source) {
+		min-width: 9rem;
+		white-space: nowrap;
 	}
 
 	.research-app :global(.cell-hierarchy),
@@ -550,6 +659,10 @@ const charts = [
 
 	.source-link {
 		color: rgb(153 246 228);
+		font-weight: 700;
+		text-decoration: underline;
+		text-decoration-color: rgba(45, 212, 191, 0.38);
+		text-underline-offset: 0.18rem;
 	}
 
 	@media (max-width: 720px) {

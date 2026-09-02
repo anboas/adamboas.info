@@ -20,8 +20,17 @@ test.describe('private research surface', () => {
 		await expect(page.getByRole('button', { name: 'Code 53 / 532 / AA' })).toBeVisible();
 		await page.getByRole('button', { name: 'Code 53 / 532 / AA' }).click();
 		await expect(page.locator('[data-chart-description]')).toContainText('Application Arsenal drilldown');
+		await page.getByRole('button', { name: 'Forward Slope Lineage' }).click();
+		await expect(page.locator('[data-chart-description]')).toContainText('Accelint');
+		await expect(page.locator('[data-chart-download]')).toHaveAttribute('href', /forward-slope-lineage\.svg$/);
+		await expect(page.locator('[data-connections-count]')).toContainText('30');
+		await page.locator('[data-connections-search]').fill('N6600123F3509');
+		await expect(page.locator('[data-connections-body]')).toContainText('Application Arsenal');
+		await page.locator('[data-connections-search]').fill('');
+		await page.locator('[data-connections-filter="AA / NIWC PAC Relevance"]').selectOption('Direct AA / NIWC PAC');
+		await expect(page.locator('[data-connections-body]')).toContainText('PEOC4I Storefront / Application Arsenal');
 		await expect(page.locator('[data-roster-count]')).toContainText('145');
-		await expect(page.locator('.roster-table thead th button').nth(1)).toHaveText('Name / Node');
+		await expect(page.locator('[data-roster-table] thead th button').nth(1)).toHaveText('Name / Node');
 		const firstTwoRows = page.locator('[data-roster-body] tr').filter({ has: page.locator('td') });
 		await expect(firstTwoRows.first()).toHaveClass(/roster-row/);
 		await expect(firstTwoRows.first().locator('td').nth(1)).toContainText('CAPT Kris De Soto');

@@ -16,6 +16,19 @@ const tableColumnMeta = [
 
 const tableColumns = tableColumnMeta.map((column) => column.key);
 
+const connectionColumnMeta = [
+	{ key: 'ID', className: 'cell-id' },
+	{ key: 'Person / Node', className: 'cell-name' },
+	{ key: 'Entity', className: 'cell-entity' },
+	{ key: 'Type', className: 'cell-type' },
+	{ key: 'Public Role / Relationship', className: 'cell-role' },
+	{ key: 'Connection / Evidence', className: 'cell-evidence' },
+	{ key: 'AA / NIWC PAC Relevance', className: 'cell-relation' },
+	{ key: 'Confidence', className: 'cell-confidence' },
+	{ key: 'Source Date', className: 'cell-date' },
+	{ key: 'Source URL', className: 'cell-source' },
+];
+
 const internalDomains = new Set([
 	'NIWC PAC core hierarchy',
 	'NIWC PAC deep-code map',
@@ -80,6 +93,18 @@ function statusKey(value) {
 	return 'other';
 }
 
+function relevanceKey(value) {
+	const relevance = String(value ?? '').toLowerCase();
+	if (relevance.includes('direct aa')) return 'current';
+	if (relevance.includes('recompete')) return 'official';
+	if (relevance.includes('gap') || relevance.includes('no named')) return 'gap';
+	if (relevance.includes('niwc') || relevance.includes('c2')) return 'dated';
+	if (relevance.includes('corporate') || relevance.includes('executive') || relevance.includes('contact')) {
+		return 'historical';
+	}
+	return 'other';
+}
+
 function escapeHtml(value) {
 	return String(value ?? '')
 		.replaceAll('&', '&amp;')
@@ -87,6 +112,22 @@ function escapeHtml(value) {
 		.replaceAll('>', '&gt;')
 		.replaceAll('"', '&quot;')
 		.replaceAll("'", '&#39;');
+}
+
+function renderSourceLinks(value) {
+	const urls = String(value ?? '')
+		.split(';')
+		.map((url) => url.trim())
+		.filter(Boolean);
+	if (!urls.length) return '';
+	return urls
+		.map((url, index) => {
+			const safeUrl = escapeHtml(url);
+			const label = urls.length === 1 ? 'Source' : `Source ${index + 1}`;
+			if (!/^https?:\/\//i.test(url)) return escapeHtml(url);
+			return `<a class="source-link" href="${safeUrl}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+		})
+		.join(' ');
 }
 
 function sortValue(row, key) {
@@ -327,7 +368,114 @@ function initRoster(root) {
 		});
 }
 
+function initConnections(root) {
+	const body = root.querySelector('[data-connections-body]');
+	const count = root.querySelector('[data-connections-count]');
+	const search = root.querySelector('[data-connections-search]');
+	const filterInputs = [...root.querySelectorAll('[data-connections-filter]')];
+	const sortButtons = [...root.querySelectorAll('[data-connections-sort-key]')];
+	let rows = [];
+	let sortKey = 'ID';
+	let sortDirection = 'asc';
+
+	function populateFilters() {
+		filterInputs.forEach((input) => {
+			const key = input.dataset.connectionsFilter;
+			const values = [...new Set(rows.map((row) => row[key]).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+			input.insertAdjacentHTML(
+				'beforeend',
+				values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join(''),
+			);
+		});
+	}
+
+	function filteredRows() {
+		const query = search.value.trim().toLowerCase();
+		const activeFilters = filterInputs
+			.map((input) => [input.dataset.connectionsFilter, input.value])
+			.filter(([, value]) => value);
+		return rows.filter((row) => {
+			if (query && !Object.values(row).join(' ').toLowerCase().includes(query)) return false;
+			return activeFilters.every(([key, value]) => row[key] === value);
+		});
+	}
+
+	function render() {
+		const visible = filteredRows().sort((a, b) => {
+			const av = sortValue(a, sortKey);
+			const bv = sortValue(b, sortKey);
+			const comparison = av > bv ? 1 : av < bv ? -1 : 0;
+			return sortDirection === 'asc' ? comparison : -comparison;
+		});
+		count.textContent = `${visible.length} of ${rows.length} rows`;
+		sortButtons.forEach((button) => {
+			const active = button.dataset.connectionsSortKey === sortKey;
+			button.dataset.sortState = active ? sortDirection : '';
+			button
+				.closest('th')
+				?.setAttribute('aria-sort', active ? (sortDirection === 'asc' ? 'ascending' : 'descending') : 'none');
+		});
+		if (!visible.length) {
+			body.innerHTML =
+				'<tr><td colspan="10" class="px-3 py-6 text-center text-sm text-slate-400">No connections match.</td></tr>';
+			return;
+		}
+		body.innerHTML = visible
+			.map((row) => {
+				const rowStatus = relevanceKey(row['AA / NIWC PAC Relevance']);
+				const cells = connectionColumnMeta.map(({ key, className }) => {
+					if (key === 'Source URL') return `<td class="${className}">${renderSourceLinks(row[key])}</td>`;
+					const value = escapeHtml(row[key]);
+					if (key === 'AA / NIWC PAC Relevance') {
+						return `<td class="${className}"><span class="status-badge status-${rowStatus}">${value}</span></td>`;
+					}
+					if (key === 'Person / Node') return `<td class="${className}"><strong>${value}</strong></td>`;
+					return `<td class="${className}">${value}</td>`;
+				});
+				return `<tr class="roster-row roster-row-${rowStatus}" tabindex="0">${cells.join('')}</tr>`;
+			})
+			.join('');
+	}
+
+	sortButtons.forEach((button) => {
+		button.addEventListener('click', () => {
+			const nextKey = button.dataset.connectionsSortKey;
+			if (sortKey === nextKey) {
+				sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+			} else {
+				sortKey = nextKey;
+				sortDirection = 'asc';
+			}
+			render();
+		});
+	});
+	search.addEventListener('input', render);
+	filterInputs.forEach((input) => input.addEventListener('change', render));
+	body.addEventListener('click', (event) => {
+		const row = event.target.closest('.roster-row');
+		if (!row) return;
+		body.querySelectorAll('.roster-row-selected').forEach((item) => item.classList.remove('roster-row-selected'));
+		row.classList.add('roster-row-selected');
+	});
+
+	fetch(root.dataset.connectionsCsvUrl)
+		.then((response) => {
+			if (!response.ok) throw new Error(`Connections CSV load failed: ${response.status}`);
+			return response.text();
+		})
+		.then((text) => {
+			rows = parseCsv(text);
+			populateFilters();
+			render();
+		})
+		.catch((error) => {
+			body.innerHTML = `<tr><td colspan="10" class="px-3 py-6 text-center text-sm text-red-200">${escapeHtml(error.message)}</td></tr>`;
+			count.textContent = 'Connections unavailable';
+		});
+}
+
 if (app) {
 	initCharts(app);
 	initRoster(app);
+	initConnections(app);
 }
