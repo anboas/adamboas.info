@@ -79,6 +79,14 @@ const charts = [
 			shared.
 		</div>
 
+		<nav class="research-jump mt-3" aria-label="Research section navigation">
+			<a href={withBase('/research/')}>Research Index</a>
+			<a href="#chart-title">Charts</a>
+			<a href="#connections-title">Forward Slope</a>
+			<a href="#roster-title">Org Roster</a>
+			<a href={withBase('/research/cgcyber-iom/')}>CGCYBER IOM</a>
+		</nav>
+
 		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5" aria-label="Research summary">
 			<div class="metric-panel">
 				<b data-metric="rows">145</b>
@@ -305,6 +313,30 @@ const charts = [
 	.filter-field input,
 	.filter-field select {
 		border-radius: 0;
+	}
+
+	.research-jump {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(2, 6, 23, 0.86);
+		padding: 0.65rem;
+	}
+
+	.research-jump a {
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		padding: 0.35rem 0.65rem;
+		color: rgb(203 213 225);
+		font-size: 0.75rem;
+		line-height: 1.2;
+		text-decoration: none;
+	}
+
+	.research-jump a:hover,
+	.research-jump a:focus-visible {
+		border-color: rgba(45, 212, 191, 0.65);
+		color: rgb(240 253 250);
 	}
 
 	.metric-panel {

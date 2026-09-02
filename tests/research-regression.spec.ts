@@ -65,11 +65,13 @@ test.describe('private research surface', () => {
 		await page.getByRole('button', { name: 'Contract Ecosystem' }).click();
 		await expect(page.locator('[data-chart-description]')).toContainText('IOM target opportunity');
 		await expect(page.locator('[data-chart-download]')).toHaveAttribute('href', /cgcyber-contract-ecosystem\.svg$/);
+		await expect(page.getByRole('button', { name: 'Competition / Capture' })).toHaveCount(0);
+		await expect(page.getByRole('heading', { name: 'Ten-Day Capture Sprint' })).toHaveCount(0);
+		await expect(page.getByRole('link', { name: 'Source PDF' })).toHaveCount(0);
 
 		await expect(page.locator('[data-org-count]')).toContainText('39');
 		await expect(page.locator('[data-contracts-count]')).toContainText('18');
 		await expect(page.locator('[data-competitors-count]')).toContainText('11');
-		await expect(page.locator('[data-actions-count]')).toContainText('10');
 		await expect(page.locator('[data-sources-count]')).toContainText('46');
 
 		await page.locator('[data-org-search]').fill('Shantia Allen');

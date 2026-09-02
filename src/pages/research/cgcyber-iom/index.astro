@@ -31,15 +31,6 @@ const charts = [
 		focusX: 0.43,
 		focusY: 0.2,
 	},
-	{
-		id: 'competition',
-		label: 'Competition / Capture',
-		src: withBase(`${assetBase}cgcyber-competition-capture.svg`),
-		description:
-			'Probability field, Sabre conditional-prime posture, vehicle/delivery/economic gates, ethics firewall, and 10-day sprint.',
-		focusX: 0.43,
-		focusY: 0.2,
-	},
 ];
 
 const tableSections = [
@@ -139,30 +130,6 @@ const tableSections = [
 		],
 	},
 	{
-		id: 'actions',
-		title: 'Ten-Day Capture Sprint',
-		description: 'Near-term gate actions from the package, converted into a sortable execution table.',
-		countAttr: 'data-actions-count',
-		searchAttr: 'data-actions-search',
-		searchPlaceholder: 'Owner, action, output...',
-		filterAttr: 'data-actions-filter',
-		filters: [
-			['Owner', 'All owners'],
-			['Priority', 'All priorities'],
-		],
-		tableAttr: 'data-actions-table',
-		bodyAttr: 'data-actions-body',
-		sortAttr: 'data-actions-sort-key',
-		headers: [
-			['ID', 'ID'],
-			['When', 'When'],
-			['Owner', 'Owner'],
-			['Priority', 'Priority'],
-			['Action', 'Action'],
-			['Output', 'Output'],
-		],
-	},
-	{
 		id: 'sources',
 		title: 'Source Register',
 		description: 'All public-source anchors carried over from the PDF package.',
@@ -196,14 +163,13 @@ const tableSections = [
 		data-org-csv-url={withBase(`${assetBase}cgcyber-iom-org-roster.csv`)}
 		data-contracts-csv-url={withBase(`${assetBase}cgcyber-iom-contract-ecosystem.csv`)}
 		data-competitors-csv-url={withBase(`${assetBase}cgcyber-iom-competitors.csv`)}
-		data-actions-csv-url={withBase(`${assetBase}cgcyber-iom-capture-actions.csv`)}
 		data-sources-csv-url={withBase(`${assetBase}cgcyber-iom-source-register.csv`)}
 	>
 		<SurfacePageHeader
 			stickyActive="none"
 			eyebrow="Research / CGCYBER IOM"
 			title="CGCYBER IOM Public-Source Research Atlas"
-			description="Interactive capture workspace for the Coast Guard Cyber Command Integrated Operations Management forecast: org structure, government POCs, contract ecosystem, competitor field, action gates, and source register."
+			description="Interactive capture workspace for the Coast Guard Cyber Command Integrated Operations Management forecast: org structure, government POCs, contract ecosystem, competitor field, and source register."
 		>
 			<div slot="actions" class="flex flex-wrap gap-2">
 				<a class="ui-link-btn ui-link-btn-primary" href={withBase(`${assetBase}cgcyber-iom-org-roster.csv`)}>Org CSV</a>
@@ -212,9 +178,6 @@ const tableSections = [
 				>
 				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}cgcyber-iom-competitors.csv`)}
 					>Competitors CSV</a
-				>
-				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}cgcyber-iom-intelligence-package.pdf`)}
-					>Source PDF</a
 				>
 			</div>
 		</SurfacePageHeader>
@@ -225,7 +188,17 @@ const tableSections = [
 			shared.
 		</div>
 
-		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-6" aria-label="Research summary">
+		<nav class="research-jump mt-3" aria-label="Research section navigation">
+			<a href={withBase('/research/')}>Research Index</a>
+			<a href="#chart-title">Charts</a>
+			<a href="#org-title">Org / POCs</a>
+			<a href="#contracts-title">Contracts</a>
+			<a href="#competitors-title">Competitors</a>
+			<a href="#sources-title">Sources</a>
+			<a href={withBase('/research/niwc-pac/')}>NIWC PAC</a>
+		</nav>
+
+		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5" aria-label="Research summary">
 			<div class="metric-panel">
 				<b>&gt;$100M</b>
 				<span>Forecast value</span>
@@ -378,6 +351,30 @@ const tableSections = [
 		border-radius: 0;
 	}
 
+	.research-jump {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		border: 1px solid rgba(51, 65, 85, 0.92);
+		background: rgba(2, 6, 23, 0.86);
+		padding: 0.65rem;
+	}
+
+	.research-jump a {
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		padding: 0.35rem 0.65rem;
+		color: rgb(203 213 225);
+		font-size: 0.75rem;
+		line-height: 1.2;
+		text-decoration: none;
+	}
+
+	.research-jump a:hover,
+	.research-jump a:focus-visible {
+		border-color: rgba(45, 212, 191, 0.65);
+		color: rgb(240 253 250);
+	}
+
 	.metric-panel {
 		border: 1px solid var(--research-border);
 		background: rgb(2 6 23);
@@ -492,10 +489,6 @@ const tableSections = [
 
 	.sources-table-wrap .roster-table {
 		min-width: 980px;
-	}
-
-	.actions-table-wrap .roster-table {
-		min-width: 1120px;
 	}
 
 	.roster-table th,

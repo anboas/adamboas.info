@@ -5,18 +5,6 @@ import { execFileSync } from 'node:child_process';
 const outDir = path.join(process.cwd(), 'public', 'research', 'cgcyber-iom');
 fs.mkdirSync(outDir, { recursive: true });
 
-const sourcePdf = path.join(
-	process.cwd(),
-	'..',
-	'media',
-	'inbound',
-	'openclaw-staged-16b6b241-0294-4c6e-a5a0-2ae72b7e109e',
-	'input-USCG_CGCYBER_Black_Hat_Intelligence_Package---b2ed6ffc-273b-4fcd-9855-9bb100b37202.pdf',
-);
-if (fs.existsSync(sourcePdf)) {
-	fs.copyFileSync(sourcePdf, path.join(outDir, 'cgcyber-iom-intelligence-package.pdf'));
-}
-
 const sources = [
 	[
 		'S1',
@@ -1188,89 +1176,6 @@ const competitorRows = [
 	'Source URL': sourceUrls(SourceRefs),
 }));
 
-const actionRows = [
-	[
-		'1',
-		'D0-1',
-		'Capture lead',
-		'Verify eBuy access, exact SIN pool, HACS subgroup, APFS release status, and official inquiry path',
-		'Vehicle gate and official inquiry log',
-		'High',
-	],
-	[
-		'2',
-		'D0-2',
-		'Competitive lead',
-		'Resolve current CuOps, FuOps, Ops Support contract IDs and prime/sub performers',
-		'Incumbent lineage memo',
-		'High',
-	],
-	[
-		'3',
-		'D1-3',
-		'Partner lead',
-		'Diligence NetCentrics, OneOmega, GovCIO, Synergy, AveningTech, and one scalable SOC alternative',
-		'Prime intent, exclusivity, conflicts, and evidence file',
-		'High',
-	],
-	[
-		'4',
-		'D1-4',
-		'Solution lead',
-		'Build CGCC-33/35/Ops Support operating model and adjacent-contract interface map',
-		'Solution v0.7 and RACI',
-		'High',
-	],
-	[
-		'5',
-		'D2-5',
-		'Staffing lead',
-		'Identify PM, Ops Director, watch leads, hunt/IR, FuOps, security, training, and transition key staff',
-		'Named staffing heat map',
-		'High',
-	],
-	[
-		'6',
-		'D3-6',
-		'Pricing lead',
-		'Create workload-based FFP model at $105M/$125M/$150M and 80/100/125 FTE',
-		'BOE and risk reserve',
-		'High',
-	],
-	[
-		'7',
-		'D4-7',
-		'Past performance',
-		'Select three exact-comparable references and map proof gaps',
-		'Evidence matrix and reference permissions',
-		'High',
-	],
-	[
-		'8',
-		'D6-8',
-		'Red team',
-		'Score likely evaluation, transition, price, and OCI attacks',
-		'Discriminator and weakness closure plan',
-		'Medium-high',
-	],
-	[
-		'9',
-		'D8-9',
-		'Executive team',
-		'Run Gate 0 across vehicle, customer, competition, team, solution, staffing, price, and risk',
-		'Prime / sub / no-bid decision',
-		'High',
-	],
-	[
-		'10',
-		'D10',
-		'Capture lead',
-		'Lock team instruments and launch RFQ-response room',
-		'Signed teaming path and proposal calendar',
-		'High',
-	],
-].map(([ID, When, Owner, Action, Output, Priority]) => ({ ID, When, Owner, Action, Output, Priority }));
-
 function csvEscape(value) {
 	const text = String(value ?? '');
 	if (/[",\n\r]/.test(text)) return `"${text.replaceAll('"', '""')}"`;
@@ -1286,7 +1191,6 @@ function writeCsv(name, rows) {
 writeCsv('cgcyber-iom-org-roster.csv', orgRows);
 writeCsv('cgcyber-iom-contract-ecosystem.csv', contractRows);
 writeCsv('cgcyber-iom-competitors.csv', competitorRows);
-writeCsv('cgcyber-iom-capture-actions.csv', actionRows);
 writeCsv('cgcyber-iom-source-register.csv', sources);
 
 function quote(value) {
@@ -1521,68 +1425,6 @@ writeDot(
 		'via -> ims [style=dashed, label="future boundary"];',
 		'blmss -> iom [style=dashed, label="orphan support-scope risk"];',
 		'sans -> iom [style=dashed, label="workforce / OEM escalation"];',
-	].join('\n'),
-);
-
-writeDot(
-	'cgcyber-competition-capture',
-	'CGCYBER IOM - Competitive Field, Sabre Gates, and Capture Sprint',
-	[
-		dotNode(
-			'target',
-			'IOM win condition\\nNo-loss transition + integrated cyber ops\\nFFP model survives volume uncertainty',
-			{ fill: '#0f172a', color: '#14b8a6', font: '#f8fafc' },
-		),
-		dotNode('t1', 'Tier 1 pressure\\nNetCentrics | OneOmega | GovCIO | Synergy', {
-			fill: '#fee2e2',
-			color: '#dc2626',
-			font: '#7f1d1d',
-		}),
-		dotNode('t2', 'Tier 2 / wildcard\\nAtlas | Booz Allen | GDIT | CACI | AveningTech | MetTel', {
-			fill: '#fff7ed',
-			color: '#ea580c',
-			font: '#7c2d12',
-		}),
-		dotNode('sabre', 'Sabre Systems\\nMAS 54151HACS + 54151S\\n$199.98M NAVAIR digital-services scale', {
-			fill: '#ecfeff',
-			color: '#0891b2',
-			font: '#164e63',
-		}),
-		dotNode('g1', 'Vehicle gate\\nSIN / HACS subgroup / eBuy pool / CTA permission', {
-			fill: '#eef2ff',
-			color: '#4f46e5',
-			font: '#312e81',
-		}),
-		dotNode('g2', 'Delivery gate\\n24x7 SOC/CSSP + DODIN + cleared transition proof', {
-			fill: '#eef2ff',
-			color: '#4f46e5',
-			font: '#312e81',
-		}),
-		dotNode('g3', 'Economic gate\\n80-105 avg FTE plausible at $105M\\nvalidate volumes before 100-200 FTE claim', {
-			fill: '#eef2ff',
-			color: '#4f46e5',
-			font: '#312e81',
-		}),
-		dotNode('sprint', '10-day sprint\\nincumbent lineage | core team | operating model\\nBOE | Gate 0', {
-			fill: '#f0fdfa',
-			color: '#0f766e',
-			font: '#134e4a',
-		}),
-		dotNode('risk', 'Ethics firewall\\nOfficial channels only\\nNo inside-access theme', {
-			fill: '#fef3c7',
-			color: '#d97706',
-			font: '#78350f',
-		}),
-		't1 -> target [label="transition knowledge"];',
-		't2 -> target [label="scale / specialty pressure"];',
-		'sabre -> target [label="conditional prime"];',
-		'sabre -> g1;',
-		'sabre -> g2;',
-		'sabre -> g3;',
-		'g1 -> sprint;',
-		'g2 -> sprint;',
-		'g3 -> sprint;',
-		'risk -> sprint [style=dashed];',
 	].join('\n'),
 );
 
