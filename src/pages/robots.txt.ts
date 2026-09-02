@@ -7,6 +7,7 @@ export const GET: APIRoute = () => {
 	const body = [
 		'User-agent: *',
 		'Allow: /',
+		'Disallow: /research/',
 		'',
 		`Host: ${new URL(absoluteUrl('/')).host}`,
 		`Sitemap: ${absoluteUrl('/sitemap-index.xml')}`,

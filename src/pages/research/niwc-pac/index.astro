@@ -1,0 +1,407 @@
+---
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import SurfacePageHeader from '../../../components/SurfacePageHeader.astro';
+import { withBase } from '../../../utils/withBase';
+import researchScriptUrl from '../../../scripts/research-niwc-pac.js?url';
+
+const assetBase = '/research/niwc-pac/';
+const charts = [
+	{
+		id: 'internal',
+		label: 'Internal Structure',
+		src: withBase(`${assetBase}internal-public-structure.svg`),
+		description: 'Command, staff offices, departments, business portfolios, public interfaces, and deep-code nodes.',
+		focusX: 0.74,
+		focusY: 0.14,
+	},
+	{
+		id: 'aa',
+		label: 'Code 53 / 532 / AA',
+		src: withBase(`${assetBase}code53-code532-aa-focus.svg`),
+		description: 'Application Arsenal drilldown through Code 53, Code 532 / 53200, Navy Digital Ecosystem, and OSA.',
+		focusX: 0.48,
+		focusY: 0.16,
+	},
+	{
+		id: 'overlay',
+		label: 'Acquisition Overlay',
+		src: withBase(`${assetBase}acquisition-program-overlay.svg`),
+		description: 'Procurement, program sponsor, requirements, policy, and NAVWAR-adjacent interfaces.',
+		focusX: 0.45,
+		focusY: 0.15,
+	},
+];
+---
+
+<SiteLayout
+	title="NIWC PAC Research Atlas"
+	description="Private public-source NIWC Pacific org atlas and Application Arsenal contact matrix."
+	noindex={true}
+	nofollow={true}
+>
+	<section class="research-app" data-niwc-research data-csv-url={withBase(`${assetBase}niwc-pacific-org-roster.csv`)}>
+		<SurfacePageHeader
+			stickyActive="none"
+			eyebrow="Research / NIWC PAC"
+			title="NIWC Pacific Public Org Atlas"
+			description="Interactive public-source structure map for NIWC Pacific, Code 53 / Code 532, Application Arsenal, and adjacent program/acquisition interfaces."
+		>
+			<div slot="actions" class="flex flex-wrap gap-2">
+				<a class="ui-link-btn ui-link-btn-primary" href={withBase(`${assetBase}niwc-pacific-org-roster.csv`)}>CSV</a>
+				<a
+					class="ui-link-btn ui-link-btn-muted"
+					href={withBase(`${assetBase}niwc-pacific-application-arsenal-poc-matrix-augmented.xlsx`)}>Workbook</a
+				>
+				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}full-report-export.png`)}>PNG</a>
+			</div>
+		</SurfacePageHeader>
+
+		<div class="research-banner mt-3 border border-teal-400/20 bg-teal-950/20 p-3 text-xs leading-5 text-slate-300">
+			<span class="font-semibold text-teal-100">Noindex research surface.</span>
+			This page is excluded from sitemap/robots and is not linked from the public navigation. It is still a public URL if
+			shared.
+		</div>
+
+		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5" aria-label="Research summary">
+			<div class="metric-panel">
+				<b data-metric="rows">145</b>
+				<span>Roster rows</span>
+			</div>
+			<div class="metric-panel">
+				<b data-metric="internal">115</b>
+				<span>NIWC PAC/internal</span>
+			</div>
+			<div class="metric-panel">
+				<b data-metric="current">31</b>
+				<span>Current / official</span>
+			</div>
+			<div class="metric-panel">
+				<b data-metric="gaps">34</b>
+				<span>Public gaps</span>
+			</div>
+			<div class="metric-panel">
+				<b data-metric="dated">80</b>
+				<span>Dated / historical</span>
+			</div>
+		</section>
+
+		<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby="chart-title">
+			<div class="flex flex-col gap-3 border-b border-slate-800 p-3 lg:flex-row lg:items-start lg:justify-between">
+				<div class="min-w-0">
+					<h2 id="chart-title" class="text-base font-semibold text-slate-50">Structure Charts</h2>
+					<p class="mt-1 max-w-5xl text-xs leading-5 text-slate-400" data-chart-description>
+						{charts[0].description}
+					</p>
+				</div>
+				<div class="flex flex-wrap gap-2 text-xs" aria-label="Chart view controls">
+					{
+						charts.map((chart, index) => (
+							<button
+								class:list={['chart-tab', index === 0 && 'chart-tab-active']}
+								type="button"
+								data-chart-tab={chart.id}
+								data-chart-src={chart.src}
+								data-chart-tab-description={chart.description}
+								data-chart-focus-x={chart.focusX}
+								data-chart-focus-y={chart.focusY}
+							>
+								{chart.label}
+							</button>
+						))
+					}
+				</div>
+			</div>
+
+			<div class="chart-toolbar border-b border-slate-800 p-3">
+				<div class="flex flex-wrap items-center gap-2">
+					<button type="button" class="control-btn" data-chart-action="zoom-out">Zoom -</button>
+					<button type="button" class="control-btn" data-chart-action="zoom-in">Zoom +</button>
+					<button type="button" class="control-btn" data-chart-action="fit">Fit</button>
+					<button type="button" class="control-btn" data-chart-action="reset">100%</button>
+					<a class="control-btn no-underline" data-chart-download href={charts[0].src}>Open SVG</a>
+					<span class="ui-pill" data-chart-zoom>100%</span>
+				</div>
+			</div>
+
+			<div class="chart-stage" data-chart-stage>
+				<img
+					src={charts[0].src}
+					alt="NIWC Pacific internal public structure chart"
+					class="chart-image"
+					data-chart-image
+					draggable="false"
+				/>
+			</div>
+		</section>
+
+		<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby="roster-title">
+			<div class="border-b border-slate-800 p-3">
+				<div class="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
+					<div class="min-w-0">
+						<h2 id="roster-title" class="text-base font-semibold text-slate-50">Contact And Org Roster</h2>
+						<p class="mt-1 max-w-4xl text-xs leading-5 text-slate-400">
+							Search, sort, and filter the public-source rows behind the chart. Gaps are kept as first-class rows.
+						</p>
+					</div>
+					<div class="text-xs text-slate-400">
+						<span data-roster-count>Loading roster...</span>
+					</div>
+				</div>
+
+				<div class="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-5">
+					<label class="filter-field md:col-span-2 xl:col-span-1">
+						<span>Search</span>
+						<input type="search" data-roster-search placeholder="Name, role, code, source..." />
+					</label>
+					<label class="filter-field">
+						<span>Domain</span>
+						<select data-roster-filter="Structure Domain"><option value="">All domains</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Status</span>
+						<select data-roster-filter="Status Class"><option value="">All statuses</option></select>
+					</label>
+					<label class="filter-field">
+						<span>AA relation</span>
+						<select data-roster-filter="AA Relationship"><option value="">All relations</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Confidence</span>
+						<select data-roster-filter="Confidence"><option value="">All confidence</option></select>
+					</label>
+				</div>
+			</div>
+
+			<div class="roster-table-wrap">
+				<table class="roster-table" data-roster-table>
+					<thead>
+						<tr>
+							<th><button type="button" data-sort-key="ID">ID</button></th>
+							<th><button type="button" data-sort-key="Structure Domain">Domain</button></th>
+							<th><button type="button" data-sort-key="Hierarchy Path">Hierarchy</button></th>
+							<th><button type="button" data-sort-key="Org Code">Code</button></th>
+							<th><button type="button" data-sort-key="Organization / Unit">Unit</button></th>
+							<th><button type="button" data-sort-key="Name / Public Node">Name / Node</button></th>
+							<th><button type="button" data-sort-key="Exact Public Role">Role</button></th>
+							<th><button type="button" data-sort-key="Status Class">Status</button></th>
+							<th><button type="button" data-sort-key="AA Relationship">AA relation</button></th>
+							<th><button type="button" data-sort-key="Confidence">Confidence</button></th>
+							<th><button type="button" data-sort-key="Source Date">Source date</button></th>
+						</tr>
+					</thead>
+					<tbody data-roster-body>
+						<tr>
+							<td colspan="11" class="px-3 py-6 text-center text-sm text-slate-400">Loading roster...</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</section>
+
+	<script type="module" src={researchScriptUrl}></script>
+</SiteLayout>
+
+<style>
+	.research-app {
+		--research-border: rgba(51, 65, 85, 0.92);
+		--research-muted: rgb(148 163 184);
+		--research-soft: rgba(15, 23, 42, 0.72);
+	}
+
+	.research-banner,
+	.metric-panel,
+	.chart-tab,
+	.control-btn,
+	.filter-field input,
+	.filter-field select {
+		border-radius: 0;
+	}
+
+	.metric-panel {
+		border: 1px solid var(--research-border);
+		background: rgb(2 6 23);
+		padding: 0.85rem;
+	}
+
+	.metric-panel b {
+		display: block;
+		font-size: 1.55rem;
+		line-height: 1.1;
+		color: rgb(248 250 252);
+	}
+
+	.metric-panel span {
+		margin-top: 0.25rem;
+		display: block;
+		font-size: 0.72rem;
+		line-height: 1.25;
+		color: var(--research-muted);
+		text-transform: uppercase;
+	}
+
+	.chart-tab,
+	.control-btn {
+		min-height: 2rem;
+		border: 1px solid rgba(71, 85, 105, 0.88);
+		background: rgba(2, 6, 23, 0.88);
+		padding: 0.35rem 0.65rem;
+		color: rgb(203 213 225);
+		line-height: 1.2;
+	}
+
+	.chart-tab:hover,
+	.control-btn:hover {
+		border-color: rgba(45, 212, 191, 0.65);
+		color: rgb(240 253 250);
+	}
+
+	.chart-tab-active {
+		border-color: rgba(45, 212, 191, 0.78);
+		background: rgba(20, 184, 166, 0.2);
+		color: rgb(240 253 250);
+	}
+
+	.chart-stage {
+		position: relative;
+		height: min(72vh, 760px);
+		min-height: 420px;
+		overflow: hidden;
+		background: rgb(248 250 252);
+		cursor: grab;
+		touch-action: none;
+	}
+
+	.chart-stage:active {
+		cursor: grabbing;
+	}
+
+	.chart-image {
+		display: block;
+		max-width: none;
+		transform-origin: 0 0;
+		user-select: none;
+		will-change: transform;
+	}
+
+	.filter-field {
+		display: flex;
+		min-width: 0;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.filter-field span {
+		font-size: 0.68rem;
+		line-height: 1.2;
+		color: var(--research-muted);
+		text-transform: uppercase;
+	}
+
+	.filter-field input,
+	.filter-field select {
+		width: 100%;
+		min-height: 2.35rem;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgba(2, 6, 23, 0.86);
+		padding: 0.45rem 0.6rem;
+		color: rgb(226 232 240);
+		font-size: 0.82rem;
+		line-height: 1.25;
+	}
+
+	.roster-table-wrap {
+		max-height: 72vh;
+		overflow: auto;
+	}
+
+	.roster-table {
+		width: 100%;
+		min-width: 1180px;
+		border-collapse: collapse;
+		font-size: 0.76rem;
+	}
+
+	.roster-table th,
+	.roster-table td {
+		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
+		padding: 0.55rem 0.65rem;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	.roster-table th {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+		background: rgb(15 23 42);
+	}
+
+	.roster-table th button {
+		color: rgb(226 232 240);
+		font-weight: 600;
+		text-align: left;
+	}
+
+	.roster-table tbody tr:hover {
+		background: rgba(15, 23, 42, 0.84);
+	}
+
+	.status-badge {
+		display: inline-flex;
+		align-items: center;
+		min-height: 1.35rem;
+		border: 1px solid rgba(148, 163, 184, 0.3);
+		padding: 0.15rem 0.45rem;
+		font-size: 0.68rem;
+		line-height: 1.2;
+	}
+
+	.status-current,
+	.status-official {
+		border-color: rgba(45, 212, 191, 0.45);
+		background: rgba(20, 184, 166, 0.16);
+		color: rgb(204 251 241);
+	}
+
+	.status-gap {
+		border-color: rgba(251, 146, 60, 0.45);
+		background: rgba(154, 52, 18, 0.24);
+		color: rgb(255 237 213);
+	}
+
+	.status-dated,
+	.status-forecast {
+		border-color: rgba(245, 158, 11, 0.38);
+		background: rgba(120, 53, 15, 0.18);
+		color: rgb(254 243 199);
+	}
+
+	.status-historical {
+		border-color: rgba(148, 163, 184, 0.3);
+		background: rgba(71, 85, 105, 0.22);
+		color: rgb(226 232 240);
+	}
+
+	.status-unverified {
+		border-color: rgba(248, 113, 113, 0.45);
+		background: rgba(127, 29, 29, 0.22);
+		color: rgb(254 226 226);
+	}
+
+	.source-link {
+		color: rgb(153 246 228);
+	}
+
+	@media (max-width: 720px) {
+		.chart-stage {
+			height: 68vh;
+			min-height: 360px;
+		}
+
+		.roster-table {
+			min-width: 980px;
+			font-size: 0.72rem;
+		}
+	}
+</style>
