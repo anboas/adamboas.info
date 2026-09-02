@@ -177,14 +177,14 @@ const charts = [
 					<thead>
 						<tr>
 							<th><button type="button" data-sort-key="ID">ID</button></th>
-							<th><button type="button" data-sort-key="Structure Domain">Domain</button></th>
-							<th><button type="button" data-sort-key="Hierarchy Path">Hierarchy</button></th>
-							<th><button type="button" data-sort-key="Org Code">Code</button></th>
-							<th><button type="button" data-sort-key="Organization / Unit">Unit</button></th>
 							<th><button type="button" data-sort-key="Name / Public Node">Name / Node</button></th>
 							<th><button type="button" data-sort-key="Exact Public Role">Role</button></th>
 							<th><button type="button" data-sort-key="Status Class">Status</button></th>
 							<th><button type="button" data-sort-key="AA Relationship">AA relation</button></th>
+							<th><button type="button" data-sort-key="Org Code">Code</button></th>
+							<th><button type="button" data-sort-key="Organization / Unit">Unit</button></th>
+							<th><button type="button" data-sort-key="Structure Domain">Domain</button></th>
+							<th><button type="button" data-sort-key="Hierarchy Path">Hierarchy</button></th>
 							<th><button type="button" data-sort-key="Confidence">Confidence</button></th>
 							<th><button type="button" data-sort-key="Source Date">Source date</button></th>
 						</tr>
@@ -313,19 +313,27 @@ const charts = [
 	.roster-table-wrap {
 		max-height: 72vh;
 		overflow: auto;
+		background:
+			linear-gradient(90deg, rgb(2 6 23), transparent 1.25rem) left/1.25rem 100% no-repeat,
+			rgb(2 6 23);
+		scrollbar-color: rgba(45, 212, 191, 0.48) rgba(15, 23, 42, 0.92);
 	}
 
 	.roster-table {
+		--id-col-width: 4.25rem;
+		--name-col-width: 18rem;
 		width: 100%;
-		min-width: 1180px;
-		border-collapse: collapse;
-		font-size: 0.76rem;
+		min-width: 1420px;
+		border-collapse: separate;
+		border-spacing: 0;
+		font-size: 0.78rem;
+		line-height: 1.42;
 	}
 
 	.roster-table th,
-	.roster-table td {
+	.research-app :global(.roster-table td) {
 		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
-		padding: 0.55rem 0.65rem;
+		padding: 0.62rem 0.7rem;
 		text-align: left;
 		vertical-align: top;
 	}
@@ -333,21 +341,171 @@ const charts = [
 	.roster-table th {
 		position: sticky;
 		top: 0;
-		z-index: 2;
+		z-index: 4;
+		border-bottom-color: rgba(45, 212, 191, 0.28);
 		background: rgb(15 23 42);
+		box-shadow: inset 0 -1px 0 rgba(45, 212, 191, 0.24);
 	}
 
 	.roster-table th button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
 		color: rgb(226 232 240);
 		font-weight: 600;
 		text-align: left;
 	}
 
-	.roster-table tbody tr:hover {
-		background: rgba(15, 23, 42, 0.84);
+	.roster-table th button::after {
+		content: '';
+		width: 0.36rem;
+		height: 0.36rem;
+		border-right: 1px solid rgba(148, 163, 184, 0.65);
+		border-bottom: 1px solid rgba(148, 163, 184, 0.65);
+		opacity: 0.45;
+		transform: rotate(45deg) translateY(-0.08rem);
 	}
 
-	.status-badge {
+	.roster-table th button[data-sort-state='asc']::after {
+		border-color: rgb(94 234 212);
+		opacity: 1;
+		transform: rotate(225deg) translateY(-0.08rem);
+	}
+
+	.roster-table th button[data-sort-state='desc']::after {
+		border-color: rgb(94 234 212);
+		opacity: 1;
+	}
+
+	.research-app :global(.roster-row) {
+		--row-bg: rgb(2 6 23);
+		--row-accent: rgba(100, 116, 139, 0.75);
+		background: var(--row-bg);
+		color: rgb(203 213 225);
+		outline: none;
+	}
+
+	.research-app :global(.roster-table tbody tr:nth-child(odd)) {
+		--row-bg: rgb(5 13 30);
+	}
+
+	.research-app :global(.roster-table tbody tr:nth-child(even)) {
+		--row-bg: rgb(10 18 36);
+	}
+
+	.research-app :global(.roster-row-current),
+	.research-app :global(.roster-row-official) {
+		--row-accent: rgb(20 184 166);
+	}
+
+	.research-app :global(.roster-row-gap) {
+		--row-accent: rgb(251 146 60);
+	}
+
+	.research-app :global(.roster-row-dated),
+	.research-app :global(.roster-row-forecast) {
+		--row-accent: rgb(245 158 11);
+	}
+
+	.research-app :global(.roster-row-historical) {
+		--row-accent: rgb(148 163 184);
+	}
+
+	.research-app :global(.roster-row-unverified) {
+		--row-accent: rgb(248 113 113);
+	}
+
+	.research-app :global(.roster-table tbody tr:hover),
+	.research-app :global(.roster-table tbody tr:focus-visible),
+	.research-app :global(.roster-row-selected) {
+		--row-bg: rgb(20 32 55);
+		box-shadow: inset 0 0 0 1px rgba(45, 212, 191, 0.2);
+		color: rgb(241 245 249);
+	}
+
+	.roster-table th:nth-child(1),
+	.roster-table th:nth-child(2),
+	.research-app :global(.cell-id),
+	.research-app :global(.cell-name) {
+		position: sticky;
+		background: inherit;
+	}
+
+	.roster-table th:nth-child(1),
+	.roster-table th:nth-child(2) {
+		z-index: 5;
+		background: rgb(15 23 42);
+	}
+
+	.roster-table th:nth-child(1),
+	.research-app :global(.cell-id) {
+		left: 0;
+		width: var(--id-col-width);
+		min-width: var(--id-col-width);
+		max-width: var(--id-col-width);
+	}
+
+	.roster-table th:nth-child(2),
+	.research-app :global(.cell-name) {
+		left: var(--id-col-width);
+		width: var(--name-col-width);
+		min-width: var(--name-col-width);
+		max-width: var(--name-col-width);
+		box-shadow: 1px 0 0 rgba(45, 212, 191, 0.12);
+	}
+
+	.research-app :global(.cell-id) {
+		border-left: 3px solid var(--row-accent);
+		color: rgb(148 163 184);
+		font-variant-numeric: tabular-nums;
+	}
+
+	.research-app :global(.cell-name strong) {
+		display: block;
+		color: rgb(248 250 252);
+		font-size: 0.84rem;
+		line-height: 1.35;
+		overflow-wrap: anywhere;
+	}
+
+	.research-app :global(.cell-role) {
+		min-width: 18rem;
+		color: rgb(226 232 240);
+	}
+
+	.research-app :global(.cell-relation) {
+		min-width: 13rem;
+		color: rgb(204 251 241);
+	}
+
+	.research-app :global(.cell-unit),
+	.research-app :global(.cell-hierarchy) {
+		min-width: 19rem;
+	}
+
+	.research-app :global(.cell-domain) {
+		min-width: 13rem;
+	}
+
+	.research-app :global(.cell-code),
+	.research-app :global(.cell-date) {
+		min-width: 7.5rem;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.research-app :global(.cell-confidence) {
+		min-width: 10rem;
+	}
+
+	.research-app :global(.cell-hierarchy),
+	.research-app :global(.cell-domain),
+	.research-app :global(.cell-confidence),
+	.research-app :global(.cell-date),
+	.research-app :global(.cell-id) {
+		color: rgb(148 163 184);
+	}
+
+	.research-app :global(.status-badge) {
 		display: inline-flex;
 		align-items: center;
 		min-height: 1.35rem;
@@ -355,35 +513,36 @@ const charts = [
 		padding: 0.15rem 0.45rem;
 		font-size: 0.68rem;
 		line-height: 1.2;
+		white-space: nowrap;
 	}
 
-	.status-current,
-	.status-official {
+	.research-app :global(.status-current),
+	.research-app :global(.status-official) {
 		border-color: rgba(45, 212, 191, 0.45);
 		background: rgba(20, 184, 166, 0.16);
 		color: rgb(204 251 241);
 	}
 
-	.status-gap {
+	.research-app :global(.status-gap) {
 		border-color: rgba(251, 146, 60, 0.45);
 		background: rgba(154, 52, 18, 0.24);
 		color: rgb(255 237 213);
 	}
 
-	.status-dated,
-	.status-forecast {
+	.research-app :global(.status-dated),
+	.research-app :global(.status-forecast) {
 		border-color: rgba(245, 158, 11, 0.38);
 		background: rgba(120, 53, 15, 0.18);
 		color: rgb(254 243 199);
 	}
 
-	.status-historical {
+	.research-app :global(.status-historical) {
 		border-color: rgba(148, 163, 184, 0.3);
 		background: rgba(71, 85, 105, 0.22);
 		color: rgb(226 232 240);
 	}
 
-	.status-unverified {
+	.research-app :global(.status-unverified) {
 		border-color: rgba(248, 113, 113, 0.45);
 		background: rgba(127, 29, 29, 0.22);
 		color: rgb(254 226 226);
@@ -400,8 +559,14 @@ const charts = [
 		}
 
 		.roster-table {
-			min-width: 980px;
+			--name-col-width: 13.5rem;
+			min-width: 1240px;
 			font-size: 0.72rem;
+		}
+
+		.roster-table th,
+		.roster-table td {
+			padding: 0.55rem 0.58rem;
 		}
 	}
 </style>

@@ -1,18 +1,20 @@
 const app = document.querySelector('[data-niwc-research]');
 
-const tableColumns = [
-	'ID',
-	'Structure Domain',
-	'Hierarchy Path',
-	'Org Code',
-	'Organization / Unit',
-	'Name / Public Node',
-	'Exact Public Role',
-	'Status Class',
-	'AA Relationship',
-	'Confidence',
-	'Source Date',
+const tableColumnMeta = [
+	{ key: 'ID', className: 'cell-id' },
+	{ key: 'Name / Public Node', className: 'cell-name' },
+	{ key: 'Exact Public Role', className: 'cell-role' },
+	{ key: 'Status Class', className: 'cell-status' },
+	{ key: 'AA Relationship', className: 'cell-relation' },
+	{ key: 'Org Code', className: 'cell-code' },
+	{ key: 'Organization / Unit', className: 'cell-unit' },
+	{ key: 'Structure Domain', className: 'cell-domain' },
+	{ key: 'Hierarchy Path', className: 'cell-hierarchy' },
+	{ key: 'Confidence', className: 'cell-confidence' },
+	{ key: 'Source Date', className: 'cell-date' },
 ];
+
+const tableColumns = tableColumnMeta.map((column) => column.key);
 
 const internalDomains = new Set([
 	'NIWC PAC core hierarchy',
@@ -259,6 +261,13 @@ function initRoster(root) {
 			return sortDirection === 'asc' ? comparison : -comparison;
 		});
 		count.textContent = `${visible.length} of ${rows.length} rows`;
+		sortButtons.forEach((button) => {
+			const active = button.dataset.sortKey === sortKey;
+			button.dataset.sortState = active ? sortDirection : '';
+			button
+				.closest('th')
+				?.setAttribute('aria-sort', active ? (sortDirection === 'asc' ? 'ascending' : 'descending') : 'none');
+		});
 		if (!visible.length) {
 			body.innerHTML =
 				'<tr><td colspan="11" class="px-3 py-6 text-center text-sm text-slate-400">No rows match.</td></tr>';
@@ -266,14 +275,16 @@ function initRoster(root) {
 		}
 		body.innerHTML = visible
 			.map((row) => {
-				const cells = tableColumns.map((key) => {
+				const rowStatus = statusKey(row['Status Class']);
+				const cells = tableColumnMeta.map(({ key, className }) => {
+					const value = escapeHtml(row[key]);
 					if (key === 'Status Class') {
-						const label = escapeHtml(row[key]);
-						return `<td><span class="status-badge status-${statusKey(row[key])}">${label}</span></td>`;
+						return `<td class="${className}"><span class="status-badge status-${rowStatus}">${value}</span></td>`;
 					}
-					return `<td>${escapeHtml(row[key])}</td>`;
+					if (key === 'Name / Public Node') return `<td class="${className}"><strong>${value}</strong></td>`;
+					return `<td class="${className}">${value}</td>`;
 				});
-				return `<tr>${cells.join('')}</tr>`;
+				return `<tr class="roster-row roster-row-${rowStatus}" tabindex="0">${cells.join('')}</tr>`;
 			})
 			.join('');
 	}
@@ -292,6 +303,12 @@ function initRoster(root) {
 	});
 	search.addEventListener('input', render);
 	filterInputs.forEach((input) => input.addEventListener('change', render));
+	body.addEventListener('click', (event) => {
+		const row = event.target.closest('.roster-row');
+		if (!row) return;
+		body.querySelectorAll('.roster-row-selected').forEach((item) => item.classList.remove('roster-row-selected'));
+		row.classList.add('roster-row-selected');
+	});
 
 	fetch(root.dataset.csvUrl)
 		.then((response) => {

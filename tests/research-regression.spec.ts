@@ -21,6 +21,16 @@ test.describe('private research surface', () => {
 		await page.getByRole('button', { name: 'Code 53 / 532 / AA' }).click();
 		await expect(page.locator('[data-chart-description]')).toContainText('Application Arsenal drilldown');
 		await expect(page.locator('[data-roster-count]')).toContainText('145');
+		await expect(page.locator('.roster-table thead th button').nth(1)).toHaveText('Name / Node');
+		const firstTwoRows = page.locator('[data-roster-body] tr').filter({ has: page.locator('td') });
+		await expect(firstTwoRows.first()).toHaveClass(/roster-row/);
+		await expect(firstTwoRows.first().locator('td').nth(1)).toContainText('CAPT Kris De Soto');
+		const rowBackgrounds = await firstTwoRows.evaluateAll((rows) =>
+			rows.slice(0, 2).map((row) => getComputedStyle(row).backgroundColor),
+		);
+		expect(rowBackgrounds[0]).not.toBe(rowBackgrounds[1]);
+		await firstTwoRows.first().click();
+		await expect(firstTwoRows.first()).toHaveClass(/roster-row-selected/);
 		await page.locator('[data-roster-search]').fill('Application Arsenal');
 		await expect(page.locator('[data-roster-body]')).toContainText('Application Arsenal');
 		await page.locator('[data-roster-filter="Status Class"]').selectOption('Public gap');
