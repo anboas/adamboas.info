@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="980" viewBox="0 0 1800 980" role="img" aria-labelledby="title desc">
 <title id="title">NAE incumbent and teaming ecosystem</title>
-<desc id="desc">Publicly named current incumbents from the NAWCAD FY26 Q3 LRAF grouped by capability seam.</desc>
+<desc id="desc">Twenty-five publicly named current incumbents from the NAWCAD FY26 Q3 LRAF grouped by capability seam.</desc>
 <style>
 svg{background:#f8fafc;color:#0f172a;font-family:Arial,Helvetica,sans-serif}
 .title{font-size:26px;font-weight:700;fill:#0f172a}
@@ -21,13 +21,13 @@ svg{background:#f8fafc;color:#0f172a;font-family:Arial,Helvetica,sans-serif}
 </style>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
 <text x="28" y="38" class="title">NAE incumbent and teaming ecosystem</text>
-<text x="28" y="60" class="subtitle">Publicly named current incumbents from the NAWCAD FY26 Q3 LRAF grouped by capability seam.</text>
+<text x="28" y="60" class="subtitle">Twenty-five publicly named current incumbents from the NAWCAD FY26 Q3 LRAF grouped by capability seam.</text>
 <g class="box command"><rect x="70" y="120" width="280" height="112" rx="0"/><line x1="70" y1="120" x2="70" y2="232" class="accent"/><g><text x="86" y="146" class="box-title">Sabre-relevant lenses</text><text x="86" y="200" class="box-subtitle">Digital services, cyber, software,</text><text x="86" y="214" class="box-subtitle">mission systems, PM support</text></g></g>
-<g class="box company"><rect x="500" y="80" width="280" height="104" rx="0"/><line x1="500" y1="80" x2="500" y2="184" class="accent"/><g><text x="516" y="106" class="box-title">C5I / C4I integrators</text><text x="516" y="152" class="box-subtitle">Smartronix, BAE, Render</text></g></g>
-<g class="box company"><rect x="500" y="240" width="280" height="104" rx="0"/><line x1="500" y1="240" x2="500" y2="344" class="accent"/><g><text x="516" y="266" class="box-title">Software / enterprise systems</text><text x="516" y="312" class="box-subtitle">Spalding, Zenetex, PSI Pax</text></g></g>
-<g class="box company"><rect x="500" y="400" width="280" height="104" rx="0"/><line x1="500" y1="400" x2="500" y2="504" class="accent"/><g><text x="516" y="426" class="box-title">PMA / CSS support</text><text x="516" y="472" class="box-subtitle">Precise, StraCon, Tekla</text></g></g>
-<g class="box company"><rect x="500" y="560" width="280" height="104" rx="0"/><line x1="500" y1="560" x2="500" y2="664" class="accent"/><g><text x="516" y="586" class="box-title">Sustainment / training</text><text x="516" y="632" class="box-subtitle">Amentum, Avian, Sierra</text></g></g>
-<g class="box company"><rect x="500" y="720" width="280" height="104" rx="0"/><line x1="500" y1="720" x2="500" y2="824" class="accent"/><g><text x="516" y="746" class="box-title">Cyber / M&amp;S / innovation</text><text x="516" y="792" class="box-subtitle">RMC/MIL, AEA, SciTech</text></g></g>
+<g class="box company"><rect x="500" y="80" width="280" height="104" rx="0"/><line x1="500" y1="80" x2="500" y2="184" class="accent"/><g><text x="516" y="106" class="box-title">C5I / C4I integrators</text><text x="516" y="152" class="box-subtitle">Smartronix, BAE, Render, FSG</text></g></g>
+<g class="box company"><rect x="500" y="240" width="280" height="104" rx="0"/><line x1="500" y1="240" x2="500" y2="344" class="accent"/><g><text x="516" y="266" class="box-title">Software / enterprise systems</text><text x="516" y="312" class="box-subtitle">Spalding, Zenetex, PSI Pax, Perrygo,</text><text x="516" y="326" class="box-subtitle">DESI</text></g></g>
+<g class="box company"><rect x="500" y="400" width="280" height="104" rx="0"/><line x1="500" y1="400" x2="500" y2="504" class="accent"/><g><text x="516" y="426" class="box-title">PMA / CSS support</text><text x="516" y="472" class="box-subtitle">Precise, StraCon, Tekla, ASEC</text></g></g>
+<g class="box company"><rect x="500" y="560" width="280" height="104" rx="0"/><line x1="500" y1="560" x2="500" y2="664" class="accent"/><g><text x="516" y="586" class="box-title">Sustainment / training</text><text x="516" y="632" class="box-subtitle">Amentum, Avian, Sierra, Construction</text><text x="516" y="646" class="box-subtitle">Helicopters</text></g></g>
+<g class="box company"><rect x="500" y="720" width="280" height="104" rx="0"/><line x1="500" y1="720" x2="500" y2="824" class="accent"/><g><text x="516" y="746" class="box-title">Cyber / M&amp;S / rapid engineering</text><text x="516" y="792" class="box-subtitle">RMC/MIL, AEA, SciTech, Altus, Amelex,</text><text x="516" y="806" class="box-subtitle">CRL, DCS</text></g></g>
 <path d="M 350 176 C 425 176, 425 132, 500 132" class="connector dashed"/>
 <path d="M 350 176 C 425 176, 425 292, 500 292" class="connector dashed"/>
 <path d="M 350 176 C 425 176, 425 452, 500 452" class="connector dashed"/>
@@ -43,7 +43,7 @@ svg{background:#f8fafc;color:#0f172a;font-family:Arial,Helvetica,sans-serif}
 <path d="M 780 452 C 890 452, 890 452, 1000 452" class="connector"/>
 <path d="M 780 612 C 890 612, 890 612, 1000 612" class="connector"/>
 <path d="M 780 772 C 890 772, 890 772, 1000 772" class="connector"/>
-<g class="box authority"><rect x="1450" y="320" width="280" height="150" rx="0"/><line x1="1450" y1="320" x2="1450" y2="470" class="accent"/><g><text x="1466" y="346" class="box-title">Next expansion pass</text><text x="1466" y="438" class="box-subtitle">Resolve current PMA leadership, live</text><text x="1466" y="452" class="box-subtitle">SAM notices, NAWCWD/FRC forecasts,</text></g></g>
+<g class="box authority"><rect x="1450" y="320" width="280" height="150" rx="0"/><line x1="1450" y1="320" x2="1450" y2="470" class="accent"/><g><text x="1466" y="346" class="box-title">Expanded evidence pass</text><text x="1466" y="438" class="box-subtitle">Leadership, OSBP routes, 43 LRAF</text><text x="1466" y="452" class="box-subtitle">rows, 25 incumbents, 14 sources.</text></g></g>
 <path d="M 1320 132 C 1385 132, 1385 360, 1450 360" class="connector dashed"/>
 <path d="M 1320 292 C 1385 292, 1385 380, 1450 380" class="connector dashed"/>
 <path d="M 1320 452 C 1385 452, 1385 400, 1450 400" class="connector dashed"/>

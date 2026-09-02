@@ -111,7 +111,7 @@ test.describe('private research surface', () => {
 		await expect(page.locator('[data-sources-body]')).toContainText('CGCYBER Integrated Operations Management');
 	});
 
-	test('Naval Aviation Enterprise atlas exposes starter opportunity research', async ({ page }) => {
+	test('Naval Aviation Enterprise atlas exposes expanded opportunity research', async ({ page }) => {
 		const response = await page.goto(`${BASE}/research/naval-aviation-enterprise/`, { waitUntil: 'networkidle' });
 		expect(response?.status()).toBeLessThan(400);
 		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
@@ -120,24 +120,39 @@ test.describe('private research surface', () => {
 		).toBeVisible();
 		await expect(page.locator('[data-chart-image]')).toBeVisible();
 		await page.getByRole('button', { name: 'Opportunity Map' }).click();
-		await expect(page.locator('[data-chart-description]')).toContainText('NAWCAD FY26/FY27 forecast rows');
+		await expect(page.locator('[data-chart-description]')).toContainText('Forty-three NAWCAD FY26-FY28');
 		await expect(page.locator('[data-chart-download]')).toHaveAttribute('href', /naval-aviation-opportunity-map\.svg$/);
 
-		await expect(page.locator('[data-org-count]')).toContainText('28');
-		await expect(page.locator('[data-contracts-count]')).toContainText('15');
-		await expect(page.locator('[data-competitors-count]')).toContainText('15');
-		await expect(page.locator('[data-sources-count]')).toContainText('9');
+		await expect(page.locator('[data-org-count]')).toContainText('55');
+		await expect(page.locator('[data-contracts-count]')).toContainText('43');
+		await expect(page.locator('[data-competitors-count]')).toContainText('25');
+		await expect(page.locator('[data-sources-count]')).toContainText('15');
 
 		await page.locator('[data-org-search]').fill('Lauren Farmer');
 		await expect(page.locator('[data-org-body]')).toContainText('Cyber Warfare Services IDIQ');
 		await page.locator('[data-org-search]').fill('');
+		await page.locator('[data-org-search]').fill('John E. Dougherty');
+		await expect(page.locator('[data-org-body]')).toContainText('Commander, Naval Air Systems Command');
+		await page.locator('[data-org-search]').fill('');
+		await page.locator('[data-org-search]').fill('navair.osbp@us.navy.mil');
+		await expect(page.locator('[data-org-body]')).toContainText('NAVAIR OSBP');
+		await page.locator('[data-org-search]').fill('');
 		await page.locator('[data-contracts-search]').fill('TARCES');
 		await expect(page.locator('[data-contracts-body]')).toContainText('SMARTRONIX');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('PMA-290');
+		await expect(page.locator('[data-contracts-body]')).toContainText('$200M - $500M');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('AIRWorks');
+		await expect(page.locator('[data-contracts-body]')).toContainText('$250M - $500M');
 		await page.locator('[data-contracts-search]').fill('');
 		await page.locator('[data-contracts-search]').fill('T-6/T-34');
 		await expect(page.locator('[data-contracts-body]')).toContainText('$500M - $1B');
 		await page.locator('[data-competitors-search]').fill('BAE Systems');
 		await expect(page.locator('[data-competitors-body]')).toContainText('C5ISR integration');
+		await page.locator('[data-competitors-search]').fill('');
+		await page.locator('[data-competitors-search]').fill('CRL Technologies');
+		await expect(page.locator('[data-competitors-body]')).toContainText('AIRWorks');
 		await page.locator('[data-sources-search]').fill('NAWCAD FY26 Q3');
 		await expect(page.locator('[data-sources-body]')).toContainText('Long Range Acquisition Forecast');
 	});

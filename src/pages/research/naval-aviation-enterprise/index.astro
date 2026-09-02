@@ -20,7 +20,7 @@ const charts = [
 		label: 'Opportunity Map',
 		src: withBase(`${assetBase}naval-aviation-opportunity-map.svg`),
 		description:
-			'NAWCAD FY26/FY27 forecast rows grouped by C5I, software/data/cyber, PMA support, training, aircraft sustainment, and small-business seams.',
+			'Forty-three NAWCAD FY26-FY28 forecast rows grouped by C5I, software/data/cyber, PMA support, rapid engineering, training, aircraft sustainment, and small-business seams.',
 		focusX: 0.42,
 		focusY: 0.2,
 	},
@@ -29,7 +29,7 @@ const charts = [
 		label: 'Company Ecosystem',
 		src: withBase(`${assetBase}naval-aviation-company-ecosystem.svg`),
 		description:
-			'Publicly named incumbents from the NAWCAD FY26 Q3 LRAF grouped by C5I/C4I, software, PMA support, sustainment, cyber, M&S, and innovation seams.',
+			'Twenty-five publicly named incumbents from the NAWCAD FY26 Q3 LRAF grouped by C5I/C4I, software, PMA support, sustainment, cyber, M&S, and innovation seams.',
 		focusX: 0.43,
 		focusY: 0.2,
 	},
@@ -40,7 +40,7 @@ const tableSections = [
 		id: 'org',
 		title: 'NAE Org And Public PCO Roster',
 		description:
-			'Public-source NAVAIR / Naval Aviation Enterprise structure, competencies, PEOs, warfare centers, FRC interfaces, and public PCO names pulled from the NAWCAD LRAF.',
+			'Public-source NAVAIR / Naval Aviation Enterprise structure, competencies, PEOs, warfare centers, FRC interfaces, public office routes, and PCO names pulled from the NAWCAD LRAF.',
 		countAttr: 'data-org-count',
 		searchAttr: 'data-org-search',
 		searchPlaceholder: 'Name, role, code, office, source...',
@@ -73,7 +73,7 @@ const tableSections = [
 		id: 'contracts',
 		title: 'Forecast Opportunity Rows',
 		description:
-			'Starter opportunity watchlist from the NAWCAD FY26 Q3 Long Range Acquisition Forecast: values, strategies, incumbents, customers, and capture relevance.',
+			'Expanded opportunity watchlist from the NAWCAD FY26 Q3 Long Range Acquisition Forecast: values, strategies, incumbents, customers, and capture relevance.',
 		countAttr: 'data-contracts-count',
 		searchAttr: 'data-contracts-search',
 		searchPlaceholder: 'Program, prime, award ID, scope...',
@@ -172,7 +172,7 @@ const tableSections = [
 			stickyActive="none"
 			eyebrowLinks={[{ label: 'Research', href: withBase('/research/') }, { label: 'Naval Aviation Enterprise' }]}
 			title="Naval Aviation Enterprise Public-Source Research Atlas"
-			description="Starter capture workspace for the Naval Aviation Enterprise: NAVAIR command structure, PEO/PMA interfaces, NAWCAD opportunity seams, named public PCOs, incumbents, and source register."
+			description="Expanded capture workspace for the Naval Aviation Enterprise: NAVAIR command structure, named public leaders, PEO/PMA interfaces, OSBP routes, NAWCAD opportunity seams, public PCOs, incumbents, and source register."
 		>
 			<div slot="actions" class="flex flex-wrap gap-2">
 				<a
@@ -208,15 +208,15 @@ const tableSections = [
 
 		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5" aria-label="Research summary">
 			<div class="metric-panel">
-				<b>28</b>
+				<b>55</b>
 				<span>Org / PCO rows</span>
 			</div>
 			<div class="metric-panel">
-				<b>15</b>
+				<b>43</b>
 				<span>Opportunity rows</span>
 			</div>
 			<div class="metric-panel">
-				<b>15</b>
+				<b>25</b>
 				<span>Company rows</span>
 			</div>
 			<div class="metric-panel">
@@ -224,7 +224,7 @@ const tableSections = [
 				<span>SVG charts</span>
 			</div>
 			<div class="metric-panel">
-				<b>9</b>
+				<b>15</b>
 				<span>Source records</span>
 			</div>
 			<div class="metric-panel">
