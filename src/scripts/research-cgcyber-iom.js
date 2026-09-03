@@ -113,6 +113,8 @@ const opportunityTableConfig = {
 	columns: [
 		['ID', 'cell-id'],
 		['Opportunity', 'cell-name'],
+		['Priority', 'cell-status'],
+		['Pursuit Lane', 'cell-relation'],
 		['Focus', 'cell-evidence'],
 		['Customer / Buyer', 'cell-entity'],
 		['Opportunity Type', 'cell-type'],

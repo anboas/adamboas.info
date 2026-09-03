@@ -37,6 +37,8 @@ const researchItems = [
 const opportunityHeaders = [
 	['ID', 'ID'],
 	['Opportunity', 'Opportunity'],
+	['Priority', 'Priority'],
+	['Pursuit Lane', 'Lane'],
 	['Focus', 'Focus'],
 	['Customer / Buyer', 'Buyer / owner'],
 	['Opportunity Type', 'Type'],
@@ -84,8 +86,8 @@ const opportunityHeaders = [
 					<div class="min-w-0">
 						<h2 id="contracts-title" class="text-base font-semibold text-slate-50">Unified Opportunity Dashboard</h2>
 						<p class="mt-1 max-w-4xl text-xs leading-5 text-slate-400">
-							Comparable pursuit rows from active SAM/APFS/LRAF research, with buyer, due date, type, posture, and next
-							action visible up front. The named research blocks below remain the source-of-detail.
+							Comparable pursuit rows from active SAM/APFS/LRAF research, with priority, lane, buyer, due date, type,
+							posture, and next action visible up front. The named research blocks below remain the source-of-detail.
 						</p>
 					</div>
 					<div class="text-xs text-slate-400">
@@ -103,20 +105,20 @@ const opportunityHeaders = [
 						/>
 					</label>
 					<label class="filter-field">
-						<span>Buyer / owner</span>
-						<select data-contracts-filter="Customer / Buyer"><option value="">All buyers</option></select>
+						<span>Priority</span>
+						<select data-contracts-filter="Priority"><option value="">All priorities</option></select>
 					</label>
 					<label class="filter-field">
-						<span>Type</span>
-						<select data-contracts-filter="Opportunity Type"><option value="">All types</option></select>
+						<span>Pursuit lane</span>
+						<select data-contracts-filter="Pursuit Lane"><option value="">All lanes</option></select>
 					</label>
 					<label class="filter-field">
 						<span>Bid posture</span>
 						<select data-contracts-filter="Bid Posture"><option value="">All postures</option></select>
 					</label>
 					<label class="filter-field">
-						<span>Confidence</span>
-						<select data-contracts-filter="Confidence"><option value="">All confidence</option></select>
+						<span>Type</span>
+						<select data-contracts-filter="Opportunity Type"><option value="">All types</option></select>
 					</label>
 				</div>
 			</div>
@@ -241,7 +243,7 @@ const opportunityHeaders = [
 		--id-col-width: 4.25rem;
 		--name-col-width: 18rem;
 		width: 100%;
-		min-width: 1420px;
+		min-width: 1680px;
 		border-collapse: separate;
 		border-spacing: 0;
 		font-size: 0.78rem;
@@ -377,7 +379,7 @@ const opportunityHeaders = [
 	@media (max-width: 720px) {
 		.roster-table {
 			--name-col-width: 14rem;
-			min-width: 1320px;
+			min-width: 1560px;
 		}
 	}
 </style>

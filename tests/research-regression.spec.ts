@@ -44,11 +44,13 @@ test.describe('private research surface', () => {
 		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
 		await expect(page.getByRole('heading', { name: 'Unified Opportunity Dashboard', exact: true })).toBeVisible();
 
-		await expect(page.locator('[data-contracts-count]')).toContainText('17');
-		await expect(page.locator('[data-contracts-table] thead th button').nth(3)).toHaveText('Buyer / owner');
-		await expect(page.locator('[data-contracts-table] thead th button').nth(4)).toHaveText('Type');
-		await expect(page.locator('[data-contracts-table] thead th button').nth(5)).toHaveText('Due date');
-		await expect(page.locator('[data-contracts-table] thead th button').nth(13)).toHaveText('SAM / source');
+		await expect(page.locator('[data-contracts-count]')).toContainText('25');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(1)).toHaveText('Opportunity');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(2)).toHaveText('Priority');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(3)).toHaveText('Lane');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(6)).toHaveText('Type');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(7)).toHaveText('Due date');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(15)).toHaveText('SAM / source');
 
 		await page.locator('[data-contracts-search]').fill('CGCYBER IOM');
 		await expect(page.locator('[data-contracts-body]')).toContainText('Integrated Operations Management');
@@ -65,8 +67,20 @@ test.describe('private research surface', () => {
 		await page.locator('[data-contracts-search]').fill('Kessel Run');
 		await expect(page.locator('[data-contracts-body]')).toContainText('FA8730-22-S-C001');
 		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('Joint Targeting Toolbox');
+		await expect(page.locator('[data-contracts-body]')).toContainText('2026-09-07');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('FUSION Support');
+		await expect(page.locator('[data-contracts-body]')).toContainText('N5523626Q0102');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('CCS Meadowlands');
+		await expect(page.locator('[data-contracts-body]')).toContainText('FA881926RFI-0001');
+		await page.locator('[data-contracts-search]').fill('');
 		await page.locator('[data-contracts-filter="Bid Posture"]').selectOption('Prime / immediate response');
 		await expect(page.locator('[data-contracts-body]')).toContainText('PMX-281');
+		await page.locator('[data-contracts-filter="Bid Posture"]').selectOption('');
+		await page.locator('[data-contracts-filter="Priority"]').selectOption('P1');
+		await expect(page.locator('[data-contracts-body]')).toContainText('Application Arsenal');
 	});
 
 	test('NIWC PAC atlas exposes chart controls and filterable roster', async ({ page }) => {
