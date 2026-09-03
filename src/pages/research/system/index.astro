@@ -4,33 +4,33 @@ import SurfacePageHeader from '../../../components/SurfacePageHeader.astro';
 import { withBase } from '../../../utils/withBase';
 import researchScriptUrl from '../../../scripts/research-cgcyber-iom.js?url';
 
-const assetBase = '/research/cgcyber-iom/';
+const assetBase = '/research/system/';
 const charts = [
 	{
-		id: 'authority',
-		label: 'Authority / Customer',
-		src: withBase(`${assetBase}cgcyber-authority-org.svg`),
+		id: 'pipeline',
+		label: 'Pipeline',
+		src: withBase(`${assetBase}research-system-pipeline.svg`),
 		description:
-			'DHS, Coast Guard, CG-C5I, CGCYBER, DCS, PEO C5I/Cyber, C5ISC, acquisition, contracting, and technology interfaces.',
-		focusX: 0.49,
+			'Repeatable capture-intel pipeline: intake, evidence, maps, actions, publish, watch, deepen, and executive brief.',
+		focusX: 0.5,
 		focusY: 0.19,
 	},
 	{
-		id: 'operations',
-		label: 'Operations / C5ISC',
-		src: withBase(`${assetBase}cgcyber-operations-structure.svg`),
+		id: 'schema',
+		label: 'Block Format',
+		src: withBase(`${assetBase}research-system-schema.svg`),
 		description:
-			'CGCC-2/3/33/35/36/37/AA operating structure, senior workforce signals, exercise readiness, and the highest C5ISC interface seams.',
-		focusX: 0.43,
+			'Canonical research block schema: org/POCs, opportunities, contracts, companies, source register, and shared controls.',
+		focusX: 0.5,
 		focusY: 0.2,
 	},
 	{
-		id: 'contracts',
-		label: 'Contract Ecosystem',
-		src: withBase(`${assetBase}cgcyber-contract-ecosystem.svg`),
+		id: 'roadmap',
+		label: 'Pursuit Roadmap',
+		src: withBase(`${assetBase}research-system-roadmap.svg`),
 		description:
-			'IOM target opportunity, APFS/CG-914 buyer metadata, legacy NOSC/CND lineage, IARMS, IMS/IPSS, C5I apps, C5ISR, VIA, BLMSS, and OEM/training seams.',
-		focusX: 0.43,
+			'Current build plan for NIWC PAC AA, CGCYBER IOM, NAE, global dashboard, deep dives, graphs, and watchlist automation.',
+		focusX: 0.5,
 		focusY: 0.2,
 	},
 ];
@@ -38,17 +38,17 @@ const charts = [
 const tableSections = [
 	{
 		id: 'org',
-		title: 'Government POC And Org Roster',
+		title: 'Research System Modules',
 		description:
-			'Public-source CGCYBER, acquisition, systems, C5ISC, contracting, workforce, exercise, and technology roles. Offices remain offices where no public incumbent is known.',
+			'The repeatable module set every future company, organization, opportunity, or market research block should produce.',
 		countAttr: 'data-org-count',
 		searchAttr: 'data-org-search',
-		searchPlaceholder: 'Name, role, code, office, source...',
+		searchPlaceholder: 'Module, role, evidence, domain...',
 		filterAttr: 'data-org-filter',
 		filters: [
 			['Domain', 'All domains'],
 			['Status', 'All statuses'],
-			['IOM Relevance', 'All relevance'],
+			['IOM Relevance', 'All uses'],
 			['Confidence', 'All confidence'],
 		],
 		tableAttr: 'data-org-table',
@@ -56,32 +56,32 @@ const tableSections = [
 		sortAttr: 'data-org-sort-key',
 		headers: [
 			['ID', 'ID'],
-			['Node', 'Name / Node'],
+			['Node', 'Module'],
 			['Role', 'Role'],
 			['Status', 'Status'],
-			['IOM Relevance', 'IOM relation'],
+			['IOM Relevance', 'Use'],
 			['Code', 'Code'],
 			['Domain', 'Domain'],
 			['Type', 'Type'],
-			['Evidence', 'Evidence'],
-			['Confidence', 'Confidence'],
+			['Evidence', 'Output standard'],
+			['Confidence', 'Priority'],
 			['Source Refs', 'Refs'],
 			['Source URL', 'Source'],
 		],
 	},
 	{
 		id: 'contracts',
-		title: 'Contract Ecosystem And Transition Seams',
+		title: 'Reusable Intake Template',
 		description:
-			'Adjacent active, historical, forecast, cancelled, and false-positive contract records that shape IOM transition and teaming.',
+			'The minimum information model for starting a new research block from a company, organization, program, opportunity, or market phrase.',
 		countAttr: 'data-contracts-count',
 		searchAttr: 'data-contracts-search',
-		searchPlaceholder: 'Program, prime, award ID, scope...',
+		searchPlaceholder: 'Target, buyer, incumbent, gaps...',
 		filterAttr: 'data-contracts-filter',
 		filters: [
-			['Prime', 'All primes'],
+			['Prime', 'All fields'],
 			['Status', 'All statuses'],
-			['IOM Seam / Relevance', 'All seams'],
+			['IOM Seam / Relevance', 'All purposes'],
 			['Confidence', 'All confidence'],
 		],
 		tableAttr: 'data-contracts-table',
@@ -89,44 +89,44 @@ const tableSections = [
 		sortAttr: 'data-contracts-sort-key',
 		headers: [
 			['ID', 'ID'],
-			['Program', 'Program'],
-			['Prime', 'Prime'],
+			['Program', 'Field'],
+			['Prime', 'What goes here'],
 			['Status', 'Status'],
-			['IOM Seam / Relevance', 'IOM seam'],
-			['Award / Forecast ID', 'Award / forecast'],
-			['Value / Term', 'Value / term'],
-			['Scope', 'Scope'],
-			['Confidence', 'Confidence'],
+			['IOM Seam / Relevance', 'Purpose'],
+			['Award / Forecast ID', 'Code'],
+			['Value / Term', 'Example'],
+			['Scope', 'Definition'],
+			['Confidence', 'Priority'],
 			['Source Refs', 'Refs'],
 			['Source URL', 'Source'],
 		],
 	},
 	{
 		id: 'competitors',
-		title: 'Competitive Field And Teaming Posture',
+		title: 'Current Pursuit Plans',
 		description:
-			'Probability-weighted field from the package, with explicit gaps and suggested diligence posture separated from confirmed bidder intelligence.',
+			'The concrete next-build queue for the research system and the three active pursuit blocks: NAE, CGCYBER IOM, and NIWC PAC AA.',
 		countAttr: 'data-competitors-count',
 		searchAttr: 'data-competitors-search',
-		searchPlaceholder: 'Company, tier, vehicle, risk...',
+		searchPlaceholder: 'Dashboard, deep dive, NAE, CGCYBER, NIWC...',
 		filterAttr: 'data-competitors-filter',
 		filters: [
-			['Tier', 'All tiers'],
-			['Vehicle', 'All vehicles'],
-			['Confidence', 'All confidence'],
+			['Tier', 'All work types'],
+			['Vehicle', 'All scopes'],
+			['Confidence', 'All priorities'],
 		],
 		tableAttr: 'data-competitors-table',
 		bodyAttr: 'data-competitors-body',
 		sortAttr: 'data-competitors-sort-key',
 		headers: [
 			['ID', 'ID'],
-			['Entity', 'Entity'],
-			['Tier', 'Tier'],
-			['Recommended Posture', 'Posture'],
-			['Power Base', 'Power base'],
-			['Gap / Vulnerability', 'Gap / risk'],
-			['Vehicle', 'Vehicle'],
-			['Confidence', 'Confidence'],
+			['Entity', 'Plan'],
+			['Tier', 'Type'],
+			['Recommended Posture', 'Timing'],
+			['Power Base', 'What to build'],
+			['Gap / Vulnerability', 'Dependency / gap'],
+			['Vehicle', 'Scope'],
+			['Confidence', 'Priority'],
 			['Source Refs', 'Refs'],
 			['Source URL', 'Source'],
 		],
@@ -134,7 +134,7 @@ const tableSections = [
 	{
 		id: 'sources',
 		title: 'Source Register',
-		description: 'Public-source anchors carried over from the PDF package plus this follow-on contact pass.',
+		description: 'Internal source anchors for the repeatable system and the current research blocks.',
 		countAttr: 'data-sources-count',
 		searchAttr: 'data-sources-search',
 		searchPlaceholder: 'Source title, use, URL...',
@@ -154,85 +154,83 @@ const tableSections = [
 ---
 
 <SiteLayout
-	title="CGCYBER IOM Research Atlas"
-	description="Private public-source CGCYBER Integrated Operations Management capture research atlas."
+	title="Research System"
+	description="Private repeatable capture-intelligence system for public-source research blocks."
 	noindex={true}
 	nofollow={true}
 >
 	<section
 		class="research-app"
 		data-cgcyber-research
-		data-org-csv-url={withBase(`${assetBase}cgcyber-iom-org-roster.csv`)}
-		data-contracts-csv-url={withBase(`${assetBase}cgcyber-iom-contract-ecosystem.csv`)}
-		data-competitors-csv-url={withBase(`${assetBase}cgcyber-iom-competitors.csv`)}
-		data-sources-csv-url={withBase(`${assetBase}cgcyber-iom-source-register.csv`)}
+		data-org-csv-url={withBase(`${assetBase}research-system-modules.csv`)}
+		data-contracts-csv-url={withBase(`${assetBase}research-system-intake-template.csv`)}
+		data-competitors-csv-url={withBase(`${assetBase}research-system-pursuit-plans.csv`)}
+		data-sources-csv-url={withBase(`${assetBase}research-system-source-register.csv`)}
 	>
 		<SurfacePageHeader
 			stickyActive="none"
-			eyebrowLinks={[{ label: 'Research', href: withBase('/research/') }, { label: 'CGCYBER IOM' }]}
-			title="CGCYBER IOM Public-Source Research Atlas"
-			description="Interactive capture workspace for the Coast Guard Cyber Command Integrated Operations Management forecast: org structure, government POCs, contracting/workforce interfaces, contract ecosystem, competitor field, and source register."
+			eyebrowLinks={[{ label: 'Research', href: withBase('/research/') }, { label: 'System' }]}
+			title="Research System"
+			description="Repeatable public-source capture-intel machine: give it a company, organization, opportunity, or market, and it produces a noindex research block with evidence, maps, tables, gaps, and next actions."
 		>
 			<div slot="actions" class="flex flex-wrap gap-2">
-				<a class="ui-link-btn ui-link-btn-primary" href={withBase(`${assetBase}cgcyber-iom-org-roster.csv`)}>Org CSV</a>
-				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}cgcyber-iom-contract-ecosystem.csv`)}
-					>Contracts CSV</a
+				<a class="ui-link-btn ui-link-btn-primary" href={withBase(`${assetBase}research-system-modules.csv`)}
+					>Modules CSV</a
 				>
-				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}cgcyber-iom-competitors.csv`)}
-					>Competitors CSV</a
+				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}research-system-intake-template.csv`)}
+					>Intake CSV</a
+				>
+				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}research-system-pursuit-plans.csv`)}
+					>Plans CSV</a
 				>
 			</div>
 		</SurfacePageHeader>
 
 		<div class="research-banner mt-3 border border-teal-400/20 bg-teal-950/20 p-3 text-xs leading-5 text-slate-300">
-			<span class="font-semibold text-teal-100">Noindex research surface.</span>
-			This page is excluded from sitemap/robots and is not linked from the public navigation. It is still a public URL if
-			shared.
+			<span class="font-semibold text-teal-100">Noindex operating manual.</span>
+			This is the reusable format for future research blocks. It is excluded from sitemap/robots and is not linked from public
+			navigation.
 		</div>
 
 		<nav class="research-jump mt-3" aria-label="Research section navigation">
 			<a href={withBase('/research/')}>Research Index</a>
-			<a href={withBase('/research/system/')}>System</a>
 			<a href="#chart-title">Charts</a>
-			<a href="#org-title">Org / POCs</a>
-			<a href="#contracts-title">Contracts</a>
-			<a href="#competitors-title">Competitors</a>
+			<a href="#org-title">Modules</a>
+			<a href="#contracts-title">Intake</a>
+			<a href="#competitors-title">Plans</a>
 			<a href="#sources-title">Sources</a>
 			<a href={withBase('/research/niwc-pac/')}>NIWC PAC</a>
+			<a href={withBase('/research/cgcyber-iom/')}>CGCYBER IOM</a>
 			<a href={withBase('/research/naval-aviation-enterprise/')}>NAE</a>
 		</nav>
 
 		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-5" aria-label="Research summary">
 			<div class="metric-panel">
-				<b>&gt;$100M</b>
-				<span>Forecast value</span>
+				<b>12</b>
+				<span>System modules</span>
 			</div>
 			<div class="metric-panel">
-				<b>23 Sep</b>
-				<span>Forecast RFQ</span>
-			</div>
-			<div class="metric-panel">
-				<b>46</b>
-				<span>Org / POC rows</span>
-			</div>
-			<div class="metric-panel">
-				<b>18</b>
-				<span>Contract seams</span>
+				<b>12</b>
+				<span>Intake fields</span>
 			</div>
 			<div class="metric-panel">
 				<b>11</b>
-				<span>Competitor rows</span>
+				<span>Current plans</span>
 			</div>
 			<div class="metric-panel">
-				<b>47</b>
-				<span>Source records</span>
+				<b>3</b>
+				<span>Active pursuit blocks</span>
+			</div>
+			<div class="metric-panel">
+				<b>1</b>
+				<span>Next dashboard</span>
 			</div>
 		</section>
 
 		<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby="chart-title">
 			<div class="flex flex-col gap-3 border-b border-slate-800 p-3 lg:flex-row lg:items-start lg:justify-between">
 				<div class="min-w-0">
-					<h2 id="chart-title" class="text-base font-semibold text-slate-50">Structure Charts</h2>
+					<h2 id="chart-title" class="text-base font-semibold text-slate-50">System Charts</h2>
 					<p class="mt-1 max-w-5xl text-xs leading-5 text-slate-400" data-chart-description>
 						{charts[0].description}
 					</p>
@@ -270,7 +268,7 @@ const tableSections = [
 			<div class="chart-stage" data-chart-stage>
 				<img
 					src={charts[0].src}
-					alt="CGCYBER Integrated Operations Management public research chart"
+					alt="Research system capture-intelligence chart"
 					class="chart-image"
 					data-chart-image
 					draggable="false"
@@ -425,8 +423,8 @@ const tableSections = [
 
 	.chart-stage {
 		position: relative;
-		height: min(72vh, 760px);
-		min-height: 420px;
+		height: min(68vh, 680px);
+		min-height: 390px;
 		overflow: hidden;
 		background: rgb(248 250 252);
 		cursor: grab;
@@ -474,9 +472,7 @@ const tableSections = [
 	.roster-table-wrap {
 		max-height: 72vh;
 		overflow: auto;
-		background:
-			linear-gradient(90deg, rgb(2 6 23), transparent 1.25rem) left/1.25rem 100% no-repeat,
-			rgb(2 6 23);
+		background: rgb(2 6 23);
 		scrollbar-color: rgba(45, 212, 191, 0.48) rgba(15, 23, 42, 0.92);
 	}
 
@@ -484,7 +480,7 @@ const tableSections = [
 		--id-col-width: 4.25rem;
 		--name-col-width: 18rem;
 		width: 100%;
-		min-width: 1560px;
+		min-width: 1480px;
 		border-collapse: separate;
 		border-spacing: 0;
 		font-size: 0.78rem;
@@ -515,225 +511,121 @@ const tableSections = [
 	.roster-table th button {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.35rem;
+		gap: 0.25rem;
+		border: 0;
+		background: transparent;
+		padding: 0;
 		color: rgb(226 232 240);
-		font-weight: 600;
-		text-align: left;
+		font: inherit;
+		font-weight: 700;
 	}
 
 	.roster-table th button::after {
-		content: '';
-		width: 0.36rem;
-		height: 0.36rem;
-		border-right: 1px solid rgba(148, 163, 184, 0.65);
-		border-bottom: 1px solid rgba(148, 163, 184, 0.65);
-		opacity: 0.45;
-		transform: rotate(45deg) translateY(-0.08rem);
+		content: '↕';
+		color: rgb(100 116 139);
+		font-size: 0.68rem;
 	}
 
 	.roster-table th button[data-sort-state='asc']::after {
-		border-color: rgb(94 234 212);
-		opacity: 1;
-		transform: rotate(225deg) translateY(-0.08rem);
+		content: '↑';
+		color: rgb(45 212 191);
 	}
 
 	.roster-table th button[data-sort-state='desc']::after {
-		border-color: rgb(94 234 212);
-		opacity: 1;
-	}
-
-	.research-app :global(.roster-row) {
-		--row-bg: rgb(2 6 23);
-		--row-accent: rgba(100, 116, 139, 0.75);
-		background: var(--row-bg);
-		color: rgb(203 213 225);
-		outline: none;
-	}
-
-	.research-app :global(.roster-table tbody tr:nth-child(odd)) {
-		--row-bg: rgb(5 13 30);
-	}
-
-	.research-app :global(.roster-table tbody tr:nth-child(even)) {
-		--row-bg: rgb(10 18 36);
-	}
-
-	.research-app :global(.roster-row-current),
-	.research-app :global(.roster-row-official) {
-		--row-accent: rgb(20 184 166);
-	}
-
-	.research-app :global(.roster-row-gap) {
-		--row-accent: rgb(251 146 60);
-	}
-
-	.research-app :global(.roster-row-forecast) {
-		--row-accent: rgb(245 158 11);
-	}
-
-	.research-app :global(.roster-row-historical) {
-		--row-accent: rgb(148 163 184);
-	}
-
-	.research-app :global(.roster-row-unverified) {
-		--row-accent: rgb(248 113 113);
-	}
-
-	.research-app :global(.roster-table tbody tr:hover),
-	.research-app :global(.roster-table tbody tr:focus-visible),
-	.research-app :global(.roster-row-selected) {
-		--row-bg: rgb(20 32 55);
-		box-shadow: inset 0 0 0 1px rgba(45, 212, 191, 0.2);
-		color: rgb(241 245 249);
+		content: '↓';
+		color: rgb(45 212 191);
 	}
 
 	.roster-table th:nth-child(1),
-	.roster-table th:nth-child(2),
-	.research-app :global(.cell-id),
-	.research-app :global(.cell-name) {
+	.research-app :global(.roster-table td:nth-child(1)) {
 		position: sticky;
-		background: inherit;
+		left: 0;
+		z-index: 3;
+		width: var(--id-col-width);
+		min-width: var(--id-col-width);
+	}
+
+	.roster-table th:nth-child(2),
+	.research-app :global(.roster-table td:nth-child(2)) {
+		position: sticky;
+		left: var(--id-col-width);
+		z-index: 3;
+		width: var(--name-col-width);
+		min-width: var(--name-col-width);
+		box-shadow: 1px 0 0 rgba(45, 212, 191, 0.18);
 	}
 
 	.roster-table th:nth-child(1),
 	.roster-table th:nth-child(2) {
 		z-index: 5;
-		background: rgb(15 23 42);
 	}
 
-	.roster-table th:nth-child(1),
-	.research-app :global(.cell-id) {
-		left: 0;
-		width: var(--id-col-width);
-		min-width: var(--id-col-width);
-		max-width: var(--id-col-width);
+	.research-app :global(.roster-row) {
+		background: rgb(2 6 23);
+		box-shadow: inset 3px 0 0 rgba(71, 85, 105, 0.72);
 	}
 
-	.roster-table th:nth-child(2),
-	.research-app :global(.cell-name) {
-		left: var(--id-col-width);
-		width: var(--name-col-width);
-		min-width: var(--name-col-width);
-		max-width: var(--name-col-width);
-		box-shadow: 1px 0 0 rgba(45, 212, 191, 0.12);
+	.research-app :global(.roster-row:nth-child(even)) {
+		background: rgb(8 13 27);
 	}
 
-	.research-app :global(.cell-id) {
-		border-left: 3px solid var(--row-accent);
-		color: rgb(148 163 184);
-		font-variant-numeric: tabular-nums;
+	.research-app :global(.roster-row:hover),
+	.research-app :global(.roster-row-selected) {
+		background: rgb(12 24 40);
+		box-shadow: inset 3px 0 0 rgba(45, 212, 191, 0.95);
+	}
+
+	.research-app :global(.roster-row td:nth-child(1)),
+	.research-app :global(.roster-row td:nth-child(2)) {
+		background: inherit;
 	}
 
 	.research-app :global(.cell-name strong) {
-		display: block;
 		color: rgb(248 250 252);
-		font-size: 0.84rem;
-		line-height: 1.35;
-		overflow-wrap: anywhere;
-	}
-
-	.research-app :global(.cell-role),
-	.research-app :global(.cell-evidence) {
-		min-width: 22rem;
-		color: rgb(226 232 240);
-	}
-
-	.research-app :global(.cell-entity),
-	.research-app :global(.cell-type),
-	.research-app :global(.cell-relation) {
-		min-width: 13rem;
-		color: rgb(204 251 241);
-	}
-
-	.research-app :global(.cell-domain),
-	.research-app :global(.cell-confidence),
-	.research-app :global(.cell-source-ref),
-	.research-app :global(.cell-date),
-	.research-app :global(.cell-code),
-	.research-app :global(.cell-id) {
-		color: rgb(148 163 184);
-	}
-
-	.research-app :global(.cell-code) {
-		min-width: 9rem;
-		font-variant-numeric: tabular-nums;
-	}
-
-	.research-app :global(.cell-confidence),
-	.research-app :global(.cell-source-ref) {
-		min-width: 8rem;
-	}
-
-	.research-app :global(.cell-source) {
-		min-width: 9rem;
-		white-space: nowrap;
 	}
 
 	.research-app :global(.status-badge) {
 		display: inline-flex;
-		align-items: center;
-		min-height: 1.35rem;
-		border: 1px solid rgba(148, 163, 184, 0.3);
-		padding: 0.15rem 0.45rem;
-		font-size: 0.68rem;
+		max-width: 100%;
+		border: 1px solid rgba(148, 163, 184, 0.32);
+		padding: 0.18rem 0.4rem;
+		background: rgba(15, 23, 42, 0.92);
+		color: rgb(226 232 240);
+		font-size: 0.7rem;
+		font-weight: 700;
 		line-height: 1.2;
-		white-space: nowrap;
 	}
 
 	.research-app :global(.status-current),
 	.research-app :global(.status-official) {
-		border-color: rgba(45, 212, 191, 0.45);
-		background: rgba(20, 184, 166, 0.16);
+		border-color: rgba(45, 212, 191, 0.48);
 		color: rgb(204 251 241);
 	}
 
-	.research-app :global(.status-gap) {
-		border-color: rgba(251, 146, 60, 0.45);
-		background: rgba(154, 52, 18, 0.24);
-		color: rgb(255 237 213);
-	}
-
+	.research-app :global(.status-gap),
 	.research-app :global(.status-forecast) {
-		border-color: rgba(245, 158, 11, 0.38);
-		background: rgba(120, 53, 15, 0.18);
-		color: rgb(254 243 199);
+		border-color: rgba(245, 158, 11, 0.5);
+		color: rgb(253 230 138);
 	}
 
-	.research-app :global(.status-historical) {
-		border-color: rgba(148, 163, 184, 0.3);
-		background: rgba(71, 85, 105, 0.22);
-		color: rgb(226 232 240);
+	.research-app :global(.source-link) {
+		color: rgb(94 234 212);
+		text-decoration: none;
 	}
 
-	.research-app :global(.status-unverified) {
-		border-color: rgba(248, 113, 113, 0.45);
-		background: rgba(127, 29, 29, 0.22);
-		color: rgb(254 226 226);
-	}
-
-	.source-link {
-		color: rgb(153 246 228);
-		font-weight: 700;
+	.research-app :global(.source-link:hover) {
 		text-decoration: underline;
-		text-decoration-color: rgba(45, 212, 191, 0.38);
-		text-underline-offset: 0.18rem;
 	}
 
 	@media (max-width: 720px) {
 		.chart-stage {
-			height: 68vh;
+			height: 58vh;
 			min-height: 360px;
 		}
 
 		.roster-table {
-			--name-col-width: 13.5rem;
-			min-width: 1260px;
-			font-size: 0.72rem;
-		}
-
-		.roster-table th,
-		.roster-table td {
-			padding: 0.55rem 0.58rem;
+			--name-col-width: 14rem;
+			min-width: 1320px;
 		}
 	}
 </style>

@@ -7,7 +7,8 @@ test.describe('private research surface', () => {
 		const response = await page.goto(`${BASE}/research/`, { waitUntil: 'networkidle' });
 		expect(response?.status()).toBeLessThan(400);
 		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
-		await expect(page.getByRole('heading', { name: 'Research' })).toBeVisible();
+		await expect(page.getByRole('heading', { name: 'Research', exact: true })).toBeVisible();
+		await expect(page.getByRole('link', { name: /Research System/ })).toHaveAttribute('href', /\/research\/system\/$/);
 		await expect(page.getByRole('link', { name: /NIWC PAC/ })).toHaveAttribute('href', /\/research\/niwc-pac\/$/);
 		await expect(page.getByRole('link', { name: /CGCYBER IOM/ })).toHaveAttribute('href', /\/research\/cgcyber-iom\/$/);
 		await expect(page.getByRole('link', { name: /Naval Aviation Enterprise/ })).toHaveAttribute(
@@ -17,7 +18,12 @@ test.describe('private research surface', () => {
 	});
 
 	test('research detail breadcrumbs link back to the hidden index', async ({ page }) => {
-		for (const path of ['/research/niwc-pac/', '/research/cgcyber-iom/', '/research/naval-aviation-enterprise/']) {
+		for (const path of [
+			'/research/system/',
+			'/research/niwc-pac/',
+			'/research/cgcyber-iom/',
+			'/research/naval-aviation-enterprise/',
+		]) {
 			await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });
 			const breadcrumb = page.locator('nav[aria-label="Breadcrumb"]').getByRole('link', { name: 'Research' });
 			await expect(breadcrumb).toHaveAttribute('href', /\/research\/$/);
@@ -68,6 +74,33 @@ test.describe('private research surface', () => {
 		const sitemap = await request.get(`${BASE}/sitemap-index.xml`);
 		const body = await sitemap.text();
 		expect(body).not.toContain('/research/');
+	});
+
+	test('Research System exposes the repeatable format and pursuit plans', async ({ page }) => {
+		const response = await page.goto(`${BASE}/research/system/`, { waitUntil: 'networkidle' });
+		expect(response?.status()).toBeLessThan(400);
+		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
+		await expect(page.getByRole('heading', { name: 'Research System', exact: true })).toBeVisible();
+		await expect(page.locator('[data-chart-image]')).toBeVisible();
+		await page.getByRole('button', { name: 'Block Format' }).click();
+		await expect(page.locator('[data-chart-description]')).toContainText('Canonical research block schema');
+		await expect(page.locator('[data-chart-download]')).toHaveAttribute('href', /research-system-schema\.svg$/);
+		await page.getByRole('button', { name: 'Pursuit Roadmap' }).click();
+		await expect(page.locator('[data-chart-description]')).toContainText('NIWC PAC AA');
+
+		await expect(page.locator('[data-org-count]')).toContainText('12');
+		await expect(page.locator('[data-contracts-count]')).toContainText('12');
+		await expect(page.locator('[data-competitors-count]')).toContainText('11');
+		await expect(page.locator('[data-sources-count]')).toContainText('5');
+
+		await page.locator('[data-org-search]').fill('Watchlist');
+		await expect(page.locator('[data-org-body]')).toContainText('APFS, SAM, LRAF');
+		await page.locator('[data-contracts-search]').fill('Incumbent');
+		await expect(page.locator('[data-contracts-body]')).toContainText('Who owns current truth');
+		await page.locator('[data-competitors-search]').fill('Global opportunity dashboard');
+		await expect(page.locator('[data-competitors-body]')).toContainText('One cockpit across NIWC PAC AA');
+		await page.locator('[data-competitors-search]').fill('CGCYBER IOM plan');
+		await expect(page.locator('[data-competitors-body]')).toContainText('SOC/CSSP partner short list');
 	});
 
 	test('CGCYBER IOM atlas exposes chart controls and filterable tables', async ({ page }) => {
