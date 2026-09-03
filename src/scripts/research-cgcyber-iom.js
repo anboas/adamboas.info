@@ -199,6 +199,7 @@ function initCharts(root) {
 	const zoomLabel = root.querySelector('[data-chart-zoom]');
 	const description = root.querySelector('[data-chart-description]');
 	const download = root.querySelector('[data-chart-download]');
+	if (!image || !stage || !zoomLabel || !description || !download) return;
 	const tabs = [...root.querySelectorAll('[data-chart-tab]')];
 	const buttons = [...root.querySelectorAll('[data-chart-action]')];
 	const initialTab = tabs.find((tab) => tab.classList.contains('chart-tab-active')) ?? tabs[0];
@@ -291,6 +292,8 @@ function initCharts(root) {
 function initTable(root, config) {
 	const body = root.querySelector(config.bodySelector);
 	const count = root.querySelector(config.countSelector);
+	const csvUrl = root.dataset[config.csvDataset];
+	if (!body || !count || !csvUrl) return;
 	const search = root.querySelector(config.searchSelector);
 	const filterInputs = [...root.querySelectorAll(config.filterSelector)];
 	const sortButtons = [...root.querySelectorAll(config.sortSelector)];
@@ -377,7 +380,7 @@ function initTable(root, config) {
 		row.classList.add('roster-row-selected');
 	});
 
-	fetch(root.dataset[config.csvDataset])
+	fetch(csvUrl)
 		.then((response) => {
 			if (!response.ok) throw new Error(`CSV load failed: ${response.status}`);
 			return response.text();

@@ -2,26 +2,9 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import SurfacePageHeader from '../../components/SurfacePageHeader.astro';
 import { withBase } from '../../utils/withBase';
+import researchScriptUrl from '../../scripts/research-cgcyber-iom.js?url';
 
 const researchItems = [
-	{
-		title: 'Opportunity Dashboard',
-		href: withBase('/research/dashboard/'),
-		description:
-			'Unified capture cockpit across NIWC PAC AA, CGCYBER IOM, and Naval Aviation Enterprise: opportunities, companies, gaps, and next actions.',
-		kicker: 'Dashboard / cross-block',
-		stats: ['12 opportunities', '10 companies', '8 next actions'],
-		updated: 'Started 2 Sep 2026',
-	},
-	{
-		title: 'Research System',
-		href: withBase('/research/system/'),
-		description:
-			'Repeatable capture-intel operating manual: intake template, canonical module format, current pursuit plans, and next-build roadmap.',
-		kicker: 'System / repeatable workflow',
-		stats: ['12 modules', '12 intake fields', '11 plans'],
-		updated: 'Started 2 Sep 2026',
-	},
 	{
 		title: 'NIWC PAC',
 		href: withBase('/research/niwc-pac/'),
@@ -50,53 +33,157 @@ const researchItems = [
 		updated: 'Expanded 2 Sep 2026',
 	},
 ];
+
+const opportunityHeaders = [
+	['ID', 'ID'],
+	['Program', 'Pursuit'],
+	['Prime', 'Buyer / owner'],
+	['Status', 'Status'],
+	['IOM Seam / Relevance', 'Fit lane'],
+	['Award / Forecast ID', 'Vehicle / ID'],
+	['Value / Term', 'Value / timing'],
+	['Scope', 'Why it matters'],
+	['Confidence', 'Confidence'],
+	['Source Refs', 'Refs'],
+	['Source URL', 'Block'],
+];
 ---
 
 <SiteLayout title="Research" description="Private research workspace for Adam Boas." noindex={true} nofollow={true}>
-	<SurfacePageHeader
-		stickyActive="none"
-		eyebrow="Private research"
-		title="Research"
-		description="Non-indexed working area for structured research artifacts."
-	/>
-
-	<div class="research-notice mt-3 border border-teal-400/20 bg-teal-950/20 p-3 text-xs leading-5 text-slate-300">
-		<span class="font-semibold text-teal-100">Hidden research index.</span>
-		These pages are excluded from robots and sitemap output and are not linked from the public navigation. They are still
-		public URLs if shared.
-	</div>
-
-	<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3" aria-label="Research folders">
-		{
-			researchItems.map((item) => (
-				<a
-					href={item.href}
-					class="research-card group block border border-slate-800 bg-slate-950/95 p-4 no-underline hover:border-teal-400/55"
-				>
-					<div class="flex items-start justify-between gap-3">
-						<div class="min-w-0">
-							<p class="text-[0.68rem] uppercase tracking-[0.14em] text-teal-200/80">{item.kicker}</p>
-							<h2 class="mt-1 text-lg font-semibold text-slate-50">{item.title}</h2>
-							<p class="mt-2 text-sm leading-6 text-slate-300">{item.description}</p>
-						</div>
-						<span class="shrink-0 border border-teal-400/35 px-2 py-1 text-xs text-teal-100">Open</span>
-					</div>
-					<div class="mt-4 flex flex-wrap gap-2">
-						{item.stats.map((stat) => (
-							<span class="ui-pill">{stat}</span>
-						))}
-					</div>
-					<div class="mt-4 border-t border-slate-800 pt-3 text-xs text-slate-500">{item.updated}</div>
+	<section
+		class="research-app"
+		data-cgcyber-research
+		data-contracts-csv-url={withBase('/research/research-opportunities.csv')}
+	>
+		<SurfacePageHeader
+			stickyActive="none"
+			eyebrow="Private research"
+			title="Research"
+			description="Unified opportunity table first, then named research blocks. System/process material is kept out of the main hub."
+		>
+			<div slot="actions" class="flex flex-wrap gap-2">
+				<a class="ui-link-btn ui-link-btn-primary" href={withBase('/research/research-opportunities.csv')}>
+					Opportunities CSV
 				</a>
-			))
-		}
+			</div>
+		</SurfacePageHeader>
+
+		<div class="research-notice mt-3 border border-teal-400/20 bg-teal-950/20 p-3 text-xs leading-5 text-slate-300">
+			<span class="font-semibold text-teal-100">Hidden research index.</span>
+			These pages are excluded from robots and sitemap output and are not linked from the public navigation. They are still
+			public URLs if shared.
+		</div>
+
+		<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby="contracts-title">
+			<div class="border-b border-slate-800 p-3">
+				<div class="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
+					<div class="min-w-0">
+						<h2 id="contracts-title" class="text-base font-semibold text-slate-50">Unified Opportunity Dashboard</h2>
+						<p class="mt-1 max-w-4xl text-xs leading-5 text-slate-400">
+							Comparable pursuit rows from NIWC PAC AA, CGCYBER IOM, and Naval Aviation Enterprise. The research blocks
+							below remain the source-of-detail.
+						</p>
+					</div>
+					<div class="text-xs text-slate-400">
+						<span data-contracts-count>Loading opportunities...</span>
+					</div>
+				</div>
+
+				<div class="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-5">
+					<label class="filter-field md:col-span-2 xl:col-span-1">
+						<span>Search</span>
+						<input
+							type="search"
+							data-contracts-search
+							placeholder="CGCYBER, Application Arsenal, TARCES, AIRWorks..."
+						/>
+					</label>
+					<label class="filter-field">
+						<span>Buyer / owner</span>
+						<select data-contracts-filter="Prime"><option value="">All buyers</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Status</span>
+						<select data-contracts-filter="Status"><option value="">All statuses</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Fit lane</span>
+						<select data-contracts-filter="IOM Seam / Relevance"><option value="">All fit lanes</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Confidence</span>
+						<select data-contracts-filter="Confidence"><option value="">All confidence</option></select>
+					</label>
+				</div>
+			</div>
+
+			<div class="roster-table-wrap contracts-table-wrap">
+				<table class="roster-table" data-contracts-table>
+					<thead>
+						<tr>
+							{
+								opportunityHeaders.map(([key, label]) => (
+									<th>
+										<button type="button" data-contracts-sort-key={key}>
+											{label}
+										</button>
+									</th>
+								))
+							}
+						</tr>
+					</thead>
+					<tbody data-contracts-body>
+						<tr>
+							<td colspan={opportunityHeaders.length} class="px-3 py-6 text-center text-sm text-slate-400">
+								Loading opportunities...
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3" aria-label="Named research blocks">
+			{
+				researchItems.map((item) => (
+					<a
+						href={item.href}
+						class="research-card group block border border-slate-800 bg-slate-950/95 p-4 no-underline hover:border-teal-400/55"
+					>
+						<div class="flex items-start justify-between gap-3">
+							<div class="min-w-0">
+								<p class="text-[0.68rem] uppercase tracking-[0.14em] text-teal-200/80">{item.kicker}</p>
+								<h2 class="mt-1 text-lg font-semibold text-slate-50">{item.title}</h2>
+								<p class="mt-2 text-sm leading-6 text-slate-300">{item.description}</p>
+							</div>
+							<span class="shrink-0 border border-teal-400/35 px-2 py-1 text-xs text-teal-100">Open</span>
+						</div>
+						<div class="mt-4 flex flex-wrap gap-2">
+							{item.stats.map((stat) => (
+								<span class="ui-pill">{stat}</span>
+							))}
+						</div>
+						<div class="mt-4 border-t border-slate-800 pt-3 text-xs text-slate-500">{item.updated}</div>
+					</a>
+				))
+			}
+		</section>
 	</section>
+
+	<script type="module" src={researchScriptUrl}></script>
 </SiteLayout>
 
 <style>
+	.research-app {
+		--research-border: rgba(51, 65, 85, 0.92);
+		--research-muted: rgb(148 163 184);
+	}
+
 	.research-notice,
 	.research-card,
-	.research-card span {
+	.research-card span,
+	.filter-field input,
+	.filter-field select {
 		border-radius: 0;
 	}
 
@@ -111,5 +198,182 @@ const researchItems = [
 	.research-card:hover {
 		background: rgb(3 10 25);
 		box-shadow: inset 3px 0 0 rgba(45, 212, 191, 0.82);
+	}
+
+	.filter-field {
+		display: flex;
+		min-width: 0;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+
+	.filter-field span {
+		font-size: 0.68rem;
+		line-height: 1.2;
+		color: var(--research-muted);
+		text-transform: uppercase;
+	}
+
+	.filter-field input,
+	.filter-field select {
+		width: 100%;
+		min-height: 2.35rem;
+		border: 1px solid rgba(71, 85, 105, 0.82);
+		background: rgba(2, 6, 23, 0.86);
+		padding: 0.45rem 0.6rem;
+		color: rgb(226 232 240);
+		font-size: 0.82rem;
+		line-height: 1.25;
+	}
+
+	.roster-table-wrap {
+		max-height: 70vh;
+		overflow: auto;
+		background: rgb(2 6 23);
+		scrollbar-color: rgba(45, 212, 191, 0.48) rgba(15, 23, 42, 0.92);
+	}
+
+	.roster-table {
+		--id-col-width: 4.25rem;
+		--name-col-width: 18rem;
+		width: 100%;
+		min-width: 1420px;
+		border-collapse: separate;
+		border-spacing: 0;
+		font-size: 0.78rem;
+		line-height: 1.42;
+	}
+
+	.roster-table th,
+	.research-app :global(.roster-table td) {
+		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
+		padding: 0.62rem 0.7rem;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	.roster-table th {
+		position: sticky;
+		top: 0;
+		z-index: 4;
+		border-bottom-color: rgba(45, 212, 191, 0.28);
+		background: rgb(15 23 42);
+		box-shadow: inset 0 -1px 0 rgba(45, 212, 191, 0.24);
+	}
+
+	.roster-table th button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		border: 0;
+		background: transparent;
+		padding: 0;
+		color: rgb(226 232 240);
+		font: inherit;
+		font-weight: 700;
+	}
+
+	.roster-table th button::after {
+		content: '↕';
+		color: rgb(100 116 139);
+		font-size: 0.68rem;
+	}
+
+	.roster-table th button[data-sort-state='asc']::after {
+		content: '↑';
+		color: rgb(45 212 191);
+	}
+
+	.roster-table th button[data-sort-state='desc']::after {
+		content: '↓';
+		color: rgb(45 212 191);
+	}
+
+	.roster-table th:nth-child(1),
+	.research-app :global(.roster-table td:nth-child(1)) {
+		position: sticky;
+		left: 0;
+		z-index: 3;
+		width: var(--id-col-width);
+		min-width: var(--id-col-width);
+	}
+
+	.roster-table th:nth-child(2),
+	.research-app :global(.roster-table td:nth-child(2)) {
+		position: sticky;
+		left: var(--id-col-width);
+		z-index: 3;
+		width: var(--name-col-width);
+		min-width: var(--name-col-width);
+		box-shadow: 1px 0 0 rgba(45, 212, 191, 0.18);
+	}
+
+	.roster-table th:nth-child(1),
+	.roster-table th:nth-child(2) {
+		z-index: 5;
+	}
+
+	.research-app :global(.roster-row) {
+		background: rgb(2 6 23);
+		box-shadow: inset 3px 0 0 rgba(71, 85, 105, 0.72);
+	}
+
+	.research-app :global(.roster-row:nth-child(even)) {
+		background: rgb(8 13 27);
+	}
+
+	.research-app :global(.roster-row:hover),
+	.research-app :global(.roster-row-selected) {
+		background: rgb(12 24 40);
+		box-shadow: inset 3px 0 0 rgba(45, 212, 191, 0.95);
+	}
+
+	.research-app :global(.roster-row td:nth-child(1)),
+	.research-app :global(.roster-row td:nth-child(2)) {
+		background: inherit;
+	}
+
+	.research-app :global(.cell-name strong) {
+		color: rgb(248 250 252);
+	}
+
+	.research-app :global(.status-badge) {
+		display: inline-flex;
+		max-width: 100%;
+		border: 1px solid rgba(148, 163, 184, 0.32);
+		padding: 0.18rem 0.4rem;
+		background: rgba(15, 23, 42, 0.92);
+		color: rgb(226 232 240);
+		font-size: 0.7rem;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+
+	.research-app :global(.status-current),
+	.research-app :global(.status-official) {
+		border-color: rgba(45, 212, 191, 0.48);
+		color: rgb(204 251 241);
+	}
+
+	.research-app :global(.status-gap),
+	.research-app :global(.status-forecast) {
+		border-color: rgba(245, 158, 11, 0.5);
+		color: rgb(253 230 138);
+	}
+
+	.research-app :global(.source-link) {
+		color: rgb(94 234 212);
+		text-decoration: none;
+	}
+
+	.research-app :global(.source-link:hover) {
+		text-decoration: underline;
+	}
+
+	@media (max-width: 720px) {
+		.roster-table {
+			--name-col-width: 14rem;
+			min-width: 1320px;
+		}
 	}
 </style>
