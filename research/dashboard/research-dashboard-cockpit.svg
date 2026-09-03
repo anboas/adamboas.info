@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="720" viewBox="0 0 1320 720">
+		<defs>
+			<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+				<path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+			</marker>
+			<style>
+				.bg { fill: #f8fafc; }
+				.kicker { font: 700 13px Inter, Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; fill: #0f766e; }
+				.title { font: 800 30px Inter, Arial, sans-serif; fill: #0f172a; }
+				.subtitle { font: 500 14px Inter, Arial, sans-serif; fill: #475569; }
+				.box-title { font: 800 14px Inter, Arial, sans-serif; fill: #f8fafc; }
+				.box-body { font: 500 11px Inter, Arial, sans-serif; fill: #cbd5e1; }
+			</style>
+		</defs>
+		<rect class="bg" width="1320" height="720"/>
+		<text x="36" y="42" class="kicker">Research dashboard</text>
+		<text x="36" y="78" class="title">Cross-Block Opportunity Cockpit</text>
+		<text x="36" y="104" class="subtitle">Existing research blocks now roll up into one comparable pursuit surface.</text>
+		<g>
+		<rect x="40" y="150" width="250" height="150" rx="0" fill="#172554" stroke="#60a5fa" stroke-width="1.4"/>
+		<text x="54" y="174" class="box-title">NIWC PAC AA</text>
+		<text x="54" y="222" class="box-body">AA recompete, Code 53/532/53200,</text><text x="54" y="237" class="box-body">Forward Slope lineage, public</text><text x="54" y="252" class="box-body">POC gaps.</text>
+	</g><g>
+		<rect x="340" y="150" width="250" height="150" rx="0" fill="#052e16" stroke="#22c55e" stroke-width="1.4"/>
+		<text x="354" y="174" class="box-title">CGCYBER IOM</text>
+		<text x="354" y="222" class="box-body">&gt;$100M FFP forecast, 24x7</text><text x="354" y="237" class="box-body">SOC/CSSP gap, IARMS/IMS/C5I</text><text x="354" y="252" class="box-body">seams.</text>
+	</g><g>
+		<rect x="640" y="150" width="250" height="150" rx="0" fill="#451a03" stroke="#f59e0b" stroke-width="1.4"/>
+		<text x="654" y="174" class="box-title">NAE</text>
+		<text x="654" y="222" class="box-body">44 NAWCAD LRAF rows, PEO/PMA</text><text x="654" y="237" class="box-body">lanes, PCOs, incumbents, OSBP</text><text x="654" y="252" class="box-body">routes.</text>
+	</g><g>
+		<rect x="990" y="150" width="250" height="150" rx="0" fill="#0f172a" stroke="#14b8a6" stroke-width="1.4"/>
+		<text x="1004" y="174" class="box-title">Global Cockpit</text>
+		<text x="1004" y="222" class="box-body">Compare value, timing, buyer,</text><text x="1004" y="237" class="box-body">incumbent, Sabre fit, team need,</text><text x="1004" y="252" class="box-body">next action.</text>
+	</g><g>
+		<rect x="190" y="410" width="250" height="136" rx="0" fill="#312e81" stroke="#a78bfa" stroke-width="1.4"/>
+		<text x="204" y="434" class="box-title">Deep Dives</text>
+		<text x="204" y="482" class="box-body">TARCES, EXCOMM XI, CGCYBER IOM,</text><text x="204" y="497" class="box-body">AA recompete, PMA-290, AIRWorks.</text>
+	</g><g>
+		<rect x="535" y="410" width="250" height="136" rx="0" fill="#1e293b" stroke="#94a3b8" stroke-width="1.4"/>
+		<text x="549" y="434" class="box-title">Graphs</text>
+		<text x="549" y="482" class="box-body">Company graph, contact graph,</text><text x="549" y="497" class="box-body">lineage timelines, source</text><text x="549" y="512" class="box-body">confidence.</text>
+	</g><g>
+		<rect x="880" y="410" width="250" height="136" rx="0" fill="#450a0a" stroke="#f87171" stroke-width="1.4"/>
+		<text x="894" y="434" class="box-title">Watchlist</text>
+		<text x="894" y="482" class="box-body">APFS, SAM, LRAF, awards, dates,</text><text x="894" y="497" class="box-body">value changes, and source</text><text x="894" y="512" class="box-body">health.</text>
+	</g><path d="M 290 225 L 315 225 L 315 225 L 340 225" fill="none" stroke="#64748b" stroke-width="1.2" opacity="0.72" marker-end="url(#arrow)"/><path d="M 590 225 L 615 225 L 615 225 L 640 225" fill="none" stroke="#64748b" stroke-width="1.2" opacity="0.72" marker-end="url(#arrow)"/><path d="M 890 225 L 940 225 L 940 225 L 990 225" fill="none" stroke="#64748b" stroke-width="1.2" opacity="0.72" marker-end="url(#arrow)"/><path d="M 1115 300 L 715 300 L 715 410 L 315 410" fill="none" stroke="#64748b" stroke-width="1.2" opacity="0.72" marker-end="url(#arrow)"/><path d="M 1115 300 L 888 300 L 888 410 L 660 410" fill="none" stroke="#64748b" stroke-width="1.2" opacity="0.72" marker-end="url(#arrow)"/><path d="M 1115 300 L 1060 300 L 1060 410 L 1005 410" fill="none" stroke="#64748b" stroke-width="1.2" opacity="0.72" marker-end="url(#arrow)"/>
+	</svg>
