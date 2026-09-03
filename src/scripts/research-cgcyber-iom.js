@@ -108,6 +108,28 @@ const tableConfigs = [
 	},
 ];
 
+const opportunityTableConfig = {
+	countLabel: 'opportunities',
+	columns: [
+		['ID', 'cell-id'],
+		['Opportunity', 'cell-name'],
+		['Focus', 'cell-evidence'],
+		['Customer / Buyer', 'cell-entity'],
+		['Opportunity Type', 'cell-type'],
+		['Due Date', 'cell-role'],
+		['Notice ID', 'cell-code'],
+		['Vehicle / Access', 'cell-type'],
+		['Value / Timing', 'cell-role'],
+		['Bid Posture', 'cell-status'],
+		['Sabre Fit / Why Winnable', 'cell-relation'],
+		['Next Action', 'cell-evidence'],
+		['Confidence', 'cell-confidence'],
+		['Source URL', 'cell-source'],
+	],
+	statusColumn: 'Bid Posture',
+	badgeColumn: 'Bid Posture',
+};
+
 function parseCsv(text) {
 	const rows = [];
 	let row = [];
@@ -184,6 +206,9 @@ function statusKey(value) {
 	if (status.includes('official') || status.includes('mission') || status.includes('authority')) return 'official';
 	if (status.includes('gap') || status.includes('unresolved')) return 'gap';
 	if (status.includes('watch') || status.includes('forecast') || status.includes('medium')) return 'forecast';
+	if (status.includes('prime') || status.includes('submit') || status.includes('gate as active')) return 'current';
+	if (status.includes('team') || status.includes('partner') || status.includes('shape')) return 'forecast';
+	if (status.includes('no-bid')) return 'unverified';
 	if (status.includes('historical') || status.includes('archived')) return 'historical';
 	if (status.includes('trap') || status.includes('cancelled') || status.includes('risk')) return 'unverified';
 	if (status.includes('tier 1')) return 'current';
@@ -289,7 +314,11 @@ function initCharts(root) {
 	reset();
 }
 
-function initTable(root, config) {
+function initTable(root, baseConfig) {
+	const config =
+		baseConfig.key === 'contracts' && root.dataset.contractsMode === 'samOpportunities'
+			? { ...baseConfig, ...opportunityTableConfig }
+			: baseConfig;
 	const body = root.querySelector(config.bodySelector);
 	const count = root.querySelector(config.countSelector);
 	const csvUrl = root.dataset[config.csvDataset];

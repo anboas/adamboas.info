@@ -11,9 +11,10 @@ test.describe('private research surface', () => {
 		await expect(page.locator('a[href$="/research/dashboard/"]')).toHaveCount(0);
 		await expect(page.locator('a[href$="/research/system/"]')).toHaveCount(0);
 		await expect(page.getByRole('heading', { name: 'Unified Opportunity Dashboard' })).toBeVisible();
-		await expect(page.locator('a[href$="/research/niwc-pac/"]')).toContainText('NIWC PAC');
-		await expect(page.locator('a[href$="/research/cgcyber-iom/"]')).toContainText('CGCYBER IOM');
-		await expect(page.locator('a[href$="/research/naval-aviation-enterprise/"]')).toHaveAttribute(
+		const namedBlocks = page.getByLabel('Named research blocks');
+		await expect(namedBlocks.locator('a[href$="/research/niwc-pac/"]')).toContainText('NIWC PAC');
+		await expect(namedBlocks.locator('a[href$="/research/cgcyber-iom/"]')).toContainText('CGCYBER IOM');
+		await expect(namedBlocks.locator('a[href$="/research/naval-aviation-enterprise/"]')).toHaveAttribute(
 			'href',
 			/\/research\/naval-aviation-enterprise\/$/,
 		);
@@ -43,16 +44,29 @@ test.describe('private research surface', () => {
 		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
 		await expect(page.getByRole('heading', { name: 'Unified Opportunity Dashboard', exact: true })).toBeVisible();
 
-		await expect(page.locator('[data-contracts-count]')).toContainText('12');
+		await expect(page.locator('[data-contracts-count]')).toContainText('17');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(3)).toHaveText('Buyer / owner');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(4)).toHaveText('Type');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(5)).toHaveText('Due date');
+		await expect(page.locator('[data-contracts-table] thead th button').nth(13)).toHaveText('SAM / source');
 
 		await page.locator('[data-contracts-search]').fill('CGCYBER IOM');
 		await expect(page.locator('[data-contracts-body]')).toContainText('Integrated Operations Management');
 		await page.locator('[data-contracts-search]').fill('');
 		await page.locator('[data-contracts-search]').fill('Application Arsenal');
-		await expect(page.locator('[data-contracts-body]')).toContainText('Code 53 / 532 / 53200');
+		await expect(page.locator('[data-contracts-body]')).toContainText('2026-09-30');
 		await page.locator('[data-contracts-search]').fill('');
-		await page.locator('[data-contracts-search]').fill('PMA-290');
-		await expect(page.locator('[data-contracts-body]')).toContainText('$200M - $500M');
+		await page.locator('[data-contracts-search]').fill('PMX-281');
+		await expect(page.locator('[data-contracts-body]')).toContainText('2026-09-10');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('MARCORSYSCOM');
+		await expect(page.locator('[data-contracts-body]')).toContainText('2026-09-24');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('Kessel Run');
+		await expect(page.locator('[data-contracts-body]')).toContainText('FA8730-22-S-C001');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-filter="Bid Posture"]').selectOption('Prime / immediate response');
+		await expect(page.locator('[data-contracts-body]')).toContainText('PMX-281');
 	});
 
 	test('NIWC PAC atlas exposes chart controls and filterable roster', async ({ page }) => {

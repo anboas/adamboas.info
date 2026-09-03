@@ -36,16 +36,19 @@ const researchItems = [
 
 const opportunityHeaders = [
 	['ID', 'ID'],
-	['Program', 'Pursuit'],
-	['Prime', 'Buyer / owner'],
-	['Status', 'Status'],
-	['IOM Seam / Relevance', 'Fit lane'],
-	['Award / Forecast ID', 'Vehicle / ID'],
-	['Value / Term', 'Value / timing'],
-	['Scope', 'Why it matters'],
+	['Opportunity', 'Opportunity'],
+	['Focus', 'Focus'],
+	['Customer / Buyer', 'Buyer / owner'],
+	['Opportunity Type', 'Type'],
+	['Due Date', 'Due date'],
+	['Notice ID', 'Notice ID'],
+	['Vehicle / Access', 'Vehicle / access'],
+	['Value / Timing', 'Value / timing'],
+	['Bid Posture', 'Bid posture'],
+	['Sabre Fit / Why Winnable', 'Why Sabre can win'],
+	['Next Action', 'Next action'],
 	['Confidence', 'Confidence'],
-	['Source Refs', 'Refs'],
-	['Source URL', 'Block'],
+	['Source URL', 'SAM / source'],
 ];
 ---
 
@@ -53,6 +56,7 @@ const opportunityHeaders = [
 	<section
 		class="research-app"
 		data-cgcyber-research
+		data-contracts-mode="samOpportunities"
 		data-contracts-csv-url={withBase('/research/research-opportunities.csv')}
 	>
 		<SurfacePageHeader
@@ -80,8 +84,8 @@ const opportunityHeaders = [
 					<div class="min-w-0">
 						<h2 id="contracts-title" class="text-base font-semibold text-slate-50">Unified Opportunity Dashboard</h2>
 						<p class="mt-1 max-w-4xl text-xs leading-5 text-slate-400">
-							Comparable pursuit rows from NIWC PAC AA, CGCYBER IOM, and Naval Aviation Enterprise. The research blocks
-							below remain the source-of-detail.
+							Comparable pursuit rows from active SAM/APFS/LRAF research, with buyer, due date, type, posture, and next
+							action visible up front. The named research blocks below remain the source-of-detail.
 						</p>
 					</div>
 					<div class="text-xs text-slate-400">
@@ -95,20 +99,20 @@ const opportunityHeaders = [
 						<input
 							type="search"
 							data-contracts-search
-							placeholder="CGCYBER, Application Arsenal, TARCES, AIRWorks..."
+							placeholder="PMX-281, Application Arsenal, MARCORSYSCOM, Platform One..."
 						/>
 					</label>
 					<label class="filter-field">
 						<span>Buyer / owner</span>
-						<select data-contracts-filter="Prime"><option value="">All buyers</option></select>
+						<select data-contracts-filter="Customer / Buyer"><option value="">All buyers</option></select>
 					</label>
 					<label class="filter-field">
-						<span>Status</span>
-						<select data-contracts-filter="Status"><option value="">All statuses</option></select>
+						<span>Type</span>
+						<select data-contracts-filter="Opportunity Type"><option value="">All types</option></select>
 					</label>
 					<label class="filter-field">
-						<span>Fit lane</span>
-						<select data-contracts-filter="IOM Seam / Relevance"><option value="">All fit lanes</option></select>
+						<span>Bid posture</span>
+						<select data-contracts-filter="Bid Posture"><option value="">All postures</option></select>
 					</label>
 					<label class="filter-field">
 						<span>Confidence</span>
