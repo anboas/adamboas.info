@@ -51,6 +51,18 @@ test.describe('private research surface', () => {
 		await expect(page.locator('[data-contracts-table] thead th button').nth(6)).toHaveText('Type');
 		await expect(page.locator('[data-contracts-table] thead th button').nth(7)).toHaveText('Due date');
 		await expect(page.locator('[data-contracts-table] thead th button').nth(15)).toHaveText('SAM / source');
+		await expect(page.locator('.opportunity-type-sources-sought').first()).toContainText('Sources Sought');
+		await expect(page.locator('.opportunity-type-presolicitation').first()).toContainText('Presolicitation');
+		await expect(page.locator('.opportunity-type-solicitation').first()).toContainText('Solicitation');
+		const typeBadgeColors = await Promise.all(
+			['sources-sought', 'presolicitation', 'solicitation'].map((type) =>
+				page
+					.locator(`.opportunity-type-${type}`)
+					.first()
+					.evaluate((badge) => getComputedStyle(badge).backgroundColor),
+			),
+		);
+		expect(new Set(typeBadgeColors).size).toBe(3);
 
 		await page.locator('[data-contracts-search]').fill('CGCYBER IOM');
 		await expect(page.locator('[data-contracts-body]')).toContainText('Integrated Operations Management');

@@ -220,6 +220,20 @@ function statusKey(value) {
 	return 'other';
 }
 
+function opportunityTypeKey(value) {
+	const type = String(value ?? '').toLowerCase();
+	if (type.includes('sources sought')) return 'sources-sought';
+	if (type.includes('presolicitation')) return 'presolicitation';
+	if (type.includes('combined synopsis') || type.includes('solicitation')) return 'solicitation';
+	if (type.includes('industry day')) return 'industry-day';
+	if (type.includes('rfi')) return 'rfi';
+	if (type.includes('baa')) return 'baa';
+	if (type.includes('cso')) return 'cso';
+	if (type.includes('apfs') || type.includes('forecast')) return 'forecast';
+	if (type.includes('special notice')) return 'special-notice';
+	return 'other';
+}
+
 function initCharts(root) {
 	const image = root.querySelector('[data-chart-image]');
 	const stage = root.querySelector('[data-chart-stage]');
@@ -380,6 +394,10 @@ function initTable(root, baseConfig) {
 					if (key === 'Source URL' || key === 'URL')
 						return `<td class="${className}">${renderSourceLinks(row[key])}</td>`;
 					const value = escapeHtml(row[key]);
+					if (key === 'Opportunity Type') {
+						const typeStatus = opportunityTypeKey(row[key]);
+						return `<td class="${className}"><span class="opportunity-type-badge opportunity-type-${typeStatus}">${value}</span></td>`;
+					}
 					if (key === config.badgeColumn) {
 						return `<td class="${className}"><span class="status-badge status-${rowStatus}">${value}</span></td>`;
 					}

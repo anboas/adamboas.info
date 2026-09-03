@@ -355,6 +355,58 @@ const opportunityHeaders = [
 		line-height: 1.2;
 	}
 
+	.research-app :global(.opportunity-type-badge) {
+		display: inline-flex;
+		max-width: 100%;
+		border: 1px solid rgba(148, 163, 184, 0.32);
+		padding: 0.2rem 0.45rem;
+		background: rgba(15, 23, 42, 0.92);
+		color: rgb(226 232 240);
+		font-size: 0.7rem;
+		font-weight: 800;
+		line-height: 1.2;
+	}
+
+	.research-app :global(.opportunity-type-sources-sought) {
+		border-color: rgba(251, 191, 36, 0.58);
+		background: rgba(120, 53, 15, 0.42);
+		color: rgb(254 240 138);
+	}
+
+	.research-app :global(.opportunity-type-presolicitation) {
+		border-color: rgba(129, 140, 248, 0.6);
+		background: rgba(49, 46, 129, 0.5);
+		color: rgb(224 231 255);
+	}
+
+	.research-app :global(.opportunity-type-solicitation) {
+		border-color: rgba(248, 113, 113, 0.6);
+		background: rgba(127, 29, 29, 0.46);
+		color: rgb(254 226 226);
+	}
+
+	.research-app :global(.opportunity-type-industry-day),
+	.research-app :global(.opportunity-type-rfi) {
+		border-color: rgba(45, 212, 191, 0.56);
+		background: rgba(19, 78, 74, 0.46);
+		color: rgb(204 251 241);
+	}
+
+	.research-app :global(.opportunity-type-baa),
+	.research-app :global(.opportunity-type-cso) {
+		border-color: rgba(74, 222, 128, 0.52);
+		background: rgba(20, 83, 45, 0.44);
+		color: rgb(220 252 231);
+	}
+
+	.research-app :global(.opportunity-type-forecast),
+	.research-app :global(.opportunity-type-special-notice),
+	.research-app :global(.opportunity-type-other) {
+		border-color: rgba(148, 163, 184, 0.44);
+		background: rgba(30, 41, 59, 0.68);
+		color: rgb(226 232 240);
+	}
+
 	.research-app :global(.status-current),
 	.research-app :global(.status-official) {
 		border-color: rgba(45, 212, 191, 0.48);
