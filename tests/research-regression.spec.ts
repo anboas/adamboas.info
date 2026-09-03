@@ -8,10 +8,15 @@ test.describe('private research surface', () => {
 		expect(response?.status()).toBeLessThan(400);
 		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
 		await expect(page.getByRole('heading', { name: 'Research', exact: true })).toBeVisible();
-		await expect(page.getByRole('link', { name: /Research System/ })).toHaveAttribute('href', /\/research\/system\/$/);
-		await expect(page.getByRole('link', { name: /NIWC PAC/ })).toHaveAttribute('href', /\/research\/niwc-pac\/$/);
-		await expect(page.getByRole('link', { name: /CGCYBER IOM/ })).toHaveAttribute('href', /\/research\/cgcyber-iom\/$/);
-		await expect(page.getByRole('link', { name: /Naval Aviation Enterprise/ })).toHaveAttribute(
+		await expect(page.locator('a[href$="/research/dashboard/"]')).toContainText('Opportunity Dashboard');
+		await expect(page.locator('a[href$="/research/dashboard/"]')).toHaveAttribute(
+			'href',
+			/\/research\/dashboard\/$/,
+		);
+		await expect(page.locator('a[href$="/research/system/"]')).toContainText('Research System');
+		await expect(page.locator('a[href$="/research/niwc-pac/"]')).toContainText('NIWC PAC');
+		await expect(page.locator('a[href$="/research/cgcyber-iom/"]')).toContainText('CGCYBER IOM');
+		await expect(page.locator('a[href$="/research/naval-aviation-enterprise/"]')).toHaveAttribute(
 			'href',
 			/\/research\/naval-aviation-enterprise\/$/,
 		);
@@ -19,6 +24,7 @@ test.describe('private research surface', () => {
 
 	test('research detail breadcrumbs link back to the hidden index', async ({ page }) => {
 		for (const path of [
+			'/research/dashboard/',
 			'/research/system/',
 			'/research/niwc-pac/',
 			'/research/cgcyber-iom/',
@@ -30,6 +36,42 @@ test.describe('private research surface', () => {
 			await breadcrumb.click();
 			await expect(page).toHaveURL(/\/research\/$/);
 		}
+	});
+
+	test('Research Dashboard unifies current opportunity blocks', async ({ page }) => {
+		const response = await page.goto(`${BASE}/research/dashboard/`, { waitUntil: 'networkidle' });
+		expect(response?.status()).toBeLessThan(400);
+		await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
+		await expect(page.getByRole('heading', { name: 'Research Dashboard', exact: true })).toBeVisible();
+		await expect(page.locator('[data-chart-image]')).toBeVisible();
+		await expect(page.locator('[data-chart-description]')).toContainText('Unified pursuit cockpit');
+		await expect(page.locator('[data-chart-download]')).toHaveAttribute('href', /research-dashboard-cockpit\.svg$/);
+
+		await expect(page.locator('[data-org-count]')).toContainText('8');
+		await expect(page.locator('[data-contracts-count]')).toContainText('12');
+		await expect(page.locator('[data-competitors-count]')).toContainText('10');
+		await expect(page.locator('[data-sources-count]')).toContainText('4');
+
+		await page.locator('[data-contracts-search]').fill('CGCYBER IOM');
+		await expect(page.locator('[data-contracts-body]')).toContainText('Integrated Operations Management');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('Application Arsenal');
+		await expect(page.locator('[data-contracts-body]')).toContainText('Code 53 / 532 / 53200');
+		await page.locator('[data-contracts-search]').fill('');
+		await page.locator('[data-contracts-search]').fill('PMA-290');
+		await expect(page.locator('[data-contracts-body]')).toContainText('$200M - $500M');
+
+		await page.locator('[data-competitors-search]').fill('Forward Slope');
+		await expect(page.locator('[data-competitors-body]')).toContainText('Accelint');
+		await page.locator('[data-competitors-search]').fill('');
+		await page.locator('[data-competitors-search]').fill('GovCIO');
+		await expect(page.locator('[data-competitors-body]')).toContainText('IMS/IPSS');
+
+		await page.locator('[data-org-search]').fill('AA PM');
+		await expect(page.locator('[data-org-body]')).toContainText('AA PM / COR / TCA Gap');
+		await page.locator('[data-org-search]').fill('');
+		await page.locator('[data-org-search]').fill('drift monitor');
+		await expect(page.locator('[data-org-body]')).toContainText('APFS, SAM, LRAF');
 	});
 
 	test('NIWC PAC atlas exposes chart controls and filterable roster', async ({ page }) => {
