@@ -5262,61 +5262,82 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Growing event'
 		}
 	},
-{
-		id: 'radar-ausa-annual-meeting-2026',
-		title: 'AUSA Annual Meeting 2026',
-		description: 'Army 2030 objectives, OIB modernization, acquisition updates',
-		startDate: '2026-10-12',
-		endDate: '2026-10-14',
-		branch: 'Army',
-		type: 'Conference',
-		status: 'Upcoming',
-		signal: 'High',
-		effort: 'Low',
-		location: 
-		{
-			city: 'Washington',
-			state: 'DC',
-			country: 'USA',
-			lat: 38.8950368,
-			lng: -77.0365427
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['ausa', 'annual', 'meeting', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
+	{
+			id: 'radar-ausa-annual-meeting-2026',
+			title: 'AUSA Annual Meeting 2026',
+			description: 'AUSA Annual Meeting and Exposition focused on Army transformation, land power modernization, acquisition updates, and defense-industry engagement.',
+			startDate: '2026-10-12',
+			endDate: '2026-10-14',
+			branch: 'Army',
+			type: 'Conference',
+			status: 'Upcoming',
+			signal: 'High',
+			effort: 'Low',
+			location:
 			{
-				discovery: 'Now to T-90 days',
-				prep: 'T-60 to T-14 days',
-				execution: 'Event week + 14-day follow-up'
+				city: 'Washington',
+				state: 'DC',
+				country: 'USA',
+				lat: 38.8950368,
+				lng: -77.0365427,
+				venue: 'Walter E. Washington Convention Center'
 			},
-			provenance: [
+			ontology:
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'High'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
+				themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+				capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+				missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+				stakeholders: ['Army stakeholders', 'Program offices', 'Industry partners'],
+				keywords: ['ausa', 'annual', 'meeting', '2026'],
+				relatedPrograms: ['Radar expansion'],
+				decisionWindows:
 				{
-					min: 150,
-					max: 900
+					discovery: 'Now to T-90 days',
+					prep: 'T-60 to T-14 days',
+					execution: 'Event week + 14-day follow-up'
 				},
-				travelBurdenFromDc: 'Low'
-			},
-			notes: 'Largest Army conference - must attend'
-		}
-	},
+				provenance: [
+				{
+					name: 'AUSA Annual Meeting 2026',
+					url: 'https://meetings.ausa.org/annual/2026/index.cfm',
+					type: 'official',
+					lastVerified: '2026-09-05',
+					confidence: 'High'
+				},
+				{
+					name: 'AUSA registration announcement',
+					url: 'https://www.ausa.org/news/registration-opens-2026-ausa-annual-meeting',
+					type: 'official',
+					lastVerified: '2026-09-05',
+					confidence: 'High'
+				},
+				{
+					name: 'Government Guide conference tracker',
+					url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+					type: 'aggregator',
+					lastVerified: '2026-02-13',
+					confidence: 'High'
+				}],
+				links:
+				{
+					official: 'https://meetings.ausa.org/annual/2026/index.cfm',
+					registration: 'https://meetings.ausa.org/annual/2026/index.cfm',
+					agenda: 'https://meetings.ausa.org/annual/2026/conference_schedule_advanced.cfm',
+					hotelBlock: 'https://meetings.ausa.org/annual/2026/hotel_travel.cfm'
+				},
+				logistics:
+				{
+					format: 'In-person',
+					estimatedCostUsd:
+					{
+						min: 150,
+						max: 900
+					},
+					travelBurdenFromDc: 'Low'
+				},
+				notes: 'Official AUSA source confirms Oct. 12-14, 2026 at Walter E. Washington Convention Center; theme published as "America\'s Army: The Foundation of the Joint Force." Adam flagged this as an October priority.'
+			}
+		},
 {
 		id: 'radar-imagine-nation-elc-2026',
 		title: 'Imagine Nation ELC 2026',
@@ -5754,61 +5775,75 @@ export const radarEventsSeed: RadarEvent[] = [
 			notes: 'Monitor aflcmc.af.mil/LCID'
 		}
 	},
-{
-		id: 'radar-afrl-classified-industry-day-2026',
-		title: 'AFRL Classified Industry Day 2026',
-		description: 'AFRL programs, classified briefings, S&T partnerships',
-		startDate: null,
-		endDate: null,
-		branch: 'Air Force / Space Force',
-		type: 'Workshop',
-		status: 'Needs Date',
-		signal: 'Low',
-		effort: 'Medium',
-		location: 
-		{
-			city: 'Wright-Patterson AFB',
-			state: 'OH',
-			country: 'USA',
-			lat: 39.8219053,
-			lng: -84.0495886
-		},
-		ontology: 
-		{
-			themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
-			capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
-			missionThreads: ['Pipeline development', 'Stakeholder engagement'],
-			stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
-			keywords: ['afrl', 'classified', 'industry', '2026'],
-			relatedPrograms: ['Radar expansion'],
-			decisionWindows: 
+	{
+			id: 'radar-afrl-classified-industry-day-2026',
+			title: 'AFRL Classified Industry Day 2026',
+			description: 'AFRL programs, classified briefings, S&T partnerships',
+			startDate: '2026-10-08',
+			endDate: '2026-10-08',
+			branch: 'Air Force / Space Force',
+			type: 'Workshop',
+			status: 'Projected',
+			signal: 'High',
+			effort: 'Medium',
+			location:
 			{
-				discovery: 'Monitor for date release',
-				prep: 'After date confirmation',
-				execution: 'TBD'
+				city: 'Wright-Patterson AFB',
+				state: 'OH',
+				country: 'USA',
+				lat: 39.8219053,
+				lng: -84.0495886
 			},
-			provenance: [
+			ontology:
 			{
-				name: 'Government Guide conference tracker',
-				url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
-				type: 'aggregator',
-				lastVerified: '2026-02-13',
-				confidence: 'Low'
-			}],
-			links: {},
-			logistics: 
-			{
-				format: 'In-person',
-				estimatedCostUsd: 
+				themes: ['Defense ecosystem scanning', 'Opportunity timing', 'Partner engagement'],
+				capabilityAreas: ['Acquisition', 'Systems integration', 'Operational modernization'],
+				missionThreads: ['Pipeline development', 'Stakeholder engagement'],
+				stakeholders: ['Air Force / Space Force stakeholders', 'Program offices', 'Industry partners'],
+				keywords: ['afrl', 'classified', 'industry', '2026'],
+				relatedPrograms: ['Radar expansion'],
+				decisionWindows:
 				{
-					min: 600,
-					max: 2200
+					discovery: 'Monitor for current official 2026 date release',
+					prep: 'Use early October planning placeholder until confirmed',
+					execution: 'Projected early October'
 				},
-				travelBurdenFromDc: 'Medium'
-			},
-			notes: '⚠️ Dates need verifying. Was Oct 8, 2025 at WPAFB.'
-		}
-	},
+				provenance: [
+				{
+					name: 'Adam manual signal',
+					url: 'memory/2026-09-05.md',
+					type: 'manual',
+					lastVerified: '2026-09-05',
+					confidence: 'Medium'
+				},
+				{
+					name: 'AFWERX 2025 registration bulletin',
+					url: 'https://content.govdelivery.com/accounts/USAFAFWERX/bulletins/3ef6bfb',
+					type: 'official',
+					lastVerified: '2026-09-05',
+					confidence: 'Low'
+				},
+				{
+					name: 'Government Guide conference tracker',
+					url: 'https://jbenton1.github.io/government-guide/conference-tracker/',
+					type: 'aggregator',
+					lastVerified: '2026-02-13',
+					confidence: 'Low'
+				}],
+				links: {},
+				logistics:
+				{
+					format: 'In-person',
+					estimatedCostUsd:
+					{
+						min: 600,
+						max: 2200
+					},
+					travelBurdenFromDc: 'Medium'
+				},
+				notes: 'Planning placeholder from Adam: early October 2026. Public check on 2026-09-05 did not find a clean current official October 2026 page; prior public materials show an Oct. 8, 2025 AFRL/AFWERX classified industry day at Wright-Patterson AFB that was later rescheduled into the 2026 Strategic Exchange/WDI trail. Reverify before acting on registration, travel, or clearance logistics.'
+			}
+		},
 {
 		id: 'radar-agc-fedcon-2026',
 		title: 'AGC FedCon 2026',
