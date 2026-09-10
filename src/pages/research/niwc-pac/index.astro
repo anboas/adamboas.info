@@ -53,6 +53,7 @@ const charts = [
 		data-niwc-research
 		data-csv-url={withBase(`${assetBase}niwc-pacific-org-roster.csv`)}
 		data-connections-csv-url={withBase(`${assetBase}forward-slope-connections.csv`)}
+		data-people-csv-url={withBase(`${assetBase}application-arsenal-people-map.csv`)}
 	>
 		<SurfacePageHeader
 			stickyActive="none"
@@ -69,6 +70,9 @@ const charts = [
 				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}forward-slope-connections.csv`)}
 					>Lineage CSV</a
 				>
+				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}application-arsenal-people-map.csv`)}
+					>People CSV</a
+				>
 				<a class="ui-link-btn ui-link-btn-muted" href={withBase(`${assetBase}full-report-export.png`)}>PNG</a>
 			</div>
 		</SurfacePageHeader>
@@ -83,6 +87,7 @@ const charts = [
 			<a href={withBase('/research/')}>Research Index</a>
 			<a href="#chart-title">Charts</a>
 			<a href="#connections-title">Forward Slope</a>
+			<a href="#people-title">People Map</a>
 			<a href="#roster-title">Org Roster</a>
 			<a href={withBase('/research/cgcyber-iom/')}>CGCYBER IOM</a>
 			<a href={withBase('/research/naval-aviation-enterprise/')}>NAE</a>
@@ -226,6 +231,79 @@ const charts = [
 					<tbody data-connections-body>
 						<tr>
 							<td colspan="10" class="px-3 py-6 text-center text-sm text-slate-400"> Loading connections... </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="mt-4 border border-slate-800 bg-slate-950/95" aria-labelledby="people-title">
+			<div class="border-b border-slate-800 p-3">
+				<div class="flex flex-col gap-3 xl:flex-row xl:items-start xl:justify-between">
+					<div class="min-w-0">
+						<h2 id="people-title" class="text-base font-semibold text-slate-50">Application Arsenal People Map</h2>
+						<p class="mt-1 max-w-4xl text-xs leading-5 text-slate-400">
+							Named personnel involved in or near Application Arsenal across the current NIWC chain, historical program
+							lineage, and Forward Slope successor organizations. Proximity is not proof of current program
+							responsibility.
+						</p>
+					</div>
+					<div class="text-xs text-slate-400">
+						<span data-people-count>Loading people...</span>
+					</div>
+				</div>
+				<div class="mt-3 border border-amber-400/30 bg-amber-950/20 p-2 text-xs leading-5 text-amber-100">
+					<strong>Key public-source gap:</strong> this research pass did not identify a current Forward Slope, Accelint, or
+					Lyntris Application Arsenal program manager, capture lead, or technical lead.
+				</div>
+
+				<div class="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-5">
+					<label class="filter-field md:col-span-2 xl:col-span-1">
+						<span>Search</span>
+						<input type="search" data-people-search placeholder="Name, role, organization, evidence..." />
+					</label>
+					<label class="filter-field">
+						<span>Organization</span>
+						<select data-people-filter="Organization / Side"><option value="">All organizations</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Proximity</span>
+						<select data-people-filter="Proximity"><option value="">All proximity</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Currentness</span>
+						<select data-people-filter="Currentness"><option value="">All currentness</option></select>
+					</label>
+					<label class="filter-field">
+						<span>Confidence</span>
+						<select data-people-filter="Confidence"><option value="">All confidence</option></select>
+					</label>
+				</div>
+			</div>
+
+			<div class="roster-table-wrap people-table-wrap">
+				<table class="roster-table people-table" data-people-table>
+					<thead>
+						<tr>
+							<th><button type="button" data-people-sort-key="ID">ID</button></th>
+							<th><button type="button" data-people-sort-key="Person">Person</button></th>
+							<th><button type="button" data-people-sort-key="Organization / Side">Organization / side</button></th>
+							<th><button type="button" data-people-sort-key="Public Role">Public role</button></th>
+							<th><button type="button" data-people-sort-key="Proximity">Proximity</button></th>
+							<th><button type="button" data-people-sort-key="Currentness">Currentness</button></th>
+							<th>
+								<button type="button" data-people-sort-key="Application Arsenal / Ecosystem Connection">
+									AA / ecosystem connection
+								</button>
+							</th>
+							<th><button type="button" data-people-sort-key="Confidence">Confidence</button></th>
+							<th><button type="button" data-people-sort-key="Source Date">Source date</button></th>
+							<th>Source</th>
+						</tr>
+					</thead>
+					<tbody data-people-body>
+						<tr>
+							<td colspan="10" class="px-3 py-6 text-center text-sm text-slate-400">Loading people...</td>
 						</tr>
 					</tbody>
 				</table>
@@ -456,6 +534,10 @@ const charts = [
 		min-width: 1680px;
 	}
 
+	.people-table {
+		min-width: 1720px;
+	}
+
 	.roster-table th,
 	.research-app :global(.roster-table td) {
 		border-bottom: 1px solid rgba(30, 41, 59, 0.95);
@@ -608,6 +690,17 @@ const charts = [
 	.research-app :global(.cell-evidence) {
 		min-width: 24rem;
 		color: rgb(226 232 240);
+	}
+
+	.research-app :global(.cell-connection) {
+		min-width: 26rem;
+		color: rgb(226 232 240);
+	}
+
+	.research-app :global(.cell-currentness),
+	.research-app :global(.cell-proximity),
+	.research-app :global(.cell-organization) {
+		min-width: 13rem;
 	}
 
 	.research-app :global(.cell-relation) {

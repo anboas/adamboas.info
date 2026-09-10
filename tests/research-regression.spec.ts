@@ -113,6 +113,22 @@ test.describe('private research surface', () => {
 		await page.locator('[data-connections-search]').fill('');
 		await page.locator('[data-connections-filter="AA / NIWC PAC Relevance"]').selectOption('Direct AA / NIWC PAC');
 		await expect(page.locator('[data-connections-body]')).toContainText('PEOC4I Storefront / Application Arsenal');
+		await expect(page.getByRole('heading', { name: 'Application Arsenal People Map' })).toBeVisible();
+		await expect(page.locator('[data-people-count]')).toContainText('22 of 22 people');
+		await expect(page.locator('[data-people-table] thead th button').nth(1)).toHaveText('Person');
+		await page.locator('[data-people-search]').fill('Adham Shaaban');
+		await expect(page.locator('[data-people-body]')).toContainText('Chief Information Security Officer');
+		await expect(page.locator('[data-people-body]')).toContainText(
+			'No public evidence identifies him as the AA cyber lead',
+		);
+		await page.locator('[data-people-search]').fill('');
+		await page.locator('[data-people-filter="Currentness"]').selectOption('Current');
+		await expect(page.locator('[data-people-body]')).toContainText('John Barrie');
+		await expect(page.locator('[data-people-body]')).not.toContainText('Johanna L. Flores');
+		await page.locator('[data-people-filter="Currentness"]').selectOption('');
+		await page.locator('[data-people-search]').fill('Johanna L. Flores');
+		await expect(page.locator('[data-people-body]')).toContainText('Deputy Project Manager');
+		await expect(page.locator('[data-people-body] a.source-link')).toHaveAttribute('href', /dvidshub\.net/);
 		await expect(page.locator('[data-roster-count]')).toContainText('145');
 		await expect(page.locator('[data-roster-table] thead th button').nth(1)).toHaveText('Name / Node');
 		const firstTwoRows = page.locator('[data-roster-body] tr').filter({ has: page.locator('td') });
@@ -128,6 +144,25 @@ test.describe('private research surface', () => {
 		await expect(page.locator('[data-roster-body]')).toContainText('Application Arsenal');
 		await page.locator('[data-roster-filter="Status Class"]').selectOption('Public gap');
 		await expect(page.locator('[data-roster-body]')).toContainText('Public gap');
+
+		await page.locator('[data-people-search]').fill('');
+		await page.setViewportSize({ width: 390, height: 844 });
+		const peopleLayout = await page.locator('section[aria-labelledby="people-title"]').evaluate((section) => {
+			const box = section.getBoundingClientRect();
+			const scroller = section.querySelector('.people-table-wrap');
+			return {
+				left: box.left,
+				right: box.right,
+				viewport: window.innerWidth,
+				overflowX: scroller ? getComputedStyle(scroller).overflowX : '',
+				scrollWidth: scroller?.scrollWidth ?? 0,
+				clientWidth: scroller?.clientWidth ?? 0,
+			};
+		});
+		expect(peopleLayout.left).toBeGreaterThanOrEqual(0);
+		expect(peopleLayout.right).toBeLessThanOrEqual(peopleLayout.viewport);
+		expect(peopleLayout.overflowX).toBe('auto');
+		expect(peopleLayout.scrollWidth).toBeGreaterThan(peopleLayout.clientWidth);
 	});
 
 	test('research pages stay out of robots and sitemap output', async ({ page, request }) => {
