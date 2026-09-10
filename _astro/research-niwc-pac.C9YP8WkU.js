@@ -29,6 +29,19 @@ const connectionColumnMeta = [
 	{ key: 'Source URL', className: 'cell-source' },
 ];
 
+const peopleColumnMeta = [
+	{ key: 'ID', className: 'cell-id' },
+	{ key: 'Person', className: 'cell-name' },
+	{ key: 'Organization / Side', className: 'cell-organization' },
+	{ key: 'Public Role', className: 'cell-role' },
+	{ key: 'Proximity', className: 'cell-proximity' },
+	{ key: 'Currentness', className: 'cell-currentness' },
+	{ key: 'Application Arsenal / Ecosystem Connection', className: 'cell-connection' },
+	{ key: 'Confidence', className: 'cell-confidence' },
+	{ key: 'Source Date', className: 'cell-date' },
+	{ key: 'Source URL', className: 'cell-source' },
+];
+
 const internalDomains = new Set([
 	'NIWC PAC core hierarchy',
 	'NIWC PAC deep-code map',
@@ -102,6 +115,15 @@ function relevanceKey(value) {
 	if (relevance.includes('corporate') || relevance.includes('executive') || relevance.includes('contact')) {
 		return 'historical';
 	}
+	return 'other';
+}
+
+function currentnessKey(value) {
+	const currentness = String(value ?? '').toLowerCase();
+	if (currentness === 'current') return 'current';
+	if (currentness.includes('historical')) return 'historical';
+	if (currentness.includes('dated') || currentness.includes('revalidate')) return 'dated';
+	if (currentness.includes('recent')) return 'official';
 	return 'other';
 }
 
@@ -474,8 +496,115 @@ function initConnections(root) {
 		});
 }
 
+function initPeople(root) {
+	const body = root.querySelector('[data-people-body]');
+	const count = root.querySelector('[data-people-count]');
+	const search = root.querySelector('[data-people-search]');
+	const filterInputs = [...root.querySelectorAll('[data-people-filter]')];
+	const sortButtons = [...root.querySelectorAll('[data-people-sort-key]')];
+	let rows = [];
+	let sortKey = 'ID';
+	let sortDirection = 'asc';
+
+	function populateFilters() {
+		filterInputs.forEach((input) => {
+			const key = input.dataset.peopleFilter;
+			const values = [...new Set(rows.map((row) => row[key]).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+			input.insertAdjacentHTML(
+				'beforeend',
+				values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join(''),
+			);
+		});
+	}
+
+	function filteredRows() {
+		const query = search.value.trim().toLowerCase();
+		const activeFilters = filterInputs
+			.map((input) => [input.dataset.peopleFilter, input.value])
+			.filter(([, value]) => value);
+		return rows.filter((row) => {
+			if (query && !Object.values(row).join(' ').toLowerCase().includes(query)) return false;
+			return activeFilters.every(([key, value]) => row[key] === value);
+		});
+	}
+
+	function render() {
+		const visible = filteredRows().sort((a, b) => {
+			const av = sortValue(a, sortKey);
+			const bv = sortValue(b, sortKey);
+			const comparison = av > bv ? 1 : av < bv ? -1 : 0;
+			return sortDirection === 'asc' ? comparison : -comparison;
+		});
+		count.textContent = `${visible.length} of ${rows.length} people`;
+		sortButtons.forEach((button) => {
+			const active = button.dataset.peopleSortKey === sortKey;
+			button.dataset.sortState = active ? sortDirection : '';
+			button
+				.closest('th')
+				?.setAttribute('aria-sort', active ? (sortDirection === 'asc' ? 'ascending' : 'descending') : 'none');
+		});
+		if (!visible.length) {
+			body.innerHTML =
+				'<tr><td colspan="10" class="px-3 py-6 text-center text-sm text-slate-400">No people match.</td></tr>';
+			return;
+		}
+		body.innerHTML = visible
+			.map((row) => {
+				const rowStatus = currentnessKey(row.Currentness);
+				const cells = peopleColumnMeta.map(({ key, className }) => {
+					if (key === 'Source URL') return `<td class="${className}">${renderSourceLinks(row[key])}</td>`;
+					const value = escapeHtml(row[key]);
+					if (key === 'Currentness') {
+						return `<td class="${className}"><span class="status-badge status-${rowStatus}">${value}</span></td>`;
+					}
+					if (key === 'Person') return `<td class="${className}"><strong>${value}</strong></td>`;
+					return `<td class="${className}">${value}</td>`;
+				});
+				return `<tr class="roster-row roster-row-${rowStatus}" tabindex="0">${cells.join('')}</tr>`;
+			})
+			.join('');
+	}
+
+	sortButtons.forEach((button) => {
+		button.addEventListener('click', () => {
+			const nextKey = button.dataset.peopleSortKey;
+			if (sortKey === nextKey) {
+				sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+			} else {
+				sortKey = nextKey;
+				sortDirection = 'asc';
+			}
+			render();
+		});
+	});
+	search.addEventListener('input', render);
+	filterInputs.forEach((input) => input.addEventListener('change', render));
+	body.addEventListener('click', (event) => {
+		const row = event.target.closest('.roster-row');
+		if (!row) return;
+		body.querySelectorAll('.roster-row-selected').forEach((item) => item.classList.remove('roster-row-selected'));
+		row.classList.add('roster-row-selected');
+	});
+
+	fetch(root.dataset.peopleCsvUrl)
+		.then((response) => {
+			if (!response.ok) throw new Error(`People CSV load failed: ${response.status}`);
+			return response.text();
+		})
+		.then((text) => {
+			rows = parseCsv(text);
+			populateFilters();
+			render();
+		})
+		.catch((error) => {
+			body.innerHTML = `<tr><td colspan="10" class="px-3 py-6 text-center text-sm text-red-200">${escapeHtml(error.message)}</td></tr>`;
+			count.textContent = 'People map unavailable';
+		});
+}
+
 if (app) {
 	initCharts(app);
 	initRoster(app);
 	initConnections(app);
+	initPeople(app);
 }
