@@ -39,7 +39,7 @@ jobs:
             src/data/radar/events-candidates-sam-opportunities-drift-snapshot.json
 
       - name: Create/update pull request for drift refresh
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: bot/opportunities-drift-report
           delete-branch: true

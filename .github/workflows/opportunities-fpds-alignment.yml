@@ -38,7 +38,7 @@ jobs:
             src/data/radar/events-candidates-sam-opportunities-fpds-alignment.md
 
       - name: Create/update pull request for FPDS alignment refresh
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: bot/opportunities-fpds-alignment
           delete-branch: true
