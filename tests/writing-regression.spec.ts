@@ -30,120 +30,125 @@ test.describe('writing controls regression', () => {
 		expect(overflow).toBeLessThanOrEqual(1);
 	});
 
-	test('tooltips are populated and hidden-tag mode has no +N preview chip', async ({ page }) => {
+	test('exposes only the current writing controls', async ({ page }) => {
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 
-		const hasAudio = page.locator('[data-writing-quick="has-audio"]');
-		const recent = page.locator('[data-writing-quick="recent-30"]');
-		await expect(hasAudio).toHaveAttribute('data-tooltip', /\S+/);
-		await expect(recent).toHaveAttribute('data-tooltip', /\S+/);
+		await expect(page.locator('[data-writing-set-all]')).toHaveAttribute('data-tooltip', /\S+/);
+		for (const type of ['paper', 'note', 'memo']) {
+			await expect(page.locator(`[data-writing-type-toggle="${type}"]`)).toHaveAttribute('data-tooltip', /\S+/);
+		}
+		await expect(page.locator('[data-writing-search]')).toBeVisible();
+		await expect(page.locator('[data-writing-sort]')).toBeVisible();
+		await expect(page.locator('[data-writing-clear]')).toBeVisible();
 
-		await expect(page.locator('[data-writing-tag-preview-chip]')).toHaveCount(0);
+		await expect(
+			page.locator(
+				'[data-writing-quick], [data-writing-density-toggle], [data-writing-view-toggle], [data-writing-timeline], [data-writing-tag-chip]',
+			),
+		).toHaveCount(0);
 	});
 
-	test('quick filters + clear keep URL sync deterministic', async ({ page }) => {
+	test('mobile readers can reach the full writing index', async ({ page }) => {
+		await page.setViewportSize({ width: 390, height: 844 });
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 
-		await page.click('[data-writing-quick="has-audio"]');
-		await page.click('[data-writing-quick="recent-30"]');
+		const lastPageButton = page.locator('[data-writing-page-last]');
+		await lastPageButton.scrollIntoViewIfNeeded();
+		await expect(lastPageButton).toBeVisible();
 
-		await expect(page.locator('[data-writing-quick="has-audio"]')).toHaveAttribute('aria-pressed', 'true');
-		await expect(page.locator('[data-writing-quick="recent-30"]')).toHaveAttribute('aria-pressed', 'true');
-		await expect.poll(() => page.url()).toContain('audio=1');
-		await expect.poll(() => page.url()).toContain('recent=1');
-
-		await page.click('[data-writing-clear]');
-		await expect(page.locator('[data-writing-quick="has-audio"]')).toHaveAttribute('aria-pressed', 'false');
-		await expect(page.locator('[data-writing-quick="recent-30"]')).toHaveAttribute('aria-pressed', 'false');
-		await expect.poll(() => page.url()).not.toContain('audio=1');
-		await expect.poll(() => page.url()).not.toContain('recent=1');
+		const scrollMetrics = await page.evaluate(() => ({
+			scrollY: window.scrollY,
+			documentHeight: document.documentElement.scrollHeight,
+			bodyHeight: document.body.scrollHeight,
+		}));
+		expect(scrollMetrics.scrollY).toBeGreaterThan(500);
+		expect(scrollMetrics.documentHeight).toBeGreaterThanOrEqual(scrollMetrics.bodyHeight);
 	});
 
-	test('view toggle switches between cards and timeline with URL sync', async ({ page }) => {
+	test('type filters sync to the URL and never allow an empty selection', async ({ page }) => {
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 
-		await page.click('[data-writing-view-toggle="timeline"]');
-		await expect(page.locator('[data-writing-view-toggle="timeline"]')).toHaveAttribute('aria-pressed', 'true');
-		await expect(page.locator('[data-writing-timeline]')).toBeVisible();
-		await expect(page.locator('[data-writing-timeline-year]').first()).toBeVisible();
-		await expect.poll(() => page.url()).toContain('view=timeline');
-
-		await page.click('[data-writing-clear]');
-		await expect(page.locator('[data-writing-view-toggle="cards"]')).toHaveAttribute('aria-pressed', 'true');
-		await expect.poll(() => page.url()).not.toContain('view=timeline');
-	});
-
-	test('keyboard shortcuts toggle filters and never allow all type pills off', async ({ page }) => {
-		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
-		const body = page.locator('body');
-		await body.click({ position: { x: 40, y: 40 } });
-
-		await page.keyboard.press('a');
-		await expect(page.locator('[data-writing-quick="has-audio"]')).toHaveAttribute('aria-pressed', 'true');
-
-		await page.keyboard.press('r');
-		await expect(page.locator('[data-writing-quick="recent-30"]')).toHaveAttribute('aria-pressed', 'true');
-
-		await page.keyboard.press('d');
-		await expect(page.locator('[data-writing-density-toggle="compact"]')).toHaveAttribute('aria-pressed', 'true');
-
-		await page.keyboard.press('v');
-		await expect(page.locator('[data-writing-view-toggle="timeline"]')).toHaveAttribute('aria-pressed', 'true');
-
+		const all = page.locator('[data-writing-set-all]');
 		const paper = page.locator('[data-writing-type-toggle="paper"]');
 		const note = page.locator('[data-writing-type-toggle="note"]');
 		const memo = page.locator('[data-writing-type-toggle="memo"]');
+
 		await note.click();
 		await memo.click();
 		await expect(paper).toHaveAttribute('aria-pressed', 'true');
+		await expect(note).toHaveAttribute('aria-pressed', 'false');
+		await expect(memo).toHaveAttribute('aria-pressed', 'false');
+		await expect(all).toHaveAttribute('aria-pressed', 'false');
+		await expect.poll(() => new URL(page.url()).searchParams.get('types')).toBe('paper');
+
+		const visibleTypes = await page
+			.locator('[data-writing-card]:visible')
+			.evaluateAll((cards) => cards.map((card) => card.getAttribute('data-type')));
+		expect(visibleTypes.length).toBeGreaterThan(0);
+		expect(new Set(visibleTypes)).toEqual(new Set(['paper']));
+
 		await paper.click();
 		await expect(paper).toHaveAttribute('aria-pressed', 'true');
 
-		await page.keyboard.press('x');
-		await expect(page.locator('[data-writing-quick="has-audio"]')).toHaveAttribute('aria-pressed', 'false');
-		await expect(page.locator('[data-writing-quick="recent-30"]')).toHaveAttribute('aria-pressed', 'false');
-		await expect(page.locator('[data-writing-view-toggle="cards"]')).toHaveAttribute('aria-pressed', 'true');
+		await all.click();
+		await expect(all).toHaveAttribute('aria-pressed', 'true');
+		await expect.poll(() => new URL(page.url()).searchParams.has('types')).toBe(false);
 	});
 
-	test('timeline section links copy hash and auto-open timeline from shared URL', async ({ page }) => {
-		await page.goto(`${BASE}/writing/?view=timeline&types=paper,note,memo&audio=0&recent=0`, {
+	test('search, sort, pagination, and clear remain deterministic', async ({ page }) => {
+		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
+
+		const search = page.locator('[data-writing-search]');
+		await search.fill('capacity');
+		await expect(page.locator('[data-writing-card]:visible')).toHaveCount(1);
+		await expect(page.locator('[data-writing-card]:visible')).toHaveAttribute(
+			'data-title',
+			'The Next Software Bottleneck Is the Capacity to Absorb Change',
+		);
+		await expect(page.locator('[data-writing-chips]')).toContainText('Query: capacity');
+		await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe('capacity');
+
+		await page.locator('[data-writing-clear]').click();
+		await expect(search).toHaveValue('');
+		await expect.poll(() => new URL(page.url()).searchParams.has('q')).toBe(false);
+
+		await page.locator('[data-writing-sort]').selectOption('oldest');
+		await expect.poll(() => new URL(page.url()).searchParams.get('sort')).toBe('oldest');
+		const visibleDates = await page
+			.locator('[data-writing-card]:visible')
+			.evaluateAll((cards) => cards.map((card) => Number(card.getAttribute('data-date-ms'))));
+		expect(visibleDates.every((date, index) => index === 0 || visibleDates[index - 1] <= date)).toBe(true);
+
+		await expect(page.locator('[data-writing-pagination]')).toBeVisible();
+		await page.locator('[data-writing-page-last]').click();
+		await expect.poll(() => Number(new URL(page.url()).searchParams.get('page'))).toBeGreaterThan(1);
+		await expect(page.locator('[data-writing-page-last]')).toBeDisabled();
+
+		await page.locator('[data-writing-clear]').click();
+		await expect(page.locator('[data-writing-sort]')).toHaveValue('newest');
+		await expect.poll(() => new URL(page.url()).search).toBe('');
+	});
+
+	test('retired preferences and URL parameters cannot create a hidden mode', async ({ page }) => {
+		await page.addInitScript(() => {
+			window.localStorage.setItem(
+				'writing:index:view-prefs:v1',
+				JSON.stringify({
+					types: ['paper'],
+					density: 'compact',
+					view: 'timeline',
+					quick: { hasAudio: true, recent30: true },
+				}),
+			);
+		});
+
+		await page.goto(`${BASE}/writing/?view=timeline&audio=1&recent=1&density=compact&papers=1`, {
 			waitUntil: 'networkidle',
 		});
 
-		const yearCopy = page.locator('[data-writing-timeline-copy-link^="timeline-year-"]').first();
-		const hashId = await yearCopy.getAttribute('data-writing-timeline-copy-link');
-		expect(hashId).toBeTruthy();
-
-		await yearCopy.click();
-		await expect.poll(() => page.url()).toContain(`#${hashId}`);
-
-		await page.goto(`${BASE}/writing/#${hashId}`, { waitUntil: 'networkidle' });
-		await expect(page.locator('[data-writing-view-toggle="timeline"]')).toHaveAttribute('aria-pressed', 'true');
-		await expect(page.locator(`#${hashId}`)).toBeVisible();
-	});
-
-	test('timeline jump controls navigate to year and theme anchors', async ({ page }) => {
-		await page.goto(`${BASE}/writing/?view=timeline`, { waitUntil: 'networkidle' });
-
-		const jumpWrap = page.locator('[data-writing-jump-wrap]');
-		await expect(jumpWrap).toBeVisible();
-
-		const yearSelect = page.locator('[data-writing-jump-year]');
-		const themeSelect = page.locator('[data-writing-jump-theme]');
-		const goBtn = page.locator('[data-writing-jump-go]');
-
-		const yearHash = await yearSelect.inputValue();
-		expect(yearHash).toContain('timeline-year-');
-		await goBtn.click();
-		await expect.poll(() => page.url()).toContain(`#${yearHash}`);
-
-		const themeCount = await themeSelect.locator('option').count();
-		if (themeCount > 1) {
-			await themeSelect.selectOption({ index: 1 });
-			const themeHash = await themeSelect.inputValue();
-			expect(themeHash).toContain('timeline-theme-');
-			await goBtn.click();
-			await expect.poll(() => page.url()).toContain(`#${themeHash}`);
-		}
+		await expect(page.locator('[data-writing-list]')).toBeVisible();
+		await expect(page.locator('[data-writing-card]:visible').first()).toBeVisible();
+		await expect(page.locator('[data-writing-set-all]')).toHaveAttribute('aria-pressed', 'true');
+		await expect.poll(() => new URL(page.url()).search).toBe('');
 	});
 });

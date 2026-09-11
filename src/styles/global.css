@@ -39,8 +39,12 @@ article[data-writing-type="memo"] {
   --writing-accent-2-rgb: 96, 165, 250;
 }
 
-html, body {
-  height: 100%;
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
   overflow-x: hidden;
 }
 

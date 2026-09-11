@@ -6119,12 +6119,12 @@ export const radarEventsSeed: RadarEvent[] = [
 				name: 'Corinium Intelligence',
 				url: 'https://defense-autonomy.coriniumintelligence.com',
 				type: 'official',
-				lastVerified: '2026-02-17',
+				lastVerified: '2026-09-11',
 				confidence: 'Medium'
 			}],
 			links: {
 				official: 'https://defense-autonomy.coriniumintelligence.com',
-				agenda: 'https://defense-autonomy.coriniumintelligence.com/agenda'
+				agenda: 'https://defense-autonomy.coriniumintelligence.com/agenda-download'
 			},
 			logistics: 
 			{
