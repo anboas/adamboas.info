@@ -8,6 +8,7 @@ const pages = [
 	'/strategic-work/',
 	'/writing/',
 	'/writing/agentic-force-creation/',
+	'/writing/capacity-to-absorb-change/',
 	'/speaking/',
 	'/profile/',
 	'/capabilities/',

@@ -3,6 +3,33 @@ import { test, expect } from '@playwright/test';
 const BASE = process.env.SITE_BASE ?? 'https://www.adamboas.com';
 
 test.describe('writing controls regression', () => {
+	test('capacity paper publishes its canonical HTML, PDF, and mobile layout', async ({ page }) => {
+		await page.setViewportSize({ width: 390, height: 844 });
+
+		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
+		await expect(page.locator('a[href="/writing/capacity-to-absorb-change/"]').first()).toBeVisible();
+
+		const response = await page.goto(`${BASE}/writing/capacity-to-absorb-change/`, { waitUntil: 'networkidle' });
+		expect(response?.ok()).toBeTruthy();
+		await expect(page.locator('h1')).toHaveText('The Next Software Bottleneck Is the Capacity to Absorb Change');
+		await expect(page.locator('#connect-authority-evidence-and-acceptance')).toBeVisible();
+		await expect(page.locator('#prove-capacity-not-activity')).toBeVisible();
+		await expect(page.locator('a[href="/papers/capacity-to-absorb-change.pdf"]')).toBeVisible();
+		await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+			'content',
+			/capacity to verify, accept, field, and sustain/,
+		);
+
+		const pdf = await page.request.get(`${BASE}/papers/capacity-to-absorb-change.pdf`);
+		expect(pdf.ok()).toBeTruthy();
+		expect(pdf.headers()['content-type']).toContain('application/pdf');
+
+		const overflow = await page.evaluate(
+			() => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+		);
+		expect(overflow).toBeLessThanOrEqual(1);
+	});
+
 	test('tooltips are populated and hidden-tag mode has no +N preview chip', async ({ page }) => {
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 
