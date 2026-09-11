@@ -15,8 +15,8 @@ on:
       - 'tsconfig.json'
       - '.github/workflows/deploy-dev-pages.yml'
   schedule:
-    # Refresh the deployed 30-day Plausible snapshot after the Whitepaper sync window.
-    - cron: '47 */6 * * *'
+    # Keep public 30-day chips reasonably fresh without committing analytics churn.
+    - cron: '47 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -52,8 +52,7 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Fetch Plausible pageview counts (scheduled and manual deploys)
-        if: github.event_name != 'push'
+      - name: Fetch Plausible pageview counts
         env:
           PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
           PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}

@@ -32,12 +32,25 @@ const dateRange = (plausible as any)?.meta?.dateRange || '30d';
 const note = String((plausible as any)?.meta?.note || '');
 const unavailable = /(api error|api errors|missing|unexpected|no successful)/i.test(note);
 const hasPlausibleSnapshot = !!(plausible as any)?.meta;
+const missing = !unavailable && pageviews === null;
+const label = unavailable
+	? `views unavailable (${dateRange})`
+	: missing
+		? `views pending (${dateRange})`
+		: `${pageviews.toLocaleString()} views (${dateRange})`;
+const title = missing
+	? 'No page-specific row was returned in the latest Plausible snapshot; this is not a verified zero.'
+	: undefined;
 ---
 
 {
 	hasPlausibleSnapshot ? (
-		<span class="pageviews-chip rounded-full border px-2 py-1 text-xs">
-			{unavailable ? `views unavailable (${dateRange})` : `${(pageviews ?? 0).toLocaleString()} views (${dateRange})`}
+		<span
+			class="pageviews-chip rounded-full border px-2 py-1 text-xs"
+			data-pageviews-state={unavailable ? 'unavailable' : missing ? 'pending' : 'counted'}
+			title={title}
+		>
+			{label}
 		</span>
 	) : null
 }

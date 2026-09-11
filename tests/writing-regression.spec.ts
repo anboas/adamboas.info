@@ -15,6 +15,9 @@ test.describe('writing controls regression', () => {
 		await expect(page.locator('#connect-authority-evidence-and-acceptance')).toBeVisible();
 		await expect(page.locator('#prove-capacity-not-activity')).toBeVisible();
 		await expect(page.locator('a[href="/papers/capacity-to-absorb-change.pdf"]')).toBeVisible();
+		const pageviews = page.locator('.pageviews-chip');
+		await expect(pageviews).toHaveAttribute('data-pageviews-state', /pending|counted/);
+		await expect(pageviews).not.toHaveText(/^0 views/);
 		await expect(page.locator('meta[name="description"]')).toHaveAttribute(
 			'content',
 			/capacity to verify, accept, field, and sustain/,
