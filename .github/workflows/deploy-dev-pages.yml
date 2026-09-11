@@ -14,6 +14,9 @@ on:
       - 'astro.config.mjs'
       - 'tsconfig.json'
       - '.github/workflows/deploy-dev-pages.yml'
+  schedule:
+    # Refresh the deployed 30-day Plausible snapshot after the Whitepaper sync window.
+    - cron: '47 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -49,8 +52,8 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Fetch Plausible pageview counts (optional; manual deploys only)
-        if: github.event_name == 'workflow_dispatch'
+      - name: Fetch Plausible pageview counts (scheduled and manual deploys)
+        if: github.event_name != 'push'
         env:
           PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
           PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}

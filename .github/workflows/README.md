@@ -5,13 +5,14 @@ This repo runs a mix of CI, ingest, and publishing workflows. This file captures
 ## Current deployment flow
 
 - `sync-whitepaper.yml` syncs published Whitepaper assets into this repo and pushes to `main` when changes exist.
-- `deploy-dev-pages.yml` deploys Pages **from push to `main`**.
+- `deploy-dev-pages.yml` deploys Pages from push to `main` and refreshes the deployed Plausible pageview snapshot every 6 hours.
 - `sync-whitepaper.yml` no longer manually dispatches deploy to avoid duplicate deploy runs.
 
 ## Churn controls
 
 - Whitepaper sync schedule is every 6 hours (`17 */6 * * *`) instead of hourly.
-- Plausible JSON fetch in `sync-whitepaper.yml` runs only on `workflow_dispatch` (manual) to avoid scheduled analytics churn.
+- Plausible JSON fetch in `sync-whitepaper.yml` runs only on `workflow_dispatch` (manual) to avoid analytics commits on its scheduled runs.
+- Scheduled and manual Pages deploys fetch Plausible pageviews in the runner, so Writing chips stay current without committing generated snapshots to `main`.
 - `deploy-dev-pages.yml` is path-scoped to site-affecting files (`src/**`, `public/**`, scripts/config/package lockfiles) and excludes Plausible generated JSON deltas.
 - Quality workflows (`a11y`, `linkcheck`, `lighthouse`) are path-scoped on push/PR to run only when site/runtime/test/workflow inputs change.
 
@@ -24,11 +25,13 @@ This repo runs a mix of CI, ingest, and publishing workflows. This file captures
 ## Suggested maintenance cadence
 
 Weekly:
+
 - Check failed runs: `gh run list --repo anboas/adamboas.info --limit 30`
 - Review longest-running jobs and trim expensive steps.
 - Review artifact sizes and retention.
 
 Monthly:
+
 - Refresh action versions (`actions/*`) and verify deprecation warnings.
 - Revisit schedules for ingest/deploy balance.
 
