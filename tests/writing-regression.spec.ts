@@ -82,6 +82,43 @@ test.describe('writing controls regression', () => {
 		expect(scrollMetrics.documentHeight).toBeGreaterThanOrEqual(scrollMetrics.bodyHeight);
 	});
 
+	test('mobile filters use touch targets, full-width search, and live result counts', async ({ page }) => {
+		await page.setViewportSize({ width: 390, height: 844 });
+		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
+
+		await expect(page.locator('#global-shortcuts-fab')).toBeHidden();
+		await expect(page.locator('#global-shortcut-leader')).toBeHidden();
+
+		const controls = [
+			page.locator('[data-writing-set-all]'),
+			...['paper', 'note', 'memo'].map((type) => page.locator(`[data-writing-type-toggle="${type}"]`)),
+			page.locator('[data-writing-search]'),
+			page.locator('[data-writing-sort]'),
+			page.locator('[data-writing-clear]'),
+			page.locator('a[href="/writing/tags/"]'),
+		];
+		for (const control of controls) {
+			const box = await control.boundingBox();
+			expect(box?.height).toBeGreaterThanOrEqual(44);
+		}
+
+		const search = page.locator('[data-writing-search]');
+		const searchBox = await search.boundingBox();
+		expect(searchBox?.width).toBeGreaterThanOrEqual(320);
+
+		const cards = page.locator('[data-writing-card]');
+		await expect(page.locator('[data-writing-result-count]')).toHaveText(`${await cards.count()} published items`);
+
+		await search.fill('control plane');
+		const visibleCount = await page.locator('[data-writing-card]:visible').count();
+		await expect(page.locator('[data-writing-result-count]')).toHaveText(
+			`${visibleCount} ${visibleCount === 1 ? 'match' : 'matches'}`,
+		);
+
+		await page.setViewportSize({ width: 1024, height: 768 });
+		await expect(page.locator('#global-shortcuts-fab')).toBeVisible();
+	});
+
 	test('mobile card titles and descriptions use the full content width below metadata', async ({ page }) => {
 		await page.setViewportSize({ width: 390, height: 844 });
 

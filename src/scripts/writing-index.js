@@ -34,6 +34,7 @@ if (root) {
 	const searchInput = root.querySelector('[data-writing-search]');
 	const sortSelect = root.querySelector('[data-writing-sort]');
 	const clearButton = root.querySelector('[data-writing-clear]');
+	const resultCount = root.querySelector('[data-writing-result-count]');
 	const chips = root.querySelector('[data-writing-chips]');
 	const empty = root.querySelector('[data-writing-empty]');
 	const pagination = root.querySelector('[data-writing-pagination]');
@@ -174,11 +175,19 @@ if (root) {
 		pageStatus.textContent = `${startIndex + 1}-${endIndex} of ${matchCount}`;
 	}
 
+	function renderResultCount(matchCount, filtered) {
+		if (!resultCount) return;
+		resultCount.textContent = filtered
+			? `${matchCount} ${matchCount === 1 ? 'match' : 'matches'}`
+			: `${matchCount} published items`;
+	}
+
 	function applyFilters({ preservePage = false } = {}) {
 		if (!preservePage) currentPage = 1;
 
 		const query = norm(searchInput?.value);
 		const types = new Set(selectedTypes());
+		const filtered = Boolean(query) || types.size !== ALL_TYPES.length;
 		const matches = cards.filter((card) => {
 			const type = norm(card.getAttribute('data-type'));
 			const title = norm(card.getAttribute('data-title'));
@@ -199,6 +208,7 @@ if (root) {
 		}
 
 		empty?.classList.toggle('hidden', sorted.length !== 0);
+		renderResultCount(sorted.length, filtered);
 		syncAllTypesButton();
 		renderChips();
 		renderPagination(sorted.length, startIndex, startIndex + pageCards.length);

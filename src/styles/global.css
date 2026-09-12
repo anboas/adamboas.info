@@ -1373,6 +1373,13 @@ a[data-writing-card][data-type="note"]::before { background: rgba(0, 196, 196, 0
   transform: translateY(0);
 }
 
+@media (max-width: 639px) {
+  .shortcut-fab,
+  .shortcut-leader-pill {
+    display: none;
+  }
+}
+
 body.shortcuts-open {
   overflow: hidden;
 }
