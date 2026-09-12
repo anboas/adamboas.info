@@ -162,6 +162,7 @@ const fmtDate = (date: Date | undefined) =>
 						data-writing-card
 						data-type={w.type}
 						data-title={w.title}
+						data-description={w.description ?? ''}
 						data-tags={w.tags.join(' ')}
 						data-date-ms={w.date?.valueOf?.() ?? 0}
 						class="card block overflow-hidden p-5 hover:border-slate-700"

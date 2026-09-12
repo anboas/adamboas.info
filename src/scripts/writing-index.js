@@ -191,8 +191,11 @@ if (root) {
 		const matches = cards.filter((card) => {
 			const type = norm(card.getAttribute('data-type'));
 			const title = norm(card.getAttribute('data-title'));
+			const description = norm(card.getAttribute('data-description'));
 			const tags = norm(card.getAttribute('data-tags'));
-			return types.has(type) && (!query || title.includes(query) || tags.includes(query));
+			return (
+				types.has(type) && (!query || title.includes(query) || description.includes(query) || tags.includes(query))
+			);
 		});
 		const sorted = sortCards(matches);
 

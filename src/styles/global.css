@@ -918,6 +918,10 @@ button[data-writing-tag]:hover {
   cursor: help;
 }
 
+[data-writing-index] [data-writing-set-all] {
+  cursor: pointer;
+}
+
 .writing-type-toggle {
   display: inline-flex;
   align-items: center;

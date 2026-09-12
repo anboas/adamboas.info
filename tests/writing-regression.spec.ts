@@ -40,6 +40,7 @@ test.describe('writing controls regression', () => {
 		await expect(page.getByText('Start here.', { exact: true })).toHaveCount(0);
 
 		await expect(page.locator('[data-writing-set-all]')).toHaveAttribute('data-tooltip', /\S+/);
+		await expect(page.locator('[data-writing-set-all]')).toHaveCSS('cursor', 'pointer');
 		for (const type of ['paper', 'note', 'memo']) {
 			await expect(page.locator(`[data-writing-type-toggle="${type}"]`)).toHaveAttribute('data-tooltip', /\S+/);
 		}
@@ -214,20 +215,29 @@ test.describe('writing controls regression', () => {
 		const search = page.locator('[data-writing-search]');
 		const clear = page.locator('[data-writing-clear]');
 		await expect(clear).toBeDisabled();
-		await search.fill('capacity');
+		await search.fill('next software bottleneck');
 		await expect(clear).toBeEnabled();
 		await expect(page.locator('[data-writing-card]:visible')).toHaveCount(1);
 		await expect(page.locator('[data-writing-card]:visible')).toHaveAttribute(
 			'data-title',
 			'The Next Software Bottleneck Is the Capacity to Absorb Change',
 		);
-		await expect(page.locator('[data-writing-chips]')).toContainText('Query: capacity');
-		await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe('capacity');
+		await expect(page.locator('[data-writing-chips]')).toContainText('Query: next software bottleneck');
+		await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe('next software bottleneck');
 
 		await clear.click();
 		await expect(search).toHaveValue('');
 		await expect(clear).toBeDisabled();
 		await expect.poll(() => new URL(page.url()).searchParams.has('q')).toBe(false);
+
+		await search.fill('expanding the department');
+		await expect(page.locator('[data-writing-card]:visible')).toHaveCount(1);
+		await expect(page.locator('[data-writing-card]:visible')).toHaveAttribute(
+			'data-title',
+			'The Next Software Bottleneck Is the Capacity to Absorb Change',
+		);
+		await expect(page.locator('[data-writing-result-count]')).toHaveText('1 match');
+		await clear.click();
 
 		await page.locator('[data-writing-sort]').selectOption('oldest');
 		await expect(clear).toBeEnabled();
