@@ -74,6 +74,13 @@ if (root) {
 		return sort === 'oldest' || sort === 'title' ? sort : DEFAULT_SORT;
 	}
 
+	function syncClearButton() {
+		if (!clearButton) return;
+		const query = searchInput?.value.trim() ?? '';
+		const allTypesSelected = selectedTypes().length === ALL_TYPES.length;
+		clearButton.disabled = !query && allTypesSelected && getSort() === DEFAULT_SORT && currentPage === 1;
+	}
+
 	function setSort(sort) {
 		if (sortSelect) sortSelect.value = sort === 'oldest' || sort === 'title' ? sort : DEFAULT_SORT;
 	}
@@ -195,6 +202,7 @@ if (root) {
 		syncAllTypesButton();
 		renderChips();
 		renderPagination(sorted.length, startIndex, startIndex + pageCards.length);
+		syncClearButton();
 		updateUrl();
 	}
 

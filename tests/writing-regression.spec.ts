@@ -46,6 +46,8 @@ test.describe('writing controls regression', () => {
 		await expect(page.locator('[data-writing-search]')).toBeVisible();
 		await expect(page.locator('[data-writing-sort]')).toBeVisible();
 		await expect(page.locator('[data-writing-clear]')).toBeVisible();
+		await expect(page.locator('[data-writing-clear]')).toBeDisabled();
+		await expect(page.locator('a[href="/writing/tags/"]')).toHaveCount(1);
 
 		await expect(
 			page.locator(
@@ -58,9 +60,18 @@ test.describe('writing controls regression', () => {
 		await page.setViewportSize({ width: 390, height: 844 });
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 
-		const lastPageButton = page.locator('[data-writing-page-last]');
-		await lastPageButton.scrollIntoViewIfNeeded();
-		await expect(lastPageButton).toBeVisible();
+		const previousPageButton = page.locator('[data-writing-page-prev]');
+		const nextPageButton = page.locator('[data-writing-page-next]');
+		await nextPageButton.scrollIntoViewIfNeeded();
+		await expect(previousPageButton).toBeVisible();
+		await expect(nextPageButton).toBeVisible();
+		await expect(page.locator('[data-writing-page-first]')).toBeHidden();
+		await expect(page.locator('[data-writing-page-last]')).toBeHidden();
+
+		for (const control of [previousPageButton, nextPageButton]) {
+			const box = await control.boundingBox();
+			expect(box?.height).toBeGreaterThanOrEqual(44);
+		}
 
 		const scrollMetrics = await page.evaluate(() => ({
 			scrollY: window.scrollY,
@@ -71,25 +82,40 @@ test.describe('writing controls regression', () => {
 		expect(scrollMetrics.documentHeight).toBeGreaterThanOrEqual(scrollMetrics.bodyHeight);
 	});
 
-	test('mobile card descriptions use the full content width below metadata', async ({ page }) => {
+	test('mobile card titles and descriptions use the full content width below metadata', async ({ page }) => {
 		await page.setViewportSize({ width: 390, height: 844 });
 
 		for (const surface of [
-			{ path: '/writing/', card: '[data-writing-card]:visible', description: '[data-writing-card-description]' },
-			{ path: '/', card: '[data-writing-compact-card]', description: '[data-writing-card-description]' },
+			{
+				path: '/writing/',
+				card: '[data-writing-card]:visible',
+				title: '[data-writing-card-title]',
+				description: '[data-writing-card-description]',
+			},
+			{
+				path: '/',
+				card: '[data-writing-compact-card]',
+				title: '[data-writing-card-title]',
+				description: '[data-writing-card-description]',
+			},
 		]) {
 			await page.goto(`${BASE}${surface.path}`, { waitUntil: 'networkidle' });
 			const card = page.locator(surface.card).first();
+			const title = card.locator(surface.title);
 			const description = card.locator(surface.description);
+			await expect(title).toBeVisible();
 			await expect(description).toBeVisible();
 
-			const geometry = await card.evaluate((element, descriptionSelector) => {
-				const descriptionElement = element.querySelector(descriptionSelector);
-				if (!(descriptionElement instanceof HTMLElement)) return null;
+			const geometry = await card.evaluate((element, selectors) => {
+				const titleElement = element.querySelector(selectors.title);
+				const descriptionElement = element.querySelector(selectors.description);
+				if (!(titleElement instanceof HTMLElement) || !(descriptionElement instanceof HTMLElement)) return null;
 
 				const cardRect = element.getBoundingClientRect();
+				const titleRect = titleElement.getBoundingClientRect();
 				const descriptionRect = descriptionElement.getBoundingClientRect();
 				const cardStyle = getComputedStyle(element);
+				const titleStyle = getComputedStyle(titleElement);
 				const descriptionStyle = getComputedStyle(descriptionElement);
 				return {
 					availableWidth:
@@ -98,14 +124,18 @@ test.describe('writing controls regression', () => {
 						Number.parseFloat(cardStyle.borderRightWidth) -
 						Number.parseFloat(cardStyle.paddingLeft) -
 						Number.parseFloat(cardStyle.paddingRight),
+					titleWidth: titleRect.width,
+					titleLineClamp: titleStyle.getPropertyValue('-webkit-line-clamp'),
 					descriptionWidth: descriptionRect.width,
-					lineClamp: descriptionStyle.getPropertyValue('-webkit-line-clamp'),
+					descriptionLineClamp: descriptionStyle.getPropertyValue('-webkit-line-clamp'),
 				};
-			}, surface.description);
+			}, surface);
 
 			expect(geometry).not.toBeNull();
+			expect(geometry!.titleWidth).toBeGreaterThanOrEqual(geometry!.availableWidth - 1);
+			expect(geometry!.titleLineClamp).toBe('2');
 			expect(geometry!.descriptionWidth).toBeGreaterThanOrEqual(geometry!.availableWidth - 1);
-			expect(geometry!.lineClamp).toBe('3');
+			expect(geometry!.descriptionLineClamp).toBe('3');
 		}
 	});
 
@@ -123,6 +153,7 @@ test.describe('writing controls regression', () => {
 		await expect(note).toHaveAttribute('aria-pressed', 'false');
 		await expect(memo).toHaveAttribute('aria-pressed', 'false');
 		await expect(all).toHaveAttribute('aria-pressed', 'false');
+		await expect(page.locator('[data-writing-clear]')).toBeEnabled();
 		await expect.poll(() => new URL(page.url()).searchParams.get('types')).toBe('paper');
 
 		const visibleTypes = await page
@@ -136,6 +167,7 @@ test.describe('writing controls regression', () => {
 
 		await all.click();
 		await expect(all).toHaveAttribute('aria-pressed', 'true');
+		await expect(page.locator('[data-writing-clear]')).toBeDisabled();
 		await expect.poll(() => new URL(page.url()).searchParams.has('types')).toBe(false);
 	});
 
@@ -143,7 +175,10 @@ test.describe('writing controls regression', () => {
 		await page.goto(`${BASE}/writing/`, { waitUntil: 'networkidle' });
 
 		const search = page.locator('[data-writing-search]');
+		const clear = page.locator('[data-writing-clear]');
+		await expect(clear).toBeDisabled();
 		await search.fill('capacity');
+		await expect(clear).toBeEnabled();
 		await expect(page.locator('[data-writing-card]:visible')).toHaveCount(1);
 		await expect(page.locator('[data-writing-card]:visible')).toHaveAttribute(
 			'data-title',
@@ -152,11 +187,13 @@ test.describe('writing controls regression', () => {
 		await expect(page.locator('[data-writing-chips]')).toContainText('Query: capacity');
 		await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe('capacity');
 
-		await page.locator('[data-writing-clear]').click();
+		await clear.click();
 		await expect(search).toHaveValue('');
+		await expect(clear).toBeDisabled();
 		await expect.poll(() => new URL(page.url()).searchParams.has('q')).toBe(false);
 
 		await page.locator('[data-writing-sort]').selectOption('oldest');
+		await expect(clear).toBeEnabled();
 		await expect.poll(() => new URL(page.url()).searchParams.get('sort')).toBe('oldest');
 		const visibleDates = await page
 			.locator('[data-writing-card]:visible')
@@ -168,8 +205,9 @@ test.describe('writing controls regression', () => {
 		await expect.poll(() => Number(new URL(page.url()).searchParams.get('page'))).toBeGreaterThan(1);
 		await expect(page.locator('[data-writing-page-last]')).toBeDisabled();
 
-		await page.locator('[data-writing-clear]').click();
+		await clear.click();
 		await expect(page.locator('[data-writing-sort]')).toHaveValue('newest');
+		await expect(clear).toBeDisabled();
 		await expect.poll(() => new URL(page.url()).search).toBe('');
 	});
 

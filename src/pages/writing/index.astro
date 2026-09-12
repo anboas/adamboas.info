@@ -56,11 +56,7 @@ const fmtDate = (date: Date | undefined) =>
 			eyebrow="Published Work"
 			title="Writing"
 			description="Notes, memos, and papers on defense technology, software modernization, AI governance, and mission systems."
-		>
-			<div slot="actions" class="flex items-start gap-1 text-xs text-slate-400 md:items-start">
-				<a class="ui-link-btn" href={withBase('/writing/tags/')}>Browse tags</a>
-			</div>
-		</SurfacePageHeader>
+		/>
 
 		<section class="agent-only card mt-3 p-3 text-xs text-slate-300" aria-label="Agent extraction hints">
 			<p class="font-semibold text-slate-100">Agent extraction mode active</p>
@@ -138,6 +134,7 @@ const fmtDate = (date: Date | undefined) =>
 					<button
 						type="button"
 						data-writing-clear
+						disabled
 						class="h-8 shrink-0 rounded-none border border-slate-800 bg-slate-950 px-2.5 text-sm text-slate-200 hover:bg-slate-900"
 						>Clear</button
 					>
@@ -166,30 +163,28 @@ const fmtDate = (date: Date | undefined) =>
 						class="card block overflow-hidden p-5 hover:border-slate-700"
 						href={withBase(`/writing/${w.slug}/`)}
 					>
-						<div class="flex items-start justify-between gap-4">
-							<div class="min-w-0">
-								<div class="flex min-w-0 items-baseline gap-2">
+						<div class="flex items-center justify-between gap-4">
+							<div class="flex items-center gap-2">
+								<span
+									class={`writing-type-pill writing-type-${w.type} rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}
+								>
+									{w.type}
+								</span>
+								{w.hasAudio ? (
 									<span
-										class={`writing-type-pill writing-type-${w.type} rounded-full border px-2 py-0.5 text-[10px] uppercase tracking-wide`}
+										class="shrink-0 rounded-full border border-emerald-700/70 bg-emerald-950/40 px-1.5 py-0 text-[10px] text-emerald-200"
+										title="Audio or podcast available"
+										aria-label="Audio available"
 									>
-										{w.type}
+										🎧
 									</span>
-									<h2 data-writing-card-title class="min-w-0 truncate text-base font-bold text-slate-50">
-										{w.title}
-									</h2>
-									{w.hasAudio ? (
-										<span
-											class="shrink-0 rounded-full border border-emerald-700/70 bg-emerald-950/40 px-1.5 py-0 text-[10px] text-emerald-200"
-											title="Audio or podcast available"
-											aria-label="Audio available"
-										>
-											🎧
-										</span>
-									) : null}
-								</div>
+								) : null}
 							</div>
 							{w.date && <span class="shrink-0 text-xs text-slate-400">{fmtDate(w.date)}</span>}
 						</div>
+						<h2 data-writing-card-title class="clamp-2 mt-2 break-words text-base font-bold leading-snug text-slate-50">
+							{w.title}
+						</h2>
 						{w.description && (
 							<p data-writing-card-description class="clamp-3 mt-2 text-sm text-slate-300">
 								{w.description}
@@ -202,30 +197,30 @@ const fmtDate = (date: Date | undefined) =>
 
 		<div class="mt-4 hidden flex flex-wrap items-center justify-between gap-2 md:flex-nowrap" data-writing-pagination>
 			<p class="text-xs text-slate-400" data-writing-pagination-status></p>
-			<div class="flex items-center gap-2">
+			<div class="flex w-full items-center justify-between gap-3 sm:w-auto sm:justify-start sm:gap-2">
 				<button
 					type="button"
 					data-writing-page-first
-					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					class="hidden items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 sm:inline-flex"
 					>First</button
 				>
 				<button
 					type="button"
 					data-writing-page-prev
-					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					class="min-h-11 rounded-none border border-slate-800 bg-slate-950 px-4 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 sm:min-h-0 sm:px-2.5"
 					>Prev</button
 				>
 				<span class="text-xs text-slate-300" data-writing-page-label>Page 1 of 1</span>
 				<button
 					type="button"
 					data-writing-page-next
-					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					class="min-h-11 rounded-none border border-slate-800 bg-slate-950 px-4 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 sm:min-h-0 sm:px-2.5"
 					>Next</button
 				>
 				<button
 					type="button"
 					data-writing-page-last
-					class="rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950"
+					class="hidden items-center justify-center rounded-none border border-slate-800 bg-slate-950 px-2.5 py-1.5 text-xs text-slate-200 hover:bg-slate-900 disabled:opacity-50 disabled:hover:bg-slate-950 sm:inline-flex"
 					>Last</button
 				>
 			</div>
